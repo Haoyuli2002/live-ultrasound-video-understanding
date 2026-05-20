@@ -1,0 +1,248 @@
+:root {
+  --bg: #f4f7f9;
+  --card: #ffffff;
+  --text: #172026;
+  --muted: #5e6a73;
+  --line: #d9e2e8;
+  --youtube: #c62828;
+  --bilibili: #0086b3;
+  --ok: #2e7d32;
+  --warn: #b71c1c;
+  --radius: 14px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at top left, #d7edf7 0, transparent 40%),
+    radial-gradient(circle at top right, #f9dfdf 0, transparent 35%),
+    var(--bg);
+  color: var(--text);
+  font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 28px 18px 48px;
+}
+
+.hero h1 {
+  margin: 0 0 6px;
+  font-size: 34px;
+  letter-spacing: 0.3px;
+}
+
+.hero p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 18px;
+  box-shadow: 0 12px 32px rgba(18, 35, 48, 0.06);
+}
+
+.card h2 {
+  margin: 0;
+}
+
+.card p {
+  margin: 8px 0 16px;
+  color: var(--muted);
+}
+
+.youtube h2 {
+  color: var(--youtube);
+}
+
+.bilibili h2 {
+  color: var(--bilibili);
+}
+
+form {
+  display: grid;
+  gap: 11px;
+}
+
+label {
+  display: grid;
+  gap: 5px;
+  font-size: 14px;
+}
+
+input[type="number"] {
+  width: 100%;
+  border: 1px solid #c8d4dd;
+  border-radius: 9px;
+  padding: 9px 10px;
+  font-size: 14px;
+}
+
+textarea {
+  width: 100%;
+  border: 1px solid #c8d4dd;
+  border-radius: 9px;
+  padding: 9px 10px;
+  font-size: 14px;
+  resize: vertical;
+  min-height: 88px;
+}
+
+.check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  padding: 11px 14px;
+  color: #fff;
+  background: linear-gradient(120deg, #0f5f8b, #1b7db2);
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.youtube button {
+  background: linear-gradient(120deg, #8d1111, #d22c2c);
+}
+
+.bilibili button {
+  background: linear-gradient(120deg, #005e7d, #039fd0);
+}
+
+.banner {
+  margin-top: 16px;
+  border-radius: var(--radius);
+  padding: 14px 16px;
+}
+
+.banner h2 {
+  margin: 0 0 8px;
+}
+
+.success {
+  background: #e9f6eb;
+  border: 1px solid #c9e9ce;
+}
+
+.success h2 {
+  color: var(--ok);
+}
+
+.error {
+  background: #fdecec;
+  border: 1px solid #f6c7c7;
+  color: var(--warn);
+}
+
+.recent {
+  margin-top: 16px;
+}
+
+.live {
+  margin-top: 16px;
+}
+
+.ml {
+  margin-left: 12px;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.badge {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 2px 8px;
+  font-size: 12px;
+  background: #edf3f7;
+}
+
+.badge.queued {
+  background: #e8eef2;
+  color: #5f6d76;
+}
+
+.badge.running {
+  background: #fff4d5;
+  color: #9b6b00;
+}
+
+.badge.done {
+  background: #dbf3dd;
+  color: #1f6d2b;
+}
+
+.badge.failed {
+  background: #fde0e0;
+  color: #9f2020;
+}
+
+.logs {
+  margin: 0;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #dbe5ec;
+  background: #0f1720;
+  color: #d8f0ff;
+  font-size: 12px;
+  line-height: 1.45;
+  max-height: 280px;
+  overflow: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+th,
+td {
+  border-bottom: 1px solid #e8eef2;
+  text-align: left;
+  padding: 8px 6px;
+  vertical-align: top;
+  word-break: break-all;
+}
+
+th {
+  color: var(--muted);
+  font-weight: 600;
+}
+
+@media (max-width: 880px) {
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  th,
+  td {
+    font-size: 12px;
+    padding: 7px 5px;
+  }
+}

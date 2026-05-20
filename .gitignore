@@ -1,0 +1,41 @@
+# ===== 大文件 (视频/图片/PDF) =====
+*.mp4
+*.webm
+*.mkv
+*.avi
+*.mov
+*.jpg
+*.jpeg
+*.png
+*.pdf
+
+# ===== Python =====
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+
+# ===== 输出/数据目录 =====
+UltrasoundCrawler_KeyCode_20260323_v2/output/
+filtered_videos/
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
+
+# ===== IDE =====
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ===== Jupyter =====
+.ipynb_checkpoints/
+
+# ===== 模型权重 =====
+*.bin
+*.safetensors
+*.gguflivecc/

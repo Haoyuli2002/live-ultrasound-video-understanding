@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ app_title }}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <main class="container">
+    <header class="hero">
+      <h1>{{ app_title }}</h1>
+      <p>分别抓取 YouTube 英文超声讲解视频与 B 站中文超声讲解视频，输出可交付数据包。</p>
+    </header>
+
+    {% if error %}
+      <section class="banner error">{{ error }}</section>
+    {% endif %}
+
+    {% if summary %}
+      <section class="banner success">
+        <h2>任务完成</h2>
+        <p><strong>来源：</strong>{{ summary.source }}</p>
+        <p><strong>输出目录：</strong>{{ summary.run_dir }}</p>
+        <p>
+          <strong>保留：</strong>{{ summary.metrics.kept_records }} 条，
+          <strong>过滤：</strong>{{ summary.metrics.filtered_records }} 条，
+          <strong>失败：</strong>{{ summary.metrics.failures }} 条
+        </p>
+      </section>
+    {% endif %}
+
+    {% if active_job %}
+      <section class="card live">
+        <h2>实时日志</h2>
+        <p>
+          <strong>任务ID：</strong><span id="jobId">{{ active_job.id }}</span>
+          <strong class="ml">来源：</strong>{{ active_job.source }}
+          <strong class="ml">状态：</strong><span id="jobStatus" class="badge">{{ active_job.status }}</span>
+          <strong class="ml">更新时间：</strong><span id="jobUpdated">{{ active_job.updated_at }}</span>
+        </p>
+        <p id="jobProgress" class="muted">任务运行中，请稍候...</p>
+        <pre id="jobLogs" class="logs">{% for line in active_job.logs %}{{ line }}
+{% endfor %}</pre>
+      </section>
+    {% endif %}
+
+    <section class="grid">
+      <article class="card youtube">
+        <h2>YouTube 英文版</h2>
+        <p>建议用于英文超声扫查讲解、病例分析、器官系统教学。</p>
+        <form method="post" action="{{ url_for('run_source', source='youtube') }}">
+          <label>目标视频数
+            <input type="number" name="max_results" min="1" value="{{ defaults.max_results }}">
+          </label>
+          <label>每关键词检索数（YouTube 生效）
+            <input type="number" name="search_per_term" min="1" value="{{ defaults.search_per_term }}">
+          </label>
+          <input type="hidden" name="pages_per_term" value="{{ defaults.pages_per_term }}">
+          <label>视频下载超时(秒)
+            <input type="number" name="download_timeout_sec" min="10" value="{{ defaults.download_timeout_sec }}">
+          </label>
+          <label>自定义检索关键词（换行/逗号分隔，留空用默认）
+            <textarea name="keywords" rows="5">{{ defaults.youtube_keywords_text }}</textarea>
+          </label>
+          <label class="check">
+            <input type="checkbox" name="download_media" checked>
+            下载音视频
+          </label>
+          <label class="check">
+            <input type="checkbox" name="download_thumbnails" checked>
+            下载缩略图
+          </label>
+          <button type="submit">抓取英文版（YouTube）</button>
+        </form>
+      </article>
+
+      <article class="card bilibili">
+        <h2>B站 中文版</h2>
+        <p>建议用于中文超声扫查教学、病例讲解与器官系统课程。</p>
+        <form method="post" action="{{ url_for('run_source', source='bilibili') }}">
+          <label>目标视频数
+            <input type="number" name="max_results" min="1" value="{{ defaults.max_results }}">
+          </label>
+          <input type="hidden" name="search_per_term" value="{{ defaults.search_per_term }}">
+          <label>每关键词检索页数（B站 生效）
+            <input type="number" name="pages_per_term" min="1" value="{{ defaults.pages_per_term }}">
+          </label>
+          <label>视频下载超时(秒)
+            <input type="number" name="download_timeout_sec" min="10" value="{{ defaults.download_timeout_sec }}">
+          </label>
+          <label>自定义检索关键词（换行/逗号分隔，留空用默认）
+            <textarea name="keywords" rows="5">{{ defaults.bilibili_keywords_text }}</textarea>
+          </label>
+          <label class="check">
+            <input type="checkbox" name="download_media" checked>
+            下载音视频
+          </label>
+          <label class="check">
+            <input type="checkbox" name="download_thumbnails" checked>
+            下载缩略图
+          </label>
+          <button type="submit">抓取中文版（B站）</button>
+        </form>
+      </article>
+    </section>
+
+    <section class="card recent">
+      <h2>最近任务</h2>
+      {% if recent %}
+        <table>
+          <thead>
+            <tr>
+              <th>时间</th>
+              <th>来源</th>
+              <th>保留</th>
+              <th>过滤</th>
+              <th>失败</th>
+              <th>目录</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for item in recent %}
+              <tr>
+                <td>{{ item.generated_at }}</td>
+                <td>{{ item.source }}</td>
+                <td>{{ item.metrics.kept_records }}</td>
+                <td>{{ item.metrics.filtered_records }}</td>
+                <td>{{ item.metrics.failures }}</td>
+                <td>{{ item.run_dir }}</td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      {% else %}
+        <p>暂无任务记录。</p>
+      {% endif %}
+    </section>
+  </main>
+
+  {% if active_job %}
+  <script>
+    (() => {
+      const jobId = {{ active_job.id|tojson }};
+      const logsEl = document.getElementById("jobLogs");
+      const statusEl = document.getElementById("jobStatus");
+      const updatedEl = document.getElementById("jobUpdated");
+      const progressEl = document.getElementById("jobProgress");
+
+      let stopped = false;
+      let lastLogLen = logsEl ? logsEl.textContent.length : 0;
+
+      function render(job) {
+        if (!job || !logsEl) return;
+        statusEl.textContent = job.status;
+        updatedEl.textContent = job.updated_at || "-";
+        const nextLogs = (job.logs || []).join("\n");
+        if (nextLogs.length !== lastLogLen) {
+          logsEl.textContent = nextLogs;
+          logsEl.scrollTop = logsEl.scrollHeight;
+          lastLogLen = nextLogs.length;
+        }
+
+        if (job.status === "completed") {
+          const m = (job.summary || {}).metrics || {};
+          progressEl.textContent = `任务完成：保留 ${m.kept_records || 0} 条，过滤 ${m.filtered_records || 0} 条，失败 ${m.failures || 0} 条。`;
+          statusEl.className = "badge done";
+          stopped = true;
+        } else if (job.status === "failed") {
+          progressEl.textContent = `任务失败：${job.error || "未知错误"}`;
+          statusEl.className = "badge failed";
+          stopped = true;
+        } else if (job.status === "running") {
+          progressEl.textContent = "任务运行中，请稍候...";
+          statusEl.className = "badge running";
+        } else {
+          progressEl.textContent = "任务排队中...";
+          statusEl.className = "badge queued";
+        }
+      }
+
+      async function poll() {
+        if (stopped) return;
+        try {
+          const resp = await fetch(`/job/${jobId}/status`, { cache: "no-store" });
+          if (!resp.ok) return;
+          const job = await resp.json();
+          render(job);
+        } catch (_err) {}
+      }
+
+      render({{ active_job|tojson }});
+      poll();
+      setInterval(poll, 1200);
+    })();
+  </script>
+  {% endif %}
+</body>
+</html>
