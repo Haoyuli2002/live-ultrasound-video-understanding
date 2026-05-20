@@ -1,0 +1,23 @@
+# ===== Core - Video Filter (CV-based) =====
+opencv-python>=4.8.0
+numpy>=1.24.0
+Pillow>=9.0.0
+
+# ===== VLM Filter (Qwen2-VL-2B) =====
+torch>=2.0.0
+torchvision>=0.15.0
+transformers>=4.37.0
+accelerate>=0.25.0
+qwen-vl-utils>=0.0.2
+
+# ===== Batch processing =====
+tqdm>=4.65.0
+
+# ===== Stage 2 LLM API =====
+openai>=1.0.0
+
+# ===== ASR (planned) =====
+# whisperx
+
+# ===== Crawler =====
+# See UltrasoundCrawler_KeyCode_20260323_v2/requirements.txt for crawler-specific deps

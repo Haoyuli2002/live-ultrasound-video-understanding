@@ -38,4 +38,7 @@ Thumbs.db
 # ===== 模型权重 =====
 *.bin
 *.safetensors
-*.gguflivecc/
+*.gguf
+
+# ===== 参考代码 =====
+livecc/
