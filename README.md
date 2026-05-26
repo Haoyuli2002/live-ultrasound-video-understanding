@@ -14,35 +14,46 @@ A real-time ultrasound video understanding system that goes beyond scene descrip
 ## Project Structure
 
 ```
-├── docs/                           # Project documentation
-│   ├── PROJECT_PLAN.md            # Full project plan
-│   ├── DATA_PIPELINE.md           # Data processing pipeline
-│   ├── AGENT_ARCHITECTURE.md      # Agentic benchmark construction
-│   └── VIDEO_FILTER_DOC.md        # Video filter technical doc
+├── README.md
+├── requirements.txt
+├── .gitignore
 │
-├── video_filter_vlm.py            # VLM-based video filter (Qwen2-VL-2B)
-├── batch_filter.py                # Batch filtering with progress save
-├── video_filter.py                # Legacy CV-based filter
+├── scripts/                          # Executable pipeline scripts
+│   ├── batch_filter.py               # Batch VLM video filtering
+│   ├── asr_pipeline.py               # ASR transcription (faster-whisper)
+│   └── video_filter_vlm.py           # Single-video VLM filter
 │
-├── video_filter_vlm.ipynb         # VLM filter testing notebook
-├── video_filter_result.ipynb      # Filter results analysis & visualization
+├── notebooks/                        # Jupyter notebooks (experiments)
+│   ├── ablation_input_modes.ipynb    # VLM input mode comparison
+│   ├── asr_pipeline.ipynb            # ASR testing & visualization
+│   ├── video_filter_vlm.ipynb        # VLM filter development
+│   └── video_filter_result.ipynb     # Filter results analysis
 │
-├── UltrasoundCrawler_KeyCode_20260323_v2/  # YouTube/Bilibili crawler
-│   ├── cli.py                     # Command-line interface
-│   ├── webapp.py                  # Web UI
-│   └── crawler/                   # Core crawler modules
+├── src/                              # Source modules
+│   ├── ablation_input_modes.py       # Ablation study: single/multi/video modes
+│   └── video_filter.py              # Legacy CV-based filter
 │
-├── livecc/                        # LiveCC reference codebase (CVPR 2025)
+├── docs/                             # Documentation
+│   ├── PROJECT_PLAN.md              # Full project plan
+│   ├── DATA_PIPELINE.md            # Data processing pipeline
+│   ├── AGENT_ARCHITECTURE.md       # Agentic benchmark construction
+│   └── VIDEO_FILTER_DOC.md         # Video filter technical doc
 │
-└── Papers/                        # Reference papers (git-ignored)
+├── transcripts/                      # ASR output (git-ignored)
+├── results/                          # Experiment results (git-ignored)
+│
+└── UltrasoundCrawler_KeyCode_20260323_v2/  # Video crawler
+    ├── cli.py                        # Command-line interface
+    ├── webapp.py                     # Web UI
+    └── crawler/                      # Core crawler modules
 ```
 
 ## Pipeline
 
 ```
 1. Crawl Videos    → UltrasoundCrawler (YouTube/Bilibili)
-2. VLM Filter      → Qwen2-VL-2B frame analysis + rule-based decision
-3. ASR Transcript  → WhisperX (TODO)
+2. VLM Filter      → Qwen2-VL/Qwen3-VL frame & video analysis
+3. ASR Transcript  → faster-whisper (word-level timestamps)
 4. QA Generation   → GPT-4o / Claude (TODO)
 5. Model Training  → Qwen2-VL-7B + LiveCC streaming (TODO)
 6. Evaluation      → UltrasoundQA Benchmark (TODO)
@@ -50,38 +61,51 @@ A real-time ultrasound video understanding system that goes beyond scene descrip
 
 ## Quick Start
 
-### 1. Crawl Videos
+### 1. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 2. Crawl Videos
 ```bash
 cd UltrasoundCrawler_KeyCode_20260323_v2
-pip install -r requirements.txt
 python cli.py --source youtube --max-results 100 --download-media
 ```
 
-### 2. VLM Filter (requires ~4GB for Qwen2-VL-2B model)
+### 3. VLM Filter
 ```bash
-pip install torch transformers qwen-vl-utils opencv-python tqdm
-python batch_filter.py --max-videos 5  # test with 5
-python batch_filter.py                  # run all
+python scripts/batch_filter.py --max-videos 5
 ```
 
-### 3. View Results
-Open `video_filter_result.ipynb` in Jupyter.
+### 4. ASR Transcription
+```bash
+python scripts/asr_pipeline.py --video path/to/video.mp4 --model base
+python scripts/asr_pipeline.py --batch --input-dir path/to/videos/
+```
 
-## Key Innovation: VLM-based Video Filtering
+### 5. Run Notebooks
+```bash
+jupyter notebook notebooks/
+```
 
-Instead of traditional CV heuristics, we use **Qwen2-VL-2B** to analyze each frame:
-- Correctly identifies ultrasound screens vs. lecture slides vs. talking heads
-- Few-shot prompted for structured JSON output
-- Rule-based aggregation for video-level decisions
-- Incremental save + resume support for long-running batch jobs
+## Video Classification Types
+
+| Type | Description | Training Value |
+|------|-------------|---------------|
+| `pure_ultrasound` | Only US machine screen, no faces/slides | ⭐⭐⭐ High |
+| `hands_on_tutorial` | Instructor + probe technique + US display | ⭐⭐⭐ High |
+| `case_discussion` | Instructor annotating/discussing US clips | ⭐⭐ Medium |
+| `ppt_lecture` | Slides/presentations with occasional US | ⭐ Low |
+| `diagram_animation` | Anatomical diagrams, 3D animations | ❌ None |
+| `mixed` | Multiple types alternating | Needs trimming |
 
 ## Tech Stack
 
 | Component | Technology |
 |-----------|-----------|
 | Video Crawling | yt-dlp + YouTube Data API |
-| Frame Analysis | Qwen2-VL-2B (local, MPS/CUDA) |
-| ASR | WhisperX (planned) |
+| Frame Analysis | Qwen2-VL-2B / Qwen3-VL-2B (local) |
+| ASR | faster-whisper (CPU, int8) |
 | QA Generation | GPT-4o / Claude API (planned) |
 | Model Training | Qwen2-VL-7B + DeepSpeed (planned) |
 | Evaluation | LLM-as-Judge (planned) |
@@ -90,7 +114,7 @@ Instead of traditional CV heuristics, we use **Qwen2-VL-2B** to analyze each fra
 
 - **LiveCC** — Chen et al., "LiveCC: Learning Video LLM with Streaming Speech Transcription at Scale", CVPR 2025
 - **Qwen2-VL** — Alibaba, Qwen2-VL Vision-Language Model
-- **WhisperX** — Large-scale ASR with word-level timestamps
+- **faster-whisper** — CTranslate2-based Whisper inference
 
 ## License
 

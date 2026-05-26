@@ -1,44 +1,43 @@
-# ===== 大文件 (视频/图片/PDF) =====
-*.mp4
-*.webm
-*.mkv
-*.avi
-*.mov
-*.jpg
-*.jpeg
-*.png
-*.pdf
-
-# ===== Python =====
+# Python
 __pycache__/
-*.pyc
-*.pyo
+*.py[cod]
+*$py.class
+*.so
 .venv/
 venv/
 env/
 *.egg-info/
 
-# ===== 输出/数据目录 =====
-UltrasoundCrawler_KeyCode_20260323_v2/output/
-filtered_videos/
-
-# ===== OS =====
-.DS_Store
-Thumbs.db
-
-# ===== IDE =====
+# IDE
 .vscode/
 .idea/
 *.swp
 *.swo
 
-# ===== Jupyter =====
-.ipynb_checkpoints/
+# OS
+.DS_Store
+Thumbs.db
 
-# ===== 模型权重 =====
+# Data & outputs (large files, not tracked)
+transcripts/
+results/
+UltrasoundCrawler_KeyCode_20260323_v2/output/
+*.wav
+*.mp4
+*.webm
+*.mkv
+*.avi
+
+# Model weights (downloaded automatically)
 *.bin
 *.safetensors
-*.gguf
 
-# ===== 参考代码 =====
-livecc/
+# Jupyter
+.ipynb_checkpoints/
+
+# Papers (reference only)
+Papers/
+
+# Misc
+*.log
+*.tmp
