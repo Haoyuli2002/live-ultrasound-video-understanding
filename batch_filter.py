@@ -6,13 +6,13 @@
 特性:
 - 边跑边保存（每个视频处理完立即写入JSON）
 - 断点续跑（自动跳过已处理的视频）
-- 超时保护（单个视频超时自动跳过）
+- 超时保护（单个视频超时后仍基于已分析帧做判断）
 - tqdm 进度条
 
 使用方法:
     python batch_filter.py
     python batch_filter.py --max-videos 5          # 只跑5个测试
-    python batch_filter.py --timeout 180           # 单视频超时3分钟
+    python batch_filter.py --timeout 600           # 单视频超时10分钟
 """
 
 import json
@@ -35,9 +35,9 @@ from video_filter_vlm import load_model, sample_frames, run_stage1, parse_json_f
 # 配置
 # ============================================================================
 
-DEFAULT_INPUT_DIR = "UltrasoundCrawler_KeyCode_20260323_v2/output/20260519_204257_youtube/media"
-NUM_FRAMES = 10
-DEFAULT_TIMEOUT = 300  # 单视频最大处理时间（秒）
+DEFAULT_INPUT_DIR = "UltrasoundCrawler_KeyCode_20260323_v2/output/20260520_162816_youtube/media"
+NUM_FRAMES = 8
+DEFAULT_TIMEOUT = 600  # 单视频最大处理时间（秒）
 
 
 # ============================================================================
@@ -46,6 +46,10 @@ DEFAULT_TIMEOUT = 300  # 单视频最大处理时间（秒）
 
 class TimeoutError(Exception):
     pass
+
+# 用于在超时时传递已分析的帧结果
+_partial_frame_results = []
+
 
 def timeout_handler(signum, frame):
     raise TimeoutError("视频处理超时")
@@ -56,7 +60,11 @@ def timeout_handler(signum, frame):
 # ============================================================================
 
 def rule_based_decision(frame_results: list) -> dict:
-    """基于帧级分析结果做简单规则判断"""
+    """基于帧级分析结果做简单规则判断
+    
+    注意: "医学影像" 和 "超声画面" 都算作有效超声相关帧。
+    Qwen2-VL-2B 经常把超声画面标记为 "医学影像"，所以两者合并统计。
+    """
     total = len(frame_results)
     if total == 0:
         return {"决策": "丢弃", "判断理由": "无有效帧", "质量评分": 0}
@@ -66,29 +74,26 @@ def rule_based_decision(frame_results: list) -> dict:
         t = r.get("帧类型", "其他")
         type_counts[t] = type_counts.get(t, 0) + 1
 
-    us_count = type_counts.get("超声画面", 0)
+    # "医学影像" + "超声画面" 都算作有效超声帧
+    us_count = type_counts.get("超声画面", 0) + type_counts.get("医学影像", 0)
     lecture_count = type_counts.get("讲课画面", 0)
     ppt_count = type_counts.get("PPT幻灯片", 0)
-    medical_count = type_counts.get("医学影像", 0)
 
     us_ratio = us_count / total
     lecture_ratio = (lecture_count + ppt_count) / total
 
     if us_ratio >= 0.7:
         decision, quality = "保留", int(70 + us_ratio * 30)
-        reason = f"超声画面占比{us_ratio:.0%}，适合训练"
+        reason = f"超声/医学影像占比{us_ratio:.0%}，适合训练"
     elif us_ratio >= 0.4:
         decision, quality = "需要裁剪", int(40 + us_ratio * 40)
-        reason = f"超声画面占比{us_ratio:.0%}，混合内容需裁剪"
-    elif medical_count + us_count >= total * 0.5:
-        decision, quality = "需要裁剪", 45
-        reason = f"医学影像+超声占比{(medical_count+us_count)/total:.0%}，部分可用"
+        reason = f"超声/医学影像占比{us_ratio:.0%}，混合内容需裁剪"
     elif lecture_ratio >= 0.6:
         decision, quality = "丢弃", int(20 + (1 - lecture_ratio) * 30)
         reason = f"讲课/PPT占比{lecture_ratio:.0%}，不适合训练"
     else:
         decision, quality = "丢弃", 30
-        reason = f"内容混杂，超声画面仅{us_ratio:.0%}"
+        reason = f"内容混杂，超声/医学影像仅{us_ratio:.0%}"
 
     anatomy_list = []
     for r in frame_results:
@@ -154,6 +159,7 @@ def save_report(report_path: Path, results: list, input_dir: str, total_time: fl
 def batch_filter(input_dir: str, num_frames: int = NUM_FRAMES,
                  max_videos: int = None, timeout: int = DEFAULT_TIMEOUT):
     """批量筛选目录下所有视频"""
+    global _partial_frame_results
 
     # 查找所有视频
     videos = []
@@ -181,9 +187,9 @@ def batch_filter(input_dir: str, num_frames: int = NUM_FRAMES,
 
     print(f"📂 输入目录: {input_dir}")
     print(f"📹 总视频: {len(videos)} | 已处理: {len(processed_ids)} | 待处理: {len(remaining)}")
-    print(f"⏱️  预计时间: ~{len(remaining)} 分钟")
+    print(f"🎞️  每视频采样帧数: {num_frames}")
     print(f"💾 报告路径: {report_path} (边跑边保存)")
-    print(f"⏳ 单视频超时: {timeout}s")
+    print(f"⏳ 单视频超时: {timeout}s（超时后基于已分析帧判断）")
     print("=" * 70)
 
     if not remaining:
@@ -207,6 +213,10 @@ def batch_filter(input_dir: str, num_frames: int = NUM_FRAMES,
 
         print(f"\n[{idx}/{len(remaining)}] {category}/{video_id}")
 
+        _partial_frame_results = []
+        frame_results = []
+        video_info = None
+
         try:
             # 设置超时 (仅Unix)
             if hasattr(signal, 'SIGALRM'):
@@ -218,8 +228,9 @@ def batch_filter(input_dir: str, num_frames: int = NUM_FRAMES,
             # 采样帧
             frames, video_info = sample_frames(video_path, num_frames)
 
-            # VLM 分析
+            # VLM 分析（逐帧，保存部分结果）
             frame_results = run_stage1(model, processor, device, frames)
+            _partial_frame_results = frame_results
 
             # 规则判断
             decision = rule_based_decision(frame_results)
@@ -234,23 +245,46 @@ def batch_filter(input_dir: str, num_frames: int = NUM_FRAMES,
                 "video_id": video_id,
                 "video_path": video_path,
                 "category": category,
-                "duration_sec": round(video_info["duration"], 1),
+                "duration_sec": round(video_info["duration"], 1) if video_info else 0,
                 "process_time_sec": round(elapsed, 1),
+                "analyzed_frames": len(frame_results),
+                "total_frames_requested": num_frames,
                 **decision,
             }
 
             icon = {"保留": "✅", "需要裁剪": "⚠️", "丢弃": "❌"}.get(decision["决策"], "?")
-            print(f"   {icon} [{decision['质量评分']}/100] {decision['决策']} ({elapsed:.0f}s)")
+            print(f"   {icon} [{decision['质量评分']}/100] {decision['决策']} ({elapsed:.0f}s) [{len(frame_results)}/{num_frames}帧]")
 
         except TimeoutError:
             if hasattr(signal, 'SIGALRM'):
                 signal.alarm(0)
-            print(f"   ⏰ 超时跳过 (>{timeout}s)")
-            result = {
-                "video_id": video_id, "video_path": video_path,
-                "category": category, "决策": "错误",
-                "判断理由": f"处理超时(>{timeout}s)", "质量评分": 0,
-            }
+
+            elapsed = time.time() - t0
+
+            # 超时但已有部分帧结果 → 基于已有结果做判断
+            if len(_partial_frame_results) >= 3:
+                decision = rule_based_decision(_partial_frame_results)
+                result = {
+                    "video_id": video_id,
+                    "video_path": video_path,
+                    "category": category,
+                    "duration_sec": round(video_info["duration"], 1) if video_info else 0,
+                    "process_time_sec": round(elapsed, 1),
+                    "analyzed_frames": len(_partial_frame_results),
+                    "total_frames_requested": num_frames,
+                    "超时但有部分结果": True,
+                    **decision,
+                }
+                icon = {"保留": "✅", "需要裁剪": "⚠️", "丢弃": "❌"}.get(decision["决策"], "?")
+                print(f"   ⏰ 超时但有{len(_partial_frame_results)}帧结果 → {icon} [{decision['质量评分']}/100] {decision['决策']}")
+            else:
+                print(f"   ⏰ 超时跳过 (>{timeout}s, 仅{len(_partial_frame_results)}帧)")
+                result = {
+                    "video_id": video_id, "video_path": video_path,
+                    "category": category, "决策": "错误",
+                    "判断理由": f"处理超时(>{timeout}s), 仅分析{len(_partial_frame_results)}帧",
+                    "质量评分": 0,
+                }
 
         except Exception as e:
             if hasattr(signal, 'SIGALRM'):

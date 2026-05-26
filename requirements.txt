@@ -1,23 +1,29 @@
-# ===== Core - Video Filter (CV-based) =====
+# ===== Core - Video Processing =====
 opencv-python>=4.8.0
 numpy>=1.24.0
 Pillow>=9.0.0
 
-# ===== VLM Filter (Qwen2-VL-2B) =====
+# ===== VLM Filter (Qwen2-VL / Qwen3-VL) =====
 torch>=2.0.0
 torchvision>=0.15.0
-transformers>=4.37.0
+transformers>=4.40.0
 accelerate>=0.25.0
-qwen-vl-utils>=0.0.2
+qwen-vl-utils>=0.0.8
 
-# ===== Batch processing =====
+# ===== ASR Pipeline (faster-whisper) =====
+faster-whisper>=1.0.0
+
+# ===== Batch Processing =====
 tqdm>=4.65.0
 
-# ===== Stage 2 LLM API =====
+# ===== LLM API (optional, for Stage 2) =====
 openai>=1.0.0
 
-# ===== ASR (planned) =====
-# whisperx
+# ===== Notebooks & Visualization =====
+matplotlib>=3.7.0
+pandas>=2.0.0
+jupyter>=1.0.0
+ipywidgets>=8.0.0
 
-# ===== Crawler =====
-# See UltrasoundCrawler_KeyCode_20260323_v2/requirements.txt for crawler-specific deps
+# ===== Video codec for Qwen VL video mode =====
+torchcodec>=0.1.0
