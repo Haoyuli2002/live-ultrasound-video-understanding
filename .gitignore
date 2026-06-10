@@ -41,3 +41,7 @@ Papers/
 # Misc
 *.log
 *.tmp
+# Secrets
+.env
+.env.local
+.env.*.local

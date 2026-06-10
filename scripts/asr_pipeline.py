@@ -29,9 +29,9 @@ from datetime import datetime
 # Configuration
 # ============================================================================
 
-DEFAULT_VIDEO = "UltrasoundCrawler_KeyCode_20260323_v2/output/20260520_162816_youtube/media/case_reasoning/8V649L5Q368.mp4"
+DEFAULT_VIDEO = 'UltrasoundCrawler_KeyCode_20260323_v2/output/20260520_162816_youtube/media/scan_tutorial/TlckvYhqaFE.mp4' # "UltrasoundCrawler_KeyCode_20260323_v2/output/20260520_162816_youtube/media/case_reasoning/8V649L5Q368.mp4"
 DEFAULT_MODEL = "base"  # Options: tiny, base, small, medium, large-v3
-DEFAULT_OUTPUT_DIR = "transcripts"
+DEFAULT_OUTPUT_DIR = "results/transcripts"
 
 
 # ============================================================================

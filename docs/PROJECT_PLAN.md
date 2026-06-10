@@ -407,15 +407,54 @@ ultrasound_benchmark/
 
 ## 14. Current Progress
 
+### Phase 1 — Data Collection & Processing
 | Item | Status |
 |------|--------|
 | Project environment setup | ✅ Done |
 | UltrasoundCrawler working | ✅ Done |
-| Video purity filter (`video_filter.py`) | ✅ Done |
-| Initial video collection (11 videos, 5 passed filter) | ✅ Done |
+| Video purity filter (CV-based, `src/video_filter.py`) | ✅ Done |
+| **VLM-based 6-class video classifier** (`scripts/batch_filter.py`) | ✅ Done |
+| Initial video collection (demo: 11 videos, 5 kept) | ✅ Done |
+| ASR transcription pipeline (faster-whisper) | ✅ Done |
+| Video segmentation: histogram + GPT-4o (two-stage) | ✅ Done |
+| Scale up crawling to 100+ pure videos | 🟡 In progress |
+
+### Phase 2 — Benchmark Construction
+| Item | Status |
+|------|--------|
 | LiveCC codebase analyzed | ✅ Done |
 | Project plan document | ✅ Done |
-| Target video selection for demo | 🔲 Next |
-| ASR transcription pipeline | 🔲 Pending |
-| QA generation agent | 🔲 Pending |
-| Model training | 🔲 Pending |
+| **Dual-track QA design** (offline 3 types + streaming 2 types) | ✅ Done |
+| Offline QA generator (`qa_generation.py`, GPT-4o) | ✅ Done |
+| Streaming QA generator (`streaming_qa_generation.py`, GPT-4o) | ✅ Done |
+| **Streaming QA validator** (`qa_validator.py`, Gemini 2.5 Pro via OpenRouter) | ✅ Done |
+| LiveCC-style JSONL merger (`qa_merge.py`) | ✅ Done |
+| End-to-end pipeline runner (`run_pipeline.py`) | ✅ Done |
+| Pipeline documentation (`docs/PIPELINE.md`) | ✅ Done |
+| Demo single-video run (8V649L5Q368) — old 5-types-in-one | ✅ Done (legacy) |
+| Demo single-video run with new dual-track design | 🟡 Next |
+| Scale-up to 20–30 videos benchmark v0 | 🔲 Pending |
+| Human review of ~200–500 gold QA | 🔲 Pending |
+| Knowledge base (anatomy / protocols / normal values) for RAG | 🔲 Pending |
+| Inpainting of on-screen annotations (optional) | 🔲 Pending |
+
+### Phase 3 — Model Training
+| Item | Status |
+|------|--------|
+| GPU training environment | 🔲 Pending |
+| LiveCC seek-index format prep | 🔲 Pending |
+| Qwen2-VL-7B SFT on ultrasound dataset | 🔲 Pending |
+| Ablation: ± prior knowledge, ± intent modeling | 🔲 Pending |
+
+### Phase 4 — Evaluation & Paper
+| Item | Status |
+|------|--------|
+| UltrasoundQA benchmark evaluation | 🔲 Pending |
+| Comparison vs Qwen2-VL / GPT-4o / LiveCC-7B baselines | 🔲 Pending |
+| VideoMME / OVOBench cross-domain eval | 🔲 Pending |
+| Paper writing | 🔲 Pending |
+
+### Where we are right now
+- **Phase 1 essentially complete** for the demo cohort; scaling-up the crawler is the only remaining item.
+- **Phase 2 mid-stage**: full QA pipeline (generators + validator + merger + end-to-end runner) is implemented and documented. Next step is to actually run it on the demo video with the new design and on 20–30 videos for benchmark v0.
+- Phases 3 & 4 not yet started.
