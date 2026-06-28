@@ -1,54 +1,74 @@
 """
-Streaming QA Validator using Gemini 2.5 Pro (via OpenRouter)
+Streaming QA Validator using Gemini 2.5 Flash (via OpenRouter)
 ==============================================================
-Validates each streaming QA pair on a single binary criterion:
+Validates each streaming QA pair by sending two ACTUAL VIDEO CLIPS
+(not sampled frames) to Gemini 2.5 Flash and asking it to verify a
+single binary criterion:
 
   Validation rule (applies to BOTH sonographer_intent and next_action_guidance):
-    1. The QUESTION must be derivable from [SEEN] frames + ASR-up-to-query-time only.
-       It must NOT reveal or reference any content that only exists in [FUTURE].
-    2. The ANSWER must correspond to what is actually visible in [SEEN]+[FUTURE]
-       (i.e. the real intent / real next action shown in the clip), NOT a
-       hallucination unsupported by either set of frames.
+    1. The QUESTION must be derivable from [SEEN_VIDEO] only.
+       It must NOT reveal or reference any content that exists only in
+       [FUTURE_VIDEO].
+    2. The ANSWER must correspond to what is actually visible/audible in
+       [SEEN_VIDEO] + [FUTURE_VIDEO] (i.e. the real intent / real next
+       action), NOT a hallucination unsupported by either segment.
 
   verdict = "pass" if BOTH conditions hold, else "fail".
 
-Validation is a different model family from the GPT-4o generator (cross-family
-sanity check). OpenRouter exposes Gemini via OpenAI-compatible API, so we
-reuse the openai SDK.
+Why video clips (not 6 sampled frames)?
+  Verified via (see _video_llm.py) that OpenRouter
+  + Gemini 2.5 Flash natively accepts mp4 via the `type: "file"`
+  content block (video_tokens > 0 in the usage breakdown). This gives
+  the validator full motion + audio (operator's narration), which is
+  exactly what's needed to spot future-leakage and answer hallucinations.
 
 Usage:
-    export OPENROUTER_API_KEY="sk-or-..."
-    python scripts/qa_validator.py --streaming-qa results/qa/ID_streaming_qa.json --video path.mp4
+    # OPENROUTER_API_KEY is auto-loaded from .env
+    python scripts/qa_validator.py \\
+        --streaming-qa results/qa/ID_streaming_qa.json \\
+        --video path/to/ID.mp4
 """
 
-import os
 import sys
 import json
 import time
 import re
-import base64
 import argparse
 from pathlib import Path
 
-# Auto-load .env from project root
+# Auto-load .env + import the shared video helper
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import _env_loader  # noqa: F401
-
-import cv2
-import numpy as np
+from _video_llm import (
+    DEFAULT_MODEL,
+    build_openrouter_client,
+    build_video_block,
+    call_with_content,
+    cut_clip,
+    temp_clip_path,
+    text_block,
+)
 
 
 # ============================================================================
 # Configuration
 # ============================================================================
 
-OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY", "")
-OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
-VALIDATOR_MODEL = "google/gemini-2.5-pro"
+VALIDATOR_MODEL = DEFAULT_MODEL  # "google/gemini-2.5-flash"
 
-FRAMES_SEEN = 3
-FRAMES_FUTURE = 3
-FRAME_SIZE = (512, 512)
+# SEEN segment window — content the learner has watched up to query_time.
+# We keep the LATTER part (closest to query_time) capped at this many seconds.
+# 240s is generous: enough for the validator to judge "could this question be
+# written from SEEN only?" without exploding cost.
+SEEN_WINDOW_SEC = 240.0
+
+# FUTURE segment window — content right AFTER query_time. We keep the EARLIER
+# part of FUTURE (the moment the answer is grounded in). 30s is enough to
+# cover the immediate next maneuver / next finding for both sonographer_intent
+# and next_action_guidance, at ~5x lower token cost than the full clip.
+# This also dramatically reduces 504 errors observed when both segments were
+# large simultaneously.
+FUTURE_WINDOW_SEC = 30.0
 
 
 VALIDATOR_PROMPT_TEMPLATE = """You are a strict validator for a streaming ultrasound QA benchmark.
@@ -60,80 +80,53 @@ Question: "{question}"
 Answer:   "{answer}"
 Type:     {qa_type}    (sonographer_intent or next_action_guidance)
 
-I am showing you TWO sets of frames in temporal order:
-[SEEN] frames   ({clip_start:.0f}s -> {query_time:.0f}s) — content the learner had access to when the question was asked.
-[FUTURE] frames ({query_time:.0f}s -> {clip_end:.0f}s)   — content AFTER the question, which the learner had NOT seen.
+You will see TWO video segments in temporal order:
+  [SEEN_VIDEO]   — content the learner had already watched (clip_start -> query_time).
+  [FUTURE_VIDEO] — content AFTER the question, NOT visible to the learner (query_time -> clip_end).
+
+Each segment includes its original visual frames AND audio (operator's narration).
+Use BOTH the visuals and the spoken commentary when judging.
 
 Validation criteria — BOTH must hold for a "pass":
 
 (1) QUESTION GROUNDING:
-    The QUESTION must be writable using ONLY [SEEN] frames (and any ASR up to t={query_time:.0f}s).
-    It must NOT reveal, reference, hint at, or assume any content that only appears in [FUTURE].
+    The QUESTION must be writable using ONLY [SEEN_VIDEO] (frames + narration
+    audible up to t={query_time:.0f}s). It must NOT reveal, reference, hint at,
+    or assume any content that only appears in [FUTURE_VIDEO] — visually OR
+    audibly.
 
 (2) ANSWER FAITHFULNESS:
-    The ANSWER must correspond to what is actually visible across [SEEN] + [FUTURE]
-    (i.e. it describes the real intent or the real next action that ACTUALLY happens in the clip).
-    It must NOT be a hallucination unsupported by what these frames show.
+    The ANSWER must correspond to what is actually shown / said across
+    [SEEN_VIDEO] + [FUTURE_VIDEO] (it describes the real intent or real next
+    action that ACTUALLY happens). It must NOT be a hallucination unsupported
+    by what these two segments show.
 
 Verdict:
-  "pass" — both (1) question grounding AND (2) answer faithfulness hold.
-  "fail" — either the question leaks future content, OR the answer is unsupported by the frames.
+  "pass" — BOTH (1) question grounding AND (2) answer faithfulness hold.
+  "fail" — either the question leaks future content, OR the answer is
+           unsupported by what the two segments show.
 
 Output STRICTLY this JSON object (no markdown fences, no extra text):
 {{
   "verdict": "pass" | "fail",
-  "reason": "<one or two sentences. If fail, identify which criterion failed and cite which set of frames the issue points to.>"
+  "reason": "<MANDATORY: at least 2 full sentences (>= 30 words total). Cite SPECIFIC content visible OR audible in the segments — anatomical structures shown, probe orientation, what action is performed, what the operator says, what changes between [SEEN_VIDEO] and [FUTURE_VIDEO]. A vague reason like 'looks fine' or 'matches' is NOT acceptable.>"
 }}"""
 
 
 # ============================================================================
-# Frame Helpers
+# JSON parsing (robust to fenced output / truncation)
 # ============================================================================
 
-def extract_frames(video_path, start_sec, end_sec, num_frames):
-    """Extract evenly spaced frames in [start_sec, end_sec]."""
-    cap = cv2.VideoCapture(str(video_path))
-    if not cap.isOpened():
-        raise ValueError(f"Cannot open video: {video_path}")
-    fps = cap.get(cv2.CAP_PROP_FPS) or 25.0
-    sf = int(start_sec * fps)
-    ef = max(int(end_sec * fps), sf + 1)
-    indices = np.linspace(sf, ef, num_frames, dtype=int)
-    frames = []
-    for idx in indices:
-        cap.set(cv2.CAP_PROP_POS_FRAMES, int(idx))
-        ret, frame = cap.read()
-        if ret:
-            frame = cv2.resize(frame, FRAME_SIZE)
-            frames.append(frame)
-    cap.release()
-    return frames
-
-
-def frame_to_base64(frame):
-    _, buf = cv2.imencode('.jpg', frame, [cv2.IMWRITE_JPEG_QUALITY, 85])
-    return base64.b64encode(buf).decode('utf-8')
-
-
 def _parse_json_object(raw):
-    """Robust JSON object extraction.
-
-    Handles three failure modes commonly seen with Gemini 2.5 Pro:
-      (a) plain JSON
-      (b) ```json ... ``` fenced block
-      (c) truncated output (closing brace missing) — recover by extracting
-          a `verdict` field via regex and a partial `reason`.
-    """
-    if raw is None:
+    """Extract a single JSON object from `raw`, handling fences, partial output."""
+    if not raw:
         return None
 
-    # (a) plain JSON
     try:
         return json.loads(raw)
     except json.JSONDecodeError:
         pass
 
-    # (b) ```json ... ``` fenced
     m = re.search(r'```(?:json)?\s*(\{.+?\})\s*```', raw, re.DOTALL)
     if m:
         try:
@@ -141,7 +134,6 @@ def _parse_json_object(raw):
         except json.JSONDecodeError:
             pass
 
-    # (c) any complete-looking object
     m = re.search(r'\{.*?\}', raw, re.DOTALL)
     if m:
         try:
@@ -149,55 +141,77 @@ def _parse_json_object(raw):
         except json.JSONDecodeError:
             pass
 
-    # (d) truncated output: try to extract verdict + (partial) reason via regex
+    # truncated output: recover at least the verdict
     verdict_match = re.search(r'"verdict"\s*:\s*"(pass|fail)"', raw)
-    reason_match = re.search(r'"reason"\s*:\s*"([^"]*)', raw)  # may be unterminated
+    reason_match = re.search(r'"reason"\s*:\s*"([^"]*)', raw)
     if verdict_match:
         return {
             "verdict": verdict_match.group(1),
             "reason": (reason_match.group(1) if reason_match else "") + " [truncated]",
         }
-
     return None
 
 
 # ============================================================================
-# Validator (Gemini 2.5 Pro via OpenRouter)
+# Per-QA validation
 # ============================================================================
 
-def _build_openrouter_client(api_key=None):
-    """OpenRouter exposes an OpenAI-compatible API."""
-    from openai import OpenAI
+def _seen_window(clip_start, query_time, window_sec):
+    """Return [a, b] for the SEEN segment, capped to the LATTER `window_sec`
+    (the moment closest to query_time is the most informative for grounding
+    judgement)."""
+    a, b = clip_start, query_time
+    if window_sec and (b - a) > window_sec:
+        a = b - window_sec
+    return a, b
 
-    api_key = api_key or OPENROUTER_API_KEY
-    if not api_key:
-        raise ValueError("OPENROUTER_API_KEY not set. Export it or pass via --api-key")
 
-    return OpenAI(
-        base_url=OPENROUTER_BASE_URL,
-        api_key=api_key,
-        default_headers={
-            "HTTP-Referer": "https://github.com/Haoyuli2002/live-ultrasound-video-understanding",
-            "X-Title": "Ultrasound Streaming QA Validator",
-        },
+def _future_window(query_time, clip_end, window_sec):
+    """Return [a, b] for the FUTURE segment, capped to the EARLIER `window_sec`
+    (the moment right after query_time is where the answer's ground truth
+    actually plays out)."""
+    a, b = query_time, clip_end
+    if window_sec and (b - a) > window_sec:
+        b = a + window_sec
+    return a, b
+
+
+def validate_streaming_qa(qa, video_path, *, video_id=None,
+                           api_key=None, model=VALIDATOR_MODEL,
+                           seen_window_sec=SEEN_WINDOW_SEC,
+                           future_window_sec=FUTURE_WINDOW_SEC):
+    """
+    Validate one streaming QA pair using Gemini 2.5 Flash on OpenRouter,
+    sending the actual SEEN/FUTURE video segments (not sampled frames).
+
+    Returns dict: {verdict, reason, validator_model, usage}.
+    """
+    client = build_openrouter_client(api_key)
+
+    clip_start = float(qa['clip_start'])
+    clip_end = float(qa['clip_end'])
+    query_time = float(qa['query_time'])
+    clip_idx = qa.get('clip_idx', 0)
+
+    if video_id is None:
+        video_id = Path(video_path).stem
+
+    seen_a, seen_b = _seen_window(clip_start, query_time, seen_window_sec)
+    fut_a, fut_b = _future_window(query_time, clip_end, future_window_sec)
+
+    # Cache file names: include effective window so that, if a user re-runs
+    # with a smaller window, we don't accidentally reuse a larger cached clip.
+    seen_path = temp_clip_path(
+        video_id,
+        f"clip{clip_idx}_t{int(query_time)}_seen_{int(seen_b - seen_a)}s",
+    )
+    future_path = temp_clip_path(
+        video_id,
+        f"clip{clip_idx}_t{int(query_time)}_future_{int(fut_b - fut_a)}s",
     )
 
-
-def validate_streaming_qa(qa, video_path, api_key=None, model=VALIDATOR_MODEL):
-    """
-    Validate a single streaming QA pair using Gemini 2.5 Pro on OpenRouter.
-
-    Returns:
-        dict with keys: verdict ("pass" | "fail"), reason, validator_model.
-    """
-    client = _build_openrouter_client(api_key)
-
-    clip_start = qa['clip_start']
-    clip_end = qa['clip_end']
-    query_time = qa['query_time']
-
-    seen_frames = extract_frames(video_path, clip_start, query_time, FRAMES_SEEN)
-    future_frames = extract_frames(video_path, query_time, clip_end, FRAMES_FUTURE)
+    cut_clip(video_path, seen_a, seen_b, seen_path)
+    cut_clip(video_path, fut_a, fut_b, future_path)
 
     prompt = VALIDATOR_PROMPT_TEMPLATE.format(
         clip_start=clip_start,
@@ -208,133 +222,166 @@ def validate_streaming_qa(qa, video_path, api_key=None, model=VALIDATOR_MODEL):
         qa_type=qa['type'],
     )
 
-    content = []
-    content.append({
-        "type": "text",
-        "text": f"=== [SEEN] frames ({clip_start:.0f}s -> {query_time:.0f}s) ===",
-    })
-    for f in seen_frames:
-        content.append({
-            "type": "image_url",
-            "image_url": {"url": f"data:image/jpeg;base64,{frame_to_base64(f)}"},
-        })
-    content.append({
-        "type": "text",
-        "text": f"=== [FUTURE] frames ({query_time:.0f}s -> {clip_end:.0f}s) ===",
-    })
-    for f in future_frames:
-        content.append({
-            "type": "image_url",
-            "image_url": {"url": f"data:image/jpeg;base64,{frame_to_base64(f)}"},
-        })
-    content.append({"type": "text", "text": prompt})
+    # Interleaved layout: label, video, label, video, prompt
+    content_blocks = [
+        text_block(f"=== [SEEN_VIDEO]   {seen_a:.0f}s -> {seen_b:.0f}s ==="),
+        build_video_block(seen_path, label="seen.mp4"),
+        text_block(f"=== [FUTURE_VIDEO] {fut_a:.0f}s -> {fut_b:.0f}s ==="),
+        build_video_block(future_path, label="future.mp4"),
+        text_block(prompt),
+    ]
 
     t0 = time.time()
-    response = client.chat.completions.create(
+    raw, usage = call_with_content(
+        client,
+        content_blocks=content_blocks,
         model=model,
-        messages=[{"role": "user", "content": content}],
         temperature=0.1,
-        max_tokens=800,  # Gemini 2.5 Pro is a reasoning model and needs headroom for internal CoT
     )
     elapsed = time.time() - t0
 
-    raw = response.choices[0].message.content
-    tokens = response.usage.total_tokens if response.usage else 0
-    print(f"      Gemini: {elapsed:.1f}s | {tokens} tok | {qa['type']} @t={query_time:.0f}s")
+    pdetails = (usage.get("prompt_tokens_details") or {})
+    vt = pdetails.get("video_tokens", 0)
+    at = pdetails.get("audio_tokens", 0)
+    cost = usage.get("cost")
+    cost_s = f"${cost:.6f}" if cost is not None else "n/a"
+    print(f"      Gemini: {elapsed:.1f}s | tot={usage.get('total_tokens')} "
+          f"video={vt} audio={at} | cost={cost_s} | "
+          f"{qa['type']} @t={query_time:.0f}s")
+    raw_preview = (raw or "<EMPTY>")[:240].replace("\n", " ")
+    print(f"      RAW: {raw_preview!r}")
 
     parsed = _parse_json_object(raw)
     if parsed is None:
-        print(f"      WARNING: Failed to parse validator output: {raw[:200]}")
+        print(f"      WARNING: validator output unparseable")
         return {
             "verdict": "fail",
             "reason": "validator_parse_failure",
             "validator_model": model,
+            "usage": usage,
         }
 
     verdict = parsed.get("verdict", "fail")
     if verdict not in ("pass", "fail"):
-        # normalize unknown verdicts to "fail"
         verdict = "fail"
 
     return {
         "verdict": verdict,
         "reason": parsed.get("reason", ""),
         "validator_model": model,
+        "usage": usage,
     }
 
 
 # ============================================================================
-# Batch Validation
+# Batch validation
 # ============================================================================
 
 def validate_streaming_qa_file(streaming_qa_path, video_path, output_path=None,
                                 api_key=None, model=VALIDATOR_MODEL,
-                                drop_failed=True):
+                                drop_failed=True,
+                                seen_window_sec=SEEN_WINDOW_SEC,
+                                future_window_sec=FUTURE_WINDOW_SEC,
+                                max_qa=None):
     """
-    Validate every QA in a streaming QA file. Adds a `validation` field per QA.
+    Validate every QA in a streaming-QA file. Adds a `validation` field per QA.
 
     Args:
-        streaming_qa_path: path to {video_id}_streaming_qa.json
-        video_path:        path to the video file
-        output_path:       where to write validated output (default: *_validated.json)
-        api_key:           OpenRouter key
-        model:             validator model id on OpenRouter
-        drop_failed:       if True, remove QA with verdict=="fail" from final list
+        streaming_qa_path:  path to {video_id}_streaming_qa.json
+        video_path:         path to the underlying video file
+        output_path:        where to write validated output (default: same dir, *_validated.json)
+        api_key:            OpenRouter API key (auto-loaded from .env otherwise)
+        model:              validator model id on OpenRouter
+        drop_failed:        if True, remove QA with verdict=="fail" from final list
+        seen_window_sec:    cap on the SEEN segment length (latter portion kept).
+                            None to disable.
+        future_window_sec:  cap on the FUTURE segment length (earlier portion kept).
+                            None to disable.
+        max_qa:             if int, only validate the first N QA (debug / smoke test)
 
-    Returns:
-        merged dict (also written to disk).
+    Returns merged dict (also written to disk).
     """
     streaming_qa_path = Path(streaming_qa_path)
     with open(streaming_qa_path) as f:
         data = json.load(f)
 
     qa_list = data['streaming_qa']
+    if max_qa is not None:
+        qa_list = qa_list[:max_qa]
+
     print(f"\n{'='*70}")
     print(f"Streaming QA Validation: {data['video_id']}")
-    print(f"  Input QA count: {len(qa_list)}")
-    print(f"  Validator: {model} (via OpenRouter)")
-    print(f"  Frame sampling: {FRAMES_SEEN} SEEN + {FRAMES_FUTURE} FUTURE")
+    print(f"  Input QA count : {len(qa_list)}"
+          + (f" (truncated to {max_qa} by --max-qa)" if max_qa else ""))
+    print(f"  Validator      : {model} (OpenRouter)")
+    print(f"  Mode           : full video segments (SEEN + FUTURE)")
+    print(f"  SEEN window    : {seen_window_sec}s   (latter portion before query_time)")
+    print(f"  FUTURE window  : {future_window_sec}s (earlier portion after query_time)")
     print(f"{'='*70}")
 
     stats = {"pass": 0, "fail": 0, "error": 0}
+    cost_total = 0.0
+    video_token_total = 0
 
     for i, qa in enumerate(qa_list):
-        print(f"\n  [{i+1}/{len(qa_list)}] clip{qa['clip_idx']} t={qa['query_time']:.0f}s "
-              f"{qa['type']}")
+        print(f"\n  [{i+1}/{len(qa_list)}] clip{qa['clip_idx']} "
+              f"t={qa['query_time']:.0f}s {qa['type']}")
         try:
-            validation = validate_streaming_qa(qa, video_path,
-                                                 api_key=api_key, model=model)
+            validation = validate_streaming_qa(
+                qa, video_path,
+                video_id=data['video_id'],
+                api_key=api_key,
+                model=model,
+                seen_window_sec=seen_window_sec,
+                future_window_sec=future_window_sec,
+            )
             qa['validation'] = validation
             verdict = validation.get('verdict', 'fail')
             stats[verdict] = stats.get(verdict, 0) + 1
-            print(f"      verdict={verdict} | reason: {validation['reason'][:140]}")
+            usage = validation.get('usage') or {}
+            c = usage.get('cost')
+            if c is not None:
+                cost_total += c
+            pdetails = usage.get('prompt_tokens_details') or {}
+            vt = pdetails.get('video_tokens', 0) or 0
+            video_token_total += vt
+            print(f"      verdict={verdict} | reason: {validation['reason'][:160]}")
         except Exception as e:
-            print(f"      ERROR: {e}")
+            print(f"      ERROR: {type(e).__name__}: {e}")
             qa['validation'] = {
                 "verdict": "fail",
-                "reason": f"exception: {e}",
+                "reason": f"exception: {type(e).__name__}: {e}",
                 "validator_model": model,
             }
             stats["error"] += 1
 
-        time.sleep(0.5)  # Rate limiting
+        time.sleep(0.5)  # gentle pacing
 
     if drop_failed:
         kept = [q for q in qa_list if q.get('validation', {}).get('verdict') == 'pass']
     else:
         kept = qa_list
 
+    # Strip per-QA 'usage' field before serializing — it bloats the file.
+    # We keep an aggregate in the top-level instead.
+    for q in qa_list:
+        v = q.get('validation') or {}
+        v.pop('usage', None)
+
     output = {
         **data,
         'validator_model': model,
         'validation_stats': stats,
+        'validation_cost_usd': round(cost_total, 6),
+        'validation_video_tokens_total': video_token_total,
         'num_after_validation': len(kept),
         'streaming_qa': kept,
     }
 
     if output_path is None:
         output_path = streaming_qa_path.parent / (
-            streaming_qa_path.stem.replace('_streaming_qa', '') + '_streaming_qa_validated.json'
+            streaming_qa_path.stem.replace('_streaming_qa', '')
+            + '_streaming_qa_validated.json'
         )
     output_path = Path(output_path)
     output_path.parent.mkdir(parents=True, exist_ok=True)
@@ -346,9 +393,10 @@ def validate_streaming_qa_file(streaming_qa_path, video_path, output_path=None,
     print(f"{'='*70}")
     for k in ("pass", "fail", "error"):
         print(f"  {k:6s}: {stats.get(k, 0)}")
-    print(f"  Final kept: {len(kept)}/{len(qa_list)} "
-          f"(drop_failed={drop_failed})")
-    print(f"  Saved: {output_path}")
+    print(f"  Final kept     : {len(kept)}/{len(qa_list)} (drop_failed={drop_failed})")
+    print(f"  Total cost     : ${cost_total:.4f}")
+    print(f"  Total video tok: {video_token_total:,}")
+    print(f"  Saved          : {output_path}")
 
     return output
 
@@ -359,7 +407,7 @@ def validate_streaming_qa_file(streaming_qa_path, video_path, output_path=None,
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Streaming QA Validator (Gemini 2.5 Pro via OpenRouter)"
+        description="Streaming QA Validator (Gemini 2.5 Flash via OpenRouter, video clips)"
     )
     parser.add_argument("--streaming-qa", type=str, required=True,
                         help="Path to {video_id}_streaming_qa.json")
@@ -368,12 +416,23 @@ def main():
     parser.add_argument("--output", type=str, default=None,
                         help="Output path (default: same dir, *_validated.json)")
     parser.add_argument("--api-key", type=str, default=None,
-                        help="OpenRouter API key (or set OPENROUTER_API_KEY env)")
+                        help="OpenRouter API key (or set OPENROUTER_API_KEY in .env)")
     parser.add_argument("--model", type=str, default=VALIDATOR_MODEL,
-                        help=f"Validator model id on OpenRouter (default: {VALIDATOR_MODEL})")
+                        help=f"Validator model id (default: {VALIDATOR_MODEL})")
     parser.add_argument("--keep-failed", action="store_true",
                         help="Keep verdict='fail' QA in output (default: drop)")
+    parser.add_argument("--seen-window-sec", type=float, default=SEEN_WINDOW_SEC,
+                        help=f"Latter portion of SEEN to keep, in seconds "
+                             f"(default {SEEN_WINDOW_SEC}). Use 0 or negative to disable cap.")
+    parser.add_argument("--future-window-sec", type=float, default=FUTURE_WINDOW_SEC,
+                        help=f"Earlier portion of FUTURE to keep, in seconds "
+                             f"(default {FUTURE_WINDOW_SEC}). Use 0 or negative to disable cap.")
+    parser.add_argument("--max-qa", type=int, default=None,
+                        help="Only validate the first N QA (smoke test / debug)")
     args = parser.parse_args()
+
+    seen_w = args.seen_window_sec if args.seen_window_sec and args.seen_window_sec > 0 else None
+    fut_w = args.future_window_sec if args.future_window_sec and args.future_window_sec > 0 else None
 
     validate_streaming_qa_file(
         args.streaming_qa,
@@ -382,6 +441,9 @@ def main():
         api_key=args.api_key,
         model=args.model,
         drop_failed=not args.keep_failed,
+        seen_window_sec=seen_w,
+        future_window_sec=fut_w,
+        max_qa=args.max_qa,
     )
 
 

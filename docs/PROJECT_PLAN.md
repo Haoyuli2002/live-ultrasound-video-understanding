@@ -427,7 +427,7 @@ ultrasound_benchmark/
 | **Dual-track QA design** (offline 3 types + streaming 2 types) | ✅ Done |
 | Offline QA generator (`qa_generation.py`, GPT-4o) | ✅ Done |
 | Streaming QA generator (`streaming_qa_generation.py`, GPT-4o) | ✅ Done |
-| **Streaming QA validator** (`qa_validator.py`, Gemini 2.5 Pro via OpenRouter) | ✅ Done |
+| **Streaming QA validator** (`qa_validator.py`, Gemini 2.5 Flash via OpenRouter) | ✅ Done |
 | LiveCC-style JSONL merger (`qa_merge.py`) | ✅ Done |
 | End-to-end pipeline runner (`run_pipeline.py`) | ✅ Done |
 | Pipeline documentation (`docs/PIPELINE.md`) | ✅ Done |

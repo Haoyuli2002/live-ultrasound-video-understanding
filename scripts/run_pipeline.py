@@ -6,7 +6,7 @@ Runs the complete pipeline on a single video:
   Step 4 : Video Segmentation (histogram + LLM)
   Step 5a: Offline QA Generation     (scene_description, fine_grained, knowledge)
   Step 5b: Streaming QA Generation   (sonographer_intent, next_action_guidance)
-  Step 5c: Streaming QA Validation   (Gemini 2.5 Pro via OpenRouter)
+  Step 5c: Streaming QA Validation   (Gemini 2.5 Flash via OpenRouter)
 
 Usage:
     export OPENAI_API_KEY="sk-..."
@@ -50,7 +50,7 @@ def main():
                         help="Use histogram-only segmentation")
     parser.add_argument("--single-clip", type=int, default=None,
                         help="For QA steps, only process this clip index (debug)")
-    parser.add_argument("--validator-model", type=str, default="google/gemini-2.5-pro",
+    parser.add_argument("--validator-model", type=str, default="google/gemini-2.5-flash",
                         help="OpenRouter model id for validator")
     args = parser.parse_args()
 
@@ -172,7 +172,7 @@ def main():
         )
 
     # ======================================================================
-    # Step 5c: Streaming QA Validation (Gemini 2.5 Pro via OpenRouter)
+    # Step 5c: Streaming QA Validation (Gemini 2.5 Flash via OpenRouter)
     # ======================================================================
     validated_qa_path = output_dir / "qa" / f"{video_id}_streaming_qa_validated.json"
 
@@ -191,7 +191,7 @@ def main():
                     str(video_path),
                     output_path=str(validated_qa_path),
                     model=args.validator_model,
-                    drop_discarded=True,
+                    drop_failed=True,
                 )
             except Exception as e:
                 print(f"  ERROR during validation: {e}")

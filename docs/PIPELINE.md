@@ -80,7 +80,7 @@ YouTube Videos → VLM Classification → ASR Transcription → Video Segmentati
 
 ---
 
-## Step 4: Video Segmentation
+## Step 4: Video Clipping
 
 | Item | Details |
 |------|---------|
@@ -142,14 +142,86 @@ The QA generation is split into **two parallel tracks** by question type:
 
 | Track | Types | Information access | Generator | Validator |
 |-------|-------|--------------------|-----------|-----------|
-| **5a — Offline** | `scene_description`, `fine_grained`, `knowledge` | Whole clip | GPT-4o Vision | none |
-| **5b — Streaming** | `sonographer_intent`, `next_action_guidance` | Question grounded in past frames; answer drawn from past+future ground truth | GPT-4o Vision (oracle) | **Gemini 2.5 Pro (via OpenRouter)** |
+| **5a — Offline** | `scene_description`, `fine_grained`, `knowledge` | Whole clip | GPT-4o Vision (6 frames + ASR) | none |
+| **5b — Streaming** | `sonographer_intent`, `next_action_guidance` | Question grounded in past video; answer drawn from past+future ground truth (with audio) | **Gemini 2.5 Flash (oracle)**, video-clip input via OpenRouter | **Gemini 2.5 Flash (audit)** via OpenRouter |
+
+> 🎬 **Streaming track now uses real video clips, not sampled frames.** Both the generator and the validator receive two short mp4 segments — one for SEEN (`clip_start → query_time`) and one for FUTURE (`query_time → clip_end`) — uploaded as OpenAI/OpenRouter `type:"file"` content blocks. Each segment carries its **original visual frames AND audio (operator's narration)** end-to-end (this delivery format was empirically verified to produce non-zero `prompt_tokens_details.video_tokens` on OpenRouter Gemini 2.5 Flash). All video plumbing is centralised in [`scripts/_video_llm.py`](../scripts/_video_llm.py) (`cut_clip`, `build_video_block`, `call_with_content`).
 
 ### Why this split
 
 - `scene_description` / `fine_grained` / `knowledge` benefit from full-clip context — let the model see the entire clip and write holistic answers.
 - `sonographer_intent` / `next_action_guidance` are intrinsically time-sensitive. The QUESTION must be grounded in what's been seen so far (no future leakage), but the ANSWER should describe what actually happens next in the clip — i.e. real ground truth, not a guess. So the generator is given full-clip access (oracle) but instructed to write the question from the SEEN-only perspective.
-- A separate **Gemini 2.5 Pro** validator (different model family from GPT-4o → cross-family check) audits every streaming QA on a **single binary criterion**: question must be grounded in SEEN only AND answer must be faithful to what's visible in SEEN+FUTURE. Verdict is `pass` or `fail`.
+- A separate **Gemini 2.5 Flash** validator (independent forward pass, different prompt, different time windows from the generator) audits every streaming QA on a **single binary criterion**: question must be grounded in SEEN only AND answer must be faithful to what's visible/audible in SEEN+FUTURE. Verdict is `pass` or `fail`.
+- *Note on independence:* generator and validator currently share the same model family (Gemini 2.5 Flash). They are NOT cross-family. We rely on the stricter prompt + smaller FUTURE window in the validator (default 30 s vs uncapped for the generator) to flush leakage / hallucination. A cross-family validator (e.g. Qwen2.5-VL on OpenRouter) is left as future work.
+
+### Dual-Track Flow Diagram
+
+```
+                 ┌────────────────────────────────────────────────────────┐
+                 │  Clip                                                  │
+                 │  start = clip_start, end = clip_end, full ASR text     │
+                 └─────────────────────────┬──────────────────────────────┘
+                                           │
+                ┌──────────────────────────┴──────────────────────────┐
+                │                                                     │
+                ▼                                                     ▼
+   ┌────────────────────────────┐               ┌──────────────────────────────────────┐
+   │  Track A: OFFLINE  (5a)    │               │  Track B: STREAMING  (5b)            │
+   │  Generator: GPT-4o Vision  │               │  Generator: Gemini 2.5 Flash (oracle)│
+   │                            │               │  Input mode: VIDEO clips (with audio)│
+   ├────────────────────────────┤               ├──────────────────────────────────────┤
+   │ Input:                     │               │ For each anchor t in 0.25/0.5/0.75   │
+   │   • 6 frames (full clip)   │               │ Input:                               │
+   │   • full ASR               │               │   • SEEN_VIDEO  mp4 (clip_start..t,  │
+   │ Output: 3 QA types         │               │     capped to 240 s)                 │
+   │   - scene_description      │               │   • FUTURE_VIDEO mp4 (t..clip_end,   │
+   │   - fine_grained           │               │     uncapped)                        │
+   │   - knowledge              │               │   • full ASR                         │
+   │ Question rule: free        │               │ Output: 2 QA types per anchor        │
+   │ Answer rule: free          │               │   - sonographer_intent               │
+   │                            │               │   - next_action_guidance             │
+   │                            │               │ Question rule: from SEEN_VIDEO only  │
+   │                            │               │ Answer rule:   from SEEN+FUTURE      │
+   └─────────────┬──────────────┘               └─────────────┬────────────────────────┘
+                 │                                            │
+                 │                                            ▼
+                 │                              ┌──────────────────────────────────┐
+                 │                              │  Validator (5c)                  │
+                 │                              │  Gemini 2.5 Flash via OpenRouter │
+                 │                              │  Input mode: VIDEO clips         │
+                 │                              ├──────────────────────────────────┤
+                 │                              │ Input per QA:                    │
+                 │                              │   • SEEN_VIDEO   (cap 240 s)     │
+                 │                              │   • FUTURE_VIDEO (cap 30 s)      │
+                 │                              │   • the QA pair                  │
+                 │                              │ Single binary check:             │
+                 │                              │   (1) Q grounded in SEEN_VIDEO?  │
+                 │                              │   (2) A faithful to SEEN+FUTURE? │
+                 │                              │ Verdict: pass / fail + reason    │
+                 │                              └─────────────┬────────────────────┘
+                 │                                            │
+                 │                                            │ drop "fail"
+                 │                                            ▼
+                 │                              ┌──────────────────────────────────┐
+                 │                              │  *_streaming_qa_validated.json   │
+                 │                              │  (~80% pass rate observed)       │
+                 │                              └─────────────┬────────────────────┘
+                 │                                            │
+                 ▼                                            ▼
+   ┌────────────────────────────┐               ┌────────────────────────────────────┐
+   │  *_offline_qa.json         │               │  validated streaming QA            │
+   │  3 QA × num_clips          │               │  ~5 QA × num_clips (after drop)    │
+   └─────────────┬──────────────┘               └─────────────┬──────────────────────┘
+                 │                                            │
+                 └──────────────────────┬─────────────────────┘
+                                        │
+                                        ▼
+                       ┌──────────────────────────────────────┐
+                       │  Merged QA dataset                   │
+                       │  ~8 QA per clip, sorted by timestamp │
+                       │  ready for training / evaluation     │
+                       └──────────────────────────────────────┘
+```
 
 ### 5 QA Types
 
@@ -171,49 +243,59 @@ The QA generation is split into **two parallel tracks** by question type:
 | **Per clip** | 6 frames @ 512×512 (detail=low) + full ASR (≤3000 chars) → 1 QA per type (3 total) |
 | **Cost/video** (~11 clips) | ~$0.30 |
 
-### Step 5b — Streaming QA Generation (Oracle Generator)
+### Step 5b — Streaming QA Generation
 
 The streaming generator is an **oracle**: it sees BOTH past and future content within the clip, plus the full ASR. The generator MUST, however, write the question as if only past content were known. The answer is allowed to use the full clip context as ground truth — it should describe the *real* intent or *real* next action that actually occurs in the video.
 
 | Item | Details |
 |------|---------|
 | **Script** | `scripts/streaming_qa_generation.py` |
+| **Generator** | `google/gemini-2.5-flash` via **OpenRouter** (OpenAI-compatible API) |
+| **Input mode** | Two mp4 video clips (visual frames + audio), uploaded as `type:"file"` content blocks |
 | **Input** | Video + clips JSON |
 | **Output** | `results/qa/{video_id}_streaming_qa.json` |
 | **Time anchors** | `[0.25, 0.5, 0.75]` of each clip's duration |
-| **Per anchor** | 3 SEEN frames `[clip_start, query_time]` + 3 FUTURE frames `[query_time, clip_end]` + full ASR → 1 intent + 1 next_action |
-| **Question writing rule** | Must be derivable from SEEN only (no future leakage) |
-| **Answer writing rule** | May use SEEN + FUTURE; must describe what actually happens in the clip |
+| **Per anchor** | `SEEN_VIDEO` mp4 `[clip_start, query_time]` (capped to last 240 s) + `FUTURE_VIDEO` mp4 `[query_time, clip_end]` (uncapped) + full ASR → 1 intent + 1 next_action |
+| **Question writing rule** | Must be derivable from SEEN_VIDEO only (no future leakage, visual OR audible) |
+| **Answer writing rule** | May use SEEN_VIDEO + FUTURE_VIDEO + ASR; must describe what actually happens in the clip |
 | **Yield** (~11 clips × 3 anchors × 2 types) | ~66 QA per video |
-| **Cost/video** | ~$0.45 |
+| **Cost/video** (per QA ≈ $0.007 × 66) | ~$0.45 |
+| **Smoke-test result** (clip 0, 6 QA) | 6/6 generated, $0.022, 50k video tokens, ~3 min wall time |
 
 ### Step 5c — Streaming QA Validation (single binary verdict)
 
-A separate validator (different model family from generator → cross-family check) audits each streaming QA on **a single binary criterion**:
+An independent **second forward pass** audits each streaming QA on **a single binary criterion**. Currently the validator and generator share the same model family (Gemini 2.5 Flash) — they are NOT cross-family. We rely on a stricter prompt and a much smaller FUTURE window (default 30 s vs the generator's uncapped FUTURE) to keep the validator from rubber-stamping. Cross-family validation is left as future work.
 
-1. **Question grounding** — Is the question writable from SEEN frames only? (no future leakage)
-2. **Answer faithfulness** — Does the answer correspond to what is actually visible in SEEN+FUTURE? (not a hallucination)
+1. **Question grounding** — Is the question writable from SEEN_VIDEO only? (no future leakage)
+2. **Answer faithfulness** — Does the answer correspond to what is actually visible/audible in SEEN_VIDEO+FUTURE_VIDEO? (not a hallucination)
 
 A QA passes only if BOTH conditions hold.
 
 | Item | Details |
 |------|---------|
 | **Script** | `scripts/qa_validator.py` |
-| **Validator** | `google/gemini-2.5-pro` via **OpenRouter** (OpenAI-compatible API) |
+| **Validator** | `google/gemini-2.5-flash` via **OpenRouter** (OpenAI-compatible API) |
+| **Input mode** | Two mp4 video clips (visual + audio), as `type:"file"` content blocks |
 | **Input** | Streaming QA JSON + video |
-| **Per QA** | 3 SEEN frames + 3 FUTURE frames → `{verdict, reason, validator_model}` |
+| **Per QA** | `SEEN_VIDEO` (cap 240 s) + `FUTURE_VIDEO` (cap 30 s) → `{verdict, reason, validator_model}` |
 | **Output** | `results/qa/{video_id}_streaming_qa_validated.json` |
 | **Verdict** | `pass` if question grounded AND answer faithful; else `fail` |
 | **Drop policy** | `fail` QA dropped by default (`--keep-failed` to retain for inspection) |
-| **Cost/video** (~66 QA) | ~$0.10 |
+| **Cost/video** (per QA ≈ $0.005 × 66) | ~$0.30 |
+| **Smoke-test result** (clip 0, 6 QA) | 6/6 pass, $0.031, 93k video tokens, ~6 min wall time |
 
-### Step 5d — Merge to LiveCC JSONL
+### Reliability — retry policy on transient OpenRouter errors
 
-| Item | Details |
-|------|---------|
-| **Script** | `scripts/qa_merge.py` |
-| **Input** | Transcript + clips + offline QA + validated streaming QA |
-| **Output** | One JSONL record with `text_stream` + sorted `qa` list (LiveCC-compatible) |
+OpenRouter occasionally returns `504` (Gateway Timeout) or `429` (rate limit) when the upstream provider is busy. `scripts/_video_llm.py:call_with_content` handles this transparently:
+
+| Error class | Detection | Backoff |
+|-------------|-----------|---------|
+| Network / SDK exception | raised exception | exponential (8 s, 13 s, 20 s, 33 s, 52 s) |
+| `code: 504` empty envelope | `resp.choices` is empty | exponential |
+| `code: 429` empty envelope | `'429'` / `'rate'` substring in error string | **fixed 60 s** (let Gemini's RPM bucket reset) |
+| Empty `message.content` | `text == ""` | exponential, with `finish_reason` logged |
+
+Default = **5 retries** before raising. Per-anchor failures are caught and the rest of the run continues; a non-zero `error` count is reported in the final summary.
 
 ### Output Format (per-clip QA file)
 
@@ -244,7 +326,7 @@ Streaming validated (`{video_id}_streaming_qa_validated.json`):
 {
   "video_id": "8V649L5Q368",
   "qa_types": ["sonographer_intent", "next_action_guidance"],
-  "validator_model": "google/gemini-2.5-pro",
+  "validator_model": "google/gemini-2.5-flash",
   "validation_stats": {"pass": 58, "fail": 8, "error": 0},
   "num_after_validation": 58,
   "streaming_qa": [
@@ -261,7 +343,7 @@ Streaming validated (`{video_id}_streaming_qa_validated.json`):
       "validation": {
         "verdict": "pass",
         "reason": "Question is grounded in [SEEN] frames only; the answer accurately describes the cranial tilt and color Doppler step actually shown in [FUTURE].",
-        "validator_model": "google/gemini-2.5-pro"
+        "validator_model": "google/gemini-2.5-flash"
       }
     }
   ]
@@ -272,20 +354,28 @@ Streaming validated (`{video_id}_streaming_qa_validated.json`):
 
 ## Cost & Time Estimates
 
-| Step | Time/video | Cost/video |
-|------|-----------|-----------|
-| ASR Transcription | ~2 min | Free |
-| Segmentation (histogram) | ~10s | Free |
-| Segmentation (LLM) | ~6s | ~$0.03 |
-| Offline QA (5a) | ~50s | ~$0.30 |
-| Streaming QA (5b) | ~60s | ~$0.40 |
-| Validation (5c) | ~80s | ~$0.30 |
-| **Total per video** | **~5 min** | **~$1.05** |
-| **20 videos** | **~100 min** | **~$21** |
+> Per-QA numbers below are measured (clip 0 of `8V649L5Q368`, 6 QA each).
+> Per-video totals assume ~11 clips × 3 anchors × 2 types = 66 streaming QA + 33 offline QA.
+
+| Step | Time/video | Cost/video | API used |
+|------|-----------|-----------|----------|
+| ASR Transcription | ~2 min | Free | local (faster-whisper) |
+| Segmentation (histogram) | ~10 s | Free | local (OpenCV) |
+| Segmentation (LLM) | ~6 s | ~$0.03 | OpenAI (GPT-4o) |
+| Offline QA (5a) | ~50 s | ~$0.30 | OpenAI (GPT-4o Vision) |
+| Streaming QA generation (5b) | 8–15 min* | ~$0.45 | OpenRouter (Gemini 2.5 Flash, video) |
+| Streaming QA validation (5c) | 8–15 min* | ~$0.30 | OpenRouter (Gemini 2.5 Flash, video) |
+| **Total per video** | **~25–35 min** | **~$1.10** | |
+| **20 videos** | **~10 h** (sequential) | **~$22** | |
+
+\* 5b/5c walltime is dominated by `mp4 base64 upload + Gemini video tokenization + occasional 504/429 retries`. The retry wait dominates; the actual per-call billed compute is ~10–30 s. See "Reliability — retry policy" above.
 
 ---
 
 ## CLI Commands
+
+> All scripts auto-load `OPENAI_API_KEY` and `OPENROUTER_API_KEY` from `.env`
+> via `scripts/_env_loader.py` — manual `export` is no longer required.
 
 ```bash
 # Step 1: Crawl videos
@@ -297,24 +387,34 @@ python scripts/batch_filter.py --input-dir path/to/media --num-frames 8
 # Step 3: ASR Transcription (batch)
 python scripts/asr_pipeline.py --batch --input-dir path/to/media --model base
 
-# Step 4: Video Segmentation (with LLM verification, default)
-export OPENAI_API_KEY="sk-..."
+# Step 4: Video Segmentation (with LLM verification, default — uses OPENAI_API_KEY)
 python scripts/video_segmentation.py --video path.mp4 --transcript transcripts/ID.json
 
-# Step 4: Histogram-only segmentation (no API)
+# Step 4: Histogram-only segmentation (no API key needed)
 python scripts/video_segmentation.py --video path.mp4 --transcript transcripts/ID.json --no-llm
 
-# Step 5a: Offline QA Generation
+# Step 5a: Offline QA Generation (uses OPENAI_API_KEY for GPT-4o Vision)
 python scripts/qa_generation.py --video path.mp4 --clips results/clips/ID_clips.json
 
-# Step 5b: Streaming QA Generation
-python scripts/streaming_qa_generation.py --video path.mp4 --clips results/clips/ID_clips.json
+# Step 5b: Streaming QA Generation (uses OPENROUTER_API_KEY, Gemini 2.5 Flash with video clips)
+python scripts/streaming_qa_generation.py \
+    --video path.mp4 \
+    --clips results/clips/ID_clips.json
+# optional caps:
+#   --seen-window-sec 240        (default; latter portion of SEEN before query_time)
+#   --future-window-sec -1       (default; uncapped FUTURE for ground-truth)
+#   --single-clip 0              (debug: only this clip)
+#   --ratios 0.25,0.5,0.75       (default time anchors)
 
-# Step 5c: Streaming QA Validation (Gemini 2.5 Pro via OpenRouter)
-export OPENROUTER_API_KEY="sk-or-..."
+# Step 5c: Streaming QA Validation (uses OPENROUTER_API_KEY, Gemini 2.5 Flash with video clips)
 python scripts/qa_validator.py \
     --streaming-qa results/qa/ID_streaming_qa.json \
     --video path.mp4
+# optional caps:
+#   --seen-window-sec 240        (default)
+#   --future-window-sec 30       (default; tight window for hallucination check)
+#   --keep-failed                (keep verdict='fail' for inspection)
+#   --max-qa N                   (smoke test; only first N QA)
 
 # Step 5d: Merge to LiveCC-style JSONL
 python scripts/qa_merge.py \
@@ -357,7 +457,7 @@ results/clips/VIDEO_ID_clips.json (8-11 clips, each with topic)
                                   │
                                   ▼
                           [Step 5c: Validate]
-                          Gemini 2.5 Pro audits every streaming QA
+                          Gemini 2.5 Flash audits every streaming QA
                           → results/qa/VIDEO_ID_streaming_qa_validated.json
                                   │
                                   ▼
