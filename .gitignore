@@ -46,3 +46,5 @@ Papers/
 .env
 .env.local
 .env.*.local
+azure_data_*.tar.gz
+azure_data/
