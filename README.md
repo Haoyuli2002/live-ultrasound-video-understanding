@@ -19,6 +19,14 @@ A real-time ultrasound video understanding system that goes beyond scene descrip
 ├── .env.example                      # Copy to .env and fill in API keys
 ├── .gitignore
 │
+├── QA/                               # 新版 QA pipeline（提出方法的实现，中文文档）
+│   ├── README.md                     # 中文说明
+│   ├── schema.md                     # 数据 schema（含 query_time + answer_time）
+│   ├── generator.py                  # Streaming QA 生成（输出双时间戳）
+│   ├── validator.py                  # 三条硬约束 validator
+│   ├── merger.py                     # 合并 + 可选 WAIT/ANSWER 训练样本展开
+│   └── run.py                        # 端到端 driver
+│
 ├── scripts/                          # Executable pipeline scripts
 │   ├── run_pipeline.py               # End-to-end pipeline (Step 3 → 5c)
 │   ├── batch_filter.py               # Step 2: Batch VLM video filtering
@@ -86,6 +94,22 @@ A real-time ultrasound video understanding system that goes beyond scene descrip
 ```
 
 See [`docs/PIPELINE.md`](docs/PIPELINE.md) for the full per-step spec, prompts, and cost/time breakdown.
+
+## 新 QA Pipeline（`QA/`，提出方法的实现）
+
+`docs/PROPOSED_METHOD.md` 提出了**双时间戳 Streaming QA**方案（`query_time` + `answer_time`，显式建模 answerability）。这套方法的落地实现在独立的 `QA/` 目录，与老 pipeline（`scripts/*`）互不干扰。
+
+- 生成器：为每条 streaming QA 输出 `query_time` 和 `answer_time`（"证据第一次充分的时刻"）。
+- 验证器：以三条硬约束逐条审——(1) 问题不泄漏 future；(2) `query_time` 时不可答；(3) `answer_time` 时刚好可答。
+- 合并器：可选 `--expand-wait-answer` 把每条 streaming QA 展开为 WAIT + ANSWER 两条训练样本，为下一阶段 `<WAIT>` / `<ANSWER>` SFT 做数据准备。
+
+快速开始（假设已跑完 `scripts/` 里的 ASR + 分段 + offline QA）：
+
+```bash
+python QA/run.py --video path/to/ID.mp4
+```
+
+数据格式和参数说明见 [`QA/README.md`](QA/README.md) 与 [`QA/schema.md`](QA/schema.md)（均为中文）。
 
 ## Prerequisites
 

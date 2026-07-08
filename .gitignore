@@ -21,6 +21,7 @@ Thumbs.db
 # Data & outputs (large files, not tracked)
 transcripts/
 results/
+QA/results/
 UltrasoundCrawler_KeyCode_20260323_v2/output/
 *.wav
 *.mp4

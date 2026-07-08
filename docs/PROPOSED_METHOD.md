@@ -603,3 +603,59 @@ Visual Memory Bank:
 ```text
 在有限视觉 token budget 下，实现可靠、可等待、可解释的实时超声视频理解。
 ```
+
+---
+
+## 10. 实现指引（当前已落地部分 → `QA/`）
+
+本文档描述的**双时间戳 Streaming QA**（`query_time` + `answer_time`）以及配套的 answerability 建模，已经在独立的 `QA/` 目录里落地。老 pipeline（`scripts/*`）保留不动作为 baseline，新方法在 `QA/` 里独立演进。
+
+### 10.1 目录组织
+
+```
+QA/
+├── README.md              # 使用说明（中文）
+├── schema.md              # 数据 schema 单一真相源（中文）
+├── generator.py           # oracle 生成 QA，输出 query_time + answer_time
+├── validator.py           # 三条硬约束逐条审
+├── merger.py              # 合并 offline + streaming；可选展开 WAIT/ANSWER
+├── run.py                 # 端到端 driver
+└── _shared/               # 复用 scripts/_video_llm.py & _env_loader.py
+```
+
+### 10.2 已实现 vs 未实现
+
+| 章节 | 状态 | 说明 |
+|------|------|------|
+| §2 双模式 QA（Offline / Streaming） | ✅ 已实现 | Offline 沿用老 pipeline 的 `scripts/qa_generation.py`；Streaming 由 `QA/generator.py` 输出双时间戳 |
+| §4 数据格式 | ✅ 已实现 | 见 `QA/schema.md` |
+| §5 Streaming 输入策略（最近窗口 + memory + summary） | ⚠️ 仅 schema 预留 | 目前不实现 memory bank；训练样本只输出最近窗口版本 |
+| §6 WAIT / ANSWER 训练样本 | ✅ 已实现 | `QA/merger.py --expand-wait-answer` |
+| §7 Loss 计算方式 | ⏳ 训练阶段处理 | 数据层保证 `<WAIT>` / `<ANSWER>` 字面串正确出现，模型层再决定是否加 special token |
+| §8 推理 progressive loop | ⏳ 训练阶段处理 | 属于模型 / demo 层，不属于数据层 |
+| §3 Visual / Frame Memory Bank | ⏳ 下一阶段 | 拟结合后续 VLM 的 vision encoder（可能是 Q-Former / cross-attn / MLP）一起做 |
+
+### 10.3 三条硬约束（validator）
+
+对每条 streaming QA，`QA/validator.py` 会检查（全部 `true` 才通过）：
+
+1. **`question_no_leak`**：问题只用 `[clip_start, query_time]` 就能写出，不引用 future 独有内容。
+2. **`not_answerable_at_query_time`**：在 `query_time` 时证据**不足以**回答（对应 §2.2 中"知道当前信息不足"）。
+3. **`answerable_at_answer_time`**：到 `answer_time` 时证据**刚好充分**（对应 §2.2 中"证据足够时及时回答"）。
+
+Verdict 完全由这三条 check 决定；validator 模型若给出与 check 不一致的 verdict，会被强制 override 为按 check 计算的结果。
+
+### 10.4 使用入口
+
+详见 [`QA/README.md`](../QA/README.md)：
+
+```bash
+python QA/run.py --video path/to/ID.mp4
+```
+
+会依次跑 generator → validator → merger，输出：
+
+- `QA/results/{video_id}_streaming_qa.json`
+- `QA/results/{video_id}_streaming_qa_validated.json`
+- `QA/results/{video_id}.jsonl`
+- `QA/results/{video_id}_training_samples.jsonl`（加 `--expand-wait-answer` 时）
