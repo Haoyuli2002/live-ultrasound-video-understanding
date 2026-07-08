@@ -32,16 +32,107 @@ QA/train/
 
 ---
 
-## 依赖
+## 依赖与环境
 
-需要：
+推荐先安装项目依赖：
 
 ```bash
 pip install -r requirements.txt
-pip install peft
+```
+
+当前训练脚本依赖 HuggingFace + PEFT：
+
+```text
+transformers >= 4.57
+accelerate >= 1.1
+peft >= 0.13
+numpy < 2
 ```
 
 如果想用 flash attention，需要另装匹配环境的 `flash-attn`，第一版可以不装。
+
+---
+
+## Azure Standard_NC8as_T4_v3 实测环境
+
+当前已在 Azure ML Compute Instance 上用以下环境跑通 smoke train：
+
+```text
+VM: Standard_NC8as_T4_v3
+GPU: NVIDIA Tesla T4 16GB
+CPU: 8 cores
+RAM: 56 GB
+Python env: azureml_py38
+Torch: 2.9.1+cu128
+Transformers: 4.57.6
+NumPy: 1.26.4
+Precision: fp16
+```
+
+### 关键环境变量
+
+AzureML 预装环境里可能有 TensorFlow / Flax，与 Transformers import 链路冲突。训练前建议设置：
+
+```bash
+export TRANSFORMERS_NO_TF=1
+export USE_TF=0
+export USE_FLAX=0
+```
+
+### NumPy / pyarrow / pandas / sklearn 修复
+
+如果遇到：
+
+```text
+_ARRAY_API not found
+numpy.core.multiarray failed to import
+```
+
+说明当前环境里 `numpy==2.x` 与部分 NumPy-1.x 编译的包不兼容。按下面修复：
+
+```bash
+pip install --force-reinstall "numpy==1.26.4"
+pip install --force-reinstall "pyarrow>=14,<16" "pandas>=2.0,<2.3" "scikit-learn>=1.3,<1.6"
+```
+
+### accelerate 版本修复
+
+如果遇到：
+
+```text
+Accelerator.unwrap_model() got an unexpected keyword argument 'keep_torch_compile'
+```
+
+说明 `transformers` 和 `accelerate` 版本不匹配。升级：
+
+```bash
+pip install -U "accelerate>=1.1.0"
+```
+
+### HuggingFace cache / 磁盘空间
+
+Qwen3-VL-2B 权重约 4.26GB，下载和缓存至少需要 8-10GB 空间。如果遇到：
+
+```text
+Not enough free disk space to download the file
+```
+
+可以清理缓存：
+
+```bash
+rm -rf ~/.cache/pip
+rm -rf ~/.cache/huggingface
+```
+
+并把 HuggingFace cache 放到项目目录或大磁盘：
+
+```bash
+cd ~/live-ultrasound-video-understanding
+mkdir -p hf_cache
+
+export HF_HOME=$PWD/hf_cache
+export HF_HUB_CACHE=$PWD/hf_cache/hub
+```
 
 ---
 
