@@ -110,6 +110,11 @@ def add_special_tokens_if_needed(model, processor):
     else:
         print("[train] Special tokens already present")
 
+    # Print the resolved ids so eval/inference can align if needed.
+    wait_id = tokenizer.convert_tokens_to_ids("<WAIT>")
+    answer_id = tokenizer.convert_tokens_to_ids("<ANSWER>")
+    print(f"[train] <WAIT> id={wait_id}, <ANSWER> id={answer_id}, vocab={len(tokenizer)}")
+
     return tokenizer
 
 
@@ -126,8 +131,36 @@ def maybe_freeze_vision(model, freeze_vision: bool):
     print(f"[train] Frozen vision parameters: {frozen:,}")
 
 
+def _resolve_modules_to_save(model, wanted):
+    """
+    Return the subset of `wanted` module suffixes that actually match module
+    names in the model. PEFT `modules_to_save` matches by name suffix, so we
+    verify each wanted name appears as a submodule; warn if not found.
+    """
+    all_names = [name for name, _ in model.named_modules()]
+    resolved = []
+    for w in wanted:
+        hits = [n for n in all_names if n.split(".")[-1] == w]
+        if hits:
+            resolved.append(w)
+            print(f"[train] modules_to_save '{w}' -> matched {len(hits)} module(s), e.g. {hits[0]}")
+        else:
+            print(f"[train] WARNING: modules_to_save '{w}' not found; new <WAIT>/<ANSWER> embeddings may not train.")
+    return resolved
+
+
 def build_lora_model(args, model):
     target_modules = [x.strip() for x in args.lora_target_modules.split(",") if x.strip()]
+
+    # New special tokens (<WAIT>/<ANSWER>) need their embedding + output rows
+    # to be trainable. Make embed_tokens and lm_head fully trainable + saved.
+    wanted_save = [x.strip() for x in args.lora_modules_to_save.split(",") if x.strip()]
+    modules_to_save = _resolve_modules_to_save(model, wanted_save) if wanted_save else None
+    if modules_to_save:
+        print(f"[train] modules_to_save (fully trainable + saved): {modules_to_save}")
+    else:
+        print("[train] modules_to_save disabled; new-token embeddings will NOT train.")
+
     config = LoraConfig(
         r=args.lora_r,
         lora_alpha=args.lora_alpha,
@@ -135,6 +168,7 @@ def build_lora_model(args, model):
         bias="none",
         task_type="CAUSAL_LM",
         target_modules=target_modules,
+        modules_to_save=modules_to_save,
     )
     model = get_peft_model(model, config)
     model.print_trainable_parameters()
@@ -181,6 +215,13 @@ def parse_args():
         "--lora-target-modules",
         type=str,
         default="q_proj,k_proj,v_proj,o_proj,gate_proj,up_proj,down_proj",
+    )
+    parser.add_argument(
+        "--lora-modules-to-save",
+        type=str,
+        default="embed_tokens,lm_head",
+        help="Modules made fully trainable + saved (needed so new <WAIT>/<ANSWER> "
+             "token embeddings can learn). Set empty string to disable.",
     )
 
     return parser.parse_args()

@@ -14,8 +14,15 @@ System Prompt
 ```text
 MODEL = Qwen/Qwen3-VL-2B-Instruct
 WINDOW_SIZE = 8 frames
-FRAME_SAMPLING = last_n_frames
+FRAME_SAMPLING = last_n_frames   # streaming：末尾 8 秒取 8 帧（偏向 current_time）
+                                 # offline：整段 clip 均匀采样 8 帧
 ```
+
+**可训练部分**（第一版）：
+- LoRA adapter：LLM 的 `q_proj,k_proj,v_proj,o_proj,gate_proj,up_proj,down_proj`
+- 全量可训练 + 保存：`embed_tokens` 和 `lm_head`（`modules_to_save`），使新增的
+  `<WAIT>` / `<ANSWER>` special token 的 embedding 行和输出行能真正学到东西
+- 冻结：vision encoder + 其余 base 权重
 
 ---
 
@@ -23,7 +30,7 @@ FRAME_SAMPLING = last_n_frames
 
 ```text
 QA/train/
-├── video_sampling.py   # 从 video_window 里采样最后 N 帧
+├── video_sampling.py   # streaming=末尾N秒N帧；offline=整段均匀N帧
 ├── dataset.py          # 读取 training_samples.jsonl，解析视频路径与帧
 ├── collator.py         # 构造 Qwen-VL multimodal chat 输入并 mask label
 ├── train.py            # HuggingFace + PEFT LoRA 训练入口
@@ -259,4 +266,11 @@ QA/checkpoints/qwen3vl_2b_lora_wait_answer/
 2. Collator 使用 image blocks（8 张图）而不是 video block，这是为了兼容 Qwen2-VL / Qwen2.5-VL / Qwen3-VL。
 3. 当前没有 eval loop；先保证 SFT 能跑通。
 4. 当前没有 memory bank；只训练 recent-window WAIT/ANSWER。
-5. 当前默认 freeze vision encoder，只对 LLM 侧 LoRA 做训练。
+5. Vision encoder 冻结；LLM 侧走 LoRA；此外 `embed_tokens` / `lm_head` 通过
+   `modules_to_save` 全量可训练，以便新增 special token 学得动。若 `--lora-modules-to-save`
+   传空则关闭该行为（新 token 将学不到，仅在不加 special token 时才这么做）。
+6. `modules_to_save` 会显著增加显存与 adapter 体积（词表大）。T4 上如显存吃紧，
+   建议加 `--gradient-checkpointing` 并把 `--frame-size` 降到 336。
+7. `<WAIT>` / `<ANSWER>` 的 token id 在训练启动时会打印出来（`[train] <WAIT> id=...`），
+   eval 侧解析靠字符串前缀，因此 id 变化不影响评测；推理 decode 需保持
+   `skip_special_tokens=False` 才能还原出 `<WAIT>` / `<ANSWER>` 字符串。

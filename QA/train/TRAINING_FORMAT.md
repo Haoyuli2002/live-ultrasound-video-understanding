@@ -214,38 +214,45 @@ start, end = sample["video_window"]
 
 ---
 
-### 4.1 Streaming 样本
+### 4.1 Streaming 样本（末尾 N 秒取 N 帧）
 
-对于 streaming 样本：
+对于 streaming 样本，采样偏向**当前时刻（video_window.end）**：
 
 ```text
 current_time = video_window.end
-visual_input = current_time 之前最后 8 帧
+recent_start = max(video_window.start, current_time - WINDOW_SIZE)
+visual_input = 在 [recent_start, current_time] 内均匀取 WINDOW_SIZE 帧
 ```
 
-也就是说：
+即"末尾 N 秒取 N 帧"（WINDOW_SIZE=8 → 末尾 8 秒、约每秒 1 帧），使视觉输入聚焦最近上下文，而不是把整个 window 均匀采样。
 
 ```text
 streaming_wait:
   current_time = query_time
-  visual_input = query_time 前最后 8 帧
+  visual_input = query_time 前末尾 8 秒的 8 帧
 
 streaming_answer:
   current_time = answer_time
-  visual_input = answer_time 前最后 8 帧
+  visual_input = answer_time 前末尾 8 秒的 8 帧
 ```
+
+若窗口不足 8 秒，则在可用范围内均匀采样并复制末帧补齐到 8 帧。
+
+对应实现：`sample_last_n_frames`（tail window 采样）。
 
 ---
 
-### 4.2 Offline 样本
+### 4.2 Offline 样本（整段均匀采样）
 
 对于 offline 样本：
 
 ```text
-visual_input = 从完整 clip 内均匀采样 8 帧
+visual_input = 从完整 clip [start, end] 内均匀采样 8 帧
 ```
 
 因为 offline QA 的目标是完整 clip 理解，而不是流式当前时刻判断。
+
+对应实现：`sample_uniform_frames` / `sample_full_clip_frames`（与 streaming 的 tail 采样分开）。
 
 ---
 
@@ -436,8 +443,9 @@ QA/train/video_sampling.py
 负责从 `video_window` 中采样帧：
 
 ```python
-sample_last_n_frames(...)
-sample_full_clip_frames(...)
+sample_last_n_frames(...)     # streaming：末尾 N 秒取 N 帧（偏向 current_time）
+sample_uniform_frames(...)    # offline：整段均匀采样 N 帧
+sample_full_clip_frames(...)  # offline 别名，调用 sample_uniform_frames
 ```
 
 ---
