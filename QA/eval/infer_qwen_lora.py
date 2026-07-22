@@ -376,7 +376,18 @@ def main():
     if args.bf16 and args.fp16:
         raise ValueError("Use only one precision flag: --bf16 or --fp16, not both.")
 
-    device = "cuda" if torch.cuda.is_available() and not args.cpu else "cpu"
+    if args.cpu:
+        device = "cpu"
+    else:
+        if not torch.cuda.is_available():
+            raise RuntimeError(
+                "CUDA is not available. This usually means you are using the wrong "
+                "Python environment or a PyTorch build that does not match the GPU "
+                "driver. Activate the GPU environment first, e.g. "
+                "`conda activate azureml_py38`, or pass --cpu explicitly."
+            )
+        device = "cuda"
+
     if args.bf16:
         dtype = torch.bfloat16
     elif args.fp16:
