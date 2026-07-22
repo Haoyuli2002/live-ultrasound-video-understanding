@@ -14,7 +14,7 @@ python QA/train/train.py \
   --per-device-train-batch-size 1 \
   --gradient-accumulation-steps 8 \
   --learning-rate 1e-4 \
-  --bf16
+  --fp16
 
 Notes:
   - vLLM is for inference/serving, not this SFT training loop.
@@ -205,6 +205,20 @@ def parse_args():
     parser.add_argument("--attn-implementation", type=str, default=None,
                         help="e.g. flash_attention_2 if installed")
 
+    parser.add_argument(
+        "--report-to",
+        type=str,
+        default="tensorboard",
+        help="Logging backend(s) for Trainer, comma-separated. "
+             "Options: tensorboard, wandb, none. Default: tensorboard.",
+    )
+    parser.add_argument(
+        "--logging-dir",
+        type=str,
+        default=None,
+        help="TensorBoard log dir. Default: <output-dir>/runs.",
+    )
+
     parser.add_argument("--freeze-vision", action="store_true", default=True)
     parser.add_argument("--no-freeze-vision", action="store_false", dest="freeze_vision")
 
@@ -229,6 +243,17 @@ def parse_args():
 
 def main():
     args = parse_args()
+
+    if args.bf16 and args.fp16:
+        raise ValueError("Use only one precision flag: --bf16 or --fp16, not both.")
+
+    if args.bf16 and torch.cuda.is_available():
+        is_bf16_supported = getattr(torch.cuda, "is_bf16_supported", lambda: False)
+        if not is_bf16_supported():
+            raise ValueError(
+                "This CUDA device does not support bf16. Use --fp16 instead "
+                "(for example on NVIDIA T4)."
+            )
 
     if args.bf16:
         dtype = torch.bfloat16
@@ -274,6 +299,15 @@ def main():
         system_prompt=DEFAULT_SYSTEM_PROMPT,
     )
 
+    report_to = [x.strip() for x in args.report_to.split(",") if x.strip() and x.strip().lower() != "none"]
+    logging_dir = args.logging_dir or str(Path(args.output_dir) / "runs")
+    if report_to:
+        print(f"[train] Logging metrics to: {report_to} (logging_dir={logging_dir})")
+        if "tensorboard" in report_to:
+            print(f"[train] View with: tensorboard --logdir {logging_dir}")
+    else:
+        print("[train] Metric logging disabled (report_to=none)")
+
     training_args = TrainingArguments(
         output_dir=args.output_dir,
         num_train_epochs=args.num_train_epochs,
@@ -287,7 +321,8 @@ def main():
         remove_unused_columns=False,
         bf16=args.bf16,
         fp16=args.fp16,
-        report_to=[],
+        report_to=report_to,
+        logging_dir=logging_dir,
     )
 
     print("[train] Dataset size:", len(dataset))

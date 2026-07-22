@@ -108,25 +108,53 @@ class QwenVLCollator:
 
         return self.processor(**kwargs), text
 
-    def _prompt_len(self, frames, question: str) -> int:
-        prompt_messages = build_messages(
-            frames=frames,
-            question=question,
-            target=None,
-            system_prompt=self.system_prompt,
-        )
-        prompt_text = self.processor.apply_chat_template(
-            prompt_messages,
-            tokenize=False,
-            add_generation_prompt=True,
-        )
+    def _find_last_subsequence(self, sequence: List[int], subsequence: List[int]) -> int:
+        """
+        Return the start index of the last occurrence of `subsequence` in
+        `sequence`, or -1 if not found.
 
-        # For masking, text-only length is usually sufficient because visual
-        # placeholder tokens live in the prompt. We use tokenizer directly to
-        # avoid duplicating image preprocessing just to compute the mask length.
+        We intentionally use the last occurrence because the system prompt may
+        contain literal examples such as:
+          <WAIT> Not enough information yet. More video is needed.
+        The assistant target is the final occurrence in the full chat.
+        """
+        if not subsequence:
+            return -1
+        if len(subsequence) > len(sequence):
+            return -1
+
+        last = -1
+        end = len(sequence) - len(subsequence)
+        for i in range(end + 1):
+            if sequence[i:i + len(subsequence)] == subsequence:
+                last = i
+        return last
+
+    def _target_start(self, input_ids: torch.Tensor, target: str) -> int:
+        """
+        Find where the assistant target starts inside fully encoded input_ids.
+
+        Do not estimate prompt length with tokenizer-only chat text: Qwen-VL
+        processors expand image placeholders into many visual tokens, so the
+        tokenizer-only prompt length can be much shorter than the true encoded
+        multimodal prompt. Instead, tokenize the textual target and find its
+        final occurrence in the full multimodal input.
+        """
         tokenizer = getattr(self.processor, "tokenizer", self.processor)
-        prompt_ids = tokenizer(prompt_text, add_special_tokens=False).input_ids
-        return len(prompt_ids)
+        target_ids = tokenizer(target, add_special_tokens=False).input_ids
+        input_list = input_ids.tolist()
+
+        start = self._find_last_subsequence(input_list, target_ids)
+        if start < 0:
+            preview = tokenizer.decode(input_list[-256:], skip_special_tokens=False)
+            raise RuntimeError(
+                "Could not find assistant target tokens inside encoded input_ids. "
+                "Cannot build a safe loss mask.\n"
+                f"target={target!r}\n"
+                f"target_ids[:20]={target_ids[:20]}\n"
+                f"decoded_input_tail={preview!r}"
+            )
+        return start
 
     def __call__(self, features: List[Dict[str, Any]]) -> Dict[str, torch.Tensor]:
         encoded_list = []
@@ -148,9 +176,8 @@ class QwenVLCollator:
             input_ids = encoded["input_ids"][0]
             labels = input_ids.clone()
 
-            prompt_len = self._prompt_len(frames, question)
-            prompt_len = min(prompt_len, labels.shape[0])
-            labels[:prompt_len] = self.label_pad_token_id
+            target_start = self._target_start(input_ids, target)
+            labels[:target_start] = self.label_pad_token_id
 
             # Mask padding if present.
             attention_mask = encoded.get("attention_mask")

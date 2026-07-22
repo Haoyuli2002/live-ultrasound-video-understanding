@@ -32,5 +32,8 @@ matplotlib>=3.7.0
 jupyter>=1.0.0
 ipywidgets>=8.0.0
 
+# ===== Training metric logging (TensorBoard) =====
+tensorboard>=2.14.0
+
 # ===== Video codec for Qwen VL video mode =====
 torchcodec>=0.1.0

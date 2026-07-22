@@ -547,14 +547,16 @@ python QA/train/train.py \
   --per-device-train-batch-size 1 \
   --gradient-accumulation-steps 1 \
   --learning-rate 1e-4 \
-  --bf16
+  --fp16
 ```
 
-如果显卡不支持 bf16，改用：
+如果显卡支持 bf16（例如 Ampere/A100 或更新架构），可把 `--fp16` 改为：
 
 ```bash
---fp16
+--bf16
 ```
+
+T4 通常不支持 bf16，推荐使用 `--fp16`。
 
 ---
 
@@ -572,7 +574,7 @@ python QA/train/train.py \
   --per-device-train-batch-size 1 \
   --gradient-accumulation-steps 8 \
   --learning-rate 1e-4 \
-  --bf16
+  --fp16
 ```
 
 显存紧张时：

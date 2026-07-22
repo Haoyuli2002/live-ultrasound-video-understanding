@@ -194,7 +194,7 @@ python QA/train/train.py \
   --per-device-train-batch-size 1 \
   --gradient-accumulation-steps 8 \
   --learning-rate 1e-4 \
-  --bf16
+  --fp16
 ```
 
 如果显存紧张：
@@ -211,15 +211,17 @@ python QA/train/train.py \
   --per-device-train-batch-size 1 \
   --gradient-accumulation-steps 16 \
   --learning-rate 1e-4 \
-  --bf16 \
+  --fp16 \
   --gradient-checkpointing
 ```
 
-如果显卡不支持 bf16，改用：
+如果显卡支持 bf16（例如 Ampere/A100 或更新架构），可把 `--fp16` 改为：
 
 ```bash
---fp16
+--bf16
 ```
+
+T4 通常不支持 bf16，推荐使用 `--fp16`。
 
 ---
 
@@ -240,8 +242,51 @@ python QA/train/train.py \
   --per-device-train-batch-size 1 \
   --gradient-accumulation-steps 1 \
   --learning-rate 1e-4 \
-  --bf16
+  --fp16
 ```
+
+---
+
+## 训练指标监控（TensorBoard）
+
+训练默认把 `loss / learning_rate / grad_norm / epoch` 写进 TensorBoard
+（`report_to=tensorboard`），日志目录默认在 `<output-dir>/runs`。
+
+安装（若环境没有）：
+
+```bash
+pip install tensorboard
+```
+
+启动训练时会打印实际日志目录，例如：
+
+```text
+[train] Logging metrics to: ['tensorboard'] (logging_dir=QA/checkpoints/qwen3vl_2b_lora_wait_answer/runs)
+[train] View with: tensorboard --logdir QA/checkpoints/qwen3vl_2b_lora_wait_answer/runs
+```
+
+查看曲线：
+
+```bash
+tensorboard --logdir QA/checkpoints/qwen3vl_2b_lora_wait_answer/runs
+# 然后浏览器打开 http://localhost:6006
+```
+
+在 Azure ML Compute Instance 上可以通过端口转发或 Jupyter 的 TensorBoard 扩展查看。
+
+相关参数：
+
+| 参数 | 默认 | 说明 |
+|---|---|---|
+| `--report-to` | `tensorboard` | 逗号分隔；可选 `tensorboard` / `wandb` / `none` |
+| `--logging-dir` | `<output-dir>/runs` | TensorBoard 日志目录 |
+| `--logging-steps` | `1` | 每多少 step 记录一次 |
+
+如需用 Weights & Biases：`--report-to wandb`（需 `pip install wandb` 且已 `wandb login`）。
+关闭所有日志：`--report-to none`。
+
+> 注：当前 `train.py` 没有 eval loop，因此 TensorBoard 里只有**训练 loss** 等，
+> 没有 answerability 指标（WAIT accuracy 等）。后者通过训练后运行 `QA/eval/` 离线评测得到。
 
 ---
 
@@ -257,6 +302,7 @@ QA/checkpoints/qwen3vl_2b_lora_wait_answer/
 - adapter 权重
 - tokenizer / processor 文件
 - trainer state
+- `runs/`：TensorBoard 日志
 
 ---
 
