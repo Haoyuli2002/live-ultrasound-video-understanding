@@ -25,6 +25,12 @@ Notes:
 
 from __future__ import annotations
 
+import os
+
+os.environ.setdefault("TRANSFORMERS_NO_TF", "1")
+os.environ.setdefault("USE_TF", "0")
+os.environ.setdefault("USE_FLAX", "0")
+
 import argparse
 from pathlib import Path
 
@@ -66,7 +72,7 @@ SPECIAL_TOKENS = ["<WAIT>", "<ANSWER>"]
 def load_qwen_vl_model(model_name: str, torch_dtype, attn_implementation: str | None = None):
     kwargs = {
         "trust_remote_code": True,
-        "torch_dtype": torch_dtype,
+        "dtype": torch_dtype,
     }
     if attn_implementation:
         kwargs["attn_implementation"] = attn_implementation
