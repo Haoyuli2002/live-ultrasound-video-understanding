@@ -2,6 +2,9 @@
 opencv-python>=4.8.0
 numpy>=1.24.0
 Pillow>=9.0.0
+# SSIM-based scene-change detection for clipping (optional; falls back to
+# framediff if missing).
+scikit-image>=0.21.0
 
 # ===== VLM Filter / Training (Qwen2-VL / Qwen3-VL) =====
 # AzureML base images may contain NumPy-1.x-compiled pyarrow/pandas/sklearn.

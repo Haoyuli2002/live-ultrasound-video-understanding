@@ -30,8 +30,34 @@ from datetime import datetime
 # ============================================================================
 
 DEFAULT_VIDEO = 'UltrasoundCrawler_KeyCode_20260323_v2/output/20260520_162816_youtube/media/scan_tutorial/TlckvYhqaFE.mp4' # "UltrasoundCrawler_KeyCode_20260323_v2/output/20260520_162816_youtube/media/case_reasoning/8V649L5Q368.mp4"
-DEFAULT_MODEL = "base"  # Options: tiny, base, small, medium, large-v3
+# Default model for CPU / when no GPU is detected. Medical terminology needs a
+# larger model than "base"; with a GPU we auto-upgrade to large-v3.
+DEFAULT_MODEL = "medium"  # Options: tiny, base, small, medium, large-v3
 DEFAULT_OUTPUT_DIR = "results/transcripts"
+
+
+def resolve_device(requested=None):
+    """Return 'cuda' if available (unless overridden), else 'cpu'."""
+    if requested and requested != "auto":
+        return requested
+    try:
+        import torch
+        return "cuda" if torch.cuda.is_available() else "cpu"
+    except Exception:
+        return "cpu"
+
+
+def resolve_model(requested_model, device):
+    """
+    If the user did not explicitly set a model (requested_model is None),
+    auto-pick: large-v3 on GPU, DEFAULT_MODEL (medium) on CPU.
+    Otherwise respect the user's choice.
+    """
+    if requested_model:
+        return requested_model
+    if device == "cuda":
+        return "large-v3"
+    return DEFAULT_MODEL
 
 
 # ============================================================================
@@ -73,12 +99,12 @@ def extract_audio(video_path, output_path=None, sample_rate=16000):
 # Whisper Transcription
 # ============================================================================
 
-def transcribe_audio(audio_path, model_size="base", language=None, device="cpu"):
+def transcribe_audio(audio_path, model_size="medium", language=None, device="cpu"):
     """Transcribe audio using faster-whisper. Returns segments with timestamps."""
     from faster_whisper import WhisperModel
 
     print(f"  Loading Whisper model: {model_size} (device: {device})")
-    # For Mac: use "cpu" with int8 for speed; for GPU: use "cuda" with float16
+    # For CPU: int8 for speed; for GPU: float16
     compute_type = "int8" if device == "cpu" else "float16"
     model = WhisperModel(model_size, device=device, compute_type=compute_type)
 
@@ -124,8 +150,8 @@ def transcribe_audio(audio_path, model_size="base", language=None, device="cpu")
 # Full Pipeline
 # ============================================================================
 
-def transcribe_video(video_path, model_size="base", language=None,
-                     output_dir=None, keep_audio=False):
+def transcribe_video(video_path, model_size="medium", language=None,
+                     output_dir=None, keep_audio=False, device="cpu"):
     """Full pipeline: video → audio → transcription → JSON."""
     video_path = Path(video_path)
     video_id = video_path.stem
@@ -135,6 +161,7 @@ def transcribe_video(video_path, model_size="base", language=None,
     print(f"{'='*70}")
     print(f"  Video: {video_path}")
     print(f"  Model: {model_size}")
+    print(f"  Device: {device}")
 
     # Step 1: Extract audio
     if output_dir:
@@ -152,7 +179,7 @@ def transcribe_video(video_path, model_size="base", language=None,
         return None
 
     # Step 2: Transcribe
-    result = transcribe_audio(audio_file, model_size=model_size, language=language)
+    result = transcribe_audio(audio_file, model_size=model_size, language=language, device=device)
 
     # Step 3: Build output
     output = {
@@ -196,7 +223,7 @@ def transcribe_video(video_path, model_size="base", language=None,
 # Batch Processing
 # ============================================================================
 
-def batch_transcribe(input_dir, model_size="base", output_dir=None, max_videos=None):
+def batch_transcribe(input_dir, model_size="medium", output_dir=None, max_videos=None, device="cpu"):
     """Transcribe all videos in a directory."""
     import glob
 
@@ -222,14 +249,14 @@ def batch_transcribe(input_dir, model_size="base", output_dir=None, max_videos=N
     print(f"  Input: {input_dir}")
     print(f"  Output: {output_dir}")
     print(f"  Videos: {len(videos)} total | {len(done)} done | {len(remaining)} remaining")
-    print(f"  Model: {model_size}")
+    print(f"  Model: {model_size} | Device: {device}")
     print(f"{'='*70}")
 
     results = []
     for i, video in enumerate(remaining, 1):
         print(f"\n[{i}/{len(remaining)}] {Path(video).stem}")
         try:
-            result = transcribe_video(video, model_size=model_size, output_dir=output_dir)
+            result = transcribe_video(video, model_size=model_size, output_dir=output_dir, device=device)
             if result:
                 results.append(result)
         except Exception as e:
@@ -257,25 +284,32 @@ def main():
     parser.add_argument("--video", type=str, default=None, help="Single video path")
     parser.add_argument("--input-dir", type=str, default=None, help="Directory of videos (batch mode)")
     parser.add_argument("--output-dir", type=str, default=DEFAULT_OUTPUT_DIR, help="Output directory")
-    parser.add_argument("--model", type=str, default=DEFAULT_MODEL,
-                        help="Whisper model size: tiny/base/small/medium/large-v3")
+    parser.add_argument("--model", type=str, default=None,
+                        help="Whisper model size: tiny/base/small/medium/large-v3. "
+                             "If omitted: large-v3 on GPU, medium on CPU.")
+    parser.add_argument("--device", type=str, default="auto",
+                        help="auto | cpu | cuda. Default auto-detects GPU.")
     parser.add_argument("--language", type=str, default=None, help="Force language (e.g., 'en')")
     parser.add_argument("--batch", action="store_true", help="Batch mode")
     parser.add_argument("--max-videos", type=int, default=None, help="Limit videos in batch")
     parser.add_argument("--keep-audio", action="store_true", help="Keep extracted .wav files")
     args = parser.parse_args()
 
+    device = resolve_device(args.device)
+    model_size = resolve_model(args.model, device)
+    print(f"[asr] Using model={model_size}, device={device}")
+
     if args.video:
-        transcribe_video(args.video, model_size=args.model, language=args.language,
-                         output_dir=args.output_dir, keep_audio=args.keep_audio)
+        transcribe_video(args.video, model_size=model_size, language=args.language,
+                         output_dir=args.output_dir, keep_audio=args.keep_audio, device=device)
     elif args.input_dir or args.batch:
         input_dir = args.input_dir or "UltrasoundCrawler_KeyCode_20260323_v2/output/20260520_162816_youtube/media"
-        batch_transcribe(input_dir, model_size=args.model,
-                         output_dir=args.output_dir, max_videos=args.max_videos)
+        batch_transcribe(input_dir, model_size=model_size,
+                         output_dir=args.output_dir, max_videos=args.max_videos, device=device)
     else:
         # Default: transcribe the default video
-        transcribe_video(DEFAULT_VIDEO, model_size=args.model, language=args.language,
-                         output_dir=args.output_dir, keep_audio=args.keep_audio)
+        transcribe_video(DEFAULT_VIDEO, model_size=model_size, language=args.language,
+                         output_dir=args.output_dir, keep_audio=args.keep_audio, device=device)
 
 
 if __name__ == "__main__":
