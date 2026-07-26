@@ -39,6 +39,7 @@ from transformers import (
     AutoProcessor,
     Trainer,
     TrainingArguments,
+    TrainerCallback,
 )
 
 try:
@@ -67,6 +68,62 @@ except ImportError:
 
 
 SPECIAL_TOKENS = ["<WAIT>", "<ANSWER>"]
+
+
+class EpochLossEarlyStopping(TrainerCallback):
+    """
+    Early stop based on per-epoch average training loss.
+
+    Rule (user choice A + A):
+      - Compute each epoch's average train loss (mean of that epoch's step losses).
+      - improvement = prev_epoch_loss - cur_epoch_loss
+      - If improvement < min_delta, increment no_improve counter; else reset.
+      - Stop when no_improve >= patience.
+    """
+
+    def __init__(self, min_delta: float = 0.001, patience: int = 3):
+        self.min_delta = float(min_delta)
+        self.patience = int(patience)
+        self.prev_loss = None
+        self.no_improve = 0
+        self._epoch_losses = []
+
+    def on_log(self, args, state, control, logs=None, **kwargs):
+        if logs and "loss" in logs:
+            self._epoch_losses.append(float(logs["loss"]))
+        return control
+
+    def on_epoch_end(self, args, state, control, **kwargs):
+        if not self._epoch_losses:
+            return control
+
+        cur_loss = sum(self._epoch_losses) / len(self._epoch_losses)
+        self._epoch_losses = []
+
+        if self.prev_loss is None:
+            self.prev_loss = cur_loss
+            print(f"[earlystop] epoch={state.epoch:.2f} avg_loss={cur_loss:.4f} (baseline)")
+            return control
+
+        improvement = self.prev_loss - cur_loss
+        if improvement < self.min_delta:
+            self.no_improve += 1
+        else:
+            self.no_improve = 0
+        self.prev_loss = cur_loss
+
+        print(
+            f"[earlystop] epoch={state.epoch:.2f} avg_loss={cur_loss:.4f} "
+            f"improvement={improvement:.4f} no_improve={self.no_improve}/{self.patience}"
+        )
+
+        if self.no_improve >= self.patience:
+            print(
+                f"[earlystop] Stopping: {self.patience} consecutive epochs with "
+                f"loss improvement < {self.min_delta}."
+            )
+            control.should_training_stop = True
+        return control
 
 
 def load_qwen_vl_model(model_name: str, torch_dtype, attn_implementation: str | None = None):
@@ -244,6 +301,25 @@ def parse_args():
              "token embeddings can learn). Set empty string to disable.",
     )
 
+    parser.add_argument(
+        "--early-stop-patience",
+        type=int,
+        default=3,
+        help="Stop after this many consecutive epochs whose avg train loss "
+             "improvement is below --early-stop-min-delta.",
+    )
+    parser.add_argument(
+        "--early-stop-min-delta",
+        type=float,
+        default=0.001,
+        help="Minimum per-epoch avg loss improvement to count as progress.",
+    )
+    parser.add_argument(
+        "--disable-early-stop",
+        action="store_true",
+        help="Disable epoch-level early stopping.",
+    )
+
     return parser.parse_args()
 
 
@@ -342,11 +418,27 @@ def main():
         "target": first.get("target", "")[:120],
     })
 
+    callbacks = []
+    if not args.disable_early_stop:
+        callbacks.append(
+            EpochLossEarlyStopping(
+                min_delta=args.early_stop_min_delta,
+                patience=args.early_stop_patience,
+            )
+        )
+        print(
+            f"[train] Early stopping enabled: patience={args.early_stop_patience}, "
+            f"min_delta={args.early_stop_min_delta} (per-epoch avg loss)"
+        )
+    else:
+        print("[train] Early stopping disabled")
+
     trainer = Trainer(
         model=model,
         args=training_args,
         train_dataset=dataset,
         data_collator=collator,
+        callbacks=callbacks,
     )
 
     trainer.train()
