@@ -1,469 +1,281 @@
-# Ultrasound Video Understanding — Full Data Pipeline
+# Live Ultrasound Video Understanding — 完整 Pipeline
 
-## Overview
-
-```
-YouTube Videos → VLM Classification → ASR Transcription → Video Segmentation → QA Generation → Training Data
-```
+本文件是当前项目端到端流程的权威说明。目标：从 YouTube/Bilibili 超声教学视频，构建数据并训练一个 answerability-aware 的实时超声视频理解模型（Qwen3-VL）。
 
 ---
 
-## Step 1: Video Crawling
+## 0. 总览
 
-| Item | Details |
-|------|---------|
-| **Logic** | Search YouTube/Bilibili by ultrasound keywords, download videos + metadata |
-| **Tool** | UltrasoundCrawler (yt-dlp + YouTube Data API) |
-| **Script** | `UltrasoundCrawler_KeyCode_20260323_v2/cli.py` |
-| **Input** | Search keywords (e.g., "POCUS ultrasound scanning tutorial") |
-| **Output** | `.mp4` files in `output/media/` + `videos.jsonl` metadata |
-| **Auto-classification** | By title/description keywords → `scan_tutorial/`, `case_reasoning/`, `organ_system_lecture/`, `uncategorized/` |
+```text
+1. 视频爬取         UltrasoundCrawler_KeyCode_20260323_v2/
+2. 视频过滤         src/video_filter.py / scripts/video_filter_vlm.py
+3. ASR 转录         QA/prepare/asr.py         -> transcripts/{video_id}.json
+        │
+        ├── Pretrain 分支（学超声视觉-语言）
+        │     4. build_samples   pretrain/build_samples.py  -> pretrain_samples.jsonl
+        │     5. 预训练           pretrain/train.py          (Stage 1, LoRA)
+        │
+        └── QA / SFT 分支（学 WAIT/ANSWER 决策）
+              6. Clipping        QA/prepare/clipping.py     -> clips/{video_id}_clips.json
+              7. QA 生成         QA/generator.py / QA/offline_generator.py
+              8. QA 校验/合并     QA/validator.py / QA/merger.py -> {video_id}_training_samples.jsonl
+              9. SFT             QA/train/train.py          (Stage 2, LoRA)
+
+10. 推理 / 评测     QA/eval/ , pretrain/infer.py
+```
+
+关键点：
+
+- Pretrain 分支和 SFT 分支**共享前面的爬取/过滤/ASR**，之后分成两条独立数据流。
+- 两条训练分支目前**完全解耦**（`pretrain/` 与 `QA/train/` 无 import 依赖）。是否用 Stage 1 的 adapter 作为 Stage 2 的起点，是可选实验。
 
 ---
 
-## Step 2: Video Classification (VLM)
+## 1. 视频爬取
 
-| Item | Details |
-|------|---------|
-| **Logic** | VLM analyzes video content to classify into 6 types |
-| **Tool** | Qwen3-VL-2B-Instruct (local, MPS/CUDA) |
-| **Script** | `scripts/batch_filter.py` + `src/ablation_input_modes.py` |
-| **Input** | Video file (.mp4) |
-| **Output** | Classification JSON (video_type, training_value, recommendation) |
+目录：`UltrasoundCrawler_KeyCode_20260323_v2/`
 
-### 6 Video Types
+- 从 YouTube / Bilibili 爬取超声教学视频。
+- 输出到 `output/.../media/<category>/{video_id}.mp4`。
+- 有 Web UI（`webapp.py` / `run_ui.bat`）和 CLI（`cli.py`）。
 
-| Type | Description | Training Value |
-|------|-------------|---------------|
-| `pure_ultrasound` | Only US machine screen, no faces/slides | High |
-| `hands_on_tutorial` | Instructor + probe technique + US display | High |
-| `case_discussion` | Instructor annotating/discussing US clips | Medium |
-| `ppt_lecture` | Slides/presentations with occasional US | Low |
-| `diagram_animation` | Anatomical diagrams, 3D animations | None |
-| `mixed` | Multiple types alternating | Needs trimming |
-
-### Decision
-- **keep**: pure_ultrasound, hands_on_tutorial
-- **trim**: case_discussion, mixed
-- **discard**: ppt_lecture, diagram_animation
+产物：原始视频 `.mp4`。
 
 ---
 
-## Step 3: ASR Transcription
+## 2. 视频过滤
 
-| Item | Details |
-|------|---------|
-| **Logic** | Extract audio from video → Whisper speech recognition → timestamped text |
-| **Tool** | ffmpeg (audio extraction) + faster-whisper (ASR, CPU int8) |
-| **Script** | `scripts/asr_pipeline.py` |
-| **Input** | Video file (.mp4) |
-| **Output** | `transcripts/VIDEO_ID.json` |
+- `src/video_filter.py`
+- `scripts/video_filter_vlm.py`
+- `scripts/batch_filter.py`
 
-### Output Format
+用 VLM 判断视频是否为“有用的超声教学内容”，过滤掉无关视频（纯讲座、广告、非超声等）。
 
-```json
-{
-  "video_id": "8V649L5Q368",
-  "language": "en",
-  "duration_sec": 1136.8,
-  "segments": [
-    {"start": 0.7, "end": 4.5, "text": "Hi, I'm Dr. John Kugler..."},
-    {"start": 4.5, "end": 7.1, "text": "Today, we're going to be learning..."}
-  ]
-}
-```
-
-### Model Options
-- `base`: fastest, good enough for English
-- `medium`: better accuracy
-- `large-v3`: best quality, slower
+产物：过滤后的视频清单。
 
 ---
 
-## Step 4: Video Clipping
+## 3. ASR 转录
 
-| Item | Details |
-|------|---------|
-| **Logic** | Two-stage: grayscale histogram finds candidates → GPT-4o verifies semantically |
-| **Tool** | OpenCV (histogram) + GPT-4o API (semantic verification) |
-| **Script** | `scripts/video_segmentation.py` + `scripts/llm_segmentation.py` |
-| **Input** | Video file + ASR transcript JSON |
-| **Output** | `results/VIDEO_ID_clips.json` |
+入口：`QA/prepare/asr.py`（复用 `scripts/asr_pipeline.py`）
 
-### Stage 1: Grayscale Histogram Analysis (free, ~10s)
+- ffmpeg 抽音频 → faster-whisper 转写 → 带时间戳的 JSON。
+- 模型策略：默认 `medium`；**检测到 GPU 时自动升级 `large-v3`**；`--device auto` 自动选 cuda/cpu；GPU 用 `float16`，CPU 用 `int8`。
+- 医学术语需要较大模型，避免污染下游文本。
 
-1. For each ASR segment, extract frame at midpoint
-2. Convert to grayscale → compute 256-bin histogram
-3. Compare with previous frame using Pearson correlation
-4. `similarity < 0.4` → mark as candidate cut point
-
-### Stage 2: GPT-4o Semantic Verification (~$0.03, ~6s)
-
-Input to GPT-4o:
-- Full ASR transcript (all segments with timestamps)
-- List of candidate cut points from Stage 1
-
-GPT-4o decides:
-- Which candidates are real topic changes → **keep**
-- Which are just camera zooms → **remove**
-- What topic changes were missed → **add**
-- For each cut: `topic` label (content before this cut)
-
-### Output Format
-
-```json
-{
-  "video_id": "8V649L5Q368",
-  "method": "histogram_llm",
-  "num_clips": 11,
-  "clips": [
-    {
-      "clip_idx": 0,
-      "start": 28.0,
-      "end": 179.3,
-      "duration": 151.3,
-      "text": "To get started, we'll start with pneumothorax...",
-      "topic": "Pneumothorax diagnosis and ultrasound technique"
-    }
-  ]
-}
-```
-
-### Constraints
-- Minimum clip: 30s
-- Maximum clip: 300s
-- Clips end at natural topic boundaries
-
----
-
-## Step 5: QA Generation (Dual-Track)
-
-The QA generation is split into **two parallel tracks** by question type:
-
-| Track | Types | Information access | Generator | Validator |
-|-------|-------|--------------------|-----------|-----------|
-| **5a — Offline** | `scene_description`, `fine_grained`, `knowledge` | Whole clip | GPT-4o Vision (6 frames + ASR) | none |
-| **5b — Streaming** | `sonographer_intent`, `next_action_guidance` | Question grounded in past video; answer drawn from past+future ground truth (with audio) | **Gemini 2.5 Flash (oracle)**, video-clip input via OpenRouter | **Gemini 2.5 Flash (audit)** via OpenRouter |
-
-> 🎬 **Streaming track now uses real video clips, not sampled frames.** Both the generator and the validator receive two short mp4 segments — one for SEEN (`clip_start → query_time`) and one for FUTURE (`query_time → clip_end`) — uploaded as OpenAI/OpenRouter `type:"file"` content blocks. Each segment carries its **original visual frames AND audio (operator's narration)** end-to-end (this delivery format was empirically verified to produce non-zero `prompt_tokens_details.video_tokens` on OpenRouter Gemini 2.5 Flash). All video plumbing is centralised in [`scripts/_video_llm.py`](../scripts/_video_llm.py) (`cut_clip`, `build_video_block`, `call_with_content`).
-
-### Why this split
-
-- `scene_description` / `fine_grained` / `knowledge` benefit from full-clip context — let the model see the entire clip and write holistic answers.
-- `sonographer_intent` / `next_action_guidance` are intrinsically time-sensitive. The QUESTION must be grounded in what's been seen so far (no future leakage), but the ANSWER should describe what actually happens next in the clip — i.e. real ground truth, not a guess. So the generator is given full-clip access (oracle) but instructed to write the question from the SEEN-only perspective.
-- A separate **Gemini 2.5 Flash** validator (independent forward pass, different prompt, different time windows from the generator) audits every streaming QA on a **single binary criterion**: question must be grounded in SEEN only AND answer must be faithful to what's visible/audible in SEEN+FUTURE. Verdict is `pass` or `fail`.
-- *Note on independence:* generator and validator currently share the same model family (Gemini 2.5 Flash). They are NOT cross-family. We rely on the stricter prompt + smaller FUTURE window in the validator (default 30 s vs uncapped for the generator) to flush leakage / hallucination. A cross-family validator (e.g. Qwen2.5-VL on OpenRouter) is left as future work.
-
-### Dual-Track Flow Diagram
-
-```
-                 ┌────────────────────────────────────────────────────────┐
-                 │  Clip                                                  │
-                 │  start = clip_start, end = clip_end, full ASR text     │
-                 └─────────────────────────┬──────────────────────────────┘
-                                           │
-                ┌──────────────────────────┴──────────────────────────┐
-                │                                                     │
-                ▼                                                     ▼
-   ┌────────────────────────────┐               ┌──────────────────────────────────────┐
-   │  Track A: OFFLINE  (5a)    │               │  Track B: STREAMING  (5b)            │
-   │  Generator: GPT-4o Vision  │               │  Generator: Gemini 2.5 Flash (oracle)│
-   │                            │               │  Input mode: VIDEO clips (with audio)│
-   ├────────────────────────────┤               ├──────────────────────────────────────┤
-   │ Input:                     │               │ For each anchor t in 0.25/0.5/0.75   │
-   │   • 6 frames (full clip)   │               │ Input:                               │
-   │   • full ASR               │               │   • SEEN_VIDEO  mp4 (clip_start..t,  │
-   │ Output: 3 QA types         │               │     capped to 240 s)                 │
-   │   - scene_description      │               │   • FUTURE_VIDEO mp4 (t..clip_end,   │
-   │   - fine_grained           │               │     uncapped)                        │
-   │   - knowledge              │               │   • full ASR                         │
-   │ Question rule: free        │               │ Output: 2 QA types per anchor        │
-   │ Answer rule: free          │               │   - sonographer_intent               │
-   │                            │               │   - next_action_guidance             │
-   │                            │               │ Question rule: from SEEN_VIDEO only  │
-   │                            │               │ Answer rule:   from SEEN+FUTURE      │
-   └─────────────┬──────────────┘               └─────────────┬────────────────────────┘
-                 │                                            │
-                 │                                            ▼
-                 │                              ┌──────────────────────────────────┐
-                 │                              │  Validator (5c)                  │
-                 │                              │  Gemini 2.5 Flash via OpenRouter │
-                 │                              │  Input mode: VIDEO clips         │
-                 │                              ├──────────────────────────────────┤
-                 │                              │ Input per QA:                    │
-                 │                              │   • SEEN_VIDEO   (cap 240 s)     │
-                 │                              │   • FUTURE_VIDEO (cap 30 s)      │
-                 │                              │   • the QA pair                  │
-                 │                              │ Single binary check:             │
-                 │                              │   (1) Q grounded in SEEN_VIDEO?  │
-                 │                              │   (2) A faithful to SEEN+FUTURE? │
-                 │                              │ Verdict: pass / fail + reason    │
-                 │                              └─────────────┬────────────────────┘
-                 │                                            │
-                 │                                            │ drop "fail"
-                 │                                            ▼
-                 │                              ┌──────────────────────────────────┐
-                 │                              │  *_streaming_qa_validated.json   │
-                 │                              │  (~80% pass rate observed)       │
-                 │                              └─────────────┬────────────────────┘
-                 │                                            │
-                 ▼                                            ▼
-   ┌────────────────────────────┐               ┌────────────────────────────────────┐
-   │  *_offline_qa.json         │               │  validated streaming QA            │
-   │  3 QA × num_clips          │               │  ~5 QA × num_clips (after drop)    │
-   └─────────────┬──────────────┘               └─────────────┬──────────────────────┘
-                 │                                            │
-                 └──────────────────────┬─────────────────────┘
-                                        │
-                                        ▼
-                       ┌──────────────────────────────────────┐
-                       │  Merged QA dataset                   │
-                       │  ~8 QA per clip, sorted by timestamp │
-                       │  ready for training / evaluation     │
-                       └──────────────────────────────────────┘
-```
-
-### 5 QA Types
-
-| Type | Track | What it asks | 中文解释 |
-|------|-------|-------------|---------|
-| `scene_description` | offline | What happens in this clip from beginning to end? | 场景描述（整段过程） |
-| `fine_grained` | offline | Specific landmarks, echogenicity, probe orientation, measurements. | 细粒度视觉特征 |
-| `knowledge` | offline | Relevant medical knowledge, clinical significance, diagnostic criteria. | 医学知识 / 临床意义 |
-| `sonographer_intent` | **streaming** | What is the operator currently trying to do/find at t? | 操作者当前意图 |
-| `next_action_guidance` | **streaming** | What should the sonographer do next based on what's been seen so far? | 下一步操作指导 |
-
-### Step 5a — Offline QA Generation
-
-| Item | Details |
-|------|---------|
-| **Script** | `scripts/qa_generation.py` |
-| **Input** | Video + clips JSON |
-| **Output** | `results/qa/{video_id}_offline_qa.json` |
-| **Per clip** | 6 frames @ 512×512 (detail=low) + full ASR (≤3000 chars) → 1 QA per type (3 total) |
-| **Cost/video** (~11 clips) | ~$0.30 |
-
-### Step 5b — Streaming QA Generation
-
-The streaming generator is an **oracle**: it sees BOTH past and future content within the clip, plus the full ASR. The generator MUST, however, write the question as if only past content were known. The answer is allowed to use the full clip context as ground truth — it should describe the *real* intent or *real* next action that actually occurs in the video.
-
-| Item | Details |
-|------|---------|
-| **Script** | `scripts/streaming_qa_generation.py` |
-| **Generator** | `google/gemini-2.5-flash` via **OpenRouter** (OpenAI-compatible API) |
-| **Input mode** | Two mp4 video clips (visual frames + audio), uploaded as `type:"file"` content blocks |
-| **Input** | Video + clips JSON |
-| **Output** | `results/qa/{video_id}_streaming_qa.json` |
-| **Time anchors** | `[0.25, 0.5, 0.75]` of each clip's duration |
-| **Per anchor** | `SEEN_VIDEO` mp4 `[clip_start, query_time]` (capped to last 240 s) + `FUTURE_VIDEO` mp4 `[query_time, clip_end]` (uncapped) + full ASR → 1 intent + 1 next_action |
-| **Question writing rule** | Must be derivable from SEEN_VIDEO only (no future leakage, visual OR audible) |
-| **Answer writing rule** | May use SEEN_VIDEO + FUTURE_VIDEO + ASR; must describe what actually happens in the clip |
-| **Yield** (~11 clips × 3 anchors × 2 types) | ~66 QA per video |
-| **Cost/video** (per QA ≈ $0.007 × 66) | ~$0.45 |
-| **Smoke-test result** (clip 0, 6 QA) | 6/6 generated, $0.022, 50k video tokens, ~3 min wall time |
-
-### Step 5c — Streaming QA Validation (single binary verdict)
-
-An independent **second forward pass** audits each streaming QA on **a single binary criterion**. Currently the validator and generator share the same model family (Gemini 2.5 Flash) — they are NOT cross-family. We rely on a stricter prompt and a much smaller FUTURE window (default 30 s vs the generator's uncapped FUTURE) to keep the validator from rubber-stamping. Cross-family validation is left as future work.
-
-1. **Question grounding** — Is the question writable from SEEN_VIDEO only? (no future leakage)
-2. **Answer faithfulness** — Does the answer correspond to what is actually visible/audible in SEEN_VIDEO+FUTURE_VIDEO? (not a hallucination)
-
-A QA passes only if BOTH conditions hold.
-
-| Item | Details |
-|------|---------|
-| **Script** | `scripts/qa_validator.py` |
-| **Validator** | `google/gemini-2.5-flash` via **OpenRouter** (OpenAI-compatible API) |
-| **Input mode** | Two mp4 video clips (visual + audio), as `type:"file"` content blocks |
-| **Input** | Streaming QA JSON + video |
-| **Per QA** | `SEEN_VIDEO` (cap 240 s) + `FUTURE_VIDEO` (cap 30 s) → `{verdict, reason, validator_model}` |
-| **Output** | `results/qa/{video_id}_streaming_qa_validated.json` |
-| **Verdict** | `pass` if question grounded AND answer faithful; else `fail` |
-| **Drop policy** | `fail` QA dropped by default (`--keep-failed` to retain for inspection) |
-| **Cost/video** (per QA ≈ $0.005 × 66) | ~$0.30 |
-| **Smoke-test result** (clip 0, 6 QA) | 6/6 pass, $0.031, 93k video tokens, ~6 min wall time |
-
-### Reliability — retry policy on transient OpenRouter errors
-
-OpenRouter occasionally returns `504` (Gateway Timeout) or `429` (rate limit) when the upstream provider is busy. `scripts/_video_llm.py:call_with_content` handles this transparently:
-
-| Error class | Detection | Backoff |
-|-------------|-----------|---------|
-| Network / SDK exception | raised exception | exponential (8 s, 13 s, 20 s, 33 s, 52 s) |
-| `code: 504` empty envelope | `resp.choices` is empty | exponential |
-| `code: 429` empty envelope | `'429'` / `'rate'` substring in error string | **fixed 60 s** (let Gemini's RPM bucket reset) |
-| Empty `message.content` | `text == ""` | exponential, with `finish_reason` logged |
-
-Default = **5 retries** before raising. Per-anchor failures are caught and the rest of the run continues; a non-zero `error` count is reported in the final summary.
-
-### Output Format (per-clip QA file)
-
-Offline (`{video_id}_offline_qa.json`):
-```json
-{
-  "video_id": "8V649L5Q368",
-  "qa_types": ["scene_description", "fine_grained", "knowledge"],
-  "num_qa_pairs": 33,
-  "qa_pairs": [
-    {
-      "source": "offline",
-      "type": "scene_description",
-      "question": "...",
-      "answer": "...",
-      "clip_idx": 1,
-      "clip_start": 179.3,
-      "clip_end": 250.2,
-      "topic": "...",
-      "timestamp_hint": "whole_clip"
-    }
-  ]
-}
-```
-
-Streaming validated (`{video_id}_streaming_qa_validated.json`):
-```json
-{
-  "video_id": "8V649L5Q368",
-  "qa_types": ["sonographer_intent", "next_action_guidance"],
-  "validator_model": "google/gemini-2.5-flash",
-  "validation_stats": {"pass": 58, "fail": 8, "error": 0},
-  "num_after_validation": 58,
-  "streaming_qa": [
-    {
-      "source": "streaming",
-      "type": "next_action_guidance",
-      "question": "Based on what we've seen so far, what should the sonographer do next?",
-      "answer": "The operator tilts the probe cranially and increases depth to bring the upper pole of the kidney into view, then applies color Doppler to assess perfusion.",
-      "clip_idx": 1,
-      "clip_start": 179.3,
-      "clip_end": 250.2,
-      "query_time": 197.0,
-      "ratio": 0.25,
-      "validation": {
-        "verdict": "pass",
-        "reason": "Question is grounded in [SEEN] frames only; the answer accurately describes the cranial tilt and color Doppler step actually shown in [FUTURE].",
-        "validator_model": "google/gemini-2.5-flash"
-      }
-    }
-  ]
-}
-```
-
----
-
-## Cost & Time Estimates
-
-> Per-QA numbers below are measured (clip 0 of `8V649L5Q368`, 6 QA each).
-> Per-video totals assume ~11 clips × 3 anchors × 2 types = 66 streaming QA + 33 offline QA.
-
-| Step | Time/video | Cost/video | API used |
-|------|-----------|-----------|----------|
-| ASR Transcription | ~2 min | Free | local (faster-whisper) |
-| Segmentation (histogram) | ~10 s | Free | local (OpenCV) |
-| Segmentation (LLM) | ~6 s | ~$0.03 | OpenAI (GPT-4o) |
-| Offline QA (5a) | ~50 s | ~$0.30 | OpenAI (GPT-4o Vision) |
-| Streaming QA generation (5b) | 8–15 min* | ~$0.45 | OpenRouter (Gemini 2.5 Flash, video) |
-| Streaming QA validation (5c) | 8–15 min* | ~$0.30 | OpenRouter (Gemini 2.5 Flash, video) |
-| **Total per video** | **~25–35 min** | **~$1.10** | |
-| **20 videos** | **~10 h** (sequential) | **~$22** | |
-
-\* 5b/5c walltime is dominated by `mp4 base64 upload + Gemini video tokenization + occasional 504/429 retries`. The retry wait dominates; the actual per-call billed compute is ~10–30 s. See "Reliability — retry policy" above.
-
----
-
-## CLI Commands
-
-> All scripts auto-load `OPENAI_API_KEY` and `OPENROUTER_API_KEY` from `.env`
-> via `scripts/_env_loader.py` — manual `export` is no longer required.
+命令：
 
 ```bash
-# Step 1: Crawl videos
-python UltrasoundCrawler_KeyCode_20260323_v2/cli.py --source youtube --max-results 100 --download-media
+python QA/prepare/asr.py --video path/to/video.mp4 --output-dir QA/results
+# 手动：--model large-v3 --device cuda
+```
 
-# Step 2: VLM Classification (batch)
-python scripts/batch_filter.py --input-dir path/to/media --num-frames 8
+产物：`{output_dir}/transcripts/{video_id}.json`
 
-# Step 3: ASR Transcription (batch)
-python scripts/asr_pipeline.py --batch --input-dir path/to/media --model base
-
-# Step 4: Video Segmentation (with LLM verification, default — uses OPENAI_API_KEY)
-python scripts/video_segmentation.py --video path.mp4 --transcript transcripts/ID.json
-
-# Step 4: Histogram-only segmentation (no API key needed)
-python scripts/video_segmentation.py --video path.mp4 --transcript transcripts/ID.json --no-llm
-
-# Step 5a: Offline QA Generation (uses OPENAI_API_KEY for GPT-4o Vision)
-python scripts/qa_generation.py --video path.mp4 --clips results/clips/ID_clips.json
-
-# Step 5b: Streaming QA Generation (uses OPENROUTER_API_KEY, Gemini 2.5 Flash with video clips)
-python scripts/streaming_qa_generation.py \
-    --video path.mp4 \
-    --clips results/clips/ID_clips.json
-# optional caps:
-#   --seen-window-sec 240        (default; latter portion of SEEN before query_time)
-#   --future-window-sec -1       (default; uncapped FUTURE for ground-truth)
-#   --single-clip 0              (debug: only this clip)
-#   --ratios 0.25,0.5,0.75       (default time anchors)
-
-# Step 5c: Streaming QA Validation (uses OPENROUTER_API_KEY, Gemini 2.5 Flash with video clips)
-python scripts/qa_validator.py \
-    --streaming-qa results/qa/ID_streaming_qa.json \
-    --video path.mp4
-# optional caps:
-#   --seen-window-sec 240        (default)
-#   --future-window-sec 30       (default; tight window for hallucination check)
-#   --keep-failed                (keep verdict='fail' for inspection)
-#   --max-qa N                   (smoke test; only first N QA)
-
-# Step 5d: Merge to LiveCC-style JSONL
-python scripts/qa_merge.py \
-    --video-id ID \
-    --transcript    results/transcripts/ID.json \
-    --clips         results/clips/ID_clips.json \
-    --offline-qa    results/qa/ID_offline_qa.json \
-    --streaming-qa  results/qa/ID_streaming_qa_validated.json \
-    --out           results/training_data/ID.jsonl --overwrite
-
-# Or run the entire pipeline (Steps 3 → 5c) end-to-end:
-python scripts/run_pipeline.py --video path.mp4 --skip-asr --skip-segmentation
+```json
+{
+  "video_id": "...",
+  "duration_sec": 623.4,
+  "segments": [{"start": 4.3, "end": 12.3, "text": "..."}, ...],
+  "full_text": "..."
+}
 ```
 
 ---
 
-## Data Flow Diagram
+## 4. Pretrain 分支：构造预训练样本
 
+入口：`pretrain/build_samples.py`
+
+- 任务：整句 completion。对每个 ASR segment，看这句开始前最近 N 秒的帧，续写这句超声解说。
+- `current_time = segment.start`，`video_window = [max(0, start - window_sec), start]`。
+- 带 `prev_context`（前文解说，可截断，可 `--no-context` 关闭）。
+- 过滤空句、过短句、`[music]/[applause]` 等。
+
+命令：
+
+```bash
+python pretrain/build_samples.py \
+  --transcripts QA/results/transcripts \
+  --output pretrain/data/pretrain_samples.jsonl \
+  --window-sec 8 --min-words 3 --context-max-chars 400
 ```
-YouTube
-  │
-  ▼ [Step 1: Crawl]
-20 videos (.mp4)
-  │
-  ▼ [Step 2: VLM Classify]
-Keep: 12 videos (US + tutorial + case)
-Discard: 8 videos (PPT, animation, etc.)
-  │
-  ▼ [Step 3: ASR]
-transcripts/VIDEO_ID.json (timestamped text)
-  │
-  ▼ [Step 4: Segment]
-results/clips/VIDEO_ID_clips.json (8-11 clips, each with topic)
-  │
-  ├─▶ [Step 5a: Offline QA]    ──┐
-  │   results/qa/VIDEO_ID_offline_qa.json   (~33 QA: scene/fine/knowledge)
-  │                               │
-  └─▶ [Step 5b: Streaming QA]  ──┤
-      results/qa/VIDEO_ID_streaming_qa.json (~66 QA: intent/next_action)
-                                  │
-                                  ▼
-                          [Step 5c: Validate]
-                          Gemini 2.5 Flash audits every streaming QA
-                          → results/qa/VIDEO_ID_streaming_qa_validated.json
-                                  │
-                                  ▼
-                          [Step 5d: Merge]
-                          results/training_data/VIDEO_ID.jsonl
-                                  │
-                                  ▼
-                          LoRA SFT on Qwen2-VL-7B
+
+产物：`pretrain_samples.jsonl`（`sample_type=pretrain_caption`）。
+
+详见 `pretrain/PRETRAIN_FORMAT.md`。
+
+---
+
+## 5. 预训练（Stage 1）
+
+入口：`pretrain/train.py`
+
+- LoRA 预训练，不加 special token，词表不变（adapter 小、快、省显存）。
+- 早停（每 epoch 平均 loss，连续 N epoch 改善 < min_delta 停）+ TensorBoard。
+
+命令：
+
+```bash
+python pretrain/train.py \
+  --model-name Qwen/Qwen3-VL-2B-Instruct \
+  --train-jsonl pretrain/data/pretrain_samples.jsonl \
+  --video-path-map pretrain/data/video_path_map.json \
+  --output-dir /mnt/cache/qwenFT/pretrain_qwen3vl_bf16 \
+  --window-size 4 --frame-size 224 \
+  --num-train-epochs 3 \
+  --per-device-train-batch-size 1 --gradient-accumulation-steps 8 \
+  --learning-rate 1e-4 --bf16 --gradient-checkpointing \
+  --early-stop-patience 3 --early-stop-min-delta 0.001
+```
+
+产物：预训练 LoRA adapter。
+
+---
+
+## 6. Clipping（视频切片）
+
+入口：`QA/prepare/clipping.py`（复用 `scripts/video_segmentation.py`）
+
+超声友好、离线、无 LLM：
+
+1. 视觉变化检测：固定时间网格（默认每 1.5s 一帧），SSIM 相似度（无 scikit-image 自动回退 framediff）；`similarity < scene_threshold(0.6)` 且相邻切点间隔 ≥ `min_scene_gap(3s)` 记为 scene change。
+2. 句子边界：标点 `.?!` + 停顿 gap(0.8s) fallback + 全弱边界兜底。
+3. 对齐：视觉切点找最近句边界（`tolerance=5s`），找不到就放弃该切点（保句子完整）。
+4. 组装：`min_clip=30s`、`max_clip=240s`；短尾（< min_clip）合并到前一个 clip。
+5. 超长（> max_clip）按句边界细分。
+
+命令：
+
+```bash
+python QA/prepare/clipping.py \
+  --video path/to/video.mp4 --output-dir QA/results \
+  --visual-method ssim --min-clip 30 --max-clip 240
+# 调阈值可加 --save-trace，输出每个采样点的相似度
+```
+
+产物：`{output_dir}/clips/{video_id}_clips.json`（含 method/params/coverage_pct/每 clip 的 start/end/duration/text/cut_reason）。
+
+---
+
+## 7. QA 生成
+
+- `QA/generator.py`：streaming QA（next_action / next_observation，含 query_time / answer_time）。
+- `QA/offline_generator.py`：offline QA（clip_summary，基于 clips）。
+- `QA/run.py`：一体化入口。
+
+产物：原始 QA（streaming + offline）。
+
+---
+
+## 8. QA 校验 / 合并
+
+- `QA/validator.py`：校验 QA 质量/格式。
+- `QA/merger.py`：合并 offline + streaming，`--expand-wait-answer` 展开成 WAIT/ANSWER 训练样本。
+
+产物：`QA/results/{video_id}_training_samples.jsonl`
+
+样本类型：
+
+```text
+offline_answer     -> <ANSWER> clip_summary
+streaming_wait     -> <WAIT>   (query_time，证据不足)
+streaming_answer   -> <ANSWER> (answer_time，证据充分)
+```
+
+详见 `QA/train/TRAINING_FORMAT.md` 和 `QA/schema.md`。
+
+---
+
+## 9. SFT（Stage 2）
+
+入口：`QA/train/train.py`
+
+- LoRA SFT，学 answerability：`<WAIT>` / `<ANSWER>` 决策。
+- 新增 special token `<WAIT>`/`<ANSWER>`，并让 `embed_tokens` / `lm_head` 通过 `modules_to_save` 可训练。
+- 冻结 vision encoder。
+- 早停 + TensorBoard；T4 用 `--bf16`。
+
+命令：
+
+```bash
+python QA/train/train.py \
+  --model-name Qwen/Qwen3-VL-2B-Instruct \
+  --train-jsonl QA/results/{video_id}_training_samples.jsonl \
+  --default-video-path path/to/video.mp4 \
+  --output-dir /mnt/cache/qwenFT/qwen3vl_2b_lora_wait_answer \
+  --window-size 8 --frame-size 336 \
+  --num-train-epochs 100 \
+  --per-device-train-batch-size 1 --gradient-accumulation-steps 4 \
+  --learning-rate 2e-4 --bf16 --gradient-checkpointing \
+  --early-stop-patience 3 --early-stop-min-delta 0.001
+```
+
+产物：SFT LoRA adapter。
+
+详见 `QA/train/README.md`。
+
+---
+
+## 10. 推理 / 评测
+
+- `QA/eval/infer_qwen.py`：base model raw 推理（answerability baseline）。
+- `QA/eval/infer_qwen_lora.py`：base + LoRA adapter 推理，`skip_special_tokens=False` 保留 `<WAIT>`/`<ANSWER>`，统计 answerability accuracy。
+- `QA/eval/analyze_predictions.py`：分析预测结果。
+- `pretrain/infer.py`：预训练 adapter 的 caption 续写推理。
+- `QA/test/check_collator_labels.py`：验证 collator 的 label mask 只监督 `<WAIT>`/`<ANSWER>` target。
+
+命令示例（SFT adapter 推理）：
+
+```bash
+python QA/eval/infer_qwen_lora.py \
+  --model-name Qwen/Qwen3-VL-2B-Instruct \
+  --adapter-path /mnt/cache/qwenFT/qwen3vl_2b_lora_wait_answer \
+  --eval-jsonl QA/results/{video_id}_training_samples.jsonl \
+  --default-video-path path/to/video.mp4 \
+  --output /mnt/cache/qwenFT/predictions.jsonl \
+  --window-size 8 --frame-size 336 --limit 20 --max-new-tokens 160 --bf16
+```
+
+---
+
+## 11. 目录速查
+
+```text
+UltrasoundCrawler_KeyCode_20260323_v2/  1. 爬取
+src/video_filter.py                     2. 过滤
+scripts/video_filter_vlm.py             2. 过滤
+QA/prepare/asr.py                       3. ASR
+scripts/asr_pipeline.py                 3. ASR core
+pretrain/                               4-5. 预训练分支
+  build_samples.py / dataset.py / collator.py / train.py / infer.py
+QA/prepare/clipping.py                  6. Clipping
+scripts/video_segmentation.py           6. Clipping core (SSIM grid, no LLM)
+QA/generator.py / offline_generator.py  7. QA 生成
+QA/validator.py / QA/merger.py          8. QA 校验/合并
+QA/train/                               9. SFT
+  train.py / dataset.py / collator.py / video_sampling.py
+QA/eval/                                10. 推理/评测
+```
+
+---
+
+## 12. 环境要点
+
+- GPU 训练环境：Azure T4（`azureml_py38`，torch 2.9.1+cu128，bf16 可用）。
+- 大文件（模型下载 / checkpoint）放可写大盘，例如 `/mnt/cache`；根分区通常空间紧张。
+- Transformers 在混合环境里可能误 import TensorFlow/Keras：训练脚本已在顶部
+  `os.environ.setdefault("TRANSFORMERS_NO_TF", "1")` 等，或运行前 export。
+- 依赖见 `requirements.txt`（含 `scikit-image` 用于 SSIM、`tensorboard`）。
+
+---
+
+## 13. 两阶段训练关系
+
+```text
+Stage 1 (pretrain/)  : ASR caption completion  -> 学超声视觉-语言知识
+Stage 2 (QA/train/)  : WAIT/ANSWER answerability -> 学决策格式
+
+两套代码解耦、可独立运行。
+可选：Stage 2 从 Stage 1 的 adapter 继续，作为后续实验。
 ```
