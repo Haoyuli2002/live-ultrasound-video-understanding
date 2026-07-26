@@ -53,7 +53,7 @@ except Exception:
     AutoModelForImageTextToText = None
 
 try:
-    from peft import LoraConfig, get_peft_model
+    from peft import LoraConfig, get_peft_model, PeftModel
 except ImportError as e:
     raise ImportError(
         "PEFT is required for LoRA training. Install with: pip install peft"
@@ -302,6 +302,16 @@ def parse_args():
     )
 
     parser.add_argument(
+        "--init-adapter",
+        type=str,
+        default=None,
+        help="Optional pretrain LoRA adapter dir. If set, it is loaded and "
+             "merged into the base weights BEFORE adding <WAIT>/<ANSWER> and "
+             "starting SFT (two-stage: pretrain -> SFT). Inference must use the "
+             "same --init-adapter to reproduce the merged base.",
+    )
+
+    parser.add_argument(
         "--early-stop-patience",
         type=int,
         default=3,
@@ -353,6 +363,12 @@ def main():
         torch_dtype=dtype,
         attn_implementation=args.attn_implementation,
     )
+
+    if args.init_adapter:
+        print(f"[train] Loading init (pretrain) adapter: {args.init_adapter}")
+        model = PeftModel.from_pretrained(model, args.init_adapter)
+        model = model.merge_and_unload()
+        print("[train] Merged pretrain adapter into base weights (two-stage: pretrain -> SFT)")
 
     add_special_tokens_if_needed(model, processor)
 

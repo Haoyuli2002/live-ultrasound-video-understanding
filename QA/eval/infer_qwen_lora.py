@@ -367,6 +367,16 @@ def parse_args():
     parser.add_argument("--bf16", action="store_true")
     parser.add_argument("--cpu", action="store_true", help="Force CPU inference.")
 
+    parser.add_argument(
+        "--init-adapter",
+        type=str,
+        default=None,
+        help="Pretrain LoRA adapter dir that was merged before SFT. If the SFT "
+             "adapter was trained with train.py --init-adapter, you MUST pass "
+             "the same value here so the merged base is reproduced before "
+             "loading the SFT adapter.",
+    )
+
     return parser.parse_args()
 
 
@@ -403,6 +413,16 @@ def main():
 
     print(f"[infer-lora] loading base model: {args.model_name}")
     base_model = load_qwen_vl_base_model(args.model_name, dtype=dtype, device=device)
+
+    # Two-stage: reproduce the merged base by loading + merging the pretrain
+    # adapter BEFORE resizing embeddings and loading the SFT adapter. This must
+    # match train.py --init-adapter.
+    if args.init_adapter:
+        print(f"[infer-lora] merging init (pretrain) adapter: {args.init_adapter}")
+        base_model = PeftModel.from_pretrained(base_model, args.init_adapter)
+        base_model = base_model.merge_and_unload()
+        base_model = base_model.to(device)
+        print("[infer-lora] merged pretrain adapter into base weights")
 
     # Required because training added <WAIT>/<ANSWER> to tokenizer.
     if base_model.get_input_embeddings().num_embeddings != len(tokenizer):
