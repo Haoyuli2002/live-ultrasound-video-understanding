@@ -66,12 +66,70 @@ def _overlap(pred, target):
     return 2 * prec * rec / (prec + rec)
 
 
+# ============================================================================
+# Semantic cosine similarity (sentence-embedding). Optional; lazy-loaded.
+# ============================================================================
+
+DEFAULT_EMBED_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
+_EMBED_MODEL_CACHE = {}
+
+
+def _resolve_device(device="auto"):
+    if device and device != "auto":
+        return device
+    try:
+        import torch
+        if torch.cuda.is_available():
+            return "cuda"
+    except Exception:
+        pass
+    return "cpu"
+
+
+def _load_sentence_model(model_name, device):
+    key = (model_name, device)
+    if key in _EMBED_MODEL_CACHE:
+        return _EMBED_MODEL_CACHE[key]
+    from sentence_transformers import SentenceTransformer  # may raise ImportError
+    model = SentenceTransformer(model_name, device=device)
+    _EMBED_MODEL_CACHE[key] = model
+    return model
+
+
+def _semantic_cosines(model, preds, targets, batch_size=64):
+    """
+    Return a list of cosine similarities (float) between each pred and its
+    target, computed on L2-normalized sentence embeddings.
+    """
+    import numpy as np
+
+    # Encode all preds and targets in two batched calls.
+    pe = np.asarray(
+        model.encode(preds, batch_size=batch_size, convert_to_numpy=True,
+                     normalize_embeddings=True, show_progress_bar=False),
+        dtype=np.float32,
+    )
+    te = np.asarray(
+        model.encode(targets, batch_size=batch_size, convert_to_numpy=True,
+                     normalize_embeddings=True, show_progress_bar=False),
+        dtype=np.float32,
+    )
+    # Row-wise dot product of normalized vectors == cosine similarity.
+    return [float((pe[i] * te[i]).sum()) for i in range(len(preds))]
+
+
 def main():
     parser = argparse.ArgumentParser(description="Compare base vs adapter pretrain predictions")
     parser.add_argument("--base", type=str, required=True, help="jsonl from base-only infer")
     parser.add_argument("--lora", type=str, required=True, help="jsonl from adapter infer")
     parser.add_argument("--output", type=str, default=None, help="Optional merged jsonl output")
     parser.add_argument("--limit", type=int, default=None, help="Only show first N matched rows")
+
+    parser.add_argument("--no-semantic", action="store_true",
+                        help="Disable sentence-embedding cosine similarity (only word-overlap F1).")
+    parser.add_argument("--embed-model", type=str, default=DEFAULT_EMBED_MODEL,
+                        help=f"sentence-transformers model for semantic cosine (default {DEFAULT_EMBED_MODEL}).")
+    parser.add_argument("--embed-device", type=str, default="auto")
     args = parser.parse_args()
 
     base_rows = _load(args.base)
@@ -85,17 +143,35 @@ def main():
 
     print(f"[compare] base rows={len(base_rows)} lora rows={len(lora_rows)} matched={len(keys)}")
 
+    targets = [base_by[k].get("target", "") for k in ordered]
+    base_preds = [base_by[k].get("prediction", "") for k in ordered]
+    lora_preds = [lora_by[k].get("prediction", "") for k in ordered]
+
+    # Optional semantic cosine similarity (lazy, with graceful fallback).
+    base_cos = lora_cos = None
+    if not args.no_semantic and ordered:
+        try:
+            device = _resolve_device(args.embed_device)
+            print(f"[compare] semantic model={args.embed_model} device={device}")
+            model = _load_sentence_model(args.embed_model, device)
+            base_cos = _semantic_cosines(model, base_preds, targets)
+            lora_cos = _semantic_cosines(model, lora_preds, targets)
+        except Exception as e:
+            print(f"[compare] WARNING: semantic similarity disabled ({type(e).__name__}: {e}); "
+                  f"install sentence-transformers or use --no-semantic.")
+            base_cos = lora_cos = None
+
     merged = []
     base_f1_sum = 0.0
     lora_f1_sum = 0.0
+    base_cos_sum = 0.0
+    lora_cos_sum = 0.0
     n = 0
     shown = 0
-    for k in ordered:
-        b = base_by[k]
-        l = lora_by[k]
-        target = b.get("target", "")
-        base_pred = b.get("prediction", "")
-        lora_pred = l.get("prediction", "")
+    for i, k in enumerate(ordered):
+        target = targets[i]
+        base_pred = base_preds[i]
+        lora_pred = lora_preds[i]
 
         base_f1 = _overlap(base_pred, target)
         lora_f1 = _overlap(lora_pred, target)
@@ -113,6 +189,16 @@ def main():
             "base_target_f1": round(base_f1, 3),
             "lora_target_f1": round(lora_f1, 3),
         }
+
+        bc = lc = None
+        if base_cos is not None and lora_cos is not None:
+            bc = base_cos[i]
+            lc = lora_cos[i]
+            base_cos_sum += bc
+            lora_cos_sum += lc
+            rec["base_target_cos"] = round(bc, 3)
+            rec["lora_target_cos"] = round(lc, 3)
+
         merged.append(rec)
 
         if args.limit is None or shown < args.limit:
@@ -120,8 +206,12 @@ def main():
             print("=" * 90)
             print(f"[{k[0]} | window={rec['video_window']} | idx={k[2]}]")
             print(f"  TARGET   : {target}")
-            print(f"  BASE     : {base_pred}   (f1={base_f1:.3f})")
-            print(f"  PRETRAIN : {lora_pred}   (f1={lora_f1:.3f})")
+            if bc is not None:
+                print(f"  BASE     : {base_pred}   (f1={base_f1:.3f} cos={bc:.3f})")
+                print(f"  PRETRAIN : {lora_pred}   (f1={lora_f1:.3f} cos={lc:.3f})")
+            else:
+                print(f"  BASE     : {base_pred}   (f1={base_f1:.3f})")
+                print(f"  PRETRAIN : {lora_pred}   (f1={lora_f1:.3f})")
 
     if n:
         print("=" * 90)
@@ -129,6 +219,11 @@ def main():
         print(f"    BASE (untrained) : {base_f1_sum / n:.3f}")
         print(f"    PRETRAIN adapter : {lora_f1_sum / n:.3f}")
         print(f"    delta            : {(lora_f1_sum - base_f1_sum) / n:+.3f}")
+        if base_cos is not None and lora_cos is not None:
+            print(f"[compare] mean semantic cosine vs target:")
+            print(f"    BASE (untrained) : {base_cos_sum / n:.3f}")
+            print(f"    PRETRAIN adapter : {lora_cos_sum / n:.3f}")
+            print(f"    delta            : {(lora_cos_sum - base_cos_sum) / n:+.3f}")
 
     if args.output:
         out = Path(args.output)
