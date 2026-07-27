@@ -17,9 +17,11 @@ locate answer_time precisely.
 If the oracle judges that no valid (query_time, answer_time) pair exists at
 this anchor, the QA at that anchor is DROPPED.
 
-We generate two QA types per anchor:
-  - next_action       (what the operator's HANDS should do next)
-  - next_observation  (what the learner's EYES should look for next)
+We generate two QA types per anchor. Both are framed from the unified
+perspective of the CLINICIAN performing/reading the exam (we do NOT split
+into "operator" vs "learner" roles):
+  - next_action       (what clinical scanning action should be done next)
+  - next_observation  (what on-screen evidence should be looked for next)
 
 Output: QA/results/{video_id}_streaming_qa.json
 
@@ -58,24 +60,28 @@ from _shared import (  # noqa: E402
 
 GENERATOR_MODEL = DEFAULT_MODEL  # "google/gemini-2.5-flash"
 
-# Anchor time-ratios inside each clip. Two anchors per clip: one in the
-# earlier third (0.3) with plenty of FUTURE to problem-shop, and one in
-# the middle-to-late region (0.6) that still leaves ~40% of the clip for
-# answer_time to land in. Empirically 3 anchors produced too many
-# near-duplicate QA within a single clip, so we dropped to 2.
-TIME_RATIOS = [0.3, 0.6]
+# Anchor time-ratios inside each clip. We now use a SINGLE anchor at the
+# MIDDLE of the clip (0.5) and emit ONE QA per clip. This reduces
+# near-duplicate QA within a clip and keeps the query pause centered so
+# there is roughly half the clip left for answer_time to land in.
+TIME_RATIOS = [0.5]
+
+# Emit at most this many QA per anchor (=> per clip, given single anchor).
+MAX_QA_PER_ANCHOR = 1
 
 # Streaming QA type pair. Deliberately split into complementary axes so
-# they don't collapse into "the same question phrased differently":
-#   - next_action:      what the operator's HANDS should do next
+# they don't collapse into "the same question phrased differently". Both
+# are framed from the unified CLINICIAN perspective (no operator/learner
+# role split):
+#   - next_action:      what clinical scanning action should be done next
 #                       (physical maneuver: probe adjustment, compression,
 #                        mode switch, patient repositioning, etc.)
-#   - next_observation: what the learner's EYES should look for next
+#   - next_observation: what on-screen evidence should be looked for next
 #                       (specific anatomical structure, imaging sign, or
 #                        image feature that appears on-screen)
 # The old 2-type set was ("sonographer_intent", "next_action_guidance")
 # which semantically overlapped a lot -- both essentially asked about
-# operator action, and validator (C2) failed frequently because the
+# scanning action, and validator (C2) failed frequently because the
 # "next action" was already stated at query_time by the narration.
 STREAMING_QA_TYPES = ["next_action", "next_observation"]
 
@@ -88,18 +94,46 @@ MIN_FUTURE_SEC_FOR_ANCHOR = 8.0
 # receives contradictory supervision from nearly identical inputs.
 MIN_ANSWER_DELAY_SEC = 5.0
 
+# Minimum word count and generic-phrase blacklist for wait_reason quality.
+# A good wait_reason must name the SPECIFIC missing evidence, not a generic
+# "need more information" filler (which would recreate the collapse problem).
+MIN_WAIT_REASON_WORDS = 5
+GENERIC_WAIT_PHRASES = [
+    "not enough information",
+    "more video is needed",
+    "more video needed",
+    "need more information",
+    "need more context",
+    "more context is needed",
+    "insufficient information",
+    "wait for more",
+]
+
+
+def is_generic_wait_reason(text: str) -> bool:
+    """True if wait_reason is empty, too short, or a generic filler phrase."""
+    t = (text or "").strip().lower()
+    if not t:
+        return True
+    if len(t.split()) < MIN_WAIT_REASON_WORDS:
+        return True
+    return any(p in t for p in GENERIC_WAIT_PHRASES)
+
 
 STREAMING_QA_PROMPT = """You are a senior ultrasound instructor creating training data for a real-time (streaming) ultrasound video-understanding model.
 
 The clip runs from t={clip_start:.0f}s to t={clip_end:.0f}s.
 Topic: {topic}
 
-A learner is watching the clip live. They pause at query_time t_q = {current_time:.0f}s and ask a question.
+Adopt the unified perspective of the CLINICIAN performing and reading this
+exam in real time (do NOT split into "operator" vs "learner" roles). At
+query_time t_q = {current_time:.0f}s the exam pauses and the clinician asks,
+from an overall clinical standpoint, what to do next / what to look for next.
 
-You are given TWO video segments in temporal order. Each carries its ORIGINAL visual frames AND audio (operator's narration):
+You are given TWO video segments in temporal order. Each carries its ORIGINAL visual frames AND audio (the narration):
 
-  [SEEN_VIDEO]   covers ({seen_a:.0f}s -> {seen_b:.0f}s) -- everything the learner has watched so far.
-  [FUTURE_VIDEO] covers ({fut_a:.0f}s -> {fut_b:.0f}s) -- what happens AFTER the learner's question.
+  [SEEN_VIDEO]   covers ({seen_a:.0f}s -> {seen_b:.0f}s) -- everything seen so far, up to t_q.
+  [FUTURE_VIDEO] covers ({fut_a:.0f}s -> {fut_b:.0f}s) -- what happens AFTER t_q.
 
 You also have the FULL ASR transcript of the entire clip:
 \"{full_asr}\"
@@ -125,7 +159,7 @@ for a slot does not exist at this anchor):
          next scanning-preparation maneuver
 
      The question should sound like:
-       "What should the operator do next to improve or continue the scan?"
+       "What should be done next to improve or continue the scan?"
 
      INVALID for "next_action":
        - asking what to look for on the ultrasound screen
@@ -135,7 +169,7 @@ for a slot does not exist at this anchor):
          or picking up that probe is the actual next maneuver
 
   2. "next_observation"
-     This asks what visual evidence the learner should look for next on the
+     This asks what visual evidence should be looked for next on the
      ultrasound image as the scan continues.
 
      Valid answers describe a concrete ON-SCREEN ultrasound feature that
@@ -148,10 +182,10 @@ for a slot does not exist at this anchor):
          screen-level change
 
      The question should sound like:
-       "What should the learner look for on the ultrasound image next?"
+       "What should you look for on the ultrasound image next?"
 
      INVALID for "next_observation":
-       - operator or patient action
+       - a scanning or patient action
        - probe movement
        - probe type or equipment choice
        - clinical diagnosis without direct visual evidence
@@ -195,8 +229,26 @@ ANSWER writing rules:
   - For `next_observation`, describe the REAL visual evidence that ACTUALLY
     appears or becomes clearer on the ultrasound screen.
   - Cite what happens: anatomical structures, probe motion, screen features,
-    artifacts, signs, or what the operator says.
+    artifacts, signs, or what the narration says.
   - Do NOT go beyond what the frames + narration support.
+
+WAIT_REASON writing rules (VERY IMPORTANT):
+  For each QA also write a `wait_reason`: one sentence explaining WHY, at
+  query_time t_q = {current_time:.0f}s, the question is NOT yet answerable
+  (i.e. the concrete missing evidence).
+  - It must name the SPECIFIC missing information: which on-screen structure
+    has not appeared yet, which probe maneuver has not happened yet, which
+    sign is not visible yet.
+  - It MUST correspond to the ANSWER: what is "missing" in wait_reason is
+    exactly the key evidence that later appears and enables the ANSWER.
+    (wait_reason = the absence; answer = the thing that later becomes present.)
+  - One concrete sentence. Do NOT write generic fillers like "not enough
+    information" or "more video is needed". Be specific and grounded.
+  Examples:
+    next_observation: "Lung sliding cannot be assessed yet because the probe
+      is still over the rib shadow and the pleural line is not centered."
+    next_action: "The patient is still being positioned, so the actual
+      probe-placement maneuver on the chest has not started."
 
 If for a given type NO valid (question, answer, answer_time) triple exists at
 this anchor -- e.g. the question would already be answerable from [SEEN_VIDEO],
@@ -212,7 +264,8 @@ Output STRICTLY a JSON array of 2 objects (no markdown fences, no extra text):
     "query_time": {current_time:.2f},
     "answer_time": <float in ({current_time:.2f}, {clip_end:.2f}]>,
     "question": "...",
-    "answer":   "<must describe an operator maneuver actually performed in [FUTURE_VIDEO]>",
+    "answer":   "<must describe a scanning maneuver actually performed in [FUTURE_VIDEO]>",
+    "wait_reason": "<one concrete sentence: the specific missing evidence at query_time; must correspond to the answer>",
     "evidence": "<1-2 sentences: which specific frames/narration between query_time and answer_time supply the key evidence, and why the question is NOT answerable from [SEEN_VIDEO] alone>"
   }},
   {{
@@ -221,6 +274,7 @@ Output STRICTLY a JSON array of 2 objects (no markdown fences, no extra text):
     "answer_time": <float in ({current_time:.2f}, {clip_end:.2f}]>,
     "question": "...",
     "answer":   "<must describe a visual feature actually visible on-screen in [FUTURE_VIDEO]>",
+    "wait_reason": "<one concrete sentence: the specific missing on-screen evidence at query_time; must correspond to the answer>",
     "evidence": "..."
   }}
 ]
@@ -302,6 +356,12 @@ def _validate_qa_entry(entry, query_time, clip_end):
     a = (entry.get("answer") or "").strip()
     if not q or not a:
         return False, "empty question or answer"
+
+    wr = (entry.get("wait_reason") or "").strip()
+    if not wr:
+        return False, "missing wait_reason"
+    if is_generic_wait_reason(wr):
+        return False, f"generic/short wait_reason: {wr[:60]!r}"
 
     try:
         at = float(entry["answer_time"])
@@ -437,9 +497,15 @@ def generate_streaming_qa(video_path, clip, ratio=0.5, *,
             "ratio": ratio,
             "question": entry["question"].strip(),
             "answer": entry["answer"].strip(),
+            "wait_reason": (entry.get("wait_reason") or "").strip(),
             "evidence": (entry.get("evidence") or "").strip(),
         }
         qa_pairs.append(qa)
+
+    # Keep only ONE QA per anchor (=> one QA per clip with the single 0.5
+    # anchor). If both slots are valid, prefer the first valid entry.
+    if len(qa_pairs) > MAX_QA_PER_ANCHOR:
+        qa_pairs = qa_pairs[:MAX_QA_PER_ANCHOR]
 
     if drop_reasons:
         for r in drop_reasons:

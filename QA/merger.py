@@ -47,7 +47,46 @@ from pathlib import Path
 
 
 DEFAULT_WINDOW_SEC = 30.0
+# Fallback WAIT target for old data / missing or low-quality wait_reason.
 WAIT_TARGET = "<WAIT> Not enough information yet. More video is needed."
+
+# Generic-phrase blacklist: if a wait_reason is empty / too short / generic,
+# we fall back to the fixed WAIT_TARGET instead of producing a low-quality
+# (and collapse-inducing) target. Mirrors QA/generator.is_generic_wait_reason.
+_MIN_WAIT_REASON_WORDS = 5
+_GENERIC_WAIT_PHRASES = [
+    "not enough information",
+    "more video is needed",
+    "more video needed",
+    "need more information",
+    "need more context",
+    "more context is needed",
+    "insufficient information",
+    "wait for more",
+]
+
+
+def _is_generic_wait(text):
+    t = (text or "").strip().lower()
+    if not t:
+        return True
+    if len(t.split()) < _MIN_WAIT_REASON_WORDS:
+        return True
+    return any(p in t for p in _GENERIC_WAIT_PHRASES)
+
+
+def _wait_target_for(qa):
+    """
+    Build the WAIT target for a streaming QA.
+
+    Uses "<WAIT> {wait_reason}" when the oracle supplied a specific,
+    non-generic reason (diversifies WAIT targets -> mitigates collapse).
+    Falls back to the fixed WAIT_TARGET for old data / missing reasons.
+    """
+    wr = (qa.get("wait_reason") or "").strip()
+    if wr and not _is_generic_wait(wr):
+        return f"<WAIT> {wr}"
+    return WAIT_TARGET
 
 
 # ============================================================================
@@ -247,6 +286,7 @@ def expand_training_samples(video_id, transcript_path, clips_path,
                 "query_time": query_time,
                 "answer_time": answer_time,
                 "evidence_window": qa.get('evidence_window'),
+                "wait_reason": qa.get('wait_reason', ''),
                 "topic": qa.get('topic', ''),
             }
 
@@ -258,7 +298,7 @@ def expand_training_samples(video_id, transcript_path, clips_path,
                 "clip_idx": qa['clip_idx'],
                 "video_window": [round(wait_a, 2), round(wait_b, 2)],
                 "question": qa['question'],
-                "target": WAIT_TARGET,
+                "target": _wait_target_for(qa),
                 "qa_type": qa['type'],
                 "meta": common_meta,
             })

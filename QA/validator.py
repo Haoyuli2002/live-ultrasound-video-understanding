@@ -66,6 +66,31 @@ BEFORE_WINDOW_SEC = 240.0   # cap on [clip_start, query_time], keep latter part
 EVIDENCE_WINDOW_SEC = None  # usually <60s naturally, keep uncapped
 AFTER_WINDOW_SEC = 10.0     # short tail after answer_time
 
+# wait_reason quality gate (local rule check, no extra API call).
+# A specific wait_reason diversifies WAIT targets; empty/generic ones would
+# recreate the collapse problem, so we fail such QA. Mirrors
+# QA/generator.is_generic_wait_reason.
+_MIN_WAIT_REASON_WORDS = 5
+_GENERIC_WAIT_PHRASES = [
+    "not enough information",
+    "more video is needed",
+    "more video needed",
+    "need more information",
+    "need more context",
+    "more context is needed",
+    "insufficient information",
+    "wait for more",
+]
+
+
+def _is_generic_wait_reason(text):
+    t = (text or "").strip().lower()
+    if not t:
+        return True
+    if len(t.split()) < _MIN_WAIT_REASON_WORDS:
+        return True
+    return any(p in t for p in _GENERIC_WAIT_PHRASES)
+
 
 VALIDATOR_PROMPT_TEMPLATE = """You are a strict validator for a streaming ultrasound QA benchmark.
 
@@ -393,6 +418,18 @@ def validate_streaming_qa_file(streaming_qa_path, video_path, output_path=None,
                 evidence_window_sec=evidence_window_sec,
                 after_window_sec=after_window_sec,
             )
+            # Local wait_reason quality gate: even if the VLM passes the QA,
+            # a missing/generic wait_reason makes the WAIT target collapse-prone,
+            # so we downgrade it to fail.
+            wr = (qa.get('wait_reason') or '').strip()
+            if validation.get('verdict') == 'pass' and _is_generic_wait_reason(wr):
+                validation['verdict'] = 'fail'
+                validation['reason'] = (
+                    (validation.get('reason') or '')
+                    + f" [validator note: wait_reason missing/generic "
+                      f"({wr[:60]!r}); downgraded to fail]"
+                )
+
             qa['validation'] = validation
             verdict = validation.get('verdict', 'fail')
             stats[verdict] = stats.get(verdict, 0) + 1
