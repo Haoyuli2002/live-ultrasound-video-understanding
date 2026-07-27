@@ -137,7 +137,12 @@ def generate_one(model, processor, *, frames, prev_context, device, max_new_toke
 def parse_args():
     parser = argparse.ArgumentParser(description="Pretrain (ASR caption) LoRA inference")
     parser.add_argument("--model-name", type=str, default="Qwen/Qwen3-VL-2B-Instruct")
-    parser.add_argument("--adapter-path", type=str, required=True)
+    parser.add_argument("--adapter-path", type=str, default=None,
+                        help="LoRA adapter dir from pretrain/train.py. Omit (or use "
+                             "--no-adapter) to run the raw base model as a baseline.")
+    parser.add_argument("--no-adapter", action="store_true",
+                        help="Run the untrained base model only (ignore --adapter-path). "
+                             "Useful to compare base vs pretrained outputs.")
     parser.add_argument("--eval-jsonl", type=str, required=True)
     parser.add_argument("--output", type=str, required=True)
 
@@ -175,18 +180,31 @@ def main():
 
     dtype = torch.bfloat16 if args.bf16 else (torch.float16 if args.fp16 else torch.float32)
 
+    use_adapter = bool(args.adapter_path) and not args.no_adapter
+
     print(f"[pretrain-infer] device={device} dtype={dtype}")
-    print(f"[pretrain-infer] loading processor from adapter: {args.adapter_path}")
-    try:
-        processor = AutoProcessor.from_pretrained(args.adapter_path, trust_remote_code=True)
-    except Exception:
+    print(f"[pretrain-infer] mode={'base+adapter' if use_adapter else 'BASE ONLY (untrained baseline)'}")
+
+    # Processor: prefer the adapter dir (it may carry an updated tokenizer),
+    # otherwise fall back to the base model.
+    processor = None
+    if use_adapter:
+        try:
+            processor = AutoProcessor.from_pretrained(args.adapter_path, trust_remote_code=True)
+        except Exception:
+            processor = None
+    if processor is None:
         processor = AutoProcessor.from_pretrained(args.model_name, trust_remote_code=True)
 
     print(f"[pretrain-infer] loading base model: {args.model_name}")
     base_model = load_base_model(args.model_name, dtype=dtype, device=device)
 
-    print(f"[pretrain-infer] loading LoRA adapter: {args.adapter_path}")
-    model = PeftModel.from_pretrained(base_model, args.adapter_path)
+    if use_adapter:
+        print(f"[pretrain-infer] loading LoRA adapter: {args.adapter_path}")
+        model = PeftModel.from_pretrained(base_model, args.adapter_path)
+    else:
+        print("[pretrain-infer] no adapter: running raw base model")
+        model = base_model
     model.to(device)
     model.eval()
 

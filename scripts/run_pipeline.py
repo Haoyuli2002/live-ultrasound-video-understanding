@@ -95,7 +95,7 @@ def main():
     else:
         method_label = 'histogram+LLM' if not args.no_llm_segment else 'histogram only'
         print(f"\n[Step 4] Video Segmentation ({method_label})")
-        from video_segmentation import compute_segment_visual_changes, segment_enhanced
+        from video_clipping import compute_segment_visual_changes, segment_enhanced
 
         with open(transcript_path) as f:
             asr_data = json.load(f)

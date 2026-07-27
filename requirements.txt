@@ -40,3 +40,8 @@ tensorboard>=2.14.0
 
 # ===== Video codec for Qwen VL video mode =====
 torchcodec>=0.1.0
+
+# ===== Default clipping backbone (qwen_embed visual-change detection) =====
+# Qwen/Qwen3-VL-Embedding-2B via sentence-transformers. Needs GPU to be fast;
+# if unavailable, video_clipping falls back to SSIM (OpenCV) automatically.
+sentence-transformers>=3.0.0

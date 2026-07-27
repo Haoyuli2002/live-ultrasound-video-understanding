@@ -92,13 +92,19 @@ transcript 格式：
 
 ### 3.2 Clipping（视频切片，超声友好、离线、无 LLM）
 
+- 核心实现：`scripts/video_clipping.py`（函数 `clip_video`）；wrapper：`QA/prepare/clipping.py`。
 - 也可单独运行：`python QA/prepare/clipping.py --video ... --output-dir QA/results`
 - 逻辑：
-  1. 视觉变化检测：固定时间网格（默认每 1.5s 一帧），SSIM 相似度（无 scikit-image 自动回退 framediff）；`similarity < scene_threshold(0.6)` 且相邻切点间隔 ≥ `min_scene_gap(3s)` 记为 scene change。
-  2. 句子边界：标点 `.?!` + 停顿 gap(0.8s) fallback + 全弱边界兜底。
+  1. **视觉变化检测**（固定时间网格，默认每 1.5s 一帧）。支持多种 `--visual-method`：
+     - **`qwen_embed`（默认）**：用 **torchcodec** 抽**原始彩色帧**（不经 OpenCV、不转灰度），过 **`Qwen/Qwen3-VL-Embedding-2B`**（与 SFT 基座 Qwen3-VL-2B 同源）得图像 embedding → L2 归一化 → 相邻帧**余弦相似度**；`similarity < scene_threshold`（默认 `0.85`）且间隔 ≥ `min_scene_gap(3s)` 记为 scene change。**需要 GPU**；缺 GPU / sentence-transformers / torchcodec 时自动回退 `ssim`。
+     - `ssim` / `framediff`：OpenCV 灰度网格 SSIM（默认阈值 `0.6`，无 scikit-image 回退 framediff）。
+     - `histogram`：legacy 逐 segment 直方图。
+  2. 句子边界：英文标点 `.?!` + 停顿 gap(0.8s) fallback + 全弱边界兜底。
   3. 对齐：视觉切点找最近句边界（`tolerance=5s`），找不到就放弃该切点（保句子完整）。
   4. 组装：`min_clip=30s`、`max_clip=240s`；短尾（< min_clip）合并到前一个 clip。
   5. 超长（> max_clip）按句边界细分。
+- 阈值调参：加 `--save-trace` 输出每个采样点的相似度，便于确定 `--scene-threshold`。
+- 相关参数：`--qwen-embed-model`（默认 `Qwen/Qwen3-VL-Embedding-2B`）、`--qwen-embed-device`（auto）、`--qwen-embed-batch`（16）。
 
 clips 格式（含 method / params / coverage_pct / 每 clip 的 start/end/duration/text/cut_reason）：
 
@@ -325,7 +331,7 @@ src/video_filter.py                     2. 过滤
 scripts/video_filter_vlm.py             2. 过滤
 QA/prepare/run_prepare.py               3. 数据准备（ASR + clipping 一键）
   QA/prepare/asr.py                     3. ASR（core: scripts/asr_pipeline.py）
-  QA/prepare/clipping.py                3. Clipping（core: scripts/video_segmentation.py, SSIM grid, no LLM）
+  QA/prepare/clipping.py                3. Clipping（core: scripts/video_clipping.py, 默认 qwen_embed, no LLM）
 pretrain/                               4-5. 预训练分支
   build_samples.py / dataset.py / collator.py / train.py / infer.py / video_sampling.py
 QA/run.py                               6. QA 生成一体化入口
