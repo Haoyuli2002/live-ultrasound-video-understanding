@@ -15,7 +15,6 @@ Pretrain Full V1 是当前 ultrasound video understanding pipeline 的第一个�
 ```
 
 也就是说，模型需要根据：
-
 1. 当前语音片段开始之前的一段视频画面；
 2. 前面已经发生过的 narration transcript；
 
@@ -109,10 +108,18 @@ ASR backend 使用 `faster-whisper`，模型是 `large-v3`。
 
 需要注意：
 
-- pretrain sample 不是由我们自己按标点或者句子切出来的。
-- sample 是基于 **ASR segment** 生成的。
+- Pretrain Full V1 当前使用的是 **ASR segment-level** 样本。
+- 也就是说，sample 是基于 Whisper/faster-whisper 的 ASR segment 生成的。
 - ASR segment 通常接近一句话或半句话，但边界由 Whisper/faster-whisper 根据语音和模型输出决定。
 - 因此，一个 target 可能是完整句子，也可能是半句话、短语或者一句话的延续。
+
+为了修复 segment 边界切断自然句的问题，`pretrain/build_samples.py` 现在也支持 **sentence-level** 样本构建模式：
+
+```bash
+--unit sentence
+```
+
+这个模式会把连续 ASR segments 合并到完整句子后再生成样本。
 
 当前 train ASR 状态：
 
@@ -124,6 +131,27 @@ train transcripts: 50
 
 ## 4. Pretrain Sample 生成逻辑
 
+`pretrain/build_samples.py` 现在支持两种样本粒度：
+
+```bash
+--unit segment
+--unit sentence
+```
+
+默认仍然是：
+
+```bash
+--unit segment
+```
+
+这样不会破坏已有命令和正在运行的 Pretrain Full V1 segment-level 实验。
+
+---
+
+### 4.1 Segment-level 样本
+
+segment-level 是当前 Pretrain Full V1 正在使用的逻辑。
+
 样本由下面命令生成：
 
 ```bash
@@ -132,7 +160,8 @@ python pretrain/build_samples.py \
   --output cluster_data/pretrain/train_pretrain_samples.jsonl \
   --window-sec 8 \
   --min-words 3 \
-  --context-max-chars 400
+  --context-max-chars 400 \
+  --unit segment
 ```
 
 对于每一个 ASR segment，builder 会尝试生成一个 pretrain sample。
@@ -189,6 +218,79 @@ Current transcript segment text
 
 ---
 
+### 4.2 Sentence-level 样本
+
+sentence-level 是新增逻辑，用于后续 `Pretrain_Full_V2_sentence`。
+
+构建命令：
+
+```bash
+python pretrain/build_samples.py \
+  --transcripts cluster_data/QA/train/transcripts \
+  --output cluster_data/pretrain/train_pretrain_sentence_samples.jsonl \
+  --window-sec 8 \
+  --min-words 3 \
+  --context-max-chars 400 \
+  --unit sentence
+```
+
+这个模式会顺序读取 ASR segments，并把相邻 segments 合并，直到形成完整句子。
+
+例如 segment-level 里可能出现：
+
+```text
+segment N:
+... Massachusetts General
+
+segment N+1:
+Hospital. In my previous tutorial ...
+```
+
+sentence-level 会合并成：
+
+```text
+... Massachusetts General Hospital.
+```
+
+sentence-level 的样本时间戳定义为：
+
+```text
+sentence_start = 组成该句子的第一个 segment.start
+sentence_end = 组成该句子的最后一个 segment.end
+video_window = [max(0, sentence_start - window_sec), sentence_start]
+prev_context = 前面的完整句子，上限 context_max_chars
+target = 当前完整句子
+```
+
+输出样本类型为：
+
+```text
+sample_type = pretrain_caption_sentence
+```
+
+新增 fallback 参数：
+
+```bash
+--sentence-max-words 80
+--sentence-max-duration 30
+```
+
+如果 ASR 长时间没有标点，则会在累计太长时强制切分，避免 target 过长。
+
+sentence-level 的优点：
+
+- target 更自然；
+- 避免自然句被 ASR segment 边界切断；
+- 更接近正常 narration/caption 训练。
+
+sentence-level 的缺点：
+
+- 样本数会少于 segment-level；
+- target 平均更长；
+- 完整句子可能跨多个 ASR segments，时间对齐会更粗一些。
+
+---
+
 ## 5. Sample Schema
 
 每一行 JSONL 是一个 pretrain sample。
@@ -209,7 +311,7 @@ Current transcript segment text
 
 | 字段 | 含义 |
 |---|---|
-| `sample_type` | 样本类型。当前阶段为 `pretrain_caption`。 |
+| `sample_type` | 样本类型。segment 模式为 `pretrain_caption`；sentence 模式为 `pretrain_caption_sentence`。 |
 | `video_id` | 视频 ID，通常是 `.mp4` 文件名去掉后缀。 |
 | `video_window` | 视觉输入使用的视频时间窗口，结束点是当前 ASR segment 的开始时间。 |
 | `prev_context` | 当前 segment 之前的 ASR 文本上下文。 |
@@ -571,12 +673,57 @@ local_checkpoints/qwen3vl_2b_sft_streaming_v2_waitreason/adapter_model.safetenso
 
 ---
 
-## 11. 下一步
+## 11. Sentence-level Builder 用法
 
-1. 使用 `scripts/transcode_videos_for_opencv.py` 将 OpenCV 无法读取的 train 视频批量转码成 H264。
-2. 验证 50 个 train 视频都能被 OpenCV 读取，即 `final_bad_count: 0`。
-3. 如有需要，对 eval 视频也运行同样的 OpenCV 可读性检查和 H264 转码。
-4. 重新启动 Pretrain Full V1 训练。
+新增的 sentence-level builder 可以用于后续实验：
+
+```bash
+python pretrain/build_samples.py \
+  --transcripts cluster_data/QA/train/transcripts \
+  --output cluster_data/pretrain/train_pretrain_sentence_samples.jsonl \
+  --window-sec 8 \
+  --min-words 3 \
+  --context-max-chars 400 \
+  --unit sentence \
+  --sentence-max-words 80 \
+  --sentence-max-duration 30
+```
+
+eval set:
+
+```bash
+python pretrain/build_samples.py \
+  --transcripts cluster_data/QA/eval/transcripts \
+  --output cluster_data/pretrain/eval_pretrain_sentence_samples.jsonl \
+  --window-sec 8 \
+  --min-words 3 \
+  --context-max-chars 400 \
+  --unit sentence \
+  --sentence-max-words 80 \
+  --sentence-max-duration 30
+```
+
+建议后续命名为：
+
+```text
+Pretrain_Full_V2_sentence
+```
+
+这样可以和当前正在跑的 segment-level 版本区分：
+
+```text
+Pretrain_Full_V1_segment
+Pretrain_Full_V2_sentence
+```
+
+---
+
+## 12. 下一步
+
+1. 当前 Pretrain Full V1 segment-level 训练继续跑完。
+2. 使用 `scripts/transcode_videos_for_opencv.py` 确保 train/eval 视频都能被 OpenCV 读取。
+3. 如有需要，基于 sentence-level builder 生成 `train_pretrain_sentence_samples.jsonl`。
+4. 训练 `Pretrain_Full_V2_sentence`。
 5. 如果 eval ASR 还没完成，补完 eval ASR。
 6. 构建 eval pretrain samples。
 7. 在 eval20 上分别跑 base 和 LoRA inference。

@@ -13,12 +13,21 @@ Input:
       ...
     }
 
-Task (whole-sentence completion):
-  For each ASR segment (one narration sentence):
-    current_time  = segment.start
+Supported sample units:
+  1. segment:
+     One sample per qualified ASR segment.
+
+  2. sentence:
+     Consecutive ASR segments are merged until a complete sentence is formed.
+     This avoids targets such as "... Massachusetts General" followed by
+     "Hospital. ..." being split across two samples.
+
+Task:
+  For each unit (segment or sentence):
+    current_time  = unit.start
     video_window  = [max(0, start - window_sec), start]   # last frames before it
-    prev_context  = concatenation of previous sentences (optional, truncated)
-    target        = segment.text                           # continue this sentence
+    prev_context  = concatenation of previous units (optional, truncated)
+    target        = unit.text                             # continue this narration unit
 
 Output:
   pretrain_samples.jsonl, one sample per line:
@@ -29,7 +38,7 @@ Output:
       "video_window": [start_minus, start],
       "prev_context": "...",
       "target": "...",
-      "meta": {"segment_idx": i, "seg_start": ..., "seg_end": ...}
+      "meta": {"unit": "segment", "segment_idx": i, "seg_start": ..., "seg_end": ...}
     }
 
 Example:
@@ -38,7 +47,8 @@ Example:
     --output pretrain/data/pretrain_samples.jsonl \
     --window-sec 8 \
     --min-words 3 \
-    --context-max-chars 400
+    --context-max-chars 400 \
+    --unit sentence
 """
 
 from __future__ import annotations
@@ -51,29 +61,45 @@ from typing import Any, Dict, List
 
 
 _BRACKET_RE = re.compile(r"[\[\(](music|applause|laughter|inaudible|noise)[\]\)]", re.IGNORECASE)
+_SENTENCE_END_RE = re.compile(r"[.!?。？！][\"'”’)\]]*$")
 
 
-def is_bad_text(text: str, min_words: int) -> bool:
-    t = (text or "").strip()
+def normalize_text(text: str) -> str:
+    return re.sub(r"\s+", " ", (text or "").strip())
+
+
+def is_noise_text(text: str) -> bool:
+    t = normalize_text(text)
     if not t:
         return True
     if _BRACKET_RE.search(t):
         return True
     if "[" in t and "]" in t and len(t) < 30:
         return True
+    return False
+
+
+def is_bad_text(text: str, min_words: int) -> bool:
+    t = normalize_text(text)
+    if is_noise_text(t):
+        return True
     if len(t.split()) < min_words:
         return True
     return False
 
 
-def build_prev_context(segments: List[Dict[str, Any]], idx: int, max_chars: int) -> str:
+def ends_sentence(text: str) -> bool:
+    return bool(_SENTENCE_END_RE.search(normalize_text(text)))
+
+
+def build_prev_context(units: List[Dict[str, Any]], idx: int, max_chars: int) -> str:
     if max_chars <= 0 or idx <= 0:
         return ""
     parts = []
     total = 0
-    # Walk backward from previous sentence, then reverse for chronological order.
+    # Walk backward from previous unit, then reverse for chronological order.
     for k in range(idx - 1, -1, -1):
-        txt = (segments[k].get("text") or "").strip()
+        txt = normalize_text(units[k].get("text") or "")
         if not txt:
             continue
         if total + len(txt) + 1 > max_chars:
@@ -84,7 +110,90 @@ def build_prev_context(segments: List[Dict[str, Any]], idx: int, max_chars: int)
     return " ".join(parts).strip()
 
 
-def build_samples_for_video(
+def build_sentence_units(
+    segments: List[Dict[str, Any]],
+    *,
+    min_words: int,
+    sentence_max_words: int,
+    sentence_max_duration: float,
+) -> List[Dict[str, Any]]:
+    """Merge ASR segments into sentence-like units.
+
+    We keep ASR timing by assigning the sentence start to the first contributing
+    segment and the sentence end to the last contributing segment. If ASR lacks
+    punctuation, a fallback split is triggered by max words or max duration.
+    """
+    units: List[Dict[str, Any]] = []
+    cur_parts: List[str] = []
+    cur_start: float | None = None
+    cur_end: float | None = None
+    cur_segment_start_idx: int | None = None
+    cur_segment_end_idx: int | None = None
+
+    def flush(force: bool = False) -> None:
+        nonlocal cur_parts, cur_start, cur_end, cur_segment_start_idx, cur_segment_end_idx
+
+        text = normalize_text(" ".join(cur_parts))
+        if not text:
+            cur_parts = []
+            cur_start = None
+            cur_end = None
+            cur_segment_start_idx = None
+            cur_segment_end_idx = None
+            return
+
+        if force or not is_bad_text(text, min_words):
+            units.append({
+                "text": text,
+                "start": float(cur_start or 0.0),
+                "end": float(cur_end if cur_end is not None else (cur_start or 0.0)),
+                "segment_start_idx": cur_segment_start_idx,
+                "segment_end_idx": cur_segment_end_idx,
+            })
+
+        cur_parts = []
+        cur_start = None
+        cur_end = None
+        cur_segment_start_idx = None
+        cur_segment_end_idx = None
+
+    for idx, seg in enumerate(segments):
+        text = normalize_text(seg.get("text") or "")
+        if is_noise_text(text):
+            continue
+
+        seg_start = float(seg.get("start", 0.0))
+        seg_end = float(seg.get("end", seg_start))
+
+        if cur_start is None:
+            cur_start = seg_start
+            cur_segment_start_idx = idx
+
+        cur_parts.append(text)
+        cur_end = seg_end
+        cur_segment_end_idx = idx
+
+        merged = normalize_text(" ".join(cur_parts))
+        word_count = len(merged.split())
+        duration = float(cur_end - (cur_start or 0.0))
+
+        should_flush = (
+            ends_sentence(merged)
+            or (sentence_max_words > 0 and word_count >= sentence_max_words)
+            or (sentence_max_duration > 0 and duration >= sentence_max_duration)
+        )
+
+        if should_flush:
+            flush(force=False)
+
+    # Keep the final leftover only if it is long enough to be useful.
+    if cur_parts:
+        flush(force=False)
+
+    return units
+
+
+def build_segment_samples_for_video(
     transcript: Dict[str, Any],
     *,
     window_sec: float,
@@ -97,7 +206,7 @@ def build_samples_for_video(
     samples: List[Dict[str, Any]] = []
 
     for idx, seg in enumerate(segments):
-        text = (seg.get("text") or "").strip()
+        text = normalize_text(seg.get("text") or "")
         if is_bad_text(text, min_words):
             continue
 
@@ -116,6 +225,7 @@ def build_samples_for_video(
             "prev_context": prev_context,
             "target": text,
             "meta": {
+                "unit": "segment",
                 "segment_idx": idx,
                 "seg_start": round(seg_start, 2),
                 "seg_end": round(seg_end, 2),
@@ -125,6 +235,93 @@ def build_samples_for_video(
     return samples
 
 
+def build_sentence_samples_for_video(
+    transcript: Dict[str, Any],
+    *,
+    window_sec: float,
+    min_words: int,
+    context_max_chars: int,
+    use_context: bool,
+    sentence_max_words: int,
+    sentence_max_duration: float,
+) -> List[Dict[str, Any]]:
+    video_id = transcript.get("video_id")
+    segments = transcript.get("segments", [])
+
+    sentence_units = build_sentence_units(
+        segments,
+        min_words=min_words,
+        sentence_max_words=sentence_max_words,
+        sentence_max_duration=sentence_max_duration,
+    )
+
+    samples: List[Dict[str, Any]] = []
+    for idx, unit in enumerate(sentence_units):
+        text = normalize_text(unit.get("text") or "")
+        if is_bad_text(text, min_words):
+            continue
+
+        sent_start = float(unit.get("start", 0.0))
+        sent_end = float(unit.get("end", sent_start))
+        window_start = max(0.0, sent_start - float(window_sec))
+
+        prev_context = ""
+        if use_context:
+            prev_context = build_prev_context(sentence_units, idx, context_max_chars)
+
+        samples.append({
+            "sample_type": "pretrain_caption_sentence",
+            "video_id": video_id,
+            "video_window": [round(window_start, 2), round(sent_start, 2)],
+            "prev_context": prev_context,
+            "target": text,
+            "meta": {
+                "unit": "sentence",
+                "sentence_idx": idx,
+                "sentence_start": round(sent_start, 2),
+                "sentence_end": round(sent_end, 2),
+                "segment_start_idx": unit.get("segment_start_idx"),
+                "segment_end_idx": unit.get("segment_end_idx"),
+            },
+        })
+
+    return samples
+
+
+def build_samples_for_video(
+    transcript: Dict[str, Any],
+    *,
+    window_sec: float,
+    min_words: int,
+    context_max_chars: int,
+    use_context: bool,
+    unit: str,
+    sentence_max_words: int,
+    sentence_max_duration: float,
+) -> List[Dict[str, Any]]:
+    if unit == "segment":
+        return build_segment_samples_for_video(
+            transcript,
+            window_sec=window_sec,
+            min_words=min_words,
+            context_max_chars=context_max_chars,
+            use_context=use_context,
+        )
+
+    if unit == "sentence":
+        return build_sentence_samples_for_video(
+            transcript,
+            window_sec=window_sec,
+            min_words=min_words,
+            context_max_chars=context_max_chars,
+            use_context=use_context,
+            sentence_max_words=sentence_max_words,
+            sentence_max_duration=sentence_max_duration,
+        )
+
+    raise ValueError(f"Unsupported unit: {unit}")
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Build ultrasound ASR caption-completion pretraining samples")
     parser.add_argument("--transcripts", type=str, required=True,
@@ -132,15 +329,21 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--output", type=str, required=True,
                         help="Output jsonl path.")
     parser.add_argument("--window-sec", type=float, default=8.0,
-                        help="Seconds of frames before segment.start to look at.")
+                        help="Seconds of frames before unit.start to look at.")
     parser.add_argument("--min-words", type=int, default=3,
-                        help="Skip narration sentences shorter than this many words.")
+                        help="Skip narration units shorter than this many words.")
     parser.add_argument("--context-max-chars", type=int, default=400,
                         help="Max characters of previous narration used as prev_context.")
     parser.add_argument("--no-context", action="store_true",
                         help="Disable prev_context (pure visual completion).")
     parser.add_argument("--limit-videos", type=int, default=None,
                         help="Only process this many transcript files.")
+    parser.add_argument("--unit", choices=["segment", "sentence"], default="segment",
+                        help="Sample unit. segment = one ASR segment per sample; sentence = merge ASR segments into sentence-like units.")
+    parser.add_argument("--sentence-max-words", type=int, default=80,
+                        help="Sentence mode fallback: force a split after this many accumulated words. Use <=0 to disable.")
+    parser.add_argument("--sentence-max-duration", type=float, default=30.0,
+                        help="Sentence mode fallback: force a split after this many seconds. Use <=0 to disable.")
     return parser.parse_args()
 
 
@@ -180,6 +383,9 @@ def main() -> None:
                 min_words=args.min_words,
                 context_max_chars=args.context_max_chars,
                 use_context=use_context,
+                unit=args.unit,
+                sentence_max_words=args.sentence_max_words,
+                sentence_max_duration=args.sentence_max_duration,
             )
 
             for s in samples:
@@ -191,6 +397,7 @@ def main() -> None:
             print(f"[build] {vid}: {len(samples)} samples")
 
     print("=" * 60)
+    print(f"[build] unit: {args.unit}")
     print(f"[build] videos: {len(per_video_counts)}")
     print(f"[build] total samples: {total_samples}")
     print(f"[build] output: {out_path}")
