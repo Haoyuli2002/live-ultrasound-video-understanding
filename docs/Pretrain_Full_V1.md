@@ -271,11 +271,13 @@ sample_type = pretrain_caption_sentence
 新增 fallback 参数：
 
 ```bash
---sentence-max-words 80
---sentence-max-duration 30
+--sentence-max-words 40
+--sentence-max-duration 15
 ```
 
-如果 ASR 长时间没有标点，则会在累计太长时强制切分，避免 target 过长。
+如果 ASR 长时间没有标点，则会在累计太长时强制切分，避免 target 过长。默认值从最初的 `80 words / 30 seconds` 收紧到 `40 words / 15 seconds`，以减少过长 target。
+
+此外，`prev_context` 也做了优化：如果前一个完整句子超过 `--context-max-chars`，不会再整个丢弃，而是保留最近的尾部上下文。这可以避免 sentence-level 样本中大量 `prev_context` 为空。
 
 sentence-level 的优点：
 
@@ -685,8 +687,8 @@ python pretrain/build_samples.py \
   --min-words 3 \
   --context-max-chars 400 \
   --unit sentence \
-  --sentence-max-words 80 \
-  --sentence-max-duration 30
+  --sentence-max-words 40 \
+  --sentence-max-duration 15
 ```
 
 eval set:
@@ -699,8 +701,8 @@ python pretrain/build_samples.py \
   --min-words 3 \
   --context-max-chars 400 \
   --unit sentence \
-  --sentence-max-words 80 \
-  --sentence-max-duration 30
+  --sentence-max-words 40 \
+  --sentence-max-duration 15
 ```
 
 建议后续命名为：

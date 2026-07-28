@@ -93,21 +93,30 @@ def ends_sentence(text: str) -> bool:
 
 
 def build_prev_context(units: List[Dict[str, Any]], idx: int, max_chars: int) -> str:
+    """Build previous-unit context with tail truncation.
+
+    The previous implementation dropped an entire previous unit when that unit
+    was longer than ``max_chars``. Sentence-level samples often have long
+    previous sentences, so that behavior produced empty ``prev_context`` fields.
+    This implementation always preserves the most recent context by returning
+    the final ``max_chars`` characters of the accumulated previous text.
+    """
     if max_chars <= 0 or idx <= 0:
         return ""
+
     parts = []
-    total = 0
     # Walk backward from previous unit, then reverse for chronological order.
     for k in range(idx - 1, -1, -1):
         txt = normalize_text(units[k].get("text") or "")
         if not txt:
             continue
-        if total + len(txt) + 1 > max_chars:
-            break
         parts.append(txt)
-        total += len(txt) + 1
-    parts.reverse()
-    return " ".join(parts).strip()
+
+        candidate = " ".join(reversed(parts)).strip()
+        if len(candidate) >= max_chars:
+            return candidate[-max_chars:].lstrip()
+
+    return " ".join(reversed(parts)).strip()
 
 
 def build_sentence_units(
@@ -340,9 +349,9 @@ def parse_args() -> argparse.Namespace:
                         help="Only process this many transcript files.")
     parser.add_argument("--unit", choices=["segment", "sentence"], default="segment",
                         help="Sample unit. segment = one ASR segment per sample; sentence = merge ASR segments into sentence-like units.")
-    parser.add_argument("--sentence-max-words", type=int, default=80,
+    parser.add_argument("--sentence-max-words", type=int, default=40,
                         help="Sentence mode fallback: force a split after this many accumulated words. Use <=0 to disable.")
-    parser.add_argument("--sentence-max-duration", type=float, default=30.0,
+    parser.add_argument("--sentence-max-duration", type=float, default=15.0,
                         help="Sentence mode fallback: force a split after this many seconds. Use <=0 to disable.")
     return parser.parse_args()
 
