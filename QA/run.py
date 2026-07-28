@@ -55,6 +55,8 @@ from merger import (  # noqa: E402
 )
 
 import json
+import math
+import random
 
 
 def _write_jsonl(path, records, overwrite=True):
@@ -64,6 +66,58 @@ def _write_jsonl(path, records, overwrite=True):
     with open(path, mode, encoding='utf-8') as f:
         for r in records:
             f.write(json.dumps(r, ensure_ascii=False) + "\n")
+
+
+def _write_sampled_streaming_qa_file(
+    streaming_qa_path,
+    sampled_path,
+    *,
+    sample_rate=0.1,
+    max_qa=20,
+    seed=42,
+):
+    """
+    Create a sampled streaming-QA JSON for validation audit.
+
+    The returned file has the same schema as generator output, but contains
+    only the sampled QA entries. Merger should still use the raw full file
+    when validation_mode='sample'.
+    """
+    streaming_qa_path = Path(streaming_qa_path)
+    sampled_path = Path(sampled_path)
+    with open(streaming_qa_path, encoding="utf-8") as f:
+        data = json.load(f)
+
+    qa = list(data.get("streaming_qa", []))
+    n = len(qa)
+    if n == 0:
+        sampled = []
+        indices = []
+    else:
+        k = max(1, int(math.ceil(n * float(sample_rate or 0.0))))
+        if max_qa is not None and max_qa > 0:
+            k = min(k, int(max_qa))
+        k = min(k, n)
+        rng = random.Random(seed)
+        indices = sorted(rng.sample(range(n), k))
+        sampled = [qa[i] for i in indices]
+
+    sampled_data = {
+        **data,
+        "validation_mode": "sample",
+        "sample_rate": sample_rate,
+        "sample_max_qa": max_qa,
+        "sample_seed": seed,
+        "sampled_indices": indices,
+        "num_streaming_qa_raw": n,
+        "num_streaming_qa": len(sampled),
+        "streaming_qa": sampled,
+    }
+
+    sampled_path.parent.mkdir(parents=True, exist_ok=True)
+    with open(sampled_path, "w", encoding="utf-8") as f:
+        json.dump(sampled_data, f, ensure_ascii=False, indent=2)
+    return sampled_data
 
 
 def run(video_path,
@@ -83,6 +137,10 @@ def run(video_path,
         after_window_sec=AFTER_WINDOW_SEC,
         drop_failed=True,
         max_qa=None,
+        validation_mode="all",
+        validation_sample_rate=0.1,
+        validation_max_qa=20,
+        validation_sample_seed=42,
         window_sec=DEFAULT_WINDOW_SEC,
         expand_wait_answer=False,
         skip_offline=False,
@@ -115,6 +173,8 @@ def run(video_path,
 
     streaming_qa_path = out_dir / f"{video_id}_streaming_qa.json"
     streaming_qa_validated_path = out_dir / f"{video_id}_streaming_qa_validated.json"
+    streaming_qa_validation_sample_path = out_dir / f"{video_id}_streaming_qa_validation_sample.json"
+    streaming_qa_validation_audit_path = out_dir / f"{video_id}_streaming_qa_validation_audit.json"
     merged_record_path = out_dir / f"{video_id}.jsonl"
     training_samples_path = out_dir / f"{video_id}_training_samples.jsonl"
 
@@ -126,7 +186,9 @@ def run(video_path,
     print(f"  transcript      : {transcript_path}")
     print(f"  offline QA (new): {new_offline_qa_path}")
     print(f"  streaming QA    : {streaming_qa_path}")
+    print(f"  validation mode : {validation_mode}")
     print(f"  validated       : {streaming_qa_validated_path}")
+    print(f"  validation audit: {streaming_qa_validation_audit_path if validation_mode == 'sample' else '(off)'}")
     print(f"  merged record   : {merged_record_path}")
     print(f"  training samples: {training_samples_path if expand_wait_answer else '(off)'}")
 
@@ -180,21 +242,60 @@ def run(video_path,
     # -----------------------------------------------------------------------
     # Step 2: validator
     # -----------------------------------------------------------------------
-    if skip_validation and streaming_qa_validated_path.exists():
-        print(f"\n[step 2] --skip-validation and {streaming_qa_validated_path} exists, skipping.")
-    else:
+    validation_mode = (validation_mode or "all").lower()
+    if skip_validation:
+        validation_mode = "none"
+
+    if validation_mode not in {"all", "sample", "none"}:
+        raise ValueError(f"Unknown validation_mode={validation_mode!r}; expected all|sample|none")
+
+    if validation_mode == "all":
+        if skip_validation and streaming_qa_validated_path.exists():
+            print(f"\n[step 2] --skip-validation and {streaming_qa_validated_path} exists, skipping.")
+        else:
+            validate_streaming_qa_file(
+                str(streaming_qa_path),
+                str(video_path),
+                output_path=str(streaming_qa_validated_path),
+                api_key=api_key,
+                model=model,
+                drop_failed=drop_failed,
+                before_window_sec=before_window_sec,
+                evidence_window_sec=evidence_window_sec,
+                after_window_sec=after_window_sec,
+                max_qa=max_qa,
+            )
+        merge_streaming_qa_path = streaming_qa_validated_path
+    elif validation_mode == "sample":
+        print("\n[step 2] validation-mode=sample -> validate sampled QA for audit only; merger uses raw streaming QA")
+        sampled = _write_sampled_streaming_qa_file(
+            streaming_qa_path,
+            streaming_qa_validation_sample_path,
+            sample_rate=validation_sample_rate,
+            max_qa=validation_max_qa,
+            seed=validation_sample_seed,
+        )
+        print(
+            f"  sampled {sampled.get('num_streaming_qa')} / "
+            f"{sampled.get('num_streaming_qa_raw')} streaming QA -> "
+            f"{streaming_qa_validation_sample_path}"
+        )
         validate_streaming_qa_file(
-            str(streaming_qa_path),
+            str(streaming_qa_validation_sample_path),
             str(video_path),
-            output_path=str(streaming_qa_validated_path),
+            output_path=str(streaming_qa_validation_audit_path),
             api_key=api_key,
             model=model,
-            drop_failed=drop_failed,
+            drop_failed=False,
             before_window_sec=before_window_sec,
             evidence_window_sec=evidence_window_sec,
             after_window_sec=after_window_sec,
-            max_qa=max_qa,
+            max_qa=None,
         )
+        merge_streaming_qa_path = streaming_qa_path
+    else:
+        print("\n[step 2] validation-mode=none -> skip VLM validator; merger uses raw streaming QA")
+        merge_streaming_qa_path = streaming_qa_path
 
     # -----------------------------------------------------------------------
     # Step 3: merger
@@ -209,7 +310,7 @@ def run(video_path,
         str(transcript_path),
         str(clips_path),
         offline_qa_path=str(offline_qa_path) if offline_qa_path else None,
-        streaming_qa_path=str(streaming_qa_validated_path),
+        streaming_qa_path=str(merge_streaming_qa_path),
     )
     _write_jsonl(merged_record_path, [record], overwrite=True)
     print(f"  wrote per-video record: {merged_record_path}")
@@ -222,7 +323,7 @@ def run(video_path,
             str(transcript_path),
             str(clips_path),
             offline_qa_path=str(offline_qa_path) if offline_qa_path else None,
-            streaming_qa_path=str(streaming_qa_validated_path),
+            streaming_qa_path=str(merge_streaming_qa_path),
             window_sec=window_sec,
         )
         _write_jsonl(training_samples_path, samples, overwrite=True)
@@ -266,7 +367,18 @@ def main():
     parser.add_argument("--keep-failed", action="store_true",
                         help="Keep failed streaming QA in validated output")
     parser.add_argument("--max-qa", type=int, default=None,
-                        help="Cap validator to first N QA (smoke test)")
+                        help="Cap validator to first N QA (smoke test; validation-mode=all)")
+    parser.add_argument("--validation-mode", type=str, default="all",
+                        choices=["all", "sample", "none"],
+                        help="Validation policy: all=validate every streaming QA and merge validated output; "
+                             "sample=validate a sample for audit but merge raw output; "
+                             "none=skip VLM validation and merge raw output.")
+    parser.add_argument("--validation-sample-rate", type=float, default=0.1,
+                        help="For --validation-mode sample: fraction of streaming QA to audit.")
+    parser.add_argument("--validation-max-qa", type=int, default=20,
+                        help="For --validation-mode sample: maximum sampled QA to audit.")
+    parser.add_argument("--validation-sample-seed", type=int, default=42,
+                        help="For --validation-mode sample: deterministic sampling seed.")
 
     parser.add_argument("--expand-wait-answer", action="store_true",
                         help="Also emit WAIT/ANSWER training samples")
@@ -312,6 +424,10 @@ def main():
         after_window_sec=after_w,
         drop_failed=not args.keep_failed,
         max_qa=args.max_qa,
+        validation_mode=args.validation_mode,
+        validation_sample_rate=args.validation_sample_rate,
+        validation_max_qa=args.validation_max_qa,
+        validation_sample_seed=args.validation_sample_seed,
         window_sec=args.window_sec,
         expand_wait_answer=args.expand_wait_answer,
         skip_offline=args.skip_offline,

@@ -243,6 +243,21 @@ def make_prediction_record(idx: int, sample: Dict[str, Any], prediction: str) ->
     }
 
 
+def print_record_summary(record: Dict[str, Any]) -> None:
+    """Match QA/eval/infer_qwen_lora.py per-sample logging format."""
+    print("-" * 80)
+    print(
+        f"[eval] idx={record['idx']} "
+        f"sample_type={record.get('sample_type')} "
+        f"qa_type={record.get('qa_type')} "
+        f"gt={record.get('gt_label')} pred={record.get('pred_label')} "
+        f"correct={record.get('correct_answerability')}"
+    )
+    print(f"[eval] question: {record.get('question')}")
+    print(f"[eval] target: {record.get('target')}")
+    print(f"[eval] prediction: {record.get('prediction')}")
+
+
 def parse_args():
     parser = argparse.ArgumentParser(description="Run raw Qwen-VL inference on QA samples")
     parser.add_argument("--model-name", type=str, default="Qwen/Qwen3-VL-2B-Instruct")
@@ -305,10 +320,14 @@ def main():
 
     print(f"[eval] samples={len(dataset)} output={out_path}")
 
+    n_correct = 0
+    n_total = 0
+    label_counts: Dict[str, int] = {}
+
     with out_path.open("w", encoding="utf-8") as f:
         for idx in range(len(dataset)):
             sample = dataset[idx]
-            print(f"[eval] {idx+1}/{len(dataset)} {sample.get('sample_type')} {sample.get('qa_type')}")
+            print(f"[eval] {idx + 1}/{len(dataset)} {sample.get('sample_type')} {sample.get('qa_type')}")
             try:
                 pred = model_generate_one(
                     model,
@@ -337,10 +356,21 @@ def main():
                 }
                 print(f"[eval] ERROR sample {idx}: {rec['error']}")
 
+            print_record_summary(rec)
+
+            n_total += 1
+            n_correct += int(bool(rec.get("correct_answerability")))
+            pred_label = rec.get("pred_label", "OTHER")
+            label_counts[pred_label] = label_counts.get(pred_label, 0) + 1
+
             f.write(json.dumps(rec, ensure_ascii=False) + "\n")
             f.flush()
 
+    acc = n_correct / n_total if n_total else 0.0
+    print("=" * 80)
     print(f"[eval] wrote {out_path}")
+    print(f"[eval] answerability accuracy: {n_correct}/{n_total} = {acc:.4f}")
+    print(f"[eval] pred label counts: {label_counts}")
 
 
 if __name__ == "__main__":

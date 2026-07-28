@@ -217,15 +217,31 @@ python QA/run.py \
 
 ### 6.3 校验 — `QA/validator.py`
 
-- 三条硬约束 + VLM 校验 QA 质量/格式。
+- 三条硬约束 + VLM 校验 QA 质量/格式：
+  1. `question_no_leak`：问题不能泄露 future 信息。
+  2. `not_answerable_at_query_time`：`query_time` 时证据不足。
+  3. `answerable_at_answer_time`：`answer_time` 时证据充分。
 - **本地 `wait_reason` 质量**（无额外 API 调用）：若 `wait_reason` 缺失 / 太短 / 通用，也强制 downgrade 成 `fail` 并附注说明（黑名单与 generator 一致）。
-- `--keep-failed` 保留失败样本；默认丢弃。
+- `QA/run.py` 支持三种 validation mode：
+  - `--validation-mode all`：全量 VLM validation，并用 validated streaming QA 进入 merger。适合小规模调试 / eval set。
+  - `--validation-mode sample`：只抽样 validation，产出 audit 文件；训练数据 merge 使用 raw streaming QA。适合 train set 批量生成时控制成本。
+  - `--validation-mode none`：完全跳过 VLM validation，直接 merge raw streaming QA。适合 generator 质量已稳定后的大规模 train generation。
+- 抽样参数：
+  - `--validation-sample-rate 0.1`
+  - `--validation-max-qa 20`
+  - `--validation-sample-seed 42`
+- `--keep-failed` 只对 `validation-mode all` 的 validated 输出有意义；默认丢弃 failed QA。
 
-**产物**：`QA/results/{id}_streaming_qa_validated.json`
+**产物**：
+- `all`：`QA/results/{id}_streaming_qa_validated.json`
+- `sample`：`QA/results/{id}_streaming_qa_validation_sample.json` + `QA/results/{id}_streaming_qa_validation_audit.json`
+- `none`：不生成 validation 产物
 
 ### 6.4 合并 / 展开 — `QA/merger.py`
 
-- 合并 offline + streaming（validated），产出 per-video 记录 `{id}.jsonl`。
+- 合并 offline + streaming，产出 per-video 记录 `{id}.jsonl`。
+  - `validation-mode all`：使用 validated streaming QA。
+  - `validation-mode sample/none`：使用 raw streaming QA。
 - `--expand-wait-answer` 展开成 WAIT/ANSWER 训练样本。
 - **WAIT 目标多样化**：`_wait_target_for(qa)` 在 `wait_reason` 具体且非通用时用 `"<WAIT> {wait_reason}"`（多样化 WAIT 目标，缓解坍塌）；否则回退固定 `WAIT_TARGET = "<WAIT> Not enough information yet. More video is needed."`（兼容老数据）。
 
