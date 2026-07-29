@@ -32,6 +32,7 @@ os.environ.setdefault("USE_FLAX", "0")
 
 import argparse
 from pathlib import Path
+import re
 
 import torch
 from transformers import (
@@ -168,6 +169,28 @@ def build_lora_model(args, model):
     return model
 
 
+def find_latest_checkpoint(output_dir: str | Path) -> str | None:
+    """Return the latest checkpoint-* directory in output_dir, if any."""
+    out_dir = Path(output_dir)
+    if not out_dir.exists():
+        return None
+
+    candidates = []
+    for path in out_dir.glob("checkpoint-*"):
+        if not path.is_dir():
+            continue
+        match = re.match(r"checkpoint-(\d+)$", path.name)
+        if not match:
+            continue
+        candidates.append((int(match.group(1)), path))
+
+    if not candidates:
+        return None
+
+    candidates.sort(key=lambda x: x[0])
+    return str(candidates[-1][1])
+
+
 def parse_args():
     parser = argparse.ArgumentParser(description="Qwen3-VL LoRA pretraining (ASR caption completion)")
     parser.add_argument("--model-name", type=str, default="Qwen/Qwen3-VL-2B-Instruct")
@@ -215,6 +238,16 @@ def parse_args():
     parser.add_argument("--early-stop-patience", type=int, default=3)
     parser.add_argument("--early-stop-min-delta", type=float, default=0.001)
     parser.add_argument("--disable-early-stop", action="store_true")
+
+    parser.add_argument(
+        "--resume-from-checkpoint",
+        type=str,
+        default=None,
+        help=(
+            "Resume training from a checkpoint path, or use 'auto' to resume from "
+            "the latest checkpoint-* directory under --output-dir."
+        ),
+    )
 
     return parser.parse_args()
 
@@ -327,7 +360,22 @@ def main():
         callbacks=callbacks,
     )
 
-    trainer.train()
+    resume_checkpoint = None
+    if args.resume_from_checkpoint:
+        if args.resume_from_checkpoint.lower() == "auto":
+            resume_checkpoint = find_latest_checkpoint(args.output_dir)
+            if resume_checkpoint is None:
+                print(f"[pretrain] No checkpoint found under {args.output_dir}; starting from scratch.")
+        else:
+            resume_checkpoint = args.resume_from_checkpoint
+            if not Path(resume_checkpoint).exists():
+                raise FileNotFoundError(f"resume checkpoint not found: {resume_checkpoint}")
+
+    if resume_checkpoint:
+        print(f"[pretrain] Resuming training from checkpoint: {resume_checkpoint}")
+        trainer.train(resume_from_checkpoint=resume_checkpoint)
+    else:
+        trainer.train()
 
     out_dir = Path(args.output_dir)
     out_dir.mkdir(parents=True, exist_ok=True)

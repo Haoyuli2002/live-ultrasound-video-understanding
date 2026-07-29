@@ -28,7 +28,7 @@ import json
 import os
 import sys
 from pathlib import Path
-from typing import Any, Dict
+from typing import Any, Dict, Set
 
 
 os.environ.setdefault("TRANSFORMERS_NO_TF", "1")
@@ -38,6 +38,11 @@ os.environ.setdefault("USE_FLAX", "0")
 
 import torch  # noqa: E402
 from transformers import AutoProcessor  # noqa: E402
+
+try:
+    from tqdm.auto import tqdm  # noqa: E402
+except Exception:  # pragma: no cover - tqdm should normally be installed with transformers
+    tqdm = None
 
 try:
     from transformers import AutoModelForImageTextToText  # noqa: E402
@@ -134,6 +139,28 @@ def generate_one(model, processor, *, frames, prev_context, device, max_new_toke
     return decoded.strip()
 
 
+def load_completed_indices(output_path: Path) -> Set[int]:
+    completed: Set[int] = set()
+    if not output_path.exists():
+        return completed
+
+    with output_path.open("r", encoding="utf-8") as f:
+        for line_no, line in enumerate(f, 1):
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                rec = json.loads(line)
+            except Exception as e:
+                print(f"[pretrain-infer] WARNING: skip malformed output line {line_no}: {e}")
+                continue
+            idx = rec.get("idx")
+            if isinstance(idx, int):
+                completed.add(idx)
+
+    return completed
+
+
 def parse_args():
     parser = argparse.ArgumentParser(description="Pretrain (ASR caption) LoRA inference")
     parser.add_argument("--model-name", type=str, default="Qwen/Qwen3-VL-2B-Instruct")
@@ -159,6 +186,15 @@ def parse_args():
     parser.add_argument("--bf16", action="store_true")
     parser.add_argument("--fp16", action="store_true")
     parser.add_argument("--cpu", action="store_true")
+
+    parser.add_argument("--print-every", type=int, default=1,
+                        help="Print detailed sample/prediction logs every N samples. Use <=0 to disable detail logs.")
+    parser.add_argument("--quiet", action="store_true",
+                        help="Disable detailed per-sample printing; progress bar and final output are still shown.")
+    parser.add_argument("--resume", action="store_true",
+                        help="Resume an interrupted inference run by appending to an existing output JSONL and skipping completed idx values.")
+    parser.add_argument("--overwrite", action="store_true",
+                        help="Overwrite an existing output JSONL. By default, existing outputs are protected unless --resume is used.")
     return parser.parse_args()
 
 
@@ -222,11 +258,39 @@ def main():
     out_path = Path(args.output)
     out_path.parent.mkdir(parents=True, exist_ok=True)
 
-    print(f"[pretrain-infer] samples={len(dataset)} output={out_path}")
+    if args.resume and args.overwrite:
+        raise ValueError("Use only one of --resume or --overwrite.")
 
-    with out_path.open("w", encoding="utf-8") as f:
-        for idx in range(len(dataset)):
+    completed_indices: Set[int] = set()
+    file_mode = "w"
+    if out_path.exists():
+        if args.resume:
+            completed_indices = load_completed_indices(out_path)
+            file_mode = "a"
+            print(f"[pretrain-infer] resume enabled: found {len(completed_indices)} completed idx values in {out_path}")
+        elif args.overwrite:
+            print(f"[pretrain-infer] overwrite enabled: replacing existing output {out_path}")
+            file_mode = "w"
+        else:
+            raise FileExistsError(f"Output already exists: {out_path}. Use --resume to continue or --overwrite to replace it.")
+
+    pending_indices = [idx for idx in range(len(dataset)) if idx not in completed_indices]
+
+    print(f"[pretrain-infer] samples={len(dataset)} pending={len(pending_indices)} output={out_path}")
+
+    iterator = (
+        tqdm(pending_indices, total=len(pending_indices), desc="[pretrain-infer]", unit="sample")
+        if tqdm is not None
+        else pending_indices
+    )
+
+    with out_path.open(file_mode, encoding="utf-8") as f:
+        for idx in iterator:
             sample = dataset[idx]
+            idx = int(idx)
+            should_print = (not args.quiet) and args.print_every > 0 and (
+                idx == 0 or idx == len(dataset) - 1 or idx % args.print_every == 0
+            )
             prev_context = sample.get("prev_context", "")
             target = sample.get("target", "")
             try:
@@ -252,11 +316,12 @@ def main():
                 "meta": sample.get("meta", {}),
             }
 
-            print("-" * 80)
-            print(f"[pretrain-infer] idx={idx} video_id={rec['video_id']} window={rec['video_window']}")
-            print(f"[pretrain-infer] prev_context: {prev_context[:120]}")
-            print(f"[pretrain-infer] target: {target}")
-            print(f"[pretrain-infer] prediction: {pred}")
+            if should_print:
+                print("-" * 80)
+                print(f"[pretrain-infer] idx={idx} video_id={rec['video_id']} window={rec['video_window']}")
+                print(f"[pretrain-infer] prev_context: {prev_context[:120]}")
+                print(f"[pretrain-infer] target: {target}")
+                print(f"[pretrain-infer] prediction: {pred}")
 
             f.write(json.dumps(rec, ensure_ascii=False) + "\n")
             f.flush()
