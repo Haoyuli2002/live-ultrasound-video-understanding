@@ -169,7 +169,64 @@ loss 仍然只计算 assistant target 部分。
 
 ---
 
-## 6. 已实现代码改动
+## 6. 句子切分模式
+
+V3 支持两种 sentence unit 构建方式。
+
+### 6.1 `segment_merge`
+
+旧的 sentence-like 构建方式：
+
+```text
+逐个 ASR segment 累积
+遇到句末标点或 word/time fallback 后切分
+```
+
+命令参数：
+
+```bash
+--sentence-mode segment_merge
+```
+
+优点是简单、时间对齐直接；缺点是 fallback 可能在自然句中间切开。
+
+### 6.2 `punctuation`
+
+新的推荐方式：
+
+```text
+先拼接整个 ASR transcript
+再按标点符号切分
+最后把切分出来的文本 span 映射回原 ASR segment 时间范围
+```
+
+命令参数：
+
+```bash
+--sentence-mode punctuation
+--split-punctuation ".?!;:"
+```
+
+这个模式可以修复类似：
+
+```text
+Massachusetts General
+Hospital.
+```
+
+被 ASR segment 切开的情况。
+
+如果需要更细粒度，也可以打开逗号切分：
+
+```bash
+--include-comma-split
+```
+
+但默认不建议按逗号切，因为会让单位过碎。
+
+---
+
+## 7. 已实现代码改动
 
 ### `pretrain/build_samples.py`
 
@@ -188,12 +245,13 @@ python pretrain/build_samples.py \
   --transcripts cluster_data/QA/train/transcripts \
   --output cluster_data/pretrain/train_pretrain_sentence_interleave_samples.jsonl \
   --unit sentence \
+  --sentence-mode punctuation \
   --format interleave \
   --history-units 3 \
   --frames-per-sentence 3 \
   --min-words 3 \
-  --sentence-max-words 40 \
-  --sentence-max-duration 15
+  --sentence-max-words 80 \
+  --split-punctuation ".?!;:"
 ```
 
 ### `pretrain/video_sampling.py`
@@ -234,7 +292,9 @@ build_interleave_messages(...)
 
 ---
 
-## 7. Smoke Test 结果
+## 8. Smoke Test 结果
+
+### 8.1 Interleave smoke test
 
 toy transcript：
 
@@ -265,9 +325,40 @@ sentence 3 的 3 帧 + sentence 3
 
 这符合预期设计。
 
+### 8.2 Punctuation split smoke test
+
+toy ASR segments：
+
+```text
+segment 0: This is Massachusetts General
+segment 1: Hospital. Next sentence starts
+segment 2: here and continues.
+```
+
+使用：
+
+```bash
+--sentence-mode punctuation
+--format interleave
+```
+
+生成结果会把跨 segment 的短语合并为：
+
+```text
+This is Massachusetts General Hospital.
+```
+
+并预测下一句：
+
+```text
+Next sentence starts here and continues.
+```
+
+这验证了 punctuation 模式可以避免在 `Massachusetts General / Hospital` 中间断开。
+
 ---
 
-## 8. 推荐命名
+## 9. 推荐命名
 
 样本文件：
 
@@ -290,7 +381,7 @@ Pretrain_Full_V3_sentence_interleave
 
 ---
 
-## 9. 设计定位
+## 10. 设计定位
 
 V3 相比 V1/V2 更接近图文时序建模：
 

@@ -202,6 +202,148 @@ def build_sentence_units(
     return units
 
 
+def _split_long_text_by_words(text: str, max_words: int) -> List[str]:
+    """Split a long punctuation chunk by word count as a fallback."""
+    text = normalize_text(text)
+    if max_words <= 0:
+        return [text] if text else []
+
+    words = text.split()
+    if len(words) <= max_words:
+        return [text] if text else []
+
+    chunks = []
+    for i in range(0, len(words), max_words):
+        chunks.append(" ".join(words[i:i + max_words]).strip())
+    return [c for c in chunks if c]
+
+
+def _segment_spans_for_full_text(segments: List[Dict[str, Any]]) -> tuple[str, List[Dict[str, Any]]]:
+    """Concatenate ASR segment text and keep char/time spans for alignment."""
+    parts: List[str] = []
+    spans: List[Dict[str, Any]] = []
+    cursor = 0
+
+    for idx, seg in enumerate(segments):
+        text = normalize_text(seg.get("text") or "")
+        if is_noise_text(text):
+            continue
+
+        if parts:
+            parts.append(" ")
+            cursor += 1
+
+        start_char = cursor
+        parts.append(text)
+        cursor += len(text)
+        end_char = cursor
+
+        seg_start = float(seg.get("start", 0.0))
+        seg_end = float(seg.get("end", seg_start))
+        spans.append({
+            "segment_idx": idx,
+            "char_start": start_char,
+            "char_end": end_char,
+            "time_start": seg_start,
+            "time_end": seg_end,
+        })
+
+    return "".join(parts), spans
+
+
+def _align_char_range_to_segments(
+    spans: List[Dict[str, Any]],
+    char_start: int,
+    char_end: int,
+) -> Dict[str, Any] | None:
+    overlaps = [
+        span for span in spans
+        if span["char_end"] > char_start and span["char_start"] < char_end
+    ]
+    if not overlaps:
+        return None
+
+    return {
+        "start": float(overlaps[0]["time_start"]),
+        "end": float(overlaps[-1]["time_end"]),
+        "segment_start_idx": overlaps[0]["segment_idx"],
+        "segment_end_idx": overlaps[-1]["segment_idx"],
+    }
+
+
+def build_punctuation_sentence_units(
+    segments: List[Dict[str, Any]],
+    *,
+    min_words: int,
+    split_punctuation: str,
+    include_comma_split: bool,
+    sentence_max_words: int,
+) -> List[Dict[str, Any]]:
+    """Build sentence-like units by splitting the full ASR text by punctuation.
+
+    Unlike segment-merge mode, this first concatenates all ASR segment text and
+    then splits the full text. Each resulting text span is mapped back to the
+    ASR segments it overlaps to recover a time window.
+    """
+    full_text, spans = _segment_spans_for_full_text(segments)
+    if not full_text:
+        return []
+
+    punctuation = set(split_punctuation or "")
+    if include_comma_split:
+        punctuation.update({",", "，"})
+    if not punctuation:
+        punctuation = set(".?!;:。？！；：")
+
+    raw_ranges: List[tuple[int, int]] = []
+    start = 0
+    for idx, ch in enumerate(full_text):
+        if ch in punctuation:
+            end = idx + 1
+            raw_ranges.append((start, end))
+            start = end
+            while start < len(full_text) and full_text[start].isspace():
+                start += 1
+    if start < len(full_text):
+        raw_ranges.append((start, len(full_text)))
+
+    units: List[Dict[str, Any]] = []
+    for char_start, char_end in raw_ranges:
+        text = normalize_text(full_text[char_start:char_end])
+        if not text:
+            continue
+
+        sub_chunks = _split_long_text_by_words(text, sentence_max_words)
+        if len(sub_chunks) == 1:
+            chunk_ranges = [(char_start, char_end, sub_chunks[0])]
+        else:
+            chunk_ranges = []
+            search_from = char_start
+            for chunk in sub_chunks:
+                local = full_text.find(chunk, search_from, char_end)
+                if local < 0:
+                    # Fallback: approximate from the current cursor.
+                    local = search_from
+                chunk_ranges.append((local, min(local + len(chunk), char_end), chunk))
+                search_from = min(local + len(chunk), char_end)
+
+        for sub_start, sub_end, sub_text in chunk_ranges:
+            if is_bad_text(sub_text, min_words):
+                continue
+            aligned = _align_char_range_to_segments(spans, sub_start, sub_end)
+            if aligned is None:
+                continue
+            units.append({
+                "text": sub_text,
+                "start": aligned["start"],
+                "end": aligned["end"],
+                "segment_start_idx": aligned["segment_start_idx"],
+                "segment_end_idx": aligned["segment_end_idx"],
+            })
+
+    return units
+
+
 def build_segment_samples_for_video(
     transcript: Dict[str, Any],
     *,
@@ -256,16 +398,30 @@ def build_sentence_samples_for_video(
     sample_format: str,
     history_units: int,
     frames_per_sentence: int,
+    sentence_mode: str,
+    split_punctuation: str,
+    include_comma_split: bool,
 ) -> List[Dict[str, Any]]:
     video_id = transcript.get("video_id")
     segments = transcript.get("segments", [])
 
-    sentence_units = build_sentence_units(
-        segments,
-        min_words=min_words,
-        sentence_max_words=sentence_max_words,
-        sentence_max_duration=sentence_max_duration,
-    )
+    if sentence_mode == "segment_merge":
+        sentence_units = build_sentence_units(
+            segments,
+            min_words=min_words,
+            sentence_max_words=sentence_max_words,
+            sentence_max_duration=sentence_max_duration,
+        )
+    elif sentence_mode == "punctuation":
+        sentence_units = build_punctuation_sentence_units(
+            segments,
+            min_words=min_words,
+            split_punctuation=split_punctuation,
+            include_comma_split=include_comma_split,
+            sentence_max_words=sentence_max_words,
+        )
+    else:
+        raise ValueError(f"Unsupported sentence mode: {sentence_mode}")
 
     samples: List[Dict[str, Any]] = []
 
@@ -378,6 +534,9 @@ def build_samples_for_video(
     sample_format: str,
     history_units: int,
     frames_per_sentence: int,
+    sentence_mode: str,
+    split_punctuation: str,
+    include_comma_split: bool,
 ) -> List[Dict[str, Any]]:
     if unit == "segment":
         return build_segment_samples_for_video(
@@ -400,6 +559,9 @@ def build_samples_for_video(
             sample_format=sample_format,
             history_units=history_units,
             frames_per_sentence=frames_per_sentence,
+            sentence_mode=sentence_mode,
+            split_punctuation=split_punctuation,
+            include_comma_split=include_comma_split,
         )
 
     raise ValueError(f"Unsupported unit: {unit}")
@@ -426,7 +588,13 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--sentence-max-words", type=int, default=40,
                         help="Sentence mode fallback: force a split after this many accumulated words. Use <=0 to disable.")
     parser.add_argument("--sentence-max-duration", type=float, default=15.0,
-                        help="Sentence mode fallback: force a split after this many seconds. Use <=0 to disable.")
+                        help="Segment-merge sentence mode fallback: force a split after this many seconds. Use <=0 to disable.")
+    parser.add_argument("--sentence-mode", choices=["segment_merge", "punctuation"], default="segment_merge",
+                        help="Sentence unit construction mode. segment_merge accumulates ASR segments; punctuation splits the concatenated ASR text by punctuation and maps spans back to timestamps.")
+    parser.add_argument("--split-punctuation", type=str, default=".?!;:。？！；：",
+                        help="Punctuation characters used by --sentence-mode punctuation.")
+    parser.add_argument("--include-comma-split", action="store_true",
+                        help="Also split punctuation-mode sentence units on comma characters.")
     parser.add_argument("--format", choices=["standard", "interleave"], default="standard",
                         help="Sample format. standard = existing single-window sample; interleave = prior sentence frames/text interleaved to predict next sentence.")
     parser.add_argument("--history-units", type=int, default=3,
@@ -478,6 +646,9 @@ def main() -> None:
                 sample_format=args.format,
                 history_units=args.history_units,
                 frames_per_sentence=args.frames_per_sentence,
+                sentence_mode=args.sentence_mode,
+                split_punctuation=args.split_punctuation,
+                include_comma_split=args.include_comma_split,
             )
 
             for s in samples:
@@ -490,6 +661,7 @@ def main() -> None:
 
     print("=" * 60)
     print(f"[build] unit: {args.unit}")
+    print(f"[build] sentence_mode: {args.sentence_mode}")
     print(f"[build] format: {args.format}")
     print(f"[build] videos: {len(per_video_counts)}")
     print(f"[build] total samples: {total_samples}")
