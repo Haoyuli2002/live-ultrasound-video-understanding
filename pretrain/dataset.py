@@ -26,9 +26,9 @@ from typing import Any, Dict, List, Optional
 from PIL import Image
 
 try:
-    from .video_sampling import sample_last_n_frames
+    from .video_sampling import sample_last_n_frames, sample_uniform_n_frames
 except ImportError:  # allow direct script execution
-    from video_sampling import sample_last_n_frames
+    from video_sampling import sample_last_n_frames, sample_uniform_n_frames
 
 
 class PretrainCaptionDataset:
@@ -113,9 +113,32 @@ class PretrainCaptionDataset:
             resize=self.frame_size,
         )
 
+    def _sample_interleave_history_frames(self, row: Dict[str, Any]) -> List[List[Image.Image]]:
+        video_path = self._resolve_video_path(row)
+        history_frames: List[List[Image.Image]] = []
+
+        for item in row.get("history", []):
+            start, end = item["video_window"]
+            n_frames = int(item.get("num_frames", 3))
+            history_frames.append(
+                sample_uniform_n_frames(
+                    video_path,
+                    float(start),
+                    float(end),
+                    n_frames=n_frames,
+                    resize=self.frame_size,
+                )
+            )
+
+        return history_frames
+
     def __getitem__(self, idx: int) -> Dict[str, Any]:
         row = dict(self.rows[idx])
-        row["frames"] = self._sample_frames(row)
+        if row.get("sample_type") == "pretrain_caption_sentence_interleave":
+            row["history_frames"] = self._sample_interleave_history_frames(row)
+            row["frames"] = []
+        else:
+            row["frames"] = self._sample_frames(row)
         return row
 
 

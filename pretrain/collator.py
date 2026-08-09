@@ -58,6 +58,30 @@ def build_messages(frames, prev_context: str, target: str | None = None, system_
     return messages
 
 
+def build_interleave_messages(
+    history,
+    history_frames,
+    target: str | None = None,
+    system_prompt: str = DEFAULT_SYSTEM_PROMPT,
+):
+    content = []
+    for item, frames in zip(history, history_frames):
+        for img in frames:
+            content.append({"type": "image", "image": img})
+        text = (item.get("text") or "").strip()
+        content.append({"type": "text", "text": f"Narration: {text}"})
+
+    content.append({"type": "text", "text": "Continue the narration:"})
+
+    messages = [
+        {"role": "system", "content": system_prompt},
+        {"role": "user", "content": content},
+    ]
+    if target is not None:
+        messages.append({"role": "assistant", "content": target})
+    return messages
+
+
 def _process_vision(messages):
     try:
         from qwen_vl_utils import process_vision_info
@@ -137,12 +161,20 @@ class PretrainCollator:
             prev_context = feat.get("prev_context", "")
             target = feat["target"]
 
-            full_messages = build_messages(
-                frames=frames,
-                prev_context=prev_context,
-                target=target,
-                system_prompt=self.system_prompt,
-            )
+            if feat.get("sample_type") == "pretrain_caption_sentence_interleave":
+                full_messages = build_interleave_messages(
+                    history=feat.get("history", []),
+                    history_frames=feat.get("history_frames", []),
+                    target=target,
+                    system_prompt=self.system_prompt,
+                )
+            else:
+                full_messages = build_messages(
+                    frames=frames,
+                    prev_context=prev_context,
+                    target=target,
+                    system_prompt=self.system_prompt,
+                )
             encoded, _ = self._encode_messages(full_messages)
 
             input_ids = encoded["input_ids"][0]

@@ -253,6 +253,9 @@ def build_sentence_samples_for_video(
     use_context: bool,
     sentence_max_words: int,
     sentence_max_duration: float,
+    sample_format: str,
+    history_units: int,
+    frames_per_sentence: int,
 ) -> List[Dict[str, Any]]:
     video_id = transcript.get("video_id")
     segments = transcript.get("segments", [])
@@ -265,6 +268,70 @@ def build_sentence_samples_for_video(
     )
 
     samples: List[Dict[str, Any]] = []
+
+    if sample_format == "interleave":
+        if history_units <= 0:
+            raise ValueError("--history-units must be positive for --format interleave")
+        if frames_per_sentence <= 0:
+            raise ValueError("--frames-per-sentence must be positive for --format interleave")
+
+        # Autoregressive interleaved format:
+        #   sentence_1 frames + sentence_1 -> predict sentence_2
+        #   sentence_1 frames + sentence_1 + sentence_2 frames + sentence_2 -> predict sentence_3
+        # with a sliding history window of at most `history_units` sentences.
+        for idx in range(1, len(sentence_units)):
+            unit = sentence_units[idx]
+            text = normalize_text(unit.get("text") or "")
+            if is_bad_text(text, min_words):
+                continue
+
+            history_start = max(0, idx - history_units)
+            history = []
+            for h_idx in range(history_start, idx):
+                h = sentence_units[h_idx]
+                h_text = normalize_text(h.get("text") or "")
+                if not h_text:
+                    continue
+                history.append({
+                    "sentence_idx": h_idx,
+                    "text": h_text,
+                    "video_window": [round(float(h.get("start", 0.0)), 2), round(float(h.get("end", h.get("start", 0.0))), 2)],
+                    "num_frames": frames_per_sentence,
+                    "segment_start_idx": h.get("segment_start_idx"),
+                    "segment_end_idx": h.get("segment_end_idx"),
+                })
+
+            if not history:
+                continue
+
+            sent_start = float(unit.get("start", 0.0))
+            sent_end = float(unit.get("end", sent_start))
+
+            samples.append({
+                "sample_type": "pretrain_caption_sentence_interleave",
+                "video_id": video_id,
+                "history": history,
+                "video_window": [round(sent_start, 2), round(sent_end, 2)],
+                "prev_context": " ".join(h["text"] for h in history).strip() if use_context else "",
+                "target": text,
+                "meta": {
+                    "unit": "sentence",
+                    "format": "interleave",
+                    "target_sentence_idx": idx,
+                    "target_sentence_start": round(sent_start, 2),
+                    "target_sentence_end": round(sent_end, 2),
+                    "history_units": len(history),
+                    "frames_per_sentence": frames_per_sentence,
+                    "segment_start_idx": unit.get("segment_start_idx"),
+                    "segment_end_idx": unit.get("segment_end_idx"),
+                },
+            })
+
+        return samples
+
+    if sample_format != "standard":
+        raise ValueError(f"Unsupported sample format for sentence unit: {sample_format}")
+
     for idx, unit in enumerate(sentence_units):
         text = normalize_text(unit.get("text") or "")
         if is_bad_text(text, min_words):
@@ -286,6 +353,7 @@ def build_sentence_samples_for_video(
             "target": text,
             "meta": {
                 "unit": "sentence",
+                "format": "standard",
                 "sentence_idx": idx,
                 "sentence_start": round(sent_start, 2),
                 "sentence_end": round(sent_end, 2),
@@ -307,6 +375,9 @@ def build_samples_for_video(
     unit: str,
     sentence_max_words: int,
     sentence_max_duration: float,
+    sample_format: str,
+    history_units: int,
+    frames_per_sentence: int,
 ) -> List[Dict[str, Any]]:
     if unit == "segment":
         return build_segment_samples_for_video(
@@ -326,6 +397,9 @@ def build_samples_for_video(
             use_context=use_context,
             sentence_max_words=sentence_max_words,
             sentence_max_duration=sentence_max_duration,
+            sample_format=sample_format,
+            history_units=history_units,
+            frames_per_sentence=frames_per_sentence,
         )
 
     raise ValueError(f"Unsupported unit: {unit}")
@@ -353,6 +427,12 @@ def parse_args() -> argparse.Namespace:
                         help="Sentence mode fallback: force a split after this many accumulated words. Use <=0 to disable.")
     parser.add_argument("--sentence-max-duration", type=float, default=15.0,
                         help="Sentence mode fallback: force a split after this many seconds. Use <=0 to disable.")
+    parser.add_argument("--format", choices=["standard", "interleave"], default="standard",
+                        help="Sample format. standard = existing single-window sample; interleave = prior sentence frames/text interleaved to predict next sentence.")
+    parser.add_argument("--history-units", type=int, default=3,
+                        help="Interleave mode: number of previous sentence units to include.")
+    parser.add_argument("--frames-per-sentence", type=int, default=3,
+                        help="Interleave mode: uniformly sampled frames per history sentence.")
     return parser.parse_args()
 
 
@@ -395,6 +475,9 @@ def main() -> None:
                 unit=args.unit,
                 sentence_max_words=args.sentence_max_words,
                 sentence_max_duration=args.sentence_max_duration,
+                sample_format=args.format,
+                history_units=args.history_units,
+                frames_per_sentence=args.frames_per_sentence,
             )
 
             for s in samples:
@@ -407,6 +490,7 @@ def main() -> None:
 
     print("=" * 60)
     print(f"[build] unit: {args.unit}")
+    print(f"[build] format: {args.format}")
     print(f"[build] videos: {len(per_video_counts)}")
     print(f"[build] total samples: {total_samples}")
     print(f"[build] output: {out_path}")

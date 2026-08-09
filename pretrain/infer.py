@@ -64,7 +64,7 @@ _HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(_HERE))
 
 from dataset import PretrainCaptionDataset  # noqa: E402
-from collator import DEFAULT_SYSTEM_PROMPT, build_messages  # noqa: E402
+from collator import DEFAULT_SYSTEM_PROMPT, build_interleave_messages, build_messages  # noqa: E402
 
 
 def _from_pretrained_with_dtype(model_cls, model_name, *, dtype, **kwargs):
@@ -111,13 +111,31 @@ def process_vision(messages):
         return image_inputs, None
 
 
-def generate_one(model, processor, *, frames, prev_context, device, max_new_tokens=128):
-    messages = build_messages(
-        frames=frames,
-        prev_context=prev_context,
-        target=None,
-        system_prompt=DEFAULT_SYSTEM_PROMPT,
-    )
+def generate_one(
+    model,
+    processor,
+    *,
+    frames,
+    prev_context,
+    device,
+    max_new_tokens=128,
+    history=None,
+    history_frames=None,
+):
+    if history:
+        messages = build_interleave_messages(
+            history=history,
+            history_frames=history_frames or [],
+            target=None,
+            system_prompt=DEFAULT_SYSTEM_PROMPT,
+        )
+    else:
+        messages = build_messages(
+            frames=frames,
+            prev_context=prev_context,
+            target=None,
+            system_prompt=DEFAULT_SYSTEM_PROMPT,
+        )
     text = processor.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
     image_inputs, video_inputs = process_vision(messages)
 
@@ -301,6 +319,8 @@ def main():
                     prev_context=prev_context,
                     device=device,
                     max_new_tokens=args.max_new_tokens,
+                    history=sample.get("history"),
+                    history_frames=sample.get("history_frames"),
                 )
             except Exception as e:
                 pred = ""
