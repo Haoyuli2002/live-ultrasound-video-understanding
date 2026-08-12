@@ -22,6 +22,10 @@ Thumbs.db
 transcripts/
 results/
 QA/results/
+QA/results*/
+cluster_data/
+cluster_data_splits/
+local_checkpoints/
 UltrasoundCrawler_KeyCode_20260323_v2/output/
 *.wav
 *.mp4
@@ -38,6 +42,7 @@ UltrasoundCrawler_KeyCode_20260323_v2/output/
 
 # Papers (reference only)
 Papers/
+*.pdf
 
 # Misc
 *.log

@@ -36,6 +36,12 @@ You are given the most recent ultrasound video frames and, optionally, the
 narration transcript so far. Continue the spoken narration, describing what is
 happening in the ultrasound scan."""
 
+INTERLEAVE_SYSTEM_PROMPT = """You are an ultrasound teaching assistant.
+You are given a sequence of ultrasound video frames interleaved with prior
+narration sentences. Each group of frames corresponds to the narration sentence
+immediately following it. Continue the sequence by directly producing the next
+narration sentence. Output only the next narration sentence."""
+
 
 def _content_with_images(frames, prev_context: str):
     content = []
@@ -62,7 +68,7 @@ def build_interleave_messages(
     history,
     history_frames,
     target: str | None = None,
-    system_prompt: str = DEFAULT_SYSTEM_PROMPT,
+    system_prompt: str = INTERLEAVE_SYSTEM_PROMPT,
 ):
     content = []
     for item, frames in zip(history, history_frames):
@@ -70,8 +76,6 @@ def build_interleave_messages(
             content.append({"type": "image", "image": img})
         text = (item.get("text") or "").strip()
         content.append({"type": "text", "text": f"Narration: {text}"})
-
-    content.append({"type": "text", "text": "Continue the narration:"})
 
     messages = [
         {"role": "system", "content": system_prompt},
@@ -166,7 +170,6 @@ class PretrainCollator:
                     history=feat.get("history", []),
                     history_frames=feat.get("history_frames", []),
                     target=target,
-                    system_prompt=self.system_prompt,
                 )
             else:
                 full_messages = build_messages(
