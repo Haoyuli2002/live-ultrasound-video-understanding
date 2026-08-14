@@ -401,6 +401,9 @@ def build_sentence_samples_for_video(
     sentence_mode: str,
     split_punctuation: str,
     include_comma_split: bool,
+    mask_current_visual_prob: float,
+    no_mask_prob: float,
+    random_unit_modality_mask_prob: float,
 ) -> List[Dict[str, Any]]:
     video_id = transcript.get("video_id")
     segments = transcript.get("segments", [])
@@ -425,16 +428,20 @@ def build_sentence_samples_for_video(
 
     samples: List[Dict[str, Any]] = []
 
-    if sample_format == "interleave":
+    if sample_format in {"interleave", "mixedmask"}:
         if history_units <= 0:
-            raise ValueError("--history-units must be positive for --format interleave")
+            raise ValueError(f"--history-units must be positive for --format {sample_format}")
         if frames_per_sentence <= 0:
-            raise ValueError("--frames-per-sentence must be positive for --format interleave")
+            raise ValueError(f"--frames-per-sentence must be positive for --format {sample_format}")
 
         # Autoregressive interleaved format:
         #   sentence_1 frames + sentence_1 -> predict sentence_2
         #   sentence_1 frames + sentence_1 + sentence_2 frames + sentence_2 -> predict sentence_3
         # with a sliding history window of at most `history_units` sentences.
+        #
+        # Mixed-mask format extends this by also exposing the target sentence's
+        # current visual segment. The collator dynamically masks current visual,
+        # no modality, or one historical/current modality during training.
         for idx in range(1, len(sentence_units)):
             unit = sentence_units[idx]
             text = normalize_text(unit.get("text") or "")
@@ -462,26 +469,60 @@ def build_sentence_samples_for_video(
 
             sent_start = float(unit.get("start", 0.0))
             sent_end = float(unit.get("end", sent_start))
+            prev_context = " ".join(h["text"] for h in history).strip() if use_context else ""
 
-            samples.append({
-                "sample_type": "pretrain_caption_sentence_interleave",
-                "video_id": video_id,
-                "history": history,
-                "video_window": [round(sent_start, 2), round(sent_end, 2)],
-                "prev_context": " ".join(h["text"] for h in history).strip() if use_context else "",
-                "target": text,
-                "meta": {
-                    "unit": "sentence",
-                    "format": "interleave",
-                    "target_sentence_idx": idx,
-                    "target_sentence_start": round(sent_start, 2),
-                    "target_sentence_end": round(sent_end, 2),
-                    "history_units": len(history),
-                    "frames_per_sentence": frames_per_sentence,
-                    "segment_start_idx": unit.get("segment_start_idx"),
-                    "segment_end_idx": unit.get("segment_end_idx"),
-                },
-            })
+            if sample_format == "interleave":
+                samples.append({
+                    "sample_type": "pretrain_caption_sentence_interleave",
+                    "video_id": video_id,
+                    "history": history,
+                    "video_window": [round(sent_start, 2), round(sent_end, 2)],
+                    "prev_context": prev_context,
+                    "target": text,
+                    "meta": {
+                        "unit": "sentence",
+                        "format": "interleave",
+                        "target_sentence_idx": idx,
+                        "target_sentence_start": round(sent_start, 2),
+                        "target_sentence_end": round(sent_end, 2),
+                        "history_units": len(history),
+                        "frames_per_sentence": frames_per_sentence,
+                        "segment_start_idx": unit.get("segment_start_idx"),
+                        "segment_end_idx": unit.get("segment_end_idx"),
+                    },
+                })
+            else:
+                samples.append({
+                    "sample_type": "pretrain_next_sentence_mixedmask",
+                    "video_id": video_id,
+                    "history": history,
+                    "current_visual": {
+                        "sentence_idx": idx,
+                        "video_window": [round(sent_start, 2), round(sent_end, 2)],
+                        "num_frames": frames_per_sentence,
+                        "segment_start_idx": unit.get("segment_start_idx"),
+                        "segment_end_idx": unit.get("segment_end_idx"),
+                    },
+                    "video_window": [round(sent_start, 2), round(sent_end, 2)],
+                    "prev_context": prev_context,
+                    "target": text,
+                    "mask_policy": {
+                        "mask_current_visual_prob": mask_current_visual_prob,
+                        "no_mask_prob": no_mask_prob,
+                        "random_unit_modality_mask_prob": random_unit_modality_mask_prob,
+                    },
+                    "meta": {
+                        "unit": "sentence",
+                        "format": "mixedmask",
+                        "target_sentence_idx": idx,
+                        "target_sentence_start": round(sent_start, 2),
+                        "target_sentence_end": round(sent_end, 2),
+                        "history_units": len(history),
+                        "frames_per_sentence": frames_per_sentence,
+                        "segment_start_idx": unit.get("segment_start_idx"),
+                        "segment_end_idx": unit.get("segment_end_idx"),
+                    },
+                })
 
         return samples
 
@@ -537,6 +578,9 @@ def build_samples_for_video(
     sentence_mode: str,
     split_punctuation: str,
     include_comma_split: bool,
+    mask_current_visual_prob: float,
+    no_mask_prob: float,
+    random_unit_modality_mask_prob: float,
 ) -> List[Dict[str, Any]]:
     if unit == "segment":
         return build_segment_samples_for_video(
@@ -562,6 +606,9 @@ def build_samples_for_video(
             sentence_mode=sentence_mode,
             split_punctuation=split_punctuation,
             include_comma_split=include_comma_split,
+            mask_current_visual_prob=mask_current_visual_prob,
+            no_mask_prob=no_mask_prob,
+            random_unit_modality_mask_prob=random_unit_modality_mask_prob,
         )
 
     raise ValueError(f"Unsupported unit: {unit}")
@@ -595,12 +642,18 @@ def parse_args() -> argparse.Namespace:
                         help="Punctuation characters used by --sentence-mode punctuation.")
     parser.add_argument("--include-comma-split", action="store_true",
                         help="Also split punctuation-mode sentence units on comma characters.")
-    parser.add_argument("--format", choices=["standard", "interleave"], default="standard",
-                        help="Sample format. standard = existing single-window sample; interleave = prior sentence frames/text interleaved to predict next sentence.")
+    parser.add_argument("--format", choices=["standard", "interleave", "mixedmask"], default="standard",
+                        help="Sample format. standard = existing single-window sample; interleave = prior sentence frames/text interleaved to predict next sentence; mixedmask = history visual/text plus current visual with dynamic modality masking.")
     parser.add_argument("--history-units", type=int, default=3,
-                        help="Interleave mode: number of previous sentence units to include.")
+                        help="Interleave/mixedmask mode: number of previous sentence units to include.")
     parser.add_argument("--frames-per-sentence", type=int, default=3,
-                        help="Interleave mode: uniformly sampled frames per history sentence.")
+                        help="Interleave/mixedmask mode: uniformly sampled frames per sentence.")
+    parser.add_argument("--mask-current-visual-prob", type=float, default=0.33,
+                        help="Mixedmask mode: probability of masking the current visual segment.")
+    parser.add_argument("--no-mask-prob", type=float, default=0.33,
+                        help="Mixedmask mode: probability of using all available visual/text context.")
+    parser.add_argument("--random-unit-modality-mask-prob", type=float, default=0.34,
+                        help="Mixedmask mode: probability of masking one random unit modality.")
     return parser.parse_args()
 
 
@@ -649,6 +702,9 @@ def main() -> None:
                 sentence_mode=args.sentence_mode,
                 split_punctuation=args.split_punctuation,
                 include_comma_split=args.include_comma_split,
+                mask_current_visual_prob=args.mask_current_visual_prob,
+                no_mask_prob=args.no_mask_prob,
+                random_unit_modality_mask_prob=args.random_unit_modality_mask_prob,
             )
 
             for s in samples:

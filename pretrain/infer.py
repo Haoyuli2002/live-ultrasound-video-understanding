@@ -64,7 +64,13 @@ _HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(_HERE))
 
 from dataset import PretrainCaptionDataset  # noqa: E402
-from collator import DEFAULT_SYSTEM_PROMPT, build_interleave_messages, build_messages  # noqa: E402
+from collator import (  # noqa: E402
+    DEFAULT_SYSTEM_PROMPT,
+    MIXEDMASK_SYSTEM_PROMPT,
+    build_interleave_messages,
+    build_messages,
+    build_mixedmask_messages,
+)
 
 
 def _from_pretrained_with_dtype(model_cls, model_name, *, dtype, **kwargs):
@@ -121,13 +127,24 @@ def generate_one(
     max_new_tokens=128,
     history=None,
     history_frames=None,
+    current_visual_frames=None,
+    sample_type=None,
+    mixedmask_eval_mode="no_mask",
 ):
-    if history:
+    if sample_type == "pretrain_next_sentence_mixedmask":
+        messages = build_mixedmask_messages(
+            history=history or [],
+            history_frames=history_frames or [],
+            current_visual_frames=current_visual_frames or [],
+            target=None,
+            mask_mode=mixedmask_eval_mode,
+            system_prompt=MIXEDMASK_SYSTEM_PROMPT,
+        )
+    elif history:
         messages = build_interleave_messages(
             history=history,
             history_frames=history_frames or [],
             target=None,
-            system_prompt=DEFAULT_SYSTEM_PROMPT,
         )
     else:
         messages = build_messages(
@@ -200,6 +217,15 @@ def parse_args():
     parser.add_argument("--frame-size", type=int, default=224)
     parser.add_argument("--limit", type=int, default=None)
     parser.add_argument("--max-new-tokens", type=int, default=128)
+    parser.add_argument(
+        "--mixedmask-eval-mode",
+        choices=["no_mask", "mask_current_visual", "random_unit_modality_mask"],
+        default="no_mask",
+        help=(
+            "For pretrain_next_sentence_mixedmask samples: eval with current visual, "
+            "mask current visual, or apply one random unit-level modality mask."
+        ),
+    )
 
     parser.add_argument("--bf16", action="store_true")
     parser.add_argument("--fp16", action="store_true")
@@ -321,6 +347,9 @@ def main():
                     max_new_tokens=args.max_new_tokens,
                     history=sample.get("history"),
                     history_frames=sample.get("history_frames"),
+                    current_visual_frames=sample.get("current_visual_frames"),
+                    sample_type=sample.get("sample_type"),
+                    mixedmask_eval_mode=args.mixedmask_eval_mode,
                 )
             except Exception as e:
                 pred = ""
@@ -335,6 +364,8 @@ def main():
                 "prediction": pred,
                 "meta": sample.get("meta", {}),
             }
+            if sample.get("sample_type") == "pretrain_next_sentence_mixedmask":
+                rec["mixedmask_eval_mode"] = args.mixedmask_eval_mode
 
             if should_print:
                 print("-" * 80)

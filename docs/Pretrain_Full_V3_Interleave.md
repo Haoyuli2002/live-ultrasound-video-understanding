@@ -524,7 +524,115 @@ $$
 
 ---
 
-## 11. 推荐命名
+## 11. V3 训练运行摘要
+
+本次 V3 punctuation interleave pretrain 已在 50 train videos 上完成训练，并为 20 eval videos 生成了对应的 V3 eval samples。
+
+| Item | Value |
+|---|---:|
+| Train videos | 50 |
+| Eval videos | 20 |
+| Train samples | 4704 |
+| Eval samples | 1588 |
+| Objective | V3 punctuation sentence interleave / future narration |
+| History units | 3 |
+| Frames per history unit | 3 |
+| Epochs | 3 |
+| Training steps | 1764 |
+| Runtime | 04:56:34 |
+| Final train loss | 1.714 |
+| Output adapter | `cluster_data/checkpoints/pretrain_qwen3vl_train50_punct_sentence_interleave` |
+
+Slurm job 状态：
+
+```text
+JobID: 5745521
+State: COMPLETED
+ExitCode: 0:0
+Elapsed: 04:56:34
+Start: 2026-08-13T04:19:01
+End: 2026-08-13T09:15:35
+```
+
+最终 checkpoint 目录包含 LoRA adapter：
+
+```text
+adapter_config.json
+adapter_model.safetensors
+processor_config.json
+tokenizer.json
+```
+
+其中 `adapter_model.safetensors` 约 67M，完整输出目录约 479M。
+
+V3 eval samples 生成结果：
+
+```text
+cluster_data/pretrain/eval_pretrain_punct_sentence_interleave_samples.jsonl
+1588 samples
+20 videos
+```
+
+---
+
+## 12. LoRA 微调配置
+
+本次 V3 pretrain 使用 LoRA adapter tuning，不做全参微调。
+
+| Item | Value |
+|---|---|
+| Base model | `Qwen/Qwen3-VL-2B-Instruct` |
+| Training type | LoRA adapter tuning |
+| Full-parameter finetune | No |
+| Vision encoder | Frozen |
+| Precision | bf16 |
+| Gradient checkpointing | Enabled |
+| LoRA rank `r` | 16 |
+| LoRA alpha | 32 |
+| LoRA dropout | 0.05 |
+| LoRA bias | none |
+| LoRA task type | CAUSAL_LM |
+| Target modules | `q_proj,k_proj,v_proj,o_proj,gate_proj,up_proj,down_proj` |
+| Learning rate | 1e-4 |
+| Per-device batch size | 1 |
+| Gradient accumulation steps | 8 |
+| Effective batch size | 8 |
+| Warmup ratio | 0.03 |
+| Save steps | 200 |
+| Save total limit | 2 |
+| Early stop patience | 3 |
+| Early stop min delta | 0.001 |
+
+也就是说，本次训练冻结 Qwen3-VL 的视觉编码器，只在语言模型中的 attention projection 和 MLP projection 层上训练 LoRA adapter：
+
+```text
+attention: q_proj, k_proj, v_proj, o_proj
+MLP: gate_proj, up_proj, down_proj
+```
+
+实际训练命令核心配置：
+
+```bash
+python pretrain/train.py \
+  --model-name Qwen/Qwen3-VL-2B-Instruct \
+  --train-jsonl cluster_data/pretrain/train_pretrain_punct_sentence_interleave_samples.jsonl \
+  --video-path-map cluster_data/splits/train_videos.json \
+  --output-dir cluster_data/checkpoints/pretrain_qwen3vl_train50_punct_sentence_interleave \
+  --window-size 4 \
+  --frame-size 224 \
+  --num-train-epochs 3 \
+  --per-device-train-batch-size 1 \
+  --gradient-accumulation-steps 8 \
+  --learning-rate 1e-4 \
+  --bf16 \
+  --gradient-checkpointing \
+  --early-stop-patience 3 \
+  --early-stop-min-delta 0.001
+```
+
+---
+
+## 13. 推荐命名
 
 样本：
 
@@ -544,3 +652,131 @@ cluster_data/checkpoints/pretrain_qwen3vl_train50_punct_sentence_interleave
 ```text
 Pretrain_Interleave_Punctuation
 ```
+
+---
+
+## 14. 旧版 V1 Pretrain Eval 结果
+
+本节记录的是旧版 V1 segment-level pretrain 的 quick eval baseline，**不是当前 V3 punctuation interleave pretrain 的评测结果**。
+
+旧版 V1 adapter：
+
+```text
+cluster_data/checkpoints/pretrain_qwen3vl_train50
+```
+
+评测产物：
+
+```text
+cluster_data/eval/pretrain_eval20_compare_newmetrics.jsonl
+cluster_data/eval/pretrain_eval20_compare_newmetrics_summary.json
+```
+
+评测设置：
+
+```text
+eval subset: 200 samples
+Qwen3-VL-2B-Instruct baseline: Qwen/Qwen3-VL-2B-Instruct without ultrasound LoRA
+pretrain adapter: cluster_data/checkpoints/pretrain_qwen3vl_train50
+decoding: greedy decoding
+```
+
+### 14.1 Direct metrics
+
+| Metric | Qwen3-VL-2B-Instruct baseline | V1 Pretrain LoRA | Delta |
+|---|---:|---:|---:|
+| Word F1 | 0.213 | 0.293 | +0.079 |
+| BLEU-1 | 0.102 | 0.174 | +0.072 |
+| BLEU-2 | 0.056 | 0.106 | +0.050 |
+| BLEU-4 | 0.021 | 0.061 | +0.040 |
+| ROUGE-L | 0.138 | 0.256 | +0.118 |
+| Prefix@1 | 0.215 | 0.410 | +0.195 |
+| Prefix@3 | 0.080 | 0.160 | +0.080 |
+| Prefix@5 | 0.030 | 0.090 | +0.060 |
+| Length ratio | 5.910 | 0.698 | -5.212 |
+
+### 14.2 Length statistics
+
+| Item | Average length |
+|---|---:|
+| Target | 15.755 |
+| Qwen3-VL-2B-Instruct baseline prediction | 85.580 |
+| V1 Pretrain prediction | 9.960 |
+
+### 14.3 结论
+
+旧版 V1 pretrain adapter 相比 Qwen3-VL-2B-Instruct baseline 在所有 direct generation metrics 上都有提升：
+
+```text
+Word F1: 0.213 -> 0.293
+ROUGE-L: 0.138 -> 0.256
+Prefix@1: 0.215 -> 0.410
+```
+
+同时，Qwen3-VL-2B-Instruct baseline 明显倾向于生成过长解释：
+
+```text
+Qwen3-VL-2B-Instruct baseline average length: 85.580
+Target average length: 15.755
+```
+
+V1 pretrain adapter 的生成长度更接近 target narration style：
+
+```text
+V1 Pretrain average length: 9.960
+```
+
+因此，旧版 V1 结果可以作为当前 V3 interleave pretrain 的 baseline 对照。后续 V3 eval 应单独使用 V3 eval samples 和 V3 adapter 产物重新评测。
+
+### 14.4 Qualitative examples
+
+下面是旧版 V1 segment-level eval 中同一视频片段的 Qwen3-VL-2B-Instruct baseline 与 LoRA 输出对比。该例子展示了 V1 LoRA adapter 的主要效果：相比 Qwen3-VL-2B-Instruct baseline，它明显减少了过长、泛化式解释，更接近短 narration 风格；但仍然存在 temporal alignment 不准和医学概念偏移的问题。
+
+#### Example 1: segment idx 3
+
+| Field | Content |
+|---|---|
+| Video | `-2RMojgpkuc` |
+| Window | `[6.18, 14.18]` |
+| Target | `and what we want to do when we're examining the lungs for things like pneumothorax or` |
+| LoRA prediction | `but we're going to start with the paracernal long view.` |
+| Qwen3-VL-2B-Instruct baseline prediction | `...and then we're going to go down. So, we're going to start at the upper part of the lung, and we're going to go down. The curvilinear transducer is a good tool for this, and it's also useful for the heart. We're going to go down and we're going to see the lung. We're going to see the lung, and we're going to see the lung. We're going to see the lung. We're going to see the lung. We're going to see the lung. We're going to see the lung. We're going to see the lung. We` |
+
+#### Example 2: segment idx 4
+
+| Field | Content |
+|---|---|
+| Video | `-2RMojgpkuc` |
+| Window | `[10.58, 18.58]` |
+| Target | `effusions or consolidations, midcollicular indicators towards the head, we identify ribs` |
+| LoRA prediction | `pneumonia is we want to look at the pleural line. So we're going to be looking at the` |
+| Qwen3-VL-2B-Instruct baseline prediction | `...pneumothorax or other lung pathology, is to use the curvilinear transducer to get a better view of the lung's surface and the pleural space. This allows us to detect any abnormalities such as fluid or air accumulation. The transducer's curved shape helps to provide a more comprehensive view of the lung's surface, especially in the upper and lower lobes. We're going to start by placing the transducer at the upper part of the lung, and then slowly move it down to the lower part. This will allow us to get a better understanding of the lung's structure and any potential issues.` |
+
+#### Example 3: segment idx 5
+
+| Field | Content |
+|---|---|
+| Video | `-2RMojgpkuc` |
+| Window | `[16.53, 24.53]` |
+| Target | `and then pleural sliding, and the way I'll examine the lungs is just kind of slowly work my way down` |
+| LoRA prediction | `and we look for the pleural line.` |
+| Qwen3-VL-2B-Instruct baseline prediction | `...and then we move down to the lower part of the lung, where we can see the pleural space. The pleural space is the area between the lung and the chest wall, and it's important to look for any fluid or air in this space. We can also see the costophrenic angle, which is the angle where the diaphragm meets the rib cage. This is a key area to look at for signs of fluid or air accumulation. We're also looking for any signs of consolidation, which is when the lung tissue becomes solid and doesn't allow air to pass through. This can be seen as a dark` |
+
+#### Observation
+
+```text
+Qwen3-VL-2B-Instruct baseline:
+- 输出显著过长；
+- 倾向生成通用医学解释；
+- 有重复和发散现象；
+- narration style 与 target 不一致。
+
+V1 LoRA:
+- 输出明显更短；
+- 更接近 ultrasound teaching narration 的短句风格；
+- 能生成相关概念，例如 pleural line；
+- 但仍可能预测到错误的下一步内容，例如 paracernal long view / pneumonia；
+- 说明 V1 已学习到 domain style，但 temporal grounding 和 next narration alignment 仍不足。
+```
+
+这个 qualitative example 支持后续 V3 / V4 的设计动机：需要更干净的 sentence-level chunk、更强的 interleaved temporal context，以及未来的 grounded narration objective。

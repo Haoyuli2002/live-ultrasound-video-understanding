@@ -1,6 +1,20 @@
 # Pretrain 改进目标
 
-本文档总结当前 V3 pretrain 之后的下一步改进方向。核心思想是：不要只让模型预测下一句 narration，而是同时学习 **当前视觉 grounding**、**未来 narration 预测** 和 **视频-文本对比对齐**。
+本文档总结当前 V3 interleave pretrain 之后的下一步改进方向。最新设计将训练目标统一为：
+
+```text
+Next Sentence Prediction with Mixed Visual & Textual Masking
+```
+
+核心思想是：给定历史 ultrasound visual-text chunks，以及当前 chunk 的部分模态信息，预测当前 chunk 的 narration text。通过不同 masking mode，让模型同时学习：
+
+```text
+visual grounding
+future narration prediction
+cross-modal robustness
+```
+
+---
 
 ## 1. 动机
 
@@ -11,90 +25,77 @@ past visual-text history
 → next narration
 ```
 
-它有助于学习 ultrasound teaching video 中的时间顺序、操作流程和讲解逻辑，但它没有显式要求模型把当前 ultrasound 画面和当前 narration 对齐。
+它能学习 ultrasound teaching video 中的时间顺序、操作流程和讲解逻辑，但仍有两个不足：
 
-因此，下一版 pretrain 应该包含三个互补目标：
+1. 没有显式使用当前 chunk 的 visual evidence 来生成当前 narration；
+2. 模型可能过度依赖 text continuation，而不是学习 visual-text correspondence。
 
-1. **Grounded Narration**：学习当前 ultrasound visual evidence 和当前 narration 的对应关系。
-2. **Future Narration**：学习 temporal / procedural / narrative progression。
-3. **Contrastive Video-Text Alignment**：进一步强化 ultrasound clip 与 narration sentence 的细粒度匹配。
+因此，下一版 pretrain 不再把 Grounded Narration 和 Future Narration 分成两个完全独立的任务，而是统一成一个 masked next sentence prediction objective。
 
-整体故事可以概括为：
+---
 
-```text
-Visual grounding
-+ Temporal anticipation
-+ Video-text contrastive alignment
-= Ultrasound visual-text temporal pretraining
-```
+## 2. V4: Next Sentence Prediction with Mixed Visual & Textual Masking
 
-## 2. Objective A: Grounded Narration
+假设使用 `history_units = 3`，目标是预测 `chunk4 text`。
 
-### 目标
-
-让模型根据当前 ultrasound 视觉片段，生成当前 narration。
-
-### 输入与输出
+完整输入形式是：
 
 ```text
-past visual-text history + current visual
-→ current narration
+chunk1 visual + chunk1 text
+chunk2 visual + chunk2 text
+chunk3 visual + chunk3 text
+chunk4 visual
+→ chunk4 text
 ```
+
+其中：
+
+- 历史 chunks 同时包含 visual 和 text；
+- 当前 chunk 只输入 visual；
+- assistant 输出当前 chunk 的 narration text。
 
 记：
 
-- $S_t$：当前 narration sentence / chunk。
-- $V_t$：当前 ultrasound visual segment。
-- $H_{<t}$：当前时刻之前的 visual-text history。
+- $S_t$：当前 chunk 的 narration text，即 target；
+- $V_t$：当前 chunk 的 ultrasound visual segment；
+- $H_{<t}$：历史 visual-text chunks；
+- $\widetilde{V}_t$：可能被 mask 的当前 visual；
+- $\widetilde{H}_{<t}$：可能被 mask 的历史 visual-text context。
 
-Grounded Narration 的损失为：
+统一训练目标为：
 
 $$
-\mathcal{L}_{ground}
+\mathcal{L}_{\mathrm{NSP\text{-}Mask}}
 =
--\log P(S_t \mid H_{<t}, V_t)
+-\log P(S_t \mid \widetilde{H}_{<t}, \widetilde{V}_t)
 $$
 
-### 学到的能力
+这里仍然是标准 causal language modeling loss，不需要自定义 loss。关键变化在 sample / collator 阶段进行 mixed masking。
 
-这个目标主要学习：
+---
+
+## 3. Mixed Masking Policy
+
+每条训练样本随机选择一种 masking mode。
+
+### 3.1 Mask current visual: 33%
 
 ```text
-ultrasound visual evidence ↔ ultrasound language
+chunk1 visual + chunk1 text
+chunk2 visual + chunk2 text
+chunk3 visual + chunk3 text
+chunk4 [VISUAL MASKED]
+→ chunk4 text
 ```
 
-它回答的问题是：
-
-```text
-What is visible now?
-```
-
-也就是：当前画面里能看到什么，应该如何用 ultrasound 教学语言表达。
-
-## 3. Objective B: Future Narration
-
-### 目标
-
-让模型根据过去的 ultrasound visual-text history，预测下一句 narration。
-
-### 输入与输出
+对应目标：
 
 ```text
 past visual-text history
-→ next narration
+→ current / next narration
 ```
 
-Future Narration 的损失为：
-
-$$
-\mathcal{L}_{future}
-=
--\log P(S_t \mid H_{<t})
-$$
-
-### 学到的能力
-
-这个目标主要学习：
+该 mode 退化为 Future Narration，主要学习：
 
 ```text
 temporal progression
@@ -102,17 +103,105 @@ procedure progression
 narrative progression
 ```
 
-它回答的问题是：
+它回答：
 
 ```text
 What is likely to come next?
 ```
 
-也就是：根据之前的讲解和画面，接下来最可能讲什么。
+---
 
-## 4. Mixed AR Training
+### 3.2 No mask: 33%
 
-两个 autoregressive objective 可以组合为：
+```text
+chunk1 visual + chunk1 text
+chunk2 visual + chunk2 text
+chunk3 visual + chunk3 text
+chunk4 visual
+→ chunk4 text
+```
+
+对应目标：
+
+```text
+past visual-text history + current visual
+→ current narration
+```
+
+该 mode 对应 Grounded Narration，主要学习：
+
+```text
+ultrasound visual evidence ↔ ultrasound language
+```
+
+它回答：
+
+```text
+What is visible now?
+```
+
+---
+
+### 3.3 Random unit-level modality mask: 34%
+
+随机选择一个 unit，并 mask 掉该 unit 的 visual 或 text。
+
+例 1：mask 历史 visual：
+
+```text
+chunk1 visual + chunk1 text
+chunk2 [VISUAL MASKED] + chunk2 text
+chunk3 visual + chunk3 text
+chunk4 visual
+→ chunk4 text
+```
+
+例 2：mask 历史 text：
+
+```text
+chunk1 visual + chunk1 text
+chunk2 visual + [TEXT MASKED]
+chunk3 visual + chunk3 text
+chunk4 visual
+→ chunk4 text
+```
+
+也可以 mask 当前 chunk visual，使其退化为 future prediction。
+
+该 mode 主要学习：
+
+```text
+cross-modal robustness
+visual-text dependency learning
+modality dropout
+```
+
+它强迫模型不能只依赖文本续写，也不能只依赖视频，而要学会在某个模态缺失时利用另一个模态补偿。
+
+---
+
+## 4. 统一后的能力覆盖
+
+| Masking mode | Input | Target | 学到的能力 |
+|---|---|---|---|
+| Mask current visual | $H_{<t}$ | $S_t$ | Future narration / temporal anticipation |
+| No mask | $H_{<t}, V_t$ | $S_t$ | Grounded narration / visual-language grounding |
+| Random unit modality mask | partially masked $H_{<t}, V_t$ | $S_t$ | Cross-modal robustness / modality dependency |
+
+因此 V4 可以统一覆盖之前讨论的两个 AR objective：
+
+```text
+Grounded Narration
+Future Narration
+```
+
+并额外加入 modality masking 带来的跨模态约束。
+
+---
+
+## 5. 与旧版 Two-Objective 设计的关系
+
+旧设计可以写成：
 
 $$
 \mathcal{L}_{AR}
@@ -122,31 +211,152 @@ $$
 \lambda_f \mathcal{L}_{future}
 $$
 
-其中 $\lambda_f$ 控制 Future Narration 的权重。
+其中：
 
-工程上，第一版不需要改 Trainer loss。可以先做 **data-level mixing**：
+$$
+\mathcal{L}_{ground}
+=
+-\log P(S_t \mid H_{<t}, V_t)
+$$
+
+$$
+\mathcal{L}_{future}
+=
+-\log P(S_t \mid H_{<t})
+$$
+
+现在 V4 将二者统一为：
+
+$$
+\mathcal{L}_{\mathrm{NSP\text{-}Mask}}
+=
+-\log P(S_t \mid \mathrm{MaskedInterleave}(H_{<t}, V_t))
+$$
+
+不同 masking mode 决定当前样本更偏向 grounded narration、future narration，还是 modality robustness。
+
+这样做的优势是：
 
 ```text
-70% grounded current narration samples
-30% future narration samples
+一个数据格式
+一个训练目标
+一个 causal LM loss
+通过 masking policy 控制学习信号
 ```
 
-这样仍然使用标准 causal language modeling 训练流程，只是在数据层面混合两类任务。
+---
 
-后续可以做 ablation：
+## 6. 推荐 sample schema
+
+V4 样本应保留完整 unmasked 信息，由 dataset / collator 在训练时动态采样 mask。
+
+```json
+{
+  "sample_type": "pretrain_next_sentence_mixedmask",
+  "video_id": "...",
+  "history": [
+    {
+      "sentence_idx": 0,
+      "text": "chunk1 text",
+      "video_window": [start, end],
+      "num_frames": 3
+    },
+    {
+      "sentence_idx": 1,
+      "text": "chunk2 text",
+      "video_window": [start, end],
+      "num_frames": 3
+    },
+    {
+      "sentence_idx": 2,
+      "text": "chunk3 text",
+      "video_window": [start, end],
+      "num_frames": 3
+    }
+  ],
+  "current_visual": {
+    "sentence_idx": 3,
+    "video_window": [start_t, end_t],
+    "num_frames": 3
+  },
+  "target": "chunk4 text",
+  "mask_policy": {
+    "mask_current_visual_prob": 0.33,
+    "no_mask_prob": 0.33,
+    "random_unit_modality_mask_prob": 0.34
+  }
+}
+```
+
+注意：
 
 ```text
-100% grounded
-100% future
-70% grounded / 30% future
-50% grounded / 50% future
+build_samples.py 只生成完整 unmasked sample；
+dataset / collator 在训练时动态决定 mask。
 ```
 
-## 5. Contrastive Video-Text Alignment
+这样同一条样本在不同 epoch 可能看到不同 mask，起到数据增强作用。
 
-### 目标
+---
 
-除了 next-token prediction，还显式学习当前 ultrasound visual segment 和对应 narration sentence 的匹配关系。
+## 7. Prompt 设计
+
+System prompt：
+
+```text
+You are an ultrasound teaching assistant.
+You are given a sequence of ultrasound video frames and narration chunks.
+Some visual or textual parts may be masked.
+Use the available visual and textual context to produce the target narration chunk.
+Output only the target narration chunk.
+```
+
+未 mask 的 unit：
+
+```text
+[frames...]
+Narration: chunk text
+```
+
+mask visual 的 unit：
+
+```text
+[VISUAL MASKED]
+Narration: chunk text
+```
+
+mask text 的 unit：
+
+```text
+[frames...]
+Narration: [TEXT MASKED]
+```
+
+当前 chunk no-mask：
+
+```text
+[current frames...]
+Narration:
+```
+
+当前 chunk visual masked：
+
+```text
+[VISUAL MASKED]
+Narration:
+```
+
+assistant 输出：
+
+```text
+target chunk text
+```
+
+---
+
+## 8. Contrastive Video-Text Alignment
+
+在 V4 稳定后，可以继续加入 contrastive objective，用来显式对齐当前 ultrasound visual segment 和对应 narration sentence。
 
 正样本对为：
 
@@ -154,11 +364,7 @@ $$
 V_t \leftrightarrow S_t
 $$
 
-其中 $V_t$ 是当前 ultrasound visual segment，$S_t$ 是对应 narration sentence。
-
-### 表征
-
-定义 video embedding 和 text embedding：
+定义：
 
 $$
 z_t^V = f(V_t)
@@ -170,9 +376,7 @@ $$
 
 其中 $z_t^V$ 和 $z_t^T$ 是归一化后的视觉与文本表示。
 
-### Video-to-Text InfoNCE
-
-对于 batch 中的 $N$ 个 video-text pair，video-to-text loss 为：
+Video-to-text InfoNCE：
 
 $$
 \mathcal{L}_{V \rightarrow T}
@@ -188,9 +392,7 @@ $$
 }
 $$
 
-### Text-to-Video InfoNCE
-
-对称的 text-to-video loss 为：
+Text-to-video InfoNCE：
 
 $$
 \mathcal{L}_{T \rightarrow V}
@@ -206,9 +408,7 @@ $$
 }
 $$
 
-### Symmetric Contrastive Loss
-
-最终对比学习损失为：
+Symmetric contrastive loss：
 
 $$
 \mathcal{L}_{contrast}
@@ -221,74 +421,61 @@ $$
 \right)
 $$
 
-### 负样本设计
+最终可扩展为：
 
-可以使用两类负样本：
+$$
+\mathcal{L}
+=
+\mathcal{L}_{\mathrm{NSP\text{-}Mask}}
++
+\lambda_c \mathcal{L}_{contrast}
+$$
+
+负样本可以包括：
 
 ```text
 easy negatives: batch 中其他 video-text pairs
 hard negatives: 同一视频中相邻但不匹配的 chunks
 ```
 
-hard negatives 对 ultrasound teaching video 尤其重要，因为相邻 clip 往往视觉和语义都很接近，能迫使模型学习更细粒度的 video-text correspondence。
+---
 
-## 6. 最终目标
+## 9. 推荐实现顺序
 
-完整 pretraining objective 可以写成：
-
-$$
-\mathcal{L}
-=
-\mathcal{L}_{AR}
-+
-\lambda_c \mathcal{L}_{contrast}
-$$
-
-也就是：
-
-$$
-\mathcal{L}
-=
-\mathcal{L}_{ground}
-+
-\lambda_f \mathcal{L}_{future}
-+
-\lambda_c \mathcal{L}_{contrast}
-$$
-
-其中：
-
-- $\lambda_f$ 控制 Future Narration 的权重。
-- $\lambda_c$ 控制 Contrastive Alignment 的权重。
-
-## 7. 推荐实现顺序
-
-### V4: Mixed AR Pretraining
+### V4: Mixed Masked Interleave Pretraining
 
 优先实现：
 
 ```text
-Grounded Narration + Future Narration
+Next Sentence Prediction with Mixed Visual & Textual Masking
 ```
 
-建议先使用：
+需要改动：
 
 ```text
-70% grounded
-30% future
+pretrain/build_samples.py
+pretrain/dataset.py
+pretrain/collator.py
+pretrain/infer.py
 ```
 
-这一版只需要改 sample builder 和 prompt / collator，不需要自定义 loss，实现风险低。
+其中：
+
+- sample builder 生成 history + current_visual + target；
+- dataset 负责采样 history frames 和 current frames；
+- collator 动态采样 masking mode；
+- training loss 仍然是 causal LM loss；
+- inference 默认使用 no-mask setting，即 history + current visual -> current text。
 
 ### V5: Contrastive-enhanced Pretraining
 
-等 V4 稳定后再实现：
+等 V4 稳定后再加入：
 
 ```text
-Mixed AR + symmetric InfoNCE
+Mixed masked NSP + symmetric InfoNCE
 ```
 
-这一版需要：
+需要额外实现：
 
 ```text
 video/text representation extraction
@@ -297,26 +484,73 @@ custom Trainer loss
 positive/negative pair construction
 ```
 
-实现成本更高，但能进一步增强 ultrasound visual-text alignment。
+---
 
-## 8. 总结
+## 10. Eval 设计
+
+V4 eval 应分三种 setting：
+
+### 10.1 No-mask eval
+
+```text
+history visual-text + current visual
+→ current text
+```
+
+衡量 grounded narration。
+
+### 10.2 Current-visual-masked eval
+
+```text
+history visual-text + [current visual masked]
+→ current text
+```
+
+衡量 future narration / temporal anticipation。
+
+### 10.3 Random modality mask eval
+
+```text
+partially masked history + current visual
+→ current text
+```
+
+衡量 modality robustness。
+
+每种 setting 都可以计算：
+
+```text
+word F1
+BLEU-1/2/4
+ROUGE-L
+prefix@1/3/5
+length ratio
+medical concept precision / recall / F1
+hallucination rate
+```
+
+---
+
+## 11. 总结
 
 | Component | Input | Target | Main ability |
 |---|---|---|---|
-| Grounded Narration | $H_{<t}, V_t$ | $S_t$ | Visual-language grounding |
-| Future Narration | $H_{<t}$ | $S_t$ | Temporal / procedural anticipation |
-| Contrastive Alignment | $V_t, S_t$ | matched pair | Fine-grained video-text correspondence |
+| Mask current visual | $H_{<t}$ | $S_t$ | Future narration / temporal anticipation |
+| No mask | $H_{<t}, V_t$ | $S_t$ | Visual-language grounding |
+| Random modality mask | partially masked $H_{<t}, V_t$ | $S_t$ | Cross-modal robustness |
+| Contrastive alignment | $V_t, S_t$ | matched pair | Fine-grained video-text correspondence |
 
 最终模型不只是学习“继续说下一句”，而是同时学习：
 
 ```text
 当前画面如何被描述
-接下来可能讲什么
+不看当前视频时如何预测未来讲解
+缺失某个模态时如何利用另一个模态补偿
 哪段视频和哪句 narration 匹配
 ```
 
 这会让 pretraining story 从单纯的 next narration prediction，升级为：
 
 ```text
-Ultrasound visual-text temporal pretraining
+Next Sentence Prediction with Mixed Visual & Textual Masking
 ```

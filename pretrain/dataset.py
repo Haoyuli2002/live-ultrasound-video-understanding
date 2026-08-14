@@ -132,11 +132,27 @@ class PretrainCaptionDataset:
 
         return history_frames
 
+    def _sample_current_visual_frames(self, row: Dict[str, Any]) -> List[Image.Image]:
+        video_path = self._resolve_video_path(row)
+        current_visual = row.get("current_visual") or {}
+        start, end = current_visual.get("video_window", row.get("video_window", [0.0, 0.0]))
+        n_frames = int(current_visual.get("num_frames", 3))
+        return sample_uniform_n_frames(
+            video_path,
+            float(start),
+            float(end),
+            n_frames=n_frames,
+            resize=self.frame_size,
+        )
+
     def __getitem__(self, idx: int) -> Dict[str, Any]:
         row = dict(self.rows[idx])
-        if row.get("sample_type") == "pretrain_caption_sentence_interleave":
+        sample_type = row.get("sample_type")
+        if sample_type in {"pretrain_caption_sentence_interleave", "pretrain_next_sentence_mixedmask"}:
             row["history_frames"] = self._sample_interleave_history_frames(row)
             row["frames"] = []
+            if sample_type == "pretrain_next_sentence_mixedmask":
+                row["current_visual_frames"] = self._sample_current_visual_frames(row)
         else:
             row["frames"] = self._sample_frames(row)
         return row

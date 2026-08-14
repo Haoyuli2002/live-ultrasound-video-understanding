@@ -26,6 +26,7 @@ encoded (multimodal) input_ids, robust to image-placeholder expansion.
 from __future__ import annotations
 
 from dataclasses import dataclass
+import random
 from typing import Any, Dict, List
 
 import torch
@@ -41,6 +42,12 @@ You are given a sequence of ultrasound video frames interleaved with prior
 narration sentences. Each group of frames corresponds to the narration sentence
 immediately following it. Continue the sequence by directly producing the next
 narration sentence. Output only the next narration sentence."""
+
+MIXEDMASK_SYSTEM_PROMPT = """You are an ultrasound teaching assistant.
+You are given a sequence of ultrasound video frames and narration chunks.
+Some visual or textual parts may be masked. Use the available visual and textual
+context to produce the target narration chunk. Output only the target narration
+chunk."""
 
 
 def _content_with_images(frames, prev_context: str):
@@ -76,6 +83,96 @@ def build_interleave_messages(
             content.append({"type": "image", "image": img})
         text = (item.get("text") or "").strip()
         content.append({"type": "text", "text": f"Narration: {text}"})
+
+    messages = [
+        {"role": "system", "content": system_prompt},
+        {"role": "user", "content": content},
+    ]
+    if target is not None:
+        messages.append({"role": "assistant", "content": target})
+    return messages
+
+
+def _choose_mixedmask_mode(mask_policy: Dict[str, Any] | None, mask_mode: str | None = None) -> str:
+    if mask_mode:
+        return mask_mode
+
+    policy = mask_policy or {}
+    modes = [
+        ("mask_current_visual", float(policy.get("mask_current_visual_prob", 0.33))),
+        ("no_mask", float(policy.get("no_mask_prob", 0.33))),
+        ("random_unit_modality_mask", float(policy.get("random_unit_modality_mask_prob", 0.34))),
+    ]
+    total = sum(max(0.0, prob) for _, prob in modes)
+    if total <= 0:
+        return "no_mask"
+
+    value = random.random() * total
+    cumulative = 0.0
+    for mode, prob in modes:
+        cumulative += max(0.0, prob)
+        if value <= cumulative:
+            return mode
+    return modes[-1][0]
+
+
+def _sample_random_mixedmask(history, include_current_visual: bool = True) -> tuple[str, int | None]:
+    candidates: List[tuple[str, int | None]] = []
+    for idx, _ in enumerate(history):
+        candidates.append(("history_visual", idx))
+        candidates.append(("history_text", idx))
+    if include_current_visual:
+        candidates.append(("current_visual", None))
+    if not candidates:
+        return ("current_visual", None)
+    return random.choice(candidates)
+
+
+def build_mixedmask_messages(
+    history,
+    history_frames,
+    current_visual_frames,
+    target: str | None = None,
+    mask_policy: Dict[str, Any] | None = None,
+    mask_mode: str | None = None,
+    system_prompt: str = MIXEDMASK_SYSTEM_PROMPT,
+):
+    """Build V4 mixed visual/textual masking messages.
+
+    Modes:
+      - mask_current_visual: history visual/text only, current visual masked.
+      - no_mask: history visual/text + current visual.
+      - random_unit_modality_mask: mask one history visual/text or current visual.
+    """
+    mode = _choose_mixedmask_mode(mask_policy, mask_mode)
+    random_mask = None
+    if mode == "random_unit_modality_mask":
+        random_mask = _sample_random_mixedmask(history, include_current_visual=True)
+
+    content = []
+    for idx, (item, frames) in enumerate(zip(history, history_frames)):
+        mask_visual = random_mask == ("history_visual", idx)
+        mask_text = random_mask == ("history_text", idx)
+
+        if mask_visual:
+            content.append({"type": "text", "text": "[VISUAL MASKED]"})
+        else:
+            for img in frames:
+                content.append({"type": "image", "image": img})
+
+        text = (item.get("text") or "").strip()
+        if mask_text:
+            text = "[TEXT MASKED]"
+        content.append({"type": "text", "text": f"Narration: {text}"})
+
+    mask_current_visual = mode == "mask_current_visual" or random_mask == ("current_visual", None)
+    if mask_current_visual:
+        content.append({"type": "text", "text": "[CURRENT VISUAL MASKED]"})
+    else:
+        for img in current_visual_frames or []:
+            content.append({"type": "image", "image": img})
+
+    content.append({"type": "text", "text": "Narration:"})
 
     messages = [
         {"role": "system", "content": system_prompt},
@@ -170,6 +267,14 @@ class PretrainCollator:
                     history=feat.get("history", []),
                     history_frames=feat.get("history_frames", []),
                     target=target,
+                )
+            elif feat.get("sample_type") == "pretrain_next_sentence_mixedmask":
+                full_messages = build_mixedmask_messages(
+                    history=feat.get("history", []),
+                    history_frames=feat.get("history_frames", []),
+                    current_visual_frames=feat.get("current_visual_frames", []),
+                    target=target,
+                    mask_policy=feat.get("mask_policy"),
                 )
             else:
                 full_messages = build_messages(
