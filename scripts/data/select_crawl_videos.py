@@ -187,6 +187,35 @@ def collect_downloaded_candidates(crawl_dirs: list[Path], excluded_ids: set[str]
     return candidates
 
 
+def collect_existing_video_candidates(data_root: Path, excluded_ids: set[str]) -> list[dict[str, Any]]:
+    """Collect already-materialized videos under cluster_data/videos as candidates."""
+    candidates: list[dict[str, Any]] = []
+    seen_ids: set[str] = set()
+    videos_dir = data_root / "videos"
+    if not videos_dir.exists():
+        return candidates
+
+    for video_path in sorted(videos_dir.rglob("*")):
+        if not video_path.is_file() or video_path.suffix.lower() not in VIDEO_EXTS:
+            continue
+        video_id = video_path.stem
+        if video_id in excluded_ids or video_id in seen_ids:
+            continue
+        seen_ids.add(video_id)
+        candidates.append({
+            "video_id": video_id,
+            "video_path": video_path.resolve(),
+            "decision": "existing",
+            "quality": 0,
+            "duration_sec": 0.0,
+            "category": infer_category_from_path(video_path),
+            "crawl_dir": "existing_cluster_data",
+        })
+
+    candidates.sort(key=lambda x: (x["category"], x["video_id"]))
+    return candidates
+
+
 def transcode_to_qwen3_mp4(src: Path, dst: Path, *, ffmpeg_bin: str, crf: int, preset: str) -> None:
     """Transcode to H.264/yuv420p/AAC MP4 for Qwen3/OpenCV compatibility."""
     dst.parent.mkdir(parents=True, exist_ok=True)
@@ -271,6 +300,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--crawl-dir", type=Path, action="append", default=[], help="Crawl run dir containing media/; can be repeated")
     parser.add_argument("--crawl-root", type=Path, default=None, help="Root containing *_youtube / *_bilibili crawl run dirs")
     parser.add_argument("--skip-vlm-filter", action="store_true", help="Collect all downloaded videos from crawl dirs instead of requiring VLM reports")
+    parser.add_argument("--include-existing-videos", action="store_true", help="Also include videos already under data-root/videos as candidates")
     parser.add_argument("--data-root", type=Path, default=Path("cluster_data"))
     parser.add_argument("--dataset-name", type=str, default="extra100")
     parser.add_argument("--train-count", type=int, default=80)
@@ -300,10 +330,20 @@ def main() -> None:
     total_needed = args.train_count + args.eval_count
     if args.skip_vlm_filter:
         crawl_dirs = discover_crawl_dirs(args.crawl_dir, args.crawl_root)
-        if not crawl_dirs:
-            raise ValueError("--skip-vlm-filter requires --crawl-dir and/or --crawl-root")
-        candidates = collect_downloaded_candidates(crawl_dirs, excluded_ids)
+        if not crawl_dirs and not args.include_existing_videos:
+            raise ValueError("--skip-vlm-filter requires --crawl-dir/--crawl-root and/or --include-existing-videos")
+        candidates = []
+        used_ids: set[str] = set()
+        if args.include_existing_videos:
+            for candidate in collect_existing_video_candidates(args.data_root, excluded_ids):
+                used_ids.add(candidate["video_id"])
+                candidates.append(candidate)
+        for candidate in collect_downloaded_candidates(crawl_dirs, excluded_ids | used_ids):
+            used_ids.add(candidate["video_id"])
+            candidates.append(candidate)
         source_paths = [str(p) for p in crawl_dirs]
+        if args.include_existing_videos:
+            source_paths.insert(0, str(args.data_root / "videos"))
     else:
         if not args.report:
             raise ValueError("Provide at least one --report, or use --skip-vlm-filter with --crawl-dir/--crawl-root")
