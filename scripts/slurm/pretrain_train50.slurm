@@ -6,15 +6,22 @@
 #SBATCH --cpus-per-task=4
 #SBATCH --mem=32G
 #SBATCH --time=12:00:00
-#SBATCH --output=/dss/dsshome1/04/ge75vid2/haoyu/live-ultrasound-video-understanding/cluster_data/logs/pretrain_train50_%j.out
-#SBATCH --error=/dss/dsshome1/04/ge75vid2/haoyu/live-ultrasound-video-understanding/cluster_data/logs/pretrain_train50_%j.err
+#SBATCH --output=logs/%x_%j.out
+#SBATCH --error=logs/%x_%j.err
 
 set -euo pipefail
 
 REPO_DIR="/dss/dsshome1/04/ge75vid2/haoyu/live-ultrasound-video-understanding"
 cd "${REPO_DIR}"
 
-mkdir -p cluster_data/logs cluster_data/checkpoints
+DATA_ROOT="${DATA_ROOT:-cluster_data}"
+RUN_NAME="${RUN_NAME:-pretrain_v1_segment_qwen3vl_2b_train50}"
+RUN_DIR="${DATA_ROOT}/experiments/pretrain/${RUN_NAME}"
+OUTPUT_DIR="${RUN_DIR}/checkpoints/adapter"
+LOG_DIR="${RUN_DIR}/logs"
+export DATA_ROOT
+
+mkdir -p logs "${OUTPUT_DIR}" "${LOG_DIR}"
 
 echo "======================================================================"
 echo "[job] Pretrain Full V1: train50"
@@ -22,6 +29,9 @@ echo "[job] job_id=${SLURM_JOB_ID:-unknown}"
 echo "[job] node=${SLURMD_NODENAME:-unknown}"
 echo "[job] start_time=$(date)"
 echo "[job] repo=${REPO_DIR}"
+echo "[job] DATA_ROOT=${DATA_ROOT}"
+echo "[job] RUN_NAME=${RUN_NAME}"
+echo "[job] RUN_DIR=${RUN_DIR}"
 echo "======================================================================"
 
 # Activate conda environment.
@@ -46,12 +56,13 @@ PY
 echo "======================================================================"
 
 echo "[check] train samples:"
-wc -l cluster_data/pretrain/train_pretrain_samples.jsonl
+wc -l "${DATA_ROOT}/pretrain/train_pretrain_samples.jsonl"
 
 echo "[check] train videos:"
 python - <<'PY'
 import json
-m = json.load(open("cluster_data/splits/train_videos.json"))
+import os
+m = json.load(open(os.path.join(os.environ.get("DATA_ROOT", "cluster_data"), "splits/train_videos.json")))
 print("[check] train_videos:", len(m))
 PY
 
@@ -61,9 +72,9 @@ echo "======================================================================"
 
 python pretrain/train.py \
   --model-name Qwen/Qwen3-VL-2B-Instruct \
-  --train-jsonl cluster_data/pretrain/train_pretrain_samples.jsonl \
-  --video-path-map cluster_data/splits/train_videos.json \
-  --output-dir cluster_data/checkpoints/pretrain_qwen3vl_train50 \
+  --train-jsonl "${DATA_ROOT}/pretrain/train_pretrain_samples.jsonl" \
+  --video-path-map "${DATA_ROOT}/splits/train_videos.json" \
+  --output-dir "${OUTPUT_DIR}" \
   --window-size 4 \
   --frame-size 224 \
   --num-train-epochs 3 \
@@ -77,5 +88,5 @@ python pretrain/train.py \
 
 echo "======================================================================"
 echo "[job] finished_time=$(date)"
-echo "[job] output_dir=cluster_data/checkpoints/pretrain_qwen3vl_train50"
+echo "[job] output_dir=${OUTPUT_DIR}"
 echo "======================================================================"
