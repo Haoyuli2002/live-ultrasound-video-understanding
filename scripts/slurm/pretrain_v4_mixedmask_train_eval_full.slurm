@@ -51,6 +51,11 @@ BASE_EVAL="${EVAL_DIR}/base_full_nomask.jsonl"
 LORA_EVAL="${EVAL_DIR}/lora_full_nomask.jsonl"
 COMPARE_JSONL="${EVAL_DIR}/compare_full_nomask_direct.jsonl"
 SUMMARY_JSON="${EVAL_DIR}/compare_full_nomask_direct_summary.json"
+RUN_LLM_JUDGE="${RUN_LLM_JUDGE:-0}"
+JUDGE_MODEL="${JUDGE_MODEL:-google/gemini-2.5-flash}"
+JUDGE_LIMIT="${JUDGE_LIMIT:-500}"
+JUDGE_JSONL="${EVAL_DIR}/llm_judge_blind_full_nomask.jsonl"
+JUDGE_SUMMARY_JSON="${EVAL_DIR}/llm_judge_blind_full_nomask_summary.json"
 
 source /dss/dsshome1/04/ge75vid2/miniconda3/etc/profile.d/conda.sh
 conda activate ultrasound
@@ -74,6 +79,9 @@ echo "[job] TRAIN_JSONL=${TRAIN_JSONL}"
 echo "[job] EVAL_JSONL=${EVAL_JSONL}"
 echo "[job] TRAIN_MAP=${TRAIN_MAP}"
 echo "[job] EVAL_MAP=${EVAL_MAP}"
+echo "[job] RUN_LLM_JUDGE=${RUN_LLM_JUDGE}"
+echo "[job] JUDGE_MODEL=${JUDGE_MODEL}"
+echo "[job] JUDGE_LIMIT=${JUDGE_LIMIT}"
 echo "======================================================================"
 
 echo "== git version =="
@@ -190,6 +198,28 @@ python pretrain/compare_predictions.py \
 
 echo "== V4 full eval summary =="
 cat "${SUMMARY_JSON}"
+
+if [[ "${RUN_LLM_JUDGE}" == "1" ]]; then
+  echo "== blind LLM judge: base vs LoRA =="
+  JUDGE_LIMIT_ARGS=()
+  if [[ -n "${JUDGE_LIMIT}" && "${JUDGE_LIMIT}" != "none" && "${JUDGE_LIMIT}" != "None" ]]; then
+    JUDGE_LIMIT_ARGS=(--limit "${JUDGE_LIMIT}")
+  fi
+
+  python pretrain/llm_judge_predictions.py \
+    --base "${BASE_EVAL}" \
+    --lora "${LORA_EVAL}" \
+    --output "${JUDGE_JSONL}" \
+    --summary-json "${JUDGE_SUMMARY_JSON}" \
+    --model "${JUDGE_MODEL}" \
+    "${JUDGE_LIMIT_ARGS[@]}" \
+    --resume
+
+  echo "== blind LLM judge summary =="
+  cat "${JUDGE_SUMMARY_JSON}"
+else
+  echo "== blind LLM judge skipped (RUN_LLM_JUDGE=${RUN_LLM_JUDGE}) =="
+fi
 
 echo "== output files =="
 find "${RUN_DIR}" -maxdepth 3 \( -type f -o -type d \) | sort

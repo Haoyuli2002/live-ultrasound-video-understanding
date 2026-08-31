@@ -4,6 +4,155 @@
 
 ---
 
+## 0. Quick Start / 常用指令速查
+
+### 0.1 进入项目并激活环境
+
+```bash
+cd /dss/dsshome1/04/ge75vid2/haoyu/live-ultrasound-video-understanding
+
+source /dss/dsshome1/04/ge75vid2/miniconda3/etc/profile.d/conda.sh
+conda activate ultrasound
+```
+
+### 0.2 提交 sbatch job
+
+```bash
+sbatch scripts/slurm/<your_job>.slurm
+```
+
+例如提交默认 2B V4 mixedmask train + full eval：
+
+```bash
+sbatch scripts/slurm/pretrain_v4_mixedmask_train_eval_full.slurm
+```
+
+如果要训练 8B，在提交时指定模型：
+
+```bash
+MODEL_NAME=Qwen/Qwen3-VL-8B-Instruct MODEL_TAG=qwen3vl_8b \
+  sbatch scripts/slurm/pretrain_v4_mixedmask_train_eval_full.slurm
+```
+
+提交成功后会看到：
+
+```text
+Submitted batch job <JOB_ID>
+```
+
+### 0.3 打开 GPU interactive shell
+
+推荐 MCML H100：
+
+```bash
+srun \
+  --partition=mcml-hgx-h100-94x4 \
+  --qos=mcml \
+  --gres=gpu:1 \
+  --cpus-per-task=16 \
+  --mem=120G \
+  --time=02:00:00 \
+  --pty bash
+```
+
+进入 GPU 节点后重新进入项目并激活环境：
+
+```bash
+cd /dss/dsshome1/04/ge75vid2/haoyu/live-ultrasound-video-understanding
+
+source /dss/dsshome1/04/ge75vid2/miniconda3/etc/profile.d/conda.sh
+conda activate ultrasound
+```
+
+### 0.4 查询当前 job
+
+查看当前用户所有 job：
+
+```bash
+squeue -u $USER
+```
+
+查看指定 job：
+
+```bash
+squeue -j <JOB_ID>
+```
+
+状态含义：
+
+```text
+PD = pending，排队中
+R  = running，正在运行
+CG = completing，快结束
+```
+
+### 0.5 查询预计启动时间
+
+查看当前用户所有 job 的预计启动时间：
+
+```bash
+squeue --start -u $USER
+```
+
+查看指定 job 的预计启动时间：
+
+```bash
+squeue --start -j <JOB_ID>
+```
+
+如果 `START_TIME` 显示 `N/A` 或 `Unknown`，说明 Slurm 当前无法可靠预测启动时间。
+
+查看更详细的排队原因和资源请求：
+
+```bash
+scontrol show job <JOB_ID> | grep -E "JobState|Reason|StartTime|SubmitTime|EligibleTime|Priority|TimeLimit|Partition|QOS|ReqTRES"
+```
+
+### 0.6 查看日志
+
+stdout 日志：
+
+```bash
+tail -f logs/<job_name>_<JOB_ID>.out
+```
+
+stderr 日志：
+
+```bash
+tail -n 100 logs/<job_name>_<JOB_ID>.err
+```
+
+例如：
+
+```bash
+tail -f logs/pretrain_v4_mixedmask_train_eval_5750247.out
+tail -n 100 logs/pretrain_v4_mixedmask_train_eval_5750247.err
+```
+
+### 0.7 查看 job 是否完成
+
+```bash
+sacct -j <JOB_ID> --format=JobID,JobName,State,Elapsed,ExitCode,Start,End
+```
+
+判断：
+
+```text
+COMPLETED + ExitCode=0:0  正常完成
+FAILED                    失败
+CANCELLED                 被取消
+TIMEOUT                   超时
+OUT_OF_MEMORY             内存/显存问题
+```
+
+### 0.8 取消 job
+
+```bash
+scancel <JOB_ID>
+```
+
+---
+
 ## 1. 登录 LRZ
 
 本地 Mac terminal：
@@ -586,6 +735,52 @@ local_checkpoints/
 ---
 
 ## 15. Pretrain 训练常用命令
+
+### 15.1 选择 2B / 8B 模型
+
+当前 V4 mixedmask Slurm 脚本支持通过环境变量选择模型：
+
+```bash
+scripts/slurm/pretrain_v4_mixedmask_train_eval_full.slurm
+```
+
+默认使用 2B：
+
+```bash
+sbatch scripts/slurm/pretrain_v4_mixedmask_train_eval_full.slurm
+```
+
+等价于：
+
+```bash
+MODEL_NAME=Qwen/Qwen3-VL-2B-Instruct MODEL_TAG=qwen3vl_2b \
+  sbatch scripts/slurm/pretrain_v4_mixedmask_train_eval_full.slurm
+```
+
+训练 8B：
+
+```bash
+MODEL_NAME=Qwen/Qwen3-VL-8B-Instruct MODEL_TAG=qwen3vl_8b \
+  sbatch scripts/slurm/pretrain_v4_mixedmask_train_eval_full.slurm
+```
+
+输出路径会根据 `MODEL_TAG` 自动区分：
+
+```text
+cluster_data/checkpoints/pretrain_qwen3vl_2b_train50_punct_sentence_mixedmask
+cluster_data/checkpoints/pretrain_qwen3vl_8b_train50_punct_sentence_mixedmask
+```
+
+eval 产物也会自动区分：
+
+```text
+cluster_data/eval/pretrain_v4_mixedmask_qwen3vl_2b_*full_nomask*.jsonl
+cluster_data/eval/pretrain_v4_mixedmask_qwen3vl_8b_*full_nomask*.jsonl
+```
+
+8B 建议使用 H100 94GB。提交前可以先做小规模 smoke，确认显存足够。
+
+### 15.2 旧版 V1 segment-level pretrain
 
 训练 50-video segment-level pretrain：
 

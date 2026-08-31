@@ -15,6 +15,34 @@ import cv2
 from PIL import Image
 
 
+def resize_with_aspect_ratio_and_pad(img: Image.Image, size: int) -> Image.Image:
+    """Resize with preserved aspect ratio, then pad to size x size.
+
+    Ultrasound frames should not be stretched into a square because that can
+    distort anatomical geometry and line artifacts.  We therefore scale the
+    longer side to ``size`` and pad the other side with black pixels, matching
+    typical ultrasound background color.
+    """
+    if size is None:
+        return img
+
+    img = img.convert("RGB")
+    w, h = img.size
+    if w <= 0 or h <= 0:
+        return img.resize((size, size), Image.BICUBIC)
+
+    scale = min(float(size) / float(w), float(size) / float(h))
+    new_w = max(1, int(round(w * scale)))
+    new_h = max(1, int(round(h * scale)))
+    resized = img.resize((new_w, new_h), Image.BICUBIC)
+
+    canvas = Image.new("RGB", (size, size), (0, 0, 0))
+    left = (size - new_w) // 2
+    top = (size - new_h) // 2
+    canvas.paste(resized, (left, top))
+    return canvas
+
+
 def _read_frames_at_times(
     cap: "cv2.VideoCapture",
     times: List[float],
@@ -45,7 +73,7 @@ def _read_frames_at_times(
         frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
         img = Image.fromarray(frame)
         if resize is not None:
-            img = img.resize((resize, resize), Image.BICUBIC)
+            img = resize_with_aspect_ratio_and_pad(img, resize)
         last_valid = img
         frames.append(img)
 
