@@ -99,14 +99,20 @@ def extract_audio(video_path, output_path=None, sample_rate=16000):
 # Whisper Transcription
 # ============================================================================
 
-def transcribe_audio(audio_path, model_size="medium", language=None, device="cpu"):
-    """Transcribe audio using faster-whisper. Returns segments with timestamps."""
+def load_whisper_model(model_size="medium", device="cpu"):
+    """Load faster-whisper once so batch ASR can reuse the model."""
     from faster_whisper import WhisperModel
 
     print(f"  Loading Whisper model: {model_size} (device: {device})")
     # For CPU: int8 for speed; for GPU: float16
     compute_type = "int8" if device == "cpu" else "float16"
-    model = WhisperModel(model_size, device=device, compute_type=compute_type)
+    return WhisperModel(model_size, device=device, compute_type=compute_type)
+
+
+def transcribe_audio(audio_path, model_size="medium", language=None, device="cpu", model=None):
+    """Transcribe audio using faster-whisper. Returns segments with timestamps."""
+    if model is None:
+        model = load_whisper_model(model_size, device)
 
     print(f"  Transcribing: {Path(audio_path).name}")
     t0 = time.time()
@@ -151,7 +157,7 @@ def transcribe_audio(audio_path, model_size="medium", language=None, device="cpu
 # ============================================================================
 
 def transcribe_video(video_path, model_size="medium", language=None,
-                     output_dir=None, keep_audio=False, device="cpu"):
+                     output_dir=None, keep_audio=False, device="cpu", model=None):
     """Full pipeline: video → audio → transcription → JSON."""
     video_path = Path(video_path)
     video_id = video_path.stem
@@ -179,7 +185,7 @@ def transcribe_video(video_path, model_size="medium", language=None,
         return None
 
     # Step 2: Transcribe
-    result = transcribe_audio(audio_file, model_size=model_size, language=language, device=device)
+    result = transcribe_audio(audio_file, model_size=model_size, language=language, device=device, model=model)
 
     # Step 3: Build output
     output = {
@@ -223,7 +229,7 @@ def transcribe_video(video_path, model_size="medium", language=None,
 # Batch Processing
 # ============================================================================
 
-def batch_transcribe(input_dir, model_size="medium", output_dir=None, max_videos=None, device="cpu"):
+def batch_transcribe(input_dir, model_size="medium", output_dir=None, max_videos=None, device="cpu", language=None):
     """Transcribe all videos in a directory."""
     import glob
 
@@ -252,11 +258,22 @@ def batch_transcribe(input_dir, model_size="medium", output_dir=None, max_videos
     print(f"  Model: {model_size} | Device: {device}")
     print(f"{'='*70}")
 
+    model = None
+    if remaining:
+        model = load_whisper_model(model_size, device)
+
     results = []
     for i, video in enumerate(remaining, 1):
         print(f"\n[{i}/{len(remaining)}] {Path(video).stem}")
         try:
-            result = transcribe_video(video, model_size=model_size, output_dir=output_dir, device=device)
+            result = transcribe_video(
+                video,
+                model_size=model_size,
+                language=language,
+                output_dir=output_dir,
+                device=device,
+                model=model,
+            )
             if result:
                 results.append(result)
         except Exception as e:
@@ -305,7 +322,8 @@ def main():
     elif args.input_dir or args.batch:
         input_dir = args.input_dir or "UltrasoundCrawler_KeyCode_20260323_v2/output/20260520_162816_youtube/media"
         batch_transcribe(input_dir, model_size=model_size,
-                         output_dir=args.output_dir, max_videos=args.max_videos, device=device)
+                         output_dir=args.output_dir, max_videos=args.max_videos, device=device,
+                         language=args.language)
     else:
         # Default: transcribe the default video
         transcribe_video(DEFAULT_VIDEO, model_size=model_size, language=args.language,
