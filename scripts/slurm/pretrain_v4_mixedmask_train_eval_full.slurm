@@ -111,7 +111,7 @@ if [[ "${BUILD_SAMPLES}" == "1" ]]; then
     --split-punctuation '.?!;:' \
     --mask-current-visual-prob 0.33 \
     --no-mask-prob 0.33 \
-    --random-unit-modality-mask-prob 0.34
+    --text-modality-mask-prob 0.34
 else
   echo "== build V4 train samples skipped (BUILD_SAMPLES=${BUILD_SAMPLES}) =="
 fi
@@ -151,7 +151,7 @@ if [[ "${BUILD_SAMPLES}" == "1" ]]; then
     --split-punctuation '.?!;:' \
     --mask-current-visual-prob 0.33 \
     --no-mask-prob 0.33 \
-    --random-unit-modality-mask-prob 0.34
+    --text-modality-mask-prob 0.34
 else
   echo "== build V4 eval samples skipped (BUILD_SAMPLES=${BUILD_SAMPLES}) =="
 fi

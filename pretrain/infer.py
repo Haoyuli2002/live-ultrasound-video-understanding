@@ -219,11 +219,12 @@ def parse_args():
     parser.add_argument("--max-new-tokens", type=int, default=128)
     parser.add_argument(
         "--mixedmask-eval-mode",
-        choices=["no_mask", "mask_current_visual", "random_unit_modality_mask"],
+        choices=["no_mask", "mask_current_visual", "text_modality_mask", "random_unit_modality_mask"],
         default="no_mask",
         help=(
             "For pretrain_next_sentence_mixedmask samples: eval with current visual, "
-            "mask current visual, or apply one random unit-level modality mask."
+            "mask current visual, or mask all historical narration text. "
+            "random_unit_modality_mask is accepted as a deprecated alias."
         ),
     )
 

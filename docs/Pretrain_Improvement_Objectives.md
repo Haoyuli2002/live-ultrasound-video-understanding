@@ -142,41 +142,29 @@ What is visible now?
 
 ---
 
-### 3.3 Random unit-level modality mask: 34%
+### 3.3 Text modality mask: 34%
 
-随机选择一个 unit，并 mask 掉该 unit 的 visual 或 text。
+遮蔽历史 context 里的所有文本，保留历史视频和当前视频。
 
-例 1：mask 历史 visual：
-
-```text
-chunk1 visual + chunk1 text
-chunk2 [VISUAL MASKED] + chunk2 text
-chunk3 visual + chunk3 text
-chunk4 visual
-→ chunk4 text
-```
-
-例 2：mask 历史 text：
+输入形式：
 
 ```text
-chunk1 visual + chunk1 text
+chunk1 visual + [TEXT MASKED]
 chunk2 visual + [TEXT MASKED]
-chunk3 visual + chunk3 text
+chunk3 visual + [TEXT MASKED]
 chunk4 visual
 → chunk4 text
 ```
-
-也可以 mask 当前 chunk visual，使其退化为 future prediction。
 
 该 mode 主要学习：
 
 ```text
-cross-modal robustness
-visual-text dependency learning
-modality dropout
+visual-driven narration generation
+video-only historical state understanding
+reducing shortcut reliance on prior transcript text
 ```
 
-它强迫模型不能只依赖文本续写，也不能只依赖视频，而要学会在某个模态缺失时利用另一个模态补偿。
+它强迫模型不能只依赖历史 transcript 做语言续写，而要利用历史视频和当前视频来生成下一句 narration。
 
 ---
 
@@ -186,7 +174,7 @@ modality dropout
 |---|---|---|---|
 | Mask current visual | $H_{<t}$ | $S_t$ | Future narration / temporal anticipation |
 | No mask | $H_{<t}, V_t$ | $S_t$ | Grounded narration / visual-language grounding |
-| Random unit modality mask | partially masked $H_{<t}, V_t$ | $S_t$ | Cross-modal robustness / modality dependency |
+| Text modality mask | history visual + current visual, history text masked | $S_t$ | Visual-driven narration / reduced text shortcut |
 
 因此 V4 可以统一覆盖之前讨论的两个 AR objective：
 
@@ -283,7 +271,7 @@ V4 样本应保留完整 unmasked 信息，由 dataset / collator 在训练时�
   "mask_policy": {
     "mask_current_visual_prob": 0.33,
     "no_mask_prob": 0.33,
-    "random_unit_modality_mask_prob": 0.34
+    "text_modality_mask_prob": 0.34
   }
 }
 ```

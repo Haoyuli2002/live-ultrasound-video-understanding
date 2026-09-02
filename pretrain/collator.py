@@ -95,13 +95,22 @@ def build_interleave_messages(
 
 def _choose_mixedmask_mode(mask_policy: Dict[str, Any] | None, mask_mode: str | None = None) -> str:
     if mask_mode:
+        if mask_mode == "random_unit_modality_mask":
+            # Backward-compatible alias for older eval commands.  The V4 policy
+            # now uses text_modality_mask as the third mode.
+            return "text_modality_mask"
         return mask_mode
 
     policy = mask_policy or {}
+    text_modality_mask_prob = policy.get(
+        "text_modality_mask_prob",
+        # Backward compatibility for samples generated before the rename.
+        policy.get("random_unit_modality_mask_prob", 0.34),
+    )
     modes = [
         ("mask_current_visual", float(policy.get("mask_current_visual_prob", 0.33))),
         ("no_mask", float(policy.get("no_mask_prob", 0.33))),
-        ("random_unit_modality_mask", float(policy.get("random_unit_modality_mask_prob", 0.34))),
+        ("text_modality_mask", float(text_modality_mask_prob)),
     ]
     total = sum(max(0.0, prob) for _, prob in modes)
     if total <= 0:
@@ -142,17 +151,19 @@ def build_mixedmask_messages(
     Modes:
       - mask_current_visual: history visual/text only, current visual masked.
       - no_mask: history visual/text + current visual.
-      - random_unit_modality_mask: mask one history visual/text or current visual.
+      - text_modality_mask: history visual + current visual, all history text masked.
     """
     mode = _choose_mixedmask_mode(mask_policy, mask_mode)
     random_mask = None
     if mode == "random_unit_modality_mask":
+        # Legacy direct caller support; normal policy selection no longer emits
+        # this mode.
         random_mask = _sample_random_mixedmask(history, include_current_visual=True)
 
     content = []
     for idx, (item, frames) in enumerate(zip(history, history_frames)):
         mask_visual = random_mask == ("history_visual", idx)
-        mask_text = random_mask == ("history_text", idx)
+        mask_text = mode == "text_modality_mask" or random_mask == ("history_text", idx)
 
         if mask_visual:
             content.append({"type": "text", "text": "[VISUAL MASKED]"})

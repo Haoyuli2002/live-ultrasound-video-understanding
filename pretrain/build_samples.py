@@ -403,7 +403,7 @@ def build_sentence_samples_for_video(
     include_comma_split: bool,
     mask_current_visual_prob: float,
     no_mask_prob: float,
-    random_unit_modality_mask_prob: float,
+    text_modality_mask_prob: float,
 ) -> List[Dict[str, Any]]:
     video_id = transcript.get("video_id")
     segments = transcript.get("segments", [])
@@ -440,8 +440,10 @@ def build_sentence_samples_for_video(
         # with a sliding history window of at most `history_units` sentences.
         #
         # Mixed-mask format extends this by also exposing the target sentence's
-        # current visual segment. The collator dynamically masks current visual,
-        # no modality, or one historical/current modality during training.
+        # current visual segment. The collator dynamically chooses between:
+        #   1) masking current visual,
+        #   2) no masking,
+        #   3) masking all historical text while keeping visual context.
         for idx in range(1, len(sentence_units)):
             unit = sentence_units[idx]
             text = normalize_text(unit.get("text") or "")
@@ -509,7 +511,7 @@ def build_sentence_samples_for_video(
                     "mask_policy": {
                         "mask_current_visual_prob": mask_current_visual_prob,
                         "no_mask_prob": no_mask_prob,
-                        "random_unit_modality_mask_prob": random_unit_modality_mask_prob,
+                        "text_modality_mask_prob": text_modality_mask_prob,
                     },
                     "meta": {
                         "unit": "sentence",
@@ -580,7 +582,7 @@ def build_samples_for_video(
     include_comma_split: bool,
     mask_current_visual_prob: float,
     no_mask_prob: float,
-    random_unit_modality_mask_prob: float,
+    text_modality_mask_prob: float,
 ) -> List[Dict[str, Any]]:
     if unit == "segment":
         return build_segment_samples_for_video(
@@ -608,7 +610,7 @@ def build_samples_for_video(
             include_comma_split=include_comma_split,
             mask_current_visual_prob=mask_current_visual_prob,
             no_mask_prob=no_mask_prob,
-            random_unit_modality_mask_prob=random_unit_modality_mask_prob,
+            text_modality_mask_prob=text_modality_mask_prob,
         )
 
     raise ValueError(f"Unsupported unit: {unit}")
@@ -652,8 +654,10 @@ def parse_args() -> argparse.Namespace:
                         help="Mixedmask mode: probability of masking the current visual segment.")
     parser.add_argument("--no-mask-prob", type=float, default=0.33,
                         help="Mixedmask mode: probability of using all available visual/text context.")
-    parser.add_argument("--random-unit-modality-mask-prob", type=float, default=0.34,
-                        help="Mixedmask mode: probability of masking one random unit modality.")
+    parser.add_argument("--text-modality-mask-prob", type=float, default=None,
+                        help="Mixedmask mode: probability of masking all historical narration text while keeping visual context.")
+    parser.add_argument("--random-unit-modality-mask-prob", type=float, default=None,
+                        help="Deprecated alias for --text-modality-mask-prob; kept for backward compatibility.")
     return parser.parse_args()
 
 
@@ -675,6 +679,13 @@ def main() -> None:
     out_path.parent.mkdir(parents=True, exist_ok=True)
 
     use_context = not args.no_context
+    text_modality_mask_prob = (
+        args.text_modality_mask_prob
+        if args.text_modality_mask_prob is not None
+        else args.random_unit_modality_mask_prob
+    )
+    if text_modality_mask_prob is None:
+        text_modality_mask_prob = 0.34
 
     total_samples = 0
     per_video_counts = {}
@@ -704,7 +715,7 @@ def main() -> None:
                 include_comma_split=args.include_comma_split,
                 mask_current_visual_prob=args.mask_current_visual_prob,
                 no_mask_prob=args.no_mask_prob,
-                random_unit_modality_mask_prob=args.random_unit_modality_mask_prob,
+                text_modality_mask_prob=text_modality_mask_prob,
             )
 
             for s in samples:
