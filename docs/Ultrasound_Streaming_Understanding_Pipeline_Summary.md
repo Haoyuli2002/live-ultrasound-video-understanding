@@ -207,6 +207,8 @@ text modality mask probability : 0.34  # 遮蔽历史 context 里的所有文本
 
 也就是先保持原始宽高比 resize，再用黑边补齐到模型输入尺寸。
 
+需要注意：Qwen3-VL 本身支持 dynamic resolution，并不要求输入必须固定为 `224 × 224`。当前工程实现中固定使用 `224 × 224` 是一个 baseline setting，主要原因是方便控制显存占用，避免后续使用更大分辨率或动态高分辨率视频帧训练时出现 OOM。同时，固定尺寸也让 Pretrain 和 SFT 的视频输入分布保持一致，便于排查训练问题。
+
 当前 Pretrain 和 SFT 统一使用相同的图像输入尺寸：
 
 ```text
@@ -224,6 +226,8 @@ text modality mask probability : 0.34  # 遮蔽历史 context 里的所有文本
 ```
 
 这样可以保留超声图像原始形态，避免由于强行拉伸导致解剖结构和探头视野变形。
+
+后续如果显存允许，可以再实验更高固定分辨率或 Qwen3-VL 原生 dynamic resolution / `max_pixels` 设置，比较细节保留、训练速度、显存占用和 QA 效果之间的 trade-off。
 
 涉及模块：
 
@@ -408,174 +412,271 @@ Judge 依据：
 
 ---
 
-## 9. Streaming QA / SFT
+## 9. Streaming QA / SFT：基于 Summary Bank 和 `<WAIT>/<ANSWER>`
 
-Pretrain 后，模型进入 QA/SFT 阶段。
+Pretrain 后，完整路线进入三阶段训练中的后两步：Information Compression / Learn Summary Bank，然后进入 Streaming QA / SFT。
 
-在实时 QA 中，模型持续观看视频流，并在不同时间点面对问题。
-
-输出格式是：
+这一阶段的目标不是把完整历史视频帧和文本全部塞给模型，而是让模型在视频播放过程中持续维护一个 query-agnostic 的视频理解状态：
 
 ```text
-<WAIT> reason
+B_t = [S_{t-(K-1)Δ}, ..., S_t]
 ```
 
-或者：
+这里 `B_t` 是时间 `t` 的 sliding temporal summary bank。`K` 是最多保留的 summary token 数量；例如 `K=20, Δ=10s` 时，`B_200=[S_10,S_20,...,S_200]`；`S_210` 加入后移出 `S_10`，得到 `B_210=[S_20,...,S_210]`。`B_t` 不针对某个具体问题，而是持续压缩到当前时刻为止的视频和 narration 历史，例如：
 
 ```text
-<ANSWER> answer
+已经看到的解剖结构
+已经出现的超声征象
+当前扫查部位
+探头移动和检查流程
+已经积累的视觉证据
 ```
 
-含义：
+### 9.1 动态更新 Summary Bank
+
+视频流按 chunk 持续进入模型。每来一个新 chunk，模型更新一次 summary bank：
 
 ```text
-<WAIT>   当前证据不足，需要继续看视频
-<ANSWER> 当前证据充分，可以回答问题
+B_t = [S_{t-(K-1)Δ}, ..., S_t]
+S_t = hidden_state(<SUMMARY> | B_{t-Δ}, V_t, optional T_t)
+B_t = append(B_{t-Δ}, S_t)
+if len(B_t) > K: B_t = keep_last_K(B_t)
 ```
 
-SFT 的目标是让模型学会：
+其中：
 
 ```text
-什么时候该等
-什么时候该答
-以及如何基于视频证据回答
+S_{t-1} = 上一时刻的 summary bank
+V_t     = 当前视频 chunk 的超声帧
+T_t     = 当前 chunk 的 ASR narration，可选
+S_t     = 更新后的 query-agnostic summary bank
 ```
+
+这样模型不需要每次重新读取完整历史，而是通过滑动窗口 summary bank `B_t` 持续维护视频流的理解状态。
+
+### 9.2 Query 到来后的 Answerability 判断
+
+当用户在时间 `t` 提出问题 `Q` 时，模型使用当前 summary bank 和当前视觉证据来判断是否可以回答：
+
+```text
+S_t + current visual + Q
+```
+
+本版本不引入额外分类模块。answerability 由语言模型的首 token 直接决定：
+
+```text
+p_WAIT   = P(<WAIT>   | S_t, V_t, Q)
+p_ANSWER = P(<ANSWER> | S_t, V_t, Q)
+```
+
+如果 `<WAIT>` 概率更高，说明当前证据不足；如果 `<ANSWER>` 概率更高，说明当前证据足够。
+
+### 9.3 `<WAIT>/<ANSWER>` 的分工
+
+`<WAIT>` 和 `<ANSWER>` 既是输出格式前缀，也是 answerability decision token。模型通过普通 next-token prediction 学会在当前 summary bank、视觉证据和 query 下应该等待还是回答。
+
+| token/state | 作用 |
+|---|---|
+| `S_t=[s_t^1,...,s_t^K]` | 不依赖 query 的视频历史 summary bank |
+| `<WAIT>` | 首 token 决策：当前证据不足，并生成等待原因 |
+| `<ANSWER>` | 首 token 决策：当前证据充分，并生成答案 |
+
+训练时只需要普通语言生成 loss：
+
+```text
+loss = CE(target tokens)
+```
+
+### 9.4 WAIT 后继续看视频并更新 Summary
+
+如果模型输出 `<WAIT>`，系统不会结束，而是继续接收后续视频 chunk，并继续更新 summary bank：
+
+```text
+S_{t+1} = hidden_state(<SUMMARY> | B_t, V_{t+1}, optional T_{t+1})
+B_{t+1} = append(B_t, S_{t+1})
+if len(B_{t+1}) > K: B_{t+1} = keep_last_K(B_{t+1})
+```
+
+然后用同一个问题 `Q` 重新判断：
+
+```text
+p_WAIT   = P(<WAIT>   | S_{t+1}, V_{t+1}, Q)
+p_ANSWER = P(<ANSWER> | S_{t+1}, V_{t+1}, Q)
+```
+
+如果仍然证据不足，则继续等待并继续更新：
+
+```text
+S_{t+2}, S_{t+3}, ...
+```
+
+直到某个时刻 summary state 和当前视觉证据足够支持回答：
+
+```text
+S_k + current visual + Q -> <ANSWER> answer
+```
+
+### 9.5 SFT 训练目标
+
+SFT 的训练目标是让模型同时学会两件事：
+
+```text
+1. 如何根据新视频 chunk 动态更新 query-agnostic summary bank
+2. 如何结合 summary bank 和 query 直接生成 <WAIT> 或 <ANSWER>
+```
+
+WAIT 样本：
+
+```text
+Input:
+S_t + current visual + Question
+
+Target:
+<WAIT> 当前证据不足的具体原因
+```
+
+ANSWER 样本：
+
+```text
+Input:
+S_t + current visual + Question
+
+Target:
+<ANSWER> 基于当前证据的答案
+```
+
+### 9.6 和 Pretrain 的关系
+
+当前 V4 mixedmask pretrain 先学习超声视频和 narration 的对齐关系：
+
+```text
+历史视觉/文本 + 当前视觉 -> 当前或下一段 narration
+```
+
+后续 Information Compression / recurrent summary-bank pretrain 会进一步训练：
+
+```text
+B_t = [S_{t-(K-1)Δ}, ..., S_t]
+S_t = hidden_state(<SUMMARY> | B_{t-Δ}, V_t, optional T_t)
+B_t = append(B_{t-Δ}, S_t)
+if len(B_t) > K: B_t = keep_last_K(B_t)
+S_t -> reconstruct compressed information / predict future narration
+```
+
+也就是让 `S_t` 这个 summary bank 学会承载过去视频和 narration 信息。
+
+在 QA/SFT 阶段，再引入 query：
+
+```text
+S_t + current visual + Q -> <WAIT>/<ANSWER> + text
+```
+
+这样模型先学会“看视频并维护状态”，再学会“根据问题判断证据是否充分”。
+
+### 9.7 推理流程
+
+实际推理时，`S_t` 不是自然语言 summary，而是 sliding temporal hidden-state summary bank。每个视频 chunk 到来后，模型执行一次 summary-bank update forward pass：
+
+```text
+B_t = [S_{t-(K-1)Δ}, ..., S_t]
+S_{t+1} = hidden_state(<SUMMARY> | B_t, V_{t+1}, optional T_{t+1})
+B_{t+1} = append(B_t, S_{t+1})
+if len(B_{t+1}) > K: B_{t+1} = keep_last_K(B_{t+1})
+```
+
+当用户问题 `Q` 存在时，模型使用最新的 summary bank、当前视觉证据和 query 直接计算 `<WAIT>/<ANSWER>` 首 token 概率：
+
+```text
+p_WAIT   = P(<WAIT>   | S_{t+1}, V_{t+1}, Q)
+p_ANSWER = P(<ANSWER> | S_{t+1}, V_{t+1}, Q)
+```
+
+完整在线流程如下：
+
+```text
+1. 初始化 summary bank B_0 = []
+2. 视频 chunk V_{t+1} 持续到来
+3. 使用 S_t、V_{t+1} 和 optional T_{t+1} forward 得到新的 summary bank S_{t+1}
+4. 如果用户问题 Q 尚未出现，只持续更新 query-agnostic memory
+5. 如果用户问题 Q 已出现，比较 P(<WAIT>) 和 P(<ANSWER>) 或直接生成首 token
+6. 如果首 token 是 <WAIT>：
+   - generate <WAIT> reason
+   - continue streaming
+   - 后续 chunk 到来后继续更新 summary 并重新判断
+7. 如果首 token 是 <ANSWER>：
+   - generate <ANSWER> answer
+   - stop or return answer
+```
+
+核心思想是：
+
+```text
+S_t=[s_t^1,...,s_t^K] 负责持续维护 query-agnostic hidden summary bank
+<WAIT>/<ANSWER> 负责首 token answerability decision 和可解析文本输出
+```
+
+因此，SFT 阶段的目标不是简单训练一个静态 QA 模型，而是训练一个能够在长超声视频流中持续积累证据、动态判断 answerability，并在证据充分时回答的 streaming QA 模型。
 
 ---
 
-## 10. 评估方式
+## 10. Summary-based Streaming QA 评估方式
 
-评估分两类。
+评估分为三类。
 
-### 自动评估
+### 10.1 Answerability 判断
 
-统计：
-
-```text
-WAIT / ANSWER 判断准确率
-过早回答
-过晚回答
-最终答案质量
-```
-
-相关脚本：
+统计模型在每个 query time 上是否正确判断：
 
 ```text
-QA/eval/analyze_predictions.py
+当前证据不足 -> <WAIT>
+当前证据充分 -> <ANSWER>
 ```
 
-### Blind LLM Judge
-
-新增了 blind A/B judge：
+核心指标：
 
 ```text
-pretrain/llm_judge_predictions.py
+WAIT / ANSWER accuracy
+WAIT precision / recall
+ANSWER precision / recall
 ```
 
-LLM 只看到：
+### 10.2 时机评估
+
+Streaming QA 不仅要答对，还要在正确时间回答。
+
+需要统计：
 
 ```text
-Prediction A
-Prediction B
+过早回答：证据还不够时提前输出 <ANSWER>
+过晚回答：证据已经足够后仍然输出 <WAIT>
+首次正确回答时间
+answer delay
 ```
 
-不知道哪个来自 base，哪个来自 pretrain。
-
-脚本内部再把 A/B 映射回：
+理想模型应该：
 
 ```text
-base
-pretrain
+不提前 hallucinate
+也不过度保守一直 WAIT
 ```
 
-推荐 judge model：
+### 10.3 答案质量评估
+
+当模型输出 `<ANSWER>` 后，再评估 answer 内容是否正确。
+
+可以使用：
 
 ```text
-google/gemini-2.5-flash
+exact match / option accuracy
+semantic correctness
+LLM judge
 ```
+
+对于开放式回答，可以继续使用 blind LLM judge，比较 base SFT 和 summary-decide SFT 的回答质量。
 
 ---
 
-## 11. 未来方向：Recurrent Summary Token Pretrain
-
-未来计划新增：
-
-```text
-Pretrain V5-RecurrentSummary
-```
-
-核心引入一个 special token：
-
-```text
-<SUMMARY>
-```
-
-它不是文本摘要，而是 hidden-state memory。
-
-每个视频 chunk 更新一次状态：
-
-```text
-S_{t-1} + V_t + T_t + <SUMMARY> -> S_t
-```
-
-然后用 summary state 预测下一段 narration：
-
-```text
-S_t + V_{t+1} -> T_{t+1}
-```
-
-训练 loss：
-
-```text
-CE(T_{t+1})
-```
-
-这样模型不能直接读取完整历史，只能依赖 `S_t`，因此 `<SUMMARY>` 会被迫学习压缩 past context。
-
----
-
-## 12. 未来方向：Summary + Decide Streaming QA
-
-QA 阶段可以进一步引入：
-
-```text
-<SUMMARY> = query-agnostic video memory
-<DECIDE>  = query-aware answerability decision token
-```
-
-流程：
-
-```text
-1. 视频流持续更新 S_t
-2. 用户问题 Q 到来
-3. 构造 S_t + current visual + Q + <DECIDE>
-4. 读取 <ANSWER> 和 <WAIT> logits
-5. 用 logit(<ANSWER>) - logit(<WAIT>) 判断能否回答
-```
-
-也就是：
-
-```text
-answerability_logit = logit(<ANSWER>) - logit(<WAIT>)
-```
-
-如果偏向 `<WAIT>`：
-
-```text
-输出 <WAIT> reason
-```
-
-如果偏向 `<ANSWER>`：
-
-```text
-输出 <ANSWER> answer
-```
-
-第一版不额外加 binary head，而是直接利用 LM token logits。
-
----
-
-## 13. 当前状态
+## 11. 当前状态
 
 已经完成：
 
@@ -591,26 +692,35 @@ blind LLM judge
 future summary-token design docs
 ```
 
+当前 pretrain samples：
+
+```text
+train: 18,868 samples
+eval :  5,692 samples
+total: 24,560 samples
+```
+
 已 push 的相关 commits：
 
 ```text
 899a935 pretrain: add data utilities and blind llm judge
 1f3b3a6 asr: reuse whisper model in batch and add full295 job
 279ae74 docs: add recurrent summary streaming qa designs
+a79b604 pretrain: replace random modality mask with text modality mask
 ```
 
 当前还需要做：
 
 ```text
-1. build train/eval pretrain samples
-2. launch full295 V4 mixedmask pretrain
-3. evaluate pretrain effect on streaming QA
-4. later explore V5 recurrent summary token architecture
+1. launch full295 V4 mixedmask pretrain
+2. evaluate pretrain effect with Word overlap F1, ROUGE-L, and blind LLM judge
+3. implement V5 Information Compression / recurrent summary-bank pretrain
+4. implement summary-bank streaming QA/SFT
 ```
 
 ---
 
-## 14. 总流程
+## 12. 总流程
 
 ```text
 full295 videos
@@ -623,17 +733,25 @@ sentence-level mixedmask pretrain sample construction
 ↓
 Qwen3-VL-2B + LoRA V4 pretrain
 ↓
-streaming QA / SFT with <WAIT>/<ANSWER>
+Information Compression / recurrent summary-bank pretrain
+↓
+Summary-based streaming QA/SFT
+↓
+每个 chunk:
+B_t = [S_{t-(K-1)Δ}, ..., S_t]
+S_{t+1} = hidden_state(<SUMMARY> | B_t, V_{t+1}, optional T_{t+1})
+B_{t+1} = append(B_t, S_{t+1})
+if len(B_{t+1}) > K: B_{t+1} = keep_last_K(B_{t+1})
+↓
+当 query Q 存在:
+p_WAIT   = P(<WAIT>   | S_{t+1}, V_{t+1}, Q)
+p_ANSWER = P(<ANSWER> | S_{t+1}, V_{t+1}, Q)
+↓
+WAIT 则生成 <WAIT> reason 并继续观看、更新 summary
+↓
+ANSWER 则生成 <ANSWER> answer 并返回
 ↓
 automatic metrics + blind LLM judge
 ```
 
-未来增强：
-
-```text
-<SUMMARY> recurrent memory pretrain
-↓
-<SUMMARY> + <DECIDE> streaming answerability decision
-```
-
-最终目标是让模型能够在长超声视频流中持续维护视频理解状态，并在问题出现时判断当前证据是否足够，从而决定继续等待还是立即回答。
+最终目标是让模型能够在长超声视频流中持续维护 query-agnostic 的视频理解状态，并在用户问题出现后结合 query 判断当前证据是否足够，从而决定继续等待还是立即回答。

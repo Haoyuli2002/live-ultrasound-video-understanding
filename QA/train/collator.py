@@ -1,27 +1,8 @@
-"""
-Data collator for Qwen-VL WAIT/ANSWER SFT.
+"""Data collator for Qwen-VL WAIT/ANSWER SFT.
 
-The collator converts one dataset row into a multimodal chat example:
-
-System:
-  real-time ultrasound assistant instruction
-
-User:
-  [8 sampled image frames]
-  Question: ...
-
-Assistant:
-  <WAIT> ...   OR   <ANSWER> ...
-
-Loss masking:
-  - system/user/image prompt tokens => -100
-  - assistant target tokens         => token ids
-  - padding                         => -100
-
-Notes:
-  - We use image blocks rather than a video block for maximum compatibility
-    across Qwen2-VL / Qwen2.5-VL / Qwen3-VL processors.
-  - If the processor supports qwen_vl_utils.process_vision_info, we use it.
+The collator converts dataset rows into multimodal chat examples where the
+assistant target starts with either <WAIT> or <ANSWER>. Answerability is learned
+as the first generated token via the normal causal LM loss.
 """
 
 from __future__ import annotations
@@ -42,14 +23,17 @@ If the evidence is sufficient, output:
 
 
 def _content_with_images(frames, question: str):
-    content = []
-    for img in frames:
-        content.append({"type": "image", "image": img})
+    content = [{"type": "image", "image": img} for img in frames]
     content.append({"type": "text", "text": f"Question: {question}"})
     return content
 
 
-def build_messages(frames, question: str, target: str | None = None, system_prompt: str = DEFAULT_SYSTEM_PROMPT):
+def build_messages(
+    frames,
+    question: str,
+    target: str | None = None,
+    system_prompt: str = DEFAULT_SYSTEM_PROMPT,
+):
     messages = [
         {"role": "system", "content": system_prompt},
         {"role": "user", "content": _content_with_images(frames, question)},
@@ -60,17 +44,9 @@ def build_messages(frames, question: str, target: str | None = None, system_prom
 
 
 def _process_vision(messages):
-    """
-    Return image_inputs / video_inputs for Qwen processors.
-
-    qwen_vl_utils.process_vision_info accepts a messages list and extracts
-    PIL images / videos. If unavailable, fallback to manually collecting images.
-    """
     try:
         from qwen_vl_utils import process_vision_info
-
-        image_inputs, video_inputs = process_vision_info(messages)
-        return image_inputs, video_inputs
+        return process_vision_info(messages)
     except Exception:
         image_inputs = []
         for msg in messages:
@@ -95,34 +71,16 @@ class QwenVLCollator:
             add_generation_prompt=False,
         )
         image_inputs, video_inputs = _process_vision(messages)
-
-        kwargs = dict(
-            text=[text],
-            padding=False,
-            return_tensors="pt",
-        )
+        kwargs = dict(text=[text], padding=False, return_tensors="pt")
         if image_inputs:
             kwargs["images"] = image_inputs
         if video_inputs:
             kwargs["videos"] = video_inputs
-
         return self.processor(**kwargs), text
 
     def _find_last_subsequence(self, sequence: List[int], subsequence: List[int]) -> int:
-        """
-        Return the start index of the last occurrence of `subsequence` in
-        `sequence`, or -1 if not found.
-
-        We intentionally use the last occurrence because the system prompt may
-        contain literal examples such as:
-          <WAIT> Not enough information yet. More video is needed.
-        The assistant target is the final occurrence in the full chat.
-        """
-        if not subsequence:
+        if not subsequence or len(subsequence) > len(sequence):
             return -1
-        if len(subsequence) > len(sequence):
-            return -1
-
         last = -1
         end = len(sequence) - len(subsequence)
         for i in range(end + 1):
@@ -131,19 +89,9 @@ class QwenVLCollator:
         return last
 
     def _target_start(self, input_ids: torch.Tensor, target: str) -> int:
-        """
-        Find where the assistant target starts inside fully encoded input_ids.
-
-        Do not estimate prompt length with tokenizer-only chat text: Qwen-VL
-        processors expand image placeholders into many visual tokens, so the
-        tokenizer-only prompt length can be much shorter than the true encoded
-        multimodal prompt. Instead, tokenize the textual target and find its
-        final occurrence in the full multimodal input.
-        """
         tokenizer = getattr(self.processor, "tokenizer", self.processor)
         target_ids = tokenizer(target, add_special_tokens=False).input_ids
         input_list = input_ids.tolist()
-
         start = self._find_last_subsequence(input_list, target_ids)
         if start < 0:
             preview = tokenizer.decode(input_list[-256:], skip_special_tokens=False)
@@ -161,25 +109,19 @@ class QwenVLCollator:
         labels_list = []
 
         for feat in features:
-            frames = feat["frames"]
-            question = feat["question"]
-            target = feat["target"]
-
             full_messages = build_messages(
-                frames=frames,
-                question=question,
-                target=target,
+                frames=feat["frames"],
+                question=feat["question"],
+                target=feat["target"],
                 system_prompt=self.system_prompt,
             )
             encoded, _ = self._encode_messages(full_messages)
-
             input_ids = encoded["input_ids"][0]
             labels = input_ids.clone()
 
-            target_start = self._target_start(input_ids, target)
+            target_start = self._target_start(input_ids, feat["target"])
             labels[:target_start] = self.label_pad_token_id
 
-            # Mask padding if present.
             attention_mask = encoded.get("attention_mask")
             if attention_mask is not None:
                 labels[attention_mask[0] == 0] = self.label_pad_token_id
@@ -187,19 +129,13 @@ class QwenVLCollator:
             encoded_list.append(encoded)
             labels_list.append(labels)
 
-        # Batch padding. Processor outputs can include tensors like pixel_values
-        # whose first dimension already corresponds to image count; for v1 we
-        # support batch_size=1 robustly, and keep a best-effort path for >1.
         if len(encoded_list) == 1:
             batch = {k: v for k, v in encoded_list[0].items()}
             batch["labels"] = labels_list[0].unsqueeze(0)
             return batch
 
         tokenizer = getattr(self.processor, "tokenizer", self.processor)
-        pad_id = tokenizer.pad_token_id
-        if pad_id is None:
-            pad_id = tokenizer.eos_token_id
-
+        pad_id = tokenizer.pad_token_id or tokenizer.eos_token_id
         max_len = max(e["input_ids"].shape[1] for e in encoded_list)
         input_ids_batch = []
         attention_batch = []
@@ -209,7 +145,6 @@ class QwenVLCollator:
             input_ids = encoded["input_ids"][0]
             attention = encoded.get("attention_mask", torch.ones_like(encoded["input_ids"]))[0]
             pad_len = max_len - input_ids.shape[0]
-
             input_ids_batch.append(torch.nn.functional.pad(input_ids, (0, pad_len), value=pad_id))
             attention_batch.append(torch.nn.functional.pad(attention, (0, pad_len), value=0))
             labels_batch.append(torch.nn.functional.pad(labels, (0, pad_len), value=self.label_pad_token_id))
@@ -225,5 +160,4 @@ class QwenVLCollator:
         for k, v in encoded_list[0].items():
             if k not in batch:
                 batch[k] = v
-
         return batch

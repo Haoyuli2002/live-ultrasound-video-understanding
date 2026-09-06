@@ -376,7 +376,6 @@ def parse_args():
              "the same value here so the merged base is reproduced before "
              "loading the SFT adapter.",
     )
-
     return parser.parse_args()
 
 

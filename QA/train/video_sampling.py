@@ -105,7 +105,7 @@ def sample_last_n_frames(
     start_sec: float,
     end_sec: float,
     n_frames: int = 8,
-    resize: int | None = 448,
+    resize: int | None = 224,
 ) -> List[Image.Image]:
     """
     Streaming policy: sample N frames from the TAIL of [start_sec, end_sec].
@@ -174,7 +174,7 @@ def sample_uniform_frames(
     start_sec: float,
     end_sec: float,
     n_frames: int = 8,
-    resize: int | None = 448,
+    resize: int | None = 224,
 ) -> List[Image.Image]:
     """
     Offline policy: sample N frames uniformly across the FULL span
@@ -217,7 +217,7 @@ def sample_full_clip_frames(
     start_sec: float,
     end_sec: float,
     n_frames: int = 8,
-    resize: int | None = 448,
+    resize: int | None = 224,
 ) -> List[Image.Image]:
     """
     Offline QA policy: sample N frames uniformly from the full clip

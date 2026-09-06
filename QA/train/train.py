@@ -9,7 +9,7 @@ python QA/train/train.py \
   --default-video-path UltrasoundCrawler_KeyCode_20260323_v2/output/20260520_162816_youtube/media/case_reasoning/8V649L5Q368.mp4 \
   --output-dir QA/checkpoints/qwen3vl_2b_lora_wait_answer \
   --window-size 8 \
-  --frame-size 448 \
+  --frame-size 224 \
   --num-train-epochs 1 \
   --per-device-train-batch-size 1 \
   --gradient-accumulation-steps 8 \
@@ -250,7 +250,7 @@ def parse_args():
     parser.add_argument("--video-path-map", type=str, default=None)
 
     parser.add_argument("--window-size", type=int, default=8)
-    parser.add_argument("--frame-size", type=int, default=448)
+    parser.add_argument("--frame-size", type=int, default=224)
     parser.add_argument("--limit", type=int, default=None)
 
     parser.add_argument("--num-train-epochs", type=float, default=1.0)
@@ -297,7 +297,7 @@ def parse_args():
         "--lora-modules-to-save",
         type=str,
         default="embed_tokens,lm_head",
-        help="Modules made fully trainable + saved (needed so new <WAIT>/<ANSWER> "
+        help="Modules made fully trainable + saved (needed so new special-token "
              "token embeddings can learn). Set empty string to disable.",
     )
 
@@ -454,7 +454,7 @@ def main():
         args=training_args,
         train_dataset=dataset,
         data_collator=collator,
-        callbacks=callbacks,
+        callbacks=callbacks
     )
 
     trainer.train()
