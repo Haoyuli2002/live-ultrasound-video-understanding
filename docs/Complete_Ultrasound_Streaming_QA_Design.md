@@ -30,6 +30,120 @@ Stage 2: Information Compression / Learn Summary Bank
 Stage 3: SFT / QA + Instruction Tuning
 ```
 
+在三阶段训练之前，数据处理流程先做：
+
+```text
+Raw videos
+↓
+Whisper ASR
+↓
+ASR rule-based filtering
+↓
+VLM video-type classification
+↓
+stage-specific keep/drop
+```
+
+VLM video-type classification 位于 ASR 后面，原因是 ASR rule filtering 成本更低，可以先减少候选视频数量，再对 ASR-keep 视频运行较贵的 VLM 分类。
+
+### ASR 后 VLM 视频类型分类
+
+ASR filtering 只能判断文本质量，不能准确判断视频视觉内容类型。因此在 ASR-keep 视频上增加 VLM 分类，将每个视频归入以下 6 类：
+
+```text
+A. ultrasound_cine
+   纯超声视频 / real-time ultrasound scan / ultrasound cine loop
+
+B. ultrasound_teaching_with_scan
+   超声教学视频，包含真实超声动态画面 + 讲解
+
+C. ultrasound_ppt_teaching
+   超声 PPT / slide-based lecture / 大量文字或幻灯片
+
+D. mixed_screen_recording
+   混合屏幕录制，包括网页、软件界面、PPT、少量超声图
+
+E. non_ultrasound_or_irrelevant
+   非超声或明显无关视频
+
+F. uncertain
+   模型不确定，需要人工复核或保守保留
+```
+
+VLM 分类脚本：
+
+```text
+scripts/data/classify_video_type_vlm.py
+```
+
+分类模型使用 **Qwen3-VL**（视觉-语言模型），默认用 MoE 版本 `Qwen/Qwen3-VL-30B-A3B-Instruct`（总参数约 30B，激活约 3B），适合 H100 推理。通过 vLLM 起一个 OpenAI 兼容服务：
+
+```bash
+vllm serve Qwen/Qwen3-VL-30B-A3B-Instruct \
+  --port 8000 \
+  --limit-mm-per-prompt image=16
+```
+
+然后脚本默认指向该本地服务：
+
+```bash
+python scripts/data/classify_video_type_vlm.py \
+  --video-map cluster_data/splits/train_full295_asr_keep_videos.json \
+  --output cluster_data/splits/train_full295_asr_vlm_video_type.jsonl \
+  --n-frames 12 --frame-size 224 \
+  --model Qwen/Qwen3-VL-30B-A3B-Instruct \
+  --base-url http://localhost:8000/v1 \
+  --api-key-env VLLM_API_KEY
+```
+
+说明：纯文本的 `Qwen3-30B-A3B` 看不到画面，因此视频类型分类必须用视觉版本 `Qwen3-VL-30B-A3B`。
+
+输入通常是 ASR-keep video map：
+
+```text
+cluster_data/splits/train_full295_asr_keep_videos.json
+cluster_data/splits/eval_full295_asr_keep_videos.json
+```
+
+输出 JSONL audit：
+
+```text
+cluster_data/splits/train_full295_asr_vlm_video_type.jsonl
+cluster_data/splits/eval_full295_asr_vlm_video_type.jsonl
+```
+
+每条记录包含：
+
+```json
+{
+  "video_id": "...",
+  "video_path": "...",
+  "label": "ultrasound_teaching_with_scan",
+  "confidence": 0.86,
+  "visual_evidence": "...",
+  "keep_for_pretrain": true,
+  "keep_for_compression": true,
+  "keep_for_sft": true
+}
+```
+
+默认 stage-specific keep 策略：
+
+| label | Pretrain | Compression | SFT |
+|---|---:|---:|---:|
+| `ultrasound_cine` | keep | keep | keep |
+| `ultrasound_teaching_with_scan` | keep | keep | keep |
+| `ultrasound_ppt_teaching` | keep | drop | drop |
+| `mixed_screen_recording` | keep | drop | drop |
+| `non_ultrasound_or_irrelevant` | drop | drop | drop |
+| `uncertain` | keep/audit | drop/audit | drop/audit |
+
+根据 VLM audit 生成各阶段 keep/drop map 的脚本：
+
+```text
+scripts/data/filter_by_vlm_video_type.py
+```
+
 ### Stage 1
 
 第一阶段使用超声视频和 ASR narration 做领域知识注入，目标不是简单 ASR 续写，而是让模型学习超声视觉模式、解剖结构、病灶表现、扫查流程，并进行 video-text 对齐。
