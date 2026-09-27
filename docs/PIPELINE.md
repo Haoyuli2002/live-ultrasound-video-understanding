@@ -168,6 +168,25 @@ python -m http.server 9000
 
 如果 classifier 和 vLLM 在同一节点，也可以使用 `file://` 绝对路径 fallback；如果 endpoint 不支持 `file://`，请使用 HTTP server。
 
+全量批处理推荐使用 Slurm 脚本，它会在同一个 GPU 节点内自动启动视频 HTTP server、vLLM server、等待 ready、断点续跑分类并输出统计：
+
+```bash
+sbatch \
+  --export=ALL,SPLIT=eval_full295,VIDEO_MAP=/dss/mcmlscratch/04/ge75vid2/haoyu/live-ultrasound-video-understanding/cluster_data/splits/eval_full295_asr_keep_videos.json,OUTPUT=/dss/mcmlscratch/04/ge75vid2/haoyu/live-ultrasound-video-understanding/cluster_data/splits/eval_full295_qwen35_video_type.jsonl \
+  scripts/slurm/run_qwen35_video_type_labeling.sbatch
+```
+
+可选环境变量：
+
+```text
+MODEL=Qwen/Qwen3.5-35B-A3B
+VIDEO_FPS=0.5
+MAX_TOKENS=3000
+LIMIT=10              # smoke test only; omit for full run
+HTTP_PORT=9000
+VLLM_PORT=8000
+```
+
 ---
 
 ## 2. Stage 1 — Ultrasound Visual-language Pretraining
