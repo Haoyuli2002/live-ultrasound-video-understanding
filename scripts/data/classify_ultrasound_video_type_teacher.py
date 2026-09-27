@@ -229,7 +229,11 @@ def classify_one(client, model: str, video_url: str, max_tokens: int, video_fps:
         max_tokens=max_tokens,
     )
     if video_fps > 0:
-        kwargs["extra_body"] = {"mm_processor_kwargs": {"fps": float(video_fps), "do_sample_frames": True}}
+        # Qwen3.5/vLLM official examples use `fps` under mm_processor_kwargs.
+        # Do not pass `do_sample_frames`: in vLLM 0.30.0 it is forwarded into
+        # Qwen3VLProcessor and can trigger a BadRequestError for unsupported
+        # processor kwargs.
+        kwargs["extra_body"] = {"mm_processor_kwargs": {"fps": float(video_fps)}}
     resp = client.chat.completions.create(**kwargs)
     return normalize_record(parse_json(resp.choices[0].message.content))
 
