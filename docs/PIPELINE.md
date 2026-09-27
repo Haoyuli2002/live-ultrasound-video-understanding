@@ -75,8 +75,8 @@ ASR transcript 是 Stage 1 和 Stage 2 的语言监督来源。
 
 ```text
 Primary open-source teacher:
-  Qwen/Qwen3.5-35B-A3B via OpenAI-compatible local endpoint
-  注意：用于视觉分类时，该 endpoint 必须支持 image inputs。
+  Qwen/Qwen3.5-35B-A3B via vLLM OpenAI-compatible local endpoint
+  使用 video_url 直接输入整段视频。
 
 Cross-validation teacher:
   Gemini 3 Pro via OpenRouter / Google OpenAI-compatible endpoint
@@ -116,8 +116,7 @@ python scripts/data/classify_ultrasound_video_type_teacher.py \
   --model Qwen/Qwen3.5-35B-A3B \
   --base-url http://localhost:8000/v1 \
   --api-key-env VLLM_API_KEY \
-  --n-frames 16 \
-  --frame-size 224 \
+  --video-fps 1.0 \
   --resume
 
 # Gemini 3 Pro cross-validation
@@ -128,8 +127,7 @@ python scripts/data/classify_ultrasound_video_type_teacher.py \
   --model google/gemini-3-pro \
   --base-url https://openrouter.ai/api/v1 \
   --api-key-env OPENROUTER_API_KEY \
-  --n-frames 16 \
-  --frame-size 224 \
+  --video-fps 1.0 \
   --resume
 
 # Merge teacher outputs into final audit
@@ -141,6 +139,34 @@ python scripts/data/merge_video_type_teacher_labels.py \
 ```
 
 推荐 keep policy：Stage 2 / Stage 3 默认保留 `hands_on_ultrasound_teaching` 和 `pure_ultrasound_scan`；`mixed_ultrasound_teaching` 标记 `needs_clipping`，默认不直接进入 compression / SFT；PPT / 静态图讨论主要用于 Stage 1 或 offline QA；无关和 uncertain 默认不进入 Stage 2 / Stage 3。
+
+Qwen vLLM 推荐启动方式：
+
+```bash
+uv pip install vllm \
+  --torch-backend=auto \
+  --extra-index-url https://wheels.vllm.ai/nightly
+
+vllm serve Qwen/Qwen3.5-35B-A3B \
+  --host 0.0.0.0 \
+  --port 8000 \
+  --media-io-kwargs '{"video":{"num_frames":-1}}'
+```
+
+如果视频是本地文件，vLLM / OpenRouter 的 `video_url` 需要可访问 URL。可在视频目录启动临时 HTTP server：
+
+```bash
+cd /path/to/videos
+python -m http.server 9000
+```
+
+然后分类时加：
+
+```bash
+--video-url-base http://<node-hostname-or-ip>:9000
+```
+
+如果 classifier 和 vLLM 在同一节点，也可以使用 `file://` 绝对路径 fallback；如果 endpoint 不支持 `file://`，请使用 HTTP server。
 
 ---
 

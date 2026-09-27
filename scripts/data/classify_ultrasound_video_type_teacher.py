@@ -1,28 +1,25 @@
 #!/usr/bin/env python3
-"""Classify ultrasound training videos with a VLM teacher.
+"""Classify ultrasound training videos with a video-capable VLM teacher.
 
 This script is OpenAI-compatible and can be used with:
   - local Qwen/Qwen3.5-35B-A3B (must be a vision-capable endpoint)
   - Gemini 3 Pro via OpenRouter or Google OpenAI-compatible endpoint
 
-It outputs one JSONL row per video with video type, anatomy regions, clinical
-scenarios, scan targets, visual evidence, and stage-specific keep flags.
+It sends each video as an OpenAI-compatible `video_url` content block, following
+Qwen3.5/vLLM and Gemini/OpenRouter style APIs. It outputs one JSONL row per
+video with video type, anatomy regions, clinical scenarios, scan targets,
+language evidence, and stage-specific keep flags.
 """
 
 from __future__ import annotations
 
 import argparse
-import base64
-import io
 import json
 import os
 import re
 import time
 from pathlib import Path
 from typing import Any, Dict, List
-
-import cv2
-from PIL import Image
 
 
 LABELS = {
@@ -53,7 +50,7 @@ CLINICAL_SCENARIOS = {
 
 PROMPT = """You are classifying videos for a live ultrasound video understanding dataset.
 
-You will see uniformly sampled frames from one video. Classify the WHOLE VIDEO into exactly one label:
+You will receive one ultrasound-related video. Classify the WHOLE VIDEO into exactly one label:
 
 1. hands_on_ultrasound_teaching: A clinician/teacher demonstrates ultrasound scanning with probe/patient/machine and explains the scan. Real-time ultrasound footage is substantial.
 2. pure_ultrasound_scan: Mostly or entirely ultrasound machine output / cine loop. No significant slides, talking head, web pages, or non-ultrasound content.
@@ -117,53 +114,25 @@ def resolve_path(path: str, repo_root: Path) -> Path:
     return p if p.is_absolute() else repo_root / p
 
 
-def resize_with_aspect_ratio_and_pad(img: Image.Image, size: int | None) -> Image.Image:
-    if size is None:
-        return img.convert("RGB")
-    img = img.convert("RGB")
-    w, h = img.size
-    scale = min(float(size) / max(w, 1), float(size) / max(h, 1))
-    new_w = max(1, int(round(w * scale)))
-    new_h = max(1, int(round(h * scale)))
-    resized = img.resize((new_w, new_h), Image.BICUBIC)
-    canvas = Image.new("RGB", (size, size), (0, 0, 0))
-    canvas.paste(resized, ((size - new_w) // 2, (size - new_h) // 2))
-    return canvas
+def load_video_url_map(path: Path | None) -> Dict[str, str]:
+    if path is None:
+        return {}
+    return {str(k): str(v) for k, v in load_json(path).items()}
 
 
-def sample_frames(video_path: Path, n_frames: int, frame_size: int | None) -> tuple[list[Image.Image], dict[str, Any]]:
-    cap = cv2.VideoCapture(str(video_path))
-    if not cap.isOpened():
-        raise RuntimeError(f"Cannot open video: {video_path}")
-    try:
-        fps = cap.get(cv2.CAP_PROP_FPS) or 25.0
-        frame_count = int(cap.get(cv2.CAP_PROP_FRAME_COUNT) or 0)
-        duration = frame_count / fps if frame_count > 0 else 0.0
-        if frame_count <= 0:
-            indices = [0]
-        else:
-            start = int(frame_count * 0.05)
-            end = max(start, int(frame_count * 0.95) - 1)
-            indices = [(start + end) // 2] if n_frames == 1 else [int(round(start + i * (end - start) / (n_frames - 1))) for i in range(n_frames)]
-        frames = []
-        for idx in indices:
-            cap.set(cv2.CAP_PROP_POS_FRAMES, max(0, idx))
-            ok, frame = cap.read()
-            if not ok:
-                continue
-            rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-            frames.append(resize_with_aspect_ratio_and_pad(Image.fromarray(rgb), frame_size))
-    finally:
-        cap.release()
-    if not frames:
-        raise RuntimeError(f"Could not read frames from {video_path}")
-    return frames, {"duration_sec": duration, "fps": fps, "frame_count": frame_count, "sampled_frames": len(frames)}
+def build_video_url(video_id: str, video_path: Path, *, video_url_base: str | None, video_url_map: Dict[str, str]) -> str:
+    """Return a URL usable by video_url.
 
-
-def image_to_data_url(img: Image.Image) -> str:
-    buf = io.BytesIO()
-    img.save(buf, format="JPEG", quality=85)
-    return "data:image/jpeg;base64," + base64.b64encode(buf.getvalue()).decode("ascii")
+    Preferred options:
+      1. explicit --video-url-map {video_id: url}
+      2. --video-url-base, e.g. http://node:9000, joined with basename
+      3. file:// absolute path fallback for local backends that support it
+    """
+    if video_id in video_url_map:
+        return video_url_map[video_id]
+    if video_url_base:
+        return video_url_base.rstrip("/") + "/" + video_path.name
+    return video_path.resolve().as_uri()
 
 
 def parse_json(text: str) -> Dict[str, Any]:
@@ -248,15 +217,20 @@ def normalize_record(raw: Dict[str, Any]) -> Dict[str, Any]:
     return rec
 
 
-def classify_one(client, model: str, frames: list[Image.Image], max_tokens: int) -> Dict[str, Any]:
-    content = [{"type": "text", "text": PROMPT}]
-    content.extend({"type": "image_url", "image_url": {"url": image_to_data_url(img)}} for img in frames)
-    resp = client.chat.completions.create(
+def classify_one(client, model: str, video_url: str, max_tokens: int, video_fps: float) -> Dict[str, Any]:
+    content = [
+        {"type": "video_url", "video_url": {"url": video_url}},
+        {"type": "text", "text": PROMPT},
+    ]
+    kwargs = dict(
         model=model,
         messages=[{"role": "user", "content": content}],
         temperature=0,
         max_tokens=max_tokens,
     )
+    if video_fps > 0:
+        kwargs["extra_body"] = {"mm_processor_kwargs": {"fps": float(video_fps), "do_sample_frames": True}}
+    resp = client.chat.completions.create(**kwargs)
     return normalize_record(parse_json(resp.choices[0].message.content))
 
 
@@ -269,8 +243,9 @@ def parse_args():
     p.add_argument("--base-url", default="http://localhost:8000/v1")
     p.add_argument("--api-key-env", default="VLLM_API_KEY")
     p.add_argument("--repo-root", type=Path, default=Path("."))
-    p.add_argument("--n-frames", type=int, default=16)
-    p.add_argument("--frame-size", type=int, default=224)
+    p.add_argument("--video-fps", type=float, default=1.0, help="Video sampling fps passed via extra_body.mm_processor_kwargs. Use 0 to omit.")
+    p.add_argument("--video-url-base", default=None, help="HTTP base URL serving video files; final URL is base/basename.mp4")
+    p.add_argument("--video-url-map", type=Path, default=None, help="Optional JSON map {video_id: video_url}")
     p.add_argument("--max-tokens", type=int, default=900)
     p.add_argument("--limit", type=int, default=None)
     p.add_argument("--sleep-sec", type=float, default=0.0)
@@ -285,6 +260,7 @@ def main():
     api_key = os.environ.get(args.api_key_env) or "EMPTY"
     client = OpenAI(api_key=api_key, base_url=args.base_url) if args.base_url else OpenAI(api_key=api_key)
     video_map = {str(k): str(v) for k, v in load_json(args.video_map).items()}
+    video_url_map = load_video_url_map(args.video_url_map)
     items = sorted(video_map.items())
     if args.limit is not None:
         items = items[: args.limit]
@@ -305,10 +281,11 @@ def main():
             base = {"video_id": video_id, "video_path": str(video_path), "teacher": args.teacher, "model": args.model, "source_video_map": str(args.video_map)}
             print(f"[{idx}/{len(items)}] {video_id} teacher={args.teacher} model={args.model}")
             try:
-                frames, info = sample_frames(video_path, args.n_frames, args.frame_size)
-                rec = classify_one(client, args.model, frames, args.max_tokens)
+                video_url = build_video_url(video_id, video_path, video_url_base=args.video_url_base, video_url_map=video_url_map)
+                rec = classify_one(client, args.model, video_url, args.max_tokens, args.video_fps)
                 rec.update(base)
-                rec.update(info)
+                rec["video_url"] = video_url
+                rec["video_fps"] = args.video_fps
                 rec["error"] = None
             except Exception as exc:
                 rec = {
