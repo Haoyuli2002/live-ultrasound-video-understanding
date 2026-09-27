@@ -21,6 +21,7 @@ VIDEO_DIR=${VIDEO_DIR:-$DATA/cluster_data/videos/${SPLIT}}
 MODEL=${MODEL:-Qwen/Qwen3.5-35B-A3B}
 VIDEO_FPS=${VIDEO_FPS:-0.5}
 MAX_TOKENS=${MAX_TOKENS:-6000}
+ENABLE_THINKING=${ENABLE_THINKING:-0}
 HTTP_PORT=${HTTP_PORT:-9000}
 VLLM_PORT=${VLLM_PORT:-8000}
 LIMIT=${LIMIT:-}
@@ -57,6 +58,7 @@ echo "VIDEO_DIR=$VIDEO_DIR"
 echo "MODEL=$MODEL"
 echo "VIDEO_FPS=$VIDEO_FPS"
 echo "MAX_TOKENS=$MAX_TOKENS"
+echo "ENABLE_THINKING=$ENABLE_THINKING"
 echo "HTTP_PORT=$HTTP_PORT"
 echo "VLLM_PORT=$VLLM_PORT"
 echo "LIMIT=${LIMIT:-<none>}"
@@ -149,6 +151,11 @@ CLASSIFY_ARGS=(
   --max-tokens "$MAX_TOKENS"
   --resume
 )
+if [[ "$ENABLE_THINKING" == "1" || "$ENABLE_THINKING" == "true" || "$ENABLE_THINKING" == "TRUE" ]]; then
+  CLASSIFY_ARGS+=(--enable-thinking)
+else
+  CLASSIFY_ARGS+=(--disable-thinking)
+fi
 if [[ -n "$LIMIT" ]]; then
   CLASSIFY_ARGS+=(--limit "$LIMIT")
 fi
