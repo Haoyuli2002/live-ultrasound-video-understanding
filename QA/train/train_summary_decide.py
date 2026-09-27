@@ -1,11 +1,19 @@
 #!/usr/bin/env python3
-"""Train recurrent <SUMMARY> streaming QA with LoRA.
+"""Train streaming-memory QA with LoRA.
 
-First implementation is intentionally simple and supports batch_size=1. Each
-sample performs:
+This script keeps the legacy single <SUMMARY> mode and adds a two-level memory
+mode. Batch size is intentionally 1 because each sample performs multiple
+forwards:
+
+legacy mode:
   1) append one summary token per history chunk into a sliding summary bank
   2) QA forward on current_visual + question
   3) loss = causal LM loss for <WAIT>/<ANSWER> target text
+
+two_level mode:
+  1) create one <SHORT_MEM> hidden state per history chunk
+  2) periodically compress short memories into a <LONG_MEM> hidden state
+  3) QA forward on long memory + recent short memory + current_visual + question
 """
 
 from __future__ import annotations
@@ -33,22 +41,32 @@ except Exception:
 try:
     from .summary_dataset import SummaryDecideDataset
     from .summary_collator import (
+        LONG_MEMORY_TOKEN,
         SUMMARY_TOKEN,
+        SHORT_MEMORY_TOKEN,
         SummaryDecideCollator,
+        long_memory_update_messages,
         qa_messages,
+        short_memory_update_messages,
         summary_update_messages,
+        two_level_qa_messages,
     )
 except ImportError:
     from summary_dataset import SummaryDecideDataset
     from summary_collator import (
+        LONG_MEMORY_TOKEN,
         SUMMARY_TOKEN,
+        SHORT_MEMORY_TOKEN,
         SummaryDecideCollator,
+        long_memory_update_messages,
         qa_messages,
+        short_memory_update_messages,
         summary_update_messages,
+        two_level_qa_messages,
     )
 
 
-SPECIAL_TOKENS = [SUMMARY_TOKEN, "<WAIT>", "<ANSWER>"]
+SPECIAL_TOKENS = [SUMMARY_TOKEN, SHORT_MEMORY_TOKEN, LONG_MEMORY_TOKEN, "<WAIT>", "<ANSWER>"]
 
 
 def load_model(model_name: str, dtype):
@@ -144,6 +162,83 @@ def build_summary_bank(model, collator, sample, device, max_bank_size: int):
     return summary_bank
 
 
+def build_two_level_memory(
+    model,
+    collator,
+    sample,
+    device,
+    *,
+    short_bank_size: int,
+    long_bank_size: int,
+    long_update_every: int,
+):
+    """Build query-agnostic two-level memory for one sample.
+
+    The JSONL currently stores `history_chunks`; each chunk is treated as one
+    streaming step. In real-time runs, these chunks should be small, e.g. 1s or
+    2 frames. `long_update_every` is counted in chunks, so with 1s chunks the
+    default 60 means one long-memory update per minute.
+    """
+    short_bank: list[torch.Tensor] = []
+    long_bank: list[torch.Tensor] = []
+    pending_short: list[torch.Tensor] = []
+    tokenizer = collator.processor.tokenizer
+    short_id = tokenizer.convert_tokens_to_ids(SHORT_MEMORY_TOKEN)
+    long_id = tokenizer.convert_tokens_to_ids(LONG_MEMORY_TOKEN)
+
+    def compress_pending_short():
+        nonlocal pending_short, long_bank
+        if not pending_short:
+            return
+        messages = long_memory_update_messages(
+            short_memory_count=len(pending_short),
+            previous_long_count=len(long_bank),
+        )
+        encoded = move_to_device(collator.encode_messages(messages), device)
+        input_ids = encoded["input_ids"][0]
+        short_positions = [i for i, tok_id in enumerate(input_ids.tolist()) if tok_id == short_id]
+        long_positions = [i for i, tok_id in enumerate(input_ids.tolist()) if tok_id == long_id]
+        if len(short_positions) < len(pending_short):
+            raise RuntimeError("Not enough <SHORT_MEM> tokens in long-memory update prompt")
+        if len(long_positions) < len(long_bank) + 1:
+            raise RuntimeError("Not enough <LONG_MEM> tokens in long-memory update prompt")
+
+        token_positions = []
+        vectors = []
+        token_positions.extend(long_positions[:len(long_bank)])
+        vectors.extend(long_bank)
+        token_positions.extend(short_positions[:len(pending_short)])
+        vectors.extend(pending_short)
+        if token_positions:
+            encoded = replace_token_embeddings(model, encoded, token_positions, vectors)
+
+        outputs = model(**encoded, output_hidden_states=True)
+        new_long = outputs.hidden_states[-1][:, long_positions[-1], :]
+        long_bank.append(new_long)
+        if len(long_bank) > long_bank_size:
+            long_bank = long_bank[-long_bank_size:]
+        pending_short = []
+
+    for idx, chunk in enumerate(sample["history_chunks"], start=1):
+        messages = short_memory_update_messages(chunk["frames"], text=chunk.get("text", ""))
+        encoded = move_to_device(collator.encode_messages(messages), device)
+        input_ids = encoded["input_ids"][0]
+        short_positions = [i for i, tok_id in enumerate(input_ids.tolist()) if tok_id == short_id]
+        if not short_positions:
+            raise RuntimeError("No <SHORT_MEM> token found in short-memory update prompt")
+        outputs = model(**encoded, output_hidden_states=True)
+        new_short = outputs.hidden_states[-1][:, short_positions[-1], :]
+        short_bank.append(new_short)
+        pending_short.append(new_short)
+        if len(short_bank) > short_bank_size:
+            short_bank = short_bank[-short_bank_size:]
+        if long_update_every > 0 and idx % long_update_every == 0:
+            compress_pending_short()
+
+    # Do not force-compress the tail: keep it as recent short-term evidence.
+    return short_bank, long_bank
+
+
 def train_one_sample(model, collator, sample, device, max_bank_size: int):
     summary_bank = build_summary_bank(model, collator, sample, device, max_bank_size=max_bank_size)
     messages = qa_messages(
@@ -169,8 +264,57 @@ def train_one_sample(model, collator, sample, device, max_bank_size: int):
     return outputs.loss, outputs.loss.detach()
 
 
+def train_one_sample_two_level(
+    model,
+    collator,
+    sample,
+    device,
+    *,
+    short_bank_size: int,
+    long_bank_size: int,
+    long_update_every: int,
+):
+    short_bank, long_bank = build_two_level_memory(
+        model,
+        collator,
+        sample,
+        device,
+        short_bank_size=short_bank_size,
+        long_bank_size=long_bank_size,
+        long_update_every=long_update_every,
+    )
+    messages = two_level_qa_messages(
+        sample["current_visual_frames"],
+        sample["question"],
+        short_memory_count=len(short_bank),
+        long_memory_count=len(long_bank),
+        target=sample["target"],
+    )
+    encoded = move_to_device(collator.encode_messages(messages), device)
+    input_ids = encoded["input_ids"][0]
+    tokenizer = collator.processor.tokenizer
+    short_id = tokenizer.convert_tokens_to_ids(SHORT_MEMORY_TOKEN)
+    long_id = tokenizer.convert_tokens_to_ids(LONG_MEMORY_TOKEN)
+    short_positions = [i for i, tok_id in enumerate(input_ids.tolist()) if tok_id == short_id]
+    long_positions = [i for i, tok_id in enumerate(input_ids.tolist()) if tok_id == long_id]
+    if len(short_positions) < len(short_bank):
+        raise RuntimeError("Not enough <SHORT_MEM> tokens in QA prompt")
+    if len(long_positions) < len(long_bank):
+        raise RuntimeError("Not enough <LONG_MEM> tokens in QA prompt")
+    token_positions = long_positions[:len(long_bank)] + short_positions[:len(short_bank)]
+    vectors = long_bank + short_bank
+    if token_positions:
+        encoded = replace_token_embeddings(model, encoded, token_positions, vectors)
+    labels = input_ids.clone()
+    target_start = collator.target_start(input_ids, sample["target"])
+    labels[:target_start] = -100
+    encoded["labels"] = labels.unsqueeze(0).to(device)
+    outputs = model(**encoded)
+    return outputs.loss, outputs.loss.detach()
+
+
 def parse_args():
-    p = argparse.ArgumentParser(description="Recurrent <SUMMARY> QA/SFT with <WAIT>/<ANSWER> generation")
+    p = argparse.ArgumentParser(description="Streaming-memory QA/SFT with <WAIT>/<ANSWER> generation")
     p.add_argument("--model-name", default="Qwen/Qwen3-VL-2B-Instruct")
     p.add_argument("--train-jsonl", required=True)
     p.add_argument("--output-dir", required=True)
@@ -181,6 +325,10 @@ def parse_args():
     p.add_argument("--frames-per-chunk", type=int, default=3)
     p.add_argument("--frame-size", type=int, default=224)
     p.add_argument("--summary-bank-size", type=int, default=20)
+    p.add_argument("--memory-mode", choices=["legacy", "two_level"], default="two_level")
+    p.add_argument("--short-bank-size", type=int, default=60)
+    p.add_argument("--long-bank-size", type=int, default=8)
+    p.add_argument("--long-update-every", type=int, default=60, help="Compress short memories every N history chunks; with 1s chunks, 60 means every 60s.")
     p.add_argument("--limit", type=int, default=None)
     p.add_argument("--num-train-epochs", type=int, default=1)
     p.add_argument("--learning-rate", type=float, default=1e-4)
@@ -227,7 +375,18 @@ def main():
         pbar = tqdm(loader, desc=f"summary-qa epoch {epoch + 1}")
         for sample in pbar:
             optim.zero_grad(set_to_none=True)
-            loss, lm_loss = train_one_sample(model, collator, sample, device=device, max_bank_size=args.summary_bank_size)
+            if args.memory_mode == "legacy":
+                loss, lm_loss = train_one_sample(model, collator, sample, device=device, max_bank_size=args.summary_bank_size)
+            else:
+                loss, lm_loss = train_one_sample_two_level(
+                    model,
+                    collator,
+                    sample,
+                    device=device,
+                    short_bank_size=args.short_bank_size,
+                    long_bank_size=args.long_bank_size,
+                    long_update_every=args.long_update_every,
+                )
             loss.backward()
             if args.grad_clip > 0:
                 torch.nn.utils.clip_grad_norm_(model.parameters(), args.grad_clip)

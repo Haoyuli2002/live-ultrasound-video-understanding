@@ -1,4 +1,4 @@
-"""Collation/building blocks for recurrent <SUMMARY> streaming QA SFT.
+"""Collation/building blocks for streaming-memory QA SFT.
 
 The trainer performs multiple forwards per sample, so this collator intentionally
 keeps batch_size=1 and returns Python objects plus sampled PIL frames.
@@ -11,10 +11,14 @@ from typing import Any, Dict, List
 
 import torch
 
-SUMMARY_TOKEN = "<SUMMARY>"
+SUMMARY_TOKEN = "<SUMMARY>"  # legacy single-bank token
+SHORT_MEMORY_TOKEN = "<SHORT_MEM>"
+LONG_MEMORY_TOKEN = "<LONG_MEM>"
 
 SUMMARY_SYSTEM_PROMPT = """You maintain a hidden ultrasound video memory. Update <SUMMARY> using the new ultrasound frames and optional narration."""
-QA_SYSTEM_PROMPT = """You are a real-time ultrasound assistant. Use the maintained <SUMMARY> memory, current ultrasound frames, and the question. If evidence is insufficient, start with <WAIT> and explain what is missing. If evidence is sufficient, start with <ANSWER> and answer concisely."""
+SHORT_MEMORY_SYSTEM_PROMPT = """You maintain a short-term hidden ultrasound video memory. Update <SHORT_MEM> using only the newly arrived ultrasound frames and optional narration."""
+LONG_MEMORY_SYSTEM_PROMPT = """You maintain a long-term hidden ultrasound video memory. Compress the previous long-term memory and recent short-term memories into <LONG_MEM>."""
+QA_SYSTEM_PROMPT = """You are a real-time ultrasound assistant. Use the maintained hidden memory, current ultrasound frames, and the question. If evidence is insufficient, start with <WAIT> and explain what is missing. If evidence is sufficient, start with <ANSWER> and answer concisely."""
 
 
 def content_with_images(frames, text: str):
@@ -38,10 +42,60 @@ def summary_update_messages(frames, text: str = "", previous_summary_count: int 
     ]
 
 
+def short_memory_update_messages(frames, text: str = ""):
+    user_text = "Update the short-term hidden memory for these newly arrived ultrasound frames."
+    if text:
+        user_text += f"\nNarration: {text}"
+    user_text += f"\nNew short-term memory: {SHORT_MEMORY_TOKEN}"
+    return [
+        {"role": "system", "content": SHORT_MEMORY_SYSTEM_PROMPT},
+        {"role": "user", "content": content_with_images(frames, user_text)},
+    ]
+
+
+def long_memory_update_messages(short_memory_count: int, previous_long_count: int = 0):
+    previous = " ".join([LONG_MEMORY_TOKEN] * previous_long_count) if previous_long_count else "No previous long-term memory."
+    recent = " ".join([SHORT_MEMORY_TOKEN] * short_memory_count) if short_memory_count else "No recent short-term memory."
+    user_text = (
+        f"Previous long-term memory: {previous}\n"
+        f"Recent short-term memories: {recent}\n"
+        f"Updated long-term memory: {LONG_MEMORY_TOKEN}"
+    )
+    return [
+        {"role": "system", "content": LONG_MEMORY_SYSTEM_PROMPT},
+        {"role": "user", "content": [{"type": "text", "text": user_text}]},
+    ]
+
+
 def qa_messages(current_frames, question: str, summary_count: int, target: str | None = None):
     memory = " ".join([SUMMARY_TOKEN] * summary_count) if summary_count > 0 else "No prior memory."
     user_text = (
         f"Summary bank: {memory}\n"
+        f"Question: {question}\n"
+        "Respond by starting with <WAIT> if more video is needed, "
+        "or <ANSWER> if the current evidence is sufficient."
+    )
+    messages = [
+        {"role": "system", "content": QA_SYSTEM_PROMPT},
+        {"role": "user", "content": content_with_images(current_frames, user_text)},
+    ]
+    if target is not None:
+        messages.append({"role": "assistant", "content": target})
+    return messages
+
+
+def two_level_qa_messages(
+    current_frames,
+    question: str,
+    short_memory_count: int,
+    long_memory_count: int,
+    target: str | None = None,
+):
+    short_memory = " ".join([SHORT_MEMORY_TOKEN] * short_memory_count) if short_memory_count else "No recent short-term memory."
+    long_memory = " ".join([LONG_MEMORY_TOKEN] * long_memory_count) if long_memory_count else "No long-term memory."
+    user_text = (
+        f"Long-term memory: {long_memory}\n"
+        f"Short-term memory: {short_memory}\n"
         f"Question: {question}\n"
         "Respond by starting with <WAIT> if more video is needed, "
         "or <ANSWER> if the current evidence is sufficient."

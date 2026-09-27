@@ -1,385 +1,722 @@
-# Live Ultrasound Video Understanding — 完整 Pipeline
+# Live Ultrasound Video Understanding — Final Pipeline
 
-目标：从 YouTube / Bilibili 超声教学视频，构建数据并训练一个 answerability-aware 的实时超声视频理解模型（Qwen/Qwen3-VL-2B-Instruct）。
+本文档是当前 repo 的**唯一权威实现文档**，集中说明完整 pipeline、各阶段实现逻辑、input / output / loss、脚本入口、训练与评估命令。
 
 ---
 
 ## 0. 总览
 
-```text
-1. 视频爬取         UltrasoundCrawler_KeyCode_20260323_v2/
-2. 视频过滤         src/video_filter.py / scripts/video_filter_vlm.py
-3. 数据准备         QA/prepare/run_prepare.py  (ASR转录获取字幕 + 视频切分clipping)
-        │            -> transcripts/{id}.json  +  clips/{id}_clips.json
-        │
-        ├── Pretrain 分支（预训练，让模型学习超声视觉-语言的对应关系）
-        │     4. build_samples   pretrain/build_samples.py  -> pretrain_samples.jsonl
-        │     5. 预训练           pretrain/train.py          (Stage 1, LoRA)
-        │
-        └── QA / SFT 分支（学 WAIT/ANSWER 决策，判断什么时候可以回答问题，什么时候无法回答问题。）
-              6. QA 生成         QA/run.py = offline → streaming → validator → merger
-                                 -> {id}_training_samples.jsonl
-              7. SFT             QA/train/train.py          (Stage 2, LoRA)
-
-8. 推理 / 评测     QA/eval/ , pretrain/infer.py
-```
-
-关键点：
-
-- Pretrain 分支和 QA/SFT 分支**共享前面的爬取 / 过滤 / 数据准备（ASR + clipping）**，之后分成两条独立数据流。
-- 两条训练分支目前**完全解耦**，是否用 Stage 1 预训练的 adapter 作为 Stage 2 SFT的起点，是可选实验。
-
----
-
-## 1. 视频爬取
-
-目录：`UltrasoundCrawler_KeyCode_20260323_v2/`
-
-- 从 YouTube / Bilibili 爬取超声教学视频。
-- 有 Web UI（`webapp.py` / `run_ui.bat`）和 CLI（`cli.py`）。
-
-**产物**：原始视频 `output/.../media/<category>/{video_id}.mp4`。
-
----
-
-## 2. 视频过滤
-
-- `src/video_filter.py`
-- `scripts/video_filter_vlm.py`
-- `scripts/batch_filter.py`
-
-用 VLM 判断视频是否为"有用的超声教学内容"，过滤掉无关视频（纯讲座、广告、非超声等）。
-
-**产物**：过滤后的视频清单。
-
----
-
-## 3. 数据准备（ASR + Clipping，一键）
-
-入口：`QA/prepare/run_prepare.py`（内部依次调用 `QA/prepare/asr.py` 和 `QA/prepare/clipping.py`）。
-
-```bash
-python QA/prepare/run_prepare.py \
-    --video path/to/video.mp4 \
-    --output-dir QA/results \
-    --whisper-model base
-# 可选: --language en / --skip-asr / --skip-clipping / --no-llm-clipping
-```
-
-**产物**：
+目标：构建面向实时超声视频的 streaming understanding 系统。模型持续接收超声视频流和可选 ASR narration；当用户提问时，判断当前证据是否足够，并输出：
 
 ```text
-QA/results/transcripts/{video_id}.json
-QA/results/clips/{video_id}_clips.json
+<WAIT> reason
 ```
 
-### 3.1 ASR 转录
+或：
 
-- ffmpeg 抽音频 → faster-whisper 转写 → 带时间戳 JSON。
-- 模型策略：默认 `medium`；检测到 GPU 时自动升级 `large-v3`；GPU 用 `float16`，CPU 用 `int8`。医学术语需要较大模型，避免污染下游文本。
-- 也可单独运行：`python QA/prepare/asr.py --video ... --output-dir QA/results`
+```text
+<ANSWER> answer
+```
 
-transcript 格式：
+完整路线：
+
+```text
+Raw ultrasound videos
+↓
+ASR transcript + video filtering / clipping
+↓
+Stage 1: Ultrasound visual-language pretraining
+  video frames + ASR narration -> narration
+↓
+Stage 2: Two-level streaming memory compression
+  every 1s: frames -> 1 short memory token
+  every 60s: previous 60 long tokens + current 60 short tokens -> new 60 long tokens
+↓
+Stage 3: Streaming QA / WAIT-ANSWER SFT
+  long memory + short memory + optional current frames + question
+  -> <WAIT> reason / <ANSWER> answer
+↓
+Evaluation
+```
+
+关键点：历史视频不会在 query 到来时全部重新输入；历史由 short / long memory tokens 承载。
+
+---
+
+## 1. 数据准备
+
+### 1.1 视频与 ASR
+
+视频来自 YouTube / Bilibili 超声教学视频。ASR transcript 格式：
 
 ```json
 {
-  "video_id": "TlckvYhqaFE",
-  "duration_sec": 623.4,
-  "segments": [{"start": 4.3, "end": 12.3, "text": "So the first thing we do is..."}, ...],
+  "video_id": "8V649L5Q368",
+  "duration_sec": 1136.85,
+  "segments": [
+    {"start": 4.46, "end": 7.08, "text": "Today, we're going to be learning about lung ultrasound."}
+  ],
   "full_text": "..."
 }
 ```
 
-### 3.2 Clipping（视频切片，超声友好、离线、无 LLM）
+ASR transcript 是 Stage 1 和 Stage 2 的语言监督来源。
 
-- 核心实现：`scripts/video_clipping.py`（函数 `clip_video`）；wrapper：`QA/prepare/clipping.py`。
-- 也可单独运行：`python QA/prepare/clipping.py --video ... --output-dir QA/results`
-- 逻辑：
-  1. **视觉变化检测**（固定时间网格，默认每 1.5s 一帧）。支持多种 `--visual-method`：
-     - **`qwen_embed`（默认）**：用 **torchcodec** 抽**原始彩色帧**（不经 OpenCV、不转灰度），过 **`Qwen/Qwen3-VL-Embedding-2B`**（与 SFT 基座 Qwen3-VL-2B 同源）得图像 embedding → L2 归一化 → 相邻帧**余弦相似度**；`similarity < scene_threshold`（默认 `0.85`）且间隔 ≥ `min_scene_gap(3s)` 记为 scene change。**需要 GPU**；缺 GPU / sentence-transformers / torchcodec 时自动回退 `ssim`。
-     - `ssim` / `framediff`：OpenCV 灰度网格 SSIM（默认阈值 `0.6`，无 scikit-image 回退 framediff）。
-     - `histogram`：legacy 逐 segment 直方图。
-  2. 句子边界：英文标点 `.?!` + 停顿 gap(0.8s) fallback + 全弱边界兜底。
-  3. 对齐：视觉切点找最近句边界（`tolerance=5s`），找不到就放弃该切点（保句子完整）。
-  4. 组装：`min_clip=30s`、`max_clip=240s`；短尾（< min_clip）合并到前一个 clip。
-  5. 超长（> max_clip）按句边界细分。
-- 阈值调参：加 `--save-trace` 输出每个采样点的相似度，便于确定 `--scene-threshold`。
-- 相关参数：`--qwen-embed-model`（默认 `Qwen/Qwen3-VL-Embedding-2B`）、`--qwen-embed-device`（auto）、`--qwen-embed-batch`（16）。
+### 1.2 过滤
 
-clips 格式（含 method / params / coverage_pct / 每 clip 的 start/end/duration/text/cut_reason）：
+过滤包括：
 
-```json
-{
-  "video_id": "...",
-  "clips": [
-    {"clip_idx": 1, "start": 87.45, "end": 250.17, "duration": 162.72,
-     "text": "...", "cut_reason": "scene_change"}
-  ]
-}
+```text
+1. ASR rule-based filtering
+2. Teacher VLM video-type / anatomy / clinical-scenario filtering
 ```
+
+当前推荐 teacher 设置：
+
+```text
+Primary open-source teacher:
+  Qwen/Qwen3.5-35B-A3B via OpenAI-compatible local endpoint
+  注意：用于视觉分类时，该 endpoint 必须支持 image inputs。
+
+Cross-validation teacher:
+  Gemini 3 Pro via OpenRouter / Google OpenAI-compatible endpoint
+```
+
+推荐分类标签：
+
+```text
+hands_on_ultrasound_teaching
+pure_ultrasound_scan
+ultrasound_ppt_lecture
+mixed_ultrasound_teaching
+ultrasound_image_discussion
+non_ultrasound_or_irrelevant
+uncertain
+```
+
+同时输出：
+
+```text
+anatomy_regions
+clinical_scenarios
+scan_views_or_targets
+has_realtime_ultrasound / has_probe_or_patient / has_ppt_or_slides / ...
+keep_for_pretrain / keep_for_compression / keep_for_sft
+```
+
+分类脚本：
+
+```bash
+# Qwen3.5 open-source teacher, full classification
+python scripts/data/classify_ultrasound_video_type_teacher.py \
+  --video-map cluster_data/splits/train_full295_asr_keep_videos.json \
+  --output cluster_data/splits/train_full295_qwen35_video_type.jsonl \
+  --teacher qwen35 \
+  --model Qwen/Qwen3.5-35B-A3B \
+  --base-url http://localhost:8000/v1 \
+  --api-key-env VLLM_API_KEY \
+  --n-frames 16 \
+  --frame-size 224 \
+  --resume
+
+# Gemini 3 Pro cross-validation
+python scripts/data/classify_ultrasound_video_type_teacher.py \
+  --video-map cluster_data/splits/train_full295_asr_keep_videos.json \
+  --output cluster_data/splits/train_full295_gemini3_video_type.jsonl \
+  --teacher gemini3 \
+  --model google/gemini-3-pro \
+  --base-url https://openrouter.ai/api/v1 \
+  --api-key-env OPENROUTER_API_KEY \
+  --n-frames 16 \
+  --frame-size 224 \
+  --resume
+
+# Merge teacher outputs into final audit
+python scripts/data/merge_video_type_teacher_labels.py \
+  --primary-audit cluster_data/splits/train_full295_qwen35_video_type.jsonl \
+  --validator-audit cluster_data/splits/train_full295_gemini3_video_type.jsonl \
+  --output cluster_data/splits/train_full295_video_type_final.jsonl \
+  --output-summary cluster_data/splits/train_full295_video_type_final_summary.json
+```
+
+推荐 keep policy：Stage 2 / Stage 3 默认保留 `hands_on_ultrasound_teaching` 和 `pure_ultrasound_scan`；`mixed_ultrasound_teaching` 标记 `needs_clipping`，默认不直接进入 compression / SFT；PPT / 静态图讨论主要用于 Stage 1 或 offline QA；无关和 uncertain 默认不进入 Stage 2 / Stage 3。
 
 ---
 
-## 4. Pretrain 分支：构造预训练样本
+## 2. Stage 1 — Ultrasound Visual-language Pretraining
 
-入口：`pretrain/build_samples.py`
+### 2.1 目标
 
-- **任务**：整句 caption completion。对每个 ASR segment，看这句开始前最近 N 秒的帧，续写这句超声解说。
-- `current_time = segment.start`，`video_window = [max(0, start - window_sec), start]`。
-- 带 `prev_context`（前文解说，可截断，可 `--no-context` 关闭）。
-- 过滤：空句、词数 < `--min-words`、含 `[music]/[applause]/[laughter]/[inaudible]/[noise]` 的 segment。
+让 Qwen3-VL 学习超声视觉内容和 ASR narration 的对应关系。
+
+```text
+video frames + optional ASR context -> target narration
+```
+
+Stage 1 不涉及 memory token，也不涉及 `<WAIT>/<ANSWER>`。
+
+### 2.2 Input / Output
+
+Input：
+
+```text
+System Prompt
++ sampled ultrasound frames
++ optional previous ASR narration context
+```
+
+Output：
+
+```text
+target ASR narration sentence / chunk
+```
+
+### 2.3 Loss
+
+普通 causal LM loss：
+
+```text
+loss_stage1 = CE(target_narration_tokens)
+```
+
+只监督 assistant target；system / user / image prompt tokens 置为 `-100`。
+
+### 2.4 脚本
+
+```text
+pretrain/build_samples.py
+pretrain/train.py
+pretrain/infer.py
+```
+
+示例：
 
 ```bash
 python pretrain/build_samples.py \
-  --transcripts QA/results/transcripts \
+  --transcripts results/transcripts \
   --output pretrain/data/pretrain_samples.jsonl \
-  --window-sec 8 --min-words 3 --context-max-chars 400
-```
+  --unit sentence --window-sec 8 --min-words 3
 
-**产物**：`pretrain/data/pretrain_samples.jsonl`（`sample_type=pretrain_caption`）：
-
-```json
-{
-  "sample_type": "pretrain_caption",
-  "video_id": "TlckvYhqaFE",
-  "video_window": [4.3, 12.3],
-  "prev_context": "前文解说（截断到 context-max-chars）",
-  "target": "So the first thing we do is place the linear probe...",
-  "meta": {"segment_idx": 5, "seg_start": 12.3, "seg_end": 15.8}
-}
-```
-
-其中 `video_window = [max(0, seg_start - window_sec), seg_start]`。
-
----
-
-## 5. 预训练（Stage 1）
-
-入口：`pretrain/train.py`
-
-- LoRA 预训练，**不加 special token，词表不变**（adapter 小、快、省显存）。
-- System prompt：`You are an ultrasound teaching assistant...Continue the spoken narration...`
-- User：`[N frames] + (可选) "Narration so far: {prev_context}\nContinue..."`；Assistant：`{target}`。
-- **Loss**：只对 assistant `target` 计算，其余（system / 图像 token / user / prev_context）都 `-100`。label mask 通过在 `input_ids` 中定位 target token 子序列实现，兼容 Qwen-VL image placeholder 展开。
-- Early Stopping（每 epoch 平均 loss，连续 N epoch 改善 < min_delta 停）+ TensorBoard。
-- 多视频用 `--video-path-map`（JSON: `{video_id: mp4_path}`）；单视频用 `--default-video-path`。
-
-```bash
 python pretrain/train.py \
   --model-name Qwen/Qwen3-VL-2B-Instruct \
   --train-jsonl pretrain/data/pretrain_samples.jsonl \
   --video-path-map pretrain/data/video_path_map.json \
-  --output-dir /mnt/cache/qwenFT/pretrain_qwen3vl_bf16 \
+  --output-dir /mnt/cache/qwenFT/qwen3vl_stage1_pretrain \
   --window-size 4 --frame-size 224 \
   --num-train-epochs 3 \
   --per-device-train-batch-size 1 --gradient-accumulation-steps 8 \
-  --learning-rate 1e-4 --bf16 --gradient-checkpointing \
-  --early-stop-patience 3 --early-stop-min-delta 0.001
+  --learning-rate 1e-4 --bf16
 ```
-
-**产物**：预训练 LoRA adapter。
-
-推理检查：`pretrain/infer.py`（caption 续写）。
-
-> 当前限制：batch size = 1；用 image blocks（N 张图）而非 video block（兼容多版本 Qwen-VL processor）；只做整句 completion（句中续写是后续 ablation）。
 
 ---
 
-## 6. QA 生成（一体化 `QA/run.py`）
+## 3. Stage 2 — Two-level Streaming Memory Compression
 
-入口：`QA/run.py`，内部按顺序执行四步：**offline_generator → generator(streaming) → validator → merger**。
+Stage 2 训练 query-agnostic memory compression。
 
-```bash
-python QA/run.py \
-  --video path/to/{video_id}.mp4 \
-  --expand-wait-answer
-# 默认 clips = results/clips/{id}_clips.json, transcript = results/transcripts/{id}.json
-# 可用 --clips / --transcript / --out-dir 覆盖；--skip-offline/-generation/-validation/-merge 跳步
-```
-
-生成器默认模型 `google/gemini-2.5-flash`（通过 OpenRouter；需要 API key）。
-
-### 6.1 Offline QA — `QA/offline_generator.py`
-
-- 每个 clip 生成 **1 条** `clip_summary`（完整 clip 理解：扫查过程 + 关键视觉细节 + 相关医学知识）。
-- clip 超长按 `--clip-max-sec`（默认 300s）截断上传。
-
-**产物**：`QA/results/{id}_offline_qa.json`
-
-### 6.2 Streaming QA — `QA/generator.py`（**当前语义，已更新**）
-
-- **单锚点**：`TIME_RATIOS = [0.5]`（clip 中点），且 `MAX_QA_PER_ANCHOR = 1` → **每 clip 只产 1 条 streaming QA**。
-- QA 类型：`next_action`（接下来该做什么：探头调整、加压、切模式、调体位）/ `next_observation`（接下来该看什么：胸膜线、A/B-lines、spine/curtain sign、回声/运动模式）。每条 QA 带 `query_time`（证据不足）与 `answer_time`（证据充分），`answer_time - query_time ≥ MIN_ANSWER_DELAY_SEC(5s)`。
-- **`wait_reason`（新增，抗坍塌关键）**：每条 QA 必须给出一句"为何在 `query_time` 尚不可答"的**具体缺失证据**（哪一个结构还没出现 / 哪个探头动作还没发生 / 哪个 sign 还看不到），且必须与 `answer` 对应。
-  - 质量控制 `is_generic_wait_reason()`：空 / 少于 5 词 / 命中通用套话黑名单（如 "not enough information"、"more video is needed"）→ 视为无效，该 QA 被 drop。
-
-**产物**：`QA/results/{id}_streaming_qa.json`（含每条 QA 的 `question / answer / wait_reason / evidence / query_time / answer_time / type / clip_idx`）。
-
-### 6.3 校验 — `QA/validator.py`
-
-- 三条硬约束 + VLM 校验 QA 质量/格式：
-  1. `question_no_leak`：问题不能泄露 future 信息。
-  2. `not_answerable_at_query_time`：`query_time` 时证据不足。
-  3. `answerable_at_answer_time`：`answer_time` 时证据充分。
-- **本地 `wait_reason` 质量**（无额外 API 调用）：若 `wait_reason` 缺失 / 太短 / 通用，也强制 downgrade 成 `fail` 并附注说明（黑名单与 generator 一致）。
-- `QA/run.py` 支持三种 validation mode：
-  - `--validation-mode all`：全量 VLM validation，并用 validated streaming QA 进入 merger。适合小规模调试 / eval set。
-  - `--validation-mode sample`：只抽样 validation，产出 audit 文件；训练数据 merge 使用 raw streaming QA。适合 train set 批量生成时控制成本。
-  - `--validation-mode none`：完全跳过 VLM validation，直接 merge raw streaming QA。适合 generator 质量已稳定后的大规模 train generation。
-- 抽样参数：
-  - `--validation-sample-rate 0.1`
-  - `--validation-max-qa 20`
-  - `--validation-sample-seed 42`
-- `--keep-failed` 只对 `validation-mode all` 的 validated 输出有意义；默认丢弃 failed QA。
-
-**产物**：
-- `all`：`QA/results/{id}_streaming_qa_validated.json`
-- `sample`：`QA/results/{id}_streaming_qa_validation_sample.json` + `QA/results/{id}_streaming_qa_validation_audit.json`
-- `none`：不生成 validation 产物
-
-### 6.4 合并 / 展开 — `QA/merger.py`
-
-- 合并 offline + streaming，产出 per-video 记录 `{id}.jsonl`。
-  - `validation-mode all`：使用 validated streaming QA。
-  - `validation-mode sample/none`：使用 raw streaming QA。
-- `--expand-wait-answer` 展开成 WAIT/ANSWER 训练样本。
-- **WAIT 目标多样化**：`_wait_target_for(qa)` 在 `wait_reason` 具体且非通用时用 `"<WAIT> {wait_reason}"`（多样化 WAIT 目标，缓解坍塌）；否则回退固定 `WAIT_TARGET = "<WAIT> Not enough information yet. More video is needed."`（兼容老数据）。
-
-**最终产物**：`QA/results/{video_id}_training_samples.jsonl`，每行一条训练样本，三类：
+### 3.1 Memory 定义
 
 ```text
-offline_answer     -> <ANSWER> clip_summary          (整段 clip 均匀采样)
-streaming_wait     -> <WAIT> {wait_reason} / 固定兜底  (query_time 前末尾窗口)
-streaming_answer   -> <ANSWER> {answer}                (answer_time 前末尾窗口)
+Short-term memory:
+  每秒新增 1 个 <SHORT_MEM> hidden-state token
+  保存最近细粒度证据
+
+Long-term memory:
+  每 60s 全量更新 60 个 <LONG_MEM> hidden-state tokens
+  保存更长历史
 ```
 
-样本 schema（简化）：
+Decode / reconstruction 阶段只看 memory tokens，不看 raw visual tokens。
+
+---
+
+### 3.2 Short memory update
+
+每秒处理一次视频流：
+
+```text
+x_t = frames in [t, t+1]
+s_t = hidden_state(<SHORT_MEM> | x_t)
+```
+
+每秒得到一个 short memory token：
+
+```text
+s_0, s_1, s_2, ...
+```
+
+一个完整 60s block：
+
+```text
+S_k = [s_{60k}, s_{60k+1}, ..., s_{60k+59}]
+```
+
+---
+
+### 3.3 Short memory supervision
+
+ASR segment 用覆盖它的 short tokens 重建 narration。
+
+例如：
+
+```text
+ASR: [4.46, 7.08]
+Text: "Today, we're going to be learning about lung ultrasound."
+
+short windows:
+  [4,5], [5,6], [6,7], [7,8]
+
+short tokens:
+  s_4, s_5, s_6, s_7
+```
+
+Input：
+
+```text
+s_4, s_5, s_6, s_7
+```
+
+Output：
+
+```text
+ASR segment text
+```
+
+Loss：
+
+```text
+loss_short = CE(DecodeShortMemory(s_4, ..., s_7), ASR_segment_text)
+```
+
+---
+
+### 3.4 Long memory update
+
+每个完整 60s block：
+
+```text
+block k = [60k, 60k + 60]
+S_k = [s_{60k}, ..., s_{60k+59}]  # 60 short tokens
+L_{k-1} = [l_{k-1}^1, ..., l_{k-1}^{60}]  # 60 long tokens, first block empty
+```
+
+Input：
+
+```text
+previous long memory L_{k-1}
++ current short memory S_k
++ 60 learnable <LONG_MEM> query tokens
+```
+
+Output：
+
+```text
+L_k = hidden states at the final 60 <LONG_MEM> positions
+```
+
+形式化：
+
+```text
+L_k = Compress(L_{k-1}, S_k)
+```
+
+Long memory 是全量替换，不是 append：
+
+```text
+L_1, L_2, L_3, ... each has exactly 60 tokens
+```
+
+---
+
+### 3.5 Long memory reconstruction prompts and losses
+
+对同一个 `L_k` 做三个 decode tasks。
+
+#### Current block reconstruction
+
+Prompt：
+
+```text
+Reconstruct the narration for the past/current 60-second block only.
+```
+
+Target：
+
+```text
+current_block_target = ASR narration in [block_start, block_end]
+```
+
+Loss：
+
+```text
+loss_current = CE(DecodeCurrent(L_k), current_block_target)
+```
+
+#### Previous retention reconstruction
+
+Prompt：
+
+```text
+Reconstruct the narration from the beginning of the video up to the start of the current block.
+```
+
+Target：
+
+```text
+previous_summary_target = ASR narration in [0, block_start], truncated
+```
+
+Loss：
+
+```text
+loss_previous = CE(DecodePrevious(L_k), previous_summary_target)
+```
+
+#### Accumulated reconstruction
+
+Prompt：
+
+```text
+Reconstruct the narration from the beginning of the video up to the end of the current block.
+```
+
+Target：
+
+```text
+accumulated_summary_target = ASR narration in [0, block_end], truncated
+```
+
+Loss：
+
+```text
+loss_accumulated = CE(DecodeAccumulated(L_k), accumulated_summary_target)
+```
+
+Total loss：
+
+```text
+loss_long = (
+    λ_all      * loss_accumulated
+  + λ_current  * loss_current
+  + λ_previous * loss_previous
+) / (λ_all + λ_current + λ_previous)
+```
+
+默认：
+
+```text
+λ_all = 1.0, λ_current = 0.5, λ_previous = 0.3
+```
+
+---
+
+### 3.6 Ground Truth 来源
+
+当前全部从 ASR transcript 自动构造：
+
+```text
+current_block_target:
+  ASR concat in [block_start, block_end]
+
+previous_summary_target:
+  ASR concat in [0, block_start], then truncated by --history-max-chars
+
+accumulated_summary_target:
+  ASR concat in [0, block_end], then truncated by --history-max-chars
+```
+
+默认：
+
+```text
+--history-max-chars 2400
+```
+
+当前截断是 tail truncation：超过长度时保留最后 `history_max_chars` 个字符。后续可用 rolling LLM summary 替换这些字段，训练代码无需改动。
+
+---
+
+### 3.7 Long block 尾部处理
+
+Long memory compression 只构造完整 60s blocks：
+
+```text
+[0,60], [60,120], [120,180], ...
+```
+
+最后不足 60s 的尾巴直接丢弃，以保持固定结构：
+
+```text
+60 short tokens -> 60 long tokens
+```
+
+Short memory compression 仍覆盖所有 ASR segments，包括尾部。
+
+---
+
+### 3.8 Data Schema
+
+Short sample：
 
 ```json
 {
-  "sample_type": "streaming_wait",
+  "sample_type": "short_memory_compression",
   "video_id": "8V649L5Q368",
-  "clip_idx": 1,
-  "video_window": [167.0, 197.0],
-  "question": "...",
-  "target": "<WAIT> The pleural line is not yet centered between the rib shadows...",
-  "qa_type": "next_observation",
-  "meta": {"query_time": 197.0, "answer_time": 215.0, "wait_reason": "..."}
+  "asr_window": [4.46, 7.08],
+  "short_windows": [[4.0, 5.0], [5.0, 6.0], [6.0, 7.0], [7.0, 8.0]],
+  "target": "Today, we're going to be learning about lung ultrasound.",
+  "meta": {"source": "asr_segment", "step_sec": 1.0}
 }
 ```
 
-> 数据 schema 唯一权威：`QA/schema.md`。
+Long sample：
+
+```json
+{
+  "sample_type": "long_memory_compression",
+  "video_id": "8V649L5Q368",
+  "block_idx": 1,
+  "block_window": [60.0, 120.0],
+  "history_window": [0.0, 120.0],
+  "short_windows": [[60.0, 61.0], "...", [119.0, 120.0]],
+  "previous_blocks": [
+    {"block_idx": 0, "block_window": [0.0, 60.0], "short_windows": [[0.0, 1.0], "..."]}
+  ],
+  "num_long_tokens": 60,
+  "current_block_target": "ASR narration in 60-120s",
+  "previous_summary_target": "ASR narration in 0-60s, truncated",
+  "accumulated_summary_target": "ASR narration in 0-120s, truncated",
+  "target": "same as accumulated_summary_target",
+  "meta": {"target_mode": "accumulated_summary_asr_truncated", "block_sec": 60, "step_sec": 1, "drop_last_incomplete": true}
+}
+```
 
 ---
 
-## 7. SFT（Stage 2）
+### 3.9 Stage 2 scripts and commands
 
-入口：`QA/train/train.py`
-
-**训练目标**：answerability —— 证据不足输出 `<WAIT>`，证据充分输出 `<ANSWER> answer`。
-
-统一输入形式：
+Files：
 
 ```text
-System Prompt
-+ current_time 之前最后 N 帧 visual tokens
-+ Question
-→ <WAIT> 或 <ANSWER> answer
+pretrain/build_memory_compression_samples.py
+pretrain/memory_dataset.py
+pretrain/memory_collator.py
+pretrain/train_memory_compression.py
+pretrain/infer_memory_compression.py
+pretrain/eval_memory_compression.py
 ```
 
-- 新增 special token `<WAIT>` / `<ANSWER>`，并让 `embed_tokens` / `lm_head` 通过 `modules_to_save` 可训练。
-- 冻结 vision encoder；LoRA SFT；只对 assistant `target` 计算 loss（其余 `-100`）。
-- Early Stopping + TensorBoard；T4 用 `--fp16`，Ampere/A100+ 用 `--bf16`。
-
-**视觉输入构造**（`QA/train/video_sampling.py`；`video_window=[start,end]` 只定义时间范围，帧数由训练脚本决定，便于帧数消融）：
-
-- streaming（`sample_last_n_frames`）：`current_time = video_window.end`，在 `[max(start, current_time-WINDOW_SIZE), current_time]` 内均匀取 `WINDOW_SIZE` 帧（"末尾 N 秒取 N 帧"，聚焦最近上下文；不足则复制末帧补齐）。
-- offline（`sample_uniform_frames`）：整段 clip 均匀采样 `WINDOW_SIZE` 帧。
+Build：
 
 ```bash
-python QA/train/train.py \
-  --model-name Qwen/Qwen3-VL-2B-Instruct \
-  --train-jsonl QA/results/{video_id}_training_samples.jsonl \
-  --default-video-path path/to/{video_id}.mp4 \
-  --output-dir /mnt/cache/qwenFT/qwen3vl_2b_lora_wait_answer \
-  --window-size 8 --frame-size 336 \
-  --num-train-epochs 100 \
-  --per-device-train-batch-size 1 --gradient-accumulation-steps 4 \
-  --learning-rate 2e-4 --bf16 --gradient-checkpointing \
-  --early-stop-patience 3 --early-stop-min-delta 0.001
-# smoke: 加 --limit 4 --num-train-epochs 1
-# 显存紧张: --frame-size 336 --gradient-checkpointing --gradient-accumulation-steps 16
-# 后续消融: WINDOW_SIZE ∈ {8,16,32}, FRAME_SIZE ∈ {336,448}
+python pretrain/build_memory_compression_samples.py \
+  --transcripts results/transcripts \
+  --output pretrain/data/memory_compression_samples.jsonl \
+  --types short,long \
+  --block-sec 60 \
+  --step-sec 1 \
+  --long-token-count 60 \
+  --history-max-chars 2400 \
+  --min-words 3
 ```
 
-**产物**：SFT LoRA adapter。
-
----
-
-## 8. 推理 / 评测
-
-- `QA/eval/infer_qwen.py`：base model raw 推理（answerability baseline）。
-- `QA/eval/infer_qwen_lora.py`：base + LoRA adapter 推理，`skip_special_tokens=False` 保留 `<WAIT>`/`<ANSWER>`，统计 answerability accuracy。
-- `QA/eval/analyze_predictions.py`：分析预测结果。
-- `QA/eval/test_openrouter_video_model.py`：OpenRouter 视频模型连通性/对照测试。
-- `pretrain/infer.py`：预训练 adapter 的 caption 续写推理。
-- `QA/test/check_collator_labels.py`：验证 collator 的 label mask 只监督 `<WAIT>`/`<ANSWER>` target。
-
-SFT adapter 推理示例：
+Train：
 
 ```bash
-python QA/eval/infer_qwen_lora.py \
+python pretrain/train_memory_compression.py \
   --model-name Qwen/Qwen3-VL-2B-Instruct \
-  --adapter-path /mnt/cache/qwenFT/qwen3vl_2b_lora_wait_answer \
-  --eval-jsonl QA/results/{video_id}_training_samples.jsonl \
-  --default-video-path path/to/{video_id}.mp4 \
-  --output /mnt/cache/qwenFT/predictions.jsonl \
-  --window-size 8 --frame-size 336 --limit 20 --max-new-tokens 160 --bf16
+  --train-jsonl pretrain/data/memory_compression_samples.jsonl \
+  --video-path-map pretrain/data/video_path_map.json \
+  --output-dir /mnt/cache/qwenFT/qwen3vl_memory_compression \
+  --short-frames 2 --frame-size 224 \
+  --max-previous-blocks 1 \
+  --lambda-all 1.0 --lambda-current 0.5 --lambda-previous 0.3 \
+  --num-train-epochs 1 --learning-rate 1e-4 --bf16
+```
+
+Infer / Eval：
+
+```bash
+python pretrain/infer_memory_compression.py \
+  --model-name Qwen/Qwen3-VL-2B-Instruct \
+  --adapter-path /mnt/cache/qwenFT/qwen3vl_memory_compression \
+  --eval-jsonl pretrain/data/memory_compression_samples.jsonl \
+  --output results/memory_compression_predictions.jsonl \
+  --video-path-map pretrain/data/video_path_map.json \
+  --short-frames 2 --frame-size 224 --bf16
+
+python pretrain/eval_memory_compression.py \
+  --pred-jsonl results/memory_compression_predictions.jsonl \
+  --output results/memory_compression_eval.json
 ```
 
 ---
 
-## 9. 目录速查
+## 4. Stage 3 — Streaming QA / WAIT-ANSWER SFT
+
+### 4.1 目标
+
+使用 Stage 2 训练出的 memory 表示做 streaming QA。
+
+Input：
 
 ```text
-UltrasoundCrawler_KeyCode_20260323_v2/  1. 爬取
-src/video_filter.py                     2. 过滤
-scripts/video_filter_vlm.py             2. 过滤
-QA/prepare/run_prepare.py               3. 数据准备（ASR + clipping 一键）
-  QA/prepare/asr.py                     3. ASR（core: scripts/asr_pipeline.py）
-  QA/prepare/clipping.py                3. Clipping（core: scripts/video_clipping.py, 默认 qwen_embed, no LLM）
-pretrain/                               4-5. 预训练分支
-  build_samples.py / dataset.py / collator.py / train.py / infer.py / video_sampling.py
-QA/run.py                               6. QA 生成一体化入口
-  offline_generator.py                  6.1 offline QA
-  generator.py                          6.2 streaming QA（单锚点 + wait_reason）
-  validator.py                          6.3 校验（含本地 wait_reason 质量门）
-  merger.py                             6.4 合并/展开（WAIT 目标多样化）
-  smoke_test.py                         6.5 本地逻辑自检
-QA/train/                               7. SFT
-  train.py / dataset.py / collator.py / video_sampling.py
-QA/eval/                                8. 推理/评测
-QA/schema.md                            数据 schema 唯一权威
+long memory L_t
++ recent short memory S_t
++ optional current visual frames
++ question Q
 ```
 
----
-
-## 10. 环境要点
-
-- GPU 训练环境：Azure T4（`azureml_py38`，torch 2.9.1+cu128）。本项目 T4 环境 `is_bf16_supported=True`，可用 `--bf16`；否则用 `--fp16`。
-- 大文件（模型下载 / checkpoint）放可写大盘，例如 `/mnt/cache`；根分区通常空间紧张。
-- Transformers 在混合环境里可能误 import TensorFlow/Keras：训练脚本已在顶部 `os.environ.setdefault("TRANSFORMERS_NO_TF", "1")`，或运行前 export。
-- QA 生成走 OpenRouter，需要 API key（`.env` 或 `--api-key`）。
-- 依赖见 `requirements.txt`（含 `faster-whisper`、`scikit-image`(SSIM)、`tensorboard`）。
-
----
-
-## 11. 两阶段训练关系
+Output：
 
 ```text
-Stage 1 (pretrain/)  : ASR caption completion   -> 学超声视觉-语言知识（不加 special token）
-Stage 2 (QA/train/)  : WAIT/ANSWER answerability -> 学决策格式（加 <WAIT>/<ANSWER>）
-
-两套代码解耦、可独立运行。
-可选：Stage 2 从 Stage 1 的 adapter 继续，作为后续实验。
+<WAIT> reason
 ```
+
+或：
+
+```text
+<ANSWER> answer
+```
+
+### 4.2 QA 数据核心字段
+
+```text
+query_time: 用户提问时刻
+answer_time: 第一次证据足以回答问题的时刻
+```
+
+WAIT 样本：
+
+```text
+Input:  memory up to query_time + optional current frames + question
+Output: <WAIT> reason
+Loss:   CE(<WAIT> reason)
+```
+
+ANSWER 样本：
+
+```text
+Input:  memory up to answer_time + optional current frames + question
+Output: <ANSWER> answer
+Loss:   CE(<ANSWER> answer)
+```
+
+Answerability：
+
+```text
+p_WAIT   = P(<WAIT>   | L_t, S_t, V_t, Q)
+p_ANSWER = P(<ANSWER> | L_t, S_t, V_t, Q)
+```
+
+Scripts：
+
+```text
+QA/run.py
+QA/train/train_summary_decide.py
+QA/eval/infer_summary_decide.py
+```
+
+Note：Stage 2 已经严格对齐 60-short / 60-long 设计；Stage 3 代码需要保持与该 memory semantics 同步。
+
+---
+
+## 5. Online Inference
+
+```text
+1. Initialize:
+   short_memory = []
+   long_memory = empty
+
+2. Every second:
+   receive current frames x_t
+   s_t = EncodeShort(x_t, <SHORT_MEM>)
+   append s_t to short_memory
+
+3. Every 60 seconds:
+   S_k = current 60 short tokens
+   L_k = Compress(L_{k-1}, S_k)
+   long_memory = L_k
+   clear short_memory
+
+4. If user asks Q:
+   input = long_memory + current short_memory + optional latest frames + Q
+   output = <WAIT> or <ANSWER>
+
+5. If <WAIT>:
+   continue streaming and updating memory
+   re-evaluate with same Q later
+
+6. If <ANSWER>:
+   return answer
+```
+
+---
+
+## 6. Evaluation
+
+Stage 2 memory quality：
+
+```text
+short memory reconstruction:
+  short tokens -> ASR segment narration
+
+long memory reconstruction:
+  long tokens -> current / previous / accumulated narration
+```
+
+Current automatic metrics：
+
+```text
+word overlap F1
+ROUGE-L F1
+medical term recall
+```
+
+Recommended：blind LLM judge for clinical correctness and temporal consistency.
+
+Stage 3 QA quality：
+
+```text
+WAIT/ANSWER accuracy
+premature answer rate
+over-wait rate
+answer delay
+answer correctness
+LLM judge clinical correctness
+```
+
+---
+
+## 7. Current Limitations
+
+```text
+1. Stage 2 previous/accumulated targets 当前是 ASR concat + tail truncation，不是真正 summary。
+2. Tail truncation 会偏向最近内容。
+3. Long-memory recursive construction 会随 --max-previous-blocks 增大而变贵。
+4. Stage 3 QA code 需要持续同步 strict 60-short / 60-long memory semantics。
+```
+
+---
+
+## 8. Next Steps
+
+```text
+1. Add rolling LLM summary targets:
+   summary_k = LLM(summary_{k-1}, current_block_asr_k)
+
+2. Add blind LLM judge for Stage 2 memory reconstruction.
+
+3. Fully align QA/train two-level memory path with strict 60-short / 60-long design.
+
+4. Run ablations:
+   - ASR truncation target vs rolling LLM summary target
+   - max_previous_blocks = 0 / 1 / 2 / 4
+   - short_frames = 1 / 2
+   - with / without current visual frames in QA
+```
+
+---
+
+## 9. One-line Summary
+
+The full pipeline first teaches the model ultrasound visual-language alignment, then trains it to produce one short memory token per second and compress previous 60 long tokens plus current 60 short tokens into new 60 long tokens, and finally uses this memory for streaming QA with explicit `<WAIT>/<ANSWER>` answerability decisions.

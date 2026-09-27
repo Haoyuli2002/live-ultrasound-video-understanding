@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Inference for recurrent <SUMMARY> streaming QA checkpoints.
+"""Inference for streaming-memory QA checkpoints.
 
-Answerability is decided by the LM logits of the next token:
-P(<WAIT> | S_t, V_t, Q) vs P(<ANSWER> | S_t, V_t, Q).
+Answerability is decided by the LM logits of the next token. In two-level mode
+this is P(<WAIT> | L_t, S_t, V_t, Q) vs P(<ANSWER> | L_t, S_t, V_t, Q);
+legacy mode keeps the older single <SUMMARY> bank path.
 """
 
 from __future__ import annotations
@@ -34,10 +35,15 @@ sys.path.insert(0, str(_TRAIN))
 
 from summary_dataset import SummaryDecideDataset  # noqa: E402
 from summary_collator import (  # noqa: E402
+    LONG_MEMORY_TOKEN,
     SUMMARY_TOKEN,
+    SHORT_MEMORY_TOKEN,
     SummaryDecideCollator,
+    long_memory_update_messages,
     qa_messages,
+    short_memory_update_messages,
     summary_update_messages,
+    two_level_qa_messages,
 )
 from train_summary_decide import load_model, replace_token_embedding, replace_token_embeddings  # noqa: E402
 
@@ -69,6 +75,69 @@ def update_summary_bank(model, collator, sample, device, max_bank_size: int):
         if len(summary_bank) > max_bank_size:
             summary_bank = summary_bank[-max_bank_size:]
     return summary_bank
+
+
+def update_two_level_memory(
+    model,
+    collator,
+    sample,
+    device,
+    *,
+    short_bank_size: int,
+    long_bank_size: int,
+    long_update_every: int,
+):
+    short_bank = []
+    long_bank = []
+    pending_short = []
+    tokenizer = collator.processor.tokenizer
+    short_id = tokenizer.convert_tokens_to_ids(SHORT_MEMORY_TOKEN)
+    long_id = tokenizer.convert_tokens_to_ids(LONG_MEMORY_TOKEN)
+
+    def compress_pending_short():
+        nonlocal pending_short, long_bank
+        if not pending_short:
+            return
+        messages = long_memory_update_messages(
+            short_memory_count=len(pending_short),
+            previous_long_count=len(long_bank),
+        )
+        encoded = move_to_device(collator.encode_messages(messages), device)
+        input_ids = encoded["input_ids"][0]
+        short_positions = [i for i, tok_id in enumerate(input_ids.tolist()) if tok_id == short_id]
+        long_positions = [i for i, tok_id in enumerate(input_ids.tolist()) if tok_id == long_id]
+        if len(short_positions) < len(pending_short):
+            raise RuntimeError("Not enough <SHORT_MEM> in long-memory update prompt")
+        if len(long_positions) < len(long_bank) + 1:
+            raise RuntimeError("Not enough <LONG_MEM> in long-memory update prompt")
+        token_positions = long_positions[:len(long_bank)] + short_positions[:len(pending_short)]
+        vectors = long_bank + pending_short
+        if token_positions:
+            encoded = replace_token_embeddings(model, encoded, token_positions, vectors)
+        with torch.no_grad():
+            outputs = model(**encoded, output_hidden_states=True)
+        long_bank.append(outputs.hidden_states[-1][:, long_positions[-1], :])
+        if len(long_bank) > long_bank_size:
+            long_bank = long_bank[-long_bank_size:]
+        pending_short = []
+
+    for idx, chunk in enumerate(sample["history_chunks"], start=1):
+        messages = short_memory_update_messages(chunk["frames"], text=chunk.get("text", ""))
+        encoded = move_to_device(collator.encode_messages(messages), device)
+        input_ids = encoded["input_ids"][0]
+        positions = [i for i, tok_id in enumerate(input_ids.tolist()) if tok_id == short_id]
+        if not positions:
+            raise RuntimeError("No <SHORT_MEM> in update prompt")
+        with torch.no_grad():
+            outputs = model(**encoded, output_hidden_states=True)
+        new_short = outputs.hidden_states[-1][:, positions[-1], :]
+        short_bank.append(new_short)
+        pending_short.append(new_short)
+        if len(short_bank) > short_bank_size:
+            short_bank = short_bank[-short_bank_size:]
+        if long_update_every > 0 and idx % long_update_every == 0:
+            compress_pending_short()
+    return short_bank, long_bank
 
 
 def qa_logits_and_generate(model, collator, sample, summary_bank, device, max_new_tokens: int) -> Dict[str, Any]:
@@ -113,8 +182,54 @@ def qa_logits_and_generate(model, collator, sample, summary_bank, device, max_ne
     }
 
 
+def qa_logits_and_generate_two_level(model, collator, sample, short_bank, long_bank, device, max_new_tokens: int) -> Dict[str, Any]:
+    messages = two_level_qa_messages(
+        sample["current_visual_frames"],
+        sample["question"],
+        short_memory_count=len(short_bank),
+        long_memory_count=len(long_bank),
+        target=None,
+    )
+    encoded = move_to_device(collator.encode_messages(messages), device)
+    input_ids = encoded["input_ids"][0]
+    tokenizer = collator.processor.tokenizer
+    short_id = tokenizer.convert_tokens_to_ids(SHORT_MEMORY_TOKEN)
+    long_id = tokenizer.convert_tokens_to_ids(LONG_MEMORY_TOKEN)
+    wait_id = tokenizer.convert_tokens_to_ids("<WAIT>")
+    answer_id = tokenizer.convert_tokens_to_ids("<ANSWER>")
+    short_positions = [i for i, tok_id in enumerate(input_ids.tolist()) if tok_id == short_id]
+    long_positions = [i for i, tok_id in enumerate(input_ids.tolist()) if tok_id == long_id]
+    if len(short_positions) < len(short_bank):
+        raise RuntimeError("Missing <SHORT_MEM> in QA prompt")
+    if len(long_positions) < len(long_bank):
+        raise RuntimeError("Missing <LONG_MEM> in QA prompt")
+
+    encoded_for_forward = {k: v.clone() if torch.is_tensor(v) else v for k, v in encoded.items()}
+    token_positions = long_positions[:len(long_bank)] + short_positions[:len(short_bank)]
+    vectors = long_bank + short_bank
+    if token_positions:
+        encoded_for_forward = replace_token_embeddings(model, encoded_for_forward, token_positions, vectors)
+    with torch.no_grad():
+        outputs = model(**encoded_for_forward)
+        next_logits = outputs.logits[0, -1].float()
+        logit_wait = float(next_logits[wait_id].detach().cpu())
+        logit_answer = float(next_logits[answer_id].detach().cpu())
+    pred_label = "ANSWER" if logit_answer >= logit_wait else "WAIT"
+
+    with torch.no_grad():
+        generated = model.generate(**encoded, max_new_tokens=max_new_tokens, do_sample=False)
+    new_tokens = generated[:, encoded["input_ids"].shape[1]:]
+    prediction = collator.processor.batch_decode(new_tokens, skip_special_tokens=False, clean_up_tokenization_spaces=False)[0].strip()
+    return {
+        "prediction": prediction,
+        "pred_label": pred_label,
+        "logit_WAIT": logit_wait,
+        "logit_ANSWER": logit_answer,
+    }
+
+
 def parse_args():
-    p = argparse.ArgumentParser(description="Infer recurrent <SUMMARY> QA")
+    p = argparse.ArgumentParser(description="Infer streaming-memory QA")
     p.add_argument("--model-name", default="Qwen/Qwen3-VL-2B-Instruct")
     p.add_argument("--adapter-path", required=True)
     p.add_argument("--eval-jsonl", required=True)
@@ -126,6 +241,10 @@ def parse_args():
     p.add_argument("--frames-per-chunk", type=int, default=3)
     p.add_argument("--frame-size", type=int, default=224)
     p.add_argument("--summary-bank-size", type=int, default=20)
+    p.add_argument("--memory-mode", choices=["legacy", "two_level"], default="two_level")
+    p.add_argument("--short-bank-size", type=int, default=60)
+    p.add_argument("--long-bank-size", type=int, default=8)
+    p.add_argument("--long-update-every", type=int, default=60)
     p.add_argument("--limit", type=int, default=None)
     p.add_argument("--max-new-tokens", type=int, default=128)
     p.add_argument("--bf16", action="store_true")
@@ -160,8 +279,22 @@ def main():
     with out.open("w", encoding="utf-8") as f:
         for idx in range(len(dataset)):
             sample = dataset[idx]
-            summary_bank = update_summary_bank(model, collator, sample, device, max_bank_size=args.summary_bank_size)
-            rec = qa_logits_and_generate(model, collator, sample, summary_bank, device, args.max_new_tokens)
+            if args.memory_mode == "legacy":
+                summary_bank = update_summary_bank(model, collator, sample, device, max_bank_size=args.summary_bank_size)
+                rec = qa_logits_and_generate(model, collator, sample, summary_bank, device, args.max_new_tokens)
+                rec["memory_counts"] = {"summary": len(summary_bank)}
+            else:
+                short_bank, long_bank = update_two_level_memory(
+                    model,
+                    collator,
+                    sample,
+                    device,
+                    short_bank_size=args.short_bank_size,
+                    long_bank_size=args.long_bank_size,
+                    long_update_every=args.long_update_every,
+                )
+                rec = qa_logits_and_generate_two_level(model, collator, sample, short_bank, long_bank, device, args.max_new_tokens)
+                rec["memory_counts"] = {"short": len(short_bank), "long": len(long_bank)}
             target = str(sample.get("target") or "")
             rec.update({
                 "idx": idx,
