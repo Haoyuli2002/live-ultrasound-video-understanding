@@ -48,11 +48,15 @@ CLINICAL_SCENARIOS = {
     "unknown",
 }
 
-PROMPT = """/no_think
+PROMPT = """You are classifying videos for a live ultrasound video understanding dataset.
 
-You are classifying videos for a live ultrasound video understanding dataset.
+Carefully reason about the whole video before deciding.
 
-IMPORTANT: Return ONLY one compact JSON object. Do NOT explain your reasoning. Do NOT include analysis, markdown, or code fences.
+IMPORTANT OUTPUT RULE:
+- You may reason before the final answer.
+- At the very end, output exactly one compact JSON object matching the schema below.
+- The JSON object must be the LAST content in your response.
+- Do not output any text after the JSON object.
 
 You will receive one ultrasound-related video. Classify the WHOLE VIDEO into exactly one label:
 
@@ -140,16 +144,46 @@ def build_video_url(video_id: str, video_path: Path, *, video_url_base: str | No
 
 
 def parse_json(text: str) -> Dict[str, Any]:
+    """Extract the final valid JSON object from model output.
+
+    Qwen thinking may appear before the answer. We therefore parse the full
+    response if possible, otherwise scan every ``{`` and return the last valid
+    JSON object, which the prompt instructs the model to emit as the final
+    content.
+    """
     text = (text or "").strip()
-    text = re.sub(r"^```(?:json)?\s*", "", text)
-    text = re.sub(r"\s*```$", "", text)
+    if not text:
+        raise ValueError("Empty model response")
+
     try:
-        return json.loads(text)
+        obj = json.loads(text)
+        if isinstance(obj, dict):
+            return obj
     except Exception:
-        m = re.search(r"\{.*\}", text, flags=re.S)
-        if not m:
-            raise
-        return json.loads(m.group(0))
+        pass
+
+    fenced = re.sub(r"^\s*```(?:json)?\s*", "", text, flags=re.I)
+    fenced = re.sub(r"\s*```\s*$", "", fenced)
+    try:
+        obj = json.loads(fenced)
+        if isinstance(obj, dict):
+            return obj
+    except Exception:
+        pass
+
+    decoder = json.JSONDecoder()
+    candidates: List[Dict[str, Any]] = []
+    for match in re.finditer(r"\{", text):
+        try:
+            obj, _ = decoder.raw_decode(text[match.start():])
+        except json.JSONDecodeError:
+            continue
+        if isinstance(obj, dict):
+            candidates.append(obj)
+
+    if candidates:
+        return candidates[-1]
+    raise ValueError("No valid JSON object found in model response")
 
 
 def clean_list(values, allowed: set[str]) -> List[str]:
@@ -221,7 +255,7 @@ def normalize_record(raw: Dict[str, Any]) -> Dict[str, Any]:
     return rec
 
 
-def classify_one(client, model: str, video_url: str, max_tokens: int, video_fps: float) -> Dict[str, Any]:
+def classify_one(client, model: str, video_url: str, max_tokens: int, video_fps: float, enable_thinking: bool) -> Dict[str, Any]:
     content = [
         {"type": "video_url", "video_url": {"url": video_url}},
         {"type": "text", "text": PROMPT},
@@ -231,20 +265,20 @@ def classify_one(client, model: str, video_url: str, max_tokens: int, video_fps:
         messages=[{"role": "user", "content": content}],
         temperature=0,
         max_tokens=max_tokens,
-        response_format={"type": "json_object"},
+        extra_body={"chat_template_kwargs": {"enable_thinking": bool(enable_thinking)}},
     )
     if video_fps > 0:
         # Qwen3.5/vLLM official examples use `fps` under mm_processor_kwargs.
         # Do not pass `do_sample_frames`: in vLLM 0.30.0 it is forwarded into
         # Qwen3VLProcessor and can trigger a BadRequestError for unsupported
         # processor kwargs.
-        kwargs["extra_body"] = {"mm_processor_kwargs": {"fps": float(video_fps)}}
+        kwargs["extra_body"]["mm_processor_kwargs"] = {"fps": float(video_fps)}
     resp = client.chat.completions.create(**kwargs)
     raw = resp.choices[0].message.content or ""
     try:
         rec = normalize_record(parse_json(raw))
     except Exception as exc:
-        raise ValueError(f"Failed to parse model response as JSON. raw_response={raw[:2000]!r}") from exc
+        raise ValueError(f"Failed to parse final JSON from model response. raw_response={raw[:5000]!r}") from exc
     rec["_raw_response"] = raw
     return rec
 
@@ -261,10 +295,13 @@ def parse_args():
     p.add_argument("--video-fps", type=float, default=1.0, help="Video sampling fps passed via extra_body.mm_processor_kwargs. Use 0 to omit.")
     p.add_argument("--video-url-base", default=None, help="HTTP base URL serving video files; final URL is base/basename.mp4")
     p.add_argument("--video-url-map", type=Path, default=None, help="Optional JSON map {video_id: video_url}")
-    p.add_argument("--max-tokens", type=int, default=900)
+    p.add_argument("--max-tokens", type=int, default=3000)
     p.add_argument("--limit", type=int, default=None)
     p.add_argument("--sleep-sec", type=float, default=0.0)
     p.add_argument("--resume", action="store_true")
+    thinking = p.add_mutually_exclusive_group()
+    thinking.add_argument("--enable-thinking", action="store_true", default=True, help="Enable Qwen thinking before the final JSON answer (default).")
+    thinking.add_argument("--disable-thinking", action="store_false", dest="enable_thinking", help="Disable Qwen thinking for stricter JSON-only output.")
     return p.parse_args()
 
 
@@ -294,13 +331,14 @@ def main():
                 continue
             video_path = resolve_path(raw_path, args.repo_root)
             base = {"video_id": video_id, "video_path": str(video_path), "teacher": args.teacher, "model": args.model, "source_video_map": str(args.video_map)}
-            print(f"[{idx}/{len(items)}] {video_id} teacher={args.teacher} model={args.model}")
+            print(f"[{idx}/{len(items)}] {video_id} teacher={args.teacher} model={args.model} thinking={'on' if args.enable_thinking else 'off'}")
             try:
                 video_url = build_video_url(video_id, video_path, video_url_base=args.video_url_base, video_url_map=video_url_map)
-                rec = classify_one(client, args.model, video_url, args.max_tokens, args.video_fps)
+                rec = classify_one(client, args.model, video_url, args.max_tokens, args.video_fps, args.enable_thinking)
                 rec.update(base)
                 rec["video_url"] = video_url
                 rec["video_fps"] = args.video_fps
+                rec["enable_thinking"] = args.enable_thinking
                 rec["error"] = None
             except Exception as exc:
                 rec = {
@@ -316,6 +354,8 @@ def main():
                     "keep_for_compression": False,
                     "keep_for_sft": False,
                     "needs_clipping": False,
+                    "video_fps": args.video_fps,
+                    "enable_thinking": args.enable_thinking,
                     "error": f"{type(exc).__name__}: {exc}",
                 }
                 print(f"  ERROR: {rec['error']}")
