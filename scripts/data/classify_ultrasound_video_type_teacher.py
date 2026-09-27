@@ -48,7 +48,11 @@ CLINICAL_SCENARIOS = {
     "unknown",
 }
 
-PROMPT = """You are classifying videos for a live ultrasound video understanding dataset.
+PROMPT = """/no_think
+
+You are classifying videos for a live ultrasound video understanding dataset.
+
+IMPORTANT: Return ONLY one compact JSON object. Do NOT explain your reasoning. Do NOT include analysis, markdown, or code fences.
 
 You will receive one ultrasound-related video. Classify the WHOLE VIDEO into exactly one label:
 
@@ -68,8 +72,7 @@ pneumothorax_assessment, pleural_effusion_assessment, pulmonary_edema_b_lines, c
 
 Also infer the video's primary spoken / teaching language if visible text or captions make it possible. Use ISO-639-1 when confident, e.g. "en", "de", "zh", "es", "fr". Use "unknown" if it cannot be inferred from the sampled frames.
 
-Return JSON only. Do not use markdown fences. Do not include explanations outside the JSON object.
-Use exactly this schema:
+Use exactly this JSON schema:
 {
   "label": "hands_on_ultrasound_teaching | pure_ultrasound_scan | ultrasound_ppt_lecture | mixed_ultrasound_teaching | ultrasound_image_discussion | non_ultrasound_or_irrelevant | uncertain",
   "confidence": 0.0,
@@ -228,6 +231,7 @@ def classify_one(client, model: str, video_url: str, max_tokens: int, video_fps:
         messages=[{"role": "user", "content": content}],
         temperature=0,
         max_tokens=max_tokens,
+        response_format={"type": "json_object"},
     )
     if video_fps > 0:
         # Qwen3.5/vLLM official examples use `fps` under mm_processor_kwargs.
