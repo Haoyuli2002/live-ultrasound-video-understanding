@@ -181,7 +181,7 @@ sbatch \
 ```text
 MODEL=Qwen/Qwen3.5-35B-A3B
 VIDEO_FPS=0.5
-MAX_TOKENS=3000
+MAX_TOKENS=6000
 LIMIT=10              # smoke test only; omit for full run
 HTTP_PORT=9000
 VLLM_PORT=8000
