@@ -68,7 +68,8 @@ pneumothorax_assessment, pleural_effusion_assessment, pulmonary_edema_b_lines, c
 
 Also infer the video's primary spoken / teaching language if visible text or captions make it possible. Use ISO-639-1 when confident, e.g. "en", "de", "zh", "es", "fr". Use "unknown" if it cannot be inferred from the sampled frames.
 
-Return JSON only with this schema:
+Return JSON only. Do not use markdown fences. Do not include explanations outside the JSON object.
+Use exactly this schema:
 {
   "label": "hands_on_ultrasound_teaching | pure_ultrasound_scan | ultrasound_ppt_lecture | mixed_ultrasound_teaching | ultrasound_image_discussion | non_ultrasound_or_irrelevant | uncertain",
   "confidence": 0.0,
@@ -235,7 +236,13 @@ def classify_one(client, model: str, video_url: str, max_tokens: int, video_fps:
         # processor kwargs.
         kwargs["extra_body"] = {"mm_processor_kwargs": {"fps": float(video_fps)}}
     resp = client.chat.completions.create(**kwargs)
-    return normalize_record(parse_json(resp.choices[0].message.content))
+    raw = resp.choices[0].message.content or ""
+    try:
+        rec = normalize_record(parse_json(raw))
+    except Exception as exc:
+        raise ValueError(f"Failed to parse model response as JSON. raw_response={raw[:2000]!r}") from exc
+    rec["_raw_response"] = raw
+    return rec
 
 
 def parse_args():
