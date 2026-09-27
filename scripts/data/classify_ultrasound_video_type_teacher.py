@@ -69,6 +69,8 @@ lung, cardiac, abdomen, fast_eFAST, renal, hepatobiliary, gallbladder, aorta, pe
 Also identify clinical scenarios. Use only these labels, as a JSON array:
 pneumothorax_assessment, pleural_effusion_assessment, pulmonary_edema_b_lines, cardiac_function, pericardial_effusion, ivc_volume_status, dvt_assessment, vascular_access, fast_trauma, renal_hydronephrosis, gallstones_cholecystitis, aortic_aneurysm, early_pregnancy, fetal_scan, msk_injury, nerve_block, needle_guidance, procedure_guidance, general_scanning_tutorial, case_discussion, unknown.
 
+Also infer the video's primary spoken / teaching language if visible text or captions make it possible. Use ISO-639-1 when confident, e.g. "en", "de", "zh", "es", "fr". Use "unknown" if it cannot be inferred from the sampled frames.
+
 Return JSON only with this schema:
 {
   "label": "hands_on_ultrasound_teaching | pure_ultrasound_scan | ultrasound_ppt_lecture | mixed_ultrasound_teaching | ultrasound_image_discussion | non_ultrasound_or_irrelevant | uncertain",
@@ -76,6 +78,8 @@ Return JSON only with this schema:
   "anatomy_regions": ["lung"],
   "clinical_scenarios": ["pneumothorax_assessment"],
   "scan_views_or_targets": ["pleural line", "lung sliding"],
+  "spoken_language": "en | de | zh | es | fr | unknown",
+  "language_evidence": "brief evidence, e.g. visible English slide text or captions; empty if unknown",
   "has_realtime_ultrasound": true,
   "has_probe_or_patient": true,
   "has_ppt_or_slides": false,
@@ -231,6 +235,9 @@ def normalize_record(raw: Dict[str, Any]) -> Dict[str, Any]:
     rec["clinical_scenarios"] = clean_list(rec.get("clinical_scenarios"), CLINICAL_SCENARIOS)
     views = rec.get("scan_views_or_targets") or []
     rec["scan_views_or_targets"] = [str(x).strip() for x in views if str(x).strip()] if isinstance(views, list) else []
+    lang = str(rec.get("spoken_language") or "unknown").strip().lower()
+    rec["spoken_language"] = lang if re.fullmatch(r"[a-z]{2}|unknown", lang) else "unknown"
+    rec["language_evidence"] = str(rec.get("language_evidence") or "")
     for key in ["has_realtime_ultrasound", "has_probe_or_patient", "has_ppt_or_slides", "has_talking_head", "has_static_ultrasound_images", "has_non_ultrasound_content", "needs_clipping"]:
         rec[key] = bool(rec.get(key, False))
     rec["ultrasound_fraction_estimate"] = max(0.0, min(1.0, float(rec.get("ultrasound_fraction_estimate") or 0.0)))

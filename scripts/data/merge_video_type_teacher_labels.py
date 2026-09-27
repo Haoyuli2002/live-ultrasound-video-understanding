@@ -47,6 +47,22 @@ def union_list(*lists) -> List[str]:
     return out or ["unknown"]
 
 
+def choose_language(primary: Dict[str, Any] | None, validator: Dict[str, Any] | None) -> Dict[str, Any]:
+    lp = str((primary or {}).get("spoken_language") or "unknown").lower()
+    lv = str((validator or {}).get("spoken_language") or "unknown").lower()
+    ep = str((primary or {}).get("language_evidence") or "")
+    ev = str((validator or {}).get("language_evidence") or "")
+    if lp != "unknown" and lp == lv:
+        return {"spoken_language": lp, "language_agreement": True, "language_evidence": ep or ev}
+    if lp != "unknown" and lv == "unknown":
+        return {"spoken_language": lp, "language_agreement": None, "language_evidence": ep}
+    if lv != "unknown" and lp == "unknown":
+        return {"spoken_language": lv, "language_agreement": None, "language_evidence": ev}
+    if lp != "unknown" and lv != "unknown" and lp != lv:
+        return {"spoken_language": lp, "language_agreement": False, "language_evidence": f"primary={lp}: {ep}; validator={lv}: {ev}"}
+    return {"spoken_language": "unknown", "language_agreement": None, "language_evidence": ep or ev}
+
+
 def confidence(rec: Dict[str, Any] | None) -> float:
     if not rec:
         return 0.0
@@ -130,6 +146,7 @@ def main():
             anatomy = union_list((p_rec or {}).get("anatomy_regions"), (v_rec or {}).get("anatomy_regions"))
             scenarios = union_list((p_rec or {}).get("clinical_scenarios"), (v_rec or {}).get("clinical_scenarios"))
             views = union_list((p_rec or {}).get("scan_views_or_targets"), (v_rec or {}).get("scan_views_or_targets"))
+            language = choose_language(p_rec, v_rec)
             needs_clipping = bool((p_rec or {}).get("needs_clipping")) or bool((v_rec or {}).get("needs_clipping"))
             keep = keep_policy(final["final_label"], needs_clipping)
             rec = {
@@ -141,6 +158,7 @@ def main():
                 "anatomy_regions": anatomy,
                 "clinical_scenarios": scenarios,
                 "scan_views_or_targets": views,
+                **language,
                 "needs_clipping": needs_clipping or bool(keep.get("needs_clipping", False)),
                 **{k: bool(v) for k, v in keep.items() if k != "needs_clipping"},
             }

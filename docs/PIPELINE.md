@@ -100,6 +100,7 @@ uncertain
 anatomy_regions
 clinical_scenarios
 scan_views_or_targets
+spoken_language / language_evidence
 has_realtime_ultrasound / has_probe_or_patient / has_ppt_or_slides / ...
 keep_for_pretrain / keep_for_compression / keep_for_sft
 ```
