@@ -17,6 +17,9 @@ instead sends the full [0, T] clip for each block; use it only for short clips.
 The prompts explicitly ask for visual ultrasound evidence and discourage using
 audio/transcript information, matching the Stage-2 Summary Compression Stage
 teacher-visual-summary objective.
+
+By default, clips are also muted before being sent to the teacher. This prevents
+audio narration from leaking into supposedly visual-only targets.
 """
 
 from __future__ import annotations
@@ -150,6 +153,56 @@ def probe_duration_sec(video_path: Path) -> float:
     if res.returncode != 0:
         raise RuntimeError(f"ffprobe failed for {video_path}: {res.stderr.strip()[:400]}")
     return float(res.stdout.strip())
+
+
+def strip_audio(video_path: Path, out_path: Path) -> Path:
+    """Create a copy of `video_path` without an audio track."""
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    cmd = [
+        "ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        str(video_path),
+        "-c:v",
+        "copy",
+        "-an",
+        str(out_path),
+    ]
+    res = subprocess.run(cmd, capture_output=True, text=True)
+    if res.returncode == 0 and out_path.exists() and out_path.stat().st_size > 0:
+        return out_path
+
+    # Fallback for containers/codecs that cannot be stream-copied cleanly.
+    fallback_cmd = [
+        "ffmpeg",
+        "-y",
+        "-loglevel",
+        "error",
+        "-i",
+        str(video_path),
+        "-c:v",
+        "libx264",
+        "-preset",
+        "veryfast",
+        "-crf",
+        "26",
+        "-an",
+        str(out_path),
+    ]
+    res = subprocess.run(fallback_cmd, capture_output=True, text=True)
+    if res.returncode != 0 or not out_path.exists() or out_path.stat().st_size == 0:
+        raise RuntimeError(f"ffmpeg audio stripping failed for {video_path}: {res.stderr.strip()[:400]}")
+    return out_path
+
+
+def prepare_teacher_clip(src_clip: Path, *, video_id: str, name: str, include_audio: bool) -> Path:
+    """Return the clip path to send to the teacher, muted unless requested."""
+    if include_audio:
+        return src_clip
+    muted = temp_clip_path(video_id, f"{name}_muted")
+    return strip_audio(src_clip, muted)
 
 
 def safe_video_id(path: Path, explicit: str | None = None) -> str:
@@ -348,6 +401,7 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--max-local-tokens", type=int, default=300)
     p.add_argument("--max-global-tokens", type=int, default=500)
     p.add_argument("--temperature", type=float, default=0.2)
+    p.add_argument("--include-audio", action="store_true", help="Send clips with audio. Default is muted visual-only clips.")
     p.add_argument("--keep-temp-clips", action="store_true")
     p.add_argument("--overwrite", action="store_true", help="Overwrite output instead of resuming")
     return p.parse_args()
@@ -386,6 +440,12 @@ def main() -> None:
         end = start + args.block_sec
         block_clip = temp_clip_path(video_id, f"teacher_summary_block{block_idx:04d}_{int(start)}_{int(end)}")
         cut_clip(video_path, start, end, block_clip)
+        teacher_block_clip = prepare_teacher_clip(
+            block_clip,
+            video_id=video_id,
+            name=f"teacher_summary_block{block_idx:04d}_{int(start)}_{int(end)}",
+            include_audio=args.include_audio,
+        )
 
         try:
             local_summary, local_usage = summarize_local(
@@ -393,7 +453,7 @@ def main() -> None:
                 model=args.model,
                 video_id=video_id,
                 block_idx=block_idx,
-                clip_path=block_clip,
+                clip_path=teacher_block_clip,
                 start=start,
                 end=end,
                 max_tokens=args.max_local_tokens,
@@ -403,17 +463,25 @@ def main() -> None:
             if args.global_mode == "full_clip":
                 global_clip = temp_clip_path(video_id, f"teacher_summary_0_to_{block_idx:04d}_{int(end)}")
                 cut_clip(video_path, 0.0, end, global_clip)
+                teacher_global_clip = prepare_teacher_clip(
+                    global_clip,
+                    video_id=video_id,
+                    name=f"teacher_summary_0_to_{block_idx:04d}_{int(end)}",
+                    include_audio=args.include_audio,
+                )
                 global_summary, global_usage = summarize_global_full_clip(
                     client=client,
                     model=args.model,
                     video_id=video_id,
                     block_idx=block_idx,
-                    clip_path=global_clip,
+                    clip_path=teacher_global_clip,
                     end=end,
                     max_tokens=args.max_global_tokens,
                     temperature=args.temperature,
                 )
                 if not args.keep_temp_clips:
+                    if teacher_global_clip != global_clip:
+                        teacher_global_clip.unlink(missing_ok=True)
                     global_clip.unlink(missing_ok=True)
             else:
                 global_summary, global_usage = summarize_global_incremental(
@@ -421,7 +489,7 @@ def main() -> None:
                     model=args.model,
                     video_id=video_id,
                     block_idx=block_idx,
-                    clip_path=block_clip,
+                    clip_path=teacher_block_clip,
                     start=start,
                     end=end,
                     previous_global=previous_global,
@@ -441,6 +509,7 @@ def main() -> None:
                     "source": "teacher_visual_summary",
                     "block_sec": args.block_sec,
                     "global_mode": args.global_mode,
+                    "include_audio": args.include_audio,
                     "duration_sec": duration,
                     "local_usage": local_usage,
                     "global_usage": global_usage,
@@ -462,6 +531,8 @@ def main() -> None:
             raise
         finally:
             if not args.keep_temp_clips:
+                if teacher_block_clip != block_clip:
+                    teacher_block_clip.unlink(missing_ok=True)
                 block_clip.unlink(missing_ok=True)
 
 
