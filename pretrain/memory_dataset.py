@@ -1,4 +1,4 @@
-"""Dataset for Stage-2 two-level memory compression."""
+"""Dataset for Stage-2 summary compression."""
 
 from __future__ import annotations
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate text from Stage-2 memory-compression checkpoints.
+"""Generate text from Stage-2 summary-compression checkpoints.
 
 Supports both the legacy ASR reconstruction baseline and the main
 teacher-visual-summary objective.
@@ -99,7 +99,7 @@ def generate_from_memory(model, collator, sample, memory_states, memory_token, d
 
 
 def parse_args():
-    p = argparse.ArgumentParser(description="Infer Stage-2 memory-compression checkpoint")
+    p = argparse.ArgumentParser(description="Infer Stage-2 summary-compression checkpoint")
     p.add_argument("--model-name", default="Qwen/Qwen3-VL-2B-Instruct")
     p.add_argument("--adapter-path", required=True)
     p.add_argument("--eval-jsonl", required=True)

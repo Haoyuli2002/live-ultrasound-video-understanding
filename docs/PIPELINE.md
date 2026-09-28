@@ -2,7 +2,7 @@
 
 > **状态：** 当前 repo 的唯一权威 pipeline 文档；以 Teacher visual summary memory learning 作为 Stage 2 主路线。
 > **实现说明：** 当前代码中已实现的 Stage 2 ASR reconstruction 是 memory-token pipeline 的 baseline / bootstrapping 版本；最终主线应迁移到本文档描述的 video-only Teacher visual summary supervision。
-> **范围：** 数据准备、Stage 1 超声视觉-语言知识注入、Stage 2 流式记忆学习、Stage 3 可回答性判断与 QA、在线推理、评估
+> **范围：** 数据准备、Stage 1 超声视觉-语言知识注入、Stage 2 摘要压缩学习、Stage 3 可回答性判断与 QA、在线推理、评估
 > **核心原则：** 系统必须判断“当前已经看到的超声证据是否足以回答问题”。证据不足时继续等待并观察视频；证据足够时再生成答案。
 
 ---
@@ -50,7 +50,7 @@ ASR transcript + 视频过滤 / clipping
 Stage 1 — 超声视觉-语言知识注入
 video frames → 对齐的 ASR narration
         ↓
-Stage 2 — 两级 Streaming Memory 学习
+Stage 2 — Summary Compression Stage
 每 1 秒：
     frames → 1 个 short-memory token
 
@@ -541,7 +541,7 @@ target narration
 
 ---
 
-# 3. Stage 2 — 两级 Streaming Memory Learning
+# 3. Stage 2 — Summary Compression Stage
 
 ## 3.1 目标
 
@@ -1052,7 +1052,7 @@ Long Memory
 
 # 3.7 视频尾部处理
 
-Long-memory compression 只在完整 60 秒 block 后发生：
+Long-summary compression 只在完整 60 秒 block 后发生：
 
 ```text
 [0,60]
@@ -1688,7 +1688,7 @@ blind VLM / LLM judge
 
 ---
 
-# 6.2 Stage 2 Memory Evaluation
+# 6.2 Stage 2 Summary Compression Evaluation
 
 ## Short-memory Reconstruction
 
@@ -1837,7 +1837,7 @@ t = 61 s
 
 目的是检查：
 
-> long-memory compression 发生之后，模型能力是否出现瞬时性能下降。
+> long-summary compression 发生之后，模型能力是否出现瞬时性能下降。
 
 如果确实存在明显 boundary drop，可以进一步做 overlap ablation，例如：
 
@@ -2066,7 +2066,7 @@ consistent across blocks
 long memory = 60 tokens
 ```
 
-因此视频越长，长期 memory compression pressure 越大。
+因此视频越长，长期 summary compression pressure 越大。
 
 必须通过 memory-age evaluation 验证旧证据是否不断丢失。
 

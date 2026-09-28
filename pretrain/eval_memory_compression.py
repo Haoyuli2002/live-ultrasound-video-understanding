@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Evaluate Stage-2 memory-compression generations.
+"""Evaluate Stage-2 summary-compression generations.
 
 Input is JSONL produced by `pretrain/infer_memory_compression.py` with fields
 `target` and `prediction`. This script intentionally uses no extra dependencies.
@@ -69,7 +69,7 @@ def medical_recall(pred: str, ref: str) -> float | None:
 
 
 def parse_args():
-    p = argparse.ArgumentParser(description="Evaluate memory compression predictions")
+    p = argparse.ArgumentParser(description="Evaluate summary compression predictions")
     p.add_argument("--pred-jsonl", required=True)
     p.add_argument("--output", default=None, help="Optional JSON summary path")
     return p.parse_args()

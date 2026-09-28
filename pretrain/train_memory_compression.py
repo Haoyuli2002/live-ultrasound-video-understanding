@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Stage-2 two-level memory-compression training for Qwen3-VL + LoRA.
+"""Stage-2 summary-compression training for Qwen3-VL + LoRA.
 
 Main design: video-only memory tokens reconstruct teacher-generated visual
 summaries:
@@ -274,7 +274,7 @@ def train_one_sample(model, collator, sample, device, *, lambda_all: float, lamb
 
 
 def parse_args():
-    p = argparse.ArgumentParser(description="Stage-2 two-level memory compression training")
+    p = argparse.ArgumentParser(description="Stage-2 summary compression training")
     p.add_argument("--model-name", default="Qwen/Qwen3-VL-2B-Instruct")
     p.add_argument("--train-jsonl", required=True)
     p.add_argument("--output-dir", required=True)

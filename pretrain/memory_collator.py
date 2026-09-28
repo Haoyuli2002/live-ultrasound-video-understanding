@@ -1,4 +1,4 @@
-"""Prompt builders / utilities for Stage-2 memory compression.
+"""Prompt builders / utilities for Stage-2 summary compression.
 
 The actual hidden-state extraction and injection happens in
 `train_memory_compression.py`; this collator keeps batch_size=1 and returns PIL

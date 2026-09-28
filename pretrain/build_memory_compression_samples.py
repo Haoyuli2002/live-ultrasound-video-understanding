@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build Stage-2 two-level memory-compression samples from ASR transcripts.
+"""Build Stage-2 summary-compression samples from ASR transcripts.
 
 Final schema:
 1. Every `step_sec` seconds produces one short memory token.
@@ -161,7 +161,7 @@ def long_samples(
 
 
 def parse_args():
-    p = argparse.ArgumentParser(description="Build Stage-2 memory compression samples")
+    p = argparse.ArgumentParser(description="Build Stage-2 summary compression samples")
     p.add_argument("--transcripts", required=True, help="Transcript JSON file or directory")
     p.add_argument("--output", required=True)
     p.add_argument("--types", default="short,long", help="Comma-separated: short,long")
