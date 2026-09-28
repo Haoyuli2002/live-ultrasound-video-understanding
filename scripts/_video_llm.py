@@ -218,6 +218,38 @@ def _is_rate_limit_error(err: Exception | None) -> bool:
             or 'too many requests' in s)
 
 
+def _is_permanent_http_error(err: Exception | None) -> bool:
+    """Detect non-retryable OpenRouter/OpenAI HTTP errors.
+
+    A missing model endpoint (404), invalid request (400), auth error (401), or
+    permission/payment error (403) will not be fixed by exponential backoff.
+    """
+    if err is None:
+        return False
+    status_code = getattr(err, "status_code", None)
+    if status_code in {400, 401, 403, 404}:
+        return True
+    s = str(err).lower()
+    return any(
+        pat in s
+        for pat in (
+            "error code: 400",
+            "error code: 401",
+            "error code: 403",
+            "error code: 404",
+            "'code': 400",
+            "'code': 401",
+            "'code': 403",
+            "'code': 404",
+            '"code": 400',
+            '"code": 401',
+            '"code": 403',
+            '"code": 404',
+            "no endpoints found",
+        )
+    )
+
+
 def call_with_content(
     client,
     *,
@@ -293,6 +325,8 @@ def call_with_content(
             resp = client.chat.completions.create(**kwargs)
         except Exception as e:
             last_err = e
+            if _is_permanent_http_error(last_err):
+                raise
             if attempt < retries:
                 continue
             raise

@@ -45,7 +45,7 @@ from _video_llm import (  # noqa: E402
 )
 
 
-DEFAULT_TEACHER_SUMMARY_MODEL = "google/gemini-3-pro-preview"
+DEFAULT_TEACHER_SUMMARY_MODEL = "google/gemini-3.1-pro-preview"
 
 
 LOCAL_SYSTEM_PROMPT = """You are an expert ultrasound image reviewer creating VISUAL-only memory targets
