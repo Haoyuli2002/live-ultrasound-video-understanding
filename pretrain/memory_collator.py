@@ -13,9 +13,9 @@ from typing import Any, Dict, List
 SHORT_MEMORY_TOKEN = "<SHORT_MEM>"
 LONG_MEMORY_TOKEN = "<LONG_MEM>"
 
-SHORT_SYSTEM_PROMPT = """You are learning a short-term hidden memory for ultrasound video. The <SHORT_MEM> token must compress the newly arrived frames so that the narration can be reconstructed from memory only."""
-LONG_SYSTEM_PROMPT = """You are learning a long-term hidden memory for ultrasound video. The <LONG_MEM> token must compress recent short-term memories and previous long-term memory so that the block narration can be reconstructed from memory only."""
-DECODE_SYSTEM_PROMPT = """You are an ultrasound teaching assistant. Reconstruct the narration using only the provided hidden memory token(s). Output only the narration."""
+SHORT_SYSTEM_PROMPT = """You are learning a short-term hidden memory for ultrasound video. The <SHORT_MEM> token must compress the newly arrived frames so that visually grounded local evidence can be reconstructed from memory only."""
+LONG_SYSTEM_PROMPT = """You are learning a long-term hidden memory for ultrasound video. The <LONG_MEM> token must compress recent short-term memories and previous long-term memory so that cumulative visual evidence can be reconstructed from memory only."""
+DECODE_SYSTEM_PROMPT = """You are an ultrasound teaching assistant. Reconstruct the requested visually grounded information using only the provided hidden memory token(s). Output only the requested text."""
 
 
 def content_with_images(frames, text: str):
@@ -37,11 +37,15 @@ def repeated_token(token: str, count: int) -> str:
     return " ".join([token] * count)
 
 
-def short_decode_messages(short_count: int = 1, target: str | None = None):
+def short_decode_messages(short_count: int = 1, target: str | None = None, task: str = "local_summary"):
     memory = repeated_token(SHORT_MEMORY_TOKEN, short_count)
+    task_text = {
+        "asr": "Reconstruct the ASR narration for this time span.",
+        "local_summary": "Reconstruct the visually grounded local ultrasound summary for this time span.",
+    }.get(task, task)
     messages = [
         {"role": "system", "content": DECODE_SYSTEM_PROMPT},
-        {"role": "user", "content": [{"type": "text", "text": f"Short-term memories: {memory}\nReconstruct the ASR narration for this time span."}]},
+        {"role": "user", "content": [{"type": "text", "text": f"Short-term memories: {memory}\n{task_text}"}]},
     ]
     if target is not None:
         messages.append({"role": "assistant", "content": target})
@@ -65,6 +69,8 @@ def long_decode_messages(long_count: int = 60, task: str = "accumulated", target
         "current": "Reconstruct the narration for the past/current 60-second block only.",
         "previous": "Reconstruct the narration from the beginning of the video up to the start of the current block.",
         "accumulated": "Reconstruct the narration from the beginning of the video up to the end of the current block.",
+        "local_summary": "Reconstruct the visually grounded local ultrasound summary for the current 60-second block.",
+        "global_summary": "Reconstruct the cumulative visually grounded ultrasound summary from the beginning of the video up to the current block.",
     }.get(task, task)
     messages = [
         {"role": "system", "content": DECODE_SYSTEM_PROMPT},

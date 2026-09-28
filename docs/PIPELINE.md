@@ -1149,6 +1149,7 @@ Long-memory compression 只在完整 60 秒 block 后发生：
 
 ```text
 pretrain/build_memory_compression_samples.py
+pretrain/build_teacher_memory_summary_samples.py
 pretrain/memory_dataset.py
 pretrain/memory_collator.py
 pretrain/train_memory_compression.py
@@ -1156,7 +1157,7 @@ pretrain/infer_memory_compression.py
 pretrain/eval_memory_compression.py
 ```
 
-新的 sample builder 应读取预生成的：
+Teacher-summary 主线 sample builder 读取预生成的：
 
 ```text
 local_summary_target
@@ -1165,11 +1166,24 @@ global_summary_target
 
 而不是 ASR concat target。
 
-概念上的 build：
+Teacher-summary 主线 build：
+
+```bash
+python pretrain/build_teacher_memory_summary_samples.py \
+  --summaries-jsonl pretrain/data/teacher_visual_summaries.jsonl \
+  --output pretrain/data/memory_compression_samples.jsonl \
+  --block-sec 60 \
+  --step-sec 1 \
+  --long-token-count 60
+```
+
+当前已实现的 ASR reconstruction baseline 仍可用：
 
 ```bash
 python pretrain/build_memory_compression_samples.py \
-  --output pretrain/data/memory_compression_samples.jsonl \
+  --transcripts results/transcripts \
+  --output pretrain/data/memory_compression_asr_baseline_samples.jsonl \
+  --types short,long \
   --block-sec 60 \
   --step-sec 1 \
   --long-token-count 60
@@ -1185,8 +1199,9 @@ python pretrain/train_memory_compression.py \
   --output-dir /mnt/cache/qwenFT/qwen3vl_memory_compression \
   --short-frames 2 \
   --frame-size 224 \
-  --lambda-short 1.0 \
-  --lambda-long 1.0 \
+  --lambda-all 1.0 \
+  --lambda-current 1.0 \
+  --lambda-previous 0.0 \
   --num-train-epochs 1 \
   --learning-rate 1e-4 \
   --bf16

@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """Stage-2 two-level memory-compression training for Qwen3-VL + LoRA.
 
-This is the explicit compression objective before QA/SFT:
-  short: x_t -> s_t -> narration_t
-  long : S_short^(k) + L_{k-1} -> L_k -> narration_or_summary_60s
+Main design: video-only memory tokens reconstruct teacher-generated visual
+summaries:
+  short: current short memories -> local visual summary
+  long : L_{k-1} + S_k -> L_k -> cumulative visual summary
 
-The decoder loss is computed only on the target narration while the raw visual
-tokens are not present in the decode prompt, forcing the model to use injected
-memory hidden states.
+The previously implemented ASR reconstruction objective is still supported as a
+baseline / bootstrapping path for validating the memory-token pipeline.
 """
 
 from __future__ import annotations
@@ -172,13 +172,17 @@ def decode_memory_loss(model, collator, messages, memory_token: str, memory_stat
 
 def short_loss(model, collator, sample, device):
     short_states = encode_short_states(model, collator, sample["short_frames_list"], device)
+    target = sample.get("local_summary_target") or sample.get("target")
+    task = "local_summary" if sample.get("local_summary_target") else "asr"
+    if not target:
+        raise RuntimeError("short memory sample has no target/local_summary_target")
     return decode_memory_loss(
         model,
         collator,
-        short_decode_messages(short_count=len(short_states), target=sample["target"]),
+        short_decode_messages(short_count=len(short_states), target=target, task=task),
         SHORT_MEMORY_TOKEN,
         short_states,
-        sample["target"],
+        target,
         device,
     )
 
@@ -228,6 +232,19 @@ def long_loss(model, collator, sample, device, *, lambda_all: float, lambda_cur:
 
     losses = []
     weights = []
+    if sample.get("sample_type") == "long_memory_summary":
+        if lambda_cur > 0 and sample.get("local_summary_target"):
+            target = sample["local_summary_target"]
+            losses.append(decode_memory_loss(model, collator, long_decode_messages(long_count=len(long_states), task="local_summary", target=target), LONG_MEMORY_TOKEN, long_states, target, device))
+            weights.append(lambda_cur)
+        if lambda_all > 0 and sample.get("global_summary_target"):
+            target = sample["global_summary_target"]
+            losses.append(decode_memory_loss(model, collator, long_decode_messages(long_count=len(long_states), task="global_summary", target=target), LONG_MEMORY_TOKEN, long_states, target, device))
+            weights.append(lambda_all)
+        if not losses:
+            raise RuntimeError("long_memory_summary sample has no local_summary_target/global_summary_target")
+        return sum(w * l for w, l in zip(weights, losses)) / sum(weights)
+
     if lambda_all > 0 and sample.get("accumulated_summary_target"):
         target = sample["accumulated_summary_target"]
         losses.append(decode_memory_loss(model, collator, long_decode_messages(long_count=len(long_states), task="accumulated", target=target), LONG_MEMORY_TOKEN, long_states, target, device))
@@ -249,9 +266,9 @@ def long_loss(model, collator, sample, device, *, lambda_all: float, lambda_cur:
 
 def train_one_sample(model, collator, sample, device, *, lambda_all: float, lambda_cur: float, lambda_prev: float):
     typ = sample.get("sample_type")
-    if typ == "short_memory_compression":
+    if typ in {"short_memory_compression", "short_memory_summary"}:
         return short_loss(model, collator, sample, device)
-    if typ == "long_memory_compression":
+    if typ in {"long_memory_compression", "long_memory_summary"}:
         return long_loss(model, collator, sample, device, lambda_all=lambda_all, lambda_cur=lambda_cur, lambda_prev=lambda_prev)
     raise ValueError(f"Unsupported sample_type: {typ}")
 

@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Generate narration from Stage-2 memory-compression checkpoints."""
+"""Generate text from Stage-2 memory-compression checkpoints.
+
+Supports both the legacy ASR reconstruction baseline and the main
+teacher-visual-summary objective.
+"""
 
 from __future__ import annotations
 
@@ -78,9 +82,11 @@ def encode_long_states(model, collator, short_states, previous_long_states, long
 
 def generate_from_memory(model, collator, sample, memory_states, memory_token, device, max_new_tokens):
     if memory_token == SHORT_MEMORY_TOKEN:
-        messages = short_decode_messages(short_count=len(memory_states))
+        task = "local_summary" if sample.get("local_summary_target") else "asr"
+        messages = short_decode_messages(short_count=len(memory_states), task=task)
     else:
-        messages = long_decode_messages(long_count=len(memory_states), task="accumulated")
+        task = "global_summary" if sample.get("global_summary_target") else "accumulated"
+        messages = long_decode_messages(long_count=len(memory_states), task=task)
     tok = collator.processor.tokenizer.convert_tokens_to_ids(memory_token)
     encoded = move_to_device(collator.encode_messages(messages), device)
     ids = encoded["input_ids"][0]
@@ -139,7 +145,7 @@ def main():
     with out.open("w", encoding="utf-8") as f:
         for idx in tqdm(range(len(dataset)), desc="memory infer"):
             sample = dataset[idx]
-            if sample["sample_type"] == "short_memory_compression":
+            if sample["sample_type"] in {"short_memory_compression", "short_memory_summary"}:
                 mem = encode_short_states(model, collator, sample["short_frames_list"], device)
                 pred = generate_from_memory(model, collator, sample, mem, SHORT_MEMORY_TOKEN, device, args.max_new_tokens)
             else:
@@ -155,7 +161,9 @@ def main():
                 "idx": idx,
                 "sample_type": sample.get("sample_type"),
                 "video_id": sample.get("video_id"),
-                "target": sample.get("target"),
+                "target": sample.get("global_summary_target") or sample.get("local_summary_target") or sample.get("target"),
+                "local_summary_target": sample.get("local_summary_target"),
+                "global_summary_target": sample.get("global_summary_target"),
                 "prediction": pred,
                 "meta": sample.get("meta", {}),
             }, ensure_ascii=False) + "\n")

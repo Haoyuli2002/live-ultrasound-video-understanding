@@ -88,14 +88,19 @@ class MemoryCompressionDataset:
         row = dict(self.rows[idx])
         video_path = self._resolve_video_path(row)
         typ = row.get("sample_type")
-        if typ not in {"short_memory_compression", "long_memory_compression"}:
+        if typ not in {
+            "short_memory_compression",
+            "long_memory_compression",
+            "short_memory_summary",
+            "long_memory_summary",
+        }:
             raise ValueError(f"Unsupported sample_type: {typ}")
         windows = row.get("short_windows") or []
         if self.max_short_windows is not None:
             windows = windows[: int(self.max_short_windows)]
         row["short_windows"] = windows
         row["short_frames_list"] = [self._frames(video_path, w) for w in windows]
-        if typ == "long_memory_compression":
+        if typ in {"long_memory_compression", "long_memory_summary"}:
             prev_blocks = row.get("previous_blocks") or []
             if self.max_previous_blocks is not None:
                 prev_blocks = prev_blocks[-int(self.max_previous_blocks):]
