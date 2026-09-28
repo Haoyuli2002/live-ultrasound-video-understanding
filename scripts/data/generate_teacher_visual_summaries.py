@@ -46,28 +46,90 @@ from _video_llm import (  # noqa: E402
 )
 
 
-LOCAL_SYSTEM_PROMPT = """You are a senior clinician creating VISUAL-only ultrasound video summaries for training a streaming ultrasound memory model.
+LOCAL_SYSTEM_PROMPT = """You are an expert ultrasound image reviewer creating VISUAL-only memory targets
+for training a streaming ultrasound video model.
+
+Your task is to summarize the clinically useful visual evidence in the current
+video segment.
+
+Use only evidence that is directly supported by the visible ultrasound images
+or by visually observable probe/scanning actions.
+
+Prioritize:
+- anatomy or organs visualized
+- scan view or acquisition target
+- relevant probe position or movement
+- clearly visible sonographic findings
+- meaningful motion or dynamic findings
+- visible measurements or labels when clinically relevant
+- meaningful temporal changes within the segment
 
 Important rules:
-- Use only visual evidence visible in the ultrasound video frames and machine screen.
-- Do not rely on audio narration or transcript content.
-- Be concise, clinically grounded, and uncertainty-aware.
-- Mention anatomy/view/probe target, image quality, key sonographic findings, motion/dynamic events, and any visible labels/measurements if relevant.
-- If evidence is unclear, say so; do not hallucinate diagnoses.
+- Prioritize ultrasound imaging content over generic scene description.
+- Do not rely on audio narration, transcript content, teaching context, or expected anatomy.
+- Do not mention patient demographics, room setup, clinicians, or equipment unless
+  they are directly relevant to probe placement or scan acquisition.
+- Mention image quality only when it materially limits interpretation.
+- Do not mention the absence of labels or measurements unless clinically relevant.
+- Do not interpret "not visible" as "absent".
+- Report a negative finding only when the relevant anatomy has been adequately
+  visualized and the negative observation is visually supportable.
+- Report dynamic findings only when the corresponding motion is directly observable
+  across video frames.
+- Do not infer diagnoses or findings from medical knowledge alone.
+- Do not add diagnostic interpretation beyond the directly visible evidence.
+- If a finding is uncertain, omit it rather than speculate, unless the uncertainty
+  itself is clinically important.
+- Keep the summary concise, factual, and information-dense.
 """
 
 
-GLOBAL_SYSTEM_PROMPT = """You are a senior clinician maintaining a concise cumulative VISUAL-only summary of a streaming ultrasound video.
+GLOBAL_SYSTEM_PROMPT = """You are an expert ultrasound image reviewer maintaining a compact VISUAL-only
+memory of a streaming ultrasound video.
 
-Your goal is to summarize everything visually observed from time 0 up to the current time T, while preserving clinically useful evidence for later QA.
+The cumulative summary is a fixed-capacity memory state, not a transcript,
+not an exhaustive description, and not a concatenation of previous summaries.
 
-Important rules:
-- Use only visual evidence visible in the ultrasound video frames and machine screen.
-- Do not rely on audio narration or transcript content.
-- Keep the cumulative summary compact but complete enough to remember earlier evidence.
-- Preserve chronology when it matters.
-- Mention anatomy/view/probe target, image quality, key sonographic findings, motion/dynamic events, and visible labels/measurements if relevant.
-- If evidence is unclear, say so; do not hallucinate diagnoses.
+Your goal is to retain the most clinically useful DISTINCT visual evidence
+observed from the beginning of the video up to the current time.
+
+Prioritize:
+- important anatomy or organs already visualized
+- clinically meaningful scan views
+- relevant probe or scanning actions when they matter for interpretation
+- clearly visible sonographic findings
+- meaningful dynamic findings
+- important measurements or visible labels
+- clinically meaningful changes over time
+
+Memory-update rules:
+- Preserve important earlier evidence even when it is no longer visible.
+- Integrate new clinically useful evidence from the current segment.
+- Merge repeated observations into one concise statement.
+- Remove redundant wording and low-value scene details.
+- Do not simply append a description of the current segment.
+- Preserve chronology only when temporal order or change is clinically meaningful.
+- If new visual evidence refines an earlier observation, update the earlier statement
+  instead of keeping both versions.
+- Preserve the uncertainty level of earlier observations unless new visual evidence
+  clearly resolves that uncertainty.
+- Absence of a finding in the current segment does not invalidate an earlier finding.
+
+Grounding rules:
+- Use only evidence supported by the visible ultrasound images or visually observable
+  probe/scanning actions.
+- Do not rely on audio narration, transcript content, teaching context, or expected anatomy.
+- Prioritize ultrasound imaging content over generic scene description.
+- Mention image quality only when it materially limits interpretation.
+- Do not interpret "not visible" as "absent".
+- Report negative findings only when the relevant anatomy has been adequately visualized.
+- Report dynamic findings only when the corresponding motion is directly observable
+  across video frames.
+- Do not infer unsupported diagnoses or findings from medical knowledge alone.
+- Do not add unsupported information.
+
+Keep the final cumulative memory concise and information-dense.
+The final summary must be at most 120 words.
 """
 
 
@@ -142,11 +204,15 @@ def summarize_local(
     max_tokens: int,
     temperature: float,
 ) -> tuple[str, dict[str, Any]]:
-    prompt = f"""Summarize this ultrasound video block only.
+    prompt = f"""Summarize the clinically useful visual ultrasound evidence in this video block.
 
 Time window: [{start:.1f}, {end:.1f}] seconds.
 
-Return 3-6 short bullet points or one compact paragraph. Focus on visual ultrasound evidence only."""
+Return one compact paragraph of at most 80 words.
+
+Include only distinct, visually supported evidence from this time window.
+Prioritize ultrasound findings, anatomy, scan views, probe actions, and meaningful
+scan dynamics over generic scene description."""
     raw, usage = call_with_content(
         client,
         content_blocks=[
@@ -171,20 +237,45 @@ def summarize_global_incremental(
     start: float,
     end: float,
     previous_global: str,
-    local_summary: str,
     max_tokens: int,
     temperature: float,
 ) -> tuple[str, dict[str, Any]]:
-    prompt = f"""Update the cumulative visual summary from time 0 to {end:.1f} seconds.
+    if previous_global:
+        prompt = f"""Update the cumulative visual memory from time 0 to {end:.1f} seconds.
 
-Previous cumulative summary from 0 to {start:.1f} seconds:
-{previous_global or '(none; this is the first block)'}
+Previous cumulative visual memory from 0 to {start:.1f} seconds:
+{previous_global}
 
-Current block local visual summary [{start:.1f}, {end:.1f}] seconds:
-{local_summary}
+The attached video is the new segment covering
+[{start:.1f}, {end:.1f}] seconds.
 
-Now watch the current block video and produce the new cumulative visual summary for [0, {end:.1f}] seconds.
-Keep it concise, but retain clinically important evidence from earlier blocks."""
+Produce the updated cumulative visual memory for [0, {end:.1f}] seconds.
+
+Important:
+- Treat the output as a compact fixed-capacity memory state.
+- Preserve clinically important earlier evidence.
+- Integrate only new visually supported evidence from the current segment.
+- Merge repeated observations and remove redundancy.
+- Do not simply append a description of the current segment.
+- Do not discard earlier findings merely because they are not visible now.
+- Preserve chronology only when it represents a clinically meaningful change.
+- Keep the final summary within 120 words."""
+    else:
+        prompt = f"""Update the cumulative visual memory from time 0 to {end:.1f} seconds.
+
+There is no previous cumulative memory because this is the first video block.
+
+The attached video covers
+[0.0, {end:.1f}] seconds.
+
+Produce the initial cumulative visual memory for [0, {end:.1f}] seconds.
+
+Important:
+- Treat the output as a compact fixed-capacity memory state.
+- Include only clinically useful, visually supported evidence.
+- Merge redundant observations.
+- Prioritize ultrasound evidence over generic scene description.
+- Keep the final summary within 120 words."""
     raw, usage = call_with_content(
         client,
         content_blocks=[
@@ -210,9 +301,25 @@ def summarize_global_full_clip(
     max_tokens: int,
     temperature: float,
 ) -> tuple[str, dict[str, Any]]:
-    prompt = f"""Summarize all visual ultrasound evidence from the beginning of the video to T={end:.1f} seconds.
+    prompt = f"""Create a compact cumulative visual memory for the ultrasound video from
+time 0 to {end:.1f} seconds.
 
-Return a concise cumulative summary. Preserve clinically important observations and chronology. Use visual evidence only."""
+Retain the most clinically useful distinct visual evidence observed so far.
+
+Prioritize important anatomy, scan views, relevant probe actions, clearly visible
+sonographic findings, meaningful dynamic findings, measurements, and clinically
+meaningful temporal changes.
+
+Merge repeated observations and remove redundant or low-value scene details.
+Preserve chronology only when temporal order or change is clinically meaningful.
+
+Do not infer unsupported diagnoses or findings.
+Do not interpret "not visible" as "absent".
+
+The output is a fixed-capacity memory state, not a transcript or exhaustive
+description.
+
+Return one compact paragraph of at most 120 words."""
     raw, usage = call_with_content(
         client,
         content_blocks=[
@@ -316,7 +423,6 @@ def main() -> None:
                     start=start,
                     end=end,
                     previous_global=previous_global,
-                    local_summary=local_summary,
                     max_tokens=args.max_global_tokens,
                     temperature=args.temperature,
                 )
