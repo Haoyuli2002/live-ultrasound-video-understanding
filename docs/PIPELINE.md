@@ -126,7 +126,6 @@ python scripts/data/classify_ultrasound_video_type_teacher.py \
   --teacher gemini3 \
   --model google/gemini-3-pro \
   --base-url https://openrouter.ai/api/v1 \
-  --api-key-env OPENROUTER_API_KEY \
   --video-fps 1.0 \
   --resume
 
@@ -138,7 +137,31 @@ python scripts/data/merge_video_type_teacher_labels.py \
   --output-summary cluster_data/splits/train_full295_video_type_final_summary.json
 ```
 
-推荐 keep policy：Stage 2 / Stage 3 默认保留 `hands_on_ultrasound_teaching` 和 `pure_ultrasound_scan`；`mixed_ultrasound_teaching` 标记 `needs_clipping`，默认不直接进入 compression / SFT；PPT / 静态图讨论主要用于 Stage 1 或 offline QA；无关和 uncertain 默认不进入 Stage 2 / Stage 3。
+推荐 keep policy：
+
+```text
+Stage 1:
+  使用所有超声相关视频做领域知识注入，包括：
+  hands_on_ultrasound_teaching
+  pure_ultrasound_scan
+  mixed_ultrasound_teaching
+  ultrasound_ppt_lecture
+  ultrasound_image_discussion
+
+Stage 2:
+  使用 high-quality streaming videos 学 memory compression：
+  pure_ultrasound_scan
+  hands_on_ultrasound_teaching
+  可选：high-quality mixed_ultrasound_teaching，要求 has_realtime_ultrasound=true 且 ultrasound_fraction_estimate 足够高，或已完成 clipping。
+
+Stage 3:
+  使用 QA 数据学习 answerability：
+  long memory + short memory + optional current frames + question
+  -> <WAIT>/<ANSWER>
+  数据优先来自 pure_ultrasound_scan / hands_on_ultrasound_teaching / clipped high-quality mixed。
+```
+
+`ultrasound_ppt_lecture` 和 `ultrasound_image_discussion` 主要用于 Stage 1 或 offline QA，不直接进入 Stage 2 memory compression / Stage 3 streaming QA。`non_ultrasound_or_irrelevant` 和低置信 `uncertain` 默认丢弃或人工复核。
 
 Qwen vLLM 推荐启动方式：
 
