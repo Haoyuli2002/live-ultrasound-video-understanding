@@ -36,7 +36,6 @@ SCRIPTS_DIR = REPO_ROOT / "scripts"
 sys.path.insert(0, str(SCRIPTS_DIR))
 
 from _video_llm import (  # noqa: E402
-    DEFAULT_MODEL,
     build_openrouter_client,
     build_video_block,
     call_with_content,
@@ -44,6 +43,9 @@ from _video_llm import (  # noqa: E402
     temp_clip_path,
     text_block,
 )
+
+
+DEFAULT_TEACHER_SUMMARY_MODEL = "google/gemini-3-pro"
 
 
 LOCAL_SYSTEM_PROMPT = """You are an expert ultrasound image reviewer creating VISUAL-only memory targets
@@ -339,7 +341,7 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--video", required=True, help="Anchor video path")
     p.add_argument("--output", required=True, help="Output JSONL with one row per complete block")
     p.add_argument("--video-id", default=None, help="Override video_id; default = sanitized video stem")
-    p.add_argument("--model", default=DEFAULT_MODEL, help="OpenRouter video-capable model id")
+    p.add_argument("--model", default=DEFAULT_TEACHER_SUMMARY_MODEL, help="OpenRouter video-capable model id")
     p.add_argument("--block-sec", type=float, default=60.0, help="Block length in seconds")
     p.add_argument("--max-blocks", type=int, default=None, help="Optional limit for smoke tests")
     p.add_argument("--global-mode", choices=["incremental", "full_clip"], default="incremental")
