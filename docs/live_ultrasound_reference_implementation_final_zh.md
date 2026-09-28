@@ -1,7 +1,6 @@
-# Live Ultrasound Video Understanding — Pipeline
+# 实时超声视频理解（Live Ultrasound Video Understanding）— 参考实现文档
 
-> **状态：** 当前 repo 的唯一权威 pipeline 文档；以 Teacher visual summary memory learning 作为 Stage 2 主路线。
-> **实现说明：** 当前代码中已实现的 Stage 2 ASR reconstruction 是 memory-token pipeline 的 baseline / bootstrapping 版本；最终主线应迁移到本文档描述的 video-only Teacher visual summary supervision。
+> **状态：** 参考设计副本；权威版本请以 docs/PIPELINE.md 为准。
 > **范围：** 数据准备、Stage 1 超声视觉-语言知识注入、Stage 2 流式记忆学习、Stage 3 可回答性判断与 QA、在线推理、评估
 > **核心原则：** 系统必须判断“当前已经看到的超声证据是否足以回答问题”。证据不足时继续等待并观察视频；证据足够时再生成答案。
 
@@ -547,7 +546,7 @@ target narration
 
 Stage 2 学习一个固定容量的、query-agnostic 的超声视频 streaming memory。
 
-目标主线中，Stage 2 **完全不使用 ASR**。当前 repo 已实现的 ASR reconstruction 版本仅作为 baseline / bootstrapping，用于验证 memory-token 训练链路。
+Stage 2 **完全不使用 ASR**。
 
 系统包含两级 memory：
 
@@ -995,7 +994,7 @@ lambda_short = 1.0
 lambda_long  = 1.0
 ```
 
-主线设计中，这套 supervision **替代旧版 ASR reconstruction baseline**：
+这套 supervision **完全替代旧版**：
 
 ```text
 current ASR reconstruction
@@ -1004,7 +1003,7 @@ accumulated ASR reconstruction
 ASR concat + tail truncation
 ```
 
-最终 Stage 2 主线不再依赖 ASR；如需快速验证工程链路，可继续运行当前已实现的 ASR reconstruction baseline。
+Stage 2 不再依赖 ASR。
 
 ---
 
