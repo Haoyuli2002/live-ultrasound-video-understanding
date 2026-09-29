@@ -23,7 +23,8 @@
 ```text
 原始超声视频
         ├── ASR transcript
-        │       ├── rule-based filtering / clipping 辅助信号
+        │       ├── ASR quality rule filter
+        │       ├── sentence-boundary signal for clipping
         │       └── Stage 1 narration supervision
         │
         └── VLM classification
@@ -33,6 +34,9 @@
                 └── keep_for_pretrain / keep_for_compression / keep_for_sft
                         ↓
 数据选择 / 视频过滤 / clipping
+        ├── ASR rule filter: language / length / ultrasound keywords / repetition
+        ├── VLM keep flags: stage-specific keep / drop
+        ├── clipping: visual-change detection + ASR sentence-boundary alignment
         ├── Stage 1: 使用全部 ultrasound-related videos
         ├── Stage 2: 优先 pure / hands-on / 高质量 clipped mixed
         └── Stage 3: 优先 pure / hands-on / clipped high-quality mixed QA
