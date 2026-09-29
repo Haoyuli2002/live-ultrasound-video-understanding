@@ -20,61 +20,62 @@
 
 ### 0.2 完整 Pipeline
 
-```text
-原始超声视频
-        ├── ASR transcript
-        │       ├── ASR quality rule filter
-        │       ├── sentence-boundary signal for clipping
-        │       └── Stage 1 narration supervision
-        │
-        └── VLM classification
-                ├── video type
-                ├── anatomy / clinical scenario
-                ├── quality / realtime-ultrasound evidence
-                └── keep_for_pretrain / keep_for_compression / keep_for_sft
-                        ↓
-数据选择 / 视频过滤 / clipping
-        ├── ASR rule filter: language / length / ultrasound keywords / repetition
-        ├── VLM keep flags: stage-specific keep / drop
-        ├── clipping: visual-change detection + ASR sentence-boundary alignment
-        ├── Stage 1: 使用全部 ultrasound-related videos
-        ├── Stage 2: 优先 pure / hands-on / 高质量 clipped mixed
-        └── Stage 3: 优先 pure / hands-on / clipped high-quality mixed QA
-                        ↓
-Stage 1 — 超声视觉-语言知识注入
-video frames → 对齐的 ASR narration
-        ↓
-Stage 2 — Summary Compression Stage
-每 1 秒：
-    frames → 1 个 short-memory token
+完整系统从原始超声视频开始，依次完成数据标注、数据筛选、三阶段训练和最终评估。
 
-每 60 秒：
-    上一轮 60 个 long-memory tokens
-    + 当前 60 个 short-memory tokens
-    → 新的 60 个 long-memory tokens
+**第一步：收集原始超声视频。**
 
-Teacher supervision：
-    video[T-60:T] → local visual summary
-    video[0:T]    → cumulative visual summary
+输入是未经过模型训练处理的原始超声相关视频。这些视频可能包含纯超声机画面、床旁扫查教学、混合教学内容、PPT、静态图像讨论或无关片段。因此，原始视频不能直接全部用于所有训练阶段，必须先生成辅助标注并进行筛选。
 
-Student reconstruction：
-    short memory → local summary
-    long memory  → cumulative summary
-        ↓
-Stage 3 — Streaming Answerability + QA
-long memory
-+ 当前 short memory
-+ 可选当前帧
-+ question
-+ <DECISION>
-        ↓
-answerability logit
-        ↓
-p_answer < threshold → WAIT
-p_answer ≥ threshold → ANSWER + 生成答案
-        ↓
-Evaluation
-```
+**第二步：为原始视频生成 ASR transcript。**
+
+ASR transcript 有三个用途。第一，它用于 ASR quality rule filter，例如检查语言、长度、超声关键词数量和重复文本比例，从而剔除明显错误或无价值的 transcript。第二，它为 clipping 提供 sentence-boundary signal，使视频切分边界尽量落在自然句子边界附近，而不是在一句话中间截断。第三，它是 Stage 1 的 narration supervision，用于训练模型建立超声视觉内容和医学语言之间的对应关系。
+
+需要强调的是：ASR 只作为数据准备和 Stage 1 监督信号使用。Stage 2、Stage 3 和在线推理阶段不把 ASR transcript 作为输入。
+
+**第三步：对原始视频进行 VLM classification。**
+
+VLM classification 由 Teacher VLM 对完整视频进行分类和质量判断。它输出 video type、anatomy、clinical scenario、是否包含实时超声画面、是否需要 clipping，以及面向不同训练阶段的 keep flags：
+
+- `keep_for_pretrain`：是否适合 Stage 1 domain pretraining；
+- `keep_for_compression`：是否适合 Stage 2 Summary Compression；
+- `keep_for_sft`：是否适合 Stage 3 QA / SFT。
+
+这一步的作用是把“视频是否超声相关”和“视频适合哪个训练阶段”显式标注出来。不同阶段对视频质量的要求不同，因此不能只用一个统一的 keep/drop 决策。
+
+**第四步：进行数据选择、视频过滤和 clipping。**
+
+数据选择综合使用 ASR rule filter、VLM keep flags 和 clipping 结果。ASR rule filter 主要处理 transcript 质量问题；VLM keep flags 负责 stage-specific keep / drop；clipping 则结合 visual-change detection 和 ASR sentence-boundary alignment，把长视频或混合视频切成更适合训练的连续片段。
+
+不同阶段使用不同的数据策略：
+
+- Stage 1 使用范围最广，可以使用所有 ultrasound-related videos，因为目标是注入超声视觉-语言知识；
+- Stage 2 优先使用 `pure_ultrasound_scan`、`hands_on_ultrasound_teaching`，以及高质量或已经 clipping 的 `mixed_ultrasound_teaching`，因为目标是学习真实流式视觉记忆；
+- Stage 3 优先使用 pure / hands-on / clipped high-quality mixed 视频构造 QA，因为目标是训练模型在 streaming 条件下判断 WAIT 还是 ANSWER。
+
+**第五步：Stage 1 — 超声视觉-语言知识注入。**
+
+Stage 1 使用视频帧作为输入，使用对齐的 ASR narration 作为监督信号。模型在这一阶段学习超声画面、解剖结构、扫查动作和医学描述之间的基础对应关系。Stage 1 可以看作后续 Summary Compression 和 QA 的视觉-语言基础预训练。
+
+**第六步：Stage 2 — Summary Compression Stage。**
+
+Stage 2 不再使用 ASR，而是学习如何把连续超声视频压缩成 streaming memory。系统每 1 秒接收当前视频帧，并生成 1 个 short-memory token。每 60 秒，系统将上一轮 60 个 long-memory tokens 与当前 60 个 short-memory tokens 结合，递归更新为新的 60 个 long-memory tokens。
+
+Stage 2 的主要监督信号来自 Teacher VLM 的视觉摘要：
+
+- 对当前窗口 `video[T-60:T]`，Teacher 生成 `local visual summary`，用于监督 short memory；
+- 对累计历史 `video[0:T]`，Teacher 生成 `cumulative visual summary`，用于监督 long memory。
+
+Student 训练时需要从 short memory 重建 local summary，并从 long memory 重建 cumulative summary。这里的目标不是复述 ASR，而是让 memory token 学会保存可用于后续 QA 的视觉证据。
+
+**第七步：Stage 3 — Streaming Answerability + QA。**
+
+Stage 3 在用户提出问题后工作。模型输入包括 long memory、当前 short memory、question、`<DECISION>` token，以及可选的当前帧。模型首先通过 `<DECISION>` hidden state 产生 answerability logit，用于判断当前已经看到的证据是否足够回答问题。
+
+如果 `p_answer < threshold`，系统输出 `WAIT`，继续观察后续视频；如果 `p_answer ≥ threshold`，系统输出 `ANSWER` 并生成最终答案。Stage 3 的核心不是单纯回答问题，而是在 streaming 场景下学习“什么时候应该等待，什么时候可以回答”。
+
+**第八步：Evaluation。**
+
+评估同时覆盖三个层面：Stage 1 是否学到超声视觉-语言对应关系，Stage 2 的 short / long memory 是否保留了关键视觉证据，Stage 3 是否能准确判断 answerability 并生成正确答案。最终系统必须同时满足两点：答案内容正确，以及回答时机正确。
 
 ---
 
