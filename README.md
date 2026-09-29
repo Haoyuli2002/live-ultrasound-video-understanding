@@ -57,7 +57,7 @@ A real-time ultrasound video understanding system that goes beyond scene descrip
 │
 ├── docs/                             # Documentation
 │   ├── PROJECT_PLAN.md               # Full project plan
-│   ├── PIPELINE.md                   # Detailed pipeline reference (PRIMARY)
+│   ├── live_ultrasound_reference_implementation_final_zh.md  # Authoritative pipeline spec
 │   ├── DATA_PIPELINE.md              # Earlier pipeline notes
 │   ├── AGENT_ARCHITECTURE.md         # Agentic benchmark construction
 │   └── VIDEO_FILTER_DOC.md           # Video filter technical doc
@@ -93,7 +93,7 @@ A real-time ultrasound video understanding system that goes beyond scene descrip
 7. Evaluation       → UltrasoundQA Benchmark (planned)
 ```
 
-See [`docs/PIPELINE.md`](docs/PIPELINE.md) for the full per-step spec, prompts, and cost/time breakdown.
+See [`docs/live_ultrasound_reference_implementation_final_zh.md`](docs/live_ultrasound_reference_implementation_final_zh.md) for the authoritative pipeline spec, prompts, and design details.
 
 ## 新 QA Pipeline（`QA/`，提出方法的实现）
 

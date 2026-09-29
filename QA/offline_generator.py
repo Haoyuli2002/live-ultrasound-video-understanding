@@ -55,7 +55,7 @@ OFFLINE_QA_TYPES = ["clip_summary"]  # single type; keep list form for symmetry 
 
 # Cap on how much of the clip we upload. Clips are 30-300s but very long
 # clips would explode video-token cost. 300s is enough for the whole
-# training set (per docs/PIPELINE.md all clips are 30-300s).
+# training set (per the authoritative pipeline doc, clips are 30-300s).
 CLIP_MAX_SEC = 300.0
 
 
