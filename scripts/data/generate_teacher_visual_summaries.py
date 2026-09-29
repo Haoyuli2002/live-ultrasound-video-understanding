@@ -96,45 +96,55 @@ The cumulative summary is a fixed-capacity memory state, not a transcript,
 not an exhaustive description, and not a concatenation of previous summaries.
 
 Your goal is to retain the most clinically useful DISTINCT visual evidence
-observed from the beginning of the video up to the current time.
+observed so far.
 
 Prioritize:
-- important anatomy or organs already visualized
-- clinically meaningful scan views
-- relevant probe or scanning actions when they matter for interpretation
-- clearly visible sonographic findings
-- meaningful dynamic findings
-- important measurements or visible labels
-- clinically meaningful changes over time
+1. clearly visible sonographic findings and dynamic signs
+2. important anatomy and scan views
+3. clinically meaningful changes or comparisons over time
+4. relevant measurements, labels, or machine settings
+5. probe position or movement only when needed to understand a finding
 
-Memory-update rules:
-- Preserve important earlier evidence even when it is no longer visible.
-- Integrate new clinically useful evidence from the current segment.
-- Merge repeated observations into one concise statement.
-- Remove redundant wording and low-value scene details.
-- Do not simply append a description of the current segment.
-- Preserve chronology only when temporal order or change is clinically meaningful.
-- If new visual evidence refines an earlier observation, update the earlier statement
-  instead of keeping both versions.
-- Preserve the uncertainty level of earlier observations unless new visual evidence
-  clearly resolves that uncertainty.
-- Absence of a finding in the current segment does not invalidate an earlier finding.
+Memory update:
+- Preserve important earlier evidence.
+- Integrate important new evidence from the current segment.
+- Merge repeated observations and remove redundancy.
+- Rewrite and compress the whole memory instead of appending new text.
+- Remove low-value setup details when more important ultrasound evidence appears.
+- Keep the information volume approximately constant as the video becomes longer.
 
-Grounding rules:
-- Use only evidence supported by the visible ultrasound images or visually observable
-  probe/scanning actions.
-- Do not rely on audio narration, transcript content, teaching context, or expected anatomy.
-- Prioritize ultrasound imaging content over generic scene description.
-- Mention image quality only when it materially limits interpretation.
+Temporal changes:
+- Preserve changes when the transition itself is clinically meaningful.
+- Do not overwrite an earlier finding when the change from earlier to later matters.
+- If a later observation only confirms an earlier finding, merge them.
+- Distinguish true temporal change from differences caused by another view,
+  scan location, or comparison example.
+- If the video shows side-by-side or example clips, describe them as visual examples
+  rather than as changes in the same patient's condition.
+- Preserve probe/view/setting changes only when they affect interpretation.
+
+Grounding:
+- Use only evidence visible in the ultrasound images or visually observable
+  scanning actions.
+- Do not rely on audio, transcripts, teaching context, or presenter explanations.
+- Do not mention what the presenter explains, teaches, states, or intends.
+- Describe observations rather than unsupported clinical interpretation.
 - Do not interpret "not visible" as "absent".
-- Report negative findings only when the relevant anatomy has been adequately visualized.
-- Report dynamic findings only when the corresponding motion is directly observable
-  across video frames.
-- Do not infer unsupported diagnoses or findings from medical knowledge alone.
-- Do not add unsupported information.
+- Report negative findings only when the relevant anatomy is adequately visualized.
+- Report dynamic findings only when motion is directly observable across frames.
+- Report numeric values only when clearly readable.
+- Do not infer unsupported diagnoses or findings.
 
-Keep the final cumulative memory concise and information-dense.
-The final summary must be at most 120 words.
+Discard first when memory is crowded:
+- patient demographics
+- generic patient positioning
+- room or equipment descriptions
+- routine gel application
+- routine probe handling
+- clinician gestures
+- repeated descriptions of the same finding
+
+Return one compact, factual paragraph of at most 120 words.
 """
 
 
@@ -298,23 +308,22 @@ def summarize_global_incremental(
     if previous_global:
         prompt = f"""Update the cumulative visual memory from time 0 to {end:.1f} seconds.
 
-Previous cumulative visual memory from 0 to {start:.1f} seconds:
+Previous cumulative visual memory:
 {previous_global}
 
 The attached video is the new segment covering
 [{start:.1f}, {end:.1f}] seconds.
 
-Produce the updated cumulative visual memory for [0, {end:.1f}] seconds.
+Rewrite the entire cumulative memory using the previous memory as historical
+evidence and the attached video as new visual evidence.
 
-Important:
-- Treat the output as a compact fixed-capacity memory state.
-- Preserve clinically important earlier evidence.
-- Integrate only new visually supported evidence from the current segment.
-- Merge repeated observations and remove redundancy.
-- Do not simply append a description of the current segment.
-- Do not discard earlier findings merely because they are not visible now.
-- Preserve chronology only when it represents a clinically meaningful change.
-- Keep the final summary within 120 words."""
+Preserve important earlier findings, integrate important new findings, retain
+clinically meaningful changes or comparisons, merge repeated observations,
+and remove lower-value details when necessary.
+
+Do not append to the previous wording.
+
+Return one compact paragraph of at most 120 words."""
     else:
         prompt = f"""Update the cumulative visual memory from time 0 to {end:.1f} seconds.
 
