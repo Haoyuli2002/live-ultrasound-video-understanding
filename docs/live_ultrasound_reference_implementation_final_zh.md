@@ -92,6 +92,7 @@ Evaluation
 ```text
 Short-memory 更新频率：      每 1 秒
 每个 block 的 short 数量：  60 tokens
+Short summary 标注粒度：    可密集到每 10 秒一个 local label
 Long-memory 更新频率：       每 60 秒
 Long-memory 容量：           固定 60 tokens
 ```
@@ -593,12 +594,17 @@ V_{\le k}
 V[0:T_k]
 \]
 
-对于每一个完整分钟，VLM 标注器离线生成两个 summary label：
+对于每一个完整分钟，VLM 标注器离线生成两类 summary label：
 
 ```text
-local summary
-global / cumulative summary
+local summary labels:
+    默认可按 10 秒子窗口生成，用于更密集地监督 short memory
+
+global / cumulative summary label:
+    每 60 秒生成一次，用于监督 long memory
 ```
+
+因此，short memory 的**更新频率**是每 1 秒一次；short memory 的**local summary 监督频率**可以比 long memory 更密，例如每 10 秒一次。Long memory 仍然每 60 秒递归更新一次。
 
 ---
 
@@ -1076,26 +1082,33 @@ Long-summary compression 只在完整 60 秒 block 后发生：
 
 ## 3.8.1 Short-Memory Sample
 
+当使用密集 local summary 标注时，一个 60 秒 block 可以产生多条 short-memory sample。下面示例表示第 0 个 block 内 `[10,20]` 秒子窗口的 short-memory 监督样本：
+
 ```json
 {
   "sample_type": "short_memory_summary",
   "video_id": "8V649L5Q368",
   "block_idx": 0,
+  "sub_idx": 1,
   "block_window": [0.0, 60.0],
+  "summary_window": [10.0, 20.0],
   "short_windows": [
-    [0.0, 1.0],
-    [1.0, 2.0],
+    [10.0, 11.0],
+    [11.0, 12.0],
     "...",
-    [59.0, 60.0]
+    [19.0, 20.0]
   ],
-  "local_summary_target": "VLM 标注器为当前 60 秒生成的摘要标注",
+  "local_summary_target": "VLM 标注器为当前 10 秒生成的摘要标注",
   "meta": {
     "source": "vlm_annotator",
     "step_sec": 1.0,
-    "block_sec": 60.0
+    "block_sec": 60.0,
+    "local_sec": 10.0
   }
 }
 ```
+
+如果输入数据没有 `local_sub_summaries`，builder 仍兼容旧格式：用整段 `block_window` 的 `local_summary_target` 生成一条 60 秒 short-memory sample。
 
 ---
 

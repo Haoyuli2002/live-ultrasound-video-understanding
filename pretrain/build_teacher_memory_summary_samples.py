@@ -4,11 +4,11 @@
 Input JSONL contains one row per complete block with at least:
   - video_id
   - block_idx or block_window
-  - local_summary_target  (or local_summary)
+  - local_summary_target  (or local_summary), or local_sub_summaries for dense local labels
   - global_summary_target (or cumulative_summary/global_summary)
 
 Output JSONL uses the main Stage-2 design:
-  - short_memory_summary: 60 short tokens -> local visual summary
+  - short_memory_summary: short tokens -> local visual summary
   - long_memory_summary : L_{k-1} + 60 short tokens -> L_k -> global summary
 
 This script does not call a teacher model; it converts already generated teacher
@@ -63,6 +63,45 @@ def global_target(row: Dict[str, Any]) -> str:
     return norm(row.get("global_summary_target") or row.get("cumulative_summary_target") or row.get("global_summary") or row.get("cumulative_summary"))
 
 
+def iter_local_targets(row: Dict[str, Any], *, block_sec: float, step_sec: float) -> Iterable[Dict[str, Any]]:
+    """Yield one or more local-summary targets for a block.
+
+    New dense-local rows may contain `local_sub_summaries`, each with its own
+    `window` and `local_summary_target`. Legacy rows contain one block-level
+    `local_summary_target` and are kept compatible.
+    """
+    bw = block_window(row, block_sec=block_sec)
+    subs = row.get("local_sub_summaries") or []
+    if isinstance(subs, list) and subs:
+        for i, sub in enumerate(subs):
+            if not isinstance(sub, dict):
+                continue
+            target = norm(sub.get("local_summary_target") or sub.get("local_summary") or sub.get("target"))
+            if not target:
+                continue
+            window = sub.get("window") or sub.get("summary_window")
+            if window:
+                s0, s1 = window
+                summary_window = [round(float(s0), 3), round(float(s1), 3)]
+            else:
+                summary_window = bw
+            yield {
+                "sub_idx": int(sub.get("sub_idx", i)),
+                "summary_window": summary_window,
+                "short_windows": short_windows(summary_window[0], summary_window[1], step_sec=step_sec),
+                "local_summary_target": target,
+            }
+        return
+
+    target = local_target(row)
+    if target:
+        yield {
+            "summary_window": bw,
+            "short_windows": short_windows(bw[0], bw[1], step_sec=step_sec),
+            "local_summary_target": target,
+        }
+
+
 def sorted_video_rows(rows: Iterable[Dict[str, Any]], *, block_sec: float) -> List[Dict[str, Any]]:
     def key(row: Dict[str, Any]):
         if row.get("block_idx") is not None:
@@ -106,13 +145,19 @@ def build_samples(rows: List[Dict[str, Any]], *, block_sec: float, step_sec: flo
                     "chronological_rollout": True,
                 },
             }
-            if "short" in types and local:
-                samples.append({
-                    **base,
-                    "sample_type": "short_memory_summary",
-                    "local_summary_target": local,
-                    "target": local,
-                })
+            if "short" in types:
+                for local_item in iter_local_targets(row, block_sec=block_sec, step_sec=step_sec):
+                    sample = {
+                        **base,
+                        "sample_type": "short_memory_summary",
+                        "summary_window": local_item["summary_window"],
+                        "short_windows": local_item["short_windows"],
+                        "local_summary_target": local_item["local_summary_target"],
+                        "target": local_item["local_summary_target"],
+                    }
+                    if "sub_idx" in local_item:
+                        sample["sub_idx"] = local_item["sub_idx"]
+                    samples.append(sample)
             if "long" in types and glob:
                 samples.append({
                     **base,

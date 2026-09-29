@@ -5,8 +5,9 @@ Output is one JSONL row per complete block and is directly consumable by:
 
     pretrain/build_teacher_memory_summary_samples.py
 
-For each 60-second block this script asks a video-capable teacher model for:
-  1. local_summary_target: a short visual summary of the current minute only;
+For each complete block this script asks a video-capable teacher model for:
+  1. local_summary_target / local_sub_summaries: visual summaries of the
+     current block or denser local sub-windows;
   2. global_summary_target: a concise cumulative visual summary from 0 to T.
 
 By default the global summary is generated incrementally from the previous
@@ -229,6 +230,17 @@ def compact(text: str, max_chars: int | None = None) -> str:
     return text
 
 
+def windows_between(start: float, end: float, *, window_sec: float) -> list[list[float]]:
+    if window_sec <= 0:
+        raise ValueError("window_sec must be positive")
+    windows = []
+    cur = float(start)
+    while cur + window_sec <= end + 1e-6:
+        windows.append([round(cur, 3), round(cur + window_sec, 3)])
+        cur += window_sec
+    return windows
+
+
 def append_jsonl(path: Path, row: dict[str, Any]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("a", encoding="utf-8") as f:
@@ -405,6 +417,7 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--video-id", default=None, help="Override video_id; default = sanitized video stem")
     p.add_argument("--model", default=DEFAULT_TEACHER_SUMMARY_MODEL, help="OpenRouter video-capable model id")
     p.add_argument("--block-sec", type=float, default=60.0, help="Block length in seconds")
+    p.add_argument("--local-sec", type=float, default=60.0, help="Local summary supervision window in seconds. Use 10 for dense short-memory labels.")
     p.add_argument("--max-blocks", type=int, default=None, help="Optional limit for smoke tests")
     p.add_argument("--global-mode", choices=["incremental", "full_clip"], default="incremental")
     p.add_argument("--max-local-tokens", type=int, default=300)
@@ -428,6 +441,8 @@ def main() -> None:
 
     video_id = safe_video_id(video_path, args.video_id)
     duration = probe_duration_sec(video_path)
+    if args.local_sec <= 0 or args.local_sec > args.block_sec:
+        raise ValueError("--local-sec must be in (0, --block-sec]")
     num_blocks = int(math.floor(duration / args.block_sec))
     if args.max_blocks is not None:
         num_blocks = min(num_blocks, int(args.max_blocks))
@@ -457,17 +472,56 @@ def main() -> None:
         )
 
         try:
-            local_summary, local_usage = summarize_local(
-                client=client,
-                model=args.model,
-                video_id=video_id,
-                block_idx=block_idx,
-                clip_path=teacher_block_clip,
-                start=start,
-                end=end,
-                max_tokens=args.max_local_tokens,
-                temperature=args.temperature,
-            )
+            local_sub_summaries = []
+            local_usages = []
+            if abs(args.local_sec - args.block_sec) < 1e-6:
+                local_summary, local_usage = summarize_local(
+                    client=client,
+                    model=args.model,
+                    video_id=video_id,
+                    block_idx=block_idx,
+                    clip_path=teacher_block_clip,
+                    start=start,
+                    end=end,
+                    max_tokens=args.max_local_tokens,
+                    temperature=args.temperature,
+                )
+                local_usage_meta: dict[str, Any] | list[dict[str, Any]] = local_usage
+            else:
+                for sub_idx, (sub_start, sub_end) in enumerate(windows_between(start, end, window_sec=args.local_sec)):
+                    sub_clip = temp_clip_path(video_id, f"teacher_summary_block{block_idx:04d}_sub{sub_idx:02d}_{int(sub_start)}_{int(sub_end)}")
+                    cut_clip(video_path, sub_start, sub_end, sub_clip)
+                    teacher_sub_clip = prepare_teacher_clip(
+                        sub_clip,
+                        video_id=video_id,
+                        name=f"teacher_summary_block{block_idx:04d}_sub{sub_idx:02d}_{int(sub_start)}_{int(sub_end)}",
+                        include_audio=args.include_audio,
+                    )
+                    try:
+                        sub_summary, sub_usage = summarize_local(
+                            client=client,
+                            model=args.model,
+                            video_id=video_id,
+                            block_idx=block_idx,
+                            clip_path=teacher_sub_clip,
+                            start=sub_start,
+                            end=sub_end,
+                            max_tokens=args.max_local_tokens,
+                            temperature=args.temperature,
+                        )
+                    finally:
+                        if not args.keep_temp_clips:
+                            if teacher_sub_clip != sub_clip:
+                                teacher_sub_clip.unlink(missing_ok=True)
+                            sub_clip.unlink(missing_ok=True)
+                    local_sub_summaries.append({
+                        "sub_idx": sub_idx,
+                        "window": [round(sub_start, 3), round(sub_end, 3)],
+                        "local_summary_target": sub_summary,
+                    })
+                    local_usages.append({"sub_idx": sub_idx, "window": [round(sub_start, 3), round(sub_end, 3)], "usage": sub_usage})
+                local_summary = " ".join(s["local_summary_target"] for s in local_sub_summaries if s.get("local_summary_target"))
+                local_usage_meta = local_usages
 
             if args.global_mode == "full_clip":
                 global_clip = temp_clip_path(video_id, f"teacher_summary_0_to_{block_idx:04d}_{int(end)}")
@@ -517,16 +571,20 @@ def main() -> None:
                 "meta": {
                     "source": "teacher_visual_summary",
                     "block_sec": args.block_sec,
+                    "local_sec": args.local_sec,
                     "global_mode": args.global_mode,
                     "include_audio": args.include_audio,
                     "duration_sec": duration,
-                    "local_usage": local_usage,
+                    "local_usage": local_usage_meta,
                     "global_usage": global_usage,
                 },
             }
+            if local_sub_summaries:
+                row["local_sub_summaries"] = local_sub_summaries
             append_jsonl(out_path, row)
             previous_global = global_summary
-            print(f"[teacher-summary] wrote block {block_idx} window=[{start:.1f},{end:.1f}] local_chars={len(local_summary)} global_chars={len(global_summary)}")
+            sub_info = f" local_subs={len(local_sub_summaries)}" if local_sub_summaries else ""
+            print(f"[teacher-summary] wrote block {block_idx} window=[{start:.1f},{end:.1f}]{sub_info} local_chars={len(local_summary)} global_chars={len(global_summary)}")
         except Exception as e:
             append_jsonl(out_path, {
                 "video_id": video_id,
