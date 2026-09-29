@@ -1,8 +1,6 @@
 # Live Ultrasound Video Understanding — Pipeline
 
-> **状态：** 当前 repo 的唯一权威 pipeline 文档；以 Teacher visual summary memory learning 作为 Stage 2 主路线。
-> **实现说明：** 当前代码中已实现的 Stage 2 ASR reconstruction 是 memory-token pipeline 的 baseline / bootstrapping 版本；最终主线应迁移到本文档描述的 video-only Teacher visual summary supervision。
-> **范围：** 数据准备、Stage 1 超声视觉-语言知识注入、Stage 2 摘要压缩学习、Stage 3 可回答性判断与 QA、在线推理、评估
+> **范围：** 数据准备、Stage 1 超声视觉-语言知识注入、Stage 2 摘要压缩（long-term memory, short-term memory）学习、Stage 3 可回答性判断与 QA、在线推理、评估
 > **核心原则：** 系统必须判断“当前已经看到的超声证据是否足以回答问题”。证据不足时继续等待并观察视频；证据足够时再生成答案。
 
 ---
@@ -13,30 +11,10 @@
 
 本项目面向的是 **实时超声视频理解（live ultrasound video understanding）**，而不是传统的离线 Video QA。
 
-模型持续接收超声视频流。当用户提出问题后，系统需要根据“当前时刻之前已经观察到的证据”判断问题是否已经可回答。
-
-在每一个决策时刻，系统只有两种状态：
-
-```text
-WAIT
-```
-
-或：
-
-```text
-ANSWER
-```
-
-其中：
+模型持续接收超声视频流（每秒更新，FPS=1）。当用户提出问题后，系统需要根据“当前时刻之前已经观察到的证据”判断问题是否已经可回答。
 
 - `WAIT`：当前视觉证据不足，系统继续观察后续视频；
 - `ANSWER`：当前证据已经充分，可以开始生成最终答案。
-
-因此，本项目的核心并不仅仅是答案生成，而是：
-
-> **Streaming Evidence Sufficiency Estimation（流式证据充分性判断）**
-
-即：模型不仅要“会回答”，还必须知道“什么时候还不能回答”。
 
 ---
 
@@ -44,9 +22,21 @@ ANSWER
 
 ```text
 原始超声视频
-        ↓
-ASR transcript + 视频过滤 / clipping
-        ↓
+        ├── ASR transcript
+        │       ├── rule-based filtering / clipping 辅助信号
+        │       └── Stage 1 narration supervision
+        │
+        └── VLM classification
+                ├── video type
+                ├── anatomy / clinical scenario
+                ├── quality / realtime-ultrasound evidence
+                └── keep_for_pretrain / keep_for_compression / keep_for_sft
+                        ↓
+数据选择 / 视频过滤 / clipping
+        ├── Stage 1: 使用全部 ultrasound-related videos
+        ├── Stage 2: 优先 pure / hands-on / 高质量 clipped mixed
+        └── Stage 3: 优先 pure / hands-on / clipped high-quality mixed QA
+                        ↓
 Stage 1 — 超声视觉-语言知识注入
 video frames → 对齐的 ASR narration
         ↓
