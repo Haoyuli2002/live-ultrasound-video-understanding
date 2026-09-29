@@ -427,11 +427,9 @@ video[start - context_left, end + context_right]
 
 形式化：
 
-\[
-V_{t_0:t_1}
-\rightarrow
-Y^{ASR}_{t_0:t_1}
-\]
+```text
+V[t0:t1] -> Y_ASR[t0:t1]
+```
 
 ---
 
@@ -439,11 +437,9 @@ Y^{ASR}_{t_0:t_1}
 
 使用标准 causal LM loss：
 
-\[
-\mathcal L_{\text{stage1}}
-=
-CE(\hat Y^{ASR},Y^{ASR})
-\]
+```text
+L_stage1 = CE(Y_hat_ASR, Y_ASR)
+```
 
 只监督 assistant target tokens。
 
@@ -572,27 +568,25 @@ hands_on_ultrasound_teaching
 
 设一个 block 为 60 秒。
 
-第 \(k\) 个 block 的结束时刻：
+第 `k` 个 block 的结束时刻：
 
-\[
+```text
 T_k=60k
-\]
+```
 
 当前一分钟：
 
-\[
+```text
 V_k
 =
 V[T_{k-1}:T_k]
-\]
+```
 
 截至当前时刻已经观察到的完整历史：
 
-\[
-V_{\le k}
-=
-V[0:T_k]
-\]
+```text
+V_{<=k} = V[0:T_k]
+```
 
 对于每一个完整分钟，VLM 标注器离线生成两类 summary label：
 
@@ -612,11 +606,11 @@ global / cumulative summary label:
 
 VLM 标注器只观察当前 60 秒：
 
-\[
+```text
 Y_k^{local}
 =
 VLMAnnotator(V[T_{k-1}:T_k])
-\]
+```
 
 它回答的问题是：
 
@@ -647,11 +641,11 @@ clinically relevant visual evidence
 
 VLM 标注器输入从视频开头到当前时刻的全部视频：
 
-\[
+```text
 Y_k^{global}
 =
 VLMAnnotator(V[0:T_k])
-\]
+```
 
 它回答的问题是：
 
@@ -705,13 +699,13 @@ VLM 生成的视觉摘要标注目标是：
 
 视频流每秒处理一次。
 
-对于时间 \(t\)：
+对于时间 `t`：
 
-\[
+```text
 x_t
 =
-\text{frames in }[t,t+1]
-\]
+frames in [t, t+1]
+```
 
 向视觉输入后加入特殊 query token：
 
@@ -721,14 +715,11 @@ x_t
 
 取该位置 hidden state：
 
-\[
+```text
 s_t
 =
-hidden\_state(
-\texttt{<SHORT\_MEM>}
-\mid x_t
-)
-\]
+hidden_state(<SHORT_MEM> | x_t)
+```
 
 因此：
 
@@ -741,11 +732,11 @@ hidden\_state(
 
 一个完整 60 秒 block 得到：
 
-\[
+```text
 S_k
 =
 [s_{60(k-1)},...,s_{60k-1}]
-\]
+```
 
 恰好 60 个 short-memory tokens。
 
@@ -775,19 +766,19 @@ Short memory 主要回答：
 
 最终 60 个 `<LONG_MEM>` 位置的 hidden states 定义为：
 
-\[
+```text
 L_k
 =
-[l_k^1,\ldots,l_k^{60}]
-\]
+[l_k^1, ..., l_k^60]
+```
 
 形式化：
 
-\[
+```text
 L_k
 =
 Compress(L_{k-1},S_k)
-\]
+```
 
 第一个 block：
 
@@ -820,7 +811,7 @@ Compress
 L_k
 ```
 
-新的 \(L_k\) 全量替换旧的 \(L_{k-1}\)。
+新的 `L_k` 全量替换旧的 `L_{k-1}`。
 
 ---
 
@@ -851,11 +842,11 @@ L_2 = Compress(L_1, S_2)
 L_k = Compress(L_{k-1}, S_k)
 ```
 
-因此，第 \(k\) 个 block 使用的：
+因此，第 `k` 个 block 使用的：
 
-\[
+```text
 L_{k-1}
-\]
+```
 
 是前面所有视频按照真实时间顺序递归生成出来的 memory state。
 
@@ -873,38 +864,29 @@ L_{k-1}
 
 当前一分钟的 60 个 short-memory tokens：
 
-\[
+```text
 S_k
-\]
+```
 
 需要重建 VLM 标注器为当前一分钟生成的 local summary label：
 
-\[
-\hat Y_k^{local}
-=
-DecodeShort(S_k)
-\]
+```text
+Y_hat_local_k = DecodeShort(S_k)
+```
 
 Target：
 
-\[
+```text
 Y_k^{local}
 =
 VLMAnnotator(V[T_{k-1}:T_k])
-\]
+```
 
 Loss：
 
-\[
-\boxed{
-\mathcal L_{short}
-=
-CE(
-\hat Y_k^{local},
-Y_k^{local}
-)
-}
-\]
+```text
+L_short = CE(Y_hat_local_k, Y_local_k)
+```
 
 即：
 
@@ -922,38 +904,29 @@ Y_k^{local}
 
 递归更新得到的：
 
-\[
+```text
 L_k
-\]
+```
 
 需要重建从视频开始到当前时刻的累计视觉摘要：
 
-\[
-\hat Y_k^{global}
-=
-DecodeLong(L_k)
-\]
+```text
+Y_hat_global_k = DecodeLong(L_k)
+```
 
 Target：
 
-\[
+```text
 Y_k^{global}
 =
 VLMAnnotator(V[0:T_k])
-\]
+```
 
 Loss：
 
-\[
-\boxed{
-\mathcal L_{long}
-=
-CE(
-\hat Y_k^{global},
-Y_k^{global}
-)
-}
-\]
+```text
+L_long = CE(Y_hat_global_k, Y_global_k)
+```
 
 即：
 
@@ -971,15 +944,9 @@ Y_k^{global}
 
 最终：
 
-\[
-\boxed{
-\mathcal L_{stage2}
-=
-\lambda_{short}\mathcal L_{short}
-+
-\lambda_{long}\mathcal L_{long}
-}
-\]
+```text
+L_stage2 = lambda_short * L_short + lambda_long * L_long
+```
 
 初始建议：
 
@@ -1243,7 +1210,7 @@ Stage 3 学习两件事：
 
 # 4.2 输入
 
-在 streaming time \(t\)，输入：
+在 streaming time `t`，输入：
 
 ```text
 long memory L_t
@@ -1255,9 +1222,9 @@ long memory L_t
 
 取 `<DECISION>` 位置 hidden state：
 
-\[
+```text
 h_t^{dec}
-\]
+```
 
 ---
 
@@ -1265,37 +1232,33 @@ h_t^{dec}
 
 用一个 binary classification head：
 
-\[
+```text
 z_t
 =
 W h_t^{dec}+b
-\]
+```
 
 得到 scalar logit。
 
 可回答概率：
 
-\[
+```text
 p_{answer}(t)
 =
-\sigma(z_t)
-\]
+sigmoid(z_t)
+```
 
-Inference 时使用阈值 \(\tau\)：
+Inference 时使用阈值 `tau`：
 
-\[
-p_{answer}(t)<\tau
-\Rightarrow
-WAIT
-\]
+```text
+p_answer(t) < tau  -> WAIT
+```
 
-\[
-p_{answer}(t)\geq\tau
-\Rightarrow
-ANSWER
-\]
+```text
+p_answer(t) >= tau -> ANSWER
+```
 
-阈值 \(\tau\) 在 validation set 上确定，用于平衡：
+阈值 `tau` 在 validation set 上确定，用于平衡：
 
 ```text
 premature answer
@@ -1309,23 +1272,17 @@ answer delay
 
 每一个 decision sample：
 
-\[
+```text
 y_t=
-\begin{cases}
-0,&\text{当前证据不足}\\
-1,&\text{当前证据充分}
-\end{cases}
-\]
+0 if current evidence is insufficient
+1 if current evidence is sufficient
+```
 
 Decision loss：
 
-\[
-\boxed{
-\mathcal L_{decision}
-=
-BCEWithLogitsLoss(z_t,y_t)
-}
-\]
+```text
+L_decision = BCEWithLogitsLoss(z_t, y_t)
+```
 
 推荐直接使用：
 
@@ -1355,14 +1312,9 @@ y_t = 1
 
 即 ANSWER sample，同时训练答案生成：
 
-\[
-\mathcal L_{answer}
-=
-CE(
-\hat A,
-A
-)
-\]
+```text
+L_answer = CE(A_hat, A)
+```
 
 对于：
 
@@ -1383,15 +1335,9 @@ y_t = 0
 
 最终：
 
-\[
-\boxed{
-\mathcal L_{stage3}
-=
-\lambda_{decision}\mathcal L_{decision}
-+
-y_t\lambda_{answer}\mathcal L_{answer}
-}
-\]
+```text
+L_stage3 = lambda_decision * L_decision + y_t * lambda_answer * L_answer
+```
 
 初始建议：
 
@@ -1523,17 +1469,17 @@ active_questions = []
 
 接收当前 frames：
 
-\[
+```text
 x_t
-\]
+```
 
 生成 short-memory token：
 
-\[
+```text
 s_t
 =
-EncodeShort(x_t,\texttt{<SHORT\_MEM>})
-\]
+EncodeShort(x_t, <SHORT_MEM>)
+```
 
 然后：
 
@@ -1547,19 +1493,19 @@ short_memory.append(s_t)
 
 当 short memory 累积到 60 个：
 
-\[
+```text
 S_k
 =
 [s_{60(k-1)},...,s_{60k-1}]
-\]
+```
 
 更新：
 
-\[
+```text
 L_k
 =
 Compress(L_{k-1},S_k)
-\]
+```
 
 然后：
 
@@ -1586,23 +1532,23 @@ long_memory
 
 得到：
 
-\[
+```text
 h_t^{dec}
-\]
+```
 
 计算：
 
-\[
+```text
 p_{answer}
 =
-\sigma(W h_t^{dec}+b)
-\]
+sigmoid(W h_dec_t + b)
+```
 
 如果：
 
-\[
-p_{answer}<\tau
-\]
+```text
+p_answer < tau
+```
 
 返回：
 
@@ -1614,9 +1560,9 @@ WAIT
 
 如果：
 
-\[
-p_{answer}\geq\tau
-\]
+```text
+p_answer >= tau
+```
 
 则开始生成最终答案并返回：
 
@@ -1779,7 +1725,7 @@ answer delay
 time-to-answer
 ```
 
-阈值 \(\tau\) 应在 validation set 上调好，并在 test evaluation 前固定。
+阈值 `tau` 应在 validation set 上调好，并在 test evaluation 前固定。
 
 ---
 
@@ -1938,9 +1884,9 @@ unsupported clinical inference
 
 当前 short-memory window 之前的历史信息，只通过：
 
-\[
+```text
 L_t
-\]
+```
 
 保存。
 
@@ -1954,19 +1900,17 @@ L_t
 
 对于每一分钟都重新执行：
 
-\[
+```text
 VLMAnnotator(V[0:T])
-\]
+```
 
 会不断重复处理历史视频。
 
-一个 \(K\) 分钟的视频，总输入规模近似：
+一个 `K` 分钟的视频，总输入规模近似：
 
-\[
-1+2+\cdots+K
-=
-O(K^2)
-\]
+```text
+1 + 2 + ... + K = O(K^2)
+```
 
 例如：
 
@@ -1982,14 +1926,14 @@ O(K^2)
 
 后续可尝试：
 
-\[
+```text
 Y_k^{global}
 =
 VLMAnnotator(
 Y_{k-1}^{global},
 V_k
 )
-\]
+```
 
 即 rolling VLM summary label generation。
 
