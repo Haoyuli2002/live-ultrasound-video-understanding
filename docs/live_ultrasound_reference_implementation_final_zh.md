@@ -1,6 +1,6 @@
 # 实时超声视频理解（Live Ultrasound Video Understanding）— 参考实现文档
 
-> **状态：** 参考设计副本；权威版本请以 docs/PIPELINE.md 为准。
+> **状态：** 参考设计副本；权威版本请以 `docs/PIPELINE.md` 为准。
 > **范围：** 数据准备、Stage 1 超声视觉-语言知识注入、Stage 2 摘要压缩学习、Stage 3 可回答性判断与 QA、在线推理、评估
 > **核心原则：** 系统必须判断“当前已经看到的超声证据是否足以回答问题”。证据不足时继续等待并观察视频；证据足够时再生成答案。
 
@@ -13,20 +13,6 @@
 本项目面向的是 **实时超声视频理解（live ultrasound video understanding）**，而不是传统的离线 Video QA。
 
 模型持续接收超声视频流。当用户提出问题后，系统需要根据“当前时刻之前已经观察到的证据”判断问题是否已经可回答。
-
-在每一个决策时刻，系统只有两种状态：
-
-```text
-WAIT
-```
-
-或：
-
-```text
-ANSWER
-```
-
-其中：
 
 - `WAIT`：当前视觉证据不足，系统继续观察后续视频；
 - `ANSWER`：当前证据已经充分，可以开始生成最终答案。
@@ -54,17 +40,17 @@ Stage 2 — Summary Compression Stage
     frames → 1 个 short-memory token
 
 每 60 秒：
-    上一轮 60 个 long-memory tokens
+    60 个 long-memory tokens
     + 当前 60 个 short-memory tokens
     → 新的 60 个 long-memory tokens
 
-Teacher supervision：
-    video[T-60:T] → local visual summary
-    video[0:T]    → cumulative visual summary
+数据集构建：使用大模型离线生成视觉摘要标注
+    video[T-60:T] → 局部总结标注
+    video[0:T]    → 从视频开头到时刻 T 的累计总结标注
 
-Student reconstruction：
-    short memory → local summary
-    long memory  → cumulative summary
+Memory Learning：
+    short memory → 局部总结
+    long memory  → 从视频开头到时刻 T 的总结。
         ↓
 Stage 3 — Streaming Answerability + QA
 long memory
@@ -88,7 +74,7 @@ Evaluation
 | Stage | 模型输入 | 监督信号 | 学习目标 |
 |---|---|---|---|
 | Stage 1 | 超声视频帧 | 对齐的 ASR narration | 超声视觉-语言知识 |
-| Stage 2 | 仅超声视频 | Teacher VLM 生成的局部 / 累积视觉摘要 | Streaming short / long memory |
+| Stage 2 | 仅超声视频 | VLM 生成的局部 / 累积视觉摘要 | Streaming short / long memory |
 | Stage 3 | Streaming memory + question + 可选当前帧 | answerability label + answer text | WAIT/ANSWER 判断与最终 QA |
 
 整个系统有一个非常重要的约束：
@@ -122,7 +108,7 @@ Long-memory 容量：           固定 60 tokens
 新的 60 个 long-memory tokens
 ```
 
-Long memory 是 **全量替换（replace）**，不是不断 append。
+Long memory 是 **全量更新**，不是不断 append。
 
 因此，无论视频持续 2 分钟、20 分钟还是更久，long-memory 长度始终固定为 60 tokens。
 
@@ -184,22 +170,22 @@ ASR **不会进入 Stage 2 memory learning，也不会进入 Stage 3 或 online 
 
 ```text
 1. 基于 ASR / metadata 的 rule-based filtering
-2. Teacher VLM 的视频类型 / anatomy / clinical scenario 分类
+2. VLM 打标 / anatomy / clinical scenario 分类
 ```
 
-推荐 Teacher 配置：
+配置：
 
 ```text
-Primary open-source teacher:
+Primary open-source VLM:
     Qwen/Qwen3.5-35B-A3B
     通过本地 vLLM OpenAI-compatible endpoint 提供服务
 
-Cross-validation teacher:
-    Gemini 3 Pro
+Cross-validation VLM:
+    Gemini 3.1 Pro
     通过 OpenRouter / Google-compatible endpoint 调用
 ```
 
-推荐视频类型标签：
+视频类型标签：
 
 ```text
 hands_on_ultrasound_teaching
@@ -232,7 +218,7 @@ keep_for_sft
 
 ---
 
-## 1.4 各 Stage 的 Keep Policy
+## 1.4 各 Stage 的超声视频类型
 
 ### Stage 1
 
@@ -268,7 +254,7 @@ has_realtime_ultrasound = true
 - `ultrasound_fraction_estimate` 足够高；或
 - 已经把实时超声部分单独 clipping 出来。
 
-Stage 2 不推荐直接使用 slide-heavy / discussion-only 视频，因为它们会让 memory 学到与真实 online ultrasound stream 不一致的内容。
+Stage 2 不推荐直接使用 discussion-only 视频，因为它们会让 memory 学到与真实 online ultrasound stream 不一致的内容。
 
 ---
 
@@ -284,7 +270,7 @@ hands_on_ultrasound_teaching
 
 ---
 
-## 1.5 Teacher 视频分类脚本
+## 1.5 视频分类脚本
 
 Qwen3.5：
 
@@ -560,15 +546,17 @@ Long-term memory:
     递归压缩并保存更长时间范围内的重要历史证据
 ```
 
-为了训练 memory 保留“重要的视觉信息”，使用更强的 Teacher VLM 离线生成视觉摘要作为 supervision。
+为了训练 memory 保留“重要的视觉信息”，使用更强的大模型 / VLM 离线生成视觉摘要标注，构建 Stage 2 的 supervised training dataset。
+
+这里不是蒸馏大模型的 logits、hidden states 或推理轨迹；大模型只用于离线构建高质量训练数据。
 
 ---
 
-# 3.2 Teacher Summary Supervision
+# 3.2 VLM-Assisted Visual Summary Dataset Construction
 
 ## 3.2.1 视频选择
 
-Teacher summary 只优先生成在高质量 streaming ultrasound 视频上：
+VLM 视觉摘要标注只优先生成在高质量 streaming ultrasound 视频上：
 
 ```text
 pure_ultrasound_scan
@@ -605,7 +593,7 @@ V_{\le k}
 V[0:T_k]
 \]
 
-对于每一个完整分钟，Teacher VLM 生成两个 target：
+对于每一个完整分钟，VLM 标注器离线生成两个 summary label：
 
 ```text
 local summary
@@ -616,12 +604,12 @@ global / cumulative summary
 
 ## 3.2.3 Local Summary
 
-Teacher 只观察当前 60 秒：
+VLM 标注器只观察当前 60 秒：
 
 \[
 Y_k^{local}
 =
-Teacher(V[T_{k-1}:T_k])
+VLMAnnotator(V[T_{k-1}:T_k])
 \]
 
 它回答的问题是：
@@ -651,12 +639,12 @@ clinically relevant visual evidence
 
 ## 3.2.4 Global / Cumulative Summary
 
-Teacher 输入从视频开头到当前时刻的全部视频：
+VLM 标注器输入从视频开头到当前时刻的全部视频：
 
 \[
 Y_k^{global}
 =
-Teacher(V[0:T_k])
+VLMAnnotator(V[0:T_k])
 \]
 
 它回答的问题是：
@@ -673,15 +661,15 @@ Teacher(V[0:T_k])
 
 ---
 
-## 3.2.5 Teacher Summary 约束
+## 3.2.5 VLM 视觉摘要标注约束
 
-Teacher summary 的目标是：
+VLM 生成的视觉摘要标注目标是：
 
 > **描述视频中已经存在并能够被视觉证据支持的信息。**
 
 而不是自由进行诊断推理。
 
-推荐 Teacher Prompt：
+推荐 VLM 标注 Prompt：
 
 ```text
 仅总结当前指定超声视频时间范围内能够被视觉证据支持的信息。
@@ -701,7 +689,7 @@ Teacher summary 的目标是：
 摘要应简洁、客观、基于可见证据。
 ```
 
-Teacher 可以使用医学知识识别结构和超声征象，但不能凭空加入视频未显示的临床结论。
+用于标注的大模型可以使用医学知识识别结构和超声征象，但不能凭空加入视频未显示的临床结论。
 
 ---
 
@@ -883,7 +871,7 @@ L_{k-1}
 S_k
 \]
 
-需要重建 Teacher 为当前一分钟生成的 local summary：
+需要重建 VLM 标注器为当前一分钟生成的 local summary label：
 
 \[
 \hat Y_k^{local}
@@ -896,7 +884,7 @@ Target：
 \[
 Y_k^{local}
 =
-Teacher(V[T_{k-1}:T_k])
+VLMAnnotator(V[T_{k-1}:T_k])
 \]
 
 Loss：
@@ -945,7 +933,7 @@ Target：
 \[
 Y_k^{global}
 =
-Teacher(V[0:T_k])
+VLMAnnotator(V[0:T_k])
 \]
 
 Loss：
@@ -994,7 +982,7 @@ lambda_short = 1.0
 lambda_long  = 1.0
 ```
 
-这套 supervision **完全替代旧版**：
+这套 VLM-generated summary label 数据构建方式 **完全替代旧版 ASR reconstruction 主路线**：
 
 ```text
 current ASR reconstruction
@@ -1020,7 +1008,7 @@ Stage 2 不再依赖 ASR。
 Target：
 
 ```text
-Teacher local summary
+VLM-generated local summary label
 ```
 
 ---
@@ -1034,7 +1022,7 @@ Teacher local summary
 Target：
 
 ```text
-Teacher cumulative summary
+VLM-generated cumulative summary label
 ```
 
 因此：
@@ -1100,9 +1088,9 @@ Long-summary compression 只在完整 60 秒 block 后发生：
     "...",
     [59.0, 60.0]
   ],
-  "local_summary_target": "Teacher VLM 为当前 60 秒生成的摘要",
+  "local_summary_target": "VLM 标注器为当前 60 秒生成的摘要标注",
   "meta": {
-    "source": "teacher_vlm",
+    "source": "vlm_annotator",
     "step_sec": 1.0,
     "block_sec": 60.0
   }
@@ -1126,10 +1114,10 @@ Long-summary compression 只在完整 60 秒 block 后发生：
     [119.0, 120.0]
   ],
   "num_long_tokens": 60,
-  "local_summary_target": "Teacher summary for 60-120 s",
-  "global_summary_target": "Teacher summary for 0-120 s",
+  "local_summary_target": "VLM-generated summary label for 60-120 s",
+  "global_summary_target": "VLM-generated summary label for 0-120 s",
   "meta": {
-    "source": "teacher_vlm",
+    "source": "vlm_annotator",
     "block_sec": 60.0,
     "step_sec": 1.0,
     "drop_last_incomplete": true,
@@ -1213,7 +1201,7 @@ python pretrain/eval_memory_compression.py \
   --output results/memory_compression_eval.json
 ```
 
-> CLI 参数需要与最终代码实现同步。语义要求是：Stage 2 使用 Teacher visual summary supervision，并按真实时间顺序递归更新 memory。
+> CLI 参数需要与最终代码实现同步。语义要求是：Stage 2 使用 VLM-generated visual summary labels 作为训练目标，并按真实时间顺序递归更新 memory。
 
 ---
 
@@ -1679,7 +1667,7 @@ blind VLM / LLM judge
 评估：
 
 ```text
-S_k → local teacher summary
+S_k → local VLM-generated summary label
 ```
 
 核心问题：
@@ -1693,7 +1681,7 @@ S_k → local teacher summary
 评估：
 
 ```text
-L_k → cumulative teacher summary
+L_k → cumulative VLM-generated summary label
 ```
 
 核心问题：
@@ -1887,15 +1875,15 @@ Stage 2 不知道未来用户会问什么问题。
 
 ---
 
-## 7.3 Teacher Summary 只监督视觉证据
+## 7.3 VLM 视觉摘要标注只描述视觉证据
 
-Teacher summary 用于指导 memory：
+VLM 视觉摘要标注用于定义 memory 需要保留的信息：
 
 > 什么信息值得保留。
 
 而不是引导模型学习未经视觉支持的诊断推理。
 
-因此 Teacher summary 应尽可能接近：
+因此 VLM 视觉摘要标注应尽可能接近：
 
 ```text
 visible evidence
@@ -1949,12 +1937,12 @@ L_t
 
 # 8. 当前局限
 
-## 8.1 Teacher Summary 成本
+## 8.1 VLM 摘要标注成本
 
 对于每一分钟都重新执行：
 
 \[
-Teacher(V[0:T])
+VLMAnnotator(V[0:T])
 \]
 
 会不断重复处理历史视频。
@@ -1984,25 +1972,25 @@ O(K^2)
 \[
 Y_k^{global}
 =
-Teacher(
+VLMAnnotator(
 Y_{k-1}^{global},
 V_k
 )
 \]
 
-即 rolling Teacher summary。
+即 rolling VLM summary label generation。
 
-但 rolling summary 会存在 teacher error accumulation，因此第一版仍建议优先使用：
+但 rolling summary 会存在 VLM annotation error accumulation，因此第一版仍建议优先使用：
 
 ```text
-raw video[0:T] → Teacher global summary
+raw video[0:T] → VLM-generated global summary label
 ```
 
 ---
 
-## 8.2 Teacher Summary 质量依赖
+## 8.2 VLM 摘要标注质量依赖
 
-Stage 2 supervision 质量高度依赖 Teacher 输出是否满足：
+Stage 2 训练数据质量高度依赖 VLM 摘要标注是否满足：
 
 ```text
 visually grounded
@@ -2104,18 +2092,18 @@ short_frames:
 
 ---
 
-## 9.4 Teacher Summary Strategy
+## 9.4 VLM Summary Label Generation Strategy
 
 比较：
 
 ```text
 Direct global summary:
-    Teacher(video[0:T])
+    VLMAnnotator(video[0:T])
 
 vs.
 
 Rolling global summary:
-    Teacher(previous_global_summary, video[T-60:T])
+    VLMAnnotator(previous_global_summary, video[T-60:T])
 ```
 
 ---
@@ -2175,9 +2163,9 @@ vs.
 - [ ] 已生成 Stage 1 ASR supervision
 - [ ] 已完成视频类型分类
 - [ ] 已筛选 Stage 2 高质量视频
-- [ ] 每个完整分钟已生成 Teacher local summary
-- [ ] 每个完整分钟已生成 Teacher cumulative summary
-- [ ] 已对 Teacher summary 做质量检查
+- [ ] 每个完整分钟已生成 VLM local summary label
+- [ ] 每个完整分钟已生成 VLM cumulative summary label
+- [ ] 已对 VLM summary labels 做质量检查
 
 ---
 
@@ -2197,8 +2185,8 @@ vs.
 - [ ] long memory 始终为 60 tokens
 - [ ] 每 60 秒全量替换 long memory
 - [ ] 训练采用 chronological recursive rollout
-- [ ] short memory 重建 local Teacher summary
-- [ ] long memory 重建 cumulative Teacher summary
+- [ ] short memory 重建 VLM local summary label
+- [ ] long memory 重建 VLM cumulative summary label
 - [ ] Stage 2 完全不使用 ASR
 
 ---
@@ -2227,4 +2215,4 @@ vs.
 
 # 11. 一句话总结
 
-> 整个系统首先通过“超声视频 → ASR narration”进行 Stage 1 视觉-语言知识注入；随后在 Stage 2 中完全脱离 ASR，每秒把当前超声画面压缩成一个 short-memory token，每 60 秒再将上一轮 60 个 long-memory tokens 与当前 60 个 short-memory tokens 递归压缩成新的 60 个 long-memory tokens，并分别使用 Teacher VLM 为当前一分钟生成的 local summary 和为 0→T 历史视频生成的 cumulative summary 监督 short / long memory；最后在 Stage 3 中，通过单个 `<DECISION>` hidden state 和 `BCEWithLogitsLoss` 估计当前问题的可回答概率，证据不足时 WAIT，证据充分时才生成最终答案。
+> 整个系统首先通过“超声视频 → ASR narration”进行 Stage 1 视觉-语言知识注入；随后在 Stage 2 中完全脱离 ASR，每秒把当前超声画面压缩成一个 short-memory token，每 60 秒再将上一轮 60 个 long-memory tokens 与当前 60 个 short-memory tokens 递归压缩成新的 60 个 long-memory tokens，并使用离线 VLM 标注器为当前一分钟生成 local summary label、为 0→T 历史视频生成 cumulative summary label，构建 Stage 2 的 summary-compression 训练数据，使 short / long memory 学会保留关键视觉证据；最后在 Stage 3 中，通过单个 `<DECISION>` hidden state 和 `BCEWithLogitsLoss` 估计当前问题的可回答概率，证据不足时 WAIT，证据充分时才生成最终答案。
