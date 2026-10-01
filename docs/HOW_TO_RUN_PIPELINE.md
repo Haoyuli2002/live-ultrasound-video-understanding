@@ -186,6 +186,58 @@ If the raw Qwen audit includes uncertain or error rows with a keep flag,
 inspect those decisions explicitly; do not infer membership from the aggregate
 237/234 counts.
 
+Seven train videos currently produce no samples because their ASR text has no
+sentence-ending punctuation. Clean all selected ASR transcripts with the local
+Qwen3.5-27B vLLM endpoint, then build a **new** Stage 1 JSONL without
+overwriting the baseline:
+
+```bash
+for split in train_full295 eval_full295; do
+  python -m stage1.clean_asr \
+    --transcripts cluster_data/QA/${split}/transcripts \
+    --video-map cluster_data/splits/${split}_qwen35_pretrain_keep_videos.json \
+    --output-dir cluster_data/QA/${split}/transcripts_stage1_qwen35_clean \
+    --audit-output cluster_data/QA/${split}/stage1_qwen35_clean_audit.jsonl \
+    --model Qwen/Qwen3.5-27B \
+    --base-url http://localhost:8000/v1 \
+    --api-key-env VLLM_API_KEY \
+    --resume
+
+  python -m stage1.data \
+    --transcripts cluster_data/QA/${split}/transcripts_stage1_qwen35_clean \
+    --video-map cluster_data/splits/${split}_qwen35_pretrain_keep_videos.json \
+    --output cluster_data/pretrain/${split}_stage1_qwen35_clean_samples.jsonl
+done
+```
+
+The endpoint must actually serve `Qwen/Qwen3.5-27B`; the older video-type
+labeling service may serve a different model. Set `VLLM_API_KEY` to the key
+expected by your local server. The cleaner processes every selected transcript,
+including already-punctuated ASR. It preserves the source text under
+`raw_segments`, keeps each segment's timestamps, and logs term edits in
+`asr_cleaning.term_corrections` and the JSONL audit. It rejects malformed or
+large rewrites. The model sees ASR text only, so terminology corrections are
+unverified hypotheses; review the audit and a sample of text/time boundaries
+before training. Sentence times are estimated within ASR segments, not forced
+word alignment. Use the new `*_qwen35_clean_samples.jsonl` path for training
+after that review.
+
+On LRZ, `scripts/slurm/run_stage1_qwen35_asr_clean.sbatch` starts its own
+Qwen3.5-27B vLLM server, cleans one split, and builds its Stage 1 JSONL.
+Submit train and eval separately from the repository root after creating the
+Slurm log directory:
+
+```bash
+mkdir -p logs
+sbatch --export=ALL,SPLIT=train_full295 scripts/slurm/run_stage1_qwen35_asr_clean.sbatch
+sbatch --export=ALL,SPLIT=eval_full295 scripts/slurm/run_stage1_qwen35_asr_clean.sbatch
+```
+
+The script defaults to the same `REPO` and scratch `DATA` paths as the
+video-type labeling sbatch. Override them with `--export` if your checkout or
+data path differs. A rerun skips already-written cleaned transcripts and then
+rebuilds the sample JSONL; it does not call the teacher again for those videos.
+
 Train Stage 1:
 
 ```bash
@@ -208,6 +260,9 @@ with earlier ASR, `0→end` with earlier ASR, and `0→start` with earlier ASR
 masked. The trainer holds out whole videos and writes `validation_samples.jsonl`.
 `--frame-budget 120` caps the number of frames across each full selected
 interval; intervals longer than 120 seconds are uniformly subsampled.
+For long videos, compare `--frame-sampling recent_sparse --recent-seconds 120`:
+it uses the same 120-frame budget, reserving 96 frames for the latest two
+minutes and 24 for older history. Pass the same options to `stage1.evaluate`.
 Compare normal, blank, and shuffled video with `stage1.evaluate
 --visual-control normal|blank|shuffled` in separate runs.
 

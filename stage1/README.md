@@ -11,17 +11,40 @@ deterministic, paired examples with the **same target**:
 | `through_with_asr` | `[0, end)` | visible |
 | `before_mask_asr` | `[0, start)` | masked |
 
-The target sentence and later ASR never appear in the prompt. Up to 120 ordered
-frames are sampled across the entire selected interval. This is 1 FPS for a
-120-second interval and uniform subsampling for longer intervals. The train and
-evaluation scripts use the same prompt and image processing. Only assistant
+The target sentence and later ASR never appear in the prompt. The baseline
+samples up to 120 ordered frames uniformly across the selected interval. For a
+120-second interval this is 1 FPS; long-video prefixes become much sparser.
+`--frame-sampling recent_sparse` is an optional same-budget alternative: with
+the default 120-frame budget it takes 96 frames from the latest 120 seconds and
+24 evenly spaced frames from earlier history. Use the same sampling options in
+training and evaluation. Only assistant
 target tokens receive NTP loss. The training split is by video, so all three
 conditions for a sentence remain together.
 
 ASR sentence times inside a transcript segment are linearly interpolated; these
-are estimates, not word-level forced alignment. Inspect a sample of timings
-before a full training run. Historical ASR is kept in the JSONL; the input
-template uses its last `--max-asr-chars` characters (default 4000).
+are estimates, not word-level forced alignment. The default builder omits
+transcripts with no terminal punctuation. For a quick coverage experiment,
+`--unpunctuated-fallback segment` uses eligible ASR segments only when no
+punctuated sentence exists. These are tagged `asr_segment_fallback`, use
+segment timestamps and an utterance prompt, and are **not asserted to be
+complete sentences**. The summary reports fallback videos and rows. Audit
+them separately before mixing them into the main dataset. Historical ASR is
+kept in the JSONL; the input template uses its last `--max-asr-chars`
+characters (default 4000).
+
+For the cleaned sentence dataset, run `python -m stage1.clean_asr` first. It
+uses the repository's OpenAI-compatible local vLLM pattern with
+`Qwen/Qwen3.5-27B`. The teacher receives chronological Whisper ASR segments
+with neighboring text context, adds punctuation, and makes conservative
+ultrasound terminology corrections. It processes already-punctuated segments
+too. Each output transcript retains unchanged segment timestamps and a
+`raw_segments` copy; `asr_cleaning.term_corrections` and the separate JSONL
+audit record lexical edits. `stage1.data` then splits cleaned text into
+sentence targets. The source transcript folder is untouched. Word and sentence
+times within a segment remain interpolation estimates, not forced alignment.
+This teacher sees text only, so manually review a sample of medical term edits
+and sentence/time boundaries before training. The older
+`stage1.restore_punctuation` remains a punctuation-only comparison baseline.
 
 ```bash
 python -m stage1.data --transcripts results/transcripts \
