@@ -63,12 +63,29 @@ def resolve_path(raw_path: str | None, repo_root: Path) -> Path | None:
 
 
 def ffprobe_duration(path: Path, ffprobe_bin: str) -> float:
-    cmd = [ffprobe_bin, "-v", "error", "-show_entries", "format=duration", "-of", "json", str(path)]
+    cmd = [
+        ffprobe_bin,
+        "-v",
+        "error",
+        "-show_entries",
+        "format=duration:stream=duration",
+        "-of",
+        "json",
+        str(path),
+    ]
     result = subprocess.run(cmd, capture_output=True, text=True)
     if result.returncode != 0:
         raise RuntimeError(result.stderr.strip() or f"ffprobe failed with code {result.returncode}")
     payload = json.loads(result.stdout or "{}")
-    return float((payload.get("format") or {}).get("duration") or 0.0)
+    candidates = []
+    fmt_duration = (payload.get("format") or {}).get("duration")
+    if fmt_duration not in (None, "N/A", ""):
+        candidates.append(float(fmt_duration))
+    for stream in payload.get("streams") or []:
+        duration = stream.get("duration")
+        if duration not in (None, "N/A", ""):
+            candidates.append(float(duration))
+    return max(candidates) if candidates else 0.0
 
 
 def human_seconds(seconds: float) -> str:
@@ -123,6 +140,7 @@ def summarize_split(name: str, *, video_map: Dict[str, str], label_rows: List[Di
         if vid in labels and vid not in video_map:
             label_without_map.append(vid)
 
+        duration_source = "none"
         if not exists:
             missing_files.append({"video_id": vid, "path": str(path) if path else ""})
         else:
@@ -131,8 +149,16 @@ def summarize_split(name: str, *, video_map: Dict[str, str], label_rows: List[Di
             sizes_bytes.append(size_bytes)
             try:
                 duration_sec = ffprobe_duration(path, ffprobe_bin)
+                duration_source = "ffprobe" if duration_sec > 0 else "none"
             except Exception as exc:  # noqa: BLE001
                 ffprobe_failed.append({"video_id": vid, "path": str(path), "error": str(exc)})
+        if duration_sec <= 0 and rec.get("duration_sec") is not None:
+            try:
+                duration_sec = float(rec.get("duration_sec") or 0.0)
+                duration_source = "label_duration_sec" if duration_sec > 0 else duration_source
+            except Exception:
+                pass
+        if exists:
             durations.append(duration_sec)
 
         per_video.append({
@@ -140,6 +166,7 @@ def summarize_split(name: str, *, video_map: Dict[str, str], label_rows: List[Di
             "path": str(path) if path else None,
             "exists": exists,
             "duration_sec": duration_sec,
+            "duration_source": duration_source,
             "duration_min": duration_sec / 60.0,
             "size_bytes": size_bytes,
             "size_gb": size_bytes / 1e9,
