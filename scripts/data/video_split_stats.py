@@ -88,6 +88,25 @@ def ffprobe_duration(path: Path, ffprobe_bin: str) -> float:
     return max(candidates) if candidates else 0.0
 
 
+def opencv_duration(path: Path) -> float:
+    """Fallback duration from frame_count / fps for files with no ffprobe duration."""
+    try:
+        import cv2  # type: ignore
+    except Exception as exc:  # noqa: BLE001
+        raise RuntimeError(f"opencv unavailable: {exc}") from exc
+    cap = cv2.VideoCapture(str(path))
+    try:
+        if not cap.isOpened():
+            raise RuntimeError("cv2.VideoCapture failed to open file")
+        fps = float(cap.get(cv2.CAP_PROP_FPS) or 0.0)
+        frame_count = float(cap.get(cv2.CAP_PROP_FRAME_COUNT) or 0.0)
+        if fps <= 0 or frame_count <= 0:
+            raise RuntimeError(f"invalid fps/frame_count: fps={fps}, frame_count={frame_count}")
+        return frame_count / fps
+    finally:
+        cap.release()
+
+
 def human_seconds(seconds: float) -> str:
     seconds = int(round(seconds))
     return f"{seconds // 3600:02d}:{(seconds % 3600) // 60:02d}:{seconds % 60:02d}"
@@ -152,6 +171,12 @@ def summarize_split(name: str, *, video_map: Dict[str, str], label_rows: List[Di
                 duration_source = "ffprobe" if duration_sec > 0 else "none"
             except Exception as exc:  # noqa: BLE001
                 ffprobe_failed.append({"video_id": vid, "path": str(path), "error": str(exc)})
+            if duration_sec <= 0:
+                try:
+                    duration_sec = opencv_duration(path)
+                    duration_source = "opencv" if duration_sec > 0 else duration_source
+                except Exception as exc:  # noqa: BLE001
+                    ffprobe_failed.append({"video_id": vid, "path": str(path), "error": f"opencv fallback: {exc}"})
         if duration_sec <= 0 and rec.get("duration_sec") is not None:
             try:
                 duration_sec = float(rec.get("duration_sec") or 0.0)
