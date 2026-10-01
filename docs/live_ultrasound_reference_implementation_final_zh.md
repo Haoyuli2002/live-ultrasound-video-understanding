@@ -33,7 +33,7 @@
 ASR transcript + 视频过滤 / clipping
         ↓
 Stage 1 — 超声视觉-语言知识注入
-video frames → 对齐的 ASR narration
+三组视频／历史 ASR 条件 → 同一完整 ASR 目标句
         ↓
 Stage 2 — Summary Compression Stage
 每 1 秒：
@@ -45,11 +45,13 @@ Stage 2 — Summary Compression Stage
     → 新的 60 个 long-memory tokens
 
 数据集构建：使用大模型离线生成视觉摘要标注
-    video[T-60:T] → 局部总结标注
+    video[t-10:t] → 10 秒 local summary 标注
+    video[T-60:T] → 60 秒 block summary 标注
     video[0:T]    → 从视频开头到时刻 T 的累计总结标注
 
 Memory Learning：
-    short memory → 局部总结
+    10 个 short tokens → 对应 10 秒 local summary
+    60 个 short tokens → 当前 60 秒 block summary
     long memory  → 从视频开头到时刻 T 的总结。
         ↓
 Stage 3 — Streaming Answerability + QA
@@ -73,13 +75,13 @@ Evaluation
 
 | Stage | 模型输入 | 监督信号 | 学习目标 |
 |---|---|---|---|
-| Stage 1 | 超声视频帧 | 对齐的 ASR narration | 超声视觉-语言知识 |
+| Stage 1 | `0→start`／`0→end` 视频与历史 ASR 保留／遮蔽条件 | 完整 ASR 讲解句子 | 超声领域知识注入与视觉依赖对照 |
 | Stage 2 | 仅超声视频 | VLM 生成的局部 / 累积视觉摘要 | Streaming short / long memory |
 | Stage 3 | Streaming memory + question + 可选当前帧 | answerability label + answer text | WAIT/ANSWER 判断与最终 QA |
 
 整个系统有一个非常重要的约束：
 
-> **ASR 只在 Stage 1 中作为监督信号使用。Stage 2、Stage 3 和在线推理阶段均不使用 ASR。**
+> **ASR 仅用于数据准备及 Stage 1：目标句作为监督，目标句之前的历史 ASR 在两组输入条件中保留、第三组遮蔽。Stage 2、Stage 3 和在线推理阶段均不使用 ASR。**
 
 因此，部署时系统只依赖视频及其内部维护的 streaming memory，不依赖实时语音或字幕。
 
@@ -92,7 +94,8 @@ Evaluation
 ```text
 Short-memory 更新频率：      每 1 秒
 每个 block 的 short 数量：  60 tokens
-Short summary 标注粒度：    可密集到每 10 秒一个 local label
+Local summary 监督频率：    每 10 秒，使用对应 10 个 short tokens
+Block summary 监督频率：    每 60 秒，使用当前 60 个 short tokens
 Long-memory 更新频率：       每 60 秒
 Long-memory 容量：           固定 60 tokens
 ```
@@ -156,10 +159,11 @@ Bilibili
 }
 ```
 
-ASR 在整个 pipeline 中只承担两个作用：
+ASR 在整个 pipeline 中承担三个作用：
 
 1. 辅助前期视频过滤；
-2. 作为 **Stage 1 的监督信号**，用于超声视觉-语言知识注入。
+2. 作为 **Stage 1 的目标句监督信号**；
+3. 在 Stage 1 的两组对照条件中提供目标句之前的历史文本，第三组遮蔽该文本。
 
 ASR **不会进入 Stage 2 memory learning，也不会进入 Stage 3 或 online inference**。
 
@@ -283,23 +287,21 @@ hands_on_ultrasound_teaching
 
 Stage 1 的目标是让基础 VLM 学会：
 
-> 超声画面中的视觉信息与医学语言之间的对应关系。
+> 从已有超声视频上下文预测完整的领域讲解句子，注入超声概念与表达方式。
 
 训练任务：
 
 ```text
-ultrasound video frames
+ultrasound video context + optional earlier ASR
         ↓
       model
         ↓
-aligned ASR narration
+complete ASR narration sentence
 ```
 
 核心原则：
 
-> **ASR 是训练 target，而不是模型输入。**
-
-这样可以避免模型依赖语言续写，而是尽可能通过超声视觉内容理解当前发生了什么。
+目标句 ASR 是训练 target，绝不进入输入。目标句之前的历史 ASR 在两组条件中作为输入，第三组遮蔽。三组比较用于检查模型对视觉和历史文本的依赖；预测效果仍需通过画面打乱对照验证。
 
 ---
 
@@ -310,39 +312,30 @@ Input：
 ```text
 System Prompt
 + sampled ultrasound frames
++ historical ASR 或 [ASR MASKED]
 ```
 
 Target：
 
 ```text
-对应时间段的 ASR narration sentence / chunk
+一条完整的 ASR narration sentence
 ```
 
-当前 reference design **不输入 previous ASR narration**。
+目标句及其后的 ASR 不作为输入。
 
 ---
 
 ## 2.3 Training Sample
 
-对于 ASR segment：
+对于完整讲解句子 `[start,end]`，生成三组配对样本，目标都为同一句：
 
-```text
-[start, end]
-```
+| 条件 | 视频 | 目标句之前的 ASR |
+|---|---|---|
+| `before_with_asr` | `V[0:start)` | 输入 |
+| `through_with_asr` | `V[0:end)` | 输入 |
+| `before_mask_asr` | `V[0:start)` | 遮蔽 |
 
-从对应的视频时间窗口采样 frames：
-
-```text
-video[start - context_left, end + context_right]
-```
-
-并将 aligned ASR text 作为 assistant target。
-
-形式化：
-
-```text
-V[t0:t1] -> Y_ASR[t0:t1]
-```
+每个视频窗口最多按时间顺序采 120 帧；当窗口不超过 120 秒时约为 1 FPS，超过 120 秒时对整个窗口均匀降采样。三个条件共享完整目标句，训练／验证按视频分组。ASR 段内的句子时间戳目前通过字符位置插值估计，需抽样人工核验。
 
 ---
 
@@ -366,25 +359,19 @@ L_stage1 = CE(Y_hat_ASR, Y_ASR)
 
 ```text
 system prompt
+user / image prompt
+padding
+```
+
 ## 2.5 实现命令
 
-Stage 1 样本构建和训练命令见 `docs/HOW_TO_RUN_PIPELINE.md`。
-  --video-path-map pretrain/data/video_path_map.json \
-  --output-dir /mnt/cache/qwenFT/qwen3vl_stage1_pretrain \
-  --window-size 4 \
-  --frame-size 224 \
-  --num-train-epochs 3 \
-  --per-device-train-batch-size 1 \
-  --gradient-accumulation-steps 8 \
-  --learning-rate 1e-4 \
-  --bf16
-```
+新实现入口见 `stage1/README.md`；原 `pretrain/` 保留为历史实验。
 
 ---
 
 ## 2.6 Stage 1 需要避免的 Shortcut
 
-不希望模型学成：
+历史 ASR 输入可能使模型只学语言续写，因此不能只看生成损失：
 
 ```text
 previous narration
@@ -404,7 +391,7 @@ visual-language understanding
 target narration
 ```
 
-因此，reference implementation 中 previous ASR context 不作为 Stage 1 输入。
+同一目标句比较 `before_with_asr` 与 `before_mask_asr`，再比较正常、黑屏和打乱视频的结果；这样才能判断历史文本和视觉画面的各自贡献。
 
 ---
 
@@ -451,86 +438,59 @@ hands_on_ultrasound_teaching
 
 ## 3.2.2 时间定义
 
-设一个 block 为 60 秒。
+设每个完整 block 为 60 秒，结束时刻为 `T_k = 60k`。第 k 个 block 为 `V[T_{k-1}:T_k]`。
 
-第 `k` 个 block 的结束时刻：
+第一版固定采用以下更新与监督机制：
 
-```text
-T_k=60k
-```
+1. 每秒从该秒视频生成一个 short-memory token。
+2. 每 10 秒，用对应区间的 10 个 short tokens 重建该区间的 local summary。
+3. 每 60 秒，用当前整分钟的 60 个 short tokens 重建这 60 秒的 block summary。
+4. 同时，将这 60 个 short tokens 与上一轮 long memory 一起输入压缩器，生成新的固定 60-token long memory。
+5. 更新后的 long memory 重建从视频开始截至当前时刻的 global summary。
 
-当前一分钟：
+因此共有三类摘要监督：
 
-```text
-V_k
-=
-V[T_{k-1}:T_k]
-```
+| 监督目标 | 视频标注范围 | 模型解码输入 | 频率 |
+|---|---|---|---|
+| Local summary | 当前 10 秒 | 对应的 10 个 short tokens | 每 10 秒 |
+| Block summary | 当前完整 60 秒 | 对应的 60 个 short tokens | 每 60 秒 |
+| Global summary | 视频开始至当前时刻 | 更新后的 60 个 long tokens | 每 60 秒 |
 
-截至当前时刻已经观察到的完整历史：
-
-```text
-V_{<=k} = V[0:T_k]
-```
-
-对于每一个完整分钟，VLM 标注器离线生成两类 summary label：
-
-```text
-local summary labels:
-    默认可按 10 秒子窗口生成，用于更密集地监督 short memory
-
-global / cumulative summary label:
-    每 60 秒生成一次，用于监督 long memory
-```
-
-因此，short memory 的**更新频率**是每 1 秒一次；short memory 的**local summary 监督频率**可以比 long memory 更密，例如每 10 秒一次。Long memory 仍然每 60 秒递归更新一次。
+每个完整分钟边界 `T` 独立生成八条教师标注记录：`[T-60,T-50)`、`[T-50,T-40)`、`[T-40,T-30)`、`[T-30,T-20)`、`[T-20,T-10)`、`[T-10,T)` 六条 local，`[T-60,T)` 一条 block，以及 `[0,T)` 一条 global。`T=60` 时后两条的窗口都为 `0-60`，但类型和监督职责不同；`T=120` 时分别为 `60-120` 和 `0-120`。数据构建脚本核验八条记录后，将其合并成一个训练 block。10 秒边界只产生监督，不清空 short memory；60 秒时先完成 block 重建与 long-memory 更新，再清空当前 block 的 short memory。
 
 ---
 
-## 3.2.3 Local Summary
+## 3.2.3 Local / Block Summary
 
-VLM 标注器只观察当前 60 秒：
-
-```text
-Y_k^{local}
-=
-VLMAnnotator(V[T_{k-1}:T_k])
-```
-
-它回答的问题是：
-
-> **这一分钟发生了什么？**
-
-摘要应重点覆盖：
+第 k 个 block 内，第 j 个 10 秒区间（`j = 1,...,6`）的标签：
 
 ```text
-anatomy / organ
-scan view
-probe movement / acquisition action
-visible finding
-measurement
-temporal change
-clinically relevant visual evidence
+Y_local[k,j] = VLMAnnotator(V[T_{k-1}+10(j-1):T_{k-1}+10j])
 ```
 
-示例：
+整分钟标签：
 
 ```text
-探头被放置在右上腹区域。画面中可见肝脏和右肾，
-并对肝肾隐窝进行了扫查。本时间段内未见明显游离液体。
+Y_block[k] = VLMAnnotator(V[T_{k-1}:T_k])
 ```
+
+两类标签分别描述“这 10 秒发生了什么”和“这 60 秒发生了什么”，重点包括可见结构、扫描切面、扫查动作、可见征象、测量及时间变化。
+
+Block summary 是当前整分钟的视觉总结，不是从视频开头开始的累计总结，也不要求简单拼接六条 local summaries。两类标签都必须仅依据各自时间范围内的视觉证据。
 
 ---
 
 ## 3.2.4 Global / Cumulative Summary
 
-VLM 标注器输入从视频开头到当前时刻的全部视频：
+Global 标签的**目标范围**是从视频开头到当前时刻，不是只总结当前 60 秒：
 
 ```text
 Y_k^{global}
 =
 VLMAnnotator(V[0:T_k])
 ```
+
+上式表示期望覆盖的时间范围。当前 `stage2.annotate` 将相应时间窗裁成静音视频片段，直接作为教师输入：六个 10 秒片段、一个当前 60 秒片段，以及一个 `[0,T_k)` 累计片段。标注器不自行均匀抽取固定数量的图像帧；教师服务仍会按自身策略解码和采样视频，因此不能推断教师实际观察了每一帧。正式构建数据前，应审核短暂征象是否被遗漏，并检查长累计片段是否超出服务的大小、时长或上下文限制。
 
 它回答的问题是：
 
@@ -646,7 +606,7 @@ Short memory 主要回答：
 ```text
 上一轮 long memory L_{k-1}
 + 当前 60 个 short-memory tokens S_k
-+ 60 个 learnable <LONG_MEM> query tokens
++ 60 个重复的 <LONG_MEM> query 位置（共享 token embedding）
 ```
 
 最终 60 个 `<LONG_MEM>` 位置的 hidden states 定义为：
@@ -745,111 +705,95 @@ L_{k-1}
 
 # 3.5 Memory Reconstruction Supervision
 
-## 3.5.1 Short-Memory Reconstruction
+## 3.5.1 Short-Memory Reconstruction：10 秒与 60 秒双尺度监督
 
-当前一分钟的 60 个 short-memory tokens：
+令 `S_k` 为当前 block 的 60 个 short tokens，`S_{k,j}` 为其中第 j 个 10 秒区间对应的 10 个 tokens。
 
-```text
-S_k
-```
-
-需要重建 VLM 标注器为当前一分钟生成的 local summary label：
+每 10 秒的局部重建：
 
 ```text
-Y_hat_local_k = DecodeShort(S_k)
+Y_hat_local[k,j] = DecodeShort(S_{k,j})
+L_short[k,j] = CE(Y_hat_local[k,j], Y_local[k,j])
 ```
 
-Target：
+每 60 秒的整段重建：
 
 ```text
-Y_k^{local}
-=
-VLMAnnotator(V[T_{k-1}:T_k])
+Y_hat_block[k] = DecodeShort(S_k)
+L_local[k] = CE(Y_hat_block[k], Y_block[k])
 ```
 
-Loss：
+Local 解码只能使用对应 10 秒的 tokens，不能读取后续 short tokens、整分钟记忆或 global label。Block 解码直接使用当前 60 个 short tokens，而不是更新后的 long memory。
 
-```text
-L_short = CE(Y_hat_local_k, Y_local_k)
-```
-
-即：
-
-```text
-当前 60 秒视频
-      ↓
-60 个 short-memory tokens
-      ↓
-当前一分钟的视觉摘要
-```
+这两种监督分别训练 short memory 保留局部细节和支持整分钟信息整合。
 
 ---
 
-## 3.5.2 Long-Memory Reconstruction
+## 3.5.2 Long-Memory Update 与 Global Reconstruction
 
-递归更新得到的：
-
-```text
-L_k
-```
-
-需要重建从视频开始到当前时刻的累计视觉摘要：
+在同一个 60 秒边界，使用当前 short memory 和上一轮 long memory 更新：
 
 ```text
-Y_hat_global_k = DecodeLong(L_k)
+L_k = Compress(L_{k-1}, S_k)
 ```
 
-Target：
+`L_k` 固定为 60 个 tokens，全量替换 `L_{k-1}`。第一次更新时，上一轮 long memory 为空。
+
+随后仅由更新后的 long memory 重建累计摘要：
 
 ```text
-Y_k^{global}
-=
-VLMAnnotator(V[0:T_k])
+Y_hat_global[k] = DecodeLong(L_k)
+L_global[k] = CE(Y_hat_global[k], Y_global[k])
 ```
 
-Loss：
-
-```text
-L_long = CE(Y_hat_global_k, Y_global_k)
-```
-
-即：
-
-```text
-从视频开始到当前时刻的全部历史视觉证据
-                    ↓
-         递归压缩后的 60 long tokens
-                    ↓
-          cumulative visual summary
-```
+Global target 描述 `V[0:T_k]`。Block 摘要重建与 long-memory 更新共享同一组 `S_k`；生成出的摘要文本不会作为 long-memory 更新的输入。
 
 ---
 
-## 3.5.3 Stage 2 总 Loss
+## 3.5.3 损失命名与更新时机
 
-最终：
+第一版固定三个权重为 `1:1:1`，损失名称统一为：
+
+- `L_short`：当前 10 秒摘要，由对应 10 个 short tokens 重建。
+- `L_local`：当前完整 60 秒摘要，由对应 60 个 short tokens 重建。
+- `L_global`：视频开始至当前的累计摘要，由更新后的 long memory 重建。
+
+每项 CE 对有效目标 tokens 取平均。每次监督后立即更新参数：
+
+| 分钟内时刻 | 本次损失 | optimizer step |
+|---|---|---|
+| 10、20、30、40、50 秒 | 当前区间的 `L_short` | 每次各更新一次 |
+| 60 秒 | `L_short[50:60] + L_local[0:60] + L_global[begin:current]` | 三项求和后更新一次 |
+
+这里不是六个 local loss 平均后每分钟更新一次。每分钟共六次参数更新；三项权重均为 1，但 short 监督出现频率更高。
+
+## 3.5.4 状态保留与梯度截断
+
+每次 optimizer step 后，已经生成的 short states 保留数值并 detach，不重算：
 
 ```text
-L_stage2 = lambda_short * L_short + lambda_long * L_long
+10 秒：生成 s_0...s_9 → L_short → backward + step → detach 并保留
+20 秒：生成 s_10...s_19 → L_short → backward + step → detach 并保留
+...
+60 秒：前 50 秒已 detach 的 states + 最后 10 秒的新 states
+       → L_short + L_local + L_global → backward + step
+       → detach 新 long memory，清空当前 short memory
 ```
 
-初始建议：
+长期状态仍包含此前递归传递的信息：`L_k = Compress(detach(L_{k-1}), S_k)`。只保留最新 long memory，不同时输入 L_{k-2} 等历史快照。
 
-```text
-lambda_short = 1.0
-lambda_long  = 1.0
-```
+分钟末损失可以训练当前压缩器、解码器和最后 10 秒的 short 编码过程，但不能回传到前 50 秒或上一分钟的编码计算。旧状态由更新前参数生成，不重算；这是第一版明确采用的近似。
 
-这套 VLM-generated summary label 数据构建方式 **完全替代旧版 ASR reconstruction 主路线**：
+同一视频按时间顺序处理，不打乱 blocks。切换视频或开始新 epoch 时清空 memory。梯度不跨分钟，并且在每个 10 秒更新点截断既有 short states。
 
-```text
-current ASR reconstruction
-previous ASR reconstruction
-accumulated ASR reconstruction
-ASR concat + tail truncation
-```
+## 3.5.5 模型与记忆表示
 
-Stage 2 不再依赖 ASR。
+- 模型输入 FPS 固定为 1：每秒区间结束时取一帧，生成一个 short token。不能在区间结束之前使用该状态。
+- Short 编码、long 压缩、摘要解码共用一个底座和一套 Stage 2 LoRA。特殊 token embedding 与输出层随 checkpoint 保存。
+- Memory 是连续 hidden-state 向量；60 个 tokens 对应 `[batch, 60, hidden_dim]`，不是 60 个词。
+- 将 memory 向量替换到下次输入的占位 token embedding，第一版不另加投影层。
+- Long 更新输入依次包含旧 long、当前 short、60 个重复的 `<LONG_MEM>` 查询位置；取最后 60 个位置的 hidden states 作为新 long。查询共享 token embedding，由位置区分，不是 60 个独立可学习向量。
+- 摘要文本仅用于监督，不作为后续 memory 更新的输入。Stage 2 不使用 ASR。
 
 ---
 
@@ -866,7 +810,8 @@ Stage 2 不再依赖 ASR。
 Target：
 
 ```text
-VLM-generated local summary label
+VLM-generated 10-second local summaries
++ 60-second block summary
 ```
 
 ---
@@ -887,7 +832,7 @@ VLM-generated cumulative summary label
 
 ```text
 Short Memory
-    = recent fine-grained evidence
+    = recent fine-grained evidence + current-block integration
 
 Long Memory
     = compressed historical evidence
@@ -908,7 +853,7 @@ Long-summary compression 只在完整 60 秒 block 后发生：
 
 最后不足 60 秒时，不触发新的 long update。
 
-但是 short memory 仍然继续每秒产生。
+但是 short memory 仍然继续每秒产生。尾部完整的 10 秒区间继续进行 L_short 监督与参数更新；最后不足 10 秒不计算摘要损失。当前离线标注／训练入口只处理有完整 10 秒标签的区间，剩余秒数留给在线推理维护。
 
 例如 143 秒的视频：
 
@@ -959,23 +904,46 @@ Stage 3 学习两件事：
 
 ---
 
-# 4.2 输入
+# 4.2 输入与因果注意力
 
-在 streaming time `t`，输入：
-
-```text
-long memory L_t
-+ 当前还未压缩的 short memory S_t
-+ optional latest visual frames V_t
-+ question Q
-+ <DECISION>
-```
-
-取 `<DECISION>` 位置 hidden state：
+第一版采用 memory-only 输入。固定模板使记忆位于问题之前，便于不同问题复用同一前缀：
 
 ```text
-h_t^{dec}
+共享前缀                             每个问题的独立后缀
+[固定 system / 模板] [Long memory L_t] [Short memory S_t] [Question Q_i] [<DECISION>]
+                                                                  │
+                                             h_dec[i,t] → Linear → z[i,t]
 ```
+
+Long/Short 是连续 embedding，Question 和 `<DECISION>` 是文本／特殊 token embedding。模型采用因果注意力，因此 `<DECISION>` 可以读取当前全部记忆和完整问题，不能读取后续答案 tokens。Stage 2 构建的持久 memory 不依赖问题；Stage 3 问题相关的 hidden states 不写回持久 memory。当前原始帧留作后续 ablation。
+
+## 4.2.1 `<DECISION>` 的 BCE 与 WAIT/ANSWER 文本 NTP
+
+两种样本都训练可回答性判断，也都训练文本输出：
+
+```text
+y[i,t] = 0：当前视觉证据不足；目标文本 = <WAIT> + 当前缺少证据的具体原因
+y[i,t] = 1：当前视觉证据充分；目标文本 = <ANSWER> + 有视觉依据的答案
+
+L_decision = BCEWithLogitsLoss(z[i,t], y[i,t])
+L_text     = NTP(目标文本)
+L_stage3   = λ_decision · L_decision + λ_text · L_text
+```
+
+`<DECISION>` 是输入 readout token。目标文本位于它后面的 assistant 输出位置；NTP 监督输出的标记和原因／答案，固定前缀、记忆、问题、`<DECISION>` 与 assistant 模板均不计算文本损失。WAIT 原因只说明当前缺少什么证据，不泄漏未来画面或结论。因果注意力使决策位置看不到目标文本，因此 BCE 与 NTP 可以同一次前向计算。
+
+推理先由 logit 与验证集阈值选择 WAIT/ANSWER，再根据当前记忆生成相应文本。可固定已选的 `<WAIT>`／`<ANSWER>` 输出前缀，保证生成分支与决策头一致；WAIT 问题保持 active，待新证据到来后重新判断。初始设 `λ_decision = λ_text = 1`。
+
+## 4.2.2 多问题独立分支
+
+```text
+同一时刻的固定前缀 + L_t + S_t → 一次前缀前向 → 共享 memory KV
+                                                    ├── Q1 + <DECISION> → z1
+                                                    ├── Q2 + <DECISION> → z2
+                                                    └── Q3 + <DECISION> → z3
+```
+
+每个问题有独立的 `<DECISION>`、logit 和可选答案后缀，不串接不同问题。共享前缀在因果注意力下不依赖后续问题；实现可复制各问题后缀 cache 或使用只读前缀分支，不能让一个问题的后缀修改其他问题的 KV。第一版每个决策时刻重建一次共享前缀，新 short memory 或 long 更新后让旧 Question KV 失效；具体生命周期见 §5.6。
 
 ---
 
@@ -1053,55 +1021,30 @@ BCELoss
 
 ---
 
-# 4.5 Answer Generation
+# 4.5 WAIT Reason 与 Answer Generation
 
-对于：
-
-```text
-y_t = 1
-```
-
-即 ANSWER sample，同时训练答案生成：
+对于每个样本，NTP 目标取决于可回答性标签：
 
 ```text
-L_answer = CE(A_hat, A)
+y = 0 → <WAIT> + wait_reason
+y = 1 → <ANSWER> + answer
 ```
 
-对于：
+`wait_reason` 应说明当前缺少的具体视觉证据，不应包含未来才可见的具体结论。ANSWER 文本应由当前已经可见的证据支持。
 
-```text
-y_t = 0
-```
-
-即 WAIT sample：
-
-```text
-只训练 decision loss
-不训练 answer generation
-```
+输出文本由 `<DECISION>` 后的 assistant 分支进行 next-token prediction。只对输出标记和后续文本计算交叉熵；`<DECISION>` 自身只作为二分类 readout。两种样本都进行 BCE 和 NTP 训练。
 
 ---
 
 # 4.6 Stage 3 总 Loss
 
-最终：
-
 ```text
-L_stage3 = lambda_decision * L_decision + y_t * lambda_answer * L_answer
+L_stage3 = lambda_decision * L_decision + lambda_text * L_text
+L_text   = NTP(<WAIT> + wait_reason)  if y = 0
+         = NTP(<ANSWER> + answer)     if y = 1
 ```
 
-初始建议：
-
-```text
-lambda_decision = 1.0
-lambda_answer   = 1.0
-```
-
-Decision loss 和 answer generation loss 应分别监控。
-
-因为对于本项目来说：
-
-> **什么时候回答，本身就是核心研究目标。**
+第一版初始权重为 `lambda_decision = lambda_text = 1.0`。训练日志分别记录 decision loss、WAIT 文本损失和 ANSWER 文本损失，以检查判断与生成是否同步改善。
 
 ---
 
@@ -1298,6 +1241,48 @@ WAIT / ANSWER
 
 ---
 
+## 5.6 KV cache 生命周期（第一版）
+
+这是已确认的实现规格，当前 Stage 3 独立决策头与多问题 cache 调度尚待落地。
+
+区分两类状态：
+
+- **Memory embeddings**：持久 long/short 向量，保存视频信息。
+- **Stage 3 KV cache**：该记忆快照经问答模型前向计算后，各注意力层的 key/value，避免同一前缀重复计算。它不是 Stage 2 编码器内部 cache，也不能替代持久 memory。
+
+第一版在每个决策时刻重建一次共享前缀，不跨时刻增量维护：
+
+1. 接收已结束的一秒区间，完成 short 更新；若到达 60 秒边界，先更新 long 并清空 short。
+2. 固定该时刻的 `(L_t, S_t)` 快照以及模型、模板与位置配置。
+3. 对共享前缀执行一次 prefill，得到只读逻辑缓存。
+4. 每个 active question 从该前缀独立分支，重新计算自己的 Question 和 `<DECISION>`，得到 logit。
+5. WAIT 保持 active；新时刻有新证据时重新判断。旧 Question KV 不会自动获得新 memory 信息，必须失效。
+6. ANSWER 标记为正在回答，使用触发时快照和独立分支生成答案；不要重复触发。后续视频可继续更新持久 memory，但不得原地修改该回答快照。完成后移出 active questions 并释放其分支。
+
+| 事件 | 前缀 cache | Question／答案分支 |
+|---|---|---|
+| 同一 memory 状态下新增问题 | 复用已有前缀 | 创建独立分支 |
+| 新决策时刻、short 更新 | 重建一次供所有问题共享 | WAIT 问题重新计算 |
+| 60 秒边界 long 替换、short 清空 | 旧前缀失效并重建 | WAIT 分支失效；已触发答案保留自己的旧快照 |
+| 切换视频／重置会话 | 清空 | 清空 |
+| 权重、adapter、模板、位置配置变化 | 失效 | 对应分支失效 |
+
+Cache 复用限定于固定参数、eval 模式的推理；不用于跨 optimizer step 复用训练计算图。评估延迟需包含前缀 prefill、各问题决策和生成的实际成本；问题分支 cache 的额外显存也应计入。
+
+## 5.7 后续增量 cache 优化与验证
+
+只有当旧 Long + Short 前缀完全不变、新 short token 真正追加在末尾，且 position IDs、mask、模板分隔符与模型设置保持兼容时，才可以增量追加 memory KV。若模板在 memory 后带有结束标记，也不能简单在标记之后插入新 short token而保持输入等价。第一版统一重建，不使用该优化。
+
+验收至少包括：
+
+- 同一输入的完整前向与缓存分支 logits 在指定数值容差内一致。
+- 改变问题处理顺序，不改变各问题结果。
+- 一个问题的生成不修改其他问题的前缀／后缀。
+- 新证据到来后 WAIT 问题使用新 memory，不能沿用旧问题 KV。
+- 60 秒边界及视频切换不会残留旧前缀。
+
+---
+
 # 6. Evaluation
 
 ## 6.1 Stage 1 Evaluation
@@ -1315,7 +1300,7 @@ blind VLM / LLM judge
 
 但更重要的是验证：
 
-> 生成的 narration 是否真正由对应时间段内的超声视觉信息支持。
+> 在未见视频上，正常视频输入是否优于打乱视频输入；这有助于区分视觉利用与领域语言先验。
 
 ---
 
@@ -1326,12 +1311,13 @@ blind VLM / LLM judge
 评估：
 
 ```text
-S_k → local VLM-generated summary label
+S_{k,j} → 对应 10 秒的 local summary
+S_k → 当前 60 秒的 block summary
 ```
 
 核心问题：
 
-> Short memory 是否保留了最近一分钟内的重要视觉信息？
+> Short memory 是否既保留每个 10 秒区间的细节，又能支持整分钟的信息整合？
 
 ---
 
@@ -1494,7 +1480,7 @@ vs.
 
 ```text
 Stage 1:
-    video → ASR supervision
+    video + earlier ASR / masked earlier ASR → target-sentence supervision
 
 Stage 2:
     video only
@@ -1598,33 +1584,9 @@ L_t
 
 ## 8.1 VLM 摘要标注成本
 
-对于每一分钟都重新执行：
+当前入口每个完整分钟调用教师八次：六个 10 秒 local、一个当前 60 秒 block、一个从视频开始到当前分钟末的 global。标注器向教师发送静音视频片段。对于 `K` 分钟视频，调用次数约为 `8K`；global 视频片段的累计时长为 `60×(1+2+...+K)` 秒，随 `K` 近似二次增长。实际视觉 token 数还取决于教师服务的视频解码、采样和上下文限制，不能等同于原视频全部帧数。长累计片段可能超过接口限制，需在制数前实测并记录失败情况。
 
-```text
-VLMAnnotator(V[0:T])
-```
-
-会不断重复处理历史视频。
-
-一个 `K` 分钟的视频，总输入规模近似：
-
-```text
-1 + 2 + ... + K = O(K^2)
-```
-
-例如：
-
-```text
-10 分钟：
-1+2+...+10 = 55 分钟等价视频输入
-
-20 分钟：
-1+2+...+20 = 210 分钟等价视频输入
-```
-
-作为第一版高质量 baseline 是可以接受的，但大规模数据时成本会较高。
-
-后续可尝试：
+另一种研究用的 rolling 标注方式是：
 
 ```text
 Y_k^{global}
@@ -1635,13 +1597,7 @@ V_k
 )
 ```
 
-即 rolling VLM summary label generation。
-
-但 rolling summary 会存在 VLM annotation error accumulation，因此第一版仍建议优先使用：
-
-```text
-raw video[0:T] → VLM-generated global summary label
-```
+即用上一次 global 摘要和当前分钟更新标签。它可减少历史画面重复输入，但会累积标注错误；新 `stage2.annotate` 尚未实现这种模式。当前第一版直接输入累计视频片段，应审核视觉证据覆盖率并评估长视频的标注成本与服务限制。
 
 ---
 
@@ -1821,4 +1777,4 @@ vs.
 
 # 11. 一句话总结
 
-> 整个系统首先通过“超声视频 → ASR narration”进行 Stage 1 视觉-语言知识注入；随后在 Stage 2 中完全脱离 ASR，每秒把当前超声画面压缩成一个 short-memory token，每 60 秒再将上一轮 60 个 long-memory tokens 与当前 60 个 short-memory tokens 递归压缩成新的 60 个 long-memory tokens，并使用离线 VLM 标注器为当前一分钟生成 local summary label、为 0→T 历史视频生成 cumulative summary label，构建 Stage 2 的 summary-compression 训练数据，使 short / long memory 学会保留关键视觉证据；最后在 Stage 3 中，通过单个 `<DECISION>` hidden state 和 `BCEWithLogitsLoss` 估计当前问题的可回答概率，证据不足时 WAIT，证据充分时才生成最终答案。
+> 整个系统首先通过三组视频／历史 ASR 保留与遮蔽条件预测同一讲解句子，进行 Stage 1 视觉-语言知识注入与视觉依赖对照；随后在 Stage 2 中完全脱离 ASR，每秒把当前超声画面压缩成一个 short-memory token，每 60 秒再将上一轮 60 个 long-memory tokens 与当前 60 个 short-memory tokens 递归压缩成新的 60 个 long-memory tokens，并使用离线 VLM 标注器为每 10 秒生成 local summary label、为当前一分钟生成 block summary label、为 0→T 历史视频生成 global summary label，构建 Stage 2 的 summary-compression 训练数据，使 short / long memory 学会保留关键视觉证据；最后在 Stage 3 中，通过单个 `<DECISION>` hidden state 和 `BCEWithLogitsLoss` 估计当前问题的可回答概率，证据不足时 WAIT，证据充分时才生成最终答案。

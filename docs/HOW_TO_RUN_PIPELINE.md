@@ -6,6 +6,62 @@
 
 ---
 
+## Stage 2: chronological 1-FPS implementation
+
+The default trainer now consumes complete chronological teacher block rows, not
+shuffled short/long examples. It uses shared Qwen + LoRA, one frame/second,
+60 long tokens, and detached state carry. Every ten seconds it performs one
+optimizer update; at minute boundaries it sums short (10s), local (60s), and
+global (prefix) losses with weights 1:1:1. Old short states are not recomputed.
+
+Generate labels with independent 10-second, 60-second, and prefix targets:
+
+```bash
+python -m stage2.annotate \
+  --video /path/to/VIDEO_ID.mp4 \
+  --video-id VIDEO_ID --model google/gemini-3.1-pro-preview \
+  --base-url https://openrouter.ai/api/v1 \
+  --api-key-env OPENROUTER_API_KEY \
+  --output results/teacher_visual_summaries/VIDEO_ID_streaming_labels.jsonl
+
+python -m stage2.build_data \
+  --teacher-jsonl results/teacher_visual_summaries/VIDEO_ID_streaming_labels.jsonl \
+  --output results/teacher_visual_summaries/VIDEO_ID_streaming_blocks.jsonl
+
+python -m stage2.train \
+  --train-jsonl results/teacher_visual_summaries/VIDEO_ID_streaming_blocks.jsonl \
+  --video-path-map /path/to/video_path_map.json \
+  --output-dir /path/to/stage2_output \
+  --frame-size 224 --epochs 1 --learning-rate 1e-4
+
+python -m stage2.stream --video /path/to/VIDEO_ID.mp4 \
+  --adapter-path /path/to/stage2_output/final \
+  --output /path/to/memory_state.pt
+```
+
+Rows require `video_id`, `block_window`, six `local_sub_summaries` (each with
+`window` and `local_summary_target`), independent `block_summary_target`, and
+`global_summary_target`. Final incomplete blocks may contain fewer complete
+10-second windows; these train only short losses. Less than ten remaining seconds
+are excluded from offline supervision. Gaps, duplicates, and missing labels fail
+validation. Generate a new label file for old concatenated-summary artifacts.
+`stage2.annotate` sends silent 10-second, 60-second, and cumulative `[0,T)`
+video clips directly. It does not select a fixed number of image frames; the
+teacher backend still samples video internally. Review labels for missed brief
+findings and check provider limits as global clips grow. FPS=1 specifies the
+student model input separately.
+The teacher annotation JSONL has eight separate records per full minute `T`:
+six ten-second intervals within `[T-60,T)`, one block summary for `[T-60,T)`,
+and one cumulative summary for `[0,T)`. `stage2.build_data` merges these into
+the block rows described above.
+
+An optional `--init-adapter` initializes Stage 2 from Stage 1. Pass the new
+Stage 2 `final` adapter to `stage2.stream`. Per-update component losses are
+saved in `training_metrics.jsonl`. The older `pretrain/` examples below remain
+historical references and use different command-line options.
+
+---
+
 ## 1. VLM Video Classification
 
 ### Qwen3.5 teacher labeling
@@ -98,31 +154,62 @@ sbatch \
 
 ## 3. Stage 1 Domain Pretraining
 
-Build Stage 1 samples:
+On the cluster, retain the original train/eval split and select only videos
+marked `keep_for_pretrain` by the Qwen3.5 audit. Inspect and retry the six
+reported error rows before treating the selected count as final. The overall
+234-video count includes both splits and is not the train-set size.
+
+Build filtered maps and paired Stage 1 samples:
 
 ```bash
-python pretrain/build_samples.py \
-  --transcripts results/transcripts \
-  --output pretrain/data/pretrain_samples.jsonl \
-  --unit sentence \
-  --window-sec 8
+for split in train_full295 eval_full295; do
+  python scripts/data/filter_by_vlm_video_type.py \
+    --video-map cluster_data/splits/${split}_asr_keep_videos.json \
+    --vlm-audit cluster_data/splits/${split}_qwen35_video_type.jsonl \
+    --stage pretrain \
+    --output-keep-map cluster_data/splits/${split}_qwen35_pretrain_keep_videos.json \
+    --output-drop-map cluster_data/splits/${split}_qwen35_pretrain_drop_videos.json \
+    --output-summary cluster_data/splits/${split}_qwen35_pretrain_filter_summary.json
+
+  python -m stage1.data \
+    --transcripts cluster_data/QA/${split}/transcripts \
+    --video-map cluster_data/splits/${split}_qwen35_pretrain_keep_videos.json \
+    --output cluster_data/pretrain/${split}_stage1_samples.jsonl
+done
 ```
+
+The builder stops if a selected transcript is missing or its `video_id`
+disagrees with its filename. It reports selected videos, videos yielding no
+complete sentence, paired sentences, and rows. Each sentence yields three
+rows. Review a sample of interpolated sentence timestamps before training.
+If the raw Qwen audit includes uncertain or error rows with a keep flag,
+inspect those decisions explicitly; do not infer membership from the aggregate
+237/234 counts.
 
 Train Stage 1:
 
 ```bash
-python pretrain/train.py \
+python -m stage1.train \
   --model-name Qwen/Qwen3-VL-2B-Instruct \
-  --train-jsonl pretrain/data/pretrain_samples.jsonl \
-  --video-path-map pretrain/data/video_path_map.json \
-  --output-dir /mnt/cache/qwenFT/qwen3vl_stage1_pretrain \
-  --window-size 4 \
+  --train-jsonl cluster_data/pretrain/train_full295_stage1_samples.jsonl \
+  --video-path-map cluster_data/splits/train_full295_qwen35_pretrain_keep_videos.json \
+  --output-dir /path/to/stage1_output \
+  --frame-budget 120 \
   --frame-size 224 \
-  --num-train-epochs 3 \
-  --per-device-train-batch-size 1 \
+  --epochs 3 \
   --gradient-accumulation-steps 8 \
   --learning-rate 1e-4
 ```
+
+Keep `eval_full295_stage1_samples.jsonl` for separate final evaluation; the
+trainer only uses the train split and holds out whole train videos for its
+validation set. The Stage 1 builder creates three paired views per sentence: `0→start`
+with earlier ASR, `0→end` with earlier ASR, and `0→start` with earlier ASR
+masked. The trainer holds out whole videos and writes `validation_samples.jsonl`.
+`--frame-budget 120` caps the number of frames across each full selected
+interval; intervals longer than 120 seconds are uniformly subsampled.
+Compare normal, blank, and shuffled video with `stage1.evaluate
+--visual-control normal|blank|shuffled` in separate runs.
 
 ---
 
@@ -163,6 +250,7 @@ results/teacher_visual_summaries/8V649L5Q368_teacher_memory_samples_gemini31pro_
 
 ```bash
 python pretrain/build_teacher_memory_summary_samples.py \
+  --format legacy \
   --summaries-jsonl results/teacher_visual_summaries/VIDEO_ID_teacher_visual_summaries_gemini31pro_muted_local10s.jsonl \
   --output results/teacher_visual_summaries/VIDEO_ID_teacher_memory_samples_gemini31pro_muted_local10s.jsonl
 ```
@@ -192,6 +280,7 @@ Train:
 
 ```bash
 python pretrain/train_memory_compression.py \
+  --training-mode legacy \
   --model-name Qwen/Qwen3-VL-2B-Instruct \
   --train-jsonl pretrain/data/memory_compression_samples.jsonl \
   --video-path-map pretrain/data/video_path_map.json \
@@ -208,6 +297,7 @@ Infer:
 
 ```bash
 python pretrain/infer_memory_compression.py \
+  --inference-mode legacy \
   --model-name Qwen/Qwen3-VL-2B-Instruct \
   --adapter-path /mnt/cache/qwenFT/qwen3vl_memory_compression \
   --eval-jsonl pretrain/data/memory_compression_samples.jsonl \
