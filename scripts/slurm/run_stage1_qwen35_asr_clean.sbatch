@@ -27,7 +27,11 @@ AUDIT_OUTPUT=${AUDIT_OUTPUT:-$DATA/cluster_data/QA/${SPLIT}/stage1_qwen35_clean_
 SAMPLES_OUTPUT=${SAMPLES_OUTPUT:-$DATA/cluster_data/pretrain/${SPLIT}_stage1_qwen35_clean_samples.jsonl}
 
 cd "$REPO"
-source ~/.bashrc || true
+if [[ -f /dss/dsshome1/04/ge75vid2/miniconda3/etc/profile.d/conda.sh ]]; then
+  source /dss/dsshome1/04/ge75vid2/miniconda3/etc/profile.d/conda.sh
+else
+  source "$HOME/miniconda3/etc/profile.d/conda.sh"
+fi
 conda activate ultrasound
 
 export VLLM_API_KEY=${VLLM_API_KEY:-EMPTY}

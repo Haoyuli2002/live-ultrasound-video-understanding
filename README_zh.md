@@ -12,7 +12,7 @@
 
 | 模块 | 目标设计 | 当前实现 |
 |---|---|---|
-| 数据准备 | 获取视频、ASR 转写与裁剪 | 已有爬虫、ASR、视频裁剪和基于 ASR 的筛选脚本 |
+| 数据准备 | 获取视频、ASR 转写、文本清洗与裁剪 | 已有爬虫、ASR、视频裁剪与筛选，以及 Qwen3.5-27B 逐段 ASR 清洗脚本 |
 | VLM 打标 | 视频分类、解剖部位与临床场景标注，按训练阶段筛选 | 已有 Qwen3.5 主教师、可选 Gemini 交叉校验、标签合并，以及 pretrain/compression/sft 保留标记筛选 |
 | Stage 1：领域预训练 | `0→start`、`0→end` 与历史 ASR 遮蔽三组配对输入 → 同一完整讲解句子 | 新建独立 `stage1/` 样本、LoRA 训练和视觉对照评估代码；GPU 实跑待验证 |
 | VLM 数据生成：local/block/global summary | 每个完整分钟生成六条 10 秒、一条整分钟和一条累计视觉摘要，为 Stage 2 提供监督 | 新 `stage2.annotate` 与 `stage2.build_data` 已实现八条标注及转换；符合新规格的数据尚未实际生成和审核，旧分钟级标注不可直接使用 |
@@ -48,6 +48,12 @@ ASR 用于数据准备和 Stage 1 的训练目标；在 Stage 1 的两组条件�
 合并脚本根据教师一致性和置信度差异选择最终标签，并输出 `needs_human_review` 等审核信息；随后按最终类别重新计算保留标记。原始教师可将 uncertain 保留用于预训练审核、也可为部分 mixed 视频给出其他标记，但合并后的策略以上表为准。教师一致不等于专家验证，筛选脚本也不会自动完成 mixed 视频裁剪。
 
 ### Stage 1：超声领域知识注入
+
+**构建样本前的 ASR 清洗。** 这是用大模型清理与轻度润色 Whisper 文本的数据预处理步骤，独立于 VLM 视频打标和 Stage 2 的教师摘要监督。`stage1.clean_asr` 读取带时间戳的 Whisper transcript JSON 和预训练 keep-map，通过本地 vLLM 调用 `Qwen/Qwen3.5-27B`。每次默认处理 8 个 segment，前后各 2 个相邻 segment 的文本作上下文。模型收到 segment 的编号、起止时间和 ASR 文本；**不输入原视频或音频**。大模型逐段返回补标点、规范大小写及空格的 `clean_text`，如修正超声术语，还须列出 `from`／`to`／`reason`。脚本保留原分段和时间戳，拒绝缺失或乱序分段、未声明的词语改动和大幅改写；已有标点的 ASR 也会处理。
+
+每个入选视频输出一份新的 transcript JSON：`segments` 和 `full_text` 保存清洗文本，`raw_segments` 和原文件中存在时的 `raw_full_text` 保存原文；`asr_cleaning.term_corrections` 与独立的 JSONL audit 记录术语修改。原 transcript 不会被覆盖。随后 `stage1.data` 从清洗后的 `segments` 推算句子及其时间，输出三条件 Stage 1 样本 JSONL。清洗模型只见文本，术语修正和段内时间估计需要抽样对照音频核验。详见 [Stage 1 数据流程](stage1/README.md)和[集群运行命令](docs/HOW_TO_RUN_PIPELINE.md)。
+
+当前 train split 先只清洗原本无法生成样本的 7 个视频，再与已有 186 个视频的样本合并。合并脚本会核对是否完整覆盖筛选后的 193 个视频；Stage 1 训练另行提交 GPU 作业。
 
 新 `stage1/` 为每句 `[start,end]` 构建三组配对样本：视频 `0→start` 加历史 ASR、视频 `0→end` 加历史 ASR，以及视频 `0→start` 且遮蔽历史 ASR。三组预测同一句完整讲解；目标句及之后的 ASR 不进入输入。每组在各自时间范围内最多取 120 帧。训练只对目标句计算损失，并按视频划分验证集；正常、黑屏和跨视频打乱画面用于视觉依赖性对照。详见 [stage1/README.md](stage1/README.md)；原 `pretrain/` 实验代码保留。
 
@@ -239,9 +245,19 @@ python QA/run.py \
 
 ### 2. 构建 Stage 1 样本并训练
 
+先启动服务 `Qwen/Qwen3.5-27B` 的本地 vLLM endpoint 并设置 `VLLM_API_KEY`；也可用会自行启动服务、逐个 split 构建样本的 [Slurm 脚本](scripts/slurm/run_stage1_qwen35_asr_clean.sbatch)。
+
 ```bash
-python -m stage1.data \
+python -m stage1.clean_asr \
   --transcripts results/transcripts \
+  --video-map /path/to/pretrain_keep_videos.json \
+  --output-dir results/transcripts_stage1_qwen35_clean \
+  --audit-output results/stage1_qwen35_clean_audit.jsonl \
+  --resume
+
+python -m stage1.data \
+  --transcripts results/transcripts_stage1_qwen35_clean \
+  --video-map /path/to/pretrain_keep_videos.json \
   --output stage1/samples.jsonl
 
 python -m stage1.train \

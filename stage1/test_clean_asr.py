@@ -4,7 +4,7 @@ from .clean_asr import clean_transcript, parse_response, validate_batch
 from .data import build_rows
 
 
-class FakeTeacher:
+class FakeCleaner:
     model = "Qwen/Qwen3.5-27B"
 
     def clean(self, segments, indices, context):
@@ -24,16 +24,18 @@ class FakeTeacher:
 
 class CleanASRTests(unittest.TestCase):
     def test_cleaned_segments_preserve_raw_times_and_build_stage1(self):
-        raw = {"video_id": "demo", "segments": [
+        raw = {"video_id": "demo", "full_text": "the plural line is visible", "segments": [
             {"start": 0, "end": 2, "text": "the plural line is visible"},
             {"start": 2, "end": 4, "text": "check for lung sliding"},
             {"start": 4, "end": 6, "text": "check for lung sliding"},
         ], "sentence_units": [{"text": "stale", "start": 0, "end": 2}]}
-        result, audit = clean_transcript(raw, FakeTeacher(), batch_segments=2)
+        result, audit = clean_transcript(raw, FakeCleaner(), batch_segments=2)
         self.assertEqual(result["raw_segments"], raw["segments"])
         self.assertEqual([s["start"] for s in result["segments"]], [0, 2, 4])
         self.assertEqual([s["end"] for s in result["segments"]], [2, 4, 6])
         self.assertEqual(result["segments"][0]["text"], "The pleural line is visible.")
+        self.assertEqual(result["raw_full_text"], raw["full_text"])
+        self.assertTrue(result["full_text"].startswith("The pleural line is visible."))
         self.assertNotIn("sentence_units", result)
         self.assertEqual(audit["term_correction_count"], 1)
         self.assertEqual(len(build_rows(result)), 6)

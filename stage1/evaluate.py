@@ -23,6 +23,9 @@ def main():
     parser.add_argument("--visual-control", choices=["normal", "blank", "shuffled"], default="normal")
     parser.add_argument("--frame-budget", type=int, default=120)
     parser.add_argument("--frame-size", type=int, default=224)
+    parser.add_argument("--frame-sampling", choices=("uniform", "recent_sparse"),
+                        default="uniform")
+    parser.add_argument("--recent-seconds", type=float, default=120.0)
     parser.add_argument("--max-asr-chars", type=int, default=4000)
     parser.add_argument("--max-new-tokens", type=int, default=128)
     args = parser.parse_args()
@@ -53,7 +56,9 @@ def main():
         for row in rows:
             source_id = next_video[row["video_id"]] if args.visual_control == "shuffled" else row["video_id"]
             frames = sample_frames(paths[source_id], row["video_window"],
-                                   args.frame_budget, args.frame_size)
+                                   args.frame_budget, args.frame_size,
+                                   sampling=args.frame_sampling,
+                                   recent_seconds=args.recent_seconds)
             if args.visual_control == "blank":
                 frames = [Image.new("RGB", frame.size) for frame in frames]
             inputs = encode(processor, row, frames, max_asr_chars=args.max_asr_chars,

@@ -214,13 +214,21 @@ The endpoint must actually serve `Qwen/Qwen3.5-27B`; the older video-type
 labeling service may serve a different model. Set `VLLM_API_KEY` to the key
 expected by your local server. The cleaner processes every selected transcript,
 including already-punctuated ASR. It preserves the source text under
-`raw_segments`, keeps each segment's timestamps, and logs term edits in
-`asr_cleaning.term_corrections` and the JSONL audit. It rejects malformed or
-large rewrites. The model sees ASR text only, so terminology corrections are
-unverified hypotheses; review the audit and a sample of text/time boundaries
-before training. Sentence times are estimated within ASR segments, not forced
-word alignment. Use the new `*_qwen35_clean_samples.jsonl` path for training
-after that review.
+`raw_segments` and `raw_full_text` (when present), writes cleaned `segments`
+and `full_text`, keeps each segment's timestamps, and logs term edits in
+`asr_cleaning.term_corrections` and the JSONL audit. It sends batches of eight
+segments with two neighboring segments on either side as text-only context;
+video and audio are not sent. This is LLM-assisted data cleaning and light
+polishing, not teacher labeling. The model returns one `clean_text` and a
+`from`/`to`/`reason` correction list per segment. Missing/reordered segments,
+undeclared word changes, and large rewrites cause a validation error before a
+transcript is written. `stage1.data` then extracts complete sentences from
+cleaned segments and builds three paired rows per eligible target sentence.
+The model sees ASR text only, so terminology corrections are unverified
+hypotheses; review the audit and a sample of text/time boundaries before
+training. Sentence times are estimated within ASR segments, not forced word
+alignment. Use the new `*_qwen35_clean_samples.jsonl` path for training after
+that review.
 
 On LRZ, `scripts/slurm/run_stage1_qwen35_asr_clean.sbatch` starts its own
 Qwen3.5-27B vLLM server, cleans one split, and builds its Stage 1 JSONL.
@@ -236,14 +244,44 @@ sbatch --export=ALL,SPLIT=eval_full295 scripts/slurm/run_stage1_qwen35_asr_clean
 The script defaults to the same `REPO` and scratch `DATA` paths as the
 video-type labeling sbatch. Override them with `--export` if your checkout or
 data path differs. A rerun skips already-written cleaned transcripts and then
-rebuilds the sample JSONL; it does not call the teacher again for those videos.
+rebuilds the sample JSONL; it does not call the cleaner again for those videos.
+
+For the initial seven-video recovery, use the dedicated job instead of
+cleaning all 193 selected transcripts. It requires the existing
+`train_full295_stage1_samples.jsonl` baseline (186 videos), builds a map for
+the seven previously empty videos, cleans only those seven, and creates
+`train_full295_stage1_merged_193_samples.jsonl` after validating exact
+193-video coverage:
+
+```bash
+mkdir -p logs
+sbatch scripts/slurm/run_stage1_seven_video_pilot.sbatch
+```
+
+Inspect `logs/stage1_seven_asr_<jobid>.out`, the seven-video audit under
+`cluster_data/QA/train_full295/`, and the merge summary before training.
+The full Stage 1 GPU job has a separate launcher. A 20-step smoke test uses a
+different run name and a smaller frame budget; the full job then trains from
+the merged data with its own checkpoint directory:
+
+```bash
+sbatch --export=ALL,RUN_NAME=stage1_smoke,MAX_STEPS=20,FRAME_BUDGET=24,SAVE_STEPS=10 \
+  scripts/slurm/run_stage1_pretrain_merged.sbatch
+sbatch scripts/slurm/run_stage1_pretrain_merged.sbatch
+```
+
+The full launcher uses 120 frames and three epochs, saves checkpoints every
+50 optimizer steps, and passes `--resume`. Resubmit after a walltime limit
+to continue from the latest checkpoint. The launcher checks that the merged
+sample video IDs exactly match the 193-video pretrain keep-map; it does not
+include the separate eval split.
 
 Train Stage 1:
 
 ```bash
 python -m stage1.train \
   --model-name Qwen/Qwen3-VL-2B-Instruct \
-  --train-jsonl cluster_data/pretrain/train_full295_stage1_samples.jsonl \
+  --train-jsonl cluster_data/pretrain/train_full295_stage1_merged_193_samples.jsonl \
   --video-path-map cluster_data/splits/train_full295_qwen35_pretrain_keep_videos.json \
   --output-dir /path/to/stage1_output \
   --frame-budget 120 \

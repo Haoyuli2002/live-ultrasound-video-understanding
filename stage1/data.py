@@ -15,11 +15,13 @@ ABBREVIATIONS = {"dr", "mr", "mrs", "ms", "prof", "st", "vs", "etc"}
 
 
 def sentences(segments: list[dict], min_words: int = 3,
-              max_words: int = 80) -> list[dict]:
-    """Split complete ASR sentences and interpolate times within each segment.
+              max_words: int = 80, unpunctuated_fallback: str = "none") -> list[dict]:
+    """Split punctuated sentences; optionally use ASR segments if none exist.
 
     Interpolation is only a timing estimate; sample audits remain necessary.
     """
+    if unpunctuated_fallback not in {"none", "segment"}:
+        raise ValueError(f"Unknown unpunctuated fallback: {unpunctuated_fallback}")
     characters: list[tuple[str, float, float]] = []
     for segment in segments:
         text = re.sub(r"\s+", " ", str(segment.get("text", ""))).strip()
@@ -52,14 +54,44 @@ def sentences(segments: list[dict], min_words: int = 3,
                 first += 1
             if first <= i:
                 results.append({"text": text, "start": characters[first][1],
-                                "end": characters[i][2]})
+                                "end": characters[i][2],
+                                "unit_type": "punctuation_sentence"})
         beginning = i + 1
-    return results  # Unfinished transcript tail is deliberately omitted.
+    if results or unpunctuated_fallback == "none":
+        return results  # Unfinished transcript tail is deliberately omitted.
+    # Whisper segments are time-aligned utterances, not guaranteed sentences.
+    fallback = []
+    for segment in segments:
+        text = re.sub(r"\s+", " ", str(segment.get("text", ""))).strip()
+        if not text or re.fullmatch(r"\[(music|noise|applause|inaudible)\]", text, re.I):
+            continue
+        start, end = float(segment["start"]), float(segment["end"])
+        if end <= start or not min_words <= len(text.split()) <= max_words:
+            continue
+        fallback.append({"text": text, "start": start, "end": end,
+                         "unit_type": "asr_segment_fallback"})
+    return fallback
 
 
 def build_rows(transcript: dict, *, min_words: int = 3,
-               max_words: int = 80) -> list[dict]:
-    units = sentences(transcript.get("segments", []), min_words, max_words)
+               max_words: int = 80,
+               unpunctuated_fallback: str = "none") -> list[dict]:
+    if "sentence_units" in transcript:
+        units = []
+        previous_end = -1.0
+        for unit in transcript["sentence_units"]:
+            text = str(unit["text"]).strip()
+            start, end = float(unit["start"]), float(unit["end"])
+            if start < 0 or end <= start or start < previous_end:
+                raise ValueError("Precomputed sentence units are not chronological")
+            previous_end = end
+            if not min_words <= len(text.split()) <= max_words:
+                continue
+            units.append({"text": text, "start": start, "end": end,
+                          "unit_type": str(unit.get("unit_type") or "llm_punctuation_sentence")})
+    else:
+        units = sentences(transcript.get("segments", []), min_words, max_words,
+                          unpunctuated_fallback)
     rows = []
     for i in range(1, len(units)):
         target = units[i]
@@ -81,19 +113,52 @@ def build_rows(transcript: dict, *, min_words: int = 3,
                 "historical_asr": "" if condition == "before_mask_asr" else history,
                 "historical_asr_masked": condition == "before_mask_asr",
                 "target": target["text"],
+                "target_unit_type": target["unit_type"],
             })
     return rows
 
 
+def frame_timestamps(window: list[float], max_frames: int = 120, *,
+                     sampling: str = "uniform", recent_seconds: float = 120.0,
+                     recent_fraction: float = 0.8) -> list[float]:
+    """Choose causal frame times, with optional recent-dense/older-sparse coverage."""
+    start, end = map(float, window)
+    if start < 0 or end <= start or max_frames <= 0:
+        raise ValueError("Invalid causal video window or frame budget")
+    if sampling not in {"uniform", "recent_sparse"}:
+        raise ValueError(f"Unknown frame sampling strategy: {sampling}")
+    if recent_seconds <= 0 or not 0 < recent_fraction < 1:
+        raise ValueError("Expected positive recent_seconds and 0 < recent_fraction < 1")
+    number = min(max_frames, math.ceil(end-start))
+
+    def uniform_times(left: float, right: float, count: int) -> list[float]:
+        return [left + (i+0.5)*(right-left)/count for i in range(count)] if count else []
+
+    if sampling == "uniform" or end-start <= recent_seconds or number < 2:
+        return uniform_times(start, end, number)
+    recent_start = end - recent_seconds
+    recent_count = min(math.ceil(recent_seconds), max(1, round(number*recent_fraction)))
+    old_count = min(math.ceil(recent_start-start), number - recent_count)
+    recent_count = number - old_count
+    if recent_count > math.ceil(recent_seconds):
+        recent_count = math.ceil(recent_seconds)
+        old_count = number - recent_count
+    if old_count == 0:
+        return uniform_times(start, end, number)
+    return (uniform_times(start, recent_start, old_count)
+            + uniform_times(recent_start, end, recent_count))
+
+
 def sample_frames(video_path: str | Path, window: list[float],
-                  max_frames: int = 120, size: int = 224):
-    """At most 120 causal frames over [0, end); 1 FPS for integer <=120s spans."""
+                  max_frames: int = 120, size: int = 224, *,
+                  sampling: str = "uniform", recent_seconds: float = 120.0):
+    """Decode a causal frame budget; optionally favor the latest two minutes."""
     import cv2
     from PIL import Image
 
     start, end = map(float, window)
-    if start < 0 or end <= start or max_frames <= 0:
-        raise ValueError("Invalid causal video window or frame budget")
+    frame_timestamps(window, max_frames, sampling=sampling,
+                     recent_seconds=recent_seconds)
     cap = cv2.VideoCapture(str(video_path))
     if not cap.isOpened():
         raise FileNotFoundError(f"Cannot open video: {video_path}")
@@ -105,11 +170,11 @@ def sample_frames(video_path: str | Path, window: list[float],
         end = min(end, count / fps)
         if end <= start:
             raise ValueError("Window starts after video ends")
-        number = min(max_frames, math.ceil(end-start))
-        step = (end-start)/number
+        timestamps = frame_timestamps([start, end], max_frames,
+                                      sampling=sampling,
+                                      recent_seconds=recent_seconds)
         result = []
-        for i in range(number):
-            timestamp = start + (i+0.5)*step
+        for timestamp in timestamps:
             frame_index = min(count-1, int(math.floor(timestamp*fps)))
             cap.set(cv2.CAP_PROP_POS_FRAMES, frame_index)
             ok, frame = cap.read()
@@ -127,7 +192,8 @@ def sample_frames(video_path: str | Path, window: list[float],
 
 def build_dataset(transcripts_dir: Path, output: Path, *,
                   video_map: Path | None = None, min_words: int = 3,
-                  max_words: int = 80) -> dict:
+                  max_words: int = 80,
+                  unpunctuated_fallback: str = "none") -> dict:
     if min_words < 1 or max_words < min_words:
         raise ValueError("Expected 1 <= min_words <= max_words")
     if video_map is None:
@@ -149,6 +215,9 @@ def build_dataset(transcripts_dir: Path, output: Path, *,
     sample_count = 0
     videos_with_samples = 0
     empty_videos = []
+    fallback_videos = []
+    fallback_sample_count = 0
+    llm_punctuated_videos = []
     try:
         with tempfile.NamedTemporaryFile(mode="w", encoding="utf-8", dir=output.parent,
                                          prefix=f".{output.name}.", suffix=".tmp",
@@ -161,9 +230,16 @@ def build_dataset(transcripts_dir: Path, output: Path, *,
                 if transcript.get("video_id") and str(transcript["video_id"]) != path.stem:
                     raise ValueError(f"Transcript video_id differs from filename: {path}")
                 transcript["video_id"] = path.stem
-                rows = build_rows(transcript, min_words=min_words, max_words=max_words)
+                rows = build_rows(transcript, min_words=min_words,
+                                  max_words=max_words,
+                                  unpunctuated_fallback=unpunctuated_fallback)
                 if rows:
                     videos_with_samples += 1
+                    if rows[0]["target_unit_type"] == "asr_segment_fallback":
+                        fallback_videos.append(path.stem)
+                        fallback_sample_count += len(rows)
+                    elif rows[0]["target_unit_type"] == "llm_punctuation_sentence":
+                        llm_punctuated_videos.append(path.stem)
                 else:
                     empty_videos.append(path.stem)
                 for row in rows:
@@ -177,7 +253,12 @@ def build_dataset(transcripts_dir: Path, output: Path, *,
             temporary_path.unlink(missing_ok=True)
     return {"selected_videos": len(files), "videos_with_samples": videos_with_samples,
             "videos_without_samples": empty_videos, "samples": sample_count,
-            "paired_sentences": sample_count // len(CONDITIONS), "output": str(output)}
+            "paired_units": sample_count // len(CONDITIONS),
+            "paired_sentences": (sample_count - fallback_sample_count) // len(CONDITIONS),
+            "fallback_videos": fallback_videos,
+            "fallback_samples": fallback_sample_count,
+            "llm_punctuated_videos": llm_punctuated_videos,
+            "output": str(output)}
 
 
 def main():
@@ -188,10 +269,13 @@ def main():
                         help="Use only video IDs in this selected {video_id: video_path} map")
     parser.add_argument("--min-words", type=int, default=3)
     parser.add_argument("--max-words", type=int, default=80)
+    parser.add_argument("--unpunctuated-fallback", choices=("none", "segment"),
+                        default="none", help="Use timed ASR utterances only when no complete punctuated sentence exists")
     args = parser.parse_args()
     summary = build_dataset(Path(args.transcripts), Path(args.output),
                             video_map=args.video_map, min_words=args.min_words,
-                            max_words=args.max_words)
+                            max_words=args.max_words,
+                            unpunctuated_fallback=args.unpunctuated_fallback)
     print(json.dumps(summary, ensure_ascii=False))
 
 

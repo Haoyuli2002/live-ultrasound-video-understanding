@@ -6,6 +6,9 @@ import torch
 SYSTEM = ("You are an ultrasound teaching assistant. Use the provided ultrasound "
           "frames and any available earlier narration to predict the next complete "
           "narration sentence. Output only that sentence.")
+FALLBACK_SYSTEM = ("You are an ultrasound teaching assistant. Use the provided ultrasound "
+                   "frames and any available earlier narration to predict the next "
+                   "time-aligned narration utterance. Output only that utterance.")
 
 
 def messages(row: dict, frames: list, *, max_asr_chars: int = 4000,
@@ -16,8 +19,11 @@ def messages(row: dict, frames: list, *, max_asr_chars: int = 4000,
     else:
         history = row["historical_asr"][-max_asr_chars:] if max_asr_chars > 0 else row["historical_asr"]
         content.append({"type": "text", "text": f"Earlier narration: {history}"})
-    content.append({"type": "text", "text": "Predict the target complete narration sentence:"})
-    result = [{"role": "system", "content": SYSTEM},
+    fallback = row.get("target_unit_type") == "asr_segment_fallback"
+    instruction = ("Predict the target time-aligned narration utterance:" if fallback
+                   else "Predict the target complete narration sentence:")
+    content.append({"type": "text", "text": instruction})
+    result = [{"role": "system", "content": FALLBACK_SYSTEM if fallback else SYSTEM},
               {"role": "user", "content": content}]
     if target is not None:
         result.append({"role": "assistant", "content": target})

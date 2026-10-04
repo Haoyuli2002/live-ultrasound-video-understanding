@@ -167,6 +167,12 @@ ASR 在整个 pipeline 中承担三个作用：
 
 ASR **不会进入 Stage 2 memory learning，也不会进入 Stage 3 或 online inference**。
 
+### Stage 1 的 LLM 辅助 ASR 清洗与轻度润色
+
+当前实现使用 `stage1.clean_asr` 在构建 Stage 1 样本前处理 Whisper transcript。这是数据清理步骤，不是教师打标或知识蒸馏。输入为带 `start`、`end`、`text` 的 ASR segments、按视频 ID 选择样本的 pretrain keep-map，以及本地 vLLM 服务的 `Qwen/Qwen3.5-27B`。清洗模型**只读取 ASR 文本**；视频和音频不送入此步骤。默认每次提交连续 8 个 segments，附带前后各 2 个 segments 的文本作上下文。大模型需要按原编号逐段返回补标点、规范大小写及空格后的 `clean_text`，并为每个词语／术语修改提供 `from`、`to`、`reason`。
+
+脚本验证返回数量与顺序，要求词语变化能由修改记录逐项解释，拒绝大幅改写；保留原 segment 边界、时间戳和其他元数据。每个视频写出新的清洗后 transcript：`segments` 与 `full_text` 为清洗文本，`raw_segments` 及原文件存在时的 `raw_full_text` 保留原文，`asr_cleaning.term_corrections` 和独立 audit JSONL 记录术语修改。原始 transcript 不覆盖；有标点和无标点的输入均处理。之后 `stage1.data` 从清洗后的 segments 切分完整句子并构建三组 Stage 1 样本。句子时间是 ASR 段内字符插值估计，不是音频强制对齐。由于清洗模型只看文本，术语修正仍是待对照音频核验的候选改动，不应直接视为真实语音标注。
+
 ---
 
 ## 1.3 视频过滤

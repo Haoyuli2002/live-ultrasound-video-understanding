@@ -12,7 +12,7 @@ The [reference design](docs/live_ultrasound_reference_implementation_final_zh.md
 
 | Component | Intended design | Current implementation |
 |---|---|---|
-| Data preparation | Video collection, ASR transcription, and clipping | Crawler, ASR, video clipping, and ASR-based filtering scripts exist |
+| Data preparation | Video collection, ASR transcription, ASR text cleanup, and clipping | Crawler, ASR, video clipping, filtering, and Qwen3.5-27B segment-level ASR cleanup scripts exist |
 | VLM labeling | Classify videos, annotate anatomy and clinical scenarios, and filter by training stage | Qwen3.5 primary labeling, optional Gemini cross-validation, label merging, and pretrain/compression/sft keep-flag filtering exist |
 | Stage 1: domain pretraining | Paired `0→start`, `0→end`, and historical-ASR-mask views → one complete narration sentence | New independent `stage1/` data, LoRA training, and visual-control evaluation code; GPU run pending |
 | VLM data generation: local/block/global summaries | Generate six ten-second, one whole-minute, and one cumulative visual summary per full minute for Stage 2 | New `stage2.annotate` and `stage2.build_data` code exists; labels meeting the new eight-record specification have not yet been generated or reviewed, and old minute-level labels cannot be used directly |
@@ -48,6 +48,12 @@ Raw annotations also contain confidence, `anatomy_regions`, `clinical_scenarios`
 The merger uses agreement and confidence differences to select a final label and emits review metadata such as `needs_human_review`. It recomputes keep flags from the final class. Raw teacher labels may retain uncertain videos for pretraining audit or assign different flags to some mixed videos; the merged policy is the table above. Teacher agreement is not expert validation, and filtering does not perform clipping automatically.
 
 ### Stage 1: ultrasound domain pretraining
+
+**ASR cleanup before sample construction.** This is an LLM-assisted data-cleaning and light text-polishing step, separate from VLM labeling and Stage 2 teacher supervision. `stage1.clean_asr` takes timestamped Whisper transcript JSON files and a pretrain keep-map of video IDs. It sends only ASR segment text, indices, and timestamps to the local `Qwen/Qwen3.5-27B` vLLM endpoint, with two neighboring segments on each side as text context by default. Neither source video nor audio is sent. For each group of eight segments, the LLM returns one punctuated `clean_text` per segment and explicit `from`/`to`/`reason` records for terminology corrections. The script keeps segment boundaries and timestamps, rejects missing/reordered segments, undeclared lexical edits, and large rewrites, and processes already-punctuated ASR as well.
+
+Each selected video produces a new transcript JSON: `segments` and `full_text` contain cleaned text; `raw_segments` and, when present, `raw_full_text` preserve the source. `asr_cleaning.term_corrections` and a separate JSONL audit record term edits. Original transcript files are not overwritten. `stage1.data` reads the cleaned `segments`, estimates sentence boundaries/times within ASR segments, and writes the three-condition Stage 1 sample JSONL. The cleaner has only text evidence, so term corrections and timing estimates need review against source audio before training. See [the Stage 1 data flow](stage1/README.md) and [cluster commands](docs/HOW_TO_RUN_PIPELINE.md).
+
+For the current train split, the first GPU pilot cleans only the seven videos that produced no samples, then merges their rows with the existing 186-video baseline. The merge checks coverage of all 193 pretrain-selected videos before the separate Stage 1 training job starts.
 
 The new `stage1/` path creates three matched views for each target sentence `[start,end]`: video `0→start` with earlier ASR, video `0→end` with earlier ASR, and video `0→start` with earlier ASR masked. All predict the same complete sentence; target and later ASR are excluded from the prompt. Up to 120 frames are sampled across each selected interval. The model uses Qwen3-VL LoRA with video-level validation; normal, blank, and shuffled-frame inference checks visual dependence. See [stage1/README.md](stage1/README.md). The earlier `pretrain/` baseline remains available.
 
@@ -239,9 +245,19 @@ python QA/run.py \
 
 ### 2. Build Stage 1 samples and train
 
+Start a local vLLM endpoint serving `Qwen/Qwen3.5-27B` and set `VLLM_API_KEY`, or use the [Slurm job](scripts/slurm/run_stage1_qwen35_asr_clean.sbatch), which starts the server and builds samples for one split.
+
 ```bash
-python -m stage1.data \
+python -m stage1.clean_asr \
   --transcripts results/transcripts \
+  --video-map /path/to/pretrain_keep_videos.json \
+  --output-dir results/transcripts_stage1_qwen35_clean \
+  --audit-output results/stage1_qwen35_clean_audit.jsonl \
+  --resume
+
+python -m stage1.data \
+  --transcripts results/transcripts_stage1_qwen35_clean \
+  --video-map /path/to/pretrain_keep_videos.json \
   --output stage1/samples.jsonl
 
 python -m stage1.train \

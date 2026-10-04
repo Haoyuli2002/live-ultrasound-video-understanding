@@ -8,6 +8,7 @@ from pathlib import Path
 
 import torch
 from transformers import Trainer, TrainingArguments
+from transformers.trainer_utils import get_last_checkpoint
 
 from .data import CONDITIONS, sample_frames
 from .model import encode, load_model
@@ -15,9 +16,10 @@ from .model import encode, load_model
 
 class Examples:
     def __init__(self, rows: list[dict], paths: dict[str, str], frame_budget: int,
-                 frame_size: int):
+                 frame_size: int, frame_sampling: str, recent_seconds: float):
         self.rows, self.paths = rows, paths
         self.frame_budget, self.frame_size = frame_budget, frame_size
+        self.frame_sampling, self.recent_seconds = frame_sampling, recent_seconds
 
     def __len__(self):
         return len(self.rows)
@@ -25,7 +27,9 @@ class Examples:
     def __getitem__(self, index):
         row = dict(self.rows[index])
         row["frames"] = sample_frames(self.paths[row["video_id"]], row["video_window"],
-                                      self.frame_budget, self.frame_size)
+                                      self.frame_budget, self.frame_size,
+                                      sampling=self.frame_sampling,
+                                      recent_seconds=self.recent_seconds)
         return row
 
 
@@ -78,10 +82,22 @@ def main():
     parser.add_argument("--gradient-accumulation-steps", type=int, default=8)
     parser.add_argument("--frame-budget", type=int, default=120)
     parser.add_argument("--frame-size", type=int, default=224)
+    parser.add_argument("--frame-sampling", choices=("uniform", "recent_sparse"),
+                        default="uniform")
+    parser.add_argument("--recent-seconds", type=float, default=120.0)
     parser.add_argument("--max-asr-chars", type=int, default=4000)
     parser.add_argument("--lora-rank", type=int, default=16)
     parser.add_argument("--dtype", choices=["bf16", "fp16", "fp32"], default="bf16")
+    parser.add_argument("--max-steps", type=int, default=-1,
+                        help="Positive for a bounded smoke run; -1 uses --epochs")
+    parser.add_argument("--save-steps", type=int, default=50)
+    parser.add_argument("--logging-steps", type=int, default=10)
+    parser.add_argument("--resume", action="store_true",
+                        help="Resume from the latest checkpoint in --output-dir")
     args = parser.parse_args()
+
+    if args.max_steps == 0 or args.max_steps < -1 or args.save_steps < 1 or args.logging_steps < 1:
+        raise ValueError("Expected max_steps=-1 or positive, and positive save/logging steps")
 
     if not torch.cuda.is_available():
         raise RuntimeError("Stage 1 Qwen3-VL training requires CUDA")
@@ -102,6 +118,7 @@ def main():
     val_rows = [row for row in rows if row["video_id"] in held_out]
     output = Path(args.output_dir)
     output.mkdir(parents=True, exist_ok=True)
+    checkpoint = get_last_checkpoint(str(output)) if args.resume else None
     (output / "video_split.json").write_text(json.dumps({
         "seed": args.seed,
         "train_video_ids": sorted(set(videos) - held_out),
@@ -119,19 +136,23 @@ def main():
         model.config.use_cache = False
     training_args = TrainingArguments(
         output_dir=str(output), num_train_epochs=args.epochs,
+        max_steps=args.max_steps,
         per_device_train_batch_size=1, per_device_eval_batch_size=1,
         gradient_accumulation_steps=args.gradient_accumulation_steps,
         learning_rate=args.learning_rate, remove_unused_columns=False,
         eval_strategy="epoch" if val_rows else "no",
-        save_strategy="epoch", load_best_model_at_end=bool(val_rows),
-        metric_for_best_model="eval_loss" if val_rows else None,
+        save_strategy="steps", save_steps=args.save_steps, save_total_limit=3,
+        logging_steps=args.logging_steps,
+        load_best_model_at_end=False,
         bf16=args.dtype == "bf16", fp16=args.dtype == "fp16",
         report_to="none")
     trainer = Trainer(model=model, args=training_args,
-                      train_dataset=Examples(train_rows, paths, args.frame_budget, args.frame_size),
-                      eval_dataset=Examples(val_rows, paths, args.frame_budget, args.frame_size) if val_rows else None,
+                      train_dataset=Examples(train_rows, paths, args.frame_budget, args.frame_size,
+                                             args.frame_sampling, args.recent_seconds),
+                      eval_dataset=Examples(val_rows, paths, args.frame_budget, args.frame_size,
+                                            args.frame_sampling, args.recent_seconds) if val_rows else None,
                       data_collator=Collator(processor, args.max_asr_chars))
-    trainer.train()
+    trainer.train(resume_from_checkpoint=checkpoint)
     trainer.save_model(str(output / "final"))
     processor.save_pretrained(str(output / "final"))
 

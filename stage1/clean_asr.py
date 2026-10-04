@@ -1,6 +1,6 @@
-"""Punctuate and conservatively correct timed Whisper segments with Qwen3.5.
+"""Clean and lightly polish timed Whisper segments with Qwen3.5.
 
-The teacher sees only ASR text, never audio or video. Its terminology edits are
+The LLM sees only ASR text, never audio or video. Its terminology edits are
 therefore hypotheses to audit, not verified transcriptions.
 """
 from __future__ import annotations
@@ -15,7 +15,7 @@ from pathlib import Path
 
 MODEL = "Qwen/Qwen3.5-27B"
 SYSTEM = """You are cleaning Whisper ASR from ultrasound teaching videos. Return JSON only.
-For each requested segment, add natural sentence punctuation and capitalization.
+For each requested segment, lightly polish punctuation, capitalization, and spacing.
 Correct an ultrasound/medical term only when the surrounding ASR makes the intended
 term clear. Preserve the speaker's actual wording, word order, repetitions,
 uncertainty, negation, and all nonmedical content. Do not summarize, paraphrase,
@@ -39,7 +39,7 @@ def parse_response(raw: str) -> list[dict]:
         if isinstance(value, dict) and isinstance(value.get("segments"), list):
             candidates.append(value["segments"])
     if not candidates:
-        raise ValueError(f"Teacher did not return segments JSON: {(raw or '')[:300]!r}")
+        raise ValueError(f"LLM did not return segments JSON: {(raw or '')[:300]!r}")
     return candidates[-1]
 
 
@@ -117,7 +117,7 @@ def validate_batch(source: list[dict], returned: list[dict], indices: list[int])
     return checked
 
 
-class ASRCleaningTeacher:
+class ASRCleaner:
     def __init__(self, model: str = MODEL, *, api_key: str, base_url: str,
                  max_tokens: int = 4096):
         from openai import OpenAI
@@ -145,7 +145,7 @@ class ASRCleaningTeacher:
         return parse_response(response.choices[0].message.content or "")
 
 
-def clean_transcript(transcript: dict, teacher, *, batch_segments: int = 8,
+def clean_transcript(transcript: dict, cleaner, *, batch_segments: int = 8,
                      context_segments: int = 2) -> tuple[dict, dict]:
     if batch_segments < 1 or context_segments < 0:
         raise ValueError("Expected batch_segments >= 1 and context_segments >= 0")
@@ -163,7 +163,7 @@ def clean_transcript(transcript: dict, teacher, *, batch_segments: int = 8,
             for i in list(range(max(0, begin-context_segments), begin))
             + list(range(end, min(len(source), end+context_segments)))
         ]
-        returned = teacher.clean(source[begin:end], indices, context)
+        returned = cleaner.clean(source[begin:end], indices, context)
         checked = validate_batch(source[begin:end], returned, indices)
         for item in checked:
             index = item["index"]
@@ -176,9 +176,12 @@ def clean_transcript(transcript: dict, teacher, *, batch_segments: int = 8,
     result.pop("sentence_units", None)  # Existing units refer to the original text.
     result["raw_segments"] = copy.deepcopy(source)
     result["segments"] = cleaned
+    if "full_text" in result:
+        result["raw_full_text"] = result["full_text"]
+    result["full_text"] = " ".join(str(segment["text"]).strip() for segment in cleaned)
     result["asr_cleaning"] = {
         "method": "qwen35_segment_text_cleanup",
-        "model": getattr(teacher, "model", "unknown"),
+        "model": getattr(cleaner, "model", "unknown"),
         "segment_count": len(source),
         "changed_segments": changed_segments,
         "term_corrections": corrections,
@@ -214,8 +217,8 @@ def main() -> None:
     api_key = os.environ.get(args.api_key_env)
     if not api_key:
         raise ValueError(f"Set {args.api_key_env} for the local vLLM endpoint")
-    teacher = ASRCleaningTeacher(args.model, api_key=api_key,
-                                 base_url=args.base_url, max_tokens=args.max_tokens)
+    cleaner = ASRCleaner(args.model, api_key=api_key,
+                         base_url=args.base_url, max_tokens=args.max_tokens)
     args.output_dir.mkdir(parents=True, exist_ok=True)
     args.audit_output.parent.mkdir(parents=True, exist_ok=True)
     for video_id in sorted(selected):
@@ -231,7 +234,7 @@ def main() -> None:
         if transcript.get("video_id") and str(transcript["video_id"]) != video_id:
             raise ValueError(f"Transcript ID differs from filename: {source}")
         transcript["video_id"] = video_id
-        result, audit = clean_transcript(transcript, teacher,
+        result, audit = clean_transcript(transcript, cleaner,
                                          batch_segments=args.batch_segments,
                                          context_segments=args.context_segments)
         write_json_atomic(destination, result)
