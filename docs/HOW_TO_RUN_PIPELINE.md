@@ -260,12 +260,13 @@ sbatch scripts/slurm/run_stage1_seven_video_pilot.sbatch
 
 Inspect `logs/stage1_seven_asr_<jobid>.out`, the seven-video audit under
 `cluster_data/QA/train_full295/`, and the merge summary before training.
-The full Stage 1 GPU job has a separate launcher. A 20-step smoke test uses a
-different run name and a smaller frame budget; the full job then trains from
+The full Stage 1 GPU job has a separate launcher. A two-step smoke test uses a
+different run name but the same 120-frame budget, so it checks the intended GPU
+memory requirement; the full job then trains from
 the merged data with its own checkpoint directory:
 
 ```bash
-sbatch --export=ALL,RUN_NAME=stage1_smoke,MAX_STEPS=20,FRAME_BUDGET=24,SAVE_STEPS=10 \
+sbatch --export=ALL,RUN_NAME=stage1_smoke,MAX_STEPS=2,FRAME_BUDGET=120,SAVE_STEPS=1 \
   scripts/slurm/run_stage1_pretrain_merged.sbatch
 sbatch scripts/slurm/run_stage1_pretrain_merged.sbatch
 ```

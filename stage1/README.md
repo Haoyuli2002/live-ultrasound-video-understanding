@@ -130,7 +130,7 @@ periodic checkpoints and resumes from the latest checkpoint in the same output
 directory.
 
 ```bash
-sbatch --export=ALL,RUN_NAME=stage1_smoke,MAX_STEPS=20,FRAME_BUDGET=24,SAVE_STEPS=10 \
+sbatch --export=ALL,RUN_NAME=stage1_smoke,MAX_STEPS=2,FRAME_BUDGET=120,SAVE_STEPS=1 \
   scripts/slurm/run_stage1_pretrain_merged.sbatch
 sbatch scripts/slurm/run_stage1_pretrain_merged.sbatch
 ```
