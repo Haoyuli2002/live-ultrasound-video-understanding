@@ -1,6 +1,11 @@
+import json
+import tempfile
 import unittest
+from pathlib import Path
+from types import SimpleNamespace
 
-from .clean_asr import clean_transcript, parse_response, validate_batch
+from .clean_asr import (clean_transcript, parse_response, process_video,
+                        validate_batch)
 from .data import build_rows
 
 
@@ -56,6 +61,78 @@ class CleanASRTests(unittest.TestCase):
     def test_parse_fenced_json(self):
         raw = '```json\n{"segments":[{"index":0,"clean_text":"Hello.","corrections":[]}]}\n```'
         self.assertEqual(parse_response(raw)[0]["clean_text"], "Hello.")
+
+    def test_multiword_correction_grounded_by_word_sequence(self):
+        # "for serothropathy" differs from the raw spacing/punctuation but is a
+        # contiguous word run, so word-level grounding must accept it.
+        source = [{"text": "check, for serothropathy signs"}]
+        returned = [{"index": 0, "clean_text": "Check for hypothyroidism signs.",
+                     "corrections": [{"from": "for serothropathy",
+                                      "to": "for hypothyroidism",
+                                      "reason": "clear ASR error"}]}]
+        checked = validate_batch(source, returned, [0])
+        self.assertEqual(checked[0]["corrections"][0]["to"], "for hypothyroidism")
+
+    def test_multiword_correction_absent_is_rejected(self):
+        source = [{"text": "check for lung sliding"}]
+        returned = [{"index": 0, "clean_text": "Check for hypothyroidism.",
+                     "corrections": [{"from": "for serothropathy",
+                                      "to": "for hypothyroidism",
+                                      "reason": "ungrounded"}]}]
+        with self.assertRaises(ValueError):
+            validate_batch(source, returned, [0])
+
+
+class FailingCleaner:
+    model = "Qwen/Qwen3.5-27B"
+
+    def clean(self, segments, indices, context):
+        return [{"index": index, "clean_text": "An entirely invented replacement sentence.",
+                 "corrections": [{"from": "plural", "to": "invented", "reason": "guess"}]}
+                for index, segment in zip(indices, segments)]
+
+
+class ProcessVideoTests(unittest.TestCase):
+    def _args(self, root: Path):
+        return SimpleNamespace(
+            transcripts=root / "src", output_dir=root / "out",
+            audit_output=root / "audit.jsonl", batch_segments=2,
+            context_segments=0, resume=False)
+
+    def test_failed_video_is_skipped_and_recorded(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            args = self._args(root)
+            args.transcripts.mkdir(parents=True)
+            args.output_dir.mkdir(parents=True)
+            (args.transcripts / "bad.json").write_text(json.dumps(
+                {"segments": [{"start": 0, "end": 2, "text": "the plural line"}]}),
+                encoding="utf-8")
+            status = process_video("bad", args, FailingCleaner())
+            self.assertEqual(status["status"], "failed")
+            # No partial output file is written for a failed video.
+            self.assertFalse((args.output_dir / "bad.json").exists())
+            audit = [json.loads(line) for line in
+                     args.audit_output.read_text(encoding="utf-8").splitlines()]
+            self.assertEqual(audit[-1]["status"], "failed")
+            self.assertEqual(audit[-1]["video_id"], "bad")
+
+    def test_successful_video_writes_output_and_audit(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            args = self._args(root)
+            args.transcripts.mkdir(parents=True)
+            args.output_dir.mkdir(parents=True)
+            (args.transcripts / "good.json").write_text(json.dumps(
+                {"segments": [{"start": 0, "end": 2, "text": "the plural line is visible"}]}),
+                encoding="utf-8")
+            status = process_video("good", args, FakeCleaner())
+            self.assertEqual(status["status"], "cleaned")
+            result = json.loads((args.output_dir / "good.json").read_text(encoding="utf-8"))
+            self.assertEqual(result["segments"][0]["text"], "The pleural line is visible.")
+            audit = [json.loads(line) for line in
+                     args.audit_output.read_text(encoding="utf-8").splitlines()]
+            self.assertEqual(audit[-1]["status"], "cleaned")
 
 
 if __name__ == "__main__":

@@ -10,6 +10,7 @@ import copy
 import json
 import os
 import re
+import sys
 import tempfile
 from pathlib import Path
 
@@ -63,6 +64,14 @@ def write_json_atomic(path: Path, value: dict) -> None:
             temporary.unlink(missing_ok=True)
 
 
+def contains_subsequence(words: list[str], sub: list[str]) -> bool:
+    """True if ``sub`` appears as a contiguous run inside ``words`` (word level)."""
+    if not sub:
+        return False
+    return any(words[i:i+len(sub)] == sub
+               for i in range(len(words)-len(sub)+1))
+
+
 def apply_declared_edits(words: list[str], edits: list[dict], index: int) -> list[str]:
     result = words[:]
     for edit in edits:
@@ -106,7 +115,8 @@ def validate_batch(source: list[dict], returned: list[dict], indices: list[int])
             old, new, reason = edit.get("from"), edit.get("to"), edit.get("reason")
             if not all(isinstance(value, str) and value.strip() for value in (old, new, reason)):
                 raise ValueError(f"Incomplete correction in segment {index}")
-            if old.lower() not in str(raw.get("text") or "").lower() or new.lower() not in clean.lower():
+            if (not contains_subsequence(before, lexical_words(old))
+                    or not contains_subsequence(after, lexical_words(new))):
                 raise ValueError(f"Correction is not grounded in segment {index}: {edit}")
             normalized_edits.append({"from": old, "to": new, "reason": reason})
         if before == after and normalized_edits:
@@ -195,6 +205,45 @@ def clean_transcript(transcript: dict, cleaner, *, batch_segments: int = 8,
     return result, audit
 
 
+def process_video(video_id: str, args, cleaner) -> dict:
+    """Clean one video; write its output and audit on success.
+
+    Returns a status dict. A malformed response or validation failure skips this
+    video without writing its transcript output, records a failure audit row,
+    and lets the caller continue with the remaining videos.
+    """
+    if not video_id or Path(video_id).name != video_id:
+        raise ValueError(f"Invalid video ID: {video_id!r}")
+    source = args.transcripts / f"{video_id}.json"
+    destination = args.output_dir / source.name
+    if destination.exists():
+        if args.resume:
+            return {"video_id": video_id, "status": "skipped_existing"}
+        raise FileExistsError(f"Output exists: {destination}; use --resume")
+    try:
+        transcript = json.loads(source.read_text(encoding="utf-8"))
+        if transcript.get("video_id") and str(transcript["video_id"]) != video_id:
+            raise ValueError(f"Transcript ID differs from filename: {source}")
+        transcript["video_id"] = video_id
+        result, audit = clean_transcript(transcript, cleaner,
+                                         batch_segments=args.batch_segments,
+                                         context_segments=args.context_segments)
+    except (ValueError, RuntimeError, OSError, json.JSONDecodeError) as exc:
+        # The partial output is never written; --resume will retry this video.
+        failure = {"video_id": video_id, "status": "failed", "error": str(exc)}
+        with args.audit_output.open("a", encoding="utf-8") as stream:
+            stream.write(json.dumps(failure, ensure_ascii=False) + "\n")
+        print(json.dumps(failure, ensure_ascii=False), flush=True)
+        return failure
+    write_json_atomic(destination, result)
+    audit = {"status": "cleaned", **audit}
+    with args.audit_output.open("a", encoding="utf-8") as stream:
+        stream.write(json.dumps(audit, ensure_ascii=False) + "\n")
+    print(json.dumps({key: value for key, value in audit.items()
+                      if key != "term_corrections"}, ensure_ascii=False), flush=True)
+    return {"video_id": video_id, "status": "cleaned"}
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--transcripts", type=Path, required=True)
@@ -221,27 +270,17 @@ def main() -> None:
                          base_url=args.base_url, max_tokens=args.max_tokens)
     args.output_dir.mkdir(parents=True, exist_ok=True)
     args.audit_output.parent.mkdir(parents=True, exist_ok=True)
+    failed = []
     for video_id in sorted(selected):
-        if not video_id or Path(video_id).name != video_id:
-            raise ValueError(f"Invalid video ID: {video_id!r}")
-        source = args.transcripts / f"{video_id}.json"
-        destination = args.output_dir / source.name
-        if destination.exists():
-            if args.resume:
-                continue
-            raise FileExistsError(f"Output exists: {destination}; use --resume")
-        transcript = json.loads(source.read_text(encoding="utf-8"))
-        if transcript.get("video_id") and str(transcript["video_id"]) != video_id:
-            raise ValueError(f"Transcript ID differs from filename: {source}")
-        transcript["video_id"] = video_id
-        result, audit = clean_transcript(transcript, cleaner,
-                                         batch_segments=args.batch_segments,
-                                         context_segments=args.context_segments)
-        write_json_atomic(destination, result)
-        with args.audit_output.open("a", encoding="utf-8") as stream:
-            stream.write(json.dumps(audit, ensure_ascii=False) + "\n")
-        print(json.dumps({key: value for key, value in audit.items()
-                          if key != "term_corrections"}, ensure_ascii=False), flush=True)
+        status = process_video(video_id, args, cleaner)
+        if status.get("status") == "failed":
+            failed.append(video_id)
+    print(json.dumps({"selected": len(selected),
+                      "failed_videos": failed}, ensure_ascii=False), flush=True)
+    if failed:
+        # Signal that at least one video was not cleaned; the Slurm pipeline then
+        # stops before merging so partial coverage is never merged silently.
+        sys.exit(1)
 
 
 if __name__ == "__main__":

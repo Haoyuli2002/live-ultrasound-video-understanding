@@ -64,11 +64,18 @@ For every selected video, a new JSON transcript is written to `--output-dir`:
 | `raw_full_text` | Original `full_text`, if the input contained it |
 | `asr_cleaning` | Model, counts, and indexed terminology corrections |
 
-The `--audit-output` JSONL has one row per completed video with the correction
-list and counts. Source files are never overwritten. Existing `sentence_units`
-are removed because they refer to old text. The cleaner writes one video
-atomically; `--resume` skips output files that already exist. A malformed
-response stops processing before that video's output is written. `stage1.data`
+The `--audit-output` JSONL has one row per video. A cleaned video records its
+corrections and counts with `"status":"cleaned"`; a skipped video records
+`"status":"failed"` with the error. Source files are never overwritten.
+Existing `sentence_units` are removed because they refer to old text. The
+cleaner writes one video atomically; `--resume` skips output files that already
+exist. A malformed or unverifiable response skips only that video without
+writing its output, records a failure audit row, and continues with the
+remaining videos; the script exits non-zero if any video failed, so the Slurm
+pipeline stops before merging partial coverage. Grounding checks match declared
+corrections at the word level, so a multiword `from`/`to` with different spacing
+or punctuation is accepted when its words occur contiguously, while an absent
+run is still rejected. `stage1.data`
 then reads the cleaned `segments`, splits complete sentences, estimates
 sentence times by character interpolation inside ASR segments, and builds the
 three paired Stage 1 views. Text-only corrections cannot establish what the
