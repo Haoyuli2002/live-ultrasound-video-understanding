@@ -7,13 +7,16 @@
 #
 # Everything is env-overridable (same style as scripts/slurm/*.sbatch):
 #
-#   # defaults: eval_full295 / 8V649L5Q368 on port 8000
+#   # defaults: video 8V649L5Q368 on port 8000
 #   bash scripts/viz_eval.sh
 #
-#   # pick another video / split / port, or the cleaned transcripts:
-#   VIDEO_ID=JcCZBKSdIRk SPLIT=eval_full295 bash scripts/viz_eval.sh
-#   TRANSCRIPTS_SUBDIR=transcripts_stage1_qwen35_clean bash scripts/viz_eval.sh
+#   # pick another video / port:
+#   VIDEO_ID=B2USlWmqOV0 bash scripts/viz_eval.sh
 #   PORT=8080 bash scripts/viz_eval.sh
+#
+#   # fully explicit paths (bypass the templates below):
+#   TRANSCRIPT=cluster_data/transcripts/8V649L5Q368.json \
+#   VIDEO_FILE=cluster_data/videos/8V649L5Q368.mp4 bash scripts/viz_eval.sh
 #
 #   # skip the HTTP server (only regenerate viz/data.json):
 #   SERVE=0 bash scripts/viz_eval.sh
@@ -31,24 +34,21 @@ else
   REPO=${REPO:-"$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"}
 fi
 
-SPLIT=${SPLIT:-eval_full295}
 VIDEO_ID=${VIDEO_ID:-8V649L5Q368}
-# eval_full295 -> videos/eval ; train_full295 -> videos/train
-case "$SPLIT" in
-  eval_*)  VIDEO_SUBDIR=${VIDEO_SUBDIR:-eval} ;;
-  train_*) VIDEO_SUBDIR=${VIDEO_SUBDIR:-train} ;;
-  *)       VIDEO_SUBDIR=${VIDEO_SUBDIR:-eval} ;;
-esac
-# transcripts (raw) or transcripts_stage1_qwen35_clean (cleaned)
-TRANSCRIPTS_SUBDIR=${TRANSCRIPTS_SUBDIR:-transcripts}
+# Real cluster layout: transcripts live flat under cluster_data/transcripts/,
+# videos live flat under cluster_data/videos/ (per-split dirs also exist, but the
+# transcript JSONs are only in the flat dir). Override the two paths below for
+# anything outside this convention.
+TRANSCRIPTS_DIR=${TRANSCRIPTS_DIR:-cluster_data/transcripts}
+VIDEOS_DIR=${VIDEOS_DIR:-cluster_data/videos}
 
 MAX_FRAMES=${MAX_FRAMES:-120}
 PORT=${PORT:-8000}
 SERVE=${SERVE:-1}
 OUTPUT=${OUTPUT:-viz/data.json}
 
-TRANSCRIPT=${TRANSCRIPT:-cluster_data/QA/${SPLIT}/${TRANSCRIPTS_SUBDIR}/${VIDEO_ID}.json}
-VIDEO_FILE=${VIDEO_FILE:-cluster_data/videos/${VIDEO_SUBDIR}/${VIDEO_ID}.mp4}
+TRANSCRIPT=${TRANSCRIPT:-${TRANSCRIPTS_DIR}/${VIDEO_ID}.json}
+VIDEO_FILE=${VIDEO_FILE:-${VIDEOS_DIR}/${VIDEO_ID}.mp4}
 # viz/index.html resolves --video-url relative to viz/, so prefix with ../
 VIDEO_URL=${VIDEO_URL:-../${VIDEO_FILE}}
 

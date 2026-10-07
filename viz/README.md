@@ -12,13 +12,17 @@ page shows exactly what training feeds the model.
 input is env-overridable:
 
 ```bash
-# defaults: eval_full295 / 8V649L5Q368 on port 8000
+# defaults: video 8V649L5Q368 on port 8000
 bash scripts/viz_eval.sh
 
-# pick another video / split / port, or the cleaned transcripts:
-VIDEO_ID=JcCZBKSdIRk bash scripts/viz_eval.sh
-TRANSCRIPTS_SUBDIR=transcripts_stage1_qwen35_clean bash scripts/viz_eval.sh
+# pick another video / port:
+VIDEO_ID=B2USlWmqOV0 bash scripts/viz_eval.sh
 PORT=8080 bash scripts/viz_eval.sh
+
+# fully explicit paths (transcripts live flat under cluster_data/transcripts/,
+# videos flat under cluster_data/videos/):
+TRANSCRIPT=cluster_data/transcripts/8V649L5Q368.json \
+VIDEO_FILE=cluster_data/videos/8V649L5Q368.mp4 bash scripts/viz_eval.sh
 
 # just regenerate viz/data.json without starting a server:
 SERVE=0 bash scripts/viz_eval.sh
