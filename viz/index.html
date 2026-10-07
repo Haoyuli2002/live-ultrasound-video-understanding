@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stage 1 Three-Condition Visualizer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Stage 1 &mdash; Three Matched Conditions</h1>
+  <p class="sub">Same target sentence, different inputs. See exactly what the model is fed.</p>
+</header>
+<section class="controls">
+  <label>Target sentence:
+    <select id="sentence-select"></select>
+  </label>
+  <label>Frame sampling:
+    <select id="sampling-select">
+      <option value="uniform">uniform</option>
+      <option value="recent_sparse">recent_sparse</option>
+    </select>
+  </label>
+  <span id="meta" class="meta"></span>
+</section>
+<section class="player">
+  <video id="video" controls preload="metadata"></video>
+  <div id="timeline" class="timeline">
+    <div id="tl-sentence" class="tl-sentence" title="target sentence interval"></div>
+    <div id="tl-playhead" class="tl-playhead"></div>
+    <div id="tl-frames" class="tl-frames"></div>
+  </div>
+  <div class="tl-legend">
+    <span class="dot frame"></span> sampled frame
+    <span class="dot target"></span> target sentence interval
+  </div>
+</section>
+<section class="target-banner">
+  <span class="label">TARGET (identical for all three):</span>
+  <span id="target-text" class="target-text"></span>
+</section>
+<section id="columns" class="columns"></section>
+<script src="app.js"></script>
+</body>
+</html>
