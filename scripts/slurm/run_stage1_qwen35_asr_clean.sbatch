@@ -17,6 +17,10 @@ MODEL=${MODEL:-Qwen/Qwen3.5-27B}
 VLLM_PORT=${VLLM_PORT:-8000}
 MAX_MODEL_LEN=${MAX_MODEL_LEN:-8192}
 GPU_MEMORY_UTILIZATION=${GPU_MEMORY_UTILIZATION:-0.90}
+# Cold-loading a 51 GiB checkpoint from GPFS plus warmup can exceed 20 minutes;
+# allow a longer, env-overridable readiness window (default 240x10s = 40 min).
+VLLM_READY_RETRIES=${VLLM_READY_RETRIES:-240}
+VLLM_READY_INTERVAL=${VLLM_READY_INTERVAL:-10}
 BATCH_SEGMENTS=${BATCH_SEGMENTS:-8}
 CONTEXT_SEGMENTS=${CONTEXT_SEGMENTS:-2}
 MAX_TOKENS=${MAX_TOKENS:-4096}
@@ -69,7 +73,7 @@ vllm serve "$MODEL" \
 VLLM_PID=$!
 
 ready=0
-for i in $(seq 1 120); do
+for i in $(seq 1 "$VLLM_READY_RETRIES"); do
   if curl --silent --fail "http://127.0.0.1:${VLLM_PORT}/v1/models" \
       -H "Authorization: Bearer ${VLLM_API_KEY}" | grep -Fq "$MODEL"; then
     ready=1
@@ -80,10 +84,10 @@ for i in $(seq 1 120); do
     tail -100 "$VLLM_LOG" >&2 || true
     exit 1
   fi
-  sleep 10
+  sleep "$VLLM_READY_INTERVAL"
 done
 if [[ "$ready" != 1 ]]; then
-  echo "vLLM was not ready after 20 minutes; see $VLLM_LOG" >&2
+  echo "vLLM was not ready after $((VLLM_READY_RETRIES * VLLM_READY_INTERVAL)) seconds; see $VLLM_LOG" >&2
   tail -100 "$VLLM_LOG" >&2 || true
   exit 1
 fi
