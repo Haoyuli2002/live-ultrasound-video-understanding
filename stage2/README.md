@@ -2,6 +2,85 @@
 
 This is a new implementation. It does not import code from `pretrain/`.
 
+## Memory flow (diagram)
+
+The figures below are the token-level ground truth for how input frames, the two
+memory query tokens, and reconstruction targets are arranged. They come directly
+from `stage2/model.py` and `stage2/train.py`; line references are inline.
+
+### Three forward passes (token arrangement)
+
+```text
+① encode_frame  — one per completed second → one SHORT vector   (model.py:50-65)
+   each second is an INDEPENDENT forward (no KV carried across seconds):
+
+      [chat header] <image tokens for this 1s> <SHORT_MEM> [chat footer]
+                                                     │
+                           take hidden state at <SHORT_MEM>  →  short vector [1, hidden]
+   NOTE: <SHORT_MEM> appears exactly once (model.py:61-63); it only sees
+         THIS one frame. Short memory has no cross-second context.
+
+② update_long  — once every full 60s → replaces long memory      (model.py:67-79)
+
+   first minute (no previous long):
+      [ 60 SHORT vectors ] [ 60 × <LONG_MEM> query ]
+   later minutes:
+      [ old long (detached, 60) ] [ 60 SHORT vectors ] [ 60 × <LONG_MEM> query ]
+      └──────── 60 ───────────┘ └──────── 60 ───────┘ └──────── 60 ────────┘
+                                                               │
+                take hidden states of the LAST 60 positions  →  new long memory [1, 60, hidden]
+   NOTE: whole-block REPLACEMENT, not append. Length stays 60. Old long is
+         detached (no gradient across minutes); history accumulates recursively.
+
+③ reconstruction_loss — teacher-forced CE, training only        (model.py:81-102)
+
+      [ memory vectors ] [ "Summarize ...(kind):\n" prompt ] [ target summary ] [EOS]
+      └──── -100 ───────┘ └──────── -100 ──────────────────┘ └──── CE loss here ────┘
+   NOTE: memory + prompt are masked to -100; loss is computed ONLY on the
+         target summary tokens. memory = 10 short (short) / 60 short (block) /
+         60 new long (global), chosen by `kind`.
+```
+
+### One minute of training (control flow)
+
+```mermaid
+flowchart TD
+    A["Second s: encode_frame #40;frame + &lt;SHORT_MEM&gt;#41;"] --> B["short vector s"]
+    B --> C{"10 collected?<br/>#40;end of a 10s interval#41;"}
+    C -- "no" --> A
+    C -- "yes" --> D["stack 10 short → [1,10,h]"]
+    D --> E["reconstruction_loss#40;short#41;<br/>vs local 10s summary → Lshort"]
+    E --> F{"6th 10s block?<br/>#40;full 60s reached#41;"}
+    F -- "no" --> G["backward + step #40;total = Lshort#41;<br/>detach these short states"]
+    G --> A
+    F -- "yes" --> H["all_short = 60 short → [1,60,h]"]
+    H --> I["reconstruction_loss#40;block#41;<br/>vs 60s block summary → Lblock"]
+    H --> J["update_long#40;old_long, all_short#41;<br/>→ new_long [1,60,h]"]
+    J --> K["reconstruction_loss#40;global#41;<br/>vs [0,T) cumulative summary → Lglobal"]
+    I --> L["total = Lshort + Lblock + Lglobal #40;1:1:1#41;"]
+    K --> L
+    L --> M["backward + step"]
+    M --> N["old_long ← new_long.detach#40;#41;<br/>clear short buffer"]
+    N --> A
+```
+
+### short vs long
+
+| | `<SHORT_MEM>` | `<LONG_MEM>` |
+|---|---|---|
+| Produced every | 1 second | 60 seconds |
+| Sees | only its own 1 frame | old long + current 60 short |
+| Count per readout | 1 vector | 60 vectors (fixed) |
+| Across time | independent per-second snapshot, no accumulation | recursive, whole-block replacement, carries history |
+| Supervised by | local 10s summary (per 10 vectors) | global `[0,T)` cumulative summary |
+
+Inference (`stage2/stream.py:14-31`) runs only ① and ② (no teacher labels) and
+saves `final_long [1,60,h]`, `final_short [1,k,h]` (`k<60`), and per-minute
+snapshots for the later QA stage. The local/block/global text summaries exist
+only as training targets to make the memory vectors reconstructable.
+
+## Overview
+
 Input is 1 frame per completed second. A `<SHORT_MEM>` hidden state becomes one
 continuous short-memory vector. Every 10 states reconstruct the corresponding
 teacher 10-second visual summary and trigger an optimizer step. At each full

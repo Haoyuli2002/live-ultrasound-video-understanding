@@ -25,6 +25,85 @@
 
 ASR 用于数据准备和 Stage 1 的训练目标；在 Stage 1 的两组条件中，目标句之前的历史 ASR 也作为输入。Stage 2、Stage 3 和在线推理不输入 ASR。离线标注器可以观察未来构建标签，但模型在决策时只能读取当时已经可见的证据。
 
+### 各阶段接口与衔接
+
+三个阶段共用**同一个 Qwen3-VL backbone**；每个阶段在上一阶段产物之上追加参数，而不是另起一个独立网络。下表是各阶段"产出什么、下一阶段消费什么、哪些衔接尚未实现"的唯一事实来源，文件行号对应当前代码。
+
+| 阶段 | 新增可训练参数 | 产出 | 下一阶段消费 |
+|---|---|---|---|
+| Stage 1 | 在 `q/k/v/o_proj` + `gate/up/down_proj` 上的 LoRA（`stage1/model.py:65-68`） | `stage1_output/final` 的 LoRA adapter | Stage 2 的基座权重 |
+| Stage 2 | 新的 LoRA，**外加**两个可学习 token embedding `<SHORT_MEM>` / `<LONG_MEM>`，经 PEFT `trainable_token_indices` 训练（`stage2/model.py:23-38`） | `stage2_output/final` 的 adapter + resize 后的 embedding；以及流式记忆 `.pt`（`stage2/stream.py:62-64`） | Stage 3 的记忆输入 |
+| Stage 3 | 专用 `<DECISION>` 读出位 + BCE 头（仅设计） | WAIT/ANSWER 文本 + 可答性 logit | — |
+
+**Stage 1 → Stage 2。** Stage 2 启动时先加载 Stage 1 adapter，并用 `PeftModel.from_pretrained(base, base_adapter).merge_and_unload()` 将其烤进 backbone（`stage2/model.py:21-22`），再在其上加自己的 LoRA 和两行新 token。因此 Stage 1 注入的领域知识在记忆训练开始前已固化进权重。合并所用的 adapter 路径记录在 `training_config.json`，供推理复现（`stage2/stream.py:46-50`）。
+
+**这两个新 token 是什么。** `<SHORT_MEM>` 和 `<LONG_MEM>` 不是额外的网络模块，而是词嵌入表里新增的两行向量（`stage2/model.py:23-24`），用作可学习的**读出查询位**。每帧后接一个 `<SHORT_MEM>`，取其隐状态作为该秒的短记忆向量（`encode_frame`，`stage2/model.py:50-65`）；对 `[detach 的旧长记忆, 当前 60 个短向量]` 施加 60 个 `<LONG_MEM>` 查询，得到 60 个新长记忆向量，**整块替换**旧长记忆（`update_long`，`stage2/model.py:67-79`）。只有 LoRA 权重和这两行 embedding 接收梯度，其余词表全部冻结。
+
+**Stage 2 → Stage 3。** 推理时 `stage2/stream.py` 以同样的因果 1-FPS 递归运行，但**不使用教师标签**，并保存一个 `.pt`，内含 `snapshots`（每分钟的长记忆快照）、`final_long`（至少满一分钟后形状为 `[1, 60, hidden]`）、`final_short`（形状 `[1, k, hidden]`，`k<60`，当前未满一分钟的残余）（`stage2/stream.py:14-31,62-64`）。这些是**记忆向量，不是文本**：local/block/global 文本摘要只在 Stage 2 训练时作为监督目标，用来逼这些向量"可被重建"（`reconstruction_loss`，`stage2/model.py:81-102`）；Stage 3 直接消费压缩后的向量，作为下文 Stage 3 输入图中的 `[Long memory] [Short memory]` 前缀。
+
+**尚未实现（开放的衔接点）。** 目前没有任何 Stage 3 代码读取 Stage 2 的 `.pt`，专用 `<DECISION>` 头也未实现。`QA/train/train_summary_decide.py` 会追加长记忆 token 并生成 WAIT/ANSWER 文本，但尚未与 Stage 2 的固定 60-token 替换更新对齐，也没有 BCE 决策头。在出现 `.pt` reader 和决策头之前，请把 Stage 2 → Stage 3 的记忆接口视为规范说明，而非可运行的流水线。
+
+#### 各阶段 input / target 与示例
+
+下表逐阶段列出模型的输入、监督目标，以及一个具体示例。字段名对应真实代码。
+
+**Stage 1 — 领域下一句预测**（`stage1/data.py:105-117`，`stage1/model.py:14-55`）
+
+- **Input**：`[0, video_window_end]` 的因果视频帧（每条样本在该时间范围内最多 120 帧）+ 一段 `Earlier narration:`（目标句之前的历史 ASR，或在 mask 条件下写成 `[ASR MASKED]`）+ 指令句。每句生成**三条条件**样本：`before_with_asr`（视频到句首 + 历史 ASR）、`through_with_asr`（视频到句尾 + 历史 ASR）、`before_mask_asr`（视频到句首 + 遮蔽 ASR）。
+- **Target**：**同一句**完整解说文本（`target`）。只有 target token 计 loss，system/帧/历史 ASR/指令全部 mask 掉（`model.py:49-51`）。
+
+```text
+真实示例（8V649L5Q368，before_with_asr）
+  Input  = frames[0–4.46s] + "Earlier narration: Hi, I'm Dr. John Kugler ... series."
+  Target = "Today, we're going to be learning about lung ultrasound."
+  before_mask_asr：Input/Target 相同，仅 narration → "[ASR MASKED]"。
+```
+
+**Stage 2 — 时序视觉记忆**（`stage2/build_data.py`，`stage2/model.py`，`stage2/train.py`）
+
+- **Input**：**静音**视频，每满 1 秒取 1 帧（无 ASR）。按时间顺序处理。
+- **Target**（每满一分钟 `T` 由教师给出 8 条，构成一个 block）：6 条 10 秒局部摘要 `local_sub_summaries`、1 条 `[T-60,T)` 整分钟摘要 `block_summary_target`、1 条 `[0,T)` 累计摘要 `global_summary_target`。训练时用这些文本去重建对应的记忆向量（short/block/global），损失按 `1:1:1`。
+
+```text
+示例（第一分钟 block_window=[0,60]）
+  Input = 每秒 1 帧，第 0..59 秒（静音）
+
+  每条 loss = reconstruction_loss(记忆向量, 目标文本, kind)：
+    只对目标 token 做 teacher-forced CE（记忆 + 提示被 mask 掉）。
+
+  Lshort  （触发 6 次，每 10 秒末）：
+    memory = 该 10 秒的 10 个短向量        例 [40,50) -> short[40..49]
+    target = "右肝横切面，未见局灶性病变。"            (local[4])
+    loss   = CE(target | 10 个短向量)
+
+  Lblock  （触发 1 次，第 60 秒）：
+    memory = 本分钟全部 60 个短向量
+    target = "本分钟：右肝扫查完成，未见占位。"         (block)
+    loss   = CE(target | 60 个短向量)
+
+  Lglobal （触发 1 次，第 60 秒）：
+    memory = update_long(旧长记忆, 60 短) 产出的 60 个“新”长向量
+    target = "至今：已扫查右肝各切面，回声均匀。"       (global)
+    loss   = CE(target | 60 个长向量)
+
+  各步更新：
+    第 10,20,30,40,50 秒 -> total = Lshort
+    第 60 秒            -> total = Lshort + Lblock + Lglobal   (1:1:1)
+```
+
+**Stage 3 — 可答性决策 + QA**（设计见根 README 的 Stage 3 小节；`QA/train/train_summary_decide.py`，*决策头尚未实现*）
+
+- **Input**：共享记忆前缀 `[系统/模板][Long memory][Short memory]` + 当前问题 + 读出位 `<DECISION>`。记忆来自 Stage 2 `stream.py` 产出的向量，不随问题改写。
+- **Target**：① 可答性二分类标签 `y`（`y=0` 证据不足 / `y=1` 证据充分）用 BCE 监督 `<DECISION>` 的 logit；② 文本目标用 NTP 监督——`y=0` 时为 `<WAIT>` + 指出当前缺失证据的理由，`y=1` 时为 `<ANSWER>` + 有视觉支撑的答案。
+
+```text
+示例 — 问题："右肾有无结石？"
+  时刻 A（尚未扫到右肾）：Input=[记忆]+问题+<DECISION>
+    → y=0，"<WAIT> 尚未显示右肾，目前仅扫查肝脏。"
+  时刻 B（已显示右肾、见强回声灶）：Input=[记忆]+问题+<DECISION>
+    → y=1，"<ANSWER> 右肾下极见伴声影强回声灶，提示结石。"
+```
+
 ### 视频爬取、ASR 转录与切片
 
 使用 `UltrasoundCrawler_KeyCode_20260323_v2/` 获取 YouTube／Bilibili 超声视频。通过 `QA/prepare/run_prepare.py` 运行 ASR 转录和视频切片，输出带时间戳的 transcript 与 clips 信息，供后续训练样本和 QA 构建使用。

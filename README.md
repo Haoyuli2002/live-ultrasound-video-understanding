@@ -25,6 +25,85 @@ The [reference design](docs/live_ultrasound_reference_implementation_final_zh.md
 
 ASR supports data preparation, provides Stage 1 targets, and supplies earlier narration in two Stage 1 conditions. Stage 2, Stage 3, and online inference do not receive ASR. Offline annotators may inspect future video to construct labels, but model decisions use only evidence available at the decision time.
 
+### Stage interfaces and handoffs
+
+The three stages share **one Qwen3-VL backbone**; each stage adds parameters on top of the previous stage's artifact rather than introducing a separate network. The table below is the single source of truth for what each stage produces, what the next stage consumes, and which links are not yet implemented. File and line references point to the current code.
+
+| Stage | New trainable parameters | Produces | Next stage consumes |
+|---|---|---|---|
+| Stage 1 | LoRA on `q/k/v/o_proj` + `gate/up/down_proj` (`stage1/model.py:65-68`) | LoRA adapter at `stage1_output/final` | Stage 2 base weights |
+| Stage 2 | New LoRA **plus** two learnable token embeddings `<SHORT_MEM>` / `<LONG_MEM>` via PEFT `trainable_token_indices` (`stage2/model.py:23-38`) | adapter + resized embeddings at `stage2_output/final`; a streamed memory `.pt` (`stage2/stream.py:62-64`) | Stage 3 memory inputs |
+| Stage 3 | Dedicated `<DECISION>` readout + BCE head (design only) | WAIT/ANSWER text + answerability logit | — |
+
+**Stage 1 → Stage 2.** Stage 2 loads the Stage 1 adapter and bakes it into the backbone with `PeftModel.from_pretrained(base, base_adapter).merge_and_unload()` (`stage2/model.py:21-22`), then adds its own LoRA and the two new token rows. The domain knowledge from Stage 1 is therefore frozen into the weights before memory training begins. The merged adapter path is recorded in `training_config.json` so inference can reproduce it (`stage2/stream.py:46-50`).
+
+**What the new tokens are.** `<SHORT_MEM>` and `<LONG_MEM>` are not extra modules; they are two new rows in the embedding table (`stage2/model.py:23-24`) used as learnable **readout query positions**. One `<SHORT_MEM>` after each frame yields that second's short-memory vector (`encode_frame`, `stage2/model.py:50-65`). Sixty `<LONG_MEM>` queries over `[detached old long, current 60 short]` yield 60 new long-memory vectors that fully replace the previous long memory (`update_long`, `stage2/model.py:67-79`). Only the LoRA weights and these two embedding rows receive gradients; the rest of the vocabulary stays frozen.
+
+**Stage 2 → Stage 3.** At inference, `stage2/stream.py` runs the same causal 1-FPS recurrence **without teacher labels** and saves a `.pt` with `snapshots` (per-minute long-memory snapshots), `final_long` (shape `[1, 60, hidden]` once at least one minute elapsed), and `final_short` (shape `[1, k, hidden]`, `k<60`, the current partial minute) (`stage2/stream.py:14-31,62-64`). These are **memory vectors, not text**: the local/block/global text summaries exist only as Stage 2 training targets to make the vectors reconstructable (`reconstruction_loss`, `stage2/model.py:81-102`); Stage 3 consumes the compressed vectors directly as the `[Long memory] [Short memory]` prefix shown in the Stage 3 input diagram below.
+
+**Not yet implemented (open handoff).** No Stage 3 code currently reads the Stage 2 `.pt`, and the dedicated `<DECISION>` head is not implemented. `QA/train/train_summary_decide.py` appends long-memory tokens and generates WAIT/ANSWER text, but it is not aligned with Stage 2's fixed 60-token replacement update and has no BCE decision head. Treat the Stage 2 → Stage 3 memory interface as a specification, not a working pipeline, until a `.pt` reader and decision head exist.
+
+#### Per-stage input / target with examples
+
+Each stage below lists the model input, the supervision target, and one concrete example. Field names match the actual code.
+
+**Stage 1 — domain next-sentence prediction** (`stage1/data.py:105-117`, `stage1/model.py:14-55`)
+
+- **Input**: causal video frames over `[0, video_window_end]` (at most 120 frames per sample within that range) + an `Earlier narration:` block (the historical ASR before the target sentence, or `[ASR MASKED]` in the mask condition) + an instruction line. Each sentence yields **three conditions**: `before_with_asr` (video up to sentence start + historical ASR), `through_with_asr` (video up to sentence end + historical ASR), and `before_mask_asr` (video up to sentence start + masked ASR).
+- **Target**: the **same** complete narration sentence (`target`). Only target tokens contribute to the loss; system, frames, historical ASR, and instruction are masked (`model.py:49-51`).
+
+```text
+Real example (8V649L5Q368, before_with_asr)
+  Input  = frames[0–4.46s] + "Earlier narration: Hi, I'm Dr. John Kugler ... series."
+  Target = "Today, we're going to be learning about lung ultrasound."
+  before_mask_asr: same Input/Target, but narration → "[ASR MASKED]".
+```
+
+**Stage 2 — chronological visual memory** (`stage2/build_data.py`, `stage2/model.py`, `stage2/train.py`)
+
+- **Input**: **silent** video, one frame per completed second (no ASR), processed chronologically.
+- **Target** (eight teacher labels per full minute `T`, grouped into one block): six 10-second local summaries `local_sub_summaries`, one `[T-60,T)` block summary `block_summary_target`, and one `[0,T)` cumulative summary `global_summary_target`. Training reconstructs the matching memory vectors (short/block/global) from these texts with loss weights `1:1:1`.
+
+```text
+Illustrative example (first minute, block_window=[0,60])
+  Input = one frame per second, seconds 0..59 (silent)
+
+  Each loss = reconstruction_loss(memory vectors, target text, kind):
+    teacher-forced CE on the target tokens only (memory + prompt masked).
+
+  Lshort  (fires 6x, end of each 10s):
+    memory = that 10s's 10 short vectors        e.g. [40,50) -> short[40..49]
+    target = "Transverse right-liver view; no focal lesion."    (local[4])
+    loss   = CE(target | 10 short vectors)
+
+  Lblock  (fires 1x, at 60s):
+    memory = all 60 short vectors of the minute
+    target = "This minute: right-liver sweeps complete, no mass."  (block)
+    loss   = CE(target | 60 short vectors)
+
+  Lglobal (fires 1x, at 60s):
+    memory = 60 NEW long vectors from update_long(prev_long, 60 short)
+    target = "So far: right-liver planes scanned, homogeneous."    (global)
+    loss   = CE(target | 60 long vectors)
+
+  Per-step update:
+    seconds 10,20,30,40,50 -> total = Lshort
+    second  60             -> total = Lshort + Lblock + Lglobal   (1:1:1)
+```
+
+**Stage 3 — answerability decision + QA** (design in the root README Stage 3 section; `QA/train/train_summary_decide.py`, *decision head not yet implemented*)
+
+- **Input**: a shared memory prefix `[system/template][Long memory][Short memory]` + the current question + a `<DECISION>` readout token. Memory comes from Stage 2 `stream.py` vectors and is not rewritten per question.
+- **Target**: (1) an answerability binary label `y` (`y=0` insufficient evidence / `y=1` sufficient evidence) supervises the `<DECISION>` logit with BCE; (2) a text target supervised by NTP — `<WAIT>` plus a reason naming the currently missing evidence when `y=0`, or `<ANSWER>` plus a visually supported answer when `y=1`.
+
+```text
+Illustrative example — Question: "Is there a stone in the right kidney?"
+  Time A (kidney not yet scanned): Input=[memory]+Q+<DECISION>
+    → y=0, "<WAIT> Right kidney not shown yet; only liver scanned."
+  Time B (kidney shown, echogenic focus): Input=[memory]+Q+<DECISION>
+    → y=1, "<ANSWER> Echogenic focus with shadowing in lower pole; likely a stone."
+```
+
 ### Video collection, ASR transcription, and clipping
 
 Use `UltrasoundCrawler_KeyCode_20260323_v2/` to collect ultrasound videos from YouTube/Bilibili. `QA/prepare/run_prepare.py` runs ASR transcription and video clipping, producing timestamped transcripts and clip metadata for training-sample and QA construction.
