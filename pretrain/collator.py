@@ -222,6 +222,7 @@ class PretrainCollator:
             messages,
             tokenize=False,
             add_generation_prompt=False,
+            enable_thinking=False,
         )
         image_inputs, video_inputs = _process_vision(messages)
 

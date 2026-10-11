@@ -35,7 +35,8 @@ def encode(processor, row: dict, frames: list, *, max_asr_chars: int = 4000,
     conversation = messages(row, frames, max_asr_chars=max_asr_chars,
                             target=row["target"] if include_target else None)
     text = processor.apply_chat_template(conversation, tokenize=False,
-                                         add_generation_prompt=not include_target)
+                                         add_generation_prompt=not include_target,
+                                         enable_thinking=False)
     batch = processor(text=[text], images=frames, return_tensors="pt")
     if not include_target:
         return batch

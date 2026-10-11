@@ -114,7 +114,7 @@ out whole videos within the train split for validation.
 Run `stage1.evaluate` separately with `--visual-control blank` and
 `--visual-control shuffled` for matched visual-dependence controls. The video
 path map is a JSON object from `video_id` to an absolute video path. Full
-Qwen3-VL training and inference require the GPU dependencies in the repository
+Qwen3.5 training and inference require the GPU dependencies in the repository
 requirements and have not been verified on the target GPU yet.
 
 ### Seven-video recovery and merged pretraining data
@@ -146,3 +146,51 @@ The full job uses 120 frames, three epochs, and a 14-hour walltime per
 submission. If it times out, resubmit the same command to resume from its last
 saved checkpoint. Train and eval video maps remain separate: this merge uses
 only `train_full295` and no `eval_full295` transcripts.
+
+## Qwen3.5 pretraining default
+
+Stage 1 and the legacy `pretrain/train.py` / `pretrain/infer.py` now default
+to `Qwen/Qwen3.5-2B` (post-trained multimodal model, without an `-Instruct` suffix).
+Install `transformers>=5.2.0,<6` from the repository requirements. Chat templates
+explicitly disable thinking for narration-only training and evaluation. Existing
+LoRA projection targets are retained; this does not add adapters to every
+Qwen3.5 linear-attention projection.
+
+The Slurm default run name is `stage1_full295_merged_qwen35_2b`. Use a fresh
+output directory: Qwen3-VL adapters/checkpoints cannot resume on Qwen3.5.
+Override `--model-name` (or Slurm `MODEL_NAME`) to select another compatible
+Qwen3.5 size, and use the same base model for evaluation. Stage 2 and QA retain
+their previous defaults; do not merge a Qwen3.5 adapter into their Qwen3-VL base.
+The Qwen3.5 GPU training smoke run remains to be verified.
+
+## Matched Qwen3.5 2B / 4B / 9B experiments
+
+From the cluster repository root (after syncing the current code and installing
+requirements):
+
+```bash
+# Inspect submission commands without submitting jobs:
+DRY_RUN=1 bash scripts/slurm/submit_stage1_qwen35_sweep.sh all
+# Three 2-step training smoke jobs only:
+bash scripts/slurm/submit_stage1_qwen35_sweep.sh smoke
+# Or submit each smoke -> full train -> base/LoRA evaluation chain:
+bash scripts/slurm/submit_stage1_qwen35_sweep.sh all
+```
+
+Each size has separate `_smoke` and `_full` output directories under
+`$DATA/cluster_data/experiments/stage1/stage1_qwen35_comparison_*`.
+Set `SWEEP_NAME` to start a separate experiment. The comparison uses the same
+train JSONL, seed 42, video validation split, 120 frames, 224 frame size,
+LoRA rank 16, learning rate 1e-4, accumulation 8 and three epochs. Each job
+requests one H100; GPU feasibility, particularly 9B at 120 frames, must be
+established by its smoke run. Do not reduce only one model's frame budget for
+the matched comparison. A two-step run is not an exhaustive peak-memory test.
+
+Evaluation is a separate dependent job and writes base/LoRA predictions to
+`eval/base_normal.jsonl` and `eval/lora_normal.jsonl` within each full run.
+By default it uses the trainer's held-out validation rows; this is not the
+external final test set. Override both `EVAL_JSONL` and `EVAL_VIDEO_MAP` for
+that set. Failed/timed-out dependencies cancel downstream jobs. To continue
+full training from saved checkpoints and resubmit evaluation, use `full` with
+the same `SWEEP_NAME`; first ensure previous jobs are no longer running.
+These scripts prepare experiments; no accuracy claims follow from submission.

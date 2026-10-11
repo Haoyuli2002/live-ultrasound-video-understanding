@@ -74,7 +74,7 @@ def main():
     parser.add_argument("--train-jsonl", required=True)
     parser.add_argument("--video-path-map", required=True)
     parser.add_argument("--output-dir", required=True)
-    parser.add_argument("--model-name", default="Qwen/Qwen3-VL-2B-Instruct")
+    parser.add_argument("--model-name", default="Qwen/Qwen3.5-2B")
     parser.add_argument("--validation-fraction", type=float, default=0.1)
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--epochs", type=float, default=3)
@@ -100,7 +100,7 @@ def main():
         raise ValueError("Expected max_steps=-1 or positive, and positive save/logging steps")
 
     if not torch.cuda.is_available():
-        raise RuntimeError("Stage 1 Qwen3-VL training requires CUDA")
+        raise RuntimeError("Stage 1 Qwen3.5 training requires CUDA")
     rows = [json.loads(line) for line in Path(args.train_jsonl).read_text(encoding="utf-8").splitlines()
             if line.strip()]
     validate_rows(rows)

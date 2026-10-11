@@ -6,13 +6,13 @@ Pillow>=9.0.0
 # framediff if missing).
 scikit-image>=0.21.0
 
-# ===== VLM Filter / Training (Qwen2-VL / Qwen3-VL) =====
+# ===== VLM Filter / Training (Qwen3.5 pretraining; legacy Qwen-VL) =====
 # AzureML base images may contain NumPy-1.x-compiled pyarrow/pandas/sklearn.
 # Keep numpy < 2 to avoid `_ARRAY_API not found` import failures.
 torch>=2.0.0
 torchvision>=0.15.0
 numpy>=1.26.0,<2.0.0
-transformers>=4.57.0
+transformers>=5.2.0,<6
 accelerate>=1.1.0
 peft>=0.17.0
 qwen-vl-utils>=0.0.8

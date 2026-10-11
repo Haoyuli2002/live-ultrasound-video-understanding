@@ -1,5 +1,5 @@
 """
-LoRA pretraining for Qwen3-VL on ultrasound ASR caption completion.
+LoRA pretraining for Qwen3.5 on ultrasound ASR caption completion.
 
 This is independent from QA/train. It does NOT add <WAIT>/<ANSWER> special
 tokens; the task is pure narration continuation, so the vocab stays unchanged
@@ -8,7 +8,7 @@ and only LoRA adapters are trained (small, fast, low memory).
 Example (T4 friendly):
 
 python pretrain/train.py \
-  --model-name Qwen/Qwen3-VL-2B-Instruct \
+  --model-name Qwen/Qwen3.5-2B \
   --train-jsonl pretrain/data/pretrain_samples.jsonl \
   --video-path-map pretrain/data/video_path_map.json \
   --output-dir /mnt/cache/qwenFT/pretrain_qwen3vl_bf16 \
@@ -192,8 +192,8 @@ def find_latest_checkpoint(output_dir: str | Path) -> str | None:
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description="Qwen3-VL LoRA pretraining (ASR caption completion)")
-    parser.add_argument("--model-name", type=str, default="Qwen/Qwen3-VL-2B-Instruct")
+    parser = argparse.ArgumentParser(description="Qwen3.5 LoRA pretraining (ASR caption completion)")
+    parser.add_argument("--model-name", type=str, default="Qwen/Qwen3.5-2B")
     parser.add_argument("--train-jsonl", type=str, required=True)
     parser.add_argument("--output-dir", type=str, default="pretrain/checkpoints/pretrain_qwen3vl")
 

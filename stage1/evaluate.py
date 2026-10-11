@@ -18,7 +18,7 @@ def main():
     parser.add_argument("--eval-jsonl", required=True)
     parser.add_argument("--video-path-map", required=True)
     parser.add_argument("--output", required=True)
-    parser.add_argument("--model-name", default="Qwen/Qwen3-VL-2B-Instruct")
+    parser.add_argument("--model-name", default="Qwen/Qwen3.5-2B")
     parser.add_argument("--adapter-path")
     parser.add_argument("--visual-control", choices=["normal", "blank", "shuffled"], default="normal")
     parser.add_argument("--frame-budget", type=int, default=120)

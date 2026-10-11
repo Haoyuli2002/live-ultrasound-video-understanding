@@ -9,7 +9,7 @@ to eyeball whether pretraining taught ultrasound-relevant descriptions.
 Example:
 
 python pretrain/infer.py \
-  --model-name Qwen/Qwen3-VL-2B-Instruct \
+  --model-name Qwen/Qwen3.5-2B \
   --adapter-path /mnt/cache/qwenFT/pretrain_qwen3vl_bf16 \
   --eval-jsonl pretrain/data/pretrain_samples.jsonl \
   --video-path-map pretrain/data/video_path_map.json \
@@ -153,7 +153,7 @@ def generate_one(
             target=None,
             system_prompt=DEFAULT_SYSTEM_PROMPT,
         )
-    text = processor.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
+    text = processor.apply_chat_template(messages, tokenize=False, add_generation_prompt=True, enable_thinking=False)
     image_inputs, video_inputs = process_vision(messages)
 
     kwargs = {"text": [text], "padding": True, "return_tensors": "pt"}
@@ -198,7 +198,7 @@ def load_completed_indices(output_path: Path) -> Set[int]:
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Pretrain (ASR caption) LoRA inference")
-    parser.add_argument("--model-name", type=str, default="Qwen/Qwen3-VL-2B-Instruct")
+    parser.add_argument("--model-name", type=str, default="Qwen/Qwen3.5-2B")
     parser.add_argument("--adapter-path", type=str, default=None,
                         help="LoRA adapter dir from pretrain/train.py. Omit (or use "
                              "--no-adapter) to run the raw base model as a baseline.")
