@@ -9,13 +9,17 @@ SWEEP_NAME=${SWEEP_NAME:-stage1_qwen35_comparison}
 [[ "$SWEEP_NAME" =~ ^[a-zA-Z0-9_-]+$ ]] || { echo 'Invalid SWEEP_NAME' >&2; exit 2; }
 cd "$REPO"
 [[ -f scripts/slurm/run_stage1_pretrain_merged.sbatch ]]
-mkdir -p logs
+LOG_DIR=${LOG_DIR:-$DATA/cluster_data/logs/$SWEEP_NAME}
+if [[ ${DRY_RUN:-0} != 1 ]]; then
+  mkdir -p "$LOG_DIR"
+fi
 submit() {
+  local log_options=(--output="$LOG_DIR/%x_%j.out" --error="$LOG_DIR/%x_%j.err")
   if [[ ${DRY_RUN:-0} == 1 ]]; then
-    printf 'sbatch ' >&2; printf '%q ' "$@" >&2; printf '\n' >&2
+    printf 'sbatch ' >&2; printf '%q ' "${log_options[@]}" "$@" >&2; printf '\n' >&2
     echo 12345
   else
-    sbatch --parsable "$@" | cut -d';' -f1
+    sbatch --parsable "${log_options[@]}" "$@" | cut -d';' -f1
   fi
 }
 for size in 2 4 9; do

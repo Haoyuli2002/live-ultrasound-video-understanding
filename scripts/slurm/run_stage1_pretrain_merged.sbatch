@@ -34,6 +34,7 @@ else
   source "$HOME/miniconda3/etc/profile.d/conda.sh"
 fi
 conda activate ultrasound
+source "$REPO/scripts/slurm/stage1_storage.sh"
 
 [[ -f "$TRAIN_JSONL" ]] || { echo "Missing merged Stage 1 samples: $TRAIN_JSONL" >&2; exit 1; }
 [[ -f "$VIDEO_MAP" ]] || { echo "Missing video map: $VIDEO_MAP" >&2; exit 1; }

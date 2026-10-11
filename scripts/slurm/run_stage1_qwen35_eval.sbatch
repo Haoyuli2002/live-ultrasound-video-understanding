@@ -13,6 +13,7 @@ set -euo pipefail
 cd "$REPO"
 source "${CONDA_SH:-/dss/dsshome1/04/ge75vid2/miniconda3/etc/profile.d/conda.sh}"
 conda activate ultrasound
+source "$REPO/scripts/slurm/stage1_storage.sh"
 # Default is the identical held-out validation split created by each trainer.
 # Supply both EVAL_JSONL and EVAL_VIDEO_MAP for a separate final test split.
 EVAL_JSONL=${EVAL_JSONL:-$OUTPUT_DIR/validation_samples.jsonl}

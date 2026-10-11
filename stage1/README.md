@@ -194,3 +194,36 @@ that set. Failed/timed-out dependencies cancel downstream jobs. To continue
 full training from saved checkpoints and resubmit evaluation, use `full` with
 the same `SWEEP_NAME`; first ensure previous jobs are no longer running.
 These scripts prepare experiments; no accuracy claims follow from submission.
+
+### Cluster storage (existing ultrasound environment)
+
+The sweep stores datasets, checkpoints and evaluation outputs under
+`/dss/mcmlscratch/04/ge75vid2/haoyu/live-ultrasound-video-understanding`
+(`DATA`). Slurm logs go to `$DATA/cluster_data/logs/$SWEEP_NAME`, created
+before submission; the sweep overrides the individual sbatch files' relative
+log defaults. Direct `sbatch` users must pass `--output` and `--error` with an
+existing scratch directory to relocate scheduler logs too.
+
+Both training and evaluation source `scripts/slurm/stage1_storage.sh` after
+activating the existing `ultrasound` environment. Model weights reuse
+`/dss/mcmlscratch/04/ge75vid2/haoyu/hf_cache`, matching the teacher jobs.
+Other download caches live alongside it; job-specific temporary and compilation
+files live in `$DATA/tmp/stage1_JOBID`. These variables deliberately replace
+inherited home-based cache settings. Set `STAGE1_CACHE_ROOT` to choose another
+cache parent. Existing home files and installed environments are not moved or
+deleted, so this change does not free an already-exhausted home quota.
+
+To use the same cache settings for interactive commands, from the repository:
+
+```bash
+conda activate ultrasound
+export DATA=/dss/mcmlscratch/04/ge75vid2/haoyu/live-ultrasound-video-understanding
+source scripts/slurm/stage1_storage.sh
+```
+
+Changing download-cache paths does not relocate installed packages: installing
+into the existing home-based environment still writes there. No environment
+recreation is required for this change. Temporary directories are retained for
+debugging; remove only directories belonging to finished jobs when no longer
+needed. Verify scratch capacity and the site's retention policy before relying
+on it for the only copy of a checkpoint.
