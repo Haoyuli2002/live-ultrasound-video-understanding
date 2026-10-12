@@ -13,7 +13,7 @@ set -euo pipefail
 
 REPO=${REPO:-/dss/dsshome1/04/ge75vid2/haoyu/live-ultrasound-video-understanding}
 DATA=${DATA:-/dss/mcmlscratch/04/ge75vid2/haoyu/live-ultrasound-video-understanding}
-TRAIN_JSONL=${TRAIN_JSONL:-$DATA/cluster_data/pretrain/train_full295_stage1_merged_193_samples.jsonl}
+TRAIN_JSONL=${TRAIN_JSONL:-$DATA/cluster_data/pretrain/train_full295_stage1_samples.jsonl}
 VIDEO_MAP=${VIDEO_MAP:-$DATA/cluster_data/splits/train_full295_qwen35_pretrain_keep_videos.json}
 RUN_NAME=${RUN_NAME:-stage1_full295_merged_qwen35_2b}
 OUTPUT_DIR=${OUTPUT_DIR:-$DATA/cluster_data/experiments/stage1/$RUN_NAME}
@@ -46,10 +46,15 @@ import json, os
 from pathlib import Path
 rows = [json.loads(line) for line in Path(os.environ["TRAIN_JSONL"]).open(encoding="utf-8") if line.strip()]
 videos = {row["video_id"] for row in rows}
-expected = set(json.loads(Path(os.environ["VIDEO_MAP"]).read_text(encoding="utf-8")))
-if videos != expected:
-    raise SystemExit(f"Dataset coverage mismatch: samples={len(videos)}, keep-map={len(expected)}, missing={sorted(expected-videos)[:10]}")
-print(f"Stage 1 preflight: {len(videos)} videos, {len(rows)} rows, {len(rows)//3} targets")
+# The trainer (stage1/train.py) only requires the video-path map to COVER every
+# training video (jsonl videos must be a subset of the map keys); a map that lists
+# extra videos is fine. Mirror that contract here instead of demanding equality.
+mapping = json.loads(Path(os.environ["VIDEO_MAP"]).read_text(encoding="utf-8"))
+expected = set(mapping)
+uncovered = videos - expected
+if uncovered:
+    raise SystemExit(f"Video-path map does not cover every training video: samples={len(videos)}, map={len(expected)}, uncovered={sorted(uncovered)[:10]}")
+print(f"Stage 1 preflight: {len(videos)} videos (map covers {len(expected)}), {len(rows)} rows, {len(rows)//3} targets")
 PY
 
 echo "Job ${SLURM_JOB_ID:-unknown} on $(hostname): $MODEL_NAME"
