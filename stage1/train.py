@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+import gc
 import json
 import random
 from pathlib import Path
@@ -69,6 +70,58 @@ def validate_rows(rows: list[dict]):
             raise ValueError(f"Stage 1 condition semantics mismatch: {key}")
 
 
+def _is_cuda_oom(error: BaseException) -> bool:
+    """True for CUDA out-of-memory errors regardless of the exact exception class."""
+    if isinstance(error, torch.cuda.OutOfMemoryError):
+        return True
+    return isinstance(error, RuntimeError) and "out of memory" in str(error).lower()
+
+
+def _free_cuda(*objects) -> None:
+    """Drop references and release cached CUDA memory before an OOM retry."""
+    for obj in objects:
+        del obj
+    gc.collect()
+    if torch.cuda.is_available():
+        torch.cuda.empty_cache()
+        torch.cuda.ipc_collect()
+
+
+def build_and_train(args, *, frame_budget, train_rows, val_rows, paths, output,
+                    dtype, resume_checkpoint):
+    """Build the model/trainer at one frame budget and run training to completion.
+
+    Returns the trained model and processor. Raises on CUDA OOM so the caller can
+    retry at a smaller frame budget from the latest checkpoint.
+    """
+    model, processor = load_model(args.model_name, dtype, args.lora_rank)
+    model.gradient_checkpointing_enable()
+    if hasattr(model.config, "use_cache"):
+        model.config.use_cache = False
+    training_args = TrainingArguments(
+        output_dir=str(output), num_train_epochs=args.epochs,
+        max_steps=args.max_steps,
+        per_device_train_batch_size=1, per_device_eval_batch_size=1,
+        gradient_accumulation_steps=args.gradient_accumulation_steps,
+        learning_rate=args.learning_rate, remove_unused_columns=False,
+        eval_strategy="epoch" if val_rows else "no",
+        save_strategy="steps", save_steps=args.save_steps, save_total_limit=3,
+        logging_steps=args.logging_steps,
+        load_best_model_at_end=False,
+        bf16=args.dtype == "bf16", fp16=args.dtype == "fp16",
+        report_to="none")
+    trainer = Trainer(model=model, args=training_args,
+                      train_dataset=Examples(train_rows, paths, frame_budget, args.frame_size,
+                                             args.frame_sampling, args.recent_seconds),
+                      eval_dataset=Examples(val_rows, paths, frame_budget, args.frame_size,
+                                            args.frame_sampling, args.recent_seconds) if val_rows else None,
+                      data_collator=Collator(processor, args.max_asr_chars))
+    trainer.train(resume_from_checkpoint=resume_checkpoint)
+    trainer.save_model(str(output / "final"))
+    processor.save_pretrained(str(output / "final"))
+    return model, processor, trainer
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--train-jsonl", required=True)
@@ -81,6 +134,9 @@ def main():
     parser.add_argument("--learning-rate", type=float, default=1e-4)
     parser.add_argument("--gradient-accumulation-steps", type=int, default=8)
     parser.add_argument("--frame-budget", type=int, default=120)
+    parser.add_argument("--oom-fallback-frame-budgets", type=str, default="48,36,24",
+                        help="Comma-separated smaller frame budgets to retry (from a saved "
+                             "checkpoint) after a CUDA out-of-memory error; empty to disable")
     parser.add_argument("--frame-size", type=int, default=224)
     parser.add_argument("--frame-sampling", choices=("uniform", "recent_sparse"),
                         default="uniform")
@@ -118,7 +174,6 @@ def main():
     val_rows = [row for row in rows if row["video_id"] in held_out]
     output = Path(args.output_dir)
     output.mkdir(parents=True, exist_ok=True)
-    checkpoint = get_last_checkpoint(str(output)) if args.resume else None
     (output / "video_split.json").write_text(json.dumps({
         "seed": args.seed,
         "train_video_ids": sorted(set(videos) - held_out),
@@ -126,35 +181,45 @@ def main():
     }, indent=2), encoding="utf-8")
     (output / "validation_samples.jsonl").write_text(
         "".join(json.dumps(row, ensure_ascii=False)+"\n" for row in val_rows), encoding="utf-8")
-    (output / "training_config.json").write_text(
-        json.dumps(vars(args), indent=2, ensure_ascii=False), encoding="utf-8")
     dtype = {"bf16": torch.bfloat16, "fp16": torch.float16,
              "fp32": torch.float32}[args.dtype]
-    model, processor = load_model(args.model_name, dtype, args.lora_rank)
-    model.gradient_checkpointing_enable()
-    if hasattr(model.config, "use_cache"):
-        model.config.use_cache = False
-    training_args = TrainingArguments(
-        output_dir=str(output), num_train_epochs=args.epochs,
-        max_steps=args.max_steps,
-        per_device_train_batch_size=1, per_device_eval_batch_size=1,
-        gradient_accumulation_steps=args.gradient_accumulation_steps,
-        learning_rate=args.learning_rate, remove_unused_columns=False,
-        eval_strategy="epoch" if val_rows else "no",
-        save_strategy="steps", save_steps=args.save_steps, save_total_limit=3,
-        logging_steps=args.logging_steps,
-        load_best_model_at_end=False,
-        bf16=args.dtype == "bf16", fp16=args.dtype == "fp16",
-        report_to="none")
-    trainer = Trainer(model=model, args=training_args,
-                      train_dataset=Examples(train_rows, paths, args.frame_budget, args.frame_size,
-                                             args.frame_sampling, args.recent_seconds),
-                      eval_dataset=Examples(val_rows, paths, args.frame_budget, args.frame_size,
-                                            args.frame_sampling, args.recent_seconds) if val_rows else None,
-                      data_collator=Collator(processor, args.max_asr_chars))
-    trainer.train(resume_from_checkpoint=checkpoint)
-    trainer.save_model(str(output / "final"))
-    processor.save_pretrained(str(output / "final"))
+
+    # Frame budgets to try in order: the requested budget first, then any smaller
+    # fallbacks. A CUDA out-of-memory error retries at the next smaller budget,
+    # resuming from the latest saved checkpoint so completed steps are not lost.
+    fallbacks = [int(part) for part in args.oom_fallback_frame_budgets.split(",")
+                 if part.strip()]
+    if any(budget <= 0 for budget in fallbacks):
+        raise ValueError("--oom-fallback-frame-budgets must list positive integers")
+    budgets = [args.frame_budget] + [budget for budget in sorted(set(fallbacks), reverse=True)
+                                     if budget < args.frame_budget]
+
+    for attempt, frame_budget in enumerate(budgets):
+        resume_checkpoint = get_last_checkpoint(str(output)) if args.resume else None
+        print(f"Stage 1 training attempt {attempt+1}/{len(budgets)}: frame_budget={frame_budget}"
+              f"{'' if resume_checkpoint is None else f'; resume={resume_checkpoint}'}", flush=True)
+        (output / "training_config.json").write_text(
+            json.dumps({**vars(args), "active_frame_budget": frame_budget}, indent=2,
+                       ensure_ascii=False), encoding="utf-8")
+        try:
+            build_and_train(args, frame_budget=frame_budget, train_rows=train_rows,
+                            val_rows=val_rows, paths=paths, output=output, dtype=dtype,
+                            resume_checkpoint=resume_checkpoint)
+            print(f"Stage 1 training completed at frame_budget={frame_budget}", flush=True)
+            return
+        except Exception as error:  # noqa: BLE001 - re-raised unless it is a CUDA OOM
+            if not _is_cuda_oom(error):
+                raise
+            _free_cuda()
+            remaining = budgets[attempt+1:]
+            if not remaining:
+                raise RuntimeError(
+                    f"CUDA out of memory at frame_budget={frame_budget} with no smaller "
+                    f"fallback left; lower --frame-budget or extend "
+                    f"--oom-fallback-frame-budgets") from error
+            print(f"CUDA out of memory at frame_budget={frame_budget}; retrying at "
+                  f"{remaining[0]} from the latest checkpoint", flush=True)
+
 
 
 if __name__ == "__main__":
