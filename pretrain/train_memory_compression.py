@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""Stage-2 summary-compression training for Qwen3-VL + LoRA.
+"""Stage-2 summary-compression training for Qwen3.5 + LoRA.
 
-Main design: video-only memory tokens reconstruct teacher-generated visual
-summaries:
-  short: current short memories -> local visual summary
-  long : L_{k-1} + S_k -> L_k -> cumulative visual summary
+Default streaming design: one frame per second, one optimizer step per 10s.
+  short: last 10 tokens -> 10-second summary
+  local: all 60 short tokens -> minute summary
+  global: L_{k-1} + S_k -> 60 new long tokens -> cumulative summary
+States from preceding updates are retained and detached, never recomputed.
 
 The previously implemented ASR reconstruction objective is still supported as a
 baseline / bootstrapping path for validating the memory-token pipeline.
@@ -13,6 +14,7 @@ baseline / bootstrapping path for validating the memory-token pipeline.
 from __future__ import annotations
 
 import argparse
+import json
 import os
 from pathlib import Path
 
@@ -273,16 +275,74 @@ def train_one_sample(model, collator, sample, device, *, lambda_all: float, lamb
     raise ValueError(f"Unsupported sample_type: {typ}")
 
 
+def train_chronological(args, model, processor, device):
+    try:
+        from .streaming_memory import prepare_blocks, train_stream
+        from .video_sampling import sample_uniform_n_frames
+    except ImportError:
+        from streaming_memory import prepare_blocks, train_stream
+        from video_sampling import sample_uniform_n_frames
+    if args.short_frames != 1 or args.max_short_windows is not None:
+        raise ValueError("Streaming mode requires --short-frames 1 and no --max-short-windows")
+    with open(args.train_jsonl, encoding="utf-8") as f:
+        rows = [json.loads(line) for line in f if line.strip()]
+    # Validate full input before model forwards; limit is applied only afterwards.
+    blocks = list(prepare_blocks(rows))
+    if args.limit is not None:
+        blocks = blocks[:args.limit]
+    if not blocks:
+        raise ValueError("No streaming blocks")
+    resolver = MemoryCompressionDataset(args.train_jsonl, repo_root=args.repo_root,
+        video_root=args.video_root, default_video_path=args.default_video_path,
+        video_path_map=args.video_path_map, short_frames=1, frame_size=args.frame_size)
+    paths = {row["video_id"]: resolver._resolve_video_path(row) for row in blocks}
+    collator = MemoryCompressionCollator(processor=processor)
+    optimizer = torch.optim.AdamW([p for p in model.parameters() if p.requires_grad], lr=args.learning_rate)
+    out = Path(args.output_dir)
+    out.mkdir(parents=True, exist_ok=True)
+    (out / "training_config.json").write_text(json.dumps(vars(args), indent=2), encoding="utf-8")
+    with (out / "training_metrics.jsonl").open("w", encoding="utf-8") as log:
+        for epoch in range(args.num_train_epochs):
+            def encode_second(row, second):
+                # One frame at each one-second interval's end, available at that time.
+                frames = sample_uniform_n_frames(paths[row["video_id"]], second, second + 1,
+                    n_frames=1, resize=args.frame_size)
+                return encode_short_memory(model, collator, frames, device)
+            def decode_short(states, target, task):
+                return decode_memory_loss(model, collator,
+                    short_decode_messages(len(states), target=target, task=task),
+                    SHORT_MEMORY_TOKEN, states, target, device)
+            def decode_global(states, target):
+                return decode_memory_loss(model, collator,
+                    long_decode_messages(len(states), task="global_summary", target=target),
+                    LONG_MEMORY_TOKEN, states, target, device)
+            def report(vid, time, losses, total):
+                record = dict(epoch=epoch, video_id=vid, time=time,
+                    loss=float(total.detach()), **{f"loss_{k}": float(v.detach()) for k,v in losses.items()})
+                log.write(json.dumps(record) + "\n")
+                log.flush()
+                print(record)
+            train_stream(blocks, encode_second=encode_second, decode_short=decode_short,
+                encode_long=lambda short, previous: encode_long_states(model, collator, short, previous, 60, device),
+                decode_global=decode_global, optimizer=optimizer, backward=lambda loss: loss.backward(),
+                clip_grad=lambda: torch.nn.utils.clip_grad_norm_(model.parameters(), args.grad_clip) if args.grad_clip > 0 else None,
+                report=report)
+    model.save_pretrained(out)
+    processor.save_pretrained(out)
+
+
 def parse_args():
     p = argparse.ArgumentParser(description="Stage-2 summary compression training")
-    p.add_argument("--model-name", default="Qwen/Qwen3-VL-2B-Instruct")
+    p.add_argument("--model-name", default="Qwen/Qwen3.5-2B")
     p.add_argument("--train-jsonl", required=True)
     p.add_argument("--output-dir", required=True)
     p.add_argument("--repo-root", default=".")
     p.add_argument("--video-root", default=None)
     p.add_argument("--default-video-path", default=None)
     p.add_argument("--video-path-map", default=None)
-    p.add_argument("--short-frames", type=int, default=2)
+    p.add_argument("--short-frames", type=int, default=1)
+    p.add_argument("--training-mode", choices=["streaming", "legacy"], default="streaming",
+                   help="Streaming uses dense teacher block rows, chronological state, and fixed 1:1:1 losses")
     p.add_argument("--frame-size", type=int, default=224)
     p.add_argument("--max-short-windows", type=int, default=None)
     p.add_argument("--max-previous-blocks", type=int, default=1)
@@ -320,6 +380,10 @@ def main():
     maybe_freeze_vision(model, args.freeze_vision)
     model = build_lora(args, model)
     model.to(device).train()
+    model.config.use_cache = False
+    if args.training_mode == "streaming":
+        train_chronological(args, model, processor, device)
+        return
 
     dataset = MemoryCompressionDataset(
         args.train_jsonl,

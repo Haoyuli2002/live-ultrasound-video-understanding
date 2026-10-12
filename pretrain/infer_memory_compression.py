@@ -51,7 +51,7 @@ def encode_short(model, collator, frames, device):
         raise RuntimeError("No <SHORT_MEM> in prompt")
     with torch.no_grad():
         out = model(**encoded, output_hidden_states=True)
-    return out.hidden_states[-1][:, pos[-1], :]
+    return out.hidden_states[-1][:, pos[-1], :].clone()
 
 
 def encode_short_states(model, collator, frames_list, device):
@@ -77,30 +77,32 @@ def encode_long_states(model, collator, short_states, previous_long_states, long
         encoded = replace_token_embeddings(model, encoded, positions, vectors)
     with torch.no_grad():
         out = model(**encoded, output_hidden_states=True)
-    return [out.hidden_states[-1][:, p, :] for p in new_pos]
+    return [out.hidden_states[-1][:, p, :].clone() for p in new_pos]
 
 
 def generate_from_memory(model, collator, sample, memory_states, memory_token, device, max_new_tokens):
     if memory_token == SHORT_MEMORY_TOKEN:
-        task = "local_summary" if sample.get("local_summary_target") else "asr"
+        task = sample.get("decode_task") or ("local_summary" if sample.get("local_summary_target") else "asr")
         messages = short_decode_messages(short_count=len(memory_states), task=task)
     else:
         task = "global_summary" if sample.get("global_summary_target") else "accumulated"
         messages = long_decode_messages(long_count=len(memory_states), task=task)
     tok = collator.processor.tokenizer.convert_tokens_to_ids(memory_token)
-    encoded = move_to_device(collator.encode_messages(messages), device)
+    # Generation needs the assistant header, unlike teacher-forced loss prompts.
+    text = collator.processor.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
+    encoded = move_to_device(collator.processor(text=[text], return_tensors="pt"), device)
     ids = encoded["input_ids"][0]
     pos = token_positions(ids, tok)
     encoded = replace_token_embeddings(model, encoded, pos[-len(memory_states):], memory_states)
     with torch.no_grad():
         gen = model.generate(**encoded, max_new_tokens=max_new_tokens, do_sample=False)
-    new = gen[:, encoded["inputs_embeds"].shape[1]:]
+    new = gen  # inputs_embeds-only generation returns newly generated IDs.
     return collator.processor.batch_decode(new, skip_special_tokens=True, clean_up_tokenization_spaces=False)[0].strip()
 
 
 def parse_args():
     p = argparse.ArgumentParser(description="Infer Stage-2 summary-compression checkpoint")
-    p.add_argument("--model-name", default="Qwen/Qwen3-VL-2B-Instruct")
+    p.add_argument("--model-name", default="Qwen/Qwen3.5-2B")
     p.add_argument("--adapter-path", required=True)
     p.add_argument("--eval-jsonl", required=True)
     p.add_argument("--output", required=True)
@@ -108,7 +110,9 @@ def parse_args():
     p.add_argument("--video-root", default=None)
     p.add_argument("--default-video-path", default=None)
     p.add_argument("--video-path-map", default=None)
-    p.add_argument("--short-frames", type=int, default=2)
+    p.add_argument("--short-frames", type=int, default=1)
+    p.add_argument("--inference-mode", choices=["streaming", "legacy"], default="streaming")
+    p.add_argument("--init-adapter", default=None, help="Stage 1 adapter merged before loading the Stage 2 adapter")
     p.add_argument("--frame-size", type=int, default=224)
     p.add_argument("--max-short-windows", type=int, default=60)
     p.add_argument("--max-previous-blocks", type=int, default=1)
@@ -119,15 +123,66 @@ def parse_args():
     return p.parse_args()
 
 
+def infer_chronological(args, model, processor, device):
+    from streaming_memory import prepare_blocks
+    from video_sampling import sample_uniform_n_frames
+    if args.short_frames != 1:
+        raise ValueError("Streaming inference requires --short-frames 1")
+    with open(args.eval_jsonl, encoding="utf-8") as source:
+        blocks = list(prepare_blocks([json.loads(line) for line in source if line.strip()]))
+    if args.limit is not None:
+        blocks = blocks[:args.limit]
+    resolver = MemoryCompressionDataset(args.eval_jsonl, repo_root=args.repo_root,
+        video_root=args.video_root, default_video_path=args.default_video_path,
+        video_path_map=args.video_path_map, short_frames=1, frame_size=args.frame_size)
+    collator = MemoryCompressionCollator(processor)
+    out = Path(args.output)
+    out.parent.mkdir(parents=True, exist_ok=True)
+    current_video, long = None, []
+    index = 0
+    with out.open("w", encoding="utf-8") as f:
+        for row in blocks:
+            if row["video_id"] != current_video:
+                current_video, long = row["video_id"], []
+            path = resolver._resolve_video_path(row)
+            short = []
+            for j, sub in enumerate(row["local_sub_summaries"]):
+                fresh = [encode_short(model, collator, sample_uniform_n_frames(path, t, t+1,
+                    n_frames=1, resize=args.frame_size), device)
+                    for t in range(int(sub["window"][0]), int(sub["window"][1]))]
+                short.extend(fresh)
+                tasks = [("short_memory_summary", fresh, SHORT_MEMORY_TOKEN, "local_summary", sub["local_summary_target"])]
+                if j == 5:
+                    tasks.append(("block_memory_summary", short, SHORT_MEMORY_TOKEN, "block_summary", row["block_summary_target"]))
+                    long = encode_long_states(model, collator, short, long, 60, device)
+                    tasks.append(("long_memory_summary", long, LONG_MEMORY_TOKEN, "global_summary", row["global_summary_target"]))
+                for typ, states, token, task, target in tasks:
+                    pred = generate_from_memory(model, collator,
+                        {"decode_task": task, "global_summary_target": target if task == "global_summary" else None},
+                        states, token, device, args.max_new_tokens)
+                    f.write(json.dumps(dict(idx=index, video_id=current_video, time=sub["window"][1],
+                        sample_type=typ, target=target, prediction=pred), ensure_ascii=False)+"\n")
+                    index += 1
+    print(f"[memory-infer] wrote {index} predictions to {out}")
+
+
 def main():
     args = parse_args()
     device = "cuda" if torch.cuda.is_available() else "cpu"
     dtype = torch.bfloat16 if args.bf16 else torch.float16 if args.fp16 else torch.float32
     processor = AutoProcessor.from_pretrained(args.adapter_path, trust_remote_code=True)
     model = load_model(args.model_name, dtype)
+    config_path = Path(args.adapter_path) / "training_config.json"
+    config = json.loads(config_path.read_text()) if config_path.exists() else {}
+    init_adapter = args.init_adapter or config.get("init_adapter")
+    if init_adapter:
+        model = PeftModel.from_pretrained(model, init_adapter).merge_and_unload()
     if model.get_input_embeddings().num_embeddings != len(processor.tokenizer):
         model.resize_token_embeddings(len(processor.tokenizer))
     model = PeftModel.from_pretrained(model, args.adapter_path).to(device).eval()
+    if args.inference_mode == "streaming":
+        infer_chronological(args, model, processor, device)
+        return
     dataset = MemoryCompressionDataset(
         args.eval_jsonl,
         repo_root=args.repo_root,
