@@ -18,7 +18,7 @@
 | VLM 数据生成：local/block/global summary | 每个完整分钟生成六条 10 秒、一条整分钟和一条累计视觉摘要，为 Stage 2 提供监督 | 新 `stage2.annotate` 与 `stage2.build_data` 已实现八条标注及转换；符合新规格的数据尚未实际生成和审核，旧分钟级标注不可直接使用 |
 | Stage 2：视觉记忆 | 每秒一个短期 token；每 60 秒全量更新为 60 个长期 token；使用 local/global summary 监督 | 新建独立 `stage2/` 时序训练和流式推理代码；GPU 实跑待验证 |
 | QA 构建 | 标注 `query_time` 和最早证据充分的 `answer_time`，并验证 | 已有生成、验证和 WAIT/ANSWER 展开；自动时间戳是候选标注，不是专家真值 |
-| Stage 3：可回答性与 QA | `<DECISION>` 隐状态 → BCE 二分类；WAIT 原因与 ANSWER 答案均用 NTP 监督 | 当前生成 `<WAIT>`/`<ANSWER>` 文本，尚未实现独立决策头 |
+| Stage 3：可回答性与 QA | `<DECISION>` 隐状态 → BCE 二分类；WAIT 原因与 ANSWER 答案均用 NTP 监督 | 已实现双模型加载、独立 BCE 头、规范输入顺序和单样本 BCE+NTP 前向；训练 CLI、生成和多问题 KV cache 待实现 |
 | Eval：评估 | 因果流式评估：可回答性、回答时机、答案质量、记忆保留与运行效率 | 已有预训练、记忆与 QA 基线评估脚本；完整在线循环和 benchmark 协议待实现与验证 |
 
 ## 模型流程
@@ -27,21 +27,21 @@ ASR 用于数据准备和 Stage 1 的训练目标；在 Stage 1 的两组条件�
 
 ### 各阶段接口与衔接
 
-三个阶段共用**同一个 Qwen3-VL backbone**；每个阶段在上一阶段产物之上追加参数，而不是另起一个独立网络。下表是各阶段"产出什么、下一阶段消费什么、哪些衔接尚未实现"的唯一事实来源，文件行号对应当前代码。
+三个阶段统一使用 **`Qwen/Qwen3.5-2B` backbone**。Stage 2 在 Stage 1 产物上追加参数；Stage 3 为避免 QA 梯度破坏视觉记忆，加载两个独立的 Stage 2 权重实例：一个冻结产 memory，一个追加参数做决策。各阶段必须使用完全相同的 base model identifier，Qwen3-VL adapter 不能与 Qwen3.5 混用。下表是各阶段“产出什么、下一阶段消费什么、哪些衔接尚未实现”的事实来源。
 
 | 阶段 | 新增可训练参数 | 产出 | 下一阶段消费 |
 |---|---|---|---|
 | Stage 1 | 在 `q/k/v/o_proj` + `gate/up/down_proj` 上的 LoRA（`stage1/model.py:65-68`） | `stage1_output/final` 的 LoRA adapter | Stage 2 的基座权重 |
-| Stage 2 | 新的 LoRA，**外加**两个可学习 token embedding `<SHORT_MEM>` / `<LONG_MEM>`，经 PEFT `trainable_token_indices` 训练（`stage2/model.py:23-38`） | `stage2_output/final` 的 adapter + resize 后的 embedding；以及流式记忆 `.pt`（`stage2/stream.py:62-64`） | Stage 3 的记忆输入 |
-| Stage 3 | 专用 `<DECISION>` 读出位 + BCE 头（仅设计） | WAIT/ANSWER 文本 + 可答性 logit | — |
+| Stage 2 | 新的 LoRA，**外加**两个可学习 token embedding `<SHORT_MEM>` / `<LONG_MEM>`，经 PEFT `trainable_token_indices` 训练（`stage2/model.py:32-48`） | `stage2_output/final` 的 adapter + resize 后的 embedding；流式记忆向量（在线由冻结 memory 模型实时产出，可选保存 `.pt`，`stage2/stream.py:62-64`） | Stage 3 的记忆输入 |
+| Stage 3 | **两个模型**：① 完全冻结的 Stage 2 memory 模型；② 独立 Stage 2 权重副本 + 新 LoRA + `<DECISION>`/`<WAIT>`/`<ANSWER>` token + BCE 头 | 单样本 BCE/NTP 接口已实现；完整训练与在线推理产物待实现 | — |
 
-**Stage 1 → Stage 2。** Stage 2 启动时先加载 Stage 1 adapter，并用 `PeftModel.from_pretrained(base, base_adapter).merge_and_unload()` 将其烤进 backbone（`stage2/model.py:21-22`），再在其上加自己的 LoRA 和两行新 token。因此 Stage 1 注入的领域知识在记忆训练开始前已固化进权重。合并所用的 adapter 路径记录在 `training_config.json`，供推理复现（`stage2/stream.py:46-50`）。
+**Stage 1 → Stage 2。** Stage 2 启动时先检查 Stage 1 adapter 的 base model 与当前 Qwen3.5 完全一致，再用 `PeftModel.from_pretrained(base, base_adapter).merge_and_unload()` 将其烤进 backbone（`stage2/model.py:29-31`），随后添加自己的 LoRA 和两行新 token。因此 Stage 1 注入的领域知识在记忆训练开始前已固化进权重。合并所用的 adapter 路径记录在 `training_config.json`，供推理复现（`stage2/stream.py:46-50`）。
 
-**这两个新 token 是什么。** `<SHORT_MEM>` 和 `<LONG_MEM>` 不是额外的网络模块，而是词嵌入表里新增的两行向量（`stage2/model.py:23-24`），用作可学习的**读出查询位**。每帧后接一个 `<SHORT_MEM>`，取其隐状态作为该秒的短记忆向量（`encode_frame`，`stage2/model.py:50-65`）；对 `[detach 的旧长记忆, 当前 60 个短向量]` 施加 60 个 `<LONG_MEM>` 查询，得到 60 个新长记忆向量，**整块替换**旧长记忆（`update_long`，`stage2/model.py:67-79`）。只有 LoRA 权重和这两行 embedding 接收梯度，其余词表全部冻结。
+**这两个新 token 是什么。** `<SHORT_MEM>` 和 `<LONG_MEM>` 不是额外的网络模块，而是词嵌入表里新增的两行向量（`stage2/model.py:32-35`），用作可学习的**读出查询位**。每帧后接一个 `<SHORT_MEM>`，取其隐状态作为该秒的短记忆向量（`encode_frame`，`stage2/model.py:60-76`）；对 `[detach 的旧长记忆, 当前 60 个短向量]` 施加 60 个 `<LONG_MEM>` 查询，得到 60 个新长记忆向量，**整块替换**旧长记忆（`update_long`，`stage2/model.py:78-90`）。只有 LoRA 权重和这两行 embedding 接收梯度，其余词表全部冻结。
 
-**Stage 2 → Stage 3。** 推理时 `stage2/stream.py` 以同样的因果 1-FPS 递归运行，但**不使用教师标签**，并保存一个 `.pt`，内含 `snapshots`（每分钟的长记忆快照）、`final_long`（至少满一分钟后形状为 `[1, 60, hidden]`）、`final_short`（形状 `[1, k, hidden]`，`k<60`，当前未满一分钟的残余）（`stage2/stream.py:14-31,62-64`）。这些是**记忆向量，不是文本**：local/block/global 文本摘要只在 Stage 2 训练时作为监督目标，用来逼这些向量"可被重建"（`reconstruction_loss`，`stage2/model.py:81-102`）；Stage 3 直接消费压缩后的向量，作为下文 Stage 3 输入图中的 `[Long memory] [Short memory]` 前缀。
+**Stage 2 → Stage 3（双模型：冻结产 memory + 微调做决策）。** Stage 3 不再把 Stage 2 产物 merge 进单一模型继续训，而是用 Stage 2 的权重初始化**两个**模型：（a）一个**完全冻结**的 memory 模型，就是 Stage 2 训好的递归记忆网络，持续以因果 1-FPS 产出 short/long memory 向量；（b）一个**微调**的决策模型，同样由 Stage 2 权重初始化，在其上追加 `<DECISION>` 读出位和 BCE 头，学习“根据 memory 判断能否回答、并给出原因或答案”。训练时两个模型**同时在显存**：冻结模型在 `no_grad` 下实时 forward 产出 memory，微调模型实时消费这些 memory 计算 BCE/NTP——端到端前向，但 memory 侧做 **stop-gradient**，决策损失不会回流改动 memory 模型。这样 memory 的生成保持 Stage 2 学到的稳定表示，不被 QA 决策的梯度破坏。这些 memory 是**向量，不是文本**：local/block/global 文本摘要只在 Stage 2 训练时作为监督目标，用来逼这些向量“可被重建”（`reconstruction_loss`，`stage2/model.py:92-113`）。推理/离线时 `stage2/stream.py` 也以同样的因果递归运行、不使用教师标签，并可保存一个 `.pt`，内含 `snapshots`（每分钟长记忆快照）、`final_long`（满一分钟后形状 `[1, 60, hidden]`）、`final_short`（形状 `[1, k, hidden]`，`k<60`，当前未满一分钟的残余）（`stage2/stream.py:14-31,62-64`），作为下文 Stage 3 输入图中 `[Long memory] [Short memory]` 前缀的来源。合并所用的 adapter 路径记录在 `training_config.json`，供复现（`stage2/stream.py:46-50`）。
 
-**尚未实现（开放的衔接点）。** 目前没有任何 Stage 3 代码读取 Stage 2 的 `.pt`，专用 `<DECISION>` 头也未实现。`QA/train/train_summary_decide.py` 会追加长记忆 token 并生成 WAIT/ANSWER 文本，但尚未与 Stage 2 的固定 60-token 替换更新对齐，也没有 BCE 决策头。在出现 `.pt` reader 和决策头之前，请把 Stage 2 → Stage 3 的记忆接口视为规范说明，而非可运行的流水线。
+**当前 Stage 2 → Stage 3 状态。** `stage3/model.py` 已能正确重建 `base Qwen3.5 → merge Stage 1 → 恢复 memory token → load/merge Stage 2` 的权重链，并分别建立冻结 memory 模型与可训练 decision 模型。decision 模型已包含注册到 `nn.Module` 的 BCE head、规范化输入模板、stop-gradient 检查和单样本 BCE+NTP 前向。尚未实现的是 QA 时间调度数据加载器、双模型训练 CLI、阈值决策后的文本生成和多问题 KV cache。现有 `QA/train/train_summary_decide.py` 仍是旧单模型基线，不代表新 Stage 3。
 
 #### 各阶段 input / target 与示例
 
@@ -63,6 +63,7 @@ ASR 用于数据准备和 Stage 1 的训练目标；在 Stage 1 的两组条件�
 
 - **Input**：**静音**视频，每满 1 秒取 1 帧（无 ASR）。按时间顺序处理。
 - **Target**（每满一分钟 `T` 由教师给出 8 条，构成一个 block）：6 条 10 秒局部摘要 `local_sub_summaries`、1 条 `[T-60,T)` 整分钟摘要 `block_summary_target`、1 条 `[0,T)` 累计摘要 `global_summary_target`。训练时用这些文本去重建对应的记忆向量（short/block/global），损失按 `1:1:1`。
+- 当前每个时间窗只有一条综合摘要；解剖／探头运动／视觉发现等多视角摘要仍是未实现的消融方向。
 
 ```text
 示例（第一分钟 block_window=[0,60]）
@@ -91,9 +92,9 @@ ASR 用于数据准备和 Stage 1 的训练目标；在 Stage 1 的两组条件�
     第 60 秒            -> total = Lshort + Lblock + Lglobal   (1:1:1)
 ```
 
-**Stage 3 — 可答性决策 + QA**（设计见根 README 的 Stage 3 小节；`QA/train/train_summary_decide.py`，*决策头尚未实现*）
+**Stage 3 — 可答性决策 + QA**（新实现骨架见 `stage3/model.py`；`QA/train/train_summary_decide.py` 是旧基线）
 
-- **Input**：共享记忆前缀 `[系统/模板][Long memory][Short memory]` + 当前问题 + 读出位 `<DECISION>`。记忆来自 Stage 2 `stream.py` 产出的向量，不随问题改写。
+- **Input**：共享记忆前缀 `[系统/模板][Long memory][Short memory]` + 当前问题 + 读出位 `<DECISION>`。记忆由一个**冻结的** Stage 2 memory 模型实时产出（训练时在显存中与决策模型并存，`no_grad` + stop-gradient），不随问题改写。
 - **Target**：① 可答性二分类标签 `y`（`y=0` 证据不足 / `y=1` 证据充分）用 BCE 监督 `<DECISION>` 的 logit；② 文本目标用 NTP 监督——`y=0` 时为 `<WAIT>` + 指出当前缺失证据的理由，`y=1` 时为 `<ANSWER>` + 有视觉支撑的答案。
 
 ```text
@@ -150,7 +151,7 @@ ASR 用于数据准备和 Stage 1 的训练目标；在 Stage 1 的两组条件�
 
 ### Stage 3：可回答性决策与多问题 KV cache
 
-以下是已确定、尚待完整实现的 Stage 3 设计。现有 `QA/train/train_summary_decide.py` 使用逐次追加长期 token 和生成 WAIT/ANSWER 文本的方式；仍需统一为 Stage 2 的固定 60-token 全量更新，并实现独立决策头及多问题 cache 管理。
+以下是已确定、部分实现的 Stage 3 设计。**Stage 3 由两个模型组成**：一个以 Stage 2 权重初始化、完全冻结的 memory 模型，和一个同样从完整 Stage 2 权重初始化、追加新 LoRA、`<DECISION>` 读出位与 BCE 头的 decision 模型。`stage3/model.py` 已实现两份模型的正确加载、memory stop-gradient、device-safe BCE head 和单样本 BCE/NTP 前向。完整训练时仍应让两者同时在显存：冻结模型在 `no_grad` 下实时产出 memory，decision 模型消费 detach 后的 memory。QA 时间调度、完整训练循环、生成和多问题 cache 尚未实现。现有 `QA/train/train_summary_decide.py` 是旧单模型基线。
 
 #### 输入与因果注意力
 
@@ -213,6 +214,7 @@ L_stage3 = λ_decision · L_decision + λ_text · L_text
 ```text
 stage1/                   新的三条件 Stage 1 实现
 stage2/                   新的时序 Stage 2 实现
+stage3/                   双模型可回答性决策骨架（BCE + NTP）
 pretrain/                  先前 Stage 1/2 实验和基线
   build_samples.py         ASR 监督样本构建
   train.py / infer.py      领域预训练与推理
@@ -241,7 +243,7 @@ UltrasoundCrawler_KeyCode_20260323_v2/
                            YouTube／Bilibili 获取工具
 ```
 
-本地数据、视频映射、检查点和输出不全部包含在仓库中。运行需提供当前机器上的有效路径。
+本地数据、视频映射、检查点和输出不全部包含在仓库中。当前 laptop checkout 用于代码修改和 CPU 测试；模型权重、CUDA smoke test 和正式训练位于 SSH 集群。运行 GPU 命令时需替换为 SSH 上的有效路径。
 
 ## 环境配置
 
@@ -340,7 +342,7 @@ python -m stage1.data \
   --output stage1/samples.jsonl
 
 python -m stage1.train \
-  --model-name Qwen/Qwen3-VL-2B-Instruct \
+  --model-name Qwen/Qwen3.5-2B \
   --train-jsonl stage1/samples.jsonl \
   --video-path-map /path/to/video_path_map.json \
   --output-dir /path/to/stage1_output \
@@ -353,7 +355,9 @@ python -m stage1.train \
 
 ### 3. Stage 2：视觉摘要生成与记忆训练
 
-依次生成视觉摘要、构建样本并训练。按需添加 `--init-adapter /path/to/stage1_adapter` 从 Stage 1 初始化。
+依次生成视觉摘要、构建样本并训练。标注器把 ffmpeg 生成的**静音视频片段**直接交给支持视频输入的大模型，不是先转成 ASR，也不是由本脚本固定抽帧。每个完整分钟分别请求六个 10 秒摘要、一个当前分钟摘要和一个累计视频摘要。教师服务会按自身视频解码策略采样画面。
+
+下面第一条命令使用 Gemini/OpenRouter。也可以在 SSH 集群启动 Qwen3.5 视频模型的 vLLM 服务并在同一远端环境运行标注命令；vLLM 必须允许读取 `--clip-dir` 中的临时视频。
 
 ```bash
 python -m stage2.annotate \
@@ -362,6 +366,7 @@ python -m stage2.annotate \
   --model google/gemini-3.1-pro-preview \
   --base-url https://openrouter.ai/api/v1 \
   --api-key-env OPENROUTER_API_KEY \
+  --frame-size 224 \
   --output results/teacher_visual_summaries/VIDEO_ID_visual_summaries.jsonl
 
 python -m stage2.build_data \
@@ -369,11 +374,27 @@ python -m stage2.build_data \
   --output results/teacher_visual_summaries/VIDEO_ID_memory_samples.jsonl
 ```
 
+SSH 集群上的 Qwen3.5 教师示例：
+
+```bash
+python -m stage2.annotate \
+  --video /path/to/VIDEO_ID.mp4 \
+  --video-id VIDEO_ID \
+  --model Qwen/Qwen3.5-35B-A3B \
+  --base-url http://localhost:8000/v1 \
+  --api-key-env VLLM_API_KEY \
+  --transport video_url \
+  --clip-dir /path/allowed/by/vllm/stage2_clips \
+  --video-fps 1.0 \
+  --output results/teacher_visual_summaries/VIDEO_ID_visual_summaries.jsonl
+```
+
 ```bash
 python -m stage2.train \
-  --model-name Qwen/Qwen3-VL-2B-Instruct \
+  --model-name Qwen/Qwen3.5-2B \
   --train-jsonl results/teacher_visual_summaries/VIDEO_ID_memory_samples.jsonl \
   --video-path-map /path/to/video_path_map.json \
+  --init-adapter /path/to/stage1_output/final \
   --output-dir /path/to/stage2_output \
   --frame-size 224 \
   --epochs 1 \
@@ -407,7 +428,7 @@ python -m stage2.train \
 ## 参考与用途
 
 - [LiveCC](https://github.com/showlab/livecc)：流式视频语言训练参考。
-- [Qwen3-VL](https://github.com/QwenLM/Qwen3-VL)：当前骨干模型系列。
+- Qwen3.5：Stage 1、Stage 2 和 Stage 3 当前统一使用的骨干模型系列。
 - [faster-whisper](https://github.com/SYSTRAN/faster-whisper)：ASR 实现。
 
 仅供研究使用。第三方代码、模型和源视频遵循各自许可证与使用条款。
