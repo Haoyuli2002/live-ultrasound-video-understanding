@@ -37,12 +37,12 @@ def main():
     parser.add_argument("--adapter-path", required=True)
     parser.add_argument("--base-adapter", help="Stage 1 adapter merged before Stage 2; defaults to training_config.json")
     parser.add_argument("--output", required=True)
-    parser.add_argument("--model-name", default="Qwen/Qwen3-VL-2B-Instruct")
+    parser.add_argument("--model-name", default="Qwen/Qwen3.5-2B")
     parser.add_argument("--frame-size", type=int, default=224)
     parser.add_argument("--seconds", type=int)
     args = parser.parse_args()
     if not torch.cuda.is_available():
-        raise RuntimeError("Stage 2 Qwen3-VL inference requires CUDA")
+        raise RuntimeError("Stage 2 Qwen3.5 inference requires CUDA")
     config_path = Path(args.adapter_path).parent / "training_config.json"
     config = json.loads(config_path.read_text(encoding="utf-8")) if config_path.exists() else {}
     base_adapter = args.base_adapter or config.get("init_adapter")

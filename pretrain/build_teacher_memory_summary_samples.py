@@ -7,7 +7,9 @@ Input JSONL contains one row per complete block with at least:
   - local_summary_target  (or local_summary), or local_sub_summaries for dense local labels
   - global_summary_target (or cumulative_summary/global_summary)
 
-Output JSONL uses the main Stage-2 design:
+Default output (--format streaming) preserves validated chronological block rows,
+including independent block_summary_target and six local_sub_summaries.
+Legacy output (--format legacy) uses the earlier independent-sample design:
   - short_memory_summary: short tokens -> local visual summary
   - long_memory_summary : L_{k-1} + 60 short tokens -> L_k -> global summary
 
@@ -180,6 +182,7 @@ def parse_args():
     p = argparse.ArgumentParser(description="Build teacher-summary Stage-2 memory samples")
     p.add_argument("--summaries-jsonl", required=True, help="Teacher visual summary JSONL, one row per complete block")
     p.add_argument("--output", required=True)
+    p.add_argument("--format", choices=["streaming", "legacy"], default="streaming")
     p.add_argument("--types", default="short,long", help="Comma-separated: short,long")
     p.add_argument("--block-sec", type=float, default=60.0)
     p.add_argument("--step-sec", type=float, default=1.0)
@@ -194,7 +197,16 @@ def main():
     if not types <= {"short", "long"}:
         raise ValueError(f"Unsupported --types: {args.types}")
     rows = read_jsonl(Path(args.summaries_jsonl), args.limit_rows)
-    samples = build_samples(rows, block_sec=args.block_sec, step_sec=args.step_sec, long_token_count=args.long_token_count, types=types)
+    if args.format == "streaming":
+        if (args.block_sec, args.step_sec, args.long_token_count) != (60, 1, 60):
+            raise ValueError("Streaming baseline uses 60-second blocks, 1-second steps and 60 long tokens")
+        try:
+            from .streaming_memory import prepare_blocks
+        except ImportError:
+            from streaming_memory import prepare_blocks
+        samples = [dict(row, sample_type="streaming_memory_block") for row in prepare_blocks(rows)]
+    else:
+        samples = build_samples(rows, block_sec=args.block_sec, step_sec=args.step_sec, long_token_count=args.long_token_count, types=types)
     out = Path(args.output)
     out.parent.mkdir(parents=True, exist_ok=True)
     with out.open("w", encoding="utf-8") as f:

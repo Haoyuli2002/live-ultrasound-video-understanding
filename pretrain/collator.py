@@ -266,82 +266,41 @@ class PretrainCollator:
         return start
 
     def __call__(self, features: List[Dict[str, Any]]) -> Dict[str, torch.Tensor]:
-        encoded_list = []
-        labels_list = []
-
-        for feat in features:
-            frames = feat["frames"]
-            prev_context = feat.get("prev_context", "")
-            target = feat["target"]
-
-            if feat.get("sample_type") == "pretrain_caption_sentence_interleave":
-                full_messages = build_interleave_messages(
-                    history=feat.get("history", []),
-                    history_frames=feat.get("history_frames", []),
-                    target=target,
-                )
-            elif feat.get("sample_type") == "pretrain_next_sentence_mixedmask":
-                full_messages = build_mixedmask_messages(
-                    history=feat.get("history", []),
-                    history_frames=feat.get("history_frames", []),
-                    current_visual_frames=feat.get("current_visual_frames", []),
-                    target=target,
-                    mask_policy=feat.get("mask_policy"),
-                )
-            else:
-                full_messages = build_messages(
-                    frames=frames,
-                    prev_context=prev_context,
-                    target=target,
-                    system_prompt=self.system_prompt,
-                )
-            encoded, _ = self._encode_messages(full_messages)
-
-            input_ids = encoded["input_ids"][0]
-            labels = input_ids.clone()
-
-            target_start = self._target_start(input_ids, target)
-            labels[:target_start] = self.label_pad_token_id
-
-            attention_mask = encoded.get("attention_mask")
-            if attention_mask is not None:
-                labels[attention_mask[0] == 0] = self.label_pad_token_id
-
-            encoded_list.append(encoded)
-            labels_list.append(labels)
-
-        if len(encoded_list) == 1:
-            batch = {k: v for k, v in encoded_list[0].items()}
-            batch["labels"] = labels_list[0].unsqueeze(0)
-            return batch
-
-        tokenizer = getattr(self.processor, "tokenizer", self.processor)
-        pad_id = tokenizer.pad_token_id
-        if pad_id is None:
-            pad_id = tokenizer.eos_token_id
-
-        max_len = max(e["input_ids"].shape[1] for e in encoded_list)
-        input_ids_batch = []
-        attention_batch = []
-        labels_batch = []
-
-        for encoded, labels in zip(encoded_list, labels_list):
-            input_ids = encoded["input_ids"][0]
-            attention = encoded.get("attention_mask", torch.ones_like(encoded["input_ids"]))[0]
-            pad_len = max_len - input_ids.shape[0]
-
-            input_ids_batch.append(torch.nn.functional.pad(input_ids, (0, pad_len), value=pad_id))
-            attention_batch.append(torch.nn.functional.pad(attention, (0, pad_len), value=0))
-            labels_batch.append(torch.nn.functional.pad(labels, (0, pad_len), value=self.label_pad_token_id))
-
-        batch = {
-            "input_ids": torch.stack(input_ids_batch, dim=0),
-            "attention_mask": torch.stack(attention_batch, dim=0),
-            "labels": torch.stack(labels_batch, dim=0),
-        }
-
-        for k, v in encoded_list[0].items():
-            if k not in batch:
-                batch[k] = v
-
-        return batch
+        if len(features) != 1:
+            raise ValueError(
+                "PretrainCollator supports one multimodal example per batch. "
+                "Use --per-device-train-batch-size 1 with gradient accumulation."
+            )
+        feat = features[0]
+        target = feat["target"]
+        if feat.get("sample_type") == "pretrain_caption_sentence_interleave":
+            messages = build_interleave_messages(
+                history=feat.get("history", []),
+                history_frames=feat.get("history_frames", []),
+                target=target,
+            )
+        elif feat.get("sample_type") == "pretrain_next_sentence_mixedmask":
+            messages = build_mixedmask_messages(
+                history=feat.get("history", []),
+                history_frames=feat.get("history_frames", []),
+                current_visual_frames=feat.get("current_visual_frames", []),
+                target=target,
+                mask_policy=feat.get("mask_policy"),
+            )
+        else:
+            messages = build_messages(
+                frames=feat["frames"],
+                prev_context=feat.get("prev_context", ""),
+                target=target,
+                system_prompt=self.system_prompt,
+            )
+        encoded, _ = self._encode_messages(messages)
+        input_ids = encoded["input_ids"][0]
+        labels = input_ids.clone()
+        target_start = self._target_start(input_ids, target)
+        labels[:target_start] = self.label_pad_token_id
+        attention_mask = encoded.get("attention_mask")
+        if attention_mask is not None:
+            labels[attention_mask[0] == 0] = self.label_pad_token_id
+        encoded["labels"] = labels.unsqueeze(0)
+        return encoded

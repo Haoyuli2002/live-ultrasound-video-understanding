@@ -18,7 +18,7 @@ The [reference design](docs/live_ultrasound_reference_implementation_final_zh.md
 | VLM data generation: local/block/global summaries | Generate six ten-second, one whole-minute, and one cumulative visual summary per full minute for Stage 2 | New `stage2.annotate` and `stage2.build_data` code exists; labels meeting the new eight-record specification have not yet been generated or reviewed, and old minute-level labels cannot be used directly |
 | Stage 2: visual memory | One short-memory token per second; every 60 seconds replace long memory with 60 new tokens; local/global summary supervision | New independent `stage2/` chronological training and streaming code; GPU run pending |
 | QA construction | Annotate `query_time` and earliest sufficient-evidence `answer_time`, with validation | Generation, validation, and WAIT/ANSWER expansion exist; automatic timestamps are candidate annotations, not expert ground truth |
-| Stage 3: answerability + QA | `<DECISION>` hidden state → BCE classification; NTP for both WAIT reasons and ANSWER text | Current trainers generate `<WAIT>`/`<ANSWER>` text; a dedicated decision head is not implemented |
+| Stage 3: answerability + QA | `<DECISION>` hidden state → BCE classification; NTP for both WAIT reasons and ANSWER text | Two-model loading, a dedicated BCE head, the documented input order, and single-sample BCE+NTP are implemented; training CLI, generation, and multi-question KV caching remain open |
 | Eval | Causal streaming evaluation of answerability, response timing, answer quality, memory retention, and runtime | Pretraining, memory, and QA baseline evaluation scripts exist; the complete online loop and benchmark protocol remain to be implemented and validated |
 
 ## Model workflow
@@ -27,13 +27,13 @@ ASR supports data preparation, provides Stage 1 targets, and supplies earlier na
 
 ### Stage interfaces and handoffs
 
-The three stages share **one Qwen3-VL backbone**; each stage adds parameters on top of the previous stage's artifact rather than introducing a separate network. The table below is the single source of truth for what each stage produces, what the next stage consumes, and which links are not yet implemented. File and line references point to the current code.
+The three stages use the same **`Qwen/Qwen3.5-2B` backbone**. Stage 2 adds parameters on top of Stage 1. Stage 3 loads two independent copies of the complete Stage 2 state: one frozen memory model and one trainable decision model. Every adapter must use the exact same base model identifier; Qwen3-VL and Qwen3.5 adapters are not interchangeable.
 
 | Stage | New trainable parameters | Produces | Next stage consumes |
 |---|---|---|---|
 | Stage 1 | LoRA on `q/k/v/o_proj` + `gate/up/down_proj` (`stage1/model.py:65-68`) | LoRA adapter at `stage1_output/final` | Stage 2 base weights |
-| Stage 2 | New LoRA **plus** two learnable token embeddings `<SHORT_MEM>` / `<LONG_MEM>` via PEFT `trainable_token_indices` (`stage2/model.py:23-38`) | adapter + resized embeddings at `stage2_output/final`; a streamed memory `.pt` (`stage2/stream.py:62-64`) | Stage 3 memory inputs |
-| Stage 3 | Dedicated `<DECISION>` readout + BCE head (design only) | WAIT/ANSWER text + answerability logit | — |
+| Stage 2 | New LoRA **plus** two learnable token embeddings `<SHORT_MEM>` / `<LONG_MEM>` via PEFT `trainable_token_indices` (`stage2/model.py:32-48`) | adapter + resized embeddings at `stage2_output/final`; online memory vectors and optional streamed `.pt` | Stage 3 memory inputs |
+| Stage 3 | Frozen Stage 2 memory model plus an independent Stage 2 copy with new LoRA, `<DECISION>`/`<WAIT>`/`<ANSWER>` tokens, and BCE head | Single-sample BCE/NTP interface implemented; complete training and online-inference artifacts remain open | — |
 
 **Stage 1 → Stage 2.** Stage 2 loads the Stage 1 adapter and bakes it into the backbone with `PeftModel.from_pretrained(base, base_adapter).merge_and_unload()` (`stage2/model.py:21-22`), then adds its own LoRA and the two new token rows. The domain knowledge from Stage 1 is therefore frozen into the weights before memory training begins. The merged adapter path is recorded in `training_config.json` so inference can reproduce it (`stage2/stream.py:46-50`).
 
@@ -41,7 +41,7 @@ The three stages share **one Qwen3-VL backbone**; each stage adds parameters on 
 
 **Stage 2 → Stage 3.** At inference, `stage2/stream.py` runs the same causal 1-FPS recurrence **without teacher labels** and saves a `.pt` with `snapshots` (per-minute long-memory snapshots), `final_long` (shape `[1, 60, hidden]` once at least one minute elapsed), and `final_short` (shape `[1, k, hidden]`, `k<60`, the current partial minute) (`stage2/stream.py:14-31,62-64`). These are **memory vectors, not text**: the local/block/global text summaries exist only as Stage 2 training targets to make the vectors reconstructable (`reconstruction_loss`, `stage2/model.py:81-102`); Stage 3 consumes the compressed vectors directly as the `[Long memory] [Short memory]` prefix shown in the Stage 3 input diagram below.
 
-**Not yet implemented (open handoff).** No Stage 3 code currently reads the Stage 2 `.pt`, and the dedicated `<DECISION>` head is not implemented. `QA/train/train_summary_decide.py` appends long-memory tokens and generates WAIT/ANSWER text, but it is not aligned with Stage 2's fixed 60-token replacement update and has no BCE decision head. Treat the Stage 2 → Stage 3 memory interface as a specification, not a working pipeline, until a `.pt` reader and decision head exist.
+**Current Stage 2 → Stage 3 status.** `stage3/model.py` reconstructs the exact base → Stage 1 merge → Stage 2 memory-token/adapter chain for both models. It implements a registered device-safe BCE head, the documented system → memory → question → decision input order, stop-gradient checks, and a single-sample BCE+NTP forward. QA timestamp scheduling, the live two-model training CLI, thresholded text generation, and multi-question KV branching are not implemented. `QA/train/train_summary_decide.py` remains a legacy single-model baseline.
 
 #### Per-stage input / target with examples
 
@@ -91,7 +91,7 @@ Illustrative example (first minute, block_window=[0,60])
     second  60             -> total = Lshort + Lblock + Lglobal   (1:1:1)
 ```
 
-**Stage 3 — answerability decision + QA** (design in the root README Stage 3 section; `QA/train/train_summary_decide.py`, *decision head not yet implemented*)
+**Stage 3 — answerability decision + QA** (new scaffold in `stage3/model.py`; `QA/train/train_summary_decide.py` is a legacy baseline)
 
 - **Input**: a shared memory prefix `[system/template][Long memory][Short memory]` + the current question + a `<DECISION>` readout token. Memory comes from Stage 2 `stream.py` vectors and is not rewritten per question.
 - **Target**: (1) an answerability binary label `y` (`y=0` insufficient evidence / `y=1` sufficient evidence) supervises the `<DECISION>` logit with BCE; (2) a text target supervised by NTP — `<WAIT>` plus a reason naming the currently missing evidence when `y=0`, or `<ANSWER>` plus a visually supported answer when `y=1`.
@@ -134,7 +134,7 @@ Each selected video produces a new transcript JSON: `segments` and `full_text` c
 
 For the current train split, the first GPU pilot cleans only the seven videos that produced no samples, then merges their rows with the existing 186-video baseline. The merge checks coverage of all 193 pretrain-selected videos before the separate Stage 1 training job starts.
 
-The new `stage1/` path creates three matched views for each target sentence `[start,end]`: video `0→start` with earlier ASR, video `0→end` with earlier ASR, and video `0→start` with earlier ASR masked. All predict the same complete sentence; target and later ASR are excluded from the prompt. Up to 120 frames are sampled across each selected interval. The model uses Qwen3-VL LoRA with video-level validation; normal, blank, and shuffled-frame inference checks visual dependence. See [stage1/README.md](stage1/README.md). The earlier `pretrain/` baseline remains available.
+The new `stage1/` path creates three matched views for each target sentence `[start,end]`: video `0→start` with earlier ASR, video `0→end` with earlier ASR, and video `0→start` with earlier ASR masked. All predict the same complete sentence; target and later ASR are excluded from the prompt. Up to 120 frames are sampled across each selected interval. The model uses Qwen3.5 LoRA with video-level validation; normal, blank, and shuffled-frame inference checks visual dependence. See [stage1/README.md](stage1/README.md). The earlier `pretrain/` baseline remains available.
 
 ### Stage 2: visual-summary supervision and recurrent memory
 
@@ -150,7 +150,7 @@ Training rows contain `local_sub_summaries`, an independent `block_summary_targe
 
 ### Stage 3: answerability and multi-question KV caching
 
-The following Stage 3 design remains to be fully implemented. The existing `QA/train/train_summary_decide.py` appends long-memory tokens and generates WAIT/ANSWER text; it still needs alignment with Stage 2's fixed 60-token replacement update, a dedicated decision head, and multi-question cache management.
+The Stage 3 model and single-sample loss interface are partially implemented in `stage3/model.py`: exact Stage 2 initialization, frozen-memory loading, stop-gradient enforcement, a device-safe BCE head, and BCE+NTP wiring are present. QA timestamp scheduling, the live two-model training loop, thresholded generation, and multi-question cache management remain open. The existing `QA/train/train_summary_decide.py` is a legacy single-model baseline.
 
 #### Input and causal attention
 
@@ -213,6 +213,7 @@ Persistent memory embeddings and per-layer attention KV caches are distinct stat
 ```text
 stage1/                   New paired-condition Stage 1 implementation
 stage2/                   New chronological Stage 2 implementation
+stage3/                   Two-model answerability scaffold (BCE + NTP)
 pretrain/                  Earlier Stage 1/2 experiments and baselines
   build_samples.py         ASR-supervised sample construction
   train.py / infer.py      Domain pretraining and inference
@@ -241,7 +242,7 @@ UltrasoundCrawler_KeyCode_20260323_v2/
                            YouTube/Bilibili collection tools
 ```
 
-Local datasets, video maps, checkpoints, and outputs are not all included in the repository. Commands require valid paths on the execution machine.
+Local datasets, video maps, checkpoints, and outputs are not all included in the repository. This laptop checkout is intended for code and CPU tests; model weights, CUDA smoke tests, and real training run on the SSH cluster. Commands require valid remote paths when executed there.
 
 ## Setup
 
@@ -340,7 +341,7 @@ python -m stage1.data \
   --output stage1/samples.jsonl
 
 python -m stage1.train \
-  --model-name Qwen/Qwen3-VL-2B-Instruct \
+  --model-name Qwen/Qwen3.5-2B \
   --train-jsonl stage1/samples.jsonl \
   --video-path-map /path/to/video_path_map.json \
   --output-dir /path/to/stage1_output \
@@ -353,7 +354,7 @@ python -m stage1.train \
 
 ### 3. Stage 2: visual-summary generation and memory training
 
-Generate visual summaries, build samples, then train. Optionally add `--init-adapter /path/to/stage1_adapter` for Stage 1 initialization.
+The annotator sends exact muted video clips to a video-capable teacher model; the teacher controls its internal frame sampling. Each full minute produces six 10-second, one current-minute, and one cumulative summary. Build the blocks, then train with the Stage 1 adapter from the same Qwen3.5 base.
 
 ```bash
 python -m stage2.annotate \
@@ -362,6 +363,7 @@ python -m stage2.annotate \
   --model google/gemini-3.1-pro-preview \
   --base-url https://openrouter.ai/api/v1 \
   --api-key-env OPENROUTER_API_KEY \
+  --frame-size 224 \
   --output results/teacher_visual_summaries/VIDEO_ID_visual_summaries.jsonl
 
 python -m stage2.build_data \
@@ -371,9 +373,10 @@ python -m stage2.build_data \
 
 ```bash
 python -m stage2.train \
-  --model-name Qwen/Qwen3-VL-2B-Instruct \
+  --model-name Qwen/Qwen3.5-2B \
   --train-jsonl results/teacher_visual_summaries/VIDEO_ID_memory_samples.jsonl \
   --video-path-map /path/to/video_path_map.json \
+  --init-adapter /path/to/stage1_output/final \
   --output-dir /path/to/stage2_output \
   --frame-size 224 \
   --epochs 1 \
@@ -407,7 +410,7 @@ Historical documents may use different stage numbering or input policies. They s
 ## References and use
 
 - [LiveCC](https://github.com/showlab/livecc): streaming video-language training reference.
-- [Qwen3-VL](https://github.com/QwenLM/Qwen3-VL): current training backbone family.
+- Qwen3.5: the current shared Stage 1/2/3 backbone family.
 - [faster-whisper](https://github.com/SYSTRAN/faster-whisper): ASR implementation.
 
 Research use only. Third-party code, models, and source videos retain their respective licenses and usage terms.

@@ -14,7 +14,7 @@ python pretrain/infer.py \
   --eval-jsonl pretrain/data/pretrain_samples.jsonl \
   --video-path-map pretrain/data/video_path_map.json \
   --output /mnt/cache/qwenFT/pretrain_predictions_limit20.jsonl \
-  --window-size 4 \
+  --window-size 120 \
   --frame-size 224 \
   --limit 20 \
   --max-new-tokens 128 \
@@ -27,6 +27,7 @@ import argparse
 import json
 import os
 import sys
+import random
 from pathlib import Path
 from typing import Any, Dict, Set
 
@@ -37,6 +38,7 @@ os.environ.setdefault("USE_FLAX", "0")
 
 
 import torch  # noqa: E402
+from PIL import Image  # noqa: E402
 from transformers import AutoProcessor  # noqa: E402
 
 try:
@@ -213,10 +215,14 @@ def parse_args():
     parser.add_argument("--default-video-path", type=str, default=None)
     parser.add_argument("--video-path-map", type=str, default=None)
 
-    parser.add_argument("--window-size", type=int, default=4)
+    parser.add_argument("--window-size", type=int, default=120,
+                        help="Maximum sampled frames across the preceding video window.")
     parser.add_argument("--frame-size", type=int, default=224)
     parser.add_argument("--limit", type=int, default=None)
     parser.add_argument("--max-new-tokens", type=int, default=128)
+    parser.add_argument("--visual-ablation", choices=["none", "blank", "shuffled"], default="none",
+                        help="Replace Stage 1 input frames for a visual-dependence control.")
+    parser.add_argument("--ablation-seed", type=int, default=42)
     parser.add_argument(
         "--mixedmask-eval-mode",
         choices=["no_mask", "mask_current_visual", "text_modality_mask", "random_unit_modality_mask"],
@@ -299,6 +305,23 @@ def main():
         frame_size=args.frame_size,
         limit=args.limit,
     )
+    ablation_sources = None
+    if args.visual_ablation == "shuffled":
+        if len(dataset) < 2:
+            raise ValueError("Shuffled visual ablation needs at least two samples")
+        rng = random.Random(args.ablation_seed)
+        by_video = {}
+        for j, candidate in enumerate(dataset.rows):
+            by_video.setdefault(candidate.get("video_id"), []).append(j)
+        video_ids = sorted(by_video, key=str)
+        next_video = {video_ids[k]: video_ids[(k + 1) % len(video_ids)]
+                      for k in range(len(video_ids))}
+        ablation_sources = []
+        for idx, row in enumerate(dataset.rows):
+            if len(video_ids) > 1:
+                ablation_sources.append(rng.choice(by_video[next_video[row.get("video_id")]]))
+            else:
+                ablation_sources.append((idx + rng.randrange(1, len(dataset))) % len(dataset))
 
     out_path = Path(args.output)
     out_path.parent.mkdir(parents=True, exist_ok=True)
@@ -333,6 +356,15 @@ def main():
         for idx in iterator:
             sample = dataset[idx]
             idx = int(idx)
+            if args.visual_ablation != "none":
+                if sample.get("sample_type") in {
+                    "pretrain_caption_sentence_interleave", "pretrain_next_sentence_mixedmask"}:
+                    raise ValueError("Visual ablations currently support standard Stage 1 samples only")
+                if args.visual_ablation == "blank":
+                    sample["frames"] = [Image.new("RGB", frame.size, (0, 0, 0))
+                                        for frame in sample["frames"]]
+                else:
+                    sample["frames"] = dataset[ablation_sources[idx]]["frames"]
             should_print = (not args.quiet) and args.print_every > 0 and (
                 idx == 0 or idx == len(dataset) - 1 or idx % args.print_every == 0
             )
@@ -353,8 +385,7 @@ def main():
                     mixedmask_eval_mode=args.mixedmask_eval_mode,
                 )
             except Exception as e:
-                pred = ""
-                print(f"[pretrain-infer] ERROR sample {idx}: {type(e).__name__}: {e}")
+                raise RuntimeError(f"Stage 1 inference failed at sample {idx}") from e
 
             rec: Dict[str, Any] = {
                 "idx": idx,
@@ -363,6 +394,7 @@ def main():
                 "prev_context": prev_context,
                 "target": target,
                 "prediction": pred,
+                "visual_ablation": args.visual_ablation,
                 "meta": sample.get("meta", {}),
             }
             if sample.get("sample_type") == "pretrain_next_sentence_mixedmask":

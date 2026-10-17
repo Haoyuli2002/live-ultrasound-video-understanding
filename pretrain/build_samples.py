@@ -22,12 +22,12 @@ Supported sample units:
      This avoids targets such as "... Massachusetts General" followed by
      "Hospital. ..." being split across two samples.
 
-Task:
-  For each unit (segment or sentence):
-    current_time  = unit.start
-    video_window  = [max(0, start - window_sec), start]   # last frames before it
-    prev_context  = concatenation of previous units (optional, truncated)
-    target        = unit.text                             # continue this narration unit
+Mainline task:
+  For each complete sentence:
+    current_time  = sentence.start
+    video_window  = [max(0, start - window_sec), start]
+    prev_context  = "" (with --no-context)
+    target        = the complete narration sentence
 
 Output:
   pretrain_samples.jsonl, one sample per line:
@@ -45,7 +45,7 @@ Example:
   python pretrain/build_samples.py \
     --transcripts QA/results/transcripts \
     --output pretrain/data/pretrain_samples.jsonl \
-    --window-sec 8 \
+    --window-sec 120 \
     --min-words 3 \
     --context-max-chars 400 \
     --unit sentence
@@ -126,11 +126,11 @@ def build_sentence_units(
     sentence_max_words: int,
     sentence_max_duration: float,
 ) -> List[Dict[str, Any]]:
-    """Merge ASR segments into sentence-like units.
+    """Merge ASR segments into complete sentences without mid-sentence cuts.
 
     We keep ASR timing by assigning the sentence start to the first contributing
     segment and the sentence end to the last contributing segment. If ASR lacks
-    punctuation, a fallback split is triggered by max words or max duration.
+    punctuation. Overlong or unfinished units are dropped instead of split.
     """
     units: List[Dict[str, Any]] = []
     cur_parts: List[str] = []
@@ -139,7 +139,7 @@ def build_sentence_units(
     cur_segment_start_idx: int | None = None
     cur_segment_end_idx: int | None = None
 
-    def flush(force: bool = False) -> None:
+    def flush() -> None:
         nonlocal cur_parts, cur_start, cur_end, cur_segment_start_idx, cur_segment_end_idx
 
         text = normalize_text(" ".join(cur_parts))
@@ -151,7 +151,11 @@ def build_sentence_units(
             cur_segment_end_idx = None
             return
 
-        if force or not is_bad_text(text, min_words):
+        word_count = len(text.split())
+        duration = float((cur_end or 0.0) - (cur_start or 0.0))
+        within_words = sentence_max_words <= 0 or word_count <= sentence_max_words
+        within_duration = sentence_max_duration <= 0 or duration <= sentence_max_duration
+        if ends_sentence(text) and within_words and within_duration and not is_bad_text(text, min_words):
             units.append({
                 "text": text,
                 "start": float(cur_start or 0.0),
@@ -183,39 +187,16 @@ def build_sentence_units(
         cur_segment_end_idx = idx
 
         merged = normalize_text(" ".join(cur_parts))
-        word_count = len(merged.split())
-        duration = float(cur_end - (cur_start or 0.0))
-
-        should_flush = (
-            ends_sentence(merged)
-            or (sentence_max_words > 0 and word_count >= sentence_max_words)
-            or (sentence_max_duration > 0 and duration >= sentence_max_duration)
-        )
+        should_flush = ends_sentence(merged)
 
         if should_flush:
-            flush(force=False)
+            flush()
 
-    # Keep the final leftover only if it is long enough to be useful.
+    # An unfinished ASR tail is not a complete-sentence target.
     if cur_parts:
-        flush(force=False)
+        flush()
 
     return units
-
-
-def _split_long_text_by_words(text: str, max_words: int) -> List[str]:
-    """Split a long punctuation chunk by word count as a fallback."""
-    text = normalize_text(text)
-    if max_words <= 0:
-        return [text] if text else []
-
-    words = text.split()
-    if len(words) <= max_words:
-        return [text] if text else []
-
-    chunks = []
-    for i in range(0, len(words), max_words):
-        chunks.append(" ".join(words[i:i + max_words]).strip())
-    return [c for c in chunks if c]
 
 
 def _segment_spans_for_full_text(segments: List[Dict[str, Any]]) -> tuple[str, List[Dict[str, Any]]]:
@@ -289,23 +270,30 @@ def build_punctuation_sentence_units(
     if not full_text:
         return []
 
-    punctuation = set(split_punctuation or "")
+    punctuation = set(split_punctuation or "") & set(".!?。？！")
     if include_comma_split:
-        punctuation.update({",", "，"})
+        raise ValueError("Comma splitting would create incomplete Stage 1 sentence targets")
     if not punctuation:
-        punctuation = set(".?!;:。？！；：")
+        punctuation = set(".?!。？！")
 
     raw_ranges: List[tuple[int, int]] = []
     start = 0
+    abbreviations = {"dr", "mr", "mrs", "ms", "prof", "st", "vs", "etc"}
     for idx, ch in enumerate(full_text):
-        if ch in punctuation:
-            end = idx + 1
-            raw_ranges.append((start, end))
-            start = end
-            while start < len(full_text) and full_text[start].isspace():
-                start += 1
-    if start < len(full_text):
-        raw_ranges.append((start, len(full_text)))
+        if ch not in punctuation:
+            continue
+        if ch == ".":
+            previous = full_text[:idx].split()[-1].lower() if full_text[:idx].split() else ""
+            if previous in abbreviations:
+                continue
+            if idx > 0 and idx + 1 < len(full_text) and full_text[idx - 1].isdigit() and full_text[idx + 1].isdigit():
+                continue
+        end = idx + 1
+        raw_ranges.append((start, end))
+        start = end
+        while start < len(full_text) and full_text[start].isspace():
+            start += 1
+    # Never emit an unfinished transcript tail.
 
     units: List[Dict[str, Any]] = []
     for char_start, char_end in raw_ranges:
@@ -313,21 +301,9 @@ def build_punctuation_sentence_units(
         if not text:
             continue
 
-        sub_chunks = _split_long_text_by_words(text, sentence_max_words)
-        if len(sub_chunks) == 1:
-            chunk_ranges = [(char_start, char_end, sub_chunks[0])]
-        else:
-            chunk_ranges = []
-            search_from = char_start
-            for chunk in sub_chunks:
-                local = full_text.find(chunk, search_from, char_end)
-                if local < 0:
-                    # Fallback: approximate from the current cursor.
-                    local = search_from
-                chunk_ranges.append((local, min(local + len(chunk), char_end), chunk))
-                search_from = min(local + len(chunk), char_end)
-
-        for sub_start, sub_end, sub_text in chunk_ranges:
+        if sentence_max_words > 0 and len(text.split()) > sentence_max_words:
+            continue
+        for sub_start, sub_end, sub_text in [(char_start, char_end, text)]:
             if is_bad_text(sub_text, min_words):
                 continue
             aligned = _align_char_range_to_segments(spans, sub_start, sub_end)
@@ -622,8 +598,8 @@ def parse_args() -> argparse.Namespace:
                         help="Directory of ASR transcript JSON files ({video_id}.json).")
     parser.add_argument("--output", type=str, required=True,
                         help="Output jsonl path.")
-    parser.add_argument("--window-sec", type=float, default=8.0,
-                        help="Seconds of frames before unit.start to look at.")
+    parser.add_argument("--window-sec", type=float, default=120.0,
+                        help="Maximum seconds of causal video context before unit.start.")
     parser.add_argument("--min-words", type=int, default=3,
                         help="Skip narration units shorter than this many words.")
     parser.add_argument("--context-max-chars", type=int, default=400,
@@ -632,18 +608,18 @@ def parse_args() -> argparse.Namespace:
                         help="Disable prev_context (pure visual completion).")
     parser.add_argument("--limit-videos", type=int, default=None,
                         help="Only process this many transcript files.")
-    parser.add_argument("--unit", choices=["segment", "sentence"], default="segment",
+    parser.add_argument("--unit", choices=["segment", "sentence"], default="sentence",
                         help="Sample unit. segment = one ASR segment per sample; sentence = merge ASR segments into sentence-like units.")
-    parser.add_argument("--sentence-max-words", type=int, default=40,
-                        help="Sentence mode fallback: force a split after this many accumulated words. Use <=0 to disable.")
-    parser.add_argument("--sentence-max-duration", type=float, default=15.0,
-                        help="Segment-merge sentence mode fallback: force a split after this many seconds. Use <=0 to disable.")
-    parser.add_argument("--sentence-mode", choices=["segment_merge", "punctuation"], default="segment_merge",
+    parser.add_argument("--sentence-max-words", type=int, default=80,
+                        help="Drop sentences longer than this many words; never split them. Use <=0 to disable.")
+    parser.add_argument("--sentence-max-duration", type=float, default=0.0,
+                        help="Segment-merge mode: optionally drop sentences longer than this duration; never split them.")
+    parser.add_argument("--sentence-mode", choices=["segment_merge", "punctuation"], default="punctuation",
                         help="Sentence unit construction mode. segment_merge accumulates ASR segments; punctuation splits the concatenated ASR text by punctuation and maps spans back to timestamps.")
-    parser.add_argument("--split-punctuation", type=str, default=".?!;:。？！；：",
-                        help="Punctuation characters used by --sentence-mode punctuation.")
+    parser.add_argument("--split-punctuation", type=str, default=".?!。？！",
+                        help="Sentence-ending punctuation used by --sentence-mode punctuation.")
     parser.add_argument("--include-comma-split", action="store_true",
-                        help="Also split punctuation-mode sentence units on comma characters.")
+                        help="Legacy option rejected for complete-sentence targets.")
     parser.add_argument("--format", choices=["standard", "interleave", "mixedmask"], default="standard",
                         help="Sample format. standard = existing single-window sample; interleave = prior sentence frames/text interleaved to predict next sentence; mixedmask = history visual/text plus current visual with dynamic modality masking.")
     parser.add_argument("--history-units", type=int, default=3,

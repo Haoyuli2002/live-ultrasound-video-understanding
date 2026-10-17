@@ -3,6 +3,10 @@
 > This document is the command cookbook for the pipeline. The authoritative
 > design and data semantics are defined in
 > `docs/live_ultrasound_reference_implementation_final_zh.md`.
+>
+> The laptop checkout is for editing and CPU tests. Run model loading, CUDA
+> smoke tests, and training on the SSH cluster that contains the model weights;
+> replace every example path with its remote path.
 
 ---
 
@@ -29,6 +33,8 @@ python -m stage2.build_data \
   --output results/teacher_visual_summaries/VIDEO_ID_streaming_blocks.jsonl
 
 python -m stage2.train \
+  --model-name Qwen/Qwen3.5-2B \
+  --init-adapter /path/to/stage1_output/final \
   --train-jsonl results/teacher_visual_summaries/VIDEO_ID_streaming_blocks.jsonl \
   --video-path-map /path/to/video_path_map.json \
   --output-dir /path/to/stage2_output \
@@ -281,7 +287,7 @@ Train Stage 1:
 
 ```bash
 python -m stage1.train \
-  --model-name Qwen/Qwen3-VL-2B-Instruct \
+  --model-name Qwen/Qwen3.5-2B \
   --train-jsonl cluster_data/pretrain/train_full295_stage1_merged_193_samples.jsonl \
   --video-path-map cluster_data/splits/train_full295_qwen35_pretrain_keep_videos.json \
   --output-dir /path/to/stage1_output \
@@ -307,107 +313,97 @@ Compare normal, blank, and shuffled video with `stage1.evaluate
 
 ---
 
-## 4. Stage 2 VLM Summary Label Generation
+## 4. Stage 2 Video-Summary Labels
 
-### Dense local labels plus cumulative global labels
+The current mainline is `stage2/`, not the legacy scripts under `pretrain/`.
+`stage2.annotate` first creates exact muted MP4 windows with ffmpeg and sends
+those video clips to a video-capable teacher model. The teacher, not this
+script, controls its internal frame sampling. Every full minute produces six
+independent 10-second summaries, one independent current-minute summary and one
+cumulative `[0,T)` summary.
 
-Use muted video-only clips by default. This avoids audio leakage into visual
-summary labels.
+Gemini via OpenRouter:
 
 ```bash
-python scripts/data/generate_teacher_visual_summaries.py \
-  --video /path/to/video.mp4 \
-  --output results/teacher_visual_summaries/VIDEO_ID_teacher_visual_summaries_gemini31pro_muted_local10s.jsonl \
+python -m stage2.annotate \
+  --video /path/to/VIDEO_ID.mp4 \
   --video-id VIDEO_ID \
   --model google/gemini-3.1-pro-preview \
-  --block-sec 60 \
-  --local-sec 10 \
-  --global-mode incremental \
-  --max-local-tokens 1200 \
-  --max-global-tokens 3000 \
-  --overwrite
-```
-
-For each 60-second block this produces six local 10-second summary labels and
-one cumulative global summary label.
-
-### Anchor example already committed
-
-```text
-results/teacher_visual_summaries/8V649L5Q368_teacher_visual_summaries_gemini31pro_muted.jsonl
-results/teacher_visual_summaries/8V649L5Q368_teacher_memory_samples_gemini31pro_muted.jsonl
-```
-
----
-
-## 5. Build Stage 2 Summary-Compression Samples
-
-```bash
-python pretrain/build_teacher_memory_summary_samples.py \
-  --format legacy \
-  --summaries-jsonl results/teacher_visual_summaries/VIDEO_ID_teacher_visual_summaries_gemini31pro_muted_local10s.jsonl \
-  --output results/teacher_visual_summaries/VIDEO_ID_teacher_memory_samples_gemini31pro_muted_local10s.jsonl
-```
-
-For an 18-block video with `--local-sec 10`, expected output is:
-
-```text
-108 short_memory_summary
-18 long_memory_summary
-126 total samples
-```
-
----
-
-## 6. Stage 2 Training / Inference / Evaluation
-
-Build legacy ASR-reconstruction baseline samples if needed:
-
-```bash
-python pretrain/build_memory_compression_samples.py \
-  --output pretrain/data/memory_compression_samples.jsonl \
-  --block-sec 60 \
-  --step-sec 1
-```
-
-Train:
-
-```bash
-python pretrain/train_memory_compression.py \
-  --training-mode legacy \
-  --model-name Qwen/Qwen3-VL-2B-Instruct \
-  --train-jsonl pretrain/data/memory_compression_samples.jsonl \
-  --video-path-map pretrain/data/video_path_map.json \
-  --output-dir /mnt/cache/qwenFT/qwen3vl_memory_compression \
-  --short-frames 2 \
+  --base-url https://openrouter.ai/api/v1 \
+  --api-key-env OPENROUTER_API_KEY \
+  --transport file \
   --frame-size 224 \
-  --lambda-short 1.0 \
-  --lambda-long 1.0 \
-  --num-train-epochs 1 \
+  --output results/teacher_visual_summaries/VIDEO_ID_visual_summaries.jsonl
+```
+
+Qwen3.5 on the SSH cluster via an OpenAI-compatible vLLM endpoint:
+
+```bash
+python -m stage2.annotate \
+  --video /path/to/VIDEO_ID.mp4 \
+  --video-id VIDEO_ID \
+  --model Qwen/Qwen3.5-35B-A3B \
+  --base-url http://localhost:8000/v1 \
+  --api-key-env VLLM_API_KEY \
+  --transport video_url \
+  --clip-dir /path/allowed/by/vllm/stage2_clips \
+  --video-fps 1.0 \
+  --output results/teacher_visual_summaries/VIDEO_ID_visual_summaries.jsonl
+```
+
+The vLLM server must be allowed to read `--clip-dir`. Use `--resume` only after
+complete saved minute blocks; use `--overwrite` to intentionally replace an
+existing label file.
+
+---
+
+## 5. Build Stage 2 Blocks
+
+```bash
+python -m stage2.build_data \
+  --teacher-jsonl results/teacher_visual_summaries/VIDEO_ID_visual_summaries.jsonl \
+  --output results/teacher_visual_summaries/VIDEO_ID_memory_samples.jsonl
+```
+
+The builder validates the six ordered local windows plus the independent block
+and cumulative targets. Legacy files with only one minute-level local summary
+are rejected because the missing labels cannot be reconstructed safely.
+
+---
+
+## 6. Stage 2 Training / Streaming / Evaluation
+
+The full pipeline uses the same `Qwen/Qwen3.5-2B` base as Stage 1:
+
+```bash
+python -m stage2.train \
+  --model-name Qwen/Qwen3.5-2B \
+  --init-adapter /path/to/stage1_output/final \
+  --train-jsonl results/teacher_visual_summaries/VIDEO_ID_memory_samples.jsonl \
+  --video-path-map /path/to/video_path_map.json \
+  --output-dir /path/to/stage2_output \
+  --frame-size 224 \
+  --epochs 1 \
   --learning-rate 1e-4
+
+python -m stage2.stream \
+  --model-name Qwen/Qwen3.5-2B \
+  --video /path/to/VIDEO_ID.mp4 \
+  --adapter-path /path/to/stage2_output/final \
+  --output /path/to/VIDEO_ID_memory.pt
+
+python -m stage2.evaluate \
+  --model-name Qwen/Qwen3.5-2B \
+  --eval-jsonl /path/to/held_out_memory_samples.jsonl \
+  --video-path-map /path/to/video_path_map.json \
+  --adapter-path /path/to/stage2_output/final \
+  --output /path/to/stage2_reconstruction_losses.jsonl
 ```
 
-Infer:
-
-```bash
-python pretrain/infer_memory_compression.py \
-  --inference-mode legacy \
-  --model-name Qwen/Qwen3-VL-2B-Instruct \
-  --adapter-path /mnt/cache/qwenFT/qwen3vl_memory_compression \
-  --eval-jsonl pretrain/data/memory_compression_samples.jsonl \
-  --output results/memory_compression_predictions.jsonl \
-  --video-path-map pretrain/data/video_path_map.json \
-  --short-frames 2 \
-  --frame-size 224
-```
-
-Evaluate:
-
-```bash
-python pretrain/eval_memory_compression.py \
-  --pred-jsonl results/memory_compression_predictions.jsonl \
-  --output results/memory_compression_eval.json
-```
+`training_config.json` records the Stage 1 adapter used during training so
+streaming can reconstruct the same base. If the adapter moved, pass
+`--base-adapter` explicitly. Omitting `--init-adapter` is a Stage 2-from-base
+ablation rather than the main three-stage pipeline.
 
 ---
 
@@ -415,13 +411,13 @@ python pretrain/eval_memory_compression.py \
 
 ```bash
 python -m py_compile \
-  scripts/data/generate_teacher_visual_summaries.py \
-  pretrain/build_teacher_memory_summary_samples.py \
-  pretrain/memory_dataset.py \
-  pretrain/memory_collator.py \
-  pretrain/train_memory_compression.py \
-  pretrain/infer_memory_compression.py \
-  pretrain/eval_memory_compression.py
+  stage1/model.py stage1/train.py \
+  stage2/annotate.py stage2/build_data.py stage2/model.py stage2/train.py stage2/stream.py \
+  stage3/model.py
+
+PYTHONDONTWRITEBYTECODE=1 python -m unittest \
+  stage1.test_stage1 stage1.test_clean_asr \
+  stage2.test_stage2 stage3.test_stage3
 
 git diff --check
 ```

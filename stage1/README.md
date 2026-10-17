@@ -159,8 +159,9 @@ Qwen3.5 linear-attention projection.
 The Slurm default run name is `stage1_full295_merged_qwen35_2b`. Use a fresh
 output directory: Qwen3-VL adapters/checkpoints cannot resume on Qwen3.5.
 Override `--model-name` (or Slurm `MODEL_NAME`) to select another compatible
-Qwen3.5 size, and use the same base model for evaluation. Stage 2 and QA retain
-their previous defaults; do not merge a Qwen3.5 adapter into their Qwen3-VL base.
+Qwen3.5 size, and use the same base model for evaluation. Stage 2 and the new
+Stage 3 implementation also default to `Qwen/Qwen3.5-2B`. A Stage 1 adapter may
+only be merged into Stage 2 when both stages use the exact same base model.
 The Qwen3.5 GPU training smoke run remains to be verified.
 
 ## Matched Qwen3.5 2B / 4B / 9B experiments

@@ -150,6 +150,8 @@ def main():
                         help="auto: Gemini uses OpenRouter file; other models use vLLM video_url")
     parser.add_argument("--video-fps", type=float, default=0.0,
                         help="Optional vLLM video decoding FPS; default leaves backend policy unchanged")
+    parser.add_argument("--frame-size", type=int, default=224,
+                        help="Decode size used only to read reliable source-video metadata")
     parser.add_argument("--clip-dir", type=Path,
                         help="Parent for temporary clips; local vLLM must be allowed to read it")
     parser.add_argument("--max-tokens", type=int, default=500)

@@ -12,7 +12,7 @@ python pretrain/train.py \
   --train-jsonl pretrain/data/pretrain_samples.jsonl \
   --video-path-map pretrain/data/video_path_map.json \
   --output-dir /mnt/cache/qwenFT/pretrain_qwen3vl_bf16 \
-  --window-size 4 \
+  --window-size 120 \
   --frame-size 224 \
   --num-train-epochs 3 \
   --per-device-train-batch-size 1 \
@@ -33,13 +33,16 @@ os.environ.setdefault("USE_FLAX", "0")
 import argparse
 from pathlib import Path
 import re
+import random
+import json
 
 import torch
+from torch.utils.data import Subset
 from transformers import (
     AutoProcessor,
     Trainer,
     TrainingArguments,
-    TrainerCallback,
+    EarlyStoppingCallback,
 )
 
 try:
@@ -63,54 +66,6 @@ try:
 except ImportError:
     from dataset import PretrainCaptionDataset
     from collator import PretrainCollator, DEFAULT_SYSTEM_PROMPT
-
-
-class EpochLossEarlyStopping(TrainerCallback):
-    """Early stop on per-epoch average train loss (adjacent-epoch improvement)."""
-
-    def __init__(self, min_delta: float = 0.001, patience: int = 3):
-        self.min_delta = float(min_delta)
-        self.patience = int(patience)
-        self.prev_loss = None
-        self.no_improve = 0
-        self._epoch_losses = []
-
-    def on_log(self, args, state, control, logs=None, **kwargs):
-        if logs and "loss" in logs:
-            self._epoch_losses.append(float(logs["loss"]))
-        return control
-
-    def on_epoch_end(self, args, state, control, **kwargs):
-        if not self._epoch_losses:
-            return control
-
-        cur_loss = sum(self._epoch_losses) / len(self._epoch_losses)
-        self._epoch_losses = []
-
-        if self.prev_loss is None:
-            self.prev_loss = cur_loss
-            print(f"[earlystop] epoch={state.epoch:.2f} avg_loss={cur_loss:.4f} (baseline)")
-            return control
-
-        improvement = self.prev_loss - cur_loss
-        if improvement < self.min_delta:
-            self.no_improve += 1
-        else:
-            self.no_improve = 0
-        self.prev_loss = cur_loss
-
-        print(
-            f"[earlystop] epoch={state.epoch:.2f} avg_loss={cur_loss:.4f} "
-            f"improvement={improvement:.4f} no_improve={self.no_improve}/{self.patience}"
-        )
-
-        if self.no_improve >= self.patience:
-            print(
-                f"[earlystop] Stopping: {self.patience} consecutive epochs with "
-                f"loss improvement < {self.min_delta}."
-            )
-            control.should_training_stop = True
-        return control
 
 
 def load_qwen_vl_model(model_name: str, dtype, attn_implementation: str | None = None):
@@ -191,6 +146,23 @@ def find_latest_checkpoint(output_dir: str | Path) -> str | None:
     return str(candidates[-1][1])
 
 
+def split_by_video(rows, validation_fraction: float, seed: int):
+    """Keep all samples of a video in the same split."""
+    if not 0 <= validation_fraction < 1:
+        raise ValueError("--validation-fraction must be in [0, 1)")
+    ids = sorted({str(row.get("video_id") or "") for row in rows})
+    if not ids or "" in ids:
+        raise ValueError("Every Stage 1 sample needs a nonempty video_id")
+    if validation_fraction == 0 or len(ids) < 2:
+        return list(range(len(rows))), []
+    random.Random(seed).shuffle(ids)
+    n_val = max(1, min(len(ids) - 1, round(len(ids) * validation_fraction)))
+    held_out = set(ids[:n_val])
+    train_idx = [i for i, row in enumerate(rows) if str(row["video_id"]) not in held_out]
+    val_idx = [i for i, row in enumerate(rows) if str(row["video_id"]) in held_out]
+    return train_idx, val_idx
+
+
 def parse_args():
     parser = argparse.ArgumentParser(description="Qwen3.5 LoRA pretraining (ASR caption completion)")
     parser.add_argument("--model-name", type=str, default="Qwen/Qwen3.5-2B")
@@ -202,9 +174,15 @@ def parse_args():
     parser.add_argument("--default-video-path", type=str, default=None)
     parser.add_argument("--video-path-map", type=str, default=None)
 
-    parser.add_argument("--window-size", type=int, default=4)
+    parser.add_argument("--window-size", type=int, default=120,
+                        help="Maximum sampled frames across the preceding video window.")
     parser.add_argument("--frame-size", type=int, default=224)
     parser.add_argument("--limit", type=int, default=None)
+    parser.add_argument("--allow-context-input", action="store_true",
+                        help="Allow legacy samples containing previous narration; disabled for the visual-only Stage 1 mainline.")
+    parser.add_argument("--validation-fraction", type=float, default=0.1,
+                        help="Hold out this fraction of videos for validation; use 0 to disable.")
+    parser.add_argument("--split-seed", type=int, default=42)
 
     parser.add_argument("--num-train-epochs", type=float, default=3.0)
     parser.add_argument("--per-device-train-batch-size", type=int, default=1)
@@ -254,6 +232,8 @@ def parse_args():
 
 def main():
     args = parse_args()
+    if args.per_device_train_batch_size != 1:
+        raise ValueError("Stage 1 multimodal training currently requires --per-device-train-batch-size 1")
 
     if args.bf16 and args.fp16:
         raise ValueError("Use only one precision flag: --bf16 or --fp16, not both.")
@@ -297,6 +277,35 @@ def main():
         frame_size=args.frame_size,
         limit=args.limit,
     )
+    if not args.allow_context_input:
+        contaminated = [i for i, row in enumerate(dataset.rows)
+                        if row.get("prev_context") or row.get("sample_type") in {
+                            "pretrain_caption_sentence_interleave", "pretrain_next_sentence_mixedmask"}]
+        if contaminated:
+            raise ValueError(
+                f"{len(contaminated)} samples contain previous narration or use a legacy context format. "
+                "Rebuild with --format standard --no-context, or explicitly pass --allow-context-input."
+            )
+    train_idx, val_idx = split_by_video(dataset.rows, args.validation_fraction, args.split_seed)
+    train_dataset = Subset(dataset, train_idx)
+    eval_dataset = Subset(dataset, val_idx) if val_idx else None
+    print(f"[pretrain] video-level split: train={len(train_idx)}, validation={len(val_idx)}")
+    split_path = Path(args.output_dir) / "video_split.json"
+    split_path.parent.mkdir(parents=True, exist_ok=True)
+    split_path.write_text(json.dumps({
+        "seed": args.split_seed,
+        "validation_fraction": args.validation_fraction,
+        "train_video_ids": sorted({dataset.rows[i]["video_id"] for i in train_idx}),
+        "validation_video_ids": sorted({dataset.rows[i]["video_id"] for i in val_idx}),
+    }, ensure_ascii=False, indent=2), encoding="utf-8")
+    if val_idx:
+        validation_path = split_path.parent / "validation_samples.jsonl"
+        with validation_path.open("w", encoding="utf-8") as f:
+            for i in val_idx:
+                f.write(json.dumps(dataset.rows[i], ensure_ascii=False) + "\n")
+        print(f"[pretrain] held-out inference samples: {validation_path}")
+    if not val_idx:
+        print("[pretrain] No video-level validation split (need at least two videos and nonzero fraction).")
 
     collator = PretrainCollator(processor=processor, system_prompt=DEFAULT_SYSTEM_PROMPT)
 
@@ -319,6 +328,11 @@ def main():
         logging_steps=args.logging_steps,
         save_steps=args.save_steps,
         save_total_limit=args.save_total_limit,
+        eval_strategy="epoch" if eval_dataset is not None else "no",
+        save_strategy="epoch" if eval_dataset is not None else "steps",
+        load_best_model_at_end=eval_dataset is not None,
+        metric_for_best_model="eval_loss" if eval_dataset is not None else None,
+        greater_is_better=False if eval_dataset is not None else None,
         remove_unused_columns=False,
         bf16=args.bf16,
         fp16=args.fp16,
@@ -326,9 +340,9 @@ def main():
         logging_dir=logging_dir,
     )
 
-    print("[pretrain] Dataset size:", len(dataset))
+    print("[pretrain] Dataset size:", len(train_dataset))
     print("[pretrain] First sample summary:")
-    first = dataset.rows[0]
+    first = dataset.rows[train_idx[0]]
     print({
         "sample_type": first.get("sample_type"),
         "video_id": first.get("video_id"),
@@ -338,16 +352,14 @@ def main():
     })
 
     callbacks = []
-    if not args.disable_early_stop:
-        callbacks.append(
-            EpochLossEarlyStopping(
-                min_delta=args.early_stop_min_delta,
-                patience=args.early_stop_patience,
-            )
-        )
+    if not args.disable_early_stop and eval_dataset is not None:
+        callbacks.append(EarlyStoppingCallback(
+            early_stopping_patience=args.early_stop_patience,
+            early_stopping_threshold=args.early_stop_min_delta,
+        ))
         print(
             f"[pretrain] Early stopping enabled: patience={args.early_stop_patience}, "
-            f"min_delta={args.early_stop_min_delta} (per-epoch avg loss)"
+            f"min_delta={args.early_stop_min_delta} (validation loss)"
         )
     else:
         print("[pretrain] Early stopping disabled")
@@ -355,7 +367,8 @@ def main():
     trainer = Trainer(
         model=model,
         args=training_args,
-        train_dataset=dataset,
+        train_dataset=train_dataset,
+        eval_dataset=eval_dataset,
         data_collator=collator,
         callbacks=callbacks,
     )

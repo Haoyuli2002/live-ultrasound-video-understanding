@@ -1,14 +1,25 @@
 #!/usr/bin/env python3
 """Generate teacher visual summaries for one anchor ultrasound video.
 
-Output is one JSONL row per complete block and is directly consumable by:
+Output is one JSONL row per complete block, directly consumable by Stage 2:
 
-    pretrain/build_teacher_memory_summary_samples.py
+    python -m stage2.build_data --teacher-jsonl <this output> --output blocks.jsonl
+    # or pass --emit-stage2-blocks <blocks.jsonl> to do it in one step.
 
-For each complete block this script asks a video-capable teacher model for:
-  1. local_summary_target / local_sub_summaries: visual summaries of the
-     current block or denser local sub-windows;
-  2. global_summary_target: a concise cumulative visual summary from 0 to T.
+For each complete 60-second block (default --block-sec 60 / --local-sec 10) this
+script asks a video-capable teacher model for the three independent targets that
+stage2/build_data.py and stage2/data.py require:
+  1. local_sub_summaries: six independent 10-second visual summaries, each a
+     {window, local_summary_target} covering a non-overlapping 10s sub-window;
+  2. block_summary_target: an INDEPENDENT whole-minute visual summary produced by
+     a separate teacher call over the full 60s clip. It is never a concatenation
+     of the ten-second labels, and is never faked from a single local window;
+  3. global_summary_target: a concise cumulative visual summary from 0 to T.
+
+Because build_data rejects the legacy single-60s `local_summary_target` schema,
+--local-sec must be smaller than --block-sec (the defaults already satisfy this);
+a complete block that fails to produce six dense labels raises instead of
+silently writing an untrainable row.
 
 By default the global summary is generated incrementally from the previous
 global summary plus the current minute clip. This is much cheaper and scales to
@@ -252,6 +263,8 @@ def read_existing(path: Path) -> tuple[set[int], str]:
     done: set[int] = set()
     last_idx = -1
     last_global = ""
+    valid_rows = []
+    had_errors = False
     if not path.exists():
         return done, last_global
     with path.open(encoding="utf-8") as f:
@@ -260,12 +273,25 @@ def read_existing(path: Path) -> tuple[set[int], str]:
                 continue
             row = json.loads(line)
             if row.get("error"):
+                had_errors = True
                 continue
             idx = int(row.get("block_idx", -1))
+            if "block_summary_target" not in row:
+                raise ValueError("Existing labels lack independent block summaries; use a new output or --overwrite")
+            if idx != len(done):
+                raise ValueError("Resume requires unique chronological contiguous blocks")
             done.add(idx)
+            valid_rows.append(row)
             if idx > last_idx and row.get("global_summary_target"):
                 last_idx = idx
                 last_global = str(row["global_summary_target"])
+    if had_errors:
+        # Failed audit rows must not contaminate a successfully resumed training file.
+        temporary = path.with_suffix(path.suffix + ".resume.tmp")
+        with temporary.open("w", encoding="utf-8") as f:
+            for row in valid_rows:
+                f.write(json.dumps(row, ensure_ascii=False) + "\n")
+        temporary.replace(path)
     return done, last_global
 
 
@@ -417,15 +443,19 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--video-id", default=None, help="Override video_id; default = sanitized video stem")
     p.add_argument("--model", default=DEFAULT_TEACHER_SUMMARY_MODEL, help="OpenRouter video-capable model id")
     p.add_argument("--block-sec", type=float, default=60.0, help="Block length in seconds")
-    p.add_argument("--local-sec", type=float, default=60.0, help="Local summary supervision window in seconds. Use 10 for dense short-memory labels.")
+    p.add_argument("--local-sec", type=float, default=10.0, help="Local summary supervision window in seconds. Use 10 for dense short-memory labels.")
     p.add_argument("--max-blocks", type=int, default=None, help="Optional limit for smoke tests")
-    p.add_argument("--global-mode", choices=["incremental", "full_clip"], default="incremental")
+    p.add_argument("--global-mode", choices=["incremental", "full_clip"], default="full_clip")
     p.add_argument("--max-local-tokens", type=int, default=300)
     p.add_argument("--max-global-tokens", type=int, default=500)
     p.add_argument("--temperature", type=float, default=0.2)
     p.add_argument("--include-audio", action="store_true", help="Send clips with audio. Default is muted visual-only clips.")
     p.add_argument("--keep-temp-clips", action="store_true")
     p.add_argument("--overwrite", action="store_true", help="Overwrite output instead of resuming")
+    p.add_argument("--emit-stage2-blocks", metavar="BLOCKS_JSONL", default=None,
+                   help="After annotation, convert the per-block teacher JSONL "
+                        "into trainable Stage 2 blocks via stage2.build_data and "
+                        "write them to this path.")
     return p.parse_args()
 
 
@@ -443,7 +473,7 @@ def main() -> None:
     duration = probe_duration_sec(video_path)
     if args.local_sec <= 0 or args.local_sec > args.block_sec:
         raise ValueError("--local-sec must be in (0, --block-sec]")
-    num_blocks = int(math.floor(duration / args.block_sec))
+    num_blocks = int(math.ceil(duration / args.block_sec))
     if args.max_blocks is not None:
         num_blocks = min(num_blocks, int(args.max_blocks))
     if num_blocks <= 0:
@@ -461,7 +491,10 @@ def main() -> None:
             print(f"[teacher-summary] skip existing block {block_idx}")
             continue
         start = block_idx * args.block_sec
-        end = start + args.block_sec
+        end = min(start + args.block_sec, start + math.floor((duration - start) / args.local_sec) * args.local_sec)
+        if end <= start:
+            continue  # No complete local window in the remaining tail.
+        complete_block = abs(end - start - args.block_sec) < 1e-6
         block_clip = temp_clip_path(video_id, f"teacher_summary_block{block_idx:04d}_{int(start)}_{int(end)}")
         cut_clip(video_path, start, end, block_clip)
         teacher_block_clip = prepare_teacher_clip(
@@ -520,10 +553,19 @@ def main() -> None:
                         "local_summary_target": sub_summary,
                     })
                     local_usages.append({"sub_idx": sub_idx, "window": [round(sub_start, 3), round(sub_end, 3)], "usage": sub_usage})
-                local_summary = " ".join(s["local_summary_target"] for s in local_sub_summaries if s.get("local_summary_target"))
+                # Independent whole-block target, not a concatenation of sub-summaries.
+                local_summary = ""
+                if complete_block:
+                    local_summary, block_usage = summarize_local(
+                        client=client, model=args.model, video_id=video_id, block_idx=block_idx,
+                        clip_path=teacher_block_clip, start=start, end=end,
+                        max_tokens=args.max_local_tokens, temperature=args.temperature)
+                    local_usages.append({"window": [start, end], "scope": "block", "usage": block_usage})
                 local_usage_meta = local_usages
 
-            if args.global_mode == "full_clip":
+            if not complete_block:
+                global_summary, global_usage = "", {}
+            elif args.global_mode == "full_clip":
                 global_clip = temp_clip_path(video_id, f"teacher_summary_0_to_{block_idx:04d}_{int(end)}")
                 cut_clip(video_path, 0.0, end, global_clip)
                 teacher_global_clip = prepare_teacher_clip(
@@ -560,12 +602,39 @@ def main() -> None:
                     temperature=args.temperature,
                 )
 
+            # Stage 2 blocks require six independent 10-second labels plus an
+            # independent whole-minute block summary. `local_summary` already
+            # holds that independent block-level teacher call (see the
+            # local_sec != block_sec branch above); it is NOT a concatenation of
+            # the ten-second labels and must never be faked from a single local
+            # window. We write it as `block_summary_target` only for complete
+            # blocks that actually carry six ordered 10-second sub-summaries.
+            dense_local = abs(args.local_sec - args.block_sec) >= 1e-6
+            if complete_block and dense_local:
+                expected_subs = int(round(args.block_sec / args.local_sec))
+                if len(local_sub_summaries) != expected_subs:
+                    raise RuntimeError(
+                        f"block {block_idx}: expected {expected_subs} local "
+                        f"sub-summaries, got {len(local_sub_summaries)}; a "
+                        "complete Stage 2 block needs dense 10-second labels")
+                if not str(local_summary).strip():
+                    raise RuntimeError(
+                        f"block {block_idx}: missing independent block summary")
+            block_summary_target = (
+                local_summary if (complete_block and dense_local) else "")
+            # Strip the per-row `sub_idx` helper so each sub-summary matches the
+            # schema stage2/build_data.py consumes ({window, local_summary_target}).
+            clean_subs = [
+                {"window": item["window"],
+                 "local_summary_target": item["local_summary_target"]}
+                for item in local_sub_summaries
+            ]
             row = {
                 "video_id": video_id,
                 "video": str(video_path),
                 "block_idx": block_idx,
                 "block_window": [round(start, 3), round(end, 3)],
-                "local_summary_target": local_summary,
+                "block_summary_target": block_summary_target,
                 "global_summary_target": global_summary,
                 "teacher": args.model,
                 "meta": {
@@ -579,10 +648,18 @@ def main() -> None:
                     "global_usage": global_usage,
                 },
             }
-            if local_sub_summaries:
-                row["local_sub_summaries"] = local_sub_summaries
+            if clean_subs:
+                row["local_sub_summaries"] = clean_subs
+            elif complete_block:
+                # Guard against silently emitting the legacy single-60s schema
+                # that stage2/build_data.py rejects.
+                raise RuntimeError(
+                    f"block {block_idx}: no local_sub_summaries produced; run "
+                    "with --local-sec smaller than --block-sec (default 10/60) "
+                    "to generate Stage 2 compatible blocks")
             append_jsonl(out_path, row)
-            previous_global = global_summary
+            if complete_block:
+                previous_global = global_summary
             sub_info = f" local_subs={len(local_sub_summaries)}" if local_sub_summaries else ""
             print(f"[teacher-summary] wrote block {block_idx} window=[{start:.1f},{end:.1f}]{sub_info} local_chars={len(local_summary)} global_chars={len(global_summary)}")
         except Exception as e:
@@ -601,6 +678,30 @@ def main() -> None:
                 if teacher_block_clip != block_clip:
                     teacher_block_clip.unlink(missing_ok=True)
                 block_clip.unlink(missing_ok=True)
+
+    if args.emit_stage2_blocks:
+        blocks_path = Path(args.emit_stage2_blocks).expanduser().resolve()
+        # Keep only successfully annotated per-block rows; skip any error rows
+        # so a partial run still yields a clean, trainable blocks file.
+        rows = [json.loads(line) for line in out_path.read_text(encoding="utf-8").splitlines()
+                if line.strip()]
+        block_rows = [row for row in rows if "local_sub_summaries" in row]
+        if not block_rows:
+            raise RuntimeError(
+                f"No complete Stage 2 blocks in {out_path}; nothing to build. "
+                "Ensure --local-sec is smaller than --block-sec (default 10/60).")
+        repo_root = str(REPO_ROOT)
+        if repo_root not in sys.path:
+            sys.path.insert(0, repo_root)
+        from stage2.build_data import build_rows  # noqa: E402
+        from stage2.data import load_blocks  # noqa: E402
+        built = build_rows(block_rows)
+        blocks_path.parent.mkdir(parents=True, exist_ok=True)
+        with blocks_path.open("w", encoding="utf-8") as stream:
+            for row in sorted(built, key=lambda item: (item["video_id"], item["block_window"][0])):
+                stream.write(json.dumps(row, ensure_ascii=False) + "\n")
+        load_blocks(blocks_path)  # Validate full chronology before declaring success.
+        print(f"[teacher-summary] wrote {len(built)} Stage 2 blocks to {blocks_path}")
 
 
 if __name__ == "__main__":

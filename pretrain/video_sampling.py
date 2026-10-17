@@ -1,15 +1,16 @@
 """
-Frame sampling for ultrasound ASR caption pretraining.
+Frame sampling for ultrasound ASR sentence pretraining.
 
-Independent from QA/train. Given a video and a time window [start, end], sample
-N frames from the TAIL of the window (biased to `end` == current_time), so the
-model sees the most recent frames before it must continue the narration.
+The Stage 1 mainline samples the causal window before the target sentence
+begins at 1 FPS, up to 120 frames. Legacy tail sampling remains available
+for older experiments.
 """
 
 from __future__ import annotations
 
 from pathlib import Path
 from typing import List
+import math
 
 import cv2
 from PIL import Image
@@ -55,7 +56,7 @@ def _read_frames_at_times(
     last_valid = None
 
     for t in times:
-        frame_idx = int(round(t * fps))
+        frame_idx = int(math.floor(t * fps))
         if frame_count > 0:
             frame_idx = min(max(frame_idx, 0), frame_count - 1)
 
@@ -85,6 +86,41 @@ def _uniform_times(start_sec: float, end_sec: float, n_frames: int) -> List[floa
         return [end_sec]
     step = (end_sec - start_sec) / (n_frames - 1)
     return [start_sec + i * step for i in range(n_frames)]
+
+
+def context_frame_times(start_sec: float, end_sec: float, max_frames: int = 120) -> List[float]:
+    """Sample the causal context at 1 FPS, uniformly if the budget is smaller."""
+    start_sec, end_sec = float(start_sec), float(end_sec)
+    if end_sec <= start_sec or max_frames <= 0:
+        raise ValueError("Context window and frame budget must be positive")
+    count = min(max_frames, math.ceil(end_sec - start_sec))
+    step = (end_sec - start_sec) / count
+    return [start_sec + (i + 0.5) * step for i in range(count)]
+
+
+def sample_context_frames(
+    video_path: str | Path, start_sec: float, end_sec: float,
+    max_frames: int = 120, resize: int | None = 224,
+) -> List[Image.Image]:
+    """Sample up to max_frames across the entire causal [start, end) window."""
+    video_path = Path(video_path)
+    if not video_path.exists():
+        raise FileNotFoundError(f"Video not found: {video_path}")
+    cap = cv2.VideoCapture(str(video_path))
+    if not cap.isOpened():
+        raise RuntimeError(f"Cannot open video: {video_path}")
+    try:
+        fps = cap.get(cv2.CAP_PROP_FPS) or 25.0
+        frame_count = int(cap.get(cv2.CAP_PROP_FRAME_COUNT) or 0)
+        duration = frame_count / fps if frame_count > 0 else float(end_sec)
+        end_sec = min(float(end_sec), duration)
+        if end_sec <= 0:
+            return _read_frames_at_times(cap, [0.0], fps, frame_count, resize, video_path)
+        start_sec = max(0.0, min(float(start_sec), end_sec - 1.0 / fps))
+        times = context_frame_times(start_sec, end_sec, max_frames)
+        return _read_frames_at_times(cap, times, fps, frame_count, resize, video_path)
+    finally:
+        cap.release()
 
 
 def sample_uniform_n_frames(

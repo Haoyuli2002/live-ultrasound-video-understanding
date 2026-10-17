@@ -68,7 +68,7 @@ def main():
     parser.add_argument("--train-jsonl", required=True)
     parser.add_argument("--video-path-map", required=True)
     parser.add_argument("--output-dir", required=True)
-    parser.add_argument("--model-name", default="Qwen/Qwen3-VL-2B-Instruct")
+    parser.add_argument("--model-name", default="Qwen/Qwen3.5-2B")
     parser.add_argument("--init-adapter")
     parser.add_argument("--epochs", type=int, default=1)
     parser.add_argument("--learning-rate", type=float, default=1e-4)
@@ -78,7 +78,7 @@ def main():
     args = parser.parse_args()
 
     if not torch.cuda.is_available():
-        raise RuntimeError("Stage 2 Qwen3-VL training requires a CUDA device")
+        raise RuntimeError("Stage 2 Qwen3.5 training requires a CUDA device")
     dtype = {"bf16": torch.bfloat16, "fp16": torch.float16,
              "fp32": torch.float32}[args.dtype]
     videos = load_blocks(args.train_jsonl)

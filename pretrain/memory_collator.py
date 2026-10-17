@@ -14,7 +14,7 @@ SHORT_MEMORY_TOKEN = "<SHORT_MEM>"
 LONG_MEMORY_TOKEN = "<LONG_MEM>"
 
 SHORT_SYSTEM_PROMPT = """You are learning a short-term hidden memory for ultrasound video. The <SHORT_MEM> token must compress the newly arrived frames so that visually grounded local evidence can be reconstructed from memory only."""
-LONG_SYSTEM_PROMPT = """You are learning a long-term hidden memory for ultrasound video. The <LONG_MEM> token must compress recent short-term memories and previous long-term memory so that cumulative visual evidence can be reconstructed from memory only."""
+LONG_SYSTEM_PROMPT = """You are learning a long-term hidden memory for ultrasound video. The long-memory query positions must compress recent short-term memories and previous long-term memory so that cumulative visual evidence can be reconstructed from memory only."""
 DECODE_SYSTEM_PROMPT = """You are an ultrasound teaching assistant. Reconstruct the requested visually grounded information using only the provided hidden memory token(s). Output only the requested text."""
 
 
@@ -40,6 +40,7 @@ def repeated_token(token: str, count: int) -> str:
 def short_decode_messages(short_count: int = 1, target: str | None = None, task: str = "local_summary"):
     memory = repeated_token(SHORT_MEMORY_TOKEN, short_count)
     task_text = {
+        "block_summary": "Reconstruct the visually grounded ultrasound summary for the complete current 60-second block.",
         "asr": "Reconstruct the ASR narration for this time span.",
         "local_summary": "Reconstruct the visually grounded local ultrasound summary for this time span.",
     }.get(task, task)

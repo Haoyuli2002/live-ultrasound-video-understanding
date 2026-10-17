@@ -1,4 +1,4 @@
-# Stage 2 — chronological visual memory
+# Stage 2 — chronological visual memory on Qwen3.5
 
 This is a new implementation. It does not import code from `pretrain/`.
 
@@ -100,10 +100,11 @@ python -m stage2.annotate --video /path/to/video1.mp4 \
   --video-id video1 --model google/gemini-3.1-pro-preview \
   --base-url https://openrouter.ai/api/v1 \
   --api-key-env OPENROUTER_API_KEY \
+  --frame-size 224 \
   --output /path/to/video1_teacher.jsonl
 ```
 
-For local Qwen3.5 on vLLM, use `--model Qwen/Qwen3.5-35B-A3B`, its
+For Qwen3.5 on the SSH cluster's vLLM, use `--model Qwen/Qwen3.5-35B-A3B`, its
 `--base-url`, `--api-key-env VLLM_API_KEY`, and `--clip-dir` pointing into a
 directory allowed by the vLLM server's local-media setting. The server must
 share access to that filesystem. `--transport` defaults to OpenRouter's
@@ -157,7 +158,8 @@ fewer complete 10-second labels; it never triggers a long update. Labels must
 be visual-only summaries generated from exactly their stated video intervals.
 
 ```bash
-python -m stage2.train --train-jsonl /path/to/blocks.jsonl \
+python -m stage2.train --model-name Qwen/Qwen3.5-2B \
+  --train-jsonl /path/to/blocks.jsonl \
   --video-path-map /path/to/video_path_map.json \
   --output-dir /path/to/stage2_output \
   --init-adapter /path/to/stage1_output/final
@@ -170,11 +172,14 @@ python -m stage2.evaluate --eval-jsonl /path/to/held_out_blocks.jsonl \
   --output /path/to/reconstruction_losses.jsonl
 ```
 
-`--init-adapter` is optional. Training writes per-update component losses to
+For the three-stage mainline, `--init-adapter` points to the Stage 1 adapter and
+must have been trained from the exact same `Qwen/Qwen3.5-2B` base. Omitting it
+is a Stage 2-from-base ablation, not the full pipeline. Training writes
+per-update component losses to
 `training_metrics.jsonl`. Streaming output contains minute-boundary long
 snapshots and final long/short tensors for a later QA stage. This implementation
 has unit tests for chronology and loss scheduling, plus a held-out
-teacher-forced reconstruction-loss evaluator. A complete Qwen3-VL GPU run and
+teacher-forced reconstruction-loss evaluator. A complete Qwen3.5 GPU run and
 generated-summary or downstream memory-quality evaluation remain to be performed.
 Stage 2 uses PEFT's
 `trainable_token_indices` to train only the two new query-token embeddings

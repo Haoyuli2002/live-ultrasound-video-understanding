@@ -1,4 +1,4 @@
-"""One Qwen3-VL backbone with LoRA for visual encoding and memory reconstruction."""
+"""One Qwen3.5 backbone with LoRA for visual encoding and memory reconstruction."""
 from __future__ import annotations
 
 import torch
@@ -12,19 +12,29 @@ class MemoryModel:
                  adapter_path: str | None = None,
                  dtype: torch.dtype = torch.bfloat16, rank: int = 16):
         from transformers import AutoModelForImageTextToText, AutoProcessor
-        from peft import LoraConfig, PeftModel, get_peft_model
+        from peft import LoraConfig, PeftConfig, PeftModel, get_peft_model
+
+        def require_same_base(adapter: str, label: str) -> None:
+            configured = PeftConfig.from_pretrained(adapter).base_model_name_or_path
+            if configured and configured != model_name:
+                raise ValueError(
+                    f"{label} was trained from {configured!r}, but Stage 2 is loading "
+                    f"{model_name!r}; every stage must use the same Qwen3.5 base"
+                )
 
         self.processor = AutoProcessor.from_pretrained(model_name, trust_remote_code=True)
         tokenizer = self.processor.tokenizer
         base = AutoModelForImageTextToText.from_pretrained(
             model_name, torch_dtype=dtype, trust_remote_code=True)
         if base_adapter:
+            require_same_base(base_adapter, "Stage 1 adapter")
             base = PeftModel.from_pretrained(base, base_adapter).merge_and_unload()
         tokenizer.add_special_tokens({"additional_special_tokens": [SHORT, LONG]})
         base.resize_token_embeddings(len(tokenizer))
         short_id = tokenizer.convert_tokens_to_ids(SHORT)
         long_id = tokenizer.convert_tokens_to_ids(LONG)
         if adapter_path:
+            require_same_base(adapter_path, "Stage 2 adapter")
             self.model = PeftModel.from_pretrained(base, adapter_path, is_trainable=False)
         else:
             try:
@@ -54,7 +64,8 @@ class MemoryModel:
             {"type": "text", "text": SHORT},
         ]}]
         text = self.processor.apply_chat_template(messages, tokenize=False,
-                                                  add_generation_prompt=False)
+                                                  add_generation_prompt=False,
+                                                  enable_thinking=False)
         inputs = self.processor(text=[text], images=[image], return_tensors="pt")
         inputs = {k: v.to(self.device) if torch.is_tensor(v) else v
                   for k, v in inputs.items()}

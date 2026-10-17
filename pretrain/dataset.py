@@ -8,7 +8,7 @@ Each row:
   {
     "sample_type": "pretrain_caption",
     "video_id": "...",
-    "video_window": [start, end],   # end == segment.start (current_time)
+    "video_window": [start, end],   # end == sentence.start (current_time)
     "prev_context": "...",
     "target": "...",
     "meta": {...}
@@ -26,9 +26,9 @@ from typing import Any, Dict, List, Optional
 from PIL import Image
 
 try:
-    from .video_sampling import sample_last_n_frames, sample_uniform_n_frames
+    from .video_sampling import sample_context_frames, sample_uniform_n_frames
 except ImportError:  # allow direct script execution
-    from video_sampling import sample_last_n_frames, sample_uniform_n_frames
+    from video_sampling import sample_context_frames, sample_uniform_n_frames
 
 
 class PretrainCaptionDataset:
@@ -40,7 +40,7 @@ class PretrainCaptionDataset:
         video_root: str | Path | None = None,
         default_video_path: str | Path | None = None,
         video_path_map: str | Path | None = None,
-        window_size: int = 4,
+        window_size: int = 120,
         frame_size: int = 224,
         limit: Optional[int] = None,
     ):
@@ -105,11 +105,11 @@ class PretrainCaptionDataset:
     def _sample_frames(self, row: Dict[str, Any]) -> List[Image.Image]:
         video_path = self._resolve_video_path(row)
         start, end = row["video_window"]
-        return sample_last_n_frames(
+        return sample_context_frames(
             video_path,
             float(start),
             float(end),
-            n_frames=self.window_size,
+            max_frames=self.window_size,
             resize=self.frame_size,
         )
 
