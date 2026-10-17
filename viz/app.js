@@ -41,6 +41,14 @@ function selectSentence(sid) {
   targetText.textContent = s.target;
   renderColumns(s);
   renderTimeline(s, 'before_with_asr');
+  // Switching sentences clears any pending "play to window end" auto-stop and
+  // parks the video at the new target's start, so the playhead matches the
+  // highlighted interval instead of lingering wherever it last stopped.
+  stopAt = null;
+  video.pause();
+  if (DATA && DATA.duration) {
+    video.currentTime = Math.min(s.sentence_window[0], DATA.duration);
+  }
 }
 function renderColumns(s) {
   columns.innerHTML = '';
@@ -99,6 +107,25 @@ video.addEventListener('timeupdate', function () {
     stopAt = null;
   }
 });
+// A manual seek (dragging the native progress bar) cancels the "play to window
+// end" auto-stop, so the user can scrub anywhere freely.
+video.addEventListener('seeking', function () {
+  stopAt = null;
+});
+
+// Make the custom timeline a scrubber too: click or drag anywhere on it to seek.
+const timeline = document.getElementById('timeline');
+let scrubbing = false;
+function seekFromEvent(e) {
+  if (!DATA || !DATA.duration) return;
+  const rect = timeline.getBoundingClientRect();
+  const ratio = Math.min(1, Math.max(0, (e.clientX - rect.left) / rect.width));
+  stopAt = null;
+  video.currentTime = ratio * DATA.duration;
+}
+timeline.addEventListener('mousedown', function (e) { scrubbing = true; seekFromEvent(e); });
+window.addEventListener('mousemove', function (e) { if (scrubbing) seekFromEvent(e); });
+window.addEventListener('mouseup', function () { scrubbing = false; });
 
 sentenceSelect.addEventListener('change', function () {
   selectSentence(parseInt(this.value, 10));
