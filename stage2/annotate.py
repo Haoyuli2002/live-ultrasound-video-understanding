@@ -16,12 +16,31 @@ from pathlib import Path
 
 from .data import VideoReader
 
+# Fixed multi-perspective vocabulary. Every teacher summary is organised as a
+# small set of these labelled facets so the student learns structured, mutually
+# orthogonal memory instead of one undifferentiated paragraph. Each facet, when
+# present, is one short clause prefixed by its label; absent facets are omitted.
+PERSPECTIVES = {
+    "View": "the scan plane or standard view that is visible",
+    "Anatomy": "the anatomical structures and organs that are visible",
+    "Probe": "probe position or movement, only when it explains a finding",
+    "Finding": "static sonographic findings or signs that are visible",
+    "Dynamic": "dynamic signs such as motion, flow, pulsation, or filling",
+    "Measure": "on-screen measurements, calipers, labels, or machine settings",
+    "Change": "visual change or comparison relative to earlier in the video",
+}
+
 SYSTEM = (
     "You annotate ultrasound video using only the supplied silent video. "
-    "Describe visible anatomy, view, probe movement, measurements, temporal "
-    "changes and clinically relevant visual evidence. Do not infer an unseen "
-    "diagnosis, use audio/transcripts, or mention events outside the requested "
-    "interval. Return a concise factual summary without a preamble."
+    "Report only what is visually supported in the attached clip. "
+    "Organise every answer as labelled perspectives drawn from this closed set: "
+    + "; ".join(f"{name} = {gloss}" for name, gloss in PERSPECTIVES.items())
+    + ". Write each requested perspective as one short clause prefixed by its "
+    "label and a colon, separated by semicolons, in the listed order; omit any "
+    "perspective that is not visible rather than inventing it. "
+    "Do not infer an unseen diagnosis, treat 'not visible' as 'absent', use "
+    "audio or transcripts, add a preamble, or mention events outside the "
+    "requested interval. Keep every answer factual and compact."
 )
 
 
@@ -41,15 +60,41 @@ def make_silent_clip(video_path: Path, start: int, end: int, output: Path) -> No
 def summarize_window(video_path: Path, teacher, *, kind: str,
                      start: int, end: int, clip_path: Path) -> str:
     make_silent_clip(video_path, start, end, clip_path)
-    focus = {
-        "current 10-second local": "Preserve brief visible findings and changes within these ten seconds.",
-        "independent current 60-second block": "Integrate this minute as a whole; do not merely concatenate ten-second descriptions.",
-        "cumulative video prefix": "Summarize the important visual evidence observed since video start, including earlier observations worth retaining.",
-    }.get(kind, "")
+    # Each perspective's time scale and word budget is matched to the memory it
+    # supervises: 10 short tokens, 60 short tokens, and a fixed 60-token long
+    # state. The three facet subsets are kept orthogonal so the student's short,
+    # block, and global memories learn to encode different things.
+    plan = {
+        "current 10-second local": {
+            "facets": ["View", "Anatomy", "Probe", "Finding", "Dynamic"],
+            "words": 40,
+            "focus": ("Capture only what newly appears or changes within these "
+                      "ten seconds; keep it to a single short line."),
+        },
+        "independent current 60-second block": {
+            "facets": ["View", "Anatomy", "Finding", "Dynamic", "Measure"],
+            "words": 80,
+            "focus": ("Integrate this minute as a whole and give its overall "
+                      "visual assessment; do not list or restate the individual "
+                      "ten-second observations."),
+        },
+        "cumulative video prefix": {
+            "facets": ["Anatomy", "Finding", "Dynamic", "Measure", "Change"],
+            "words": 90,
+            "focus": ("Maintain a fixed-capacity visual memory of the whole "
+                      "video so far: keep only the most clinically useful "
+                      "persistent evidence, merge repetition, rewrite rather than "
+                      "append, drop single-minute transients, and hold the "
+                      "information volume roughly constant as the video grows."),
+        },
+    }.get(kind, {"facets": list(PERSPECTIVES), "words": 80, "focus": ""})
+    facets = ", ".join(plan["facets"])
     prompt = (
         f"Summarize only the visible evidence in the {kind} interval "
         f"[{start}, {end}) seconds. The attached silent video covers exactly "
-        f"that interval. {focus} "
+        f"that interval. {plan['focus']} "
+        f"Report these perspectives when visible, in this order: {facets}. "
+        f"Use at most {plan['words']} words total. "
         "Do not use information from other times."
     )
     summary = teacher.summary(prompt, clip_path).strip()
