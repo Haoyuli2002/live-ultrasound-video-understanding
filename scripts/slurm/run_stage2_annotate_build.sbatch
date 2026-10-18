@@ -128,6 +128,8 @@ done
 if [[ "$ready" != 1 ]]; then
   echo "[error] vLLM not ready after $((VLLM_READY_RETRIES * VLLM_READY_INTERVAL))s; see $VLLM_LOG" >&2
   tail -200 "$VLLM_LOG" >&2 || true
+  exit 1
+fi
 
 # Resolve which ids to annotate (explicit smoke list, or every id in VIDEO_MAP).
 if [[ -n "${VIDEO_IDS// }" ]]; then
@@ -193,6 +195,3 @@ for vid, blocks in list(videos.items())[:3]:
 PY
 
 echo "[done] teacher=$TEACHER_DIR  blocks=$BLOCKS  $(date)"
-
-  exit 1
-fi
