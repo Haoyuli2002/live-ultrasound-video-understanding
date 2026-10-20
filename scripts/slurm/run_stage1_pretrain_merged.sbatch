@@ -26,6 +26,7 @@ FRAME_SAMPLING=${FRAME_SAMPLING:-uniform}
 SAVE_STEPS=${SAVE_STEPS:-50}
 LOGGING_STEPS=${LOGGING_STEPS:-10}
 VALIDATION_FRACTION=${VALIDATION_FRACTION:-0.1}
+DATALOADER_NUM_WORKERS=${DATALOADER_NUM_WORKERS:-6}
 
 cd "$REPO"
 if [[ -f /dss/dsshome1/04/ge75vid2/miniconda3/etc/profile.d/conda.sh ]]; then
@@ -73,6 +74,7 @@ python -m stage1.train \
   --frame-size "$FRAME_SIZE" \
   --frame-sampling "$FRAME_SAMPLING" \
   --validation-fraction "$VALIDATION_FRACTION" \
+  --dataloader-num-workers "$DATALOADER_NUM_WORKERS" \
   --gradient-accumulation-steps 8 \
   --learning-rate 1e-4 \
   --save-steps "$SAVE_STEPS" \

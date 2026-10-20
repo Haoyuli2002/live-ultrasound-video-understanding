@@ -109,6 +109,9 @@ def build_and_train(args, *, frame_budget, train_rows, val_rows, paths, output,
         logging_steps=args.logging_steps,
         load_best_model_at_end=False,
         bf16=args.dtype == "bf16", fp16=args.dtype == "fp16",
+        dataloader_num_workers=args.dataloader_num_workers,
+        dataloader_pin_memory=args.dataloader_num_workers > 0,
+        dataloader_persistent_workers=args.dataloader_num_workers > 0,
         report_to="none")
     trainer = Trainer(model=model, args=training_args,
                       train_dataset=Examples(train_rows, paths, frame_budget, args.frame_size,
@@ -122,7 +125,7 @@ def build_and_train(args, *, frame_budget, train_rows, val_rows, paths, output,
     return model, processor, trainer
 
 
-def main():
+def build_arg_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser()
     parser.add_argument("--train-jsonl", required=True)
     parser.add_argument("--video-path-map", required=True)
@@ -150,10 +153,20 @@ def main():
     parser.add_argument("--logging-steps", type=int, default=10)
     parser.add_argument("--resume", action="store_true",
                         help="Resume from the latest checkpoint in --output-dir")
+    parser.add_argument("--dataloader-num-workers", type=int, default=6,
+                        help="Background DataLoader worker processes for parallel video "
+                             "decoding; 0 decodes synchronously in the training process")
+    return parser
+
+
+def main():
+    parser = build_arg_parser()
     args = parser.parse_args()
 
     if args.max_steps == 0 or args.max_steps < -1 or args.save_steps < 1 or args.logging_steps < 1:
         raise ValueError("Expected max_steps=-1 or positive, and positive save/logging steps")
+    if args.dataloader_num_workers < 0:
+        raise ValueError("Expected --dataloader-num-workers >= 0")
 
     if not torch.cuda.is_available():
         raise RuntimeError("Stage 1 Qwen3.5 training requires CUDA")

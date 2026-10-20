@@ -5,7 +5,7 @@ from pathlib import Path
 
 from stage1.data import CONDITIONS, build_dataset, build_rows, frame_timestamps, sentences
 from stage1.model import messages
-from stage1.train import validate_rows
+from stage1.train import build_arg_parser, validate_rows
 
 
 class Stage1Tests(unittest.TestCase):
@@ -100,6 +100,20 @@ class Stage1Tests(unittest.TestCase):
             with self.assertRaisesRegex(FileNotFoundError, "selected transcripts"):
                 build_dataset(transcripts, output, video_map=selected)
             self.assertEqual(output.read_text(), "previous result\n")
+
+
+    def test_dataloader_num_workers_argument(self):
+        base = ["--train-jsonl", "t.jsonl", "--video-path-map", "m.json",
+                "--output-dir", "out"]
+        parser = build_arg_parser()
+        self.assertEqual(parser.parse_args(base).dataloader_num_workers, 6)
+        self.assertEqual(
+            parser.parse_args(base + ["--dataloader-num-workers", "0"]).dataloader_num_workers, 0)
+        self.assertEqual(
+            parser.parse_args(base + ["--dataloader-num-workers", "12"]).dataloader_num_workers, 12)
+        negative = parser.parse_args(base + ["--dataloader-num-workers", "-1"])
+        self.assertTrue(negative.dataloader_num_workers < 0,
+                        "main() rejects negative worker counts before training")
 
 
 if __name__ == "__main__":
