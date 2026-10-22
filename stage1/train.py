@@ -8,6 +8,7 @@ import random
 from pathlib import Path
 
 import torch
+import torch.multiprocessing
 from transformers import Trainer, TrainingArguments
 from transformers.trainer_utils import get_last_checkpoint
 
@@ -170,6 +171,16 @@ def main():
 
     if not torch.cuda.is_available():
         raise RuntimeError("Stage 1 Qwen3.5 training requires CUDA")
+
+    # DataLoader workers hand decoded video tensors back to the main process. With
+    # the default 'file_descriptor' sharing strategy PyTorch opens an AF_UNIX socket
+    # under $TMPDIR; on this cluster $TMPDIR lives under a long scratch path, so the
+    # socket path exceeds the ~108-byte AF_UNIX limit and the first batch dies with
+    # "OSError: AF_UNIX path too long". 'file_system' uses /dev/shm named shared
+    # memory instead of a socket, side-stepping the path-length limit. Only matters
+    # when workers > 0; it is a harmless no-op for synchronous (num_workers=0) runs.
+    if args.dataloader_num_workers > 0:
+        torch.multiprocessing.set_sharing_strategy("file_system")
     rows = [json.loads(line) for line in Path(args.train_jsonl).read_text(encoding="utf-8").splitlines()
             if line.strip()]
     validate_rows(rows)
