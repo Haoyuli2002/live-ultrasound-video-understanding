@@ -28,6 +28,8 @@ LOGGING_STEPS=${LOGGING_STEPS:-10}
 VALIDATION_FRACTION=${VALIDATION_FRACTION:-0.1}
 DATALOADER_NUM_WORKERS=${DATALOADER_NUM_WORKERS:-6}
 GRADIENT_ACCUMULATION_STEPS=${GRADIENT_ACCUMULATION_STEPS:-8}
+NPROC_PER_NODE=${NPROC_PER_NODE:-1}
+export NPROC_PER_NODE
 
 cd "$REPO"
 if [[ -f /dss/dsshome1/04/ge75vid2/miniconda3/etc/profile.d/conda.sh ]]; then
@@ -79,7 +81,24 @@ echo "Train: $TRAIN_JSONL"
 echo "Output: $OUTPUT_DIR; max_steps=$MAX_STEPS; epochs=$EPOCHS; frame_budget=$FRAME_BUDGET"
 nvidia-smi
 
-python -m stage1.train \
+# A single torchrun agent starts one Trainer process per visible GPU.
+launcher=(python)
+if [[ "$NPROC_PER_NODE" != 1 ]]; then
+  [[ "${SLURM_NNODES:-1}" == 1 ]] || { echo "Stage 1 launcher supports one node" >&2; exit 1; }
+  python - <<'PYGPU'
+import os, torch
+workers = int(os.environ["NPROC_PER_NODE"])
+if workers < 2 or workers > torch.cuda.device_count():
+    raise SystemExit(f"Requested {workers} ranks, visible GPUs={torch.cuda.device_count()}")
+PYGPU
+  # Static loopback rendezvous avoids depending on compute-node DNS.
+  master_port=${MASTER_PORT:-$((20000 + ${SLURM_JOB_ID:-$$} % 20000))}
+  launcher=(torchrun --nnodes=1 --master-addr=127.0.0.1 --master-port="$master_port"
+            --nproc-per-node="$NPROC_PER_NODE" --max-restarts=0)
+fi
+echo "Stage 1 launch: ranks=$NPROC_PER_NODE; accumulation=$GRADIENT_ACCUMULATION_STEPS; effective_batch=$((NPROC_PER_NODE * GRADIENT_ACCUMULATION_STEPS))"
+
+"${launcher[@]}" -m stage1.train \
   --model-name "$MODEL_NAME" \
   --train-jsonl "$TRAIN_JSONL" \
   --video-path-map "$VIDEO_MAP" \

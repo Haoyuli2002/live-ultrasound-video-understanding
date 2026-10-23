@@ -228,3 +228,76 @@ recreation is required for this change. Temporary directories are retained for
 debugging; remove only directories belonging to finished jobs when no longer
 needed. Verify scratch capacity and the site's retention policy before relying
 on it for the only copy of a checkpoint.
+
+## Single-node DDP (2 or 4 GPUs)
+
+`run_stage1_train_ddp.sbatch` launches one `torchrun` process per GPU. Trainer /
+Accelerate shards batches and synchronizes gradients. Every GPU holds a complete
+model replica; DDP improves throughput, not per-GPU model capacity. The default is
+2 GPUs, 1 epoch, 48 frames, and 2 CPU DataLoader workers **per rank**. Accumulation
+is 4 on 2 GPUs (2 on 4 GPUs), preserving an effective batch size of 8 unless an
+inherited `GRADIENT_ACCUMULATION_STEPS` overrides it.
+
+Submit a short GPU check from the repository root, with explicit values to avoid
+inheriting a previous single-GPU/smoke output directory:
+
+```bash
+mkdir -p logs
+export REPO="$PWD"
+export DATA=/dss/mcmlscratch/04/ge75vid2/haoyu/live-ultrasound-video-understanding
+export TRAIN_JSONL="$DATA/cluster_data/pretrain/train_full295_stage1_samples.jsonl"
+export VIDEO_MAP="$DATA/cluster_data/splits/train_full295_qwen35_pretrain_keep_videos.json"
+export MODEL_NAME=Qwen/Qwen3.5-2B
+export NPROC_PER_NODE=2 EPOCHS=1 FRAME_BUDGET=48 FRAME_SIZE=224 FRAME_SAMPLING=uniform
+export GRADIENT_ACCUMULATION_STEPS=4 DATALOADER_NUM_WORKERS=2
+export STAGE1_SHARING_STRATEGY=file_descriptor
+export MAX_STEPS=3 SAVE_STEPS=1 LOGGING_STEPS=1 VALIDATION_FRACTION=0
+export RUN_NAME="stage1_ddp_smoke_$(date +%Y%m%d_%H%M%S)"
+export OUTPUT_DIR="$DATA/cluster_data/experiments/stage1/$RUN_NAME"
+sbatch --time=00:30:00 --export=ALL scripts/slurm/run_stage1_train_ddp.sbatch
+```
+
+After the smoke run completes, submit a new full-data experiment:
+
+```bash
+export MAX_STEPS=-1 EPOCHS=1 SAVE_STEPS=25 LOGGING_STEPS=5 VALIDATION_FRACTION=0.1
+export RUN_NAME="stage1_full186_2b_ddp_e1_$(date +%Y%m%d_%H%M%S)"
+export OUTPUT_DIR="$DATA/cluster_data/experiments/stage1/$RUN_NAME"
+sbatch --export=ALL scripts/slurm/run_stage1_train_ddp.sbatch
+```
+
+For 4 GPUs, set `NPROC_PER_NODE=4 GRADIENT_ACCUMULATION_STEPS=2` and submit with
+`--gres=gpu:4 --cpus-per-task=32 --mem=240G` using a new output directory.
+The ordinary `run_stage1_pretrain_merged.sbatch` defaults to single-GPU launch;
+when returning to it from a DDP shell, explicitly set `NPROC_PER_NODE=1`.
+
+Only rank 0 writes split/config metadata and processor files. Trainer handles
+model/optimizer checkpoints and rank-specific RNG states. Resume uses the same
+output directory, world size and gradient accumulation; a single-GPU checkpoint
+cannot be resumed as a different-topology DDP run through this entry point. Do not
+share an output directory with another running job. The existing single-GPU job
+is unaffected by these local source changes.
+
+DDP uses non-reentrant gradient checkpointing, unused-parameter detection, and
+spawned DataLoader workers. Validation gathers losses only, avoiding full-vocabulary
+logit accumulation. In DDP, an OOM terminates the worker group rather than retrying
+independently on one rank. Lower `FRAME_BUDGET` and resubmit the whole job with its
+original output directory to resume the latest checkpoint. Single-GPU OOM fallback
+remains available. A 14-hour allocation may require checkpoint resubmission.
+
+Tests (no model downloads):
+
+```bash
+python -m unittest stage1.test_stage1 stage1.test_runtime stage1.test_ddp
+ACCELERATE_USE_CPU=true OMP_NUM_THREADS=1 torchrun --nnodes=1 \
+  --master-addr=127.0.0.1 --master-port=29587 --nproc-per-node=2 \
+  -m stage1.test_ddp --worker-output /tmp/stage1-ddp-test
+ACCELERATE_USE_CPU=true OMP_NUM_THREADS=1 torchrun --nnodes=1 \
+  --master-addr=127.0.0.1 --master-port=29587 --nproc-per-node=2 \
+  -m stage1.test_ddp --worker-output /tmp/stage1-ddp-test --resume-smoke
+```
+
+Use a fresh test directory for the first integration command. The CPU test checks
+sample sharding, synchronized parameter updates with an unused parameter and
+non-reentrant checkpointing, distributed evaluation, one writer for the processor,
+and checkpoint resume. It does not establish Qwen/H100 performance or NCCL health.
