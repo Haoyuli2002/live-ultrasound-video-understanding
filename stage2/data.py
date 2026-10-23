@@ -4,6 +4,8 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
+from .summary_schema import parse_summary
+
 
 def load_blocks(path: str | Path) -> dict[str, list[dict]]:
     videos: dict[str, list[dict]] = {}
@@ -47,9 +49,21 @@ def load_blocks(path: str | Path) -> dict[str, list[dict]]:
                     raise ValueError(f"{video_id}: local window {j} is not chronological")
                 if not str(label.get("local_summary_target", "")).strip():
                     raise ValueError(f"{video_id}: missing local summary {j}")
+                try:
+                    parse_summary(label["local_summary_target"], "local")
+                except ValueError as exc:
+                    raise ValueError(
+                        f"{video_id}: invalid local summary {j}: {exc}") from exc
             if full and (not str(row.get("block_summary_target", "")).strip()
                          or not str(row.get("global_summary_target", "")).strip()):
                 raise ValueError(f"{video_id}: full block needs independent block and global labels")
+            if full:
+                try:
+                    parse_summary(row["block_summary_target"], "block")
+                    parse_summary(row["global_summary_target"], "global")
+                except ValueError as exc:
+                    raise ValueError(
+                        f"{video_id}: invalid block/global summary: {exc}") from exc
             expected_start = end
     return videos
 

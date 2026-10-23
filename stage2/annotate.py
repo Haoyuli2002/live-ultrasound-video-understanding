@@ -15,21 +15,12 @@ import tempfile
 from pathlib import Path
 
 from .data import VideoReader
+from .summary_schema import (PERSPECTIVES, SCHEMA_VERSION, SUMMARY_PLANS,
+                             parse_summary)
 
-# Fixed multi-perspective vocabulary. Every teacher summary is organised as a
-# small set of these labelled facets so the student learns structured, mutually
-# orthogonal memory instead of one undifferentiated paragraph. Each facet, when
-# present, is one short clause prefixed by its label; absent facets are omitted.
-PERSPECTIVES = {
-    "View": "the scan plane or standard view that is visible",
-    "Anatomy": "the anatomical structures and organs that are visible",
-    "Probe": "probe position or movement, only when it explains a finding",
-    "Finding": "static sonographic findings or signs that are visible",
-    "Dynamic": "dynamic signs such as motion, flow, pulsation, or filling",
-    "Measure": "on-screen measurements, calipers, labels, or machine settings",
-    "Change": "visual change or comparison relative to earlier in the video",
-}
-
+# Fixed set of facet labels. Their contents remain open-ended, and the subsets
+# used by the three time scales intentionally overlap while emphasizing
+# different information. Absent facets are omitted.
 SYSTEM = (
     "You annotate ultrasound video using only the supplied silent video. "
     "Report only what is visually supported in the attached clip. "
@@ -44,7 +35,8 @@ SYSTEM = (
 )
 
 
-def make_silent_clip(video_path: Path, start: int, end: int, output: Path) -> None:
+def make_silent_clip(video_path: Path, start: int, end: int, output: Path, *,
+                     max_side: int = 0, fps: float = 0.0) -> None:
     """Re-encode an exact half-open window without its audio track."""
     if start < 0 or end <= start:
         raise ValueError("Invalid teacher video window")
@@ -52,60 +44,57 @@ def make_silent_clip(video_path: Path, start: int, end: int, output: Path) -> No
                "-i", str(video_path), "-t", str(end-start), "-an",
                "-c:v", "libx264", "-preset", "veryfast", "-crf", "23",
                str(output)]
+    filters = []
+    if fps > 0:
+        filters.append(f"fps={fps}")
+    if max_side > 0:
+        filters.append(f"scale=w='min({max_side},iw)':h='min({max_side},ih)':"
+                       "force_original_aspect_ratio=decrease:force_divisible_by=2")
+    if filters:
+        command[-1:-1] = ["-vf", ",".join(filters)]
     result = subprocess.run(command, capture_output=True, text=True)
     if result.returncode or not output.is_file() or output.stat().st_size == 0:
         raise RuntimeError(f"Failed to make silent clip [{start},{end}): {result.stderr[:400]}")
 
 
 def summarize_window(video_path: Path, teacher, *, kind: str,
-                     start: int, end: int, clip_path: Path) -> str:
-    make_silent_clip(video_path, start, end, clip_path)
-    # Each perspective's time scale and word budget is matched to the memory it
-    # supervises: 10 short tokens, 60 short tokens, and a fixed 60-token long
-    # state. The three facet subsets are kept orthogonal so the student's short,
-    # block, and global memories learn to encode different things.
-    plan = {
-        "current 10-second local": {
-            "facets": ["View", "Anatomy", "Probe", "Finding", "Dynamic"],
-            "words": 40,
-            "focus": ("Capture only what newly appears or changes within these "
-                      "ten seconds; keep it to a single short line."),
-        },
-        "independent current 60-second block": {
-            "facets": ["View", "Anatomy", "Finding", "Dynamic", "Measure"],
-            "words": 80,
-            "focus": ("Integrate this minute as a whole and give its overall "
-                      "visual assessment; do not list or restate the individual "
-                      "ten-second observations."),
-        },
-        "cumulative video prefix": {
-            "facets": ["Anatomy", "Finding", "Dynamic", "Measure", "Change"],
-            "words": 90,
-            "focus": ("Maintain a fixed-capacity visual memory of the whole "
-                      "video so far: keep only the most clinically useful "
-                      "persistent evidence, merge repetition, rewrite rather than "
-                      "append, drop single-minute transients, and hold the "
-                      "information volume roughly constant as the video grows."),
-        },
-    }.get(kind, {"facets": list(PERSPECTIVES), "words": 80, "focus": ""})
+                     start: int, end: int, clip_path: Path,
+                     max_attempts: int = 3, clip_max_side: int = 0,
+                     clip_fps: float = 0.0) -> tuple[str, dict[str, str]]:
+    clip_options = {"max_side": clip_max_side, "fps": clip_fps} if clip_max_side or clip_fps else {}
+    make_silent_clip(video_path, start, end, clip_path, **clip_options)
+    print(f"[teacher] {kind} [{start},{end})", flush=True)
+    if max_attempts < 1:
+        raise ValueError("max_attempts must be at least one")
+    plan = SUMMARY_PLANS[kind]
     facets = ", ".join(plan["facets"])
     prompt = (
-        f"Summarize only the visible evidence in the {kind} interval "
+        f"Summarize only the visible evidence in the {plan['prompt_kind']} interval "
         f"[{start}, {end}) seconds. The attached silent video covers exactly "
         f"that interval. {plan['focus']} "
         f"Report these perspectives when visible, in this order: {facets}. "
         f"Use at most {plan['words']} words total. "
         "Do not use information from other times."
     )
-    summary = teacher.summary(prompt, clip_path).strip()
-    if not summary:
-        raise RuntimeError(f"Teacher returned an empty {kind} summary for [{start},{end})")
-    return summary
+    last_error = None
+    for attempt in range(1, max_attempts + 1):
+        retry = "" if attempt == 1 else (
+            f" Your previous answer was invalid ({last_error}). Return only valid "
+            "labelled clauses in the requested order.")
+        summary = teacher.summary(prompt + retry, clip_path).strip()
+        try:
+            return summary, parse_summary(summary, kind)
+        except ValueError as exc:
+            last_error = exc
+    raise RuntimeError(
+        f"Teacher returned invalid {kind} summary for [{start},{end}) after "
+        f"{max_attempts} attempts: {last_error}")
 
 
 def annotate_video(video_path: Path, teacher, *, video_id: str,
                    duration_sec: int, start_block: int = 0,
-                   clip_dir: Path | None = None):
+                   clip_dir: Path | None = None, max_attempts: int = 3,
+                   clip_max_side: int = 0, clip_fps: float = 0.0):
     """Yield one atomic event batch per block (eight records per full minute)."""
     for block_start in range(start_block, duration_sec, 60):
         block_end = min(block_start+60, duration_sec)
@@ -113,36 +102,41 @@ def annotate_video(video_path: Path, teacher, *, video_id: str,
         events = []
         with tempfile.TemporaryDirectory(prefix="stage2_teacher_", dir=clip_dir) as temporary:
             temporary_path = Path(temporary)
-            def label(kind: str, start: int, end: int, name: str) -> str:
+            def label(kind: str, start: int, end: int, name: str):
                 return summarize_window(video_path, teacher, kind=kind,
                                         start=start, end=end,
-                                        clip_path=temporary_path / f"{name}.mp4")
+                                        clip_path=temporary_path / f"{name}.mp4",
+                                        max_attempts=max_attempts,
+                                        clip_max_side=clip_max_side, clip_fps=clip_fps)
             for start in range(block_start, block_end-9, 10):
                 end = start+10
+                target, facets = label("local", start, end, f"local_{start}_{end}")
                 events.append({
                     "video_id": video_id,
                     "block_window": block_window,
                     "label_type": "local_10s",
                     "window": [start, end],
-                    "target": label("current 10-second local", start, end,
-                                    f"local_{start}_{end}"),
+                    "target": target, "facets": facets,
+                    "schema_version": SCHEMA_VERSION,
                 })
             if block_end-block_start == 60:
+                target, facets = label("block", block_start, block_end, "block")
                 events.append({
                     "video_id": video_id,
                     "block_window": block_window,
                     "label_type": "block_60s",
                     "window": [block_start, block_end],
-                    "target": label("independent current 60-second block",
-                                    block_start, block_end, "block"),
+                    "target": target, "facets": facets,
+                    "schema_version": SCHEMA_VERSION,
                 })
+                target, facets = label("global", 0, block_end, "global")
                 events.append({
                     "video_id": video_id,
                     "block_window": block_window,
                     "label_type": "global_prefix",
                     "window": [0, block_end],
-                    "target": label("cumulative video prefix", 0, block_end,
-                                    "global"),
+                    "target": target, "facets": facets,
+                    "schema_version": SCHEMA_VERSION,
                 })
         if block_end-block_start < 60 and not events:
             break
@@ -151,13 +145,16 @@ def annotate_video(video_path: Path, teacher, *, video_id: str,
 
 class ChatTeacher:
     def __init__(self, model: str, *, api_key: str, base_url: str | None,
-                 max_tokens: int, transport: str = "auto", video_fps: float = 0.0):
+                 max_tokens: int, transport: str = "auto", video_fps: float = 0.0,
+                 video_max_frames: int = 0, disable_thinking: bool = False):
         from openai import OpenAI
         self.client = OpenAI(api_key=api_key, base_url=base_url) if base_url else OpenAI(api_key=api_key)
         self.model = model
         self.max_tokens = max_tokens
         self.transport = ("file" if "gemini" in model.lower() else "video_url") if transport == "auto" else transport
         self.video_fps = video_fps
+        self.video_max_frames = video_max_frames
+        self.disable_thinking = disable_thinking
 
     def summary(self, prompt: str, video_path: Path) -> str:
         if self.transport == "file":
@@ -176,10 +173,45 @@ class ChatTeacher:
             max_tokens=self.max_tokens,
             temperature=0,
         )
-        if self.transport == "video_url" and self.video_fps > 0:
-            request["extra_body"] = {"mm_processor_kwargs": {"fps": self.video_fps}}
+        extra = {}
+        if self.transport == "video_url":
+            processor = {}
+            if self.video_fps > 0:
+                processor.update(fps=self.video_fps, do_sample_frames=True)
+            if getattr(self, "video_max_frames", 0) > 0:
+                processor["max_frames"] = self.video_max_frames
+            if processor:
+                extra["mm_processor_kwargs"] = processor
+        if getattr(self, "disable_thinking", False):
+            extra["chat_template_kwargs"] = {"enable_thinking": False}
+        if extra:
+            request["extra_body"] = extra
         response = self.client.chat.completions.create(**request)
-        return response.choices[0].message.content or ""
+        choice = response.choices[0]
+        if getattr(choice, "finish_reason", None) == "length":
+            raise RuntimeError("Teacher output truncated; increase --max-tokens or disable thinking")
+        return choice.message.content or ""
+
+
+def resume_start(records: list[dict], *, video_id: str, duration_sec: int,
+                 model: str, config: dict) -> int:
+    """Resume only validated contiguous blocks, including an already-complete tail."""
+    from .build_data import build_rows
+    if not records:
+        return 0
+    if any(row.get("video_id") != video_id or row.get("teacher") != model
+           or row.get("annotation_config") != config for row in records):
+        raise ValueError("Saved labels have a different video, teacher, or annotation config")
+    blocks = sorted(build_rows(records), key=lambda row: row["block_window"][0])
+    for index, row in enumerate(blocks):
+        start = 60 * index
+        end = min(start + 60, duration_sec)
+        if start >= duration_sec or row["block_window"] != [start, end]:
+            raise ValueError("Saved teacher blocks have a gap or incompatible duration")
+        expected = [[t, t+10] for t in range(start, end-9, 10)]
+        if [label["window"] for label in row["local_sub_summaries"]] != expected:
+            raise ValueError("Saved block has missing or duplicate local labels")
+    return int(blocks[-1]["block_window"][1])
 
 
 def main():
@@ -195,21 +227,43 @@ def main():
                         help="auto: Gemini uses OpenRouter file; other models use vLLM video_url")
     parser.add_argument("--video-fps", type=float, default=0.0,
                         help="Optional vLLM video decoding FPS; default leaves backend policy unchanged")
+    parser.add_argument("--video-max-frames", type=int, default=0,
+                        help="Qwen processor frame cap per window; 0 leaves backend default")
+    parser.add_argument("--clip-max-side", type=int, default=0,
+                        help="Resize silent clips preserving aspect ratio; 0 keeps original size")
+    parser.add_argument("--clip-fps", type=float, default=0.0,
+                        help="Resample silent clips before loading; 0 preserves source FPS")
+    parser.add_argument("--disable-thinking", action="store_true")
     parser.add_argument("--frame-size", type=int, default=224,
                         help="Decode size used only to read reliable source-video metadata")
     parser.add_argument("--clip-dir", type=Path,
                         help="Parent for temporary clips; local vLLM must be allowed to read it")
     parser.add_argument("--max-tokens", type=int, default=500)
+    parser.add_argument("--max-attempts", type=int, default=3)
+    parser.add_argument("--audit-output", type=Path,
+                        help="Optional JSONL audit for success/failure metadata")
     parser.add_argument("--resume", action="store_true",
                         help="Append after the last complete saved block")
     parser.add_argument("--overwrite", action="store_true")
     args = parser.parse_args()
+    if args.clip_max_side < 0 or args.clip_max_side == 1 or args.clip_fps < 0 or args.video_max_frames < 0:
+        parser.error("Invalid clip size, FPS, or frame cap")
+    if args.video_max_frames and (args.video_max_frames < 4 or args.video_max_frames % 2):
+        parser.error("Qwen video frame cap must be even and at least four")
     api_key = os.environ.get(args.api_key_env)
     if not api_key:
         raise ValueError(f"Set {args.api_key_env} before running teacher annotation")
     teacher = ChatTeacher(args.model, api_key=api_key,
                           base_url=args.base_url, max_tokens=args.max_tokens,
-                          transport=args.transport, video_fps=args.video_fps)
+                          transport=args.transport, video_fps=args.video_fps,
+                          video_max_frames=args.video_max_frames,
+                          disable_thinking=args.disable_thinking)
+    config = {
+        "schema_version": SCHEMA_VERSION, "transport": teacher.transport,
+        "video_fps": args.video_fps, "video_max_frames": args.video_max_frames,
+        "clip_max_side": args.clip_max_side, "clip_fps": args.clip_fps,
+        "disable_thinking": args.disable_thinking, "max_tokens": args.max_tokens,
+    }
     if args.clip_dir is not None:
         args.clip_dir.mkdir(parents=True, exist_ok=True)
     reader = VideoReader(args.video, args.frame_size)
@@ -223,27 +277,11 @@ def main():
             raise ValueError("Choose --resume or --overwrite, not both")
         start_block = 0
         if output.exists() and args.resume:
-            from .build_data import build_rows
             records = [json.loads(line) for line in output.read_text(encoding="utf-8").splitlines()
                        if line.strip()]
-            if not records:
-                raise ValueError("Cannot resume an empty teacher-label file")
-            if any(row.get("label_type") is None for row in records):
-                raise ValueError("Resume expects eight-record-per-minute event labels")
-            existing = sorted(build_rows(records), key=lambda row: row["block_window"][0])
-            if {row["video_id"] for row in existing} != {args.video_id}:
-                raise ValueError("Saved labels belong to a different video")
-            if any(row.get("teacher") != args.model for row in records):
-                raise ValueError("Saved labels were produced by a different teacher model")
-            for index, row in enumerate(existing):
-                if row["block_window"] != [60 * index, 60 * (index + 1)]:
-                    raise ValueError("Saved minute events have a gap or incomplete block")
-                expected = [[60*index + 10*j, 60*index + 10*(j+1)] for j in range(6)]
-                if [item["window"] for item in row["local_sub_summaries"]] != expected:
-                    raise ValueError("Saved minute does not contain six ordered 10-second labels")
-            start_block = int(existing[-1]["block_window"][1])
-            if start_block % 60:
-                raise ValueError("Cannot resume after an incomplete final block")
+            start_block = resume_start(records, video_id=args.video_id,
+                                       duration_sec=duration_sec, model=args.model,
+                                       config=config)
         elif output.exists() and not args.overwrite:
             raise FileExistsError(f"Output already exists: {output}; use --resume or --overwrite")
         # Complete all eight teacher calls before writing a minute's records.
@@ -251,12 +289,32 @@ def main():
         with output.open(mode, encoding="utf-8") as stream:
             for events in annotate_video(Path(args.video), teacher, video_id=args.video_id,
                                          duration_sec=duration_sec,
-                                         start_block=start_block, clip_dir=args.clip_dir):
+                                         start_block=start_block, clip_dir=args.clip_dir,
+                                         max_attempts=args.max_attempts,
+                                         clip_max_side=args.clip_max_side,
+                                         clip_fps=args.clip_fps):
                 for event in events:
                     event["teacher"] = args.model
+                    event["annotation_config"] = config
                 stream.write("".join(json.dumps(event, ensure_ascii=False) + "\n"
                                      for event in events))
                 stream.flush()
+                print(f"[saved] {args.video_id} block={events[0]['block_window']} "
+                      f"labels={len(events)} -> {output}", flush=True)
+        if args.audit_output:
+            args.audit_output.parent.mkdir(parents=True, exist_ok=True)
+            with args.audit_output.open("a", encoding="utf-8") as audit:
+                audit.write(json.dumps({"video_id": args.video_id, "status": "complete",
+                                        "teacher": args.model,
+                                        "schema_version": SCHEMA_VERSION}) + "\n")
+    except Exception as exc:
+        if args.audit_output:
+            args.audit_output.parent.mkdir(parents=True, exist_ok=True)
+            with args.audit_output.open("a", encoding="utf-8") as audit:
+                audit.write(json.dumps({"video_id": args.video_id, "status": "failed",
+                                        "teacher": args.model, "error": str(exc)},
+                                       ensure_ascii=False) + "\n")
+        raise
     finally:
         reader.close()
 

@@ -13,14 +13,19 @@ from stage2.annotate import annotate_video, ChatTeacher
 from stage2.train import train_video
 
 
+LOCAL = "View: lung view; Anatomy: pleural line; Dynamic: sliding visible"
+BLOCK = "View: lung view; Anatomy: pleura; Dynamic: sliding remains visible"
+GLOBAL = "Anatomy: pleura; Dynamic: sliding visible; Change: stable over time"
+
+
 def block(start=0, seconds=60):
     return {"video_id": "v1", "block_window": [start, start + seconds],
             "local_sub_summaries": [
                 {"window": [start + 10*i, start + 10*(i+1)],
-                 "local_summary_target": f"ten {i}"}
+                 "local_summary_target": LOCAL}
                 for i in range(seconds // 10)],
-            "block_summary_target": "one minute" if seconds == 60 else "",
-            "global_summary_target": "video so far" if seconds == 60 else ""}
+            "block_summary_target": BLOCK if seconds == 60 else "",
+            "global_summary_target": GLOBAL if seconds == 60 else ""}
 
 
 class FakeReader:
@@ -34,7 +39,11 @@ class FakeTeacher:
 
     def summary(self, prompt, video_path):
         self.calls.append((prompt, video_path.name))
-        return f"visual summary {len(self.calls)}"
+        if "cumulative video prefix" in prompt:
+            return GLOBAL
+        if "60-second block" in prompt:
+            return BLOCK
+        return LOCAL
 
 
 class FakeMemory:
@@ -127,14 +136,14 @@ class Stage2Tests(unittest.TestCase):
         for j in range(6):
             events.append({"video_id": "v1", "block_window": [0, 60],
                            "label_type": "local_10s", "window": [10*j, 10*(j+1)],
-                           "target": f"local {j}"})
+                           "target": LOCAL})
         events.extend([
             {"video_id": "v1", "block_window": [0, 60],
-             "label_type": "block_60s", "window": [0, 60], "target": "block"},
+             "label_type": "block_60s", "window": [0, 60], "target": BLOCK},
             {"video_id": "v1", "block_window": [0, 60],
-             "label_type": "global_prefix", "window": [0, 60], "target": "global"},
+             "label_type": "global_prefix", "window": [0, 60], "target": GLOBAL},
         ])
-        self.assertEqual(build_rows(events)[0]["global_summary_target"], "global")
+        self.assertEqual(build_rows(events)[0]["global_summary_target"], GLOBAL)
         with self.assertRaisesRegex(ValueError, "legacy 60-second"):
             build_rows([{**block(), "local_sub_summaries": None,
                          "local_summary_target": "old block"}])

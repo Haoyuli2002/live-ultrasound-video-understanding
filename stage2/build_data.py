@@ -16,6 +16,7 @@ import os
 from pathlib import Path
 
 from .data import load_blocks
+from .summary_schema import SCHEMA_VERSION, parse_summary
 
 
 def _window(value, context: str) -> list[float]:
@@ -34,6 +35,18 @@ def _target(value, context: str) -> str:
     return result
 
 
+def _structured_target(value, kind: str, context: str,
+                       supplied_facets=None) -> tuple[str, dict[str, str]]:
+    target = _target(value, context)
+    try:
+        facets = parse_summary(target, kind)
+    except ValueError as exc:
+        raise ValueError(f"{context}: invalid {SCHEMA_VERSION} summary: {exc}") from exc
+    if supplied_facets is not None and supplied_facets != facets:
+        raise ValueError(f"{context}: facets do not match the parsed target")
+    return target, facets
+
+
 def _validate_optional_window(row: dict, key: str, expected: list[float], context: str):
     if key in row:
         observed = _window(row[key], context + "/" + key)
@@ -42,6 +55,9 @@ def _validate_optional_window(row: dict, key: str, expected: list[float], contex
 
 
 def _normalize_block(row: dict, source: str) -> dict:
+    if row.get("schema_version") not in (None, SCHEMA_VERSION):
+        raise ValueError(
+            f"{source}: unsupported schema_version={row.get('schema_version')!r}")
     video_id = str(row.get("video_id") or "").strip()
     if not video_id:
         raise ValueError(f"{source}: missing video_id")
@@ -61,15 +77,28 @@ def _normalize_block(row: dict, source: str) -> dict:
     normalized = []
     for index, label in enumerate(labels):
         context = f"{source}/local[{index}]"
+        target, facets = _structured_target(
+            label.get("local_summary_target"), "local", context,
+            label.get("facets"))
         normalized.append({
             "window": _window(label.get("window"), context),
-            "local_summary_target": _target(label.get("local_summary_target"), context),
+            "local_summary_target": target,
+            "facets": facets,
         })
     result = {"video_id": video_id, "block_window": block_window,
-              "local_sub_summaries": normalized}
+              "local_sub_summaries": normalized,
+              "schema_version": SCHEMA_VERSION}
     if full:
-        result["block_summary_target"] = _target(row.get("block_summary_target"), source + "/block")
-        result["global_summary_target"] = _target(row.get("global_summary_target"), source + "/global")
+        block_target, block_facets = _structured_target(
+            row.get("block_summary_target"), "block", source + "/block",
+            row.get("block_summary_facets"))
+        global_target, global_facets = _structured_target(
+            row.get("global_summary_target"), "global", source + "/global",
+            row.get("global_summary_facets"))
+        result.update({"block_summary_target": block_target,
+                       "block_summary_facets": block_facets,
+                       "global_summary_target": global_target,
+                       "global_summary_facets": global_facets})
     else:
         # An incomplete tail has no long update or cumulative target.
         if row.get("block_summary_target") or row.get("global_summary_target"):
@@ -78,6 +107,8 @@ def _normalize_block(row: dict, source: str) -> dict:
         result["global_summary_target"] = ""
     if row.get("teacher"):
         result["teacher"] = row["teacher"]
+    if row.get("annotation_config"):
+        result["annotation_config"] = row["annotation_config"]
     return result
 
 
@@ -104,6 +135,9 @@ def build_rows(records: list[dict]) -> list[dict]:
     groups: dict[tuple[str, float, float], dict] = {}
     for index, row in enumerate(records, 1):
         context = f"event {index}"
+        if row.get("schema_version") not in (None, SCHEMA_VERSION):
+            raise ValueError(
+                f"{context}: unsupported schema_version={row.get('schema_version')!r}")
         video_id = str(row.get("video_id") or "").strip()
         window = _window(row.get("block_window"), context)
         if not video_id:
@@ -116,26 +150,37 @@ def build_rows(records: list[dict]) -> list[dict]:
             if group.get("teacher") and group["teacher"] != row["teacher"]:
                 raise ValueError(f"{context}: mixed teacher models within one block")
             group["teacher"] = row["teacher"]
+        if row.get("annotation_config"):
+            if (group.get("annotation_config") is not None
+                    and group["annotation_config"] != row["annotation_config"]):
+                raise ValueError(f"{context}: mixed annotation configs within one block")
+            group["annotation_config"] = row["annotation_config"]
         kind = _event_type(row)
         if kind is None:
             raise ValueError(f"{context}: unknown label_type; expected local_10s, block_60s, or global_prefix")
-        target = _target(row.get("target"), context)
+        summary_kind = {"local_10s": "local", "block_60s": "block",
+                        "global_prefix": "global"}[kind]
+        target, facets = _structured_target(
+            row.get("target"), summary_kind, context, row.get("facets"))
         label_window = _window(row.get("window"), context)
         if kind == "local_10s":
             group["local_sub_summaries"].append({"window": label_window,
-                                                  "local_summary_target": target})
+                                                  "local_summary_target": target,
+                                                  "facets": facets})
         elif kind == "block_60s":
             if "block_summary_target" in group:
                 raise ValueError(f"{context}: duplicate block summary")
             if any(abs(a-b) > 0.01 for a, b in zip(label_window, window)):
                 raise ValueError(f"{context}: block label must cover its block")
             group["block_summary_target"] = target
+            group["block_summary_facets"] = facets
         else:
             if "global_summary_target" in group:
                 raise ValueError(f"{context}: duplicate global summary")
             if abs(label_window[0]) > 0.01 or abs(label_window[1]-window[1]) > 0.01:
                 raise ValueError(f"{context}: global label must cover [0, block_end]")
             group["global_summary_target"] = target
+            group["global_summary_facets"] = facets
     result = []
     for group in groups.values():
         group["local_sub_summaries"].sort(key=lambda item: item["window"][0])
