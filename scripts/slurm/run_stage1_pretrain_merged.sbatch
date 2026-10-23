@@ -27,6 +27,7 @@ SAVE_STEPS=${SAVE_STEPS:-50}
 LOGGING_STEPS=${LOGGING_STEPS:-10}
 VALIDATION_FRACTION=${VALIDATION_FRACTION:-0.1}
 DATALOADER_NUM_WORKERS=${DATALOADER_NUM_WORKERS:-6}
+GRADIENT_ACCUMULATION_STEPS=${GRADIENT_ACCUMULATION_STEPS:-8}
 
 cd "$REPO"
 if [[ -f /dss/dsshome1/04/ge75vid2/miniconda3/etc/profile.d/conda.sh ]]; then
@@ -37,6 +38,16 @@ fi
 conda activate ultrasound
 source "$REPO/scripts/slurm/stage1_storage.sh"
 
+# Keep large caches on scratch, but use a short node-local path for IPC.
+# torch_shm_manager also creates a Unix socket: file_system does not bypass
+# the socket path-length limit, and "Invalid argument" alone does not prove
+# that /dev/shm is unusable.
+SHORT_TMP=$(mktemp -d /tmp/stage1.XXXXXXXX)
+trap 'rm -rf -- "$SHORT_TMP"' EXIT
+export TMPDIR="$SHORT_TMP" TMP="$SHORT_TMP" TEMP="$SHORT_TMP"
+export PYTHONUNBUFFERED=1
+echo "DataLoader socket TMPDIR -> $TMPDIR (len=${#TMPDIR})"
+
 [[ -f "$TRAIN_JSONL" ]] || { echo "Missing merged Stage 1 samples: $TRAIN_JSONL" >&2; exit 1; }
 [[ -f "$VIDEO_MAP" ]] || { echo "Missing video map: $VIDEO_MAP" >&2; exit 1; }
 mkdir -p "$OUTPUT_DIR"
@@ -46,6 +57,8 @@ python - <<'PY'
 import json, os
 from pathlib import Path
 rows = [json.loads(line) for line in Path(os.environ["TRAIN_JSONL"]).open(encoding="utf-8") if line.strip()]
+if not rows:
+    raise SystemExit("Stage 1 samples are empty")
 videos = {row["video_id"] for row in rows}
 # The trainer (stage1/train.py) only requires the video-path map to COVER every
 # training video (jsonl videos must be a subset of the map keys); a map that lists
@@ -55,6 +68,9 @@ expected = set(mapping)
 uncovered = videos - expected
 if uncovered:
     raise SystemExit(f"Video-path map does not cover every training video: samples={len(videos)}, map={len(expected)}, uncovered={sorted(uncovered)[:10]}")
+missing = [mapping[video] for video in sorted(videos) if not Path(mapping[video]).is_file()]
+if missing:
+    raise SystemExit(f"Missing video files: {missing[:10]}")
 print(f"Stage 1 preflight: {len(videos)} videos (map covers {len(expected)}), {len(rows)} rows, {len(rows)//3} targets")
 PY
 
@@ -75,7 +91,7 @@ python -m stage1.train \
   --frame-sampling "$FRAME_SAMPLING" \
   --validation-fraction "$VALIDATION_FRACTION" \
   --dataloader-num-workers "$DATALOADER_NUM_WORKERS" \
-  --gradient-accumulation-steps 8 \
+  --gradient-accumulation-steps "$GRADIENT_ACCUMULATION_STEPS" \
   --learning-rate 1e-4 \
   --save-steps "$SAVE_STEPS" \
   --logging-steps "$LOGGING_STEPS" \

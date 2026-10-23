@@ -14,6 +14,7 @@ from transformers.trainer_utils import get_last_checkpoint
 
 from .data import CONDITIONS, sample_frames
 from .model import encode, load_model
+from .runtime import preflight
 
 
 class Examples:
@@ -75,13 +76,12 @@ def _is_cuda_oom(error: BaseException) -> bool:
     """True for CUDA out-of-memory errors regardless of the exact exception class."""
     if isinstance(error, torch.cuda.OutOfMemoryError):
         return True
-    return isinstance(error, RuntimeError) and "out of memory" in str(error).lower()
+    return (isinstance(error, RuntimeError)
+            and "cuda out of memory" in str(error).lower())
 
 
-def _free_cuda(*objects) -> None:
-    """Drop references and release cached CUDA memory before an OOM retry."""
-    for obj in objects:
-        del obj
+def _free_cuda() -> None:
+    """Collect failed trainers after leaving the exception handler, then trim CUDA."""
     gc.collect()
     if torch.cuda.is_available():
         torch.cuda.empty_cache()
@@ -172,15 +172,7 @@ def main():
     if not torch.cuda.is_available():
         raise RuntimeError("Stage 1 Qwen3.5 training requires CUDA")
 
-    # DataLoader workers hand decoded video tensors back to the main process. With
-    # the default 'file_descriptor' sharing strategy PyTorch opens an AF_UNIX socket
-    # under $TMPDIR; on this cluster $TMPDIR lives under a long scratch path, so the
-    # socket path exceeds the ~108-byte AF_UNIX limit and the first batch dies with
-    # "OSError: AF_UNIX path too long". 'file_system' uses /dev/shm named shared
-    # memory instead of a socket, side-stepping the path-length limit. Only matters
-    # when workers > 0; it is a harmless no-op for synchronous (num_workers=0) runs.
-    if args.dataloader_num_workers > 0:
-        torch.multiprocessing.set_sharing_strategy("file_system")
+    preflight(args.dataloader_num_workers)
     rows = [json.loads(line) for line in Path(args.train_jsonl).read_text(encoding="utf-8").splitlines()
             if line.strip()]
     validate_rows(rows)
@@ -234,7 +226,6 @@ def main():
         except Exception as error:  # noqa: BLE001 - re-raised unless it is a CUDA OOM
             if not _is_cuda_oom(error):
                 raise
-            _free_cuda()
             remaining = budgets[attempt+1:]
             if not remaining:
                 raise RuntimeError(
@@ -242,7 +233,10 @@ def main():
                     f"fallback left; lower --frame-budget or extend "
                     f"--oom-fallback-frame-budgets") from error
             print(f"CUDA out of memory at frame_budget={frame_budget}; retrying at "
-                  f"{remaining[0]} from the latest checkpoint", flush=True)
+                  f"{remaining[0]} (resume enabled={args.resume})", flush=True)
+        # The exception traceback holds build_and_train locals (model/optimizer).
+        # Python clears that reference on leaving except; collect only afterwards.
+        _free_cuda()
 
 
 
