@@ -12,10 +12,10 @@ export DATA=${DATA:-/dss/mcmlscratch/04/ge75vid2/haoyu/live-ultrasound-video-und
 export VIDEO_IDS=8V649L5Q368
 export MODEL=Qwen/Qwen3.5-27B
 export SPLIT=8V649L5Q368_full
-export VIDEO_FPS=1.0
+export VIDEO_FPS=2.0
 export VIDEO_MAX_FRAMES=120
-export CLIP_FPS=1.0
-export CLIP_MAX_SIDE=512
+export CLIP_FPS=2.0
+export CLIP_MAX_SIDE=1024
 export MAX_MODEL_LEN=32768
 export MAX_TOKENS=1024
 export MAX_ATTEMPTS=3
@@ -61,7 +61,7 @@ PY
 )
 if [[ -z "${RUN_DIR:-}" ]]; then
   mkdir -p "$DATA/cluster_data/stage2/runs"
-  RUN_DIR=$(mktemp -d "$DATA/cluster_data/stage2/runs/8V649L5Q368_qwen35_27b_$(date +%Y%m%d_%H%M%S)_XXXXXX")
+  RUN_DIR=$(mktemp -d "$DATA/cluster_data/stage2/runs/8V649L5Q368_qwen35_27b_prose_v2_$(date +%Y%m%d_%H%M%S)_XXXXXX")
 fi
 mkdir -p "$RUN_DIR"
 export RUN_DIR=$(cd "$RUN_DIR" && pwd)
@@ -69,6 +69,19 @@ export VIDEO_MAP="$RUN_DIR/video_paths.json"
 export TEACHER_DIR="$RUN_DIR/teacher"
 export AUDIT_DIR="$RUN_DIR/audit"
 export BLOCKS="$RUN_DIR/blocks.jsonl"
+# Reject incompatible resume before overwriting metadata or requesting a GPU.
+python3 - "$TEACHER_DIR/$VIDEO_IDS.jsonl" <<'PY_RESUME'
+import json, sys
+from pathlib import Path
+path = Path(sys.argv[1])
+if path.exists():
+    for line in path.read_text().splitlines():
+        if not line.strip():
+            continue
+        row = json.loads(line)
+        if row.get("schema_version") != "stage2_prose_v2":
+            sys.exit("Old structured labels cannot be resumed into prose data. Unset RUN_DIR for a fresh run.")
+PY_RESUME
 # Do not inherit a stale smoke clip directory or log path from earlier jobs.
 unset CLIP_DIR VLLM_LOG
 python3 - "$VIDEO_IDS" "$SOURCE_VIDEO" "$VIDEO_MAP" <<'PY'

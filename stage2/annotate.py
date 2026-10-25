@@ -9,30 +9,41 @@ from __future__ import annotations
 import argparse
 import base64
 import json
+import hashlib
 import os
 import subprocess
 import tempfile
 from pathlib import Path
 
 from .data import VideoReader
-from .summary_schema import (PERSPECTIVES, SCHEMA_VERSION, SUMMARY_PLANS,
-                             normalize_summary)
+from .summary_schema import (PERSPECTIVES, PROSE_SCHEMA_VERSION as SCHEMA_VERSION,
+                             SUMMARY_PLANS, validate_prose)
 
-# Fixed set of facet labels. Their contents remain open-ended, and the subsets
-# used by the three time scales intentionally overlap while emphasizing
-# different information. Absent facets are omitted.
+# Perspectives guide visual reasoning; they are never output fields.
 SYSTEM = (
-    "You annotate ultrasound video using only the supplied silent video. "
-    "Report only what is visually supported in the attached clip. "
-    "Organise every answer as labelled perspectives drawn from this closed set: "
-    + "; ".join(f"{name} = {gloss}" for name, gloss in PERSPECTIVES.items())
-    + ". Write each requested perspective as one short clause prefixed by its "
-    "label and a colon, separated by semicolons, in the listed order; omit any "
-    "perspective that is not visible rather than inventing it. "
-    "Do not infer an unseen diagnosis, treat 'not visible' as 'absent', use "
-    "audio or transcripts, add a preamble, or mention events outside the "
-    "requested interval. Keep every answer factual and compact."
+    "Write concise medical ultrasound summaries in English using only the supplied silent video. "
+    "Produce one coherent paragraph of natural prose, without headings, perspective labels, "
+    "bullet points, JSON, a preamble or a checklist. Integrate relevant observations rather "
+    "than listing a sentence for every perspective. "
+    "Use these perspectives internally when evidence supports them: "
+    + "; ".join(f"{name}: {gloss}" for name, gloss in PERSPECTIVES.items())
+    + ". Prioritize the ultrasound view, identifiable anatomy, visible probe handling and "
+    "patient positioning, supported sonographic observations, temporal changes and actual "
+    "readable measurements. Inspect both panels of split-screen footage: the demonstration "
+    "and the ultrasound display. A visible monitor is not a sonographic finding or a measurement. "
+    "For introductory or demonstration footage without an interpretable scan, briefly describe "
+    "the visible positioning or procedure instead of inventing clinical findings. "
+    "Avoid repeated generic room descriptions and filler such as 'not visible', 'no specific "
+    "findings', or 'no measurements'. Simply omit unsupported perspectives. "
+    "Do not infer diagnoses, normality, absence of disease, lung tissue, B-lines or another "
+    "named sign from an ambiguous bright stripe, a preset label or a distant screen. Use "
+    "specific terminology only when the visual evidence supports it; otherwise describe the "
+    "appearance conservatively. A lack of observed motion in sparsely sampled frames is not "
+    "proof of absent motion, flow or lung sliding. Mention movement only when supported across "
+    "frames. Do not infer what the speaker says or use audio, transcripts, outside knowledge "
+    "about this particular video, or events outside the supplied interval."
 )
+PROMPT_SHA256 = hashlib.sha256((SYSTEM + json.dumps(SUMMARY_PLANS, sort_keys=True)).encode()).hexdigest()
 
 
 def make_silent_clip(video_path: Path, start: int, end: int, output: Path, *,
@@ -72,7 +83,8 @@ def summarize_window(video_path: Path, teacher, *, kind: str,
         f"Summarize only the visible evidence in the {plan['prompt_kind']} interval "
         f"[{start}, {end}) seconds. The attached silent video covers exactly "
         f"that interval. {plan['focus']} "
-        f"Report these perspectives when visible, in this order: {facets}. "
+        f"Consider these perspectives internally when relevant: {facets}. "
+        "Write a connected medical ultrasound summary, not labelled fields. "
         f"Use at most {plan['words']} words total. "
         "Do not use information from other times."
     )
@@ -80,14 +92,10 @@ def summarize_window(video_path: Path, teacher, *, kind: str,
     for attempt in range(1, max_attempts + 1):
         retry = "" if attempt == 1 else (
             f" Your previous answer was invalid ({last_error}). Return only valid "
-            "labelled clauses in the requested order.")
+            "natural prose in one paragraph without labels or lists.")
         summary = teacher.summary(prompt + retry, clip_path).strip()
         try:
-            target, parsed = normalize_summary(summary, kind)
-            if target != summary:
-                print(f"[normalized] {kind} [{start},{end}) clause order; "
-                      f"raw={summary!r}; target={target!r}", flush=True)
-            return target, parsed
+            return validate_prose(summary, kind), {}
         except ValueError as exc:
             last_error = exc
             print(f"[invalid] {kind} [{start},{end}) attempt={attempt}/{max_attempts}: "
@@ -122,7 +130,7 @@ def annotate_video(video_path: Path, teacher, *, video_id: str,
                     "block_window": block_window,
                     "label_type": "local_10s",
                     "window": [start, end],
-                    "target": target, "facets": facets,
+                    "target": target,
                     "schema_version": SCHEMA_VERSION,
                 })
             if block_end-block_start == 60:
@@ -132,7 +140,7 @@ def annotate_video(video_path: Path, teacher, *, video_id: str,
                     "block_window": block_window,
                     "label_type": "block_60s",
                     "window": [block_start, block_end],
-                    "target": target, "facets": facets,
+                    "target": target,
                     "schema_version": SCHEMA_VERSION,
                 })
                 target, facets = label("global", 0, block_end, "global")
@@ -141,7 +149,7 @@ def annotate_video(video_path: Path, teacher, *, video_id: str,
                     "block_window": block_window,
                     "label_type": "global_prefix",
                     "window": [0, block_end],
-                    "target": target, "facets": facets,
+                    "target": target,
                     "schema_version": SCHEMA_VERSION,
                 })
         if block_end-block_start < 60 and not events:
@@ -265,7 +273,8 @@ def main():
                           video_max_frames=args.video_max_frames,
                           disable_thinking=args.disable_thinking)
     config = {
-        "schema_version": SCHEMA_VERSION, "transport": teacher.transport,
+        "schema_version": SCHEMA_VERSION, "prompt_sha256": PROMPT_SHA256,
+        "transport": teacher.transport,
         "video_fps": args.video_fps, "video_max_frames": args.video_max_frames,
         "clip_max_side": args.clip_max_side, "clip_fps": args.clip_fps,
         "disable_thinking": args.disable_thinking, "max_tokens": args.max_tokens,
@@ -290,6 +299,8 @@ def main():
                                        config=config)
         elif output.exists() and not args.overwrite:
             raise FileExistsError(f"Output already exists: {output}; use --resume or --overwrite")
+        output.with_suffix(".prompt.txt").write_text(
+            SYSTEM + "\n\n" + json.dumps(SUMMARY_PLANS, indent=2) + "\n", encoding="utf-8")
         # Complete all eight teacher calls before writing a minute's records.
         mode = "a" if output.exists() and args.resume else "w"
         with output.open(mode, encoding="utf-8") as stream:

@@ -13,7 +13,8 @@ from types import SimpleNamespace
 from unittest.mock import Mock, patch
 
 from stage2.annotate import ChatTeacher, annotate_video, resume_start, summarize_window
-from stage2.summary_schema import SUMMARY_PLANS, normalize_summary, parse_summary
+from stage2.summary_schema import (SUMMARY_PLANS, normalize_summary, parse_summary,
+                                   PROSE_SCHEMA_VERSION, validate_prose)
 from stage2.build_data import build_files
 from stage2.data import load_blocks
 
@@ -21,8 +22,8 @@ from stage2.data import load_blocks
 class Teacher:
     def summary(self, prompt, clip):
         if 'cumulative video prefix' in prompt:
-            return 'Anatomy: chest; Change: probe repositioned'
-        return 'View: chest wall; Anatomy: ribs; Dynamic: probe movement'
+            return 'The examination progresses from patient positioning to a visible probe demonstration.'
+        return 'The patient lies supine while the clinician demonstrates probe handling beside the ultrasound display.'
 
 
 class AnnotationJobTests(unittest.TestCase):
@@ -49,6 +50,9 @@ class AnnotationJobTests(unittest.TestCase):
             blocks = load_blocks(output)['8V649L5Q368']
             self.assertEqual(len(blocks[-1]['local_sub_summaries']), 5)
             self.assertEqual(blocks[-1]['global_summary_target'], '')
+            self.assertEqual(blocks[0]['schema_version'], PROSE_SCHEMA_VERSION)
+            self.assertNotIn('facets', blocks[0]['local_sub_summaries'][0])
+            self.assertNotIn('block_summary_facets', blocks[0])
 
     def test_resume_complete_tail_empty_and_incompatible_config(self):
         kwargs = dict(video_id='8V649L5Q368', duration_sec=1136,
@@ -104,26 +108,35 @@ class AnnotationJobTests(unittest.TestCase):
             with self.subTest(raw=raw), self.assertRaises(ValueError):
                 normalize_summary(raw, 'local')
 
-    def test_out_of_order_probe_needs_no_teacher_retry(self):
-        teacher = SimpleNamespace(summary=Mock(return_value=
-            'View: chest; Dynamic: sliding; Probe: stationary'))
+    def test_prose_rejects_labelled_teacher_and_retries(self):
+        expected = 'The clinician holds the probe while demonstrating patient positioning.'
+        teacher = SimpleNamespace(summary=Mock(side_effect=[
+            'View: chest; Anatomy: ribs', expected]))
         with patch('stage2.annotate.make_silent_clip'), contextlib.redirect_stdout(io.StringIO()) as log:
             target, facets = summarize_window(Path('source.mp4'), teacher, kind='local',
                 start=160, end=170, clip_path=Path('silent.mp4'))
-        self.assertEqual(target, 'View: chest; Probe: stationary; Dynamic: sliding')
-        self.assertEqual(parse_summary(target, 'local'), facets)
-        teacher.summary.assert_called_once()
-        self.assertIn('[normalized]', log.getvalue())
-
-    def test_duplicate_still_retries_and_preserves_failed_raw_output(self):
-        teacher = SimpleNamespace(summary=Mock(side_effect=[
-            'Probe: a; Probe: b', 'Probe: stationary']))
-        with patch('stage2.annotate.make_silent_clip'), contextlib.redirect_stdout(io.StringIO()) as log:
-            target, _ = summarize_window(Path('source.mp4'), teacher, kind='local',
-                start=160, end=170, clip_path=Path('silent.mp4'))
-        self.assertEqual(target, 'Probe: stationary')
+        self.assertEqual(target, expected)
+        self.assertEqual(facets, {})
         self.assertEqual(teacher.summary.call_count, 2)
-        self.assertIn('Probe: a; Probe: b', log.getvalue())
+        self.assertIn('View: chest; Anatomy: ribs', log.getvalue())
+        prompt = teacher.summary.call_args.args[0]
+        self.assertIn('Consider these perspectives internally', prompt)
+        self.assertNotIn('in this order', prompt)
+
+    def test_legacy_parser_rejects_swallowed_sentence_labels(self):
+        with self.assertRaisesRegex(ValueError, 'embedded facet'):
+            parse_summary('View: Grayscale image. Anatomy: Soft tissue. Finding: Bright lines.', 'block')
+
+    def test_prose_shape_and_mixed_dataset_rejected(self):
+        for text in ('View: chest wall. Anatomy: visible ribs.', '- The probe is shown.',
+                     '{"summary": "The probe is shown."}', '', 'word ' * 50):
+            with self.subTest(text=text), self.assertRaises(ValueError):
+                validate_prose(text, 'local')
+        from stage2.build_data import build_rows
+        events = self.events()
+        events[0]['schema_version'] = 'stage2_facets_v1'
+        with self.assertRaisesRegex(ValueError, 'mix'):
+            build_rows(events)
 
     def test_submission_dry_run_and_fake_sbatch(self):
         repo = Path(__file__).resolve().parents[1]
@@ -138,7 +151,7 @@ class AnnotationJobTests(unittest.TestCase):
             sbatch.write_text('#!/bin/bash\nset -eu\n'
                               '[[ "$MODEL" == Qwen/Qwen3.5-27B ]]\n'
                               '[[ "$VIDEO_IDS" == 8V649L5Q368 ]]\n'
-                              '[[ "$CLIP_MAX_SIDE" == 512 ]]\n'
+                              '[[ "$CLIP_MAX_SIDE" == 1024 ]]\n'
                               '[[ -f "$VIDEO_MAP" ]]\n'
                               'echo 12345\n')
             sbatch.chmod(0o755)
@@ -154,6 +167,15 @@ class AnnotationJobTests(unittest.TestCase):
             result = subprocess.run(['bash', str(script)], env=env, capture_output=True, text=True)
             self.assertEqual(result.returncode, 0, result.stderr)
             self.assertEqual((root/'run/job_id.txt').read_text().strip(), '12345')
+            old_labels = root/'run/teacher/8V649L5Q368.jsonl'
+            old_labels.parent.mkdir()
+            old_labels.write_text(json.dumps({'schema_version': 'stage2_facets_v1'})+'\n')
+            before = (root/'run/submit_env.sh').read_text()
+            result = subprocess.run(['bash', str(script), '--dry-run'], env=env,
+                                    capture_output=True, text=True)
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn('Old structured labels', result.stderr)
+            self.assertEqual((root/'run/submit_env.sh').read_text(), before)
 
 
 if __name__ == '__main__':

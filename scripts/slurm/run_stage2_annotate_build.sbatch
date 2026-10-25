@@ -37,13 +37,13 @@ MODEL=${MODEL:-Qwen/Qwen3.5-27B}
 VLLM_PORT=${VLLM_PORT:-8000}
 MAX_MODEL_LEN=${MAX_MODEL_LEN:-32768}
 GPU_MEMORY_UTILIZATION=${GPU_MEMORY_UTILIZATION:-0.90}
-# Decode one frame per second to match the student's 1 fps causal input.
-VIDEO_FPS=${VIDEO_FPS:-1.0}
+# Teacher sampling is denser than the student input; all windows remain causal.
+VIDEO_FPS=${VIDEO_FPS:-2.0}
 VIDEO_MAX_FRAMES=${VIDEO_MAX_FRAMES:-120}
 # Bound decoding memory even for the 18-minute cumulative prefix. Keep time
 # duration and aspect ratio; this does not truncate any summary window.
-CLIP_FPS=${CLIP_FPS:-1.0}
-CLIP_MAX_SIDE=${CLIP_MAX_SIDE:-512}
+CLIP_FPS=${CLIP_FPS:-2.0}
+CLIP_MAX_SIDE=${CLIP_MAX_SIDE:-1024}
 FRAME_SIZE=${FRAME_SIZE:-224}
 MAX_TOKENS=${MAX_TOKENS:-1024}
 MAX_ATTEMPTS=${MAX_ATTEMPTS:-3}

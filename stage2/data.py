@@ -4,7 +4,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from .summary_schema import parse_summary
+from .summary_schema import SCHEMA_VERSION, validate_target
 
 
 def load_blocks(path: str | Path) -> dict[str, list[dict]]:
@@ -24,12 +24,16 @@ def load_blocks(path: str | Path) -> dict[str, list[dict]]:
         row["_line_no"] = line_no
         videos.setdefault(str(video_id), []).append(row)
 
+    schemas = {row.get("schema_version") or SCHEMA_VERSION for blocks in videos.values() for row in blocks}
+    if len(schemas) > 1:
+        raise ValueError("Do not mix prose and legacy facet datasets")
     if not videos:
         raise ValueError("No Stage 2 blocks found")
     for video_id, blocks in videos.items():
         blocks.sort(key=lambda r: r["block_window"][0])
         expected_start = 0.0
         for index, row in enumerate(blocks):
+            schema = row.get("schema_version")
             start, end = row["block_window"]
             if abs(start - expected_start) > 0.01:
                 raise ValueError(f"{video_id}: gap, overlap, or duplicate before block {index}")
@@ -50,7 +54,7 @@ def load_blocks(path: str | Path) -> dict[str, list[dict]]:
                 if not str(label.get("local_summary_target", "")).strip():
                     raise ValueError(f"{video_id}: missing local summary {j}")
                 try:
-                    parse_summary(label["local_summary_target"], "local")
+                    validate_target(label["local_summary_target"], "local", schema)
                 except ValueError as exc:
                     raise ValueError(
                         f"{video_id}: invalid local summary {j}: {exc}") from exc
@@ -59,8 +63,8 @@ def load_blocks(path: str | Path) -> dict[str, list[dict]]:
                 raise ValueError(f"{video_id}: full block needs independent block and global labels")
             if full:
                 try:
-                    parse_summary(row["block_summary_target"], "block")
-                    parse_summary(row["global_summary_target"], "global")
+                    validate_target(row["block_summary_target"], "block", schema)
+                    validate_target(row["global_summary_target"], "global", schema)
                 except ValueError as exc:
                     raise ValueError(
                         f"{video_id}: invalid block/global summary: {exc}") from exc

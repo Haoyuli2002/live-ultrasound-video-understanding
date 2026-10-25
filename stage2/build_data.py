@@ -16,7 +16,8 @@ import os
 from pathlib import Path
 
 from .data import load_blocks
-from .summary_schema import SCHEMA_VERSION, parse_summary
+from .summary_schema import (SCHEMA_VERSION, PROSE_SCHEMA_VERSION,
+                             SUPPORTED_SCHEMAS, validate_target)
 
 
 def _window(value, context: str) -> list[float]:
@@ -35,13 +36,13 @@ def _target(value, context: str) -> str:
     return result
 
 
-def _structured_target(value, kind: str, context: str,
-                       supplied_facets=None) -> tuple[str, dict[str, str]]:
+def _validated_target(value, kind: str, context: str,
+                       supplied_facets=None, schema=None) -> tuple[str, dict[str, str]]:
     target = _target(value, context)
     try:
-        facets = parse_summary(target, kind)
+        facets = validate_target(target, kind, schema)
     except ValueError as exc:
-        raise ValueError(f"{context}: invalid {SCHEMA_VERSION} summary: {exc}") from exc
+        raise ValueError(f"{context}: invalid {schema or SCHEMA_VERSION} summary: {exc}") from exc
     if supplied_facets is not None and supplied_facets != facets:
         raise ValueError(f"{context}: facets do not match the parsed target")
     return target, facets
@@ -55,9 +56,10 @@ def _validate_optional_window(row: dict, key: str, expected: list[float], contex
 
 
 def _normalize_block(row: dict, source: str) -> dict:
-    if row.get("schema_version") not in (None, SCHEMA_VERSION):
+    if row.get("schema_version") not in (None, *SUPPORTED_SCHEMAS):
         raise ValueError(
             f"{source}: unsupported schema_version={row.get('schema_version')!r}")
+    schema = row.get("schema_version") or SCHEMA_VERSION
     video_id = str(row.get("video_id") or "").strip()
     if not video_id:
         raise ValueError(f"{source}: missing video_id")
@@ -77,9 +79,9 @@ def _normalize_block(row: dict, source: str) -> dict:
     normalized = []
     for index, label in enumerate(labels):
         context = f"{source}/local[{index}]"
-        target, facets = _structured_target(
+        target, facets = _validated_target(
             label.get("local_summary_target"), "local", context,
-            label.get("facets"))
+            label.get("facets"), schema)
         normalized.append({
             "window": _window(label.get("window"), context),
             "local_summary_target": target,
@@ -87,14 +89,14 @@ def _normalize_block(row: dict, source: str) -> dict:
         })
     result = {"video_id": video_id, "block_window": block_window,
               "local_sub_summaries": normalized,
-              "schema_version": SCHEMA_VERSION}
+              "schema_version": schema}
     if full:
-        block_target, block_facets = _structured_target(
+        block_target, block_facets = _validated_target(
             row.get("block_summary_target"), "block", source + "/block",
-            row.get("block_summary_facets"))
-        global_target, global_facets = _structured_target(
+            row.get("block_summary_facets"), schema)
+        global_target, global_facets = _validated_target(
             row.get("global_summary_target"), "global", source + "/global",
-            row.get("global_summary_facets"))
+            row.get("global_summary_facets"), schema)
         result.update({"block_summary_target": block_target,
                        "block_summary_facets": block_facets,
                        "global_summary_target": global_target,
@@ -109,6 +111,11 @@ def _normalize_block(row: dict, source: str) -> dict:
         result["teacher"] = row["teacher"]
     if row.get("annotation_config"):
         result["annotation_config"] = row["annotation_config"]
+    if schema == PROSE_SCHEMA_VERSION:
+        for label in result["local_sub_summaries"]:
+            label.pop("facets", None)
+        result.pop("block_summary_facets", None)
+        result.pop("global_summary_facets", None)
     return result
 
 
@@ -123,6 +130,8 @@ def _event_type(row: dict) -> str | None:
 def build_rows(records: list[dict]) -> list[dict]:
     if not records:
         raise ValueError("No teacher labels supplied")
+    if len({row.get("schema_version") or SCHEMA_VERSION for row in records}) != 1:
+        raise ValueError("Do not mix prose and legacy facet datasets")
     block_rows = ["local_sub_summaries" in row or
                   ("local_summary_target" in row and _event_type(row) is None)
                   for row in records]
@@ -135,7 +144,7 @@ def build_rows(records: list[dict]) -> list[dict]:
     groups: dict[tuple[str, float, float], dict] = {}
     for index, row in enumerate(records, 1):
         context = f"event {index}"
-        if row.get("schema_version") not in (None, SCHEMA_VERSION):
+        if row.get("schema_version") not in (None, *SUPPORTED_SCHEMAS):
             raise ValueError(
                 f"{context}: unsupported schema_version={row.get('schema_version')!r}")
         video_id = str(row.get("video_id") or "").strip()
@@ -145,7 +154,8 @@ def build_rows(records: list[dict]) -> list[dict]:
         key = (video_id, *window)
         group = groups.setdefault(key, {"video_id": video_id,
                                         "block_window": window,
-                                        "local_sub_summaries": []})
+                                        "local_sub_summaries": [],
+                                        "schema_version": row.get("schema_version") or SCHEMA_VERSION})
         if row.get("teacher"):
             if group.get("teacher") and group["teacher"] != row["teacher"]:
                 raise ValueError(f"{context}: mixed teacher models within one block")
@@ -160,8 +170,9 @@ def build_rows(records: list[dict]) -> list[dict]:
             raise ValueError(f"{context}: unknown label_type; expected local_10s, block_60s, or global_prefix")
         summary_kind = {"local_10s": "local", "block_60s": "block",
                         "global_prefix": "global"}[kind]
-        target, facets = _structured_target(
-            row.get("target"), summary_kind, context, row.get("facets"))
+        target, facets = _validated_target(
+            row.get("target"), summary_kind, context, row.get("facets"),
+            row.get("schema_version"))
         label_window = _window(row.get("window"), context)
         if kind == "local_10s":
             group["local_sub_summaries"].append({"window": label_window,

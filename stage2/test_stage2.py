@@ -40,10 +40,10 @@ class FakeTeacher:
     def summary(self, prompt, video_path):
         self.calls.append((prompt, video_path.name))
         if "cumulative video prefix" in prompt:
-            return GLOBAL
+            return "The examination progresses from patient positioning to probe handling."
         if "60-second block" in prompt:
-            return BLOCK
-        return LOCAL
+            return "The patient lies supine while the clinician demonstrates the probe."
+        return "The clinician holds the probe beside the supine patient."
 
 
 class FakeMemory:
