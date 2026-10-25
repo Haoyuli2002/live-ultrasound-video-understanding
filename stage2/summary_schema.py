@@ -46,6 +46,11 @@ _CLAUSE = re.compile(r"^([A-Za-z]+)\s*:\s*(.+)$")
 
 def parse_summary(text: str, kind: str, *, word_tolerance: float = 0.10) -> dict[str, str]:
     """Parse and strictly validate one labelled-clause teacher summary."""
+    return _parse_summary(text, kind, word_tolerance=word_tolerance, require_order=True)
+
+
+def _parse_summary(text: str, kind: str, *, word_tolerance: float,
+                   require_order: bool) -> dict[str, str]:
     if kind not in SUMMARY_PLANS:
         raise ValueError(f"Unknown summary kind: {kind}")
     value = str(text or "").strip()
@@ -67,7 +72,7 @@ def parse_summary(text: str, kind: str, *, word_tolerance: float = 0.10) -> dict
         if label in parsed:
             raise ValueError(f"duplicate facet: {label}")
         index = allowed.index(label)
-        if index <= last_index:
+        if require_order and index <= last_index:
             raise ValueError(f"facet {label} is out of order for {kind}")
         if not content.strip():
             raise ValueError(f"facet {label} is empty")
@@ -79,3 +84,19 @@ def parse_summary(text: str, kind: str, *, word_tolerance: float = 0.10) -> dict
     if len(value.split()) > limit:
         raise ValueError(f"summary exceeds the {limit}-word limit including tolerance")
     return parsed
+
+
+def normalize_summary(text: str, kind: str) -> tuple[str, dict[str, str]]:
+    """Canonicalize teacher clause order without dropping or rewriting evidence.
+
+    Stored labels still pass the strict parser. Only the annotation boundary
+    accepts a permutation; duplicates, illegal labels, empty clauses and word
+    limits remain errors. Already valid output is preserved verbatim.
+    """
+    value = str(text or "").strip()
+    facets = _parse_summary(value, kind, word_tolerance=0.10, require_order=False)
+    ordered = {label: facets[label] for label in SUMMARY_PLANS[kind]["facets"]
+               if label in facets}
+    if list(facets) != list(ordered):
+        value = "; ".join(f"{label}: {content}" for label, content in ordered.items())
+    return value, parse_summary(value, kind)

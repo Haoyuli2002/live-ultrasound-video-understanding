@@ -54,6 +54,12 @@ source /absolute/path/to/run/submit_env.sh
 bash scripts/slurm/submit_stage2_8V649L5Q368.sh
 ```
 
+The annotator automatically reorders valid teacher clauses into the schema's
+canonical facet order without changing their content. Duplicate/illegal labels,
+empty clauses and overlong output still trigger validation retries. Normalized
+and invalid raw answers are printed in the annotation log for diagnosis. This
+format repair keeps the existing schema and resume settings compatible.
+
 Resumption rejects changed annotation settings and invalid saved chronology.
 Already-complete labels, including the tail, are reused without teacher calls.
 A failure within a minute reruns that minute. `--dry-run` writes and checks the

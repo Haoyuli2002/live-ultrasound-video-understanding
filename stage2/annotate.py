@@ -16,7 +16,7 @@ from pathlib import Path
 
 from .data import VideoReader
 from .summary_schema import (PERSPECTIVES, SCHEMA_VERSION, SUMMARY_PLANS,
-                             parse_summary)
+                             normalize_summary)
 
 # Fixed set of facet labels. Their contents remain open-ended, and the subsets
 # used by the three time scales intentionally overlap while emphasizing
@@ -83,9 +83,15 @@ def summarize_window(video_path: Path, teacher, *, kind: str,
             "labelled clauses in the requested order.")
         summary = teacher.summary(prompt + retry, clip_path).strip()
         try:
-            return summary, parse_summary(summary, kind)
+            target, parsed = normalize_summary(summary, kind)
+            if target != summary:
+                print(f"[normalized] {kind} [{start},{end}) clause order; "
+                      f"raw={summary!r}; target={target!r}", flush=True)
+            return target, parsed
         except ValueError as exc:
             last_error = exc
+            print(f"[invalid] {kind} [{start},{end}) attempt={attempt}/{max_attempts}: "
+                  f"{exc}; raw={summary!r}", flush=True)
     raise RuntimeError(
         f"Teacher returned invalid {kind} summary for [{start},{end}) after "
         f"{max_attempts} attempts: {last_error}")

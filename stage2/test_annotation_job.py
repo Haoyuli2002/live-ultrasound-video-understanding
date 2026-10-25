@@ -1,6 +1,7 @@
 """CPU regression checks for the full-video Qwen annotation job (no API calls)."""
 import contextlib
 import io
+import itertools
 import json
 import os
 import subprocess
@@ -9,9 +10,10 @@ import unittest
 from collections import Counter
 from pathlib import Path
 from types import SimpleNamespace
-from unittest.mock import patch
+from unittest.mock import Mock, patch
 
-from stage2.annotate import ChatTeacher, annotate_video, resume_start
+from stage2.annotate import ChatTeacher, annotate_video, resume_start, summarize_window
+from stage2.summary_schema import SUMMARY_PLANS, normalize_summary, parse_summary
 from stage2.build_data import build_files
 from stage2.data import load_blocks
 
@@ -54,6 +56,7 @@ class AnnotationJobTests(unittest.TestCase):
         events = self.events()
         self.assertEqual(resume_start([], **kwargs), 0)
         self.assertEqual(resume_start(events[:8], **kwargs), 60)
+        self.assertEqual(resume_start(events[:16], **kwargs), 120)
         self.assertEqual(resume_start(events, **kwargs), 1136)
         with self.assertRaises(ValueError):
             resume_start(events[1:], **kwargs)
@@ -80,6 +83,47 @@ class AnnotationJobTests(unittest.TestCase):
         self.assertEqual(extra['mm_processor_kwargs'],
                          {'fps': 1.0, 'do_sample_frames': True, 'max_frames': 120})
         self.assertEqual(calls[0]['messages'][1]['content'][0]['type'], 'video_url')
+
+    def test_all_facet_permutations_preserve_content_and_strict_storage(self):
+        for kind, plan in SUMMARY_PLANS.items():
+            expected = {label: f"evidence {i}" for i, label in enumerate(plan['facets'])}
+            for order in itertools.permutations(expected):
+                raw = '; '.join(f"{label}: {expected[label]}" for label in order)
+                target, facets = normalize_summary(raw, kind)
+                self.assertEqual(list(facets), list(expected))
+                self.assertEqual(facets, expected)
+                self.assertEqual(parse_summary(target, kind), expected)
+        raw = 'Anatomy: ribs\nProbe: stationary'
+        self.assertEqual(normalize_summary(raw, 'local')[0], raw)
+        with self.assertRaisesRegex(ValueError, 'out of order'):
+            parse_summary('Dynamic: sliding; Probe: stationary', 'local')
+
+    def test_invalid_facets_are_not_silently_repaired(self):
+        for raw in ('Probe: a; Probe: b', 'Change: stable', 'Unknown: evidence',
+                    'Probe: ', 'plain text', '', 'Finding: ' + 'word ' * 50):
+            with self.subTest(raw=raw), self.assertRaises(ValueError):
+                normalize_summary(raw, 'local')
+
+    def test_out_of_order_probe_needs_no_teacher_retry(self):
+        teacher = SimpleNamespace(summary=Mock(return_value=
+            'View: chest; Dynamic: sliding; Probe: stationary'))
+        with patch('stage2.annotate.make_silent_clip'), contextlib.redirect_stdout(io.StringIO()) as log:
+            target, facets = summarize_window(Path('source.mp4'), teacher, kind='local',
+                start=160, end=170, clip_path=Path('silent.mp4'))
+        self.assertEqual(target, 'View: chest; Probe: stationary; Dynamic: sliding')
+        self.assertEqual(parse_summary(target, 'local'), facets)
+        teacher.summary.assert_called_once()
+        self.assertIn('[normalized]', log.getvalue())
+
+    def test_duplicate_still_retries_and_preserves_failed_raw_output(self):
+        teacher = SimpleNamespace(summary=Mock(side_effect=[
+            'Probe: a; Probe: b', 'Probe: stationary']))
+        with patch('stage2.annotate.make_silent_clip'), contextlib.redirect_stdout(io.StringIO()) as log:
+            target, _ = summarize_window(Path('source.mp4'), teacher, kind='local',
+                start=160, end=170, clip_path=Path('silent.mp4'))
+        self.assertEqual(target, 'Probe: stationary')
+        self.assertEqual(teacher.summary.call_count, 2)
+        self.assertIn('Probe: a; Probe: b', log.getvalue())
 
     def test_submission_dry_run_and_fake_sbatch(self):
         repo = Path(__file__).resolve().parents[1]
