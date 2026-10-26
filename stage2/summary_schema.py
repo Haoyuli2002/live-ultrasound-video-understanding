@@ -124,9 +124,6 @@ def validate_prose(text: str, kind: str) -> str:
     words = value.split()
     if len(words) < 4:
         raise ValueError("summary is too short to convey a visual observation")
-    limit = math.ceil(SUMMARY_PLANS[kind]["words"] * 1.10)
-    if len(words) > limit:
-        raise ValueError(f"summary exceeds the {limit}-word limit including tolerance")
     return value
 
 

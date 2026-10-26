@@ -129,7 +129,7 @@ class AnnotationJobTests(unittest.TestCase):
 
     def test_prose_shape_and_mixed_dataset_rejected(self):
         for text in ('View: chest wall. Anatomy: visible ribs.', '- The probe is shown.',
-                     '{"summary": "The probe is shown."}', '', 'word ' * 50):
+                     '{"summary": "The probe is shown."}', ''):
             with self.subTest(text=text), self.assertRaises(ValueError):
                 validate_prose(text, 'local')
         from stage2.build_data import build_rows
@@ -137,6 +137,57 @@ class AnnotationJobTests(unittest.TestCase):
         events[0]['schema_version'] = 'stage2_facets_v1'
         with self.assertRaisesRegex(ValueError, 'mix'):
             build_rows(events)
+
+    def test_reported_length_failure_survives_as_complete_prose(self):
+        original = ("In a clinical setting, a physician stands beside a patient lying supine on an "
+                    "examination table, with an ultrasound machine positioned nearby. The physician "
+                    "appears to be preparing for or explaining an ultrasound procedure, as indicated "
+                    "by the presence of the ultrasound equipment and the patient's positioning. "
+                    "No specific ultrasound findings or measurements are visible in this segment.")
+        teacher = SimpleNamespace(summary=Mock(return_value=original))
+        with patch('stage2.annotate.make_silent_clip'), contextlib.redirect_stdout(io.StringIO()) as log:
+            target, _ = summarize_window(Path('video.mp4'), teacher, kind='local',
+                start=0, end=10, clip_path=Path('clip.mp4'))
+        self.assertEqual(target, original)
+        teacher.summary.assert_called_once()
+        self.assertIn('[length-warning]', log.getvalue())
+        from stage2.build_data import build_rows
+        events = self.events()[:8]
+        events[0]['target'] = target
+        self.assertEqual(build_rows(events)[0]['local_sub_summaries'][0]['local_summary_target'], target)
+
+    def test_overlength_all_kinds_survive_build_and_load(self):
+        long = ' '.join(['observation'] * 200)
+        events = self.events()[:8]
+        for kind in SUMMARY_PLANS:
+            teacher = SimpleNamespace(summary=Mock(return_value=long))
+            with patch('stage2.annotate.make_silent_clip'), contextlib.redirect_stdout(io.StringIO()):
+                target, _ = summarize_window(Path('v.mp4'), teacher, kind=kind,
+                    start=0, end=10, clip_path=Path('clip.mp4'))
+            self.assertEqual(target, long)
+            teacher.summary.assert_called_once()
+            self.assertEqual(validate_prose(target, kind), long)
+        for event in events:
+            event['target'] = long
+        with tempfile.TemporaryDirectory() as directory:
+            source = Path(directory)/'teacher.jsonl'
+            output = Path(directory)/'blocks.jsonl'
+            source.write_text(''.join(json.dumps(e)+'\n' for e in events))
+            build_files([source], output)
+            self.assertTrue(load_blocks(output))
+
+    def test_format_errors_still_retry(self):
+        short = 'The clinician positions the probe on the chest.'
+        teacher = SimpleNamespace(summary=Mock(side_effect=['View: chest', short]))
+        with patch('stage2.annotate.make_silent_clip'), contextlib.redirect_stdout(io.StringIO()):
+            self.assertEqual(summarize_window(Path('v.mp4'), teacher, kind='local',
+                start=0, end=10, clip_path=Path('clip.mp4'))[0], short)
+        self.assertIn('View: chest', teacher.summary.call_args_list[1].args[0])
+        teacher = SimpleNamespace(summary=Mock(return_value='View: chest'))
+        with patch('stage2.annotate.make_silent_clip'), contextlib.redirect_stdout(io.StringIO()), \
+                self.assertRaises(RuntimeError):
+            summarize_window(Path('v.mp4'), teacher, kind='local',
+                start=0, end=10, clip_path=Path('clip.mp4'))
 
     def test_submission_dry_run_and_fake_sbatch(self):
         repo = Path(__file__).resolve().parents[1]
@@ -153,10 +204,11 @@ class AnnotationJobTests(unittest.TestCase):
                               '[[ "$VIDEO_IDS" == 8V649L5Q368 ]]\n'
                               '[[ "$CLIP_MAX_SIDE" == 1024 ]]\n'
                               '[[ -f "$VIDEO_MAP" ]]\n'
+                              '[[ "$*" == *"--time=01:00:00"* ]]\n'
                               'echo 12345\n')
             sbatch.chmod(0o755)
             env = {**os.environ, 'REPO': str(repo), 'DATA': str(root),
-                   'VIDEO_PATH': str(video), 'RUN_DIR': str(root/'run'),
+                   'VIDEO_PATH': str(video), 'RUN_DIR': str(root/'run'), 'WALLTIME': '01:00:00',
                    'PATH': str(binaries)+os.pathsep+os.environ['PATH']}
             result = subprocess.run(['bash', str(script), '--dry-run'], env=env,
                                     capture_output=True, text=True)

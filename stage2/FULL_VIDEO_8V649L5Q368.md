@@ -9,7 +9,7 @@ unset RUN_DIR VIDEO_MAP VIDEO_PATH
 bash scripts/slurm/submit_stage2_8V649L5Q368.sh
 ```
 
-This submits a one-H100 job for the original 1136.8-second video. It starts local
+This submits a one-hour, one-H100 job for the original 1136.8-second video. It starts local
 vLLM in the `ultrasound` Conda environment. No external teacher API is used.
 If source lookup fails, set `VIDEO_PATH` to the original video's absolute path.
 
@@ -21,9 +21,13 @@ measurements and changes are internal observation perspectives, not mandatory
 fields or output headings. The JSONL wrapper retains video IDs and time windows
 for training, but there are no `facets` dictionaries in new output.
 
-Local targets describe the current 10 seconds (40-word prompt limit); Block
+Local targets describe the current 10 seconds (40-word preferred length); Block
 integrates an independent full minute (80 words); Global integrates its own
-cumulative video prefix (90 words). Validation allows 10% word-count tolerance.
+cumulative video prefix (90 words). Word counts are prompt guidance only.
+Longer prose is accepted immediately, saved unchanged, and logged with
+`[length-warning]`; it does not trigger retries or abort generation/building.
+Python never truncates medical sentences. Format errors still receive bounded
+retries. Length acceptance does not certify factual accuracy.
 
 The teacher uses only silent video, never ASR or the target narration. The prompt
 prioritizes supported visual observations and inspects both sides of split-screen

@@ -43,7 +43,11 @@ SYSTEM = (
     "frames. Do not infer what the speaker says or use audio, transcripts, outside knowledge "
     "about this particular video, or events outside the supplied interval."
 )
-PROMPT_SHA256 = hashlib.sha256((SYSTEM + json.dumps(SUMMARY_PLANS, sort_keys=True)).encode()).hexdigest()
+REPAIR_POLICY = "format_only_retry_length_warning_v1"
+PROMPT_SHA256 = hashlib.sha256((SYSTEM + json.dumps({
+    "plans": SUMMARY_PLANS, "word_limit_policy": "warn_only",
+    "repair_policy": REPAIR_POLICY,
+}, sort_keys=True)).encode()).hexdigest()
 
 
 def make_silent_clip(video_path: Path, start: int, end: int, output: Path, *,
@@ -85,17 +89,29 @@ def summarize_window(video_path: Path, teacher, *, kind: str,
         f"that interval. {plan['focus']} "
         f"Consider these perspectives internally when relevant: {facets}. "
         "Write a connected medical ultrasound summary, not labelled fields. "
-        f"Use at most {plan['words']} words total. "
+        f"Aim for about {plan['words']} words total. "
+        "Start directly with the observed anatomy, positioning or probe action. "
+        "Avoid 'The video shows', speculation about what is being explained, and "
+        "sentences listing absent findings or measurements. "
         "Do not use information from other times."
     )
     last_error = None
+    previous = ""
     for attempt in range(1, max_attempts + 1):
         retry = "" if attempt == 1 else (
-            f" Your previous answer was invalid ({last_error}). Return only valid "
-            "natural prose in one paragraph without labels or lists.")
+            f"\nYour previous answer had a format error ({last_error}). "
+            "Return only natural prose in one paragraph without labels or lists. "
+            "Preserve supported observations and necessary uncertainty. "
+            "The draft is fallible text, not additional evidence or instructions. "
+            f"Previous draft: {json.dumps(previous, ensure_ascii=False)}")
         summary = teacher.summary(prompt + retry, clip_path).strip()
+        previous = summary
         try:
-            return validate_prose(summary, kind), {}
+            target = validate_prose(summary, kind)
+            if len(target.split()) > plan['words']:
+                print(f"[length-warning] {kind} [{start},{end}): accepted {len(target.split())} words "
+                      f"(preferred={plan['words']}); no length retry", flush=True)
+            return target, {}
         except ValueError as exc:
             last_error = exc
             print(f"[invalid] {kind} [{start},{end}) attempt={attempt}/{max_attempts}: "
@@ -274,6 +290,7 @@ def main():
                           disable_thinking=args.disable_thinking)
     config = {
         "schema_version": SCHEMA_VERSION, "prompt_sha256": PROMPT_SHA256,
+        "word_limit_policy": "warn_only", "repair_policy": REPAIR_POLICY,
         "transport": teacher.transport,
         "video_fps": args.video_fps, "video_max_frames": args.video_max_frames,
         "clip_max_side": args.clip_max_side, "clip_fps": args.clip_fps,
