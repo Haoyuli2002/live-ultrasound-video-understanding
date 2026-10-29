@@ -236,6 +236,7 @@ def submit(run_dir: Path, repo: Path, *, concurrency=4, walltime='24:00:00', dry
     record_path = run_dir/'submissions.json'
     ledger = json.loads(record_path.read_text()) if record_path.exists() else {'attempts':[]}
     old_ids = [str(job) for attempt in ledger['attempts'] for job in attempt.get('jobs',[])]
+    current = ''
     if old_ids and not dry_run:
         current = subprocess.check_output(['squeue','-h','-u',str(os.getuid()),'-o','%F %T'],text=True)
         active = [line for line in current.splitlines() if line.split() and line.split()[0] in old_ids]
@@ -250,7 +251,8 @@ def submit(run_dir: Path, repo: Path, *, concurrency=4, walltime='24:00:00', dry
             f"--array=0-{len(plan['shards'])-1}%{concurrency}",
             f'--output={logs}/stage2_full_%A_%a.out',f'--error={logs}/stage2_full_%A_%a.err',
             str(repo/'scripts/slurm/run_stage2_full_array.sbatch')])
-        if plan.get('seed_dependency') and not any(a.get('array_job') for a in ledger['attempts']):
+        seed_active = plan.get('seed_dependency') in {line.split()[0] for line in current.splitlines() if line.split()}
+        if plan.get('seed_dependency') and (not ledger['attempts'] or seed_active):
             commands[-1].insert(1,f"--dependency=afterany:{plan['seed_dependency']}")
     merge_cmd = common+['--job-name=stage2-merge',
         f'--output={logs}/stage2_merge_%j.out',f'--error={logs}/stage2_merge_%j.err',

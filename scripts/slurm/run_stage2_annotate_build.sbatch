@@ -129,7 +129,7 @@ done
 # Check source identity, sampling policy and prompt fingerprint before loading 27B.
 for vid in $IDS; do
   video=$(python -c 'import json,sys; print(json.load(open(sys.argv[1]))[sys.argv[2]])' "$VIDEO_MAP" "$vid")
-  python -m stage2.annotate --preflight-only --video "$video" --video-id "$vid" \
+  python -m stage2.annotate --preflight-only --video "$video" --video-id="$vid" \
     --output "$TEACHER_DIR/$vid.jsonl" --model "$MODEL" --transport video_url \
     --video-fps "$VIDEO_FPS" --video-max-frames "$VIDEO_MAX_FRAMES" \
     --clip-fps "$CLIP_FPS" --clip-max-side "$CLIP_MAX_SIDE" --disable-thinking \
@@ -209,7 +209,7 @@ PY
   echo "[annotate] $vid -> $out  (video=$video)"
   if python -m stage2.annotate \
     --video "$video" \
-    --video-id "$vid" \
+    --video-id="$vid" \
     --output "$out" \
     --model "$MODEL" \
     --served-model-name "$STAGE2_SERVED_MODEL" \

@@ -149,6 +149,10 @@ class FullRunTests(unittest.TestCase):
         self.assertFalse((self.run/'teacher/x.jsonl').exists())
         preview=submit(self.run,self.root,dry_run=True)
         self.assertIn('--dependency=afterany:999',preview['commands'][0])
+        write_json(self.run/'submissions.json',{'attempts':[{'array_job':'777','jobs':['777','778']}]})
+        with patch('stage2.full_run.subprocess.check_output',side_effect=['999 RUNNING\n','888\n','889\n']) as call:
+            submit(self.run,self.root)
+            self.assertIn('--dependency=afterany:999',call.call_args_list[1].args[0])
         index=next(i for i,ids in enumerate(plan['shards']) if 'x' in ids)
         for vid in plan['shards'][index]:
             if vid!='x':self.labels(vid,self.run/'teacher')
@@ -161,7 +165,7 @@ class FullRunTests(unittest.TestCase):
         target=self.root/'cli.jsonl'
         teacher=SimpleNamespace(summary=Mock(return_value=
             'No ultrasound-relevant visual information in this interval.'))
-        args=['annotate','--video',self.mapping['x'],'--video-id','x',
+        args=['annotate','--video',self.mapping['x'],'--video-id=-x',
               '--output',str(target),'--model',MODEL,'--resume','--transport-preflight']
         with patch('sys.argv',args), patch.dict('os.environ',{'OPENAI_API_KEY':'test-only'}), \
                 patch('stage2.annotate.VideoReader',side_effect=lambda *args:
@@ -170,6 +174,7 @@ class FullRunTests(unittest.TestCase):
                 patch('stage2.annotate.make_silent_clip'), contextlib.redirect_stdout(io.StringIO()):
             main()
             self.assertEqual(len(target.read_text().splitlines()),8)
+            self.assertEqual(json.loads(target.read_text().splitlines()[0])['video_id'],'-x')
             calls=teacher.summary.call_count
             main()
             self.assertEqual(teacher.summary.call_count,calls)
