@@ -72,7 +72,7 @@ The default quality policy quarantines:
 - Missing, invalid, overlapping or out-of-video timestamps; text/word mismatch.
 - Low-confidence segments (average log probability below -1) or compression
   ratio above 2.4; sentences with mean word probability below 0.5.
-- Corrupt sentences outside 1–80 words or 0.5–60 seconds, or above 8 words/second.
+- Empty sentences, corrupt intervals below 0.5 seconds, or above 8 words/second.
 - Suspected consecutive phrase loops, three consecutive identical sentences,
   and chat/control markup. These are review flags, not proof of ASR errors.
 
@@ -81,6 +81,12 @@ Targets must contain **at least 10 whitespace-separated words** and span
 exactly 10 words / 5 seconds passes. Short but otherwise sound sentences remain
 in earlier ASR history, with `scope: target` / `exclude_target_keep_history`
 records in the review file. Low-quality speech is excluded from history too.
+There is **no maximum word count or duration**. Long, informative narration is
+retained under its original words and timestamps. Length alone is not evidence
+of ASR corruption; repetition, confidence and timing checks remain independent.
+An unpunctuated tail is still held for boundary review rather than being declared
+a complete sentence automatically. The report cannot certify medical relevance
+or correctness; sample those against the source before training.
 
 Every retained target produces exactly three rows with the same target:
 `before_with_asr`, `through_with_asr`, `before_mask_asr`. History contains only

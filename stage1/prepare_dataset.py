@@ -17,15 +17,13 @@ from .alignment import lexical, segment_words
 from .data import ABBREVIATIONS, CONDITIONS, frame_timestamps
 from .restore_punctuation import collect_boundaries, sentence_units, PunctuationTeacher
 
-VERSION = "stage1_dataset_v2"
+VERSION = "stage1_dataset_v2.1"
 
 
 @dataclass(frozen=True)
 class Policy:
     min_words: int = 10
-    max_words: int = 80
     min_seconds: float = 5.0
-    max_seconds: float = 60.0
     max_words_per_second: float = 8.0
     min_mean_word_probability: float = 0.5
     min_segment_logprob: float = -1.0
@@ -34,8 +32,7 @@ class Policy:
     allow_estimated_timestamps: bool = False
 
     def __post_init__(self):
-        if (self.min_words < 1 or self.max_words < self.min_words
-                or not 0 < self.min_seconds <= self.max_seconds
+        if (self.min_words < 1 or self.min_seconds <= 0
                 or self.max_words_per_second <= 0 or self.max_speech_gap <= 0
                 or not 0 <= self.min_mean_word_probability <= 1
                 or self.max_segment_compression <= 0
@@ -168,8 +165,8 @@ def prepare_video(transcript: dict, policy: Policy, *, teacher=None) -> tuple[li
             count = len(unit["text"].split())
             reasons = []
             # Short, sound speech may remain in history, even when it is not a target.
-            if not 1 <= count <= policy.max_words: reasons.append("sentence_word_count")
-            if not 0.5 <= seconds <= policy.max_seconds: reasons.append("sentence_duration")
+            if count < 1: reasons.append("sentence_word_count")
+            if seconds < 0.5: reasons.append("sentence_duration")
             if seconds <= 0 or count/seconds > policy.max_words_per_second: reasons.append("speech_rate")
             if probabilities and unit["mean_word_probability"] < policy.min_mean_word_probability:
                 reasons.append("low_mean_word_probability")

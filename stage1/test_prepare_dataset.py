@@ -157,6 +157,25 @@ class DatasetBuildTests(unittest.TestCase):
         units,_,_=prepare_video(t,Policy())
         self.assertEqual(len(list(paired_rows('v',units,'h'))),3)
 
+    def test_long_informative_narration_has_no_length_ceiling(self):
+        long_text=('Starting with the apical four chamber view the operator tilts the probe '
+                   'superiorly to bring the left ventricular outflow tract into view while '
+                   'comparing right and left ventricular size and observing the atria and '
+                   'the mitral and tricuspid valves throughout the cardiac cycle; '
+                   'the next part demonstrates how small changes in probe angle affect '
+                   'the displayed anatomy and how the image returns to the initial view '
+                   'when the operator reverses the tilt without moving the contact point '
+                   'away from the apex of the heart.')
+        self.assertGreater(len(long_text.split()),80)
+        t={'segments':[segment('The probe is near the apex.',0,3),
+                       segment(long_text,3,70)]}
+        units,review,_=prepare_video(t,Policy())
+        rows=list(paired_rows('v',units,'h'))
+        self.assertEqual(len(rows),3)
+        self.assertEqual(rows[0]['target'],long_text)
+        self.assertEqual(rows[0]['sentence_window'],[3,73])
+        self.assertFalse(any(x['scope']=='sentence' for x in review))
+
     def test_source_confidence_and_video_bounds_checked(self):
         for key,value,reason in [('avg_logprob',-2,'low_asr_logprob'),
                                  ('compression_ratio',4,'high_asr_compression')]:
