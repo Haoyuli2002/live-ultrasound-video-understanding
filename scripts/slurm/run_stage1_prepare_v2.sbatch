@@ -52,7 +52,7 @@ ASR_DIR=${ASR_DIR:-$RUN_ROOT/asr}
 DATASET_DIR=${DATASET_DIR:-$RUN_ROOT/dataset}
 [[ -f "$VIDEO_MAP" ]] || { echo "Missing VIDEO_MAP: $VIDEO_MAP" >&2; exit 1; }
 
-asr_args=(--video-map "$VIDEO_MAP" --output-dir "$ASR_DIR"
+asr_args=(--video-map "$VIDEO_MAP" --video-root "${VIDEO_ROOT:-$REPO}" --output-dir "$ASR_DIR"
           --model "${WHISPER_MODEL:-large-v3}" --device cuda --language "${LANGUAGE:-en}" --resume)
 if [[ -n "${LIMIT_VIDEOS:-}" ]]; then asr_args+=(--limit-videos "$LIMIT_VIDEOS"); fi
 python -u -m stage1.transcribe "${asr_args[@]}"

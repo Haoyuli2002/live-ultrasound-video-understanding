@@ -27,6 +27,10 @@ Each output JSON preserves the decoded segments and words, full text, decoding
 settings, library version, video content hash and implementation hashes.
 `--resume` skips only transcripts with the same video hash, recipe and selected
 map. A changed video/model/implementation requires a new output directory.
+Relative video paths default to the map directory. For the existing cluster
+maps containing `cluster_data/videos/...`, pass `--video-root "$PWD"` from the
+repository root; the Slurm wrapper does this automatically. The selected output
+map always contains absolute paths for the sentence builder.
 Failures are recorded and cause a nonzero exit. Temporary WAVs are removed even
 if recognition fails. Use `--limit-videos 3` for a small ASR run; its exact map
 is saved as `selected_video_map.json`.

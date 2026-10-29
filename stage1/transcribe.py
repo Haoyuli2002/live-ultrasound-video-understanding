@@ -32,14 +32,15 @@ def resume_matches(saved: dict, request: dict) -> bool:
 
 
 def run(video_map: Path, output_dir: Path, *, model_name='large-v3', device='cuda',
-        language='en', resume=False, limit_videos=None) -> dict:
+        language='en', resume=False, limit_videos=None, video_root: Path | None=None) -> dict:
     selected = json.loads(video_map.read_text())
     if not isinstance(selected,dict) or not selected: raise ValueError('Expected nonempty video map')
     if limit_videos is not None and limit_videos < 1: raise ValueError('limit_videos must be positive')
     if any(not isinstance(k,str) or not k or Path(k).name!=k or k in {'.','..'} for k in selected):
         raise ValueError('Unsafe video ID')
     selected = dict(sorted(selected.items())[:limit_videos])
-    resolved = {k:(Path(v) if Path(v).is_absolute() else (video_map.parent/v).resolve())
+    relative_root = (video_root if video_root is not None else video_map.parent).resolve()
+    resolved = {k:(Path(v) if Path(v).is_absolute() else (relative_root/v).resolve())
                 for k,v in selected.items()}
     if any(not p.is_file() or p.stem!=k for k,p in resolved.items()):
         raise ValueError('Every mapped video must exist and its stem must equal the video ID')
@@ -84,6 +85,8 @@ def run(video_map: Path, output_dir: Path, *, model_name='large-v3', device='cud
 def main():
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('--video-map',type=Path,required=True)
+    p.add_argument('--video-root',type=Path,
+                   help='Base for relative video paths; defaults to the map directory')
     p.add_argument('--output-dir',type=Path,required=True)
     p.add_argument('--model',default='large-v3')
     p.add_argument('--device',choices=['cuda','cpu'],default='cuda')
@@ -92,7 +95,8 @@ def main():
     p.add_argument('--resume',action='store_true')
     args=p.parse_args()
     report=run(args.video_map,args.output_dir,model_name=args.model,device=args.device,
-               language=args.language,resume=args.resume,limit_videos=args.limit_videos)
+               language=args.language,resume=args.resume,limit_videos=args.limit_videos,
+               video_root=args.video_root)
     print(json.dumps(report,ensure_ascii=False))
     if report['failed']: raise SystemExit(1)
 

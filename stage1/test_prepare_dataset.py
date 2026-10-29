@@ -234,6 +234,21 @@ class ASRTests(unittest.TestCase):
                 self.assertEqual(run(mapping,out,resume=True)['failed'],['v'])
                 self.assertEqual(recognize.call_count,1)
 
+    def test_cluster_relative_video_map_uses_explicit_repository_root(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp); (root/'cluster_data/videos').mkdir(parents=True)
+            video=root/'cluster_data/videos/v.mp4'; video.write_bytes(b'video')
+            maps=root/'cluster_data/splits'; maps.mkdir()
+            mapping=maps/'map.json'; mapping.write_text(json.dumps({'v':'cluster_data/videos/v.mp4'}))
+            with patch('stage1.transcribe.importlib.metadata.version',return_value='test'), \
+                 patch('stage1.transcribe.asr_pipeline.load_whisper_model'), \
+                 patch('stage1.transcribe.asr_pipeline.transcribe_video',return_value=transcript()) as recognize:
+                report=run(mapping,root/'asr',video_root=root)
+                self.assertEqual(report['failed'],[])
+                self.assertEqual(recognize.call_args.args[0],video)
+                saved=json.loads((root/'asr/selected_video_map.json').read_text())
+                self.assertEqual(saved,{'v':str(video)})
+
 
 if __name__=='__main__':
     unittest.main()
