@@ -21,6 +21,8 @@ import time
 import subprocess
 import tempfile
 import argparse
+import os
+import importlib.metadata
 from pathlib import Path
 from datetime import datetime
 
@@ -109,7 +111,8 @@ def load_whisper_model(model_size="medium", device="cpu"):
     return WhisperModel(model_size, device=device, compute_type=compute_type)
 
 
-def transcribe_audio(audio_path, model_size="medium", language=None, device="cpu", model=None):
+def transcribe_audio(audio_path, model_size="medium", language=None, device="cpu", model=None,
+                     *, word_timestamps=True, condition_on_previous_text=False):
     """Transcribe audio using faster-whisper. Returns segments with timestamps."""
     if model is None:
         model = load_whisper_model(model_size, device)
@@ -121,6 +124,12 @@ def transcribe_audio(audio_path, model_size="medium", language=None, device="cpu
         audio_path,
         language=language,
         beam_size=5,
+        temperature=0.0,
+        word_timestamps=word_timestamps,
+        condition_on_previous_text=condition_on_previous_text,
+        compression_ratio_threshold=2.4,
+        log_prob_threshold=-1.0,
+        no_speech_threshold=0.6,
         vad_filter=True,         # Filter out silence
         vad_parameters=dict(
             min_silence_duration_ms=500,
@@ -131,13 +140,21 @@ def transcribe_audio(audio_path, model_size="medium", language=None, device="cpu
     # Collect segments
     segments = []
     for seg in segments_gen:
-        segments.append({
-            "start": round(seg.start, 2),
-            "end": round(seg.end, 2),
+        item = {
+            "start": round(seg.start, 6), "end": round(seg.end, 6),
             "text": seg.text.strip(),
-        })
+            "avg_logprob": seg.avg_logprob,
+            "compression_ratio": seg.compression_ratio,
+            "no_speech_prob": seg.no_speech_prob,
+            "temperature": seg.temperature,
+        }
+        if word_timestamps:
+            item["words"] = [{"start": round(w.start, 6), "end": round(w.end, 6),
+                              "word": w.word, "probability": w.probability}
+                             for w in (seg.words or [])]
+        segments.append(item)
 
-    elapsed = time.time() - t0
+    elapsed = max(time.time() - t0, 1e-9)
     print(f"  Done! {len(segments)} segments in {elapsed:.1f}s")
     print(f"  Language: {info.language} (prob: {info.language_probability:.2f})")
     print(f"  Duration: {info.duration:.1f}s | Speed: {info.duration/elapsed:.1f}x realtime")
@@ -148,7 +165,17 @@ def transcribe_audio(audio_path, model_size="medium", language=None, device="cpu
         "language_probability": round(info.language_probability, 3),
         "duration_sec": round(info.duration, 2),
         "transcription_time_sec": round(elapsed, 2),
-        "speed_factor": round(info.duration / elapsed, 2),
+        "speed_factor": round(info.duration / max(elapsed, 1e-9), 2),
+        "asr_config": {
+            "schema": "stage1_word_asr_v2", "model": model_size,
+            "device": device, "language": language, "beam_size": 5,
+            "temperature": 0.0, "word_timestamps": word_timestamps,
+            "condition_on_previous_text": condition_on_previous_text,
+            "compression_ratio_threshold": 2.4, "log_prob_threshold": -1.0,
+            "no_speech_threshold": 0.6, "vad_filter": True,
+            "vad_parameters": {"min_silence_duration_ms": 500, "speech_pad_ms": 200},
+            "faster_whisper_version": importlib.metadata.version("faster-whisper"),
+        },
     }
 
 
@@ -157,7 +184,8 @@ def transcribe_audio(audio_path, model_size="medium", language=None, device="cpu
 # ============================================================================
 
 def transcribe_video(video_path, model_size="medium", language=None,
-                     output_dir=None, keep_audio=False, device="cpu", model=None):
+                     output_dir=None, keep_audio=False, device="cpu", model=None,
+                     *, word_timestamps=True, condition_on_previous_text=False):
     """Full pipeline: video → audio → transcription → JSON."""
     video_path = Path(video_path)
     video_id = video_path.stem
@@ -169,23 +197,23 @@ def transcribe_video(video_path, model_size="medium", language=None,
     print(f"  Model: {model_size}")
     print(f"  Device: {device}")
 
-    # Step 1: Extract audio
-    if output_dir:
-        audio_dir = Path(output_dir) / "audio"
-        audio_dir.mkdir(parents=True, exist_ok=True)
-        audio_path = str(audio_dir / f"{video_id}.wav")
+    # Audio is disposable even when recognition fails. Keep it only on request.
+    if keep_audio and output_dir:
+        audio_path = str(Path(output_dir) / "audio" / f"{video_id}.wav")
     else:
-        # Use temp file
         tmp = tempfile.NamedTemporaryFile(suffix=".wav", delete=False)
         audio_path = tmp.name
         tmp.close()
-
-    audio_file = extract_audio(video_path, audio_path)
-    if audio_file is None:
-        return None
-
-    # Step 2: Transcribe
-    result = transcribe_audio(audio_file, model_size=model_size, language=language, device=device, model=model)
+    try:
+        audio_file = extract_audio(video_path, audio_path)
+        if audio_file is None:
+            return None
+        result = transcribe_audio(audio_file, model_size=model_size, language=language,
+                                  device=device, model=model, word_timestamps=word_timestamps,
+                                  condition_on_previous_text=condition_on_previous_text)
+    finally:
+        if not keep_audio:
+            Path(audio_path).unlink(missing_ok=True)
 
     # Step 3: Build output
     output = {
@@ -197,6 +225,7 @@ def transcribe_video(video_path, model_size="medium", language=None,
         "duration_sec": result["duration_sec"],
         "transcription_time_sec": result["transcription_time_sec"],
         "speed_factor": result["speed_factor"],
+        "asr_config": result["asr_config"],
         "num_segments": len(result["segments"]),
         "segments": result["segments"],
         "full_text": " ".join(seg["text"] for seg in result["segments"]),
@@ -207,13 +236,17 @@ def transcribe_video(video_path, model_size="medium", language=None,
     if output_dir:
         out_path = Path(output_dir) / f"{video_id}.json"
         out_path.parent.mkdir(parents=True, exist_ok=True)
-        with open(out_path, "w", encoding="utf-8") as f:
-            json.dump(output, f, ensure_ascii=False, indent=2)
+        temporary = None
+        try:
+            with tempfile.NamedTemporaryFile(mode="w", encoding="utf-8", dir=out_path.parent,
+                                             suffix=".tmp", delete=False) as f:
+                temporary = Path(f.name)
+                json.dump(output, f, ensure_ascii=False, indent=2)
+            os.replace(temporary, out_path)
+        finally:
+            if temporary is not None:
+                temporary.unlink(missing_ok=True)
         print(f"\n  Saved: {out_path}")
-
-    # Cleanup audio if not keeping
-    if not keep_audio and not output_dir:
-        Path(audio_file).unlink(missing_ok=True)
 
     # Print preview
     print(f"\n  Preview (first 5 segments):")

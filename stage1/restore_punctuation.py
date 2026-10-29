@@ -2,7 +2,8 @@
 
 The teacher receives numbered words and returns only sentence-end indices and
 punctuation marks. Original transcripts remain unchanged in the source folder.
-Word times are estimated within ASR segments; they are not forced alignment.
+Native ASR word times are preferred; legacy segment-only input uses explicit
+character interpolation. Neither is manually verified forced alignment.
 
 The default teacher is ``Qwen/Qwen3.5-27B`` served through a local vLLM
 OpenAI-compatible endpoint (``--base-url http://localhost:8000/v1``,
@@ -12,13 +13,13 @@ from __future__ import annotations
 
 import argparse
 import json
-import math
 import os
 import re
 import tempfile
 from pathlib import Path
 
 from .data import sentences
+from .alignment import segment_words
 
 MODEL = "Qwen/Qwen3.5-27B"
 SYSTEM = (
@@ -33,21 +34,13 @@ NOISE = re.compile(r"\[(music|noise|applause|inaudible)\]", re.I)
 
 
 def timed_words(segments: list[dict]) -> list[dict]:
-    """Preserve ASR tokens and estimate word times inside each ASR segment."""
+    """Prefer native word times; retain interpolation for the legacy entry point."""
     words = []
-    for segment in segments:
-        raw = str(segment.get("text") or "")
-        if not raw.strip() or NOISE.fullmatch(raw.strip()):
+    for index, segment in enumerate(segments):
+        raw = str(segment.get("text") or "").strip()
+        if not raw or NOISE.fullmatch(raw):
             continue
-        start, end = float(segment["start"]), float(segment["end"])
-        if not math.isfinite(start) or not math.isfinite(end) or end <= start:
-            continue
-        for match in re.finditer(r"\S+", raw):
-            words.append({
-                "text": match.group(),
-                "start": start + (end-start)*match.start()/len(raw),
-                "end": start + (end-start)*match.end()/len(raw),
-            })
+        words.extend(segment_words(segment, index, allow_estimated=True))
     return words
 
 
@@ -133,18 +126,22 @@ def sentence_units(words: list[dict], boundaries: list[dict]) -> list[dict]:
             raise ValueError(f"Boundary outside remaining words: {boundary}")
         tokens = [word["text"] for word in words[first:last+1]]
         mark = boundary["mark"]
-        if tokens[-1].endswith((".", "?", "!")):
-            tokens[-1] = tokens[-1][:-1] + mark
+        ending = re.search(r'''([.!?])(["'”’)\]}]*)$''', tokens[-1])
+        if ending:
+            tokens[-1] = tokens[-1][:ending.start(1)] + mark + ending.group(2)
         else:
             tokens[-1] = tokens[-1].rstrip(",;:") + mark
         units.append({
-            "text": " ".join(tokens),
+            "text": "".join(w.get("separator_before", " ") + token
+                            for w, token in zip(words[first:last+1], tokens)).strip(),
             "start": round(words[first]["start"], 3),
             "end": round(words[last]["end"], 3),
             "unit_type": "llm_punctuation_sentence",
             "word_start_index": first,
             "word_end_index": last+1,
-            "alignment": "segment_character_interpolation",
+            "alignment": ("whisper_word_timestamps" if all(
+                w.get("alignment") == "whisper_word_timestamps" for w in words[first:last+1])
+                else "segment_character_interpolation"),
         })
         first = last+1
     return units  # An unfinished tail after the last boundary is omitted.
@@ -167,7 +164,9 @@ def restore_transcript(transcript: dict, teacher, *, chunk_words: int = 160,
         "source_word_count": len(words),
         "sentence_count": len(units),
         "unfinished_tail_words": len(words) - (boundaries[-1]["after"]+1),
-        "alignment": "segment_character_interpolation",
+        "alignment": ("whisper_word_timestamps" if all(
+            w.get("alignment") == "whisper_word_timestamps" for w in words)
+            else "segment_character_interpolation"),
     }
     return result, result["punctuation_restoration"]
 

@@ -1,5 +1,12 @@
 # Stage 1 — paired narration pretraining
 
+## Audited dataset construction (v2)
+
+Use [DATASET_BUILD.md](DATASET_BUILD.md) for word-timed ASR, sentence splitting,
+quality quarantine, and matched triplet output. The new builder requires target
+windows of at least **5 seconds** and **10 words**; shorter valid speech may
+remain as history. `stage1.data` below documents the legacy builder.
+
 This is a new implementation. It does not import code from `pretrain/`.
 
 For each complete target sentence `[start, end]`, `data.py` creates three
