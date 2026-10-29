@@ -139,15 +139,11 @@ reuse `RUN_ROOT`/`ASR_DIR`; if the dataset was already published, choose a new
 `DATASET_DIR`. Do not run two jobs against the same directory concurrently.
 The job prepends the existing CUDA 12 cuBLAS/cuDNN runtime library directories
 for CTranslate2 and checks that the allocated GPU supports FP16 before recognition.
-No environment packages are installed by the job. A full GPU alternative is:
-
-```bash
-sbatch --partition=lrz-v100x2 --qos=gpu --gres=gpu:1 \
-  scripts/slurm/run_stage1_prepare_v2.sbatch
-```
-
-The V100 alternative still needs the same CUDA/cuDNN compatibility checks;
-the MIG smoke establishes compatibility only for its allocated hardware.
+No environment packages are installed by the job. The current cluster environment
+uses cuDNN 9.24, whose [support matrix](https://docs.nvidia.com/deeplearning/cudnn/backend/v9.24.0/reference/support-matrix.html)
+starts at Turing (compute capability 7.5). V100/P100 require a separate compatible
+ASR runtime; their VRAM capacity alone does not establish compatibility with this
+environment. A100 MIG preserves compatibility with the installed stack.
 
 ```bash
 python -m unittest stage1.test_prepare_dataset stage1.test_restore_punctuation \
