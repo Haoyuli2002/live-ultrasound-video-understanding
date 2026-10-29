@@ -60,6 +60,34 @@ def source_digest(path: Path) -> str:
     return value.hexdigest()
 
 
+def annotation_config(video_path: Path, *, transport="video_url", video_fps=2.0,
+                      video_max_frames=120, clip_max_side=1024, clip_fps=2.0,
+                      disable_thinking=True, max_tokens=1024) -> dict:
+    """One shared recipe for annotation, full-run planning and strict merging."""
+    return {
+        "schema_version": SCHEMA_VERSION, "prompt_sha256": PROMPT_SHA256,
+        "word_limit_policy": "warn_only", "repair_policy": REPAIR_POLICY,
+        "transport": transport, "sampling_policy": SAMPLING_POLICY,
+        "source_sha256": source_digest(video_path),
+        "video_fps": video_fps, "video_max_frames": video_max_frames,
+        "clip_max_side": clip_max_side, "clip_fps": clip_fps,
+        "disable_thinking": disable_thinking, "max_tokens": max_tokens,
+    }
+
+
+def save_events_atomic(output: Path, rows: list[dict]) -> None:
+    """Publish complete minute batches without leaving a torn JSONL on timeout."""
+    temporary = output.with_name(output.name + f".{os.getpid()}.tmp")
+    try:
+        with temporary.open('w', encoding='utf-8') as stream:
+            stream.write(''.join(json.dumps(row, ensure_ascii=False)+'\n' for row in rows))
+            stream.flush()
+            os.fsync(stream.fileno())
+        os.replace(temporary, output)
+    finally:
+        temporary.unlink(missing_ok=True)
+
+
 def make_silent_clip(video_path: Path, start: int, end: int, output: Path, *,
                      max_side: int = 0, fps: float = 0.0, max_frames: int = 0) -> None:
     """Re-encode an exact half-open window without its audio track."""
@@ -247,7 +275,9 @@ def resume_start(records: list[dict], *, video_id: str, duration_sec: int,
         expected = [[t, t+10] for t in range(start, end-9, 10)]
         if [label["window"] for label in row["local_sub_summaries"]] != expected:
             raise ValueError("Saved block has missing or duplicate local labels")
-    return int(blocks[-1]["block_window"][1])
+    last_end = int(blocks[-1]["block_window"][1])
+    # A tail shorter than ten seconds cannot produce any additional label.
+    return duration_sec if 0 <= duration_sec-last_end < 10 else last_end
 
 
 def main():
@@ -293,15 +323,10 @@ def main():
     if not api_key and not args.preflight_only:
         raise ValueError(f"Set {args.api_key_env} before running teacher annotation")
     transport = ("file" if "gemini" in args.model.lower() else "video_url") if args.transport == "auto" else args.transport
-    config = {
-        "schema_version": SCHEMA_VERSION, "prompt_sha256": PROMPT_SHA256,
-        "word_limit_policy": "warn_only", "repair_policy": REPAIR_POLICY,
-        "transport": transport, "sampling_policy": SAMPLING_POLICY,
-        "source_sha256": source_digest(Path(args.video)),
-        "video_fps": args.video_fps, "video_max_frames": args.video_max_frames,
-        "clip_max_side": args.clip_max_side, "clip_fps": args.clip_fps,
-        "disable_thinking": args.disable_thinking, "max_tokens": args.max_tokens,
-    }
+    config = annotation_config(Path(args.video), transport=transport,
+        video_fps=args.video_fps, video_max_frames=args.video_max_frames,
+        clip_max_side=args.clip_max_side, clip_fps=args.clip_fps,
+        disable_thinking=args.disable_thinking, max_tokens=args.max_tokens)
     if args.clip_dir is not None:
         args.clip_dir.mkdir(parents=True, exist_ok=True)
     reader = VideoReader(args.video, args.frame_size)
@@ -345,22 +370,20 @@ def main():
             SYSTEM + "\n\n" + WINDOW_PROMPT + "\n\n"
             + json.dumps(SUMMARY_PLANS, indent=2) + "\n", encoding="utf-8")
         # Complete all eight teacher calls before writing a minute's records.
-        mode = "a" if output.exists() and args.resume else "w"
-        with output.open(mode, encoding="utf-8") as stream:
-            for events in annotate_video(Path(args.video), teacher, video_id=args.video_id,
-                                         duration_sec=duration_sec,
-                                         start_block=start_block, clip_dir=args.clip_dir,
-                                         max_attempts=args.max_attempts,
-                                         clip_max_side=args.clip_max_side,
-                                         clip_fps=args.clip_fps, clip_max_frames=args.video_max_frames):
-                for event in events:
-                    event["teacher"] = args.model
-                    event["annotation_config"] = config
-                stream.write("".join(json.dumps(event, ensure_ascii=False) + "\n"
-                                     for event in events))
-                stream.flush()
-                print(f"[saved] {args.video_id} block={events[0]['block_window']} "
-                      f"labels={len(events)} -> {output}", flush=True)
+        saved_records = records if output.exists() and args.resume else []
+        for events in annotate_video(Path(args.video), teacher, video_id=args.video_id,
+                                     duration_sec=duration_sec,
+                                     start_block=start_block, clip_dir=args.clip_dir,
+                                     max_attempts=args.max_attempts,
+                                     clip_max_side=args.clip_max_side,
+                                     clip_fps=args.clip_fps, clip_max_frames=args.video_max_frames):
+            for event in events:
+                event["teacher"] = args.model
+                event["annotation_config"] = config
+            save_events_atomic(output, saved_records+events)
+            saved_records.extend(events)
+            print(f"[saved] {args.video_id} block={events[0]['block_window']} "
+                  f"labels={len(events)} -> {output}", flush=True)
         if args.audit_output:
             args.audit_output.parent.mkdir(parents=True, exist_ok=True)
             with args.audit_output.open("a", encoding="utf-8") as audit:

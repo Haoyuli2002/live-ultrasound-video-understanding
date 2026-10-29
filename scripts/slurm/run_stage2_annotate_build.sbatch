@@ -190,6 +190,7 @@ if [[ "$ready" != 1 ]]; then
 fi
 
 TEACHER_FILES=()
+FAILED_IDS=()
 for vid in $IDS; do
   video=$(python - "$VIDEO_MAP" "$vid" <<'PY'
 import json, sys
@@ -206,7 +207,7 @@ PY
   fi
   out="$TEACHER_DIR/${vid}.jsonl"
   echo "[annotate] $vid -> $out  (video=$video)"
-  python -m stage2.annotate \
+  if python -m stage2.annotate \
     --video "$video" \
     --video-id "$vid" \
     --output "$out" \
@@ -226,9 +227,20 @@ PY
     --max-attempts "$MAX_ATTEMPTS" \
     --audit-output "$AUDIT_DIR/${vid}.jsonl" \
     --clip-dir "$CLIP_DIR" \
-    --resume
-  TEACHER_FILES+=("$out")
+    --resume; then
+    TEACHER_FILES+=("$out")
+  else
+    FAILED_IDS+=("$vid")
+    echo "[error] annotation failed for $vid; saved complete minutes can be resumed" >&2
+    [[ "${CONTINUE_ON_ERROR:-0}" == 1 ]] || exit 1
+  fi
 done
+
+# A failed full-run shard still processes its remaining videos, then exits nonzero.
+if [[ ${#FAILED_IDS[@]} -gt 0 ]]; then
+  echo "[error] failed videos: ${FAILED_IDS[*]}; final dataset will not be published" >&2
+  exit 1
+fi
 
 echo "[build] merging teacher labels into chronological blocks"
 python -m stage2.build_data \
