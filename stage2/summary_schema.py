@@ -23,23 +23,22 @@ SUMMARY_PLANS = {
         "prompt_kind": "current 10-second local",
         "facets": ["View", "Anatomy", "Probe", "Finding", "Dynamic"],
         "words": 40,
-        "focus": ("Capture only what appears or changes within these ten seconds; "
-                  "keep it to a single short line."),
+        "focus": ("Independently summarize relevant evidence in these ten seconds; "
+                  "do not judge whether it is new relative to a previous window."),
     },
     "block": {
         "prompt_kind": "independent current 60-second block",
         "facets": ["View", "Anatomy", "Finding", "Dynamic", "Measure"],
         "words": 80,
-        "focus": ("Integrate this minute as a whole and give its overall visual "
-                  "assessment; do not list the individual ten-second observations."),
+        "focus": ("Integrate this minute, merge repeated states, and do not list "
+                  "individual local summaries."),
     },
     "global": {
         "prompt_kind": "cumulative video prefix",
         "facets": ["Anatomy", "Finding", "Dynamic", "Measure", "Change"],
         "words": 90,
-        "focus": ("Maintain a fixed-size visual summary of the whole video so far: "
-                  "keep useful persistent evidence, merge repetition, rewrite rather "
-                  "than append, and drop single-minute transients."),
+        "focus": ("Summarize the entire video prefix so far, retaining key evidence "
+                  "and persistent states without expanding unchanged information."),
     },
 }
 

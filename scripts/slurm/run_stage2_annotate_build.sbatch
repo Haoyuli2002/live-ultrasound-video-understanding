@@ -1,6 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=stage2-annotate
 #SBATCH --partition=lrz-hgx-h100-94x4
+#SBATCH --qos=gpu
 #SBATCH --gres=gpu:1
 #SBATCH --cpus-per-task=8
 #SBATCH --mem=120G
@@ -30,11 +31,8 @@ VIDEO_IDS=${VIDEO_IDS-8V649L5Q368}
 TEACHER_DIR=${TEACHER_DIR:-$DATA/cluster_data/stage2/teacher/${SPLIT}}
 AUDIT_DIR=${AUDIT_DIR:-$DATA/cluster_data/stage2/teacher_audit/${SPLIT}}
 BLOCKS=${BLOCKS:-$DATA/cluster_data/stage2/blocks/${SPLIT}_train.jsonl}
-# vLLM must be allowed to read the silent clips stage2.annotate writes here.
-CLIP_DIR=${CLIP_DIR:-${SLURM_TMPDIR:-/tmp}/stage2_clips_${SLURM_JOB_ID:-$$}}
-
 MODEL=${MODEL:-Qwen/Qwen3.5-27B}
-VLLM_PORT=${VLLM_PORT:-8000}
+VLLM_PORT_REQUESTED=${VLLM_PORT:-auto}
 MAX_MODEL_LEN=${MAX_MODEL_LEN:-32768}
 GPU_MEMORY_UTILIZATION=${GPU_MEMORY_UTILIZATION:-0.90}
 # Teacher sampling is denser than the student input; all windows remain causal.
@@ -54,17 +52,26 @@ VLLM_READY_INTERVAL=${VLLM_READY_INTERVAL:-10}
 mkdir -p "$REPO/logs"
 cd "$REPO"
 
-if [[ -f /dss/dsshome1/04/ge75vid2/miniconda3/etc/profile.d/conda.sh ]]; then
-  source /dss/dsshome1/04/ge75vid2/miniconda3/etc/profile.d/conda.sh
-else
-  source "$HOME/miniconda3/etc/profile.d/conda.sh"
-fi
+source "${CONDA_SH:-$HOME/miniconda3/etc/profile.d/conda.sh}"
 conda activate "${CONDA_ENV:-ultrasound}"
 export PYTHONUNBUFFERED=1
 
-export VLLM_API_KEY=${VLLM_API_KEY:-EMPTY}
+# Use a fresh short directory even if a previous Stage 1 shell exported TMPDIR.
+STAGE2_TMP=$(mktemp -d /tmp/s2.XXXXXXXX)
+export TMPDIR="$STAGE2_TMP" TMP="$STAGE2_TMP" TEMP="$STAGE2_TMP"
+cleanup() {
+  echo "[cleanup] stopping vLLM"
+  if [[ -n "${VLLM_PID:-}" ]]; then kill "$VLLM_PID" 2>/dev/null || true; fi
+  if [[ -n "${VLLM_PID:-}" ]]; then wait "$VLLM_PID" 2>/dev/null || true; fi
+  rm -rf -- "$STAGE2_TMP"
+}
+trap cleanup EXIT
+export VLLM_API_KEY=$(python -c 'import secrets; print(secrets.token_urlsafe(24))')
+export STAGE2_SERVED_MODEL="stage2_${SLURM_JOB_ID:-local}_${RANDOM}"
+VLLM_PORT=$(python -m stage2.runtime port "$VLLM_PORT_REQUESTED")
+CLIP_DIR="$STAGE2_TMP/clips"
 export HF_HOME=${HF_HOME:-/dss/mcmlscratch/04/ge75vid2/haoyu/hf_cache}
-export TRANSFORMERS_CACHE=${TRANSFORMERS_CACHE:-$HF_HOME}
+unset TRANSFORMERS_CACHE
 export HF_HUB_CACHE=${HF_HUB_CACHE:-$HF_HOME/hub}
 mkdir -p "$HF_HOME" "$HF_HUB_CACHE" "$TEACHER_DIR" "$AUDIT_DIR" "$CLIP_DIR" "$(dirname "$BLOCKS")"
 
@@ -90,6 +97,7 @@ echo "MODEL=$MODEL"
 echo "VIDEO_FPS=$VIDEO_FPS"
 echo "MAX_MODEL_LEN=$MAX_MODEL_LEN"
 echo "VLLM_PORT=$VLLM_PORT"
+echo "VLLM_SERVED_MODEL=$STAGE2_SERVED_MODEL TMPDIR=$TMPDIR"
 echo "=============================="
 
 [[ -f "$VIDEO_MAP" ]] || { echo "[error] VIDEO_MAP not found: $VIDEO_MAP" >&2; exit 1; }
@@ -118,13 +126,17 @@ if not path or not Path(path).is_file():
 PY_CHECK
 done
 
+# Check source identity, sampling policy and prompt fingerprint before loading 27B.
+for vid in $IDS; do
+  video=$(python -c 'import json,sys; print(json.load(open(sys.argv[1]))[sys.argv[2]])' "$VIDEO_MAP" "$vid")
+  python -m stage2.annotate --preflight-only --video "$video" --video-id "$vid" \
+    --output "$TEACHER_DIR/$vid.jsonl" --model "$MODEL" --transport video_url \
+    --video-fps "$VIDEO_FPS" --video-max-frames "$VIDEO_MAX_FRAMES" \
+    --clip-fps "$CLIP_FPS" --clip-max-side "$CLIP_MAX_SIDE" --disable-thinking \
+    --max-tokens "$MAX_TOKENS" --resume
+done
+
 VLLM_LOG=${VLLM_LOG:-$REPO/logs/stage2_vllm_${SLURM_JOB_ID:-$$}.log}
-cleanup() {
-  echo "[cleanup] stopping vLLM"
-  if [[ -n "${VLLM_PID:-}" ]]; then kill "$VLLM_PID" 2>/dev/null || true; fi
-  if [[ -n "${VLLM_PID:-}" ]]; then wait "$VLLM_PID" 2>/dev/null || true; fi
-}
-trap cleanup EXIT
 
 # Recent vLLM releases require opting in to per-request processor kwargs.
 VLLM_EXTRA=()
@@ -132,20 +144,16 @@ VLLM_HELP=$(vllm serve --help=all 2>&1)
 if [[ "$VLLM_HELP" == *"--trust-request-mm-kwargs"* ]]; then
   VLLM_EXTRA+=(--trust-request-mm-kwargs)
 fi
-MM_KWARGS=$(python - "$VIDEO_FPS" "$VIDEO_MAX_FRAMES" <<'PY_MM'
-import json, sys
-print(json.dumps({"fps": float(sys.argv[1]), "max_frames": int(sys.argv[2]),
-                  "do_sample_frames": True}))
-PY_MM
-)
+MM_KWARGS='{"do_sample_frames":false}'
 echo "[vllm] starting vLLM on port $VLLM_PORT"
 echo "[sampling] clip_fps=$CLIP_FPS clip_max_side=$CLIP_MAX_SIDE processor=$MM_KWARGS"
 # --allowed-local-media-path lets vLLM read the file:// silent clips that
 # stage2.annotate (transport video_url) hands it; --media-io-kwargs keeps all
-# decoded frames so --video-fps controls sampling.
+# already bounded frames, preserving each clip's actual FPS and duration.
 nohup vllm serve "$MODEL" \
   --host 127.0.0.1 \
   --port "$VLLM_PORT" \
+  --served-model-name "$STAGE2_SERVED_MODEL" \
   --max-model-len "$MAX_MODEL_LEN" \
   --gpu-memory-utilization "$GPU_MEMORY_UTILIZATION" \
   --enforce-eager \
@@ -161,16 +169,16 @@ VLLM_PID=$!
 echo "[vllm] waiting for server"
 ready=0
 for i in $(seq 1 "$VLLM_READY_RETRIES"); do
-  if curl --silent --fail "http://127.0.0.1:${VLLM_PORT}/v1/models" \
-      -H "Authorization: Bearer ${VLLM_API_KEY}" | grep -Fq "$MODEL"; then
+  if ! kill -0 "$VLLM_PID" 2>/dev/null; then
+    echo "[error] owned vLLM process exited; see $VLLM_LOG" >&2
+    tail -100 "$VLLM_LOG" >&2 || true
+    exit 1
+  fi
+  if python -m stage2.runtime ready --base-url "http://127.0.0.1:${VLLM_PORT}/v1" \
+      --model "$STAGE2_SERVED_MODEL"; then
     ready=1
     echo "[vllm] ready after $i checks"
     break
-  fi
-  if ! kill -0 "$VLLM_PID" 2>/dev/null; then
-    echo "[error] vLLM exited; see $VLLM_LOG" >&2
-    tail -200 "$VLLM_LOG" >&2 || true
-    exit 1
   fi
   echo "[vllm] not ready yet ($i/${VLLM_READY_RETRIES})"
   sleep "$VLLM_READY_INTERVAL"
@@ -203,6 +211,8 @@ PY
     --video-id "$vid" \
     --output "$out" \
     --model "$MODEL" \
+    --served-model-name "$STAGE2_SERVED_MODEL" \
+    --transport-preflight \
     --base-url "http://127.0.0.1:${VLLM_PORT}/v1" \
     --api-key-env VLLM_API_KEY \
     --transport video_url \

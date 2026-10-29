@@ -12,7 +12,7 @@ from pathlib import Path
 from types import SimpleNamespace
 from unittest.mock import Mock, patch
 
-from stage2.annotate import ChatTeacher, annotate_video, resume_start, summarize_window
+from stage2.annotate import ChatTeacher, annotate_video, main, resume_start, summarize_window
 from stage2.summary_schema import (SUMMARY_PLANS, normalize_summary, parse_summary,
                                    PROSE_SCHEMA_VERSION, validate_prose)
 from stage2.build_data import build_files
@@ -76,6 +76,7 @@ class AnnotationJobTests(unittest.TestCase):
         teacher = ChatTeacher.__new__(ChatTeacher)
         teacher.client = SimpleNamespace(chat=SimpleNamespace(completions=SimpleNamespace(create=create)))
         teacher.model = 'Qwen/Qwen3.5-27B'
+        teacher.request_model = 'stage2_own_job'
         teacher.transport = 'video_url'
         teacher.max_tokens = 1024
         teacher.video_fps = 1.0
@@ -85,8 +86,40 @@ class AnnotationJobTests(unittest.TestCase):
         extra = calls[0]['extra_body']
         self.assertEqual(extra['chat_template_kwargs'], {'enable_thinking': False})
         self.assertEqual(extra['mm_processor_kwargs'],
-                         {'fps': 1.0, 'do_sample_frames': True, 'max_frames': 120})
+                         {'do_sample_frames': False})
         self.assertEqual(calls[0]['messages'][1]['content'][0]['type'], 'video_url')
+        self.assertEqual(calls[0]['model'], 'stage2_own_job')
+        self.assertEqual(teacher.model, 'Qwen/Qwen3.5-27B')
+
+    def test_preflight_without_teacher_rejects_changed_source_and_preserves_labels(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            source, output = root/'source.mp4', root/'labels.jsonl'
+            source.write_bytes(b'original source')
+            args = ['annotate', '--video', str(source), '--video-id', '8V649L5Q368',
+                    '--output', str(output), '--model', 'Qwen/Qwen3.5-27B',
+                    '--resume', '--preflight-only']
+            def preflight():
+                reader = SimpleNamespace(count=120, fps=2, close=Mock())
+                with patch('sys.argv', args), patch('stage2.annotate.VideoReader', return_value=reader), \
+                        patch('stage2.annotate.ChatTeacher') as teacher, \
+                        contextlib.redirect_stdout(io.StringIO()) as log:
+                    main()
+                    teacher.assert_not_called()
+                reader.close.assert_called_once()
+                return json.loads(log.getvalue())
+            config = preflight()['annotation_config']
+            self.assertFalse(output.exists())
+            events = self.events()[:8]
+            for event in events:
+                event['annotation_config'] = config
+            saved = ''.join(json.dumps(event)+'\n' for event in events)
+            output.write_text(saved)
+            self.assertEqual(preflight()['resume_from'], 60)
+            source.write_bytes(b'replaced source, same filename')
+            with self.assertRaisesRegex(ValueError, 'annotation config'):
+                preflight()
+            self.assertEqual(output.read_text(), saved)
 
     def test_all_facet_permutations_preserve_content_and_strict_storage(self):
         for kind, plan in SUMMARY_PLANS.items():
@@ -120,7 +153,7 @@ class AnnotationJobTests(unittest.TestCase):
         self.assertEqual(teacher.summary.call_count, 2)
         self.assertIn('View: chest; Anatomy: ribs', log.getvalue())
         prompt = teacher.summary.call_args.args[0]
-        self.assertIn('Consider these perspectives internally', prompt)
+        self.assertIn('Video interval: [160, 170) seconds', prompt)
         self.assertNotIn('in this order', prompt)
 
     def test_legacy_parser_rejects_swallowed_sentence_labels(self):
@@ -227,6 +260,13 @@ class AnnotationJobTests(unittest.TestCase):
                                     capture_output=True, text=True)
             self.assertNotEqual(result.returncode, 0)
             self.assertIn('Old structured labels', result.stderr)
+            self.assertEqual((root/'run/submit_env.sh').read_text(), before)
+            old_labels.write_text(json.dumps({'schema_version': 'stage2_prose_v2',
+                'annotation_config': {'prompt_sha256': 'obsolete'}})+'\n')
+            result = subprocess.run(['bash', str(script), '--dry-run'], env=env,
+                                    capture_output=True, text=True)
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn('Prompt or video sampling differs', result.stderr)
             self.assertEqual((root/'run/submit_env.sh').read_text(), before)
 
 

@@ -16,42 +16,52 @@ import tempfile
 from pathlib import Path
 
 from .data import VideoReader
-from .summary_schema import (PERSPECTIVES, PROSE_SCHEMA_VERSION as SCHEMA_VERSION,
+from .sampling import POLICY as SAMPLING_POLICY, sampling_plan, validate_clip
+from .summary_schema import (PROSE_SCHEMA_VERSION as SCHEMA_VERSION,
                              SUMMARY_PLANS, validate_prose)
 
-# Perspectives guide visual reasoning; they are never output fields.
-SYSTEM = (
-    "Write concise medical ultrasound summaries in English using only the supplied silent video. "
-    "Produce one coherent paragraph of natural prose, without headings, perspective labels, "
-    "bullet points, JSON, a preamble or a checklist. Integrate relevant observations rather "
-    "than listing a sentence for every perspective. "
-    "Use these perspectives internally when evidence supports them: "
-    + "; ".join(f"{name}: {gloss}" for name, gloss in PERSPECTIVES.items())
-    + ". Prioritize the ultrasound view, identifiable anatomy, visible probe handling and "
-    "patient positioning, supported sonographic observations, temporal changes and actual "
-    "readable measurements. Inspect both panels of split-screen footage: the demonstration "
-    "and the ultrasound display. A visible monitor is not a sonographic finding or a measurement. "
-    "For introductory or demonstration footage without an interpretable scan, briefly describe "
-    "the visible positioning or procedure instead of inventing clinical findings. "
-    "Avoid repeated generic room descriptions and filler such as 'not visible', 'no specific "
-    "findings', or 'no measurements'. Simply omit unsupported perspectives. "
-    "Do not infer diagnoses, normality, absence of disease, lung tissue, B-lines or another "
-    "named sign from an ambiguous bright stripe, a preset label or a distant screen. Use "
-    "specific terminology only when the visual evidence supports it; otherwise describe the "
-    "appearance conservatively. A lack of observed motion in sparsely sampled frames is not "
-    "proof of absent motion, flow or lung sliding. Mention movement only when supported across "
-    "frames. Do not infer what the speaker says or use audio, transcripts, outside knowledge "
-    "about this particular video, or events outside the supplied interval."
-)
+# Compact relevance-first prompt; perspectives remain implicit in the prose.
+SYSTEM = """Generate an English medical ultrasound summary using only the supplied video.
+Output one natural paragraph without headings, labels or lists.
+
+Include only information directly relevant to ultrasound examination: recognizable
+scan planes and anatomy, probe contact sites and scanning actions, supported
+sonographic appearances and dynamic changes, readable measurements, and relevant
+patient positioning.
+
+Ignore ordinary gestures, facing the camera, speaking, the room and background
+equipment. Describe a gesture only when it clearly indicates an anatomical site
+or procedural step. For split-screen footage, inspect both the demonstration
+and ultrasound image.
+
+Do not guess the narration or use audio, ASR or information outside the interval.
+Do not infer diagnoses, normality or absence of disease from ambiguous images.
+No observed motion in sparse frames does not imply absence of motion.
+
+One sentence is enough when sufficient. Do not pad to fill a word budget or
+invent changes. If the entire interval contains no information meeting these
+criteria, output exactly:
+No ultrasound-relevant visual information in this interval."""
+
+WINDOW_PROMPT = ("Task: {prompt_kind}\nVideo interval: [{start}, {end}) seconds\n"
+                 "Focus: {focus}\nPrefer no more than {words} English words.")
 REPAIR_POLICY = "format_only_retry_length_warning_v1"
 PROMPT_SHA256 = hashlib.sha256((SYSTEM + json.dumps({
     "plans": SUMMARY_PLANS, "word_limit_policy": "warn_only",
-    "repair_policy": REPAIR_POLICY,
+    "repair_policy": REPAIR_POLICY, "window_prompt": WINDOW_PROMPT,
 }, sort_keys=True)).encode()).hexdigest()
 
 
+def source_digest(path: Path) -> str:
+    value = hashlib.sha256()
+    with path.open('rb') as stream:
+        for block in iter(lambda:stream.read(1024*1024),b''):
+            value.update(block)
+    return value.hexdigest()
+
+
 def make_silent_clip(video_path: Path, start: int, end: int, output: Path, *,
-                     max_side: int = 0, fps: float = 0.0) -> None:
+                     max_side: int = 0, fps: float = 0.0, max_frames: int = 0) -> None:
     """Re-encode an exact half-open window without its audio track."""
     if start < 0 or end <= start:
         raise ValueError("Invalid teacher video window")
@@ -60,7 +70,10 @@ def make_silent_clip(video_path: Path, start: int, end: int, output: Path, *,
                "-c:v", "libx264", "-preset", "veryfast", "-crf", "23",
                str(output)]
     filters = []
-    if fps > 0:
+    plan = sampling_plan(start, end, fps, max_frames) if max_frames else None
+    if plan:
+        filters.append(f"fps={plan['fps_filter']}")
+    elif fps > 0:
         filters.append(f"fps={fps}")
     if max_side > 0:
         filters.append(f"scale=w='min({max_side},iw)':h='min({max_side},ih)':"
@@ -70,31 +83,25 @@ def make_silent_clip(video_path: Path, start: int, end: int, output: Path, *,
     result = subprocess.run(command, capture_output=True, text=True)
     if result.returncode or not output.is_file() or output.stat().st_size == 0:
         raise RuntimeError(f"Failed to make silent clip [{start},{end}): {result.stderr[:400]}")
+    if plan:
+        observed = validate_clip(output, plan)
+        print(f"[clip] [{start},{end}) frames={observed['frames']} fps={observed['fps']:.6g} "
+              f"duration={observed['duration']:.3f}s audio=0", flush=True)
 
 
 def summarize_window(video_path: Path, teacher, *, kind: str,
                      start: int, end: int, clip_path: Path,
                      max_attempts: int = 3, clip_max_side: int = 0,
-                     clip_fps: float = 0.0) -> tuple[str, dict[str, str]]:
+                     clip_fps: float = 0.0, clip_max_frames: int = 0) -> tuple[str, dict[str, str]]:
     clip_options = {"max_side": clip_max_side, "fps": clip_fps} if clip_max_side or clip_fps else {}
+    if clip_max_frames:
+        clip_options['max_frames'] = clip_max_frames
     make_silent_clip(video_path, start, end, clip_path, **clip_options)
     print(f"[teacher] {kind} [{start},{end})", flush=True)
     if max_attempts < 1:
         raise ValueError("max_attempts must be at least one")
     plan = SUMMARY_PLANS[kind]
-    facets = ", ".join(plan["facets"])
-    prompt = (
-        f"Summarize only the visible evidence in the {plan['prompt_kind']} interval "
-        f"[{start}, {end}) seconds. The attached silent video covers exactly "
-        f"that interval. {plan['focus']} "
-        f"Consider these perspectives internally when relevant: {facets}. "
-        "Write a connected medical ultrasound summary, not labelled fields. "
-        f"Aim for about {plan['words']} words total. "
-        "Start directly with the observed anatomy, positioning or probe action. "
-        "Avoid 'The video shows', speculation about what is being explained, and "
-        "sentences listing absent findings or measurements. "
-        "Do not use information from other times."
-    )
+    prompt = WINDOW_PROMPT.format(start=start, end=end, **plan)
     last_error = None
     previous = ""
     for attempt in range(1, max_attempts + 1):
@@ -124,7 +131,7 @@ def summarize_window(video_path: Path, teacher, *, kind: str,
 def annotate_video(video_path: Path, teacher, *, video_id: str,
                    duration_sec: int, start_block: int = 0,
                    clip_dir: Path | None = None, max_attempts: int = 3,
-                   clip_max_side: int = 0, clip_fps: float = 0.0):
+                   clip_max_side: int = 0, clip_fps: float = 0.0, clip_max_frames: int = 0):
     """Yield one atomic event batch per block (eight records per full minute)."""
     for block_start in range(start_block, duration_sec, 60):
         block_end = min(block_start+60, duration_sec)
@@ -137,7 +144,8 @@ def annotate_video(video_path: Path, teacher, *, video_id: str,
                                         start=start, end=end,
                                         clip_path=temporary_path / f"{name}.mp4",
                                         max_attempts=max_attempts,
-                                        clip_max_side=clip_max_side, clip_fps=clip_fps)
+                                        clip_max_side=clip_max_side, clip_fps=clip_fps,
+                                        clip_max_frames=clip_max_frames)
             for start in range(block_start, block_end-9, 10):
                 end = start+10
                 target, facets = label("local", start, end, f"local_{start}_{end}")
@@ -176,10 +184,12 @@ def annotate_video(video_path: Path, teacher, *, video_id: str,
 class ChatTeacher:
     def __init__(self, model: str, *, api_key: str, base_url: str | None,
                  max_tokens: int, transport: str = "auto", video_fps: float = 0.0,
-                 video_max_frames: int = 0, disable_thinking: bool = False):
+                 video_max_frames: int = 0, disable_thinking: bool = False,
+                 served_model_name: str | None = None):
         from openai import OpenAI
         self.client = OpenAI(api_key=api_key, base_url=base_url) if base_url else OpenAI(api_key=api_key)
         self.model = model
+        self.request_model = served_model_name or model
         self.max_tokens = max_tokens
         self.transport = ("file" if "gemini" in model.lower() else "video_url") if transport == "auto" else transport
         self.video_fps = video_fps
@@ -197,7 +207,7 @@ class ChatTeacher:
         else:
             raise ValueError(f"Unknown video transport: {self.transport}")
         request = dict(
-            model=self.model,
+            model=getattr(self, "request_model", self.model),
             messages=[{"role": "system", "content": SYSTEM},
                       {"role": "user", "content": [video, {"type": "text", "text": prompt}]}],
             max_tokens=self.max_tokens,
@@ -205,13 +215,9 @@ class ChatTeacher:
         )
         extra = {}
         if self.transport == "video_url":
-            processor = {}
-            if self.video_fps > 0:
-                processor.update(fps=self.video_fps, do_sample_frames=True)
-            if getattr(self, "video_max_frames", 0) > 0:
-                processor["max_frames"] = self.video_max_frames
-            if processor:
-                extra["mm_processor_kwargs"] = processor
+            # The clip is already sampled and bounded. Do not sample it a second
+            # time or overwrite its true FPS (which is lower for long prefixes).
+            extra["mm_processor_kwargs"] = {"do_sample_frames": False}
         if getattr(self, "disable_thinking", False):
             extra["chat_template_kwargs"] = {"enable_thinking": False}
         if extra:
@@ -256,14 +262,17 @@ def main():
     parser.add_argument("--transport", choices=("auto", "video_url", "file"), default="auto",
                         help="auto: Gemini uses OpenRouter file; other models use vLLM video_url")
     parser.add_argument("--video-fps", type=float, default=0.0,
-                        help="Optional vLLM video decoding FPS; default leaves backend policy unchanged")
-    parser.add_argument("--video-max-frames", type=int, default=0,
-                        help="Qwen processor frame cap per window; 0 leaves backend default")
+                        help="Legacy provenance field; actual sampling is controlled by --clip-fps and --video-max-frames")
+    parser.add_argument("--video-max-frames", type=int, default=120,
+                        help="Frame cap applied while making each silent clip, before decoding on the server")
     parser.add_argument("--clip-max-side", type=int, default=0,
                         help="Resize silent clips preserving aspect ratio; 0 keeps original size")
-    parser.add_argument("--clip-fps", type=float, default=0.0,
-                        help="Resample silent clips before loading; 0 preserves source FPS")
+    parser.add_argument("--clip-fps", type=float, default=2.0,
+                        help="Preferred clip FPS; reduced as needed to preserve the whole interval within the frame cap")
     parser.add_argument("--disable-thinking", action="store_true")
+    parser.add_argument("--served-model-name", help="Job-specific endpoint alias; metadata retains the actual teacher model")
+    parser.add_argument("--preflight-only", action="store_true", help="Validate source/config/resume without any model request")
+    parser.add_argument("--transport-preflight", action="store_true", help="Probe short and long video requests before annotation")
     parser.add_argument("--frame-size", type=int, default=224,
                         help="Decode size used only to read reliable source-video metadata")
     parser.add_argument("--clip-dir", type=Path,
@@ -276,22 +285,19 @@ def main():
                         help="Append after the last complete saved block")
     parser.add_argument("--overwrite", action="store_true")
     args = parser.parse_args()
-    if args.clip_max_side < 0 or args.clip_max_side == 1 or args.clip_fps < 0 or args.video_max_frames < 0:
+    if args.clip_max_side < 0 or args.clip_max_side == 1 or args.clip_fps <= 0:
         parser.error("Invalid clip size, FPS, or frame cap")
-    if args.video_max_frames and (args.video_max_frames < 4 or args.video_max_frames % 2):
+    if args.video_max_frames < 4 or args.video_max_frames % 2:
         parser.error("Qwen video frame cap must be even and at least four")
     api_key = os.environ.get(args.api_key_env)
-    if not api_key:
+    if not api_key and not args.preflight_only:
         raise ValueError(f"Set {args.api_key_env} before running teacher annotation")
-    teacher = ChatTeacher(args.model, api_key=api_key,
-                          base_url=args.base_url, max_tokens=args.max_tokens,
-                          transport=args.transport, video_fps=args.video_fps,
-                          video_max_frames=args.video_max_frames,
-                          disable_thinking=args.disable_thinking)
+    transport = ("file" if "gemini" in args.model.lower() else "video_url") if args.transport == "auto" else args.transport
     config = {
         "schema_version": SCHEMA_VERSION, "prompt_sha256": PROMPT_SHA256,
         "word_limit_policy": "warn_only", "repair_policy": REPAIR_POLICY,
-        "transport": teacher.transport,
+        "transport": transport, "sampling_policy": SAMPLING_POLICY,
+        "source_sha256": source_digest(Path(args.video)),
         "video_fps": args.video_fps, "video_max_frames": args.video_max_frames,
         "clip_max_side": args.clip_max_side, "clip_fps": args.clip_fps,
         "disable_thinking": args.disable_thinking, "max_tokens": args.max_tokens,
@@ -316,8 +322,28 @@ def main():
                                        config=config)
         elif output.exists() and not args.overwrite:
             raise FileExistsError(f"Output already exists: {output}; use --resume or --overwrite")
+        if args.preflight_only:
+            print(json.dumps({"video_id":args.video_id, "duration_sec":duration_sec,
+                              "resume_from":start_block, "annotation_config":config}), flush=True)
+            return
+        teacher = ChatTeacher(args.model, api_key=api_key, base_url=args.base_url,
+                              max_tokens=args.max_tokens, transport=transport,
+                              video_fps=args.video_fps, video_max_frames=args.video_max_frames,
+                              disable_thinking=args.disable_thinking,
+                              served_model_name=args.served_model_name)
+        if args.transport_preflight and start_block < duration_sec:
+            windows = [("local",0,10)]
+            for end in sorted({min(420,duration_sec//60*60), duration_sec//60*60}):
+                if end >= 60: windows.append(("global",0,end))
+            with tempfile.TemporaryDirectory(prefix="preflight_",dir=args.clip_dir) as temporary:
+                for kind,start,end in windows:
+                    target,_ = summarize_window(Path(args.video),teacher,kind=kind,start=start,end=end,
+                        clip_path=Path(temporary)/f"{kind}_{end}.mp4",clip_max_side=args.clip_max_side,
+                        clip_fps=args.clip_fps,clip_max_frames=args.video_max_frames,max_attempts=args.max_attempts)
+                    print(f"[transport-preflight] OK {kind} [{start},{end}): {target}",flush=True)
         output.with_suffix(".prompt.txt").write_text(
-            SYSTEM + "\n\n" + json.dumps(SUMMARY_PLANS, indent=2) + "\n", encoding="utf-8")
+            SYSTEM + "\n\n" + WINDOW_PROMPT + "\n\n"
+            + json.dumps(SUMMARY_PLANS, indent=2) + "\n", encoding="utf-8")
         # Complete all eight teacher calls before writing a minute's records.
         mode = "a" if output.exists() and args.resume else "w"
         with output.open(mode, encoding="utf-8") as stream:
@@ -326,7 +352,7 @@ def main():
                                          start_block=start_block, clip_dir=args.clip_dir,
                                          max_attempts=args.max_attempts,
                                          clip_max_side=args.clip_max_side,
-                                         clip_fps=args.clip_fps):
+                                         clip_fps=args.clip_fps, clip_max_frames=args.video_max_frames):
                 for event in events:
                     event["teacher"] = args.model
                     event["annotation_config"] = config

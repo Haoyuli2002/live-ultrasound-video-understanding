@@ -20,7 +20,7 @@ export MAX_MODEL_LEN=32768
 export MAX_TOKENS=1024
 export MAX_ATTEMPTS=3
 export WALLTIME=${WALLTIME:-01:00:00}
-export VLLM_PORT=${VLLM_PORT:-8000}
+export VLLM_PORT=${VLLM_PORT:-auto}
 export CONDA_ENV=${CONDA_ENV:-ultrasound}
 cd "$REPO"
 mkdir -p logs
@@ -62,7 +62,7 @@ PY
 )
 if [[ -z "${RUN_DIR:-}" ]]; then
   mkdir -p "$DATA/cluster_data/stage2/runs"
-  RUN_DIR=$(mktemp -d "$DATA/cluster_data/stage2/runs/8V649L5Q368_qwen35_27b_prose_v2_$(date +%Y%m%d_%H%M%S)_XXXXXX")
+  RUN_DIR=$(mktemp -d "$DATA/cluster_data/stage2/runs/8V649L5Q368_qwen35_27b_prose_v2_bounded_$(date +%Y%m%d_%H%M%S)_XXXXXX")
 fi
 mkdir -p "$RUN_DIR"
 export RUN_DIR=$(cd "$RUN_DIR" && pwd)
@@ -74,6 +74,8 @@ export BLOCKS="$RUN_DIR/blocks.jsonl"
 python3 - "$TEACHER_DIR/$VIDEO_IDS.jsonl" <<'PY_RESUME'
 import json, sys
 from pathlib import Path
+from stage2.annotate import PROMPT_SHA256
+from stage2.sampling import POLICY
 path = Path(sys.argv[1])
 if path.exists():
     for line in path.read_text().splitlines():
@@ -82,6 +84,9 @@ if path.exists():
         row = json.loads(line)
         if row.get("schema_version") != "stage2_prose_v2":
             sys.exit("Old structured labels cannot be resumed into prose data. Unset RUN_DIR for a fresh run.")
+        config = row.get('annotation_config', {})
+        if config.get('prompt_sha256') != PROMPT_SHA256 or config.get('sampling_policy') != POLICY:
+            sys.exit("Prompt or video sampling differs from this run. Unset RUN_DIR for a fresh run.")
 PY_RESUME
 # Do not inherit a stale smoke clip directory or log path from earlier jobs.
 unset CLIP_DIR VLLM_LOG

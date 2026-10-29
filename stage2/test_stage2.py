@@ -91,7 +91,8 @@ class Stage2Tests(unittest.TestCase):
             video = calls[-1]["messages"][1]["content"][0]
             self.assertEqual(video["type"], "video_url")
             self.assertEqual(video["video_url"]["url"], clip.resolve().as_uri())
-            self.assertNotIn("extra_body", calls[-1])
+            self.assertEqual(calls[-1]["extra_body"]["mm_processor_kwargs"],
+                             {"do_sample_frames": False})
 
     def test_teacher_builds_independent_local_block_and_global_labels(self):
         teacher = FakeTeacher()
