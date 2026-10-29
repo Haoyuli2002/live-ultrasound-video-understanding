@@ -245,9 +245,9 @@ class ASRTests(unittest.TestCase):
                  patch('stage1.transcribe.asr_pipeline.transcribe_video',return_value=transcript()) as recognize:
                 report=run(mapping,root/'asr',video_root=root)
                 self.assertEqual(report['failed'],[])
-                self.assertEqual(recognize.call_args.args[0],video)
+                self.assertEqual(recognize.call_args.args[0],video.resolve())
                 saved=json.loads((root/'asr/selected_video_map.json').read_text())
-                self.assertEqual(saved,{'v':str(video)})
+                self.assertEqual(saved,{'v':str(video.resolve())})
 
 
 if __name__=='__main__':
