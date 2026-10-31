@@ -59,10 +59,11 @@ python -u -m stage1.transcribe "${asr_args[@]}"
 
 # Native Whisper punctuation is the default. LLM boundaries can instead be built
 # later with stage1.prepare_dataset --boundary-mode llm against a served endpoint.
-python -u -m stage1.prepare_dataset \
-  --transcripts "$ASR_DIR" \
-  --video-map "$ASR_DIR/selected_video_map.json" \
-  --output-dir "$DATASET_DIR"
+prepare_args=(--transcripts "$ASR_DIR" --video-map "$ASR_DIR/selected_video_map.json"
+              --output-dir "$DATASET_DIR")
+# Keep empty videos in the audit while publishing the remaining valid samples.
+if [[ "${ALLOW_EMPTY_VIDEOS:-0}" == 1 ]]; then prepare_args+=(--allow-empty-videos); fi
+python -u -m stage1.prepare_dataset "${prepare_args[@]}"
 echo "Dataset: $DATASET_DIR/samples.jsonl"
 echo "Video map: $DATASET_DIR/video_map.json"
 echo "Review: $DATASET_DIR/report.json and quarantine.jsonl"
