@@ -1,4 +1,4 @@
-"""Standalone Stage 3 answerability-decision implementation (two-model scaffold).
+"""Stage 3 answerability-decision models and causal single-GPU QA training.
 
 Stage 3 is a *two-model* design (see README_zh.md "Stage 2 -> Stage 3"):
 
@@ -13,9 +13,7 @@ During training both live on the GPU at once: the frozen model runs under
 (stop-gradient) before the decision model consumes them, so the answerability
 loss never flows back into the memory model.
 
-This package currently implements the exact Stage 1 -> Stage 2 checkpoint
-reconstruction, a registered/device-safe BCE head, the documented causal input
-layout, and the single-sample BCE/NTP forward. Data loading, the full live
-two-model training loop, answer generation and multi-question KV branching are
-still open and are not yet validated end to end.
+The training CLI replays video causally at decision times and optimizes BCE/NTP.
+GPU integration, optimizer-state resume, distributed Stage 3 training, answer
+generation and multi-question KV branching still need separate work/validation.
 """

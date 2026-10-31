@@ -3,8 +3,8 @@
 Both models reconstruct the exact Stage 1 -> Stage 2 checkpoint chain. The
 memory model remains frozen. The decision model merges the Stage 2 adapter into
 an independent backbone, then adds a new LoRA, three Stage 3 tokens and a BCE
-head. Data scheduling, the full training CLI and multi-question KV branching
-remain separate concerns; see ``stage3/README.md``.
+head. ``stage3.train`` supplies causal QA replay and a single-GPU training CLI;
+multi-question KV branching remains separate.
 """
 from __future__ import annotations
 
@@ -268,5 +268,4 @@ class DecisionModel(nn.Module):
         )
 
 
-# Still open: QA/time-aligned data loading, the live two-model training loop,
-# thresholded text generation, and multi-question shared-prefix KV branching.
+# Still open: thresholded text generation and multi-question shared-prefix KV branching.

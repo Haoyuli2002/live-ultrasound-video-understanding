@@ -16,12 +16,13 @@ export VIDEO_FPS=2.0
 export VIDEO_MAX_FRAMES=120
 export CLIP_FPS=2.0
 export CLIP_MAX_SIDE=1024
-export MAX_MODEL_LEN=32768
+export MAX_MODEL_LEN=${MAX_MODEL_LEN:-32768}
 export MAX_TOKENS=1024
 export MAX_ATTEMPTS=3
 export WALLTIME=${WALLTIME:-01:00:00}
 export VLLM_PORT=${VLLM_PORT:-auto}
 export CONDA_ENV=${CONDA_ENV:-ultrasound}
+export GPU_TYPE=${GPU_TYPE:-auto}
 cd "$REPO"
 mkdir -p logs
 for file in stage2/annotate.py stage2/build_data.py stage2/data.py stage2/summary_schema.py; do
@@ -103,7 +104,7 @@ PY
 ENV_FILE="$RUN_DIR/submit_env.sh"
 {
   printf '# Source this file before resubmitting the same run.\n'
-  for name in REPO DATA RUN_DIR VIDEO_IDS MODEL SPLIT VIDEO_MAP TEACHER_DIR AUDIT_DIR BLOCKS VIDEO_FPS VIDEO_MAX_FRAMES CLIP_FPS CLIP_MAX_SIDE MAX_MODEL_LEN MAX_TOKENS MAX_ATTEMPTS WALLTIME VLLM_PORT CONDA_ENV; do
+  for name in REPO DATA RUN_DIR VIDEO_IDS MODEL SPLIT VIDEO_MAP TEACHER_DIR AUDIT_DIR BLOCKS VIDEO_FPS VIDEO_MAX_FRAMES CLIP_FPS CLIP_MAX_SIDE MAX_MODEL_LEN MAX_TOKENS MAX_ATTEMPTS WALLTIME VLLM_PORT CONDA_ENV GPU_TYPE; do
     printf 'export %s=%q\n' "$name" "${!name}"
   done
 } > "$ENV_FILE"
@@ -112,7 +113,8 @@ if [[ ${1:-} == --dry-run ]]; then
   echo 'Dry run complete; no Slurm job submitted.'
   exit 0
 fi
-JOB_ID=$(sbatch --parsable --export=ALL --time="$WALLTIME" --job-name=stage2-8V649L5Q368 scripts/slurm/run_stage2_annotate_build.sbatch)
+GPU_PARTITIONS=$(python3 -m scripts.gpu_profiles "$GPU_TYPE")
+JOB_ID=$(sbatch --parsable --export=ALL --partition="$GPU_PARTITIONS" --time="$WALLTIME" --job-name=stage2-8V649L5Q368 scripts/slurm/run_stage2_annotate_build.sbatch)
 JOB_ID=${JOB_ID%%;*}
 printf '%s\n' "$JOB_ID" > "$RUN_DIR/job_id.txt"
 printf 'Job: %s\nBlocks: %s\nResume config: %s\n' "$JOB_ID" "$BLOCKS" "$ENV_FILE"

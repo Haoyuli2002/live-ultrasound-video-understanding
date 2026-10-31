@@ -157,8 +157,8 @@ def build_arg_parser() -> argparse.ArgumentParser:
                              "checkpoint) after a CUDA out-of-memory error; empty to disable")
     parser.add_argument("--frame-size", type=int, default=224)
     parser.add_argument("--frame-sampling", choices=("uniform", "recent_sparse"),
-                        default="uniform")
-    parser.add_argument("--recent-seconds", type=float, default=120.0)
+                        default="recent_sparse")
+    parser.add_argument("--recent-seconds", type=float, default=15.0)
     parser.add_argument("--max-asr-chars", type=int, default=4000)
     parser.add_argument("--lora-rank", type=int, default=16)
     parser.add_argument("--dtype", choices=["bf16", "fp16", "fp32"], default="bf16")

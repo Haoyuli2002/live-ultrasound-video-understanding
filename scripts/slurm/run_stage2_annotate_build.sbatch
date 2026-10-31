@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=stage2-annotate
-#SBATCH --partition=lrz-hgx-h100-94x4
+#SBATCH --partition=lrz-hgx-h100-94x4,lrz-dgx-a100-80x8,lrz-hgx-a100-80x4
 #SBATCH --qos=gpu
 #SBATCH --gres=gpu:1
 #SBATCH --cpus-per-task=8
@@ -143,6 +143,11 @@ VLLM_EXTRA=()
 VLLM_HELP=$(vllm serve --help=all 2>&1)
 if [[ "$VLLM_HELP" == *"--trust-request-mm-kwargs"* ]]; then
   VLLM_EXTRA+=(--trust-request-mm-kwargs)
+fi
+# The Triton GDN path works on Ampere and Hopper without a Hopper-only JIT
+# prefill kernel. Keep decoder/vision attention architecture selection in vLLM.
+if [[ "$VLLM_HELP" == *"--gdn-prefill-backend"* ]]; then
+  VLLM_EXTRA+=(--gdn-prefill-backend triton)
 fi
 MM_KWARGS='{"do_sample_frames":false}'
 echo "[vllm] starting vLLM on port $VLLM_PORT"

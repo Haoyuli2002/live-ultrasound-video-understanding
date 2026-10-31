@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import torch
+from scripts.gpu_runtime import model_kwargs
 
 SHORT = "<SHORT_MEM>"
 LONG = "<LONG_MEM>"
@@ -25,7 +26,7 @@ class MemoryModel:
         self.processor = AutoProcessor.from_pretrained(model_name, trust_remote_code=True)
         tokenizer = self.processor.tokenizer
         base = AutoModelForImageTextToText.from_pretrained(
-            model_name, torch_dtype=dtype, trust_remote_code=True)
+            model_name, trust_remote_code=True, **model_kwargs(dtype))
         if base_adapter:
             require_same_base(base_adapter, "Stage 1 adapter")
             base = PeftModel.from_pretrained(base, base_adapter).merge_and_unload()

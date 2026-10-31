@@ -92,7 +92,8 @@ def main():
     memory.model.train()
     if hasattr(memory.model.config, "use_cache"):
         memory.model.config.use_cache = False
-    memory.model.gradient_checkpointing_enable()
+    memory.model.gradient_checkpointing_enable(
+        gradient_checkpointing_kwargs={"use_reentrant": False})
     optimizer = torch.optim.AdamW((p for p in memory.model.parameters() if p.requires_grad),
                                   lr=args.learning_rate)
     output = Path(args.output_dir)

@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=stage1-pretrain
-#SBATCH --partition=lrz-hgx-h100-94x4
+#SBATCH --partition=lrz-hgx-h100-94x4,lrz-dgx-a100-80x8,lrz-hgx-a100-80x4
 #SBATCH --qos=gpu
 #SBATCH --gres=gpu:1
 #SBATCH --cpus-per-task=8
@@ -22,7 +22,9 @@ MAX_STEPS=${MAX_STEPS:--1}
 EPOCHS=${EPOCHS:-3}
 FRAME_BUDGET=${FRAME_BUDGET:-120}
 FRAME_SIZE=${FRAME_SIZE:-224}
-FRAME_SAMPLING=${FRAME_SAMPLING:-uniform}
+FRAME_SAMPLING=${FRAME_SAMPLING:-recent_sparse}
+RECENT_SECONDS=${RECENT_SECONDS:-15}
+DTYPE=${DTYPE:-bf16}
 SAVE_STEPS=${SAVE_STEPS:-50}
 LOGGING_STEPS=${LOGGING_STEPS:-10}
 VALIDATION_FRACTION=${VALIDATION_FRACTION:-0.1}
@@ -108,6 +110,8 @@ echo "Stage 1 launch: ranks=$NPROC_PER_NODE; accumulation=$GRADIENT_ACCUMULATION
   --frame-budget "$FRAME_BUDGET" \
   --frame-size "$FRAME_SIZE" \
   --frame-sampling "$FRAME_SAMPLING" \
+  --recent-seconds "$RECENT_SECONDS" \
+  --dtype "$DTYPE" \
   --validation-fraction "$VALIDATION_FRACTION" \
   --dataloader-num-workers "$DATALOADER_NUM_WORKERS" \
   --gradient-accumulation-steps "$GRADIENT_ACCUMULATION_STEPS" \

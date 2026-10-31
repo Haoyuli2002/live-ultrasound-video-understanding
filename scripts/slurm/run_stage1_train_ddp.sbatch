@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=stage1-ddp
-#SBATCH --partition=lrz-hgx-h100-94x4
+#SBATCH --partition=lrz-hgx-h100-94x4,lrz-dgx-a100-80x8,lrz-hgx-a100-80x4
 #SBATCH --qos=gpu
 #SBATCH --nodes=1
 #SBATCH --ntasks=1

@@ -8,6 +8,7 @@ from pathlib import Path
 import re
 import subprocess
 import time
+from scripts.gpu_profiles import partitions
 
 from .annotate import (PROMPT_SHA256, annotation_config, resume_start,
                        save_events_atomic, source_digest)
@@ -189,7 +190,7 @@ def worker(run_dir: Path, index: int, repo: Path) -> int:
            'TEACHER_DIR':str(run_dir/'teacher'), 'AUDIT_DIR':str(run_dir/'audit'),
            'BLOCKS':str(output), 'MODEL':MODEL, 'VLLM_PORT':'auto',
            'VIDEO_FPS':'2.0', 'VIDEO_MAX_FRAMES':'120', 'CLIP_FPS':'2.0',
-           'CLIP_MAX_SIDE':'1024', 'MAX_MODEL_LEN':'32768', 'MAX_TOKENS':'1024',
+           'CLIP_MAX_SIDE':'1024', 'MAX_MODEL_LEN':os.environ.get('MAX_MODEL_LEN','32768'), 'MAX_TOKENS':'1024',
            'MAX_ATTEMPTS':'3', 'FRAME_SIZE':'224', 'CONTINUE_ON_ERROR':'1'}
     env.pop('VLLM_LOG', None)
     return subprocess.run(['bash',str(repo/'scripts/slurm/run_stage2_annotate_build.sbatch')],
@@ -229,10 +230,12 @@ def merge(run_dir: Path) -> dict:
     return report
 
 
-def submit(run_dir: Path, repo: Path, *, concurrency=4, walltime='24:00:00', dry_run=False) -> dict:
+def submit(run_dir: Path, repo: Path, *, concurrency=4, walltime='24:00:00', dry_run=False,
+           gpu_type='auto') -> dict:
     plan = load_manifest(run_dir)
     if concurrency < 1:
         raise ValueError('concurrency must be positive')
+    gpu_partitions=partitions(gpu_type)
     record_path = run_dir/'submissions.json'
     ledger = json.loads(record_path.read_text()) if record_path.exists() else {'attempts':[]}
     old_ids = [str(job) for attempt in ledger['attempts'] for job in attempt.get('jobs',[])]
@@ -247,7 +250,7 @@ def submit(run_dir: Path, repo: Path, *, concurrency=4, walltime='24:00:00', dry
     common = ['sbatch','--parsable','--export=ALL',f'--chdir={repo}']
     commands = []
     if plan['shards']:
-        commands.append(common+['--job-name=stage2-full',f'--time={walltime}',
+        commands.append(common+['--job-name=stage2-full',f'--time={walltime}',f'--partition={gpu_partitions}',
             f"--array=0-{len(plan['shards'])-1}%{concurrency}",
             f'--output={logs}/stage2_full_%A_%a.out',f'--error={logs}/stage2_full_%A_%a.err',
             str(repo/'scripts/slurm/run_stage2_full_array.sbatch')])
@@ -258,7 +261,8 @@ def submit(run_dir: Path, repo: Path, *, concurrency=4, walltime='24:00:00', dry
         f'--output={logs}/stage2_merge_%j.out',f'--error={logs}/stage2_merge_%j.err',
         str(repo/'scripts/slurm/run_stage2_full_merge.sbatch')]
     env = {**os.environ,'REPO':str(repo),'STAGE2_RUN_DIR':str(run_dir)}
-    attempt = {'walltime':walltime,'concurrency':concurrency,'submitted_at_unix':time.time(),'jobs':[]}
+    attempt = {'walltime':walltime,'concurrency':concurrency,'gpu_type':gpu_type,
+               'submitted_at_unix':time.time(),'jobs':[]}
     if dry_run:
         return {'dry_run':True,'commands':commands+[merge_cmd],
                 'merge_dependency':'afterany:<array_job>','pending_videos':plan['pending_videos']}
@@ -299,6 +303,7 @@ def main():
     submit_p.add_argument('--concurrency',type=int,default=4)
     submit_p.add_argument('--walltime',default='24:00:00')
     submit_p.add_argument('--dry-run',action='store_true')
+    submit_p.add_argument('--gpu-type',choices=('auto','a100','h100'),default='auto')
     for child in (prepare_p,worker_p,sub.choices['merge'],submit_p):
         child.add_argument('--run-dir',type=Path,required=True)
     for child in (worker_p,submit_p):
@@ -316,7 +321,7 @@ def main():
         print(json.dumps(merge(run),indent=2))
     else:
         print(json.dumps(submit(run,args.repo.resolve(),concurrency=args.concurrency,
-                               walltime=args.walltime,dry_run=args.dry_run),indent=2))
+                               walltime=args.walltime,dry_run=args.dry_run,gpu_type=args.gpu_type),indent=2))
 
 
 if __name__ == '__main__':

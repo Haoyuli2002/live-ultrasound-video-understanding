@@ -87,8 +87,14 @@ class VideoReader:
 
     def frame_ending_at(self, second: int):
         """Frame at the end of [second, second+1), never from a later interval."""
+        return self.frame_before(second+1)
+
+    def frame_before(self, end: float):
+        """Last frame strictly before a (possibly fractional) decision time."""
         from PIL import Image
-        frame_index = min(self.count - 1, int((second + 1) * self.fps - 1e-6))
+        if end <= 0 or end > self.count/self.fps+1e-6:
+            raise ValueError('Frame time is outside the video')
+        frame_index = min(self.count - 1, int(end * self.fps - 1e-6))
         if frame_index < 0:
             raise ValueError("Video has no frames")
         self.cap.set(self.cv2.CAP_PROP_POS_FRAMES, frame_index)

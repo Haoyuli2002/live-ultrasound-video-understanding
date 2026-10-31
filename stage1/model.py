@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import torch
+from scripts.gpu_runtime import model_kwargs
 
 SYSTEM = ("You are an ultrasound teaching assistant. Use the provided ultrasound "
           "frames and any available earlier narration to predict the next complete "
@@ -62,7 +63,7 @@ def load_model(model_name: str, dtype: torch.dtype, lora_rank: int = 16):
 
     processor = AutoProcessor.from_pretrained(model_name, trust_remote_code=True)
     model = AutoModelForImageTextToText.from_pretrained(
-        model_name, torch_dtype=dtype, trust_remote_code=True)
+        model_name, trust_remote_code=True, **model_kwargs(dtype))
     config = LoraConfig(r=lora_rank, lora_alpha=2*lora_rank, lora_dropout=0.05,
                         target_modules=["q_proj", "k_proj", "v_proj", "o_proj",
                                         "gate_proj", "up_proj", "down_proj"],

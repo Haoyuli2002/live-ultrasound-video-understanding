@@ -60,6 +60,11 @@ decision_model = DecisionModel(
 - 总损失由训练循环组合为
   `L = λ_decision·L_decision + λ_text·L_text`，第一版建议两个权重均为 1。
 
+## 单卡训练入口
+
+H100 / A100 80GB 的统一提交方式见 [GPU_TRAINING.md](../docs/GPU_TRAINING.md)。
+`python -m stage3.train` 读取现有 QA JSONL，冻结 memory 模型并优化决策模型的 BCE + NTP。
+
 ## 当前真实进展
 
 已经实现：
@@ -70,11 +75,12 @@ decision_model = DecisionModel(
 4. 与上图一致的 system → memory → question → decision 输入顺序。
 5. 单样本 BCE + NTP 前向、stop-gradient 检查及 WAIT/ANSWER 标签一致性检查。
 6. Stage 3 adapter、processor、BCE head 和来源配置的保存与恢复。
+7. QA JSONL 读取、决策时刻因果视频重放和单 GPU 双模型训练循环。
 
 尚未实现或验证：
 
-1. 从 QA JSONL 按 `query_time` / `answer_time` 调度视频流的数据加载器。
-2. 同时常驻冻结 memory 模型和 decision 模型的完整训练 CLI。
+1. Stage 3 优化器状态断点续训。
+2. Stage 3 DDP 多 GPU 训练。
 3. BCE 阈值决策后固定 `<WAIT>` / `<ANSWER>` 前缀的文本生成。
 4. 多问题共享前缀 KV cache、分支隔离及 cache 失效逻辑。
 5. Qwen3.5 双模型 GPU 端到端 smoke test。
@@ -82,8 +88,8 @@ decision_model = DecisionModel(
 本地 laptop 只执行语法、schema 和 CPU 单元测试。上述 GPU smoke test、真实
 Stage 1/2 adapter 加载以及显存评估必须在保存模型权重的 SSH 训练环境完成。
 
-因此当前 Stage 3 是“模型与单样本损失接口正确，但训练和在线推理流水线未完成”，
-不能描述成已经可训练或可部署。
+当前已提供单 GPU 训练 CLI 和 CPU 因果性/梯度回归测试；真实 Qwen GPU smoke、
+优化器状态恢复和在线部署验证仍未完成。
 
 ## 关于 memory 快照
 

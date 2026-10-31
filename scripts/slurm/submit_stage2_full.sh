@@ -21,6 +21,7 @@ export STAGE2_EVAL_MAP=${STAGE2_EVAL_MAP:-$DATA/cluster_data/splits/eval_full295
 export STAGE2_SHARDS=${STAGE2_SHARDS:-8}
 export STAGE2_CONCURRENCY=${STAGE2_CONCURRENCY:-4}
 export STAGE2_WALLTIME=${STAGE2_WALLTIME:-24:00:00}
+export GPU_TYPE=${GPU_TYPE:-auto}
 if [[ -z "${STAGE2_RUN_DIR:-}" ]]; then
   [[ "$RESUME" == 0 ]] || { echo 'Set STAGE2_RUN_DIR to resume' >&2; exit 2; }
   mkdir -p "$DATA/cluster_data/stage2/runs"
@@ -44,13 +45,13 @@ else
 fi
 {
   printf '# Use the original code snapshot and frozen manifest to resume.\n'
-  for name in REPO DATA STAGE2_RUN_DIR STAGE2_TRAIN_MAP STAGE2_EVAL_MAP STAGE2_SHARDS STAGE2_CONCURRENCY STAGE2_WALLTIME; do
+  for name in REPO DATA STAGE2_RUN_DIR STAGE2_TRAIN_MAP STAGE2_EVAL_MAP STAGE2_SHARDS STAGE2_CONCURRENCY STAGE2_WALLTIME GPU_TYPE; do
     printf 'export %s=%q\n' "$name" "${!name}"
   done
 } > "$STAGE2_RUN_DIR/submit_env.sh"
 SUBMIT_ARGS=()
 [[ "$DRY_RUN" == 0 ]] || SUBMIT_ARGS+=(--dry-run)
 python -m stage2.full_run submit --repo "$REPO" --run-dir "$STAGE2_RUN_DIR" \
-  --concurrency "$STAGE2_CONCURRENCY" --walltime "$STAGE2_WALLTIME" "${SUBMIT_ARGS[@]}"
+  --concurrency "$STAGE2_CONCURRENCY" --walltime "$STAGE2_WALLTIME" --gpu-type "$GPU_TYPE" "${SUBMIT_ARGS[@]}"
 echo "Run: $STAGE2_RUN_DIR"
 echo "Final data: $STAGE2_RUN_DIR/blocks.jsonl (published only after all videos pass)"
