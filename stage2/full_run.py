@@ -54,12 +54,12 @@ def records(path: Path) -> list[dict]:
     return [json.loads(line) for line in path.read_text().splitlines() if line.strip()]
 
 
-def checked_end(path: Path, entry: dict, model: str) -> int:
+def checked_end(path: Path, entry: dict, model: str, *, validate_text=True) -> int:
     if not path.exists():
         return 0
     return resume_start(records(path), video_id=entry['video_id'],
                         duration_sec=entry['duration_sec'], model=model,
-                        config=entry['annotation_config'])
+                        config=entry['annotation_config'], validate_text=validate_text)
 
 
 def load_manifest(run_dir: Path) -> dict:
@@ -151,6 +151,7 @@ def prepare(video_map: Path, eval_map: Path, run_dir: Path, *, video_root: Path,
 
 
 def worker(run_dir: Path, index: int, repo: Path) -> int:
+    keep_all = os.environ.get('STAGE2_KEEP_ALL') == '1'
     plan = load_manifest(run_dir)
     if not 0 <= index < len(plan['shards']):
         raise ValueError('Invalid shard index')
@@ -179,11 +180,14 @@ def worker(run_dir: Path, index: int, repo: Path) -> int:
                     print(f'[seed] {vid}: imported compatible labels through {end}s',flush=True)
             except (OSError,ValueError,TypeError,KeyError) as error:
                 print(f'[seed-warning] {vid}: skipped unavailable/incompatible seed: {error}',flush=True)
-        complete &= checked_end(path, entry, plan['model']) == entry['duration_sec']
+        collected = run_dir/'collected'/f'{vid}.jsonl'
+        if keep_all and collected.exists(): path = collected
+        complete &= checked_end(path, entry, plan['model'], validate_text=not keep_all) == entry['duration_sec']
         paths.append(path)
-    output = run_dir/'shards'/f'{index:03d}.blocks.jsonl'
+    suffix = 'unreviewed.blocks.jsonl' if keep_all else 'blocks.jsonl'
+    output = run_dir/'shards'/f'{index:03d}.{suffix}'
     if complete:
-        count = build_files(paths, output)
+        count = build_files(paths, output, validate_text=not keep_all)
         print(f'[shard {index}] all videos complete; rebuilt {count} rows without loading 27B')
         return 0
     env = {**os.environ, 'REPO':str(repo), 'VIDEO_MAP':str(shard_map), 'VIDEO_IDS':'',
@@ -191,8 +195,12 @@ def worker(run_dir: Path, index: int, repo: Path) -> int:
            'BLOCKS':str(output), 'MODEL':MODEL, 'VLLM_PORT':'auto',
            'VIDEO_FPS':'2.0', 'VIDEO_MAX_FRAMES':'120', 'CLIP_FPS':'2.0',
            'CLIP_MAX_SIDE':'1024', 'MAX_MODEL_LEN':os.environ.get('MAX_MODEL_LEN','32768'), 'MAX_TOKENS':'1024',
-           'MAX_ATTEMPTS':'3', 'FRAME_SIZE':'224', 'CONTINUE_ON_ERROR':'1'}
+           'MAX_ATTEMPTS':'3', 'FRAME_SIZE':'224', 'CONTINUE_ON_ERROR':'1',
+           'STAGE2_KEEP_ALL':'1' if keep_all else '0'}
     env.pop('VLLM_LOG', None)
+    if keep_all:
+        env.update(TEACHER_DIR=str(run_dir/'collected'), SEED_TEACHER_DIR=str(run_dir/'teacher'),
+                   RAW_DIR=str(run_dir/'raw'), STAGE2_KEEP_ALL='1')
     return subprocess.run(['bash',str(repo/'scripts/slurm/run_stage2_annotate_build.sbatch')],
                           env=env,cwd=repo).returncode
 
@@ -231,27 +239,48 @@ def merge(run_dir: Path) -> dict:
 
 
 def submit(run_dir: Path, repo: Path, *, concurrency=4, walltime='24:00:00', dry_run=False,
-           gpu_type='auto') -> dict:
+           gpu_type='auto', retry_shards=None, keep_all=False) -> dict:
     plan = load_manifest(run_dir)
     if concurrency < 1:
         raise ValueError('concurrency must be positive')
     gpu_partitions=partitions(gpu_type)
+    if retry_shards is not None:
+        if not retry_shards or len(set(retry_shards)) != len(retry_shards) or any(
+                i < 0 or i >= len(plan['shards']) for i in retry_shards):
+            raise ValueError('Invalid or duplicate retry shard index')
     record_path = run_dir/'submissions.json'
     ledger = json.loads(record_path.read_text()) if record_path.exists() else {'attempts':[]}
     old_ids = [str(job) for attempt in ledger['attempts'] for job in attempt.get('jobs',[])]
     current = ''
+    other_active_ids = []
     if old_ids and not dry_run:
-        current = subprocess.check_output(['squeue','-h','-u',str(os.getuid()),'-o','%F %T'],text=True)
-        active = [line for line in current.splitlines() if line.split() and line.split()[0] in old_ids]
-        if active:
-            raise ValueError(f'A previous submission is still active; refusing duplicates: {active}')
+        if retry_shards is None:
+            current = subprocess.check_output(['squeue','-h','-u',str(os.getuid()),'-o','%F %T'],text=True)
+            active = [line for line in current.splitlines() if line.split() and line.split()[0] in old_ids]
+            if active:
+                raise ValueError(f'A previous submission is still active; refusing duplicates: {active}')
+        else:
+            current = subprocess.check_output(['squeue','-h','-r','-u',str(os.getuid()),'-o','%i %F %T'],text=True)
+            arrays = {str(a['array_job']) for a in ledger['attempts'] if a.get('array_job')}
+            for line in current.splitlines():
+                fields = line.split()
+                if len(fields) < 3: raise ValueError('Unexpected squeue output')
+                job, parent, _ = fields[:3]
+                if parent not in old_ids: continue
+                if parent in arrays:
+                    match = re.fullmatch(r'\d+_(\d+)', job)
+                    if match is None or int(match[1]) in retry_shards:
+                        raise ValueError(f'Requested shard is still active; refusing duplicates: {line}')
+                other_active_ids.append(parent)
+            other_active_ids = sorted(set(other_active_ids))
     logs = run_dir/'logs'
     logs.mkdir(exist_ok=True)
     common = ['sbatch','--parsable','--export=ALL',f'--chdir={repo}']
     commands = []
     if plan['shards']:
+        selector = f"0-{len(plan['shards'])-1}" if retry_shards is None else ','.join(map(str,sorted(retry_shards)))
         commands.append(common+['--job-name=stage2-full',f'--time={walltime}',f'--partition={gpu_partitions}',
-            f"--array=0-{len(plan['shards'])-1}%{concurrency}",
+            f"--array={selector}%{concurrency}",
             f'--output={logs}/stage2_full_%A_%a.out',f'--error={logs}/stage2_full_%A_%a.err',
             str(repo/'scripts/slurm/run_stage2_full_array.sbatch')])
         seed_active = plan.get('seed_dependency') in {line.split()[0] for line in current.splitlines() if line.split()}
@@ -260,12 +289,15 @@ def submit(run_dir: Path, repo: Path, *, concurrency=4, walltime='24:00:00', dry
     merge_cmd = common+['--job-name=stage2-merge',
         f'--output={logs}/stage2_merge_%j.out',f'--error={logs}/stage2_merge_%j.err',
         str(repo/'scripts/slurm/run_stage2_full_merge.sbatch')]
-    env = {**os.environ,'REPO':str(repo),'STAGE2_RUN_DIR':str(run_dir)}
+    env = {**os.environ,'REPO':str(repo),'STAGE2_RUN_DIR':str(run_dir),
+           'STAGE2_KEEP_ALL':'1' if keep_all else '0'}
     attempt = {'walltime':walltime,'concurrency':concurrency,'gpu_type':gpu_type,
-               'submitted_at_unix':time.time(),'jobs':[]}
+               'submitted_at_unix':time.time(),'jobs':[], 'retry_shards':retry_shards,
+               'keep_all':keep_all, 'wait_for_previous_jobs':other_active_ids}
     if dry_run:
         return {'dry_run':True,'commands':commands+[merge_cmd],
-                'merge_dependency':'afterany:<array_job>','pending_videos':plan['pending_videos']}
+                'merge_dependency':'afterany:<array_job>', 'keep_all':keep_all,
+                'retry_shards':retry_shards, 'pending_videos':plan['pending_videos']}
     ledger['attempts'].append(attempt)
     write_json(record_path, ledger)
     for command in commands:
@@ -276,7 +308,8 @@ def submit(run_dir: Path, repo: Path, *, concurrency=4, walltime='24:00:00', dry
         attempt['array_job'] = job
         write_json(record_path, ledger)
     if attempt.get('array_job'):
-        merge_cmd.insert(1, f"--dependency=afterany:{attempt['array_job']}")
+        dependencies = ':'.join([attempt['array_job'], *other_active_ids])
+        merge_cmd.insert(1, f"--dependency=afterany:{dependencies}")
     job = subprocess.check_output(merge_cmd,env=env,text=True).strip().split(';')[0]
     if not job.isdigit():
         raise ValueError('Unrecognized merge job ID')
@@ -304,6 +337,8 @@ def main():
     submit_p.add_argument('--walltime',default='24:00:00')
     submit_p.add_argument('--dry-run',action='store_true')
     submit_p.add_argument('--gpu-type',choices=('auto','a100','h100'),default='auto')
+    submit_p.add_argument('--retry-shards', type=int, nargs='+', help='Only these inactive shard indices; other shards may continue')
+    submit_p.add_argument('--keep-all', action='store_true', help='Save first, then report quality without filtering')
     for child in (prepare_p,worker_p,sub.choices['merge'],submit_p):
         child.add_argument('--run-dir',type=Path,required=True)
     for child in (worker_p,submit_p):
@@ -321,7 +356,8 @@ def main():
         print(json.dumps(merge(run),indent=2))
     else:
         print(json.dumps(submit(run,args.repo.resolve(),concurrency=args.concurrency,
-                               walltime=args.walltime,dry_run=args.dry_run,gpu_type=args.gpu_type),indent=2))
+                               walltime=args.walltime,dry_run=args.dry_run,gpu_type=args.gpu_type,
+                               retry_shards=args.retry_shards, keep_all=args.keep_all),indent=2))
 
 
 if __name__ == '__main__':

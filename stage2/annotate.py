@@ -17,6 +17,7 @@ from pathlib import Path
 
 from .data import VideoReader
 from .sampling import POLICY as SAMPLING_POLICY, sampling_plan, validate_clip
+from .raw_collection import COLLECTION_POLICY, WindowStore, atomic_json, quality_report
 from .summary_schema import (PROSE_SCHEMA_VERSION as SCHEMA_VERSION,
                              SUMMARY_PLANS, validate_prose)
 
@@ -120,16 +121,28 @@ def make_silent_clip(video_path: Path, start: int, end: int, output: Path, *,
 def summarize_window(video_path: Path, teacher, *, kind: str,
                      start: int, end: int, clip_path: Path,
                      max_attempts: int = 3, clip_max_side: int = 0,
-                     clip_fps: float = 0.0, clip_max_frames: int = 0) -> tuple[str, dict[str, str]]:
+                     clip_fps: float = 0.0, clip_max_frames: int = 0,
+                     raw_store: WindowStore | None = None) -> tuple[str, dict[str, str]]:
+    plan = SUMMARY_PLANS[kind]
+    prompt = WINDOW_PROMPT.format(start=start, end=end, **plan)
+    if raw_store is not None:
+        cached = raw_store.get(kind, start, end, prompt)
+        if cached is not None:
+            print(f"[raw-cache] {kind} [{start},{end})", flush=True)
+            return cached['raw_text'], {}
     clip_options = {"max_side": clip_max_side, "fps": clip_fps} if clip_max_side or clip_fps else {}
     if clip_max_frames:
         clip_options['max_frames'] = clip_max_frames
     make_silent_clip(video_path, start, end, clip_path, **clip_options)
     print(f"[teacher] {kind} [{start},{end})", flush=True)
+    if raw_store is not None:
+        # Persist the exact returned text before validation, stripping or retries.
+        summary = teacher.summary(prompt, clip_path)
+        raw_store.put(kind, start, end, prompt, summary, getattr(teacher, 'last_response_metadata', {}))
+        print(f"[raw-saved] {kind} [{start},{end}); quality checking deferred", flush=True)
+        return summary, {}
     if max_attempts < 1:
         raise ValueError("max_attempts must be at least one")
-    plan = SUMMARY_PLANS[kind]
-    prompt = WINDOW_PROMPT.format(start=start, end=end, **plan)
     last_error = None
     previous = ""
     for attempt in range(1, max_attempts + 1):
@@ -159,7 +172,8 @@ def summarize_window(video_path: Path, teacher, *, kind: str,
 def annotate_video(video_path: Path, teacher, *, video_id: str,
                    duration_sec: int, start_block: int = 0,
                    clip_dir: Path | None = None, max_attempts: int = 3,
-                   clip_max_side: int = 0, clip_fps: float = 0.0, clip_max_frames: int = 0):
+                   clip_max_side: int = 0, clip_fps: float = 0.0, clip_max_frames: int = 0,
+                   raw_store: WindowStore | None = None):
     """Yield one atomic event batch per block (eight records per full minute)."""
     for block_start in range(start_block, duration_sec, 60):
         block_end = min(block_start+60, duration_sec)
@@ -173,7 +187,7 @@ def annotate_video(video_path: Path, teacher, *, video_id: str,
                                         clip_path=temporary_path / f"{name}.mp4",
                                         max_attempts=max_attempts,
                                         clip_max_side=clip_max_side, clip_fps=clip_fps,
-                                        clip_max_frames=clip_max_frames)
+                                        clip_max_frames=clip_max_frames, raw_store=raw_store)
             for start in range(block_start, block_end-9, 10):
                 end = start+10
                 target, facets = label("local", start, end, f"local_{start}_{end}")
@@ -213,7 +227,7 @@ class ChatTeacher:
     def __init__(self, model: str, *, api_key: str, base_url: str | None,
                  max_tokens: int, transport: str = "auto", video_fps: float = 0.0,
                  video_max_frames: int = 0, disable_thinking: bool = False,
-                 served_model_name: str | None = None):
+                 served_model_name: str | None = None, keep_all: bool = False):
         from openai import OpenAI
         self.client = OpenAI(api_key=api_key, base_url=base_url) if base_url else OpenAI(api_key=api_key)
         self.model = model
@@ -223,6 +237,7 @@ class ChatTeacher:
         self.video_fps = video_fps
         self.video_max_frames = video_max_frames
         self.disable_thinking = disable_thinking
+        self.keep_all = keep_all
 
     def summary(self, prompt: str, video_path: Path) -> str:
         if self.transport == "file":
@@ -252,13 +267,17 @@ class ChatTeacher:
             request["extra_body"] = extra
         response = self.client.chat.completions.create(**request)
         choice = response.choices[0]
-        if getattr(choice, "finish_reason", None) == "length":
+        self.last_response_metadata = {'finish_reason':getattr(choice, 'finish_reason', None),
+                                      'refusal':getattr(choice.message, 'refusal', None),
+                                      'response_id':getattr(response, 'id', None),
+                                      'content_was_null':choice.message.content is None}
+        if getattr(choice, "finish_reason", None) == "length" and not getattr(self, 'keep_all', False):
             raise RuntimeError("Teacher output truncated; increase --max-tokens or disable thinking")
         return choice.message.content or ""
 
 
 def resume_start(records: list[dict], *, video_id: str, duration_sec: int,
-                 model: str, config: dict) -> int:
+                 model: str, config: dict, validate_text: bool = True) -> int:
     """Resume only validated contiguous blocks, including an already-complete tail."""
     from .build_data import build_rows
     if not records:
@@ -266,7 +285,7 @@ def resume_start(records: list[dict], *, video_id: str, duration_sec: int,
     if any(row.get("video_id") != video_id or row.get("teacher") != model
            or row.get("annotation_config") != config for row in records):
         raise ValueError("Saved labels have a different video, teacher, or annotation config")
-    blocks = sorted(build_rows(records), key=lambda row: row["block_window"][0])
+    blocks = sorted(build_rows(records, validate_text=validate_text), key=lambda row: row["block_window"][0])
     for index, row in enumerate(blocks):
         start = 60 * index
         end = min(start + 60, duration_sec)
@@ -314,7 +333,18 @@ def main():
     parser.add_argument("--resume", action="store_true",
                         help="Append after the last complete saved block")
     parser.add_argument("--overwrite", action="store_true")
+    output_policy = parser.add_mutually_exclusive_group()
+    output_policy.add_argument("--keep-all", dest='keep_all', action="store_true", default=True,
+                               help="Default: save exact responses without format retries")
+    output_policy.add_argument("--strict-format", dest='keep_all', action='store_false',
+                               help="Legacy compatibility: retry/reject invalid formatting")
+    parser.add_argument("--raw-dir", type=Path, help="Durable per-window response cache")
+    parser.add_argument("--seed-output", type=Path, help="Read-only legacy complete-minute labels to reuse")
     args = parser.parse_args()
+    if args.keep_all and args.raw_dir is None:
+        args.raw_dir = Path(args.output).with_suffix('.raw')
+    if args.seed_output and args.overwrite:
+        parser.error('--seed-output cannot be combined with --overwrite')
     if args.clip_max_side < 0 or args.clip_max_side == 1 or args.clip_fps <= 0:
         parser.error("Invalid clip size, FPS, or frame cap")
     if args.video_max_frames < 4 or args.video_max_frames % 2:
@@ -339,23 +369,32 @@ def main():
         if args.resume and args.overwrite:
             raise ValueError("Choose --resume or --overwrite, not both")
         start_block = 0
+        records = []
         if output.exists() and args.resume:
             records = [json.loads(line) for line in output.read_text(encoding="utf-8").splitlines()
                        if line.strip()]
             start_block = resume_start(records, video_id=args.video_id,
                                        duration_sec=duration_sec, model=args.model,
-                                       config=config)
+                                       config=config, validate_text=not args.keep_all)
         elif output.exists() and not args.overwrite:
             raise FileExistsError(f"Output already exists: {output}; use --resume or --overwrite")
+        elif args.seed_output and args.seed_output.exists():
+            records = [json.loads(line) for line in args.seed_output.read_text().splitlines() if line.strip()]
+            start_block = resume_start(records, video_id=args.video_id, duration_sec=duration_sec,
+                                       model=args.model, config=config)
         if args.preflight_only:
             print(json.dumps({"video_id":args.video_id, "duration_sec":duration_sec,
                               "resume_from":start_block, "annotation_config":config}), flush=True)
             return
+        raw_store = WindowStore(args.raw_dir, {'video_id':args.video_id,'teacher':args.model,
+                                'annotation_config':config, 'system_sha256':hashlib.sha256(SYSTEM.encode()).hexdigest()}) if args.keep_all else None
+        if records and not output.exists():
+            save_events_atomic(output, records)
         teacher = ChatTeacher(args.model, api_key=api_key, base_url=args.base_url,
                               max_tokens=args.max_tokens, transport=transport,
                               video_fps=args.video_fps, video_max_frames=args.video_max_frames,
                               disable_thinking=args.disable_thinking,
-                              served_model_name=args.served_model_name)
+                              served_model_name=args.served_model_name, keep_all=args.keep_all)
         if args.transport_preflight and start_block < duration_sec:
             windows = [("local",0,10)]
             for end in sorted({min(420,duration_sec//60*60), duration_sec//60*60}):
@@ -364,30 +403,38 @@ def main():
                 for kind,start,end in windows:
                     target,_ = summarize_window(Path(args.video),teacher,kind=kind,start=start,end=end,
                         clip_path=Path(temporary)/f"{kind}_{end}.mp4",clip_max_side=args.clip_max_side,
-                        clip_fps=args.clip_fps,clip_max_frames=args.video_max_frames,max_attempts=args.max_attempts)
+                        clip_fps=args.clip_fps,clip_max_frames=args.video_max_frames,max_attempts=args.max_attempts,
+                        raw_store=raw_store)
                     print(f"[transport-preflight] OK {kind} [{start},{end}): {target}",flush=True)
         output.with_suffix(".prompt.txt").write_text(
             SYSTEM + "\n\n" + WINDOW_PROMPT + "\n\n"
             + json.dumps(SUMMARY_PLANS, indent=2) + "\n", encoding="utf-8")
         # Complete all eight teacher calls before writing a minute's records.
-        saved_records = records if output.exists() and args.resume else []
+        saved_records = records
         for events in annotate_video(Path(args.video), teacher, video_id=args.video_id,
                                      duration_sec=duration_sec,
                                      start_block=start_block, clip_dir=args.clip_dir,
                                      max_attempts=args.max_attempts,
                                      clip_max_side=args.clip_max_side,
-                                     clip_fps=args.clip_fps, clip_max_frames=args.video_max_frames):
+                                     clip_fps=args.clip_fps, clip_max_frames=args.video_max_frames,
+                                     raw_store=raw_store):
             for event in events:
                 event["teacher"] = args.model
                 event["annotation_config"] = config
+                if args.keep_all:
+                    event['collection_policy'] = COLLECTION_POLICY
+                    event['format_retries'] = 0
             save_events_atomic(output, saved_records+events)
             saved_records.extend(events)
             print(f"[saved] {args.video_id} block={events[0]['block_window']} "
                   f"labels={len(events)} -> {output}", flush=True)
+        if args.keep_all:
+            atomic_json(output.with_suffix('.quality.json'), quality_report(saved_records, args.raw_dir.parent))
         if args.audit_output:
             args.audit_output.parent.mkdir(parents=True, exist_ok=True)
             with args.audit_output.open("a", encoding="utf-8") as audit:
-                audit.write(json.dumps({"video_id": args.video_id, "status": "complete",
+                audit.write(json.dumps({"video_id": args.video_id,
+                                        "status": "generated_pending_review" if args.keep_all else "complete",
                                         "teacher": args.model,
                                         "schema_version": SCHEMA_VERSION}) + "\n")
     except Exception as exc:

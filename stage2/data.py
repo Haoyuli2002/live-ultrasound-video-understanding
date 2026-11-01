@@ -7,7 +7,8 @@ from pathlib import Path
 from .summary_schema import SCHEMA_VERSION, validate_target
 
 
-def load_blocks(path: str | Path) -> dict[str, list[dict]]:
+def load_blocks(path: str | Path, *, validate_text: bool = True) -> dict[str, list[dict]]:
+    """Validate training data; disabling text checks is for raw review only."""
     videos: dict[str, list[dict]] = {}
     for line_no, line in enumerate(Path(path).read_text(encoding="utf-8").splitlines(), 1):
         if not line.strip():
@@ -51,17 +52,19 @@ def load_blocks(path: str | Path) -> dict[str, list[dict]]:
                 a, b = map(float, label.get("window", []))
                 if abs(a - (start + 10 * j)) > 0.01 or abs(b - (start + 10 * (j + 1))) > 0.01:
                     raise ValueError(f"{video_id}: local window {j} is not chronological")
-                if not str(label.get("local_summary_target", "")).strip():
+                if "local_summary_target" not in label or (validate_text and not str(label["local_summary_target"]).strip()):
                     raise ValueError(f"{video_id}: missing local summary {j}")
                 try:
-                    validate_target(label["local_summary_target"], "local", schema)
+                    if validate_text:
+                        validate_target(label["local_summary_target"], "local", schema)
                 except ValueError as exc:
                     raise ValueError(
                         f"{video_id}: invalid local summary {j}: {exc}") from exc
-            if full and (not str(row.get("block_summary_target", "")).strip()
-                         or not str(row.get("global_summary_target", "")).strip()):
+            if full and (any(key not in row for key in ("block_summary_target", "global_summary_target"))
+                         or (validate_text and (not str(row["block_summary_target"]).strip()
+                                                or not str(row["global_summary_target"]).strip()))):
                 raise ValueError(f"{video_id}: full block needs independent block and global labels")
-            if full:
+            if full and validate_text:
                 try:
                     validate_target(row["block_summary_target"], "block", schema)
                     validate_target(row["global_summary_target"], "global", schema)

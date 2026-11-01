@@ -23,6 +23,7 @@ export WALLTIME=${WALLTIME:-01:00:00}
 export VLLM_PORT=${VLLM_PORT:-auto}
 export CONDA_ENV=${CONDA_ENV:-ultrasound}
 export GPU_TYPE=${GPU_TYPE:-auto}
+export STAGE2_KEEP_ALL=${STAGE2_KEEP_ALL:-1}
 cd "$REPO"
 mkdir -p logs
 for file in stage2/annotate.py stage2/build_data.py stage2/data.py stage2/summary_schema.py; do
@@ -71,6 +72,7 @@ export VIDEO_MAP="$RUN_DIR/video_paths.json"
 export TEACHER_DIR="$RUN_DIR/teacher"
 export AUDIT_DIR="$RUN_DIR/audit"
 export BLOCKS="$RUN_DIR/blocks.jsonl"
+if [[ "$STAGE2_KEEP_ALL" == 1 ]]; then export BLOCKS="$RUN_DIR/blocks.unreviewed.jsonl"; fi
 # Reject incompatible resume before overwriting metadata or requesting a GPU.
 python3 - "$TEACHER_DIR/$VIDEO_IDS.jsonl" <<'PY_RESUME'
 import json, sys
@@ -104,7 +106,7 @@ PY
 ENV_FILE="$RUN_DIR/submit_env.sh"
 {
   printf '# Source this file before resubmitting the same run.\n'
-  for name in REPO DATA RUN_DIR VIDEO_IDS MODEL SPLIT VIDEO_MAP TEACHER_DIR AUDIT_DIR BLOCKS VIDEO_FPS VIDEO_MAX_FRAMES CLIP_FPS CLIP_MAX_SIDE MAX_MODEL_LEN MAX_TOKENS MAX_ATTEMPTS WALLTIME VLLM_PORT CONDA_ENV GPU_TYPE; do
+  for name in REPO DATA RUN_DIR VIDEO_IDS MODEL SPLIT VIDEO_MAP TEACHER_DIR AUDIT_DIR BLOCKS VIDEO_FPS VIDEO_MAX_FRAMES CLIP_FPS CLIP_MAX_SIDE MAX_MODEL_LEN MAX_TOKENS MAX_ATTEMPTS WALLTIME VLLM_PORT CONDA_ENV GPU_TYPE STAGE2_KEEP_ALL; do
     printf 'export %s=%q\n' "$name" "${!name}"
   done
 } > "$ENV_FILE"

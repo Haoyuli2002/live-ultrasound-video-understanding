@@ -45,6 +45,11 @@ CLIP_MAX_SIDE=${CLIP_MAX_SIDE:-1024}
 FRAME_SIZE=${FRAME_SIZE:-224}
 MAX_TOKENS=${MAX_TOKENS:-1024}
 MAX_ATTEMPTS=${MAX_ATTEMPTS:-3}
+STAGE2_KEEP_ALL=${STAGE2_KEEP_ALL:-1}
+RAW_DIR=${RAW_DIR:-$(dirname "$TEACHER_DIR")/raw_responses}
+if [[ "$STAGE2_KEEP_ALL" == 1 && "$(basename "$BLOCKS")" != *unreviewed* ]]; then
+  BLOCKS="${BLOCKS%.jsonl}.unreviewed.jsonl"
+fi
 # Cold-loading a large checkpoint plus warmup can exceed 20 minutes.
 VLLM_READY_RETRIES=${VLLM_READY_RETRIES:-240}
 VLLM_READY_INTERVAL=${VLLM_READY_INTERVAL:-10}
@@ -127,13 +132,25 @@ PY_CHECK
 done
 
 # Check source identity, sampling policy and prompt fingerprint before loading 27B.
+collection_args() {
+  COLLECTION_ARGS=()
+  if [[ "$STAGE2_KEEP_ALL" == 1 ]]; then
+    COLLECTION_ARGS+=(--keep-all --raw-dir "$RAW_DIR/$1")
+    if [[ -n "${SEED_TEACHER_DIR:-}" ]]; then
+      COLLECTION_ARGS+=(--seed-output "$SEED_TEACHER_DIR/$1.jsonl")
+    fi
+  else
+    COLLECTION_ARGS+=(--strict-format)
+  fi
+}
 for vid in $IDS; do
+  collection_args "$vid"
   video=$(python -c 'import json,sys; print(json.load(open(sys.argv[1]))[sys.argv[2]])' "$VIDEO_MAP" "$vid")
   python -m stage2.annotate --preflight-only --video "$video" --video-id="$vid" \
     --output "$TEACHER_DIR/$vid.jsonl" --model "$MODEL" --transport video_url \
     --video-fps "$VIDEO_FPS" --video-max-frames "$VIDEO_MAX_FRAMES" \
     --clip-fps "$CLIP_FPS" --clip-max-side "$CLIP_MAX_SIDE" --disable-thinking \
-    --max-tokens "$MAX_TOKENS" --resume
+    --max-tokens "$MAX_TOKENS" --resume "${COLLECTION_ARGS[@]}"
 done
 
 VLLM_LOG=${VLLM_LOG:-$REPO/logs/stage2_vllm_${SLURM_JOB_ID:-$$}.log}
@@ -211,6 +228,9 @@ PY
     exit 1
   fi
   out="$TEACHER_DIR/${vid}.jsonl"
+  collection_args "$vid"
+  TRANSPORT_ARGS=(--transport-preflight)
+  [[ "$STAGE2_KEEP_ALL" != 1 ]] || TRANSPORT_ARGS=()
   echo "[annotate] $vid -> $out  (video=$video)"
   if python -m stage2.annotate \
     --video "$video" \
@@ -218,7 +238,7 @@ PY
     --output "$out" \
     --model "$MODEL" \
     --served-model-name "$STAGE2_SERVED_MODEL" \
-    --transport-preflight \
+    "${TRANSPORT_ARGS[@]}" \
     --base-url "http://127.0.0.1:${VLLM_PORT}/v1" \
     --api-key-env VLLM_API_KEY \
     --transport video_url \
@@ -232,7 +252,7 @@ PY
     --max-attempts "$MAX_ATTEMPTS" \
     --audit-output "$AUDIT_DIR/${vid}.jsonl" \
     --clip-dir "$CLIP_DIR" \
-    --resume; then
+    --resume "${COLLECTION_ARGS[@]}"; then
     TEACHER_FILES+=("$out")
   else
     FAILED_IDS+=("$vid")
@@ -248,15 +268,17 @@ if [[ ${#FAILED_IDS[@]} -gt 0 ]]; then
 fi
 
 echo "[build] merging teacher labels into chronological blocks"
+BUILD_ARGS=()
+[[ "$STAGE2_KEEP_ALL" != 1 ]] || BUILD_ARGS+=(--keep-all)
 python -m stage2.build_data \
   --teacher-jsonl "${TEACHER_FILES[@]}" \
-  --output "$BLOCKS"
+  --output "$BLOCKS" "${BUILD_ARGS[@]}"
 
 echo "[verify] reloading blocks with strict chronology validation"
-python - "$BLOCKS" <<'PY'
+python - "$BLOCKS" "$STAGE2_KEEP_ALL" <<'PY'
 import sys
 from stage2.data import load_blocks
-videos = load_blocks(sys.argv[1])
+videos = load_blocks(sys.argv[1], validate_text=sys.argv[2] != '1')
 total = sum(len(v) for v in videos.values())
 print(f"[verify] OK: {len(videos)} videos, {total} blocks in {sys.argv[1]}")
 for vid, blocks in list(videos.items())[:3]:

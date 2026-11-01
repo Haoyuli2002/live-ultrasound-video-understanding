@@ -11,4 +11,8 @@ cd "${REPO:?Set REPO to the frozen code snapshot}"
 source "${CONDA_SH:-$HOME/miniconda3/etc/profile.d/conda.sh}"
 conda activate "${CONDA_ENV:-ultrasound}"
 export PYTHONUNBUFFERED=1
-python -m stage2.full_run merge --run-dir "${STAGE2_RUN_DIR:?Set STAGE2_RUN_DIR}"
+if [[ "${STAGE2_KEEP_ALL:-0}" == 1 ]]; then
+  python -m stage2.raw_collection --run-dir "${STAGE2_RUN_DIR:?Set STAGE2_RUN_DIR}"
+else
+  python -m stage2.full_run merge --run-dir "${STAGE2_RUN_DIR:?Set STAGE2_RUN_DIR}"
+fi

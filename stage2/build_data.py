@@ -37,7 +37,11 @@ def _target(value, context: str) -> str:
 
 
 def _validated_target(value, kind: str, context: str,
-                       supplied_facets=None, schema=None) -> tuple[str, dict[str, str]]:
+                       supplied_facets=None, schema=None, validate_text=True) -> tuple[str, dict[str, str]]:
+    if not validate_text:
+        if not isinstance(value, str):
+            raise ValueError(f"{context}: raw teacher text must be a string")
+        return value, {}
     target = _target(value, context)
     try:
         facets = validate_target(target, kind, schema)
@@ -55,7 +59,7 @@ def _validate_optional_window(row: dict, key: str, expected: list[float], contex
             raise ValueError(f"{context}: {key}={observed} must equal {expected}")
 
 
-def _normalize_block(row: dict, source: str) -> dict:
+def _normalize_block(row: dict, source: str, *, validate_text=True) -> dict:
     if row.get("schema_version") not in (None, *SUPPORTED_SCHEMAS):
         raise ValueError(
             f"{source}: unsupported schema_version={row.get('schema_version')!r}")
@@ -81,7 +85,7 @@ def _normalize_block(row: dict, source: str) -> dict:
         context = f"{source}/local[{index}]"
         target, facets = _validated_target(
             label.get("local_summary_target"), "local", context,
-            label.get("facets"), schema)
+            label.get("facets"), schema, validate_text)
         normalized.append({
             "window": _window(label.get("window"), context),
             "local_summary_target": target,
@@ -93,10 +97,10 @@ def _normalize_block(row: dict, source: str) -> dict:
     if full:
         block_target, block_facets = _validated_target(
             row.get("block_summary_target"), "block", source + "/block",
-            row.get("block_summary_facets"), schema)
+            row.get("block_summary_facets"), schema, validate_text)
         global_target, global_facets = _validated_target(
             row.get("global_summary_target"), "global", source + "/global",
-            row.get("global_summary_facets"), schema)
+            row.get("global_summary_facets"), schema, validate_text)
         result.update({"block_summary_target": block_target,
                        "block_summary_facets": block_facets,
                        "global_summary_target": global_target,
@@ -127,7 +131,7 @@ def _event_type(row: dict) -> str | None:
     return aliases.get(value)
 
 
-def build_rows(records: list[dict]) -> list[dict]:
+def build_rows(records: list[dict], *, validate_text=True) -> list[dict]:
     if not records:
         raise ValueError("No teacher labels supplied")
     if len({row.get("schema_version") or SCHEMA_VERSION for row in records}) != 1:
@@ -138,7 +142,7 @@ def build_rows(records: list[dict]) -> list[dict]:
     if any(block_rows) and not all(block_rows):
         raise ValueError("Do not mix block and event teacher-label schemas")
     if all(block_rows):
-        return [_normalize_block(row, f"record {index+1}")
+        return [_normalize_block(row, f"record {index+1}", validate_text=validate_text)
                 for index, row in enumerate(records)]
 
     groups: dict[tuple[str, float, float], dict] = {}
@@ -172,7 +176,7 @@ def build_rows(records: list[dict]) -> list[dict]:
                         "global_prefix": "global"}[kind]
         target, facets = _validated_target(
             row.get("target"), summary_kind, context, row.get("facets"),
-            row.get("schema_version"))
+            row.get("schema_version"), validate_text)
         label_window = _window(row.get("window"), context)
         if kind == "local_10s":
             group["local_sub_summaries"].append({"window": label_window,
@@ -195,11 +199,12 @@ def build_rows(records: list[dict]) -> list[dict]:
     result = []
     for group in groups.values():
         group["local_sub_summaries"].sort(key=lambda item: item["window"][0])
-        result.append(_normalize_block(group, str(group["video_id"])))
+        result.append(_normalize_block(group, str(group["video_id"]), validate_text=validate_text))
     return result
 
 
-def build_files(inputs: list[str | Path], output: str | Path) -> int:
+def build_files(inputs: list[str | Path], output: str | Path, *, validate_text=True) -> int:
+    """Build chronological blocks; validate_text=False preserves raw review text."""
     records = []
     for path in inputs:
         with Path(path).open(encoding="utf-8") as stream:
@@ -209,7 +214,7 @@ def build_files(inputs: list[str | Path], output: str | Path) -> int:
                         records.append(json.loads(line))
                     except json.JSONDecodeError as exc:
                         raise ValueError(f"{path}:{line_no}: invalid JSON") from exc
-    rows = build_rows(records)
+    rows = build_rows(records, validate_text=validate_text)
     output = Path(output)
     output.parent.mkdir(parents=True, exist_ok=True)
     temporary = output.with_name(output.name + ".tmp")
@@ -217,7 +222,7 @@ def build_files(inputs: list[str | Path], output: str | Path) -> int:
         with temporary.open("w", encoding="utf-8") as stream:
             for row in sorted(rows, key=lambda item: (item["video_id"], item["block_window"][0])):
                 stream.write(json.dumps(row, ensure_ascii=False) + "\n")
-        load_blocks(temporary)  # Full chronology and 10-second label validation.
+        load_blocks(temporary, validate_text=validate_text)  # Full chronology and 10-second label validation.
         os.replace(temporary, output)
     finally:
         temporary.unlink(missing_ok=True)
@@ -229,8 +234,11 @@ def main():
     parser.add_argument("--teacher-jsonl", nargs="+", required=True,
                         help="One or more visual-only teacher-label JSONL files")
     parser.add_argument("--output", required=True)
+    parser.add_argument("--keep-all", action="store_true", help="Retain raw text, including empty/invalid summaries, for review only")
     args = parser.parse_args()
-    count = build_files(args.teacher_jsonl, args.output)
+    if args.keep_all and "unreviewed" not in Path(args.output).name:
+        parser.error("--keep-all output must be named unreviewed; it is not an approved training dataset")
+    count = build_files(args.teacher_jsonl, args.output, validate_text=not args.keep_all)
     print(f"[stage2] wrote {count} chronological blocks to {args.output}")
 
 
