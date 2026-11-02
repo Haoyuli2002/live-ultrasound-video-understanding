@@ -1,0 +1,23 @@
+{
+  "method": "assistant_visual_review",
+  "prompt_sha256": "bb4c9b3196871b8750b59c774be8d3e27ed9850b9baa1dbba4ceaa41070a688e",
+  "audio_used": false,
+  "asr_read_for_this_generation": false,
+  "pretrain_read_for_this_generation": false,
+  "prior_conversation_exposure": "Two Stage 1 reference sentences and their history were visible earlier in this conversation; this is not a blinded annotation.",
+  "evidence_policy": "All targets grounded in inspected video frames and visible overlays; no transcript-derived claims.",
+  "sampling_fps": 2,
+  "reviewed_frames": 245,
+  "duration_sec": 122.634,
+  "frame_times": "nominal ffmpeg fps=2 sampling grid",
+  "status": "draft_visual_annotation_not_clinically_validated",
+  "training_window": [
+    0,
+    120
+  ],
+  "unlabelled_tail": [
+    120,
+    122.634
+  ],
+  "tail_review": "The labelled apical five-chamber image continues; no additional full 10-second window."
+}
