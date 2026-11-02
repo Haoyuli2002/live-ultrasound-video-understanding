@@ -9,10 +9,10 @@ export CONDA_ENV=${CONDA_ENV:-ultrasound}
 source "$CONDA_SH"
 conda activate "$CONDA_ENV"
 cd "$REPO"
-export STAGE1_ADAPTER=${STAGE1_ADAPTER:-$DATA/cluster_data/experiments/stage1/stage1_full186_2b_4gpu_f30_e1_20261025_052451/final}
-[[ -f "$STAGE1_ADAPTER/adapter_config.json" ]] || {
-  echo 'Set STAGE1_ADAPTER to an existing completed Stage 1 adapter directory.' >&2; exit 2;
-}
+# This experiment starts from the official checkpoint, even if the caller has
+# an old Stage 1 adapter exported from another experiment.
+unset STAGE1_ADAPTER STAGE2_ADAPTER
+export INITIALIZATION=official_checkpoint
 export GPU_TYPE=${GPU_TYPE:-auto}
 export MODEL_NAME=Qwen/Qwen3.5-2B
 export EPOCHS=${EPOCHS:-20}
@@ -54,8 +54,8 @@ for p in maps:
 video=next((p.resolve() for p in candidates if p.is_file()),None)
 if video is None: raise SystemExit('P3 video missing: set VIDEO_FILE to its absolute cluster path.')
 Path(os.environ['VIDEO_MAP']).write_text(json.dumps({vid:str(video)},indent=2))
-cfg={k:os.environ[k] for k in ['RUN_DIR','CODE_DIR','TRAIN_JSONL','VIDEO_MAP','OUTPUT_DIR','STAGE1_ADAPTER','MODEL_NAME','EPOCHS','LEARNING_RATE','FRAME_SIZE','GPU_TYPE','WALLTIME']}
-cfg.update(video_id=vid,window=[0,120],blocks=2,updates_per_epoch=12,expected_updates=12*int(cfg['EPOCHS']),label_status='draft_debug_only',gpu_count=1,samples_sha256=hashlib.sha256(Path(cfg['TRAIN_JSONL']).read_bytes()).hexdigest())
+cfg={k:os.environ[k] for k in ['RUN_DIR','CODE_DIR','TRAIN_JSONL','VIDEO_MAP','OUTPUT_DIR','INITIALIZATION','MODEL_NAME','EPOCHS','LEARNING_RATE','FRAME_SIZE','GPU_TYPE','WALLTIME']}
+cfg.update(init_adapter=None,video_id=vid,window=[0,120],blocks=2,updates_per_epoch=12,expected_updates=12*int(cfg['EPOCHS']),label_status='draft_debug_only',gpu_count=1,samples_sha256=hashlib.sha256(Path(cfg['TRAIN_JSONL']).read_bytes()).hexdigest())
 Path(os.environ['RUN_DIR'],'submission.json').write_text(json.dumps(cfg,indent=2))
 print(json.dumps(cfg,indent=2))
 PY

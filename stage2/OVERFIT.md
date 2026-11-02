@@ -13,11 +13,15 @@ GPU_TYPE=auto EPOCHS=20 WALLTIME=04:00:00 \
   bash scripts/slurm/submit_stage2_overfit.sh
 ```
 
-The default Stage 1 initialization is the completed older run at
-`$DATA/cluster_data/experiments/stage1/stage1_full186_2b_4gpu_f30_e1_20261025_052451/final`.
-Override `STAGE1_ADAPTER` to select another completed adapter. An unfinished
-Stage 1 output cannot initialize this training. `DATA` defaults to the project
-scratch directory under `/dss/mcmlscratch/04/ge75vid2/haoyu/`.
+This experiment initializes directly from the official `Qwen/Qwen3.5-2B`
+checkpoint and trains fresh Stage 2 LoRA weights and memory-token embeddings.
+It does not merge a Stage 1 adapter. The scripts clear inherited
+`STAGE1_ADAPTER`/`STAGE2_ADAPTER` variables so a previous shell configuration
+cannot change this initialization. Both reconstruction evaluations reload the
+official checkpoint plus the newly trained Stage 2 adapter. The submission
+and overfit reports explicitly record `init_adapter: null`.
+`DATA` defaults to the project scratch directory under
+`/dss/mcmlscratch/04/ge75vid2/haoyu/`.
 
 The script checks the single-video labels and resolves the video using the
 standard train-full295 location or existing video maps. Set `VIDEO_FILE` to an
