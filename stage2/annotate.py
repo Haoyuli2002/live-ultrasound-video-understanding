@@ -38,6 +38,14 @@ and ultrasound image.
 Do not guess the narration or use audio, ASR or information outside the interval.
 Do not infer diagnoses, normality or absence of disease from ambiguous images.
 No observed motion in sparse frames does not imply absence of motion.
+A whole-video overview is for classification only, never evidence for this
+window. Do not copy prior/next summaries into this interval. Recheck every
+repeated state independently. Mention a label, number, contact or movement only
+when it is visible inside this half-open interval. Do not move later labels or
+actions into earlier windows. Attribute diagrams and teaching captions rather
+than presenting them as verified patient findings. Do not infer normal function,
+adequate anesthetic spread, procedural success, or vessel patency from these
+images. For uncertain motion, inspect a denser sequence or omit the claim.
 
 One sentence is enough when sufficient. Do not pad to fill a word budget or
 invent changes. If the entire interval contains no information meeting these

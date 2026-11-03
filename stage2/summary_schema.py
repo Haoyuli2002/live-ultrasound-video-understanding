@@ -24,7 +24,7 @@ SUMMARY_PLANS = {
         "facets": ["View", "Anatomy", "Probe", "Finding", "Dynamic"],
         "words": 40,
         "focus": ("Independently summarize relevant evidence in these ten seconds; "
-                  "do not judge whether it is new relative to a previous window."),
+                  "do not judge whether it is new relative to a previous window. Recheck every claim in current-window frames; do not import later labels or actions."),
     },
     "block": {
         "prompt_kind": "independent current 60-second block",
