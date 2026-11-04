@@ -24,17 +24,18 @@ def evaluate_video(memory: MemoryModel, blocks: list[dict], reader: VideoReader,
             short_states = []
             for j, label in enumerate(row["local_sub_summaries"]):
                 first_second = int(round(start)) + 10*j
-                states = [memory.encode_frame(reader.frame_ending_at(t))
-                          for t in range(first_second, first_second+10)]
-                short_states.extend(states)
-                current = torch.stack(states, dim=1)
+                images = [reader.frame_ending_at(t) for t in range(first_second,first_second+10)]
+                encoder = getattr(memory, "encode_short", None)
+                current = encoder(images) if encoder else torch.stack(
+                    [memory.encode_frame(image) for image in images],dim=1)
+                short_states.append(current)
                 if "short" in kinds:
                     loss = memory.reconstruction_loss(
                         current, label["local_summary_target"], "short")
                     rows.append({"kind": "short", "end_sec": first_second+10,
                                  "loss": float(loss)})
             if abs(end-start-60) <= 0.01:
-                all_short = torch.stack(short_states, dim=1)
+                all_short = torch.cat(short_states, dim=1)
                 if "block" in kinds:
                     loss = memory.reconstruction_loss(all_short,
                                                       row["block_summary_target"], "block")
@@ -60,16 +61,32 @@ def main():
     parser.add_argument("--kinds", nargs="+", choices=["short", "block", "global"],
                         default=["short", "block", "global"])
     parser.add_argument("--output", required=True)
+    parser.add_argument("--release-manifest")
+    parser.add_argument("--limit-videos",type=int,default=0)
     args = parser.parse_args()
     if not torch.cuda.is_available():
         raise RuntimeError("Stage 2 Qwen3.5 evaluation requires CUDA")
     config_path = Path(args.adapter_path).parent / "training_config.json"
     config = json.loads(config_path.read_text(encoding="utf-8")) if config_path.exists() else {}
     base_adapter = args.base_adapter or config.get("init_adapter")
-    memory = MemoryModel(args.model_name, base_adapter=base_adapter,
-                         adapter_path=args.adapter_path)
-    memory.model.to("cuda").eval()
-    videos = load_blocks(args.eval_jsonl)
+    if (Path(args.adapter_path)/"qformer_config.json").is_file():
+        from .qformer import load_memory_model
+        memory = load_memory_model(args.model_name,base_adapter=base_adapter,
+                                   adapter_path=args.adapter_path).to("cuda").eval()
+    else:
+        memory = MemoryModel(args.model_name, base_adapter=base_adapter,
+                             adapter_path=args.adapter_path)
+        memory.model.to("cuda").eval()
+    if args.release_manifest:
+        from .release import validate_release
+        from .provenance import digest
+        release=validate_release(args.release_manifest)
+        if digest(args.eval_jsonl)!=release['files']['eval.jsonl']:
+            raise ValueError('Independent evaluation must use the frozen EVAL split')
+    if args.limit_videos<0:parser.error('Video limit must be nonnegative')
+    videos = load_blocks(args.eval_jsonl,validate_text=not bool(args.release_manifest))
+    if args.limit_videos:
+        videos={v:videos[v] for v in sorted(videos)[:args.limit_videos]}
     paths = json.loads(Path(args.video_path_map).read_text(encoding="utf-8"))
     output = Path(args.output)
     output.parent.mkdir(parents=True, exist_ok=True)

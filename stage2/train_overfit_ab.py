@@ -21,8 +21,9 @@ MODES = ("short_only", "independent")
 
 
 def encode_interval(memory, reader, start: int, end: int):
-    return torch.stack([memory.encode_frame(reader.frame_ending_at(t))
-                        for t in range(start, end)], dim=1)
+    from .qformer import short_window
+    return torch.cat([short_window(memory,[reader.frame_ending_at(t)
+                       for t in range(a,min(a+10,end))]) for a in range(start,end,10)],dim=1)
 
 
 def replay_previous_long(memory, blocks, reader):
@@ -83,6 +84,8 @@ def train_video(memory, blocks, reader, optimizer, metrics_file, video_id,
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--mode", choices=MODES, required=True)
+    parser.add_argument("--memory-architecture",choices=["ordinary","qformer"],default="ordinary")
+    parser.add_argument("--init-adapter")
     parser.add_argument("--train-jsonl", required=True)
     parser.add_argument("--video-path-map", required=True)
     parser.add_argument("--output-dir", required=True)
@@ -108,17 +111,26 @@ def main():
             raise FileNotFoundError(f"Missing video: {vid}")
     output = Path(args.output_dir)
     output.mkdir(parents=True, exist_ok=False)
-    config = {**vars(args), "init_adapter": None, "initialization": "official_checkpoint",
+    config = {**vars(args), "initialization": "stage1_adapter" if args.init_adapter else "official_checkpoint",
               "history_gradients": "truncated; past minutes replayed at current weights",
               "current_window_encoder_gradients": "all frames", "gradient_accumulation": 1}
     (output/"training_config.json").write_text(json.dumps(config, indent=2))
-    memory = MemoryModel(args.model_name, dtype=torch.bfloat16)
-    memory.model.to("cuda").train()
+    from .qformer import load_memory_model
+    memory = load_memory_model(args.model_name, architecture=args.memory_architecture,
+                               base_adapter=args.init_adapter,dtype=torch.bfloat16)
+    if args.memory_architecture == "qformer":
+        memory.to("cuda").train()
+    else:
+        memory.model.to("cuda").train()
     memory.model.config.use_cache = False
     memory.model.gradient_checkpointing_enable(
         gradient_checkpointing_kwargs={"use_reentrant": False})
-    optimizer = torch.optim.AdamW((p for p in memory.model.parameters() if p.requires_grad),
-                                 lr=args.learning_rate)
+    parameters = list(memory.model.parameters())
+    if hasattr(memory,"compressors"):
+        parameters += list(memory.compressors.parameters())
+    optimizer = torch.optim.AdamW((p for p in parameters if p.requires_grad),lr=args.learning_rate)
+    initial_compressors = ({k:v.detach().cpu().clone() for k,v in memory.compressors.state_dict().items()}
+                           if hasattr(memory,'compressors') else None)
     with (output/"training_metrics.jsonl").open("x") as metrics:
         for epoch in range(args.epochs):
             for vid, blocks in videos.items():
@@ -130,6 +142,14 @@ def main():
             if epoch == 0:
                 memory.save(str(output/"epoch-1"))
     memory.save(str(output/"final"))
+    if initial_compressors is not None:
+        final=memory.compressors.state_dict()
+        report={group:{'changed_parameters':sum(
+                    not torch.equal(initial_compressors[k],v.detach().cpu())
+                    for k,v in final.items() if k.startswith(group+'.')),
+                    'all_finite':all(torch.isfinite(v).all().item() for k,v in final.items()
+                                     if k.startswith(group+'.'))} for group in ['short','long']}
+        (output/'compressor_training_report.json').write_text(json.dumps(report,indent=2))
 
 
 if __name__ == "__main__":

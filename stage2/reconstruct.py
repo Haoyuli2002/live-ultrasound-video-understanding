@@ -79,16 +79,17 @@ def collect_memories(memory, blocks: list[dict], reader, kinds=None) -> list[dic
         minute = []
         for j, label in enumerate(row["local_sub_summaries"]):
             first = int(round(start)) + 10*j
-            states = [memory.encode_frame(reader.frame_ending_at(t)).detach()
-                      for t in range(first, first+10)]
-            current = torch.stack(states, dim=1)
-            minute.extend(states)
+            images = [reader.frame_ending_at(t) for t in range(first,first+10)]
+            encoder = getattr(memory, "encode_short", None)
+            current = (encoder(images) if encoder else torch.stack(
+                [memory.encode_frame(image) for image in images],dim=1)).detach()
+            minute.append(current)
             if "short" in kinds:
                 result.append({"kind": "short", "window": [first, first+10],
                                "memory": current.detach().clone(),
                                "reference": label["local_summary_target"]})
         if abs(end-start-60) <= 0.01:
-            short = torch.stack(minute, dim=1)
+            short = torch.cat(minute, dim=1)
             if "block" in kinds:
                 result.append({"kind": "block", "window": [start, end],
                                "memory": short.detach().clone(),
@@ -178,6 +179,8 @@ def main():
                         default=["short", "block", "global"])
     parser.add_argument("--save-memories", action="store_true")
     parser.add_argument("--output-dir", required=True)
+    parser.add_argument("--release-manifest")
+    parser.add_argument("--limit-videos",type=int,default=0)
     args = parser.parse_args()
     if args.max_new_tokens < 1 or args.frame_size < 1:
         parser.error("Token budget and frame size must be positive")
@@ -191,7 +194,16 @@ def main():
     if args.frame_size != config.get("frame_size", args.frame_size):
         raise ValueError("Use the training frame size for reconstruction")
     base_adapter = args.base_adapter or config.get("init_adapter")
-    videos = load_blocks(args.eval_jsonl)
+    if args.release_manifest:
+        from .release import validate_release
+        from .provenance import digest
+        release=validate_release(args.release_manifest)
+        if digest(args.eval_jsonl)!=release['files']['eval.jsonl']:
+            raise ValueError('Independent evaluation must use the frozen EVAL split')
+    if args.limit_videos<0:parser.error('Video limit must be nonnegative')
+    videos = load_blocks(args.eval_jsonl,validate_text=not bool(args.release_manifest))
+    if args.limit_videos:
+        videos={v:videos[v] for v in sorted(videos)[:args.limit_videos]}
     paths = json.loads(Path(args.video_path_map).read_text())
     for vid in videos:
         if vid not in paths or not Path(paths[vid]).is_file():
@@ -208,9 +220,14 @@ def main():
                 "Lexical scores do not measure medical correctness or video faithfulness. "
                 "Zero/other-window memory are diagnostic controls with distribution limits."}
     (output/"manifest.json").write_text(json.dumps(manifest, indent=2))
-    memory = MemoryModel(args.model_name, base_adapter=base_adapter,
-                         adapter_path=str(adapter))
-    memory.model.to("cuda").eval()
+    if (adapter/"qformer_config.json").is_file():
+        from .qformer import load_memory_model
+        memory = load_memory_model(args.model_name,base_adapter=base_adapter,
+                                   adapter_path=str(adapter)).to("cuda").eval()
+    else:
+        memory = MemoryModel(args.model_name, base_adapter=base_adapter,
+                             adapter_path=str(adapter))
+        memory.model.to("cuda").eval()
     rows = []
     with (output/"predictions.jsonl").open("x") as stream:
         for vid, blocks in videos.items():

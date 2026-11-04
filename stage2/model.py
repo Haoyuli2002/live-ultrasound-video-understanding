@@ -1,6 +1,7 @@
 """One Qwen3.5 backbone with LoRA for visual encoding and memory reconstruction."""
 from __future__ import annotations
 
+from pathlib import Path
 import torch
 from scripts.gpu_runtime import model_kwargs
 
@@ -11,7 +12,11 @@ LONG = "<LONG_MEM>"
 class MemoryModel:
     def __init__(self, model_name: str, *, base_adapter: str | None = None,
                  adapter_path: str | None = None,
-                 dtype: torch.dtype = torch.bfloat16, rank: int = 16):
+                 dtype: torch.dtype = torch.bfloat16, rank: int = 16,
+                 adapter_trainable: bool = False):
+        if (adapter_path and type(self) is MemoryModel
+                and (Path(adapter_path)/"qformer_config.json").exists()):
+            raise ValueError("Q-Former checkpoint: use stage2.qformer.load_memory_model")
         from transformers import AutoModelForImageTextToText, AutoProcessor
         from peft import LoraConfig, PeftConfig, PeftModel, get_peft_model
 
@@ -36,7 +41,8 @@ class MemoryModel:
         long_id = tokenizer.convert_tokens_to_ids(LONG)
         if adapter_path:
             require_same_base(adapter_path, "Stage 2 adapter")
-            self.model = PeftModel.from_pretrained(base, adapter_path, is_trainable=False)
+            self.model = PeftModel.from_pretrained(base, adapter_path,
+                                                  is_trainable=adapter_trainable)
         else:
             try:
                 config = LoraConfig(r=rank, lora_alpha=2 * rank, lora_dropout=0.05,
@@ -89,6 +95,11 @@ class MemoryModel:
                             attention_mask=torch.ones(prefix.shape[:2], device=self.device),
                             output_hidden_states=True, return_dict=True)
         return output.hidden_states[-1][:, -60:, :]
+
+    def encode_short(self, images) -> torch.Tensor:
+        if not 1 <= len(images) <= 10:
+            raise ValueError("Short encoding needs 1..10 causal frames")
+        return torch.stack([self.encode_frame(image) for image in images], dim=1)
 
     def reconstruction_loss(self, memory: torch.Tensor, target: str,
                             kind: str) -> torch.Tensor:
