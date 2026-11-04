@@ -67,8 +67,11 @@ def greedy_reconstruct(memory, tokens: torch.Tensor, kind: str,
 
 
 @torch.inference_mode()
-def collect_memories(memory, blocks: list[dict], reader) -> list[dict]:
+def collect_memories(memory, blocks: list[dict], reader, kinds=None) -> list[dict]:
     """Re-encode each frame once; update long memory chronologically per video."""
+    kinds = KINDS if kinds is None else set(kinds)
+    if not kinds or not kinds <= KINDS:
+        raise ValueError("Expected nonempty short/block/global kinds")
     result = []
     previous = None
     for row in blocks:
@@ -80,18 +83,21 @@ def collect_memories(memory, blocks: list[dict], reader) -> list[dict]:
                       for t in range(first, first+10)]
             current = torch.stack(states, dim=1)
             minute.extend(states)
-            result.append({"kind": "short", "window": [first, first+10],
-                           "memory": current.detach().clone(),
-                           "reference": label["local_summary_target"]})
+            if "short" in kinds:
+                result.append({"kind": "short", "window": [first, first+10],
+                               "memory": current.detach().clone(),
+                               "reference": label["local_summary_target"]})
         if abs(end-start-60) <= 0.01:
             short = torch.stack(minute, dim=1)
-            result.append({"kind": "block", "window": [start, end],
-                           "memory": short.detach().clone(),
-                           "reference": row["block_summary_target"]})
-            previous = memory.update_long(previous, short).detach()
-            result.append({"kind": "global", "window": [0, end],
-                           "memory": previous.clone(),
-                           "reference": row["global_summary_target"]})
+            if "block" in kinds:
+                result.append({"kind": "block", "window": [start, end],
+                               "memory": short.detach().clone(),
+                               "reference": row["block_summary_target"]})
+            if "global" in kinds:
+                previous = memory.update_long(previous, short).detach()
+                result.append({"kind": "global", "window": [0, end],
+                               "memory": previous.clone(),
+                               "reference": row["global_summary_target"]})
     return result
 
 
@@ -168,6 +174,8 @@ def main():
     parser.add_argument("--max-new-tokens", type=int, default=160)
     parser.add_argument("--conditions", nargs="+", choices=sorted(CONDITIONS),
                         default=["real", "zero", "other_window"])
+    parser.add_argument("--kinds", nargs="+", choices=sorted(KINDS),
+                        default=["short", "block", "global"])
     parser.add_argument("--save-memories", action="store_true")
     parser.add_argument("--output-dir", required=True)
     args = parser.parse_args()
@@ -208,7 +216,7 @@ def main():
         for vid, blocks in videos.items():
             reader = VideoReader(paths[vid], args.frame_size)
             try:
-                records = collect_memories(memory, blocks, reader)
+                records = collect_memories(memory, blocks, reader, args.kinds)
             finally:
                 reader.close()
             if args.save_memories:

@@ -11,7 +11,11 @@ from .data import VideoReader, load_blocks
 from .model import MemoryModel
 
 
-def evaluate_video(memory: MemoryModel, blocks: list[dict], reader: VideoReader):
+def evaluate_video(memory: MemoryModel, blocks: list[dict], reader: VideoReader,
+                   kinds=None):
+    kinds = {"short", "block", "global"} if kinds is None else set(kinds)
+    if not kinds or not kinds <= {"short", "block", "global"}:
+        raise ValueError("Expected nonempty short/block/global kinds")
     long_state = None
     rows = []
     with torch.no_grad():
@@ -24,21 +28,24 @@ def evaluate_video(memory: MemoryModel, blocks: list[dict], reader: VideoReader)
                           for t in range(first_second, first_second+10)]
                 short_states.extend(states)
                 current = torch.stack(states, dim=1)
-                loss = memory.reconstruction_loss(
-                    current, label["local_summary_target"], "short")
-                rows.append({"kind": "short", "end_sec": first_second+10,
-                             "loss": float(loss)})
+                if "short" in kinds:
+                    loss = memory.reconstruction_loss(
+                        current, label["local_summary_target"], "short")
+                    rows.append({"kind": "short", "end_sec": first_second+10,
+                                 "loss": float(loss)})
             if abs(end-start-60) <= 0.01:
                 all_short = torch.stack(short_states, dim=1)
-                loss = memory.reconstruction_loss(all_short,
-                                                  row["block_summary_target"], "block")
-                rows.append({"kind": "block", "end_sec": int(round(end)),
-                             "loss": float(loss)})
-                long_state = memory.update_long(long_state, all_short)
-                loss = memory.reconstruction_loss(long_state,
-                                                  row["global_summary_target"], "global")
-                rows.append({"kind": "global", "end_sec": int(round(end)),
-                             "loss": float(loss)})
+                if "block" in kinds:
+                    loss = memory.reconstruction_loss(all_short,
+                                                      row["block_summary_target"], "block")
+                    rows.append({"kind": "block", "end_sec": int(round(end)),
+                                 "loss": float(loss)})
+                if "global" in kinds:
+                    long_state = memory.update_long(long_state, all_short)
+                    loss = memory.reconstruction_loss(long_state,
+                                                      row["global_summary_target"], "global")
+                    rows.append({"kind": "global", "end_sec": int(round(end)),
+                                 "loss": float(loss)})
     return rows
 
 
@@ -50,6 +57,8 @@ def main():
     parser.add_argument("--base-adapter")
     parser.add_argument("--model-name", default="Qwen/Qwen3.5-2B")
     parser.add_argument("--frame-size", type=int, default=224)
+    parser.add_argument("--kinds", nargs="+", choices=["short", "block", "global"],
+                        default=["short", "block", "global"])
     parser.add_argument("--output", required=True)
     args = parser.parse_args()
     if not torch.cuda.is_available():
@@ -68,7 +77,7 @@ def main():
         for video_id, blocks in videos.items():
             reader = VideoReader(paths[video_id], args.frame_size)
             try:
-                for row in evaluate_video(memory, blocks, reader):
+                for row in evaluate_video(memory, blocks, reader, args.kinds):
                     stream.write(json.dumps({"video_id": video_id, **row}) + "\n")
             finally:
                 reader.close()

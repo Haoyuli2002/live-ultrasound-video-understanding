@@ -1,5 +1,8 @@
 # Single-video Stage 2 overfit check
 
+For the newer Short-only versus independent-target experiments, including
+automatic free-running reconstruction and memory controls, see [OVERFIT_AB.md](OVERFIT_AB.md).
+
 This diagnostic uses the existing visual annotation draft for P3FoSFIrfQA,
 covering [0,120) seconds. It contains 12 local targets, two independent block
 targets and two prefix-global targets. The unlabelled 2.634-second tail is
