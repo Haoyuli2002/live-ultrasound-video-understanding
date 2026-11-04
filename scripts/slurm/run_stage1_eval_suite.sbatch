@@ -24,10 +24,11 @@ for control in ${VISUAL_CONTROLS:-normal}; do
   for variant in base lora; do
     adapter=()
     [[ $variant != lora ]] || adapter=(--adapter-path "$OUTPUT_DIR/final")
-    python -m stage1.evaluate --model-name "${MODEL_NAME:-Qwen/Qwen3.5-2B}" "${adapter[@]}" \
+    python -m stage1.evaluate --model-name "${MODEL_NAME:-Qwen/Qwen3.5-2B}" ${adapter[@]+"${adapter[@]}"} \
       --eval-jsonl "$EVAL_DIR/samples.jsonl" --video-path-map "$EVAL_VIDEO_MAP" \
       --frame-budget "${FRAME_BUDGET:-30}" --frame-size "${FRAME_SIZE:-224}" \
-      --frame-sampling "${FRAME_SAMPLING:-uniform}" --max-new-tokens "${MAX_NEW_TOKENS:-128}" \
+      --frame-sampling "${FRAME_SAMPLING:-uniform}" --recent-seconds "${RECENT_SECONDS:-15}" \
+      --max-new-tokens "${MAX_NEW_TOKENS:-128}" \
       --visual-control "$control" --output "$EVAL_DIR/${variant}_${control}.jsonl"
   done
   python -m stage1.score_predictions --predictions "$EVAL_DIR/lora_${control}.jsonl" \

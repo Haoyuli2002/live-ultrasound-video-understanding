@@ -3,6 +3,7 @@ import tempfile
 import unittest
 import os
 import subprocess
+import sys
 from types import SimpleNamespace
 from unittest.mock import patch
 from pathlib import Path
@@ -119,6 +120,40 @@ class EvalPipelineTests(unittest.TestCase):
                 main()
             self.assertEqual(len(calls), 12)
             self.assertEqual(len(output.read_text().splitlines()), 12)
+
+    def test_batch_preserves_recent_sampling_for_both_candidates(self):
+        repo = Path(__file__).resolve().parents[1]
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            # Run the actual batch script against a lightweight storage fixture.
+            (root/'scripts/slurm').mkdir(parents=True)
+            (root/'scripts/slurm/stage1_storage.sh').write_text(':\n')
+            (root/'training/final').mkdir(parents=True)
+            (root/'training/final/adapter_model.safetensors').write_text('fixture')
+            conda = root/'conda.sh'
+            conda.write_text('conda() { :; }\n')
+            bins = root/'bin'
+            bins.mkdir()
+            python = bins/'python'
+            python.write_text(f'#!{sys.executable}\n'+'''import json,os,sys
+with open(os.environ['COMMANDS'],'a') as stream: stream.write(json.dumps(sys.argv[1:])+'\\n')
+''')
+            python.chmod(0o755)
+            env = dict(os.environ,REPO=str(root),DATA=str(root),OUTPUT_DIR=str(root/'training'),
+                       EVAL_DIR=str(root/'eval'),CONDA_SH=str(conda),FRAME_SAMPLING='recent_sparse',
+                       RECENT_SECONDS='15',VISUAL_CONTROLS='normal',COMMANDS=str(root/'calls.jsonl'),
+                       PATH=str(bins)+os.pathsep+os.environ['PATH'])
+            result = subprocess.run(['bash',str(repo/'scripts/slurm/run_stage1_eval_suite.sbatch')],
+                                    env=env,capture_output=True,text=True)
+            self.assertEqual(result.returncode,0,result.stderr)
+            calls = [json.loads(s) for s in (root/'calls.jsonl').read_text().splitlines()]
+            predictions = [c for c in calls if c[:2]==['-m','stage1.evaluate']]
+            self.assertEqual(len(predictions),2)
+            for call in predictions:
+                self.assertEqual(call[call.index('--frame-sampling')+1],'recent_sparse')
+                self.assertEqual(call[call.index('--recent-seconds')+1],'15')
+            self.assertNotIn('--adapter-path',predictions[0])
+            self.assertIn('--adapter-path',predictions[1])
 
 
 if __name__ == '__main__':

@@ -15,6 +15,7 @@ export EVAL_DIR=${EVAL_DIR:-$OUTPUT_DIR/eval_${MODE}_f30}
 export EVAL_JSONL=${EVAL_JSONL:-$OUTPUT_DIR/validation_samples.jsonl}
 export EVAL_VIDEO_MAP=${EVAL_VIDEO_MAP:-$DATA/cluster_data/splits/train_full295_qwen35_pretrain_keep_videos.json}
 export FRAME_BUDGET=${FRAME_BUDGET:-30} FRAME_SIZE=${FRAME_SIZE:-224} FRAME_SAMPLING=${FRAME_SAMPLING:-uniform}
+export RECENT_SECONDS=${RECENT_SECONDS:-15}
 export MODEL_NAME=${MODEL_NAME:-Qwen/Qwen3.5-2B} JUDGE_MODEL=${JUDGE_MODEL:-Qwen/Qwen3.5-27B}
 export VISUAL_CONTROLS=${VISUAL_CONTROLS:-normal}
 cd "$REPO"

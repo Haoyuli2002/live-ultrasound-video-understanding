@@ -9,6 +9,13 @@ is validation, not an independent final test. Override `EVAL_JSONL` and
 All three conditions are preserved per selected sentence. Report them separately:
 `through_with_asr` sees the target interval, while `before_*` does not.
 
+The rebuilt v2.1 train191 run uses `VALIDATION_FRACTION=0`. Its empty
+`validation_samples.jsonl` is not an evaluation set. Point `EVAL_JSONL` at the
+rebuilt independent eval41 dataset's `samples.jsonl`, and `EVAL_VIDEO_MAP` at
+that dataset's `video_map.json`. Set `FRAME_SAMPLING=recent_sparse` and
+`RECENT_SECONDS=15` to match v2.1 training. The saved training `video_split.json`
+still supplies the training-video IDs used to reject evaluation overlap.
+
 ## SSH smoke (10 target sentences, 30 rows per model)
 
 Once these files are present in the SSH checkout:
