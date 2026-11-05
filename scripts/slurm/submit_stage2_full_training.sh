@@ -42,7 +42,9 @@ if os.environ['ARCHITECTURE']=='qformer':
  assert q['init_adapter_sha256']==digest(s/'adapter_model.safetensors')
  assert q['source_sha256']==next(v['source_sha256'] for v in m['videos'] if v['video_id']=='P3FoSFIrfQA')
  assert q['qformer_config']['width']==512 and q['qformer_config']['layers']==2 and q['qformer_config']['heads']==8
- for name in ['model.py','qformer.py','train_overfit_ab.py']:
+ assert q['qformer_config']['architecture']=='qformer_secondwise_v2','Rerun smoke with the secondwise Q-Former'
+ assert q['qformer_config']['short_queries']==1 and q['qformer_config']['short_update_seconds']==1
+ for name in ['model.py','qformer.py','short_encoding.py','train_overfit_ab.py']:
   assert q['implementation_sha256'][name]==digest(Path('stage2')/name),'Memory implementation changed since smoke; rerun smoke'
 print(f"Release ready: {len(m['splits']['train'])} TRAIN videos; {len(m['splits']['eval'])} EVAL videos excluded")
 PY

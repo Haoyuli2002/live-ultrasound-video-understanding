@@ -1,6 +1,7 @@
 """Paired full-data memory training with independent targets, DDP and resume.
 
-Current-window states are re-encoded for every target. Previous-minute Long
+Current states are re-encoded for every target (secondwise Short replays the
+current-minute causal prefix). Previous-minute Long
 is detached recurrent state, retained across updates (truncated BPTT), not an
 expensive current-weight replay of the entire history. Both architectures use
 this same optimizer schedule. This differs from the small overfit diagnostic.
@@ -20,7 +21,7 @@ from torch import nn
 from torch.nn.parallel import DistributedDataParallel
 
 from .data import VideoReader, load_blocks
-from .qformer import load_memory_model
+from .qformer import load_memory_model, SECONDWISE_ARCHITECTURE
 from .train_overfit_ab import encode_interval
 from .provenance import digest
 
@@ -142,6 +143,8 @@ def run(a,rank,world):
     invariant.update(world_size=world,release_sha256=digest(a.release_manifest),
                      map_sha256=digest(a.video_path_map),init_adapter=str(Path(a.init_adapter).resolve()),
                      init_adapter_sha256=digest(Path(a.init_adapter)/'adapter_model.safetensors'))
+    if a.architecture == 'qformer':
+        invariant['qformer_architecture'] = SECONDWISE_ARCHITECTURE
     config=output/'training_config.json'
     latest=output/'checkpoint-latest'
     if a.resume:
@@ -170,6 +173,7 @@ def run(a,rank,world):
     if rank==0:
         atomic_json(config,{**vars(a),'init_adapter':a.init_adapter,'memory_architecture':a.architecture,
                             'resume_invariants':invariant,'update_schedule':'one target per rank per step',
+                            'qformer_config':getattr(memory,'qformer_config',None),
                             'historical_memory':'detached recurrent state; no full-prefix weight replay'})
     epoch=step=global_step=0;previous=None;current_video=None
     metrics=output/f'training_metrics.rank{rank}.jsonl'

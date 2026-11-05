@@ -16,16 +16,29 @@ the base model (its independent evaluation was only submitted).
 | Architecture | Short | Long |
 |---|---|---|
 | ordinary | One SHORT_MEM hidden state per frame; 10 states per 10 seconds | Existing Qwen update over previous 60 Long, current 60 Short and 60 shared LONG_MEM embeddings |
-| qformer | Frozen Qwen visual/merger patch features → 2-layer, 512-wide, 8-head query resampler → 10 states per 10 seconds | Separate 60-query resampler over previous Long and current-minute Short |
+| qformer | One reusable query per second reads cached minute-local 512-d Short states, then current-frame visual patches; output projected to Qwen width D | Separate 60-query resampler over previous Long and current-minute 60 Short tokens |
 
-The Q-Former variant is a lightweight **Q-Former-style resampler**, not the
-pretrained 188M-parameter BLIP-2 Q-Former. It has independent query parameters,
-query self-attention, visual cross-attention, feed-forward layers, time/source
-embeddings and output projections. Feature/query/LLM widths need not match.
-Queries never consume GT text or future video. For a residual prefix of T<10
-frames it uses T queries, preserving the original short-memory token budget.
-The existing frame-by-frame Stage 3 encoder must not silently load this
-checkpoint; it needs a causal short-window adapter before Q-Former Stage 3 use.
+The default Q-Former architecture is now `qformer_secondwise_v2`, a lightweight
+**Q-Former-style resampler** trained from scratch, not pretrained BLIP-2 weights.
+Short and Long have separate trainable attention/FFN/projection parameters.
+Short has **one** learned query, reused each second. It reads immutable past
+Short states plus itself with self-attention, then cross-attends **only this
+frame's patches**. Its final internal state is appended to a 512-d cache;
+a separate LayerNorm/Linear produces the D-d output for the existing summary
+and Long interfaces. The cache never projects D-d outputs back into 512-d.
+It survives 10-second window boundaries and resets every minute/video.
+
+Local decodes the latest 10 output tokens, Block the current 60, and Global
+the updated 60 Long tokens. **Local tokens now include earlier context within
+the current minute**; they are causal but are not isolated to the labeled
+10-second interval. Local targets still describe only that interval. Check
+free-running outputs for repetition of earlier evidence. Read
+[QFORMER_SECONDWISE.md](QFORMER_SECONDWISE.md) for the API and diagram.
+
+Legacy `qformer_style_v1` 10-query checkpoints retain their original
+window-level semantics when loaded for reconstruction. They are not migrated
+or used as secondwise training initializations. Stage 3 needs to reset/carry
+the new Short cache at the correct boundaries before using this encoder.
 
 ## Common supervision and distributed schedule
 
@@ -36,8 +49,11 @@ balanced by target count; shorter schedules participate with zero-gradient
 padding, without duplicating examples. Gradients are normalized by the active
 rank count. Four ranks do not change the number of distinct supervised targets.
 
-Current 10/60-second visual states are recomputed before each target update;
-there is no mixed-weight cache of the first 50 current-minute Short states.
+Ordinary 10/60-second visual states are recomputed before each target update.
+Secondwise Q-Former replays the causal current-minute prefix from its boundary
+to the target endpoint, then returns only the requested output interval.
+No Short cache survives an optimizer step; history-dependent Local tokens
+match chronological inference under the same weights.
 Previous-minute Long is detached recurrent state retained across optimizer
 updates, with truncated historical gradients. Full training does not replay
 the entire history with current weights at every Global step: that expensive
@@ -107,8 +123,10 @@ from its log after a terminal disconnect. Records live under
 `$DATA/cluster_data/experiments/stage2/accepted_v4_20261105_990b9b48_submissions/`.
 It never silently resumes or resubmits an already recorded run; inspect that
 record and use the generic submitter's `RESUME_RUN` for an intentional resume.
-`QFORMER_SMOKE_REPORT` defaults to the submitted smoke run `5902188`; override
-it if a replacement smoke was required. The generic submitter still validates
+`QFORMER_SMOKE_REPORT` must point explicitly to a new secondwise smoke report.
+The earlier 10-query smoke `5902188` does not validate this architecture.
+Secondwise submission records use `qformer_secondwise_v2.*` so an old recorded
+Q-Former job cannot be mistaken for a new-architecture submission. The generic submitter still validates
 successful smoke status, model/source/init identity and implementation hashes.
 No separate data upload is needed for this release. All mapped source videos
 must already be present and byte-identical on cluster storage.

@@ -35,6 +35,7 @@ class ResamplerTests(unittest.TestCase):
                 return SimpleNamespace(pooler_output=tuple(torch.ones(3,24)*i for i in range(len(kw['image_grid_thw']))))
         model.model=Backbone()
         model.qformer_config={'input_dim':24}
+        model.requires_short_history=False
         model.compressors=nn.ModuleDict({'short':QueryResampler(24,32,10,16,1,4,10)})
         class Images:
             def __call__(self,images,**kwargs):

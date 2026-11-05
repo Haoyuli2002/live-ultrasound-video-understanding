@@ -16,6 +16,7 @@ import statistics
 import time
 
 import torch
+from .short_encoding import iter_short_windows
 
 KINDS = {"short", "block", "global"}
 CONDITIONS = {"real", "zero", "other_window"}
@@ -77,12 +78,8 @@ def collect_memories(memory, blocks: list[dict], reader, kinds=None) -> list[dic
     for row in blocks:
         start, end = row["block_window"]
         minute = []
-        for j, label in enumerate(row["local_sub_summaries"]):
-            first = int(round(start)) + 10*j
-            images = [reader.frame_ending_at(t) for t in range(first,first+10)]
-            encoder = getattr(memory, "encode_short", None)
-            current = (encoder(images) if encoder else torch.stack(
-                [memory.encode_frame(image) for image in images],dim=1)).detach()
+        for first, current, label in iter_short_windows(memory, row, reader):
+            current = current.detach()
             minute.append(current)
             if "short" in kinds:
                 result.append({"kind": "short", "window": [first, first+10],
@@ -219,7 +216,6 @@ def main():
                 "interpretation": "Training-video reconstruction; not held-out generalization. "
                 "Lexical scores do not measure medical correctness or video faithfulness. "
                 "Zero/other-window memory are diagnostic controls with distribution limits."}
-    (output/"manifest.json").write_text(json.dumps(manifest, indent=2))
     if (adapter/"qformer_config.json").is_file():
         from .qformer import load_memory_model
         memory = load_memory_model(args.model_name,base_adapter=base_adapter,
@@ -228,6 +224,11 @@ def main():
         memory = MemoryModel(args.model_name, base_adapter=base_adapter,
                              adapter_path=str(adapter))
         memory.model.to("cuda").eval()
+    manifest['qformer_config'] = getattr(memory, 'qformer_config', None)
+    manifest['short_context'] = ('minute-prefix history; recent 10 output tokens for Local'
+                                if getattr(memory, 'requires_short_history', False)
+                                else 'independent 10-second windows')
+    (output/"manifest.json").write_text(json.dumps(manifest, indent=2))
     rows = []
     with (output/"predictions.jsonl").open("x") as stream:
         for vid, blocks in videos.items():

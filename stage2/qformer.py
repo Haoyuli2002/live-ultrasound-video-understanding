@@ -1,8 +1,9 @@
-"""Small query resamplers over Qwen visual patches; not pretrained BLIP-2 weights.
+"""Secondwise Short queries with minute-local internal-width history.
 
-All frames supplied to encode_short must precede the current decision endpoint.
-Queries can interact bidirectionally inside that observed window. They cannot
-read future windows, text targets or previously generated summaries.
+New models emit one Short token per frame. Only the current query is updated:
+it reads immutable past Short states, then the current frame's visual patches.
+The cache retains pre-projection states (512-d by default), not Qwen-width
+outputs. Legacy window-level checkpoints remain loadable for old evaluations.
 """
 from __future__ import annotations
 
@@ -12,6 +13,9 @@ import torch
 from torch import nn
 
 from .model import MemoryModel
+
+SECONDWISE_ARCHITECTURE = "qformer_secondwise_v2"
+LEGACY_ARCHITECTURE = "qformer_style_v1"
 
 
 class QueryLayer(nn.Module):
@@ -57,24 +61,87 @@ class QueryResampler(nn.Module):
         return self.output_projection(queries)
 
 
+class SecondwiseQueryLayer(QueryLayer):
+    def forward(self, query, features, history):
+        # This is the last (current-query) row of causal self-attention over
+        # [past states; current query]. Historical positions are read-only;
+        # there is no need to compute or overwrite their attention outputs.
+        states = query if history is None else torch.cat([history, query], dim=1)
+        query = query + self.self_attention(
+            self.norm_self(query), self.norm_self(states), self.norm_self(states),
+            need_weights=False)[0]
+        query = query + self.cross_attention(
+            self.norm_cross(query), features, features, need_weights=False)[0]
+        return query + self.ff(self.norm_ff(query))
+
+
+class SecondwiseShortEncoder(nn.Module):
+    """One reusable learned query; append one internal-width state per second."""
+    def __init__(self, input_dim, output_dim, width=512, layers=2, heads=8):
+        super().__init__()
+        if min(input_dim, output_dim, width, layers, heads) < 1 or width % heads:
+            raise ValueError("Positive dimensions and width divisible by heads are required")
+        self.width = width
+        self.input_dim = input_dim
+        self.queries = nn.Parameter(torch.randn(1, width)*0.02)
+        self.input_projection = nn.Linear(input_dim, width)
+        self.position = nn.Embedding(60, width)
+        self.layers = nn.ModuleList([SecondwiseQueryLayer(width, heads) for _ in range(layers)])
+        self.output_projection = nn.Sequential(nn.LayerNorm(width), nn.Linear(width, output_dim))
+
+    def forward(self, features, history=None):
+        if features.ndim != 3 or features.shape[1] == 0 or features.shape[2] != self.input_dim:
+            raise ValueError("Expected nonempty current-frame visual patches [B,N,D]")
+        if history is not None and (history.ndim != 3 or history.shape[0] != features.shape[0]
+                                    or history.shape[2] != self.width):
+            raise ValueError("Short history must contain internal-width states [B,t,width]")
+        t = 0 if history is None else history.shape[1]
+        if t >= 60:
+            raise ValueError("Reset Short history at the next minute boundary")
+        pos = self.position.weight[t].reshape(1, 1, -1)
+        patches = self.input_projection(features) + pos
+        query = self.queries.unsqueeze(0).expand(features.shape[0], -1, -1) + pos
+        for layer in self.layers:
+            query = layer(query, patches, history)
+        # Keep the raw last-layer state for recurrence. Only downstream tokens
+        # pass through LayerNorm/Linear to Qwen hidden width; no D->width roundtrip.
+        updated = query if history is None else torch.cat([history, query], dim=1)
+        return self.output_projection(query), updated
+
+
 class QFormerMemoryModel(MemoryModel):
     def __init__(self, *args, query_width=512, query_layers=2, query_heads=8, **kwargs):
         checkpoint = kwargs.get("adapter_path")
         config_file = Path(checkpoint)/"qformer_config.json" if checkpoint else None
+        architecture = SECONDWISE_ARCHITECTURE
         if config_file and config_file.exists():
             config = json.loads(config_file.read_text())
+            architecture = config["architecture"]
+            if architecture not in {LEGACY_ARCHITECTURE, SECONDWISE_ARCHITECTURE}:
+                raise ValueError(f"Unsupported Q-Former checkpoint architecture: {architecture}")
+            expected = 10 if architecture == LEGACY_ARCHITECTURE else 1
+            if config.get("short_queries") != expected or config.get("long_queries") != 60:
+                raise ValueError("Checkpoint query counts disagree with its architecture")
             query_width, query_layers, query_heads = (config[k] for k in ("width", "layers", "heads"))
         super().__init__(*args, **kwargs)
         base = self.model.get_base_model()
         if not hasattr(base, "get_image_features"):
             raise TypeError("Qwen backbone needs get_image_features; no single-vector fallback")
         hidden = base.config.text_config.hidden_size
+        self.requires_short_history = architecture == SECONDWISE_ARCHITECTURE
         self.qformer_config = dict(width=query_width, layers=query_layers, heads=query_heads,
-                                   input_dim=hidden, output_dim=hidden, short_queries=10,
-                                   long_queries=60, architecture="qformer_style_v1")
+                                   input_dim=hidden, output_dim=hidden,
+                                   short_queries=1 if self.requires_short_history else 10,
+                                   long_queries=60, architecture=architecture)
+        if self.requires_short_history:
+            self.qformer_config.update(short_update_seconds=1, short_cache_width=query_width,
+                                       short_history_seconds=60, short_history="minute_local")
         self.compressors = nn.ModuleDict({
-            "short": QueryResampler(hidden, hidden, 10, query_width, query_layers, query_heads, 10),
+            "short": (SecondwiseShortEncoder(hidden, hidden, query_width, query_layers, query_heads)
+                      if self.requires_short_history else
+                      QueryResampler(hidden, hidden, 10, query_width, query_layers, query_heads, 10)),
             "long": QueryResampler(hidden, hidden, 60, query_width, query_layers, query_heads, 120)})
+        self.reset_short_memory()
         # This feature path bypasses the language transformer. Vision is frozen;
         # decoder LoRA and both resamplers remain trainable in the paired recipe.
         visual = getattr(base.model, "visual", None)
@@ -102,6 +169,10 @@ class QFormerMemoryModel(MemoryModel):
     def eval(self):
         return self.train(False)
 
+    def reset_short_memory(self):
+        """Call at a video/minute boundary, and before replaying an optimizer target."""
+        self._short_history = None
+
     def encode_short(self, images):
         if not 1 <= len(images) <= 10:
             raise ValueError("Short encoding needs 1..10 observed frames")
@@ -117,13 +188,27 @@ class QFormerMemoryModel(MemoryModel):
         if any(f.ndim != 2 or f.shape[-1] != self.qformer_config["input_dim"] for f in frames):
             raise ValueError("Unexpected Qwen visual-feature shape")
         dtype = next(self.compressors.parameters()).dtype
+        if self.requires_short_history:
+            history = getattr(self, "_short_history", None)
+            if (0 if history is None else history.shape[1]) + len(images) > 60:
+                raise ValueError("Reset Short history before crossing a minute boundary")
+            result = []
+            # Frozen vision may batch frames; each query step receives only
+            # this frame's patches, never patches from subsequent seconds.
+            for frame in frames:
+                token, history = self.compressors["short"](frame.unsqueeze(0).to(dtype), history)
+                result.append(token)
+            self._short_history = history
+            return torch.cat(result, dim=1)
         features = torch.cat(frames, dim=0).unsqueeze(0).to(dtype)
         positions = torch.cat([torch.full((len(f),),i,device=self.device,dtype=torch.long)
                                for i,f in enumerate(frames)]).unsqueeze(0)
         return self.compressors["short"](features, positions, torch.zeros_like(positions), len(images))
 
     def encode_frame(self, image):
-        raise RuntimeError("Q-Former needs causal encode_short windows, not independent encode_frame")
+        if not self.requires_short_history:
+            raise RuntimeError("Legacy Q-Former needs causal encode_short windows, not independent encode_frame")
+        return self.encode_short([image])[:, 0, :]
 
     def update_long(self, previous, short):
         if short.shape[1] != 60:
@@ -151,6 +236,5 @@ def load_memory_model(model_name, *, architecture=None, adapter_path=None, **kwa
     return cls(model_name, adapter_path=adapter_path, **kwargs)
 
 
-def short_window(memory, images):
-    encoder = getattr(memory, "encode_short", None)
-    return encoder(images) if encoder else torch.stack([memory.encode_frame(i) for i in images],dim=1)
+# Compatibility exports; the orchestration helpers do not depend on model classes.
+from .short_encoding import short_window, short_memory_scope, iter_short_windows

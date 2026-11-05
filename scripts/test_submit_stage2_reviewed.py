@@ -82,6 +82,17 @@ echo "Run: $DATA/mock_run"
         self.assertFalse(self.capture.exists())
         self.assertFalse((self.records/'qformer.lock').exists())
 
+    def test_secondwise_records_do_not_reuse_legacy_qformer_submission(self):
+        self.records.mkdir(parents=True)
+        (self.records/'qformer.job_id.txt').write_text('1234\n')
+        (self.records/'qformer.run_dir.txt').write_text('/old/window-level-run\n')
+        report=self.root/'new_smoke.json';report.write_text('{}')
+        self.run_helper('qformer',QFORMER_SMOKE_REPORT=str(report))
+        self.assertEqual((self.records/'qformer_secondwise_v2.job_id.txt').read_text().strip(),'590999')
+        self.assertEqual((self.records/'qformer.job_id.txt').read_text().strip(),'1234')
+        self.run_helper('qformer',QFORMER_SMOKE_REPORT=str(report))
+        self.assertEqual(len(self.capture.read_text().splitlines()),1)
+
     def test_other_manifest_never_reaches_submitter(self):
         release=self.root/'wrong_release';release.mkdir()
         (release/'manifest.json').write_text('{}')

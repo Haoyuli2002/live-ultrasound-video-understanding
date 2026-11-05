@@ -21,9 +21,23 @@ MODES = ("short_only", "independent")
 
 
 def encode_interval(memory, reader, start: int, end: int):
-    from .qformer import short_window
-    return torch.cat([short_window(memory,[reader.frame_ending_at(t)
-                       for t in range(a,min(a+10,end))]) for a in range(start,end,10)],dim=1)
+    from .short_encoding import short_window, short_memory_scope
+    if end <= start:
+        raise ValueError("Expected a nonempty chronological interval")
+    if not getattr(memory, "requires_short_history", False):
+        return torch.cat([short_window(memory,[reader.frame_ending_at(t)
+                           for t in range(a,min(a+10,end))]) for a in range(start,end,10)],dim=1)
+    # A Local ending at second 20 needs history from seconds 0..9 as well.
+    # Replay at the current optimizer weights, but decode/supervise only the
+    # requested 10 output tokens. No cache survives this target's backward pass.
+    minute_start = start//60*60
+    if start < 0 or end > minute_start+60:
+        raise ValueError("History-aware intervals must lie within one minute")
+    with short_memory_scope(memory):
+        tokens = torch.cat([short_window(memory,[reader.frame_ending_at(t)
+                            for t in range(a,min(a+10,end))])
+                            for a in range(minute_start,end,10)],dim=1)
+        return tokens[:, start-minute_start:end-minute_start, :]
 
 
 def replay_previous_long(memory, blocks, reader):
@@ -118,6 +132,10 @@ def main():
     from .qformer import load_memory_model
     memory = load_memory_model(args.model_name, architecture=args.memory_architecture,
                                base_adapter=args.init_adapter,dtype=torch.bfloat16)
+    if hasattr(memory, 'qformer_config'):
+        config['qformer_config'] = memory.qformer_config
+        config['short_encoding'] = 'causal minute-prefix replay; supervise only requested output interval'
+        (output/'training_config.json').write_text(json.dumps(config, indent=2))
     if args.memory_architecture == "qformer":
         memory.to("cuda").train()
     else:

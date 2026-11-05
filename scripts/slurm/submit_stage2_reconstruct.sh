@@ -42,6 +42,7 @@ export CODE_DIR="$RECON_RUN/code"
 # Keep the exact architecture used for training; overlay only the new decoder.
 cp -R "$TRAIN_RUN/code" "$CODE_DIR"
 cp "$REPO/stage2/reconstruct.py" "$CODE_DIR/stage2/reconstruct.py"
+cp "$REPO/stage2/short_encoding.py" "$CODE_DIR/stage2/short_encoding.py"
 cp "$SCRIPT_DIR/run_stage2_reconstruct.sbatch" "$RECON_RUN/run.sbatch"
 mkdir "$RECON_RUN/logs"
 unset STAGE1_ADAPTER STAGE2_ADAPTER

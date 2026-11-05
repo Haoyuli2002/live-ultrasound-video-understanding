@@ -4,6 +4,7 @@ import json
 import math
 from pathlib import Path
 from .provenance import digest
+from .qformer import SECONDWISE_ARCHITECTURE
 
 
 def check(run):
@@ -19,6 +20,11 @@ def check(run):
     for file in ['adapter_config.json','adapter_model.safetensors','qformer_config.json','qformer.pt']:
         if not (checkpoint/file).is_file() or not (checkpoint/file).stat().st_size:
             raise FileNotFoundError(file)
+    qformer_config=json.loads((checkpoint/'qformer_config.json').read_text())
+    if (qformer_config.get('architecture') != SECONDWISE_ARCHITECTURE
+            or qformer_config.get('short_queries') != 1
+            or qformer_config.get('short_update_seconds') != 1):
+        raise ValueError('Secondwise Q-Former needs a new single-query smoke; legacy smoke cannot pass')
     for name in ['epoch-1','final']:
         values=[json.loads(x) for x in (run/f'reconstruction_{name}.jsonl').read_text().splitlines() if x.strip()]
         if len(values)!=16 or not all(math.isfinite(r['loss']) for r in values):
@@ -37,8 +43,8 @@ def check(run):
         init_adapter_sha256=digest(Path(cfg['init_adapter'])/'adapter_model.safetensors'),
         code_commit=(run/'code_commit.txt').read_text().strip(),source_sha256=inp['source_sha256'],
         implementation_sha256={name:digest(Path(__file__).parent/name)
-                               for name in ['model.py','qformer.py','train_overfit_ab.py']},
-        qformer_config=json.loads((checkpoint/'qformer_config.json').read_text()),
+                               for name in ['model.py','qformer.py','short_encoding.py','train_overfit_ab.py']},
+        qformer_config=qformer_config,
         truncations=sum(r['stop_reason']=='max_new_tokens' for r in values),
         empty_outputs=sum(not r['prediction'].strip() for r in values),
         compressor_updates=gradient,quality_approved=False,

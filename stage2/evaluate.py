@@ -9,6 +9,7 @@ import torch
 
 from .data import VideoReader, load_blocks
 from .model import MemoryModel
+from .short_encoding import iter_short_windows
 
 
 def evaluate_video(memory: MemoryModel, blocks: list[dict], reader: VideoReader,
@@ -22,12 +23,7 @@ def evaluate_video(memory: MemoryModel, blocks: list[dict], reader: VideoReader,
         for row in blocks:
             start, end = row["block_window"]
             short_states = []
-            for j, label in enumerate(row["local_sub_summaries"]):
-                first_second = int(round(start)) + 10*j
-                images = [reader.frame_ending_at(t) for t in range(first_second,first_second+10)]
-                encoder = getattr(memory, "encode_short", None)
-                current = encoder(images) if encoder else torch.stack(
-                    [memory.encode_frame(image) for image in images],dim=1)
+            for first_second, current, label in iter_short_windows(memory, row, reader):
                 short_states.append(current)
                 if "short" in kinds:
                     loss = memory.reconstruction_loss(
