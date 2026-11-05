@@ -78,6 +78,48 @@ and nonempty real generation for each kind. Empty/truncated outputs are
 counted. This is a functional gate, not a summary-quality acceptance threshold.
 The report explicitly sets `quality_approved: false`.
 
+## Current frozen release: pull and submit
+
+The accepted release `stage2/releases/accepted_v4_20261105_990b9b48/` is
+versioned with this repository: 196 train videos, 41 independent eval videos,
+and 23,450 summary targets. The three text files total about 6 MiB; source
+videos and model weights remain on cluster storage. Manifest SHA256:
+`990b9b489194028ee4437ef64def17ee515d3cf273702c750633c22df834cb4b`.
+The reviewed labels include the user's first-pass waivers; this is not a
+clinical expert review. Full visual evidence/review ledgers remain in the
+original acceptance workspace, bound by manifest hashes.
+
+On SSH:
+
+```bash
+cd ~/haoyu/live-ultrasound-video-understanding
+git pull --ff-only origin main
+GPU_TYPE=auto bash scripts/slurm/submit_stage2_reviewed.sh ordinary
+# After the Q-Former functional smoke passes:
+GPU_TYPE=auto bash scripts/slurm/submit_stage2_reviewed.sh qformer
+```
+
+The reviewed helper fixes four GPUs, one epoch, 24 hours and the rebuilt
+Stage1 initialization; it defaults to the versioned release above. It checks
+the pinned release hash and uses a submission lock and durable per-architecture
+job/run records to avoid duplicates, including recovering a successful sbatch
+from its log after a terminal disconnect. Records live under
+`$DATA/cluster_data/experiments/stage2/accepted_v4_20261105_990b9b48_submissions/`.
+It never silently resumes or resubmits an already recorded run; inspect that
+record and use the generic submitter's `RESUME_RUN` for an intentional resume.
+`QFORMER_SMOKE_REPORT` defaults to the submitted smoke run `5902188`; override
+it if a replacement smoke was required. The generic submitter still validates
+successful smoke status, model/source/init identity and implementation hashes.
+No separate data upload is needed for this release. All mapped source videos
+must already be present and byte-identical on cluster storage.
+
+Stage1 generation/P3 overfit export is separately available as
+`bash scripts/slurm/stage12_ar_results.sh generate`, then `pack` after jobs
+complete. This reuses existing complete outputs, submits missing generation
+without a new text Judge, and exports raw predictions, GT and provenance for
+local Codex evaluation. Its Stage2 scope is the original P3 overfit run, not
+these new full-training runs. The archive path is printed by `pack`.
+
 ## Freeze and transfer the complete release
 
 On the machine holding the acceptance ledger, after all videos finish:
