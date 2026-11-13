@@ -58,11 +58,19 @@ class MemoryModel:
         self.tokenizer = tokenizer
 
     @property
+    def core_model(self):
+        """Return the PEFT model underneath an optional DDP wrapper."""
+        return self.model.module if hasattr(self.model, "module") else self.model
+
+    @property
     def device(self):
-        return next(self.model.parameters()).device
+        return next(self.core_model.parameters()).device
 
     def embedding(self, ids: torch.Tensor) -> torch.Tensor:
-        return self.model.get_input_embeddings()(ids.to(self.device))
+        return self.core_model.get_input_embeddings()(ids.to(self.device))
+
+    def _forward(self, **kwargs):
+        return self.core_model(**kwargs)
 
     def encode_frame(self, image) -> torch.Tensor:
         """One visual frame followed by a causal short-memory readout token."""
@@ -79,7 +87,7 @@ class MemoryModel:
         positions = (inputs["input_ids"][0] == self.short_id).nonzero(as_tuple=True)[0]
         if positions.numel() != 1:
             raise RuntimeError("SHORT_MEM must appear exactly once after image tokens")
-        output = self.model(**inputs, output_hidden_states=True, return_dict=True)
+        output = self._forward(**inputs, output_hidden_states=True, return_dict=True)
         return output.hidden_states[-1][:, positions.item(), :]
 
     def update_long(self, previous: torch.Tensor | None,
@@ -91,9 +99,10 @@ class MemoryModel:
                                           device=self.device, dtype=torch.long))
         parts = [short, query] if previous is None else [previous.detach(), short, query]
         prefix = torch.cat(parts, dim=1)
-        output = self.model(inputs_embeds=prefix,
-                            attention_mask=torch.ones(prefix.shape[:2], device=self.device),
-                            output_hidden_states=True, return_dict=True)
+        output = self._forward(
+            inputs_embeds=prefix,
+            attention_mask=torch.ones(prefix.shape[:2], device=self.device),
+            output_hidden_states=True, return_dict=True)
         return output.hidden_states[-1][:, -60:, :]
 
     def encode_short(self, images) -> torch.Tensor:
@@ -120,10 +129,10 @@ class MemoryModel:
         labels = torch.full(embeds.shape[:2], -100, dtype=torch.long,
                             device=self.device)
         labels[:, memory.shape[1] + prompt_ids.shape[1]:] = target_ids
-        output = self.model(inputs_embeds=embeds, labels=labels,
-                            attention_mask=torch.ones_like(labels), return_dict=True)
+        output = self._forward(inputs_embeds=embeds, labels=labels,
+                               attention_mask=torch.ones_like(labels), return_dict=True)
         return output.loss
 
     def save(self, path: str):
-        self.model.save_pretrained(path, save_embedding_layers=True)
+        self.core_model.save_pretrained(path, save_embedding_layers=True)
         self.processor.save_pretrained(path)

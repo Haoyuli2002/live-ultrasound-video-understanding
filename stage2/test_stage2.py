@@ -9,13 +9,16 @@ import torch
 
 from stage2.data import load_blocks
 from stage2.build_data import build_files, build_rows
-from stage2.annotate import annotate_video, ChatTeacher
-from stage2.train import train_video
+from stage2.annotate import annotate_video, ChatTeacher, summarize_window
+from stage2.summary_schema import parse_summary
+from stage2.prepare_ddp_smoke import prepare as prepare_ddp_smoke, select_videos
+from stage2.train import (train_video, evaluate_video, _balanced_video_shards,
+                          _validate_resume_config)
 
 
-LOCAL = "View: lung view; Anatomy: pleural line; Dynamic: sliding visible"
-BLOCK = "View: lung view; Anatomy: pleura; Dynamic: sliding remains visible"
-GLOBAL = "Anatomy: pleura; Dynamic: sliding visible; Change: stable over time"
+LOCAL = "View: lung view; Anatomy: pleural line; Finding: sliding visible"
+BLOCK = "View: lung view; Anatomy: pleura; Finding: sliding remains visible"
+GLOBAL = "Anatomy: pleura; Finding: sliding visible; Change: stable over time"
 
 
 def block(start=0, seconds=60):
@@ -65,6 +68,32 @@ class FakeMemory:
 
 
 class Stage2Tests(unittest.TestCase):
+    def test_ddp_smoke_preparation_uses_two_videos_and_valid_blocks(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            video_map = root / "videos.json"
+            video_map.write_text(json.dumps({
+                "minute": str(root / "minute.mp4"),
+                "short": str(root / "short.mp4"),
+            }))
+            with patch("stage2.prepare_ddp_smoke.video_duration",
+                       side_effect=lambda path: 65.0 if path.name == "minute.mp4" else 15.0):
+                manifest = prepare_ddp_smoke(
+                    video_map, root / "smoke", ["minute", "short"])
+            self.assertEqual(manifest["expected_updates_per_rank"], [6, 1])
+            blocks = load_blocks(manifest["train_jsonl"])
+            self.assertEqual([len(blocks[k][0]["local_sub_summaries"])
+                              for k in ("minute", "short")], [6, 1])
+            self.assertEqual(blocks["minute"][0]["block_window"], [0.0, 60.0])
+            self.assertEqual(blocks["short"][0]["block_window"], [0.0, 10.0])
+            with patch("stage2.prepare_ddp_smoke.video_duration",
+                       return_value=65.0):
+                with self.assertRaises(FileExistsError):
+                    prepare_ddp_smoke(video_map, root / "smoke", ["minute", "short"])
+        with self.assertRaisesRegex(ValueError, "at least 60s"):
+            select_videos({"a": "a.mp4", "b": "b.mp4"},
+                          {"a": 30, "b": 15}, ["a", "b"])
+
     def test_teacher_sends_video_not_image_frames(self):
         calls = []
         def create(**kwargs):
@@ -160,9 +189,15 @@ class Stage2Tests(unittest.TestCase):
             optimizer = torch.optim.SGD(memory.model.parameters(), lr=0.001)
             metrics = Path(directory) / "metrics.jsonl"
             with metrics.open("w") as stream:
-                train_video(memory, blocks, FakeReader(), optimizer, stream, "v1", 0)
+                final_step = train_video(
+                    memory, blocks, FakeReader(), optimizer, stream, "v1", 1,
+                    global_step=10)
             records = [json.loads(line) for line in metrics.read_text().splitlines()]
             self.assertEqual(len(records), 7)
+            self.assertEqual(final_step, 17)
+            self.assertEqual([record["global_step"] for record in records],
+                             list(range(11, 18)))
+            self.assertTrue(all(record["epoch"] == 1 for record in records))
             self.assertEqual(sum(record["global"] is not None for record in records), 1)
             self.assertEqual(memory.calls, list(range(70)))
             self.assertIsNone(memory.previous)
@@ -183,12 +218,88 @@ class Stage2Tests(unittest.TestCase):
             self.assertFalse(memory.previous.requires_grad)
             self.assertEqual(memory.calls, list(range(120)))
 
+    def test_evaluate_video_reports_component_means_without_updates(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "labels.jsonl"
+            path.write_text(json.dumps(block()) + "\n" +
+                            json.dumps(block(60)) + "\n")
+            blocks = load_blocks(path)["v1"]
+            memory = FakeMemory()
+            memory.previous_seen = []
+            before = [p.clone() for p in memory.model.parameters()]
+            means, counts = evaluate_video(memory, blocks, FakeReader())
+            after = list(memory.model.parameters())
+            # Two full minutes of 10s intervals; one long update at each minute end.
+            self.assertEqual(counts, {"short": 12, "block": 2, "global": 2})
+            for key in ("short", "block", "global"):
+                self.assertIsNotNone(means[key])
+            # No optimizer ran, so parameters are unchanged.
+            for old, new in zip(before, after):
+                self.assertTrue(torch.equal(old, new))
+            # The recurrence still ran: long memory was reused on the second minute.
+            self.assertEqual(memory.previous_seen, [False, True])
+
     def test_gap_rejected(self):
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "labels.jsonl"
             path.write_text(json.dumps(block(10)) + "\n")
             with self.assertRaisesRegex(ValueError, "gap"):
                 load_blocks(path)
+
+    def test_structured_summary_schema(self):
+        self.assertEqual(list(parse_summary(LOCAL, "local")),
+                         ["View", "Anatomy", "Finding"])
+        with self.assertRaisesRegex(ValueError, "duplicate facet"):
+            parse_summary("View: one; View: two", "local")
+        with self.assertRaisesRegex(ValueError, "not allowed"):
+            parse_summary("Change: changed", "local")
+        with self.assertRaisesRegex(ValueError, "out of order"):
+            parse_summary("Finding: one; Anatomy: two", "block")
+
+    def test_invalid_teacher_summary_is_retried(self):
+        teacher = SimpleNamespace(calls=0)
+        def summary(prompt, video_path):
+            teacher.calls += 1
+            return "View: chest" if teacher.calls == 1 else "The clinician holds a probe beside the patient."
+        teacher.summary = summary
+        with patch("stage2.annotate.make_silent_clip"):
+            target, facets = summarize_window(
+                Path("video.mp4"), teacher, kind="local", start=0, end=10,
+                clip_path=Path("clip.mp4"), max_attempts=2)
+        self.assertEqual(teacher.calls, 2)
+        self.assertEqual(target, "The clinician holds a probe beside the patient.")
+        self.assertEqual(facets, {})
+
+    def test_builder_rejects_unstructured_summary(self):
+        bad = block()
+        bad["local_sub_summaries"][0]["local_summary_target"] = "plain paragraph"
+        with self.assertRaisesRegex(ValueError, "unlabelled clause"):
+            build_rows([bad])
+
+    def test_resume_config_rejects_changed_experiment(self):
+        keys = ("model_name", "init_adapter", "train_jsonl", "video_path_map",
+                "frame_size", "lora_rank", "dtype", "learning_rate",
+                "max_grad_norm", "seed", "validation_fraction", "warmup_ratio",
+                "epochs", "world_size")
+        saved = {key: "same" for key in keys}
+        current = dict(saved)
+        current["lora_rank"] = "changed"
+        with self.assertRaisesRegex(ValueError, "lora_rank"):
+            _validate_resume_config(saved, current)
+
+    def test_ddp_video_shards_are_balanced_and_complete(self):
+        videos = {
+            "long": [block(), block(60)],
+            "medium": [block()],
+            "short": [block(0, 20)],
+            "tiny": [block(0, 10)],
+        }
+        shards, steps = _balanced_video_shards(videos, sorted(videos), 3)
+        self.assertEqual(sorted(video for shard in shards for video in shard),
+                         sorted(videos))
+        self.assertEqual(len({video for shard in shards for video in shard}), 4)
+        self.assertEqual(steps[0], max(steps))
+        self.assertEqual(sum(steps), 21)
 
 
 if __name__ == "__main__":

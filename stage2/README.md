@@ -1,5 +1,11 @@
 # Stage 2 — chronological visual memory on Qwen3.5
 
+> 当前冻结数据的普通记忆 / 秒级 Q-Former 全量训练使用 [FULL_TRAINING.md](FULL_TRAINING.md) 和 `stage2.train_full`。本文的 `stage2.train`、八卡 DDP 及每分钟 6 次更新属于保留的旧训练入口，不等同于全量独立监督方案。
+
+> The project-level outline (goals, three-stage status, interfaces, run commands)
+> lives in the root [`README.md`](../README.md) / [`README_zh.md`](../README_zh.md);
+> that is the authoritative entry point. This file keeps only Stage 2 specifics.
+
 This is a new implementation. It does not import code from `pretrain/`.
 
 ## Memory flow (diagram)
@@ -81,16 +87,6 @@ only as training targets to make the memory vectors reconstructable.
 
 ## Overview
 
-Input is 1 frame per completed second. A `<SHORT_MEM>` hidden state becomes one
-continuous short-memory vector. Every 10 states reconstruct the corresponding
-teacher 10-second visual summary and trigger an optimizer step. At each full
-minute, the final short loss, the 60-second block-summary loss, and the global
-summary loss are summed with weights 1:1:1 for one step. The update reads the
-previous detached 60-vector long memory and all 60 current short vectors; 60
-repeated `<LONG_MEM>` query positions produce the replacement long memory.
-Earlier short states are detached after their 10-second step and retained until
-the minute boundary. State is reset between videos and epochs. No ASR is read.
-
 Generate visual-only teacher labels from silent video clips using a multimodal
 model on an OpenAI-compatible Chat Completions endpoint. For Gemini via
 OpenRouter, set `OPENROUTER_API_KEY`:
@@ -146,6 +142,16 @@ windows, independent 60-second and cumulative targets, and optional
 60-second `local_summary_target` per block is rejected; the missing 10-second
 and independent block labels cannot be reconstructed from it.
 
+Teacher targets use schema `stage2_facets_v1`: clauses are separated by
+semicolons and written as `Facet: content`. The seven permitted facet labels
+are `View`, `Anatomy`, `Probe`, `Finding`, `Dynamic`, `Measure`, and `Change`.
+The local, block, and global plans use partly overlapping subsets with different
+emphases and 40/80/90-word experiment budgets. `stage2.annotate` validates and
+retries malformed teacher output (three attempts by default); `stage2.build_data`
+parses every target again and rejects unknown, duplicated, disallowed, or
+out-of-order facets. Parsed `facets`, `schema_version`, and annotation settings
+are retained in the generated data for auditability.
+
 The resulting JSONL contains one chronological block per row:
 
 ```json
@@ -158,11 +164,14 @@ fewer complete 10-second labels; it never triggers a long update. Labels must
 be visual-only summaries generated from exactly their stated video intervals.
 
 ```bash
-python -m stage2.train --model-name Qwen/Qwen3.5-2B \
+torchrun --standalone --nproc_per_node=8 -m stage2.train \
+  --model-name Qwen/Qwen3.5-2B \
   --train-jsonl /path/to/blocks.jsonl \
   --video-path-map /path/to/video_path_map.json \
   --output-dir /path/to/stage2_output \
   --init-adapter /path/to/stage1_output/final
+# Resubmit the identical command with --resume after an epoch-boundary preemption.
+# Do not change the model, adapters, data, split, rank, schedule, or epoch count.
 python -m stage2.stream --video /path/to/video.mp4 \
   --adapter-path /path/to/stage2_output/final \
   --output /path/to/memory_state.pt
@@ -172,11 +181,72 @@ python -m stage2.evaluate --eval-jsonl /path/to/held_out_blocks.jsonl \
   --output /path/to/reconstruction_losses.jsonl
 ```
 
+`torchrun` activates single-node DDP automatically; the same module still works
+with plain `python -m stage2.train` on one GPU. DDP assigns each complete video
+to exactly one rank and greedily balances ranks by the number of labelled
+10-second updates, so temporal state is never split across GPUs. Uneven shards
+are handled with DDP Join. Validation sums and counts are reduced over all
+ranks, only rank 0 writes checkpoints, and training metrics are written as
+`training_metrics.rank0.jsonl`, ..., `training_metrics.rank7.jsonl`.
+The packaged `scripts/slurm/run_stage2_train_ddp.sbatch` defaults to two x4
+nodes (eight ranks total), matching the LRZ `*80x4`/`*94x4` node shape. It can
+also be overridden to one x8 node; submit it with the appropriate partition.
+`global_step` counts synchronized optimizer rounds (the longest video shard),
+not the sum of per-rank video updates. A shorter rank may log fewer local
+updates before DDP Join, while rank 0 still completes every round.
+
+Before committing to an eight-GPU run, use two GPUs and a fresh tiny dataset
+with at least two videos. Add `--verify-ddp-gradients` to the normal training
+command; immediately after the first backward pass and before clipping or the
+optimizer step it compares a complete LoRA gradient across both ranks. A
+successful check prints `[ddp-check] synchronized gradient` on rank 0; a
+mismatch stops training. The packaged smoke job uses two real videos and
+**synthetic test summaries**, so it does not require completed teacher labels.
+It runs one full minute (six steps, block/global losses) against one ten-second
+interval (one step, then DDP Join), then checks the logs and checkpoint:
+
+```bash
+cd /path/to/live-ultrasound-video-understanding
+mkdir -p logs
+sbatch --export=ALL,VIDEO_MAP=/path/to/video_paths.json \
+  scripts/slurm/run_stage2_ddp_smoke.sbatch
+```
+
+The default partition is `mcml-hgx-h100-94x4` with `qos=mcml`; override
+these with `sbatch --partition=... --qos=...` if needed. Set `REPO`/`DATA` in
+`--export` when the remote paths differ. The job writes to
+`$DATA/results/stage2_ddp_smoke/<job_id>/` and prints `[smoke] PASS` only after
+all checks succeed. These test targets are not clinical labels and the saved
+adapter must not be used for evaluation or further training.
+Set `STAGE1_ADAPTER=/path/to/stage1_output/final` in `--export` to exercise
+the full Stage 1 → Stage 2 loading path; without it, the smoke starts from the
+same Qwen3.5 base and still tests Stage 2 DDP.
+
+To run the same check interactively instead:
+
+```bash
+torchrun --standalone --nproc_per_node=2 -m stage2.train \
+  --model-name Qwen/Qwen3.5-2B \
+  --init-adapter /path/to/stage1_output/final \
+  --train-jsonl /path/to/two_video_smoke_blocks.jsonl \
+  --video-path-map /path/to/video_path_map.json \
+  --output-dir /path/to/fresh_stage2_ddp_smoke \
+  --validation-fraction 0 \
+  --verify-ddp-gradients
+```
+
 For the three-stage mainline, `--init-adapter` points to the Stage 1 adapter and
 must have been trained from the exact same `Qwen/Qwen3.5-2B` base. Omitting it
 is a Stage 2-from-base ablation, not the full pipeline. Training writes
-per-update component losses to
-`training_metrics.jsonl`. Streaming output contains minute-boundary long
+per-update component losses, learning rate, gradient norm, and `global_step` to
+`training_metrics.jsonl`; held-out component means and their summed selection
+metric go to `validation_metrics.jsonl`. Each `epoch-N` directory contains the
+adapter plus `trainer_state.pt` with optimizer, scheduler, RNG, epoch, and step
+state. `--resume` restores the latest fully completed epoch only; it does not
+resume inside a video or epoch. The video split and invariant experiment config
+must match, including DDP world size (an 8-GPU run resumes on 8 GPUs). The
+lowest held-out summed loss is also saved under `best/`.
+Streaming output contains minute-boundary long
 snapshots and final long/short tensors for a later QA stage. This implementation
 has unit tests for chronology and loss scheduling, plus a held-out
 teacher-forced reconstruction-loss evaluator. A complete Qwen3.5 GPU run and
