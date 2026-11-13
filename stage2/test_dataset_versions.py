@@ -1,4 +1,7 @@
 import unittest
+import tempfile
+from pathlib import Path
+from unittest.mock import patch
 
 from .dataset_versions import default_release, validate_dataset_version
 
@@ -11,6 +14,20 @@ class DatasetVersionTests(unittest.TestCase):
     def test_visual_asr_default_is_separate_future_release(self):
         path = default_release("visual_asr", "/repo", "/cluster/data")
         self.assertEqual(path, __import__("pathlib").Path("/cluster/data/cluster_data/stage2/releases/accepted_av_asr_v1"))
+
+    @patch.dict("os.environ", {}, clear=True)
+    def test_bundled_fallback_and_explicit_external_precedence(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            repo, data = root / "repo", root / "data"
+            bundled = repo / "stage2/releases/accepted_av_asr_v1"
+            bundled.mkdir(parents=True)
+            self.assertEqual(default_release("visual_asr", repo, data), bundled)
+            external = data / "cluster_data/stage2/releases/accepted_av_asr_v1"
+            external.mkdir(parents=True)
+            self.assertEqual(default_release("visual_asr", repo, data), external)
+            with patch.dict("os.environ", {"VISUAL_ASR_DATASET_RELEASE": str(root / "explicit")}):
+                self.assertEqual(default_release("visual_asr", repo, data), root / "explicit")
 
     def test_visual_release_cannot_be_used_as_visual_asr(self):
         manifest = {"schema": "stage2_accepted_release_v1", "training_ready": True,

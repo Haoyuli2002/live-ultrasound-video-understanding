@@ -185,3 +185,48 @@ with `--eval-jsonl "$DATASET_RELEASE/eval.jsonl"`. This verifies the independent
 split and allows visually reviewed prose beyond the legacy word limit. Optional
 `--limit-videos 2` selects the same deterministic video subset for both models.
 Reconstruction detects and reloads Q-Former weights automatically.
+## Dataset versions
+
+Set one field: `DATASET_VERSION=visual_only` or `DATASET_VERSION=visual_asr`.
+The old value `visual` is accepted as an alias for `visual_only`.
+Both architectures use video frames as model input. ASR enriches the supervision
+text in the visual_asr dataset; it is not an added training input.
+
+- visual_only: existing `stage2/releases/accepted_v4_20261105_990b9b48`.
+- visual_asr: `$DATA/cluster_data/stage2/releases/accepted_av_asr_v1` if present;
+  otherwise the bundled `stage2/releases/accepted_av_asr_v1`.
+  `VISUAL_ASR_DATASET_RELEASE` explicitly overrides this location.
+
+Both frozen releases are included in Git. The Visual+ASR release contains
+196 train videos / 17,860 targets and 41 eval videos / 5,590 targets.
+Only labels and provenance are bundled (about 13 MiB); source videos must
+already exist on the cluster. Old Visual-only files are unchanged.
+ASR supplies audio-derived text; direct audio listening and clinical expert
+review are not claimed by this release.
+
+The local audited snapshot lives at `cluster_data/stage2`. Freeze it once into
+a new directory (existing output directories are rejected):
+
+```bash
+python -m stage2.freeze_snapshot --snapshot "$DATA/cluster_data/stage2" \
+  --output "$DATA/cluster_data/stage2/releases/accepted_av_asr_v1"
+```
+
+The snapshot exporter checks hashes, split/source disjointness, full Local
+coverage including trailing complete 10-second windows, and full-minute
+Block/Global coverage. It preserves the snapshot and writes an immutable
+manifest with `dataset_version: visual_asr`. Acceptance is inherited from the
+audited snapshot; freezing is not a new visual or clinical review.
+
+On SSH, after `git pull --ff-only origin main` (no separate label upload needed):
+
+```bash
+DATASET_VERSION=visual_only bash scripts/slurm/submit_stage2_reviewed.sh ordinary
+DATASET_VERSION=visual_asr bash scripts/slurm/submit_stage2_reviewed.sh ordinary
+# Use qformer instead of ordinary and set QFORMER_SMOKE_REPORT for Q-Former.
+```
+
+The selection is checked against label modalities and the release manifest,
+and saved in submission.json, training_config.json and resume invariants.
+A version mismatch fails before submission. These are supervised label
+variants, independent of the ordinary/Q-Former architecture choice.

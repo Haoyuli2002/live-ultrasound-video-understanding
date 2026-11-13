@@ -31,9 +31,12 @@ def default_release(version: str, repo: str | Path, data_root: str | Path | None
         override = os.environ.get("VISUAL_ASR_DATASET_RELEASE")
         if override:
             return Path(override).expanduser()
-        if data_root:
-            return Path(data_root) / "cluster_data" / "stage2" / "releases" / VISUAL_ASR_RELEASE_NAME
-        return repo / "cluster_data" / "stage2" / "releases" / VISUAL_ASR_RELEASE_NAME
+        external = Path(data_root or repo) / "cluster_data" / "stage2" / "releases" / VISUAL_ASR_RELEASE_NAME
+        bundled = repo / "stage2" / "releases" / VISUAL_ASR_RELEASE_NAME
+        # An existing external release must validate; never hide a broken copy.
+        if external.exists():
+            return external
+        return bundled if bundled.exists() else external
     raise ValueError(f"Unknown Stage 2 dataset version: {version!r}; choose {DATASET_VERSIONS}")
 
 
