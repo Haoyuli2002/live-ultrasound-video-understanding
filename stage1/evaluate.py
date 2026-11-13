@@ -12,6 +12,8 @@ from .data import sample_frames
 from .model import encode
 from .train import validate_rows
 from .eval_io import digest, indexed, key, resume_rows
+from .eval_config import add_input_arguments, resolve_input_settings
+from scripts.gpu_runtime import model_kwargs
 
 
 def main():
@@ -19,17 +21,13 @@ def main():
     parser.add_argument("--eval-jsonl", required=True)
     parser.add_argument("--video-path-map", required=True)
     parser.add_argument("--output", required=True)
-    parser.add_argument("--model-name", default="Qwen/Qwen3.5-2B")
+    add_input_arguments(parser)
     parser.add_argument("--adapter-path")
     parser.add_argument("--visual-control", choices=["normal", "blank", "shuffled"], default="normal")
-    parser.add_argument("--frame-budget", type=int, default=120)
-    parser.add_argument("--frame-size", type=int, default=224)
-    parser.add_argument("--frame-sampling", choices=("uniform", "recent_sparse"),
-                        default="uniform")
-    parser.add_argument("--recent-seconds", type=float, default=120.0)
-    parser.add_argument("--max-asr-chars", type=int, default=4000)
     parser.add_argument("--max-new-tokens", type=int, default=128)
     args = parser.parse_args()
+    settings = resolve_input_settings(args)
+    print(f"[eval] matched inputs: {json.dumps(settings)}", flush=True)
 
     from transformers import AutoModelForImageTextToText, AutoProcessor, set_seed
     from peft import PeftModel
@@ -42,6 +40,8 @@ def main():
               "implementation_sha256": digest(__file__),
               "template_sha256": digest(Path(__file__).with_name('model.py')),
               "sampling_sha256": digest(Path(__file__).with_name('data.py'))}
+    if args.training_config:
+        config['training_config_sha256'] = digest(args.training_config)
     if args.adapter_path:
         config['adapter_sha256'] = {p.name: digest(p) for p in sorted(Path(args.adapter_path).glob('*')) if p.is_file()}
     expected = indexed(rows)
@@ -60,9 +60,10 @@ def main():
         raise ValueError('Evaluation video file missing')
     processor = AutoProcessor.from_pretrained(args.adapter_path or args.model_name,
                                               trust_remote_code=True)
-    base = AutoModelForImageTextToText.from_pretrained(args.model_name,
-                                                        torch_dtype=torch.bfloat16,
-                                                        trust_remote_code=True)
+    dtype = {"bf16": torch.bfloat16, "fp16": torch.float16,
+             "fp32": torch.float32}[args.dtype]
+    base = AutoModelForImageTextToText.from_pretrained(
+        args.model_name, trust_remote_code=True, **model_kwargs(dtype))
     model = PeftModel.from_pretrained(base, args.adapter_path) if args.adapter_path else base
     if not torch.cuda.is_available():
         raise RuntimeError("Stage 1 evaluation requires CUDA")

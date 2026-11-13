@@ -1,5 +1,10 @@
 # Stage 1 — paired narration pretraining
 
+> The project-level outline (goals, three-stage status, interfaces, run commands)
+> lives in the root [`README.md`](../README.md) / [`README_zh.md`](../README_zh.md);
+> that is the authoritative entry point. This file keeps only Stage 1 specifics.
+
+
 ## Audited dataset construction (v2)
 
 Use [DATASET_BUILD.md](DATASET_BUILD.md) for word-timed ASR, sentence splitting,
@@ -18,13 +23,14 @@ deterministic, paired examples with the **same target**:
 | `through_with_asr` | `[0, end)` | visible |
 | `before_mask_asr` | `[0, start)` | masked |
 
-The target sentence and later ASR never appear in the prompt. The baseline
-samples up to 120 ordered frames uniformly across the selected interval. For a
-120-second interval this is 1 FPS; long-video prefixes become much sparser.
-`--frame-sampling recent_sparse` is an optional same-budget alternative: with
-the default 120-frame budget it takes 96 frames from the latest 120 seconds and
-24 evenly spaced frames from earlier history. Use the same sampling options in
-training and evaluation. Only assistant
+The target sentence and later ASR never appear in the prompt. The current
+191-video training entry uses `--frame-budget 30 --frame-sampling recent_sparse
+--recent-seconds 15`. For prefixes longer than 30 seconds, 15 frames cover earlier
+history uniformly and 15 cover the latest 15 seconds at 1 FPS; shorter prefixes
+use the available frame budget. This is a 30-frame budget over the causal prefix,
+not a 30-second sliding window. Evaluation restores the actual saved training
+settings, including historical experiments with other budgets or uniform sampling.
+See [EVALUATION.md](EVALUATION.md) for the matched base/LoRA workflow. Only assistant
 target tokens receive NTP loss. The training split is by video, so all three
 conditions for a sentence remain together.
 
@@ -101,7 +107,8 @@ python -m stage1.data --transcripts results/transcripts_stage1_qwen35_clean \
   --output stage1/samples.jsonl
 python -m stage1.train --train-jsonl stage1/samples.jsonl \
   --video-path-map /path/to/video_path_map.json \
-  --output-dir /path/to/stage1_output
+  --output-dir /path/to/stage1_output \
+  --frame-budget 30 --frame-sampling recent_sparse --recent-seconds 15
 python -m stage1.evaluate \
   --eval-jsonl /path/to/stage1_output/validation_samples.jsonl \
   --video-path-map /path/to/video_path_map.json \

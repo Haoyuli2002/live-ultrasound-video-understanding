@@ -4,21 +4,31 @@ set -euo pipefail
 [[ $# == 0 || ( $# == 1 && $1 == --dry-run ) ]] || { echo 'Usage: bash scripts/slurm/submit_stage1_eval.sh [--dry-run]'; exit 2; }
 export REPO=${REPO:-$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)}
 export DATA=${DATA:-/dss/mcmlscratch/04/ge75vid2/haoyu/live-ultrasound-video-understanding}
-export OUTPUT_DIR=${OUTPUT_DIR:-$DATA/cluster_data/experiments/stage1/stage1_full186_2b_4gpu_f30_e1_20261025_052451}
+: "${OUTPUT_DIR:?Set OUTPUT_DIR to the training run to evaluate}"
+export OUTPUT_DIR
 MODE=${MODE:-smoke}
 case "$MODE" in
   smoke) export LIMIT_TARGETS=${LIMIT_TARGETS:-10}; EVAL_TIME=${EVAL_TIME:-01:00:00}; JUDGE_TIME=${JUDGE_TIME:-01:00:00} ;;
   full) export LIMIT_TARGETS=${LIMIT_TARGETS:-0}; EVAL_TIME=${EVAL_TIME:-24:00:00}; JUDGE_TIME=${JUDGE_TIME:-24:00:00} ;;
   *) echo 'MODE must be smoke or full' >&2; exit 2 ;;
 esac
-export EVAL_DIR=${EVAL_DIR:-$OUTPUT_DIR/eval_${MODE}_f30}
+export EVAL_DIR=${EVAL_DIR:-$OUTPUT_DIR/eval_${MODE}_matched}
+export TRAINING_CONFIG="$OUTPUT_DIR/training_config.json"
+if [[ -n ${EVAL_JSONL:-} && -z ${EVAL_VIDEO_MAP:-} ]]; then
+  echo 'Set EVAL_VIDEO_MAP together with an explicit EVAL_JSONL.' >&2; exit 1
+fi
 export EVAL_JSONL=${EVAL_JSONL:-$OUTPUT_DIR/validation_samples.jsonl}
-export EVAL_VIDEO_MAP=${EVAL_VIDEO_MAP:-$DATA/cluster_data/splits/train_full295_qwen35_pretrain_keep_videos.json}
-export FRAME_BUDGET=${FRAME_BUDGET:-30} FRAME_SIZE=${FRAME_SIZE:-224} FRAME_SAMPLING=${FRAME_SAMPLING:-uniform}
-export RECENT_SECONDS=${RECENT_SECONDS:-15}
-export MODEL_NAME=${MODEL_NAME:-Qwen/Qwen3.5-2B} JUDGE_MODEL=${JUDGE_MODEL:-Qwen/Qwen3.5-27B}
+export JUDGE_MODEL=${JUDGE_MODEL:-Qwen/Qwen3.5-27B}
 export VISUAL_CONTROLS=${VISUAL_CONTROLS:-normal}
 cd "$REPO"
+python3 -m stage1.eval_config --training-config "$TRAINING_CONFIG"
+if [[ -z ${EVAL_VIDEO_MAP:-} ]]; then
+  EVAL_VIDEO_MAP=$(python3 -c 'import json,sys; print(json.load(open(sys.argv[1]))["video_path_map"])' "$TRAINING_CONFIG")
+fi
+export EVAL_VIDEO_MAP
+[[ -s "$EVAL_JSONL" ]] || {
+  echo 'No evaluation samples. For training with validation_fraction=0, set EVAL_JSONL and EVAL_VIDEO_MAP to the independent evaluation split.' >&2; exit 1;
+}
 [[ -s "$OUTPUT_DIR/final/adapter_model.safetensors" && -s "$OUTPUT_DIR/final/adapter_config.json" ]]
 [[ -s "$EVAL_JSONL" && -s "$OUTPUT_DIR/video_split.json" && -s "$EVAL_VIDEO_MAP" ]]
 for control in $VISUAL_CONTROLS; do
