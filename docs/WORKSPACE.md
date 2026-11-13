@@ -1,5 +1,7 @@
 # 主仓库与数据目录
 
+跨电脑接手请先阅读 [Stage2 交接文档（含 Stage3 数据与 SSH 视频核验）](STAGE2_HANDOFF_20261113.md)。
+
 本机主仓库：`/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding`。
 后续修改、测试、提交和推送均从这里进行。
 `Documents/Codex/2026-10-23/wo-y/work/stage2-overfit-ab` 是历史工作副本。
