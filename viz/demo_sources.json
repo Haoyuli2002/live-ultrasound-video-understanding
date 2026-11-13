@@ -1,0 +1,252 @@
+{
+  "videos": [
+    {
+      "video_id": "P3FoSFIrfQA",
+      "title": "心尖四腔心切面",
+      "video": "UltrasoundCrawler_KeyCode_20260323_v2/output/20260726_153916_youtube/media/organ_system_lecture/P3FoSFIrfQA.mp4",
+      "stage2": {
+        "path": "viz/data/stage2_reviewed_20261105/P3FoSFIrfQA/blocks.jsonl",
+        "video": "cluster_data/videos_from_ssh/train_full295/P3FoSFIrfQA.mp4",
+        "note": "最终验收版 · 原尺寸视觉复核；英文监督标注，非模型重建结果。",
+        "provenance_path": "viz/data/stage2_reviewed_20261105/P3FoSFIrfQA/provenance.json",
+        "acceptance_path": "viz/data/stage2_reviewed_20261105/P3FoSFIrfQA/acceptance.json"
+      },
+      "stage1": {
+        "path": "viz/data/P3FoSFIrfQA_stage1.jsonl",
+        "frame_budget": 30,
+        "frame_size": 224,
+        "note": "SSH 全量 Stage 1 样本的原样提取；属于实际训练集。按训练模板截取历史 ASR，最多 4000 字符。未加载预测结果。"
+      },
+      "stage3": {
+        "path": "viz/data/stage3_batch/P3FoSFIrfQA_tasks.jsonl",
+        "note": "本批英文 QA：6 题 · train · Stage3 high。原尺寸三遍抽样自审，关键边界逐秒复核；非独立盲审或模型输出。全批 10 视频 / 45 题，22 即时 + 22 延迟 + 1 未触发负例。",
+        "video": "cluster_data/videos_from_ssh/train_full295/P3FoSFIrfQA.mp4"
+      }
+    },
+    {
+      "video_id": "izxn8kXvUGk",
+      "title": "剑突下心脏超声切面",
+      "video": "UltrasoundCrawler_KeyCode_20260323_v2/output/20260726_153916_youtube/media/organ_system_lecture/izxn8kXvUGk.mp4",
+      "stage2": {
+        "path": "viz/data/izxn8kXvUGk_stage2.jsonl",
+        "note": "助手按无声视频采样帧生成的视觉标注草稿；不是 Qwen 输出，也不是模型预测。"
+      }
+    },
+    {
+      "video_id": "8V649L5Q368",
+      "title": "肺超声",
+      "video": "UltrasoundCrawler_KeyCode_20260323_v2/output/20260520_162816_youtube/media/case_reasoning/8V649L5Q368.mp4",
+      "stage2": {
+        "path": "viz/data/stage2_reviewed_20261105/8V649L5Q368/blocks.jsonl",
+        "video": "cluster_data/videos_from_ssh/train_full295/8V649L5Q368.mp4",
+        "note": "最终验收版 · 原尺寸视觉复核；英文监督标注，非模型重建结果。",
+        "provenance_path": "viz/data/stage2_reviewed_20261105/8V649L5Q368/provenance.json",
+        "acceptance_path": "viz/data/stage2_reviewed_20261105/8V649L5Q368/acceptance.json"
+      },
+      "stage3": {
+        "path": "viz/data/8V649L5Q368_qa.jsonl",
+        "note": "历史 streaming QA 候选标签，来源 results_v2_waitreason_midpoint；Stage 3 完整训练与在线推理流程尚未完成。窗口及元数据按源文件原样展示。"
+      },
+      "stage1": {
+        "path": "viz/data/8V649L5Q368_stage1.jsonl",
+        "frame_budget": 30,
+        "frame_size": 224,
+        "note": "SSH train_full295_stage1_samples.jsonl 原样提取；属于实际训练集。使用 30 帧训练配置和历史 ASR 模板，未加载预测结果。"
+      }
+    },
+    {
+      "video_id": "Yzwk-sjdics",
+      "title": "Upper-chest vascular scanning",
+      "video": "cluster_data/videos_from_ssh/train_full295/Yzwk-sjdics.mp4",
+      "stage3": {
+        "path": "viz/data/stage3_batch/Yzwk-sjdics_tasks.jsonl",
+        "note": "本批英文 QA：4 题 · train · Stage3 high。原尺寸三遍抽样自审，关键边界逐秒复核；非独立盲审或模型输出。全批 10 视频 / 45 题，22 即时 + 22 延迟 + 1 未触发负例。"
+      }
+    },
+    {
+      "video_id": "AH8RcdMQMHA",
+      "title": "Kidney long- and short-axis views",
+      "video": "cluster_data/videos_from_ssh/eval_full295/AH8RcdMQMHA.mp4",
+      "stage3": {
+        "path": "viz/data/stage3_batch/AH8RcdMQMHA_tasks.jsonl",
+        "note": "本批英文 QA：4 题 · eval · Stage3 high。原尺寸三遍抽样自审，关键边界逐秒复核；非独立盲审或模型输出。全批 10 视频 / 45 题，22 即时 + 22 延迟 + 1 未触发负例。"
+      },
+      "stage2": {
+        "path": "viz/data/stage2_reviewed_20261105/AH8RcdMQMHA/blocks.jsonl",
+        "video": "cluster_data/videos_from_ssh/eval_full295/AH8RcdMQMHA.mp4",
+        "note": "最终验收版 · 原尺寸视觉复核；英文监督标注，非模型重建结果。",
+        "provenance_path": "viz/data/stage2_reviewed_20261105/AH8RcdMQMHA/provenance.json",
+        "acceptance_path": "viz/data/stage2_reviewed_20261105/AH8RcdMQMHA/acceptance.json"
+      }
+    },
+    {
+      "video_id": "vmmrjy1bhEc",
+      "title": "Inferior vena cava scanning",
+      "video": "cluster_data/videos_from_ssh/train_full295/vmmrjy1bhEc.mp4",
+      "stage3": {
+        "path": "viz/data/stage3_batch/vmmrjy1bhEc_tasks.jsonl",
+        "note": "本批英文 QA：4 题 · train · Stage3 medium。原尺寸三遍抽样自审，关键边界逐秒复核；非独立盲审或模型输出。全批 10 视频 / 45 题，22 即时 + 22 延迟 + 1 未触发负例。"
+      }
+    },
+    {
+      "video_id": "LDIo6xQS7Hc",
+      "title": "Abdominal fluid ultrasound",
+      "video": "cluster_data/videos_from_ssh/train_full295/LDIo6xQS7Hc.mp4",
+      "stage3": {
+        "path": "viz/data/stage3_batch/LDIo6xQS7Hc_tasks.jsonl",
+        "note": "本批英文 QA：5 题 · train · Stage3 medium。原尺寸三遍抽样自审，关键边界逐秒复核；非独立盲审或模型输出。全批 10 视频 / 45 题，22 即时 + 22 延迟 + 1 未触发负例。"
+      }
+    },
+    {
+      "video_id": "9vW1uo7mKDc",
+      "title": "Ultrasound needle and tissue changes",
+      "video": "cluster_data/videos_from_ssh/train_full295/9vW1uo7mKDc.mp4",
+      "stage3": {
+        "path": "viz/data/stage3_batch/9vW1uo7mKDc_tasks.jsonl",
+        "note": "本批英文 QA：4 题 · train · Stage3 high。原尺寸三遍抽样自审，关键边界逐秒复核；非独立盲审或模型输出。全批 10 视频 / 45 题，22 即时 + 22 延迟 + 1 未触发负例。"
+      },
+      "stage2": {
+        "path": "viz/data/stage2_reviewed_20261105/9vW1uo7mKDc/blocks.jsonl",
+        "video": "cluster_data/videos_from_ssh/train_full295/9vW1uo7mKDc.mp4",
+        "note": "最终验收版 · 原尺寸视觉复核；英文监督标注，非模型重建结果。",
+        "provenance_path": "viz/data/stage2_reviewed_20261105/9vW1uo7mKDc/provenance.json",
+        "acceptance_path": "viz/data/stage2_reviewed_20261105/9vW1uo7mKDc/acceptance.json"
+      }
+    },
+    {
+      "video_id": "m9s5AD_lBkY",
+      "title": "Cardiac image acquisition",
+      "video": "cluster_data/videos_from_ssh/train_full295/m9s5AD_lBkY.mp4",
+      "stage3": {
+        "path": "viz/data/stage3_batch/m9s5AD_lBkY_tasks.jsonl",
+        "note": "本批英文 QA：4 题 · train · Stage3 high。原尺寸三遍抽样自审，关键边界逐秒复核；非独立盲审或模型输出。全批 10 视频 / 45 题，22 即时 + 22 延迟 + 1 未触发负例。"
+      }
+    },
+    {
+      "video_id": "ClZOJGWUbKo",
+      "title": "Vascular phantom target tracking",
+      "video": "cluster_data/videos_from_ssh/train_full295/ClZOJGWUbKo.mp4",
+      "stage3": {
+        "path": "viz/data/stage3_batch/ClZOJGWUbKo_tasks.jsonl",
+        "note": "本批英文 QA：4 题 · train · Stage3 high。原尺寸三遍抽样自审，关键边界逐秒复核；非独立盲审或模型输出。全批 10 视频 / 45 题，22 即时 + 22 延迟 + 1 未触发负例。"
+      }
+    },
+    {
+      "video_id": "ybVsUDamHQA",
+      "title": "Fascial-plane scanning",
+      "video": "cluster_data/videos_from_ssh/eval_full295/ybVsUDamHQA.mp4",
+      "stage3": {
+        "path": "viz/data/stage3_batch/ybVsUDamHQA_tasks.jsonl",
+        "note": "本批英文 QA：4 题 · eval · Stage3 high。原尺寸三遍抽样自审，关键边界逐秒复核；非独立盲审或模型输出。全批 10 视频 / 45 题，22 即时 + 22 延迟 + 1 未触发负例。"
+      }
+    },
+    {
+      "video_id": "CzLE1i4NSoU",
+      "title": "Infraclavicular and supraclavicular vascular scanning",
+      "video": "cluster_data/videos_from_ssh/train_full295/CzLE1i4NSoU.mp4",
+      "stage3": {
+        "path": "viz/data/stage3_batch/CzLE1i4NSoU_tasks.jsonl",
+        "note": "本批英文 QA：6 题 · train · Stage3 high。原尺寸三遍抽样自审，关键边界逐秒复核；非独立盲审或模型输出。全批 10 视频 / 45 题，22 即时 + 22 延迟 + 1 未触发负例。"
+      }
+    },
+    {
+      "video_id": "466cDoLdVZQ",
+      "title": "下肢区域麻醉教学",
+      "video": "cluster_data/videos_from_ssh/train_full295/466cDoLdVZQ.mp4",
+      "stage2": {
+        "path": "viz/data/stage2_reviewed_20261105/466cDoLdVZQ/blocks.jsonl",
+        "video": "cluster_data/videos_from_ssh/train_full295/466cDoLdVZQ.mp4",
+        "note": "最终验收版 · 原尺寸视觉复核；英文监督标注，非模型重建结果。",
+        "provenance_path": "viz/data/stage2_reviewed_20261105/466cDoLdVZQ/provenance.json",
+        "acceptance_path": "viz/data/stage2_reviewed_20261105/466cDoLdVZQ/acceptance.json"
+      }
+    }
+  ],
+  "presentation": {
+    "title": "Stage 2 · 已验收样本",
+    "note": "5 个演示视频，来自 237 视频的最终验收批次。点击例子，对照原视频与三种时间范围的监督文本。",
+    "release_manifest_sha256": "990b9b489194028ee4437ef64def17ee515d3cf273702c750633c22df834cb4b",
+    "features": [
+      {
+        "video_id": "P3FoSFIrfQA",
+        "title": "心脏切面与探头定位",
+        "tag": "切面切换",
+        "focus": "从四腔心到五腔心，对照当前 10 秒与整分钟摘要。",
+        "stage": "stage2",
+        "sample": 1,
+        "local": 3,
+        "split": "train",
+        "preview": "../viz/data/stage2_reviewed_20261105/P3FoSFIrfQA/preview.jpg",
+        "preview_time": 94.010583,
+        "window": [
+          60.0,
+          120.0
+        ]
+      },
+      {
+        "video_id": "8V649L5Q368",
+        "title": "肺超声与胸壁扫查",
+        "tag": "跨分钟理解",
+        "focus": "当前肝膈切面与此前肺超声内容分别出现在 Block 和 Global 中。",
+        "stage": "stage2",
+        "sample": 5,
+        "local": 4,
+        "split": "train",
+        "preview": "../viz/data/stage2_reviewed_20261105/8V649L5Q368/preview.jpg",
+        "preview_time": 345.011333,
+        "window": [
+          300.0,
+          360.0
+        ]
+      },
+      {
+        "video_id": "AH8RcdMQMHA",
+        "title": "肾脏长短轴切面",
+        "tag": "片尾不足一分钟",
+        "focus": "最后不足一分钟仅有 Local 监督，不补造 Block 或 Global。",
+        "stage": "stage2",
+        "sample": 1,
+        "local": 2,
+        "split": "eval",
+        "preview": "../viz/data/stage2_reviewed_20261105/AH8RcdMQMHA/preview.jpg",
+        "preview_time": 89.916667,
+        "window": [
+          60.0,
+          113.0
+        ]
+      },
+      {
+        "video_id": "9vW1uo7mKDc",
+        "title": "锁骨上神经阻滞教学",
+        "tag": "针与组织关系",
+        "focus": "保留可见针干与解剖关系，不据此确认注射或操作成功。",
+        "stage": "stage2",
+        "sample": 1,
+        "local": 5,
+        "split": "train",
+        "preview": "../viz/data/stage2_reviewed_20261105/9vW1uo7mKDc/preview.jpg",
+        "preview_time": 115.0,
+        "window": [
+          60.0,
+          120.0
+        ]
+      },
+      {
+        "video_id": "466cDoLdVZQ",
+        "title": "下肢区域麻醉教学",
+        "tag": "教学图示的边界",
+        "focus": "区分踝部解剖、教学照片和超声，不把图示写成实时操作。",
+        "stage": "stage2",
+        "sample": 25,
+        "local": 1,
+        "split": "train",
+        "preview": "../viz/data/stage2_reviewed_20261105/466cDoLdVZQ/preview.jpg",
+        "preview_time": 1515.0135,
+        "window": [
+          1500.0,
+          1560.0
+        ]
+      }
+    ]
+  }
+}

@@ -98,4 +98,4 @@ echo "Serving repo root on http://127.0.0.1:${PORT}/ (Ctrl-C to stop)"
 echo "On your laptop:  ssh -N -L ${PORT}:localhost:${PORT} <user>@<host>"
 echo "Then open:       http://localhost:${PORT}/viz/index.html"
 echo
-exec python -m http.server "$PORT"
+exec python scripts/viz_serve.py --port "$PORT" --directory "$REPO"

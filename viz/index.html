@@ -1,45 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Stage 1 Three-Condition Visualizer</title>
-<link rel="stylesheet" href="style.css">
-</head>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ultrasound · Stage 数据浏览器</title><link rel="stylesheet" href="style.css?v=library-20261110"><link rel="stylesheet" href="onestreamer-examples.css?v=20261109"></head>
 <body>
-<header>
-  <h1>Stage 1 &mdash; Three Matched Conditions</h1>
-  <p class="sub">Same target sentence, different inputs. See exactly what the model is fed.</p>
-</header>
-<section class="controls">
-  <label>Target sentence:
-    <select id="sentence-select"></select>
-  </label>
-  <label>Frame sampling:
-    <select id="sampling-select">
-      <option value="uniform">uniform</option>
-      <option value="recent_sparse">recent_sparse</option>
-    </select>
-  </label>
-  <span id="meta" class="meta"></span>
+<header><label class="language-control"><span data-i18n="语言">Language</span><select id="language-select" aria-label="Language / 语言"><option value="en">English</option><option value="zh">中文</option></select></label><p class="eyebrow" data-i18n="ULTRASOUND · DATA EXPLORER">ULTRASOUND · DATA EXPLORER</p><h1 data-i18n="同一视频，不同阶段的训练样本">同一视频，不同阶段的训练样本</h1><p class="sub" data-i18n="对照原视频，查看实际输入、监督目标与数据来源。">对照原视频，查看实际输入、监督目标与数据来源。</p><p class="os-jump"><a href="#onestreamer-examples">OneStreamer Open Source Dataset examples ↓</a></p></header>
+<nav class="view-tabs" aria-label="Demo views"><button type="button" id="tab-stages" class="view-tab active" aria-selected="true" data-i18n="训练样本">训练样本</button><button type="button" id="tab-library" class="view-tab" aria-selected="false" data-i18n="全部视频与评级">全部视频与评级</button></nav>
+<section id="presentation" class="presentation stage-view" hidden>
+<div class="presentation-heading"><div><p class="eyebrow" data-i18n="STAGE 2 · REVIEWED EXAMPLES">STAGE 2 · REVIEWED EXAMPLES</p><h2 id="presentation-title"></h2><p id="presentation-note" class="sub"></p></div><span class="review-badge" data-i18n="英文监督标注 · 非模型输出">英文监督标注 · 非模型输出</span></div>
+<div id="featured-videos" class="featured-videos"></div></section>
+<p id="translation-note" class="translation-note stage-view" data-i18n="中文为展示译文；训练原文仍为英文。"></p>
+<section class="controls stage-view">
+<label><span data-i18n="视频">视频</span> <select id="video-select" disabled></select></label>
+<label><span data-i18n="阶段">阶段</span> <select id="stage-select" disabled><option value="stage1" data-i18n="Stage 1 · 下一句预测">Stage 1 · 下一句预测</option><option value="stage2" data-i18n="Stage 2 · 视觉摘要">Stage 2 · 视觉摘要</option><option value="stage3" data-i18n="Stage 3 · Streaming QA">Stage 3 · Streaming QA</option></select></label>
+<label id="sample-label"><span data-i18n="样本">样本</span> <select id="sample-select" disabled></select></label>
 </section>
-<section class="player">
-  <video id="video" controls preload="metadata"></video>
-  <div id="timeline" class="timeline">
-    <div id="tl-sentence" class="tl-sentence" title="target sentence interval"></div>
-    <div id="tl-playhead" class="tl-playhead"></div>
-    <div id="tl-frames" class="tl-frames"></div>
-  </div>
-  <div class="tl-legend">
-    <span class="dot frame"></span> sampled frame
-    <span class="dot target"></span> target sentence interval
-  </div>
+<section class="source-panel stage-view"><div id="meta" class="meta"></div><p id="status"></p><details><summary data-i18n="数据来源与校验摘要">数据来源与校验摘要</summary><p id="source"></p></details></section>
+<section class="player stage-view"><video id="video" controls preload="metadata"></video>
+<div id="timeline" class="timeline" role="slider" tabindex="0" aria-label="视频时间轴" aria-valuemin="0"><div id="tl-input" class="tl-input"></div><div id="tl-sentence" class="tl-sentence"></div><div id="tl-frames" class="tl-frames"></div><div id="tl-playhead" class="tl-playhead"></div></div>
+<div class="tl-legend"><span data-i18n="蓝色：选中视频窗口／采样点">蓝色：选中视频窗口／采样点</span><span id="sentence-legend" data-i18n="黄色：目标句时间段">黄色：目标句时间段</span><span id="window-label"></span></div></section>
+<section id="target-banner" class="target-banner stage-view" hidden><span class="label" data-i18n="参考目标 · 非模型预测">参考目标 · 非模型预测</span><span id="target-text" class="target-text"></span></section>
+<section id="empty" class="empty stage-view" hidden></section><section id="columns" class="columns stage-view"></section>
+<section id="onestreamer-examples" class="os-section stage-view" aria-labelledby="os-heading">
+<div class="presentation-heading"><div><p class="eyebrow">PUBLIC TRAINING DATA · VIDEO + QA</p><h2 id="os-heading">OneStreamer Open Source Dataset examples</h2><p class="sub">Official video–annotation pairs · 官方视频与标注配对。English source text with Chinese display translations.</p></div><a class="os-source-link" href="https://huggingface.co/datasets/MCG-NJU/OneStreamer-1M" target="_blank" rel="noopener">Dataset ↗</a></div>
+<p class="os-intro">Ground-truth training annotations, not model predictions · 以下是训练标注，不是模型输出。Select a timestamp to inspect its video context.</p>
+<div id="os-examples" class="os-grid"><p role="status">Loading dataset examples…</p></div>
 </section>
-<section class="target-banner">
-  <span class="label">TARGET (identical for all three):</span>
-  <span id="target-text" class="target-text"></span>
+<section id="video-library" class="video-library" aria-labelledby="library-heading" hidden>
+<div class="presentation-heading"><div><p class="eyebrow" data-i18n="视频标签目录">视频标签目录</p><h2 id="library-heading" data-i18n="全部视频与各 Stage 价值">全部视频与各 Stage 价值</h2><p class="sub" data-i18n="原始视频类型与评级；选择视频可播放原文件。">原始视频类型与评级；选择视频可播放原文件。</p></div><span id="library-total" class="review-badge"></span></div>
+<div class="library-filters">
+<label><span data-i18n="搜索视频 ID 或主题">搜索视频 ID 或主题</span><input id="library-search" type="search" autocomplete="off" placeholder="Video ID / topic"></label>
+<label><span data-i18n="视频类型">视频类型</span><select id="library-type"></select></label>
+<label><span data-i18n="查看 Stage">查看 Stage</span><select id="library-stage"><option value="stage1">Stage 1</option><option value="stage2">Stage 2</option><option value="stage3">Stage 3</option></select></label>
+<label><span data-i18n="价值筛选">价值筛选</span><select id="library-value"></select></label>
+</div>
+<p id="library-provenance" class="library-provenance"></p>
+<div class="library-layout"><div class="library-list"><p id="library-count" role="status"></p><div id="library-rows" class="library-rows"></div></div><article id="library-detail" class="library-detail"><div id="library-video-info"></div><video id="library-video" controls preload="metadata"></video><div id="library-stage-data"><div class="library-data-head"><h3 id="library-data-heading"></h3><label><span data-i18n="数据版本">数据版本</span><select id="library-collection"></select></label></div><p id="library-data-count"></p><div id="library-data-list" class="library-data-list"></div><div id="library-record-detail" class="library-record-detail"></div></div></article></div>
 </section>
-<section id="columns" class="columns"></section>
-<script src="app.js?v=2"></script>
-</body>
-</html>
+<footer data-i18n="展示数据样本，不执行模型推理。视频中的音频不代表 Stage 2 模型输入包含音频。">展示数据样本，不执行模型推理。视频中的音频不代表 Stage 2 模型输入包含音频。</footer>
+<script src="i18n.js?v=bilingual-20261105b"></script>
+<script src="app.js?v=bilingual-20261105b"></script><script src="onestreamer-examples.js?v=20261109b"></script><script src="video-library.js?v=20261110"></script></body></html>
