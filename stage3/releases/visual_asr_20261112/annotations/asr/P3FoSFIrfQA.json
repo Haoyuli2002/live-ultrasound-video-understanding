@@ -1,0 +1,168 @@
+{
+  "video_id": "P3FoSFIrfQA",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/P3FoSFIrfQA/asr.txt",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 3.58,
+      "text": "This is the apical four chamber view of the cardiac ultrasound."
+    },
+    {
+      "start": 4.82,
+      "end": 8.86,
+      "text": "So for this view, from the patient's short axis here,"
+    },
+    {
+      "start": 10.42,
+      "end": 14.9,
+      "text": "you can use your short axis view to help you obtain your apical four chamber view."
+    },
+    {
+      "start": 15.87,
+      "end": 19.6,
+      "text": "So here is the short axis view, and as we're coming down,"
+    },
+    {
+      "start": 20.0,
+      "end": 21.74,
+      "text": "if you think of the heart as a cylinder,"
+    },
+    {
+      "start": 22.36,
+      "end": 24.42,
+      "text": "the cylinder gets smaller as you get towards the apex."
+    },
+    {
+      "start": 24.78,
+      "end": 30.85,
+      "text": "And you can see how the left ventures getting smaller and smaller as you reach the apex."
+    },
+    {
+      "start": 30.85,
+      "end": 36.33,
+      "text": "And once you reach the area where it's the smallest, you tilt your probe down and you can"
+    },
+    {
+      "start": 36.33,
+      "end": 38.69,
+      "text": "get your apical four chamber view."
+    },
+    {
+      "start": 38.91,
+      "end": 43.23,
+      "text": "I found that's the easiest way to look for the apical four chamber view."
+    },
+    {
+      "start": 43.63,
+      "end": 49.13,
+      "text": "You can also feel for the PMI and place your probe there, especially for females if you"
+    },
+    {
+      "start": 49.13,
+      "end": 51.61,
+      "text": "can't use the approach that I just told you about."
+    },
+    {
+      "start": 52.13,
+      "end": 55.49,
+      "text": "So here is a view of the apical four chamber view."
+    },
+    {
+      "start": 55.49,
+      "end": 62.27,
+      "text": "You can identify the left ventricle, the right ventricle, the left atrium, the right atrium,"
+    },
+    {
+      "start": 63.14,
+      "end": 65.89,
+      "text": "the mitral valve, and the tricuspid valve."
+    },
+    {
+      "start": 66.7,
+      "end": 70.44,
+      "text": "And sometimes you'll get certain views that look a little bit different from that, and"
+    },
+    {
+      "start": 70.44,
+      "end": 72.02,
+      "text": "that really depends on your angle of your probe."
+    },
+    {
+      "start": 72.4,
+      "end": 77.48,
+      "text": "So if I tilt my probe down towards this foot, you can see that that's actually what they're"
+    },
+    {
+      "start": 77.48,
+      "end": 80.7,
+      "text": "called a coronary sinus view, you can see a coronary sinus coming to view there."
+    },
+    {
+      "start": 81.16,
+      "end": 87.6,
+      "text": "As I tilt it more towards his head, it gives you the apical fore chamber view, and if I can"
+    },
+    {
+      "start": 87.6,
+      "end": 89.1,
+      "text": "go even more towards its head."
+    },
+    {
+      "start": 89.28,
+      "end": 93.6,
+      "text": "Superiorly, you'll see that you get the apical five chamber"
+    },
+    {
+      "start": 93.6,
+      "end": 93.88,
+      "text": "view."
+    },
+    {
+      "start": 94.26,
+      "end": 95.94,
+      "text": "And this is a more advanced view looking"
+    },
+    {
+      "start": 95.94,
+      "end": 97.9,
+      "text": "for cardiac output assessment."
+    },
+    {
+      "start": 99.32,
+      "end": 101.98,
+      "text": "This view is good for looking at the comparison"
+    },
+    {
+      "start": 101.98,
+      "end": 104.64,
+      "text": "of the right ventricle to left ventricle,"
+    },
+    {
+      "start": 104.78,
+      "end": 107.22,
+      "text": "especially in patients with pulmonary embolism"
+    },
+    {
+      "start": 107.22,
+      "end": 110.66,
+      "text": "when you want to see if the RV or the right ventricle"
+    },
+    {
+      "start": 110.66,
+      "end": 111.88,
+      "text": "has been dilated."
+    },
+    {
+      "start": 113.94,
+      "end": 117.04,
+      "text": "And also, you can see the sizes of the chambers of the atria"
+    },
+    {
+      "start": 117.04,
+      "end": 120.1,
+      "text": "to see if there's any dilation in the left or right atria."
+    }
+  ]
+}

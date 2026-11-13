@@ -1,0 +1,88 @@
+{
+  "video_id": "I3Jqbxa1_Ts",
+  "reviewer": "stage3_b",
+  "review_scope": "Question-led review by Agent B of Agent A draft; not blind. Native full-frame sampled checkpoints and available time-indexed ASR; no continuous replay or direct listening claim.",
+  "reviewer_native_opened": [
+    405,
+    575,
+    576,
+    577,
+    578,
+    579,
+    580,
+    581,
+    582,
+    583,
+    584,
+    585,
+    586,
+    587,
+    588,
+    589,
+    590,
+    591,
+    592,
+    593,
+    594,
+    595,
+    625,
+    626,
+    627,
+    628,
+    629,
+    630,
+    635,
+    725
+  ],
+  "tasks": [
+    {
+      "task_index": 1,
+      "outcome": "accepted",
+      "issues": [],
+      "changes": [],
+      "query_status": "ANSWER405; dark shallow channel extends toward wider right space."
+    },
+    {
+      "task_index": 2,
+      "outcome": "repaired",
+      "issues": [
+        "Native480x270 images580-595 do not reliably establish exact needle tip inside versus at vessel wall. Original intraluminal-trigger claim too precise."
+      ],
+      "changes": [
+        "Replaced condition with actual clearly visible sonographic needle approach. Query575 external image; answer578 clear shaft approaches channel margin. Added576/577 checkpoints."
+      ],
+      "query_status": "WAIT575; coming sonographic shaft not yet displayed.",
+      "answer_status": "ANSWER578; oblique left-side shaft and dark channel margin visible."
+    },
+    {
+      "task_index": 3,
+      "outcome": "replaced_to_avoid_duplication",
+      "issues": [
+        "Original current595 needle-direction question would duplicate repaired event."
+      ],
+      "changes": [
+        "Replaced with immediate external wire/syringe arrangement observation625."
+      ],
+      "query_status": "ANSWER625; thinwire lower-left toward bluehub, stabilizing glovedhand visible."
+    },
+    {
+      "task_index": 4,
+      "outcome": "corrected",
+      "issues": [
+        "Thin line may be confused with vessel wall at native resolution; no basis for unseenSVC tip. Earlier sufficient line-course view629."
+      ],
+      "changes": [
+        "Advanced635 to629. Describe bright line along lower channel border, avoid asserting exact intraluminal position."
+      ],
+      "query_status": "WAIT625; external close-up does not establish later sonographic line course.",
+      "answer_status": "ANSWER629; compared line courses visible with595historicalframe."
+    },
+    {
+      "task_index": 5,
+      "outcome": "accepted",
+      "issues": [],
+      "changes": [],
+      "query_status": "ANSWER725;575 unique external demonstration shows syringe lateral/left of probe and red trajectory toward medial sternalnotch."
+    }
+  ]
+}

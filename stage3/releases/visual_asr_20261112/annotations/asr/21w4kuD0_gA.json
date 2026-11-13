@@ -1,0 +1,363 @@
+{
+  "video_id": "21w4kuD0_gA",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/21w4kuD0_gA/asr.txt",
+  "segments": [
+    {
+      "start": 13.620000000000001,
+      "end": 17.0,
+      "text": "Ultrasound guided central lines are rapidly becoming standard to care."
+    },
+    {
+      "start": 17.509999999999998,
+      "end": 19.71,
+      "text": "Ultrasound allows us to do this procedure."
+    },
+    {
+      "start": 20.0,
+      "end": 23.2,
+      "text": "much safer than a standard blind landmark approach."
+    },
+    {
+      "start": 23.84,
+      "end": 28.68,
+      "text": "In this segment, I'm going to take you through how we can map the jugular vein for the procedure of an"
+    },
+    {
+      "start": 28.68,
+      "end": 29.98,
+      "text": "Integral Juggerloin"
+    },
+    {
+      "start": 30.0,
+      "end": 33.94,
+      "text": "using the central approach. So let me show you how we'll position our ultrasound."
+    },
+    {
+      "start": 34.58,
+      "end": 38.84,
+      "text": "We have our model here lying down. Normally we'll be at the head of the bed and if"
+    },
+    {
+      "start": 38.84,
+      "end": 39.58,
+      "text": "you look at his neck"
+    },
+    {
+      "start": 40.74,
+      "end": 43.4,
+      "text": "You can actually see the two heads of the sternocardial mastoid."
+    },
+    {
+      "start": 43.64,
+      "end": 47.1,
+      "text": "We see a sternal head and a clavicle head that usually form a triangle."
+    },
+    {
+      "start": 47.1,
+      "end": 49.980000000000004,
+      "text": "Normally, in a blind landmark, a..."
+    },
+    {
+      "start": 50.0,
+      "end": 53.0,
+      "text": "our needle will be going to the apex of the triangle."
+    },
+    {
+      "start": 53.36,
+      "end": 56.44,
+      "text": "We're now going to use ultrasound to localize the vein."
+    },
+    {
+      "start": 56.88,
+      "end": 59.66,
+      "text": "We're going to now find the vein and make the needle insertion"
+    },
+    {
+      "start": 60.0,
+      "end": 63.97,
+      "text": "much safer. We're going to go ahead and choose our system which is going to be placed just"
+    },
+    {
+      "start": 63.97,
+      "end": 69.97,
+      "text": "to the right of the patient. We're going to use a Linear A Transucer. We're going to go ahead and"
+    },
+    {
+      "start": 70.0,
+      "end": 77.32,
+      "text": "set up our examination type. I'm gonna hit exam. I'm gonna click on Venus select"
+    },
+    {
+      "start": 77.32,
+      "end": 79.44,
+      "text": "and we're gonna be ready to start scanning."
+    },
+    {
+      "start": 81.06,
+      "end": 87.45,
+      "text": "We're going to also use a little trick to put the transducer marker actually to the patient's left."
+    },
+    {
+      "start": 87.75,
+      "end": 89.97,
+      "text": "The reason I do this is to maintain the..."
+    },
+    {
+      "start": 90.0,
+      "end": 94.06,
+      "text": "orientation from the head of the bed so that the vein and the artery are in the normal"
+    },
+    {
+      "start": 94.06,
+      "end": 99.2,
+      "text": "anatomic positions, so it's not to create more confusion when you're using ultrasound"
+    },
+    {
+      "start": 99.2,
+      "end": 99.98,
+      "text": "for guidance of..."
+    },
+    {
+      "start": 100.0,
+      "end": 108.72,
+      "text": "procedure. I'm going to go ahead and put a little bit of gel on this transducer and now"
+    },
+    {
+      "start": 108.72,
+      "end": 109.36,
+      "text": "let's take a look."
+    },
+    {
+      "start": 110.32,
+      "end": 114.46,
+      "text": "at his neck in a normal place that we would normally have put our needle."
+    },
+    {
+      "start": 116.31,
+      "end": 119.71000000000001,
+      "text": "So if we're looking at the screen and the center of the screen is a very large"
+    },
+    {
+      "start": 120.0,
+      "end": 124.77,
+      "text": "a coic structure, and you can see that it easily collapses."
+    },
+    {
+      "start": 126.01,
+      "end": 126.97,
+      "text": "This is the jug of the rain."
+    },
+    {
+      "start": 128.28,
+      "end": 129.78,
+      "text": "Just adjacent it to this."
+    },
+    {
+      "start": 130.54,
+      "end": 134.98,
+      "text": "to the left of the screen and below the vein is the artery."
+    },
+    {
+      "start": 135.28,
+      "end": 139.86,
+      "text": "That is what we want to avoid and just a little bit more to the left of that."
+    },
+    {
+      "start": 140.06,
+      "end": 147.28,
+      "text": "is the thyroid. So the ultrasound allows us to easily find the vein. We can track it"
+    },
+    {
+      "start": 147.28,
+      "end": 149.96,
+      "text": "along its entire course. First thing we can"
+    },
+    {
+      "start": 150.0,
+      "end": 154.14,
+      "text": "identify is the vein patent. You might have a patient who has had a previous"
+    },
+    {
+      "start": 154.14,
+      "end": 159.06,
+      "text": "cannulation and the vein itself may not be a good candidate. The second thing"
+    },
+    {
+      "start": 159.06,
+      "end": 159.98,
+      "text": "once we've identified the patient, the second thing once we've identified is the vein patent."
+    },
+    {
+      "start": 160.0,
+      "end": 164.86,
+      "text": "by the vein we can map the skin and actually put marks on the skin and we can also look"
+    },
+    {
+      "start": 164.86,
+      "end": 169.98,
+      "text": "at the side of the ultrasound image to see how deep the vein is and in this case"
+    },
+    {
+      "start": 170.0,
+      "end": 175.21,
+      "text": "it's about one centimeter deep. I'm going to show you how you use ultrasound to"
+    },
+    {
+      "start": 175.21,
+      "end": 179.79,
+      "text": "actually guide your needle into the intral jugular vein. As you can see we have a"
+    },
+    {
+      "start": 180.0,
+      "end": 183.82,
+      "text": "blue phantom here we're going to be able to take a look at the vein first with"
+    },
+    {
+      "start": 183.82,
+      "end": 188.56,
+      "text": "ultrasound and then I'm going to use the ultrasound transducer to actually guide"
+    },
+    {
+      "start": 188.56,
+      "end": 189.84,
+      "text": "my needle toward the vein."
+    },
+    {
+      "start": 190.22,
+      "end": 195.17,
+      "text": "I'm going to go ahead and place a little bit of gel onto the neck."
+    },
+    {
+      "start": 196.19,
+      "end": 197.65,
+      "text": "We're expected juggerabane to lie."
+    },
+    {
+      "start": 199.72,
+      "end": 199.98,
+      "text": "And then I'm going to..."
+    },
+    {
+      "start": 200.0,
+      "end": 209.98,
+      "text": "used by Transusher to identify this vein. And you can see on this image, we can see what is supposed to be."
+    },
+    {
+      "start": 210.0,
+      "end": 215.62,
+      "text": "to be a vein here in the center and it's compressible, it's about a centimeter deep or so."
+    },
+    {
+      "start": 216.44,
+      "end": 218.78,
+      "text": "So I can use ultrasound guidance."
+    },
+    {
+      "start": 220.0,
+      "end": 222.16,
+      "text": "I can now place this needle into the vein."
+    },
+    {
+      "start": 222.7,
+      "end": 225.7,
+      "text": "Normally, this whole setup will be under sterile procedure."
+    },
+    {
+      "start": 226.08,
+      "end": 228.52,
+      "text": "The transition will be covered with a sterile sheath."
+    },
+    {
+      "start": 228.64,
+      "end": 229.72,
+      "text": "I'll be in full."
+    },
+    {
+      "start": 230.19,
+      "end": 234.51,
+      "text": "sterile prep and the needle and the rest of the equipment all will be sterile."
+    },
+    {
+      "start": 235.19,
+      "end": 239.97,
+      "text": "But for the purposes of this demonstration, I think you'll recognize how I'm placing the needle and how we're"
+    },
+    {
+      "start": 240.0,
+      "end": 249.98,
+      "text": "So I put the target in the center of the image so this would be the juggler vein in the center and we know that the juggler veins about a centimeter half deep in the"
+    },
+    {
+      "start": 250.0,
+      "end": 255.08,
+      "text": "case. I'm now going to show you how you can actually follow the needle tip as you slowly"
+    },
+    {
+      "start": 255.08,
+      "end": 259.69,
+      "text": "march toward the vein. I have the jugular vein centered in the image."
+    },
+    {
+      "start": 260.45,
+      "end": 262.95,
+      "text": "You can see it's compressible, we're short, it's the vein."
+    },
+    {
+      "start": 263.76,
+      "end": 269.18,
+      "text": "Now I take my needle and put it right adjacent to the transducer in the mid part."
+    },
+    {
+      "start": 270.0,
+      "end": 276.37,
+      "text": "see the needle tip, and I'm going to slowly advance, but while I'm advancing, I'm angling"
+    },
+    {
+      "start": 276.37,
+      "end": 279.85,
+      "text": "the transducer away from the needle and toward the needle tip."
+    },
+    {
+      "start": 280.32,
+      "end": 283.76,
+      "text": "So I always have the needle tip in the field of view."
+    },
+    {
+      "start": 284.36,
+      "end": 286.46,
+      "text": "And when I do that, I can always keep track"
+    },
+    {
+      "start": 286.46,
+      "end": 287.66,
+      "text": "of how far I've gone."
+    },
+    {
+      "start": 288.42,
+      "end": 289.72,
+      "text": "And then I do this nice and slow."
+    },
+    {
+      "start": 296.46,
+      "end": 298.4,
+      "text": "and you can see I'm getting closer to the vein now."
+    },
+    {
+      "start": 301.15,
+      "end": 302.71,
+      "text": "and I've actually hit the vein."
+    },
+    {
+      "start": 303.68,
+      "end": 306.69,
+      "text": "And if you can get a close look here,"
+    },
+    {
+      "start": 306.97,
+      "end": 309.97,
+      "text": "you can actually see a little bit of blue."
+    }
+  ]
+}

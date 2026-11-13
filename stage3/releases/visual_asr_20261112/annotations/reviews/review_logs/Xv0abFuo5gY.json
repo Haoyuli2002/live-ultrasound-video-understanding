@@ -1,0 +1,103 @@
+{
+  "video_id": "Xv0abFuo5gY",
+  "reviewer": "stage3_b",
+  "review_scope": "Question-led review by Agent B of Agent A draft; not blind. Native full-frame sampled checkpoints and available time-indexed ASR; no continuous replay or direct listening claim.",
+  "reviewer_native_opened": [
+    66,
+    68,
+    75,
+    78,
+    165,
+    215,
+    220,
+    240,
+    255,
+    263,
+    270,
+    335,
+    365,
+    720,
+    721,
+    725,
+    726,
+    727,
+    728,
+    730,
+    732,
+    733,
+    733.25,
+    733.5,
+    733.75,
+    734,
+    734.25,
+    734.5,
+    735,
+    750,
+    900,
+    902,
+    905,
+    910,
+    911,
+    913,
+    915,
+    916,
+    916.25,
+    916.5,
+    916.75,
+    917,
+    920,
+    945,
+    946,
+    947,
+    948,
+    949,
+    950,
+    951,
+    951.5,
+    951.75,
+    952,
+    952.25,
+    952.5,
+    953,
+    954,
+    955
+  ],
+  "tasks": [
+    {
+      "task_number": 1,
+      "findings": "Confirmed original1920x1080 real kidney below-right of liver at215; retained immediate answer.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_number": 2,
+      "findings": "Corrected answer to illustration rather than sonogram;734 instead735; removed future central-stripe detail and recorded changing diagram orientation. Query720 cannot establish next layout.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_number": 3,
+      "findings": "Confirmed central stripe and bladder on right at750; immediate answer retained.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_number": 4,
+      "findings": "Advanced real-lung onset920 to916.75 after916.5 schematic-only negative; actual line/shadows visible during fade. Query900 has schematic only.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_number": 5,
+      "findings": "Advanced955 to951.75: crop is visible during fade;947-951 rectangle selection alone remains broad image. Query945 cannot establish next field of view.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_number": 6,
+      "findings": "Confirmed RUQ liver over kidney240/255 in historical prefix; retained substantial anatomical/diagram shortcut risk.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    }
+  ]
+}

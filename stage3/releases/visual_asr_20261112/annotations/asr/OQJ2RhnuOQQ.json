@@ -1,0 +1,708 @@
+{
+  "video_id": "OQJ2RhnuOQQ",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/OQJ2RhnuOQQ/asr.txt",
+  "segments": [
+    {
+      "start": 0.93,
+      "end": 1.59,
+      "text": "or you're jungle."
+    },
+    {
+      "start": 11.18,
+      "end": 19.96,
+      "text": "Welcome to the Memorial Center for Learning and Innovation."
+    },
+    {
+      "start": 20.03,
+      "end": 25.2,
+      "text": "I am Brant Whitehurst, a surgical intensivist and assistant professor of surgery at Southern"
+    },
+    {
+      "start": 25.2,
+      "end": 27.06,
+      "text": "Illinois University School of Medicine."
+    },
+    {
+      "start": 27.98,
+      "end": 29.96,
+      "text": "Today, in association with our"
+    },
+    {
+      "start": 30.03,
+      "end": 35.04,
+      "text": "Roland J. Folst, surgical skills center who will review and demonstrate a routine central"
+    },
+    {
+      "start": 35.04,
+      "end": 39.65,
+      "text": "venous catheterization with the goal of providing a basic overview for new residents."
+    },
+    {
+      "start": 40.29,
+      "end": 44.37,
+      "text": "Regardless of specialty, as they learn and prepare to perform this essential procedure."
+    },
+    {
+      "start": 45.19,
+      "end": 49.51,
+      "text": "Recently, Memorial Medical Center has updated and standardized the contents of the central"
+    },
+    {
+      "start": 49.51,
+      "end": 49.75,
+      "text": "line."
+    },
+    {
+      "start": 50.06,
+      "end": 58.78,
+      "text": "an additional goal of this video is to familiarize already experienced providers with the use of these updated packs during routines and for"
+    },
+    {
+      "start": 58.78,
+      "end": 59.76,
+      "text": "Minus line placement."
+    },
+    {
+      "start": 61.38,
+      "end": 66.63,
+      "text": "Join me now as we examine this essential skill, which, with mastery, is an important component"
+    },
+    {
+      "start": 66.63,
+      "end": 68.07,
+      "text": "in the care of critically ill patients."
+    },
+    {
+      "start": 72.85,
+      "end": 76.66,
+      "text": "Centrovenous catheterization can be thought of as occurring in three distinct phases."
+    },
+    {
+      "start": 77.36,
+      "end": 79.93,
+      "text": "Preparation for the procedure? Performance of the procedure?"
+    },
+    {
+      "start": 80.0,
+      "end": 82.76,
+      "text": "and verification of success of the procedure."
+    },
+    {
+      "start": 83.72,
+      "end": 86.34,
+      "text": "Now, let's review preparation for the procedure"
+    },
+    {
+      "start": 86.34,
+      "end": 89.97,
+      "text": "and discuss some steps that you can take to maximize your opportunity."
+    },
+    {
+      "start": 90.0,
+      "end": 93.1,
+      "text": "for an efficient and safe central venous catheterization."
+    },
+    {
+      "start": 94.62,
+      "end": 97.58,
+      "text": "After reviewing the patient's history and examining the patient to confirm"
+    },
+    {
+      "start": 97.58,
+      "end": 99.76,
+      "text": "the central venous catheterization is necessary."
+    },
+    {
+      "start": 100.13,
+      "end": 104.17,
+      "text": "begin preparing by obtaining the following supplies, a central line insertion pack."
+    },
+    {
+      "start": 104.43,
+      "end": 108.51,
+      "text": "This is a standardized pack throughout the facility and includes personal protective equipment"
+    },
+    {
+      "start": 108.51,
+      "end": 109.97,
+      "text": "Supply is to drape and"
+    },
+    {
+      "start": 110.0,
+      "end": 114.06,
+      "text": "to prep the patient, ultrasound cover, as well as other commonly required supplies."
+    },
+    {
+      "start": 114.16,
+      "end": 118.32,
+      "text": "Finally, bring an ultrasound machine to the bedside if performing a non-emergent cannulation"
+    },
+    {
+      "start": 118.32,
+      "end": 119.98,
+      "text": "of the internal jugular or femoral..."
+    },
+    {
+      "start": 120.0,
+      "end": 120.52,
+      "text": "location."
+    },
+    {
+      "start": 120.86,
+      "end": 124.56,
+      "text": "Point of care ultrasound is readily available in the critical carriers and is considered"
+    },
+    {
+      "start": 124.56,
+      "end": 129.2,
+      "text": "a standard of care best practice, examining the cannulation site to ensure that a compressible"
+    },
+    {
+      "start": 129.2,
+      "end": 129.98,
+      "text": "Venus target is"
+    },
+    {
+      "start": 130.16,
+      "end": 134.7,
+      "text": "This ensures that the provider does not prep and drape the patient only to find a target"
+    },
+    {
+      "start": 134.7,
+      "end": 138.18,
+      "text": "vessel that is small in caliber, occluded, or has a thrombus."
+    },
+    {
+      "start": 138.4,
+      "end": 139.98,
+      "text": "If the target cannulation site is"
+    },
+    {
+      "start": 140.0,
+      "end": 144.5,
+      "text": "of questionable quality, examined alternative sites by ultrasound, prior to proceeding,"
+    },
+    {
+      "start": 145.86,
+      "end": 149.66,
+      "text": "if awake, set the patient back up to keep them comfortable while opening and organizing"
+    },
+    {
+      "start": 149.66,
+      "end": 149.9,
+      "text": "supplies."
+    },
+    {
+      "start": 150.0,
+      "end": 153.6,
+      "text": "An assistant can lower the bed back into position when the provider is ready to"
+    },
+    {
+      "start": 153.6,
+      "end": 157.64,
+      "text": "cannulate the vessel with a needle. Move any EKG leads, gowns, dressings,"
+    },
+    {
+      "start": 157.82,
+      "end": 159.92,
+      "text": "gastric tubes, or ventilator tubes as"
+    },
+    {
+      "start": 160.03,
+      "end": 164.25,
+      "text": "appropriate to have a working field free from obstruction and potential sources of contamination."
+    },
+    {
+      "start": 164.69,
+      "end": 169.07,
+      "text": "If awake, set the patient back up to keep them comfortable while opening and organizing supplies."
+    },
+    {
+      "start": 170.29,
+      "end": 173.67,
+      "text": "The bed back into position when the provider is ready to calculate the vessel with a needle."
+    },
+    {
+      "start": 173.99,
+      "end": 177.99,
+      "text": "Once the side is confirmed, the sterile supplies can be opened after all personnel in the room"
+    },
+    {
+      "start": 177.99,
+      "end": 179.83,
+      "text": "done hair, caps and masks."
+    },
+    {
+      "start": 180.26,
+      "end": 184.06,
+      "text": "Take care to open the atoms with appropriate sterile technique and link only the corners"
+    },
+    {
+      "start": 184.06,
+      "end": 185.86,
+      "text": "of the drape kit as they are open."
+    },
+    {
+      "start": 185.86,
+      "end": 188.92,
+      "text": "Steril gloves should be dropped onto the sterile field."
+    },
+    {
+      "start": 193.04,
+      "end": 196.48,
+      "text": "ask for assistance from nursing or respiratory therapy staff as appropriate."
+    },
+    {
+      "start": 199.33,
+      "end": 199.97,
+      "text": "The provider should"
+    },
+    {
+      "start": 200.0,
+      "end": 203.7,
+      "text": "Don, their sterile gloves using the closed glove technique demonstrated here."
+    },
+    {
+      "start": 203.96,
+      "end": 208.28,
+      "text": "The cup of the sterile glove is grasped through the gown cuff with the glove oriented thumb"
+    },
+    {
+      "start": 208.28,
+      "end": 208.7,
+      "text": "to thumb."
+    },
+    {
+      "start": 210.0,
+      "end": 214.44,
+      "text": "of the glove is then grasped and flipped over to unfold the sterile glove over the cup"
+    },
+    {
+      "start": 214.44,
+      "end": 214.96,
+      "text": "of the gout."
+    },
+    {
+      "start": 215.16,
+      "end": 218.82,
+      "text": "The fingers can then be advanced into the glove and adjusted as needed."
+    },
+    {
+      "start": 229.95,
+      "end": 229.97,
+      "text": "I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I"
+    },
+    {
+      "start": 230.0,
+      "end": 233.88,
+      "text": "providers can practice this technique at home using a pair of winter gloves."
+    },
+    {
+      "start": 240.0,
+      "end": 245.66,
+      "text": "The contents of the packs should be organized, such that they are laid out as shown in a left-to-right fashion,"
+    },
+    {
+      "start": 246.16,
+      "end": 249.08,
+      "text": "proceeding from materials required to prep and drape the patient."
+    },
+    {
+      "start": 250.99,
+      "end": 255.96,
+      "text": "procedures required in order to perform the cannulation with supplies for dressing"
+    },
+    {
+      "start": 255.96,
+      "end": 259.68,
+      "text": "and securing the catheter on the far right. This will eliminate"
+    },
+    {
+      "start": 260.26,
+      "end": 264.68,
+      "text": "any hesitancy in trying to identify the appropriate things while the procedure is being performed."
+    },
+    {
+      "start": 266.19,
+      "end": 269.57,
+      "text": "Now that we've reviewed the steps you've required to prepare for essential Venus catheterization,"
+    },
+    {
+      "start": 270.16,
+      "end": 272.46,
+      "text": "And let's review the steps of actually performing the procedure."
+    },
+    {
+      "start": 273.36,
+      "end": 278.7,
+      "text": "This is a general overview of the most common steps required, regardless of the insertion"
+    },
+    {
+      "start": 278.7,
+      "end": 279.98,
+      "text": "type chosen or the specific..."
+    },
+    {
+      "start": 280.13,
+      "end": 281.01,
+      "text": "that are chosen."
+    },
+    {
+      "start": 293.1,
+      "end": 297.2,
+      "text": "Begin by draping the patient. Notice that one of the towels is put in a"
+    },
+    {
+      "start": 297.2,
+      "end": 299.96,
+      "text": "wad in the corner of the neck to catch any blood and to maintain a"
+    },
+    {
+      "start": 300.1,
+      "end": 305.83,
+      "text": "field, which sometimes can be visible under the drain. The kit has four sterile"
+    },
+    {
+      "start": 305.83,
+      "end": 309.98,
+      "text": "towels provided, allow the provider to square the patient off part of placing the"
+    },
+    {
+      "start": 310.13,
+      "end": 317.51,
+      "text": "This prevents the drape from being mispositioned and then pulled from sterile to unsterile areas unintentionally."
+    },
+    {
+      "start": 324.51,
+      "end": 328.59,
+      "text": "assistance in the room can grab the corners of the drape to appropriately position it over the patient."
+    },
+    {
+      "start": 329.13,
+      "end": 329.89,
+      "text": "A CMS required"
+    },
+    {
+      "start": 330.0,
+      "end": 333.98,
+      "text": "environment is that central line cannulations in the non-emergent fashion are performed"
+    },
+    {
+      "start": 333.98,
+      "end": 336.16,
+      "text": "using full body barrier protection."
+    },
+    {
+      "start": 336.5,
+      "end": 339.84,
+      "text": "This includes a head to toe drape which is part of the new central line."
+    },
+    {
+      "start": 340.03,
+      "end": 344.99,
+      "text": "insertion kit in contrast to the partial drapes included with the actual central line catheter"
+    },
+    {
+      "start": 344.99,
+      "end": 345.23,
+      "text": "kits."
+    },
+    {
+      "start": 346.68,
+      "end": 349.87,
+      "text": "Once the patient has been fully draped they can now be placed in the head down."
+    },
+    {
+      "start": 350.06,
+      "end": 355.87,
+      "text": "if appropriate for the side of cannulation. Notice here the procedureist is"
+    },
+    {
+      "start": 355.87,
+      "end": 359.75,
+      "text": "observing the vessel with ultrasound once the ultrasound transducer is"
+    },
+    {
+      "start": 360.0,
+      "end": 363.3,
+      "text": "stabilized on the patient and the target vessel is visible in the center of the field,"
+    },
+    {
+      "start": 363.73,
+      "end": 366.17,
+      "text": "local anesthetic should be injected for patient comfort."
+    },
+    {
+      "start": 366.91,
+      "end": 369.63,
+      "text": "The needle should be oriented with the bevel up and advanced slowly."
+    },
+    {
+      "start": 370.0,
+      "end": 371.44,
+      "text": "with particular tension being paid"
+    },
+    {
+      "start": 371.44,
+      "end": 373.04,
+      "text": "to the position of the needle"
+    },
+    {
+      "start": 373.04,
+      "end": 375.26,
+      "text": "on the ultrasound screen during insertion."
+    },
+    {
+      "start": 378.46,
+      "end": 379.18,
+      "text": "But this is complete."
+    },
+    {
+      "start": 380.0,
+      "end": 385.23,
+      "text": "vessels ready to be calculated with the large cook needle, which should be angle at a 45"
+    },
+    {
+      "start": 385.23,
+      "end": 389.28,
+      "text": "degree angle, such that the distance from the plane of ultrasound"
+    },
+    {
+      "start": 390.1,
+      "end": 394.99,
+      "text": "structure is equivalent to the depth based on the trigonometry of a 45 degree triangle."
+    },
+    {
+      "start": 396.98,
+      "end": 399.9,
+      "text": "Once there is a return of dark red non-pulse tile blood, the"
+    },
+    {
+      "start": 400.06,
+      "end": 404.52,
+      "text": "sound transducer should be laid down, the needle should be held firmly and in one position"
+    },
+    {
+      "start": 404.52,
+      "end": 408.36,
+      "text": "not allowed to move, the syringe should be removed, and the guide wire should be passed."
+    },
+    {
+      "start": 408.58,
+      "end": 409.84,
+      "text": "The guide wire should pass easily"
+    },
+    {
+      "start": 410.0,
+      "end": 415.46,
+      "text": "without any resistance. During the time of Gladwire Passage, remind assistance in the room to pay attention"
+    },
+    {
+      "start": 415.46,
+      "end": 419.9,
+      "text": "forectopy on the monitor, which may indicate entry into the right atrium or right"
+    },
+    {
+      "start": 420.03,
+      "end": 423.83,
+      "text": "right ventricle and could cause arrhythmia. If this should occur the guide wire should be"
+    },
+    {
+      "start": 423.83,
+      "end": 428.59,
+      "text": "pulled back slightly. So the guide wire is successfully in place, the needle can be removed"
+    },
+    {
+      "start": 428.59,
+      "end": 429.65,
+      "text": "over the guide wire."
+    },
+    {
+      "start": 430.0,
+      "end": 433.98,
+      "text": "There should be taken not to lose control of the guide wire due to the rare risk of guide"
+    },
+    {
+      "start": 433.98,
+      "end": 434.84,
+      "text": "wire imbalization."
+    },
+    {
+      "start": 435.38,
+      "end": 439.7,
+      "text": "At this time, a skin neck should be created in the skin using the provided 11 blade"
+    },
+    {
+      "start": 439.7,
+      "end": 439.98,
+      "text": "scale."
+    },
+    {
+      "start": 440.0,
+      "end": 443.8,
+      "text": "couple, ensure that there are no dermal bridges that may make it difficult to pass the"
+    },
+    {
+      "start": 443.8,
+      "end": 444.24,
+      "text": "dilator."
+    },
+    {
+      "start": 444.44,
+      "end": 449.78,
+      "text": "Once a skinnick is created, pass the dilator over the guide wire, taking care to gently wiggle"
+    },
+    {
+      "start": 450.06,
+      "end": 454.6,
+      "text": "move the guide wire during passage of the dilator to ensure that the guide wire is not being"
+    },
+    {
+      "start": 454.6,
+      "end": 459.97,
+      "text": "kinked. The dilator is easiest passed with a rotating motion by pushing near the"
+    },
+    {
+      "start": 460.03,
+      "end": 465.22,
+      "text": "skin level. After the dilator has been passed at least half way, it can be removed. It's"
+    },
+    {
+      "start": 465.22,
+      "end": 469.58,
+      "text": "helpful to place a finger over the site of skin exit of the guide wire to ensure that"
+    },
+    {
+      "start": 469.58,
+      "end": 469.86,
+      "text": "That's significant."
+    },
+    {
+      "start": 470.03,
+      "end": 474.59,
+      "text": "it, Venus bleeding does not occur. Once the dilator is off the field, the catheter can be advanced"
+    },
+    {
+      "start": 474.59,
+      "end": 479.17,
+      "text": "over the guide wire with the guide wire held in place. The provider should maintain control of the"
+    },
+    {
+      "start": 480.0,
+      "end": 484.12,
+      "text": "times. It is a common error that the catheter is advanced and the guide wire advanced at the"
+    },
+    {
+      "start": 484.12,
+      "end": 488.62,
+      "text": "same time, such that the guide wire is no longer visible either at the skin or out the distal"
+    },
+    {
+      "start": 488.62,
+      "end": 489.92,
+      "text": "Port Hub, which is typically"
+    },
+    {
+      "start": 490.1,
+      "end": 494.32,
+      "text": "the brown port. Once the catheters are properly positioned for the depth of the insertion site,"
+    },
+    {
+      "start": 494.5,
+      "end": 498.62,
+      "text": "the guide wire can be removed, but the line should be confirmed at this time by aspirating from all"
+    },
+    {
+      "start": 498.62,
+      "end": 499.84,
+      "text": "reports to ensure that Venus"
+    },
+    {
+      "start": 500.06,
+      "end": 500.64,
+      "text": "blood returns."
+    },
+    {
+      "start": 500.86,
+      "end": 504.92,
+      "text": "Ports should then be flush with sterile saline taking care not to inject any air bubbles."
+    },
+    {
+      "start": 507.91,
+      "end": 509.89,
+      "text": "Once the catheter has been confirmed to have good"
+    },
+    {
+      "start": 510.03,
+      "end": 513.15,
+      "text": "blood flow, it should be sutured into position, and dressed appropriately."
+    },
+    {
+      "start": 513.45,
+      "end": 516.51,
+      "text": "These dressings are readily available in the critical care areas, and are well-known to"
+    },
+    {
+      "start": 516.51,
+      "end": 518.59,
+      "text": "the nursing staff who can assist you in finding them."
+    },
+    {
+      "start": 518.97,
+      "end": 519.97,
+      "text": "Once you've completed performing..."
+    },
+    {
+      "start": 520.03,
+      "end": 525.41,
+      "text": "your procedure, only one major step remains, verifying its success. For"
+    },
+    {
+      "start": 525.41,
+      "end": 529.61,
+      "text": "catheterizations in the internal jugular or subclavian locations, this is most"
+    },
+    {
+      "start": 530.03,
+      "end": 534.46,
+      "text": "accomplished by performing a chest x-ray to determine that the catheter tip is"
+    },
+    {
+      "start": 534.46,
+      "end": 537.96,
+      "text": "appropriate for the position and that no occasional complications such as"
+    },
+    {
+      "start": 537.96,
+      "end": 539.68,
+      "text": "pneumothorax or hemothorax have occurred."
+    },
+    {
+      "start": 540.9,
+      "end": 546.78,
+      "text": "Once you complete this verification, your catheters ready to use, and you're ready to move forward with treating your patients."
+    },
+    {
+      "start": 547.99,
+      "end": 549.83,
+      "text": "We hope that you found this video both beneficial"
+    },
+    {
+      "start": 550.1,
+      "end": 554.75,
+      "text": "and instructive. From all of us at the Memorial Center for Learning Innovation and the"
+    },
+    {
+      "start": 554.75,
+      "end": 559.9,
+      "text": "CERGITAL Skills Lab, we wish you success as you improve the lives of patients in the Memorial"
+    },
+    {
+      "start": 560.03,
+      "end": 560.55,
+      "text": "your health system."
+    }
+  ]
+}

@@ -1,0 +1,263 @@
+{
+  "video_id": "psvAcACvTcY",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/eval/psvAcACvTcY/asr.txt",
+  "segments": [
+    {
+      "start": 2.42,
+      "end": 8.38,
+      "text": "Thanks for tuning in. This is first in a series of four cardiac ultrasound standard view modules."
+    },
+    {
+      "start": 8.86,
+      "end": 13.24,
+      "text": "The first one is covering what we call the home base or the parasturnal long axis."
+    },
+    {
+      "start": 14.52,
+      "end": 20.26,
+      "text": "By way of acknowledgments, many of the images and videos in this tutorial are courtesy of the"
+    },
+    {
+      "start": 20.26,
+      "end": 26.84,
+      "text": "division of emergency ultrasound at Massachusetts General Hospital. In scanning cardiac views,"
+    },
+    {
+      "start": 27.0,
+      "end": 33.48,
+      "text": "we're going to use the face-to-ray transducer because of its smaller footprint. It fits easier"
+    },
+    {
+      "start": 33.48,
+      "end": 38.76,
+      "text": "between the ribs and therefore allow us to actually get a good cardiac imaging."
+    },
+    {
+      "start": 40.58,
+      "end": 44.5,
+      "text": "These are the four standard views. Today's module is primarily covering the"
+    },
+    {
+      "start": 44.5,
+      "end": 48.76,
+      "text": "Parastrono long axis, which I'm going to call the home-based view, and then the"
+    },
+    {
+      "start": 48.76,
+      "end": 53.44,
+      "text": "subsequent views will be covered by the other modules in the series."
+    },
+    {
+      "start": 56.35,
+      "end": 60.61,
+      "text": "Parastrono long axis refers to getting the long axis, and generally when we"
+    },
+    {
+      "start": 60.61,
+      "end": 64.73,
+      "text": "think about long axis, we think of an axis kind of vertically up and down to"
+    },
+    {
+      "start": 64.73,
+      "end": 71.53,
+      "text": "patient. Now keeping in mind that the heart is not oriented in the vertical manner, but really"
+    },
+    {
+      "start": 71.53,
+      "end": 79.01,
+      "text": "more kind of in an angle. And as such, when we do a pair of external long axis of the heart,"
+    },
+    {
+      "start": 79.21,
+      "end": 86.35,
+      "text": "we will have to take this angle into account. And in doing so, our transducer marker no longer points"
+    },
+    {
+      "start": 86.35,
+      "end": 91.87,
+      "text": "directly straight up and down. Instead, we'll be pointing either to the patient's right shoulder"
+    },
+    {
+      "start": 91.87,
+      "end": 97.48,
+      "text": "water to the patient's right, left hip, depending on how your screen is oriented."
+    },
+    {
+      "start": 98.96,
+      "end": 103.6,
+      "text": "The easiest way to tell is actually look at how your current screen is set up."
+    },
+    {
+      "start": 103.72,
+      "end": 108.52,
+      "text": "Most screens will come with a little transducer marker, and here is indicated by"
+    },
+    {
+      "start": 108.52,
+      "end": 114.96,
+      "text": "this blue dot over here. And if this dot is on the right hand side of the screen,"
+    },
+    {
+      "start": 115.58,
+      "end": 120.72,
+      "text": "then what you're going to be doing is that you'll orient the transducer marker"
+    },
+    {
+      "start": 120.72,
+      "end": 122.44,
+      "text": "to the patient's right shoulder."
+    },
+    {
+      "start": 122.9,
+      "end": 124.68,
+      "text": "This is the cardiac convention."
+    },
+    {
+      "start": 126.4,
+      "end": 128.4,
+      "text": "If on the other hand, the transducer marker"
+    },
+    {
+      "start": 128.4,
+      "end": 131.04,
+      "text": "or the screen markers on the left hand side of the screen,"
+    },
+    {
+      "start": 131.2,
+      "end": 134.18,
+      "text": "then we're gonna use the abdominal setting"
+    },
+    {
+      "start": 134.18,
+      "end": 135.92,
+      "text": "or the emergency medicine setting,"
+    },
+    {
+      "start": 136.26,
+      "end": 138.78,
+      "text": "then the transducer marker is gonna be pointing"
+    },
+    {
+      "start": 138.78,
+      "end": 140.46,
+      "text": "towards the patient's left hip."
+    },
+    {
+      "start": 142.96,
+      "end": 148.76,
+      "text": "And this is how the orientation of your transducer"
+    },
+    {
+      "start": 148.76,
+      "end": 150.64,
+      "text": "and you're gonna start out in the third,"
+    },
+    {
+      "start": 150.64,
+      "end": 156.36,
+      "text": "somewhere between third and fifth intercostal space, pointing either to the patient's right"
+    },
+    {
+      "start": 156.36,
+      "end": 164.68,
+      "text": "shoulder or to the patient's left hip. And essentially, this is the cut you're trying to"
+    },
+    {
+      "start": 164.68,
+      "end": 170.24,
+      "text": "obtain. So again, we've got the heart here. We're going to try to get a long axis of this heart."
+    },
+    {
+      "start": 170.48,
+      "end": 176.86,
+      "text": "I'm going to slice it right there. And that's sort of how the cross-section of the heart's going to"
+    },
+    {
+      "start": 176.86,
+      "end": 188.24,
+      "text": "look. And just to rotate it so that it looks like what we have on the screen with the transducer"
+    },
+    {
+      "start": 188.24,
+      "end": 193.36,
+      "text": "at the top. What you're going to see is at the very top of the screen will be the right"
+    },
+    {
+      "start": 193.36,
+      "end": 197.94,
+      "text": "ventricle. Followed by the left ventricle in the deeper part of the screen,"
+    },
+    {
+      "start": 198.5,
+      "end": 206.41,
+      "text": "mitral valve over here, LVO flow track over here. So this is what the corresponding image is going"
+    },
+    {
+      "start": 206.41,
+      "end": 213.0,
+      "text": "to look like. Again, the right ventricle, left ventricle, mitral valves, left atrium, aorta."
+    },
+    {
+      "start": 215.64,
+      "end": 220.12,
+      "text": "The ideal image when you should try to get the mitral valve more or less in the center of the"
+    },
+    {
+      "start": 220.12,
+      "end": 224.34,
+      "text": "image and you should try to get most of the structures that we're seeing here and"
+    },
+    {
+      "start": 224.34,
+      "end": 229.64,
+      "text": "I'll go over these structures shortly. So again we have the right ventricle, left"
+    },
+    {
+      "start": 229.64,
+      "end": 237.27,
+      "text": "ventricle, LVL flow track, AOR over here, left atrium over here, septum separating"
+    },
+    {
+      "start": 237.27,
+      "end": 241.36,
+      "text": "between the right ventricle and the left ventricle. This is the anterior leaflet"
+    },
+    {
+      "start": 241.36,
+      "end": 246.0,
+      "text": "of the mitral valve, posterior leaflet of the mitral valve, posterior wall of the"
+    },
+    {
+      "start": 246.0,
+      "end": 250.73,
+      "text": "heart, descending or thoracic AORDA. AORDAQ valve sometimes can be seen as"
+    },
+    {
+      "start": 250.73,
+      "end": 257.42,
+      "text": "well over here. So the take on points is started the left third to fifth intercostal space."
+    },
+    {
+      "start": 257.86,
+      "end": 262.54,
+      "text": "If your screen has the dawn on the right hand side, then you're going, you're doing the cardiology"
+    },
+    {
+      "start": 262.54,
+      "end": 266.7,
+      "text": "convention, in which case you can point the probe marker towards the patient right shoulder,"
+    },
+    {
+      "start": 267.22,
+      "end": 272.26,
+      "text": "otherwise you'll point it to the patient's left here. Well, thanks for tuning in. This"
+    },
+    {
+      "start": 272.26,
+      "end": 275.64,
+      "text": "is our website in case you want to check out any further tutorials."
+    }
+  ]
+}

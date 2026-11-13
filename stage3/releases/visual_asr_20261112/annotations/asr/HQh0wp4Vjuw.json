@@ -1,0 +1,603 @@
+{
+  "video_id": "HQh0wp4Vjuw",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/HQh0wp4Vjuw/asr.txt",
+  "segments": [
+    {
+      "start": 1.57,
+      "end": 7.91,
+      "text": "I'm Adam Zelci, and this is Central Venus Catherization from UCSD Ultrason."
+    },
+    {
+      "start": 10.29,
+      "end": 15.2,
+      "text": "There are three main locations that we use for central line placement."
+    },
+    {
+      "start": 16.54,
+      "end": 19.59,
+      "text": "The internal jugular vein, the femoral vein."
+    },
+    {
+      "start": 20.48,
+      "end": 21.82,
+      "text": "and the subclavian vein."
+    },
+    {
+      "start": 23.48,
+      "end": 26.19,
+      "text": "The purposes of today's lecture will focus"
+    },
+    {
+      "start": 26.19,
+      "end": 28.88,
+      "text": "on the internal jugular vein as an example."
+    },
+    {
+      "start": 32.11,
+      "end": 36.65,
+      "text": "For this procedure, you'll be using your high frequency linear transducer."
+    },
+    {
+      "start": 40.45,
+      "end": 46.14,
+      "text": "Now before getting started and once you have your patient in appropriate position, you"
+    },
+    {
+      "start": 46.14,
+      "end": 49.6,
+      "text": "want to assess your target vessel here."
+    },
+    {
+      "start": 50.51,
+      "end": 53.67,
+      "text": "you can see the provider is using a transverse view"
+    },
+    {
+      "start": 53.67,
+      "end": 58.11,
+      "text": "of the internal jugular vein with Fuller Doppler."
+    },
+    {
+      "start": 59.45,
+      "end": 59.97,
+      "text": "On the left side of the..."
+    },
+    {
+      "start": 60.0,
+      "end": 68.99,
+      "text": "screen is the high-flow thick wall throtted artery. On the right side, your thinner walled internal"
+    },
+    {
+      "start": 68.99,
+      "end": 69.71,
+      "text": "journal-jecular veins."
+    },
+    {
+      "start": 72.62,
+      "end": 77.31,
+      "text": "You want to take your probe and scan from high to low, low to high,"
+    },
+    {
+      "start": 78.09,
+      "end": 79.41,
+      "text": "assessing the path of the vessel."
+    },
+    {
+      "start": 80.51,
+      "end": 83.7,
+      "text": "and evaluating for any abnormal anatomy."
+    },
+    {
+      "start": 85.72,
+      "end": 86.56,
+      "text": "On the right side of the screen,"
+    },
+    {
+      "start": 87.46,
+      "end": 88.7,
+      "text": "we're doing a similar scan."
+    },
+    {
+      "start": 89.59,
+      "end": 89.97,
+      "text": "The value is..."
+    },
+    {
+      "start": 90.03,
+      "end": 97.34,
+      "text": "an old vein, internal jugular vein, and the carotid artery in an inline approach."
+    },
+    {
+      "start": 102.85,
+      "end": 105.44,
+      "text": "If you're not sure which vessel is the artery"
+    },
+    {
+      "start": 105.44,
+      "end": 107.83,
+      "text": "and which is the vein, you can confirm this"
+    },
+    {
+      "start": 108.18,
+      "end": 109.7,
+      "text": "using a pulse wave Doppler."
+    },
+    {
+      "start": 110.9,
+      "end": 117.23,
+      "text": "the left side of the screen and image A, you'll see the pulse wave tracker is over the vein,"
+    },
+    {
+      "start": 117.87,
+      "end": 119.39,
+      "text": "doing venous pulsation."
+    },
+    {
+      "start": 120.96,
+      "end": 123.14,
+      "text": "in image B, it's over the artery."
+    },
+    {
+      "start": 124.06,
+      "end": 126.82,
+      "text": "And you have a classic tri-phasic arterial wave form."
+    },
+    {
+      "start": 129.51,
+      "end": 129.89,
+      "text": "It's important."
+    },
+    {
+      "start": 131.48,
+      "end": 135.8,
+      "text": "because you might that find something you're not expecting. On the right side of the screen,"
+    },
+    {
+      "start": 136.72,
+      "end": 139.89,
+      "text": "the artery is directly overlying the vein, making"
+    },
+    {
+      "start": 140.1,
+      "end": 149.19,
+      "text": "approach very difficult, whenever starting catheterization of a vein."
+    },
+    {
+      "start": 150.03,
+      "end": 156.03,
+      "text": "good idea to rest the vein, ensuring that there is no clot within the limit. Here you"
+    },
+    {
+      "start": 156.03,
+      "end": 159.12,
+      "text": "can see neither the artery or vein or compressible."
+    },
+    {
+      "start": 160.48,
+      "end": 168.93,
+      "text": "you'd expect given high flow and high pressure. This can be confirmed to the use of color Doppler."
+    },
+    {
+      "start": 170.0,
+      "end": 179.83,
+      "text": "here, no flow within the venous lumen. We're starting the procedure."
+    },
+    {
+      "start": 180.64,
+      "end": 182.48,
+      "text": "You want to make sure that you're adequately set up."
+    },
+    {
+      "start": 184.02,
+      "end": 185.32,
+      "text": "Positioning is really important."
+    },
+    {
+      "start": 186.62,
+      "end": 187.14,
+      "text": "Don't struggle."
+    },
+    {
+      "start": 188.1,
+      "end": 189.98,
+      "text": "If you're doing an IG approach on the..."
+    },
+    {
+      "start": 190.03,
+      "end": 193.45,
+      "text": "Right, set up your machine diagonally across the patient"
+    },
+    {
+      "start": 193.45,
+      "end": 195.15,
+      "text": "so you can easily visualize the screen."
+    },
+    {
+      "start": 196.87,
+      "end": 199.05,
+      "text": "The aim would be true with a femoral approach."
+    },
+    {
+      "start": 200.38,
+      "end": 205.56,
+      "text": "Here you can see we'd be set up to do a right-handed, right-femoral approach looking directly"
+    },
+    {
+      "start": 205.56,
+      "end": 207.28,
+      "text": "across the patient at our screen."
+    },
+    {
+      "start": 211.34,
+      "end": 214.57,
+      "text": "Here's a common central venous tip, multi-lumen catheter,"
+    },
+    {
+      "start": 215.62,
+      "end": 217.24,
+      "text": "what we have here at UCSD."
+    },
+    {
+      "start": 220.03,
+      "end": 227.08,
+      "text": "couple key tools on the left side of the kit you'll see your capital over needle the top right you'll"
+    },
+    {
+      "start": 227.4,
+      "end": 228.3,
+      "text": "see your scalpel."
+    },
+    {
+      "start": 230.0,
+      "end": 235.83,
+      "text": "the dilator and wrapped around the center your catheter and guidewaping."
+    },
+    {
+      "start": 240.58,
+      "end": 241.94,
+      "text": "you'll want to prep your linear probe."
+    },
+    {
+      "start": 243.44,
+      "end": 244.99,
+      "text": "This means covering the footprint"
+    },
+    {
+      "start": 244.99,
+      "end": 246.49,
+      "text": "with a significant amount of gel"
+    },
+    {
+      "start": 246.49,
+      "end": 249.2,
+      "text": "that will go underneath your shell probe cover."
+    },
+    {
+      "start": 250.48,
+      "end": 255.37,
+      "text": "Now this is easier to do with an assistant that can hand you the probe into the sterile"
+    },
+    {
+      "start": 255.37,
+      "end": 259.39,
+      "text": "probe cover, but I encourage you to set up so that it can be done independently."
+    },
+    {
+      "start": 260.67,
+      "end": 263.23,
+      "text": "cover the probe with the adequate amount of gel,"
+    },
+    {
+      "start": 263.83,
+      "end": 264.93,
+      "text": "and then place it in the location"
+    },
+    {
+      "start": 264.93,
+      "end": 266.53,
+      "text": "that you can easily reach and grab."
+    },
+    {
+      "start": 270.26,
+      "end": 277.5,
+      "text": "will be using one of two techniques. Here we can see an in-plane view. This is"
+    },
+    {
+      "start": 277.5,
+      "end": 279.72,
+      "text": "probably more commonly used for placement of"
+    },
+    {
+      "start": 280.0,
+      "end": 288.24,
+      "text": "IVs. You can track the needle in plain as it goes through the soft tissues and into the vessel limits."
+    },
+    {
+      "start": 290.99,
+      "end": 292.57,
+      "text": "more commonly with a central line,"
+    },
+    {
+      "start": 292.71,
+      "end": 294.27,
+      "text": "we'll use an out-of-plane technique."
+    },
+    {
+      "start": 296.02,
+      "end": 299.92,
+      "text": "It's important when using this approach to get back."
+    },
+    {
+      "start": 299.92,
+      "end": 299.98,
+      "text": "I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry"
+    },
+    {
+      "start": 300.06,
+      "end": 303.81,
+      "text": "and appropriate distance from your entry point in the vessel."
+    },
+    {
+      "start": 304.95,
+      "end": 309.5,
+      "text": "And to move forward the probe."
+    },
+    {
+      "start": 310.06,
+      "end": 313.11,
+      "text": "and the needle tip, backing it through the soft tissues"
+    },
+    {
+      "start": 313.11,
+      "end": 319.05,
+      "text": "into the vessel limit, quickly on the geometry of this."
+    },
+    {
+      "start": 320.06,
+      "end": 321.34,
+      "text": "You'll see that your needle approach"
+    },
+    {
+      "start": 321.34,
+      "end": 324.18,
+      "text": "is going to be the hypotenuse of this triangle"
+    },
+    {
+      "start": 324.18,
+      "end": 327.11,
+      "text": "with a 45 degree angle in your needle."
+    },
+    {
+      "start": 327.96,
+      "end": 329.48,
+      "text": "That means the depth which"
+    },
+    {
+      "start": 330.06,
+      "end": 336.86,
+      "text": "the vessel is underneath the skin to be equal to the distance you step back your needle from"
+    },
+    {
+      "start": 337.5,
+      "end": 338.3,
+      "text": "your entry location."
+    },
+    {
+      "start": 345.09,
+      "end": 349.96,
+      "text": "Here, we'll watch an example of an out-of-line approach."
+    },
+    {
+      "start": 350.0,
+      "end": 357.65,
+      "text": "on the right internal jugular vein. You'll see the provider has a catheter over"
+    },
+    {
+      "start": 357.65,
+      "end": 357.89,
+      "text": "needle."
+    },
+    {
+      "start": 360.77,
+      "end": 364.18,
+      "text": "and he follows the tip of the needle through the soft tissues"
+    },
+    {
+      "start": 364.18,
+      "end": 366.98,
+      "text": "down into the vessel lumen."
+    },
+    {
+      "start": 374.42,
+      "end": 378.48,
+      "text": "Once in position, you remove the needle and advances the catheter."
+    },
+    {
+      "start": 380.42,
+      "end": 385.8,
+      "text": "This can be left as what some call an easy ij and use this axis itself."
+    },
+    {
+      "start": 388.18,
+      "end": 389.32,
+      "text": "Move to a central line."
+    },
+    {
+      "start": 390.16,
+      "end": 392.54,
+      "text": "then place a wire through the catheter."
+    },
+    {
+      "start": 395.99,
+      "end": 399.72,
+      "text": "You'll see the provider then uses his probe in a"
+    },
+    {
+      "start": 400.16,
+      "end": 403.64,
+      "text": "in line approach to visualize the wire"
+    },
+    {
+      "start": 403.64,
+      "end": 404.88,
+      "text": "within the vessel unit."
+    },
+    {
+      "start": 408.58,
+      "end": 409.6,
+      "text": "Once the wire is in place,"
+    },
+    {
+      "start": 411.06,
+      "end": 419.06,
+      "text": "the catheter can be removed. Here, we would use all the scalpel."
+    },
+    {
+      "start": 420.1,
+      "end": 426.65,
+      "text": "to nick the skin. Now we don't use the scalpel to cut down through the soft tissues or the vein,"
+    },
+    {
+      "start": 427.8,
+      "end": 429.82,
+      "text": "just to make an opening wide enough."
+    },
+    {
+      "start": 431.02,
+      "end": 433.52,
+      "text": "in the skin to advance our catheter and dilator."
+    },
+    {
+      "start": 436.17,
+      "end": 439.21,
+      "text": "Once the skin is neck, we use our dilator,"
+    },
+    {
+      "start": 439.86,
+      "end": 439.92,
+      "text": "ready."
+    },
+    {
+      "start": 440.03,
+      "end": 444.72,
+      "text": "over the wire and advanced through the soft tissues and the vein wall."
+    },
+    {
+      "start": 446.2,
+      "end": 448.27,
+      "text": "This is to ensure that the catheter itself"
+    },
+    {
+      "start": 450.58,
+      "end": 459.18,
+      "text": "easily. You'll see here the place of the catheter onto the end of the wire and then it's sure to"
+    },
+    {
+      "start": 459.18,
+      "end": 459.82,
+      "text": "main"
+    },
+    {
+      "start": 460.42,
+      "end": 468.77,
+      "text": "of the wire at all times. Very cautious not to let go of the wire."
+    },
+    {
+      "start": 470.9,
+      "end": 472.64,
+      "text": "as it can be lost within the patient."
+    },
+    {
+      "start": 474.74,
+      "end": 476.36,
+      "text": "The catheter should then be advanced"
+    },
+    {
+      "start": 477.67,
+      "end": 479.97,
+      "text": "slowly over the wire into the vessel."
+    },
+    {
+      "start": 482.21,
+      "end": 485.47,
+      "text": "Here, we'll quickly take a look at what an inline approach would look like."
+    },
+    {
+      "start": 490.06,
+      "end": 492.15,
+      "text": "Now, from watching this video,"
+    },
+    {
+      "start": 492.6,
+      "end": 496.18,
+      "text": "you may think that the approach might make more sense,"
+    },
+    {
+      "start": 497.88,
+      "end": 499.95,
+      "text": "but on a live page."
+    },
+    {
+      "start": 501.44,
+      "end": 507.54,
+      "text": "with respiratory variation and the tortuous path of the vein, this can be much more difficult."
+    },
+    {
+      "start": 511.31,
+      "end": 519.8,
+      "text": "As you mentioned at the beginning, there are two alternative locations for central line placement, including the subclavian vein."
+    },
+    {
+      "start": 520.77,
+      "end": 522.61,
+      "text": "just lateral to the angle of the clavicle,"
+    },
+    {
+      "start": 524.22,
+      "end": 525.48,
+      "text": "or the femoral vein."
+    },
+    {
+      "start": 528.78,
+      "end": 529.92,
+      "text": "Once you've placed your catheter,"
+    },
+    {
+      "start": 530.61,
+      "end": 536.95,
+      "text": "want to confirm its location and make sure we haven't caused any damage to this round"
+    },
+    {
+      "start": 536.95,
+      "end": 539.55,
+      "text": "with an internal jugular."
+    },
+    {
+      "start": 540.38,
+      "end": 542.58,
+      "text": "is going to be ensuring there is no pneumothorax,"
+    },
+    {
+      "start": 542.8,
+      "end": 545.39,
+      "text": "which can be done with ultrasound or x-ray,"
+    },
+    {
+      "start": 546.61,
+      "end": 547.79,
+      "text": "and then the location of the probe,"
+    },
+    {
+      "start": 548.74,
+      "end": 549.97,
+      "text": "patheter, within the vessel."
+    },
+    {
+      "start": 551.34,
+      "end": 557.7,
+      "text": "Here you can see agitated saline being passed through the catheter and visualized within the right ventricle."
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "understanding": "Central venous access teaching video with Doppler examples, a neck phantom demonstration and later cardiac ultrasound.",
+  "native_opened": [
+    48,
+    116,
+    177,
+    366,
+    382,
+    392,
+    396,
+    397,
+    398,
+    399,
+    400,
+    435,
+    502,
+    535
+  ],
+  "tasks": [
+    {
+      "qa_type": "current_observation",
+      "query_time": 116,
+      "answer_time": 116,
+      "checkpoints": [],
+      "question": "How do the main excursions in the upper and lower spectral traces differ relative to their baselines?",
+      "reference_answer": "The upper trace extends mainly below baseline, while the lower trace has sharp peaks above it.",
+      "visual_support": "Both spectral examples are shown together in the left panel.",
+      "query_prefix_check": "Both traces are visible simultaneously.",
+      "answer_prefix_check": "Their dominant excursions can be compared directly.",
+      "shortcut_risk": "Low. The answer describes the displayed waveforms.",
+      "task_id": "s3_remaining79_HQh0wp4Vjuw_01",
+      "video_id": "HQh0wp4Vjuw",
+      "split": "train",
+      "language": "en",
+      "source_video": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/HQh0wp4Vjuw.mp4",
+      "stage3_value": "high",
+      "visual_evidence": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/HQh0wp4Vjuw/116.jpg",
+          "checkpoint": 116.0,
+          "source_pts_seconds": 115.933333,
+          "resolution": [
+            1152,
+            720
+          ]
+        }
+      ],
+      "asr_support_segments": [],
+      "query_decision": "ANSWER",
+      "answer_decision": "ANSWER",
+      "review_status": "accepted_targeted_native_frame_self_review",
+      "student_input_visibility": "not_checked"
+    },
+    {
+      "qa_type": "history_recall",
+      "query_time": 400,
+      "answer_time": 400,
+      "checkpoints": [
+        366
+      ],
+      "question": "Before the probe was lifted from the mannequin, what shape did the dark vessel have in the earlier cross-sectional view?",
+      "reference_answer": "It appeared roughly round to oval.",
+      "visual_support": "The vessel at 366 has a closed oval outline. The view at 400 shows its elongated profile.",
+      "query_prefix_check": "The earlier cross-sectional mannequin view is already in the stream.",
+      "answer_prefix_check": "The requested shape is directly visible at 366.",
+      "shortcut_risk": "Moderate. The term cross-sectional makes an oval plausible but does not confirm it.",
+      "task_id": "s3_remaining79_HQh0wp4Vjuw_02",
+      "video_id": "HQh0wp4Vjuw",
+      "split": "train",
+      "language": "en",
+      "source_video": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/HQh0wp4Vjuw.mp4",
+      "stage3_value": "high",
+      "visual_evidence": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/HQh0wp4Vjuw/366.jpg",
+          "checkpoint": 366.0,
+          "source_pts_seconds": 365.933333,
+          "resolution": [
+            1152,
+            720
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/HQh0wp4Vjuw/400.jpg",
+          "checkpoint": 400.0,
+          "source_pts_seconds": 399.933333,
+          "resolution": [
+            1152,
+            720
+          ]
+        }
+      ],
+      "asr_support_segments": [],
+      "query_decision": "ANSWER",
+      "answer_decision": "ANSWER",
+      "review_status": "accepted_targeted_native_frame_self_review",
+      "student_input_visibility": "not_checked"
+    },
+    {
+      "qa_type": "event_notification",
+      "query_time": 397,
+      "answer_time": 399,
+      "checkpoints": [
+        398
+      ],
+      "question": "Let me know when the probe gives a clear lengthwise view of the dark vessel again.",
+      "reference_answer": "The vessel is visible lengthwise again as a dark channel with two roughly parallel walls.",
+      "visual_support": "There is no resolved vessel at 397; 398 shows a partial dark profile at the edge; 399 shows a long, bounded channel across the panel.",
+      "query_prefix_check": "The probe is returning to the neck but there is no clear lengthwise view yet.",
+      "answer_prefix_check": "The two vessel walls and elongated dark lumen are both visible by 399.",
+      "shortcut_risk": "Low. The event requires inspecting the left panel.",
+      "task_id": "s3_remaining79_HQh0wp4Vjuw_03",
+      "video_id": "HQh0wp4Vjuw",
+      "split": "train",
+      "language": "en",
+      "source_video": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/HQh0wp4Vjuw.mp4",
+      "stage3_value": "high",
+      "visual_evidence": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/HQh0wp4Vjuw/397.jpg",
+          "checkpoint": 397.0,
+          "source_pts_seconds": 396.933333,
+          "resolution": [
+            1152,
+            720
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/HQh0wp4Vjuw/398.jpg",
+          "checkpoint": 398.0,
+          "source_pts_seconds": 397.933333,
+          "resolution": [
+            1152,
+            720
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/HQh0wp4Vjuw/399.jpg",
+          "checkpoint": 399.0,
+          "source_pts_seconds": 398.933333,
+          "resolution": [
+            1152,
+            720
+          ]
+        }
+      ],
+      "asr_support_segments": [],
+      "query_decision": "WAIT",
+      "answer_decision": "ANSWER",
+      "review_status": "accepted_targeted_native_frame_self_review",
+      "student_input_visibility": "not_checked"
+    }
+  ],
+  "video_id": "HQh0wp4Vjuw",
+  "review_scope": "Same-assistant review; sampled timeline, original-size key frames, and existing time-indexed ASR when available. No continuous replay or direct audio claim."
+}

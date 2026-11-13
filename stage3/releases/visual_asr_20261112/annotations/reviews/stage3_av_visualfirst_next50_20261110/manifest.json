@@ -1,0 +1,539 @@
+{
+  "dataset_version": "stage3_av_visualfirst_next50_v1",
+  "original_selected_videos": 50,
+  "original_reviewed_videos": 50,
+  "original_accepted_videos": 21,
+  "original_excluded_videos": 29,
+  "candidate_videos_reviewed": 123,
+  "accepted_videos": 30,
+  "excluded_videos": 93,
+  "qa_count": 100,
+  "qa_types": {
+    "current_observation": 29,
+    "history_recall": 21,
+    "temporal_comparison": 24,
+    "event_notification": 26
+  },
+  "response_groups": {
+    "immediate": 50,
+    "delayed": 50
+  },
+  "train_tasks": 98,
+  "eval_tasks": 2,
+  "train_samples": 147,
+  "eval_samples": 3,
+  "accepted_video_ids": [
+    "YYk6NP0n6Cs",
+    "JwMcy65g4Oc",
+    "jEeJ8otZC0c",
+    "dg0cN7ndMfM",
+    "V8DgPnUMsus",
+    "FpJFkPOfNHM",
+    "OqedcP9OPvc",
+    "Dv4YEvLWvaA",
+    "-BYuVL4E-cY",
+    "Lx8VPI75R8s",
+    "hPtVJaUsMpo",
+    "qYM2sft8R2I",
+    "WrsrvingZGI",
+    "l6yKd_FZx5g",
+    "Q1KzQ0aQW_o",
+    "fpFVHA_0md8",
+    "i080vrj27_s",
+    "OQJ2RhnuOQQ",
+    "w48FeCNOfaQ",
+    "57yshzYBvfQ",
+    "pClYyRZlYE8",
+    "HuJzn_PF118",
+    "TlckvYhqaFE",
+    "9tDPHZ2Ck08",
+    "ToKjoj8ze4o",
+    "fsRrC53sWus",
+    "-X05DgCfQrE",
+    "i73ovcEL3OI",
+    "OJB8ZNtVAvA",
+    "A0td4rEd1Sk"
+  ],
+  "excluded": [
+    {
+      "video_id": "cKdioYlocUE",
+      "selection": "selection.json",
+      "reason": "Most of the recording is narrated slides, labeled anatomy, and annotated sonograms. Candidate current/history answers are exposed by slide labels or ASR; delayed transitions are scripted slide cuts or sonographic changes that cannot be timed and verified reliably from the reviewed frames. Four natural visual-dependent QA with two genuinely delayed answers could not be supported without padding."
+    },
+    {
+      "video_id": "i3AXB6mAoms",
+      "selection": "selection.json",
+      "reason": "The candidate clinical anatomy, needle adjustment, and injection-result answers are narrated almost directly; the relevant sonograms are partly labeled or visually too subtle to establish unique first-sufficient delayed answers. The rest of the recording consists mainly of illustrated slides and text cards. A four-type, visual-dependent, balanced QA set would be forced."
+    },
+    {
+      "video_id": "D6Az0Z_Wo-4",
+      "selection": "selection.json",
+      "reason": "The educational montage labels the anatomy and approach, and ASR explicitly narrates nerve position, needle route, fascial-plane spread, and nerve visibility. The unannotated sonograms reviewed at 194.5, 214.5, 244.5, and 264.5 seconds do not support reliable visually distinct onset times for two delayed clinical questions. Only slide transitions would provide easy delayed triggers, which are low-value template shortcuts."
+    },
+    {
+      "video_id": "ODF8ZLr_52s",
+      "selection": "selection.json",
+      "reason": "Throughout the ultrasound tutorial, the same on-screen captions describe the probe movement and identify the cecum, vessels, target-shaped appendix, and longitudinal blind end. The ASR gives the same sequence. Proposed QA can be answered from visible text/narration rather than interpreting the sonogram, including prospective delayed questions."
+    },
+    {
+      "video_id": "8Hyh6tZi9xM",
+      "selection": "selection.json",
+      "reason": "The video is a patient-information interview with noncontiguous illustrative clinic cutaways, not a continuous visual record of one biopsy. The ASR fully describes preparation, sampling, clip placement, dressing, and aftercare. Visual cutaway changes cannot safely ground procedural progression or notification timing; questions about clinic props would be trivial."
+    },
+    {
+      "video_id": "h14Ee2yAmUU",
+      "selection": "selection.json",
+      "reason": "The actual scanning segment is dominated by a nearly fixed split-screen sonogram/probe view. The ASR states nerve position, needle approach, and local-anesthetic spread; in the reviewed original-resolution one-second grid, late fluid change is too subtle to assign a reliable first-sufficient answer time. Two possible delayed questions would both concern the same brief Doppler/position adjustment and lack type diversity."
+    },
+    {
+      "video_id": "PfxxVXsQsfY",
+      "selection": "selection.json",
+      "reason": "The recording is a narrated teaching montage with arrows, labels, on-screen instructions and a probe-position diagram. The normal appendix, ileocecal valve, psoas, CT comparison, appendicitis and fat wrap are announced or labeled at the relevant time. This creates answer leakage for the four requested QA categories, and the noncontiguous inserted examples make delayed clinical trigger times ambiguous."
+    },
+    {
+      "video_id": "lREUPXCpK8Y",
+      "selection": "selection.json",
+      "reason": "The video is an explicit narrated slide/tutorial. Its probe orientation, vein/artery labels, compression behavior, Doppler behavior, medial/lateral relationships and long-axis tube appearance are all simultaneously spelled out in ASR and on-screen text/arrows. Without relying on trivia about props, a visual-primary immediate/delayed 1:1 set cannot be formed."
+    },
+    {
+      "video_id": "RskrEsAGzec",
+      "selection": "selection.json",
+      "reason": "The recording is a schematic probe/needle manipulation lesson rather than an observed clinical scan. The ASR explicitly explains every named movement and its resulting image, while large on-screen labels identify sliding, compression, rocking, tilting, needle visibility and alignment. Delayed question triggers would mostly be animation/cut transitions predictable from narration or text."
+    },
+    {
+      "video_id": "-1i1i9sbjqE",
+      "selection": "selection.json",
+      "reason": "This lecture compares display conventions through a rotating anatomical model and paired ultrasound clips. The key mirror-image, screen-marker, and probe-orientation facts are explicitly narrated and later printed on the frames; remaining visual queries would be about incidental illustration geometry or lecture editing, not a meaningful ultrasound observation."
+    },
+    {
+      "video_id": "nJCcJu4e-yM",
+      "selection": "selection.json",
+      "reason": "The video is a hand-held needle/probe demonstration over a striped paper schematic, without an actual ultrasound scan or patient target. Its clinically meaningful in-plane/out-of-plane and needle-following facts are fully narrated in ASR. Candidate questions about which hand holds which object or arbitrary paper position would make visual dependence trivial rather than meaningful; no defensible 4-type, 1:1 AV set was retained."
+    },
+    {
+      "video_id": "bsKBhAkp3fI",
+      "selection": "selection.json",
+      "reason": "The FAST lecture consists of a presenter plus static labeled slides and example still sonograms. The clinically useful findings, including free-fluid locations, are directly annotated with arrows/text and narrated. No visually evolving patient examination supports a causal delayed question."
+    },
+    {
+      "video_id": "_RHRy64jQ6s",
+      "selection": "selection.json",
+      "reason": "The internal-jugular lecture largely shows static or repeated annotated sonograms and probe-position graphics. Vein/artery locations, Valsalva enlargement, and long-axis flow direction are explicitly written or spoken; no distinct visual-first delayed clinical transition remains after removing edit-cut and label-reading questions."
+    },
+    {
+      "video_id": "ga3t4LCZ6P0",
+      "selection": "selection.json",
+      "reason": "The entire liver protocol is a sequence of labeled static ultrasound stills paired with probe-position diagrams. Each organ/vessel and probe orientation is named in the image and narrated. Slide transitions would create artificial WAIT/ANSWER timing."
+    },
+    {
+      "video_id": "9LjtPWfsjFw",
+      "selection": "selection.json",
+      "reason": "Probe-orientation lecture uses diagrams and screen labels while the narration explicitly gives the directional mapping and sequence. Under the visual-first rule, the candidate immediate answers are supplied by ASR and prospective events reduce to slide/annotation transitions; four useful visual-dependent QA cannot be justified."
+    },
+    {
+      "video_id": "X1E7OgOLzw0",
+      "selection": "selection.json",
+      "reason": "Pleural-effusion lesson is dominated by text-labeled ultrasound slides. The captions and narration identify the anatomical structures and effusion grades; proposed temporal/event answers would be predictable from slide labels or edit order rather than independent sonographic observation."
+    },
+    {
+      "video_id": "8_k2I774klo",
+      "selection": "selection.json",
+      "reason": "Spinal-ultrasound lecture is dominated by labeled anatomy animations, annotated still sonograms, and text slides. Candidate answers about landmarks and approach are carried by labels/narration; delayed questions reduce to slide transitions rather than a newly observed clinical condition."
+    },
+    {
+      "video_id": "80dG97rGwMo",
+      "selection": "selection.json",
+      "reason": "The thyroid FNA lesson contains a short real-neck anesthesia sequence and a phantom demonstration, but the core anatomy, biopsy steps and expected change in skin appearance are explicitly narrated or written on slides. The remaining purely visual details are incidental setup details; four meaningful visual-primary questions with two genuinely unresolved delayed triggers cannot be supported."
+    },
+    {
+      "video_id": "4s0V-NMaUdg",
+      "selection": "selection.json",
+      "reason": "Near-duplicate upload of i080vrj27_s: identical lesson structure and approximately 543.7-second runtime with matching overview frames. Keeping one copy avoids train-data duplication and repeated QA."
+    },
+    {
+      "video_id": "BwSJCkTBN0c",
+      "selection": "selection.json",
+      "reason": "The shoulder-ultrasound tutorial embeds the examination positions, probe movements, anatomy, and pathology guidance as large on-screen instructions beside the scan. The same sequence is narrated; four useful visual-dependent QA, including two delayed changes, would largely test reading the overlay or predicting the edited tutorial order."
+    },
+    {
+      "video_id": "zV3hw_QbgK4",
+      "selection": "selection.json",
+      "reason": "The central-line Part 2 video is largely explanatory slides, annotated ultrasound clips, and verbatim narration of the needle/wire appearances. Candidate QA can be answered from slide text or ASR, while prospective events are mostly pre-edited clip changes rather than a meaningful unresolved visual condition."
+    },
+    {
+      "video_id": "HQh0wp4Vjuw",
+      "selection": "selection.json",
+      "reason": "This central-line lesson intercuts annotated still sonograms, diagrams, and a short mannequin procedure. Its ASR names each procedure step, guidewire appearance, catheter transition, and Doppler interpretation as they occur; candidate event and comparison questions would be strongly answerable from speech or edit order. Four visual-primary QA with two nontrivial delayed answers could not be justified."
+    },
+    {
+      "video_id": "lNcaDxyPdEU",
+      "selection": "selection.json",
+      "reason": "The sampled video is a slide lecture. Lung artifact names and BLUE-protocol conclusions are displayed in slide text alongside ultrasound clips, so candidate answers leak through text and narrated interpretation. The isolated moving ultrasound windows do not provide two independent delayed visual outcomes with defensible query and answer boundaries."
+    },
+    {
+      "video_id": "b70tsWPz2P0",
+      "selection": "selection.json",
+      "reason": "The 16 sampled source frames show an echocardiography protocol lecture: ultrasound clips are repeatedly captioned with their view and anatomy, with measurements and explanatory text on screen. A question-led visual-first audit cannot safely derive two independent delayed clinical observations here without relying on the edited teaching sequence or displayed answers."
+    },
+    {
+      "video_id": "6J2wtC5zOOU",
+      "selection": "selection.json",
+      "reason": "The sampled video is a technical-tip slide lecture with annotated diagrams, labels, and short embedded demonstrations. Key probe, nerve, and needle claims are explicitly printed, so the proposed visual-first immediate and delayed answers are vulnerable to text/template leakage."
+    },
+    {
+      "video_id": "Qjz9a2mMQD0",
+      "selection": "selection.json",
+      "reason": "The sampled video is a central-vein cannulation lecture dominated by text slides and annotated ultrasound/needle images. The captions and illustrations supply the relevant findings and procedural sequence before they could be treated as independently observed delayed events."
+    },
+    {
+      "video_id": "YllLJNPnpjY",
+      "selection": "selection.json",
+      "reason": "The genuine arm and neck scanning segments are intercut with talking-head explanations, held/annotated sonogram inserts, and a fully narrated step sequence. Original-resolution one-second checks show the 450-485 neck sonogram is largely repeated/held while the instructor describes the vein shift; the 577-609 procedure sequence is verbalized action by action, and no independently grounded delayed sonographic boundary remains. Immediate visual questions alone do not meet this candidate acceptance gate."
+    },
+    {
+      "video_id": "8fOUM98P2Sc",
+      "selection": "selection.json",
+      "reason": "The sampled video is an echo-window teaching presentation. View names and cardiac structures are printed directly on the moving clips; screen labels and repeated illustrative templates make four independent visual-first questions with two genuine delayed triggers unreliable."
+    },
+    {
+      "video_id": "ROcVsjjW0cw",
+      "selection": "selection.json",
+      "reason": "The sampled video is a central-line lecture with text-heavy slides and labelled static/procedure inserts. Main facts are already exposed by slide headings, annotations, or narration, leaving insufficient causally delayed visual outcomes for this protocol."
+    },
+    {
+      "video_id": "Hlb-rO_dc8s",
+      "selection": "fallback_selection.json",
+      "reason": "Static narrated breast-positioning slides with printed probe diagrams and directly annotated sonograms; answer-bearing location/layer/shadowing information is already in slide text or narration. No continuous live scan or independent visual onset to support two delayed tasks."
+    },
+    {
+      "video_id": "i6NjbpLUwak",
+      "selection": "fallback_selection.json",
+      "reason": "The phantom central-line procedure does contain original sonogram insets, but the usable vessel and wire transitions are edited overlays aligned with narration. The sonographic compression sequence alternates views without an unambiguous causal onset, while the wire-check is explicitly announced by ASR. Four distinct visual-first tasks with two defensible delayed boundaries could not be supported without redundant or narration-solvable labels."
+    },
+    {
+      "video_id": "rI9hxJDMGGY",
+      "selection": "fallback_selection.json",
+      "reason": "Fetal femur-positioning tutorial uses static/edited sonogram examples beside probe diagrams, with printed fetal-presentation and bone labels and explanatory captions. Slide changes can be timed but do not provide a visually observed clinical transition; the answers are directly recoverable from text/ASR."
+    },
+    {
+      "video_id": "7Yfe2vOpFmY",
+      "selection": "fallback_selection.json",
+      "reason": "Physics lecture consists almost entirely of schematics, hand-written definitions/arrows and narration; the brief sonogram is illustrative. QA about frequency, resolution, or penetration would be readable from on-screen labels or ASR and has no authentic scan-event boundary."
+    },
+    {
+      "video_id": "enQBV0rbQ2I",
+      "selection": "fallback_selection.json",
+      "reason": "Abdominal scanning demonstrations are intercut with section title cards and ultrasound images labeled with the target organ and colored arrows. Organ-appearance notifications and history/current answers leak through titles/annotations or narration; transitions are editorial cuts rather than defensible live visual onset."
+    },
+    {
+      "video_id": "yUKdf-HTD8M",
+      "selection": "fallback_selection.json",
+      "reason": "This obstetric scanning explainer is mostly a scripted animation intercut with labeled example scans. The full ASR explicitly names the fetus, placenta, measurements, probe movements and their sequence, and the screen also labels key findings; delayed questions would largely be forecast by narration or cut timing rather than unresolved visual observation."
+    },
+    {
+      "video_id": "Aff_83j4uc0",
+      "selection": "fallback_selection.json",
+      "reason": "The original-source overview shows a slide lecture throughout: problem statements, ultrasound arrows, captions, and diagrams reveal the biopsy-planning answers. Embedded demonstrations are brief and already illustrated by surrounding text; no reliable visual-first delayed question was identified for this protocol."
+    },
+    {
+      "video_id": "yJ2z3Ju0oow",
+      "selection": "extra_selection.json",
+      "reason": "Thoracentesis lecture screen recordings and text slides dominate; procedural photographs and ultrasound snapshots are illustrative, annotated and separated by cuts. No continuous scan onset for two delayed visual-first tasks."
+    },
+    {
+      "video_id": "xLYBOf2da8s",
+      "selection": "extra_selection.json",
+      "reason": "Abdominal protocol commentary shows mostly paused or repeated scan clips with printed organ-view labels and cursor circles. Original-resolution 1-second checks at 235-275 and 525-580 show long unchanged images and editorial swaps; organ names and expected findings are spoken, leaving no two defensible non-redundant delayed visual-only transitions."
+    },
+    {
+      "video_id": "j5hICPh4t5w",
+      "selection": "extra_selection.json",
+      "reason": "Almost entire duration is a talking-head explanation; a few tiny ultrasound insets or held probe demonstration do not support four distinct ultrasound-grounded tasks with two delayed visual boundaries."
+    },
+    {
+      "video_id": "bRPD-51UG7Y",
+      "selection": "extra_selection.json",
+      "reason": "Fetal-probe tutorial is a sequence of still fetal sonograms and diagrams with printed organ/fetal-presentation labels and explanatory captions. Slide cuts would be the only delayed events and permit text/ASR shortcuts."
+    },
+    {
+      "video_id": "0Xc0x0pAoEc",
+      "selection": "extra_selection.json",
+      "reason": "Subclavian access lecture contains annotated still diagrams, study slides, and brief edited scan examples explicitly described by narration. The isolated video examples do not provide four independent question-led, causally timed visual observations; wire confirmation is titled on screen."
+    },
+    {
+      "video_id": "_Q0cTG3ZlHk",
+      "selection": "extra_selection.json",
+      "reason": "Ten-signs lung ultrasound lesson writes each answer-bearing sign name and arrows directly onto mostly still examples; no continuous clinical scan transitions, making delayed tasks title/annotation or narration-solvable."
+    },
+    {
+      "video_id": "pXUwN6srPyQ",
+      "selection": "extra_selection.json",
+      "reason": "Normal lung anatomy is shown in titled slides with labeled arrows and static sonogram examples. Temporal/event labels would track slide progression rather than image change, and captions/ASR reveal answers."
+    },
+    {
+      "video_id": "I3Jqbxa1_Ts",
+      "selection": "extra_selection.json",
+      "reason": "Supraclavicular vein presentation is a slide deck with labeled anatomy, procedure steps, still sonograms and clips embedded in slides. Needle/wire appearances are explicitly titled or narrated, and two clean unannounced delayed visual boundaries are not available."
+    },
+    {
+      "video_id": "HJ9HX0CrL-U",
+      "selection": "extra_selection.json",
+      "reason": "Cardiac cases are arranged as simultaneous side-by-side comparison clips with permanent labels Normal/Reduced EF, Effusion/No Effusion, Normal/Dilated RV. Questions can be answered by those labels; changes between cases are slide cuts, not streaming sonographic onset."
+    },
+    {
+      "video_id": "8YEaGs9UUs8",
+      "selection": "extra_selection.json",
+      "reason": "Needle-visualization tutorial is chiefly a talking head with overlaid step titles, checkmarks, captions and diagrams. Ultrasound frames are illustrative and answer-bearing steps are named on screen/ASR; four visual-first items with two genuine delayed outcomes are unsupported."
+    },
+    {
+      "video_id": "hhZUYpfnoaA",
+      "selection": "extra_selection.json",
+      "reason": "Lumbar-puncture lecture is almost entirely goal-labeled slides and annotated still sonograms. Candidate answers about midline, interspace, depth and probe orientation are printed beside the images, leaving no two meaningful unresolved visual changes."
+    },
+    {
+      "video_id": "qB-vLjiupak",
+      "selection": "extra_selection.json",
+      "reason": "Transvaginal anatomy lecture places colored structure names directly over most sonograms and alternates with titled diagrams. Anatomy and later appearances can be read from overlays and slide sequence, so four visual-primary QA with two nontrivial delayed questions are not supported."
+    },
+    {
+      "video_id": "rwdNv3SRT0A",
+      "selection": "extra_selection.json",
+      "reason": "Subclavian-line lecture presents key approaches, landmarks and findings as bullet text alongside annotated small sonograms. The prospective items would mainly follow slide transitions rather than changing observed anatomy."
+    },
+    {
+      "video_id": "MVzxaiWzxjk",
+      "selection": "extra_selection.json",
+      "reason": "Lung-ultrasound lesson uses multiple-choice slides, text-labeled examples and circle-highlighted answer panels. The visual facts needed for candidate QA are explicitly printed, making delayed answers predictable from presentation structure."
+    },
+    {
+      "video_id": "WXlavlEFIaU",
+      "selection": "extra_selection.json",
+      "reason": "Vascular-access lecture contains ultrasound clips but its narration explicitly identifies the needle tip, wall tenting, bubbles and catheter flush at the relevant moments. Two delayed visual questions would be directly answered by speech, while other candidates rely on diagram labels or circular highlights."
+    },
+    {
+      "video_id": "8RCssOi6KpM",
+      "selection": "extra_selection.json",
+      "reason": "Needle-guidance presentation overlays large instructional text on the ultrasound clips, including the target behavior, tip motion and spread assessment. The apparent events are telegraphed by slide headings and captions."
+    },
+    {
+      "video_id": "jRLJmHGc5n4",
+      "selection": "extra_selection.json",
+      "reason": "Postoperative nerve-block lecture is dominated by research-paper screenshots, bullet slides and named anatomy diagrams. Sparse short procedure clips do not justify four visual-primary QA with two delayed observations."
+    },
+    {
+      "video_id": "Xv0abFuo5gY",
+      "selection": "extra_selection.json",
+      "reason": "E-FAST overview labels each scan region and overlays highlighted anatomy or fluid examples with large titles. Answers about free fluid, cardiac function or lung sliding are exposed by the lesson graphics and sequence, rather than unresolved visual evidence."
+    },
+    {
+      "video_id": "1E4NSR6yjMw",
+      "selection": "extra_selection.json",
+      "reason": "The video is a lecture of titled, annotated echo slides and diagrams. Candidate window, orientation, pathology, and measurement facts are directly stated in slide text and narration; no reliable visually primary query/answer transition survives. Native stills at 168 and 639 seconds were checked."
+    },
+    {
+      "video_id": "vwAwvsN1mJU",
+      "selection": "extra_selection.json",
+      "reason": "The video is mostly research slides, cartoons, anatomical diagrams, and annotated still/cine examples. Candidate anatomical targets are marked by arrows/circles and named by narration; no unambiguous late visual finding with a defensible pre-query boundary survived review of the native stills at 660 and 937 seconds."
+    },
+    {
+      "video_id": "8V649L5Q368",
+      "selection": "extra_selection.json",
+      "reason": "Although this contains live lung and chest scanning, the potential clinical findings (sliding, spine past diaphragm, curtain sign, A/B-lines, pleural effusion) are narrated at or before their display. Several comparison examples have explicit labels or arrows. After reviewing the full ASR and native frames at 533, 888, and 959 seconds, no immediate/delayed pair with a necessary visual fact and defensible delayed onset survived."
+    },
+    {
+      "video_id": "vIbcAv9udso",
+      "selection": "extra_selection2.json",
+      "reason": "The continuous phantom procedure has genuine ultrasound inset, but the inset is too small and the prospective needle-tip/guidewire positions remain ambiguous in full-size source frames. The narration directly supplies the vessel-access sequence. One-second checks at 960-1000 and 1153-1168 do not establish a visually distinct needle-in-lumen or wire-in-lumen onset. There is no defensible visual-first delayed QA."
+    },
+    {
+      "video_id": "QXsqFr-eGiM",
+      "selection": "extra_selection2.json",
+      "reason": "The mixed teaching montage contains authentic procedure and ultrasound inserts, but the decisive steps are explicitly captioned with large text/arrows and narrated. The 620-820 source sequence labels aspiration, wire insertion, and wire confirmation at their appearance, making proposed delayed answers solvable without visual scene understanding. No independent visual event boundary was defensible in the reviewed regions."
+    },
+    {
+      "video_id": "C60jGZsiPrs",
+      "selection": "remaining_selection.json",
+      "reason": "A basic cardiac ultrasound lecture. The sampled source timeline is nearly all labelled diagrams/slides with short embedded cine examples; the narration names views, anatomy and observed motion during those examples. No continuous patient-specific scanning transition supports a visual-first delayed answer."
+    },
+    {
+      "video_id": "hazy6gol4rE",
+      "selection": "remaining_selection.json",
+      "reason": "The lung-ultrasound tutorial remains on text-heavy 4-P slides and selected example images throughout the sampled timeline. The speaker describes probe and image changes as they are shown. The visible demonstrations are illustrative slide inserts, not a continuous exam with a dependable query/answer boundary."
+    },
+    {
+      "video_id": "o_Fmsk3QCkc",
+      "selection": "remaining_selection.json",
+      "reason": "A vascular-access lecture built from objectives, diagrams, and selected sonograms. Vessel identity, compressibility, Doppler and access choices are narrated and often labelled. The sampled source provides no continuous patient/probe sequence for a visual-first delayed QA."
+    },
+    {
+      "video_id": "xBDOuUxBswo",
+      "selection": "remaining_selection.json",
+      "reason": "A procedural-guidance lecture in slides with embedded phantom clips and explanatory captions. Needle alignment, visibility, and errors are explicitly spoken or printed; the sampled montage does not offer a stable continuous visual transition independent of the teaching template."
+    },
+    {
+      "video_id": "A_CVfJFPp-E",
+      "selection": "remaining_selection.json",
+      "reason": "A narrated vascular-access screencast with labelled sonograms, diagrams and short clips. Probe orientation, tip-tracking and wire location are explained at the same time as their visuals; the sampled source is a montage, not an uninterrupted procedure allowing a defensible delayed onset."
+    },
+    {
+      "video_id": "Q9ZcHkmIBzY",
+      "selection": "remaining_selection.json",
+      "reason": "A slide-led ultrasound-guided IV course. The sampled frames are overwhelmingly titled diagrams, paired example sonograms and talking-head inserts. The ASR spells out vein/artery identification, compression, and equipment; proposed clinical QAs would mainly test slide or narration reading."
+    },
+    {
+      "video_id": "GPHyZfm8T2s",
+      "selection": "remaining_selection.json",
+      "reason": "A paediatric chest ultrasound lecture with text-labelled stills and selected images. The ASR gives the diagnosis and appearance for each case, while the sampled frames show no real-time scan sequence from which a causal delayed answer could be verified."
+    },
+    {
+      "video_id": "VFPcSCetCxg",
+      "selection": "remaining_selection.json",
+      "reason": "A cardiac-ultrasound teaching slideshow. Most sampled frames are named views, diagrams, thresholds and short example sonograms; the speaker directly names anatomy and findings. Delayed answers would follow slide transitions or narration rather than evolving visual evidence."
+    },
+    {
+      "video_id": "7cQ_3GtvNxo",
+      "selection": "remaining_selection.json",
+      "reason": "An advanced lung-ultrasound lecture dominated by titled slides, diagnostic algorithms and small example images. ASR describes A/B lines, lung sliding, effusions and decisions while showing them. No independent continuous scan boundary was found in the distributed source overview."
+    },
+    {
+      "video_id": "-UDinlF3ha4",
+      "selection": "remaining_selection.json",
+      "reason": "A near-duplicate of 7cQ_3GtvNxo with the same advanced lung-ultrasound slide sequence and ASR content. Titled slides and diagnostic text dominate; sampled visual changes are edits, not a continuous ultrasound process suitable for delayed visual-first QA."
+    },
+    {
+      "video_id": "J_kORTc8hxY",
+      "selection": "remaining_selection.json",
+      "reason": "A BLUE-protocol lecture. The sample timeline shows slides, small cine inserts and chest x-rays, while the full-span ASR explicitly interprets each sign and example, including lung point and B-line cases. No continuous patient scan or unique visually timed delayed event is available."
+    },
+    {
+      "video_id": "KGSdQB80ois",
+      "selection": "remaining_selection.json",
+      "reason": "Mixed teaching and a short real scanning demonstration around 640–700 seconds. Original-resolution one-second review at 660–685 shows a jump from shadowed view to kidney view at about 680 seconds while the narration names the kidney; this is an edited teaching boundary, not an independently verifiable continuous trigger. The remainder is labelled example slides and commentary."
+    },
+    {
+      "video_id": "0C0aontpnxM",
+      "selection": "remaining_selection.json",
+      "reason": "A lung-ultrasound teaching sequence with R1–L6 region labels and on-screen instructions. The sonographic patterns and scanning choices are explicitly described in the ASR or written on slides, so candidate visual-first answers leak before a distinct visual event."
+    },
+    {
+      "video_id": "bOtYoIl1UQA",
+      "selection": "remaining_selection.json",
+      "reason": "Regional-anesthesia anatomy lecture: the native-size frames show labeled anatomical drawings and sonogram collages, while narration names the landmarks and blocks. No independently observed delayed change remains without slide or speech shortcuts."
+    },
+    {
+      "video_id": "h2geLj0rsf0",
+      "selection": "remaining_selection.json",
+      "reason": "The sampled source frames are mostly dense explanatory slides and annotated examples; the narration explains the depicted findings. A prospective visual condition would be an edited example or a spoken diagnosis rather than an independently observed bedside event."
+    },
+    {
+      "video_id": "Y9Hv84m3kOM",
+      "selection": "remaining_selection.json",
+      "reason": "Lung-ultrasound clip montage. The lecturer explicitly names lung point, B-lines, pleural effusion and other displayed patterns as they appear; several clips also have labels/cursors. The tempting delayed alerts can be answered from contemporaneous narration or editing."
+    },
+    {
+      "video_id": "qfvu9E2iy2k",
+      "selection": "remaining_selection.json",
+      "reason": "Needle-navigation webinar with diagrams and small embedded procedural clips. Its ASR walks through needle movement, tip position, vessel entry, wire advancement and endpoint at the same moments, leaving no reliable visual-first delayed condition after leakage audit."
+    },
+    {
+      "video_id": "Cg8Mzbc4TBY",
+      "selection": "remaining_selection.json",
+      "reason": "Cardiac ultrasound simulator recording. The original-size per-second checks over 65–95, 930–960 and 1560–1630 seconds show small ultrasound inset/diagram and view manipulation; narration names view rotation, Doppler placement and resulting structures. Proposed transition alerts are audio- or interface-recoverable."
+    },
+    {
+      "video_id": "DnQGMAoqpCc",
+      "selection": "remaining_selection.json",
+      "reason": "Survey lecture of many biopsy/intervention examples, shown as titled slides and small inset images. The ASR announces the target, needle tip and outcome for the examples. The edited case sequence does not support a clean visual-first prospective event question."
+    },
+    {
+      "video_id": "466cDoLdVZQ",
+      "selection": "remaining_selection.json",
+      "reason": "Lower-extremity nerve-block lecture slides with labeled anatomy, ultrasound stills and technique diagrams. The speaker describes needle, nerve, injection and spread during each example. Distinct temporal answers would be recoverable from speech or slide labels."
+    },
+    {
+      "video_id": "g-ImEs1cANU",
+      "selection": "remaining_selection.json",
+      "reason": "BLUE-protocol teaching deck with algorithm labels and small ultrasound demonstrations. The ASR directly supplies lung sliding, B-profile, lung point and diagnosis during the examples, so questions about the visible sign or subsequent condition would leak through audio."
+    },
+    {
+      "video_id": "GoPxLxhoufE",
+      "selection": "remaining_selection.json",
+      "reason": "Central-line training talk contains short mannequin/ultrasound clips, but narration explicitly tracks needle entering skin, needle-tip visibility, vessel tenting and rebound, flash and wire steps. The useful transitions are spoken at or before their answer times."
+    },
+    {
+      "video_id": "xa6U5rZIaGM",
+      "selection": "remaining_selection.json",
+      "reason": "Lung-ultrasound didactic talk with labeled signs and embedded examples. The speaker states the sign and interpretation while showing it (sliding, A/B-lines, lung point and consolidation), leaving no defensible visual-primary delayed event in sampled material."
+    },
+    {
+      "video_id": "nWyF1SoIeBQ",
+      "selection": "remaining_selection.json",
+      "reason": "BLUE-protocol lecture combines text, algorithm charts, CT/ultrasound teaching examples and narrated case answers. Clinical signs and conclusions are labeled or spoken, and the clip order is instructional editing rather than independent live progression."
+    },
+    {
+      "video_id": "EKbtDrlWArI",
+      "selection": "remaining_selection.json",
+      "reason": "The sampled source is a narrated regional-block lecture dominated by research slides, annotated anatomy/sonograms, equipment stills and labeled technique panels. No sustained unlabeled live scan or operation is visible in the 16-frame overview; visually phrased candidates would be answerable from slide labels or narration."
+    },
+    {
+      "video_id": "1BKw6adBPmA",
+      "selection": "remaining_selection.json",
+      "reason": "The lung-ultrasound grand-rounds source interleaves short illustrative sonograms with text slides that name A/B lines, positive regions, edema and fibrosis. The overview does not show a sustained unresolved scan or operation; candidate answers are exposed by on-screen definitions and lecture speech."
+    },
+    {
+      "video_id": "2EFxV5dpIPo",
+      "selection": "remaining_selection.json",
+      "reason": "The recording is largely webinar slides and talking-head discussion. Sonograms are static examples embedded in named slides, with pathology and interpretation given in slide text/ASR; no sustained live visual sequence suitable for causal WAIT/ANSWER was found in the overview."
+    },
+    {
+      "video_id": "az6h_u_8nhA",
+      "selection": "remaining_selection.json",
+      "reason": "This central-line lecture presents labeled diagrams, still sonograms, and short procedure illustrations. The sampled video does not show a sustained unlabeled continuous bedside scan; needle/guidewire steps are explained in narration and annotated slide graphics."
+    },
+    {
+      "video_id": "CEDXT947V7s",
+      "selection": "remaining_selection.json",
+      "reason": "The source is a montage of static, fully labeled probe-position and anatomy slides. Each ultrasound image, probe location, organ name and scanning direction is printed on screen, making candidate QA answerable from slide text and sequence alone."
+    },
+    {
+      "video_id": "WhNxq98szE8",
+      "selection": "remaining_selection.json",
+      "reason": "The source is a talking-head lung-ultrasound lecture with definitions, diagrams, labeled examples and research slides. Sampled sonograms are illustrative inserts rather than a continuous unresolved scan; ASR and headings disclose the target findings."
+    },
+    {
+      "video_id": "RBOsbOIWCXE",
+      "selection": "remaining_selection.json",
+      "reason": "The source is an annotated lung-ultrasound research lecture. Overview frames show article screenshots, graphs and labeled example sonograms, with no sustained unlabeled scan or bedside procedure; answers would be exposed by slide text or narration."
+    },
+    {
+      "video_id": "2kABh3bJKHI",
+      "selection": "remaining_selection.json",
+      "reason": "The long regional-anesthesia slide lecture consists of textual technique, contraindication and anatomy slides with annotated sonographic stills. No sustained patient/probe/needle sequence appears in the overview; candidate answers are printed or narrated."
+    },
+    {
+      "video_id": "xIYFMfQuyt8",
+      "selection": "remaining_selection.json",
+      "reason": "This is a musculoskeletal-imaging lecture with speakers, MRI/radiograph slides and labeled ultrasound examples. The video is predominantly slide transitions, not continuous live sonography or operation, and candidate diagnoses are named in graphics and ASR."
+    },
+    {
+      "video_id": "8_qBECxovQM",
+      "selection": "remaining_selection.json",
+      "reason": "The 95-minute source is an EchoPAC review interface playing previously acquired cardiac clips with visible thumbnail library, measurement overlays and mode controls. It does not depict a continuous live bedside scan or procedure. Candidate mode-switch events would be software playback/navigation, with future views previewed in thumbnails and explained in ASR."
+    }
+  ],
+  "review_limitations": [
+    "Same-assistant question-led sampled self-review of original-resolution frames; not continuous full-video viewing.",
+    "ASR was read but original audio was not directly listened to during QA authorship.",
+    "No clinical expert review, independent blind review, or model ablation has been performed.",
+    "Only query and answer checkpoints are labelled for delayed tasks; intervening seconds are not exhaustively labelled."
+  ],
+  "acceptance_status": "re_review_complete_rescue_candidates_unmerged",
+  "acceptance_note": "The original video-type and per-stage value labels remain authoritative selection context. The 29 original exclusions used an overly strict per-video QA quota and ad hoc near-duplicate exclusion; they require question-level re-review before final rejection. Current counts describe the existing draft only.",
+  "rescued_candidate_videos": 5,
+  "rescued_candidate_QA": 7,
+  "rescued_response_groups": {
+    "delayed": 4,
+    "immediate": 3
+  },
+  "rescue_summary": "rescue_summary.json"
+}

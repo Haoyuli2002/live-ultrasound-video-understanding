@@ -1,0 +1,418 @@
+{
+  "video_id": "FKaJt2NmyOo",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/eval/FKaJt2NmyOo/asr.txt",
+  "segments": [
+    {
+      "start": 0.86,
+      "end": 5.86,
+      "text": "Hello everyone, this is Dr. Sam, and today we will learn about ultra-sumpro positioning"
+    },
+    {
+      "start": 5.86,
+      "end": 8.28,
+      "text": "and scanning techniques for the Anguino Canal."
+    },
+    {
+      "start": 11.18,
+      "end": 16.23,
+      "text": "On the left is a diagram showing the ultrasound probe position and on the right is the image"
+    },
+    {
+      "start": 16.23,
+      "end": 19.16,
+      "text": "formed, this is the patient's abdomen."
+    },
+    {
+      "start": 20.96,
+      "end": 23.18,
+      "text": "This dotted area is the coastal margin."
+    },
+    {
+      "start": 25.0,
+      "end": 26.18,
+      "text": "This is the umbilicus."
+    },
+    {
+      "start": 27.94,
+      "end": 29.58,
+      "text": "The pubic synthesis is at this point."
+    },
+    {
+      "start": 31.25,
+      "end": 32.83,
+      "text": "This is the pelvic region of the patient."
+    },
+    {
+      "start": 34.2,
+      "end": 36.6,
+      "text": "The Inguinol canal is mainly scanned for hernias."
+    },
+    {
+      "start": 37.96,
+      "end": 39.96,
+      "text": "To scan the Inguinol canal, the patient is..."
+    },
+    {
+      "start": 40.06,
+      "end": 44.64,
+      "text": "placed in a supine position. The scan can also be done in a standing position if the"
+    },
+    {
+      "start": 44.64,
+      "end": 47.14,
+      "text": "hernia is not visualized in a supine position."
+    },
+    {
+      "start": 47.14,
+      "end": 49.96,
+      "text": "the Valsalva man"
+    },
+    {
+      "start": 50.0,
+      "end": 53.12,
+      "text": "maneuver is very important for the evaluation of hernias."
+    },
+    {
+      "start": 54.2,
+      "end": 56.5,
+      "text": "In this maneuver, the patient pinches their nose shut"
+    },
+    {
+      "start": 56.5,
+      "end": 59.06,
+      "text": "and keeps their mouth closed and exhales forcefully."
+    },
+    {
+      "start": 60.1,
+      "end": 64.42,
+      "text": "This increases the intra-abdominal pressure, which makes the hernia more prominent and"
+    },
+    {
+      "start": 64.42,
+      "end": 69.98,
+      "text": "easier to see on ultrasound. A high-frequency, linear..."
+    },
+    {
+      "start": 70.0,
+      "end": 75.5,
+      "text": "your probe with a frequency range between 7 and 15 megahertz is often used for the scan."
+    },
+    {
+      "start": 76.61,
+      "end": 79.97,
+      "text": "But for obese patients, a curvilinear probe with a frequency range"
+    },
+    {
+      "start": 80.0,
+      "end": 82.8,
+      "text": "between 3 and 5 megahertz is selected."
+    },
+    {
+      "start": 83.9,
+      "end": 86.48,
+      "text": "Hullard Doppler can be used to identify blood vessels."
+    },
+    {
+      "start": 89.17,
+      "end": 89.97,
+      "text": "Now we will look at..."
+    },
+    {
+      "start": 90.03,
+      "end": 96.61,
+      "text": "scanning technique. This white box is the probe. The red dot is the indicator or the orientation marker."
+    },
+    {
+      "start": 96.61,
+      "end": 99.8,
+      "text": "This dot-line represents the approximate location"
+    },
+    {
+      "start": 100.0,
+      "end": 107.0,
+      "text": "of the Inguinal ligament. The Inguinal ligament is a fibrous band that extends from the anterior,"
+    },
+    {
+      "start": 107.0,
+      "end": 109.78,
+      "text": "superior iliac spine to the pubic tubercle."
+    },
+    {
+      "start": 110.8,
+      "end": 114.38,
+      "text": "It has an oblique course and forms the base of the Inguino Canal."
+    },
+    {
+      "start": 117.01,
+      "end": 119.69,
+      "text": "Start the scan by placing the probe in transverse orientation."
+    },
+    {
+      "start": 120.0,
+      "end": 129.84,
+      "text": "Lateral to the rectus abdominis muscle inferior and lateral to the umbilicus in this manner the indicator is directed towards the patients"
+    },
+    {
+      "start": 130.0,
+      "end": 136.01,
+      "text": "right side. Here we are scanning the left Inguinal region. The same method applies to"
+    },
+    {
+      "start": 136.01,
+      "end": 139.98,
+      "text": "scanning the right side. When you place the probe like this, you will..."
+    },
+    {
+      "start": 140.0,
+      "end": 144.12,
+      "text": "will see a large muscle. This is the rectus abdominis muscle."
+    },
+    {
+      "start": 145.23,
+      "end": 149.97,
+      "text": "Slowly sweep the probe downwards until you see a small round hypoacoic"
+    },
+    {
+      "start": 150.06,
+      "end": 154.12,
+      "text": "or anechoic pulsatile structure posterior to the rectus muscle."
+    },
+    {
+      "start": 155.29,
+      "end": 158.95,
+      "text": "This pulsatile structure will be the inferior epigastric artery."
+    },
+    {
+      "start": 160.64,
+      "end": 163.9,
+      "text": "You can also use color Doppler to easily locate this artery."
+    },
+    {
+      "start": 165.23,
+      "end": 169.97,
+      "text": "The inferior epigastric artery is the main landmark for locating the Inguinokun."
+    },
+    {
+      "start": 170.0,
+      "end": 177.58,
+      "text": "now. It also helps in classifying direct and indirect inguinal hernias. Keep moving"
+    },
+    {
+      "start": 177.58,
+      "end": 179.96,
+      "text": "the probe downwards and slightly away from the"
+    },
+    {
+      "start": 180.0,
+      "end": 189.97,
+      "text": "midline inferior laterally with color Doppler applied it is easier to see the blood vessels initially the larger pulsate"
+    },
+    {
+      "start": 190.03,
+      "end": 195.84,
+      "text": "artery at this level will be the external iliac artery and the smaller"
+    },
+    {
+      "start": 195.84,
+      "end": 199.3,
+      "text": "pulsatile vessel will be the inferior epigastric artery."
+    },
+    {
+      "start": 201.31,
+      "end": 209.81,
+      "text": "This is the Inguino region. Here you can look for any defects, disruption, bulging, or protrusion of fat or bowel."
+    },
+    {
+      "start": 210.83,
+      "end": 215.59,
+      "text": "the patient to perform the Valsalva maneuver and evaluate this region during the maneuver."
+    },
+    {
+      "start": 217.81,
+      "end": 219.97,
+      "text": "The left side in the image is towards the"
+    },
+    {
+      "start": 220.0,
+      "end": 226.75,
+      "text": "pubic symphysis or the midline. So regarding the inferior epigastric artery, this area is"
+    },
+    {
+      "start": 226.75,
+      "end": 229.35,
+      "text": "medium to the inferior epigastric artery."
+    },
+    {
+      "start": 230.86,
+      "end": 235.32,
+      "text": "So any protrusion of fat or bowel in this region indicates a direct ingonohernia."
+    },
+    {
+      "start": 236.83,
+      "end": 239.97,
+      "text": "And this region in the image is lateral to the inferior epi-"
+    },
+    {
+      "start": 240.0,
+      "end": 246.85,
+      "text": "gastric artery. So if we see fat or bowel in this area, it will be classified as an indirect ingunohornia."
+    },
+    {
+      "start": 248.57,
+      "end": 249.45,
+      "text": "This green region"
+    },
+    {
+      "start": 250.0,
+      "end": 257.45,
+      "text": "you an approximation of the Inguinol Canal. It has an oblique course. The deep Inguinol ring is"
+    },
+    {
+      "start": 257.45,
+      "end": 259.97,
+      "text": "present above the midpoint of the Inguinol ligum."
+    },
+    {
+      "start": 260.0,
+      "end": 267.66,
+      "text": "It's the entrance of the Ingrinol Canal, the spermatic chord in males and the round ligament"
+    },
+    {
+      "start": 267.66,
+      "end": 268.3,
+      "text": "in females."
+    },
+    {
+      "start": 270.0,
+      "end": 274.06,
+      "text": "inguinal nerve and the genital branch of genital femoral nerve pass through the"
+    },
+    {
+      "start": 274.06,
+      "end": 279.24,
+      "text": "inguinal canal. The superficial inguinal ring is the exit point of the inguinal"
+    },
+    {
+      "start": 279.24,
+      "end": 279.64,
+      "text": "canal."
+    },
+    {
+      "start": 282.78,
+      "end": 287.87,
+      "text": "You can also scan along the inguinal ligament in this manner by placing the probe obliquely"
+    },
+    {
+      "start": 287.87,
+      "end": 288.83,
+      "text": "along the ligament."
+    },
+    {
+      "start": 289.54,
+      "end": 289.98,
+      "text": "And you might..."
+    },
+    {
+      "start": 290.0,
+      "end": 292.68,
+      "text": "be able to see the inguinal ligament as a fibrous band."
+    },
+    {
+      "start": 294.78,
+      "end": 297.6,
+      "text": "This hyper-echoic bony structure is the pubic tubercle."
+    },
+    {
+      "start": 301.28,
+      "end": 305.56,
+      "text": "Slide the probe more immediately and slightly downwards to thoroughly scan the Inguino"
+    },
+    {
+      "start": 305.56,
+      "end": 306.54,
+      "text": "Canal completely."
+    },
+    {
+      "start": 307.55,
+      "end": 309.97,
+      "text": "Now we have moved more downwards, so at this..."
+    },
+    {
+      "start": 310.03,
+      "end": 314.93,
+      "text": "point, the inferior epigastric artery is very close to the external iliac artery."
+    },
+    {
+      "start": 316.6,
+      "end": 319.8,
+      "text": "Inferior epigastric artery arises from the external"
+    },
+    {
+      "start": 320.0,
+      "end": 326.31,
+      "text": "Iliac artery. This small hyperocobic area is the pubic ramus. If we move more"
+    },
+    {
+      "start": 326.31,
+      "end": 329.15,
+      "text": "downwards, we are starting to enter the femoral canal."
+    },
+    {
+      "start": 330.38,
+      "end": 335.02,
+      "text": "This is like the junction between the inguinal canal and the femoral canal in this image."
+    },
+    {
+      "start": 337.1,
+      "end": 339.3,
+      "text": "These are the inferior epigastric vessels."
+    },
+    {
+      "start": 340.0,
+      "end": 344.78,
+      "text": "and vein, and they are seen near the common femoral artery."
+    },
+    {
+      "start": 346.77,
+      "end": 349.83,
+      "text": "The external iliac artery becomes the common femoral"
+    },
+    {
+      "start": 350.0,
+      "end": 355.62,
+      "text": "artery as we move towards the thigh. The pulsating vessel is the common femoral"
+    },
+    {
+      "start": 355.62,
+      "end": 359.78,
+      "text": "artery and this large non-pulsating vessel is the femoral vein."
+    },
+    {
+      "start": 361.89,
+      "end": 364.01,
+      "text": "This region is a part of the Inguinal Canal."
+    },
+    {
+      "start": 365.16,
+      "end": 369.76,
+      "text": "Carefully scan this region and look for any fat or bowel contents protruding through."
+    },
+    {
+      "start": 370.58,
+      "end": 375.67,
+      "text": "The fat appears hypoacoic and bowel loops are often present in these hernias, so you may"
+    },
+    {
+      "start": 375.67,
+      "end": 377.43,
+      "text": "even find peristaltic bowel loops."
+    },
+    {
+      "start": 381.12,
+      "end": 386.29,
+      "text": "Thank you so much for watching, please subscribe and stay tuned for more imaging videos."
+    }
+  ]
+}

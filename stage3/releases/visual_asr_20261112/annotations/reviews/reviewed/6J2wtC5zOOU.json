@@ -1,0 +1,107 @@
+{
+  "understanding": "Regional anesthesia teaching slides using ultrasound examples to illustrate landmarks and probe handling, including an animated probe-tilt diagram.",
+  "native_opened": [
+    399,
+    420,
+    480,
+    487,
+    490,
+    493,
+    494,
+    495,
+    496,
+    540
+  ],
+  "tasks": [
+    {
+      "qa_type": "current_observation",
+      "query_time": 420,
+      "answer_time": 420,
+      "checkpoints": [],
+      "question": "In the ankle example, where is the circled nerve relative to the bright fibular corner?",
+      "reference_answer": "It is superficial to the fibular corner, just above the dotted fascial line.",
+      "visual_support": "The circle is above the dotted line and the arrow to the fibular corner points deeper.",
+      "query_prefix_check": "The nerve circle and the bone arrow are both on screen.",
+      "answer_prefix_check": "Their positions and the line between them are visible.",
+      "shortcut_risk": "Low. Text identifies the landmarks but not their relative depths.",
+      "task_id": "s3_remaining79_6J2wtC5zOOU_01",
+      "video_id": "6J2wtC5zOOU",
+      "split": "train",
+      "language": "en",
+      "source_video": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/6J2wtC5zOOU.mp4",
+      "stage3_value": "medium",
+      "visual_evidence": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/6J2wtC5zOOU/420.jpg",
+          "checkpoint": 420.0,
+          "source_pts_seconds": 419.933333,
+          "resolution": [
+            1728,
+            1080
+          ]
+        }
+      ],
+      "asr_support_segments": [],
+      "query_decision": "ANSWER",
+      "answer_decision": "ANSWER",
+      "review_status": "accepted_targeted_native_frame_self_review",
+      "student_input_visibility": "not_checked"
+    },
+    {
+      "qa_type": "temporal_comparison",
+      "query_time": 493,
+      "answer_time": 494,
+      "checkpoints": [
+        490
+      ],
+      "question": "Once the tilted-probe diagram finishes, how does the return arrow compare with the one in the upright-probe diagram?",
+      "reference_answer": "With the probe upright, the return arrow angles off to the side. With the probe tilted, it goes back toward the probe along nearly the same line as the outgoing arrow.",
+      "visual_support": "At 490 the return is drawn at an angle away from the probe. At 493 the tilted probe is visible but the return is absent. At 494 both arrows are visible on near-parallel paths.",
+      "query_prefix_check": "The tilted pose alone does not show the return arrow in the animation yet.",
+      "answer_prefix_check": "Both arrows are visible with the tilted probe, enabling comparison with 490.",
+      "shortcut_risk": "Moderate. Basic ultrasound physics may help predict the answer, but the illustration confirms it.",
+      "task_id": "s3_remaining79_6J2wtC5zOOU_02",
+      "video_id": "6J2wtC5zOOU",
+      "split": "train",
+      "language": "en",
+      "source_video": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/6J2wtC5zOOU.mp4",
+      "stage3_value": "medium",
+      "visual_evidence": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/6J2wtC5zOOU/490.jpg",
+          "checkpoint": 490.0,
+          "source_pts_seconds": 489.933333,
+          "resolution": [
+            1728,
+            1080
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/6J2wtC5zOOU/493.jpg",
+          "checkpoint": 493.0,
+          "source_pts_seconds": 492.933333,
+          "resolution": [
+            1728,
+            1080
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/6J2wtC5zOOU/494.jpg",
+          "checkpoint": 494.0,
+          "source_pts_seconds": 493.933333,
+          "resolution": [
+            1728,
+            1080
+          ]
+        }
+      ],
+      "asr_support_segments": [],
+      "query_decision": "WAIT",
+      "answer_decision": "ANSWER",
+      "review_status": "accepted_targeted_native_frame_self_review",
+      "student_input_visibility": "not_checked"
+    }
+  ],
+  "video_id": "6J2wtC5zOOU",
+  "review_scope": "Same-assistant review; sampled timeline, original-size key frames, and existing time-indexed ASR when available. No continuous replay or direct audio claim."
+}

@@ -1,0 +1,688 @@
+{
+  "video_id": "w48FeCNOfaQ",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/w48FeCNOfaQ/asr.txt",
+  "segments": [
+    {
+      "start": 10.03,
+      "end": 13.45,
+      "text": "great welcome to ultrasound fandom target training today we're going to be"
+    },
+    {
+      "start": 13.45,
+      "end": 18.45,
+      "text": "going over the central line so this is a needle over wire technique or a"
+    },
+    {
+      "start": 18.45,
+      "end": 19.81,
+      "text": "and challenge your technique that we're gonna be providing."
+    },
+    {
+      "start": 20.0,
+      "end": 23.55,
+      "text": "today. We're going to do it on our Phantom Target. We're going to do it with an"
+    },
+    {
+      "start": 23.87,
+      "end": 27.64,
+      "text": "introducer kit much like this one right here. Now you can use any kit you want"
+    },
+    {
+      "start": 27.64,
+      "end": 29.96,
+      "text": "with a looming catheter, a double looming catheter,"
+    },
+    {
+      "start": 30.0,
+      "end": 39.97,
+      "text": "In this case here, I have a 20 gauge single-loom in catheter, which is very similar to what I would typically use for either a single-loom in jugular access or in a very pinched-"
+    },
+    {
+      "start": 40.0,
+      "end": 44.56,
+      "text": "tea or pediatric patient or more frequently I'll use for a femoral arterial"
+    },
+    {
+      "start": 44.56,
+      "end": 49.97,
+      "text": "line or brachial arterial line. The smaller kit is going to"
+    },
+    {
+      "start": 50.0,
+      "end": 53.78,
+      "text": "give us the advantage of having less damage to the target but feel free to use"
+    },
+    {
+      "start": 53.78,
+      "end": 58.4,
+      "text": "whatever you have. We're gonna want to make sure that we have our rigid"
+    },
+    {
+      "start": 58.4,
+      "end": 59.2,
+      "text": "to introduce her."
+    },
+    {
+      "start": 62.59,
+      "end": 69.97,
+      "text": "a syringe, a cylinder wire, and we can even use the catheter if we sew two"
+    },
+    {
+      "start": 70.0,
+      "end": 74.8,
+      "text": "for training. What you're going to want to do now is have your ultrasound machine ready to go."
+    },
+    {
+      "start": 76.24,
+      "end": 79.57,
+      "text": "Your ultrasound probe is ready, coupling gel."
+    },
+    {
+      "start": 81.54,
+      "end": 83.3,
+      "text": "I want you to keep the ultrasound probe"
+    },
+    {
+      "start": 83.3,
+      "end": 85.1,
+      "text": "in your non-dominant hand."
+    },
+    {
+      "start": 85.83,
+      "end": 88.07,
+      "text": "Needle is gonna go in your dominant hand."
+    },
+    {
+      "start": 88.94,
+      "end": 89.98,
+      "text": "So get all the things that you need."
+    },
+    {
+      "start": 90.0,
+      "end": 92.75,
+      "text": "to get ready and I'll meet you back here in just a moment."
+    },
+    {
+      "start": 104.96,
+      "end": 109.97,
+      "text": "So what we're going to do now is put our coupling gel on and again I have the probe on my non-dominant hand."
+    },
+    {
+      "start": 110.0,
+      "end": 113.58,
+      "text": "which is my left hand because I am right-handed and just put that coupling"
+    },
+    {
+      "start": 113.58,
+      "end": 118.26,
+      "text": "go down just like that I want to get good conduction so that the sound can go"
+    },
+    {
+      "start": 118.26,
+      "end": 119.9,
+      "text": "into my subject whether it's a person"
+    },
+    {
+      "start": 120.0,
+      "end": 125.37,
+      "text": "or this case a phantom target and I'm going to go ahead and put it down and find my simulated"
+    },
+    {
+      "start": 125.37,
+      "end": 125.81,
+      "text": "vessel."
+    },
+    {
+      "start": 126.46,
+      "end": 129.98,
+      "text": "Now what I do that I'm going to go ahead and take my personal preference which is"
+    },
+    {
+      "start": 130.0,
+      "end": 136.92,
+      "text": "This syringe here the plunger has a channel for the guide wire or cylinder wire to go through"
+    },
+    {
+      "start": 136.92,
+      "end": 139.76,
+      "text": "So I'm going to choose that one. I'm also going to use the sake of"
+    },
+    {
+      "start": 140.0,
+      "end": 145.02,
+      "text": "the rigid catheter. Okay, so it looks like a straight"
+    },
+    {
+      "start": 145.38,
+      "end": 149.61,
+      "text": "hypodarmic needle. Now the reason I'm going to use that is just going to make things a little bit easier."
+    },
+    {
+      "start": 150.32,
+      "end": 152.02,
+      "text": "during this evolution for fan I'm training."
+    },
+    {
+      "start": 152.42,
+      "end": 154.52,
+      "text": "In real life, on this particular kit,"
+    },
+    {
+      "start": 154.64,
+      "end": 157.1,
+      "text": "which is again the 20 gauge arrow kit,"
+    },
+    {
+      "start": 157.74,
+      "end": 159.96,
+      "text": "I'm gonna go ahead and take my own engine three cool."
+    },
+    {
+      "start": 160.0,
+      "end": 162.04,
+      "text": "or gel co-needle, and use that."
+    },
+    {
+      "start": 162.2,
+      "end": 164.1,
+      "text": "Just because the one that comes with this kit"
+    },
+    {
+      "start": 164.1,
+      "end": 166.66,
+      "text": "is not exactly my preference, it works just fine,"
+    },
+    {
+      "start": 166.9,
+      "end": 169.16,
+      "text": "but I like to use the equipment that I'm used to."
+    },
+    {
+      "start": 169.56,
+      "end": 169.98,
+      "text": "I like that."
+    },
+    {
+      "start": 170.03,
+      "end": 172.49,
+      "text": "particular catheter and it makes inserting my"
+    },
+    {
+      "start": 172.49,
+      "end": 175.07,
+      "text": "femoral a-line is a lot easier. So I'm going to go"
+    },
+    {
+      "start": 175.07,
+      "end": 179.6,
+      "text": "ahead and I'm going to find my catheter or rather my"
+    },
+    {
+      "start": 180.0,
+      "end": 185.26,
+      "text": "I'm going to line up my catheter and get ready to make my puncture."
+    },
+    {
+      "start": 190.03,
+      "end": 199.98,
+      "text": "Okay, great. Now that I have my probe and my non-dominant hand in them."
+    },
+    {
+      "start": 200.0,
+      "end": 201.06,
+      "text": "I'm ready to go with my equipment."
+    },
+    {
+      "start": 201.89,
+      "end": 204.31,
+      "text": "I'm gonna go ahead and put it down on the fan-up target."
+    },
+    {
+      "start": 204.57,
+      "end": 207.97,
+      "text": "Now I have my hand a pie on the fan-up target,"
+    },
+    {
+      "start": 208.05,
+      "end": 209.59,
+      "text": "but this is just for demonstration purposes."
+    },
+    {
+      "start": 210.29,
+      "end": 214.42,
+      "text": "Typically, while doing a procedure, I have my hand resting on the sterile drape in the"
+    },
+    {
+      "start": 214.42,
+      "end": 218.08,
+      "text": "sterile field where near the patient, like this, just for more stability."
+    },
+    {
+      "start": 219.07,
+      "end": 219.97,
+      "text": "So, I'm gonna take..."
+    },
+    {
+      "start": 220.0,
+      "end": 227.04,
+      "text": "my probe with my left hand and I'm gonna take my needle with the right. I'm gonna go ahead and puncture"
+    },
+    {
+      "start": 227.04,
+      "end": 229.84,
+      "text": "through the skin after I find my vascular target on the phantom."
+    },
+    {
+      "start": 230.58,
+      "end": 232.44,
+      "text": "Now, I have two choices."
+    },
+    {
+      "start": 233.4,
+      "end": 239.84,
+      "text": "I can either slide the probe until I find the end of the needle."
+    },
+    {
+      "start": 240.03,
+      "end": 245.62,
+      "text": "So that little white orb goes all the way away and we call that hypercolic or the other thing"
+    },
+    {
+      "start": 245.62,
+      "end": 249.98,
+      "text": "I can do if anatomy does not allow me to slide the probe what I can do"
+    },
+    {
+      "start": 250.0,
+      "end": 256.05,
+      "text": "I can just simply tilt. I'm gonna find where the hyper-acochrome ends. That's the tip of my needle."
+    },
+    {
+      "start": 256.6,
+      "end": 259.79,
+      "text": "I'm gonna go ahead and advance. I'm gonna advance all the way down."
+    },
+    {
+      "start": 260.0,
+      "end": 264.16,
+      "text": "In this case, I'm going to go ahead and slide distal with my left hand in the probe, keeping"
+    },
+    {
+      "start": 264.64,
+      "end": 267.06,
+      "text": "the needle tip in view the entire time."
+    },
+    {
+      "start": 267.06,
+      "end": 269.27,
+      "text": "and now as I get through"
+    },
+    {
+      "start": 270.42,
+      "end": 271.64,
+      "text": "I'm gonna go ahead and I'm gonna look."
+    },
+    {
+      "start": 272.48,
+      "end": 274.04,
+      "text": "I'm gonna notice that right now,"
+    },
+    {
+      "start": 274.18,
+      "end": 277.88,
+      "text": "I see the tip within the vascular subject."
+    },
+    {
+      "start": 279.69,
+      "end": 279.97,
+      "text": "We're gonna now..."
+    },
+    {
+      "start": 280.0,
+      "end": 289.86,
+      "text": "detach now with this particular needle I can either detach the needle and advance the wire through or what I can do here is I can just"
+    },
+    {
+      "start": 290.0,
+      "end": 294.11,
+      "text": "go through the back of the needle itself,"
+    },
+    {
+      "start": 295.06,
+      "end": 296.14,
+      "text": "of the syringe itself rather."
+    },
+    {
+      "start": 297.23,
+      "end": 298.07,
+      "text": "So what I'm gonna do,"
+    },
+    {
+      "start": 298.35,
+      "end": 299.79,
+      "text": "so I'm gonna go ahead and demonstrate that."
+    },
+    {
+      "start": 302.43,
+      "end": 305.68,
+      "text": "I take my J-wire and I'm going to go ahead and advance that through."
+    },
+    {
+      "start": 318.32,
+      "end": 318.48,
+      "text": "Great."
+    },
+    {
+      "start": 320.26,
+      "end": 326.93,
+      "text": "Now in block I can go ahead and remove my syringe as well as the needle and there we go."
+    },
+    {
+      "start": 331.06,
+      "end": 334.47,
+      "text": "Now at this point, I can go ahead and dial it if that's required."
+    },
+    {
+      "start": 335.21,
+      "end": 339.54,
+      "text": "What I want to do is first, let's take a look at the wire in the aluminum vessel."
+    },
+    {
+      "start": 345.06,
+      "end": 349.9,
+      "text": "Okay, one thing I want to point out right now is that our access occurred out of"
+    },
+    {
+      "start": 350.16,
+      "end": 354.46,
+      "text": "That was out of plane or in the short axis using the ultrasound probe."
+    },
+    {
+      "start": 355.13,
+      "end": 359.81,
+      "text": "This way I can see the artery and the vein if I'm doing this technique on a real person."
+    },
+    {
+      "start": 360.0,
+      "end": 363.54,
+      "text": "So out of plane allows us to see just a tip of the needle,"
+    },
+    {
+      "start": 363.54,
+      "end": 366.74,
+      "text": "but I can see two structures with-wise at the same time."
+    },
+    {
+      "start": 367.26,
+      "end": 369.94,
+      "text": "So what I can do is I can assess the wire."
+    },
+    {
+      "start": 370.0,
+      "end": 375.28,
+      "text": "in the lumen of the vessel with both the out of plane and the in plane technique."
+    },
+    {
+      "start": 375.82,
+      "end": 379.42,
+      "text": "So what I'm going to do is I'm going to go ahead and rotate my probe 90 degrees and"
+    },
+    {
+      "start": 379.42,
+      "end": 379.88,
+      "text": "And the problem."
+    },
+    {
+      "start": 380.0,
+      "end": 384.76,
+      "text": "Marker is going to be facing me at this time and I'm going to find the wire right there"
+    },
+    {
+      "start": 384.76,
+      "end": 388.55,
+      "text": "And I can just kind of move it around and you can see it on the screen moving is"
+    },
+    {
+      "start": 390.0,
+      "end": 394.79,
+      "text": "So that's in plain validation of where the catheter is."
+    },
+    {
+      "start": 395.52,
+      "end": 399.92,
+      "text": "Now I'm also going to go ahead and take a look out of plain, and when I do out of plain"
+    },
+    {
+      "start": 400.0,
+      "end": 405.09,
+      "text": "I'm gonna go ahead and go as distals I can and when I look right there"
+    },
+    {
+      "start": 405.09,
+      "end": 409.89,
+      "text": "I've got a good shape. What I did is I actually took an extra long J wire and bend it at the"
+    },
+    {
+      "start": 410.0,
+      "end": 419.83,
+      "text": "So you could see that J there that's actually bent up and I'm gonna go all the way down all the way down to the end of this"
+    },
+    {
+      "start": 420.03,
+      "end": 425.62,
+      "text": "target right there and I see the tip. Now what I can do now is I'm going to go"
+    },
+    {
+      "start": 425.62,
+      "end": 429.16,
+      "text": "ahead and put down my probe just like a wooden real life while doing this"
+    },
+    {
+      "start": 429.16,
+      "end": 429.52,
+      "text": "technique."
+    },
+    {
+      "start": 433.33,
+      "end": 434.75,
+      "text": "I'm gonna go ahead and get my catheter."
+    },
+    {
+      "start": 447.52,
+      "end": 449.86,
+      "text": "I'm going to go ahead and insert it now you can dial it just"
+    },
+    {
+      "start": 450.0,
+      "end": 450.6,
+      "text": "make it easier."
+    },
+    {
+      "start": 462.5,
+      "end": 465.98,
+      "text": "Okay, now that that went down, sometimes it takes just a little bit of force to get all"
+    },
+    {
+      "start": 465.98,
+      "end": 469.68,
+      "text": "the way out there, and now that we're down, one of the things I'm going to do is if I'm"
+    },
+    {
+      "start": 469.68,
+      "end": 469.98,
+      "text": "not used to..."
+    },
+    {
+      "start": 470.03,
+      "end": 475.57,
+      "text": "doing this technique in real life and I'm training for my first time. I'm going to go ahead and make"
+    },
+    {
+      "start": 475.57,
+      "end": 479.97,
+      "text": "this like a real central line or arterial access. I'm going to go ahead and put a four by"
+    },
+    {
+      "start": 480.0,
+      "end": 486.21,
+      "text": "for underneath that would go in the prepped field there and I'm gonna go ahead and remove the wire"
+    },
+    {
+      "start": 486.21,
+      "end": 489.79,
+      "text": "and as I do that I would want to cover up"
+    },
+    {
+      "start": 490.74,
+      "end": 491.84,
+      "text": "the end in real life."
+    },
+    {
+      "start": 491.96,
+      "end": 494.06,
+      "text": "Now, I'm gonna go ahead and put my syringe"
+    },
+    {
+      "start": 494.06,
+      "end": 494.96,
+      "text": "just in the tip there."
+    },
+    {
+      "start": 496.44,
+      "end": 499.82,
+      "text": "I'm gonna give myself a little bit of either air or liquid."
+    },
+    {
+      "start": 501.79,
+      "end": 505.67,
+      "text": "tailing is better. No dextrose containing solutions. I'm going to go ahead and"
+    },
+    {
+      "start": 505.67,
+      "end": 508.86,
+      "text": "I'm going to assess the tip of the the catheter in the lumen."
+    },
+    {
+      "start": 510.67,
+      "end": 512.07,
+      "text": "And I'm going to find it right there."
+    },
+    {
+      "start": 513.38,
+      "end": 517.02,
+      "text": "And when I find the tip of the loom in of the 20 gauge"
+    },
+    {
+      "start": 517.02,
+      "end": 519.9,
+      "text": "catheter, what I'm going to go ahead and do is"
+    },
+    {
+      "start": 519.9,
+      "end": 519.98,
+      "text": "I'm going to go ahead and do."
+    },
+    {
+      "start": 520.0,
+      "end": 522.0,
+      "text": "I'm gonna go ahead and I'm gonna give a little bit of an injection."
+    },
+    {
+      "start": 523.76,
+      "end": 526.1,
+      "text": "And when I see that, I see I get a little bubble test there"
+    },
+    {
+      "start": 526.1,
+      "end": 529.88,
+      "text": "and I can see the bubbles floating in the lumen of the phantom."
+    },
+    {
+      "start": 530.0,
+      "end": 532.19,
+      "text": "vessel that confirms my placement."
+    },
+    {
+      "start": 532.65,
+      "end": 535.71,
+      "text": "Now in real life what I would do is I would just go ahead and draw back and get blood"
+    },
+    {
+      "start": 535.71,
+      "end": 539.92,
+      "text": "and of the appropriate quality or I would do a Fabian's test with a column drop."
+    },
+    {
+      "start": 541.63,
+      "end": 543.49,
+      "text": "At this point here, we're pretty much done,"
+    },
+    {
+      "start": 543.59,
+      "end": 544.93,
+      "text": "and we can go ahead and take our catheter"
+    },
+    {
+      "start": 544.93,
+      "end": 546.11,
+      "text": "back out of the fan target."
+    },
+    {
+      "start": 550.0,
+      "end": 553.52,
+      "text": "now then you'll get the silicone pad kind of separates and that's okay it can just be pushed"
+    },
+    {
+      "start": 553.52,
+      "end": 559.98,
+      "text": "right back down. Learning central line placement and arterial"
+    },
+    {
+      "start": 560.0,
+      "end": 564.88,
+      "text": "access takes time and skill. Developing these skills with phantom targets is one"
+    },
+    {
+      "start": 564.88,
+      "end": 569.1,
+      "text": "way of achieving that goal prior to getting to the clinical theater. I hope that"
+    },
+    {
+      "start": 569.1,
+      "end": 569.82,
+      "text": "this has helped you."
+    },
+    {
+      "start": 570.03,
+      "end": 571.73,
+      "text": "in learning these skills and acquiring"
+    },
+    {
+      "start": 571.73,
+      "end": 573.87,
+      "text": "the motor coordination that's required."
+    },
+    {
+      "start": 574.65,
+      "end": 577.49,
+      "text": "Please feel free to go ahead and loop this video again"
+    },
+    {
+      "start": 577.49,
+      "end": 579.33,
+      "text": "and practice again until you're confident."
+    },
+    {
+      "start": 580.0,
+      "end": 584.94,
+      "text": "go to the next station. Please ask your instructors if you have any questions, feel free to email"
+    },
+    {
+      "start": 584.94,
+      "end": 588.34,
+      "text": "me at ultrasoundredgrove at gmail.com. Thanks."
+    }
+  ]
+}

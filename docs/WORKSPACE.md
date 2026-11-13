@@ -21,7 +21,7 @@
 - `stage2/releases/accepted_v4_20261105_990b9b48/`：已入 Git 的 Visual-only 发布。
 - `stage2/releases/accepted_av_asr_v1/`：已入 Git 的 Visual+ASR 发布。
 - `cluster_data/`、`viz/data/`、视频、权重、日志、转写/抓取缓存保留本地。
-- 本机 `stage3/examples/two_video_overfit/` 为本地调试数据；代码支持该目录，但本次不新增上传这批 QA 数据。
+- Stage3 标签已独立发布到 `stage3/releases/`，包括当前 Visual+ASR 封装与历史 Visual-only QA；双视频调试标签在 `stage3/examples/two_video_overfit/`。原视频、mock 权重和审核图片仍保留本地，详见 `stage3/releases/README.md`。
 - `test.py` 与 `notebooks/fence_reinforcement_practice.ipynb` 是个人练习，保留原位置并由本机 Git exclude 排除。
 - `livecc` 是嵌套仓库；其中原有 teaser 视频删除未提交，保持原状，不替用户恢复或发布。
 

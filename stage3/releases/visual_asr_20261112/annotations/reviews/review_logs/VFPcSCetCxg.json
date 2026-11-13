@@ -1,0 +1,67 @@
+{
+  "video_id": "VFPcSCetCxg",
+  "reviewer": "stage3_b",
+  "review_scope": "Question-led review by Agent B of Agent A draft; not blind. Native full-frame sampled checkpoints and available time-indexed ASR; no continuous replay or direct listening claim.",
+  "reviewer_native_opened": [
+    270,
+    390,
+    510,
+    630,
+    630.25,
+    1150,
+    1234,
+    1235,
+    1236,
+    1325,
+    1326,
+    1327,
+    1328,
+    1329,
+    1330,
+    1390,
+    1234.25,
+    1234.5,
+    1234.75,
+    1328.25,
+    1328.5,
+    1328.75
+  ],
+  "tasks": [
+    {
+      "task_index": 1,
+      "findings": "Confirmed wall separation left greater than right; numerical readout shortcut noted.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 2,
+      "findings": "Confirmed genuine teaching-view change630 to630.25, not inferred physiological remodeling.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 3,
+      "findings": "Refined flattened border orientation upper-left; image morphology rather than red cursor marks.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 4,
+      "findings": "Moved1236 to1234.75: lower-band repeated excursions visible before full panel wipe finishes.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 5,
+      "findings": "Moved1330 to1328.75, left example already provides band above DA. No clinical fluid-location diagnosis.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 6,
+      "findings": "Confirmed earlier mannequin positions at270 and390. Generic acquisition knowledge may shortcut recall, risk recorded.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    }
+  ]
+}

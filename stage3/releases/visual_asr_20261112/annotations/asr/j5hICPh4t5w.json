@@ -1,0 +1,1093 @@
+{
+  "video_id": "j5hICPh4t5w",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/j5hICPh4t5w/asr.txt",
+  "segments": [
+    {
+      "start": 0.06,
+      "end": 1.64,
+      "text": "I love using the subclavian vein"
+    },
+    {
+      "start": 1.64,
+      "end": 3.04,
+      "text": "for placing my central lines."
+    },
+    {
+      "start": 3.32,
+      "end": 5.88,
+      "text": "It's a big sight, it's tethered open with a ligament"
+    },
+    {
+      "start": 5.88,
+      "end": 7.94,
+      "text": "so it never collapses down during respiration."
+    },
+    {
+      "start": 8.14,
+      "end": 9.96,
+      "text": "Back in the day, we had to use the..."
+    },
+    {
+      "start": 10.0,
+      "end": 14.36,
+      "text": "landmark techniques to place that line. Notice what I did there? I said we used to."
+    },
+    {
+      "start": 14.62,
+      "end": 19.56,
+      "text": "That's because today we're going to talk about how you can use ultrasound to place."
+    },
+    {
+      "start": 20.0,
+      "end": 22.62,
+      "text": "sub-clavian central venous catheters."
+    },
+    {
+      "start": 23.45,
+      "end": 23.79,
+      "text": "Gaherd?"
+    },
+    {
+      "start": 46.18,
+      "end": 49.98,
+      "text": "What's up everyone? Welcome back to Crit Tips. I'm so glad"
+    },
+    {
+      "start": 50.0,
+      "end": 55.4,
+      "text": "you came back for another episode. And before I go on, if you enjoyed this video so far,"
+    },
+    {
+      "start": 55.72,
+      "end": 59.98,
+      "text": "watch, go ahead and hit that like button. If you really, really enjoy the content, hit that sub-"
+    },
+    {
+      "start": 60.0,
+      "end": 63.14,
+      "text": "subscribe button so you never miss a video from me again."
+    },
+    {
+      "start": 63.48,
+      "end": 64.66,
+      "text": "And before we kick it to the video,"
+    },
+    {
+      "start": 64.82,
+      "end": 67.8,
+      "text": "you guys once sent me something in the mail again,"
+    },
+    {
+      "start": 68.52,
+      "end": 69.38,
+      "text": "you really didn't have to."
+    },
+    {
+      "start": 69.76,
+      "end": 69.98,
+      "text": "But..."
+    },
+    {
+      "start": 70.0,
+      "end": 70.62,
+      "text": "I'm glad you did."
+    },
+    {
+      "start": 74.0,
+      "end": 76.26,
+      "text": "This is always with these tough covering guys."
+    },
+    {
+      "start": 77.28,
+      "end": 78.35,
+      "text": "Nope, think I got it."
+    },
+    {
+      "start": 78.45,
+      "end": 78.75,
+      "text": "Look at that."
+    },
+    {
+      "start": 79.5,
+      "end": 79.76,
+      "text": "Just."
+    },
+    {
+      "start": 80.0,
+      "end": 81.42,
+      "text": "Add water. Fits all adults."
+    },
+    {
+      "start": 82.46,
+      "end": 83.48,
+      "text": "Right, let's get some water."
+    },
+    {
+      "start": 83.62,
+      "end": 85.16,
+      "text": "I got some water here."
+    },
+    {
+      "start": 88.16,
+      "end": 89.73,
+      "text": "No idea what this could be."
+    },
+    {
+      "start": 90.0,
+      "end": 99.96,
+      "text": "with the wrapping of this is like a Mentos and a Diet Coke thing but nothing seems to be happening so I'm gonna put this bad boy this"
+    },
+    {
+      "start": 100.0,
+      "end": 103.84,
+      "text": "do the video and we'll check in with this thing on the end, kind of like one of"
+    },
+    {
+      "start": 103.84,
+      "end": 108.8,
+      "text": "those cooking show things. I love placing central lines on my patience and I"
+    },
+    {
+      "start": 108.8,
+      "end": 109.9,
+      "text": "know many of you"
+    },
+    {
+      "start": 110.0,
+      "end": 114.76,
+      "text": "do as well. These days, we're tending to go for the internal jugular sight for venous"
+    },
+    {
+      "start": 114.76,
+      "end": 119.6,
+      "text": "cannulation because, well, let's face it, use ultrasound and it's a safer technique."
+    },
+    {
+      "start": 120.0,
+      "end": 124.64,
+      "text": "complications, less arterial sticks, less pneumothorces, less through- and through"
+    },
+    {
+      "start": 124.64,
+      "end": 129.08,
+      "text": "venopunters, it is really the best way to do things. And if you know somebody who's"
+    },
+    {
+      "start": 129.08,
+      "end": 129.9,
+      "text": "Placing and"
+    },
+    {
+      "start": 130.0,
+      "end": 132.56,
+      "text": "internal jugular central line by Landmark technique."
+    },
+    {
+      "start": 133.96,
+      "end": 135.4,
+      "text": "He needs to smack him in the back of their head."
+    },
+    {
+      "start": 135.54,
+      "end": 136.6,
+      "text": "Maybe not Indra procedure,"
+    },
+    {
+      "start": 136.96,
+      "end": 138.02,
+      "text": "or maybe not smack them at all,"
+    },
+    {
+      "start": 138.12,
+      "end": 139.16,
+      "text": "but they should know better."
+    },
+    {
+      "start": 139.36,
+      "end": 139.98,
+      "text": "And fuck."
+    },
+    {
+      "start": 140.0,
+      "end": 143.76,
+      "text": "them some resources, something that I'll teach him that ultrasound is a better way to go."
+    },
+    {
+      "start": 144.08,
+      "end": 148.76,
+      "text": "Now while the internal jugular vein is the place to go with ultrasound, it's not without"
+    },
+    {
+      "start": 148.76,
+      "end": 149.56,
+      "text": "its problems."
+    },
+    {
+      "start": 150.1,
+      "end": 154.6,
+      "text": "Because of its location on the neck and its access to drool, it does have a higher"
+    },
+    {
+      "start": 154.6,
+      "end": 159.06,
+      "text": "site infection when you compare it to the subclavian vein, so it can get more"
+    },
+    {
+      "start": 159.06,
+      "end": 159.9,
+      "text": "infections as"
+    },
+    {
+      "start": 160.0,
+      "end": 161.28,
+      "text": "compared to a subclavian lot."
+    },
+    {
+      "start": 161.48,
+      "end": 163.26,
+      "text": "The other problem with the internal jugular"
+    },
+    {
+      "start": 163.26,
+      "end": 165.6,
+      "text": "is that it's at a slightly increased risk"
+    },
+    {
+      "start": 165.6,
+      "end": 167.78,
+      "text": "of getting deep vein thrombosis."
+    },
+    {
+      "start": 168.0,
+      "end": 169.92,
+      "text": "While it's a nice access site because"
+    },
+    {
+      "start": 170.0,
+      "end": 174.26,
+      "text": "As you can use ultrasound, it does have a slightly higher complication rate when you compare"
+    },
+    {
+      "start": 174.26,
+      "end": 175.42,
+      "text": "to the subclavian vein."
+    },
+    {
+      "start": 175.68,
+      "end": 179.88,
+      "text": "On the other hand, the subclavian site is a wonderful place to put your scent."
+    },
+    {
+      "start": 180.06,
+      "end": 180.38,
+      "text": "line."
+    },
+    {
+      "start": 180.68,
+      "end": 185.18,
+      "text": "It's a much cleaner sight than the neck, it has less risk of DVT, the one problem with"
+    },
+    {
+      "start": 185.18,
+      "end": 189.5,
+      "text": "it is that you have to place it blind or using a landmark technique."
+    },
+    {
+      "start": 190.03,
+      "end": 191.57,
+      "text": "And that's fraught with complications."
+    },
+    {
+      "start": 191.95,
+      "end": 194.17,
+      "text": "You might puncture the artery, or even worse,"
+    },
+    {
+      "start": 194.63,
+      "end": 196.65,
+      "text": "you might cause a pneumothorax."
+    },
+    {
+      "start": 196.95,
+      "end": 199.87,
+      "text": "Well, why not use ultrasound to place your subclavian?"
+    },
+    {
+      "start": 200.03,
+      "end": 204.27,
+      "text": "lines. I've heard a lot of people who have said that clavicle gets in the way and it makes"
+    },
+    {
+      "start": 204.27,
+      "end": 208.51,
+      "text": "it difficult to do ultrasound. But the truth is there have been lots of studies that have"
+    },
+    {
+      "start": 208.51,
+      "end": 209.97,
+      "text": "looked at this and it turns out..."
+    },
+    {
+      "start": 210.03,
+      "end": 215.53,
+      "text": "The subclavian site using ultrasound is something that is very easy and"
+    },
+    {
+      "start": 215.53,
+      "end": 219.79,
+      "text": "accessible to do. It doesn't require years and years of ultrasound training. Even"
+    },
+    {
+      "start": 220.0,
+      "end": 224.5,
+      "text": "people who are new to the ultrasound game can learn how to do this and today I want to"
+    },
+    {
+      "start": 224.5,
+      "end": 226.02,
+      "text": "show you how to do that procedure."
+    },
+    {
+      "start": 226.26,
+      "end": 227.12,
+      "text": "Now here's my disclaimer."
+    },
+    {
+      "start": 227.76,
+      "end": 229.98,
+      "text": "I've been doing this for several years now."
+    },
+    {
+      "start": 230.0,
+      "end": 234.26,
+      "text": "And I do not advise that you go out and do this on your very next line"
+    },
+    {
+      "start": 234.26,
+      "end": 239.66,
+      "text": "In fact all the stuff that we talk here about on crit tips is just for educational purposes. It's not really"
+    },
+    {
+      "start": 240.0,
+      "end": 243.48,
+      "text": "and anything that you do is really your responsibility."
+    },
+    {
+      "start": 243.7,
+      "end": 245.54,
+      "text": "I'm just showing you what I do in my practice"
+    },
+    {
+      "start": 245.54,
+      "end": 247.62,
+      "text": "and some better ways to take care of patients."
+    },
+    {
+      "start": 247.78,
+      "end": 249.52,
+      "text": "But ultimately, it's up to you."
+    },
+    {
+      "start": 249.72,
+      "end": 249.98,
+      "text": "If this..."
+    },
+    {
+      "start": 250.0,
+      "end": 253.2,
+      "text": "This is a technique that you are really into and really want to learn."
+    },
+    {
+      "start": 253.66,
+      "end": 258.46,
+      "text": "I suggest that you do this in a simulation center a few times first and even just look"
+    },
+    {
+      "start": 258.46,
+      "end": 259.88,
+      "text": "with ultrasound on your patients."
+    },
+    {
+      "start": 260.0,
+      "end": 263.5,
+      "text": "before even wielding a needle and trying to do this at home."
+    },
+    {
+      "start": 263.7,
+      "end": 266.86,
+      "text": "All right, now that that's out of the way, let's do a little venous review."
+    },
+    {
+      "start": 267.04,
+      "end": 269.82,
+      "text": "Here you have your basilic and your safalic vein and they"
+    },
+    {
+      "start": 270.03,
+      "end": 272.61,
+      "text": "come up and they join into the axillary vein."
+    },
+    {
+      "start": 272.85,
+      "end": 275.51,
+      "text": "This axillary vein courses here from your shoulder"
+    },
+    {
+      "start": 276.09,
+      "end": 279.25,
+      "text": "underneath the clavicle and becomes the subclavian vein"
+    },
+    {
+      "start": 279.25,
+      "end": 279.81,
+      "text": "that dips."
+    },
+    {
+      "start": 280.06,
+      "end": 282.84,
+      "text": "into your SVC and into your heart."
+    },
+    {
+      "start": 283.14,
+      "end": 287.56,
+      "text": "The really cool thing about this procedure is that you don't even have to go over the"
+    },
+    {
+      "start": 287.56,
+      "end": 289.66,
+      "text": "subclavian venuside, if you can id"
+    },
+    {
+      "start": 290.16,
+      "end": 292.96,
+      "text": "identify the axillary vein really far out."
+    },
+    {
+      "start": 293.2,
+      "end": 294.6,
+      "text": "And I like this procedure for people"
+    },
+    {
+      "start": 294.6,
+      "end": 296.9,
+      "text": "who I don't want to take a chance on a pneumothorax,"
+    },
+    {
+      "start": 297.0,
+      "end": 298.48,
+      "text": "I'll start way distal."
+    },
+    {
+      "start": 298.62,
+      "end": 299.68,
+      "text": "And if I have a good axillary,"
+    },
+    {
+      "start": 299.86,
+      "end": 299.98,
+      "text": "tarn..."
+    },
+    {
+      "start": 300.0,
+      "end": 304.62,
+      "text": "that I can puncture, I'll go ahead and cannulate them there. It's still a deep vein at that point,"
+    },
+    {
+      "start": 304.84,
+      "end": 309.98,
+      "text": "and then I can just direct my catheter all the way down to where the tip is at the junction of the"
+    },
+    {
+      "start": 310.13,
+      "end": 313.15,
+      "text": "SVC and the right atrium where central lunge should be placed."
+    },
+    {
+      "start": 313.66,
+      "end": 314.84,
+      "text": "So here's how we're going to do the procedure."
+    },
+    {
+      "start": 315.36,
+      "end": 318.54,
+      "text": "But first I need the kind of ultrasound probe type thing."
+    },
+    {
+      "start": 320.0,
+      "end": 324.28,
+      "text": "Imagine if you will, this MacBook Pro brick right here is my ultrasound probe."
+    },
+    {
+      "start": 328.55,
+      "end": 329.97,
+      "text": "Obviously, we're going to be using the"
+    },
+    {
+      "start": 330.0,
+      "end": 335.12,
+      "text": "linear probe as we do for any vascular access because the linear array of crystals is going"
+    },
+    {
+      "start": 335.12,
+      "end": 339.78,
+      "text": "to allow us to put the vein in long axis and this is going to be the key to doing that"
+    },
+    {
+      "start": 340.0,
+      "end": 345.65,
+      "text": "We're going to have the marker, imagine a few oats up here, and we're going to plop and drop right here on the"
+    },
+    {
+      "start": 345.65,
+      "end": 349.59,
+      "text": "Antir shoulder. I say plop and drop because we're going to put it here right there."
+    },
+    {
+      "start": 350.03,
+      "end": 355.45,
+      "text": "the shoulder and then we're going to drop it down just a centimeter or two until we see the"
+    },
+    {
+      "start": 355.45,
+      "end": 359.97,
+      "text": "axillary vein and the axillary artery there on our screen. Both of these..."
+    },
+    {
+      "start": 360.0,
+      "end": 364.96,
+      "text": "be pulsatile, so it can be difficult to tell what's what. So we're going to rely on"
+    },
+    {
+      "start": 364.96,
+      "end": 369.97,
+      "text": "pulse wave Doppler to tell us the difference between the artery and"
+    },
+    {
+      "start": 370.0,
+      "end": 375.16,
+      "text": "the vein. With the pulse wave Doppler, you have that little sample volume that's sitting there"
+    },
+    {
+      "start": 375.16,
+      "end": 379.96,
+      "text": "that you can put over each vessel and then run your Doppler waves. If you have an RT"
+    },
+    {
+      "start": 380.54,
+      "end": 389.64,
+      "text": "It's going to give you the spike and if you have a venous flow, it should be more of a continuous low velocity flow that goes on."
+    },
+    {
+      "start": 390.9,
+      "end": 391.94,
+      "text": "You've all seen that before,"
+    },
+    {
+      "start": 392.08,
+      "end": 394.19,
+      "text": "and my sound effects are pretty terrible."
+    },
+    {
+      "start": 394.49,
+      "end": 396.19,
+      "text": "Now, once you plop the probe on the shoulder"
+    },
+    {
+      "start": 396.19,
+      "end": 398.17,
+      "text": "and drop it down a couple of centimeters,"
+    },
+    {
+      "start": 398.43,
+      "end": 399.53,
+      "text": "you're gonna look for your target."
+    },
+    {
+      "start": 399.71,
+      "end": 399.97,
+      "text": "If you're..."
+    },
+    {
+      "start": 400.03,
+      "end": 405.38,
+      "text": "Your venous target, your axillary vein here, is nice and big, well, go for it by to cannulate"
+    },
+    {
+      "start": 405.38,
+      "end": 406.16,
+      "text": "at this point."
+    },
+    {
+      "start": 406.38,
+      "end": 409.88,
+      "text": "If it's not, and usually it's not that big, you're going to have to start moving."
+    },
+    {
+      "start": 410.0,
+      "end": 416.15,
+      "text": "more medial. And as you move more medial towards the sternum on the chest, what you'll find"
+    },
+    {
+      "start": 416.15,
+      "end": 419.69,
+      "text": "And is that that vein that you've identified as the axiote vein will slowly"
+    },
+    {
+      "start": 420.0,
+      "end": 423.84,
+      "text": "bigger and bigger. And what you're going to do is you're going to follow that"
+    },
+    {
+      "start": 423.84,
+      "end": 428.22,
+      "text": "vein in and we're going to go in for a clavicular under the clavicle with this"
+    },
+    {
+      "start": 428.22,
+      "end": 429.98,
+      "text": "probe until we get to the point where the"
+    },
+    {
+      "start": 430.0,
+      "end": 432.64,
+      "text": "that's completely in vain, ducts under the clavicle,"
+    },
+    {
+      "start": 432.82,
+      "end": 433.98,
+      "text": "and then we're gonna move that probe"
+    },
+    {
+      "start": 433.98,
+      "end": 436.42,
+      "text": "just out one centimeter or two."
+    },
+    {
+      "start": 436.86,
+      "end": 439.88,
+      "text": "So we see it nice and round or oval in that short."
+    },
+    {
+      "start": 440.0,
+      "end": 443.94,
+      "text": "view. Look at the clip that's on the screen here. What you'll notice, and hopefully"
+    },
+    {
+      "start": 443.94,
+      "end": 449.98,
+      "text": "having an appreciation for now, is just how close that subclavian vein is to the plural line."
+    },
+    {
+      "start": 450.0,
+      "end": 456.04,
+      "text": "of that lung. It's so close. It just gives me pause. That whenever I need to place a line,"
+    },
+    {
+      "start": 456.44,
+      "end": 459.98,
+      "text": "ultrasound is totally the way I should be doing this. Here's the key."
+    },
+    {
+      "start": 460.0,
+      "end": 465.06,
+      "text": "to the entire procedure. And I say this to my trainees, I say this to attendings who"
+    },
+    {
+      "start": 465.06,
+      "end": 469.79,
+      "text": "I meet who really want to do this technique, you should never, ever, under any circumstance."
+    },
+    {
+      "start": 470.0,
+      "end": 479.76,
+      "text": "Did I say never never do this on the cross section or short axis view no matter how good you are at putting the needle in"
+    },
+    {
+      "start": 480.0,
+      "end": 482.08,
+      "text": "and following it down in a stepwise approach"
+    },
+    {
+      "start": 482.08,
+      "end": 484.3,
+      "text": "to its target, you can never be sure"
+    },
+    {
+      "start": 484.3,
+      "end": 487.32,
+      "text": "that you're looking at the needle tip and not the shaft."
+    },
+    {
+      "start": 487.54,
+      "end": 489.9,
+      "text": "Now, when you do this with the IJ, you try not to back."
+    },
+    {
+      "start": 490.03,
+      "end": 493.63,
+      "text": "wall of vein, but if you're back wall of veins, you pull back and you continue with"
+    },
+    {
+      "start": 493.63,
+      "end": 494.21,
+      "text": "your procedure."
+    },
+    {
+      "start": 494.41,
+      "end": 499.11,
+      "text": "If you back walled the subclavian vein, you cause a new mothorax and now you cause complications."
+    },
+    {
+      "start": 499.37,
+      "end": 499.97,
+      "text": "The whole reason..."
+    },
+    {
+      "start": 500.0,
+      "end": 503.06,
+      "text": "why you're doing this procedure is so that you don't cause complications."
+    },
+    {
+      "start": 503.44,
+      "end": 507.6,
+      "text": "So what I'm trying to tell you is you want to rotate the probe 90 degrees and we are"
+    },
+    {
+      "start": 507.6,
+      "end": 509.98,
+      "text": "going to cannulate this vein in the lungs."
+    },
+    {
+      "start": 510.0,
+      "end": 514.86,
+      "text": "axis. I have never and never will cannulate this in the short axis because when"
+    },
+    {
+      "start": 514.86,
+      "end": 519.52,
+      "text": "you use the long axis you will put the needle in from here and you're going to"
+    },
+    {
+      "start": 519.52,
+      "end": 519.82,
+      "text": "directed."
+    },
+    {
+      "start": 520.38,
+      "end": 522.48,
+      "text": "in plain with the ultrasound crystals,"
+    },
+    {
+      "start": 522.48,
+      "end": 525.06,
+      "text": "and you'll see the entire tip"
+    },
+    {
+      "start": 525.06,
+      "end": 528.0,
+      "text": "and shaft of that needle going into the vessel."
+    },
+    {
+      "start": 528.18,
+      "end": 529.86,
+      "text": "Greatly reducing your chances."
+    },
+    {
+      "start": 530.0,
+      "end": 535.26,
+      "text": "of back walling that vein, greatly reducing your chance of causing a pneumothorax."
+    },
+    {
+      "start": 535.48,
+      "end": 539.92,
+      "text": "Always remember when you're doing this procedure, it's in the long axis or the"
+    },
+    {
+      "start": 540.0,
+      "end": 544.68,
+      "text": "in plain view of that vein. We went through a lot just to review this again. We're going"
+    },
+    {
+      "start": 544.68,
+      "end": 548.88,
+      "text": "to plop on the shoulder and drop down a centimeter or two. You're going to find your actual"
+    },
+    {
+      "start": 548.88,
+      "end": 549.54,
+      "text": "Vayne."
+    },
+    {
+      "start": 550.0,
+      "end": 551.22,
+      "text": "your axillary artery."
+    },
+    {
+      "start": 551.81,
+      "end": 554.39,
+      "text": "And if your axillary vein is big and painted enough,"
+    },
+    {
+      "start": 554.83,
+      "end": 555.95,
+      "text": "you can try and cannulate"
+    },
+    {
+      "start": 555.95,
+      "end": 557.69,
+      "text": "and do your central line procedure from out there."
+    },
+    {
+      "start": 557.89,
+      "end": 558.95,
+      "text": "Let's risk a complications"
+    },
+    {
+      "start": 558.95,
+      "end": 559.97,
+      "text": "when you're doing it that far."
+    },
+    {
+      "start": 560.0,
+      "end": 564.4,
+      "text": "If you can't, you're going to start moving it in immediately until you find a target"
+    },
+    {
+      "start": 564.4,
+      "end": 565.3,
+      "text": "that's big enough."
+    },
+    {
+      "start": 565.84,
+      "end": 569.98,
+      "text": "And when you do, you're going to take the probe, turn it 90 degrees to get..."
+    },
+    {
+      "start": 570.0,
+      "end": 573.24,
+      "text": "the in-plane view and then bring your needle in laterally"
+    },
+    {
+      "start": 573.24,
+      "end": 576.24,
+      "text": "and watch it go in-plane into the vein."
+    },
+    {
+      "start": 576.4,
+      "end": 578.46,
+      "text": "Now even though the chance of getting a pneumothorix"
+    },
+    {
+      "start": 578.46,
+      "end": 579.98,
+      "text": "is extremely small doing..."
+    },
+    {
+      "start": 580.0,
+      "end": 583.56,
+      "text": "this technique, I still bring the ultrasound probe over when I'm done with this"
+    },
+    {
+      "start": 583.56,
+      "end": 587.6,
+      "text": "procedure and make sure that there's lung sliding on both sides just like we"
+    },
+    {
+      "start": 587.6,
+      "end": 589.4,
+      "text": "talked about in episode seven. Wait!"
+    },
+    {
+      "start": 590.29,
+      "end": 591.41,
+      "text": "You've even watched episode seven."
+    },
+    {
+      "start": 591.82,
+      "end": 593.38,
+      "text": "Oh, that's probably because you haven't subscribed"
+    },
+    {
+      "start": 593.38,
+      "end": 595.56,
+      "text": "to the channel, subscribed to the channel."
+    },
+    {
+      "start": 595.74,
+      "end": 599.97,
+      "text": "So for me, in 2020, all my central lines are placed using..."
+    },
+    {
+      "start": 600.0,
+      "end": 605.02,
+      "text": "the subclavian vein under direct visualization with ultrasound, unless there is some strong"
+    },
+    {
+      "start": 605.02,
+      "end": 607.76,
+      "text": "indication why I shouldn't be doing that procedure."
+    },
+    {
+      "start": 607.9,
+      "end": 609.68,
+      "text": "I get the benefits of using ultrasound and..."
+    },
+    {
+      "start": 610.0,
+      "end": 617.04,
+      "text": "I get the benefits of a superior site that is cleaner than the IJ and less risk of deep vein thrombosis."
+    },
+    {
+      "start": 617.36,
+      "end": 619.92,
+      "text": "I just want to say again, if you've never done this"
+    },
+    {
+      "start": 620.03,
+      "end": 624.59,
+      "text": "technique before. Tomorrow on the next patient you have is not the time to start learning this."
+    },
+    {
+      "start": 625.01,
+      "end": 629.54,
+      "text": "Tomorrow if you want to go to your patients, take the ultrasound and just look at the anatomy."
+    },
+    {
+      "start": 630.22,
+      "end": 631.36,
+      "text": "of that subclavian vein."
+    },
+    {
+      "start": 631.82,
+      "end": 634.72,
+      "text": "But then on a phantom or a gel simulator,"
+    },
+    {
+      "start": 635.24,
+      "end": 636.94,
+      "text": "practice doing the cannulation."
+    },
+    {
+      "start": 637.55,
+      "end": 639.35,
+      "text": "And if you've never done the in-plane view,"
+    },
+    {
+      "start": 639.83,
+      "end": 639.97,
+      "text": "it..."
+    },
+    {
+      "start": 640.0,
+      "end": 645.26,
+      "text": "It's slightly trickier than the cross-sectional approach to venous cannulation, but it's certainly"
+    },
+    {
+      "start": 645.26,
+      "end": 646.62,
+      "text": "not something I would say is hard."
+    },
+    {
+      "start": 646.86,
+      "end": 649.98,
+      "text": "It just requires a little extra practice and a steady hand."
+    },
+    {
+      "start": 650.0,
+      "end": 654.88,
+      "text": "It's in fact the way I do most of my nerve blocks and a lot of my other vascular access procedures"
+    },
+    {
+      "start": 654.88,
+      "end": 659.74,
+      "text": "And that wraps up another episode of crit tips. Did you like it?"
+    },
+    {
+      "start": 660.35,
+      "end": 660.85,
+      "text": "I hope you did."
+    },
+    {
+      "start": 661.58,
+      "end": 666.59,
+      "text": "If you did, show some love, hit that like button, and if you really enjoyed it, and want"
+    },
+    {
+      "start": 666.59,
+      "end": 669.9,
+      "text": "to see more, you want to see more, subscribe to our channel."
+    },
+    {
+      "start": 670.03,
+      "end": 679.92,
+      "text": "Because we have a lot more content coming out oh and Smith mr. Misses that looks like this. I don't know"
+    },
+    {
+      "start": 680.0,
+      "end": 681.78,
+      "text": "when I should expect to see something."
+    },
+    {
+      "start": 682.02,
+      "end": 684.79,
+      "text": "But mom always told me it's the thought that counts."
+    },
+    {
+      "start": 684.99,
+      "end": 687.25,
+      "text": "So thank you for this wonderful white disc"
+    },
+    {
+      "start": 687.25,
+      "end": 689.49,
+      "text": "that will sit in this water for some..."
+    },
+    {
+      "start": 690.0,
+      "end": 694.34,
+      "text": "amount of time until something or nothing happens. Thank you. So I hope to see you again"
+    },
+    {
+      "start": 694.34,
+      "end": 699.19,
+      "text": "in the not-so-distant future. And until we meet again, you stay awesome. Please do."
+    },
+    {
+      "start": 700.03,
+      "end": 700.97,
+      "text": "what is this thing you do?"
+    },
+    {
+      "start": 702.74,
+      "end": 704.5,
+      "text": "Not even a clue on this thing what this does."
+    },
+    {
+      "start": 704.7,
+      "end": 709.38,
+      "text": "It's just put in some water and we'll see what happens."
+    },
+    {
+      "start": 710.03,
+      "end": 711.43,
+      "text": "I mean, it's gonna sit on the desk"
+    },
+    {
+      "start": 711.43,
+      "end": 713.41,
+      "text": "and water for probably weeks"
+    },
+    {
+      "start": 713.41,
+      "end": 715.09,
+      "text": "until the water evaporates,"
+    },
+    {
+      "start": 715.63,
+      "end": 716.67,
+      "text": "just how I operate."
+    }
+  ]
+}

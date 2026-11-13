@@ -1,0 +1,203 @@
+{
+  "video_id": "e255Gus4v5Q",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/e255Gus4v5Q/asr.txt",
+  "segments": [
+    {
+      "start": 0.09,
+      "end": 5.09,
+      "text": "So now we're going to do the rastic scanning using ultrasound and how to evaluate the rastic"
+    },
+    {
+      "start": 5.09,
+      "end": 11.52,
+      "text": "cavity. So in general with the patient in supine position, we're going to examine the patient's"
+    },
+    {
+      "start": 11.52,
+      "end": 18.6,
+      "text": "six different portions of the thorax per side. So the six different areas are going to be"
+    },
+    {
+      "start": 18.6,
+      "end": 27.92,
+      "text": "anterior and superior, anterior, inferior, mid superior, mid inferior, posterior superior,"
+    },
+    {
+      "start": 29.09,
+      "end": 32.99,
+      "text": "and posterior inferior. So those are the six different areas you want to examine each time."
+    },
+    {
+      "start": 33.63,
+      "end": 38.9,
+      "text": "You're going to be using a phasor-ray probe and you're going to be on lung setting or"
+    },
+    {
+      "start": 38.9,
+      "end": 41.38,
+      "text": "if you don't have lung setting you can use abdominal setting that's fine."
+    },
+    {
+      "start": 41.82,
+      "end": 46.02,
+      "text": "So the indicator is going to be up towards the patient's head. So the indicator is up towards the patient's head."
+    },
+    {
+      "start": 46.46,
+      "end": 51.96,
+      "text": "So I start in this quadrant here on the right side and what you're looking for is"
+    },
+    {
+      "start": 51.96,
+      "end": 58.04,
+      "text": "you're going to identify the rib shadows. So I'm going to up the gain just a little bit so you can see."
+    },
+    {
+      "start": 58.04,
+      "end": 66.0,
+      "text": "Okay, so here you can see a rib shadow, a rib as it shadows down, and as it comes down"
+    },
+    {
+      "start": 66.0,
+      "end": 68.18,
+      "text": "here's another rib and it's shadow."
+    },
+    {
+      "start": 68.94,
+      "end": 72.16,
+      "text": "And in between the ribs you see the plura."
+    },
+    {
+      "start": 72.92,
+      "end": 78.88,
+      "text": "So here is plura sliding back and forth, and you can see lung sliding as he breeds in and"
+    },
+    {
+      "start": 78.88,
+      "end": 79.2,
+      "text": "out."
+    },
+    {
+      "start": 82.42,
+      "end": 84.04,
+      "text": "I'm going to adjust the gain there."
+    },
+    {
+      "start": 84.5,
+      "end": 87.75,
+      "text": "So breathe in and out, okay."
+    },
+    {
+      "start": 87.75,
+      "end": 93.73,
+      "text": "So this is a normal thoracic scan where with normal lungs lining indicative of no"
+    },
+    {
+      "start": 93.73,
+      "end": 99.13,
+      "text": "nemothorax. Another thing you can look for on this view is what's called the"
+    },
+    {
+      "start": 99.13,
+      "end": 104.49,
+      "text": "A lines. So here are A lines as they come down. Those are basically reverberation"
+    },
+    {
+      "start": 104.49,
+      "end": 110.06,
+      "text": "artifacts. Other things you can look for in the scanner called B lines. This"
+    },
+    {
+      "start": 110.06,
+      "end": 114.28,
+      "text": "patient does not have any B lines, but B lines are indicative of more interstitial"
+    },
+    {
+      "start": 114.28,
+      "end": 129.45,
+      "text": "or pulmonary edema. So you can stand the patient using that same process looking for A lines, B lines,"
+    },
+    {
+      "start": 130.19,
+      "end": 137.42,
+      "text": "as well as any effusions at all six quadrants here. So we're just going to go through each one here."
+    },
+    {
+      "start": 138.38,
+      "end": 145.39,
+      "text": "Here is a quadrant here looking for that lung sliding which we see here and we go towards"
+    },
+    {
+      "start": 145.39,
+      "end": 161.64,
+      "text": "his mid area and once again we see lung sliding there and going more inferior and when you go in"
+    },
+    {
+      "start": 163.28,
+      "end": 171.1,
+      "text": "So once you see the liver, you go just above the diaphragm, and you can see the diaphragm"
+    },
+    {
+      "start": 171.1,
+      "end": 171.28,
+      "text": "here."
+    },
+    {
+      "start": 171.82,
+      "end": 177.84,
+      "text": "And this view in the mid and posterior area, where the diaphragm is, is where you would"
+    },
+    {
+      "start": 177.84,
+      "end": 179.8,
+      "text": "most likely see a plural effusion."
+    },
+    {
+      "start": 180.1,
+      "end": 181.68,
+      "text": "So this is the best urgency plurifusion."
+    },
+    {
+      "start": 182.14,
+      "end": 184.06,
+      "text": "It's very sensitive for that also."
+    },
+    {
+      "start": 184.48,
+      "end": 191.78,
+      "text": "And here you can see the diaphragm, the liver moving superially and inferiorly as he breathes"
+    },
+    {
+      "start": 191.78,
+      "end": 193.52,
+      "text": "in and out, as well as lung sliding."
+    },
+    {
+      "start": 193.52,
+      "end": 202.94,
+      "text": "So, this is your costly diaphragmatic angle here, and if I increase my depth further, you"
+    },
+    {
+      "start": 202.94,
+      "end": 207.18,
+      "text": "can actually see more of the diaphragm, and if you're assessing a patient for diaphragmatic"
+    },
+    {
+      "start": 207.18,
+      "end": 213.86,
+      "text": "paralysis, this is also a good view to see and I will have a patient breathe in, and you"
+    },
+    {
+      "start": 213.86,
+      "end": 222.14,
+      "text": "can see moving normally, okay, and once again, you just assess the lung in the posterior areas"
+    },
+    {
+      "start": 222.14,
+      "end": 224.24,
+      "text": "to complete all six areas."
+    }
+  ]
+}

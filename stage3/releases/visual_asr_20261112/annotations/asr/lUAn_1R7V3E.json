@@ -1,0 +1,533 @@
+{
+  "video_id": "lUAn_1R7V3E",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/lUAn_1R7V3E/asr.txt",
+  "segments": [
+    {
+      "start": 0.93,
+      "end": 4.79,
+      "text": "In this video, we will discuss bedside ultrasound assessment of plural effusion and performance"
+    },
+    {
+      "start": 4.79,
+      "end": 6.79,
+      "text": "of ultrasound marked thorus and teases."
+    },
+    {
+      "start": 7.45,
+      "end": 9.93,
+      "text": "Ultrasound marking offers the potential advantage of lower com-"
+    },
+    {
+      "start": 10.03,
+      "end": 15.11,
+      "text": "and allows a more appropriate assessment of the candidacy of a patient than physical exam alone."
+    },
+    {
+      "start": 15.93,
+      "end": 19.83,
+      "text": "Keep in mind, there are some potential disadvantages of using ultrasound, including overall"
+    },
+    {
+      "start": 20.0,
+      "end": 23.57,
+      "text": "lines on imaging and overconfidence in the inexperienced ultra-synographer."
+    },
+    {
+      "start": 25.06,
+      "end": 28.58,
+      "text": "This video is not meant to replace appropriate supervision by trained providers."
+    },
+    {
+      "start": 30.19,
+      "end": 30.99,
+      "text": "Let's start with the case."
+    },
+    {
+      "start": 31.37,
+      "end": 33.37,
+      "text": "60-year-old man is post-op day three"
+    },
+    {
+      "start": 33.37,
+      "end": 35.35,
+      "text": "after a trans-high edal, a suffodectomy."
+    },
+    {
+      "start": 35.769999999999996,
+      "end": 37.25,
+      "text": "He has had an uncomplicated course,"
+    },
+    {
+      "start": 37.53,
+      "end": 39.81,
+      "text": "but on morning rounds, he complains of shortness of breath."
+    },
+    {
+      "start": 40.13,
+      "end": 43.39,
+      "text": "his oxygen saturation has decreased to 90% on ambient air."
+    },
+    {
+      "start": 44.16,
+      "end": 46.14,
+      "text": "This is a change from 98% yesterday."
+    },
+    {
+      "start": 47.230000000000004,
+      "end": 49.75,
+      "text": "On physical exam, he has a temperature of 38 degrees Celsius."
+    },
+    {
+      "start": 50.0,
+      "end": 55.74,
+      "text": "rate of 110 beats per minute. Blood pressure 100 over 60, respiratory rate of 20. On physical"
+    },
+    {
+      "start": 55.74,
+      "end": 59.480000000000004,
+      "text": "exam he has a few crackles and dullness to percussion at his left lung base."
+    },
+    {
+      "start": 60.1,
+      "end": 61.22,
+      "text": "the rest of his exam is normal."
+    },
+    {
+      "start": 62.91,
+      "end": 63.97,
+      "text": "Here is his chest radiograph."
+    },
+    {
+      "start": 65.76,
+      "end": 68.14,
+      "text": "We can see that he has a left-sided plural of fusion."
+    },
+    {
+      "start": 70.26,
+      "end": 75.17,
+      "text": "Should a thoracentesis be performed in this patient, indications for thoracentesis include"
+    },
+    {
+      "start": 75.17,
+      "end": 79.23,
+      "text": "diagnosis of a pleural effusion, relief of dysnia from a large pleural effusion."
+    },
+    {
+      "start": 80.22,
+      "end": 84.76,
+      "text": "Contra indications for thoresntesis include local skin infection and coagulopathy, which"
+    },
+    {
+      "start": 84.76,
+      "end": 88.03999999999999,
+      "text": "can include INR elevation or platelets less than 50,000."
+    },
+    {
+      "start": 90.0,
+      "end": 93.58,
+      "text": "The patient should be informed of the risks and benefits of the procedure before consenting."
+    },
+    {
+      "start": 94.09,
+      "end": 99.85,
+      "text": "The risk of the procedure include infection, bleeding, pain, trauma to the lung, or pneumothorax."
+    },
+    {
+      "start": 101.02,
+      "end": 107.07,
+      "text": "Some things that increase the risk include small effusions, for instance less than 250 milliliters."
+    },
+    {
+      "start": 110.0,
+      "end": 119.98,
+      "text": "DECIDY, MULTIPLE LOCULATIONS TO PINE PATIENT POSITIONING, WAGULAPATHY, MECANICAL VEN-"
+    },
+    {
+      "start": 120.0,
+      "end": 129.36,
+      "text": "The rate of complications in the era prior to ultrasound was between 5% to 30% in different studies, with most studies having a rate less than 12%."
+    },
+    {
+      "start": 130.29,
+      "end": 135.34,
+      "text": "With ultrasound, the rate of complications is much lower between one and three percent in"
+    },
+    {
+      "start": 135.34,
+      "end": 136.04,
+      "text": "published studies."
+    },
+    {
+      "start": 137.81,
+      "end": 139.43,
+      "text": "The next step is to position the patient."
+    },
+    {
+      "start": 140.16,
+      "end": 143.7,
+      "text": "The goal is to maximize the space between the posterior ribs, which is done by having the"
+    },
+    {
+      "start": 143.7,
+      "end": 146.32,
+      "text": "patient lean forward slightly in an upright position."
+    },
+    {
+      "start": 147.98,
+      "end": 149.96,
+      "text": "Leaning too far forward will cause the fluid to..."
+    },
+    {
+      "start": 150.0,
+      "end": 151.3,
+      "text": "accumulate anteriorly."
+    },
+    {
+      "start": 152.0,
+      "end": 156.96,
+      "text": "This image shows the anatomy of the patient as they bend at the waist, and alternative"
+    },
+    {
+      "start": 156.96,
+      "end": 159.98,
+      "text": "in the intubated patient is a more lateral approach with the patient."
+    },
+    {
+      "start": 160.0,
+      "end": 162.14,
+      "text": "supine, but still as upright as possible."
+    },
+    {
+      "start": 163.85,
+      "end": 167.57,
+      "text": "That ultrasound marking at the bedside can make thoracentesis a more safe procedure."
+    },
+    {
+      "start": 168.32,
+      "end": 169.98,
+      "text": "We will briefly review specific use of a-"
+    },
+    {
+      "start": 170.0,
+      "end": 173.3,
+      "text": "ultrasound for thoracentesis, assuming a basic level of understanding of the ultrasound"
+    },
+    {
+      "start": 173.3,
+      "end": 173.72,
+      "text": "machine."
+    },
+    {
+      "start": 177.76,
+      "end": 179.86,
+      "text": "In general, the phased array probe is preferred."
+    },
+    {
+      "start": 180.0,
+      "end": 184.52,
+      "text": "as the relevant anatomy tends to be 4 to 10 centimeters deep. The gain should be"
+    },
+    {
+      "start": 184.52,
+      "end": 188.23,
+      "text": "adjusted so that the fluid appears black, and other structures such as the long and"
+    },
+    {
+      "start": 188.23,
+      "end": 189.75,
+      "text": "diaphragm are clearly seen."
+    },
+    {
+      "start": 190.38,
+      "end": 194.34,
+      "text": "The cardiac preset could be used, but we prefer the abdominal preset as it provides better"
+    },
+    {
+      "start": 194.34,
+      "end": 195.26,
+      "text": "boundary definition."
+    },
+    {
+      "start": 196.69,
+      "end": 199.91,
+      "text": "Always insert patient identifiers into the ultrasound machine and"
+    },
+    {
+      "start": 200.1,
+      "end": 202.14,
+      "text": "or images and video for review later."
+    },
+    {
+      "start": 205.01,
+      "end": 206.89,
+      "text": "The probe should be held with the transducer marker"
+    },
+    {
+      "start": 206.89,
+      "end": 209.27,
+      "text": "facing toward the patient's head for thoracic ultrasound."
+    },
+    {
+      "start": 210.13,
+      "end": 212.25,
+      "text": "That means that in this screenshot of an ultrasound view,"
+    },
+    {
+      "start": 212.51,
+      "end": 214.61,
+      "text": "the patient's head would be off to the left of the screen"
+    },
+    {
+      "start": 214.61,
+      "end": 216.63,
+      "text": "and the patient's feet would be to the right."
+    },
+    {
+      "start": 217.37,
+      "end": 219.11,
+      "text": "When identifying anatomy for the procedures,"
+    },
+    {
+      "start": 219.47,
+      "end": 219.97,
+      "text": "it is also..."
+    },
+    {
+      "start": 220.0,
+      "end": 222.48,
+      "text": "important to maintain the probe perpendicular to the skin."
+    },
+    {
+      "start": 223.14,
+      "end": 226.72,
+      "text": "Parallel out of the floor in this case, so you can easily follow the same angle with your"
+    },
+    {
+      "start": 226.72,
+      "end": 226.98,
+      "text": "needle."
+    },
+    {
+      "start": 226.98,
+      "end": 229.9,
+      "text": "The next step in the press."
+    },
+    {
+      "start": 230.0,
+      "end": 232.82,
+      "text": "is to identify a good location for your thoracentesis."
+    },
+    {
+      "start": 233.51,
+      "end": 236.65,
+      "text": "This is first done by familiarizing yourself with the anatomy of the patient."
+    },
+    {
+      "start": 237.26,
+      "end": 239.7,
+      "text": "A safe region for thoracentesis is defined as the area"
+    },
+    {
+      "start": 239.7,
+      "end": 239.92,
+      "text": "Super."
+    },
+    {
+      "start": 240.03,
+      "end": 245.25,
+      "text": "period of the 9th rib to avoid diaphragmatic excursion, 5 centimeters lateral to the spine"
+    },
+    {
+      "start": 245.25,
+      "end": 249.91,
+      "text": "to avoid the area where tortuous fasculature is more common, and posterior to the mid-axillary."
+    },
+    {
+      "start": 250.0,
+      "end": 255.58,
+      "text": "line. The clinician should always examine the skin for signs of overlying cellulitis, visible vessels,"
+    },
+    {
+      "start": 256.21,
+      "end": 258.97,
+      "text": "or surgical scars that could represent a higher risk procedure."
+    },
+    {
+      "start": 260.86,
+      "end": 266.3,
+      "text": "The ultrasound can then be used to identify the internal anatomy, liver, a diaphragm,"
+    },
+    {
+      "start": 267.4,
+      "end": 269.86,
+      "text": "multiple rib shadows, and the lung."
+    },
+    {
+      "start": 271.09,
+      "end": 274.85,
+      "text": "If the procedure is done on the left side, the spleen may also be identified with the"
+    },
+    {
+      "start": 274.85,
+      "end": 276.13,
+      "text": "overlying diaphragm."
+    },
+    {
+      "start": 278.01,
+      "end": 279.89,
+      "text": "The effusion can be identified as the anico-"
+    },
+    {
+      "start": 280.0,
+      "end": 286.92,
+      "text": "area superior to the diaphragm. This video shows a large, simple pleural effusion, which can easily be"
+    },
+    {
+      "start": 286.92,
+      "end": 289.97,
+      "text": "sampled at the bedside. We can measure the subcutaneous..."
+    },
+    {
+      "start": 290.0,
+      "end": 293.7,
+      "text": "measure the height of the effusion and identify a safe rib space."
+    },
+    {
+      "start": 296.13,
+      "end": 299.91,
+      "text": "The video shown here is of an effusion that is too small to safely perform thor-"
+    },
+    {
+      "start": 299.91,
+      "end": 299.97,
+      "text": "I'm not sure if I'm going to be able to do this, I'm not sure if I'm going to be able to do this, I'm not sure if I'm going to be able to do this, I'm not sure if I'm going to be able to do this, I'm not sure if I'm going to be able to do this, I'm not sure if I'm going to be able to do this, I'm not sure if I'm going to be able to do this, I'm not sure if I'm going to be able to do this, I'm not sure if I'm going to be able to do this, I'm not sure if I'm going to be able to do this, I'm not sure if I'm going to be able to do this, I'm not sure if I'm going to be able to do this, I'm not sure if I'm going to be able to do this, I'm not sure if I'm going to be able to do this, I'm not sure if I'm going to be able to do"
+    },
+    {
+      "start": 300.0,
+      "end": 307.3,
+      "text": "and teases. One can clearly identify the diaphragm, an overlying effusion, and some adalectatic"
+    },
+    {
+      "start": 307.3,
+      "end": 309.92,
+      "text": "lung tissue. It is clear, however, that at n"
+    },
+    {
+      "start": 310.0,
+      "end": 313.64,
+      "text": "inspiration the lung will overlap the diaphragm's position during exhalation."
+    },
+    {
+      "start": 314.45,
+      "end": 318.21,
+      "text": "A rule of thumb is that one needs at least four centimeters of non-overlapped feel safe"
+    },
+    {
+      "start": 318.21,
+      "end": 319.83,
+      "text": "inserting a needle with ultrasound marking."
+    },
+    {
+      "start": 320.96,
+      "end": 323.12,
+      "text": "If sampling the fluid in this example was necessary,"
+    },
+    {
+      "start": 323.58,
+      "end": 325.5,
+      "text": "it should be done with real-time ultrasound guidance"
+    },
+    {
+      "start": 325.5,
+      "end": 327.48,
+      "text": "of the needle tip by a radiologist."
+    },
+    {
+      "start": 329.13,
+      "end": 329.97,
+      "text": "Another useful tick-"
+    },
+    {
+      "start": 330.0,
+      "end": 332.72,
+      "text": "is the identification of enumothorax using ultrasound."
+    },
+    {
+      "start": 333.35,
+      "end": 335.91,
+      "text": "This has been shown to be more sensitive than plain chest radiograph."
+    },
+    {
+      "start": 336.9,
+      "end": 339.98,
+      "text": "First, holding the probe is previously described, capture a video of the..."
+    },
+    {
+      "start": 340.06,
+      "end": 344.0,
+      "text": "apex of the lung, usually best visualized a couple of centimeters below the"
+    },
+    {
+      "start": 344.0,
+      "end": 348.66,
+      "text": "clavicle along the mid-clavicular line. We're looking for two things, the"
+    },
+    {
+      "start": 348.66,
+      "end": 349.86,
+      "text": "presence of lung sliding."
+    },
+    {
+      "start": 350.54,
+      "end": 357.23,
+      "text": "and comet tails. The video playing now identifies long sliding, which is the glistening appearance of"
+    },
+    {
+      "start": 357.23,
+      "end": 359.65,
+      "text": "parietal and visceral plura sliding against each other."
+    },
+    {
+      "start": 360.0,
+      "end": 361.78,
+      "text": "as well as Comettail artifacts."
+    },
+    {
+      "start": 363.35,
+      "end": 365.27,
+      "text": "These findings have excellent specificity"
+    },
+    {
+      "start": 365.27,
+      "end": 367.17,
+      "text": "for the absence of pneumothorax."
+    },
+    {
+      "start": 369.19,
+      "end": 369.69,
+      "text": "In contrast,"
+    },
+    {
+      "start": 370.45,
+      "end": 373.85,
+      "text": "This video shows a lack of lung sliding, and no cometails."
+    },
+    {
+      "start": 374.66,
+      "end": 376.82,
+      "text": "If your patient had normal findings before the procedure,"
+    },
+    {
+      "start": 377.34,
+      "end": 379.36,
+      "text": "and afterwards has an absence of lung sliding,"
+    },
+    {
+      "start": 379.54,
+      "end": 379.98,
+      "text": "you should be..."
+    }
+  ]
+}

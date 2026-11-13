@@ -1,0 +1,213 @@
+{
+  "video_id": "Flc8xS2foOU",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/Flc8xS2foOU/asr.txt",
+  "segments": [
+    {
+      "start": 0.02,
+      "end": 2.76,
+      "text": "Ultrasenography of the Inferia Vena Cava"
+    },
+    {
+      "start": 2.76,
+      "end": 9.46,
+      "text": "In this video, we'll show you how to perform an ultrasound scan of the Inferia Vena Cava,"
+    },
+    {
+      "start": 9.78,
+      "end": 12.98,
+      "text": "which we'll refer to as the IVC from now on."
+    },
+    {
+      "start": 13.55,
+      "end": 17.39,
+      "text": "The most common reason to perform a point-of-care scan of the IVC"
+    },
+    {
+      "start": 17.39,
+      "end": 19.33,
+      "text": "is to assess volume status."
+    },
+    {
+      "start": 19.85,
+      "end": 21.33,
+      "text": "We'll talk about that a little later,"
+    },
+    {
+      "start": 21.69,
+      "end": 25.33,
+      "text": "but first, we'll go over the basics of how to perform a scan."
+    },
+    {
+      "start": 25.33,
+      "end": 31.18,
+      "text": "The abdominal IVC is retroperitoneal and closely adjacent to the aorta."
+    },
+    {
+      "start": 32.02,
+      "end": 38.78,
+      "text": "To assess the IVC, we first scan in the short axis or transverse plane and center the vessel"
+    },
+    {
+      "start": 38.78,
+      "end": 39.42,
+      "text": "on the screen."
+    },
+    {
+      "start": 40.29,
+      "end": 46.15,
+      "text": "We then rotate to the long axis or sagittal plane for a longitudinal view of the IVC."
+    },
+    {
+      "start": 47.57,
+      "end": 54.91,
+      "text": "We can use a curvilinear or phased array probe for the scans, short axis view."
+    },
+    {
+      "start": 54.91,
+      "end": 61.35,
+      "text": "Place the probe just under the zyfoid process with the probe indicator pointing to the patient's"
+    },
+    {
+      "start": 61.35,
+      "end": 61.95,
+      "text": "right side."
+    },
+    {
+      "start": 62.37,
+      "end": 67.41,
+      "text": "Pushing the probe down firmly can improve the image by displacing any overlying abdominal"
+    },
+    {
+      "start": 67.41,
+      "end": 67.73,
+      "text": "gas."
+    },
+    {
+      "start": 68.49,
+      "end": 74.11,
+      "text": "You can now clearly make out two anico-extructures, lying just anterior to the hyper-echoic"
+    },
+    {
+      "start": 74.11,
+      "end": 76.39,
+      "text": "vertebral body and its large acoustic shadow."
+    },
+    {
+      "start": 77.04,
+      "end": 81.72,
+      "text": "To the left of the image, just to the right of the patient's midline, is the IVC."
+    },
+    {
+      "start": 81.72,
+      "end": 87.85,
+      "text": "To the right of the image, just to the left of the patient's midline, you can see the abdominal aorta."
+    },
+    {
+      "start": 88.91,
+      "end": 94.91,
+      "text": "The IVC has a thinner wall than the aorta, and can usually be compressed quite easily with the probe."
+    },
+    {
+      "start": 95.37,
+      "end": 102.09,
+      "text": "In contrast, the aorta is thick walled and almost impossible to compress, remaining circular under the probe."
+    },
+    {
+      "start": 102.73,
+      "end": 105.87,
+      "text": "It also pulsates much more noticeably than the IVC."
+    },
+    {
+      "start": 107.68,
+      "end": 108.74,
+      "text": "Long Axis View"
+    },
+    {
+      "start": 108.74,
+      "end": 117.76,
+      "text": "The easiest way to obtain a long axis view of the IVC is to obtain the short axis view first and then transition."
+    },
+    {
+      "start": 118.54,
+      "end": 125.78,
+      "text": "To do this, center the vessel and then rotate the probe 90 degrees until the probe indicator faces the patient's head."
+    },
+    {
+      "start": 127.2,
+      "end": 130.84,
+      "text": "Alternatively, you can go directly to the long axis view."
+    },
+    {
+      "start": 131.44,
+      "end": 136.32,
+      "text": "Place the probe just under the zyfoid process with the indicator facing the patient's head."
+    },
+    {
+      "start": 136.52,
+      "end": 142.96,
+      "text": "Now, slide or fan the probe very slightly to the patient's right until the IVC is visible."
+    },
+    {
+      "start": 143.59,
+      "end": 148.67,
+      "text": "Here, you can see the IVC in longitudinal section at the lower edge of the image."
+    },
+    {
+      "start": 149.4,
+      "end": 153.68,
+      "text": "The arrows illustrate the direction of blood flow from coddle to cranial."
+    },
+    {
+      "start": 154.83,
+      "end": 159.57,
+      "text": "You can sometimes see subtle cardiac cycle-related pulsation of the IVC."
+    },
+    {
+      "start": 160.39,
+      "end": 165.77,
+      "text": "You should also be able to see respiratory variation in the IVC's diameter, which normally"
+    },
+    {
+      "start": 165.77,
+      "end": 173.98,
+      "text": "partially collapses in inspiration. To measure the IVC diameter, freeze the image, then take"
+    },
+    {
+      "start": 173.98,
+      "end": 180.22,
+      "text": "measurements at peak expiration and inspiration. Use the caliper or measurement button to draw"
+    },
+    {
+      "start": 180.22,
+      "end": 185.6,
+      "text": "a line at a right angle to the vessel's long axis. You can measure either just distal to"
+    },
+    {
+      "start": 185.6,
+      "end": 190.62,
+      "text": "where the IVC enters the right atrium, or two centimeters proximal to the junction of"
+    },
+    {
+      "start": 190.62,
+      "end": 196.78,
+      "text": "the IVC and hepatic vein. A large diameter and reduced respiratory variation may suggest"
+    },
+    {
+      "start": 196.78,
+      "end": 202.52,
+      "text": "volume overload or increased right heart pressures. A small diameter and increased"
+    },
+    {
+      "start": 202.52,
+      "end": 209.18,
+      "text": "variation, on the other hand, may suggest volume depletion. Okay, now that you have"
+    },
+    {
+      "start": 209.18,
+      "end": 213.84,
+      "text": "an overview of IVC ultrasound skills, check out the Pocus article on Ambus."
+    }
+  ]
+}

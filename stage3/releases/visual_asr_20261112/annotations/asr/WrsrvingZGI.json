@@ -1,0 +1,593 @@
+{
+  "video_id": "WrsrvingZGI",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/WrsrvingZGI/asr.txt",
+  "segments": [
+    {
+      "start": 0.19,
+      "end": 5.83,
+      "text": "Hi, this is Nefropocus, let us do a Vexa scan, so to do a Vexa, you can use either a phase"
+    },
+    {
+      "start": 5.83,
+      "end": 8.59,
+      "text": "is there a transducer or a curvilinear transducer?"
+    },
+    {
+      "start": 10.0,
+      "end": 14.29,
+      "text": "Generally prefer curvilinear transducer because we are scanning the abdomen and face"
+    },
+    {
+      "start": 14.29,
+      "end": 19.15,
+      "text": "deraille the settings are more optimized for cardiac scanning and that we are like when"
+    },
+    {
+      "start": 19.15,
+      "end": 19.91,
+      "text": "doing top"
+    },
+    {
+      "start": 20.06,
+      "end": 25.42,
+      "text": "you might have to adjust a lot of settings such as scale and wall filters to suit for"
+    },
+    {
+      "start": 25.42,
+      "end": 26.48,
+      "text": "the abdominal scanning."
+    },
+    {
+      "start": 26.48,
+      "end": 29.88,
+      "text": "And when using curvilinear transducer you put that in the"
+    },
+    {
+      "start": 30.03,
+      "end": 35.53,
+      "text": "cardiac preset, it depends on the machine, but my machine allows the EKG to be run simultaneously"
+    },
+    {
+      "start": 35.53,
+      "end": 38.04,
+      "text": "only when it is in the cardiac preset."
+    },
+    {
+      "start": 39.02,
+      "end": 39.94,
+      "text": "So, my index"
+    },
+    {
+      "start": 40.0,
+      "end": 45.12,
+      "text": "is on this side of the screen. So let's scan the IVC which is the first step in"
+    },
+    {
+      "start": 45.12,
+      "end": 49.78,
+      "text": "Vexes. I have already hooked up the EKG leads and I'm placing the transducer in"
+    },
+    {
+      "start": 50.0,
+      "end": 52.94,
+      "text": "side void area with the orientation marker towards patient's head."
+    },
+    {
+      "start": 53.92,
+      "end": 59.01,
+      "text": "So, I find the IVC right away, it looks like and here we have the liver, you have the IVC"
+    },
+    {
+      "start": 59.01,
+      "end": 59.97,
+      "text": "and I am going to up."
+    },
+    {
+      "start": 60.06,
+      "end": 69.98,
+      "text": "by fanning the transducer as well as gently rotating it to make sure I am getting the maximal diameter of the IVT somewhere here."
+    },
+    {
+      "start": 70.8,
+      "end": 76.37,
+      "text": "So you can measure the diameter of the inferior vena kva just below the haphatic vc junction"
+    },
+    {
+      "start": 76.37,
+      "end": 79.97,
+      "text": "if you want or you can just eyeball and see if it is."
+    },
+    {
+      "start": 80.06,
+      "end": 84.42,
+      "text": "more than 2 cm or less than 2 cm if it's appears plethoric or not."
+    },
+    {
+      "start": 85.16,
+      "end": 89.52,
+      "text": "And then once you find the IVC, you rotate the trans to some 90 degrees, such that you find the"
+    },
+    {
+      "start": 89.52,
+      "end": 89.74,
+      "text": "Thank you very much."
+    },
+    {
+      "start": 90.06,
+      "end": 96.56,
+      "text": "short axis that way, by measuring the anterior posterior diameter in the short axis, you get"
+    },
+    {
+      "start": 96.56,
+      "end": 99.86,
+      "text": "a sense of if you are falling prey to cylinder effect in long."
+    },
+    {
+      "start": 100.0,
+      "end": 106.04,
+      "text": "axis or not. Also sometimes the vessel might appear plethoric in long axis and when you"
+    },
+    {
+      "start": 106.04,
+      "end": 109.98,
+      "text": "look at it in the short axis it is more or less oval and it might not be"
+    },
+    {
+      "start": 110.0,
+      "end": 116.28,
+      "text": "really the thoric. So, once you do the IVC measurement look at it I will go to the right"
+    },
+    {
+      "start": 116.28,
+      "end": 119.96,
+      "text": "upper quadrant and do rest of the Doppler assessment from right upper quadrant."
+    },
+    {
+      "start": 120.03,
+      "end": 125.79,
+      "text": "because we are likely to get better wave forms when we use this window as opposed to sub"
+    },
+    {
+      "start": 125.79,
+      "end": 129.69,
+      "text": "a void window. So to do that, I'm..."
+    },
+    {
+      "start": 130.03,
+      "end": 136.19,
+      "text": "placing the transducer with the orientation marker towards patient's head in mid to post"
+    },
+    {
+      "start": 136.19,
+      "end": 139.91,
+      "text": "error accelerator line somewhere here where I am expected to find the lever I am going."
+    },
+    {
+      "start": 140.0,
+      "end": 149.82,
+      "text": "increase the depth a little bit, over here I can see 3 vessels here, I see 1, 2 and 3."
+    },
+    {
+      "start": 150.86,
+      "end": 157.95,
+      "text": "So the vessel that is attached to the liver and that is closer to the ultrasound transducer"
+    },
+    {
+      "start": 157.95,
+      "end": 159.35,
+      "text": "would be in feeder Vena Keva."
+    },
+    {
+      "start": 160.0,
+      "end": 164.44,
+      "text": "looking at the side to side diameter and not the anterior posterior diameter. And this"
+    },
+    {
+      "start": 164.44,
+      "end": 169.55,
+      "text": "was all that is farther from the ultrasound beam is the aota, the abdominal aota. So,"
+    },
+    {
+      "start": 169.63,
+      "end": 169.91,
+      "text": "this is called"
+    },
+    {
+      "start": 170.0,
+      "end": 175.7,
+      "text": "double barrel shotgun view with the IVC and Aota being two barrels and here you can see"
+    },
+    {
+      "start": 175.7,
+      "end": 178.25,
+      "text": "the hepatic vein joining the inferior Vena Keva."
+    },
+    {
+      "start": 178.82,
+      "end": 179.82,
+      "text": "So now let's focus on"
+    },
+    {
+      "start": 180.16,
+      "end": 184.2,
+      "text": "adequate by reducing the depth and turn on the color Doppler."
+    },
+    {
+      "start": 185.18,
+      "end": 189.23,
+      "text": "So, when I put the color Doppler, you can see some mixture of colors, it's probably because"
+    },
+    {
+      "start": 189.23,
+      "end": 189.97,
+      "text": "My scale is set."
+    },
+    {
+      "start": 190.16,
+      "end": 196.95,
+      "text": "low. I am going to increase the scale to about 25 ish, 25 to 30 and now you can see the"
+    },
+    {
+      "start": 196.95,
+      "end": 199.98,
+      "text": "The vessel is mostly blue, conveying that the blood is through the blood, and that the vessel is mostly blue, conveying that the blood is through the blood, and that the vessel is mostly blue, conveying that the blood is blue, and that the vessel is mostly blue, and that the blood is blue, and that the vessel is mostly blue, and that the vessel is mostly blue, and that the vessel is mostly blue, and that the vessel is mostly blue, and that the blood is blue, and that the vessel is mostly blue, and that the vessel is mostly blue, and that the blood is blue, and that the vessel is mostly blue, and that the vessel is mostly blue, and that the blood is blue, and that the vessel is mostly blue, and that the vessel is mostly blue, and that the blood is blue, and that the vessel is mostly blue, and that the blood is blue, and that the vessel is mostly blue, and that the blood is blue, and that the vessel is mostly blue, and that the blood is blue, and that the vessel is"
+    },
+    {
+      "start": 200.0,
+      "end": 201.28,
+      "text": "going away from the transducer."
+    },
+    {
+      "start": 201.58,
+      "end": 205.3,
+      "text": "Now I will turn on the pulse wave mode and get the sample volume to the middle of the"
+    },
+    {
+      "start": 205.3,
+      "end": 205.36,
+      "text": "wave."
+    },
+    {
+      "start": 206.42,
+      "end": 209.76,
+      "text": "As you can see here the patient is normally"
+    },
+    {
+      "start": 210.51,
+      "end": 214.88,
+      "text": "breathing, it's a quiet respiration and we got it tracing."
+    },
+    {
+      "start": 215.12,
+      "end": 219.9,
+      "text": "And if it is difficult to do it in quiet respiration, you can always ask the patient to hold their"
+    },
+    {
+      "start": 220.0,
+      "end": 226.02,
+      "text": "breath in expiration, but here what we are seeing is we have the EKG so you know where is"
+    },
+    {
+      "start": 226.02,
+      "end": 229.76,
+      "text": "the QRS complex and the way that is following the QRS complex would be."
+    },
+    {
+      "start": 230.06,
+      "end": 235.25,
+      "text": "systolic wave. So here you see the systolic wave followed by a notch that is the V wave,"
+    },
+    {
+      "start": 235.91,
+      "end": 239.97,
+      "text": "followed by the diastolic wave. And here the small thing here,"
+    },
+    {
+      "start": 240.0,
+      "end": 245.68,
+      "text": "is a wave. A wave is better seen in exploration than in inspiration, because in inspiration"
+    },
+    {
+      "start": 245.68,
+      "end": 249.86,
+      "text": "your forward velocity is increase and in exploration your"
+    },
+    {
+      "start": 250.03,
+      "end": 253.93,
+      "text": "about the baseline velocities increase. So, this is a normal haphatic wave form."
+    },
+    {
+      "start": 254.58,
+      "end": 258.0,
+      "text": "Maybe we will get one more with the patient holding breath, that way you will see that it"
+    },
+    {
+      "start": 258.0,
+      "end": 259.77,
+      "text": "appears more uniform."
+    },
+    {
+      "start": 260.26,
+      "end": 264.32,
+      "text": "Let me put the color again, once we find the bezel better, we can ask him to hold the"
+    },
+    {
+      "start": 264.32,
+      "end": 264.44,
+      "text": "bezel."
+    },
+    {
+      "start": 265.12,
+      "end": 265.9,
+      "text": "Sir, can you hold your breath?"
+    },
+    {
+      "start": 268.63,
+      "end": 269.97,
+      "text": "Now, we can see that the waveform is..."
+    },
+    {
+      "start": 270.03,
+      "end": 277.29,
+      "text": "much more uniformed thank you very normally here you have the systolic wave followed by v wave the"
+    },
+    {
+      "start": 277.68,
+      "end": 279.66,
+      "text": "and that's to the quave and"
+    },
+    {
+      "start": 280.03,
+      "end": 286.43,
+      "text": "Here is the A wave, okay, but make sure the patient does not perform valve salua maneuver"
+    },
+    {
+      "start": 286.43,
+      "end": 289.27,
+      "text": "inadvertently, because that would blunt your waveform."
+    },
+    {
+      "start": 290.16,
+      "end": 297.67,
+      "text": "So after finding the hepatic vein, so maybe we should look gently anterior to find the"
+    },
+    {
+      "start": 297.67,
+      "end": 298.17,
+      "text": "portal vein."
+    },
+    {
+      "start": 298.27,
+      "end": 299.85,
+      "text": "So portal vein carries blood from intestines."
+    },
+    {
+      "start": 300.0,
+      "end": 305.58,
+      "text": "and goes into the liver. So as a tint of probe anterior it's a very gentle movement. I'm not even"
+    },
+    {
+      "start": 305.58,
+      "end": 309.98,
+      "text": "like really relocating the transducer. So here you can see the"
+    },
+    {
+      "start": 310.1,
+      "end": 314.21,
+      "text": "and on color as you know it appears red because the flow is towards that"
+    },
+    {
+      "start": 314.21,
+      "end": 319.4,
+      "text": "crunches us so let's turn on the color so this thing is the portal and let's"
+    },
+    {
+      "start": 320.0,
+      "end": 328.13,
+      "text": "put the Doppler sample, I am going to reduce, increase the scale a little bit."
+    },
+    {
+      "start": 330.0,
+      "end": 335.49,
+      "text": "And you can see that there is respiratory variation here during inspiration the waveform"
+    },
+    {
+      "start": 335.49,
+      "end": 339.78,
+      "text": "is increasing and during expiration the amplitude is reducing but in general the waveform"
+    },
+    {
+      "start": 340.0,
+      "end": 346.35,
+      "text": "appears to be slightly palatable. But that's fine. In otherwise healthy young subjects who are"
+    },
+    {
+      "start": 346.93,
+      "end": 349.9,
+      "text": "athletic, the portal when tends to be slightly palatable."
+    },
+    {
+      "start": 350.0,
+      "end": 355.44,
+      "text": "at baseline and that is not abnormal. It is similar to being inferior Vina Keva being slightly"
+    },
+    {
+      "start": 355.44,
+      "end": 359.96,
+      "text": "dilated. So, again let us get this waveform in breath."
+    },
+    {
+      "start": 360.16,
+      "end": 369.56,
+      "text": "Let's find the bezel again and can you hold your breath okay now you'll get a much crispier waveform"
+    },
+    {
+      "start": 370.35,
+      "end": 375.69,
+      "text": "patient is holding their breath. Thank you very normally, excellent. I mean, if you really want to"
+    },
+    {
+      "start": 375.69,
+      "end": 379.79,
+      "text": "measure the pulsatility, you just go to the highest point in one cardiac cycle."
+    },
+    {
+      "start": 380.54,
+      "end": 383.94,
+      "text": "and the lowest point in the same cardiac cycle,"
+    },
+    {
+      "start": 384.66,
+      "end": 388.13,
+      "text": "and you can express the points in percentage."
+    },
+    {
+      "start": 388.13,
+      "end": 389.97,
+      "text": "In this case, it's..."
+    },
+    {
+      "start": 391.12,
+      "end": 396.18,
+      "text": "approximately 50%. Again, like I said, in this particular patient or the subject, it's"
+    },
+    {
+      "start": 396.66,
+      "end": 399.74,
+      "text": "completely normal. And after I do the portal vein, I'm going to go"
+    },
+    {
+      "start": 400.0,
+      "end": 404.92,
+      "text": "find the right kidney. You can either sample the right kidney or left kidney whichever is"
+    },
+    {
+      "start": 405.37,
+      "end": 409.67,
+      "text": "easy to find, but I think right kidney is easier to find in most cases because liver"
+    },
+    {
+      "start": 409.67,
+      "end": 409.77,
+      "text": "what"
+    },
+    {
+      "start": 410.03,
+      "end": 413.45,
+      "text": "like a window to the kidney. So kidney is posterior so I'm going to sweep the"
+    },
+    {
+      "start": 413.45,
+      "end": 418.73,
+      "text": "transverse posterior. I see that the kidney is appearing and I have to go"
+    },
+    {
+      "start": 418.73,
+      "end": 419.97,
+      "text": "inferior to find the"
+    },
+    {
+      "start": 420.03,
+      "end": 424.61,
+      "text": "kidney better. So here is the kidney and because we are using"
+    },
+    {
+      "start": 424.61,
+      "end": 426.49,
+      "text": "carvenine neurotransmitters and there are some rib shadows,"
+    },
+    {
+      "start": 427.15,
+      "end": 429.97,
+      "text": "sometimes you might not be able to escape them and sometimes you might"
+    },
+    {
+      "start": 430.0,
+      "end": 435.04,
+      "text": "be able to escape with gentle probe movement. I mean rotation. And here we don't need this much"
+    },
+    {
+      "start": 435.04,
+      "end": 439.89,
+      "text": "depth so I'm going to reduce the depth and zoom on the kidney. Let's put the colored opera here."
+    },
+    {
+      "start": 441.06,
+      "end": 447.27,
+      "text": "So here we see some black structures which are medallary pyramids and we want to sample"
+    },
+    {
+      "start": 447.27,
+      "end": 449.89,
+      "text": "the vessels that are running parallel to the medallary pyramids."
+    },
+    {
+      "start": 450.29,
+      "end": 451.47,
+      "text": "which are interlobered by dogs."
+    },
+    {
+      "start": 452.01,
+      "end": 455.07,
+      "text": "So for kidney, you can benefit from a lower scale."
+    },
+    {
+      "start": 455.07,
+      "end": 457.71,
+      "text": "I'm gonna lower the scale to about 15, 10-ish."
+    },
+    {
+      "start": 457.89,
+      "end": 459.87,
+      "text": "Then you can see much more color."
+    },
+    {
+      "start": 460.06,
+      "end": 464.87,
+      "text": "So here, breath holding is really necessary."
+    },
+    {
+      "start": 465.19,
+      "end": 465.95,
+      "text": "Can you please hold your breath?"
+    },
+    {
+      "start": 468.27,
+      "end": 469.97,
+      "text": "I am going to sample these interlow bars as well."
+    },
+    {
+      "start": 471.57,
+      "end": 474.05,
+      "text": "you are getting a nice tracing above and below the baseline."
+    },
+    {
+      "start": 474.76,
+      "end": 475.46,
+      "text": "Thank you, breathe normally."
+    },
+    {
+      "start": 476.27,
+      "end": 477.95,
+      "text": "So, about the baseline is the arterial waveform."
+    },
+    {
+      "start": 478.15,
+      "end": 479.85,
+      "text": "Here you have systolic spike followed by dash."
+    },
+    {
+      "start": 480.03,
+      "end": 485.11,
+      "text": "the stove, the stove, the stove and you have below the baseline continuous waveform, which"
+    },
+    {
+      "start": 485.11,
+      "end": 489.87,
+      "text": "is the Venus waveform and it does not have any breaks or discontinuities in."
+    }
+  ]
+}

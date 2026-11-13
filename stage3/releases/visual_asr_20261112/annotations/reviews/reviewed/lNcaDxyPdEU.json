@@ -1,0 +1,162 @@
+{
+  "understanding": "Lung ultrasound teaching lecture with artifact examples, scanning locations, and a protocol diagram.",
+  "native_opened": [
+    150,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    206,
+    313
+  ],
+  "tasks": [
+    {
+      "qa_type": "history_recall",
+      "query_time": 313,
+      "answer_time": 313,
+      "checkpoints": [
+        150
+      ],
+      "question": "In the earlier barcode-sign example, did the bands in the lower strip run across the strip or down it?",
+      "reference_answer": "They ran horizontally across it as stacked parallel bands.",
+      "visual_support": "The earlier barcode example has a separate lower M-mode strip filled with horizontal bands.",
+      "query_prefix_check": "The barcode example appeared earlier in the lecture.",
+      "answer_prefix_check": "The lower strip at 150 directly shows the bands' orientation.",
+      "shortcut_risk": "Moderate. The term barcode cues stripes, but their orientation depends on the image.",
+      "task_id": "s3_remaining79_lNcaDxyPdEU_01",
+      "video_id": "lNcaDxyPdEU",
+      "split": "train",
+      "language": "en",
+      "source_video": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/lNcaDxyPdEU.mp4",
+      "stage3_value": "medium",
+      "visual_evidence": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/lNcaDxyPdEU/150.jpg",
+          "checkpoint": 150.0,
+          "source_pts_seconds": 149.933333,
+          "resolution": [
+            1920,
+            1080
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/lNcaDxyPdEU/313.jpg",
+          "checkpoint": 313.0,
+          "source_pts_seconds": 312.933333,
+          "resolution": [
+            1920,
+            1080
+          ]
+        }
+      ],
+      "asr_support_segments": [],
+      "query_decision": "ANSWER",
+      "answer_decision": "ANSWER",
+      "review_status": "accepted_targeted_native_frame_self_review",
+      "student_input_visibility": "not_checked"
+    },
+    {
+      "qa_type": "temporal_comparison",
+      "query_time": 182,
+      "answer_time": 185,
+      "checkpoints": [
+        183,
+        184
+      ],
+      "question": "As this lung clip starts moving, how does the bright pattern below the pleural line change once the narrow streak is clear?",
+      "reference_answer": "The initial image has short horizontal echoes below the pleural line. A distinct bright streak then extends downward nearly to the bottom of the sector.",
+      "visual_support": "At 182 there are repeated short horizontal echoes. At 183 and 184 there is a broad bright region, and at 185 a narrow deep streak is clearly resolved.",
+      "query_prefix_check": "The initial image contains short horizontal echoes, but the narrow deep streak is not yet visible.",
+      "answer_prefix_check": "The streak at 185 can be followed from the bright pleural line down almost the full sector.",
+      "shortcut_risk": "Moderate. The artifact list cues possible categories but stays unchanged during the transition.",
+      "task_id": "s3_remaining79_lNcaDxyPdEU_02",
+      "video_id": "lNcaDxyPdEU",
+      "split": "train",
+      "language": "en",
+      "source_video": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/lNcaDxyPdEU.mp4",
+      "stage3_value": "medium",
+      "visual_evidence": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/lNcaDxyPdEU/182.jpg",
+          "checkpoint": 182.0,
+          "source_pts_seconds": 181.933333,
+          "resolution": [
+            1920,
+            1080
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/lNcaDxyPdEU/183.jpg",
+          "checkpoint": 183.0,
+          "source_pts_seconds": 182.933333,
+          "resolution": [
+            1920,
+            1080
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/lNcaDxyPdEU/184.jpg",
+          "checkpoint": 184.0,
+          "source_pts_seconds": 183.933333,
+          "resolution": [
+            1920,
+            1080
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/lNcaDxyPdEU/185.jpg",
+          "checkpoint": 185.0,
+          "source_pts_seconds": 184.933333,
+          "resolution": [
+            1920,
+            1080
+          ]
+        }
+      ],
+      "asr_support_segments": [],
+      "query_decision": "WAIT",
+      "answer_decision": "ANSWER",
+      "review_status": "accepted_targeted_native_frame_self_review",
+      "student_input_visibility": "not_checked"
+    },
+    {
+      "qa_type": "current_observation",
+      "query_time": 206,
+      "answer_time": 206,
+      "checkpoints": [],
+      "question": "In this lung image, where are the scattered bright spots relative to the large dark region below the surface line?",
+      "reference_answer": "Several spots sit along the right edge of the dark region, with others near its upper edge.",
+      "visual_support": "Discrete bright dots are visible near the upper and right margin of the central dark region.",
+      "query_prefix_check": "The spots and darker region are both visible now.",
+      "answer_prefix_check": "The spatial relationship can be read from the right-hand sonogram.",
+      "shortcut_risk": "Low. The slide lists artifacts but does not specify where the spots appear.",
+      "task_id": "s3_remaining79_lNcaDxyPdEU_03",
+      "video_id": "lNcaDxyPdEU",
+      "split": "train",
+      "language": "en",
+      "source_video": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/lNcaDxyPdEU.mp4",
+      "stage3_value": "medium",
+      "visual_evidence": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/lNcaDxyPdEU/206.jpg",
+          "checkpoint": 206.0,
+          "source_pts_seconds": 205.933333,
+          "resolution": [
+            1920,
+            1080
+          ]
+        }
+      ],
+      "asr_support_segments": [],
+      "query_decision": "ANSWER",
+      "answer_decision": "ANSWER",
+      "review_status": "accepted_targeted_native_frame_self_review",
+      "student_input_visibility": "not_checked"
+    }
+  ],
+  "video_id": "lNcaDxyPdEU",
+  "review_scope": "Same-assistant review; sampled timeline, original-size key frames, and existing time-indexed ASR when available. No continuous replay or direct audio claim."
+}

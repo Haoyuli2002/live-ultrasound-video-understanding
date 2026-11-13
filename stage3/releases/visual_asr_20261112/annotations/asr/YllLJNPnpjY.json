@@ -1,0 +1,908 @@
+{
+  "video_id": "YllLJNPnpjY",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/YllLJNPnpjY/asr.txt",
+  "segments": [
+    {
+      "start": 0.61,
+      "end": 2.09,
+      "text": "Hello, my name is Michael Trauer."
+    },
+    {
+      "start": 2.33,
+      "end": 3.71,
+      "text": "I'm an emergency medicine consultant"
+    },
+    {
+      "start": 3.71,
+      "end": 5.78,
+      "text": "and now I'm gonna show you how to perform"
+    },
+    {
+      "start": 5.78,
+      "end": 7.5,
+      "text": "ultrasound guided vascular access."
+    },
+    {
+      "start": 8.61,
+      "end": 9.63,
+      "text": "This is a really useful skill."
+    },
+    {
+      "start": 10.13,
+      "end": 14.69,
+      "text": "I use it almost every day for peripheral lines, sometimes for central lines, and occasionally"
+    },
+    {
+      "start": 14.69,
+      "end": 16.61,
+      "text": "even for arterial lines or ABGs."
+    },
+    {
+      "start": 18.41,
+      "end": 19.97,
+      "text": "The first step is selecting the vein."
+    },
+    {
+      "start": 21.09,
+      "end": 23.45,
+      "text": "So the ideal vein would be relatively superficial"
+    },
+    {
+      "start": 23.45,
+      "end": 25.67,
+      "text": "and removed from important structures"
+    },
+    {
+      "start": 25.67,
+      "end": 26.93,
+      "text": "like arteries or nerves."
+    },
+    {
+      "start": 28.51,
+      "end": 29.97,
+      "text": "I would start to look in the forearm and..."
+    },
+    {
+      "start": 30.03,
+      "end": 33.48,
+      "text": "If I didn't find anything there, move on to the upper arm, where there are three main"
+    },
+    {
+      "start": 33.48,
+      "end": 33.82,
+      "text": "veins."
+    },
+    {
+      "start": 34.47,
+      "end": 38.62,
+      "text": "The basilic, medially, the brachial, centrally, and the catholic, literally."
+    },
+    {
+      "start": 40.7,
+      "end": 42.42,
+      "text": "If I couldn't find anything in the whole upper limb,"
+    },
+    {
+      "start": 42.76,
+      "end": 44.8,
+      "text": "I would then move on to the lower limb as a last resort."
+    },
+    {
+      "start": 47.06,
+      "end": 48.1,
+      "text": "So here are the upper limb veins."
+    },
+    {
+      "start": 49.1,
+      "end": 49.86,
+      "text": "As you can see, the..."
+    },
+    {
+      "start": 50.0,
+      "end": 54.02,
+      "text": "The acidic vein is medial and this is usually my preferred option because it's a way for"
+    },
+    {
+      "start": 54.02,
+      "end": 55.06,
+      "text": "many arteries or nerves."
+    },
+    {
+      "start": 56.47,
+      "end": 59.97,
+      "text": "Break your vein, it's often paired and runs alongside the break your arm."
+    },
+    {
+      "start": 60.0,
+      "end": 64.68,
+      "text": "And also the median nerve can sometimes overlie these veins, so it's going to be a bit"
+    },
+    {
+      "start": 64.68,
+      "end": 65.24,
+      "text": "careful here."
+    },
+    {
+      "start": 66.44,
+      "end": 69.08,
+      "text": "And then the final vein in the upper limb is the catholic vein which lies"
+    },
+    {
+      "start": 69.08,
+      "end": 69.58,
+      "text": "actually."
+    },
+    {
+      "start": 71.44,
+      "end": 73.24,
+      "text": "So this is an image of my upper limb."
+    },
+    {
+      "start": 73.72,
+      "end": 75.64,
+      "text": "So at the bottom of the screen is the humerus."
+    },
+    {
+      "start": 76.31,
+      "end": 79.36,
+      "text": "At the top is the biceps and in between there are two black."
+    },
+    {
+      "start": 80.13,
+      "end": 86.09,
+      "text": "round structures. These are the brachial artery and the brachial vein. And then next to the"
+    },
+    {
+      "start": 86.09,
+      "end": 89.93,
+      "text": "vein, there's a bright or hyperacogue structure, which"
+    },
+    {
+      "start": 90.03,
+      "end": 91.43,
+      "text": "It looks a bit like a bundle of grapes."
+    },
+    {
+      "start": 92.33,
+      "end": 93.55,
+      "text": "This is the median nerve."
+    },
+    {
+      "start": 94.67,
+      "end": 96.59,
+      "text": "In this video, I applied pressure with the probe."
+    },
+    {
+      "start": 97.26,
+      "end": 98.16,
+      "text": "The brachial vein collapses,"
+    },
+    {
+      "start": 98.56,
+      "end": 99.86,
+      "text": "but the brachial artery remains."
+    },
+    {
+      "start": 100.0,
+      "end": 106.0,
+      "text": "pass a tarp. Now I slide the probe immediately to identify the basilic vein, which is also"
+    },
+    {
+      "start": 106.0,
+      "end": 109.85,
+      "text": "easily compressible with gentle pressure. So what equipment will you need?"
+    },
+    {
+      "start": 110.03,
+      "end": 114.77,
+      "text": "ultrasound guided cannulation, as well as your standard IV cannulation equipment."
+    },
+    {
+      "start": 115.4,
+      "end": 117.78,
+      "text": "You also need an ultrasound machine with a high frequency linear"
+    },
+    {
+      "start": 117.78,
+      "end": 119.91,
+      "text": "the cannula oven up."
+    },
+    {
+      "start": 120.03,
+      "end": 124.92,
+      "text": "appropriate length and we'll talk about what this is later. I'm kind of sterile"
+    },
+    {
+      "start": 124.92,
+      "end": 129.53,
+      "text": "probe cover, I normally use a tego-derm and some ultrasound gel, ideally in a"
+    },
+    {
+      "start": 129.53,
+      "end": 129.81,
+      "text": "Sasha."
+    },
+    {
+      "start": 130.0,
+      "end": 134.8,
+      "text": "rather than a bottle. I'll now demonstrate how to perform peripheral IV access."
+    },
+    {
+      "start": 136.18,
+      "end": 138.46,
+      "text": "The first thing to consider is ergonomics."
+    },
+    {
+      "start": 140.0,
+      "end": 143.86,
+      "text": "sound machine, screen at your eye level, adjust the height of the patient's bed,"
+    },
+    {
+      "start": 144.56,
+      "end": 147.46,
+      "text": "instead of even bringing in a chair so that you're at a nice comfortable position."
+    },
+    {
+      "start": 148.25,
+      "end": 149.97,
+      "text": "Have all your equipment close at hand so you don't have to..."
+    },
+    {
+      "start": 150.0,
+      "end": 156.67,
+      "text": "to stretch or reach. Take the ultrasound machine in your non-dominant hands, so for me on right"
+    },
+    {
+      "start": 156.67,
+      "end": 159.82,
+      "text": "hand it's all hoarded in my left hand. Have the probe marker."
+    },
+    {
+      "start": 160.0,
+      "end": 162.09,
+      "text": "to your left as you approach the patient."
+    },
+    {
+      "start": 163.56,
+      "end": 165.3,
+      "text": "Let's the ultrasound probe on the patient's arm,"
+    },
+    {
+      "start": 166.28,
+      "end": 169.3,
+      "text": "and then slide up and down the arm to check the axis of the vein."
+    },
+    {
+      "start": 170.9,
+      "end": 173.2,
+      "text": "If you can keep the vein in the middle of the screen,"
+    },
+    {
+      "start": 173.4,
+      "end": 174.52,
+      "text": "as you slide up and down the arm,"
+    },
+    {
+      "start": 175.09,
+      "end": 176.47,
+      "text": "this is the direction the vein is heading."
+    },
+    {
+      "start": 178.29,
+      "end": 179.83,
+      "text": "Once you're happy with your insertion point."
+    },
+    {
+      "start": 181.28,
+      "end": 182.8,
+      "text": "Bring the vein into the middle of the screen,"
+    },
+    {
+      "start": 183.2,
+      "end": 184.56,
+      "text": "which relates to the middle of the probe."
+    },
+    {
+      "start": 185.88,
+      "end": 189.18,
+      "text": "Stabilize your hand on the patient, pick up your canyone."
+    },
+    {
+      "start": 190.16,
+      "end": 192.62,
+      "text": "insert the canya at the midpoint of the probe."
+    },
+    {
+      "start": 196.72,
+      "end": 198.26,
+      "text": "Okay, so that was the basic approach"
+    },
+    {
+      "start": 198.26,
+      "end": 199.9,
+      "text": "to ultrasound guided cannulation."
+    },
+    {
+      "start": 200.0,
+      "end": 208.7,
+      "text": "But there's one other concept that I want to explain which is following the tip of the needle so if you're holding your probe in your non-dominant hand and"
+    },
+    {
+      "start": 210.22,
+      "end": 216.97,
+      "text": "holding the cannula in your dominant hand. If the probe remains static your needle could have passed"
+    },
+    {
+      "start": 216.97,
+      "end": 219.97,
+      "text": "way beyond the probe and you're actually just visualizing the"
+    },
+    {
+      "start": 220.1,
+      "end": 224.96,
+      "text": "shaft of the needle and you have no idea what's going on at the tip, so you need to be constantly"
+    },
+    {
+      "start": 224.96,
+      "end": 229.84,
+      "text": "moving the probe back and forward. You move the probe away until the needle tip disappears."
+    },
+    {
+      "start": 230.0,
+      "end": 233.38,
+      "text": "and then back until it reappears and only then do you know you're"
+    },
+    {
+      "start": 233.38,
+      "end": 237.23,
+      "text": "visualising the very tip of the needle so in this way as you advance the"
+    },
+    {
+      "start": 237.23,
+      "end": 239.47,
+      "text": "needle you're constantly moving the probe to and fro"
+    },
+    {
+      "start": 240.1,
+      "end": 242.2,
+      "text": "making sure you're on the very tip, all the way down"
+    },
+    {
+      "start": 242.2,
+      "end": 243.22,
+      "text": "until you enter the vein."
+    },
+    {
+      "start": 245.11,
+      "end": 247.93,
+      "text": "So here's a video of me canulating a patient's"
+    },
+    {
+      "start": 247.93,
+      "end": 249.86,
+      "text": "specific vein, so just look."
+    },
+    {
+      "start": 250.0,
+      "end": 254.19,
+      "text": "that bright white needle tip coming in from the top of the screen, pushing over the top"
+    },
+    {
+      "start": 254.19,
+      "end": 259.71,
+      "text": "of the van and then it pops through into the van. I then advance the needle tip"
+    },
+    {
+      "start": 260.0,
+      "end": 264.81,
+      "text": "little further along the van to make sure we're well into the van before finally advancing"
+    },
+    {
+      "start": 264.81,
+      "end": 269.86,
+      "text": "the cannula over the needle. In this video, I'm cannulating a break heel van."
+    },
+    {
+      "start": 271.02,
+      "end": 273.3,
+      "text": "So the needle tip, again, coming in from the top of the screen,"
+    },
+    {
+      "start": 273.44,
+      "end": 276.5,
+      "text": "going through the biceps muscle and popping into the vein."
+    },
+    {
+      "start": 277.29,
+      "end": 279.85,
+      "text": "And then I just extend it a little bit further along."
+    },
+    {
+      "start": 280.0,
+      "end": 286.0,
+      "text": "van before advancing the cannula over the needle. Note that the brachial artery adjacent to"
+    },
+    {
+      "start": 286.0,
+      "end": 288.78,
+      "text": "the van and the median nerve to the medial side."
+    },
+    {
+      "start": 290.61,
+      "end": 293.56,
+      "text": "So the technique that I've described is in transverse axis"
+    },
+    {
+      "start": 293.56,
+      "end": 296.71,
+      "text": "following the needle tip all the way down into the vein."
+    },
+    {
+      "start": 297.21,
+      "end": 298.73,
+      "text": "But there are a couple of other techniques."
+    },
+    {
+      "start": 300.93,
+      "end": 304.0,
+      "text": "So you can perform this technique without direct vision."
+    },
+    {
+      "start": 304.88,
+      "end": 307.28,
+      "text": "So in this technique, simply align the vein"
+    },
+    {
+      "start": 307.28,
+      "end": 309.98,
+      "text": "in the middle of the screen, insert the..."
+    },
+    {
+      "start": 310.0,
+      "end": 316.04,
+      "text": "needle at the middle of the probe, then drop the probe and simply advance until you get"
+    },
+    {
+      "start": 316.04,
+      "end": 319.71,
+      "text": "flashback. This technique is less reliable."
+    },
+    {
+      "start": 320.35,
+      "end": 321.43,
+      "text": "but a lot easier to learn."
+    },
+    {
+      "start": 324.1,
+      "end": 327.32,
+      "text": "And another technique is to cannulate the vein in long axis."
+    },
+    {
+      "start": 328.35,
+      "end": 329.79,
+      "text": "So for this technique, rotate the probe."
+    },
+    {
+      "start": 330.0,
+      "end": 335.31,
+      "text": "90 degrees to bring out the whole length of the vent and insert the cannula along the long"
+    },
+    {
+      "start": 335.31,
+      "end": 336.23,
+      "text": "axis of the probe."
+    },
+    {
+      "start": 337.84,
+      "end": 339.96,
+      "text": "As you can see in this image you'll then be able to see the whole..."
+    },
+    {
+      "start": 340.0,
+      "end": 346.3,
+      "text": "length of the needle shaft. The drawback of this technique is that you can easily slip off the"
+    },
+    {
+      "start": 346.56,
+      "end": 348.02,
+      "text": "the vein onto an adjacent vessel."
+    },
+    {
+      "start": 349.87,
+      "end": 349.91,
+      "text": "So..."
+    },
+    {
+      "start": 350.0,
+      "end": 353.82,
+      "text": "So you've gone to all the trouble of putting in a brilliant ultrasound-guided cannula and"
+    },
+    {
+      "start": 354.33,
+      "end": 357.73,
+      "text": "you're about to high-fibre all your buddies and then the nurse comes in and says, oh actually"
+    },
+    {
+      "start": 357.73,
+      "end": 359.37,
+      "text": "that cannula you just put in, it's just tissue."
+    },
+    {
+      "start": 360.64,
+      "end": 363.24,
+      "text": "This is really annoying, but it can actually be avoided."
+    },
+    {
+      "start": 363.58,
+      "end": 365.5,
+      "text": "So there's actually been research on this topic"
+    },
+    {
+      "start": 365.5,
+      "end": 368.54,
+      "text": "and they found that two thirds of the cannula"
+    },
+    {
+      "start": 368.54,
+      "end": 369.7,
+      "text": "needs to be within the vein."
+    },
+    {
+      "start": 370.26,
+      "end": 375.73,
+      "text": "not to tissue. So all this means in practice is if the vein is a centimeter or more deep then"
+    },
+    {
+      "start": 376.18,
+      "end": 379.0,
+      "text": "you need to have a longer cannula so at least five centimeters."
+    },
+    {
+      "start": 380.03,
+      "end": 382.35,
+      "text": "Most hospital cannulas are only about three centimeters,"
+    },
+    {
+      "start": 383.02,
+      "end": 385.54,
+      "text": "so you need to get a specific long cannula for this purpose."
+    },
+    {
+      "start": 386.98,
+      "end": 387.98,
+      "text": "Okay, so central lines."
+    },
+    {
+      "start": 388.46,
+      "end": 389.98,
+      "text": "And the first question here again is..."
+    },
+    {
+      "start": 390.03,
+      "end": 395.55,
+      "text": "vain selection. So there are three options, internal jugular or IJ, femoral and"
+    },
+    {
+      "start": 395.55,
+      "end": 399.55,
+      "text": "subclavian, and all have pros and cons. IJ is the usual"
+    },
+    {
+      "start": 400.0,
+      "end": 404.5,
+      "text": "defaults in the UK, usually the right IJ to avoid the thoracic ducts on the left."
+    },
+    {
+      "start": 405.72,
+      "end": 409.98,
+      "text": "However, if your patient can't lie flat, you may have to do a femoral subclaiming."
+    },
+    {
+      "start": 410.0,
+      "end": 414.41,
+      "text": "Again it's a good option, it doesn't actually need to be done with opposite guidance because"
+    },
+    {
+      "start": 414.41,
+      "end": 419.47,
+      "text": "the anatomy is very consistent, however the IJ in the femoral should always be done with"
+    },
+    {
+      "start": 419.47,
+      "end": 419.83,
+      "text": "option."
+    },
+    {
+      "start": 420.0,
+      "end": 425.25,
+      "text": "Here is an image of my neck, so at the top of the screen we have the sternocloid amastoid"
+    },
+    {
+      "start": 425.25,
+      "end": 425.57,
+      "text": "muscle."
+    },
+    {
+      "start": 426.5,
+      "end": 429.98,
+      "text": "On the medial side we have the trachea and the bright speckled strand."
+    },
+    {
+      "start": 430.03,
+      "end": 438.06,
+      "text": "The structure is the thyroid gland and adjacent to this is the common carotid artery and the most lateral structure is the internal jugular vein."
+    },
+    {
+      "start": 440.22,
+      "end": 444.92,
+      "text": "Here's a video of my neck, because I'm sitting up, the IJ is not visible, but now I perform"
+    },
+    {
+      "start": 444.92,
+      "end": 449.97,
+      "text": "a valve salver maneuver. Suddenly, the IJ becomes enlarged. Now we slide."
+    },
+    {
+      "start": 450.0,
+      "end": 454.92,
+      "text": "up the neck to the bifurcation of the crudet and then down again it was the"
+    },
+    {
+      "start": 454.92,
+      "end": 459.37,
+      "text": "pelvic ball. So what we're looking for here before we do a central line is the"
+    },
+    {
+      "start": 459.37,
+      "end": 459.91,
+      "text": "point that we"
+    },
+    {
+      "start": 460.0,
+      "end": 464.25,
+      "text": "the vein is most lateral to the artery. We don't want to choose a point where the"
+    },
+    {
+      "start": 464.25,
+      "end": 467.85,
+      "text": "vein is immediately overlying the artery because then if we go through the back"
+    },
+    {
+      "start": 467.85,
+      "end": 469.97,
+      "text": "of the vein we could enter the crudal."
+    },
+    {
+      "start": 470.0,
+      "end": 476.47,
+      "text": "artery. In this case, as we slide down towards the clavicle, we can see that the IJ is most"
+    },
+    {
+      "start": 476.47,
+      "end": 479.61,
+      "text": "lateral to the crotted lower down in the neck near the clavicle."
+    },
+    {
+      "start": 480.0,
+      "end": 482.16,
+      "text": "This would be my preferred site of entry."
+    },
+    {
+      "start": 485.36,
+      "end": 487.1,
+      "text": "Here is an image of a needle tip"
+    },
+    {
+      "start": 487.1,
+      "end": 489.54,
+      "text": "within the right internal jugular band."
+    },
+    {
+      "start": 492.72,
+      "end": 495.84,
+      "text": "And here is the same image, but from a longitudinal axis."
+    },
+    {
+      "start": 496.0,
+      "end": 497.54,
+      "text": "So you can see the whole shaft of the needle."
+    },
+    {
+      "start": 499.16,
+      "end": 499.98,
+      "text": "But what equipment do you need?"
+    },
+    {
+      "start": 500.0,
+      "end": 504.6,
+      "text": "for a central line. Generally, there will be a central line kit which will have most things in it"
+    },
+    {
+      "start": 504.6,
+      "end": 509.82,
+      "text": "already. It's of course a full sterile technique so you need gown, masks, sterile gloves."
+    },
+    {
+      "start": 510.0,
+      "end": 515.08,
+      "text": "drapes the full works. If the patient is awake you also need to use local"
+    },
+    {
+      "start": 515.08,
+      "end": 519.15,
+      "text": "anaesthetic and it's a good idea to have an assistant to pass your equipment"
+    },
+    {
+      "start": 520.0,
+      "end": 521.98,
+      "text": "in case the screen goes on to screen, save a moke."
+    },
+    {
+      "start": 523.26,
+      "end": 524.64,
+      "text": "I'll now demonstrate how to perform"
+    },
+    {
+      "start": 524.64,
+      "end": 526.86,
+      "text": "a right internal jugular central line."
+    },
+    {
+      "start": 528.32,
+      "end": 529.96,
+      "text": "We'll have the page that she's better adjusted to your..."
+    },
+    {
+      "start": 530.0,
+      "end": 533.61,
+      "text": "own standing height and all your equipment within easy reach so you're not having to"
+    },
+    {
+      "start": 533.61,
+      "end": 535.57,
+      "text": "strain to reach things during the procedure."
+    },
+    {
+      "start": 537.0,
+      "end": 539.18,
+      "text": "There, place the ultrasound probe on the patient's neck."
+    },
+    {
+      "start": 540.13,
+      "end": 543.51,
+      "text": "This is the marker and we keep that to our left as we approach the patient."
+    },
+    {
+      "start": 544.99,
+      "end": 549.86,
+      "text": "To place the probe on the neck and then slide up and down the neck to look for the ideal entry point."
+    },
+    {
+      "start": 550.9,
+      "end": 552.32,
+      "text": "You're going to find a point where the vein is"
+    },
+    {
+      "start": 552.32,
+      "end": 554.64,
+      "text": "lateral to the artery rather than overlying it."
+    },
+    {
+      "start": 555.55,
+      "end": 558.51,
+      "text": "Once you've found your point, then stabilize your hand"
+    },
+    {
+      "start": 558.51,
+      "end": 559.97,
+      "text": "by placing your feet..."
+    },
+    {
+      "start": 560.0,
+      "end": 564.91,
+      "text": "on the patient's clinical. Adjust your probe so that the vein is in the middle of the screen,"
+    },
+    {
+      "start": 565.15,
+      "end": 569.92,
+      "text": "which relates to the middle of the probe. Then, when you're happy with your position, take your"
+    },
+    {
+      "start": 570.0,
+      "end": 577.14,
+      "text": "needle and insert the needle just before the midpoint of the probe. Insert the needle"
+    },
+    {
+      "start": 577.14,
+      "end": 579.72,
+      "text": "drawing back on the plunger as you advance until"
+    },
+    {
+      "start": 580.19,
+      "end": 586.6,
+      "text": "You get flush back, face the probe down beside the patient, stabilize your hand on the"
+    },
+    {
+      "start": 586.6,
+      "end": 589.91,
+      "text": "patient again without moving the needle, remove the"
+    },
+    {
+      "start": 590.0,
+      "end": 595.69,
+      "text": "a wrench and insert your guide wire. You can then pull the needle back over the top of the"
+    },
+    {
+      "start": 595.69,
+      "end": 599.97,
+      "text": "guide wire. Before dilating, check that the guide wire is in place."
+    },
+    {
+      "start": 600.0,
+      "end": 609.6,
+      "text": "The guide wire is in the vent by bringing the probe back on the patient and rotating 90 degrees to look for the guide wire in the internal jugular vent."
+    },
+    {
+      "start": 610.13,
+      "end": 610.75,
+      "text": "in long axis."
+    },
+    {
+      "start": 612.17,
+      "end": 614.23,
+      "text": "So there are a couple of alternative techniques."
+    },
+    {
+      "start": 614.96,
+      "end": 616.9,
+      "text": "You can do the whole procedure in long axis"
+    },
+    {
+      "start": 616.9,
+      "end": 619.92,
+      "text": "or you can do two operator techniques."
+    },
+    {
+      "start": 620.0,
+      "end": 622.58,
+      "text": "where one person holds the probe and one the needle."
+    },
+    {
+      "start": 623.6,
+      "end": 625.14,
+      "text": "First thing, I think it's better to try and learn"
+    },
+    {
+      "start": 625.14,
+      "end": 626.46,
+      "text": "to do the hope we see to yourself"
+    },
+    {
+      "start": 626.46,
+      "end": 629.7,
+      "text": "as if you have control over both the probe and the needle."
+    },
+    {
+      "start": 630.19,
+      "end": 633.75,
+      "text": "and make those fine movements to ensure you're following the needle tip all the way down"
+    },
+    {
+      "start": 633.75,
+      "end": 634.27,
+      "text": "into the van."
+    },
+    {
+      "start": 635.44,
+      "end": 638.76,
+      "text": "If you're interested in learning more on this topic, here's a couple of websites, the"
+    },
+    {
+      "start": 638.76,
+      "end": 639.98,
+      "text": "first one, peripheral one."
+    }
+  ]
+}

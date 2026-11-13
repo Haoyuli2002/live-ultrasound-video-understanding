@@ -1,0 +1,1133 @@
+{
+  "video_id": "rwdNv3SRT0A",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/rwdNv3SRT0A/asr.txt",
+  "segments": [
+    {
+      "start": 1.57,
+      "end": 9.89,
+      "text": "I'm Lauren McCafferty and I'm an ultrasound fellow at University Hospitals Cleveland Medical Center as part of my series on"
+    },
+    {
+      "start": 10.0,
+      "end": 14.47,
+      "text": "use a point-of-care ultrasound to augment landmark-based procedures. I'll be"
+    },
+    {
+      "start": 14.47,
+      "end": 17.75,
+      "text": "talking here about ultrasound-guided subclavian central lines."
+    },
+    {
+      "start": 21.02,
+      "end": 23.72,
+      "text": "As a quick disclaimer, I'm going to be focusing mostly"
+    },
+    {
+      "start": 23.72,
+      "end": 25.98,
+      "text": "on the ultrasound component of this"
+    },
+    {
+      "start": 25.98,
+      "end": 27.86,
+      "text": "rather than the step by step process"
+    },
+    {
+      "start": 27.86,
+      "end": 29.18,
+      "text": "of placing a central line."
+    },
+    {
+      "start": 32.56,
+      "end": 37.94,
+      "text": "The indications for subclavian central lines are essentially the same as indications for"
+    },
+    {
+      "start": 37.94,
+      "end": 39.52,
+      "text": "central lines in general."
+    },
+    {
+      "start": 40.35,
+      "end": 42.67,
+      "text": "Since most of you are probably familiar with those,"
+    },
+    {
+      "start": 43.28,
+      "end": 44.94,
+      "text": "I'm not going to spend a whole lot of time"
+    },
+    {
+      "start": 44.94,
+      "end": 46.02,
+      "text": "talking about that here."
+    },
+    {
+      "start": 47.94,
+      "end": 49.98,
+      "text": "Instead, I'll quickly go over-"
+    },
+    {
+      "start": 50.0,
+      "end": 55.38,
+      "text": "of the pros and cons of soclavian lines compared to ij or femoral lines."
+    },
+    {
+      "start": 56.52,
+      "end": 59.97,
+      "text": "To start with pros, soclavian lines tend to"
+    },
+    {
+      "start": 60.0,
+      "end": 65.04,
+      "text": "be more comfortable for patients and allow for better mobility compared to those in their"
+    },
+    {
+      "start": 65.04,
+      "end": 66.14,
+      "text": "neck or their groin."
+    },
+    {
+      "start": 66.14,
+      "end": 69.97,
+      "text": "So clavian veins tend to be more..."
+    },
+    {
+      "start": 70.1,
+      "end": 76.37,
+      "text": "patent and less collapsible in hypoglymic states, so they're generally easier to canyulate."
+    },
+    {
+      "start": 77.51,
+      "end": 79.85,
+      "text": "They have lower-clapsy or central-line issues."
+    },
+    {
+      "start": 80.0,
+      "end": 86.42,
+      "text": "seeded bloodstream infection rates as well as lower DVT rates compared to those of IJ"
+    },
+    {
+      "start": 86.42,
+      "end": 87.24,
+      "text": "or femoral lines."
+    },
+    {
+      "start": 89.0,
+      "end": 89.84,
+      "text": "They're potentially good"
+    },
+    {
+      "start": 90.0,
+      "end": 95.96,
+      "text": "for cardiopulmonary monitoring and piecing due to the close proximity to the"
+    },
+    {
+      "start": 95.96,
+      "end": 99.94,
+      "text": "heart and the lungs. And so clavian lines tend to be"
+    },
+    {
+      "start": 100.0,
+      "end": 108.29,
+      "text": "preferred line for TBI patients and trauma patients or cons. So clearly"
+    },
+    {
+      "start": 108.29,
+      "end": 109.07,
+      "text": "of the Investors."
+    },
+    {
+      "start": 110.0,
+      "end": 115.19,
+      "text": "typically have poor compressibility due to the surrounding anatomy, so there is a higher"
+    },
+    {
+      "start": 115.19,
+      "end": 118.39,
+      "text": "risk of bleeding and hematoma formation as a result."
+    },
+    {
+      "start": 120.7,
+      "end": 125.93,
+      "text": "And because of the close proximity to the plura, the risk of pneumothorax is significantly"
+    },
+    {
+      "start": 125.93,
+      "end": 128.55,
+      "text": "higher compared to that of an IJ line."
+    },
+    {
+      "start": 130.7,
+      "end": 133.78,
+      "text": "and now to quickly compare the right versus the left."
+    },
+    {
+      "start": 134.64,
+      "end": 137.83,
+      "text": "On the right, the apex of the lung sits slightly lower,"
+    },
+    {
+      "start": 138.11,
+      "end": 139.91,
+      "text": "which decreases the risk of pneumothora."
+    },
+    {
+      "start": 140.03,
+      "end": 145.86,
+      "text": "However, there's a higher risk for trauma in my position because the catheter has to make"
+    },
+    {
+      "start": 145.86,
+      "end": 148.1,
+      "text": "a sharp turn to go down for the heart."
+    },
+    {
+      "start": 150.0,
+      "end": 155.3,
+      "text": "left is the preferred side for cardiopulmonary access because it's more of a direct path to"
+    },
+    {
+      "start": 155.3,
+      "end": 159.98,
+      "text": "the heart. It doesn't have to take that sharp bend. However, the thoracic duct is on the"
+    },
+    {
+      "start": 160.0,
+      "end": 166.89,
+      "text": "left, so there's risk of damaging it. As you probably all know, so clavian lines"
+    },
+    {
+      "start": 166.89,
+      "end": 169.71,
+      "text": "are generally placed by a landmark-based approach."
+    },
+    {
+      "start": 170.64,
+      "end": 173.67,
+      "text": "people have been doing it that way for years with good success"
+    },
+    {
+      "start": 174.06,
+      "end": 176.23,
+      "text": "and only recently has all just sound guidance"
+    },
+    {
+      "start": 176.91,
+      "end": 179.77,
+      "text": "emerged as even a possible technique for doing this."
+    },
+    {
+      "start": 181.57,
+      "end": 182.51,
+      "text": "So why do we use ultrasound?"
+    },
+    {
+      "start": 184.12,
+      "end": 186.86,
+      "text": "This was a systematic review and meta-analysis"
+    },
+    {
+      "start": 186.86,
+      "end": 189.98,
+      "text": "from 2015 comparing all"
+    },
+    {
+      "start": 190.0,
+      "end": 193.8,
+      "text": "Sound Guided versus a landmark based approach for Soclavian Lines."
+    },
+    {
+      "start": 195.3,
+      "end": 199.85,
+      "text": "The final analysis included a total of 10 studies with over 2100"
+    },
+    {
+      "start": 200.0,
+      "end": 203.58,
+      "text": "subjects and it included both static and dynamic items."
+    },
+    {
+      "start": 205.67,
+      "end": 209.34,
+      "text": "They found that the use of ultrasound resulted in reduced"
+    },
+    {
+      "start": 210.0,
+      "end": 213.25,
+      "text": "complication rates, more specifically, this included"
+    },
+    {
+      "start": 213.87,
+      "end": 216.45,
+      "text": "pneumothorax, arterial puncture, and hematomas."
+    },
+    {
+      "start": 218.01,
+      "end": 219.81,
+      "text": "And their analysis also, like,"
+    },
+    {
+      "start": 220.0,
+      "end": 224.54,
+      "text": "looked at both SATA and dynamic guidance and they found that dynamic guidance was"
+    },
+    {
+      "start": 224.54,
+      "end": 229.48,
+      "text": "associated with a significant reduction in field capitalization compared to"
+    },
+    {
+      "start": 230.29,
+      "end": 236.95,
+      "text": "landmark based approach. So overall, the evidence is favoring the use of ultrasound guidance for"
+    },
+    {
+      "start": 236.95,
+      "end": 237.51,
+      "text": "the ingredients."
+    },
+    {
+      "start": 240.61,
+      "end": 244.38,
+      "text": "For general technique, I'll quickly show you the different approaches."
+    },
+    {
+      "start": 245.66,
+      "end": 249.98,
+      "text": "So for the Lamar based approach, you generally find the bend in the clav-"
+    },
+    {
+      "start": 250.0,
+      "end": 255.08,
+      "text": "and use that as your starting point. For ultrasound, there's two different approaches."
+    },
+    {
+      "start": 255.95,
+      "end": 259.89,
+      "text": "The first is the infracovicular approach, which is below the clap."
+    },
+    {
+      "start": 260.0,
+      "end": 267.25,
+      "text": "and more lateral on the chest and the super clavicular which is more medial and above the"
+    },
+    {
+      "start": 267.25,
+      "end": 269.73,
+      "text": "And I'll go into more detail."
+    },
+    {
+      "start": 270.83,
+      "end": 271.59,
+      "text": "in the coming slides."
+    },
+    {
+      "start": 273.73,
+      "end": 275.89,
+      "text": "I'll start with the Infra-Clivicular approach."
+    },
+    {
+      "start": 276.48,
+      "end": 278.5,
+      "text": "So as I just mentioned, and as the name suggests,"
+    },
+    {
+      "start": 279.0,
+      "end": 279.96,
+      "text": "this is below the..."
+    },
+    {
+      "start": 280.06,
+      "end": 285.75,
+      "text": "in more lateral. It's actually the axillary vein at this point as the once the"
+    },
+    {
+      "start": 285.75,
+      "end": 289.49,
+      "text": "subplavian vein courses below the clavicle as it's moving laterally."
+    },
+    {
+      "start": 290.16,
+      "end": 293.28,
+      "text": "it changes name from the subquake into the axillary vein."
+    },
+    {
+      "start": 294.34,
+      "end": 296.06,
+      "text": "It's same vein, just a change in name."
+    },
+    {
+      "start": 298.7,
+      "end": 299.98,
+      "text": "You can look at this in..."
+    },
+    {
+      "start": 300.1,
+      "end": 309.0,
+      "text": "or long axis. And remember that this is relative to the vessel, not the patient's body. Talk about the short axis first, which is here."
+    },
+    {
+      "start": 310.42,
+      "end": 314.2,
+      "text": "So you can see the clavicle on the left side of the screen."
+    },
+    {
+      "start": 314.79,
+      "end": 318.81,
+      "text": "It's a slight hip arcoic rim with clear posterior shadowing behind it."
+    },
+    {
+      "start": 320.0,
+      "end": 326.16,
+      "text": "clavicle and then the subclavian vessels are to the right of that. So the artery is on the left"
+    },
+    {
+      "start": 326.16,
+      "end": 329.97,
+      "text": "And the vein is on the right to be..."
+    },
+    {
+      "start": 330.0,
+      "end": 334.8,
+      "text": "sure you want to confirm with either color or pulsate Doppler. So this is"
+    },
+    {
+      "start": 334.8,
+      "end": 339.72,
+      "text": "color Doppler. You're looking for pulsatile appearance of the"
+    },
+    {
+      "start": 340.0,
+      "end": 344.44,
+      "text": "Doppler in the artery, or as the vein has marvel constant flow has"
+    },
+    {
+      "start": 345.05,
+      "end": 349.84,
+      "text": "demonstrate it here once you"
+    },
+    {
+      "start": 350.03,
+      "end": 356.87,
+      "text": "confirm vein versus artery, you want to assess the distance to the plur out so that you know how far beyond the vessel"
+    },
+    {
+      "start": 356.87,
+      "end": 359.07,
+      "text": "you could go if you accidentally back wall it."
+    },
+    {
+      "start": 360.0,
+      "end": 369.97,
+      "text": "So here's the plural line, the bright white shiny line, and as you can see, the distance between the vein and the"
+    },
+    {
+      "start": 370.0,
+      "end": 379.97,
+      "text": "Plural line is less than a centimeter so you really don't have a whole lot of room to work with. This is what it looks like in"
+    },
+    {
+      "start": 380.0,
+      "end": 384.9,
+      "text": "a long axis view, which is, again, the long axis relative to the vessel, not the patient."
+    },
+    {
+      "start": 386.2,
+      "end": 389.42,
+      "text": "You can see that subtle fanning will go from artery here."
+    },
+    {
+      "start": 390.48,
+      "end": 393.13,
+      "text": "to vein here, they're very close to each other."
+    },
+    {
+      "start": 393.39,
+      "end": 396.15,
+      "text": "So you really want to differentiate artery versus vein"
+    },
+    {
+      "start": 396.15,
+      "end": 399.37,
+      "text": "and get them clearly displayed on the screen."
+    },
+    {
+      "start": 401.31,
+      "end": 406.43,
+      "text": "The vein is slightly anterior and inferior to the artery, so just direct your probe in that direction."
+    },
+    {
+      "start": 408.66,
+      "end": 409.98,
+      "text": "And another option, a side-"
+    },
+    {
+      "start": 410.0,
+      "end": 415.36,
+      "text": "color Doppler is Pulse Wave Doppler. Do you want to place the gate within the"
+    },
+    {
+      "start": 415.36,
+      "end": 419.26,
+      "text": "of the vessel and if it's a vein, this is what you should see."
+    },
+    {
+      "start": 423.62,
+      "end": 426.06,
+      "text": "Whereas this is what it will look like for an artery."
+    },
+    {
+      "start": 431.57,
+      "end": 434.01,
+      "text": "And again, you want to assess the distance to the plera,"
+    },
+    {
+      "start": 434.41,
+      "end": 438.57,
+      "text": "which you can see about less than a centimeter below the vessels."
+    },
+    {
+      "start": 440.99,
+      "end": 443.85,
+      "text": "Your needle entry site will be based on all just sound findings,"
+    },
+    {
+      "start": 444.35,
+      "end": 446.75,
+      "text": "and you can take an in plane or out of plane approach."
+    },
+    {
+      "start": 448.1,
+      "end": 449.82,
+      "text": "This example shows an in plane approach."
+    },
+    {
+      "start": 450.48,
+      "end": 454.12,
+      "text": "you have the needle coming in from the side of the probe, from lateral to"
+    },
+    {
+      "start": 454.12,
+      "end": 458.92,
+      "text": "medial. You want to make sure that your needle is lined up exactly with a"
+    },
+    {
+      "start": 458.92,
+      "end": 459.98,
+      "text": "probe or else you'll..."
+    },
+    {
+      "start": 460.0,
+      "end": 464.98,
+      "text": "loose side of the needle. You watch it coming in from the top corner of your screen"
+    },
+    {
+      "start": 464.98,
+      "end": 469.72,
+      "text": "and you want to see the entirety of the needle shaft and directly"
+    },
+    {
+      "start": 470.0,
+      "end": 474.59,
+      "text": "it as it goes into the loom in. Once you're in the loom in then you'll drop the"
+    },
+    {
+      "start": 474.59,
+      "end": 477.71,
+      "text": "angle and throw the guide wire and you'll proceed with the rest of the"
+    },
+    {
+      "start": 477.71,
+      "end": 479.29,
+      "text": "procedure as you typically would."
+    },
+    {
+      "start": 481.38,
+      "end": 484.8,
+      "text": "Just remember to confirm that the guide wire is in the vein before you dilate."
+    },
+    {
+      "start": 487.54,
+      "end": 489.34,
+      "text": "This is the short axis or"
+    },
+    {
+      "start": 490.16,
+      "end": 494.8,
+      "text": "out of clean approach, and this is probably what people are more comfortable with in terms"
+    },
+    {
+      "start": 494.8,
+      "end": 498.04,
+      "text": "of all just sound guided, vascular access in general."
+    },
+    {
+      "start": 498.97,
+      "end": 499.97,
+      "text": "Remember that, thank you."
+    },
+    {
+      "start": 500.0,
+      "end": 507.76,
+      "text": "here is to have very good needle tip and control and visualization the entire time. Do you want to"
+    },
+    {
+      "start": 507.76,
+      "end": 509.98,
+      "text": "to advance your needle in the"
+    },
+    {
+      "start": 510.0,
+      "end": 515.49,
+      "text": "probe in small increments knowing where that needle tip is the entire time."
+    },
+    {
+      "start": 515.98,
+      "end": 519.52,
+      "text": "The last thing you want to do is aqua the vein."
+    },
+    {
+      "start": 520.26,
+      "end": 522.04,
+      "text": "and then before you know what you're hitting the plera."
+    },
+    {
+      "start": 525.94,
+      "end": 527.54,
+      "text": "I just want to approach better than the other."
+    },
+    {
+      "start": 528.72,
+      "end": 529.94,
+      "text": "This was a study with a"
+    },
+    {
+      "start": 530.0,
+      "end": 536.44,
+      "text": "emergency medicine providers comparing a long versus short access approach for infracovicular ultrasound guidance"
+    },
+    {
+      "start": 536.44,
+      "end": 539.56,
+      "text": "clavians. They found overall favorability."
+    },
+    {
+      "start": 540.0,
+      "end": 546.49,
+      "text": "the long axis with greater versitum success, pure needle-reader actions, and a trend of fewer"
+    },
+    {
+      "start": 546.49,
+      "end": 549.85,
+      "text": "arterial punctures compared with that of the transverse orientation."
+    },
+    {
+      "start": 550.0,
+      "end": 557.26,
+      "text": "To based on this study, it seems as though the long axis might be better than a short axis."
+    },
+    {
+      "start": 557.88,
+      "end": 559.96,
+      "text": "However, keep in mind that if you-"
+    },
+    {
+      "start": 560.0,
+      "end": 564.8,
+      "text": "never done along axis ultrasound guided procedure, it may not be your best option."
+    },
+    {
+      "start": 567.35,
+      "end": 568.99,
+      "text": "Now for this super clovicular approach."
+    },
+    {
+      "start": 570.54,
+      "end": 573.46,
+      "text": "Remember that this is above the clavicle and more medial."
+    },
+    {
+      "start": 574.67,
+      "end": 577.09,
+      "text": "Your probe is going to be near the lateral border"
+    },
+    {
+      "start": 577.09,
+      "end": 579.97,
+      "text": "of the sternocytomastoid and the internal..."
+    },
+    {
+      "start": 580.03,
+      "end": 585.2,
+      "text": "regular vein. Because of the anatomy here, there's less space above the"
+    },
+    {
+      "start": 585.2,
+      "end": 589.3,
+      "text": "of have a goal to place the probe in a short-axis position."
+    },
+    {
+      "start": 590.0,
+      "end": 592.74,
+      "text": "relative to the vessel, so it would be long-axis relative to the patient."
+    },
+    {
+      "start": 593.73,
+      "end": 599.08,
+      "text": "So because of that, you need to essentially do a long-axis view with an in-plane approach"
+    },
+    {
+      "start": 599.08,
+      "end": 599.6,
+      "text": "with your needle."
+    },
+    {
+      "start": 601.02,
+      "end": 603.86,
+      "text": "As I mentioned before, your subplavian vein"
+    },
+    {
+      "start": 603.86,
+      "end": 608.28,
+      "text": "runs slightly anterior and inferior to the artery,"
+    },
+    {
+      "start": 608.54,
+      "end": 609.98,
+      "text": "so keep that in mind when you're trying to..."
+    },
+    {
+      "start": 610.03,
+      "end": 616.06,
+      "text": "one versus the other and van your probe accordingly. This is the view you're"
+    },
+    {
+      "start": 616.06,
+      "end": 619.98,
+      "text": "going to get. So here the subclavian vein is directly in"
+    },
+    {
+      "start": 620.0,
+      "end": 622.66,
+      "text": "in the center of the screen, running horizontally,"
+    },
+    {
+      "start": 623.55,
+      "end": 625.91,
+      "text": "along as directly below it, which is really scary."
+    },
+    {
+      "start": 627.26,
+      "end": 629.48,
+      "text": "If you look in the center of the screen in the vessel,"
+    },
+    {
+      "start": 630.22,
+      "end": 636.04,
+      "text": "You can see hypercoic linear structures, so this is the valve, and this is where the"
+    },
+    {
+      "start": 636.04,
+      "end": 639.88,
+      "text": "soclavian vein comes together with the internal jugular vein to form."
+    },
+    {
+      "start": 640.0,
+      "end": 644.87,
+      "text": "the brachiosophalic. And you can see that the vein kind of starts to course a little"
+    },
+    {
+      "start": 644.87,
+      "end": 649.73,
+      "text": "inferiorly as you move toward the right of the screen, so that's the start of the brachiosophalic vein."
+    },
+    {
+      "start": 652.43,
+      "end": 656.23,
+      "text": "Now that I've covered both the infra-clivicular and super-clivicular approaches"
+    },
+    {
+      "start": 656.23,
+      "end": 658.33,
+      "text": "is one better than the other."
+    },
+    {
+      "start": 659.86,
+      "end": 659.98,
+      "text": "This-"
+    },
+    {
+      "start": 660.0,
+      "end": 665.14,
+      "text": "This was a prospective study comparing the quality of visualization of the subclavian vein"
+    },
+    {
+      "start": 665.14,
+      "end": 669.48,
+      "text": "using ultrasound based on the intracurricular or the supercurricular approach."
+    },
+    {
+      "start": 670.48,
+      "end": 672.46,
+      "text": "These providers evaluated both."
+    },
+    {
+      "start": 672.76,
+      "end": 674.04,
+      "text": "They didn't actually do a procedure."
+    },
+    {
+      "start": 674.32,
+      "end": 675.7,
+      "text": "They just obtained views and looked"
+    },
+    {
+      "start": 675.7,
+      "end": 676.84,
+      "text": "at the quality of the images."
+    },
+    {
+      "start": 678.11,
+      "end": 679.73,
+      "text": "They found that the super clavicular"
+    },
+    {
+      "start": 679.73,
+      "end": 679.97,
+      "text": "our video."
+    },
+    {
+      "start": 680.0,
+      "end": 684.2,
+      "text": "you yielded better visualization and that the right was better than the left."
+    },
+    {
+      "start": 686.49,
+      "end": 689.97,
+      "text": "This was a study also comparing the infracovicular and super-covicular-"
+    },
+    {
+      "start": 690.1,
+      "end": 693.96,
+      "text": "approaches. However, this time the providers actually perform the central"
+    },
+    {
+      "start": 693.96,
+      "end": 699.14,
+      "text": "line, and this was with 60 anesthesiologists. They found that the super"
+    },
+    {
+      "start": 699.14,
+      "end": 699.96,
+      "text": "or a clavicular..."
+    },
+    {
+      "start": 700.0,
+      "end": 706.08,
+      "text": "approach and better success rates, your attempts in shorter time to establishing"
+    },
+    {
+      "start": 706.08,
+      "end": 709.82,
+      "text": "abusing vascular access compared with the infraculovicular approach."
+    },
+    {
+      "start": 710.0,
+      "end": 714.62,
+      "text": "So overall, the super-climicular approach seems more favorable."
+    },
+    {
+      "start": 717.09,
+      "end": 717.85,
+      "text": "Some pearls and pitfalls."
+    },
+    {
+      "start": 719.16,
+      "end": 719.98,
+      "text": "Use your Anatama-"
+    },
+    {
+      "start": 720.0,
+      "end": 726.45,
+      "text": "landmarks as a guide so just because you're not doing a strictly landmark based approach for this"
+    },
+    {
+      "start": 726.45,
+      "end": 729.1,
+      "text": "It doesn't mean that you can't use your landmarks to help you"
+    },
+    {
+      "start": 730.99,
+      "end": 735.71,
+      "text": "For example, if you're having trouble finding your subclavian vessels, whether it's above"
+    },
+    {
+      "start": 735.71,
+      "end": 739.98,
+      "text": "or below the clavicle, remember that they course under the clavicle."
+    },
+    {
+      "start": 740.03,
+      "end": 749.97,
+      "text": "And that's where they become the axillary vein. So use your clavicle as your starting point find your clavicle near where you would enter the skin for a"
+    },
+    {
+      "start": 750.0,
+      "end": 754.32,
+      "text": "landmark-based subclavian central line and you should see the"
+    },
+    {
+      "start": 754.32,
+      "end": 759.56,
+      "text": "subclavian vessels course below it is demonstrated in this in this clip so the"
+    },
+    {
+      "start": 760.0,
+      "end": 763.19,
+      "text": "goes in the center of the screen, it's that dark shadow,"
+    },
+    {
+      "start": 763.78,
+      "end": 766.32,
+      "text": "and then you can see the soclavian vessel"
+    },
+    {
+      "start": 766.32,
+      "end": 768.42,
+      "text": "running horizontally on the screen."
+    },
+    {
+      "start": 770.86,
+      "end": 775.18,
+      "text": "Evaluate the vasculature with ultrasound before you prep the patient, let alone decide"
+    },
+    {
+      "start": 775.18,
+      "end": 776.5,
+      "text": "which side you're going to go on."
+    },
+    {
+      "start": 777.9,
+      "end": 779.98,
+      "text": "You want to make sure the vessel is clearly visualized."
+    },
+    {
+      "start": 780.0,
+      "end": 785.16,
+      "text": "and that there's no large thrombus or some other abnormality that might make the line more difficult."
+    },
+    {
+      "start": 786.28,
+      "end": 789.53,
+      "text": "It's suboptimal to get completely sterile and prepped."
+    },
+    {
+      "start": 790.0,
+      "end": 794.48,
+      "text": "only to find out that the vein they are hoping to cannulate is occluded or poorly visualized,"
+    },
+    {
+      "start": 794.78,
+      "end": 797.56,
+      "text": "whereas the other side that's not sterile or draped looks great."
+    },
+    {
+      "start": 800.19,
+      "end": 802.79,
+      "text": "It's always a good idea to prep the Ipsilateral neck."
+    },
+    {
+      "start": 803.19,
+      "end": 805.35,
+      "text": "So that way, if you, for some reason,"
+    },
+    {
+      "start": 805.53,
+      "end": 807.39,
+      "text": "are not successful doing the subclavian,"
+    },
+    {
+      "start": 807.88,
+      "end": 809.14,
+      "text": "your neck is already sterile"
+    },
+    {
+      "start": 809.14,
+      "end": 809.98,
+      "text": "and you can just slide."
+    },
+    {
+      "start": 810.0,
+      "end": 816.63,
+      "text": "the drape over to the neck and do an IJ instead. That way, you don't have to open up a new central"
+    },
+    {
+      "start": 816.63,
+      "end": 819.97,
+      "text": "line kit and re-drape. It just takes time and uses..."
+    },
+    {
+      "start": 820.0,
+      "end": 827.23,
+      "text": "up resources. It's also a good idea to evaluate the IJ after you do some"
+    },
+    {
+      "start": 827.23,
+      "end": 829.83,
+      "text": "leave you in line to make sure that the guide wire"
+    },
+    {
+      "start": 830.0,
+      "end": 834.72,
+      "text": "didn't go up the IJ, but went down this into the bricky of Sepalda Clay and instead like it's"
+    },
+    {
+      "start": 834.72,
+      "end": 839.12,
+      "text": "supposed to. Use bone to your advantage."
+    },
+    {
+      "start": 840.22,
+      "end": 845.36,
+      "text": "If you angle your probe a certain way so that the rib is directly beneath the vein, if"
+    },
+    {
+      "start": 845.36,
+      "end": 849.79,
+      "text": "you accidentally back wall the vein with your needle, the bone is going to be there as"
+    },
+    {
+      "start": 849.79,
+      "end": 849.97,
+      "text": "your..."
+    },
+    {
+      "start": 850.06,
+      "end": 857.97,
+      "text": "offer and prevent you from hitting the plura. And finally, know your limitations. As of"
+    },
+    {
+      "start": 857.97,
+      "end": 859.83,
+      "text": "most things with ultrasound, it's operated."
+    },
+    {
+      "start": 860.03,
+      "end": 864.8,
+      "text": "dependent. If you don't know what you're supposed to be seeing, ultra sound is probably not"
+    },
+    {
+      "start": 864.8,
+      "end": 868.56,
+      "text": "going to help you place these sublavian lines and may actually cause more harm than good."
+    },
+    {
+      "start": 870.1,
+      "end": 874.06,
+      "text": "So if you don't know how to do an in-plane approach or you've never really done it with an"
+    },
+    {
+      "start": 874.06,
+      "end": 879.0,
+      "text": "actual needle, it's probably not the best idea for this to be your first attempt."
+    },
+    {
+      "start": 879.0,
+      "end": 879.97,
+      "text": "I'm just in the-"
+    },
+    {
+      "start": 880.0,
+      "end": 886.17,
+      "text": "fairly high stakes compared to something like a peripheral IV, and for some take-home points."
+    },
+    {
+      "start": 887.27,
+      "end": 889.97,
+      "text": "Know the pros and cons of subclavians as well as"
+    },
+    {
+      "start": 890.0,
+      "end": 894.82,
+      "text": "laterality. The evidence supports the use of ultrasound guidance for"
+    },
+    {
+      "start": 894.82,
+      "end": 898.82,
+      "text": "Soclavian Central Line placement as it has fewer complication rates and fewer"
+    },
+    {
+      "start": 898.82,
+      "end": 899.44,
+      "text": "failed attempts."
+    },
+    {
+      "start": 901.09,
+      "end": 903.05,
+      "text": "it favors a superclavicular approach"
+    },
+    {
+      "start": 903.05,
+      "end": 905.07,
+      "text": "over the inferclavicular approach"
+    },
+    {
+      "start": 905.07,
+      "end": 907.19,
+      "text": "with preference to the right over the left,"
+    },
+    {
+      "start": 907.55,
+      "end": 909.91,
+      "text": "but realize, you know, based on the pros and the cons."
+    },
+    {
+      "start": 910.0,
+      "end": 912.04,
+      "text": "which is better in your situation."
+    },
+    {
+      "start": 913.15,
+      "end": 914.89,
+      "text": "While it's always important to confirm the vein"
+    },
+    {
+      "start": 914.89,
+      "end": 917.05,
+      "text": "before dilating, it's especially important"
+    },
+    {
+      "start": 917.05,
+      "end": 918.19,
+      "text": "for the subclavians,"
+    },
+    {
+      "start": 918.45,
+      "end": 919.87,
+      "text": "given the poor compressibility."
+    },
+    {
+      "start": 920.0,
+      "end": 925.07,
+      "text": "And to emphasize this again, because it's super important, you must know your limitations."
+    },
+    {
+      "start": 927.34,
+      "end": 929.96,
+      "text": "If you have any questions, please feel free to contact me."
+    },
+    {
+      "start": 930.0,
+      "end": 936.9,
+      "text": "me. I also have a video on how to confirm central line placement using ultrasound rather than chest"
+    },
+    {
+      "start": 937.48,
+      "end": 939.08,
+      "text": "So check that out as well."
+    }
+  ]
+}

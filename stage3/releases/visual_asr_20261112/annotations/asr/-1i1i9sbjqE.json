@@ -1,0 +1,558 @@
+{
+  "video_id": "-1i1i9sbjqE",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/-1i1i9sbjqE/asr.txt",
+  "segments": [
+    {
+      "start": 2.08,
+      "end": 2.88,
+      "text": "Thanks for tuning in."
+    },
+    {
+      "start": 3.04,
+      "end": 6.9,
+      "text": "In this module, I'm going to go over a little bit more in detail, the cardiac ultrasound"
+    },
+    {
+      "start": 6.9,
+      "end": 8.78,
+      "text": "conventions that are commonly out there."
+    },
+    {
+      "start": 10.0,
+      "end": 13.88,
+      "text": "usual number of the ultrasound images and videos are courtesy of the division of emergency"
+    },
+    {
+      "start": 13.88,
+      "end": 16.44,
+      "text": "ultrasound at Massachusetts General Hospital."
+    },
+    {
+      "start": 16.44,
+      "end": 19.98,
+      "text": "In my previous tutorial with..."
+    },
+    {
+      "start": 20.13,
+      "end": 25.66,
+      "text": "two parastronal long axis cardiac imaging I mentioned that you're going to be"
+    },
+    {
+      "start": 25.66,
+      "end": 29.12,
+      "text": "pointing to transducer marker either to the patient's right shoulder or to the"
+    },
+    {
+      "start": 29.12,
+      "end": 29.76,
+      "text": "patients left."
+    },
+    {
+      "start": 30.55,
+      "end": 34.79,
+      "text": "And more specifically, if your screen marker is on the right hand side of the screen, then"
+    },
+    {
+      "start": 34.79,
+      "end": 37.95,
+      "text": "you can point the transducer marker to the patient's right shoulder."
+    },
+    {
+      "start": 37.95,
+      "end": 39.97,
+      "text": "If, on the other hand, you're..."
+    },
+    {
+      "start": 40.0,
+      "end": 45.46,
+      "text": "markers on the left-hand side of the screen. What we're going to do then is ask you to point"
+    },
+    {
+      "start": 45.81,
+      "end": 48.29,
+      "text": "to transducer marker to the patient's left hip."
+    },
+    {
+      "start": 50.48,
+      "end": 57.91,
+      "text": "And the rationale for that is that really for both conventions what you're doing is you're taking a"
+    },
+    {
+      "start": 57.91,
+      "end": 59.97,
+      "text": "peristone or long axis through"
+    },
+    {
+      "start": 60.0,
+      "end": 67.36,
+      "text": "the heart like so. And then you're going to rotate it around. And I think of it as as if you're"
+    },
+    {
+      "start": 67.36,
+      "end": 69.94,
+      "text": "standing on the patient's left hand side."
+    },
+    {
+      "start": 70.0,
+      "end": 79.86,
+      "text": "and looking into the heart like so. And both of those conventions would generate a very similar image and just probably rotate"
+    },
+    {
+      "start": 80.0,
+      "end": 87.18,
+      "text": "this here a little bit, and this is the image that we are generating like this."
+    },
+    {
+      "start": 87.86,
+      "end": 89.98,
+      "text": "And as I went over the right ventricles here..."
+    },
+    {
+      "start": 90.0,
+      "end": 94.12,
+      "text": "you've got your left ventricle and the apex is going to be pointing to this."
+    },
+    {
+      "start": 94.64,
+      "end": 99.98,
+      "text": "Do the left here, left atrium, aortic outflow, right here, aortic outflow."
+    },
+    {
+      "start": 100.0,
+      "end": 104.98,
+      "text": "valve in New York. So that's that's kind of the two conventions that I"
+    },
+    {
+      "start": 104.98,
+      "end": 109.96,
+      "text": "covered in my videos. Now, as it was pointed out to"
+    },
+    {
+      "start": 110.0,
+      "end": 115.08,
+      "text": "me that that doesn't tell the full story because there's actually another convention that's"
+    },
+    {
+      "start": 115.08,
+      "end": 119.84,
+      "text": "commonly used out there as well, which I didn't cover in my tutorial, and in that"
+    },
+    {
+      "start": 120.0,
+      "end": 124.48,
+      "text": "mention what you're going to do is you're going to take a long axis slice of the"
+    },
+    {
+      "start": 124.48,
+      "end": 129.11,
+      "text": "heart just the same way except now I'm going to stand on the patient's right"
+    },
+    {
+      "start": 129.11,
+      "end": 129.81,
+      "text": "hand side."
+    },
+    {
+      "start": 130.0,
+      "end": 135.6,
+      "text": "looking into the heart like so. So instead of standing onto the patient's left looking into the heart,"
+    },
+    {
+      "start": 135.62,
+      "end": 139.81,
+      "text": "I'm matching on the other side of the patient and looking into the heart."
+    },
+    {
+      "start": 140.99,
+      "end": 149.53,
+      "text": "I'm just going to rotate that and this is the image that you will generate if you use this"
+    },
+    {
+      "start": 149.53,
+      "end": 149.83,
+      "text": "confidential."
+    },
+    {
+      "start": 150.41,
+      "end": 155.5,
+      "text": "So, here, the image is almost the same as what we had except its complete opposite, so"
+    },
+    {
+      "start": 155.5,
+      "end": 159.46,
+      "text": "you still have your right ventricle at the very top, but you've got your left ventricle"
+    },
+    {
+      "start": 159.46,
+      "end": 159.96,
+      "text": "on the right hand."
+    },
+    {
+      "start": 160.0,
+      "end": 164.32,
+      "text": "side with the apex pointing towards the right. Your left atrium is going to be here, your"
+    },
+    {
+      "start": 164.32,
+      "end": 169.28,
+      "text": "aorta is going to be out here with aortic valve. You can't really see it that well here, but"
+    },
+    {
+      "start": 170.06,
+      "end": 172.34,
+      "text": "catch a glimpse of that mitral valve over here."
+    },
+    {
+      "start": 174.47,
+      "end": 178.47,
+      "text": "Okay, so that's the other convention that you will typically see."
+    },
+    {
+      "start": 180.0,
+      "end": 183.87,
+      "text": "And to put these kind of one on top of another image,"
+    },
+    {
+      "start": 184.01,
+      "end": 186.01,
+      "text": "it's almost identical except that it's"
+    },
+    {
+      "start": 186.01,
+      "end": 188.31,
+      "text": "the mirror opposite of the other one."
+    },
+    {
+      "start": 188.73,
+      "end": 189.97,
+      "text": "So for this convention, you"
+    },
+    {
+      "start": 190.0,
+      "end": 194.45,
+      "text": "screen markers on the left-hand side of the screen, you get an input to"
+    },
+    {
+      "start": 194.45,
+      "end": 199.21,
+      "text": "transducer marker towards the patient's right shoulder in order to obtain this"
+    },
+    {
+      "start": 199.21,
+      "end": 199.57,
+      "text": "You"
+    },
+    {
+      "start": 203.71,
+      "end": 209.55,
+      "text": "And really, either of these approaches are quite reasonable to this."
+    },
+    {
+      "start": 210.0,
+      "end": 214.12,
+      "text": "the screen marker, assuming it's on the left-hand side, assuming you don't have time to switch"
+    },
+    {
+      "start": 215.21,
+      "end": 219.97,
+      "text": "your screen marker, then your probe marker can either point to the patient's left tip, in which case you"
+    },
+    {
+      "start": 220.0,
+      "end": 224.02,
+      "text": "get an image fairy, similar to what you will see in a lot of cardiology textbooks."
+    },
+    {
+      "start": 224.46,
+      "end": 229.4,
+      "text": "Our alternative, uh, poorly acceptable way is to put the probe marker towards patients"
+    },
+    {
+      "start": 229.4,
+      "end": 229.94,
+      "text": "Right shot."
+    },
+    {
+      "start": 230.1,
+      "end": 232.98,
+      "text": "in that way you'll get a complete opposite image."
+    },
+    {
+      "start": 234.33,
+      "end": 239.7,
+      "text": "Confusing enough, how do you decide what you're going to choose?"
+    },
+    {
+      "start": 240.0,
+      "end": 241.82,
+      "text": "which conventions you're going to choose."
+    },
+    {
+      "start": 242.42,
+      "end": 247.36,
+      "text": "Well, one potential factor is what they measure you used to seeing"
+    },
+    {
+      "start": 247.36,
+      "end": 249.74,
+      "text": "and are your trainees used to seeing."
+    },
+    {
+      "start": 250.51,
+      "end": 259.98,
+      "text": "You know, if you're used to seeing this image, there may be argument for learning and teaching in this convention alternatively if you're"
+    },
+    {
+      "start": 260.0,
+      "end": 266.07,
+      "text": "used to interpreting in this way it may be easier for one to stick to a certain convention."
+    },
+    {
+      "start": 266.07,
+      "end": 269.78,
+      "text": "But again, it's, you know, recognizing that it's likely"
+    },
+    {
+      "start": 270.0,
+      "end": 271.72,
+      "text": "helpful to know both conventions."
+    },
+    {
+      "start": 272.84,
+      "end": 278.08,
+      "text": "A second factor I use is who do you typically talk to and communicate a lot within your"
+    },
+    {
+      "start": 278.08,
+      "end": 279.04,
+      "text": "institution?"
+    },
+    {
+      "start": 280.0,
+      "end": 281.82,
+      "text": "to communicate primarily with cardiologists"
+    },
+    {
+      "start": 281.82,
+      "end": 284.24,
+      "text": "versus emergency physicians and what conventions"
+    },
+    {
+      "start": 284.24,
+      "end": 285.28,
+      "text": "are they using?"
+    },
+    {
+      "start": 286.46,
+      "end": 289.46,
+      "text": "And secondly, are they able to flip their images?"
+    },
+    {
+      "start": 290.65,
+      "end": 294.63,
+      "text": "mentally if you show them something else is another fact that you may want to"
+    },
+    {
+      "start": 294.63,
+      "end": 299.66,
+      "text": "consider. And the last factor is do you do perform"
+    },
+    {
+      "start": 300.0,
+      "end": 305.81,
+      "text": "and if so, it may be quite, it may be more intuitive"
+    },
+    {
+      "start": 305.81,
+      "end": 308.35,
+      "text": "for a certain convention versus another."
+    },
+    {
+      "start": 308.95,
+      "end": 309.97,
+      "text": "So here, if you're..."
+    },
+    {
+      "start": 310.03,
+      "end": 314.93,
+      "text": "if you're doing a pericardial synthesis, for instance,"
+    },
+    {
+      "start": 315.13,
+      "end": 317.05,
+      "text": "does it make sense where you're standing"
+    },
+    {
+      "start": 317.05,
+      "end": 318.67,
+      "text": "in relation to the patient that you're looking"
+    },
+    {
+      "start": 318.67,
+      "end": 319.95,
+      "text": "from the patient's right?"
+    },
+    {
+      "start": 320.0,
+      "end": 326.01,
+      "text": "hand side this way and then you can recognize where your transducer marker is and where your"
+    },
+    {
+      "start": 326.01,
+      "end": 329.97,
+      "text": "needle tip is going to be coming from versus are you going to be standing on the other."
+    },
+    {
+      "start": 330.0,
+      "end": 332.75,
+      "text": "and where the needle's coming from."
+    },
+    {
+      "start": 334.18,
+      "end": 336.44,
+      "text": "So, and again, for those reasons,"
+    },
+    {
+      "start": 336.48,
+      "end": 339.97,
+      "text": "it's actually probably helpful to really be able to..."
+    },
+    {
+      "start": 340.0,
+      "end": 341.36,
+      "text": "to master both conventions."
+    },
+    {
+      "start": 342.18,
+      "end": 343.98,
+      "text": "I won't go into too much more details"
+    },
+    {
+      "start": 343.98,
+      "end": 348.2,
+      "text": "how we ended up in this situation here,"
+    },
+    {
+      "start": 348.72,
+      "end": 349.98,
+      "text": "but I'm gonna point you to..."
+    },
+    {
+      "start": 350.0,
+      "end": 354.2,
+      "text": "to an excellent article written by Dr. Chris Moore in 2008"
+    },
+    {
+      "start": 354.2,
+      "end": 356.62,
+      "text": "that kind of covers both the historical aspects"
+    },
+    {
+      "start": 356.62,
+      "end": 359.8,
+      "text": "and these conventions in greater detail."
+    },
+    {
+      "start": 360.42,
+      "end": 363.22,
+      "text": "in a highly recommend reading this article."
+    },
+    {
+      "start": 364.45,
+      "end": 367.17,
+      "text": "Lastly, in terms of, I've only really talked about"
+    },
+    {
+      "start": 367.17,
+      "end": 369.73,
+      "text": "parastonal long axis, which is the confusing."
+    },
+    {
+      "start": 370.13,
+      "end": 378.13,
+      "text": "convention wise. Once you have your para-sternal long axis however you did that, the good thing is that if you just by rotating"
+    },
+    {
+      "start": 380.03,
+      "end": 383.75,
+      "text": "just by rotating 90 degrees in a clockwise manner,"
+    },
+    {
+      "start": 383.93,
+      "end": 385.87,
+      "text": "you should be able to get your parastronal short axis."
+    },
+    {
+      "start": 386.43,
+      "end": 387.55,
+      "text": "In the other two conventions,"
+    },
+    {
+      "start": 387.99,
+      "end": 389.97,
+      "text": "sorry, the other two images in terms of..."
+    },
+    {
+      "start": 390.0,
+      "end": 396.2,
+      "text": "apical 4 and it's a costal that really are just two common conventions that you do need to know."
+    },
+    {
+      "start": 396.64,
+      "end": 399.86,
+      "text": "So, Parasturnal Long Access definitely is the confusing."
+    },
+    {
+      "start": 400.0,
+      "end": 409.98,
+      "text": "one. So this is my take on message. So if you're wanting this type of image where the apex is pointing to"
+    },
+    {
+      "start": 410.0,
+      "end": 415.48,
+      "text": "to left, then if your screen marker is on the right, then transducer marker to the patient's"
+    },
+    {
+      "start": 415.48,
+      "end": 415.98,
+      "text": "right shoulder."
+    },
+    {
+      "start": 416.6,
+      "end": 419.54,
+      "text": "If the screen marker is on the left, then point to the patient's left hip."
+    },
+    {
+      "start": 420.67,
+      "end": 427.0,
+      "text": "If on the other hand, you want to acquire an image with the apex pointing to the right,"
+    },
+    {
+      "start": 427.4,
+      "end": 429.58,
+      "text": "then your screen marker is typically on the left."
+    },
+    {
+      "start": 430.0,
+      "end": 431.2,
+      "text": "and you will be pointing to,"
+    },
+    {
+      "start": 431.58,
+      "end": 434.5,
+      "text": "and do some marker to the patient's right shoulder."
+    },
+    {
+      "start": 435.69,
+      "end": 436.71,
+      "text": "Again, thanks for tuning in."
+    },
+    {
+      "start": 436.87,
+      "end": 439.97,
+      "text": "This is our home website for many of our..."
+    }
+  ]
+}

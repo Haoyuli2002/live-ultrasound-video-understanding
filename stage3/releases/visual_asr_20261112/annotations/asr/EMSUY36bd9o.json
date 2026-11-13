@@ -1,0 +1,193 @@
+{
+  "video_id": "EMSUY36bd9o",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/EMSUY36bd9o/asr.txt",
+  "segments": [
+    {
+      "start": 0.19,
+      "end": 3.21,
+      "text": "Alright, so we're going to do an ultrasound guided super scapular nerve injection."
+    },
+    {
+      "start": 3.43,
+      "end": 6.15,
+      "text": "The first important thing is to expose the right area here."
+    },
+    {
+      "start": 6.41,
+      "end": 9.97,
+      "text": "So, the main landmark here is you're going to feel for the scapular spine as you..."
+    },
+    {
+      "start": 10.0,
+      "end": 12.18,
+      "text": "usually really evident with digital palpation."
+    },
+    {
+      "start": 12.42,
+      "end": 14.48,
+      "text": "Usually just have my alcohol pad ready here,"
+    },
+    {
+      "start": 14.620000000000001,
+      "end": 15.52,
+      "text": "just on the skin."
+    },
+    {
+      "start": 15.940000000000001,
+      "end": 17.18,
+      "text": "So we go over here to the screen."
+    },
+    {
+      "start": 17.36,
+      "end": 18.92,
+      "text": "The main things we're going to be looking at here,"
+    },
+    {
+      "start": 20.0,
+      "end": 27.34,
+      "text": "We want to bring our frequency down."
+    },
+    {
+      "start": 27.54,
+      "end": 29.119999999999997,
+      "text": "Usually my machine goes down to eight."
+    },
+    {
+      "start": 29.880000000000003,
+      "end": 29.98,
+      "text": "So that's..."
+    },
+    {
+      "start": 30.0,
+      "end": 33.68,
+      "text": "better for deeper structures and we also just want to make sure that we can see"
+    },
+    {
+      "start": 33.68,
+      "end": 38.46,
+      "text": "the bone of the scapula. Usually on most patients I'm about four maybe a little"
+    },
+    {
+      "start": 38.46,
+      "end": 39.94,
+      "text": "bit deeper than that so I'm gonna"
+    },
+    {
+      "start": 40.06,
+      "end": 44.28,
+      "text": "kind of drive to the right region. If you show right here with a transducer, you want"
+    },
+    {
+      "start": 44.28,
+      "end": 49.2,
+      "text": "that transducer to be parallel to the scapular spine, and you want to kind of drive out, so"
+    },
+    {
+      "start": 49.2,
+      "end": 49.92,
+      "text": "to be looked back at this."
+    },
+    {
+      "start": 50.06,
+      "end": 57.37,
+      "text": "over there. What we're looking for is this area right here, I'm going to freeze it, and you are"
+    },
+    {
+      "start": 57.37,
+      "end": 59.97,
+      "text": "going to see the cortex of the sca-"
+    },
+    {
+      "start": 60.0,
+      "end": 62.38,
+      "text": "It's going to be a little ski slope here, right?"
+    },
+    {
+      "start": 62.76,
+      "end": 65.04,
+      "text": "Usually right here where the biggest dip is"
+    },
+    {
+      "start": 65.04,
+      "end": 67.61,
+      "text": "you're going to see the ligament crossing right there."
+    },
+    {
+      "start": 67.75,
+      "end": 69.97,
+      "text": "So we know that the nerve runs under that ligament right there."
+    },
+    {
+      "start": 70.0,
+      "end": 75.66,
+      "text": "So that's the landmark you're looking for you need to be able to see that to do the injection the needle here"
+    },
+    {
+      "start": 75.66,
+      "end": 79.86,
+      "text": "We're going to be using is going to come in right down here to put all of the steroid rider"
+    },
+    {
+      "start": 80.0,
+      "end": 89.84,
+      "text": "around that super scapular nerve so we'll go back live here so I like"
+    },
+    {
+      "start": 90.0,
+      "end": 96.42,
+      "text": "to use a 22 gauge spinal needle just a little bit more stout because it is a slightly deeper"
+    },
+    {
+      "start": 96.42,
+      "end": 96.94,
+      "text": "structure."
+    },
+    {
+      "start": 97.82,
+      "end": 99.84,
+      "text": "You do want to use spinal needle."
+    },
+    {
+      "start": 102.56,
+      "end": 108.62,
+      "text": "Usually I bring the little ski slope dip there just to one side of the screen."
+    },
+    {
+      "start": 110.26,
+      "end": 114.82,
+      "text": "the skin and I am going to use an in-plane technique so my needle is actually going to come in"
+    },
+    {
+      "start": 114.82,
+      "end": 119.15,
+      "text": "and co-planar with the ultrasound."
+    },
+    {
+      "start": 120.03,
+      "end": 123.29,
+      "text": "I get you might feel a little pinch back here, okay?"
+    },
+    {
+      "start": 124.11,
+      "end": 128.46,
+      "text": "Take care."
+    },
+    {
+      "start": 130.96,
+      "end": 132.82,
+      "text": "All right, that's the worst part, just the..."
+    },
+    {
+      "start": 141.69,
+      "end": 145.69,
+      "text": "and you'll see the medicine kind of inflate in the area."
+    },
+    {
+      "start": 165.15,
+      "end": 167.24,
+      "text": "I'll do it, it's all out, I'll do it, it's all out"
+    }
+  ]
+}

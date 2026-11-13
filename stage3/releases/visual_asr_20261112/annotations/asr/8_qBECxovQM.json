@@ -1,0 +1,4633 @@
+{
+  "video_id": "8_qBECxovQM",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/eval/8_qBECxovQM/asr.txt",
+  "segments": [
+    {
+      "start": 60.19,
+      "end": 65.49,
+      "text": "Today I want to share with you a standard to the echocardiography exam."
+    },
+    {
+      "start": 65.91,
+      "end": 69.93,
+      "text": "I will try to show you what to focus at."
+    },
+    {
+      "start": 70.0,
+      "end": 78.34,
+      "text": "how to interpret the single planes of use and how to do the basic measurements."
+    },
+    {
+      "start": 78.34,
+      "end": 79.96,
+      "text": "we will explain"
+    },
+    {
+      "start": 80.0,
+      "end": 88.48,
+      "text": "Sam, a 50-year-old healthy female, she's an active long distance runner, has no obvious"
+    },
+    {
+      "start": 88.48,
+      "end": 89.98,
+      "text": "signs of"
+    },
+    {
+      "start": 90.0,
+      "end": 95.08,
+      "text": "heart failure or similar, but she's complaining of some"
+    },
+    {
+      "start": 95.08,
+      "end": 99.92,
+      "text": "interpretations mainly at rest for this purpose."
+    },
+    {
+      "start": 100.0,
+      "end": 108.06,
+      "text": "I recorded the Examinal Anonymized Fashion. I will show you the analysis on the GE"
+    },
+    {
+      "start": 108.06,
+      "end": 109.98,
+      "text": "the echo pack software only will"
+    },
+    {
+      "start": 110.0,
+      "end": 116.08,
+      "text": "version which you see here on this platform here this is a recording that we"
+    },
+    {
+      "start": 116.08,
+      "end": 119.84,
+      "text": "will look at when I open it you see first"
+    },
+    {
+      "start": 120.1,
+      "end": 129.06,
+      "text": "And some demographics of our demo patient I have entered height and weight of the patient"
+    },
+    {
+      "start": 129.06,
+      "end": 129.88,
+      "text": "and we have all"
+    },
+    {
+      "start": 130.0,
+      "end": 136.8,
+      "text": "measures blood pressure. On the right side you see the single recorded views and I"
+    },
+    {
+      "start": 136.8,
+      "end": 139.66,
+      "text": "would start with the first clip here."
+    },
+    {
+      "start": 140.26,
+      "end": 143.12,
+      "text": "which is the peristone long axis view."
+    },
+    {
+      "start": 144.11,
+      "end": 148.81,
+      "text": "Now please notice that we have recorded several heartbeats in a row"
+    },
+    {
+      "start": 148.81,
+      "end": 149.97,
+      "text": "so not only one..."
+    },
+    {
+      "start": 150.0,
+      "end": 159.87,
+      "text": "you might also record only one good heartbeat this longer cycle here starts with"
+    },
+    {
+      "start": 160.0,
+      "end": 165.48,
+      "text": "ventricular premature beat with an extra sisterly and I can tell you in this"
+    },
+    {
+      "start": 165.48,
+      "end": 169.9,
+      "text": "woman on the ECG this looked like outflow"
+    },
+    {
+      "start": 170.1,
+      "end": 176.34,
+      "text": "extract exorcistly which is a common benign variant of ventricular premature beats."
+    },
+    {
+      "start": 176.62,
+      "end": 179.96,
+      "text": "Now, for the analysis, I will follow..."
+    },
+    {
+      "start": 180.0,
+      "end": 189.5,
+      "text": "focus on the last cycle and this can be just fixed here in the synalook menu."
+    },
+    {
+      "start": 190.22,
+      "end": 197.08,
+      "text": "We'll click on the last cycle and now we will we will only see the last cycle of this recording"
+    },
+    {
+      "start": 197.08,
+      "end": 199.97,
+      "text": "We will also do this in some of the"
+    },
+    {
+      "start": 200.0,
+      "end": 208.12,
+      "text": "following clips. Now what you see here is a very nice and good view on a good"
+    },
+    {
+      "start": 208.12,
+      "end": 209.98,
+      "text": "and peristone along x's du-"
+    },
+    {
+      "start": 210.03,
+      "end": 215.99,
+      "text": "of the left ventricle. We have a good echo quality. We can clearly distinct,"
+    },
+    {
+      "start": 216.91,
+      "end": 219.83,
+      "text": "dearly identify the different cardinal."
+    },
+    {
+      "start": 220.35,
+      "end": 228.15,
+      "text": "Chambers love ventricle. Here a part of the right ventricle, actually that's typically a part of the right ventricle"
+    },
+    {
+      "start": 228.15,
+      "end": 229.61,
+      "text": "Now I'll subtract in between"
+    },
+    {
+      "start": 230.54,
+      "end": 239.58,
+      "text": "The interior septum was a basal and a mid segment, the apical segments"
+    },
+    {
+      "start": 240.0,
+      "end": 248.52,
+      "text": "not seen here in this image, but actually in the personal long access image, we really don't have"
+    },
+    {
+      "start": 248.52,
+      "end": 249.6,
+      "text": "to see the apex."
+    },
+    {
+      "start": 250.51,
+      "end": 257.81,
+      "text": "the mitral leaflet should be in the middle of this plane with the anterior mitral leaflet and the"
+    },
+    {
+      "start": 257.81,
+      "end": 259.89,
+      "text": "posterior mitral leaflet and then"
+    },
+    {
+      "start": 260.22,
+      "end": 268.37,
+      "text": "This is obviously the left atrium, which can be measured here in an anterior posterior direction."
+    },
+    {
+      "start": 270.0,
+      "end": 278.88,
+      "text": "the left interglow flow tract, please note the anatomy that one part, the anterior part of the"
+    },
+    {
+      "start": 278.88,
+      "end": 279.54,
+      "text": "the left and two clouds."
+    },
+    {
+      "start": 279.66,
+      "end": 279.98,
+      "text": "So..."
+    },
+    {
+      "start": 280.0,
+      "end": 286.26,
+      "text": "is the interventricular septum, but suppose your part is built by the anterior"
+    },
+    {
+      "start": 286.26,
+      "end": 289.82,
+      "text": "mitral leaflet. So the anterior mitral leaflet is a part"
+    },
+    {
+      "start": 291.48,
+      "end": 299.61,
+      "text": "and it's directly attaches or ends at the level of the aortic cusp."
+    },
+    {
+      "start": 300.0,
+      "end": 309.9,
+      "text": "here. This is the aortic valve with two cusps visible and then we see a little part, a little bit of"
+    },
+    {
+      "start": 310.0,
+      "end": 317.75,
+      "text": "ascending aorta. Now this is the anterior septum and the wall here is now a"
+    },
+    {
+      "start": 317.75,
+      "end": 319.29,
+      "text": "today's call to the info."
+    },
+    {
+      "start": 320.06,
+      "end": 326.48,
+      "text": "wall again with a basal and a mid segment and the apical segment not really visible"
+    },
+    {
+      "start": 326.48,
+      "end": 329.96,
+      "text": "here in this recording. So the inferrer"
+    },
+    {
+      "start": 330.06,
+      "end": 337.83,
+      "text": "lateral wall. Formerly we used to call this the posterior wall. Behind that there is a strong"
+    },
+    {
+      "start": 338.51,
+      "end": 339.81,
+      "text": "reflex, strong"
+    },
+    {
+      "start": 340.03,
+      "end": 347.81,
+      "text": "ultrasound reflex. This is the pericardium and you might notice that during"
+    },
+    {
+      "start": 347.81,
+      "end": 349.97,
+      "text": "being sisterly, there are people."
+    },
+    {
+      "start": 350.0,
+      "end": 357.79,
+      "text": "is small cavity here behind which is actually part of the pericardium and"
+    },
+    {
+      "start": 357.79,
+      "end": 359.98,
+      "text": "there is this very very little bit of"
+    },
+    {
+      "start": 360.0,
+      "end": 366.54,
+      "text": "physiologic pericardial fluid here which again is only visible here in"
+    },
+    {
+      "start": 366.54,
+      "end": 367.74,
+      "text": "and sisterly."
+    },
+    {
+      "start": 369.04,
+      "end": 369.98,
+      "text": "Now be"
+    },
+    {
+      "start": 370.0,
+      "end": 375.32,
+      "text": "behind the left atrium you always should also look what is what are the structures"
+    },
+    {
+      "start": 375.32,
+      "end": 379.9,
+      "text": "behind the left atrium and you might see here not very"
+    },
+    {
+      "start": 380.0,
+      "end": 386.59,
+      "text": "around a collusion structure. Actually this is part part of the descending"
+    },
+    {
+      "start": 386.59,
+      "end": 389.96,
+      "text": "in the outer. There should be only one."
+    },
+    {
+      "start": 390.0,
+      "end": 398.17,
+      "text": "on a auto visible here, sometimes you see another quite large appearing."
+    },
+    {
+      "start": 400.61,
+      "end": 407.11,
+      "text": "structure which looks like a vessel here in between the left atrium and the left"
+    },
+    {
+      "start": 407.11,
+      "end": 409.97,
+      "text": "of the cavity that can be all in line."
+    },
+    {
+      "start": 410.0,
+      "end": 417.68,
+      "text": "coronary sinus, but that is a special pathology, so there should be only the descending"
+    },
+    {
+      "start": 417.68,
+      "end": 419.04,
+      "text": "a auto-visible here."
+    },
+    {
+      "start": 420.58,
+      "end": 429.8,
+      "text": "And if you do parasitonal recordings, always make sure that there are also some one or two centimeters behind."
+    },
+    {
+      "start": 430.0,
+      "end": 436.6,
+      "text": "the left ventricle within the image. Now this was 15 centimeters depth. I could have"
+    },
+    {
+      "start": 436.6,
+      "end": 439.98,
+      "text": "reduced that may be a little bit to..."
+    },
+    {
+      "start": 440.13,
+      "end": 447.05,
+      "text": "13 or even 12 centimeters, but there should be a little bit more space visible so that you"
+    },
+    {
+      "start": 447.05,
+      "end": 449.77,
+      "text": "see and can identify pathologies here."
+    },
+    {
+      "start": 451.38,
+      "end": 458.78,
+      "text": "Now when we want to do the measurements, we will stop the image."
+    },
+    {
+      "start": 460.03,
+      "end": 469.97,
+      "text": "And then we do the measurements, typically the diameters of the left ventricle and left atrium in and dias."
+    },
+    {
+      "start": 470.0,
+      "end": 478.29,
+      "text": "and and sisterly. So the first question that comes up is how to define and sisterly and and"
+    },
+    {
+      "start": 478.29,
+      "end": 479.37,
+      "text": "diastole in"
+    },
+    {
+      "start": 480.38,
+      "end": 489.19,
+      "text": "this clip here. Now we have the CG down here and you see what's the red dot."
+    },
+    {
+      "start": 490.03,
+      "end": 499.88,
+      "text": "the current image. So this is what you currently see here. You also see how the system has triggered the ECG."
+    },
+    {
+      "start": 500.48,
+      "end": 509.7,
+      "text": "Here it's a maximum QS with, it starts and it ends at the same time, so there is a quite good and reliable"
+    },
+    {
+      "start": 510.1,
+      "end": 519.96,
+      "text": "trigger here. And biesterly, as you may know, can be well defined by the QS complex, so that's it."
+    },
+    {
+      "start": 520.1,
+      "end": 526.63,
+      "text": "of the QRS complex or sometimes depending on the width of the QRS complex that's"
+    },
+    {
+      "start": 526.63,
+      "end": 529.03,
+      "text": "beginning at the onset of the QRS width."
+    },
+    {
+      "start": 530.13,
+      "end": 533.53,
+      "text": "This is what we define typically as ant-diastily."
+    },
+    {
+      "start": 535.79,
+      "end": 539.97,
+      "text": "Another way to identify ant-diastily is to look at the value."
+    },
+    {
+      "start": 540.0,
+      "end": 544.52,
+      "text": "And that is actually the preferred way in aqua geography."
+    },
+    {
+      "start": 545.61,
+      "end": 548.23,
+      "text": "So here we have some mitral valve completely open."
+    },
+    {
+      "start": 548.77,
+      "end": 549.75,
+      "text": "I can also go"
+    },
+    {
+      "start": 550.16,
+      "end": 556.58,
+      "text": "through this clip frame by frame on the right hand side. I can use these arrows here and if I go"
+    },
+    {
+      "start": 556.58,
+      "end": 559.82,
+      "text": "So back in the direction of the p-wave."
+    },
+    {
+      "start": 560.77,
+      "end": 565.3,
+      "text": "You see here that the mitre valve is a little bit closed not completely."
+    },
+    {
+      "start": 565.94,
+      "end": 569.28,
+      "text": "This is obviously the P-welfth and was atrial contraction."
+    },
+    {
+      "start": 570.0,
+      "end": 573.86,
+      "text": "There is a second opening of Sumitra Valve,"
+    },
+    {
+      "start": 574.5,
+      "end": 577.48,
+      "text": "and then if I continue frame by frame it is open"
+    },
+    {
+      "start": 577.48,
+      "end": 579.98,
+      "text": "and it's the time of the QRS, it'd be..."
+    },
+    {
+      "start": 580.0,
+      "end": 589.55,
+      "text": "to close. So now it's starting to close. And anti-astole is the single frame"
+    },
+    {
+      "start": 590.26,
+      "end": 595.24,
+      "text": "where the mitre valve has maximal opening"
+    },
+    {
+      "start": 595.69,
+      "end": 598.44,
+      "text": "and before it starts to close."
+    },
+    {
+      "start": 600.29,
+      "end": 607.68,
+      "text": "The closure of the Maitrevet is already the start of the pressure built up in the Lafantricle"
+    },
+    {
+      "start": 608.0,
+      "end": 609.46,
+      "text": "and is a part of sisterly."
+    },
+    {
+      "start": 610.0,
+      "end": 617.42,
+      "text": "So I would define this as the end-toastolic image and this corresponds well to a frame very"
+    },
+    {
+      "start": 617.42,
+      "end": 618.82,
+      "text": "early in the QRS."
+    },
+    {
+      "start": 620.06,
+      "end": 629.98,
+      "text": "However, I start my measurements in the left atrium, and for the left atrium we need the maximum diameter and then..."
+    },
+    {
+      "start": 630.0,
+      "end": 636.56,
+      "text": "that is during left ventricular systole, which corresponds to atro diastole, so the maximum"
+    },
+    {
+      "start": 636.56,
+      "end": 637.5,
+      "text": "atro filling."
+    },
+    {
+      "start": 638.33,
+      "end": 639.79,
+      "text": "But that purpose, I continued."
+    },
+    {
+      "start": 640.03,
+      "end": 649.25,
+      "text": "to go frame by frame, to the right side in the cycle, so later in the cycle, and now I have to define"
+    },
+    {
+      "start": 650.19,
+      "end": 659.6,
+      "text": "and systole. Some say, and systole is the end of the t-wave. Now this is generally usually true"
+    },
+    {
+      "start": 660.29,
+      "end": 668.95,
+      "text": "but and systole cannot be reliably identified by the T-Wave or by any ECG criterion."
+    },
+    {
+      "start": 669.75,
+      "end": 669.89,
+      "text": "The best."
+    },
+    {
+      "start": 670.06,
+      "end": 673.76,
+      "text": "way to identify and sisterly is again to look at the valves."
+    },
+    {
+      "start": 674.14,
+      "end": 679.52,
+      "text": "And now, here, during left ventricar contraction, obviously the mitral valve is closed."
+    },
+    {
+      "start": 680.26,
+      "end": 684.18,
+      "text": "and the left ventricular is ejecting blood into the order."
+    },
+    {
+      "start": 685.34,
+      "end": 689.07,
+      "text": "If you go on frame by frame, you will notice"
+    },
+    {
+      "start": 691.47,
+      "end": 698.98,
+      "text": "that at some time, here now the erotic valve, I go back."
+    },
+    {
+      "start": 700.0,
+      "end": 709.72,
+      "text": "open and it's closing and now the mitre valve starts to open. So a good, a good"
+    },
+    {
+      "start": 710.0,
+      "end": 719.84,
+      "text": "definition of an sisterly is the frame before the mitre valve starts to open. And it is it."
+    },
+    {
+      "start": 720.03,
+      "end": 726.39,
+      "text": "This is just briefly after the overtake valve starts to close, so the last frame before the"
+    },
+    {
+      "start": 726.39,
+      "end": 729.91,
+      "text": "My trover of opens is insisted for the"
+    },
+    {
+      "start": 730.0,
+      "end": 739.86,
+      "text": "Measurement, we go to the measure menu on the right side here and normally the measure menu starts here with a"
+    },
+    {
+      "start": 740.0,
+      "end": 745.98,
+      "text": "generic measurements where you can use a caliper just to do an undefined measurement but"
+    },
+    {
+      "start": 745.98,
+      "end": 749.8,
+      "text": "then you have you have not told the system."
+    },
+    {
+      "start": 750.45,
+      "end": 755.53,
+      "text": "that this is a Lafaytium. So, it's better to go to a dedicated measurement and this can"
+    },
+    {
+      "start": 755.53,
+      "end": 759.97,
+      "text": "be found here in dimension, under dimensions. And here we have..."
+    },
+    {
+      "start": 760.96,
+      "end": 766.13,
+      "text": "left atro diameters, so we would activate. Now we measure the diameters of"
+    },
+    {
+      "start": 766.13,
+      "end": 769.69,
+      "text": "Parastonal diameter also left end, atrium in the anterior"
+    },
+    {
+      "start": 770.0,
+      "end": 778.08,
+      "text": "posterior direction, formally we always did this by the emote nowadays we often"
+    },
+    {
+      "start": 778.08,
+      "end": 779.72,
+      "text": "and you see 2D image"
+    },
+    {
+      "start": 780.1,
+      "end": 788.08,
+      "text": "for the measurements and he should try to imagine a line kind of ammo line which is going"
+    },
+    {
+      "start": 788.08,
+      "end": 789.98,
+      "text": "through the left ventricle."
+    },
+    {
+      "start": 790.0,
+      "end": 794.74,
+      "text": "full track and through the left atron. So I would measure here from the"
+    },
+    {
+      "start": 795.16,
+      "end": 799.98,
+      "text": "anterior wall and actually I go on the edge. I'm not"
+    },
+    {
+      "start": 800.03,
+      "end": 806.39,
+      "text": "doing a leading edge or trailing edge, I'm going and I'm doing edge-to-edge measurements"
+    },
+    {
+      "start": 806.75,
+      "end": 808.81,
+      "text": "of the anterior wall too."
+    },
+    {
+      "start": 810.03,
+      "end": 816.14,
+      "text": "the posterior wall of the left atrium."
+    },
+    {
+      "start": 816.68,
+      "end": 819.98,
+      "text": "And this gives me a diameter of three-"
+    },
+    {
+      "start": 820.0,
+      "end": 829.57,
+      "text": "0.7 centimeters, 37 millimeters, which is within the normal range, which should be below 38 to 40 millimeters."
+    },
+    {
+      "start": 830.1,
+      "end": 834.92,
+      "text": "depending on the agent's size of your patient."
+    },
+    {
+      "start": 837.29,
+      "end": 839.88,
+      "text": "So this was the first measure."
+    },
+    {
+      "start": 840.92,
+      "end": 849.71,
+      "text": "for the left atrium. Now the second measurement is done for the left ventricle and this"
+    },
+    {
+      "start": 850.0,
+      "end": 859.11,
+      "text": "not in and diastole and systole but in and diastole. So we would have to go back to an"
+    },
+    {
+      "start": 859.11,
+      "end": 859.85,
+      "text": "And then die story."
+    },
+    {
+      "start": 860.0,
+      "end": 868.37,
+      "text": "frame. The mitre valve is open. I just check here briefly now it closes so I go back to the last frame"
+    },
+    {
+      "start": 868.37,
+      "end": 869.51,
+      "text": "It was a much of a..."
+    },
+    {
+      "start": 870.13,
+      "end": 877.88,
+      "text": "is open. And here we want to measure the left ventricular diameter from the"
+    },
+    {
+      "start": 877.88,
+      "end": 879.9,
+      "text": "enter a septum to the info"
+    },
+    {
+      "start": 880.0,
+      "end": 887.36,
+      "text": "lateral wall we also would like to measure the thickness of these walls and this is measured"
+    },
+    {
+      "start": 887.36,
+      "end": 889.15,
+      "text": "in a perpendicular"
+    },
+    {
+      "start": 890.74,
+      "end": 896.48,
+      "text": "direction on a line perpendicular to the long axis of the left ventricle."
+    },
+    {
+      "start": 896.66,
+      "end": 899.82,
+      "text": "So the long axis is from the left atrium through the wall to the"
+    },
+    {
+      "start": 900.35,
+      "end": 909.12,
+      "text": "virtual apex which is not clearly seen here that's a long axis and in a perpendicular direction we measure the"
+    },
+    {
+      "start": 910.06,
+      "end": 918.34,
+      "text": "of the left ventricle. I also do this nowadays almost always in a 2d image you might use the"
+    },
+    {
+      "start": 918.34,
+      "end": 919.92,
+      "text": "remote, but there are some pit"
+    },
+    {
+      "start": 920.1,
+      "end": 926.7,
+      "text": "for the remote and this is typically that it is quite difficult to have the"
+    },
+    {
+      "start": 926.7,
+      "end": 929.86,
+      "text": "a mode line in a real good perpendicular direction."
+    },
+    {
+      "start": 930.8,
+      "end": 938.05,
+      "text": "In this view, I will again go to measure and we have here the measurements for the"
+    },
+    {
+      "start": 938.05,
+      "end": 939.39,
+      "text": "interventricular septum."
+    },
+    {
+      "start": 940.0,
+      "end": 946.8,
+      "text": "I could do this in an automated fashion using the Artificial Intelligence of this system,"
+    },
+    {
+      "start": 947.14,
+      "end": 949.98,
+      "text": "but for the purpose here of this video, I..."
+    },
+    {
+      "start": 950.0,
+      "end": 956.03,
+      "text": "deactivated the auto measurements and I will do this manually. So this is the first"
+    },
+    {
+      "start": 956.03,
+      "end": 959.49,
+      "text": "measurement for the intermetrygler septum in a diastolic"
+    },
+    {
+      "start": 960.0,
+      "end": 967.84,
+      "text": "the diastolic image that's what the D stands for and as you will see when I finish the first measurement"
+    },
+    {
+      "start": 970.03,
+      "end": 976.57,
+      "text": "automatically moves to the next measurement here so that we can do this in a systematic fashion."
+    },
+    {
+      "start": 977.54,
+      "end": 979.64,
+      "text": "So again, I'm doing typically"
+    },
+    {
+      "start": 980.0,
+      "end": 984.68,
+      "text": "edge to edge measurements. This is here the interventricular"
+    },
+    {
+      "start": 984.68,
+      "end": 989.66,
+      "text": "a septum, and then we have moved to the left ventricular internal dimension."
+    },
+    {
+      "start": 990.8,
+      "end": 999.67,
+      "text": "the end diastolic internal dimension and we will stay here just below when we view from"
+    },
+    {
+      "start": 1000.0,
+      "end": 1005.71,
+      "text": "just below the tips of the mitral leaflet are again starting here from the"
+    },
+    {
+      "start": 1005.71,
+      "end": 1009.66,
+      "text": "edge to the edge of the left ventricle."
+    },
+    {
+      "start": 1010.45,
+      "end": 1019.98,
+      "text": "That gives us a diameter of the septum of less than 1 cm, so there's clearly..."
+    },
+    {
+      "start": 1020.19,
+      "end": 1029.85,
+      "text": "no hypertrophy, and we have a left and two-glare internal dimension of 5 cm or 50 mm, which"
+    },
+    {
+      "start": 1030.0,
+      "end": 1038.1,
+      "text": "is also within the normal range for this woman which is the 173 cm tall."
+    },
+    {
+      "start": 1039.25,
+      "end": 1039.97,
+      "text": "Now..."
+    },
+    {
+      "start": 1040.86,
+      "end": 1045.3,
+      "text": "We are also measuring the thickness of the infrared lateral wall,"
+    },
+    {
+      "start": 1045.64,
+      "end": 1049.34,
+      "text": "formally the posterior wall, as I learned it."
+    },
+    {
+      "start": 1050.29,
+      "end": 1055.97,
+      "text": "in my early training year, this also shows no sign of hypertrophy."
+    },
+    {
+      "start": 1056.94,
+      "end": 1058.14,
+      "text": "And you already see another"
+    },
+    {
+      "start": 1059.24,
+      "end": 1059.94,
+      "text": "calculate"
+    },
+    {
+      "start": 1060.0,
+      "end": 1069.09,
+      "text": "value, which is an ant-diastolic volume, calculated to 118 milliliters."
+    },
+    {
+      "start": 1070.0,
+      "end": 1079.97,
+      "text": "This is calculated only from these first measurements here according to..."
+    },
+    {
+      "start": 1080.0,
+      "end": 1087.46,
+      "text": "a formula which has been derived from emote measurements in the 70s. This is a"
+    },
+    {
+      "start": 1087.46,
+      "end": 1088.56,
+      "text": "The Teichwaltz Formula."
+    },
+    {
+      "start": 1089.38,
+      "end": 1089.98,
+      "text": "A please no..."
+    },
+    {
+      "start": 1090.0,
+      "end": 1093.86,
+      "text": "Note that this value actually is a rough estimate."
+    },
+    {
+      "start": 1093.98,
+      "end": 1099.81,
+      "text": "It can be used if you are Reddit, if you are sure that there is no other"
+    },
+    {
+      "start": 1100.0,
+      "end": 1105.48,
+      "text": "astrology was in the ventricle, that is, that's a ventricle has no regional wall motion"
+    },
+    {
+      "start": 1105.48,
+      "end": 1109.98,
+      "text": "abnormalities, but it's a very rough estimation, and it's..."
+    },
+    {
+      "start": 1110.0,
+      "end": 1119.91,
+      "text": "It has to be checked. It is just based on a formula which has been derived from a sample."
+    },
+    {
+      "start": 1120.06,
+      "end": 1128.46,
+      "text": "of patients and this is not what we use today as a standard for that we would use a two-dimensional"
+    },
+    {
+      "start": 1128.46,
+      "end": 1129.96,
+      "text": "and some measurement, or maybe..."
+    },
+    {
+      "start": 1130.48,
+      "end": 1138.44,
+      "text": "3D echo. Now the next thing we have to measure, we have to do the same measurements in"
+    },
+    {
+      "start": 1138.44,
+      "end": 1139.88,
+      "text": "and then sisterly and then"
+    },
+    {
+      "start": 1143.01,
+      "end": 1149.93,
+      "text": "and for that purpose so we now have to move on in the fray in the cycle again as we"
+    },
+    {
+      "start": 1150.0,
+      "end": 1157.69,
+      "text": "it before looking at the mitre valve, valve is closed, closed, closed, and this is still"
+    },
+    {
+      "start": 1157.69,
+      "end": 1159.92,
+      "text": "sisterly here the"
+    },
+    {
+      "start": 1160.0,
+      "end": 1168.79,
+      "text": "my chavav is opening so I go back and the last frame before the my chavav opens is"
+    },
+    {
+      "start": 1168.79,
+      "end": 1169.57,
+      "text": "and sisterly."
+    },
+    {
+      "start": 1170.29,
+      "end": 1178.37,
+      "text": "Now here we now measure the interventricular septum internal diameter and the infrolateral wall during"
+    },
+    {
+      "start": 1180.19,
+      "end": 1184.74,
+      "text": "maximum contraction. Again here, now the"
+    },
+    {
+      "start": 1184.74,
+      "end": 1188.07,
+      "text": "interventricular septum, the internal diameter."
+    },
+    {
+      "start": 1188.63,
+      "end": 1189.75,
+      "text": "Please note on the right."
+    },
+    {
+      "start": 1190.03,
+      "end": 1199.96,
+      "text": "how the menu is advancing automatically and now the posterior wall and when we"
+    },
+    {
+      "start": 1200.0,
+      "end": 1207.86,
+      "text": "We have added these values, as you can see, you now get a lot of calculated values also"
+    },
+    {
+      "start": 1207.86,
+      "end": 1209.98,
+      "text": "So for the Ancest..."
+    },
+    {
+      "start": 1210.03,
+      "end": 1215.03,
+      "text": "volume according to the tie holds formula and for left ventricular mass."
+    },
+    {
+      "start": 1216.04,
+      "end": 1219.85,
+      "text": "Left ventricular mass is also"
+    },
+    {
+      "start": 1220.0,
+      "end": 1229.6,
+      "text": "here as I have entered eight and weight of our sample patient is also calculated to the"
+    },
+    {
+      "start": 1229.6,
+      "end": 1229.84,
+      "text": "bodies."
+    },
+    {
+      "start": 1230.0,
+      "end": 1235.32,
+      "text": "surface area and there are different formulas which are used here."
+    },
+    {
+      "start": 1235.32,
+      "end": 1239.98,
+      "text": "Now, again, this is Mars 11..."
+    },
+    {
+      "start": 1240.0,
+      "end": 1247.62,
+      "text": "only based on a one-dimensional measurement, and this may not represent the true"
+    },
+    {
+      "start": 1247.62,
+      "end": 1249.98,
+      "text": "left and check the mask if it's a vanshik."
+    },
+    {
+      "start": 1250.03,
+      "end": 1256.39,
+      "text": "is not symmetric, but for some purposes, particularly if you study patients with high"
+    },
+    {
+      "start": 1256.39,
+      "end": 1259.85,
+      "text": "potential, who have no reach of all motion abnormalities."
+    },
+    {
+      "start": 1260.0,
+      "end": 1268.4,
+      "text": "and a symmetrically shaped ventricle, or for some larger studies, population-based studies,"
+    },
+    {
+      "start": 1268.9,
+      "end": 1269.94,
+      "text": "this can be well used."
+    },
+    {
+      "start": 1270.0,
+      "end": 1279.97,
+      "text": "to get an estimate on left ventricular mass. But be careful, it's a one-dimensional measurement and you have no information what is happening for example."
+    },
+    {
+      "start": 1280.1,
+      "end": 1286.33,
+      "text": "at the apex here. Now these, these are our standard measurements. This is now"
+    },
+    {
+      "start": 1286.33,
+      "end": 1289.97,
+      "text": "and sisterly, and you may also, if you want,"
+    },
+    {
+      "start": 1290.0,
+      "end": 1299.05,
+      "text": "to do further calculations, for example later for the erotic valve, you may also, in some patients,"
+    },
+    {
+      "start": 1299.05,
+      "end": 1299.79,
+      "text": "not in everyone"
+    },
+    {
+      "start": 1300.0,
+      "end": 1303.78,
+      "text": "but in some patients who might be interested in the diameter of the left ventric"
+    },
+    {
+      "start": 1303.78,
+      "end": 1309.88,
+      "text": "loutful tract, which is here below theortic valve, and"
+    },
+    {
+      "start": 1310.0,
+      "end": 1316.87,
+      "text": "This again is measured in its largest diameter, which is typically and"
+    },
+    {
+      "start": 1317.12,
+      "end": 1319.98,
+      "text": "and sisterly in an inter-"
+    },
+    {
+      "start": 1320.0,
+      "end": 1325.69,
+      "text": "posterior direction, formally I was trained to measure the left ventricular"
+    },
+    {
+      "start": 1325.69,
+      "end": 1329.97,
+      "text": "out for tracks while we set one centimeter below the ortec"
+    },
+    {
+      "start": 1330.0,
+      "end": 1339.48,
+      "text": "So I would have measured here, but nowadays it's now generally recommended to stay closer to the wealth and"
+    },
+    {
+      "start": 1340.0,
+      "end": 1346.58,
+      "text": "So I will measure like this here, which gives me a quite small left ventric layout to attract."
+    },
+    {
+      "start": 1346.84,
+      "end": 1349.92,
+      "text": "I did this now in a peristone long x."
+    },
+    {
+      "start": 1350.0,
+      "end": 1354.7,
+      "text": "image which I have not optimized for the left ventric loud protract. I can just"
+    },
+    {
+      "start": 1354.7,
+      "end": 1359.82,
+      "text": "recommend if you need a true dimension of the left ventric loud protract."
+    },
+    {
+      "start": 1360.32,
+      "end": 1366.67,
+      "text": "Optimize your image and do the measurements in a separate clip or image"
+    },
+    {
+      "start": 1367.31,
+      "end": 1369.45,
+      "text": "Optimize for the left-hand trickler output track"
+    },
+    {
+      "start": 1370.03,
+      "end": 1377.02,
+      "text": "There's always a tendency to underestimate the diameter and then the calculated area of"
+    },
+    {
+      "start": 1377.02,
+      "end": 1379.98,
+      "text": "and check out for checked and there is also the rock"
+    },
+    {
+      "start": 1380.03,
+      "end": 1388.73,
+      "text": "good reasons to do this in two dimensions but that's another issue. But just if you're interested"
+    },
+    {
+      "start": 1388.73,
+      "end": 1389.87,
+      "text": "This is the left ventricle."
+    },
+    {
+      "start": 1390.0,
+      "end": 1398.2,
+      "text": "You might also look at the ascending order we don't see much of the ascending"
+    },
+    {
+      "start": 1398.2,
+      "end": 1399.96,
+      "text": "your order, this would be measured here."
+    },
+    {
+      "start": 1400.0,
+      "end": 1408.7,
+      "text": "in that direction. The erotic sinus can be measured here. Erotic arch has to be examined"
+    },
+    {
+      "start": 1408.7,
+      "end": 1409.26,
+      "text": "vent from another."
+    },
+    {
+      "start": 1410.0,
+      "end": 1415.36,
+      "text": "So these are the basic measurements in the peristone long axis view."
+    },
+    {
+      "start": 1417.22,
+      "end": 1419.74,
+      "text": "In the peristone long axis, always"
+    },
+    {
+      "start": 1420.0,
+      "end": 1426.97,
+      "text": "also look at the right ventricle. You want to check whether the right ventricle is"
+    },
+    {
+      "start": 1426.97,
+      "end": 1429.63,
+      "text": "dilated so that's the first clue."
+    },
+    {
+      "start": 1430.0,
+      "end": 1439.97,
+      "text": "as there is a problem in the right ventricle with dilation or hypertrophy. So what is the diameter here of..."
+    },
+    {
+      "start": 1440.0,
+      "end": 1448.38,
+      "text": "This is actually the right control output track as I said, but you can measure here the RBOT diameter."
+    },
+    {
+      "start": 1450.0,
+      "end": 1458.87,
+      "text": "again I do this in a little bit adapted anterior posterior direction and in this lady the diameter"
+    },
+    {
+      "start": 1458.87,
+      "end": 1459.79,
+      "text": "The meter is below"
+    },
+    {
+      "start": 1460.06,
+      "end": 1468.16,
+      "text": "three centimeters and that is a normal value. So as soon as it enlarges above three centimeters,"
+    },
+    {
+      "start": 1468.16,
+      "end": 1469.78,
+      "text": "is 30 mm."
+    },
+    {
+      "start": 1470.0,
+      "end": 1477.52,
+      "text": "it is, you should get the suspicion that there is some problem in the right ventricle."
+    },
+    {
+      "start": 1480.0,
+      "end": 1486.46,
+      "text": "should look at is the wall thickness of the right ventricle. This seems to be"
+    },
+    {
+      "start": 1486.46,
+      "end": 1489.88,
+      "text": "very thin here and if you would ask me how thick"
+    },
+    {
+      "start": 1490.0,
+      "end": 1493.9,
+      "text": "is the right one to take the ball, I would tell you, well it's very hard to measure, it"
+    },
+    {
+      "start": 1494.34,
+      "end": 1499.64,
+      "text": "almost cannot measure the thickness, and that's a good signage. As soon as the right"
+    },
+    {
+      "start": 1499.64,
+      "end": 1499.86,
+      "text": "That's it."
+    },
+    {
+      "start": 1500.0,
+      "end": 1509.79,
+      "text": "wall gets so thick that you can clearly measure the thickness. So that's above five millimeters typically."
+    },
+    {
+      "start": 1510.0,
+      "end": 1516.04,
+      "text": "This is a sign of right transchicular hypertrophy typically due to chronic"
+    },
+    {
+      "start": 1516.04,
+      "end": 1519.7,
+      "text": "pressure overload. So here in this case, normal diameter"
+    },
+    {
+      "start": 1520.0,
+      "end": 1529.09,
+      "text": "and a thin wall. That looks pretty good. An additional comment to the valves here in the"
+    },
+    {
+      "start": 1529.09,
+      "end": 1529.97,
+      "text": "person along I"
+    },
+    {
+      "start": 1530.0,
+      "end": 1539.96,
+      "text": "you see the cusps of the aortic valve, you see two cusps, it's very difficult to decide which cusps"
+    },
+    {
+      "start": 1540.0,
+      "end": 1548.52,
+      "text": "you see we will come back to that later but as you can see even without any color"
+    },
+    {
+      "start": 1548.52,
+      "end": 1549.0,
+      "text": "a Doppler."
+    },
+    {
+      "start": 1550.0,
+      "end": 1558.54,
+      "text": "The cusps look very quite thin and homogeneous and there is no evidence for an increased"
+    },
+    {
+      "start": 1558.54,
+      "end": 1559.98,
+      "text": "echo reflags, so no-"
+    },
+    {
+      "start": 1560.0,
+      "end": 1564.24,
+      "text": "evidence for calcification or some other pathology."
+    },
+    {
+      "start": 1565.0,
+      "end": 1567.48,
+      "text": "The same is true for the mitral valve."
+    },
+    {
+      "start": 1567.7,
+      "end": 1569.72,
+      "text": "The mitral valve you also see here."
+    },
+    {
+      "start": 1570.32,
+      "end": 1579.02,
+      "text": "the corde tendine, so the corde which prevents that's a macho leaflets prolapse into the left"
+    },
+    {
+      "start": 1579.02,
+      "end": 1579.7,
+      "text": "to each of them."
+    },
+    {
+      "start": 1580.22,
+      "end": 1586.28,
+      "text": "You might even notice here that there are different types of quarters or as a primary and the secondary"
+    },
+    {
+      "start": 1586.28,
+      "end": 1589.86,
+      "text": "recording, the one, the primary recording"
+    },
+    {
+      "start": 1590.0,
+      "end": 1599.76,
+      "text": "attaching more at the rim of the leaflet and then there are code A attaching."
+    },
+    {
+      "start": 1600.32,
+      "end": 1602.36,
+      "text": "or to the middle of the leaflet."
+    },
+    {
+      "start": 1603.48,
+      "end": 1608.22,
+      "text": "And the corne and here in a papillary muscle,"
+    },
+    {
+      "start": 1608.22,
+      "end": 1609.94,
+      "text": "which is hardly seen in this."
+    },
+    {
+      "start": 1610.0,
+      "end": 1619.79,
+      "text": "example. Now let's move on. I just want to show you here, this is a traditional"
+    },
+    {
+      "start": 1620.0,
+      "end": 1629.87,
+      "text": "no way how to measure left atrial diameters. This is the emote. The emote now here is placed across"
+    },
+    {
+      "start": 1630.0,
+      "end": 1636.26,
+      "text": "seotic valve or the left ventricle out for tract, and we try to capture here the largest diameter"
+    },
+    {
+      "start": 1636.72,
+      "end": 1639.76,
+      "text": "of the left atrium. As I said,"
+    },
+    {
+      "start": 1640.0,
+      "end": 1646.44,
+      "text": "as I said already, I typically do the measurements in the 2D images nowadays, but some"
+    },
+    {
+      "start": 1646.44,
+      "end": 1649.94,
+      "text": "Eclipse is still a stick to the"
+    },
+    {
+      "start": 1650.16,
+      "end": 1659.8,
+      "text": "Emote if they get a good recording the emote recording so we see only one line"
+    },
+    {
+      "start": 1660.42,
+      "end": 1669.16,
+      "text": "So when you have the right ventricle in the small 2D image here above here, then this would correspond to this area here."
+    },
+    {
+      "start": 1670.0,
+      "end": 1678.88,
+      "text": "then we have part of the outdoor tract. This is this structure. You see a little bit a part of the"
+    },
+    {
+      "start": 1678.88,
+      "end": 1679.68,
+      "text": "your t-cups."
+    },
+    {
+      "start": 1680.0,
+      "end": 1687.09,
+      "text": "open and closing and then you have the anterior wall of the left atrium and"
+    },
+    {
+      "start": 1687.09,
+      "end": 1689.93,
+      "text": "here is a left-atrial cavity and it's..."
+    },
+    {
+      "start": 1690.03,
+      "end": 1699.29,
+      "text": "of course you can do measurements also here we have again we have some prepared we have a prepared"
+    },
+    {
+      "start": 1700.06,
+      "end": 1705.42,
+      "text": "here, a dedicated menu for the measurements, I select left, atleast, and the author."
+    },
+    {
+      "start": 1706.16,
+      "end": 1709.96,
+      "text": "The menu now tells me if you look at the lower..."
+    },
+    {
+      "start": 1710.42,
+      "end": 1717.86,
+      "text": "border here, sorry here the lower border that I should place the measurement on the"
+    },
+    {
+      "start": 1717.86,
+      "end": 1719.34,
+      "text": "the interior point of the"
+    },
+    {
+      "start": 1720.0,
+      "end": 1725.1,
+      "text": "while I do the measurements here in the emote as it tells me the optic diameter"
+    },
+    {
+      "start": 1725.1,
+      "end": 1729.98,
+      "text": "actually I don't use this measurement because I don't trust it very much."
+    },
+    {
+      "start": 1730.74,
+      "end": 1739.86,
+      "text": "The emote is optimized for the left atrium, so now I would focus on the left atrium again doing it."
+    },
+    {
+      "start": 1740.03,
+      "end": 1746.85,
+      "text": "edge to edge measurement. That is how we do the measurements edge to edge. There are some"
+    },
+    {
+      "start": 1746.85,
+      "end": 1749.87,
+      "text": "other labs doing a leading edge."
+    },
+    {
+      "start": 1750.06,
+      "end": 1754.44,
+      "text": "leading edge measurement that would be a little bit more here and a little bit more"
+    },
+    {
+      "start": 1754.44,
+      "end": 1759.46,
+      "text": "anterior in the posterior way. Now I get a left edge of diameters"
+    },
+    {
+      "start": 1760.0,
+      "end": 1769.03,
+      "text": "you can see here of 36 millimeters, which is about the range, what I measured also."
+    },
+    {
+      "start": 1770.0,
+      "end": 1779.98,
+      "text": "obviously in 2D. The problem is, obviously, it's a one dimensional measurement and it's not always..."
+    },
+    {
+      "start": 1782.3,
+      "end": 1789.81,
+      "text": "easy to adjust the peristone along axis so that you get a real true"
+    },
+    {
+      "start": 1790.0,
+      "end": 1794.72,
+      "text": "and to repose to your maximum diameter of the left h."
+    },
+    {
+      "start": 1794.94,
+      "end": 1799.6,
+      "text": "That can be even more difficult for the left ventricle."
+    },
+    {
+      "start": 1800.16,
+      "end": 1809.86,
+      "text": "Here we have the emote of the left ventricle. You see again, anteriorly, this is the right ventricular output tracks and"
+    },
+    {
+      "start": 1810.16,
+      "end": 1814.6,
+      "text": "you see the motion of the septum, you see how it sins and becomes sicker."
+    },
+    {
+      "start": 1815.4,
+      "end": 1819.98,
+      "text": "You can nicely see the temporal behavior of..."
+    },
+    {
+      "start": 1820.0,
+      "end": 1827.88,
+      "text": "a septum in end diastole and then during systole the maximum contraction here and below you see a part"
+    },
+    {
+      "start": 1830.0,
+      "end": 1839.78,
+      "text": "mitral leaflet, the anterior mitral leaflet as it opens and closes again and then"
+    },
+    {
+      "start": 1840.35,
+      "end": 1845.51,
+      "text": "it is closed and we don't really see here the first opening of the valve."
+    },
+    {
+      "start": 1846.06,
+      "end": 1849.57,
+      "text": "Looking at the dimensions."
+    },
+    {
+      "start": 1850.0,
+      "end": 1855.8,
+      "text": "you can of course do the left ventricle dimensions also in the emote and that's"
+    },
+    {
+      "start": 1855.8,
+      "end": 1859.98,
+      "text": "the traditional view as I told you. Again, you open the measure."
+    },
+    {
+      "start": 1860.0,
+      "end": 1868.78,
+      "text": "measurement menu and now you can, for example, do this LV study. You can choose the"
+    },
+    {
+      "start": 1868.78,
+      "end": 1869.84,
+      "text": "single bell"
+    },
+    {
+      "start": 1870.0,
+      "end": 1877.44,
+      "text": "in the sub-menu dimension, starting with the interventricular supplement diasteli,"
+    },
+    {
+      "start": 1878.04,
+      "end": 1879.98,
+      "text": "but you can also hear in..."
+    },
+    {
+      "start": 1880.0,
+      "end": 1887.55,
+      "text": "the GE version. You have here LV study, and that directs you first to measure the"
+    },
+    {
+      "start": 1887.55,
+      "end": 1889.97,
+      "text": "the anterior point of the septum in the end diastin."
+    },
+    {
+      "start": 1890.0,
+      "end": 1899.54,
+      "text": "And diastole again is marked by the QRS, so the maximum QRS or a little bit before."
+    },
+    {
+      "start": 1900.38,
+      "end": 1906.13,
+      "text": "So, if I would do that here, actually I would end up doing the measurement here."
+    },
+    {
+      "start": 1906.97,
+      "end": 1909.97,
+      "text": "Going, that's the sickness of the sub."
+    },
+    {
+      "start": 1910.0,
+      "end": 1916.85,
+      "text": "them and I go to the post your wall. Now it's nowadays in for a lecture wall"
+    },
+    {
+      "start": 1916.85,
+      "end": 1919.69,
+      "text": "marking the entry point and please note"
+    },
+    {
+      "start": 1920.03,
+      "end": 1924.82,
+      "text": "This is a mitral valve here, this is the posterior mitral valve leaflet"
+    },
+    {
+      "start": 1925.73,
+      "end": 1929.1,
+      "text": "or some chord A, difficult to say sometimes,"
+    },
+    {
+      "start": 1929.6,
+      "end": 1929.98,
+      "text": "but..."
+    },
+    {
+      "start": 1930.0,
+      "end": 1934.16,
+      "text": "This is here the anterior point of the posterior wall and then"
+    },
+    {
+      "start": 1934.16,
+      "end": 1939.98,
+      "text": "measuring just a little bit before the strong reflex by the periculture."
+    },
+    {
+      "start": 1940.0,
+      "end": 1944.14,
+      "text": "sodium, so this is a diameter of the pusia war."
+    },
+    {
+      "start": 1945.0,
+      "end": 1949.5,
+      "text": "Now the next measurement is an systole, and this is here a little bit"
+    },
+    {
+      "start": 1950.29,
+      "end": 1959.61,
+      "text": "You see in this lady the septum is sickening and the posterior wall is sickening it's already"
+    },
+    {
+      "start": 1960.0,
+      "end": 1969.83,
+      "text": "getting a little bit difficult to identify the borders of the posterior wall and T."
+    },
+    {
+      "start": 1970.03,
+      "end": 1977.83,
+      "text": "You also notice that the septum has its maximum inward motion at a time when the anterior"
+    },
+    {
+      "start": 1977.83,
+      "end": 1979.97,
+      "text": "3-Mitral leaflet, already on the top left side of the"
+    },
+    {
+      "start": 1980.03,
+      "end": 1984.1,
+      "text": "obviously is maximum, has maximum opening."
+    },
+    {
+      "start": 1985.73,
+      "end": 1989.61,
+      "text": "So what I told you before is cannot be insisted."
+    },
+    {
+      "start": 1990.0,
+      "end": 1997.64,
+      "text": "here. And sisterly is this point here which is at the same time when the posterior wall"
+    },
+    {
+      "start": 1997.64,
+      "end": 1999.82,
+      "text": "has its maximum inward motion."
+    },
+    {
+      "start": 2000.7,
+      "end": 2008.67,
+      "text": "And what we see here is some kind of post-sustolic septal motion, post-sustolic septal motion."
+    },
+    {
+      "start": 2010.03,
+      "end": 2016.01,
+      "text": "If you look that up, if you read about it, it can be a sign of ischemia, but it's also"
+    },
+    {
+      "start": 2016.01,
+      "end": 2019.97,
+      "text": "normal unhealthy persons to some degree. So it's"
+    },
+    {
+      "start": 2020.0,
+      "end": 2025.84,
+      "text": "It's not the maximum inward motion of the septum which defines here and sisterly, it's"
+    },
+    {
+      "start": 2025.84,
+      "end": 2029.26,
+      "text": "more the maximum inward septum of the posterior wall."
+    },
+    {
+      "start": 2030.38,
+      "end": 2034.69,
+      "text": "And that is a physiologic post-historic septal motion."
+    },
+    {
+      "start": 2035.79,
+      "end": 2039.98,
+      "text": "So when I measure here, and systole..."
+    },
+    {
+      "start": 2040.0,
+      "end": 2049.57,
+      "text": "probably somber here and this is C-ser-z diameters and this is what we get as a result"
+    },
+    {
+      "start": 2050.51,
+      "end": 2058.88,
+      "text": "You may scroll back in the video and compare those values to the values that I obtained with 2D measurements."
+    },
+    {
+      "start": 2060.0,
+      "end": 2068.12,
+      "text": "You might notice that there are some differences, which are mainly due to the different methodology"
+    },
+    {
+      "start": 2068.12,
+      "end": 2068.96,
+      "text": "of measurement."
+    },
+    {
+      "start": 2072.14,
+      "end": 2079.86,
+      "text": "The MO, however, is very good as you will notice here to define the timing and"
+    },
+    {
+      "start": 2080.03,
+      "end": 2089.63,
+      "text": "to look at the BIM events during the cardiac cycle and you see a lot of interesting"
+    },
+    {
+      "start": 2090.06,
+      "end": 2098.1,
+      "text": "behavior also in pathology, in particular of the interventricular septum, so it's always"
+    },
+    {
+      "start": 2098.1,
+      "end": 2099.56,
+      "text": "It's always worse to look at the M-out."
+    },
+    {
+      "start": 2100.16,
+      "end": 2105.36,
+      "text": "and to compare the motion of the septum and the posterior wall"
+    },
+    {
+      "start": 2105.36,
+      "end": 2109.92,
+      "text": "and to learn from that with respect to."
+    },
+    {
+      "start": 2110.03,
+      "end": 2117.52,
+      "text": "a normal and pathologic septal motion. Now we move on and one thing that we"
+    },
+    {
+      "start": 2117.52,
+      "end": 2119.18,
+      "text": "haven't done yet is to look at the"
+    },
+    {
+      "start": 2120.0,
+      "end": 2127.75,
+      "text": "blood flow so we typically in the personal long axis you also activate the color"
+    },
+    {
+      "start": 2127.75,
+      "end": 2129.97,
+      "text": "or the"
+    },
+    {
+      "start": 2130.0,
+      "end": 2135.7,
+      "text": "as you know the color doppler depicts mainly the blood flow in direction of"
+    },
+    {
+      "start": 2135.7,
+      "end": 2139.98,
+      "text": "the ultrasound beam. Obviously the blood is flow"
+    },
+    {
+      "start": 2140.0,
+      "end": 2147.16,
+      "text": "going mainly perpendicular here from the left edge to the left ventricle and from the left ventricle to the ascending"
+    },
+    {
+      "start": 2147.16,
+      "end": 2149.86,
+      "text": "a hotel, so you might think."
+    },
+    {
+      "start": 2150.0,
+      "end": 2156.14,
+      "text": "that it's not useful to do the color Doppler, but you want to look for"
+    },
+    {
+      "start": 2157.64,
+      "end": 2159.8,
+      "text": "popular regurgitations main"
+    },
+    {
+      "start": 2160.0,
+      "end": 2165.96,
+      "text": "that creates turbulence of flow and turbulence of flow can also be well"
+    },
+    {
+      "start": 2166.34,
+      "end": 2169.82,
+      "text": "visualized in that direction here. You might notice"
+    },
+    {
+      "start": 2170.0,
+      "end": 2176.12,
+      "text": "there is a quite small, very small amount of turbulence here at some time at one cycle"
+    },
+    {
+      "start": 2176.12,
+      "end": 2179.98,
+      "text": "in the mitral valve, so it's a very tiny trough."
+    },
+    {
+      "start": 2180.03,
+      "end": 2184.45,
+      "text": "trace mitre regurgitation which can be picked up here but in general this looks"
+    },
+    {
+      "start": 2184.45,
+      "end": 2189.45,
+      "text": "pretty normal here. There is no regurgitation jet across the aortic valve."
+    },
+    {
+      "start": 2190.0,
+      "end": 2194.14,
+      "text": "very tiny one was a much of love. If you do the color"
+    },
+    {
+      "start": 2194.14,
+      "end": 2199.85,
+      "text": "Doppler. During the exam I would recommend to tilt always."
+    },
+    {
+      "start": 2200.0,
+      "end": 2209.08,
+      "text": "the probe in the in the other axis or so more to the right and left. So to scan a"
+    },
+    {
+      "start": 2209.08,
+      "end": 2209.98,
+      "text": "a little bit for..."
+    },
+    {
+      "start": 2210.77,
+      "end": 2218.6,
+      "text": "regurgitation at the extreme borders at the site of the valves."
+    },
+    {
+      "start": 2222.14,
+      "end": 2229.0,
+      "text": "When we have done this we turn the probe about 90 degrees and we take a look at the short"
+    },
+    {
+      "start": 2229.0,
+      "end": 2229.84,
+      "text": "x's again."
+    },
+    {
+      "start": 2230.0,
+      "end": 2234.86,
+      "text": "Here we have a longer sequence and you notice a particular pre-mature beat."
+    },
+    {
+      "start": 2235.64,
+      "end": 2239.98,
+      "text": "That's the reason for the exam here, but here I fold."
+    },
+    {
+      "start": 2240.0,
+      "end": 2247.15,
+      "text": "again on the last cardiac cycle. The last cardiac cycle always checks ECG, has no premature"
+    },
+    {
+      "start": 2247.15,
+      "end": 2249.47,
+      "text": "so that's a normal contraction."
+    },
+    {
+      "start": 2250.0,
+      "end": 2258.42,
+      "text": "that should be the normal situation without any disturbance by arrhythmias and you can"
+    },
+    {
+      "start": 2258.42,
+      "end": 2259.98,
+      "text": "nicely see here"
+    },
+    {
+      "start": 2260.0,
+      "end": 2269.22,
+      "text": "Here the short axis view partly imaged the papillary muscles, so that's the posterior"
+    },
+    {
+      "start": 2269.22,
+      "end": 2269.68,
+      "text": "and medium."
+    },
+    {
+      "start": 2270.1,
+      "end": 2279.87,
+      "text": "papillary muscles and that's the enteral lateral papillary muscle. You see the circumference of the left ventricle with the enterus."
+    },
+    {
+      "start": 2280.03,
+      "end": 2289.22,
+      "text": "them here and see in for a lateral wall here. So we have lateral and anterior, this is inferior, and"
+    },
+    {
+      "start": 2290.0,
+      "end": 2297.27,
+      "text": "is in for a subtle war. Always look at the thickening in the short excess"
+    },
+    {
+      "start": 2297.27,
+      "end": 2299.71,
+      "text": "you because you look now a"
+    },
+    {
+      "start": 2300.06,
+      "end": 2306.96,
+      "text": "can focus on radial thickening and it's sometimes easier in the personal short"
+    },
+    {
+      "start": 2306.96,
+      "end": 2309.74,
+      "text": "access to you to detect regional wall motion."
+    },
+    {
+      "start": 2310.72,
+      "end": 2316.34,
+      "text": "than in the apical views. So don't forget to look at the short axis views and of"
+    },
+    {
+      "start": 2316.34,
+      "end": 2319.6,
+      "text": "course this is a level of the papillary muscle."
+    },
+    {
+      "start": 2320.13,
+      "end": 2329.37,
+      "text": "you have to tilt the probe in the long axis direction to pick up a little bit more of the basal left ventricle."
+    },
+    {
+      "start": 2330.0,
+      "end": 2338.87,
+      "text": "And you should also try to image the apex when I go back to the popular muscle level are please also note"
+    },
+    {
+      "start": 2340.16,
+      "end": 2343.04,
+      "text": "This is anterior, this is the back of the patient."
+    },
+    {
+      "start": 2343.36,
+      "end": 2345.28,
+      "text": "So here comes the spine, this is posterior,"
+    },
+    {
+      "start": 2345.74,
+      "end": 2346.4,
+      "text": "this is inferior."
+    },
+    {
+      "start": 2347.12,
+      "end": 2349.94,
+      "text": "We call this now the infrolatural sac-"
+    },
+    {
+      "start": 2350.0,
+      "end": 2357.88,
+      "text": "However, and this is the info segment. This is part of the liver here. Again, here part of the right ventricle"
+    },
+    {
+      "start": 2358.3,
+      "end": 2359.86,
+      "text": "Enter a septum"
+    },
+    {
+      "start": 2360.35,
+      "end": 2366.45,
+      "text": "which is part of the right ventricle out for check, typically if you go a little bit higher up,"
+    },
+    {
+      "start": 2367.03,
+      "end": 2369.91,
+      "text": "and this is a pre-wall of"
+    },
+    {
+      "start": 2370.0,
+      "end": 2375.75,
+      "text": "the left ventricle. I told you, we have two popular muscles typically, the posterior"
+    },
+    {
+      "start": 2375.75,
+      "end": 2379.39,
+      "text": "the real media and the natural natural. However,"
+    },
+    {
+      "start": 2380.48,
+      "end": 2382.16,
+      "text": "This is anterior, this is posterior."
+    },
+    {
+      "start": 2382.62,
+      "end": 2385.9,
+      "text": "Please note that if you draw a line here,"
+    },
+    {
+      "start": 2386.66,
+      "end": 2389.54,
+      "text": "a horizontal line, that actually both"
+    },
+    {
+      "start": 2390.0,
+      "end": 2397.26,
+      "text": "papillary muscles are more on the posterior half of the ventricle. So the"
+    },
+    {
+      "start": 2397.26,
+      "end": 2399.74,
+      "text": "The entral lateral is not truly anterior."
+    },
+    {
+      "start": 2400.0,
+      "end": 2408.45,
+      "text": "It's still quite posterior in the left ventricle, closer to the spine than to the anterior wall."
+    },
+    {
+      "start": 2410.1,
+      "end": 2418.67,
+      "text": "What is the reason for that? Why are the papillary muscles here in the posterior half of the left ventricle?"
+    },
+    {
+      "start": 2419.51,
+      "end": 2419.97,
+      "text": "Well..."
+    },
+    {
+      "start": 2420.48,
+      "end": 2425.16,
+      "text": "you might get an idea if you go back to the cursor in the long axis view,"
+    },
+    {
+      "start": 2425.89,
+      "end": 2427.31,
+      "text": "focus again on the last cycle."
+    },
+    {
+      "start": 2428.5,
+      "end": 2429.98,
+      "text": "So this is an end..."
+    },
+    {
+      "start": 2430.03,
+      "end": 2436.69,
+      "text": "a mitral leaflet, here's a papillary muscle, one of the papillary muscles. I don't know exactly which one actually,"
+    },
+    {
+      "start": 2437.59,
+      "end": 2439.61,
+      "text": "but it's just in between."
+    },
+    {
+      "start": 2440.48,
+      "end": 2449.84,
+      "text": "But what's important is that the papillary muscles are important to drag away."
+    },
+    {
+      "start": 2450.0,
+      "end": 2454.63,
+      "text": "the anterior leaflet more to the posterior wall."
+    },
+    {
+      "start": 2455.39,
+      "end": 2458.69,
+      "text": "If there would be one papular muscle appear in the anterior wall,"
+    },
+    {
+      "start": 2460.0,
+      "end": 2468.6,
+      "text": "the mitral leaflet might be dragged more to the outer tract and might cause obstruction of the"
+    },
+    {
+      "start": 2468.6,
+      "end": 2469.98,
+      "text": "out the effect which we"
+    },
+    {
+      "start": 2470.0,
+      "end": 2475.98,
+      "text": "We now only see in a specific pathology, the hypertrophic obstructive cardiomyopathy,"
+    },
+    {
+      "start": 2476.54,
+      "end": 2479.66,
+      "text": "but in the normal ventricle, the"
+    },
+    {
+      "start": 2480.51,
+      "end": 2485.59,
+      "text": "posterior placed pepillary muscles prevent the obstruction by the"
+    },
+    {
+      "start": 2485.59,
+      "end": 2489.96,
+      "text": "antimicrobial leaflet of the outer track. So I think that's"
+    },
+    {
+      "start": 2490.0,
+      "end": 2495.62,
+      "text": "So that's an atomic reason why if we look at the short axis used,"
+    },
+    {
+      "start": 2495.94,
+      "end": 2499.24,
+      "text": "both popular muscles are more posterior than anterior."
+    },
+    {
+      "start": 2501.15,
+      "end": 2508.36,
+      "text": "Now, from this view, if we build a little bit towards the cranial direction, the orange"
+    },
+    {
+      "start": 2508.36,
+      "end": 2509.86,
+      "text": "image claim we get"
+    },
+    {
+      "start": 2510.0,
+      "end": 2516.54,
+      "text": "a short axis view of the basal segments and here we also have some view of the"
+    },
+    {
+      "start": 2516.54,
+      "end": 2519.83,
+      "text": "Mitchell wealth and that's the kind of"
+    },
+    {
+      "start": 2520.0,
+      "end": 2527.92,
+      "text": "fish eye you what we see so this is like not fish eye fish mouth sorry fish mouth appearance"
+    },
+    {
+      "start": 2527.92,
+      "end": 2529.12,
+      "text": "of the"
+    },
+    {
+      "start": 2531.34,
+      "end": 2537.46,
+      "text": "with parts of the natural leaflet, hardly visualized here and parts of the posterior leaflet."
+    },
+    {
+      "start": 2537.86,
+      "end": 2539.76,
+      "text": "And above here, that would be the direction."
+    },
+    {
+      "start": 2540.0,
+      "end": 2546.5,
+      "text": "of the upload track and if I go a little bit higher up I can close it to the"
+    },
+    {
+      "start": 2546.5,
+      "end": 2549.08,
+      "text": "biotic wealth and"
+    },
+    {
+      "start": 2550.06,
+      "end": 2556.47,
+      "text": "the outflow tract. And that's another very interesting short excess view, the level"
+    },
+    {
+      "start": 2556.47,
+      "end": 2559.98,
+      "text": "of the aortic valve. I try to..."
+    },
+    {
+      "start": 2560.06,
+      "end": 2563.35,
+      "text": "Again, focus on the last cycle here,"
+    },
+    {
+      "start": 2564.2,
+      "end": 2566.33,
+      "text": "and we'll stop the image here."
+    },
+    {
+      "start": 2567.75,
+      "end": 2569.61,
+      "text": "Go back one for a little bit."
+    },
+    {
+      "start": 2570.0,
+      "end": 2577.92,
+      "text": "second force frame by frame. So if I stop here, you see in the ECG my marker is"
+    },
+    {
+      "start": 2577.92,
+      "end": 2579.4,
+      "text": "somewhere after the"
+    },
+    {
+      "start": 2580.13,
+      "end": 2589.86,
+      "text": "wave, so I'm about and sisterly here and the erotic valve or I'm in early dias."
+    },
+    {
+      "start": 2590.0,
+      "end": 2597.02,
+      "text": "and the audit valve is closed. This year, while if you look at the person long axis"
+    },
+    {
+      "start": 2597.02,
+      "end": 2599.76,
+      "text": "this view, you know this is the right time to click out for a track."
+    },
+    {
+      "start": 2600.0,
+      "end": 2609.98,
+      "text": "aortic valve, left atrium, right atrium, and if this runs, this obviously is a tricast"
+    },
+    {
+      "start": 2611.21,
+      "end": 2619.18,
+      "text": "or two leaflets of the tricuspid valve, right atrium, so this must be the inter atrial septum here."
+    },
+    {
+      "start": 2620.26,
+      "end": 2622.68,
+      "text": "And if you would put color on here,"
+    },
+    {
+      "start": 2623.26,
+      "end": 2628.06,
+      "text": "you might see an ASD, an HL sub2 defect."
+    },
+    {
+      "start": 2628.42,
+      "end": 2629.98,
+      "text": "So this is the entire HL sub2."
+    },
+    {
+      "start": 2631.02,
+      "end": 2635.9,
+      "text": "And if you focus on the automatic valve, then I stop it."
+    },
+    {
+      "start": 2636.48,
+      "end": 2638.24,
+      "text": "You see that there are three cusps."
+    },
+    {
+      "start": 2638.5,
+      "end": 2639.46,
+      "text": "You have here the rim."
+    },
+    {
+      "start": 2640.19,
+      "end": 2643.07,
+      "text": "It's like, this is like a star configuration."
+    },
+    {
+      "start": 2643.29,
+      "end": 2646.83,
+      "text": "The Mercedes star, as we typically call it,"
+    },
+    {
+      "start": 2647.44,
+      "end": 2649.9,
+      "text": "least in Germany, where the, where the,"
+    },
+    {
+      "start": 2650.0,
+      "end": 2657.6,
+      "text": "see this cars are produced. We have three cusps one here one here and one here and how are"
+    },
+    {
+      "start": 2657.6,
+      "end": 2659.98,
+      "text": "these cusps identified while the"
+    },
+    {
+      "start": 2660.0,
+      "end": 2665.17,
+      "text": "This is a right ventricle, this is a right ventricle alpha tract and these cusps are related"
+    },
+    {
+      "start": 2665.17,
+      "end": 2669.96,
+      "text": "to the coronary arteries and if you know that this is a right ventricle"
+    },
+    {
+      "start": 2670.03,
+      "end": 2677.14,
+      "text": "So this cusp is the right coronary cusp."
+    },
+    {
+      "start": 2680.0,
+      "end": 2686.42,
+      "text": "to the atrium, this is the interventricular septum and in the direction of the sorry inter atrial"
+    },
+    {
+      "start": 2686.42,
+      "end": 2689.96,
+      "text": "septum, in the in the direction of the inter atrial septum, there"
+    },
+    {
+      "start": 2690.0,
+      "end": 2697.43,
+      "text": "is no coronary artery. So this is the a coronary cast. No coronary artery, a coronary"
+    },
+    {
+      "start": 2697.43,
+      "end": 2698.01,
+      "text": "CUSP"
+    },
+    {
+      "start": 2700.06,
+      "end": 2705.88,
+      "text": "Here on the right, in the right of the image, you might sometimes see the left main stem."
+    },
+    {
+      "start": 2706.63,
+      "end": 2709.89,
+      "text": "And if this is the right corner cast, then this is the left corner."
+    },
+    {
+      "start": 2710.16,
+      "end": 2719.74,
+      "text": "So we have we can clear identify right corner cusp left corner cusp a corner cusp. Okay, um"
+    },
+    {
+      "start": 2720.83,
+      "end": 2729.98,
+      "text": "We have identified the tricuspid valve, the ortic valve with its cusps, and if that's an image run, you notice that there is also something..."
+    },
+    {
+      "start": 2730.06,
+      "end": 2735.46,
+      "text": "moving here on the right side and actually this is a pulmonary valve. It's not"
+    },
+    {
+      "start": 2735.46,
+      "end": 2738.74,
+      "text": "very optimized here for the pulmonary"
+    },
+    {
+      "start": 2740.0,
+      "end": 2749.92,
+      "text": "We will take a look at the next image, not very clear. I go back here."
+    },
+    {
+      "start": 2750.0,
+      "end": 2759.74,
+      "text": "I go to the first cycle, maybe here in this cycle while you might appreciate that this is a part of the"
+    },
+    {
+      "start": 2761.09,
+      "end": 2769.68,
+      "text": "And that would be the proximal part of the pulmonary artery below here, which is not very well visualized."
+    },
+    {
+      "start": 2771.06,
+      "end": 2777.95,
+      "text": "But as you all also notice the valves, the aortic valve and the pulmonary"
+    },
+    {
+      "start": 2777.95,
+      "end": 2779.97,
+      "text": "very interacoustic 12, they are not"
+    },
+    {
+      "start": 2780.0,
+      "end": 2783.67,
+      "text": "lying in one plane. They're perpendicular to each other."
+    },
+    {
+      "start": 2787.21,
+      "end": 2789.97,
+      "text": "Okay, let's have a look at the next one here, now also here."
+    },
+    {
+      "start": 2790.0,
+      "end": 2796.7,
+      "text": "Here I activated the color Doppler because you might see some turbulence if you have"
+    },
+    {
+      "start": 2796.7,
+      "end": 2799.94,
+      "text": "aortic regurgitation, which is not the case here in this image."
+    },
+    {
+      "start": 2800.0,
+      "end": 2807.95,
+      "text": "you might in this personal short access view be able to locate the origin of"
+    },
+    {
+      "start": 2807.95,
+      "end": 2809.39,
+      "text": "biotic regurgitation."
+    },
+    {
+      "start": 2810.03,
+      "end": 2818.32,
+      "text": "very precisely to the cusp, whether it's more to the left coronary cusp or more to the acornary cusp here."
+    },
+    {
+      "start": 2819.38,
+      "end": 2819.98,
+      "text": "So..."
+    },
+    {
+      "start": 2820.13,
+      "end": 2824.55,
+      "text": "again a color Doppler very important also in this view."
+    },
+    {
+      "start": 2825.38,
+      "end": 2829.68,
+      "text": "Here I activated the color Doppler more across"
+    },
+    {
+      "start": 2830.29,
+      "end": 2837.66,
+      "text": "The pulmonary valve, you see the outflow here, the pulmonary valve, and even if you are"
+    },
+    {
+      "start": 2837.66,
+      "end": 2839.96,
+      "text": "I'm not able to visualize the pulmonary..."
+    },
+    {
+      "start": 2840.03,
+      "end": 2848.1,
+      "text": "of completely, you will be able to activate the Doppler and here I activated a"
+    },
+    {
+      "start": 2848.1,
+      "end": 2849.44,
+      "text": "pulse wave Doppler sample"
+    },
+    {
+      "start": 2850.1,
+      "end": 2858.59,
+      "text": "put it across the, on the level of the pulmonary valve. So you have the outflow across the pulmonary valve and"
+    },
+    {
+      "start": 2860.54,
+      "end": 2865.66,
+      "text": "you may exclude by that, that there is any significant"
+    },
+    {
+      "start": 2865.66,
+      "end": 2867.14,
+      "text": "pulmonary stenosis."
+    },
+    {
+      "start": 2867.78,
+      "end": 2869.98,
+      "text": "Well, actually, for..."
+    },
+    {
+      "start": 2870.0,
+      "end": 2878.74,
+      "text": "to exclude pulmonary stenosis or maybe also stenosis in the main trunk of the pulmonary archery."
+    },
+    {
+      "start": 2879.2,
+      "end": 2879.98,
+      "text": "You would also"
+    },
+    {
+      "start": 2880.0,
+      "end": 2888.42,
+      "text": "to do a continuous wave doctor recording. From the pulmonary valve we can also move the color"
+    },
+    {
+      "start": 2888.42,
+      "end": 2889.96,
+      "text": "to the tricusp-"
+    },
+    {
+      "start": 2890.0,
+      "end": 2897.98,
+      "text": "valve and look for tricuspid regurgitation here. There is just popping up a little bit some turbulence"
+    },
+    {
+      "start": 2897.98,
+      "end": 2899.84,
+      "text": "but there is no true trigger."
+    },
+    {
+      "start": 2900.0,
+      "end": 2906.98,
+      "text": "but regurgitation visualized here. And you might also try to put a continuous"
+    },
+    {
+      "start": 2906.98,
+      "end": 2909.98,
+      "text": "wave Doppler across the tri-cuspid valve here to"
+    },
+    {
+      "start": 2910.0,
+      "end": 2916.56,
+      "text": "measures the regurgitant velocity for the estimation of right ventricular"
+    },
+    {
+      "start": 2916.56,
+      "end": 2919.7,
+      "text": "systolic pressure but we'll come back to that later and we will"
+    },
+    {
+      "start": 2920.32,
+      "end": 2922.4,
+      "text": "try to do this in the applicable years."
+    },
+    {
+      "start": 2929.6,
+      "end": 2929.88,
+      "text": "So from"
+    },
+    {
+      "start": 2930.0,
+      "end": 2935.1,
+      "text": "the burst on reviews, I moved now to the"
+    },
+    {
+      "start": 2935.1,
+      "end": 2939.97,
+      "text": "the apical window and I tend to start with the"
+    },
+    {
+      "start": 2940.06,
+      "end": 2949.9,
+      "text": "I know that some people recommend to start from the apical long axis you because that gives you a better idea of the"
+    },
+    {
+      "start": 2950.0,
+      "end": 2959.86,
+      "text": "apex and to optimize for shortening. But the epic unfortunate reviews in my experience more."
+    },
+    {
+      "start": 2960.03,
+      "end": 2966.6,
+      "text": "easier to image because you have a better positioning or an easier positioning between the"
+    },
+    {
+      "start": 2966.6,
+      "end": 2969.06,
+      "text": "rips for the epic 4chambit view of your"
+    },
+    {
+      "start": 2969.06,
+      "end": 2969.78,
+      "text": "or on the other side."
+    },
+    {
+      "start": 2970.0,
+      "end": 2976.36,
+      "text": "user, and that's maybe one of the reasons why I like to start to get a first view on the"
+    },
+    {
+      "start": 2976.36,
+      "end": 2977.38,
+      "text": "Yeah, I think I'll watch some of you."
+    },
+    {
+      "start": 2978.79,
+      "end": 2979.97,
+      "text": "Again, I focus here."
+    },
+    {
+      "start": 2980.0,
+      "end": 2984.76,
+      "text": "I have a long sequence. I focus on one cardiac cycle. I make increase a little bit"
+    },
+    {
+      "start": 2984.76,
+      "end": 2989.97,
+      "text": "It's a gain here just to demonstrate for you and that..."
+    },
+    {
+      "start": 2990.06,
+      "end": 2993.72,
+      "text": "better can identify the left-and-trigger warts."
+    },
+    {
+      "start": 2995.0,
+      "end": 2997.76,
+      "text": "The epic of 4 Chamber View has stopped the image here."
+    },
+    {
+      "start": 3000.0,
+      "end": 3009.5,
+      "text": "Epical 4 chamber view is called 4 chamber because we have the left ventricle part of the right ventricle more the inflow part of the right ventricle"
+    },
+    {
+      "start": 3010.7,
+      "end": 3019.07,
+      "text": "course the right atrium and the left atrium, boardchampus. You have to know what kind of segments"
+    },
+    {
+      "start": 3019.07,
+      "end": 3019.97,
+      "text": "you look at."
+    },
+    {
+      "start": 3020.0,
+      "end": 3025.39,
+      "text": "this is part of see this is more the inferior septum this is a lateral wall"
+    },
+    {
+      "start": 3026.1,
+      "end": 3029.74,
+      "text": "We have again, we see here, the mitre of Valve."
+    },
+    {
+      "start": 3030.26,
+      "end": 3037.84,
+      "text": "more or less in the middle and really in the middle is the interventricular"
+    },
+    {
+      "start": 3037.84,
+      "end": 3039.64,
+      "text": "the inter-atial septum, the inter-atial septum,"
+    },
+    {
+      "start": 3040.0,
+      "end": 3046.22,
+      "text": "And we focus on the mitral valve with, again, an anterior leaflet and a part of the posterior"
+    },
+    {
+      "start": 3046.22,
+      "end": 3049.78,
+      "text": "relief lead. You might appreciate the popular muscle."
+    },
+    {
+      "start": 3050.0,
+      "end": 3056.94,
+      "text": "It's a code A, different code A, it's a rim of the leaflets and more attaching to the"
+    },
+    {
+      "start": 3056.94,
+      "end": 3058.18,
+      "text": "middle of the leaflets."
+    },
+    {
+      "start": 3058.94,
+      "end": 3059.98,
+      "text": "You kind of appreciate it."
+    },
+    {
+      "start": 3060.0,
+      "end": 3068.84,
+      "text": "left atrial size, you may be able to measure the left atrial volume here or area."
+    },
+    {
+      "start": 3070.03,
+      "end": 3077.75,
+      "text": "And on the right side, you should take a look at the tricuspid leaflets and the right"
+    },
+    {
+      "start": 3077.75,
+      "end": 3079.98,
+      "text": "We have here the int"
+    },
+    {
+      "start": 3080.0,
+      "end": 3084.64,
+      "text": "there seems to be an opening in the interentral septum."
+    },
+    {
+      "start": 3084.76,
+      "end": 3089.64,
+      "text": "This is typically the thinnest part of the interetral septum."
+    },
+    {
+      "start": 3090.0,
+      "end": 3092.48,
+      "text": "which is the so-called foramen ovale."
+    },
+    {
+      "start": 3094.77,
+      "end": 3097.39,
+      "text": "Okay, if we look at the contraction on left ventricle,"
+    },
+    {
+      "start": 3097.59,
+      "end": 3099.6,
+      "text": "there seems to be an invert."
+    },
+    {
+      "start": 3100.03,
+      "end": 3105.99,
+      "text": "contraction and sickening in all segments. However sickening is often very difficult to"
+    },
+    {
+      "start": 3105.99,
+      "end": 3109.9,
+      "text": "to detect from the apical windows input."
+    },
+    {
+      "start": 3110.0,
+      "end": 3117.16,
+      "text": "particularly in the lateral segments, so you really have to take care that you have the"
+    },
+    {
+      "start": 3117.42,
+      "end": 3119.68,
+      "text": "best possible image quality."
+    },
+    {
+      "start": 3120.67,
+      "end": 3126.9,
+      "text": "And what you'll also notice the ventricular is not only thickening inwards in the radial"
+    },
+    {
+      "start": 3126.9,
+      "end": 3129.98,
+      "text": "inward motion, it's also moving with..."
+    },
+    {
+      "start": 3131.12,
+      "end": 3139.98,
+      "text": "along the long axis. So the level of the mitre valve here, or the tricuspid valve, is not on a constant level."
+    },
+    {
+      "start": 3140.0,
+      "end": 3148.42,
+      "text": "but it's moving up and down and that is the very important long axis contraction or long axis function of the left ventricle."
+    },
+    {
+      "start": 3150.1,
+      "end": 3153.48,
+      "text": "I will come back later to the RV functional analysis."
+    },
+    {
+      "start": 3154.06,
+      "end": 3156.26,
+      "text": "Let's have a look first at the anatomy"
+    },
+    {
+      "start": 3156.48,
+      "end": 3158.44,
+      "text": "of the other apical views."
+    },
+    {
+      "start": 3160.1,
+      "end": 3167.6,
+      "text": "Now this is the apical 4-champ review where I typically start my apical exam if you now"
+    },
+    {
+      "start": 3167.6,
+      "end": 3169.84,
+      "text": "turn the probe 60 degrees."
+    },
+    {
+      "start": 3170.0,
+      "end": 3178.33,
+      "text": "counterclockwise, first we'll end up in the typical two chamber view, two chambers, the left"
+    },
+    {
+      "start": 3178.33,
+      "end": 3179.97,
+      "text": "ventricle and to the left hand."
+    },
+    {
+      "start": 3180.0,
+      "end": 3189.03,
+      "text": "The left ventricular two-champ review is characterized by some distinct features."
+    },
+    {
+      "start": 3190.0,
+      "end": 3198.2,
+      "text": "Now we have, we see the anterior wall of Celeste ventricle and on the other side now the"
+    },
+    {
+      "start": 3198.52,
+      "end": 3199.58,
+      "text": "inferior world"
+    },
+    {
+      "start": 3200.0,
+      "end": 3209.69,
+      "text": "the left ventricle. To see parts of the mitral valve, it's often you don't see the complete opening here,"
+    },
+    {
+      "start": 3210.03,
+      "end": 3217.13,
+      "text": "or how you focus here, but you should see the true apex of the left ventricle and the"
+    },
+    {
+      "start": 3217.13,
+      "end": 3219.97,
+      "text": "in the two typical two-chum reviews that are found here."
+    },
+    {
+      "start": 3220.0,
+      "end": 3228.69,
+      "text": "the left ventricle typically is a little bit banana shaped and this is the"
+    },
+    {
+      "start": 3228.69,
+      "end": 3229.93,
+      "text": "The anti-oval is the..."
+    },
+    {
+      "start": 3230.0,
+      "end": 3237.8,
+      "text": "bit convex and you should try to optimize here for the left ventricular apex."
+    },
+    {
+      "start": 3240.0,
+      "end": 3249.86,
+      "text": "You typically should see at the level of the left atrium is on the right side, if it's large enough in this theme."
+    },
+    {
+      "start": 3250.0,
+      "end": 3259.97,
+      "text": "quality is good enough. The left atrial appendage, or you might well at least guess that..."
+    },
+    {
+      "start": 3260.1,
+      "end": 3267.66,
+      "text": "the left lateral appendage is here, it's very clearly visible in this case here and on the other side"
+    },
+    {
+      "start": 3268.11,
+      "end": 3269.55,
+      "text": "around structure with"
+    },
+    {
+      "start": 3270.0,
+      "end": 3277.61,
+      "text": "is the ostium of the coronary sinus. So the ostium of the coronary sinus and the left atrial"
+    },
+    {
+      "start": 3277.61,
+      "end": 3279.97,
+      "text": "appendage and select the trigger as a tool."
+    },
+    {
+      "start": 3280.0,
+      "end": 3288.97,
+      "text": "Apex characterise the apical touch and review. If we further turn our probe counterclockwise"
+    },
+    {
+      "start": 3290.03,
+      "end": 3293.79,
+      "text": "we end up in the Apical 3 Chamber view."
+    },
+    {
+      "start": 3294.82,
+      "end": 3299.78,
+      "text": "The Apical 3 Chamber view also called the Apical Long Axes."
+    },
+    {
+      "start": 3300.38,
+      "end": 3304.38,
+      "text": "is actually the same view, or you see the same structures,"
+    },
+    {
+      "start": 3304.68,
+      "end": 3306.84,
+      "text": "almost the same structures as you see it"
+    },
+    {
+      "start": 3306.84,
+      "end": 3308.56,
+      "text": "in the peristone long axis view."
+    },
+    {
+      "start": 3309.06,
+      "end": 3309.36,
+      "text": "So."
+    },
+    {
+      "start": 3310.0,
+      "end": 3317.87,
+      "text": "you, you can turn it, tilt it in the image, and then you end up with a kind of"
+    },
+    {
+      "start": 3317.87,
+      "end": 3319.89,
+      "text": "personal long excess you but"
+    },
+    {
+      "start": 3320.0,
+      "end": 3324.56,
+      "text": "But here now you can appreciate the laffentricular apex."
+    },
+    {
+      "start": 3325.66,
+      "end": 3329.82,
+      "text": "Also here you should try to optimize that you have no foreshortening."
+    },
+    {
+      "start": 3330.1,
+      "end": 3337.58,
+      "text": "actually the motion here and the apex, which comes very suddenly becomes shorter, or there is some"
+    },
+    {
+      "start": 3338.34,
+      "end": 3339.82,
+      "text": "wall coming into the image."
+    },
+    {
+      "start": 3340.48,
+      "end": 3344.7,
+      "text": "tells me that maybe I still have some foreshortening here in this case."
+    },
+    {
+      "start": 3346.8,
+      "end": 3349.88,
+      "text": "We have so the same"
+    },
+    {
+      "start": 3350.0,
+      "end": 3356.1,
+      "text": "walls that we see in the first and long axis view so this is the anterior septum and on the other side"
+    },
+    {
+      "start": 3356.1,
+      "end": 3359.96,
+      "text": "it's the info letter will go wrongly when i"
+    },
+    {
+      "start": 3360.0,
+      "end": 3362.5,
+      "text": "I was trained, we call this the posterior."
+    },
+    {
+      "start": 3363.31,
+      "end": 3367.63,
+      "text": "We have the anterior mitral leaflet and the posterior mitral leaflet."
+    },
+    {
+      "start": 3367.83,
+      "end": 3369.98,
+      "text": "We don't see the ostium."
+    },
+    {
+      "start": 3370.06,
+      "end": 3374.92,
+      "text": "the coronary sinus, we don't see left atrial appendage, but we see the left ventricular"
+    },
+    {
+      "start": 3374.92,
+      "end": 3379.3,
+      "text": "the clouds were tracked, the sign is of the Aorta and"
+    },
+    {
+      "start": 3380.22,
+      "end": 3387.53,
+      "text": "a little bit a part of the ascending aorta. So this characterizes the apical long axis view."
+    },
+    {
+      "start": 3390.13,
+      "end": 3399.76,
+      "text": "In each of these views, we should activate the color Doppler and looking across the valve for regurgitation."
+    },
+    {
+      "start": 3400.26,
+      "end": 3409.34,
+      "text": "turbulent inflow in the presence of stenosis and in each of these three"
+    },
+    {
+      "start": 3409.34,
+      "end": 3409.92,
+      "text": "apical"
+    },
+    {
+      "start": 3410.0,
+      "end": 3416.11,
+      "text": "reviews. You should always not only activate the Doppler, but then tilt a little bit the"
+    },
+    {
+      "start": 3416.11,
+      "end": 3419.81,
+      "text": "probe so that you really scan the complete valve."
+    },
+    {
+      "start": 3420.54,
+      "end": 3428.15,
+      "text": "Here the color doppler is focused at the mycho valve and you might appreciate a slight"
+    },
+    {
+      "start": 3428.15,
+      "end": 3429.53,
+      "text": "very trace"
+    },
+    {
+      "start": 3430.0,
+      "end": 3435.4,
+      "text": "The urgent flow a little bit during sisterly, which is a minimal"
+    },
+    {
+      "start": 3435.4,
+      "end": 3439.96,
+      "text": "Mitchell regurgitation, also here in the epical form."
+    },
+    {
+      "start": 3440.0,
+      "end": 3449.89,
+      "text": "channel review, focusing at the last cycle. The Doppler ball shows us laminar flow."
+    },
+    {
+      "start": 3450.03,
+      "end": 3457.83,
+      "text": "bright red and blue colors and not much yellow or green colors, so not not much"
+    },
+    {
+      "start": 3457.83,
+      "end": 3459.97,
+      "text": "turbulence, so there is no signal."
+    },
+    {
+      "start": 3460.06,
+      "end": 3468.48,
+      "text": "significant flow acceleration and no significant regurgitation in that view from the"
+    },
+    {
+      "start": 3468.48,
+      "end": 3469.8,
+      "text": "The epic of Forch and the View."
+    },
+    {
+      "start": 3470.48,
+      "end": 3473.1,
+      "text": "So this will be this one here."
+    },
+    {
+      "start": 3474.77,
+      "end": 3479.19,
+      "text": "You might also turn the probe clockwise a little bit."
+    },
+    {
+      "start": 3480.0,
+      "end": 3489.98,
+      "text": "end up in the 5 chamber view where the outflow tract is now here in the middle of the image, not on the right."
+    },
+    {
+      "start": 3490.0,
+      "end": 3495.62,
+      "text": "side as in the epical long axis to you, but quite the opposite on the left side of the left"
+    },
+    {
+      "start": 3495.62,
+      "end": 3499.98,
+      "text": "at the atrium and we call this the apical 5 chamber view."
+    },
+    {
+      "start": 3500.96,
+      "end": 3508.78,
+      "text": "five chambers, while you see a little bit of the right atrium, the right ventricle, two"
+    },
+    {
+      "start": 3508.78,
+      "end": 3509.98,
+      "text": "jumpers left at your"
+    },
+    {
+      "start": 3510.0,
+      "end": 3516.07,
+      "text": "three chambers, left ventricle, the false chamber, and the fifth chamber is now"
+    },
+    {
+      "start": 3516.07,
+      "end": 3519.9,
+      "text": "not a really true chamber but it's a left ventricle outfit."
+    },
+    {
+      "start": 3520.13,
+      "end": 3528.53,
+      "text": "which is visualized here. That's why this view is called the so-called five-chemper view."
+    },
+    {
+      "start": 3528.79,
+      "end": 3529.71,
+      "text": "They are not truth."
+    },
+    {
+      "start": 3530.03,
+      "end": 3539.42,
+      "text": "live chambers, but the output track comes here as a 5th chamber, so again I activate the"
+    },
+    {
+      "start": 3539.42,
+      "end": 3539.88,
+      "text": "Call it up."
+    },
+    {
+      "start": 3540.0,
+      "end": 3545.72,
+      "text": "also in this view and this is nice to visualize the outflow across the"
+    },
+    {
+      "start": 3545.72,
+      "end": 3549.97,
+      "text": "biotic bath to look for aortic regurgitation. Of course, that"
+    },
+    {
+      "start": 3550.0,
+      "end": 3555.39,
+      "text": "can be done in the same manner in the apical long axis view. In the apical 4 channel view,"
+    },
+    {
+      "start": 3555.39,
+      "end": 3559.1,
+      "text": "we typically activate"
+    },
+    {
+      "start": 3560.0,
+      "end": 3568.35,
+      "text": "the pulse wave Doppler, the pulse wave Doppler for the documentation of"
+    },
+    {
+      "start": 3568.35,
+      "end": 3569.73,
+      "text": "mitral inflow"
+    },
+    {
+      "start": 3570.67,
+      "end": 3576.29,
+      "text": "The parts wave Doppler has a sample volume, it measures the flow just within the sample"
+    },
+    {
+      "start": 3576.29,
+      "end": 3579.97,
+      "text": "volume indicated by these two small bars here."
+    },
+    {
+      "start": 3580.0,
+      "end": 3588.91,
+      "text": "And this is positioned at the level of the mitral leaflet tips, so if I would go back here to the"
+    },
+    {
+      "start": 3590.32,
+      "end": 3593.84,
+      "text": "with the applicable 4-chambe view, let's go frame by frame."
+    },
+    {
+      "start": 3594.38,
+      "end": 3599.7,
+      "text": "I would position here the sample volume just at this level."
+    },
+    {
+      "start": 3600.06,
+      "end": 3608.74,
+      "text": "between the opening of the mitral leaflet tips and that gives me the mitral inflow signal in a"
+    },
+    {
+      "start": 3608.74,
+      "end": 3609.88,
+      "text": "Pathway Stoppers"
+    },
+    {
+      "start": 3610.0,
+      "end": 3618.63,
+      "text": "signal, where we have here the codex cycle, sisterly, and after the end of sisterly, my"
+    },
+    {
+      "start": 3618.63,
+      "end": 3619.85,
+      "text": "actually inflows dark."
+    },
+    {
+      "start": 3620.03,
+      "end": 3626.82,
+      "text": "That is the early filling wave, the E-wave and then in this patient here we have a"
+    },
+    {
+      "start": 3626.82,
+      "end": 3629.79,
+      "text": "Bradie Cardiac, heart rate is below"
+    },
+    {
+      "start": 3630.0,
+      "end": 3639.67,
+      "text": "50 in this trained athletic female. We have a long time where there is no flow."
+    },
+    {
+      "start": 3640.0,
+      "end": 3649.13,
+      "text": "diastolic diastasis, as it is called. And then we have a small second peak and that is the"
+    },
+    {
+      "start": 3649.13,
+      "end": 3649.83,
+      "text": "a true contract."
+    },
+    {
+      "start": 3650.77,
+      "end": 3652.85,
+      "text": "So we have E-Wave and A-Wave."
+    },
+    {
+      "start": 3653.95,
+      "end": 3657.23,
+      "text": "Atrial contraction ends with the onset of systole"
+    },
+    {
+      "start": 3657.77,
+      "end": 3659.97,
+      "text": "and due to predicardia, there..."
+    },
+    {
+      "start": 3660.0,
+      "end": 3668.12,
+      "text": "is this long period where there is no flow. So diastole here is very long and flow is already"
+    },
+    {
+      "start": 3668.12,
+      "end": 3669.92,
+      "text": "happening in early diastole."
+    },
+    {
+      "start": 3670.7,
+      "end": 3678.14,
+      "text": "actually also the atrial contraction wave is very small here, this does not indicate"
+    },
+    {
+      "start": 3678.14,
+      "end": 3679.68,
+      "text": "that atrial contraction"
+    },
+    {
+      "start": 3680.0,
+      "end": 3688.06,
+      "text": "poor, it just indicates that there is not much flow during this period. Most of the flow has happened"
+    },
+    {
+      "start": 3688.06,
+      "end": 3689.1,
+      "text": "during early"
+    },
+    {
+      "start": 3690.0,
+      "end": 3694.4,
+      "text": "and there is not much left to fill the left ventriculant."
+    },
+    {
+      "start": 3694.5,
+      "end": 3699.04,
+      "text": "That is why the e-wave here is quite small."
+    },
+    {
+      "start": 3700.0,
+      "end": 3709.86,
+      "text": "We can measure here the E2A ratio though I go for the mitral valve EA velocity and I would"
+    },
+    {
+      "start": 3710.0,
+      "end": 3715.55,
+      "text": "Now, measure the maximum early inflow velocity."
+    },
+    {
+      "start": 3715.95,
+      "end": 3719.97,
+      "text": "Please note that I tend not to measure..."
+    },
+    {
+      "start": 3720.0,
+      "end": 3729.78,
+      "text": "measure the absolute maximum small signal but I tend to stay"
+    },
+    {
+      "start": 3730.03,
+      "end": 3736.85,
+      "text": "within this broader part here which is the so-called modal velocity so most of the"
+    },
+    {
+      "start": 3736.85,
+      "end": 3739.71,
+      "text": "the blood volume flows with this"
+    },
+    {
+      "start": 3740.32,
+      "end": 3749.9,
+      "text": "with the velocities within divide this white range or in this case here yellow range, so I don't go to"
+    },
+    {
+      "start": 3750.03,
+      "end": 3756.98,
+      "text": "the absolute maximum, I stay a little bit within here and then I indicate the E wave, I indicate"
+    },
+    {
+      "start": 3756.98,
+      "end": 3759.86,
+      "text": "Typically, in this measurement, also the distillation."
+    },
+    {
+      "start": 3760.13,
+      "end": 3767.37,
+      "text": "how long it takes to deserate again to zero and then the system wants me also to"
+    },
+    {
+      "start": 3767.37,
+      "end": 3769.55,
+      "text": "indicates a maximum a wave."
+    },
+    {
+      "start": 3770.0,
+      "end": 3777.0,
+      "text": "also try to stay within here and we have an EA ratio which is quite high here with 2.6"
+    },
+    {
+      "start": 3777.0,
+      "end": 3779.53,
+      "text": "and we have a deseration time."
+    },
+    {
+      "start": 3780.13,
+      "end": 3783.19,
+      "text": "which if you look it up, it is quite short."
+    },
+    {
+      "start": 3784.31,
+      "end": 3789.45,
+      "text": "So you might think that this is a restrictive feeling."
+    },
+    {
+      "start": 3790.06,
+      "end": 3799.97,
+      "text": "pattern, which should be a pathologic situation. Well, in fact, this can also be seen in"
+    },
+    {
+      "start": 3800.0,
+      "end": 3807.19,
+      "text": "super-healthy, super-relexing left ventricles. This is a pseudo-restrictive"
+    },
+    {
+      "start": 3807.19,
+      "end": 3809.97,
+      "text": "filling pattern actually, but that is a"
+    },
+    {
+      "start": 3810.13,
+      "end": 3816.79,
+      "text": "topic for another lecture. So in this case here, this is a normal situation. This is a healthy ventricle"
+    },
+    {
+      "start": 3816.79,
+      "end": 3819.11,
+      "text": "and most of the blood"
+    },
+    {
+      "start": 3820.22,
+      "end": 3829.9,
+      "text": "during diastolic phase, there is predicaria and there is a long time, much more time."
+    },
+    {
+      "start": 3830.03,
+      "end": 3836.23,
+      "text": "filling that is needed and most of the volume has entered during early"
+    },
+    {
+      "start": 3836.23,
+      "end": 3839.89,
+      "text": "diastole. There is a good relaxation, a good suction if"
+    },
+    {
+      "start": 3840.0,
+      "end": 3846.58,
+      "text": "of the left ventricle and there is only a small volume left which enters the left ventricle"
+    },
+    {
+      "start": 3846.58,
+      "end": 3849.8,
+      "text": "after atrial contraction. That gets rise to a small"
+    },
+    {
+      "start": 3850.1,
+      "end": 3858.24,
+      "text": "away, but this is where we measure E and A ratio. So after the standard measurement of the"
+    },
+    {
+      "start": 3858.24,
+      "end": 3859.54,
+      "text": "the mitral inflow pattern."
+    },
+    {
+      "start": 3860.0,
+      "end": 3866.44,
+      "text": "We might take a closer look on cardiac function by comparing the mitral inflow"
+    },
+    {
+      "start": 3867.24,
+      "end": 3869.76,
+      "text": "to the long axis function or so that"
+    },
+    {
+      "start": 3870.0,
+      "end": 3879.97,
+      "text": "They told you going back to the applicant fortune with 2D image, there is a significant long axis motion of the left ventricle."
+    },
+    {
+      "start": 3880.84,
+      "end": 3889.62,
+      "text": "So it's not on the inward contraction by thickening, but there is also shortening of the"
+    },
+    {
+      "start": 3890.0,
+      "end": 3896.0,
+      "text": "left ventricular cavity during myocardial contraction. That gives rise to a displacement"
+    },
+    {
+      "start": 3896.0,
+      "end": 3899.97,
+      "text": "of the atro ventricle of the avial client."
+    },
+    {
+      "start": 3900.0,
+      "end": 3906.16,
+      "text": "the atroventricular plane in the direction of the long axis of the ventricle."
+    },
+    {
+      "start": 3907.23,
+      "end": 3909.61,
+      "text": "There are different approaches how to measure this."
+    },
+    {
+      "start": 3910.0,
+      "end": 3918.89,
+      "text": "In another week video, I show you how to measure this by left ventricular strain analysis, and"
+    },
+    {
+      "start": 3920.16,
+      "end": 3929.75,
+      "text": "Easy or a simple method to look at long axis function is to activate the kind of M mode."
+    },
+    {
+      "start": 3930.42,
+      "end": 3934.28,
+      "text": "So to set a line across the left ventricle,"
+    },
+    {
+      "start": 3934.95,
+      "end": 3938.07,
+      "text": "at the hinge points of the mitre valve leaflet,"
+    },
+    {
+      "start": 3938.63,
+      "end": 3939.87,
+      "text": "I might try to do this."
+    },
+    {
+      "start": 3940.0,
+      "end": 3945.64,
+      "text": "here I can activate here a kind of emote and I place this here at the septal"
+    },
+    {
+      "start": 3945.64,
+      "end": 3947.94,
+      "text": "hinge point and that's a lateral hinge point."
+    },
+    {
+      "start": 3950.13,
+      "end": 3959.13,
+      "text": "I did this here in this recording with an original emote, the one that you saw before, it's"
+    },
+    {
+      "start": 3959.13,
+      "end": 3959.85,
+      "text": "a kind of post."
+    },
+    {
+      "start": 3960.1,
+      "end": 3963.34,
+      "text": "processing of the 2D image, but here this is a true"
+    },
+    {
+      "start": 3963.34,
+      "end": 3969.96,
+      "text": "remote. And what you now see here is that we pick up the motion."
+    },
+    {
+      "start": 3970.0,
+      "end": 3977.34,
+      "text": "of this atroventricular plane. And this is picked up here. So this is the motion of the atroventricular plane."
+    },
+    {
+      "start": 3977.78,
+      "end": 3979.98,
+      "text": "You have this strong reflex here."
+    },
+    {
+      "start": 3980.03,
+      "end": 3989.16,
+      "text": "and you can measure now this excursion. I have to use here"
+    },
+    {
+      "start": 3990.13,
+      "end": 3999.76,
+      "text": "Generic measurement because it's not integrated in the menu here, but you can also define your own measurement."
+    },
+    {
+      "start": 4000.19,
+      "end": 4008.78,
+      "text": "this mitral annular brain excursion, systolic excursion, and that is a so-called"
+    },
+    {
+      "start": 4008.78,
+      "end": 4008.86,
+      "text": "What?"
+    },
+    {
+      "start": 4009.12,
+      "end": 4009.58,
+      "text": "Mapsy?"
+    },
+    {
+      "start": 4010.0,
+      "end": 4019.84,
+      "text": "and you measure now from the end diastole and let's stay on the line here up to the end systole so the"
+    },
+    {
+      "start": 4020.0,
+      "end": 4026.94,
+      "text": "in red motion and that gives you a value of 15 millimeters for the septal hinge point here."
+    },
+    {
+      "start": 4027.5,
+      "end": 4029.98,
+      "text": "So that's a long axis function at the septal"
+    },
+    {
+      "start": 4030.1,
+      "end": 4036.55,
+      "text": "level and we can also do this for the lateral level so this is here across some"
+    },
+    {
+      "start": 4036.55,
+      "end": 4039.15,
+      "text": "lateral aspect of the mitral valve."
+    },
+    {
+      "start": 4040.51,
+      "end": 4049.03,
+      "text": "again I measure here a generic measurement and I measure here typically more it's a"
+    },
+    {
+      "start": 4049.03,
+      "end": 4049.85,
+      "text": "lateral level"
+    },
+    {
+      "start": 4050.51,
+      "end": 4057.1,
+      "text": "a little bit more 16mm motion in the"
+    },
+    {
+      "start": 4057.1,
+      "end": 4059.97,
+      "text": "the Epochow direction. So this is..."
+    },
+    {
+      "start": 4060.0,
+      "end": 4067.09,
+      "text": "the measurement of MAPSA. Most of you know this apical measurement for the right"
+    },
+    {
+      "start": 4067.09,
+      "end": 4069.97,
+      "text": "ventricle, the tricuspid and your neocyst."
+    },
+    {
+      "start": 4070.03,
+      "end": 4077.92,
+      "text": "excursions, it taps a value, which is frequently used for the right ventricle in the presence"
+    },
+    {
+      "start": 4077.92,
+      "end": 4079.24,
+      "text": "of pulmonary hypertension."
+    },
+    {
+      "start": 4080.06,
+      "end": 4082.32,
+      "text": "or suspected pulmonary embolism."
+    },
+    {
+      "start": 4083.26,
+      "end": 4084.94,
+      "text": "Another way to look at long axis function"
+    },
+    {
+      "start": 4084.94,
+      "end": 4086.1,
+      "text": "is a tissue Doppler."
+    },
+    {
+      "start": 4086.96,
+      "end": 4089.98,
+      "text": "The tissue Doppler you switch to tissue Doppler."
+    },
+    {
+      "start": 4090.03,
+      "end": 4094.77,
+      "text": "you change a little bit the settings of the color Doppler, and you focus on the"
+    },
+    {
+      "start": 4094.77,
+      "end": 4099.83,
+      "text": "motion of the Maya Cardio wall. Then you can also place sample"
+    },
+    {
+      "start": 4100.0,
+      "end": 4105.41,
+      "text": "volume here at these hinge points. It's a point of the basal septum where the"
+    },
+    {
+      "start": 4105.41,
+      "end": 4109.97,
+      "text": "mitral reflux attaches and anti-addicts."
+    },
+    {
+      "start": 4110.0,
+      "end": 4116.32,
+      "text": "you get in a kind of, in a pulse wave, Doppler spectrum, you get now the velocities of motion"
+    },
+    {
+      "start": 4116.58,
+      "end": 4119.84,
+      "text": "Just to explain."
+    },
+    {
+      "start": 4120.0,
+      "end": 4125.88,
+      "text": "that again look at the ECG this is sisterly here and during sisterly you have a"
+    },
+    {
+      "start": 4125.88,
+      "end": 4129.98,
+      "text": "positive motion of this of this point towards the"
+    },
+    {
+      "start": 4130.0,
+      "end": 4138.26,
+      "text": "apex. That is the apical long axis direction. And then during diastole, you have a one-negative"
+    },
+    {
+      "start": 4138.26,
+      "end": 4138.8,
+      "text": "Wave"
+    },
+    {
+      "start": 4140.29,
+      "end": 4147.17,
+      "text": "and a second negative wave. And that corresponds in time to the E wave and the A wave of the"
+    },
+    {
+      "start": 4147.17,
+      "end": 4149.97,
+      "text": "mitral valve just pointing going in"
+    },
+    {
+      "start": 4150.06,
+      "end": 4156.22,
+      "text": "the opposite direction because the ventricle is moving downwards towards during normal"
+    },
+    {
+      "start": 4156.66,
+      "end": 4159.84,
+      "text": "So this is a systolic wave. This is the"
+    },
+    {
+      "start": 4160.03,
+      "end": 4164.47,
+      "text": "the early diastolic wave, and this is the late diastolic wave, the atrial contraction"
+    },
+    {
+      "start": 4164.47,
+      "end": 4169.97,
+      "text": "wave, the a-wave. You also notice here that there are some..."
+    },
+    {
+      "start": 4170.0,
+      "end": 4175.74,
+      "text": "short lift events between the A-wave and the S-wave and that is during the"
+    },
+    {
+      "start": 4175.74,
+      "end": 4179.89,
+      "text": "eyes of volumic contraction period and there is another one"
+    },
+    {
+      "start": 4180.06,
+      "end": 4183.2,
+      "text": "here during the either volumic relaxation period."
+    },
+    {
+      "start": 4183.74,
+      "end": 4189.26,
+      "text": "If you now measure the velocity"
+    },
+    {
+      "start": 4190.29,
+      "end": 4195.69,
+      "text": "of the e-wave in the septal pulse wave Doppler."
+    },
+    {
+      "start": 4196.49,
+      "end": 4198.97,
+      "text": "That is what we call it e-prime."
+    },
+    {
+      "start": 4200.74,
+      "end": 4209.68,
+      "text": "So then you get an E2E prime ratio, which is here 9.proxy"
+    },
+    {
+      "start": 4210.0,
+      "end": 4218.7,
+      "text": "approximately 9.5, which is a relatively low value, not a very low value, but it is not"
+    },
+    {
+      "start": 4218.7,
+      "end": 4219.86,
+      "text": "significantly elevated."
+    },
+    {
+      "start": 4220.0,
+      "end": 4224.81,
+      "text": "and it's frequently seen in healthy people."
+    },
+    {
+      "start": 4225.58,
+      "end": 4229.87,
+      "text": "We can do the same measurement on the lateral level."
+    },
+    {
+      "start": 4230.7,
+      "end": 4239.9,
+      "text": "So I do here now another measurement. I hope it shows up on the lateral value. Now it gives me only"
+    },
+    {
+      "start": 4240.0,
+      "end": 4247.68,
+      "text": "the E prime is 0.11. It doesn't give me the calculation because I did this already in the"
+    },
+    {
+      "start": 4247.68,
+      "end": 4249.88,
+      "text": "It's the last one, but again, you can kick."
+    },
+    {
+      "start": 4250.0,
+      "end": 4259.97,
+      "text": "the E2E prime for the lateral and well let's do it briefly. We repeat the measurement of the E2E of the E2E."
+    },
+    {
+      "start": 4260.0,
+      "end": 4267.57,
+      "text": "A will velocity just doing that briefly that should give us the ratio and here the ratio comes"
+    },
+    {
+      "start": 4267.57,
+      "end": 4269.97,
+      "text": "thumbs up for the lateral wall with 6..."
+    },
+    {
+      "start": 4270.1,
+      "end": 4278.36,
+      "text": "which is a significantly low level low value indicating that there is that's a left"
+    },
+    {
+      "start": 4278.36,
+      "end": 4279.68,
+      "text": "if ventricle has a good relaxation."
+    },
+    {
+      "start": 4280.03,
+      "end": 4284.77,
+      "text": "property and that's a left and diastolic pressure is not elevated."
+    },
+    {
+      "start": 4284.77,
+      "end": 4289.96,
+      "text": "so for the autic valve I typically use the apical 5-champ review you may also"
+    },
+    {
+      "start": 4290.06,
+      "end": 4296.54,
+      "text": "to use the optical long axis to image the outflow tract and the optic valve."
+    },
+    {
+      "start": 4297.22,
+      "end": 4299.96,
+      "text": "Please note that if you use the optical 5-champion,"
+    },
+    {
+      "start": 4300.0,
+      "end": 4306.9,
+      "text": "you, don't just tilt the probe from the fortune review but rotate it slightly in the clockwise"
+    },
+    {
+      "start": 4306.9,
+      "end": 4307.76,
+      "text": "direction."
+    },
+    {
+      "start": 4308.67,
+      "end": 4309.83,
+      "text": "Now, you can"
+    },
+    {
+      "start": 4310.0,
+      "end": 4316.19,
+      "text": "place a pulse wave Doppler sample. You may look first at the color Doppler, look for turbulence,"
+    },
+    {
+      "start": 4316.83,
+      "end": 4319.97,
+      "text": "but then you place the pulse wave Doppler sample at the"
+    },
+    {
+      "start": 4320.0,
+      "end": 4326.29,
+      "text": "level of the outflow tract and later activates a continuous wave topper."
+    },
+    {
+      "start": 4327.01,
+      "end": 4329.61,
+      "text": "Unfortunately I noticed that in this particular patient"
+    },
+    {
+      "start": 4330.0,
+      "end": 4337.94,
+      "text": "have forgotten to store the Autic Doppler, so I will explain that to you in another"
+    },
+    {
+      "start": 4337.94,
+      "end": 4339.9,
+      "text": "However, I'll see as"
+    },
+    {
+      "start": 4340.51,
+      "end": 4348.87,
+      "text": "Here I have the pulse wave Doppler signal in the left ventured loud retract and you see the Doppler spectrum."
+    },
+    {
+      "start": 4350.26,
+      "end": 4352.3,
+      "text": "So notice, this is the zero line."
+    },
+    {
+      "start": 4352.64,
+      "end": 4356.09,
+      "text": "Everything that is below the zero line"
+    },
+    {
+      "start": 4356.09,
+      "end": 4359.97,
+      "text": "is flowing away from the transducer away from the"
+    },
+    {
+      "start": 4360.0,
+      "end": 4366.6,
+      "text": "apex and obviously from the left ventricle into the order. You have a typical"
+    },
+    {
+      "start": 4366.6,
+      "end": 4369.94,
+      "text": "pulsed wave Doppler spectrum with a movement"
+    },
+    {
+      "start": 4370.0,
+      "end": 4379.91,
+      "text": "outer velocity. So you have this bright spectrum at the outer border defining the outer border."
+    },
+    {
+      "start": 4380.03,
+      "end": 4386.95,
+      "text": "of this flow velocity spectrum and this is this is depending on the amount of"
+    },
+    {
+      "start": 4386.95,
+      "end": 4389.75,
+      "text": "blood cells that are moving with the same velocity."
+    },
+    {
+      "start": 4390.03,
+      "end": 4397.51,
+      "text": "They are accelerating during sisterly, they reach a certain peak and then this velocity"
+    },
+    {
+      "start": 4397.51,
+      "end": 4398.97,
+      "text": "is decelerating again."
+    },
+    {
+      "start": 4400.0,
+      "end": 4407.38,
+      "text": "And there are not many blood cells during systole, which are flowing with a load velocity."
+    },
+    {
+      "start": 4407.72,
+      "end": 4409.98,
+      "text": "So this is why this inner part of..."
+    },
+    {
+      "start": 4410.03,
+      "end": 4419.12,
+      "text": "this Doppler spectrum remains very dark or black. If you want to measure here you have the"
+    },
+    {
+      "start": 4420.54,
+      "end": 4429.64,
+      "text": "is the outflow tracked and you might then look at the left ventricular outflow tracked tracing."
+    },
+    {
+      "start": 4430.48,
+      "end": 4439.5,
+      "text": "So I trace this spectrum here, go back to zero, I indicate the heart rate, and"
+    },
+    {
+      "start": 4440.1,
+      "end": 4446.08,
+      "text": "And if you have measured the left ventricular outward tracked diameter before, which obviously"
+    },
+    {
+      "start": 4446.08,
+      "end": 4449.8,
+      "text": "has been done here in this case, you can get estimates."
+    },
+    {
+      "start": 4450.0,
+      "end": 4458.06,
+      "text": "on the left ventricle stroke volume and the cardiac output in this case here at rest because if you"
+    },
+    {
+      "start": 4460.42,
+      "end": 4468.82,
+      "text": "if you do the countering here, you integrate all velocities during sisterly, and if you know the"
+    },
+    {
+      "start": 4470.54,
+      "end": 4476.74,
+      "text": "The area of the outflow tract where the blood flows through, you can calculate stroke volume."
+    },
+    {
+      "start": 4480.35,
+      "end": 4489.63,
+      "text": "Having done this, the most important measurement in the routine setting is to place a continuous wave."
+    },
+    {
+      "start": 4490.06,
+      "end": 4491.7,
+      "text": "Doppler across the optic valve."
+    },
+    {
+      "start": 4492.36,
+      "end": 4498.04,
+      "text": "Why a continuous wave with a continuous wave Doppler you measure all the velocities across"
+    },
+    {
+      "start": 4498.04,
+      "end": 4499.96,
+      "text": "the whole line with a pulse wave."
+    },
+    {
+      "start": 4500.0,
+      "end": 4505.82,
+      "text": "If you measure only where your sample volume is, with a continuous wave, you measure all across the line."
+    },
+    {
+      "start": 4506.58,
+      "end": 4509.98,
+      "text": "And if you along this way, if you"
+    },
+    {
+      "start": 4510.0,
+      "end": 4518.88,
+      "text": "have a maximum velocity, which is like here below 1.5 centimeters per second, which is close"
+    },
+    {
+      "start": 4518.88,
+      "end": 4519.88,
+      "text": "close to one meter space."
+    },
+    {
+      "start": 4520.48,
+      "end": 4529.5,
+      "text": "So you have normal velocities, you know pretty sure that there is no pathologic flow"
+    },
+    {
+      "start": 4529.5,
+      "end": 4529.84,
+      "text": "Alexa."
+    },
+    {
+      "start": 4530.03,
+      "end": 4539.91,
+      "text": "on this way, so no significant hemodynamics denosis of, for example, here."
+    },
+    {
+      "start": 4540.0,
+      "end": 4549.33,
+      "text": "the optic valve. You may also like before do the tracing. This is useful in particular"
+    },
+    {
+      "start": 4549.33,
+      "end": 4549.97,
+      "text": "So, in pencil..."
+    },
+    {
+      "start": 4550.0,
+      "end": 4557.4,
+      "text": "with aortic stenosis and that's see what comes out here. Yeah, if we do the"
+    },
+    {
+      "start": 4557.4,
+      "end": 4559.96,
+      "text": "calculation here, this was would be"
+    },
+    {
+      "start": 4560.0,
+      "end": 4567.0,
+      "text": "a calculation of the eortic valve area by the continuity equation, and that would give"
+    },
+    {
+      "start": 4567.0,
+      "end": 4569.9,
+      "text": "a very large, erotic wealth area of"
+    },
+    {
+      "start": 4570.06,
+      "end": 4574.44,
+      "text": "more than four square centimeters, which is absolutely normal."
+    },
+    {
+      "start": 4574.66,
+      "end": 4576.94,
+      "text": "And of course, there is no stenosis present here."
+    },
+    {
+      "start": 4578.0,
+      "end": 4579.92,
+      "text": "So, coming back to..."
+    },
+    {
+      "start": 4580.03,
+      "end": 4587.11,
+      "text": "lady. Here I focused on the right ventricle. This is from the Epic of Fortune"
+    },
+    {
+      "start": 4587.11,
+      "end": 4589.67,
+      "text": "If you move the probe"
+    },
+    {
+      "start": 4590.16,
+      "end": 4595.32,
+      "text": "tilt it a little bit, you move it more laterally and tilt it a little bit to the right ventricle"
+    },
+    {
+      "start": 4595.32,
+      "end": 4599.9,
+      "text": "and then you might obtain such a focused right ventricle"
+    },
+    {
+      "start": 4600.0,
+      "end": 4609.97,
+      "text": "view. Here you have a nice view on the DryCuspid valve. You see the most of the wall of"
+    },
+    {
+      "start": 4610.03,
+      "end": 4619.98,
+      "text": "a free wall of the right ventricle. You might measure here the long axis function of the free wall of the right ventricle."
+    },
+    {
+      "start": 4620.0,
+      "end": 4625.18,
+      "text": "the so-called TAPSER value, Tri-Cospital and Neuralistolic Excursion."
+    },
+    {
+      "start": 4625.74,
+      "end": 4629.34,
+      "text": "So, a lot of important information."
+    },
+    {
+      "start": 4630.48,
+      "end": 4639.16,
+      "text": "I tried here to put a continuous wave Doppler probe across the tricuspid valve in the previous"
+    },
+    {
+      "start": 4639.16,
+      "end": 4639.88,
+      "text": "is colored up."
+    },
+    {
+      "start": 4640.0,
+      "end": 4649.96,
+      "text": "You saw that there was not any significant regurgitation across the valve and that also is seen here."
+    },
+    {
+      "start": 4650.0,
+      "end": 4658.96,
+      "text": "in the Doppler spectrum there is some signal here during sisterly and here also we can move"
+    },
+    {
+      "start": 4658.96,
+      "end": 4659.98,
+      "text": "one frame by frame."
+    },
+    {
+      "start": 4660.0,
+      "end": 4669.98,
+      "text": "also. So there is some signal but it's very hard to detect verses and and the velocities where it's clear."
+    },
+    {
+      "start": 4670.0,
+      "end": 4679.22,
+      "text": "are quite low. From the regurgent velocity, you would be able to measure the regurgent pressure block."
+    },
+    {
+      "start": 4680.29,
+      "end": 4686.7,
+      "text": "pressure difference across the tricospit valve. So let's just for as an example,"
+    },
+    {
+      "start": 4686.7,
+      "end": 4689.78,
+      "text": "let's just measure here while I estimate"
+    },
+    {
+      "start": 4690.0,
+      "end": 4698.26,
+      "text": "that maybe here could be the end of the signal. There is a regurgent velocity of 2.4 meters per"
+    },
+    {
+      "start": 4698.26,
+      "end": 4699.98,
+      "text": "second so that's the velocity from"
+    },
+    {
+      "start": 4700.0,
+      "end": 4705.22,
+      "text": "the right ventricle to the right HM, and this velocity is dependent on the pressure difference."
+    },
+    {
+      "start": 4705.94,
+      "end": 4709.72,
+      "text": "And this calculates after modified and simplified"
+    },
+    {
+      "start": 4710.0,
+      "end": 4719.62,
+      "text": "newly equation the 2.4 meters per second calculate to a pressure difference of roughly 23 millimeters of mercury."
+    },
+    {
+      "start": 4720.67,
+      "end": 4729.98,
+      "text": "And this pressure difference, you would add the right atrial pressure, which is probably relatively low here, so add a few"
+    },
+    {
+      "start": 4730.0,
+      "end": 4739.82,
+      "text": "millimeters of mercury to 23. So around about we get 25 millimeters of mercury, and that would equal to the"
+    },
+    {
+      "start": 4740.22,
+      "end": 4744.42,
+      "text": "maximum systolic pressure in the pulmonary artery."
+    },
+    {
+      "start": 4745.16,
+      "end": 4747.64,
+      "text": "So we have a systolic pressure in the pulmonary artery"
+    },
+    {
+      "start": 4747.64,
+      "end": 4749.66,
+      "text": "below 30 millimeters of mercury."
+    },
+    {
+      "start": 4750.32,
+      "end": 4754.02,
+      "text": "and this effectively rules out significant"
+    },
+    {
+      "start": 4754.02,
+      "end": 4759.89,
+      "text": "pulmonary hypertension. From this sub-costal view"
+    },
+    {
+      "start": 4760.0,
+      "end": 4767.7,
+      "text": "we call this the sub-costal 4-chamber view. You can tilt your probe towards the liver and the cave"
+    },
+    {
+      "start": 4767.7,
+      "end": 4769.82,
+      "text": "Inferiora Inferiora"
+    },
+    {
+      "start": 4770.16,
+      "end": 4778.19,
+      "text": "and then you look at the diameter of the left inferior vena caver to estimate the right"
+    },
+    {
+      "start": 4778.19,
+      "end": 4779.35,
+      "text": "atrial filling pressure."
+    },
+    {
+      "start": 4780.0,
+      "end": 4789.72,
+      "text": "You should take a look whether it's chronically dilated, whether it's collapsing, and of course you can put a doppler."
+    },
+    {
+      "start": 4790.0,
+      "end": 4796.52,
+      "text": "boppler sample volume inside a liver vein. There is typically one liver"
+    },
+    {
+      "start": 4796.52,
+      "end": 4798.74,
+      "text": "which enters the"
+    },
+    {
+      "start": 4800.96,
+      "end": 4808.18,
+      "text": "in a way that it's ideal for a Doppler measurement."
+    },
+    {
+      "start": 4808.88,
+      "end": 4809.98,
+      "text": "And here you see..."
+    },
+    {
+      "start": 4810.0,
+      "end": 4817.08,
+      "text": "see there is a biophasic inflow at sisterly but also doing early diastole in this healthy"
+    },
+    {
+      "start": 4817.08,
+      "end": 4819.76,
+      "text": "the woman if you"
+    },
+    {
+      "start": 4820.51,
+      "end": 4826.63,
+      "text": "have a less healthy person with a right ventricular hypertension or with more significant"
+    },
+    {
+      "start": 4826.63,
+      "end": 4829.77,
+      "text": "in tricuspid rebuditation, then you would notice."
+    },
+    {
+      "start": 4830.32,
+      "end": 4837.32,
+      "text": "very significant systolic backflow due to the high pressure due to the high"
+    },
+    {
+      "start": 4837.32,
+      "end": 4839.96,
+      "text": "Afterload. And that's kind of, this kind of..."
+    },
+    {
+      "start": 4840.0,
+      "end": 4846.5,
+      "text": "be very nicely picked up by this liver vein dapper which should be part of every exam"
+    },
+    {
+      "start": 4846.5,
+      "end": 4849.54,
+      "text": "where you see clear pathology on the right side."
+    },
+    {
+      "start": 4850.77,
+      "end": 4859.97,
+      "text": "From the sub-costal 4-chamber view, as you see it here, you can very elegantly image this."
+    },
+    {
+      "start": 4860.0,
+      "end": 4867.22,
+      "text": "inter atrial septum, you can put a color, a Doppler across the septum here, I'm"
+    },
+    {
+      "start": 4867.22,
+      "end": 4869.82,
+      "text": "sorry I haven't an example here from this exam."
+    },
+    {
+      "start": 4870.54,
+      "end": 4874.5,
+      "text": "But this would give you an ideal view on atrial subtle defects,"
+    },
+    {
+      "start": 4874.86,
+      "end": 4879.0,
+      "text": "which would go from the left atrium to the right atrium"
+    },
+    {
+      "start": 4879.0,
+      "end": 4879.82,
+      "text": "just in the direction."
+    },
+    {
+      "start": 4880.0,
+      "end": 4886.84,
+      "text": "of the transuser here, but you can also subconsciously tilt the probe and try to obtain short axis views"
+    },
+    {
+      "start": 4886.84,
+      "end": 4889.56,
+      "text": "as seen here, of course."
+    },
+    {
+      "start": 4890.0,
+      "end": 4898.64,
+      "text": "You have to then rearrange the segments of the left ventricle in your mind."
+    },
+    {
+      "start": 4900.0,
+      "end": 4905.72,
+      "text": "And if you then tilt more to the cranial direction, you might get an idea view on the right"
+    },
+    {
+      "start": 4905.72,
+      "end": 4909.36,
+      "text": "ventricular outflow tract ideal for Doppler."
+    },
+    {
+      "start": 4910.06,
+      "end": 4915.38,
+      "text": "And for judgment, whether there is significant pathology."
+    },
+    {
+      "start": 4917.9,
+      "end": 4919.98,
+      "text": "Of course, this is also a good plan."
+    },
+    {
+      "start": 4920.0,
+      "end": 4927.04,
+      "text": "or placing a Doppler signal either by pulse wave or by continuous wave imaging."
+    },
+    {
+      "start": 4927.59,
+      "end": 4929.97,
+      "text": "Well, if you want to..."
+    },
+    {
+      "start": 4930.32,
+      "end": 4935.21,
+      "text": "measure ejection fraction and if you want to learn about the size of solar"
+    },
+    {
+      "start": 4935.21,
+      "end": 4939.65,
+      "text": "ventricle, you have to do the contouring and"
+    },
+    {
+      "start": 4940.0,
+      "end": 4947.43,
+      "text": "you cannot estimate this only visually, although we see here that the function, the"
+    },
+    {
+      "start": 4947.43,
+      "end": 4949.45,
+      "text": "the judgement fraction looks pretty normal."
+    },
+    {
+      "start": 4950.16,
+      "end": 4955.96,
+      "text": "If you need a quantitative number, we have to do some contouring."
+    },
+    {
+      "start": 4956.62,
+      "end": 4959.96,
+      "text": "Before I had to do"
+    },
+    {
+      "start": 4960.0,
+      "end": 4969.04,
+      "text": "is manually I will show you the auto EF method which is based on the artificial intelligence"
+    },
+    {
+      "start": 4969.56,
+      "end": 4969.98,
+      "text": "Hey, f***!"
+    },
+    {
+      "start": 4970.0,
+      "end": 4976.7,
+      "text": "choose for the Auto-EF, in this case the device already detects that this is the"
+    },
+    {
+      "start": 4976.7,
+      "end": 4978.24,
+      "text": "typical four-chum-be-view."
+    },
+    {
+      "start": 4980.0,
+      "end": 4989.08,
+      "text": "automatically detected and already some contours are drawn. However, as you know from this image,"
+    },
+    {
+      "start": 4989.08,
+      "end": 4989.8,
+      "text": "the epical"
+    },
+    {
+      "start": 4990.54,
+      "end": 4999.27,
+      "text": "The apex seems to be a little bit for shortened, that's why I make here some corrections, maybe not so much."
+    },
+    {
+      "start": 5000.0,
+      "end": 5006.4,
+      "text": "And when I'm happy with the contouring we have the septum and the lateral wall, I press"
+    },
+    {
+      "start": 5006.4,
+      "end": 5007.18,
+      "text": "on the process."
+    },
+    {
+      "start": 5008.26,
+      "end": 5009.56,
+      "text": "The image."
+    },
+    {
+      "start": 5010.0,
+      "end": 5018.26,
+      "text": "the loop is tracked through the loop and we obtain an ejection fraction of 56% which is in the"
+    },
+    {
+      "start": 5018.26,
+      "end": 5019.94,
+      "text": "Low range but quiet"
+    },
+    {
+      "start": 5020.0,
+      "end": 5027.4,
+      "text": "typical for athletic persons at rest they don't have a high ejection"
+    },
+    {
+      "start": 5027.4,
+      "end": 5029.82,
+      "text": "They are very happy with their low normal"
+    },
+    {
+      "start": 5030.03,
+      "end": 5036.91,
+      "text": "ejection fraction and you also see the value for the end diastolic and end"
+    },
+    {
+      "start": 5036.91,
+      "end": 5039.97,
+      "text": "historic volumes 142 and 144"
+    },
+    {
+      "start": 5040.03,
+      "end": 5045.84,
+      "text": "I feel litters. You can stick to the mono plane ejection fraction measurement but if you want"
+    },
+    {
+      "start": 5045.84,
+      "end": 5049.9,
+      "text": "to be more precise you add a second plane."
+    },
+    {
+      "start": 5050.0,
+      "end": 5059.84,
+      "text": "and this is typically the article for chamber view as I have it here again I do"
+    },
+    {
+      "start": 5060.0,
+      "end": 5068.23,
+      "text": "some corrections for the wall detection, I press on recess and now the second"
+    },
+    {
+      "start": 5068.23,
+      "end": 5069.77,
+      "text": "plane is analyzed and added."
+    },
+    {
+      "start": 5070.48,
+      "end": 5075.7,
+      "text": "And we obtain ejection fraction here in the two chamber view."
+    },
+    {
+      "start": 5075.84,
+      "end": 5079.86,
+      "text": "It's automatically identified of 57%."
+    },
+    {
+      "start": 5081.24,
+      "end": 5085.79,
+      "text": "and an anti-historic volume of 180 milliliters."
+    },
+    {
+      "start": 5086.71,
+      "end": 5089.31,
+      "text": "The bi-plane ejection fraction for both"
+    },
+    {
+      "start": 5090.06,
+      "end": 5093.78,
+      "text": "the epic of fortune and two chamber view is 56%"
+    },
+    {
+      "start": 5094.62,
+      "end": 5099.96,
+      "text": "you can calculate because he knows the stroke volume and the heart rate you can calculate a cardic out"
+    },
+    {
+      "start": 5100.13,
+      "end": 5108.01,
+      "text": "which is calculated here to a quite low value address, and you have the heart rate here."
+    },
+    {
+      "start": 5110.0,
+      "end": 5112.94,
+      "text": "of course, and you'll see the anti-diastolic and"
+    },
+    {
+      "start": 5112.94,
+      "end": 5116.22,
+      "text": "end systolic values in bi-plane fashion for 110"
+    },
+    {
+      "start": 5116.22,
+      "end": 5119.94,
+      "text": "milliliters and 49 milliliters, which is in the norm."
+    },
+    {
+      "start": 5120.22,
+      "end": 5129.92,
+      "text": "So we went through complete to the echo exam in detail. I hope you enjoyed it and you learned"
+    },
+    {
+      "start": 5130.0,
+      "end": 5137.8,
+      "text": "a bit. I tried to show you what to look at, how to measure a few things. Of course there's"
+    },
+    {
+      "start": 5137.8,
+      "end": 5139.98,
+      "text": "much more to learn and we just"
+    },
+    {
+      "start": 5140.0,
+      "end": 5145.98,
+      "text": "looked at normal, healthy, athlete. Of course there are a lot of"
+    },
+    {
+      "start": 5145.98,
+      "end": 5149.66,
+      "text": "pathologies, which I will try to explain in further videos."
+    },
+    {
+      "start": 5150.1,
+      "end": 5151.44,
+      "text": "Thank you very much for your attention."
+    },
+    {
+      "start": 5681.54,
+      "end": 5681.58,
+      "text": "I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry"
+    }
+  ]
+}

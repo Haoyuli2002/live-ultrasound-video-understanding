@@ -1,0 +1,323 @@
+{
+  "video_id": "E1tmS9Lv1bU",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/E1tmS9Lv1bU/asr.txt",
+  "segments": [
+    {
+      "start": 13.71,
+      "end": 19.65,
+      "text": "The saffodist nerve block is useful for medial knee surgery, medial leg surgery."
+    },
+    {
+      "start": 20.0,
+      "end": 26.27,
+      "text": "medial ankle and foot surgery. The saphenous nerve is a continuation of the femoral nerve below the"
+    },
+    {
+      "start": 26.56,
+      "end": 29.97,
+      "text": "knee. This is a good block to do in conjunction with the p-"
+    },
+    {
+      "start": 30.0,
+      "end": 34.9,
+      "text": "Neuroplatial sciatic nerve block to give you complete anesthesia below the knee."
+    },
+    {
+      "start": 37.07,
+      "end": 39.97,
+      "text": "To perform the saffonous nerve block, we take..."
+    },
+    {
+      "start": 40.0,
+      "end": 41.6,
+      "text": "typically use a linear probe."
+    },
+    {
+      "start": 42.04,
+      "end": 45.49,
+      "text": "The linear probe allows us to get good resolution"
+    },
+    {
+      "start": 45.49,
+      "end": 47.01,
+      "text": "and reasonable penetration."
+    },
+    {
+      "start": 48.13,
+      "end": 49.97,
+      "text": "Typical settings for the saffron."
+    },
+    {
+      "start": 50.0,
+      "end": 57.06,
+      "text": "this nerve block, start between 4 and 6 centimeters total depth, expecting the nerve to be between"
+    },
+    {
+      "start": 57.06,
+      "end": 58.82,
+      "text": "2 and 4 centimeters."
+    },
+    {
+      "start": 60.77,
+      "end": 62.65,
+      "text": "Now, the saffonous nerve is a small nerve"
+    },
+    {
+      "start": 62.65,
+      "end": 64.61,
+      "text": "and we may not see it in everybody."
+    },
+    {
+      "start": 65.03,
+      "end": 66.85,
+      "text": "In fact, most people, we don't see it in them."
+    },
+    {
+      "start": 67.79,
+      "end": 69.83,
+      "text": "The reason we do a saffonous nerve block."
+    },
+    {
+      "start": 70.42,
+      "end": 74.56,
+      "text": "is that we don't take away any quadriceps muscles"
+    },
+    {
+      "start": 74.56,
+      "end": 78.06,
+      "text": "and so the patient will have no quadriceps muscle weakness."
+    },
+    {
+      "start": 78.52,
+      "end": 79.96000000000001,
+      "text": "To get a..."
+    },
+    {
+      "start": 80.0,
+      "end": 87.64,
+      "text": "You may also do a femoral block, but by doing a femoral block you may, or you will, take out all your quadriceps."
+    },
+    {
+      "start": 88.14,
+      "end": 89.74,
+      "text": "So this technique I'm going over."
+    },
+    {
+      "start": 90.19,
+      "end": 92.37,
+      "text": "is a great technique for outpatient surgery"
+    },
+    {
+      "start": 92.37,
+      "end": 95.89,
+      "text": "because their quadriceps muscle strength will be intact."
+    },
+    {
+      "start": 96.7,
+      "end": 99.6,
+      "text": "This technique I'm using is useful in elderly."
+    },
+    {
+      "start": 100.03,
+      "end": 103.87,
+      "text": "and obese patients because we're using muscle landmarks"
+    },
+    {
+      "start": 103.87,
+      "end": 106.51,
+      "text": "rather than nerve or other small landmarks."
+    },
+    {
+      "start": 107.41,
+      "end": 109.97,
+      "text": "So we usually start about 10 centimeters above the..."
+    },
+    {
+      "start": 110.0,
+      "end": 115.42,
+      "text": "the knee, put the probe on the medial side of the leg. We can abduck the leg a little bit"
+    },
+    {
+      "start": 115.42,
+      "end": 117.94,
+      "text": "to give us better visualization here."
+    },
+    {
+      "start": 120.0,
+      "end": 125.23,
+      "text": "When we put the probe on here, we like to start more anterior."
+    },
+    {
+      "start": 126.13,
+      "end": 129.51,
+      "text": "This gives us a view of the femur, the hypercois stripe."
+    },
+    {
+      "start": 130.03,
+      "end": 133.1,
+      "text": "here as well as the Vastus Medialis."
+    },
+    {
+      "start": 133.74,
+      "end": 136.68,
+      "text": "The Vastus Medialis can pretty much be found in everybody."
+    },
+    {
+      "start": 137.83,
+      "end": 139.97,
+      "text": "We're going to slide the probe posterior-"
+    },
+    {
+      "start": 140.0,
+      "end": 148.39,
+      "text": "next. The next muscle we will come across is the Sartorius muscle. There now we see the"
+    },
+    {
+      "start": 148.39,
+      "end": 149.43,
+      "text": "The vastest media outlets."
+    },
+    {
+      "start": 150.1,
+      "end": 156.58,
+      "text": "muscle ending and see the Sartorius muscle in view now."
+    },
+    {
+      "start": 157.92,
+      "end": 159.98,
+      "text": "There are many anatomical differences."
+    },
+    {
+      "start": 160.0,
+      "end": 166.8,
+      "text": "is impatient to patient. The saffonous nerve can run, anterior to the sartorist muscle,"
+    },
+    {
+      "start": 167.04,
+      "end": 169.98,
+      "text": "posterior to the sartorist muscle, and I've even seen it."
+    },
+    {
+      "start": 170.0,
+      "end": 176.46,
+      "text": "piercing the Sartorius muscle. So the whole key is that we will put our local"
+    },
+    {
+      "start": 176.46,
+      "end": 179.92,
+      "text": "anesthetic below the Sartorius muscle in order to get"
+    },
+    {
+      "start": 180.0,
+      "end": 185.07,
+      "text": "a good saffinous nerve block. Most of the time we're doing a field type block or"
+    },
+    {
+      "start": 185.61,
+      "end": 189.95,
+      "text": "deposit the local behind the Sartorius muscle and expect that that"
+    },
+    {
+      "start": 190.0,
+      "end": 195.32,
+      "text": "local will get to the nerve because these nerves can be difficult to see in obese or elderly"
+    },
+    {
+      "start": 195.32,
+      "end": 195.9,
+      "text": "patients."
+    },
+    {
+      "start": 197.32,
+      "end": 199.98,
+      "text": "So now our needle approach is going to be used."
+    },
+    {
+      "start": 200.0,
+      "end": 207.17,
+      "text": "a 10 centimeter needle. This needle will be inserted a few centimeters away from the probe in this angle."
+    },
+    {
+      "start": 208.76,
+      "end": 209.96,
+      "text": "We like to see the needle in a"
+    },
+    {
+      "start": 210.13,
+      "end": 213.27,
+      "text": "shallow plane and then advance a deeper below these"
+    },
+    {
+      "start": 213.27,
+      "end": 214.31,
+      "text": "arteries muscle."
+    },
+    {
+      "start": 216.85,
+      "end": 219.94,
+      "text": "This block can also be performed if the patient is"
+    },
+    {
+      "start": 220.16,
+      "end": 223.3,
+      "text": "chrome, imagine my needle coming from the other side."
+    },
+    {
+      "start": 224.89,
+      "end": 229.97,
+      "text": "Typical volumes used here are between 5 and 20 milliliters of local anesthetic."
+    },
+    {
+      "start": 230.86,
+      "end": 237.18,
+      "text": "If a good nerve is seen, usually represent it by a hyper-echoic structure, then I'll just place five"
+    },
+    {
+      "start": 237.18,
+      "end": 239.97,
+      "text": "milliliters. Most patients, we do not..."
+    },
+    {
+      "start": 240.0,
+      "end": 245.46,
+      "text": "see the individual nerve here and we will place 10 milliliters as a type of field block"
+    },
+    {
+      "start": 245.46,
+      "end": 246.42,
+      "text": "in this area."
+    },
+    {
+      "start": 250.48,
+      "end": 254.06,
+      "text": "Here our needle is advancing through the vasis medialis."
+    },
+    {
+      "start": 255.12,
+      "end": 259.86,
+      "text": "We try to position the tip of the needle underneath the sartorius muscle."
+    },
+    {
+      "start": 260.03,
+      "end": 261.93,
+      "text": "which is located to the right of the screen."
+    },
+    {
+      "start": 264.18,
+      "end": 266.1,
+      "text": "You can see the hyperacoic areas,"
+    },
+    {
+      "start": 266.68,
+      "end": 269.12,
+      "text": "some of which may represent the nerve."
+    },
+    {
+      "start": 271.09,
+      "end": 279.85,
+      "text": "I need those now directly below the Sartorius muscle and you can see the local anesthetic spreading below the Sartorius muscle."
+    }
+  ]
+}

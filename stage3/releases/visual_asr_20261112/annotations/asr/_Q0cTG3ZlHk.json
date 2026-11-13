@@ -1,0 +1,843 @@
+{
+  "video_id": "_Q0cTG3ZlHk",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/_Q0cTG3ZlHk/asr.txt",
+  "segments": [
+    {
+      "start": 1.54,
+      "end": 6.91,
+      "text": "In this video, we're going to introduce the 10 basic signs of lung ultrasound."
+    },
+    {
+      "start": 7.78,
+      "end": 9.98,
+      "text": "Now, Liptinstein breaks us down into 10..."
+    },
+    {
+      "start": 10.0,
+      "end": 15.82,
+      "text": "basic signs, and we will look at each of these signs in detail in subsequent videos."
+    },
+    {
+      "start": 16.3,
+      "end": 19.98,
+      "text": "So the point of this video is just to introduce them and get you to start"
+    },
+    {
+      "start": 20.0,
+      "end": 27.04,
+      "text": "recognizing these 10 basic signs. So the first sign is called the bat sign and I'll be honest"
+    },
+    {
+      "start": 27.04,
+      "end": 29.96,
+      "text": "I don't know that I can appreciate it as a bat"
+    },
+    {
+      "start": 30.0,
+      "end": 34.22,
+      "text": "as Lichtenstein does, but I do appreciate the importance of the bat sign."
+    },
+    {
+      "start": 34.84,
+      "end": 39.96,
+      "text": "And the importance is to accurately identify the plural line, because if you don't..."
+    },
+    {
+      "start": 40.0,
+      "end": 44.46,
+      "text": "accurately identify the plural line, you can misinterpret things in lung ultrasound."
+    },
+    {
+      "start": 44.98,
+      "end": 48.06,
+      "text": "So this is going to serve as a key landmark for us."
+    },
+    {
+      "start": 48.5,
+      "end": 49.88,
+      "text": "The way I like to think of it is"
+    },
+    {
+      "start": 50.0,
+      "end": 52.92,
+      "text": "layers from the outside in as we've previously discussed."
+    },
+    {
+      "start": 53.64,
+      "end": 59.65,
+      "text": "So we have the skin layer, the subcutaneous layer, we have the muscular layer here."
+    },
+    {
+      "start": 60.22,
+      "end": 65.91,
+      "text": "And then we have the cortex of the rib with shadowing, shadowing, and the cortex of the"
+    },
+    {
+      "start": 65.91,
+      "end": 67.65,
+      "text": "rib here with shadowing and shadowing."
+    },
+    {
+      "start": 68.2,
+      "end": 69.74,
+      "text": "We have the intercostal area."
+    },
+    {
+      "start": 70.32,
+      "end": 73.64,
+      "text": "between the ribs, and then and only then,"
+    },
+    {
+      "start": 74.54,
+      "end": 77.74,
+      "text": "and I identify this hyperacochlyne below the ribs"
+    },
+    {
+      "start": 77.74,
+      "end": 79.86,
+      "text": "in intercostal area as the plural."
+    },
+    {
+      "start": 80.03,
+      "end": 87.62,
+      "text": "line. Now, Lichtenstein sees this as a bat where the curved ribs are like the wings of the bat."
+    },
+    {
+      "start": 88.25,
+      "end": 89.97,
+      "text": "It's like the bats flying towards you."
+    },
+    {
+      "start": 90.0,
+      "end": 94.9,
+      "text": "and then below those wings you can call the plural line."
+    },
+    {
+      "start": 95.48,
+      "end": 99.97,
+      "text": "Again, I don't know if I can identify it that way, but this will serve as..."
+    },
+    {
+      "start": 100.0,
+      "end": 103.52,
+      "text": "has a core land mark for us identifying this hyperacoic"
+    },
+    {
+      "start": 103.97,
+      "end": 105.78,
+      "text": "floral line, the bat sign."
+    },
+    {
+      "start": 106.69,
+      "end": 109.77,
+      "text": "Now the second sign is the seashore sign."
+    },
+    {
+      "start": 110.64,
+      "end": 118.96,
+      "text": "In the C-shore sign is identifying what normal lung sliding looks like in both 2D and M-mode."
+    },
+    {
+      "start": 120.0,
+      "end": 126.03,
+      "text": "look at this 2D picture on the left. We see here that we have rib in rib shadow, rib"
+    },
+    {
+      "start": 126.03,
+      "end": 129.98,
+      "text": "in rib shadow so we know this is the plural line as well."
+    },
+    {
+      "start": 130.0,
+      "end": 131.0,
+      "text": "we've talked about before."
+    },
+    {
+      "start": 131.79,
+      "end": 134.25,
+      "text": "And for now, just appreciate that there's movement"
+    },
+    {
+      "start": 134.77,
+      "end": 135.99,
+      "text": "along the plural line."
+    },
+    {
+      "start": 136.99,
+      "end": 139.79,
+      "text": "If we take an M mode slice through,"
+    },
+    {
+      "start": 140.0,
+      "end": 146.54,
+      "text": "the plural line, and then depict it over time. That's what gives us this C-shore appearance"
+    },
+    {
+      "start": 146.54,
+      "end": 149.97,
+      "text": "on M-mode on the right. And if we know-"
+    },
+    {
+      "start": 150.0,
+      "end": 155.68,
+      "text": "Notice in the picture here that everything above the plural line is relatively static."
+    },
+    {
+      "start": 156.58,
+      "end": 159.76,
+      "text": "I mean, there's a little bit movement in the intercostal and muscular."
+    },
+    {
+      "start": 160.0,
+      "end": 164.46,
+      "text": "segments, but it's mostly straight lines because it's relatively static."
+    },
+    {
+      "start": 164.96,
+      "end": 169.64,
+      "text": "Where everything below the plural line is relatively dynamic, you see all of this"
+    },
+    {
+      "start": 169.64,
+      "end": 169.98,
+      "text": "Spell."
+    },
+    {
+      "start": 170.0,
+      "end": 175.64,
+      "text": "and movement in this artifact that is created, that is the appearance of normal"
+    },
+    {
+      "start": 175.64,
+      "end": 179.98,
+      "text": "long-sliding. And this is said to look like a seashourist."
+    },
+    {
+      "start": 180.0,
+      "end": 189.92,
+      "text": "sandy beach where you have up here the horizon the waves coming in you hit the seashore and then you have this sandy beach"
+    },
+    {
+      "start": 190.03,
+      "end": 197.77,
+      "text": "appearance of everything below it. The next sign is the a-line. And again, if we"
+    },
+    {
+      "start": 197.77,
+      "end": 199.97,
+      "text": "identify that this is the plural line..."
+    },
+    {
+      "start": 200.0,
+      "end": 208.35,
+      "text": "What A lines are is horizontal lines that are reverberation artifact of the original plural line."
+    },
+    {
+      "start": 209.18,
+      "end": 209.86,
+      "text": "So we see the"
+    },
+    {
+      "start": 210.0,
+      "end": 219.72,
+      "text": "original pleural line here and then we'll notice that equidistant from the skin to the original pleural line we have a second"
+    },
+    {
+      "start": 220.0,
+      "end": 225.98,
+      "text": "horizontal line and then equidistant again we have a third horizontal line and"
+    },
+    {
+      "start": 226.68,
+      "end": 229.74,
+      "text": "again these horizontal lines are reverberation artifacts"
+    },
+    {
+      "start": 230.32,
+      "end": 238.54,
+      "text": "identified as an A line. The next two signs are the quad sign and the"
+    },
+    {
+      "start": 238.54,
+      "end": 239.72,
+      "text": "sign your suede sign."
+    },
+    {
+      "start": 241.38,
+      "end": 244.03,
+      "text": "And these are both signs of floral effusion,"
+    },
+    {
+      "start": 244.03,
+      "end": 245.79,
+      "text": "so we're going to look at them together."
+    },
+    {
+      "start": 246.61,
+      "end": 248.51,
+      "text": "Now, if we look at the image on the bottom left,"
+    },
+    {
+      "start": 248.51,
+      "end": 249.97,
+      "text": "we see our normal natum..."
+    },
+    {
+      "start": 250.0,
+      "end": 255.74,
+      "text": "that we're used to with the rib and shadow and then below the ribs we see the"
+    },
+    {
+      "start": 255.74,
+      "end": 259.87,
+      "text": "And then between the pridele and the visceral"
+    },
+    {
+      "start": 260.1,
+      "end": 269.85,
+      "text": "We see that there's fluid in this fluid takes this quadrangle type of shape because we have the ribbon shadow"
+    },
+    {
+      "start": 270.0,
+      "end": 274.0,
+      "text": "serving as the sideboarders and then the"
+    },
+    {
+      "start": 274.58,
+      "end": 277.18,
+      "text": "parietal in the visceral plura serving as"
+    },
+    {
+      "start": 277.18,
+      "end": 279.86,
+      "text": "the top and bottom border. And if we were to"
+    },
+    {
+      "start": 280.0,
+      "end": 286.37,
+      "text": "take an M mode right down through the middle of this plural effusion and watch it out over"
+    },
+    {
+      "start": 286.37,
+      "end": 286.85,
+      "text": "time."
+    },
+    {
+      "start": 286.85,
+      "end": 289.46,
+      "text": "what we would see is the"
+    },
+    {
+      "start": 290.0,
+      "end": 291.2,
+      "text": "the Pridal Plera here."
+    },
+    {
+      "start": 292.4,
+      "end": 294.92,
+      "text": "And then with Inspiration and Expiration,"
+    },
+    {
+      "start": 294.92,
+      "end": 298.57,
+      "text": "we'd see the Visceral Plera moving in and out,"
+    },
+    {
+      "start": 299.04,
+      "end": 299.96,
+      "text": "which gives us..."
+    },
+    {
+      "start": 300.06,
+      "end": 307.09,
+      "text": "sinusoid type of appearance with the fluid depicted in between the two plural layers."
+    },
+    {
+      "start": 307.89,
+      "end": 309.57,
+      "text": "And that's the sinusoid sign."
+    },
+    {
+      "start": 310.86,
+      "end": 319.78,
+      "text": "The next two signs we're going to look at together are the shred sign, which is depicted here, as well as the tissue."
+    },
+    {
+      "start": 320.0,
+      "end": 327.84,
+      "text": "like sine, which is depicted here. In both of these are signs of consolidation."
+    },
+    {
+      "start": 330.96,
+      "end": 339.81,
+      "text": "Now, if we look at this video down here, we see that here we have the diaphragm below the diaphragm is liver and above the diaphragm we see"
+    },
+    {
+      "start": 340.0,
+      "end": 348.4,
+      "text": "little bit of pleural fluid, but we see this tissue-like area which is an area of consolidated lung."
+    },
+    {
+      "start": 348.4,
+      "end": 349.82,
+      "text": "and almost looks like"
+    },
+    {
+      "start": 350.0,
+      "end": 356.01,
+      "text": "liver tissue. And that's why some call it hepatization of the lung. Because here's the liver,"
+    },
+    {
+      "start": 356.67,
+      "end": 359.97,
+      "text": "but the liver has black blood vessels in it. Were this..."
+    },
+    {
+      "start": 360.0,
+      "end": 365.6,
+      "text": "has white areas in it and those white areas are air bronchograms."
+    },
+    {
+      "start": 366.49,
+      "end": 369.83,
+      "text": "So the first sign that we're talking about is this tissue."
+    },
+    {
+      "start": 370.0,
+      "end": 376.57,
+      "text": "like sign and it's tissue-like appearance of consolidated lung with white air"
+    },
+    {
+      "start": 376.57,
+      "end": 379.97,
+      "text": "bronchograms inside of it. The second is"
+    },
+    {
+      "start": 380.0,
+      "end": 387.24,
+      "text": "the shred sign. In the shred sign is where the consolidated lung meets normal aerated lung, it"
+    },
+    {
+      "start": 387.24,
+      "end": 389.92,
+      "text": "creates the shredded like pl-"
+    },
+    {
+      "start": 390.0,
+      "end": 398.46,
+      "text": "It's not the plural line. It's where the interface between the consolidation of the lung and the aerated lung meat."
+    },
+    {
+      "start": 399.24,
+      "end": 399.98,
+      "text": "It doesn't create a"
+    },
+    {
+      "start": 400.0,
+      "end": 405.01,
+      "text": "straight line like the long line or the plural line, but this irregular shredded"
+    },
+    {
+      "start": 405.01,
+      "end": 409.46,
+      "text": "like line. So the shred sign and the tissue like sign are both signs."
+    },
+    {
+      "start": 410.1,
+      "end": 417.3,
+      "text": "consolidation. Eighth sign that we're going to talk about are lung rockets. Now"
+    },
+    {
+      "start": 417.3,
+      "end": 419.98,
+      "text": "long rockets by definition are gray."
+    },
+    {
+      "start": 420.0,
+      "end": 424.59,
+      "text": "greater than or equal to three B lines per interspace."
+    },
+    {
+      "start": 425.97,
+      "end": 428.29,
+      "text": "And B lines aren't artifact that we're gonna identify here."
+    },
+    {
+      "start": 429.03,
+      "end": 429.61,
+      "text": "Now, see."
+    },
+    {
+      "start": 430.0,
+      "end": 439.96,
+      "text": "Rib rib with shadow and shadow that should be familiar to you now with the plural line then seen just below that but notice how off of"
+    },
+    {
+      "start": 440.0,
+      "end": 447.14,
+      "text": "the plural line there's coming a bright white vertical artifact. I imagine it as a bright"
+    },
+    {
+      "start": 447.14,
+      "end": 449.96,
+      "text": "white, white, almost flash light beam, beaming off"
+    },
+    {
+      "start": 450.0,
+      "end": 455.67,
+      "text": "of the plural line off of the screen. Notice that it comes from the plural line, it's vertical,"
+    },
+    {
+      "start": 456.42,
+      "end": 459.97,
+      "text": "it's bright white, it moves with the plural line in it, a blip-"
+    },
+    {
+      "start": 460.0,
+      "end": 468.3,
+      "text": "This a line. So b lines when they're present obliterate the a line. And if there's greater than two or equal three b lines"
+    },
+    {
+      "start": 468.3,
+      "end": 469.62,
+      "text": "We call that lung rockets"
+    },
+    {
+      "start": 470.35,
+      "end": 473.99,
+      "text": "and lung rockets are a sign of interstitial syndrome."
+    },
+    {
+      "start": 475.67,
+      "end": 478.62,
+      "text": "The next sign is called the stratosphere sign."
+    },
+    {
+      "start": 480.67,
+      "end": 482.49,
+      "text": "or some call it the barcode sign."
+    },
+    {
+      "start": 482.83,
+      "end": 485.39,
+      "text": "And this is the M mode equivalent"
+    },
+    {
+      "start": 485.39,
+      "end": 487.41,
+      "text": "of lack of long sliding."
+    },
+    {
+      "start": 488.37,
+      "end": 489.51,
+      "text": "So if we look at this..."
+    },
+    {
+      "start": 490.03,
+      "end": 495.37,
+      "text": "2D video clip here, we see rib shadowing, rib a little bit of shadowing."
+    },
+    {
+      "start": 495.71,
+      "end": 499.98,
+      "text": "So we know below that is this hyper-echoic line that we've..."
+    },
+    {
+      "start": 500.16,
+      "end": 505.48,
+      "text": "identified as the plural line. But notice, looking at this plural line that there's no movement"
+    },
+    {
+      "start": 505.48,
+      "end": 509.93,
+      "text": "along it. There's movement of the chest wall, but there's not movement..."
+    },
+    {
+      "start": 510.0,
+      "end": 514.04,
+      "text": "movement of the plural line back and forth in opposition to each other."
+    },
+    {
+      "start": 515.06,
+      "end": 519.96,
+      "text": "So if we contrast that to the C-shore sign we've seen before, we can..."
+    },
+    {
+      "start": 520.0,
+      "end": 524.84,
+      "text": "identify that everything above the pleural line is still relatively static."
+    },
+    {
+      "start": 525.52,
+      "end": 529.72,
+      "text": "And again, we see the movement in the intercostal and muscular"
+    },
+    {
+      "start": 530.0,
+      "end": 539.53,
+      "text": "players from time to time that's movement of respiration but below it we don't see that sandy beach in fact above in"
+    },
+    {
+      "start": 540.0,
+      "end": 542.48,
+      "text": "below the pleural line are now mirrored."
+    },
+    {
+      "start": 543.4,
+      "end": 544.86,
+      "text": "They look exactly the same."
+    },
+    {
+      "start": 546.12,
+      "end": 548.02,
+      "text": "And this is what Lichtenstein refers to"
+    },
+    {
+      "start": 548.02,
+      "end": 549.64,
+      "text": "as the stratosphere sign."
+    },
+    {
+      "start": 550.22,
+      "end": 554.2,
+      "text": "or almost like the smoke jets coming from a jet plane"
+    },
+    {
+      "start": 554.2,
+      "end": 555.22,
+      "text": "in the stratosphere,"
+    },
+    {
+      "start": 555.64,
+      "end": 558.28,
+      "text": "or others have identified as a barcode,"
+    },
+    {
+      "start": 558.89,
+      "end": 559.85,
+      "text": "or straight line."
+    },
+    {
+      "start": 560.0,
+      "end": 567.12,
+      "text": "all the way across. So the key to identifying this sign is when everything above the plural line"
+    },
+    {
+      "start": 567.12,
+      "end": 569.78,
+      "text": "in below the plural line are identity."
+    },
+    {
+      "start": 570.0,
+      "end": 575.56,
+      "text": "That's the stratosphere sign and it equals lack of lung sliding."
+    },
+    {
+      "start": 576.62,
+      "end": 579.66,
+      "text": "The last sign we're going to talk about is the lung point."
+    },
+    {
+      "start": 580.8,
+      "end": 585.55,
+      "text": "And the long point is the transition between a pneumothorax"
+    },
+    {
+      "start": 585.55,
+      "end": 588.96,
+      "text": "or air in the plural space in normal lung sliding."
+    },
+    {
+      "start": 590.03,
+      "end": 591.99,
+      "text": "And if we look on this video on the left,"
+    },
+    {
+      "start": 592.61,
+      "end": 595.88,
+      "text": "we see rib, shadow, rib, shadow."
+    },
+    {
+      "start": 596.7,
+      "end": 598.54,
+      "text": "And so we know this is the plural line."
+    },
+    {
+      "start": 599.33,
+      "end": 599.87,
+      "text": "But we see."
+    },
+    {
+      "start": 600.0,
+      "end": 609.77,
+      "text": "movement along the pleural line on this part and so that is lung sliding and on the other side we see no lung"
+    },
+    {
+      "start": 610.0,
+      "end": 619.97,
+      "text": "So this transition point between the two is the long point and if we were to place M mode on this we would see that"
+    },
+    {
+      "start": 620.0,
+      "end": 624.09,
+      "text": "that above the plural line we have the static area,"
+    },
+    {
+      "start": 624.45,
+      "end": 625.97,
+      "text": "so no significant movement."
+    },
+    {
+      "start": 626.88,
+      "end": 629.54,
+      "text": "Below the plural line on this side, we see"
+    },
+    {
+      "start": 630.0,
+      "end": 637.44,
+      "text": "sandy beach sign with long sliding and then that long sliding goes away here where we have the"
+    },
+    {
+      "start": 637.44,
+      "end": 639.84,
+      "text": "stratosphere sign all in the same"
+    },
+    {
+      "start": 640.38,
+      "end": 648.89,
+      "text": "intercostal segment. This is pathonomonic for pneumothorax, so burn this in your"
+    },
+    {
+      "start": 648.89,
+      "end": 649.87,
+      "text": "memory the lung"
+    },
+    {
+      "start": 650.1,
+      "end": 659.29,
+      "text": "Alright, let's review real quickly then the 10 basic signs of lung ultrasound number one, the bat sign, identifying the pluraline."
+    },
+    {
+      "start": 660.0,
+      "end": 664.72,
+      "text": "Number two, the C-shore sign, or the M-O-D equivalent of normal long-sliding."
+    },
+    {
+      "start": 665.64,
+      "end": 669.36,
+      "text": "Number three, A-Lines, Reverberation Artifact."
+    },
+    {
+      "start": 670.0,
+      "end": 672.94,
+      "text": "horizontal lines, equidistant from the plural line."
+    },
+    {
+      "start": 673.8,
+      "end": 678.21,
+      "text": "Number four, the quad sign, or fluid between the visceral"
+    },
+    {
+      "start": 678.21,
+      "end": 679.97,
+      "text": "and pridal plurah, indicative of"
+    },
+    {
+      "start": 680.0,
+      "end": 681.14,
+      "text": "of a plural effusion."
+    },
+    {
+      "start": 681.66,
+      "end": 683.44,
+      "text": "Number five, the sign you suede sign"
+    },
+    {
+      "start": 683.44,
+      "end": 686.58,
+      "text": "or during inspiration and expiration."
+    },
+    {
+      "start": 686.94,
+      "end": 689.0,
+      "text": "The visceral plural coming towards and away"
+    },
+    {
+      "start": 689.0,
+      "end": 689.98,
+      "text": "from the Prado Plur-"
+    },
+    {
+      "start": 690.0,
+      "end": 694.6,
+      "text": "with fluid in between creating the sinusoid shape, also indicative of a plural"
+    },
+    {
+      "start": 694.6,
+      "end": 699.97,
+      "text": "fusion. Number six, the shred sign, or the un-"
+    },
+    {
+      "start": 700.03,
+      "end": 703.78,
+      "text": "even long line below the area of consolidation,"
+    },
+    {
+      "start": 704.04,
+      "end": 707.02,
+      "text": "the shredded long sign indicative of consolidation."
+    },
+    {
+      "start": 708.04,
+      "end": 709.88,
+      "text": "Number seven, the tissue-like sign."
+    },
+    {
+      "start": 710.19,
+      "end": 717.23,
+      "text": "or tissue with air bronchograms in it inside the lung, which is indicative of consolidation as well."
+    },
+    {
+      "start": 718.09,
+      "end": 719.77,
+      "text": "Number eight, lung rockets."
+    },
+    {
+      "start": 720.0,
+      "end": 725.58,
+      "text": "these vertical flashlight-like beams coming off of the plural line moving with"
+    },
+    {
+      "start": 725.58,
+      "end": 729.98,
+      "text": "the plural line obliterating the a-line these are indicative of interstit-"
+    },
+    {
+      "start": 730.0,
+      "end": 736.72,
+      "text": "number nine the stratosphere sign or the barcode sign which is indicative of"
+    },
+    {
+      "start": 736.72,
+      "end": 739.79,
+      "text": "lack of lung sliding and then number 10"
+    },
+    {
+      "start": 740.1,
+      "end": 743.9,
+      "text": "the long point, which is indicative of pneumothorax,"
+    },
+    {
+      "start": 744.38,
+      "end": 745.94,
+      "text": "and that's where you have long sliding"
+    },
+    {
+      "start": 745.94,
+      "end": 749.04,
+      "text": "and lack of long sliding in the same intercostal segment."
+    }
+  ]
+}

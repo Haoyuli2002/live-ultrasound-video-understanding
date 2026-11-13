@@ -1,0 +1,177 @@
+{
+  "understanding": "Breast ultrasound tutorial pairing clock-face probe diagrams with sagittal, radial, and nipple-areolar views.",
+  "native_opened": [
+    355,
+    400,
+    412,
+    420,
+    588,
+    590,
+    592,
+    594,
+    595,
+    596,
+    597,
+    598,
+    599,
+    600,
+    601,
+    602,
+    603,
+    604,
+    605,
+    608,
+    610,
+    612,
+    614,
+    616,
+    625
+  ],
+  "tasks": [
+    {
+      "qa_type": "current_observation",
+      "query_time": 355,
+      "answer_time": 355,
+      "checkpoints": [],
+      "question": "What lies immediately below the labeled fibroglandular tissue and above the dark rib shadows in this image?",
+      "reference_answer": "The chest wall muscle layer lies between them.",
+      "visual_support": "The muscle layer is labeled at intermediate depth, between the fibroglandular layer and deeper rib shadows.",
+      "query_prefix_check": "All three landmarks are visible.",
+      "answer_prefix_check": "The vertical ordering is visible in the sonogram.",
+      "shortcut_risk": "Moderate. Labels identify each layer.",
+      "task_id": "s3_remaining79_Hlb-rO_dc8s_01",
+      "video_id": "Hlb-rO_dc8s",
+      "split": "eval",
+      "language": "en",
+      "source_video": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/eval_full295/Hlb-rO_dc8s.mp4",
+      "stage3_value": "high",
+      "visual_evidence": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/Hlb-rO_dc8s/355.jpg",
+          "checkpoint": 355.0,
+          "source_pts_seconds": 354.921233,
+          "resolution": [
+            640,
+            360
+          ]
+        }
+      ],
+      "asr_support_segments": [],
+      "query_decision": "ANSWER",
+      "answer_decision": "ANSWER",
+      "review_status": "accepted_targeted_native_frame_self_review",
+      "student_input_visibility": "not_checked"
+    },
+    {
+      "qa_type": "temporal_comparison",
+      "query_time": 595,
+      "answer_time": 598,
+      "checkpoints": [
+        596,
+        597
+      ],
+      "question": "When the probe is centered over the nipple, how does the dark shadow shift compared with the current radial image?",
+      "reference_answer": "The shadow moves from the left side toward the middle of the sonogram, beneath the nipple.",
+      "visual_support": "The radial image has a left-edge shadow through 597. At 598 the probe diagram spans the center and the shadow is farther inside the ultrasound panel.",
+      "query_prefix_check": "The shadow in the later centered view cannot be located from the current radial image.",
+      "answer_prefix_check": "The changed shadow position is directly visible in the later view.",
+      "shortcut_risk": "Moderate. Centered placement makes the direction plausible but the relative shift is visible.",
+      "task_id": "s3_remaining79_Hlb-rO_dc8s_02",
+      "video_id": "Hlb-rO_dc8s",
+      "split": "eval",
+      "language": "en",
+      "source_video": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/eval_full295/Hlb-rO_dc8s.mp4",
+      "stage3_value": "high",
+      "visual_evidence": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/Hlb-rO_dc8s/595.jpg",
+          "checkpoint": 595.0,
+          "source_pts_seconds": 594.927667,
+          "resolution": [
+            640,
+            360
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/Hlb-rO_dc8s/596.jpg",
+          "checkpoint": 596.0,
+          "source_pts_seconds": 595.928667,
+          "resolution": [
+            640,
+            360
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/Hlb-rO_dc8s/597.jpg",
+          "checkpoint": 597.0,
+          "source_pts_seconds": 596.929667,
+          "resolution": [
+            640,
+            360
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/Hlb-rO_dc8s/598.jpg",
+          "checkpoint": 598.0,
+          "source_pts_seconds": 597.930667,
+          "resolution": [
+            640,
+            360
+          ]
+        }
+      ],
+      "asr_support_segments": [],
+      "query_decision": "WAIT",
+      "answer_decision": "ANSWER",
+      "review_status": "accepted_targeted_native_frame_self_review",
+      "student_input_visibility": "not_checked"
+    },
+    {
+      "qa_type": "history_recall",
+      "query_time": 625,
+      "answer_time": 625,
+      "checkpoints": [
+        420
+      ],
+      "question": "In the earlier lower-center sagittal example, which end of the vertical probe was closest to the nipple marker?",
+      "reference_answer": "The upper end with the red indicator was closest to the nipple marker.",
+      "visual_support": "The sagittal diagram shows the probe below the nipple with the red dot at the end next to it.",
+      "query_prefix_check": "The lower-center example is already in the stream.",
+      "answer_prefix_check": "The red dot sits at the top of the vertical probe, beside the nipple marker.",
+      "shortcut_risk": "Moderate. The narration may cue placement but the indicator orientation is visual.",
+      "task_id": "s3_remaining79_Hlb-rO_dc8s_03",
+      "video_id": "Hlb-rO_dc8s",
+      "split": "eval",
+      "language": "en",
+      "source_video": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/eval_full295/Hlb-rO_dc8s.mp4",
+      "stage3_value": "high",
+      "visual_evidence": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/Hlb-rO_dc8s/420.jpg",
+          "checkpoint": 420.0,
+          "source_pts_seconds": 419.952867,
+          "resolution": [
+            640,
+            360
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/Hlb-rO_dc8s/625.jpg",
+          "checkpoint": 625.0,
+          "source_pts_seconds": 624.9243,
+          "resolution": [
+            640,
+            360
+          ]
+        }
+      ],
+      "asr_support_segments": [],
+      "query_decision": "ANSWER",
+      "answer_decision": "ANSWER",
+      "review_status": "accepted_targeted_native_frame_self_review",
+      "student_input_visibility": "not_checked"
+    }
+  ],
+  "video_id": "Hlb-rO_dc8s",
+  "review_scope": "Same-assistant review; sampled timeline, original-size key frames, and existing time-indexed ASR when available. No continuous replay or direct audio claim."
+}

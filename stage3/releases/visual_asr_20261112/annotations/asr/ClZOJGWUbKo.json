@@ -1,0 +1,113 @@
+{
+  "video_id": "ClZOJGWUbKo",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/ClZOJGWUbKo/asr.txt",
+  "segments": [
+    {
+      "start": 7.51,
+      "end": 11.85,
+      "text": "Hi, I'm Dr. Der from Gulf Coast Ultrasound Institute. Today I'm going to give you a hot scan tip"
+    },
+    {
+      "start": 11.85,
+      "end": 17.26,
+      "text": "about how to stay centered on your target when performing vascular access. So when you're first"
+    },
+    {
+      "start": 17.26,
+      "end": 22.2,
+      "text": "learning ultrasound, learners can struggle with keeping their target centered on their ultrasound"
+    },
+    {
+      "start": 22.2,
+      "end": 27.58,
+      "text": "machine, particularly when it comes to vascular access. For example, when you're scanning,"
+    },
+    {
+      "start": 27.58,
+      "end": 31.7,
+      "text": "in this case on this phantom, you may be rotating from a short axis fever or blood vessel"
+    },
+    {
+      "start": 31.7,
+      "end": 39.49,
+      "text": "to long axis view, only to find that as you're turning you slip off your target and then have difficulty"
+    },
+    {
+      "start": 39.49,
+      "end": 46.11,
+      "text": "going back to locate the target again. So try this hot tip. Use the M mode on your ultrasound"
+    },
+    {
+      "start": 46.11,
+      "end": 51.58,
+      "text": "machine. There should be an M button, you just tap M and that will default to the center of your"
+    },
+    {
+      "start": 51.58,
+      "end": 58.03,
+      "text": "ultrasound image. Then line up your target on that M mode line. So in this case I'm going to take"
+    },
+    {
+      "start": 58.03,
+      "end": 63.65,
+      "text": "the target blood vessel on my phantom, I'm going to line it up on the M mode line. As I rotate the"
+    },
+    {
+      "start": 63.65,
+      "end": 68.92,
+      "text": "transducer, I need to make sure that my target, this blood vessel, stays on the green line."
+    },
+    {
+      "start": 69.82,
+      "end": 74.88,
+      "text": "If I start the rotate the transducer only to find that my target is off, I need to go back"
+    },
+    {
+      "start": 74.88,
+      "end": 79.48,
+      "text": "and re-center the target onto the line before I continue the rotation."
+    },
+    {
+      "start": 81.28,
+      "end": 87.54,
+      "text": "So I gently turn my transducer, I'll stabilize with my left hand, I'm staying on the green"
+    },
+    {
+      "start": 87.54,
+      "end": 92.38,
+      "text": "line, and then as soon as I complete the rotation, I'm now back on my target."
+    },
+    {
+      "start": 92.38,
+      "end": 99.34,
+      "text": "So by staying on the green line, as you begin to rotate, it'll make sure that you end up on that target location."
+    },
+    {
+      "start": 100.34,
+      "end": 101.6,
+      "text": "So let's try that one more time."
+    },
+    {
+      "start": 103.13,
+      "end": 107.66,
+      "text": "So we slide the target onto the green line, begin the rotation."
+    },
+    {
+      "start": 109.45,
+      "end": 116.38,
+      "text": "And if you start to lose that target off that green line, you'll stop, re-center, and then complete the rotation."
+    },
+    {
+      "start": 122.21,
+      "end": 128.61,
+      "text": "So by using that green M-mode line and slowly turning, keep it on that green line, you'll land on your target every time."
+    },
+    {
+      "start": 129.07,
+      "end": 132.59,
+      "text": "That's my hot tip and now it's your turn to scan."
+    }
+  ]
+}

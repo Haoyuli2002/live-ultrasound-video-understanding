@@ -1,0 +1,603 @@
+{
+  "video_id": "bsKBhAkp3fI",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/eval/bsKBhAkp3fI/asr.txt",
+  "segments": [
+    {
+      "start": 6.27,
+      "end": 9.69,
+      "text": "Hello, everyone. My name is Dr. Aiden Sharkey. I'm an attending"
+    },
+    {
+      "start": 10.0,
+      "end": 13.9,
+      "text": "the sociologist at the Beth Israel Deaconess Medical Center in Boston, Massachusetts."
+    },
+    {
+      "start": 14.69,
+      "end": 17.31,
+      "text": "And today we're going to be discussing the fast exam."
+    },
+    {
+      "start": 18.6,
+      "end": 19.86,
+      "text": "We keep taking away the today's lecture."
+    },
+    {
+      "start": 20.0,
+      "end": 24.26,
+      "text": "are to firstly discuss the indications and limitations of performing the fast exam."
+    },
+    {
+      "start": 25.32,
+      "end": 29.8,
+      "text": "Secondly, to discuss the equipment required and finally we'll go through some basic"
+    },
+    {
+      "start": 30.0,
+      "end": 35.78,
+      "text": "involved in performing the fast exam. To begin, let us first define what exactly"
+    },
+    {
+      "start": 35.78,
+      "end": 39.75,
+      "text": "a fast exam is. Fast stands for Focus Assessment."
+    },
+    {
+      "start": 40.19,
+      "end": 41.31,
+      "text": "with sonography and trauma."
+    },
+    {
+      "start": 42.22,
+      "end": 44.04,
+      "text": "And this is a rapid assessment done"
+    },
+    {
+      "start": 44.04,
+      "end": 45.74,
+      "text": "at the bedside for trauma patients"
+    },
+    {
+      "start": 45.74,
+      "end": 48.63,
+      "text": "in order to diagnose and guide therapy."
+    },
+    {
+      "start": 50.0,
+      "end": 55.31,
+      "text": "Last example, we are assessing for free fluids which would indicate visceral injury in 4 key regions."
+    },
+    {
+      "start": 60.0,
+      "end": 67.66,
+      "text": "cardium and super pubic areas. The indications for performing a fast exam are very broad"
+    },
+    {
+      "start": 67.66,
+      "end": 69.8,
+      "text": "And as used should be considered in"
+    },
+    {
+      "start": 70.0,
+      "end": 72.78,
+      "text": "all abdominal and or thoracic trauma situations,"
+    },
+    {
+      "start": 73.38,
+      "end": 75.24,
+      "text": "where the mechanism of injury is blunt"
+    },
+    {
+      "start": 75.24,
+      "end": 76.64,
+      "text": "or penetrating in nature."
+    },
+    {
+      "start": 77.85,
+      "end": 79.97,
+      "text": "Patients presenting with undifferentiated hypo-"
+    },
+    {
+      "start": 80.06,
+      "end": 83.79,
+      "text": "tension or shocker also want to go a fast exam as part of their work."
+    },
+    {
+      "start": 85.37,
+      "end": 89.82,
+      "text": "With respect to the limitations of performing a fast exam, there are no absolute contraindications."
+    },
+    {
+      "start": 90.0,
+      "end": 96.2,
+      "text": "However, the exam should not delay treatment of unstable patients and the operator should"
+    },
+    {
+      "start": 96.2,
+      "end": 98.94,
+      "text": "be aware of the limited sensitivity of a negative exam."
+    },
+    {
+      "start": 100.29,
+      "end": 103.31,
+      "text": "Therefore, an unstable patient with a negative fast exam,"
+    },
+    {
+      "start": 104.08,
+      "end": 106.54,
+      "text": "or a patient in which there is a high index of suspicion"
+    },
+    {
+      "start": 106.54,
+      "end": 109.48,
+      "text": "for visceral injury, should undergo further testing"
+    },
+    {
+      "start": 109.48,
+      "end": 109.98,
+      "text": "in the form."
+    },
+    {
+      "start": 110.0,
+      "end": 116.8,
+      "text": "of a CT scan or operative assessment. In terms of equipment required for performative fast exam,"
+    },
+    {
+      "start": 117.43,
+      "end": 119.29,
+      "text": "you will need access to an ultrasound machine."
+    },
+    {
+      "start": 120.16,
+      "end": 124.71,
+      "text": "direct ultrasound probe. For abdominal scans, we generally choose the"
+    },
+    {
+      "start": 124.71,
+      "end": 129.75,
+      "text": "curvilinear probe, which is a probe with a low frequency resulting in increased"
+    },
+    {
+      "start": 130.0,
+      "end": 135.97,
+      "text": "the penetration, alternatively phase the Ray probe, which is also a low frequency of probe,"
+    },
+    {
+      "start": 135.97,
+      "end": 138.82,
+      "text": "and also be utilized as part of the fast exit."
+    },
+    {
+      "start": 140.13,
+      "end": 141.47,
+      "text": "It is important to note the location"
+    },
+    {
+      "start": 141.47,
+      "end": 143.33,
+      "text": "of the indicator marker on the probe"
+    },
+    {
+      "start": 143.33,
+      "end": 145.92,
+      "text": "on which side of the image this corresponds to"
+    },
+    {
+      "start": 145.92,
+      "end": 146.88,
+      "text": "when looking at the screen."
+    },
+    {
+      "start": 148.17,
+      "end": 149.85,
+      "text": "For the curved linear probe, this is generally"
+    },
+    {
+      "start": 150.0,
+      "end": 155.75,
+      "text": "on the left of the screen, and for the phased Ray Pro, this is on the right of the screen."
+    },
+    {
+      "start": 158.3,
+      "end": 159.84,
+      "text": "Moving on to performing the fast example."
+    },
+    {
+      "start": 160.0,
+      "end": 164.14,
+      "text": "And this is performed by examining four areas for the presence of pre-fluid."
+    },
+    {
+      "start": 165.07,
+      "end": 169.97,
+      "text": "That is, the right upper quadrant for fluid in the periopatic space, left upper quadrant..."
+    },
+    {
+      "start": 170.0,
+      "end": 177.43,
+      "text": "for fluid in the peri-spanic space. So costum area for pericardial fluid and finally the pelvic area"
+    },
+    {
+      "start": 177.43,
+      "end": 179.98,
+      "text": "for superpubic fluid. We want to make sure that we have a lot of energy in our body."
+    },
+    {
+      "start": 180.0,
+      "end": 181.72,
+      "text": "and now go through each of these views"
+    },
+    {
+      "start": 181.72,
+      "end": 183.79,
+      "text": "and discuss how each view is obtained"
+    },
+    {
+      "start": 183.79,
+      "end": 185.5,
+      "text": "and look at some sun on out of it."
+    },
+    {
+      "start": 186.94,
+      "end": 189.06,
+      "text": "The right-up quadrants are a peri-epatic view."
+    },
+    {
+      "start": 190.38,
+      "end": 194.08,
+      "text": "is used to assess for free fluid in the space between the liver and the right kidney."
+    },
+    {
+      "start": 195.37,
+      "end": 199.98,
+      "text": "To obtain this view, we place the probe in the mid-exillary line on the right side."
+    },
+    {
+      "start": 200.0,
+      "end": 202.76,
+      "text": "between the 8th and 11th intercostal space."
+    },
+    {
+      "start": 203.88,
+      "end": 206.72,
+      "text": "The indicator should be facing towards the 12 o'clock position"
+    },
+    {
+      "start": 206.72,
+      "end": 208.2,
+      "text": "or the patient's head."
+    },
+    {
+      "start": 209.59,
+      "end": 209.97,
+      "text": "This view..."
+    },
+    {
+      "start": 210.13,
+      "end": 214.61,
+      "text": "most useful for the assessment of free fluid in the peria paddock space, also known as"
+    },
+    {
+      "start": 214.61,
+      "end": 219.98,
+      "text": "Morrison's pouch, as depicted in this image. This example depicts fluid in"
+    },
+    {
+      "start": 220.03,
+      "end": 222.71,
+      "text": "the periopathic space as indicated by the yellow arrows."
+    },
+    {
+      "start": 223.81,
+      "end": 226.81,
+      "text": "An image such as this is very concerning for a visceral injury."
+    },
+    {
+      "start": 228.98,
+      "end": 229.98,
+      "text": "Moving on to the left of..."
+    },
+    {
+      "start": 230.03,
+      "end": 236.42,
+      "text": "quadrant or parry splenic view, this view is used to assess for free fluid around the left kidney"
+    },
+    {
+      "start": 236.42,
+      "end": 239.96,
+      "text": "to obtain this view replace the"
+    },
+    {
+      "start": 240.13,
+      "end": 245.83,
+      "text": "row in the mid-exillary line on the left side, between the 8th to 11th intercostal space, with"
+    },
+    {
+      "start": 245.83,
+      "end": 249.45,
+      "text": "the indicator again facing towards the 12 o'clock position for patient's head."
+    },
+    {
+      "start": 250.61,
+      "end": 253.57,
+      "text": "As anatomically, this plane is a very posterior structure."
+    },
+    {
+      "start": 254.28,
+      "end": 256.92,
+      "text": "The pro will also need to be in a very posterior position"
+    },
+    {
+      "start": 256.92,
+      "end": 258.3,
+      "text": "in order to obtain this view."
+    },
+    {
+      "start": 260.16,
+      "end": 261.7,
+      "text": "In this view, the structures identified"
+    },
+    {
+      "start": 261.7,
+      "end": 263.52,
+      "text": "include the spleen to the left of the screen,"
+    },
+    {
+      "start": 264.61,
+      "end": 266.09,
+      "text": "the left kidney to the right of the screen,"
+    },
+    {
+      "start": 266.77,
+      "end": 268.81,
+      "text": "and the diaphragm to the bottom of the screen."
+    },
+    {
+      "start": 270.03,
+      "end": 271.43,
+      "text": "sliding between intercostal spaces,"
+    },
+    {
+      "start": 271.73,
+      "end": 274.01,
+      "text": "may again be required to optimize this view."
+    },
+    {
+      "start": 275.01,
+      "end": 277.17,
+      "text": "In this view, we are looking for free fluid accumulation"
+    },
+    {
+      "start": 277.17,
+      "end": 278.33,
+      "text": "in two spaces."
+    },
+    {
+      "start": 279.42,
+      "end": 279.9,
+      "text": "Harry Spellis."
+    },
+    {
+      "start": 280.0,
+      "end": 285.35,
+      "text": "between the spleen and the diaphragm as indicated by the green line and the spinoorino space"
+    },
+    {
+      "start": 285.35,
+      "end": 288.65,
+      "text": "between the spleen and the left kidney as indicated by the yellow line."
+    },
+    {
+      "start": 290.06,
+      "end": 293.44,
+      "text": "Three fluid will preferentially be located in the perisplanet space,"
+    },
+    {
+      "start": 294.07,
+      "end": 296.39,
+      "text": "or into the presence of the spannerino ligament,"
+    },
+    {
+      "start": 296.96,
+      "end": 299.98,
+      "text": "which will limit the ability of fluid to track in between the spleen."
+    },
+    {
+      "start": 300.0,
+      "end": 305.82,
+      "text": "in the left kidney. In this image we see pre-fluid as indicated by the yellow arrows surrounding the"
+    },
+    {
+      "start": 305.82,
+      "end": 309.96,
+      "text": "and to obtain the sub-costal video."
+    },
+    {
+      "start": 310.0,
+      "end": 314.35,
+      "text": "we place the probe just inferior to the zipod process."
+    },
+    {
+      "start": 315.59,
+      "end": 317.27,
+      "text": "If we are using the curved linear probe,"
+    },
+    {
+      "start": 317.69,
+      "end": 319.97,
+      "text": "we have the indicator facing to the patient's right."
+    },
+    {
+      "start": 320.0,
+      "end": 322.95,
+      "text": "However, if we are using the phased array probe,"
+    },
+    {
+      "start": 322.95,
+      "end": 325.45,
+      "text": "you have the indicator of phasing to the patient's left."
+    },
+    {
+      "start": 326.76,
+      "end": 329.56,
+      "text": "It is often helpful to have the patient bend their knees"
+    },
+    {
+      "start": 329.56,
+      "end": 329.96,
+      "text": "until..."
+    },
+    {
+      "start": 330.0,
+      "end": 335.82,
+      "text": "a breath in to optimize this view and also the ultrasound probe should be aligned slightly"
+    },
+    {
+      "start": 336.24,
+      "end": 339.97,
+      "text": "in this view we should be"
+    },
+    {
+      "start": 340.0,
+      "end": 345.24,
+      "text": "able to identify the liver, pericardium, and the two atria and two ventricos of the heart"
+    },
+    {
+      "start": 345.24,
+      "end": 346.76,
+      "text": "as depicted in this video."
+    },
+    {
+      "start": 350.0,
+      "end": 354.08,
+      "text": "The video is particularly useful for evaluating for free fluid in the Pirate Cardio space,"
+    },
+    {
+      "start": 354.69,
+      "end": 357.01,
+      "text": "as seen in these videos depicted by the yellow arrows."
+    },
+    {
+      "start": 358.41,
+      "end": 359.69,
+      "text": "Both video clips demonstration."
+    },
+    {
+      "start": 360.22,
+      "end": 365.15,
+      "text": "circumstantial fluid collection. The video to the right of the screen additionally depicts"
+    },
+    {
+      "start": 365.15,
+      "end": 369.15,
+      "text": "one of the distinguishing features suggesting possible tamponial physiology."
+    },
+    {
+      "start": 370.13,
+      "end": 372.57,
+      "text": "That is, right-print trick alert, diastoloplasts."
+    },
+    {
+      "start": 374.34,
+      "end": 377.22,
+      "text": "Finally, the pelvic scan will assess for fluid"
+    },
+    {
+      "start": 377.22,
+      "end": 378.62,
+      "text": "in the super pubic region."
+    },
+    {
+      "start": 379.7,
+      "end": 379.86,
+      "text": "Do it."
+    },
+    {
+      "start": 380.0,
+      "end": 384.72,
+      "text": "In this view, we placed the probe right above the pubic synthesis with the indicator probe"
+    },
+    {
+      "start": 384.72,
+      "end": 386.08,
+      "text": "facing to the patient's right."
+    },
+    {
+      "start": 387.42,
+      "end": 389.88,
+      "text": "Ideally, the patient would have a full bladder source."
+    },
+    {
+      "start": 390.06,
+      "end": 395.73,
+      "text": "actors an acoustic window, and then the probe should be tilted quarterly, so as to scan deep into"
+    },
+    {
+      "start": 395.73,
+      "end": 399.97,
+      "text": "the pelvic cavity. In this view, we should be able to identify..."
+    },
+    {
+      "start": 400.0,
+      "end": 405.74,
+      "text": "the bladder, prostate and rectum in males and in females, the bladder, uterus and rectum"
+    },
+    {
+      "start": 405.74,
+      "end": 409.9,
+      "text": "should be seen. In males, fluid tends to accumulate in their"
+    },
+    {
+      "start": 410.0,
+      "end": 416.42,
+      "text": "of a cycle pouch, whereas in females, fewer collects in the recto uterine pouch, which is also known"
+    },
+    {
+      "start": 416.42,
+      "end": 419.97,
+      "text": "at the power of Douglas. In this example,"
+    },
+    {
+      "start": 420.0,
+      "end": 425.92,
+      "text": "For example, we can see free fluid accumulating in the rectal uterine pouch, as indicated by the yellow arrows,"
+    },
+    {
+      "start": 426.6,
+      "end": 429.8,
+      "text": "possibly indicating a ruptured octopic pregnancy in this patient."
+    },
+    {
+      "start": 431.63,
+      "end": 433.85,
+      "text": "That concludes our lecture on the fast exam today."
+    },
+    {
+      "start": 434.68,
+      "end": 437.12,
+      "text": "In summary, we went through the four basic use"
+    },
+    {
+      "start": 437.12,
+      "end": 438.36,
+      "text": "to perform a fast exam,"
+    },
+    {
+      "start": 438.84,
+      "end": 439.96,
+      "text": "along with highlighting both."
+    },
+    {
+      "start": 440.0,
+      "end": 442.96,
+      "text": "abnormal and abnormal anatomy associated with these views."
+    },
+    {
+      "start": 444.38,
+      "end": 446.75,
+      "text": "Thank you for watching and I hope you found this topic helpful."
+    }
+  ]
+}

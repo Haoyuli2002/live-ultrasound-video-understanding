@@ -1,0 +1,1408 @@
+{
+  "video_id": "Xv0abFuo5gY",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/Xv0abFuo5gY/asr.txt",
+  "segments": [
+    {
+      "start": 0.67,
+      "end": 4.13,
+      "text": "Welcome to Pocuskeek, I'm Jared Marks, and in this video we're going to talk about the"
+    },
+    {
+      "start": 4.13,
+      "end": 4.89,
+      "text": "EFAST exam."
+    },
+    {
+      "start": 5.51,
+      "end": 9.75,
+      "text": "The EFAST exam is crucial to the evaluation of trauma patients that are hypotensive and"
+    },
+    {
+      "start": 9.75,
+      "end": 9.89,
+      "text": "critical."
+    },
+    {
+      "start": 10.06,
+      "end": 13.42,
+      "text": "within your emergency department and it's a great way to evaluate for"
+    },
+    {
+      "start": 13.42,
+      "end": 16.73,
+      "text": "hemoparitinium or causes of shock within the patient."
+    },
+    {
+      "start": 17.35,
+      "end": 19.91,
+      "text": "Understanding how to get the right images to increase"
+    },
+    {
+      "start": 20.0,
+      "end": 23.8,
+      "text": "your sensitivity and your positive predictive value are important and in this"
+    },
+    {
+      "start": 23.8,
+      "end": 28.29,
+      "text": "video we're going to discuss how to better perform this exam. Extended focus"
+    },
+    {
+      "start": 28.29,
+      "end": 29.97,
+      "text": "his assessment with sonography and trauma."
+    },
+    {
+      "start": 30.0,
+      "end": 35.92,
+      "text": "is one of the oldest applications used within emergency ultrasound to evaluate critical"
+    },
+    {
+      "start": 35.92,
+      "end": 39.94,
+      "text": "care patients. It's one of the core applications that's led to the"
+    },
+    {
+      "start": 40.0,
+      "end": 44.32,
+      "text": "development of other critical care protocols to evaluate patients."
+    },
+    {
+      "start": 44.92,
+      "end": 49.32,
+      "text": "And even though it's a study that was first started in trauma patients, these other protocols."
+    },
+    {
+      "start": 50.13,
+      "end": 57.92,
+      "text": "focused on medical patients and the EFAS can be quite helpful in evaluating these patients also."
+    },
+    {
+      "start": 59.32,
+      "end": 59.82,
+      "text": "When you're performing"
+    },
+    {
+      "start": 60.03,
+      "end": 64.15,
+      "text": "In this exam, I would recommend that you use a curvilinear probe, you want a low frequency"
+    },
+    {
+      "start": 64.15,
+      "end": 68.49,
+      "text": "probe that allows you to evaluate all the areas you're going to without having to switch"
+    },
+    {
+      "start": 68.49,
+      "end": 69.97,
+      "text": "which probes and slow you down during your..."
+    },
+    {
+      "start": 70.0,
+      "end": 74.68,
+      "text": "exam, you'll have much of your medical team waiting on you to perform this exam and give"
+    },
+    {
+      "start": 74.68,
+      "end": 78.94,
+      "text": "them a diagnosis, and being able to move through it quickly and efficiently is going to be"
+    },
+    {
+      "start": 78.94,
+      "end": 79.98,
+      "text": "in your best interest."
+    },
+    {
+      "start": 80.0,
+      "end": 81.6,
+      "text": "and the patient's best interest."
+    },
+    {
+      "start": 83.71,
+      "end": 85.61,
+      "text": "Indications for performing any faster,"
+    },
+    {
+      "start": 86.03,
+      "end": 88.81,
+      "text": "trauma obviously, when we talk about that portion,"
+    },
+    {
+      "start": 89.13,
+      "end": 89.93,
+      "text": "but you can use this"
+    },
+    {
+      "start": 90.0,
+      "end": 94.28,
+      "text": "and medical patients, and any patient that is critical, especially hypotensive,"
+    },
+    {
+      "start": 94.6,
+      "end": 99.98,
+      "text": "tachycardic or respiratory distress, she can use components of this exam to evaluate them and help expedite care."
+    },
+    {
+      "start": 100.0,
+      "end": 106.66,
+      "text": "It does have a role in penetrating trauma, but that is typically around the lungs and heart,"
+    },
+    {
+      "start": 107.28,
+      "end": 109.96,
+      "text": "and when we're looking to see if there is either a new..."
+    },
+    {
+      "start": 110.1,
+      "end": 114.62,
+      "text": "thorax or a large pericardial fusion that's causing them to decompensate."
+    },
+    {
+      "start": 115.9,
+      "end": 119.3,
+      "text": "When we're doing this exam, keep it binding, especially in blunt trauma, what we're going"
+    },
+    {
+      "start": 119.3,
+      "end": 119.92,
+      "text": "to be doing is looking."
+    },
+    {
+      "start": 120.0,
+      "end": 126.92,
+      "text": "at these three areas of the body. The pericardial sac and the heart, the lungs, and the thoracic"
+    },
+    {
+      "start": 126.92,
+      "end": 128.9,
+      "text": "cavity, and then the abdominal cavity."
+    },
+    {
+      "start": 132.66,
+      "end": 136.44,
+      "text": "And so when we talk about doing clinical ultrasound, we have binary questions."
+    },
+    {
+      "start": 136.84,
+      "end": 139.42,
+      "text": "We're going to introduce three binary questions during this lecture."
+    },
+    {
+      "start": 140.71,
+      "end": 146.77,
+      "text": "But the first one is, is their free fluid and we're going to look in all these three areas to evaluate for free fluid."
+    },
+    {
+      "start": 147.52,
+      "end": 149.64,
+      "text": "When I go throughout this exam, I like to go out and"
+    },
+    {
+      "start": 149.64,
+      "end": 149.82,
+      "text": "And then I'm going to add a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of"
+    },
+    {
+      "start": 150.0,
+      "end": 154.7,
+      "text": "clockwise manner around the abdomen. This allows us to work from the most"
+    },
+    {
+      "start": 154.7,
+      "end": 158.91,
+      "text": "sensitive to the least sensitive areas on the abdomen for evaluating for free"
+    },
+    {
+      "start": 158.91,
+      "end": 159.19,
+      "text": "fluid."
+    },
+    {
+      "start": 160.93,
+      "end": 166.34,
+      "text": "And when I start in the right upper quadrant, you can go from anywhere along the costume"
+    },
+    {
+      "start": 166.34,
+      "end": 169.86,
+      "text": "margin on the interior abdomen over to the mid-to-post area."
+    },
+    {
+      "start": 170.32,
+      "end": 177.04,
+      "text": "slurry line. I personally like to do the posterior or the mid axillary line and we're"
+    },
+    {
+      "start": 177.04,
+      "end": 179.27,
+      "text": "going to essentially evaluate the"
+    },
+    {
+      "start": 180.0,
+      "end": 185.3,
+      "text": "the pleural space and diaphragm down through the inferior gip of the liver or kidney, which"
+    },
+    {
+      "start": 185.3,
+      "end": 189.44,
+      "text": "is ever most inferior, and by doing so methodically through this area."
+    },
+    {
+      "start": 190.03,
+      "end": 192.77,
+      "text": "we will increase our sensitivity and be able to find that free fluid."
+    },
+    {
+      "start": 194.29,
+      "end": 199.24,
+      "text": "Now what we have here and we can see is that we're going to try to evaluate that diaphragm"
+    },
+    {
+      "start": 199.24,
+      "end": 199.92,
+      "text": "area and the"
+    },
+    {
+      "start": 200.03,
+      "end": 209.86,
+      "text": "We're going to really focus on finding that spine line and watching that insert into the diaphragm and when we look at this here we see that"
+    },
+    {
+      "start": 211.09,
+      "end": 212.75,
+      "text": "right through here is that spine line."
+    },
+    {
+      "start": 214.03,
+      "end": 215.45,
+      "text": "And then this is the diaphragm right here."
+    },
+    {
+      "start": 215.99,
+      "end": 217.77,
+      "text": "And by looking right here, we can see"
+    },
+    {
+      "start": 217.77,
+      "end": 218.99,
+      "text": "that there's no free fluid."
+    },
+    {
+      "start": 219.13,
+      "end": 219.97,
+      "text": "Even though this is an-"
+    },
+    {
+      "start": 220.03,
+      "end": 225.17,
+      "text": "coic because the spine does not continue above it, that means that there's no free fluid here."
+    },
+    {
+      "start": 225.55,
+      "end": 229.97,
+      "text": "And so when we go back to our list, we're going to evaluate the plural space for free fluid we see"
+    },
+    {
+      "start": 230.0,
+      "end": 234.54,
+      "text": "that, and there's no free fluid, then we're going to start working down through Morrison's"
+    },
+    {
+      "start": 234.54,
+      "end": 237.16,
+      "text": "pouch in this area and evaluating for fluid."
+    },
+    {
+      "start": 238.57,
+      "end": 239.96,
+      "text": "And we may not always..."
+    },
+    {
+      "start": 240.03,
+      "end": 244.19,
+      "text": "get that in one view so we may need repeat views and we can see that area through here."
+    },
+    {
+      "start": 244.63,
+      "end": 248.71,
+      "text": "We want to take a little caution where there's this rib shadow but hopefully we can see"
+    },
+    {
+      "start": 248.71,
+      "end": 249.97,
+      "text": "in our next image that we got."
+    },
+    {
+      "start": 250.03,
+      "end": 254.73,
+      "text": "a little bit more of that and we come down around the inferior tip of the liver and in this"
+    },
+    {
+      "start": 254.73,
+      "end": 257.65,
+      "text": "case we're also seeing the inferior tip of the kidney."
+    },
+    {
+      "start": 258.31,
+      "end": 259.97,
+      "text": "Now what this means to us is that this is..."
+    },
+    {
+      "start": 260.0,
+      "end": 264.83,
+      "text": "called the paracolic gutter and this is the first area that we'll see free fluid in the"
+    },
+    {
+      "start": 264.83,
+      "end": 269.79,
+      "text": "abdomen and we'll see free fluid collect right in this area and after it's collected here it will"
+    },
+    {
+      "start": 270.0,
+      "end": 272.82,
+      "text": "start to track up through Morrison's pouch."
+    },
+    {
+      "start": 275.96,
+      "end": 278.52,
+      "text": "After we've finished evaluating the right upper quadrant,"
+    },
+    {
+      "start": 278.72,
+      "end": 279.98,
+      "text": "then we're going to go to the subsife."
+    },
+    {
+      "start": 280.06,
+      "end": 285.1,
+      "text": "and whether you follow the protocol that I'm teaching you here, or you follow your own,"
+    },
+    {
+      "start": 285.32,
+      "end": 289.46,
+      "text": "I would suggest to you that you make the write-up or quadrant in Sub's I-Foid B."
+    },
+    {
+      "start": 290.26,
+      "end": 294.92,
+      "text": "your first views because these will most often explain why a patient's"
+    },
+    {
+      "start": 294.92,
+      "end": 299.44,
+      "text": "hypotensive for you. Now in addition to evaluating the pericardial sac for free"
+    },
+    {
+      "start": 299.44,
+      "end": 299.76,
+      "text": "fluid"
+    },
+    {
+      "start": 300.32,
+      "end": 302.04,
+      "text": "We may be able to evaluate the heart"
+    },
+    {
+      "start": 302.04,
+      "end": 304.24,
+      "text": "to see if the function's normal."
+    },
+    {
+      "start": 304.88,
+      "end": 306.26,
+      "text": "Now this may not always be possible"
+    },
+    {
+      "start": 306.26,
+      "end": 307.76,
+      "text": "with the curvilinear probe,"
+    },
+    {
+      "start": 308.24,
+      "end": 309.98,
+      "text": "and maybe at the end we'll have to come back with the..."
+    },
+    {
+      "start": 310.03,
+      "end": 314.93,
+      "text": "array and do more of a full cardiac exam. Now when we're looking at the cardiac"
+    },
+    {
+      "start": 314.93,
+      "end": 319.97,
+      "text": "evaluation, we want to see the entire paracardium to evaluate for free-fold-"
+    },
+    {
+      "start": 320.0,
+      "end": 327.12,
+      "text": "and then we really need to see the interior myocardial walls and that will help us to assess for function."
+    },
+    {
+      "start": 328.98,
+      "end": 329.74,
+      "text": "And with our probe marker,"
+    },
+    {
+      "start": 330.03,
+      "end": 334.24,
+      "text": "to the patient's right we're going to look up towards the patient's left"
+    },
+    {
+      "start": 334.24,
+      "end": 338.44,
+      "text": "mid-clavicular line to left shoulder and we'll get a view like this and what we're"
+    },
+    {
+      "start": 338.44,
+      "end": 339.96,
+      "text": "going to see is that we can see"
+    },
+    {
+      "start": 340.0,
+      "end": 344.86,
+      "text": "all four chambers of the heart and that right ventricle is going to be abutting right up against"
+    },
+    {
+      "start": 344.86,
+      "end": 349.44,
+      "text": "the liver wall and right through this area."
+    },
+    {
+      "start": 350.64,
+      "end": 354.06,
+      "text": "is where we're going to look and evaluate for free fluid."
+    },
+    {
+      "start": 354.78,
+      "end": 357.32,
+      "text": "Now it doesn't mean that you won't get free fluid back here"
+    },
+    {
+      "start": 357.32,
+      "end": 358.02,
+      "text": "because you can."
+    },
+    {
+      "start": 358.46,
+      "end": 359.96,
+      "text": "That would typically be more of a..."
+    },
+    {
+      "start": 360.0,
+      "end": 366.04,
+      "text": "isolated finding, but we're gonna evaluate right here for free fluid and along the right side of the"
+    },
+    {
+      "start": 366.04,
+      "end": 368.54,
+      "text": "heart because if there is an acutely"
+    },
+    {
+      "start": 370.64,
+      "end": 374.81,
+      "text": "an acute pericardial effusion or blood within the pericardial sac."
+    },
+    {
+      "start": 375.37,
+      "end": 379.97,
+      "text": "That can compromise their function in the feeling of the right ventricle and leaving."
+    },
+    {
+      "start": 380.0,
+      "end": 384.01,
+      "text": "to hypotension and making our patient a critical patient."
+    },
+    {
+      "start": 385.52,
+      "end": 388.8,
+      "text": "Now in this case we can see the inner walls of that left ventricle, we can see it close"
+    },
+    {
+      "start": 388.8,
+      "end": 389.12,
+      "text": "down."
+    },
+    {
+      "start": 389.54,
+      "end": 389.86,
+      "text": "It closes."
+    },
+    {
+      "start": 390.0,
+      "end": 396.21,
+      "text": "down well. This is a normal appearing ejection fraction. If you want to learn more about cardiac"
+    },
+    {
+      "start": 396.21,
+      "end": 399.73,
+      "text": "ultrasound, you can watch the other lecture, which I'll include a link up here in the"
+    },
+    {
+      "start": 399.73,
+      "end": 399.93,
+      "text": "corner."
+    },
+    {
+      "start": 400.0,
+      "end": 404.64,
+      "text": "which can further help you assess the function of the left ventricle."
+    },
+    {
+      "start": 405.97,
+      "end": 409.98,
+      "text": "Now at times when we're doing this, we may not be able to see the sub-"
+    },
+    {
+      "start": 410.0,
+      "end": 413.42,
+      "text": "I would view, maybe it's not a view that's attainable in the patient."
+    },
+    {
+      "start": 414.22,
+      "end": 414.74,
+      "text": "And that's okay."
+    },
+    {
+      "start": 414.9,
+      "end": 416.96,
+      "text": "We do have the option of doing a pair of sternal view."
+    },
+    {
+      "start": 417.49,
+      "end": 419.97,
+      "text": "If you're going to do that, I would recommend switching to a..."
+    },
+    {
+      "start": 420.03,
+      "end": 424.19,
+      "text": "phased array probe, shooting between the ribs, that will just make it easier."
+    },
+    {
+      "start": 424.71,
+      "end": 428.93,
+      "text": "I would typically save that till after you finish evaluating the rest of the abdomen."
+    },
+    {
+      "start": 430.0,
+      "end": 434.08,
+      "text": "Changing back and forth on probes, even in the best machines, is going to take 30 seconds"
+    },
+    {
+      "start": 434.7,
+      "end": 435.94,
+      "text": "at a time, essentially."
+    },
+    {
+      "start": 436.62,
+      "end": 439.98,
+      "text": "And so you want to really get through the exam and then come back to the exam."
+    },
+    {
+      "start": 440.0,
+      "end": 441.98,
+      "text": "at the end and you can focus on it."
+    },
+    {
+      "start": 442.64,
+      "end": 444.56,
+      "text": "And even if you get a good subside void view,"
+    },
+    {
+      "start": 444.88,
+      "end": 446.06,
+      "text": "you can come back and look at the pair"
+    },
+    {
+      "start": 446.06,
+      "end": 449.18,
+      "text": "external to further evaluate the ejection fraction"
+    },
+    {
+      "start": 449.18,
+      "end": 449.98,
+      "text": "if you needed ore."
+    },
+    {
+      "start": 450.0,
+      "end": 457.94,
+      "text": "the cardiac activity. After finishing the sub-siphoid view, we're going to continue to move clockwise"
+    },
+    {
+      "start": 457.94,
+      "end": 459.96,
+      "text": "around the abdomen, and we're going to..."
+    },
+    {
+      "start": 460.0,
+      "end": 464.1,
+      "text": "to go to the left upper quadrant. The left upper quadrant is a little bit more difficult"
+    },
+    {
+      "start": 464.1,
+      "end": 468.76,
+      "text": "in the right upper quadrant. You can't do the right, the anterior abdomen like you can"
+    },
+    {
+      "start": 468.76,
+      "end": 469.4,
+      "text": "on the right."
+    },
+    {
+      "start": 470.0,
+      "end": 471.6,
+      "text": "because the spleen is so much smaller,"
+    },
+    {
+      "start": 472.18,
+      "end": 474.82,
+      "text": "you really need to get really posterior on these patients."
+    },
+    {
+      "start": 474.96,
+      "end": 477.36,
+      "text": "And what I like to do is go all the way"
+    },
+    {
+      "start": 477.36,
+      "end": 479.89,
+      "text": "to the posterior, posterior axillary."
+    },
+    {
+      "start": 480.0,
+      "end": 483.74,
+      "text": "line and then I will fan a little bit anterior and if I don't see the"
+    },
+    {
+      "start": 483.74,
+      "end": 489.09,
+      "text": "spling there then I will drag the probe just a little anterior between the"
+    },
+    {
+      "start": 489.09,
+      "end": 489.61,
+      "text": "posterior"
+    },
+    {
+      "start": 490.0,
+      "end": 494.38,
+      "text": "axillary line in the mid axillary line and then fan posterior and that will most"
+    },
+    {
+      "start": 494.38,
+      "end": 499.94,
+      "text": "often help you see the spleen and get the view you need. Now again much like the"
+    },
+    {
+      "start": 500.0,
+      "end": 504.58,
+      "text": "write a per quadrant we're going to evaluate from the plural space all the way to the inferior"
+    },
+    {
+      "start": 504.58,
+      "end": 509.98,
+      "text": "pole of the kidney and the the spleen which is ever is"
+    },
+    {
+      "start": 510.0,
+      "end": 513.58,
+      "text": "most inferior and this will give us a good thorough assessment of the area."
+    },
+    {
+      "start": 515.04,
+      "end": 518.76,
+      "text": "So with our probe in this area we're going to see that we can see the"
+    },
+    {
+      "start": 518.76,
+      "end": 519.86,
+      "text": "All right."
+    },
+    {
+      "start": 520.03,
+      "end": 522.53,
+      "text": "here in kind of that rose color."
+    },
+    {
+      "start": 523.48,
+      "end": 526.22,
+      "text": "And we're gonna look right above that and see our lung."
+    },
+    {
+      "start": 526.46,
+      "end": 529.98,
+      "text": "And so when we look here, this is our..."
+    },
+    {
+      "start": 531.28,
+      "end": 535.06,
+      "text": "diaphragm and again we have this spine line coming through here and it"
+    },
+    {
+      "start": 535.06,
+      "end": 539.49,
+      "text": "disappears into the diaphragm. Now this does not look like free fluid here, this is"
+    },
+    {
+      "start": 539.49,
+      "end": 539.97,
+      "text": "is not quite..."
+    },
+    {
+      "start": 540.06,
+      "end": 544.82,
+      "text": "a continuation of the spine line. This is a normal appearing exam and the"
+    },
+    {
+      "start": 544.82,
+      "end": 548.24,
+      "text": "difference between looking at this in a still image and dynamic as we can see"
+    },
+    {
+      "start": 548.24,
+      "end": 549.96,
+      "text": "whether that diaphragm is a ray."
+    },
+    {
+      "start": 550.0,
+      "end": 553.49,
+      "text": "releasing the vertebral bodies, which it will be."
+    },
+    {
+      "start": 554.11,
+      "end": 559.55,
+      "text": "Now the difference in this exam is that fluid will typically collect here around the pole"
+    },
+    {
+      "start": 559.55,
+      "end": 559.97,
+      "text": "of the splinter."
+    },
+    {
+      "start": 560.0,
+      "end": 566.42,
+      "text": "or here before we see it through the splino renal recess and once it does"
+    },
+    {
+      "start": 566.42,
+      "end": 569.85,
+      "text": "This clip here is going to go super splint it."
+    },
+    {
+      "start": 571.25,
+      "end": 573.41,
+      "text": "or subdive fragmentic through this area"
+    },
+    {
+      "start": 573.73,
+      "end": 577.57,
+      "text": "before it will ever fill the spline arena recess here."
+    },
+    {
+      "start": 578.87,
+      "end": 579.87,
+      "text": "The spline will essentially"
+    },
+    {
+      "start": 580.0,
+      "end": 584.28,
+      "text": "have to be covered in fluid before you'll see it in this area."
+    },
+    {
+      "start": 584.9,
+      "end": 589.66,
+      "text": "So keep that in mind that this area here, this pole and this pole are your most critical."
+    },
+    {
+      "start": 590.42,
+      "end": 592.98,
+      "text": "And then if you can, you want to try to see along this diaphragm."
+    },
+    {
+      "start": 593.04,
+      "end": 594.9,
+      "text": "Now that can be quite a bit more difficult"
+    },
+    {
+      "start": 595.7,
+      "end": 597.42,
+      "text": "with the ribs being in the way."
+    },
+    {
+      "start": 598.2,
+      "end": 599.92,
+      "text": "Now after you get this view, we want to be"
+    },
+    {
+      "start": 600.0,
+      "end": 604.08,
+      "text": "So we're gonna come down here's the tip of the spleen right here where we're gonna look for free fluid"
+    },
+    {
+      "start": 604.08,
+      "end": 609.91,
+      "text": "And then we're gonna come down and look at this inferior pole of the kidney and this is again our paracolic gutter"
+    },
+    {
+      "start": 610.42,
+      "end": 612.28,
+      "text": "which is going to be a little bit more sensitive for us."
+    },
+    {
+      "start": 615.2,
+      "end": 617.44,
+      "text": "After completing the left upper quadrant,"
+    },
+    {
+      "start": 617.56,
+      "end": 619.54,
+      "text": "we're going to continue to move through the abdomen."
+    },
+    {
+      "start": 620.0,
+      "end": 625.98,
+      "text": "clockwise motion and we're going to go down and visualize the pelvis. Now when we visualize the"
+    },
+    {
+      "start": 625.98,
+      "end": 629.98,
+      "text": "pelvis we want to identify the bladder. We're going to identify any other"
+    },
+    {
+      "start": 630.0,
+      "end": 634.54,
+      "text": "organs we can and melds the prostate and females the uterus and then we want to look"
+    },
+    {
+      "start": 634.54,
+      "end": 639.98,
+      "text": "cranial to these objects because we need to look into the"
+    },
+    {
+      "start": 640.0,
+      "end": 643.32,
+      "text": "intraperitoneal cavity and both of these lie within the pelvis."
+    },
+    {
+      "start": 644.02,
+      "end": 649.98,
+      "text": "Now when we start in a male patient, the pro-marker will be directed towards the"
+    },
+    {
+      "start": 650.0,
+      "end": 656.92,
+      "text": "umbilicus or towards the head, drag down right above the pubic bone and once you hit that pubic bone"
+    },
+    {
+      "start": 656.92,
+      "end": 658.58,
+      "text": "and start to evaluate for the anatomy."
+    },
+    {
+      "start": 660.1,
+      "end": 663.56,
+      "text": "And what we see here is our bladder and inferior."
+    },
+    {
+      "start": 664.36,
+      "end": 667.86,
+      "text": "On the body we see the prostate and seminal vesicles"
+    },
+    {
+      "start": 667.86,
+      "end": 669.88,
+      "text": "and it's important to remember that those are not."
+    },
+    {
+      "start": 670.13,
+      "end": 671.65,
+      "text": "part of the intraparatoneal cavity."
+    },
+    {
+      "start": 672.27,
+      "end": 674.07,
+      "text": "And so we're not looking for fluid around them."
+    },
+    {
+      "start": 674.13,
+      "end": 676.33,
+      "text": "Instead we're going to look up into the abdomen"
+    },
+    {
+      "start": 676.95,
+      "end": 679.96,
+      "text": "into this area within the intraparatoneal cavity."
+    },
+    {
+      "start": 680.0,
+      "end": 685.25,
+      "text": "for free fluid. And so, again, when we look at this image, we see prostate here,"
+    },
+    {
+      "start": 685.47,
+      "end": 689.98,
+      "text": "seminal vesicles, but remember, that's the cutoff of where the pelvis is, is about..."
+    },
+    {
+      "start": 690.0,
+      "end": 693.86,
+      "text": "right here and then up here in the abdomen is where we want to look for that free fluid."
+    },
+    {
+      "start": 694.42,
+      "end": 695.94,
+      "text": "So make sure you start in a long access."
+    },
+    {
+      "start": 696.14,
+      "end": 699.98,
+      "text": "It helps to identify those structures and then you can look for free fluid."
+    },
+    {
+      "start": 700.0,
+      "end": 705.79,
+      "text": "along that wall. Now at times I will do a short access, especially in male patients."
+    },
+    {
+      "start": 706.11,
+      "end": 709.87,
+      "text": "Sometimes I'll do it in female in a, if it's a retroverted uterus."
+    },
+    {
+      "start": 710.0,
+      "end": 716.58,
+      "text": "but what I'll do is I'll use the prostate in males or the cervix and use that as a landmark to then"
+    },
+    {
+      "start": 716.58,
+      "end": 719.6,
+      "text": "start fanning superior or moving dragging."
+    },
+    {
+      "start": 720.0,
+      "end": 724.46,
+      "text": "superior towards the umbilicus and help me to evaluate for free fluid once I hit the"
+    },
+    {
+      "start": 724.46,
+      "end": 725.62,
+      "text": "intrapair tonal cavity."
+    },
+    {
+      "start": 726.63,
+      "end": 729.97,
+      "text": "In a female patient, you know, instead we're going to look for"
+    },
+    {
+      "start": 730.0,
+      "end": 736.09,
+      "text": "the uterus to help us identify what we're doing and we'll get an image like this if they"
+    },
+    {
+      "start": 736.09,
+      "end": 739.79,
+      "text": "have an anterior verded uterus or an anterior flexed uterus as in this case."
+    },
+    {
+      "start": 741.95,
+      "end": 748.21,
+      "text": "And what we're going to be doing is looking for free fluid along this posterior wall of"
+    },
+    {
+      "start": 748.21,
+      "end": 748.77,
+      "text": "the uterus."
+    },
+    {
+      "start": 748.91,
+      "end": 749.75,
+      "text": "Now, in females,"
+    },
+    {
+      "start": 750.74,
+      "end": 759.01,
+      "text": "especially of reproductive age they can have free fluid and we actually see just a tiny bit right there in this patient and that free fluid can be normal"
+    },
+    {
+      "start": 760.26,
+      "end": 761.9,
+      "text": "if they're still ovulating."
+    },
+    {
+      "start": 762.72,
+      "end": 766.53,
+      "text": "How we key into that is we cut the uterus into thirds."
+    },
+    {
+      "start": 766.93,
+      "end": 768.75,
+      "text": "And so if we look at this, this would be a third"
+    },
+    {
+      "start": 768.75,
+      "end": 769.98,
+      "text": "and this would be a third."
+    },
+    {
+      "start": 770.0,
+      "end": 774.32,
+      "text": "And anything in the lower third could be physiologic fluid and normal."
+    },
+    {
+      "start": 774.52,
+      "end": 779.25,
+      "text": "If it gets into the middle to upper third, you need to consider that pathological."
+    },
+    {
+      "start": 780.03,
+      "end": 780.97,
+      "text": "they'll prove it otherwise."
+    },
+    {
+      "start": 782.11,
+      "end": 784.75,
+      "text": "Now, we will have patients, female patients"
+    },
+    {
+      "start": 784.75,
+      "end": 788.47,
+      "text": "that do not have an anterior flexed uterus,"
+    },
+    {
+      "start": 788.89,
+      "end": 789.85,
+      "text": "and instead we'll see this."
+    },
+    {
+      "start": 790.0,
+      "end": 796.06,
+      "text": "And how, where we want to look for fluid in them is along this posterior bladder wall and right in this area."
+    },
+    {
+      "start": 797.42,
+      "end": 799.98,
+      "text": "And by doing that, this is where our fluid's going to..."
+    },
+    {
+      "start": 800.0,
+      "end": 805.53,
+      "text": "clacked is right here and it's going to be sitting just anterior. This is the most"
+    },
+    {
+      "start": 805.53,
+      "end": 809.78,
+      "text": "dependent area that we'll see in the pelvis and the patient. Earlier I"
+    },
+    {
+      "start": 810.0,
+      "end": 813.64,
+      "text": "that the right upper quadrant is the most sensitive view for evaluating for"
+    },
+    {
+      "start": 813.64,
+      "end": 817.56,
+      "text": "free fluid in the abdomen. And although that is true, if your patient's been"
+    },
+    {
+      "start": 817.56,
+      "end": 819.9,
+      "text": "sitting upright, ambulated into your emergency."
+    },
+    {
+      "start": 820.0,
+      "end": 825.14,
+      "text": "department, then that may not be true. And what you have to do is evaluate the pelvis"
+    },
+    {
+      "start": 825.14,
+      "end": 829.68,
+      "text": "in these patients early. And I would maybe do that as my first view. And I'll select"
+    },
+    {
+      "start": 830.0,
+      "end": 834.56,
+      "text": "basis because they've been standing upright or sitting upright and that has caused the"
+    },
+    {
+      "start": 834.56,
+      "end": 839.68,
+      "text": "pelvis to be the gravity dependent area for free fluid and so I would start and evaluate"
+    },
+    {
+      "start": 839.68,
+      "end": 839.98,
+      "text": "Wait there."
+    },
+    {
+      "start": 840.0,
+      "end": 847.59,
+      "text": "first. After we've finished evaluating the abdomen, we're going to jump up and"
+    },
+    {
+      "start": 847.59,
+      "end": 849.67,
+      "text": "continue to evaluate the thorax. Now we"
+    },
+    {
+      "start": 850.0,
+      "end": 856.04,
+      "text": "We've already evaluated for free fluid in the Thorax, but now we also have a third binary"
+    },
+    {
+      "start": 856.04,
+      "end": 859.08,
+      "text": "question, and that is, is there lung sliding present?"
+    },
+    {
+      "start": 860.0,
+      "end": 863.04,
+      "text": "There's lung sliding present, then that rules out a pneumothorax."
+    },
+    {
+      "start": 864.05,
+      "end": 868.5,
+      "text": "And so this is important, especially in our supine patients because an ultrasound is much"
+    },
+    {
+      "start": 868.5,
+      "end": 869.98,
+      "text": "much more sensitive than a..."
+    },
+    {
+      "start": 870.48,
+      "end": 877.74,
+      "text": "chest x-ray in detecting if there is a pneumothorax present and so what we want to do is we're going to identify the plural line"
+    },
+    {
+      "start": 877.74,
+      "end": 879.98,
+      "text": "We're going to look for lung sliding along that"
+    },
+    {
+      "start": 880.1,
+      "end": 885.12,
+      "text": "line, and if there's no lung sliding, then we can go evaluate for what's called a lung"
+    },
+    {
+      "start": 885.12,
+      "end": 885.42,
+      "text": "point."
+    },
+    {
+      "start": 886.06,
+      "end": 889.8,
+      "text": "Now because this is such a large area, what we want to do is scan mid-collivicular"
+    },
+    {
+      "start": 890.03,
+      "end": 894.81,
+      "text": "by laterally, and we're going to evaluate for long sliding at each intercostal space."
+    },
+    {
+      "start": 895.83,
+      "end": 899.97,
+      "text": "And we're going to get a view similar to what we're going to see here in each one."
+    },
+    {
+      "start": 900.0,
+      "end": 903.68,
+      "text": "of those views but we want to stop at each rib space or if we're using a"
+    },
+    {
+      "start": 903.68,
+      "end": 907.5,
+      "text": "curvilindia probe sometimes we can see more than one and evaluate for free"
+    },
+    {
+      "start": 907.5,
+      "end": 909.9,
+      "text": "fluid and what we're going to do is identify that"
+    },
+    {
+      "start": 910.06,
+      "end": 915.91,
+      "text": "line we need to recognize the ribs and then we'll be able to evaluate along the"
+    },
+    {
+      "start": 915.91,
+      "end": 919.75,
+      "text": "plural line for long sliding. So as we can see here."
+    },
+    {
+      "start": 920.93,
+      "end": 927.15,
+      "text": "Along this plural line right here, we're going to just watch for that the shimmer back and forth."
+    },
+    {
+      "start": 927.82,
+      "end": 929.88,
+      "text": "I've had people say it looks like ants marching."
+    },
+    {
+      "start": 930.0,
+      "end": 934.32,
+      "text": "on the log. Others just say it looks like it's shimmering to them or sparkling."
+    },
+    {
+      "start": 935.1,
+      "end": 939.16,
+      "text": "Whatever it looks like to you, it's just important to recognize that. Now, be"
+    },
+    {
+      "start": 939.16,
+      "end": 939.98,
+      "text": "Be careful and make sure that you don't have to be careful and make sure that you don't have to be careful and make sure that you don't have to be careful and make sure that you don't have to be careful and make sure that you don't have to be careful and make sure that you don't have to be careful and make sure that you don't have to be careful and make sure that you don't have to be careful and make sure that you don't have to be careful and make sure that you don't have to be careful and make sure that you don't have to be careful and make sure that you don't have to be careful and make sure that you don't have to be careful and make sure that you don't have to be careful and make sure that you don't have to be careful and make sure that you don't have to be careful and make sure that you don't have to be careful and make sure that you don't have to be careful and make sure that you don't have to be careful and make sure that you don't have to be careful and"
+    },
+    {
+      "start": 940.03,
+      "end": 944.17,
+      "text": "your hands nice and stable otherwise you won't be able to tell if that movement is present."
+    },
+    {
+      "start": 945.45,
+      "end": 949.91,
+      "text": "One trick you can do if you can't tell if it's present is to hit your zoom function."
+    },
+    {
+      "start": 950.0,
+      "end": 954.46,
+      "text": "and then zoom in on this area and hopefully that helps you see that it's moving"
+    },
+    {
+      "start": 954.46,
+      "end": 958.98,
+      "text": "back and forth just a little bit and it's not going to move in large portions but"
+    },
+    {
+      "start": 958.98,
+      "end": 959.88,
+      "text": "we can see right in here."
+    },
+    {
+      "start": 960.0,
+      "end": 965.18,
+      "text": "a little flicker. We can see it over in here and that's the long-sliding occurring at that plural line."
+    },
+    {
+      "start": 967.76,
+      "end": 969.6,
+      "text": "If you still have difficulty telling..."
+    },
+    {
+      "start": 970.1,
+      "end": 971.82,
+      "text": "You can switch to a linear probe,"
+    },
+    {
+      "start": 972.02,
+      "end": 973.16,
+      "text": "just like I said in the cardiac,"
+    },
+    {
+      "start": 973.16,
+      "end": 975.04,
+      "text": "you could switch to the cardiac probe,"
+    },
+    {
+      "start": 975.24,
+      "end": 977.26,
+      "text": "and you can evaluate for long sliding."
+    },
+    {
+      "start": 977.5,
+      "end": 978.86,
+      "text": "This will be a little bit more sensitive."
+    },
+    {
+      "start": 979.58,
+      "end": 979.98,
+      "text": "And I'm..."
+    },
+    {
+      "start": 980.06,
+      "end": 982.34,
+      "text": "Less hesitant to switch to this probe at this point"
+    },
+    {
+      "start": 982.34,
+      "end": 985.09,
+      "text": "because I've typically finished the rest of the exam"
+    },
+    {
+      "start": 985.79,
+      "end": 987.08,
+      "text": "during that time."
+    },
+    {
+      "start": 992.18,
+      "end": 995.1,
+      "text": "In summary, we ask binary questions when we do Pocos."
+    },
+    {
+      "start": 995.32,
+      "end": 997.02,
+      "text": "And on an ethos exam, we're going to evaluate"
+    },
+    {
+      "start": 997.02,
+      "end": 999.58,
+      "text": "for free fluid in the thorax pericardial space."
+    },
+    {
+      "start": 1000.0,
+      "end": 1005.68,
+      "text": "in the abdomen. In addition, we can assess whether the cardiac function is normal, and also"
+    },
+    {
+      "start": 1005.68,
+      "end": 1009.56,
+      "text": "if there's presence of long sliding. Just remember if long sliding is not present, that"
+    },
+    {
+      "start": 1009.56,
+      "end": 1009.98,
+      "text": "doesn't mean..."
+    },
+    {
+      "start": 1010.0,
+      "end": 1015.26,
+      "text": "there's a new authorax. Instead, you need to go evaluate for a long point, which will"
+    },
+    {
+      "start": 1015.26,
+      "end": 1018.38,
+      "text": "be covered in another video and have a link within the description below."
+    },
+    {
+      "start": 1023.65,
+      "end": 1027.89,
+      "text": "I hope you found that video helpful in understanding how you can improve your quality for an e-fast"
+    },
+    {
+      "start": 1027.89,
+      "end": 1028.37,
+      "text": "exam."
+    },
+    {
+      "start": 1029.1,
+      "end": 1029.96,
+      "text": "If you have any"
+    },
+    {
+      "start": 1030.0,
+      "end": 1033.6,
+      "text": "questions about this or other point of character sound related questions, please feel free"
+    },
+    {
+      "start": 1033.6,
+      "end": 1037.88,
+      "text": "to reach out to me at PolkaSkeek at gmail.com where you can comment below."
+    },
+    {
+      "start": 1038.48,
+      "end": 1039.84,
+      "text": "Also check out one of our other videos."
+    }
+  ]
+}

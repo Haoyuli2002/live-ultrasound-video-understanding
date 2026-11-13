@@ -1,0 +1,218 @@
+{
+  "video_id": "-awazvNpICg",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/eval/-awazvNpICg/asr.txt",
+  "segments": [
+    {
+      "start": 0.7,
+      "end": 5.48,
+      "text": "Hello, everyone. Today we're going to go over a minute review on image orientation and"
+    },
+    {
+      "start": 5.48,
+      "end": 9.4,
+      "text": "transducer position. You guys have received some information on this already."
+    },
+    {
+      "start": 10.0,
+      "end": 11.94,
+      "text": "but it's going to be just a quick overview"
+    },
+    {
+      "start": 11.94,
+      "end": 13.5,
+      "text": "of everything that we've gone over."
+    },
+    {
+      "start": 14.42,
+      "end": 15.98,
+      "text": "So first of all, every transducer"
+    },
+    {
+      "start": 15.98,
+      "end": 16.96,
+      "text": "that you're going to work with"
+    },
+    {
+      "start": 16.96,
+      "end": 19.18,
+      "text": "is going to have a marking on the transducer"
+    },
+    {
+      "start": 19.18,
+      "end": 19.98,
+      "text": "that's going to tell you."
+    },
+    {
+      "start": 20.0,
+      "end": 24.66,
+      "text": "the correct position of the camera and the Pro as you're taking images to give you the"
+    },
+    {
+      "start": 24.66,
+      "end": 25.92,
+      "text": "correct image orientation."
+    },
+    {
+      "start": 26.240000000000002,
+      "end": 29.97,
+      "text": "So here you can see there's a little marking on the transducer there."
+    },
+    {
+      "start": 30.0,
+      "end": 33.36,
+      "text": "and that's always going to be kind of a guideline for you to how you hold the"
+    },
+    {
+      "start": 33.36,
+      "end": 39.97,
+      "text": "transducer. So starting here in longitudinal, looking at the marker on the image, it's going to be usually on"
+    },
+    {
+      "start": 40.0,
+      "end": 43.69,
+      "text": "On the top of the pro, we're treating stucer, and it's going to be pointing towards the"
+    },
+    {
+      "start": 43.69,
+      "end": 44.37,
+      "text": "patient's head."
+    },
+    {
+      "start": 44.57,
+      "end": 49.41,
+      "text": "So to take images in longitudinal, that always needs to be facing up towards the patient's"
+    },
+    {
+      "start": 49.41,
+      "end": 49.59,
+      "text": "head."
+    },
+    {
+      "start": 50.51,
+      "end": 52.51,
+      "text": "then here when you switch to transverse"
+    },
+    {
+      "start": 52.51,
+      "end": 55.59,
+      "text": "going to have the marking here located on the side"
+    },
+    {
+      "start": 55.59,
+      "end": 57.25,
+      "text": "of the transducer and the marking"
+    },
+    {
+      "start": 57.25,
+      "end": 59.91,
+      "text": "should always be pointing towards the patient."
+    },
+    {
+      "start": 60.06,
+      "end": 64.52,
+      "text": "right hand side. So here you'll see so that's always an indication for you to make"
+    },
+    {
+      "start": 64.52,
+      "end": 69.63,
+      "text": "sure the orientation of your image is correct. So now to look at image orientation"
+    },
+    {
+      "start": 70.0,
+      "end": 75.66,
+      "text": "in longitudinal at the anterior portion of the picture here. I'm going to be at the top"
+    },
+    {
+      "start": 75.66,
+      "end": 79.44,
+      "text": "of the image. This is skin surface in the anterior portion of the patient."
+    },
+    {
+      "start": 80.26,
+      "end": 85.76,
+      "text": "posterior down here at the bottom of your image is going to be the posterior parts of the anatomy."
+    },
+    {
+      "start": 86.57,
+      "end": 89.97,
+      "text": "And then on the left side of the image is going to be the superior portion of..."
+    },
+    {
+      "start": 90.03,
+      "end": 94.79,
+      "text": "anatomy, which will be facing towards the patient's head, and in fear, you're here on the right"
+    },
+    {
+      "start": 94.79,
+      "end": 99.76,
+      "text": "side of the image is going to be the patient's feet. Over here, you can see this little"
+    },
+    {
+      "start": 100.0,
+      "end": 104.99,
+      "text": "His blue P is Philips machine, but it's going to give you an indication that everything"
+    },
+    {
+      "start": 104.99,
+      "end": 109.57,
+      "text": "is set up normally on the top right hand side and that the image and the orientation"
+    },
+    {
+      "start": 109.57,
+      "end": 109.97,
+      "text": "of the"
+    },
+    {
+      "start": 110.0,
+      "end": 113.53,
+      "text": "image has not been flipped at all, so you always want to make sure that that"
+    },
+    {
+      "start": 113.53,
+      "end": 119.26,
+      "text": "P is there and that nothing has been adjusted on your image. Now here to look"
+    },
+    {
+      "start": 119.26,
+      "end": 119.76,
+      "text": "like in trans-"
+    },
+    {
+      "start": 120.0,
+      "end": 129.82,
+      "text": "Similarly to a long anterior and posterior top of the image here, bottom here and then here you have right and left"
+    },
+    {
+      "start": 130.16,
+      "end": 134.62,
+      "text": "So the right side of the patient is over here on the left side of the screen anatomically"
+    },
+    {
+      "start": 134.62,
+      "end": 139.2,
+      "text": "and the left side of the patient over here on the right side of the screen anatomically."
+    },
+    {
+      "start": 140.0,
+      "end": 146.09,
+      "text": "to combine all of these here and longitudinal transducer position pointing up towards the head,"
+    },
+    {
+      "start": 146.44,
+      "end": 149.22,
+      "text": "anterior posterior, superior, superior, inferior."
+    },
+    {
+      "start": 150.35,
+      "end": 156.11,
+      "text": "long as transverse transducer marker pointing towards the patient's right and to your"
+    },
+    {
+      "start": 156.11,
+      "end": 158.82,
+      "text": "posterior right and left. Thank you."
+    }
+  ]
+}

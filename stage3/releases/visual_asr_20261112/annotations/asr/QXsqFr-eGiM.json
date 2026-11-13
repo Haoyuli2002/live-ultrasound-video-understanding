@@ -1,0 +1,1358 @@
+{
+  "video_id": "QXsqFr-eGiM",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/QXsqFr-eGiM/asr.txt",
+  "segments": [
+    {
+      "start": 0.32,
+      "end": 6.48,
+      "text": "Hi, I'm Irhazik here and I'm director of Naisora, greetings to all subscribers to our YouTube"
+    },
+    {
+      "start": 6.48,
+      "end": 6.94,
+      "text": "channel."
+    },
+    {
+      "start": 7.1,
+      "end": 9.22,
+      "text": "If you have not subscribed, do so now."
+    },
+    {
+      "start": 10.0,
+      "end": 14.99,
+      "text": "subscribe and make sure you don't miss any of our exciting videos coming up. You"
+    },
+    {
+      "start": 14.99,
+      "end": 19.85,
+      "text": "also should make sure that you check the next level Naisora.com which is our"
+    },
+    {
+      "start": 20.0,
+      "end": 24.46,
+      "text": "amazing educational platform where you will get the best of Naisora's content,"
+    },
+    {
+      "start": 25.02,
+      "end": 28.0,
+      "text": "illustration, clinical images, videos and animations."
+    },
+    {
+      "start": 34.32,
+      "end": 37.74,
+      "text": "In this video, I'll feature an ultrasound-guided central line placement."
+    },
+    {
+      "start": 38.26,
+      "end": 39.84,
+      "text": "This video is highly practical."
+    },
+    {
+      "start": 40.03,
+      "end": 44.13,
+      "text": "with the number of useful tips that can facilitate the procedure."
+    },
+    {
+      "start": 44.67,
+      "end": 48.91,
+      "text": "Well, the ultrasound imaging of the internal juggler van is relatively easy."
+    },
+    {
+      "start": 49.37,
+      "end": 49.91,
+      "text": "it is actually"
+    },
+    {
+      "start": 50.03,
+      "end": 56.83,
+      "text": "extremely important to acquire very strong hand-eye coordination, which is absolutely necessary"
+    },
+    {
+      "start": 56.83,
+      "end": 58.81,
+      "text": "for safety of this procedure."
+    },
+    {
+      "start": 59.25,
+      "end": 59.97,
+      "text": "In fact..."
+    },
+    {
+      "start": 60.0,
+      "end": 67.04,
+      "text": "without impeccable hand-eye coordination and the ability to track the needle in and out of"
+    },
+    {
+      "start": 67.04,
+      "end": 68.94,
+      "text": "of plane after some guidance."
+    },
+    {
+      "start": 69.63,
+      "end": 69.97,
+      "text": "Actually..."
+    },
+    {
+      "start": 70.0,
+      "end": 74.94,
+      "text": "can result in more complications than the no-out sound landmark technique."
+    },
+    {
+      "start": 75.56,
+      "end": 79.42,
+      "text": "Let's demonstrate the steps to insert the central venous catheter."
+    },
+    {
+      "start": 80.32,
+      "end": 85.88,
+      "text": "For this we're going to use Nasora simulator, which is a simulator for the central Venus"
+    },
+    {
+      "start": 85.88,
+      "end": 89.9,
+      "text": "axis practice under ultrasound and we're going"
+    },
+    {
+      "start": 90.0,
+      "end": 95.84,
+      "text": "to use one of our demo kits, and this is a triple-lumen kit made by Aero."
+    },
+    {
+      "start": 96.55,
+      "end": 99.97,
+      "text": "The first thing we're going to do is we'll take an 18-gay"
+    },
+    {
+      "start": 100.0,
+      "end": 107.96,
+      "text": "needle and connect it to the syringe. This is what we're going to use to find the"
+    },
+    {
+      "start": 107.96,
+      "end": 109.2,
+      "text": "the internal juggler vein."
+    },
+    {
+      "start": 110.38,
+      "end": 116.1,
+      "text": "That is a transducer and we're going to examine this using an add-up plane approach"
+    },
+    {
+      "start": 116.1,
+      "end": 119.98,
+      "text": "then we're going to place a needle at the midpoint of the..."
+    },
+    {
+      "start": 120.0,
+      "end": 126.94,
+      "text": "doosa while gently aspirating the syringe until we enter into the internal"
+    },
+    {
+      "start": 126.94,
+      "end": 129.76,
+      "text": "juggle vein. Once we enter the"
+    },
+    {
+      "start": 130.0,
+      "end": 138.1,
+      "text": "on Jagalavane as signified by the presence of the blood in this arrange. We're going then to use"
+    },
+    {
+      "start": 138.1,
+      "end": 139.2,
+      "text": "the guide wire."
+    },
+    {
+      "start": 140.0,
+      "end": 141.98,
+      "text": "in order to pass the guide wire"
+    },
+    {
+      "start": 141.98,
+      "end": 145.0,
+      "text": "into the internal jugular vein through the needle."
+    },
+    {
+      "start": 145.64,
+      "end": 148.9,
+      "text": "Now, this particular design allows you to use your thumb,"
+    },
+    {
+      "start": 149.66,
+      "end": 149.96,
+      "text": "so you can..."
+    },
+    {
+      "start": 150.0,
+      "end": 154.86,
+      "text": "push that easily, this we're going to touch to the hub of the needle and then"
+    },
+    {
+      "start": 154.86,
+      "end": 159.52,
+      "text": "we're going to use thumb or index finger to feed the catheter."
+    },
+    {
+      "start": 160.61,
+      "end": 169.7,
+      "text": "inside. Once we feed the catheter inside, what we want to do is take the needle out."
+    },
+    {
+      "start": 170.58,
+      "end": 172.44,
+      "text": "while leaving the catheter inside."
+    },
+    {
+      "start": 173.73,
+      "end": 174.21,
+      "text": "So here we go."
+    },
+    {
+      "start": 175.03,
+      "end": 177.53,
+      "text": "Once we do that, the next step here"
+    },
+    {
+      "start": 177.53,
+      "end": 179.96,
+      "text": "will be to use a dilate."
+    },
+    {
+      "start": 180.0,
+      "end": 188.65,
+      "text": "The dilator is necessary because the dilator helps you open slightly larger hole inside"
+    },
+    {
+      "start": 188.65,
+      "end": 189.27,
+      "text": "the skin."
+    },
+    {
+      "start": 190.0,
+      "end": 197.44,
+      "text": "that allows feeding of the triple omen catheter easier because the skin can be quite tough so once"
+    },
+    {
+      "start": 197.44,
+      "end": 199.98,
+      "text": "we dilate that, we'll take the..."
+    },
+    {
+      "start": 200.51,
+      "end": 208.07,
+      "text": "dilator out and the next step would be to pass the triple lumen catheter over the guide wire"
+    },
+    {
+      "start": 208.07,
+      "end": 209.49,
+      "text": "now a trick"
+    },
+    {
+      "start": 210.06,
+      "end": 216.02,
+      "text": "do that is very important that I use. What I would suggest is stabilize the two"
+    },
+    {
+      "start": 216.02,
+      "end": 219.98,
+      "text": "hands together by connecting the fingers. Once you do that"
+    },
+    {
+      "start": 220.0,
+      "end": 227.06,
+      "text": "it becomes a lot easier to align the opening of the catheter with the guide wire."
+    },
+    {
+      "start": 227.5,
+      "end": 229.3,
+      "text": "Then pass the guide wire through."
+    },
+    {
+      "start": 230.35,
+      "end": 233.87,
+      "text": "and the guide wire will exit through this brown port"
+    },
+    {
+      "start": 233.87,
+      "end": 235.73,
+      "text": "in this particular catholic design."
+    },
+    {
+      "start": 236.29,
+      "end": 239.25,
+      "text": "And the brown port is actually the distal port."
+    },
+    {
+      "start": 239.41,
+      "end": 239.97,
+      "text": "So we can see."
+    },
+    {
+      "start": 240.0,
+      "end": 248.1,
+      "text": "feeding the guide wire inside the catheter until the catheter, as you could see, exits the brown"
+    },
+    {
+      "start": 248.1,
+      "end": 249.8,
+      "text": "port but you want to"
+    },
+    {
+      "start": 250.0,
+      "end": 258.58,
+      "text": "advanced catheter and the guide wire together through the skin. We take the guide wire out leaving the catheter inside"
+    },
+    {
+      "start": 260.0,
+      "end": 265.0,
+      "text": "to the catheter and then attach the stopgarks to these three ports."
+    },
+    {
+      "start": 265.71,
+      "end": 269.88,
+      "text": "We would like to check, test and flush everyone of these ports."
+    },
+    {
+      "start": 271.02,
+      "end": 272.16,
+      "text": "before using the cathode."
+    },
+    {
+      "start": 273.53,
+      "end": 279.21,
+      "text": "Out to some guided, internal juggle vein cannulation or central vein as access has become"
+    },
+    {
+      "start": 279.21,
+      "end": 279.92,
+      "text": "and nor"
+    },
+    {
+      "start": 280.06,
+      "end": 287.02,
+      "text": "a standard, wherever after sound is available it is preferred over the external landmark techniques."
+    },
+    {
+      "start": 287.02,
+      "end": 289.48,
+      "text": "So what we see here is a typical"
+    },
+    {
+      "start": 290.0,
+      "end": 298.52,
+      "text": "central line kit. A central line kit consists of a needle attached to a syringe to allow for aspiration during the needle"
+    },
+    {
+      "start": 298.52,
+      "end": 299.7,
+      "text": "So we can"
+    },
+    {
+      "start": 300.03,
+      "end": 305.81,
+      "text": "detect when the blood enters the syringe, that would mean that the needle has entered the"
+    },
+    {
+      "start": 305.81,
+      "end": 309.93,
+      "text": "IJ or internal juggler vein. Here we have a catheter in"
+    },
+    {
+      "start": 310.03,
+      "end": 316.53,
+      "text": "This typical example, this is a triple lumen catheter where we have three ports as the name"
+    },
+    {
+      "start": 316.53,
+      "end": 319.83,
+      "text": "applies, but the most important port is actually the"
+    },
+    {
+      "start": 320.66,
+      "end": 325.78,
+      "text": "Because that is the port that we're going to use to feed the guide wire."
+    },
+    {
+      "start": 326.12,
+      "end": 329.98,
+      "text": "This is the guide wire in this design, the guide wire is contained with..."
+    },
+    {
+      "start": 330.0,
+      "end": 337.04,
+      "text": "in plastic tubing so we can push with our fingers or a thumb this guide wire to"
+    },
+    {
+      "start": 337.04,
+      "end": 339.9,
+      "text": "enter inside the needle inside the"
+    },
+    {
+      "start": 340.0,
+      "end": 344.9,
+      "text": "internal juggler vein and through the other end of the guide wire we feed the"
+    },
+    {
+      "start": 344.9,
+      "end": 349.88,
+      "text": "catheter and so did exits through the brown port. I will explain that as we go"
+    },
+    {
+      "start": 350.06,
+      "end": 354.14,
+      "text": "Now, one important part of that kit is also this dilator."
+    },
+    {
+      "start": 354.46,
+      "end": 357.26,
+      "text": "The dilator is typically plastic or a teflon"
+    },
+    {
+      "start": 357.26,
+      "end": 359.78,
+      "text": "and it is used to be..."
+    },
+    {
+      "start": 360.0,
+      "end": 366.96,
+      "text": "is used to dilate the skin to facilitate entrance of the catheter as we will see once"
+    },
+    {
+      "start": 366.96,
+      "end": 369.84,
+      "text": "we get to that point and finally the suturing material."
+    },
+    {
+      "start": 370.0,
+      "end": 376.47,
+      "text": "the prep solution and something to dress the catheter to prevent its inadvertent"
+    },
+    {
+      "start": 376.47,
+      "end": 379.67,
+      "text": "removal. With the ultrasound guide it's central line placement"
+    },
+    {
+      "start": 380.0,
+      "end": 385.48,
+      "text": "It is mandatory to use the sterile gowns, sterile gloves, strictly aseptic technique."
+    },
+    {
+      "start": 386.26,
+      "end": 389.98,
+      "text": "And we must use always sterile outer..."
+    },
+    {
+      "start": 390.0,
+      "end": 395.34,
+      "text": "probe cover. Typically we use 240 centimeters or the long outer"
+    },
+    {
+      "start": 395.34,
+      "end": 399.44,
+      "text": "Sun probe cover to eliminate or decrease the chance of a"
+    },
+    {
+      "start": 399.44,
+      "end": 399.98,
+      "text": "Contaminate."
+    },
+    {
+      "start": 400.0,
+      "end": 402.06,
+      "text": "This is the patient's position."
+    },
+    {
+      "start": 402.42,
+      "end": 407.44,
+      "text": "Note how the patient is positioned in a chandelibum position, in a certain head-down position."
+    },
+    {
+      "start": 407.86,
+      "end": 409.98,
+      "text": "This is crucial so that we can feel..."
+    },
+    {
+      "start": 410.19,
+      "end": 412.97,
+      "text": "the central venous system with blood,"
+    },
+    {
+      "start": 413.47,
+      "end": 416.05,
+      "text": "and the de-station of the central venous system"
+    },
+    {
+      "start": 416.05,
+      "end": 419.97,
+      "text": "with the blood facilitates their recognition by a..."
+    },
+    {
+      "start": 420.0,
+      "end": 425.66,
+      "text": "the sun but also their cannulation with the needle. Extremely important maneuver in this"
+    },
+    {
+      "start": 426.08,
+      "end": 428.1,
+      "text": "space of the operation."
+    },
+    {
+      "start": 431.76,
+      "end": 433.0,
+      "text": "That was one crazy surgeon."
+    },
+    {
+      "start": 433.79,
+      "end": 436.72,
+      "text": "Here's the operator who's spraying a little bit"
+    },
+    {
+      "start": 436.72,
+      "end": 439.58,
+      "text": "of an ultrasound gel over the exposed..."
+    },
+    {
+      "start": 440.0,
+      "end": 446.84,
+      "text": "area of the neck so the ultrasound gel for this purpose also has to be sterile."
+    },
+    {
+      "start": 446.84,
+      "end": 449.97,
+      "text": "So now we go..."
+    },
+    {
+      "start": 450.0,
+      "end": 456.1,
+      "text": "to place the other sun probe on the patient's neck on the lateral side. This is the right side,"
+    },
+    {
+      "start": 456.1,
+      "end": 459.88,
+      "text": "the right interon jugular vein which is preferable but under"
+    },
+    {
+      "start": 460.0,
+      "end": 465.27,
+      "text": "the sound you can really choose one or the other. Okay, I'm going to pause here for"
+    },
+    {
+      "start": 465.27,
+      "end": 469.79,
+      "text": "a brief bit and here we can see a typical out of sound"
+    },
+    {
+      "start": 470.0,
+      "end": 476.58,
+      "text": "image. That is the connoted artery over here. That is the skin and subcutaneous tissue underneath."
+    },
+    {
+      "start": 476.58,
+      "end": 479.97,
+      "text": "They should use the part of the one with the spruce of the fish."
+    },
+    {
+      "start": 480.0,
+      "end": 485.2,
+      "text": "a cervical fascia, and that is the internal jungle of anemone, which we can see over here."
+    },
+    {
+      "start": 485.86,
+      "end": 489.88,
+      "text": "Now, extremely important rule is when you apply..."
+    },
+    {
+      "start": 490.0,
+      "end": 495.74,
+      "text": "ultrasound probe on the lateral side of the neck trying to identify the internal"
+    },
+    {
+      "start": 495.74,
+      "end": 499.66,
+      "text": "jugular vein you must apply extremely light pressure"
+    },
+    {
+      "start": 500.13,
+      "end": 502.11,
+      "text": "This is easier said than done."
+    },
+    {
+      "start": 502.51,
+      "end": 507.89,
+      "text": "Too much pressure on the other sound probe can completely obliterate the lumen of the"
+    },
+    {
+      "start": 507.89,
+      "end": 509.97,
+      "text": "internal juggle event and it can be..."
+    },
+    {
+      "start": 510.26,
+      "end": 515.66,
+      "text": "counterproductive. However, you should try to see how much pressure you can apply,"
+    },
+    {
+      "start": 516.02,
+      "end": 519.78,
+      "text": "and what the pressure of the ultrasound should do, so dash to the internal"
+    },
+    {
+      "start": 520.0,
+      "end": 527.14,
+      "text": "Because once you learn how much it is important to avoid applying too much pressure"
+    },
+    {
+      "start": 527.14,
+      "end": 529.46,
+      "text": "with you by Alpha Sanchez, do sir."
+    },
+    {
+      "start": 530.0,
+      "end": 538.22,
+      "text": "by palpation if you do this procedure without ultrasound you will actually understand how it is crucial to avoid pressure"
+    },
+    {
+      "start": 540.38,
+      "end": 545.14,
+      "text": "in order to allow the internal jugular vein to remain open."
+    },
+    {
+      "start": 546.42,
+      "end": 549.78,
+      "text": "As we can see, typical ultrasound setup is about three centimeters."
+    },
+    {
+      "start": 550.0,
+      "end": 556.3,
+      "text": "depth and really does not matter all that much where you place your focus on for"
+    },
+    {
+      "start": 556.3,
+      "end": 559.98,
+      "text": "this particular procedure. However, I will say that you"
+    },
+    {
+      "start": 560.0,
+      "end": 561.98,
+      "text": "you must always increase the gain."
+    },
+    {
+      "start": 562.55,
+      "end": 564.39,
+      "text": "So that is a very important tip."
+    },
+    {
+      "start": 565.12,
+      "end": 566.84,
+      "text": "Every time you do a vascular access,"
+    },
+    {
+      "start": 567.48,
+      "end": 568.76,
+      "text": "you must increase the gain."
+    },
+    {
+      "start": 569.04,
+      "end": 569.96,
+      "text": "And that is because..."
+    },
+    {
+      "start": 570.16,
+      "end": 575.4,
+      "text": "not trying to decipher any of these anatomy or masculine skeletal anatomy were"
+    },
+    {
+      "start": 575.4,
+      "end": 579.88,
+      "text": "the gain adjustment is very important to be balanced but rather which"
+    },
+    {
+      "start": 580.0,
+      "end": 588.02,
+      "text": "trying to accentuate the dark appearance of the blood vessels against the rest of the"
+    },
+    {
+      "start": 588.02,
+      "end": 589.86,
+      "text": "mask or skeletal or rest of the"
+    },
+    {
+      "start": 590.0,
+      "end": 596.1,
+      "text": "issue, which is much brighter. So there we go, the chisducers very likely placed on a"
+    },
+    {
+      "start": 596.1,
+      "end": 599.82,
+      "text": "patient's neck, and here's the needle attached to the"
+    },
+    {
+      "start": 600.03,
+      "end": 605.75,
+      "text": "the outer center's dooser has a notch. That notch indicates the middle of the"
+    },
+    {
+      "start": 605.75,
+      "end": 609.91,
+      "text": "us do sir so you want to place the out of the cell"
+    },
+    {
+      "start": 610.0,
+      "end": 617.13,
+      "text": "producer with the nut on the middle of the large internal juggle vein and then"
+    },
+    {
+      "start": 617.13,
+      "end": 619.97,
+      "text": "approach the needle insertion immediately at that"
+    },
+    {
+      "start": 620.0,
+      "end": 626.96,
+      "text": "point because that way this is one of the most important aspects of ultrasound guidance is that we know"
+    },
+    {
+      "start": 626.96,
+      "end": 629.98,
+      "text": "over the internal juggle of A&E's and that we know"
+    },
+    {
+      "start": 630.0,
+      "end": 637.12,
+      "text": "where we have to place the needle. If you use the outer sun only for that facility, it already"
+    },
+    {
+      "start": 637.12,
+      "end": 639.56,
+      "text": "would be enough. You don't have to do anything else."
+    },
+    {
+      "start": 640.03,
+      "end": 643.23,
+      "text": "because you would be avoiding a lot of corroded artery punctures"
+    },
+    {
+      "start": 643.23,
+      "end": 647.08,
+      "text": "and other tissue punctures unnecessarily"
+    },
+    {
+      "start": 647.08,
+      "end": 649.92,
+      "text": "if you know what the internal jugular vein is."
+    },
+    {
+      "start": 651.47,
+      "end": 657.36,
+      "text": "So here we see the needle approaching and the needle has approached at the lower angle."
+    },
+    {
+      "start": 657.96,
+      "end": 659.88,
+      "text": "First, when I go steep to the scale"
+    },
+    {
+      "start": 660.0,
+      "end": 668.0,
+      "text": "And then adjust the level of the angle and here we go immediately upon needle entry we get blood back"
+    },
+    {
+      "start": 668.0,
+      "end": 669.78,
+      "text": "We get blood back in a syringe"
+    },
+    {
+      "start": 670.86,
+      "end": 677.81,
+      "text": "Okay, at this point of time, it is extremely important also to emphasize that the aspiration"
+    },
+    {
+      "start": 677.81,
+      "end": 679.86,
+      "text": "of that syringe."
+    },
+    {
+      "start": 680.03,
+      "end": 686.95,
+      "text": "should be very gentle. The operator here only uses a bit of a thumb in order to push"
+    },
+    {
+      "start": 686.95,
+      "end": 689.87,
+      "text": "the plunger of the syringe, but if you apply"
+    },
+    {
+      "start": 690.0,
+      "end": 696.39,
+      "text": "too much pressure, you actually may obliterate the vein sometimes, particularly in the low-floor"
+    },
+    {
+      "start": 696.39,
+      "end": 699.73,
+      "text": "states or in the hypervolimic patients. So very gentle"
+    },
+    {
+      "start": 700.0,
+      "end": 705.93,
+      "text": "aspiration is already takes to get the blood back into the syringe as a positive"
+    },
+    {
+      "start": 705.93,
+      "end": 709.97,
+      "text": "confirmation. Now what we want to do here at this stage, we go"
+    },
+    {
+      "start": 710.0,
+      "end": 713.64,
+      "text": "going to stabilize the belly of the needle."
+    },
+    {
+      "start": 714.14,
+      "end": 717.36,
+      "text": "We have laid the ultrasound to do this to rest."
+    },
+    {
+      "start": 717.74,
+      "end": 719.12,
+      "text": "If you're going to disconnect."
+    },
+    {
+      "start": 720.83,
+      "end": 722.35,
+      "text": "the syringe from the needle."
+    },
+    {
+      "start": 722.94,
+      "end": 725.1,
+      "text": "Again, it's very important to keep the patient"
+    },
+    {
+      "start": 725.1,
+      "end": 727.6,
+      "text": "in the terendellum work position during this maneuver"
+    },
+    {
+      "start": 728.14,
+      "end": 729.98,
+      "text": "because otherwise, if the..."
+    },
+    {
+      "start": 730.0,
+      "end": 737.29,
+      "text": "pressure inside the internal juggler vein is low and you may have actually the air sucked"
+    },
+    {
+      "start": 737.8,
+      "end": 739.82,
+      "text": "into the ij with cat which"
+    },
+    {
+      "start": 740.0,
+      "end": 741.68,
+      "text": "and leads to air embolite."
+    },
+    {
+      "start": 742.44,
+      "end": 744.34,
+      "text": "So the syringe is now being discontinued"
+    },
+    {
+      "start": 744.34,
+      "end": 746.64,
+      "text": "and the operator here is already prepared"
+    },
+    {
+      "start": 746.64,
+      "end": 748.58,
+      "text": "to use the guide wire."
+    },
+    {
+      "start": 748.96,
+      "end": 749.96,
+      "text": "So here you can see..."
+    },
+    {
+      "start": 750.16,
+      "end": 752.98,
+      "text": "The guide wire is basically pushed with your thumb"
+    },
+    {
+      "start": 752.98,
+      "end": 754.64,
+      "text": "in this particular design,"
+    },
+    {
+      "start": 754.92,
+      "end": 756.92,
+      "text": "so that it enters through the needle"
+    },
+    {
+      "start": 757.44,
+      "end": 759.06,
+      "text": "inside the internal juggler vein."
+    },
+    {
+      "start": 759.2,
+      "end": 759.98,
+      "text": "Because if you..."
+    },
+    {
+      "start": 760.16,
+      "end": 768.02,
+      "text": "the guide wire too deep you may get instant arrhythmias if the guide wire starts irritating the"
+    },
+    {
+      "start": 768.02,
+      "end": 769.58,
+      "text": "right ventricle or right"
+    },
+    {
+      "start": 770.03,
+      "end": 774.68,
+      "text": "one or the other. So you have to be prepared to stop advancement if you see that."
+    },
+    {
+      "start": 775.58,
+      "end": 779.88,
+      "text": "So that's the guide wire that goes in. So you've got to be really very careful at this point."
+    },
+    {
+      "start": 780.29,
+      "end": 789.52,
+      "text": "not to actually forget that it's easy to lose that guide wire so always leave about 10cm of the guide wire out."
+    },
+    {
+      "start": 790.06,
+      "end": 795.94,
+      "text": "side of the needle to prevent losing the guide wire through the needle into the central"
+    },
+    {
+      "start": 795.94,
+      "end": 796.48,
+      "text": "circulation."
+    },
+    {
+      "start": 796.92,
+      "end": 799.96,
+      "text": "So now we have a guide wire and we're going to use out the"
+    },
+    {
+      "start": 800.0,
+      "end": 805.84,
+      "text": "sound now again to document to make sure that the guide wire is indeed inside the tunnel"
+    },
+    {
+      "start": 805.84,
+      "end": 809.98,
+      "text": "juggle array and that's relatively easy to accomplish and here we go."
+    },
+    {
+      "start": 810.0,
+      "end": 818.37,
+      "text": "can see the ultrasound. We can also do that in the airplane energy so you can see the"
+    },
+    {
+      "start": 818.37,
+      "end": 819.97,
+      "text": "guy to wire in its length."
+    },
+    {
+      "start": 820.0,
+      "end": 824.64,
+      "text": "inside the lumen of the internal juggler vein. Okay, so now it's the time for"
+    },
+    {
+      "start": 824.64,
+      "end": 829.49,
+      "text": "dilation. We're going to insert the, or slide the dilator"
+    },
+    {
+      "start": 830.1,
+      "end": 835.75,
+      "text": "over the guide wire and the die layer cannot go through the reticulum of the skin"
+    },
+    {
+      "start": 835.75,
+      "end": 839.98,
+      "text": "unless you actually do a small skin nick and when you do it"
+    },
+    {
+      "start": 840.03,
+      "end": 845.99,
+      "text": "small skin neck it is also very important not to do that too deeply because a deep skin"
+    },
+    {
+      "start": 845.99,
+      "end": 849.91,
+      "text": "neck can actually also nick the internal gyro vein if it's"
+    },
+    {
+      "start": 850.0,
+      "end": 855.16,
+      "text": "deep or the external juggler vein which sometimes can be on the path here so"
+    },
+    {
+      "start": 855.16,
+      "end": 859.48,
+      "text": "there's really a lot of things that we need to think through"
+    },
+    {
+      "start": 860.1,
+      "end": 862.3,
+      "text": "when we do internal juggle vein cannulation."
+    },
+    {
+      "start": 862.56,
+      "end": 863.66,
+      "text": "So now we nick the skin"
+    },
+    {
+      "start": 864.29,
+      "end": 867.22,
+      "text": "and now they should allow us to pass that"
+    },
+    {
+      "start": 867.47,
+      "end": 868.89,
+      "text": "actually dilate or easier."
+    },
+    {
+      "start": 870.06,
+      "end": 877.24,
+      "text": "always want to grab the end of the guide wire with my fingers not to have any"
+    },
+    {
+      "start": 877.24,
+      "end": 879.98,
+      "text": "opportunity or a chance for the guide wire to be a"
+    },
+    {
+      "start": 880.0,
+      "end": 886.81,
+      "text": "Inside the central circulation as we are pushing the dilator so the dilator is done is job now"
+    },
+    {
+      "start": 886.81,
+      "end": 889.79,
+      "text": "We're grabbing on to the guide wire here"
+    },
+    {
+      "start": 890.45,
+      "end": 896.54,
+      "text": "And the next step comes the passage of the triple lumen catheter over the guide wire."
+    },
+    {
+      "start": 897.07,
+      "end": 899.41,
+      "text": "That's so called the cell danger technique."
+    },
+    {
+      "start": 900.13,
+      "end": 909.15,
+      "text": "So we're passing that now triple omen catheter over the guide wire until the guide wire starts coming out of the brown lumen, which we see over here."
+    },
+    {
+      "start": 911.15,
+      "end": 917.71,
+      "text": "So we feed in the guide wire into the brown lumen and at some point of time we can see"
+    },
+    {
+      "start": 917.71,
+      "end": 919.96,
+      "text": "it exiting at this point of time."
+    },
+    {
+      "start": 920.03,
+      "end": 925.73,
+      "text": "what we need to do is secure that guide wire and slide the triple lumic"
+    },
+    {
+      "start": 925.73,
+      "end": 929.81,
+      "text": "over the guide wire into the internal jugular vein."
+    },
+    {
+      "start": 930.06,
+      "end": 930.54,
+      "text": "Let's see that."
+    },
+    {
+      "start": 937.54,
+      "end": 939.69,
+      "text": "The operators."
+    },
+    {
+      "start": 940.42,
+      "end": 945.76,
+      "text": "learning this procedure often times are very much concerned about the blood that"
+    },
+    {
+      "start": 945.76,
+      "end": 949.9,
+      "text": "oozes through that opening. However, this is not the time to think"
+    },
+    {
+      "start": 950.0,
+      "end": 954.3,
+      "text": "about a couple of milliliters of blood that we're going to lose. This is"
+    },
+    {
+      "start": 954.3,
+      "end": 957.86,
+      "text": "something that we can easily cause with suturing or a little bit of the"
+    },
+    {
+      "start": 957.86,
+      "end": 959.66,
+      "text": "digital pressure. But right now"
+    },
+    {
+      "start": 960.13,
+      "end": 966.31,
+      "text": "eyes and a focus need be on the safety of the operation where we want to remove the guide wire next"
+    },
+    {
+      "start": 967.27,
+      "end": 969.93,
+      "text": "in a central human cathode stays there."
+    },
+    {
+      "start": 970.0,
+      "end": 978.68,
+      "text": "So now we have a situation in which the drip aluminum catheter is inside and what we need to do is secure it."
+    },
+    {
+      "start": 980.67,
+      "end": 981.71,
+      "text": "So here's a suture kit."
+    },
+    {
+      "start": 982.13,
+      "end": 984.15,
+      "text": "There's a couple of different ways you can do this."
+    },
+    {
+      "start": 984.55,
+      "end": 985.83,
+      "text": "I like this particular method,"
+    },
+    {
+      "start": 986.03,
+      "end": 989.06,
+      "text": "where you grab a bit of a skin, pass it through there."
+    },
+    {
+      "start": 990.0,
+      "end": 994.22,
+      "text": "of the securing system on the triple humane catheter,"
+    },
+    {
+      "start": 994.78,
+      "end": 998.18,
+      "text": "feed it on the other side and go back to the skin and simply"
+    },
+    {
+      "start": 998.18,
+      "end": 999.98,
+      "text": "This way that can"
+    },
+    {
+      "start": 1000.0,
+      "end": 1006.96,
+      "text": "one side will not go anywhere. It's very useful to learn some of these"
+    },
+    {
+      "start": 1006.96,
+      "end": 1009.86,
+      "text": "surgical suturing techniques because it really"
+    },
+    {
+      "start": 1010.0,
+      "end": 1014.92,
+      "text": "helps substantially in here and it cuts the time to secure in the catheter"
+    },
+    {
+      "start": 1014.92,
+      "end": 1019.58,
+      "text": "substantially. This is a very nice way to secure that and that catheter"
+    },
+    {
+      "start": 1020.0,
+      "end": 1029.82,
+      "text": "Secure like this will not go anywhere now there comes a time that we test the lumens of the catheter"
+    },
+    {
+      "start": 1030.32,
+      "end": 1037.41,
+      "text": "Typically we will take saline in 5 or 10 milliliters of syringes and the process is open"
+    },
+    {
+      "start": 1037.66,
+      "end": 1039.52,
+      "text": "each one of these ports"
+    },
+    {
+      "start": 1040.54,
+      "end": 1049.36,
+      "text": "aspirate and once the aspiration is positive then flush it with saline and close the stop crack so the air cannot get in"
+    },
+    {
+      "start": 1050.0,
+      "end": 1054.1,
+      "text": "and the blood can or go in and clot within the port of the catheter."
+    },
+    {
+      "start": 1055.02,
+      "end": 1059.18,
+      "text": "So again, implant or aeroplane, those are two different ways."
+    },
+    {
+      "start": 1060.1,
+      "end": 1065.4,
+      "text": "how to affirm that the catheter is placed in the appropriate space, the interon jungle"
+    },
+    {
+      "start": 1065.4,
+      "end": 1065.74,
+      "text": "vein."
+    },
+    {
+      "start": 1067.13,
+      "end": 1068.27,
+      "text": "So here's the ultrasound image."
+    },
+    {
+      "start": 1068.41,
+      "end": 1069.67,
+      "text": "We can see the corroded artery."
+    },
+    {
+      "start": 1070.22,
+      "end": 1072.32,
+      "text": "That's the internal juggler vein."
+    },
+    {
+      "start": 1072.68,
+      "end": 1074.74,
+      "text": "And as the needle is approaching over here,"
+    },
+    {
+      "start": 1075.0,
+      "end": 1078.18,
+      "text": "we can see the needle is pushing on the anterior wall"
+    },
+    {
+      "start": 1078.18,
+      "end": 1079.44,
+      "text": "of the internal juggler vein."
+    },
+    {
+      "start": 1079.64,
+      "end": 1079.98,
+      "text": "So that..."
+    },
+    {
+      "start": 1080.0,
+      "end": 1089.97,
+      "text": "requires a little bit of repositioning and that is a tip of the catheter. Okay, now let's see the"
+    },
+    {
+      "start": 1090.03,
+      "end": 1099.97,
+      "text": "catheter, so that's the catheter placement. You can see how much pressure on the vein can obliterate the vessel wall, so you really..."
+    },
+    {
+      "start": 1100.0,
+      "end": 1103.32,
+      "text": "you need to make sure you do not exercise too much pressure here. So that's the"
+    },
+    {
+      "start": 1103.32,
+      "end": 1108.06,
+      "text": "catheter very nicely displayed inside the internal general vein, which is a"
+    },
+    {
+      "start": 1108.06,
+      "end": 1108.9,
+      "text": "100%"
+    },
+    {
+      "start": 1110.0,
+      "end": 1115.87,
+      "text": "of the proper cathory placement. That's the cathory now seen using an"
+    },
+    {
+      "start": 1115.87,
+      "end": 1119.97,
+      "text": "adioplane approach and again it's very nicely nested against the posterior wall."
+    },
+    {
+      "start": 1120.0,
+      "end": 1125.94,
+      "text": "of the internal juggler vein, again a very powerful and important confirmation of the catheter"
+    },
+    {
+      "start": 1125.94,
+      "end": 1128.68,
+      "text": "placement inside the internal juggler vein."
+    },
+    {
+      "start": 1129.28,
+      "end": 1129.98,
+      "text": "Once the catheter"
+    },
+    {
+      "start": 1130.03,
+      "end": 1135.54,
+      "text": "placed and suture to the skin. We're going to use an occlusive vundressing in"
+    },
+    {
+      "start": 1135.54,
+      "end": 1139.88,
+      "text": "this particular example. This is a tecaderm but many other divine"
+    },
+    {
+      "start": 1140.0,
+      "end": 1145.16,
+      "text": "are available and that basically keeps the sterile and allows a bit more"
+    },
+    {
+      "start": 1145.16,
+      "end": 1149.8,
+      "text": "protection and secure in of the catheter. We always use ether"
+    },
+    {
+      "start": 1150.06,
+      "end": 1153.08,
+      "text": "to prepare the skin because once you use ether"
+    },
+    {
+      "start": 1153.08,
+      "end": 1157.1,
+      "text": "anything that you apply to the skin actually tends to stick"
+    },
+    {
+      "start": 1157.1,
+      "end": 1159.38,
+      "text": "a lot better and more powerfully."
+    },
+    {
+      "start": 1164.74,
+      "end": 1169.62,
+      "text": "If you have not subscribed to the Nasura YouTube channel, go ahead and press the subscribe button."
+    },
+    {
+      "start": 1170.1,
+      "end": 1172.82,
+      "text": "because you don't want to miss some of the great videos"
+    },
+    {
+      "start": 1172.82,
+      "end": 1176.04,
+      "text": "that are coming up very soon that we are working on right now."
+    }
+  ]
+}

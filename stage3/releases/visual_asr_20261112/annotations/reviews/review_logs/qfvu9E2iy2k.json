@@ -1,0 +1,113 @@
+{
+  "video_id": "qfvu9E2iy2k",
+  "reviewer": "stage3_b",
+  "review_scope": "Question-led review by Agent B of Agent A draft; not blind. Native full-frame sampled checkpoints and available time-indexed ASR; no continuous replay or direct listening claim.",
+  "reviewer_native_opened": [
+    150,
+    165,
+    420,
+    421,
+    425,
+    430,
+    431,
+    432,
+    432.25,
+    432.5,
+    432.75,
+    433,
+    433.25,
+    433.5,
+    434,
+    435,
+    575,
+    640,
+    675,
+    676,
+    677,
+    677.25,
+    677.5,
+    677.75,
+    678,
+    679,
+    680,
+    785,
+    1395,
+    1415,
+    1420,
+    1425,
+    1430,
+    1431,
+    1432,
+    1433,
+    1433.25,
+    1433.5,
+    1433.75,
+    1434,
+    1435,
+    1650,
+    1652,
+    1654,
+    1656,
+    1658,
+    1660,
+    1661,
+    1662,
+    1663,
+    1664,
+    1664.25,
+    1664.5,
+    1664.75,
+    1665,
+    1680
+  ],
+  "tasks": [
+    {
+      "task_index": 1,
+      "findings": "Moved435\u2192433;432 arrow is predictive, actual probe rotation occurs in dissolve432.5-433. Real benefit not inferred.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 2,
+      "findings": "Confirmed right shaft steeper/brighter versus left shallower/fainter575.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 3,
+      "findings": "Confirmed larger central-left dark oval and smaller immediately right640.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 4,
+      "findings": "Moved680\u2192677.75 first clear long channel.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 5,
+      "findings": "Confirmed separate pale open-frame guide beside probe, not attached785.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 6,
+      "findings": "Major geometry correction: oblique line enters from upper RIGHT, not upper-left. Moved1435\u21921433.5 initial realimage with line; later1435 lessvisible.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 7,
+      "findings": "Moved query1650\u21921656 where focal echoes unequivocal; answer1665\u21921664.25 first elongated view; limited identity/course claim.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 8,
+      "findings": "Corrected initial transverse history: one circular and one oblique elongated lumen, not both round.165/150 own native evidence checked.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    }
+  ]
+}

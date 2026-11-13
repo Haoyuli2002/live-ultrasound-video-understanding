@@ -1,0 +1,428 @@
+{
+  "video_id": "7G56DN38mz8",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/7G56DN38mz8/asr.txt",
+  "segments": [
+    {
+      "start": 9.44,
+      "end": 9.98,
+      "text": "the day I'm gonna do."
+    },
+    {
+      "start": 10.0,
+      "end": 12.72,
+      "text": "demonstrate the sacroiliac joint injection"
+    },
+    {
+      "start": 12.72,
+      "end": 15.16,
+      "text": "as facilitated by ultrasonography."
+    },
+    {
+      "start": 15.96,
+      "end": 19.240000000000002,
+      "text": "The anatomic considerations are the posterior superior"
+    },
+    {
+      "start": 19.240000000000002,
+      "end": 19.98,
+      "text": "iliacs."
+    },
+    {
+      "start": 20.03,
+      "end": 26.43,
+      "text": "fine, the sacrum, and the insertion formed of the sacroiliac joint."
+    },
+    {
+      "start": 28.42,
+      "end": 29.86,
+      "text": "The C60 probe is placed"
+    },
+    {
+      "start": 30.0,
+      "end": 39.01,
+      "text": "in the transverse orientation, after anesthetizing the skin, the needle enters out of plane into the joint."
+    },
+    {
+      "start": 40.06,
+      "end": 45.8,
+      "text": "performing the block. The sacroiliac joint injection is useful specifically to"
+    },
+    {
+      "start": 45.8,
+      "end": 49.9,
+      "text": "diagnose issues within the sacroiliac joint that might be causing"
+    },
+    {
+      "start": 50.0,
+      "end": 55.5,
+      "text": "hip pain to the patient. Typically on physical examination, there might be a positive"
+    },
+    {
+      "start": 55.5,
+      "end": 59.7,
+      "text": "Faber or flexion abduction external rotation test"
+    },
+    {
+      "start": 60.0,
+      "end": 63.66,
+      "text": "also known as pectrics sign or a positive gains lens maneuver."
+    },
+    {
+      "start": 64.46,
+      "end": 69.48,
+      "text": "This can also occur when a patient has a pelvic tilt or a leg length discrepancy."
+    },
+    {
+      "start": 70.22,
+      "end": 73.7,
+      "text": "The injection is useful both diagnostically and therapeutically."
+    },
+    {
+      "start": 74.3,
+      "end": 79.69,
+      "text": "Traditionally, fluoroscopy is utilized to place the needle within the sacred iliac."
+    },
+    {
+      "start": 80.1,
+      "end": 85.38,
+      "text": "joint space. The Sacred Iliac joint is a very complicated joint in that it is a"
+    },
+    {
+      "start": 85.38,
+      "end": 89.7,
+      "text": "fibrous insertion, superiorly, and a traditional articulating joint."
+    },
+    {
+      "start": 90.06,
+      "end": 92.02,
+      "text": "in the lower portion of it."
+    },
+    {
+      "start": 92.7,
+      "end": 95.82,
+      "text": "On fluoroscopy, issues arise such as parallax,"
+    },
+    {
+      "start": 96.24,
+      "end": 98.66,
+      "text": "and this is well documented that sometimes"
+    },
+    {
+      "start": 98.66,
+      "end": 99.98,
+      "text": "the injection is not..."
+    },
+    {
+      "start": 100.06,
+      "end": 106.04,
+      "text": "placed within the joint, but rather periarticulally, and therefore not providing the coverage or"
+    },
+    {
+      "start": 106.04,
+      "end": 107.42,
+      "text": "the response that is expected."
+    },
+    {
+      "start": 107.94,
+      "end": 109.56,
+      "text": "To perform this particular block,"
+    },
+    {
+      "start": 110.0,
+      "end": 111.86,
+      "text": "following equipment is necessary."
+    },
+    {
+      "start": 112.89,
+      "end": 114.55,
+      "text": "Boraxidine for sterile technique."
+    },
+    {
+      "start": 116.36,
+      "end": 119.46000000000001,
+      "text": "Local anesthetic syringe containing 1% buffered lidocaine."
+    },
+    {
+      "start": 121.34,
+      "end": 125.74,
+      "text": "and then a syringe containing five CCs of bupivocane"
+    },
+    {
+      "start": 125.74,
+      "end": 129.38,
+      "text": "one half percent mixed with five CCs of one percent."
+    },
+    {
+      "start": 130.06,
+      "end": 134.26,
+      "text": "lidocaine and then 40 to 80 milligrams of triam sinolone"
+    },
+    {
+      "start": 134.26,
+      "end": 137.48,
+      "text": "catalogue, which is a particulate steroid."
+    },
+    {
+      "start": 137.92,
+      "end": 139.9,
+      "text": "A three and a half inch, 25 gauge spinal."
+    },
+    {
+      "start": 140.0,
+      "end": 141.82,
+      "text": "needle will also be utilized for the procedure."
+    },
+    {
+      "start": 143.44,
+      "end": 148.61,
+      "text": "There will be sterile 4x4 is necessary to clean the area at the conclusion and a simple"
+    },
+    {
+      "start": 148.61,
+      "end": 149.97,
+      "text": "band-aid will suffice to come."
+    },
+    {
+      "start": 150.03,
+      "end": 157.54,
+      "text": "the wound. The patient is placed in the traditional prone position. There is a bolster within and under"
+    },
+    {
+      "start": 157.54,
+      "end": 159.86,
+      "text": "the abdomen to facilitate opening of the sick."
+    },
+    {
+      "start": 160.0,
+      "end": 168.05,
+      "text": "really act joints, and then I utilize the C60 probe with its curvilinear structure to"
+    },
+    {
+      "start": 168.05,
+      "end": 169.97,
+      "text": "better visualise the interface."
+    },
+    {
+      "start": 170.0,
+      "end": 172.4,
+      "text": "between the sacrum and the iliac crest."
+    },
+    {
+      "start": 173.07,
+      "end": 176.35,
+      "text": "The depth is usually set to seven to nine centimeters,"
+    },
+    {
+      "start": 176.75,
+      "end": 178.81,
+      "text": "depending on the patient's habitus."
+    },
+    {
+      "start": 179.56,
+      "end": 179.86,
+      "text": "Additional."
+    },
+    {
+      "start": 180.0,
+      "end": 186.22,
+      "text": "I utilize the musculoskeletal or the MSK setting because it provides enhancement of the"
+    },
+    {
+      "start": 186.22,
+      "end": 189.76,
+      "text": "bony structures and the enhancement of the joint space."
+    },
+    {
+      "start": 191.09,
+      "end": 199.86,
+      "text": "The probe is placed on the patient in the transverse orientation, approximately a centimeter"
+    },
+    {
+      "start": 200.0,
+      "end": 206.38,
+      "text": "or two above the beginnings of the gluteal folds, and I found the anatomic midline by identifying"
+    },
+    {
+      "start": 206.38,
+      "end": 209.48,
+      "text": "the spinous process of the sacral plate."
+    },
+    {
+      "start": 210.13,
+      "end": 212.47,
+      "text": "as I roll the probe laterally,"
+    },
+    {
+      "start": 213.67,
+      "end": 217.74,
+      "text": "the posterior superior iliac spine comes into view"
+    },
+    {
+      "start": 217.74,
+      "end": 219.98,
+      "text": "very clearly at the top of the..."
+    },
+    {
+      "start": 220.0,
+      "end": 228.88,
+      "text": "screen up here. The space between the posterior superior iliac spine and the shadow cast by the iliac"
+    },
+    {
+      "start": 230.0,
+      "end": 236.22,
+      "text": "and the sacrum as it dives down represents the sacral iliac joint and you can"
+    },
+    {
+      "start": 236.22,
+      "end": 239.67,
+      "text": "see that in the center of the screen. It's important to remember"
+    },
+    {
+      "start": 240.1,
+      "end": 243.44,
+      "text": "that the iliac crest and the ilium"
+    },
+    {
+      "start": 244.01,
+      "end": 245.75,
+      "text": "boulds and cantilevers"
+    },
+    {
+      "start": 245.75,
+      "end": 247.51,
+      "text": "boards the sacrum."
+    },
+    {
+      "start": 248.01,
+      "end": 249.33,
+      "text": "Therefore, the needle angle"
+    },
+    {
+      "start": 249.33,
+      "end": 249.87,
+      "text": "needs"
+    },
+    {
+      "start": 250.0,
+      "end": 256.11,
+      "text": "to track from medial to lateral into the space identified in the center of the screen."
+    },
+    {
+      "start": 256.11,
+      "end": 259.97,
+      "text": "Local anesthetic is placed and as a"
+    },
+    {
+      "start": 260.03,
+      "end": 266.93,
+      "text": "find or needle this injectate using hydrodisexion demonstrates the needle tip at all times."
+    },
+    {
+      "start": 267.45,
+      "end": 269.77,
+      "text": "The needle is going in the short axis."
+    },
+    {
+      "start": 270.26,
+      "end": 273.22,
+      "text": "Therefore, it won't be completely visualized on the screen."
+    },
+    {
+      "start": 273.72,
+      "end": 278.16,
+      "text": "However, hydrodisection can help notice where the tip is at all times."
+    },
+    {
+      "start": 280.0,
+      "end": 285.18,
+      "text": "Then I'll utilize the three and a half inch spinal needle, 25 gauge, and enter that track"
+    },
+    {
+      "start": 285.44,
+      "end": 287.92,
+      "text": "that I have placed local anesthetic with it."
+    },
+    {
+      "start": 288.63,
+      "end": 289.97,
+      "text": "The needle tip will then be placed..."
+    },
+    {
+      "start": 290.03,
+      "end": 293.07,
+      "text": "within that joint identified in the center of the screen right here."
+    },
+    {
+      "start": 293.59,
+      "end": 299.98,
+      "text": "At this point, I attach my syringe containing the local anesthetic steroid and"
+    },
+    {
+      "start": 300.0,
+      "end": 309.93,
+      "text": "saline mix and then I can utilize color flow Doppler to actually visualize perturbations of the"
+    },
+    {
+      "start": 310.0,
+      "end": 318.74,
+      "text": "liquid as it enters the joint. The view is in the short axis. Therefore, the needle is not visible."
+    },
+    {
+      "start": 320.0,
+      "end": 323.1,
+      "text": "that crest is visible as the large hyper-echoic structure"
+    },
+    {
+      "start": 323.1,
+      "end": 324.26,
+      "text": "on the right of the screen."
+    },
+    {
+      "start": 325.26,
+      "end": 327.7,
+      "text": "The lateral crest of the sacrum is visible below."
+    },
+    {
+      "start": 328.9,
+      "end": 329.98,
+      "text": "The target is the void-"
+    },
+    {
+      "start": 330.0,
+      "end": 333.12,
+      "text": "between the lateral crest of the sacrum and the iliac crest."
+    },
+    {
+      "start": 334.18,
+      "end": 338.9,
+      "text": "This helps solidify understanding of the three-dimensional structure of the sacral iliac joint."
+    },
+    {
+      "start": 340.86,
+      "end": 343.36,
+      "text": "At this point, the probe is removed."
+    },
+    {
+      "start": 344.87,
+      "end": 348.39,
+      "text": "I utilize the four by fours to clean the area."
+    },
+    {
+      "start": 352.02,
+      "end": 353.6,
+      "text": "and a band-aid is placed over the wound."
+    },
+    {
+      "start": 355.1,
+      "end": 358.22,
+      "text": "This successfully completes the ultrasonic graphic"
+    },
+    {
+      "start": 358.22,
+      "end": 359.98,
+      "text": "facilitation of a sacroir."
+    }
+  ]
+}

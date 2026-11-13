@@ -1,0 +1,973 @@
+{
+  "video_id": "jRLJmHGc5n4",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/jRLJmHGc5n4/asr.txt",
+  "segments": [
+    {
+      "start": 15.86,
+      "end": 17.16,
+      "text": "My name is Dr. Kishore Gandhi."
+    },
+    {
+      "start": 17.42,
+      "end": 19.98,
+      "text": "I am from Thomas Jefferson University Huff."
+    },
+    {
+      "start": 20.1,
+      "end": 28.9,
+      "text": "in Philadelphia, Pennsylvania. I am a assistant professor of anesthesiology and director of regional anesthesiology at the hospital."
+    },
+    {
+      "start": 30.0,
+      "end": 33.08,
+      "text": "about ultrasound-guided neuroblocks of lower extremity."
+    },
+    {
+      "start": 44.22,
+      "end": 45.96,
+      "text": "Some of the challenges of joint replacement"
+    },
+    {
+      "start": 45.96,
+      "end": 49.66,
+      "text": "are that patients have a lot of pain."
+    },
+    {
+      "start": 49.82,
+      "end": 49.98,
+      "text": "So..."
+    },
+    {
+      "start": 50.0,
+      "end": 54.64,
+      "text": "So we as anesthesiologist and hospital providers need to minimize the patient's pain."
+    },
+    {
+      "start": 55.61,
+      "end": 59.97,
+      "text": "Patients also need to accelerate rehabilitation so that..."
+    },
+    {
+      "start": 60.0,
+      "end": 62.7,
+      "text": "Patients do not have excessive scar tissue after surgery."
+    },
+    {
+      "start": 63.86,
+      "end": 69.88,
+      "text": "Patients need to be anti-coagulation so that they don't develop pulmonary DVDs and pulmonary"
+    },
+    {
+      "start": 70.0,
+      "end": 75.21,
+      "text": "embolus and we need to minimize local anaesthetic consumption to minimize"
+    },
+    {
+      "start": 75.21,
+      "end": 79.97,
+      "text": "toxicity and we need to avoid post-operative complications for"
+    },
+    {
+      "start": 80.1,
+      "end": 89.42,
+      "text": "The studies have shown specifically by JAMA and JAMA by Dr. Munan that is..."
+    },
+    {
+      "start": 90.03,
+      "end": 99.98,
+      "text": "who are given early physical therapy, regardless of their comorbidities, do better and have..."
+    },
+    {
+      "start": 100.0,
+      "end": 109.55,
+      "text": "better outcomes and the key is to control pain and to accelerate rehabilitation."
+    },
+    {
+      "start": 110.83,
+      "end": 118.07,
+      "text": "and patients gain rapid functional improvement if this therapy is begun in an early period"
+    },
+    {
+      "start": 118.07,
+      "end": 119.43,
+      "text": "during the hospital stay."
+    },
+    {
+      "start": 121.6,
+      "end": 124.42,
+      "text": "Xavier Coptavia also published an anesthesiology"
+    },
+    {
+      "start": 124.8,
+      "end": 128.28,
+      "text": "that patients have better pain control"
+    },
+    {
+      "start": 128.28,
+      "end": 129.97,
+      "text": "are able to..."
+    },
+    {
+      "start": 130.42,
+      "end": 137.64,
+      "text": "have faster functional recuperation if they have a continuous nerve block or a continuous"
+    },
+    {
+      "start": 137.64,
+      "end": 138.76,
+      "text": "epidural infusion."
+    },
+    {
+      "start": 140.0,
+      "end": 143.14,
+      "text": "versus a PCA pain regimen."
+    },
+    {
+      "start": 144.79,
+      "end": 148.83,
+      "text": "Day patients who receive these two forms of therapy"
+    },
+    {
+      "start": 149.24,
+      "end": 149.97,
+      "text": "are able to..."
+    },
+    {
+      "start": 150.06,
+      "end": 157.58,
+      "text": "have better knee flexion and are able to defer mobilization less than compared to PCA."
+    },
+    {
+      "start": 158.67,
+      "end": 158.89,
+      "text": "However,"
+    },
+    {
+      "start": 160.0,
+      "end": 167.23,
+      "text": "Patients have better knee flexion on day five and discharge, however at month one and"
+    },
+    {
+      "start": 167.23,
+      "end": 168.95,
+      "text": "month three they have minimal differences."
+    },
+    {
+      "start": 170.9,
+      "end": 177.88,
+      "text": "The typical nerve blocks of lower extremity that we do are the lumbar plexus block, the fascia iliaca block, the femal nerve block."
+    },
+    {
+      "start": 178.49,
+      "end": 179.97,
+      "text": "These nerve blocks are very..."
+    },
+    {
+      "start": 180.0,
+      "end": 185.0,
+      "text": "good for pain of the hip as well as the knee joint."
+    },
+    {
+      "start": 185.67,
+      "end": 188.73,
+      "text": "Side ignore blocks are done for anything"
+    },
+    {
+      "start": 190.42,
+      "end": 196.59,
+      "text": "below the knee for foot and knees for foot and back of the knee surgery."
+    },
+    {
+      "start": 196.59,
+      "end": 199.98,
+      "text": "Optically teal nerve blocks are an extension of the sciatic nerve."
+    },
+    {
+      "start": 200.0,
+      "end": 205.41,
+      "text": "block and they provide adequate allergies of the of the foot for ankle surgery as"
+    },
+    {
+      "start": 205.41,
+      "end": 209.69,
+      "text": "well as Achilles tendon repair. The advantages"
+    },
+    {
+      "start": 210.0,
+      "end": 215.5,
+      "text": "And lower extremity catheters are that patients have minimal concern for anti-coagulation."
+    },
+    {
+      "start": 216.48,
+      "end": 219.18,
+      "text": "Patients can have utilized one leg."
+    },
+    {
+      "start": 220.0,
+      "end": 224.89,
+      "text": "And the surgical leg is used for physical therapy."
+    },
+    {
+      "start": 225.9,
+      "end": 229.78,
+      "text": "Patients do not require folies in the hospital cell."
+    },
+    {
+      "start": 230.0,
+      "end": 233.22,
+      "text": "setting when they have peripheral nerve catheters, and there's minimal"
+    },
+    {
+      "start": 233.22,
+      "end": 237.78,
+      "text": "hemodynamic instability compared to epidural infusions."
+    },
+    {
+      "start": 240.13,
+      "end": 243.57,
+      "text": "to review some of the anatomy of the lumbar plexus."
+    },
+    {
+      "start": 244.06,
+      "end": 249.83,
+      "text": "The lumbar plexus is derived from L2 to L4 of the spinal cord."
+    },
+    {
+      "start": 250.77,
+      "end": 255.51,
+      "text": "These nerve roots exit from the spinal cord"
+    },
+    {
+      "start": 255.86,
+      "end": 259.88,
+      "text": "between the transverse processes of the vertebrae."
+    },
+    {
+      "start": 260.9,
+      "end": 267.58,
+      "text": "They then progress cord ad in the belly of the source muscle,"
+    },
+    {
+      "start": 268.4,
+      "end": 269.56,
+      "text": "form the terminal nerves."
+    },
+    {
+      "start": 270.19,
+      "end": 276.95,
+      "text": "The lumbar clixes forms the lateral cutaneous nerve, the femoral nerve, as well as the"
+    },
+    {
+      "start": 276.95,
+      "end": 277.79,
+      "text": "to activate a nerve."
+    },
+    {
+      "start": 281.09,
+      "end": 289.26,
+      "text": "Now lumbar plexus nerve blocks have been shown to provide adequate analgesia of the hip joint."
+    },
+    {
+      "start": 290.06,
+      "end": 297.24,
+      "text": "specifically hybarthroplasty. When you place a lumbar plexus catheter, patients have very"
+    },
+    {
+      "start": 297.24,
+      "end": 299.14,
+      "text": "very good outcome."
+    },
+    {
+      "start": 300.03,
+      "end": 305.99,
+      "text": "four days after surgery, they have adequate analgesia, they have independent independence"
+    },
+    {
+      "start": 305.99,
+      "end": 309.37,
+      "text": "from IV analgesia, and they are able to emulate faster than placebo."
+    },
+    {
+      "start": 310.03,
+      "end": 318.27,
+      "text": "Lumbar clex blocks have also been shown to have good outcomes in knee arthroplasty."
+    },
+    {
+      "start": 318.77,
+      "end": 319.97,
+      "text": "These patients have..."
+    },
+    {
+      "start": 320.45,
+      "end": 325.21,
+      "text": "early recovery when giving lumbar plexus nerve blocks after knee surgery."
+    },
+    {
+      "start": 326.94,
+      "end": 329.46,
+      "text": "Patients have lower morphing consumption."
+    },
+    {
+      "start": 330.1,
+      "end": 333.62,
+      "text": "as well as early ambulation on first day."
+    },
+    {
+      "start": 335.93,
+      "end": 339.97,
+      "text": "When doing a lumbar plexus block, patients are..."
+    },
+    {
+      "start": 340.0,
+      "end": 345.11,
+      "text": "place in lateral position, and that's best for optimal visualization of the"
+    },
+    {
+      "start": 345.11,
+      "end": 349.97,
+      "text": "lumbar plexus. The ultrasound pro..."
+    },
+    {
+      "start": 350.0,
+      "end": 359.88,
+      "text": "is often placed three to four centimeters from the midline at the level of the"
+    },
+    {
+      "start": 360.0,
+      "end": 369.97,
+      "text": "Now the ultrasound probe is placed along the longitudinal sagittal position and when you"
+    },
+    {
+      "start": 370.0,
+      "end": 375.51,
+      "text": "are able to place that ultrasound, what you can actually visualize is your"
+    },
+    {
+      "start": 375.51,
+      "end": 379.97,
+      "text": "rectal spinae muscle and you will see the classic trident son."
+    },
+    {
+      "start": 380.1,
+      "end": 387.48,
+      "text": "Trident sign is formed from the the transverse process which gives an acoustic"
+    },
+    {
+      "start": 387.48,
+      "end": 389.94,
+      "text": "shadowing below the transverse process."
+    },
+    {
+      "start": 390.96,
+      "end": 399.98,
+      "text": "You will be able to visualize the source muscle and the lumbar plexus is within the..."
+    },
+    {
+      "start": 400.0,
+      "end": 407.19,
+      "text": "first one-third of the the so-as muscle. Sometimes it is difficult to"
+    },
+    {
+      "start": 407.19,
+      "end": 409.89,
+      "text": "differentiate them however you could see a hyper echo"
+    },
+    {
+      "start": 411.6,
+      "end": 416.39,
+      "text": "structures during the performance of this nerve block. The needle can be placed"
+    },
+    {
+      "start": 416.39,
+      "end": 419.92,
+      "text": "with the in-plane approach and approach the lump."
+    },
+    {
+      "start": 420.0,
+      "end": 424.4,
+      "text": "of our plexus at one level, it is often prudent"
+    },
+    {
+      "start": 424.4,
+      "end": 426.16,
+      "text": "to use a nervous stimulation technique"
+    },
+    {
+      "start": 426.8,
+      "end": 428.32,
+      "text": "with this procedure."
+    },
+    {
+      "start": 430.8,
+      "end": 435.08,
+      "text": "fascia iliacoblocks have been done for hip surgeries as well as knee surgeries."
+    },
+    {
+      "start": 436.04,
+      "end": 439.94,
+      "text": "These blocks are facial control."
+    },
+    {
+      "start": 440.06,
+      "end": 449.06,
+      "text": "block. You are not specifically targeting a nerve. However, you are localizing the local"
+    },
+    {
+      "start": 449.06,
+      "end": 449.64,
+      "text": "commune aesthetic."
+    },
+    {
+      "start": 450.45,
+      "end": 453.13,
+      "text": "between the fascia lota and the fascia iliac."
+    },
+    {
+      "start": 454.5,
+      "end": 459.82,
+      "text": "And those can be seen well above the area of the hip and by distribution."
+    },
+    {
+      "start": 460.0,
+      "end": 464.13,
+      "text": "lokaline static there, the lokaline static will spread immediately and"
+    },
+    {
+      "start": 464.13,
+      "end": 469.22,
+      "text": "lightfully to the block, the thermal nerve as well as the obturator nerve."
+    },
+    {
+      "start": 474.45,
+      "end": 479.76,
+      "text": "fascia iliacop compartment blocks have been used in the ER of specifically"
+    },
+    {
+      "start": 480.03,
+      "end": 483.33,
+      "text": "for patients that present with hip fractures"
+    },
+    {
+      "start": 484.14,
+      "end": 487.71,
+      "text": "to provide adequate allergies to these patients,"
+    },
+    {
+      "start": 488.89,
+      "end": 489.33,
+      "text": "naturally."
+    },
+    {
+      "start": 490.0,
+      "end": 496.74,
+      "text": "can be easily done by emergency department physicians and they could provide"
+    },
+    {
+      "start": 496.74,
+      "end": 499.74,
+      "text": "patients with lower pain scores."
+    },
+    {
+      "start": 500.1,
+      "end": 504.55,
+      "text": "at 15 minutes, two hours and eight hours after presentation"
+    },
+    {
+      "start": 505.55,
+      "end": 509.29,
+      "text": "to the hospital and performance of the nerve lock."
+    },
+    {
+      "start": 509.73,
+      "end": 509.97,
+      "text": "And also..."
+    },
+    {
+      "start": 510.0,
+      "end": 511.68,
+      "text": "so it keeps the vitals very stable."
+    },
+    {
+      "start": 513.88,
+      "end": 516.48,
+      "text": "The classical approach, the fascia iliacoblock is done,"
+    },
+    {
+      "start": 517.16,
+      "end": 519.96,
+      "text": "one third the distance from the..."
+    },
+    {
+      "start": 520.0,
+      "end": 528.04,
+      "text": "enter iliac spine and the pubic tuberca by going two centimeters at that one"
+    },
+    {
+      "start": 528.04,
+      "end": 529.86,
+      "text": "third distance you're able to"
+    },
+    {
+      "start": 530.03,
+      "end": 535.04,
+      "text": "actually identify the fascia, the fascia iliaka, as well as the fascia lota."
+    },
+    {
+      "start": 536.57,
+      "end": 539.97,
+      "text": "The needle tip can be advanced, the needle can be advanced in plain"
+    },
+    {
+      "start": 540.0,
+      "end": 542.76,
+      "text": "and the local anesthetic can be dispersed."
+    },
+    {
+      "start": 547.08,
+      "end": 549.96,
+      "text": "Thermal nerve blocks are the bread and butter of..."
+    },
+    {
+      "start": 550.0,
+      "end": 554.0,
+      "text": "of what anesthesiologists do in the hospital setting."
+    },
+    {
+      "start": 554.66,
+      "end": 558.44,
+      "text": "The femoral nerve is derived from L2 to L4,"
+    },
+    {
+      "start": 558.64,
+      "end": 559.54,
+      "text": "the lumbar plexus."
+    },
+    {
+      "start": 560.29,
+      "end": 565.51,
+      "text": "And it proceeds cord-add below the inguinal ligament"
+    },
+    {
+      "start": 565.87,
+      "end": 568.31,
+      "text": "and divides into the anterior and posterior divisions."
+    },
+    {
+      "start": 568.87,
+      "end": 569.87,
+      "text": "It enablies."
+    },
+    {
+      "start": 570.0,
+      "end": 572.8,
+      "text": "quadricep muscle as well as this arterious muscle."
+    },
+    {
+      "start": 573.67,
+      "end": 579.91,
+      "text": "The femoral nerve is lateral to the femoral artery and the vein, above the iliac."
+    },
+    {
+      "start": 580.06,
+      "end": 588.2,
+      "text": "When scanning for the thermal nerve, one can place the transducer of the ultrasound."
+    },
+    {
+      "start": 590.06,
+      "end": 595.04,
+      "text": "in the area of the inguinal ligament."
+    },
+    {
+      "start": 595.74,
+      "end": 597.82,
+      "text": "And by scanning the inguinal ligament,"
+    },
+    {
+      "start": 597.96,
+      "end": 599.94,
+      "text": "you could easily identify the femoral artery."
+    },
+    {
+      "start": 600.0,
+      "end": 607.92,
+      "text": "as well as the femoral nerve. Let's look at this diagram again. The femoral"
+    },
+    {
+      "start": 607.92,
+      "end": 609.98,
+      "text": "One of these here, the femoral nerve is it..."
+    },
+    {
+      "start": 610.0,
+      "end": 617.29,
+      "text": "large hypericobic bright structure. It's a large nerve easy to identify so that a nerve"
+    },
+    {
+      "start": 617.29,
+      "end": 619.41,
+      "text": "block would be done left."
+    },
+    {
+      "start": 620.16,
+      "end": 627.77,
+      "text": "at that location. This is an image of a, this is a video of a continuous"
+    },
+    {
+      "start": 627.77,
+      "end": 629.75,
+      "text": "formal number of catheters that we often do."
+    },
+    {
+      "start": 630.35,
+      "end": 632.85,
+      "text": "for post-op pain relief after knee surgeries."
+    },
+    {
+      "start": 634.36,
+      "end": 637.52,
+      "text": "All catheters should be done in a sterile fashion."
+    },
+    {
+      "start": 640.0,
+      "end": 646.56,
+      "text": "We typically apply a plastic drape as well as a sterile sleeve or the ultrasound probe."
+    },
+    {
+      "start": 648.94,
+      "end": 649.98,
+      "text": "A linear probe is..."
+    },
+    {
+      "start": 650.0,
+      "end": 655.78,
+      "text": "often enough to identify the femoral nerve, depending on patient anatomy."
+    },
+    {
+      "start": 655.78,
+      "end": 659.28,
+      "text": "The criminal nerve can be visualized here above"
+    },
+    {
+      "start": 660.0,
+      "end": 662.02,
+      "text": "of the profundus branch of the femoral artery."
+    },
+    {
+      "start": 664.61,
+      "end": 669.88,
+      "text": "The needle can be inserted in plain and when it's"
+    },
+    {
+      "start": 670.0,
+      "end": 674.7,
+      "text": "the nerve, you could actually visualize the quadricep twitch."
+    },
+    {
+      "start": 678.89,
+      "end": 679.97,
+      "text": "Ather is then..."
+    },
+    {
+      "start": 680.51,
+      "end": 689.98,
+      "text": "And this is a stimulating catheter which is a different form of catheter which can still be used to"
+    },
+    {
+      "start": 690.0,
+      "end": 694.37,
+      "text": "and Ebola is given through the stimulating catheter."
+    },
+    {
+      "start": 699.47,
+      "end": 699.83,
+      "text": "But how long?"
+    },
+    {
+      "start": 700.0,
+      "end": 704.14,
+      "text": "do you keep a thermometer of catheter after total knee replacements? Studies have shown"
+    },
+    {
+      "start": 704.14,
+      "end": 708.4,
+      "text": "that maximum benefit for a patient is 48 to 72 hours."
+    },
+    {
+      "start": 710.0,
+      "end": 719.53,
+      "text": "infusion and that that helps with passive knee flexion up to six weeks. Beyond that there may not be any"
+    },
+    {
+      "start": 720.03,
+      "end": 723.96,
+      "text": "benefits on pain, stiffness, and functional ability."
+    },
+    {
+      "start": 725.5,
+      "end": 729.97,
+      "text": "The optoid nerve is usually derived again from..."
+    },
+    {
+      "start": 730.0,
+      "end": 736.8,
+      "text": "the lumbar plexus. It sometimes splits high up in the obturator canal. The divisions of"
+    },
+    {
+      "start": 736.8,
+      "end": 739.74,
+      "text": "the obturator are very in different patients."
+    },
+    {
+      "start": 740.0,
+      "end": 749.46,
+      "text": "either it can either divide about the foreman or below the foreman. So it's a really variable"
+    },
+    {
+      "start": 750.0,
+      "end": 758.91,
+      "text": "with patient anatomy. The activated nerve can be localized between the adductor muscles."
+    },
+    {
+      "start": 760.0,
+      "end": 766.28,
+      "text": "The first branch is the anterior branch between the adducto longus and the adducto brevus."
+    },
+    {
+      "start": 767.3,
+      "end": 769.98,
+      "text": "Another branch is between the adducto longus and the adducto brevus."
+    },
+    {
+      "start": 770.06,
+      "end": 777.74,
+      "text": "nervous and the autoctor magnus. In clinical practice, this may not be useful for knee"
+    },
+    {
+      "start": 777.74,
+      "end": 779.98,
+      "text": "searchers because the amount of"
+    },
+    {
+      "start": 780.0,
+      "end": 787.78,
+      "text": "of sensory innovation to the Nigerian is really variable. It's just a patch that may be given as"
+    },
+    {
+      "start": 787.78,
+      "end": 789.98,
+      "text": "part of a sensory innovation. Most..."
+    },
+    {
+      "start": 790.0,
+      "end": 794.96,
+      "text": "So most of the adulterated nerve is mostly for adduction and motor purposes."
+    },
+    {
+      "start": 795.98,
+      "end": 799.98,
+      "text": "So for post-op pain relief, it may not be really..."
+    },
+    {
+      "start": 800.0,
+      "end": 809.98,
+      "text": "The saffronist's nerve is the only nerve of the upper extremity of the..."
+    },
+    {
+      "start": 810.96,
+      "end": 812.72,
+      "text": "of the thermal nerve that inner rates"
+    },
+    {
+      "start": 812.72,
+      "end": 816.09,
+      "text": "the lower part of the leg."
+    },
+    {
+      "start": 816.43,
+      "end": 817.97,
+      "text": "And it gives sensory innervation"
+    },
+    {
+      "start": 817.97,
+      "end": 819.97,
+      "text": "to the medial aspect of..."
+    },
+    {
+      "start": 820.03,
+      "end": 829.5,
+      "text": "lower, like the saffonist nerve can be, saffonist nerve can be blocked within the adductor canal if you are to"
+    },
+    {
+      "start": 830.19,
+      "end": 839.98,
+      "text": "trace the genocular artery, branch of the femoral artery and trace it."
+    },
+    {
+      "start": 840.0,
+      "end": 846.3,
+      "text": "down to the mid-thigh level. You could actually see the sartorius muscle, the vastest medialis"
+    },
+    {
+      "start": 846.3,
+      "end": 848.34,
+      "text": "muscle, and an actor to longest muscle."
+    },
+    {
+      "start": 850.0,
+      "end": 857.04,
+      "text": "Sartorius nerve, this affinus nerve is localized within that adductor canal."
+    },
+    {
+      "start": 858.88,
+      "end": 859.64,
+      "text": "The sciatic nerve."
+    },
+    {
+      "start": 860.38,
+      "end": 869.73,
+      "text": "It is derived from the sacral plexus and it is a lumbar sacral plexus and it is derived from L4 to S3."
+    },
+    {
+      "start": 872.98,
+      "end": 877.42,
+      "text": "So the question is, do you really need a sciatic nerve block for a total knee replacement?"
+    },
+    {
+      "start": 878.14,
+      "end": 879.98,
+      "text": "And the answer is yes, studies have shown."
+    },
+    {
+      "start": 880.03,
+      "end": 884.24,
+      "text": "shown that femdenin in 2005 is shown that when you combine"
+    },
+    {
+      "start": 884.24,
+      "end": 886.52,
+      "text": "soatic nerve blocks with femoral nerve blocks,"
+    },
+    {
+      "start": 886.9,
+      "end": 889.84,
+      "text": "patients are more comfortable, have less."
+    },
+    {
+      "start": 890.06,
+      "end": 897.57,
+      "text": "pain and less nausea vomiting, same with Ben David who said, who demonstrated in history"
+    },
+    {
+      "start": 900.74,
+      "end": 909.89,
+      "text": "There are most of the patients benefit from sciatic nerve catheters with good results when doing a sciatic nerve lock"
+    },
+    {
+      "start": 910.19,
+      "end": 919.35,
+      "text": "The ultrasound probe is, can be traced from optical area to the high sciatic, high-sacral area and you could actually trace"
+    },
+    {
+      "start": 920.0,
+      "end": 928.2,
+      "text": "the tubular and the carbon perineal nerve together, which form the sciatic nerve, which forms"
+    },
+    {
+      "start": 928.2,
+      "end": 929.64,
+      "text": "a flat appearing structure."
+    },
+    {
+      "start": 930.22,
+      "end": 935.36,
+      "text": "and it's hyperocobic and it could be traced all the way to the infrared gluteal or the"
+    },
+    {
+      "start": 935.36,
+      "end": 937.33,
+      "text": "soft gluteal area."
+    },
+    {
+      "start": 940.51,
+      "end": 949.2,
+      "text": "In terms of catheters which catheters are better, again Asians have better outcome."
+    },
+    {
+      "start": 950.0,
+      "end": 958.9,
+      "text": "When you use a 0.2 or 0.4% of a pivocaine there is little difference in outcome between the two and the satisfaction is high."
+    },
+    {
+      "start": 960.0,
+      "end": 967.64,
+      "text": "who have higher concentration, have a more motor block than lower concentration."
+    },
+    {
+      "start": 970.16,
+      "end": 976.51,
+      "text": "we do is after we insert a catheter, we give a bolus and that bolus is adequate for primary"
+    },
+    {
+      "start": 976.51,
+      "end": 976.93,
+      "text": "block."
+    },
+    {
+      "start": 978.1,
+      "end": 979.78,
+      "text": "Patients' catheter is attached."
+    },
+    {
+      "start": 980.0,
+      "end": 985.34,
+      "text": "a pump which provides a continuous infusion of local anesthetic at 8 to 12"
+    },
+    {
+      "start": 985.34,
+      "end": 989.92,
+      "text": "cc an hour and we try to aim to provide a sensory block."
+    },
+    {
+      "start": 990.7,
+      "end": 992.64,
+      "text": "and avoid motorblocks."
+    },
+    {
+      "start": 993.39,
+      "end": 996.37,
+      "text": "We also avoid excessive local anesthetic toxicity."
+    },
+    {
+      "start": 997.5,
+      "end": 999.74,
+      "text": "Patients are monitored in the hospital setting."
+    },
+    {
+      "start": 1000.51,
+      "end": 1004.99,
+      "text": "and nursing patient education is important"
+    },
+    {
+      "start": 1004.99,
+      "end": 1007.63,
+      "text": "because if they have an insensite limb,"
+    },
+    {
+      "start": 1008.31,
+      "end": 1009.63,
+      "text": "they're able, they're,"
+    },
+    {
+      "start": 1010.26,
+      "end": 1018.37,
+      "text": "They are prone to getting positional nerve injury, so patient education is indicated with"
+    },
+    {
+      "start": 1018.66,
+      "end": 1019.12,
+      "text": "its purposes."
+    }
+  ]
+}

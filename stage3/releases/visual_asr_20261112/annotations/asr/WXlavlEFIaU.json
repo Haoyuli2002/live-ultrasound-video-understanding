@@ -1,0 +1,1323 @@
+{
+  "video_id": "WXlavlEFIaU",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/WXlavlEFIaU/asr.txt",
+  "segments": [
+    {
+      "start": 0.61,
+      "end": 1.87,
+      "text": "Welcome back to Pocus Geek."
+    },
+    {
+      "start": 2.07,
+      "end": 3.09,
+      "text": "My name's Jared Marks."
+    },
+    {
+      "start": 3.8,
+      "end": 5.74,
+      "text": "And in this series of lectures,"
+    },
+    {
+      "start": 5.76,
+      "end": 8.0,
+      "text": "we've been talking about obtaining vascular access."
+    },
+    {
+      "start": 8.71,
+      "end": 9.97,
+      "text": "Now these same sequences can..."
+    },
+    {
+      "start": 10.0,
+      "end": 16.56,
+      "text": "use for arteriobutmore, mostly focusing right now on venous access, and that's what we'll"
+    },
+    {
+      "start": 16.56,
+      "end": 17.52,
+      "text": "continue to do here."
+    },
+    {
+      "start": 17.52,
+      "end": 19.41,
+      "text": "Now, um,"
+    },
+    {
+      "start": 20.0,
+      "end": 20.9,
+      "text": "Like I said, this is part two."
+    },
+    {
+      "start": 20.98,
+      "end": 23.5,
+      "text": "The first part was identifying the correct vessel"
+    },
+    {
+      "start": 23.5,
+      "end": 26.66,
+      "text": "and focusing mostly on identifying the correct vein."
+    },
+    {
+      "start": 28.19,
+      "end": 29.77,
+      "text": "And what we're gonna do is we're gonna continue."
+    },
+    {
+      "start": 30.03,
+      "end": 34.49,
+      "text": "along our objectives. And we're going to start looking at the technique used to place a"
+    },
+    {
+      "start": 34.49,
+      "end": 39.75,
+      "text": "vascular catheter and how to verify that in the vein. In the first"
+    },
+    {
+      "start": 40.0,
+      "end": 43.1,
+      "text": "If you haven't had a chance to watch that, I'd recommend going back and doing that."
+    },
+    {
+      "start": 43.52,
+      "end": 45.8,
+      "text": "We discuss objectives one through three."
+    },
+    {
+      "start": 47.75,
+      "end": 49.45,
+      "text": "Now, when we talk about..."
+    },
+    {
+      "start": 50.03,
+      "end": 55.14,
+      "text": "performing any procedure, you should set the room ups and set the patient up in correct"
+    },
+    {
+      "start": 55.14,
+      "end": 59.74,
+      "text": "positioning so that you have the most success and when we go to do vascular access"
+    },
+    {
+      "start": 60.0,
+      "end": 66.05,
+      "text": "is particularly important. And the first thing we want to discuss is that when you're going"
+    },
+    {
+      "start": 66.05,
+      "end": 69.96,
+      "text": "to do vascular access, we want to forget about this."
+    },
+    {
+      "start": 70.0,
+      "end": 73.76,
+      "text": "notion of where does the probe marker have to be in correlation to the patient because"
+    },
+    {
+      "start": 73.76,
+      "end": 74.72,
+      "text": "it doesn't matter."
+    },
+    {
+      "start": 75.71,
+      "end": 79.87,
+      "text": "It doesn't matter in correlation to the patient, but it does matter where it's directed in"
+    },
+    {
+      "start": 80.0,
+      "end": 89.0,
+      "text": "correlation to your image. So ignore the pro marker has to be to the right or to the left or whatever convention you're used to scanning or the head."
+    },
+    {
+      "start": 90.06,
+      "end": 94.86,
+      "text": "you need to focus on where is the pro marker in correlation to the marker on the screen."
+    },
+    {
+      "start": 95.16,
+      "end": 99.78,
+      "text": "So here we can see the pro marker here and we see the probe indicator here."
+    },
+    {
+      "start": 100.0,
+      "end": 105.56,
+      "text": "this to correlate. So the key is that if you come in and you see your needle tip right here"
+    },
+    {
+      "start": 105.56,
+      "end": 109.98,
+      "text": "and you know that you need to redirect this way in order to get access that you..."
+    },
+    {
+      "start": 110.03,
+      "end": 114.72,
+      "text": "correlates with what's on your image with the movements that you're doing externally on"
+    },
+    {
+      "start": 114.72,
+      "end": 115.2,
+      "text": "the patient."
+    },
+    {
+      "start": 117.96,
+      "end": 119.9,
+      "text": "This particular video is looking at an iJ."
+    },
+    {
+      "start": 120.0,
+      "end": 125.3,
+      "text": "and the crotted here. Now let's look at this. So if we set up the room, this is looking at the medium"
+    },
+    {
+      "start": 125.3,
+      "end": 129.45,
+      "text": "and cubital vein, which we saw earlier and is right here."
+    },
+    {
+      "start": 130.7,
+      "end": 132.74,
+      "text": "and then we have an artery down over here."
+    },
+    {
+      "start": 133.44,
+      "end": 135.7,
+      "text": "And if we set up the room, you notice that the machine"
+    },
+    {
+      "start": 135.7,
+      "end": 137.94,
+      "text": "is over here across from the patient,"
+    },
+    {
+      "start": 138.52,
+      "end": 139.86,
+      "text": "but it's in line."
+    },
+    {
+      "start": 140.0,
+      "end": 145.31,
+      "text": "of sight or direct line of sight with the vessel that I'm going for now."
+    },
+    {
+      "start": 145.71,
+      "end": 149.97,
+      "text": "You may have gone in and I usually assess which vein I'm going to..."
+    },
+    {
+      "start": 150.0,
+      "end": 154.48,
+      "text": "go for first, get all my machine settings correctly, the depth and everything, and save"
+    },
+    {
+      "start": 154.48,
+      "end": 159.18,
+      "text": "my pre-attempt images or videos, whatever you do at your institution."
+    },
+    {
+      "start": 160.03,
+      "end": 164.94,
+      "text": "I save those and then I set up the machine across from the patient so it's in direct line"
+    },
+    {
+      "start": 164.94,
+      "end": 167.79,
+      "text": "of sight so that I have the best success at doing this."
+    },
+    {
+      "start": 173.62,
+      "end": 174.96,
+      "text": "so you can see those veins there."
+    },
+    {
+      "start": 175.78,
+      "end": 179.92,
+      "text": "Now, they were going to be doing a..."
+    },
+    {
+      "start": 180.0,
+      "end": 183.41,
+      "text": "And we're looking at this patient's right IJ."
+    },
+    {
+      "start": 183.65,
+      "end": 186.61,
+      "text": "Well, if you notice here that the probe marker"
+    },
+    {
+      "start": 186.61,
+      "end": 189.52,
+      "text": "is hard to see here, but the probe marker is actually this way."
+    },
+    {
+      "start": 190.16,
+      "end": 192.46,
+      "text": "because my indicator is over towards the patient's left."
+    },
+    {
+      "start": 192.64,
+      "end": 194.96,
+      "text": "And that's important so that when I look at this right IJ,"
+    },
+    {
+      "start": 195.72,
+      "end": 198.7,
+      "text": "here is the vein, or here's the artery."
+    },
+    {
+      "start": 200.0,
+      "end": 204.22,
+      "text": "here's the vein and that's going to be particularly important that I know which way to move my needle"
+    },
+    {
+      "start": 204.22,
+      "end": 209.89,
+      "text": "when I see it sonographically so that I'm not accidentally redirecting and hitting the"
+    },
+    {
+      "start": 210.1,
+      "end": 213.12,
+      "text": "Brought it and think I hit the IJ, or I'm, you know,"
+    },
+    {
+      "start": 213.58,
+      "end": 216.42,
+      "text": "entering another vessel or even going towards the sofcus"
+    },
+    {
+      "start": 216.42,
+      "end": 217.82,
+      "text": "or the trachea, anything else."
+    },
+    {
+      "start": 219.05,
+      "end": 219.97,
+      "text": "So what we have to keep in mind."
+    },
+    {
+      "start": 220.0,
+      "end": 228.3,
+      "text": "mind as we do this evaluation is that our screen is like this in the probe marker once"
+    },
+    {
+      "start": 228.3,
+      "end": 229.94,
+      "text": "Once again, it correlates."
+    },
+    {
+      "start": 230.03,
+      "end": 234.02,
+      "text": "with the probe indicator here, and they both match."
+    },
+    {
+      "start": 234.32,
+      "end": 237.32,
+      "text": "So this would be, you know, on that case,"
+    },
+    {
+      "start": 237.44,
+      "end": 238.62,
+      "text": "when we're looking at the right IJ,"
+    },
+    {
+      "start": 238.78,
+      "end": 239.96,
+      "text": "this would be the patient's left."
+    },
+    {
+      "start": 240.0,
+      "end": 243.13,
+      "text": "over here and this side would be the patient's right."
+    },
+    {
+      "start": 244.22,
+      "end": 248.15,
+      "text": "If we go back to that, we can see probe markers this way."
+    },
+    {
+      "start": 248.55,
+      "end": 249.98,
+      "text": "So, when we look at it,"
+    },
+    {
+      "start": 250.0,
+      "end": 252.3,
+      "text": "his trachea on this image is here."
+    },
+    {
+      "start": 252.84,
+      "end": 255.02,
+      "text": "There's his crotted and then there's the ij."
+    },
+    {
+      "start": 255.2,
+      "end": 257.32,
+      "text": "And that would be the same correlation that we see here."
+    },
+    {
+      "start": 257.87,
+      "end": 259.96,
+      "text": "So crotted or so."
+    },
+    {
+      "start": 260.38,
+      "end": 264.43,
+      "text": "trachea, rotted ij and that will correlate with what we're seeing here on the"
+    },
+    {
+      "start": 264.43,
+      "end": 269.9,
+      "text": "patient. Once again we're going to make sure it's a compressible vessel."
+    },
+    {
+      "start": 270.0,
+      "end": 277.29,
+      "text": "before we ever attempt at it. Now, there's two accesses that you may hear of about"
+    },
+    {
+      "start": 277.29,
+      "end": 279.97,
+      "text": "attempting approaches to this, and there's the short and"
+    },
+    {
+      "start": 280.0,
+      "end": 289.12,
+      "text": "long access. The short is good for anybody to use. The long is beautiful because you can"
+    },
+    {
+      "start": 289.12,
+      "end": 289.98,
+      "text": "and see the needle the whole-"
+    },
+    {
+      "start": 290.0,
+      "end": 295.48,
+      "text": "way, it's easy if you can do it, but it requires a super cooperative patient, it requires"
+    },
+    {
+      "start": 295.48,
+      "end": 299.7,
+      "text": "very good pro placement and can be a little more difficult, so majority of people."
+    },
+    {
+      "start": 300.35,
+      "end": 301.93,
+      "text": "often just do the short access."
+    },
+    {
+      "start": 303.02,
+      "end": 304.06,
+      "text": "The short access is great."
+    },
+    {
+      "start": 304.34,
+      "end": 306.01,
+      "text": "I love using the short access."
+    },
+    {
+      "start": 306.13,
+      "end": 307.53,
+      "text": "It's what I teach my learners to do"
+    },
+    {
+      "start": 307.53,
+      "end": 309.07,
+      "text": "because you get to see the other structures."
+    },
+    {
+      "start": 309.79,
+      "end": 309.97,
+      "text": "So just..."
+    },
+    {
+      "start": 310.06,
+      "end": 314.92,
+      "text": "like this, I can see right now the vein and the artery and they're sitting right next"
+    },
+    {
+      "start": 314.92,
+      "end": 319.8,
+      "text": "to each other and I know that my needles close to the vein. Now the only problem with the"
+    },
+    {
+      "start": 320.1,
+      "end": 324.0,
+      "text": "access is if you've got a pay attention to where your needle tip is."
+    },
+    {
+      "start": 324.14,
+      "end": 329.84,
+      "text": "And so just because you see the needle does not mean that you know where the tip is."
+    },
+    {
+      "start": 330.0,
+      "end": 335.5,
+      "text": "So, say for example, we see this needle here, but what if our tip or what if our probes"
+    },
+    {
+      "start": 335.5,
+      "end": 339.81,
+      "text": "only place, then we see it sitting above the vein, but we've actually gone through the"
+    },
+    {
+      "start": 339.81,
+      "end": 339.97,
+      "text": "vein."
+    },
+    {
+      "start": 340.0,
+      "end": 343.9,
+      "text": "through and through and our needle tips way down here so the key is that you have"
+    },
+    {
+      "start": 343.9,
+      "end": 347.82,
+      "text": "to pay attention to where your needle tip is and that's what we're going to"
+    },
+    {
+      "start": 347.82,
+      "end": 349.98,
+      "text": "discuss here and how you do that. So we're gonna"
+    },
+    {
+      "start": 350.0,
+      "end": 357.46,
+      "text": "imagine that this right here is our vein we're going to go for. We're going to have our skin layer"
+    },
+    {
+      "start": 357.46,
+      "end": 359.91,
+      "text": "here and we're going to think of our Pythagorean theory."
+    },
+    {
+      "start": 360.0,
+      "end": 369.98,
+      "text": "and that's going to give us an estimation of how much catheter we should use. Now, we don't have markings on the needle, but it allows us to have an idea of how..."
+    },
+    {
+      "start": 370.0,
+      "end": 373.88,
+      "text": "We're going to travel before we hit that, especially if we start at that 45 degrees."
+    },
+    {
+      "start": 374.76,
+      "end": 379.14,
+      "text": "And we're going to use what's called a stepwise approach to put this into the vein."
+    },
+    {
+      "start": 379.36,
+      "end": 379.9,
+      "text": "So what I like."
+    },
+    {
+      "start": 380.0,
+      "end": 386.7,
+      "text": "to do is first identify the vessel where I want to hit it approximately and then I'm going"
+    },
+    {
+      "start": 386.7,
+      "end": 389.83,
+      "text": "to come back from that and I'm going to put my"
+    },
+    {
+      "start": 390.0,
+      "end": 394.14,
+      "text": "there make sure I've got nice clear structures underneath it and then I'm going to move my"
+    },
+    {
+      "start": 394.14,
+      "end": 399.34,
+      "text": "probe away from that spot just a little bit and insert the needle. I like to go needle or"
+    },
+    {
+      "start": 400.06,
+      "end": 405.61,
+      "text": "Some people like it bevel down, but I like bevel up because it cuts into the vein better instead of filling that pot"
+    },
+    {
+      "start": 406.0,
+      "end": 409.62,
+      "text": "And I'm visualizing the needle tips. So I like to be accurate"
+    },
+    {
+      "start": 410.06,
+      "end": 412.72,
+      "text": "not popping through and compressing the posterior wall."
+    },
+    {
+      "start": 413.0,
+      "end": 415.34,
+      "text": "So what we're gonna see here is we put the needle under,"
+    },
+    {
+      "start": 416.09,
+      "end": 418.31,
+      "text": "then we're gonna take our probe and we're gonna come back"
+    },
+    {
+      "start": 418.31,
+      "end": 419.77,
+      "text": "and we're gonna find that needle tip."
+    },
+    {
+      "start": 420.74,
+      "end": 422.3,
+      "text": "And then we're going to advance our probe first."
+    },
+    {
+      "start": 422.56,
+      "end": 423.98,
+      "text": "And then after we advance the probe,"
+    },
+    {
+      "start": 424.59,
+      "end": 425.83,
+      "text": "we're going to advance the needle"
+    },
+    {
+      "start": 425.83,
+      "end": 427.45,
+      "text": "until we see it come into view."
+    },
+    {
+      "start": 427.63,
+      "end": 429.65,
+      "text": "Once you see the needle tip come into view."
+    },
+    {
+      "start": 430.1,
+      "end": 435.04,
+      "text": "you need to stop. Stop moving the needle and then move forward with the"
+    },
+    {
+      "start": 435.04,
+      "end": 438.75,
+      "text": "probe. And you're going to do this and I do this typically every, you know, two to"
+    },
+    {
+      "start": 438.75,
+      "end": 439.91,
+      "text": "three millimeters or it depends on."
+    },
+    {
+      "start": 440.03,
+      "end": 444.11,
+      "text": "far a death I'm going to go how far I have to make it. And then once we get to"
+    },
+    {
+      "start": 444.11,
+      "end": 446.87,
+      "text": "right where we're sitting on top of the vessel and we'll see it's called"
+    },
+    {
+      "start": 446.87,
+      "end": 449.91,
+      "text": "tinting, then I'm going to drop the plane of that probe."
+    },
+    {
+      "start": 450.0,
+      "end": 456.26,
+      "text": "just a little bit, or a mean of the needle, just a little bit, maybe to 20 to 30 degrees"
+    },
+    {
+      "start": 456.26,
+      "end": 458.16,
+      "text": "and then I'm going to enter the vessels."
+    },
+    {
+      "start": 458.42,
+      "end": 459.68,
+      "text": "That way I can..."
+    },
+    {
+      "start": 460.0,
+      "end": 462.06,
+      "text": "try not to go through the posterior wall as much."
+    },
+    {
+      "start": 462.79,
+      "end": 464.53,
+      "text": "Now we're gonna see this on a blue phantom here"
+    },
+    {
+      "start": 464.53,
+      "end": 467.05,
+      "text": "and what you'll notice is I first"
+    },
+    {
+      "start": 467.05,
+      "end": 468.55,
+      "text": "and put the needle under here,"
+    },
+    {
+      "start": 468.77,
+      "end": 469.97,
+      "text": "and then I bring the probe back to..."
+    },
+    {
+      "start": 470.0,
+      "end": 476.45,
+      "text": "the needle tip and it will show up as a hypercoic lesion here and then as we"
+    },
+    {
+      "start": 476.45,
+      "end": 479.73,
+      "text": "advance then you'll see the probe advance"
+    },
+    {
+      "start": 480.03,
+      "end": 483.25,
+      "text": "And then the needle will come into view as the needle tip is moved."
+    },
+    {
+      "start": 483.53,
+      "end": 484.83,
+      "text": "So let's go ahead and watch that."
+    },
+    {
+      "start": 485.13,
+      "end": 486.91,
+      "text": "So needles under, we're going to come back"
+    },
+    {
+      "start": 486.91,
+      "end": 489.25,
+      "text": "and we're going to find the vessel, are they needle,"
+    },
+    {
+      "start": 489.41,
+      "end": 489.97,
+      "text": "which we see here."
+    },
+    {
+      "start": 490.0,
+      "end": 494.49,
+      "text": "Now we're going to move forward our hand, and then our needle comes after shortly after."
+    },
+    {
+      "start": 494.85,
+      "end": 499.74,
+      "text": "We move our probe just a little bit, and we're going to get right on top of this vessel here, and we're going to..."
+    },
+    {
+      "start": 500.06,
+      "end": 502.02,
+      "text": "and then we advance the probe a little bit,"
+    },
+    {
+      "start": 502.1,
+      "end": 504.16,
+      "text": "and we can see our needle tip right in it."
+    },
+    {
+      "start": 504.48,
+      "end": 508.24,
+      "text": "That way we've never lost visualization of the needle tip"
+    },
+    {
+      "start": 508.24,
+      "end": 509.96,
+      "text": "and we know that we're right in."
+    },
+    {
+      "start": 510.13,
+      "end": 516.59,
+      "text": "vessel and we haven't done past it like we saw in the other example. Let's take this example. So"
+    },
+    {
+      "start": 516.59,
+      "end": 519.96,
+      "text": "right now, this is where we want to be really..."
+    },
+    {
+      "start": 520.0,
+      "end": 523.28,
+      "text": "accurate at what we're doing. So what we see is we're going for a deep"
+    },
+    {
+      "start": 523.28,
+      "end": 528.87,
+      "text": "break heel and the deep break heel arteries right here and the deep break heel"
+    },
+    {
+      "start": 528.87,
+      "end": 529.97,
+      "text": "veins right here and we've put"
+    },
+    {
+      "start": 530.0,
+      "end": 536.75,
+      "text": "to turn it on so it's nice and plumb, but what we also see is that there is a nerve right"
+    },
+    {
+      "start": 536.75,
+      "end": 539.96,
+      "text": "here and there is another small..."
+    },
+    {
+      "start": 540.0,
+      "end": 547.19,
+      "text": "vessel right here but we have our approach and back in here down in this hyper"
+    },
+    {
+      "start": 547.19,
+      "end": 549.67,
+      "text": "or coax area, we likely have other nerves."
+    },
+    {
+      "start": 550.48,
+      "end": 552.98,
+      "text": "And so as we look at this, we have to be super accurate."
+    },
+    {
+      "start": 553.16,
+      "end": 554.28,
+      "text": "And we don't have a lot of distance,"
+    },
+    {
+      "start": 554.3,
+      "end": 558.1,
+      "text": "because if we look over here, we're at a half a centimeter deep."
+    },
+    {
+      "start": 558.28,
+      "end": 559.82,
+      "text": "So put the probe in the middle."
+    },
+    {
+      "start": 560.29,
+      "end": 561.49,
+      "text": "This one's a little off to the side."
+    },
+    {
+      "start": 562.13,
+      "end": 564.11,
+      "text": "Use that marker on your probe and insert the needle,"
+    },
+    {
+      "start": 564.11,
+      "end": 564.97,
+      "text": "but then you can redirect."
+    },
+    {
+      "start": 565.45,
+      "end": 569.12,
+      "text": "And we'll see that here that we're coming in"
+    },
+    {
+      "start": 569.12,
+      "end": 569.64,
+      "text": "in the needle."
+    },
+    {
+      "start": 570.0,
+      "end": 575.07,
+      "text": "actually comes in about right here and they were able to redirect back towards the vessel"
+    },
+    {
+      "start": 575.42,
+      "end": 576.0,
+      "text": "correctly."
+    },
+    {
+      "start": 577.03,
+      "end": 577.71,
+      "text": "Let's see here."
+    },
+    {
+      "start": 580.26,
+      "end": 584.12,
+      "text": "see the needle tip come in and it's a little hypercocal lesion right there"
+    },
+    {
+      "start": 584.12,
+      "end": 588.01,
+      "text": "and then we come back and we'll actually see our needle tip come in over here."
+    },
+    {
+      "start": 592.82,
+      "end": 596.48,
+      "text": "You see, it came through and we didn't puncture, we did hit the back wall, but we never punctured"
+    },
+    {
+      "start": 596.48,
+      "end": 599.38,
+      "text": "through that back wall because we watched for that needle tip to come through."
+    },
+    {
+      "start": 600.77,
+      "end": 603.39,
+      "text": "Here's another example of we're tenting the vessel wall."
+    },
+    {
+      "start": 604.71,
+      "end": 606.93,
+      "text": "And you can see how collapsible that vessel is."
+    },
+    {
+      "start": 607.03,
+      "end": 609.27,
+      "text": "So it's important that you know."
+    },
+    {
+      "start": 610.0,
+      "end": 613.44,
+      "text": "watch structures are underneath it and where your needle tip is because we're"
+    },
+    {
+      "start": 613.44,
+      "end": 619.9,
+      "text": "tenting this vessel wall before we enter it. So the short acts"
+    },
+    {
+      "start": 620.0,
+      "end": 624.06,
+      "text": "This is really great, especially when there's other structures around it."
+    },
+    {
+      "start": 624.26,
+      "end": 627.14,
+      "text": "As long as you keep track of that needle tip and I really like it."
+    },
+    {
+      "start": 627.78,
+      "end": 629.68,
+      "text": "Now sometimes, I think it looks better."
+    },
+    {
+      "start": 630.22,
+      "end": 634.66,
+      "text": "image wise to be able to get the long axis but it's not always as easy. It requires a really"
+    },
+    {
+      "start": 634.66,
+      "end": 639.78,
+      "text": "straight vessel, it requires a good echographic."
+    },
+    {
+      "start": 640.1,
+      "end": 649.9,
+      "text": "For echo loosened needle and an cooperative patient in order to get this and I've seen people"
+    },
+    {
+      "start": 650.0,
+      "end": 653.7,
+      "text": "Unfortunately, make mistakes, especially when you have an artery in a vein right next to each other."
+    },
+    {
+      "start": 653.7,
+      "end": 659.98,
+      "text": "They try to rotate out the probe, and as they do that, they actually rotate and slip over the artery when they're trying to..."
+    },
+    {
+      "start": 660.92,
+      "end": 663.68,
+      "text": "and that can be problematic in obtaining access."
+    },
+    {
+      "start": 663.9,
+      "end": 667.26,
+      "text": "So just keep in mind that a long access is nice"
+    },
+    {
+      "start": 667.26,
+      "end": 669.56,
+      "text": "because you see the needle but you may not always"
+    },
+    {
+      "start": 670.03,
+      "end": 671.49,
+      "text": "see all the other surrounding structures."
+    },
+    {
+      "start": 672.11,
+      "end": 674.59,
+      "text": "And what we have to do is we want to first find the vein"
+    },
+    {
+      "start": 674.59,
+      "end": 678.28,
+      "text": "in a short access, or the vessel, even if you're"
+    },
+    {
+      "start": 678.28,
+      "end": 678.98,
+      "text": "doing an arterial."
+    },
+    {
+      "start": 679.46,
+      "end": 679.92,
+      "text": "And we're going to."
+    },
+    {
+      "start": 680.0,
+      "end": 684.06,
+      "text": "rotate our probe slowly keeping it in view in the middle of your screen you"
+    },
+    {
+      "start": 684.06,
+      "end": 688.42,
+      "text": "want to write down the middle like this so that you can stay on that and as"
+    },
+    {
+      "start": 688.42,
+      "end": 689.7,
+      "text": "you rotate it will stay in view."
+    },
+    {
+      "start": 690.93,
+      "end": 694.01,
+      "text": "And we're going to just keep rotating until we lengthen out the vessel."
+    },
+    {
+      "start": 695.06,
+      "end": 699.86,
+      "text": "And then once we lengthen out that vessel, then we're going to introduce the needle on"
+    },
+    {
+      "start": 700.0,
+      "end": 704.34,
+      "text": "either end whether it be your home marker end or the opposite end and you're"
+    },
+    {
+      "start": 704.34,
+      "end": 709.02,
+      "text": "gonna watch that needle go in. Now the key is is when you do this you have to be"
+    },
+    {
+      "start": 709.02,
+      "end": 709.74,
+      "text": "very skilled."
+    },
+    {
+      "start": 710.0,
+      "end": 715.42,
+      "text": "keeping this straight. It has to be exactly in plain with the probe. Because if you're not,"
+    },
+    {
+      "start": 715.96,
+      "end": 719.98,
+      "text": "then you'll only see a portion of the needle and you won't know where your needle tip is. Same thing."
+    },
+    {
+      "start": 720.0,
+      "end": 726.22,
+      "text": "we had with when we did our short access. So these two over here are actually bad"
+    },
+    {
+      "start": 726.22,
+      "end": 729.94,
+      "text": "technique and we don't want to do that. We have to keep it right in plain so you"
+    },
+    {
+      "start": 730.0,
+      "end": 735.28,
+      "text": "to keep not only your pro pan still, but then you have to accurately place the needle right"
+    },
+    {
+      "start": 735.28,
+      "end": 736.52,
+      "text": "on in playing with it."
+    },
+    {
+      "start": 737.37,
+      "end": 739.97,
+      "text": "But the beauty about it is, is then once we do it, we can..."
+    },
+    {
+      "start": 740.0,
+      "end": 745.78,
+      "text": "see this needle tip the whole way in into the vein and we get a pretty picture just like this."
+    },
+    {
+      "start": 746.75,
+      "end": 749.65,
+      "text": "And we can watch even you know if we have an assistant we can add them."
+    },
+    {
+      "start": 750.32,
+      "end": 754.83,
+      "text": "show the catheter going in or those different things and it's beautiful to see it this way"
+    },
+    {
+      "start": 754.83,
+      "end": 759.92,
+      "text": "but it's not always feasible with the patients that we have especially in the"
+    },
+    {
+      "start": 760.0,
+      "end": 762.84,
+      "text": "emergency department that may be distressed."
+    },
+    {
+      "start": 767.11,
+      "end": 769.69,
+      "text": "We can see clearly that this catheter is getting advanced, so."
+    },
+    {
+      "start": 770.22,
+      "end": 773.32,
+      "text": "How else can we verify that we're in the correct vessel?"
+    },
+    {
+      "start": 773.97,
+      "end": 775.43,
+      "text": "Well, we can do a couple simple things."
+    },
+    {
+      "start": 775.83,
+      "end": 778.62,
+      "text": "So, once you get into the vessel,"
+    },
+    {
+      "start": 778.92,
+      "end": 779.96,
+      "text": "you can have the..."
+    },
+    {
+      "start": 780.46,
+      "end": 786.92,
+      "text": "You can move the probe proximal on the patient and you can watch and see if there is the"
+    },
+    {
+      "start": 786.92,
+      "end": 787.7,
+      "text": "flush coming through."
+    },
+    {
+      "start": 787.78,
+      "end": 789.54,
+      "text": "You'll see a little bit of hyper-echoic bubbles."
+    },
+    {
+      "start": 790.1,
+      "end": 795.42,
+      "text": "within it. So I want you to pay attention to is we can actually see our catheter right"
+    },
+    {
+      "start": 795.42,
+      "end": 797.64,
+      "text": "here, show you right there."
+    },
+    {
+      "start": 801.54,
+      "end": 805.98,
+      "text": "It's a little bit difficult to draw since it's so small, but here's our vein, catheters"
+    },
+    {
+      "start": 805.98,
+      "end": 806.78,
+      "text": "right within it."
+    },
+    {
+      "start": 806.88,
+      "end": 809.62,
+      "text": "But what we can do is we can also do a flush."
+    },
+    {
+      "start": 810.58,
+      "end": 816.21,
+      "text": "of that, and we can see here that they're, well, we're watching the catheter in this portion,"
+    },
+    {
+      "start": 816.25,
+      "end": 819.8,
+      "text": "and then here in this next one, we're going to see a flush, and we can see that nicely."
+    },
+    {
+      "start": 820.0,
+      "end": 824.65,
+      "text": "little flush, fill that vein up with fluid now. This patient was a severely"
+    },
+    {
+      "start": 825.31,
+      "end": 829.43,
+      "text": "volume depleted DKA patient and so you can even see some respiratory"
+    },
+    {
+      "start": 829.43,
+      "end": 829.85,
+      "text": "very very"
+    },
+    {
+      "start": 830.0,
+      "end": 835.99,
+      "text": "when he breathes in. But you can see that veins claps are filling with hyperechoic"
+    },
+    {
+      "start": 836.44,
+      "end": 839.51,
+      "text": "bubbles from just general saline."
+    },
+    {
+      "start": 840.99,
+      "end": 847.62,
+      "text": "This is a long access at the same thing so we can just see right here at the very tip of it"
+    },
+    {
+      "start": 847.62,
+      "end": 849.92,
+      "text": "Just those little bubbles that come in and we"
+    },
+    {
+      "start": 850.0,
+      "end": 855.47,
+      "text": "verify we're in the vessel. Now, if you remember back, when we saw the subclavian,"
+    },
+    {
+      "start": 855.47,
+      "end": 859.97,
+      "text": "that was a proximal vessel in this same patient, and we were able to see the bubbles in"
+    },
+    {
+      "start": 860.0,
+      "end": 863.76,
+      "text": "clear up at the subclavian vein so you don't have to be right at the tip of your"
+    },
+    {
+      "start": 863.76,
+      "end": 868.54,
+      "text": "catheter like I'm showing here but you can be there or you can just be more"
+    },
+    {
+      "start": 868.54,
+      "end": 869.92,
+      "text": "proximal on that same vein."
+    },
+    {
+      "start": 871.79,
+      "end": 874.03,
+      "text": "Okay, so if we get a central line,"
+    },
+    {
+      "start": 874.53,
+      "end": 877.85,
+      "text": "then we can also verify this by doing either a sub-difoid"
+    },
+    {
+      "start": 878.49,
+      "end": 879.97,
+      "text": "or a peristerin along in."
+    },
+    {
+      "start": 880.0,
+      "end": 886.81,
+      "text": "axis of the heart. And we can see bubbles actually entering the heart. In this particular case,"
+    },
+    {
+      "start": 886.89,
+      "end": 889.87,
+      "text": "it's a little dark because we didn't overgain the image which you could."
+    },
+    {
+      "start": 890.0,
+      "end": 894.1,
+      "text": "superficially but you can look right here at the right ventricular outflow track"
+    },
+    {
+      "start": 894.1,
+      "end": 899.98,
+      "text": "and we'll see some bubbles come in here that show that we are that we have"
+    },
+    {
+      "start": 900.16,
+      "end": 904.3,
+      "text": "access here. So let's go ahead and watch this. You see them just there briefly and"
+    },
+    {
+      "start": 904.84,
+      "end": 906.78,
+      "text": "then they're going to go away and this is going to loop and you'll see them"
+    },
+    {
+      "start": 906.78,
+      "end": 909.66,
+      "text": "again. But those bubbles up there, those little hypercoextructures."
+    },
+    {
+      "start": 910.51,
+      "end": 915.13,
+      "text": "Circulating in your right ventricular outflow track are evidence that you hit the right vessel."
+    },
+    {
+      "start": 915.93,
+      "end": 919.97,
+      "text": "Here's another evidence of this. This one's a little over-gain, so you're going to be able to appreciate it a little bit."
+    },
+    {
+      "start": 920.06,
+      "end": 925.7,
+      "text": "you can see right up here is right ventricular outflow track fills with those"
+    },
+    {
+      "start": 925.7,
+      "end": 929.89,
+      "text": "hypercoic, those hypercoic things from the north."
+    },
+    {
+      "start": 930.0,
+      "end": 936.44,
+      "text": "saline is all you need to use. So I hope that you found this helpful in obtaining access"
+    },
+    {
+      "start": 936.44,
+      "end": 939.86,
+      "text": "in your patients. This is a skill that we all need."
+    },
+    {
+      "start": 940.32,
+      "end": 944.96,
+      "text": "in emergency medicine, and a lot of other specialties are also gaining access."
+    },
+    {
+      "start": 945.24,
+      "end": 949.28,
+      "text": "Whether it be peripheral or central, just remember, you don't always have to obtain"
+    },
+    {
+      "start": 950.1,
+      "end": 954.42,
+      "text": "access it can also be peripheral access. It does take more skill I think for"
+    },
+    {
+      "start": 954.42,
+      "end": 958.1,
+      "text": "peripheral access because they're smaller vessels but if you're using the"
+    },
+    {
+      "start": 958.1,
+      "end": 959.92,
+      "text": "correct technique you'll easily be able to"
+    },
+    {
+      "start": 960.38,
+      "end": 968.66,
+      "text": "place of catheter and these. Now, I mostly focused on veins here. The same techniques of long and short access can be used to identify"
+    },
+    {
+      "start": 970.13,
+      "end": 975.53,
+      "text": "in place of catheter within them, but currently in this one we're just talking about veins."
+    },
+    {
+      "start": 978.27,
+      "end": 979.77,
+      "text": "I hope that you found that topic useful."
+    },
+    {
+      "start": 980.83,
+      "end": 984.49,
+      "text": "If you have questions about it or other related point-of-care ultrasound questions, feel"
+    },
+    {
+      "start": 984.49,
+      "end": 988.48,
+      "text": "free to email me at poucusgeekatgmail.com or comment below."
+    },
+    {
+      "start": 989.44,
+      "end": 989.92,
+      "text": "Also, subscribe!"
+    }
+  ]
+}

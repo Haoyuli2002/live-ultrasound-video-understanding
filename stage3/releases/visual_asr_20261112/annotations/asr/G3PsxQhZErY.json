@@ -1,0 +1,398 @@
+{
+  "video_id": "G3PsxQhZErY",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/G3PsxQhZErY/asr.txt",
+  "segments": [
+    {
+      "start": 0.32,
+      "end": 4.2,
+      "text": "Hello, my name is Jalen Avila, and in this five-minute son of video, I'm going to walk"
+    },
+    {
+      "start": 4.2,
+      "end": 8.38,
+      "text": "you through how to do an ultrasound guided paracardiocentesis."
+    },
+    {
+      "start": 8.84,
+      "end": 9.98,
+      "text": "Now for this, you..."
+    },
+    {
+      "start": 10.0,
+      "end": 15.24,
+      "text": "definitely want to use your standard cardiac transducer over there on the left for the identification"
+    },
+    {
+      "start": 15.64,
+      "end": 19.98,
+      "text": "of paracardial tamponod, but when you're doing your procedure of the parac..."
+    },
+    {
+      "start": 20.03,
+      "end": 26.11,
+      "text": "Cardiocentesis using a curvilinear here or a linear transducer is better for the actual"
+    },
+    {
+      "start": 26.11,
+      "end": 29.97,
+      "text": "procedure because you'll be able to see a lot better that needle and"
+    },
+    {
+      "start": 30.0,
+      "end": 34.08,
+      "text": "that sack. Now with regards to the equipment to use you can definitely use a"
+    },
+    {
+      "start": 34.08,
+      "end": 38.94,
+      "text": "standard paracardiocentesis kit but if you don't have access to that you can use"
+    },
+    {
+      "start": 38.94,
+      "end": 39.7,
+      "text": "a central"
+    },
+    {
+      "start": 40.0,
+      "end": 45.72,
+      "text": "this is a triple lumen or just an angiocath or a spinal needle to just get in"
+    },
+    {
+      "start": 45.72,
+      "end": 49.76,
+      "text": "there and drain some of that fluid. Now you can go anywhere"
+    },
+    {
+      "start": 50.0,
+      "end": 53.09,
+      "text": "that there is a big pocket, the biggest pocket,"
+    },
+    {
+      "start": 53.35,
+      "end": 56.93,
+      "text": "and I typically prefer to go apical or peristurnal."
+    },
+    {
+      "start": 57.230000000000004,
+      "end": 59.87,
+      "text": "Now, I like that because typically there are less structure"
+    },
+    {
+      "start": 60.0,
+      "end": 65.36,
+      "text": "and less distance to go through, and if you can see the paracardinal effusion causing"
+    },
+    {
+      "start": 65.36,
+      "end": 69.98,
+      "text": "tamponaut with the ultrasound machine, there is no lung in between that..."
+    },
+    {
+      "start": 70.29,
+      "end": 76.39,
+      "text": "probe and the pericardial fluid because if there was lung, lung has air, air,"
+    },
+    {
+      "start": 76.57,
+      "end": 79.97,
+      "text": "blocks, sound waves and you wouldn't be able to see it. So this helps."
+    },
+    {
+      "start": 80.0,
+      "end": 88.43,
+      "text": "you safely go in non-traditional windows. Here's an example of a periscernal long-axis view"
+    },
+    {
+      "start": 89.19,
+      "end": 89.55,
+      "text": "paracardiocentesis."
+    },
+    {
+      "start": 89.85,
+      "end": 89.97,
+      "text": "This is..."
+    },
+    {
+      "start": 90.0,
+      "end": 96.4,
+      "text": "needle here, the secrecy of Arun Nagdev. Now this definitely works and this was a successful"
+    },
+    {
+      "start": 96.4,
+      "end": 99.98,
+      "text": "paracardial synthesis, but what might be better is using that..."
+    },
+    {
+      "start": 100.03,
+      "end": 106.07,
+      "text": "linear transducer. Here you can see the needle with the guide wire actually already in that fluid."
+    },
+    {
+      "start": 106.33,
+      "end": 109.97,
+      "text": "Here is the heart. You really only need to see just a centimeter or"
+    },
+    {
+      "start": 110.0,
+      "end": 117.02,
+      "text": "two of that cardio border because you don't need the whole thing. You just need to be"
+    },
+    {
+      "start": 117.02,
+      "end": 119.76,
+      "text": "able to see the needle go into that fluid and this is likely"
+    },
+    {
+      "start": 120.0,
+      "end": 124.66,
+      "text": "The most accurate you can be especially when the effusion itself is not that large."
+    },
+    {
+      "start": 125.06,
+      "end": 129.92,
+      "text": "I'm gonna take a brief pause here just to let you know that all of our content is on the"
+    },
+    {
+      "start": 130.1,
+      "end": 131.76,
+      "text": "for ultrasound.com website."
+    },
+    {
+      "start": 132.12,
+      "end": 135.1,
+      "text": "That is ultrasound podcast, five minutes sono,"
+    },
+    {
+      "start": 135.14,
+      "end": 136.82,
+      "text": "ultrasound of the week, clip bank,"
+    },
+    {
+      "start": 137.06,
+      "end": 139.5,
+      "text": "and we also have our courses page."
+    },
+    {
+      "start": 140.1,
+      "end": 142.14,
+      "text": "where we have the core ultrasound fundamentals"
+    },
+    {
+      "start": 142.14,
+      "end": 143.98,
+      "text": "and core ultrasound question bank,"
+    },
+    {
+      "start": 144.1,
+      "end": 147.28,
+      "text": "where you have 3,200 questions with feedback,"
+    },
+    {
+      "start": 147.58,
+      "end": 149.74,
+      "text": "including narrated videos explaining."
+    },
+    {
+      "start": 150.0,
+      "end": 152.66,
+      "text": "the question, check it out and back to your video."
+    },
+    {
+      "start": 153.26,
+      "end": 156.54,
+      "text": "When you go Parastron or April, just be careful with blood vessels."
+    },
+    {
+      "start": 156.92,
+      "end": 159.98,
+      "text": "There is an internal thoracic, also known as the intramural"
+    },
+    {
+      "start": 160.0,
+      "end": 164.24,
+      "text": "memory artery that is in the parastronal location that you should be careful of."
+    },
+    {
+      "start": 164.66,
+      "end": 169.78,
+      "text": "And then of course you have your intercostal arteries that usually sit below the ribs themselves."
+    },
+    {
+      "start": 170.0,
+      "end": 177.64,
+      "text": "If you want help, making sure that you miss them, put color flow Doppler in the region in which you are going to do the procedure"
+    },
+    {
+      "start": 177.64,
+      "end": 179.98,
+      "text": "Before you do it, to make sure that you don't"
+    },
+    {
+      "start": 180.0,
+      "end": 185.22,
+      "text": "have any big blood vessels there. This is an apical four chamber view. This is the hard"
+    },
+    {
+      "start": 185.22,
+      "end": 189.9,
+      "text": "a little bit of the liver that left low by the liver and we actually were seeing"
+    },
+    {
+      "start": 190.0,
+      "end": 196.58,
+      "text": "a bit of the aorta right there and we're seeing that needle go into that"
+    },
+    {
+      "start": 196.58,
+      "end": 199.96,
+      "text": "pericardium right there. Now this I could have decreased and"
+    },
+    {
+      "start": 200.0,
+      "end": 205.24,
+      "text": "should have decreased the depth to about here, but this was a successful barocardio,"
+    },
+    {
+      "start": 205.24,
+      "end": 209.96,
+      "text": "synthesis without any harm done to the heart. Here we see a subcop-"
+    },
+    {
+      "start": 210.0,
+      "end": 215.44,
+      "text": "window with in a heart here and this is just the identification of that"
+    },
+    {
+      "start": 215.44,
+      "end": 219.88,
+      "text": "effusion causing tamponod. Now this practitioner and this is courtesy of"
+    },
+    {
+      "start": 220.0,
+      "end": 222.36,
+      "text": "on Eclipse Share did decrease the depth"
+    },
+    {
+      "start": 222.36,
+      "end": 224.68,
+      "text": "and change to a curvilinear transducer,"
+    },
+    {
+      "start": 224.98,
+      "end": 226.34,
+      "text": "so they could see a little bit better."
+    },
+    {
+      "start": 226.44,
+      "end": 229.76,
+      "text": "You can see right here the needle coming into the right area."
+    },
+    {
+      "start": 230.16,
+      "end": 232.72,
+      "text": "and then here we're seeing that needle pop right into"
+    },
+    {
+      "start": 233.19,
+      "end": 236.48,
+      "text": "that paracardial sac to drain this effusion."
+    },
+    {
+      "start": 237.38,
+      "end": 238.74,
+      "text": "Now with the sub-costal window,"
+    },
+    {
+      "start": 238.86,
+      "end": 239.98,
+      "text": "this is one that I might use..."
+    },
+    {
+      "start": 240.0,
+      "end": 246.34,
+      "text": "the way out of plain technique or the woop technique here I have the transducer in a transverse"
+    },
+    {
+      "start": 246.34,
+      "end": 249.8,
+      "text": "orientation and my needle is right above it going straight in."
+    },
+    {
+      "start": 250.32,
+      "end": 252.42,
+      "text": "I'm not going to get great needle visualization,"
+    },
+    {
+      "start": 252.62,
+      "end": 256.1,
+      "text": "but I'm using the trajectory of that ultrasound as a guide"
+    },
+    {
+      "start": 256.1,
+      "end": 259.9,
+      "text": "and observing just a section of that needle tip."
+    },
+    {
+      "start": 260.0,
+      "end": 267.88,
+      "text": "in that pericardial sack here. I don't love the sub-Zyphoid view because if you are too low,"
+    },
+    {
+      "start": 268.12,
+      "end": 269.88,
+      "text": "you might accidentally pierce the diaphragm."
+    },
+    {
+      "start": 270.0,
+      "end": 275.82,
+      "text": "or the liver, but if this is the only window, this would be the preferred way to do it in the way"
+    },
+    {
+      "start": 275.82,
+      "end": 279.86,
+      "text": "out of plane approach rather than the in plane approach that would"
+    },
+    {
+      "start": 280.0,
+      "end": 285.4,
+      "text": "recommended for the apical and peristerinal windows. Now, after you're pretty sure that you're"
+    },
+    {
+      "start": 285.4,
+      "end": 289.98,
+      "text": "in the right location, you want to confirm placement. You aspirate a bit of that blue"
+    },
+    {
+      "start": 290.0,
+      "end": 295.88,
+      "text": "blood and then push it back in and if you see agitated fluid within that"
+    },
+    {
+      "start": 295.88,
+      "end": 299.6,
+      "text": "paracardial sac and not inside the heart itself, you are in"
+    },
+    {
+      "start": 300.13,
+      "end": 303.15,
+      "text": "the paracardium and not in the heart itself."
+    },
+    {
+      "start": 303.69,
+      "end": 305.49,
+      "text": "So you can go ahead and continue on"
+    },
+    {
+      "start": 305.49,
+      "end": 308.87,
+      "text": "with the procedure of that paracardia synthesis."
+    },
+    {
+      "start": 309.41,
+      "end": 309.97,
+      "text": "That's it."
+    }
+  ]
+}

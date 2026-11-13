@@ -1,0 +1,473 @@
+{
+  "video_id": "iXEQcbgHybA",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/iXEQcbgHybA/asr.txt",
+  "segments": [
+    {
+      "start": 0.16,
+      "end": 3.66,
+      "text": "Bionium, a consultant in pain medicine and anesthesia at University Hospital"
+    },
+    {
+      "start": 3.66,
+      "end": 8.06,
+      "text": "Leicester, Energy Strust. Today we're going to talk about the genital nerve"
+    },
+    {
+      "start": 8.06,
+      "end": 9.88,
+      "text": "radio frequency treatment and genital nerve."
+    },
+    {
+      "start": 10.0,
+      "end": 14.98,
+      "text": "diagnostic block. I usually perform this block using the ultrasound. First we will focus"
+    },
+    {
+      "start": 14.98,
+      "end": 19.98,
+      "text": "on the anatomy of the genicular nerves with regards to the knee. So the total 6 groups"
+    },
+    {
+      "start": 20.0,
+      "end": 24.48,
+      "text": "group of genicula nerves, these nerves are actually the articular branches from the big"
+    },
+    {
+      "start": 24.48,
+      "end": 27.78,
+      "text": "nerves like femoral nerve, obturator nerve and the sciatic nerve."
+    },
+    {
+      "start": 27.78,
+      "end": 29.84,
+      "text": "In terms of the Jennic Landervs major"
+    },
+    {
+      "start": 30.03,
+      "end": 35.69,
+      "text": "of these nerves they become sort of the supply to the knee capsule and the"
+    },
+    {
+      "start": 35.69,
+      "end": 39.97,
+      "text": "other structures in and the groups are superior media group of"
+    },
+    {
+      "start": 40.03,
+      "end": 45.11,
+      "text": "general nerve, middle group of general nerve, a superior lateral group of general nerve,"
+    },
+    {
+      "start": 45.74,
+      "end": 49.980000000000004,
+      "text": "inferior group of general nerves, inferior lateral group of general nerve, and then"
+    },
+    {
+      "start": 50.0,
+      "end": 55.4,
+      "text": "we have a recurrent genicular nerve which also comes off as a branch of common perennial"
+    },
+    {
+      "start": 55.4,
+      "end": 57.06,
+      "text": "and possibly from sciatic."
+    },
+    {
+      "start": 57.06,
+      "end": 59.16,
+      "text": "in terms of blocking the nerves."
+    },
+    {
+      "start": 60.32,
+      "end": 65.66,
+      "text": "The majority of the papers they recommend blocking the three groups which are super"
+    },
+    {
+      "start": 65.66,
+      "end": 69.77,
+      "text": "ferromedial, in ferromedial and superolateral and there are some"
+    },
+    {
+      "start": 70.0,
+      "end": 79.97,
+      "text": "of our blocking the middle genital nerve, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the, the,"
+    },
+    {
+      "start": 80.0,
+      "end": 83.76,
+      "text": "also supplying to the muscles like perines long as perines brubus and getting a common"
+    },
+    {
+      "start": 83.76,
+      "end": 87.92,
+      "text": "perine nerve damage is much more higher and the patient could get the food drop."
+    },
+    {
+      "start": 88.36,
+      "end": 89.98,
+      "text": "So the recommendations are doing"
+    },
+    {
+      "start": 90.0,
+      "end": 93.41,
+      "text": "supero-medial in ferro-medial and supero-laptop."
+    },
+    {
+      "start": 94.84,
+      "end": 99.48,
+      "text": "In regards to performing this procedure, I do the diagnostic block using the ultrasound."
+    },
+    {
+      "start": 100.0,
+      "end": 102.06,
+      "text": "And when I'm performing the radio frequency treatment,"
+    },
+    {
+      "start": 102.06,
+      "end": 105.22,
+      "text": "I use the X-rays in order to save the images."
+    },
+    {
+      "start": 105.8,
+      "end": 108.5,
+      "text": "And also, it tells me whether I'm actually"
+    },
+    {
+      "start": 108.5,
+      "end": 109.76,
+      "text": "at the right target."
+    },
+    {
+      "start": 110.26,
+      "end": 112.96,
+      "text": "Majority of these nerves are coming at the junction"
+    },
+    {
+      "start": 113.32,
+      "end": 115.16,
+      "text": "of the shaft and the gondyle,"
+    },
+    {
+      "start": 115.56,
+      "end": 118.72,
+      "text": "both at the sort of femoral shaft and the gondyle"
+    },
+    {
+      "start": 118.72,
+      "end": 119.78,
+      "text": "and debil shaft."
+    },
+    {
+      "start": 120.44,
+      "end": 124.92,
+      "text": "You know to perform the procedure I usually ask the patient to sort of you know turn the leg"
+    },
+    {
+      "start": 124.92,
+      "end": 129.24,
+      "text": "outwards I put a pillow underneath after prepping and dripping"
+    },
+    {
+      "start": 130.0,
+      "end": 137.37,
+      "text": "usually using fire frequency linear ultrasound probe and the structures I'm"
+    },
+    {
+      "start": 137.37,
+      "end": 139.88,
+      "text": "interested in is the vastness"
+    },
+    {
+      "start": 140.0,
+      "end": 144.88,
+      "text": "idealist for the super-humidial group of Jennic Lunar and the femoral shaft where it becomes"
+    },
+    {
+      "start": 144.88,
+      "end": 149.98,
+      "text": "a femoral condol and I'll show that to you so here"
+    },
+    {
+      "start": 150.0,
+      "end": 155.78,
+      "text": "Here we are actually using the hard frequency linear probe where the left side of the screen"
+    },
+    {
+      "start": 155.78,
+      "end": 158.9,
+      "text": "is superior, the right side of the screen is inferior."
+    },
+    {
+      "start": 160.1,
+      "end": 163.72,
+      "text": "And as you could see on this image, you have the vastus medialis muscle."
+    },
+    {
+      "start": 164.12,
+      "end": 168.96,
+      "text": "You see the arterial pulsations in the vastus medialis muscle, that's the artery."
+    },
+    {
+      "start": 170.0,
+      "end": 176.04,
+      "text": "that subline feeding to Vasis Media and you could see another small vessel there that's"
+    },
+    {
+      "start": 176.04,
+      "end": 179.98,
+      "text": "your genicular artery and a majority of times the gen..."
+    },
+    {
+      "start": 180.0,
+      "end": 182.18,
+      "text": "a company, the genicular artery."
+    },
+    {
+      "start": 182.3,
+      "end": 183.94,
+      "text": "As you could see, this is a femoral shaft,"
+    },
+    {
+      "start": 184.5,
+      "end": 187.54,
+      "text": "as a femoral shaft, then becomes a fable condyle."
+    },
+    {
+      "start": 188.08,
+      "end": 189.88,
+      "text": "So to perform the diagnostic block."
+    },
+    {
+      "start": 190.35,
+      "end": 193.73,
+      "text": "I usually perform it with the outer plane technique"
+    },
+    {
+      "start": 193.73,
+      "end": 197.01,
+      "text": "and as this depth is only two centimeters"
+    },
+    {
+      "start": 197.01,
+      "end": 199.97,
+      "text": "you could perform this block using a 25 gauge."
+    },
+    {
+      "start": 200.29,
+      "end": 205.93,
+      "text": "hypodermic needle, doing an autoplaying technique and raising the, putting the local"
+    },
+    {
+      "start": 205.93,
+      "end": 208.39,
+      "text": "anaesthetic about two amounts to two and a half"
+    },
+    {
+      "start": 208.39,
+      "end": 209.47,
+      "text": "of animals in the area."
+    },
+    {
+      "start": 209.85,
+      "end": 209.91,
+      "text": "So."
+    },
+    {
+      "start": 210.0,
+      "end": 212.06,
+      "text": "That's your super-medial genital nerve block."
+    },
+    {
+      "start": 212.74,
+      "end": 216.22,
+      "text": "Similar fashion will perform the inferior genital nerve block"
+    },
+    {
+      "start": 216.22,
+      "end": 219.92,
+      "text": "and the pro position is, we're using the hapary."
+    },
+    {
+      "start": 220.0,
+      "end": 226.37,
+      "text": "salinear probe again the probe position is at the on the tibia and the structures"
+    },
+    {
+      "start": 226.37,
+      "end": 229.97,
+      "text": "I'm looking for is a tibial shaft where it becomes tibia"
+    },
+    {
+      "start": 230.62,
+      "end": 239.84,
+      "text": "the junction of T-bill, shaft and T-bill condel, and as you could see in that image, that there is an artery, which is pulsating, which is your..."
+    },
+    {
+      "start": 240.03,
+      "end": 245.01,
+      "text": "Aerometrial geniculate artery and the genicular nerves usually accompany this artery and the"
+    },
+    {
+      "start": 245.01,
+      "end": 248.93,
+      "text": "block will be performed using an autoplayn technique with 25 gauge needle."
+    },
+    {
+      "start": 250.0,
+      "end": 251.7,
+      "text": "about two evils of local anaesthetic."
+    },
+    {
+      "start": 252.14,
+      "end": 255.76,
+      "text": "Then we will move on to superolateral genoclinus."
+    },
+    {
+      "start": 256.02,
+      "end": 258.44,
+      "text": "For this, ask the patient to turn the leg inside if they can."
+    },
+    {
+      "start": 259.06,
+      "end": 259.98,
+      "text": "And then..."
+    },
+    {
+      "start": 260.32,
+      "end": 265.8,
+      "text": "We will use the same technique as we did for the supero-medial genical nerves using the"
+    },
+    {
+      "start": 266.82,
+      "end": 269.9,
+      "text": "ultrasound hybrid miscellaneous probe and here we are looking."
+    },
+    {
+      "start": 270.0,
+      "end": 276.48,
+      "text": "for the femoral shaft where it becomes a femoral rondile so as you could see this"
+    },
+    {
+      "start": 276.48,
+      "end": 279.36,
+      "text": "up slow and you could see the arterial pulsation."
+    },
+    {
+      "start": 280.06,
+      "end": 282.61,
+      "text": "here in the area that's your Super O lateral"
+    },
+    {
+      "start": 283.17,
+      "end": 286.28,
+      "text": "genicular artery and you will perform this block"
+    },
+    {
+      "start": 286.28,
+      "end": 289.32,
+      "text": "using outer plane technique with the 25 gauge needle"
+    },
+    {
+      "start": 289.32,
+      "end": 289.92,
+      "text": "as a step."
+    },
+    {
+      "start": 290.0,
+      "end": 296.13,
+      "text": "is very shallow. 25 years needle will land at the junction of the shaft and the condel and"
+    },
+    {
+      "start": 296.13,
+      "end": 299.17,
+      "text": "use about two to two and a half handles of local anaesthetic."
+    },
+    {
+      "start": 300.03,
+      "end": 302.15,
+      "text": "And then I give the patient a pain diary to keep"
+    },
+    {
+      "start": 303.01,
+      "end": 306.05,
+      "text": "and also ask them how much percentage of pain relief"
+    },
+    {
+      "start": 306.05,
+      "end": 306.53,
+      "text": "they've had."
+    },
+    {
+      "start": 306.97,
+      "end": 308.51,
+      "text": "So these are the three group of genicular nerves"
+    },
+    {
+      "start": 308.51,
+      "end": 309.23,
+      "text": "that we will."
+    },
+    {
+      "start": 310.0,
+      "end": 315.17,
+      "text": "of you know a block for the diagnostic purpose, followed by that we put from the radio frequency"
+    },
+    {
+      "start": 315.17,
+      "end": 318.23,
+      "text": "using the same technique and I use the X-rays."
+    },
+    {
+      "start": 318.23,
+      "end": 319.98,
+      "text": "with regards to..."
+    },
+    {
+      "start": 320.35,
+      "end": 326.2,
+      "text": "forming the intermediate or middle group of genicular nerves as you could see on"
+    },
+    {
+      "start": 326.2,
+      "end": 329.85,
+      "text": "there I'm gonna increase the rightness and"
+    },
+    {
+      "start": 330.0,
+      "end": 337.43,
+      "text": "reduced in depth. We perform the intermediate group of genocular nerves. This is your femoral"
+    },
+    {
+      "start": 337.43,
+      "end": 339.97,
+      "text": "Femma, the femoral."
+    },
+    {
+      "start": 340.0,
+      "end": 345.78,
+      "text": "shaft and what we're looking for is basically the quadricep tendon which you"
+    },
+    {
+      "start": 345.78,
+      "end": 349.08,
+      "text": "could see here and these group of genocular nerves are usually coming"
+    },
+    {
+      "start": 349.36,
+      "end": 349.9,
+      "text": "on the knee."
+    },
+    {
+      "start": 350.51,
+      "end": 356.93,
+      "text": "the quadricep tendon so the needle is usually inserted with an in-plane technique and putting"
+    },
+    {
+      "start": 356.93,
+      "end": 359.83,
+      "text": "about two and a half miles to two and a half miles to two and a half miles to two and a half miles of local"
+    }
+  ]
+}

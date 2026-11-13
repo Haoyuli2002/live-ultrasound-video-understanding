@@ -1,0 +1,290 @@
+{
+  "understanding": "Peripheral vascular access tutorial: probe setup, grayscale and color vessel localization, course tracking, and paired short- and long-axis phantom demonstrations.",
+  "native_opened": [
+    120,
+    206,
+    228,
+    234,
+    250,
+    261,
+    262,
+    410,
+    420,
+    425,
+    428,
+    429,
+    430,
+    431,
+    432,
+    433,
+    434,
+    435
+  ],
+  "tasks": [
+    {
+      "qa_type": "current_observation",
+      "query_time": 234,
+      "answer_time": 234,
+      "checkpoints": [
+        234
+      ],
+      "question": "In this annotated scan, where are the artery and nerve relative to the vessel marked V?",
+      "reference_answer": "The artery is to its left, and the nerve lies below and slightly left of it.",
+      "visual_support": "The labels point to separate visible structures; V identifies the intended vein.",
+      "query_prefix_check": "The labeled scan is already visible.",
+      "answer_prefix_check": "The positions are readable on the same frame.",
+      "shortcut_risk": "The labels give identities but the spatial relation comes from the scan.",
+      "task_id": "s3_remaining79_4s0V-NMaUdg_01",
+      "video_id": "4s0V-NMaUdg",
+      "split": "train",
+      "language": "en",
+      "source_video": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/4s0V-NMaUdg.mp4",
+      "stage3_value": "high",
+      "visual_evidence": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/4s0V-NMaUdg/234.jpg",
+          "checkpoint": 234.0,
+          "source_pts_seconds": 233.9337,
+          "resolution": [
+            854,
+            480
+          ]
+        }
+      ],
+      "asr_support_segments": [
+        {
+          "start": 226.48,
+          "end": 229.98,
+          "text": "of your target vein in relation to nearby structures such as"
+        }
+      ],
+      "query_decision": "ANSWER",
+      "answer_decision": "ANSWER",
+      "review_status": "accepted_targeted_native_frame_self_review",
+      "student_input_visibility": "not_checked"
+    },
+    {
+      "qa_type": "history_recall",
+      "query_time": 410,
+      "answer_time": 410,
+      "checkpoints": [
+        250,
+        261,
+        410
+      ],
+      "question": "In the earlier vessel-course demonstration, what happened to the target's position in the sonogram as the operator moved the probe along the arm?",
+      "reference_answer": "The dark lumen stayed near the center of the image as the probe moved along the arm.",
+      "visual_support": "The paired external and sonographic views show probe translation with the lumen near the same horizontal position.",
+      "query_prefix_check": "The course demonstration and narration are complete.",
+      "answer_prefix_check": "250 and 261 show different probe positions and similar image placement of the lumen.",
+      "shortcut_risk": "The speaker also describes keeping the lumen centered.",
+      "task_id": "s3_remaining79_4s0V-NMaUdg_02",
+      "video_id": "4s0V-NMaUdg",
+      "split": "train",
+      "language": "en",
+      "source_video": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/4s0V-NMaUdg.mp4",
+      "stage3_value": "high",
+      "visual_evidence": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/4s0V-NMaUdg/250.jpg",
+          "checkpoint": 250.0,
+          "source_pts_seconds": 249.9497,
+          "resolution": [
+            854,
+            480
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/4s0V-NMaUdg/261.jpg",
+          "checkpoint": 261.0,
+          "source_pts_seconds": 260.927333,
+          "resolution": [
+            854,
+            480
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/4s0V-NMaUdg/410.jpg",
+          "checkpoint": 410.0,
+          "source_pts_seconds": 409.942867,
+          "resolution": [
+            854,
+            480
+          ]
+        }
+      ],
+      "asr_support_segments": [
+        {
+          "start": 250.0,
+          "end": 256.66,
+          "text": "To avoid this, once you find the vessel of interest, scan up or approximately along the limb"
+        },
+        {
+          "start": 256.66,
+          "end": 259.5,
+          "text": "to ensure that the vein stays in the center of the screen."
+        },
+        {
+          "start": 260.1,
+          "end": 262.64,
+          "text": "and thus has a straight course for a few centimeters."
+        }
+      ],
+      "query_decision": "ANSWER",
+      "answer_decision": "ANSWER",
+      "review_status": "accepted_targeted_native_frame_self_review",
+      "student_input_visibility": "not_checked"
+    },
+    {
+      "qa_type": "temporal_comparison",
+      "query_time": 410,
+      "answer_time": 429,
+      "checkpoints": [
+        410,
+        428,
+        429
+      ],
+      "question": "How does the phantom vessel profile change when the tutorial switches from the short-axis sonogram to the long-axis sonogram?",
+      "reference_answer": "The dark circular cross-section becomes a long dark channel with roughly parallel walls.",
+      "visual_support": "410 shows the circular short-axis profile; 429 shows the first long-axis phantom sonogram after the external setup.",
+      "query_prefix_check": "Only the short-axis phantom sonogram has appeared; the next phantom profile is missing.",
+      "answer_prefix_check": "428 is external footage; at 429 the long-axis channel is clear.",
+      "shortcut_risk": "The section title and general geometry suggest the profile but the actual next sonogram is required.",
+      "task_id": "s3_remaining79_4s0V-NMaUdg_03",
+      "video_id": "4s0V-NMaUdg",
+      "split": "train",
+      "language": "en",
+      "source_video": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/4s0V-NMaUdg.mp4",
+      "stage3_value": "high",
+      "visual_evidence": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/4s0V-NMaUdg/410.jpg",
+          "checkpoint": 410.0,
+          "source_pts_seconds": 409.942867,
+          "resolution": [
+            854,
+            480
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/4s0V-NMaUdg/428.jpg",
+          "checkpoint": 428.0,
+          "source_pts_seconds": 427.9275,
+          "resolution": [
+            854,
+            480
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/4s0V-NMaUdg/429.jpg",
+          "checkpoint": 429.0,
+          "source_pts_seconds": 428.9285,
+          "resolution": [
+            854,
+            480
+          ]
+        }
+      ],
+      "asr_support_segments": [
+        {
+          "start": 413.38,
+          "end": 418.74,
+          "text": "To use the long axis approach, find the vessel in short axis and twist the probe 90 degrees."
+        },
+        {
+          "start": 419.4,
+          "end": 419.96,
+          "text": "Once your..."
+        },
+        {
+          "start": 420.0,
+          "end": 424.46,
+          "text": "able to see the vessel in a long axis view, approach the center of the probe surface with"
+        },
+        {
+          "start": 424.46,
+          "end": 425.98,
+          "text": "the needle at 45 degrees."
+        }
+      ],
+      "query_decision": "WAIT",
+      "answer_decision": "ANSWER",
+      "review_status": "accepted_targeted_native_frame_self_review",
+      "student_input_visibility": "not_checked"
+    },
+    {
+      "qa_type": "event_notification",
+      "query_time": 429,
+      "answer_time": 431,
+      "checkpoints": [
+        429,
+        430,
+        431
+      ],
+      "question": "In this long-axis phantom scan, tell me when a bright oblique needle echo becomes visible above the dark channel.",
+      "reference_answer": "A short bright oblique echo is now visible on the left, above the dark channel.",
+      "visual_support": "430 shows the open channel without a distinct oblique needle echo; 431 adds the diagonal trace in near-field tissue.",
+      "query_prefix_check": "No distinct diagonal echo is visible in the initial phantom image.",
+      "answer_prefix_check": "At 431 an oblique line is visible above the channel; this does not imply lumen entry.",
+      "shortcut_risk": "The narration previews the approach but cannot specify the visible onset.",
+      "task_id": "s3_remaining79_4s0V-NMaUdg_04",
+      "video_id": "4s0V-NMaUdg",
+      "split": "train",
+      "language": "en",
+      "source_video": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/4s0V-NMaUdg.mp4",
+      "stage3_value": "high",
+      "visual_evidence": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/4s0V-NMaUdg/429.jpg",
+          "checkpoint": 429.0,
+          "source_pts_seconds": 428.9285,
+          "resolution": [
+            854,
+            480
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/4s0V-NMaUdg/430.jpg",
+          "checkpoint": 430.0,
+          "source_pts_seconds": 429.9295,
+          "resolution": [
+            854,
+            480
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/4s0V-NMaUdg/431.jpg",
+          "checkpoint": 431.0,
+          "source_pts_seconds": 430.9305,
+          "resolution": [
+            854,
+            480
+          ]
+        }
+      ],
+      "asr_support_segments": [
+        {
+          "start": 420.0,
+          "end": 424.46,
+          "text": "able to see the vessel in a long axis view, approach the center of the probe surface with"
+        },
+        {
+          "start": 424.46,
+          "end": 425.98,
+          "text": "the needle at 45 degrees."
+        },
+        {
+          "start": 425.98,
+          "end": 429.84,
+          "text": "when using the long axis approach."
+        }
+      ],
+      "query_decision": "WAIT",
+      "answer_decision": "ANSWER",
+      "review_status": "accepted_targeted_native_frame_self_review",
+      "student_input_visibility": "not_checked"
+    }
+  ],
+  "video_id": "4s0V-NMaUdg",
+  "review_scope": "Same-assistant review; sampled timeline, original-size key frames, and existing time-indexed ASR when available. No continuous replay or direct audio claim."
+}

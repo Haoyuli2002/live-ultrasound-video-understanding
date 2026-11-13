@@ -1,0 +1,3738 @@
+{
+  "video_id": "GoPxLxhoufE",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/GoPxLxhoufE/asr.txt",
+  "segments": [
+    {
+      "start": 1.82,
+      "end": 3.12,
+      "text": "Hello, my name is Stuart Fightinger."
+    },
+    {
+      "start": 3.2,
+      "end": 4.54,
+      "text": "I'm one of the dual critical care"
+    },
+    {
+      "start": 4.54,
+      "end": 6.12,
+      "text": "of cardiothoracic anesthesiology fellows"
+    },
+    {
+      "start": 6.12,
+      "end": 7.68,
+      "text": "and I'll be talking about ultrasound guided"
+    },
+    {
+      "start": 7.68,
+      "end": 8.46,
+      "text": "central line placement."
+    },
+    {
+      "start": 11.47,
+      "end": 14.85,
+      "text": "So this is a quote I really like from one of my attendees in residency Dr. Cummings"
+    },
+    {
+      "start": 14.85,
+      "end": 18.6,
+      "text": "and you would always say, just because there's an ultrasound in the room doesn't mean it was ultrasound guided."
+    },
+    {
+      "start": 19.57,
+      "end": 19.97,
+      "text": "So this..."
+    },
+    {
+      "start": 20.0,
+      "end": 23.9,
+      "text": "This station is targeted at folks who know the steps of an out-of-plane ultrasound guided"
+    },
+    {
+      "start": 23.9,
+      "end": 24.62,
+      "text": "central ion placement."
+    },
+    {
+      "start": 25.12,
+      "end": 26.06,
+      "text": "If you don't know the steps, that's okay."
+    },
+    {
+      "start": 26.46,
+      "end": 28.66,
+      "text": "I'm checking out the new industrial meson videos or something similar."
+    },
+    {
+      "start": 28.8,
+      "end": 29.78,
+      "text": "Just can't just see the general steps."
+    },
+    {
+      "start": 30.48,
+      "end": 33.66,
+      "text": "but really, turning the folks to skills of plateau, and you're really not sure why."
+    },
+    {
+      "start": 34.04,
+      "end": 37.6,
+      "text": "The easy lines are easy, pretty quick at those, but the hard lines are always hard, and"
+    },
+    {
+      "start": 37.6,
+      "end": 38.5,
+      "text": "sometimes you find you can struggle."
+    },
+    {
+      "start": 38.72,
+      "end": 39.82,
+      "text": "And sometimes that can be frustrating."
+    },
+    {
+      "start": 40.0,
+      "end": 42.88,
+      "text": "because you watch these videos where it seems really easy to see if the needle is just"
+    },
+    {
+      "start": 42.88,
+      "end": 46.22,
+      "text": "directly in the vessel, but when you try, it doesn't seem to go quite as smooth as that."
+    },
+    {
+      "start": 46.32,
+      "end": 49.08,
+      "text": "Or maybe you do get in the vessel, maybe you do get some flesh, a blood, but then you"
+    },
+    {
+      "start": 49.08,
+      "end": 49.8,
+      "text": "just can't thread your wires."
+    },
+    {
+      "start": 50.0,
+      "end": 53.06,
+      "text": "So we'll talk about kind of optimizing your central line approach today,"
+    },
+    {
+      "start": 53.14,
+      "end": 55.38,
+      "text": "and specifically, really nailing down the ultrasound guided."
+    },
+    {
+      "start": 56.55,
+      "end": 58.95,
+      "text": "Imjectives today are going to be international target vessel selection."
+    },
+    {
+      "start": 59.56,
+      "end": 59.88,
+      "text": "I had a pick."
+    },
+    {
+      "start": 60.0,
+      "end": 64.28,
+      "text": "the jugular femoral subclavian. Improving probe control, which is really going to be the most"
+    },
+    {
+      "start": 64.28,
+      "end": 67.88,
+      "text": "important thing I bet will really bring most of your gay or central line game to the next level."
+    },
+    {
+      "start": 68.76,
+      "end": 69.84,
+      "text": "And then improving needle tip."
+    },
+    {
+      "start": 70.16,
+      "end": 73.02,
+      "text": "visualization, emphasis on tip, and specifically"
+    },
+    {
+      "start": 73.02,
+      "end": 74.1,
+      "text": "in the out-of-plane approach."
+    },
+    {
+      "start": 74.38,
+      "end": 76.02,
+      "text": "In-plane or long-accesses are totally valid"
+    },
+    {
+      "start": 76.02,
+      "end": 77.78,
+      "text": "and great technique, we just really won't be touching"
+    },
+    {
+      "start": 77.78,
+      "end": 78.46,
+      "text": "on that much today."
+    },
+    {
+      "start": 80.0,
+      "end": 82.52,
+      "text": "but also we'll be talking about confidently accessing your target vessel."
+    },
+    {
+      "start": 82.7,
+      "end": 84.72,
+      "text": "Once you have flash, how do you bring it home and getting the wire in?"
+    },
+    {
+      "start": 87.46,
+      "end": 88.86,
+      "text": "I'd like to break it up and do assisted and guided."
+    },
+    {
+      "start": 89.32,
+      "end": 89.78,
+      "text": "I think assisted."
+    },
+    {
+      "start": 90.38,
+      "end": 93.72,
+      "text": "is an extension of the landmark technique, pretty much find a large vessel and stab underneath"
+    },
+    {
+      "start": 93.72,
+      "end": 94.08,
+      "text": "the probe."
+    },
+    {
+      "start": 94.38,
+      "end": 97.1,
+      "text": "I think it is characterized by poor probe control and big and fast movements."
+    },
+    {
+      "start": 97.46,
+      "end": 99.88,
+      "text": "The vessel always seems to be moving across the screen, you're constantly chasing"
+    },
+    {
+      "start": 100.06,
+      "end": 103.02,
+      "text": "effort with your needle. You never really see your needle well, and again easy vessels are"
+    },
+    {
+      "start": 103.02,
+      "end": 106.18,
+      "text": "easy and hard vessels are always hard. So hopefully, and we can get to more of a guided"
+    },
+    {
+      "start": 106.18,
+      "end": 109.42,
+      "text": "approach, a truly guided approach, where we're going to systematically evaluate our vessel"
+    },
+    {
+      "start": 109.42,
+      "end": 109.96,
+      "text": "and shoot"
+    },
+    {
+      "start": 110.0,
+      "end": 110.94,
+      "text": "that specific entry site."
+    },
+    {
+      "start": 111.39,
+      "end": 114.45,
+      "text": "We're going to have precise probe control, slow control movements, and our vessel is going"
+    },
+    {
+      "start": 114.45,
+      "end": 115.37,
+      "text": "to stay fixed on the screen."
+    },
+    {
+      "start": 115.86,
+      "end": 119.07,
+      "text": "But precise tracking and placement of our needle tip, and if you can really master this,"
+    },
+    {
+      "start": 119.17,
+      "end": 119.87,
+      "text": "you'll find that there's a lot."
+    },
+    {
+      "start": 120.1,
+      "end": 121.2,
+      "text": "If you were hard vessels out there."
+    },
+    {
+      "start": 121.6,
+      "end": 124.44,
+      "text": "So for example, on the left here, this is what I would say would be something like an"
+    },
+    {
+      "start": 124.44,
+      "end": 125.04,
+      "text": "assisted approach."
+    },
+    {
+      "start": 125.47,
+      "end": 128.17,
+      "text": "For the vessels moving all over the screen, you don't really see your needle, maybe you"
+    },
+    {
+      "start": 128.17,
+      "end": 129.97,
+      "text": "see some tissue indentation."
+    },
+    {
+      "start": 130.0,
+      "end": 131.74,
+      "text": "but really don't really have good tracking your needle tip."
+    },
+    {
+      "start": 131.94,
+      "end": 133.02,
+      "text": "Really get guided here on the right."
+    },
+    {
+      "start": 133.12,
+      "end": 134.6,
+      "text": "This is more the approach that I think"
+    },
+    {
+      "start": 134.6,
+      "end": 135.82,
+      "text": "really try to aim for."
+    },
+    {
+      "start": 136.24,
+      "end": 137.32,
+      "text": "Where you have slow precise movements,"
+    },
+    {
+      "start": 137.52,
+      "end": 139.3,
+      "text": "the vessel stays still, you find a needle tip."
+    },
+    {
+      "start": 140.49,
+      "end": 142.54,
+      "text": "and you enter exactly where you want it to be."
+    },
+    {
+      "start": 142.64,
+      "end": 144.5,
+      "text": "You know exactly where you are, you know exactly where your needle tip isn't."
+    },
+    {
+      "start": 144.93,
+      "end": 145.91,
+      "text": "You really have this precise control."
+    },
+    {
+      "start": 146.38,
+      "end": 147.9,
+      "text": "If you can place your needle tip anywhere you want it to,"
+    },
+    {
+      "start": 148.31,
+      "end": 149.75,
+      "text": "then again, it doesn't matter if the vessel is big."
+    },
+    {
+      "start": 150.0,
+      "end": 152.78,
+      "text": "whatever if you can put your deals up where you want it, then you can get where you need"
+    },
+    {
+      "start": 152.78,
+      "end": 157.44,
+      "text": "to be. So if that's a selection. In general, most women would be talking about"
+    },
+    {
+      "start": 157.44,
+      "end": 159.87,
+      "text": "applies in terms of technique applies to any"
+    },
+    {
+      "start": 160.0,
+      "end": 163.18,
+      "text": "major vessel sites, femoral, jugular, secladin, but to either weigh any of those, you're"
+    },
+    {
+      "start": 163.18,
+      "end": 166.02,
+      "text": "going to see a paired artery with a large vein and the vein is going to be collapsed."
+    },
+    {
+      "start": 170.0,
+      "end": 172.88,
+      "text": "classic central line placement options are going to be jugular so play be in in"
+    },
+    {
+      "start": 172.88,
+      "end": 175.28,
+      "text": "femoral we'll talk a little bit about the pros and cons of each one of these spots"
+    },
+    {
+      "start": 175.28,
+      "end": 178.74,
+      "text": "so this is kind of one of the big landmark trials it's called three sites which"
+    },
+    {
+      "start": 178.74,
+      "end": 179.98,
+      "text": "compared to that. So I ran..."
+    },
+    {
+      "start": 180.0,
+      "end": 182.68,
+      "text": "minimized way complications among the different major sites."
+    },
+    {
+      "start": 183.91,
+      "end": 187.03,
+      "text": "So they looked at subclavian risk-gegular risk-temoral locations."
+    },
+    {
+      "start": 187.15,
+      "end": 188.61,
+      "text": "So they started off looking at bloodstream infections,"
+    },
+    {
+      "start": 188.61,
+      "end": 189.97,
+      "text": "kind of the clav CVL."
+    },
+    {
+      "start": 190.0,
+      "end": 193.62,
+      "text": "Well, no one fear. I'm in touch with they found Soclavian and this study had the lowest"
+    },
+    {
+      "start": 193.62,
+      "end": 197.48,
+      "text": "rates of central and associated bloodstream infections. Interestingly, despite kind of"
+    },
+    {
+      "start": 197.48,
+      "end": 199.98,
+      "text": "the common thought process of the femoral being a higher risk of infection than jagu-"
+    },
+    {
+      "start": 200.0,
+      "end": 203.62,
+      "text": "In this studies, they didn't really find that, but the similar rates are maybe a little"
+    },
+    {
+      "start": 203.62,
+      "end": 204.16,
+      "text": "higher with regular."
+    },
+    {
+      "start": 204.48,
+      "end": 209.97,
+      "text": "Either way, the Eclavian was the lowest, and then for DDT, I'm a similar pattern with"
+    },
+    {
+      "start": 210.0,
+      "end": 212.72,
+      "text": "the claving mean low stress of DBT, femoral having the highest risk here."
+    },
+    {
+      "start": 213.33,
+      "end": 215.61,
+      "text": "And the final category was mechanical complications, really where the"
+    },
+    {
+      "start": 215.61,
+      "end": 216.55,
+      "text": "subclaving had the highest risk."
+    },
+    {
+      "start": 217.32,
+      "end": 219.96,
+      "text": "So this study, mechanical complications were defined as a compound."
+    },
+    {
+      "start": 220.0,
+      "end": 225.13,
+      "text": "of the pneumothoraxi metoma or arterial injury, notably though, and while in this study"
+    },
+    {
+      "start": 225.13,
+      "end": 227.25,
+      "text": "of jugular and femoral, we're largely ultrasound guided."
+    },
+    {
+      "start": 227.79,
+      "end": 229.71,
+      "text": "The subplating group here still was mostly landmark."
+    },
+    {
+      "start": 230.58,
+      "end": 234.05,
+      "text": "So another study came out showing, kind of comparing the real-time ultrasound guy to"
+    },
+    {
+      "start": 234.05,
+      "end": 237.63,
+      "text": "subclave inverses, landmark approach and kind of the complication rates of that."
+    },
+    {
+      "start": 238.84,
+      "end": 239.88,
+      "text": "We could never turn outcome measure."
+    },
+    {
+      "start": 240.0,
+      "end": 244.54,
+      "text": "But the so new few notable ones were the success rate was much higher with the evolved sound"
+    },
+    {
+      "start": 244.54,
+      "end": 245.28,
+      "text": "group in this study."
+    },
+    {
+      "start": 246.56,
+      "end": 249.44,
+      "text": "Arturial puncture was fairly low or was lower than the ultrasound group than Lamar."
+    },
+    {
+      "start": 250.38,
+      "end": 254.57,
+      "text": "as was hematoma and pneumothorexanis study they didn't have any pneumothoresis in the"
+    },
+    {
+      "start": 254.57,
+      "end": 255.17,
+      "text": "ultrasound group."
+    },
+    {
+      "start": 256.19,
+      "end": 259.53,
+      "text": "And these three together again remember coming back to the composite mechanical application."
+    },
+    {
+      "start": 260.0,
+      "end": 263.85,
+      "text": "not come in three sites. We kind of frank in stiny's two studies a little bit and put them together."
+    },
+    {
+      "start": 264.24,
+      "end": 268.62,
+      "text": "If we look at the propagation rates among the subclavian group in three sites and"
+    },
+    {
+      "start": 268.62,
+      "end": 269.86,
+      "text": "and then extrapolate already."
+    },
+    {
+      "start": 270.0,
+      "end": 272.0,
+      "text": "information from the other study with ultrasound guided."
+    },
+    {
+      "start": 272.57,
+      "end": 274.89,
+      "text": "We've actually found a similar mechanical complication rate"
+    },
+    {
+      "start": 274.89,
+      "end": 277.12,
+      "text": "for in terms of a composite outcome, but more so"
+    },
+    {
+      "start": 277.12,
+      "end": 279.98,
+      "text": "that with hematoma and arterial stick, and there was a-"
+    },
+    {
+      "start": 280.03,
+      "end": 283.54,
+      "text": "there was no new authorities in this group. Yes, this isn't terribly surprising about the"
+    },
+    {
+      "start": 283.54,
+      "end": 286.44,
+      "text": "increased risk of hematoma compared to the other two sites. Given the difficulty or"
+    },
+    {
+      "start": 286.44,
+      "end": 289.95,
+      "text": "impossibility of compressing subcladin vein, given this proximity to the clav-"
+    },
+    {
+      "start": 290.0,
+      "end": 295.3,
+      "text": "So, kind of in summary here, our best options we have are subplatin, which has seen to"
+    },
+    {
+      "start": 295.3,
+      "end": 296.4,
+      "text": "have the lowest capacity rate."
+    },
+    {
+      "start": 296.92,
+      "end": 299.98,
+      "text": "This is actually UW's preferred CVL site if you look in the..."
+    },
+    {
+      "start": 300.22,
+      "end": 303.92,
+      "text": "policy. I think it's mostly just because they track Ceznail, track new authorities. But"
+    },
+    {
+      "start": 303.92,
+      "end": 308.04,
+      "text": "other way it is a good option. However, we'd be careful in somebody with a bleeding"
+    },
+    {
+      "start": 308.04,
+      "end": 309.98,
+      "text": "quite a lot with the edges, the head does have the high..."
+    },
+    {
+      "start": 310.36,
+      "end": 314.43,
+      "text": "you can get into trouble because you're not able to compress it, and lower risk of pneumothorex with ultrasound."
+    },
+    {
+      "start": 314.83,
+      "end": 319.91,
+      "text": "This interestingly is actually lower rate of pneumothorex than even those associated with the blind end."
+    },
+    {
+      "start": 320.0,
+      "end": 321.54,
+      "text": "your OG placement base patient."
+    },
+    {
+      "start": 322.7,
+      "end": 327.79,
+      "text": "Federal is a good option and it does have the highest received DVT, though the risk of"
+    },
+    {
+      "start": 327.79,
+      "end": 329.97,
+      "text": "lowest rates of cancer complications and the risk..."
+    },
+    {
+      "start": 330.03,
+      "end": 332.55,
+      "text": "of infection, maybe I just attach overblown compared to that of the jugular."
+    },
+    {
+      "start": 332.96,
+      "end": 336.92,
+      "text": "I will say from an ICU standpoint, in a perfect world, I prefer not having a femoral"
+    },
+    {
+      "start": 336.92,
+      "end": 339.54,
+      "text": "line just because it can impair the mobility of the patient."
+    },
+    {
+      "start": 340.03,
+      "end": 343.5,
+      "text": "it down the road, but in the moment you need to access it so it's a, and that's what you can get"
+    },
+    {
+      "start": 343.5,
+      "end": 346.49,
+      "text": "that's what you can get and it's a lot better than nothing so, but still my preference if I,"
+    },
+    {
+      "start": 346.63,
+      "end": 349.97,
+      "text": "I can get something else I usually will try that for that, but again if that's all you can get that's all"
+    },
+    {
+      "start": 350.0,
+      "end": 353.6,
+      "text": "you can get a regular kind of the risk somewhere in between actually similar rates of central"
+    },
+    {
+      "start": 353.6,
+      "end": 357.09,
+      "text": "line associated infections of femoral, lower risk of pneumothorax, especially if you don't"
+    },
+    {
+      "start": 357.09,
+      "end": 358.57,
+      "text": "do ultrasound guided than the subplavium."
+    },
+    {
+      "start": 360.0,
+      "end": 364.56,
+      "text": "that kind of get to the pros and cons of the various sites for access, and I wouldn't"
+    },
+    {
+      "start": 364.56,
+      "end": 367.46,
+      "text": "say that one is better than the other, they each have pros and cons, and they all have"
+    },
+    {
+      "start": 367.46,
+      "end": 369.56,
+      "text": "a valid role, I think, in central lane placement."
+    },
+    {
+      "start": 370.0,
+      "end": 373.12,
+      "text": "Moving on to probe control, this is kind of one of our critical areas, I think it's"
+    },
+    {
+      "start": 373.12,
+      "end": 375.48,
+      "text": "really one of those things that can make or break your old or your central line game."
+    },
+    {
+      "start": 375.78,
+      "end": 376.72,
+      "text": "I think we're a lot of people struggle."
+    },
+    {
+      "start": 377.08,
+      "end": 379.98,
+      "text": "This is something I see commonly, I call it Joystickin, where you're holding the"
+    },
+    {
+      "start": 380.0,
+      "end": 383.3,
+      "text": "pro out of the patients don't do that. So there's no way you're going to get"
+    },
+    {
+      "start": 383.3,
+      "end": 387.06,
+      "text": "precise pro control holding a pro like this. You can see that the hand is my hand"
+    },
+    {
+      "start": 387.06,
+      "end": 389.9,
+      "text": "is far off the patient and I'm just kind of hovering in midair. You really"
+    },
+    {
+      "start": 390.0,
+      "end": 392.54,
+      "text": "You're not going to be able to move precisely and you're going to be putting way more pressure"
+    },
+    {
+      "start": 392.54,
+      "end": 393.48,
+      "text": "on the patient than you should be."
+    },
+    {
+      "start": 393.82,
+      "end": 394.42,
+      "text": "And if scaring your view."
+    },
+    {
+      "start": 395.24,
+      "end": 398.88,
+      "text": "Proper probe, control or probe position is holding the probe with your hand firmly anchored"
+    },
+    {
+      "start": 398.88,
+      "end": 399.3,
+      "text": "on the patient."
+    },
+    {
+      "start": 399.5,
+      "end": 399.98,
+      "text": "Your hand firmly anchored on the patient."
+    },
+    {
+      "start": 400.1,
+      "end": 403.04,
+      "text": "anchor to the probe and the probe kind of lightly on the patient. I tell my residents"
+    },
+    {
+      "start": 403.04,
+      "end": 405.56,
+      "text": "on the anesthesia side, you know, if they're up overnight and don't have anything going"
+    },
+    {
+      "start": 405.56,
+      "end": 408.3,
+      "text": "on, I'm kind of bored. They have an ultrasound. One good way to know that you have adequate"
+    },
+    {
+      "start": 408.3,
+      "end": 409.98,
+      "text": "probe control is if you can have a..."
+    },
+    {
+      "start": 410.06,
+      "end": 413.94,
+      "text": "And you can put that probe on there and put a vein or an artery or something random on the middle of the screen."
+    },
+    {
+      "start": 414.14,
+      "end": 417.98,
+      "text": "If you can pull your cell phone out of your pocket, look down at it, send a text and put it back in your pocket."
+    },
+    {
+      "start": 418.12,
+      "end": 419.96,
+      "text": "And if you look back on the screen and the probe hasn't moved or the..."
+    },
+    {
+      "start": 420.0,
+      "end": 421.38,
+      "text": "the vessel hasn't moved, you're doing a good job."
+    },
+    {
+      "start": 421.6,
+      "end": 422.78,
+      "text": "And that really, it sounds kind of silly,"
+    },
+    {
+      "start": 422.84,
+      "end": 423.4,
+      "text": "but that's really critical."
+    },
+    {
+      "start": 423.4,
+      "end": 424.8,
+      "text": "I don't know how many times I've seen people"
+    },
+    {
+      "start": 424.8,
+      "end": 426.7,
+      "text": "when they get the vessel on the middle of the screen"
+    },
+    {
+      "start": 426.7,
+      "end": 428.56,
+      "text": "and they're about to numb the patient before they do a stick."
+    },
+    {
+      "start": 428.56,
+      "end": 429.98,
+      "text": "They grab their lidocaine, and they look at it out of the..."
+    },
+    {
+      "start": 430.0,
+      "end": 432.76,
+      "text": "hands they inject the skin and look back up up the screen and all of a sudden the vessels"
+    },
+    {
+      "start": 432.76,
+      "end": 434.68,
+      "text": "all the way off the side and they numb the wrong area."
+    },
+    {
+      "start": 434.88,
+      "end": 437.42,
+      "text": "So really being able to have this probe control where the vessel doesn't move unless you"
+    },
+    {
+      "start": 437.42,
+      "end": 438.66,
+      "text": "want it to is absolutely critical."
+    },
+    {
+      "start": 438.94,
+      "end": 439.98,
+      "text": "So again, hand firmly..."
+    },
+    {
+      "start": 440.0,
+      "end": 442.9,
+      "text": "have to the probe, hand resting on the patient's probe, lightly resting on the"
+    },
+    {
+      "start": 442.9,
+      "end": 447.0,
+      "text": "patient. In an idealized world, you would have the probe kind of hovering or off"
+    },
+    {
+      "start": 447.0,
+      "end": 449.98,
+      "text": "the patient with a layer of gel in between the patient and their skin. This is not"
+    },
+    {
+      "start": 450.03,
+      "end": 452.97,
+      "text": "Not exactly realistic, you are going to have the probe on the patient a little bit, but"
+    },
+    {
+      "start": 452.97,
+      "end": 455.81,
+      "text": "it's definitely going to be, it should be a lot more similar to what's on the left"
+    },
+    {
+      "start": 455.81,
+      "end": 456.65,
+      "text": "than what's on the right here."
+    },
+    {
+      "start": 456.71,
+      "end": 459.29,
+      "text": "You really don't want to be pushing down terribly hard, especially when you're trying"
+    },
+    {
+      "start": 459.29,
+      "end": 459.97,
+      "text": "to do venous..."
+    },
+    {
+      "start": 460.0,
+      "end": 463.14,
+      "text": "access and especially if they're hypervolumic because you're quickly going to find that your"
+    },
+    {
+      "start": 463.14,
+      "end": 465.9,
+      "text": "target vessel is going to be a lot harder to stick and it may just disappear completely."
+    },
+    {
+      "start": 466.45,
+      "end": 469.65,
+      "text": "You can see here in this video, previously large vessel is now very very collapsed."
+    },
+    {
+      "start": 470.03,
+      "end": 471.05,
+      "text": "they're pushing down with the probe."
+    },
+    {
+      "start": 471.92,
+      "end": 472.74,
+      "text": "And it's not uncommon at all."
+    },
+    {
+      "start": 472.88,
+      "end": 473.76,
+      "text": "This, again, this is critical"
+    },
+    {
+      "start": 473.76,
+      "end": 475.3,
+      "text": "and hyperlineocations."
+    },
+    {
+      "start": 475.54,
+      "end": 477.72,
+      "text": "Not uncommonly, I will do a line in a patient"
+    },
+    {
+      "start": 477.72,
+      "end": 479.82,
+      "text": "or either peripheral area or central line."
+    },
+    {
+      "start": 480.13,
+      "end": 483.51,
+      "text": "other people have struggled, and the patient's very hypervolumic, and it's usually they have"
+    },
+    {
+      "start": 483.51,
+      "end": 486.11,
+      "text": "really small target vessels where they aren't finding anything for like a peripheral IV,"
+    },
+    {
+      "start": 486.39,
+      "end": 489.21,
+      "text": "and then when I try, I just get a little less rest of the probe on the patient, and I have"
+    },
+    {
+      "start": 489.21,
+      "end": 489.97,
+      "text": "all of a sudden these big targets."
+    },
+    {
+      "start": 490.0,
+      "end": 494.42,
+      "text": "that other people could hit is just they never saw them or made the targets a lot harder to hit because they're pushing too hard"
+    },
+    {
+      "start": 494.42,
+      "end": 499.58,
+      "text": "It's a really low hanging fruit in terms of making things easier for yourself, especially in the hypothermic or hypotensipation"
+    },
+    {
+      "start": 500.67,
+      "end": 504.03,
+      "text": "So now talking about needle tip visualization. So this is absolutely critical in the short"
+    },
+    {
+      "start": 504.03,
+      "end": 509.1,
+      "text": "axis out of plane approach. The out of plane approach, you're really going to get a cross"
+    },
+    {
+      "start": 509.1,
+      "end": 509.96,
+      "text": "section of..."
+    },
+    {
+      "start": 510.0,
+      "end": 514.1,
+      "text": "your needle tip or your needle I should say. So if you have the beam over the needle tip you're"
+    },
+    {
+      "start": 514.1,
+      "end": 518.37,
+      "text": "going to see a dot. If you have the beam over the middle of the needle you're going to see a dot."
+    },
+    {
+      "start": 518.65,
+      "end": 519.97,
+      "text": "So the absolute only way you know"
+    },
+    {
+      "start": 520.0,
+      "end": 526.15,
+      "text": "that you are at your needle tip is if you move the beam past the needle and the tip disappears or the dot disappears"
+    },
+    {
+      "start": 526.15,
+      "end": 529.97,
+      "text": "that means you're now past the needle and then you come back so as soon as you hit where you're"
+    },
+    {
+      "start": 530.03,
+      "end": 533.12,
+      "text": "the dot back on the screen that means you're at your needle tip. So this is"
+    },
+    {
+      "start": 533.12,
+      "end": 535.64,
+      "text": "absolutely critical when you're doing it out of play and approach is you're"
+    },
+    {
+      "start": 535.64,
+      "end": 537.9,
+      "text": "constantly going to be playing kind of a hide and seek game with a needle tip."
+    },
+    {
+      "start": 538.04,
+      "end": 539.92,
+      "text": "You're going to be going just pass it with your probe until it just"
+    },
+    {
+      "start": 540.0,
+      "end": 542.22,
+      "text": "disappears and then advancing your needle so it comes back on the screen."
+    },
+    {
+      "start": 542.5,
+      "end": 544.06,
+      "text": "Again, absolutely, absolutely critical."
+    },
+    {
+      "start": 544.2,
+      "end": 546.92,
+      "text": "In the in-plane approach where you have your needle visualized the whole time, you don't"
+    },
+    {
+      "start": 546.92,
+      "end": 549.94,
+      "text": "move your needle unless you can see it in the outer plane approach, you don't move"
+    },
+    {
+      "start": 550.0,
+      "end": 552.6,
+      "text": "needle tip, you don't move your needle unless you can't see it, but you should be"
+    },
+    {
+      "start": 552.6,
+      "end": 555.02,
+      "text": "managing just into that beam so you know always know where the needle tip is."
+    },
+    {
+      "start": 556.19,
+      "end": 558.85,
+      "text": "And everyone see my needle tip here, here I'll jiggle it, you can see it nice bright"
+    },
+    {
+      "start": 558.85,
+      "end": 559.91,
+      "text": "dot right in the middle of the vessel, looks"
+    },
+    {
+      "start": 560.06,
+      "end": 563.57,
+      "text": "Great, right? Well, we never actually saw this appear. So let me go into long axis here."
+    },
+    {
+      "start": 564.42,
+      "end": 569.96,
+      "text": "Take a look. That was not my needle tip. That was the middle of the needle. So you can see the needle tip has is"
+    },
+    {
+      "start": 570.42,
+      "end": 572.6,
+      "text": "through and through the vessel and this is actually how you can stick a"
+    },
+    {
+      "start": 572.6,
+      "end": 576.55,
+      "text": "carotid or dilator carotid on an ultrasound dieted approach as if you never"
+    },
+    {
+      "start": 576.55,
+      "end": 579.34,
+      "text": "actually know where your needle tip is and you just jiggle the needle and you"
+    },
+    {
+      "start": 579.34,
+      "end": 579.9,
+      "text": "see something moving"
+    },
+    {
+      "start": 580.03,
+      "end": 585.04,
+      "text": "and assume that's a needle tip that can get you in trouble really fast, especially in small vessels with a close proximity by the structures."
+    },
+    {
+      "start": 585.62,
+      "end": 589.96,
+      "text": "So, if we actually go back to the short axis here, now I'm going to follow the..."
+    },
+    {
+      "start": 590.0,
+      "end": 593.9,
+      "text": "the needle tip down, or follow the needle down, and move the probe forward and forward and forward"
+    },
+    {
+      "start": 593.9,
+      "end": 597.74,
+      "text": "until just until that bright dot disappears. So that was my needle tip. That's how I would know"
+    },
+    {
+      "start": 597.74,
+      "end": 599.96,
+      "text": "that was my needle tip in the short x's view. By going..."
+    },
+    {
+      "start": 600.06,
+      "end": 602.06,
+      "text": "has to tell this appears, then I bring the probe back,"
+    },
+    {
+      "start": 603.38,
+      "end": 604.2,
+      "text": "reappears, and it's right there."
+    },
+    {
+      "start": 604.32,
+      "end": 605.64,
+      "text": "So that's how I would have known that was a needle."
+    },
+    {
+      "start": 607.54,
+      "end": 609.22,
+      "text": "Another really critical point I have to do"
+    },
+    {
+      "start": 609.22,
+      "end": 609.88,
+      "text": "is call the angle."
+    },
+    {
+      "start": 610.0,
+      "end": 614.24,
+      "text": "incidence or angle of incination. And this has to do with the angle of the needle compared"
+    },
+    {
+      "start": 614.24,
+      "end": 619.97,
+      "text": "to the angle of the beam coming from the ultrasound. So if the needle is perpendicular to the"
+    },
+    {
+      "start": 620.0,
+      "end": 623.62,
+      "text": "also sound beam, your sound is going to go down, get the needle and come right back up"
+    },
+    {
+      "start": 623.62,
+      "end": 626.64,
+      "text": "and you're going to have a very bright white needle tip as the vast majority of that sound"
+    },
+    {
+      "start": 626.64,
+      "end": 629.36,
+      "text": "energy is going to return to the ultrasound probe, however."
+    },
+    {
+      "start": 630.26,
+      "end": 631.76,
+      "text": "as a needle increases in steepness,"
+    },
+    {
+      "start": 632.28,
+      "end": 635.03,
+      "text": "and the angle of incination decreases,"
+    },
+    {
+      "start": 635.71,
+      "end": 636.75,
+      "text": "then more of that sound energy"
+    },
+    {
+      "start": 636.75,
+      "end": 638.69,
+      "text": "is actually going to be reflected away from the probe,"
+    },
+    {
+      "start": 639.25,
+      "end": 639.97,
+      "text": "and your needle tip is going to be..."
+    },
+    {
+      "start": 640.06,
+      "end": 645.08,
+      "text": "less visible. As you get to an extremely steep angle, then you may have the vast majority"
+    },
+    {
+      "start": 645.08,
+      "end": 649.98,
+      "text": "of that sound energy being reflected away. And so this might encounter this..."
+    },
+    {
+      "start": 650.0,
+      "end": 653.42,
+      "text": "This is if you have your needle entry point, like, say, right next to the probe is to make"
+    },
+    {
+      "start": 653.42,
+      "end": 654.36,
+      "text": "you a very steep angle."
+    },
+    {
+      "start": 654.77,
+      "end": 658.92,
+      "text": "This is, I think, a really critical thing to know, as I guess in a perfect world you would"
+    },
+    {
+      "start": 658.92,
+      "end": 659.98,
+      "text": "trying to stay with a very sh-"
+    },
+    {
+      "start": 660.0,
+      "end": 664.75,
+      "text": "shallow angle, and being perpendicular to that beam of sound. However, if you have a deep"
+    },
+    {
+      "start": 665.14,
+      "end": 667.32,
+      "text": "vessel that you're trying to access, you're never going to be able to reach it if you're"
+    },
+    {
+      "start": 667.32,
+      "end": 669.55,
+      "text": "always staying at a very shallow angle."
+    },
+    {
+      "start": 670.0,
+      "end": 675.62,
+      "text": "And so by knowing your relative angle compared to the ultrasound beam, you can kind of calibrate"
+    },
+    {
+      "start": 675.62,
+      "end": 678.8,
+      "text": "what you're looking for on the screen in terms of are you expecting a bright white needle"
+    },
+    {
+      "start": 678.8,
+      "end": 679.98,
+      "text": "tip because you're..."
+    },
+    {
+      "start": 680.03,
+      "end": 684.53,
+      "text": "you've got a pretty close to 90 degree angle or are you very very steep and then now you're"
+    },
+    {
+      "start": 684.53,
+      "end": 687.43,
+      "text": "not expecting to see a bright white needle tip what you're looking for is just a shadow"
+    },
+    {
+      "start": 687.43,
+      "end": 688.61,
+      "text": "or maybe some subtle tissue displacement."
+    },
+    {
+      "start": 690.9,
+      "end": 692.14,
+      "text": "So again, kind of read to reiterate that."
+    },
+    {
+      "start": 692.28,
+      "end": 694.43,
+      "text": "We have our 90-degree angle, where we have a bright white tip"
+    },
+    {
+      "start": 694.43,
+      "end": 696.19,
+      "text": "as we increase in steepness, we're gonna get"
+    },
+    {
+      "start": 696.54,
+      "end": 698.18,
+      "text": "progressively and progressively harder to see."
+    },
+    {
+      "start": 698.65,
+      "end": 699.97,
+      "text": "So here's a video clip."
+    },
+    {
+      "start": 700.35,
+      "end": 704.63,
+      "text": "showing kind of an example of this. We have the ultra sound operator at"
+    },
+    {
+      "start": 704.63,
+      "end": 707.89,
+      "text": "corner. You never really see the needle but you can see this person has gotten"
+    },
+    {
+      "start": 707.89,
+      "end": 709.97,
+      "text": "flashed and they're serving. So and you can see that they've been"
+    },
+    {
+      "start": 710.0,
+      "end": 712.88,
+      "text": "the skin right next to the probe so they're at a fairly steep angle and again"
+    },
+    {
+      "start": 712.88,
+      "end": 715.76,
+      "text": "really there's no evidence of the needle or there's minimal evidence of the needle"
+    },
+    {
+      "start": 715.76,
+      "end": 719.98,
+      "text": "here up on the ultrasound image. I have another some more to kind of bring this"
+    },
+    {
+      "start": 720.03,
+      "end": 720.77,
+      "text": "point home a little bit more."
+    },
+    {
+      "start": 721.21,
+      "end": 723.13,
+      "text": "Here's a, this is actually the long access to you,"
+    },
+    {
+      "start": 723.37,
+      "end": 725.13,
+      "text": "but you can see that this needle is somewhat hard to see."
+    },
+    {
+      "start": 725.33,
+      "end": 726.71,
+      "text": "Man, some clever people out there have tried"
+    },
+    {
+      "start": 726.71,
+      "end": 728.29,
+      "text": "to make devices and techniques"
+    },
+    {
+      "start": 728.29,
+      "end": 729.97,
+      "text": "to improve the visualization of this needle."
+    },
+    {
+      "start": 730.0,
+      "end": 733.06,
+      "text": "but it really comes down to getting the angle of intonation or angle of"
+    },
+    {
+      "start": 733.06,
+      "end": 736.1,
+      "text": "instance back to 90 degrees as best as possible. So if you've ever heard like an"
+    },
+    {
+      "start": 736.1,
+      "end": 739.0,
+      "text": "ecogenic needle or these easier to see needles on ultrasound, really all those"
+    },
+    {
+      "start": 739.0,
+      "end": 739.98,
+      "text": "do is a"
+    },
+    {
+      "start": 740.0,
+      "end": 745.27,
+      "text": "fancy notches or steps kind of built into them that try to re-approximate that 90"
+    },
+    {
+      "start": 745.27,
+      "end": 749.27,
+      "text": "degree angle as your extra as needle itself is actually more at like 45 degree also"
+    },
+    {
+      "start": 750.03,
+      "end": 753.01,
+      "text": "the fancier, you know, biopsy ultrasound or something that my IR might use."
+    },
+    {
+      "start": 753.51,
+      "end": 756.37,
+      "text": "Actually, can you something called beam steering, use the phased array, phased array."
+    },
+    {
+      "start": 756.85,
+      "end": 759.97,
+      "text": "But again, all that's doing is trying to re-approximate that 90 degrees to give you."
+    },
+    {
+      "start": 760.16,
+      "end": 765.7,
+      "text": "right weight needle and easier to see. Just a really quick tip, a quick commercial break here"
+    },
+    {
+      "start": 765.7,
+      "end": 769.96,
+      "text": "and keeping track of your bevel. So if you put the needle on a syringe with..."
+    },
+    {
+      "start": 770.03,
+      "end": 773.83,
+      "text": "the bevel facing up and the numbers of the syringe facing up, and that way even if the"
+    },
+    {
+      "start": 773.83,
+      "end": 776.83,
+      "text": "needle is in the patient, the needle is in the patient, if you can see the numbers of"
+    },
+    {
+      "start": 776.83,
+      "end": 777.97,
+      "text": "your syringe, you know the bevel is up."
+    },
+    {
+      "start": 778.23,
+      "end": 778.89,
+      "text": "Another bonus tip here."
+    },
+    {
+      "start": 780.0,
+      "end": 783.9,
+      "text": "is that you really don't want to over tighten the needle on the syringe."
+    },
+    {
+      "start": 784.32,
+      "end": 788.1,
+      "text": "So one of the little bit of foreshadowing here, but one of the common ways that people screw up a central line"
+    },
+    {
+      "start": 788.1,
+      "end": 789.92,
+      "text": "or aren't able to throw the wires as you're..."
+    },
+    {
+      "start": 790.0,
+      "end": 792.72,
+      "text": "Once you've access the vessel and have flashes as you're trying to take off that syringe,"
+    },
+    {
+      "start": 793.08,
+      "end": 795.76,
+      "text": "if it's on there really, really tight, you can get a lot of movement as you're trying"
+    },
+    {
+      "start": 795.76,
+      "end": 797.86,
+      "text": "to force that syringe off, especially if it's a small vessel."
+    },
+    {
+      "start": 798.35,
+      "end": 799.97,
+      "text": "So you really want to be very careful and just have it on..."
+    },
+    {
+      "start": 800.0,
+      "end": 802.01,
+      "text": "rarely tight when you put that needle on the syringe."
+    },
+    {
+      "start": 804.63,
+      "end": 805.55,
+      "text": "So kind of putting it all together,"
+    },
+    {
+      "start": 806.07,
+      "end": 807.19,
+      "text": "let's go through kind of the process"
+    },
+    {
+      "start": 807.19,
+      "end": 807.99,
+      "text": "of doing it centrally."
+    },
+    {
+      "start": 808.39,
+      "end": 809.53,
+      "text": "When you first pick out the probe,"
+    },
+    {
+      "start": 809.83,
+      "end": 809.97,
+      "text": "you..."
+    },
+    {
+      "start": 810.26,
+      "end": 813.32,
+      "text": "want to do a sanity check to make sure that left is left. If the room is a little dark,"
+    },
+    {
+      "start": 813.77,
+      "end": 817.49,
+      "text": "it's hard to see that dot, or especially after you put on the probe cover, it's going to be really"
+    },
+    {
+      "start": 817.49,
+      "end": 819.98,
+      "text": "hard to tell which side the dot is on the probe. And I promise you..."
+    },
+    {
+      "start": 820.0,
+      "end": 823.83,
+      "text": "you if you don't check this you will have a number of times where you'll really"
+    },
+    {
+      "start": 823.83,
+      "end": 825.99,
+      "text": "struggle and they'll take it embarrassingly long time to figure out that your"
+    },
+    {
+      "start": 825.99,
+      "end": 829.39,
+      "text": "probe is switched and that left is right and right is left so to this day I"
+    },
+    {
+      "start": 829.39,
+      "end": 829.97,
+      "text": "still whenever I"
+    },
+    {
+      "start": 830.03,
+      "end": 832.59,
+      "text": "pick up a probe, I always touch one side to make sure that it left is left."
+    },
+    {
+      "start": 833.64,
+      "end": 836.94,
+      "text": "So first thing we're going to do is coming back to, we really wanted the vessel to stay"
+    },
+    {
+      "start": 836.94,
+      "end": 839.3,
+      "text": "in the middle of the screen so we're not chasing it with our needles."
+    },
+    {
+      "start": 839.3,
+      "end": 839.98,
+      "text": "We do a pre..."
+    },
+    {
+      "start": 840.54,
+      "end": 844.16,
+      "text": "scan survey. This is also going to evaluate the vessel to make sure that it's"
+    },
+    {
+      "start": 844.16,
+      "end": 846.38,
+      "text": "patent there's no clots anything like that. So what we want to do is we want to"
+    },
+    {
+      "start": 846.38,
+      "end": 849.98,
+      "text": "run our probe up and down the vessel and as we do that we really want it to stay in"
+    },
+    {
+      "start": 850.0,
+      "end": 850.66,
+      "text": "the middle of the screen."
+    },
+    {
+      "start": 851.0,
+      "end": 852.82,
+      "text": "You can see here that it's moved off to the side."
+    },
+    {
+      "start": 853.38,
+      "end": 855.46,
+      "text": "So as we go, if we're not in line with that vessel,"
+    },
+    {
+      "start": 855.8,
+      "end": 856.44,
+      "text": "it's going to move closer."
+    },
+    {
+      "start": 856.56,
+      "end": 858.0,
+      "text": "Well, the really the probe side is going to be closer"
+    },
+    {
+      "start": 858.0,
+      "end": 859.82,
+      "text": "to the vessel and it's going to appear to go from side"
+    },
+    {
+      "start": 859.82,
+      "end": 859.98,
+      "text": "to side."
+    },
+    {
+      "start": 860.0,
+      "end": 863.99,
+      "text": "So we want to be able to find an orientation of that probe that, as we move it up and down,"
+    },
+    {
+      "start": 864.58,
+      "end": 866.08,
+      "text": "that vessel is really going to stay in the middle of the screen."
+    },
+    {
+      "start": 866.3,
+      "end": 869.2,
+      "text": "You kind of think of the vessel as a railroad track and your probe as a train."
+    },
+    {
+      "start": 869.48,
+      "end": 869.98,
+      "text": "We really wanted to have..."
+    },
+    {
+      "start": 870.0,
+      "end": 872.64,
+      "text": "have it staying perfectly over that vessel so the vessel stays in the middle of the screen,"
+    },
+    {
+      "start": 872.88,
+      "end": 875.46,
+      "text": "and that way you're not chasing after it when you have a needle with your needle tip."
+    },
+    {
+      "start": 875.66,
+      "end": 878.5,
+      "text": "This can actually be a little bit frustrating at first, especially if you don't kind of"
+    },
+    {
+      "start": 878.5,
+      "end": 879.98,
+      "text": "have that muscle memory of how to automatically adjust."
+    },
+    {
+      "start": 880.0,
+      "end": 883.98,
+      "text": "But it's really something I wouldn't rush and I would really make sure that I could do this easily every time"
+    },
+    {
+      "start": 883.98,
+      "end": 888.28,
+      "text": "I do this with a patient that makes sure I can because I promise you it's not going to get easier once you have that needle in the neck"
+    },
+    {
+      "start": 888.63,
+      "end": 889.97,
+      "text": "So a little trick if you're having a"
+    },
+    {
+      "start": 890.06,
+      "end": 892.68,
+      "text": "time and things are just not clicking and no matter what you do, it seems that the"
+    },
+    {
+      "start": 893.04,
+      "end": 896.48,
+      "text": "vessels running off to the left or the right. One thing you can do is kind of in your head make"
+    },
+    {
+      "start": 896.48,
+      "end": 899.96,
+      "text": "imaginary x, you know, kind of closer to you, where the vessels in the middle of the"
+    },
+    {
+      "start": 900.42,
+      "end": 909.66,
+      "text": "and then just move the probe up, and if it moves off the side, that's okay, but just put the vessel in the middle of the screen down wherever you are, and then draw an imaginary line between the two, and that can kind of help orient you to make sure."
+    },
+    {
+      "start": 910.06,
+      "end": 911.24,
+      "text": "that you are on the right axis."
+    },
+    {
+      "start": 911.54,
+      "end": 913.2,
+      "text": "So this is a really important line here,"
+    },
+    {
+      "start": 913.34,
+      "end": 914.04,
+      "text": "the line of the vessel."
+    },
+    {
+      "start": 914.28,
+      "end": 916.44,
+      "text": "You really want to be kind of everything in line with this."
+    },
+    {
+      "start": 916.58,
+      "end": 917.4,
+      "text": "Behind the patient's head here,"
+    },
+    {
+      "start": 917.48,
+      "end": 919.96,
+      "text": "I want to be standing with my shoulders square to..."
+    },
+    {
+      "start": 920.0,
+      "end": 923.1,
+      "text": "the the probe so that I'm not off to the left or right or have I want to be really"
+    },
+    {
+      "start": 923.1,
+      "end": 926.3,
+      "text": "shoulders kind of again parallel to that probe and my needle is going to be"
+    },
+    {
+      "start": 926.3,
+      "end": 929.22,
+      "text": "entering the patient kind of directly in the middle of the probe so again I'm"
+    },
+    {
+      "start": 929.22,
+      "end": 929.92,
+      "text": "moving along this line"
+    },
+    {
+      "start": 930.0,
+      "end": 938.49,
+      "text": "And then out towards the patient's speed, I want to have, or off to the side, I want to have the ultrasound screen so that I can just look up and down and not turn my head to the left of the right, just everything along this plane here."
+    },
+    {
+      "start": 939.04,
+      "end": 939.8,
+      "text": "So here's me running."
+    },
+    {
+      "start": 941.33,
+      "end": 946.96,
+      "text": "You can see on the left that my hand is moving fairly slow, but on the screen it seems to be moving pretty quickly."
+    },
+    {
+      "start": 947.1,
+      "end": 949.89,
+      "text": "So this is about as quick as you want to move and what you actually have a needle."
+    },
+    {
+      "start": 950.0,
+      "end": 952.91,
+      "text": "in the patient you're moving even slower than this. You can also see that my hand is"
+    },
+    {
+      "start": 952.91,
+      "end": 956.72,
+      "text": "raised on the patient with my pinky finger kind of resting and I'm really moving the"
+    },
+    {
+      "start": 956.72,
+      "end": 959.84,
+      "text": "probe up and down just with my thumb, index and middle fingers there."
+    },
+    {
+      "start": 960.19,
+      "end": 961.21,
+      "text": "I'm going to be very, very well-braced."
+    },
+    {
+      "start": 961.37,
+      "end": 962.59,
+      "text": "Again, I should be able to look down,"
+    },
+    {
+      "start": 962.69,
+      "end": 963.61,
+      "text": "I should be able to pull through on my pocket,"
+    },
+    {
+      "start": 963.75,
+      "end": 965.77,
+      "text": "I should look all over, and when I look back at the screen,"
+    },
+    {
+      "start": 966.42,
+      "end": 967.8,
+      "text": "the vessel should still be in the middle of the screen."
+    },
+    {
+      "start": 970.0,
+      "end": 974.88,
+      "text": "Now we're going to put it all together, we have done our pre-vessel survey, and now we're actually going to try to access the vessel."
+    },
+    {
+      "start": 975.83,
+      "end": 979.98,
+      "text": "So our focus here is really going to be picking a needle entry site, and again..."
+    },
+    {
+      "start": 980.03,
+      "end": 981.63,
+      "text": "the ideal type visualization is absolutely critical."
+    },
+    {
+      "start": 982.19,
+      "end": 984.09,
+      "text": "So here we are, we're gonna do our pre-scan."
+    },
+    {
+      "start": 985.66,
+      "end": 986.94,
+      "text": "We can see that our vessel stays in the middle"
+    },
+    {
+      "start": 986.94,
+      "end": 987.8,
+      "text": "of the screen on our ultrasound."
+    },
+    {
+      "start": 988.53,
+      "end": 989.98,
+      "text": "And now we're going to..."
+    },
+    {
+      "start": 990.0,
+      "end": 999.85,
+      "text": "pick our entry site. So some people might try to enter the skin right next to the probe. I'd recommend not doing that routinely, especially with a vessel that's barely shallow."
+    },
+    {
+      "start": 1000.0,
+      "end": 1005.83,
+      "text": "like 2-3 centimeters or less, but really more, I like to pick an entry site that is about"
+    },
+    {
+      "start": 1006.31,
+      "end": 1009.68,
+      "text": "the same distance away from the probe as it is deep."
+    },
+    {
+      "start": 1010.0,
+      "end": 1014.08,
+      "text": "is that's going to give me a needle trajectory of about 45 degrees, which will give me reasonable"
+    },
+    {
+      "start": 1014.08,
+      "end": 1017.42,
+      "text": "visualization of the needle tip. We'll also allow me to get deep enough to access the vessel."
+    },
+    {
+      "start": 1017.42,
+      "end": 1019.98,
+      "text": "If you're going after a vessel that's very deep..."
+    },
+    {
+      "start": 1020.84,
+      "end": 1023.34,
+      "text": "Essentially, like a subclaiming or something, you may not be able to go back, you know,"
+    },
+    {
+      "start": 1023.44,
+      "end": 1027.74,
+      "text": "5 or 6 centimeters, but by staying back, at least a couple centimeters or a little bit"
+    },
+    {
+      "start": 1027.74,
+      "end": 1029.66,
+      "text": "farther if you can, it will increase the yield to visibility."
+    },
+    {
+      "start": 1030.16,
+      "end": 1033.2,
+      "text": "And if you're unable to do that, and you have to enter the skin closer to where the probe is,"
+    },
+    {
+      "start": 1033.62,
+      "end": 1038.12,
+      "text": "then just realize that your needle tip is not going nearly as easily to see."
+    },
+    {
+      "start": 1038.98,
+      "end": 1039.82,
+      "text": "In terms of..."
+    },
+    {
+      "start": 1040.0,
+      "end": 1043.82,
+      "text": "of the skin left, right, or center of that middle of the probe."
+    },
+    {
+      "start": 1044.08,
+      "end": 1046.5,
+      "text": "I would really recommend entering kind of dead center of the probe."
+    },
+    {
+      "start": 1046.58,
+      "end": 1048.76,
+      "text": "So your right, your goal is to be right over the target vessel."
+    },
+    {
+      "start": 1050.46,
+      "end": 1053.08,
+      "text": "Sometimes especially newer folks, you know, they see the artery over there on the left"
+    },
+    {
+      "start": 1053.08,
+      "end": 1057.85,
+      "text": "and they really wear that stick in that so they stick the needle in the skin on the opposite side of the artery."
+    },
+    {
+      "start": 1057.85,
+      "end": 1059.97,
+      "text": "I would really strongly recommend against doing that."
+    },
+    {
+      "start": 1060.06,
+      "end": 1063.36,
+      "text": "if you look at the trajectory you need to take to get to the vein you aim right at the artery."
+    },
+    {
+      "start": 1063.8,
+      "end": 1066.8,
+      "text": "I would highly recommend that you try to aim for the center of the vein and go straight down."
+    },
+    {
+      "start": 1066.94,
+      "end": 1069.88,
+      "text": "However, if you're going to cheat one side of the other, I would actually say"
+    },
+    {
+      "start": 1070.03,
+      "end": 1074.32,
+      "text": "artery side because that's going to give you a trajectory away from the artery. Again, I would say"
+    },
+    {
+      "start": 1074.32,
+      "end": 1078.61,
+      "text": "aim towards the middle and go straight down, whatever you do, don't cheat on the opposite side of"
+    },
+    {
+      "start": 1078.61,
+      "end": 1079.91,
+      "text": "the artery because you'll end up aim bright at it."
+    },
+    {
+      "start": 1081.76,
+      "end": 1083.26,
+      "text": "All right, so we've got our pre-bessel scan,"
+    },
+    {
+      "start": 1083.6,
+      "end": 1084.92,
+      "text": "we've got our target entry site,"
+    },
+    {
+      "start": 1085.02,
+      "end": 1086.2,
+      "text": "and now we get our needle through the skin."
+    },
+    {
+      "start": 1086.81,
+      "end": 1087.45,
+      "text": "This can be a little challenging,"
+    },
+    {
+      "start": 1087.49,
+      "end": 1088.39,
+      "text": "especially the floppy skin,"
+    },
+    {
+      "start": 1088.43,
+      "end": 1089.07,
+      "text": "and we want to hold tension,"
+    },
+    {
+      "start": 1089.23,
+      "end": 1089.97,
+      "text": "so if you have your..."
+    },
+    {
+      "start": 1090.42,
+      "end": 1094.28,
+      "text": "and resting on the patient, you can actually use like the hypethaneur eminence of your hand"
+    },
+    {
+      "start": 1094.28,
+      "end": 1098.42,
+      "text": "to pull traction on the skin while it's also holding the probe, which is another bonus of having"
+    },
+    {
+      "start": 1098.42,
+      "end": 1099.76,
+      "text": "your hand resting on the patient with the probe."
+    },
+    {
+      "start": 1100.29,
+      "end": 1102.65,
+      "text": "OK, so we've gotten through the skin to the nice 45-degree angle."
+    },
+    {
+      "start": 1103.03,
+      "end": 1105.13,
+      "text": "But again, that should give us reasonable visualization of the needle."
+    },
+    {
+      "start": 1105.47,
+      "end": 1106.81,
+      "text": "But if we wanted to see the needle set very well,"
+    },
+    {
+      "start": 1107.01,
+      "end": 1108.23,
+      "text": "we would have been more than 90-degree angle."
+    },
+    {
+      "start": 1108.29,
+      "end": 1109.89,
+      "text": "So what I usually do here is I drop."
+    },
+    {
+      "start": 1110.0,
+      "end": 1114.1,
+      "text": "angle of my needle which to make that 90 degrees are close to and then I'm going to bring my"
+    },
+    {
+      "start": 1114.1,
+      "end": 1118.6,
+      "text": "probe back to find that needle tip and I should have a fairly bright white needle tip to find here"
+    },
+    {
+      "start": 1118.6,
+      "end": 1119.98,
+      "text": "And that's when again, give me that."
+    },
+    {
+      "start": 1120.0,
+      "end": 1122.58,
+      "text": "nice angle of incidence to where I can see a good visualization."
+    },
+    {
+      "start": 1123.28,
+      "end": 1125.88,
+      "text": "So now I know where I am and I know where I'm starting."
+    },
+    {
+      "start": 1126.02,
+      "end": 1127.6,
+      "text": "So I'm going to bring my, with the needle tip in view,"
+    },
+    {
+      "start": 1127.92,
+      "end": 1129.66,
+      "text": "I'm going to bring my needle back up to the angle."
+    },
+    {
+      "start": 1130.0,
+      "end": 1133.48,
+      "text": "going to be using to access a vessel and I'll be watching that on the screen at the same"
+    },
+    {
+      "start": 1133.48,
+      "end": 1133.7,
+      "text": "time."
+    },
+    {
+      "start": 1133.86,
+      "end": 1137.14,
+      "text": "So now I know exactly what my needle tip looks like, how bright it is or how not bright"
+    },
+    {
+      "start": 1137.14,
+      "end": 1139.62,
+      "text": "it is, but at least I know the signature of what that's going to look like."
+    },
+    {
+      "start": 1140.0,
+      "end": 1143.66,
+      "text": "If you do a technique, especially on, I recommend really making sure even look down your hands"
+    },
+    {
+      "start": 1143.66,
+      "end": 1146.98,
+      "text": "after you do it, that you get the needle angle back up again."
+    },
+    {
+      "start": 1146.98,
+      "end": 1149.9,
+      "text": "So, if you start low, like I suggested here, and you're at pain."
+    },
+    {
+      "start": 1150.39,
+      "end": 1154.09,
+      "text": "Sometimes you can think that you increase the angle of the needle back up and you never"
+    },
+    {
+      "start": 1154.09,
+      "end": 1156.75,
+      "text": "really do, and then you stay a lot more shallow than you meant to and run out of needles."
+    },
+    {
+      "start": 1156.97,
+      "end": 1159.91,
+      "text": "So, the first few times if you do this technique, you get your skin dry."
+    },
+    {
+      "start": 1160.06,
+      "end": 1163.0,
+      "text": "your angle, find your needle tip, but really pay attention when you bring the angle back up,"
+    },
+    {
+      "start": 1163.08,
+      "end": 1165.64,
+      "text": "make sure that you're getting back up to like a 45, because that's one of the areas I"
+    },
+    {
+      "start": 1165.64,
+      "end": 1168.32,
+      "text": "have seen people trying this technique, and struggle a little bit."
+    },
+    {
+      "start": 1168.64,
+      "end": 1169.96,
+      "text": "But if you can, if you just pay attention to..."
+    },
+    {
+      "start": 1170.0,
+      "end": 1171.16,
+      "text": "make sure your angle gets back up, you'll be fine."
+    },
+    {
+      "start": 1171.48,
+      "end": 1173.32,
+      "text": "Okay, so now we know exactly where our needle tip is,"
+    },
+    {
+      "start": 1173.42,
+      "end": 1174.04,
+      "text": "we know our starting point."
+    },
+    {
+      "start": 1174.28,
+      "end": 1175.76,
+      "text": "So now what we're gonna do is kind of put the hide and seek"
+    },
+    {
+      "start": 1175.76,
+      "end": 1176.68,
+      "text": "that we talked about earlier,"
+    },
+    {
+      "start": 1177.17,
+      "end": 1177.99,
+      "text": "gonna bring my probe forward."
+    },
+    {
+      "start": 1178.37,
+      "end": 1179.77,
+      "text": "I've lost the needle tip."
+    },
+    {
+      "start": 1180.16,
+      "end": 1185.06,
+      "text": "them and walk the needle tip down. So again, I'm going to just lose the needle tip. So it"
+    },
+    {
+      "start": 1185.06,
+      "end": 1189.73,
+      "text": "disappears and then I'm going to dance the needle back into the view there. So again, a lot"
+    },
+    {
+      "start": 1190.03,
+      "end": 1193.17,
+      "text": "visualization isn't so much that you're getting a bright white needle tip. You can still"
+    },
+    {
+      "start": 1193.17,
+      "end": 1196.55,
+      "text": "fairly easily find a needle tip that is subtle or just a little bit of a shadow."
+    },
+    {
+      "start": 1197.02,
+      "end": 1199.98,
+      "text": "If you know the exact square centimeter on the screen you're looking at, you're not"
+    },
+    {
+      "start": 1200.32,
+      "end": 1201.3,
+      "text": "you know, scanning up and down the neck,"
+    },
+    {
+      "start": 1201.36,
+      "end": 1202.64,
+      "text": "frankly looking for this needle tip."
+    },
+    {
+      "start": 1203.02,
+      "end": 1203.96,
+      "text": "And so it's really critical kind of"
+    },
+    {
+      "start": 1203.96,
+      "end": 1204.76,
+      "text": "once you start of this process,"
+    },
+    {
+      "start": 1204.78,
+      "end": 1205.86,
+      "text": "we're marching down to the vessel"
+    },
+    {
+      "start": 1205.86,
+      "end": 1207.5,
+      "text": "that the probe does not leave the patient,"
+    },
+    {
+      "start": 1207.52,
+      "end": 1208.62,
+      "text": "you don't break contact with the scan,"
+    },
+    {
+      "start": 1208.7,
+      "end": 1209.98,
+      "text": "you don't put it down because if you..."
+    },
+    {
+      "start": 1210.06,
+      "end": 1213.67,
+      "text": "If you lose your needle tip, and once you're kind of at this point, it's almost sometimes"
+    },
+    {
+      "start": 1213.67,
+      "end": 1216.8,
+      "text": "especially early on better to kind of go back to the start and retry again."
+    },
+    {
+      "start": 1217.26,
+      "end": 1219.54,
+      "text": "Because again, it's easy to follow and needle if you know exactly where you're looking."
+    },
+    {
+      "start": 1220.06,
+      "end": 1222.02,
+      "text": "It's hard to start from scratch to find a needle"
+    },
+    {
+      "start": 1222.34,
+      "end": 1223.68,
+      "text": "in the middle of the neck somewhere."
+    },
+    {
+      "start": 1224.29,
+      "end": 1226.29,
+      "text": "Okay, so now we've gotten almost to the vessel."
+    },
+    {
+      "start": 1226.69,
+      "end": 1229.45,
+      "text": "So it's kind of a next phase is to actually..."
+    },
+    {
+      "start": 1230.0,
+      "end": 1233.72,
+      "text": "access the vessel itself. Once you get the needle at the vessel, you'll see"
+    },
+    {
+      "start": 1233.72,
+      "end": 1236.32,
+      "text": "tenting before you actually enter the vessel. You will see tenting of the"
+    },
+    {
+      "start": 1236.32,
+      "end": 1239.71,
+      "text": "vessel itself. You may actually see the needle tip right at the vessel but"
+    },
+    {
+      "start": 1239.71,
+      "end": 1239.97,
+      "text": "That's not-"
+    },
+    {
+      "start": 1240.4,
+      "end": 1243.46,
+      "text": "infrequently, you'll actually, the needle tip will kind of disappear at this point."
+    },
+    {
+      "start": 1244.09,
+      "end": 1247.77,
+      "text": "And so really, I'll use the, the tenting itself as, as my target where the needle tip is."
+    },
+    {
+      "start": 1247.85,
+      "end": 1249.92,
+      "text": "So kind of the same idea to hide and seek, same thing."
+    },
+    {
+      "start": 1250.0,
+      "end": 1253.7,
+      "text": "here, I will move the probe until it disappears, come back and just keep looking for that"
+    },
+    {
+      "start": 1253.7,
+      "end": 1254.02,
+      "text": "tenting."
+    },
+    {
+      "start": 1254.54,
+      "end": 1256.8,
+      "text": "That's how I know where my needle tip is, even if I can't see it at this point."
+    },
+    {
+      "start": 1257.08,
+      "end": 1259.98,
+      "text": "So now I'm ready to actually access the vessel, I'm going to advance my..."
+    },
+    {
+      "start": 1260.06,
+      "end": 1263.04,
+      "text": "My needle, it may be, you know, at this point, especially early on, can be a little bit"
+    },
+    {
+      "start": 1263.04,
+      "end": 1265.78,
+      "text": "of a struggle, because if you're hesitant or a little bit slow, you're trying to slowly"
+    },
+    {
+      "start": 1265.78,
+      "end": 1269.5,
+      "text": "advance commonly, you can just collapse the vein and never actually enter it."
+    },
+    {
+      "start": 1270.1,
+      "end": 1271.5,
+      "text": "really want to make sure that you're steep enough here."
+    },
+    {
+      "start": 1271.96,
+      "end": 1274.06,
+      "text": "And also sometimes you need to do just a little bit."
+    },
+    {
+      "start": 1274.24,
+      "end": 1275.38,
+      "text": "I don't want to say the word aggressive,"
+    },
+    {
+      "start": 1275.54,
+      "end": 1278.12,
+      "text": "but you got to kind of commit to getting through that vessel."
+    },
+    {
+      "start": 1278.5,
+      "end": 1279.92,
+      "text": "So really, you know, make it happen."
+    },
+    {
+      "start": 1280.0,
+      "end": 1284.16,
+      "text": "centimeter, you know, deliberate advance to try to get through that vessel and kind of"
+    },
+    {
+      "start": 1284.16,
+      "end": 1287.86,
+      "text": "pop through. I gave him a second half a centimeter or so you don't want to go through"
+    },
+    {
+      "start": 1287.86,
+      "end": 1289.74,
+      "text": "and through, but you really have to be kind of decisive."
+    },
+    {
+      "start": 1290.0,
+      "end": 1292.79,
+      "text": "at this point, otherwise you can just slide across the top"
+    },
+    {
+      "start": 1292.79,
+      "end": 1294.19,
+      "text": "or just collapse the vessel and not actually enter."
+    },
+    {
+      "start": 1294.69,
+      "end": 1296.45,
+      "text": "And you can take a couple of these to get comfortable with that,"
+    },
+    {
+      "start": 1296.57,
+      "end": 1298.06,
+      "text": "but it's not as bad as you think,"
+    },
+    {
+      "start": 1298.2,
+      "end": 1299.4,
+      "text": "and you'll quickly get a feel for it."
+    },
+    {
+      "start": 1299.46,
+      "end": 1299.98,
+      "text": "All right."
+    },
+    {
+      "start": 1300.0,
+      "end": 1304.55,
+      "text": "So we're ready to actually enter the vessel, so I can't really see my needle tip, but I do see where I'm"
+    },
+    {
+      "start": 1304.55,
+      "end": 1309.94,
+      "text": "10 things, so now I'm going to advance my needle. Now what I'm looking for is I'm going to see that 10 thing go away, and then commonly you'll actually"
+    },
+    {
+      "start": 1310.03,
+      "end": 1314.0,
+      "text": "kind of the inverse, where it kind of peaks up a little bit. Maybe not, but definitely"
+    },
+    {
+      "start": 1314.0,
+      "end": 1317.49,
+      "text": "the tinting will kind of go away. And I will also expect that I have flash in my"
+    },
+    {
+      "start": 1317.49,
+      "end": 1319.88,
+      "text": "syringe at this point. So my next step is I..."
+    },
+    {
+      "start": 1320.06,
+      "end": 1323.66,
+      "text": "you know many many people will try to immediately thread the wire right here because they've got good flash"
+    },
+    {
+      "start": 1323.66,
+      "end": 1327.56,
+      "text": "but I would suggest not quite doing that just yet and we'll talk about that in just a minute"
+    },
+    {
+      "start": 1327.56,
+      "end": 1329.86,
+      "text": "at this point though"
+    },
+    {
+      "start": 1330.0,
+      "end": 1333.8,
+      "text": "will follow my needle tip all the way down, but no exactly where I am."
+    },
+    {
+      "start": 1334.25,
+      "end": 1335.35,
+      "text": "So just a really quick aside here."
+    },
+    {
+      "start": 1335.61,
+      "end": 1338.59,
+      "text": "You notice that in these clips I've been showing that I've been doing a"
+    },
+    {
+      "start": 1338.59,
+      "end": 1339.97,
+      "text": "slide technique where the probe is"
+    },
+    {
+      "start": 1340.0,
+      "end": 1344.91,
+      "text": "remains the same angle of the skin and then I'm just sliding it down the neck or wherever I am."
+    },
+    {
+      "start": 1345.15,
+      "end": 1349.07,
+      "text": "And I think that's a good approach to do because it does give you a reasonable angle of"
+    },
+    {
+      "start": 1349.07,
+      "end": 1349.97,
+      "text": "of information or information."
+    },
+    {
+      "start": 1350.0,
+      "end": 1353.12,
+      "text": "so that you should have it, hopefully, an easier time seeing your needle tip, again, it's"
+    },
+    {
+      "start": 1353.12,
+      "end": 1354.7,
+      "text": "not going to be as bright as if your needle is flat."
+    },
+    {
+      "start": 1355.02,
+      "end": 1358.26,
+      "text": "But you may see some folks, instead of doing a slide approach, they'll actually do more"
+    },
+    {
+      "start": 1358.26,
+      "end": 1358.72,
+      "text": "of a fan."
+    },
+    {
+      "start": 1360.0,
+      "end": 1364.02,
+      "text": "If you're having a hard time finding your Neal Tip, I recommend this not be your primary approach."
+    },
+    {
+      "start": 1364.22,
+      "end": 1366.16,
+      "text": "If you do this already and it works for you, it works for you."
+    },
+    {
+      "start": 1366.32,
+      "end": 1369.98,
+      "text": "But you can see, as I fan the probe down so that my..."
+    },
+    {
+      "start": 1370.0,
+      "end": 1372.76,
+      "text": "beam goes forward and I can follow that needle tip you can see that the angle of incidence"
+    },
+    {
+      "start": 1372.76,
+      "end": 1375.76,
+      "text": "is really going to seep it up and this will progressively make your needle tip harder and"
+    },
+    {
+      "start": 1375.76,
+      "end": 1376.36,
+      "text": "harder to find."
+    },
+    {
+      "start": 1376.68,
+      "end": 1379.42,
+      "text": "It's still totally doable and as your skills improve and you're able to have that precise"
+    },
+    {
+      "start": 1379.42,
+      "end": 1379.92,
+      "text": "probe control."
+    },
+    {
+      "start": 1380.0,
+      "end": 1382.89,
+      "text": "It may not be an issue, and there may be times when this is what you have to do, especially"
+    },
+    {
+      "start": 1382.89,
+      "end": 1383.95,
+      "text": "if you're really close to the clavicle."
+    },
+    {
+      "start": 1384.17,
+      "end": 1387.33,
+      "text": "But I wouldn't recommend that it be your default, especially early on, or if you have a hard"
+    },
+    {
+      "start": 1387.33,
+      "end": 1388.65,
+      "text": "time with finding your needle tip."
+    },
+    {
+      "start": 1390.16,
+      "end": 1392.38,
+      "text": "You can actually cheat the probe forward a little bit"
+    },
+    {
+      "start": 1392.38,
+      "end": 1395.56,
+      "text": "to really try to get closer to that nice 90 degrees."
+    },
+    {
+      "start": 1395.84,
+      "end": 1397.24,
+      "text": "And so I will use this technique sometimes"
+    },
+    {
+      "start": 1397.24,
+      "end": 1399.96,
+      "text": "if I say I have, but I have lost my..."
+    },
+    {
+      "start": 1400.0,
+      "end": 1402.92,
+      "text": "and I'm really having a hard time finding it by cheating my hand forward and"
+    },
+    {
+      "start": 1402.92,
+      "end": 1405.7,
+      "text": "tilting the probe away from me. I'm going to get that better angle and then I can"
+    },
+    {
+      "start": 1405.7,
+      "end": 1409.13,
+      "text": "use that hide and seek technique to kind of again try to find. You can use this"
+    },
+    {
+      "start": 1409.13,
+      "end": 1409.97,
+      "text": "technique to do this all"
+    },
+    {
+      "start": 1410.0,
+      "end": 1414.02,
+      "text": "to the vessel, which is totally valid. But one problem you may notice, especially if you're"
+    },
+    {
+      "start": 1414.02,
+      "end": 1419.91,
+      "text": "up doing an IJ, is that the the clavicle kind of impedes your ability that brings"
+    },
+    {
+      "start": 1420.0,
+      "end": 1423.0,
+      "text": "the probe far enough down, you aren't able to chase it, so you may have to actually go back"
+    },
+    {
+      "start": 1423.0,
+      "end": 1423.36,
+      "text": "up straight."
+    },
+    {
+      "start": 1423.5,
+      "end": 1424.52,
+      "text": "But if it works for you, it works for you."
+    },
+    {
+      "start": 1424.68,
+      "end": 1427.42,
+      "text": "At the very least, I think it's a good trick to have in your back pocket if you do lose"
+    },
+    {
+      "start": 1427.42,
+      "end": 1428.74,
+      "text": "needle tip, and you're trying to find it again."
+    },
+    {
+      "start": 1430.0,
+      "end": 1431.82,
+      "text": "just an image of somebody you can see that they have"
+    },
+    {
+      "start": 1431.82,
+      "end": 1433.8,
+      "text": "a piece that the probe away from them"
+    },
+    {
+      "start": 1433.8,
+      "end": 1436.56,
+      "text": "try to reproximate that 90 degree angle."
+    },
+    {
+      "start": 1436.99,
+      "end": 1438.47,
+      "text": "Again, pay no attention to how they're holding the probe,"
+    },
+    {
+      "start": 1438.57,
+      "end": 1439.9,
+      "text": "don't do that, but you can see the angle."
+    },
+    {
+      "start": 1440.0,
+      "end": 1446.24,
+      "text": "Okay, so now here's a clip of me and we're gonna go from kind of skin to just about we're ready to poke the vessel"
+    },
+    {
+      "start": 1446.24,
+      "end": 1449.97,
+      "text": "So you can see it's a little bit hard to see but my needle tip is"
+    },
+    {
+      "start": 1450.0,
+      "end": 1453.64,
+      "text": "entering the skin of this dummy here about the same distance as the top of the vessel."
+    },
+    {
+      "start": 1454.69,
+      "end": 1458.09,
+      "text": "I'm going to get through the skin, keep my angle very shallow, and I'm going to bring my"
+    },
+    {
+      "start": 1458.09,
+      "end": 1458.49,
+      "text": "probe back."
+    },
+    {
+      "start": 1458.65,
+      "end": 1459.97,
+      "text": "Now you could see that bright white and you'll tip there."
+    },
+    {
+      "start": 1460.9,
+      "end": 1467.06,
+      "text": "Now I know where I am starting from so I am going to bring the angle of angle up and getting ready so I can have a nice trajectory to get into that vessel."
+    },
+    {
+      "start": 1470.74,
+      "end": 1473.17,
+      "text": "So now the angle of my needle is up, I'm going to get ready to enter the vessel."
+    },
+    {
+      "start": 1474.81,
+      "end": 1475.57,
+      "text": "I lose my tip."
+    },
+    {
+      "start": 1476.09,
+      "end": 1477.15,
+      "text": "Now I advance my needle interview."
+    },
+    {
+      "start": 1477.27,
+      "end": 1478.47,
+      "text": "You can see that the vessel is tenting."
+    },
+    {
+      "start": 1481.38,
+      "end": 1482.98,
+      "text": "And now it's rebounded and I'm into the needle."
+    },
+    {
+      "start": 1483.12,
+      "end": 1483.56,
+      "text": "I'm into the vessel."
+    },
+    {
+      "start": 1484.21,
+      "end": 1484.39,
+      "text": "All right."
+    },
+    {
+      "start": 1484.94,
+      "end": 1485.5,
+      "text": "Now I've got our flash."
+    },
+    {
+      "start": 1485.82,
+      "end": 1486.5,
+      "text": "So what's our next steps?"
+    },
+    {
+      "start": 1487.13,
+      "end": 1488.61,
+      "text": "So let's talk about successfully accessing the vessel."
+    },
+    {
+      "start": 1488.65,
+      "end": 1489.97,
+      "text": "Now that we have the blood returned in our..."
+    },
+    {
+      "start": 1490.0,
+      "end": 1494.73,
+      "text": "So many, again, like I said, many people will try to thread their wire at this point, but"
+    },
+    {
+      "start": 1494.73,
+      "end": 1497.99,
+      "text": "there's some common problem that you may run into. One of them is going to be losing blood"
+    },
+    {
+      "start": 1497.99,
+      "end": 1499.97,
+      "text": "return when you disconnect the needle from this arrange, like you had created."
+    },
+    {
+      "start": 1500.0,
+      "end": 1503.1,
+      "text": "You know, blood returns are trying to aspirate, but as soon as you just connect that needle,"
+    },
+    {
+      "start": 1503.42,
+      "end": 1506.26,
+      "text": "the bleeding is not bleeding anymore, or you try to thread your wire, it just doesn't"
+    },
+    {
+      "start": 1506.26,
+      "end": 1506.36,
+      "text": "go."
+    },
+    {
+      "start": 1507.06,
+      "end": 1509.4,
+      "text": "Again, you get not being able to pass the wire, so this can be caused by what we're just"
+    },
+    {
+      "start": 1509.4,
+      "end": 1509.72,
+      "text": "talking about."
+    },
+    {
+      "start": 1510.1,
+      "end": 1511.64,
+      "text": "or it may be that your needle is in the vessel"
+    },
+    {
+      "start": 1511.64,
+      "end": 1513.18,
+      "text": "and you're just taking the back wall of the wire."
+    },
+    {
+      "start": 1513.68,
+      "end": 1515.66,
+      "text": "So how can we improve the chances of success"
+    },
+    {
+      "start": 1515.66,
+      "end": 1518.74,
+      "text": "once we have our flash and ours for ranger?"
+    },
+    {
+      "start": 1519.25,
+      "end": 1519.97,
+      "text": "So let's talk about this."
+    },
+    {
+      "start": 1520.03,
+      "end": 1524.77,
+      "text": "called the vanishing bulls eye technique or also an advanced target sign. You may see. So this is"
+    },
+    {
+      "start": 1524.77,
+      "end": 1527.94,
+      "text": "something a technique you can do once you're actually in the vessel. So what we're going to do is"
+    },
+    {
+      "start": 1528.26,
+      "end": 1529.92,
+      "text": "we're going to advance our needle a little bit farther even."
+    },
+    {
+      "start": 1530.0,
+      "end": 1533.1,
+      "text": "we have flash. We're going to see our needle tip. It's going to go down towards the bottom of the"
+    },
+    {
+      "start": 1533.1,
+      "end": 1536.12,
+      "text": "vessel on our screen as we advance it. We don't want it back while we'll go through the vessel."
+    },
+    {
+      "start": 1536.76,
+      "end": 1538.84,
+      "text": "We're going to go advance a little bit more and we're going to see something like this."
+    },
+    {
+      "start": 1539.2,
+      "end": 1539.98,
+      "text": "At this point we're going to do"
+    },
+    {
+      "start": 1540.0,
+      "end": 1542.92,
+      "text": "that bull's eye part, so we're going to put that dot in the middle of the vessel, making"
+    },
+    {
+      "start": 1542.92,
+      "end": 1543.96,
+      "text": "it look like a bull's eye."
+    },
+    {
+      "start": 1544.49,
+      "end": 1547.33,
+      "text": "That's been involved dropping our hands and putting that dot in the middle of the vessel"
+    },
+    {
+      "start": 1547.33,
+      "end": 1548.15,
+      "text": "so we have our bull's eye."
+    },
+    {
+      "start": 1548.56,
+      "end": 1549.42,
+      "text": "Now we're going to make it vanish."
+    },
+    {
+      "start": 1550.03,
+      "end": 1552.49,
+      "text": "to make it vanish, we're going to move our probe away from us, we're going to kill four"
+    },
+    {
+      "start": 1552.49,
+      "end": 1556.0,
+      "text": "a little bit, no a couple of millimeters or so, and we're going to do the same thing"
+    },
+    {
+      "start": 1556.0,
+      "end": 1559.66,
+      "text": "again, make that ball die and then by bringing our hands back down again."
+    },
+    {
+      "start": 1560.1,
+      "end": 1562.08,
+      "text": "And do this two or three times with the goal."
+    },
+    {
+      "start": 1562.18,
+      "end": 1562.9,
+      "text": "You know you've gone far enough."
+    },
+    {
+      "start": 1563.32,
+      "end": 1565.98,
+      "text": "If the needle hand is now, drop the angle so much"
+    },
+    {
+      "start": 1565.98,
+      "end": 1567.64,
+      "text": "that your needle hand is resting on the patient."
+    },
+    {
+      "start": 1568.15,
+      "end": 1569.29,
+      "text": "This may take two or three times."
+    },
+    {
+      "start": 1570.13,
+      "end": 1571.51,
+      "text": "So why do we do the vanishing bullseye technique?"
+    },
+    {
+      "start": 1571.67,
+      "end": 1572.49,
+      "text": "So here's a couple of vanishes."
+    },
+    {
+      "start": 1573.05,
+      "end": 1574.83,
+      "text": "Here I'll show you a quick video of me doing this."
+    },
+    {
+      "start": 1575.42,
+      "end": 1577.16,
+      "text": "Again, through a scan, I'm at the vessel,"
+    },
+    {
+      "start": 1577.87,
+      "end": 1578.31,
+      "text": "I'll look forward."
+    },
+    {
+      "start": 1580.13,
+      "end": 1583.55,
+      "text": "about to puncture. You can see I had the tensing there and now it's kind of"
+    },
+    {
+      "start": 1583.9,
+      "end": 1587.06,
+      "text": "rebounding. You can see it rebounding. I'm through the vessel so now I'm going to"
+    },
+    {
+      "start": 1587.06,
+      "end": 1589.78,
+      "text": "follow the needle tip down. There's my needle tip."
+    },
+    {
+      "start": 1590.99,
+      "end": 1591.75,
+      "text": "And then I'm going to dance forward."
+    },
+    {
+      "start": 1592.58,
+      "end": 1593.56,
+      "text": "And then I'm going to drop the angle of my hand,"
+    },
+    {
+      "start": 1593.8,
+      "end": 1595.68,
+      "text": "making that balls like a dance forward."
+    },
+    {
+      "start": 1596.06,
+      "end": 1597.85,
+      "text": "Drop my hand, making that balls either."
+    },
+    {
+      "start": 1599.57,
+      "end": 1599.67,
+      "text": "So."
+    },
+    {
+      "start": 1600.0,
+      "end": 1606.44,
+      "text": "If you look, see how my needle has dropped, and so to the point that my hand that was previously holding the probe,"
+    },
+    {
+      "start": 1606.58,
+      "end": 1609.96,
+      "text": "I can now rest firmly on the patient, and I can pinch it to the..."
+    },
+    {
+      "start": 1610.0,
+      "end": 1611.58,
+      "text": "needle between my index and middle finger,"
+    },
+    {
+      "start": 1612.03,
+      "end": 1614.87,
+      "text": "wow, it's having my prop hand secured onto the patient."
+    },
+    {
+      "start": 1615.28,
+      "end": 1616.38,
+      "text": "I didn't put my syringe on too tight,"
+    },
+    {
+      "start": 1616.52,
+      "end": 1617.32,
+      "text": "so it's very easy to take off,"
+    },
+    {
+      "start": 1617.99,
+      "end": 1618.93,
+      "text": "so as I take off my syringe."
+    },
+    {
+      "start": 1620.58,
+      "end": 1623.44,
+      "text": "I can now easily and immediately cover that needle"
+    },
+    {
+      "start": 1623.44,
+      "end": 1625.24,
+      "text": "with my sterile glove thumb."
+    },
+    {
+      "start": 1625.76,
+      "end": 1628.38,
+      "text": "So this is gonna prevent any sort of air embolization,"
+    },
+    {
+      "start": 1628.54,
+      "end": 1629.98,
+      "text": "and then also it's gonna make it..."
+    },
+    {
+      "start": 1630.0,
+      "end": 1632.96,
+      "text": "much cleaner procedure, you're not kind of bleeding everywhere. And the entire time,"
+    },
+    {
+      "start": 1633.02,
+      "end": 1636.78,
+      "text": "though, because that my left hand that's holding the needle now, is resting on the patient,"
+    },
+    {
+      "start": 1637.17,
+      "end": 1639.27,
+      "text": "I should minimize any movement that occurs."
+    },
+    {
+      "start": 1640.16,
+      "end": 1644.72,
+      "text": "with as I'm trying to move that syringe or before I get to wire in. However, let's just say"
+    },
+    {
+      "start": 1644.72,
+      "end": 1649.91,
+      "text": "I'm end up getting some movement even though I had my hand braced. Just compare that the amount of"
+    },
+    {
+      "start": 1650.0,
+      "end": 1653.2,
+      "text": "room that we have for the needle to move before we run into trouble."
+    },
+    {
+      "start": 1653.62,
+      "end": 1655.26,
+      "text": "So here we are between a steep and a shallow angle."
+    },
+    {
+      "start": 1655.46,
+      "end": 1659.97,
+      "text": "So don't do this but if you look, I don't have that much wiggle room before that needle"
+    },
+    {
+      "start": 1660.0,
+      "end": 1663.32,
+      "text": "goes all the way through the vessel when I'm steep. However, if my angle shallow, like after the"
+    },
+    {
+      "start": 1663.32,
+      "end": 1669.39,
+      "text": "vanishing goes like that, I do have a lot more distance to go before that needle actually goes through and"
+    },
+    {
+      "start": 1669.39,
+      "end": 1669.85,
+      "text": "through the vessels."
+    },
+    {
+      "start": 1670.0,
+      "end": 1672.99,
+      "text": "it just gives you a little bit of margin for safety. It also gives you a nice demonstration"
+    },
+    {
+      "start": 1672.99,
+      "end": 1677.82,
+      "text": "of how the visibility of your needle changes depending on the angle of your needle to"
+    },
+    {
+      "start": 1677.82,
+      "end": 1679.98,
+      "text": "the probe. Let's say you have a steep"
+    },
+    {
+      "start": 1680.36,
+      "end": 1685.67,
+      "text": "And you didn't back wall, but now you're trying the needle scrolling in the vessel, but now you're trying to set the wire and running into trouble."
+    },
+    {
+      "start": 1685.89,
+      "end": 1688.2,
+      "text": "So why is a shallow approach maybe a little bit better at times?"
+    },
+    {
+      "start": 1688.4,
+      "end": 1689.96,
+      "text": "So if you look, my needle tip is..."
+    },
+    {
+      "start": 1690.0,
+      "end": 1694.69,
+      "text": "in the vessel with a steep approach, but even so, the wire still doesn't want to pass"
+    },
+    {
+      "start": 1694.69,
+      "end": 1697.34,
+      "text": "so it's hitting onto that back wall. However, if we use that, again, that martial"
+    },
+    {
+      "start": 1697.34,
+      "end": 1699.38,
+      "text": "approach, we're going to get more of an margin for error here."
+    },
+    {
+      "start": 1700.0,
+      "end": 1702.98,
+      "text": "because the wires are going to come out and it's not, it has"
+    },
+    {
+      "start": 1702.98,
+      "end": 1705.65,
+      "text": "trajectory similar to the vessel. It's going to be more parallel,"
+    },
+    {
+      "start": 1706.23,
+      "end": 1707.97,
+      "text": "or closer to parallel with the back wall of the vessel."
+    },
+    {
+      "start": 1708.11,
+      "end": 1709.85,
+      "text": "And it just is going to generally go much easier."
+    },
+    {
+      "start": 1711.18,
+      "end": 1714.13,
+      "text": "So again, if you have a technique that works for you and you're able to do it steeply"
+    },
+    {
+      "start": 1714.13,
+      "end": 1715.17,
+      "text": "and have good results, that's fine."
+    },
+    {
+      "start": 1715.31,
+      "end": 1717.65,
+      "text": "But if you're finding that you're having problems or you're having difficulty threading"
+    },
+    {
+      "start": 1717.65,
+      "end": 1719.92,
+      "text": "the wire, this is again a nice technique."
+    },
+    {
+      "start": 1720.0,
+      "end": 1725.24,
+      "text": "that reduces the risk of that happening. Another little quick tip here, feel rhythm."
+    },
+    {
+      "start": 1725.85,
+      "end": 1729.31,
+      "text": "So I'm anesthesiologist by training, so I'll have it if I need any excuse to turn on my"
+    },
+    {
+      "start": 1729.31,
+      "end": 1729.91,
+      "text": "folks outspeeps."
+    },
+    {
+      "start": 1730.67,
+      "end": 1734.6,
+      "text": "makes you feel better, but I would recommend that you turn them on during your central"
+    },
+    {
+      "start": 1734.6,
+      "end": 1738.33,
+      "text": "lines, because as you're advancing your wire, if you go a little bit too far and you get"
+    },
+    {
+      "start": 1738.33,
+      "end": 1739.97,
+      "text": "some PVC's, you'll be able to meet..."
+    },
+    {
+      "start": 1740.0,
+      "end": 1743.19,
+      "text": "hear that without depending on others telling you that there's activity. Just give me a very useful"
+    },
+    {
+      "start": 1743.19,
+      "end": 1747.76,
+      "text": "and you get a steady beep beep beep and then all of a sudden you hear a beep beep beep beep beep beep beep"
+    },
+    {
+      "start": 1747.76,
+      "end": 1749.98,
+      "text": "you know just pull back real quick and nobody has to tell you and it's"
+    },
+    {
+      "start": 1750.0,
+      "end": 1751.16,
+      "text": "It's fixed in, you know, a quarter of a second."
+    },
+    {
+      "start": 1751.77,
+      "end": 1752.83,
+      "text": "We're gonna, again, put it all together."
+    },
+    {
+      "start": 1753.39,
+      "end": 1754.11,
+      "text": "And it just goes through the whole thing."
+    },
+    {
+      "start": 1754.97,
+      "end": 1755.57,
+      "text": "So we picked up a probe."
+    },
+    {
+      "start": 1755.83,
+      "end": 1757.19,
+      "text": "We're gonna do a sanity check. Left is left."
+    },
+    {
+      "start": 1758.72,
+      "end": 1759.46,
+      "text": "We're gonna do our pre-skin."
+    },
+    {
+      "start": 1760.48,
+      "end": 1762.66,
+      "text": "The best I was dang in the middle of the screen, we found a nice spot."
+    },
+    {
+      "start": 1763.2,
+      "end": 1763.9,
+      "text": "I'm going to have an entry site."
+    },
+    {
+      "start": 1764.12,
+      "end": 1766.88,
+      "text": "That's about the same distance from the top of the vessel back away from the probe."
+    },
+    {
+      "start": 1767.45,
+      "end": 1768.49,
+      "text": "Give me that nice 45-degree angle."
+    },
+    {
+      "start": 1770.48,
+      "end": 1774.17,
+      "text": "and have my needles here, I'm going to enter the skin, then I'm going to drop the angle of my needle"
+    },
+    {
+      "start": 1774.17,
+      "end": 1779.98,
+      "text": "and the tip, a nice bright white, I'm going to bring that needle"
+    },
+    {
+      "start": 1780.0,
+      "end": 1784.3,
+      "text": "back up so that I know exactly what I'm looking for. In general, it's not a good idea to"
+    },
+    {
+      "start": 1784.3,
+      "end": 1788.91,
+      "text": "make big angle changes like this once a needle is in the patient, especially deep. However,"
+    },
+    {
+      "start": 1789.09,
+      "end": 1789.57,
+      "text": "I say this is a..."
+    },
+    {
+      "start": 1790.1,
+      "end": 1792.88,
+      "text": "one exception because they're about to stick a scalpel right here and any tissue damage"
+    },
+    {
+      "start": 1792.88,
+      "end": 1794.82,
+      "text": "we do is going to, is this really kind of a move point."
+    },
+    {
+      "start": 1795.95,
+      "end": 1797.83,
+      "text": "Alright, so we found a needle tip we knew exactly what it looks like."
+    },
+    {
+      "start": 1797.93,
+      "end": 1799.45,
+      "text": "Now we're going to carefully march it down to the vessel."
+    },
+    {
+      "start": 1801.31,
+      "end": 1804.65,
+      "text": "The distance I move the probe and the number of times it takes for me to advance and get to the vessel"
+    },
+    {
+      "start": 1804.65,
+      "end": 1808.51,
+      "text": "really depends on how easy it is to see the needle tip."
+    },
+    {
+      "start": 1812.18,
+      "end": 1818.73,
+      "text": "So we have our issue indentation here, we're going to follow it down, we're going to find our needle tip."
+    },
+    {
+      "start": 1820.42,
+      "end": 1823.88,
+      "text": "Now we're going to finish here with our dancing bulls-eye."
+    },
+    {
+      "start": 1831.54,
+      "end": 1834.96,
+      "text": "my hand is dropped all the way down, now I feel confident in being able to advance that"
+    },
+    {
+      "start": 1834.96,
+      "end": 1835.1,
+      "text": "way."
+    },
+    {
+      "start": 1836.48,
+      "end": 1839.28,
+      "text": "So that's kind of the main thing I wanted to talk about for the ultrasound guide essential"
+    },
+    {
+      "start": 1839.28,
+      "end": 1839.48,
+      "text": "line."
+    },
+    {
+      "start": 1840.06,
+      "end": 1843.14,
+      "text": "I do want to go on just one more topic about dilation."
+    },
+    {
+      "start": 1843.5,
+      "end": 1845.46,
+      "text": "I think this is also an area that people sometimes struggle with."
+    },
+    {
+      "start": 1846.59,
+      "end": 1848.98,
+      "text": "We'll start with a quick tip over dilation and it was essential lines."
+    },
+    {
+      "start": 1849.16,
+      "end": 1849.96,
+      "text": "If you've done many central lines."
+    },
+    {
+      "start": 1850.0,
+      "end": 1855.32,
+      "text": "You may have run into where it just seems like after you put it in that it just wants to bleed around your central line"
+    },
+    {
+      "start": 1855.32,
+      "end": 1858.3,
+      "text": "The nurses are complaining because they always have to change their dressings or just nothing sticks"
+    },
+    {
+      "start": 1858.3,
+      "end": 1859.92,
+      "text": "It's just always as slowly oozing around"
+    },
+    {
+      "start": 1860.13,
+      "end": 1864.26,
+      "text": "That's commonly caused by over dilation or sinking that dilator too deep."
+    },
+    {
+      "start": 1864.98,
+      "end": 1868.71,
+      "text": "The dilator is just for the skin and soft tissue, and it is wider than the catheter."
+    },
+    {
+      "start": 1869.48,
+      "end": 1869.98,
+      "text": "So if you will help..."
+    },
+    {
+      "start": 1870.0,
+      "end": 1874.93,
+      "text": "of that dilator. All you're doing is punching a big hole in the vessel that you won't be"
+    },
+    {
+      "start": 1874.93,
+      "end": 1878.72,
+      "text": "able to plug with a catheter. And it's going to bleed. And some of these dilators, especially"
+    },
+    {
+      "start": 1878.72,
+      "end": 1879.9,
+      "text": "for like an HD length trial."
+    },
+    {
+      "start": 1880.0,
+      "end": 1883.31,
+      "text": "is lying something like that. These dilators are dangerous as long. You definitely do not"
+    },
+    {
+      "start": 1883.31,
+      "end": 1887.54,
+      "text": "want to have a tri-alysis lying dilator. So you really want to just go in far enough"
+    },
+    {
+      "start": 1887.54,
+      "end": 1889.96,
+      "text": "that the widest part of the dilator has..."
+    },
+    {
+      "start": 1890.0,
+      "end": 1892.24,
+      "text": "has separated the skin and really dilated that part."
+    },
+    {
+      "start": 1892.38,
+      "end": 1893.74,
+      "text": "You may feel it, there's a little bit of resistance,"
+    },
+    {
+      "start": 1894.25,
+      "end": 1895.37,
+      "text": "but as you get to this off-tissue,"
+    },
+    {
+      "start": 1895.47,
+      "end": 1897.17,
+      "text": "that it kind of becomes just a touch easier"
+    },
+    {
+      "start": 1897.17,
+      "end": 1898.09,
+      "text": "and then it goes more smoothly."
+    },
+    {
+      "start": 1898.53,
+      "end": 1899.91,
+      "text": "Really, you shouldn't have to dilate past."
+    },
+    {
+      "start": 1900.03,
+      "end": 1903.4,
+      "text": "You don't even have to dial it into the vessel. You definitely don't want to get a"
+    },
+    {
+      "start": 1903.4,
+      "end": 1909.97,
+      "text": "dialator all the way into the vessel. So, we want to dial it along the trajectory of our..."
+    },
+    {
+      "start": 1910.0,
+      "end": 1919.15,
+      "text": "original needle, original needle trajectory, meter skin neck, and now we're going to advance the dilator. You want to hold the dilator?"
+    },
+    {
+      "start": 1920.0,
+      "end": 1923.18,
+      "text": "advance about a centimeter or so away from the skin so you're feeding it a little bit of time,"
+    },
+    {
+      "start": 1923.2,
+      "end": 1926.55,
+      "text": "you don't want to hold it towards the opposite end because as you're trying to advance you can"
+    },
+    {
+      "start": 1926.55,
+      "end": 1929.98,
+      "text": "actually bend your dialier that way. I'm going to be holding close to the"
+    },
+    {
+      "start": 1930.06,
+      "end": 1933.62,
+      "text": "And then we just went back to Danish to go fairly smoothly, maybe a little resistance,"
+    },
+    {
+      "start": 1933.76,
+      "end": 1934.28,
+      "text": "but she goes smoothly."
+    },
+    {
+      "start": 1935.32,
+      "end": 1939.56,
+      "text": "And again, just to remind you, the dilator itself is going to be usually at least one"
+    },
+    {
+      "start": 1939.56,
+      "end": 1939.84,
+      "text": "and French."
+    },
+    {
+      "start": 1940.0,
+      "end": 1943.24,
+      "text": "larger than the catheter. So, if you get the main width of the body of the dilator in"
+    },
+    {
+      "start": 1943.24,
+      "end": 1946.16,
+      "text": "the vessel, that hole is going to be bigger than the catheter, and it's just going to"
+    },
+    {
+      "start": 1946.16,
+      "end": 1948.74,
+      "text": "ooze everywhere, especially if the patient is quite ill-pathic."
+    },
+    {
+      "start": 1953.62,
+      "end": 1956.1,
+      "text": "So at most, we're going to get the tip of the dilator in the vessel, and you really"
+    },
+    {
+      "start": 1956.1,
+      "end": 1956.82,
+      "text": "need to go that far."
+    },
+    {
+      "start": 1957.85,
+      "end": 1959.93,
+      "text": "If you air a little bit on under dilating."
+    },
+    {
+      "start": 1960.0,
+      "end": 1961.82,
+      "text": "and it's dilated twice until you get a feel for it, that's okay."
+    },
+    {
+      "start": 1962.28,
+      "end": 1964.96,
+      "text": "But you'll find that times where you have patients with big lines,"
+    },
+    {
+      "start": 1965.12,
+      "end": 1966.72,
+      "text": "like your remake patients with your remake coagulopathy,"
+    },
+    {
+      "start": 1967.18,
+      "end": 1968.06,
+      "text": "if you can dilate those well,"
+    },
+    {
+      "start": 1968.2,
+      "end": 1969.98,
+      "text": "you know, you're putting this fairly large dialysis line in the..."
+    },
+    {
+      "start": 1970.42,
+      "end": 1977.22,
+      "text": "It won't lose around there because you'll have a nice seal. Let's talk about kinking the wire. If you haven't kinked a wire"
+    },
+    {
+      "start": 1977.22,
+      "end": 1979.9,
+      "text": "Then you probably haven't done that when you centralize yet, but this is something that comes"
+    },
+    {
+      "start": 1980.0,
+      "end": 1984.44,
+      "text": "not frequently and so it also can be a bit frustrating because you'll say oh there's resistance"
+    },
+    {
+      "start": 1984.44,
+      "end": 1987.56,
+      "text": "you shouldn't advance anymore but then maybe your staff comes in and pushes a little"
+    },
+    {
+      "start": 1987.56,
+      "end": 1989.88,
+      "text": "bit harder than it goes smooth and the next time you try it you have some resistance."
+    },
+    {
+      "start": 1990.0,
+      "end": 1993.36,
+      "text": "you push hard and you can get the wire. So why does that happen? The kicking of the wire occurs"
+    },
+    {
+      "start": 1993.7,
+      "end": 1999.28,
+      "text": "when you try to dial it on a trajectory that's not the same as the original needle pass. We look here,"
+    },
+    {
+      "start": 2000.0,
+      "end": 2003.26,
+      "text": "about 45 but now I'm dilating the shallower angle and that's going to cause that kink"
+    },
+    {
+      "start": 2003.26,
+      "end": 2003.7,
+      "text": "in that wire."
+    },
+    {
+      "start": 2004.9,
+      "end": 2009.52,
+      "text": "So how do you know if you just need to push harder when you're having a little resistance?"
+    },
+    {
+      "start": 2010.13,
+      "end": 2011.73,
+      "text": "or if you're going in the wrong trajectory."
+    },
+    {
+      "start": 2012.25,
+      "end": 2013.89,
+      "text": "So one of the really useful things you can do"
+    },
+    {
+      "start": 2013.89,
+      "end": 2016.22,
+      "text": "is kind of floss the wire back and forth,"
+    },
+    {
+      "start": 2016.28,
+      "end": 2019.43,
+      "text": "which we'll show here by moving that wire in and out"
+    },
+    {
+      "start": 2019.43,
+      "end": 2019.97,
+      "text": "of the..."
+    },
+    {
+      "start": 2021.06,
+      "end": 2023.72,
+      "text": "that will tell you if you're on the right trajectory."
+    },
+    {
+      "start": 2023.92,
+      "end": 2025.48,
+      "text": "So let's say you're trying to advance a dilator"
+    },
+    {
+      "start": 2025.48,
+      "end": 2026.62,
+      "text": "and you meet some resistance."
+    },
+    {
+      "start": 2026.92,
+      "end": 2029.88,
+      "text": "If that wire goes in and out easily even with that resistance then..."
+    },
+    {
+      "start": 2030.58,
+      "end": 2033.42,
+      "text": "if appropriate, you can maybe try just pushing just to touch harder to see if you can just"
+    },
+    {
+      "start": 2033.42,
+      "end": 2036.62,
+      "text": "get the width of the dialy to three when you just need to go a little bit more from potentially"
+    },
+    {
+      "start": 2036.62,
+      "end": 2039.96,
+      "text": "making us as likely your skin neck. However, if you're meaning some resistance..."
+    },
+    {
+      "start": 2040.03,
+      "end": 2043.08,
+      "text": "and then you try to move that wire in and out, and it feels stuck or caught."
+    },
+    {
+      "start": 2043.36,
+      "end": 2046.02,
+      "text": "Don't push any harder, stop, and then bring your"
+    },
+    {
+      "start": 2046.02,
+      "end": 2048.86,
+      "text": "die later, release pressure with a die later, and then try to bring the angle"
+    },
+    {
+      "start": 2048.86,
+      "end": 2049.6,
+      "text": "Usually up."
+    },
+    {
+      "start": 2050.0,
+      "end": 2053.73,
+      "text": "you probably are dilating too shallowly compared that originally will pass but long story short"
+    },
+    {
+      "start": 2053.73,
+      "end": 2059.79,
+      "text": "if the wire goes in and out easily then it's okay to push a little bit harder or pretend to make a bigger"
+    },
+    {
+      "start": 2060.0,
+      "end": 2065.84,
+      "text": "And it's a wires cot passion staff release pressure on that dilator and try to make that"
+    },
+    {
+      "start": 2065.84,
+      "end": 2067.38,
+      "text": "angle closer to the regional needle pass."
+    },
+    {
+      "start": 2068.47,
+      "end": 2069.41,
+      "text": "So last little quick tip here."
+    },
+    {
+      "start": 2071.5,
+      "end": 2074.74,
+      "text": "Is that if you're finding that King of the Wires is something that happens not infrequently with you?"
+    },
+    {
+      "start": 2075.97,
+      "end": 2079.77,
+      "text": "One thing you might try is holding the dilator as you're advancing kind of like you're holding a pencil."
+    },
+    {
+      "start": 2080.16,
+      "end": 2083.6,
+      "text": "just feeding it forward with your thumb and your index finger. By holding it like a pencil,"
+    },
+    {
+      "start": 2084.42,
+      "end": 2088.61,
+      "text": "this is going to naturally cause that dialier angle to be a little bit more steep and"
+    },
+    {
+      "start": 2088.61,
+      "end": 2089.79,
+      "text": "really more closely approximate."
+    },
+    {
+      "start": 2090.06,
+      "end": 2095.5,
+      "text": "They're in a needle angle. I think you'll find they'll have a lot fewer instances where you're having problems kinking the wire"
+    },
+    {
+      "start": 2095.5,
+      "end": 2098.75,
+      "text": "All right, that's what I have. Thank you very much, and I hope this was helpful"
+    }
+  ]
+}

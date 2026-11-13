@@ -1,0 +1,3988 @@
+{
+  "video_id": "2EFxV5dpIPo",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/2EFxV5dpIPo/asr.txt",
+  "segments": [
+    {
+      "start": 0.38,
+      "end": 9.68,
+      "text": "alveoli and interstitial. We have B lines where we have the hyper-coic vertical line seen here moving back and forth present in pulmonary edema, pneumonia."
+    },
+    {
+      "start": 10.0,
+      "end": 15.0,
+      "text": "diffuse alveolar hemorrhage, anything where there is filling of the alveolar interstitial space"
+    },
+    {
+      "start": 15.0,
+      "end": 19.97,
+      "text": "or scarring of the interstitial space. Insolidations are present in pneumonia or dense-"
+    },
+    {
+      "start": 20.0,
+      "end": 22.68,
+      "text": "that electasis, once you've totally de-errated the lung,"
+    },
+    {
+      "start": 22.82,
+      "end": 24.06,
+      "text": "making it look like a solid organ."
+    },
+    {
+      "start": 25.17,
+      "end": 26.61,
+      "text": "These dancers die of fragmatic ultrasound,"
+    },
+    {
+      "start": 26.83,
+      "end": 28.65,
+      "text": "and this is a growing field where we can understand"
+    },
+    {
+      "start": 28.65,
+      "end": 29.97,
+      "text": "the main muscle of respiration."
+    },
+    {
+      "start": 30.0,
+      "end": 34.06,
+      "text": "And we can say whether or not that's a part of the cause of somebody's respiratory failure."
+    },
+    {
+      "start": 35.62,
+      "end": 39.18,
+      "text": "E is for plural effusions, and you can see that free fluid here."
+    },
+    {
+      "start": 40.51,
+      "end": 44.61,
+      "text": "F is for feeding tubes with this idea that we get in a chance to see whether or not the"
+    },
+    {
+      "start": 44.61,
+      "end": 47.73,
+      "text": "feeding tube is traveling down the trachea or through the esophagus."
+    },
+    {
+      "start": 47.87,
+      "end": 49.73,
+      "text": "We can also see the vocal cords here, if you're..."
+    },
+    {
+      "start": 50.1,
+      "end": 52.9,
+      "text": "thinking about about awaiting that, but that's a more advanced skill set."
+    },
+    {
+      "start": 54.42,
+      "end": 59.34,
+      "text": "G is for gastric emptying, and the era of DLP1 inhibitors, it's really important to understand"
+    },
+    {
+      "start": 59.34,
+      "end": 59.96,
+      "text": "whether our..."
+    },
+    {
+      "start": 60.0,
+      "end": 62.48,
+      "text": "still have a full stomach prior to intubation,"
+    },
+    {
+      "start": 62.68,
+      "end": 66.5,
+      "text": "or if that full stomach might be impairing their respiratory excursion."
+    },
+    {
+      "start": 67.46,
+      "end": 68.92,
+      "text": "And then, just like my youngest daughter,"
+    },
+    {
+      "start": 69.02,
+      "end": 69.92,
+      "text": "we'll skip a few letters of the alphabet."
+    },
+    {
+      "start": 70.0,
+      "end": 72.06,
+      "text": "But we'll jump down to S, where we'll get to long sliding,"
+    },
+    {
+      "start": 73.06,
+      "end": 75.44,
+      "text": "which allows us to rule out pneumothorax,"
+    },
+    {
+      "start": 76.22,
+      "end": 79.32,
+      "text": "T for a thickened pleura, which is present more in."
+    },
+    {
+      "start": 80.0,
+      "end": 83.16,
+      "text": "inflammatory infectious states and allows us to differentiate them from the"
+    },
+    {
+      "start": 83.16,
+      "end": 87.46,
+      "text": "alveolar filling of cardiogenic volume overload and Z for the Z lines"
+    },
+    {
+      "start": 87.46,
+      "end": 89.72,
+      "text": "throwing back to the French"
+    },
+    {
+      "start": 90.13,
+      "end": 94.61,
+      "text": "originator of the lung ultrasound alphabet, which are present in healthy lungs not necessarily"
+    },
+    {
+      "start": 94.61,
+      "end": 97.11,
+      "text": "assigned a pathology, but do rule out pneumothorax."
+    },
+    {
+      "start": 98.58,
+      "end": 99.98,
+      "text": "Great, now let's go into some of the..."
+    },
+    {
+      "start": 100.0,
+      "end": 103.46,
+      "text": "The long ultrasound applications that are present for any specialty, not critical care"
+    },
+    {
+      "start": 103.46,
+      "end": 103.84,
+      "text": "specific."
+    },
+    {
+      "start": 105.37,
+      "end": 109.35,
+      "text": "When it comes to long ultrasound for hypoxemia, the original trial of the lignitine published"
+    },
+    {
+      "start": 109.35,
+      "end": 109.97,
+      "text": "was the blue-"
+    },
+    {
+      "start": 110.0,
+      "end": 115.12,
+      "text": "protocol. And what this does is he basically said, hey, I'm going to use no clinical information"
+    },
+    {
+      "start": 115.12,
+      "end": 119.06,
+      "text": "other than the lung ultrasound for a bunch of hypoxemic patients and tell you what their"
+    },
+    {
+      "start": 119.06,
+      "end": 119.98,
+      "text": "cause of hypoxia."
+    },
+    {
+      "start": 120.06,
+      "end": 124.86,
+      "text": "I do want to put a little caveat here. Please don't do that. Please always use the"
+    },
+    {
+      "start": 124.86,
+      "end": 127.62,
+      "text": "clinical information that you have available to you physical exam and history"
+    },
+    {
+      "start": 127.62,
+      "end": 129.94,
+      "text": "labs. When you're trying to figure out the cause of"
+    },
+    {
+      "start": 130.0,
+      "end": 131.1,
+      "text": "respiratory failure in your patient."
+    },
+    {
+      "start": 131.28,
+      "end": 133.42,
+      "text": "But I'll highlight the way that this was used."
+    },
+    {
+      "start": 133.58,
+      "end": 136.08,
+      "text": "The first question he asked is, hey, is long sliding"
+    },
+    {
+      "start": 136.08,
+      "end": 136.48,
+      "text": "present?"
+    },
+    {
+      "start": 136.92,
+      "end": 139.92,
+      "text": "And you can look here at this clip where I highlight the glistening"
+    },
+    {
+      "start": 140.0,
+      "end": 144.74,
+      "text": "shimmering of lung ultrasound. And you can say, yes, lung ultrasound is present. We go down"
+    },
+    {
+      "start": 144.74,
+      "end": 149.92,
+      "text": "this channel. As a reminder, this is what non-present lung sliding."
+    },
+    {
+      "start": 150.0,
+      "end": 151.96,
+      "text": "would look like in a patient who had a pneumothorax."
+    },
+    {
+      "start": 153.47,
+      "end": 156.93,
+      "text": "So, since we know long ultrasound is present, the next thing we have to ask is, is there"
+    },
+    {
+      "start": 156.93,
+      "end": 159.84,
+      "text": "an A profile, diffusely, or a B profile?"
+    },
+    {
+      "start": 160.0,
+      "end": 169.94,
+      "text": "And if you look at the same clip that we were evaluating before, you can see that there are B lines in comparison to the A lines highlighted, the blue arrow pointing to the plura, the black arrows pointing to the"
+    },
+    {
+      "start": 170.1,
+      "end": 173.37,
+      "text": "A lines both here and the B lines in this other clip."
+    },
+    {
+      "start": 174.2,
+      "end": 175.58,
+      "text": "So based on the clip that I just showed you"
+    },
+    {
+      "start": 175.58,
+      "end": 178.78,
+      "text": "with a present long sliding and a diffuse B line profile,"
+    },
+    {
+      "start": 179.16,
+      "end": 179.9,
+      "text": "we would say that this"
+    },
+    {
+      "start": 180.0,
+      "end": 181.84,
+      "text": "most likely has pulmonary edema."
+    },
+    {
+      "start": 183.57,
+      "end": 185.51,
+      "text": "The thing that I do want to throw out there is if you look at"
+    },
+    {
+      "start": 185.51,
+      "end": 187.59,
+      "text": "that algorithm, you can see that there's a lot of different"
+    },
+    {
+      "start": 187.59,
+      "end": 189.97,
+      "text": "ways to get to pneumonia and it is useful to think..."
+    },
+    {
+      "start": 190.0,
+      "end": 193.6,
+      "text": "pneumonia because it's such a common cause of respiratory failure. We have a lot of different"
+    },
+    {
+      "start": 193.6,
+      "end": 197.52,
+      "text": "findings in Longolder Sound that are present in pneumonia, air bronchograms, which are the most"
+    },
+    {
+      "start": 197.52,
+      "end": 199.98,
+      "text": "specific finding of focal area of b-"
+    },
+    {
+      "start": 200.0,
+      "end": 204.42,
+      "text": "lines, a para-consolidation of fusion, sub-plural consolidations are thickened"
+    },
+    {
+      "start": 204.42,
+      "end": 208.55,
+      "text": "plura, and consolidations, frankly, being a sign of pneumonia. So if we think about"
+    },
+    {
+      "start": 208.55,
+      "end": 209.73,
+      "text": "that blue..."
+    },
+    {
+      "start": 210.06,
+      "end": 215.26,
+      "text": "algorithm, we can see that there are multiple different pathways that end with pneumonia"
+    },
+    {
+      "start": 215.26,
+      "end": 219.94,
+      "text": "as the final diagnosis, whether that's an A-profile with a focal area."
+    },
+    {
+      "start": 220.0,
+      "end": 224.7,
+      "text": "of B lines at the base, or if it's just a mixture of A lines, B lines, and consolidations,"
+    },
+    {
+      "start": 225.02,
+      "end": 228.78,
+      "text": "or if it's a absent lung sliding with B lines just about everywhere."
+    },
+    {
+      "start": 231.02,
+      "end": 232.96,
+      "text": "So we want to think, is this a useful test?"
+    },
+    {
+      "start": 233.66,
+      "end": 235.32,
+      "text": "And when we look at the results from"
+    },
+    {
+      "start": 235.32,
+      "end": 236.3,
+      "text": "Lichtenstein's original paper,"
+    },
+    {
+      "start": 236.48,
+      "end": 237.8,
+      "text": "they may seem unbelievable."
+    },
+    {
+      "start": 237.88,
+      "end": 239.94,
+      "text": "Look how high that accuracy is."
+    },
+    {
+      "start": 240.0,
+      "end": 241.84,
+      "text": "between those sensitivity and specificity figures."
+    },
+    {
+      "start": 242.24,
+      "end": 244.42,
+      "text": "I'll offer that this is a select cohort"
+    },
+    {
+      "start": 244.42,
+      "end": 247.62,
+      "text": "that didn't include patients with pulmonary fibrosis,"
+    },
+    {
+      "start": 247.88,
+      "end": 249.26,
+      "text": "post-transplant, anything like that."
+    },
+    {
+      "start": 250.06,
+      "end": 254.55,
+      "text": "When we ask ourselves specifically about some of these diagnostic buckets, such as"
+    },
+    {
+      "start": 254.55,
+      "end": 259.97,
+      "text": "cardiogenic pulmonary edema, meta-analyses of thousands of patients continue to show..."
+    },
+    {
+      "start": 260.29,
+      "end": 264.61,
+      "text": "extraordinarily high sensitivity or specificity, especially when compared to the diagnostic"
+    },
+    {
+      "start": 264.61,
+      "end": 267.67,
+      "text": "accuracy of chest radiograph or physical exam."
+    },
+    {
+      "start": 269.37,
+      "end": 269.79,
+      "text": "Similarly,"
+    },
+    {
+      "start": 270.0,
+      "end": 275.95,
+      "text": "ammonia, which had a sensitivity and specificity in Lichtenstein's study of 89 and 94 percent"
+    },
+    {
+      "start": 276.3,
+      "end": 279.9,
+      "text": "has followed up in meta-analysis to have similar diagnostic performance."
+    },
+    {
+      "start": 280.0,
+      "end": 283.64,
+      "text": "much better than what you'll get out of a chest radiograph or ocultation."
+    },
+    {
+      "start": 284.86,
+      "end": 287.64,
+      "text": "Knowing that, knowing that this is a useful diagnostic modality,"
+    },
+    {
+      "start": 287.7,
+      "end": 289.86,
+      "text": "let's think about the ways that it's already been used and..."
+    },
+    {
+      "start": 290.22,
+      "end": 294.34,
+      "text": "This is a study where we said, hey, if we have lung ultrasound and a pulse oximeter,"
+    },
+    {
+      "start": 294.42,
+      "end": 298.82,
+      "text": "do we really need the chest radiograph and ABG that we use to diagnose ARDS?"
+    },
+    {
+      "start": 299.58,
+      "end": 299.96,
+      "text": "There's a-"
+    },
+    {
+      "start": 300.0,
+      "end": 303.86,
+      "text": "more general set of how to do this for the cardiologist in order to help them understand"
+    },
+    {
+      "start": 303.86,
+      "end": 304.1,
+      "text": "it."
+    },
+    {
+      "start": 304.54,
+      "end": 308.66,
+      "text": "And we can get beyond just ARDS and volume overload to start looking at how to apply this"
+    },
+    {
+      "start": 308.66,
+      "end": 309.14,
+      "text": "widely."
+    },
+    {
+      "start": 309.14,
+      "end": 309.98,
+      "text": "to the-"
+    },
+    {
+      "start": 310.1,
+      "end": 314.22,
+      "text": "The point that we can think about is this a portable CT scanner instead of thinking about"
+    },
+    {
+      "start": 314.22,
+      "end": 315.74,
+      "text": "this as a portable chest x-ray?"
+    },
+    {
+      "start": 316.5,
+      "end": 319.66,
+      "text": "We can apply this in our patients with inflammatory lung disease."
+    },
+    {
+      "start": 320.16,
+      "end": 322.06,
+      "text": "and think about a rapid way in the clinic"
+    },
+    {
+      "start": 322.06,
+      "end": 325.48,
+      "text": "to detect the efficacy of immunosuppressive therapies."
+    },
+    {
+      "start": 326.06,
+      "end": 327.18,
+      "text": "And this started to grow,"
+    },
+    {
+      "start": 327.34,
+      "end": 328.5,
+      "text": "and we could see year after year,"
+    },
+    {
+      "start": 328.66,
+      "end": 329.98,
+      "text": "the number of publications looking at..."
+    },
+    {
+      "start": 330.0,
+      "end": 336.46,
+      "text": "applications for lung ultrasound was growing until 2019, and then came the COVID pandemic."
+    },
+    {
+      "start": 337.64,
+      "end": 339.84,
+      "text": "Focus in general, not lung ultrasound specific."
+    },
+    {
+      "start": 340.0,
+      "end": 342.5,
+      "text": "but all over thrives in a resource-limited setting."
+    },
+    {
+      "start": 342.62,
+      "end": 344.74,
+      "text": "Whether that limited resource is time,"
+    },
+    {
+      "start": 345.47,
+      "end": 348.74,
+      "text": "radiology equipment, space, or providers."
+    },
+    {
+      "start": 350.06,
+      "end": 353.07,
+      "text": "And from the very beginning, we were getting descriptions"
+    },
+    {
+      "start": 353.07,
+      "end": 356.25,
+      "text": "of how lung ultrasound was presenting in patients"
+    },
+    {
+      "start": 356.25,
+      "end": 359.07,
+      "text": "with coronavirus and coronavirus-induced ARDS."
+    },
+    {
+      "start": 360.26,
+      "end": 362.6,
+      "text": "We talked about how you could integrate this"
+    },
+    {
+      "start": 362.6,
+      "end": 366.34,
+      "text": "and Dr. Risa Lewis and others created an article"
+    },
+    {
+      "start": 366.34,
+      "end": 369.84,
+      "text": "just describing that focus was having its moment in 2020."
+    },
+    {
+      "start": 370.13,
+      "end": 377.39,
+      "text": "This is becoming standard of care in ICUs and the pattern of long ultrasound was being used"
+    },
+    {
+      "start": 377.39,
+      "end": 379.97,
+      "text": "to help us differentiate some of the questions that we have."
+    },
+    {
+      "start": 380.0,
+      "end": 386.92,
+      "text": "before is this ARDS is this volume overload is this both and so this was an explosion of research and"
+    },
+    {
+      "start": 386.92,
+      "end": 389.96,
+      "text": "I put that in quotations because while some of these are"
+    },
+    {
+      "start": 390.0,
+      "end": 396.54,
+      "text": "really useful clinical case reports, and some of these are very informed lung"
+    },
+    {
+      "start": 396.54,
+      "end": 399.98,
+      "text": "ultrasound anecdotes. The number of research"
+    },
+    {
+      "start": 400.0,
+      "end": 405.75,
+      "text": "articles doubled in a single year. And we really want to think about this as"
+    },
+    {
+      "start": 406.09,
+      "end": 408.79,
+      "text": "something we should be excited by, but also something that we should study with"
+    },
+    {
+      "start": 408.79,
+      "end": 409.97,
+      "text": "the same level of rigor that we..."
+    },
+    {
+      "start": 410.0,
+      "end": 411.56,
+      "text": "we would any other diagnostic modality,"
+    },
+    {
+      "start": 411.64,
+      "end": 413.6,
+      "text": "because if we think about the patterns of lung ultrasound"
+    },
+    {
+      "start": 413.6,
+      "end": 415.32,
+      "text": "that were described in COVID areas,"
+    },
+    {
+      "start": 415.86,
+      "end": 418.8,
+      "text": "they're the same that are described in just about any form"
+    },
+    {
+      "start": 419.54,
+      "end": 419.98,
+      "text": "of..."
+    },
+    {
+      "start": 420.0,
+      "end": 427.39,
+      "text": "ARDS, whether it's viral or bacterial. Outside of ARDS, lung ultrasound is used in patients"
+    },
+    {
+      "start": 427.39,
+      "end": 429.97,
+      "text": "with end-stage renal disease because we know that volume overload..."
+    },
+    {
+      "start": 430.0,
+      "end": 432.12,
+      "text": "is such a critical part of their care."
+    },
+    {
+      "start": 432.78,
+      "end": 434.66,
+      "text": "And we were able to do a study showing that"
+    },
+    {
+      "start": 434.66,
+      "end": 438.06,
+      "text": "the number of zones you scan will affect your accuracy"
+    },
+    {
+      "start": 438.06,
+      "end": 439.88,
+      "text": "and that the number of"
+    },
+    {
+      "start": 440.0,
+      "end": 445.15,
+      "text": "lines per zone can predict whether that patient is going to end up in the hospital or dead"
+    },
+    {
+      "start": 445.15,
+      "end": 446.21,
+      "text": "at the end of 30 days."
+    },
+    {
+      "start": 447.18,
+      "end": 449.96,
+      "text": "We even started thinking about, can we use..."
+    },
+    {
+      "start": 450.0,
+      "end": 454.36,
+      "text": "long ultrasound to just forecast whether or not a patient is going to do well, if they"
+    },
+    {
+      "start": 454.36,
+      "end": 456.4,
+      "text": "have end-stage renal disease in signs of volume over."
+    },
+    {
+      "start": 460.0,
+      "end": 464.3,
+      "text": "of research, got to the point where the American College of Physicians did a review of all"
+    },
+    {
+      "start": 464.3,
+      "end": 469.48,
+      "text": "the evidence and put appropriate use of focus for patients with acute respiratory..."
+    },
+    {
+      "start": 470.0,
+      "end": 474.52,
+      "text": "failure in their recommended guidelines. And you can see that they were able to say,"
+    },
+    {
+      "start": 474.52,
+      "end": 478.73,
+      "text": "We focus augments. Our clinical ability adds to physical examin history."
+    },
+    {
+      "start": 480.22,
+      "end": 481.82,
+      "text": "So that's more generally how we use lung ultrasound,"
+    },
+    {
+      "start": 481.82,
+      "end": 483.62,
+      "text": "but I wanted to talk about my favorite area,"
+    },
+    {
+      "start": 483.68,
+      "end": 484.42,
+      "text": "which is the ICU."
+    },
+    {
+      "start": 484.72,
+      "end": 486.96,
+      "text": "So how do we use this in patients who are critically ill?"
+    },
+    {
+      "start": 487.72,
+      "end": 489.1,
+      "text": "And one of the things we can do is we can just say,"
+    },
+    {
+      "start": 489.12,
+      "end": 489.28,
+      "text": "hey,"
+    },
+    {
+      "start": 490.16,
+      "end": 496.08,
+      "text": "Our patients are sick and complex, and oftentimes a chest x-ray does not give us sufficient information."
+    },
+    {
+      "start": 496.82,
+      "end": 499.98,
+      "text": "And so a direct comparison of long ultrasound to chest x-ray."
+    },
+    {
+      "start": 500.0,
+      "end": 505.44,
+      "text": "a CT scan as our gold standard shows us not just that ultrasound is more accurate than"
+    },
+    {
+      "start": 505.44,
+      "end": 509.88,
+      "text": "chest X right with CT as gold standard but also where the places that"
+    },
+    {
+      "start": 510.03,
+      "end": 513.51,
+      "text": "ultrasound is going to fall down will be, and specifically I'm talking about if you have"
+    },
+    {
+      "start": 513.51,
+      "end": 519.83,
+      "text": "areas of peripheral, bulless lung, that's going to block your ability to see anything that's deeper."
+    },
+    {
+      "start": 520.16,
+      "end": 525.64,
+      "text": "interior, or if you have a mass that has surrounded by normal lung tissue, ultrasound won't"
+    },
+    {
+      "start": 525.64,
+      "end": 529.96,
+      "text": "see it and CT scan will, or if you have an ammonia that's..."
+    },
+    {
+      "start": 530.03,
+      "end": 534.65,
+      "text": "hidden behind a gastric bubble, as is the case in this last slice of a CT, then you'll"
+    },
+    {
+      "start": 534.65,
+      "end": 536.79,
+      "text": "have a false negative on your lung ultrasound."
+    },
+    {
+      "start": 537.09,
+      "end": 539.97,
+      "text": "This sort of refinement of the specific diagnosis..."
+    },
+    {
+      "start": 540.0,
+      "end": 545.02,
+      "text": "a diagnostic accuracy of our patients is incredibly helpful in knowing how to use lung ultrasound"
+    },
+    {
+      "start": 545.02,
+      "end": 545.58,
+      "text": "in the ICU."
+    },
+    {
+      "start": 547.77,
+      "end": 549.97,
+      "text": "Beyond that, one of the hardest questions that I sometimes have faced."
+    },
+    {
+      "start": 550.0,
+      "end": 554.88,
+      "text": "with is is this opacity on a chest rate of graph infectious or simply a matter of a patient"
+    },
+    {
+      "start": 554.88,
+      "end": 558.4,
+      "text": "being supine for too long and having had a lactose."
+    },
+    {
+      "start": 559.02,
+      "end": 559.74,
+      "text": "And this studies."
+    },
+    {
+      "start": 560.0,
+      "end": 562.8,
+      "text": "said, hey, can we use a couple of different findings"
+    },
+    {
+      "start": 562.8,
+      "end": 563.94,
+      "text": "to differentiate this?"
+    },
+    {
+      "start": 564.12,
+      "end": 566.86,
+      "text": "And you can see here an example of a patient with dynamic"
+    },
+    {
+      "start": 566.86,
+      "end": 569.78,
+      "text": "air bronchograms, which they found to be highly specific"
+    },
+    {
+      "start": 569.78,
+      "end": 569.98,
+      "text": "for."
+    },
+    {
+      "start": 570.0,
+      "end": 576.52,
+      "text": "pneumonia in comparison to how to lactose with a specificity of 99% in their"
+    },
+    {
+      "start": 576.52,
+      "end": 579.98,
+      "text": "analysis. They also added color doppler of these to see what"
+    },
+    {
+      "start": 580.0,
+      "end": 584.82,
+      "text": "whether you could have signs of hyperemia in your infected patient versus normal blood flow"
+    },
+    {
+      "start": 584.82,
+      "end": 586.24,
+      "text": "in your adelectatic patient."
+    },
+    {
+      "start": 588.39,
+      "end": 589.97,
+      "text": "The other thing that comes up frequently in the..."
+    },
+    {
+      "start": 590.0,
+      "end": 595.16,
+      "text": "I see who does this patient have a new ventilator associated pneumonia and while we can do this"
+    },
+    {
+      "start": 595.16,
+      "end": 599.78,
+      "text": "with our existing standards using chest radiograph showing new opacity increase or change in"
+    },
+    {
+      "start": 599.78,
+      "end": 599.92,
+      "text": "I don't care"
+    },
+    {
+      "start": 600.0,
+      "end": 609.67,
+      "text": "Sputum and other lab values using lung ultrasound can help us make this more accurate and this was a nice protocol where they said hey"
+    },
+    {
+      "start": 610.22,
+      "end": 612.4,
+      "text": "We want to suspect ventilator associated pneumonia"
+    },
+    {
+      "start": 612.4,
+      "end": 613.48,
+      "text": "if they have one of these findings."
+    },
+    {
+      "start": 613.96,
+      "end": 614.88,
+      "text": "Then we're going to do ultrasound,"
+    },
+    {
+      "start": 615.56,
+      "end": 617.76,
+      "text": "and we're going to add points to our ultrasound"
+    },
+    {
+      "start": 618.21,
+      "end": 619.72,
+      "text": "to make a score."
+    },
+    {
+      "start": 620.0,
+      "end": 623.28,
+      "text": "And we're going to take the combination of clinical indicators and ultrasound and graphic indicators,"
+    },
+    {
+      "start": 623.5,
+      "end": 628.7,
+      "text": "and they demonstrated that this is highly accurate for the clinical diagnosis of ventilator"
+    },
+    {
+      "start": 628.7,
+      "end": 628.98,
+      "text": "associated."
+    },
+    {
+      "start": 631.44,
+      "end": 632.94,
+      "text": "Another question that arises is,"
+    },
+    {
+      "start": 633.28,
+      "end": 637.3,
+      "text": "is this a simple volume overload driven effusion,"
+    },
+    {
+      "start": 637.52,
+      "end": 639.98,
+      "text": "or is this an effusion that's become..."
+    },
+    {
+      "start": 640.0,
+      "end": 642.48,
+      "text": "coming in infected space that we need to think about drainage."
+    },
+    {
+      "start": 643.27,
+      "end": 648.61,
+      "text": "And so this is where we looked at 10-the-ultra-sound findings, differentiated from exidated pleural"
+    },
+    {
+      "start": 648.61,
+      "end": 648.85,
+      "text": "fusion."
+    },
+    {
+      "start": 648.85,
+      "end": 649.97,
+      "text": "And what we found is that N-"
+    },
+    {
+      "start": 650.0,
+      "end": 654.24,
+      "text": "a coic fluid does not help change our post-test probability of this being"
+    },
+    {
+      "start": 654.53,
+      "end": 659.03,
+      "text": "brinsy-dative or executive. But a highly a coic fluid, as seen here, or a"
+    },
+    {
+      "start": 659.03,
+      "end": 659.79,
+      "text": "eloculated."
+    },
+    {
+      "start": 660.03,
+      "end": 666.86,
+      "text": "As seen here, our super helpful for helping us understand whether or not this space is infected."
+    },
+    {
+      "start": 669.28,
+      "end": 669.94,
+      "text": "Beyond just die."
+    },
+    {
+      "start": 670.0,
+      "end": 674.82,
+      "text": "nosing whether or not we think that a fluid space around the lung is infected or not, we"
+    },
+    {
+      "start": 674.82,
+      "end": 677.48,
+      "text": "need to be using ultrasound to guide our thorescentesies."
+    },
+    {
+      "start": 677.52,
+      "end": 679.98,
+      "text": "And whether that's just marking a space..."
+    },
+    {
+      "start": 680.0,
+      "end": 687.02,
+      "text": "and making sure that there's no blood vessels seen here or in this new protocol proposed in the"
+    },
+    {
+      "start": 687.02,
+      "end": 689.98,
+      "text": "focus journal, are we thinking about a standardized approach?"
+    },
+    {
+      "start": 690.0,
+      "end": 693.88,
+      "text": "which for visualizing the blood vessels above and below the space in which we're thinking"
+    },
+    {
+      "start": 693.88,
+      "end": 699.64,
+      "text": "about putting our needle in order to understand if our patient has an unusual vascular"
+    },
+    {
+      "start": 699.64,
+      "end": 699.9,
+      "text": "or not."
+    },
+    {
+      "start": 700.0,
+      "end": 705.88,
+      "text": "They would put them at higher risk as seen at this artery that's somehow right in the middle of the rib space"
+    },
+    {
+      "start": 705.88,
+      "end": 709.96,
+      "text": "We can also think about using poucus to meet our diagnosis"
+    },
+    {
+      "start": 710.0,
+      "end": 714.62,
+      "text": "to Criteria for ARDS. This was originally described in what's known as the"
+    },
+    {
+      "start": 714.62,
+      "end": 719.6,
+      "text": "Kagali modification of the Berlin Criteria for ARDS, but in the last year, both the"
+    },
+    {
+      "start": 719.6,
+      "end": 719.88,
+      "text": "American"
+    },
+    {
+      "start": 720.0,
+      "end": 722.06,
+      "text": "and European groups have created a new definitions"
+    },
+    {
+      "start": 722.06,
+      "end": 723.8,
+      "text": "for the acute respiratory distress syndrome."
+    },
+    {
+      "start": 724.24,
+      "end": 726.38,
+      "text": "And you can see specifically that they call out"
+    },
+    {
+      "start": 726.38,
+      "end": 729.76,
+      "text": "ARDS in a resource limited setting where you can use."
+    },
+    {
+      "start": 730.13,
+      "end": 735.43,
+      "text": "focus instead of chest radiograph or chest CT to meet your necessary imaging diagnostic"
+    },
+    {
+      "start": 735.43,
+      "end": 737.65,
+      "text": "criteria of bilateral abnormalities."
+    },
+    {
+      "start": 740.06,
+      "end": 742.1,
+      "text": "Beyond just making the diagnosis of ARDS though,"
+    },
+    {
+      "start": 742.52,
+      "end": 745.02,
+      "text": "we can use scoring systems that have been proposed"
+    },
+    {
+      "start": 745.43,
+      "end": 747.92,
+      "text": "for understanding whether or not people are getting better."
+    },
+    {
+      "start": 748.66,
+      "end": 749.96,
+      "text": "And so this is where you take somebody..."
+    },
+    {
+      "start": 750.0,
+      "end": 754.68,
+      "text": "who has ARDS and you look at each zone and you say does that zone have an A-line pattern,"
+    },
+    {
+      "start": 755.3,
+      "end": 759.48,
+      "text": "a pattern with discrete B-lines, a pattern with confluent B-lines or consolidations and you"
+    },
+    {
+      "start": 759.48,
+      "end": 759.94,
+      "text": "to give them points."
+    },
+    {
+      "start": 760.0,
+      "end": 761.9,
+      "text": "increasing as they move from one to the other."
+    },
+    {
+      "start": 762.62,
+      "end": 764.0,
+      "text": "Based on these number of points,"
+    },
+    {
+      "start": 764.6,
+      "end": 767.54,
+      "text": "and some, you can start to understand a little bit about"
+    },
+    {
+      "start": 767.54,
+      "end": 769.98,
+      "text": "not just the severity of the imaging findings of the..."
+    },
+    {
+      "start": 770.03,
+      "end": 772.69,
+      "text": "But also our things are getting better or worse."
+    },
+    {
+      "start": 774.16,
+      "end": 776.78,
+      "text": "So for example, one of the first ways that they use this was to say,"
+    },
+    {
+      "start": 776.78,
+      "end": 779.84,
+      "text": "Hey, can we use this to guide recruitment with Pete?"
+    },
+    {
+      "start": 780.67,
+      "end": 783.47,
+      "text": "And they did this by taking a patient down to zero peep"
+    },
+    {
+      "start": 783.47,
+      "end": 786.99,
+      "text": "or ZEEP as it is locally known, and then adding peep"
+    },
+    {
+      "start": 786.99,
+      "end": 789.11,
+      "text": "and seeing what happened to the lung ultrasound findings"
+    },
+    {
+      "start": 789.11,
+      "end": 789.81,
+      "text": "to identify."
+    },
+    {
+      "start": 790.44,
+      "end": 794.68,
+      "text": "recruitable zones of long. The protocol here is very clever and they were able"
+    },
+    {
+      "start": 794.68,
+      "end": 797.56,
+      "text": "to show that this indicated which parts of the lung were going to be"
+    },
+    {
+      "start": 797.56,
+      "end": 798.86,
+      "text": "recruitable and which parts weren't."
+    },
+    {
+      "start": 800.03,
+      "end": 802.71,
+      "text": "When they did that, they had very tight correlation"
+    },
+    {
+      "start": 802.71,
+      "end": 804.43,
+      "text": "with their exhaled tidal volumes."
+    },
+    {
+      "start": 806.74,
+      "end": 809.7,
+      "text": "The other primary therapy for ARDS that we know works."
+    },
+    {
+      "start": 810.0,
+      "end": 812.42,
+      "text": "is prone positioning for moderately severe ideas."
+    },
+    {
+      "start": 813.02,
+      "end": 814.48,
+      "text": "But sometimes we will wonder in our patients"
+    },
+    {
+      "start": 814.48,
+      "end": 815.98,
+      "text": "who might be at higher risk for pruning"
+    },
+    {
+      "start": 815.98,
+      "end": 818.34,
+      "text": "whether that's for human-enemic instability"
+    },
+    {
+      "start": 818.34,
+      "end": 819.98,
+      "text": "or for skin, uh, vulnerable..."
+    },
+    {
+      "start": 820.0,
+      "end": 823.7,
+      "text": "ability will wonder whether they're likely to benefit from an oxygenation standpoint."
+    },
+    {
+      "start": 824.3,
+      "end": 828.36,
+      "text": "And so this study was able to show that if you look at those lung zones and score them"
+    },
+    {
+      "start": 828.36,
+      "end": 829.98,
+      "text": "in the same way, the same way that we did..."
+    },
+    {
+      "start": 830.0,
+      "end": 835.98,
+      "text": "before that you can predict a pattern, more posterior higher scored zones, being the"
+    },
+    {
+      "start": 835.98,
+      "end": 839.5,
+      "text": "patients that are more likely to have a response to prone positioning."
+    },
+    {
+      "start": 840.19,
+      "end": 841.57,
+      "text": "and that response is seen both in imaging"
+    },
+    {
+      "start": 841.57,
+      "end": 843.47,
+      "text": "and potentially in oxygenation."
+    },
+    {
+      "start": 843.89,
+      "end": 845.25,
+      "text": "I do want to put the caveat here"
+    },
+    {
+      "start": 845.25,
+      "end": 846.45,
+      "text": "that I teach all of my trainees,"
+    },
+    {
+      "start": 846.93,
+      "end": 849.43,
+      "text": "which is that the benefits of prone positioning"
+    },
+    {
+      "start": 849.43,
+      "end": 849.97,
+      "text": "in terms of..."
+    },
+    {
+      "start": 850.03,
+      "end": 854.87,
+      "text": "mortality in ARDS are not necessarily dependent on the improvement in oxygenation, but this can"
+    },
+    {
+      "start": 854.87,
+      "end": 857.01,
+      "text": "be helpful when we're trying to come up with a plan for the day."
+    },
+    {
+      "start": 858.78,
+      "end": 859.98,
+      "text": "As I said before, one of the main..."
+    },
+    {
+      "start": 860.06,
+      "end": 862.42,
+      "text": "questions we have in our critically ill patients is,"
+    },
+    {
+      "start": 862.82,
+      "end": 864.52,
+      "text": "are the imaging abnormalities I'm seeing"
+    },
+    {
+      "start": 864.52,
+      "end": 869.26,
+      "text": "from volume overload or are they from progressive ARDS?"
+    },
+    {
+      "start": 870.0,
+      "end": 872.14,
+      "text": "or non-cardiogenic pulmonary edema."
+    },
+    {
+      "start": 872.58,
+      "end": 876.34,
+      "text": "Capetti had all tried to answer this by looking at groups of patients that had known"
+    },
+    {
+      "start": 876.34,
+      "end": 879.12,
+      "text": "areas and groups of patients that had known acute pulmonary edema."
+    },
+    {
+      "start": 879.58,
+      "end": 879.98,
+      "text": "And when they did"
+    },
+    {
+      "start": 880.0,
+      "end": 884.82,
+      "text": "that what they found was that B lines were present for all of these patients, but if you"
+    },
+    {
+      "start": 884.82,
+      "end": 888.82,
+      "text": "looked closely at the pluria, you could see a pattern where the cardiogenic pulmonary"
+    },
+    {
+      "start": 888.82,
+      "end": 889.76,
+      "text": "of democations, heads."
+    },
+    {
+      "start": 890.0,
+      "end": 895.42,
+      "text": "and the ARDS patients tended to have more commonly pleural changes."
+    },
+    {
+      "start": 896.82,
+      "end": 899.9,
+      "text": "Similarly, you could look at reduced or absent lung"
+    },
+    {
+      "start": 900.06,
+      "end": 902.94,
+      "text": "and the presence of consolidations or effusions"
+    },
+    {
+      "start": 902.94,
+      "end": 905.78,
+      "text": "has been useful for differentiating the two groups."
+    },
+    {
+      "start": 906.82,
+      "end": 909.86,
+      "text": "This has been validated in further follow-up studies helping"
+    },
+    {
+      "start": 910.0,
+      "end": 914.54,
+      "text": "understand the utility of this technology. If you have identified that your"
+    },
+    {
+      "start": 914.54,
+      "end": 918.92,
+      "text": "patient is volume overloaded, then Long Ultra Sans has a new utility, which is, hey,"
+    },
+    {
+      "start": 919.2,
+      "end": 919.88,
+      "text": "how much"
+    },
+    {
+      "start": 920.06,
+      "end": 922.78,
+      "text": "congestion remains because you can quantify it in a way with"
+    },
+    {
+      "start": 922.78,
+      "end": 925.38,
+      "text": "bilines that you really can't with chest x-ray."
+    },
+    {
+      "start": 925.92,
+      "end": 928.4,
+      "text": "And so when you look at this, they looked at patients who had"
+    },
+    {
+      "start": 928.4,
+      "end": 929.96,
+      "text": "more than 15 bilines."
+    },
+    {
+      "start": 930.0,
+      "end": 934.08,
+      "text": "and they said, wow, this really predicts event-free survival"
+    },
+    {
+      "start": 934.08,
+      "end": 935.92,
+      "text": "from heart failure patients when they're discharged."
+    },
+    {
+      "start": 937.79,
+      "end": 939.97,
+      "text": "Those are the ways in which lung ultrasound is currently..."
+    },
+    {
+      "start": 940.03,
+      "end": 943.4,
+      "text": "being used. I want to talk now a little bit about where I see the future of"
+    },
+    {
+      "start": 943.4,
+      "end": 947.7,
+      "text": "lung ultrasound going. And one of the first places is expanding the indications"
+    },
+    {
+      "start": 948.16,
+      "end": 949.88,
+      "text": "we're learning more and more about how lung"
+    },
+    {
+      "start": 950.0,
+      "end": 953.28,
+      "text": "ultrasound presents in different pathologic ideologies."
+    },
+    {
+      "start": 953.88,
+      "end": 956.53,
+      "text": "And so, for example, PE, which is typically described"
+    },
+    {
+      "start": 956.53,
+      "end": 959.97,
+      "text": "as just having clear lungs, can actually have small-"
+    },
+    {
+      "start": 960.0,
+      "end": 963.74,
+      "text": "micro-consolidations, and you can look at the blood flow inside of them to say,"
+    },
+    {
+      "start": 963.74,
+      "end": 966.26,
+      "text": "hey, is this because of an infectious inflammatory etiology,"
+    },
+    {
+      "start": 966.64,
+      "end": 969.8,
+      "text": "or is this because a clot is preventing blood to get into that portion of the lung?"
+    },
+    {
+      "start": 970.83,
+      "end": 975.12,
+      "text": "And then there's this idea that you could use ultrasound contrast to actually see the"
+    },
+    {
+      "start": 975.12,
+      "end": 978.82,
+      "text": "blood flow inside of the lung and understand where in the lung is not getting blood flow."
+    },
+    {
+      "start": 980.86,
+      "end": 985.02,
+      "text": "Beyond this, I like the idea that long ultrasound is easy to do, and so it should not be limited"
+    },
+    {
+      "start": 985.02,
+      "end": 987.16,
+      "text": "to just the intensive care unit."
+    },
+    {
+      "start": 988.16,
+      "end": 989.98,
+      "text": "Obstetrics and gynecology res-"
+    },
+    {
+      "start": 990.0,
+      "end": 993.94,
+      "text": "are learning how to do this to help look for parapartium and postpartum cardiomyopathy."
+    },
+    {
+      "start": 994.22,
+      "end": 996.92,
+      "text": "They're looking for amiotic fluid embolism."
+    },
+    {
+      "start": 997.58,
+      "end": 999.66,
+      "text": "The family medicine group"
+    },
+    {
+      "start": 1000.1,
+      "end": 1002.0,
+      "text": "I said in their ACGME guidelines"
+    },
+    {
+      "start": 1002.0,
+      "end": 1004.8,
+      "text": "that this should be a part of every primary care docs"
+    },
+    {
+      "start": 1004.8,
+      "end": 1005.82,
+      "text": "residency training."
+    },
+    {
+      "start": 1006.32,
+      "end": 1009.7,
+      "text": "And when it comes to intraoperative lung ultrasound,"
+    },
+    {
+      "start": 1010.03,
+      "end": 1013.81,
+      "text": "There are a number of ways that you can apply this while the patient is on the table in"
+    },
+    {
+      "start": 1013.81,
+      "end": 1014.25,
+      "text": "the OR."
+    },
+    {
+      "start": 1015.52,
+      "end": 1018.58,
+      "text": "And then afterwards you can look at their lung ultrasound findings to see whether you can"
+    },
+    {
+      "start": 1018.58,
+      "end": 1019.98,
+      "text": "predict who's..."
+    },
+    {
+      "start": 1020.0,
+      "end": 1026.09,
+      "text": "to have this more complex post-operatives. Not just limiting this to the area of the intensive"
+    },
+    {
+      "start": 1026.09,
+      "end": 1027.69,
+      "text": "of carrying it, we can think about not just"
+    },
+    {
+      "start": 1027.69,
+      "end": 1029.61,
+      "text": "limiting it to physician scanners."
+    },
+    {
+      "start": 1030.35,
+      "end": 1035.23,
+      "text": "We can see that APPs are starting to do this, and respiratory therapists globally have"
+    },
+    {
+      "start": 1035.23,
+      "end": 1039.49,
+      "text": "started to be involved in research on the applications of long ultrasound performed"
+    },
+    {
+      "start": 1039.49,
+      "end": 1039.97,
+      "text": "by our"
+    },
+    {
+      "start": 1041.58,
+      "end": 1045.44,
+      "text": "NERSES have been using lung ultrasound in order to make diagnoses of pneumonia and"
+    },
+    {
+      "start": 1045.44,
+      "end": 1048.2,
+      "text": "dysnic patients and to help with triage in the ER."
+    },
+    {
+      "start": 1050.0,
+      "end": 1053.76,
+      "text": "I'm trying to think about where the best financial return on investment is with the prevalence"
+    },
+    {
+      "start": 1053.76,
+      "end": 1054.4,
+      "text": "of heart failure."
+    },
+    {
+      "start": 1054.54,
+      "end": 1059.66,
+      "text": "It's got to be understanding if I'm making progress and getting my patient who their ideal"
+    },
+    {
+      "start": 1059.66,
+      "end": 1059.98,
+      "text": "I don't know what you're talking about."
+    },
+    {
+      "start": 1060.0,
+      "end": 1064.69,
+      "text": "data as quickly as possible. And so this is demonstrated in studies where we're"
+    },
+    {
+      "start": 1064.69,
+      "end": 1068.33,
+      "text": "trying to teach internal medicine teams to use lung ultrasound to drive their"
+    },
+    {
+      "start": 1068.33,
+      "end": 1069.97,
+      "text": "diuretical to the"
+    },
+    {
+      "start": 1070.03,
+      "end": 1074.35,
+      "text": "when a patient's ready for discharge or to decide whether or not a patient's"
+    },
+    {
+      "start": 1074.35,
+      "end": 1079.68,
+      "text": "going to be re-admitted. As I said before, lung ultrasound is a study of"
+    },
+    {
+      "start": 1079.68,
+      "end": 1079.96,
+      "text": "Partific."
+    },
+    {
+      "start": 1080.19,
+      "end": 1089.97,
+      "text": "And so we're learning how to refine our technique in order to make sure that those artifacts are as visible as possible and that might mean changing the depth the gain which presets happen in the back and where"
+    },
+    {
+      "start": 1090.0,
+      "end": 1092.36,
+      "text": "where we set our zone of focus."
+    },
+    {
+      "start": 1094.47,
+      "end": 1098.77,
+      "text": "We also have the idea that the traditional zones of lung ultrasound are not necessarily"
+    },
+    {
+      "start": 1098.77,
+      "end": 1099.91,
+      "text": "the only zones of interest."
+    },
+    {
+      "start": 1100.29,
+      "end": 1103.84,
+      "text": "and maybe we should be just sweeping a chest,"
+    },
+    {
+      "start": 1104.08,
+      "end": 1105.92,
+      "text": "understanding from top to bottom"
+    },
+    {
+      "start": 1105.92,
+      "end": 1107.58,
+      "text": "and covering a lot more surface area"
+    },
+    {
+      "start": 1107.58,
+      "end": 1109.3,
+      "text": "in order to get a better big picture."
+    },
+    {
+      "start": 1110.96,
+      "end": 1113.74,
+      "text": "When it comes to the even more advanced cases,"
+    },
+    {
+      "start": 1114.1,
+      "end": 1116.34,
+      "text": "if you already have a transisophageal..."
+    },
+    {
+      "start": 1124.45,
+      "end": 1127.21,
+      "text": "and chest, where they were able to show that by doing so,"
+    },
+    {
+      "start": 1127.21,
+      "end": 1129.97,
+      "text": "they could identify a PE, or a PE."
+    },
+    {
+      "start": 1130.0,
+      "end": 1134.4,
+      "text": "with refractory adelectasis while in the TEE suite."
+    },
+    {
+      "start": 1136.07,
+      "end": 1139.87,
+      "text": "And then we have been stuck with this handheld probe for a long time."
+    },
+    {
+      "start": 1140.0,
+      "end": 1144.05,
+      "text": "and I love it, but there are more and more scientists working on the idea that we're"
+    },
+    {
+      "start": 1144.05,
+      "end": 1148.21,
+      "text": "going to just put ultrasound wherever we need it to be and can leave it there in order"
+    },
+    {
+      "start": 1148.21,
+      "end": 1149.87,
+      "text": "to understand over time what's happening."
+    },
+    {
+      "start": 1150.06,
+      "end": 1159.91,
+      "text": "that ultrasound patch. Outside of the hospital, we were able to show that you can do lung ultrasound on home visits and answer."
+    },
+    {
+      "start": 1160.0,
+      "end": 1164.36,
+      "text": "important clinical questions in a patient that can't be moved to a chest rate"
+    },
+    {
+      "start": 1164.36,
+      "end": 1168.52,
+      "text": "a graph or who can't have blood drawn easily. And you can use this to adjust"
+    },
+    {
+      "start": 1168.52,
+      "end": 1169.94,
+      "text": "therapies in the hospital."
+    },
+    {
+      "start": 1170.03,
+      "end": 1174.54,
+      "text": "at home patient and if we're saying we don't need to be in the hospital and we're saying we don't"
+    },
+    {
+      "start": 1174.54,
+      "end": 1179.06,
+      "text": "need doctors to do it then the next step is can we have our patients doing lung ultrasound on"
+    },
+    {
+      "start": 1179.06,
+      "end": 1179.9,
+      "text": "themselves and the"
+    },
+    {
+      "start": 1180.0,
+      "end": 1184.78,
+      "text": "The answer is probably yes, as an increasing number of case series have demonstrated."
+    },
+    {
+      "start": 1186.8,
+      "end": 1189.96,
+      "text": "So to wrap this up, just think about what I want you to take away from today's..."
+    },
+    {
+      "start": 1190.0,
+      "end": 1196.6,
+      "text": "We briefly reviewed Long Ultrasign, and I said before, and I'll say it again, this is one of the easier applications for Pocus."
+    },
+    {
+      "start": 1197.08,
+      "end": 1199.98,
+      "text": "We have an alphabet that helps to guide us, and it works for all..."
+    },
+    {
+      "start": 1200.0,
+      "end": 1201.38,
+      "text": "sorts of different lung pathologies."
+    },
+    {
+      "start": 1202.06,
+      "end": 1203.4,
+      "text": "When it comes to how we're using it,"
+    },
+    {
+      "start": 1203.44,
+      "end": 1205.5,
+      "text": "we're starting to understand that for just about everything,"
+    },
+    {
+      "start": 1205.58,
+      "end": 1206.86,
+      "text": "it's better than a chest radiograph,"
+    },
+    {
+      "start": 1207.38,
+      "end": 1209.92,
+      "text": "and you can see a lot of different pathologies with it."
+    },
+    {
+      "start": 1210.03,
+      "end": 1213.93,
+      "text": "not just our traditional volume overload versus COPD."
+    },
+    {
+      "start": 1214.83,
+      "end": 1216.81,
+      "text": "And it's becoming a part of the general guidelines"
+    },
+    {
+      "start": 1216.81,
+      "end": 1219.71,
+      "text": "for specialty and national societies."
+    },
+    {
+      "start": 1221.06,
+      "end": 1222.16,
+      "text": "In critical care specifically,"
+    },
+    {
+      "start": 1222.2,
+      "end": 1223.58,
+      "text": "we can use it to make diagnoses"
+    },
+    {
+      "start": 1223.58,
+      "end": 1225.24,
+      "text": "and we can use it to predict response"
+    },
+    {
+      "start": 1225.24,
+      "end": 1227.18,
+      "text": "to the therapies that we use for our patients."
+    },
+    {
+      "start": 1228.04,
+      "end": 1229.6,
+      "text": "And in the future, we're gonna have this."
+    },
+    {
+      "start": 1230.0,
+      "end": 1233.31,
+      "text": "being applied outside of the ICU, outside of the hospital,"
+    },
+    {
+      "start": 1233.94,
+      "end": 1236.22,
+      "text": "being used by non-physician providers"
+    },
+    {
+      "start": 1236.56,
+      "end": 1239.96,
+      "text": "and by patients themselves, breaking the boundaries on."
+    },
+    {
+      "start": 1240.06,
+      "end": 1241.5,
+      "text": "how this technology can be applied."
+    },
+    {
+      "start": 1243.06,
+      "end": 1244.68,
+      "text": "Thank you so much, as we conclude,"
+    },
+    {
+      "start": 1245.19,
+      "end": 1247.22,
+      "text": "lung ultrasound is growing in popularity."
+    },
+    {
+      "start": 1247.5,
+      "end": 1248.84,
+      "text": "The evidence space is exploding."
+    },
+    {
+      "start": 1249.3,
+      "end": 1249.96,
+      "text": "In critical care."
+    },
+    {
+      "start": 1250.0,
+      "end": 1252.32,
+      "text": "our ability to detect ventilator associated pneumonia,"
+    },
+    {
+      "start": 1252.8,
+      "end": 1255.1,
+      "text": "pneumothorax, and modify our ARDS management"
+    },
+    {
+      "start": 1255.1,
+      "end": 1258.0,
+      "text": "is incredibly exciting, and the future of lung ultrasound"
+    },
+    {
+      "start": 1258.0,
+      "end": 1259.82,
+      "text": "is going to incorporate a lot of new technique."
+    },
+    {
+      "start": 1260.99,
+      "end": 1264.47,
+      "text": "Here's some citations. That was a bit of a whirlwind of evidence review."
+    },
+    {
+      "start": 1265.39,
+      "end": 1267.59,
+      "text": "Thank you so much. I'm excited to talk to you about questions."
+    },
+    {
+      "start": 1270.67,
+      "end": 1271.89,
+      "text": "All right, thanks so much, Cameron."
+    },
+    {
+      "start": 1272.78,
+      "end": 1273.7,
+      "text": "It's you unmuted here."
+    },
+    {
+      "start": 1274.3,
+      "end": 1275.8,
+      "text": "All right, that was our presentation."
+    },
+    {
+      "start": 1276.3,
+      "end": 1278.22,
+      "text": "So we have time for Q&A now."
+    },
+    {
+      "start": 1278.74,
+      "end": 1279.8,
+      "text": "So if you have any questions,"
+    },
+    {
+      "start": 1280.0,
+      "end": 1283.2,
+      "text": "You can enter them in the Q&A box at the bottom or the side of your screen."
+    },
+    {
+      "start": 1283.92,
+      "end": 1286.58,
+      "text": "Cameron, thanks so much for being here with us."
+    },
+    {
+      "start": 1287.12,
+      "end": 1289.52,
+      "text": "Let's see, it looks like we do have a couple of questions."
+    },
+    {
+      "start": 1290.0,
+      "end": 1295.1,
+      "text": "ready. Um, let's see. Can you speak a little more to the training and implementation of lung"
+    },
+    {
+      "start": 1295.1,
+      "end": 1299.87,
+      "text": "focus? Yeah. This is, uh, this is one of the things that that gets me really excited by lung"
+    },
+    {
+      "start": 1300.0,
+      "end": 1308.7,
+      "text": "I mean, I mentioned that we got to compare a long ultrasound to, we got to compare a long"
+    },
+    {
+      "start": 1308.7,
+      "end": 1309.88,
+      "text": "of some biomedical students."
+    },
+    {
+      "start": 1310.0,
+      "end": 1313.92,
+      "text": "with an hour of training to option done by people who have been using awesome for 10 years,"
+    },
+    {
+      "start": 1314.06,
+      "end": 1319.98,
+      "text": "and their ability to count the lines is basically the same. The more exciting part is when can you get the kind of"
+    },
+    {
+      "start": 1320.0,
+      "end": 1324.96,
+      "text": "accuracy that Lichtenstein offered in his papers or where you can say you're more accurate than a chest"
+    },
+    {
+      "start": 1324.96,
+      "end": 1329.9,
+      "text": "X-ray for pneumonia. And I'll tell you the number is still less than 20 scans after"
+    },
+    {
+      "start": 1330.0,
+      "end": 1334.58,
+      "text": "several papers kind of looking at this and that's just an achievable number for anybody."
+    },
+    {
+      "start": 1334.98,
+      "end": 1338.04,
+      "text": "We can integrate that into medical school training. We can integrate that into"
+    },
+    {
+      "start": 1338.71,
+      "end": 1339.97,
+      "text": "BARTY SCHOOLTRA"
+    },
+    {
+      "start": 1340.0,
+      "end": 1349.92,
+      "text": "We can integrate that into residency and my favorite place to target with this is residency because if you can get people to change their clinical diet"
+    },
+    {
+      "start": 1350.0,
+      "end": 1359.91,
+      "text": "agnostic algorithms and integrate ultrasound as is recommended by the American College of Physicians as opposed to saying I'm just going to use ultrasound or just going to use something else, then we increase our"
+    },
+    {
+      "start": 1360.0,
+      "end": 1362.32,
+      "text": "diagnostic accuracy, and that means we get the right answer faster."
+    },
+    {
+      "start": 1363.04,
+      "end": 1366.68,
+      "text": "You know, I like the joke that when a patient, a typical patient that comes in who has a"
+    },
+    {
+      "start": 1366.68,
+      "end": 1369.98,
+      "text": "history of heart failure and COPD and volume overloaded."
+    },
+    {
+      "start": 1370.03,
+      "end": 1372.53,
+      "text": "and airways disease, and might have pneumonia,"
+    },
+    {
+      "start": 1373.23,
+      "end": 1374.15,
+      "text": "and you're trying to figure out what to do,"
+    },
+    {
+      "start": 1374.55,
+      "end": 1377.06,
+      "text": "that we almost always end up giving them steroids,"
+    },
+    {
+      "start": 1377.5,
+      "end": 1378.8,
+      "text": "and diuretics, and antibiotics,"
+    },
+    {
+      "start": 1379.08,
+      "end": 1379.96,
+      "text": "and we kind of hope that it'll..."
+    },
+    {
+      "start": 1380.0,
+      "end": 1384.52,
+      "text": "comes out in the wash. And usually it does, but that the side effect profile of all these"
+    },
+    {
+      "start": 1384.52,
+      "end": 1388.02,
+      "text": "things means that we're not being as elegant as we could have been. And this is where a long"
+    },
+    {
+      "start": 1388.02,
+      "end": 1389.72,
+      "text": "ultrasound can make a difference."
+    },
+    {
+      "start": 1390.06,
+      "end": 1393.17,
+      "text": "It can just let us nudge ourselves one way or another to say,"
+    },
+    {
+      "start": 1393.23,
+      "end": 1396.03,
+      "text": "hey, you know what, I see a few speed lines."
+    },
+    {
+      "start": 1396.05,
+      "end": 1397.79,
+      "text": "We're going to diaries before we do steroids."
+    },
+    {
+      "start": 1398.07,
+      "end": 1399.69,
+      "text": "That would be fighting each other otherwise."
+    },
+    {
+      "start": 1400.0,
+      "end": 1405.94,
+      "text": "man, we can finally see this focal pneumonia, we can focus on our antibiotics, we don't need"
+    },
+    {
+      "start": 1405.94,
+      "end": 1409.76,
+      "text": "to worry about diarrhea in this patient, who might be becoming septic."
+    },
+    {
+      "start": 1410.35,
+      "end": 1419.97,
+      "text": "And so, to me, the training question is really one of how do we best integrate this into the training paradigms that exist for different professions."
+    },
+    {
+      "start": 1420.0,
+      "end": 1428.08,
+      "text": "So we can get people to start using this at a time where it matters as opposed to when they've already developed their own their own protocols and we're trying to commit some to change something."
+    },
+    {
+      "start": 1430.0,
+      "end": 1431.4,
+      "text": "That's what you're, you're a hell of an important place."
+    },
+    {
+      "start": 1432.1,
+      "end": 1432.94,
+      "text": "Yeah, it was great."
+    },
+    {
+      "start": 1433.74,
+      "end": 1435.44,
+      "text": "Yeah, we've got a couple more here."
+    },
+    {
+      "start": 1435.84,
+      "end": 1439.32,
+      "text": "Can we use this for the extubation of the trachea?"
+    },
+    {
+      "start": 1440.19,
+      "end": 1443.37,
+      "text": "Yeah, so I think this question is asking about,"
+    },
+    {
+      "start": 1443.57,
+      "end": 1445.41,
+      "text": "can we use this to see trigolidema?"
+    },
+    {
+      "start": 1447.72,
+      "end": 1449.12,
+      "text": "And the answer to that is,"
+    },
+    {
+      "start": 1450.03,
+      "end": 1455.17,
+      "text": "maybe. I don't know of any studies that looked at this and the challenge is that the airway"
+    },
+    {
+      "start": 1455.17,
+      "end": 1459.87,
+      "text": "is really tricky to visualize because there's air in it and the specific place where you'd be looking"
+    },
+    {
+      "start": 1460.03,
+      "end": 1466.39,
+      "text": "for edema, you've got the balloon of the end of tracheal tube, and so that makes it a little"
+    },
+    {
+      "start": 1466.39,
+      "end": 1469.95,
+      "text": "tricky. Now if you're asking about extubation"
+    },
+    {
+      "start": 1470.0,
+      "end": 1474.08,
+      "text": "in general. Is this patient ready? That's been studied a little bit more. And so if you're"
+    },
+    {
+      "start": 1474.08,
+      "end": 1479.61,
+      "text": "a quite reason for intubation was, for example, volume overload, then because B-line's"
+    },
+    {
+      "start": 1479.61,
+      "end": 1479.97,
+      "text": "Disappear."
+    },
+    {
+      "start": 1480.0,
+      "end": 1484.28,
+      "text": "in real time. As you die, read somebody. The answer is yes, and the number of B lines can predict"
+    },
+    {
+      "start": 1484.28,
+      "end": 1489.2,
+      "text": "their likelihood of re-intivation. For me, I'll be honest, I don't count B lines and decide whether"
+    },
+    {
+      "start": 1489.2,
+      "end": 1489.98,
+      "text": "and not to have to do it."
+    },
+    {
+      "start": 1490.0,
+      "end": 1496.5,
+      "text": "But I do look and see, hey man, there's still a lot of be lines. I'm gonna be extra aggressive with my diaries"
+    },
+    {
+      "start": 1496.5,
+      "end": 1499.87,
+      "text": "Is before excavation and I'm gonna think about is this the"
+    },
+    {
+      "start": 1500.0,
+      "end": 1504.36,
+      "text": "how you excavate to positive pressure, to BIPAP or CPAP rather than"
+    },
+    {
+      "start": 1504.36,
+      "end": 1507.84,
+      "text": "excavating to high floor against a cannula. And so again,"
+    },
+    {
+      "start": 1508.46,
+      "end": 1509.88,
+      "text": "thinking about this not as one thing."
+    },
+    {
+      "start": 1510.0,
+      "end": 1513.85,
+      "text": "but just giving us information about the overall"
+    },
+    {
+      "start": 1514.43,
+      "end": 1515.83,
+      "text": "albiolar interstitial space"
+    },
+    {
+      "start": 1517.12,
+      "end": 1519.52,
+      "text": "and kind of letting that drive our decisions."
+    },
+    {
+      "start": 1520.38,
+      "end": 1529.26,
+      "text": "Separate from Parankamo ultrasound, there is a body of literature and I got to write a review on this about whether or not we can use diaphragmatic ultrasound inside who's going to do well after"
+    },
+    {
+      "start": 1529.26,
+      "end": 1529.9,
+      "text": "recitation and"
+    },
+    {
+      "start": 1530.03,
+      "end": 1534.79,
+      "text": "And diaphragmatic excursion, the answer is almost certainly no when somebody's on mechanical"
+    },
+    {
+      "start": 1534.79,
+      "end": 1536.91,
+      "text": "ventilation, that's just driven by the vent."
+    },
+    {
+      "start": 1537.19,
+      "end": 1539.97,
+      "text": "And diaphragmatic thickening, the answer is maybe..."
+    },
+    {
+      "start": 1540.0,
+      "end": 1546.8,
+      "text": "it does predict re-intubation, it does predict weakness post-exhibition. The challenge with this"
+    },
+    {
+      "start": 1546.8,
+      "end": 1549.94,
+      "text": "is it really is only doable on somebody's own minimal ventilator vent setting."
+    },
+    {
+      "start": 1550.0,
+      "end": 1553.08,
+      "text": "so they have to be on very low pressure support in order to have a meaningful diet right"
+    },
+    {
+      "start": 1553.08,
+      "end": 1556.5,
+      "text": "not thickening. And there's this is a higher level skill. It takes time to get those sort"
+    },
+    {
+      "start": 1556.5,
+      "end": 1559.98,
+      "text": "of millimeter measurements to get really good at those, as opposed to just counting B-line's looking for"
+    },
+    {
+      "start": 1560.0,
+      "end": 1561.68,
+      "text": "patterns of airlines' consultations."
+    },
+    {
+      "start": 1562.34,
+      "end": 1564.44,
+      "text": "But if you do get good at differing medical,"
+    },
+    {
+      "start": 1564.6,
+      "end": 1566.16,
+      "text": "which is not especially if you're"
+    },
+    {
+      "start": 1566.16,
+      "end": 1569.98,
+      "text": "working on a transplant center, or a cardiac surgery center."
+    },
+    {
+      "start": 1570.0,
+      "end": 1573.02,
+      "text": "where you're seeing a lot of people who have potential for damage of their"
+    },
+    {
+      "start": 1573.02,
+      "end": 1576.51,
+      "text": "fronted nerves or their inner passive nerves. Then this can be really useful."
+    },
+    {
+      "start": 1576.65,
+      "end": 1579.63,
+      "text": "You can say, oh man, this person has diaphragmatic paralysis."
+    },
+    {
+      "start": 1580.29,
+      "end": 1584.11,
+      "text": "We're going to think about early trait gas to me if everything's pointing that way as opposed to late trait gas to me."
+    },
+    {
+      "start": 1584.27,
+      "end": 1589.91,
+      "text": "Or maybe we're going to think about excavating right to positive pressure ventilation again because we're anticipating that they're going to have"
+    },
+    {
+      "start": 1590.0,
+      "end": 1595.26,
+      "text": "weaker diaphragm in a longer time for recovery. So yeah, so I do use it for"
+    },
+    {
+      "start": 1595.26,
+      "end": 1599.98,
+      "text": "extubation, but I ask specific questions, and I think about optimizing the"
+    },
+    {
+      "start": 1600.03,
+      "end": 1602.07,
+      "text": "patient based on the lung ultrasound or higher"
+    },
+    {
+      "start": 1602.07,
+      "end": 1604.78,
+      "text": "activation. In the right patient, I think about, is"
+    },
+    {
+      "start": 1604.78,
+      "end": 1606.52,
+      "text": "their diaphragm so weak that I want to think about"
+    },
+    {
+      "start": 1606.52,
+      "end": 1608.34,
+      "text": "rescue maneuvers before pulling the tube?"
+    },
+    {
+      "start": 1610.96,
+      "end": 1617.62,
+      "text": "So, and next question we have, do you feel that ultrasound is replacing an echocardiogram?"
+    },
+    {
+      "start": 1618.28,
+      "end": 1619.96,
+      "text": "Yeah, I mean this is an interesting question, I'm not..."
+    },
+    {
+      "start": 1620.0,
+      "end": 1624.77,
+      "text": "like parse this out a little bit. I think the real question is, is point-of-care"
+    },
+    {
+      "start": 1624.77,
+      "end": 1628.89,
+      "text": "ultrasound replacing cardiology and cardiosenographer-performed echocardiogram?"
+    },
+    {
+      "start": 1630.26,
+      "end": 1635.7,
+      "text": "And then this is a place where people's fiefdoms get challenged sometimes,"
+    },
+    {
+      "start": 1636.12,
+      "end": 1639.86,
+      "text": "and I have heard and seen cardiology departments that are very defensive."
+    },
+    {
+      "start": 1640.03,
+      "end": 1643.21,
+      "text": "for good reasons. They want to make sure that the information is being provided"
+    },
+    {
+      "start": 1643.21,
+      "end": 1647.68,
+      "text": "of ultrasound of the heart, provides good information, and not bad information,"
+    },
+    {
+      "start": 1647.78,
+      "end": 1649.96,
+      "text": "this bad information is worse than no information, and gosh, they'd rather..."
+    },
+    {
+      "start": 1650.03,
+      "end": 1651.47,
+      "text": "that you call them at any time or day or night,"
+    },
+    {
+      "start": 1651.75,
+      "end": 1653.91,
+      "text": "then try to do it yourself and get that information from it."
+    },
+    {
+      "start": 1654.39,
+      "end": 1655.89,
+      "text": "And so I like to differentiate the two."
+    },
+    {
+      "start": 1656.65,
+      "end": 1659.98,
+      "text": "In the same way that a radiology perform CT scan is..."
+    },
+    {
+      "start": 1660.38,
+      "end": 1664.19,
+      "text": "better if you know the clinical question being asked, but really is a, hey,"
+    },
+    {
+      "start": 1664.39,
+      "end": 1668.9,
+      "text": "tell me everything you see. I want to, I'm going to look from top to bottom, and I"
+    },
+    {
+      "start": 1668.9,
+      "end": 1669.84,
+      "text": "want to, I want to diffuse."
+    },
+    {
+      "start": 1670.0,
+      "end": 1674.32,
+      "text": "use, examination based on a protocolized time and slice and thickness and a sort of thing."
+    },
+    {
+      "start": 1674.84,
+      "end": 1679.22,
+      "text": "And a full echocardiogram built in cardiology department similarly is a, I'm going to evaluate"
+    },
+    {
+      "start": 1679.22,
+      "end": 1679.96,
+      "text": "the heart from..."
+    },
+    {
+      "start": 1680.51,
+      "end": 1685.88,
+      "text": "20 different viewpoints and make sure I am getting every single valve interrogated, every"
+    },
+    {
+      "start": 1685.88,
+      "end": 1688.68,
+      "text": "single flow rate interrogated, every single chamber size interrogated."
+    },
+    {
+      "start": 1689.02,
+      "end": 1689.92,
+      "text": "This is a bigger study."
+    },
+    {
+      "start": 1690.0,
+      "end": 1693.77,
+      "text": "Whereas pointing carols are sound of the heart is really saying,"
+    },
+    {
+      "start": 1695.02,
+      "end": 1697.56,
+      "text": "I have discrete clinical questions that I'd like to answer."
+    },
+    {
+      "start": 1698.74,
+      "end": 1699.82,
+      "text": "Is this patient in shock?"
+    },
+    {
+      "start": 1700.06,
+      "end": 1701.14,
+      "text": "because of decreased ejection fraction,"
+    },
+    {
+      "start": 1701.26,
+      "end": 1702.36,
+      "text": "because of the pericardial fusion,"
+    },
+    {
+      "start": 1702.48,
+      "end": 1705.14,
+      "text": "because of a failure of the reguntual."
+    },
+    {
+      "start": 1705.87,
+      "end": 1707.85,
+      "text": "And similarly, I think of long ultrasound"
+    },
+    {
+      "start": 1707.85,
+      "end": 1709.89,
+      "text": "as providing these discrete answers."
+    },
+    {
+      "start": 1710.03,
+      "end": 1715.09,
+      "text": "Now, if the question was, is long ultrasound replacing cardiac ultrasound, then we get into"
+    },
+    {
+      "start": 1715.09,
+      "end": 1718.34,
+      "text": "my favorite thing, which is none of these things should be done in isolation."
+    },
+    {
+      "start": 1718.74,
+      "end": 1719.98,
+      "text": "We should be doing all of these..."
+    },
+    {
+      "start": 1720.0,
+      "end": 1724.52,
+      "text": "together. Everybody who wants to ask a question about respiratory failure or shock or whatever"
+    },
+    {
+      "start": 1724.52,
+      "end": 1728.62,
+      "text": "it might be should be looking at the heart belongs to deep veins of the leg and ordered"
+    },
+    {
+      "start": 1728.62,
+      "end": 1729.96,
+      "text": "it put together as much now."
+    },
+    {
+      "start": 1730.0,
+      "end": 1734.26,
+      "text": "is possible. And with each of these examinations, they're asking specific questions because if your"
+    },
+    {
+      "start": 1734.26,
+      "end": 1738.89,
+      "text": "question is, hey, is this person had a cardiogenic pulmonary edema, it turns out that long ultrasound"
+    },
+    {
+      "start": 1738.89,
+      "end": 1739.75,
+      "text": "is superior."
+    },
+    {
+      "start": 1741.02,
+      "end": 1743.0,
+      "text": "Daco Cardi ran for answering that question."
+    },
+    {
+      "start": 1743.86,
+      "end": 1746.02,
+      "text": "If your question is what somebody's wedge pressure,"
+    },
+    {
+      "start": 1746.55,
+      "end": 1748.27,
+      "text": "momental ultrasound and cardiac ultrasound"
+    },
+    {
+      "start": 1748.27,
+      "end": 1749.91,
+      "text": "are like starting to get close when you look at the"
+    },
+    {
+      "start": 1750.1,
+      "end": 1754.44,
+      "text": "to this, nothing is good as a right heart calf, obviously, but the idea being that a much"
+    },
+    {
+      "start": 1754.44,
+      "end": 1757.48,
+      "text": "easier test can tell you a lot than the right patient."
+    },
+    {
+      "start": 1758.29,
+      "end": 1759.97,
+      "text": "So when I do a long, long time, if somebody who ain't..."
+    },
+    {
+      "start": 1760.03,
+      "end": 1762.47,
+      "text": "know has our failure and I'm worried about their volume status."
+    },
+    {
+      "start": 1763.0,
+      "end": 1763.82,
+      "text": "And I see a lot of feelings."
+    },
+    {
+      "start": 1764.02,
+      "end": 1766.84,
+      "text": "I don't need to do very complex diastolic measurements"
+    },
+    {
+      "start": 1766.84,
+      "end": 1768.08,
+      "text": "of the pressures in each chamber."
+    },
+    {
+      "start": 1768.08,
+      "end": 1769.78,
+      "text": "They're hard in order to say, oh, this is volume."
+    },
+    {
+      "start": 1770.06,
+      "end": 1774.3,
+      "text": "Now if I have the time to do so because it's not clinical emergency,"
+    },
+    {
+      "start": 1774.58,
+      "end": 1779.88,
+      "text": "gosh, that additional information can increase my diagnostic confidence and allow me to avoid again."
+    },
+    {
+      "start": 1780.0,
+      "end": 1781.34,
+      "text": "and those unnecessary therapies"
+    },
+    {
+      "start": 1781.34,
+      "end": 1782.52,
+      "text": "that have additional side effects."
+    },
+    {
+      "start": 1783.62,
+      "end": 1786.15,
+      "text": "I hope they got to the kind of meat"
+    },
+    {
+      "start": 1786.15,
+      "end": 1787.31,
+      "text": "of the question you're asking about,"
+    },
+    {
+      "start": 1787.71,
+      "end": 1788.69,
+      "text": "whether or not this is replacing"
+    },
+    {
+      "start": 1788.69,
+      "end": 1789.61,
+      "text": "I've a part of Graham again."
+    },
+    {
+      "start": 1790.29,
+      "end": 1791.39,
+      "text": "If I was to summarize that, I'd say,"
+    },
+    {
+      "start": 1791.97,
+      "end": 1793.27,
+      "text": "focus of the heart doesn't replace"
+    },
+    {
+      "start": 1793.27,
+      "end": 1794.59,
+      "text": "that regard your gram and augment it"
+    },
+    {
+      "start": 1794.59,
+      "end": 1795.49,
+      "text": "in the right clinical setting."
+    },
+    {
+      "start": 1796.13,
+      "end": 1797.95,
+      "text": "It allows us to decide who needs it for Lecha."
+    },
+    {
+      "start": 1799.63,
+      "end": 1799.97,
+      "text": "And..."
+    },
+    {
+      "start": 1800.34,
+      "end": 1804.98,
+      "text": "point of hair off some of the lungs. I don't think it's replacing a cardinal"
+    },
+    {
+      "start": 1804.98,
+      "end": 1809.42,
+      "text": "sound, but gosh, does it answer better some of the questions that we sometimes ask?"
+    },
+    {
+      "start": 1810.0,
+      "end": 1812.24,
+      "text": "already at ultrasound, thinking that it's going to enhance its importance."
+    },
+    {
+      "start": 1815.92,
+      "end": 1816.02,
+      "text": "Great."
+    },
+    {
+      "start": 1816.79,
+      "end": 1819.77,
+      "text": "We do have a couple more questions here, and just a reminder everybody."
+    },
+    {
+      "start": 1820.0,
+      "end": 1827.68,
+      "text": "You can get your questions in with the Q&A box at the bottom or the side of your screen there for Dr. Baston."
+    },
+    {
+      "start": 1828.24,
+      "end": 1829.66,
+      "text": "Let's see you next question."
+    },
+    {
+      "start": 1830.38,
+      "end": 1834.82,
+      "text": "is, uh, how do you integrate, uh, long ultrasound, uh, with other"
+    },
+    {
+      "start": 1834.82,
+      "end": 1838.61,
+      "text": "pocus exams? Oh, great. This is, uh, this kills off nicely of the,"
+    },
+    {
+      "start": 1838.61,
+      "end": 1839.97,
+      "text": "what I was just talking about. This idea that"
+    },
+    {
+      "start": 1840.0,
+      "end": 1845.37,
+      "text": "But when we're doing a long-lost down in critical care, we're really trying to decide what"
+    },
+    {
+      "start": 1845.69,
+      "end": 1847.29,
+      "text": "someone's source of respiratory failure is."
+    },
+    {
+      "start": 1847.53,
+      "end": 1849.97,
+      "text": "And we talked a lot about the evidence that allows us to do..."
+    },
+    {
+      "start": 1850.0,
+      "end": 1853.96,
+      "text": "that. But think how much more powerful it is if I can say, all right, there's a ton of"
+    },
+    {
+      "start": 1853.96,
+      "end": 1857.14,
+      "text": "beyond. It's trying to figure out if they're cardiogenic or non cardiogenic. And maybe I've"
+    },
+    {
+      "start": 1857.14,
+      "end": 1859.98,
+      "text": "got some of that plural thickening. Maybe I've got some of the..."
+    },
+    {
+      "start": 1860.32,
+      "end": 1864.02,
+      "text": "pattern recognition allows me to nudge one way or the other, but then I look at their"
+    },
+    {
+      "start": 1864.02,
+      "end": 1869.72,
+      "text": "heart and they have small chamber signs, hyperdynamic left ventricle."
+    },
+    {
+      "start": 1870.61,
+      "end": 1872.59,
+      "text": "Small left atrium, small IVC."
+    },
+    {
+      "start": 1873.58,
+      "end": 1876.08,
+      "text": "And then I go, oh, this is probably non-cardiogenic"
+    },
+    {
+      "start": 1876.08,
+      "end": 1876.76,
+      "text": "formative idea."
+    },
+    {
+      "start": 1876.86,
+      "end": 1878.72,
+      "text": "And I start thinking about a few cellular hemorrhagists."
+    },
+    {
+      "start": 1878.78,
+      "end": 1879.72,
+      "text": "I start thinking about ARDS."
+    },
+    {
+      "start": 1880.32,
+      "end": 1882.94,
+      "text": "and the setting of sepsis would penetrate high this or anything else like that."
+    },
+    {
+      "start": 1883.84,
+      "end": 1887.69,
+      "text": "Um, and then, and then I get to do the same thing when I think about"
+    },
+    {
+      "start": 1887.69,
+      "end": 1889.84,
+      "text": "the vein ultrasound so I can do"
+    },
+    {
+      "start": 1890.35,
+      "end": 1892.57,
+      "text": "and ultrasound of the alums,"
+    },
+    {
+      "start": 1892.71,
+      "end": 1893.81,
+      "text": "I don't be like, oh, straight A lines,"
+    },
+    {
+      "start": 1893.95,
+      "end": 1896.34,
+      "text": "this is gonna be probably an airway pathology"
+    },
+    {
+      "start": 1898.12,
+      "end": 1899.98,
+      "text": "or thinking about normal long CFDF."
+    },
+    {
+      "start": 1900.03,
+      "end": 1905.93,
+      "text": "And then I'm thinking about DVTPE as another potential way to get airlines and a patient who's in rest of the trick earlier"
+    },
+    {
+      "start": 1905.93,
+      "end": 1909.83,
+      "text": "And that that's where I had a deep pain scan and all of a sudden I've nudged my pre-test"
+    },
+    {
+      "start": 1910.32,
+      "end": 1912.18,
+      "text": "be a little bit. Now, if I don't find a deep vein,"
+    },
+    {
+      "start": 1912.81,
+      "end": 1914.63,
+      "text": "there on this, that doesn't mean that he's off the table,"
+    },
+    {
+      "start": 1914.71,
+      "end": 1917.55,
+      "text": "but gosh, if I find one, now I've got clear lungs"
+    },
+    {
+      "start": 1918.52,
+      "end": 1919.88,
+      "text": "and respiratory failure in tech."
+    },
+    {
+      "start": 1919.88,
+      "end": 1919.96,
+      "text": "Thank you."
+    },
+    {
+      "start": 1920.03,
+      "end": 1922.25,
+      "text": "that I'm starting to really think PE."
+    },
+    {
+      "start": 1922.39,
+      "end": 1924.21,
+      "text": "And if I have the opportunity then to do a look"
+    },
+    {
+      "start": 1924.21,
+      "end": 1925.05,
+      "text": "at the right heart and see,"
+    },
+    {
+      "start": 1925.65,
+      "end": 1927.25,
+      "text": "oh man, the right heart's dilated, that means something."
+    },
+    {
+      "start": 1927.39,
+      "end": 1929.41,
+      "text": "Again, a smaller right heart does not rule out small PE,"
+    },
+    {
+      "start": 1929.63,
+      "end": 1929.97,
+      "text": "but..."
+    },
+    {
+      "start": 1930.32,
+      "end": 1933.96,
+      "text": "Ooh, I have started to put together a multi-window view"
+    },
+    {
+      "start": 1933.96,
+      "end": 1935.9,
+      "text": "of what's causing somebody's respiratory failure."
+    },
+    {
+      "start": 1937.02,
+      "end": 1939.97,
+      "text": "So for me, in the same way that we..."
+    },
+    {
+      "start": 1940.0,
+      "end": 1944.54,
+      "text": "would be surprised if somebody walked in with a stethoscope, listened to a couple of"
+    },
+    {
+      "start": 1944.54,
+      "end": 1947.82,
+      "text": "points that somebody's chest, didn't listen to heart sounds, didn't examine capillary,"
+    },
+    {
+      "start": 1948.06,
+      "end": 1949.98,
+      "text": "or you feel it didn't look for modeling on the leg."
+    },
+    {
+      "start": 1950.0,
+      "end": 1951.4,
+      "text": "and said they did a complete exam."
+    },
+    {
+      "start": 1951.74,
+      "end": 1954.41,
+      "text": "I think this needs to be integrated with all the other places"
+    },
+    {
+      "start": 1954.41,
+      "end": 1956.54,
+      "text": "that we're going to the probe that are aligned"
+    },
+    {
+      "start": 1956.54,
+      "end": 1959.97,
+      "text": "with the diagnostic investigation there will be."
+    },
+    {
+      "start": 1960.0,
+      "end": 1963.59,
+      "text": "along it together gives us more power. And that's been shown, there's a"
+    },
+    {
+      "start": 1963.98,
+      "end": 1967.26,
+      "text": "custodian chest where they actually just compared echo alone versus echo with"
+    },
+    {
+      "start": 1967.77,
+      "end": 1969.97,
+      "text": "long ultrasound and showed that the diagnostics."
+    },
+    {
+      "start": 1970.03,
+      "end": 1975.57,
+      "text": "accuracy was better when you had two windows in the body as opposed to just one, which is not surprising."
+    },
+    {
+      "start": 1975.57,
+      "end": 1979.89,
+      "text": "Next question."
+    },
+    {
+      "start": 1980.1,
+      "end": 1984.7,
+      "text": "Do you use Pocus to help you identify the right site to put it in a chest tube and new"
+    },
+    {
+      "start": 1984.7,
+      "end": 1985.46,
+      "text": "mothorex?"
+    },
+    {
+      "start": 1985.68,
+      "end": 1989.72,
+      "text": "For instance, how far from the sliding point area do you choose for the chest tube?"
+    },
+    {
+      "start": 1990.64,
+      "end": 1992.32,
+      "text": "This is a great question, so short answer yes."
+    },
+    {
+      "start": 1992.72,
+      "end": 1995.12,
+      "text": "I do all of my tests with ultrasound guidance"
+    },
+    {
+      "start": 1995.12,
+      "end": 1997.13,
+      "text": "in the absence of cardiac arrest"
+    },
+    {
+      "start": 1997.13,
+      "end": 1997.95,
+      "text": "and this is an emergency."
+    },
+    {
+      "start": 2000.06,
+      "end": 2002.48,
+      "text": "where I don't have the time to even wait for the machine to come into the room."
+    },
+    {
+      "start": 2002.84,
+      "end": 2005.28,
+      "text": "But if I'm there, and I have the machine, then yes."
+    },
+    {
+      "start": 2005.78,
+      "end": 2009.2,
+      "text": "And so then it divides into, do I have time to check for vessels?"
+    },
+    {
+      "start": 2009.42,
+      "end": 2009.86,
+      "text": "Yes or no?"
+    },
+    {
+      "start": 2010.51,
+      "end": 2012.49,
+      "text": "And then I have time to see if there's long sliding"
+    },
+    {
+      "start": 2012.49,
+      "end": 2014.53,
+      "text": "in the place in the reasonable anatomic targets."
+    },
+    {
+      "start": 2014.99,
+      "end": 2017.74,
+      "text": "So first thing I'll do is I'll check and see if I can see"
+    },
+    {
+      "start": 2017.74,
+      "end": 2019.92,
+      "text": "areas where long sliding appears and then disappears."
+    },
+    {
+      "start": 2020.03,
+      "end": 2022.41,
+      "text": "The long point is as it's described in the literature,"
+    },
+    {
+      "start": 2022.47,
+      "end": 2023.89,
+      "text": "the place at the bottom of the ring of thorns."
+    },
+    {
+      "start": 2024.01,
+      "end": 2025.87,
+      "text": "That lets me know I need to be one rib space above that"
+    },
+    {
+      "start": 2025.87,
+      "end": 2027.18,
+      "text": "when I do my chestwood."
+    },
+    {
+      "start": 2027.82,
+      "end": 2029.97,
+      "text": "The second question though is, do I want to do a cell-"
+    },
+    {
+      "start": 2030.0,
+      "end": 2033.98,
+      "text": "engineer technique chest tube or do I want to do a dissection or open technique chest tube and"
+    },
+    {
+      "start": 2033.98,
+      "end": 2038.67,
+      "text": "and I do both of those in my practice and the in general I think that a"
+    },
+    {
+      "start": 2038.67,
+      "end": 2039.97,
+      "text": "a soldier technique just to do this."
+    },
+    {
+      "start": 2040.06,
+      "end": 2046.34,
+      "text": "little more elegant. It's a smaller hold initially. The kids we have involve a smaller tube"
+    },
+    {
+      "start": 2046.34,
+      "end": 2049.86,
+      "text": "side by default. So I think it is less discomfort for the patient."
+    },
+    {
+      "start": 2050.16,
+      "end": 2051.86,
+      "text": "a small interval to heal afterwards."
+    },
+    {
+      "start": 2052.51,
+      "end": 2057.47,
+      "text": "But if I can't find that full rib space above"
+    },
+    {
+      "start": 2057.47,
+      "end": 2059.05,
+      "text": "where long sliding appears and disappears,"
+    },
+    {
+      "start": 2059.21,
+      "end": 2059.97,
+      "text": "then I probably..."
+    },
+    {
+      "start": 2060.0,
+      "end": 2062.6,
+      "text": "we won't feel safe putting a needle in in order to do a"
+    },
+    {
+      "start": 2062.6,
+      "end": 2065.02,
+      "text": "sell to your technique, just for fear of having it the"
+    },
+    {
+      "start": 2065.02,
+      "end": 2067.26,
+      "text": "longs. I think that in that case, discretion being a better"
+    },
+    {
+      "start": 2067.26,
+      "end": 2069.54,
+      "text": "bar of valor, rather do a dissective technique."
+    },
+    {
+      "start": 2070.13,
+      "end": 2071.65,
+      "text": "and use my finger to be able to feel"
+    },
+    {
+      "start": 2071.65,
+      "end": 2073.63,
+      "text": "that I'm in the plural space before putting the tube in."
+    },
+    {
+      "start": 2075.3,
+      "end": 2077.43,
+      "text": "So the short answer to your question is,"
+    },
+    {
+      "start": 2077.57,
+      "end": 2079.76,
+      "text": "yes, I use ultrasound."
+    },
+    {
+      "start": 2080.8,
+      "end": 2089.91,
+      "text": "The longer answer is, but if I can't find that safe space, one rib space above where there's any change between long sliding and not long sliding, but I know that this"
+    },
+    {
+      "start": 2090.0,
+      "end": 2092.26,
+      "text": "listening with the racks, then I still will put in a chest tube."
+    },
+    {
+      "start": 2092.77,
+      "end": 2095.09,
+      "text": "I'll do a dissective technique instead of seldom drew technique."
+    },
+    {
+      "start": 2095.79,
+      "end": 2099.89,
+      "text": "And then if I'm doing that, and I have the 30 seconds, you know."
+    },
+    {
+      "start": 2100.1,
+      "end": 2104.28,
+      "text": "quickly switched to a linear transducer and put on the vascular preset to make sure that"
+    },
+    {
+      "start": 2104.28,
+      "end": 2105.24,
+      "text": "it's not that weird anatomy."
+    },
+    {
+      "start": 2105.98,
+      "end": 2109.41,
+      "text": "There's a lovely study where they looked at CT&G grams."
+    },
+    {
+      "start": 2110.26,
+      "end": 2114.76,
+      "text": "of patients to see how what percentage have these really atypical"
+    },
+    {
+      "start": 2115.21,
+      "end": 2118.69,
+      "text": "vascular anatomy in their intercostal spaces and that this is specifically"
+    },
+    {
+      "start": 2118.69,
+      "end": 2119.01,
+      "text": "Look."
+    },
+    {
+      "start": 2120.0,
+      "end": 2125.01,
+      "text": "at instead of the above the rib space being clear, they had vessel right in the target where"
+    },
+    {
+      "start": 2125.01,
+      "end": 2129.97,
+      "text": "you would go with a little chest tube. And there's certain risk factors that increase that. So age, you know."
+    },
+    {
+      "start": 2130.1,
+      "end": 2135.95,
+      "text": "If it's a much older patient, I'm definitely not looking for vascular anatomy if I have a chance dialysis or other sources of"
+    },
+    {
+      "start": 2135.95,
+      "end": 2139.73,
+      "text": "Fiscial is because they're going to have these weird vascular tortuous pads for their veins."
+    },
+    {
+      "start": 2140.0,
+      "end": 2147.24,
+      "text": "can cause life threatening bleeds. So yes, when I have the chance, I use ultrasound. If somebody is"
+    },
+    {
+      "start": 2147.24,
+      "end": 2149.42,
+      "text": "actively getting CPR, and I think that..."
+    },
+    {
+      "start": 2150.03,
+      "end": 2152.67,
+      "text": "massive hemothorax or tension pneumothorax as a cause."
+    },
+    {
+      "start": 2153.26,
+      "end": 2154.76,
+      "text": "Then I'm decompressing first with a needle"
+    },
+    {
+      "start": 2154.76,
+      "end": 2156.92,
+      "text": "and then going in with a dissected chest tube"
+    },
+    {
+      "start": 2157.83,
+      "end": 2158.6,
+      "text": "with or without ultrasound."
+    },
+    {
+      "start": 2163.26,
+      "end": 2168.81,
+      "text": "So, all right, next question is, could you speak to some of the pitfalls of using logpocus?"
+    },
+    {
+      "start": 2170.42,
+      "end": 2171.38,
+      "text": "Oh yeah, this is great."
+    },
+    {
+      "start": 2172.1,
+      "end": 2173.94,
+      "text": "Sam Brown really likes writing these articles"
+    },
+    {
+      "start": 2173.94,
+      "end": 2175.26,
+      "text": "about pitfalls of focus."
+    },
+    {
+      "start": 2175.46,
+      "end": 2177.14,
+      "text": "And I've learned so much from reading his things."
+    },
+    {
+      "start": 2177.44,
+      "end": 2179.98,
+      "text": "And just as you do this, you find the places where things..."
+    },
+    {
+      "start": 2180.38,
+      "end": 2182.88,
+      "text": "are not as clean as they were in Liptonstein studies"
+    },
+    {
+      "start": 2182.88,
+      "end": 2184.5,
+      "text": "or in some of the other glitters here."
+    },
+    {
+      "start": 2185.7,
+      "end": 2187.24,
+      "text": "So part of it is that everyone thinks,"
+    },
+    {
+      "start": 2187.38,
+      "end": 2188.54,
+      "text": "oh man, this is super easy,"
+    },
+    {
+      "start": 2188.68,
+      "end": 2189.98,
+      "text": "I'm gonna put the pro bono on my C.A. line to be like."
+    },
+    {
+      "start": 2190.06,
+      "end": 2194.55,
+      "text": "but it turns out that the angle of incination for the new learner is a real source of error."
+    },
+    {
+      "start": 2194.93,
+      "end": 2199.97,
+      "text": "And what I mean by that is if you're perpendicular to the skin, that doesn't necessarily-"
+    },
+    {
+      "start": 2200.0,
+      "end": 2203.26,
+      "text": "serially mean your perpendicular to the plur, and you need to be perpendicular to the plur,"
+    },
+    {
+      "start": 2203.34,
+      "end": 2206.38,
+      "text": "to really get the A lines, because of that bouncing back and forth between the skin and"
+    },
+    {
+      "start": 2206.38,
+      "end": 2209.24,
+      "text": "the plur, and it makes the B lines much more bright."
+    },
+    {
+      "start": 2210.0,
+      "end": 2215.32,
+      "text": "So being perpendicular to the plurum might mean fanning a little bit inferiorly when you're"
+    },
+    {
+      "start": 2215.32,
+      "end": 2219.02,
+      "text": "high up and it might mean fanning a little bit immediately when you're a bit more lateral"
+    },
+    {
+      "start": 2219.02,
+      "end": 2219.86,
+      "text": "looking at your difference."
+    },
+    {
+      "start": 2220.0,
+      "end": 2223.48,
+      "text": "zones. So the first thing is just understanding that there is a little bit of hand"
+    },
+    {
+      "start": 2223.48,
+      "end": 2228.41,
+      "text": "skill to a long ultrasound. Again, that's why it takes and 20 scans before"
+    },
+    {
+      "start": 2228.41,
+      "end": 2229.69,
+      "text": "you're really getting these diagnoses."
+    },
+    {
+      "start": 2230.48,
+      "end": 2235.34,
+      "text": "Another pitfall is, you know, we talked about this in Dave Tierney's paper, where he compared"
+    },
+    {
+      "start": 2235.34,
+      "end": 2239.79,
+      "text": "Chess X-ray, Long Ultra Sound, with CT scan as a gold standard, which is, if you have"
+    },
+    {
+      "start": 2240.0,
+      "end": 2249.78,
+      "text": "a thin layer, a full eye or normal albiola. The sound waves see that so you can have a really early"
+    },
+    {
+      "start": 2250.0,
+      "end": 2254.94,
+      "text": "really severe bronchonomonia that hasn't yet spread to the periphery of the lungs"
+    },
+    {
+      "start": 2254.94,
+      "end": 2259.8,
+      "text": "and long ultrasound won't see it until it does. For me the anecdote that really"
+    },
+    {
+      "start": 2260.36,
+      "end": 2266.11,
+      "text": "I once took care of a patient who drowned and as I was doing the lung ultrasound it was straight"
+    },
+    {
+      "start": 2266.11,
+      "end": 2269.89,
+      "text": "They come straight from the river to the hospital."
+    },
+    {
+      "start": 2270.06,
+      "end": 2272.8,
+      "text": "And there was airlines everywhere, I was very confused."
+    },
+    {
+      "start": 2273.69,
+      "end": 2276.33,
+      "text": "And then 45 minutes later, it was B-Lines everywhere,"
+    },
+    {
+      "start": 2276.41,
+      "end": 2278.05,
+      "text": "because that's how long it had taken for the fluid"
+    },
+    {
+      "start": 2278.05,
+      "end": 2279.89,
+      "text": "to get all the way out to the periphery."
+    },
+    {
+      "start": 2280.0,
+      "end": 2281.52,
+      "text": "and I just scanned too early."
+    },
+    {
+      "start": 2281.64,
+      "end": 2283.1,
+      "text": "I had filled their respiratory tree,"
+    },
+    {
+      "start": 2283.44,
+      "end": 2285.62,
+      "text": "but not yet filled all the distal healthy oil line."
+    },
+    {
+      "start": 2285.74,
+      "end": 2288.14,
+      "text": "And so I had this very distinct false positive,"
+    },
+    {
+      "start": 2288.28,
+      "end": 2289.1,
+      "text": "sorry, false negative."
+    },
+    {
+      "start": 2290.1,
+      "end": 2296.44,
+      "text": "normal long when it was clearly not normal long when you look at just X-ray or CT scan so there's"
+    },
+    {
+      "start": 2296.44,
+      "end": 2298.43,
+      "text": "that and then you know the..."
+    },
+    {
+      "start": 2300.0,
+      "end": 2305.06,
+      "text": "The truth, you know, there's ocums razor saying one unifying diagnosis is the most likely,"
+    },
+    {
+      "start": 2305.18,
+      "end": 2309.14,
+      "text": "and then there's a chakum's dictum that says, a patient's cat has many diagnoses as they please."
+    },
+    {
+      "start": 2310.06,
+      "end": 2311.62,
+      "text": "And I see this with my ultrasound where it's like,"
+    },
+    {
+      "start": 2312.01,
+      "end": 2314.89,
+      "text": "yes, some people do have volume overload"
+    },
+    {
+      "start": 2314.89,
+      "end": 2317.63,
+      "text": "and the COPD exacerbation and an ammonia."
+    },
+    {
+      "start": 2317.63,
+      "end": 2319.86,
+      "text": "And I'm not"
+    },
+    {
+      "start": 2320.03,
+      "end": 2324.3,
+      "text": "just going to show you the one that's layered on top. And so the place where"
+    },
+    {
+      "start": 2324.3,
+      "end": 2328.28,
+      "text": "a lung ultrasound can cause us to fall down, a pitfall is if we think that it's"
+    },
+    {
+      "start": 2328.28,
+      "end": 2329.91,
+      "text": "better than all of our other."
+    },
+    {
+      "start": 2330.0,
+      "end": 2334.4,
+      "text": "because there will be other indicators that there are multiple pathologies happening simultaneously."
+    },
+    {
+      "start": 2335.24,
+      "end": 2338.22,
+      "text": "So holding on to the understanding of which direction the error is going to be."
+    },
+    {
+      "start": 2338.34,
+      "end": 2339.98,
+      "text": "We're going to see be lines that doesn't mean it's"
+    },
+    {
+      "start": 2340.13,
+      "end": 2343.31,
+      "text": "He doesn't have a COPD's excavation, just means that they also have an albeolar or"
+    },
+    {
+      "start": 2343.31,
+      "end": 2343.91,
+      "text": "stichel process."
+    },
+    {
+      "start": 2344.9,
+      "end": 2347.58,
+      "text": "And thinking about what their lab showed, what their fever curve shows, all these other"
+    },
+    {
+      "start": 2347.58,
+      "end": 2349.54,
+      "text": "things that PUs clinically decide what some of these."
+    },
+    {
+      "start": 2350.32,
+      "end": 2355.54,
+      "text": "source of respiratory failure is. And the ACO especially, when somebody initially gets"
+    },
+    {
+      "start": 2355.54,
+      "end": 2358.84,
+      "text": "in a baby with one problem then comes up with another woof, we never have real issues."
+    },
+    {
+      "start": 2360.13,
+      "end": 2360.81,
+      "text": "That's my issue."
+    },
+    {
+      "start": 2361.01,
+      "end": 2362.87,
+      "text": "Those are some of the pitfalls for Frank Multerson."
+    },
+    {
+      "start": 2363.36,
+      "end": 2364.54,
+      "text": "I talked a little bit about the pitfalls"
+    },
+    {
+      "start": 2364.54,
+      "end": 2365.52,
+      "text": "with diaphragmatic ultrasound,"
+    },
+    {
+      "start": 2365.76,
+      "end": 2366.68,
+      "text": "the idea being that if you're looking"
+    },
+    {
+      "start": 2366.68,
+      "end": 2367.52,
+      "text": "on somebody's on the bed,"
+    },
+    {
+      "start": 2368.1,
+      "end": 2369.98,
+      "text": "you may not see any dickomingo."
+    },
+    {
+      "start": 2371.02,
+      "end": 2374.66,
+      "text": "diaphragm. And with effusions, the challenges I've seen is I've seen people mistake the gastric"
+    },
+    {
+      "start": 2374.66,
+      "end": 2379.97,
+      "text": "about the gastric space for plural effusion when it's full of liquid. And I've seen"
+    },
+    {
+      "start": 2380.0,
+      "end": 2382.9,
+      "text": "a lot of people think they're looking at the portal space when they're actually looking"
+    },
+    {
+      "start": 2382.9,
+      "end": 2384.82,
+      "text": "at a site is some diapragmatic fluid."
+    },
+    {
+      "start": 2385.47,
+      "end": 2388.65,
+      "text": "Because that curve of the liver is mistaken for the diapragmium and the diapragmium is kind"
+    },
+    {
+      "start": 2388.65,
+      "end": 2389.97,
+      "text": "of flapping around in the..."
+    },
+    {
+      "start": 2390.54,
+      "end": 2398.56,
+      "text": "To me, the cure for all of these later ones is just a really good understanding of the clinical scenario and a really good understanding of the anatomy that you're actually looking at."
+    },
+    {
+      "start": 2399.0,
+      "end": 2399.36,
+      "text": "Those..."
+    },
+    {
+      "start": 2400.0,
+      "end": 2405.82,
+      "text": "Let's see stuff, but if you don't know what's supposed to be there, then it's really hard to know how to interpret what you're seeing."
+    },
+    {
+      "start": 2408.12,
+      "end": 2409.91,
+      "text": "The first few thoughts on that."
+    },
+    {
+      "start": 2411.47,
+      "end": 2411.75,
+      "text": "That's great."
+    },
+    {
+      "start": 2412.5,
+      "end": 2414.1,
+      "text": "I did notice one of the attendees,"
+    },
+    {
+      "start": 2414.4,
+      "end": 2417.12,
+      "text": "Judy P, they had their hand raised,"
+    },
+    {
+      "start": 2417.32,
+      "end": 2419.9,
+      "text": "but if you could put your question in the Q&A box."
+    },
+    {
+      "start": 2420.06,
+      "end": 2422.04,
+      "text": "so make sure to get that to Cameron."
+    },
+    {
+      "start": 2422.8,
+      "end": 2423.94,
+      "text": "And while we're waiting for that,"
+    },
+    {
+      "start": 2424.24,
+      "end": 2427.24,
+      "text": "you talked a little bit about kind of scanning techniques"
+    },
+    {
+      "start": 2427.24,
+      "end": 2428.8,
+      "text": "and stuff in that last answer."
+    },
+    {
+      "start": 2429.46,
+      "end": 2429.96,
+      "text": "What are..."
+    },
+    {
+      "start": 2430.0,
+      "end": 2433.08,
+      "text": "some of the strengths and weaknesses of the sweep technique that you outlined."
+    },
+    {
+      "start": 2434.06,
+      "end": 2438.98,
+      "text": "Yeah, this is really interesting to me. So this was proposed."
+    },
+    {
+      "start": 2440.1,
+      "end": 2444.71,
+      "text": "Several years ago, actually, as a way to allow people"
+    },
+    {
+      "start": 2444.71,
+      "end": 2447.08,
+      "text": "with very little experience with ultrasound"
+    },
+    {
+      "start": 2447.08,
+      "end": 2448.3,
+      "text": "to do a full-long ultrasound,"
+    },
+    {
+      "start": 2448.66,
+      "end": 2449.44,
+      "text": "and the technique is you."
+    },
+    {
+      "start": 2450.03,
+      "end": 2451.79,
+      "text": "take the transducer and you just without stopping"
+    },
+    {
+      "start": 2451.79,
+      "end": 2453.51,
+      "text": "or court of video as you move the transducer"
+    },
+    {
+      "start": 2453.51,
+      "end": 2455.53,
+      "text": "across the thorax and several different lines"
+    },
+    {
+      "start": 2455.53,
+      "end": 2457.71,
+      "text": "as opposed to doing kind of the more discreet points"
+    },
+    {
+      "start": 2458.19,
+      "end": 2459.97,
+      "text": "recommended by Litch of Cinerable or..."
+    },
+    {
+      "start": 2460.0,
+      "end": 2467.25,
+      "text": "uptelly in the international assets statement or tyranny in his nine zones camp and so there's"
+    },
+    {
+      "start": 2467.25,
+      "end": 2469.85,
+      "text": "an advantage there you get to see more surface area of the long."
+    },
+    {
+      "start": 2470.67,
+      "end": 2479.84,
+      "text": "Which is super interesting the difference the disadvantages that you don't see a full respiratory cycle of each of those points and for those of you have done long long time you know that sometimes you place."
+    },
+    {
+      "start": 2480.06,
+      "end": 2483.02,
+      "text": "down, it's like, oh, A-line pattern, and then poof, over the course of the rest of the"
+    },
+    {
+      "start": 2483.02,
+      "end": 2484.18,
+      "text": "rest of the course, it will be a lines of peer and dispute."
+    },
+    {
+      "start": 2485.01,
+      "end": 2489.79,
+      "text": "So I wonder if sweeping is going to allow us to miss those."
+    },
+    {
+      "start": 2490.0,
+      "end": 2493.92,
+      "text": "or is it going to, through, you know, integrating into a single picture,"
+    },
+    {
+      "start": 2494.12,
+      "end": 2496.56,
+      "text": "allow us to very quickly see the entire line?"
+    },
+    {
+      "start": 2497.37,
+      "end": 2499.87,
+      "text": "The real challenge at the moment is, and you know,"
+    },
+    {
+      "start": 2500.03,
+      "end": 2503.81,
+      "text": "potentially proposed and demonstrated using this during COVID,"
+    },
+    {
+      "start": 2505.22,
+      "end": 2507.26,
+      "text": "the real challenge is that most of the evidence we have"
+    },
+    {
+      "start": 2508.03,
+      "end": 2509.97,
+      "text": "for how to do long-lost time."
+    },
+    {
+      "start": 2510.13,
+      "end": 2511.43,
+      "text": "most more importantly, how to interpret"
+    },
+    {
+      "start": 2511.43,
+      "end": 2513.55,
+      "text": "the long-awaited scoring system by boom out"
+    },
+    {
+      "start": 2513.55,
+      "end": 2517.46,
+      "text": "and others was done with the screenpoints."
+    },
+    {
+      "start": 2518.06,
+      "end": 2519.98,
+      "text": "So I don't know what to make of a..."
+    },
+    {
+      "start": 2520.03,
+      "end": 2523.74,
+      "text": "sleep image without the context of all the studies that have been done before."
+    },
+    {
+      "start": 2524.0,
+      "end": 2529.88,
+      "text": "So it's not that this shouldn't be done, but gosh, we need a little bit of sleep and point driven to"
+    },
+    {
+      "start": 2530.0,
+      "end": 2533.7,
+      "text": "understand what information is different between those two techniques so we can talk about how"
+    },
+    {
+      "start": 2533.7,
+      "end": 2539.44,
+      "text": "interpretation should be different between those two tests. But I have this dream standing, gosh,"
+    },
+    {
+      "start": 2540.0,
+      "end": 2543.54,
+      "text": "will be like, you know, the respiratory therapist comes by in the morning checks the plateau"
+    },
+    {
+      "start": 2543.54,
+      "end": 2548.5,
+      "text": "pressures and does a quick sweep of the lungs and the four zones they have. They they do in 60 seconds"
+    },
+    {
+      "start": 2548.5,
+      "end": 2549.98,
+      "text": "support less than that save to the"
+    },
+    {
+      "start": 2550.35,
+      "end": 2555.31,
+      "text": "machine and you can pull up the visual cue of what their lungs look like and the same way that"
+    },
+    {
+      "start": 2555.31,
+      "end": 2559.52,
+      "text": "you'll be pulling up a daily chest x-ray in the arrow when we did daily chest x-rays. What without the"
+    },
+    {
+      "start": 2559.52,
+      "end": 2559.78,
+      "text": "radiation?"
+    },
+    {
+      "start": 2560.32,
+      "end": 2562.8,
+      "text": "about the unnecessary equipment expense"
+    },
+    {
+      "start": 2562.8,
+      "end": 2564.06,
+      "text": "because this is a machine that's there."
+    },
+    {
+      "start": 2564.2,
+      "end": 2565.32,
+      "text": "It's by the bedside and it doesn't"
+    },
+    {
+      "start": 2565.32,
+      "end": 2566.58,
+      "text": "cause any harm to the patient either."
+    },
+    {
+      "start": 2570.35,
+      "end": 2575.91,
+      "text": "Well, I don't see any other questions coming in and it looks like we're getting toward the end on time so"
+    },
+    {
+      "start": 2576.37,
+      "end": 2579.79,
+      "text": "Big thank you to Dr. Cameron Baston for taking the time today"
+    },
+    {
+      "start": 2580.0,
+      "end": 2581.96,
+      "text": "to put together this excellent presentation"
+    },
+    {
+      "start": 2581.96,
+      "end": 2584.28,
+      "text": "and for hanging around to answer questions for us."
+    },
+    {
+      "start": 2584.64,
+      "end": 2585.82,
+      "text": "Thanks so much for being here"
+    },
+    {
+      "start": 2585.82,
+      "end": 2587.48,
+      "text": "and sharing your expertise with everybody."
+    },
+    {
+      "start": 2588.32,
+      "end": 2589.16,
+      "text": "Thanks so much for having me, Chris."
+    },
+    {
+      "start": 2589.34,
+      "end": 2589.96,
+      "text": "This has been a..."
+    },
+    {
+      "start": 2590.03,
+      "end": 2590.65,
+      "text": "been really awesome."
+    },
+    {
+      "start": 2591.82,
+      "end": 2596.0,
+      "text": "A quick reminder that you can watch previous webinars and sign up for upcoming webinars"
+    },
+    {
+      "start": 2596.0,
+      "end": 2599.48,
+      "text": "on sonosite.com slash behind the scan webinar."
+    },
+    {
+      "start": 2600.0,
+      "end": 2602.88,
+      "text": "And you can go ahead and scan that QR code right there"
+    },
+    {
+      "start": 2602.88,
+      "end": 2604.3,
+      "text": "that should take you right to the page"
+    },
+    {
+      "start": 2604.3,
+      "end": 2607.96,
+      "text": "where you can see previous and coming up webinars."
+    },
+    {
+      "start": 2608.58,
+      "end": 2609.98,
+      "text": "Thanks so much for everybody."
+    },
+    {
+      "start": 2610.0,
+      "end": 2613.2,
+      "text": "buddy for joining us today and we'll see you at the next webinar."
+    }
+  ]
+}

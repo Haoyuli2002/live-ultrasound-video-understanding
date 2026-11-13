@@ -1,0 +1,238 @@
+{
+  "video_id": "t-UUe0r-XHk",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/eval/t-UUe0r-XHk/asr.txt",
+  "segments": [
+    {
+      "start": 0.58,
+      "end": 9.84,
+      "text": "Hello everyone, this is Dr. Sam, and this video is about kidney ultrasound pro-positioning on the left."
+    },
+    {
+      "start": 10.0,
+      "end": 17.04,
+      "text": "The other side is a schematic diagram showing ultrasound pro positioning for scanning the kidneys."
+    },
+    {
+      "start": 20.0,
+      "end": 29.380000000000003,
+      "text": "are the right and left coastal margins. This is the Ambuvikas, this white box is the"
+    },
+    {
+      "start": 29.380000000000003,
+      "end": 29.96,
+      "text": "or cross-hound."
+    },
+    {
+      "start": 30.13,
+      "end": 39.3,
+      "text": "probe in the red dot is the indicator or the orientation marker roll the patient"
+    },
+    {
+      "start": 39.3,
+      "end": 39.8,
+      "text": "40"
+    },
+    {
+      "start": 40.64,
+      "end": 47.82,
+      "text": "on to the left side and place the probe in an oblique orientation through the lower rib"
+    },
+    {
+      "start": 47.82,
+      "end": 48.42,
+      "text": "subspaces."
+    },
+    {
+      "start": 50.1,
+      "end": 52.12,
+      "text": "This is an intercostal approach."
+    },
+    {
+      "start": 53.72,
+      "end": 57.42,
+      "text": "Ask the patient to take a deep breath and hold it."
+    },
+    {
+      "start": 59.019999999999996,
+      "end": 59.980000000000004,
+      "text": "You will get this..."
+    },
+    {
+      "start": 60.0,
+      "end": 68.74,
+      "text": "Right kidney is scanned through the liver. This is the upper pole of the kidney."
+    },
+    {
+      "start": 70.42,
+      "end": 78.86,
+      "text": "It will be always seen in the left half of the image and this is the lower pole of the kidney."
+    },
+    {
+      "start": 80.32,
+      "end": 87.78,
+      "text": "It will be seen in the right half of the image, this interface between the liver and right"
+    },
+    {
+      "start": 87.78,
+      "end": 89.74,
+      "text": "kidney is a potential space."
+    },
+    {
+      "start": 90.58,
+      "end": 99.76,
+      "text": "old Morrison's pouch in case of a sightseys and trauma you may find an equic fluid"
+    },
+    {
+      "start": 100.0,
+      "end": 107.38,
+      "text": "in the Morrison's pouch. This hyperquick border of the kidney is the renal capsule."
+    },
+    {
+      "start": 111.46,
+      "end": 119.96000000000001,
+      "text": "is the Reno Core Dex, the inner region is more hypo-equic, this is..."
+    },
+    {
+      "start": 120.0,
+      "end": 129.88,
+      "text": "Medallah, consisting of renal pyramids, a central hypochoric region is the renal"
+    },
+    {
+      "start": 130.0,
+      "end": 139.61,
+      "text": "sinus fat. Behind the kidney we may sometimes see this muscle. This is the source"
+    },
+    {
+      "start": 140.0,
+      "end": 149.74,
+      "text": "If you find difficulty in locating the kidney, angle and move the probe to the ribs."
+    },
+    {
+      "start": 150.19,
+      "end": 158.89,
+      "text": "You can rotate it lightly, anti-clockwise to fit the rib space and remove rib shadows."
+    },
+    {
+      "start": 161.22,
+      "end": 169.42,
+      "text": "You can move the probe more to the right if too many shadows are obscuring the kidney and try our"
+    },
+    {
+      "start": 170.0,
+      "end": 179.25,
+      "text": "lateral approach to scan the right kidney in transverse view, rotate the probe 90 degrees"
+    },
+    {
+      "start": 180.0,
+      "end": 188.58,
+      "text": "clock wise in the same location as shown in this diagram, the probe is still slightly"
+    },
+    {
+      "start": 188.58,
+      "end": 189.88,
+      "text": "and no bleak wood."
+    },
+    {
+      "start": 190.19,
+      "end": 199.4,
+      "text": "Then ask the patient to take a deep breath and hold it, this will be the image formed."
+    },
+    {
+      "start": 201.25,
+      "end": 203.87,
+      "text": "The kidney is seen in transverse view."
+    },
+    {
+      "start": 205.68,
+      "end": 209.83,
+      "text": "Here is the renal capsule, the hyper-quake border."
+    },
+    {
+      "start": 211.86,
+      "end": 219.88,
+      "text": "This is the cortex and these are the renal pyramids if there are"
+    },
+    {
+      "start": 220.0,
+      "end": 226.28,
+      "text": "The bowel gases obscuring the kidney, ask the patient to push out the abdomen."
+    },
+    {
+      "start": 226.28,
+      "end": 229.78,
+      "text": "When this moves, the ball gases."
+    },
+    {
+      "start": 229.78,
+      "end": 229.86,
+      "text": "is"
+    },
+    {
+      "start": 230.0,
+      "end": 239.79,
+      "text": "away from the kidney. Now, we will see how to scan the left kidney, first roll the patient."
+    },
+    {
+      "start": 240.26,
+      "end": 248.16,
+      "text": "45 degrees to the right side then place the probe in oblique orientation through the lower"
+    },
+    {
+      "start": 248.16,
+      "end": 248.92,
+      "text": "web spaces."
+    },
+    {
+      "start": 250.0,
+      "end": 258.18,
+      "text": "For an intercourse on approach, the 11th intercourse to space is a good landmark to locate the left kidney."
+    },
+    {
+      "start": 260.61,
+      "end": 269.96,
+      "text": "the patient to take another deep breath and hold it. The left kidney is higher and more posterior than the right."
+    },
+    {
+      "start": 270.0,
+      "end": 277.97,
+      "text": "kidney so try a more posterior lateral approach we will get this type of image"
+    },
+    {
+      "start": 280.35,
+      "end": 284.31,
+      "text": "The spleen can be used as a window to scan the left kidney."
+    },
+    {
+      "start": 285.9,
+      "end": 289.98,
+      "text": "We can see the renal pyramids more clearly in the..."
+    },
+    {
+      "start": 290.0,
+      "end": 294.89,
+      "text": "this image, the source muscle is also seen here."
+    },
+    {
+      "start": 297.05,
+      "end": 299.71,
+      "text": "Next, rotate the probe 90 degrees"
+    },
+    {
+      "start": 300.35,
+      "end": 309.97,
+      "text": "anti-clockwise to scan in transverse plane using the same breath hold technique we will get her trance."
+    },
+    {
+      "start": 310.0,
+      "end": 318.96,
+      "text": "The transverse view of the left kidney, we can see the spleen here, this is the reload cortex with"
+    },
+    {
+      "start": 320.22,
+      "end": 329.96,
+      "text": "Hyperquake Rideau Sinus in the middle. Thank you so much for watching. Please subscribe and stay tuned for..."
+    }
+  ]
+}

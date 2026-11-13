@@ -1,0 +1,503 @@
+{
+  "video_id": "rI9hxJDMGGY",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/eval/rI9hxJDMGGY/asr.txt",
+  "segments": [
+    {
+      "start": 0.74,
+      "end": 7.83,
+      "text": "Hello everyone, this is Dr. Sam, and this video is about a fatal femur-length ultrasound"
+    },
+    {
+      "start": 7.83,
+      "end": 8.85,
+      "text": "probe positioning."
+    },
+    {
+      "start": 11.09,
+      "end": 17.02,
+      "text": "On the left we have a schematic diagram showing the future position in the Eupress."
+    },
+    {
+      "start": 18.41,
+      "end": 19.75,
+      "text": "This is the Eupress."
+    },
+    {
+      "start": 21.22,
+      "end": 29.82,
+      "text": "This is the maternal abdomen. This black box is our first sound pro. This red"
+    },
+    {
+      "start": 30.61,
+      "end": 39.85,
+      "text": "is the indicator or the orientation marker and on the right will be the image formed base."
+    },
+    {
+      "start": 40.0,
+      "end": 46.12,
+      "text": "on the probes placement. We will be focusing on scanning the fetal"
+    },
+    {
+      "start": 46.12,
+      "end": 49.8,
+      "text": "We will start with"
+    },
+    {
+      "start": 50.29,
+      "end": 59.75,
+      "text": "the feet is in a syphilic spine posterior position, start the scan by placing the probe in a"
+    },
+    {
+      "start": 60.0,
+      "end": 68.28,
+      "text": "meditall orientation over the abdomen. The indicator is towards the mother's head if the"
+    },
+    {
+      "start": 68.28,
+      "end": 69.76,
+      "text": "fetus is in our separate"
+    },
+    {
+      "start": 70.06,
+      "end": 77.42,
+      "text": "position with posterior spine. This type of image will be formed. The"
+    },
+    {
+      "start": 77.42,
+      "end": 79.96,
+      "text": "The fiddle head will be seen on the right."
+    },
+    {
+      "start": 80.0,
+      "end": 89.97,
+      "text": "side of the image. The field spine will be seen in the lower half of the image. Identify."
+    },
+    {
+      "start": 90.0,
+      "end": 93.1,
+      "text": "the features in a mid-satital plane."
+    },
+    {
+      "start": 93.1,
+      "end": 99.31,
+      "text": "and lonely rotate the probe to a transverse orientation."
+    },
+    {
+      "start": 100.58,
+      "end": 102.86,
+      "text": "and move upwards slowly."
+    },
+    {
+      "start": 104.28,
+      "end": 107.29,
+      "text": "This image is at the level of the stomach."
+    },
+    {
+      "start": 108.48,
+      "end": 109.74,
+      "text": "So slowly keep moving."
+    },
+    {
+      "start": 110.03,
+      "end": 119.94,
+      "text": "upwards which will lead you towards the fetal legs. When you start to see the fetal"
+    },
+    {
+      "start": 120.0,
+      "end": 128.84,
+      "text": "Let's try to locate the thigh, that is the femur, rotate and angle the grove part in"
+    },
+    {
+      "start": 130.48,
+      "end": 138.72,
+      "text": "you should get this type of image, these are the femurs, this is the pelvis of"
+    },
+    {
+      "start": 140.03,
+      "end": 143.33,
+      "text": "The femur will appear as a straight echogenic line."
+    },
+    {
+      "start": 146.76,
+      "end": 149.96,
+      "text": "Prior to image, the femur in our way is..."
+    },
+    {
+      "start": 150.0,
+      "end": 159.51,
+      "text": "lies horizontally on the screen, then you can measure the femur length, make sure the femur"
+    },
+    {
+      "start": 159.51,
+      "end": 159.87,
+      "text": "So"
+    },
+    {
+      "start": 160.0,
+      "end": 169.98,
+      "text": "most of the screen, but don't zoom in too much, adjust the gain, depth and focus to get up to"
+    },
+    {
+      "start": 170.0,
+      "end": 179.9,
+      "text": "with image of the fever. This role positioning and image formation are of a fever."
+    },
+    {
+      "start": 180.03,
+      "end": 188.56,
+      "text": "is in a cephalic presentation with an interior spine position after starting in a sagittal"
+    },
+    {
+      "start": 188.56,
+      "end": 189.98,
+      "text": "view of the fetus"
+    },
+    {
+      "start": 191.06,
+      "end": 194.82,
+      "text": "The spine will be seen in the upper half of the image."
+    },
+    {
+      "start": 196.14,
+      "end": 199.96,
+      "text": "The fiddle head will be on the right side of the image."
+    },
+    {
+      "start": 200.0,
+      "end": 209.57,
+      "text": "Next, rotate the probe to obtain our transfers view and move upwards."
+    },
+    {
+      "start": 210.03,
+      "end": 219.37,
+      "text": "Slowly, this image is at the field stomach level, keep moving upwards, slowly to find"
+    },
+    {
+      "start": 220.03,
+      "end": 229.57,
+      "text": "the fiddle legs. You will eventually find the fiddle legs, adjust the probes position and"
+    },
+    {
+      "start": 230.13,
+      "end": 231.23,
+      "text": "and go gently."
+    },
+    {
+      "start": 232.74,
+      "end": 235.5,
+      "text": "Try to obtain a good view of the femur"
+    },
+    {
+      "start": 235.5,
+      "end": 238.06,
+      "text": "so you can measure the femur length."
+    },
+    {
+      "start": 241.47,
+      "end": 249.72,
+      "text": "Make sure to focus on the femur and keep it away from other bones such as the tibia or fibula."
+    },
+    {
+      "start": 250.03,
+      "end": 259.14,
+      "text": "Adjust again that and focus to get a clear image, you may have to slightly tilt or"
+    },
+    {
+      "start": 260.0,
+      "end": 269.81,
+      "text": "rock, the probe to get a good view of the femur. Always choose the femur that is near the"
+    },
+    {
+      "start": 271.06,
+      "end": 279.73,
+      "text": "measurement do not choose the femur that is seen in the far field. This femur is better for"
+    },
+    {
+      "start": 280.0,
+      "end": 286.61,
+      "text": "measurement. We rest the femur in the far field is distorted due to"
+    },
+    {
+      "start": 286.61,
+      "end": 289.86,
+      "text": "innovation from this femur"
+    },
+    {
+      "start": 290.0,
+      "end": 293.46,
+      "text": "and we'll give inaccurate measurements."
+    },
+    {
+      "start": 296.84,
+      "end": 299.78,
+      "text": "Now we will see pro positioning for finding."
+    },
+    {
+      "start": 300.0,
+      "end": 308.71,
+      "text": "the fetal femur in a fetus that is in a reach position with a posterior spine orientation."
+    },
+    {
+      "start": 310.77,
+      "end": 313.9,
+      "text": "After placing the probe in a set of orientation,"
+    },
+    {
+      "start": 315.61,
+      "end": 319.94,
+      "text": "the fetus will be seen with its head directed towards the fund."
+    },
+    {
+      "start": 320.0,
+      "end": 329.97,
+      "text": "and it slags directed towards the cervix. The spine will be seen in the lower half of the hemorrhage."
+    },
+    {
+      "start": 330.03,
+      "end": 338.39,
+      "text": "Then rotate the Pro to View in a Transverse Orientation."
+    },
+    {
+      "start": 340.0,
+      "end": 347.27,
+      "text": "image is at the level of the stomach slowly move downwards to reach the"
+    },
+    {
+      "start": 347.62,
+      "end": 348.36,
+      "text": "little legs."
+    },
+    {
+      "start": 351.86,
+      "end": 359.5,
+      "text": "The femurs due to the spine's posterior position should be clearly visible as straight"
+    },
+    {
+      "start": 360.03,
+      "end": 369.88,
+      "text": "the progenic lines, angle and position the pro accordingly, get the best view of the female."
+    },
+    {
+      "start": 371.54,
+      "end": 379.1,
+      "text": "This is the femur in the near field and this is the other femur in the RF field."
+    },
+    {
+      "start": 380.03,
+      "end": 387.1,
+      "text": "You will not see it very clearly because this femur is casting posterior acoustic shadowing"
+    },
+    {
+      "start": 387.1,
+      "end": 389.98,
+      "text": "which is affecting the visual eye."
+    },
+    {
+      "start": 390.0,
+      "end": 399.76,
+      "text": "of this femur. Now we will see how to locate the femur in a fetus that is in."
+    },
+    {
+      "start": 400.45,
+      "end": 409.43,
+      "text": "each position with interior spine, due to the interior position of the spine."
+    },
+    {
+      "start": 410.83,
+      "end": 416.22,
+      "text": "the fibers may be angled upwards and may initially appear"
+    },
+    {
+      "start": 416.48,
+      "end": 419.68,
+      "text": "and just approach"
+    },
+    {
+      "start": 420.0,
+      "end": 429.77,
+      "text": "position, body weight and angle gently to get a true view of the femur where it is seen."
+    },
+    {
+      "start": 430.0,
+      "end": 439.42,
+      "text": "as a straight ecogenic line. It can be difficult to obtain a horizontal orientation of the femur."
+    },
+    {
+      "start": 440.77,
+      "end": 447.36,
+      "text": "some cases to try to adjust the probe to get the best view possible."
+    },
+    {
+      "start": 451.02,
+      "end": 453.9,
+      "text": "Now we have a features in a transverse line"
+    },
+    {
+      "start": 453.9,
+      "end": 459.88,
+      "text": "with the spine interior when we place them."
+    },
+    {
+      "start": 460.03,
+      "end": 468.23,
+      "text": "in a certain orientation, we will get a cross section of the fetus because it is in a"
+    },
+    {
+      "start": 468.55,
+      "end": 469.69,
+      "text": "Ron Spur's line."
+    },
+    {
+      "start": 470.83,
+      "end": 478.22,
+      "text": "That is why we will get this type of image, this is at the level of the stomach and kidneys."
+    },
+    {
+      "start": 480.26,
+      "end": 483.55,
+      "text": "the spine is seen at the upper half of the image."
+    },
+    {
+      "start": 485.32,
+      "end": 489.04,
+      "text": "When you move the probe towards the mother's right side,"
+    },
+    {
+      "start": 490.0,
+      "end": 499.03,
+      "text": "find the fetal head, and when you move the probe towards the mother's left side, you will find the fetal"
+    },
+    {
+      "start": 499.03,
+      "end": 499.21,
+      "text": "next"
+    },
+    {
+      "start": 502.85,
+      "end": 509.9,
+      "text": "When you move the probe towards the mother's left side, you will find the legs slide or rub."
+    },
+    {
+      "start": 510.0,
+      "end": 519.83,
+      "text": "the probe accordingly, the femur may appear oblique, it may require some angular"
+    },
+    {
+      "start": 520.0,
+      "end": 525.75,
+      "text": "and rotation of the probe to achieve a good view of the female."
+    },
+    {
+      "start": 529.21,
+      "end": 529.77,
+      "text": "This is across."
+    },
+    {
+      "start": 530.0,
+      "end": 538.68,
+      "text": "first line where the fiddle head is towards the mother's left side and the legs are towards"
+    },
+    {
+      "start": 538.68,
+      "end": 539.98,
+      "text": "the mother's right."
+    },
+    {
+      "start": 540.06,
+      "end": 548.66,
+      "text": "side this is the image from at the level of the heart the probe is in a"
+    },
+    {
+      "start": 548.66,
+      "end": 549.76,
+      "text": "Add it all over rotation."
+    },
+    {
+      "start": 550.0,
+      "end": 559.91,
+      "text": "But the image font is giving our transfers view of the fetus to find the field legs you will move"
+    },
+    {
+      "start": 560.1,
+      "end": 569.98,
+      "text": "approved towards the mother's right side. The feet and legs might be..."
+    },
+    {
+      "start": 570.0,
+      "end": 576.4,
+      "text": "image politely, due to the transverse fly of the fetus, adjust the"
+    },
+    {
+      "start": 576.4,
+      "end": 578.89,
+      "text": "rolls, angular rotation and rotation."
+    },
+    {
+      "start": 580.03,
+      "end": 584.83,
+      "text": "gently and try to achieve a good view of the femur."
+    },
+    {
+      "start": 587.9,
+      "end": 589.92,
+      "text": "This is a fetus in a trance."
+    },
+    {
+      "start": 590.0,
+      "end": 599.86,
+      "text": "first slide with a posterior spine. The head is towards the mother right side and the legs are"
+    },
+    {
+      "start": 600.06,
+      "end": 609.86,
+      "text": "words, the mother's left side. This image is taken at the level of the heart. The spine is seen."
+    },
+    {
+      "start": 610.0,
+      "end": 619.85,
+      "text": "in the lower half of the image to find the fatal legs, you have to move the probe towards the mother's left."
+    },
+    {
+      "start": 620.1,
+      "end": 629.67,
+      "text": "and just approve the angle, see the firmware clearly, ensuring it is not"
+    },
+    {
+      "start": 630.0,
+      "end": 639.73,
+      "text": "supreme post by other bones like the tbr or fibula, modify the gain, debt and focus."
+    },
+    {
+      "start": 640.0,
+      "end": 648.85,
+      "text": "settings for the best image clarity. This is our fetus in a transverse line."
+    },
+    {
+      "start": 650.03,
+      "end": 659.28,
+      "text": "the posterior spine. The head is towards the mother's left side and the legs are towards the mother's right side."
+    },
+    {
+      "start": 660.9,
+      "end": 669.06,
+      "text": "find the legs, you have to move the rope towards the mothers right side from this position"
+    },
+    {
+      "start": 669.06,
+      "end": 669.78,
+      "text": "to find"
+    },
+    {
+      "start": 670.0,
+      "end": 679.97,
+      "text": "Let's slide it and rotate the probe accordingly to get the best view of the video."
+    },
+    {
+      "start": 680.0,
+      "end": 689.54,
+      "text": "Thank you so much for watching, please subscribe and stay tuned for more imaging videos."
+    }
+  ]
+}

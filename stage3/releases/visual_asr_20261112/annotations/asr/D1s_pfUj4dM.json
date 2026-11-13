@@ -1,0 +1,378 @@
+{
+  "video_id": "D1s_pfUj4dM",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/D1s_pfUj4dM/asr.txt",
+  "segments": [
+    {
+      "start": 5.44,
+      "end": 9.58,
+      "text": "Okay, so what we're going to do, first of all, we're going to put our probe in contact with the skin and off-suit."
+    },
+    {
+      "start": 10.26,
+      "end": 16.79,
+      "text": "sort of mock up here and we're just going to locate the area of interest that we're trying"
+    },
+    {
+      "start": 16.79,
+      "end": 17.35,
+      "text": "to sample."
+    },
+    {
+      "start": 17.35,
+      "end": 19.64,
+      "text": "For this instance, I have this"
+    },
+    {
+      "start": 20.0,
+      "end": 24.0,
+      "text": "I put a carrot line on the screen and we're just going to imagine that"
+    },
+    {
+      "start": 24.0,
+      "end": 28.46,
+      "text": "reflects a mass so that'll be either a grape or a potato that we've got in there."
+    },
+    {
+      "start": 30.0,
+      "end": 34.94,
+      "text": "little thing to note, it's worth making sure that the notch on your probe"
+    },
+    {
+      "start": 34.94,
+      "end": 39.97,
+      "text": "which represents the, or equates to the little logo on your screen, it's"
+    },
+    {
+      "start": 40.0,
+      "end": 43.88,
+      "text": "orientated in the same way as a screen. So for example at the moment I've got the"
+    },
+    {
+      "start": 43.88,
+      "end": 47.93,
+      "text": "little mark on my probe pointing to the left and in the same way the mark on"
+    },
+    {
+      "start": 47.93,
+      "end": 49.37,
+      "text": "the screen is towards the left."
+    },
+    {
+      "start": 50.03,
+      "end": 56.61,
+      "text": "because it helps to make sure that whatever your hand is holding the needle is doing mirrors"
+    },
+    {
+      "start": 56.61,
+      "end": 59.91,
+      "text": "what's happening on the screen. For example, I'm going to be coming"
+    },
+    {
+      "start": 60.68,
+      "end": 66.52,
+      "text": "to this tissue from the right with my right hand, and at the moment as I've got"
+    },
+    {
+      "start": 66.52,
+      "end": 69.96000000000001,
+      "text": "this set up the needle will also come on to the screen from the top right."
+    },
+    {
+      "start": 70.03,
+      "end": 75.46,
+      "text": "If I had the marker the other way, so the marker towards the right, but with the logo towards the left,"
+    },
+    {
+      "start": 76.04,
+      "end": 79.9,
+      "text": "then as I come in from the right with my hand and with the needle, the needle."
+    },
+    {
+      "start": 80.0,
+      "end": 82.44,
+      "text": "So I'll actually appear on the screen from the top left,"
+    },
+    {
+      "start": 82.66,
+      "end": 84.4,
+      "text": "which becomes really quite confusing."
+    },
+    {
+      "start": 84.72,
+      "end": 87.28,
+      "text": "So it can be helpful just to orientate those two together."
+    },
+    {
+      "start": 87.84,
+      "end": 89.96000000000001,
+      "text": "The other thing to bear in mind is that I'm right-handed."
+    },
+    {
+      "start": 90.0,
+      "end": 94.76,
+      "text": "I'm holding the probe in my left hand which is a little bit awkward to get used to however"
+    },
+    {
+      "start": 94.76,
+      "end": 99.76,
+      "text": "It does mean that I'm then controlling the needle with my dominant hand obviously if you're left handed then"
+    },
+    {
+      "start": 100.03,
+      "end": 104.87,
+      "text": "then reverses. So I've located the thing that I'm interested in. I'm then going to make"
+    },
+    {
+      "start": 104.87,
+      "end": 108.91,
+      "text": "sure that with that hand I'm holding the probe absolutely still and try not to move."
+    },
+    {
+      "start": 109.69,
+      "end": 109.97,
+      "text": "I'm going to take..."
+    },
+    {
+      "start": 110.0,
+      "end": 115.25,
+      "text": "needle, unkept the needle and then I'm going to make sure that the bevel of the needle is pointing"
+    },
+    {
+      "start": 115.71,
+      "end": 119.64,
+      "text": "upwards. The reason for that is that sometimes you'll get a little bubble of air trapped in the"
+    },
+    {
+      "start": 120.1,
+      "end": 124.68,
+      "text": "and that will show up quite nicely on the ultrasound. It just gives you an extra sort of"
+    },
+    {
+      "start": 125.02,
+      "end": 129.92,
+      "text": "helping hand if you like to locate the needle on the beam. The other thing to bear in mind is that the"
+    },
+    {
+      "start": 130.0,
+      "end": 135.42,
+      "text": "sound beam is very narrow in this plane, so nearly two or three millimeters. So what"
+    },
+    {
+      "start": 135.42,
+      "end": 139.86,
+      "text": "I need to be able to do in order to get this needle to show up is make sure that"
+    },
+    {
+      "start": 140.0,
+      "end": 146.25,
+      "text": "needle goes in parallel to the ultrasound beam. It's quite important to enable"
+    },
+    {
+      "start": 146.25,
+      "end": 148.91,
+      "text": "do that, to get right above above the"
+    },
+    {
+      "start": 150.06,
+      "end": 154.49,
+      "text": "If I sit back here and try and get it from here, it's very very difficult to be"
+    },
+    {
+      "start": 154.49,
+      "end": 158.61,
+      "text": "certain whether that needle is a little bit too far away from me or a little bit too far towards me."
+    },
+    {
+      "start": 159.02,
+      "end": 159.98,
+      "text": "So I'm going to get right above it."
+    },
+    {
+      "start": 160.61,
+      "end": 163.93,
+      "text": "And I'm going to start about two or three millimetres away from the product probe."
+    },
+    {
+      "start": 164.17,
+      "end": 167.65,
+      "text": "You want to be quite close, but not so close that you run the risk of sticking the needle"
+    },
+    {
+      "start": 167.65,
+      "end": 168.55,
+      "text": "into the end of the probe."
+    },
+    {
+      "start": 170.1,
+      "end": 174.74,
+      "text": "put the needle into the skin and then you can look at the machine and you're going to"
+    },
+    {
+      "start": 174.74,
+      "end": 178.88,
+      "text": "watch in the top right and as I advance the needle, making sure I do so in the same"
+    },
+    {
+      "start": 178.88,
+      "end": 179.8,
+      "text": "plane as the ultrasound."
+    },
+    {
+      "start": 180.0,
+      "end": 183.73,
+      "text": "beam. I'm going to look at the top right of the screen and I will see that needle"
+    },
+    {
+      "start": 184.15,
+      "end": 187.85,
+      "text": "advancing through the plane of the imaging. I'm going to keep going as it goes through"
+    },
+    {
+      "start": 187.85,
+      "end": 189.97,
+      "text": "the surface and into the"
+    },
+    {
+      "start": 190.0,
+      "end": 194.58,
+      "text": "mass I'm wanting to look at. And then all I'm going to do is four or five rapid stabs"
+    },
+    {
+      "start": 194.58,
+      "end": 199.42,
+      "text": "backwards and forwards. So 1, 2, 3, 4, 5 and then I'm just going to pull the needle out."
+    },
+    {
+      "start": 201.86,
+      "end": 206.49,
+      "text": "I'm going to take my syringe, make sure that's full of air, connect the needle and I want"
+    },
+    {
+      "start": 206.49,
+      "end": 209.91,
+      "text": "to do this all fairly quickly and then I'm going to squirt that onto my slide."
+    },
+    {
+      "start": 210.0,
+      "end": 216.43,
+      "text": "And then prepare the smear, so either a squash preparation or however you prepare your slides"
+    },
+    {
+      "start": 216.43,
+      "end": 219.25,
+      "text": "and that's then going to be labelled and sent off to the lab."
+    },
+    {
+      "start": 222.11,
+      "end": 226.57,
+      "text": "We're taking two or three samples to make sure that you increase your chances of getting"
+    },
+    {
+      "start": 226.57,
+      "end": 227.63,
+      "text": "a diagnostic sample."
+    },
+    {
+      "start": 228.13,
+      "end": 229.65,
+      "text": "It's also quite important."
+    },
+    {
+      "start": 230.0,
+      "end": 235.59,
+      "text": "not to try applying suction to the needle when you have the needle into the mat."
+    },
+    {
+      "start": 235.99,
+      "end": 239.86,
+      "text": "If you're finding that what you're sampling is very, very firm, very hard."
+    },
+    {
+      "start": 240.03,
+      "end": 241.61,
+      "text": "and you're not getting any sample out"
+    },
+    {
+      "start": 241.61,
+      "end": 243.05,
+      "text": "when you spread onto the slide,"
+    },
+    {
+      "start": 243.23,
+      "end": 245.39,
+      "text": "then you can try applying some suction,"
+    },
+    {
+      "start": 245.91,
+      "end": 249.11,
+      "text": "and probably one five mil syringe pull back to five mil"
+    },
+    {
+      "start": 249.11,
+      "end": 249.97,
+      "text": "or if you..."
+    },
+    {
+      "start": 250.0,
+      "end": 255.53,
+      "text": "using a 10 mil syringe, just pull it back to about 5 mil, leave it there just to apply"
+    },
+    {
+      "start": 255.53,
+      "end": 259.96,
+      "text": "some gentle suction and then let go and allow the suction to the distance."
+    },
+    {
+      "start": 260.03,
+      "end": 263.84,
+      "text": "back in before you pull the needle out of the tissue. What you don't want to do"
+    },
+    {
+      "start": 263.84,
+      "end": 267.86,
+      "text": "is pull the needle out still applying suction because as you come out through"
+    },
+    {
+      "start": 267.86,
+      "end": 269.98,
+      "text": "all the other tissue you'll be picking in so"
+    },
+    {
+      "start": 270.03,
+      "end": 273.65,
+      "text": "from the other organs as you come through them and then as you come out through the skin"
+    },
+    {
+      "start": 273.65,
+      "end": 276.03,
+      "text": "you'll get a load of contaminants from the skin as well."
+    },
+    {
+      "start": 276.91,
+      "end": 279.01,
+      "text": "So remember, if you have to apply suction"
+    },
+    {
+      "start": 280.1,
+      "end": 285.98,
+      "text": "suction arm, breast for a second or two, then let the suction go again and then pull your needle out."
+    },
+    {
+      "start": 286.4,
+      "end": 289.96,
+      "text": "The problem with that is it will tend to cause hemodilus."
+    },
+    {
+      "start": 290.19,
+      "end": 294.31,
+      "text": "sample so if you can get away with the stab sample first try that and only use"
+    },
+    {
+      "start": 294.31,
+      "end": 295.67,
+      "text": "suction if that's not working."
+    }
+  ]
+}

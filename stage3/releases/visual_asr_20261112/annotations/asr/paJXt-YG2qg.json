@@ -1,0 +1,323 @@
+{
+  "video_id": "paJXt-YG2qg",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/eval/paJXt-YG2qg/asr.txt",
+  "segments": [
+    {
+      "start": 1.47,
+      "end": 6.99,
+      "text": "Hi everyone, this is a learning tool for doing fast-right, a very quick one."
+    },
+    {
+      "start": 7.74,
+      "end": 9.58,
+      "text": "We're gonna start with a more sense pouch."
+    },
+    {
+      "start": 10.19,
+      "end": 19.0,
+      "text": "So normally when you learn under a sound your teacher will show you to push your probe on the right upper side of the patient as you can see here"
+    },
+    {
+      "start": 20.0,
+      "end": 22.64,
+      "text": "hand when you put the probe is knocked to the patient"
+    },
+    {
+      "start": 22.64,
+      "end": 27.15,
+      "text": "bait in the mid acetylite tube, the posterior acetylite,"
+    },
+    {
+      "start": 27.27,
+      "end": 29.97,
+      "text": "because this is probably the easiest way to..."
+    },
+    {
+      "start": 30.0,
+      "end": 34.14,
+      "text": "see the kidney and we avoid a floating bow, which is normally in the anterior"
+    },
+    {
+      "start": 34.14,
+      "end": 39.7,
+      "text": "at the patient. As you can see, the number one here represents what"
+    },
+    {
+      "start": 40.61,
+      "end": 46.4,
+      "text": "be the landmark for us to see the Morrison's pouch, which is the space between the liver and the"
+    },
+    {
+      "start": 46.4,
+      "end": 49.84,
+      "text": "kidney. As you can see here,"
+    },
+    {
+      "start": 50.0,
+      "end": 55.32,
+      "text": "This is Hepatoreno recessed on the left side of the screen is the normal one."
+    },
+    {
+      "start": 56.2,
+      "end": 59.96,
+      "text": "So you see liver and kidney, which is in gray color because it is..."
+    },
+    {
+      "start": 60.1,
+      "end": 64.04,
+      "text": "tissue. And then in between is the renal recess or"
+    },
+    {
+      "start": 64.04,
+      "end": 67.34,
+      "text": "Morrison pouch. In the right side of the screen when"
+    },
+    {
+      "start": 67.34,
+      "end": 69.98,
+      "text": "depression has fluid, whether it is a side is"
+    },
+    {
+      "start": 70.16,
+      "end": 77.55,
+      "text": "blood, you will see a black area in between these two organs. Another thing that I want to emphasize is the"
+    },
+    {
+      "start": 77.55,
+      "end": 79.85,
+      "text": "depth of the image. So normally"
+    },
+    {
+      "start": 80.0,
+      "end": 85.23,
+      "text": "every time when you do Androsal you need to adjust the depth to put the area that"
+    },
+    {
+      "start": 85.23,
+      "end": 89.97,
+      "text": "you're interested in the middle of the screen. In fast exam as you can see in the"
+    },
+    {
+      "start": 90.0,
+      "end": 97.3,
+      "text": "circle and the down right side of the screen. Here the depth is 11 to 15. To make"
+    },
+    {
+      "start": 97.3,
+      "end": 99.84,
+      "text": "sure every time when you do fast exam to put"
+    },
+    {
+      "start": 100.0,
+      "end": 105.84,
+      "text": "and pouch will have the renal recess in the middle of the screen. So this is what the"
+    },
+    {
+      "start": 105.84,
+      "end": 109.91,
+      "text": "first is all about. The left side is single wheel fast, which is not"
+    },
+    {
+      "start": 110.0,
+      "end": 114.68,
+      "text": "what we would do, we do have the Reno recess and then we move on, we say the"
+    },
+    {
+      "start": 114.68,
+      "end": 119.96000000000001,
+      "text": "fuzz is negative, which is not true. As you can see here, the sensitivity is fifth."
+    },
+    {
+      "start": 120.13,
+      "end": 126.7,
+      "text": "1% which means you will miss half of the patient so here comes the"
+    },
+    {
+      "start": 126.7,
+      "end": 129.93,
+      "text": "The mandible wheel fast, which you scan free air."
+    },
+    {
+      "start": 130.0,
+      "end": 137.65,
+      "text": "They have the renal recess and then you move up to sub-frenic space and then you move down to"
+    },
+    {
+      "start": 138.27,
+      "end": 139.49,
+      "text": "Inferior renal pond"
+    },
+    {
+      "start": 140.1,
+      "end": 149.17,
+      "text": "sensitivity shoots up to 81% and we will see so this is the second part of our"
+    },
+    {
+      "start": 149.17,
+      "end": 149.83,
+      "text": "physics then."
+    },
+    {
+      "start": 150.48,
+      "end": 151.88,
+      "text": "the sub-deafractic space."
+    },
+    {
+      "start": 152.72,
+      "end": 158.18,
+      "text": "So what you would do is actually you move the probe from Hectorino recess, slide the probe"
+    },
+    {
+      "start": 158.18,
+      "end": 159.98,
+      "text": "up to the patient head to..."
+    },
+    {
+      "start": 160.0,
+      "end": 167.38,
+      "text": "you know, the number second here in the picture. And then what you would see. So this is what"
+    },
+    {
+      "start": 167.38,
+      "end": 169.92,
+      "text": "sub there from the space in the other side would look."
+    },
+    {
+      "start": 170.03,
+      "end": 179.24,
+      "text": "As you can see here, the bright white curve line, as I labelled Dimeframe here, is the area that we focus."
+    },
+    {
+      "start": 180.16,
+      "end": 182.52,
+      "text": "When the patient is fluid, as you can see here,"
+    },
+    {
+      "start": 182.62,
+      "end": 185.54,
+      "text": "you can see the black area under the diaphragm."
+    },
+    {
+      "start": 185.54,
+      "end": 187.38,
+      "text": "This is very critical, especially when"
+    },
+    {
+      "start": 187.38,
+      "end": 189.98,
+      "text": "patient has fluid, minimal fluid in the..."
+    },
+    {
+      "start": 190.0,
+      "end": 195.71,
+      "text": "left upper quadrant in the spiny rupture patient, which may be have a"
+    },
+    {
+      "start": 195.71,
+      "end": 199.67,
+      "text": "or a small fluid in the area that is not."
+    },
+    {
+      "start": 200.03,
+      "end": 205.83,
+      "text": "typical spleen or renal space or a habit of renal space. The third area is"
+    },
+    {
+      "start": 205.83,
+      "end": 209.97,
+      "text": "enviable renal pool, so when you start from the habit of"
+    },
+    {
+      "start": 210.0,
+      "end": 217.53,
+      "text": "The renal recess you slide from down to the patient's foot and what you would see is kidney"
+    },
+    {
+      "start": 217.53,
+      "end": 219.29,
+      "text": "me and then infuriator."
+    },
+    {
+      "start": 220.03,
+      "end": 224.59,
+      "text": "the kidney is the area that we are interested in, as you can see here, which in this"
+    },
+    {
+      "start": 224.59,
+      "end": 229.91,
+      "text": "patient, of course, it is negative, no fluid. So there we go. This is three areas that"
+    },
+    {
+      "start": 230.0,
+      "end": 232.28,
+      "text": "you need to scan to complete physics exam."
+    },
+    {
+      "start": 232.72,
+      "end": 234.66,
+      "text": "The first one is, have the Reno recess,"
+    },
+    {
+      "start": 235.02,
+      "end": 237.83,
+      "text": "you scan up to see the sub-rinning space"
+    },
+    {
+      "start": 237.83,
+      "end": 239.97,
+      "text": "and then you slide down to see the end."
+    },
+    {
+      "start": 240.03,
+      "end": 244.48,
+      "text": "It would look like a side wave fashion when you look here."
+    },
+    {
+      "start": 244.7,
+      "end": 249.97,
+      "text": "This is actually the correct fast sound because when you do this, you actually..."
+    },
+    {
+      "start": 250.0,
+      "end": 257.62,
+      "text": "interrogate the anterior and posterior abdomen like a cat's leg. This is what"
+    },
+    {
+      "start": 257.62,
+      "end": 259.96,
+      "text": "the ultrasound would look like. You see a bright well..."
+    },
+    {
+      "start": 260.0,
+      "end": 262.88,
+      "text": "like diaphragm, you see, have the renal recess,"
+    },
+    {
+      "start": 263.1,
+      "end": 265.06,
+      "text": "and then you see Infial renal pool."
+    },
+    {
+      "start": 266.79,
+      "end": 268.75,
+      "text": "If you want to contact us, please do."
+    },
+    {
+      "start": 269.21,
+      "end": 269.71,
+      "text": "And..."
+    },
+    {
+      "start": 270.19,
+      "end": 275.25,
+      "text": "We have a free better launch of FastSection available in the App Store if you want to download"
+    },
+    {
+      "start": 275.25,
+      "end": 279.64,
+      "text": "and feedback on what you think and I'm enjoying fast and thank you."
+    }
+  ]
+}

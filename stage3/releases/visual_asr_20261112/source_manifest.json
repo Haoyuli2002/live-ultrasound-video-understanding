@@ -1,0 +1,58 @@
+[
+  {
+    "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/eval_tasks.jsonl",
+    "sha256": "3c2b52f88a763862e1fa1872c9b4457cf3c3bc88fff9dc63a2e6b7660adc0d64",
+    "qa": 40
+  },
+  {
+    "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train_tasks.jsonl",
+    "sha256": "709078e944d97cc9b51bf17747c001d9a3b3e12d1b9dc5fe8512268fbb585c0b",
+    "qa": 160
+  },
+  {
+    "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/eval_tasks.jsonl",
+    "sha256": "162f8e9a6c9d4e80295079122ea88614e5d51244d24ecb96c032c09438545459",
+    "qa": 32
+  },
+  {
+    "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train_tasks.jsonl",
+    "sha256": "b5e22d947b8aeea0eba0fcac32f79e7a599769e59febfaed7bbdbc199e433695",
+    "qa": 168
+  },
+  {
+    "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/eval_tasks.jsonl",
+    "sha256": "f4ad04fd16a63a3bfb9f91b13461b0ccf22849a5aa17b903ddfcea64b101546e",
+    "qa": 2
+  },
+  {
+    "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train_tasks.jsonl",
+    "sha256": "6867089b148e2d3658d45b6807681272846e096a133babec1ccbdf410e9637bc",
+    "qa": 98
+  },
+  {
+    "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_regen14_reviewed_20261111/eval_tasks.jsonl",
+    "sha256": "a5eaceb03032da2dde0e75489aa895d6f8b1ea412c80f343236cce4f8e954879",
+    "qa": 20
+  },
+  {
+    "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_regen14_reviewed_20261111/train_tasks.jsonl",
+    "sha256": "b3f3e885c054cc42bb557322e78455b5566034f4e5f9879f4d184b8f426aa067",
+    "qa": 79
+  },
+  {
+    "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/export_accepted79_20261111/eval_tasks.jsonl",
+    "sha256": "67e58948e66eafc06933ccce175cda2e6842441d97b992be1e0ab5ec5c36f881",
+    "qa": 89
+  },
+  {
+    "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/export_accepted79_20261111/train_tasks.jsonl",
+    "sha256": "94711875400d1cfc398a433888c5024512255248985f8b933d382e67e73f5508",
+    "qa": 327
+  },
+  {
+    "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_training_20261112/annotations/review_overrides.jsonl",
+    "sha256": "c4f836427d6e1fff0342de96ce22eaa227bdb47465a7e032cd96050fde53c141",
+    "qa": 4,
+    "role": "review_corrections_overlay"
+  }
+]

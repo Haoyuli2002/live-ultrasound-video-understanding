@@ -1,0 +1,1063 @@
+{
+  "video_id": "57yshzYBvfQ",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/57yshzYBvfQ/asr.txt",
+  "segments": [
+    {
+      "start": 5.92,
+      "end": 9.66,
+      "text": "I run this little here from ABC's Vanesthesia and today we're going to go through ultrasound."
+    },
+    {
+      "start": 10.03,
+      "end": 11.65,
+      "text": "got an intravenous cannulation."
+    },
+    {
+      "start": 12.17,
+      "end": 13.99,
+      "text": "Now, this is exactly the technique that you want."
+    },
+    {
+      "start": 14.47,
+      "end": 15.49,
+      "text": "The most difficult veins."
+    },
+    {
+      "start": 15.99,
+      "end": 17.01,
+      "text": "Sometimes your veins are deep."
+    },
+    {
+      "start": 17.13,
+      "end": 18.31,
+      "text": "Sometimes you just don't have many options"
+    },
+    {
+      "start": 18.31,
+      "end": 19.91,
+      "text": "and you want to get it right first time."
+    },
+    {
+      "start": 20.06,
+      "end": 21.64,
+      "text": "So what we're gonna go through is a structure"
+    },
+    {
+      "start": 21.64,
+      "end": 22.92,
+      "text": "in how a lot of structures,"
+    },
+    {
+      "start": 23.12,
+      "end": 25.28,
+      "text": "this is gonna be PP, DFG,"
+    },
+    {
+      "start": 25.52,
+      "end": 27.28,
+      "text": "and that's the way you get the best settings"
+    },
+    {
+      "start": 27.28,
+      "end": 29.02,
+      "text": "and the best view of your vein."
+    },
+    {
+      "start": 29.54,
+      "end": 29.98,
+      "text": "So let's get started."
+    },
+    {
+      "start": 30.0,
+      "end": 30.14,
+      "text": "Got it."
+    },
+    {
+      "start": 40.73,
+      "end": 41.87,
+      "text": "Let's get started now."
+    },
+    {
+      "start": 42.13,
+      "end": 44.09,
+      "text": "I've got with me a very helpful volunteer quant"
+    },
+    {
+      "start": 44.09,
+      "end": 46.39,
+      "text": "and he's going to help us kind of demonstrate these techniques."
+    },
+    {
+      "start": 46.57,
+      "end": 47.63,
+      "text": "So let's go through that framework."
+    },
+    {
+      "start": 48.45,
+      "end": 49.29,
+      "text": "It's PPD."
+    },
+    {
+      "start": 50.1,
+      "end": 58.29,
+      "text": "FG and that stands for probe reset, depth, frequency or focus and gain."
+    },
+    {
+      "start": 58.75,
+      "end": 59.91,
+      "text": "So we're going to show you that."
+    },
+    {
+      "start": 60.0,
+      "end": 62.2,
+      "text": "Now, so there's a couple of probes you could use,"
+    },
+    {
+      "start": 62.48,
+      "end": 64.1,
+      "text": "a hockey stick probe and a linear probe."
+    },
+    {
+      "start": 64.58,
+      "end": 66.3,
+      "text": "Now, this one is high frequency,"
+    },
+    {
+      "start": 67.16,
+      "end": 68.86,
+      "text": "which means that you're gonna have really good resolution,"
+    },
+    {
+      "start": 68.86,
+      "end": 69.78,
+      "text": "but not that much."
+    },
+    {
+      "start": 70.06,
+      "end": 74.14,
+      "text": "great depth resolution, and then you've got the linear proven. This is, you know,"
+    },
+    {
+      "start": 74.2,
+      "end": 78.74,
+      "text": "slightly less frequency, which means you still get a pretty good resolution, but a bit more depth."
+    },
+    {
+      "start": 79.24,
+      "end": 79.98,
+      "text": "Now, most of the time you-"
+    },
+    {
+      "start": 80.0,
+      "end": 81.16,
+      "text": "You can really use either one of these."
+    },
+    {
+      "start": 81.44,
+      "end": 82.6,
+      "text": "I pretty much go for this one,"
+    },
+    {
+      "start": 82.9,
+      "end": 84.48,
+      "text": "most of the time straight away,"
+    },
+    {
+      "start": 84.7,
+      "end": 86.66,
+      "text": "but they're both very, very useful and very good."
+    },
+    {
+      "start": 87.17,
+      "end": 88.43,
+      "text": "So what you find is that the frequency"
+    },
+    {
+      "start": 88.43,
+      "end": 89.97,
+      "text": "is already preset on the..."
+    },
+    {
+      "start": 90.03,
+      "end": 94.04,
+      "text": "which is which is pretty important. So when you choose the probe sometimes the probe is chosen"
+    },
+    {
+      "start": 94.04,
+      "end": 98.63,
+      "text": "itself based on the probe that you've put into the machine. Other times you might have a button"
+    },
+    {
+      "start": 98.63,
+      "end": 99.59,
+      "text": "like this, which you press."
+    },
+    {
+      "start": 100.16,
+      "end": 101.0,
+      "text": "and then you just preset."
+    },
+    {
+      "start": 101.28,
+      "end": 104.02,
+      "text": "So you can either select one of these for what you're doing."
+    },
+    {
+      "start": 104.16,
+      "end": 105.38,
+      "text": "So this is the linear proven here."
+    },
+    {
+      "start": 105.8,
+      "end": 107.5,
+      "text": "And now the next part is presets."
+    },
+    {
+      "start": 107.88,
+      "end": 109.9,
+      "text": "Again, presets might be in a different menu."
+    },
+    {
+      "start": 110.0,
+      "end": 115.9,
+      "text": "But really what it is is I can choose a whole lot of different presets here based on what I might need now"
+    },
+    {
+      "start": 116.22,
+      "end": 119.88,
+      "text": "These presets are maybe different between different ultrasound machines, but they"
+    },
+    {
+      "start": 120.22,
+      "end": 125.2,
+      "text": "represent a preset algorithm to optimize your picture for whatever you need"
+    },
+    {
+      "start": 125.2,
+      "end": 129.75,
+      "text": "whether it's nerve, vascular, carrot carotid, superficial, whatever it is, it will"
+    },
+    {
+      "start": 130.13,
+      "end": 137.43,
+      "text": "Optimize that image. So let's go over vascular. So that's probe presets. The next thing we're going to do is depth"
+    },
+    {
+      "start": 137.43,
+      "end": 139.54,
+      "text": "I'm going to get my very helpful volunteer here"
+    },
+    {
+      "start": 140.03,
+      "end": 143.2,
+      "text": "just to put this on, and what you see is a number"
+    },
+    {
+      "start": 143.2,
+      "end": 145.14,
+      "text": "of different markings on the side there."
+    },
+    {
+      "start": 145.32,
+      "end": 147.08,
+      "text": "These are capital centimeter markings."
+    },
+    {
+      "start": 147.42,
+      "end": 148.9,
+      "text": "So this depth is about four centimeters."
+    },
+    {
+      "start": 149.7,
+      "end": 149.88,
+      "text": "General."
+    },
+    {
+      "start": 150.0,
+      "end": 154.28,
+      "text": "speaking for ultrasound cannulation I don't need more than two or three centimeters so I can"
+    },
+    {
+      "start": 154.28,
+      "end": 158.65,
+      "text": "just decrease that depth. As you can see you can see a whole bunch of structures here including the"
+    },
+    {
+      "start": 158.65,
+      "end": 159.97,
+      "text": "artery there, which we'll show you in a second."
+    },
+    {
+      "start": 160.0,
+      "end": 165.9,
+      "text": "and the minimum depth is about, you know, 1.5 centimeters, which I rarely use that shallow"
+    },
+    {
+      "start": 165.9,
+      "end": 169.57,
+      "text": "depth are usually and the maximum depth is around 28."
+    },
+    {
+      "start": 170.06,
+      "end": 171.74,
+      "text": "And again, that's definitely not what I need"
+    },
+    {
+      "start": 172.18,
+      "end": 174.62,
+      "text": "for this particular ultrasound guided vascular axis."
+    },
+    {
+      "start": 175.4,
+      "end": 176.96,
+      "text": "So let's go to around three centimeters."
+    },
+    {
+      "start": 176.96,
+      "end": 177.88,
+      "text": "That's probably perfect."
+    },
+    {
+      "start": 178.63,
+      "end": 179.35,
+      "text": "That's deep adept."
+    },
+    {
+      "start": 180.0,
+      "end": 182.26,
+      "text": "Next one is F for frequency, that's already preset."
+    },
+    {
+      "start": 183.16,
+      "end": 188.15,
+      "text": "So some different machines may allow you to alter the frequency, just know that higher frequency"
+    },
+    {
+      "start": 188.51,
+      "end": 189.61,
+      "text": "gives better resolution."
+    },
+    {
+      "start": 190.22,
+      "end": 192.0,
+      "text": "but lower if we give you more penetration"
+    },
+    {
+      "start": 192.0,
+      "end": 194.54,
+      "text": "so you can get more definition of deeper structures."
+    },
+    {
+      "start": 195.14,
+      "end": 196.32,
+      "text": "You might want to play around with your settings"
+    },
+    {
+      "start": 196.32,
+      "end": 197.68,
+      "text": "to get the best view possible."
+    },
+    {
+      "start": 198.98,
+      "end": 199.98,
+      "text": "If a focus is at the..."
+    },
+    {
+      "start": 200.0,
+      "end": 204.96,
+      "text": "little arrow so that there's usually some marking and what you do is you move the arrow"
+    },
+    {
+      "start": 204.96,
+      "end": 206.83,
+      "text": "to the structure of interest."
+    },
+    {
+      "start": 206.83,
+      "end": 209.97,
+      "text": "So, because maybe I'm wanting to do an arch arch."
+    },
+    {
+      "start": 210.03,
+      "end": 214.23,
+      "text": "material cannulation, I'll move the structure up there and it makes that structure there"
+    },
+    {
+      "start": 214.23,
+      "end": 219.4,
+      "text": "the best resolution whereas if I had something deeper I can move that down and it makes that"
+    },
+    {
+      "start": 219.4,
+      "end": 219.96,
+      "text": "area there."
+    },
+    {
+      "start": 220.03,
+      "end": 221.69,
+      "text": "better resolution, better quality image."
+    },
+    {
+      "start": 222.9,
+      "end": 224.12,
+      "text": "That's frequency and focus."
+    },
+    {
+      "start": 224.89,
+      "end": 225.65,
+      "text": "Finally, let's go to gain."
+    },
+    {
+      "start": 226.31,
+      "end": 228.67,
+      "text": "Gain is really how much information is coming back."
+    },
+    {
+      "start": 228.77,
+      "end": 229.75,
+      "text": "It makes your signal brighter."
+    },
+    {
+      "start": 230.45,
+      "end": 235.4,
+      "text": "darker. So increased gain really just makes the screen brighter. The increased gain"
+    },
+    {
+      "start": 235.4,
+      "end": 238.42,
+      "text": "makes it blacker and obviously you just need somewhere in between so that you"
+    },
+    {
+      "start": 238.42,
+      "end": 239.5,
+      "text": "can identify structures."
+    },
+    {
+      "start": 240.03,
+      "end": 241.77,
+      "text": "So it's again a very useful setting to have."
+    },
+    {
+      "start": 243.2,
+      "end": 245.03,
+      "text": "Okay, so I think that's pretty much it."
+    },
+    {
+      "start": 245.45,
+      "end": 247.13,
+      "text": "We've gone through how to make a preset"
+    },
+    {
+      "start": 247.13,
+      "end": 249.67,
+      "text": "really effective, that's PPDFG."
+    },
+    {
+      "start": 250.0,
+      "end": 254.5,
+      "text": "that is probe, presets, depth, frequency and focus, and gain."
+    },
+    {
+      "start": 254.96,
+      "end": 255.6,
+      "text": "And that's all it is."
+    },
+    {
+      "start": 260.0,
+      "end": 265.69,
+      "text": "I'll show you veins on a live volunteer with ultrasound and so it's going to be really"
+    },
+    {
+      "start": 265.69,
+      "end": 269.69,
+      "text": "useful again for the most difficult veins, the deepest veins and when you've got a lot of problems"
+    },
+    {
+      "start": 270.1,
+      "end": 271.52,
+      "text": "trying to get basketball access to the ultrasound"
+    },
+    {
+      "start": 271.52,
+      "end": 275.24,
+      "text": "is an absolute game changer in giving us extra success."
+    },
+    {
+      "start": 276.27,
+      "end": 277.19,
+      "text": "So first of all, as always,"
+    },
+    {
+      "start": 277.53,
+      "end": 279.09,
+      "text": "I get all my setup as usual,"
+    },
+    {
+      "start": 279.41,
+      "end": 279.87,
+      "text": "or what I'm gonna do."
+    },
+    {
+      "start": 280.0,
+      "end": 281.94,
+      "text": "I'm not gonna focus on all the details of cannulation."
+    },
+    {
+      "start": 282.2,
+      "end": 283.52,
+      "text": "I'm just gonna show you the veins."
+    },
+    {
+      "start": 283.72,
+      "end": 285.4,
+      "text": "So first of all, apply a tourniquet."
+    },
+    {
+      "start": 289.08,
+      "end": 289.98,
+      "text": "Now what this does is it..."
+    },
+    {
+      "start": 290.35,
+      "end": 295.34,
+      "text": "promotes arterial flow, it doesn't block the arterial flow to the arm, but it does prevent"
+    },
+    {
+      "start": 295.34,
+      "end": 299.36,
+      "text": "the venous flow going back, which increases the pressure in the veins, which means that"
+    },
+    {
+      "start": 299.36,
+      "end": 299.96,
+      "text": "they stand down."
+    },
+    {
+      "start": 300.0,
+      "end": 302.6,
+      "text": "and it's much easier than to show you stuff."
+    },
+    {
+      "start": 303.16,
+      "end": 304.52,
+      "text": "So the first thing I do is I always check"
+    },
+    {
+      "start": 304.52,
+      "end": 305.72,
+      "text": "the orientation of the probe."
+    },
+    {
+      "start": 306.24,
+      "end": 309.98,
+      "text": "So what I do here is I just touch here with a glove."
+    },
+    {
+      "start": 310.38,
+      "end": 313.52,
+      "text": "and make sure that I get some interference in the correct side so I know the"
+    },
+    {
+      "start": 313.52,
+      "end": 319.92,
+      "text": "orientation of this. Now what I'm going to do is I'm just going to scan. You'll see that the"
+    },
+    {
+      "start": 320.0,
+      "end": 324.83,
+      "text": "that you're generally really superficial and I'm going to show you what we can see."
+    },
+    {
+      "start": 325.46,
+      "end": 329.98,
+      "text": "I've got a vein here but it's pretty superficial so I'm just going to decrease the depth."
+    },
+    {
+      "start": 330.0,
+      "end": 337.56,
+      "text": "And so what you can see is this type of echo extracture or black structure and it's you know"
+    },
+    {
+      "start": 337.56,
+      "end": 339.68,
+      "text": "It's elliptical which means that it's probably some"
+    },
+    {
+      "start": 340.03,
+      "end": 344.4,
+      "text": "kind of vessel and it's also very compressible so you'll see them just pressing down gently"
+    },
+    {
+      "start": 344.4,
+      "end": 349.19,
+      "text": "and that is also compressing and most importantly it's not pulsatile."
+    },
+    {
+      "start": 350.0,
+      "end": 351.64,
+      "text": "This was an archery, it would be pulsatile."
+    },
+    {
+      "start": 352.33,
+      "end": 355.32,
+      "text": "Now let's compare it to another side over here."
+    },
+    {
+      "start": 358.68,
+      "end": 359.26,
+      "text": "Okay, so."
+    },
+    {
+      "start": 360.03,
+      "end": 361.31,
+      "text": "I've got another structure, it's a bit deeper."
+    },
+    {
+      "start": 362.34,
+      "end": 363.34,
+      "text": "And what do you notice about that?"
+    },
+    {
+      "start": 363.52,
+      "end": 365.3,
+      "text": "That's actually pulsating."
+    },
+    {
+      "start": 365.64,
+      "end": 366.77,
+      "text": "And so that's an artery."
+    },
+    {
+      "start": 367.89,
+      "end": 369.97,
+      "text": "Now, it is compressible, but the mouik..."
+    },
+    {
+      "start": 370.0,
+      "end": 373.44,
+      "text": "compress it, the more it's going to be pulsatile, and it will really show up there."
+    },
+    {
+      "start": 374.04,
+      "end": 375.6,
+      "text": "So that's a structure that I don't want to use."
+    },
+    {
+      "start": 376.1,
+      "end": 379.78,
+      "text": "I definitely don't want to get vasculatis for if I'm trying to do intravenous cannulations."
+    },
+    {
+      "start": 380.0,
+      "end": 384.9,
+      "text": "going to be very careful with that. If I was to put Doppler on this, you would also see color"
+    },
+    {
+      "start": 385.47,
+      "end": 389.96,
+      "text": "pulsating through, and that shows you that it's like"
+    },
+    {
+      "start": 390.0,
+      "end": 391.88,
+      "text": "likely to be a pulsatile structure as well."
+    },
+    {
+      "start": 394.6,
+      "end": 394.78,
+      "text": "Beautiful."
+    },
+    {
+      "start": 395.38,
+      "end": 397.62,
+      "text": "Now interestingly across here we have the median note."
+    },
+    {
+      "start": 398.0,
+      "end": 399.74,
+      "text": "So that little bundle there is median note."
+    },
+    {
+      "start": 400.0,
+      "end": 402.32,
+      "text": "You can see that this whole cubital fossa region"
+    },
+    {
+      "start": 402.68,
+      "end": 404.66,
+      "text": "is, you know, there's a lot of things going on there."
+    },
+    {
+      "start": 404.8,
+      "end": 406.95,
+      "text": "There's tendons, there's muscle bellies"
+    },
+    {
+      "start": 406.95,
+      "end": 409.27,
+      "text": "to the other side, there's this median nerve"
+    },
+    {
+      "start": 409.27,
+      "end": 409.97,
+      "text": "which you definitely don't..."
+    },
+    {
+      "start": 410.0,
+      "end": 413.58,
+      "text": "want to damage and there's an archery. So when we're going for these cubital fossa veins,"
+    },
+    {
+      "start": 413.86,
+      "end": 418.46,
+      "text": "like this one here at the top, you'll be really careful that you don't go very deep. Now,"
+    },
+    {
+      "start": 418.46,
+      "end": 419.97,
+      "text": "I found that ultrason"
+    },
+    {
+      "start": 420.0,
+      "end": 424.56,
+      "text": "calculation is just that such a really useful technique because it's told me a lot about"
+    },
+    {
+      "start": 424.56,
+      "end": 427.36,
+      "text": "the structures around and how I need to be careful."
+    },
+    {
+      "start": 427.48,
+      "end": 429.86,
+      "text": "For example, that vein in the cubital fossa"
+    },
+    {
+      "start": 430.0,
+      "end": 436.6,
+      "text": "that we'd go for time and time again is really superficial. That's a 0.5cm mark and so this is"
+    },
+    {
+      "start": 436.6,
+      "end": 439.9,
+      "text": "you know from about 1 to 2 million"
+    },
+    {
+      "start": 440.03,
+      "end": 445.45,
+      "text": "meters to four millimeters at its maximum depth. So if your cannula is going more than"
+    },
+    {
+      "start": 445.45,
+      "end": 449.65,
+      "text": "about that, you're probably too deep. And if you go too deep, guess what?"
+    },
+    {
+      "start": 450.0,
+      "end": 452.72,
+      "text": "You've got the artery there and you've got nerves there."
+    },
+    {
+      "start": 454.53,
+      "end": 456.31,
+      "text": "Now, here's another interesting feature here,"
+    },
+    {
+      "start": 456.47,
+      "end": 457.57,
+      "text": "which is really great to see."
+    },
+    {
+      "start": 458.69,
+      "end": 459.97,
+      "text": "You see these two structures we've showed."
+    },
+    {
+      "start": 460.0,
+      "end": 465.6,
+      "text": "you to archery that's pulsatile and I increase pressure and show that but as I"
+    },
+    {
+      "start": 466.53,
+      "end": 469.23,
+      "text": "take the pressure off you can see this beautiful big structure here which is"
+    },
+    {
+      "start": 469.23,
+      "end": 469.59,
+      "text": "The vein."
+    },
+    {
+      "start": 470.16,
+      "end": 472.34,
+      "text": "Now that vein compresses while the artery next to it"
+    },
+    {
+      "start": 472.34,
+      "end": 474.65,
+      "text": "is pulsed on, doesn't compresses easily."
+    },
+    {
+      "start": 475.45,
+      "end": 477.01,
+      "text": "And so very occasionally when I've got"
+    },
+    {
+      "start": 477.01,
+      "end": 479.85,
+      "text": "the most difficult situations I'll need to be very accurate"
+    },
+    {
+      "start": 480.0,
+      "end": 485.14,
+      "text": "my intravenous cannula to make sure it goes into the vein and not the archery. So that's something"
+    },
+    {
+      "start": 485.14,
+      "end": 489.98,
+      "text": "quite interesting to know. So now when I look down here, I've got John."
+    },
+    {
+      "start": 490.0,
+      "end": 492.2,
+      "text": "of the catholic veins on the lateral side,"
+    },
+    {
+      "start": 492.3,
+      "end": 493.7,
+      "text": "the silics are on the inside."
+    },
+    {
+      "start": 494.22,
+      "end": 495.62,
+      "text": "And so, you know, when I was starting out,"
+    },
+    {
+      "start": 495.9,
+      "end": 497.86,
+      "text": "I was probably trying to aim more for the lateral veins"
+    },
+    {
+      "start": 498.35,
+      "end": 499.98,
+      "text": "because these ones here don't have a"
+    },
+    {
+      "start": 500.0,
+      "end": 504.16,
+      "text": "many you know critical structures like arteries and nerves below it's that's"
+    },
+    {
+      "start": 504.16,
+      "end": 507.91,
+      "text": "probably a safer one to go for. Whereas when I come around here into the"
+    },
+    {
+      "start": 507.91,
+      "end": 509.87,
+      "text": "medial side you've got your vacillic vein."
+    },
+    {
+      "start": 510.03,
+      "end": 515.8,
+      "text": "And you can see one at the top just there, but again below that is a number of critical"
+    },
+    {
+      "start": 515.8,
+      "end": 516.04,
+      "text": "structures."
+    },
+    {
+      "start": 516.06,
+      "end": 519.64,
+      "text": "I'd say this side once you gave it more comfortable and you're familiar."
+    },
+    {
+      "start": 520.16,
+      "end": 521.32,
+      "text": "with your needle and the depth."
+    },
+    {
+      "start": 527.28,
+      "end": 529.68,
+      "text": "What we're gonna do is a real life ultrasound guided."
+    },
+    {
+      "start": 530.03,
+      "end": 532.07,
+      "text": "to be in this cannula on a very helpful volunteer."
+    },
+    {
+      "start": 532.51,
+      "end": 533.33,
+      "text": "So let's get started."
+    },
+    {
+      "start": 533.98,
+      "end": 535.48,
+      "text": "So what I'm gonna do is all my usual setup."
+    },
+    {
+      "start": 535.82,
+      "end": 536.88,
+      "text": "So I'll put on the tourniquet,"
+    },
+    {
+      "start": 537.22,
+      "end": 538.78,
+      "text": "make sure my patient's comfortable."
+    },
+    {
+      "start": 539.3,
+      "end": 539.96,
+      "text": "I'll do this setup."
+    },
+    {
+      "start": 540.0,
+      "end": 548.93,
+      "text": "is a bit different because we're using a trolley here. I'll use a septic non-touch technique for all of my"
+    },
+    {
+      "start": 550.0,
+      "end": 552.52,
+      "text": "And I'm just using a small 22 gauge cannula"
+    },
+    {
+      "start": 552.52,
+      "end": 556.18,
+      "text": "and we clean the surface with a claw hats alcohol solution,"
+    },
+    {
+      "start": 556.18,
+      "end": 559.08,
+      "text": "making sure the patient isn't allergic to these substances."
+    },
+    {
+      "start": 560.19,
+      "end": 561.67,
+      "text": "and then we'll get started."
+    },
+    {
+      "start": 563.4,
+      "end": 565.58,
+      "text": "Firstly, what I do is I just check my cannula"
+    },
+    {
+      "start": 566.84,
+      "end": 569.1,
+      "text": "and then just make sure that the tip is loosened."
+    },
+    {
+      "start": 570.8,
+      "end": 572.08,
+      "text": "I then just check the ultrasound,"
+    },
+    {
+      "start": 572.08,
+      "end": 573.34,
+      "text": "make sure it's the right orientation,"
+    },
+    {
+      "start": 573.38,
+      "end": 574.28,
+      "text": "which it is there,"
+    },
+    {
+      "start": 575.59,
+      "end": 576.17,
+      "text": "and just have a look."
+    },
+    {
+      "start": 576.25,
+      "end": 577.57,
+      "text": "I'm going for the lateral side,"
+    },
+    {
+      "start": 577.67,
+      "end": 579.27,
+      "text": "because there's lots of other structures."
+    },
+    {
+      "start": 580.0,
+      "end": 586.07,
+      "text": "side on the medial side that are bit dangerous and as you can see there you can see the vein"
+    },
+    {
+      "start": 586.07,
+      "end": 589.36,
+      "text": "there it's compressible and it's not pulsatile."
+    },
+    {
+      "start": 590.58,
+      "end": 591.7,
+      "text": "So here we go, so it's fine, you're good."
+    },
+    {
+      "start": 593.81,
+      "end": 595.35,
+      "text": "Beautiful, you can see on the screen."
+    },
+    {
+      "start": 600.32,
+      "end": 605.11,
+      "text": "You can see that tip on the screen that's in the center, and so now, I know I'm in the"
+    },
+    {
+      "start": 605.11,
+      "end": 605.79,
+      "text": "right spot there."
+    },
+    {
+      "start": 606.66,
+      "end": 609.98,
+      "text": "It's going to advance it a little bit, and then..."
+    },
+    {
+      "start": 610.0,
+      "end": 616.04,
+      "text": "read it through and that's gone in nicely. I put my ultrasound probe down using the"
+    },
+    {
+      "start": 616.04,
+      "end": 619.96,
+      "text": "to one o'clock. Pressure distally over there and naturalization."
+    },
+    {
+      "start": 620.03,
+      "end": 625.6,
+      "text": "sharp is nice and safe and then I put the cap on like so making sure that there's minimal"
+    },
+    {
+      "start": 625.6,
+      "end": 629.5,
+      "text": "a lot of coming back. That's gone all."
+    },
+    {
+      "start": 630.22,
+      "end": 637.02,
+      "text": "really well put the tagger down there we're good to go."
+    },
+    {
+      "start": 637.87,
+      "end": 639.29,
+      "text": "For what we're going to do now we're going to flush that"
+    },
+    {
+      "start": 639.29,
+      "end": 639.93,
+      "text": "and make sure this one."
+    },
+    {
+      "start": 640.0,
+      "end": 643.58,
+      "text": "that's working. Thanks very much for watching and tuning in for more ultra-centred guided"
+    },
+    {
+      "start": 643.58,
+      "end": 644.76,
+      "text": "fast-kill access videos."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "video_id": "pXUwN6srPyQ",
+  "reviewer": "stage3_b",
+  "review_scope": "Question-led review by Agent B of Agent A draft; not blind. Native full-frame sampled checkpoints and available time-indexed ASR; no continuous replay or direct listening claim.",
+  "reviewer_native_opened": [
+    270,
+    300,
+    320,
+    325,
+    328,
+    329,
+    330,
+    525,
+    528,
+    528.5,
+    529,
+    625,
+    675,
+    678,
+    679,
+    679.5,
+    680,
+    740
+  ],
+  "tasks": [
+    {
+      "task_index": 1,
+      "outcome": "corrected",
+      "issues": [
+        "NextM-mode already clear329."
+      ],
+      "changes": [
+        "Advanced answer330 to329; added negative328 and intervening325."
+      ],
+      "query_status": "WAIT270; next stored M-mode pattern absent.",
+      "answer_status": "ANSWER329; horizontal lower bands instead of earlier granular texture."
+    },
+    {
+      "task_index": 2,
+      "outcome": "accepted_with_boundary_evidence",
+      "issues": [],
+      "changes": [
+        "Added528.5 negative frame."
+      ],
+      "query_status": "WAIT525; pulseMmode, not requested multi-columnB-mode example.",
+      "answer_status": "ANSWER529; real bright columns visible, separate from annotation arrows."
+    },
+    {
+      "task_index": 3,
+      "outcome": "accepted",
+      "issues": [],
+      "changes": [],
+      "query_status": "ANSWER625; dark tapered stripe between labelled liver and kidney visible."
+    },
+    {
+      "task_index": 4,
+      "outcome": "corrected",
+      "issues": [
+        "NextRUQ example already clear679."
+      ],
+      "changes": [
+        "Advanced answer680 to679. Kept qualifier no similarly obvious broad stripe and separate-example scope."
+      ],
+      "query_status": "WAIT675; subsequent scan absent.",
+      "answer_status": "ANSWER679; organ interface lacks prior broad dark separating stripe."
+    },
+    {
+      "task_index": 5,
+      "outcome": "accepted",
+      "issues": [],
+      "changes": [],
+      "query_status": "ANSWER740; earlier seashore270 lower region granular, upper horizontal."
+    }
+  ]
+}

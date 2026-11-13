@@ -1,0 +1,1783 @@
+{
+  "video_id": "h2geLj0rsf0",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/eval/h2geLj0rsf0/asr.txt",
+  "segments": [
+    {
+      "start": 0.13,
+      "end": 3.08,
+      "text": "So let us discuss long ultrasound findings now."
+    },
+    {
+      "start": 3.64,
+      "end": 9.58,
+      "text": "First I will tell you about the normal findings and then what abnormality would point towards"
+    },
+    {
+      "start": 9.58,
+      "end": 9.88,
+      "text": "it's something."
+    },
+    {
+      "start": 10.06,
+      "end": 16.02,
+      "text": "specific disease condition so we should always correlate the findings with the clinical"
+    },
+    {
+      "start": 16.02,
+      "end": 19.92,
+      "text": "history and the physical examination of the patient as well for a very apt"
+    },
+    {
+      "start": 20.0,
+      "end": 25.3,
+      "text": "diagnosis but the accuracy as I already mentioned of longitudinal to sound is as good as the"
+    },
+    {
+      "start": 25.3,
+      "end": 29.98,
+      "text": "chest it is very even better in some conditions ok. So, what is the normal findings which"
+    },
+    {
+      "start": 30.0,
+      "end": 32.42,
+      "text": "which we will get in a normal patient on Lungal Tissot."
+    },
+    {
+      "start": 33.31,
+      "end": 39.66,
+      "text": "The first thing which we need to know that whenever we put the probe of the..."
+    },
+    {
+      "start": 41.64,
+      "end": 45.74,
+      "text": "the first normal thing which we have we will see is the pattern which we are getting"
+    },
+    {
+      "start": 45.74,
+      "end": 49.24,
+      "text": "something called a line pattern. So, what is this normal?"
+    },
+    {
+      "start": 50.03,
+      "end": 58.79,
+      "text": "A line pattern, what do I mean by A line pattern? So, if this is the screen of the"
+    },
+    {
+      "start": 58.79,
+      "end": 59.79,
+      "text": "I just want to show the machine."
+    },
+    {
+      "start": 60.42,
+      "end": 64.61,
+      "text": "So what we see in the middle, hyperequique shimmering,"
+    },
+    {
+      "start": 65.41,
+      "end": 66.51,
+      "text": "the pleural line is seen."
+    },
+    {
+      "start": 67.02,
+      "end": 69.0,
+      "text": "Now this is hyperequique shimmering pleural line,"
+    },
+    {
+      "start": 69.12,
+      "end": 69.96,
+      "text": "which has a horizontal..."
+    },
+    {
+      "start": 70.0,
+      "end": 77.7,
+      "text": "movement along with the respiration. And at a regular interval of this neural line is the"
+    },
+    {
+      "start": 77.7,
+      "end": 79.98,
+      "text": "reverberation artifact of this reverberation."
+    },
+    {
+      "start": 80.13,
+      "end": 86.63,
+      "text": "of the fluid line to the deep of the of the of the screen. So, this is called a line pattern"
+    },
+    {
+      "start": 86.63,
+      "end": 89.88,
+      "text": "this is called a line pattern and when this is there"
+    },
+    {
+      "start": 90.42,
+      "end": 96.1,
+      "text": "it indicates normal lung erasure. So, what is this a line? Why we are getting this a"
+    },
+    {
+      "start": 96.1,
+      "end": 99.98,
+      "text": "line? So, this is what is indicating good erasure."
+    },
+    {
+      "start": 100.03,
+      "end": 106.2,
+      "text": "and this should be present in the normal lungs. Now, ultrasound wave when we put the ultrasound probe"
+    },
+    {
+      "start": 106.2,
+      "end": 109.38,
+      "text": "in between the two ribs, right?"
+    },
+    {
+      "start": 110.22,
+      "end": 118.3,
+      "text": "Now vertical in the vertical direction, it is parallel to the long axis of the body, then"
+    },
+    {
+      "start": 118.3,
+      "end": 119.87,
+      "text": "Then we get this part on"
+    },
+    {
+      "start": 120.42,
+      "end": 126.96,
+      "text": "and what does it represent? The ultrasound waveform is completely reflected from the junction"
+    },
+    {
+      "start": 126.96,
+      "end": 129.92,
+      "text": "of the plura and the normal lung irritate tissue."
+    },
+    {
+      "start": 130.0,
+      "end": 135.56,
+      "text": "So, this is the A line, the first neural line I am talking about this neural line, the"
+    },
+    {
+      "start": 135.56,
+      "end": 139.22,
+      "text": "plural line. So, this plural line is"
+    },
+    {
+      "start": 140.03,
+      "end": 149.82,
+      "text": "there because ultra sound wave, ultra sound wave are almost completely almost."
+    },
+    {
+      "start": 150.38,
+      "end": 159.22,
+      "text": "completely reflected, reflected from the interface."
+    },
+    {
+      "start": 160.1,
+      "end": 166.42,
+      "text": "interface between the plura and the erated lung, plura and the erated lung"
+    },
+    {
+      "start": 167.28,
+      "end": 169.91,
+      "text": "okay so we get a hyperic oik"
+    },
+    {
+      "start": 170.03,
+      "end": 179.18,
+      "text": "bright horizontal strip. So we are getting hyper eco-ec, bright horizontal strip."
+    },
+    {
+      "start": 180.0,
+      "end": 187.71,
+      "text": "So, this is the normal image of the, this is normal image is called plural line, then this"
+    },
+    {
+      "start": 187.71,
+      "end": 189.81,
+      "text": "plural line is regularly represented."
+    },
+    {
+      "start": 190.61,
+      "end": 196.34,
+      "text": "at equal intervals as a reverberation artifact and that is what is called a line pattern."
+    },
+    {
+      "start": 196.34,
+      "end": 199.38,
+      "text": "So plural line, plural line."
+    },
+    {
+      "start": 200.42,
+      "end": 202.08,
+      "text": "are regularly spaced."
+    },
+    {
+      "start": 202.68,
+      "end": 209.04,
+      "text": "Regularly spaced reverberation, reverberation, artifact."
+    },
+    {
+      "start": 210.73,
+      "end": 216.7,
+      "text": "and this is what is called a line pattern. We get multiple a lines and that is called"
+    },
+    {
+      "start": 216.7,
+      "end": 219.34,
+      "text": "A line pattern which is represented normally."
+    },
+    {
+      "start": 220.26,
+      "end": 229.57,
+      "text": "Okay, so let's say this is my a lines. Okay, these are the a lines. Okay, so in between the a lines, there could be"
+    },
+    {
+      "start": 230.06,
+      "end": 235.28,
+      "text": "vertical or the vertical small vertical line, this is called Z line and this is normal"
+    },
+    {
+      "start": 235.28,
+      "end": 239.97,
+      "text": "and this should not be can get confused, we should not confuse it with B line, the pattern."
+    },
+    {
+      "start": 240.0,
+      "end": 246.6,
+      "text": "b line. Now, this z line is normal z line, this is normally present in the lung, which"
+    },
+    {
+      "start": 246.6,
+      "end": 249.74,
+      "text": "is represent this which is short bright vertical artifact."
+    },
+    {
+      "start": 250.13,
+      "end": 255.91,
+      "text": "and this is the focal, focal densities at the level of the plurar representing microelectroelectasis."
+    },
+    {
+      "start": 256.45,
+      "end": 259.92,
+      "text": "So, we have something called Z line, Z line"
+    },
+    {
+      "start": 260.32,
+      "end": 269.41,
+      "text": "which are short, bright, vertical artifact, vertical artifact. And this should not be a"
+    },
+    {
+      "start": 270.58,
+      "end": 277.69,
+      "text": "confused with B line which is true and true on the screen the vertical artifacts."
+    },
+    {
+      "start": 278.33,
+      "end": 279.59,
+      "text": "So if this I will just"
+    },
+    {
+      "start": 280.0,
+      "end": 288.06,
+      "text": "arrow this is a line now this vertical artifacts these are the z lines but how"
+    },
+    {
+      "start": 288.06,
+      "end": 289.76,
+      "text": "would be the b lines"
+    },
+    {
+      "start": 290.0,
+      "end": 296.03,
+      "text": "the B lines would completely remove the A line. So, it will what will happen when B lines"
+    },
+    {
+      "start": 296.03,
+      "end": 299.97,
+      "text": "would be there the A line will not be seen if there are two."
+    },
+    {
+      "start": 300.03,
+      "end": 305.85,
+      "text": "many b lines. So, a line would not be seen right or there would be break in the a line"
+    },
+    {
+      "start": 305.85,
+      "end": 309.77,
+      "text": "but a line would not be seen ok. So, b line is completely from the"
+    },
+    {
+      "start": 310.0,
+      "end": 317.3,
+      "text": "neural line to the down of the of the of the screen, but this z lines is just a small horizontal"
+    },
+    {
+      "start": 317.3,
+      "end": 319.92,
+      "text": "vertical artifact ok and this is"
+    },
+    {
+      "start": 320.0,
+      "end": 324.22,
+      "text": "normal. Then there is something called lung sliding sign, which is shimmering movement"
+    },
+    {
+      "start": 324.22,
+      "end": 329.93,
+      "text": "of the plura with respiration. Lung sliding sign, which is the dine."
+    },
+    {
+      "start": 330.0,
+      "end": 339.64,
+      "text": "horizontal movement sliding sign. So long sliding sign which is the horizontal"
+    },
+    {
+      "start": 340.0,
+      "end": 349.14,
+      "text": "moment of plural horizontal movement of plural line and this is representing the moment of"
+    },
+    {
+      "start": 349.14,
+      "end": 349.88,
+      "text": "and we'll see you in the next video."
+    },
+    {
+      "start": 350.0,
+      "end": 356.43,
+      "text": "pleura, overt respiration, then we have lung pulse, lung pulse, because this is also rhythmic"
+    },
+    {
+      "start": 356.43,
+      "end": 359.84,
+      "text": "movement of the pleura, subcal rhythmic movement of the pleura."
+    },
+    {
+      "start": 360.0,
+      "end": 365.2,
+      "text": "with the hot, with the movement of the hot, the movement of the cardiac pulse is transmitted"
+    },
+    {
+      "start": 365.2,
+      "end": 369.57,
+      "text": "to the lung tissues and we get the lung pulse. So, this is called lung pulse. So, this is"
+    },
+    {
+      "start": 369.57,
+      "end": 369.89,
+      "text": "movement."
+    },
+    {
+      "start": 370.0,
+      "end": 377.97,
+      "text": "of Lura synchronous with the moment of heart. So let us little details about talk about"
+    },
+    {
+      "start": 377.97,
+      "end": 379.83,
+      "text": "these normal findings."
+    },
+    {
+      "start": 380.0,
+      "end": 384.24,
+      "text": "also where where it will be present and one pathological condition the combination"
+    },
+    {
+      "start": 384.24,
+      "end": 389.29,
+      "text": "what combination we will get. So, let us start with the image of your"
+    },
+    {
+      "start": 390.0,
+      "end": 395.82,
+      "text": "A lines. So, this is a normal long shimmering movement of the plural, plural plural line."
+    },
+    {
+      "start": 395.92,
+      "end": 399.82,
+      "text": "This is called sliding sign, sliding sign and then A lines"
+    },
+    {
+      "start": 400.0,
+      "end": 405.46,
+      "text": "are represented the reverberation artifact of this plural line. So, this is something a"
+    },
+    {
+      "start": 405.46,
+      "end": 409.86,
+      "text": "line pattern, a line pattern. So, always keep in mind this a line"
+    },
+    {
+      "start": 410.0,
+      "end": 414.92,
+      "text": "pattern we will see in a normal lung. So, this a line pattern we will see in the normal"
+    },
+    {
+      "start": 414.92,
+      "end": 419.94,
+      "text": "lung ok. So, where lung sliding what is lung sliding? So, lung sliding."
+    },
+    {
+      "start": 420.0,
+      "end": 422.32,
+      "text": "I said shimmering move horizontal moment of the plura."
+    },
+    {
+      "start": 422.84,
+      "end": 428.98,
+      "text": "So shimmering moment of plura synchronous with respiration at plural line indicates sliding"
+    },
+    {
+      "start": 428.98,
+      "end": 429.94,
+      "text": "looking up with Siddhal An."
+    },
+    {
+      "start": 430.0,
+      "end": 437.9,
+      "text": "So, long sliding, we will see normal lung and when the respiration is happening, if respiration"
+    },
+    {
+      "start": 437.9,
+      "end": 439.24,
+      "text": "stops for some reason."
+    },
+    {
+      "start": 440.0,
+      "end": 444.0,
+      "text": "right, the lung sliding sign will not be there. So, it will not be there in apnea, it will"
+    },
+    {
+      "start": 444.0,
+      "end": 447.92,
+      "text": "not be there in endobron carotubation, well only one lung is getting ventilated the other"
+    },
+    {
+      "start": 447.92,
+      "end": 449.98,
+      "text": "lung we will not, other side we will not see."
+    },
+    {
+      "start": 450.0,
+      "end": 454.54,
+      "text": "the long sliding sign right or it will not be seen when the parietal and the visceral"
+    },
+    {
+      "start": 454.54,
+      "end": 459.92,
+      "text": "pleurize separated by some thing present in between it that is your between"
+    },
+    {
+      "start": 460.0,
+      "end": 465.93,
+      "text": "the air present between the visceral and paratlipidra, that is your nemothorex."
+    },
+    {
+      "start": 466.32,
+      "end": 469.97,
+      "text": "So present in normal lung or in pathological condition that do."
+    },
+    {
+      "start": 470.1,
+      "end": 472.72,
+      "text": "that do not affect the ventilation, that do not affect the erasure."
+    },
+    {
+      "start": 473.28,
+      "end": 479.96,
+      "text": "So absent or reduced, absent or reduced, when visceral plura does not slide."
+    },
+    {
+      "start": 480.0,
+      "end": 484.0,
+      "text": "it against the parietal cura as it would happen in apnea."
+    },
+    {
+      "start": 484.46,
+      "end": 489.44,
+      "text": "So if there is apnea, we would not get the young sliding sign or inflammatory adherence."
+    },
+    {
+      "start": 490.0,
+      "end": 496.06,
+      "text": "You can put the patient on ventilator and you can patient is paralyzed and can stop ventilating"
+    },
+    {
+      "start": 496.06,
+      "end": 499.41,
+      "text": "for a second and look for the lung sliding sign, you will not get it okay."
+    },
+    {
+      "start": 500.0,
+      "end": 504.6,
+      "text": "loss of lung expansion, if loss of lung expansion, make overinflation, distension or severe"
+    },
+    {
+      "start": 504.6,
+      "end": 508.94,
+      "text": "bulls, we will not get. Decreasing lung compliance, it will reduce it, will not be absent, but"
+    },
+    {
+      "start": 508.94,
+      "end": 509.68,
+      "text": "it will be reduced."
+    },
+    {
+      "start": 510.03,
+      "end": 511.33,
+      "text": "because movement would not be seen."
+    },
+    {
+      "start": 511.79,
+      "end": 513.81,
+      "text": "When airway obstruction or at-electases,"
+    },
+    {
+      "start": 514.25,
+      "end": 516.98,
+      "text": "again, that was what that would affect the ventilation,"
+    },
+    {
+      "start": 517.46,
+      "end": 519.84,
+      "text": "plural symbiosis and endobroncal intubation."
+    },
+    {
+      "start": 520.32,
+      "end": 526.06,
+      "text": "opposite side we will not get the sliding sign. It will be absent when the visceral"
+    },
+    {
+      "start": 526.06,
+      "end": 529.98,
+      "text": "in Paratul Thirurah separated as in Nimo Thurak's as in Nimo."
+    },
+    {
+      "start": 530.0,
+      "end": 535.92,
+      "text": "the hemothodaxe got it. So, this is lung sliding sign which we will normally see ok."
+    },
+    {
+      "start": 536.3,
+      "end": 539.96,
+      "text": "Then something called lung pulse which I talked about which is sub-tell rhythmic"
+    },
+    {
+      "start": 540.32,
+      "end": 547.62,
+      "text": "of the lung at cardiac frequency, from transmission of heartbeat vibration through the lung tissues."
+    },
+    {
+      "start": 548.72,
+      "end": 549.96,
+      "text": "So, this will be present again."
+    },
+    {
+      "start": 550.0,
+      "end": 555.35,
+      "text": "in normal lung and conditions which minimally affect the erasure of the lung, erasure"
+    },
+    {
+      "start": 555.35,
+      "end": 559.97,
+      "text": "that is as in pulmonary embolism, the erasure of lung is not getting affected, it is the"
+    },
+    {
+      "start": 560.26,
+      "end": 562.12,
+      "text": "Ventilation profusion mismatch, what is happening?"
+    },
+    {
+      "start": 562.7,
+      "end": 566.78,
+      "text": "Absent or reduced when lung duration is significantly increased."
+    },
+    {
+      "start": 567.86,
+      "end": 569.75,
+      "text": "Absent or reduced."
+    },
+    {
+      "start": 570.03,
+      "end": 572.91,
+      "text": "when lung erration is significantly increased."
+    },
+    {
+      "start": 573.27,
+      "end": 575.75,
+      "text": "As in Buller's disease, overinflation or distention"
+    },
+    {
+      "start": 576.33,
+      "end": 579.69,
+      "text": "absent when visceral and parietal pleuris separated."
+    },
+    {
+      "start": 580.19,
+      "end": 585.29,
+      "text": "as in nemothorax, increased in condition with increased lung density."
+    },
+    {
+      "start": 585.83,
+      "end": 589.77,
+      "text": "So it will be there with B lines, sometimes and we should never be confused."
+    },
+    {
+      "start": 590.0,
+      "end": 592.88,
+      "text": "You should not confuse the lung sliding with lung pulse."
+    },
+    {
+      "start": 593.44,
+      "end": 597.68,
+      "text": "Lung sliding is a very good shimening horizontal movement of the pleura."
+    },
+    {
+      "start": 598.04,
+      "end": 599.86,
+      "text": "And lung pulse are very subtle movement."
+    },
+    {
+      "start": 600.0,
+      "end": 604.65,
+      "text": "of the Blurers, I will show you the image as well ok. So, note one thing that if someone"
+    },
+    {
+      "start": 604.65,
+      "end": 609.97,
+      "text": "is not breathing is an apnea then long sliding sign will be absent but long part"
+    },
+    {
+      "start": 610.0,
+      "end": 613.91,
+      "text": "pulse will be present, long sliding sign will be absent, but long pulse will be present."
+    },
+    {
+      "start": 614.25,
+      "end": 618.89,
+      "text": "So we should be very carefully, we should learn how to distinguish between the long sliding"
+    },
+    {
+      "start": 618.89,
+      "end": 619.81,
+      "text": "And again, long pulse."
+    },
+    {
+      "start": 620.22,
+      "end": 623.6,
+      "text": "So how do I learn the difference between lung sliding and lung pulse?"
+    },
+    {
+      "start": 624.08,
+      "end": 629.68,
+      "text": "My patient on ventilator, I'll stop the ventilation for a second, put the probe of the"
+    },
+    {
+      "start": 630.0,
+      "end": 636.08,
+      "text": "of the ultrasound machine and see the moment of the plura and then I start the ventilation"
+    },
+    {
+      "start": 636.08,
+      "end": 639.98,
+      "text": "and then see the movement of the plura right. So, we will we will learn this"
+    },
+    {
+      "start": 640.0,
+      "end": 644.2,
+      "text": "this way distinguishing between the long pulse and the long sliding sign, ok."
+    },
+    {
+      "start": 660.64,
+      "end": 664.2,
+      "text": "Let us talk about the normal A lines which I have already discussed."
+    },
+    {
+      "start": 664.56,
+      "end": 669.2,
+      "text": "The hyper earthquake horizontal lines at increasing depth separated by the same distance as the"
+    },
+    {
+      "start": 669.2,
+      "end": 669.84,
+      "text": "distance of"
+    },
+    {
+      "start": 670.06,
+      "end": 675.32,
+      "text": "dura from the dura rine from the probe. Now, considered reverberation artifact arising"
+    },
+    {
+      "start": 675.32,
+      "end": 679.26,
+      "text": "from strongly reflected due interface of probe and dura rine."
+    },
+    {
+      "start": 680.0,
+      "end": 684.6,
+      "text": "This is the reverberation artifact, so this is present when there is a homogenous ventilation"
+    },
+    {
+      "start": 685.47,
+      "end": 689.97,
+      "text": "normally edited lung, it will be present in Nemothorax, it will be..."
+    },
+    {
+      "start": 690.0,
+      "end": 694.9,
+      "text": "present in nemothorex. So, A lines will be present in nemothorex. Sliding sign will be absent."
+    },
+    {
+      "start": 695.6,
+      "end": 699.64,
+      "text": "So, in pathological condition with minimal effect on long duration like"
+    },
+    {
+      "start": 700.0,
+      "end": 705.74,
+      "text": "embolism etc it will be present. It will be absent or reduced if the density of the lung"
+    },
+    {
+      "start": 705.74,
+      "end": 709.98,
+      "text": "is increased or fluid in the lung has been accumulated as in conservation."
+    },
+    {
+      "start": 710.0,
+      "end": 717.46,
+      "text": "validation as an edema right. So, increase lung density or long distribution of the air,"
+    },
+    {
+      "start": 717.46,
+      "end": 719.52,
+      "text": "or any ventilation defect."
+    },
+    {
+      "start": 720.22,
+      "end": 723.06,
+      "text": "that would remove the a line, it will be absent."
+    },
+    {
+      "start": 723.56,
+      "end": 728.81,
+      "text": "Now, let us talk about the, so we have already seen this image, this is the plural line and"
+    },
+    {
+      "start": 728.81,
+      "end": 729.97,
+      "text": "these are the reverberation art."
+    },
+    {
+      "start": 730.06,
+      "end": 734.62,
+      "text": "fact this is a line pattern. So, now see let us talk about the b line which will remove"
+    },
+    {
+      "start": 734.62,
+      "end": 739.96,
+      "text": "the a line. So, b line or interstitial syndrome. So, b line is discrete laser line."
+    },
+    {
+      "start": 740.0,
+      "end": 745.17,
+      "text": "vertical line. So, this is the a line, these are the a line right, this is a line pattern."
+    },
+    {
+      "start": 745.61,
+      "end": 749.82,
+      "text": "So, what will happen? The b line would be the vertical article."
+    },
+    {
+      "start": 750.06,
+      "end": 756.48,
+      "text": "that arises from the plural line, extends to the bottom of the screen and moves synchronously"
+    },
+    {
+      "start": 756.48,
+      "end": 759.62,
+      "text": "with this slung sliding sign so this"
+    },
+    {
+      "start": 760.16,
+      "end": 765.6,
+      "text": "line will move synchronously with the, with the, with the plural line. So, then these b"
+    },
+    {
+      "start": 765.6,
+      "end": 769.87,
+      "text": "lines are there, then it is, it is your pneumothorax is ruled out, right."
+    },
+    {
+      "start": 770.0,
+      "end": 773.74,
+      "text": "Neumothorax is ruled out, the sliding sign will be there, it will be lines will be there,"
+    },
+    {
+      "start": 773.96,
+      "end": 777.91,
+      "text": "so Neumothorax will be ruled out, so if I see B9, it cannot be the Neumothorax, okay,"
+    },
+    {
+      "start": 778.45,
+      "end": 779.97,
+      "text": "all right, so discreetly"
+    },
+    {
+      "start": 780.0,
+      "end": 784.36,
+      "text": "a like vertical hypericoic artifact that arises from the pluraline extends to the bottom of"
+    },
+    {
+      "start": 784.36,
+      "end": 787.82,
+      "text": "the screen without fading and moves synchronously with the lung sliding."
+    },
+    {
+      "start": 788.26,
+      "end": 789.8,
+      "text": "So, this is present in the condition"
+    },
+    {
+      "start": 790.0,
+      "end": 794.81,
+      "text": "in which lung densities increase and involvement of alveolar units closed relationship the"
+    },
+    {
+      "start": 794.81,
+      "end": 799.84,
+      "text": "plural, any problem of alveolar unit closed relationship with the plural if it has been"
+    },
+    {
+      "start": 800.0,
+      "end": 807.66,
+      "text": "world. So, simply remember in the Palneri Idima, in the consolidation, this B lines will appear"
+    },
+    {
+      "start": 807.66,
+      "end": 809.98,
+      "text": "and more the degrees in..."
+    },
+    {
+      "start": 810.0,
+      "end": 816.65,
+      "text": "narration more number of B line less effect less number of B lines okay so let us see and"
+    },
+    {
+      "start": 816.65,
+      "end": 819.65,
+      "text": "And this will be absent when visceral and paradul plura are."
+    },
+    {
+      "start": 820.13,
+      "end": 826.75,
+      "text": "separated. So, it will not be there in nemothorax, it will not be there in nemothorax, because"
+    },
+    {
+      "start": 826.75,
+      "end": 829.97,
+      "text": "it moves along with the, with the clear lines, ok."
+    },
+    {
+      "start": 830.1,
+      "end": 837.09,
+      "text": "So, there are three or more B lines represent a positive region of increased lung, I mean"
+    },
+    {
+      "start": 837.09,
+      "end": 839.49,
+      "text": "they represent a positive reason of"
+    },
+    {
+      "start": 840.13,
+      "end": 845.45,
+      "text": "lung density getting affected. So, if you are then two isolated B line in the intercostal"
+    },
+    {
+      "start": 845.45,
+      "end": 849.9,
+      "text": "space, it is a normaleration, moderate loss of lungeration."
+    },
+    {
+      "start": 850.1,
+      "end": 855.86,
+      "text": "V 1 pattern if more than equal to 3 well defined spaced B line is present in the intercostal"
+    },
+    {
+      "start": 855.86,
+      "end": 859.73,
+      "text": "space. So, if I show you this is the V 1 pattern."
+    },
+    {
+      "start": 860.45,
+      "end": 869.53,
+      "text": "in which more than 3v lines are present, normally spaced and it will move with the plurum,"
+    },
+    {
+      "start": 870.0,
+      "end": 876.7,
+      "text": "with the plurum ok. So severe loss of elongation B2 pattern, multiple coalescent V line in"
+    },
+    {
+      "start": 876.7,
+      "end": 879.82,
+      "text": "under cost to space. So, this would be the"
+    },
+    {
+      "start": 880.32,
+      "end": 886.64,
+      "text": "B2 pattern. So, multiple collocent V line would be there ok. So, more the severity, more"
+    },
+    {
+      "start": 886.64,
+      "end": 889.02,
+      "text": "number of V line and collocent of the V line will happen."
+    },
+    {
+      "start": 890.06,
+      "end": 895.43,
+      "text": "artifact at a transition from consolidation to a normal aerated lungs, something called"
+    },
+    {
+      "start": 895.43,
+      "end": 899.87,
+      "text": "shred sign this is seen in consolidation right. So, this represent"
+    },
+    {
+      "start": 900.0,
+      "end": 906.72,
+      "text": "the transition from the consolidated tissue to the normal aerated tissue which it is"
+    },
+    {
+      "start": 906.72,
+      "end": 909.96,
+      "text": "like a shared sign ok ok. So, let us talk about."
+    },
+    {
+      "start": 910.0,
+      "end": 918.78,
+      "text": "Now, the long point, long point is a sign which is very specific for pneumothorex, right?"
+    },
+    {
+      "start": 920.0,
+      "end": 922.42,
+      "text": "long pulse and long point are two different things. So, never get confused."
+    },
+    {
+      "start": 922.64,
+      "end": 929.97,
+      "text": "Long pulse is normal, normal, rhythmic movement, subpell movement which we see in synchrony."
+    },
+    {
+      "start": 930.0,
+      "end": 935.43,
+      "text": "with the cardiac pulsation right, movement of the pleurin synchrony with the cardiac pulsation"
+    },
+    {
+      "start": 935.43,
+      "end": 937.99,
+      "text": "because of the transmission of the cardiac pulsation to the lung tissues."
+    },
+    {
+      "start": 940.0,
+      "end": 947.4,
+      "text": "point at that the sliding sign will be not present and beyond that point the sliding sign"
+    },
+    {
+      "start": 947.4,
+      "end": 949.82,
+      "text": "will be present. So, presence of lungs sliding."
+    },
+    {
+      "start": 950.8,
+      "end": 957.88,
+      "text": "pulse and vertical artifact on one side of the image with absence of these findings on the other side."
+    },
+    {
+      "start": 958.08,
+      "end": 959.97,
+      "text": "So, let's say, till here, we are"
+    },
+    {
+      "start": 960.0,
+      "end": 964.17,
+      "text": "seeing the shimmering horizontal movement of the plura and here the lung sliding sign"
+    },
+    {
+      "start": 964.17,
+      "end": 969.64,
+      "text": "is absent. So this is lung point and this is most specific of pneumothorex."
+    },
+    {
+      "start": 970.0,
+      "end": 975.74,
+      "text": "represent at a very and very specific for pneumothorax right representing transition point"
+    },
+    {
+      "start": 975.74,
+      "end": 979.68,
+      "text": "at which the partially collapse lung contacts the plural."
+    },
+    {
+      "start": 980.45,
+      "end": 986.39,
+      "text": "the plura during respiration. So, this is absent in large nemutrax when large nemutrax we won't"
+    },
+    {
+      "start": 986.39,
+      "end": 989.97,
+      "text": "be seeing because the entire lung sliding sign will be absent. This will be"
+    },
+    {
+      "start": 990.0,
+      "end": 994.4,
+      "text": "seen in small neemothorex or moderate neemothorex, okay, but very specific for neemothorex."
+    },
+    {
+      "start": 994.89,
+      "end": 999.85,
+      "text": "Then plural line abnormalities, or any deviation from the normal shimmering plural appear."
+    },
+    {
+      "start": 1000.38,
+      "end": 1007.86,
+      "text": "The thin, smooth hyperequic lines that is would happen in thickening or any course irregularities"
+    },
+    {
+      "start": 1007.86,
+      "end": 1009.98,
+      "text": "presence of small sub-neural, good."
+    },
+    {
+      "start": 1010.0,
+      "end": 1016.42,
+      "text": "Now, this is present in association with severe inflammatory condition like ARDS, Nemonia,"
+    },
+    {
+      "start": 1016.98,
+      "end": 1018.83,
+      "text": "Ethiopia Prithik, Interstitial Nemonia, etc."
+    },
+    {
+      "start": 1020.0,
+      "end": 1023.96,
+      "text": "positive neural line abnormality is when ultrasound beam not perpendicular to the"
+    },
+    {
+      "start": 1023.96,
+      "end": 1029.44,
+      "text": "neural line. So we have to keep the ultrasound beam perpendicular to the"
+    },
+    {
+      "start": 1030.0,
+      "end": 1036.34,
+      "text": "to represent perpendicular to the plural line ok. Now, lung consolidation. So, in lung consolidation"
+    },
+    {
+      "start": 1036.34,
+      "end": 1039.98,
+      "text": "what happens. The long tissue will look like the"
+    },
+    {
+      "start": 1040.0,
+      "end": 1042.82,
+      "text": "liver tissue in the ultrasound."
+    },
+    {
+      "start": 1043.44,
+      "end": 1047.88,
+      "text": "So anicoic tissue like image, hepatitisization of the lung, we call it hepatitisization"
+    },
+    {
+      "start": 1047.88,
+      "end": 1049.98,
+      "text": "of the lung, arising from the pleural-"
+    },
+    {
+      "start": 1050.0,
+      "end": 1057.23,
+      "text": "line that is limited by in depth by irregular border right. So, lung consolidation this"
+    },
+    {
+      "start": 1057.23,
+      "end": 1059.97,
+      "text": "This hepatitization of the lung, the"
+    },
+    {
+      "start": 1060.0,
+      "end": 1065.22,
+      "text": "This is present in the same condition in which the b lines are present right that is loss"
+    },
+    {
+      "start": 1065.22,
+      "end": 1069.82,
+      "text": "of the lung erration tissue and interstitial syndrome and it is the extreme"
+    },
+    {
+      "start": 1070.0,
+      "end": 1077.38,
+      "text": "spectrum of the same disease ok. Then air bronchogram this could be seen in the consolidated"
+    },
+    {
+      "start": 1077.38,
+      "end": 1079.98,
+      "text": "lung. I mean hepatitisization."
+    },
+    {
+      "start": 1080.0,
+      "end": 1086.35,
+      "text": "of the lung tissues and in between that we will see white, white spots, starry-like spots"
+    },
+    {
+      "start": 1086.35,
+      "end": 1089.97,
+      "text": "that's called air bunker come, if they move with respiration."
+    },
+    {
+      "start": 1090.0,
+      "end": 1095.56,
+      "text": "is a dynamic air bronchogram, if it does not move then it is a static air bronchogram, dynamic"
+    },
+    {
+      "start": 1095.56,
+      "end": 1099.4,
+      "text": "air bronchogram static air bronchogram. So, hypericoic spots."
+    },
+    {
+      "start": 1100.22,
+      "end": 1105.3,
+      "text": "or branch-like structures seen within the consolidated lung, static air-boco-vacuum"
+    },
+    {
+      "start": 1105.3,
+      "end": 1108.94,
+      "text": "program, dynamic air-boco-gram which moves with the respiratory cycle."
+    },
+    {
+      "start": 1109.3,
+      "end": 1109.96,
+      "text": "This is present."
+    },
+    {
+      "start": 1110.03,
+      "end": 1115.49,
+      "text": "within the areas of lung consolidation right. In electrolysis we get the obstructive"
+    },
+    {
+      "start": 1115.49,
+      "end": 1119.89,
+      "text": "or static error program. So, if I show you that, I'll show you the image as well. Okay."
+    },
+    {
+      "start": 1120.06,
+      "end": 1124.76,
+      "text": "So, let us first finish the discussion and I will show you the image, then spine sign,"
+    },
+    {
+      "start": 1124.92,
+      "end": 1126.0,
+      "text": "what is the spine sign?"
+    },
+    {
+      "start": 1126.48,
+      "end": 1129.97,
+      "text": "The spine sign is the sign in which"
+    },
+    {
+      "start": 1130.0,
+      "end": 1136.12,
+      "text": "a diaphragm, the transverse process of the squine would be very visible on the diaphragm"
+    },
+    {
+      "start": 1136.12,
+      "end": 1139.23,
+      "text": "and this happens with the neural effusion, right."
+    },
+    {
+      "start": 1139.23,
+      "end": 1139.97,
+      "text": "Discount."
+    },
+    {
+      "start": 1140.0,
+      "end": 1144.28,
+      "text": "innovation of the transverse process of the spine above the diaphragm from the presence"
+    },
+    {
+      "start": 1144.28,
+      "end": 1148.06,
+      "text": "of normally aerated lung tissue prevents their visualization."
+    },
+    {
+      "start": 1148.06,
+      "end": 1149.98,
+      "text": "So, normally the time, the time, the time, the time, the time, the time, the time, the time,"
+    },
+    {
+      "start": 1150.0,
+      "end": 1156.78,
+      "text": "transverse process of the diaphragm of the spine of the spine is not seen, transverse process of the spine is not seen."
+    },
+    {
+      "start": 1157.12,
+      "end": 1159.56,
+      "text": "Right, because of the"
+    },
+    {
+      "start": 1160.48,
+      "end": 1166.09,
+      "text": "normally aerated lung tissue, but if this is not there, if there is fluid or there and"
+    },
+    {
+      "start": 1166.09,
+      "end": 1169.15,
+      "text": "normal aerated lung tissue is not there then we will be able to see the"
+    },
+    {
+      "start": 1170.0,
+      "end": 1176.94,
+      "text": "ah ah we will be able to see that transverse process. So, negative sign present in normally"
+    },
+    {
+      "start": 1176.94,
+      "end": 1179.85,
+      "text": "related sub-dapharmatic lung positive."
+    },
+    {
+      "start": 1180.06,
+      "end": 1183.72,
+      "text": "of a spine sign that is visualization of transverse process of the spine above the"
+    },
+    {
+      "start": 1183.72,
+      "end": 1188.94,
+      "text": "tie from represent, present in plural effusion or sub diaphragmatic lung consolidation."
+    },
+    {
+      "start": 1189.5,
+      "end": 1189.9,
+      "text": "So, let's see."
+    },
+    {
+      "start": 1190.0,
+      "end": 1196.97,
+      "text": "this is the diaphragm your spines are not visible above the diaphragm because of the normal"
+    },
+    {
+      "start": 1196.97,
+      "end": 1198.13,
+      "text": "related long tissue."
+    },
+    {
+      "start": 1198.61,
+      "end": 1199.17,
+      "text": "Now, what happens?"
+    },
+    {
+      "start": 1199.51,
+      "end": 1199.87,
+      "text": "The fluid"
+    },
+    {
+      "start": 1200.03,
+      "end": 1206.96,
+      "text": "gets collected. So, the sub diaphragmatic what happens? The spine is now visible. So,"
+    },
+    {
+      "start": 1206.96,
+      "end": 1209.84,
+      "text": "this space call spine sign, positive spine sign."
+    },
+    {
+      "start": 1210.26,
+      "end": 1213.26,
+      "text": "and positive spine sign is seen in plural effusion."
+    },
+    {
+      "start": 1213.9,
+      "end": 1219.91,
+      "text": "Then there is something called curtain sign, curtain sign that is the moon when we inspire."
+    },
+    {
+      "start": 1220.0,
+      "end": 1224.49,
+      "text": "and expired, something, some curtain like thing is seen that some structures are visible"
+    },
+    {
+      "start": 1224.49,
+      "end": 1226.11,
+      "text": "and then the structure goes away."
+    },
+    {
+      "start": 1226.57,
+      "end": 1229.9,
+      "text": "Phenomena at the lung base, where diaphragm"
+    },
+    {
+      "start": 1230.13,
+      "end": 1238.37,
+      "text": "liver, spleen and spine disappear on inspiration due to lung descent and reappear on expiration due to lung"
+    },
+    {
+      "start": 1238.37,
+      "end": 1239.86,
+      "text": "ascents so when the lung"
+    },
+    {
+      "start": 1240.0,
+      "end": 1244.68,
+      "text": "Since these structures are not seen and when the lung are seen during expiration the structures"
+    },
+    {
+      "start": 1244.68,
+      "end": 1245.08,
+      "text": "are seen."
+    },
+    {
+      "start": 1245.24,
+      "end": 1246.0,
+      "text": "So, it is a curtain sign."
+    },
+    {
+      "start": 1246.42,
+      "end": 1249.98,
+      "text": "So, this is present in normally aerated lung and this one."
+    },
+    {
+      "start": 1250.03,
+      "end": 1256.24,
+      "text": "be absent in plural effusion, this will be absent in plural effusion, the curtain sign."
+    },
+    {
+      "start": 1256.86,
+      "end": 1257.97,
+      "text": "So, ok."
+    },
+    {
+      "start": 1257.97,
+      "end": 1259.97,
+      "text": "So in plural effusion there is a"
+    },
+    {
+      "start": 1260.0,
+      "end": 1264.64,
+      "text": "anicoic fluid which is accumulated between the plura, the visceral and the porytle plura."
+    },
+    {
+      "start": 1265.22,
+      "end": 1269.61,
+      "text": "Now, this is associated with positive spine signs. So, spine will be visible."
+    },
+    {
+      "start": 1270.32,
+      "end": 1275.12,
+      "text": "an absence of the curtain sign. So, their curtain sign will not be seen that is appearing"
+    },
+    {
+      "start": 1275.12,
+      "end": 1279.94,
+      "text": "and disappearing of the structures on inspiration and exploration. So, plural effusion"
+    },
+    {
+      "start": 1280.0,
+      "end": 1285.25,
+      "text": "present most often in sub-dynamic region, the dependent area, complex or located collection"
+    },
+    {
+      "start": 1285.25,
+      "end": 1286.29,
+      "text": "may be elsewhere also."
+    },
+    {
+      "start": 1286.8,
+      "end": 1289.86,
+      "text": "Alterson cannot differentiate between the pleural type of the pleural."
+    },
+    {
+      "start": 1290.1,
+      "end": 1293.9,
+      "text": "execution right. So, it is not possible with ultrasound to differentiate between the"
+    },
+    {
+      "start": 1293.9,
+      "end": 1299.16,
+      "text": "type of the plural execution ok. So, let us see the images and try to correlate with what"
+    },
+    {
+      "start": 1299.16,
+      "end": 1299.68,
+      "text": "what we have done."
+    },
+    {
+      "start": 1300.0,
+      "end": 1305.06,
+      "text": "discuss just now we will again go back on those slides. So, let us talk about normal a"
+    },
+    {
+      "start": 1305.06,
+      "end": 1309.88,
+      "text": "line pattern. So, this is the plural line and these are the reverberation, artifact. These"
+    },
+    {
+      "start": 1310.0,
+      "end": 1317.6,
+      "text": "the equally distanced reverberation artifact. Okay, if we see in M mode, if we see in M mode,"
+    },
+    {
+      "start": 1317.6,
+      "end": 1319.74,
+      "text": "Okay, now this is not"
+    },
+    {
+      "start": 1320.0,
+      "end": 1326.09,
+      "text": "function of lung and the and the plura ok. We see in the M mode, we will get something"
+    },
+    {
+      "start": 1326.09,
+      "end": 1329.89,
+      "text": "called C-shore appearance, we will get this is the C and"
+    },
+    {
+      "start": 1330.0,
+      "end": 1335.62,
+      "text": "this is the beach, so this is the sea shore appearance and this is lung pulse, we will"
+    },
+    {
+      "start": 1335.62,
+      "end": 1339.8,
+      "text": "see in the if we stop the ventilation at this point, we will see lung pulse."
+    },
+    {
+      "start": 1340.0,
+      "end": 1348.6,
+      "text": "in M mode ok. So, in 2 dimensional in M mode the plural line we will see A lines the arrow"
+    },
+    {
+      "start": 1348.6,
+      "end": 1349.96,
+      "text": "head right these are the"
+    },
+    {
+      "start": 1350.0,
+      "end": 1356.36,
+      "text": "A lines these are the A lines ok and long sliding sign we will see then we will see the C"
+    },
+    {
+      "start": 1356.36,
+      "end": 1359.89,
+      "text": "C-shore sign, C-shore sign and this is lung pulse."
+    },
+    {
+      "start": 1360.0,
+      "end": 1366.01,
+      "text": "in the absence of ventilation the plural sliding is substituted by heart wheat sink of the"
+    },
+    {
+      "start": 1366.01,
+      "end": 1369.97,
+      "text": "Plusing the plural movement. So, these are art, beat, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit, sit"
+    },
+    {
+      "start": 1371.16,
+      "end": 1379.98,
+      "text": "Now shimmering sign is something like this will happen and this synced movement of the"
+    },
+    {
+      "start": 1380.13,
+      "end": 1384.99,
+      "text": "distinct movement will happen. So, this will be seen in the absence of ventilation ok."
+    },
+    {
+      "start": 1385.37,
+      "end": 1389.78,
+      "text": "Now, let us see in pathologies. So, let us see when this a line is"
+    },
+    {
+      "start": 1390.0,
+      "end": 1396.28,
+      "text": "placed by b line. So, when this a line is replaced by multiple b line, if it is more than"
+    },
+    {
+      "start": 1396.28,
+      "end": 1399.46,
+      "text": "3, then the loss of aeration of the lung tissues has happened."
+    },
+    {
+      "start": 1400.0,
+      "end": 1405.82,
+      "text": "can see this is the plural line and this b line moves with the plural line ok."
+    },
+    {
+      "start": 1405.82,
+      "end": 1409.72,
+      "text": "the multiple b lines, we can see more laws of long duration tissue."
+    },
+    {
+      "start": 1410.16,
+      "end": 1414.64,
+      "text": "and the coalescent V line that is a complete loss of the irration tissue it can represent."
+    },
+    {
+      "start": 1415.16,
+      "end": 1419.48,
+      "text": "So, we can see the multiple V lines right."
+    },
+    {
+      "start": 1420.0,
+      "end": 1428.52,
+      "text": "We can see the multiple b line and this is complete white out of the spaces happen."
+    },
+    {
+      "start": 1428.9,
+      "end": 1429.9,
+      "text": "Then, include"
+    },
+    {
+      "start": 1430.0,
+      "end": 1437.24,
+      "text": "diffusion, there will be panicoic fluid between parietal and the visceral plura. So, we can"
+    },
+    {
+      "start": 1437.24,
+      "end": 1439.87,
+      "text": "see the anicoic fluid in between."
+    },
+    {
+      "start": 1440.03,
+      "end": 1444.67,
+      "text": "and the visceral pleura and there will be absence of the curtain sign and there will"
+    },
+    {
+      "start": 1444.67,
+      "end": 1449.59,
+      "text": "be absence present of the presence of the spine sign, positive spine sign."
+    },
+    {
+      "start": 1450.0,
+      "end": 1454.16,
+      "text": "Okay, then let's talk about the consolidation."
+    },
+    {
+      "start": 1455.14,
+      "end": 1456.34,
+      "text": "In consolidation, what happens?"
+    },
+    {
+      "start": 1457.11,
+      "end": 1459.67,
+      "text": "This is liver and this is the lung tissue."
+    },
+    {
+      "start": 1460.26,
+      "end": 1464.02,
+      "text": "Now the lung tissue starts resembling like liver, the lung tissue starts resembling"
+    },
+    {
+      "start": 1464.02,
+      "end": 1469.93,
+      "text": "like liver, okay, so this is consolidation and small, small white hypericulture."
+    },
+    {
+      "start": 1470.54,
+      "end": 1476.68,
+      "text": "will appear, this is air brown program. If it moves with respiration, it is dynamic and"
+    },
+    {
+      "start": 1476.68,
+      "end": 1479.96,
+      "text": "if it is static, it will not move with respiration and that is representing at"
+    },
+    {
+      "start": 1480.35,
+      "end": 1487.07,
+      "text": "cases, ok. Then in Nemothorax, what we will get? What we will get? We will get the A line"
+    },
+    {
+      "start": 1487.07,
+      "end": 1489.97,
+      "text": "in pattern in Nemothorex, you can see we get A in Nymothorex, we get A in Nymothorex,"
+    },
+    {
+      "start": 1490.0,
+      "end": 1495.65,
+      "text": "line pattern there if b line part b line is there it is not nemothorex and we will get"
+    },
+    {
+      "start": 1495.65,
+      "end": 1499.73,
+      "text": "this bar code like appearance we will get this bar code like appearance"
+    },
+    {
+      "start": 1500.13,
+      "end": 1505.32,
+      "text": "if you see this this is lung point right here it's a barcode like appearance and here we get a"
+    },
+    {
+      "start": 1505.32,
+      "end": 1509.9,
+      "text": "c-short sign. So this is something called lung point okay. Lung"
+    },
+    {
+      "start": 1510.51,
+      "end": 1515.81,
+      "text": "point. So, this is very, very diagnostic of the nemothorex. So, these are the different"
+    },
+    {
+      "start": 1515.81,
+      "end": 1519.73,
+      "text": "simple size that we have to remember. If you just remember a line, b line, long,"
+    },
+    {
+      "start": 1520.0,
+      "end": 1528.13,
+      "text": "point, your lung pulse, your let us say how does the consolidation look on the longer"
+    },
+    {
+      "start": 1528.13,
+      "end": 1529.75,
+      "text": "to sound a lot of diagnosis."
+    },
+    {
+      "start": 1530.0,
+      "end": 1536.46,
+      "text": "you can make ok. So, let us revise very quickly that what all we will see in Nemothorax."
+    },
+    {
+      "start": 1536.56,
+      "end": 1539.88,
+      "text": "So, we have discussed in Nemothorax means air between the right and"
+    },
+    {
+      "start": 1540.19,
+      "end": 1544.87,
+      "text": "visceral pleura. So, sliding movement, the movement of the pleura will not happen. So,"
+    },
+    {
+      "start": 1545.35,
+      "end": 1549.97,
+      "text": "sliding, there would be no sliding absence of lung sliding. So, first thing in Nemo"
+    },
+    {
+      "start": 1550.0,
+      "end": 1556.56,
+      "text": "could be absence of lung sliding, absence of lung sliding."
+    },
+    {
+      "start": 1556.92,
+      "end": 1559.98,
+      "text": "Now remember, if it is not absent, that does not..."
+    },
+    {
+      "start": 1560.0,
+      "end": 1565.34,
+      "text": "exclude pneumothorax, but if it is present, it excludes pneumothorax, right. Now, there"
+    },
+    {
+      "start": 1565.34,
+      "end": 1569.42,
+      "text": "could be other causes also of the absence of the lung sliding thing, ok."
+    },
+    {
+      "start": 1570.0,
+      "end": 1579.04,
+      "text": "the most diagnostic and the specific is presence of long point, long point which is a transition"
+    },
+    {
+      "start": 1579.04,
+      "end": 1579.5,
+      "text": "between"
+    },
+    {
+      "start": 1580.32,
+      "end": 1584.32,
+      "text": "The transition point at which the lung, the collapsed lung tissue comes in contact with"
+    },
+    {
+      "start": 1584.32,
+      "end": 1585.14,
+      "text": "a parietal plura."
+    },
+    {
+      "start": 1585.48,
+      "end": 1589.97,
+      "text": "So, something called lung point, then there will be absence of"
+    },
+    {
+      "start": 1590.0,
+      "end": 1599.87,
+      "text": "long pulse absence of long pulse set and there will be the there will be I mean absence of"
+    },
+    {
+      "start": 1600.0,
+      "end": 1605.88,
+      "text": "I mean, never be line should never be there. So, be line, never, be line should never be there."
+    },
+    {
+      "start": 1606.18,
+      "end": 1609.96,
+      "text": "There should be the A line pattern only, movement of the sliding sign would be."
+    },
+    {
+      "start": 1610.03,
+      "end": 1615.45,
+      "text": "not be there, there could be a long point, but V lines would never be there. V lines"
+    },
+    {
+      "start": 1616.11,
+      "end": 1619.89,
+      "text": "excludes the presence of Nemothorex, if I show you. So, there is no"
+    },
+    {
+      "start": 1620.0,
+      "end": 1628.82,
+      "text": "sliding sign indicating the nemothorax then then when we do the M mode will this is normal the C"
+    },
+    {
+      "start": 1628.82,
+      "end": 1629.88,
+      "text": "shot appearance and"
+    },
+    {
+      "start": 1630.0,
+      "end": 1635.76,
+      "text": "with pneumothorax we will get this barcode, barcode appearance. So, this is the barcode appearance"
+    },
+    {
+      "start": 1635.76,
+      "end": 1639.98,
+      "text": "and when you take the ultrasound probe, put it in."
+    },
+    {
+      "start": 1640.0,
+      "end": 1646.83,
+      "text": "on the where you are not getting the sliding, put the ultrasound machine in M mode, when"
+    },
+    {
+      "start": 1646.83,
+      "end": 1649.75,
+      "text": "you if you get this barcode sign again this is very diagnostic."
+    },
+    {
+      "start": 1650.0,
+      "end": 1655.94,
+      "text": "of Nemothorex and this is normal C-Shore sign, C-Shore sign, so barcode sign and C-Shore"
+    },
+    {
+      "start": 1655.94,
+      "end": 1656.22,
+      "text": "sign."
+    },
+    {
+      "start": 1656.38,
+      "end": 1659.81,
+      "text": "Okay, then these are the V lines if this is there."
+    },
+    {
+      "start": 1660.22,
+      "end": 1665.39,
+      "text": "there will be no Nemo thorax, no Nemo thorax, so this again rules again rule out"
+    },
+    {
+      "start": 1665.39,
+      "end": 1668.0,
+      "text": "against the Nemo thorax okay so let's do"
+    }
+  ]
+}

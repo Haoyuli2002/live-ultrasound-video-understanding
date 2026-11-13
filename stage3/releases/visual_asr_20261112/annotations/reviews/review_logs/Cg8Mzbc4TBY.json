@@ -1,0 +1,111 @@
+{
+  "video_id": "Cg8Mzbc4TBY",
+  "reviewer": "stage3_b",
+  "review_scope": "Question-led review by Agent B of Agent A draft; not blind. Native full-frame sampled checkpoints and available time-indexed ASR; no continuous replay or direct listening claim.",
+  "reviewer_native_opened": [
+    60,
+    70,
+    71,
+    72,
+    73,
+    73.25,
+    73.5,
+    73.75,
+    74,
+    75,
+    80,
+    265,
+    450,
+    451,
+    451.5,
+    451.75,
+    452,
+    453,
+    453.5,
+    454,
+    456,
+    458,
+    460,
+    462,
+    463,
+    463.5,
+    464,
+    464.5,
+    465,
+    470,
+    640,
+    885,
+    886,
+    886.25,
+    886.5,
+    886.75,
+    887,
+    888,
+    889,
+    890,
+    930,
+    1445,
+    1670,
+    1675,
+    1678,
+    1680,
+    1681,
+    1681.25,
+    1681.5,
+    1681.75,
+    1682,
+    1684,
+    1685,
+    1730
+  ],
+  "tasks": [
+    {
+      "task_index": 1,
+      "findings": "Moved80to73.5 first box and corrected actual initial placement; previous answer described later box position.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 2,
+      "findings": "Confirmed simultaneous lower spectral envelopes; retained uncalibrated morphology only.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 3,
+      "findings": "Repaired broad next-deeper task to earlier451.5 divided-cavity geometry rather than waiting470 for later papillary level.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 4,
+      "findings": "Confirmed tall-short peak pairs.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 5,
+      "findings": "Moved930to886.5 first outflow arrangement; corrected false implication that upper partition disappears.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 6,
+      "findings": "Confirmed screen-space trace extent, with different-scale limitation.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 7,
+      "findings": "Moved1685to1681.5 first adequate tissue/heart arrangement after blank acquisition.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 8,
+      "findings": "Confirmed unique early long-axis round structure deep to chambers.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    }
+  ]
+}

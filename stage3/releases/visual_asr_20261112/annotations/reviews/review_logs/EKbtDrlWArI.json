@@ -1,0 +1,85 @@
+{
+  "video_id": "EKbtDrlWArI",
+  "reviewer": "stage3_b",
+  "review_scope": "Question-led review by Agent B of Agent A draft; not blind. Native full-frame sampled checkpoints and available time-indexed ASR; no continuous replay or direct listening claim.",
+  "reviewer_native_opened": [
+    1015,
+    1040,
+    1055,
+    1070,
+    1405,
+    1420,
+    1435,
+    1525,
+    1805,
+    1940,
+    2050,
+    2060,
+    2075,
+    2130,
+    1060,
+    1065,
+    1067,
+    1408,
+    1410,
+    1415,
+    2052,
+    2055,
+    2058,
+    1068,
+    1068.5,
+    1069,
+    1416,
+    1417,
+    1418,
+    1419,
+    2050.5,
+    2051,
+    2051.5,
+    1069.25,
+    1069.5,
+    1069.75,
+    1416.25,
+    1416.5,
+    1416.75,
+    2050.75
+  ],
+  "tasks": [
+    {
+      "task_index": 1,
+      "findings": "Revised endpoint 1070 to 1069.75; appearance interpretable during final transition. Static displayed comparison only.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 2,
+      "findings": "Revised endpoint 1435 to 1417; widened teaching lens/needle/dots already present.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 3,
+      "findings": "Revised endpoint 2075 to 2051; quarter-second onset checks distinguish partial lower wipe from fully adequate image.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 4,
+      "findings": "Retained triangular highlighted speckled structure above bright fascial junction.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 5,
+      "findings": "Retained below-right nerve relation and oblique bright boundary; no clinical inference.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 6,
+      "findings": "Retained unique first paired ESP history: three labeled strata over bright TP arch/shadow.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    }
+  ]
+}

@@ -1,0 +1,798 @@
+{
+  "video_id": "8_k2I774klo",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/8_k2I774klo/asr.txt",
+  "segments": [
+    {
+      "start": 2.34,
+      "end": 9.85,
+      "text": "Altar sound is an incredible tool for visualizing soft."
+    },
+    {
+      "start": 10.13,
+      "end": 14.09,
+      "text": "tissue structures all over the body, but how well does it work on what you want to scan"
+    },
+    {
+      "start": 14.09,
+      "end": 15.07,
+      "text": "is in case in bone."
+    },
+    {
+      "start": 15.77,
+      "end": 19.81,
+      "text": "In this video, we'll discuss the rationale and technique for imaging the spine with ultrasound."
+    },
+    {
+      "start": 20.03,
+      "end": 24.57,
+      "text": "and offer some tips and tricks that should make accessing the spinal-repidral space a"
+    },
+    {
+      "start": 24.57,
+      "end": 25.09,
+      "text": "piece of cake."
+    },
+    {
+      "start": 25.68,
+      "end": 29.58,
+      "text": "Now, if you're sticking needles on patients' backs on a regular basis, I wouldn't blame"
+    },
+    {
+      "start": 29.58,
+      "end": 29.88,
+      "text": "me for"
+    },
+    {
+      "start": 30.03,
+      "end": 32.95,
+      "text": "feeling like you don't need a machine to increase your success rate."
+    },
+    {
+      "start": 33.29,
+      "end": 36.55,
+      "text": "Isn't adding ultrasound just making a simple procedure more complicated?"
+    },
+    {
+      "start": 37.22,
+      "end": 37.98,
+      "text": "Many times, yes."
+    },
+    {
+      "start": 38.28,
+      "end": 39.96,
+      "text": "But then again, even the best among..."
+    },
+    {
+      "start": 40.03,
+      "end": 44.41,
+      "text": "a struggle with challenging spines now and again, and ultrasound may offer a lifeline"
+    },
+    {
+      "start": 44.41,
+      "end": 45.31,
+      "text": "in those circumstances."
+    },
+    {
+      "start": 46.02,
+      "end": 49.98,
+      "text": "Perhaps more important is the issue of where to place a needle for spinal anesthesia."
+    },
+    {
+      "start": 50.0,
+      "end": 55.36,
+      "text": "or a lumbar puncture. Our friend, Theodore Tufier, way back in 1900, taught us that a line"
+    },
+    {
+      "start": 55.36,
+      "end": 59.7,
+      "text": "drawn between the two iliac crests should pass through the body of the L4 vertebra."
+    },
+    {
+      "start": 60.32,
+      "end": 63.14,
+      "text": "Since we knew that the spinal cord ends at L1 in adults,"
+    },
+    {
+      "start": 63.6,
+      "end": 66.3,
+      "text": "this became the way to ensure that your insertion site"
+    },
+    {
+      "start": 66.3,
+      "end": 68.04,
+      "text": "was below the conus menularis."
+    },
+    {
+      "start": 68.3,
+      "end": 69.9,
+      "text": "And for a hundred years, trainees have been"
+    },
+    {
+      "start": 69.9,
+      "end": 69.98,
+      "text": "I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry"
+    },
+    {
+      "start": 70.03,
+      "end": 71.27,
+      "text": "that this is a safe practice."
+    },
+    {
+      "start": 71.98,
+      "end": 72.72,
+      "text": "There's a problem though."
+    },
+    {
+      "start": 73.19,
+      "end": 74.55,
+      "text": "When we compare our pal patient skills"
+    },
+    {
+      "start": 74.55,
+      "end": 77.1,
+      "text": "to cold, hard imaging, we are off."
+    },
+    {
+      "start": 77.4,
+      "end": 78.96,
+      "text": "Sometimes way off."
+    },
+    {
+      "start": 80.03,
+      "end": 82.59,
+      "text": "You see, two-piece line is a radiologic landmark."
+    },
+    {
+      "start": 83.09,
+      "end": 85.61,
+      "text": "The crests will be at the L4 level on an X-ray."
+    },
+    {
+      "start": 86.06,
+      "end": 88.52,
+      "text": "The thing is, we don't usually feel the bony crests"
+    },
+    {
+      "start": 89.42,
+      "end": 89.74,
+      "text": "because..."
+    },
+    {
+      "start": 90.0,
+      "end": 96.86,
+      "text": "this. Most of us have some padding on top of those hips. And so what we think is L4 might actually"
+    },
+    {
+      "start": 96.86,
+      "end": 99.97,
+      "text": "be L3 or 2, or even L1 and 2."
+    },
+    {
+      "start": 100.13,
+      "end": 105.12,
+      "text": "cases. So if you want to know precisely how to avoid impaling the spinal cord, imaging"
+    },
+    {
+      "start": 105.12,
+      "end": 109.86,
+      "text": "is your friend. Enter ultrasound. Now in order to interpret the ultrasound"
+    },
+    {
+      "start": 110.0,
+      "end": 114.93,
+      "text": "images, we need to understand how a lumbar vertebra is built. We have the body,"
+    },
+    {
+      "start": 115.71,
+      "end": 119.28,
+      "text": "pedagels, the transverse processes, the articular processes,"
+    },
+    {
+      "start": 120.1,
+      "end": 122.06,
+      "text": "the lemony and the spinous process."
+    },
+    {
+      "start": 122.96,
+      "end": 125.3,
+      "text": "There are two conventional orientations for spine scanning."
+    },
+    {
+      "start": 125.72,
+      "end": 127.6,
+      "text": "The first is sagittal or parasagittal."
+    },
+    {
+      "start": 128.18,
+      "end": 129.96,
+      "text": "If we place the probe over the midline."
+    },
+    {
+      "start": 130.0,
+      "end": 134.53,
+      "text": "in the sagittal orientation we don't see much at all. And that's because we're directly over"
+    },
+    {
+      "start": 134.53,
+      "end": 138.77,
+      "text": "the spineless processes in the super spineless ligament. And these are a barrier to sound penetration."
+    },
+    {
+      "start": 140.0,
+      "end": 142.46,
+      "text": "Literally, we see a row of triangular structures."
+    },
+    {
+      "start": 142.96,
+      "end": 143.86,
+      "text": "These are the laminate."
+    },
+    {
+      "start": 144.26,
+      "end": 145.7,
+      "text": "They look like the tail of an alligator."
+    },
+    {
+      "start": 146.42,
+      "end": 147.06,
+      "text": "Remember that view."
+    },
+    {
+      "start": 147.28,
+      "end": 148.98,
+      "text": "It's a useful one, as we'll see in a second."
+    },
+    {
+      "start": 149.86,
+      "end": 149.92,
+      "text": "Keep-"
+    },
+    {
+      "start": 150.0,
+      "end": 152.7,
+      "text": "going and you'll find yourself over the articular processes."
+    },
+    {
+      "start": 153.27,
+      "end": 157.47,
+      "text": "These look like a series of rounded speed bumps, as in, whoa, you've gone too far, the"
+    },
+    {
+      "start": 157.47,
+      "end": 159.89,
+      "text": "laminar back that way and for completeness"
+    },
+    {
+      "start": 160.0,
+      "end": 162.0,
+      "text": "Here's what the transverse processes look like."
+    },
+    {
+      "start": 162.5,
+      "end": 166.06,
+      "text": "Isolated shelves of bone casting shadows down through the sewage muscle."
+    },
+    {
+      "start": 166.53,
+      "end": 168.23,
+      "text": "Okay, so let's move back to the laminate."
+    },
+    {
+      "start": 168.79,
+      "end": 169.97,
+      "text": "Notice that you really can't..."
+    },
+    {
+      "start": 170.03,
+      "end": 175.27,
+      "text": "much beyond the bony triangles. Maybe I see a hint of a deeper structure here, but mostly"
+    },
+    {
+      "start": 175.27,
+      "end": 179.08,
+      "text": "it's just shadow. If we tilt the probe immediately, just slightly."
+    },
+    {
+      "start": 180.0,
+      "end": 182.56,
+      "text": "have a window into the spinal canal, seen here in green."
+    },
+    {
+      "start": 184.05,
+      "end": 185.51,
+      "text": "This makes anatomic sense."
+    },
+    {
+      "start": 185.71,
+      "end": 189.97,
+      "text": "It's often the case in elderly spines that the midline approach results in bony c-"
+    },
+    {
+      "start": 190.0,
+      "end": 191.44,
+      "text": "contact again and again."
+    },
+    {
+      "start": 191.98,
+      "end": 194.84,
+      "text": "Meanwhile, the parametion approach almost never fails"
+    },
+    {
+      "start": 194.84,
+      "end": 197.12,
+      "text": "to provide a window or two into the spinal canal."
+    },
+    {
+      "start": 197.63,
+      "end": 198.85,
+      "text": "And so we'll take advantage of that"
+    },
+    {
+      "start": 198.85,
+      "end": 199.81,
+      "text": "when using our ultrasound."
+    },
+    {
+      "start": 200.03,
+      "end": 205.22,
+      "text": "beam. The other orientation is transverse. Here we see a faint shadow of the spineless process,"
+    },
+    {
+      "start": 205.5,
+      "end": 209.98,
+      "text": "and this is because we're imaging the spine through the interspineless space. You can also see"
+    },
+    {
+      "start": 210.03,
+      "end": 213.33,
+      "text": "the laminate and cross-section, as well as the articular processes."
+    },
+    {
+      "start": 214.09,
+      "end": 217.25,
+      "text": "Depending on the depth and level you're at, you may or may not see the transverse"
+    },
+    {
+      "start": 217.25,
+      "end": 219.49,
+      "text": "processes extending laterally about here."
+    },
+    {
+      "start": 220.35,
+      "end": 221.83,
+      "text": "See that dark circle in the center?"
+    },
+    {
+      "start": 222.33,
+      "end": 223.27,
+      "text": "That's the spinal canal."
+    },
+    {
+      "start": 223.98,
+      "end": 226.62,
+      "text": "Superficial to it is what we call the posterior complex,"
+    },
+    {
+      "start": 227.2,
+      "end": 229.6,
+      "text": "a thin band of hyperocochytisio,"
+    },
+    {
+      "start": 230.0,
+      "end": 232.36,
+      "text": "It comprises the dura and the ligamentum flavum."
+    },
+    {
+      "start": 232.93,
+      "end": 236.53,
+      "text": "If you're really lucky, you can see a hint of both structures, but usually we're happy"
+    },
+    {
+      "start": 236.53,
+      "end": 237.51,
+      "text": "to see a single line."
+    },
+    {
+      "start": 238.19,
+      "end": 239.75,
+      "text": "Deep to that is the interior complex."
+    },
+    {
+      "start": 240.03,
+      "end": 242.79,
+      "text": "which is made up of the anterior dura and the vertebral body."
+    },
+    {
+      "start": 243.55,
+      "end": 246.95,
+      "text": "And of course, the space between them is the thegal sac and its contents."
+    },
+    {
+      "start": 247.74,
+      "end": 249.6,
+      "text": "This view has a characteristic shape."
+    },
+    {
+      "start": 249.84,
+      "end": 249.98,
+      "text": "Reminds me of..."
+    },
+    {
+      "start": 250.0,
+      "end": 256.08,
+      "text": "of the face of a bat with the articular processes as ears and the posterior complex as the top of its head."
+    },
+    {
+      "start": 256.92,
+      "end": 259.96,
+      "text": "Now, if you happen to find yourself over a spinous process in the tr-"
+    },
+    {
+      "start": 260.03,
+      "end": 265.27,
+      "text": "orientation, you won't see all that much. Sliding cephalad or caudad or applying some tilt"
+    },
+    {
+      "start": 265.27,
+      "end": 269.97,
+      "text": "will usually get the beam back into the interspinus space. Now that we have a sense of the sono"
+    },
+    {
+      "start": 270.0,
+      "end": 274.5,
+      "text": "anatomy, we have to decide how we're going to use the ultrasound. Most of the time we're"
+    },
+    {
+      "start": 274.5,
+      "end": 279.78,
+      "text": "using it as an assist device. We find and mark the spinal level, then determine the midline."
+    },
+    {
+      "start": 280.35,
+      "end": 281.81,
+      "text": "and the depth of the posterior complex."
+    },
+    {
+      "start": 282.71,
+      "end": 284.95,
+      "text": "Using it to guide the needle into the subarachnide space"
+    },
+    {
+      "start": 284.95,
+      "end": 287.19,
+      "text": "or less commonly the epidural space"
+    },
+    {
+      "start": 287.19,
+      "end": 289.85,
+      "text": "is not done routinely, but can be helpful."
+    },
+    {
+      "start": 290.0,
+      "end": 291.46,
+      "text": "in certain challenging circumstances."
+    },
+    {
+      "start": 292.39,
+      "end": 295.79,
+      "text": "Here's a typical scanning sequence for ultrasound-assisted niraxial procedures."
+    },
+    {
+      "start": 296.31,
+      "end": 299.97,
+      "text": "We started the sacrum in the paris-saggial orientation with that slight..."
+    },
+    {
+      "start": 300.0,
+      "end": 303.2,
+      "text": "medial tilt. The broad shelf of bone is the sacrum."
+    },
+    {
+      "start": 304.03,
+      "end": 309.59,
+      "text": "Head north we see a break in the bony line. This is the first interlaminor space of"
+    },
+    {
+      "start": 309.59,
+      "end": 309.97,
+      "text": "Elfine."
+    },
+    {
+      "start": 310.0,
+      "end": 319.87,
+      "text": "S1. We see the L5 lambda and then the L45 interlaminor space and then the L4 lambda and the L34 space and so on."
+    },
+    {
+      "start": 320.93,
+      "end": 323.29,
+      "text": "Once we find the space we want, we center the gap,"
+    },
+    {
+      "start": 323.86,
+      "end": 325.66,
+      "text": "and then using a skin marker from the center"
+    },
+    {
+      "start": 325.66,
+      "end": 326.84,
+      "text": "of the ultrasound probe,"
+    },
+    {
+      "start": 327.08,
+      "end": 329.64,
+      "text": "make a horizontal line corresponding to that inner space."
+    },
+    {
+      "start": 330.42,
+      "end": 334.9,
+      "text": "We then turn the probe 90 degrees and search for the bat sign, trying to stay close to"
+    },
+    {
+      "start": 334.9,
+      "end": 336.18,
+      "text": "our original horizontal line."
+    },
+    {
+      "start": 336.75,
+      "end": 339.85,
+      "text": "Once we center the midline, we draw a vertical line from the probe."
+    },
+    {
+      "start": 340.13,
+      "end": 347.51,
+      "text": "At this point we can freeze the image and use the electronic calipers to measure the distance from the posterior complex to the surface."
+    },
+    {
+      "start": 348.1,
+      "end": 349.98,
+      "text": "This gives us an approximation of how..."
+    },
+    {
+      "start": 350.03,
+      "end": 355.24,
+      "text": "we can expect to find either the epidural or the subarachnid space. Remember that we're usually"
+    },
+    {
+      "start": 355.24,
+      "end": 359.86,
+      "text": "compressing the skin with a probe so the actual distance may be a centimeter or two longer."
+    },
+    {
+      "start": 360.35,
+      "end": 362.31,
+      "text": "depending on how much soft tissue is being squeezed."
+    },
+    {
+      "start": 363.01,
+      "end": 364.95,
+      "text": "The two lines we've drawn give us the cross hairs"
+    },
+    {
+      "start": 364.95,
+      "end": 366.31,
+      "text": "to begin our needle insertion"
+    },
+    {
+      "start": 366.31,
+      "end": 367.87,
+      "text": "and we know the depth from our measurement"
+    },
+    {
+      "start": 367.87,
+      "end": 369.45,
+      "text": "so we're all set up for success."
+    },
+    {
+      "start": 370.26,
+      "end": 372.12,
+      "text": "This pre-procedural ultrasound scanning"
+    },
+    {
+      "start": 372.12,
+      "end": 374.26,
+      "text": "has been shown to confer a number of benefits"
+    },
+    {
+      "start": 374.26,
+      "end": 376.24,
+      "text": "in both novice and experienced clinicians,"
+    },
+    {
+      "start": 376.5,
+      "end": 379.78,
+      "text": "including reduced risk of failure, fewer needle redirections."
+    },
+    {
+      "start": 380.26,
+      "end": 382.68,
+      "text": "and significantly higher first attempt success rates."
+    },
+    {
+      "start": 383.33,
+      "end": 385.39,
+      "text": "Scanning is most useful for the lumbar spine,"
+    },
+    {
+      "start": 385.67,
+      "end": 387.97,
+      "text": "but there is some utility in the thoracic spine too,"
+    },
+    {
+      "start": 388.73,
+      "end": 389.97,
+      "text": "starting our parisagital scan-"
+    },
+    {
+      "start": 390.0,
+      "end": 393.3,
+      "text": "And out laterally, we see rounded ribs and plurra between them."
+    },
+    {
+      "start": 394.19,
+      "end": 398.52,
+      "text": "Sliding immediately, we see a transition to squared off transverse processes and then"
+    },
+    {
+      "start": 398.52,
+      "end": 399.6,
+      "text": "to flatten the laminae."
+    },
+    {
+      "start": 403.74,
+      "end": 408.04,
+      "text": "We don't see alligator triangles in the thorax because the laminate are naturally more flat."
+    },
+    {
+      "start": 408.55,
+      "end": 409.97,
+      "text": "Note the bright spot between the lamin-"
+    },
+    {
+      "start": 410.03,
+      "end": 410.13,
+      "text": "DNA."
+    },
+    {
+      "start": 410.41,
+      "end": 414.51,
+      "text": "That's our posterior complex, and while it's really hard to see beyond that in the thoracic"
+    },
+    {
+      "start": 414.51,
+      "end": 419.18,
+      "text": "spine, we can use that to measure the distance and vector to laminate, and then just walk"
+    },
+    {
+      "start": 419.18,
+      "end": 419.96,
+      "text": "off cephaly-"
+    },
+    {
+      "start": 420.06,
+      "end": 421.22,
+      "text": "into the epidural space."
+    },
+    {
+      "start": 421.6,
+      "end": 424.68,
+      "text": "Scoliosis is common and can mess up your best spinal day."
+    },
+    {
+      "start": 425.38,
+      "end": 429.76,
+      "text": "Ultrasound helps by alerting you to the rotational defect common in most scoliotic patients."
+    },
+    {
+      "start": 430.45,
+      "end": 436.54,
+      "text": "Rotating the probe to counter that effect, so you see the sponus process any straight north, gives you the vector to aim for."
+    },
+    {
+      "start": 437.31,
+      "end": 439.85,
+      "text": "In some challenging cases, it does make sense to visual-"
+    },
+    {
+      "start": 440.0,
+      "end": 443.4,
+      "text": "that small acoustic window and advance a needle in real time."
+    },
+    {
+      "start": 444.1,
+      "end": 448.3,
+      "text": "Here we see the sacrum and the L5 lamina with an acoustic window through the posterior"
+    },
+    {
+      "start": 448.3,
+      "end": 448.84,
+      "text": "complex."
+    },
+    {
+      "start": 450.0,
+      "end": 453.98,
+      "text": "Adela's advanced in-plane from cardad to cephalad aiming for the complex."
+    },
+    {
+      "start": 454.82,
+      "end": 459.62,
+      "text": "If bony contact is made, a slight redirection cephalad usually allows a needle to slide home."
+    },
+    {
+      "start": 469.57,
+      "end": 469.97,
+      "text": "Do we use..."
+    },
+    {
+      "start": 470.0,
+      "end": 475.14,
+      "text": "ultrasound for every New Raxial procedure? No. However, there are several situations in which"
+    },
+    {
+      "start": 475.14,
+      "end": 479.94,
+      "text": "it makes a lot of sense, especially given the evidence to support it. First off, patients of"
+    },
+    {
+      "start": 480.1,
+      "end": 484.86,
+      "text": "landmarks in whom palpating a midline is not going to happen. We'll pull it out routinely"
+    },
+    {
+      "start": 484.86,
+      "end": 489.96,
+      "text": "for patients with bony deformity, especially the 45-kilogramma whose spineless-"
+    },
+    {
+      "start": 490.0,
+      "end": 493.9,
+      "text": "like a pretzel, and you just know you're going to struggle with bone, bone, bone."
+    },
+    {
+      "start": 494.2,
+      "end": 498.6,
+      "text": "And then we have a subset of patients for whom you really want the needling to go as smoothly"
+    },
+    {
+      "start": 498.6,
+      "end": 499.98,
+      "text": "as possible on the first..."
+    },
+    {
+      "start": 500.13,
+      "end": 502.83,
+      "text": "and for whom a pre-procedural scan is prudent."
+    },
+    {
+      "start": 503.56,
+      "end": 505.08,
+      "text": "Patients with mild coagulopathy,"
+    },
+    {
+      "start": 505.36,
+      "end": 507.14,
+      "text": "patients at risk for spinal cord trauma,"
+    },
+    {
+      "start": 507.38,
+      "end": 509.4,
+      "text": "patients at risk for postural puncture headache."
+    },
+    {
+      "start": 510.03,
+      "end": 512.55,
+      "text": "When the stakes are high, ultrasound is your friend."
+    },
+    {
+      "start": 513.5,
+      "end": 515.92,
+      "text": "Ultrasound imaging of the spine is easy to learn"
+    },
+    {
+      "start": 515.92,
+      "end": 518.52,
+      "text": "and is an excellent skill to have in your back pocket."
+    }
+  ]
+}

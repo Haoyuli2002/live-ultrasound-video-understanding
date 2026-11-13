@@ -1,0 +1,503 @@
+{
+  "video_id": "Ql_twyiHRWE",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/Ql_twyiHRWE/asr.txt",
+  "segments": [
+    {
+      "start": 0.64,
+      "end": 6.52,
+      "text": "on my slides, not on me. We have three, none of this is easy to do. Hard to screw up"
+    },
+    {
+      "start": 6.52,
+      "end": 9.92,
+      "text": "ultrasound guy in nerve blocks today. Three because I only have five minutes."
+    },
+    {
+      "start": 10.0,
+      "end": 16.08,
+      "text": "Not them scare I want these to be high yield for you easy to do and hard to screw up because they're ultrasound guided"
+    },
+    {
+      "start": 16.08,
+      "end": 19.04,
+      "text": "And the ultrasound director at a big trauma center"
+    },
+    {
+      "start": 19.48,
+      "end": 19.880000000000003,
+      "text": "Residency"
+    },
+    {
+      "start": 20.1,
+      "end": 24.81,
+      "text": "fellowship the whole thing, but I also practice out in the community hospital and I think these"
+    },
+    {
+      "start": 24.81,
+      "end": 28.65,
+      "text": "are useful regardless of the setting that you're practicing in."
+    },
+    {
+      "start": 30.45,
+      "end": 32.45,
+      "text": "My goal today is mostly just to inform you,"
+    },
+    {
+      "start": 32.51,
+      "end": 33.85,
+      "text": "make you curious to try this."
+    },
+    {
+      "start": 34.29,
+      "end": 35.17,
+      "text": "We only have a few minutes"
+    },
+    {
+      "start": 35.17,
+      "end": 37.63,
+      "text": "and there's a lot of online videos"
+    },
+    {
+      "start": 37.63,
+      "end": 38.49,
+      "text": "that are just great."
+    },
+    {
+      "start": 39.56,
+      "end": 39.980000000000004,
+      "text": "I have some..."
+    },
+    {
+      "start": 40.0,
+      "end": 45.54,
+      "text": "nice links at this website for this the end other ultrasound applications. So"
+    },
+    {
+      "start": 45.54,
+      "end": 48.96,
+      "text": "nerve-black why do it because it's cool and ultimately if you do it you too"
+    },
+    {
+      "start": 48.96,
+      "end": 49.519999999999996,
+      "text": "You can be cool."
+    },
+    {
+      "start": 50.32,
+      "end": 55.15,
+      "text": "You get analgesia and anesthesia where you want it rather than throwing the evil opioids"
+    },
+    {
+      "start": 55.15,
+      "end": 59.71,
+      "text": "into the bloodstream and circulating those around with all the problems."
+    },
+    {
+      "start": 60.0,
+      "end": 60.84,
+      "text": "that comes with that."
+    },
+    {
+      "start": 61.12,
+      "end": 62.74,
+      "text": "There are risks involved in this."
+    },
+    {
+      "start": 63.27,
+      "end": 64.41,
+      "text": "You can inject it in the nerve."
+    },
+    {
+      "start": 64.61,
+      "end": 66.29,
+      "text": "There can be systemic toxicity."
+    },
+    {
+      "start": 67.12,
+      "end": 68.32,
+      "text": "Fortunately, these risks are rare"
+    },
+    {
+      "start": 68.32,
+      "end": 69.82,
+      "text": "and when you use ultrasound guided."
+    },
+    {
+      "start": 70.51,
+      "end": 72.15,
+      "text": "It's particularly rare."
+    },
+    {
+      "start": 73.15,
+      "end": 75.73,
+      "text": "These three blocks, we use small volumes, so it's unlikely."
+    },
+    {
+      "start": 76.47,
+      "end": 79.51,
+      "text": "Use the linear probe, put it on the nerve setting."
+    },
+    {
+      "start": 80.22,
+      "end": 84.68,
+      "text": "I only use a probe cover if I'm actually near the actual injection site."
+    },
+    {
+      "start": 85.26,
+      "end": 89.26,
+      "text": "And on the bottom there, you can see the circle is a nerve, and at times it's very bright,"
+    },
+    {
+      "start": 89.26,
+      "end": 89.96000000000001,
+      "text": "at times it's"
+    },
+    {
+      "start": 90.0,
+      "end": 95.38,
+      "text": "real dark, you have to be perpendicular to the nerve. This is the setup I use, a syringe"
+    },
+    {
+      "start": 95.38,
+      "end": 99.98,
+      "text": "attached to a little tube, to a needle or a spinal needle, depending on where you are."
+    },
+    {
+      "start": 100.0,
+      "end": 101.3,
+      "text": "and how deep you need to go."
+    },
+    {
+      "start": 101.44,
+      "end": 103.14,
+      "text": "I use bupivocane half percent,"
+    },
+    {
+      "start": 103.46,
+      "end": 106.06,
+      "text": "but you can use any local anesthetic."
+    },
+    {
+      "start": 106.44,
+      "end": 107.34,
+      "text": "This is the logistics."
+    },
+    {
+      "start": 107.58,
+      "end": 109.98,
+      "text": "You want the provider and the patient and the mission."
+    },
+    {
+      "start": 110.0,
+      "end": 113.38,
+      "text": "in this line so that your eyes are in line with your black."
+    },
+    {
+      "start": 113.58,
+      "end": 115.2,
+      "text": "You don't want to be looking over your shoulder"
+    },
+    {
+      "start": 115.2,
+      "end": 117.56,
+      "text": "or making other difficult adjustments"
+    },
+    {
+      "start": 117.56,
+      "end": 119.98,
+      "text": "because this is technically a..."
+    },
+    {
+      "start": 120.16,
+      "end": 121.48,
+      "text": "can be a challenging procedure."
+    },
+    {
+      "start": 122.68,
+      "end": 124.1,
+      "text": "Look in the background here."
+    },
+    {
+      "start": 124.38,
+      "end": 126.26,
+      "text": "Always watch the needle tip, okay?"
+    },
+    {
+      "start": 126.44,
+      "end": 127.76,
+      "text": "Because that's what's causing damage,"
+    },
+    {
+      "start": 127.96,
+      "end": 128.98,
+      "text": "that's what's injecting."
+    },
+    {
+      "start": 129.42,
+      "end": 129.98,
+      "text": "So this is an..."
+    },
+    {
+      "start": 130.0,
+      "end": 133.98,
+      "text": "inline technique and you can see there on the right the needle and you know exactly where"
+    },
+    {
+      "start": 133.98,
+      "end": 135.6,
+      "text": "the tip of that needle is near the nerve."
+    },
+    {
+      "start": 136.4,
+      "end": 139.98,
+      "text": "Here's two examples. One on the left is in a model, the other is in a real pain."
+    },
+    {
+      "start": 140.0,
+      "end": 147.02,
+      "text": "You watch the needle go down and the whole time I'm exactly in playing with the ultrasound probe"
+    },
+    {
+      "start": 147.02,
+      "end": 149.98,
+      "text": "Watching it go down. I know exactly where it's injecting"
+    },
+    {
+      "start": 151.66,
+      "end": 154.1,
+      "text": "So, the first block I want to talk about is fascial iliaca."
+    },
+    {
+      "start": 154.98,
+      "end": 157.28,
+      "text": "This can anesthetize a lot of the leg,"
+    },
+    {
+      "start": 157.34,
+      "end": 159.5,
+      "text": "but for the most part the practical application."
+    },
+    {
+      "start": 160.19,
+      "end": 163.25,
+      "text": "is for a femur fracture, a femoral neck fracture,"
+    },
+    {
+      "start": 164.05,
+      "end": 167.28,
+      "text": "the hip fracture, which you see quite commonly in the ED."
+    },
+    {
+      "start": 168.0,
+      "end": 169.9,
+      "text": "So focus on the picture on the right."
+    },
+    {
+      "start": 170.1,
+      "end": 175.34,
+      "text": "the space I want to go in is that right there where that arrow is that's below the fascia"
+    },
+    {
+      "start": 175.34,
+      "end": 178.64,
+      "text": "iliac of the fascia that goes over the iliac muscle."
+    },
+    {
+      "start": 179.18,
+      "end": 179.92,
+      "text": "If I get under"
+    },
+    {
+      "start": 180.0,
+      "end": 186.06,
+      "text": "me that, I'm going to anesthetize the femoral nerve and others down there. Here, this is"
+    },
+    {
+      "start": 186.06,
+      "end": 189.96,
+      "text": "not playing the way it's supposed to, but you see the"
+    },
+    {
+      "start": 190.03,
+      "end": 196.85,
+      "text": "artery on the picture on the right and right next to that is the nerve just to the left of it."
+    },
+    {
+      "start": 196.93,
+      "end": 199.17,
+      "text": "These should be videos and they're not and that's really too bad."
+    },
+    {
+      "start": 200.65,
+      "end": 208.93,
+      "text": "Maybe the next one will work. Oh, you know what, Mr. AV? I need you to advance the slide. That's what I need to do. Sorry"
+    },
+    {
+      "start": 212.3,
+      "end": 218.56,
+      "text": "and advance one more and advance one more."
+    },
+    {
+      "start": 220.06,
+      "end": 222.86,
+      "text": "Okay, so here we get to see the femoral artery"
+    },
+    {
+      "start": 222.86,
+      "end": 225.72,
+      "text": "and we see the nerve just beside that"
+    },
+    {
+      "start": 225.72,
+      "end": 227.48,
+      "text": "and that's where we're gonna be heading."
+    },
+    {
+      "start": 228.06,
+      "end": 229.3,
+      "text": "The posterior tibialis."
+    },
+    {
+      "start": 230.0,
+      "end": 234.33,
+      "text": "your tubular block, you get good anesthesia at the bottom of the foot. This is a"
+    },
+    {
+      "start": 234.33,
+      "end": 239.85,
+      "text": "tough area to anesthetize locally. If you have a foreign body elaceration, etc., you get real"
+    },
+    {
+      "start": 240.13,
+      "end": 244.69,
+      "text": "nice anesthesia at the bottom of the foot. This is super easy because the post"
+    },
+    {
+      "start": 244.69,
+      "end": 248.83,
+      "text": "to your tubular nerve runs right behind the post to your tubular artery, which"
+    },
+    {
+      "start": 248.83,
+      "end": 249.97,
+      "text": "tax is a great-"
+    },
+    {
+      "start": 250.6,
+      "end": 256.43,
+      "text": "landmark for where you want to go. I'll show you in the next slide where the"
+    },
+    {
+      "start": 256.43,
+      "end": 259.97,
+      "text": "ultrasound probe is sitting right there. Again, we would be going in-"
+    },
+    {
+      "start": 260.0,
+      "end": 269.67,
+      "text": "And there you see him compressing down, you'll see the artery in the vein, and just to the left of it is the actual nerve jumping out at you again kind of honeycomb appearance."
+    },
+    {
+      "start": 273.55,
+      "end": 279.51,
+      "text": "Finally, the superficial cervical plexus block gets the end of your neck right up to the"
+    },
+    {
+      "start": 280.0,
+      "end": 283.6,
+      "text": "And it's really nice for any abscesses in that area,"
+    },
+    {
+      "start": 283.82,
+      "end": 286.08,
+      "text": "elacirations in that area, central lines,"
+    },
+    {
+      "start": 286.24,
+      "end": 288.24,
+      "text": "and even clavicle fractures."
+    },
+    {
+      "start": 289.01,
+      "end": 289.97,
+      "text": "So this plexus is..."
+    },
+    {
+      "start": 290.0,
+      "end": 294.0,
+      "text": "This is kind of coming out, wrapping around the sternocleidomastoid muscle, which is your"
+    },
+    {
+      "start": 294.0,
+      "end": 295.24,
+      "text": "landmark for this."
+    },
+    {
+      "start": 295.78,
+      "end": 299.98,
+      "text": "And what we're going to do is tuck our needle and our anesthesia back behind the sternocleidum."
+    },
+    {
+      "start": 300.03,
+      "end": 309.84,
+      "text": "so pro placement right here you see I'm kind of walking it up and then on the actual ultrasound image below is"
+    },
+    {
+      "start": 310.0,
+      "end": 314.18,
+      "text": "see the sternoclide, a mastoid muscle sitting over the crowded artery, and what we're going"
+    },
+    {
+      "start": 314.18,
+      "end": 318.76,
+      "text": "for is the plane right beneath that is where these nerves, this plexus is."
+    },
+    {
+      "start": 319.46,
+      "end": 319.88,
+      "text": "So ultimately,"
+    },
+    {
+      "start": 320.0,
+      "end": 321.36,
+      "text": "Finally, I say go try it."
+    },
+    {
+      "start": 322.06,
+      "end": 324.48,
+      "text": "Remember, there's a lot of good resources out there."
+    },
+    {
+      "start": 324.66,
+      "end": 326.64,
+      "text": "Hopefully, I stimulated a little bit of curiosity,"
+    },
+    {
+      "start": 327.5,
+      "end": 328.78,
+      "text": "and these are useful."
+    },
+    {
+      "start": 329.48,
+      "end": 329.98,
+      "text": "Thank you."
+    },
+    {
+      "start": 330.0,
+      "end": 332.12,
+      "text": "the frame netter for some of those images I used."
+    },
+    {
+      "start": 340.62,
+      "end": 344.54,
+      "text": "So I can feel your energy and excitement about it."
+    },
+    {
+      "start": 344.84,
+      "end": 349.5,
+      "text": "I think it's hard to give ultrasound lectures on a screen often, but I think you did a great job showing us."
+    }
+  ]
+}

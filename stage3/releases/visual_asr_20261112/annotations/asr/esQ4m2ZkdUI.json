@@ -1,0 +1,298 @@
+{
+  "video_id": "esQ4m2ZkdUI",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/esQ4m2ZkdUI/asr.txt",
+  "segments": [
+    {
+      "start": 3.99,
+      "end": 8.91,
+      "text": "In this video, we will review how to perform an ultrasound guided fascia iliaca nerve block"
+    },
+    {
+      "start": 8.91,
+      "end": 15.32,
+      "text": "for regional anesthesia. The fascia iliaca nerve block provides anesthesia to the anterior thigh"
+    },
+    {
+      "start": 15.32,
+      "end": 20.18,
+      "text": "and leg as well as the proximal femur and has the greatest utility in the emergency department"
+    },
+    {
+      "start": 20.18,
+      "end": 26.32,
+      "text": "for analgesia and the setting of a hip fracture. Anesthetizing the fascia iliaca space can block the"
+    },
+    {
+      "start": 26.32,
+      "end": 32.12,
+      "text": "sensory function of the femoral, obturator, genital femoral, and lateral femoral cutaneous nerves."
+    },
+    {
+      "start": 32.12,
+      "end": 37.45,
+      "text": "These are the essential elements for performing an ultrasound guided fascia iliaca block."
+    },
+    {
+      "start": 38.13,
+      "end": 40.59,
+      "text": "Always obtain consent from your patient before this procedure."
+    },
+    {
+      "start": 41.29,
+      "end": 46.01,
+      "text": "Pertinent risks include bleeding and pain, infection, and damage to local structures."
+    },
+    {
+      "start": 46.45,
+      "end": 53.43,
+      "text": "Do not perform the procedure if the patient has had a previous femoral bypass surgery or has an infection at the injection site."
+    },
+    {
+      "start": 54.22,
+      "end": 59.34,
+      "text": "Consider the risks if the patient is on anticoagulants, though this is not an absolute contraindication."
+    },
+    {
+      "start": 59.34,
+      "end": 64.58,
+      "text": "To position the patient, place them supine and stand on the same side as their fracture."
+    },
+    {
+      "start": 65.08,
+      "end": 68.66,
+      "text": "Place the ultrasound across from you and face towards the ultrasound."
+    },
+    {
+      "start": 69.81,
+      "end": 74.33,
+      "text": "The fascia iliaca is a layer of fascia on the surface of the iliacus muscle, which is"
+    },
+    {
+      "start": 74.33,
+      "end": 76.23,
+      "text": "the lateral portion of the iliosoas."
+    },
+    {
+      "start": 76.77,
+      "end": 80.59,
+      "text": "This fascia layer is a potential space and can be zippered open with fluid."
+    },
+    {
+      "start": 81.45,
+      "end": 85.63,
+      "text": "First, place the ultrasound just below the inguinal crease and identify the femoral vessels"
+    },
+    {
+      "start": 85.63,
+      "end": 87.49,
+      "text": "including the femoral artery and vein."
+    },
+    {
+      "start": 87.49,
+      "end": 91.74,
+      "text": "You can utilize Doppler ultrasound to confirm the placement of these vessels."
+    },
+    {
+      "start": 92.76,
+      "end": 95.94,
+      "text": "Then identify the femoral nerve lateral to the femoral artery."
+    },
+    {
+      "start": 96.51,
+      "end": 100.79,
+      "text": "The fascia iliaca is lateral to these vessels. It can be helpful to identify the"
+    },
+    {
+      "start": 100.79,
+      "end": 105.73,
+      "text": "sartorius muscle, which ends in a triangular shape, just lateral to the femoral vessels."
+    },
+    {
+      "start": 106.59,
+      "end": 111.11,
+      "text": "The fascia iliaca sits between the sartorius and the iliaca's muscle."
+    },
+    {
+      "start": 111.76,
+      "end": 115.8,
+      "text": "The goal of this block is to deposit anesthetic in the space of the fascia iliaca."
+    },
+    {
+      "start": 115.8,
+      "end": 119.66,
+      "text": "It will then spread in this potential space towards the femoral nerve."
+    },
+    {
+      "start": 120.47,
+      "end": 124.83,
+      "text": "You can also deposit the anesthetic below the fascia to spread towards the femoral nerve."
+    },
+    {
+      "start": 125.62,
+      "end": 130.04,
+      "text": "By depositing the anesthetic in the space, it allows us to safely keep the needle away"
+    },
+    {
+      "start": 130.04,
+      "end": 133.22,
+      "text": "from the femoral vessels while achieving nerve blockade."
+    },
+    {
+      "start": 134.55,
+      "end": 136.41,
+      "text": "Prepare to do the fascia ilioca block."
+    },
+    {
+      "start": 137.03,
+      "end": 141.11,
+      "text": "Draw your anesthetic of choice using an 18 gauge needle into your preferred syringe."
+    },
+    {
+      "start": 141.69,
+      "end": 146.49,
+      "text": "We generally recommend about 20ccs of anesthetic, but be sure to calculate the maximum dose"
+    },
+    {
+      "start": 146.49,
+      "end": 147.65,
+      "text": "for your patient's weight."
+    },
+    {
+      "start": 148.49,
+      "end": 150.21,
+      "text": "Prepare the skin over your intended site"
+    },
+    {
+      "start": 150.21,
+      "end": 151.07,
+      "text": "with chlorhexidine."
+    },
+    {
+      "start": 151.8,
+      "end": 154.2,
+      "text": "Cover the ultrasound probe with a sterile probe cover"
+    },
+    {
+      "start": 154.2,
+      "end": 155.5,
+      "text": "and apply sterile gel."
+    },
+    {
+      "start": 157.64,
+      "end": 159.92,
+      "text": "Identify the fascia iliaca as described above."
+    },
+    {
+      "start": 160.56,
+      "end": 163.02,
+      "text": "Turn the probe slightly so that the angle of the probe"
+    },
+    {
+      "start": 163.02,
+      "end": 164.46,
+      "text": "follows that of the inguinal crease."
+    },
+    {
+      "start": 165.68,
+      "end": 167.22,
+      "text": "Insert your needle in plain."
+    },
+    {
+      "start": 167.96,
+      "end": 170.68,
+      "text": "Initially focus on getting the needle underneath the probe."
+    },
+    {
+      "start": 171.35,
+      "end": 172.53,
+      "text": "Do not look at your ultrasound"
+    },
+    {
+      "start": 173.15,
+      "end": 174.93,
+      "text": "until you get the needle under the probe."
+    },
+    {
+      "start": 175.85,
+      "end": 177.91,
+      "text": "Then identify the needle tip on your ultrasound"
+    },
+    {
+      "start": 177.91,
+      "end": 180.39,
+      "text": "and advance the needle towards the fascia iliaca."
+    },
+    {
+      "start": 180.85,
+      "end": 183.13,
+      "text": "You will often feel two tactile pops"
+    },
+    {
+      "start": 183.71,
+      "end": 185.09,
+      "text": "once through the sartorias"
+    },
+    {
+      "start": 185.43,
+      "end": 187.67,
+      "text": "and second through that fascia iliaca space."
+    },
+    {
+      "start": 188.52,
+      "end": 191.0,
+      "text": "You can inject one to two CCs of anesthetic"
+    },
+    {
+      "start": 191.32,
+      "end": 194.78,
+      "text": "to hydrolocate your needle and to ensure proper location."
+    },
+    {
+      "start": 195.64,
+      "end": 196.8,
+      "text": "You can reposition the needle"
+    },
+    {
+      "start": 196.8,
+      "end": 199.28,
+      "text": "if the anesthetic is above the fascia or in the muscle."
+    },
+    {
+      "start": 200.32,
+      "end": 201.76,
+      "text": "Once you're in the appropriate area,"
+    },
+    {
+      "start": 202.1,
+      "end": 204.36,
+      "text": "proceed to inject the rest of the 20 CCs"
+    },
+    {
+      "start": 204.36,
+      "end": 205.32,
+      "text": "of local anesthetic."
+    },
+    {
+      "start": 205.32,
+      "end": 212.0,
+      "text": "You may also add normal saline to your injectate, as a larger volume will help the anesthetic"
+    },
+    {
+      "start": 212.0,
+      "end": 214.58,
+      "text": "spread in the potential space towards the femoral nerve."
+    },
+    {
+      "start": 215.4,
+      "end": 219.9,
+      "text": "Allow time for the nerve block to take effect and monitor for signs of local anesthetic"
+    },
+    {
+      "start": 219.9,
+      "end": 224.64,
+      "text": "toxicity, including tingling, dizziness, or difficulty breathing."
+    }
+  ]
+}

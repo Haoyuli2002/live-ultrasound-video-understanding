@@ -1,0 +1,133 @@
+{
+  "video_id": "v9ar1mhpT-g",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/v9ar1mhpT-g/asr.txt",
+  "segments": [
+    {
+      "start": 0.74,
+      "end": 5.1,
+      "text": "and teases is one of the most common procedures performed by clinicians in the ED and in the"
+    },
+    {
+      "start": 5.1,
+      "end": 9.92,
+      "text": "inpatient environment, unlike most procedures where pocuses use for real-time dining."
+    },
+    {
+      "start": 10.03,
+      "end": 16.63,
+      "text": "dynamic needle guidance focuses more typically used for static pre-procedure planning of needle placement for paracentesis."
+    },
+    {
+      "start": 17.09,
+      "end": 19.73,
+      "text": "In this image, a curvilinear probe is used with the abdominal"
+    },
+    {
+      "start": 20.0,
+      "end": 24.62,
+      "text": "imaging preset and is placed in either the right or left lower quadrant of the abdomen."
+    },
+    {
+      "start": 25.36,
+      "end": 29.84,
+      "text": "The imaging plane can be oriented in either the sagittal or transverse plane of the patient's body."
+    },
+    {
+      "start": 30.38,
+      "end": 34.08,
+      "text": "or even somewhere between these standard planes, although by convention, the probe markers"
+    },
+    {
+      "start": 34.08,
+      "end": 37.96,
+      "text": "should generally be oriented in the cranial direction or towards the patient's right side."
+    },
+    {
+      "start": 38.32,
+      "end": 39.96,
+      "text": "The operator would then slide the probe around."
+    },
+    {
+      "start": 40.0,
+      "end": 43.62,
+      "text": "around the outside of the patient's abdomen and attempt to find the deepest pocket of fluid."
+    },
+    {
+      "start": 44.230000000000004,
+      "end": 48.13,
+      "text": "The depth of this pocket can be augmented by rolling the patient onto their hip in the"
+    },
+    {
+      "start": 48.13,
+      "end": 49.97,
+      "text": "right or left lateral decutist position."
+    },
+    {
+      "start": 50.03,
+      "end": 55.92,
+      "text": "placing the target fluid pocket in the more dependent position. Once the deepest pocket of fluid is identified,"
+    },
+    {
+      "start": 56.34,
+      "end": 59.980000000000004,
+      "text": "the operator should freeze the image and then mark the skin in some way to indicate where the"
+    },
+    {
+      "start": 60.0,
+      "end": 64.9,
+      "text": "the image was taken. This can be done with a skin pen or more temporarily with fingernail"
+    },
+    {
+      "start": 64.9,
+      "end": 66.02,
+      "text": "or even an empty syringe."
+    },
+    {
+      "start": 70.0,
+      "end": 74.71,
+      "text": "From frozen ultrasound image, the operator then places two calipers, one measuring the"
+    },
+    {
+      "start": 74.71,
+      "end": 79.26,
+      "text": "minimum distance of needle insertion from the skin to the parietal peritoneum, and a second"
+    },
+    {
+      "start": 79.26,
+      "end": 79.96000000000001,
+      "text": "measuring the..."
+    },
+    {
+      "start": 80.03,
+      "end": 84.37,
+      "text": "maximum safe distance of insertion from the skin to the underlying organs, which may be"
+    },
+    {
+      "start": 84.37,
+      "end": 86.69,
+      "text": "bowel, kidney, urinary bladder, etc."
+    },
+    {
+      "start": 87.4,
+      "end": 89.86,
+      "text": "In this example, the clinician can now begin the procedure."
+    },
+    {
+      "start": 90.0,
+      "end": 93.2,
+      "text": "You're knowing to expect to insert the needle at least two centimeters before entering"
+    },
+    {
+      "start": 93.2,
+      "end": 97.59,
+      "text": "the personium, and knowing that if he or she is approaching five centimeters, it should"
+    },
+    {
+      "start": 97.59,
+      "end": 99.87,
+      "text": "probably stop so as to avoid injuring the underlying."
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "video_id": "mOtEkKvHtV4",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/eval/mOtEkKvHtV4/asr.txt",
+  "segments": [
+    {
+      "start": 0.42,
+      "end": 9.88,
+      "text": "Hello everyone, this is Dr Sam and this video is about pancreas ultrasound pro positioning on the left."
+    },
+    {
+      "start": 10.03,
+      "end": 17.46,
+      "text": "side is a schematic diagram showing the pro positioning or scanning the pancreas."
+    },
+    {
+      "start": 20.0,
+      "end": 29.59,
+      "text": "are the right and left coastal margins. This is the umbilicals. This white box"
+    },
+    {
+      "start": 30.06,
+      "end": 36.64,
+      "text": "is the ultrasound probe and this red dot is the indicator or the orientation marker."
+    },
+    {
+      "start": 36.64,
+      "end": 39.51,
+      "text": "please the patient."
+    },
+    {
+      "start": 40.06,
+      "end": 48.22,
+      "text": "us to find position with the indicator directed towards the patient's right side and start"
+    },
+    {
+      "start": 48.22,
+      "end": 49.88,
+      "text": "by placing the probe"
+    },
+    {
+      "start": 50.0,
+      "end": 59.96,
+      "text": "In the middle line, in a transverse orientation below the coastal margins, you can use the"
+    },
+    {
+      "start": 60.06,
+      "end": 67.67,
+      "text": "The left lobe of the liver as a window to scan the pancreas of water filled stomach can"
+    },
+    {
+      "start": 67.67,
+      "end": 69.83,
+      "text": "also be used as a window."
+    },
+    {
+      "start": 70.13,
+      "end": 77.72,
+      "text": "scanning by placing the probe in this manner, we will have this image formed."
+    },
+    {
+      "start": 80.0,
+      "end": 88.67,
+      "text": "the splenic vein and portal vein conference then you will find the pancreas and"
+    },
+    {
+      "start": 88.67,
+      "end": 89.89,
+      "text": "interior to the splenig"
+    },
+    {
+      "start": 90.86,
+      "end": 92.42,
+      "text": "and the portal vein conference."
+    },
+    {
+      "start": 94.75,
+      "end": 99.9,
+      "text": "Next, angle the probe forward and backwards to thoroughly scan."
+    },
+    {
+      "start": 100.0,
+      "end": 109.92,
+      "text": "and the pancreas. The head of the pancreas is in the left half of the image. This is the body."
+    },
+    {
+      "start": 111.57,
+      "end": 118.33,
+      "text": "the middle and the tail will be in the right half of the image towards the"
+    },
+    {
+      "start": 118.33,
+      "end": 118.77,
+      "text": "sploon"
+    },
+    {
+      "start": 121.12,
+      "end": 129.84,
+      "text": "scan the pancreas in a longitudinal view, rotate the probe 90 degrees clockwise in the same"
+    },
+    {
+      "start": 130.03,
+      "end": 139.97,
+      "text": "We will let this image. The left loop of the liver is seen, the pancreas."
+    },
+    {
+      "start": 140.0,
+      "end": 149.16,
+      "text": "is seen under the liver right here, this hyper-echoic structure, this anechoic"
+    },
+    {
+      "start": 149.16,
+      "end": 149.96,
+      "text": "round next for"
+    },
+    {
+      "start": 150.03,
+      "end": 159.6,
+      "text": "will be the splenic artery, this structure behind the pancreas is the splenic vein, this vessel."
+    },
+    {
+      "start": 160.16,
+      "end": 162.48,
+      "text": "is the superior misentric heart tree."
+    },
+    {
+      "start": 164.16,
+      "end": 168.18,
+      "text": "You can move the probe left and right to scan the pancreas completely."
+    },
+    {
+      "start": 170.45,
+      "end": 177.9,
+      "text": "If you find difficulty in imaging the pancreas, roll the patient to the left side in a left"
+    },
+    {
+      "start": 177.9,
+      "end": 179.94,
+      "text": "that lateral decubidance position."
+    },
+    {
+      "start": 180.0,
+      "end": 189.77,
+      "text": "This moves the bowel gases away from the pancreas, then you can place the probe in both longitudinal"
+    },
+    {
+      "start": 190.1,
+      "end": 199.24,
+      "text": "and transverse orientations. You scan the pancreas. You can also ask the patient to drink some water to feel the stomach."
+    },
+    {
+      "start": 200.77,
+      "end": 207.61,
+      "text": "This water fill stomach makes it easier to scan the pancreas as the stomach gases are removed."
+    },
+    {
+      "start": 210.03,
+      "end": 215.53,
+      "text": "Thank you so much for watching, please subscribe and stay tuned for more imaging videos."
+    }
+  ]
+}

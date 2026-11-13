@@ -1,0 +1,1098 @@
+{
+  "video_id": "Aff_83j4uc0",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/Aff_83j4uc0/asr.txt",
+  "segments": [
+    {
+      "start": 0.38,
+      "end": 9.37,
+      "text": "Welcome to the Radiology Vault and Open Repository for Radiology Educational Content Designed for Learners and Medical Professionals."
+    },
+    {
+      "start": 10.29,
+      "end": 14.05,
+      "text": "Presented by the Michigan Medicine Department of Radiology."
+    },
+    {
+      "start": 16.4,
+      "end": 19.48,
+      "text": "Oh, my name is Caramel Grapplin and we will be talking about ultrasound guided."
+    },
+    {
+      "start": 20.0,
+      "end": 24.78,
+      "text": "rest biopsies today. I'll be giving you tips, tricks, and troubleshooting advice."
+    },
+    {
+      "start": 27.02,
+      "end": 29.98,
+      "text": "I have no disclosures, so the objectives of today..."
+    },
+    {
+      "start": 30.0,
+      "end": 33.42,
+      "text": "we will discuss the ideal biopsy and planning for that biopsy."
+    },
+    {
+      "start": 33.68,
+      "end": 37.24,
+      "text": "We will identify potential challenges of ultrasound guided breast biopsies"
+    },
+    {
+      "start": 37.24,
+      "end": 38.34,
+      "text": "and how to mitigate them."
+    },
+    {
+      "start": 38.86,
+      "end": 39.86,
+      "text": "And throughout the talk"
+    },
+    {
+      "start": 40.0,
+      "end": 41.46,
+      "text": "you will be seeing these two icons,"
+    },
+    {
+      "start": 41.9,
+      "end": 44.2,
+      "text": "to alert you of the problems that you may encounter"
+    },
+    {
+      "start": 44.2,
+      "end": 45.44,
+      "text": "and some tips and tricks."
+    },
+    {
+      "start": 47.95,
+      "end": 49.75,
+      "text": "So this is the ideal biopsy."
+    },
+    {
+      "start": 50.0,
+      "end": 55.84,
+      "text": "want everything in a line. So this is our diagram of the breast, our target, which is the"
+    },
+    {
+      "start": 55.84,
+      "end": 59.92,
+      "text": "mass that we want to biopsy, the biopsy needle, and then the blue."
+    },
+    {
+      "start": 60.0,
+      "end": 67.52,
+      "text": "here is the transducer. We want all of this in a line for an ideal biopsy. The transducer"
+    },
+    {
+      "start": 67.52,
+      "end": 69.96,
+      "text": "should be perpendicular to the skin as you can see."
+    },
+    {
+      "start": 70.0,
+      "end": 77.72,
+      "text": "see here and the needle should be directly below the center of the probe. On this probe there is a"
+    },
+    {
+      "start": 77.72,
+      "end": 79.4,
+      "text": "little round circle."
+    },
+    {
+      "start": 80.0,
+      "end": 85.26,
+      "text": "the probe to show us exactly where the center is, your transducer may be different and"
+    },
+    {
+      "start": 85.26,
+      "end": 89.98,
+      "text": "maybe a small line, but it really does have to be directly below the center of the probe."
+    },
+    {
+      "start": 90.0,
+      "end": 96.85,
+      "text": "not a little bit to the left or to the right. And as you I'm sure you already know the transducer"
+    },
+    {
+      "start": 96.85,
+      "end": 99.87,
+      "text": "and the needle should be in the same longitudinal axis."
+    },
+    {
+      "start": 100.0,
+      "end": 108.89,
+      "text": "for breast biopsy. First step and first tip is to measure twice and cut once. You want to plan"
+    },
+    {
+      "start": 110.03,
+      "end": 114.55,
+      "text": "going to make your incision so that you can always see your needle. So for"
+    },
+    {
+      "start": 114.55,
+      "end": 118.17,
+      "text": "superficial targets, this is going to be relatively close to your target"
+    },
+    {
+      "start": 118.17,
+      "end": 119.41,
+      "text": "because you will be able"
+    },
+    {
+      "start": 120.03,
+      "end": 123.25,
+      "text": "to see your needle parallel to the chest wall"
+    },
+    {
+      "start": 123.79,
+      "end": 125.85,
+      "text": "with having to go through the least amount of tissue."
+    },
+    {
+      "start": 126.59,
+      "end": 127.99,
+      "text": "However, for mid-targets,"
+    },
+    {
+      "start": 128.17,
+      "end": 129.97,
+      "text": "you're going to put your incision a little bit."
+    },
+    {
+      "start": 130.0,
+      "end": 137.35,
+      "text": "further away to maintain that parallel to the chest wall and to go through the least amount of tissue."
+    },
+    {
+      "start": 137.35,
+      "end": 139.97,
+      "text": "For deep targets you will need to go"
+    },
+    {
+      "start": 140.0,
+      "end": 144.98,
+      "text": "pretty far away to be able to still see your needle and get to the deep target."
+    },
+    {
+      "start": 145.71,
+      "end": 149.97,
+      "text": "I do want to point out that the numbing needle can be your practice needle to determine if"
+    },
+    {
+      "start": 150.03,
+      "end": 156.05,
+      "text": "your placement of the skin wheel will be appropriate to reach the target with optimal needle visualization."
+    },
+    {
+      "start": 158.84,
+      "end": 159.28,
+      "text": "So what about"
+    },
+    {
+      "start": 160.83,
+      "end": 169.97,
+      "text": "Where should we make our incision for these because they are actually both superficial mid and deep lesions and I would say we want to"
+    },
+    {
+      "start": 170.0,
+      "end": 176.28,
+      "text": "make our incision a little bit further away than you might expect so that we are able to sample"
+    },
+    {
+      "start": 176.28,
+      "end": 179.36,
+      "text": "multiple areas of the mass, so this would be"
+    },
+    {
+      "start": 180.0,
+      "end": 181.74,
+      "text": "is superficial portion of the mass."
+    },
+    {
+      "start": 182.06,
+      "end": 184.46,
+      "text": "This will be able to get the mid portion of the mass"
+    },
+    {
+      "start": 184.46,
+      "end": 187.09,
+      "text": "and then also into the deep portion of the mass."
+    },
+    {
+      "start": 187.31,
+      "end": 189.97,
+      "text": "As you know, breast mass is..."
+    },
+    {
+      "start": 190.0,
+      "end": 197.84,
+      "text": "can be heterogeneous, so we want to make sure that we are sampling multiple areas of the mass, so that we get a good pathologic sample."
+    },
+    {
+      "start": 201.6,
+      "end": 205.64,
+      "text": "So you've made your decision and now you've made your incision and you're about to take"
+    },
+    {
+      "start": 205.64,
+      "end": 209.64,
+      "text": "a sample and you look at the ultrasound screen and you see your needle and the mass."
+    },
+    {
+      "start": 210.45,
+      "end": 216.69,
+      "text": "but be careful. You want to make sure you're seeing the entire needle before you take the sample."
+    },
+    {
+      "start": 217.59,
+      "end": 219.97,
+      "text": "So in the top diagram, you can"
+    },
+    {
+      "start": 220.03,
+      "end": 225.63,
+      "text": "see that the tip of the needle and the mass are in the field of view of the transducer,"
+    },
+    {
+      "start": 225.91,
+      "end": 229.98,
+      "text": "the tip of the needle and the mass, and that you're assuming that when you"
+    },
+    {
+      "start": 230.0,
+      "end": 234.71,
+      "text": "fire the needle that you will see, you will sample the mass. The same for the"
+    },
+    {
+      "start": 234.71,
+      "end": 239.44,
+      "text": "diagram on the below. You can see part of the back end of the needle and the"
+    },
+    {
+      "start": 239.44,
+      "end": 239.72,
+      "text": "mass"
+    },
+    {
+      "start": 240.0,
+      "end": 242.92,
+      "text": "and that you assume that when you fire the needle,"
+    },
+    {
+      "start": 243.32,
+      "end": 244.8,
+      "text": "you will be getting part of the mass."
+    },
+    {
+      "start": 249.08,
+      "end": 249.68,
+      "text": "But what happens?"
+    },
+    {
+      "start": 250.06,
+      "end": 252.76,
+      "text": "is that your needle will go to the side of the mass"
+    },
+    {
+      "start": 252.76,
+      "end": 255.9,
+      "text": "and that you've actually missed the mass completely"
+    },
+    {
+      "start": 255.9,
+      "end": 257.08,
+      "text": "within your sample."
+    },
+    {
+      "start": 261.76,
+      "end": 262.86,
+      "text": "So what can you do?"
+    },
+    {
+      "start": 263.88,
+      "end": 267.74,
+      "text": "First, before you take any sample, just look at your hands."
+    },
+    {
+      "start": 267.92,
+      "end": 269.98,
+      "text": "If you don't see that the needle is perfectly..."
+    },
+    {
+      "start": 270.0,
+      "end": 273.68,
+      "text": "lined up beneath the transducer, then play adjust the needle."
+    },
+    {
+      "start": 277.24,
+      "end": 279.34,
+      "text": "This is what you'll see when you look at your hands."
+    },
+    {
+      "start": 279.66,
+      "end": 279.98,
+      "text": "Then..."
+    },
+    {
+      "start": 280.03,
+      "end": 285.95,
+      "text": "needle will not be completely parallel with the transducer, and it may not be directly"
+    },
+    {
+      "start": 285.95,
+      "end": 289.93,
+      "text": "below that center of the probe. So while keeping it direct"
+    },
+    {
+      "start": 290.0,
+      "end": 295.02,
+      "text": "below the center of the probe, you just line up the needle with the transducer."
+    },
+    {
+      "start": 297.24,
+      "end": 298.74,
+      "text": "So what if this happens often?"
+    },
+    {
+      "start": 300.93,
+      "end": 307.2,
+      "text": "I've noticed that a lot of us who are right-handed often have the tip of the needle to the"
+    },
+    {
+      "start": 307.2,
+      "end": 309.97,
+      "text": "lucked of us with the back end of the needle to the"
+    },
+    {
+      "start": 310.0,
+      "end": 315.33,
+      "text": "right of us. And if you stand right in front of the biopsy, your arm will be at an angle."
+    },
+    {
+      "start": 315.33,
+      "end": 319.68,
+      "text": "So, if you just simply take a step of..."
+    },
+    {
+      "start": 320.0,
+      "end": 325.5,
+      "text": "the left. This can straighten out your arm and you're more likely to have a"
+    },
+    {
+      "start": 325.5,
+      "end": 329.18,
+      "text": "straight on lined up approach underneath the transducer."
+    },
+    {
+      "start": 330.26,
+      "end": 339.96,
+      "text": "every time. This can be a very easy fix to a common problem. So the next problem you thought you had every"
+    },
+    {
+      "start": 340.0,
+      "end": 345.5,
+      "text": "in a straight line and you place the biopsy needle and you go line it up and take"
+    },
+    {
+      "start": 345.5,
+      "end": 349.22,
+      "text": "your sample but no longer is it in the same line."
+    },
+    {
+      "start": 350.0,
+      "end": 356.96,
+      "text": "is now to the side. Well, the good thing is that you aren't stuck with your original trajectory."
+    },
+    {
+      "start": 357.66,
+      "end": 359.98,
+      "text": "As we were taught in physics, two points always..."
+    },
+    {
+      "start": 360.0,
+      "end": 365.5,
+      "text": "make a line, and your two points are your target and your incision. So they may not be in the same"
+    },
+    {
+      "start": 365.5,
+      "end": 369.9,
+      "text": "line as you originally planned, but they can always make a line. So I call this the purple"
+    },
+    {
+      "start": 370.0,
+      "end": 374.75,
+      "text": "Pivot, make sure the transducer remains perpendicular to the chest wall,"
+    },
+    {
+      "start": 375.35,
+      "end": 379.97,
+      "text": "anchor at the near end at the incision, and then pivot until you find your target."
+    },
+    {
+      "start": 380.03,
+      "end": 389.36,
+      "text": "So what this looks like. So right now we have the transducer that's in line with the incision."
+    },
+    {
+      "start": 390.26,
+      "end": 392.54,
+      "text": "So you want to keep the back end of the transducer,"
+    },
+    {
+      "start": 392.76,
+      "end": 394.04,
+      "text": "the part closest to you,"
+    },
+    {
+      "start": 394.22,
+      "end": 397.18,
+      "text": "and the part at the incision fixed"
+    },
+    {
+      "start": 397.18,
+      "end": 399.82,
+      "text": "while you pivot at that."
+    },
+    {
+      "start": 401.25,
+      "end": 407.41,
+      "text": "Then you look down at your hands, see how you can adjust and simply line up the needle"
+    },
+    {
+      "start": 407.41,
+      "end": 409.98,
+      "text": "with the line up."
+    },
+    {
+      "start": 410.06,
+      "end": 410.88,
+      "text": "the transducer."
+    },
+    {
+      "start": 413.69,
+      "end": 415.49,
+      "text": "Boshin, do not rock and roll."
+    },
+    {
+      "start": 416.17,
+      "end": 419.87,
+      "text": "This technique is very useful during diagnostic ultrasounds to get it clear."
+    },
+    {
+      "start": 420.0,
+      "end": 425.06,
+      "text": "image, but it can be very misleading during a biopsy. If you block the probe, you may think"
+    },
+    {
+      "start": 425.06,
+      "end": 429.36,
+      "text": "that your target and needle are aligned when they are not, and so you may falsely think that"
+    },
+    {
+      "start": 429.36,
+      "end": 429.98,
+      "text": "your biopsy..."
+    },
+    {
+      "start": 430.0,
+      "end": 434.83,
+      "text": "the mask when you have not, which brings up an additional tip. Getting our"
+    },
+    {
+      "start": 434.83,
+      "end": 439.85,
+      "text": "orthogonal imaging helps to confirm that your needle is in the target and not to"
+    },
+    {
+      "start": 439.85,
+      "end": 439.97,
+      "text": "this."
+    },
+    {
+      "start": 440.03,
+      "end": 445.99,
+      "text": "side of the mass. One of the reasons that the target and the incision may no longer align"
+    },
+    {
+      "start": 446.49,
+      "end": 449.47,
+      "text": "may be because many times breast masses are mobile."
+    },
+    {
+      "start": 450.1,
+      "end": 454.36,
+      "text": "This especially happens in dense breast and with fibrinomas."
+    },
+    {
+      "start": 454.88,
+      "end": 457.8,
+      "text": "One way to keep the target from being continually pushed away"
+    },
+    {
+      "start": 457.8,
+      "end": 459.98,
+      "text": "from the needle is to anger the breast with..."
+    },
+    {
+      "start": 460.06,
+      "end": 461.36,
+      "text": "your fourth and fifth digits."
+    },
+    {
+      "start": 462.18,
+      "end": 463.84,
+      "text": "Another tip is for the technologist"
+    },
+    {
+      "start": 463.84,
+      "end": 465.34,
+      "text": "who's running the ultrasound machine"
+    },
+    {
+      "start": 465.34,
+      "end": 467.52,
+      "text": "to put back pressure on the opposite side"
+    },
+    {
+      "start": 467.52,
+      "end": 469.02,
+      "text": "of the breast with a free hand."
+    },
+    {
+      "start": 470.99,
+      "end": 473.35,
+      "text": "Next problem, you can't see your needle well."
+    },
+    {
+      "start": 474.03,
+      "end": 476.59,
+      "text": "This most often happens with the angle of the needle"
+    },
+    {
+      "start": 476.59,
+      "end": 479.85,
+      "text": "to the transducer is acute and you have a deep bath."
+    },
+    {
+      "start": 480.03,
+      "end": 485.08,
+      "text": "you want the needle parallel with a transuser as much as possible. So what can you do?"
+    },
+    {
+      "start": 487.0,
+      "end": 489.91,
+      "text": "So again, when planning, make sure you try"
+    },
+    {
+      "start": 490.0,
+      "end": 496.04,
+      "text": "to make the incision as far as to waive a retransducer as possible, but if that may not"
+    },
+    {
+      "start": 496.04,
+      "end": 496.76,
+      "text": "be possible."
+    },
+    {
+      "start": 497.54,
+      "end": 499.98,
+      "text": "So the first thing that you can do is..."
+    },
+    {
+      "start": 500.0,
+      "end": 502.78,
+      "text": "to torque the transducer away from you"
+    },
+    {
+      "start": 502.98,
+      "end": 504.92,
+      "text": "to start to increase that angle."
+    },
+    {
+      "start": 505.76,
+      "end": 509.97,
+      "text": "Second, you can torque the needle down to also in."
+    },
+    {
+      "start": 510.03,
+      "end": 516.39,
+      "text": "that angle. Therefore you should hopefully be closer to a parallel transducer and"
+    },
+    {
+      "start": 516.39,
+      "end": 519.87,
+      "text": "needle and then as you can see these will cause divots."
+    },
+    {
+      "start": 520.19,
+      "end": 523.33,
+      "text": "in the skin, which will also be noticed"
+    },
+    {
+      "start": 523.33,
+      "end": 525.25,
+      "text": "on the ultrasound images."
+    },
+    {
+      "start": 526.94,
+      "end": 528.42,
+      "text": "Here you can see with these pictures"
+    },
+    {
+      "start": 528.42,
+      "end": 529.98,
+      "text": "that you really need to..."
+    },
+    {
+      "start": 530.13,
+      "end": 533.95,
+      "text": "or the needle and the transducer to keep them in parallel."
+    },
+    {
+      "start": 534.29,
+      "end": 536.29,
+      "text": "These motions are not exaggerated."
+    },
+    {
+      "start": 537.9,
+      "end": 539.96,
+      "text": "For example, here's a very difficult biopsy."
+    },
+    {
+      "start": 540.03,
+      "end": 545.71,
+      "text": "of a deep lymph node. First, we did use a virtual convex setting on the ultrasound machine to see"
+    },
+    {
+      "start": 545.71,
+      "end": 549.75,
+      "text": "a wider field of view. With the torque of the transducer and the needle."
+    },
+    {
+      "start": 550.1,
+      "end": 552.86,
+      "text": "you can now see a better tip of the needle"
+    },
+    {
+      "start": 552.86,
+      "end": 555.18,
+      "text": "within the target than before."
+    },
+    {
+      "start": 555.74,
+      "end": 558.64,
+      "text": "Also, you can see the gel and air within the gap"
+    },
+    {
+      "start": 558.64,
+      "end": 559.94,
+      "text": "from the torque of the trans."
+    },
+    {
+      "start": 560.0,
+      "end": 567.43,
+      "text": "do sir. So why am I harping on making sure you see your needle and our parallel to the chest wall?"
+    },
+    {
+      "start": 568.36,
+      "end": 569.96,
+      "text": "Well this was in a case of a bi of"
+    },
+    {
+      "start": 570.06,
+      "end": 575.38,
+      "text": "performed at an outside institution that shows that the trough of the needle actually went"
+    },
+    {
+      "start": 575.38,
+      "end": 579.84,
+      "text": "into the chest wall and our internal review of the outside pathology."
+    },
+    {
+      "start": 580.0,
+      "end": 589.88,
+      "text": "did show that the pathology included phone, you do want to avoid this. So how else can we avoid the"
+    },
+    {
+      "start": 590.03,
+      "end": 595.35,
+      "text": "Well, most of our needles now allow for an open trough technique, meaning that the needle"
+    },
+    {
+      "start": 595.35,
+      "end": 599.97,
+      "text": "is fired outside of the breast to expose the trough, and then is inserted while..."
+    },
+    {
+      "start": 600.0,
+      "end": 604.02,
+      "text": "under the ultrasound guidance to see the tip of the needle and to avoid the chest"
+    },
+    {
+      "start": 604.02,
+      "end": 607.86,
+      "text": "wall, and then you can scoop under the target to do the biopsies."
+    },
+    {
+      "start": 612.24,
+      "end": 614.36,
+      "text": "Here is a video showing this open trough technique."
+    },
+    {
+      "start": 614.68,
+      "end": 616.36,
+      "text": "It may take some pressure to push the needle"
+    },
+    {
+      "start": 616.36,
+      "end": 619.06,
+      "text": "with the trough out as it's not as sturdy as the cock needle."
+    },
+    {
+      "start": 620.0,
+      "end": 622.32,
+      "text": "but for a posterior mass along the chest wall"
+    },
+    {
+      "start": 622.32,
+      "end": 624.46,
+      "text": "or fatty tissues surrounding the target,"
+    },
+    {
+      "start": 624.92,
+      "end": 627.66,
+      "text": "like the axola, this method typically work well."
+    },
+    {
+      "start": 628.18,
+      "end": 629.88,
+      "text": "As you can see, you also have the added benefit."
+    },
+    {
+      "start": 630.06,
+      "end": 635.01,
+      "text": "to know that you are in the mass if you torque the needle to show that the mass moves with the needle."
+    },
+    {
+      "start": 637.22,
+      "end": 639.86,
+      "text": "Open TROP technique is also very helpful for small masses."
+    },
+    {
+      "start": 640.0,
+      "end": 645.43,
+      "text": "especially to see that the mass is adequately sampled and within the trot."
+    },
+    {
+      "start": 646.66,
+      "end": 649.98,
+      "text": "But as we mentioned, this is usually easier if the"
+    },
+    {
+      "start": 650.03,
+      "end": 655.66,
+      "text": "surrounding tissue is fatty. If the surrounding tissue is dense, most likely you will need to"
+    },
+    {
+      "start": 655.66,
+      "end": 659.96,
+      "text": "the device in the breast and it's helpful to deploy the"
+    },
+    {
+      "start": 660.0,
+      "end": 667.14,
+      "text": "trough first again to make sure that the mass is in the trough. The other reason is that some needles"
+    },
+    {
+      "start": 667.14,
+      "end": 669.9,
+      "text": "have a dead space adjacent to the trough and depends on..."
+    },
+    {
+      "start": 670.06,
+      "end": 674.4,
+      "text": "Depending on the throw, you may or may not have the mass within the trough."
+    },
+    {
+      "start": 675.02,
+      "end": 679.96,
+      "text": "So if you put the tip of the needle directly next to the small mass and have a"
+    },
+    {
+      "start": 680.0,
+      "end": 685.58,
+      "text": "longer throw with a dead space, you may end up not biopseeing the mass at all."
+    },
+    {
+      "start": 686.94,
+      "end": 689.62,
+      "text": "Another option is to use the shorter throw."
+    },
+    {
+      "start": 690.35,
+      "end": 691.85,
+      "text": "which does not have the dead space"
+    },
+    {
+      "start": 691.85,
+      "end": 694.87,
+      "text": "so that you can ensure to have the mass within the trunk."
+    },
+    {
+      "start": 696.38,
+      "end": 699.24,
+      "text": "The third option is to pull the tip of the needle back."
+    },
+    {
+      "start": 700.0,
+      "end": 703.48,
+      "text": "that when you do fire to make sure that the mass is within the"
+    },
+    {
+      "start": 703.48,
+      "end": 708.73,
+      "text": "drop and not within the dead space. Another tip is to have the"
+    },
+    {
+      "start": 708.73,
+      "end": 709.67,
+      "text": "technologist"
+    },
+    {
+      "start": 710.03,
+      "end": 714.33,
+      "text": "the pro between the samples to make sure that you don't lose sight of these tiny little"
+    },
+    {
+      "start": 714.33,
+      "end": 716.85,
+      "text": "masses after the first couple of passes."
+    },
+    {
+      "start": 719.2,
+      "end": 719.9,
+      "text": "Next problem."
+    },
+    {
+      "start": 720.03,
+      "end": 729.96,
+      "text": "Another common problem that we see are blood vessels. The best option is to change your trajectory to avoid them all"
+    },
+    {
+      "start": 730.1,
+      "end": 735.07,
+      "text": "together and this goes with our first step of planning planning planning which"
+    },
+    {
+      "start": 735.07,
+      "end": 739.89,
+      "text": "needs to include color flow images during the planning stage. However another tip"
+    },
+    {
+      "start": 740.0,
+      "end": 742.62,
+      "text": "is to use a coaxial medial to cover a blood vessel"
+    },
+    {
+      "start": 742.62,
+      "end": 744.4,
+      "text": "to make sure you don't buy apnea."
+    },
+    {
+      "start": 746.06,
+      "end": 748.4,
+      "text": "So when I know that there are blood vessels nearby"
+    },
+    {
+      "start": 748.4,
+      "end": 749.98,
+      "text": "and after I have..."
+    },
+    {
+      "start": 750.03,
+      "end": 755.07,
+      "text": "the trough out and may check for those blood vessels one more time with color flow and"
+    },
+    {
+      "start": 755.07,
+      "end": 759.03,
+      "text": "then guide the coaxial needle over the trough to cover the vessel before firing."
+    },
+    {
+      "start": 760.0,
+      "end": 763.86,
+      "text": "This example shows the blood vessel underneath the coaxial needle,"
+    },
+    {
+      "start": 764.42,
+      "end": 769.88,
+      "text": "but it would work the same if the blood vessel were above the trough and could use."
+    },
+    {
+      "start": 770.0,
+      "end": 778.71,
+      "text": "coaxial needle to cover it up. What if you have a mass that is close to an implant?"
+    },
+    {
+      "start": 780.0,
+      "end": 785.12,
+      "text": "be tricky and to work around and patients are often anxious about injury to their implant."
+    },
+    {
+      "start": 785.94,
+      "end": 789.98,
+      "text": "If the target is close to an implant it's best to be as parallel as possible."
+    },
+    {
+      "start": 790.0,
+      "end": 799.98,
+      "text": "to the implant, you can inject lidocaine between the target and the implant to lift the mass off of the implant."
+    },
+    {
+      "start": 800.67,
+      "end": 803.13,
+      "text": "And then working very quickly as LIKING"
+    },
+    {
+      "start": 803.13,
+      "end": 804.39,
+      "text": "can dissipate quickly."
+    },
+    {
+      "start": 804.69,
+      "end": 806.81,
+      "text": "You can use an open trough technique"
+    },
+    {
+      "start": 806.81,
+      "end": 809.98,
+      "text": "to guide the prof of the needle underneath the..."
+    },
+    {
+      "start": 810.0,
+      "end": 816.93,
+      "text": "mass to take the biopsy sample. These are very tricky so please don't use this"
+    },
+    {
+      "start": 816.93,
+      "end": 818.59,
+      "text": "as your very first biopsy."
+    },
+    {
+      "start": 820.83,
+      "end": 825.79,
+      "text": "problem that we're going to address is very dense tissues surrounding the target."
+    },
+    {
+      "start": 826.48,
+      "end": 828.98,
+      "text": "Typically, these biopsies look like they will be easy."
+    },
+    {
+      "start": 830.0,
+      "end": 835.02,
+      "text": "For example, this mess is easily seen in about a centimeter, but it actually is going to"
+    },
+    {
+      "start": 835.02,
+      "end": 837.44,
+      "text": "be tricky because of the dense tissue surrounding it."
+    },
+    {
+      "start": 837.44,
+      "end": 839.98,
+      "text": "In these cases, you will want to"
+    },
+    {
+      "start": 840.03,
+      "end": 842.73,
+      "text": "make the incision closer to the target than you think"
+    },
+    {
+      "start": 842.73,
+      "end": 845.59,
+      "text": "because the tissue will push away from you as you proceed."
+    },
+    {
+      "start": 846.09,
+      "end": 849.03,
+      "text": "It may take a long time to infuse the lidocaine"
+    },
+    {
+      "start": 849.51,
+      "end": 849.97,
+      "text": "and you may..."
+    },
+    {
+      "start": 850.0,
+      "end": 856.22,
+      "text": "You may need to biopsy the normal breast tissue proximal to the mass to be able to get to the biopsy to the mass."
+    },
+    {
+      "start": 856.68,
+      "end": 859.44,
+      "text": "Make sure that you're using your transducer hand."
+    },
+    {
+      "start": 860.22,
+      "end": 863.44,
+      "text": "or even the technologist hand for back pressure on the bus."
+    },
+    {
+      "start": 866.63,
+      "end": 869.64,
+      "text": "Doing conclusion, you want to plan, plan, plan,"
+    },
+    {
+      "start": 870.06,
+      "end": 875.96,
+      "text": "then plan some more. Make sure you're using color flow on those initial images and make sure that"
+    },
+    {
+      "start": 875.96,
+      "end": 879.97,
+      "text": "you're planning that incision diet exactly."
+    },
+    {
+      "start": 880.06,
+      "end": 885.36,
+      "text": "where you want it to be. When in doubt look down look down at your hands and they"
+    },
+    {
+      "start": 885.36,
+      "end": 889.84,
+      "text": "will tell you a lot. Just line them up and oftentimes that will be your only"
+    },
+    {
+      "start": 890.06,
+      "end": 895.06,
+      "text": "problem that you're having. Pivot and divot, so we want to do the perpendicular pivot,"
+    },
+    {
+      "start": 895.26,
+      "end": 899.9,
+      "text": "always keep the transducer perpendicular and remember that we don't have to"
+    },
+    {
+      "start": 900.03,
+      "end": 904.99,
+      "text": "in the same planning situation that we thought if the mass moves will move with it."
+    },
+    {
+      "start": 905.77,
+      "end": 909.98,
+      "text": "Divided, we're going to torque our needle and our transducer to get them."
+    },
+    {
+      "start": 910.0,
+      "end": 919.96,
+      "text": "parallel. And in the end, keep calm and biopsy on. Thank you very much. Good luck. If you have any questions"
+    },
+    {
+      "start": 920.06,
+      "end": 924.72,
+      "text": "questions about this topic or video, please feel free to contact me at the above email."
+    }
+  ]
+}

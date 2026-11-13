@@ -1,0 +1,78 @@
+{
+  "video_id": "J_kORTc8hxY",
+  "reviewer": "stage3_b",
+  "review_scope": "Question-led review by Agent B of Agent A draft; not blind. Native full-frame sampled checkpoints and available time-indexed ASR; no continuous replay or direct listening claim.",
+  "reviewer_native_opened": [
+    350,
+    510,
+    775,
+    776,
+    777,
+    778,
+    779,
+    780,
+    1260,
+    1262,
+    1264,
+    1266,
+    1268,
+    1270,
+    1390,
+    1440,
+    1442,
+    1444,
+    1446,
+    1448,
+    1450,
+    1510,
+    778.25,
+    778.5,
+    778.75,
+    1269,
+    1269.25,
+    1269.5,
+    1269.75,
+    1447,
+    1447.25,
+    1447.5,
+    1447.75
+  ],
+  "tasks": [
+    {
+      "task_index": 1,
+      "findings": "Confirmed coarse horizontal bands parallel to superficial line; no motion conclusion.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 2,
+      "findings": "Moved780 to779; prior778.75 diagram still present. Removed B-line term from question to reduce direct answer cue, although slide title remains shortcut.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 3,
+      "findings": "Moved1270 to1269.5. Fixed question referencing a continuous horizontal blue line on right where none exists; instead contrasts visible superficial layer and lower curved pink contour.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 4,
+      "findings": "Confirmed probe above nipple in unique earlier photograph; near-clavicular region rather than precise unseen interspace.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 5,
+      "findings": "Moved1450 to1447.5; all panels already present with broad downward brightness. Report does not establish detailed artifact pattern.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 6,
+      "findings": "Confirmed large left-panel dark space above lower curve and adjacent tissue right. No fluid amount/side diagnosis.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    }
+  ]
+}

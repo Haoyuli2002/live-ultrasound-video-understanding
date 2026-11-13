@@ -1,0 +1,493 @@
+{
+  "video_id": "bRPD-51UG7Y",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/bRPD-51UG7Y/asr.txt",
+  "segments": [
+    {
+      "start": 0.99,
+      "end": 8.68,
+      "text": "Hello everyone, this is Dr. Sam, and this video is about obstetric ultrasound pro-positioning."
+    },
+    {
+      "start": 10.29,
+      "end": 14.76,
+      "text": "we will talk about rogue placements for a pregnant uterus."
+    },
+    {
+      "start": 16.48,
+      "end": 19.82,
+      "text": "The only focus here is to scan the pregnant uterus."
+    },
+    {
+      "start": 20.32,
+      "end": 21.96,
+      "text": "and the embryo and petus."
+    },
+    {
+      "start": 23.78,
+      "end": 29.9,
+      "text": "We will start from early pregnancy on the left side is a schematic diagram."
+    },
+    {
+      "start": 30.03,
+      "end": 38.48,
+      "text": "going across sound proposition, these dotted lines are the right and left coastal margins."
+    },
+    {
+      "start": 40.45,
+      "end": 49.76,
+      "text": "this is the umbilicals, this white box is the ultrasound probe and this red dot is the indicator"
+    },
+    {
+      "start": 50.67,
+      "end": 59.97,
+      "text": "for the orientation marker. This region is the Inguinal region at this"
+    },
+    {
+      "start": 60.0,
+      "end": 69.63,
+      "text": "This point is the symphysis pubis first scan the uterus in longitudinal plane we placed"
+    },
+    {
+      "start": 69.63,
+      "end": 69.85,
+      "text": "up."
+    },
+    {
+      "start": 70.29,
+      "end": 79.76,
+      "text": "between the umbilicals and the symphysis pubis joint this is the hypo gastric region it is also called"
+    },
+    {
+      "start": 80.0,
+      "end": 87.82,
+      "text": "supra pubic region, less the probe, and the midline, and longitudinal orientation."
+    },
+    {
+      "start": 90.16,
+      "end": 96.46,
+      "text": "the patient's bladder must be full. You will find the uterus posterior to the bladder."
+    },
+    {
+      "start": 98.24,
+      "end": 99.82,
+      "text": "This is in early pregnancy."
+    },
+    {
+      "start": 100.0,
+      "end": 109.98,
+      "text": "you can see, you can see a gestational sac here containing an embryo. You can measure the..."
+    },
+    {
+      "start": 110.0,
+      "end": 118.94,
+      "text": "CRL after locating it. It is seen within the utrine cavity, so it is an intra utrine pregnancy."
+    },
+    {
+      "start": 121.86,
+      "end": 127.12,
+      "text": "Rotate the probe 90 degrees ND clockwise to scan in transverse plane."
+    },
+    {
+      "start": 129.11,
+      "end": 129.97,
+      "text": "This is the uterus."
+    },
+    {
+      "start": 130.13,
+      "end": 139.78,
+      "text": "containing a gestational sac in transverse view scan all the way from the funders to the cervix."
+    },
+    {
+      "start": 141.98,
+      "end": 149.98,
+      "text": "Make sure you examine the ores and head neck side as well by placing them."
+    },
+    {
+      "start": 150.0,
+      "end": 157.73,
+      "text": "the probe in this manner in longitudinal plane. It is important to rule out an"
+    },
+    {
+      "start": 157.73,
+      "end": 158.83,
+      "text": "an ectopic pregnancy."
+    },
+    {
+      "start": 160.16,
+      "end": 169.51,
+      "text": "even if you have located and intra-utrine gestational sac because in rare cases a heterotopic"
+    },
+    {
+      "start": 169.51,
+      "end": 169.97,
+      "text": "Bragnet."
+    },
+    {
+      "start": 170.0,
+      "end": 178.27,
+      "text": "can occur in which there is a presence of intra-utron gestational sac, as well as gestational"
+    },
+    {
+      "start": 178.27,
+      "end": 179.97,
+      "text": "sac outside the utron."
+    },
+    {
+      "start": 180.0,
+      "end": 189.16,
+      "text": "Because it could be in the philopian tube or the oory, as the pregnancy progresses, you"
+    },
+    {
+      "start": 189.16,
+      "end": 189.96,
+      "text": "will start to see."
+    },
+    {
+      "start": 190.0,
+      "end": 199.72,
+      "text": "the amniotic sac with the fetus in it, you can measure the CRL, the uterus is much bigger"
+    },
+    {
+      "start": 199.72,
+      "end": 199.92,
+      "text": "and"
+    },
+    {
+      "start": 200.0,
+      "end": 209.93,
+      "text": "size. This is the bladder over here. Petal head and limbs will be seen well by..."
+    },
+    {
+      "start": 210.0,
+      "end": 219.97,
+      "text": "the end of first trimester that is at 13 weeks by keeping the probe in this manner we will"
+    },
+    {
+      "start": 220.0,
+      "end": 228.41,
+      "text": "will get an image like this. In a longitudinal plane, the right side of the image is towards"
+    },
+    {
+      "start": 228.41,
+      "end": 229.31,
+      "text": "the cervix"
+    },
+    {
+      "start": 230.16,
+      "end": 233.6,
+      "text": "and the left side of the image is towards the fundus."
+    },
+    {
+      "start": 235.72,
+      "end": 239.64,
+      "text": "On the left side is an image that shows us the position"
+    },
+    {
+      "start": 240.32,
+      "end": 247.69,
+      "text": "orientation of the fetus within the uterus. It also shows the proplacement."
+    },
+    {
+      "start": 250.16,
+      "end": 259.85,
+      "text": "And on the right side is the image formed when we place the probe in this manner we can find out the feature."
+    },
+    {
+      "start": 260.0,
+      "end": 269.48,
+      "text": "presentation and orientation. This is a cephalic presentation in which the head is directed"
+    },
+    {
+      "start": 270.0,
+      "end": 279.14,
+      "text": "the cervix, when the fetus is in this presentation, the head will be seen in the right side of the image."
+    },
+    {
+      "start": 280.7,
+      "end": 284.12,
+      "text": "and the feet will be found in the left side of the image."
+    },
+    {
+      "start": 286.09,
+      "end": 289.17,
+      "text": "The spine faces the posterior aspect of the uterus."
+    },
+    {
+      "start": 290.0,
+      "end": 295.46,
+      "text": "So it is a posterior spine and will be seen down here."
+    },
+    {
+      "start": 295.46,
+      "end": 299.75,
+      "text": "we can also get a mid-satitual profile."
+    },
+    {
+      "start": 300.0,
+      "end": 309.3,
+      "text": "here and gives us great detail of fetal anatomy in cephalic presentation."
+    },
+    {
+      "start": 310.03,
+      "end": 317.24,
+      "text": "To view the fetal head and brain in transverse plane, bring the probe down towards the"
+    },
+    {
+      "start": 317.24,
+      "end": 319.84,
+      "text": "This emphasis will be this and you will find"
+    },
+    {
+      "start": 320.0,
+      "end": 326.8,
+      "text": "the feet will head. You can move the probe to the side until you see"
+    },
+    {
+      "start": 326.8,
+      "end": 329.8,
+      "text": "the bridal bones on the top and"
+    },
+    {
+      "start": 330.0,
+      "end": 338.54,
+      "text": "bottom of the image. Adjust the probe slightly until you can see the Thalamai and the"
+    },
+    {
+      "start": 338.54,
+      "end": 339.84,
+      "text": "give them septum pelos"
+    },
+    {
+      "start": 340.0,
+      "end": 349.25,
+      "text": "When you find these structures, you can measure the Biperitle diameter and head circumference."
+    },
+    {
+      "start": 351.41,
+      "end": 359.24,
+      "text": "move the probe slightly up towards the mother's umbilicus and you can locate the fetal orbits and"
+    },
+    {
+      "start": 360.0,
+      "end": 369.98,
+      "text": "And nasal bones, this is the image, you will get move the probe further upwards, and you will..."
+    },
+    {
+      "start": 370.0,
+      "end": 379.96,
+      "text": "the fetal chest. You will be able to see the fetal heart. The spine is seen at the bottom half of the"
+    },
+    {
+      "start": 380.0,
+      "end": 389.73,
+      "text": "image with small movements towards the umbilicus you will be able to see the stomach on the left side"
+    },
+    {
+      "start": 390.03,
+      "end": 398.5,
+      "text": "of the fetus, this is the spine right here, part of the umbilical cord is also seen."
+    },
+    {
+      "start": 401.02,
+      "end": 408.61,
+      "text": "When you locate the umbilical vein, like this, along with the stomach, you can measure"
+    },
+    {
+      "start": 408.61,
+      "end": 409.93,
+      "text": "the dominoes serve."
+    },
+    {
+      "start": 410.0,
+      "end": 419.91,
+      "text": "Another orientation is the phallic spine anterior by placing the probe in this line."
+    },
+    {
+      "start": 420.03,
+      "end": 428.44,
+      "text": "original orientation, we will get this image. The spine is seen at the top of the image."
+    },
+    {
+      "start": 430.67,
+      "end": 434.61,
+      "text": "Now we can examine each section in transverse view."
+    },
+    {
+      "start": 436.41,
+      "end": 438.49,
+      "text": "The harp will be seen like this."
+    },
+    {
+      "start": 440.13,
+      "end": 443.09,
+      "text": "directed towards the right side of the image."
+    },
+    {
+      "start": 445.21,
+      "end": 449.27,
+      "text": "Similarly, as we move up towards the mother's umbilicus."
+    },
+    {
+      "start": 450.32,
+      "end": 459.97,
+      "text": "we can locate the stormic, the spine is seen at the top of the image, the stormic will be seen in the"
+    },
+    {
+      "start": 460.0,
+      "end": 469.85,
+      "text": "right half of the image. Next presentation is the bridge presentation in which the fetal"
+    },
+    {
+      "start": 470.0,
+      "end": 478.22,
+      "text": "is directed towards the fundus and the fetal hips are directed towards the cervix."
+    },
+    {
+      "start": 480.74,
+      "end": 488.98,
+      "text": "The little head will be located near the mother's umbilicus and as we move down in transverse plane"
+    },
+    {
+      "start": 490.19,
+      "end": 492.37,
+      "text": "we will reach the fetal chest."
+    },
+    {
+      "start": 493.92,
+      "end": 499.98,
+      "text": "This will be the heart's orientation directed towards the right heart."
+    },
+    {
+      "start": 500.0,
+      "end": 509.87,
+      "text": "of the image with the spine seen at the bottom move down towards the cervix."
+    },
+    {
+      "start": 510.67,
+      "end": 519.32,
+      "text": "until you locate the stomach, the spine is seen at the bottom and the stomach is also seen"
+    },
+    {
+      "start": 520.0,
+      "end": 529.28,
+      "text": "the right half of the image. The next reach orientation is reach fine interior."
+    },
+    {
+      "start": 531.66,
+      "end": 539.77,
+      "text": "The spine is facing, and ideally this is how the image will look like when you place the probe."
+    },
+    {
+      "start": 540.1,
+      "end": 549.85,
+      "text": "In this manner, the hips are directed towards the cervix and the fetal head is directed towards the fundus."
+    },
+    {
+      "start": 551.82,
+      "end": 559.54,
+      "text": "for a transfer presentation when you place the probe in longitudinal orientation over the uterus."
+    },
+    {
+      "start": 560.7,
+      "end": 569.96,
+      "text": "you will get a transverse image of the fetus if the spine is anterior it will be seen at the"
+    },
+    {
+      "start": 570.03,
+      "end": 579.13,
+      "text": "top of the image. The stomach will be seen in the right half of the image. Similarly"
+    },
+    {
+      "start": 580.13,
+      "end": 583.56,
+      "text": "the heart will also be seen in the right half."
+    },
+    {
+      "start": 585.49,
+      "end": 589.94,
+      "text": "You can move the probe, left and right to locate the"
+    },
+    {
+      "start": 590.06,
+      "end": 599.23,
+      "text": "fetal head and all other structures. This is another transverse presentation in which"
+    },
+    {
+      "start": 599.23,
+      "end": 599.97,
+      "text": "the fetal"
+    },
+    {
+      "start": 600.03,
+      "end": 609.68,
+      "text": "head is towards the left side and facing the posterior aspect of the uterus so when we move"
+    },
+    {
+      "start": 610.19,
+      "end": 619.85,
+      "text": "the probe to the left we will find the fetal head. When we move from left to the right we will find"
+    },
+    {
+      "start": 620.0,
+      "end": 629.97,
+      "text": "the heart. This will be the image formed. If we move forward to the right, the stomach will also be"
+    },
+    {
+      "start": 630.0,
+      "end": 638.57,
+      "text": "seen at this side. Transverse spine posterior position is another type of"
+    },
+    {
+      "start": 638.57,
+      "end": 639.97,
+      "text": "transverse presentive."
+    },
+    {
+      "start": 640.0,
+      "end": 649.11,
+      "text": "in which the fetal head is towards the right side and facing the anterior aspect of the uterus."
+    },
+    {
+      "start": 650.99,
+      "end": 659.52,
+      "text": "So keeping the probe in longitudinal orientation, if we move to the right side, we will find the fetal head."
+    },
+    {
+      "start": 661.2,
+      "end": 669.9,
+      "text": "When we move the probe from the right side to the left side, we will find the fetal heart."
+    },
+    {
+      "start": 670.0,
+      "end": 679.96,
+      "text": "in this position with the spine at the bottom. Moving further to the left will bring"
+    },
+    {
+      "start": 680.0,
+      "end": 689.24,
+      "text": "the stomach in view also at this side. In this type of transfer presentation"
+    },
+    {
+      "start": 690.45,
+      "end": 698.31,
+      "text": "The fetal head is towards the left side and facing the interior aspect of the uterus."
+    },
+    {
+      "start": 700.0,
+      "end": 709.77,
+      "text": "This is an image of the heart, it will be found at this site, the stomach will also be found"
+    },
+    {
+      "start": 710.16,
+      "end": 717.65,
+      "text": "at this site thank you so much for watching please subscribe and stay tuned for more"
+    },
+    {
+      "start": 717.65,
+      "end": 718.77,
+      "text": "imaging videos."
+    }
+  ]
+}

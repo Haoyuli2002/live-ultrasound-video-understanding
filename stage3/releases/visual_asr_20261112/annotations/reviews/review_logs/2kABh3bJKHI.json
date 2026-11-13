@@ -1,0 +1,90 @@
+{
+  "video_id": "2kABh3bJKHI",
+  "reviewer": "stage3_b",
+  "review_scope": "Question-led review by Agent B of Agent A draft; not blind. Native full-frame sampled checkpoints and available time-indexed ASR; no continuous replay or direct listening claim.",
+  "reviewer_native_opened": [
+    805,
+    2340,
+    2420,
+    2450,
+    2460,
+    2470,
+    2470.25,
+    2470.5,
+    2470.75,
+    2472,
+    2480,
+    2570,
+    2571,
+    2571.25,
+    2571.5,
+    2571.75,
+    2572,
+    2572.25,
+    2572.5,
+    2572.75,
+    2573,
+    2574,
+    2575,
+    2576,
+    2585,
+    3115,
+    3116,
+    3117,
+    3118,
+    3119,
+    3120,
+    3121,
+    3122,
+    3123,
+    3124,
+    3124.25,
+    3124.5,
+    3124.75,
+    3125,
+    3130,
+    3135,
+    3140,
+    3145,
+    3480,
+    3550
+  ],
+  "tasks": [
+    {
+      "task_index": 1,
+      "findings": "Confirmed compact left speckled bundle versus right longitudinal striated band at805.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 2,
+      "findings": "Moved2585 to2572:2571.75 no clear shaft,2572 bright oblique shaft from upper-left already sufficient.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 3,
+      "findings": "Moved3145 to3124.25; revised vague circumferential dark spread to broad dark pocket above/right of artery-side bright bundle. Source is coarse with scan-plane motion; no volume, full encirclement or clinical success claim.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 4,
+      "findings": "Moved2480 to2470.25; actual sonogram already readable before later speech.2470 transition noise;2470.25 N-left/A-center/V-right available.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 5,
+      "findings": "Confirmed simultaneous3480: left main dark rounded pocket, right more lobulated compartments; no temporal order inferred.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 6,
+      "findings": "Confirmed unique labeled anatomy2480 and distinct current posterior tibial3550; history already available.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    }
+  ]
+}

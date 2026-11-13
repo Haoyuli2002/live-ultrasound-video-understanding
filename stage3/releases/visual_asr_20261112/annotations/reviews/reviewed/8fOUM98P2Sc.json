@@ -1,0 +1,157 @@
+{
+  "understanding": "Bedside cardiac ultrasound lecture pairing diagrams of probe position with the corresponding parasternal, apical, and subxiphoid views.",
+  "native_opened": [
+    260,
+    317,
+    408,
+    420,
+    423,
+    424,
+    425,
+    426,
+    427,
+    428,
+    429,
+    430,
+    435,
+    436,
+    437
+  ],
+  "tasks": [
+    {
+      "qa_type": "current_observation",
+      "query_time": 260,
+      "answer_time": 260,
+      "checkpoints": [],
+      "question": "In the parasternal long-axis image, which of the two circled valves is closer to the top of the ultrasound sector?",
+      "reference_answer": "The aortic valve is closer to the top. The mitral valve is circled lower and to the left.",
+      "visual_support": "The labeled aortic valve circle is above and slightly right of the labeled mitral valve circle.",
+      "query_prefix_check": "Both valves are labeled and visible.",
+      "answer_prefix_check": "The positions can be compared in the current scan.",
+      "shortcut_risk": "Moderate. The labels identify each valve but the relation is spatial.",
+      "task_id": "s3_remaining79_8fOUM98P2Sc_01",
+      "video_id": "8fOUM98P2Sc",
+      "split": "train",
+      "language": "en",
+      "source_video": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/8fOUM98P2Sc.mp4",
+      "stage3_value": "medium",
+      "visual_evidence": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/8fOUM98P2Sc/260.jpg",
+          "checkpoint": 260.0,
+          "source_pts_seconds": 259.92,
+          "resolution": [
+            1280,
+            720
+          ]
+        }
+      ],
+      "asr_support_segments": [],
+      "query_decision": "ANSWER",
+      "answer_decision": "ANSWER",
+      "review_status": "accepted_targeted_native_frame_self_review",
+      "student_input_visibility": "not_checked"
+    },
+    {
+      "qa_type": "history_recall",
+      "query_time": 429,
+      "answer_time": 429,
+      "checkpoints": [
+        317
+      ],
+      "question": "In the earlier short-axis probe diagram, was the transducer as low and lateral as the one in the current apical diagram?",
+      "reference_answer": "No. The short-axis transducer was higher and closer to the middle of the chest.",
+      "visual_support": "The short-axis schematic places the probe over the upper parasternal area. The apical inset places it lower and farther to the side.",
+      "query_prefix_check": "Both diagrams have appeared by the query.",
+      "answer_prefix_check": "The difference in placement is visible across the two views.",
+      "shortcut_risk": "Moderate. Window names can provide an anatomical clue.",
+      "task_id": "s3_remaining79_8fOUM98P2Sc_02",
+      "video_id": "8fOUM98P2Sc",
+      "split": "train",
+      "language": "en",
+      "source_video": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/8fOUM98P2Sc.mp4",
+      "stage3_value": "medium",
+      "visual_evidence": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/8fOUM98P2Sc/317.jpg",
+          "checkpoint": 317.0,
+          "source_pts_seconds": 316.92,
+          "resolution": [
+            1280,
+            720
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/8fOUM98P2Sc/429.jpg",
+          "checkpoint": 429.0,
+          "source_pts_seconds": 428.92,
+          "resolution": [
+            1280,
+            720
+          ]
+        }
+      ],
+      "asr_support_segments": [],
+      "query_decision": "ANSWER",
+      "answer_decision": "ANSWER",
+      "review_status": "accepted_targeted_native_frame_self_review",
+      "student_input_visibility": "not_checked"
+    },
+    {
+      "qa_type": "event_notification",
+      "query_time": 427,
+      "answer_time": 429,
+      "checkpoints": [
+        428
+      ],
+      "question": "Tell me when the apical view is shown on ultrasound so I can compare it with this diagram.",
+      "reference_answer": "It is on screen now. The two ventricles are near the top of the sector and the atria are deeper, toward the bottom.",
+      "visual_support": "The full-screen schematic remains at 427 and 428. At 429 the ultrasound sector shows the ventricular and atrial cavities with the schematic in the inset.",
+      "query_prefix_check": "Only the schematic is available at the query. There is no ultrasound image of this view yet.",
+      "answer_prefix_check": "The corresponding ultrasound view has appeared, and the upper and lower cavities are visible.",
+      "shortcut_risk": "Moderate. The heading announces the window but does not show the chamber arrangement.",
+      "task_id": "s3_remaining79_8fOUM98P2Sc_03",
+      "video_id": "8fOUM98P2Sc",
+      "split": "train",
+      "language": "en",
+      "source_video": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/8fOUM98P2Sc.mp4",
+      "stage3_value": "medium",
+      "visual_evidence": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/8fOUM98P2Sc/427.jpg",
+          "checkpoint": 427.0,
+          "source_pts_seconds": 426.92,
+          "resolution": [
+            1280,
+            720
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/8fOUM98P2Sc/428.jpg",
+          "checkpoint": 428.0,
+          "source_pts_seconds": 427.92,
+          "resolution": [
+            1280,
+            720
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/8fOUM98P2Sc/429.jpg",
+          "checkpoint": 429.0,
+          "source_pts_seconds": 428.92,
+          "resolution": [
+            1280,
+            720
+          ]
+        }
+      ],
+      "asr_support_segments": [],
+      "query_decision": "WAIT",
+      "answer_decision": "ANSWER",
+      "review_status": "accepted_targeted_native_frame_self_review",
+      "student_input_visibility": "not_checked"
+    }
+  ],
+  "video_id": "8fOUM98P2Sc",
+  "review_scope": "Same-assistant review; sampled timeline, original-size key frames, and existing time-indexed ASR when available. No continuous replay or direct audio claim."
+}

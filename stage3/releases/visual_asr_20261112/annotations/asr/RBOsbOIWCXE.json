@@ -1,0 +1,3978 @@
+{
+  "video_id": "RBOsbOIWCXE",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/eval/RBOsbOIWCXE/asr.txt",
+  "segments": [
+    {
+      "start": 0.35,
+      "end": 4.79,
+      "text": "This is Marjan on the third year, Homeric Critical Care Fellow here at Montedir."
+    },
+    {
+      "start": 5.73,
+      "end": 9.98,
+      "text": "And today I'll be giving a talk on Long Altersand for the..."
+    },
+    {
+      "start": 10.1,
+      "end": 17.64,
+      "text": "noses and management of the cute respiratory failure so get started. So I have no"
+    },
+    {
+      "start": 17.64,
+      "end": 19.82,
+      "text": "Disploders this top will follow"
+    },
+    {
+      "start": 21.12,
+      "end": 24.64,
+      "text": "The recent state of the art review that we published in the"
+    },
+    {
+      "start": 24.64,
+      "end": 26.26,
+      "text": "Lung Journal this past December."
+    },
+    {
+      "start": 27.06,
+      "end": 29.56,
+      "text": "The objectives of the talk will be pre-fold."
+    },
+    {
+      "start": 30.7,
+      "end": 36.88,
+      "text": "One, to review the basic foundational sonographic sign that defines specific respiratory conditions"
+    },
+    {
+      "start": 36.88,
+      "end": 39.15,
+      "text": "that cause acute respiratory failure."
+    },
+    {
+      "start": 40.1,
+      "end": 46.9,
+      "text": "2. To praise the current literature supporting the use of languages down and the diagnosis of these conditions,"
+    },
+    {
+      "start": 47.65,
+      "end": 49.97,
+      "text": "and 3. To review the evidence of"
+    },
+    {
+      "start": 50.1,
+      "end": 54.0,
+      "text": "lung ultrasound, and they continued managing the patients with acute respiratory failure."
+    },
+    {
+      "start": 56.44,
+      "end": 59.74,
+      "text": "So to start, thorough understanding of the thoracic anatomy."
+    },
+    {
+      "start": 60.54,
+      "end": 62.9,
+      "text": "is necessary to properly apply lung lacrosse."
+    },
+    {
+      "start": 63.56,
+      "end": 65.62,
+      "text": "Here on the top left of the screen,"
+    },
+    {
+      "start": 65.64,
+      "end": 69.1,
+      "text": "we see a cross section of the anatomy of the chest wall."
+    },
+    {
+      "start": 70.1,
+      "end": 74.27,
+      "text": "If we were to place a probe between two rib spaces,"
+    },
+    {
+      "start": 74.43,
+      "end": 77.8,
+      "text": "we can identify the visceral clura of the lung"
+    },
+    {
+      "start": 77.8,
+      "end": 79.98,
+      "text": "with interfacing with the bridal..."
+    },
+    {
+      "start": 80.03,
+      "end": 84.8,
+      "text": "In the absence of any pathology, the visceral and tritle plura,"
+    },
+    {
+      "start": 85.48,
+      "end": 89.98,
+      "text": "I would be aid of a thin layer of plural fluid slide against each other with respirator."
+    },
+    {
+      "start": 90.06,
+      "end": 92.36,
+      "text": "and this finding is what we call long sliding."
+    },
+    {
+      "start": 92.7,
+      "end": 93.6,
+      "text": "If you look at the video here,"
+    },
+    {
+      "start": 93.98,
+      "end": 96.58,
+      "text": "you can clearly see that there is sliding,"
+    },
+    {
+      "start": 96.94,
+      "end": 98.92,
+      "text": "this hyperacoic line, the plural line."
+    },
+    {
+      "start": 99.47,
+      "end": 99.91,
+      "text": "I would see this."
+    },
+    {
+      "start": 100.06,
+      "end": 102.65,
+      "text": "to in pro shimmering, which we call lung slid."
+    },
+    {
+      "start": 104.25,
+      "end": 107.01,
+      "text": "Just as we can oscillate any portion of the thorax,"
+    },
+    {
+      "start": 107.11,
+      "end": 109.98,
+      "text": "we can apply lung ultrasound to any region of the..."
+    },
+    {
+      "start": 110.0,
+      "end": 115.47,
+      "text": "chest wall. There are many protocols published that are validated on how exactly to scan"
+    },
+    {
+      "start": 115.47,
+      "end": 119.76,
+      "text": "the lungs, but for this talk, in really the context of evaluation."
+    },
+    {
+      "start": 120.0,
+      "end": 125.84,
+      "text": "for undifferentiated acute respiratory failure, a rapid sequence that was initially described"
+    },
+    {
+      "start": 125.84,
+      "end": 129.97,
+      "text": "by Lyschenstein, known as the Lou Protocol, is most..."
+    },
+    {
+      "start": 130.0,
+      "end": 137.34,
+      "text": "appropriate. This is the blue protocol which stands for bedside long ultrasound emergency and"
+    },
+    {
+      "start": 137.34,
+      "end": 139.96,
+      "text": "and it involves four examinations of four."
+    },
+    {
+      "start": 140.1,
+      "end": 145.78,
+      "text": "your spaces on each hemithorite. So total of eight points, but four per hemithorite. So point"
+    },
+    {
+      "start": 146.61,
+      "end": 149.93,
+      "text": "0.1 is at the mid-clivicular line of the second inning."
+    },
+    {
+      "start": 150.03,
+      "end": 155.41,
+      "text": "cost of space, 0.2 is the anterior axillary line right along the fifth"
+    },
+    {
+      "start": 155.41,
+      "end": 159.88,
+      "text": "intercostal space, 0.3 is along the mid axillary line."
+    },
+    {
+      "start": 160.61,
+      "end": 165.58,
+      "text": "and 0.4, which Lichtenstein termed as the Blacks Point"
+    },
+    {
+      "start": 165.96,
+      "end": 169.48,
+      "text": "Black standing for posterior lateral alveolar plural syndrome"
+    },
+    {
+      "start": 169.48,
+      "end": 169.82,
+      "text": "point."
+    },
+    {
+      "start": 170.54,
+      "end": 177.62,
+      "text": "is located in the posterior diaphragm and to really get it properly you have to tilt the"
+    },
+    {
+      "start": 177.62,
+      "end": 179.52,
+      "text": "depends, use her slightly anteriorly."
+    },
+    {
+      "start": 180.0,
+      "end": 186.1,
+      "text": "a very important point and it's aptly named because this really is a part of the lung that"
+    },
+    {
+      "start": 186.1,
+      "end": 189.92,
+      "text": "I don't know what you're saying, but you want to evaluate for concerns."
+    },
+    {
+      "start": 190.03,
+      "end": 199.88,
+      "text": "solidations and what he calls alveolar plural syndrome so to validate we'll go over the paper that in which he"
+    },
+    {
+      "start": 200.03,
+      "end": 201.69,
+      "text": "published a blue protocol, but just briefly,"
+    },
+    {
+      "start": 202.55,
+      "end": 204.09,
+      "text": "in a study of 260 patients,"
+    },
+    {
+      "start": 204.77,
+      "end": 208.21,
+      "text": "with acute dysnia that presented to the intensive care unit"
+    },
+    {
+      "start": 208.78,
+      "end": 209.96,
+      "text": "evaluation of..."
+    },
+    {
+      "start": 210.0,
+      "end": 214.36,
+      "text": "of these four points per hemithorax and of course identifying interpreting specific"
+    },
+    {
+      "start": 214.36,
+      "end": 219.98,
+      "text": "sonographic findings at each point led to a correct diagnosis of acute respiratory failure."
+    },
+    {
+      "start": 220.58,
+      "end": 229.77,
+      "text": "90% of cases. So this is table one from our review where we summarize what we refer to as the foundational sonographic"
+    },
+    {
+      "start": 230.13,
+      "end": 238.19,
+      "text": "of lung ultrasound and they comprise the plural line, a lines, b lines, alveolar consolidation"
+    },
+    {
+      "start": 238.19,
+      "end": 239.67,
+      "text": "and plural effusion."
+    },
+    {
+      "start": 240.42,
+      "end": 249.91,
+      "text": "Recognizing each of these signs along with interpretation of specific features that are associated with each of them can allow intensivists to employ long."
+    },
+    {
+      "start": 250.0,
+      "end": 259.84,
+      "text": "found in the rapid diagnosis and therapeutic management of acute respiratory failure and there's now robust data to support its use which will go over so"
+    },
+    {
+      "start": 260.29,
+      "end": 263.01,
+      "text": "Let's go ahead and review each of these signs"
+    },
+    {
+      "start": 263.01,
+      "end": 265.85,
+      "text": "and the key features that are associated with each of them"
+    },
+    {
+      "start": 266.36,
+      "end": 268.72,
+      "text": "that can help us narrow a differential diagnosis"
+    },
+    {
+      "start": 268.72,
+      "end": 269.92,
+      "text": "for acute respiratory failure."
+    },
+    {
+      "start": 270.0,
+      "end": 276.4,
+      "text": "So let's start with the plural line, so here we see the same video from earlier, but here"
+    },
+    {
+      "start": 276.4,
+      "end": 279.7,
+      "text": "focusing in we see the curvilinear hypercote plural line."
+    },
+    {
+      "start": 280.13,
+      "end": 283.26,
+      "text": "that's just beneath the chest wall and between two rib spaces."
+    },
+    {
+      "start": 283.3,
+      "end": 285.26,
+      "text": "Here, I'm actually just identifying one rib space,"
+    },
+    {
+      "start": 285.34,
+      "end": 287.16,
+      "text": "but there's another one on the other side."
+    },
+    {
+      "start": 287.89,
+      "end": 289.97,
+      "text": "So we should really..."
+    },
+    {
+      "start": 290.0,
+      "end": 295.39,
+      "text": "learn to appreciate what a normal thorough line looks like because the absence of a normal"
+    },
+    {
+      "start": 295.39,
+      "end": 299.03,
+      "text": "for a line is very important, and I'm identifying pathology."
+    },
+    {
+      "start": 300.32,
+      "end": 306.32,
+      "text": "or a line is thin, it's contiguous, meaning it's one line there. It's not fragmented or broken."
+    },
+    {
+      "start": 306.93,
+      "end": 309.85,
+      "text": "There's a nice two-in-fro shimmering of the visceral."
+    },
+    {
+      "start": 310.06,
+      "end": 315.27,
+      "text": "throttle and plora sliding against each other, and here on the right we use M mode, which"
+    },
+    {
+      "start": 315.27,
+      "end": 319.97,
+      "text": "is motion mode, through the plora and over time we see this grain."
+    },
+    {
+      "start": 320.03,
+      "end": 329.53,
+      "text": "Artifact is generated from the lung beneath the plural line and this granular artifact is what we call the C-shore sign"
+    },
+    {
+      "start": 330.0,
+      "end": 339.96,
+      "text": "indicates normal lung. Now here we see the absence of lung sliding, how the absence of that granular artifact beneath the lung, and instead it on..."
+    },
+    {
+      "start": 340.13,
+      "end": 344.11,
+      "text": "the M mode screen, we see horizontal lines"
+    },
+    {
+      "start": 344.11,
+      "end": 346.35,
+      "text": "beneath the plural line what we denote"
+    },
+    {
+      "start": 346.35,
+      "end": 349.83,
+      "text": "as the barcodes in the ultrasound image."
+    },
+    {
+      "start": 350.06,
+      "end": 351.9,
+      "text": "Here we see that there's no chloroslighting."
+    },
+    {
+      "start": 351.96,
+      "end": 354.22,
+      "text": "The movement is really just contracting"
+    },
+    {
+      "start": 354.22,
+      "end": 355.62,
+      "text": "of the chest wall muscles,"
+    },
+    {
+      "start": 356.8,
+      "end": 358.48,
+      "text": "but no real movement of the leg."
+    },
+    {
+      "start": 359.51,
+      "end": 359.65,
+      "text": "So."
+    },
+    {
+      "start": 360.0,
+      "end": 362.06,
+      "text": "while highly sensitive for pneumothorax,"
+    },
+    {
+      "start": 362.2,
+      "end": 366.32,
+      "text": "the spinding can also be seen in pleuridesis,"
+    },
+    {
+      "start": 366.52,
+      "end": 369.74,
+      "text": "which is where either through chemical or mechanical."
+    },
+    {
+      "start": 370.1,
+      "end": 374.11,
+      "text": "means the visceral and parietal plura fuse together"
+    },
+    {
+      "start": 374.11,
+      "end": 375.31,
+      "text": "so there's no lung sliding."
+    },
+    {
+      "start": 376.61,
+      "end": 379.87,
+      "text": "Or we can also see this in significant hyperinflation."
+    },
+    {
+      "start": 380.03,
+      "end": 382.13,
+      "text": "where there's very reduced lung sliding,"
+    },
+    {
+      "start": 382.86,
+      "end": 384.76,
+      "text": "such as in a COPD exacerbation"
+    },
+    {
+      "start": 384.76,
+      "end": 386.3,
+      "text": "with hyperinflation air capping."
+    },
+    {
+      "start": 387.44,
+      "end": 389.98,
+      "text": "And this can be seen, particularly in-"
+    },
+    {
+      "start": 390.0,
+      "end": 394.2,
+      "text": "the anterior apex region of the chest wall where there is more reduced length lighting"
+    },
+    {
+      "start": 394.2,
+      "end": 395.91,
+      "text": "than the other parts of the lung."
+    },
+    {
+      "start": 396.63,
+      "end": 399.75,
+      "text": "So highly sensitive for pneumothorex, but not 100% specific."
+    },
+    {
+      "start": 400.67,
+      "end": 409.62,
+      "text": "What is 100% specific is what we're seeing here which is long point so here we're seeing really the contact"
+    },
+    {
+      "start": 410.1,
+      "end": 415.95,
+      "text": "between aerated lung sliding in and the air collection that defines the new"
+    },
+    {
+      "start": 415.95,
+      "end": 419.83,
+      "text": "motorex over here on the right and not a cat."
+    },
+    {
+      "start": 420.06,
+      "end": 422.62,
+      "text": "and this arrow is pointing at the exact point"
+    },
+    {
+      "start": 422.62,
+      "end": 425.13,
+      "text": "that this ultrasound is visualizing."
+    },
+    {
+      "start": 425.88,
+      "end": 429.8,
+      "text": "And on M mode, we're seeing that if we were to cut."
+    },
+    {
+      "start": 430.03,
+      "end": 438.11,
+      "text": "this point, we can see the alternation between the C-shore sign and the barcode sign really being"
+    },
+    {
+      "start": 438.11,
+      "end": 439.85,
+      "text": "100% specific for new motor."
+    },
+    {
+      "start": 440.0,
+      "end": 446.66,
+      "text": "Of course, it's not 100% sensitive, though, because we have to find this in certain situations"
+    },
+    {
+      "start": 446.66,
+      "end": 449.92,
+      "text": "of, for example, very large pneumothorax where air-pulling tests."
+    },
+    {
+      "start": 450.06,
+      "end": 457.89,
+      "text": "the entire lung. No lung point would be seen. In situations where there is reduced lung"
+    },
+    {
+      "start": 457.89,
+      "end": 459.89,
+      "text": "sliding lung pulse is something."
+    },
+    {
+      "start": 460.48,
+      "end": 469.79,
+      "text": "That can be identified and lung pulse is characterized by the synchronous beating of the plural line with the cardiac site and this"
+    },
+    {
+      "start": 470.86,
+      "end": 479.88,
+      "text": "So here on M we see this vibration, this synchronous beating of the plural with each heartbeat, and here we're seeing"
+    },
+    {
+      "start": 480.51,
+      "end": 483.35,
+      "text": "on lung ultrasound B mode."
+    },
+    {
+      "start": 484.1,
+      "end": 487.11,
+      "text": "So I actually recently employed this just a few days ago."
+    },
+    {
+      "start": 487.98,
+      "end": 489.96,
+      "text": "We had a patient in the MICU who had a son."
+    },
+    {
+      "start": 490.29,
+      "end": 496.41,
+      "text": "RDA caresses a COVID patient with severe ARDS and he happened to be paralyzed and there"
+    },
+    {
+      "start": 496.41,
+      "end": 499.84,
+      "text": "was such reduced lung sliding from the severe ARDS."
+    },
+    {
+      "start": 500.03,
+      "end": 504.82,
+      "text": "I was in fully convinced that I saw a lung sliding, so I actually dropped to the patient's"
+    },
+    {
+      "start": 504.82,
+      "end": 509.82,
+      "text": "respiratory rate down to zero and I was able to identify lung."
+    },
+    {
+      "start": 510.03,
+      "end": 514.23,
+      "text": "and the sequential beating of the plura with a heart rate"
+    },
+    {
+      "start": 514.23,
+      "end": 517.33,
+      "text": "that was vigorously beating at over 100 beats per minute"
+    },
+    {
+      "start": 517.33,
+      "end": 519.03,
+      "text": "and it ruled out pneumothorax."
+    },
+    {
+      "start": 520.0,
+      "end": 529.1,
+      "text": "be employed in certain situations. So continuing on with the plural line, in inflammatory conditions like"
+    },
+    {
+      "start": 530.0,
+      "end": 537.03,
+      "text": "such a lung disease or pneumonia, the pleuraline can be altered and altered in a way that it appears"
+    },
+    {
+      "start": 537.03,
+      "end": 539.88,
+      "text": "speaking and fragmented in appearance. So"
+    },
+    {
+      "start": 540.0,
+      "end": 544.72,
+      "text": "we see two videos really showing similar things. The image on the right is a little bit"
+    },
+    {
+      "start": 545.1,
+      "end": 549.8,
+      "text": "a worse. We see a very thick end of flora. We see this sub-plural consolidation."
+    },
+    {
+      "start": 550.0,
+      "end": 553.54,
+      "text": "here just juxtapose to this irregular plura line."
+    },
+    {
+      "start": 554.46,
+      "end": 559.86,
+      "text": "There's this inflammatory exit that thickens the plura and also reduces the lateral."
+    },
+    {
+      "start": 560.06,
+      "end": 566.11,
+      "text": "sliding of the plural line of respiration. So, you know, identifying the plural line to be abnormal,"
+    },
+    {
+      "start": 566.11,
+      "end": 569.98,
+      "text": "how it can tell us a lot about, or at least..."
+    },
+    {
+      "start": 570.0,
+      "end": 576.54,
+      "text": "It's very sensitive to disease and really the ideology for what exactly is this sub-tool"
+    },
+    {
+      "start": 576.54,
+      "end": 579.6,
+      "text": "consolidation or this irregular line is..."
+    },
+    {
+      "start": 580.26,
+      "end": 584.94,
+      "text": "dependent on a lot of different factors, but Elkisound is very sensitive for picking up that"
+    },
+    {
+      "start": 584.94,
+      "end": 589.91,
+      "text": "something is abnormal with the plural line. Moving on from the plural line, let's talk."
+    },
+    {
+      "start": 590.03,
+      "end": 593.24,
+      "text": "about a lines, which are defined as these horizontal,"
+    },
+    {
+      "start": 593.24,
+      "end": 595.32,
+      "text": "hyper-echoic lines that are equidistant"
+    },
+    {
+      "start": 595.32,
+      "end": 597.06,
+      "text": "from the plural line in each other."
+    },
+    {
+      "start": 598.75,
+      "end": 599.55,
+      "text": "Presence of a lines."
+    },
+    {
+      "start": 600.03,
+      "end": 606.7,
+      "text": "signify a high gas-to-volume ratio, so well aerated lung, but in the context of acute"
+    },
+    {
+      "start": 606.7,
+      "end": 609.89,
+      "text": "respiratory failure, just seeing airlines as a means."
+    },
+    {
+      "start": 610.0,
+      "end": 611.58,
+      "text": "that the lungs are completely normal."
+    },
+    {
+      "start": 612.47,
+      "end": 615.4,
+      "text": "It could mean that their significant airways disease"
+    },
+    {
+      "start": 615.4,
+      "end": 619.66,
+      "text": "such as asthma or COPD could represent."
+    },
+    {
+      "start": 620.16,
+      "end": 628.16,
+      "text": "pulmonary embolism vascular disease where we don't see, you know, in the absence of a pulmonary infarction."
+    },
+    {
+      "start": 628.87,
+      "end": 629.89,
+      "text": "We could still see a key risk."
+    },
+    {
+      "start": 630.0,
+      "end": 634.56,
+      "text": "very failure from a pulmonary vascular disease point of view."
+    },
+    {
+      "start": 635.26,
+      "end": 639.97,
+      "text": "We could see a lines with pneumothorax, but really..."
+    },
+    {
+      "start": 640.0,
+      "end": 645.41,
+      "text": "have to interrogate the plural line to determine that whether a new motorized is present"
+    },
+    {
+      "start": 645.41,
+      "end": 647.59,
+      "text": "and by long-slighting lung balls."
+    },
+    {
+      "start": 648.44,
+      "end": 649.98,
+      "text": "The next foundational..."
+    },
+    {
+      "start": 652.06,
+      "end": 659.38,
+      "text": "So here we see the CAT scan and a drawing of anatomy and really beneath the visceral"
+    },
+    {
+      "start": 659.38,
+      "end": 659.82,
+      "text": "Laura"
+    },
+    {
+      "start": 660.42,
+      "end": 667.08,
+      "text": "are the secondary pulmonary lobules, which are separated by these interlibrular septum,"
+    },
+    {
+      "start": 668.36,
+      "end": 669.96,
+      "text": "which are also actually connected to the..."
+    },
+    {
+      "start": 671.52,
+      "end": 675.8,
+      "text": "and you know, early on in my career, I thought that, you know,"
+    },
+    {
+      "start": 676.02,
+      "end": 679.89,
+      "text": "B lines just represented pulmonary edema, but really anything that widens"
+    },
+    {
+      "start": 680.19,
+      "end": 683.11,
+      "text": "which are a logical receptor, whether it's fluid,"
+    },
+    {
+      "start": 683.39,
+      "end": 687.37,
+      "text": "that's hydrostatic, or due to increased permeability,"
+    },
+    {
+      "start": 687.88,
+      "end": 689.82,
+      "text": "whether there's an inflammatory process."
+    },
+    {
+      "start": 690.0,
+      "end": 694.95,
+      "text": "for scarring, collagen deposition, any of these things would allow propagation of ultrasound"
+    },
+    {
+      "start": 694.95,
+      "end": 697.74,
+      "text": "waves, spreading artifacts that we call b-lines."
+    },
+    {
+      "start": 698.77,
+      "end": 699.97,
+      "text": "And here we see the..."
+    },
+    {
+      "start": 700.13,
+      "end": 705.0,
+      "text": "sound image of the B lines and they are these well-defined hyperacoate comic"
+    },
+    {
+      "start": 705.0,
+      "end": 709.78,
+      "text": "details that extend from the plural line all the way past the edge of the"
+    },
+    {
+      "start": 711.02,
+      "end": 713.2,
+      "text": "and they also erase intercepting a lines."
+    },
+    {
+      "start": 713.88,
+      "end": 715.58,
+      "text": "There is something called a z line,"
+    },
+    {
+      "start": 715.78,
+      "end": 717.96,
+      "text": "which kind of looks like a b line."
+    },
+    {
+      "start": 718.41,
+      "end": 719.97,
+      "text": "I don't have an image here, but it..."
+    },
+    {
+      "start": 720.54,
+      "end": 729.9,
+      "text": "It looks like a b-line, but it doesn't extend to the edge of the screen and it's not that these z-lines may be just lapped."
+    },
+    {
+      "start": 730.16,
+      "end": 734.46,
+      "text": "Bluewood beneath the plural line, but they don't really have any clinical"
+    },
+    {
+      "start": 735.04,
+      "end": 738.52,
+      "text": "significance that we know of. And here on the CAT scan we see, you know,"
+    },
+    {
+      "start": 740.48,
+      "end": 742.16,
+      "text": "in a prominent interstitial markings,"
+    },
+    {
+      "start": 742.56,
+      "end": 745.78,
+      "text": "several widening, which on ultrasound"
+    },
+    {
+      "start": 745.78,
+      "end": 747.56,
+      "text": "would look like these diffusively lines."
+    },
+    {
+      "start": 748.14,
+      "end": 749.82,
+      "text": "So up to two violins per field, maybe normal."
+    },
+    {
+      "start": 750.42,
+      "end": 752.94,
+      "text": "while three or more represents a B pattern,"
+    },
+    {
+      "start": 753.53,
+      "end": 755.17,
+      "text": "another term for it in the literature"
+    },
+    {
+      "start": 755.17,
+      "end": 756.69,
+      "text": "is alveolar interstitial syndrome."
+    },
+    {
+      "start": 757.68,
+      "end": 759.96,
+      "text": "So if you were to concurrently"
+    },
+    {
+      "start": 760.0,
+      "end": 765.02,
+      "text": "evaluate the plural line with the lines, it can help define the etiology."
+    },
+    {
+      "start": 765.02,
+      "end": 769.98,
+      "text": "So, you know, part of your genetic community is really a condition that..."
+    },
+    {
+      "start": 770.1,
+      "end": 773.54,
+      "text": "is a hydrostatic nature, you know, unless it's an acute"
+    },
+    {
+      "start": 773.92,
+      "end": 776.48,
+      "text": "highly inflammatory cardiogenic pulmonary dima,"
+    },
+    {
+      "start": 777.45,
+      "end": 779.85,
+      "text": "you know, you would see a normal continuum."
+    },
+    {
+      "start": 780.03,
+      "end": 782.94,
+      "text": "in US plural line with normal lung sliding"
+    },
+    {
+      "start": 783.89,
+      "end": 785.67,
+      "text": "and diffused bilateral b-lines."
+    },
+    {
+      "start": 787.72,
+      "end": 789.96,
+      "text": "As we can see here in the context of b-lines."
+    },
+    {
+      "start": 790.0,
+      "end": 795.28,
+      "text": "representing cardiogenic pulmonary duma that increasingly coalescent"
+    },
+    {
+      "start": 795.28,
+      "end": 799.69,
+      "text": "b-lines represent increasing severity of pulmonary congestion."
+    },
+    {
+      "start": 800.58,
+      "end": 809.64,
+      "text": "Contrast that with what we're seeing here, which are also beelines, but really a plura that's highly inflammatory thickened, reduced under the sub-broad."
+    },
+    {
+      "start": 811.3,
+      "end": 817.04,
+      "text": "It's clearly different from the plural line with B-Lens we just saw and this finding can be seen with ARDS"
+    },
+    {
+      "start": 817.42,
+      "end": 819.82,
+      "text": "into such a long design or infectious"
+    },
+    {
+      "start": 820.19,
+      "end": 827.46,
+      "text": "I'm moving on to the next sine and graphic sine as we've"
+    },
+    {
+      "start": 827.46,
+      "end": 828.26,
+      "text": "validated long."
+    },
+    {
+      "start": 828.87,
+      "end": 829.57,
+      "text": "So here we're seeing."
+    },
+    {
+      "start": 831.22,
+      "end": 839.66,
+      "text": "two large consolidations and really long consolidation forms when I'll feel like collapse or become fluid fill and this process"
+    },
+    {
+      "start": 840.38,
+      "end": 843.02,
+      "text": "allows for ultrasound waves to propagate through lung"
+    },
+    {
+      "start": 843.02,
+      "end": 847.42,
+      "text": "and visualize a real image of versus artifacts"
+    },
+    {
+      "start": 847.42,
+      "end": 848.84,
+      "text": "like aliens or bee lands."
+    },
+    {
+      "start": 850.26,
+      "end": 854.0,
+      "text": "features that are typical of consolidation include a tissue-like pattern that we're seeing"
+    },
+    {
+      "start": 854.0,
+      "end": 859.42,
+      "text": "here, loss of a plural line and air bronchid ribbons."
+    },
+    {
+      "start": 860.0,
+      "end": 862.62,
+      "text": "So on the left hand side we see these white speckles"
+    },
+    {
+      "start": 863.04,
+      "end": 865.92,
+      "text": "and white speckles actually represent track air"
+    },
+    {
+      "start": 865.92,
+      "end": 866.88,
+      "text": "within a consolidate."
+    },
+    {
+      "start": 868.08,
+      "end": 869.88,
+      "text": "These white speckles are the air broth."
+    },
+    {
+      "start": 870.13,
+      "end": 873.13,
+      "text": "They are linear punk decorum and hyper-ecogen."
+    },
+    {
+      "start": 874.33,
+      "end": 877.45,
+      "text": "And if you were to compare the two videos,"
+    },
+    {
+      "start": 878.28,
+      "end": 879.9,
+      "text": "we see that on the left hand."
+    },
+    {
+      "start": 880.1,
+      "end": 889.38,
+      "text": "side. The air bronchograms are static compared to those on the right which are dynamic and the"
+    },
+    {
+      "start": 890.0,
+      "end": 895.69,
+      "text": "dynamic behavior is associated with infectious pneumonia and really here is a beautiful image here"
+    },
+    {
+      "start": 895.69,
+      "end": 898.18,
+      "text": "We see that with respiration"
+    },
+    {
+      "start": 900.35,
+      "end": 904.48,
+      "text": "and independent of the lung really moving as a whole."
+    },
+    {
+      "start": 904.98,
+      "end": 906.94,
+      "text": "We're seeing that these air blocker grams"
+    },
+    {
+      "start": 906.94,
+      "end": 909.5,
+      "text": "are dynamic and moving."
+    },
+    {
+      "start": 910.29,
+      "end": 916.1,
+      "text": "independently within the airway and it's believed that these are here because the airway is sufficiently"
+    },
+    {
+      "start": 916.1,
+      "end": 919.92,
+      "text": "to allow air to move."
+    },
+    {
+      "start": 920.13,
+      "end": 922.59,
+      "text": "through this airway along the consolidated lung."
+    },
+    {
+      "start": 923.17,
+      "end": 925.47,
+      "text": "Contrast that with the static airbronk ground, which"
+    },
+    {
+      "start": 925.47,
+      "end": 928.77,
+      "text": "is believed to be due to resorptive adelectuses."
+    },
+    {
+      "start": 928.77,
+      "end": 929.98,
+      "text": "It's um..."
+    },
+    {
+      "start": 930.22,
+      "end": 939.97,
+      "text": "As a result, there is loss of lung volume due to hypo-inflation and the air bronchograms reflect residual trap bronchial gas that's within..."
+    },
+    {
+      "start": 940.0,
+      "end": 944.9,
+      "text": "consolidation. And we'll review the literature later on, you know, why exactly is dynamic"
+    },
+    {
+      "start": 945.48,
+      "end": 949.94,
+      "text": "airbrothograms associated with pneumonia and static airbrothograms."
+    },
+    {
+      "start": 950.03,
+      "end": 955.93,
+      "text": "So the last foundational sign that we'll take a look at is the plural effusion."
+    },
+    {
+      "start": 958.23,
+      "end": 959.93,
+      "text": "Simple plural effusions are complete."
+    },
+    {
+      "start": 960.0,
+      "end": 969.72,
+      "text": "Anacode spaces and importantly to define it has to be surrounded by the chest wall up here the diaphragm"
+    },
+    {
+      "start": 970.0,
+      "end": 972.64,
+      "text": "to the right and the consolidated lung on the left."
+    },
+    {
+      "start": 973.18,
+      "end": 974.9,
+      "text": "And here are the very top on the static image."
+    },
+    {
+      "start": 975.14,
+      "end": 978.85,
+      "text": "We see a anicoid space representing a simple parallel fusion"
+    },
+    {
+      "start": 978.85,
+      "end": 979.33,
+      "text": "that's."
+    },
+    {
+      "start": 980.06,
+      "end": 989.01,
+      "text": "You typically translate those simple appearing fusions can always be exudates as well contrast that with these images here"
+    },
+    {
+      "start": 990.06,
+      "end": 992.99,
+      "text": "let's plural of fusions, they can be more varied,"
+    },
+    {
+      "start": 993.17,
+      "end": 996.45,
+      "text": "they can demonstrate varying degrees of equity in the city"
+    },
+    {
+      "start": 997.15,
+      "end": 999.81,
+      "text": "here on this entity we see floating degrees of equity."
+    },
+    {
+      "start": 1000.03,
+      "end": 1009.81,
+      "text": "We can see here complex septations that can represent a permanent monoclecusion or employee."
+    },
+    {
+      "start": 1010.03,
+      "end": 1019.87,
+      "text": "And here we see also another image of the plankton sign that's floating there, and a layering of pink."
+    },
+    {
+      "start": 1020.06,
+      "end": 1023.6,
+      "text": "creates dependency, causing increased"
+    },
+    {
+      "start": 1023.6,
+      "end": 1027.25,
+      "text": "ecogenicity at the base relative to a non-dependent"
+    },
+    {
+      "start": 1027.25,
+      "end": 1027.53,
+      "text": "reason."
+    },
+    {
+      "start": 1027.83,
+      "end": 1029.74,
+      "text": "And this can be suggestive."
+    },
+    {
+      "start": 1030.35,
+      "end": 1032.83,
+      "text": "a hemotor actually call this the hematopart sign,"
+    },
+    {
+      "start": 1033.36,
+      "end": 1037.9,
+      "text": "as blood, we know, is layers in the more dependent regions."
+    },
+    {
+      "start": 1038.89,
+      "end": 1039.98,
+      "text": "So, to-"
+    },
+    {
+      "start": 1040.0,
+      "end": 1049.98,
+      "text": "Bring everything together, this was figured two from our paper, which is a proposed algorithm for the systematic diagnosis approach to cuteless and pretty failure using lungos."
+    },
+    {
+      "start": 1050.0,
+      "end": 1059.84,
+      "text": "So we suggest that we following the blue protocol that we examine points 1 and 2 to begin with which is if you remember these"
+    },
+    {
+      "start": 1060.16,
+      "end": 1069.54,
+      "text": "angel castle space and the fifth intercontal castle space on the anterior chest and just quickly go through, you know, with a lines"
+    },
+    {
+      "start": 1070.0,
+      "end": 1073.93,
+      "text": "identified airlines, the next step would be to look for long-sliding with no"
+    },
+    {
+      "start": 1073.93,
+      "end": 1078.96,
+      "text": "long-sliding, with long-point with digested motor acts, no long-sliding, couldn't"
+    },
+    {
+      "start": 1079.24,
+      "end": 1079.96,
+      "text": "Represent new month."
+    },
+    {
+      "start": 1080.0,
+      "end": 1087.88,
+      "text": "or COPD. If you were to see long-sliding, it could be COPD or as long-sliding in the context of"
+    },
+    {
+      "start": 1087.88,
+      "end": 1089.96,
+      "text": "at DBT with Suggest Pomerang Emble."
+    },
+    {
+      "start": 1091.21,
+      "end": 1095.05,
+      "text": "long-slighting with the context of a sub plural consolidation with DV to do a"
+    },
+    {
+      "start": 1095.05,
+      "end": 1099.88,
+      "text": "suggest PE with the primary infart. If we were to see B lines, if we were to see"
+    },
+    {
+      "start": 1100.1,
+      "end": 1103.32,
+      "text": "it's vocal, with subplural consolidation,"
+    },
+    {
+      "start": 1103.64,
+      "end": 1106.24,
+      "text": "it could be a pneumonia, vocal,"
+    },
+    {
+      "start": 1106.8,
+      "end": 1108.37,
+      "text": "it could also just be pneumonia"
+    },
+    {
+      "start": 1108.37,
+      "end": 1109.65,
+      "text": "without a subplural consolidation."
+    },
+    {
+      "start": 1110.06,
+      "end": 1111.1,
+      "text": "It's an early pneumonia."
+    },
+    {
+      "start": 1113.04,
+      "end": 1116.28,
+      "text": "B-lines that are diffuse could be multifocal pneumonia"
+    },
+    {
+      "start": 1116.28,
+      "end": 1118.6,
+      "text": "or with a normal plora, normal lungs lighting"
+    },
+    {
+      "start": 1118.6,
+      "end": 1119.98,
+      "text": "could be cardiogenic form rate."
+    },
+    {
+      "start": 1120.74,
+      "end": 1123.22,
+      "text": "if we see diffuse dealings with the regular thickened"
+    },
+    {
+      "start": 1123.22,
+      "end": 1125.26,
+      "text": "flora and reduced sliding to the ARDS."
+    },
+    {
+      "start": 1125.96,
+      "end": 1127.94,
+      "text": "If we were to see sub-plural consolidations"
+    },
+    {
+      "start": 1127.94,
+      "end": 1129.64,
+      "text": "taking a look at points three and four."
+    },
+    {
+      "start": 1130.26,
+      "end": 1132.28,
+      "text": "if we were to see static air-bropograms"
+    },
+    {
+      "start": 1132.28,
+      "end": 1134.56,
+      "text": "and plural of fusion, it could be the RDS or pneumonia."
+    },
+    {
+      "start": 1135.76,
+      "end": 1138.24,
+      "text": "Dynamic air-bropograms would favor pneumonia,"
+    },
+    {
+      "start": 1138.24,
+      "end": 1139.06,
+      "text": "but certainly."
+    },
+    {
+      "start": 1140.1,
+      "end": 1145.66,
+      "text": "static, everyone can also be part of pneumonia. So, you know, these long ultrasound findings are"
+    },
+    {
+      "start": 1145.66,
+      "end": 1149.0,
+      "text": "highly sensitive, but really the specificity for any diagnosis comes."
+    },
+    {
+      "start": 1150.29,
+      "end": 1157.06,
+      "text": "marrying the clinical context, but certainly following this algorithm can really help you"
+    },
+    {
+      "start": 1157.06,
+      "end": 1159.1,
+      "text": "hone in on certain diagnoses rapidly."
+    },
+    {
+      "start": 1160.0,
+      "end": 1166.98,
+      "text": "the context of acute respiratory failure. So now we'll move to appraising the literature"
+    },
+    {
+      "start": 1166.98,
+      "end": 1169.1,
+      "text": "looking at how low notes sound performs."
+    },
+    {
+      "start": 1170.58,
+      "end": 1172.94,
+      "text": "diagnosing these respiratory failure conditions."
+    },
+    {
+      "start": 1174.04,
+      "end": 1176.98,
+      "text": "So there's now robust data for lung ultrasound capability"
+    },
+    {
+      "start": 1176.98,
+      "end": 1179.85,
+      "text": "for diagnosing pneumothorax, cardiac genic."
+    },
+    {
+      "start": 1180.29,
+      "end": 1183.15,
+      "text": "Dima, ARDS, pneumonia, and pulmonary embolism,"
+    },
+    {
+      "start": 1183.23,
+      "end": 1184.75,
+      "text": "and these are the conditions that we'll go through."
+    },
+    {
+      "start": 1185.48,
+      "end": 1187.78,
+      "text": "So we'll start here with pneumothorats."
+    },
+    {
+      "start": 1188.65,
+      "end": 1189.97,
+      "text": "This was a large metonym."
+    },
+    {
+      "start": 1190.03,
+      "end": 1199.74,
+      "text": "analysis from 2011 that compared lung ultrasound against chest X-ray and it found across the board that lung ultrasound had"
+    },
+    {
+      "start": 1200.0,
+      "end": 1209.9,
+      "text": "significantly higher sensitivity at 88% compared to 52% for Chesex, right, with similar"
+    },
+    {
+      "start": 1210.0,
+      "end": 1215.98,
+      "text": "or specificity of 99% and 100% against chest x-ray."
+    },
+    {
+      "start": 1216.18,
+      "end": 1219.46,
+      "text": "So much more sensitive than chest x-ray for diagnosing."
+    },
+    {
+      "start": 1220.0,
+      "end": 1224.14,
+      "text": "pneumothorax, where it's fairly similarly specific."
+    },
+    {
+      "start": 1225.13,
+      "end": 1229.97,
+      "text": "Of course, this hinges on the fact that you're a-"
+    },
+    {
+      "start": 1230.0,
+      "end": 1236.14,
+      "text": "using the ultrasound mapping out at different areas of the lung that you"
+    },
+    {
+      "start": 1236.14,
+      "end": 1239.96,
+      "text": "suspect would have air. So, you know, the APEC."
+    },
+    {
+      "start": 1240.0,
+      "end": 1243.12,
+      "text": "or the anterior chest, a patient's lung flat."
+    },
+    {
+      "start": 1244.76,
+      "end": 1247.6,
+      "text": "This was a study that looked at 140 ER physicians"
+    },
+    {
+      "start": 1248.09,
+      "end": 1249.24,
+      "text": "who were asked to identify."
+    },
+    {
+      "start": 1250.06,
+      "end": 1258.3,
+      "text": "on B-Mode clips, which is the normal ultrasound images versus M-Mode with corresponding M-Mode images of the plural line."
+    },
+    {
+      "start": 1260.0,
+      "end": 1267.3,
+      "text": "they found was in a subgroup analysis of ER providers that had less than 250 scans"
+    },
+    {
+      "start": 1267.3,
+      "end": 1269.82,
+      "text": "versus ER providers that had greater than 250."
+    },
+    {
+      "start": 1270.03,
+      "end": 1279.08,
+      "text": "scans that using M-load increase the accuracy from 88% to 94% increasing specificities"
+    },
+    {
+      "start": 1279.08,
+      "end": 1279.7,
+      "text": "is welcome, 87."
+    },
+    {
+      "start": 1280.06,
+      "end": 1282.84,
+      "text": "and 97% using B mode alone."
+    },
+    {
+      "start": 1283.04,
+      "end": 1286.98,
+      "text": "So if you're inexperienced and you're trying to identify"
+    },
+    {
+      "start": 1286.98,
+      "end": 1289.92,
+      "text": "new Mothorex with lung ultrasound using M mode."
+    },
+    {
+      "start": 1290.0,
+      "end": 1293.24,
+      "text": "really improves your accuracy, sensitivity and specificity."
+    },
+    {
+      "start": 1293.71,
+      "end": 1295.85,
+      "text": "But if you're a fairly experienced"
+    },
+    {
+      "start": 1296.3,
+      "end": 1298.86,
+      "text": "alchristinographer, using MMO didn't really"
+    },
+    {
+      "start": 1298.86,
+      "end": 1299.9,
+      "text": "add very much."
+    },
+    {
+      "start": 1301.79,
+      "end": 1308.82,
+      "text": "You know, moving on to B-lines, so a common question when faced with diffuse B-lines and"
+    },
+    {
+      "start": 1308.82,
+      "end": 1309.98,
+      "text": "acute respiratory failure as well."
+    },
+    {
+      "start": 1310.1,
+      "end": 1315.32,
+      "text": "the GDL of the B lines is inflammatory from a condition that causes increased permeability"
+    },
+    {
+      "start": 1315.32,
+      "end": 1319.98,
+      "text": "like ARDS pneumonia or if the B lines are high"
+    },
+    {
+      "start": 1320.0,
+      "end": 1329.62,
+      "text": "dystatic in nature from cardiogenic pulmonary. This was a small study of about 58 consecutive patients who present a request for a failure in movement with deceased B lines."
+    },
+    {
+      "start": 1330.35,
+      "end": 1332.81,
+      "text": "and the authors characterized the plural line."
+    },
+    {
+      "start": 1333.59,
+      "end": 1337.36,
+      "text": "And they found that plural line abnormalities,"
+    },
+    {
+      "start": 1338.0,
+      "end": 1339.98,
+      "text": "reduction of..."
+    },
+    {
+      "start": 1340.32,
+      "end": 1344.98,
+      "text": "long-sliding, having spared areas where, you know, it's not"
+    },
+    {
+      "start": 1345.66,
+      "end": 1349.36,
+      "text": "imagously affected their areas that are that have these sub-bottle"
+    },
+    {
+      "start": 1349.36,
+      "end": 1349.98,
+      "text": "Open Solidarity."
+    },
+    {
+      "start": 1350.0,
+      "end": 1352.6,
+      "text": "where as other areas are aren't spared,"
+    },
+    {
+      "start": 1354.81,
+      "end": 1359.64,
+      "text": "all of these were highly specific."
+    },
+    {
+      "start": 1360.8,
+      "end": 1369.78,
+      "text": "acute lung injury, ARDS, per se, a cardiogenic pulmonary dima etiology. This was a study that was built"
+    },
+    {
+      "start": 1370.03,
+      "end": 1376.9,
+      "text": "the previous study of 43 subjects that were prospectively enrolled to evaluate this M-Mode"
+    },
+    {
+      "start": 1376.9,
+      "end": 1379.7,
+      "text": "could be utilized to differentiate the cause of d-lines."
+    },
+    {
+      "start": 1380.7,
+      "end": 1384.62,
+      "text": "Namely, again, cardiogenic versus non-cardiogenic pulmonary"
+    },
+    {
+      "start": 1384.62,
+      "end": 1389.81,
+      "text": "beam. So the author determined the final diagnosis of non-cardiogenic"
+    },
+    {
+      "start": 1390.38,
+      "end": 1396.78,
+      "text": "Kualmeria Dima, Cartagena Kualmeria Dima, and a normal lung by reviewing the history, physical"
+    },
+    {
+      "start": 1396.78,
+      "end": 1399.98,
+      "text": "exam and chart review, and they divided..."
+    },
+    {
+      "start": 1400.06,
+      "end": 1403.1,
+      "text": "their cohort of 43 subject into these three groups."
+    },
+    {
+      "start": 1403.94,
+      "end": 1407.64,
+      "text": "So we'll take a look at these three patterns"
+    },
+    {
+      "start": 1407.64,
+      "end": 1409.74,
+      "text": "that the authors found using M of SO."
+    },
+    {
+      "start": 1410.22,
+      "end": 1414.29,
+      "text": "the first pattern here, we see that there's a continuous"
+    },
+    {
+      "start": 1414.29,
+      "end": 1419.03,
+      "text": "plural line and a horizontal sub-plural pattern that"
+    },
+    {
+      "start": 1419.03,
+      "end": 1419.97,
+      "text": "are interrupted by..."
+    },
+    {
+      "start": 1420.0,
+      "end": 1421.89,
+      "text": "by these cardiac pulsations."
+    },
+    {
+      "start": 1422.13,
+      "end": 1425.35,
+      "text": "So again, when we see horizontal sub-tural pattern,"
+    },
+    {
+      "start": 1425.49,
+      "end": 1428.56,
+      "text": "we think the barcode sign with new motor acts,"
+    },
+    {
+      "start": 1428.64,
+      "end": 1429.54,
+      "text": "but here we're seeing."
+    },
+    {
+      "start": 1430.26,
+      "end": 1432.85,
+      "text": "with interruption of the cardiac pulsations."
+    },
+    {
+      "start": 1432.85,
+      "end": 1434.63,
+      "text": "This is kind of like a lung post binding"
+    },
+    {
+      "start": 1434.63,
+      "end": 1436.3,
+      "text": "that this is normal lung."
+    },
+    {
+      "start": 1437.69,
+      "end": 1439.63,
+      "text": "This next pattern here, we see again,"
+    },
+    {
+      "start": 1439.73,
+      "end": 1439.91,
+      "text": "a key."
+    },
+    {
+      "start": 1440.03,
+      "end": 1446.1,
+      "text": "This continues plural line with a vertical sub-plural pattern, and then these last few interviews"
+    },
+    {
+      "start": 1446.1,
+      "end": 1449.44,
+      "text": "show the thing, this different degrees of severity."
+    },
+    {
+      "start": 1450.0,
+      "end": 1458.09,
+      "text": "see a very fragmented chloraline with vertical sub-thoral pattern. Again, fragmented chloraline, vertical sub-thoral pattern."
+    },
+    {
+      "start": 1458.67,
+      "end": 1459.81,
+      "text": "And goodbye."
+    },
+    {
+      "start": 1460.22,
+      "end": 1467.55,
+      "text": "the plural and sub-plural patterns the authors found that a fragmented plural line of the"
+    },
+    {
+      "start": 1467.55,
+      "end": 1469.9,
+      "text": "vertical sub-throw pattern with"
+    },
+    {
+      "start": 1470.7,
+      "end": 1475.64,
+      "text": "highly suggestive of a non-partiality cause of the B-line's a continuous plural"
+    },
+    {
+      "start": 1475.64,
+      "end": 1479.94,
+      "text": "line with a vertical sub-plural pattern was more suggestive of a cartoon."
+    },
+    {
+      "start": 1480.13,
+      "end": 1483.88,
+      "text": "Genic Pattern for the B-Line's Cartagenical Meridima,"
+    },
+    {
+      "start": 1484.72,
+      "end": 1487.42,
+      "text": "continuous plural line with the horizontal subplural pattern"
+    },
+    {
+      "start": 1487.8,
+      "end": 1489.64,
+      "text": "was control group, which was all healthy."
+    },
+    {
+      "start": 1490.48,
+      "end": 1499.97,
+      "text": "So, you know, using M mode, interrogating the plural line, and the sub-plural pattern can kind of help guide synographers intensivists."
+    },
+    {
+      "start": 1500.45,
+      "end": 1503.96,
+      "text": "as to what is the ideology of the pulmonary edema,"
+    },
+    {
+      "start": 1504.28,
+      "end": 1506.2,
+      "text": "the b-lines, cardiogenic or non-partiogenic."
+    },
+    {
+      "start": 1508.23,
+      "end": 1509.97,
+      "text": "This was a meta-analysis that came to me."
+    },
+    {
+      "start": 1510.0,
+      "end": 1513.86,
+      "text": "the diagnostic accuracy of lung ultrasound against chest X, right?"
+    },
+    {
+      "start": 1514.68,
+      "end": 1519.73,
+      "text": "And a cohort of patients suspicious for decomposated heart shalear."
+    },
+    {
+      "start": 1520.35,
+      "end": 1529.67,
+      "text": "So it was a very large study, the meta-analysis comprised of almost 2,000 patients, adult patients who underwent."
+    },
+    {
+      "start": 1530.13,
+      "end": 1537.67,
+      "text": "long ultrasound and chest x-ray, and consistently long ultrasound, outperformed chest x-ray with"
+    },
+    {
+      "start": 1537.67,
+      "end": 1539.97,
+      "text": "a pool sensitivity of adi-acrystalline."
+    },
+    {
+      "start": 1540.0,
+      "end": 1543.92,
+      "text": "compared to 73% with similar specificity."
+    },
+    {
+      "start": 1544.92,
+      "end": 1549.5,
+      "text": "Long ultrasound also had a higher positive likelihood ratio."
+    },
+    {
+      "start": 1550.38,
+      "end": 1554.18,
+      "text": "with a very narrow confidence interval compared to chest x-ray,"
+    },
+    {
+      "start": 1554.74,
+      "end": 1558.6,
+      "text": "which had a 7.36-spotted likelihood ratio,"
+    },
+    {
+      "start": 1558.6,
+      "end": 1559.8,
+      "text": "but you see the confidence interval."
+    },
+    {
+      "start": 1560.03,
+      "end": 1562.24,
+      "text": "is quite large."
+    },
+    {
+      "start": 1562.89,
+      "end": 1565.29,
+      "text": "The final diagnosis of acute decomstated"
+    },
+    {
+      "start": 1565.29,
+      "end": 1567.21,
+      "text": "heart failure was made by a clinical expert"
+    },
+    {
+      "start": 1567.21,
+      "end": 1569.62,
+      "text": "who reviewed the clinical chart."
+    },
+    {
+      "start": 1569.8,
+      "end": 1569.98,
+      "text": "And I go,"
+    },
+    {
+      "start": 1570.1,
+      "end": 1571.4,
+      "text": "partiography and progeny."
+    },
+    {
+      "start": 1573.43,
+      "end": 1576.53,
+      "text": "This was another study, a randomized trial"
+    },
+    {
+      "start": 1576.53,
+      "end": 1579.85,
+      "text": "that compared lung ultrasound with clinical assessment."
+    },
+    {
+      "start": 1581.29,
+      "end": 1587.3,
+      "text": "versus a combination of chest, x-ray, and pro-BNT with clinical assessment."
+    },
+    {
+      "start": 1588.17,
+      "end": 1589.27,
+      "text": "Essentially, this was a study."
+    },
+    {
+      "start": 1591.02,
+      "end": 1594.28,
+      "text": "you know, getting lung ultrasound versus chest x-ray"
+    },
+    {
+      "start": 1594.28,
+      "end": 1596.74,
+      "text": "and pro BNP, which was better,"
+    },
+    {
+      "start": 1597.36,
+      "end": 1599.06,
+      "text": "both had a clinical assessment component."
+    },
+    {
+      "start": 1599.73,
+      "end": 1599.87,
+      "text": "Us."
+    },
+    {
+      "start": 1600.0,
+      "end": 1606.74,
+      "text": "So after initial evaluation of 518 patients who presented with acute dysnia and cohort"
+    },
+    {
+      "start": 1606.74,
+      "end": 1609.85,
+      "text": "of suspected heart failure."
+    },
+    {
+      "start": 1610.03,
+      "end": 1613.59,
+      "text": "oscillation, we see that lung ultrasound combined with clinical"
+    },
+    {
+      "start": 1613.59,
+      "end": 1618.17,
+      "text": "assessment outperformed, the chest x-ray plus pro B and T with clinical assessment"
+    },
+    {
+      "start": 1618.17,
+      "end": 1619.71,
+      "text": "with much higher efficacy."
+    },
+    {
+      "start": 1620.03,
+      "end": 1627.38,
+      "text": "area under the curve for the lung ultrasound assessment was 95% versus just 87% or the"
+    },
+    {
+      "start": 1627.38,
+      "end": 1628.44,
+      "text": "probing the arms."
+    },
+    {
+      "start": 1630.0,
+      "end": 1637.28,
+      "text": "Moving on, so this was a study looking at lung ultrasound for predicting pulmonary capillary"
+    },
+    {
+      "start": 1640.0,
+      "end": 1646.0,
+      "text": "involved 102 consecutive patients who were mechanically ventilated, all of whom who underwent"
+    },
+    {
+      "start": 1646.35,
+      "end": 1649.96,
+      "text": "pulmonary artery catheterization. Long ultrasound was..."
+    },
+    {
+      "start": 1650.19,
+      "end": 1653.01,
+      "text": "to evaluate for the presence of A lines and B lines."
+    },
+    {
+      "start": 1654.04,
+      "end": 1659.98,
+      "text": "So using a cutoff of 13 here and a cutoff of 18 here."
+    },
+    {
+      "start": 1660.7,
+      "end": 1667.79,
+      "text": "The authors were able to report that an A-line predominance had a greater than 90%"
+    },
+    {
+      "start": 1667.79,
+      "end": 1669.98,
+      "text": "specificity, but..."
+    },
+    {
+      "start": 1670.03,
+      "end": 1673.84,
+      "text": "at 50% sensitivity for a pulmonary artery"
+    },
+    {
+      "start": 1673.84,
+      "end": 1676.62,
+      "text": "occlusion pressure to be less than 13 and less than 18."
+    },
+    {
+      "start": 1677.59,
+      "end": 1678.17,
+      "text": "However,"
+    },
+    {
+      "start": 1680.03,
+      "end": 1685.31,
+      "text": "And they saw that a B line predominance was seen across a wide range of pulmonary artery"
+    },
+    {
+      "start": 1685.31,
+      "end": 1686.39,
+      "text": "occlusion pressure."
+    },
+    {
+      "start": 1686.71,
+      "end": 1689.97,
+      "text": "So really, if we were to see an A line predominance..."
+    },
+    {
+      "start": 1690.1,
+      "end": 1697.76,
+      "text": "pattern. It was highly specific to have a low pulmonary artery wedge pressure, but having"
+    },
+    {
+      "start": 1698.18,
+      "end": 1699.98,
+      "text": "the line predominance, you couldn't really-"
+    },
+    {
+      "start": 1700.0,
+      "end": 1708.13,
+      "text": "make a call on what the wedge pressure would be. So now let's move on to how"
+    },
+    {
+      "start": 1708.13,
+      "end": 1709.91,
+      "text": "ultrasound performs for an emoji."
+    },
+    {
+      "start": 1710.35,
+      "end": 1715.08,
+      "text": "So the Dynamic AirBronk program published in 2009 by the Lichtenstein."
+    },
+    {
+      "start": 1715.34,
+      "end": 1719.76,
+      "text": "So this was a prospective study of 68 mechanically ventilated patients."
+    },
+    {
+      "start": 1720.29,
+      "end": 1724.67,
+      "text": "all of whom who underwent bronchoscopy for evaluation"
+    },
+    {
+      "start": 1724.67,
+      "end": 1726.85,
+      "text": "of a alveolar consolidate."
+    },
+    {
+      "start": 1728.08,
+      "end": 1729.98,
+      "text": "So 52 patients or a clinic."
+    },
+    {
+      "start": 1730.0,
+      "end": 1731.3,
+      "text": "genetically diagnosed with pneumonia."
+    },
+    {
+      "start": 1732.38,
+      "end": 1735.13,
+      "text": "These patients were found to have a peat and airway"
+    },
+    {
+      "start": 1735.13,
+      "end": 1739.97,
+      "text": "with a positive bacterial culture on bronchoscopy in 16 days."
+    },
+    {
+      "start": 1740.0,
+      "end": 1745.72,
+      "text": "were diagnosed with adoelectasis, and they defined this as patients who had a block"
+    },
+    {
+      "start": 1745.72,
+      "end": 1749.78,
+      "text": "to airway with a negative bacterial culture. So the authors found that the"
+    },
+    {
+      "start": 1750.0,
+      "end": 1759.14,
+      "text": "of dynamic bronchograms were seen at 62% of cases of pneumonia versus just 6% of cases of"
+    },
+    {
+      "start": 1759.5,
+      "end": 1759.98,
+      "text": "bone out of the-"
+    },
+    {
+      "start": 1760.0,
+      "end": 1769.97,
+      "text": "I'll compare that with static air bronchograms, which were found in 38% of cases of pneumonia versus 94% of cases of the virus."
+    },
+    {
+      "start": 1770.29,
+      "end": 1779.9,
+      "text": "So this led to a conclusion that dynamic air bronchograms had a specificity of 94% and essentially"
+    },
+    {
+      "start": 1780.0,
+      "end": 1787.34,
+      "text": "of 61% for pneumonia with a positive predictive value of 97% and the negative predictive value of 43%."
+    },
+    {
+      "start": 1787.98,
+      "end": 1789.82,
+      "text": "So take on point here from this."
+    },
+    {
+      "start": 1790.93,
+      "end": 1797.51,
+      "text": "was dynamic air-broadground highly specific for pneumonia, but you know you can still have pneumonia with static air-broadgrounds."
+    },
+    {
+      "start": 1798.81,
+      "end": 1799.97,
+      "text": "This was..."
+    },
+    {
+      "start": 1800.0,
+      "end": 1806.81,
+      "text": "As a systematic review, looking at a number of studies with different designs, looking at"
+    },
+    {
+      "start": 1806.81,
+      "end": 1809.83,
+      "text": "the accuracy of long ultrasound for the diagnosis of ventilation."
+    },
+    {
+      "start": 1810.0,
+      "end": 1816.12,
+      "text": "associated in the moment. So this first study is Agley. It was a study involving"
+    },
+    {
+      "start": 1817.12,
+      "end": 1819.76,
+      "text": "221 ventilated patients with clinical evidence."
+    },
+    {
+      "start": 1820.1,
+      "end": 1821.46,
+      "text": "pneumonia, clinical evidence being"
+    },
+    {
+      "start": 1821.81,
+      "end": 1824.03,
+      "text": "infiltrated on chest x-ray clinical signs"
+    },
+    {
+      "start": 1824.03,
+      "end": 1826.61,
+      "text": "like fever, secretions, leukocycosis,"
+    },
+    {
+      "start": 1826.91,
+      "end": 1829.23,
+      "text": "and a positive E8 quant, which is..."
+    },
+    {
+      "start": 1830.83,
+      "end": 1837.8,
+      "text": "essentially a tracheal aspirate that was positive in these cases where there were clinical"
+    },
+    {
+      "start": 1837.8,
+      "end": 1839.94,
+      "text": "evidence of pneumonia they found."
+    },
+    {
+      "start": 1840.0,
+      "end": 1845.48,
+      "text": "that the presence of consolidation by lung ultrasound had a sensitivity and"
+    },
+    {
+      "start": 1845.48,
+      "end": 1849.78,
+      "text": "specificity of 59% and 84% for pneumonia."
+    },
+    {
+      "start": 1850.19,
+      "end": 1854.91,
+      "text": "to control, who had none of these heaters known for no clinical signs, no"
+    },
+    {
+      "start": 1854.91,
+      "end": 1859.71,
+      "text": "tracheal aspirate. The second study, Burlett et al."
+    },
+    {
+      "start": 1860.83,
+      "end": 1866.84,
+      "text": "This was a purely sonographic study, and in a cohort of 57 patients who were ventilated,"
+    },
+    {
+      "start": 1867.22,
+      "end": 1869.02,
+      "text": "They found that"
+    },
+    {
+      "start": 1870.0,
+      "end": 1879.97,
+      "text": "the presence of consolidations, namely dynamic airbrop grams with fluid airbrop grams, held a sensitivity of 90%."
+    },
+    {
+      "start": 1880.0,
+      "end": 1884.3,
+      "text": "22% in the specificity of 65% for diagnosing that."
+    },
+    {
+      "start": 1886.88,
+      "end": 1889.86,
+      "text": "This was another study recently published in place."
+    },
+    {
+      "start": 1890.0,
+      "end": 1899.8,
+      "text": "This was a multi-center prospective study of 99 patients that suspected ventilators associated pneumonia where lung ultrasound was used in combination."
+    },
+    {
+      "start": 1900.0,
+      "end": 1904.47,
+      "text": "with microbiologic culture data to diagnose them."
+    },
+    {
+      "start": 1904.94,
+      "end": 1909.54,
+      "text": "So there are a lot of graphs and tables on this paper,"
+    },
+    {
+      "start": 1909.68,
+      "end": 1909.98,
+      "text": "but I..."
+    },
+    {
+      "start": 1910.13,
+      "end": 1916.82,
+      "text": "highlighted the most important findings and that was for the diagnosis of ventilators"
+    },
+    {
+      "start": 1916.82,
+      "end": 1918.62,
+      "text": "So sitting in ammonia, the author's found that"
+    },
+    {
+      "start": 1920.74,
+      "end": 1929.84,
+      "text": "Two air bronchograms, two or more air bronchograms produced a specificity of 97%, and a positive predictive value of 94%."
+    },
+    {
+      "start": 1930.22,
+      "end": 1933.52,
+      "text": "and a positive likelihood ratio of 7.1 or VAT,"
+    },
+    {
+      "start": 1934.11,
+      "end": 1936.95,
+      "text": "but we see that the sensitivity is only 22%."
+    },
+    {
+      "start": 1938.61,
+      "end": 1939.63,
+      "text": "Subtural consolidation."
+    },
+    {
+      "start": 1940.81,
+      "end": 1944.31,
+      "text": "greater than or equal to 1, and then here we have here a branch of friends greater than equal to 1."
+    },
+    {
+      "start": 1945.29,
+      "end": 1949.83,
+      "text": "Also had pretty high specificity, positive predictive value, but again low sensitivity."
+    },
+    {
+      "start": 1950.8,
+      "end": 1958.92,
+      "text": "So what they did was they used a combination of findings ultrasound plus clinical"
+    },
+    {
+      "start": 1960.38,
+      "end": 1966.03,
+      "text": "evidence. So if we were to look here, this V plus and E a gram, these are a bunch of"
+    },
+    {
+      "start": 1966.03,
+      "end": 1969.85,
+      "text": "familiar trends to us, but D plus is really a VAP long look."
+    },
+    {
+      "start": 1970.06,
+      "end": 1974.72,
+      "text": "on score and EA Gram is just endotracheal aspirate Gramsend."
+    },
+    {
+      "start": 1974.94,
+      "end": 1979.72,
+      "text": "So if we were to see evidence of pneumonia on long-"
+    },
+    {
+      "start": 1980.06,
+      "end": 1989.42,
+      "text": "with aggrancing, you see that that combination led to the highest area under the curve for diagnosing that."
+    },
+    {
+      "start": 1990.1,
+      "end": 1999.76,
+      "text": "Contrast that with just the blue over here just lung ultrasound both of which outperformed the CPIS which is the"
+    },
+    {
+      "start": 2000.42,
+      "end": 2005.81,
+      "text": "pulmonary infection score, which is a combination of things we look at, vitals,"
+    },
+    {
+      "start": 2005.91,
+      "end": 2009.9,
+      "text": "leucocyte doses, things like that, lungo."
+    },
+    {
+      "start": 2010.0,
+      "end": 2016.16,
+      "text": "sound outperformed the C-P-I-S either alone or C-P-I-S with a positive"
+    },
+    {
+      "start": 2016.16,
+      "end": 2019.68,
+      "text": "grandson, which I thought was pretty remarkable."
+    },
+    {
+      "start": 2020.42,
+      "end": 2029.56,
+      "text": "This was a prospective study of 124 patients with suspected that where lower respiratory tract cultures were obtained."
+    },
+    {
+      "start": 2030.16,
+      "end": 2036.59,
+      "text": "with pro-calcitonin. So, the authors found that a positive lung ultrasound, which they"
+    },
+    {
+      "start": 2036.59,
+      "end": 2039.98,
+      "text": "defined as presence of subplural consolidations lower..."
+    },
+    {
+      "start": 2040.1,
+      "end": 2045.29,
+      "text": "consolidations with dynamic or static air bronchograms plus a forecasted"
+    },
+    {
+      "start": 2045.29,
+      "end": 2048.85,
+      "text": "known in of greater than two points greater than point to five."
+    },
+    {
+      "start": 2050.1,
+      "end": 2056.51,
+      "text": "the sensitivity and specificity of 81% in 86% from that. And we see that, you know,"
+    },
+    {
+      "start": 2056.51,
+      "end": 2059.96,
+      "text": "along the descent plus pro-cal outperformed out."
+    },
+    {
+      "start": 2060.06,
+      "end": 2063.1,
+      "text": "white blood cell count, alone, trochanel alone, CRP alone,"
+    },
+    {
+      "start": 2063.3,
+      "end": 2069.13,
+      "text": "CPAN store alone, moving on to PE."
+    },
+    {
+      "start": 2070.03,
+      "end": 2077.59,
+      "text": "So this was a prospective study of 357 patients with suspected PE, suspected PE being defined"
+    },
+    {
+      "start": 2077.59,
+      "end": 2079.53,
+      "text": "as a well score of greater than 4."
+    },
+    {
+      "start": 2080.06,
+      "end": 2081.3,
+      "text": "or a positive de-dimer."
+    },
+    {
+      "start": 2082.11,
+      "end": 2085.29,
+      "text": "These patients underwent a multi-organ health"
+    },
+    {
+      "start": 2085.29,
+      "end": 2089.61,
+      "text": "personography scan, which was considered diagnostic."
+    },
+    {
+      "start": 2090.06,
+      "end": 2098.05,
+      "text": "if they identified sub-plural consolidations like this as a pulmonary infarct RV"
+    },
+    {
+      "start": 2098.05,
+      "end": 2099.23,
+      "text": "the billitation on echo."
+    },
+    {
+      "start": 2100.0,
+      "end": 2102.96,
+      "text": "or DVT on compression leg ultrasonography."
+    },
+    {
+      "start": 2103.67,
+      "end": 2106.87,
+      "text": "So this is a multi-organ ultrasound looking at legs,"
+    },
+    {
+      "start": 2107.05,
+      "end": 2107.79,
+      "text": "lungs, and the heart."
+    },
+    {
+      "start": 2108.98,
+      "end": 2109.96,
+      "text": "All of these patients under one..."
+    },
+    {
+      "start": 2111.23,
+      "end": 2118.06,
+      "text": "so we see that in patients with suspected PE evidence of"
+    },
+    {
+      "start": 2118.06,
+      "end": 2119.94,
+      "text": "chomere infarction which they found at 30"
+    },
+    {
+      "start": 2120.19,
+      "end": 2128.46,
+      "text": "roughly at the basis had a sensitivity of 61% and a specificity of 96% for P."
+    },
+    {
+      "start": 2130.0,
+      "end": 2135.98,
+      "text": "Similar specificities were found with echo and compression ultrasound, but really the beauty"
+    },
+    {
+      "start": 2135.98,
+      "end": 2139.98,
+      "text": "of this comes together if you use multi-organ ultrasound because..."
+    },
+    {
+      "start": 2140.45,
+      "end": 2144.87,
+      "text": "the sensitivity shoots up from 60% all the up to 90%."
+    },
+    {
+      "start": 2145.48,
+      "end": 2149.79,
+      "text": "So combination of heart, lung, and leg."
+    },
+    {
+      "start": 2150.48,
+      "end": 2154.02,
+      "text": "with lung ultrasound, echo, and compression autosynography"
+    },
+    {
+      "start": 2154.02,
+      "end": 2156.0,
+      "text": "shot the sensitivity of the up to 90%"
+    },
+    {
+      "start": 2156.0,
+      "end": 2159.28,
+      "text": "with a specificity of 96% for form reambulism."
+    },
+    {
+      "start": 2160.16,
+      "end": 2167.66,
+      "text": "So, you know, the CTPA was really done as a confirmatory study, but Long Ultra Sound Diagnose PE pretty well as well."
+    },
+    {
+      "start": 2170.0,
+      "end": 2176.08,
+      "text": "So this was the study that generated the blue protocol I referenced earlier, so published"
+    },
+    {
+      "start": 2176.37,
+      "end": 2179.97,
+      "text": "which is in 2008 and two-hundreds."
+    },
+    {
+      "start": 2180.0,
+      "end": 2185.68,
+      "text": "60 consecutive patients who presented with dyspnea to the ICU, 21 patients were diagnosed"
+    },
+    {
+      "start": 2185.68,
+      "end": 2189.91,
+      "text": "with PE by CTPA, and the authors found that..."
+    },
+    {
+      "start": 2190.03,
+      "end": 2195.79,
+      "text": "with lung sliding, with an apropile, with a venous analysis of prombo's vein,"
+    },
+    {
+      "start": 2196.49,
+      "end": 2199.83,
+      "text": "that TE was diagnosed with the sensitivity of 81%."
+    },
+    {
+      "start": 2200.0,
+      "end": 2204.26,
+      "text": "and a specificity of 99% in this cohort of 260 patients"
+    },
+    {
+      "start": 2204.26,
+      "end": 2207.05,
+      "text": "who presented with dyspnea to the ICU."
+    },
+    {
+      "start": 2207.84,
+      "end": 2209.12,
+      "text": "If you wanna look at the paper."
+    },
+    {
+      "start": 2210.03,
+      "end": 2212.23,
+      "text": "for the other diagnosis, he has the data there"
+    },
+    {
+      "start": 2212.99,
+      "end": 2215.83,
+      "text": "for pneumothorax pneumonia, pulmonary demon, et cetera."
+    },
+    {
+      "start": 2217.65,
+      "end": 2219.53,
+      "text": "So this was table two from our review,"
+    },
+    {
+      "start": 2220.13,
+      "end": 2226.57,
+      "text": "summarize the pool's sensitivities and specificities for lung ultrasound compared to chest radiography"
+    },
+    {
+      "start": 2226.92,
+      "end": 2229.96,
+      "text": "for the acute causes of respiratory failure that we do."
+    },
+    {
+      "start": 2230.03,
+      "end": 2235.6,
+      "text": "reviewed. We see that lung ocassion consistently outperforms chest radiography in a number of"
+    },
+    {
+      "start": 2235.6,
+      "end": 2236.94,
+      "text": "analyses for each condition."
+    },
+    {
+      "start": 2238.88,
+      "end": 2239.76,
+      "text": "So"
+    },
+    {
+      "start": 2240.0,
+      "end": 2245.76,
+      "text": "Now we'll move on to the last section of the top, which is long ultrasound to facilitate"
+    },
+    {
+      "start": 2245.76,
+      "end": 2249.12,
+      "text": "clinical decision making in patients with acute respiratory failure."
+    },
+    {
+      "start": 2250.29,
+      "end": 2257.07,
+      "text": "So, this was a review on Lung El Prism to infer real time, real time, endotrache or two places."
+    },
+    {
+      "start": 2258.2,
+      "end": 2259.96,
+      "text": "So, I'll start the video here."
+    },
+    {
+      "start": 2260.16,
+      "end": 2263.83,
+      "text": "And, you know, here we see the trachea of vocal chords,"
+    },
+    {
+      "start": 2264.48,
+      "end": 2266.66,
+      "text": "and here we see, you know, a positive, real quick,"
+    },
+    {
+      "start": 2266.68,
+      "end": 2269.88,
+      "text": "just to orient us on the ultrasound image we see that, right?"
+    },
+    {
+      "start": 2270.0,
+      "end": 2277.42,
+      "text": "here in the center. This is the Traitia. And if you focus here as I play the video, this"
+    },
+    {
+      "start": 2277.42,
+      "end": 2279.97,
+      "text": "is where the Asophagus finds..."
+    },
+    {
+      "start": 2280.0,
+      "end": 2283.02,
+      "text": "off in a soccer geolintubation. So let me go ahead and play it."
+    },
+    {
+      "start": 2283.46,
+      "end": 2289.62,
+      "text": "They're here, we see the tracheal ring, and then here, if you focus in, the person is doing"
+    },
+    {
+      "start": 2289.62,
+      "end": 2289.96,
+      "text": "I'm sorry, I'm sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry, sorry"
+    },
+    {
+      "start": 2290.03,
+      "end": 2295.2,
+      "text": "off of geolintubation. And right as the esophagus is being intubated, we see that a second"
+    },
+    {
+      "start": 2295.2,
+      "end": 2299.49,
+      "text": "and air mucosal interface forms on the image right here."
+    },
+    {
+      "start": 2300.19,
+      "end": 2308.61,
+      "text": "Now the person pulls the ET2 back and puts it right through the vocal cords in here we see you know we don't see a second"
+    },
+    {
+      "start": 2310.19,
+      "end": 2318.29,
+      "text": "aerobene coastal interface, we see a slight change in the trachea, confirming that the"
+    },
+    {
+      "start": 2318.29,
+      "end": 2319.87,
+      "text": "the intubation was successful."
+    },
+    {
+      "start": 2320.29,
+      "end": 2329.98,
+      "text": "So with ultrasound, a metanalysis was performed on almost 7-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-"
+    },
+    {
+      "start": 2330.1,
+      "end": 2336.66,
+      "text": "15,000 patients and 550 of those, 33% were identified as a"
+    },
+    {
+      "start": 2336.66,
+      "end": 2339.34,
+      "text": "sopidial inhibitions and looking at the data."
+    },
+    {
+      "start": 2340.32,
+      "end": 2342.74,
+      "text": "the authors are able to find that ultrasound identified"
+    },
+    {
+      "start": 2342.74,
+      "end": 2345.04,
+      "text": "the sobrietyled intubations were the pool's sensitivity"
+    },
+    {
+      "start": 2345.04,
+      "end": 2348.96,
+      "text": "of 93%, and a specificity of 97%."
+    },
+    {
+      "start": 2349.47,
+      "end": 2349.97,
+      "text": "So..."
+    },
+    {
+      "start": 2350.0,
+      "end": 2354.79,
+      "text": "I don't think ultrasound will replace, you know,"
+    },
+    {
+      "start": 2355.05,
+      "end": 2359.72,
+      "text": "capnography, but it can certainly be used as an adjunct if you have it."
+    },
+    {
+      "start": 2362.53,
+      "end": 2369.12,
+      "text": "So moving on from ultrasound music, ultrasound use, and intubations."
+    },
+    {
+      "start": 2370.45,
+      "end": 2375.82,
+      "text": "The ability of lung ultrasound to rapidly evaluate for the development or resolution of"
+    },
+    {
+      "start": 2375.82,
+      "end": 2379.44,
+      "text": "B lines as a surrogate for extravascular lung water"
+    },
+    {
+      "start": 2380.1,
+      "end": 2381.88,
+      "text": "is something that people have looked at."
+    },
+    {
+      "start": 2382.86,
+      "end": 2386.15,
+      "text": "And this is a study looking at its ability"
+    },
+    {
+      "start": 2386.83,
+      "end": 2389.87,
+      "text": "to identify B lines to guide fluid administration during."
+    },
+    {
+      "start": 2390.45,
+      "end": 2396.81,
+      "text": "initial resuscitation period in sepsis. So in a prospective observational study of"
+    },
+    {
+      "start": 2396.81,
+      "end": 2399.17,
+      "text": "32 patients with septic shock in ARDS."
+    },
+    {
+      "start": 2400.03,
+      "end": 2409.52,
+      "text": "This study used a lung ultrasound score, which is a different protocol, which a score is degree of plumbric congestion using lung ultrasound."
+    },
+    {
+      "start": 2410.06,
+      "end": 2412.06,
+      "text": "across 16 points of the thorax."
+    },
+    {
+      "start": 2412.53,
+      "end": 2418.66,
+      "text": "And we see here that after a liter of fluid was bolus,"
+    },
+    {
+      "start": 2419.26,
+      "end": 2419.98,
+      "text": "the lung of the thorax."
+    },
+    {
+      "start": 2420.1,
+      "end": 2428.22,
+      "text": "ultrasound for rows slightly and then 40 minutes later after fluid loading it"
+    },
+    {
+      "start": 2428.48,
+      "end": 2429.38,
+      "text": "continue to rise."
+    },
+    {
+      "start": 2430.03,
+      "end": 2436.9,
+      "text": "compared that with the PF ratio during fluid bolus and we see that after the fluid was bolus,"
+    },
+    {
+      "start": 2437.06,
+      "end": 2439.9,
+      "text": "the PF ratio went up, but then it went back down. So"
+    },
+    {
+      "start": 2440.29,
+      "end": 2449.97,
+      "text": "Really what this is showing that a long ultrasound may be more sensitive for detecting pulmonary congestion than non-invasive monitoring for hypoxia."
+    },
+    {
+      "start": 2450.06,
+      "end": 2457.84,
+      "text": "steam, after food bulls saying the long ultrasound score suggested that there was congestion that"
+    },
+    {
+      "start": 2458.16,
+      "end": 2459.98,
+      "text": "persisted, despite the T.F."
+    },
+    {
+      "start": 2460.0,
+      "end": 2467.92,
+      "text": "ratio that went back down after fluid loading. Here I'm just showing the the"
+    },
+    {
+      "start": 2467.92,
+      "end": 2469.36,
+      "text": "the titles of two separate papers."
+    },
+    {
+      "start": 2470.0,
+      "end": 2474.83,
+      "text": "this first paper, ultrasound assessment for extravascular lung water and patients undergoing"
+    },
+    {
+      "start": 2474.83,
+      "end": 2479.9,
+      "text": "dialysis, a time-forceful resolution. So this paper demonstrates that"
+    },
+    {
+      "start": 2480.1,
+      "end": 2486.05,
+      "text": "over time, the degree of B lines decreased during dialysis,"
+    },
+    {
+      "start": 2486.27,
+      "end": 2488.73,
+      "text": "and really just demonstrating that ultrasound can be used"
+    },
+    {
+      "start": 2489.14,
+      "end": 2489.96,
+      "text": "to..."
+    },
+    {
+      "start": 2490.03,
+      "end": 2492.67,
+      "text": "assess real-time changes in extravascular lung water."
+    },
+    {
+      "start": 2493.2,
+      "end": 2496.84,
+      "text": "And here they can monitor dialysis,"
+    },
+    {
+      "start": 2497.97,
+      "end": 2499.63,
+      "text": "clearing the pulmonary edema."
+    },
+    {
+      "start": 2500.03,
+      "end": 2507.92,
+      "text": "volume overload in dialysis patients. This title down here is a protocol that"
+    },
+    {
+      "start": 2507.92,
+      "end": 2509.26,
+      "text": "which has been developed."
+    },
+    {
+      "start": 2510.06,
+      "end": 2512.4,
+      "text": "which is the Paul's Protocol of San Profluid Administration"
+    },
+    {
+      "start": 2512.4,
+      "end": 2514.08,
+      "text": "limited by Long Ultra Sound,"
+    },
+    {
+      "start": 2514.63,
+      "end": 2518.21,
+      "text": "which essentially just suggests that the interval development"
+    },
+    {
+      "start": 2518.21,
+      "end": 2519.97,
+      "text": "of B lines during fluid recessions."
+    },
+    {
+      "start": 2520.03,
+      "end": 2524.92,
+      "text": "the taping should caution clinicians to withhold further fluid bolusine during shock."
+    },
+    {
+      "start": 2525.64,
+      "end": 2529.97,
+      "text": "We all have our grievances of the 36th per KG, but for"
+    },
+    {
+      "start": 2530.0,
+      "end": 2534.36,
+      "text": "shot, but you know, if you were to incorporate lung ultrasound during that period, it would"
+    },
+    {
+      "start": 2534.36,
+      "end": 2538.72,
+      "text": "really caution you on when exactly if you're getting to the danger point of resuscitation"
+    },
+    {
+      "start": 2538.72,
+      "end": 2539.84,
+      "text": "with volume."
+    },
+    {
+      "start": 2541.32,
+      "end": 2546.36,
+      "text": "Assessment of B-lines have also been looked at as a role for weeding off"
+    },
+    {
+      "start": 2546.36,
+      "end": 2549.9,
+      "text": "mechanical ventilation. So this was a prospective study."
+    },
+    {
+      "start": 2550.03,
+      "end": 2551.73,
+      "text": "looking at the development of the interior,"
+    },
+    {
+      "start": 2552.35,
+      "end": 2557.44,
+      "text": "B-lines during 62 SBTs, each of which were lasting one hour."
+    },
+    {
+      "start": 2558.37,
+      "end": 2559.81,
+      "text": "So, we see in red,"
+    },
+    {
+      "start": 2560.13,
+      "end": 2567.64,
+      "text": "the SPT failures and blue is SPT success. A failure they defined as SPT was interrupted by clinical"
+    },
+    {
+      "start": 2567.64,
+      "end": 2569.97,
+      "text": "intolerance or need for re-intubation."
+    },
+    {
+      "start": 2570.0,
+      "end": 2577.65,
+      "text": "after excavation. And we see that SET failed in 33 cases and weening induced"
+    },
+    {
+      "start": 2577.65,
+      "end": 2579.35,
+      "text": "comradima.welight.io"
+    },
+    {
+      "start": 2580.42,
+      "end": 2583.96,
+      "text": "occurred in 17 patients all of whom failed SBT."
+    },
+    {
+      "start": 2584.74,
+      "end": 2586.78,
+      "text": "The authors found that the development"
+    },
+    {
+      "start": 2586.78,
+      "end": 2589.68,
+      "text": "of six or more B-lines during the SBT."
+    },
+    {
+      "start": 2590.19,
+      "end": 2598.57,
+      "text": "diagnosed weeding a loose corn radium with a pretty high sensitivity and specificity in the 16 cases that failed"
+    },
+    {
+      "start": 2600.48,
+      "end": 2603.0,
+      "text": "meaning in these poem radium, I did not develop."
+    },
+    {
+      "start": 2604.08,
+      "end": 2606.5,
+      "text": "The reason for failure was attributed"
+    },
+    {
+      "start": 2606.5,
+      "end": 2609.58,
+      "text": "to either neurologic deficits or..."
+    },
+    {
+      "start": 2611.47,
+      "end": 2619.98,
+      "text": "critical illness myopathy. So these are just some other trials that looked at..."
+    },
+    {
+      "start": 2620.06,
+      "end": 2623.44,
+      "text": "prospective studies that found that interval development of pulmonary"
+    },
+    {
+      "start": 2623.44,
+      "end": 2629.71,
+      "text": "congestion by long-otent hearing SBTs failed to predict or predicted"
+    },
+    {
+      "start": 2630.58,
+      "end": 2633.28,
+      "text": "failed SBTs or post-exhibitions to distress."
+    },
+    {
+      "start": 2633.74,
+      "end": 2635.37,
+      "text": "So, without going through all the papers,"
+    },
+    {
+      "start": 2635.41,
+      "end": 2637.54,
+      "text": "just to show that there's other literature"
+    },
+    {
+      "start": 2637.54,
+      "end": 2639.02,
+      "text": "that I'll show these findings."
+    },
+    {
+      "start": 2640.0,
+      "end": 2646.89,
+      "text": "So let's move on now to using long ultrasound or recruitment of alveolar consolidation."
+    },
+    {
+      "start": 2647.71,
+      "end": 2649.97,
+      "text": "So what we're seeing here are really neat."
+    },
+    {
+      "start": 2650.0,
+      "end": 2656.22,
+      "text": "video of the essential, essentially the sonographic sign of interpomeration."
+    },
+    {
+      "start": 2657.11,
+      "end": 2659.89,
+      "text": "So, consolidated love may have variable impact."
+    },
+    {
+      "start": 2660.03,
+      "end": 2665.62,
+      "text": "on oxygenation and this variable impact is dependent on the degree of polymerase shunt"
+    },
+    {
+      "start": 2665.62,
+      "end": 2669.97,
+      "text": "and whether hypoxic vasoconstriction is effectively, you know..."
+    },
+    {
+      "start": 2670.22,
+      "end": 2672.48,
+      "text": "We've all seen patients with large consolidations,"
+    },
+    {
+      "start": 2672.48,
+      "end": 2674.16,
+      "text": "but they're just breathing on new mayor"
+    },
+    {
+      "start": 2674.48,
+      "end": 2675.4,
+      "text": "without any distress."
+    },
+    {
+      "start": 2675.4,
+      "end": 2676.9,
+      "text": "And then we're seeing another patient"
+    },
+    {
+      "start": 2676.9,
+      "end": 2679.97,
+      "text": "with that same consolidation in acute hypnosis."
+    },
+    {
+      "start": 2680.0,
+      "end": 2685.09,
+      "text": "ingrusted for a failure. And why is that? Well, it may be that the degree of"
+    },
+    {
+      "start": 2685.09,
+      "end": 2688.4,
+      "text": "shunting that's occurring between the patients."
+    },
+    {
+      "start": 2690.13,
+      "end": 2691.97,
+      "text": "is explaining this clinical difference."
+    },
+    {
+      "start": 2692.27,
+      "end": 2695.3,
+      "text": "And using long ultrasound, we may be able to identify"
+    },
+    {
+      "start": 2695.3,
+      "end": 2697.87,
+      "text": "with color Doppler, is pulmonary vessel."
+    },
+    {
+      "start": 2698.09,
+      "end": 2699.97,
+      "text": "For really here, we're seeing complete..."
+    },
+    {
+      "start": 2700.03,
+      "end": 2704.22,
+      "text": "fusion with no ventilation. And of course we can open the lawn with"
+    },
+    {
+      "start": 2704.22,
+      "end": 2708.36,
+      "text": "froncoscopy, recruitment maneuvers, heat increases, or we can redirect"
+    },
+    {
+      "start": 2708.36,
+      "end": 2709.76,
+      "text": "right perfusion with positioning."
+    },
+    {
+      "start": 2710.0,
+      "end": 2716.9,
+      "text": "the outside decreasing key, all to help improve and restore the VQ mismatch that's occurring."
+    },
+    {
+      "start": 2719.36,
+      "end": 2719.96,
+      "text": "So here..."
+    },
+    {
+      "start": 2720.0,
+      "end": 2729.87,
+      "text": "This was just a short case which published looking at real-time title recruitment of Lung Ultra Sam."
+    },
+    {
+      "start": 2730.45,
+      "end": 2734.63,
+      "text": "So we know that one form of ventilator and new slung injury is at electric trauma and"
+    },
+    {
+      "start": 2735.08,
+      "end": 2739.96,
+      "text": "here we see evidence of LDL, like this recruiting with tile volume delivery and then..."
+    },
+    {
+      "start": 2740.42,
+      "end": 2748.07,
+      "text": "be recruiting at the end. We see right here recruitment with restoration of the consolidation"
+    },
+    {
+      "start": 2748.07,
+      "end": 2749.91,
+      "text": "and here the consolidation appears again."
+    },
+    {
+      "start": 2750.58,
+      "end": 2753.42,
+      "text": "and here, following a key titration adjustment,"
+    },
+    {
+      "start": 2753.42,
+      "end": 2755.52,
+      "text": "we see that there's normal consolidation."
+    },
+    {
+      "start": 2756.45,
+      "end": 2759.23,
+      "text": "And at the bottom here is a video of LGLI opening"
+    },
+    {
+      "start": 2759.23,
+      "end": 2759.77,
+      "text": "and closing."
+    },
+    {
+      "start": 2760.0,
+      "end": 2769.92,
+      "text": "quickly add elected trauma in real life. So this is a press"
+    },
+    {
+      "start": 2770.06,
+      "end": 2773.58,
+      "text": "perspective, observational study of 10 executive patients who are"
+    },
+    {
+      "start": 2773.58,
+      "end": 2774.68,
+      "text": "interbated with air DS."
+    },
+    {
+      "start": 2775.47,
+      "end": 2779.11,
+      "text": "We see that in these graphs that people was increased."
+    },
+    {
+      "start": 2780.19,
+      "end": 2785.59,
+      "text": "non-arrated long volume decrease the pf ratio increased and here are the"
+    },
+    {
+      "start": 2786.33,
+      "end": 2789.71,
+      "text": "sonographic images of the consolidation area decreasing."
+    },
+    {
+      "start": 2791.19,
+      "end": 2792.57,
+      "text": "with key type reasons."
+    },
+    {
+      "start": 2793.09,
+      "end": 2795.73,
+      "text": "Of course, we know that simply increasing key"
+    },
+    {
+      "start": 2795.73,
+      "end": 2797.59,
+      "text": "does not always mean improvements,"
+    },
+    {
+      "start": 2798.27,
+      "end": 2799.77,
+      "text": "you know, interrogation of compliance."
+    },
+    {
+      "start": 2800.1,
+      "end": 2804.4,
+      "text": "looking at the stress index, the stress index and the ARV. All need to be factored in"
+    },
+    {
+      "start": 2804.4,
+      "end": 2809.76,
+      "text": "tightly deep, judiciously and effectively, but this just shows that"
+    },
+    {
+      "start": 2810.06,
+      "end": 2815.12,
+      "text": "long ultrasound can be used as an adjunct to monitor or recruitment and use it"
+    },
+    {
+      "start": 2815.12,
+      "end": 2819.49,
+      "text": "concurrently with the other factors so that we could recruit safely and effectively."
+    },
+    {
+      "start": 2820.67,
+      "end": 2825.82,
+      "text": "So here is a video of real-time recruitment using lung ultrasound."
+    },
+    {
+      "start": 2826.12,
+      "end": 2827.02,
+      "text": "I'll just play this."
+    },
+    {
+      "start": 2827.7,
+      "end": 2829.88,
+      "text": "We see these dynamic air bronchograms."
+    },
+    {
+      "start": 2830.0,
+      "end": 2833.78,
+      "text": "guessing that air is, you know, going into this consolidated"
+    },
+    {
+      "start": 2833.78,
+      "end": 2838.27,
+      "text": "lung, like the large pneumonia, and then a recruitment"
+    },
+    {
+      "start": 2838.27,
+      "end": 2839.97,
+      "text": "maneuver is sustained for 40 seconds."
+    },
+    {
+      "start": 2840.0,
+      "end": 2841.42,
+      "text": "centimeters of water for 40 seconds."
+    },
+    {
+      "start": 2841.72,
+      "end": 2844.36,
+      "text": "And as we see that during the recruitment maneuver,"
+    },
+    {
+      "start": 2844.52,
+      "end": 2846.74,
+      "text": "this consolidation is turning into B lines"
+    },
+    {
+      "start": 2847.13,
+      "end": 2849.66,
+      "text": "in real time showing."
+    },
+    {
+      "start": 2850.26,
+      "end": 2852.02,
+      "text": "real-time recruitment of LVLite."
+    },
+    {
+      "start": 2852.48,
+      "end": 2855.52,
+      "text": "Up here is a video that's playing here."
+    },
+    {
+      "start": 2856.0,
+      "end": 2857.34,
+      "text": "I'll just kind of rewind here."
+    },
+    {
+      "start": 2857.46,
+      "end": 2859.82,
+      "text": "We see, you know, had elected trauma LVLite collapse."
+    },
+    {
+      "start": 2860.03,
+      "end": 2867.6,
+      "text": "at the end of ventilation and then if we were to move a little forward we see that with the"
+    },
+    {
+      "start": 2867.6,
+      "end": 2869.82,
+      "text": "the people five, there's let's all feel it."
+    },
+    {
+      "start": 2870.22,
+      "end": 2873.9,
+      "text": "Recruiting, moving ahead with a peak of 10, even less that's recruiting."
+    },
+    {
+      "start": 2874.32,
+      "end": 2879.97,
+      "text": "Do recruiting, beep of 15, even less, and then here at the end, beep of 20, and we see that all the-"
+    },
+    {
+      "start": 2880.0,
+      "end": 2887.92,
+      "text": "LVL are open and remain open at the end of the tidal volume delivery with increased positive"
+    },
+    {
+      "start": 2887.92,
+      "end": 2888.98,
+      "text": "event like some pretty pressure."
+    },
+    {
+      "start": 2890.26,
+      "end": 2899.76,
+      "text": "So here is a algorithm those proposed by Tussman at Al into done 16 in performing a recruitment maneuver with real-time helpers and so"
+    },
+    {
+      "start": 2900.0,
+      "end": 2901.88,
+      "text": "kind of go through the algorithms of the first step"
+    },
+    {
+      "start": 2901.88,
+      "end": 2905.36,
+      "text": "is evaluating evidence of lung collapse."
+    },
+    {
+      "start": 2905.36,
+      "end": 2907.38,
+      "text": "You see that, yes, there is lung collapse here."
+    },
+    {
+      "start": 2908.28,
+      "end": 2909.76,
+      "text": "If there is nothing."
+    },
+    {
+      "start": 2910.1,
+      "end": 2913.9,
+      "text": "continue lung protective ventilation. The next step would be to check"
+    },
+    {
+      "start": 2913.9,
+      "end": 2918.46,
+      "text": "no dynamics. We know that increasing people reduced preload can cause"
+    },
+    {
+      "start": 2918.46,
+      "end": 2919.56,
+      "text": "to spread on the RV."
+    },
+    {
+      "start": 2920.13,
+      "end": 2921.61,
+      "text": "all the wish need to be monitored,"
+    },
+    {
+      "start": 2922.31,
+      "end": 2925.03,
+      "text": "and you have to ensure that there is stable human dynamics."
+    },
+    {
+      "start": 2927.06,
+      "end": 2928.02,
+      "text": "And then in step three,"
+    },
+    {
+      "start": 2928.12,
+      "end": 2929.78,
+      "text": "this is where we really get into the recruitment."
+    },
+    {
+      "start": 2930.06,
+      "end": 2939.5,
+      "text": "So we're using a step wise increment increase in airway pressure and real-time autism is used to detect the plateau pressure as"
+    },
+    {
+      "start": 2940.03,
+      "end": 2943.34,
+      "text": "at which point, dependent lung collapse disappears."
+    },
+    {
+      "start": 2943.78,
+      "end": 2946.01,
+      "text": "This is the top circle here defined"
+    },
+    {
+      "start": 2946.01,
+      "end": 2949.14,
+      "text": "as the opening pressure at which point we see"
+    },
+    {
+      "start": 2949.14,
+      "end": 2949.98,
+      "text": "that the lung collapse..."
+    },
+    {
+      "start": 2950.19,
+      "end": 2957.5,
+      "text": "is no longer there, and then a stepwise decrement in keep is performed until the ultrasound"
+    },
+    {
+      "start": 2957.5,
+      "end": 2959.86,
+      "text": "identifies the start of lung reach."
+    },
+    {
+      "start": 2960.0,
+      "end": 2962.2,
+      "text": "collapse in the most dependent pulmonary areas."
+    },
+    {
+      "start": 2962.42,
+      "end": 2967.21,
+      "text": "This is the closing pressure denoted by the lower circle,"
+    },
+    {
+      "start": 2967.51,
+      "end": 2969.98,
+      "text": "and at the end of PEEP is chosen to-"
+    },
+    {
+      "start": 2970.1,
+      "end": 2976.08,
+      "text": "two centimeters above this closing pressure to help maintain, I'll be alive, that stay open."
+    },
+    {
+      "start": 2977.85,
+      "end": 2979.71,
+      "text": "Okay, I want to look at this protocol."
+    },
+    {
+      "start": 2980.0,
+      "end": 2988.72,
+      "text": "more closely here is the citation. So now we'll conclude, we'll conclude now by looking at the"
+    },
+    {
+      "start": 2988.72,
+      "end": 2989.98,
+      "text": "guy friend which is"
+    },
+    {
+      "start": 2990.0,
+      "end": 2993.05,
+      "text": "has been looked at as a marker for critical illness"
+    },
+    {
+      "start": 2993.05,
+      "end": 2996.63,
+      "text": "and a barrier for successful ventilator liberation."
+    },
+    {
+      "start": 2997.24,
+      "end": 2999.98,
+      "text": "On the left we see a normal diaphragm."
+    },
+    {
+      "start": 3000.32,
+      "end": 3004.52,
+      "text": "see that it's as a contract, it's displacing the liver"
+    },
+    {
+      "start": 3005.0,
+      "end": 3009.41,
+      "text": "bodily, compared that to the right where, you know, with"
+    },
+    {
+      "start": 3010.03,
+      "end": 3015.23,
+      "text": "inspiration, the lung, the diaphragm is barely moving, the liver is barely being displaced."
+    },
+    {
+      "start": 3016.09,
+      "end": 3019.97,
+      "text": "So you can visualize and get a sense of how weak or strong the"
+    },
+    {
+      "start": 3020.0,
+      "end": 3024.42,
+      "text": "but beyond visualization you can also measure it."
+    },
+    {
+      "start": 3025.26,
+      "end": 3029.04,
+      "text": "So this was a prospective study on 210 healthy adults."
+    },
+    {
+      "start": 3030.06,
+      "end": 3033.92,
+      "text": "to determine reference values for a diepragmatic motion on M-mode."
+    },
+    {
+      "start": 3034.85,
+      "end": 3039.98,
+      "text": "So if we use M-mode here to cut cross this portion of the diaphragm."
+    },
+    {
+      "start": 3040.13,
+      "end": 3049.89,
+      "text": "Over time we see that as a diaphragm moves up we see that you can measure the diaphragm."
+    },
+    {
+      "start": 3050.06,
+      "end": 3056.8,
+      "text": "dispersion and you see that there are different values in men and women as it relates to normal"
+    },
+    {
+      "start": 3056.8,
+      "end": 3059.86,
+      "text": "while breathing, voluntary, sniffing, or deep."
+    },
+    {
+      "start": 3060.1,
+      "end": 3069.59,
+      "text": "breathing where this place can be 7 centimeters in men and 5.7 centimeters in women, beyond the"
+    },
+    {
+      "start": 3070.0,
+      "end": 3076.01,
+      "text": "version, there's also diaphragm thickening the people look at. So here we're"
+    },
+    {
+      "start": 3076.01,
+      "end": 3079.31,
+      "text": "looking at diaphragm thickening with respiration and this is"
+    },
+    {
+      "start": 3080.0,
+      "end": 3087.63,
+      "text": "continued at the zone of acquisition, which is right here where the guy friend in the plural line kind of interface."
+    },
+    {
+      "start": 3088.8,
+      "end": 3089.96,
+      "text": "And here..."
+    },
+    {
+      "start": 3090.1,
+      "end": 3099.79,
+      "text": "we see on this video that this is the guy friend and we see that it's thickening with restoration of this"
+    },
+    {
+      "start": 3100.0,
+      "end": 3103.58,
+      "text": "hypercotic line in the middle of this muscle, the diaphragm muscle is the front"
+    },
+    {
+      "start": 3103.58,
+      "end": 3109.91,
+      "text": "nerve and just like we measure the IVC with max-minus-min"
+    },
+    {
+      "start": 3110.51,
+      "end": 3115.69,
+      "text": "You can also calculate the thickening fraction here with the diaphragm,"
+    },
+    {
+      "start": 3116.15,
+      "end": 3119.65,
+      "text": "thickening at inspiration minus expiration divided by expiration."
+    },
+    {
+      "start": 3120.0,
+      "end": 3125.9,
+      "text": "here on M-Mode we see that this is you know where the diaphragm is finished and"
+    },
+    {
+      "start": 3125.9,
+      "end": 3128.74,
+      "text": "here we see the diaphragm is thickest and you can"
+    },
+    {
+      "start": 3130.77,
+      "end": 3138.29,
+      "text": "determine the percentage of thickening fraction during respiration."
+    },
+    {
+      "start": 3140.0,
+      "end": 3146.66,
+      "text": "And while the sonographic definition of different dysfunction is variable, they have done other"
+    },
+    {
+      "start": 3146.66,
+      "end": 3149.85,
+      "text": "studies where they found that these measurements."
+    },
+    {
+      "start": 3150.03,
+      "end": 3155.32,
+      "text": "thickening fraction and thickness, they significantly correlate with endotracheal pressure during"
+    },
+    {
+      "start": 3155.32,
+      "end": 3159.97,
+      "text": "chronic nerve stimulation and this suggests that they're strong."
+    },
+    {
+      "start": 3160.1,
+      "end": 3169.59,
+      "text": "associate with diaphragms. So there have been two large met analyses looking at diaphragms."
+    },
+    {
+      "start": 3170.0,
+      "end": 3176.59,
+      "text": "that's been on ultrasound and using proposed cut-off ranges of 10 to 15 millimeters for a"
+    },
+    {
+      "start": 3176.59,
+      "end": 3179.87,
+      "text": "diaphragmatic expression and between 20 to 30."
+    },
+    {
+      "start": 3180.42,
+      "end": 3186.26,
+      "text": "than 20 to 30 for thickening fraction to predict excavation success. These two met analyses"
+    },
+    {
+      "start": 3186.26,
+      "end": 3189.84,
+      "text": "found a pool sensitivity and specificity of us."
+    },
+    {
+      "start": 3190.0,
+      "end": 3192.4,
+      "text": "70 to 80% for successful extubation."
+    },
+    {
+      "start": 3193.18,
+      "end": 3196.32,
+      "text": "But the authors of these meta-analysis caution"
+    },
+    {
+      "start": 3196.32,
+      "end": 3199.55,
+      "text": "that a lot of the studies were very heterogeneous."
+    },
+    {
+      "start": 3200.06,
+      "end": 3201.8,
+      "text": "and the timing of diaphragm measurement,"
+    },
+    {
+      "start": 3202.28,
+      "end": 3204.24,
+      "text": "whether they were done during spontaneous breathing"
+    },
+    {
+      "start": 3204.24,
+      "end": 3206.4,
+      "text": "or during full mechanical ventillary support,"
+    },
+    {
+      "start": 3207.04,
+      "end": 3209.88,
+      "text": "and the definitions of extubation failure was also varied."
+    },
+    {
+      "start": 3210.03,
+      "end": 3214.5,
+      "text": "So it was very hard to draw conclusions from these studies."
+    },
+    {
+      "start": 3215.6,
+      "end": 3219.59,
+      "text": "This was probably the best study done looking at diaphragm."
+    },
+    {
+      "start": 3220.0,
+      "end": 3227.4,
+      "text": "assessment. So this was a recent study in 2019, a prospective multi-centre trial looking at"
+    },
+    {
+      "start": 3227.4,
+      "end": 3229.96,
+      "text": "at 191 mechanically ventilated heat."
+    },
+    {
+      "start": 3230.0,
+      "end": 3232.54,
+      "text": "who are at high risk for extubation failure."
+    },
+    {
+      "start": 3233.08,
+      "end": 3239.58,
+      "text": "High risk defined as intubated for more than seven days greater than 65 years old, and also they had"
+    },
+    {
+      "start": 3240.03,
+      "end": 3241.53,
+      "text": "or more of it, cardiopulmonary disease."
+    },
+    {
+      "start": 3242.28,
+      "end": 3244.54,
+      "text": "And ultrasound was used to assess"
+    },
+    {
+      "start": 3244.54,
+      "end": 3246.42,
+      "text": "for diaphragmatic dysfunction,"
+    },
+    {
+      "start": 3247.14,
+      "end": 3249.98,
+      "text": "which they defined as excursion of less than-"
+    },
+    {
+      "start": 3250.03,
+      "end": 3256.15,
+      "text": "10 millimeters or thickening fraction less than 30% and the disassessment was performed"
+    },
+    {
+      "start": 3256.15,
+      "end": 3259.91,
+      "text": "importantly, of following a successful SBT to all these."
+    },
+    {
+      "start": 3260.03,
+      "end": 3261.95,
+      "text": "patients passed with successful SBT."
+    },
+    {
+      "start": 3262.56,
+      "end": 3269.32,
+      "text": "The diaphragm was measured and they found that there was no difference in either parameter"
+    },
+    {
+      "start": 3269.32,
+      "end": 3269.92,
+      "text": "thickening."
+    },
+    {
+      "start": 3270.06,
+      "end": 3273.79,
+      "text": "fraction or excursion to predict successful extubation."
+    },
+    {
+      "start": 3274.38,
+      "end": 3276.92,
+      "text": "So we see here on the right and on the left excursion"
+    },
+    {
+      "start": 3276.92,
+      "end": 3279.04,
+      "text": "and thickening, there's no difference in patients"
+    },
+    {
+      "start": 3279.04,
+      "end": 3279.7,
+      "text": "that succeeded."
+    },
+    {
+      "start": 3280.13,
+      "end": 3287.89,
+      "text": "failed. So the conclusion that the authors came to was that diaphragmatic dysfunction may still"
+    },
+    {
+      "start": 3287.89,
+      "end": 3289.75,
+      "text": "will be useful in identifying."
+    },
+    {
+      "start": 3290.1,
+      "end": 3297.55,
+      "text": "mechanisms of SBT failure, but after a successful SBT, diaphragm assessment wouldn't really"
+    },
+    {
+      "start": 3297.55,
+      "end": 3299.41,
+      "text": "add much to clinical decision-making."
+    },
+    {
+      "start": 3300.03,
+      "end": 3302.15,
+      "text": "regarding whether or not to proceed with ventilation."
+    },
+    {
+      "start": 3302.49,
+      "end": 3305.53,
+      "text": "So if a patient fails an SVT, it may be worthwhile"
+    },
+    {
+      "start": 3305.53,
+      "end": 3308.89,
+      "text": "to check the diaphragm, but if a patient succeeds,"
+    },
+    {
+      "start": 3309.27,
+      "end": 3309.97,
+      "text": "then really..."
+    },
+    {
+      "start": 3310.22,
+      "end": 3318.02,
+      "text": "other diaphragm wouldn't really add in. So, wrapping up here, limitations of"
+    },
+    {
+      "start": 3318.02,
+      "end": 3318.58,
+      "text": "one ultrasound."
+    },
+    {
+      "start": 3318.98,
+      "end": 3319.86,
+      "text": "So, of course,"
+    },
+    {
+      "start": 3320.0,
+      "end": 3326.25,
+      "text": "Just like any application of point-of-care ultrasound, a long ultrasound is operator-dependent"
+    },
+    {
+      "start": 3326.25,
+      "end": 3329.81,
+      "text": "and requires years of training and practice teaching."
+    },
+    {
+      "start": 3330.0,
+      "end": 3335.42,
+      "text": "mass-free. You know, I harped them this little earlier, but really when a patient presents"
+    },
+    {
+      "start": 3335.42,
+      "end": 3339.86,
+      "text": "with the key respiratory failure, clinicians must be able to not only..."
+    },
+    {
+      "start": 3340.0,
+      "end": 3346.39,
+      "text": "an interpret images. Rapidly, they must also be able to integrate these ultrasound findings"
+    },
+    {
+      "start": 3346.39,
+      "end": 3349.98,
+      "text": "with the clinical scenario. Over and over again, we found that..."
+    },
+    {
+      "start": 3350.32,
+      "end": 3359.84,
+      "text": "You know, lung ultrasound is highly highly sensitive to a lot of things but really the specificity for any one condition comes when we marry the clinical"
+    },
+    {
+      "start": 3360.06,
+      "end": 3363.41,
+      "text": "and the scenario together with the ultrasound findings."
+    },
+    {
+      "start": 3364.76,
+      "end": 3368.48,
+      "text": "Also, you know, while studies that persistently,"
+    },
+    {
+      "start": 3369.27,
+      "end": 3369.93,
+      "text": "the study..."
+    },
+    {
+      "start": 3370.0,
+      "end": 3372.9,
+      "text": "that we reviewed have consistently reported favorably"
+    },
+    {
+      "start": 3372.9,
+      "end": 3374.44,
+      "text": "on the accuracy of lung ultrasound."
+    },
+    {
+      "start": 3375.22,
+      "end": 3377.14,
+      "text": "You know, all the study performed by experts"
+    },
+    {
+      "start": 3377.14,
+      "end": 3379.68,
+      "text": "andographers and, you know, the investigations."
+    },
+    {
+      "start": 3380.03,
+      "end": 3387.12,
+      "text": "May have been prone to bias brought on by lack of complete blinding of the ultrasonographer"
+    },
+    {
+      "start": 3387.12,
+      "end": 3389.88,
+      "text": "and there may have been integration of others."
+    },
+    {
+      "start": 3390.03,
+      "end": 3392.09,
+      "text": "clinical data that we didn't really see,"
+    },
+    {
+      "start": 3393.33,
+      "end": 3396.59,
+      "text": "along with the disease prevalence in the study cohorts."
+    },
+    {
+      "start": 3396.81,
+      "end": 3399.86,
+      "text": "So there is a lot of limitations."
+    },
+    {
+      "start": 3400.06,
+      "end": 3405.11,
+      "text": "in the studies that we reviewed, but overall though, I think there is a pretty strong signal"
+    },
+    {
+      "start": 3405.11,
+      "end": 3409.81,
+      "text": "for a lung ultrasound to be very applicable in acute respiratory failure."
+    },
+    {
+      "start": 3410.42,
+      "end": 3415.02,
+      "text": "So to conclude now, I'll just read the conclusion that we wrote in our paper,"
+    },
+    {
+      "start": 3415.86,
+      "end": 3419.98,
+      "text": "the current era has seen long ultrasound emerge as they will."
+    },
+    {
+      "start": 3420.0,
+      "end": 3424.39,
+      "text": "validated modality for the diagnosis and therapeutic management of patients that the"
+    },
+    {
+      "start": 3424.39,
+      "end": 3429.38,
+      "text": "acute respiratory failure along ultrasound can be applied at the bedside in an immediate"
+    },
+    {
+      "start": 3430.1,
+      "end": 3434.62,
+      "text": "manner to help critically old patients, while a powerful tool, the importance of provider"
+    },
+    {
+      "start": 3434.62,
+      "end": 3439.2,
+      "text": "input for integrating sonographic findings within clinical context is critical for the"
+    },
+    {
+      "start": 3439.2,
+      "end": 3439.82,
+      "text": "effective injury."
+    },
+    {
+      "start": 3440.0,
+      "end": 3446.1,
+      "text": "use of lung ultrasound, we believe that lung ultrasound is an indispensable tool for diagnosing"
+    },
+    {
+      "start": 3446.1,
+      "end": 3449.98,
+      "text": "and managing respiratory conditions and should be equal."
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "video_id": "yUKdf-HTD8M",
+  "reviewer": "stage3_b",
+  "review_scope": "Question-led review by Agent B of Agent A draft; not blind. Native full-frame sampled checkpoints and available time-indexed ASR; no continuous replay or direct listening claim.",
+  "reviewer_native_opened": [
+    318,
+    319,
+    320,
+    321,
+    321.5,
+    322,
+    425,
+    500,
+    625,
+    635,
+    640,
+    645,
+    646,
+    646.5,
+    647,
+    648,
+    649,
+    650,
+    651,
+    652,
+    653,
+    654,
+    655,
+    660,
+    705
+  ],
+  "tasks": [
+    {
+      "task_index": 1,
+      "outcome": "accepted_with_boundary_evidence",
+      "issues": [],
+      "changes": [
+        "Added319,320,321,321.5 checkpoints."
+      ],
+      "query_status": "WAIT318; no paired heads visible.",
+      "answer_status": "ANSWER322; lower-left and higher-right skull rims clearly simultaneous. ASR twins sentence completed321.83, but visual timing governs."
+    },
+    {
+      "task_index": 2,
+      "outcome": "accepted",
+      "issues": [],
+      "changes": [],
+      "query_status": "ANSWER425; lower-right visibly greatest vertical pocket extent; numeric AFI not required."
+    },
+    {
+      "task_index": 3,
+      "outcome": "accepted",
+      "issues": [],
+      "changes": [],
+      "query_status": "ANSWER625; stomach lower-right of central small venous segment."
+    },
+    {
+      "task_index": 4,
+      "outcome": "corrected",
+      "issues": [
+        "Femoral long shaft clear before650. Need causal naming support without future650-656 narration."
+      ],
+      "changes": [
+        "Advanced answer to648 after partial647 and negative abdomen645. Added completed ASR630-638.87 and640.19-646.07 for scan context."
+      ],
+      "query_status": "WAIT635; abdominal circumference scan only.",
+      "answer_status": "ANSWER648; clear oblique shaft with shadow, femur context already named."
+    },
+    {
+      "task_index": 5,
+      "outcome": "corrected",
+      "issues": [
+        "Near-horizontal shaft clear at655 before660."
+      ],
+      "changes": [
+        "Advanced answer660 to655. Added651-654 transition checkpoints and restricted to displayed angle change."
+      ],
+      "query_status": "WAIT650; still oblique, later flatter view not yet established.",
+      "answer_status": "ANSWER655; shaft almost horizontal."
+    },
+    {
+      "task_index": 6,
+      "outcome": "accepted",
+      "issues": [],
+      "changes": [],
+      "query_status": "ANSWER705; earlier profile500 uniquely before biometry, head right and body left."
+    }
+  ]
+}

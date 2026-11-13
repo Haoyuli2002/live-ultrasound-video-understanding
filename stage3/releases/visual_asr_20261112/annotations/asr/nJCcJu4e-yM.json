@@ -1,0 +1,673 @@
+{
+  "video_id": "nJCcJu4e-yM",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/nJCcJu4e-yM/asr.txt",
+  "segments": [
+    {
+      "start": 0.06,
+      "end": 3.86,
+      "text": "Let's review the task of following a needle using the ultrasound."
+    },
+    {
+      "start": 4.42,
+      "end": 9.74,
+      "text": "This is really the core skill for bedside line placement and the majority of percutaneous"
+    },
+    {
+      "start": 9.74,
+      "end": 9.96,
+      "text": "I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry"
+    },
+    {
+      "start": 10.0,
+      "end": 12.08,
+      "text": "ultrasound guided procedures in the ICU."
+    },
+    {
+      "start": 13.48,
+      "end": 15.02,
+      "text": "The key principle and challenge here"
+    },
+    {
+      "start": 15.02,
+      "end": 16.56,
+      "text": "is that we need to follow a needle"
+    },
+    {
+      "start": 16.56,
+      "end": 18.92,
+      "text": "which is virtually a one-dimensional structure."
+    },
+    {
+      "start": 19.62,
+      "end": 19.98,
+      "text": "Using an o..."
+    },
+    {
+      "start": 20.0,
+      "end": 22.12,
+      "text": "ultrasound beam which is close to two dimensional."
+    },
+    {
+      "start": 22.74,
+      "end": 23.7,
+      "text": "How are we going to do that?"
+    },
+    {
+      "start": 23.92,
+      "end": 24.96,
+      "text": "We're going to intersect them."
+    },
+    {
+      "start": 25.5,
+      "end": 29.0,
+      "text": "You might think that we could do this by simply lining up the three planes."
+    },
+    {
+      "start": 29.56,
+      "end": 29.98,
+      "text": "So if this"
+    },
+    {
+      "start": 30.0,
+      "end": 34.46,
+      "text": "is the vessel, we can line up the beam of our ultrasound with the axis of the vessel,"
+    },
+    {
+      "start": 35.4,
+      "end": 37.65,
+      "text": "and then line up our needle in the same plane."
+    },
+    {
+      "start": 38.2,
+      "end": 39.88,
+      "text": "This is called an inplane, or laundry."
+    },
+    {
+      "start": 40.06,
+      "end": 45.92,
+      "text": "and this technique you'll see your needle on the screen as a diagonal line"
+    },
+    {
+      "start": 45.92,
+      "end": 49.26,
+      "text": "coming from the corner and approaching and entering the vessel."
+    },
+    {
+      "start": 50.0,
+      "end": 54.26,
+      "text": "It does work and has the advantage that you can visualize your needle during the entire"
+    },
+    {
+      "start": 54.26,
+      "end": 55.04,
+      "text": "year of the procedure."
+    },
+    {
+      "start": 55.99,
+      "end": 57.89,
+      "text": "However, it's technically quite challenging."
+    },
+    {
+      "start": 58.69,
+      "end": 59.97,
+      "text": "You'll need to line up all through..."
+    },
+    {
+      "start": 60.0,
+      "end": 65.19,
+      "text": "these structures and if you move the beam or the needle only slightly you'll lose"
+    },
+    {
+      "start": 65.19,
+      "end": 68.93,
+      "text": "view of it completely. For most beginners that kind of control is difficult."
+    },
+    {
+      "start": 70.58,
+      "end": 73.92,
+      "text": "It's also quite easy to shift the ultrasound slightly"
+    },
+    {
+      "start": 73.92,
+      "end": 75.18,
+      "text": "and end up viewing a structure"
+    },
+    {
+      "start": 75.18,
+      "end": 76.76,
+      "text": "which is not the one you started with."
+    },
+    {
+      "start": 77.18,
+      "end": 79.22,
+      "text": "For instance, an artery adjacent to the vein"
+    },
+    {
+      "start": 79.22,
+      "end": 79.94,
+      "text": "you were trying to pump."
+    },
+    {
+      "start": 80.06,
+      "end": 84.89,
+      "text": "This is because with this technique, you're really only viewing a single structure and not"
+    },
+    {
+      "start": 84.89,
+      "end": 87.49,
+      "text": "cutting across several as you would with a transverse approach."
+    },
+    {
+      "start": 87.89,
+      "end": 89.93,
+      "text": "So this is a potentially useful skill to have."
+    },
+    {
+      "start": 90.0,
+      "end": 94.81,
+      "text": "But if you're gonna learn only one as a beginner, it's not the one I would start with and if you're an expert"
+    },
+    {
+      "start": 95.23,
+      "end": 99.97,
+      "text": "It's I think it's not the most versatile skill with a transverse view you can"
+    },
+    {
+      "start": 100.0,
+      "end": 104.5,
+      "text": "modify where you're going to initially stick the skin, you could steer around certain structures,"
+    },
+    {
+      "start": 104.82,
+      "end": 109.88,
+      "text": "it's just a more useful skill. So even as an expert, if you're going to learn only one technique"
+    },
+    {
+      "start": 110.0,
+      "end": 114.9,
+      "text": "And there's an argument to be made for mastering one technique rather than being mediocre at several."
+    },
+    {
+      "start": 115.3,
+      "end": 118.02,
+      "text": "What I would learn is the out-of-plane or transverse approach."
+    },
+    {
+      "start": 118.34,
+      "end": 119.5,
+      "text": "So how is that going to work?"
+    },
+    {
+      "start": 120.0,
+      "end": 122.7,
+      "text": "We're going to intersect the plane of our ultrasound with our needle."
+    },
+    {
+      "start": 123.06,
+      "end": 127.32,
+      "text": "Because we're taking slices of it like a cat scan, all we're going to see on the screen"
+    },
+    {
+      "start": 127.32,
+      "end": 129.44,
+      "text": "is a small dot hopefully."
+    },
+    {
+      "start": 130.16,
+      "end": 132.14,
+      "text": "This really depends on the quality of your ultrasound,"
+    },
+    {
+      "start": 132.56,
+      "end": 134.52,
+      "text": "and the depth you're going to, and other factors."
+    },
+    {
+      "start": 135.02,
+      "end": 136.94,
+      "text": "Many times you won't even see much of a dot."
+    },
+    {
+      "start": 137.14,
+      "end": 139.98,
+      "text": "You'll only see tissue movement, deflecting up in..."
+    },
+    {
+      "start": 140.03,
+      "end": 142.48,
+      "text": "and that will also be evidence of your needle."
+    },
+    {
+      "start": 143.29,
+      "end": 145.72,
+      "text": "So we're going to start by lining up with our vessel"
+    },
+    {
+      "start": 145.72,
+      "end": 147.57,
+      "text": "in the transverse plane."
+    },
+    {
+      "start": 148.82,
+      "end": 149.92,
+      "text": "We should see circles on this"
+    },
+    {
+      "start": 149.92,
+      "end": 149.98,
+      "text": "I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry"
+    },
+    {
+      "start": 150.06,
+      "end": 153.74,
+      "text": "screen that represent the vessel and will scan up and down to assess it."
+    },
+    {
+      "start": 154.64,
+      "end": 158.02,
+      "text": "And what we'd like to see is that those circles say in the same spot on the screen."
+    },
+    {
+      "start": 158.02,
+      "end": 159.98,
+      "text": "If we find that we're off at"
+    },
+    {
+      "start": 160.0,
+      "end": 166.44,
+      "text": "As we slide our ultrasound probe, the circles will move because we're not following it in a straight line."
+    },
+    {
+      "start": 166.86,
+      "end": 169.68,
+      "text": "We want to follow it directly in..."
+    },
+    {
+      "start": 170.0,
+      "end": 175.11,
+      "text": "90 degree angles. Because as we move our probe, we don't want to leave the vessel."
+    },
+    {
+      "start": 176.46,
+      "end": 179.38,
+      "text": "We'll do the same thing with the needle as well. They should all be lined up."
+    },
+    {
+      "start": 181.58,
+      "end": 189.43,
+      "text": "We want these to be centered on each other as well, so put this vessel in the very center in the screen and then stick in the very center of your probe."
+    },
+    {
+      "start": 190.74,
+      "end": 195.2,
+      "text": "So we'll find our spot, and especially for a deeper vessel, we'll usually need to puncture"
+    },
+    {
+      "start": 195.2,
+      "end": 199.26,
+      "text": "somewhat proximately to it, because we're coming down diagonally, so by the time we reach"
+    },
+    {
+      "start": 199.26,
+      "end": 199.96,
+      "text": "the vessel..."
+    },
+    {
+      "start": 200.45,
+      "end": 204.19,
+      "text": "Particularly, if there's only one portion of the vessel that's really accessible, we'll"
+    },
+    {
+      "start": 204.44,
+      "end": 205.34,
+      "text": "have covered some distance."
+    },
+    {
+      "start": 205.78,
+      "end": 209.97,
+      "text": "So we'll set ourselves back a certain amount of puncture in the center of the pro..."
+    },
+    {
+      "start": 210.0,
+      "end": 214.2,
+      "text": "and then find our needle on the screen, either as a dot or as deflection of"
+    },
+    {
+      "start": 214.2,
+      "end": 218.15,
+      "text": "tissue. If you're not sure where you are, you're gonna bounce your needle slightly."
+    },
+    {
+      "start": 218.69,
+      "end": 219.97,
+      "text": "When I say bounce, I mean in a-"
+    },
+    {
+      "start": 220.0,
+      "end": 224.38,
+      "text": "out along its axis, not side to side or up and down, and that will help the tissue move"
+    },
+    {
+      "start": 224.38,
+      "end": 229.92,
+      "text": "and help us see it. Once we find our needle, we're going to bring our probe full."
+    },
+    {
+      "start": 230.0,
+      "end": 235.68,
+      "text": "Towards the tip, I'm exaggerating, but in very small amount, we're going to slide our"
+    },
+    {
+      "start": 235.68,
+      "end": 238.2,
+      "text": "probe until we no longer see evidence of the needle."
+    },
+    {
+      "start": 240.0,
+      "end": 243.22,
+      "text": "indicate that we've left the tip of the needle, and that's actually what we want."
+    },
+    {
+      "start": 245.37,
+      "end": 249.79,
+      "text": "Once we've left the tip, we're going to advance the needle until we again see it."
+    },
+    {
+      "start": 250.03,
+      "end": 254.63,
+      "text": "on the screen. That means we've broken the plane of the beam and now we can repeat the"
+    },
+    {
+      "start": 254.63,
+      "end": 259.9,
+      "text": "process. Advance the probe forward until we no longer see needle. Advance the needle forward."
+    },
+    {
+      "start": 260.0,
+      "end": 265.51,
+      "text": "until we see it again, and we'll advance down to the vessel in little stair step movements like"
+    },
+    {
+      "start": 265.51,
+      "end": 269.96,
+      "text": "that millimeter or two at a time until we reach it. Why are we doing it this..."
+    },
+    {
+      "start": 270.0,
+      "end": 274.32,
+      "text": "way. Well, because if we see our needle on the screen, all we're going to see is a dot"
+    },
+    {
+      "start": 274.32,
+      "end": 279.27,
+      "text": "or tissue movement, and you'll think that means you're seeing your tip. It's very tempting"
+    },
+    {
+      "start": 279.27,
+      "end": 279.81,
+      "text": "to think that."
+    },
+    {
+      "start": 280.54,
+      "end": 282.48,
+      "text": "but actually the tip will look exactly the same"
+    },
+    {
+      "start": 282.48,
+      "end": 284.74,
+      "text": "as the center of the needle or the back of it."
+    },
+    {
+      "start": 284.92,
+      "end": 286.54,
+      "text": "And you're not going to know what you're looking at"
+    },
+    {
+      "start": 286.86,
+      "end": 288.84,
+      "text": "unless you bring the pro forward again"
+    },
+    {
+      "start": 288.84,
+      "end": 289.96,
+      "text": "until you've just left."
+    },
+    {
+      "start": 290.0,
+      "end": 295.92,
+      "text": "the tip. That's how you're going to know that you're right off of the tip. Every time you lose"
+    },
+    {
+      "start": 295.92,
+      "end": 299.96,
+      "text": "track of your needle and that will happen even for skilled users, we're going to..."
+    },
+    {
+      "start": 300.0,
+      "end": 304.5,
+      "text": "find it again by bouncing our needle bringing the probe back to us until we see the needle"
+    },
+    {
+      "start": 304.5,
+      "end": 309.92,
+      "text": "and then going forward with the probe until we leave it. That's how we'll know we're just"
+    },
+    {
+      "start": 310.13,
+      "end": 314.75,
+      "text": "in front of it. So there's always that two step process to find the needle. First find"
+    },
+    {
+      "start": 314.75,
+      "end": 319.91,
+      "text": "the needle, then find the tip. So we're going to advance forward and"
+    },
+    {
+      "start": 320.13,
+      "end": 325.53,
+      "text": "little stairs-tapping movements targeting the center of the vessel, being quite cautious about that."
+    },
+    {
+      "start": 325.82,
+      "end": 329.98,
+      "text": "If we're slightly off high up, as we advance further, we're going to get..."
+    },
+    {
+      "start": 330.13,
+      "end": 330.95,
+      "text": "more and more off."
+    },
+    {
+      "start": 331.57,
+      "end": 334.73,
+      "text": "So we're going to be very perfectionist about targeting the very 12 o'clock position"
+    },
+    {
+      "start": 334.73,
+      "end": 335.33,
+      "text": "of the vessel."
+    },
+    {
+      "start": 336.03,
+      "end": 339.97,
+      "text": "Also, as we reach the vessel, if we're not centered at the apex, we tend to skip-"
+    },
+    {
+      "start": 340.0,
+      "end": 341.68,
+      "text": "off the side rather than puncturing it."
+    },
+    {
+      "start": 342.22,
+      "end": 345.59,
+      "text": "If you're ever not sure where you are, you're not going to advance, you're going to withdraw,"
+    },
+    {
+      "start": 345.81,
+      "end": 347.67,
+      "text": "because typically you're deeper than you thought."
+    },
+    {
+      "start": 348.14,
+      "end": 349.28,
+      "text": "You overrain your probe."
+    },
+    {
+      "start": 350.03,
+      "end": 352.03,
+      "text": "and your actual tip is deeper than you realized."
+    },
+    {
+      "start": 352.57,
+      "end": 353.43,
+      "text": "So you're gonna withdraw"
+    },
+    {
+      "start": 353.43,
+      "end": 355.56,
+      "text": "and often you'll catch sight of it as you do."
+    },
+    {
+      "start": 356.22,
+      "end": 358.42,
+      "text": "You're also gonna advance only in straight lines."
+    },
+    {
+      "start": 358.76,
+      "end": 359.6,
+      "text": "Needles go straight."
+    },
+    {
+      "start": 359.76,
+      "end": 359.98,
+      "text": "They don't."
+    },
+    {
+      "start": 360.1,
+      "end": 364.72,
+      "text": "sideways. So if you miss the vessel, you can't side swipe into it. That's just a"
+    },
+    {
+      "start": 364.72,
+      "end": 368.88,
+      "text": "good way to lacerate it with the tip. You're gonna need to withdraw a fair amount."
+    },
+    {
+      "start": 369.38,
+      "end": 369.98,
+      "text": "Change your angle..."
+    },
+    {
+      "start": 370.0,
+      "end": 377.41,
+      "text": "and then re-advance. I would recommend advancing your needle in sharp, jerky, but small movements."
+    },
+    {
+      "start": 378.01,
+      "end": 379.96,
+      "text": "By that I mean as you..."
+    },
+    {
+      "start": 380.0,
+      "end": 384.9,
+      "text": "move. If you go very slowly and smoothly, it's often hard to see your needle because it moves"
+    },
+    {
+      "start": 384.9,
+      "end": 389.98,
+      "text": "the tissue very little. So a somewhat jerky approach helps you visualize it. But bye."
+    },
+    {
+      "start": 390.0,
+      "end": 391.42,
+      "text": "by jerky, I don't mean large."
+    },
+    {
+      "start": 391.68,
+      "end": 393.64,
+      "text": "You still want to move in very small degrees,"
+    },
+    {
+      "start": 393.86,
+      "end": 395.34,
+      "text": "just a couple of millimeters at a time."
+    },
+    {
+      "start": 396.75,
+      "end": 398.93,
+      "text": "Finally, if you're having a hard time seeing your needle,"
+    },
+    {
+      "start": 399.41,
+      "end": 399.87,
+      "text": "there's a few things."
+    },
+    {
+      "start": 400.0,
+      "end": 404.14,
+      "text": "you can do. Try a little more gel and a little more pressure on the probe. And then you can"
+    },
+    {
+      "start": 404.14,
+      "end": 409.87,
+      "text": "try canting or angling your probe back towards you. The reason is that we're sticking it"
+    },
+    {
+      "start": 410.0,
+      "end": 414.12,
+      "text": "diagonal line. And there's a principle of ultrasound known as the angle of incination,"
+    },
+    {
+      "start": 414.46,
+      "end": 419.33,
+      "text": "which suggests that the more perpendicular your ultrasound beam is to a structure, the"
+    },
+    {
+      "start": 419.33,
+      "end": 419.75,
+      "text": "more clearly."
+    },
+    {
+      "start": 420.0,
+      "end": 424.72,
+      "text": "see it. So if you're looking at a 90 degree angle at something, the majority of the ultrasound"
+    },
+    {
+      "start": 424.72,
+      "end": 428.62,
+      "text": "beams will return to the probe. If you had a very obtuse angle, you'll see less of them."
+    },
+    {
+      "start": 429.56,
+      "end": 429.96,
+      "text": "So, if..."
+    },
+    {
+      "start": 430.0,
+      "end": 435.02,
+      "text": "looking at our needle, we'll need to angle back towards ourselves, and we'll hit the needle"
+    },
+    {
+      "start": 435.02,
+      "end": 439.75,
+      "text": "more perpendicularly. Now that will mean that as you slide your probe forward with each"
+    },
+    {
+      "start": 440.0,
+      "end": 445.1,
+      "text": "movement, you'll need to do it by sliding it forward to maintain that angle rather than"
+    },
+    {
+      "start": 445.1,
+      "end": 447.18,
+      "text": "fanning it forward, which will lose the angle."
+    },
+    {
+      "start": 447.6,
+      "end": 449.62,
+      "text": "And that's fine, either method is appropriate."
+    }
+  ]
+}

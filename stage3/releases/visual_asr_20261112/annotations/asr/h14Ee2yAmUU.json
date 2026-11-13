@@ -1,0 +1,428 @@
+{
+  "video_id": "h14Ee2yAmUU",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/h14Ee2yAmUU/asr.txt",
+  "segments": [
+    {
+      "start": 4.35,
+      "end": 7.47,
+      "text": "I'm Dr. Steven Finkel from Stanford School of Regional Anesthesia."
+    },
+    {
+      "start": 7.75,
+      "end": 9.97,
+      "text": "In this video, we're going to look at how we..."
+    },
+    {
+      "start": 10.0,
+      "end": 13.44,
+      "text": "do anterior sciatic nerve blocks at the Stanford hospital."
+    },
+    {
+      "start": 14.22,
+      "end": 19.82,
+      "text": "This is an excellent block that we often use in conjunction with a femoral nerve block."
+    },
+    {
+      "start": 20.06,
+      "end": 23.34,
+      "text": "when trying to provide anesthesia and analgesia"
+    },
+    {
+      "start": 23.72,
+      "end": 26.94,
+      "text": "to total knee surgery patients."
+    },
+    {
+      "start": 28.11,
+      "end": 29.93,
+      "text": "One of the benefits of approaching the site."
+    },
+    {
+      "start": 30.06,
+      "end": 36.26,
+      "text": "nerve from the anterior side versus doing say a popliteal nerve block is that"
+    },
+    {
+      "start": 36.26,
+      "end": 39.97,
+      "text": "the patient can remain in supine position and thus you can do"
+    },
+    {
+      "start": 40.0,
+      "end": 46.5,
+      "text": "your femoral nerve block with catheter, as well as the anterior approach to the sciatic"
+    },
+    {
+      "start": 46.5,
+      "end": 48.74,
+      "text": "with the patient in the same position."
+    },
+    {
+      "start": 50.22,
+      "end": 59.9,
+      "text": "It also is unique in that it is the only block in which we use a very long needle 150 millimeter needle and it's the only block"
+    },
+    {
+      "start": 60.03,
+      "end": 66.81,
+      "text": "that we currently utilize the Carver Linear probe for, because oftentimes the"
+    },
+    {
+      "start": 66.81,
+      "end": 69.79,
+      "text": "good the sadic nerve is reached after"
+    },
+    {
+      "start": 70.0,
+      "end": 77.24,
+      "text": "8, 9, 10 centimeter, and the traditional probes are frankly not designed and cannot give"
+    },
+    {
+      "start": 77.24,
+      "end": 79.89,
+      "text": "you view on that depth. Okay, so"
+    },
+    {
+      "start": 80.0,
+      "end": 85.36,
+      "text": "So for anterior sciatic nerve block, we have the patient lying in supine position."
+    },
+    {
+      "start": 86.16,
+      "end": 89.98,
+      "text": "We're going to confirm our probe position so that we know what..."
+    },
+    {
+      "start": 90.0,
+      "end": 95.89,
+      "text": "is a lateral and what's media pay in this instance the right side of the screen"
+    },
+    {
+      "start": 95.89,
+      "end": 99.97,
+      "text": "that you see here is going to be lateral and the left side"
+    },
+    {
+      "start": 100.0,
+      "end": 106.28,
+      "text": "the screen is going to be medial and I start by placing my probe down on top of"
+    },
+    {
+      "start": 106.28,
+      "end": 109.88,
+      "text": "femur about this thigh. There are three main"
+    },
+    {
+      "start": 110.0,
+      "end": 114.72,
+      "text": "structures when doing this block that you need to identify to have a quick"
+    },
+    {
+      "start": 114.72,
+      "end": 119.98,
+      "text": "easy safe and successful block. Now the first is the femur. This is very easy."
+    },
+    {
+      "start": 120.0,
+      "end": 121.78,
+      "text": "It's sitting right here."
+    },
+    {
+      "start": 122.14,
+      "end": 125.66,
+      "text": "It's very prominent and is almost always very easy to see."
+    },
+    {
+      "start": 126.68,
+      "end": 129.98,
+      "text": "Immediately what we're looking for and we're interested in are the femoris."
+    },
+    {
+      "start": 130.0,
+      "end": 137.87,
+      "text": "vessels. And sometimes, if we add our color Doppler flow, it can help us identify"
+    },
+    {
+      "start": 137.87,
+      "end": 139.03,
+      "text": "by these structures here."
+    },
+    {
+      "start": 140.7,
+      "end": 144.65,
+      "text": "Now, having identified the femoral vessels in the femur,"
+    },
+    {
+      "start": 144.73,
+      "end": 147.69,
+      "text": "we know that the sciatic nerve sits basically"
+    },
+    {
+      "start": 147.69,
+      "end": 149.27,
+      "text": "at the third point of a triangle."
+    },
+    {
+      "start": 150.13,
+      "end": 152.65,
+      "text": "with the femur and the femoral vessels."
+    },
+    {
+      "start": 152.97,
+      "end": 155.67,
+      "text": "And we're looking for it right in this region"
+    },
+    {
+      "start": 155.67,
+      "end": 156.91,
+      "text": "to complete our trinal."
+    },
+    {
+      "start": 157.39,
+      "end": 159.96,
+      "text": "I'm gently gonna slide my proval..."
+    },
+    {
+      "start": 160.0,
+      "end": 165.46,
+      "text": "little more media and I'm going to slide my probe a little bit more on both sides and"
+    },
+    {
+      "start": 165.46,
+      "end": 169.28,
+      "text": "you can see how when I do that the femoral nerve, the sciatic nerve."
+    },
+    {
+      "start": 170.03,
+      "end": 175.42,
+      "text": "I believe comes into picture here, right here."
+    },
+    {
+      "start": 176.8,
+      "end": 178.96,
+      "text": "So what I'm interested in doing."
+    },
+    {
+      "start": 180.0,
+      "end": 185.88,
+      "text": "is sometimes I will do this block out of playing with the pro because I know"
+    },
+    {
+      "start": 185.88,
+      "end": 189.97,
+      "text": "that I need to come straight down and provide local anesthesia."
+    },
+    {
+      "start": 190.82,
+      "end": 199.34,
+      "text": "It's difficult to get to this nerve coming in plane because you're either going to be coming lateral to medial."
+    },
+    {
+      "start": 200.13,
+      "end": 206.76,
+      "text": "femur obstructs the angle, and thus your knee will often hit off in this direction, and"
+    },
+    {
+      "start": 206.76,
+      "end": 209.91,
+      "text": "conversely coming me on the lateral you can"
+    },
+    {
+      "start": 210.03,
+      "end": 213.12,
+      "text": "hit the femoral vessels, or hit femur."
+    },
+    {
+      "start": 213.93,
+      "end": 217.33,
+      "text": "So what I'll often do is maximize my view,"
+    },
+    {
+      "start": 218.33,
+      "end": 219.97,
+      "text": "get where I feel the nerve is going to-"
+    },
+    {
+      "start": 220.0,
+      "end": 226.49,
+      "text": "and in this instance it looks like it may be right here and come right out of"
+    },
+    {
+      "start": 226.49,
+      "end": 229.97,
+      "text": "plane here using a nerve stemming"
+    },
+    {
+      "start": 230.0,
+      "end": 235.33,
+      "text": "later. I'm also going to make note of how deep I think this roughly is. On the"
+    },
+    {
+      "start": 235.33,
+      "end": 239.78,
+      "text": "setting on this screen we heard about 11 centimeter. This is"
+    },
+    {
+      "start": 240.0,
+      "end": 249.77,
+      "text": "at about six. Confirming that I have the proper nerve."
+    },
+    {
+      "start": 250.03,
+      "end": 251.33,
+      "text": "by nerve stimulation."
+    },
+    {
+      "start": 251.93,
+      "end": 255.26,
+      "text": "I'll inject local anesthetic around the nerve."
+    },
+    {
+      "start": 255.95,
+      "end": 259.97,
+      "text": "This nerve block, we use 30ccs of local anesthetic."
+    },
+    {
+      "start": 260.7,
+      "end": 268.49,
+      "text": "Usually, we'll inject 1.5% rompithicane, however, on occasion we will use 1.25% markane for this block."
+    },
+    {
+      "start": 272.3,
+      "end": 277.57,
+      "text": "It's structures to avoid, obviously, are the femoral vessels, which is why it's one"
+    },
+    {
+      "start": 277.57,
+      "end": 279.63,
+      "text": "of the two structures that I want to identify."
+    },
+    {
+      "start": 280.06,
+      "end": 281.52,
+      "text": "before I will place my needle."
+    },
+    {
+      "start": 295.18,
+      "end": 298.46,
+      "text": "Okay, so in this example, this is actually a right leg"
+    },
+    {
+      "start": 298.46,
+      "end": 299.72,
+      "text": "and you can see there,"
+    },
+    {
+      "start": 300.0,
+      "end": 308.01,
+      "text": "the femur sitting to the left side of the screen which is lateral and immediately you can"
+    },
+    {
+      "start": 308.01,
+      "end": 309.83,
+      "text": "and see pulsating the femoral vest."
+    },
+    {
+      "start": 310.06,
+      "end": 316.24,
+      "text": "You also can see the sciatic nerve sitting pretty prominently in the middle of the screen."
+    },
+    {
+      "start": 316.66,
+      "end": 319.96,
+      "text": "You can appreciate the needle approaching the"
+    },
+    {
+      "start": 320.0,
+      "end": 325.93,
+      "text": "nerve looks like out of plane which is how I mentioned that usually do do this"
+    },
+    {
+      "start": 325.93,
+      "end": 329.98,
+      "text": "block because I am not I want"
+    },
+    {
+      "start": 330.0,
+      "end": 335.92,
+      "text": "to make sure that the nerve is in fact the nerve and not say another structure such as a lymph node,"
+    },
+    {
+      "start": 335.92,
+      "end": 339.26,
+      "text": "but I will use nerve stimulation as I approach the nerve."
+    },
+    {
+      "start": 341.06,
+      "end": 346.5,
+      "text": "Once I've confirmed that the structure is in fact the nerve, I will begin to infiltrate"
+    },
+    {
+      "start": 346.5,
+      "end": 349.96,
+      "text": "local anesthetic around the nerve on the"
+    },
+    {
+      "start": 350.0,
+      "end": 358.6,
+      "text": "either side to ensure that as I do that, I'm going to get good spread and a strong block."
+    },
+    {
+      "start": 360.0,
+      "end": 362.62,
+      "text": "Once again, the things to ensure that you avoid,"
+    },
+    {
+      "start": 362.8,
+      "end": 364.56,
+      "text": "you don't want to be hitting femur,"
+    },
+    {
+      "start": 365.14,
+      "end": 367.66,
+      "text": "you don't want to be traversing femoral vessels."
+    },
+    {
+      "start": 368.98,
+      "end": 369.96,
+      "text": "And as..."
+    },
+    {
+      "start": 370.0,
+      "end": 375.89,
+      "text": "such an out-of-plane approach is advisable for this block."
+    },
+    {
+      "start": 376.72,
+      "end": 379.66,
+      "text": "We do use 30ccs of local anesthetic."
+    },
+    {
+      "start": 380.7,
+      "end": 384.58,
+      "text": "usually we'll use rope hivocaine half percent however quarter percent"
+    },
+    {
+      "start": 384.58,
+      "end": 389.84,
+      "text": "markane for a one shot blocks are frequently used in this example you can now"
+    },
+    {
+      "start": 390.0,
+      "end": 399.11,
+      "text": "the local anesthetic infiltrating just above around the nerve and circumferential spread and once you've"
+    },
+    {
+      "start": 399.11,
+      "end": 399.81,
+      "text": "achieve this."
+    },
+    {
+      "start": 400.0,
+      "end": 409.96,
+      "text": "You will have a strong block, but keep in mind the sciatic nerve is very large and on set of local anesthetic to get a strong block."
+    }
+  ]
+}

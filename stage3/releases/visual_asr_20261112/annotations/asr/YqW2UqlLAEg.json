@@ -1,0 +1,313 @@
+{
+  "video_id": "YqW2UqlLAEg",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/eval/YqW2UqlLAEg/asr.txt",
+  "segments": [
+    {
+      "start": 0.74,
+      "end": 2.48,
+      "text": "Hello, my name is Dr. DeBajja."
+    },
+    {
+      "start": 2.66,
+      "end": 4.5,
+      "text": "I'm one of the critical care fellows here"
+    },
+    {
+      "start": 4.5,
+      "end": 5.84,
+      "text": "at the University of Florida."
+    },
+    {
+      "start": 6.62,
+      "end": 8.56,
+      "text": "I'm also trained in emergency medicine."
+    },
+    {
+      "start": 9.24,
+      "end": 9.98,
+      "text": "So now we're going to be doing..."
+    },
+    {
+      "start": 10.0,
+      "end": 15.559999999999999,
+      "text": "a little bit of lung profiling when we talk about ultra-cinography. The point of"
+    },
+    {
+      "start": 15.559999999999999,
+      "end": 19.86,
+      "text": "this a little session is not to go over the blue protocol which kind of goes over"
+    },
+    {
+      "start": 20.06,
+      "end": 22.66,
+      "text": "all the different lung profiles and different diagnosis,"
+    },
+    {
+      "start": 23.259999999999998,
+      "end": 24.94,
+      "text": "but just to kind of identify the basics"
+    },
+    {
+      "start": 24.94,
+      "end": 26.28,
+      "text": "of lung profiling."
+    },
+    {
+      "start": 27.42,
+      "end": 29.96,
+      "text": "So typically, to begin, when you..."
+    },
+    {
+      "start": 30.0,
+      "end": 34.34,
+      "text": "You do long-profiling, you're probably going to use your cardiac pro, you're also able"
+    },
+    {
+      "start": 34.34,
+      "end": 39.0,
+      "text": "to use your abdominal probe as well for this examination."
+    },
+    {
+      "start": 40.26,
+      "end": 45.94,
+      "text": "Vascular probes typically are reserved to just evaluate the plura if you were doing lung office"
+    },
+    {
+      "start": 45.94,
+      "end": 49.86,
+      "text": "inography. So initially when you want to do the initial"
+    },
+    {
+      "start": 50.0,
+      "end": 54.54,
+      "text": "exam you can start off on either side obviously but you want to go to the"
+    },
+    {
+      "start": 54.54,
+      "end": 59.86,
+      "text": "anterior chest and in the anterior chest typically you want to go through"
+    },
+    {
+      "start": 60.0,
+      "end": 65.7,
+      "text": "and see a long profile or a section of the lung typically between ribs two and"
+    },
+    {
+      "start": 65.7,
+      "end": 69.98,
+      "text": "three or three and four, and typically it's at the mid-cliv-"
+    },
+    {
+      "start": 70.0,
+      "end": 75.31,
+      "text": "other line as well. So let's start off here. Let's find out what kind of"
+    },
+    {
+      "start": 75.31,
+      "end": 76.77,
+      "text": "length profiles we are going to be seeing."
+    },
+    {
+      "start": 85.18,
+      "end": 89.9,
+      "text": "So the initial image that you want to see is long."
+    },
+    {
+      "start": 90.0,
+      "end": 98.28,
+      "text": "parent kai ma. You're going to see a hyperacoic line here followed by two ribs"
+    },
+    {
+      "start": 98.28,
+      "end": 99.76,
+      "text": "that flank that are going to be"
+    },
+    {
+      "start": 100.1,
+      "end": 104.21,
+      "text": "Hippo Koek, or they're gonna be the ribs themselves."
+    },
+    {
+      "start": 105.12,
+      "end": 108.38,
+      "text": "And so you initially are looking, let's say,"
+    },
+    {
+      "start": 108.5,
+      "end": 109.62,
+      "text": "for a lines."
+    },
+    {
+      "start": 110.64,
+      "end": 119.81,
+      "text": "So if you only see a lines which are right here, these typically represent the normal variant and reverberations."
+    },
+    {
+      "start": 120.0,
+      "end": 129.91,
+      "text": "of the plurum. And so on this patient you're seeing airlines only. You may also see on this profile some"
+    },
+    {
+      "start": 130.0,
+      "end": 137.67,
+      "text": "like B lines and typically B lines will extend from the plot itself all the way down and of extending"
+    },
+    {
+      "start": 137.67,
+      "end": 139.97,
+      "text": "going all the way to the bottom of the screen, which this..."
+    },
+    {
+      "start": 140.0,
+      "end": 140.82,
+      "text": "patient does not have."
+    },
+    {
+      "start": 142.14,
+      "end": 145.68,
+      "text": "If you are to seed me lines, you typically have to see two or more in order to classify"
+    },
+    {
+      "start": 145.68,
+      "end": 147.38,
+      "text": "the lung as a B profile."
+    },
+    {
+      "start": 147.6,
+      "end": 149.97,
+      "text": "If you see none, and all you see is a-"
+    },
+    {
+      "start": 150.0,
+      "end": 154.64,
+      "text": "lines or reverberation of the plur itself, you will be calling this an aprofile."
+    },
+    {
+      "start": 155.44,
+      "end": 159.86,
+      "text": "So you would also need to consider the second side in order to classify the exam as a profile."
+    },
+    {
+      "start": 160.0,
+      "end": 162.96,
+      "text": "as a profile, or a B profile, or a AB profile."
+    },
+    {
+      "start": 163.98,
+      "end": 165.38,
+      "text": "So if I go over to the next log,"
+    },
+    {
+      "start": 165.54,
+      "end": 167.98,
+      "text": "I see a very similar picture with only aligns."
+    },
+    {
+      "start": 167.98,
+      "end": 168.96,
+      "text": "I'm gonna call this patient."
+    },
+    {
+      "start": 170.0,
+      "end": 177.55,
+      "text": "a profile. If on the opposite side I had B lines and on the side that we're looking at now"
+    },
+    {
+      "start": 177.55,
+      "end": 179.51,
+      "text": "on the A lines I would call that AB profile."
+    },
+    {
+      "start": 180.19,
+      "end": 183.55,
+      "text": "And if both sides had B lines, they'd be called a B profile."
+    },
+    {
+      "start": 184.01,
+      "end": 188.09,
+      "text": "All of those profiles have a different differential diagnosis."
+    },
+    {
+      "start": 188.92,
+      "end": 189.88,
+      "text": "And the patient that typically"
+    },
+    {
+      "start": 190.0,
+      "end": 198.06,
+      "text": "has an aprofile. We could not assume, but multiple things can be thought of when we have"
+    },
+    {
+      "start": 198.06,
+      "end": 199.88,
+      "text": "a profile, one being normal."
+    },
+    {
+      "start": 200.0,
+      "end": 205.17,
+      "text": "aerated lung, such as in this patient, who is relatively healthy, and also processes"
+    },
+    {
+      "start": 205.46,
+      "end": 209.81,
+      "text": "such as pulmonary embolisms, COPD, asthma,"
+    },
+    {
+      "start": 210.03,
+      "end": 212.47,
+      "text": "as well, can give you an A profile."
+    },
+    {
+      "start": 214.6,
+      "end": 217.2,
+      "text": "Obviously, if you see an A profile that would prompt you"
+    },
+    {
+      "start": 217.2,
+      "end": 218.94,
+      "text": "to kind of do a further workup."
+    },
+    {
+      "start": 220.0,
+      "end": 224.82,
+      "text": "In this case, let's say we were considering a PD, we would move on to a DVT exam, etc."
+    },
+    {
+      "start": 224.82,
+      "end": 229.98,
+      "text": "and an AB profile, the B lines that you"
+    },
+    {
+      "start": 230.0,
+      "end": 235.24,
+      "text": "you would see could suggest that there's pulmonary edema or fluid-filled LDOI, congestion,"
+    },
+    {
+      "start": 235.24,
+      "end": 237.16,
+      "text": "Also, pneumonia can appear as well."
+    },
+    {
+      "start": 238.9,
+      "end": 239.9,
+      "text": "And a-"
+    },
+    {
+      "start": 240.0,
+      "end": 245.89,
+      "text": "b-profile which is asymmetric. And then obviously in a b-profile where you have fluid-filled"
+    },
+    {
+      "start": 245.89,
+      "end": 249.77,
+      "text": "L.V.O.L.I., pulmonary congestion, etc. and the bilateral lungs."
+    },
+    {
+      "start": 250.0,
+      "end": 258.91,
+      "text": "You can consider things as ARDS, heart failure or hydrostatic climate congestion, things of that nature."
+    }
+  ]
+}

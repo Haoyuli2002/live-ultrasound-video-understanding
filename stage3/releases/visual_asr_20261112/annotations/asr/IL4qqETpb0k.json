@@ -1,0 +1,248 @@
+{
+  "video_id": "IL4qqETpb0k",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/IL4qqETpb0k/asr.txt",
+  "segments": [
+    {
+      "start": 13.59,
+      "end": 19.55,
+      "text": "The side of nerve block can be used for surgery of the leg, knee, foot and ankle."
+    },
+    {
+      "start": 20.98,
+      "end": 25.6,
+      "text": "To do the side of nerve block, you can block it at the popliteal region or you can block it higher."
+    },
+    {
+      "start": 26.35,
+      "end": 32.19,
+      "text": "Some benefits of blocking it higher are to be above the tourniquet so you don't have to worry so much"
+    },
+    {
+      "start": 32.19,
+      "end": 38.44,
+      "text": "about nervous chemia. You may also get the posterior femoral cutaneous nerve of the thigh which comes"
+    },
+    {
+      "start": 38.44,
+      "end": 44.48,
+      "text": "off very high on the side of nerve and it's also medial to the side of nerve as well high up."
+    },
+    {
+      "start": 45.4,
+      "end": 50.2,
+      "text": "This way you can cover any kind of pain of incision in the upper thigh area."
+    },
+    {
+      "start": 50.78,
+      "end": 56.56,
+      "text": "To position patients for the subgludial sciatic nerve block, we position the patient lateral."
+    },
+    {
+      "start": 57.12,
+      "end": 62.72,
+      "text": "This way the patient is comfortable, they can be well sedated and you can place a probe"
+    },
+    {
+      "start": 63.16,
+      "end": 67.12,
+      "text": "on the posterior side of the leg and advance the needle from lateral to medial."
+    },
+    {
+      "start": 67.48,
+      "end": 72.06,
+      "text": "The probe we use for a sciatic nerve block is a curvilinear low frequency probe."
+    },
+    {
+      "start": 72.06,
+      "end": 78.84,
+      "text": "So the reason we use this probe is because it penetrates deeper and this is useful in larger"
+    },
+    {
+      "start": 78.84,
+      "end": 79.3,
+      "text": "patients."
+    },
+    {
+      "start": 81.06,
+      "end": 87.28,
+      "text": "So some of the landmarks we use for the subgluteal sciatic nerve block are the greater"
+    },
+    {
+      "start": 87.28,
+      "end": 94.2,
+      "text": "trochanter laterally, the ischial tuberosity immediately, and directly in between these"
+    },
+    {
+      "start": 94.2,
+      "end": 96.18,
+      "text": "two is where we place the probe."
+    },
+    {
+      "start": 96.6,
+      "end": 103.88,
+      "text": "The initial view we see is the greater trochanter on the left side of the screen, on the right"
+    },
+    {
+      "start": 103.88,
+      "end": 109.36,
+      "text": "side of the screen we see the ischial tuberosity. There is a large muscle the"
+    },
+    {
+      "start": 109.36,
+      "end": 115.5,
+      "text": "gluteus maximus at the superficial level of the screen. Underneath the gluteus"
+    },
+    {
+      "start": 115.5,
+      "end": 123.46,
+      "text": "maximus is a hyper-echoic nerve, the sciatic nerve. Between the two bony"
+    },
+    {
+      "start": 123.46,
+      "end": 128.79,
+      "text": "landmarks is the quadratus femoris. So at this level the nerve is sandwiched"
+    },
+    {
+      "start": 128.79,
+      "end": 134.54,
+      "text": "between the gluteus maximus and the quadratus femoris. The nerve here can"
+    },
+    {
+      "start": 134.54,
+      "end": 139.97,
+      "text": "appear wide, flat, or triangular. It is not a circular structure like some people"
+    },
+    {
+      "start": 139.97,
+      "end": 145.45,
+      "text": "imagine. Neal approaches for the side at nerve block whether it be here at the"
+    },
+    {
+      "start": 145.45,
+      "end": 150.93,
+      "text": "mid-femal region or higher up at the subglutial region are performed from a"
+    },
+    {
+      "start": 150.93,
+      "end": 157.88,
+      "text": "lateral to medial approach. The lateral to medial approach usually starts three to"
+    },
+    {
+      "start": 157.88,
+      "end": 163.6,
+      "text": "four centimeters away from the probe in this angle. Now, higher up will use the"
+    },
+    {
+      "start": 163.6,
+      "end": 168.78,
+      "text": "same needle approach, we can see the triangular side of the nerve here and we'll start the needle"
+    },
+    {
+      "start": 168.78,
+      "end": 175.59,
+      "text": "angle about here. I typically put my nerve on the distal side of the screen from where my needle is"
+    },
+    {
+      "start": 175.59,
+      "end": 182.41,
+      "text": "entering in order to see the needle better and traveling across the screen to the nerve."
+    },
+    {
+      "start": 182.73,
+      "end": 189.17,
+      "text": "Typical volumes are 20 to 30 milliliters of local anesthetic. Because this nerve is so deep in"
+    },
+    {
+      "start": 189.17,
+      "end": 195.31,
+      "text": "some people, some anesthesiologists like to approach this nerve from out-of-play needle"
+    },
+    {
+      "start": 195.31,
+      "end": 195.83,
+      "text": "angle."
+    },
+    {
+      "start": 196.25,
+      "end": 200.35,
+      "text": "And out-of-play needle angle would be in this direction to the side at nerve."
+    },
+    {
+      "start": 200.73,
+      "end": 206.67,
+      "text": "Other people like to turn this probe in a longitudinal direction and see the nerve in"
+    },
+    {
+      "start": 206.67,
+      "end": 207.41,
+      "text": "long axis."
+    },
+    {
+      "start": 208.07,
+      "end": 213.83,
+      "text": "So here we are turning the probe in the long axis and following that nerve in the longitudinal"
+    },
+    {
+      "start": 213.83,
+      "end": 214.81,
+      "text": "pattern here."
+    },
+    {
+      "start": 214.81,
+      "end": 222.55,
+      "text": "So now we see the sciatic nerve going down the leg, the needle approach in this"
+    },
+    {
+      "start": 222.55,
+      "end": 228.89,
+      "text": "orientation would be in this angle in plane of the ultrasound beam down to the"
+    },
+    {
+      "start": 228.89,
+      "end": 239.14,
+      "text": "sciatic nerve. Here you can see the greater trochanter on the left side of the"
+    },
+    {
+      "start": 239.14,
+      "end": 243.74,
+      "text": "screen, the ischial tuberosity on the right side of the screen, the gluteus"
+    },
+    {
+      "start": 243.74,
+      "end": 250.43,
+      "text": "maximus superficial and a 21 gauge needle advancing to the sciatic nerve."
+    },
+    {
+      "start": 250.43,
+      "end": 256.58,
+      "text": "The sideic nerve is below the gluteus maximus and above the quadratus femoris."
+    },
+    {
+      "start": 257.88,
+      "end": 262.84,
+      "text": "Our needle is advancing above the sideic nerve to attempt to get local anesthetic to spread"
+    },
+    {
+      "start": 263.18,
+      "end": 269.02,
+      "text": "to the medial side of the nerve, which would be more likely to get the larger tibial component"
+    },
+    {
+      "start": 269.02,
+      "end": 273.06,
+      "text": "as well as the posterior femoral cutaneous nerve of the thigh."
+    },
+    {
+      "start": 274.13,
+      "end": 277.73,
+      "text": "Now, you can see the nerve, which is very hyperacoate,"
+    },
+    {
+      "start": 277.93,
+      "end": 279.67,
+      "text": "but lowly local anesthetic."
+    }
+  ]
+}

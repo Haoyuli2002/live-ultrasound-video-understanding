@@ -1,0 +1,408 @@
+{
+  "video_id": "DwtvZ0tC9ng",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/DwtvZ0tC9ng/asr.txt",
+  "segments": [
+    {
+      "start": 4.19,
+      "end": 9.85,
+      "text": "Dr. Stephen Fankle from Stanford School of Regional Anesthesia in this video we're going to look at how we do our"
+    },
+    {
+      "start": 10.06,
+      "end": 15.440000000000001,
+      "text": "nerve blocks at the Stanford Hospital and whether you're approaching this block"
+    },
+    {
+      "start": 15.440000000000001,
+      "end": 19.86,
+      "text": "for a one-shot block or you're going to be placing a catheter patient."
+    },
+    {
+      "start": 20.03,
+      "end": 29.759999999999998,
+      "text": "Positioning is the same. We're going to have our patients lying supine. If we're doing a one shot block, obviously we have the site prepped sterile."
+    },
+    {
+      "start": 30.03,
+      "end": 31.67,
+      "text": "but we do not drape it."
+    },
+    {
+      "start": 32.21,
+      "end": 34.53,
+      "text": "And if we're gonna be placing a catheter in"
+    },
+    {
+      "start": 35.269999999999996,
+      "end": 37.78,
+      "text": "the entire site is prepped and draped"
+    },
+    {
+      "start": 37.78,
+      "end": 39.78,
+      "text": "in sterile fashion along with the ultrasound."
+    },
+    {
+      "start": 40.0,
+      "end": 44.980000000000004,
+      "text": "probe being covered. All right so for doing our femoral nerve block I have the"
+    },
+    {
+      "start": 44.980000000000004,
+      "end": 49.44,
+      "text": "patient lying in supine position. I'm going to be placing the ultrasound probe"
+    },
+    {
+      "start": 49.44,
+      "end": 49.9,
+      "text": "of the session."
+    },
+    {
+      "start": 50.0,
+      "end": 55.96,
+      "text": "right near the immortal crease and what I'm looking for to find first because it's a great"
+    },
+    {
+      "start": 56.62,
+      "end": 59.9,
+      "text": "marker are the femoral vessels so I don't see"
+    },
+    {
+      "start": 60.0,
+      "end": 63.94,
+      "text": "anything on this scan, I'm going to start approaching immediately and I'm going to take"
+    },
+    {
+      "start": 63.94,
+      "end": 68.78,
+      "text": "advantage of the anatomy that we know so that the nerve will sit lateral to the"
+    },
+    {
+      "start": 68.78,
+      "end": 69.52,
+      "text": "the federal vessel."
+    },
+    {
+      "start": 69.74,
+      "end": 69.98,
+      "text": "So it's..."
+    },
+    {
+      "start": 70.0,
+      "end": 77.78,
+      "text": "scan immediately, I'm very interested in finding the femoral vessels, which I'm starting to see come into the screen here."
+    },
+    {
+      "start": 80.93,
+      "end": 82.45,
+      "text": "having located my femoral vessels."
+    },
+    {
+      "start": 82.45,
+      "end": 84.57,
+      "text": "I'm just gonna scan upward in a little bit."
+    },
+    {
+      "start": 85.02,
+      "end": 85.84,
+      "text": "Notice what happened."
+    },
+    {
+      "start": 86.14,
+      "end": 87.7,
+      "text": "Here's our femoral artery."
+    },
+    {
+      "start": 88.0,
+      "end": 89.96000000000001,
+      "text": "Clearly you can see in pulse..."
+    },
+    {
+      "start": 90.0,
+      "end": 95.76,
+      "text": "little fashion. And we're going to do a little color Doppler flow through there just to confirm."
+    },
+    {
+      "start": 97.25,
+      "end": 99.96000000000001,
+      "text": "All right. Having confirmed that that's a vessel, if..."
+    },
+    {
+      "start": 100.0,
+      "end": 105.28,
+      "text": "My probe is a little bit too caudate and you're going to see right now it's already given"
+    },
+    {
+      "start": 105.6,
+      "end": 109.98,
+      "text": "off and split from the femoral artery, and this may very well be the..."
+    },
+    {
+      "start": 110.1,
+      "end": 118.03999999999999,
+      "text": "And we don't want to block at this level. I'm going to raise and go cephalad so that I have one clear defined artery here."
+    },
+    {
+      "start": 118.98,
+      "end": 119.96000000000001,
+      "text": "And we know that the thumb..."
+    },
+    {
+      "start": 120.0,
+      "end": 125.26,
+      "text": "there is going to sit lateral to the femoral artery and I'm just going to gently rock my"
+    },
+    {
+      "start": 125.26,
+      "end": 129.36,
+      "text": "probe. Notice how the image changes slightly as I do that."
+    },
+    {
+      "start": 130.0,
+      "end": 135.15,
+      "text": "much poorer image and as I gently rock backward I'm going to get a much"
+    },
+    {
+      "start": 135.44,
+      "end": 139.26,
+      "text": "better image now and I strongly suspect that our federal"
+    },
+    {
+      "start": 139.26,
+      "end": 139.9,
+      "text": "of the city."
+    },
+    {
+      "start": 140.0,
+      "end": 143.24,
+      "text": "right here just lateral to the femoral artery."
+    },
+    {
+      "start": 144.07,
+      "end": 146.97,
+      "text": "One of the reasons that people have failed blocks"
+    },
+    {
+      "start": 146.97,
+      "end": 149.97,
+      "text": "when doing a femoral nerve block is that they don't have..."
+    },
+    {
+      "start": 150.03,
+      "end": 154.85,
+      "text": "appreciate that the femoral nerve, which again I suspect is right here, sits just underneath"
+    },
+    {
+      "start": 154.85,
+      "end": 156.37,
+      "text": "fascia iliacca."
+    },
+    {
+      "start": 157.18,
+      "end": 159.98,
+      "text": "The fascia iliacca, which I believe is this l-"
+    },
+    {
+      "start": 160.0,
+      "end": 164.43,
+      "text": "right here. Invest around the superior aspect of the"
+    },
+    {
+      "start": 164.43,
+      "end": 167.77,
+      "text": "federal nerve. If you come in with your needle lateral"
+    },
+    {
+      "start": 167.77,
+      "end": 169.96,
+      "text": "to medial and you don't"
+    },
+    {
+      "start": 170.03,
+      "end": 174.35,
+      "text": "get your needle underneath this fascial plane, you're going to have a very"
+    },
+    {
+      "start": 174.35,
+      "end": 179.61,
+      "text": "spotty or fail block. So any injection up here is going to be asking for failure."
+    },
+    {
+      "start": 180.32,
+      "end": 187.06,
+      "text": "The target that I look for is to inject underneath the nerve so that you see local spreading"
+    },
+    {
+      "start": 187.06,
+      "end": 189.86,
+      "text": "Starting around it on both sides, almost left."
+    },
+    {
+      "start": 190.03,
+      "end": 196.64,
+      "text": "the nerve upward. When you do that, you have good circumferential coverage. It's very, very rare"
+    },
+    {
+      "start": 196.64,
+      "end": 199.97,
+      "text": "to get a failed block. If you were going to be putting a..."
+    },
+    {
+      "start": 200.0,
+      "end": 202.94,
+      "text": "patheter in place once your one-shot injection is in."
+    },
+    {
+      "start": 204.54,
+      "end": 207.94,
+      "text": "I like to see the tip of my needle sitting right there underneath the nerve"
+    },
+    {
+      "start": 207.94,
+      "end": 209.84,
+      "text": "and if possible under..."
+    },
+    {
+      "start": 210.0,
+      "end": 216.52,
+      "text": "visualization, watch the catheter gently threading and sitting just underneath the"
+    },
+    {
+      "start": 216.52,
+      "end": 219.98,
+      "text": "I know several people do use nerve stimulator"
+    },
+    {
+      "start": 220.0,
+      "end": 229.45,
+      "text": "They are useful tools, but sometimes can also be frankly a hindrance if you're looking to try to get that perfect way."
+    },
+    {
+      "start": 231.0,
+      "end": 235.58,
+      "text": "I do tend to use them but when I've confirmed that I'm getting a twitch and I'm near this"
+    },
+    {
+      "start": 235.58,
+      "end": 239.94,
+      "text": "structure and I confirm that it's the nerve more interested in ensuring that I get"
+    },
+    {
+      "start": 240.0,
+      "end": 244.96,
+      "text": "proper spread on the anatomical view that I can see and ensuring that I get the"
+    },
+    {
+      "start": 244.96,
+      "end": 249.8,
+      "text": "absolute best twist down to point four on my monitor. Sometimes"
+    },
+    {
+      "start": 250.0,
+      "end": 254.97,
+      "text": "can be very frustrating trying to do that. In total, for this block, if we're doing"
+    },
+    {
+      "start": 254.97,
+      "end": 259.96,
+      "text": "a one-shot block, we would use 30 CCs of local anesthetics."
+    },
+    {
+      "start": 260.48,
+      "end": 266.4,
+      "text": "Currently, we are using 0.5% repevacane, but that has changed from time to time over the years."
+    },
+    {
+      "start": 268.34,
+      "end": 269.98,
+      "text": "Very important when you're doing this..."
+    },
+    {
+      "start": 270.0,
+      "end": 276.24,
+      "text": "Obviously, with any block, aspirate prior to injecting, in this instance, our biggest concern"
+    },
+    {
+      "start": 276.24,
+      "end": 279.76,
+      "text": "is very close to the femoral vessels we want to infowide."
+    },
+    {
+      "start": 280.19,
+      "end": 281.65,
+      "text": "an intravascular injection."
+    },
+    {
+      "start": 294.77,
+      "end": 299.85,
+      "text": "Okay, so this is a live block example of a femoral nerve block on a left leg, the needles coming later."
+    },
+    {
+      "start": 300.8,
+      "end": 302.82,
+      "text": "right to left across the screen."
+    },
+    {
+      "start": 303.42,
+      "end": 305.18,
+      "text": "The femoral artery is just off."
+    },
+    {
+      "start": 305.4,
+      "end": 307.8,
+      "text": "It's just on the screen that you can appreciate."
+    },
+    {
+      "start": 308.6,
+      "end": 309.98,
+      "text": "There is a nerve stimulator being..."
+    },
+    {
+      "start": 310.0,
+      "end": 314.24,
+      "text": "use, so the needle seems to jump in and out of plane. But once I've confirmed that I"
+    },
+    {
+      "start": 314.24,
+      "end": 319.82,
+      "text": "have my twitch, I tend to turn my nerve stimulator off. I'm interested in positioning"
+    },
+    {
+      "start": 320.0,
+      "end": 325.52,
+      "text": "my needle just under the nerve and beginning my injection there, looking for good circumferential"
+    },
+    {
+      "start": 325.52,
+      "end": 325.94,
+      "text": "spread."
+    },
+    {
+      "start": 326.1,
+      "end": 329.94,
+      "text": "If I can't get it with the needle underneath, I will readjust the needle, you see it now."
+    },
+    {
+      "start": 330.0,
+      "end": 335.33,
+      "text": "sitting on top of the nerve, and the keys are to make sure you get good local anesthetic spread"
+    },
+    {
+      "start": 335.89,
+      "end": 339.97,
+      "text": "so that you have circumferential coverage around the nerve. The nerve block can take"
+    },
+    {
+      "start": 340.0,
+      "end": 346.53,
+      "text": "a good 20 to 30 minutes to fully set because the femoral nerve is a large structure so don't"
+    },
+    {
+      "start": 346.53,
+      "end": 349.27,
+      "text": "be discouraged if you don't have a good block."
+    }
+  ]
+}

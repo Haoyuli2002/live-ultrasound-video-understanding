@@ -1,0 +1,393 @@
+{
+  "video_id": "RskrEsAGzec",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/eval/RskrEsAGzec/asr.txt",
+  "segments": [
+    {
+      "start": 10.03,
+      "end": 13.9,
+      "text": "When discussing ultrasound guided peripheral nerve block technique,"
+    },
+    {
+      "start": 14.4,
+      "end": 18.76,
+      "text": "it is useful to describe basic nomenclature for needle and probe manipulation."
+    },
+    {
+      "start": 20.0,
+      "end": 24.76,
+      "text": "Much of this is derived from the American Institute of Ultrasound in Medicine Standards."
+    },
+    {
+      "start": 26.17,
+      "end": 29.98,
+      "text": "We will describe the two basic scan planes, the five..."
+    },
+    {
+      "start": 30.13,
+      "end": 33.41,
+      "text": "nipulation maneuvers and the two needle approaches."
+    },
+    {
+      "start": 35.73,
+      "end": 39.91,
+      "text": "In the following figures, we are looking at a schematic of an ultrasound transducer."
+    },
+    {
+      "start": 40.0,
+      "end": 45.02,
+      "text": "Sir, applied to a tissue equivalent phantom with three different embedded objects."
+    },
+    {
+      "start": 46.22,
+      "end": 48.84,
+      "text": "A depiction of the ultrasound screen is in set."
+    },
+    {
+      "start": 50.16,
+      "end": 55.52,
+      "text": "We generally image long cylindrical structures with an ultrasound beam that is essentially"
+    },
+    {
+      "start": 55.52,
+      "end": 59.82,
+      "text": "Plainer. Short Axis Imaging Cuts This"
+    },
+    {
+      "start": 60.0,
+      "end": 65.34,
+      "text": "transversely revealing a circle. Long axis imaging cuts the cylinder"
+    },
+    {
+      "start": 65.34,
+      "end": 68.4,
+      "text": "longitudinally to create two parallel lines."
+    },
+    {
+      "start": 70.19,
+      "end": 75.29,
+      "text": "Long axis imaging is of limited use in ultrasound guided peripheral nerve blocks."
+    },
+    {
+      "start": 76.71,
+      "end": 79.81,
+      "text": "An ultrasound transducer can be rotated or translated."
+    },
+    {
+      "start": 80.0,
+      "end": 88.53,
+      "text": "along any of its three axes, and we need to use the AIUM standards so that we can communicate clearly with one another."
+    },
+    {
+      "start": 90.03,
+      "end": 96.91,
+      "text": "Here we see an ultrasound probe moving and pivoting along each of its X, Y, and Z axes."
+    },
+    {
+      "start": 98.37,
+      "end": 99.97,
+      "text": "Each of these movements has a..."
+    },
+    {
+      "start": 100.0,
+      "end": 102.5,
+      "text": "name that we will define in the next section."
+    },
+    {
+      "start": 119.15,
+      "end": 119.97,
+      "text": "Sliding is a min-"
+    },
+    {
+      "start": 120.0,
+      "end": 125.33,
+      "text": "maneuver that translates the transducer along the course of its structure or perpendicular"
+    },
+    {
+      "start": 125.33,
+      "end": 127.69,
+      "text": "to it to scan adjacent structures."
+    },
+    {
+      "start": 138.42,
+      "end": 139.98,
+      "text": "Impression is a useful..."
+    },
+    {
+      "start": 140.0,
+      "end": 146.56,
+      "text": "over that has numerous effects. First, it moves the active face toward deeper structures"
+    },
+    {
+      "start": 146.86,
+      "end": 148.78,
+      "text": "to make them appear more superficial."
+    },
+    {
+      "start": 150.29,
+      "end": 153.41,
+      "text": "It also helps differentiate between different structures"
+    },
+    {
+      "start": 153.41,
+      "end": 155.37,
+      "text": "by their relative compressibility."
+    },
+    {
+      "start": 156.57,
+      "end": 159.84,
+      "text": "Vains are easy to compress, arteries are somewhat compressed."
+    },
+    {
+      "start": 160.0,
+      "end": 164.04,
+      "text": "and pulsatile, and nerves are fairly incompressible."
+    },
+    {
+      "start": 178.61,
+      "end": 179.97,
+      "text": "Rocking allows us to..."
+    },
+    {
+      "start": 180.06,
+      "end": 183.92,
+      "text": "extend the plane of imaging when we are working in a narrow acoustic window."
+    },
+    {
+      "start": 190.06,
+      "end": 194.24,
+      "text": "Rotation is used to switch between short axis and long axis imaging."
+    },
+    {
+      "start": 202.88,
+      "end": 207.98,
+      "text": "Hilting allows us to scan along the course of a structure through a narrow acoustic window."
+    },
+    {
+      "start": 209.05,
+      "end": 209.75,
+      "text": "In nerve imaging,"
+    },
+    {
+      "start": 210.03,
+      "end": 212.55,
+      "text": "It is critical to optimize transducer tilt"
+    },
+    {
+      "start": 212.55,
+      "end": 215.13,
+      "text": "to properly visualize nerve fascicles."
+    },
+    {
+      "start": 216.56,
+      "end": 219.46,
+      "text": "Nerves are seen best when the scan plane is orthogonal"
+    },
+    {
+      "start": 219.46,
+      "end": 219.98,
+      "text": "to the..."
+    },
+    {
+      "start": 220.03,
+      "end": 220.79,
+      "text": "course of the nerve."
+    },
+    {
+      "start": 228.51,
+      "end": 229.97,
+      "text": "Given that we are most intrest-"
+    },
+    {
+      "start": 230.0,
+      "end": 235.82,
+      "text": "in nerves imaged on short axis, we will now look at how the needle will be seen as it approaches"
+    },
+    {
+      "start": 235.82,
+      "end": 239.98,
+      "text": "nerves with the out-of-plane needle a Prrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr"
+    },
+    {
+      "start": 240.0,
+      "end": 245.44,
+      "text": "The needle starts in front of the plane of imaging and advances until it crosses the plane"
+    },
+    {
+      "start": 245.44,
+      "end": 249.97,
+      "text": "of imaging as an ecogenic dot with the info."
+    },
+    {
+      "start": 250.0,
+      "end": 256.04,
+      "text": "needle approach, the needle is visualized on its long axis as it advances within the scan plane."
+    },
+    {
+      "start": 259.13,
+      "end": 259.97,
+      "text": "Now let's move on."
+    },
+    {
+      "start": 260.0,
+      "end": 264.68,
+      "text": "to show some of the common challenges with visualizing the block needle sonographically."
+    },
+    {
+      "start": 268.32,
+      "end": 269.98,
+      "text": "Block needles are specular reflect-"
+    },
+    {
+      "start": 270.0,
+      "end": 274.46,
+      "text": "factors, meaning they reflect sound back to the receiver over a narrow angle."
+    },
+    {
+      "start": 275.5,
+      "end": 279.96,
+      "text": "As the angle between the transducer and needle increases, less sound."
+    },
+    {
+      "start": 280.0,
+      "end": 283.76,
+      "text": "is reflected back to the receiver, and the signal becomes weaker."
+    },
+    {
+      "start": 285.2,
+      "end": 289.88,
+      "text": "We can also see that this is true for sound reflected off the sides of the needle."
+    },
+    {
+      "start": 290.0,
+      "end": 299.3,
+      "text": "shaft. With the short axis out of plane approach, the needle will be seen best when the tip is within the plane of imaging."
+    },
+    {
+      "start": 300.77,
+      "end": 304.89,
+      "text": "The shaft gives a signal that may be no stronger than surrounding structures."
+    },
+    {
+      "start": 308.52,
+      "end": 309.74,
+      "text": "Generally, tissue displacement..."
+    },
+    {
+      "start": 310.0,
+      "end": 315.42,
+      "text": "is transmitted far enough along tissue planes for the operator to get a sense for the trajectory"
+    },
+    {
+      "start": 315.42,
+      "end": 319.98,
+      "text": "of the needle. This is a dynamic process, and we're live-"
+    },
+    {
+      "start": 320.0,
+      "end": 324.92,
+      "text": "on the operator's ability to detect tissue displacement created by needle movement."
+    },
+    {
+      "start": 326.3,
+      "end": 328.12,
+      "text": "Staccato movement should be avoided."
+    },
+    {
+      "start": 330.48,
+      "end": 336.1,
+      "text": "Needle position can also be inferred by observing the distribution of small test injections"
+    },
+    {
+      "start": 336.1,
+      "end": 337.66,
+      "text": "and making needle adjustments."
+    },
+    {
+      "start": 341.57,
+      "end": 347.05,
+      "text": "Often, slight tilting of the probe can be used to locate and follow the advancing needle tip."
+    },
+    {
+      "start": 353.52,
+      "end": 356.7,
+      "text": "In plain needle manipulation offers its own set of challenges."
+    },
+    {
+      "start": 357.99,
+      "end": 359.83,
+      "text": "Here is a sonogram of a block needle."
+    },
+    {
+      "start": 360.0,
+      "end": 363.86,
+      "text": "with the transducer sliding in and out of alignment with the needle."
+    },
+    {
+      "start": 366.17,
+      "end": 369.89,
+      "text": "Settle movements of the needle or transducer can produce markage."
+    },
+    {
+      "start": 370.0,
+      "end": 377.8,
+      "text": "and visibility. This pair of sonograms shows the same needle at different angles in a water tank."
+    },
+    {
+      "start": 379.09,
+      "end": 379.81,
+      "text": "The needle is much"
+    },
+    {
+      "start": 380.0,
+      "end": 384.76,
+      "text": "better resolved when it is inserted at a shallow angle relative to the transducer."
+    },
+    {
+      "start": 387.03,
+      "end": 389.67,
+      "text": "The next set of problems occurs when the needle trajectory"
+    },
+    {
+      "start": 390.0,
+      "end": 399.91,
+      "text": "straights from the plane of imaging. If the needle crosses the plane of imaging, but does not completely lie within it, only a portion of the"
+    },
+    {
+      "start": 400.0,
+      "end": 409.48,
+      "text": "needle will be seen. This can give a false impression of needle depth that can lead to complications."
+    },
+    {
+      "start": 410.48,
+      "end": 415.3,
+      "text": "Alignment issues can often be addressed by leaving the needle stationary and manipulating"
+    },
+    {
+      "start": 415.3,
+      "end": 418.58,
+      "text": "the transducer until the tip of the needle is imaged."
+    },
+    {
+      "start": 419.5,
+      "end": 419.96,
+      "text": "The needle-"
+    },
+    {
+      "start": 420.0,
+      "end": 423.86,
+      "text": "level has a characteristic stair step appearance that should be sought out."
+    },
+    {
+      "start": 426.32,
+      "end": 429.98,
+      "text": "This concludes this video tutorial on ultrasound pro..."
+    },
+    {
+      "start": 430.0,
+      "end": 431.12,
+      "text": "and needle manipulation."
+    }
+  ]
+}

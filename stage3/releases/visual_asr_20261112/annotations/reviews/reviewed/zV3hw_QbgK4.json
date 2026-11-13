@@ -1,0 +1,196 @@
+{
+  "understanding": "Central venous access teaching sequence with schematic examples, short-axis sonography, a long-axis phantom demonstration, and subsequent guidewire imaging.",
+  "native_opened": [
+    146,
+    216,
+    293,
+    390,
+    391,
+    392,
+    393,
+    475,
+    495,
+    520
+  ],
+  "tasks": [
+    {
+      "qa_type": "current_observation",
+      "query_time": 146,
+      "answer_time": 146,
+      "checkpoints": [],
+      "question": "Where is the bright needle cross-section relative to the jugular lumen in the transverse inset?",
+      "reference_answer": "The bright dot is above the lumen, on the near side of the vessel.",
+      "visual_support": "The dot and dark jugular profile are both shown in the inset.",
+      "query_prefix_check": "The dot and vessel profile are both visible by the query.",
+      "answer_prefix_check": "The dot is separated from the dark lumen by its upper boundary.",
+      "shortcut_risk": "Low. The position is spatially specified.",
+      "task_id": "s3_remaining79_zV3hw_QbgK4_01",
+      "video_id": "zV3hw_QbgK4",
+      "split": "train",
+      "language": "en",
+      "source_video": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/zV3hw_QbgK4.mp4",
+      "stage3_value": "high",
+      "visual_evidence": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/zV3hw_QbgK4/146.jpg",
+          "checkpoint": 146.0,
+          "source_pts_seconds": 145.9458,
+          "resolution": [
+            640,
+            480
+          ]
+        }
+      ],
+      "asr_support_segments": [],
+      "query_decision": "ANSWER",
+      "answer_decision": "ANSWER",
+      "review_status": "accepted_targeted_native_frame_self_review",
+      "student_input_visibility": "not_checked"
+    },
+    {
+      "qa_type": "event_notification",
+      "query_time": 390,
+      "answer_time": 393,
+      "checkpoints": [
+        391,
+        392
+      ],
+      "question": "Let me know when the oblique needle echo clearly crosses the near wall into the lumen in this long-axis view.",
+      "reference_answer": "It has crossed. The bright oblique segment now extends below the near wall into the dark lumen.",
+      "visual_support": "The shaft is above the wall at 390 and 391; its endpoint at 392 is ambiguous; a contiguous oblique segment clearly crosses the wall at 393.",
+      "query_prefix_check": "The existing horizontal intraluminal echo does not show a contiguous crossing by the oblique shaft.",
+      "answer_prefix_check": "The oblique echo can be followed continuously across the upper wall.",
+      "shortcut_risk": "Low. The earlier horizontal echo is a visual distractor.",
+      "task_id": "s3_remaining79_zV3hw_QbgK4_02",
+      "video_id": "zV3hw_QbgK4",
+      "split": "train",
+      "language": "en",
+      "source_video": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/zV3hw_QbgK4.mp4",
+      "stage3_value": "high",
+      "visual_evidence": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/zV3hw_QbgK4/390.jpg",
+          "checkpoint": 390.0,
+          "source_pts_seconds": 389.922867,
+          "resolution": [
+            640,
+            480
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/zV3hw_QbgK4/391.jpg",
+          "checkpoint": 391.0,
+          "source_pts_seconds": 390.923867,
+          "resolution": [
+            640,
+            480
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/zV3hw_QbgK4/392.jpg",
+          "checkpoint": 392.0,
+          "source_pts_seconds": 391.924867,
+          "resolution": [
+            640,
+            480
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/zV3hw_QbgK4/393.jpg",
+          "checkpoint": 393.0,
+          "source_pts_seconds": 392.925867,
+          "resolution": [
+            640,
+            480
+          ]
+        }
+      ],
+      "asr_support_segments": [],
+      "query_decision": "WAIT",
+      "answer_decision": "ANSWER",
+      "review_status": "accepted_targeted_native_frame_self_review",
+      "student_input_visibility": "not_checked"
+    },
+    {
+      "qa_type": "current_observation",
+      "query_time": 475,
+      "answer_time": 475,
+      "checkpoints": [],
+      "question": "In this long-axis guidewire view, which way does the bright curved echo bend within the lumen?",
+      "reference_answer": "It curves upward toward the near wall.",
+      "visual_support": "A curved bright echo rises within the elongated dark vessel lumen.",
+      "query_prefix_check": "The curve and the near wall are both in the displayed view.",
+      "answer_prefix_check": "The bend is distinguishable from the straight oblique needle echo.",
+      "shortcut_risk": "Low for bend direction. The caption names the step.",
+      "task_id": "s3_remaining79_zV3hw_QbgK4_03",
+      "video_id": "zV3hw_QbgK4",
+      "split": "train",
+      "language": "en",
+      "source_video": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/zV3hw_QbgK4.mp4",
+      "stage3_value": "high",
+      "visual_evidence": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/zV3hw_QbgK4/475.jpg",
+          "checkpoint": 475.0,
+          "source_pts_seconds": 474.941133,
+          "resolution": [
+            640,
+            480
+          ]
+        }
+      ],
+      "asr_support_segments": [],
+      "query_decision": "ANSWER",
+      "answer_decision": "ANSWER",
+      "review_status": "accepted_targeted_native_frame_self_review",
+      "student_input_visibility": "not_checked"
+    },
+    {
+      "qa_type": "history_recall",
+      "query_time": 520,
+      "answer_time": 520,
+      "checkpoints": [
+        293
+      ],
+      "question": "In the earlier short-axis wall-tenting example, which wall of the dark vessel was indented?",
+      "reference_answer": "The upper, near wall was indented toward the lumen.",
+      "visual_support": "The short-axis example shows the near wall dipping inward; the current recap no longer shows that live short-axis frame.",
+      "query_prefix_check": "The earlier short-axis tenting example uniquely identifies the source frame within this review.",
+      "answer_prefix_check": "The indent is on the top edge of the dark vessel profile.",
+      "shortcut_risk": "Moderate. The term tenting cues the feature but not its visible location.",
+      "task_id": "s3_remaining79_zV3hw_QbgK4_04",
+      "video_id": "zV3hw_QbgK4",
+      "split": "train",
+      "language": "en",
+      "source_video": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/zV3hw_QbgK4.mp4",
+      "stage3_value": "high",
+      "visual_evidence": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/zV3hw_QbgK4/293.jpg",
+          "checkpoint": 293.0,
+          "source_pts_seconds": 292.925967,
+          "resolution": [
+            640,
+            480
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/zV3hw_QbgK4/520.jpg",
+          "checkpoint": 520.0,
+          "source_pts_seconds": 519.952767,
+          "resolution": [
+            640,
+            480
+          ]
+        }
+      ],
+      "asr_support_segments": [],
+      "query_decision": "ANSWER",
+      "answer_decision": "ANSWER",
+      "review_status": "accepted_targeted_native_frame_self_review",
+      "student_input_visibility": "not_checked"
+    }
+  ],
+  "video_id": "zV3hw_QbgK4",
+  "review_scope": "Same-assistant review; sampled timeline, original-size key frames, and existing time-indexed ASR when available. No continuous replay or direct audio claim."
+}

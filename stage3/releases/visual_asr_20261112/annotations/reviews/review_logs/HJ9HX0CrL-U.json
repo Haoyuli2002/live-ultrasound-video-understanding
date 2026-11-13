@@ -1,0 +1,103 @@
+{
+  "video_id": "HJ9HX0CrL-U",
+  "reviewer": "stage3_b",
+  "review_scope": "Question-led review by Agent B of Agent A draft; not blind. Native full-frame sampled checkpoints and available time-indexed ASR; no continuous replay or direct listening claim.",
+  "reviewer_native_opened": [
+    60,
+    60.25,
+    60.5,
+    60.75,
+    61,
+    210,
+    210.25,
+    210.5,
+    210.75,
+    211,
+    350,
+    355,
+    357,
+    358,
+    359,
+    360,
+    450,
+    480,
+    485,
+    486,
+    487,
+    488,
+    489,
+    490,
+    640,
+    780,
+    785,
+    786,
+    787,
+    788,
+    789,
+    790,
+    795,
+    800,
+    805,
+    806,
+    807,
+    808,
+    809,
+    810
+  ],
+  "tasks": [
+    {
+      "task_index": 1,
+      "outcome": "clarified",
+      "issues": [
+        "Draft described left clip paused in210-211, but native frames show changes there too. Samples are not synchronized clips."
+      ],
+      "changes": [
+        "Corrected evidence description to nonsynchronized sampled cardiac sequences, qualitative wall excursion only."
+      ],
+      "query_status": "ANSWER211; both past sequences60-61 and210-211 available, left shows more inward excursion/narrowing."
+    },
+    {
+      "task_index": 2,
+      "outcome": "corrected",
+      "issues": [
+        "Dark external rim clear358 before360."
+      ],
+      "changes": [
+        "Advanced answer to358 with negative357."
+      ],
+      "query_status": "WAIT350; current comparison no broad external rim established.",
+      "answer_status": "ANSWER358; dark band outside bright cardiac wall visible."
+    },
+    {
+      "task_index": 3,
+      "outcome": "corrected",
+      "issues": [
+        "Next apical pair appears487 before490."
+      ],
+      "changes": [
+        "Advanced answer to487 after486longaxis."
+      ],
+      "query_status": "WAIT485; next cardiac window absent.",
+      "answer_status": "ANSWER487; dark external left/lowerband in right image."
+    },
+    {
+      "task_index": 4,
+      "outcome": "accepted",
+      "issues": [],
+      "changes": [],
+      "query_status": "ANSWER640; dark strip between superficial liver and cardiac outer wall visible."
+    },
+    {
+      "task_index": 5,
+      "outcome": "corrected",
+      "issues": [
+        "Short-axis comparison begins787 with poorly opened small right cavity. Original810 answer later than clear open-cavity808. Need explicit cavity-visibility condition rather than waiting for explanatory narration."
+      ],
+      "changes": [
+        "Question requires cavity clear enough for border assessment; advanced answer to808 and added all inspected transition checkpoints."
+      ],
+      "query_status": "WAIT780; apical view only.",
+      "answer_status": "ANSWER808; clearer rightdarkcavity with relativelyflatupper border vs rounderleft."
+    }
+  ]
+}

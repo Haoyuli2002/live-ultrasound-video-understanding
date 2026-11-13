@@ -1,0 +1,61 @@
+{
+  "video_id": "hazy6gol4rE",
+  "reviewer": "stage3_b",
+  "review_scope": "Question-led review by Agent B of Agent A draft; not blind. Native full-frame sampled checkpoints and available time-indexed ASR; no continuous replay or direct listening claim.",
+  "reviewer_native_opened": [
+    200,
+    450,
+    750,
+    800,
+    825,
+    826,
+    827,
+    828,
+    829,
+    830,
+    880,
+    881,
+    882,
+    883,
+    884,
+    885,
+    828.25,
+    828.5,
+    828.75,
+    883.25,
+    883.5,
+    883.75
+  ],
+  "tasks": [
+    {
+      "task_index": 1,
+      "findings": "Confirmed right dark column; heading alone cannot determine its screen location.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 2,
+      "findings": "Earlier unique hand/probe photograph confirms grip and curved face toward lower-left.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 3,
+      "findings": "Confirmed actual brightness gradient; removed unnatural reference to future labels.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 4,
+      "findings": "Moved830 to828.25 because paired sonograms already fully visible. At825 only older three-panel comparison exists.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 5,
+      "findings": "Moved885 to884, and repaired type to event notification: answer compares two simultaneously arriving panels, not a before-after physiological change. Query summary has no corresponding panel geometry.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    }
+  ]
+}

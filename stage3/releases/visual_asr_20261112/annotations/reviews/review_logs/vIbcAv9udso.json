@@ -1,0 +1,75 @@
+{
+  "video_id": "vIbcAv9udso",
+  "reviewer": "stage3_b",
+  "review_scope": "Question-led review by Agent B of Agent A draft; not blind. Native full-frame sampled checkpoints and available time-indexed ASR; no continuous replay or direct listening claim.",
+  "reviewer_native_opened": [
+    35,
+    600,
+    670,
+    715,
+    716,
+    717,
+    717.25,
+    717.4,
+    717.5,
+    717.75,
+    718,
+    719,
+    720,
+    1000,
+    1001,
+    1002,
+    1002.25,
+    1002.5,
+    1002.6,
+    1002.75,
+    1003,
+    1040,
+    1040.25,
+    1040.5,
+    1040.75,
+    1041,
+    1042,
+    1043,
+    1145,
+    1180
+  ],
+  "tasks": [
+    {
+      "task_index": 1,
+      "findings": "Confirmed two bands at separated probe regions; causal earlier ASR supplements description.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 2,
+      "findings": "Corrected substantive endpoint error:720 target reopened, not narrow. Earliest inspected near-slit717.4; future reopen717.75 and720 logged only as reviewed context, not answer evidence.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 3,
+      "findings": "Moved1003 to1002.75 when distinct new fluid segment visible; no human blood or cannulation success inference. ASR spanning future not included.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 4,
+      "findings": "Moved1043 to1040.75; channel already extends across inset after short oval baseline. Prior long-axis speech is predictive shortcut, not proof of observed timing.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 5,
+      "findings": "Confirmed upper-right rim focal echo; do not adopt ASR exact intraluminal guidewire localization from small inset alone.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 6,
+      "findings": "Confirmed opening screen-left cart beside equipment table, torso screen-right; unique earlier wide-shot anchor.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    }
+  ]
+}

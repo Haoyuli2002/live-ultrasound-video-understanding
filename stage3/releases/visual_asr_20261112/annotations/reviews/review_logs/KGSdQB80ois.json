@@ -1,0 +1,87 @@
+{
+  "video_id": "KGSdQB80ois",
+  "reviewer": "stage3_b",
+  "review_scope": "Question-led review by Agent B of Agent A draft; not blind. Native full-frame sampled checkpoints and available time-indexed ASR; no continuous replay or direct listening claim.",
+  "reviewer_native_opened": [
+    470,
+    550,
+    555,
+    560,
+    565,
+    570,
+    570.25,
+    570.5,
+    570.75,
+    571,
+    572,
+    573,
+    574,
+    575,
+    670,
+    830,
+    1180,
+    1185,
+    1186,
+    1187,
+    1187.25,
+    1187.5,
+    1187.75,
+    1188,
+    1189,
+    1390,
+    1430,
+    1440,
+    1445,
+    1450,
+    1455,
+    1460,
+    1460.25,
+    1460.5,
+    1460.75,
+    1461,
+    1462,
+    1462.25,
+    1462.5,
+    1462.75,
+    1463,
+    1510
+  ],
+  "tasks": [
+    {
+      "task_index": 1,
+      "findings": "Confirmed curved hardware contact face at query.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 2,
+      "findings": "Moved answer575 to570.75: earlier bright image already answers; dark570.5 is negative. Later572 darkens again, so no persistent claim.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 3,
+      "findings": "Confirmed lower-left largest cavity and upper/right smaller cavities.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 4,
+      "findings": "Moved answer1189 to1188: geometry adequate before wipe finishes.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 5,
+      "findings": "Moved answer1463 to1461: full pocket already present then; preceding teaching sector inspected and lacks required enclosed pocket. Separate case, no volunteer change.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 6,
+      "findings": "Confirmed historical arm above/behind head at470/670 and presenters at1510.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    }
+  ]
+}

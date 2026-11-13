@@ -1,0 +1,105 @@
+{
+  "video_id": "az6h_u_8nhA",
+  "reviewer": "stage3_b",
+  "review_scope": "Question-led review by Agent B of Agent A draft; not blind. Native full-frame sampled checkpoints and available time-indexed ASR; no continuous replay or direct listening claim.",
+  "reviewer_native_opened": [
+    180,
+    605,
+    770,
+    1415,
+    1420,
+    1430,
+    1605,
+    1715,
+    1720,
+    1725,
+    1730,
+    1805,
+    1810,
+    1815,
+    1818,
+    1986,
+    1990,
+    1995,
+    2340,
+    1422,
+    1424,
+    1426,
+    1428,
+    1726,
+    1727,
+    1728,
+    1729,
+    1806,
+    1807,
+    1808,
+    1809,
+    1991,
+    1992,
+    1993,
+    1994,
+    1420.25,
+    1420.5,
+    1420.75,
+    1421,
+    1727.25,
+    1727.5,
+    1727.75,
+    1805.25,
+    1805.5,
+    1805.75,
+    1991.25,
+    1991.5,
+    1991.75
+  ],
+  "tasks": [
+    {
+      "task_index": 1,
+      "findings": "Moved1430\u21921420.5 and clarified bright head versus overlapping tail; no entire-mark separation claim.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 2,
+      "findings": "Moved1730\u21921727.75 after intermediate flattened states; visual enlargement only.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 3,
+      "findings": "Moved1818\u21921805.5: shadow widens early, later replay not relevant.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 4,
+      "findings": "Moved1995\u21921992;1991.75 still transverse.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 5,
+      "findings": "Confirmed all three vessel layouts at180.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 6,
+      "findings": "Confirmed single-hand rear syringe support at770; no aspiration/injection inference.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 7,
+      "findings": "Corrected left-pair notch location from upper-left to lateral left margin, retained internal focus/tail on right.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 8,
+      "findings": "Confirmed605braced probe grip and2340different current sonogram.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    }
+  ]
+}

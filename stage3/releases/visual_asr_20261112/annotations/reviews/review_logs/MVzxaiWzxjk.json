@@ -1,0 +1,68 @@
+{
+  "video_id": "MVzxaiWzxjk",
+  "reviewer": "stage3_b",
+  "review_scope": "Question-led review by Agent B of Agent A draft; not blind. Native full-frame sampled checkpoints and available time-indexed ASR; no continuous replay or direct listening claim.",
+  "reviewer_native_opened": [
+    390,
+    535,
+    540,
+    615,
+    630,
+    680,
+    690,
+    700,
+    740,
+    536,
+    537,
+    538,
+    539,
+    541,
+    660,
+    692,
+    694,
+    696,
+    698,
+    536.5,
+    536.25,
+    699,
+    699.5,
+    699.75
+  ],
+  "tasks": [
+    {
+      "task": 1,
+      "outcome": "accepted",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER",
+      "finding": "390 horizontal deep bright echoes roughly parallel to superficial line; do not infer sliding from still."
+    },
+    {
+      "task": 2,
+      "outcome": "corrected",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER",
+      "changes": "540\u2192536.25;535 oldexample,536 lowerfieldnotfullybright,536.25 central broad column reacheslowersector. Later541 redBlineoverlay explicitly excluded."
+    },
+    {
+      "task": 3,
+      "outcome": "accepted",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER",
+      "finding": "615 kidney-shaped dark-rim bright-center organ deeper/right relativeuniformupperlefttissue. Bodylaterality not inferred."
+    },
+    {
+      "task": 4,
+      "outcome": "corrected",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER",
+      "changes": "700\u2192699 after698priorimage. Changed distinct vertebral contours to deep vertebral region/reflector because640x360 source and strongreflection do notresolveindividualcontours. Darkspace andcranialbrightregion supported; diagnosisexcluded."
+    },
+    {
+      "task": 5,
+      "outcome": "accepted",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER",
+      "finding": "630/660/680 earlier teachingimage curveddiaphragm solidorganrightcaudal andpleuralspaceleftcranial.740 textslide; historicalreference established. Labels/coloredoutlines risksretained."
+    }
+  ]
+}

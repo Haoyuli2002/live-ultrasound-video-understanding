@@ -1,0 +1,1638 @@
+{
+  "video_id": "Y9Hv84m3kOM",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/Y9Hv84m3kOM/asr.txt",
+  "segments": [
+    {
+      "start": 1.95,
+      "end": 2.51,
+      "text": "Welcome back."
+    },
+    {
+      "start": 3.32,
+      "end": 7.04,
+      "text": "Hopefully you've been taking a little bit of a break and are ready to learn about long"
+    },
+    {
+      "start": 7.04,
+      "end": 8.48,
+      "text": "ultrasound and emission interpretation."
+    },
+    {
+      "start": 9.41,
+      "end": 9.97,
+      "text": "So without..."
+    },
+    {
+      "start": 10.06,
+      "end": 17.32,
+      "text": "further ado, let's get started. This is probably the most widely cited of the long ultrasound"
+    },
+    {
+      "start": 17.32,
+      "end": 19.98,
+      "text": "interpretation protocols. It's named the"
+    },
+    {
+      "start": 20.06,
+      "end": 25.26,
+      "text": "Blue Protocol and was created by Lichens Dine and Mazeer in the journal Chess in 2008."
+    },
+    {
+      "start": 26.18,
+      "end": 29.96,
+      "text": "It allowed them to arrive at a diagnosis in patients presenting what a cure."
+    },
+    {
+      "start": 30.0,
+      "end": 37.66,
+      "text": "respiratory failure in an ICU setting with a 90.5% accuracy. At first glance it can"
+    },
+    {
+      "start": 37.66,
+      "end": 39.5,
+      "text": "seen complicated, but we..."
+    },
+    {
+      "start": 40.0,
+      "end": 44.08,
+      "text": "We can break it down into a few basic patterns to recognize in different steps."
+    },
+    {
+      "start": 46.34,
+      "end": 49.84,
+      "text": "The first step is to assess whether there is presence of long sliding."
+    },
+    {
+      "start": 51.06,
+      "end": 56.21,
+      "text": "Once its presence has been established, we need to be able to assess for the presence of"
+    },
+    {
+      "start": 56.21,
+      "end": 59.23,
+      "text": "a lines, b lines, consolidation."
+    },
+    {
+      "start": 60.16,
+      "end": 64.37,
+      "text": "or long point, or the point where non-sliding long begins to slide."
+    },
+    {
+      "start": 65.58,
+      "end": 69.98,
+      "text": "Let's go over these findings individually, as well as the other long ultrasound files."
+    },
+    {
+      "start": 70.45,
+      "end": 76.23,
+      "text": "This is the basic long ultrasound view."
+    },
+    {
+      "start": 77.34,
+      "end": 79.32,
+      "text": "We initially see subcutaneous tissues."
+    },
+    {
+      "start": 80.32,
+      "end": 87.94,
+      "text": "little deeper. We have different white lines. There are these two mildly higher lines that represent"
+    },
+    {
+      "start": 87.94,
+      "end": 89.97,
+      "text": "the ribs. We can know there."
+    },
+    {
+      "start": 90.26,
+      "end": 96.12,
+      "text": "ribs by the characteristic shadowing deep to them. The white line between them and just"
+    },
+    {
+      "start": 96.12,
+      "end": 99.97,
+      "text": "deep to them is the plurup. The combination of all of them."
+    },
+    {
+      "start": 100.0,
+      "end": 109.76,
+      "text": "this is termed the bat sign. If there is air below the plurra either from"
+    },
+    {
+      "start": 110.0,
+      "end": 115.67,
+      "text": "healthy lung, earth pneumothorax, we will be able to see reverberation artifact as repetitions"
+    },
+    {
+      "start": 115.67,
+      "end": 119.91,
+      "text": "of the plural line at multiples of the distance between the transducer."
+    },
+    {
+      "start": 120.13,
+      "end": 126.08,
+      "text": "and the plurra. This is the a-line pattern and indicates that there is air just below the plurra,"
+    },
+    {
+      "start": 126.51,
+      "end": 129.54,
+      "text": "either in the long and infosima blebs."
+    },
+    {
+      "start": 130.64,
+      "end": 133.8,
+      "text": "or in the bisserole and parietal plurah,"
+    },
+    {
+      "start": 134.52,
+      "end": 135.34,
+      "text": "so we're gonna go to the Thorax."
+    },
+    {
+      "start": 138.72,
+      "end": 139.84,
+      "text": "It's important to see both."
+    },
+    {
+      "start": 140.06,
+      "end": 147.16,
+      "text": "ribs in the bat sign to not mistake another artifact as a lines. As you can see here it would be easy"
+    },
+    {
+      "start": 147.16,
+      "end": 149.74,
+      "text": "to say that this clip represents AI."
+    },
+    {
+      "start": 153.42,
+      "end": 159.98,
+      "text": "However, by sliding the probe over a little, we can find the truplera and see that what we were seeing was..."
+    },
+    {
+      "start": 160.0,
+      "end": 166.68,
+      "text": "in fact, reverberation artifact from the rib itself. Remember, any strong reflector can create"
+    },
+    {
+      "start": 166.68,
+      "end": 169.98,
+      "text": "reverberation artifact, and produce an artifact that looks like..."
+    },
+    {
+      "start": 170.03,
+      "end": 178.03,
+      "text": "This is why it's important to see that sign because the plural will be the first bright white line"
+    },
+    {
+      "start": 180.06,
+      "end": 187.38,
+      "text": "lines caused by the ribs. Once you've found the plural line, the next question is whether or not"
+    },
+    {
+      "start": 187.64,
+      "end": 189.82,
+      "text": "ride on visceral plura air in contact."
+    },
+    {
+      "start": 190.38,
+      "end": 192.14,
+      "text": "to ensure there's no new mythorex."
+    },
+    {
+      "start": 193.84,
+      "end": 196.22,
+      "text": "When the parietal and visceral plura are touching,"
+    },
+    {
+      "start": 196.66,
+      "end": 199.08,
+      "text": "the rubbing that happens between them during ventilation"
+    },
+    {
+      "start": 199.64,
+      "end": 199.98,
+      "text": "produces..."
+    },
+    {
+      "start": 200.03,
+      "end": 203.07,
+      "text": "a kind of shimmering that's been likened to ants crawling."
+    },
+    {
+      "start": 204.13,
+      "end": 209.98,
+      "text": "And his term, plural sliding, patients aren't-"
+    },
+    {
+      "start": 210.03,
+      "end": 216.21,
+      "text": "breathing or ventilation areas minimal as can happen with low tidal volume ventilation or in regions"
+    },
+    {
+      "start": 216.21,
+      "end": 219.07,
+      "text": "over-distended by high, peep, or obstructive lung disease."
+    },
+    {
+      "start": 220.0,
+      "end": 223.0,
+      "text": "the only indication of the contact between the two pluras,"
+    },
+    {
+      "start": 223.46,
+      "end": 225.74,
+      "text": "maybe the effects of cardiac oscillations"
+    },
+    {
+      "start": 225.74,
+      "end": 227.38,
+      "text": "making them vibrate together."
+    },
+    {
+      "start": 228.52,
+      "end": 229.84,
+      "text": "This is termed long pulse."
+    },
+    {
+      "start": 230.1,
+      "end": 237.08,
+      "text": "and Lake Lung sliding indicates plural contact and rules out pneumothorax in that area."
+    },
+    {
+      "start": 241.95,
+      "end": 247.89,
+      "text": "occasion the pleural sliding or pulse can be difficult to see decreasing the"
+    },
+    {
+      "start": 247.89,
+      "end": 249.97,
+      "text": "gain even down as far as it"
+    },
+    {
+      "start": 250.1,
+      "end": 255.46,
+      "text": "go, but often enhance the contrast so that the plurah and its movement can be seen more clearly."
+    },
+    {
+      "start": 256.93,
+      "end": 259.97,
+      "text": "Other useful tricks are adjusting the depth so the plurah is..."
+    },
+    {
+      "start": 260.03,
+      "end": 267.26,
+      "text": "in the middle of the screen, switching to a linear pro to enhance resolution and using"
+    },
+    {
+      "start": 267.26,
+      "end": 269.4,
+      "text": "M mode as we will discuss shortly."
+    },
+    {
+      "start": 272.98,
+      "end": 278.32,
+      "text": "Another useful trick for optimizing the image and the appearance of artifacts is ensuring"
+    },
+    {
+      "start": 278.32,
+      "end": 279.98,
+      "text": "the probe is perpendicular with it."
+    },
+    {
+      "start": 280.29,
+      "end": 287.8,
+      "text": "This is achieved by slowly tilting the probe until artifacts are optimized, as is happening"
+    },
+    {
+      "start": 287.8,
+      "end": 289.8,
+      "text": "here, we're progressively clear."
+    },
+    {
+      "start": 290.03,
+      "end": 296.54,
+      "text": "and more numerous airlines appearing as we get more perpendicular with the plurra."
+    },
+    {
+      "start": 300.0,
+      "end": 304.52,
+      "text": "On occasion you will notice that on some of the following clips we do not see the bad sign."
+    },
+    {
+      "start": 305.3,
+      "end": 309.98,
+      "text": "This is generally because we have found the bad sign of confirm which line is the"
+    },
+    {
+      "start": 310.59,
+      "end": 319.88,
+      "text": "But once this is done, it may be necessary to not have boat ribs in view in order to have the best view possible of the structures we are trying to look at on your image."
+    },
+    {
+      "start": 321.18,
+      "end": 326.8,
+      "text": "However, you should still always start by finding your boundaries and this will mean finding"
+    },
+    {
+      "start": 327.28,
+      "end": 329.97,
+      "text": "the bat sign to make sure the line you're in."
+    },
+    {
+      "start": 330.0,
+      "end": 331.54,
+      "text": "looking at is the plural line."
+    },
+    {
+      "start": 333.26,
+      "end": 335.26,
+      "text": "Here's an image of loss of long sliding."
+    },
+    {
+      "start": 336.48,
+      "end": 338.98,
+      "text": "We can still see that there's some motion happening,"
+    },
+    {
+      "start": 339.24,
+      "end": 339.96,
+      "text": "but this is not..."
+    },
+    {
+      "start": 340.0,
+      "end": 344.74,
+      "text": "shimmering we saw previously, and it simply due to motion of the chest wall."
+    },
+    {
+      "start": 346.7,
+      "end": 349.98,
+      "text": "Lots of long-sliding and pulse alone do not indicate that there's..."
+    },
+    {
+      "start": 350.13,
+      "end": 352.73,
+      "text": "definitely a new Mythorax present, rather,"
+    },
+    {
+      "start": 353.45,
+      "end": 355.09,
+      "text": "a presence of long-sliding or pulse,"
+    },
+    {
+      "start": 355.61,
+      "end": 357.69,
+      "text": "exclude new Mythorax at that point."
+    },
+    {
+      "start": 361.7,
+      "end": 368.18,
+      "text": "Here we can clearly see there's long sliding on the right of the screen, but there isn't any on the left."
+    },
+    {
+      "start": 375.79,
+      "end": 379.97,
+      "text": "Here's an example of 1.40 intersection of"
+    },
+    {
+      "start": 380.03,
+      "end": 381.95,
+      "text": "of sliding and not sliding a lot."
+    },
+    {
+      "start": 383.88,
+      "end": 386.87,
+      "text": "This is diagnostic of a pneumothorax."
+    },
+    {
+      "start": 393.01,
+      "end": 398.49,
+      "text": "This is the point where the plurah go from being in contact, not being in contact."
+    },
+    {
+      "start": 400.0,
+      "end": 406.28,
+      "text": "You can see here on this chest CT, the location of this point changes somewhat with inspiration"
+    },
+    {
+      "start": 406.28,
+      "end": 409.92,
+      "text": "and expiration, which is why we see intermittent slides."
+    },
+    {
+      "start": 410.13,
+      "end": 419.98,
+      "text": "and loss of sliding at the same location on the plurah. It is also possible to..."
+    },
+    {
+      "start": 420.03,
+      "end": 427.26,
+      "text": "demonstrate long-sliding, the absence of long-sliding, and the long-point on M-mole since the subcutaneous"
+    },
+    {
+      "start": 427.26,
+      "end": 429.88,
+      "text": "tissues are moving. They appear a straight line."
+    },
+    {
+      "start": 430.0,
+      "end": 439.44,
+      "text": "above the plural. If the plural is also not moving, we will also see that the artifacts below it are not moving as we see here."
+    },
+    {
+      "start": 440.45,
+      "end": 442.45,
+      "text": "This has been turned to barcode sign,"
+    },
+    {
+      "start": 442.95,
+      "end": 446.63,
+      "text": "given the present presence of all street lines on the screen."
+    },
+    {
+      "start": 452.02,
+      "end": 457.52,
+      "text": "If the plura are rubbing, the plura line and the artifacts below it have a grainy appearance"
+    },
+    {
+      "start": 457.52,
+      "end": 459.28,
+      "text": "given the movement or friction."
+    },
+    {
+      "start": 460.83,
+      "end": 462.47,
+      "text": "This has been likened to sand."
+    },
+    {
+      "start": 463.09,
+      "end": 464.83,
+      "text": "And so this is called a seashore side,"
+    },
+    {
+      "start": 465.57,
+      "end": 467.89,
+      "text": "where above the plura are the linear ways"
+    },
+    {
+      "start": 467.89,
+      "end": 469.85,
+      "text": "from the static subcutaneous tissue."
+    },
+    {
+      "start": 470.26,
+      "end": 473.63,
+      "text": "that look like still waters and at the level of the plura"
+    },
+    {
+      "start": 473.63,
+      "end": 477.09,
+      "text": "and below are the grainy sandy shores."
+    },
+    {
+      "start": 481.31,
+      "end": 483.93,
+      "text": "If we see both of these signs at a given point,"
+    },
+    {
+      "start": 484.76,
+      "end": 488.5,
+      "text": "then we have the transition from sliding to not sliding"
+    },
+    {
+      "start": 488.5,
+      "end": 489.88,
+      "text": "in vice versa."
+    },
+    {
+      "start": 490.74,
+      "end": 497.5,
+      "text": "that happens with breathing, and so we have a long point, which is diagnostic of a new"
+    },
+    {
+      "start": 497.5,
+      "end": 498.3,
+      "text": "with oraxe."
+    },
+    {
+      "start": 502.3,
+      "end": 507.12,
+      "text": "The reason a long point is necessary to diagnose a pneumothorax is because other phenomena"
+    },
+    {
+      "start": 507.12,
+      "end": 509.86,
+      "text": "can stop the plurra from rubbing."
+    },
+    {
+      "start": 510.0,
+      "end": 518.92,
+      "text": "against each other, such as emphysema-blebs, therapeutic chlorodesis, chlorodesis from pneumonia, etc."
+    },
+    {
+      "start": 522.5,
+      "end": 529.62,
+      "text": "Unfortunately, if there is no place where the two plurra come back into contact, like in this tensioned pneumothorax."
+    },
+    {
+      "start": 530.48,
+      "end": 535.72,
+      "text": "there will be no long point and so it will not be possible to conclusively diagnose a new"
+    },
+    {
+      "start": 535.72,
+      "end": 539.1,
+      "text": "the thorax, all you will see is loss of long-sliding."
+    },
+    {
+      "start": 540.45,
+      "end": 544.77,
+      "text": "This is why it's important to integrate the clinical context into your interpretation,"
+    },
+    {
+      "start": 545.59,
+      "end": 549.14,
+      "text": "just like with osculation or any diagnostic aid."
+    },
+    {
+      "start": 553.04,
+      "end": 557.38,
+      "text": "Another important thing to know is that other things that intermittently rub against the"
+    },
+    {
+      "start": 557.38,
+      "end": 559.9,
+      "text": "I can resemble a long point or create a"
+    },
+    {
+      "start": 560.0,
+      "end": 565.89,
+      "text": "pseudo long point. This clip shows a pseudo long point in a region on the left and"
+    },
+    {
+      "start": 565.89,
+      "end": 569.97,
+      "text": "and hear your chest, where the paracardium intermittently touches the..."
+    },
+    {
+      "start": 570.75,
+      "end": 575.68,
+      "text": "resembling a long point. As you can see what we are seeing isn't quite long"
+    },
+    {
+      "start": 575.68,
+      "end": 579.81,
+      "text": "sliding and we are able to see a structure of the pericardial space."
+    },
+    {
+      "start": 580.26,
+      "end": 586.31,
+      "text": "steeper. Your eye will become trained to see the difference between these, much like your ears"
+    },
+    {
+      "start": 586.31,
+      "end": 589.84,
+      "text": "become trained to hear the different sounds."
+    },
+    {
+      "start": 590.0,
+      "end": 599.97,
+      "text": "of long respitation. That closes the chapter on airlines. Next, let's see..."
+    },
+    {
+      "start": 600.0,
+      "end": 606.78,
+      "text": "move on to the other important artifact you'll be seeing, which are B lines. These are linear"
+    },
+    {
+      "start": 606.78,
+      "end": 609.76,
+      "text": "in your artifacts treated by fluid fibrosis."
+    },
+    {
+      "start": 610.0,
+      "end": 619.97,
+      "text": "other phenomenon in the long interstition as we discussed in the artifacts segment. They need the two layers of the plurah to be in contact, to be produced, and so they..."
+    },
+    {
+      "start": 620.06,
+      "end": 626.01,
+      "text": "presence rules out a pneumothorax in that lung location just like lung sliding or lung"
+    },
+    {
+      "start": 626.01,
+      "end": 629.88,
+      "text": "in order to be called B-line."
+    },
+    {
+      "start": 630.1,
+      "end": 639.54,
+      "text": "the lines have to meet certain criteria. They have to be straight, well-defined, hyper-echoic lines that are in the axis of beam."
+    },
+    {
+      "start": 641.15,
+      "end": 648.81,
+      "text": "must arise from the plura. They must move with plural sliding. They have to go all the"
+    },
+    {
+      "start": 648.81,
+      "end": 649.97,
+      "text": "the back of the screen."
+    },
+    {
+      "start": 650.1,
+      "end": 655.09,
+      "text": "or the far field, and they should obliterate a lines along their path."
+    },
+    {
+      "start": 656.36,
+      "end": 659.96,
+      "text": "This doesn't mean that a lines and b lines can't coexist in one wind."
+    },
+    {
+      "start": 660.29,
+      "end": 669.79,
+      "text": "screen. We see here that they can rather if a B line goes through an A line we lose the A line at this"
+    },
+    {
+      "start": 670.0,
+      "end": 679.98,
+      "text": "where they meet. When fluid in the interstitium is causing b-lines, the flora will appear."
+    },
+    {
+      "start": 680.06,
+      "end": 689.87,
+      "text": "regular as it does here. Here are the same B lines with a regular plural. I've seen this time with a"
+    },
+    {
+      "start": 690.0,
+      "end": 691.66,
+      "text": "in your probe for better resolution."
+    },
+    {
+      "start": 692.7,
+      "end": 696.65,
+      "text": "When you see this, it is generally caused by fluid"
+    },
+    {
+      "start": 696.65,
+      "end": 698.81,
+      "text": "and so non-inflammatory conditions,"
+    },
+    {
+      "start": 699.05,
+      "end": 699.83,
+      "text": "such as cardiogenic."
+    },
+    {
+      "start": 700.16,
+      "end": 709.96,
+      "text": "Dima to be high on your differential diagnosis when the B lines are from an inflammatory for five roles"
+    },
+    {
+      "start": 710.0,
+      "end": 715.49,
+      "text": "processing process, the flora will tend to appear more jagged and have an irregular"
+    },
+    {
+      "start": 715.49,
+      "end": 717.49,
+      "text": "shape as it does here."
+    },
+    {
+      "start": 721.28,
+      "end": 727.27,
+      "text": "Again, here are B lines with an irregular jagged plura in a patient with ARDS."
+    },
+    {
+      "start": 728.11,
+      "end": 729.85,
+      "text": "This time, image with a linear probe."
+    },
+    {
+      "start": 731.09,
+      "end": 738.18,
+      "text": "If the plura looks like this, in flammatory conditions such as ARDS, ammonia, or in flammatory"
+    },
+    {
+      "start": 738.18,
+      "end": 739.96,
+      "text": "interstitial lung disease, should..."
+    },
+    {
+      "start": 740.0,
+      "end": 748.56,
+      "text": "be higher on your differential diagnosis. Here they are side by side, with the regular"
+    },
+    {
+      "start": 748.56,
+      "end": 748.94,
+      "text": "then"
+    },
+    {
+      "start": 750.0,
+      "end": 758.31,
+      "text": "inflammatory plura on the left and the irregular jagged inflammatory plura hearing on the right."
+    },
+    {
+      "start": 761.98,
+      "end": 767.99,
+      "text": "A few B lines do or less, especially independent regions, can be normal."
+    },
+    {
+      "start": 769.17,
+      "end": 769.81,
+      "text": "Much like things."
+    },
+    {
+      "start": 770.38,
+      "end": 772.84,
+      "text": "and inspiratory crackles independent regions."
+    },
+    {
+      "start": 775.86,
+      "end": 779.64,
+      "text": "However, if you see them in multiple ultrasound windows,"
+    },
+    {
+      "start": 780.7,
+      "end": 782.5,
+      "text": "in the non-dependent lung regions."
+    },
+    {
+      "start": 783.31,
+      "end": 786.1,
+      "text": "If they are very thick, if they are numerous,"
+    },
+    {
+      "start": 787.1,
+      "end": 789.98,
+      "text": "go three or more, singing a B-line down in the blue."
+    },
+    {
+      "start": 790.0,
+      "end": 798.22,
+      "text": "and if they arise in someone you suspect of having a respiratory pathology, they are more likely to reflect significant lung disease."
+    },
+    {
+      "start": 801.54,
+      "end": 806.78,
+      "text": "When B lines become very numerous, they can become confluent as they are here"
+    },
+    {
+      "start": 806.78,
+      "end": 809.98,
+      "text": "and look almost as if flashlight was..."
+    },
+    {
+      "start": 810.06,
+      "end": 812.71,
+      "text": "shining from the plura to the far field."
+    },
+    {
+      "start": 813.96,
+      "end": 815.74,
+      "text": "We know these are conclude B lines"
+    },
+    {
+      "start": 815.74,
+      "end": 819.16,
+      "text": "and not normal long given the absence of A lines."
+    },
+    {
+      "start": 819.16,
+      "end": 819.48,
+      "text": "Thanks for joining us today."
+    },
+    {
+      "start": 823.84,
+      "end": 826.85,
+      "text": "Our next lung ultrasound finding is lung consolidation."
+    },
+    {
+      "start": 828.29,
+      "end": 829.97,
+      "text": "When this occurs, the lung..."
+    },
+    {
+      "start": 830.0,
+      "end": 833.9,
+      "text": "becomes deflated or filled with fluid and takes on a tissue density."
+    },
+    {
+      "start": 834.89,
+      "end": 839.97,
+      "text": "It thus looks gray on ultrasound and is sometimes called adization to reflect..."
+    },
+    {
+      "start": 840.0,
+      "end": 842.72,
+      "text": "the fact that consolidated long looks like liver."
+    },
+    {
+      "start": 844.14,
+      "end": 846.56,
+      "text": "In the case of Theran's lower consolidations,"
+    },
+    {
+      "start": 847.22,
+      "end": 849.98,
+      "text": "a lack of significant long aeration, also a lack of..."
+    },
+    {
+      "start": 850.03,
+      "end": 854.87,
+      "text": "ultrasounds to be transmitted deeper, allowing us to see deeper structures."
+    },
+    {
+      "start": 856.21,
+      "end": 859.98,
+      "text": "This gives rise to the spine sign, or the viscera lathe, see..."
+    },
+    {
+      "start": 860.0,
+      "end": 863.47,
+      "text": "of the spine through the lung which we have here."
+    },
+    {
+      "start": 864.71,
+      "end": 869.88,
+      "text": "This helps us know that we are truly seeing consolidated lung and not a mirror image."
+    },
+    {
+      "start": 870.16,
+      "end": 879.84,
+      "text": "artifact. When the consolidation is not transiled, we will see a fractal border."
+    },
+    {
+      "start": 880.29,
+      "end": 884.23,
+      "text": "caused by a ringed-out artifact, which are sometimes mistaken for violins."
+    },
+    {
+      "start": 884.98,
+      "end": 889.86,
+      "text": "This is known as the Shred sign, and signifies a non-translubric insult."
+    },
+    {
+      "start": 890.1,
+      "end": 898.16,
+      "text": "also interesting to note here is the decrease in size of the consolidation on"
+    },
+    {
+      "start": 898.16,
+      "end": 898.6,
+      "text": "inspiration"
+    },
+    {
+      "start": 900.1,
+      "end": 903.27,
+      "text": "suggesting some component of auto-lecticism."
+    },
+    {
+      "start": 910.19,
+      "end": 915.81,
+      "text": "As you can see here, it's solid long generally has a density similar to the livers or the"
+    },
+    {
+      "start": 915.81,
+      "end": 916.17,
+      "text": "spleen."
+    },
+    {
+      "start": 916.57,
+      "end": 919.97,
+      "text": "And so, if you aren't careful, you can mistake..."
+    },
+    {
+      "start": 920.03,
+      "end": 926.53,
+      "text": "normal abdominal organ or an abnormal lung. The best way to avoid making this"
+    },
+    {
+      "start": 926.53,
+      "end": 929.84,
+      "text": "mistake is to find the diaphragm, which you should"
+    },
+    {
+      "start": 930.0,
+      "end": 932.68,
+      "text": "always do in the lower lung zones anyway."
+    },
+    {
+      "start": 934.35,
+      "end": 938.33,
+      "text": "As you may expect, an infra diaphragmatic tissue density"
+    },
+    {
+      "start": 938.33,
+      "end": 939.87,
+      "text": "or tissue density."
+    },
+    {
+      "start": 940.03,
+      "end": 943.46,
+      "text": "below the diaphragm will not be consolidated long."
+    },
+    {
+      "start": 950.74,
+      "end": 957.47,
+      "text": "At times, there can also be tissue density above the diaphragm, but not in the lung as we can see here."
+    },
+    {
+      "start": 959.18,
+      "end": 959.92,
+      "text": "From top to bottom."
+    },
+    {
+      "start": 960.0,
+      "end": 964.58,
+      "text": "or left to write on the screen, we have long, a complicated,"
+    },
+    {
+      "start": 964.78,
+      "end": 969.6,
+      "text": "parinomonic effusion, or empirema, a misshapen diaphragm."
+    },
+    {
+      "start": 970.22,
+      "end": 971.22,
+      "text": "And finally, the liver."
+    },
+    {
+      "start": 972.3,
+      "end": 973.92,
+      "text": "This can make things quite complicated."
+    },
+    {
+      "start": 974.75,
+      "end": 978.02,
+      "text": "Again, buying the Nadiah Fram will be a huge help."
+    },
+    {
+      "start": 979.11,
+      "end": 979.97,
+      "text": "If the tissue dense..."
+    },
+    {
+      "start": 980.03,
+      "end": 985.13,
+      "text": "above the diaphragm, but you're not sure if it's longer a fusion. Here's another trick."
+    },
+    {
+      "start": 989.26,
+      "end": 989.98,
+      "text": "Consolidated long-"
+    },
+    {
+      "start": 990.06,
+      "end": 997.06,
+      "text": "will have blood flow, whereas complex effusion won't. By placing the color-dopper box over"
+    },
+    {
+      "start": 997.06,
+      "end": 999.96,
+      "text": "the tissue density, you'll be able to see..."
+    },
+    {
+      "start": 1000.1,
+      "end": 1002.9,
+      "text": "whether there is blood flow in the consolidation"
+    },
+    {
+      "start": 1002.9,
+      "end": 1005.64,
+      "text": "or the tissue density or not."
+    },
+    {
+      "start": 1007.92,
+      "end": 1009.96,
+      "text": "If there is blood flow, you're highly likely."
+    },
+    {
+      "start": 1010.06,
+      "end": 1014.18,
+      "text": "to be in the presence of Consolidated Long rather than a complex effusion."
+    },
+    {
+      "start": 1017.29,
+      "end": 1019.96,
+      "text": "Another feature of Consolidated Long is that there were"
+    },
+    {
+      "start": 1020.0,
+      "end": 1023.3,
+      "text": "will often be some residual air remaining in the bronchi."
+    },
+    {
+      "start": 1024.62,
+      "end": 1028.02,
+      "text": "This is visible as hyperipkoic spots and lines"
+    },
+    {
+      "start": 1028.02,
+      "end": 1029.97,
+      "text": "within the constant consolid-"
+    },
+    {
+      "start": 1030.0,
+      "end": 1036.75,
+      "text": "it's long. These are called air bronchograms, just like on just radio breath."
+    },
+    {
+      "start": 1040.93,
+      "end": 1043.47,
+      "text": "There are two types of air-broadcograms to know about."
+    },
+    {
+      "start": 1044.67,
+      "end": 1047.67,
+      "text": "The more common are static air-broadcograms."
+    },
+    {
+      "start": 1048.94,
+      "end": 1049.98,
+      "text": "These represent air."
+    },
+    {
+      "start": 1050.0,
+      "end": 1059.97,
+      "text": "That is trapped within the bronchi and so when the long moves it moves, but it doesn't have the features of flow that we will see with our next time"
+    },
+    {
+      "start": 1060.0,
+      "end": 1065.5,
+      "text": "of air blocker grams. That air blocker grams can be found with any cause of"
+    },
+    {
+      "start": 1065.5,
+      "end": 1069.48,
+      "text": "consolidation but don't really help us know what the etiology is."
+    },
+    {
+      "start": 1075.7,
+      "end": 1079.86,
+      "text": "So dynamic air-broadograms happen when there is residual air flow."
+    },
+    {
+      "start": 1080.58,
+      "end": 1084.44,
+      "text": "in the consolidy as long, housing the air and the bronchi"
+    },
+    {
+      "start": 1084.44,
+      "end": 1087.08,
+      "text": "to move with inspiration and exploration."
+    },
+    {
+      "start": 1087.92,
+      "end": 1089.46,
+      "text": "They have a flowing quality."
+    },
+    {
+      "start": 1090.0,
+      "end": 1093.85,
+      "text": "Sometimes like something like rail cars moving on a train track."
+    },
+    {
+      "start": 1095.24,
+      "end": 1099.9,
+      "text": "Usually, if there's air going into the long, it should be inflated."
+    },
+    {
+      "start": 1100.51,
+      "end": 1104.85,
+      "text": "So dynamic air bronchogram suggests that something other than just loss of"
+    },
+    {
+      "start": 1104.85,
+      "end": 1108.73,
+      "text": "aeration or adelectasis is causing the lung to be consolidated."
+    },
+    {
+      "start": 1110.0,
+      "end": 1113.84,
+      "text": "is almost always because there is infection in the lung tissue or pneumonia."
+    },
+    {
+      "start": 1115.09,
+      "end": 1119.56,
+      "text": "Consequently, the specificity of dynamic air blocker grants for pneumonia."
+    },
+    {
+      "start": 1120.03,
+      "end": 1125.05,
+      "text": "is 95%, unfortunately, the sensitivity is much lower."
+    },
+    {
+      "start": 1129.48,
+      "end": 1129.98,
+      "text": "One important..."
+    },
+    {
+      "start": 1130.0,
+      "end": 1137.39,
+      "text": "mimic of air bronchograms to know is air within the stump but again this will be under the diaphragm"
+    },
+    {
+      "start": 1137.9,
+      "end": 1139.96,
+      "text": "in the void of blood flow around you."
+    },
+    {
+      "start": 1140.0,
+      "end": 1143.57,
+      "text": "It is also much more likely to be on the left side."
+    },
+    {
+      "start": 1149.25,
+      "end": 1149.97,
+      "text": "Mirror image art."
+    },
+    {
+      "start": 1150.03,
+      "end": 1152.89,
+      "text": "the fact that the liver or spleen can mimic lung consolidation."
+    },
+    {
+      "start": 1154.19,
+      "end": 1158.11,
+      "text": "This tends to happen in the dependent region of healthy lungs, where the"
+    },
+    {
+      "start": 1158.69,
+      "end": 1159.85,
+      "text": "Interface of the dive."
+    },
+    {
+      "start": 1160.03,
+      "end": 1164.33,
+      "text": "ram and aerated lungs serves as a mirror in projection liver or the spleen."
+    },
+    {
+      "start": 1165.84,
+      "end": 1169.66,
+      "text": "The absence of B lines and the disappearance of the mirror image artifact."
+    },
+    {
+      "start": 1171.22,
+      "end": 1178.32,
+      "text": "but respiration or small pro movements are good clues to the presence of this normal mirror artifact."
+    },
+    {
+      "start": 1180.0,
+      "end": 1185.48,
+      "text": "We also won't likely see any of the other features consolidations that there's a spine sign."
+    },
+    {
+      "start": 1192.53,
+      "end": 1197.57,
+      "text": "Another phenomenon, you may observe, especially with non-consolidated lungs, is the curtain sign."
+    },
+    {
+      "start": 1198.82,
+      "end": 1199.98,
+      "text": "This happens at the inter..."
+    },
+    {
+      "start": 1200.03,
+      "end": 1204.25,
+      "text": "between the lung and abdominal viscera at the level of the diaphragm."
+    },
+    {
+      "start": 1205.5,
+      "end": 1209.36,
+      "text": "You have abdominal viscera are visible during exhalation and within"
+    },
+    {
+      "start": 1210.0,
+      "end": 1217.94,
+      "text": "Inspiration belongs in flate, lower, and a long artifact appears and obscures the animal"
+    },
+    {
+      "start": 1217.94,
+      "end": 1219.04,
+      "text": "Contest on screen."
+    },
+    {
+      "start": 1220.0,
+      "end": 1229.89,
+      "text": "The first thing the ultrasound beam is encountering after the plura is aerated long and not a fusion or consolidation the long art of"
+    },
+    {
+      "start": 1230.0,
+      "end": 1235.27,
+      "text": "me either being the form of A lines, like here or D lines."
+    },
+    {
+      "start": 1241.15,
+      "end": 1244.69,
+      "text": "The last long ultrasound finding we'll discuss is pleural effusion."
+    },
+    {
+      "start": 1246.26,
+      "end": 1249.96,
+      "text": "Most pleural effusions will appear as anicoic or hypo..."
+    },
+    {
+      "start": 1250.03,
+      "end": 1256.41,
+      "text": "and be located in the dependent regions between the plural layers or, as we can see on"
+    },
+    {
+      "start": 1256.41,
+      "end": 1259.97,
+      "text": "ultrasound, between the parietal plural on the diaphragm."
+    },
+    {
+      "start": 1260.03,
+      "end": 1266.02,
+      "text": "hammer chest wall and the visceral plera I'm in love this gives rise to two"
+    },
+    {
+      "start": 1266.02,
+      "end": 1268.58,
+      "text": "signs that will help us detect plural of fusions"
+    },
+    {
+      "start": 1270.99,
+      "end": 1277.23,
+      "text": "The quadsign represents the formation of a four-sided anicoic or hypoicoic density."
+    },
+    {
+      "start": 1278.5,
+      "end": 1279.88,
+      "text": "The four sides are formed."
+    },
+    {
+      "start": 1280.1,
+      "end": 1288.64,
+      "text": "the chest wall, the long line, and the rib shadows on each side."
+    },
+    {
+      "start": 1295.92,
+      "end": 1299.56,
+      "text": "The sinusoid sign occurs when the long line moves."
+    },
+    {
+      "start": 1300.45,
+      "end": 1304.35,
+      "text": "to ward the parietal plura on the chest wall during inspiration."
+    },
+    {
+      "start": 1305.9,
+      "end": 1309.76,
+      "text": "This means the lung is able to move reasonably well within the effusion."
+    },
+    {
+      "start": 1310.03,
+      "end": 1314.22,
+      "text": "And, therefore, if fusion is unlikely to be lock-related,"
+    },
+    {
+      "start": 1315.63,
+      "end": 1317.97,
+      "text": "if fusion is unlikely to be lock-related,"
+    },
+    {
+      "start": 1319.39,
+      "end": 1319.97,
+      "text": "another important thing is that"
+    },
+    {
+      "start": 1320.0,
+      "end": 1325.35,
+      "text": "sign of motion of the long in the effusion is the jellyfish sign or long"
+    },
+    {
+      "start": 1325.35,
+      "end": 1328.83,
+      "text": "flapping we can see as the long floats in the effusion."
+    },
+    {
+      "start": 1330.32,
+      "end": 1335.32,
+      "text": "It is important to make sure you see the diaphragm and subd diaphragmatic abdominal viscera"
+    },
+    {
+      "start": 1335.32,
+      "end": 1336.64,
+      "text": "when looking at an infusion."
+    },
+    {
+      "start": 1337.29,
+      "end": 1339.96,
+      "text": "Make sure it is indeed within the plane."
+    },
+    {
+      "start": 1340.1,
+      "end": 1349.97,
+      "text": "It is also important to make sure you see the long and chest wall again to make"
+    },
+    {
+      "start": 1350.0,
+      "end": 1356.82,
+      "text": "sure if fusion you are seeing is within the plural. Here, it would be easy to be fooled into thinking"
+    },
+    {
+      "start": 1356.82,
+      "end": 1359.97,
+      "text": "that this anticox base is pl-"
+    },
+    {
+      "start": 1360.0,
+      "end": 1366.97,
+      "text": "of fusion. However, once we note the absence of long within it and the fact that it is above"
+    },
+    {
+      "start": 1366.97,
+      "end": 1369.49,
+      "text": "the parietal plural, it becomes clear."
+    },
+    {
+      "start": 1370.38,
+      "end": 1372.91,
+      "text": "that it is in the chess wall itself."
+    },
+    {
+      "start": 1379.43,
+      "end": 1379.97,
+      "text": "Here's another..."
+    },
+    {
+      "start": 1380.06,
+      "end": 1386.14,
+      "text": "example, where determining the boundaries on a fusion is important on first glance, it"
+    },
+    {
+      "start": 1386.14,
+      "end": 1389.78,
+      "text": "might be tempting to say this diffusion is entirely inside the plurum."
+    },
+    {
+      "start": 1390.77,
+      "end": 1397.03,
+      "text": "However, on closer inspection part of the effusion is between two disease pericardial layers"
+    },
+    {
+      "start": 1397.03,
+      "end": 1399.22,
+      "text": "and will require"
+    },
+    {
+      "start": 1400.03,
+      "end": 1409.94,
+      "text": "much different management. Different formulas existed at 10."
+    },
+    {
+      "start": 1410.06,
+      "end": 1415.06,
+      "text": "to predict how much fluid is contained inside a plural of fusion, and generally perform"
+    },
+    {
+      "start": 1415.06,
+      "end": 1416.68,
+      "text": "best for moderate the fusions."
+    },
+    {
+      "start": 1417.7,
+      "end": 1419.82,
+      "text": "However, for most clinical circumstance,"
+    },
+    {
+      "start": 1420.03,
+      "end": 1428.76,
+      "text": "This is qualitative assessment dividing effusions into small, or about 0 to 2.5 cm between the long and the chest wall."
+    },
+    {
+      "start": 1431.31,
+      "end": 1437.44,
+      "text": "Moderate or about 2.5 to 5 centimeters between the lung and the chest wall and"
+    },
+    {
+      "start": 1440.0,
+      "end": 1446.84,
+      "text": "large volume or more than 5 centimeters between the lung and chest wall will be sufficient."
+    },
+    {
+      "start": 1453.62,
+      "end": 1457.38,
+      "text": "Some degree of adelectsis is expected whenever there is a plural of fusion."
+    },
+    {
+      "start": 1458.8,
+      "end": 1459.98,
+      "text": "If the effusion is rough..."
+    },
+    {
+      "start": 1460.03,
+      "end": 1464.53,
+      "text": "larger than the Consolidated Long. This generally represents passive"
+    },
+    {
+      "start": 1464.53,
+      "end": 1469.9,
+      "text": "of adelectocyst due to the effusion itself. Otherwise, there's either"
+    },
+    {
+      "start": 1470.0,
+      "end": 1477.42,
+      "text": "There are more addylactasis than it's expected for the size of the effusion, which may be due to recumbency, mucus plugging, etc."
+    },
+    {
+      "start": 1478.44,
+      "end": 1479.96,
+      "text": "Or there is a co-existing cop."
+    },
+    {
+      "start": 1480.13,
+      "end": 1489.98,
+      "text": "of lung consolidation, such as pneumonia. Here, the consolidation is mildly larger than expected given the effusion, and so something else is..."
+    },
+    {
+      "start": 1490.03,
+      "end": 1498.97,
+      "text": "likely contributing to the consolidation. On occasion, there won't be any consolidation."
+    },
+    {
+      "start": 1500.0,
+      "end": 1504.44,
+      "text": "you'll be able to appreciate a lines or b lines where the effusion meets the"
+    },
+    {
+      "start": 1504.44,
+      "end": 1509.04,
+      "text": "lung. These are terms sub a lines and sub b lines respectively."
+    },
+    {
+      "start": 1512.98,
+      "end": 1518.23,
+      "text": "Apart from size and location, it is also important to note the echo genicity of the fluid."
+    },
+    {
+      "start": 1519.48,
+      "end": 1519.96,
+      "text": "Most of the fluid."
+    },
+    {
+      "start": 1520.0,
+      "end": 1524.76,
+      "text": "will be transidates and will appear anticoic or black."
+    },
+    {
+      "start": 1530.26,
+      "end": 1538.24,
+      "text": "Exidative effusions will generally be hypoechoic or less commonly isoechoic or hyperechoic."
+    },
+    {
+      "start": 1539.26,
+      "end": 1539.5,
+      "text": "Here,"
+    },
+    {
+      "start": 1540.03,
+      "end": 1543.27,
+      "text": "We can see that there are debris floating around in the effusion."
+    },
+    {
+      "start": 1544.51,
+      "end": 1549.54,
+      "text": "This is term plankton sign and suggests a complex or exudative effusion."
+    },
+    {
+      "start": 1555.5,
+      "end": 1559.82,
+      "text": "Often, when we see the plankton sign, there will only be one."
+    },
+    {
+      "start": 1560.22,
+      "end": 1566.8,
+      "text": "a few small complexities floating around in the fluid. So it'll be important for you to keep a"
+    },
+    {
+      "start": 1566.8,
+      "end": 1567.56,
+      "text": "watch the eye."
+    },
+    {
+      "start": 1575.34,
+      "end": 1579.86,
+      "text": "Here's an example of a mildly hypoechoic and heterogeneous complex."
+    },
+    {
+      "start": 1580.06,
+      "end": 1587.44,
+      "text": "plural of fusion with the lung above it and the liver below it again identify all the local anatomy"
+    },
+    {
+      "start": 1587.44,
+      "end": 1589.62,
+      "text": "and the use of color Doppler to confirm."
+    },
+    {
+      "start": 1590.58,
+      "end": 1595.04,
+      "text": "The absence of blood flow in the collection can be useful to confirm it is a plural of fusion"
+    },
+    {
+      "start": 1595.04,
+      "end": 1597.88,
+      "text": "and not a consolidated lung or abdominal organ."
+    },
+    {
+      "start": 1601.57,
+      "end": 1606.21,
+      "text": "other times, it will be possible to see thicker from fibrous strands in the effusion."
+    },
+    {
+      "start": 1607.44,
+      "end": 1609.96,
+      "text": "Again, this suggests a complex or exudate of..."
+    },
+    {
+      "start": 1610.06,
+      "end": 1614.51,
+      "text": "a fusion, more often an empire, and it's likely to warrant drainage."
+    },
+    {
+      "start": 1616.44,
+      "end": 1619.98,
+      "text": "We can also appreciate here that sometimes with necrotizing them..."
+    },
+    {
+      "start": 1620.03,
+      "end": 1626.25,
+      "text": "The border between the long and the effusion can be difficult to determine."
+    },
+    {
+      "start": 1634.32,
+      "end": 1639.74,
+      "text": "One structure you may see that can be confused for fiber nor adhesions is the inferior pulmonary"
+    },
+    {
+      "start": 1640.0,
+      "end": 1643.87,
+      "text": "that ties the base of the long, the diaphragm."
+    },
+    {
+      "start": 1645.17,
+      "end": 1647.45,
+      "text": "It's seeing this one big strand"
+    },
+    {
+      "start": 1647.45,
+      "end": 1649.97,
+      "text": "and otherwise anicoic appearing infusion."
+    },
+    {
+      "start": 1650.0,
+      "end": 1655.36,
+      "text": "will help you know that it is, in fact, the inferior pulmonary ligament that you are observing"
+    },
+    {
+      "start": 1655.36,
+      "end": 1659.96,
+      "text": "and not a complex effusion. Again, the clinic-"
+    },
+    {
+      "start": 1660.0,
+      "end": 1669.85,
+      "text": "context is likely to help you in these kinds of situations. It is also important to distinguish between fiber."
+    },
+    {
+      "start": 1670.0,
+      "end": 1676.63,
+      "text": "or complexity in an effusion, and being thickness artifact, as we discussed in the artifact module."
+    },
+    {
+      "start": 1677.08,
+      "end": 1679.96,
+      "text": "This is caused by compression of its tree-dimensional structure."
+    },
+    {
+      "start": 1680.16,
+      "end": 1685.24,
+      "text": "into two dimensions and represents a partial display of the log."
+    },
+    {
+      "start": 1686.36,
+      "end": 1689.8,
+      "text": "Banding through the structure will reveal that it is in fact."
+    },
+    {
+      "start": 1690.67,
+      "end": 1699.35,
+      "text": "merely partially seen long. That's it for the respiratory ultrasound modules."
+    },
+    {
+      "start": 1700.42,
+      "end": 1706.83,
+      "text": "Naturally, there's a lot more content out there and much more you can continue to learn about respiratory ultrasonocryphal."
+    },
+    {
+      "start": 1707.4,
+      "end": 1709.96,
+      "text": "But hopefully this will help you begin to use ultrasonocryphal."
+    }
+  ]
+}

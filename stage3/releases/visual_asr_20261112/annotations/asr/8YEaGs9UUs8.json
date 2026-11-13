@@ -1,0 +1,1088 @@
+{
+  "video_id": "8YEaGs9UUs8",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/8YEaGs9UUs8/asr.txt",
+  "segments": [
+    {
+      "start": 9.15,
+      "end": 9.83,
+      "text": "Friends, welcome."
+    },
+    {
+      "start": 10.0,
+      "end": 13.4,
+      "text": "back to Arun Sanesthesia Academy. This tutorial we will be seeing needling in"
+    },
+    {
+      "start": 13.4,
+      "end": 16.7,
+      "text": "ultrasound that is how to visualize the needle when you are doing an ultrasound"
+    },
+    {
+      "start": 16.7,
+      "end": 19.68,
+      "text": "guided block or any procedure. So you know"
+    },
+    {
+      "start": 20.13,
+      "end": 23.29,
+      "text": "When you are not seeing the needle, it is very irritating from the procedure performing"
+    },
+    {
+      "start": 23.29,
+      "end": 23.75,
+      "text": "person."
+    },
+    {
+      "start": 24.15,
+      "end": 27.89,
+      "text": "So, at the same time, when you are seeing the needle, it just improves the confidence."
+    },
+    {
+      "start": 28.55,
+      "end": 29.97,
+      "text": "And you can improve the success of the..."
+    },
+    {
+      "start": 30.0,
+      "end": 33.68,
+      "text": "block and you can reduce the complication. We have actually 9 steps how you can"
+    },
+    {
+      "start": 33.68,
+      "end": 37.98,
+      "text": "improve the visualization. So if you can just follow these steps when you're"
+    },
+    {
+      "start": 37.98,
+      "end": 39.76,
+      "text": "doing a block you can improve the success."
+    },
+    {
+      "start": 61.31,
+      "end": 64.29,
+      "text": "So, first step in doing an ultrasound-guided block is to follow ergonomics."
+    },
+    {
+      "start": 64.43,
+      "end": 68.59,
+      "text": "It should be in such a way that you, the part of the patient which you are doing the procedure"
+    },
+    {
+      "start": 68.59,
+      "end": 69.33,
+      "text": "Roscanning."
+    },
+    {
+      "start": 70.0,
+      "end": 71.8,
+      "text": "and the machine should be in a straight line."
+    },
+    {
+      "start": 72.6,
+      "end": 75.08,
+      "text": "It should be in such a way that when you're doing a block"
+    },
+    {
+      "start": 75.08,
+      "end": 76.74,
+      "text": "if you want to make any movements,"
+    },
+    {
+      "start": 77.55,
+      "end": 79.59,
+      "text": "the hand movement should be in a very minimal way."
+    },
+    {
+      "start": 80.29,
+      "end": 83.36,
+      "text": "You should not be turning your head or doing anything like that."
+    },
+    {
+      "start": 83.42,
+      "end": 85.98,
+      "text": "It should be only movement of your hand and the eyes."
+    },
+    {
+      "start": 86.34,
+      "end": 88.74,
+      "text": "So when you're doing it with these, there will be less fatigue."
+    },
+    {
+      "start": 89.38,
+      "end": 89.96,
+      "text": "You can do the..."
+    },
+    {
+      "start": 90.0,
+      "end": 93.16,
+      "text": "procedure with more patients and obviously the outcome will be good."
+    },
+    {
+      "start": 93.82,
+      "end": 97.76,
+      "text": "Second in ergonomics is when you are trying to do a procedure, try to do in sitting position"
+    },
+    {
+      "start": 97.76,
+      "end": 99.18,
+      "text": "so that you can be comfortable."
+    },
+    {
+      "start": 99.56,
+      "end": 99.74,
+      "text": "Next."
+    },
+    {
+      "start": 100.1,
+      "end": 103.96,
+      "text": "Coming to the hands, you should rest the hand in such a way that the ulnar aspect of your"
+    },
+    {
+      "start": 103.96,
+      "end": 107.39,
+      "text": "hand should be resting over the patient or over any surfaces."
+    },
+    {
+      "start": 107.95,
+      "end": 109.97,
+      "text": "So that the operating hand or the..."
+    },
+    {
+      "start": 110.0,
+      "end": 115.81,
+      "text": "hand which is holding the probe can be held very easily and you can make fine movements"
+    },
+    {
+      "start": 115.81,
+      "end": 117.11,
+      "text": "without getting fatigued."
+    },
+    {
+      "start": 117.7,
+      "end": 119.8,
+      "text": "After you keep the hand in the proper position, next"
+    },
+    {
+      "start": 120.0,
+      "end": 124.27,
+      "text": "how to hold the probe. When you're holding the probe, hold the probe in more"
+    },
+    {
+      "start": 124.27,
+      "end": 129.12,
+      "text": "distal position so that you get fine movements. Never hold a probe with pressure"
+    },
+    {
+      "start": 129.12,
+      "end": 129.98,
+      "text": "because when you're"
+    },
+    {
+      "start": 130.0,
+      "end": 134.18,
+      "text": "using a jelly, this could lead to jerky movements when you are trying to make fine movements."
+    },
+    {
+      "start": 134.76,
+      "end": 139.92,
+      "text": "Whenever do that, and always try to change the portion of the patient so that you can"
+    },
+    {
+      "start": 140.0,
+      "end": 144.06,
+      "text": "the procedure comfortably that will finally benefit the patient himself."
+    },
+    {
+      "start": 144.24,
+      "end": 146.64,
+      "text": "So ergonomics for giving you a block includes three things."
+    },
+    {
+      "start": 146.92,
+      "end": 149.98,
+      "text": "First thing is arranging you, your patient and the machine in a-"
+    },
+    {
+      "start": 150.0,
+      "end": 155.59,
+      "text": "line, second is how to keep your hand, third is how to hold the proof and that too with"
+    },
+    {
+      "start": 155.59,
+      "end": 156.39,
+      "text": "less pressure."
+    },
+    {
+      "start": 157.06,
+      "end": 159.92,
+      "text": "And always try to do the procedure if possible in"
+    },
+    {
+      "start": 160.0,
+      "end": 169.79,
+      "text": "sitting position. Next step is focusing, infocusing."
+    },
+    {
+      "start": 170.0,
+      "end": 175.2,
+      "text": "It is that the ultrasound beam has got a particular feature that it converges and it diverges."
+    },
+    {
+      "start": 175.44,
+      "end": 179.5,
+      "text": "The way it converges that is where you are going to get maximum resolution of the structure"
+    },
+    {
+      "start": 179.5,
+      "end": 179.98,
+      "text": "which you are seeing."
+    },
+    {
+      "start": 180.06,
+      "end": 184.62,
+      "text": "at the same time that is where you are going to get the maximum resolution of the needle"
+    },
+    {
+      "start": 184.62,
+      "end": 186.44,
+      "text": "so that you will easily visualize the needle."
+    },
+    {
+      "start": 186.98,
+      "end": 189.97,
+      "text": "So whenever you are scanning, try to adjust the depth of the image."
+    },
+    {
+      "start": 190.0,
+      "end": 194.2,
+      "text": "so that the target structure comes in the focusing point that is target structure should"
+    },
+    {
+      "start": 194.2,
+      "end": 195.64,
+      "text": "come in the middle of the screen."
+    },
+    {
+      "start": 196.13,
+      "end": 199.97,
+      "text": "So, obviously when you are trying to approach that structure using the needle of"
+    },
+    {
+      "start": 200.0,
+      "end": 204.13,
+      "text": "Obviously the needle will also come in the focus zone, so obviously you will get the maximum"
+    },
+    {
+      "start": 204.13,
+      "end": 209.45,
+      "text": "resolution and you are more likely to visualize the needle, so second step is try to focus."
+    },
+    {
+      "start": 216.46,
+      "end": 218.49,
+      "text": "which needle to select."
+    },
+    {
+      "start": 219.13,
+      "end": 219.89,
+      "text": "You would have seen people"
+    },
+    {
+      "start": 220.0,
+      "end": 224.18,
+      "text": "using 20 gauge needle, 23 gauge needle, 26 gauge needle. There is no hard and"
+    },
+    {
+      "start": 224.18,
+      "end": 228.51,
+      "text": "fast rule that you should be using a specific size. So as you can see in these"
+    },
+    {
+      "start": 228.51,
+      "end": 229.85,
+      "text": "images, all the needles,"
+    },
+    {
+      "start": 230.0,
+      "end": 233.98,
+      "text": "can be visualized under ultrasound. There is a misconception that only bigger size"
+    },
+    {
+      "start": 233.98,
+      "end": 238.3,
+      "text": "needles can be visualized, so even 26 gauge needles can be visualized under ultrasound."
+    },
+    {
+      "start": 239.02,
+      "end": 239.8,
+      "text": "So what is that deciding?"
+    },
+    {
+      "start": 240.03,
+      "end": 244.64,
+      "text": "factor, the deciding factor is one is age of the patient, pediatric patient obviously"
+    },
+    {
+      "start": 244.64,
+      "end": 249.52,
+      "text": "you will try to do with a lesser size of needle, so 26 gauge needles can be used for pediatric"
+    },
+    {
+      "start": 250.03,
+      "end": 253.88,
+      "text": "So, there will be more comfort for the patient and less damage to the structures."
+    },
+    {
+      "start": 254.76,
+      "end": 259.5,
+      "text": "In adults also, you can try using 20 stage needles, but as the needle is smaller in size,"
+    },
+    {
+      "start": 259.5,
+      "end": 259.96,
+      "text": "There we go."
+    },
+    {
+      "start": 260.06,
+      "end": 265.63,
+      "text": "pressure needed for injection. So you can go to the next size 23g as needle. In the beginning"
+    },
+    {
+      "start": 265.63,
+      "end": 269.77,
+      "text": "faces when you are feeling not comfortable like when there is difficulty in identifying"
+    },
+    {
+      "start": 270.0,
+      "end": 272.62,
+      "text": "the needle with ultrasound even 20k's needle can be used."
+    },
+    {
+      "start": 273.3,
+      "end": 277.66,
+      "text": "But as you develop or as you improve the skills, try to use smaller size needles so that"
+    },
+    {
+      "start": 277.66,
+      "end": 279.9,
+      "text": "patient will have more comfort and there will be less"
+    },
+    {
+      "start": 280.58,
+      "end": 284.68,
+      "text": "damage to the structures. Another thing what you can do is you can insert a guideware inside"
+    },
+    {
+      "start": 284.68,
+      "end": 289.37,
+      "text": "the needle. So, guideware and the needle will have different coincidences and obviously"
+    },
+    {
+      "start": 289.37,
+      "end": 289.89,
+      "text": "that will link."
+    },
+    {
+      "start": 290.0,
+      "end": 295.67,
+      "text": "increase the visualization of the needle but this is not done usually and what specifically"
+    },
+    {
+      "start": 295.67,
+      "end": 299.91,
+      "text": "you have to see is the guide wire should be of a smaller diameter if the guide wire"
+    },
+    {
+      "start": 300.0,
+      "end": 305.16,
+      "text": "and the needle shaft both are just snugly fitting. There won't be any coincident difference"
+    },
+    {
+      "start": 305.16,
+      "end": 309.62,
+      "text": "and there won't be an improved visualization. So there should be a space between the guide"
+    },
+    {
+      "start": 309.62,
+      "end": 309.98,
+      "text": "Where are you?"
+    },
+    {
+      "start": 310.0,
+      "end": 314.3,
+      "text": "the needle shaft. That is how you should select the guide wire. Same thing happens when"
+    },
+    {
+      "start": 314.3,
+      "end": 318.56,
+      "text": "you are using a stellated needle. If you are using canola that is stilled along with"
+    },
+    {
+      "start": 318.56,
+      "end": 319.06,
+      "text": "the canola."
+    },
+    {
+      "start": 320.19,
+      "end": 324.67,
+      "text": "Normally they are snugly fit, so in ultrasound there won't be much improved visualization."
+    },
+    {
+      "start": 325.53,
+      "end": 329.91,
+      "text": "So for ultrasound, to improve the visualization of such snugly fitting cannula..."
+    },
+    {
+      "start": 330.0,
+      "end": 335.93,
+      "text": "you can do is you can do pump manor that is slowly you can agitate or rock the"
+    },
+    {
+      "start": 335.93,
+      "end": 339.96,
+      "text": "still let inside the cannula so that there will be small microbubble"
+    },
+    {
+      "start": 340.64,
+      "end": 342.78,
+      "text": "at the tip and you can visualize the tip."
+    },
+    {
+      "start": 350.29,
+      "end": 356.13,
+      "text": "step 4 where to prick so you have got ergonomics you know how to focus you have selected the"
+    },
+    {
+      "start": 356.13,
+      "end": 359.93,
+      "text": "needle next is where you have to prick that needle so there are two"
+    },
+    {
+      "start": 360.9,
+      "end": 363.5,
+      "text": "You have in plane technique, you have out of plane technique."
+    },
+    {
+      "start": 364.02,
+      "end": 366.66,
+      "text": "In in plane technique, you know you are going parallel to the beam."
+    },
+    {
+      "start": 367.38,
+      "end": 369.96,
+      "text": "So when you are going with the lesser angles, that is..."
+    },
+    {
+      "start": 370.0,
+      "end": 374.7,
+      "text": "when you are almost inserting the angle and it is reflecting back, you will get better"
+    },
+    {
+      "start": 374.7,
+      "end": 375.0,
+      "text": "image."
+    },
+    {
+      "start": 375.6,
+      "end": 379.54,
+      "text": "When you are increasing the angle or when you are focusing at a deeper structure, obviously"
+    },
+    {
+      "start": 380.22,
+      "end": 382.54,
+      "text": "you are going to have a lesser visualization of the needed."
+    },
+    {
+      "start": 383.28,
+      "end": 388.96,
+      "text": "So ideal angle is between 30 to 45 degree, so with the skin so that you can visualize"
+    },
+    {
+      "start": 390.0,
+      "end": 392.04,
+      "text": "but which is not always possible."
+    },
+    {
+      "start": 392.34,
+      "end": 395.48,
+      "text": "So to make sure that you are going at 30 to 45 degree angle,"
+    },
+    {
+      "start": 395.7,
+      "end": 397.46,
+      "text": "what you should do is once you are focused,"
+    },
+    {
+      "start": 398.14,
+      "end": 399.98,
+      "text": "just see the depth at which the..."
+    },
+    {
+      "start": 400.5,
+      "end": 406.98,
+      "text": "So when you see the ultrasound in the ultrasound in the side you will have markers which is showing the depth"
+    },
+    {
+      "start": 406.98,
+      "end": 409.76,
+      "text": "So what you should do is that based on the low of signs"
+    },
+    {
+      "start": 410.0,
+      "end": 414.92,
+      "text": "you have sine theta cos theta tan theta and all. So, to get an angle of 30 degrees you"
+    },
+    {
+      "start": 414.92,
+      "end": 419.59,
+      "text": "should be inserting the needle almost 1.5 times the"
+    },
+    {
+      "start": 420.0,
+      "end": 424.66,
+      "text": "step from the center of the probe. So, you find the center of the probe in the center"
+    },
+    {
+      "start": 424.66,
+      "end": 429.97,
+      "text": "of the probe, there will be a mark. So, from there you select almost 1.5 times the"
+    },
+    {
+      "start": 430.0,
+      "end": 435.08,
+      "text": "depth to the structure so there you should prick and then you just guide the needle to"
+    },
+    {
+      "start": 435.08,
+      "end": 439.86,
+      "text": "the target structure so that will give you an angle of around 30 degrees so when you"
+    },
+    {
+      "start": 440.0,
+      "end": 443.04,
+      "text": "So more distally that is more than 1.5 times the depth."
+    },
+    {
+      "start": 443.77,
+      "end": 447.73,
+      "text": "Obviously you will get more shallow angle the needle visualization is going to be better"
+    },
+    {
+      "start": 447.73,
+      "end": 449.89,
+      "text": "but problem is that you have to travel a long"
+    },
+    {
+      "start": 450.03,
+      "end": 455.11,
+      "text": "So, that is going to create discomfort for the patient, there could be damage to other"
+    },
+    {
+      "start": 455.11,
+      "end": 455.57,
+      "text": "structures."
+    },
+    {
+      "start": 456.36,
+      "end": 459.79,
+      "text": "So, that is why which is not usually used but if possible"
+    },
+    {
+      "start": 460.0,
+      "end": 464.42,
+      "text": "you can do that. So, going at a deeper structure, what you can do is, what you can do is,"
+    },
+    {
+      "start": 464.48,
+      "end": 469.13,
+      "text": "you can do the rocking of the proof. So, rocking of the proof or otherwise known as heel"
+    },
+    {
+      "start": 469.13,
+      "end": 469.51,
+      "text": "manual."
+    },
+    {
+      "start": 470.06,
+      "end": 476.31,
+      "text": "or healing manner where you put pressure on the distal part of the probe so that you reduce"
+    },
+    {
+      "start": 476.31,
+      "end": 479.8,
+      "text": "the angle of incination so you get almost perpendicular."
+    },
+    {
+      "start": 480.0,
+      "end": 484.51,
+      "text": "beam which is going and hitting and coming back. So obviously your needle visualization"
+    },
+    {
+      "start": 484.51,
+      "end": 488.9,
+      "text": "will improve. Another thing which you can do in implant technique is that you can do"
+    },
+    {
+      "start": 488.9,
+      "end": 489.78,
+      "text": "sky lift technique."
+    },
+    {
+      "start": 490.29,
+      "end": 494.01,
+      "text": "In sky lift technique what you are doing is you just lift the proximal part of the proof"
+    },
+    {
+      "start": 494.01,
+      "end": 498.76,
+      "text": "so when you are lifting the proximal part of the proof clearly you can see the sender mark"
+    },
+    {
+      "start": 498.76,
+      "end": 499.8,
+      "text": "marks there"
+    },
+    {
+      "start": 500.38,
+      "end": 505.2,
+      "text": "So you insert the needle just under the probe, once you have inserted the needle you can"
+    },
+    {
+      "start": 505.2,
+      "end": 508.94,
+      "text": "put the probe back in position and you can follow with a routine technique."
+    },
+    {
+      "start": 509.26,
+      "end": 509.98,
+      "text": "And this will help you..."
+    },
+    {
+      "start": 510.0,
+      "end": 515.2,
+      "text": "to insert the needle in the exact 1 millimeter narrow path where your ultrasound beam is going"
+    },
+    {
+      "start": 515.2,
+      "end": 515.68,
+      "text": "to come."
+    },
+    {
+      "start": 515.68,
+      "end": 519.98,
+      "text": "Coming to Outerplane Technique, in Outerplane Technique it is a confusion for everyone to"
+    },
+    {
+      "start": 520.0,
+      "end": 522.88,
+      "text": "where to puncture so that you can visualize the needle tip properly."
+    },
+    {
+      "start": 523.55,
+      "end": 529.68,
+      "text": "If you see the trigonometric principle, this will form a what is called as isosilus triangle."
+    },
+    {
+      "start": 530.38,
+      "end": 535.92,
+      "text": "So if you puncture one centimeter away from the probe and you are directing towards a"
+    },
+    {
+      "start": 535.92,
+      "end": 539.56,
+      "text": "structured 45 degree angle, the needle will be seen at the same depth."
+    },
+    {
+      "start": 540.0,
+      "end": 544.2,
+      "text": "that is, if you go at one centimeter away from the probe and you puncture at 45 degrees,"
+    },
+    {
+      "start": 544.48,
+      "end": 547.08,
+      "text": "you will be seeing the needle at one centimeter depth."
+    },
+    {
+      "start": 548.12,
+      "end": 549.96,
+      "text": "If you puncture two centimeters..."
+    },
+    {
+      "start": 550.0,
+      "end": 555.21,
+      "text": "away from the probe that is on the middle of the probe and if you are directing at 45 degree angle"
+    },
+    {
+      "start": 555.21,
+      "end": 559.97,
+      "text": "you will be seeing the needle at 2 cm depth so that is how you should"
+    },
+    {
+      "start": 560.03,
+      "end": 564.96,
+      "text": "puncture the outer plane blocks. When you have a very deep structure, it is very difficult"
+    },
+    {
+      "start": 564.96,
+      "end": 569.82,
+      "text": "to go that much far from the probe because you will have to transfer that much long distance"
+    },
+    {
+      "start": 570.19,
+      "end": 571.75,
+      "text": "and it may be discomfort for the patient"
+    },
+    {
+      "start": 571.75,
+      "end": 573.83,
+      "text": "and there will be compromised with the needle length."
+    },
+    {
+      "start": 574.72,
+      "end": 576.9,
+      "text": "So in that case, what you should do is that"
+    },
+    {
+      "start": 576.9,
+      "end": 579.85,
+      "text": "you go almost parallel to the ultrasound probe."
+    },
+    {
+      "start": 580.0,
+      "end": 584.6,
+      "text": "a little bit away, maybe you want 0.5 centimeter and you go almost parallel to the proof."
+    },
+    {
+      "start": 585.41,
+      "end": 589.59,
+      "text": "And always keep in mind, image in the mind how the needle is going, how the ultrasound"
+    },
+    {
+      "start": 589.59,
+      "end": 589.85,
+      "text": "being"
+    },
+    {
+      "start": 590.0,
+      "end": 594.31,
+      "text": "going and try to focus the ultrasound needle to the target structure."
+    },
+    {
+      "start": 594.67,
+      "end": 597.17,
+      "text": "That is how you should do when you are doing an out-of-plane block."
+    },
+    {
+      "start": 600.0,
+      "end": 609.37,
+      "text": "Coming to the needle tip it is one of the single step by which you can improve the visualization of the needle tip"
+    },
+    {
+      "start": 610.0,
+      "end": 614.48,
+      "text": "So if you face the needed tip towards the probe or needle tip away from the probe that is"
+    },
+    {
+      "start": 614.48,
+      "end": 618.45,
+      "text": "going to improve the visualization, if it is not in either of this the visualization"
+    },
+    {
+      "start": 618.45,
+      "end": 619.67,
+      "text": "session is going to be difficult."
+    },
+    {
+      "start": 620.35,
+      "end": 624.29,
+      "text": "One thing which you should understand is that the needle tip visualization is not depend"
+    },
+    {
+      "start": 624.29,
+      "end": 629.32,
+      "text": "upon how you insert the needle because needle tip visualization is not affected by the"
+    },
+    {
+      "start": 629.32,
+      "end": 629.98,
+      "text": "angle of inch."
+    },
+    {
+      "start": 630.06,
+      "end": 634.22,
+      "text": "The needed tip visualization is affected only by how it is facing."
+    },
+    {
+      "start": 634.52,
+      "end": 638.48,
+      "text": "So here I have discussed 5 steps by which you can improve the visualization of the needle"
+    },
+    {
+      "start": 638.48,
+      "end": 639.9,
+      "text": "when you are doing ultrasound guided."
+    },
+    {
+      "start": 640.0,
+      "end": 644.66,
+      "text": "blocks. Still, after doing these things, we are not able to visualize the needle or if"
+    },
+    {
+      "start": 644.66,
+      "end": 649.72,
+      "text": "you are seeing part of the needle, then we have few more steps by which you can improve the visualization."
+    },
+    {
+      "start": 656.78,
+      "end": 659.92,
+      "text": "Step 6 is then when you are not seeing any part of the needle in the untrasound."
+    },
+    {
+      "start": 660.0,
+      "end": 665.29,
+      "text": "view. So, there is only one possibility the needle is not in the ultrasound beam path."
+    },
+    {
+      "start": 665.95,
+      "end": 669.71,
+      "text": "So, either your needle insertion point is wrong or the ultrasound"
+    },
+    {
+      "start": 670.0,
+      "end": 672.54,
+      "text": "would have slide away when you are doing the procedure."
+    },
+    {
+      "start": 673.04,
+      "end": 677.22,
+      "text": "So, what you should do is that first see whether the needle insertion point is correct."
+    },
+    {
+      "start": 677.9,
+      "end": 679.9,
+      "text": "So, if it is not correct rather than take"
+    },
+    {
+      "start": 680.0,
+      "end": 684.48,
+      "text": "a second prick, what you can do is you can slide the probe to the original position."
+    },
+    {
+      "start": 684.72,
+      "end": 689.02,
+      "text": "That is what you should do when you are not seeing any part of the needle during the ultrasound procedure."
+    },
+    {
+      "start": 696.11,
+      "end": 699.81,
+      "text": "Once you have done step 6 or initially only you are seeing only"
+    },
+    {
+      "start": 700.03,
+      "end": 704.77,
+      "text": "part of the needle what you should assume is that the part which is not seen is not coming"
+    },
+    {
+      "start": 704.77,
+      "end": 705.63,
+      "text": "to the ultrasound beam."
+    },
+    {
+      "start": 706.29,
+      "end": 709.8,
+      "text": "So you should rotate the probe in such a way that the ultrasound"
+    },
+    {
+      "start": 711.66,
+      "end": 717.95,
+      "text": "and you can do the procedure. Never try to change the direction of the needle once you have inserted in the patient"
+    },
+    {
+      "start": 717.95,
+      "end": 719.97,
+      "text": "because that is going to coset graded"
+    },
+    {
+      "start": 720.0,
+      "end": 723.74,
+      "text": "discomfort for the patient. You are not seeing the proximal part of the needle, that means"
+    },
+    {
+      "start": 723.74,
+      "end": 728.99,
+      "text": "the proximal part is the one which has gone out of view. So you just rotate the proximal"
+    },
+    {
+      "start": 728.99,
+      "end": 729.73,
+      "text": "part of the..."
+    },
+    {
+      "start": 730.22,
+      "end": 736.0,
+      "text": "probe towards the needle's direction. The same thing you can do for when the proximal"
+    },
+    {
+      "start": 736.0,
+      "end": 739.24,
+      "text": "part of the needle is seen and the distal part of the needle is not seen."
+    },
+    {
+      "start": 740.0,
+      "end": 744.22,
+      "text": "The distal part is out of the view, you can rotate the distal part of the probe towards the needle."
+    },
+    {
+      "start": 751.38,
+      "end": 756.97,
+      "text": "It is you rock the needle, so rocking the needle it is otherwise jiggling with a controlled"
+    },
+    {
+      "start": 756.97,
+      "end": 759.94,
+      "text": "in and out movement of the needle, so that will cause tissue."
+    },
+    {
+      "start": 760.03,
+      "end": 764.35,
+      "text": "deflection and you will get an idea of the needle path. Second thing what you can do in the"
+    },
+    {
+      "start": 764.35,
+      "end": 769.72,
+      "text": "same thing is that you can put a color Doppler or power Doppler on so with it small your jiggling"
+    },
+    {
+      "start": 770.0,
+      "end": 775.18,
+      "text": "or your in and out movement that is going to create a color shift or a Doppler shift"
+    },
+    {
+      "start": 775.18,
+      "end": 778.84,
+      "text": "and you can note a change in color and that will correspond to your needle direction."
+    },
+    {
+      "start": 780.0,
+      "end": 789.96,
+      "text": "a step which you can do if you are not saying the needle tape or any part"
+    },
+    {
+      "start": 790.0,
+      "end": 794.1,
+      "text": "of the needle despite doing any of these step is that you can do hydro location or otherwise"
+    },
+    {
+      "start": 794.1,
+      "end": 795.4,
+      "text": "called as hydro dissection."
+    },
+    {
+      "start": 795.99,
+      "end": 799.97,
+      "text": "So this last step is that you inject a small amount of local anesthetic or normal saline"
+    },
+    {
+      "start": 800.0,
+      "end": 803.66,
+      "text": "so that you can visualize the black color spreading in the ultrasound."
+    },
+    {
+      "start": 804.91,
+      "end": 808.29,
+      "text": "So here also there are two possibilities when you are not seeing the spread."
+    },
+    {
+      "start": 808.88,
+      "end": 809.96,
+      "text": "If you are not seeing the"
+    },
+    {
+      "start": 810.06,
+      "end": 815.45,
+      "text": "of the local anesthetic, then one possibility is your ultrasound beam is too far away"
+    },
+    {
+      "start": 815.45,
+      "end": 819.79,
+      "text": "from the needle direction or too far away from where you are injected the local anesthetic"
+    },
+    {
+      "start": 819.79,
+      "end": 819.97,
+      "text": "car."
+    },
+    {
+      "start": 820.0,
+      "end": 825.44,
+      "text": "the normal saline, second possibility is you are injecting it intra-vascular. So, both"
+    },
+    {
+      "start": 825.44,
+      "end": 828.9,
+      "text": "of this should not happen. So, if you are not visualizing the spread of the local"
+    },
+    {
+      "start": 830.03,
+      "end": 834.94,
+      "text": "or anything, then you should just stop injecting because that is going to create more problem."
+    },
+    {
+      "start": 835.56,
+      "end": 839.84,
+      "text": "What you can do is you can try to visualize the needle from the beginning, that is from step"
+    },
+    {
+      "start": 840.03,
+      "end": 845.27,
+      "text": "you can follow and from there you can see. So these are the nine steps by which you can"
+    },
+    {
+      "start": 845.27,
+      "end": 849.97,
+      "text": "improve the visualization. So here I have talked about only the basic things which you can do."
+    },
+    {
+      "start": 850.0,
+      "end": 855.04,
+      "text": "with the technique, there are lot of new advancements which has come like GPS guided, there"
+    },
+    {
+      "start": 855.04,
+      "end": 859.97,
+      "text": "are needle guides, so all these are expensive thing and even your ultrasound machine will"
+    },
+    {
+      "start": 860.0,
+      "end": 864.94,
+      "text": "have a software which will help in improvement of needle visualization so in few of the machines"
+    },
+    {
+      "start": 864.94,
+      "end": 869.66,
+      "text": "which I have tried it is not coming very good and it will it may compromise the resolution"
+    },
+    {
+      "start": 870.0,
+      "end": 876.12,
+      "text": "whole image as well. So I will recommend you to follow these nine steps so that you can"
+    },
+    {
+      "start": 876.12,
+      "end": 879.74,
+      "text": "improve the visualization irrespective of the ultrasound machine which you are using."
+    },
+    {
+      "start": 880.16,
+      "end": 884.53,
+      "text": "So until we see next time, thank you and please don't forget to like, comment, subscribe"
+    },
+    {
+      "start": 884.53,
+      "end": 884.99,
+      "text": "and share."
+    }
+  ]
+}

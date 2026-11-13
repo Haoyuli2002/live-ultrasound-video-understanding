@@ -1,0 +1,2963 @@
+{
+  "video_id": "EKbtDrlWArI",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/EKbtDrlWArI/asr.txt",
+  "segments": [
+    {
+      "start": 0.83,
+      "end": 4.75,
+      "text": "introduction. My name is Kevin Cage. I'm the ultrasound fellow here at Metro Health"
+    },
+    {
+      "start": 5.42,
+      "end": 9.97,
+      "text": "and this is our Thursday education time that we..."
+    },
+    {
+      "start": 10.06,
+      "end": 18.12,
+      "text": "do every week so the link we just put in the chat for you guys to our YouTube"
+    },
+    {
+      "start": 18.12,
+      "end": 19.98,
+      "text": "channel follow us"
+    },
+    {
+      "start": 20.13,
+      "end": 20.75,
+      "text": "Give us a follow."
+    },
+    {
+      "start": 22.02,
+      "end": 24.44,
+      "text": "One of my favorite attendings from residency"
+    },
+    {
+      "start": 24.44,
+      "end": 26.59,
+      "text": "has now joined us, Dr. Gazelle."
+    },
+    {
+      "start": 28.07,
+      "end": 29.73,
+      "text": "So it's good to see some familiar faces."
+    },
+    {
+      "start": 30.45,
+      "end": 39.97,
+      "text": "We're now all in different places, but one of the things that I have taken a liking to kind of towards the end of"
+    },
+    {
+      "start": 40.03,
+      "end": 49.37,
+      "text": "residency. And now really here at Metro Health is doing these nerve blocks. Here at Metro"
+    },
+    {
+      "start": 50.0,
+      "end": 56.34,
+      "text": "compared to where I did residency, we have a little different trauma population and that is really"
+    },
+    {
+      "start": 56.34,
+      "end": 58.5,
+      "text": "the population that if you want to learn these."
+    },
+    {
+      "start": 60.06,
+      "end": 69.97,
+      "text": "techniques is who's gonna provide you with the most opportunity so we're gonna talk about the way I kind of set this up"
+    },
+    {
+      "start": 70.0,
+      "end": 76.14,
+      "text": "is to try to almost find every region of the body minus like the head and neck"
+    },
+    {
+      "start": 76.14,
+      "end": 78.56,
+      "text": "because a nerve block for that is like innovation."
+    },
+    {
+      "start": 81.44,
+      "end": 89.07,
+      "text": "Every part of the body, I want to try to give you guys techniques to do a walk and treat people's pain, and we'll..."
+    },
+    {
+      "start": 90.0,
+      "end": 96.56,
+      "text": "evidence-based as I can with some of these things, and then others are more anecdotal."
+    },
+    {
+      "start": 98.01,
+      "end": 99.53,
+      "text": "So the reference here..."
+    },
+    {
+      "start": 100.0,
+      "end": 105.16,
+      "text": "The U-Break-I block is those pop-up stores like the U-Break-I fix your phone"
+    },
+    {
+      "start": 105.74,
+      "end": 109.88,
+      "text": "I don't know why but it just came to mind. I envision like"
+    },
+    {
+      "start": 110.03,
+      "end": 114.05,
+      "text": "one day a traveling service of nerve blocks to places"
+    },
+    {
+      "start": 114.05,
+      "end": 115.57,
+      "text": "to fix these problems."
+    },
+    {
+      "start": 116.46,
+      "end": 119.91,
+      "text": "So we have different injuries, mostly bones."
+    },
+    {
+      "start": 120.38,
+      "end": 122.14,
+      "text": "to all different parts of the body there,"
+    },
+    {
+      "start": 122.14,
+      "end": 123.62,
+      "text": "so we're gonna address all that stuff."
+    },
+    {
+      "start": 124.56,
+      "end": 126.06,
+      "text": "For those of you who don't know me,"
+    },
+    {
+      "start": 126.4,
+      "end": 127.78,
+      "text": "I'm always self-deprecating,"
+    },
+    {
+      "start": 128.22,
+      "end": 129.98,
+      "text": "can't laugh at anyone else if you can't laugh at you."
+    },
+    {
+      "start": 130.03,
+      "end": 138.91,
+      "text": "self, so that's me in college with my ears pierced. But who I am now is..."
+    },
+    {
+      "start": 140.0,
+      "end": 147.15,
+      "text": "is my daughter Blake, two and a half, going on probably 18 and a half as her language"
+    },
+    {
+      "start": 147.15,
+      "end": 149.77,
+      "text": "explodes and she learns how to tell me no."
+    },
+    {
+      "start": 150.22,
+      "end": 157.91,
+      "text": "and more. And then my son, Mr. Miles, he's ten months old, and that's a family with the"
+    },
+    {
+      "start": 157.91,
+      "end": 158.87,
+      "text": "pups in the middle."
+    },
+    {
+      "start": 160.74,
+      "end": 167.85,
+      "text": "disclosures, I wish I had some don't, unfortunately, objectives. So it supplies"
+    },
+    {
+      "start": 167.85,
+      "end": 169.53,
+      "text": "that you need for your different blocks."
+    },
+    {
+      "start": 170.03,
+      "end": 179.8,
+      "text": "indications are why you would do them and techniques so depending on the block the technique and the supplies are going to be different or"
+    },
+    {
+      "start": 180.03,
+      "end": 188.73,
+      "text": "Some of the blocks, they're plane blocks, or you're instilling your anesthetic between two layers of fascia and wanting that to spread."
+    },
+    {
+      "start": 190.0,
+      "end": 196.66,
+      "text": "to cover certain nerves that are in control of sensation to the areas that you want to block."
+    },
+    {
+      "start": 197.43,
+      "end": 199.89,
+      "text": "those blocks because you think of"
+    },
+    {
+      "start": 200.0,
+      "end": 206.87,
+      "text": "how they work require more volume. So we're going to go over a whole bunch of different ones,"
+    },
+    {
+      "start": 208.03,
+      "end": 209.97,
+      "text": "and these are going to give you guys..."
+    },
+    {
+      "start": 210.06,
+      "end": 217.92,
+      "text": "your techniques to numb everyone's body and not give them last, which we'll also talk about."
+    },
+    {
+      "start": 220.0,
+      "end": 225.92,
+      "text": "blocks like Bill Nye every time I think about it how I got started or why I"
+    },
+    {
+      "start": 226.97,
+      "end": 229.31,
+      "text": "eventually picked up my volume of doing this."
+    },
+    {
+      "start": 230.03,
+      "end": 233.76,
+      "text": "It was like hearing Bill and I talk about inertia"
+    },
+    {
+      "start": 234.56,
+      "end": 237.98,
+      "text": "and what the hell, like that doesn't really go along"
+    },
+    {
+      "start": 237.98,
+      "end": 239.06,
+      "text": "with nerve blocks, but"
+    },
+    {
+      "start": 240.38,
+      "end": 243.44,
+      "text": "There was an impedance that I had to overcome."
+    },
+    {
+      "start": 244.04,
+      "end": 248.97,
+      "text": "I started doing this about kind of being that nervous"
+    },
+    {
+      "start": 248.97,
+      "end": 249.97,
+      "text": "or anxious about..."
+    },
+    {
+      "start": 250.0,
+      "end": 256.69,
+      "text": "doing it but worried like oh am I can I really do this? Is it complicated and does"
+    },
+    {
+      "start": 256.69,
+      "end": 259.98,
+      "text": "it take a while? Especially if you're in the busy you know..."
+    },
+    {
+      "start": 260.0,
+      "end": 261.52,
+      "text": "in the middle of a busy clinical shift,"
+    },
+    {
+      "start": 262.45,
+      "end": 266.01,
+      "text": "do you have time to turn your attention away"
+    },
+    {
+      "start": 266.01,
+      "end": 267.78,
+      "text": "from all your other patients?"
+    },
+    {
+      "start": 268.91,
+      "end": 269.97,
+      "text": "But once you start..."
+    },
+    {
+      "start": 270.26,
+      "end": 273.52,
+      "text": "doing these things slowly, one at a time."
+    },
+    {
+      "start": 274.95,
+      "end": 276.37,
+      "text": "You get quicker and quicker,"
+    },
+    {
+      "start": 277.3,
+      "end": 279.96,
+      "text": "and you're more easily..."
+    },
+    {
+      "start": 280.0,
+      "end": 283.11,
+      "text": "you know, willing to jump into the next type of block."
+    },
+    {
+      "start": 283.37,
+      "end": 285.19,
+      "text": "And whether that's, you know, self-educated,"
+    },
+    {
+      "start": 285.93,
+      "end": 288.63,
+      "text": "looking on YouTube, or all the different resources"
+    },
+    {
+      "start": 288.63,
+      "end": 289.97,
+      "text": "that there are for blocks, which I..."
+    },
+    {
+      "start": 290.0,
+      "end": 293.48,
+      "text": "I'll give you guys at the end to just pull up on your phone beforehand."
+    },
+    {
+      "start": 295.08,
+      "end": 299.96,
+      "text": "Once you do these, it just comes down to, do you know where to look with your"
+    },
+    {
+      "start": 300.0,
+      "end": 307.42,
+      "text": "pro and get that view that you need to find the nerve because after that it's just"
+    },
+    {
+      "start": 307.42,
+      "end": 309.9,
+      "text": "putting a needle somewhere and you're at work everyone's"
+    },
+    {
+      "start": 310.0,
+      "end": 315.14,
+      "text": "of doing that. We do procedures, you know, all just unguided needle-based procedures all the time."
+    },
+    {
+      "start": 315.62,
+      "end": 319.79,
+      "text": "You know, we put in dozens to hundreds."
+    },
+    {
+      "start": 320.0,
+      "end": 325.26,
+      "text": "of central lines and catheters depending on where you are at your level of practice."
+    },
+    {
+      "start": 326.31,
+      "end": 329.74,
+      "text": "So I initially made this whole talk for our residency."
+    },
+    {
+      "start": 330.0,
+      "end": 334.91,
+      "text": "I was only about a couple of different blocks that we do and those of you who know me I really like"
+    },
+    {
+      "start": 334.91,
+      "end": 339.28,
+      "text": "Resonant education and something that I want to be involved in for my career"
+    },
+    {
+      "start": 340.1,
+      "end": 344.22,
+      "text": "So I took a look at what our literature says"
+    },
+    {
+      "start": 344.22,
+      "end": 346.61,
+      "text": "different places are doing around the country."
+    },
+    {
+      "start": 347.8,
+      "end": 349.58,
+      "text": "Some of you will recognize."
+    },
+    {
+      "start": 350.03,
+      "end": 356.57,
+      "text": "a room dog devs name out at Highland but he's I don't know if pioneers are"
+    },
+    {
+      "start": 356.57,
+      "end": 359.97,
+      "text": "right word but that's the word I use or he's like an ad really strong ad"
+    },
+    {
+      "start": 360.03,
+      "end": 369.9,
+      "text": "get for nerve blocks and they have great education online for nerve blocks. So him and this group did a kind of like a"
+    },
+    {
+      "start": 370.0,
+      "end": 372.86,
+      "text": "of all the residencies at the large academic institutions."
+    },
+    {
+      "start": 374.19,
+      "end": 377.67,
+      "text": "Over 100, I believe it was 170 something places"
+    },
+    {
+      "start": 377.67,
+      "end": 379.51,
+      "text": "replied out of 200."
+    },
+    {
+      "start": 380.0,
+      "end": 389.97,
+      "text": "And 84% of them said that they're expected residents to know how to do nerve blocks the most common blocks that they"
+    },
+    {
+      "start": 390.0,
+      "end": 394.66,
+      "text": "found our forum blocks and they also found that it's highly variable depending on where"
+    },
+    {
+      "start": 394.95,
+      "end": 398.65,
+      "text": "you do residency while they may expect you to do them or want you to do them, how many"
+    },
+    {
+      "start": 398.65,
+      "end": 399.25,
+      "text": "you actually."
+    },
+    {
+      "start": 400.0,
+      "end": 409.25,
+      "text": "get to do. And he said you can see my presenter view. I don't know how to change it."
+    },
+    {
+      "start": 410.38,
+      "end": 416.54,
+      "text": "So, bear with me, you guys switch screens,"
+    },
+    {
+      "start": 419.53,
+      "end": 419.97,
+      "text": "then we'll have an-"
+    },
+    {
+      "start": 420.0,
+      "end": 424.31,
+      "text": "I'm sure the swap presenter and slideshow of you all the way up there."
+    },
+    {
+      "start": 424.47,
+      "end": 429.96,
+      "text": "It actually doesn't work on Zoom, but Kevin, if you'd go to Advanced Share..."
+    },
+    {
+      "start": 430.0,
+      "end": 434.4,
+      "text": "There's a place where you can share a portion of your screen and then you just highlight the"
+    },
+    {
+      "start": 434.4,
+      "end": 439.08,
+      "text": "Question that you want us to see and not the next slide piece of it"
+    },
+    {
+      "start": 440.35,
+      "end": 443.68,
+      "text": "I don't really need that, is that better?"
+    },
+    {
+      "start": 445.03,
+      "end": 447.14,
+      "text": "I don't need the presenter view, I like it."
+    },
+    {
+      "start": 448.16,
+      "end": 449.08,
+      "text": "All right, that's great."
+    },
+    {
+      "start": 449.3,
+      "end": 449.38,
+      "text": "So."
+    },
+    {
+      "start": 450.0,
+      "end": 453.33,
+      "text": "Most common blocks that residents do are forearm blocks."
+    },
+    {
+      "start": 453.79,
+      "end": 457.31,
+      "text": "Oftentimes, these are initially taught as just landmark guided,"
+    },
+    {
+      "start": 458.88,
+      "end": 459.98,
+      "text": "and we'll talk about the issues with."
+    },
+    {
+      "start": 460.1,
+      "end": 465.26,
+      "text": "that my ultrasound is a little bit better and we're all biased about that almost"
+    },
+    {
+      "start": 465.26,
+      "end": 469.96,
+      "text": "of us are biased. And then what I found interesting and what I"
+    },
+    {
+      "start": 470.0,
+      "end": 479.8,
+      "text": "run into is do you have to as a physician kind of have permission to do these things to take care of your"
+    },
+    {
+      "start": 480.0,
+      "end": 482.06,
+      "text": "in the best way that you know how."
+    },
+    {
+      "start": 483.15,
+      "end": 485.51,
+      "text": "Most places of vast majority of places"
+    },
+    {
+      "start": 485.51,
+      "end": 487.71,
+      "text": "don't currently have agreements."
+    },
+    {
+      "start": 490.7,
+      "end": 494.58,
+      "text": "with their orthopedic or trauma services as to who they can"
+    },
+    {
+      "start": 494.58,
+      "end": 495.76,
+      "text": "and can do these blocks for."
+    },
+    {
+      "start": 496.78,
+      "end": 499.92,
+      "text": "There are some caveats to when you actually probably should."
+    },
+    {
+      "start": 500.0,
+      "end": 505.52,
+      "text": "allow the specialty services to know that this is happening, and we will also"
+    },
+    {
+      "start": 505.52,
+      "end": 509.54,
+      "text": "speak about that. The main concern is that it is a patient going to develop"
+    },
+    {
+      "start": 509.54,
+      "end": 509.92,
+      "text": "in part."
+    },
+    {
+      "start": 510.0,
+      "end": 514.48,
+      "text": "syndrome of whatever area you're going to block and the patient's not going to be able to tell you"
+    },
+    {
+      "start": 514.48,
+      "end": 516.42,
+      "text": "because you are so great at doing your block."
+    },
+    {
+      "start": 522.02,
+      "end": 523.54,
+      "text": "All right, so the supplies that you need."
+    },
+    {
+      "start": 524.09,
+      "end": 525.43,
+      "text": "There are some videos in here"
+    },
+    {
+      "start": 525.43,
+      "end": 527.59,
+      "text": "and depending on how the internet is feeling"
+    },
+    {
+      "start": 527.59,
+      "end": 529.54,
+      "text": "in which direction the wind is blowing."
+    },
+    {
+      "start": 529.54,
+      "end": 529.98,
+      "text": "Thank you very much."
+    },
+    {
+      "start": 530.03,
+      "end": 532.15,
+      "text": "the video may or may not work perfectly,"
+    },
+    {
+      "start": 532.88,
+      "end": 535.68,
+      "text": "though your first supply typically wants me to click on it."
+    },
+    {
+      "start": 536.55,
+      "end": 539.57,
+      "text": "Is a physician, this is one of our interns."
+    },
+    {
+      "start": 540.16,
+      "end": 549.96,
+      "text": "He's a great guy. This isn't there. So plain blocks. As I mentioned, you're instilling a large amount of volume. You're doing this"
+    },
+    {
+      "start": 550.0,
+      "end": 555.96,
+      "text": "This is in a sterile technique as sterile as you can, but in order to instill these volumes,"
+    },
+    {
+      "start": 556.16,
+      "end": 557.68,
+      "text": "you need someone to push the meds."
+    },
+    {
+      "start": 558.1,
+      "end": 559.98,
+      "text": "So it doesn't have to be a nurse, it could be another f***."
+    },
+    {
+      "start": 560.03,
+      "end": 566.79,
+      "text": "position, attack, or, you know, anyone that has a capable hand that can squeeze an ultrasound"
+    },
+    {
+      "start": 566.79,
+      "end": 569.43,
+      "text": "machine. These are the machines that we use here in our department."
+    },
+    {
+      "start": 571.82,
+      "end": 573.48,
+      "text": "and then the supplies that you need."
+    },
+    {
+      "start": 573.64,
+      "end": 576.16,
+      "text": "So here is, this was more for our residents"
+    },
+    {
+      "start": 576.16,
+      "end": 578.18,
+      "text": "and showing them where we get our supplies."
+    },
+    {
+      "start": 579.29,
+      "end": 579.97,
+      "text": "We have..."
+    },
+    {
+      "start": 580.0,
+      "end": 589.96,
+      "text": "block baggies that have most of our supplies where that we use in the like one place so you can see all."
+    },
+    {
+      "start": 590.0,
+      "end": 594.36,
+      "text": "the different things listed in our little kit and the other two were just we"
+    },
+    {
+      "start": 594.36,
+      "end": 599.62,
+      "text": "keep them in a pixis and then the back storage room has a lot of stuff."
+    },
+    {
+      "start": 600.42,
+      "end": 602.52,
+      "text": "Our kits contain two sets of sterile drapes,"
+    },
+    {
+      "start": 602.8,
+      "end": 604.5,
+      "text": "so you can make a field depending on where you are."
+    },
+    {
+      "start": 605.46,
+      "end": 606.4,
+      "text": "Your sterile probe cover,"
+    },
+    {
+      "start": 607.05,
+      "end": 609.7,
+      "text": "or probably 30 ml syringe."
+    },
+    {
+      "start": 610.51,
+      "end": 613.21,
+      "text": "And that's because, again, you're doing a volume block,"
+    },
+    {
+      "start": 613.68,
+      "end": 616.06,
+      "text": "an 18 gauge needle to draw out your local."
+    },
+    {
+      "start": 617.23,
+      "end": 619.67,
+      "text": "We just stuck a two and a half inch spinal."
+    },
+    {
+      "start": 620.03,
+      "end": 621.89,
+      "text": "It's good for most of your blocks."
+    },
+    {
+      "start": 622.5,
+      "end": 625.66,
+      "text": "Obviously, different body habituses can change that,"
+    },
+    {
+      "start": 626.42,
+      "end": 629.98,
+      "text": "so you just would need to know where to find your difference."
+    },
+    {
+      "start": 630.0,
+      "end": 636.01,
+      "text": "needles. And then what I like to do is I grab a bag of saline, a small bag,"
+    },
+    {
+      "start": 636.17,
+      "end": 639.82,
+      "text": "hundred, 50ccs, whatever. And I said a gravity tubing."
+    },
+    {
+      "start": 641.18,
+      "end": 649.17,
+      "text": "the flush. So what you do is after you prepare your needle you have"
+    },
+    {
+      "start": 650.0,
+      "end": 656.54,
+      "text": "are where our gravity tubing is and gloves. So after you prepare your needle, and your sterile,"
+    },
+    {
+      "start": 656.6,
+      "end": 659.98,
+      "text": "your fields ready, your probes on, you have your assist..."
+    },
+    {
+      "start": 660.03,
+      "end": 661.21,
+      "text": "or whoever's helping you."
+    },
+    {
+      "start": 661.76,
+      "end": 663.98,
+      "text": "Connect your gravity tubing that's been spiked"
+    },
+    {
+      "start": 663.98,
+      "end": 666.1,
+      "text": "into this 100cc bag."
+    },
+    {
+      "start": 668.26,
+      "end": 669.18,
+      "text": "And that gives you ports."
+    },
+    {
+      "start": 670.06,
+      "end": 671.3,
+      "text": "where you can inject things through."
+    },
+    {
+      "start": 673.09,
+      "end": 675.91,
+      "text": "So in order to, before you instill your local,"
+    },
+    {
+      "start": 676.17,
+      "end": 677.29,
+      "text": "and this is a good technique"
+    },
+    {
+      "start": 677.29,
+      "end": 679.96,
+      "text": "for all of the different blocks, I don't know."
+    },
+    {
+      "start": 680.0,
+      "end": 682.8,
+      "text": "I like to use saline first to assure that I'm in the right spot"
+    },
+    {
+      "start": 682.8,
+      "end": 686.89,
+      "text": "because I don't want to waste like a drop of any of the local anesthetic"
+    },
+    {
+      "start": 686.89,
+      "end": 688.85,
+      "text": "I want to make sure it gets to where it needs to go"
+    },
+    {
+      "start": 690.22,
+      "end": 692.1,
+      "text": "so you have these different ports on your tubing"
+    },
+    {
+      "start": 692.1,
+      "end": 698.34,
+      "text": "that whoever's helping you can either switch on and off,"
+    },
+    {
+      "start": 699.08,
+      "end": 699.98,
+      "text": "keep the local on one."
+    },
+    {
+      "start": 700.0,
+      "end": 706.34,
+      "text": "keep the flush on the other, in particular with one of the fascia iliaca blocks"
+    },
+    {
+      "start": 706.34,
+      "end": 709.98,
+      "text": "that we're going to talk about. Sometimes in larger people it can be hard to..."
+    },
+    {
+      "start": 710.22,
+      "end": 715.3,
+      "text": "the plane that you need but sometimes it takes a decent amount of sailing to"
+    },
+    {
+      "start": 715.3,
+      "end": 719.02,
+      "text": "assure that you're in the right place and the right place. So if you run out of"
+    },
+    {
+      "start": 719.44,
+      "end": 719.98,
+      "text": "10ccs from here."
+    },
+    {
+      "start": 720.1,
+      "end": 725.26,
+      "text": "flush, all you have to do is include your downstream line and then draw a more"
+    },
+    {
+      "start": 725.26,
+      "end": 729.92,
+      "text": "saline out of the bag that you've primed, though it gives you plenty"
+    },
+    {
+      "start": 730.0,
+      "end": 736.29,
+      "text": "fluid to work with. It also creates a closed system and that you cannot inject any air into the patient"
+    },
+    {
+      "start": 736.29,
+      "end": 736.67,
+      "text": "either."
+    },
+    {
+      "start": 740.32,
+      "end": 746.57,
+      "text": "So the first block we're talking about, femur fractures, the fascia ilioca block."
+    },
+    {
+      "start": 747.69,
+      "end": 749.74,
+      "text": "You can do it, landmark-ideed."
+    },
+    {
+      "start": 750.32,
+      "end": 754.93,
+      "text": "and feel guided, where you can feel the two pops"
+    },
+    {
+      "start": 754.93,
+      "end": 756.51,
+      "text": "of the two different fashion layers"
+    },
+    {
+      "start": 756.51,
+      "end": 759.65,
+      "text": "that you have to go through in order to inject your local."
+    },
+    {
+      "start": 760.77,
+      "end": 767.84,
+      "text": "But we'll just leave it at that with the air quotes. So any anterior thigh problem, any"
+    },
+    {
+      "start": 767.84,
+      "end": 769.45,
+      "text": "femoral fracture."
+    },
+    {
+      "start": 770.29,
+      "end": 773.53,
+      "text": "Those are the things that you're going to want to do for this, you know, if you have someone that"
+    },
+    {
+      "start": 773.78,
+      "end": 779.08,
+      "text": "injection, is an IV drug user injection as I get a large abscess."
+    },
+    {
+      "start": 780.1,
+      "end": 784.77,
+      "text": "So that's something you could do here, any type of lack, that you need to repair that's"
+    },
+    {
+      "start": 784.77,
+      "end": 789.58,
+      "text": "large, complex wound, those are things that you want to think about this block for."
+    },
+    {
+      "start": 790.67,
+      "end": 795.11,
+      "text": "Interestingly enough, I know I'm not allowed to talk about certain questions that you get"
+    },
+    {
+      "start": 795.11,
+      "end": 799.59,
+      "text": "on certain exams, but in the fall, I took a pretty big exam."
+    },
+    {
+      "start": 800.19,
+      "end": 806.62,
+      "text": "just for fun, of course. And one of my questions, the answer happened to be what"
+    },
+    {
+      "start": 807.45,
+      "end": 809.51,
+      "text": "nerves, the swac covered."
+    },
+    {
+      "start": 810.42,
+      "end": 812.26,
+      "text": "and femoral nerve was not a choice,"
+    },
+    {
+      "start": 813.59,
+      "end": 815.43,
+      "text": "but lateral femoral butetaneous nerve was."
+    },
+    {
+      "start": 815.69,
+      "end": 817.55,
+      "text": "So I think it just signified to me"
+    },
+    {
+      "start": 817.55,
+      "end": 819.21,
+      "text": "that, oh, this is like,"
+    },
+    {
+      "start": 820.0,
+      "end": 824.93,
+      "text": "tested on, so maybe it's actually important and our specialty as a whole"
+    },
+    {
+      "start": 824.93,
+      "end": 827.41,
+      "text": "wants people to know about it."
+    },
+    {
+      "start": 830.0,
+      "end": 836.22,
+      "text": "This should really be the standard of care in all patients that have proximal femur slash"
+    },
+    {
+      "start": 836.22,
+      "end": 837.9,
+      "text": "hip fractures."
+    },
+    {
+      "start": 837.98,
+      "end": 839.98,
+      "text": "This won't cover the iliac bone."
+    },
+    {
+      "start": 840.0,
+      "end": 848.88,
+      "text": "So this is really just the proximal femurs that we consider hip fractures and of course, you know, no one really brutally cares"
+    },
+    {
+      "start": 848.88,
+      "end": 849.92,
+      "text": "If that's my opinion"
+    },
+    {
+      "start": 850.0,
+      "end": 854.7,
+      "text": "or not, so you want to have information to say why. So let's go through some things."
+    },
+    {
+      "start": 855.51,
+      "end": 859.09,
+      "text": "So first is paying control, right? Everyone wants paying control. It's the 12th"
+    },
+    {
+      "start": 859.09,
+      "end": 859.67,
+      "text": "vital sign."
+    },
+    {
+      "start": 860.1,
+      "end": 865.26,
+      "text": "to everybody. Not only is it important to the patient first and foremost it's"
+    },
+    {
+      "start": 865.83,
+      "end": 869.23,
+      "text": "going to be it's going to be helpful to your nurse so the patient's not having to"
+    },
+    {
+      "start": 870.03,
+      "end": 875.18,
+      "text": "You repeatedly ask for pain meds, but then the nurse has to come find you and then you say you'll do it"
+    },
+    {
+      "start": 875.18,
+      "end": 879.12,
+      "text": "And then you forget about it because you have 15 other patients and they have to approach you five more times"
+    },
+    {
+      "start": 880.16,
+      "end": 881.04,
+      "text": "not that that's ever happened."
+    },
+    {
+      "start": 882.26,
+      "end": 884.8,
+      "text": "Secondly, all the data, most of the data,"
+    },
+    {
+      "start": 884.94,
+      "end": 886.48,
+      "text": "not all, suggest that patients"
+    },
+    {
+      "start": 886.48,
+      "end": 889.84,
+      "text": "have better ambulatory scores and ability."
+    },
+    {
+      "start": 890.0,
+      "end": 895.74,
+      "text": "at a year out from injury when they undergo block for this type of injury in the hospital,"
+    },
+    {
+      "start": 896.1,
+      "end": 899.44,
+      "text": "particularly the proximal femurs. And then this is where"
+    },
+    {
+      "start": 900.8,
+      "end": 902.52,
+      "text": "you know, while the first two are more,"
+    },
+    {
+      "start": 903.64,
+      "end": 904.74,
+      "text": "these are also patient centered,"
+    },
+    {
+      "start": 904.94,
+      "end": 906.56,
+      "text": "but maybe the patient oriented,"
+    },
+    {
+      "start": 906.9,
+      "end": 908.44,
+      "text": "the first two are really patient oriented,"
+    },
+    {
+      "start": 908.64,
+      "end": 909.82,
+      "text": "what's the patient gonna care about?"
+    },
+    {
+      "start": 910.0,
+      "end": 915.03,
+      "text": "hurt and can they walk again. These two are big for not just the patient"
+    },
+    {
+      "start": 915.03,
+      "end": 919.52,
+      "text": "but the hospital. So if you're going to have less concurrent pneumonia's less"
+    },
+    {
+      "start": 919.52,
+      "end": 919.76,
+      "text": "Thank you."
+    },
+    {
+      "start": 920.22,
+      "end": 927.0,
+      "text": "and lessen your length of stay. The data is not ubiquitously in agreement"
+    },
+    {
+      "start": 927.0,
+      "end": 929.98,
+      "text": "about this, but these are the three things that move"
+    },
+    {
+      "start": 930.0,
+      "end": 935.68,
+      "text": "often have been found to be improved in this patient population once when they"
+    },
+    {
+      "start": 935.68,
+      "end": 939.87,
+      "text": "get a block. So I really find that putting all that"
+    },
+    {
+      "start": 940.06,
+      "end": 949.93,
+      "text": "It's not really arguable and it's something that when the patient comes in especially if they've you know they've come to the ED and then"
+    },
+    {
+      "start": 950.0,
+      "end": 952.92,
+      "text": "they're in the ED for two days depending on everyone's"
+    },
+    {
+      "start": 952.92,
+      "end": 957.07,
+      "text": "boarding and staffing situation, this is our kind of scope of"
+    },
+    {
+      "start": 957.07,
+      "end": 959.79,
+      "text": "care and responsibility to do for our patients."
+    },
+    {
+      "start": 961.41,
+      "end": 961.99,
+      "text": "So where are you looking?"
+    },
+    {
+      "start": 962.6,
+      "end": 965.46,
+      "text": "So ultrasounds, we have the ultrasound I showed you,"
+    },
+    {
+      "start": 965.54,
+      "end": 966.48,
+      "text": "the machine we have."
+    },
+    {
+      "start": 967.29,
+      "end": 969.43,
+      "text": "It's so good that this is what it does."
+    },
+    {
+      "start": 970.51,
+      "end": 973.59,
+      "text": "when you look at people, which it doesn't."
+    },
+    {
+      "start": 973.79,
+      "end": 976.08,
+      "text": "But I don't know why as AI is getting better,"
+    },
+    {
+      "start": 976.24,
+      "end": 978.12,
+      "text": "I think one day maybe we'll get to this"
+    },
+    {
+      "start": 978.12,
+      "end": 979.98,
+      "text": "where it just shows you in a car."
+    },
+    {
+      "start": 980.0,
+      "end": 985.08,
+      "text": "tumor schematic where everything is. So this would be a patient's left hip and you"
+    },
+    {
+      "start": 985.08,
+      "end": 989.36,
+      "text": "can know from you know your naval nerve artery vein lateral to medial."
+    },
+    {
+      "start": 990.67,
+      "end": 993.03,
+      "text": "So you're putting your probe down on the patient's left hip,"
+    },
+    {
+      "start": 994.57,
+      "end": 995.63,
+      "text": "finding the femoral artery,"
+    },
+    {
+      "start": 995.97,
+      "end": 997.75,
+      "text": "and then you want to see the statorious"
+    },
+    {
+      "start": 997.75,
+      "end": 999.29,
+      "text": "come muscle come in on the side."
+    },
+    {
+      "start": 1000.1,
+      "end": 1002.95,
+      "text": "and then that big chunk is your Iliasowa's muscle."
+    },
+    {
+      "start": 1004.44,
+      "end": 1009.46,
+      "text": "So here, you guys see the arrows, the cursor."
+    },
+    {
+      "start": 1013.33,
+      "end": 1014.17,
+      "text": "Yeah, we can see it."
+    },
+    {
+      "start": 1014.59,
+      "end": 1016.19,
+      "text": "All right, so here, this person,"
+    },
+    {
+      "start": 1016.33,
+      "end": 1019.98,
+      "text": "this is our Sartorius up here, and down here is..."
+    },
+    {
+      "start": 1020.03,
+      "end": 1029.96,
+      "text": "really as so as muscle. And you have fascial plane here and here. This is the artery. You can tell it's thicker walled."
+    },
+    {
+      "start": 1031.57,
+      "end": 1039.62,
+      "text": "Our goal is to get anesthetic under here and we're talking volume we're talking 30ccs"
+    },
+    {
+      "start": 1040.9,
+      "end": 1043.42,
+      "text": "you can do more than 30ccs, you can do up to 40."
+    },
+    {
+      "start": 1045.14,
+      "end": 1049.03,
+      "text": "Really make sure that you cover as many of those nerves"
+    },
+    {
+      "start": 1049.03,
+      "end": 1049.97,
+      "text": "that come off the..."
+    },
+    {
+      "start": 1050.54,
+      "end": 1059.9,
+      "text": "the terminal nerve is possible and then the nerve bundle sits all in here and the nice thing about"
+    },
+    {
+      "start": 1060.32,
+      "end": 1066.62,
+      "text": "The plane box is that I just need to get a needle here and then put in fluid and it'll"
+    },
+    {
+      "start": 1066.62,
+      "end": 1066.78,
+      "text": "work."
+    },
+    {
+      "start": 1070.0,
+      "end": 1078.67,
+      "text": "like so here what you see is your arrow the black is separating the"
+    },
+    {
+      "start": 1078.67,
+      "end": 1079.83,
+      "text": "Sartorius in this person."
+    },
+    {
+      "start": 1080.64,
+      "end": 1081.88,
+      "text": "from the Ilya soas down here."
+    },
+    {
+      "start": 1083.4,
+      "end": 1085.14,
+      "text": "So this person, when they were doing their block,"
+    },
+    {
+      "start": 1086.19,
+      "end": 1088.35,
+      "text": "they first were above the fascial plane."
+    },
+    {
+      "start": 1088.65,
+      "end": 1089.57,
+      "text": "So they've put fluid."
+    },
+    {
+      "start": 1090.03,
+      "end": 1097.08,
+      "text": "up around the sartorius and they corrected it to get the needle below the fasciliaca down here."
+    },
+    {
+      "start": 1098.08,
+      "end": 1099.97,
+      "text": "So now you see the hypo..."
+    },
+    {
+      "start": 1100.03,
+      "end": 1106.14,
+      "text": "coic fluid backing towards the artery and you have your nerve bundled here."
+    },
+    {
+      "start": 1110.58,
+      "end": 1112.78,
+      "text": "And with any block or all of these blocks"
+    },
+    {
+      "start": 1112.78,
+      "end": 1114.1,
+      "text": "before you're injecting anything,"
+    },
+    {
+      "start": 1114.36,
+      "end": 1116.0,
+      "text": "you always do a negative aspiration"
+    },
+    {
+      "start": 1116.0,
+      "end": 1118.21,
+      "text": "to make sure you're not in a blood vessel."
+    },
+    {
+      "start": 1120.0,
+      "end": 1124.66,
+      "text": "last thing you want to do. You can laugh. I know you're all laughing."
+    },
+    {
+      "start": 1125.88,
+      "end": 1129.74,
+      "text": "Alright, so the second block, so we're still on the leg, so we've covered the femur down to the knee."
+    },
+    {
+      "start": 1130.42,
+      "end": 1131.32,
+      "text": "Now we want the lower leg."
+    },
+    {
+      "start": 1132.1,
+      "end": 1134.86,
+      "text": "So the easiest thing for the most of the lower leg"
+    },
+    {
+      "start": 1134.86,
+      "end": 1139.0,
+      "text": "except the medial aspect is gonna be your popliteal sciatic."
+    },
+    {
+      "start": 1140.06,
+      "end": 1142.6,
+      "text": "So you're going in your papal teal fossa,"
+    },
+    {
+      "start": 1142.94,
+      "end": 1143.74,
+      "text": "but more cephala."
+    },
+    {
+      "start": 1147.94,
+      "end": 1149.64,
+      "text": "See here, you start in your papal teal."
+    },
+    {
+      "start": 1149.8,
+      "end": 1149.98,
+      "text": "So you..."
+    },
+    {
+      "start": 1150.0,
+      "end": 1152.48,
+      "text": "to your vein, your artery, really easy to find."
+    },
+    {
+      "start": 1153.15,
+      "end": 1155.63,
+      "text": "At that point, you've got most patients anatomy"
+    },
+    {
+      "start": 1155.63,
+      "end": 1157.31,
+      "text": "that will already have split"
+    },
+    {
+      "start": 1157.6,
+      "end": 1159.56,
+      "text": "until they're tibial and common perennial."
+    },
+    {
+      "start": 1160.54,
+      "end": 1169.32,
+      "text": "So you just, excuse me, slide up and you'll see these two bundles, this and this."
+    },
+    {
+      "start": 1170.51,
+      "end": 1173.58,
+      "text": "slide together into the kind of one conglomerate."
+    },
+    {
+      "start": 1174.23,
+      "end": 1178.09,
+      "text": "These dark hypoacolic areas are your nerves."
+    },
+    {
+      "start": 1179.63,
+      "end": 1179.73,
+      "text": "This."
+    },
+    {
+      "start": 1180.22,
+      "end": 1189.85,
+      "text": "nerve in particular has a multiple facial sheets, it has a lot of fascia around it."
+    },
+    {
+      "start": 1191.28,
+      "end": 1193.76,
+      "text": "So it does, when you do inject it,"
+    },
+    {
+      "start": 1193.84,
+      "end": 1195.0,
+      "text": "you will feel a little more pressure."
+    },
+    {
+      "start": 1195.98,
+      "end": 1198.21,
+      "text": "But all you do is once you see that,"
+    },
+    {
+      "start": 1199.1,
+      "end": 1199.8,
+      "text": "you take your needle."
+    },
+    {
+      "start": 1201.02,
+      "end": 1204.8,
+      "text": "You can come from the medial aspect, but typically it's easiest to come from the lateral aspect."
+    },
+    {
+      "start": 1207.41,
+      "end": 1208.17,
+      "text": "You have your bundle."
+    },
+    {
+      "start": 1210.26,
+      "end": 1219.0,
+      "text": "your needle comes from the side only a few centimeters and you want to kind of pop under here so you're instilling your"
+    },
+    {
+      "start": 1220.8,
+      "end": 1228.71,
+      "text": "anaesthetic around your nerves. You can see as you instill the anaesthetic, it pushes your nerves down, so your underneath."
+    },
+    {
+      "start": 1230.13,
+      "end": 1231.57,
+      "text": "at least one of the fascial planes"
+    },
+    {
+      "start": 1231.57,
+      "end": 1233.8,
+      "text": "because it's moving these nerves."
+    },
+    {
+      "start": 1236.2,
+      "end": 1239.96,
+      "text": "And you just instill 20ccs, there's no..."
+    },
+    {
+      "start": 1240.0,
+      "end": 1249.78,
+      "text": "There's no evidence-based amount that is the most correct, but most techniques that are available for you guys to read about."
+    },
+    {
+      "start": 1250.48,
+      "end": 1252.38,
+      "text": "We'll hover around 20 CCs."
+    },
+    {
+      "start": 1257.66,
+      "end": 1259.83,
+      "text": "Next one, we're under the chest."
+    },
+    {
+      "start": 1260.03,
+      "end": 1264.25,
+      "text": "the serratus anterior plane block. So we're still doing higher volumes to cover a lot of areas."
+    },
+    {
+      "start": 1265.18,
+      "end": 1269.97,
+      "text": "This is for people that have anterior lateral chest wounds. It doesn't always cover the plur-"
+    },
+    {
+      "start": 1270.0,
+      "end": 1273.85,
+      "text": "So this is not necessarily something that you do prior to a chest tube, but"
+    },
+    {
+      "start": 1273.85,
+      "end": 1278.68,
+      "text": "instrumentally enough, if your patients have a lot of pain after a chest tube, you can do this block and it'll help."
+    },
+    {
+      "start": 1281.09,
+      "end": 1284.89,
+      "text": "So those are your branches of your dermatomes that will cover there as well and that's your"
+    },
+    {
+      "start": 1284.89,
+      "end": 1285.11,
+      "text": "nerve."
+    },
+    {
+      "start": 1288.5,
+      "end": 1289.9,
+      "text": "This block is used widely enough."
+    },
+    {
+      "start": 1290.0,
+      "end": 1297.6,
+      "text": "specialties and breast surgery it's used and vats procedures it's used and it's"
+    },
+    {
+      "start": 1297.6,
+      "end": 1299.73,
+      "text": "well researched and it's"
+    },
+    {
+      "start": 1300.32,
+      "end": 1303.3,
+      "text": "become here more popular in our field"
+    },
+    {
+      "start": 1303.3,
+      "end": 1305.4,
+      "text": "for patients that have a lot of rib fractures."
+    },
+    {
+      "start": 1306.52,
+      "end": 1309.15,
+      "text": "It has improved pain scores."
+    },
+    {
+      "start": 1310.35,
+      "end": 1319.89,
+      "text": "Incidences of pneumonia, no reason not to do it on your patients with rib fractures, especially a lot of those populations tend to be elderly people."
+    },
+    {
+      "start": 1320.03,
+      "end": 1325.39,
+      "text": "You don't necessarily want to pound them with de-lotted and really depress their respiratory"
+    },
+    {
+      "start": 1325.39,
+      "end": 1327.29,
+      "text": "drive, so then you're kind of fighting yourself."
+    },
+    {
+      "start": 1328.26,
+      "end": 1329.98,
+      "text": "So in order to do this, you just..."
+    },
+    {
+      "start": 1330.8,
+      "end": 1331.98,
+      "text": "have the patient lay on their side."
+    },
+    {
+      "start": 1332.18,
+      "end": 1333.24,
+      "text": "They don't have to be on their side."
+    },
+    {
+      "start": 1333.34,
+      "end": 1334.6,
+      "text": "They can be flat on their back as well."
+    },
+    {
+      "start": 1335.77,
+      "end": 1337.23,
+      "text": "They have other injuries that preclude them"
+    },
+    {
+      "start": 1337.23,
+      "end": 1338.37,
+      "text": "from laying on their side."
+    },
+    {
+      "start": 1339.33,
+      "end": 1339.93,
+      "text": "And you're ready."
+    },
+    {
+      "start": 1340.0,
+      "end": 1341.94,
+      "text": "your mid-axle underlying at the level of the nipple,"
+    },
+    {
+      "start": 1342.58,
+      "end": 1345.09,
+      "text": "you know, fourth or fifth rib, or costly space."
+    },
+    {
+      "start": 1345.99,
+      "end": 1349.45,
+      "text": "Brobe is running towards the patient's interior chest."
+    },
+    {
+      "start": 1350.54,
+      "end": 1353.84,
+      "text": "And once again, the Artyne schematic,"
+    },
+    {
+      "start": 1354.04,
+      "end": 1355.24,
+      "text": "just because I like to look at this"
+    },
+    {
+      "start": 1355.24,
+      "end": 1356.8,
+      "text": "before I look at the ultrasound image,"
+    },
+    {
+      "start": 1356.9,
+      "end": 1357.9,
+      "text": "so I could try to match them up."
+    },
+    {
+      "start": 1358.83,
+      "end": 1359.55,
+      "text": "There are two techniques."
+    },
+    {
+      "start": 1360.32,
+      "end": 1368.24,
+      "text": "First option, where you're anterior to the serratus, is the easiest option because it's the most superficial."
+    },
+    {
+      "start": 1369.51,
+      "end": 1369.97,
+      "text": "Very accurate."
+    },
+    {
+      "start": 1370.63,
+      "end": 1376.68,
+      "text": "Patients will have a thoracodosal artery that is really anterior towards the end of the lat"
+    },
+    {
+      "start": 1377.29,
+      "end": 1379.87,
+      "text": "I have yet to see"
+    },
+    {
+      "start": 1380.0,
+      "end": 1384.99,
+      "text": "one. But if you want to kind of be safe when you do this, you can look for it and you"
+    },
+    {
+      "start": 1384.99,
+      "end": 1389.91,
+      "text": "just use color to find it to make sure that you're nowhere near it. You're still going"
+    },
+    {
+      "start": 1390.0,
+      "end": 1396.0,
+      "text": "have a negative aspiration before you inject any local, so it shouldn't matter, but if you're"
+    },
+    {
+      "start": 1396.32,
+      "end": 1398.86,
+      "text": "Darius, that's the only kind of potential hazard here."
+    },
+    {
+      "start": 1400.74,
+      "end": 1401.9,
+      "text": "So what does it look like on ultrasound?"
+    },
+    {
+      "start": 1402.4,
+      "end": 1404.4,
+      "text": "So this is prior to any type of injection."
+    },
+    {
+      "start": 1405.18,
+      "end": 1406.6,
+      "text": "Though you want to find your rib,"
+    },
+    {
+      "start": 1406.86,
+      "end": 1409.97,
+      "text": "your serratus muscle sits on top of the rib and then..."
+    },
+    {
+      "start": 1410.32,
+      "end": 1414.81,
+      "text": "you want to inject your anesthetic on top of that serratus muscle."
+    },
+    {
+      "start": 1417.92,
+      "end": 1419.96,
+      "text": "Here, you also can have your knee..."
+    },
+    {
+      "start": 1420.0,
+      "end": 1421.3,
+      "text": "it'll come from either side."
+    },
+    {
+      "start": 1421.66,
+      "end": 1423.74,
+      "text": "So if you're, you can have your needle come from anterior"
+    },
+    {
+      "start": 1423.74,
+      "end": 1427.41,
+      "text": "or posterior either way is appropriate and fine."
+    },
+    {
+      "start": 1427.61,
+      "end": 1429.91,
+      "text": "So it's just let your patient's body have it as kind of."
+    },
+    {
+      "start": 1430.03,
+      "end": 1439.98,
+      "text": "dictate how you're gonna approach and when you instill your fluid you'll see that pocket of fluid open up and the more"
+    },
+    {
+      "start": 1440.0,
+      "end": 1444.88,
+      "text": "Before you instill, again, a volume block because it's a plane block, you're not necessarily"
+    },
+    {
+      "start": 1444.88,
+      "end": 1449.26,
+      "text": "going to see it expand this way and then enter your posterior direction."
+    },
+    {
+      "start": 1450.19,
+      "end": 1458.28,
+      "text": "it'll expand in a like a cephalad to bottle direction, you know, go up the side of the"
+    },
+    {
+      "start": 1458.28,
+      "end": 1459.98,
+      "text": "chest wall and down the side of the chest wall."
+    },
+    {
+      "start": 1463.07,
+      "end": 1467.15,
+      "text": "Keeping with rib fractures, because that block does not cover posterior rib fractures,"
+    },
+    {
+      "start": 1467.19,
+      "end": 1468.43,
+      "text": "it's just anterior lateral chest."
+    },
+    {
+      "start": 1468.81,
+      "end": 1469.97,
+      "text": "If you have someone posterior..."
+    },
+    {
+      "start": 1470.0,
+      "end": 1479.42,
+      "text": "fractures. This is the plane block you're gonna do. So this is also what I didn't know until maybe a"
+    },
+    {
+      "start": 1480.0,
+      "end": 1482.7,
+      "text": "is that people with vertebral compression fractures"
+    },
+    {
+      "start": 1482.7,
+      "end": 1485.7,
+      "text": "or vertebral body fractures, this can help them."
+    },
+    {
+      "start": 1487.02,
+      "end": 1489.36,
+      "text": "And you can do this and people that haven't been, you know,"
+    },
+    {
+      "start": 1489.74,
+      "end": 1489.96,
+      "text": "are still..."
+    },
+    {
+      "start": 1490.0,
+      "end": 1494.21,
+      "text": "spinal precautions that haven't been cleared because they can lay on their side and you can do this"
+    },
+    {
+      "start": 1494.21,
+      "end": 1499.69,
+      "text": "block in like a lateral decavedis position as well. They don't have to be sitting upright."
+    },
+    {
+      "start": 1500.99,
+      "end": 1504.27,
+      "text": "So you, you will get some coverage of the abdominal wall"
+    },
+    {
+      "start": 1504.27,
+      "end": 1508.22,
+      "text": "as the anesthetic goes down the plane."
+    },
+    {
+      "start": 1508.48,
+      "end": 1509.98,
+      "text": "You don't get coverage of the anterior..."
+    },
+    {
+      "start": 1510.0,
+      "end": 1515.02,
+      "text": "your chest. So you just have to kind of warn people that you might lose"
+    },
+    {
+      "start": 1515.02,
+      "end": 1519.71,
+      "text": "sensation to your belly. I know just the Ipsilateral side."
+    },
+    {
+      "start": 1521.82,
+      "end": 1527.18,
+      "text": "So with this you start with your probe within two centimeters of midline and you'll see"
+    },
+    {
+      "start": 1527.18,
+      "end": 1529.26,
+      "text": "those three muscle layers there."
+    },
+    {
+      "start": 1530.13,
+      "end": 1531.23,
+      "text": "and your transverse process."
+    },
+    {
+      "start": 1532.57,
+      "end": 1536.68,
+      "text": "Around T5, the rhomboid will no longer be"
+    },
+    {
+      "start": 1536.68,
+      "end": 1538.9,
+      "text": "in the picture because it ends,"
+    },
+    {
+      "start": 1539.12,
+      "end": 1539.98,
+      "text": "so you'll just have two."
+    },
+    {
+      "start": 1540.0,
+      "end": 1545.72,
+      "text": "If you go below it, I like to there's two ways you can start media or you can start lateral"
+    },
+    {
+      "start": 1545.72,
+      "end": 1549.9,
+      "text": "I like to start lateral and just fan"
+    },
+    {
+      "start": 1550.0,
+      "end": 1555.38,
+      "text": "laterally and you'll see a rip and as you fan immediately that rib will dive down"
+    },
+    {
+      "start": 1555.38,
+      "end": 1559.6,
+      "text": "and then you'll get something another hypochalic structure with you know post-deer"
+    },
+    {
+      "start": 1559.6,
+      "end": 1559.9,
+      "text": "Sure, sure."
+    },
+    {
+      "start": 1560.26,
+      "end": 1562.54,
+      "text": "And that is a transverse process."
+    },
+    {
+      "start": 1562.8,
+      "end": 1566.44,
+      "text": "For me, that's the easiest way to know that's where the transverse process is, because"
+    },
+    {
+      "start": 1566.44,
+      "end": 1569.18,
+      "text": "I can see a rib, disappears, and then something else comes up."
+    },
+    {
+      "start": 1570.06,
+      "end": 1573.06,
+      "text": "That's the transverse process, there can't be anything else."
+    },
+    {
+      "start": 1574.14,
+      "end": 1576.74,
+      "text": "So once you find that, all this procedure is"
+    },
+    {
+      "start": 1576.74,
+      "end": 1579.5,
+      "text": "is putting a needle on it and injecting fluid."
+    },
+    {
+      "start": 1580.29,
+      "end": 1585.63,
+      "text": "It's really basic. The only awkward part is a hand position. How are you going to do it?"
+    },
+    {
+      "start": 1586.72,
+      "end": 1589.98,
+      "text": "So you're oftentimes, most of the time, I've done it coming from..."
+    },
+    {
+      "start": 1590.03,
+      "end": 1597.74,
+      "text": "It's still an in-plane technique where you're following your needle down. It's just a different kind of movement than I think many of us are used to."
+    },
+    {
+      "start": 1599.29,
+      "end": 1599.97,
+      "text": "Again, your own..."
+    },
+    {
+      "start": 1600.0,
+      "end": 1604.72,
+      "text": "going through muscle and if you stay relatively shallow with regards to your"
+    },
+    {
+      "start": 1604.72,
+      "end": 1607.58,
+      "text": "target to hit the bone there really is"
+    },
+    {
+      "start": 1610.0,
+      "end": 1613.24,
+      "text": "like there's pretty low risk of a new mower, something like that."
+    },
+    {
+      "start": 1614.1,
+      "end": 1618.9,
+      "text": "You're also going to get spread once you instill another 30 cc's of light or not light"
+    },
+    {
+      "start": 1618.9,
+      "end": 1619.98,
+      "text": "that it can't excuse me of local-"
+    },
+    {
+      "start": 1620.0,
+      "end": 1623.2,
+      "text": "anesthetic. We'll talk about the types in a little bit. You're going to get"
+    },
+    {
+      "start": 1623.2,
+      "end": 1629.63,
+      "text": "spread in both directions anywhere from three to five dermatomes either way."
+    },
+    {
+      "start": 1630.38,
+      "end": 1632.72,
+      "text": "So I typically will, if they have multiple,"
+    },
+    {
+      "start": 1632.94,
+      "end": 1634.96,
+      "text": "say if they have multiple posterior rib fractures,"
+    },
+    {
+      "start": 1635.06,
+      "end": 1636.1,
+      "text": "and when I did a couple of weeks ago,"
+    },
+    {
+      "start": 1636.83,
+      "end": 1638.65,
+      "text": "patient had four rib fractures."
+    },
+    {
+      "start": 1639.1,
+      "end": 1639.96,
+      "text": "I just chose..."
+    },
+    {
+      "start": 1640.0,
+      "end": 1642.5,
+      "text": "one of the middle ones as my target terms of level"
+    },
+    {
+      "start": 1642.92,
+      "end": 1647.36,
+      "text": "and injected the there and they got coverage."
+    },
+    {
+      "start": 1648.32,
+      "end": 1649.82,
+      "text": "They actually were discharged from numerous."
+    },
+    {
+      "start": 1650.03,
+      "end": 1655.51,
+      "text": "department and they never came back. So I'm gonna assume that it was probably the best pain relief"
+    },
+    {
+      "start": 1655.51,
+      "end": 1658.58,
+      "text": "they've ever had in their life, something like that. But it definitely worked, right?"
+    },
+    {
+      "start": 1661.02,
+      "end": 1669.89,
+      "text": "So moving on to the arm so this as I mentioned earlier is the most common block that residents actually do I haven't done"
+    },
+    {
+      "start": 1670.0,
+      "end": 1679.76,
+      "text": "But if you have a devastating hand injury like the first image of a person that it was holding a firework as it exploded just because"
+    },
+    {
+      "start": 1680.54,
+      "end": 1687.21,
+      "text": "These are the three that you're gonna want to know and you'd often times for really bad hand injuries"
+    },
+    {
+      "start": 1687.21,
+      "end": 1688.95,
+      "text": "It will do them in conjunction"
+    },
+    {
+      "start": 1690.16,
+      "end": 1692.14,
+      "text": "with each other, you just do them all at the same time."
+    },
+    {
+      "start": 1692.91,
+      "end": 1695.81,
+      "text": "These are smaller injections, are three to five CCs,"
+    },
+    {
+      "start": 1697.0,
+      "end": 1699.98,
+      "text": "but there's a lot of anti-times."
+    },
+    {
+      "start": 1700.1,
+      "end": 1703.36,
+      "text": "variants from patient to patient as to what each of these"
+    },
+    {
+      "start": 1703.36,
+      "end": 1709.96,
+      "text": "nurse will actually cover. So just do them, or you know, just do them all."
+    },
+    {
+      "start": 1710.0,
+      "end": 1712.62,
+      "text": "if you're going to do something complicated with somebody's hand, if you have a"
+    },
+    {
+      "start": 1712.62,
+      "end": 1719.0,
+      "text": "lack that needs to be repaired, or if they have a bad injury. This is where I"
+    },
+    {
+      "start": 1719.0,
+      "end": 1719.74,
+      "text": "mentioned earlier."
+    },
+    {
+      "start": 1720.0,
+      "end": 1727.53,
+      "text": "that you may want to play really nice in the sandbox with your consultants. You might want to let"
+    },
+    {
+      "start": 1727.53,
+      "end": 1729.87,
+      "text": "ortho or plastics or beverage on for hand."
+    },
+    {
+      "start": 1730.64,
+      "end": 1731.96,
+      "text": "know that this is going to happen."
+    },
+    {
+      "start": 1733.78,
+      "end": 1735.3,
+      "text": "You do these kind of in the mid forearm"
+    },
+    {
+      "start": 1735.3,
+      "end": 1739.04,
+      "text": "and sometimes you'll get some distal forearm cover"
+    },
+    {
+      "start": 1739.04,
+      "end": 1739.82,
+      "text": "and like, you know,"
+    },
+    {
+      "start": 1740.0,
+      "end": 1746.78,
+      "text": "seizure with it. So oftentimes they may want to examine the patient after a hand"
+    },
+    {
+      "start": 1746.78,
+      "end": 1749.89,
+      "text": "injuring to see what they can move and how they can move."
+    },
+    {
+      "start": 1750.0,
+      "end": 1754.7,
+      "text": "so they can assess all the different ligaments and strength for all the different digits."
+    },
+    {
+      "start": 1755.74,
+      "end": 1759.97,
+      "text": "So it may be best, depending on the situation, to let them..."
+    },
+    {
+      "start": 1760.0,
+      "end": 1764.73,
+      "text": "see the patient before you do it. So that's my main disclaimer with about"
+    },
+    {
+      "start": 1764.73,
+      "end": 1768.45,
+      "text": "you know agreements with other specialties. So again, you're gonna have your"
+    },
+    {
+      "start": 1768.45,
+      "end": 1768.75,
+      "text": "same"
+    },
+    {
+      "start": 1770.26,
+      "end": 1774.1,
+      "text": "out of your same equipment, but you don't need quite as much. So this one you can do on your own,"
+    },
+    {
+      "start": 1774.62,
+      "end": 1779.05,
+      "text": "you don't need an assistant, every machine, you just need a probe cover, something to clean it with,"
+    },
+    {
+      "start": 1780.0,
+      "end": 1789.9,
+      "text": "AC syringe and this is standard 25 gauge needle is what I use so where do we look for all the different nerves our medium nerves are gonna"
+    },
+    {
+      "start": 1790.0,
+      "end": 1795.44,
+      "text": "us this coverage, and I do all these kind of mid-forum."
+    },
+    {
+      "start": 1800.06,
+      "end": 1800.96,
+      "text": "and this is what you're gonna see."
+    },
+    {
+      "start": 1801.26,
+      "end": 1802.98,
+      "text": "It's a little triangle in the middle of the arm."
+    },
+    {
+      "start": 1803.46,
+      "end": 1804.8,
+      "text": "That's the easiest way to describe it."
+    },
+    {
+      "start": 1805.14,
+      "end": 1808.88,
+      "text": "And fairly often, like I'm looking on myself,"
+    },
+    {
+      "start": 1809.14,
+      "end": 1809.98,
+      "text": "I looked on some of my..."
+    },
+    {
+      "start": 1810.0,
+      "end": 1816.38,
+      "text": "friends. It looks pretty similar in every patient that I've looked at. You have"
+    },
+    {
+      "start": 1816.38,
+      "end": 1819.68,
+      "text": "your conglomerate of forearm muscles, and then they..."
+    },
+    {
+      "start": 1820.0,
+      "end": 1822.3,
+      "text": "the fascial planes combine in the middle of the arm"
+    },
+    {
+      "start": 1822.3,
+      "end": 1824.1,
+      "text": "and they give you this kind of triangular shape."
+    },
+    {
+      "start": 1825.6,
+      "end": 1828.76,
+      "text": "All you need to do, put a needle next to it."
+    },
+    {
+      "start": 1830.0,
+      "end": 1837.01,
+      "text": "you just drop your needle down and you can see previously this person put their needle right here."
+    },
+    {
+      "start": 1837.7,
+      "end": 1839.9,
+      "text": "You could do it right next a little further away."
+    },
+    {
+      "start": 1840.06,
+      "end": 1845.04,
+      "text": "the bundle if you want it, but you just put your needle next to it and inject your"
+    },
+    {
+      "start": 1845.04,
+      "end": 1847.54,
+      "text": "local. Again three to five CCs, that's all."
+    },
+    {
+      "start": 1850.22,
+      "end": 1853.28,
+      "text": "I mean, it's so basic, it's knowing where to look."
+    },
+    {
+      "start": 1853.5,
+      "end": 1855.26,
+      "text": "That's all you have to do is know where to look."
+    },
+    {
+      "start": 1856.38,
+      "end": 1858.0,
+      "text": "And the more you practice it, the better you're gonna get."
+    },
+    {
+      "start": 1859.67,
+      "end": 1859.97,
+      "text": "So you're ready."
+    },
+    {
+      "start": 1860.03,
+      "end": 1868.02,
+      "text": "a same level mid forearm. This one's important to do more proximal and not distal, because everyone"
+    },
+    {
+      "start": 1870.0,
+      "end": 1875.89,
+      "text": "kind of proximal part of the thumb. The innervation for some people comes off a lot more proximal than others"
+    },
+    {
+      "start": 1875.89,
+      "end": 1879.96,
+      "text": "So if you're gonna do this definitely be sure to be me"
+    },
+    {
+      "start": 1880.0,
+      "end": 1885.97,
+      "text": "for them. Also what you'll see as you become more proximal, you're"
+    },
+    {
+      "start": 1885.97,
+      "end": 1889.98,
+      "text": "in your nerve will separate. So if you go closer to your wrist, the"
+    },
+    {
+      "start": 1890.0,
+      "end": 1895.02,
+      "text": "kind of ride and tan them together. But you can watch it if you start in your wrist, if you don't"
+    },
+    {
+      "start": 1895.02,
+      "end": 1899.6,
+      "text": "know how to find them. If you're like, I don't know where the nerve is, find the artery."
+    },
+    {
+      "start": 1900.0,
+      "end": 1909.89,
+      "text": "easy to find and just slide back and you'll see it slowly separate out. Again you just come from"
+    },
+    {
+      "start": 1910.58,
+      "end": 1916.28,
+      "text": "whatever side is closest and opposite the artery so you don't risk of puncturing or going through"
+    },
+    {
+      "start": 1916.28,
+      "end": 1919.82,
+      "text": "through the artery, put your needle next to it, three to five c-season."
+    },
+    {
+      "start": 1920.03,
+      "end": 1929.96,
+      "text": "These are quick and easy. You can do all three of these in five minutes. It takes longer to get your supplies than a"
+    },
+    {
+      "start": 1930.03,
+      "end": 1935.03,
+      "text": "does to actually do this. So your owner nerve, you're just going to have the patient rotate"
+    },
+    {
+      "start": 1935.03,
+      "end": 1937.82,
+      "text": "their arm, going to come from a more posterior aspect."
+    },
+    {
+      "start": 1940.7,
+      "end": 1947.96,
+      "text": "This is what you're going to see. This one, the nerve does ride next to the artery, so you just come from more posteriorly to avoid the artery."
+    },
+    {
+      "start": 1949.42,
+      "end": 1949.98,
+      "text": "Just put your needle in."
+    },
+    {
+      "start": 1950.0,
+      "end": 1953.76,
+      "text": "right next to it, three CCs, after a negative aspiration."
+    },
+    {
+      "start": 1957.01,
+      "end": 1959.69,
+      "text": "So still with the arm, my favorite block, just..."
+    },
+    {
+      "start": 1960.03,
+      "end": 1966.29,
+      "text": "one last week, the patient had fallen down, had bad humorous fracture, bad elbow fracture,"
+    },
+    {
+      "start": 1966.49,
+      "end": 1969.98,
+      "text": "had forearm fractures, a whole bunch of fractures in there are."
+    },
+    {
+      "start": 1970.03,
+      "end": 1972.87,
+      "text": "So this is for that scenario, it's the perfect block."
+    },
+    {
+      "start": 1973.52,
+      "end": 1978.18,
+      "text": "They'll also do these anesthesia does these for people that have like AB fistula repairs"
+    },
+    {
+      "start": 1978.18,
+      "end": 1979.04,
+      "text": "or revisions."
+    },
+    {
+      "start": 1980.13,
+      "end": 1983.0,
+      "text": "a lot of times I'll do those just under this, that's it."
+    },
+    {
+      "start": 1984.32,
+      "end": 1988.3,
+      "text": "It is a little more fine, so maybe, you know,"
+    },
+    {
+      "start": 1988.4,
+      "end": 1989.96,
+      "text": "if you're just getting started at doing..."
+    },
+    {
+      "start": 1990.0,
+      "end": 1997.08,
+      "text": "these, don't jump into this one by the way, and then it does spare the axola, so this is"
+    },
+    {
+      "start": 1997.08,
+      "end": 1999.98,
+      "text": "not something you can do, if someone says..."
+    },
+    {
+      "start": 2000.0,
+      "end": 2004.62,
+      "text": "heads like hydratonitis and they have axillary abscesses or something like that, this is not"
+    },
+    {
+      "start": 2004.62,
+      "end": 2005.22,
+      "text": "going to cover that."
+    },
+    {
+      "start": 2008.26,
+      "end": 2009.18,
+      "text": "And your cartoon drawing."
+    },
+    {
+      "start": 2009.4,
+      "end": 2009.98,
+      "text": "So you're looking..."
+    },
+    {
+      "start": 2010.0,
+      "end": 2018.63,
+      "text": "above the clavicle right here and you're going to find your first rib in your subclavian"
+    },
+    {
+      "start": 2018.63,
+      "end": 2018.91,
+      "text": "and artery."
+    },
+    {
+      "start": 2020.03,
+      "end": 2024.32,
+      "text": "Next to that, you find what I view as a little slice of pizza."
+    },
+    {
+      "start": 2024.68,
+      "end": 2025.54,
+      "text": "That's what it looks like to me."
+    },
+    {
+      "start": 2026.3,
+      "end": 2027.5,
+      "text": "But most things look like pizza."
+    },
+    {
+      "start": 2028.59,
+      "end": 2029.75,
+      "text": "And you do have to do two injections."
+    },
+    {
+      "start": 2030.06,
+      "end": 2032.64,
+      "text": "because this is the brachial plexus on whatever side you're at,"
+    },
+    {
+      "start": 2032.7,
+      "end": 2034.52,
+      "text": "and it has six different chords at this level."
+    },
+    {
+      "start": 2035.75,
+      "end": 2037.93,
+      "text": "There are facial planes that separate these chords."
+    },
+    {
+      "start": 2039.19,
+      "end": 2039.97,
+      "text": "There is always..."
+    },
+    {
+      "start": 2040.0,
+      "end": 2048.07,
+      "text": "one here between the lowest one and most often there is one here as well. So your first injection"
+    },
+    {
+      "start": 2048.07,
+      "end": 2049.85,
+      "text": "and there's going to be kind of right above."
+    },
+    {
+      "start": 2050.0,
+      "end": 2058.54,
+      "text": "your first rib. So this is without injection and that's your brachial plexus. So you have your artery."
+    },
+    {
+      "start": 2060.83,
+      "end": 2064.34,
+      "text": "your middle scaling and then your slice of pizza here."
+    },
+    {
+      "start": 2065.39,
+      "end": 2066.59,
+      "text": "And it just looks like pepperoni pizza."
+    },
+    {
+      "start": 2067.68,
+      "end": 2069.64,
+      "text": "So your needle is gonna come from here."
+    },
+    {
+      "start": 2070.1,
+      "end": 2072.91,
+      "text": "Oh, away from the artery, down to your first rib."
+    },
+    {
+      "start": 2074.62,
+      "end": 2076.64,
+      "text": "Your first injection is gonna be about 10 C C's"
+    },
+    {
+      "start": 2076.64,
+      "end": 2079.77,
+      "text": "right there, and that'll cover your lower cords."
+    },
+    {
+      "start": 2081.18,
+      "end": 2086.71,
+      "text": "second injection you can either do by taking the needle and putting it right in the middle"
+    },
+    {
+      "start": 2086.71,
+      "end": 2089.96,
+      "text": "of these other five cords, or you can just do it right on."
+    },
+    {
+      "start": 2090.0,
+      "end": 2097.99,
+      "text": "top. There's no evidence to suggest that one way is better than the other. So that's where I"
+    },
+    {
+      "start": 2097.99,
+      "end": 2098.23,
+      "text": "important."
+    },
+    {
+      "start": 2101.15,
+      "end": 2102.05,
+      "text": "So this is your positioning."
+    },
+    {
+      "start": 2102.55,
+      "end": 2104.49,
+      "text": "So you have the patient turn their head if they can."
+    },
+    {
+      "start": 2105.52,
+      "end": 2106.94,
+      "text": "This is really, if they're in a sea collar,"
+    },
+    {
+      "start": 2106.94,
+      "end": 2108.26,
+      "text": "this is really hard to do."
+    },
+    {
+      "start": 2108.76,
+      "end": 2109.44,
+      "text": "So we had to..."
+    },
+    {
+      "start": 2110.13,
+      "end": 2112.82,
+      "text": "the other day, we had to wait for patients to see"
+    },
+    {
+      "start": 2112.82,
+      "end": 2113.6,
+      "text": "spine to be cleared."
+    },
+    {
+      "start": 2114.69,
+      "end": 2115.73,
+      "text": "So you have them turn their head."
+    },
+    {
+      "start": 2116.38,
+      "end": 2118.74,
+      "text": "You, everyone is obviously a little different."
+    },
+    {
+      "start": 2118.96,
+      "end": 2119.97,
+      "text": "So you just put it right."
+    },
+    {
+      "start": 2120.03,
+      "end": 2124.15,
+      "text": "on top of the classical fan a little bit until you see your middle scaling your"
+    },
+    {
+      "start": 2124.54,
+      "end": 2128.69,
+      "text": "artery and then your little bundle of nerves right in the middle"
+    },
+    {
+      "start": 2130.03,
+      "end": 2132.13,
+      "text": "Once you see that, you're gonna go."
+    },
+    {
+      "start": 2134.55,
+      "end": 2136.07,
+      "text": "And this is pretty superficial as well."
+    },
+    {
+      "start": 2136.35,
+      "end": 2139.05,
+      "text": "So the plura is right below that first rib."
+    },
+    {
+      "start": 2139.41,
+      "end": 2139.67,
+      "text": "So you..."
+    },
+    {
+      "start": 2140.16,
+      "end": 2144.12,
+      "text": "often not going in very far and it's a pretty shallow angle."
+    },
+    {
+      "start": 2145.86,
+      "end": 2148.34,
+      "text": "Alright, so those are the core blocks."
+    },
+    {
+      "start": 2150.7,
+      "end": 2152.12,
+      "text": "that I like to do in the emergency department"
+    },
+    {
+      "start": 2152.12,
+      "end": 2154.78,
+      "text": "and I've done throughout the year."
+    },
+    {
+      "start": 2156.29,
+      "end": 2157.33,
+      "text": "What local do you use?"
+    },
+    {
+      "start": 2158.18,
+      "end": 2159.9,
+      "text": "There's a decent debate."
+    },
+    {
+      "start": 2160.0,
+      "end": 2165.32,
+      "text": "about this, at least I didn't know there was, but one of our trauma surgeons liked"
+    },
+    {
+      "start": 2165.32,
+      "end": 2169.88,
+      "text": "significant a lot and he had asked me to what you know"
+    },
+    {
+      "start": 2170.0,
+      "end": 2172.38,
+      "text": "local I was doing, and I said, oh, I use rope pivot cane."
+    },
+    {
+      "start": 2173.18,
+      "end": 2174.58,
+      "text": "They're gonna, I would like if you could use"
+    },
+    {
+      "start": 2174.58,
+      "end": 2175.44,
+      "text": "bupivocaine, please."
+    },
+    {
+      "start": 2176.93,
+      "end": 2179.39,
+      "text": "So why rope pivot cane over bupivocaine?"
+    },
+    {
+      "start": 2180.74,
+      "end": 2183.34,
+      "text": "Ubivocane is more cardio toxic, it's more lipophilic,"
+    },
+    {
+      "start": 2183.38,
+      "end": 2186.99,
+      "text": "and it has a lower maximum allowable dose"
+    },
+    {
+      "start": 2186.99,
+      "end": 2189.07,
+      "text": "to versus three milligrams."
+    },
+    {
+      "start": 2190.83,
+      "end": 2196.35,
+      "text": "So that coupled with the similar kind of duration of action"
+    },
+    {
+      "start": 2196.35,
+      "end": 2198.67,
+      "text": "or pivoting is a choice for me every time."
+    },
+    {
+      "start": 2199.35,
+      "end": 2199.97,
+      "text": "You can get used..."
+    },
+    {
+      "start": 2200.0,
+      "end": 2204.32,
+      "text": "is 0.2% or 0.5% Republican."
+    },
+    {
+      "start": 2205.36,
+      "end": 2207.82,
+      "text": "And your total dose that you can give people"
+    },
+    {
+      "start": 2208.46,
+      "end": 2209.92,
+      "text": "is in terms of volume."
+    },
+    {
+      "start": 2210.0,
+      "end": 2216.98,
+      "text": "is much higher. So if you're doing these large plane blocks that you're going to do 30, 40 CCs"
+    },
+    {
+      "start": 2216.98,
+      "end": 2219.83,
+      "text": "The local definitely recommend using"
+    },
+    {
+      "start": 2220.0,
+      "end": 2229.97,
+      "text": "rupeficane to try to avoid any like local anesthetic to stomach toxicity. So this is a little chart that I have"
+    },
+    {
+      "start": 2230.0,
+      "end": 2235.78,
+      "text": "in that nerve kit that I showed you. I have this chart in there. It's on the back of the paper"
+    },
+    {
+      "start": 2235.78,
+      "end": 2239.22,
+      "text": "that lists the supplies for the bank."
+    },
+    {
+      "start": 2240.03,
+      "end": 2247.67,
+      "text": "That way your users or your feet, your fellow docs don't have to worry about what am I doing"
+    },
+    {
+      "start": 2247.67,
+      "end": 2249.97,
+      "text": "and by giving this patient too much to live."
+    },
+    {
+      "start": 2250.0,
+      "end": 2258.86,
+      "text": "So these are the main concentrations to use and those are the volumes that you can instill and better maximum dose so I mean"
+    },
+    {
+      "start": 2260.1,
+      "end": 2263.09,
+      "text": "If you have multiple fractures, you can use 0.2%"
+    },
+    {
+      "start": 2263.09,
+      "end": 2264.9,
+      "text": "and you can do multiple blocks"
+    },
+    {
+      "start": 2265.22,
+      "end": 2268.79,
+      "text": "because not many people are 50 kilograms anymore."
+    },
+    {
+      "start": 2270.06,
+      "end": 2279.27,
+      "text": "typically they're a little bigger. So the worry, you can't really talk about nerve"
+    },
+    {
+      "start": 2279.27,
+      "end": 2279.89,
+      "text": "blocks without"
+    },
+    {
+      "start": 2280.0,
+      "end": 2283.6,
+      "text": "knowing how to treat the, you know, the feared complication of his last."
+    },
+    {
+      "start": 2284.0,
+      "end": 2289.29,
+      "text": "So mainly you're going to get this impending doom and then the tox triad of Cedricoma death."
+    },
+    {
+      "start": 2290.48,
+      "end": 2299.97,
+      "text": "And almost every toxicity that I've ever heard of. A lot of people will also complain initially about some like peri-oral sensations or numbness and t-"
+    },
+    {
+      "start": 2300.0,
+      "end": 2308.8,
+      "text": "and then what people die from, part block, they prolong QRS because all these medications work on sodium channels."
+    },
+    {
+      "start": 2310.0,
+      "end": 2312.96,
+      "text": "and your solution is 20% intralipid."
+    },
+    {
+      "start": 2313.92,
+      "end": 2315.98,
+      "text": "You can give a bolus, and the bolus doesn't help improve"
+    },
+    {
+      "start": 2315.98,
+      "end": 2319.9,
+      "text": "your patient's hemodynamic or heart block."
+    },
+    {
+      "start": 2320.45,
+      "end": 2329.98,
+      "text": "And you can start an infusion as well. You're doing this typically I know where I used to work. It was toxicology would be in"
+    },
+    {
+      "start": 2330.03,
+      "end": 2337.72,
+      "text": "involved but not all places have that some places are poison center so if this is happening you're giving a"
+    },
+    {
+      "start": 2337.72,
+      "end": 2339.98,
+      "text": "bolus, hopefully you're in contact with those people."
+    },
+    {
+      "start": 2340.06,
+      "end": 2343.78,
+      "text": "to make sure that you have all the help you can get."
+    },
+    {
+      "start": 2345.66,
+      "end": 2348.92,
+      "text": "Two things that you can do for local is"
+    },
+    {
+      "start": 2350.0,
+      "end": 2359.58,
+      "text": "Still to this day no matter how many times I've tried learning how to calculate doses of point two quarter percent this"
+    },
+    {
+      "start": 2360.03,
+      "end": 2365.22,
+      "text": "that medication, how much local can someone have. They are getting local for their"
+    },
+    {
+      "start": 2365.22,
+      "end": 2369.87,
+      "text": "last-ceration repairs as well. There's these two apps, MDCalc."
+    },
+    {
+      "start": 2370.03,
+      "end": 2374.5,
+      "text": "And this app from John Hopkins about local anesthetic"
+    },
+    {
+      "start": 2376.14,
+      "end": 2379.97,
+      "text": "calculation, dose calculations, they're great."
+    },
+    {
+      "start": 2380.29,
+      "end": 2384.84,
+      "text": "They both work really well. You can choose any local that you're under the sun,"
+    },
+    {
+      "start": 2384.98,
+      "end": 2389.89,
+      "text": "putting in how much you're giving them or how much they've received already. It'll tell you they can have"
+    },
+    {
+      "start": 2390.0,
+      "end": 2394.7,
+      "text": "much of this, that, or this, and all the different options in between."
+    },
+    {
+      "start": 2395.49,
+      "end": 2399.19,
+      "text": "So these are both apps that I have on my phone or quick reference."
+    },
+    {
+      "start": 2400.0,
+      "end": 2402.16,
+      "text": "don't waste your brain space memorizing these things."
+    },
+    {
+      "start": 2403.75,
+      "end": 2406.32,
+      "text": "All right, those are the, that's it."
+    },
+    {
+      "start": 2406.84,
+      "end": 2409.97,
+      "text": "This first thing, hopefully you all-"
+    },
+    {
+      "start": 2410.0,
+      "end": 2416.73,
+      "text": "do it is attribute to my friends from residency hopefully Tim and Phil in"
+    },
+    {
+      "start": 2417.37,
+      "end": 2418.67,
+      "text": "particular take a look at that"
+    },
+    {
+      "start": 2421.73,
+      "end": 2428.9,
+      "text": "And then maybe you did or maybe didn't but this is the actual mobile support the first one was a nice video of Rick Astley"
+    },
+    {
+      "start": 2430.0,
+      "end": 2435.31,
+      "text": "that you can like home I have these saved in my Safari on my phone there's like hot"
+    },
+    {
+      "start": 2435.31,
+      "end": 2438.75,
+      "text": "pages so I can just one click and get there so"
+    },
+    {
+      "start": 2440.0,
+      "end": 2447.55,
+      "text": "These are the techniques from different websites that you can have quick access to the"
+    },
+    {
+      "start": 2447.55,
+      "end": 2449.75,
+      "text": "especially Iliacca and the Stratus anterior."
+    },
+    {
+      "start": 2450.06,
+      "end": 2456.4,
+      "text": "and then all the different foreign blocks for the main sources that I used to kind"
+    },
+    {
+      "start": 2456.4,
+      "end": 2457.24,
+      "text": "of come up with all this."
+    },
+    {
+      "start": 2460.13,
+      "end": 2461.71,
+      "text": "And there's a bunch of stuff here."
+    }
+  ]
+}

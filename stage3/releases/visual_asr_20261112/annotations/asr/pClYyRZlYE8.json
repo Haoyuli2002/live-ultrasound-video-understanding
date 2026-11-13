@@ -1,0 +1,748 @@
+{
+  "video_id": "pClYyRZlYE8",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/pClYyRZlYE8/asr.txt",
+  "segments": [
+    {
+      "start": 0.03,
+      "end": 2.36,
+      "text": "Hi everyone, we're gonna take the next few minutes"
+    },
+    {
+      "start": 2.36,
+      "end": 3.94,
+      "text": "and talk through central line placement."
+    },
+    {
+      "start": 6.57,
+      "end": 8.53,
+      "text": "Let's start by reading the basics of central lines."
+    },
+    {
+      "start": 9.25,
+      "end": 9.97,
+      "text": "Essential line is a-"
+    },
+    {
+      "start": 10.03,
+      "end": 13.86,
+      "text": "Catherine was tipped in centrally, which means the tip of the line terminates in the"
+    },
+    {
+      "start": 14.2,
+      "end": 17.24,
+      "text": "SVC, the IVC, or the cable atrial junction."
+    },
+    {
+      "start": 19.5,
+      "end": 19.96,
+      "text": "There are many that..."
+    },
+    {
+      "start": 20.03,
+      "end": 24.41,
+      "text": "types of central lines, some of which are listed here. For this video, we are going to review"
+    },
+    {
+      "start": 24.41,
+      "end": 28.51,
+      "text": "how to place a triple-lew and central Venus catheter, which is a very common catheter"
+    },
+    {
+      "start": 28.51,
+      "end": 29.73,
+      "text": "place in the emergency department."
+    },
+    {
+      "start": 30.42,
+      "end": 32.88,
+      "text": "You overall technique for placing each of these is the same."
+    },
+    {
+      "start": 36.85,
+      "end": 39.97,
+      "text": "So first, when the way you place central lines, central lines are..."
+    },
+    {
+      "start": 40.0,
+      "end": 41.7,
+      "text": "in many different clinical scenarios."
+    },
+    {
+      "start": 42.42,
+      "end": 46.06,
+      "text": "The common scenario is a patient that's in shock who needs a large amount of blood or"
+    },
+    {
+      "start": 46.06,
+      "end": 47.04,
+      "text": "flu or a cessation."
+    },
+    {
+      "start": 48.0,
+      "end": 49.96,
+      "text": "Submedications can only be administered via central-"
+    },
+    {
+      "start": 50.0,
+      "end": 55.47,
+      "text": "axis such as base oppressors. In certain clinical scenarios, a peripheral IV"
+    },
+    {
+      "start": 55.47,
+      "end": 58.65,
+      "text": "is unable to be placed in a central line maybe needed for axis."
+    },
+    {
+      "start": 61.79,
+      "end": 66.35,
+      "text": "centralised giving place in one of three locations, the subcleaving vein, the internal"
+    },
+    {
+      "start": 66.35,
+      "end": 68.17,
+      "text": "draw your vein, or the femoral vein."
+    },
+    {
+      "start": 68.88,
+      "end": 69.96,
+      "text": "In this video, we'll be playing..."
+    },
+    {
+      "start": 70.0,
+      "end": 74.0,
+      "text": "in the central line in the internal drug dealer as this is the most common location."
+    },
+    {
+      "start": 76.76,
+      "end": 79.52,
+      "text": "Now we go into transition to the actual placement of a central line."
+    },
+    {
+      "start": 80.0,
+      "end": 84.73,
+      "text": "And remember, we are referring to a triple lumen central venous catheter that we are placing"
+    },
+    {
+      "start": 84.73,
+      "end": 86.29,
+      "text": "in the internal joy of your reign."
+    },
+    {
+      "start": 87.06,
+      "end": 88.94,
+      "text": "The first step is to gather your equipment."
+    },
+    {
+      "start": 90.0,
+      "end": 94.46,
+      "text": "most of what you can see here in this image. You'll need a CVC kit, a line"
+    },
+    {
+      "start": 94.46,
+      "end": 99.9,
+      "text": "insertion tray as well as a sterile ultrasound probe cover. That picture is your"
+    },
+    {
+      "start": 100.0,
+      "end": 106.36,
+      "text": "machine and your sterile gloves, gown, hair net. That's remember, this is a completely sterile"
+    },
+    {
+      "start": 106.36,
+      "end": 109.97,
+      "text": "procedure. Once your equipment is gathered, you will..."
+    },
+    {
+      "start": 110.0,
+      "end": 114.27,
+      "text": "Open everything up, remember to maintain a sterile field."
+    },
+    {
+      "start": 115.19,
+      "end": 118.1,
+      "text": "First, we open up our line insertion tray."
+    },
+    {
+      "start": 120.03,
+      "end": 124.01,
+      "text": "yet be careful not to touch the inside portion as we are not sterile yet."
+    },
+    {
+      "start": 125.5,
+      "end": 129.91,
+      "text": "Next, we will drop both our ultrasound probe cover and or c."
+    },
+    {
+      "start": 130.0,
+      "end": 134.18,
+      "text": "see kit into or cereal field as demonstrated in the video."
+    },
+    {
+      "start": 166.91,
+      "end": 169.97,
+      "text": "Next, we want to look at our patient's anatomy and find the"
+    },
+    {
+      "start": 170.0,
+      "end": 172.18,
+      "text": "best location for a central line to be placed."
+    },
+    {
+      "start": 173.06,
+      "end": 176.76,
+      "text": "We will start by using the linear probe and scanning up and down the neck, looking for"
+    },
+    {
+      "start": 176.76,
+      "end": 179.92,
+      "text": "the internal triangular vein and the corroded artery."
+    },
+    {
+      "start": 180.0,
+      "end": 183.66,
+      "text": "Here is an example of what you might see as you scan up another neck."
+    },
+    {
+      "start": 184.42,
+      "end": 189.82,
+      "text": "You can see the Corridor artery on screen left and the internal triangular vein on screen"
+    },
+    {
+      "start": 189.82,
+      "end": 189.96,
+      "text": "In the next video, I'll show you how to make a video of how to make a video of how to make a video of how to make a video of how to make a video of how to make a video of how to make a video of how to make a video of how to make a video of how to make a video of how to make a video of how to make a video of how to make a video of how to make a video of how to make a video of how to make a video of how to make a video of how to make a video of how to make a video of how to make a video of how to make a video of how to make a video of how to make a video of how to make a video of how to make a video of how to make a video of how to make a video of how to make a video of how to make a video of how to make a video of how to make a video of how to make a video of how to make a video of how to make a video of how to make a video of how to make a"
+    },
+    {
+      "start": 192.05,
+      "end": 195.47,
+      "text": "Remember, we want essential lines to be in the vein and not the artery."
+    },
+    {
+      "start": 196.33,
+      "end": 199.93,
+      "text": "We can confirm more of the vein is by using light compression and observing wood."
+    },
+    {
+      "start": 200.0,
+      "end": 206.3,
+      "text": "vessel collapses. This indicates which vessel is the vein. This is also a good time to find"
+    },
+    {
+      "start": 206.3,
+      "end": 208.74,
+      "text": "the best spot at the night to ultimately insert or needle."
+    },
+    {
+      "start": 210.0,
+      "end": 214.22,
+      "text": "we want to choose the location where the internal jaylor is the largest and also the further"
+    },
+    {
+      "start": 214.22,
+      "end": 215.56,
+      "text": "away from the carotid artery."
+    },
+    {
+      "start": 216.19,
+      "end": 219.93,
+      "text": "For example, we will now want to place our catheter where the vein is directly in."
+    },
+    {
+      "start": 220.0,
+      "end": 226.18,
+      "text": "top of the carotid artery. This would be a good example of what this might look like."
+    },
+    {
+      "start": 230.22,
+      "end": 234.36,
+      "text": "Many patients who need central lines will be sick and in shock, so they may likely be"
+    },
+    {
+      "start": 234.36,
+      "end": 237.27,
+      "text": "volume down and have very collapsible veins."
+    },
+    {
+      "start": 238.0,
+      "end": 239.78,
+      "text": "Why don't you make the internal drug your vein bigger?"
+    },
+    {
+      "start": 240.03,
+      "end": 247.55,
+      "text": "or more plump would be to place your patient into the dialenberg with their head below their feet to push more blood volume towards the head."
+    },
+    {
+      "start": 250.38,
+      "end": 251.96,
+      "text": "Now that we have the patient positioned"
+    },
+    {
+      "start": 251.96,
+      "end": 253.58,
+      "text": "and we have found the best location"
+    },
+    {
+      "start": 253.58,
+      "end": 255.0,
+      "text": "for a central line to be placed,"
+    },
+    {
+      "start": 255.73,
+      "end": 257.05,
+      "text": "you will now put on your gloves,"
+    },
+    {
+      "start": 257.47,
+      "end": 259.83,
+      "text": "gown and hair net using proper sterile technique."
+    },
+    {
+      "start": 260.64,
+      "end": 264.55,
+      "text": "You will also now place a sterile drape funnel in your line insertion tray and the patient"
+    },
+    {
+      "start": 264.55,
+      "end": 266.85,
+      "text": "and place your sterile ultrasound probe cover."
+    },
+    {
+      "start": 267.9,
+      "end": 269.64,
+      "text": "Next, you will prepare all of your equipment."
+    },
+    {
+      "start": 270.26,
+      "end": 273.42,
+      "text": "This is performed slightly differently depending on operator preference,"
+    },
+    {
+      "start": 273.86,
+      "end": 279.96,
+      "text": "but we find the easiest way to prepare yourself for success is to lay out all of your equipment in the order that it will be"
+    },
+    {
+      "start": 280.0,
+      "end": 285.69,
+      "text": "used. This is also the time to flush your CVC, flushing all three ports and leaving the"
+    },
+    {
+      "start": 288.75,
+      "end": 289.97,
+      "text": "that's the brown poor and the"
+    },
+    {
+      "start": 290.0,
+      "end": 296.66,
+      "text": "by the arrow, now you're ready to go ahead and get started with the procedure."
+    },
+    {
+      "start": 297.9,
+      "end": 299.98,
+      "text": "Step 1 is to inject lidocaine into the area."
+    },
+    {
+      "start": 300.0,
+      "end": 304.66,
+      "text": "of skin, you will be performing the procedure. This should be done under ultrasound guidance"
+    },
+    {
+      "start": 304.66,
+      "end": 309.68,
+      "text": "for safety and so that you know that you are providing auto-canals to the analgesia and"
+    },
+    {
+      "start": 310.0,
+      "end": 317.33,
+      "text": "correct location. Now you insert the introduced needle into the skin and use"
+    },
+    {
+      "start": 317.33,
+      "end": 319.87,
+      "text": "ultrasound guidance to place the needle tip into the internal"
+    },
+    {
+      "start": 320.03,
+      "end": 323.79,
+      "text": "regular vein. Here is an example of advancing your needle into the internal"
+    },
+    {
+      "start": 323.79,
+      "end": 328.64,
+      "text": "regular vein, which is the center of the image seen on the screen on this ultrasound image."
+    },
+    {
+      "start": 330.0,
+      "end": 333.34,
+      "text": "The third time you're advancing your needle, you're drawing back on the syringe."
+    },
+    {
+      "start": 338.32,
+      "end": 339.76,
+      "text": "Here we can see the needle progressing."
+    },
+    {
+      "start": 340.0,
+      "end": 349.91,
+      "text": "It's going on top of the vein and then progressively into the vein. Now you can see the needle that is centered in the sense"
+    },
+    {
+      "start": 350.0,
+      "end": 351.52,
+      "text": "of the internal drug you're being."
+    },
+    {
+      "start": 358.85,
+      "end": 359.97,
+      "text": "Once you've visualise the needle into the..."
+    },
+    {
+      "start": 360.0,
+      "end": 365.41,
+      "text": "center of the ij, you should also get a flash of dark red Venus blood in your syringe."
+    },
+    {
+      "start": 365.94,
+      "end": 369.18,
+      "text": "In a romantic and model, Venus blood is the color blue as seen here."
+    },
+    {
+      "start": 371.44,
+      "end": 376.34,
+      "text": "Once you're in the ij and have got blotter on your syringe, gently place your thumb probe"
+    },
+    {
+      "start": 376.34,
+      "end": 379.96,
+      "text": "down and use the hand I was holding your thumb probe to grab the"
+    },
+    {
+      "start": 380.0,
+      "end": 384.72,
+      "text": "needle where it connects to the syringe and carefully untoes the syringe from the needle."
+    },
+    {
+      "start": 385.52,
+      "end": 389.84,
+      "text": "Take great care to keep the needle perfectly in place as it is easy in this step."
+    },
+    {
+      "start": 390.0,
+      "end": 394.35,
+      "text": "accidentally move the needle deeper or more superficial and lose your spot in the ij."
+    },
+    {
+      "start": 395.32,
+      "end": 399.7,
+      "text": "Next, you're going to take your guide wire and pass it through the needle as you can see in the video here."
+    },
+    {
+      "start": 400.83,
+      "end": 400.97,
+      "text": "I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry"
+    },
+    {
+      "start": 420.83,
+      "end": 425.67,
+      "text": "Once your guide wire is about 20 cm deep, as indicated by two black tick marks on the wire,"
+    },
+    {
+      "start": 426.52,
+      "end": 428.44,
+      "text": "you can now remove the needle as seen here."
+    },
+    {
+      "start": 429.7,
+      "end": 429.96,
+      "text": "Remember..."
+    },
+    {
+      "start": 430.0,
+      "end": 431.92,
+      "text": "Remember, never let go of your guide wire."
+    },
+    {
+      "start": 432.5,
+      "end": 436.54,
+      "text": "One hand should always be holding the guide wire at all times as it is refloating in the"
+    },
+    {
+      "start": 436.54,
+      "end": 439.38,
+      "text": "patient's assulature and you do not want to lose sight of it."
+    },
+    {
+      "start": 442.98,
+      "end": 446.46,
+      "text": "This can be difficult and somewhat awkward as the guide wire that is hanging out from"
+    },
+    {
+      "start": 446.46,
+      "end": 447.6,
+      "text": "the skin is very long."
+    },
+    {
+      "start": 448.59,
+      "end": 449.97,
+      "text": "Above is an example of how to-"
+    },
+    {
+      "start": 450.32,
+      "end": 452.46,
+      "text": "hold the guide wire so that you can maintain a still feel,"
+    },
+    {
+      "start": 452.82,
+      "end": 455.06,
+      "text": "while also keep it in hand on the wire."
+    },
+    {
+      "start": 457.67,
+      "end": 459.89,
+      "text": "This entire technique of using an introducer needle."
+    },
+    {
+      "start": 460.0,
+      "end": 464.68,
+      "text": "and then a guide wire is called a cell dinger technique. This is used in many"
+    },
+    {
+      "start": 464.68,
+      "end": 469.2,
+      "text": "other procedures in emergency medicine such as arterial lines and pixel chest"
+    },
+    {
+      "start": 469.2,
+      "end": 469.5,
+      "text": "tubes."
+    },
+    {
+      "start": 470.32,
+      "end": 475.38,
+      "text": "This wire is now essentially a placeholder that will guide your CBC into the correct location,"
+    },
+    {
+      "start": 476.08,
+      "end": 478.22,
+      "text": "aka the integral jugular in this case."
+    },
+    {
+      "start": 481.41,
+      "end": 484.53,
+      "text": "At this point, you want to confirm again with ultrasound that your guy wire is in the"
+    },
+    {
+      "start": 484.53,
+      "end": 486.13,
+      "text": "iJ and not the carotter artery."
+    },
+    {
+      "start": 486.49,
+      "end": 489.33,
+      "text": "You do this by looking at both the short and the long axis."
+    },
+    {
+      "start": 490.26,
+      "end": 494.26,
+      "text": "In the image shown here, you can see that the guide wire is in the center of the"
+    },
+    {
+      "start": 494.26,
+      "end": 497.48,
+      "text": "aluminum of the ij as shown in the short axis."
+    },
+    {
+      "start": 499.31,
+      "end": 499.97,
+      "text": "This image shown"
+    },
+    {
+      "start": 500.0,
+      "end": 507.04,
+      "text": "the wire in the ij in the long axis. Ideally, you want to see that both the ij and the"
+    },
+    {
+      "start": 507.04,
+      "end": 509.9,
+      "text": "right already on the ultrasound image to show that the wires"
+    },
+    {
+      "start": 510.03,
+      "end": 517.7,
+      "text": "the ij and not the ordering. If you have difficulty confirming that the guide wires in the vein and"
+    },
+    {
+      "start": 517.7,
+      "end": 519.89,
+      "text": "not the ordering, you can use this clear."
+    },
+    {
+      "start": 520.0,
+      "end": 525.51,
+      "text": "tubing that is in each of the central Venus catheter kits. One end attaches to"
+    },
+    {
+      "start": 525.51,
+      "end": 529.13,
+      "text": "your needle and the other end you'll hold up in the air as you can see here."
+    },
+    {
+      "start": 530.45,
+      "end": 534.11,
+      "text": "If the needle tip is in the artery, you will see pulsating blood filling the tubing set."
+    },
+    {
+      "start": 536.99,
+      "end": 539.67,
+      "text": "In order to get the central venous catheter through the skin."
+    },
+    {
+      "start": 540.42,
+      "end": 543.12,
+      "text": "and subcute tissue, you must now dilate the skin."
+    },
+    {
+      "start": 544.38,
+      "end": 547.1,
+      "text": "This is done on making a neck in the skin by using a scalpel."
+    },
+    {
+      "start": 548.25,
+      "end": 549.91,
+      "text": "Hold the sharp portion away from the guide."
+    },
+    {
+      "start": 550.0,
+      "end": 556.06,
+      "text": "and then make a naked skin. Subsequently, place the blue dilator over the"
+    },
+    {
+      "start": 556.06,
+      "end": 559.98,
+      "text": "guide wire and into the subcutaneous skin. In terms of how the"
+    },
+    {
+      "start": 560.0,
+      "end": 565.34,
+      "text": "to dilate, usually answering the skin until about half of the dilators remaining is adequate."
+    },
+    {
+      "start": 566.31,
+      "end": 569.9,
+      "text": "The dilator is then removed and carefully the guy to wire"
+    },
+    {
+      "start": 570.0,
+      "end": 579.9,
+      "text": "is kept in place at all times. Now, you're ready to place your CVC over your wire and into"
+    },
+    {
+      "start": 580.0,
+      "end": 584.84,
+      "text": "the internal jugular. Remember earlier during our setup that we kept the brown port open."
+    },
+    {
+      "start": 585.62,
+      "end": 589.98,
+      "text": "You got a while Alexa from the brown port and you will continue holding in from there as"
+    },
+    {
+      "start": 590.0,
+      "end": 593.11,
+      "text": "you guide the central line through the skin and into place."
+    },
+    {
+      "start": 617.23,
+      "end": 619.69,
+      "text": "The depth that you insert to the central line depends on the location."
+    },
+    {
+      "start": 620.64,
+      "end": 622.56,
+      "text": "Once your central line is placed at the correct depth,"
+    },
+    {
+      "start": 623.39,
+      "end": 625.11,
+      "text": "you will then remove the guide wire completely."
+    },
+    {
+      "start": 626.25,
+      "end": 627.37,
+      "text": "Using sterile flushes,"
+    },
+    {
+      "start": 627.47,
+      "end": 629.43,
+      "text": "you will flush and draw back for blood and return"
+    },
+    {
+      "start": 629.43,
+      "end": 629.97,
+      "text": "on all three."
+    },
+    {
+      "start": 630.0,
+      "end": 634.96,
+      "text": "reports. Finally, you will secure the line in place using sutra and sterile dressing"
+    },
+    {
+      "start": 634.96,
+      "end": 639.9,
+      "text": "and order your post procedure chest x-ray. As you can see in the"
+    },
+    {
+      "start": 640.0,
+      "end": 644.42,
+      "text": "here. If you're placing the line on the right ij, you should put it to depth of 15"
+    },
+    {
+      "start": 644.42,
+      "end": 649.97,
+      "text": "centimeters for the left ij18, for the left subclavian 17, and for the right subclavian 17."
+    },
+    {
+      "start": 650.0,
+      "end": 650.72,
+      "text": "Maybe in 14."
+    },
+    {
+      "start": 654.89,
+      "end": 657.73,
+      "text": "Post-procedure chest x-ray will look something like this."
+    },
+    {
+      "start": 658.74,
+      "end": 659.84,
+      "text": "You can see the tip of the graphic."
+    },
+    {
+      "start": 660.0,
+      "end": 664.84,
+      "text": "terminate in the SVC or the Kivo-etral junction. If the catheter was"
+    },
+    {
+      "start": 664.84,
+      "end": 668.56,
+      "text": "extra in place in the artery, you would see across midline and be entering to the"
+    },
+    {
+      "start": 668.56,
+      "end": 669.98,
+      "text": "that we order the P."
+    },
+    {
+      "start": 670.0,
+      "end": 678.21,
+      "text": "left side in the chest x-ray. Once you have confirmed correct placement with chest x-ray,"
+    },
+    {
+      "start": 678.66,
+      "end": 679.96,
+      "text": "your central line is now ready to be..."
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "understanding": "Appendix scanning tutorial pairing an abdominal probe-position diagram with annotated transverse and longitudinal ultrasound examples.",
+  "native_opened": [
+    210,
+    290,
+    320,
+    325,
+    330,
+    331,
+    332,
+    333,
+    334,
+    335
+  ],
+  "tasks": [
+    {
+      "qa_type": "current_observation",
+      "query_time": 290,
+      "answer_time": 290,
+      "checkpoints": [],
+      "question": "In this transverse image, where is the marked appendix relative to the two marked iliac vessels?",
+      "reference_answer": "It is shallower and farther to the right in the image.",
+      "visual_support": "The appendix arrow points to the mid-right target while the two vessel arrowheads lie deeper at left.",
+      "query_prefix_check": "All three arrowheads are visible.",
+      "answer_prefix_check": "Their vertical and horizontal offsets are readable in the full frame.",
+      "shortcut_risk": "Moderate. Labels identify structures but the relative placement must be read from the image.",
+      "task_id": "s3_remaining79_ODF8ZLr_52s_01",
+      "video_id": "ODF8ZLr_52s",
+      "split": "train",
+      "language": "en",
+      "source_video": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/ODF8ZLr_52s.mp4",
+      "stage3_value": "medium",
+      "visual_evidence": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/ODF8ZLr_52s/290.jpg",
+          "checkpoint": 290.0,
+          "source_pts_seconds": 289.922967,
+          "resolution": [
+            1920,
+            1080
+          ]
+        }
+      ],
+      "asr_support_segments": [],
+      "query_decision": "ANSWER",
+      "answer_decision": "ANSWER",
+      "review_status": "accepted_targeted_native_frame_self_review",
+      "student_input_visibility": "not_checked"
+    },
+    {
+      "qa_type": "temporal_comparison",
+      "query_time": 330,
+      "answer_time": 331,
+      "checkpoints": [],
+      "question": "After the probe turns, how does the appearance of the marked appendix change compared with this view?",
+      "reference_answer": "The compact oval seen here becomes a longer dark profile running across the image.",
+      "visual_support": "The annotation points to a compact profile at 330 and a horizontally extended profile at 331.",
+      "query_prefix_check": "The rotation instruction is present, but the post-rotation profile is not visible.",
+      "answer_prefix_check": "The longitudinal image and changed probe orientation are visible by 331.",
+      "shortcut_risk": "Moderate. The plane name cues elongation. The answer also requires the visible direction.",
+      "task_id": "s3_remaining79_ODF8ZLr_52s_02",
+      "video_id": "ODF8ZLr_52s",
+      "split": "train",
+      "language": "en",
+      "source_video": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/ODF8ZLr_52s.mp4",
+      "stage3_value": "medium",
+      "visual_evidence": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/ODF8ZLr_52s/330.jpg",
+          "checkpoint": 330.0,
+          "source_pts_seconds": 329.9296,
+          "resolution": [
+            1920,
+            1080
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/ODF8ZLr_52s/331.jpg",
+          "checkpoint": 331.0,
+          "source_pts_seconds": 330.9306,
+          "resolution": [
+            1920,
+            1080
+          ]
+        }
+      ],
+      "asr_support_segments": [],
+      "query_decision": "WAIT",
+      "answer_decision": "ANSWER",
+      "review_status": "accepted_targeted_native_frame_self_review",
+      "student_input_visibility": "not_checked"
+    },
+    {
+      "qa_type": "history_recall",
+      "query_time": 335,
+      "answer_time": 335,
+      "checkpoints": [
+        210
+      ],
+      "question": "Before the appendix was marked, what did the bright border look like in the earlier cecum example?",
+      "reference_answer": "It had an irregular bright border that dipped and rose across the center-right of the image.",
+      "visual_support": "The labeled cecum frame shows a wavy hyperechoic boundary, absent from the current longitudinal illustration.",
+      "query_prefix_check": "The earlier labeled cecum example is identifiable in the preceding video.",
+      "answer_prefix_check": "The contour is visible in the referenced earlier frame.",
+      "shortcut_risk": "Low. The organ name alone does not specify the contour.",
+      "task_id": "s3_remaining79_ODF8ZLr_52s_03",
+      "video_id": "ODF8ZLr_52s",
+      "split": "train",
+      "language": "en",
+      "source_video": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/ODF8ZLr_52s.mp4",
+      "stage3_value": "medium",
+      "visual_evidence": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/ODF8ZLr_52s/210.jpg",
+          "checkpoint": 210.0,
+          "source_pts_seconds": 209.943067,
+          "resolution": [
+            1920,
+            1080
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/ODF8ZLr_52s/335.jpg",
+          "checkpoint": 335.0,
+          "source_pts_seconds": 334.9346,
+          "resolution": [
+            1920,
+            1080
+          ]
+        }
+      ],
+      "asr_support_segments": [],
+      "query_decision": "ANSWER",
+      "answer_decision": "ANSWER",
+      "review_status": "accepted_targeted_native_frame_self_review",
+      "student_input_visibility": "not_checked"
+    }
+  ],
+  "video_id": "ODF8ZLr_52s",
+  "review_scope": "Same-assistant review; sampled timeline, original-size key frames, and existing time-indexed ASR when available. No continuous replay or direct audio claim."
+}

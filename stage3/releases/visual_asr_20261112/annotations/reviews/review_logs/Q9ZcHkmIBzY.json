@@ -1,0 +1,74 @@
+{
+  "video_id": "Q9ZcHkmIBzY",
+  "reviewer": "stage3_b",
+  "review_scope": "Question-led review by Agent B of Agent A draft; not blind. Native full-frame sampled checkpoints and available time-indexed ASR; no continuous replay or direct listening claim.",
+  "reviewer_native_opened": [
+    390,
+    466,
+    467,
+    467.25,
+    467.5,
+    467.75,
+    468,
+    630,
+    670,
+    950,
+    1020,
+    1020.25,
+    1020.5,
+    1020.75,
+    1021,
+    1070,
+    1342,
+    1343,
+    1344,
+    1345,
+    1346,
+    1346.25,
+    1346.5,
+    1346.75,
+    1347,
+    1347.25,
+    1347.5,
+    1347.75,
+    1348
+  ],
+  "tasks": [
+    {
+      "task_index": 1,
+      "findings": "Confirmed rounded versus long outline; labels may allow answer guessing, explicitly recorded.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 2,
+      "findings": "Moved468 to467.5 after467.25 negative.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 3,
+      "findings": "Replaced analogy-giveaway historical question with specific lower-left alternative-diagram geometry at670; answers visually confirmed, no vessel identity from colour.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 4,
+      "findings": "Kept1021; preceding1020.75 still reverberation slide. Exact side-shadow relationship comes from next sonogram, not physiological development.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 5,
+      "findings": "Confirmed dark shadow upper and bright enhancement lower; explicit slide-text shortcut retained as risk, no claim of text ablation.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 6,
+      "findings": "Moved1348 to1347.25: line already horizontal through vessel while hand remains below; earlier adjustment is oblique.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    }
+  ]
+}

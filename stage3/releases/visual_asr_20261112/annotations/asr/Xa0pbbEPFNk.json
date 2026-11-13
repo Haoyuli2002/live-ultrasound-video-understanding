@@ -1,0 +1,598 @@
+{
+  "video_id": "Xa0pbbEPFNk",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/Xa0pbbEPFNk/asr.txt",
+  "segments": [
+    {
+      "start": 1.79,
+      "end": 9.88,
+      "text": "The obtrater nerve supplies the medial part of the thigh and"
+    },
+    {
+      "start": 10.06,
+      "end": 13.24,
+      "text": "blockade if it's branches can be very useful in a number of situations."
+    },
+    {
+      "start": 13.76,
+      "end": 17.66,
+      "text": "In this video, we'll discuss the anatomy, sono anatomy, technique, and tips and tricks"
+    },
+    {
+      "start": 17.66,
+      "end": 19.84,
+      "text": "for performing ultrasound guided, obturator nerve."
+    },
+    {
+      "start": 20.03,
+      "end": 24.509999999999998,
+      "text": "The obtreader nervous the branch of the lumbar plexus and originates from the roots of L2,"
+    },
+    {
+      "start": 24.75,
+      "end": 25.39,
+      "text": "2, 3, and 4."
+    },
+    {
+      "start": 25.77,
+      "end": 29.59,
+      "text": "It passes through the substance of the sewage muscle before emerging on the medial side"
+    },
+    {
+      "start": 29.59,
+      "end": 29.97,
+      "text": "of sewage."
+    },
+    {
+      "start": 30.03,
+      "end": 34.87,
+      "text": "It then passes through the obtritor canal into the thigh, splitting as it does into an"
+    },
+    {
+      "start": 34.87,
+      "end": 36.730000000000004,
+      "text": "anterior and posterior branch."
+    },
+    {
+      "start": 37.59,
+      "end": 38.91,
+      "text": "Here's the adductor brevis muscle."
+    },
+    {
+      "start": 39.38,
+      "end": 39.980000000000004,
+      "text": "Now, brevis..."
+    },
+    {
+      "start": 40.0,
+      "end": 45.32,
+      "text": "acts as a splitter. The anterior branch of obtrator travels anteriorly to it and the posterior"
+    },
+    {
+      "start": 45.32,
+      "end": 49.980000000000004,
+      "text": "branch goes well posteriorly. Okay, now we're going to add another muscle. D-"
+    },
+    {
+      "start": 50.03,
+      "end": 54.97,
+      "text": "to brevis is the adductor magnus, the posterior branches sandwiched in the plane between brevis"
+    },
+    {
+      "start": 54.97,
+      "end": 59.83,
+      "text": "and magnus, and then superficial to brevis is the adductor longest, the anterior branches"
+    },
+    {
+      "start": 60.06,
+      "end": 61.44,
+      "text": "sandwiched between these two muscles."
+    },
+    {
+      "start": 61.84,
+      "end": 62.56,
+      "text": "And then for good measure,"
+    },
+    {
+      "start": 62.72,
+      "end": 64.54,
+      "text": "here's pectinias muscle out laterally."
+    },
+    {
+      "start": 64.95,
+      "end": 67.49,
+      "text": "If we put a linear ultrasound probe in the inguinal crease"
+    },
+    {
+      "start": 67.49,
+      "end": 69.37,
+      "text": "and scan medial to the femoral vessels,"
+    },
+    {
+      "start": 69.67,
+      "end": 69.97,
+      "text": "this is..."
+    },
+    {
+      "start": 70.0,
+      "end": 74.78,
+      "text": "what we'd see. We have pectinias laterally with its characteristic chevron shape to its"
+    },
+    {
+      "start": 74.78,
+      "end": 79.49,
+      "text": "medial edge. Then we have a three-layer sandwich medial to that. Dr. Longus?"
+    },
+    {
+      "start": 80.16,
+      "end": 81.56,
+      "text": "Previs and Magnus."
+    },
+    {
+      "start": 81.92,
+      "end": 84.1,
+      "text": "You can see nice, clear, facial planes between them."
+    },
+    {
+      "start": 84.51,
+      "end": 89.56,
+      "text": "A memory aid for remembering the order of the adapter muscles is alabama, a Dr. Longus."
+    },
+    {
+      "start": 90.06,
+      "end": 92.18,
+      "text": "a doctor brevis, a doctor magnus."
+    },
+    {
+      "start": 92.56,
+      "end": 93.66,
+      "text": "Once we've identified the muscles,"
+    },
+    {
+      "start": 93.84,
+      "end": 94.9,
+      "text": "it's easy to find the nerves."
+    },
+    {
+      "start": 95.24,
+      "end": 96.72,
+      "text": "The anterior branches usually found"
+    },
+    {
+      "start": 96.72,
+      "end": 99.52,
+      "text": "the confluence of longest, brevis, and pectinias."
+    },
+    {
+      "start": 99.84,
+      "end": 99.98,
+      "text": "It's..."
+    },
+    {
+      "start": 100.0,
+      "end": 102.76,
+      "text": "should appear as a hyper-echoic structure within that fascial plane."
+    },
+    {
+      "start": 103.2,
+      "end": 106.94,
+      "text": "The posterior branch is typically located in the fascial plane between brevis and"
+    },
+    {
+      "start": 106.94,
+      "end": 107.24,
+      "text": "magnets."
+    },
+    {
+      "start": 107.62,
+      "end": 109.98,
+      "text": "To block these, we'll advance a needle from the lateral side."
+    },
+    {
+      "start": 110.1,
+      "end": 112.18,
+      "text": "and deposit local in each of these planes."
+    },
+    {
+      "start": 112.63,
+      "end": 114.81,
+      "text": "The obturator nerve innervates some medial femur,"
+    },
+    {
+      "start": 114.89,
+      "end": 117.25,
+      "text": "including the medial part of the femoral head and hip joint."
+    },
+    {
+      "start": 117.55,
+      "end": 119.43,
+      "text": "Because of that, it's been promoted as a good block"
+    },
+    {
+      "start": 119.43,
+      "end": 119.97,
+      "text": "for pain-roll-"
+    },
+    {
+      "start": 120.0,
+      "end": 123.22,
+      "text": "following femoral neck fracture. There's also a small part of the"
+    },
+    {
+      "start": 123.22,
+      "end": 127.26,
+      "text": "ischium near the obtrator for ramen that's supplied by this nerve. As for myotomes,"
+    },
+    {
+      "start": 127.5,
+      "end": 129.62,
+      "text": "the obtrator innervates the three-adductor muscles"
+    },
+    {
+      "start": 130.03,
+      "end": 132.39,
+      "text": "chrysalis, and sometimes a pectinus muscle."
+    },
+    {
+      "start": 132.63,
+      "end": 134.47,
+      "text": "Essentially, the medial compartment of the thigh."
+    },
+    {
+      "start": 134.94,
+      "end": 136.84,
+      "text": "Now, the optrator doesn't supply a lot of skin."
+    },
+    {
+      "start": 137.16,
+      "end": 139.28,
+      "text": "If anything, it's a medial portion of the thigh"
+    },
+    {
+      "start": 139.28,
+      "end": 139.98,
+      "text": "just above the..."
+    },
+    {
+      "start": 140.0,
+      "end": 144.6,
+      "text": "knee, but this seems to be completely absent in 50% of people, so it's not terribly relevant"
+    },
+    {
+      "start": 144.6,
+      "end": 144.96,
+      "text": "clinically."
+    },
+    {
+      "start": 145.6,
+      "end": 149.1,
+      "text": "Alright, given this picture, what might we use the Optrator Nerve Block for?"
+    },
+    {
+      "start": 149.1,
+      "end": 149.98,
+      "text": "Well, the f***"
+    },
+    {
+      "start": 150.03,
+      "end": 155.23,
+      "text": "Versus the knockout of the thigh, a Dr. Muscle group during bladder tumor resection under spinal anesthesia."
+    },
+    {
+      "start": 155.84,
+      "end": 159.98,
+      "text": "The obterator nerve runs immediately adjacent to the bladder, an electrical caudery from ins-"
+    },
+    {
+      "start": 160.0,
+      "end": 163.02,
+      "text": "can stimulate this nerve and cause the adductor muscles to fire."
+    },
+    {
+      "start": 163.76,
+      "end": 167.72,
+      "text": "The resulting jerky motion increases the risk of the instrument perforating the bladder wall."
+    },
+    {
+      "start": 168.18,
+      "end": 169.96,
+      "text": "That's a big deal because of the potential..."
+    },
+    {
+      "start": 170.0,
+      "end": 171.64,
+      "text": "seeding tumor within the abdomen."
+    },
+    {
+      "start": 172.02,
+      "end": 174.68,
+      "text": "In fact, multiple studies in two systematic reviews"
+    },
+    {
+      "start": 174.68,
+      "end": 176.98,
+      "text": "have found that when spinal anesthesia is used,"
+    },
+    {
+      "start": 177.14,
+      "end": 179.94,
+      "text": "the addition of obtrator block reduces perforation rates."
+    },
+    {
+      "start": 180.1,
+      "end": 184.94,
+      "text": "hospital length of stay and cancer recurrence rates at 12 months. We use this block frequently"
+    },
+    {
+      "start": 184.94,
+      "end": 189.74,
+      "text": "for anesthesia and analgesia for above knee amputation. While there's little skin coverage expected"
+    },
+    {
+      "start": 190.0,
+      "end": 191.82,
+      "text": "there will be trauma to muscle and femur"
+    },
+    {
+      "start": 191.82,
+      "end": 193.32,
+      "text": "that is innervated by the obtainer."
+    },
+    {
+      "start": 193.68,
+      "end": 195.54,
+      "text": "We'll combine this with femoral, sciatic,"
+    },
+    {
+      "start": 195.72,
+      "end": 197.36,
+      "text": "and lateral femoral-cutaneous nerve blocks"
+    },
+    {
+      "start": 197.36,
+      "end": 199.5,
+      "text": "to provide complete surgical anesthesia"
+    },
+    {
+      "start": 199.5,
+      "end": 199.98,
+      "text": "in these..."
+    },
+    {
+      "start": 200.0,
+      "end": 201.3,
+      "text": "often quite sick patients."
+    },
+    {
+      "start": 202.05,
+      "end": 203.75,
+      "text": "Obtrater block is also had good success"
+    },
+    {
+      "start": 203.75,
+      "end": 205.37,
+      "text": "when the ACL repair is being done"
+    },
+    {
+      "start": 205.37,
+      "end": 206.81,
+      "text": "with a gracilis autographed."
+    },
+    {
+      "start": 207.01,
+      "end": 208.79,
+      "text": "If it's a hamstrings autographed on the other hand,"
+    },
+    {
+      "start": 208.93,
+      "end": 209.91,
+      "text": "it doesn't seem to help much."
+    },
+    {
+      "start": 210.03,
+      "end": 214.69,
+      "text": "And then another big use for obtrater block or even ablation is for the relief of spastic"
+    },
+    {
+      "start": 214.69,
+      "end": 218.21,
+      "text": "at ductile muscles in spinal cord injury, stroke and cerebral palsy."
+    },
+    {
+      "start": 218.47,
+      "end": 219.87,
+      "text": "Relaxation of these muscles allows"
+    },
+    {
+      "start": 220.0,
+      "end": 223.36,
+      "text": "for better perineal hygiene and reduces complication rates in these patients."
+    },
+    {
+      "start": 224.14,
+      "end": 225.2,
+      "text": "All right, let's get to it."
+    },
+    {
+      "start": 225.42,
+      "end": 228.0,
+      "text": "We'll position the patient's supine with the lower limb frog leg."
+    },
+    {
+      "start": 228.18,
+      "end": 229.98,
+      "text": "This will allow us to get the probe into the..."
+    },
+    {
+      "start": 230.54,
+      "end": 236.16,
+      "text": "The needle will advance from the lateral aspect in most cases, but you can do this out of plane for those so inclined."
+    },
+    {
+      "start": 238.37,
+      "end": 239.79,
+      "text": "We start with the femoral artery and vein"
+    },
+    {
+      "start": 240.0,
+      "end": 241.48,
+      "text": "and then slide the probe immediately."
+    },
+    {
+      "start": 241.99,
+      "end": 243.81,
+      "text": "The little tilting back and forth helps us find"
+    },
+    {
+      "start": 243.81,
+      "end": 246.47,
+      "text": "the three adductors, pectinias, as well as the two nerves."
+    },
+    {
+      "start": 248.59,
+      "end": 249.97,
+      "text": "It can care not to hit the femoral vein."
+    },
+    {
+      "start": 250.0,
+      "end": 254.32,
+      "text": "The needle enters from lateral and is advanced to the posterior branch first, so the injectate"
+    },
+    {
+      "start": 254.32,
+      "end": 256.6,
+      "text": "won't distort the visualization of the other nerve."
+    },
+    {
+      "start": 257.64,
+      "end": 259.9,
+      "text": "You can see the plane opening up nicely here with 5."
+    },
+    {
+      "start": 260.0,
+      "end": 268.51,
+      "text": "mills of local. We'll then withdraw and reorient on a more shallow glide path so we're aiming"
+    },
+    {
+      "start": 271.73,
+      "end": 276.07,
+      "text": "advance and click into the plane where the anterior branch lives and deposit another"
+    },
+    {
+      "start": 276.07,
+      "end": 277.11,
+      "text": "five mills here."
+    },
+    {
+      "start": 282.27,
+      "end": 283.69,
+      "text": "And that's also opening up nicely."
+    },
+    {
+      "start": 286.65,
+      "end": 289.97,
+      "text": "Finally, we scan back and forth a little at the end to celebrate and confirm where..."
+    },
+    {
+      "start": 290.16,
+      "end": 295.63,
+      "text": "happy with that spread. The dose will use is between 5 and 7 mils. It doesn't take much"
+    },
+    {
+      "start": 295.63,
+      "end": 299.57,
+      "text": "to block these small nerves. Here are some obturator tips and tricks. First,"
+    },
+    {
+      "start": 300.0,
+      "end": 304.1,
+      "text": "This is a facial plane block, like all blocks really, but the point is that sometimes a"
+    },
+    {
+      "start": 304.1,
+      "end": 308.54,
+      "text": "nerve visualization is poor, in which case you can reliably locate the correct plane and"
+    },
+    {
+      "start": 308.54,
+      "end": 309.3,
+      "text": "deposit the local."
+    },
+    {
+      "start": 309.7,
+      "end": 309.98,
+      "text": "Nervous to you."
+    },
+    {
+      "start": 310.0,
+      "end": 314.12,
+      "text": "Relation is also used commonly to confirm that the smudge you see on the screen is in"
+    },
+    {
+      "start": 314.12,
+      "end": 314.84,
+      "text": "fact the nerve."
+    },
+    {
+      "start": 315.38,
+      "end": 318.88,
+      "text": "Second, there are some decently sized vessels that run in these facial planes."
+    },
+    {
+      "start": 319.16,
+      "end": 319.98,
+      "text": "People have reported..."
+    },
+    {
+      "start": 320.0,
+      "end": 323.8,
+      "text": "clinically significant hematomas after obtrator block from inadvertent puncture."
+    },
+    {
+      "start": 324.12,
+      "end": 326.66,
+      "text": "So be careful and use Doppler to plan your needle path."
+    },
+    {
+      "start": 327.23,
+      "end": 329.93,
+      "text": "Finally, we used to use this extensively for hip and knee-indication."
+    },
+    {
+      "start": 330.0,
+      "end": 334.54,
+      "text": "The interior branch sends fibres to the hip and the posterior to the knee, and it was"
+    },
+    {
+      "start": 334.54,
+      "end": 334.92,
+      "text": "effective."
+    },
+    {
+      "start": 335.24,
+      "end": 338.32,
+      "text": "But we have more targeted blocks these days that are simply more effective."
+    },
+    {
+      "start": 338.87,
+      "end": 339.81,
+      "text": "Hip surgery, for example."
+    },
+    {
+      "start": 340.19,
+      "end": 342.63,
+      "text": "the pang or fascily acablocks are hard to beat,"
+    },
+    {
+      "start": 342.95,
+      "end": 344.05,
+      "text": "and diddo with the inductor,"
+    },
+    {
+      "start": 344.21,
+      "end": 345.59,
+      "text": "eye pack, and geniculars for knee."
+    }
+  ]
+}

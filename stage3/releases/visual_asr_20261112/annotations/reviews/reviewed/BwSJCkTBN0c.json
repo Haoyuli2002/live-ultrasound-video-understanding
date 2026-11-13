@@ -1,0 +1,145 @@
+{
+  "understanding": "Shoulder sonography tutorial with synchronized probe and ultrasound views during positioning, followed by saved examples.",
+  "native_opened": [
+    225,
+    226,
+    227,
+    228,
+    270,
+    450
+  ],
+  "tasks": [
+    {
+      "qa_type": "temporal_comparison",
+      "query_time": 225,
+      "answer_time": 228,
+      "checkpoints": [
+        226,
+        227
+      ],
+      "question": "As the patient starts moving from the first shoulder position to the second, how does the bright bony contour change in the ultrasound view?",
+      "reference_answer": "Its highest point moves to the right, and the bright line approaching it from the left becomes longer and less steep.",
+      "visual_support": "At 225\u2013227 the contour peaks closer to the center with a steep left flank; at 228 the peak is farther right and the approach is longer.",
+      "query_prefix_check": "The current scan shows the starting contour. The direction and shape of the later change are not established in this prefix.",
+      "answer_prefix_check": "The contour change is clear at 228, where the external view also shows the forearm starting to move outward.",
+      "shortcut_risk": "Moderate. The position caption gives the phase but not the contour change.",
+      "task_id": "s3_remaining79_BwSJCkTBN0c_01",
+      "video_id": "BwSJCkTBN0c",
+      "split": "train",
+      "language": "en",
+      "source_video": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/BwSJCkTBN0c.mp4",
+      "stage3_value": "medium",
+      "visual_evidence": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/BwSJCkTBN0c/225.jpg",
+          "checkpoint": 225.0,
+          "source_pts_seconds": 224.9247,
+          "resolution": [
+            3840,
+            2026
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/BwSJCkTBN0c/226.jpg",
+          "checkpoint": 226.0,
+          "source_pts_seconds": 225.9257,
+          "resolution": [
+            3840,
+            2026
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/BwSJCkTBN0c/227.jpg",
+          "checkpoint": 227.0,
+          "source_pts_seconds": 226.9267,
+          "resolution": [
+            3840,
+            2026
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/BwSJCkTBN0c/228.jpg",
+          "checkpoint": 228.0,
+          "source_pts_seconds": 227.9277,
+          "resolution": [
+            3840,
+            2026
+          ]
+        }
+      ],
+      "asr_support_segments": [
+        {
+          "start": 212.62,
+          "end": 217.82,
+          "text": "Turn back through 90 degrees to the axial plane and slide crannily up the bisipidle groove."
+        },
+        {
+          "start": 218.87,
+          "end": 219.97,
+          "text": "The bisipidle groove is..."
+        },
+        {
+          "start": 220.06,
+          "end": 221.96,
+          "text": "covered by the transverse humoral ligament,"
+        },
+        {
+          "start": 222.22,
+          "end": 224.78,
+          "text": "which received some fibres from the sub scapularis."
+        }
+      ],
+      "query_decision": "WAIT",
+      "answer_decision": "ANSWER",
+      "review_status": "accepted_targeted_native_frame_self_review",
+      "student_input_visibility": "not_checked"
+    },
+    {
+      "qa_type": "current_observation",
+      "query_time": 270,
+      "answer_time": 270,
+      "checkpoints": [],
+      "question": "In this axial subscapularis view, where are the finer bright tissue bands relative to the deeper bright bony arc?",
+      "reference_answer": "The finer bands are above, or superficial to, the deeper bright arc.",
+      "visual_support": "Several finer echoes lie between the skin surface and the deeper strong arc.",
+      "query_prefix_check": "The labeled view and the two echo depths are already available.",
+      "answer_prefix_check": "The relative depth is visible in the ultrasound panel.",
+      "shortcut_risk": "Moderate. The narration and caption identify the scan, while the depth relation comes from the image.",
+      "task_id": "s3_remaining79_BwSJCkTBN0c_02",
+      "video_id": "BwSJCkTBN0c",
+      "split": "train",
+      "language": "en",
+      "source_video": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/BwSJCkTBN0c.mp4",
+      "stage3_value": "medium",
+      "visual_evidence": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/BwSJCkTBN0c/270.jpg",
+          "checkpoint": 270.0,
+          "source_pts_seconds": 269.936333,
+          "resolution": [
+            3840,
+            2026
+          ]
+        }
+      ],
+      "asr_support_segments": [
+        {
+          "start": 260.0,
+          "end": 265.58,
+          "text": "plane. There are multiple discrete bundles which represent the hyperecoic muscle fibers"
+        },
+        {
+          "start": 265.58,
+          "end": 269.92,
+          "text": "into digitating with the hyperecoic tender. This is a normal"
+        }
+      ],
+      "query_decision": "ANSWER",
+      "answer_decision": "ANSWER",
+      "review_status": "accepted_targeted_native_frame_self_review",
+      "student_input_visibility": "not_checked"
+    }
+  ],
+  "video_id": "BwSJCkTBN0c",
+  "review_scope": "Same-assistant review; sampled timeline, original-size key frames, and existing time-indexed ASR when available. No continuous replay or direct audio claim."
+}

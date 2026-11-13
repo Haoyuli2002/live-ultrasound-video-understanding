@@ -1,0 +1,113 @@
+{
+  "video_id": "v-Wb_N98h1Q",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/v-Wb_N98h1Q/asr.txt",
+  "segments": [
+    {
+      "start": 3.16,
+      "end": 8.72,
+      "text": "The popliteal approach to the sciatic nerve allows for a block which is ideal for any surgery of"
+    },
+    {
+      "start": 8.72,
+      "end": 14.6,
+      "text": "the foot. Note that the medial malleolus and the inside of the lower leg is not covered, so if"
+    },
+    {
+      "start": 14.6,
+      "end": 20.66,
+      "text": "the surgical field extends here or if a tourniquet is planned, it's suitable to combine it with a"
+    },
+    {
+      "start": 20.66,
+      "end": 28.72,
+      "text": "saffonus or a femoral nerve block. The block can be performed in prone, supine, or as pictured here"
+    },
+    {
+      "start": 28.72,
+      "end": 33.77,
+      "text": "in the lateral position. In this picture of the patient's right leg, we've"
+    },
+    {
+      "start": 33.77,
+      "end": 39.07,
+      "text": "superimposed the sciatic nerve. Just proximal to the knee, there's a bifurcation"
+    },
+    {
+      "start": 39.07,
+      "end": 44.53,
+      "text": "where it splits into a lateral perennial and a medial tibial branch. This is"
+    },
+    {
+      "start": 44.53,
+      "end": 49.72,
+      "text": "where we will place the block. Place the probe in the popliteal fossa, just lateral"
+    },
+    {
+      "start": 49.72,
+      "end": 55.84,
+      "text": "to the midline. Slide the transducer crannily in order to identify the hypricoic"
+    },
+    {
+      "start": 55.84,
+      "end": 61.46,
+      "text": "tibial nerve, hair marked in purple. The nerve becomes easier to identify as we approach the"
+    },
+    {
+      "start": 61.46,
+      "end": 67.71,
+      "text": "point where it merges with a perneal nerve, also marked in purple. An additional quick scan"
+    },
+    {
+      "start": 67.71,
+      "end": 74.9,
+      "text": "confirms that we have located the bifurcation of the sciatic nerve, prepped the area with an"
+    },
+    {
+      "start": 74.9,
+      "end": 81.86,
+      "text": "antiseptic solution. Insert the needle a couple of centimeters away from the edge of the probe,"
+    },
+    {
+      "start": 82.4,
+      "end": 88.56,
+      "text": "and inject a small amount of local anaesthetic just under the skin. Try to keep the needle visualised"
+    },
+    {
+      "start": 88.56,
+      "end": 94.44,
+      "text": "in plain as you approach the nerve. When the needle is in position, start"
+    },
+    {
+      "start": 94.44,
+      "end": 100.22,
+      "text": "injecting the local anesthetic. This can be done either continuously or in staggered"
+    },
+    {
+      "start": 100.22,
+      "end": 108.01,
+      "text": "doses. This is a matter of personal preference. Work the needle around"
+    },
+    {
+      "start": 108.01,
+      "end": 123.17,
+      "text": "systematically in order to assure a good spread. Inject a total amount of 30"
+    },
+    {
+      "start": 123.17,
+      "end": 127.83,
+      "text": "milliliters. This is usually enough to make the two branches marked in purple"
+    },
+    {
+      "start": 127.83,
+      "end": 137.56,
+      "text": "appear clearly in a void of local anesthetic marked in green. These are our"
+    },
+    {
+      "start": 137.56,
+      "end": 141.72,
+      "text": "suggestions of local anesthetics to use, but make sure to follow local guidelines."
+    }
+  ]
+}

@@ -1,0 +1,208 @@
+{
+  "video_id": "VL1xLsq8OrA",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/VL1xLsq8OrA/asr.txt",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 4.08,
+      "text": "Hello, and thank you for tuning in. In this video, I show how I obtain central"
+    },
+    {
+      "start": 4.08,
+      "end": 7.98,
+      "text": "venous access. Note that this is my preferred approach and that there are different"
+    },
+    {
+      "start": 7.98,
+      "end": 12.46,
+      "text": "approaches to learn. Generally speaking, one can obtain access while patients are"
+    },
+    {
+      "start": 12.46,
+      "end": 16.6,
+      "text": "under conscious sedation and local anesthesia or on the general anesthesia."
+    },
+    {
+      "start": 17.34,
+      "end": 20.86,
+      "text": "In my cardiac cases, I do so after the patient is under general."
+    },
+    {
+      "start": 21.32,
+      "end": 26.22,
+      "text": "N-A-T-E-E-Pro is in place. Let's go. Before setting up, I precision the patient"
+    },
+    {
+      "start": 26.22,
+      "end": 30.92,
+      "text": "and Trindellumberg with the face turned away from the access side if they can tolerate it."
+    },
+    {
+      "start": 31.02,
+      "end": 37.9,
+      "text": "With ultrasound, I assess the IJ or the internal drugler vein for its depth, size, compressibility,"
+    },
+    {
+      "start": 38.1,
+      "end": 43.62,
+      "text": "and relation to the carotid artery. If no surprises, I prep the neck, and as it dries,"
+    },
+    {
+      "start": 43.98,
+      "end": 51.43,
+      "text": "I carefully open my gown and gloves. I go scrub, I gown, and I glove. Now, there are different"
+    },
+    {
+      "start": 51.43,
+      "end": 57.03,
+      "text": "catheters of variant sizes, some with three lumens, others with two or one lumens with an"
+    },
+    {
+      "start": 57.03,
+      "end": 57.79,
+      "text": "and introduce support."
+    },
+    {
+      "start": 58.09,
+      "end": 60.85,
+      "text": "In my approach for either of them is essentially the same."
+    },
+    {
+      "start": 61.25,
+      "end": 63.09,
+      "text": "Here's a triple-lumen catheter tray."
+    },
+    {
+      "start": 63.57,
+      "end": 66.11,
+      "text": "Like the others, it has items I do not use,"
+    },
+    {
+      "start": 66.37,
+      "end": 68.77,
+      "text": "so I remove them and I organize my tray."
+    },
+    {
+      "start": 69.55,
+      "end": 71.61,
+      "text": "I dock my introducer needle and scalpel"
+    },
+    {
+      "start": 71.61,
+      "end": 72.97,
+      "text": "in the sharps lock and cup."
+    },
+    {
+      "start": 73.67,
+      "end": 76.55,
+      "text": "Load my suture, check the integrity of my wire,"
+    },
+    {
+      "start": 77.09,
+      "end": 78.57,
+      "text": "and I clave and flush my cords."
+    },
+    {
+      "start": 79.65,
+      "end": 81.91,
+      "text": "I then carefully drape the patient"
+    },
+    {
+      "start": 82.5,
+      "end": 84.06,
+      "text": "and cover my ultrasound probe."
+    },
+    {
+      "start": 84.54,
+      "end": 86.48,
+      "text": "Now, the skin is tough to get through,"
+    },
+    {
+      "start": 86.48,
+      "end": 90.14,
+      "text": "so I get through it with my introducer needle and syringe in the steep angle."
+    },
+    {
+      "start": 90.58,
+      "end": 92.94,
+      "text": "And I then advance with negative aspiration."
+    },
+    {
+      "start": 93.5,
+      "end": 96.86,
+      "text": "During this time, I appreciate how easily the vein is compressed."
+    },
+    {
+      "start": 97.44,
+      "end": 102.28,
+      "text": "So when I get a flash, I know the bevel tip is likely to be on the posterior wall of the vein"
+    },
+    {
+      "start": 102.28,
+      "end": 103.88,
+      "text": "and I prove it under ultrasound."
+    },
+    {
+      "start": 104.64,
+      "end": 111.14,
+      "text": "So I then relieve my pressure on the vein so that it pumps up and I place the needle tip in the center of the vessel."
+    },
+    {
+      "start": 111.83,
+      "end": 115.83,
+      "text": "I then gradually and carefully lower my angle under ultrasound."
+    },
+    {
+      "start": 115.83,
+      "end": 121.57,
+      "text": "guidance. No, that as I drop the needle angle, the bevel tips shift centrally towards the chest"
+    },
+    {
+      "start": 121.57,
+      "end": 128.57,
+      "text": "and part. So I fan my ultrasound probe centrally to see the bevel tip throughout and I stop when I"
+    },
+    {
+      "start": 128.57,
+      "end": 134.11,
+      "text": "am as parallel to the vein as possible. I then disconnect the syringe from the needle and advance"
+    },
+    {
+      "start": 134.11,
+      "end": 139.77,
+      "text": "the J-wire down the IJ into the superior of unicave and right atrium and I see it in the"
+    },
+    {
+      "start": 139.77,
+      "end": 145.51,
+      "text": "midisophageal bicable cube on TEE. I then remove the introduced needle over the wire and"
+    },
+    {
+      "start": 145.51,
+      "end": 150.59,
+      "text": "nick the skin and dilate over the wire. I remove the dilator and slide my catheter over"
+    },
+    {
+      "start": 150.59,
+      "end": 155.65,
+      "text": "the wire. I then remove the wire and ensure blood return through my ports. I stitch it"
+    },
+    {
+      "start": 155.65,
+      "end": 161.01,
+      "text": "down, clean, and apply a sterile dressing. Thank you for your time and attention. Please"
+    },
+    {
+      "start": 161.01,
+      "end": 165.59,
+      "text": "like the video, leave a comment if you can, or a question, and share the video where"
+    },
+    {
+      "start": 165.59,
+      "end": 167.79,
+      "text": "you find it appropriate. See you in the OR."
+    }
+  ]
+}

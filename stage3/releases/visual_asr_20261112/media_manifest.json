@@ -1,0 +1,3793 @@
+{
+  "-1i1i9sbjqE": {
+    "video_id": "-1i1i9sbjqE",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/-1i1i9sbjqE.mp4",
+    "duration": 444.498,
+    "native_resolution": [
+      1152,
+      720
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/-1i1i9sbjqE/asr.txt",
+    "asr_segments": 110,
+    "asr_annotation_file": "annotations/asr/-1i1i9sbjqE.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "-2RMojgpkuc": {
+    "video_id": "-2RMojgpkuc",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/-2RMojgpkuc.mp4",
+    "duration": 232.666667,
+    "native_resolution": [
+      1152,
+      720
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/-2RMojgpkuc/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/-2RMojgpkuc/asr.txt",
+    "asr_segments": 28,
+    "asr_annotation_file": "annotations/asr/-2RMojgpkuc.json",
+    "source_dataset": "stage3_av50_20261105"
+  },
+  "-BYuVL4E-cY": {
+    "video_id": "-BYuVL4E-cY",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/-BYuVL4E-cY.mp4",
+    "duration": 456.981,
+    "native_resolution": [
+      854,
+      480
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/-BYuVL4E-cY/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/-BYuVL4E-cY/asr.txt",
+    "asr_segments": 137,
+    "asr_annotation_file": "annotations/asr/-BYuVL4E-cY.json",
+    "source_dataset": "stage3_av_visualfirst_next50_20261110"
+  },
+  "-UDinlF3ha4": {
+    "video_id": "-UDinlF3ha4",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/-UDinlF3ha4.mp4",
+    "duration": 1498.314,
+    "native_resolution": [
+      644,
+      480
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": null,
+    "asr_segments": 0,
+    "asr_annotation_file": null,
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "-X05DgCfQrE": {
+    "video_id": "-X05DgCfQrE",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/-X05DgCfQrE.mp4",
+    "duration": 1098.881,
+    "native_resolution": [
+      1280,
+      720
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/-X05DgCfQrE/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/-X05DgCfQrE/asr.txt",
+    "asr_segments": 180,
+    "asr_annotation_file": "annotations/asr/-X05DgCfQrE.json",
+    "source_dataset": "stage3_av_visualfirst_next50_20261110"
+  },
+  "-X_WsAlfTvc": {
+    "video_id": "-X_WsAlfTvc",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/-X_WsAlfTvc.mp4",
+    "duration": 160.901,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/-X_WsAlfTvc/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/-X_WsAlfTvc/asr.txt",
+    "asr_segments": 37,
+    "asr_annotation_file": "annotations/asr/-X_WsAlfTvc.json",
+    "source_dataset": "stage3_av_next50_20261106"
+  },
+  "-awazvNpICg": {
+    "video_id": "-awazvNpICg",
+    "split": "eval",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/eval_full295/-awazvNpICg.mp4",
+    "duration": 160.31,
+    "native_resolution": [
+      484,
+      360
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/eval/-awazvNpICg/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/eval/-awazvNpICg/asr.txt",
+    "asr_segments": 42,
+    "asr_annotation_file": "annotations/asr/-awazvNpICg.json",
+    "source_dataset": "stage3_av_next50_20261106"
+  },
+  "0C0aontpnxM": {
+    "video_id": "0C0aontpnxM",
+    "split": "eval",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/eval_full295/0C0aontpnxM.mp4",
+    "duration": 1552.509002,
+    "native_resolution": [
+      576,
+      360
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/eval/0C0aontpnxM/asr.txt",
+    "asr_segments": 489,
+    "asr_annotation_file": "annotations/asr/0C0aontpnxM.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "0Cboqf1Qnhc": {
+    "video_id": "0Cboqf1Qnhc",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/0Cboqf1Qnhc.mp4",
+    "duration": 304.521,
+    "native_resolution": [
+      432,
+      320
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/0Cboqf1Qnhc/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/0Cboqf1Qnhc/asr.txt",
+    "asr_segments": 70,
+    "asr_annotation_file": "annotations/asr/0Cboqf1Qnhc.json",
+    "source_dataset": "stage3_av_next50_20261106"
+  },
+  "0WAV2h2N6MY": {
+    "video_id": "0WAV2h2N6MY",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/0WAV2h2N6MY.mp4",
+    "duration": 282.361,
+    "native_resolution": [
+      1912,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/0WAV2h2N6MY/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/0WAV2h2N6MY/asr.txt",
+    "asr_segments": 31,
+    "asr_annotation_file": "annotations/asr/0WAV2h2N6MY.json",
+    "source_dataset": "stage3_av50_20261105"
+  },
+  "0Xc0x0pAoEc": {
+    "video_id": "0Xc0x0pAoEc",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/0Xc0x0pAoEc.mp4",
+    "duration": 748.041,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/0Xc0x0pAoEc/asr.txt",
+    "asr_segments": 183,
+    "asr_annotation_file": "annotations/asr/0Xc0x0pAoEc.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "1BKw6adBPmA": {
+    "video_id": "1BKw6adBPmA",
+    "split": "eval",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/eval_full295/1BKw6adBPmA.mp4",
+    "duration": 2503.227007,
+    "native_resolution": [
+      640,
+      360
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/eval/1BKw6adBPmA/asr.txt",
+    "asr_segments": 773,
+    "asr_annotation_file": "annotations/asr/1BKw6adBPmA.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "1E4NSR6yjMw": {
+    "video_id": "1E4NSR6yjMw",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/1E4NSR6yjMw.mp4",
+    "duration": 1075.649,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/1E4NSR6yjMw/asr.txt",
+    "asr_segments": 319,
+    "asr_annotation_file": "annotations/asr/1E4NSR6yjMw.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "1mkHrVxdGNg": {
+    "video_id": "1mkHrVxdGNg",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/1mkHrVxdGNg.mp4",
+    "duration": 219.281,
+    "native_resolution": [
+      640,
+      480
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/1mkHrVxdGNg/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/1mkHrVxdGNg/asr.txt",
+    "asr_segments": 34,
+    "asr_annotation_file": "annotations/asr/1mkHrVxdGNg.json",
+    "source_dataset": "stage3_av50_20261105"
+  },
+  "21w4kuD0_gA": {
+    "video_id": "21w4kuD0_gA",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/21w4kuD0_gA.mp4",
+    "duration": 319.1188,
+    "native_resolution": [
+      432,
+      320
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/21w4kuD0_gA/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/21w4kuD0_gA/asr.txt",
+    "asr_segments": 71,
+    "asr_annotation_file": "annotations/asr/21w4kuD0_gA.json",
+    "source_dataset": "stage3_av_next50_20261106"
+  },
+  "2EFxV5dpIPo": {
+    "video_id": "2EFxV5dpIPo",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/2EFxV5dpIPo.mp4",
+    "duration": 2627.554,
+    "native_resolution": [
+      1280,
+      720
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/2EFxV5dpIPo/asr.txt",
+    "asr_segments": 796,
+    "asr_annotation_file": "annotations/asr/2EFxV5dpIPo.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "2kABh3bJKHI": {
+    "video_id": "2kABh3bJKHI",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/2kABh3bJKHI.mp4",
+    "duration": 3655.661,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/2kABh3bJKHI/asr.txt",
+    "asr_segments": 1075,
+    "asr_annotation_file": "annotations/asr/2kABh3bJKHI.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "3MBmUFMoH7w": {
+    "video_id": "3MBmUFMoH7w",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/3MBmUFMoH7w.mp4",
+    "duration": 159.041,
+    "native_resolution": [
+      854,
+      470
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/3MBmUFMoH7w/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/3MBmUFMoH7w/asr.txt",
+    "asr_segments": 28,
+    "asr_annotation_file": "annotations/asr/3MBmUFMoH7w.json",
+    "source_dataset": "stage3_av50_20261105"
+  },
+  "3X0o1-V1jtE": {
+    "video_id": "3X0o1-V1jtE",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/3X0o1-V1jtE.mp4",
+    "duration": 268.737,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/3X0o1-V1jtE/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/3X0o1-V1jtE/asr.txt",
+    "asr_segments": 45,
+    "asr_annotation_file": "annotations/asr/3X0o1-V1jtE.json",
+    "source_dataset": "stage3_av50_20261105"
+  },
+  "466cDoLdVZQ": {
+    "video_id": "466cDoLdVZQ",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/466cDoLdVZQ.mp4",
+    "duration": 2067.131733,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/466cDoLdVZQ/asr.txt",
+    "asr_segments": 598,
+    "asr_annotation_file": "annotations/asr/466cDoLdVZQ.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "4Yu-ftQzHZM": {
+    "video_id": "4Yu-ftQzHZM",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/4Yu-ftQzHZM.mp4",
+    "duration": 368.769,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/4Yu-ftQzHZM/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/4Yu-ftQzHZM/asr.txt",
+    "asr_segments": 84,
+    "asr_annotation_file": "annotations/asr/4Yu-ftQzHZM.json",
+    "source_dataset": "stage3_av_next50_20261106"
+  },
+  "4s0V-NMaUdg": {
+    "video_id": "4s0V-NMaUdg",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/4s0V-NMaUdg.mp4",
+    "duration": 543.721,
+    "native_resolution": [
+      854,
+      480
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/4s0V-NMaUdg/asr.txt",
+    "asr_segments": 137,
+    "asr_annotation_file": "annotations/asr/4s0V-NMaUdg.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "57yshzYBvfQ": {
+    "video_id": "57yshzYBvfQ",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/57yshzYBvfQ.mp4",
+    "duration": 660.501,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/57yshzYBvfQ/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/57yshzYBvfQ/asr.txt",
+    "asr_segments": 211,
+    "asr_annotation_file": "annotations/asr/57yshzYBvfQ.json",
+    "source_dataset": "stage3_av_visualfirst_next50_20261110"
+  },
+  "6J2wtC5zOOU": {
+    "video_id": "6J2wtC5zOOU",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/6J2wtC5zOOU.mp4",
+    "duration": 622.521,
+    "native_resolution": [
+      1728,
+      1080
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/6J2wtC5zOOU/asr.txt",
+    "asr_segments": 149,
+    "asr_annotation_file": "annotations/asr/6J2wtC5zOOU.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "6V-aAFVfiJk": {
+    "video_id": "6V-aAFVfiJk",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/6V-aAFVfiJk.mp4",
+    "duration": 322.561,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/6V-aAFVfiJk/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/6V-aAFVfiJk/asr.txt",
+    "asr_segments": 47,
+    "asr_annotation_file": "annotations/asr/6V-aAFVfiJk.json",
+    "source_dataset": "stage3_av_next50_20261106"
+  },
+  "7G56DN38mz8": {
+    "video_id": "7G56DN38mz8",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/7G56DN38mz8.mp4",
+    "duration": 366.241,
+    "native_resolution": [
+      432,
+      320
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/7G56DN38mz8/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/7G56DN38mz8/asr.txt",
+    "asr_segments": 84,
+    "asr_annotation_file": "annotations/asr/7G56DN38mz8.json",
+    "source_dataset": "stage3_av_next50_20261106"
+  },
+  "7Yfe2vOpFmY": {
+    "video_id": "7Yfe2vOpFmY",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/7Yfe2vOpFmY.mp4",
+    "duration": 728.833,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/7Yfe2vOpFmY/asr.txt",
+    "asr_segments": 162,
+    "asr_annotation_file": "annotations/asr/7Yfe2vOpFmY.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "7cQ_3GtvNxo": {
+    "video_id": "7cQ_3GtvNxo",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/7cQ_3GtvNxo.mp4",
+    "duration": 1498.294,
+    "native_resolution": [
+      644,
+      480
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": null,
+    "asr_segments": 0,
+    "asr_annotation_file": null,
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "7zLJdQSOFvM": {
+    "video_id": "7zLJdQSOFvM",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/7zLJdQSOFvM.mp4",
+    "duration": 158.661,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/7zLJdQSOFvM/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/7zLJdQSOFvM/asr.txt",
+    "asr_segments": 46,
+    "asr_annotation_file": "annotations/asr/7zLJdQSOFvM.json",
+    "source_dataset": "stage3_av50_20261105"
+  },
+  "80dG97rGwMo": {
+    "video_id": "80dG97rGwMo",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/80dG97rGwMo.mp4",
+    "duration": 541.901,
+    "native_resolution": [
+      1280,
+      720
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_v3_reconsider_20261110/audio/80dG97rGwMo.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/80dG97rGwMo/asr.txt",
+    "asr_segments": 134,
+    "asr_annotation_file": "annotations/asr/80dG97rGwMo.json",
+    "source_dataset": "stage3_av_visualfirst_regen14_reviewed_20261111"
+  },
+  "8Hyh6tZi9xM": {
+    "video_id": "8Hyh6tZi9xM",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/8Hyh6tZi9xM.mp4",
+    "duration": 418.061,
+    "native_resolution": [
+      3840,
+      2160
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/8Hyh6tZi9xM/asr.txt",
+    "asr_segments": 103,
+    "asr_annotation_file": "annotations/asr/8Hyh6tZi9xM.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "8RCssOi6KpM": {
+    "video_id": "8RCssOi6KpM",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/8RCssOi6KpM.mp4",
+    "duration": 1009.501,
+    "native_resolution": [
+      1728,
+      1080
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/8RCssOi6KpM/asr.txt",
+    "asr_segments": 222,
+    "asr_annotation_file": "annotations/asr/8RCssOi6KpM.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "8V649L5Q368": {
+    "video_id": "8V649L5Q368",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/8V649L5Q368.mp4",
+    "duration": 1136.854,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/8V649L5Q368/asr.txt",
+    "asr_segments": 380,
+    "asr_annotation_file": "annotations/asr/8V649L5Q368.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "8YEaGs9UUs8": {
+    "video_id": "8YEaGs9UUs8",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/8YEaGs9UUs8.mp4",
+    "duration": 893.241,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/8YEaGs9UUs8/asr.txt",
+    "asr_segments": 216,
+    "asr_annotation_file": "annotations/asr/8YEaGs9UUs8.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "8_k2I774klo": {
+    "video_id": "8_k2I774klo",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/8_k2I774klo.mp4",
+    "duration": 529.761,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/8_k2I774klo/asr.txt",
+    "asr_segments": 158,
+    "asr_annotation_file": "annotations/asr/8_k2I774klo.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "8_qBECxovQM": {
+    "video_id": "8_qBECxovQM",
+    "split": "eval",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/eval_full295/8_qBECxovQM.mp4",
+    "duration": 5711.991995,
+    "native_resolution": [
+      640,
+      360
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/eval/8_qBECxovQM/asr.txt",
+    "asr_segments": 925,
+    "asr_annotation_file": "annotations/asr/8_qBECxovQM.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "8bkANFHh7vM": {
+    "video_id": "8bkANFHh7vM",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/8bkANFHh7vM.mp4",
+    "duration": 388.901,
+    "native_resolution": [
+      960,
+      720
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/8bkANFHh7vM/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/8bkANFHh7vM/asr.txt",
+    "asr_segments": 81,
+    "asr_annotation_file": "annotations/asr/8bkANFHh7vM.json",
+    "source_dataset": "stage3_av_next50_20261106"
+  },
+  "8fOUM98P2Sc": {
+    "video_id": "8fOUM98P2Sc",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/8fOUM98P2Sc.mp4",
+    "duration": 656.04,
+    "native_resolution": [
+      1280,
+      720
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/8fOUM98P2Sc/asr.txt",
+    "asr_segments": 199,
+    "asr_annotation_file": "annotations/asr/8fOUM98P2Sc.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "9LjtPWfsjFw": {
+    "video_id": "9LjtPWfsjFw",
+    "split": "eval",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/eval_full295/9LjtPWfsjFw.mp4",
+    "duration": 506.218005,
+    "native_resolution": [
+      640,
+      360
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_v3_reconsider_20261110/audio/9LjtPWfsjFw.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/eval/9LjtPWfsjFw/asr.txt",
+    "asr_segments": 117,
+    "asr_annotation_file": "annotations/asr/9LjtPWfsjFw.json",
+    "source_dataset": "stage3_av_visualfirst_regen14_reviewed_20261111"
+  },
+  "9tDPHZ2Ck08": {
+    "video_id": "9tDPHZ2Ck08",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/9tDPHZ2Ck08.mp4",
+    "duration": 971.101,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/9tDPHZ2Ck08/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/9tDPHZ2Ck08/asr.txt",
+    "asr_segments": 256,
+    "asr_annotation_file": "annotations/asr/9tDPHZ2Ck08.json",
+    "source_dataset": "stage3_av_visualfirst_next50_20261110"
+  },
+  "9vW1uo7mKDc": {
+    "video_id": "9vW1uo7mKDc",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/9vW1uo7mKDc.mp4",
+    "duration": 128.021,
+    "native_resolution": [
+      854,
+      470
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/9vW1uo7mKDc/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/9vW1uo7mKDc/asr.txt",
+    "asr_segments": 22,
+    "asr_annotation_file": "annotations/asr/9vW1uo7mKDc.json",
+    "source_dataset": "stage3_av50_20261105"
+  },
+  "A0td4rEd1Sk": {
+    "video_id": "A0td4rEd1Sk",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/A0td4rEd1Sk.mp4",
+    "duration": 3586.281,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/A0td4rEd1Sk/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/A0td4rEd1Sk/asr.txt",
+    "asr_segments": 1038,
+    "asr_annotation_file": "annotations/asr/A0td4rEd1Sk.json",
+    "source_dataset": "stage3_av_visualfirst_next50_20261110"
+  },
+  "AH8RcdMQMHA": {
+    "video_id": "AH8RcdMQMHA",
+    "split": "eval",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/eval_full295/AH8RcdMQMHA.mp4",
+    "duration": 113.010998,
+    "native_resolution": [
+      640,
+      352
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/eval/AH8RcdMQMHA/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/eval/AH8RcdMQMHA/asr.txt",
+    "asr_segments": 14,
+    "asr_annotation_file": "annotations/asr/AH8RcdMQMHA.json",
+    "source_dataset": "stage3_av50_20261105"
+  },
+  "A_CVfJFPp-E": {
+    "video_id": "A_CVfJFPp-E",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/A_CVfJFPp-E.mp4",
+    "duration": 1293.681,
+    "native_resolution": [
+      576,
+      360
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": null,
+    "asr_segments": 0,
+    "asr_annotation_file": null,
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "Aff_83j4uc0": {
+    "video_id": "Aff_83j4uc0",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/Aff_83j4uc0.mp4",
+    "duration": 931.581,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/Aff_83j4uc0/asr.txt",
+    "asr_segments": 218,
+    "asr_annotation_file": "annotations/asr/Aff_83j4uc0.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "B2USlWmqOV0": {
+    "video_id": "B2USlWmqOV0",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/B2USlWmqOV0.mp4",
+    "duration": 318.074,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/B2USlWmqOV0/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/B2USlWmqOV0/asr.txt",
+    "asr_segments": 53,
+    "asr_annotation_file": "annotations/asr/B2USlWmqOV0.json",
+    "source_dataset": "stage3_av_next50_20261106"
+  },
+  "BT7Y0rxOXNQ": {
+    "video_id": "BT7Y0rxOXNQ",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/BT7Y0rxOXNQ.mp4",
+    "duration": 300.04,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/BT7Y0rxOXNQ/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/BT7Y0rxOXNQ/asr.txt",
+    "asr_segments": 81,
+    "asr_annotation_file": "annotations/asr/BT7Y0rxOXNQ.json",
+    "source_dataset": "stage3_av_next50_20261106"
+  },
+  "BwSJCkTBN0c": {
+    "video_id": "BwSJCkTBN0c",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/BwSJCkTBN0c.mp4",
+    "duration": 545.195,
+    "native_resolution": [
+      3840,
+      2026
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/BwSJCkTBN0c/asr.txt",
+    "asr_segments": 117,
+    "asr_annotation_file": "annotations/asr/BwSJCkTBN0c.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "C60jGZsiPrs": {
+    "video_id": "C60jGZsiPrs",
+    "split": "eval",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/eval_full295/C60jGZsiPrs.mp4",
+    "duration": 1161.717007,
+    "native_resolution": [
+      576,
+      360
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": null,
+    "asr_segments": 0,
+    "asr_annotation_file": null,
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "CEDXT947V7s": {
+    "video_id": "CEDXT947V7s",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/CEDXT947V7s.mp4",
+    "duration": 2766.514,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/CEDXT947V7s/asr.txt",
+    "asr_segments": 389,
+    "asr_annotation_file": "annotations/asr/CEDXT947V7s.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "CW3TLabogko": {
+    "video_id": "CW3TLabogko",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/CW3TLabogko.mp4",
+    "duration": 329.942,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/CW3TLabogko/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/CW3TLabogko/asr.txt",
+    "asr_segments": 104,
+    "asr_annotation_file": "annotations/asr/CW3TLabogko.json",
+    "source_dataset": "stage3_av_next50_20261106"
+  },
+  "Cg8Mzbc4TBY": {
+    "video_id": "Cg8Mzbc4TBY",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/Cg8Mzbc4TBY.mp4",
+    "duration": 1785.387,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/Cg8Mzbc4TBY/asr.txt",
+    "asr_segments": 485,
+    "asr_annotation_file": "annotations/asr/Cg8Mzbc4TBY.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "ClZOJGWUbKo": {
+    "video_id": "ClZOJGWUbKo",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/ClZOJGWUbKo.mp4",
+    "duration": 139.821,
+    "native_resolution": [
+      1280,
+      720
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/ClZOJGWUbKo/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/ClZOJGWUbKo/asr.txt",
+    "asr_segments": 21,
+    "asr_annotation_file": "annotations/asr/ClZOJGWUbKo.json",
+    "source_dataset": "stage3_av50_20261105"
+  },
+  "CzLE1i4NSoU": {
+    "video_id": "CzLE1i4NSoU",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/CzLE1i4NSoU.mp4",
+    "duration": 201.121,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/CzLE1i4NSoU/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/CzLE1i4NSoU/asr.txt",
+    "asr_segments": 42,
+    "asr_annotation_file": "annotations/asr/CzLE1i4NSoU.json",
+    "source_dataset": "stage3_av50_20261105"
+  },
+  "D1s_pfUj4dM": {
+    "video_id": "D1s_pfUj4dM",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/D1s_pfUj4dM.mp4",
+    "duration": 300.801,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/D1s_pfUj4dM/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/D1s_pfUj4dM/asr.txt",
+    "asr_segments": 74,
+    "asr_annotation_file": "annotations/asr/D1s_pfUj4dM.json",
+    "source_dataset": "stage3_av_next50_20261106"
+  },
+  "D6Az0Z_Wo-4": {
+    "video_id": "D6Az0Z_Wo-4",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/D6Az0Z_Wo-4.mp4",
+    "duration": 410.761,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_v3_reconsider_20261110/audio/D6Az0Z_Wo-4.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/D6Az0Z_Wo-4/asr.txt",
+    "asr_segments": 136,
+    "asr_annotation_file": "annotations/asr/D6Az0Z_Wo-4.json",
+    "source_dataset": "stage3_av_visualfirst_regen14_reviewed_20261111"
+  },
+  "DnQGMAoqpCc": {
+    "video_id": "DnQGMAoqpCc",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/DnQGMAoqpCc.mp4",
+    "duration": 1870.981,
+    "native_resolution": [
+      640,
+      360
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/DnQGMAoqpCc/asr.txt",
+    "asr_segments": 377,
+    "asr_annotation_file": "annotations/asr/DnQGMAoqpCc.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "Dv4YEvLWvaA": {
+    "video_id": "Dv4YEvLWvaA",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/Dv4YEvLWvaA.mp4",
+    "duration": 447.881,
+    "native_resolution": [
+      3840,
+      2160
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/Dv4YEvLWvaA/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/Dv4YEvLWvaA/asr.txt",
+    "asr_segments": 144,
+    "asr_annotation_file": "annotations/asr/Dv4YEvLWvaA.json",
+    "source_dataset": "stage3_av_visualfirst_next50_20261110"
+  },
+  "DwtvZ0tC9ng": {
+    "video_id": "DwtvZ0tC9ng",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/DwtvZ0tC9ng.mp4",
+    "duration": 358.361,
+    "native_resolution": [
+      854,
+      480
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/DwtvZ0tC9ng/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/DwtvZ0tC9ng/asr.txt",
+    "asr_segments": 80,
+    "asr_annotation_file": "annotations/asr/DwtvZ0tC9ng.json",
+    "source_dataset": "stage3_av_next50_20261106"
+  },
+  "E1tmS9Lv1bU": {
+    "video_id": "E1tmS9Lv1bU",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/E1tmS9Lv1bU.mp4",
+    "duration": 289.161,
+    "native_resolution": [
+      432,
+      320
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/E1tmS9Lv1bU/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/E1tmS9Lv1bU/asr.txt",
+    "asr_segments": 63,
+    "asr_annotation_file": "annotations/asr/E1tmS9Lv1bU.json",
+    "source_dataset": "stage3_av_next50_20261106"
+  },
+  "EKbtDrlWArI": {
+    "video_id": "EKbtDrlWArI",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/EKbtDrlWArI.mp4",
+    "duration": 2472.361,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/EKbtDrlWArI/asr.txt",
+    "asr_segments": 591,
+    "asr_annotation_file": "annotations/asr/EKbtDrlWArI.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "EMSUY36bd9o": {
+    "video_id": "EMSUY36bd9o",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/EMSUY36bd9o.mp4",
+    "duration": 173.541,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/EMSUY36bd9o/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/EMSUY36bd9o/asr.txt",
+    "asr_segments": 37,
+    "asr_annotation_file": "annotations/asr/EMSUY36bd9o.json",
+    "source_dataset": "stage3_av_next50_20261106"
+  },
+  "FKaJt2NmyOo": {
+    "video_id": "FKaJt2NmyOo",
+    "split": "eval",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/eval_full295/FKaJt2NmyOo.mp4",
+    "duration": 391.117007,
+    "native_resolution": [
+      640,
+      360
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/eval/FKaJt2NmyOo/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/eval/FKaJt2NmyOo/asr.txt",
+    "asr_segments": 82,
+    "asr_annotation_file": "annotations/asr/FKaJt2NmyOo.json",
+    "source_dataset": "stage3_av_next50_20261106"
+  },
+  "FgH5RWkhD0g": {
+    "video_id": "FgH5RWkhD0g",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/FgH5RWkhD0g.mp4",
+    "duration": 279.641,
+    "native_resolution": [
+      640,
+      360
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/FgH5RWkhD0g/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/FgH5RWkhD0g/asr.txt",
+    "asr_segments": 69,
+    "asr_annotation_file": "annotations/asr/FgH5RWkhD0g.json",
+    "source_dataset": "stage3_av50_20261105"
+  },
+  "Flc8xS2foOU": {
+    "video_id": "Flc8xS2foOU",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/Flc8xS2foOU.mp4",
+    "duration": 215.425,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/Flc8xS2foOU/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/Flc8xS2foOU/asr.txt",
+    "asr_segments": 41,
+    "asr_annotation_file": "annotations/asr/Flc8xS2foOU.json",
+    "source_dataset": "stage3_av50_20261105"
+  },
+  "FpJFkPOfNHM": {
+    "video_id": "FpJFkPOfNHM",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/FpJFkPOfNHM.mp4",
+    "duration": 439.041,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/FpJFkPOfNHM/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/FpJFkPOfNHM/asr.txt",
+    "asr_segments": 106,
+    "asr_annotation_file": "annotations/asr/FpJFkPOfNHM.json",
+    "source_dataset": "stage3_av_visualfirst_next50_20261110"
+  },
+  "G3PsxQhZErY": {
+    "video_id": "G3PsxQhZErY",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/G3PsxQhZErY.mp4",
+    "duration": 317.461,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/G3PsxQhZErY/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/G3PsxQhZErY/asr.txt",
+    "asr_segments": 78,
+    "asr_annotation_file": "annotations/asr/G3PsxQhZErY.json",
+    "source_dataset": "stage3_av_next50_20261106"
+  },
+  "GPHyZfm8T2s": {
+    "video_id": "GPHyZfm8T2s",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/GPHyZfm8T2s.mp4",
+    "duration": 1399.790998,
+    "native_resolution": [
+      428,
+      320
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": null,
+    "asr_segments": 0,
+    "asr_annotation_file": null,
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "GoPxLxhoufE": {
+    "video_id": "GoPxLxhoufE",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/GoPxLxhoufE.mp4",
+    "duration": 2100.521,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/GoPxLxhoufE/asr.txt",
+    "asr_segments": 746,
+    "asr_annotation_file": "annotations/asr/GoPxLxhoufE.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "HJ9HX0CrL-U": {
+    "video_id": "HJ9HX0CrL-U",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/HJ9HX0CrL-U.mp4",
+    "duration": 850.049,
+    "native_resolution": [
+      1152,
+      720
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/HJ9HX0CrL-U/asr.txt",
+    "asr_segments": 274,
+    "asr_annotation_file": "annotations/asr/HJ9HX0CrL-U.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "HQh0wp4Vjuw": {
+    "video_id": "HQh0wp4Vjuw",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/HQh0wp4Vjuw.mp4",
+    "duration": 567.801,
+    "native_resolution": [
+      1152,
+      720
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/HQh0wp4Vjuw/asr.txt",
+    "asr_segments": 119,
+    "asr_annotation_file": "annotations/asr/HQh0wp4Vjuw.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "Hlb-rO_dc8s": {
+    "video_id": "Hlb-rO_dc8s",
+    "split": "eval",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/eval_full295/Hlb-rO_dc8s.mp4",
+    "duration": 690.259002,
+    "native_resolution": [
+      640,
+      360
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/eval/Hlb-rO_dc8s/asr.txt",
+    "asr_segments": 94,
+    "asr_annotation_file": "annotations/asr/Hlb-rO_dc8s.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "HuJzn_PF118": {
+    "video_id": "HuJzn_PF118",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/HuJzn_PF118.mp4",
+    "duration": 829.341,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/HuJzn_PF118/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/HuJzn_PF118/asr.txt",
+    "asr_segments": 146,
+    "asr_annotation_file": "annotations/asr/HuJzn_PF118.json",
+    "source_dataset": "stage3_av_visualfirst_next50_20261110"
+  },
+  "I3Jqbxa1_Ts": {
+    "video_id": "I3Jqbxa1_Ts",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/I3Jqbxa1_Ts.mp4",
+    "duration": 805.301,
+    "native_resolution": [
+      480,
+      270
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/I3Jqbxa1_Ts/asr.txt",
+    "asr_segments": 227,
+    "asr_annotation_file": "annotations/asr/I3Jqbxa1_Ts.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "IL4qqETpb0k": {
+    "video_id": "IL4qqETpb0k",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/IL4qqETpb0k.mp4",
+    "duration": 285.381,
+    "native_resolution": [
+      432,
+      320
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/IL4qqETpb0k/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/IL4qqETpb0k/asr.txt",
+    "asr_segments": 48,
+    "asr_annotation_file": "annotations/asr/IL4qqETpb0k.json",
+    "source_dataset": "stage3_av50_20261105"
+  },
+  "IsJeMgxTFMU": {
+    "video_id": "IsJeMgxTFMU",
+    "split": "eval",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/eval_full295/IsJeMgxTFMU.mp4",
+    "duration": 178.932993,
+    "native_resolution": [
+      640,
+      360
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/eval/IsJeMgxTFMU/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/eval/IsJeMgxTFMU/asr.txt",
+    "asr_segments": 28,
+    "asr_annotation_file": "annotations/asr/IsJeMgxTFMU.json",
+    "source_dataset": "stage3_av50_20261105"
+  },
+  "J5gRFeZ7cZU": {
+    "video_id": "J5gRFeZ7cZU",
+    "split": "eval",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/eval_full295/J5gRFeZ7cZU.mp4",
+    "duration": 335.643991,
+    "native_resolution": [
+      640,
+      360
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/eval/J5gRFeZ7cZU/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/eval/J5gRFeZ7cZU/asr.txt",
+    "asr_segments": 71,
+    "asr_annotation_file": "annotations/asr/J5gRFeZ7cZU.json",
+    "source_dataset": "stage3_av_next50_20261106"
+  },
+  "J9wzPBJ5vOI": {
+    "video_id": "J9wzPBJ5vOI",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/J9wzPBJ5vOI.mp4",
+    "duration": 255.161,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/J9wzPBJ5vOI/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/J9wzPBJ5vOI/asr.txt",
+    "asr_segments": 27,
+    "asr_annotation_file": "annotations/asr/J9wzPBJ5vOI.json",
+    "source_dataset": "stage3_av50_20261105"
+  },
+  "J_kORTc8hxY": {
+    "video_id": "J_kORTc8hxY",
+    "split": "eval",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/eval_full295/J_kORTc8hxY.mp4",
+    "duration": 1540.991995,
+    "native_resolution": [
+      640,
+      360
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": null,
+    "asr_segments": 0,
+    "asr_annotation_file": null,
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "JcCZBKSdIRk": {
+    "video_id": "JcCZBKSdIRk",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/JcCZBKSdIRk.mp4",
+    "duration": 261.505,
+    "native_resolution": [
+      1280,
+      720
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/JcCZBKSdIRk/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/JcCZBKSdIRk/asr.txt",
+    "asr_segments": 67,
+    "asr_annotation_file": "annotations/asr/JcCZBKSdIRk.json",
+    "source_dataset": "stage3_av50_20261105"
+  },
+  "JoDOrxvsgGU": {
+    "video_id": "JoDOrxvsgGU",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/JoDOrxvsgGU.mp4",
+    "duration": 275.001,
+    "native_resolution": [
+      640,
+      360
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/JoDOrxvsgGU/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/JoDOrxvsgGU/asr.txt",
+    "asr_segments": 49,
+    "asr_annotation_file": "annotations/asr/JoDOrxvsgGU.json",
+    "source_dataset": "stage3_av_next50_20261106"
+  },
+  "JwMcy65g4Oc": {
+    "video_id": "JwMcy65g4Oc",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/JwMcy65g4Oc.mp4",
+    "duration": 397.697,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/JwMcy65g4Oc/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/JwMcy65g4Oc/asr.txt",
+    "asr_segments": 80,
+    "asr_annotation_file": "annotations/asr/JwMcy65g4Oc.json",
+    "source_dataset": "stage3_av_visualfirst_next50_20261110"
+  },
+  "KGSdQB80ois": {
+    "video_id": "KGSdQB80ois",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/KGSdQB80ois.mp4",
+    "duration": 1543.174,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": null,
+    "asr_segments": 0,
+    "asr_annotation_file": null,
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "Kzvw3WU-2Bs": {
+    "video_id": "Kzvw3WU-2Bs",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/Kzvw3WU-2Bs.mp4",
+    "duration": 223.621,
+    "native_resolution": [
+      1280,
+      720
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/Kzvw3WU-2Bs/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/Kzvw3WU-2Bs/asr.txt",
+    "asr_segments": 31,
+    "asr_annotation_file": "annotations/asr/Kzvw3WU-2Bs.json",
+    "source_dataset": "stage3_av50_20261105"
+  },
+  "LDIo6xQS7Hc": {
+    "video_id": "LDIo6xQS7Hc",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/LDIo6xQS7Hc.mp4",
+    "duration": 117.021,
+    "native_resolution": [
+      854,
+      470
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/LDIo6xQS7Hc/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/LDIo6xQS7Hc/asr.txt",
+    "asr_segments": 24,
+    "asr_annotation_file": "annotations/asr/LDIo6xQS7Hc.json",
+    "source_dataset": "stage3_av50_20261105"
+  },
+  "Lx8VPI75R8s": {
+    "video_id": "Lx8VPI75R8s",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/Lx8VPI75R8s.mp4",
+    "duration": 463.581,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/Lx8VPI75R8s/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/Lx8VPI75R8s/asr.txt",
+    "asr_segments": 100,
+    "asr_annotation_file": "annotations/asr/Lx8VPI75R8s.json",
+    "source_dataset": "stage3_av_visualfirst_next50_20261110"
+  },
+  "MVzxaiWzxjk": {
+    "video_id": "MVzxaiWzxjk",
+    "split": "eval",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/eval_full295/MVzxaiWzxjk.mp4",
+    "duration": 941.685011,
+    "native_resolution": [
+      640,
+      360
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/eval/MVzxaiWzxjk/asr.txt",
+    "asr_segments": 222,
+    "asr_annotation_file": "annotations/asr/MVzxaiWzxjk.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "NmH6GtXPcSY": {
+    "video_id": "NmH6GtXPcSY",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/NmH6GtXPcSY.mp4",
+    "duration": 241.221,
+    "native_resolution": [
+      1280,
+      720
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/NmH6GtXPcSY/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/NmH6GtXPcSY/asr.txt",
+    "asr_segments": 77,
+    "asr_annotation_file": "annotations/asr/NmH6GtXPcSY.json",
+    "source_dataset": "stage3_av_next50_20261106"
+  },
+  "ODF8ZLr_52s": {
+    "video_id": "ODF8ZLr_52s",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/ODF8ZLr_52s.mp4",
+    "duration": 414.337,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/ODF8ZLr_52s/asr.txt",
+    "asr_segments": 54,
+    "asr_annotation_file": "annotations/asr/ODF8ZLr_52s.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "OJB8ZNtVAvA": {
+    "video_id": "OJB8ZNtVAvA",
+    "split": "eval",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/eval_full295/OJB8ZNtVAvA.mp4",
+    "duration": 2395.719002,
+    "native_resolution": [
+      640,
+      360
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/eval/OJB8ZNtVAvA/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/eval/OJB8ZNtVAvA/asr.txt",
+    "asr_segments": 571,
+    "asr_annotation_file": "annotations/asr/OJB8ZNtVAvA.json",
+    "source_dataset": "stage3_av_visualfirst_next50_20261110"
+  },
+  "OKtdZVXtZ0M": {
+    "video_id": "OKtdZVXtZ0M",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/OKtdZVXtZ0M.mp4",
+    "duration": 240.701,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/OKtdZVXtZ0M/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/OKtdZVXtZ0M/asr.txt",
+    "asr_segments": 45,
+    "asr_annotation_file": "annotations/asr/OKtdZVXtZ0M.json",
+    "source_dataset": "stage3_av_next50_20261106"
+  },
+  "OQJ2RhnuOQQ": {
+    "video_id": "OQJ2RhnuOQQ",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/OQJ2RhnuOQQ.mp4",
+    "duration": 570.221,
+    "native_resolution": [
+      3840,
+      2160
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/OQJ2RhnuOQQ/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/OQJ2RhnuOQQ/asr.txt",
+    "asr_segments": 140,
+    "asr_annotation_file": "annotations/asr/OQJ2RhnuOQQ.json",
+    "source_dataset": "stage3_av_visualfirst_next50_20261110"
+  },
+  "OZwnjQm7TiI": {
+    "video_id": "OZwnjQm7TiI",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/OZwnjQm7TiI.mp4",
+    "duration": 173.581,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/OZwnjQm7TiI/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/OZwnjQm7TiI/asr.txt",
+    "asr_segments": 44,
+    "asr_annotation_file": "annotations/asr/OZwnjQm7TiI.json",
+    "source_dataset": "stage3_av_next50_20261106"
+  },
+  "OqedcP9OPvc": {
+    "video_id": "OqedcP9OPvc",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/OqedcP9OPvc.mp4",
+    "duration": 444.841,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/OqedcP9OPvc/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/OqedcP9OPvc/asr.txt",
+    "asr_segments": 145,
+    "asr_annotation_file": "annotations/asr/OqedcP9OPvc.json",
+    "source_dataset": "stage3_av_visualfirst_next50_20261110"
+  },
+  "P3FoSFIrfQA": {
+    "video_id": "P3FoSFIrfQA",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/P3FoSFIrfQA.mp4",
+    "duration": 122.646,
+    "native_resolution": [
+      1280,
+      720
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/P3FoSFIrfQA/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/P3FoSFIrfQA/asr.txt",
+    "asr_segments": 32,
+    "asr_annotation_file": "annotations/asr/P3FoSFIrfQA.json",
+    "source_dataset": "stage3_av50_20261105"
+  },
+  "PfxxVXsQsfY": {
+    "video_id": "PfxxVXsQsfY",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/PfxxVXsQsfY.mp4",
+    "duration": 418.945,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_v3_reconsider_20261110/audio/PfxxVXsQsfY.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/PfxxVXsQsfY/asr.txt",
+    "asr_segments": 80,
+    "asr_annotation_file": "annotations/asr/PfxxVXsQsfY.json",
+    "source_dataset": "stage3_av_visualfirst_regen14_reviewed_20261111"
+  },
+  "PhybhBRhgfc": {
+    "video_id": "PhybhBRhgfc",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/PhybhBRhgfc.mp4",
+    "duration": 256.061,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/PhybhBRhgfc/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/PhybhBRhgfc/asr.txt",
+    "asr_segments": 40,
+    "asr_annotation_file": "annotations/asr/PhybhBRhgfc.json",
+    "source_dataset": "stage3_av_next50_20261106"
+  },
+  "PxkSdSzUfGs": {
+    "video_id": "PxkSdSzUfGs",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/PxkSdSzUfGs.mp4",
+    "duration": 288.401,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/PxkSdSzUfGs/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/PxkSdSzUfGs/asr.txt",
+    "asr_segments": 66,
+    "asr_annotation_file": "annotations/asr/PxkSdSzUfGs.json",
+    "source_dataset": "stage3_av50_20261105"
+  },
+  "Q1KzQ0aQW_o": {
+    "video_id": "Q1KzQ0aQW_o",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/Q1KzQ0aQW_o.mp4",
+    "duration": 523.461,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/Q1KzQ0aQW_o/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/Q1KzQ0aQW_o/asr.txt",
+    "asr_segments": 139,
+    "asr_annotation_file": "annotations/asr/Q1KzQ0aQW_o.json",
+    "source_dataset": "stage3_av_visualfirst_next50_20261110"
+  },
+  "Q9YU71NQMcg": {
+    "video_id": "Q9YU71NQMcg",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/Q9YU71NQMcg.mp4",
+    "duration": 136.274,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/Q9YU71NQMcg/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/Q9YU71NQMcg/asr.txt",
+    "asr_segments": 29,
+    "asr_annotation_file": "annotations/asr/Q9YU71NQMcg.json",
+    "source_dataset": "stage3_av_next50_20261106"
+  },
+  "Q9ZcHkmIBzY": {
+    "video_id": "Q9ZcHkmIBzY",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/Q9ZcHkmIBzY.mp4",
+    "duration": 1396.781,
+    "native_resolution": [
+      1280,
+      720
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": null,
+    "asr_segments": 0,
+    "asr_annotation_file": null,
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "QXsqFr-eGiM": {
+    "video_id": "QXsqFr-eGiM",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/QXsqFr-eGiM.mp4",
+    "duration": 1182.001,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/QXsqFr-eGiM/asr.txt",
+    "asr_segments": 270,
+    "asr_annotation_file": "annotations/asr/QXsqFr-eGiM.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "Qjz9a2mMQD0": {
+    "video_id": "Qjz9a2mMQD0",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/Qjz9a2mMQD0.mp4",
+    "duration": 622.921,
+    "native_resolution": [
+      854,
+      480
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_v3_reconsider_20261110/audio/Qjz9a2mMQD0.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/Qjz9a2mMQD0/asr.txt",
+    "asr_segments": 145,
+    "asr_annotation_file": "annotations/asr/Qjz9a2mMQD0.json",
+    "source_dataset": "stage3_av_visualfirst_regen14_reviewed_20261111"
+  },
+  "Ql_twyiHRWE": {
+    "video_id": "Ql_twyiHRWE",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/Ql_twyiHRWE.mp4",
+    "duration": 353.561,
+    "native_resolution": [
+      1280,
+      720
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/Ql_twyiHRWE/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/Ql_twyiHRWE/asr.txt",
+    "asr_segments": 99,
+    "asr_annotation_file": "annotations/asr/Ql_twyiHRWE.json",
+    "source_dataset": "stage3_av_next50_20261106"
+  },
+  "R15Q11bLl34": {
+    "video_id": "R15Q11bLl34",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/R15Q11bLl34.mp4",
+    "duration": 381.249,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/R15Q11bLl34/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/R15Q11bLl34/asr.txt",
+    "asr_segments": 91,
+    "asr_annotation_file": "annotations/asr/R15Q11bLl34.json",
+    "source_dataset": "stage3_av_next50_20261106"
+  },
+  "RBOsbOIWCXE": {
+    "video_id": "RBOsbOIWCXE",
+    "split": "eval",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/eval_full295/RBOsbOIWCXE.mp4",
+    "duration": 3455.941995,
+    "native_resolution": [
+      640,
+      360
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/eval/RBOsbOIWCXE/asr.txt",
+    "asr_segments": 794,
+    "asr_annotation_file": "annotations/asr/RBOsbOIWCXE.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "ROcVsjjW0cw": {
+    "video_id": "ROcVsjjW0cw",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/ROcVsjjW0cw.mp4",
+    "duration": 725.221,
+    "native_resolution": [
+      1152,
+      720
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/ROcVsjjW0cw/asr.txt",
+    "asr_segments": 158,
+    "asr_annotation_file": "annotations/asr/ROcVsjjW0cw.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "RskrEsAGzec": {
+    "video_id": "RskrEsAGzec",
+    "split": "eval",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/eval_full295/RskrEsAGzec.mp4",
+    "duration": 440.877007,
+    "native_resolution": [
+      480,
+      360
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_v3_reconsider_20261110/audio/RskrEsAGzec.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/eval/RskrEsAGzec/asr.txt",
+    "asr_segments": 77,
+    "asr_annotation_file": "annotations/asr/RskrEsAGzec.json",
+    "source_dataset": "stage3_av_visualfirst_regen14_reviewed_20261111"
+  },
+  "SC6ZAClF59c": {
+    "video_id": "SC6ZAClF59c",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/SC6ZAClF59c.mp4",
+    "duration": 198.801,
+    "native_resolution": [
+      640,
+      360
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/SC6ZAClF59c/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/SC6ZAClF59c/asr.txt",
+    "asr_segments": 38,
+    "asr_annotation_file": "annotations/asr/SC6ZAClF59c.json",
+    "source_dataset": "stage3_av50_20261105"
+  },
+  "SWzpcc4ZR-U": {
+    "video_id": "SWzpcc4ZR-U",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/SWzpcc4ZR-U.mp4",
+    "duration": 334.443,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/SWzpcc4ZR-U/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/SWzpcc4ZR-U/asr.txt",
+    "asr_segments": 63,
+    "asr_annotation_file": "annotations/asr/SWzpcc4ZR-U.json",
+    "source_dataset": "stage3_av_next50_20261106"
+  },
+  "TOcvCKr9J18": {
+    "video_id": "TOcvCKr9J18",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/TOcvCKr9J18.mp4",
+    "duration": 308.461,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/TOcvCKr9J18/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/TOcvCKr9J18/asr.txt",
+    "asr_segments": 84,
+    "asr_annotation_file": "annotations/asr/TOcvCKr9J18.json",
+    "source_dataset": "stage3_av_next50_20261106"
+  },
+  "TlckvYhqaFE": {
+    "video_id": "TlckvYhqaFE",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/TlckvYhqaFE.mp4",
+    "duration": 898.134,
+    "native_resolution": [
+      1280,
+      720
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/TlckvYhqaFE/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/TlckvYhqaFE/asr.txt",
+    "asr_segments": 112,
+    "asr_annotation_file": "annotations/asr/TlckvYhqaFE.json",
+    "source_dataset": "stage3_av_visualfirst_next50_20261110"
+  },
+  "ToKjoj8ze4o": {
+    "video_id": "ToKjoj8ze4o",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/ToKjoj8ze4o.mp4",
+    "duration": 1072.854,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/ToKjoj8ze4o/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/ToKjoj8ze4o/asr.txt",
+    "asr_segments": 236,
+    "asr_annotation_file": "annotations/asr/ToKjoj8ze4o.json",
+    "source_dataset": "stage3_av_visualfirst_next50_20261110"
+  },
+  "V8DgPnUMsus": {
+    "video_id": "V8DgPnUMsus",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/V8DgPnUMsus.mp4",
+    "duration": 433.121,
+    "native_resolution": [
+      1280,
+      720
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/V8DgPnUMsus/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/V8DgPnUMsus/asr.txt",
+    "asr_segments": 135,
+    "asr_annotation_file": "annotations/asr/V8DgPnUMsus.json",
+    "source_dataset": "stage3_av_visualfirst_next50_20261110"
+  },
+  "VFPcSCetCxg": {
+    "video_id": "VFPcSCetCxg",
+    "split": "eval",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/eval_full295/VFPcSCetCxg.mp4",
+    "duration": 1465.201995,
+    "native_resolution": [
+      640,
+      360
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": null,
+    "asr_segments": 0,
+    "asr_annotation_file": null,
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "VL1xLsq8OrA": {
+    "video_id": "VL1xLsq8OrA",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/VL1xLsq8OrA.mp4",
+    "duration": 168.041,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/VL1xLsq8OrA/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/VL1xLsq8OrA/asr.txt",
+    "asr_segments": 40,
+    "asr_annotation_file": "annotations/asr/VL1xLsq8OrA.json",
+    "source_dataset": "stage3_av50_20261105"
+  },
+  "VvOMojTqv04": {
+    "video_id": "VvOMojTqv04",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/VvOMojTqv04.mp4",
+    "duration": 245.994,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/VvOMojTqv04/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/VvOMojTqv04/asr.txt",
+    "asr_segments": 42,
+    "asr_annotation_file": "annotations/asr/VvOMojTqv04.json",
+    "source_dataset": "stage3_av50_20261105"
+  },
+  "VzgX9ihnmec": {
+    "video_id": "VzgX9ihnmec",
+    "split": "eval",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/eval_full295/VzgX9ihnmec.mp4",
+    "duration": 259.993991,
+    "native_resolution": [
+      640,
+      360
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/eval/VzgX9ihnmec/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/eval/VzgX9ihnmec/asr.txt",
+    "asr_segments": 69,
+    "asr_annotation_file": "annotations/asr/VzgX9ihnmec.json",
+    "source_dataset": "stage3_av50_20261105"
+  },
+  "WJPH6Ij3StA": {
+    "video_id": "WJPH6Ij3StA",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/WJPH6Ij3StA.mp4",
+    "duration": 329.981,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/WJPH6Ij3StA/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/WJPH6Ij3StA/asr.txt",
+    "asr_segments": 100,
+    "asr_annotation_file": "annotations/asr/WJPH6Ij3StA.json",
+    "source_dataset": "stage3_av_next50_20261106"
+  },
+  "WXlavlEFIaU": {
+    "video_id": "WXlavlEFIaU",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/WXlavlEFIaU.mp4",
+    "duration": 996.341,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/WXlavlEFIaU/asr.txt",
+    "asr_segments": 263,
+    "asr_annotation_file": "annotations/asr/WXlavlEFIaU.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "WhNxq98szE8": {
+    "video_id": "WhNxq98szE8",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/WhNxq98szE8.mp4",
+    "duration": 2929.194,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/WhNxq98szE8/asr.txt",
+    "asr_segments": 838,
+    "asr_annotation_file": "annotations/asr/WhNxq98szE8.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "WrsrvingZGI": {
+    "video_id": "WrsrvingZGI",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/WrsrvingZGI.mp4",
+    "duration": 493.874,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/WrsrvingZGI/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/WrsrvingZGI/asr.txt",
+    "asr_segments": 117,
+    "asr_annotation_file": "annotations/asr/WrsrvingZGI.json",
+    "source_dataset": "stage3_av_visualfirst_next50_20261110"
+  },
+  "X0wqmWXEcTg": {
+    "video_id": "X0wqmWXEcTg",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/X0wqmWXEcTg.mp4",
+    "duration": 304.771133,
+    "native_resolution": [
+      432,
+      320
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/X0wqmWXEcTg/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/X0wqmWXEcTg/asr.txt",
+    "asr_segments": 70,
+    "asr_annotation_file": "annotations/asr/X0wqmWXEcTg.json",
+    "source_dataset": "stage3_av_next50_20261106"
+  },
+  "X1E7OgOLzw0": {
+    "video_id": "X1E7OgOLzw0",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/X1E7OgOLzw0.mp4",
+    "duration": 511.979,
+    "native_resolution": [
+      640,
+      480
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_v3_reconsider_20261110/audio/X1E7OgOLzw0.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/X1E7OgOLzw0/asr.txt",
+    "asr_segments": 150,
+    "asr_annotation_file": "annotations/asr/X1E7OgOLzw0.json",
+    "source_dataset": "stage3_av_visualfirst_regen14_reviewed_20261111"
+  },
+  "Xa0pbbEPFNk": {
+    "video_id": "Xa0pbbEPFNk",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/Xa0pbbEPFNk.mp4",
+    "duration": 358.041,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/Xa0pbbEPFNk/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/Xa0pbbEPFNk/asr.txt",
+    "asr_segments": 118,
+    "asr_annotation_file": "annotations/asr/Xa0pbbEPFNk.json",
+    "source_dataset": "stage3_av_next50_20261106"
+  },
+  "Xv0abFuo5gY": {
+    "video_id": "Xv0abFuo5gY",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/Xv0abFuo5gY.mp4",
+    "duration": 1044.758,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/Xv0abFuo5gY/asr.txt",
+    "asr_segments": 280,
+    "asr_annotation_file": "annotations/asr/Xv0abFuo5gY.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "Y9Hv84m3kOM": {
+    "video_id": "Y9Hv84m3kOM",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/Y9Hv84m3kOM.mp4",
+    "duration": 1719.294,
+    "native_resolution": [
+      1280,
+      720
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/Y9Hv84m3kOM/asr.txt",
+    "asr_segments": 326,
+    "asr_annotation_file": "annotations/asr/Y9Hv84m3kOM.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "YAbGN-bdugU": {
+    "video_id": "YAbGN-bdugU",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/YAbGN-bdugU.mp4",
+    "duration": 159.341,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/YAbGN-bdugU/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/YAbGN-bdugU/asr.txt",
+    "asr_segments": 34,
+    "asr_annotation_file": "annotations/asr/YAbGN-bdugU.json",
+    "source_dataset": "stage3_av50_20261105"
+  },
+  "YOOoNT27Irg": {
+    "video_id": "YOOoNT27Irg",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/YOOoNT27Irg.mp4",
+    "duration": 275.181,
+    "native_resolution": [
+      432,
+      320
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/YOOoNT27Irg/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/YOOoNT27Irg/asr.txt",
+    "asr_segments": 51,
+    "asr_annotation_file": "annotations/asr/YOOoNT27Irg.json",
+    "source_dataset": "stage3_av50_20261105"
+  },
+  "YYcTdkP7xhs": {
+    "video_id": "YYcTdkP7xhs",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/YYcTdkP7xhs.mp4",
+    "duration": 274.521,
+    "native_resolution": [
+      1662,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/YYcTdkP7xhs/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/YYcTdkP7xhs/asr.txt",
+    "asr_segments": 63,
+    "asr_annotation_file": "annotations/asr/YYcTdkP7xhs.json",
+    "source_dataset": "stage3_av50_20261105"
+  },
+  "YYk6NP0n6Cs": {
+    "video_id": "YYk6NP0n6Cs",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/YYk6NP0n6Cs.mp4",
+    "duration": 392.581,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/YYk6NP0n6Cs/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/YYk6NP0n6Cs/asr.txt",
+    "asr_segments": 105,
+    "asr_annotation_file": "annotations/asr/YYk6NP0n6Cs.json",
+    "source_dataset": "stage3_av_visualfirst_next50_20261110"
+  },
+  "YhLX2-WgEjw": {
+    "video_id": "YhLX2-WgEjw",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/YhLX2-WgEjw.mp4",
+    "duration": 298.161,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/YhLX2-WgEjw/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/YhLX2-WgEjw/asr.txt",
+    "asr_segments": 84,
+    "asr_annotation_file": "annotations/asr/YhLX2-WgEjw.json",
+    "source_dataset": "stage3_av_next50_20261106"
+  },
+  "YllLJNPnpjY": {
+    "video_id": "YllLJNPnpjY",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/YllLJNPnpjY.mp4",
+    "duration": 645.561,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_v3_reconsider_20261110/audio/YllLJNPnpjY.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/YllLJNPnpjY/asr.txt",
+    "asr_segments": 180,
+    "asr_annotation_file": "annotations/asr/YllLJNPnpjY.json",
+    "source_dataset": "stage3_av_visualfirst_regen14_reviewed_20261111"
+  },
+  "YqW2UqlLAEg": {
+    "video_id": "YqW2UqlLAEg",
+    "split": "eval",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/eval_full295/YqW2UqlLAEg.mp4",
+    "duration": 260.179002,
+    "native_resolution": [
+      640,
+      360
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/eval/YqW2UqlLAEg/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/eval/YqW2UqlLAEg/asr.txt",
+    "asr_segments": 61,
+    "asr_annotation_file": "annotations/asr/YqW2UqlLAEg.json",
+    "source_dataset": "stage3_av_next50_20261106"
+  },
+  "Yzwk-sjdics": {
+    "video_id": "Yzwk-sjdics",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/Yzwk-sjdics.mp4",
+    "duration": 110.181,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/Yzwk-sjdics/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/Yzwk-sjdics/asr.txt",
+    "asr_segments": 22,
+    "asr_annotation_file": "annotations/asr/Yzwk-sjdics.json",
+    "source_dataset": "stage3_av50_20261105"
+  },
+  "_OugsPA4rxY": {
+    "video_id": "_OugsPA4rxY",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/_OugsPA4rxY.mp4",
+    "duration": 165.801,
+    "native_resolution": [
+      1280,
+      720
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/_OugsPA4rxY/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/_OugsPA4rxY/asr.txt",
+    "asr_segments": 36,
+    "asr_annotation_file": "annotations/asr/_OugsPA4rxY.json",
+    "source_dataset": "stage3_av_next50_20261106"
+  },
+  "_Q0cTG3ZlHk": {
+    "video_id": "_Q0cTG3ZlHk",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/_Q0cTG3ZlHk.mp4",
+    "duration": 753.579,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/_Q0cTG3ZlHk/asr.txt",
+    "asr_segments": 167,
+    "asr_annotation_file": "annotations/asr/_Q0cTG3ZlHk.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "_RHRy64jQ6s": {
+    "video_id": "_RHRy64jQ6s",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/_RHRy64jQ6s.mp4",
+    "duration": 484.381,
+    "native_resolution": [
+      640,
+      480
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_v3_reconsider_20261110/audio/_RHRy64jQ6s.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/_RHRy64jQ6s/asr.txt",
+    "asr_segments": 133,
+    "asr_annotation_file": "annotations/asr/_RHRy64jQ6s.json",
+    "source_dataset": "stage3_av_visualfirst_regen14_reviewed_20261111"
+  },
+  "afUiMq0DSs4": {
+    "video_id": "afUiMq0DSs4",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/afUiMq0DSs4.mp4",
+    "duration": 211.861,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/afUiMq0DSs4/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/afUiMq0DSs4/asr.txt",
+    "asr_segments": 24,
+    "asr_annotation_file": "annotations/asr/afUiMq0DSs4.json",
+    "source_dataset": "stage3_av50_20261105"
+  },
+  "az6h_u_8nhA": {
+    "video_id": "az6h_u_8nhA",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/az6h_u_8nhA.mp4",
+    "duration": 2661.961,
+    "native_resolution": [
+      1280,
+      720
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/az6h_u_8nhA/asr.txt",
+    "asr_segments": 840,
+    "asr_annotation_file": "annotations/asr/az6h_u_8nhA.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "b70tsWPz2P0": {
+    "video_id": "b70tsWPz2P0",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/b70tsWPz2P0.mp4",
+    "duration": 600.918,
+    "native_resolution": [
+      800,
+      480
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_v3_reconsider_20261110/audio/b70tsWPz2P0.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/b70tsWPz2P0/asr.txt",
+    "asr_segments": 132,
+    "asr_annotation_file": "annotations/asr/b70tsWPz2P0.json",
+    "source_dataset": "stage3_av_visualfirst_regen14_reviewed_20261111"
+  },
+  "bOtYoIl1UQA": {
+    "video_id": "bOtYoIl1UQA",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/bOtYoIl1UQA.mp4",
+    "duration": 1659.2,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/bOtYoIl1UQA/asr.txt",
+    "asr_segments": 438,
+    "asr_annotation_file": "annotations/asr/bOtYoIl1UQA.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "bRPD-51UG7Y": {
+    "video_id": "bRPD-51UG7Y",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/bRPD-51UG7Y.mp4",
+    "duration": 728.15,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/bRPD-51UG7Y/asr.txt",
+    "asr_segments": 97,
+    "asr_annotation_file": "annotations/asr/bRPD-51UG7Y.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "bsKBhAkp3fI": {
+    "video_id": "bsKBhAkp3fI",
+    "split": "eval",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/eval_full295/bsKBhAkp3fI.mp4",
+    "duration": 456.876009,
+    "native_resolution": [
+      640,
+      360
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_v3_reconsider_20261110/audio/bsKBhAkp3fI.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/eval/bsKBhAkp3fI/asr.txt",
+    "asr_segments": 119,
+    "asr_annotation_file": "annotations/asr/bsKBhAkp3fI.json",
+    "source_dataset": "stage3_av_visualfirst_regen14_reviewed_20261111"
+  },
+  "buTSag9xK6U": {
+    "video_id": "buTSag9xK6U",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/buTSag9xK6U.mp4",
+    "duration": 315.481833,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/buTSag9xK6U/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/buTSag9xK6U/asr.txt",
+    "asr_segments": 69,
+    "asr_annotation_file": "annotations/asr/buTSag9xK6U.json",
+    "source_dataset": "stage3_av_next50_20261106"
+  },
+  "cKdioYlocUE": {
+    "video_id": "cKdioYlocUE",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/cKdioYlocUE.mp4",
+    "duration": 396.181,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_v3_reconsider_20261110/audio/cKdioYlocUE.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/cKdioYlocUE/asr.txt",
+    "asr_segments": 117,
+    "asr_annotation_file": "annotations/asr/cKdioYlocUE.json",
+    "source_dataset": "stage3_av_visualfirst_regen14_reviewed_20261111"
+  },
+  "d24sbly6szQ": {
+    "video_id": "d24sbly6szQ",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/d24sbly6szQ.mp4",
+    "duration": 297.741,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/d24sbly6szQ/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/d24sbly6szQ/asr.txt",
+    "asr_segments": 71,
+    "asr_annotation_file": "annotations/asr/d24sbly6szQ.json",
+    "source_dataset": "stage3_av50_20261105"
+  },
+  "dBxFSnZHUm8": {
+    "video_id": "dBxFSnZHUm8",
+    "split": "eval",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/eval_full295/dBxFSnZHUm8.mp4",
+    "duration": 327.330998,
+    "native_resolution": [
+      640,
+      360
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/eval/dBxFSnZHUm8/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/eval/dBxFSnZHUm8/asr.txt",
+    "asr_segments": 45,
+    "asr_annotation_file": "annotations/asr/dBxFSnZHUm8.json",
+    "source_dataset": "stage3_av_next50_20261106"
+  },
+  "dg0cN7ndMfM": {
+    "video_id": "dg0cN7ndMfM",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/dg0cN7ndMfM.mp4",
+    "duration": 402.401,
+    "native_resolution": [
+      1280,
+      720
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/dg0cN7ndMfM/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/dg0cN7ndMfM/asr.txt",
+    "asr_segments": 100,
+    "asr_annotation_file": "annotations/asr/dg0cN7ndMfM.json",
+    "source_dataset": "stage3_av_visualfirst_next50_20261110"
+  },
+  "e255Gus4v5Q": {
+    "video_id": "e255Gus4v5Q",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/e255Gus4v5Q.mp4",
+    "duration": 234.394,
+    "native_resolution": [
+      1280,
+      720
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/e255Gus4v5Q/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/e255Gus4v5Q/asr.txt",
+    "asr_segments": 39,
+    "asr_annotation_file": "annotations/asr/e255Gus4v5Q.json",
+    "source_dataset": "stage3_av50_20261105"
+  },
+  "eLaz7tjPmmc": {
+    "video_id": "eLaz7tjPmmc",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/eLaz7tjPmmc.mp4",
+    "duration": 369.821,
+    "native_resolution": [
+      3840,
+      2160
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/eLaz7tjPmmc/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/eLaz7tjPmmc/asr.txt",
+    "asr_segments": 75,
+    "asr_annotation_file": "annotations/asr/eLaz7tjPmmc.json",
+    "source_dataset": "stage3_av_next50_20261106"
+  },
+  "enQBV0rbQ2I": {
+    "video_id": "enQBV0rbQ2I",
+    "split": "eval",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/eval_full295/enQBV0rbQ2I.mp4",
+    "duration": 750.376009,
+    "native_resolution": [
+      640,
+      360
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/eval/enQBV0rbQ2I/asr.txt",
+    "asr_segments": 133,
+    "asr_annotation_file": "annotations/asr/enQBV0rbQ2I.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "esQ4m2ZkdUI": {
+    "video_id": "esQ4m2ZkdUI",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/esQ4m2ZkdUI.mp4",
+    "duration": 229.521,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/esQ4m2ZkdUI/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/esQ4m2ZkdUI/asr.txt",
+    "asr_segments": 58,
+    "asr_annotation_file": "annotations/asr/esQ4m2ZkdUI.json",
+    "source_dataset": "stage3_av50_20261105"
+  },
+  "fbLRgKMQTs4": {
+    "video_id": "fbLRgKMQTs4",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/fbLRgKMQTs4.mp4",
+    "duration": 237.881,
+    "native_resolution": [
+      1280,
+      720
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/fbLRgKMQTs4/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/fbLRgKMQTs4/asr.txt",
+    "asr_segments": 50,
+    "asr_annotation_file": "annotations/asr/fbLRgKMQTs4.json",
+    "source_dataset": "stage3_av_next50_20261106"
+  },
+  "fpFVHA_0md8": {
+    "video_id": "fpFVHA_0md8",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/fpFVHA_0md8.mp4",
+    "duration": 523.601,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/fpFVHA_0md8/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/fpFVHA_0md8/asr.txt",
+    "asr_segments": 137,
+    "asr_annotation_file": "annotations/asr/fpFVHA_0md8.json",
+    "source_dataset": "stage3_av_visualfirst_next50_20261110"
+  },
+  "fsRrC53sWus": {
+    "video_id": "fsRrC53sWus",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/fsRrC53sWus.mp4",
+    "duration": 1096.918,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/fsRrC53sWus/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/fsRrC53sWus/asr.txt",
+    "asr_segments": 335,
+    "asr_annotation_file": "annotations/asr/fsRrC53sWus.json",
+    "source_dataset": "stage3_av_visualfirst_next50_20261110"
+  },
+  "g-ImEs1cANU": {
+    "video_id": "g-ImEs1cANU",
+    "split": "eval",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/eval_full295/g-ImEs1cANU.mp4",
+    "duration": 2074.61,
+    "native_resolution": [
+      640,
+      360
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/eval/g-ImEs1cANU/asr.txt",
+    "asr_segments": 512,
+    "asr_annotation_file": "annotations/asr/g-ImEs1cANU.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "ga3t4LCZ6P0": {
+    "video_id": "ga3t4LCZ6P0",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/ga3t4LCZ6P0.mp4",
+    "duration": 490.817,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/ga3t4LCZ6P0/asr.txt",
+    "asr_segments": 66,
+    "asr_annotation_file": "annotations/asr/ga3t4LCZ6P0.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "h14Ee2yAmUU": {
+    "video_id": "h14Ee2yAmUU",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/h14Ee2yAmUU.mp4",
+    "duration": 418.561,
+    "native_resolution": [
+      854,
+      480
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/h14Ee2yAmUU/asr.txt",
+    "asr_segments": 84,
+    "asr_annotation_file": "annotations/asr/h14Ee2yAmUU.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "h2geLj0rsf0": {
+    "video_id": "h2geLj0rsf0",
+    "split": "eval",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/eval_full295/h2geLj0rsf0.mp4",
+    "duration": 1683.863991,
+    "native_resolution": [
+      640,
+      360
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/eval/h2geLj0rsf0/asr.txt",
+    "asr_segments": 355,
+    "asr_annotation_file": "annotations/asr/h2geLj0rsf0.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "hPtVJaUsMpo": {
+    "video_id": "hPtVJaUsMpo",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/hPtVJaUsMpo.mp4",
+    "duration": 480.930998,
+    "native_resolution": [
+      1280,
+      720
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/hPtVJaUsMpo/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/hPtVJaUsMpo/asr.txt",
+    "asr_segments": 110,
+    "asr_annotation_file": "annotations/asr/hPtVJaUsMpo.json",
+    "source_dataset": "stage3_av_visualfirst_next50_20261110"
+  },
+  "hazy6gol4rE": {
+    "video_id": "hazy6gol4rE",
+    "split": "eval",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/eval_full295/hazy6gol4rE.mp4",
+    "duration": 1200.470998,
+    "native_resolution": [
+      640,
+      360
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": null,
+    "asr_segments": 0,
+    "asr_annotation_file": null,
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "hhZUYpfnoaA": {
+    "video_id": "hhZUYpfnoaA",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/hhZUYpfnoaA.mp4",
+    "duration": 917.301,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/hhZUYpfnoaA/asr.txt",
+    "asr_segments": 237,
+    "asr_annotation_file": "annotations/asr/hhZUYpfnoaA.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "i080vrj27_s": {
+    "video_id": "i080vrj27_s",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/i080vrj27_s.mp4",
+    "duration": 543.681,
+    "native_resolution": [
+      1280,
+      720
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/i080vrj27_s/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/i080vrj27_s/asr.txt",
+    "asr_segments": 139,
+    "asr_annotation_file": "annotations/asr/i080vrj27_s.json",
+    "source_dataset": "stage3_av_visualfirst_next50_20261110"
+  },
+  "i3AXB6mAoms": {
+    "video_id": "i3AXB6mAoms",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/i3AXB6mAoms.mp4",
+    "duration": 409.061,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_v3_reconsider_20261110/audio/i3AXB6mAoms.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/i3AXB6mAoms/asr.txt",
+    "asr_segments": 130,
+    "asr_annotation_file": "annotations/asr/i3AXB6mAoms.json",
+    "source_dataset": "stage3_av_visualfirst_regen14_reviewed_20261111"
+  },
+  "i53LOORRHW8": {
+    "video_id": "i53LOORRHW8",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/i53LOORRHW8.mp4",
+    "duration": 230.881,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/i53LOORRHW8/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/i53LOORRHW8/asr.txt",
+    "asr_segments": 29,
+    "asr_annotation_file": "annotations/asr/i53LOORRHW8.json",
+    "source_dataset": "stage3_av50_20261105"
+  },
+  "i6NjbpLUwak": {
+    "video_id": "i6NjbpLUwak",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/i6NjbpLUwak.mp4",
+    "duration": 691.741,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/i6NjbpLUwak/asr.txt",
+    "asr_segments": 100,
+    "asr_annotation_file": "annotations/asr/i6NjbpLUwak.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "i73ovcEL3OI": {
+    "video_id": "i73ovcEL3OI",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/i73ovcEL3OI.mp4",
+    "duration": 1156.395,
+    "native_resolution": [
+      854,
+      480
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/i73ovcEL3OI/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/i73ovcEL3OI/asr.txt",
+    "asr_segments": 222,
+    "asr_annotation_file": "annotations/asr/i73ovcEL3OI.json",
+    "source_dataset": "stage3_av_visualfirst_next50_20261110"
+  },
+  "iXEQcbgHybA": {
+    "video_id": "iXEQcbgHybA",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/iXEQcbgHybA.mp4",
+    "duration": 367.461,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/iXEQcbgHybA/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/iXEQcbgHybA/asr.txt",
+    "asr_segments": 93,
+    "asr_annotation_file": "annotations/asr/iXEQcbgHybA.json",
+    "source_dataset": "stage3_av_next50_20261106"
+  },
+  "j5hICPh4t5w": {
+    "video_id": "j5hICPh4t5w",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/j5hICPh4t5w.mp4",
+    "duration": 725.941,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/j5hICPh4t5w/asr.txt",
+    "asr_segments": 217,
+    "asr_annotation_file": "annotations/asr/j5hICPh4t5w.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "jEeJ8otZC0c": {
+    "video_id": "jEeJ8otZC0c",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/jEeJ8otZC0c.mp4",
+    "duration": 400.278,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/jEeJ8otZC0c/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/jEeJ8otZC0c/asr.txt",
+    "asr_segments": 131,
+    "asr_annotation_file": "annotations/asr/jEeJ8otZC0c.json",
+    "source_dataset": "stage3_av_visualfirst_next50_20261110"
+  },
+  "jO9qPNsmXfM": {
+    "video_id": "jO9qPNsmXfM",
+    "split": "eval",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/eval_full295/jO9qPNsmXfM.mp4",
+    "duration": 247.500998,
+    "native_resolution": [
+      640,
+      360
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/eval/jO9qPNsmXfM/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/eval/jO9qPNsmXfM/asr.txt",
+    "asr_segments": 49,
+    "asr_annotation_file": "annotations/asr/jO9qPNsmXfM.json",
+    "source_dataset": "stage3_av50_20261105"
+  },
+  "jRLJmHGc5n4": {
+    "video_id": "jRLJmHGc5n4",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/jRLJmHGc5n4.mp4",
+    "duration": 1023.521,
+    "native_resolution": [
+      428,
+      320
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/jRLJmHGc5n4/asr.txt",
+    "asr_segments": 193,
+    "asr_annotation_file": "annotations/asr/jRLJmHGc5n4.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "l6yKd_FZx5g": {
+    "video_id": "l6yKd_FZx5g",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/l6yKd_FZx5g.mp4",
+    "duration": 523.241,
+    "native_resolution": [
+      1280,
+      720
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/l6yKd_FZx5g/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/l6yKd_FZx5g/asr.txt",
+    "asr_segments": 162,
+    "asr_annotation_file": "annotations/asr/l6yKd_FZx5g.json",
+    "source_dataset": "stage3_av_visualfirst_next50_20261110"
+  },
+  "lNcaDxyPdEU": {
+    "video_id": "lNcaDxyPdEU",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/lNcaDxyPdEU.mp4",
+    "duration": 596.634,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/lNcaDxyPdEU/asr.txt",
+    "asr_segments": 138,
+    "asr_annotation_file": "annotations/asr/lNcaDxyPdEU.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "lREUPXCpK8Y": {
+    "video_id": "lREUPXCpK8Y",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/lREUPXCpK8Y.mp4",
+    "duration": 437.901,
+    "native_resolution": [
+      640,
+      480
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_v3_reconsider_20261110/audio/lREUPXCpK8Y.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/lREUPXCpK8Y/asr.txt",
+    "asr_segments": 117,
+    "asr_annotation_file": "annotations/asr/lREUPXCpK8Y.json",
+    "source_dataset": "stage3_av_visualfirst_regen14_reviewed_20261111"
+  },
+  "lUAn_1R7V3E": {
+    "video_id": "lUAn_1R7V3E",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/lUAn_1R7V3E.mp4",
+    "duration": 388.421,
+    "native_resolution": [
+      1280,
+      720
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/lUAn_1R7V3E/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/lUAn_1R7V3E/asr.txt",
+    "asr_segments": 105,
+    "asr_annotation_file": "annotations/asr/lUAn_1R7V3E.json",
+    "source_dataset": "stage3_av_next50_20261106"
+  },
+  "ltEmNQ6yzi4": {
+    "video_id": "ltEmNQ6yzi4",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/ltEmNQ6yzi4.mp4",
+    "duration": 252.481,
+    "native_resolution": [
+      1152,
+      720
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/ltEmNQ6yzi4/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/ltEmNQ6yzi4/asr.txt",
+    "asr_segments": 37,
+    "asr_annotation_file": "annotations/asr/ltEmNQ6yzi4.json",
+    "source_dataset": "stage3_av50_20261105"
+  },
+  "m--qyUUzH5U": {
+    "video_id": "m--qyUUzH5U",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/m--qyUUzH5U.mp4",
+    "duration": 385.301,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/m--qyUUzH5U/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/m--qyUUzH5U/asr.txt",
+    "asr_segments": 136,
+    "asr_annotation_file": "annotations/asr/m--qyUUzH5U.json",
+    "source_dataset": "stage3_av_next50_20261106"
+  },
+  "m9s5AD_lBkY": {
+    "video_id": "m9s5AD_lBkY",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/m9s5AD_lBkY.mp4",
+    "duration": 133.697,
+    "native_resolution": [
+      1280,
+      720
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/m9s5AD_lBkY/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/m9s5AD_lBkY/asr.txt",
+    "asr_segments": 27,
+    "asr_annotation_file": "annotations/asr/m9s5AD_lBkY.json",
+    "source_dataset": "stage3_av50_20261105"
+  },
+  "mOtEkKvHtV4": {
+    "video_id": "mOtEkKvHtV4",
+    "split": "eval",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/eval_full295/mOtEkKvHtV4.mp4",
+    "duration": 226.046009,
+    "native_resolution": [
+      640,
+      360
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/eval/mOtEkKvHtV4/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/eval/mOtEkKvHtV4/asr.txt",
+    "asr_segments": 31,
+    "asr_annotation_file": "annotations/asr/mOtEkKvHtV4.json",
+    "source_dataset": "stage3_av_next50_20261106"
+  },
+  "mtvIls5XQEE": {
+    "video_id": "mtvIls5XQEE",
+    "split": "eval",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/eval_full295/mtvIls5XQEE.mp4",
+    "duration": 398.64,
+    "native_resolution": [
+      640,
+      360
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/eval/mtvIls5XQEE/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/eval/mtvIls5XQEE/asr.txt",
+    "asr_segments": 72,
+    "asr_annotation_file": "annotations/asr/mtvIls5XQEE.json",
+    "source_dataset": "stage3_av50_20261105"
+  },
+  "mvqvDk0N0w0": {
+    "video_id": "mvqvDk0N0w0",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/mvqvDk0N0w0.mp4",
+    "duration": 288.941,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/mvqvDk0N0w0/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/mvqvDk0N0w0/asr.txt",
+    "asr_segments": 60,
+    "asr_annotation_file": "annotations/asr/mvqvDk0N0w0.json",
+    "source_dataset": "stage3_av50_20261105"
+  },
+  "mwbTqqIEv4U": {
+    "video_id": "mwbTqqIEv4U",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/mwbTqqIEv4U.mp4",
+    "duration": 358.461,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/mwbTqqIEv4U/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/mwbTqqIEv4U/asr.txt",
+    "asr_segments": 79,
+    "asr_annotation_file": "annotations/asr/mwbTqqIEv4U.json",
+    "source_dataset": "stage3_av_next50_20261106"
+  },
+  "nJCcJu4e-yM": {
+    "video_id": "nJCcJu4e-yM",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/nJCcJu4e-yM.mp4",
+    "duration": 451.001,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/nJCcJu4e-yM/asr.txt",
+    "asr_segments": 133,
+    "asr_annotation_file": "annotations/asr/nJCcJu4e-yM.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "nWyF1SoIeBQ": {
+    "video_id": "nWyF1SoIeBQ",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/nWyF1SoIeBQ.mp4",
+    "duration": 2437.9,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/nWyF1SoIeBQ/asr.txt",
+    "asr_segments": 696,
+    "asr_annotation_file": "annotations/asr/nWyF1SoIeBQ.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "o_Fmsk3QCkc": {
+    "video_id": "o_Fmsk3QCkc",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/o_Fmsk3QCkc.mp4",
+    "duration": 1201.621,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": null,
+    "asr_segments": 0,
+    "asr_annotation_file": null,
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "oo0hPKdtFSQ": {
+    "video_id": "oo0hPKdtFSQ",
+    "split": "eval",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/eval_full295/oo0hPKdtFSQ.mp4",
+    "duration": 411.55,
+    "native_resolution": [
+      640,
+      360
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/eval/oo0hPKdtFSQ/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/eval/oo0hPKdtFSQ/asr.txt",
+    "asr_segments": 74,
+    "asr_annotation_file": "annotations/asr/oo0hPKdtFSQ.json",
+    "source_dataset": "stage3_av50_20261105"
+  },
+  "opBV0BtJ81M": {
+    "video_id": "opBV0BtJ81M",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/opBV0BtJ81M.mp4",
+    "duration": 290.321,
+    "native_resolution": [
+      1280,
+      720
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/opBV0BtJ81M/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/opBV0BtJ81M/asr.txt",
+    "asr_segments": 67,
+    "asr_annotation_file": "annotations/asr/opBV0BtJ81M.json",
+    "source_dataset": "stage3_av50_20261105"
+  },
+  "oxR_3GAkQ6M": {
+    "video_id": "oxR_3GAkQ6M",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/oxR_3GAkQ6M.mp4",
+    "duration": 273.707,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/oxR_3GAkQ6M/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/oxR_3GAkQ6M/asr.txt",
+    "asr_segments": 56,
+    "asr_annotation_file": "annotations/asr/oxR_3GAkQ6M.json",
+    "source_dataset": "stage3_av50_20261105"
+  },
+  "pClYyRZlYE8": {
+    "video_id": "pClYyRZlYE8",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/pClYyRZlYE8.mp4",
+    "duration": 683.041,
+    "native_resolution": [
+      850,
+      480
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/pClYyRZlYE8/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/pClYyRZlYE8/asr.txt",
+    "asr_segments": 148,
+    "asr_annotation_file": "annotations/asr/pClYyRZlYE8.json",
+    "source_dataset": "stage3_av_visualfirst_next50_20261110"
+  },
+  "pXUwN6srPyQ": {
+    "video_id": "pXUwN6srPyQ",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/pXUwN6srPyQ.mp4",
+    "duration": 788.274,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/pXUwN6srPyQ/asr.txt",
+    "asr_segments": 157,
+    "asr_annotation_file": "annotations/asr/pXUwN6srPyQ.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "paJXt-YG2qg": {
+    "video_id": "paJXt-YG2qg",
+    "split": "eval",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/eval_full295/paJXt-YG2qg.mp4",
+    "duration": 280.473991,
+    "native_resolution": [
+      480,
+      360
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/eval/paJXt-YG2qg/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/eval/paJXt-YG2qg/asr.txt",
+    "asr_segments": 63,
+    "asr_annotation_file": "annotations/asr/paJXt-YG2qg.json",
+    "source_dataset": "stage3_av_next50_20261106"
+  },
+  "psvAcACvTcY": {
+    "video_id": "psvAcACvTcY",
+    "split": "eval",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/eval_full295/psvAcACvTcY.mp4",
+    "duration": 279.172993,
+    "native_resolution": [
+      576,
+      360
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/eval/psvAcACvTcY/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/eval/psvAcACvTcY/asr.txt",
+    "asr_segments": 51,
+    "asr_annotation_file": "annotations/asr/psvAcACvTcY.json",
+    "source_dataset": "stage3_av50_20261105"
+  },
+  "qB-vLjiupak": {
+    "video_id": "qB-vLjiupak",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/qB-vLjiupak.mp4",
+    "duration": 922.39,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/qB-vLjiupak/asr.txt",
+    "asr_segments": 243,
+    "asr_annotation_file": "annotations/asr/qB-vLjiupak.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "qYM2sft8R2I": {
+    "video_id": "qYM2sft8R2I",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/qYM2sft8R2I.mp4",
+    "duration": 492.221,
+    "native_resolution": [
+      854,
+      480
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/qYM2sft8R2I/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/qYM2sft8R2I/asr.txt",
+    "asr_segments": 106,
+    "asr_annotation_file": "annotations/asr/qYM2sft8R2I.json",
+    "source_dataset": "stage3_av_visualfirst_next50_20261110"
+  },
+  "qfvu9E2iy2k": {
+    "video_id": "qfvu9E2iy2k",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/qfvu9E2iy2k.mp4",
+    "duration": 1747.696009,
+    "native_resolution": [
+      960,
+      720
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/qfvu9E2iy2k/asr.txt",
+    "asr_segments": 350,
+    "asr_annotation_file": "annotations/asr/qfvu9E2iy2k.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "rI9hxJDMGGY": {
+    "video_id": "rI9hxJDMGGY",
+    "split": "eval",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/eval_full295/rI9hxJDMGGY.mp4",
+    "duration": 698.083991,
+    "native_resolution": [
+      640,
+      360
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/eval/rI9hxJDMGGY/asr.txt",
+    "asr_segments": 99,
+    "asr_annotation_file": "annotations/asr/rI9hxJDMGGY.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "rS1_6MsiGyg": {
+    "video_id": "rS1_6MsiGyg",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/rS1_6MsiGyg.mp4",
+    "duration": 309.934,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/rS1_6MsiGyg/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/rS1_6MsiGyg/asr.txt",
+    "asr_segments": 84,
+    "asr_annotation_file": "annotations/asr/rS1_6MsiGyg.json",
+    "source_dataset": "stage3_av_next50_20261106"
+  },
+  "rwdNv3SRT0A": {
+    "video_id": "rwdNv3SRT0A",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/rwdNv3SRT0A.mp4",
+    "duration": 941.621,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/rwdNv3SRT0A/asr.txt",
+    "asr_segments": 225,
+    "asr_annotation_file": "annotations/asr/rwdNv3SRT0A.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "t-UUe0r-XHk": {
+    "video_id": "t-UUe0r-XHk",
+    "split": "eval",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/eval_full295/t-UUe0r-XHk.mp4",
+    "duration": 337.757007,
+    "native_resolution": [
+      640,
+      360
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/eval/t-UUe0r-XHk/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/eval/t-UUe0r-XHk/asr.txt",
+    "asr_segments": 46,
+    "asr_annotation_file": "annotations/asr/t-UUe0r-XHk.json",
+    "source_dataset": "stage3_av_next50_20261106"
+  },
+  "tMpjaozbegU": {
+    "video_id": "tMpjaozbegU",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/tMpjaozbegU.mp4",
+    "duration": 273.761,
+    "native_resolution": [
+      1280,
+      720
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/tMpjaozbegU/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/tMpjaozbegU/asr.txt",
+    "asr_segments": 65,
+    "asr_annotation_file": "annotations/asr/tMpjaozbegU.json",
+    "source_dataset": "stage3_av_next50_20261106"
+  },
+  "tYUve9VrycE": {
+    "video_id": "tYUve9VrycE",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/tYUve9VrycE.mp4",
+    "duration": 350.034,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/tYUve9VrycE/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/tYUve9VrycE/asr.txt",
+    "asr_segments": 94,
+    "asr_annotation_file": "annotations/asr/tYUve9VrycE.json",
+    "source_dataset": "stage3_av_next50_20261106"
+  },
+  "uA7DYKzcZLw": {
+    "video_id": "uA7DYKzcZLw",
+    "split": "eval",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/eval_full295/uA7DYKzcZLw.mp4",
+    "duration": 392.649002,
+    "native_resolution": [
+      640,
+      360
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/eval/uA7DYKzcZLw/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/eval/uA7DYKzcZLw/asr.txt",
+    "asr_segments": 99,
+    "asr_annotation_file": "annotations/asr/uA7DYKzcZLw.json",
+    "source_dataset": "stage3_av50_20261105"
+  },
+  "v-Wb_N98h1Q": {
+    "video_id": "v-Wb_N98h1Q",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/v-Wb_N98h1Q.mp4",
+    "duration": 151.141,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/v-Wb_N98h1Q/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/v-Wb_N98h1Q/asr.txt",
+    "asr_segments": 21,
+    "asr_annotation_file": "annotations/asr/v-Wb_N98h1Q.json",
+    "source_dataset": "stage3_av50_20261105"
+  },
+  "v9ar1mhpT-g": {
+    "video_id": "v9ar1mhpT-g",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/v9ar1mhpT-g.mp4",
+    "duration": 101.201,
+    "native_resolution": [
+      3840,
+      2160
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/v9ar1mhpT-g/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/v9ar1mhpT-g/asr.txt",
+    "asr_segments": 25,
+    "asr_annotation_file": "annotations/asr/v9ar1mhpT-g.json",
+    "source_dataset": "stage3_av_next50_20261106"
+  },
+  "vIbcAv9udso": {
+    "video_id": "vIbcAv9udso",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/vIbcAv9udso.mp4",
+    "duration": 1300.281,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/vIbcAv9udso/asr.txt",
+    "asr_segments": 330,
+    "asr_annotation_file": "annotations/asr/vIbcAv9udso.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "vmmrjy1bhEc": {
+    "video_id": "vmmrjy1bhEc",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/vmmrjy1bhEc.mp4",
+    "duration": 113.857,
+    "native_resolution": [
+      1280,
+      720
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/vmmrjy1bhEc/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/vmmrjy1bhEc/asr.txt",
+    "asr_segments": 27,
+    "asr_annotation_file": "annotations/asr/vmmrjy1bhEc.json",
+    "source_dataset": "stage3_av50_20261105"
+  },
+  "vod2_bAvn2Y": {
+    "video_id": "vod2_bAvn2Y",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/vod2_bAvn2Y.mp4",
+    "duration": 183.638,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/vod2_bAvn2Y/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/vod2_bAvn2Y/asr.txt",
+    "asr_segments": 33,
+    "asr_annotation_file": "annotations/asr/vod2_bAvn2Y.json",
+    "source_dataset": "stage3_av50_20261105"
+  },
+  "vwAwvsN1mJU": {
+    "video_id": "vwAwvsN1mJU",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/vwAwvsN1mJU.mp4",
+    "duration": 1110.981,
+    "native_resolution": [
+      1620,
+      1080
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/vwAwvsN1mJU/asr.txt",
+    "asr_segments": 215,
+    "asr_annotation_file": "annotations/asr/vwAwvsN1mJU.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "w48FeCNOfaQ": {
+    "video_id": "w48FeCNOfaQ",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/w48FeCNOfaQ.mp4",
+    "duration": 599.641,
+    "native_resolution": [
+      1280,
+      720
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/w48FeCNOfaQ/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/w48FeCNOfaQ/asr.txt",
+    "asr_segments": 136,
+    "asr_annotation_file": "annotations/asr/w48FeCNOfaQ.json",
+    "source_dataset": "stage3_av_visualfirst_next50_20261110"
+  },
+  "w8wc8-40F1E": {
+    "video_id": "w8wc8-40F1E",
+    "split": "eval",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/eval_full295/w8wc8-40F1E.mp4",
+    "duration": 248.220998,
+    "native_resolution": [
+      640,
+      360
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/eval/w8wc8-40F1E/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/eval/w8wc8-40F1E/asr.txt",
+    "asr_segments": 57,
+    "asr_annotation_file": "annotations/asr/w8wc8-40F1E.json",
+    "source_dataset": "stage3_av50_20261105"
+  },
+  "wAABZF1aSO8": {
+    "video_id": "wAABZF1aSO8",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/wAABZF1aSO8.mp4",
+    "duration": 152.041,
+    "native_resolution": [
+      854,
+      470
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/wAABZF1aSO8/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/wAABZF1aSO8/asr.txt",
+    "asr_segments": 24,
+    "asr_annotation_file": "annotations/asr/wAABZF1aSO8.json",
+    "source_dataset": "stage3_av50_20261105"
+  },
+  "x1XR4AOi8q0": {
+    "video_id": "x1XR4AOi8q0",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/x1XR4AOi8q0.mp4",
+    "duration": 139.021,
+    "native_resolution": [
+      854,
+      470
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/x1XR4AOi8q0/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/x1XR4AOi8q0/asr.txt",
+    "asr_segments": 33,
+    "asr_annotation_file": "annotations/asr/x1XR4AOi8q0.json",
+    "source_dataset": "stage3_av50_20261105"
+  },
+  "xBDOuUxBswo": {
+    "video_id": "xBDOuUxBswo",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/xBDOuUxBswo.mp4",
+    "duration": 1290.181,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": null,
+    "asr_segments": 0,
+    "asr_annotation_file": null,
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "xIYFMfQuyt8": {
+    "video_id": "xIYFMfQuyt8",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/xIYFMfQuyt8.mp4",
+    "duration": 5289.121,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/xIYFMfQuyt8/asr.txt",
+    "asr_segments": 1594,
+    "asr_annotation_file": "annotations/asr/xIYFMfQuyt8.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "xLYBOf2da8s": {
+    "video_id": "xLYBOf2da8s",
+    "split": "eval",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/eval_full295/xLYBOf2da8s.mp4",
+    "duration": 721.791995,
+    "native_resolution": [
+      640,
+      360
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/eval/xLYBOf2da8s/asr.txt",
+    "asr_segments": 206,
+    "asr_annotation_file": "annotations/asr/xLYBOf2da8s.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "xa6U5rZIaGM": {
+    "video_id": "xa6U5rZIaGM",
+    "split": "eval",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/eval_full295/xa6U5rZIaGM.mp4",
+    "duration": 2175.756009,
+    "native_resolution": [
+      640,
+      360
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/eval/xa6U5rZIaGM/asr.txt",
+    "asr_segments": 468,
+    "asr_annotation_file": "annotations/asr/xa6U5rZIaGM.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "yGg7Ci88HrQ": {
+    "video_id": "yGg7Ci88HrQ",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/yGg7Ci88HrQ.mp4",
+    "duration": 243.754,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/yGg7Ci88HrQ/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/yGg7Ci88HrQ/asr.txt",
+    "asr_segments": 30,
+    "asr_annotation_file": "annotations/asr/yGg7Ci88HrQ.json",
+    "source_dataset": "stage3_av_next50_20261106"
+  },
+  "yJ2z3Ju0oow": {
+    "video_id": "yJ2z3Ju0oow",
+    "split": "train",
+    "stage3_value": "medium",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/yJ2z3Ju0oow.mp4",
+    "duration": 715.421,
+    "native_resolution": [
+      2940,
+      1800
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/yJ2z3Ju0oow/asr.txt",
+    "asr_segments": 221,
+    "asr_annotation_file": "annotations/asr/yJ2z3Ju0oow.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "yUKdf-HTD8M": {
+    "video_id": "yUKdf-HTD8M",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/yUKdf-HTD8M.mp4",
+    "duration": 758.059,
+    "native_resolution": [
+      1280,
+      720
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/yUKdf-HTD8M/asr.txt",
+    "asr_segments": 126,
+    "asr_annotation_file": "annotations/asr/yUKdf-HTD8M.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  },
+  "ybVsUDamHQA": {
+    "video_id": "ybVsUDamHQA",
+    "split": "eval",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/eval_full295/ybVsUDamHQA.mp4",
+    "duration": 160.901,
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "audio_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/eval/ybVsUDamHQA/audio.wav",
+    "audio_source_fallback": null,
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/eval/ybVsUDamHQA/asr.txt",
+    "asr_segments": 23,
+    "asr_annotation_file": "annotations/asr/ybVsUDamHQA.json",
+    "source_dataset": "stage3_av50_20261105"
+  },
+  "zV3hw_QbgK4": {
+    "video_id": "zV3hw_QbgK4",
+    "split": "train",
+    "stage3_value": "high",
+    "video_path": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/zV3hw_QbgK4.mp4",
+    "duration": 549.661,
+    "native_resolution": [
+      640,
+      480
+    ],
+    "audio_path": null,
+    "audio_source_fallback": "original video audio track; not extracted or validated in this packaging run",
+    "asr_source_path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/zV3hw_QbgK4/asr.txt",
+    "asr_segments": 170,
+    "asr_annotation_file": "annotations/asr/zV3hw_QbgK4.json",
+    "source_dataset": "stage3_remaining79/export_accepted79_20261111"
+  }
+}

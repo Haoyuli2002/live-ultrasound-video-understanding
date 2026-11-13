@@ -1,0 +1,278 @@
+{
+  "video_id": "ODF8ZLr_52s",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/ODF8ZLr_52s/asr.txt",
+  "segments": [
+    {
+      "start": 0.45,
+      "end": 7.75,
+      "text": "Hello everyone, this is Dr. Sam and this video is about appendix ultrasound pro-positioning"
+    },
+    {
+      "start": 9.16,
+      "end": 9.98,
+      "text": "on the left side."
+    },
+    {
+      "start": 10.0,
+      "end": 18.64,
+      "text": "is a schematic diagram showing ultrasound proposition. These dotted lines are the right and left"
+    },
+    {
+      "start": 18.64,
+      "end": 19.82,
+      "text": "of course to the margin."
+    },
+    {
+      "start": 21.66,
+      "end": 29.59,
+      "text": "This round structure is the umbilicus, this white box is the ultrasound probe."
+    },
+    {
+      "start": 31.06,
+      "end": 39.87,
+      "text": "and this red dot is the indicator or orientation marker and on the right side."
+    },
+    {
+      "start": 40.19,
+      "end": 44.57,
+      "text": "is the image formed when we place the probe in this manner."
+    },
+    {
+      "start": 46.53,
+      "end": 49.44,
+      "text": "The appendix has a variable location."
+    },
+    {
+      "start": 50.06,
+      "end": 59.6,
+      "text": "In the right lower quadrant, use a high frequency linear probe with a frequency between"
+    },
+    {
+      "start": 60.29,
+      "end": 69.84,
+      "text": "7 to 12 megahertz in patience with the larger body habitus use lower frequencies and"
+    },
+    {
+      "start": 70.0,
+      "end": 78.45,
+      "text": "And you can even use a Herveelinear probe, you can start by placing the probe lateral to the umbilicus."
+    },
+    {
+      "start": 80.19,
+      "end": 89.96,
+      "text": "in Transverse Orientation, in case of suspected appendicitis, place the"
+    },
+    {
+      "start": 90.0,
+      "end": 98.94,
+      "text": "probe over the area of tenderness, this helps in locating the appendix much faster."
+    },
+    {
+      "start": 100.64,
+      "end": 106.79,
+      "text": "the patient can help you in placing the probe over the area of maximal tenderness."
+    },
+    {
+      "start": 106.79,
+      "end": 109.97,
+      "text": "but this method is..."
+    },
+    {
+      "start": 110.0,
+      "end": 118.59,
+      "text": "not always reliable. Next apply graded compression to displays bow of gases."
+    },
+    {
+      "start": 120.61,
+      "end": 128.92,
+      "text": "and locate the source muscle by keeping the probe in this manner you will find the source"
+    },
+    {
+      "start": 128.92,
+      "end": 129.38,
+      "text": "The first muscle"
+    },
+    {
+      "start": 130.45,
+      "end": 139.98,
+      "text": "around here and this is the dirty shadowing due to bowel gases and you can also see some"
+    },
+    {
+      "start": 140.0,
+      "end": 149.93,
+      "text": "Some bowel loops move the probe laterally to the right of the patient to locate the"
+    },
+    {
+      "start": 150.0,
+      "end": 159.6,
+      "text": "Here we can see the abdominal muscles in cross section, the external oblique."
+    },
+    {
+      "start": 160.29,
+      "end": 169.87,
+      "text": "internal oblique and transverses muscles and below these muscles we can see the see-com it is filled"
+    },
+    {
+      "start": 170.0,
+      "end": 174.28,
+      "text": "with gas and gives us dirty posterior shadowing."
+    },
+    {
+      "start": 176.04,
+      "end": 179.22,
+      "text": "the Seacum will not have forestal take movements."
+    },
+    {
+      "start": 180.29,
+      "end": 186.9,
+      "text": "whereas the small bubble will have peristelting movements, that is how you can distinguish"
+    },
+    {
+      "start": 186.9,
+      "end": 189.6,
+      "text": "a Seacum from a small bubble."
+    },
+    {
+      "start": 192.46,
+      "end": 199.77,
+      "text": "Move the probe down towards the end of the Seacum, this is done to make sure we thoroughly"
+    },
+    {
+      "start": 200.0,
+      "end": 209.62,
+      "text": "right lower quadrant and it helps us in locating the appendix if it is not found up till this point."
+    },
+    {
+      "start": 210.86,
+      "end": 215.87,
+      "text": "Both the Seacum and the Appendix have variable location."
+    },
+    {
+      "start": 218.66,
+      "end": 219.36,
+      "text": "Move downwards."
+    },
+    {
+      "start": 220.0,
+      "end": 228.08,
+      "text": "And immediately to locate the iliac vessels, this is the iliac vessel."
+    },
+    {
+      "start": 230.42,
+      "end": 239.51,
+      "text": "This will be the image form, examine the media and lateral aspects."
+    },
+    {
+      "start": 240.13,
+      "end": 249.96,
+      "text": "of the seacom, usually the appendix is found near the source muscle and heliagweth."
+    },
+    {
+      "start": 250.0,
+      "end": 258.81,
+      "text": "I adjust the probe accordingly, like this, near the umbilicals."
+    },
+    {
+      "start": 260.61,
+      "end": 268.85,
+      "text": "until you find a target shaped non compressible structure, this will be the appendix."
+    },
+    {
+      "start": 270.48,
+      "end": 276.51,
+      "text": "The appendix can be distinguished from the small bubble by seeing the compressibility."
+    },
+    {
+      "start": 278.31,
+      "end": 279.87,
+      "text": "The small bubble is compressed."
+    },
+    {
+      "start": 280.0,
+      "end": 288.15,
+      "text": "when we apply probe pressure, but the appendix is not compressible when we apply probe pressure."
+    },
+    {
+      "start": 290.0,
+      "end": 295.13,
+      "text": "give the target sign appearance in transverse view."
+    },
+    {
+      "start": 297.34,
+      "end": 299.89,
+      "text": "Here is another image in the same looking"
+    },
+    {
+      "start": 300.06,
+      "end": 309.05,
+      "text": "With slight adjustment of the probe, we can see the appendix tubular shape of the appendix."
+    },
+    {
+      "start": 310.32,
+      "end": 319.8,
+      "text": "right here. It is near the Iliagwessel, after locating the pandix in transfer."
+    },
+    {
+      "start": 320.0,
+      "end": 329.34,
+      "text": "First view, slowly rotate the probe 90 degrees clockwise to scan in longitudinal plane."
+    },
+    {
+      "start": 331.6,
+      "end": 339.68,
+      "text": "This is the image of the appendix and longitudinal plane. This tubular structure"
+    },
+    {
+      "start": 340.0,
+      "end": 349.84,
+      "text": "is the appendix. Lightly adjust the probe in this area to scan the"
+    },
+    {
+      "start": 350.0,
+      "end": 358.14,
+      "text": "end of the appendix as well. Here we can see the blind end of the appendix."
+    },
+    {
+      "start": 360.32,
+      "end": 369.42,
+      "text": "and this is the expected location of the appendix, it has a variable location in different"
+    },
+    {
+      "start": 369.42,
+      "end": 369.64,
+      "text": "patient."
+    },
+    {
+      "start": 370.0,
+      "end": 379.96,
+      "text": "So there's no fixed location for the appendix the proposition and the location of the appendix"
+    },
+    {
+      "start": 380.03,
+      "end": 388.13,
+      "text": "shown in this video is for the location that is most commonly found and it should"
+    },
+    {
+      "start": 388.13,
+      "end": 389.93,
+      "text": "for normal appending."
+    },
+    {
+      "start": 392.66,
+      "end": 396.51,
+      "text": "Inflamed appendix is much easier to locate and scan."
+    },
+    {
+      "start": 399.38,
+      "end": 399.98,
+      "text": "Thank you so much."
+    },
+    {
+      "start": 400.0,
+      "end": 404.9,
+      "text": "for watching please subscribe and stay tuned for more imaging videos."
+    }
+  ]
+}

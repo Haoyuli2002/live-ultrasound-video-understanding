@@ -1,0 +1,1143 @@
+{
+  "video_id": "I3Jqbxa1_Ts",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/I3Jqbxa1_Ts/asr.txt",
+  "segments": [
+    {
+      "start": 13.39,
+      "end": 16.77,
+      "text": "This is Dr. Phil Pereira, and welcome to Sound Bites."
+    },
+    {
+      "start": 17.7,
+      "end": 19.64,
+      "text": "In this module, we're going to go over how to use ultrasound."
+    },
+    {
+      "start": 20.0,
+      "end": 24.06,
+      "text": "to guide us for the superclavicular subclavian vein cannulation."
+    },
+    {
+      "start": 25.94,
+      "end": 29.98,
+      "text": "The superclavicular approach to the subclavian vein is a great alternative to the"
+    },
+    {
+      "start": 30.0,
+      "end": 35.56,
+      "text": "traditional infeclavicular approach that's been emphasized over the years in medical and surgical"
+    },
+    {
+      "start": 35.56,
+      "end": 39.96,
+      "text": "training. For this approach, the catheter is placed into the"
+    },
+    {
+      "start": 40.0,
+      "end": 45.16,
+      "text": "subclavian vein above the clavicle, either very close to or at the junction with the internal"
+    },
+    {
+      "start": 45.16,
+      "end": 48.54,
+      "text": "jugular vein at the confluence of the brachiosophalic vein."
+    },
+    {
+      "start": 50.0,
+      "end": 55.0,
+      "text": "of this approach include a relatively short distance to the vein and less wire kinking than"
+    },
+    {
+      "start": 55.0,
+      "end": 59.92,
+      "text": "with the infra-clavicular approach. A nice article that goes over this approach was"
+    },
+    {
+      "start": 60.0,
+      "end": 63.14,
+      "text": "in the Western Journal of Emergency Medicine in 2009,"
+    },
+    {
+      "start": 63.86,
+      "end": 65.92,
+      "text": "by the authors listed below in the reference."
+    },
+    {
+      "start": 67.84,
+      "end": 69.88,
+      "text": "Let's take a moment to review the upper extremity"
+    },
+    {
+      "start": 70.0,
+      "end": 73.48,
+      "text": "venous anatomy that we'll need to know to perform superclavicular subclavian"
+    },
+    {
+      "start": 73.48,
+      "end": 78.01,
+      "text": "cannulation. The first landmark is the clavicle, and remember that as a"
+    },
+    {
+      "start": 78.01,
+      "end": 79.97,
+      "text": "subclavian vein passes ladle"
+    },
+    {
+      "start": 80.03,
+      "end": 82.29,
+      "text": "to the clavicle it becomes the axillary vein."
+    },
+    {
+      "start": 83.16,
+      "end": 85.2,
+      "text": "We can see the subclavian artery and vein"
+    },
+    {
+      "start": 85.2,
+      "end": 88.35,
+      "text": "running above and below the clavicle."
+    },
+    {
+      "start": 89.39,
+      "end": 89.97,
+      "text": "We can also see."
+    },
+    {
+      "start": 90.0,
+      "end": 93.78,
+      "text": "the internal jugular vein and carotid artery going up and down the neck."
+    },
+    {
+      "start": 95.02,
+      "end": 99.96,
+      "text": "We can see the confluence of the internal jugular vein and the subclavian vein to form"
+    },
+    {
+      "start": 100.0,
+      "end": 105.09,
+      "text": "the breakus cephalic veins. In effect, we're aiming at the confluence here, the"
+    },
+    {
+      "start": 105.09,
+      "end": 109.05,
+      "text": "breakus cephalic vein for placement of the catheter. And we can see that the"
+    },
+    {
+      "start": 109.05,
+      "end": 109.97,
+      "text": "breakus cephalic vein"
+    },
+    {
+      "start": 110.0,
+      "end": 114.96,
+      "text": "joined to become the Superior Vanacava going into the right HM and that's"
+    },
+    {
+      "start": 114.96,
+      "end": 119.98,
+      "text": "where we want to place the tip of the catheter. Now let's take a look at the"
+    },
+    {
+      "start": 120.0,
+      "end": 126.24,
+      "text": "essential anatomy from a lateral approach. We again note the clavicle here, forming the boundary"
+    },
+    {
+      "start": 126.24,
+      "end": 129.96,
+      "text": "between the subclavian artery and vein and the axillary artery and vein."
+    },
+    {
+      "start": 130.0,
+      "end": 137.7,
+      "text": "We see the subclavian artery and vein arching above and below the clavicle and we see the internal jugular vein and"
+    },
+    {
+      "start": 137.7,
+      "end": 139.84,
+      "text": "carotid artery going up and down the neck."
+    },
+    {
+      "start": 140.7,
+      "end": 143.12,
+      "text": "Notice again the confluence of the subclavian vein"
+    },
+    {
+      "start": 143.72,
+      "end": 146.76,
+      "text": "and the internal jugular vein at the brachiosophalic vein."
+    },
+    {
+      "start": 147.44,
+      "end": 149.38,
+      "text": "And again, that's what we'll be aiming with our needle."
+    },
+    {
+      "start": 150.48,
+      "end": 151.8,
+      "text": "Notice the brachioce valic vein,"
+    },
+    {
+      "start": 152.0,
+      "end": 153.66,
+      "text": "joining in the superior vein of kava"
+    },
+    {
+      "start": 153.66,
+      "end": 155.14,
+      "text": "and down into the heart."
+    },
+    {
+      "start": 156.79,
+      "end": 159.19,
+      "text": "Now let's take a moment to talk about ultrasound guidance"
+    },
+    {
+      "start": 159.19,
+      "end": 159.93,
+      "text": "for this..."
+    },
+    {
+      "start": 160.0,
+      "end": 165.05,
+      "text": "the subclavian vein. Traditionally, it's been thought to be difficult to image this portion"
+    },
+    {
+      "start": 165.05,
+      "end": 169.98,
+      "text": "of the subclavian vein as it arches above the clavicle. However, the super-"
+    },
+    {
+      "start": 170.06,
+      "end": 179.8,
+      "text": "The clavicular portion of the subclavian vein can be well visualized by placing the ultrasound probe in a medial position just above the clavicle and angling it down into the chest."
+    },
+    {
+      "start": 180.54,
+      "end": 183.1,
+      "text": "to visualize a subclavian vein just anterior"
+    },
+    {
+      "start": 183.1,
+      "end": 184.72,
+      "text": "to the subclavian artery."
+    },
+    {
+      "start": 186.07,
+      "end": 188.09,
+      "text": "In this illustration, we see the pro placed"
+    },
+    {
+      "start": 188.09,
+      "end": 189.67,
+      "text": "above the subclavian vein."
+    },
+    {
+      "start": 190.22,
+      "end": 192.48,
+      "text": "able to image it in a long axis orientation."
+    },
+    {
+      "start": 193.55,
+      "end": 195.89,
+      "text": "For this application, we'll want to use the high frequency,"
+    },
+    {
+      "start": 196.19,
+      "end": 198.25,
+      "text": "10 megahertz linear array type pro."
+    },
+    {
+      "start": 198.97,
+      "end": 199.93,
+      "text": "And notice that we have the"
+    },
+    {
+      "start": 200.1,
+      "end": 205.26,
+      "text": "angled anterior to pick up the vein which will be located anterior to the"
+    },
+    {
+      "start": 205.26,
+      "end": 209.74,
+      "text": "subclavian artery. Thus cannulation of the vessel will be performed."
+    },
+    {
+      "start": 210.03,
+      "end": 212.57,
+      "text": "and a long axis approach using ultrasound guidance."
+    },
+    {
+      "start": 215.55,
+      "end": 218.07,
+      "text": "An alternative approach to find the subclavian vein"
+    },
+    {
+      "start": 218.07,
+      "end": 219.97,
+      "text": "and brachiosyphalic vein is to"
+    },
+    {
+      "start": 220.0,
+      "end": 221.4,
+      "text": "to follow the internal jugular vein"
+    },
+    {
+      "start": 221.4,
+      "end": 222.66,
+      "text": "inferiorly down the neck."
+    },
+    {
+      "start": 223.38,
+      "end": 225.38,
+      "text": "We then will visualize the subclavian vein"
+    },
+    {
+      "start": 225.38,
+      "end": 227.68,
+      "text": "as it joins with the internal jugular vein"
+    },
+    {
+      "start": 227.68,
+      "end": 229.96,
+      "text": "at the confluence of the brachiocephalic."
+    },
+    {
+      "start": 230.13,
+      "end": 235.84,
+      "text": "And we can use Color Doppler flow imaging, as shown in the video box, to the upper right,"
+    },
+    {
+      "start": 236.2,
+      "end": 237.82,
+      "text": "to differentiate vein from artery."
+    },
+    {
+      "start": 238.6,
+      "end": 239.98,
+      "text": "Notice the characteristic pulsing."
+    },
+    {
+      "start": 240.0,
+      "end": 244.62,
+      "text": "of the artery, versus the constricted phasic respiratory home of the vein."
+    },
+    {
+      "start": 246.59,
+      "end": 249.17,
+      "text": "Do you use ultrasound guidance for the superclavicular approach?"
+    },
+    {
+      "start": 249.61,
+      "end": 249.97,
+      "text": "One-"
+    },
+    {
+      "start": 250.03,
+      "end": 255.52,
+      "text": "place the probe in a long axis orientation in the superclavicular fossa. As noted here"
+    },
+    {
+      "start": 255.52,
+      "end": 259.36,
+      "text": "in the picture to the upper right, we can see the probe placed over the top of the"
+    },
+    {
+      "start": 259.36,
+      "end": 259.88,
+      "text": "clavicle."
+    },
+    {
+      "start": 260.9,
+      "end": 263.2,
+      "text": "There's not a lot of space in the super clavicular fossa,"
+    },
+    {
+      "start": 263.52,
+      "end": 265.42,
+      "text": "and that's why it's easier to place the probe"
+    },
+    {
+      "start": 265.42,
+      "end": 267.36,
+      "text": "in a long axis orientation rather than"
+    },
+    {
+      "start": 267.36,
+      "end": 268.48,
+      "text": "a short axis approach."
+    },
+    {
+      "start": 269.18,
+      "end": 269.96,
+      "text": "We'll be using the high f-"
+    },
+    {
+      "start": 270.03,
+      "end": 272.73,
+      "text": "frequency linear array type probe for this application."
+    },
+    {
+      "start": 273.25,
+      "end": 275.65,
+      "text": "And because we want to use dynamic or real-time guidance,"
+    },
+    {
+      "start": 275.65,
+      "end": 278.05,
+      "text": "we're going to use a sterile sheet over the probe."
+    },
+    {
+      "start": 279.79,
+      "end": 279.97,
+      "text": "Now let's..."
+    },
+    {
+      "start": 280.0,
+      "end": 283.02,
+      "text": "Let's go over how to use ultrasound to visualize a subclavian vein."
+    },
+    {
+      "start": 283.58,
+      "end": 287.58,
+      "text": "We'll begin by running the probe down the neck to identify the internal jugular vein"
+    },
+    {
+      "start": 287.58,
+      "end": 289.04,
+      "text": "and lateral to the crotted artery."
+    },
+    {
+      "start": 289.6,
+      "end": 289.98,
+      "text": "We can..."
+    },
+    {
+      "start": 290.0,
+      "end": 293.76,
+      "text": "Push down with the probe to differentiate vein from artery as the vein should completely"
+    },
+    {
+      "start": 293.76,
+      "end": 296.5,
+      "text": "compress as long as there is no thrombosis present."
+    },
+    {
+      "start": 297.02,
+      "end": 299.86,
+      "text": "We can also use Doppler flow to differentiate the two vessels."
+    },
+    {
+      "start": 300.0,
+      "end": 307.0,
+      "text": "After we identify the internal jugular vein, within the neck, we'll run the probe even"
+    },
+    {
+      "start": 307.0,
+      "end": 309.98,
+      "text": "further inferiorly, down the neck and angle it down..."
+    },
+    {
+      "start": 310.0,
+      "end": 315.52,
+      "text": "into the chest. Now, note here that we're seeing the subclavian artery and the carotid"
+    },
+    {
+      "start": 315.52,
+      "end": 319.86,
+      "text": "artery and the confluence of the two vessels. And remember that the subclavian"
+    },
+    {
+      "start": 320.0,
+      "end": 323.1,
+      "text": "is going to be located posterior to the subclavian vein."
+    },
+    {
+      "start": 324.44,
+      "end": 326.7,
+      "text": "Next, we're going to orient the probe even more anteriorly,"
+    },
+    {
+      "start": 326.82,
+      "end": 329.84,
+      "text": "watching the internal jugular vein go down into the chest and join."
+    },
+    {
+      "start": 330.0,
+      "end": 334.78,
+      "text": "the subclavian vein at the confluence of the brachiocephalic vein, and we remember that"
+    },
+    {
+      "start": 334.78,
+      "end": 338.74,
+      "text": "the subclavian vein would be located more anteriorly than the subclavian artery."
+    },
+    {
+      "start": 340.13,
+      "end": 343.67,
+      "text": "Now let's take a look at some ultrasound images showing the internal jugular vein running"
+    },
+    {
+      "start": 343.67,
+      "end": 348.53,
+      "text": "down the neck and joining with the sub clavian vein at the brachycephalic confluence."
+    },
+    {
+      "start": 349.05,
+      "end": 349.87,
+      "text": "And we can see"
+    },
+    {
+      "start": 350.03,
+      "end": 355.89,
+      "text": "the subclavian vein, arching from the lateral aspect to the left of the image here, and joining"
+    },
+    {
+      "start": 355.89,
+      "end": 359.98,
+      "text": "with a breaky of cephalic vein medially. Again we'll be aiming the"
+    },
+    {
+      "start": 360.0,
+      "end": 364.68,
+      "text": "needle for the confluence of the subclavian vein down with the brachiocephalic vein."
+    },
+    {
+      "start": 365.35,
+      "end": 367.81,
+      "text": "And we can see that the structure is relatively superficial."
+    },
+    {
+      "start": 368.07,
+      "end": 369.97,
+      "text": "We can see that depth markers over to the right."
+    },
+    {
+      "start": 370.03,
+      "end": 374.09,
+      "text": "And we know that the subclavian vein is only at about one centimeter depth."
+    },
+    {
+      "start": 375.19,
+      "end": 379.97,
+      "text": "And this ultrasound image, we first locate the internal jugular vein, and then we orient the probe of the..."
+    },
+    {
+      "start": 380.0,
+      "end": 383.98,
+      "text": "bit more anteriorly to pick up that subclavian vein and the confluence of the"
+    },
+    {
+      "start": 383.98,
+      "end": 388.3,
+      "text": "brachiocephalic vein. So all we're doing is a slight tilt anteriorly with the"
+    },
+    {
+      "start": 388.3,
+      "end": 389.24,
+      "text": "probe to"
+    },
+    {
+      "start": 390.0,
+      "end": 393.4,
+      "text": "a subclavian vein running into the brachiocephalic vein."
+    },
+    {
+      "start": 393.92,
+      "end": 396.68,
+      "text": "And again, we can see the depth markers over to the right there."
+    },
+    {
+      "start": 397.16,
+      "end": 399.82,
+      "text": "And we notice that the subclavian vein is located at about"
+    },
+    {
+      "start": 400.0,
+      "end": 400.8,
+      "text": "one to two centimeters."
+    },
+    {
+      "start": 401.54,
+      "end": 403.94,
+      "text": "So again, it's a relatively superficial structure."
+    },
+    {
+      "start": 405.17,
+      "end": 407.35,
+      "text": "In this ultrasound image, we see the subclavian vein"
+    },
+    {
+      "start": 407.35,
+      "end": 409.47,
+      "text": "coming from lateral to the left of the screen."
+    },
+    {
+      "start": 410.0,
+      "end": 414.5,
+      "text": "And joining with the brachiocephalic vein medially, we can see a valve at the confluence between"
+    },
+    {
+      "start": 414.5,
+      "end": 415.34,
+      "text": "the two structures."
+    },
+    {
+      "start": 415.96,
+      "end": 419.98,
+      "text": "Our needle would come in from the lateral aspect and be aimed medially toward the…"
+    },
+    {
+      "start": 420.0,
+      "end": 423.92,
+      "text": "that confluence, and we can see that it would have to come down about two centimeters"
+    },
+    {
+      "start": 423.92,
+      "end": 428.83,
+      "text": "to successfully can relate the vessel. In this illustration, we'll go over the surface"
+    },
+    {
+      "start": 428.83,
+      "end": 429.97,
+      "text": "anatomy for the super..."
+    },
+    {
+      "start": 430.1,
+      "end": 434.16,
+      "text": "clavicular subclavian vein cannulation. The needle should be aimed towards the"
+    },
+    {
+      "start": 434.16,
+      "end": 437.72,
+      "text": "subclavian vein at the confluence of the internal jugular vein into the"
+    },
+    {
+      "start": 437.72,
+      "end": 439.98,
+      "text": "the brachiosyphalic vein, generally we're gonna-"
+    },
+    {
+      "start": 440.0,
+      "end": 445.02,
+      "text": "to place the needle off the back of the clavicular head of this sternoclietomastoid."
+    },
+    {
+      "start": 446.05,
+      "end": 448.09,
+      "text": "The needle should be aimed towards a sternal notch."
+    },
+    {
+      "start": 448.83,
+      "end": 449.97,
+      "text": "And again, it's a relatively..."
+    },
+    {
+      "start": 450.0,
+      "end": 455.01,
+      "text": "superficial stick. This video reviews the middle triangle of the neck as framed by the divisions"
+    },
+    {
+      "start": 455.01,
+      "end": 459.97,
+      "text": "of the sternocleidomastoid muscle. Remember that the sternal head will run medial? And the"
+    },
+    {
+      "start": 460.0,
+      "end": 461.4,
+      "text": "The clavicular head will run lateral."
+    },
+    {
+      "start": 462.68,
+      "end": 466.98,
+      "text": "The clavicle will form the inferior boundary of the middle triangle of the neck, and we"
+    },
+    {
+      "start": 466.98,
+      "end": 469.78,
+      "text": "can see the index finger placed within the middle triangle."
+    },
+    {
+      "start": 471.06,
+      "end": 475.81,
+      "text": "Within this triangle we'll run the internal jugular vein and the carotid artery, and that's"
+    },
+    {
+      "start": 475.81,
+      "end": 479.83,
+      "text": "where we want to be first locating with the probe the internal jugular vein as it runs"
+    },
+    {
+      "start": 480.03,
+      "end": 485.12,
+      "text": "down the neck. Here are the traditional surface landmarks for cannulation of the superclavicular"
+    },
+    {
+      "start": 485.12,
+      "end": 489.82,
+      "text": "subclavian bane. We want to identify the clavicular head of the sternocleidomastoid."
+    },
+    {
+      "start": 490.58,
+      "end": 492.74,
+      "text": "And that's generally where we'll be placing our needle."
+    },
+    {
+      "start": 493.51,
+      "end": 495.83,
+      "text": "The needle will be aimed towards a sternal notch immediately."
+    },
+    {
+      "start": 496.71,
+      "end": 499.97,
+      "text": "And we can see that the needle will be coming over the top of the clavicle"
+    },
+    {
+      "start": 500.0,
+      "end": 501.84,
+      "text": "and into the subclavian vein."
+    },
+    {
+      "start": 502.88,
+      "end": 506.32,
+      "text": "In this video clip we'll simulate the correct placement of the needle for cannulation"
+    },
+    {
+      "start": 506.32,
+      "end": 508.56,
+      "text": "of the subclavian vein above the clavicle."
+    },
+    {
+      "start": 510.0,
+      "end": 514.0,
+      "text": "I'm just illustrating where the subclavian vein should be running from lateral to medial."
+    },
+    {
+      "start": 514.66,
+      "end": 518.72,
+      "text": "And note here that we'll place the needle just lateral to the clavicular head of the sternoclade"
+    },
+    {
+      "start": 518.72,
+      "end": 519.42,
+      "text": "amastoid."
+    },
+    {
+      "start": 520.06,
+      "end": 523.3,
+      "text": "orientation towards the sternal notch of the sternum."
+    },
+    {
+      "start": 524.79,
+      "end": 526.51,
+      "text": "Next we'll add ultrasound into the mix,"
+    },
+    {
+      "start": 526.83,
+      "end": 529.47,
+      "text": "and here we're placing the high frequency linear array probe"
+    },
+    {
+      "start": 529.47,
+      "end": 529.97,
+      "text": "into the..."
+    },
+    {
+      "start": 530.0,
+      "end": 539.97,
+      "text": "superclivicular fossa just above the subclavian vein. So we'll be placing the needle on the lateral aspect of the probe so that we can watch the needle come down."
+    },
+    {
+      "start": 540.0,
+      "end": 547.8,
+      "text": "into the vessel. And again, I'm just emphasizing the standard trajectory of the needle from that lateral aspect of the"
+    },
+    {
+      "start": 547.8,
+      "end": 549.86,
+      "text": "the clavicular head of the sternocleidomast."
+    },
+    {
+      "start": 550.03,
+      "end": 558.1,
+      "text": "towards a sternal notch. Here, we get a different perspective for the placement of the probe in the long axis configuration, in the super-clivicular fossa."
+    },
+    {
+      "start": 558.54,
+      "end": 559.98,
+      "text": "And we see here that that needle should be..."
+    },
+    {
+      "start": 560.0,
+      "end": 565.42,
+      "text": "be oriented off the back of the probe or lateral to the probe. We'll be placing the needle"
+    },
+    {
+      "start": 565.42,
+      "end": 569.9,
+      "text": "directly underneath the probe so that we can watch it at all times as it goes down to the"
+    },
+    {
+      "start": 570.0,
+      "end": 574.68,
+      "text": "vessel to correctly cannulate the subclavian vein, and the needle should be aimed towards"
+    },
+    {
+      "start": 574.68,
+      "end": 575.6,
+      "text": "that sternal notch."
+    },
+    {
+      "start": 576.42,
+      "end": 579.96,
+      "text": "Here, we're going to successfully cannulate the subclavian vein using the Long Axe"
+    },
+    {
+      "start": 580.03,
+      "end": 584.6,
+      "text": "this approach under ultrasound guidance, and we can see the needle coming in from lateral"
+    },
+    {
+      "start": 584.6,
+      "end": 587.8,
+      "text": "to medial, successfully cannulating the subclavian vein."
+    },
+    {
+      "start": 588.44,
+      "end": 589.98,
+      "text": "Notice that the needle has a bright..."
+    },
+    {
+      "start": 590.0,
+      "end": 591.76,
+      "text": "or ecogenic appearance on ultrasound."
+    },
+    {
+      "start": 593.2,
+      "end": 594.36,
+      "text": "Here we'll stop the video clip,"
+    },
+    {
+      "start": 594.5,
+      "end": 595.66,
+      "text": "and we can see the tip of the needle"
+    },
+    {
+      "start": 595.66,
+      "end": 597.68,
+      "text": "centered within the subclavian vein."
+    },
+    {
+      "start": 598.5,
+      "end": 599.96,
+      "text": "We'll note the depth markers over to..."
+    },
+    {
+      "start": 600.0,
+      "end": 602.02,
+      "text": "to the right of the ultrasound image here,"
+    },
+    {
+      "start": 602.24,
+      "end": 603.94,
+      "text": "and we can see that the subclavian vein"
+    },
+    {
+      "start": 603.94,
+      "end": 605.74,
+      "text": "is at about one to two centimeters."
+    },
+    {
+      "start": 606.4,
+      "end": 607.62,
+      "text": "And we need to keep this in mind,"
+    },
+    {
+      "start": 607.96,
+      "end": 609.98,
+      "text": "as the dome of the lung is relatively close."
+    },
+    {
+      "start": 610.0,
+      "end": 614.3,
+      "text": "to the subclavian vein, and we want to keep that tip of the needle relatively superficial."
+    },
+    {
+      "start": 614.93,
+      "end": 618.75,
+      "text": "Once we've had a successful cannulation of the vessel, we can actually guide the guide"
+    },
+    {
+      "start": 618.75,
+      "end": 619.97,
+      "text": "wire using ultrasound..."
+    },
+    {
+      "start": 620.03,
+      "end": 624.11,
+      "text": "guidance. And this is helpful as we want to make sure that the guide wire passes"
+    },
+    {
+      "start": 624.11,
+      "end": 628.42,
+      "text": "without obstruction down into the vessel loomant. In this video clip we can"
+    },
+    {
+      "start": 628.42,
+      "end": 629.64,
+      "text": "actually see the guide wire"
+    },
+    {
+      "start": 630.06,
+      "end": 635.18,
+      "text": "advanced through the catheter, into the subclavian vein laterally, and being pushed down,"
+    },
+    {
+      "start": 635.44,
+      "end": 639.96,
+      "text": "the subclavian vein into the confluence with the brachiocephalic vein medial and to the"
+    },
+    {
+      "start": 640.1,
+      "end": 645.55,
+      "text": "Next, we can watch as the guide wire is further advanced down the brachial cephalic vein into"
+    },
+    {
+      "start": 645.55,
+      "end": 649.97,
+      "text": "the superior vanicava, and here we can see the echogenic guide wire coming from..."
+    },
+    {
+      "start": 650.03,
+      "end": 653.93,
+      "text": "left down the subclavian into the brachiocephalic and into the superior vein"
+    },
+    {
+      "start": 653.93,
+      "end": 657.91,
+      "text": "acava. And remember that we want to position the tip of the guide wire and"
+    },
+    {
+      "start": 657.91,
+      "end": 659.97,
+      "text": "then the resulting catheter within the"
+    },
+    {
+      "start": 660.0,
+      "end": 664.28,
+      "text": "superior banecava so that it doesn't enter into the right atrium. To summarize some of"
+    },
+    {
+      "start": 664.28,
+      "end": 668.42,
+      "text": "the important parts of this module, I want to emphasize that the superclivicular approach"
+    },
+    {
+      "start": 668.42,
+      "end": 669.98,
+      "text": "to subclavian vein is a great ol..."
+    },
+    {
+      "start": 670.0,
+      "end": 674.46,
+      "text": "alternative to the traditional infraclavicular approach, and one in which ultrasound guidance"
+    },
+    {
+      "start": 674.46,
+      "end": 678.76,
+      "text": "can be used dynamically, or real-time to guide the needle down into the vein."
+    },
+    {
+      "start": 679.32,
+      "end": 679.98,
+      "text": "Hopefully to de-"
+    },
+    {
+      "start": 680.1,
+      "end": 683.04,
+      "text": "the risk of complications to our patient during the procedure."
+    },
+    {
+      "start": 683.87,
+      "end": 688.31,
+      "text": "As we discussed, the subclavian vein cannulation is performed with the ultrasound probe held"
+    },
+    {
+      "start": 688.31,
+      "end": 689.49,
+      "text": "in the long axis orientation."
+    },
+    {
+      "start": 690.22,
+      "end": 691.64,
+      "text": "in the superclivicular fossa,"
+    },
+    {
+      "start": 692.04,
+      "end": 694.18,
+      "text": "so that the needle will enter off the back of the probe,"
+    },
+    {
+      "start": 694.58,
+      "end": 697.12,
+      "text": "laterally, and be advanced in a long axis view"
+    },
+    {
+      "start": 697.12,
+      "end": 698.16,
+      "text": "down into the vein."
+    },
+    {
+      "start": 699.06,
+      "end": 699.96,
+      "text": "Let's finish here with a disc..."
+    },
+    {
+      "start": 700.06,
+      "end": 703.02,
+      "text": "of some of the potential complications of this approach,"
+    },
+    {
+      "start": 703.44,
+      "end": 705.94,
+      "text": "the first of which is inadvertent pneumothorax."
+    },
+    {
+      "start": 706.68,
+      "end": 709.12,
+      "text": "Now the subclavian vein is relatively close to the lung,"
+    },
+    {
+      "start": 709.44,
+      "end": 709.96,
+      "text": "the dome of the lung."
+    },
+    {
+      "start": 710.0,
+      "end": 713.8,
+      "text": "and for that reason we'll traditionally go on the right side where the right side of the"
+    },
+    {
+      "start": 713.8,
+      "end": 718.38,
+      "text": "lung is a little lower at the dome than on the left side. We can actually visualize the"
+    },
+    {
+      "start": 718.38,
+      "end": 719.9,
+      "text": "dome the lung with ultrasound as"
+    },
+    {
+      "start": 720.0,
+      "end": 723.92,
+      "text": "seen in the video box to the upper right, we can see the plural surfaces moving back and"
+    },
+    {
+      "start": 723.92,
+      "end": 726.82,
+      "text": "forth as the patient breathes, and this is called lung sliding."
+    },
+    {
+      "start": 727.28,
+      "end": 729.42,
+      "text": "So we can visualize the lung and avoid it."
+    },
+    {
+      "start": 730.1,
+      "end": 734.36,
+      "text": "One avoid deep punctures with the needle, and keep that needle tip visualized at all times"
+    },
+    {
+      "start": 734.36,
+      "end": 736.46,
+      "text": "as we advance it down into the vein."
+    },
+    {
+      "start": 737.21,
+      "end": 739.97,
+      "text": "A second potential complication is inadvertent puncture of the"
+    },
+    {
+      "start": 740.0,
+      "end": 742.6,
+      "text": "the subclavian artery during the cannulation procedure."
+    },
+    {
+      "start": 743.62,
+      "end": 745.74,
+      "text": "Remember that the subclavian vein lies anterior"
+    },
+    {
+      "start": 745.74,
+      "end": 747.0,
+      "text": "to the subclavian artery,"
+    },
+    {
+      "start": 747.28,
+      "end": 749.98,
+      "text": "and we can actually identify both structures prior to..."
+    },
+    {
+      "start": 750.0,
+      "end": 755.1,
+      "text": "for attempts using ultrasound. We can use color flow Doppler imaging to differentiate the"
+    },
+    {
+      "start": 755.1,
+      "end": 759.82,
+      "text": "artery from the vein, and it's seen in the mini boxes to the upper part of the video here."
+    },
+    {
+      "start": 760.29,
+      "end": 765.25,
+      "text": "We can see to the left the pulsations within the subclavian artery, and the venous"
+    },
+    {
+      "start": 765.25,
+      "end": 768.75,
+      "text": "hum to the right there within the subclavian vein."
+    },
+    {
+      "start": 770.06,
+      "end": 775.54,
+      "text": "that needle anteriorly at all times to avoid the subclavian artery, so as not to inadvertently"
+    },
+    {
+      "start": 775.54,
+      "end": 779.97,
+      "text": "puncture it during the cannulation procedure. So while it's important to discuss the"
+    },
+    {
+      "start": 780.03,
+      "end": 783.85,
+      "text": "potential complications of this approach, I feel that this is a great line in clinical"
+    },
+    {
+      "start": 783.85,
+      "end": 788.55,
+      "text": "use, and one that's actually better or safer for our patients than a traditional blind"
+    },
+    {
+      "start": 788.55,
+      "end": 789.97,
+      "text": "landmark-based infertile."
+    },
+    {
+      "start": 791.83,
+      "end": 796.03,
+      "text": "So I hope it's something that you'll give a try in the clinical areas using ultrasound"
+    },
+    {
+      "start": 796.03,
+      "end": 796.59,
+      "text": "guidance."
+    },
+    {
+      "start": 797.05,
+      "end": 799.98,
+      "text": "And I look forward to seeing you back in the future as sound-"
+    }
+  ]
+}

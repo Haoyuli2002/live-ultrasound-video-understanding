@@ -1,0 +1,658 @@
+{
+  "video_id": "i3AXB6mAoms",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/i3AXB6mAoms/asr.txt",
+  "segments": [
+    {
+      "start": 1.79,
+      "end": 9.98,
+      "text": "Lumbar Plexus block is an advanced regional technique that enists..."
+    },
+    {
+      "start": 10.0,
+      "end": 14.42,
+      "text": "is multiple nerves in the lower limb in one go. In this video we'll discuss the anatomy,"
+    },
+    {
+      "start": 14.72,
+      "end": 18.62,
+      "text": "sonoanatomy, technique, and things to watch out for when performing an ultrasound guided"
+    },
+    {
+      "start": 18.62,
+      "end": 19.98,
+      "text": "lumbar plexus block. The lumbar plexus block, the lumbar plexus block, the lumbar plexus block, the lumbar plexus block, the lumbar plexus block, the lumbar plexus block, the lumbar plexus block, the lumbar plexus block, the lumbar plexus block, the lumbar plexus block, the lumbar plexus block, the lumbar plexus block, the lumbar plexus block, the lumbar plexus block."
+    },
+    {
+      "start": 20.0,
+      "end": 23.9,
+      "text": "Lumbar plexus is derived from the ventral raymy of L1, 2, 3, and 4."
+    },
+    {
+      "start": 24.36,
+      "end": 28.96,
+      "text": "These raymy merge and form a plexus that lies just lateral to the lumbar vertebrae within"
+    },
+    {
+      "start": 28.96,
+      "end": 29.98,
+      "text": "substance of this"
+    },
+    {
+      "start": 30.03,
+      "end": 31.71,
+      "text": "Sois major muscle, seen here in blue."
+    },
+    {
+      "start": 32.27,
+      "end": 33.91,
+      "text": "The individual branches of the plexus"
+    },
+    {
+      "start": 33.91,
+      "end": 36.19,
+      "text": "then emerge from the sois at various points"
+    },
+    {
+      "start": 36.19,
+      "end": 38.21,
+      "text": "and continue down to the anterior thigh"
+    },
+    {
+      "start": 38.21,
+      "end": 39.71,
+      "text": "to innovate their respective targets."
+    },
+    {
+      "start": 40.26,
+      "end": 44.5,
+      "text": "There are 6 branches of the lumbar plexus, so blocking this is effectively a 6 in 1 block."
+    },
+    {
+      "start": 44.99,
+      "end": 47.31,
+      "text": "I'll see your 3 in 1 block and raise you another 3."
+    },
+    {
+      "start": 47.63,
+      "end": 49.96,
+      "text": "And those are the femoral nerve, the up..."
+    },
+    {
+      "start": 50.03,
+      "end": 59.9,
+      "text": "The lateral femoral coutaneous nerve, the gendered ephemeral nerve, which divides to give a genital and femoral branch, the iliohypagastric nerve, and the ilio-inguinal nerve."
+    },
+    {
+      "start": 60.29,
+      "end": 62.73,
+      "text": "Here's a cross sectional view of the Lombard Paraspanal area."
+    },
+    {
+      "start": 63.09,
+      "end": 66.27,
+      "text": "We see our old friends, the erector spinae and quadratus lumborum muscles."
+    },
+    {
+      "start": 66.69,
+      "end": 69.97,
+      "text": "The SOS muscle is located anterior to the transverse process and t-"
+    },
+    {
+      "start": 70.13,
+      "end": 74.43,
+      "text": "in tight to the vertebral body. You can appreciate a facial plane that runs through the"
+    },
+    {
+      "start": 74.43,
+      "end": 78.21,
+      "text": "sois about two-thirds of the way back. This plane is a channel in which the lumbar"
+    },
+    {
+      "start": 78.21,
+      "end": 79.97,
+      "text": "plexus travels. You can sometimes see..."
+    },
+    {
+      "start": 80.0,
+      "end": 83.36,
+      "text": "this on ultrasound as we'll see later, but the important thing to note is where we expect"
+    },
+    {
+      "start": 83.36,
+      "end": 87.9,
+      "text": "to find the plexus, which is here, at the junction of the anterior two-thirds and posterior"
+    },
+    {
+      "start": 87.9,
+      "end": 89.36,
+      "text": "one-third of the seosmosyl."
+    },
+    {
+      "start": 89.62,
+      "end": 89.98,
+      "text": "There is..."
+    },
+    {
+      "start": 90.0,
+      "end": 93.54,
+      "text": "variability in this, as was outlined in this seminal paper. What do these nerves"
+    },
+    {
+      "start": 93.54,
+      "end": 97.86,
+      "text": "innovate? Well, the femoral, obturator, and LFCN contribute a lot to the thigh,"
+    },
+    {
+      "start": 98.1,
+      "end": 99.98,
+      "text": "and this helps inform our indications where..."
+    },
+    {
+      "start": 100.0,
+      "end": 103.8,
+      "text": "We're mostly using this for procedures on the anterior thigh or the hip or knee joint."
+    },
+    {
+      "start": 104.08,
+      "end": 107.52,
+      "text": "We also have these three nerves which innervate the skin of the lower abdominal wall,"
+    },
+    {
+      "start": 107.9,
+      "end": 109.84,
+      "text": "groin, upper thigh, and the mons pubis."
+    },
+    {
+      "start": 110.13,
+      "end": 114.24,
+      "text": "labia majora and scrotum. We rarely use lumbar plexus blocks specifically for these nerves."
+    },
+    {
+      "start": 114.52,
+      "end": 118.12,
+      "text": "We can pick them off individually and more superficially using different techniques which"
+    },
+    {
+      "start": 118.12,
+      "end": 119.98,
+      "text": "we'll outline in other videos. But just know-"
+    },
+    {
+      "start": 120.0,
+      "end": 123.34,
+      "text": "you'll get them as part of the package. We use Lombard Plexus block for complex"
+    },
+    {
+      "start": 123.34,
+      "end": 126.86,
+      "text": "revision hip or knee or ortho-oncologic procedures that involve extensive"
+    },
+    {
+      "start": 126.86,
+      "end": 129.84,
+      "text": "surgical trauma. This is also a great block for lower"
+    },
+    {
+      "start": 130.0,
+      "end": 135.1,
+      "text": "amputation. Remember, if you get the femoral, optrator, and LFCN, all you need for complete"
+    },
+    {
+      "start": 135.1,
+      "end": 139.24,
+      "text": "surgical anesthesia of the lower extremity is a proximal sciatic block. We've gotten"
+    },
+    {
+      "start": 139.24,
+      "end": 139.98,
+      "text": "and some very..."
+    },
+    {
+      "start": 140.0,
+      "end": 143.08,
+      "text": "sick patients through hip fracture repair or amputation with this technique."
+    },
+    {
+      "start": 143.38,
+      "end": 146.5,
+      "text": "To image the lumbar plexus, we're going to place the patient in a lateral position."
+    },
+    {
+      "start": 146.82,
+      "end": 149.82,
+      "text": "We'll palpate the iliac crests and imagine a line drawn between them."
+    },
+    {
+      "start": 150.29,
+      "end": 155.05,
+      "text": "Curvelling your probe is placed in the transverse orientation over the midline of the back on top of that line."
+    },
+    {
+      "start": 155.53,
+      "end": 159.69,
+      "text": "Then follow the bony anatomy laterally aiming the beam toward the vertebra at all times."
+    },
+    {
+      "start": 160.1,
+      "end": 161.86,
+      "text": "until we're visualizing the transverse process,"
+    },
+    {
+      "start": 162.16,
+      "end": 163.66,
+      "text": "sticking up and the para-spinal muscles."
+    },
+    {
+      "start": 163.96,
+      "end": 165.5,
+      "text": "The needle will come in from the medial aspect."
+    },
+    {
+      "start": 166.15,
+      "end": 167.11,
+      "text": "Here's that scanning progression."
+    },
+    {
+      "start": 167.68,
+      "end": 169.46,
+      "text": "We see the shadow of the spine is processed first."
+    },
+    {
+      "start": 170.38,
+      "end": 174.58,
+      "text": "And then, as we move lateral, we'll see the articular facet and the transverse process."
+    },
+    {
+      "start": 174.84,
+      "end": 178.92,
+      "text": "We rotate the beam into the middle of the patient until it appears like the tp is pointing"
+    },
+    {
+      "start": 178.92,
+      "end": 179.9,
+      "text": "to the top of the screen."
+    },
+    {
+      "start": 180.29,
+      "end": 184.89,
+      "text": "We now appreciate the superficial ES and lat dorsi muscles, the QL muscle, and deep to"
+    },
+    {
+      "start": 184.89,
+      "end": 185.71,
+      "text": "that, the sois."
+    },
+    {
+      "start": 186.22,
+      "end": 189.98,
+      "text": "The roots of the plexus will emerge from the foreman and pass into the sois muscle like this"
+    },
+    {
+      "start": 190.0,
+      "end": 194.14,
+      "text": "This, the roots are sometimes visible as a bright streak within the muscle, but not always."
+    },
+    {
+      "start": 194.52,
+      "end": 198.48,
+      "text": "The needle trajectory will be like this, aiming for the posterior medial quadrant of the muscle."
+    },
+    {
+      "start": 198.72,
+      "end": 199.98,
+      "text": "You'll want to slightly shift your..."
+    },
+    {
+      "start": 200.13,
+      "end": 203.93,
+      "text": "Probe's cephaladder caudid to get out of the way of the TP to accommodate your needle."
+    },
+    {
+      "start": 204.23,
+      "end": 207.81,
+      "text": "And because we don't see the plexus routinely, we'll always combine ultrasound with nerve"
+    },
+    {
+      "start": 207.81,
+      "end": 209.75,
+      "text": "stimulation to ensure we're in the correct plane."
+    },
+    {
+      "start": 210.26,
+      "end": 211.16,
+      "text": "Okay, so let's do this."
+    },
+    {
+      "start": 211.58,
+      "end": 215.66,
+      "text": "Here we see our perisponal image with the shadow of the L3 vertebra and the QL and"
+    },
+    {
+      "start": 215.66,
+      "end": 216.26,
+      "text": "sois muscles."
+    },
+    {
+      "start": 216.56,
+      "end": 219.96,
+      "text": "There's a bright streak here within the sois that might be the lumbar plexus."
+    },
+    {
+      "start": 220.06,
+      "end": 224.12,
+      "text": "We insert the needle and quickly see that it's too shallow."
+    },
+    {
+      "start": 224.46,
+      "end": 226.44,
+      "text": "We're up in the plane between QL and Sois."
+    },
+    {
+      "start": 226.68,
+      "end": 228.66,
+      "text": "Great for a QL block, but not today."
+    },
+    {
+      "start": 229.18,
+      "end": 229.98,
+      "text": "Let's withdraw and try..."
+    },
+    {
+      "start": 230.0,
+      "end": 239.38,
+      "text": "again. Next pass, we get into what feels and looks like the right plane. We're not getting any motor"
+    },
+    {
+      "start": 239.38,
+      "end": 239.98,
+      "text": "The response is..."
+    },
+    {
+      "start": 240.0,
+      "end": 242.14,
+      "text": "of the femoral nerve, so it's not reassuring."
+    },
+    {
+      "start": 242.78,
+      "end": 244.24,
+      "text": "Let's aim a little more medial."
+    },
+    {
+      "start": 250.54,
+      "end": 253.78,
+      "text": "At this time, when we land in the plane, we have a brisk quadriceps twitch."
+    },
+    {
+      "start": 254.29,
+      "end": 257.35,
+      "text": "We'll aspirate and then start to slowly administer the local anesthetic."
+    },
+    {
+      "start": 258.42,
+      "end": 259.98,
+      "text": "You can see the plane unzippering..."
+    },
+    {
+      "start": 260.0,
+      "end": 261.32,
+      "text": "nicely with minimal resistance."
+    },
+    {
+      "start": 262.02,
+      "end": 264.02,
+      "text": "We'll give our whole dose here without moving our needle."
+    },
+    {
+      "start": 270.32,
+      "end": 274.14,
+      "text": "And as a compartment fills up, we begin to see one of the bright lumbar plexus elements"
+    },
+    {
+      "start": 274.14,
+      "end": 276.3,
+      "text": "totally surrounded by local anesthetic."
+    },
+    {
+      "start": 276.87,
+      "end": 277.15,
+      "text": "Nice one."
+    },
+    {
+      "start": 280.1,
+      "end": 283.28,
+      "text": "The lumbar plexus block is a compartment block, and you'll need to fill out that space."
+    },
+    {
+      "start": 283.64,
+      "end": 288.62,
+      "text": "We usually use 0.3 mils per kilo, which amounts to about 20 to 25 mils in most adults."
+    },
+    {
+      "start": 288.62,
+      "end": 289.98,
+      "text": "This so-as-mustle is-"
+    },
+    {
+      "start": 290.0,
+      "end": 294.7,
+      "text": "richly vascularized, it's the juicy tenderloin after all, and so we'll always use epinephrine"
+    },
+    {
+      "start": 294.7,
+      "end": 298.58,
+      "text": "to raise a constrict and keep a concentration as low as possible that gets the job done."
+    },
+    {
+      "start": 299.02,
+      "end": 299.98,
+      "text": "We'll use point 2 per..."
+    },
+    {
+      "start": 300.0,
+      "end": 305.12,
+      "text": "repivocane for analgesia and 0.375 to 0.5% for surgical anesthesia."
+    },
+    {
+      "start": 305.58,
+      "end": 306.7,
+      "text": "And here's some Lomarplexes tips."
+    },
+    {
+      "start": 307.06,
+      "end": 309.94,
+      "text": "First, because this is a deep paris spinal block, you must ensure"
+    },
+    {
+      "start": 310.0,
+      "end": 313.7,
+      "text": "there are no coagulation problems. We treat this like we would a niraxial technique"
+    },
+    {
+      "start": 313.7,
+      "end": 317.84,
+      "text": "and make sure the patient has held anticoagulant medications for the appropriate time interval."
+    },
+    {
+      "start": 318.06,
+      "end": 319.98,
+      "text": "There have been reports of serious retroperitone"
+    },
+    {
+      "start": 320.0,
+      "end": 321.3,
+      "text": "Neal hematomas with this block."
+    },
+    {
+      "start": 321.8,
+      "end": 323.72,
+      "text": "Second, keep your injection pressure low"
+    },
+    {
+      "start": 323.72,
+      "end": 325.76,
+      "text": "to avoid forcing local anesthetic spread"
+    },
+    {
+      "start": 325.76,
+      "end": 327.52,
+      "text": "to other less desirable locations."
+    },
+    {
+      "start": 327.98,
+      "end": 329.98,
+      "text": "In this study, we randomized patients to get lemma-"
+    },
+    {
+      "start": 330.0,
+      "end": 332.64,
+      "text": "or plexus block with low pressure, less than 15 psi,"
+    },
+    {
+      "start": 332.92,
+      "end": 334.86,
+      "text": "or high pressure, just over 20 psi."
+    },
+    {
+      "start": 335.14,
+      "end": 337.38,
+      "text": "The low pressure group, all did fine with no complications."
+    },
+    {
+      "start": 337.94,
+      "end": 339.98,
+      "text": "In the high pressure group, 60% went..."
+    },
+    {
+      "start": 340.0,
+      "end": 344.34,
+      "text": "found up with a bilateral epidural block above T10, and one had a block to T4."
+    },
+    {
+      "start": 344.58,
+      "end": 348.86,
+      "text": "Epidural spread like this is unnecessary and carries hemodynamic consequences, aimed"
+    },
+    {
+      "start": 348.86,
+      "end": 349.98,
+      "text": "for low and slow"
+    },
+    {
+      "start": 350.0,
+      "end": 353.95,
+      "text": "when it comes to injection pressure and speed. Be careful about aiming your needle to"
+    },
+    {
+      "start": 353.95,
+      "end": 357.85,
+      "text": "medial toward the ferraiman. It's known that the durable cuff of the nerve roots extends"
+    },
+    {
+      "start": 357.85,
+      "end": 359.85,
+      "text": "for several millimeters after leaving the spine."
+    },
+    {
+      "start": 360.16,
+      "end": 361.74,
+      "text": "and it's possible to place a needle tip"
+    },
+    {
+      "start": 361.74,
+      "end": 363.48,
+      "text": "within this cuff if you're too medial."
+    },
+    {
+      "start": 363.7,
+      "end": 365.56,
+      "text": "It doesn't take much local anesthetic there"
+    },
+    {
+      "start": 365.56,
+      "end": 367.2,
+      "text": "to quickly cause a total spinal"
+    },
+    {
+      "start": 367.2,
+      "end": 369.86,
+      "text": "and there have been cases of fatal subarachnid spread."
+    },
+    {
+      "start": 370.03,
+      "end": 370.77,
+      "text": "with this mechanism."
+    },
+    {
+      "start": 371.19,
+      "end": 373.47,
+      "text": "It's also known that injection too close to the ferramin"
+    },
+    {
+      "start": 373.47,
+      "end": 374.69,
+      "text": "promotes epidural spread,"
+    },
+    {
+      "start": 374.85,
+      "end": 377.07,
+      "text": "so stay near the center of the muscle, at least to start."
+    },
+    {
+      "start": 377.39,
+      "end": 378.69,
+      "text": "They're also big lumbar arteries"
+    },
+    {
+      "start": 378.69,
+      "end": 379.75,
+      "text": "near the vertebral ferramin."
+    },
+    {
+      "start": 380.06,
+      "end": 381.08,
+      "text": "another reason to steer clear."
+    },
+    {
+      "start": 381.48,
+      "end": 383.8,
+      "text": "And finally, it's common to contact the transverse process"
+    },
+    {
+      "start": 383.8,
+      "end": 385.4,
+      "text": "as you're advancing, even if you tried"
+    },
+    {
+      "start": 385.4,
+      "end": 387.24,
+      "text": "to shift your image cephaladder cadet."
+    },
+    {
+      "start": 387.4,
+      "end": 388.36,
+      "text": "That's not a bad thing."
+    },
+    {
+      "start": 388.58,
+      "end": 389.46,
+      "text": "Now you know where you are."
+    },
+    {
+      "start": 389.84,
+      "end": 389.96,
+      "text": "You."
+    },
+    {
+      "start": 390.1,
+      "end": 394.4,
+      "text": "can come out and reinsert, but often all this required is a slight readjustment cephalat"
+    },
+    {
+      "start": 394.4,
+      "end": 396.26,
+      "text": "or caudat to slip past the bone."
+    }
+  ]
+}

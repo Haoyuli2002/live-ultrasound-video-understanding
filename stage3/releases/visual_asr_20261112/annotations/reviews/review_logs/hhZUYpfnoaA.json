@@ -1,0 +1,74 @@
+{
+  "video_id": "hhZUYpfnoaA",
+  "reviewer": "stage3_b",
+  "review_scope": "Question-led review by Agent B of Agent A draft; not blind. Native full-frame sampled checkpoints and available time-indexed ASR; no continuous replay or direct listening claim.",
+  "reviewer_native_opened": [
+    320,
+    360,
+    400,
+    410,
+    420,
+    430,
+    435,
+    402,
+    404,
+    406,
+    408,
+    480,
+    560,
+    580,
+    590,
+    600,
+    610,
+    620,
+    403,
+    403.5,
+    612,
+    614,
+    616,
+    618,
+    700,
+    402.5,
+    613,
+    613.5,
+    402.25,
+    612.5
+  ],
+  "tasks": [
+    {
+      "task": 1,
+      "outcome": "accepted",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER",
+      "finding": "Native360 central bright rim and broad black acoustic shadow directly support answer."
+    },
+    {
+      "task": 2,
+      "outcome": "corrected",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER",
+      "changes": "Answer435\u2192402.25;402 no sonogram,402.25 actual unannotated longitudinal image. Removed dependence on later blue arches. Native360 establishes earlier comparison."
+    },
+    {
+      "task": 3,
+      "outcome": "accepted",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER",
+      "finding": "Native480 central tissue window between side bony shadowing confirmed; annotation shortcut recorded."
+    },
+    {
+      "task": 4,
+      "outcome": "corrected",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER",
+      "changes": "Answer620\u2192612.5. Reviewed580,590,600,610,612 intervening panels and612.5 new off-midline view. Compare visual pattern only, no calibrated measurement."
+    },
+    {
+      "task": 5,
+      "outcome": "corrected",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER",
+      "changes": "Clarified deeper relative to bright SP surface, not relative to entire extending shadow. Native320 recalled anatomy;700 text slide no longer shows image."
+    }
+  ]
+}

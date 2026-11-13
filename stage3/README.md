@@ -1,5 +1,7 @@
 # Stage 3 — 可回答性决策与回复
 
+数据目录与跨机器使用说明见 [Stage3 releases](releases/README.md)。
+
 > 项目级大纲（目标、三阶段状态、接口衔接、运行命令）见根目录
 > [`README.md`](../README.md) / [`README_zh.md`](../README_zh.md)，那里是权威入口。
 > 本文件只保留 Stage 3 的具体细节。

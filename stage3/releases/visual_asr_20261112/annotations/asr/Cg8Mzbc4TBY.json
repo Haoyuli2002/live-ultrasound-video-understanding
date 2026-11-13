@@ -1,0 +1,2433 @@
+{
+  "video_id": "Cg8Mzbc4TBY",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/Cg8Mzbc4TBY/asr.txt",
+  "segments": [
+    {
+      "start": 10.77,
+      "end": 13.95,
+      "text": "Hello, my name is Sam Ord, I'm an intensive care specialist at an"
+    },
+    {
+      "start": 13.95,
+      "end": 17.51,
+      "text": "appearing hospital in Sydney and during this presentation I'd like to take"
+    },
+    {
+      "start": 17.51,
+      "end": 19.57,
+      "text": "you through how to perform a full comprehensive"
+    },
+    {
+      "start": 20.06,
+      "end": 25.12,
+      "text": "trans thoracic echocodography study, and I'm going to use an echo simulator Bob"
+    },
+    {
+      "start": 25.12,
+      "end": 29.96,
+      "text": "here to try and demonstrate that. During this presentation it is dependent on the"
+    },
+    {
+      "start": 30.06,
+      "end": 35.92,
+      "text": "fact that you do know how to do a focus study and you've got some idea about how to use"
+    },
+    {
+      "start": 35.92,
+      "end": 39.96,
+      "text": "some of the Doppler profiles and that's going to be..."
+    },
+    {
+      "start": 40.1,
+      "end": 45.54,
+      "text": "include colour, Doppler, Continuous Wave Doppler, Pulse Wave Doppler and Tissue Doppler"
+    },
+    {
+      "start": 45.54,
+      "end": 49.02,
+      "text": "and some of those are explained in other videos that are on our website."
+    },
+    {
+      "start": 50.32,
+      "end": 51.34,
+      "text": "So let's get started."
+    },
+    {
+      "start": 52.53,
+      "end": 54.4,
+      "text": "So the first image you're going to be taking"
+    },
+    {
+      "start": 54.4,
+      "end": 56.14,
+      "text": "is your para stone long axis view"
+    },
+    {
+      "start": 56.14,
+      "end": 58.46,
+      "text": "with the right ventricle at the top,"
+    },
+    {
+      "start": 58.68,
+      "end": 59.98,
+      "text": "left ventricle and the left tail."
+    },
+    {
+      "start": 60.03,
+      "end": 66.01,
+      "text": "trim underneath and got to make sure that you are on axis as we take this picture and"
+    },
+    {
+      "start": 66.01,
+      "end": 69.41,
+      "text": "that you're not sliding off to one side or the other of the left ventricle."
+    },
+    {
+      "start": 70.9,
+      "end": 75.42,
+      "text": "You're going to start by getting a color wave Doppler putting it over your aortic valve"
+    },
+    {
+      "start": 75.42,
+      "end": 79.76,
+      "text": "after you've taken your 2D picture to see if there's any significant regurgitation."
+    },
+    {
+      "start": 80.1,
+      "end": 85.56,
+      "text": "turbulent blood flow, you're then going to move that color box down onto the"
+    },
+    {
+      "start": 85.56,
+      "end": 89.06,
+      "text": "mitral valve to see if you've got, again, any regurgitation going into the"
+    },
+    {
+      "start": 89.06,
+      "end": 89.66,
+      "text": "left atrium."
+    },
+    {
+      "start": 90.1,
+      "end": 92.12,
+      "text": "or turbulent blood flow suggesting stenosis."
+    },
+    {
+      "start": 95.92,
+      "end": 99.52,
+      "text": "We can then band down by tilting our probe,"
+    },
+    {
+      "start": 99.66,
+      "end": 99.96,
+      "text": "pointing it..."
+    },
+    {
+      "start": 100.0,
+      "end": 106.28,
+      "text": "down more towards the patient's right hip and we can hear see the RV inflow view where"
+    },
+    {
+      "start": 106.28,
+      "end": 109.98,
+      "text": "you've got the tracuspid valve at the top and where you've got the tracuspid valve at the top and where you've got the tracuspid valve at the top."
+    },
+    {
+      "start": 110.0,
+      "end": 119.97,
+      "text": "by cuspid valve in the middle, excuse me, the right ventricle at the top, and the right"
+    },
+    {
+      "start": 120.0,
+      "end": 124.0,
+      "text": "over the tricuspid valve to get an idea if you've got any regurgitation flow."
+    },
+    {
+      "start": 127.53,
+      "end": 129.97,
+      "text": "Just going to take off the bone so that you can..."
+    },
+    {
+      "start": 130.0,
+      "end": 139.59,
+      "text": "the angle that's changed from coming from the Parasturnal Long Axis view as we"
+    },
+    {
+      "start": 139.59,
+      "end": 139.85,
+      "text": "fine"
+    },
+    {
+      "start": 140.0,
+      "end": 143.6,
+      "text": "down, we're pointing more towards the right hip now, and now we're looking through the"
+    },
+    {
+      "start": 143.6,
+      "end": 147.93,
+      "text": "right ventricle, the RV inflow view, that's the difference from the Parastonal Long"
+    },
+    {
+      "start": 147.93,
+      "end": 149.97,
+      "text": "Nexus view down to the Tricuspan view."
+    },
+    {
+      "start": 151.44,
+      "end": 159.28,
+      "text": "the RV inflow view. I'll show you what a normal trace is meant to look like here and again"
+    },
+    {
+      "start": 159.28,
+      "end": 159.98,
+      "text": "this is just a tr-"
+    },
+    {
+      "start": 160.0,
+      "end": 164.32,
+      "text": "trace of tracuspid regurgitation and one of the things I want you to start to have an"
+    },
+    {
+      "start": 164.66,
+      "end": 169.4,
+      "text": "idea of is when we're using colour Doppler we use it to direct our"
+    },
+    {
+      "start": 170.03,
+      "end": 177.18,
+      "text": "our cursor so that we can put it through the continuous wave cursor is through the"
+    },
+    {
+      "start": 177.18,
+      "end": 179.98,
+      "text": "area where we suspect there to be the most tricuspid regurgitate."
+    },
+    {
+      "start": 180.0,
+      "end": 186.46,
+      "text": "So we're using the colour Doppler box to guide our continuous wave Doppler interrogation"
+    },
+    {
+      "start": 186.46,
+      "end": 186.8,
+      "text": "profile."
+    },
+    {
+      "start": 190.06,
+      "end": 196.17,
+      "text": "that, we're then going to go and we're going to tilt our probe up. So coming from our"
+    },
+    {
+      "start": 196.17,
+      "end": 199.08,
+      "text": "a Parastonal, Long Exit view."
+    },
+    {
+      "start": 200.93,
+      "end": 205.14,
+      "text": "We can then tilt our probe up to start to bring in the tricuspid valve."
+    },
+    {
+      "start": 210.7,
+      "end": 212.82,
+      "text": "And here we can start to bring in our pulmonary valve, excuse me."
+    },
+    {
+      "start": 212.96,
+      "end": 215.88,
+      "text": "And you see the difference coming from our parasturnal long axis view,"
+    },
+    {
+      "start": 216.28,
+      "end": 218.82,
+      "text": "tilting up to bring in our..."
+    },
+    {
+      "start": 220.0,
+      "end": 225.24,
+      "text": "main pulmonary artery, which splits into our left and right pulmonary trunk."
+    },
+    {
+      "start": 225.99,
+      "end": 229.8,
+      "text": "And we can use this, and I'll show it on this one, and here we can see an example in"
+    },
+    {
+      "start": 230.0,
+      "end": 239.97,
+      "text": "It's the example of a normal patient and in our top right picture you can see the color profile going through the pulmonary artery you can just get"
+    },
+    {
+      "start": 240.0,
+      "end": 242.94,
+      "text": "suggestion there of the pulmonary valve that's sitting there in the middle of the screen."
+    },
+    {
+      "start": 243.8,
+      "end": 247.4,
+      "text": "In the bottom left, this is with continuous wave Doppler and we see that because we have"
+    },
+    {
+      "start": 247.4,
+      "end": 249.7,
+      "text": "a filled out profile."
+    },
+    {
+      "start": 250.0,
+      "end": 258.82,
+      "text": "and in the bottom right to the screen here we've got our pulsed wave Doppler where we're putting our"
+    },
+    {
+      "start": 260.0,
+      "end": 266.02,
+      "text": "about one centimetre before the pulmonary valve and here we've got the pulse wave"
+    },
+    {
+      "start": 266.02,
+      "end": 269.75,
+      "text": "Doppler profile where we've got the"
+    },
+    {
+      "start": 270.0,
+      "end": 273.06,
+      "text": "just the outside of the profile shown and it's dark in the middle."
+    },
+    {
+      "start": 277.31,
+      "end": 279.65,
+      "text": "So that would conclude our Parastone Long Axis fuse."
+    },
+    {
+      "start": 281.02,
+      "end": 288.23,
+      "text": "After that, taking our right hand we are going to rotate 90 degrees and we'll start at the level of the aortic valve."
+    },
+    {
+      "start": 292.05,
+      "end": 295.11,
+      "text": "And here at the aortic valve level in a short axis view,"
+    },
+    {
+      "start": 295.19,
+      "end": 296.43,
+      "text": "we have the aortic valve in the middle,"
+    },
+    {
+      "start": 296.75,
+      "end": 297.65,
+      "text": "we have our left atrium,"
+    },
+    {
+      "start": 297.93,
+      "end": 299.87,
+      "text": "into atrial septum, right atrium."
+    },
+    {
+      "start": 300.61,
+      "end": 305.01,
+      "text": "tricuspid valve, rope ventricle, flowing round into the pulmonary valve here."
+    },
+    {
+      "start": 307.17,
+      "end": 309.97,
+      "text": "We can use our 2D to get an idea of whether there is..."
+    },
+    {
+      "start": 310.0,
+      "end": 314.18,
+      "text": "reasonable opening of the aortic valve, if it's horribly sclerotic. We can"
+    },
+    {
+      "start": 314.18,
+      "end": 318.92,
+      "text": "idea if there's any abnormal right ventricle free wall motion, obvious"
+    },
+    {
+      "start": 318.92,
+      "end": 319.88,
+      "text": "abnormalities to the tricusp."
+    },
+    {
+      "start": 320.0,
+      "end": 325.74,
+      "text": "with Valve for example. We can then go on to use our Hallowave Doppler to interrogate"
+    },
+    {
+      "start": 326.03,
+      "end": 327.09,
+      "text": "both the aortic valve."
+    },
+    {
+      "start": 330.48,
+      "end": 333.1,
+      "text": "seeing if there's any obvious regurgitation during diastole"
+    },
+    {
+      "start": 333.1,
+      "end": 334.92,
+      "text": "or whether there's obvious turbulent blood flow"
+    },
+    {
+      "start": 334.92,
+      "end": 336.16,
+      "text": "against resting stenosis."
+    },
+    {
+      "start": 337.64,
+      "end": 338.6,
+      "text": "We can use our color box."
+    },
+    {
+      "start": 340.32,
+      "end": 342.69,
+      "text": "to come over our pulmonary valve."
+    },
+    {
+      "start": 342.87,
+      "end": 344.51,
+      "text": "See if there's any obvious regurgitation."
+    },
+    {
+      "start": 347.31,
+      "end": 349.09,
+      "text": "We can then use our color box to come over"
+    },
+    {
+      "start": 349.09,
+      "end": 349.87,
+      "text": "the tricuspid valve."
+    },
+    {
+      "start": 350.0,
+      "end": 359.72,
+      "text": "this again see if there's any horrible regurgitation and using the color box to help guide us we can then use our continuous"
+    },
+    {
+      "start": 360.0,
+      "end": 368.58,
+      "text": "wave, continuous wave per se, to guide us to see if there's any obvious"
+    },
+    {
+      "start": 368.58,
+      "end": 369.76,
+      "text": "Tricuspic regurgitation."
+    },
+    {
+      "start": 371.31,
+      "end": 377.37,
+      "text": "and we can use the same thing using our Pellowet box"
+    },
+    {
+      "start": 377.37,
+      "end": 378.81,
+      "text": "to look over the palm and revolve."
+    },
+    {
+      "start": 381.22,
+      "end": 384.4,
+      "text": "So we can put our cursor down through the pulmonary valve,"
+    },
+    {
+      "start": 384.52,
+      "end": 386.36,
+      "text": "trying to optimize our Doppler angle."
+    },
+    {
+      "start": 387.9,
+      "end": 389.22,
+      "text": "Again, I'll show you some pitches here."
+    },
+    {
+      "start": 391.09,
+      "end": 392.57,
+      "text": "of what it can look like in short axis."
+    },
+    {
+      "start": 393.68,
+      "end": 397.86,
+      "text": "So using our color box over the pulmonary artery here,"
+    },
+    {
+      "start": 397.9,
+      "end": 399.9,
+      "text": "we can see what we've got, normal laminar blood."
+    },
+    {
+      "start": 400.06,
+      "end": 405.68,
+      "text": "here are no obvious regurgitation. We can use our continuous wave Doppler profile to"
+    },
+    {
+      "start": 405.68,
+      "end": 409.56,
+      "text": "get an idea if there is any obvious regurgitation coming through and during"
+    },
+    {
+      "start": 409.56,
+      "end": 409.84,
+      "text": "and the rest."
+    },
+    {
+      "start": 410.0,
+      "end": 412.88,
+      "text": "and see if any increased flows during sisterly."
+    },
+    {
+      "start": 413.98,
+      "end": 419.02,
+      "text": "With the pulse wave Doppler Box, again one centimeter behind the pulmonary valve, we can"
+    },
+    {
+      "start": 419.02,
+      "end": 419.96,
+      "text": "get our pulse wave"
+    },
+    {
+      "start": 420.0,
+      "end": 424.78,
+      "text": "Doppler profile. And again the importance is to try and analyze these valves from all available"
+    },
+    {
+      "start": 424.78,
+      "end": 429.88,
+      "text": "angles trying to get the most information that we possibly can because sometimes one echo"
+    },
+    {
+      "start": 430.0,
+      "end": 433.6,
+      "text": "window is not going to be perfect and so we're going to try and use the most"
+    },
+    {
+      "start": 433.6,
+      "end": 434.92,
+      "text": "available information that we have."
+    },
+    {
+      "start": 441.12,
+      "end": 444.66,
+      "text": "So after we've finished with looking at the short axis view at the level of the eortic valve,"
+    },
+    {
+      "start": 445.04,
+      "end": 449.28,
+      "text": "we can then fan down through from the eortic valve level."
+    },
+    {
+      "start": 449.5,
+      "end": 449.96,
+      "text": "You can see..."
+    },
+    {
+      "start": 450.0,
+      "end": 453.66,
+      "text": "Here's we fan down through to the base of the heart,"
+    },
+    {
+      "start": 453.74,
+      "end": 454.88,
+      "text": "at the mitral valve level,"
+    },
+    {
+      "start": 456.28,
+      "end": 458.36,
+      "text": "with the anterior wall, the inferior wall,"
+    },
+    {
+      "start": 459.1,
+      "end": 459.9,
+      "text": "antireceptal infras..."
+    },
+    {
+      "start": 460.0,
+      "end": 469.7,
+      "text": "septal, antelateral, inferelateral, down to the mid-pipillary level, but you can see the"
+    },
+    {
+      "start": 469.7,
+      "end": 469.96,
+      "text": "propellant."
+    },
+    {
+      "start": 470.0,
+      "end": 476.78,
+      "text": "muscles and right the way down to the apex of the heart. There's one more time we go from"
+    },
+    {
+      "start": 476.78,
+      "end": 479.2,
+      "text": "the aortic valve level fan."
+    },
+    {
+      "start": 480.0,
+      "end": 484.52,
+      "text": "down to the mitral valve level or the base of the left ventricle, the mid ventricle level"
+    },
+    {
+      "start": 484.52,
+      "end": 488.8,
+      "text": "or the papillary muscle view and down to the apex and we know it's the apex because we"
+    },
+    {
+      "start": 488.8,
+      "end": 489.78,
+      "text": "We lose the papillary muscles."
+    },
+    {
+      "start": 492.72,
+      "end": 495.56,
+      "text": "Okay, now I'm going to move on to the apical views."
+    },
+    {
+      "start": 500.67,
+      "end": 503.41,
+      "text": "We're going with that marker pointing down towards the bed."
+    },
+    {
+      "start": 505.86,
+      "end": 509.51,
+      "text": "We try and find our apical view with the left ventricle."
+    },
+    {
+      "start": 510.06,
+      "end": 513.04,
+      "text": "the right ventricle, the right atrium, and the left atrium."
+    },
+    {
+      "start": 513.44,
+      "end": 514.6,
+      "text": "And here we have the mitral valve,"
+    },
+    {
+      "start": 514.98,
+      "end": 515.96,
+      "text": "and here's the tricuspid valve."
+    },
+    {
+      "start": 516.91,
+      "end": 518.97,
+      "text": "We're going to try and assess valve ilofunction,"
+    },
+    {
+      "start": 519.35,
+      "end": 519.97,
+      "text": "systolic function."
+    },
+    {
+      "start": 520.0,
+      "end": 528.49,
+      "text": "diastolic function of both the left and the right ventricle okay, so we can start"
+    },
+    {
+      "start": 528.49,
+      "end": 529.97,
+      "text": "off by here just having subj..."
+    },
+    {
+      "start": 530.0,
+      "end": 533.88,
+      "text": "Effective assessment of left ventricle size and function the same for the atria."
+    },
+    {
+      "start": 534.81,
+      "end": 539.07,
+      "text": "Next thing again with Color Wave Doppler, we can place our Color Wave box over."
+    },
+    {
+      "start": 540.16,
+      "end": 544.68,
+      "text": "the mitral valve. And you'll notice how I'm trying to keep this color wave boxes small"
+    },
+    {
+      "start": 545.76,
+      "end": 549.88,
+      "text": "and focused on the areas that I'm really interested in. The bigger you make that box"
+    },
+    {
+      "start": 550.03,
+      "end": 554.55,
+      "text": "the more impairment you're going to have in things like your frame rate and that will"
+    },
+    {
+      "start": 554.55,
+      "end": 555.93,
+      "text": "impair your temporal resolution."
+    },
+    {
+      "start": 556.15,
+      "end": 559.93,
+      "text": "So you want to try and keep your colour wave boxes as small and as focus."
+    },
+    {
+      "start": 560.03,
+      "end": 564.67,
+      "text": "as possible. And here I'm going to be looking for stenosis, so if I've got abnormal blood flow,"
+    },
+    {
+      "start": 565.2,
+      "end": 569.72,
+      "text": "and again after assessing for the 2D, for the way that I'm ultraviolet looks, and I can move that"
+    },
+    {
+      "start": 569.72,
+      "end": 569.98,
+      "text": "but..."
+    },
+    {
+      "start": 570.45,
+      "end": 578.54,
+      "text": "down if I want to assess for regurgitation that's coming here into the left"
+    },
+    {
+      "start": 578.54,
+      "end": 578.88,
+      "text": "Daydream."
+    },
+    {
+      "start": 580.61,
+      "end": 586.01,
+      "text": "If I think there's some regurgitation presence there, I can put a continuous wave profile"
+    },
+    {
+      "start": 586.01,
+      "end": 589.9,
+      "text": "I'll Doppler through that much."
+    },
+    {
+      "start": 590.06,
+      "end": 595.0,
+      "text": "valve leaf lip tips and you can set for much regurgitation. If I want to assess for"
+    },
+    {
+      "start": 595.77,
+      "end": 599.9,
+      "text": "diastolic flow or the mitral inflow pattern I can use"
+    },
+    {
+      "start": 600.29,
+      "end": 603.25,
+      "text": "my pulsed wave Doppler profile at the tips of the"
+    },
+    {
+      "start": 603.25,
+      "end": 604.33,
+      "text": "mitral valve leaflets."
+    },
+    {
+      "start": 605.99,
+      "end": 607.21,
+      "text": "And I'll show you some example of these here."
+    },
+    {
+      "start": 612.05,
+      "end": 615.93,
+      "text": "So here you can see this colour wave box, here I'm actually covering both the left ventricle"
+    },
+    {
+      "start": 615.93,
+      "end": 619.98,
+      "text": "and the left atrium here, and here you've got the..."
+    },
+    {
+      "start": 620.13,
+      "end": 623.12,
+      "text": "continuous wave Doppler profile trace,"
+    },
+    {
+      "start": 623.12,
+      "end": 624.96,
+      "text": "looking down through that mitral valve,"
+    },
+    {
+      "start": 625.18,
+      "end": 626.8,
+      "text": "which will give you a suggestion if there is"
+    },
+    {
+      "start": 626.8,
+      "end": 629.96,
+      "text": "any tricuspid regurgitation during systole, which is."
+    },
+    {
+      "start": 630.13,
+      "end": 632.29,
+      "text": "from beginning of the cures complex to the end of the T wave."
+    },
+    {
+      "start": 633.86,
+      "end": 635.6,
+      "text": "And over here, this is with pulsed wave Doppler"
+    },
+    {
+      "start": 635.6,
+      "end": 637.42,
+      "text": "at the tips of the mitral valve leaflets."
+    },
+    {
+      "start": 638.06,
+      "end": 639.98,
+      "text": "And here, we've got the E-wave or the..."
+    },
+    {
+      "start": 640.0,
+      "end": 645.6,
+      "text": "early filling of the left ventral, the e-wave and the a-wave for atrial kick, so the e and"
+    },
+    {
+      "start": 645.6,
+      "end": 649.79,
+      "text": "the a-wave here, happening during diastole. One of the things I'm going to ask you to notice"
+    },
+    {
+      "start": 650.0,
+      "end": 654.2,
+      "text": "about, particularly with both the continuous and the pulse wave Doppler profiles, is how"
+    },
+    {
+      "start": 654.2,
+      "end": 657.48,
+      "text": "I'm trying to optimize the image here, so that I'm trying to make what I'm interested"
+    },
+    {
+      "start": 657.48,
+      "end": 658.74,
+      "text": "in filling the screen."
+    },
+    {
+      "start": 659.28,
+      "end": 659.98,
+      "text": "I only have about"
+    },
+    {
+      "start": 660.0,
+      "end": 667.74,
+      "text": "Three cardiac cycles across one profile or one screen when a patient is in sinus rhythm"
+    },
+    {
+      "start": 667.74,
+      "end": 669.98,
+      "text": "and maybe five when a patient is in natural fibrillation."
+    },
+    {
+      "start": 670.03,
+      "end": 672.35,
+      "text": "and I try and take an average of all the values."
+    },
+    {
+      "start": 672.57,
+      "end": 674.13,
+      "text": "So again, three values for sinusoidam,"
+    },
+    {
+      "start": 674.27,
+      "end": 675.79,
+      "text": "five values for atrial fibrillation."
+    },
+    {
+      "start": 677.21,
+      "end": 679.87,
+      "text": "The scale is optimized, the baseline is down."
+    },
+    {
+      "start": 680.0,
+      "end": 684.76,
+      "text": "and the gain is not too high and not too low, so I'm trying to look at the modal velocity"
+    },
+    {
+      "start": 684.76,
+      "end": 689.64,
+      "text": "or where the majority of the blood flow is flowing, rather than overgaining or undergaining"
+    },
+    {
+      "start": 689.64,
+      "end": 689.9,
+      "text": "a pitch."
+    },
+    {
+      "start": 690.06,
+      "end": 694.88,
+      "text": "So it's just the same as if you're going to try and optimize a standard 2D picture by"
+    },
+    {
+      "start": 694.88,
+      "end": 699.96,
+      "text": "optimizing your depth and your focus position and your frequency and your sector width."
+    },
+    {
+      "start": 700.06,
+      "end": 705.18,
+      "text": "and things like that. I do exactly the same thing with my doctor profile, trying to optimize"
+    },
+    {
+      "start": 705.86,
+      "end": 709.84,
+      "text": "the baseline, trying to optimize the scale, trying to optimize the gain."
+    },
+    {
+      "start": 710.29,
+      "end": 715.18,
+      "text": "And all of this means that I can make the most accurate measurements possible, okay?"
+    },
+    {
+      "start": 721.41,
+      "end": 725.33,
+      "text": "So the next part of the comprehensive study is going to look at the tissue doppler imaging."
+    },
+    {
+      "start": 725.63,
+      "end": 729.91,
+      "text": "So tissue doppler imaging, we're going to ignore the fast moving blood."
+    },
+    {
+      "start": 730.0,
+      "end": 732.24,
+      "text": "and we're just going to focus on the slower moving tissue."
+    },
+    {
+      "start": 733.58,
+      "end": 736.1,
+      "text": "Again, angle dependent, just the same as all Doppler,"
+    },
+    {
+      "start": 736.54,
+      "end": 737.82,
+      "text": "as all Doppler is."
+    },
+    {
+      "start": 738.76,
+      "end": 739.98,
+      "text": "So we've got to try and..."
+    },
+    {
+      "start": 740.03,
+      "end": 742.99,
+      "text": "make sure here if we're trying to assess the movement of the lateral"
+    },
+    {
+      "start": 742.99,
+      "end": 746.79,
+      "text": "endless of the mitral valve leaflet towards the apex we try and make sure that"
+    },
+    {
+      "start": 746.79,
+      "end": 749.86,
+      "text": "we've got that the interventual septum"
+    },
+    {
+      "start": 750.0,
+      "end": 752.65,
+      "text": "down the middle of the screen and we're trying to"
+    },
+    {
+      "start": 752.65,
+      "end": 754.97,
+      "text": "definitely assess the movement from the"
+    },
+    {
+      "start": 754.97,
+      "end": 759.18,
+      "text": "anilis towards the apex okay and then the same for the"
+    },
+    {
+      "start": 759.18,
+      "end": 759.72,
+      "text": "mitral valve."
+    },
+    {
+      "start": 760.19,
+      "end": 761.73,
+      "text": "So over here you can see that I'm assessing,"
+    },
+    {
+      "start": 762.09,
+      "end": 763.69,
+      "text": "I've got the nice angle between where the"
+    },
+    {
+      "start": 763.69,
+      "end": 766.31,
+      "text": "medial much lanylis is towards the apex"
+    },
+    {
+      "start": 766.31,
+      "end": 767.97,
+      "text": "and this is what it can look like."
+    },
+    {
+      "start": 769.44,
+      "end": 769.88,
+      "text": "So here again."
+    },
+    {
+      "start": 770.0,
+      "end": 777.3,
+      "text": "using our coloured Doppler to try and optimize our angle of the Pulse-to-Wave Doppler so"
+    },
+    {
+      "start": 777.3,
+      "end": 779.5,
+      "text": "that it's at the tip of the mitral valve leaflets for the gate."
+    },
+    {
+      "start": 780.03,
+      "end": 782.69,
+      "text": "and we're in the direction of where the blood flow is going."
+    },
+    {
+      "start": 783.31,
+      "end": 785.67,
+      "text": "Let's not forget that sometimes with a dilated cardiomyopathy"
+    },
+    {
+      "start": 785.67,
+      "end": 787.57,
+      "text": "the blood flow can become more circumferential"
+    },
+    {
+      "start": 787.57,
+      "end": 788.21,
+      "text": "and more lateral."
+    },
+    {
+      "start": 788.65,
+      "end": 789.97,
+      "text": "And so sometimes you have to move the..."
+    },
+    {
+      "start": 790.38,
+      "end": 794.02,
+      "text": "The probe over a little bit to optimize your Doppler angle, not in this case though."
+    },
+    {
+      "start": 794.48,
+      "end": 798.6,
+      "text": "So we've got a good Doppler angle, we've got a nice trace at the tips of our valve leaf"
+    },
+    {
+      "start": 798.6,
+      "end": 799.86,
+      "text": "Blitz for the E and the A wave."
+    },
+    {
+      "start": 800.32,
+      "end": 805.36,
+      "text": "And here at the bottom, on the left here is our tissue doppler imaging for your medial"
+    },
+    {
+      "start": 805.36,
+      "end": 805.92,
+      "text": "much lannulus."
+    },
+    {
+      "start": 806.08,
+      "end": 808.18,
+      "text": "And over here, it's your lateral much lannulus."
+    },
+    {
+      "start": 808.64,
+      "end": 809.9,
+      "text": "And we're looking at the E prime."
+    },
+    {
+      "start": 810.0,
+      "end": 812.5,
+      "text": "and you can look at the A prime as well if you'd like to."
+    },
+    {
+      "start": 812.88,
+      "end": 816.66,
+      "text": "But mainly we're just looking at the E prime trying to get an estimate of things like the"
+    },
+    {
+      "start": 817.4,
+      "end": 819.84,
+      "text": "E wave over the E prime"
+    },
+    {
+      "start": 820.0,
+      "end": 824.22,
+      "text": "ratio, which can give us an estimate of what left-atrial pressures are, for example."
+    },
+    {
+      "start": 825.61,
+      "end": 829.77,
+      "text": "Again, please note that I've optimized my scales, what I'm interested in fills the screen."
+    },
+    {
+      "start": 830.19,
+      "end": 836.25,
+      "text": "My baseline is in the right position, and the scale is optimized so that I can try and"
+    },
+    {
+      "start": 836.25,
+      "end": 839.83,
+      "text": "make the most accurate measurements possible for both the medial and the lateral."
+    },
+    {
+      "start": 840.06,
+      "end": 847.0,
+      "text": "as a quick aside please note that the medial e-prime is always less than the"
+    },
+    {
+      "start": 847.0,
+      "end": 849.7,
+      "text": "laterally prime and the one disease process."
+    },
+    {
+      "start": 850.0,
+      "end": 854.8,
+      "text": "Maybe that doesn't happen in this constrictive paracarditis where we can see the reversal of that called annulus reverses."
+    },
+    {
+      "start": 856.84,
+      "end": 857.04,
+      "text": "Okay."
+    },
+    {
+      "start": 864.0,
+      "end": 869.88,
+      "text": "So after we've looked for mitre regurgitation we've looked for the inflow into the"
+    },
+    {
+      "start": 870.99,
+      "end": 874.25,
+      "text": "left ventricle we looked at our tissue Doppler the next we can look for is to"
+    },
+    {
+      "start": 874.25,
+      "end": 877.59,
+      "text": "go and have a look at our left ventricle outflow tract and the aortic valve"
+    },
+    {
+      "start": 877.59,
+      "end": 879.97,
+      "text": "flows so to do that we need to have a"
+    },
+    {
+      "start": 880.0,
+      "end": 886.7,
+      "text": "look at our five chamber view. So here you can see in the four chamber view, and if I then tilt"
+    },
+    {
+      "start": 886.7,
+      "end": 889.98,
+      "text": "the probe up, in comes to view the left ventricle outflow track..."
+    },
+    {
+      "start": 890.0,
+      "end": 898.02,
+      "text": "in the aortic valve, four chamber, a little bit of a tilt up and we get enough five chamber."
+    },
+    {
+      "start": 899.33,
+      "end": 899.97,
+      "text": "I want to ask you to have a"
+    },
+    {
+      "start": 900.0,
+      "end": 902.2,
+      "text": "look at now as I put this color wave box on."
+    },
+    {
+      "start": 905.83,
+      "end": 908.69,
+      "text": "Need a sense that the flow, if I were to put my"
+    },
+    {
+      "start": 908.69,
+      "end": 909.97,
+      "text": "continuous wave dot."
+    },
+    {
+      "start": 910.1,
+      "end": 914.14,
+      "text": "sort of angle right down through it, I'm not going to be optimizing the angle for where"
+    },
+    {
+      "start": 914.14,
+      "end": 914.86,
+      "text": "that blood flow is."
+    },
+    {
+      "start": 915.16,
+      "end": 918.84,
+      "text": "I think that the blood flow is slightly more tangential to this."
+    },
+    {
+      "start": 920.0,
+      "end": 921.94,
+      "text": "So what I try and do to optimize my angle"
+    },
+    {
+      "start": 921.94,
+      "end": 926.82,
+      "text": "is I'm going to tilt my probe"
+    },
+    {
+      "start": 926.82,
+      "end": 928.58,
+      "text": "so that the left ventricle outflow tract"
+    },
+    {
+      "start": 928.58,
+      "end": 929.96,
+      "text": "comes over towards the left side of the..."
+    },
+    {
+      "start": 930.0,
+      "end": 937.8,
+      "text": "the screen. And now you can see that my Doppler angle is much, much more optimized. And that"
+    },
+    {
+      "start": 937.8,
+      "end": 939.96,
+      "text": "means that I'm not going to underestimate the flows that..."
+    },
+    {
+      "start": 940.0,
+      "end": 945.58,
+      "text": "going through that area. I'm going to start off with a pulse wave Doppler profile again"
+    },
+    {
+      "start": 945.58,
+      "end": 949.86,
+      "text": "with the gate just behind that aortic valve."
+    },
+    {
+      "start": 950.0,
+      "end": 955.82,
+      "text": "and at that point there we can start measuring what the left ventral outflow track flow is."
+    },
+    {
+      "start": 959.01,
+      "end": 959.97,
+      "text": "After that I'm going to look"
+    },
+    {
+      "start": 960.0,
+      "end": 963.82,
+      "text": "with my continuous wave Doppler profile trace coming down through there looking at the"
+    },
+    {
+      "start": 963.82,
+      "end": 969.92,
+      "text": "flows all the way along that line and normally the faster moving air is usually the"
+    },
+    {
+      "start": 970.0,
+      "end": 973.5,
+      "text": "aortic valve, and this can be where we can start assessing aortic valve stenosis."
+    },
+    {
+      "start": 974.26,
+      "end": 978.14,
+      "text": "Note that the malatid are, if you've got any kind of interventricular obstruction, or"
+    },
+    {
+      "start": 978.14,
+      "end": 979.98,
+      "text": "if you've got any kind of LVOT..."
+    },
+    {
+      "start": 980.96,
+      "end": 985.38,
+      "text": "obstruction or membrane there, for example, then sometimes the highest flow along"
+    },
+    {
+      "start": 985.38,
+      "end": 988.86,
+      "text": "that line is not the aortic valve. And again, these are some of the things that we"
+    },
+    {
+      "start": 988.86,
+      "end": 989.98,
+      "text": "have to look at when we're sitting."
+    },
+    {
+      "start": 990.0,
+      "end": 992.5,
+      "text": "for assessing for those diseases."
+    },
+    {
+      "start": 994.12,
+      "end": 995.06,
+      "text": "So this is what it may look like."
+    },
+    {
+      "start": 995.9,
+      "end": 998.66,
+      "text": "So up here you can see the color wave box"
+    },
+    {
+      "start": 998.66,
+      "end": 999.98,
+      "text": "on the top left here going..."
+    },
+    {
+      "start": 1000.03,
+      "end": 1000.97,
+      "text": "through the aortic valve."
+    },
+    {
+      "start": 1001.53,
+      "end": 1004.17,
+      "text": "Here I'm using my continuous wave Doppler profile."
+    },
+    {
+      "start": 1004.45,
+      "end": 1007.65,
+      "text": "I've tried to optimize my angle using the color wave box"
+    },
+    {
+      "start": 1007.65,
+      "end": 1009.77,
+      "text": "to guide where I'm putting that continuous wave"
+    },
+    {
+      "start": 1009.77,
+      "end": 1009.97,
+      "text": "it up."
+    },
+    {
+      "start": 1011.18,
+      "end": 1017.88,
+      "text": "line, and we can measure the VTI, the mean gradients, the max gradients, et cetera, down through"
+    },
+    {
+      "start": 1017.88,
+      "end": 1019.86,
+      "text": "the aortic valve, which you can see here as a normal"
+    },
+    {
+      "start": 1020.0,
+      "end": 1027.53,
+      "text": "nice flow and it's during sisterly. Under it I've got two profiles here for the"
+    },
+    {
+      "start": 1027.53,
+      "end": 1029.59,
+      "text": "left ventricle outflow tract profile."
+    },
+    {
+      "start": 1030.06,
+      "end": 1030.96,
+      "text": "What I'm going to ask you to notice,"
+    },
+    {
+      "start": 1031.1,
+      "end": 1033.28,
+      "text": "can you see the closing click that's in here?"
+    },
+    {
+      "start": 1033.54,
+      "end": 1035.54,
+      "text": "So it's really important because if we're going to use this"
+    },
+    {
+      "start": 1035.54,
+      "end": 1037.44,
+      "text": "to try and measure things like stroke volume,"
+    },
+    {
+      "start": 1038.3,
+      "end": 1039.96,
+      "text": "we want to make sure that where we've met..."
+    },
+    {
+      "start": 1040.0,
+      "end": 1043.2,
+      "text": "measured or left ventricle outflow track to diameter"
+    },
+    {
+      "start": 1043.2,
+      "end": 1044.9,
+      "text": "and I've parastone a long axis view."
+    },
+    {
+      "start": 1045.4,
+      "end": 1046.62,
+      "text": "It matches to where we're putting"
+    },
+    {
+      "start": 1046.62,
+      "end": 1049.92,
+      "text": "the pulsed wave Doppler gate in a"
+    },
+    {
+      "start": 1050.06,
+      "end": 1052.04,
+      "text": "I also have double profile enough five chamber view."
+    },
+    {
+      "start": 1052.26,
+      "end": 1052.76,
+      "text": "I hope that makes sense."
+    },
+    {
+      "start": 1053.5,
+      "end": 1055.0,
+      "text": "So that's the way we can make sure"
+    },
+    {
+      "start": 1055.0,
+      "end": 1056.76,
+      "text": "we're measuring the two in the same area."
+    },
+    {
+      "start": 1057.35,
+      "end": 1059.27,
+      "text": "So here I've got my left ventricle outflow tract,"
+    },
+    {
+      "start": 1059.45,
+      "end": 1059.97,
+      "text": "I've got my cl..."
+    },
+    {
+      "start": 1060.0,
+      "end": 1063.94,
+      "text": "in click, feel like I'm in the right spot for that, I can make my measurements and I make"
+    },
+    {
+      "start": 1063.94,
+      "end": 1069.34,
+      "text": "between three to five measurements to try and make sure that we're making a nice average."
+    },
+    {
+      "start": 1070.0,
+      "end": 1072.78,
+      "text": "Again, the Doppler profile is optimized,"
+    },
+    {
+      "start": 1073.02,
+      "end": 1075.12,
+      "text": "the bass lines up at the top, the scales reduced,"
+    },
+    {
+      "start": 1075.32,
+      "end": 1076.96,
+      "text": "so what I'm interested in is filling the screen."
+    },
+    {
+      "start": 1077.34,
+      "end": 1079.8,
+      "text": "My gain is turned down, so I'm looking at the model."
+    },
+    {
+      "start": 1080.44,
+      "end": 1085.94,
+      "text": "So obviously you're hearing me repeat myself and again and again because I'm doing the same thing every single time"
+    },
+    {
+      "start": 1085.94,
+      "end": 1089.92,
+      "text": "I'm doing any kind of Doppler measurement is to try and make sure I'm doing the most accurate"
+    },
+    {
+      "start": 1090.0,
+      "end": 1099.86,
+      "text": "it I can and I'm averaging all the results. Okay, off."
+    },
+    {
+      "start": 1100.0,
+      "end": 1108.93,
+      "text": "the 5 chamber view, we can go back to our 4 chamber view and maybe before we just completely"
+    },
+    {
+      "start": 1108.93,
+      "end": 1109.89,
+      "text": "leave the left ventricle."
+    },
+    {
+      "start": 1110.0,
+      "end": 1116.44,
+      "text": "I'm just going to add in one extra thing here, which is a little bit tricky, and you're"
+    },
+    {
+      "start": 1116.76,
+      "end": 1119.86,
+      "text": "not going to be able to get it with every single patient, but I do find it really useful."
+    },
+    {
+      "start": 1121.32,
+      "end": 1124.72,
+      "text": "useful things to try and do. It's looking at the pulmonary valve flows. Now this can"
+    },
+    {
+      "start": 1124.72,
+      "end": 1127.74,
+      "text": "be useful if we think that we've got raised left ventricle into our sterlic pressures"
+    },
+    {
+      "start": 1128.56,
+      "end": 1129.72,
+      "text": "or left atrial pressures."
+    },
+    {
+      "start": 1130.38,
+      "end": 1133.88,
+      "text": "or if we have significant mitral regurgitation."
+    },
+    {
+      "start": 1135.84,
+      "end": 1137.48,
+      "text": "What I'm looking for here is the pulmonary vein"
+    },
+    {
+      "start": 1137.48,
+      "end": 1139.86,
+      "text": "that's coming here into the left atrium, okay?"
+    },
+    {
+      "start": 1140.45,
+      "end": 1142.29,
+      "text": "I've got to change a few parameters for this one, okay?"
+    },
+    {
+      "start": 1142.45,
+      "end": 1144.67,
+      "text": "So first of all, with the color box that I put over this,"
+    },
+    {
+      "start": 1145.51,
+      "end": 1147.35,
+      "text": "I'll often try and change my scale"
+    },
+    {
+      "start": 1147.73,
+      "end": 1149.55,
+      "text": "so that I'm looking at low flows."
+    },
+    {
+      "start": 1150.35,
+      "end": 1153.59,
+      "text": "You know, I've got, I'm looking at quite high, high flows."
+    },
+    {
+      "start": 1154.4,
+      "end": 1156.72,
+      "text": "But often we're looking at flows that are maybe closer"
+    },
+    {
+      "start": 1156.72,
+      "end": 1159.7,
+      "text": "to around about, say, 20 to 40 centimeters."
+    },
+    {
+      "start": 1160.0,
+      "end": 1165.36,
+      "text": "movement. So I might change down the scale here. The next is with my pulse wave"
+    },
+    {
+      "start": 1165.36,
+      "end": 1169.46,
+      "text": "Doppler box. I try and get it about a centimeter back into that pulmonary vein."
+    },
+    {
+      "start": 1171.18,
+      "end": 1175.22,
+      "text": "and sometimes increasing the gate can help,"
+    },
+    {
+      "start": 1175.58,
+      "end": 1177.5,
+      "text": "and sometimes even decreasing the gate can help,"
+    },
+    {
+      "start": 1177.64,
+      "end": 1179.96,
+      "text": "depending I'd start with increasing the gate first of all."
+    },
+    {
+      "start": 1180.0,
+      "end": 1184.14,
+      "text": "and the profile you're trying to see is something that looks like this."
+    },
+    {
+      "start": 1186.5,
+      "end": 1189.98,
+      "text": "So here we have the profile of a pulsed wave Doppler."
+    },
+    {
+      "start": 1190.0,
+      "end": 1195.81,
+      "text": "One of the things I'm really trying to avoid here is looking at any kind of aliasing that"
+    },
+    {
+      "start": 1195.81,
+      "end": 1197.53,
+      "text": "goes on, if we've gone over the Nyquist limit."
+    },
+    {
+      "start": 1198.15,
+      "end": 1199.97,
+      "text": "And so I've got to make sure that the depth-"
+    },
+    {
+      "start": 1200.0,
+      "end": 1204.78,
+      "text": "reduced as much as I can. Sometimes I reduce the sector width even further and"
+    },
+    {
+      "start": 1205.04,
+      "end": 1208.94,
+      "text": "here I've got that pulse wave Doppler box that's sitting right into that palm"
+    },
+    {
+      "start": 1208.94,
+      "end": 1209.4,
+      "text": "I'm going to re-vain."
+    },
+    {
+      "start": 1210.0,
+      "end": 1213.09,
+      "text": "And we look here and we've got the S-wave during systole"
+    },
+    {
+      "start": 1213.09,
+      "end": 1215.33,
+      "text": "from the beginning of the Q-R-S to the end of the T-wave."
+    },
+    {
+      "start": 1215.67,
+      "end": 1219.33,
+      "text": "That's the S-wave there, followed by the D-wave underneath."
+    },
+    {
+      "start": 1220.0,
+      "end": 1222.82,
+      "text": "and then just a little A-Wave reversal"
+    },
+    {
+      "start": 1222.82,
+      "end": 1225.6,
+      "text": "in there during atrial contraction during the P-Wave."
+    },
+    {
+      "start": 1226.71,
+      "end": 1228.73,
+      "text": "So the S-Wave is usually greater than the D-Wave,"
+    },
+    {
+      "start": 1228.93,
+      "end": 1229.97,
+      "text": "it's the F-Wave, it's the F."
+    },
+    {
+      "start": 1230.13,
+      "end": 1232.39,
+      "text": "If the S-wave is the same size as the D-wave,"
+    },
+    {
+      "start": 1232.49,
+      "end": 1234.83,
+      "text": "that suggests that we've got some form of mildly raised"
+    },
+    {
+      "start": 1234.83,
+      "end": 1235.63,
+      "text": "left-atural pressure."
+    },
+    {
+      "start": 1236.11,
+      "end": 1238.37,
+      "text": "If the S-wave is smaller than the D-wave,"
+    },
+    {
+      "start": 1239.13,
+      "end": 1239.97,
+      "text": "that suggests that we've got..."
+    },
+    {
+      "start": 1240.0,
+      "end": 1242.45,
+      "text": "significantly raised left atrial pressure."
+    },
+    {
+      "start": 1243.23,
+      "end": 1245.71,
+      "text": "And even if you see systolic reversal,"
+    },
+    {
+      "start": 1245.83,
+      "end": 1248.79,
+      "text": "sometimes that's normally seen if you've got significant,"
+    },
+    {
+      "start": 1249.13,
+      "end": 1249.39,
+      "text": "let's go."
+    },
+    {
+      "start": 1250.0,
+      "end": 1252.64,
+      "text": "least modern or severe mitre regurgitation."
+    },
+    {
+      "start": 1253.59,
+      "end": 1256.19,
+      "text": "Okay, so again, it's just a useful tool that you can pick up"
+    },
+    {
+      "start": 1256.19,
+      "end": 1258.71,
+      "text": "particularly for looking for significant mitre regurgitation,"
+    },
+    {
+      "start": 1258.71,
+      "end": 1259.91,
+      "text": "especially if it's something like x"
+    },
+    {
+      "start": 1260.03,
+      "end": 1265.19,
+      "text": "centric in origin. This can be useful for helping to see if there's significantly raised"
+    },
+    {
+      "start": 1265.64,
+      "end": 1268.57,
+      "text": "There's no facial pressure, there's no facial pressure, there's no facial pressure, there's no facial pressure, there's no facial pressure, there's no facial pressure, there's no facial pressure, there's no facial pressure, there's no facial pressure, there's no facial pressure, there's no facial pressure, there's no facial pressure, there's no facial pressure, there's no facial pressure, there's no facial pressure, there's no facial pressure, there's no facial pressure, there's no facial pressure, there's no facial pressure, there's no facial pressure, there's no facial pressure,"
+    },
+    {
+      "start": 1268.57,
+      "end": 1268.61,
+      "text": "I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry"
+    },
+    {
+      "start": 1275.31,
+      "end": 1278.17,
+      "text": "So after we've done this, we can now start looking at the right ventricle."
+    },
+    {
+      "start": 1278.82,
+      "end": 1279.98,
+      "text": "So for the right ventricle..."
+    },
+    {
+      "start": 1280.0,
+      "end": 1285.04,
+      "text": "Again, keeping an ventricle septum in the center of our image, we can start looking at the"
+    },
+    {
+      "start": 1285.04,
+      "end": 1289.1,
+      "text": "RV free wall, getting both a subjective assessment of RV size and RV function."
+    },
+    {
+      "start": 1290.0,
+      "end": 1294.34,
+      "text": "2D to look at the tricuspid valve, we've got an abnormal morphology, and we can look at"
+    },
+    {
+      "start": 1294.34,
+      "end": 1295.82,
+      "text": "the size of the right atrium."
+    },
+    {
+      "start": 1296.66,
+      "end": 1299.86,
+      "text": "Let's not forget that we've got our intradereal septum that's sitting in here, and if it's"
+    },
+    {
+      "start": 1299.86,
+      "end": 1299.88,
+      "text": "But"
+    },
+    {
+      "start": 1300.0,
+      "end": 1305.0,
+      "text": "to one way or both to the other, suggesting raised atrial pressures and again it's just"
+    },
+    {
+      "start": 1305.0,
+      "end": 1307.1,
+      "text": "using all those tips and clues that you possibly can."
+    },
+    {
+      "start": 1308.64,
+      "end": 1309.98,
+      "text": "Okay, so maybe the first..."
+    },
+    {
+      "start": 1310.0,
+      "end": 1314.08,
+      "text": "This one that we use, that we all know and use as part of every single focus study, is"
+    },
+    {
+      "start": 1314.08,
+      "end": 1314.54,
+      "text": "the TAPC."
+    },
+    {
+      "start": 1314.76,
+      "end": 1319.97,
+      "text": "So we can slide our M mode through that lateral annulus of the..."
+    },
+    {
+      "start": 1320.0,
+      "end": 1324.42,
+      "text": "a tricuspid valve there, and we can get an idea of what our taps is from there, or the"
+    },
+    {
+      "start": 1324.42,
+      "end": 1326.54,
+      "text": "tricuspid annular plane systolic excursion."
+    },
+    {
+      "start": 1326.96,
+      "end": 1329.98,
+      "text": "And that's the movement of that lateral annulus towards the"
+    },
+    {
+      "start": 1330.0,
+      "end": 1335.93,
+      "text": "apex of the of the heart. So you've got to try and again it's angle dependent"
+    },
+    {
+      "start": 1335.93,
+      "end": 1338.73,
+      "text": "try and make sure that your angle is as best as you possibly can."
+    },
+    {
+      "start": 1340.86,
+      "end": 1344.58,
+      "text": "After that, we can use our color wave box to look for"
+    },
+    {
+      "start": 1344.58,
+      "end": 1345.82,
+      "text": "tricuspid regurgitation."
+    },
+    {
+      "start": 1349.6,
+      "end": 1349.92,
+      "text": "And again, what?"
+    },
+    {
+      "start": 1350.03,
+      "end": 1352.71,
+      "text": "Sometimes you're going to be able to see that this"
+    },
+    {
+      "start": 1352.71,
+      "end": 1354.79,
+      "text": "tricuspid regurgitation is sometimes not"
+    },
+    {
+      "start": 1354.79,
+      "end": 1357.63,
+      "text": "in exactly the plane that we'd have if we were to put"
+    },
+    {
+      "start": 1357.63,
+      "end": 1359.83,
+      "text": "our continuous wave Doppler."
+    },
+    {
+      "start": 1360.51,
+      "end": 1362.23,
+      "text": "right through that tricuspid valve."
+    },
+    {
+      "start": 1362.43,
+      "end": 1364.71,
+      "text": "Sometimes the tricuspid regurgitation"
+    },
+    {
+      "start": 1364.71,
+      "end": 1365.79,
+      "text": "is a bit more eccentric."
+    },
+    {
+      "start": 1366.9,
+      "end": 1369.28,
+      "text": "This can be where it's useful to try and optimize"
+    },
+    {
+      "start": 1370.0,
+      "end": 1372.6,
+      "text": "stop the angle by sometimes using some off-axis imaging."
+    },
+    {
+      "start": 1373.3,
+      "end": 1374.46,
+      "text": "I'll just show you what I mean by that here."
+    },
+    {
+      "start": 1374.54,
+      "end": 1375.78,
+      "text": "I'm gonna put the bones back on."
+    },
+    {
+      "start": 1379.54,
+      "end": 1379.96,
+      "text": "Okay, if you can..."
+    },
+    {
+      "start": 1380.0,
+      "end": 1389.64,
+      "text": "Imagine now that there may be the tricuspid regurgitation is pointing more sort of in that direction one of the things that I can do is I can slide my"
+    },
+    {
+      "start": 1390.0,
+      "end": 1397.3,
+      "text": "around so I'm moving it medley so I've gone from my standard board chamber view"
+    },
+    {
+      "start": 1397.3,
+      "end": 1399.9,
+      "text": "and I'm just going to slide it around in that ribs"
+    },
+    {
+      "start": 1400.0,
+      "end": 1404.3,
+      "text": "space. So now off-axis for a standard apical four-chain"
+    },
+    {
+      "start": 1404.3,
+      "end": 1407.24,
+      "text": "review, but I'm in a great view now for having a look down"
+    },
+    {
+      "start": 1407.24,
+      "end": 1409.1,
+      "text": "through that tricuspid bow."
+    },
+    {
+      "start": 1410.96,
+      "end": 1412.44,
+      "text": "I'll show you some examples of this over here."
+    },
+    {
+      "start": 1415.53,
+      "end": 1417.67,
+      "text": "So here we can see in the,"
+    },
+    {
+      "start": 1418.49,
+      "end": 1419.97,
+      "text": "using the color box in this top row."
+    },
+    {
+      "start": 1420.0,
+      "end": 1422.98,
+      "text": "right picture to see if there's a little trace of regurgitation."
+    },
+    {
+      "start": 1423.38,
+      "end": 1429.97,
+      "text": "This is using our standard continuous wave Doppler angle from arms of tr-"
+    },
+    {
+      "start": 1430.1,
+      "end": 1432.7,
+      "text": "through a 4-chamber view, and I can't see a lot of"
+    },
+    {
+      "start": 1432.7,
+      "end": 1433.5,
+      "text": "trocuspid regurg."
+    },
+    {
+      "start": 1434.21,
+      "end": 1436.33,
+      "text": "But when I slide that probe round a little bit,"
+    },
+    {
+      "start": 1436.43,
+      "end": 1437.81,
+      "text": "so I'm now off axis, and you'll see that,"
+    },
+    {
+      "start": 1437.89,
+      "end": 1439.37,
+      "text": "because look at it, if you can see the difference"
+    },
+    {
+      "start": 1439.37,
+      "end": 1439.97,
+      "text": "in where that interval..."
+    },
+    {
+      "start": 1440.8,
+      "end": 1442.74,
+      "text": "It's now much more over to the right of the picture."
+    },
+    {
+      "start": 1443.58,
+      "end": 1446.04,
+      "text": "I've optimised my doppler angle and here I can see that"
+    },
+    {
+      "start": 1446.04,
+      "end": 1447.54,
+      "text": "tricuspid regurred much better."
+    },
+    {
+      "start": 1448.06,
+      "end": 1449.84,
+      "text": "Again, bass line is in the right position."
+    },
+    {
+      "start": 1450.0,
+      "end": 1453.06,
+      "text": "in the scale is down, so what I'm interested is filling that screen, there's only three"
+    },
+    {
+      "start": 1453.06,
+      "end": 1455.48,
+      "text": "cardiac cycles on there, et cetera, et cetera, et cetera."
+    },
+    {
+      "start": 1457.97,
+      "end": 1458.11,
+      "text": "Okay."
+    },
+    {
+      "start": 1460.35,
+      "end": 1461.95,
+      "text": "after the tricusp of regurgitation,"
+    },
+    {
+      "start": 1467.0,
+      "end": 1468.34,
+      "text": "we can use our tissue doppler,"
+    },
+    {
+      "start": 1468.62,
+      "end": 1469.98,
+      "text": "as well as looking at tissue doppler in..."
+    },
+    {
+      "start": 1470.0,
+      "end": 1474.14,
+      "text": "the lateral and medial much lenders, we can also look at it in our lateral"
+    },
+    {
+      "start": 1474.14,
+      "end": 1478.48,
+      "text": "annulus of the tricuspid valve, and give us another idea of maybe some systolic"
+    },
+    {
+      "start": 1478.48,
+      "end": 1478.72,
+      "text": "function."
+    },
+    {
+      "start": 1480.8,
+      "end": 1482.26,
+      "text": "again, it's Doppler Dependent,"
+    },
+    {
+      "start": 1482.36,
+      "end": 1484.74,
+      "text": "so I try and keep that septum in the middle of the screen."
+    },
+    {
+      "start": 1484.74,
+      "end": 1486.0,
+      "text": "I optimize best I can."
+    },
+    {
+      "start": 1486.42,
+      "end": 1489.2,
+      "text": "I'm trying to look at how fast that annulus is moving"
+    },
+    {
+      "start": 1489.2,
+      "end": 1489.98,
+      "text": "to wall."
+    },
+    {
+      "start": 1490.0,
+      "end": 1494.17,
+      "text": "towards the apex of the heart, and it can look something like this."
+    },
+    {
+      "start": 1497.52,
+      "end": 1499.86,
+      "text": "As well as you can see here, the taps in the top right picture."
+    },
+    {
+      "start": 1500.19,
+      "end": 1501.79,
+      "text": "down here in the bottom left image here."
+    },
+    {
+      "start": 1502.15,
+      "end": 1503.43,
+      "text": "I'm trying to optimize my angle."
+    },
+    {
+      "start": 1503.43,
+      "end": 1505.01,
+      "text": "I'm using the tissue-dopper imaging,"
+    },
+    {
+      "start": 1505.55,
+      "end": 1508.55,
+      "text": "looking at the speed of what we call the S-wave."
+    },
+    {
+      "start": 1508.89,
+      "end": 1509.89,
+      "text": "And here's the systolic."
+    },
+    {
+      "start": 1510.0,
+      "end": 1515.42,
+      "text": "motion of that lateral annualist towards the apex and he can get an idea that we've got"
+    },
+    {
+      "start": 1515.42,
+      "end": 1517.86,
+      "text": "a velocity here of about 11 or 12."
+    },
+    {
+      "start": 1520.51,
+      "end": 1529.97,
+      "text": "Okay, but after we've done the four chamber-"
+    },
+    {
+      "start": 1530.0,
+      "end": 1535.52,
+      "text": "and interrogated the valves that we can see, both the the mitral, the aortic and the tricuspid."
+    },
+    {
+      "start": 1535.86,
+      "end": 1539.82,
+      "text": "I'd now want to move around and look at the two chamber view. So, instead of having the sept"
+    },
+    {
+      "start": 1540.0,
+      "end": 1543.84,
+      "text": "right in the middle of the screen trying to get me a nice apical 4 chamber view."
+    },
+    {
+      "start": 1544.26,
+      "end": 1546.98,
+      "text": "I tilt it round a little bit, I might just get rid of the bones here."
+    },
+    {
+      "start": 1553.78,
+      "end": 1555.46,
+      "text": "So a nice apical four chamber view down"
+    },
+    {
+      "start": 1555.46,
+      "end": 1557.48,
+      "text": "why I call the gun barrel of that ventricle."
+    },
+    {
+      "start": 1558.58,
+      "end": 1559.88,
+      "text": "I'm gonna tilt my probe."
+    },
+    {
+      "start": 1560.06,
+      "end": 1563.42,
+      "text": "over so that now that the main axis is no longer on the"
+    },
+    {
+      "start": 1563.42,
+      "end": 1565.92,
+      "text": "interventional septum, it's now down the LV."
+    },
+    {
+      "start": 1566.8,
+      "end": 1568.44,
+      "text": "And that means that when I rotate my probe,"
+    },
+    {
+      "start": 1568.58,
+      "end": 1569.96,
+      "text": "whatever's in the middle of the screen in one..."
+    },
+    {
+      "start": 1570.0,
+      "end": 1574.27,
+      "text": "view will stay in the middle of the screen in another view and I'm going to rotate it about 60 degrees"
+    },
+    {
+      "start": 1574.27,
+      "end": 1579.97,
+      "text": "trying to keep everything as it is and when I've come around 60 degrees"
+    },
+    {
+      "start": 1580.0,
+      "end": 1586.77,
+      "text": "and step down off that rib I get my apical two chamber view with my inferior wall"
+    },
+    {
+      "start": 1586.77,
+      "end": 1588.51,
+      "text": "here my anterior wall here any"
+    },
+    {
+      "start": 1590.0,
+      "end": 1593.08,
+      "text": "You can use the color wave Doppler Box here to have a look to see if you've got any"
+    },
+    {
+      "start": 1593.52,
+      "end": 1594.94,
+      "text": "regurgitation coming into that left-aid room."
+    },
+    {
+      "start": 1598.8,
+      "end": 1599.98,
+      "text": "After you've looked to your two chamber..."
+    },
+    {
+      "start": 1600.0,
+      "end": 1606.5,
+      "text": "I can rotate another 60 degrees and get off that rib."
+    },
+    {
+      "start": 1610.58,
+      "end": 1612.76,
+      "text": "And here we get an idea of what our left ventricle"
+    },
+    {
+      "start": 1612.76,
+      "end": 1614.94,
+      "text": "mitral valve left atrium."
+    },
+    {
+      "start": 1615.38,
+      "end": 1616.62,
+      "text": "And here's the three chamber view"
+    },
+    {
+      "start": 1616.62,
+      "end": 1619.9,
+      "text": "coming down through the LVOT and through the daortic valve."
+    },
+    {
+      "start": 1620.99,
+      "end": 1626.0,
+      "text": "If I had the bones back on, what you're going to notice is as well as called a three chamber view"
+    },
+    {
+      "start": 1626.0,
+      "end": 1629.06,
+      "text": "It's also known as the apical long axis view because"
+    },
+    {
+      "start": 1630.26,
+      "end": 1632.88,
+      "text": "We're kind of in the same angle as we'd be in"
+    },
+    {
+      "start": 1632.88,
+      "end": 1635.57,
+      "text": "if we were doing our parastonal long axis view."
+    },
+    {
+      "start": 1636.8,
+      "end": 1639.9,
+      "text": "The three chamber view of the apical view is..."
+    },
+    {
+      "start": 1640.06,
+      "end": 1643.04,
+      "text": "pretty much just the powerstone long axis view on a different angle."
+    },
+    {
+      "start": 1650.45,
+      "end": 1652.96,
+      "text": "And again, we can use our Halloween Doppler Box here"
+    },
+    {
+      "start": 1652.96,
+      "end": 1655.08,
+      "text": "to have a look at the Mitre Regurgitation."
+    },
+    {
+      "start": 1657.26,
+      "end": 1658.6,
+      "text": "If there's any abnormal blood flow there,"
+    },
+    {
+      "start": 1659.08,
+      "end": 1659.98,
+      "text": "but also provide the most..."
+    },
+    {
+      "start": 1660.0,
+      "end": 1664.26,
+      "text": "importantly is it gives us another great look at the aortic valve and so don't"
+    },
+    {
+      "start": 1664.26,
+      "end": 1667.38,
+      "text": "forget if you're looking at aortic valve stenosis you don't just use the apical"
+    },
+    {
+      "start": 1667.38,
+      "end": 1669.98,
+      "text": "5 chain review you also use the apical 3"
+    },
+    {
+      "start": 1670.0,
+      "end": 1673.08,
+      "text": "chamber view to try and give you the most information possible."
+    },
+    {
+      "start": 1675.14,
+      "end": 1677.44,
+      "text": "Okay, to finish up and look at our sub-costal view."
+    },
+    {
+      "start": 1677.96,
+      "end": 1679.96,
+      "text": "So that's where the marker pointing towards the patient's left."
+    },
+    {
+      "start": 1680.0,
+      "end": 1683.82,
+      "text": "our hand on top of the probe this time and we can come up from underneath as if"
+    },
+    {
+      "start": 1683.82,
+      "end": 1689.51,
+      "text": "he's sternum and we can look at our forechain review underneath, okay."
+    },
+    {
+      "start": 1690.19,
+      "end": 1693.29,
+      "text": "And again, we can use our colorway Doppler box to have a look at our"
+    },
+    {
+      "start": 1693.29,
+      "end": 1697.48,
+      "text": "Tricuspid valve, our mitral valve, maybe able to re-gurgitation."
+    },
+    {
+      "start": 1698.66,
+      "end": 1699.96,
+      "text": "And the last thing that we might be able to do"
+    },
+    {
+      "start": 1700.0,
+      "end": 1702.76,
+      "text": "is when we're looking at our IVC is we can look at our"
+    },
+    {
+      "start": 1702.76,
+      "end": 1706.91,
+      "text": "hepatic vein up here. So similar to the pulmonary veins looking for"
+    },
+    {
+      "start": 1706.91,
+      "end": 1709.69,
+      "text": "significantly raised left atrial pressure we can use our"
+    },
+    {
+      "start": 1710.0,
+      "end": 1716.94,
+      "text": "here, if we can try and optimize the angle as best we can, and we can use that, try and"
+    },
+    {
+      "start": 1716.94,
+      "end": 1719.88,
+      "text": "interrogate our hepatic vein from here to look at right age."
+    },
+    {
+      "start": 1720.0,
+      "end": 1721.46,
+      "text": "real pressure, or if there's significant"
+    },
+    {
+      "start": 1721.46,
+      "end": 1722.84,
+      "text": "tricuspid regurgitation."
+    },
+    {
+      "start": 1723.48,
+      "end": 1724.42,
+      "text": "And it looks something like this."
+    },
+    {
+      "start": 1725.72,
+      "end": 1727.76,
+      "text": "So here we get an idea of the color box down"
+    },
+    {
+      "start": 1727.76,
+      "end": 1728.66,
+      "text": "through our patic vein."
+    },
+    {
+      "start": 1729.24,
+      "end": 1729.94,
+      "text": "We'll try and optimize it."
+    },
+    {
+      "start": 1730.0,
+      "end": 1734.94,
+      "text": "top angle as much as we can and here we have the S-wave that is pointing in the different"
+    },
+    {
+      "start": 1734.94,
+      "end": 1739.98,
+      "text": "direction from the primary vein but the S-wave is below, D-wave and then a little lateral kicker."
+    },
+    {
+      "start": 1740.0,
+      "end": 1743.12,
+      "text": "above there and notice the respiratory variation that goes on from there."
+    },
+    {
+      "start": 1745.56,
+      "end": 1745.86,
+      "text": "And that's it."
+    },
+    {
+      "start": 1746.72,
+      "end": 1749.97,
+      "text": "So a standard comprehensive transverse..."
+    },
+    {
+      "start": 1750.0,
+      "end": 1755.78,
+      "text": "study can take anywhere from 30 to 45 minutes. It does take a degree of knowledge in basic"
+    },
+    {
+      "start": 1755.78,
+      "end": 1759.0,
+      "text": "echo before you can go and attempt into it. I'm going to estimate that maybe it takes"
+    },
+    {
+      "start": 1759.0,
+      "end": 1759.98,
+      "text": "about 50 to 70 minutes."
+    },
+    {
+      "start": 1760.03,
+      "end": 1764.55,
+      "text": "you five studies to start to try and get the hang of using Doppler, so don't be"
+    },
+    {
+      "start": 1764.55,
+      "end": 1766.85,
+      "text": "disheartened if you don't get it straight away, it does take considerable"
+    },
+    {
+      "start": 1766.85,
+      "end": 1769.97,
+      "text": "learning and I'll always encourage to try and find a mentor to help you."
+    },
+    {
+      "start": 1770.42,
+      "end": 1774.28,
+      "text": "go through this to teach you good tips and tricks and sonographers are a gold"
+    },
+    {
+      "start": 1774.28,
+      "end": 1778.0,
+      "text": "mind of information so I encourage you to use them. Thank you very much, I hope that was useful."
+    }
+  ]
+}

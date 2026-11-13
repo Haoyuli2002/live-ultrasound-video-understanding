@@ -1,0 +1,154 @@
+{
+  "understanding": "Fetal femur ultrasound tutorial matching probe diagrams to fetal anatomy images across cephalic, breech and transverse presentations.",
+  "native_opened": [
+    90,
+    104,
+    107,
+    110,
+    113,
+    116,
+    117,
+    118,
+    119,
+    122,
+    150,
+    575
+  ],
+  "tasks": [
+    {
+      "qa_type": "current_observation",
+      "query_time": 104,
+      "answer_time": 104,
+      "checkpoints": [],
+      "question": "In this fetal cross-section, how does the marked stomach compare with the marked spine in brightness and depth?",
+      "reference_answer": "The stomach is a darker pocket above the brighter spine echoes.",
+      "visual_support": "The stomach arrow points into a dark pocket near the upper part of the fetal profile and the spine arrow points to bright echoes below.",
+      "query_prefix_check": "Both landmarks are marked in the current image.",
+      "answer_prefix_check": "The difference in depth and brightness is visible at both arrowheads.",
+      "shortcut_risk": "Moderate. Anatomy labels identify the structures.",
+      "task_id": "s3_remaining79_rI9hxJDMGGY_01",
+      "video_id": "rI9hxJDMGGY",
+      "split": "eval",
+      "language": "en",
+      "source_video": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/eval_full295/rI9hxJDMGGY.mp4",
+      "stage3_value": "high",
+      "visual_evidence": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/rI9hxJDMGGY/104.jpg",
+          "checkpoint": 104.0,
+          "source_pts_seconds": 103.937167,
+          "resolution": [
+            640,
+            360
+          ]
+        }
+      ],
+      "asr_support_segments": [],
+      "query_decision": "ANSWER",
+      "answer_decision": "ANSWER",
+      "review_status": "accepted_targeted_native_frame_self_review",
+      "student_input_visibility": "not_checked"
+    },
+    {
+      "qa_type": "event_notification",
+      "query_time": 117,
+      "answer_time": 119,
+      "checkpoints": [
+        118
+      ],
+      "question": "Let me know when the femur shaft comes into view in this cephalic example.",
+      "reference_answer": "The femur shaft is visible now as a bright, nearly horizontal line in the upper right of the scan.",
+      "visual_support": "Frames 117 and 118 show the abdominal cross-section with stomach and spine. The femur example at 119 shows the shaft near the top right.",
+      "query_prefix_check": "The instruction mentions the femur, but the ultrasound panel still shows stomach and spine.",
+      "answer_prefix_check": "The shaft is clearly visible and marked by the femur arrow.",
+      "shortcut_risk": "Moderate. The annotation confirms the target after it appears.",
+      "task_id": "s3_remaining79_rI9hxJDMGGY_02",
+      "video_id": "rI9hxJDMGGY",
+      "split": "eval",
+      "language": "en",
+      "source_video": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/eval_full295/rI9hxJDMGGY.mp4",
+      "stage3_value": "high",
+      "visual_evidence": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/rI9hxJDMGGY/117.jpg",
+          "checkpoint": 117.0,
+          "source_pts_seconds": 116.950167,
+          "resolution": [
+            640,
+            360
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/rI9hxJDMGGY/118.jpg",
+          "checkpoint": 118.0,
+          "source_pts_seconds": 117.951167,
+          "resolution": [
+            640,
+            360
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/rI9hxJDMGGY/119.jpg",
+          "checkpoint": 119.0,
+          "source_pts_seconds": 118.952167,
+          "resolution": [
+            640,
+            360
+          ]
+        }
+      ],
+      "asr_support_segments": [],
+      "query_decision": "WAIT",
+      "answer_decision": "ANSWER",
+      "review_status": "accepted_targeted_native_frame_self_review",
+      "student_input_visibility": "not_checked"
+    },
+    {
+      "qa_type": "history_recall",
+      "query_time": 575,
+      "answer_time": 575,
+      "checkpoints": [
+        90
+      ],
+      "question": "Before the first cephalic femur example, which side of the profile image showed the fetal head?",
+      "reference_answer": "The fetal head was on the right side of the sonogram.",
+      "visual_support": "The rounded bright skull contour and head marker are in the right half at 90.",
+      "query_prefix_check": "The first cephalic example already appeared earlier.",
+      "answer_prefix_check": "The rightward placement is visible in the earlier sonogram.",
+      "shortcut_risk": "Low. The fetal position label alone does not specify display side.",
+      "task_id": "s3_remaining79_rI9hxJDMGGY_03",
+      "video_id": "rI9hxJDMGGY",
+      "split": "eval",
+      "language": "en",
+      "source_video": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/eval_full295/rI9hxJDMGGY.mp4",
+      "stage3_value": "high",
+      "visual_evidence": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/rI9hxJDMGGY/90.jpg",
+          "checkpoint": 90.0,
+          "source_pts_seconds": 89.923167,
+          "resolution": [
+            640,
+            360
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/rI9hxJDMGGY/575.jpg",
+          "checkpoint": 575.0,
+          "source_pts_seconds": 574.941033,
+          "resolution": [
+            640,
+            360
+          ]
+        }
+      ],
+      "asr_support_segments": [],
+      "query_decision": "ANSWER",
+      "answer_decision": "ANSWER",
+      "review_status": "accepted_targeted_native_frame_self_review",
+      "student_input_visibility": "not_checked"
+    }
+  ],
+  "video_id": "rI9hxJDMGGY",
+  "review_scope": "Same-assistant review; sampled timeline, original-size key frames, and existing time-indexed ASR when available. No continuous replay or direct audio claim."
+}

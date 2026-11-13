@@ -1,0 +1,293 @@
+{
+  "video_id": "w8wc8-40F1E",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/eval/w8wc8-40F1E/asr.txt",
+  "segments": [
+    {
+      "start": 0.15,
+      "end": 2.61,
+      "text": "Ultrasenography of the abdominal aorta"
+    },
+    {
+      "start": 2.61,
+      "end": 9.02,
+      "text": "In this video, we'll show you how to perform an ultrasound scan of the abdominal aorta."
+    },
+    {
+      "start": 9.55,
+      "end": 13.71,
+      "text": "The most common reason to perform a point of care scan of the abdominal aorta"
+    },
+    {
+      "start": 13.71,
+      "end": 15.49,
+      "text": "is to check for an aneurysm."
+    },
+    {
+      "start": 15.83,
+      "end": 17.37,
+      "text": "We'll talk about that a little later,"
+    },
+    {
+      "start": 17.61,
+      "end": 22.45,
+      "text": "but first we'll go over the basics of how to perform a scan and some relevant anatomy."
+    },
+    {
+      "start": 23.94,
+      "end": 29.52,
+      "text": "The abdominal aorta is retroperitoneal and closely adjacent to the inferior vena cava."
+    },
+    {
+      "start": 29.52,
+      "end": 35.45,
+      "text": "We will be scanning the aorta in the short axis, otherwise known as the transverse plane."
+    },
+    {
+      "start": 37.36,
+      "end": 40.92,
+      "text": "We can use a curvilinear or phased array probe for these scans."
+    },
+    {
+      "start": 42.89,
+      "end": 44.03,
+      "text": "Short axis view."
+    },
+    {
+      "start": 45.28,
+      "end": 50.54,
+      "text": "Place the probe just under the zyfoid process with the probe indicator pointing to the patient's"
+    },
+    {
+      "start": 50.54,
+      "end": 51.1,
+      "text": "right side."
+    },
+    {
+      "start": 51.62,
+      "end": 56.6,
+      "text": "Pushing the probe down firmly can improve the image by displacing any overlying abdominal"
+    },
+    {
+      "start": 56.6,
+      "end": 56.94,
+      "text": "gas."
+    },
+    {
+      "start": 57.69,
+      "end": 63.35,
+      "text": "You can now clearly make out two anicoextructures, lying just anterior to the hyper-echoic"
+    },
+    {
+      "start": 63.35,
+      "end": 65.61,
+      "text": "vertebral body and its large acoustic shadow."
+    },
+    {
+      "start": 66.26,
+      "end": 70.72,
+      "text": "To the left of the image, just to the right of the patient's midline, is the inferior"
+    },
+    {
+      "start": 70.72,
+      "end": 74.66,
+      "text": "vena cava, which we'll refer to as the IVC from now on."
+    },
+    {
+      "start": 75.04,
+      "end": 79.84,
+      "text": "To the right of the image, just to the left of the patient's midline, you can see the abdominal"
+    },
+    {
+      "start": 79.84,
+      "end": 80.36,
+      "text": "aorta."
+    },
+    {
+      "start": 81.38,
+      "end": 86.54,
+      "text": "The IVC has a thinner wall than the aorta, and can usually be compressed quite easily"
+    },
+    {
+      "start": 86.54,
+      "end": 87.28,
+      "text": "with the probe."
+    },
+    {
+      "start": 87.74,
+      "end": 93.02,
+      "text": "In contrast, the aorta is thick walled and almost impossible to compress, remaining"
+    },
+    {
+      "start": 93.02,
+      "end": 98.2,
+      "text": "circular under the probe. It also pulsates much more noticeably than the IVC."
+    },
+    {
+      "start": 99.44,
+      "end": 102.7,
+      "text": "Let's now take a look at the branches of the abdominal aorta."
+    },
+    {
+      "start": 105.3,
+      "end": 109.5,
+      "text": "We will scan the abdominal aorta and its branches from proximal to distal."
+    },
+    {
+      "start": 110.38,
+      "end": 115.52,
+      "text": "As the probe is moved distally, major arteries can be seen branching off the aorta."
+    },
+    {
+      "start": 116.14,
+      "end": 121.18,
+      "text": "First is the celiac trunk, which splits after a short distance into three branches."
+    },
+    {
+      "start": 122.06,
+      "end": 126.46,
+      "text": "The shape of the trunk's division in this view is sometimes called the seagull sign"
+    },
+    {
+      "start": 126.46,
+      "end": 129.78,
+      "text": "because it looks a little like a silhouette of a seagull's wings."
+    },
+    {
+      "start": 130.88,
+      "end": 132.5,
+      "text": "Two of the branches are visible here."
+    },
+    {
+      "start": 133.04,
+      "end": 135.02,
+      "text": "The common hepatic artery running right,"
+    },
+    {
+      "start": 135.62,
+      "end": 137.28,
+      "text": "and the splenic artery running left."
+    },
+    {
+      "start": 138.17,
+      "end": 140.39,
+      "text": "The celiac trunk's third major branch,"
+    },
+    {
+      "start": 140.79,
+      "end": 142.05,
+      "text": "the left gastric artery,"
+    },
+    {
+      "start": 142.37,
+      "end": 144.55,
+      "text": "is not visible in the short axis view"
+    },
+    {
+      "start": 144.55,
+      "end": 146.93,
+      "text": "because it initially runs proximally."
+    },
+    {
+      "start": 148.01,
+      "end": 149.89,
+      "text": "Directly below the celiac trunk"
+    },
+    {
+      "start": 149.89,
+      "end": 151.95,
+      "text": "is the superior mesenteric artery"
+    },
+    {
+      "start": 151.95,
+      "end": 154.63,
+      "text": "which runs parallel to the aorta distally."
+    },
+    {
+      "start": 154.97,
+      "end": 157.27,
+      "text": "You can see it here in transverse section"
+    },
+    {
+      "start": 157.27,
+      "end": 162.25,
+      "text": "Then crossing the left renal vein and surrounded by a hyper-echoic layer of fatty tissue."
+    },
+    {
+      "start": 167.86,
+      "end": 172.22,
+      "text": "Next, the left and right renal arteries can be seen branching from the aorta."
+    },
+    {
+      "start": 181.9,
+      "end": 187.42,
+      "text": "Finally, roughly at the level of the umbilicus, the aorta bifurcates into the left and right"
+    },
+    {
+      "start": 187.42,
+      "end": 188.7,
+      "text": "common iliac arteries."
+    },
+    {
+      "start": 191.14,
+      "end": 196.6,
+      "text": "To screen for an aneurysm, you need to visualize the abdominal aorta from the hiatus all the"
+    },
+    {
+      "start": 196.6,
+      "end": 197.96,
+      "text": "way down to the bifurcation."
+    },
+    {
+      "start": 200.8,
+      "end": 203.88,
+      "text": "The aorta should normally be anechoic throughout its course."
+    },
+    {
+      "start": 203.88,
+      "end": 209.52,
+      "text": "And aortic diameter greater than three centimeters indicates the presence of an aneurysm."
+    },
+    {
+      "start": 211.65,
+      "end": 216.69,
+      "text": "To measure the aortic diameter, first freeze the image at the point where the aorta looks"
+    },
+    {
+      "start": 216.69,
+      "end": 217.19,
+      "text": "widest."
+    },
+    {
+      "start": 219.36,
+      "end": 224.04,
+      "text": "Then, measure from the outer border of the wall on one side to the outer border on the"
+    },
+    {
+      "start": 224.04,
+      "end": 224.82,
+      "text": "opposite side."
+    },
+    {
+      "start": 232.69,
+      "end": 237.85,
+      "text": "It's important not to measure only the lumen, because plaques and thrombi can make it appear"
+    },
+    {
+      "start": 237.85,
+      "end": 238.69,
+      "text": "falsely narrow."
+    },
+    {
+      "start": 240.52,
+      "end": 245.94,
+      "text": "OK, now that you have an overview of aorta ultrasound skills, check out the poucus article"
+    },
+    {
+      "start": 245.94,
+      "end": 246.66,
+      "text": "on Ambass."
+    }
+  ]
+}

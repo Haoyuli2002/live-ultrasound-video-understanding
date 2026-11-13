@@ -1,0 +1,88 @@
+{
+  "video_id": "_Q0cTG3ZlHk",
+  "reviewer": "stage3_b",
+  "review_scope": "Question-led review by Agent B of Agent A draft; not blind. Native full-frame sampled checkpoints and available time-indexed ASR; no continuous replay or direct listening claim.",
+  "reviewer_native_opened": [
+    50,
+    125,
+    350,
+    410,
+    411,
+    411.5,
+    412,
+    413,
+    414,
+    415,
+    470,
+    475,
+    476,
+    477,
+    479,
+    500,
+    575,
+    576,
+    576.5,
+    577,
+    640
+  ],
+  "tasks": [
+    {
+      "task_index": 1,
+      "outcome": "accepted",
+      "issues": [],
+      "changes": [],
+      "query_status": "ANSWER125; horizontal upper bands and speckled lower texture visible."
+    },
+    {
+      "task_index": 2,
+      "outcome": "accepted",
+      "issues": [],
+      "changes": [],
+      "query_status": "ANSWER350; central tissue has internal echoes beside much darker region."
+    },
+    {
+      "task_index": 3,
+      "outcome": "corrected",
+      "issues": [
+        "New vertical-artifact scan already appears412 before415."
+      ],
+      "changes": [
+        "Advanced answer to412 with negative411.5."
+      ],
+      "query_status": "WAIT410; tissue-like scan has not shown requested new pleural vertical-artifact example.",
+      "answer_status": "ANSWER412; deep vertical streaks visible."
+    },
+    {
+      "task_index": 4,
+      "outcome": "corrected",
+      "issues": [
+        "M-mode pattern already visible476."
+      ],
+      "changes": [
+        "Advanced answer479 to476; retained475 blurred transition."
+      ],
+      "query_status": "WAIT470; next M-mode texture absent.",
+      "answer_status": "ANSWER476; horizontal lower bands clear."
+    },
+    {
+      "task_index": 5,
+      "outcome": "corrected",
+      "issues": [
+        "Draft reversed left/right pattern at its answer time577. Later640 has different ordering and cannot backfill earlier answer.",
+        "New strip clear576.5 earlier than577."
+      ],
+      "changes": [
+        "Corrected to horizontal bands LEFT and granular texture RIGHT. Advanced answer to576.5."
+      ],
+      "query_status": "WAIT575; new mixed-pattern strip absent.",
+      "answer_status": "ANSWER576.5; both exact-time texture zones clear."
+    },
+    {
+      "task_index": 6,
+      "outcome": "accepted",
+      "issues": [],
+      "changes": [],
+      "query_status": "ANSWER640; first bat-sign frame50 has bright pleural line beneath rib cortices between their shadows."
+    }
+  ]
+}

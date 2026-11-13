@@ -1,0 +1,1188 @@
+{
+  "video_id": "ToKjoj8ze4o",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/ToKjoj8ze4o/asr.txt",
+  "segments": [
+    {
+      "start": 16.94,
+      "end": 19.96,
+      "text": "The lungs are a major hindrance for the use of archer"
+    },
+    {
+      "start": 20.0,
+      "end": 24.66,
+      "text": "sound at the thoracic level. That was what we learned not so long time ago."
+    },
+    {
+      "start": 25.79,
+      "end": 29.37,
+      "text": "As a matter of fact, as a cardiologist, I always hated the lung because it prevented"
+    },
+    {
+      "start": 29.37,
+      "end": 29.97,
+      "text": "that B from C."
+    },
+    {
+      "start": 30.0,
+      "end": 36.95,
+      "text": "the heart. In reality, lung ultrasound now has a very firm place in the armatarium of ultrasound,"
+    },
+    {
+      "start": 36.95,
+      "end": 39.87,
+      "text": "especially now when it comes to imaging patient."
+    },
+    {
+      "start": 40.0,
+      "end": 41.88,
+      "text": "who have COVID-19 infection."
+    },
+    {
+      "start": 43.0,
+      "end": 44.9,
+      "text": "Welcome to this lecture on lung ultrasound"
+    },
+    {
+      "start": 44.9,
+      "end": 47.04,
+      "text": "and welcome Martin Itasberger."
+    },
+    {
+      "start": 47.93,
+      "end": 49.96,
+      "text": "Thank you very much, but..."
+    },
+    {
+      "start": 50.8,
+      "end": 58.1,
+      "text": "lung ultrasound is being used for quite some time already. The physicist started in 1961 to use"
+    },
+    {
+      "start": 58.1,
+      "end": 59.98,
+      "text": "sound and scanning the light."
+    },
+    {
+      "start": 60.06,
+      "end": 63.33,
+      "text": "They were aware of the fact that they can interpret artefacts."
+    },
+    {
+      "start": 63.99,
+      "end": 69.26,
+      "text": "In medicine, we started to do research on longitudinal sound approximately 1983."
+    },
+    {
+      "start": 70.48,
+      "end": 72.78,
+      "text": "but what are the indications for lung artisan?"
+    },
+    {
+      "start": 74.92,
+      "end": 76.42,
+      "text": "The indications start, of course,"
+    },
+    {
+      "start": 76.58,
+      "end": 79.42,
+      "text": "with these pinier patients in shock."
+    },
+    {
+      "start": 80.22,
+      "end": 86.64,
+      "text": "hypertension, hypertension, but basically longitudinal sound should be used when you do a physical examination."
+    },
+    {
+      "start": 88.88,
+      "end": 89.98,
+      "text": "Of course, we know..."
+    },
+    {
+      "start": 90.13,
+      "end": 92.36,
+      "text": "the anatomy of the respiratory tract."
+    },
+    {
+      "start": 92.64,
+      "end": 99.78,
+      "text": "We have the truck here, and then we have 300 million alveoli."
+    },
+    {
+      "start": 100.54,
+      "end": 104.37,
+      "text": "So, this is the organ we use for breathing,"
+    },
+    {
+      "start": 106.69,
+      "end": 108.29,
+      "text": "but there's also a problem with lung ultrasound."
+    },
+    {
+      "start": 109.11,
+      "end": 109.97,
+      "text": "Even though we're able-"
+    },
+    {
+      "start": 110.0,
+      "end": 114.2,
+      "text": "to image the lungs itself, we still have the barrier of the ribs."
+    },
+    {
+      "start": 115.02,
+      "end": 119.98,
+      "text": "So be aware that when we perform an exam, we always have to peek through the intercostal"
+    },
+    {
+      "start": 120.0,
+      "end": 129.98,
+      "text": "What we can see here is a handheld ultrasound device with this device you can perform long ultrasound you can use each and every"
+    },
+    {
+      "start": 130.0,
+      "end": 137.28,
+      "text": "machine. But especially in COVID-19 infection, we have to be aware of the fact that high"
+    },
+    {
+      "start": 137.28,
+      "end": 139.56,
+      "text": "My gene is tremendously important."
+    },
+    {
+      "start": 140.19,
+      "end": 143.89,
+      "text": "Not only for our patients, but also for us as healthcare professionals."
+    },
+    {
+      "start": 145.15,
+      "end": 149.34,
+      "text": "For line ultrasound, what you need is a machine."
+    },
+    {
+      "start": 150.0,
+      "end": 155.73,
+      "text": "basically you can use every machine there is on the market. Also, point-of-care or"
+    },
+    {
+      "start": 155.73,
+      "end": 159.97,
+      "text": "handheld devices. It's absolutely true and they definitely have their advantages you can use."
+    },
+    {
+      "start": 160.03,
+      "end": 164.73,
+      "text": "on that side, you can bring them into the intensive care unit. They're also easy to use in"
+    },
+    {
+      "start": 164.73,
+      "end": 169.97,
+      "text": "environment now as we have it in COVID-19 infection. So, definitely..."
+    },
+    {
+      "start": 170.0,
+      "end": 175.78,
+      "text": "Lung ultrasound is a technique which offers a lot of possibilities, but what"
+    },
+    {
+      "start": 175.78,
+      "end": 179.97,
+      "text": "will we offer you in this three lecture series? Of course, we will..."
+    },
+    {
+      "start": 180.1,
+      "end": 182.67,
+      "text": "show you the normal findings of lung ultrasound."
+    },
+    {
+      "start": 183.8,
+      "end": 187.65,
+      "text": "We will talk about early fusions like this over here."
+    },
+    {
+      "start": 189.2,
+      "end": 189.68,
+      "text": "We will see."
+    },
+    {
+      "start": 190.1,
+      "end": 191.88,
+      "text": "how a telectasis looks like."
+    },
+    {
+      "start": 192.18,
+      "end": 194.11,
+      "text": "This very motion of the lung."
+    },
+    {
+      "start": 195.57,
+      "end": 198.17,
+      "text": "We will talk about interstitial syndromes,"
+    },
+    {
+      "start": 198.41,
+      "end": 199.91,
+      "text": "so many bila."
+    },
+    {
+      "start": 200.19,
+      "end": 206.94,
+      "text": "We'll talk about consolidation as seen in this image, a huge pneumonia."
+    },
+    {
+      "start": 209.22,
+      "end": 209.98,
+      "text": "We'll talk about..."
+    },
+    {
+      "start": 210.32,
+      "end": 216.8,
+      "text": "viral diseases as well, also COVID-19, and we are going to discuss"
+    },
+    {
+      "start": 217.06,
+      "end": 219.88,
+      "text": "ERDS, acute respiratory distress syndrome."
+    },
+    {
+      "start": 220.51,
+      "end": 222.61,
+      "text": "what can we actually see in L'angartro sound?"
+    },
+    {
+      "start": 223.35,
+      "end": 226.15,
+      "text": "So you see all of these topics are very, very important"
+    },
+    {
+      "start": 226.15,
+      "end": 229.55,
+      "text": "and I would say at the moment on the top of our list."
+    },
+    {
+      "start": 231.6,
+      "end": 234.9,
+      "text": "But let's talk first about the COVID-19 pandemic."
+    },
+    {
+      "start": 235.93,
+      "end": 237.67,
+      "text": "I guess all of you are aware that it's the lung"
+    },
+    {
+      "start": 237.67,
+      "end": 239.31,
+      "text": "which is primarily affected."
+    },
+    {
+      "start": 240.03,
+      "end": 243.6,
+      "text": "And if we want to get some information about the long,"
+    },
+    {
+      "start": 243.84,
+      "end": 245.3,
+      "text": "we will need some form of imaging."
+    },
+    {
+      "start": 246.26,
+      "end": 248.94,
+      "text": "Our CT is a fantastic way of looking at it,"
+    },
+    {
+      "start": 249.04,
+      "end": 249.96,
+      "text": "but it's not the..."
+    },
+    {
+      "start": 250.0,
+      "end": 254.38,
+      "text": "ideal technology and our colleagues from Italy and places around the world who've been"
+    },
+    {
+      "start": 254.38,
+      "end": 259.66,
+      "text": "hit hardest have confirmed that CT is not the technique to go simply because."
+    },
+    {
+      "start": 260.22,
+      "end": 263.06,
+      "text": "It's very, very difficult to bring patients"
+    },
+    {
+      "start": 263.06,
+      "end": 264.98,
+      "text": "under these circumstances into CT."
+    },
+    {
+      "start": 265.6,
+      "end": 266.94,
+      "text": "The availability is not high"
+    },
+    {
+      "start": 266.94,
+      "end": 269.9,
+      "text": "and ultimately, CT can of course,"
+    },
+    {
+      "start": 270.06,
+      "end": 275.24,
+      "text": "help establish the diagnosis, but the diagnosis is usually clear with other modalities and"
+    },
+    {
+      "start": 275.24,
+      "end": 276.78,
+      "text": "with the clinical exam anyway."
+    },
+    {
+      "start": 277.68,
+      "end": 279.32,
+      "text": "But what are the advantages of lung ultrasound?"
+    },
+    {
+      "start": 280.0,
+      "end": 284.9,
+      "text": "we can definitely determine whether or not the patient has a pleural effusions and be aware that"
+    },
+    {
+      "start": 284.9,
+      "end": 289.92,
+      "text": "patients with COVID-19 rarely have pleural effusions. So it's a way of finding other"
+    },
+    {
+      "start": 290.0,
+      "end": 297.58,
+      "text": "causes of lung disease or problems. We can also see a rule out larger"
+    },
+    {
+      "start": 297.58,
+      "end": 299.98,
+      "text": "consolidations and with the"
+    },
+    {
+      "start": 300.0,
+      "end": 305.3,
+      "text": "Long after sounds, we also can determine how to change therapy in patients who have a"
+    },
+    {
+      "start": 305.3,
+      "end": 306.42,
+      "text": "COVID-19 pneumonia."
+    },
+    {
+      "start": 306.72,
+      "end": 309.72,
+      "text": "Exactly, because in such patients, we usually see a very wet lung."
+    },
+    {
+      "start": 310.19,
+      "end": 314.47,
+      "text": "And we can see the wetness, I would say, of the lung with the help of ultrasound."
+    },
+    {
+      "start": 315.46,
+      "end": 319.82,
+      "text": "But before we talk more about pathologies, let's see how we have to position."
+    },
+    {
+      "start": 320.0,
+      "end": 325.44,
+      "text": "the patient to actually perform as kind of the lung. If you perform lung"
+    },
+    {
+      "start": 325.44,
+      "end": 328.78,
+      "text": "ultrasound, you can simply ask a patient to sit down."
+    },
+    {
+      "start": 330.83,
+      "end": 331.49,
+      "text": "Thank you very much."
+    },
+    {
+      "start": 332.14,
+      "end": 333.62,
+      "text": "Well, you can also place your patient"
+    },
+    {
+      "start": 333.62,
+      "end": 334.88,
+      "text": "in a supine position."
+    },
+    {
+      "start": 335.0,
+      "end": 335.84,
+      "text": "Can you lie down please?"
+    },
+    {
+      "start": 338.22,
+      "end": 338.82,
+      "text": "Thank you very much."
+    },
+    {
+      "start": 340.06,
+      "end": 343.54,
+      "text": "If you work on an intensive care unit or an emergency department,"
+    },
+    {
+      "start": 343.76,
+      "end": 347.41,
+      "text": "most of your patients might be in a supine position anyways."
+    },
+    {
+      "start": 348.41,
+      "end": 349.97,
+      "text": "Keep in mind, if you have to change..."
+    },
+    {
+      "start": 350.0,
+      "end": 356.1,
+      "text": "the position of the patient. For example, to a left lateral or right lateral position or even in"
+    },
+    {
+      "start": 356.1,
+      "end": 358.6,
+      "text": "a prone position, you still can image the lung."
+    },
+    {
+      "start": 360.22,
+      "end": 363.08,
+      "text": "But let's now see how to actually perform what to sound."
+    },
+    {
+      "start": 363.5,
+      "end": 364.62,
+      "text": "Where should we image the line?"
+    },
+    {
+      "start": 365.88,
+      "end": 369.98,
+      "text": "We can divide each line, each hemithorics into four."
+    },
+    {
+      "start": 370.0,
+      "end": 378.43,
+      "text": "areas area 1, 2, 3 and 4. We use the horizontal line, the anterior"
+    },
+    {
+      "start": 378.43,
+      "end": 379.85,
+      "text": "Excellery line at the post."
+    },
+    {
+      "start": 380.0,
+      "end": 389.86,
+      "text": "axillary line to divide each hemisphere thorax and then the midline of the thorax and we continue to just scan"
+    },
+    {
+      "start": 390.0,
+      "end": 399.61,
+      "text": "the line on the right side and also on the left side of course and we have to make sure"
+    },
+    {
+      "start": 400.1,
+      "end": 404.06,
+      "text": "that we scan as many intercostal spaces as possible."
+    },
+    {
+      "start": 404.5,
+      "end": 406.72,
+      "text": "The more we scan, the more we see, of course."
+    },
+    {
+      "start": 407.38,
+      "end": 409.79,
+      "text": "If we do a really thorough exam and use it."
+    },
+    {
+      "start": 410.03,
+      "end": 416.03,
+      "text": "lawnmower approach, so scan everything we can see, we can cover approximately 7% of the surface"
+    },
+    {
+      "start": 416.03,
+      "end": 419.97,
+      "text": "of the lungs. But definitely take some time, we want to be really, really..."
+    },
+    {
+      "start": 420.03,
+      "end": 423.37,
+      "text": "So this is an important teaching point up front."
+    },
+    {
+      "start": 424.61,
+      "end": 428.13,
+      "text": "Now let's go to our device and see which transducers we have available."
+    },
+    {
+      "start": 430.16,
+      "end": 436.23,
+      "text": "If you perform longer sounds, it's very important to know that you can basically use any kind"
+    },
+    {
+      "start": 436.23,
+      "end": 439.23,
+      "text": "of transducer and any kind of machine you like."
+    },
+    {
+      "start": 440.0,
+      "end": 447.11,
+      "text": "a convex probe. So here the convex probe it's used for greater depth. You can use"
+    },
+    {
+      "start": 447.43,
+      "end": 449.84,
+      "text": "Adiac probe here you see the smaller"
+    },
+    {
+      "start": 450.0,
+      "end": 457.02,
+      "text": "surface, or you can use a linear transducer. Be aware that you should use a"
+    },
+    {
+      "start": 457.02,
+      "end": 459.8,
+      "text": "transducer where I have a specific long preset."
+    },
+    {
+      "start": 460.93,
+      "end": 467.21,
+      "text": "For the detection of blurry fusion, use a convex probe or the cardiac probe."
+    },
+    {
+      "start": 467.21,
+      "end": 469.15,
+      "text": "If you're interpreting long"
+    },
+    {
+      "start": 470.0,
+      "end": 474.7,
+      "text": "sliding or for example small consolidations, you should use a linear"
+    },
+    {
+      "start": 474.7,
+      "end": 479.52,
+      "text": "transducer because they have a really high resolution but no great depth."
+    },
+    {
+      "start": 481.38,
+      "end": 487.92,
+      "text": "to summarize. Use your machine, get used to your machine and always use the same settings."
+    },
+    {
+      "start": 490.0,
+      "end": 497.96,
+      "text": "Now we have seen the instrumentation, it's time to see a patient in case of scanning"
+    },
+    {
+      "start": 497.96,
+      "end": 499.8,
+      "text": "the patient in a supine position."
+    },
+    {
+      "start": 500.64,
+      "end": 503.54,
+      "text": "So look for a plural refusion or consolidation."
+    },
+    {
+      "start": 504.32,
+      "end": 508.81,
+      "text": "Place the transducer just in the mid-acceler line,"
+    },
+    {
+      "start": 509.45,
+      "end": 509.97,
+      "text": "and you will see."
+    },
+    {
+      "start": 510.0,
+      "end": 517.6,
+      "text": "the liver in the center. Here you see the kidney and it basically resembles the"
+    },
+    {
+      "start": 517.6,
+      "end": 519.76,
+      "text": "Write up a coordinate view of the E first, it's him."
+    },
+    {
+      "start": 520.77,
+      "end": 523.11,
+      "text": "What can we do now to scan for a pre-refusion?"
+    },
+    {
+      "start": 523.86,
+      "end": 525.73,
+      "text": "We just have to move reindeer."
+    },
+    {
+      "start": 527.36,
+      "end": 529.98,
+      "text": "We have to use enough cell and..."
+    },
+    {
+      "start": 530.26,
+      "end": 535.46,
+      "text": "as dorsally as possible. And then again, inhale and exhale."
+    },
+    {
+      "start": 536.2,
+      "end": 539.79,
+      "text": "Thank you very much. What we can see here is the curtain."
+    },
+    {
+      "start": 540.0,
+      "end": 549.04,
+      "text": "So, lung, aerated lung, exhale, but we also see if we exhale."
+    },
+    {
+      "start": 550.74,
+      "end": 556.72,
+      "text": "the image, you will see a so-called mirror artifact. Don't mistake in that with a consolidation."
+    },
+    {
+      "start": 557.26,
+      "end": 559.86,
+      "text": "This is just a mirror image of the liver."
+    },
+    {
+      "start": 560.0,
+      "end": 569.75,
+      "text": "And finally, where would they actually see a blurry fusion? Always look in the near field first. So in that region"
+    },
+    {
+      "start": 570.06,
+      "end": 574.77,
+      "text": "over here, if there would be a black area, so echo-free area, that would"
+    },
+    {
+      "start": 574.77,
+      "end": 579.85,
+      "text": "resemble priority fusion. As we have seen in the demonstration, we can"
+    },
+    {
+      "start": 580.03,
+      "end": 585.56,
+      "text": "they can look at the right upper quadrant view. We see the right kidney and the liver,"
+    },
+    {
+      "start": 586.12,
+      "end": 589.84,
+      "text": "and then we just move more cranial and more doors."
+    },
+    {
+      "start": 590.0,
+      "end": 599.36,
+      "text": "And then we are basically imaging the zone for UVC deliver"
+    },
+    {
+      "start": 600.51,
+      "end": 603.27,
+      "text": "Here, the plurra, there's even a radio B line."
+    },
+    {
+      "start": 604.66,
+      "end": 605.9,
+      "text": "Here's the mirror artifact."
+    },
+    {
+      "start": 606.16,
+      "end": 608.58,
+      "text": "So we have the diaphragm and here."
+    },
+    {
+      "start": 610.16,
+      "end": 612.4,
+      "text": "the mirrored liver in the lung."
+    },
+    {
+      "start": 613.49,
+      "end": 616.06,
+      "text": "We can visualize this curtain phenomenon."
+    },
+    {
+      "start": 616.38,
+      "end": 619.34,
+      "text": "So the lung moving towards the liver."
+    },
+    {
+      "start": 620.0,
+      "end": 627.22,
+      "text": "over the liver, if we zoom in, we really can be sure that there is no proliferation"
+    },
+    {
+      "start": 627.22,
+      "end": 629.97,
+      "text": "present, so always look in there."
+    },
+    {
+      "start": 630.0,
+      "end": 636.54,
+      "text": "near field in the near field you would be an echo freezer black area if there"
+    },
+    {
+      "start": 636.54,
+      "end": 639.78,
+      "text": "would be a probably fusion press. Let's turn"
+    },
+    {
+      "start": 640.29,
+      "end": 642.7,
+      "text": "to the left side and to our patient again."
+    },
+    {
+      "start": 645.54,
+      "end": 647.96,
+      "text": "In case you want to detect a proliferation"
+    },
+    {
+      "start": 647.96,
+      "end": 649.94,
+      "text": "on the left side in a supine position."
+    },
+    {
+      "start": 650.0,
+      "end": 655.19,
+      "text": "patient. Basically you do the same on the right side. You position the"
+    },
+    {
+      "start": 655.19,
+      "end": 659.96,
+      "text": "transducer at the mid-accelerary line and you see the key."
+    },
+    {
+      "start": 660.0,
+      "end": 666.7,
+      "text": "Knee quite nicely in the spleen, also rib and rib shadow, and you move crania and dorsal."
+    },
+    {
+      "start": 670.26,
+      "end": 678.54,
+      "text": "and doors less necessary until you see again this curtain phenomena and can you please inhale and exhale"
+    },
+    {
+      "start": 680.29,
+      "end": 681.75,
+      "text": "Where would you detect the proliferation?"
+    },
+    {
+      "start": 682.41,
+      "end": 685.48,
+      "text": "Again, look in the near field where you see the plurra"
+    },
+    {
+      "start": 685.74,
+      "end": 687.48,
+      "text": "and the spleen in this case."
+    },
+    {
+      "start": 688.33,
+      "end": 689.97,
+      "text": "Also be aware on the left side."
+    },
+    {
+      "start": 691.52,
+      "end": 698.21,
+      "text": "Ribs and rib shadow block a little bit more of a view to the spline compared to the right side of the liver"
+    },
+    {
+      "start": 700.16,
+      "end": 702.5,
+      "text": "But Martin, how is the left side different from the right?"
+    },
+    {
+      "start": 703.49,
+      "end": 706.01,
+      "text": "The biggest difference, of course, is that on the left side,"
+    },
+    {
+      "start": 706.15,
+      "end": 709.19,
+      "text": "there is the spleen and on the right side, there is the liver."
+    },
+    {
+      "start": 710.0,
+      "end": 716.29,
+      "text": "on the left side the spleen is normally smaller than the liver, so with the transducer we have to move more"
+    },
+    {
+      "start": 716.29,
+      "end": 719.93,
+      "text": "Ukrainian and Dorsal to detect the prolifusion if"
+    },
+    {
+      "start": 720.0,
+      "end": 725.52,
+      "text": "it is present. So let's take a look at the left side. We see the left kidney over here and"
+    },
+    {
+      "start": 725.94,
+      "end": 729.97,
+      "text": "they are ready. You see the lung. If you move more cranial..."
+    },
+    {
+      "start": 730.0,
+      "end": 736.53,
+      "text": "the transducer we see again this curtain phenomena and here we have a nice image of the"
+    },
+    {
+      "start": 736.53,
+      "end": 738.69,
+      "text": "And you see here that"
+    },
+    {
+      "start": 740.0,
+      "end": 747.78,
+      "text": "splurder and in the near field you would see a black area, so a coffee area, if there would be a"
+    },
+    {
+      "start": 747.78,
+      "end": 748.46,
+      "text": "Holy Fugation."
+    },
+    {
+      "start": 750.58,
+      "end": 752.22,
+      "text": "and this is definitely a plural of fusion."
+    },
+    {
+      "start": 753.33,
+      "end": 754.55,
+      "text": "This is on the right side."
+    },
+    {
+      "start": 755.1,
+      "end": 756.86,
+      "text": "You can see the diaphragm very nicely,"
+    },
+    {
+      "start": 757.02,
+      "end": 759.96,
+      "text": "and you can see that the gluid with..."
+    },
+    {
+      "start": 760.0,
+      "end": 767.17,
+      "text": "the plural sack is almost completely loosened. We do see a little bit of speckles there, but in general"
+    },
+    {
+      "start": 767.17,
+      "end": 769.97,
+      "text": "it's almost black. You could even see..."
+    },
+    {
+      "start": 770.0,
+      "end": 776.97,
+      "text": "the so-called spine sign. If you look on the bottom of the image you see the spine and the appearance"
+    },
+    {
+      "start": 776.97,
+      "end": 779.91,
+      "text": "So this plural of fusion will already tell you very very"
+    },
+    {
+      "start": 780.0,
+      "end": 788.15,
+      "text": "much about the etiology of the problem. Whereas in this example the pre-refusion looks entirely"
+    },
+    {
+      "start": 789.15,
+      "end": 789.97,
+      "text": "What can we see?"
+    },
+    {
+      "start": 790.0,
+      "end": 799.9,
+      "text": "here, we see black areas over here, but we see this white hypercoic lines which are some"
+    },
+    {
+      "start": 800.0,
+      "end": 807.16,
+      "text": "moving, this is a so-called accident. So, this is a testive of a bacterial infection."
+    },
+    {
+      "start": 807.73,
+      "end": 809.83,
+      "text": "So, what you see here is vibrant basically."
+    },
+    {
+      "start": 810.38,
+      "end": 817.93,
+      "text": "You see that there is probably some form of hemorrhagic, infectious material inside."
+    },
+    {
+      "start": 818.72,
+      "end": 819.96,
+      "text": "What is the physiology behind it?"
+    },
+    {
+      "start": 820.03,
+      "end": 827.49,
+      "text": "behind a transodad and an exodad, in a transodad we have this clear effusion, it is due to increased"
+    },
+    {
+      "start": 827.49,
+      "end": 829.97,
+      "text": "hydrostatic pressure, for example in contrast to found."
+    },
+    {
+      "start": 830.0,
+      "end": 836.08,
+      "text": "failure, or a reduced colloidosmotic pressure. For example, in liver disease, because there's"
+    },
+    {
+      "start": 836.08,
+      "end": 839.65,
+      "text": "a lack in proteins and phases, or we have protein loss."
+    },
+    {
+      "start": 840.29,
+      "end": 841.51,
+      "text": "if we have kidney disease."
+    },
+    {
+      "start": 842.63,
+      "end": 845.8,
+      "text": "In an exodate, we have this capillary leakage."
+    },
+    {
+      "start": 846.56,
+      "end": 849.75,
+      "text": "So there are a lot of proteins, a lot of cells inside."
+    },
+    {
+      "start": 850.13,
+      "end": 856.7,
+      "text": "the fluid and they create this freebie structures. This is most likely an inflammation or a tumor"
+    },
+    {
+      "start": 856.7,
+      "end": 859.38,
+      "text": "very frequently, a bacterial infection."
+    },
+    {
+      "start": 860.06,
+      "end": 861.36,
+      "text": "or, for example, tuberculosis."
+    },
+    {
+      "start": 864.34,
+      "end": 866.86,
+      "text": "The differentiated etiology, again, a transodate"
+    },
+    {
+      "start": 866.86,
+      "end": 869.68,
+      "text": "could be due to right-out failure in a frotic syndrome."
+    },
+    {
+      "start": 870.13,
+      "end": 871.09,
+      "text": "or liver cirrhosis."
+    },
+    {
+      "start": 871.74,
+      "end": 874.74,
+      "text": "Permaninary embolism can also be responsible for a transodad,"
+    },
+    {
+      "start": 875.22,
+      "end": 877.73,
+      "text": "but in up to 80% of the cases,"
+    },
+    {
+      "start": 878.31,
+      "end": 879.97,
+      "text": "in Permaninary embolism, you will see in..."
+    },
+    {
+      "start": 880.13,
+      "end": 888.9,
+      "text": "Exodate. Exodate is also present in plymonia, bacteria plymonia, in malignant diseases, or, as you mentioned, tuberculosis."
+    },
+    {
+      "start": 890.06,
+      "end": 893.72,
+      "text": "But there's a finding which is practically always associated with the plural of fusion,"
+    },
+    {
+      "start": 894.0,
+      "end": 895.46,
+      "text": "and that is, at the lectasis."
+    },
+    {
+      "start": 896.73,
+      "end": 899.96,
+      "text": "At the lectasis is nothing else than just compressed-"
+    },
+    {
+      "start": 900.0,
+      "end": 907.65,
+      "text": "like tissue. It is normally present in really large effusions. It is re-arriated when the"
+    },
+    {
+      "start": 907.65,
+      "end": 909.98,
+      "text": "patient inhales. As you can see,"
+    },
+    {
+      "start": 910.0,
+      "end": 917.36,
+      "text": "see in this loop as well so you see that this area gets a little bit broader and it moves like a"
+    },
+    {
+      "start": 917.36,
+      "end": 919.96,
+      "text": "waving hands. So that's very typical for a telecom."
+    },
+    {
+      "start": 920.0,
+      "end": 929.84,
+      "text": "In complicated parallel fusions, we see, as we have seen in the examples before, given"
+    },
+    {
+      "start": 930.0,
+      "end": 937.93,
+      "text": "structures. This was a pneumonia with a multi-resistant stuff areas. In this case, it is more"
+    },
+    {
+      "start": 937.93,
+      "end": 939.91,
+      "text": "so we have to pay close attention but"
+    },
+    {
+      "start": 940.0,
+      "end": 941.74,
+      "text": "This is also a complicated diffusion."
+    },
+    {
+      "start": 942.24,
+      "end": 944.3,
+      "text": "You see some fibrim fibers over here,"
+    },
+    {
+      "start": 944.5,
+      "end": 946.08,
+      "text": "and also in the deeper areas,"
+    },
+    {
+      "start": 946.64,
+      "end": 948.7,
+      "text": "and a consolidation over here."
+    },
+    {
+      "start": 949.04,
+      "end": 949.96,
+      "text": "This as well is..."
+    },
+    {
+      "start": 950.03,
+      "end": 959.32,
+      "text": "And sometimes you'll see real chambered effusions and if you have such an effusion and wonder why you do not get any fluids out"
+    },
+    {
+      "start": 960.0,
+      "end": 965.05,
+      "text": "you'll better understand, because maybe you're just in one chamber and not able to drain"
+    },
+    {
+      "start": 965.05,
+      "end": 968.14,
+      "text": "the entire amount of the fluid which is in the plural sac."
+    },
+    {
+      "start": 968.86,
+      "end": 969.98,
+      "text": "But of course, for diagnosed..."
+    },
+    {
+      "start": 970.0,
+      "end": 974.74,
+      "text": "purposes as well use ultrasound to really hit the chamber and not just"
+    },
+    {
+      "start": 975.16,
+      "end": 979.88,
+      "text": "pervenous tissue. In perl diffusion, if you see a complicated diffusion"
+    },
+    {
+      "start": 980.0,
+      "end": 985.59,
+      "text": "You always have to be aware about the etiology, so infectious or malignant diseases."
+    },
+    {
+      "start": 987.34,
+      "end": 989.98,
+      "text": "Always look where you have a position, your transducer, don't miss out."
+    },
+    {
+      "start": 990.03,
+      "end": 994.23,
+      "text": "taking the hydronyphrosis, rate 4, for a complicated diffusion."
+    },
+    {
+      "start": 995.83,
+      "end": 999.61,
+      "text": "Long arthrasounds can even detect really small amounts."
+    },
+    {
+      "start": 1000.03,
+      "end": 1007.56,
+      "text": "of free fluid and to 15 ml in chest x-ray we need 250 ml to detect the purification."
+    },
+    {
+      "start": 1007.56,
+      "end": 1009.92,
+      "text": "After sounds is"
+    },
+    {
+      "start": 1010.58,
+      "end": 1018.13,
+      "text": "optimal for guidance of procedures such as thoracocentesis, and it is also very important that you"
+    },
+    {
+      "start": 1018.13,
+      "end": 1019.97,
+      "text": "You can monitor their fusions with"
+    },
+    {
+      "start": 1020.03,
+      "end": 1025.77,
+      "text": "So if you, for example, give a patient diuretics or antibiotics, you can see that the"
+    },
+    {
+      "start": 1025.77,
+      "end": 1029.85,
+      "text": "effusion becomes smaller, stays the same, or even becomes large."
+    },
+    {
+      "start": 1031.41,
+      "end": 1034.93,
+      "text": "So I guess you've seen there is very much we can learn from lung ultrasound."
+    },
+    {
+      "start": 1035.17,
+      "end": 1039.4,
+      "text": "We've only covered a very small part of the topics that we're going to cover in"
+    },
+    {
+      "start": 1040.03,
+      "end": 1042.67,
+      "text": "The second part, we're going to talk about pneumonia,"
+    },
+    {
+      "start": 1043.34,
+      "end": 1045.46,
+      "text": "how to scan patients on an ICU,"
+    },
+    {
+      "start": 1046.08,
+      "end": 1049.88,
+      "text": "and we will also show you some real patients with COVID-19."
+    },
+    {
+      "start": 1050.1,
+      "end": 1052.64,
+      "text": "effect shot, stay tuned."
+    }
+  ]
+}

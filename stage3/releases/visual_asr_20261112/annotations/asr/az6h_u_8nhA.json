@@ -1,0 +1,4208 @@
+{
+  "video_id": "az6h_u_8nhA",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/az6h_u_8nhA/asr.txt",
+  "segments": [
+    {
+      "start": 0.35,
+      "end": 3.57,
+      "text": "My name is Brett Nelson from the Department of Emergency Medicine at the Mount Sinai School"
+    },
+    {
+      "start": 3.57,
+      "end": 4.05,
+      "text": "of Medicine."
+    },
+    {
+      "start": 4.47,
+      "end": 9.09,
+      "text": "We're going to be speaking about point-of-care ultrasound here and with this talk, specifically,"
+    },
+    {
+      "start": 10.19,
+      "end": 15.52,
+      "text": "discuss vascular access and using ultrasound to guide vascular access has become fairly"
+    },
+    {
+      "start": 15.52,
+      "end": 19.84,
+      "text": "commonplace but did still work thinking about using point of care sonography."
+    },
+    {
+      "start": 20.13,
+      "end": 24.79,
+      "text": "assist any procedure. I like to think about it a bit of the way that an"
+    },
+    {
+      "start": 24.79,
+      "end": 29.97,
+      "text": "intervention radiologist might and we typically use standard approaches or"
+    },
+    {
+      "start": 30.29,
+      "end": 35.81,
+      "text": "Sometimes people refer to them as landmark approaches based on surface anatomy and a lot"
+    },
+    {
+      "start": 35.81,
+      "end": 39.45,
+      "text": "of the patients in critical care environments in the ICU on a medical ward."
+    },
+    {
+      "start": 40.0,
+      "end": 42.46,
+      "text": "or in the emergency department are very difficult,"
+    },
+    {
+      "start": 43.16,
+      "end": 46.08,
+      "text": "either for venous access or other landmark-based approaches."
+    },
+    {
+      "start": 46.54,
+      "end": 48.3,
+      "text": "And that's because people may be obese"
+    },
+    {
+      "start": 48.3,
+      "end": 49.98,
+      "text": "or have prior surgeries, they may have..."
+    },
+    {
+      "start": 50.45,
+      "end": 54.77,
+      "text": "landmarks. They may have poor functional reserve, congestive heart failure for"
+    },
+    {
+      "start": 54.77,
+      "end": 58.62,
+      "text": "example, so they can't tolerate sitting or laying in a position where you"
+    },
+    {
+      "start": 58.62,
+      "end": 59.88,
+      "text": "would normally like to do your procedure."
+    },
+    {
+      "start": 60.0,
+      "end": 66.46,
+      "text": "It may be an emergent situation like respiratory distress or during a code situation where you're going to have one shot at it"
+    },
+    {
+      "start": 66.46,
+      "end": 69.98,
+      "text": "So you want to put all of your best resources into getting this procedure"
+    },
+    {
+      "start": 70.0,
+      "end": 72.48,
+      "text": "you're done properly and getting it done right and quickly."
+    },
+    {
+      "start": 73.18,
+      "end": 77.6,
+      "text": "So, other patients have abnormal anatomy, or if you work in some environments where you're"
+    },
+    {
+      "start": 77.6,
+      "end": 79.98,
+      "text": "not the only provider taking care of a patient, you may not be able to do that."
+    },
+    {
+      "start": 80.06,
+      "end": 82.08,
+      "text": "the first person to attempt this procedure on them."
+    },
+    {
+      "start": 82.58,
+      "end": 86.9,
+      "text": "So they may have had prior failed attempts and then you are inserting a needle through this"
+    },
+    {
+      "start": 86.9,
+      "end": 89.96,
+      "text": "mind field of prior failed attempts at it."
+    },
+    {
+      "start": 90.0,
+      "end": 93.08,
+      "text": "essential line or as a aspiration or some other procedure."
+    },
+    {
+      "start": 93.44,
+      "end": 97.49,
+      "text": "So it's worth giving yourself, again, every benefit, every opportunity before approaching"
+    },
+    {
+      "start": 97.49,
+      "end": 97.93,
+      "text": "the patient."
+    },
+    {
+      "start": 98.82,
+      "end": 99.8,
+      "text": "So emergency department."
+    },
+    {
+      "start": 100.06,
+      "end": 103.72,
+      "text": "and other environments can often be pretty poor candidates for standard procedures."
+    },
+    {
+      "start": 104.38,
+      "end": 108.9,
+      "text": "And certainly once you get the hang of beginning to use ultrasound to guide your procedures."
+    },
+    {
+      "start": 110.29,
+      "end": 114.29,
+      "text": "to rely on it, not because you've lost your physical examination skills, or you've lost"
+    },
+    {
+      "start": 114.29,
+      "end": 118.53,
+      "text": "the ability to deal with landmarks, but you realize how fraught with difficulty some of"
+    },
+    {
+      "start": 118.53,
+      "end": 119.69,
+      "text": "these older techniques were."
+    },
+    {
+      "start": 120.32,
+      "end": 124.8,
+      "text": "So here, for example, is a wonderful diagram from a great review article by McGoolde"
+    },
+    {
+      "start": 124.8,
+      "end": 129.67,
+      "text": "New England Journal 2003, demonstrating a very classic approach towards"
+    },
+    {
+      "start": 130.03,
+      "end": 131.49,
+      "text": "calculating the internal jugular vein."
+    },
+    {
+      "start": 131.91,
+      "end": 134.46,
+      "text": "And if you look at the triangle made"
+    },
+    {
+      "start": 134.46,
+      "end": 136.94,
+      "text": "by the two heads of the sternoclata mastoid muscle,"
+    },
+    {
+      "start": 137.26,
+      "end": 139.88,
+      "text": "the sternal head here, and the clavicular"
+    },
+    {
+      "start": 140.03,
+      "end": 144.53,
+      "text": "head there. Well, if you place your needle at the apex of that triangle, you should hit"
+    },
+    {
+      "start": 144.53,
+      "end": 148.7,
+      "text": "the internal jugular vein. You should hit the internal jugular vein if your patient has"
+    },
+    {
+      "start": 148.7,
+      "end": 149.76,
+      "text": "a vein in that location."
+    },
+    {
+      "start": 150.16,
+      "end": 152.38,
+      "text": "If they have surface anatomy that allows you to visualize"
+    },
+    {
+      "start": 152.38,
+      "end": 154.48,
+      "text": "that landmark, if they're cooperative enough,"
+    },
+    {
+      "start": 154.62,
+      "end": 156.86,
+      "text": "they can flex that muscle and allow you"
+    },
+    {
+      "start": 156.86,
+      "end": 159.89,
+      "text": "to see the two discrete heads of the sternocleidomastoid."
+    },
+    {
+      "start": 160.8,
+      "end": 164.88,
+      "text": "Unfortunately, for a lot of providers, our experience is that patients who need a line don't"
+    },
+    {
+      "start": 164.88,
+      "end": 165.76,
+      "text": "have any of those things."
+    },
+    {
+      "start": 167.04,
+      "end": 169.98,
+      "text": "And you may find, for example, when you actually put the ultrasound..."
+    },
+    {
+      "start": 170.0,
+      "end": 174.02,
+      "text": "probe on the patient. Some patients have the vein laying right on top of the"
+    },
+    {
+      "start": 174.5,
+      "end": 178.87,
+      "text": "artery. Some people have it sort of in a diagonal orientation. Some people have"
+    },
+    {
+      "start": 178.87,
+      "end": 179.97,
+      "text": "it next to each other."
+    },
+    {
+      "start": 180.0,
+      "end": 183.26,
+      "text": "So, the anatomy is very variable, patient to patient."
+    },
+    {
+      "start": 183.74,
+      "end": 189.52,
+      "text": "So, using ultrasound to guide your procedure as you're doing it in real time allows you"
+    },
+    {
+      "start": 189.52,
+      "end": 189.88,
+      "text": "the dinner"
+    },
+    {
+      "start": 190.03,
+      "end": 193.51,
+      "text": "of all your experience that you would normally use anyway but instead of taking all your"
+    },
+    {
+      "start": 193.51,
+      "end": 197.71,
+      "text": "experience with the last 50 or 100 patients that you've used and taking all that aggregate"
+    },
+    {
+      "start": 197.71,
+      "end": 199.93,
+      "text": "wisdom and applying it specifically."
+    },
+    {
+      "start": 200.0,
+      "end": 204.58,
+      "text": "to that one patient, you can take everything you've learned about all those prior patients"
+    },
+    {
+      "start": 204.58,
+      "end": 208.02,
+      "text": "and tailor it to the specific anatomy of that individual patient."
+    },
+    {
+      "start": 208.36,
+      "end": 209.98,
+      "text": "So instead of doing the same..."
+    },
+    {
+      "start": 210.03,
+      "end": 213.47,
+      "text": "every time because that in aggregate is what you learned is the most commonly"
+    },
+    {
+      "start": 213.47,
+      "end": 216.97,
+      "text": "successful approach. You can take what's going to work for one particular patient."
+    },
+    {
+      "start": 217.41,
+      "end": 219.89,
+      "text": "So if you learned that pillows are a neck roll"
+    },
+    {
+      "start": 220.0,
+      "end": 222.2,
+      "text": "behind the neck, it dilates the IJ well."
+    },
+    {
+      "start": 223.16,
+      "end": 225.66,
+      "text": "You can do that or not in your particular patient"
+    },
+    {
+      "start": 225.66,
+      "end": 227.24,
+      "text": "because you can visualize with ultrasound"
+    },
+    {
+      "start": 227.24,
+      "end": 228.9,
+      "text": "and see whether that improves your view."
+    },
+    {
+      "start": 229.28,
+      "end": 229.98,
+      "text": "You can see whether..."
+    },
+    {
+      "start": 230.03,
+      "end": 232.23,
+      "text": "they're turning the patient's head away from the procedure"
+    },
+    {
+      "start": 232.23,
+      "end": 234.87,
+      "text": "or having them face straight on is better"
+    },
+    {
+      "start": 234.87,
+      "end": 237.55,
+      "text": "because you can see on that particular patient"
+    },
+    {
+      "start": 237.55,
+      "end": 239.01,
+      "text": "how that changes their anatomy."
+    },
+    {
+      "start": 239.47,
+      "end": 239.97,
+      "text": "So it's a huge..."
+    },
+    {
+      "start": 240.0,
+      "end": 244.32,
+      "text": "advantage over just taking what's worked for patients in the past and assuming it's"
+    },
+    {
+      "start": 244.32,
+      "end": 245.5,
+      "text": "going to work for your next patient."
+    },
+    {
+      "start": 246.76,
+      "end": 249.94,
+      "text": "So central venous lines have a reasonable complication."
+    },
+    {
+      "start": 250.1,
+      "end": 252.06,
+      "text": "and greatness is well known and documented,"
+    },
+    {
+      "start": 252.3,
+      "end": 254.1,
+      "text": "even in the hands of seasoned clinicians."
+    },
+    {
+      "start": 254.68,
+      "end": 258.26,
+      "text": "And again, McGee and Gold described an aggregate,"
+    },
+    {
+      "start": 258.42,
+      "end": 259.98,
+      "text": "not a formal meta-analysis, but they described."
+    },
+    {
+      "start": 260.1,
+      "end": 264.16,
+      "text": "failure rates and complication rates that are described prior to 2003 in"
+    },
+    {
+      "start": 264.16,
+      "end": 269.68,
+      "text": "the literature. So arterial puncture rates, hematoma, pneumothorax, and hemothorax"
+    },
+    {
+      "start": 269.68,
+      "end": 269.98,
+      "text": "for example."
+    },
+    {
+      "start": 270.0,
+      "end": 273.92,
+      "text": "example. So we'll see, for example, that the femoral vein"
+    },
+    {
+      "start": 273.92,
+      "end": 277.64,
+      "text": "cannulation has among the highest rates of complication, especially arterial"
+    },
+    {
+      "start": 277.64,
+      "end": 279.98,
+      "text": "puncture in hematoma. And yet this is the law"
+    },
+    {
+      "start": 280.98,
+      "end": 285.86,
+      "text": "So most likely to cause arterial complication, and yet it's the line that most people would"
+    },
+    {
+      "start": 285.86,
+      "end": 288.94,
+      "text": "commonly go to in a setting of a patient who's quite illopathic, for example."
+    },
+    {
+      "start": 288.94,
+      "end": 289.98,
+      "text": "So the reason..."
+    },
+    {
+      "start": 290.0,
+      "end": 295.12,
+      "text": "for that somewhat dissonant logic is that you can compress it at least. So you have a higher chance"
+    },
+    {
+      "start": 295.12,
+      "end": 299.72,
+      "text": "of having a complication but also a higher chance of managing that complication. While the"
+    },
+    {
+      "start": 300.1,
+      "end": 303.85,
+      "text": "clavian denulation is the lowest rate of arterial puncture."
+    },
+    {
+      "start": 304.27,
+      "end": 309.91,
+      "text": "It may not be tolerable to have a three or even a two or a one percent chance of arterial"
+    },
+    {
+      "start": 310.51,
+      "end": 316.15,
+      "text": "When you can't really do anything to compress it at that location so we see that we play this game of trading off"
+    },
+    {
+      "start": 316.15,
+      "end": 319.73,
+      "text": "complications for being able to manage them and again these are"
+    },
+    {
+      "start": 320.03,
+      "end": 322.07,
+      "text": "since the article is relatively older,"
+    },
+    {
+      "start": 322.41,
+      "end": 323.79,
+      "text": "and this is studying literature"
+    },
+    {
+      "start": 323.79,
+      "end": 326.65,
+      "text": "that some of which was even old when the study came out."
+    },
+    {
+      "start": 327.15,
+      "end": 328.99,
+      "text": "A lot of this was not guided with ultrasound guidance."
+    },
+    {
+      "start": 330.16,
+      "end": 335.1,
+      "text": "So since then, there have been many, many studies demonstrating the benefits of using ultrasound"
+    },
+    {
+      "start": 335.1,
+      "end": 336.72,
+      "text": "guidance for central vein cannulation."
+    },
+    {
+      "start": 337.14,
+      "end": 339.98,
+      "text": "So there was a review in a critical..."
+    },
+    {
+      "start": 340.16,
+      "end": 343.5,
+      "text": "care medicine back in 1996, which was a meta-analysis."
+    },
+    {
+      "start": 343.92,
+      "end": 345.7,
+      "text": "And again, I'm demonstrating an older study here"
+    },
+    {
+      "start": 345.7,
+      "end": 348.2,
+      "text": "to show that even in 1996, there was enough evidence"
+    },
+    {
+      "start": 348.2,
+      "end": 349.92,
+      "text": "to suggest that Venus cannulation."
+    },
+    {
+      "start": 350.03,
+      "end": 354.09,
+      "text": "with ultrasound was worthwhile, and there were enough studies to do a meta-analysis even"
+    },
+    {
+      "start": 354.09,
+      "end": 354.31,
+      "text": "then."
+    },
+    {
+      "start": 355.44,
+      "end": 359.74,
+      "text": "This demonstrated that using a number needed to treat model that you would need to use ultrasound"
+    },
+    {
+      "start": 359.74,
+      "end": 359.96,
+      "text": "Sounding."
+    },
+    {
+      "start": 360.0,
+      "end": 362.46,
+      "text": "seven patients to prevent one complication."
+    },
+    {
+      "start": 362.88,
+      "end": 364.46,
+      "text": "So there's a lot of other things we do in medicine"
+    },
+    {
+      "start": 365.0,
+      "end": 368.44,
+      "text": "that have a much higher number needed to treat than this."
+    },
+    {
+      "start": 369.23,
+      "end": 369.97,
+      "text": "McGee and Gould, again."
+    },
+    {
+      "start": 370.0,
+      "end": 373.2,
+      "text": "if you want to quote a New England Journal article to someone who's wondering why you're using"
+    },
+    {
+      "start": 373.2,
+      "end": 379.7,
+      "text": "Venus cannulation with ultrasound recommends using ultrasound guidance and one of the more powerful"
+    },
+    {
+      "start": 380.0,
+      "end": 383.76,
+      "text": "studies that came out was this report from the AHRQ."
+    },
+    {
+      "start": 384.0,
+      "end": 387.12,
+      "text": "So back in 2001, this report on patient safety practices."
+    },
+    {
+      "start": 387.28,
+      "end": 389.62,
+      "text": "Now this is the same article which contained"
+    },
+    {
+      "start": 390.0,
+      "end": 394.46,
+      "text": "A large number of patient safety practices, such as calling a time out before a procedure"
+    },
+    {
+      "start": 394.46,
+      "end": 399.66,
+      "text": "to confirm the proper patient, the proper procedure, the proper side of the body, discusses."
+    },
+    {
+      "start": 400.0,
+      "end": 404.16,
+      "text": "look alike, sound alike, medications, and other things that we use on a daily basis"
+    },
+    {
+      "start": 404.16,
+      "end": 406.26,
+      "text": "to make our patient care safer."
+    },
+    {
+      "start": 407.13,
+      "end": 409.91,
+      "text": "And ultrasound was right up there, I believe it was numbers."
+    },
+    {
+      "start": 410.0,
+      "end": 414.88,
+      "text": "seven in terms of the evidence base and the efficacy of using ultrasound to guide central"
+    },
+    {
+      "start": 414.88,
+      "end": 415.8,
+      "text": "venous cannulation."
+    },
+    {
+      "start": 416.12,
+      "end": 418.76,
+      "text": "So, certainly something that's recommended by HRQ as well."
+    },
+    {
+      "start": 420.0,
+      "end": 423.72,
+      "text": "probably most recently in terms of government guidelines to send us for disease control"
+    },
+    {
+      "start": 423.72,
+      "end": 429.02,
+      "text": "in their guidelines on preventing intra-vascular catheter-related infections. In 2011,"
+    },
+    {
+      "start": 429.02,
+      "end": 429.92,
+      "text": "and recommend using"
+    },
+    {
+      "start": 430.0,
+      "end": 433.48,
+      "text": "ultrasound guidance to aid cannulation of vessels."
+    },
+    {
+      "start": 436.19,
+      "end": 438.38,
+      "text": "So, there's several ways we can do this."
+    },
+    {
+      "start": 438.92,
+      "end": 439.96,
+      "text": "If you were fortunate in a-"
+    },
+    {
+      "start": 440.0,
+      "end": 443.1,
+      "text": "to have a patient who's anatomy looks like this that you need to cannulate them."
+    },
+    {
+      "start": 443.44,
+      "end": 446.94,
+      "text": "You can have a look at their sternoclideomastoid muscle determined where you think their"
+    },
+    {
+      "start": 446.94,
+      "end": 449.72,
+      "text": "IJ is and you can use a landmark approach."
+    },
+    {
+      "start": 450.74,
+      "end": 452.74,
+      "text": "that's commonly referred to as a landmark approach,"
+    },
+    {
+      "start": 453.02,
+      "end": 455.32,
+      "text": "despite the fact that many of my ultrasound colleagues"
+    },
+    {
+      "start": 455.32,
+      "end": 457.34,
+      "text": "refer to this now as a blind approach."
+    },
+    {
+      "start": 457.46,
+      "end": 459.8,
+      "text": "I don't think the inventor of central venous cannulation"
+    },
+    {
+      "start": 459.8,
+      "end": 459.98,
+      "text": "used..."
+    },
+    {
+      "start": 460.0,
+      "end": 465.22,
+      "text": "landmarks, referred to it as a blind technique and there's still some validity in using anatomic"
+    },
+    {
+      "start": 465.22,
+      "end": 469.49,
+      "text": "landmarks and doing procedures. The next possibility is you use ultrasound."
+    },
+    {
+      "start": 470.03,
+      "end": 474.81,
+      "text": "and you get an image of the ij and you mark an x on the spot on the skin where you need"
+    },
+    {
+      "start": 474.81,
+      "end": 475.61,
+      "text": "to do your procedure."
+    },
+    {
+      "start": 475.97,
+      "end": 479.83,
+      "text": "You put the ultrasound away and you begin to do the procedure knowing"
+    },
+    {
+      "start": 480.0,
+      "end": 481.72,
+      "text": "where the vein is, x marks the spot."
+    },
+    {
+      "start": 482.04,
+      "end": 485.02,
+      "text": "This is typically referred to as a static approach"
+    },
+    {
+      "start": 485.02,
+      "end": 486.12,
+      "text": "towards procedure guidance."
+    },
+    {
+      "start": 486.72,
+      "end": 489.86,
+      "text": "And while it's not generally recommended for interviews."
+    },
+    {
+      "start": 490.0,
+      "end": 493.06,
+      "text": "catheter placement for reasons that we'll get into through the rest of this"
+    },
+    {
+      "start": 493.06,
+      "end": 497.08,
+      "text": "talk. It's commonly employed for other things like abscess aspiration,"
+    },
+    {
+      "start": 497.08,
+      "end": 498.44,
+      "text": "Forest and Teases."
+    },
+    {
+      "start": 498.86,
+      "end": 499.98,
+      "text": "Parasite."
+    },
+    {
+      "start": 500.0,
+      "end": 503.96,
+      "text": "and teases and other procedures where you have a much larger target area."
+    },
+    {
+      "start": 506.09,
+      "end": 509.81,
+      "text": "So, there was a study by milling and milling and several other"
+    },
+    {
+      "start": 510.06,
+      "end": 512.12,
+      "text": "that came out in critical care medicine in 2005"
+    },
+    {
+      "start": 512.12,
+      "end": 513.64,
+      "text": "that looked at these different approaches."
+    },
+    {
+      "start": 513.96,
+      "end": 518.04,
+      "text": "Looked at a dynamic approach which is guiding in real time"
+    },
+    {
+      "start": 518.04,
+      "end": 519.48,
+      "text": "the needle into the vessel."
+    },
+    {
+      "start": 520.0,
+      "end": 521.92,
+      "text": "using ultrasound guidance throughout the entire procedure"
+    },
+    {
+      "start": 521.92,
+      "end": 522.74,
+      "text": "under sterile technique."
+    },
+    {
+      "start": 523.36,
+      "end": 526.26,
+      "text": "Static guidance where you mark the spot where the vein is"
+    },
+    {
+      "start": 526.26,
+      "end": 528.38,
+      "text": "using ultrasound and then move on to the procedure"
+    },
+    {
+      "start": 528.38,
+      "end": 529.96,
+      "text": "without real-time..."
+    },
+    {
+      "start": 530.06,
+      "end": 532.14,
+      "text": "ultrasound guidance versus a landmark technique."
+    },
+    {
+      "start": 532.76,
+      "end": 536.38,
+      "text": "So these patients were all randomized to ultrasound"
+    },
+    {
+      "start": 536.38,
+      "end": 539.66,
+      "text": "or landmark technique and then there was a crossover model"
+    },
+    {
+      "start": 539.66,
+      "end": 539.86,
+      "text": "where"
+    },
+    {
+      "start": 540.0,
+      "end": 543.24,
+      "text": "failed attempts using the first technique can move into a different technique instead."
+    },
+    {
+      "start": 544.14,
+      "end": 549.96,
+      "text": "So success rates with dynamic guidance were 98% over 82% with static over 60%."
+    },
+    {
+      "start": 550.0,
+      "end": 557.0,
+      "text": "64% with landmark. So we see the odds ratios for success as well as first pass success greatly"
+    },
+    {
+      "start": 557.0,
+      "end": 559.98,
+      "text": "favored, any ultrasound guidance, but sort of..."
+    },
+    {
+      "start": 560.0,
+      "end": 566.15,
+      "text": "dynamic guidance over static guidance. So how do we actually do this? Well let's"
+    },
+    {
+      "start": 566.15,
+      "end": 569.31,
+      "text": "separate our hands a little bit and think about what the probe hand is going to"
+    },
+    {
+      "start": 569.31,
+      "end": 569.97,
+      "text": "do in a minute."
+    },
+    {
+      "start": 570.0,
+      "end": 571.48,
+      "text": "And we'll talk about what the needle hand is going to do."
+    },
+    {
+      "start": 572.57,
+      "end": 575.25,
+      "text": "So it's important to speak about holding the probe."
+    },
+    {
+      "start": 575.51,
+      "end": 579.25,
+      "text": "And with any ultrasound, it's worth holding the probe in such a way that you're going"
+    },
+    {
+      "start": 579.25,
+      "end": 579.97,
+      "text": "to be as stable as possible."
+    },
+    {
+      "start": 580.0,
+      "end": 585.48,
+      "text": "So you want to hold the probe in usually the first three fingers of your hand and you'll"
+    },
+    {
+      "start": 585.48,
+      "end": 587.84,
+      "text": "hold it sort of like a pencil or like I'm holding this phone."
+    },
+    {
+      "start": 588.22,
+      "end": 589.72,
+      "text": "So I'm holding the probe."
+    },
+    {
+      "start": 590.0,
+      "end": 594.14,
+      "text": "be very stable, but I've got a couple of fingers left over and I have the heel of my hand"
+    },
+    {
+      "start": 594.14,
+      "end": 597.32,
+      "text": "so I can maintain a stable base where I want to put the probe."
+    },
+    {
+      "start": 597.82,
+      "end": 599.9,
+      "text": "So I plant my base on the patient, I have my other"
+    },
+    {
+      "start": 600.03,
+      "end": 604.23,
+      "text": "fingers to stabilize the probe holding, I'm not going to slip and move around, and then"
+    },
+    {
+      "start": 604.23,
+      "end": 606.61,
+      "text": "I can gently lower the probe down onto the patient."
+    },
+    {
+      "start": 606.79,
+      "end": 608.23,
+      "text": "This gives me a couple of different advantages."
+    },
+    {
+      "start": 608.67,
+      "end": 609.97,
+      "text": "I'm not going to slide on this..."
+    },
+    {
+      "start": 610.0,
+      "end": 617.88,
+      "text": "slippery gel filled surface because I've got a good probe stability here and also I can control with a lot of"
+    },
+    {
+      "start": 617.88,
+      "end": 619.9,
+      "text": "little fine motor control now using the small"
+    },
+    {
+      "start": 620.0,
+      "end": 624.52,
+      "text": "muscles in my hand, exactly where I'm going to place the probe so I can control how much pressure"
+    },
+    {
+      "start": 624.52,
+      "end": 629.97,
+      "text": "I'm going to put in a very fine fashion. So hold the probe hand, which is to"
+    },
+    {
+      "start": 630.03,
+      "end": 634.55,
+      "text": "going to be your non-dominant hand so that you're stable like this. You also want to keep most"
+    },
+    {
+      "start": 634.55,
+      "end": 639.43,
+      "text": "of your fingers behind the probe so that you're not getting in the way of the needle that's going to be"
+    },
+    {
+      "start": 640.0,
+      "end": 644.54,
+      "text": "Getting very close to the base of this pro. So what is your syringe hand do?"
+    },
+    {
+      "start": 644.88,
+      "end": 649.88,
+      "text": "So worth again talking about a little syringe etiquette a lot of people like to hold the syringe like they're holding"
+    },
+    {
+      "start": 650.1,
+      "end": 652.66,
+      "text": "and that's great and it can give you some stability."
+    },
+    {
+      "start": 653.06,
+      "end": 658.02,
+      "text": "The problem is a syringe has a plunger and then the remaining part of the syringe."
+    },
+    {
+      "start": 658.42,
+      "end": 659.98,
+      "text": "So when you're not holding the"
+    },
+    {
+      "start": 660.0,
+      "end": 664.34,
+      "text": "syringe, when you're holding the syringe like a pencil, you lose the ability to dynamically"
+    },
+    {
+      "start": 664.34,
+      "end": 666.0,
+      "text": "manipulate the plunger as well."
+    },
+    {
+      "start": 667.3,
+      "end": 669.98,
+      "text": "So what I would recommend is holding the pr-"
+    },
+    {
+      "start": 670.72,
+      "end": 675.54,
+      "text": "I'm sorry, holding the probe in your non-dominant hand, holding the syringe such that you can pull on the plunger."
+    },
+    {
+      "start": 675.96,
+      "end": 678.84,
+      "text": "So hold the probe in your dominant hand."
+    },
+    {
+      "start": 679.06,
+      "end": 679.44,
+      "text": "I'm sorry."
+    },
+    {
+      "start": 680.0,
+      "end": 684.36,
+      "text": "probing your non-dominant hand, the syringe is going to be in your dominant hand and hold"
+    },
+    {
+      "start": 684.36,
+      "end": 688.82,
+      "text": "it so that your fingers are curled around the plunger, and you can control and put a"
+    },
+    {
+      "start": 688.82,
+      "end": 689.98,
+      "text": "little bit of negative pressure on this."
+    },
+    {
+      "start": 690.0,
+      "end": 694.32,
+      "text": "syringe when you need to. So if you find that you need to hold a syringe with two hands"
+    },
+    {
+      "start": 694.32,
+      "end": 698.52,
+      "text": "to make it work, I'd like you to think about someone who's playing violin. If you ever"
+    },
+    {
+      "start": 698.52,
+      "end": 699.98,
+      "text": "watch a person play violin..."
+    },
+    {
+      "start": 700.0,
+      "end": 705.42,
+      "text": "They have it up in the hook of their neck here and they hold the bow in one hand and they have the"
+    },
+    {
+      "start": 706.14,
+      "end": 709.76,
+      "text": "They're holding the the fingerboard in there in their non-dominant or"
+    },
+    {
+      "start": 710.0,
+      "end": 716.75,
+      "text": "their left hand. So when they let go, the violin doesn't fall. It stays in that same position"
+    },
+    {
+      "start": 716.75,
+      "end": 719.97,
+      "text": "because they're not using this left hand to hold the"
+    },
+    {
+      "start": 720.03,
+      "end": 725.77,
+      "text": "violin. It's just using to play the notes. So if you can hold a syringe with one"
+    },
+    {
+      "start": 725.77,
+      "end": 729.34,
+      "text": "hand, that leaves your left hand free to do a lot of different things."
+    },
+    {
+      "start": 730.0,
+      "end": 733.04,
+      "text": "your left hand can stabilize the syringe on a patient who's moving a bit."
+    },
+    {
+      "start": 733.4,
+      "end": 739.98,
+      "text": "It can stabilize it the angle that you're inserting the needle, and it can also..."
+    },
+    {
+      "start": 740.0,
+      "end": 745.44,
+      "text": "hold the hub while you unscrew the syringe and allow you to place your guide wire"
+    },
+    {
+      "start": 745.44,
+      "end": 746.78,
+      "text": "and do the next steps in the procedure."
+    },
+    {
+      "start": 747.28,
+      "end": 748.74,
+      "text": "So it can also hold the probe."
+    },
+    {
+      "start": 748.74,
+      "end": 749.98,
+      "text": "So if you're using two"
+    },
+    {
+      "start": 750.0,
+      "end": 753.76,
+      "text": "hands to hold the syringe, you don't have that extra hand. As soon as you get the hang"
+    },
+    {
+      "start": 753.76,
+      "end": 758.92,
+      "text": "of using one hand to hold the syringe, it leaves you a lot of options open to be able to"
+    },
+    {
+      "start": 758.92,
+      "end": 759.98,
+      "text": "use your non-dominant hand."
+    },
+    {
+      "start": 760.0,
+      "end": 761.58,
+      "text": "for a lot of other things that are going to be helpful."
+    },
+    {
+      "start": 762.52,
+      "end": 766.14,
+      "text": "So here's one way that you can use one hand"
+    },
+    {
+      "start": 766.14,
+      "end": 769.92,
+      "text": "to pull back on the plunger and then also inject if needed."
+    },
+    {
+      "start": 770.64,
+      "end": 772.64,
+      "text": "So, again, this technique is worth taking the little"
+    },
+    {
+      "start": 772.64,
+      "end": 775.36,
+      "text": "digression out of this ultrasound talk to play with this."
+    },
+    {
+      "start": 775.7,
+      "end": 777.76,
+      "text": "My hand position is my hand position."
+    },
+    {
+      "start": 777.92,
+      "end": 779.98,
+      "text": "You may try to use a similar hand position or find..."
+    },
+    {
+      "start": 780.0,
+      "end": 785.27,
+      "text": "something that works for you, but the idea is if you can create negative pressure and positive"
+    },
+    {
+      "start": 785.27,
+      "end": 789.96,
+      "text": "pressure while holding a syringe relatively stably with only one hand, it again leaves you a lot of"
+    },
+    {
+      "start": 790.0,
+      "end": 792.52,
+      "text": "of options, and this can be helpful for venous access,"
+    },
+    {
+      "start": 792.84,
+      "end": 797.04,
+      "text": "could also be helpful for, or infiltrating, you know,"
+    },
+    {
+      "start": 797.2,
+      "end": 799.44,
+      "text": "lidocaine or local anesthetics into the skin."
+    },
+    {
+      "start": 800.0,
+      "end": 803.89,
+      "text": "and other procedures where you basically have a needle inside of a patient's body."
+    },
+    {
+      "start": 806.43,
+      "end": 809.98,
+      "text": "So, the huge benefit of having a"
+    },
+    {
+      "start": 810.03,
+      "end": 813.77,
+      "text": "probe in your left hand in a needle in your right hand while being able to hold some negative"
+    },
+    {
+      "start": 813.77,
+      "end": 815.25,
+      "text": "pressure on that plunger."
+    },
+    {
+      "start": 815.37,
+      "end": 819.97,
+      "text": "Just a little bit, just half a cc or so, is you're going to have three separate..."
+    },
+    {
+      "start": 820.0,
+      "end": 823.3,
+      "text": "mechanisms to inform you that you've"
+    },
+    {
+      "start": 823.3,
+      "end": 824.22,
+      "text": "calculated the vein."
+    },
+    {
+      "start": 824.6,
+      "end": 826.26,
+      "text": "Because as soon as you calculate the vein,"
+    },
+    {
+      "start": 826.68,
+      "end": 827.68,
+      "text": "three things should happen."
+    },
+    {
+      "start": 828.08,
+      "end": 829.98,
+      "text": "You should be able to feel a pressure difference."
+    },
+    {
+      "start": 830.0,
+      "end": 834.32,
+      "text": "inside that syringe. You're typically holding some negative pressure. It's"
+    },
+    {
+      "start": 834.32,
+      "end": 837.0,
+      "text": "going to feel like a little suction. It's going to be pulling back on you. And"
+    },
+    {
+      "start": 837.0,
+      "end": 839.72,
+      "text": "once you enter the vessel and you get a flash,"
+    },
+    {
+      "start": 840.19,
+      "end": 841.51,
+      "text": "that pressure will disappear."
+    },
+    {
+      "start": 841.89,
+      "end": 842.73,
+      "text": "So you'll feel that you're in."
+    },
+    {
+      "start": 843.7,
+      "end": 845.28,
+      "text": "You should see a flash in the syringe."
+    },
+    {
+      "start": 845.9,
+      "end": 848.2,
+      "text": "And you don't always see a flash in the syringe"
+    },
+    {
+      "start": 848.62,
+      "end": 849.92,
+      "text": "when you're holding it like a pencil."
+    },
+    {
+      "start": 850.0,
+      "end": 853.88,
+      "text": "because there's a little bit too much pressure inside the syringe for the blood to overcome it."
+    },
+    {
+      "start": 854.47,
+      "end": 857.71,
+      "text": "And finally, you're going to see the needle entering the vessel on ultrasound,"
+    },
+    {
+      "start": 858.23,
+      "end": 859.97,
+      "text": "because you're going to be holding the probe in your left hand."
+    },
+    {
+      "start": 860.0,
+      "end": 865.26,
+      "text": "You're looking down at the patient. You're looking up at the screen back and forth. So again three different things"
+    },
+    {
+      "start": 865.26,
+      "end": 869.88,
+      "text": "The reality is you won't always get all three things, but if you set three"
+    },
+    {
+      "start": 870.0,
+      "end": 873.04,
+      "text": "for yourself. One or two of them are gonna go off at least to wake you up in the"
+    },
+    {
+      "start": 873.04,
+      "end": 877.22,
+      "text": "morning. So it's helpful to have three separate ways to notify you the second"
+    },
+    {
+      "start": 877.22,
+      "end": 879.9,
+      "text": "that you've entered the vein so you can begin to change your technique."
+    },
+    {
+      "start": 880.0,
+      "end": 884.24,
+      "text": "and go into the, I've entered the vein part of the procedure from the, I'm"
+    },
+    {
+      "start": 884.24,
+      "end": 889.1,
+      "text": "finding the vein part of the procedure. So how should your positioning be? We know"
+    },
+    {
+      "start": 889.1,
+      "end": 889.92,
+      "text": "your left hand is doing."
+    },
+    {
+      "start": 890.06,
+      "end": 891.16,
+      "text": "We know what your right hand is doing."
+    },
+    {
+      "start": 891.8,
+      "end": 892.84,
+      "text": "I'm sorry to all you lefties."
+    },
+    {
+      "start": 892.94,
+      "end": 894.82,
+      "text": "Obviously this is a very right hand centric talk."
+    },
+    {
+      "start": 895.7,
+      "end": 897.69,
+      "text": "We need to set up the patient"
+    },
+    {
+      "start": 897.69,
+      "end": 899.03,
+      "text": "really is the most important thing."
+    },
+    {
+      "start": 899.39,
+      "end": 899.97,
+      "text": "The patient should be"
+    },
+    {
+      "start": 900.0,
+      "end": 904.76,
+      "text": "set up exactly like you would normally do the procedure. So fully draped and prepped,"
+    },
+    {
+      "start": 905.08,
+      "end": 909.74,
+      "text": "you want to be able to visualize your field of view very nicely. So we have our"
+    },
+    {
+      "start": 910.0,
+      "end": 916.02,
+      "text": "barrel, gown, and gloved operator here, standing at the head of the bed, ready to put a left"
+    },
+    {
+      "start": 916.02,
+      "end": 918.16,
+      "text": "internal jugular central line in place."
+    },
+    {
+      "start": 918.56,
+      "end": 919.98,
+      "text": "Probe is in its non-dominant, left..."
+    },
+    {
+      "start": 920.0,
+      "end": 924.04,
+      "text": "hand, syringe, syringe a needle in his right hand, his dominant hand."
+    },
+    {
+      "start": 925.21,
+      "end": 929.97,
+      "text": "So the ultrasound machine itself should be set up in a location that a"
+    },
+    {
+      "start": 930.0,
+      "end": 932.5,
+      "text": "allows you very easy access to be able to view it."
+    },
+    {
+      "start": 932.56,
+      "end": 934.76,
+      "text": "You should be able to look at the ultrasound machine,"
+    },
+    {
+      "start": 935.12,
+      "end": 937.94,
+      "text": "screen, and the patient with very little movement"
+    },
+    {
+      "start": 937.94,
+      "end": 938.66,
+      "text": "of your head or eyes."
+    },
+    {
+      "start": 939.0,
+      "end": 939.98,
+      "text": "So it's just like when you sit in the car."
+    },
+    {
+      "start": 940.0,
+      "end": 943.8,
+      "text": "the car and you want to be able to see the rear view mirror so that when you're driving"
+    },
+    {
+      "start": 943.8,
+      "end": 947.14,
+      "text": "you're looking at the road and you're looking at the rear view mirror and when you first"
+    },
+    {
+      "start": 947.14,
+      "end": 949.98,
+      "text": "started driving that was a little awkward and it was"
+    },
+    {
+      "start": 950.0,
+      "end": 953.3,
+      "text": "very difficult and you had to be reminded to look at one versus the other and it's going"
+    },
+    {
+      "start": 953.3,
+      "end": 955.32,
+      "text": "to be the same way when you first start with ultrasound."
+    },
+    {
+      "start": 955.7,
+      "end": 958.42,
+      "text": "You're going to look down at the patient and forget the screen or you're going to get"
+    },
+    {
+      "start": 958.42,
+      "end": 959.98,
+      "text": "focused on the screen and forget the patient."
+    },
+    {
+      "start": 960.0,
+      "end": 965.24,
+      "text": "Both of those are problems and they're no different than staring at the rear of your mirror while you're going down the highway at 90 miles an hour"
+    },
+    {
+      "start": 965.24,
+      "end": 969.8,
+      "text": "Just any reasonable person wouldn't do that so it's not a fault of ultrasound that you wouldn't stare at the ultrasound"
+    },
+    {
+      "start": 970.0,
+      "end": 974.6,
+      "text": "machine instead of the patient. You need to look at both. With a little bit of practice it"
+    },
+    {
+      "start": 974.6,
+      "end": 978.5,
+      "text": "becomes truly second nature. But it doesn't become second nature unless they're set up right"
+    },
+    {
+      "start": 978.5,
+      "end": 979.98,
+      "text": "in front of each other. So, you look..."
+    },
+    {
+      "start": 980.0,
+      "end": 983.8,
+      "text": "look down at the patient, you look up at the screen, sometimes that means the machine needs"
+    },
+    {
+      "start": 983.8,
+      "end": 987.12,
+      "text": "to be on the opposite side of the patient. Sometimes it means it means to be right next"
+    },
+    {
+      "start": 987.12,
+      "end": 989.84,
+      "text": "to you. But if you're trying to do a procedure in some helpful"
+    },
+    {
+      "start": 990.0,
+      "end": 993.88,
+      "text": "person places the machine behind you somewhere. If you're looking back and forth over your"
+    },
+    {
+      "start": 993.88,
+      "end": 997.0,
+      "text": "shoulder, you're not doing yourself or your patient any favors and you're not going"
+    },
+    {
+      "start": 997.0,
+      "end": 998.88,
+      "text": "to make that procedure any easier for yourself."
+    },
+    {
+      "start": 1000.67,
+      "end": 1004.95,
+      "text": "The machine setup, the patient setup, you hold the probe in your left hand, hold the probe"
+    },
+    {
+      "start": 1004.95,
+      "end": 1008.41,
+      "text": "marker so that the probe marker is facing towards your left."
+    },
+    {
+      "start": 1008.89,
+      "end": 1009.97,
+      "text": "If you're familiar with"
+    },
+    {
+      "start": 1010.0,
+      "end": 1011.8,
+      "text": "using ultrasound for diagnostic purposes,"
+    },
+    {
+      "start": 1011.94,
+      "end": 1014.06,
+      "text": "looking at hearts and gallbladders and neoritus"
+    },
+    {
+      "start": 1014.06,
+      "end": 1016.74,
+      "text": "and IVCs, normally we talk about the probe"
+    },
+    {
+      "start": 1016.74,
+      "end": 1017.86,
+      "text": "with respect to the patient."
+    },
+    {
+      "start": 1018.42,
+      "end": 1019.98,
+      "text": "But the patient's not the one who's..."
+    },
+    {
+      "start": 1020.0,
+      "end": 1020.84,
+      "text": "with the needle in their hand."
+    },
+    {
+      "start": 1020.98,
+      "end": 1022.08,
+      "text": "You're the one with the needle in your hand."
+    },
+    {
+      "start": 1022.56,
+      "end": 1026.26,
+      "text": "So you need to hold the probe so that the heads up display"
+    },
+    {
+      "start": 1026.26,
+      "end": 1028.22,
+      "text": "that this ultrasound machine has just become"
+    },
+    {
+      "start": 1028.22,
+      "end": 1029.98,
+      "text": "is going to correspond to your..."
+    },
+    {
+      "start": 1030.0,
+      "end": 1031.78,
+      "text": "position and not the patient's position."
+    },
+    {
+      "start": 1032.69,
+      "end": 1038.7,
+      "text": "So your left hand, probe basing towards your left, that means the left side of the screen"
+    },
+    {
+      "start": 1038.7,
+      "end": 1039.78,
+      "text": "is your left."
+    },
+    {
+      "start": 1040.42,
+      "end": 1042.04,
+      "text": "and the way this becomes really relevant"
+    },
+    {
+      "start": 1042.04,
+      "end": 1043.78,
+      "text": "is when you have a needle in the patient's neck"
+    },
+    {
+      "start": 1044.22,
+      "end": 1046.76,
+      "text": "and you see it's going too far to the right on the screen,"
+    },
+    {
+      "start": 1047.2,
+      "end": 1048.7,
+      "text": "it's going too far to your right."
+    },
+    {
+      "start": 1049.2,
+      "end": 1049.76,
+      "text": "So you pull back."
+    },
+    {
+      "start": 1050.16,
+      "end": 1051.4,
+      "text": "and you redirect towards the center."
+    },
+    {
+      "start": 1052.12,
+      "end": 1053.44,
+      "text": "And it's all with respect to your anatomy."
+    },
+    {
+      "start": 1053.64,
+      "end": 1054.74,
+      "text": "So you don't have to think, again,"
+    },
+    {
+      "start": 1054.86,
+      "end": 1055.94,
+      "text": "when you've got this sharp object,"
+    },
+    {
+      "start": 1056.1,
+      "end": 1057.64,
+      "text": "and your major arteries in someone's neck,"
+    },
+    {
+      "start": 1058.52,
+      "end": 1059.98,
+      "text": "is the left, my left, is a-"
+    },
+    {
+      "start": 1060.03,
+      "end": 1062.15,
+      "text": "The patient's left, do I go right to move?"
+    },
+    {
+      "start": 1062.39,
+      "end": 1063.19,
+      "text": "Left, there's none of that."
+    },
+    {
+      "start": 1063.88,
+      "end": 1065.1,
+      "text": "Left is left, it's your left,"
+    },
+    {
+      "start": 1065.66,
+      "end": 1067.24,
+      "text": "and it should be very straightforward"
+    },
+    {
+      "start": 1067.24,
+      "end": 1069.98,
+      "text": "and it doesn't require any recalibration of your..."
+    },
+    {
+      "start": 1070.1,
+      "end": 1074.34,
+      "text": "perception to get the hang of it. So here's another example where it's probably a"
+    },
+    {
+      "start": 1074.34,
+      "end": 1077.7,
+      "text": "little more awkward in the positioning here, but this provider actually felt"
+    },
+    {
+      "start": 1077.7,
+      "end": 1079.98,
+      "text": "it pretty comfortable to keep his neck turned."
+    },
+    {
+      "start": 1080.0,
+      "end": 1083.66,
+      "text": "a little bit to the left and see the screen, but you definitely want to be able to see the screen"
+    },
+    {
+      "start": 1083.66,
+      "end": 1089.73,
+      "text": "and the probe and the patient all at the same time. So you can be fully sterile."
+    },
+    {
+      "start": 1090.1,
+      "end": 1096.12,
+      "text": "And you should be fully sterile to do your central lines and ultra sound shouldn't change any of that. It doesn't take very long to"
+    },
+    {
+      "start": 1096.96,
+      "end": 1099.94,
+      "text": "Gown and glove. It doesn't take very long to prep and"
+    },
+    {
+      "start": 1100.0,
+      "end": 1105.06,
+      "text": "And it certainly doesn't take very long to stick a sterile probe cover on the end of the ultrasound machine."
+    },
+    {
+      "start": 1105.5,
+      "end": 1109.94,
+      "text": "So in the background of this image on the left hand side you see a sterile operation."
+    },
+    {
+      "start": 1110.0,
+      "end": 1113.97,
+      "text": "They are down and gloved and the patient's all prepped in the near field"
+    },
+    {
+      "start": 1113.97,
+      "end": 1119.97,
+      "text": "We have a dirty hand holding a dirty probe with dirty gel on it and that's fine the operator then opens up"
+    },
+    {
+      "start": 1120.19,
+      "end": 1125.53,
+      "text": "sterile sheath and if you don't have these in your department you can usually"
+    },
+    {
+      "start": 1125.53,
+      "end": 1129.43,
+      "text": "get them from central supply in your hospital you can have them tubeed up from"
+    },
+    {
+      "start": 1129.43,
+      "end": 1129.97,
+      "text": "the OR or"
+    },
+    {
+      "start": 1130.0,
+      "end": 1135.06,
+      "text": "from some other area where they are using ultrasound probes already and when"
+    },
+    {
+      "start": 1135.06,
+      "end": 1137.9,
+      "text": "you're just getting started and you're not borrowing a bunch of these you're"
+    },
+    {
+      "start": 1137.9,
+      "end": 1139.98,
+      "text": "like that guy at the party that bumps a cigarette every now"
+    },
+    {
+      "start": 1140.0,
+      "end": 1143.56,
+      "text": "and then it's not terribly annoying. Eventually you're going to get to the point"
+    },
+    {
+      "start": 1143.56,
+      "end": 1147.0,
+      "text": "we're using these a lot and then you just want to have your own supply. And that's"
+    },
+    {
+      "start": 1147.0,
+      "end": 1149.97,
+      "text": "the point when you realize that you're a smoker. Accept it in a good..."
+    },
+    {
+      "start": 1150.0,
+      "end": 1152.66,
+      "text": "way because you're using ultrasound to guide your central lines."
+    },
+    {
+      "start": 1153.57,
+      "end": 1158.99,
+      "text": "So you place a little bit of the sterile gel that comes in the packet on the end of the"
+    },
+    {
+      "start": 1158.99,
+      "end": 1159.77,
+      "text": "ultrasound probe."
+    },
+    {
+      "start": 1160.1,
+      "end": 1162.56,
+      "text": "And now you've got gel inside the probe,"
+    },
+    {
+      "start": 1162.56,
+      "end": 1164.02,
+      "text": "which is important to make a good interface,"
+    },
+    {
+      "start": 1164.58,
+      "end": 1165.34,
+      "text": "squish out the air bubbles."
+    },
+    {
+      "start": 1165.8,
+      "end": 1167.08,
+      "text": "You've got gel on the outside of the probe"
+    },
+    {
+      "start": 1167.08,
+      "end": 1169.64,
+      "text": "to make a good interface between the sheath and the patients."
+    },
+    {
+      "start": 1170.03,
+      "end": 1170.35,
+      "text": "skin."
+    },
+    {
+      "start": 1173.21,
+      "end": 1178.25,
+      "text": "Brief word on the ultrasound probes, they're not a massive luxury, they're pretty readily"
+    },
+    {
+      "start": 1178.25,
+      "end": 1179.73,
+      "text": "available, and it's definitely worth"
+    },
+    {
+      "start": 1180.16,
+      "end": 1184.08,
+      "text": "having them around, especially if this is going to be the one thing that turns your sterile"
+    },
+    {
+      "start": 1184.08,
+      "end": 1187.98,
+      "text": "setup into a non sterile setup because there's really no such thing as kind of sterile."
+    },
+    {
+      "start": 1187.98,
+      "end": 1189.84,
+      "text": "So if you're using a sterile glove"
+    },
+    {
+      "start": 1190.0,
+      "end": 1194.53,
+      "text": "that gives you two inches of sterility on your field which isn't enough it's"
+    },
+    {
+      "start": 1194.53,
+      "end": 1197.77,
+      "text": "a non sterile line. If you're using the big tagaderm which is another trick"
+    },
+    {
+      "start": 1197.77,
+      "end": 1199.97,
+      "text": "people like to use you've got an inch and a half"
+    },
+    {
+      "start": 1200.0,
+      "end": 1202.32,
+      "text": "of sterility, again, a non sterile line."
+    },
+    {
+      "start": 1202.72,
+      "end": 1206.26,
+      "text": "So if this means that you place a line with ultrasound guidance and it's a good line"
+    },
+    {
+      "start": 1206.26,
+      "end": 1209.34,
+      "text": "and you use all your experience and your good technique, and then as soon as the patient"
+    },
+    {
+      "start": 1209.34,
+      "end": 1209.98,
+      "text": "gets into the-"
+    },
+    {
+      "start": 1210.0,
+      "end": 1214.3,
+      "text": "or transfer to a different area, they're going to have their line replaced unnecessarily because"
+    },
+    {
+      "start": 1214.3,
+      "end": 1217.36,
+      "text": "you didn't have a sterile probe cover. It's really worth thinking about this kind of stuff"
+    },
+    {
+      "start": 1217.36,
+      "end": 1218.32,
+      "text": "before you place the line."
+    },
+    {
+      "start": 1220.0,
+      "end": 1225.88,
+      "text": "So, major approaches, each of which has drawbacks and positives."
+    },
+    {
+      "start": 1226.14,
+      "end": 1229.98,
+      "text": "There's an in-plane approach where the needle is placed in..."
+    },
+    {
+      "start": 1230.0,
+      "end": 1234.39,
+      "text": "the same plane as the ultrasound beam, and then there's an out-of-plane approach that you"
+    },
+    {
+      "start": 1234.39,
+      "end": 1239.91,
+      "text": "see on the right-hand side where the ultrasound beam is perpendicular to the path of the"
+    },
+    {
+      "start": 1239.91,
+      "end": 1239.97,
+      "text": "I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry"
+    },
+    {
+      "start": 1241.63,
+      "end": 1249.93,
+      "text": "So the in-plane approach is a very nice finnest approach. You can see the entire needle. You can watch it as it slosh"
+    },
+    {
+      "start": 1250.38,
+      "end": 1254.38,
+      "text": "into the vein, you can see the angle, you can see how far it's gotten in, you can"
+    },
+    {
+      "start": 1254.38,
+      "end": 1257.66,
+      "text": "see if you've gone past the vein and a lot of authors describe that this is"
+    },
+    {
+      "start": 1257.66,
+      "end": 1259.86,
+      "text": "the best way to do it. The difficult"
+    },
+    {
+      "start": 1260.0,
+      "end": 1269.92,
+      "text": "with this is it requires a bit of finesse and proprioception to be able to maintain the vessel beneath your"
+    },
+    {
+      "start": 1270.32,
+      "end": 1274.48,
+      "text": "plane, and the needle aligned with both of them simultaneously, because you're"
+    },
+    {
+      "start": 1274.48,
+      "end": 1278.5,
+      "text": "essentially aligning a plane, a tube, and the line. So it's a little bit"
+    },
+    {
+      "start": 1278.5,
+      "end": 1279.98,
+      "text": "difficult to take a lot of practice to do."
+    },
+    {
+      "start": 1280.06,
+      "end": 1284.32,
+      "text": "able to do that properly. And staying in that plane can be difficult and you"
+    },
+    {
+      "start": 1284.32,
+      "end": 1288.42,
+      "text": "don't see the much anatomy. So if you veer off the plane, it's very difficult to"
+    },
+    {
+      "start": 1288.42,
+      "end": 1289.98,
+      "text": "tell where your needle is."
+    },
+    {
+      "start": 1290.0,
+      "end": 1294.26,
+      "text": "Have I gone towards a nerve, have I gone towards the artery, am I too deep, am I too shallow."
+    },
+    {
+      "start": 1294.46,
+      "end": 1296.72,
+      "text": "If your needle isn't in that plane, you don't know where you are."
+    },
+    {
+      "start": 1296.98,
+      "end": 1298.46,
+      "text": "That's the drawback of this technique."
+    },
+    {
+      "start": 1299.06,
+      "end": 1299.9,
+      "text": "The out-of-plane approach."
+    },
+    {
+      "start": 1300.0,
+      "end": 1301.2,
+      "text": "which offers a couple of benefits."
+    },
+    {
+      "start": 1301.4,
+      "end": 1304.46,
+      "text": "You can see anatomy on both sides."
+    },
+    {
+      "start": 1304.46,
+      "end": 1306.22,
+      "text": "We'll see in a moment that you can see, for example,"
+    },
+    {
+      "start": 1306.46,
+      "end": 1308.84,
+      "text": "for the IJ, you see the IJ, you see the carotid,"
+    },
+    {
+      "start": 1309.22,
+      "end": 1309.98,
+      "text": "and you see the..."
+    },
+    {
+      "start": 1310.0,
+      "end": 1311.4,
+      "text": "anatomy sort of laid out for you."
+    },
+    {
+      "start": 1311.94,
+      "end": 1314.0,
+      "text": "And you can adjust if you're too far to the left,"
+    },
+    {
+      "start": 1314.18,
+      "end": 1315.58,
+      "text": "you pull back, if you're too far to the right,"
+    },
+    {
+      "start": 1315.68,
+      "end": 1318.32,
+      "text": "you pull back, so a lot of people find that pretty helpful."
+    },
+    {
+      "start": 1318.9,
+      "end": 1319.92,
+      "text": "The downside is"
+    },
+    {
+      "start": 1320.0,
+      "end": 1323.48,
+      "text": "you're trying to see just the tip of the needle."
+    },
+    {
+      "start": 1323.64,
+      "end": 1324.52,
+      "text": "You want to follow the tip."
+    },
+    {
+      "start": 1324.94,
+      "end": 1326.12,
+      "text": "And as soon as the tip of your needle"
+    },
+    {
+      "start": 1326.12,
+      "end": 1327.58,
+      "text": "passes the ultrasound beam,"
+    },
+    {
+      "start": 1327.86,
+      "end": 1329.54,
+      "text": "you're no longer looking at the tip of the needle."
+    },
+    {
+      "start": 1329.54,
+      "end": 1329.88,
+      "text": "Are you?"
+    },
+    {
+      "start": 1330.0,
+      "end": 1332.62,
+      "text": "seeing the shaft so you don't know where the tip of the needle is."
+    },
+    {
+      "start": 1332.98,
+      "end": 1337.48,
+      "text": "So it requires you to move both your needle hand and your probe hand to maintain just"
+    },
+    {
+      "start": 1337.48,
+      "end": 1339.66,
+      "text": "the tip in the plane of view."
+    },
+    {
+      "start": 1340.45,
+      "end": 1342.93,
+      "text": "and that requires some practice and good technique."
+    },
+    {
+      "start": 1343.71,
+      "end": 1345.73,
+      "text": "So, and again, so both hands moving"
+    },
+    {
+      "start": 1345.73,
+      "end": 1347.45,
+      "text": "and being able to visualize just the tip"
+    },
+    {
+      "start": 1347.95,
+      "end": 1349.49,
+      "text": "are the drawbacks of this approach."
+    },
+    {
+      "start": 1349.87,
+      "end": 1349.97,
+      "text": "So."
+    },
+    {
+      "start": 1350.0,
+      "end": 1354.38,
+      "text": "So I would recommend getting familiar with both approaches and use one or both approaches"
+    },
+    {
+      "start": 1354.38,
+      "end": 1359.7,
+      "text": "as suits your experience and your skills and your particular patient's anatomy for individual"
+    },
+    {
+      "start": 1360.0,
+      "end": 1365.77,
+      "text": "procedure. So, again, down side of the short axis approach can be demonstrated here. We're"
+    },
+    {
+      "start": 1365.77,
+      "end": 1369.84,
+      "text": "going to leave in this example the tissue here and the"
+    },
+    {
+      "start": 1370.45,
+      "end": 1375.73,
+      "text": "flesh color and a vessel in this blue column going horizontally in the bottom"
+    },
+    {
+      "start": 1375.73,
+      "end": 1379.77,
+      "text": "left of the screen. We have a needle entered at about a 45 degree angle through"
+    },
+    {
+      "start": 1380.0,
+      "end": 1383.56,
+      "text": "off tissue and the needle tip is right at the point where it's about to enter the vessel."
+    },
+    {
+      "start": 1384.08,
+      "end": 1388.83,
+      "text": "So right now the probe being held perpendicular to this is right through the tip of the needle."
+    },
+    {
+      "start": 1389.55,
+      "end": 1389.97,
+      "text": "So on the right..."
+    },
+    {
+      "start": 1390.0,
+      "end": 1393.58,
+      "text": "hand side here on the ultrasound screen we can see the vein we see the artery"
+    },
+    {
+      "start": 1393.58,
+      "end": 1397.04,
+      "text": "because we're looking at again a short axis view so we can see the lateral"
+    },
+    {
+      "start": 1397.04,
+      "end": 1399.88,
+      "text": "anatomy we see the tip and then typically you see some"
+    },
+    {
+      "start": 1400.0,
+      "end": 1405.1,
+      "text": "reverberation artifact coming down from it so that your needle tip winds up looking"
+    },
+    {
+      "start": 1405.1,
+      "end": 1405.84,
+      "text": "like a little comet."
+    },
+    {
+      "start": 1406.64,
+      "end": 1409.92,
+      "text": "So the tip of the comet, the main base of it right there, is"
+    },
+    {
+      "start": 1410.03,
+      "end": 1411.19,
+      "text": "where the needle tip itself is."
+    },
+    {
+      "start": 1411.75,
+      "end": 1415.19,
+      "text": "So now without moving the needle and without moving the patient, we're going to slide the"
+    },
+    {
+      "start": 1415.19,
+      "end": 1419.29,
+      "text": "probe back and forth just to see what the image would look like on ultrasound."
+    },
+    {
+      "start": 1420.16,
+      "end": 1422.28,
+      "text": "So you can see here that when you're truly at the tip,"
+    },
+    {
+      "start": 1422.42,
+      "end": 1424.16,
+      "text": "you're getting an accurate picture of where the needle is."
+    },
+    {
+      "start": 1424.54,
+      "end": 1426.28,
+      "text": "But when the probe is not at the tip"
+    },
+    {
+      "start": 1426.28,
+      "end": 1427.76,
+      "text": "and it's back towards the shaft of the needle,"
+    },
+    {
+      "start": 1427.88,
+      "end": 1429.7,
+      "text": "you'll get the sense that the needle is actually several"
+    },
+    {
+      "start": 1430.0,
+      "end": 1432.9,
+      "text": "centimeters away from the vessel."
+    },
+    {
+      "start": 1433.62,
+      "end": 1438.36,
+      "text": "So getting an inaccurate picture of where the tip of the needle is, is a complication"
+    },
+    {
+      "start": 1438.36,
+      "end": 1439.98,
+      "text": "or a difficulty with using..."
+    },
+    {
+      "start": 1440.0,
+      "end": 1442.38,
+      "text": "this short axis approach and you have to be very cognizant of that."
+    },
+    {
+      "start": 1444.25,
+      "end": 1449.82,
+      "text": "So the optimal use of a short axis approach takes your probe."
+    },
+    {
+      "start": 1450.42,
+      "end": 1452.34,
+      "text": "straight through the needle tip the entire time."
+    },
+    {
+      "start": 1452.78,
+      "end": 1458.85,
+      "text": "And one way to think about this is a pretty standard definition of the tip of a needle is"
+    },
+    {
+      "start": 1458.85,
+      "end": 1459.69,
+      "text": "it's the sharp part."
+    },
+    {
+      "start": 1460.19,
+      "end": 1464.11,
+      "text": "Now you don't have a way to tell on ultrasound how sharp something is, but you can see something"
+    },
+    {
+      "start": 1464.11,
+      "end": 1464.91,
+      "text": "or not see it."
+    },
+    {
+      "start": 1465.11,
+      "end": 1468.63,
+      "text": "So I'm going to give you a different ultrasound definition of the tip of the needle in the"
+    },
+    {
+      "start": 1468.63,
+      "end": 1469.43,
+      "text": "short axis approach."
+    },
+    {
+      "start": 1470.13,
+      "end": 1476.19,
+      "text": "The tip of the needle is the point of the needle at which you can just barely see it and if you move the probe you don't see it anymore."
+    },
+    {
+      "start": 1476.87,
+      "end": 1479.96,
+      "text": "So what you're going to do is hold the probe and move the needle until you..."
+    },
+    {
+      "start": 1480.06,
+      "end": 1485.29,
+      "text": "you can see the needle, and then you move the probe away. Now you don't see the tip anymore."
+    },
+    {
+      "start": 1485.86,
+      "end": 1489.96,
+      "text": "Insert the needle a little bit further, and now you can see the tip. Pull it away from-"
+    },
+    {
+      "start": 1490.0,
+      "end": 1493.9,
+      "text": "you, you don't see it, and now you see it, and now you don't, and now you see it."
+    },
+    {
+      "start": 1494.22,
+      "end": 1498.76,
+      "text": "And this step-wise, moving the needle, moving the probe is the way to keep the needle"
+    },
+    {
+      "start": 1498.76,
+      "end": 1499.24,
+      "text": "TIP."
+    },
+    {
+      "start": 1499.54,
+      "end": 1499.86,
+      "text": "Visual"
+    },
+    {
+      "start": 1500.0,
+      "end": 1502.06,
+      "text": "through the entire process."
+    },
+    {
+      "start": 1502.66,
+      "end": 1504.22,
+      "text": "So again, that takes a little bit of practice"
+    },
+    {
+      "start": 1504.22,
+      "end": 1506.68,
+      "text": "just like using a long axis approach does."
+    },
+    {
+      "start": 1507.08,
+      "end": 1508.66,
+      "text": "But here's how it looks when you do it properly."
+    },
+    {
+      "start": 1509.1,
+      "end": 1509.96,
+      "text": "The little circle here."
+    },
+    {
+      "start": 1510.03,
+      "end": 1514.05,
+      "text": "represents the area at the tip of the needle where the beam is passing through it."
+    },
+    {
+      "start": 1514.78,
+      "end": 1517.64,
+      "text": "And then, when the needle is high, you'll see that it's high on the ultrasound."
+    },
+    {
+      "start": 1518.08,
+      "end": 1519.98,
+      "text": "When the needle is lower, you'll see it lower, when it's a"
+    },
+    {
+      "start": 1520.03,
+      "end": 1522.27,
+      "text": "about to enter the vessel, you'll see it about to enter the vessel."
+    },
+    {
+      "start": 1522.65,
+      "end": 1525.75,
+      "text": "So you're basically just flirting with the tip of the needle"
+    },
+    {
+      "start": 1525.75,
+      "end": 1527.31,
+      "text": "so the point where the ultrasound beam"
+    },
+    {
+      "start": 1527.31,
+      "end": 1529.07,
+      "text": "is just barely visualizing at each time."
+    },
+    {
+      "start": 1529.63,
+      "end": 1529.89,
+      "text": "But again."
+    },
+    {
+      "start": 1530.0,
+      "end": 1533.48,
+      "text": "And having heard this, you may hate the short-axis approach, and a lot of very experienced"
+    },
+    {
+      "start": 1533.48,
+      "end": 1537.02,
+      "text": "synographers and excellent proceduralists hate the short-axis approach."
+    },
+    {
+      "start": 1537.4,
+      "end": 1538.84,
+      "text": "So let's look at the long-axis approach."
+    },
+    {
+      "start": 1538.84,
+      "end": 1539.98,
+      "text": "So..."
+    },
+    {
+      "start": 1540.51,
+      "end": 1546.84,
+      "text": "You visualize the vessel, find its greatest diameter, and hold rock solid, your"
+    },
+    {
+      "start": 1547.16,
+      "end": 1549.88,
+      "text": "ProBhand Parallel, right?"
+    },
+    {
+      "start": 1550.03,
+      "end": 1555.21,
+      "text": "top of the vessel. And now the vessel doesn't move and your probe hand doesn't move. The only"
+    },
+    {
+      "start": 1555.21,
+      "end": 1559.81,
+      "text": "thing that moves in a long axis approach is your right hand, your procedure hand, your"
+    },
+    {
+      "start": 1560.75,
+      "end": 1565.93,
+      "text": "your dominant syringe hand. So you need to make sure that that needle stays"
+    },
+    {
+      "start": 1565.93,
+      "end": 1569.89,
+      "text": "perpendicular parallel and stays within the plane the entire time. If you see"
+    },
+    {
+      "start": 1570.0,
+      "end": 1574.78,
+      "text": "needle starting to deviate out of the plane. You need to pull back, redirect your dominant"
+    },
+    {
+      "start": 1574.78,
+      "end": 1579.24,
+      "text": "hand to put the needle back in that plane. And when that's done properly, you get the"
+    },
+    {
+      "start": 1579.24,
+      "end": 1579.92,
+      "text": "gorgeous ultra"
+    },
+    {
+      "start": 1580.0,
+      "end": 1583.18,
+      "text": "image that you see on the right hand side here. With the needle going straight"
+    },
+    {
+      "start": 1583.18,
+      "end": 1586.48,
+      "text": "through the plane, you can tell exactly the trajectory, the speed at which it's"
+    },
+    {
+      "start": 1586.48,
+      "end": 1589.42,
+      "text": "approaching the vessel, and you'll be able to see all the things we talked about"
+    },
+    {
+      "start": 1589.42,
+      "end": 1589.8,
+      "text": "before."
+    },
+    {
+      "start": 1590.16,
+      "end": 1591.92,
+      "text": "seeing the needle tip, feeling the flash,"
+    },
+    {
+      "start": 1592.14,
+      "end": 1594.34,
+      "text": "seeing the flash of blood when you've entered the vessel."
+    },
+    {
+      "start": 1594.62,
+      "end": 1596.12,
+      "text": "So what do you see sonographically again?"
+    },
+    {
+      "start": 1596.16,
+      "end": 1599.1,
+      "text": "These are short axis views when the needle is about"
+    },
+    {
+      "start": 1599.1,
+      "end": 1599.92,
+      "text": "to get into the vessel."
+    },
+    {
+      "start": 1600.0,
+      "end": 1601.48,
+      "text": "So you're going to see some tenting at first."
+    },
+    {
+      "start": 1601.92,
+      "end": 1603.9,
+      "text": "And on the left-hand side here, we see an example"
+    },
+    {
+      "start": 1603.9,
+      "end": 1607.38,
+      "text": "of the anterior aspect, the superficial aspect"
+    },
+    {
+      "start": 1607.38,
+      "end": 1609.32,
+      "text": "of the vein tenting down."
+    },
+    {
+      "start": 1609.62,
+      "end": 1609.98,
+      "text": "Even though."
+    },
+    {
+      "start": 1610.0,
+      "end": 1611.0,
+      "text": "So that needle is really sharp."
+    },
+    {
+      "start": 1611.52,
+      "end": 1616.3,
+      "text": "The vein is so dynamic and distensible and stretchy that you can really press it down."
+    },
+    {
+      "start": 1616.76,
+      "end": 1619.98,
+      "text": "So when you start to see this image on the left, give the needle a quick..."
+    },
+    {
+      "start": 1620.13,
+      "end": 1624.46,
+      "text": "jab forwards and you may have been trained like I did that you wouldn't place a needle"
+    },
+    {
+      "start": 1624.46,
+      "end": 1628.2,
+      "text": "in the central venous system really, really slowly because you can just puncture through"
+    },
+    {
+      "start": 1628.2,
+      "end": 1629.9,
+      "text": "the vein like that old magician trick."
+    },
+    {
+      "start": 1630.03,
+      "end": 1635.27,
+      "text": "sticking a needle through a balloon without popping it. So instead I was taught to give it, you know,"
+    },
+    {
+      "start": 1635.39,
+      "end": 1639.89,
+      "text": "straight movements. You want to move along the path of the needle and don't go side to side, but straight"
+    },
+    {
+      "start": 1640.0,
+      "end": 1644.26,
+      "text": "in, in little quick jabs, so you can just pop through the vessel wall when you encounter"
+    },
+    {
+      "start": 1644.26,
+      "end": 1644.54,
+      "text": "it."
+    },
+    {
+      "start": 1645.04,
+      "end": 1649.18,
+      "text": "And that seemed a little strange to me at first, but when I started using ultrasound and"
+    },
+    {
+      "start": 1649.18,
+      "end": 1649.98,
+      "text": "I can visualize the..."
+    },
+    {
+      "start": 1650.0,
+      "end": 1651.98,
+      "text": "is tenting, it made a lot more sense to me."
+    },
+    {
+      "start": 1652.28,
+      "end": 1654.18,
+      "text": "Because if you go really slowly,"
+    },
+    {
+      "start": 1654.62,
+      "end": 1657.54,
+      "text": "you can compress the vein right down onto itself."
+    },
+    {
+      "start": 1657.94,
+      "end": 1659.92,
+      "text": "So that the anterior and posterior walls of the vessel"
+    },
+    {
+      "start": 1660.0,
+      "end": 1662.4,
+      "text": "or touching each other and then often behind it"
+    },
+    {
+      "start": 1662.4,
+      "end": 1665.74,
+      "text": "as in this image on the left, you'll see the artery."
+    },
+    {
+      "start": 1666.36,
+      "end": 1669.62,
+      "text": "So sometimes the only time that you'll pop through the entire vein"
+    },
+    {
+      "start": 1670.0,
+      "end": 1671.28,
+      "text": "is when you've popped the anterior wall,"
+    },
+    {
+      "start": 1671.4,
+      "end": 1673.08,
+      "text": "the posterior wall into the artery,"
+    },
+    {
+      "start": 1673.08,
+      "end": 1674.36,
+      "text": "and we certainly want to avoid that."
+    },
+    {
+      "start": 1674.8,
+      "end": 1676.9,
+      "text": "So as soon as you see tinting on ultrasound,"
+    },
+    {
+      "start": 1677.54,
+      "end": 1678.94,
+      "text": "give it a quick jab and you avoid that."
+    },
+    {
+      "start": 1680.16,
+      "end": 1684.57,
+      "text": "On the right-hand side, we can see the needle as it is in the vessel."
+    },
+    {
+      "start": 1684.77,
+      "end": 1685.59,
+      "text": "There's the tip of the needle."
+    },
+    {
+      "start": 1686.07,
+      "end": 1689.87,
+      "text": "Bright white needle itself right there in the little circle part."
+    },
+    {
+      "start": 1690.29,
+      "end": 1692.01,
+      "text": "And then we see some reverberation artifact"
+    },
+    {
+      "start": 1692.01,
+      "end": 1694.61,
+      "text": "ring down coming from behind it distally."
+    },
+    {
+      "start": 1695.19,
+      "end": 1696.95,
+      "text": "So that's, again, the typical appearance"
+    },
+    {
+      "start": 1696.95,
+      "end": 1699.97,
+      "text": "that a metal object like a needle will"
+    },
+    {
+      "start": 1700.0,
+      "end": 1701.66,
+      "text": "or a wire is going to have on ultrasound."
+    },
+    {
+      "start": 1703.56,
+      "end": 1704.62,
+      "text": "So let's take a look at positioning."
+    },
+    {
+      "start": 1704.68,
+      "end": 1707.28,
+      "text": "I mentioned earlier that the patient positioning"
+    },
+    {
+      "start": 1707.28,
+      "end": 1709.2,
+      "text": "is not only going to make a big difference,"
+    },
+    {
+      "start": 1709.34,
+      "end": 1709.88,
+      "text": "but it may vary."
+    },
+    {
+      "start": 1710.03,
+      "end": 1711.19,
+      "text": "from patient A to patient B."
+    },
+    {
+      "start": 1711.63,
+      "end": 1713.45,
+      "text": "So here's a patient laying down flat"
+    },
+    {
+      "start": 1713.45,
+      "end": 1716.17,
+      "text": "and we can see their sternocleid amastoid muscle"
+    },
+    {
+      "start": 1716.17,
+      "end": 1718.75,
+      "text": "just deep to the skin and soft tissue up here."
+    },
+    {
+      "start": 1719.11,
+      "end": 1719.97,
+      "text": "And we see their..."
+    },
+    {
+      "start": 1720.0,
+      "end": 1724.97,
+      "text": "internal jugular vein and where's their IJ? So we put them into a little bit of"
+    },
+    {
+      "start": 1724.97,
+      "end": 1729.25,
+      "text": "Trindelenberg and a bit more and a bit more and all of a sudden their IJ's"
+    },
+    {
+      "start": 1729.25,
+      "end": 1729.97,
+      "text": "plane is day and"
+    },
+    {
+      "start": 1730.0,
+      "end": 1731.98,
+      "text": "a nice big target for us to hit with the needle."
+    },
+    {
+      "start": 1732.56,
+      "end": 1734.52,
+      "text": "So Valsalva can accomplish this."
+    },
+    {
+      "start": 1734.68,
+      "end": 1737.16,
+      "text": "Sometimes turning the head can change the appearance"
+    },
+    {
+      "start": 1737.16,
+      "end": 1738.44,
+      "text": "of the IJ very dramatically."
+    },
+    {
+      "start": 1738.98,
+      "end": 1739.98,
+      "text": "Sometimes moving your..."
+    },
+    {
+      "start": 1740.03,
+      "end": 1744.13,
+      "text": "Probe a little more anterior or a little more lateral on the patient's neck, makes a big"
+    },
+    {
+      "start": 1744.13,
+      "end": 1746.85,
+      "text": "difference, and certainly Trindelenberg is always helpful."
+    },
+    {
+      "start": 1747.09,
+      "end": 1749.91,
+      "text": "So again, all these little tips and tricks that you've learned through the course"
+    },
+    {
+      "start": 1750.0,
+      "end": 1753.94,
+      "text": "of all your prior patients, you can now bring to bear very specifically to the specific"
+    },
+    {
+      "start": 1753.94,
+      "end": 1754.96,
+      "text": "anatomy of your patient."
+    },
+    {
+      "start": 1757.73,
+      "end": 1759.87,
+      "text": "Ultrasound guidance has been described in"
+    },
+    {
+      "start": 1760.1,
+      "end": 1764.14,
+      "text": "the subclavian vein cannulation as well."
+    },
+    {
+      "start": 1764.34,
+      "end": 1767.12,
+      "text": "It's a little bit trickier because as we see demonstrated here,"
+    },
+    {
+      "start": 1767.36,
+      "end": 1769.9,
+      "text": "the port of the subclavian"
+    },
+    {
+      "start": 1770.0,
+      "end": 1774.44,
+      "text": "vessel that you would like to cannulate lies beneath the clavicle so the"
+    },
+    {
+      "start": 1774.44,
+      "end": 1779.48,
+      "text": "clavicle can cause some shadowing and get in the way of of cannulating the"
+    },
+    {
+      "start": 1780.52,
+      "end": 1785.24,
+      "text": "subclavian vein. So some authors have described using a longitudinal approach with the probe"
+    },
+    {
+      "start": 1785.24,
+      "end": 1788.94,
+      "text": "held above the clavicle. Some people have described a longitudinal approach with the probe"
+    },
+    {
+      "start": 1788.94,
+      "end": 1789.98,
+      "text": "held below the clavicle."
+    },
+    {
+      "start": 1790.06,
+      "end": 1794.3,
+      "text": "some people have described using an approach that's much more lateral than you"
+    },
+    {
+      "start": 1794.3,
+      "end": 1798.42,
+      "text": "normally would go. So maybe out here where you can see the vessels, keeping in"
+    },
+    {
+      "start": 1798.42,
+      "end": 1799.9,
+      "text": "mind that the vessels are actually much deeper."
+    },
+    {
+      "start": 1800.0,
+      "end": 1803.14,
+      "text": "to the skin, then they are more medially."
+    },
+    {
+      "start": 1804.04,
+      "end": 1808.26,
+      "text": "So here, for example, we see from lateral to medial a sweep."
+    },
+    {
+      "start": 1808.5,
+      "end": 1809.97,
+      "text": "So starting lateral and..."
+    },
+    {
+      "start": 1810.0,
+      "end": 1816.61,
+      "text": "moving medial, we see the vein here on the left, the artery on the right, and as we move"
+    },
+    {
+      "start": 1816.61,
+      "end": 1819.83,
+      "text": "from lateral to medial, we see the clavicle."
+    },
+    {
+      "start": 1820.32,
+      "end": 1829.98,
+      "text": "beginning to obscure the image of the IJ. I'm sorry of the subclavian vein. So again there's a lot of different techniques"
+    },
+    {
+      "start": 1830.0,
+      "end": 1836.62,
+      "text": "that have been described. There's not as blatantly positive every article demonstrates how good"
+    },
+    {
+      "start": 1836.62,
+      "end": 1839.84,
+      "text": "this works, just like there is with the IJ. So what"
+    },
+    {
+      "start": 1840.0,
+      "end": 1845.84,
+      "text": "But some people recommend, and what I recommend is having a look at the subclavian vein"
+    },
+    {
+      "start": 1845.84,
+      "end": 1849.98,
+      "text": "with ultrasound, determining if ultrasound is going to help out."
+    },
+    {
+      "start": 1850.0,
+      "end": 1853.76,
+      "text": "with subplavian vein cannulation, and if it is, certainly use it, whether it's in a short"
+    },
+    {
+      "start": 1853.76,
+      "end": 1858.14,
+      "text": "access or a long access approach, and if it's not going to help you, either consider a landmark"
+    },
+    {
+      "start": 1858.14,
+      "end": 1859.98,
+      "text": "Mark, guided subclavian vein, if that's the-"
+    },
+    {
+      "start": 1860.0,
+      "end": 1863.42,
+      "text": "the one you need to do, or consider cannulating a different vessel."
+    },
+    {
+      "start": 1866.6,
+      "end": 1869.98,
+      "text": "Certainly, femoral vessels can be cannulated using..."
+    },
+    {
+      "start": 1870.03,
+      "end": 1877.39,
+      "text": "ultrasound as well, and remember the high complication rate with landmark assisted femoral vein"
+    },
+    {
+      "start": 1877.39,
+      "end": 1879.91,
+      "text": "cannulation, so we see the typical sort of"
+    },
+    {
+      "start": 1880.0,
+      "end": 1886.82,
+      "text": "the nerve out lateral artery and then vein being the most medial in the femoral triangle"
+    },
+    {
+      "start": 1886.82,
+      "end": 1887.12,
+      "text": "here."
+    },
+    {
+      "start": 1887.74,
+      "end": 1889.86,
+      "text": "And we can see an example of what this looks."
+    },
+    {
+      "start": 1890.0,
+      "end": 1893.84,
+      "text": "like around the level where you'd want to cannulate the common femoral vein, we can see"
+    },
+    {
+      "start": 1893.84,
+      "end": 1899.88,
+      "text": "the artery, the vein, and then the takeoff of the saffonous vein coming off here as"
+    },
+    {
+      "start": 1900.0,
+      "end": 1905.54,
+      "text": "Well, keep in mind that when you can relate the femoral vein, you really need to be very"
+    },
+    {
+      "start": 1905.54,
+      "end": 1906.6,
+      "text": "close to the ingrownal ligament."
+    },
+    {
+      "start": 1907.0,
+      "end": 1909.98,
+      "text": "Some people rightly concerned about..."
+    },
+    {
+      "start": 1910.1,
+      "end": 1912.7,
+      "text": "causing a complication of a retroperitonial hematoma,"
+    },
+    {
+      "start": 1913.06,
+      "end": 1916.32,
+      "text": "give the inwindal ligament a wide berth"
+    },
+    {
+      "start": 1916.32,
+      "end": 1917.64,
+      "text": "and the difficulty is there."
+    },
+    {
+      "start": 1918.0,
+      "end": 1919.14,
+      "text": "When you're close to the inwindal ligament,"
+    },
+    {
+      "start": 1919.42,
+      "end": 1919.9,
+      "text": "you see anatomy."
+    },
+    {
+      "start": 1920.0,
+      "end": 1924.72,
+      "text": "like you see here on the screen and there's a nice big femoral vein and it's got a very"
+    },
+    {
+      "start": 1924.72,
+      "end": 1926.82,
+      "text": "good anatomic relationship with the artery."
+    },
+    {
+      "start": 1926.82,
+      "end": 1929.7,
+      "text": "And the further away from the Inglinal, the..."
+    },
+    {
+      "start": 1930.0,
+      "end": 1933.26,
+      "text": "argument that you get, the more distal that you get, even just by a couple of centimeters,"
+    },
+    {
+      "start": 1933.78,
+      "end": 1937.64,
+      "text": "the artery bifurcates, the vein bifurcates, and instead of being two structures that are"
+    },
+    {
+      "start": 1937.64,
+      "end": 1939.66,
+      "text": "next to each other, they become four structures."
+    },
+    {
+      "start": 1940.0,
+      "end": 1941.54,
+      "text": "that start square dancing around each other."
+    },
+    {
+      "start": 1942.02,
+      "end": 1944.12,
+      "text": "And if you start looking at patient's anatomy,"
+    },
+    {
+      "start": 1944.66,
+      "end": 1947.04,
+      "text": "patient after patient, you'll see a great variability"
+    },
+    {
+      "start": 1947.44,
+      "end": 1949.04,
+      "text": "in the location of the arteries and veins,"
+    },
+    {
+      "start": 1949.26,
+      "end": 1949.98,
+      "text": "even just an inch."
+    },
+    {
+      "start": 1950.64,
+      "end": 1954.66,
+      "text": "distal to the anguinal crease. So it might make you rethink the confidence that"
+    },
+    {
+      "start": 1954.66,
+      "end": 1958.36,
+      "text": "you have in placing these code lines or in placing a non-ultra-sound guided"
+    },
+    {
+      "start": 1958.36,
+      "end": 1959.98,
+      "text": "femoral line just because in"
+    },
+    {
+      "start": 1960.0,
+      "end": 1963.6,
+      "text": "Interns have traditionally used that line, doesn't mean it's an easier or better line."
+    },
+    {
+      "start": 1963.78,
+      "end": 1969.24,
+      "text": "There are still a lot of complications in using a femoral vein, so ultrasound can help out."
+    },
+    {
+      "start": 1970.67,
+      "end": 1972.93,
+      "text": "So here's an example of the ultrasound screen"
+    },
+    {
+      "start": 1972.93,
+      "end": 1974.39,
+      "text": "when we're back at the IJ now."
+    },
+    {
+      "start": 1974.83,
+      "end": 1977.93,
+      "text": "And we see that as the needle comes into view,"
+    },
+    {
+      "start": 1978.27,
+      "end": 1979.97,
+      "text": "we follow it down to the IJ."
+    },
+    {
+      "start": 1980.0,
+      "end": 1984.06,
+      "text": "There it is, the interior aspect of the IJ, starting to tint in the skin, starting to"
+    },
+    {
+      "start": 1984.06,
+      "end": 1985.44,
+      "text": "tint in the interior wall of the vessel."
+    },
+    {
+      "start": 1985.84,
+      "end": 1988.08,
+      "text": "Give it a quick jab and now we are within the vessel."
+    },
+    {
+      "start": 1990.61,
+      "end": 1993.94,
+      "text": "So you can also demonstrate the guide wire here."
+    },
+    {
+      "start": 1994.06,
+      "end": 1995.26,
+      "text": "We're using a longitudinal view"
+    },
+    {
+      "start": 1995.26,
+      "end": 1996.82,
+      "text": "and the guide wire here,"
+    },
+    {
+      "start": 1996.82,
+      "end": 1999.66,
+      "text": "demonstrated as a bright white, very ecogenic."
+    },
+    {
+      "start": 2000.0,
+      "end": 2003.98,
+      "text": "structure within the vein and ideally you want to be able to make sure that you can see"
+    },
+    {
+      "start": 2003.98,
+      "end": 2008.18,
+      "text": "the J of the guide wire because you want to make sure that the entire guide wire is in"
+    },
+    {
+      "start": 2008.18,
+      "end": 2009.98,
+      "text": "the vein not just that the guide wire is"
+    },
+    {
+      "start": 2010.13,
+      "end": 2014.2,
+      "text": "passing through the vein on the way to the artery, and this reverberation or this ring"
+    },
+    {
+      "start": 2014.2,
+      "end": 2019.84,
+      "text": "down artifact that we see is due to the physics of ultrasound energy encounter."
+    },
+    {
+      "start": 2020.0,
+      "end": 2027.12,
+      "text": "metal, the metal will reflect multiple iterations of the ultrasound energy back."
+    },
+    {
+      "start": 2027.4,
+      "end": 2029.98,
+      "text": "Just like hitting a bell will cause it to ring."
+    },
+    {
+      "start": 2030.0,
+      "end": 2031.94,
+      "text": "as opposed to hitting a block of wood"
+    },
+    {
+      "start": 2031.94,
+      "end": 2033.02,
+      "text": "that doesn't cause it to resonate."
+    },
+    {
+      "start": 2035.45,
+      "end": 2037.41,
+      "text": "So there's another way that you can check"
+    },
+    {
+      "start": 2037.95,
+      "end": 2039.7,
+      "text": "aside from looking at the"
+    },
+    {
+      "start": 2040.1,
+      "end": 2047.86,
+      "text": "needle going into the vein, which is very helpful, watching the catheter or the wire go into"
+    },
+    {
+      "start": 2047.86,
+      "end": 2049.2,
+      "text": "the vein, which is also very helpful."
+    },
+    {
+      "start": 2049.7,
+      "end": 2049.98,
+      "text": "You can also..."
+    },
+    {
+      "start": 2050.0,
+      "end": 2052.92,
+      "text": "also look at the heart itself and demonstrate that your"
+    },
+    {
+      "start": 2054.12,
+      "end": 2055.72,
+      "text": "catheter is in the central venous system."
+    },
+    {
+      "start": 2056.2,
+      "end": 2059.0,
+      "text": "So one technique that has been described is called the bubble test."
+    },
+    {
+      "start": 2059.34,
+      "end": 2059.96,
+      "text": "And what you do..."
+    },
+    {
+      "start": 2060.0,
+      "end": 2066.87,
+      "text": "is you take a three to five CC syringe of normal sailing and you inject it rapidly through"
+    },
+    {
+      "start": 2066.87,
+      "end": 2069.93,
+      "text": "the brown port in the central Venus catheter."
+    },
+    {
+      "start": 2070.22,
+      "end": 2074.82,
+      "text": "whichever catheter you've got uh... inject uh... in the uh..."
+    },
+    {
+      "start": 2074.82,
+      "end": 2075.34,
+      "text": "hijack"
+    },
+    {
+      "start": 2075.72,
+      "end": 2078.08,
+      "text": "uh... this works in the subclavian as well obviously it won't work in the"
+    },
+    {
+      "start": 2078.08,
+      "end": 2079.56,
+      "text": "femoral cause too far away from the heart"
+    },
+    {
+      "start": 2080.06,
+      "end": 2081.38,
+      "text": "So, inject the saline rapidly."
+    },
+    {
+      "start": 2081.76,
+      "end": 2082.76,
+      "text": "You don't need to inject air,"
+    },
+    {
+      "start": 2082.9,
+      "end": 2083.82,
+      "text": "you don't need to shake it around"
+    },
+    {
+      "start": 2083.82,
+      "end": 2085.94,
+      "text": "just the speed of rapid injection"
+    },
+    {
+      "start": 2085.94,
+      "end": 2089.08,
+      "text": "is going to demonstrate some agitated saline"
+    },
+    {
+      "start": 2089.54,
+      "end": 2089.96,
+      "text": "and UV..."
+    },
+    {
+      "start": 2090.0,
+      "end": 2094.14,
+      "text": "either got micro bubbles or just agitated saline here causing turbulence, and you can"
+    },
+    {
+      "start": 2094.14,
+      "end": 2099.96,
+      "text": "see in this subzyphoid for a four chamber view of the heart, the right ventric..."
+    },
+    {
+      "start": 2100.0,
+      "end": 2106.0,
+      "text": "here and the right atrium there. And dressed after the injection now we can see all this agitated"
+    },
+    {
+      "start": 2106.0,
+      "end": 2109.98,
+      "text": "signaling going through the right heart which means that we've successfully cannula"
+    },
+    {
+      "start": 2110.0,
+      "end": 2112.44,
+      "text": "of the central venous system and not the arterial system."
+    },
+    {
+      "start": 2114.69,
+      "end": 2119.89,
+      "text": "So briefly, speak about peripheral IVs, and you can use a lot of the same technique."
+    },
+    {
+      "start": 2120.0,
+      "end": 2125.28,
+      "text": "that we've discussed for central venous access. We have a lot of patients that need access,"
+    },
+    {
+      "start": 2125.48,
+      "end": 2129.94,
+      "text": "they don't necessarily need central access, so placing a central line in a patient just because they"
+    },
+    {
+      "start": 2130.0,
+      "end": 2135.14,
+      "text": "EDI-V access, we might be able to give them a good peripheral line and serve them better,"
+    },
+    {
+      "start": 2135.34,
+      "end": 2137.76,
+      "text": "fewer complications for the provider and for the patient."
+    },
+    {
+      "start": 2138.02,
+      "end": 2139.98,
+      "text": "Certainly greater comfort, maybe a lot."
+    },
+    {
+      "start": 2140.0,
+      "end": 2144.8,
+      "text": "infection risk. So lots of patients fit into this category, patients who are"
+    },
+    {
+      "start": 2144.8,
+      "end": 2149.58,
+      "text": "quite gullipathic, patients who have IV drug use history and they've"
+    },
+    {
+      "start": 2150.16,
+      "end": 2151.76,
+      "text": "They've used up all their veins."
+    },
+    {
+      "start": 2152.26,
+      "end": 2155.04,
+      "text": "Or sometimes we need to leave central venous catheter sites"
+    },
+    {
+      "start": 2155.04,
+      "end": 2156.76,
+      "text": "intact for a patient who's about to undergo"
+    },
+    {
+      "start": 2157.48,
+      "end": 2159.94,
+      "text": "hemodialysis, vascular surgery, chemotherm-"
+    },
+    {
+      "start": 2160.0,
+      "end": 2167.16,
+      "text": "or some other reason. So here's a great teamwork approach. Take a person who's"
+    },
+    {
+      "start": 2167.16,
+      "end": 2169.4,
+      "text": "really good at ultrasound in your department like you."
+    },
+    {
+      "start": 2170.0,
+      "end": 2173.94,
+      "text": "And take a person in your department who's really good at placing IVs like one of your"
+    },
+    {
+      "start": 2173.94,
+      "end": 2176.0,
+      "text": "nurses and put your skills together."
+    },
+    {
+      "start": 2176.42,
+      "end": 2179.98,
+      "text": "So the nurse places the IV, you hold the probe, demonstrate..."
+    },
+    {
+      "start": 2180.0,
+      "end": 2186.6,
+      "text": "the location of the vessel and let the nurse use all his or her finesse and experience"
+    },
+    {
+      "start": 2186.6,
+      "end": 2189.78,
+      "text": "placing IVs towards finding that IV."
+    },
+    {
+      "start": 2190.35,
+      "end": 2191.61,
+      "text": "So this setup is great."
+    },
+    {
+      "start": 2191.73,
+      "end": 2195.29,
+      "text": "It demonstrates fewer puncture attempts,"
+    },
+    {
+      "start": 2195.51,
+      "end": 2197.45,
+      "text": "just like many articles have shown"
+    },
+    {
+      "start": 2197.45,
+      "end": 2199.03,
+      "text": "in adult and pediatric populations."
+    },
+    {
+      "start": 2199.41,
+      "end": 2199.97,
+      "text": "So hopefully a patient-"
+    },
+    {
+      "start": 2200.0,
+      "end": 2201.1,
+      "text": "that's going to be more comfortable."
+    },
+    {
+      "start": 2201.68,
+      "end": 2204.94,
+      "text": "Nurses and doctors working together for a common goal"
+    },
+    {
+      "start": 2204.94,
+      "end": 2206.74,
+      "text": "of patient comfort and good patient care."
+    },
+    {
+      "start": 2206.96,
+      "end": 2209.94,
+      "text": "The only thing I don't love about this picture is the operation."
+    },
+    {
+      "start": 2210.0,
+      "end": 2214.04,
+      "text": "Both have the ultrasound machine in a place that's not really convenient where they can see it easily"
+    },
+    {
+      "start": 2214.04,
+      "end": 2219.93,
+      "text": "So they have to turn their necks around to see it. So there's a couple of named veins in the arm"
+    },
+    {
+      "start": 2220.0,
+      "end": 2227.2,
+      "text": "Those are good go-to veins when you meet it, but any vein in the anacubital fossa is fair game the intern vein in the forearm is fine"
+    },
+    {
+      "start": 2227.2,
+      "end": 2229.36,
+      "text": "I've used ultrasound to place lines in the"
+    },
+    {
+      "start": 2230.0,
+      "end": 2234.46,
+      "text": "dorsum of the hand as well. Basically you can use ultrasound to place anywhere there's"
+    },
+    {
+      "start": 2234.46,
+      "end": 2238.58,
+      "text": "a good line or anywhere there's a good vein is a good place to put a line."
+    },
+    {
+      "start": 2240.0,
+      "end": 2245.29,
+      "text": "And if you can't find anything else, looking in all your standard locations, go to the"
+    },
+    {
+      "start": 2245.29,
+      "end": 2249.85,
+      "text": "breakyle fossa, and there you will find the breakyle artery, the superficial and deep"
+    },
+    {
+      "start": 2250.0,
+      "end": 2253.28,
+      "text": "bachial veins, ideally you'll be able to find the bacillic vein as well."
+    },
+    {
+      "start": 2253.68,
+      "end": 2258.46,
+      "text": "The bacillic vein is preferred because it tends to be larger than the bachial veins, it tends"
+    },
+    {
+      "start": 2258.46,
+      "end": 2259.98,
+      "text": "to be more superficial and it..."
+    },
+    {
+      "start": 2260.03,
+      "end": 2262.07,
+      "text": "doesn't have nerves and arteries surrounding it,"
+    },
+    {
+      "start": 2262.13,
+      "end": 2263.47,
+      "text": "like the brachial veins do."
+    },
+    {
+      "start": 2264.69,
+      "end": 2266.25,
+      "text": "So here, for example,"
+    },
+    {
+      "start": 2268.03,
+      "end": 2269.9,
+      "text": "vessel number one."
+    },
+    {
+      "start": 2270.06,
+      "end": 2271.32,
+      "text": "is the brachial artery."
+    },
+    {
+      "start": 2271.68,
+      "end": 2273.44,
+      "text": "Numbers two and three are the superficial"
+    },
+    {
+      "start": 2273.44,
+      "end": 2275.08,
+      "text": "and deep brachial veins respectively."
+    },
+    {
+      "start": 2275.5,
+      "end": 2277.02,
+      "text": "And number four, all by itself,"
+    },
+    {
+      "start": 2277.16,
+      "end": 2279.38,
+      "text": "just waiting to be accangulated, is the bacillic pain."
+    },
+    {
+      "start": 2279.54,
+      "end": 2279.96,
+      "text": "So maybe the..."
+    },
+    {
+      "start": 2280.0,
+      "end": 2285.12,
+      "text": "choice in this particular case. So how can you tell the arteries from the veins with compression?"
+    },
+    {
+      "start": 2286.36,
+      "end": 2289.92,
+      "text": "Put a bit of pressure on the artery and it'll start to pulsate as the basilic"
+    },
+    {
+      "start": 2290.0,
+      "end": 2292.64,
+      "text": "as the brachial artery does here, BA in this picture."
+    },
+    {
+      "start": 2293.26,
+      "end": 2294.58,
+      "text": "And to the left and the right of it,"
+    },
+    {
+      "start": 2294.68,
+      "end": 2296.77,
+      "text": "we've got the superficial and deep brachial veins,"
+    },
+    {
+      "start": 2297.09,
+      "end": 2297.97,
+      "text": "so they're gonna collapse."
+    },
+    {
+      "start": 2298.68,
+      "end": 2299.82,
+      "text": "So again, a little bit of pressure."
+    },
+    {
+      "start": 2300.22,
+      "end": 2302.14,
+      "text": "veins will collapse a little bit more pressure."
+    },
+    {
+      "start": 2302.32,
+      "end": 2306.18,
+      "text": "The arteries are going to start to pulsate, so this way you can identify the arteries and"
+    },
+    {
+      "start": 2306.18,
+      "end": 2306.56,
+      "text": "the veins."
+    },
+    {
+      "start": 2307.81,
+      "end": 2309.79,
+      "text": "It also helps to highlight."
+    },
+    {
+      "start": 2310.13,
+      "end": 2313.27,
+      "text": "two aspects to this, two corollaries to this."
+    },
+    {
+      "start": 2313.67,
+      "end": 2315.79,
+      "text": "If you're putting too much pressure when you hold the probe,"
+    },
+    {
+      "start": 2316.29,
+      "end": 2317.99,
+      "text": "and a lot of people hold the probe with the same amount"
+    },
+    {
+      "start": 2317.99,
+      "end": 2319.97,
+      "text": "of pressure to look for veins as they would do..."
+    },
+    {
+      "start": 2320.0,
+      "end": 2324.26,
+      "text": "like a sub-cyphoid cardiac view. That requires a bit of probe pressure sometimes, looking"
+    },
+    {
+      "start": 2324.26,
+      "end": 2327.34,
+      "text": "at the heart. And if you put that same amount of pressure to look for veins, they're all"
+    },
+    {
+      "start": 2327.34,
+      "end": 2329.94,
+      "text": "going to be collapsed. You won't see them, especially the very..."
+    },
+    {
+      "start": 2330.0,
+      "end": 2332.62,
+      "text": "fragile and collapsible peripheral veins."
+    },
+    {
+      "start": 2333.24,
+      "end": 2336.76,
+      "text": "So just a little bit of pressure, just enough to make contact with the skin and you should"
+    },
+    {
+      "start": 2336.76,
+      "end": 2339.38,
+      "text": "see the veins nicely, so don't put too much pressure."
+    },
+    {
+      "start": 2340.1,
+      "end": 2343.38,
+      "text": "If you can't see any veins, put too much pressure."
+    },
+    {
+      "start": 2343.93,
+      "end": 2345.13,
+      "text": "So do the opposite of what I just said,"
+    },
+    {
+      "start": 2345.33,
+      "end": 2346.45,
+      "text": "deliberately put too much pressure,"
+    },
+    {
+      "start": 2346.75,
+      "end": 2348.25,
+      "text": "and look, instead of looking for veins,"
+    },
+    {
+      "start": 2348.55,
+      "end": 2349.45,
+      "text": "look for pulsations."
+    },
+    {
+      "start": 2350.26,
+      "end": 2352.16,
+      "text": "And when you start to see pulsations,"
+    },
+    {
+      "start": 2352.34,
+      "end": 2353.3,
+      "text": "you can hone in on those."
+    },
+    {
+      "start": 2353.86,
+      "end": 2355.36,
+      "text": "Once you see a pulsating artery,"
+    },
+    {
+      "start": 2356.0,
+      "end": 2358.4,
+      "text": "hold back the pressure to the minimal possible amount"
+    },
+    {
+      "start": 2358.4,
+      "end": 2359.8,
+      "text": "that you still have contact with the skin."
+    },
+    {
+      "start": 2360.26,
+      "end": 2362.56,
+      "text": "and typically right next to almost any artery in the body,"
+    },
+    {
+      "start": 2362.56,
+      "end": 2363.68,
+      "text": "there's going to be a vein."
+    },
+    {
+      "start": 2364.06,
+      "end": 2366.98,
+      "text": "So the vein will open up after you've used the pulsatility"
+    },
+    {
+      "start": 2366.98,
+      "end": 2368.58,
+      "text": "of the artery to find it to begin with."
+    },
+    {
+      "start": 2369.12,
+      "end": 2369.94,
+      "text": "So too much pressure."
+    },
+    {
+      "start": 2370.03,
+      "end": 2374.94,
+      "text": "prevents you from seeing a vein, and too much pressure can help you find a vein, depending on how you look at it."
+    },
+    {
+      "start": 2377.18,
+      "end": 2379.86,
+      "text": "So how's your setup? It's very similar to the setup"
+    },
+    {
+      "start": 2380.0,
+      "end": 2381.42,
+      "text": "for central venous access."
+    },
+    {
+      "start": 2381.76,
+      "end": 2384.46,
+      "text": "Make sure that you have the patient laying down"
+    },
+    {
+      "start": 2384.46,
+      "end": 2385.44,
+      "text": "in a comfortable position."
+    },
+    {
+      "start": 2385.72,
+      "end": 2387.6,
+      "text": "A lot of times, we're going into the upper arm,"
+    },
+    {
+      "start": 2387.9,
+      "end": 2389.98,
+      "text": "so have the patient scoot all the way to one's..."
+    },
+    {
+      "start": 2390.0,
+      "end": 2393.02,
+      "text": "side of the bed so that their arm can be extended on the other side of the bed"
+    },
+    {
+      "start": 2393.02,
+      "end": 2396.62,
+      "text": "next to them comfortably. If someone has to sit in a weird position with their arm"
+    },
+    {
+      "start": 2396.62,
+      "end": 2399.6,
+      "text": "up over their head or tilted a strange angle it's hard enough to hold that"
+    },
+    {
+      "start": 2399.6,
+      "end": 2399.86,
+      "text": "position"
+    },
+    {
+      "start": 2400.0,
+      "end": 2404.02,
+      "text": "in general, let alone when you've got a patient who's just sticking a needle into their"
+    },
+    {
+      "start": 2404.02,
+      "end": 2404.24,
+      "text": "arm."
+    },
+    {
+      "start": 2404.42,
+      "end": 2407.96,
+      "text": "So make sure the patient is comfortable as possible, and you can see your needle, you can"
+    },
+    {
+      "start": 2407.96,
+      "end": 2409.94,
+      "text": "see the patient, and you can see the ultrasound machine."
+    },
+    {
+      "start": 2410.0,
+      "end": 2410.52,
+      "text": "behind them."
+    },
+    {
+      "start": 2411.02,
+      "end": 2414.58,
+      "text": "Use a turn-to-kit just like you normally would do everything else just like you normally"
+    },
+    {
+      "start": 2414.58,
+      "end": 2419.68,
+      "text": "would with a peripheral IV meaning you need to still keep with a low angle."
+    },
+    {
+      "start": 2420.13,
+      "end": 2424.59,
+      "text": "lot of finesse, you can't make big jabbing motions, you can't get away with most peripheral"
+    },
+    {
+      "start": 2424.59,
+      "end": 2428.59,
+      "text": "veins with popping through the back wall and pulling back again, you have to treat peripheral"
+    },
+    {
+      "start": 2428.59,
+      "end": 2429.87,
+      "text": "veins with a bit of"
+    },
+    {
+      "start": 2430.06,
+      "end": 2432.56,
+      "text": "of gentleness, just like you normally would peripheral veins."
+    },
+    {
+      "start": 2433.84,
+      "end": 2436.46,
+      "text": "You also need to use the needle that's the right size."
+    },
+    {
+      "start": 2436.86,
+      "end": 2439.98,
+      "text": "So your angiocatheter is going to need to be longer if your vein is deep."
+    },
+    {
+      "start": 2440.0,
+      "end": 2445.96,
+      "text": "So, whatever company sells your regular IVs also sells longer ones."
+    },
+    {
+      "start": 2446.12,
+      "end": 2449.86,
+      "text": "So, if you're using ultrasound for intravenous access frequently, you're going to find that"
+    },
+    {
+      "start": 2450.0,
+      "end": 2453.46,
+      "text": "need to use veins that are more than half a centimeter deep, you're going to need to"
+    },
+    {
+      "start": 2453.46,
+      "end": 2455.48,
+      "text": "use a longer catheter to cannulate that."
+    },
+    {
+      "start": 2456.62,
+      "end": 2459.92,
+      "text": "So here my colleague and synagraphy are murdered."
+    },
+    {
+      "start": 2460.0,
+      "end": 2461.9,
+      "text": "C Physician Dave Raleigh's demonstrating technique."
+    },
+    {
+      "start": 2461.9,
+      "end": 2463.62,
+      "text": "He's actually using a long axis approach"
+    },
+    {
+      "start": 2463.62,
+      "end": 2468.2,
+      "text": "and calculating an upper extremity vein in this patient."
+    },
+    {
+      "start": 2468.22,
+      "end": 2469.68,
+      "text": "I believe he's doing the bacillic vein."
+    },
+    {
+      "start": 2470.45,
+      "end": 2473.29,
+      "text": "And we can see here, it's a bit all bright,"
+    },
+    {
+      "start": 2473.47,
+      "end": 2477.02,
+      "text": "but there is the vein horizontally running through"
+    },
+    {
+      "start": 2477.02,
+      "end": 2477.98,
+      "text": "the course of your screen."
+    },
+    {
+      "start": 2478.88,
+      "end": 2479.98,
+      "text": "And here we see..."
+    },
+    {
+      "start": 2480.0,
+      "end": 2483.64,
+      "text": "see the bevel of the needle just entering the vessel."
+    },
+    {
+      "start": 2483.8,
+      "end": 2486.8,
+      "text": "So this is really a gorgeous image here of the needle entering the vessel."
+    },
+    {
+      "start": 2486.8,
+      "end": 2489.9,
+      "text": "At this point, he would then thread the catheter over."
+    },
+    {
+      "start": 2490.0,
+      "end": 2495.49,
+      "text": "the needle. And there is an image of the catheter sitting inside that vessel in a patient"
+    },
+    {
+      "start": 2495.49,
+      "end": 2499.35,
+      "text": "that otherwise didn't have peripheral venous access, saving this patient from needing"
+    },
+    {
+      "start": 2499.35,
+      "end": 2499.97,
+      "text": "in the central line."
+    },
+    {
+      "start": 2501.44,
+      "end": 2503.04,
+      "text": "And it also brings up a very important thing."
+    },
+    {
+      "start": 2503.18,
+      "end": 2505.14,
+      "text": "It seems like nurses learn this in nursing school"
+    },
+    {
+      "start": 2505.14,
+      "end": 2507.32,
+      "text": "and doctors do not learn this in doctor school."
+    },
+    {
+      "start": 2507.72,
+      "end": 2509.98,
+      "text": "You can't just get to a vessel if you want."
+    },
+    {
+      "start": 2510.0,
+      "end": 2515.65,
+      "text": "to cannulate it. You need to have enough catheter actually sitting in the vein for it to"
+    },
+    {
+      "start": 2515.65,
+      "end": 2519.89,
+      "text": "be stable. So I think this comes from us cannulating central veins where"
+    },
+    {
+      "start": 2520.0,
+      "end": 2525.08,
+      "text": "If a millimeter worth of the bevel is inside the vein and you can get a J-wire into there all of a sudden"
+    },
+    {
+      "start": 2525.08,
+      "end": 2529.66,
+      "text": "You've got a good central line that stuff does not work with a peripheral IV if you get a peripheral"
+    },
+    {
+      "start": 2530.0,
+      "end": 2534.32,
+      "text": "and it just barely taps into the vein as soon as the patient sneezes, it pops out and"
+    },
+    {
+      "start": 2534.32,
+      "end": 2535.08,
+      "text": "you've blown your vessel."
+    },
+    {
+      "start": 2535.72,
+      "end": 2539.9,
+      "text": "So the two-thirds rule basically says you need to have two-thirds of the catheter in"
+    },
+    {
+      "start": 2540.0,
+      "end": 2543.12,
+      "text": "side of the vessel for it to be a stable usable catheter."
+    },
+    {
+      "start": 2544.29,
+      "end": 2549.77,
+      "text": "So here, from Dave Riley's example, we see that a third of the length of the catheter got"
+    },
+    {
+      "start": 2549.77,
+      "end": 2549.97,
+      "text": "you..."
+    },
+    {
+      "start": 2550.0,
+      "end": 2554.56,
+      "text": "down to the vessel, and two-thirds of the length of the catheter remain inside the vessel."
+    },
+    {
+      "start": 2554.86,
+      "end": 2557.08,
+      "text": "So that's a vessel that's going to survive the night."
+    },
+    {
+      "start": 2560.0,
+      "end": 2562.3,
+      "text": "A couple of pitfalls with this approach are things to keep in mind."
+    },
+    {
+      "start": 2562.6,
+      "end": 2565.4,
+      "text": "A lot of times we're going to be doing this in patients who have difficult venous access."
+    },
+    {
+      "start": 2565.76,
+      "end": 2569.78,
+      "text": "There are plenty of studies that demonstrate an over 90% success rate in placing peripheral"
+    },
+    {
+      "start": 2570.03,
+      "end": 2575.01,
+      "text": "IVs with a doc using ultrasound and these are in patients typically most of these studies"
+    },
+    {
+      "start": 2575.01,
+      "end": 2578.77,
+      "text": "where the patient had several failed attempts by experienced nurses."
+    },
+    {
+      "start": 2579.27,
+      "end": 2579.97,
+      "text": "So nurse can't get-"
+    },
+    {
+      "start": 2580.0,
+      "end": 2584.12,
+      "text": "line at all and all of a sudden use ultrasound and you've got a 90% chance of getting that"
+    },
+    {
+      "start": 2584.12,
+      "end": 2586.3,
+      "text": "line that really flips the odds in your favor."
+    },
+    {
+      "start": 2587.52,
+      "end": 2589.28,
+      "text": "Difficult veins are still difficult veins."
+    },
+    {
+      "start": 2589.28,
+      "end": 2589.98,
+      "text": "so ultra sound"
+    },
+    {
+      "start": 2590.0,
+      "end": 2593.16,
+      "text": "It can help you find a vein, but it can't help a vein stop it from rolling."
+    },
+    {
+      "start": 2593.38,
+      "end": 2599.5,
+      "text": "It's not going to stop a vein from collapsing when you go through the back wall and pull back"
+    },
+    {
+      "start": 2599.5,
+      "end": 2599.98,
+      "text": "through it again."
+    },
+    {
+      "start": 2600.0,
+      "end": 2605.86,
+      "text": "again, and it's not going to help you put a 16-EH needle into a 1-millimeter wide vessel."
+    },
+    {
+      "start": 2606.52,
+      "end": 2609.98,
+      "text": "So still, you need to use the same amount of finesse that you..."
+    },
+    {
+      "start": 2610.1,
+      "end": 2615.42,
+      "text": "with a peripheral IV. So you normally put peripheral IVs in at a very shallow angle."
+    },
+    {
+      "start": 2615.76,
+      "end": 2618.16,
+      "text": "You're not just because you have ultrasound, I'm gonna get away with putting an"
+    },
+    {
+      "start": 2618.16,
+      "end": 2619.98,
+      "text": "needle into a vein at 90 degrees."
+    },
+    {
+      "start": 2620.0,
+      "end": 2622.12,
+      "text": "and expecting that catheter is going to make that turn."
+    },
+    {
+      "start": 2622.68,
+      "end": 2625.5,
+      "text": "So use a lot of finesse, ask your nurses for help."
+    },
+    {
+      "start": 2626.71,
+      "end": 2627.69,
+      "text": "Use very little pressure."
+    },
+    {
+      "start": 2628.05,
+      "end": 2629.97,
+      "text": "Even the tiniest amount of pressure will love."
+    },
+    {
+      "start": 2630.0,
+      "end": 2634.32,
+      "text": "collapse the veins and make them very difficult to see. Deeper veins need longer catheters,"
+    },
+    {
+      "start": 2634.8,
+      "end": 2639.9,
+      "text": "and again, use impressibility. You don't need Doppler to tell the difference"
+    },
+    {
+      "start": 2640.03,
+      "end": 2640.99,
+      "text": "between the arteries and the veins,"
+    },
+    {
+      "start": 2640.99,
+      "end": 2642.95,
+      "text": "just to avoid arterial cannulation."
+    },
+    {
+      "start": 2644.13,
+      "end": 2646.15,
+      "text": "So thanks for your time."
+    },
+    {
+      "start": 2646.53,
+      "end": 2649.79,
+      "text": "Lots of extra tips and tricks, videos tutorial."
+    },
+    {
+      "start": 2650.0,
+      "end": 2659.34,
+      "text": "and news at sionim.us. Please visit our site, email us, contact us with any tips and thoughts, and thank you."
+    }
+  ]
+}

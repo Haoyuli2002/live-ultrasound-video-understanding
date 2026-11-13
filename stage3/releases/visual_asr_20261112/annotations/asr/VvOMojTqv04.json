@@ -1,0 +1,218 @@
+{
+  "video_id": "VvOMojTqv04",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/VvOMojTqv04/asr.txt",
+  "segments": [
+    {
+      "start": 0.38,
+      "end": 5.82,
+      "text": "For long ultrasound scanning, the idea is to try to interrogate as much of the chest as possible."
+    },
+    {
+      "start": 6.43,
+      "end": 10.71,
+      "text": "Therefore, divide each hemithorax or each chest into six zones."
+    },
+    {
+      "start": 11.76,
+      "end": 15.2,
+      "text": "The landmarks that we're going to use are our anterior axillary line"
+    },
+    {
+      "start": 15.2,
+      "end": 17.16,
+      "text": "and our posterior axillary line."
+    },
+    {
+      "start": 17.98,
+      "end": 21.08,
+      "text": "Essentially, that's going to delineate our anterior chest,"
+    },
+    {
+      "start": 21.56,
+      "end": 24.02,
+      "text": "our axillary chest and our posterior chest."
+    },
+    {
+      "start": 24.98,
+      "end": 29.26,
+      "text": "Each area is going to be divided into an upper and a lower zone,"
+    },
+    {
+      "start": 29.26,
+      "end": 34.08,
+      "text": "So, that basically provides us with six different scanning areas."
+    },
+    {
+      "start": 35.26,
+      "end": 42.24,
+      "text": "We're going to want to place the ultrasound probe with the marker pointed upwards in a vertical position in the mid-clivicular line."
+    },
+    {
+      "start": 43.08,
+      "end": 49.13,
+      "text": "So, our landmarks here are going to be our ribs. Our ribs are going to be hyper-echoic with black shadowing behind."
+    },
+    {
+      "start": 49.33,
+      "end": 51.41,
+      "text": "So, they're going to be bright and white with black shadowing behind."
+    },
+    {
+      "start": 52.31,
+      "end": 56.05,
+      "text": "We're interested in the bright hyper-echoic plural line in between."
+    },
+    {
+      "start": 56.05,
+      "end": 60.05,
+      "text": "It's going to have a shimmering movement as we visualize it."
+    },
+    {
+      "start": 60.75,
+      "end": 68.19,
+      "text": "You want to ensure that the scanning of the lung is performed to a perpendicular angle"
+    },
+    {
+      "start": 68.19,
+      "end": 70.59,
+      "text": "to the plural line to best visualize it."
+    },
+    {
+      "start": 72.51,
+      "end": 78.55,
+      "text": "Effectively want to visualize normal sliding at that line at multiple interspaces."
+    },
+    {
+      "start": 79.43,
+      "end": 85.38,
+      "text": "Normal aerated lung will have horizontally oriented reverberation lines called A lines"
+    },
+    {
+      "start": 85.38,
+      "end": 87.2,
+      "text": "that go deeper into the screen."
+    },
+    {
+      "start": 87.2,
+      "end": 94.23,
+      "text": "and that's essentially normal. So we'll start here up in the upper lung zone on"
+    },
+    {
+      "start": 94.23,
+      "end": 100.15,
+      "text": "this anterior aspect of the chest and we'll start scanning downwards. So we'll"
+    },
+    {
+      "start": 100.15,
+      "end": 107.87,
+      "text": "visualize another interspace. We'll visualize another interspace and we will"
+    },
+    {
+      "start": 107.87,
+      "end": 114.28,
+      "text": "slowly move down towards the lower field of the anterior lung until we get"
+    },
+    {
+      "start": 114.28,
+      "end": 124.67,
+      "text": "down to the liver. For visualizing the auxiliary area of the lung, we'll start at"
+    },
+    {
+      "start": 125.07,
+      "end": 130.67,
+      "text": "the liver in the interface, and the idea here is to visualize the diaphragm, which is the hyper-echoic"
+    },
+    {
+      "start": 130.67,
+      "end": 136.0,
+      "text": "brain curved line above the liver. Here you can angle the probe upwards or slide the probe upwards"
+    },
+    {
+      "start": 136.0,
+      "end": 141.34,
+      "text": "to identify if there's a plural effusion or not. In this case, there's not a plural effusion."
+    },
+    {
+      "start": 142.69,
+      "end": 148.25,
+      "text": "If there's no plural effusion, slide the probe upwards until you get visualization of your typical"
+    },
+    {
+      "start": 148.25,
+      "end": 155.4,
+      "text": "landmarks of the ribs and the plural line. Again, we see normal sliding. And to be more"
+    },
+    {
+      "start": 155.67,
+      "end": 162.56,
+      "text": "More comprehensive, continue scanning up towards the upper axillary aspect of the lung until"
+    },
+    {
+      "start": 163.66,
+      "end": 169.26,
+      "text": "you get right into the axilla and can't visualize any further."
+    },
+    {
+      "start": 171.96,
+      "end": 175.58,
+      "text": "So we can see, again, normal lung sliding with normal airlines."
+    },
+    {
+      "start": 176.86,
+      "end": 181.28,
+      "text": "At this point, to visualize the posterior chest, you would have the patient sit up."
+    },
+    {
+      "start": 182.62,
+      "end": 187.14,
+      "text": "Here in it's helpful to have the patient interlink rotate both arms or both shoulders to move"
+    },
+    {
+      "start": 187.14,
+      "end": 191.1,
+      "text": "the scapula off to the side laterally to expose more of the upper lung."
+    },
+    {
+      "start": 191.1,
+      "end": 201.99,
+      "text": "It's helpful to start low down and identify your liver that way you know that you are at"
+    },
+    {
+      "start": 201.99,
+      "end": 208.51,
+      "text": "the inferior lung edge and again we're going to slide upwards and look for our typical landmarks"
+    },
+    {
+      "start": 208.51,
+      "end": 211.31,
+      "text": "of our ribs with our plural line in between."
+    },
+    {
+      "start": 212.03,
+      "end": 216.69,
+      "text": "So again we can see normal sliding with a lines and you want to interrogate as much of"
+    },
+    {
+      "start": 216.69,
+      "end": 225.15,
+      "text": "the long as possible as you slide up towards the upper lung fields and again we see more"
+    },
+    {
+      "start": 225.29,
+      "end": 232.3,
+      "text": "normal lung and we're going to try to maintain our scanning approach to be perpendicular to"
+    },
+    {
+      "start": 232.3,
+      "end": 240.76,
+      "text": "the pleural line. So that's a reasonably comprehensive approach of looking at each hemithorax."
+    },
+    {
+      "start": 241.48,
+      "end": 245.2,
+      "text": "It's a typical six-zone approach that's described in the literature."
+    }
+  ]
+}

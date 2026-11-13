@@ -1,0 +1,693 @@
+{
+  "video_id": "fpFVHA_0md8",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/fpFVHA_0md8/asr.txt",
+  "segments": [
+    {
+      "start": 0.19,
+      "end": 2.09,
+      "text": "Hi, I'm Tom Cook, I'm an emergency physician,"
+    },
+    {
+      "start": 2.31,
+      "end": 4.19,
+      "text": "a practice in South Carolina with Prisma Health"
+    },
+    {
+      "start": 4.19,
+      "end": 5.55,
+      "text": "in the University of South Carolina."
+    },
+    {
+      "start": 6.42,
+      "end": 8.16,
+      "text": "And today we're gonna demonstrate how to place"
+    },
+    {
+      "start": 8.16,
+      "end": 9.84,
+      "text": "a peripheral intravenous catheter."
+    },
+    {
+      "start": 10.0,
+      "end": 15.65,
+      "text": "using ultrasound. There are basically three different techniques to do this. One of those is to"
+    },
+    {
+      "start": 15.65,
+      "end": 19.61,
+      "text": "use an out-of-plane approach. The other one is to use an in-plane approach."
+    },
+    {
+      "start": 20.32,
+      "end": 23.18,
+      "text": "But today we're going to demonstrate a combination of those two approaches."
+    },
+    {
+      "start": 23.4,
+      "end": 29.97,
+      "text": "We'll start out of plane, then readjust the transducer to go in plane, both for..."
+    },
+    {
+      "start": 30.0,
+      "end": 33.94,
+      "text": "we eventually advance the catheter into the vessel and secure it."
+    },
+    {
+      "start": 35.09,
+      "end": 39.55,
+      "text": "To begin with, we'll go ahead and place the patient's arm so that it's abducted and externally"
+    },
+    {
+      "start": 39.55,
+      "end": 39.97,
+      "text": "Rotate."
+    },
+    {
+      "start": 40.0,
+      "end": 44.22,
+      "text": "This exposes this side of the arm which has the vessels that were interested in"
+    },
+    {
+      "start": 45.04,
+      "end": 46.56,
+      "text": "And, of course, we'll apply a tourniquet."
+    },
+    {
+      "start": 53.3,
+      "end": 55.34,
+      "text": "Next, we're going to clean the skin."
+    },
+    {
+      "start": 59.48,
+      "end": 59.98,
+      "text": "This particular..."
+    },
+    {
+      "start": 60.0,
+      "end": 69.19,
+      "text": "Skin Cleaner has a die in it and it helps me understand"
+    },
+    {
+      "start": 70.61,
+      "end": 72.97,
+      "text": "what part of the skin is clean and what's not clean."
+    },
+    {
+      "start": 81.22,
+      "end": 84.76,
+      "text": "Then I'll take the transducer and clean the end of the transducer."
+    },
+    {
+      "start": 90.64,
+      "end": 97.31,
+      "text": "set it in a position so that I can't contaminate the tip. Some people prefer to put a sterile probe"
+    },
+    {
+      "start": 97.31,
+      "end": 99.97,
+      "text": "cover on that. I've found that..."
+    },
+    {
+      "start": 100.0,
+      "end": 101.38,
+      "text": "This works well for me."
+    },
+    {
+      "start": 101.84,
+      "end": 103.64,
+      "text": "There's really no difference"
+    },
+    {
+      "start": 104.03,
+      "end": 106.22,
+      "text": "in terms of the ability to perform the exam."
+    },
+    {
+      "start": 107.61,
+      "end": 109.97,
+      "text": "Next thing, we'll go ahead and take some sterile."
+    },
+    {
+      "start": 110.0,
+      "end": 119.96,
+      "text": "gel, place it on the area of the skin that we're going to examine. The next thing we're going"
+    },
+    {
+      "start": 120.03,
+      "end": 124.09,
+      "text": "to do is make sure that we're stabilized, so you'll notice I've got my hand and my arm"
+    },
+    {
+      "start": 124.09,
+      "end": 129.86,
+      "text": "stabilized on the bed, and I'm going to stabilize my other hand on whatever sort of this can"
+    },
+    {
+      "start": 130.0,
+      "end": 133.16,
+      "text": "at the time, it could be my leg, it could be some other structure."
+    },
+    {
+      "start": 133.68,
+      "end": 136.66,
+      "text": "But it's very important to stabilize your hands because you're moving in very, very precise"
+    },
+    {
+      "start": 136.66,
+      "end": 138.32,
+      "text": "ways to perform the procedure."
+    },
+    {
+      "start": 142.4,
+      "end": 144.54,
+      "text": "So we have several different targets here."
+    },
+    {
+      "start": 144.76,
+      "end": 146.44,
+      "text": "These are the brachial vessels here"
+    },
+    {
+      "start": 146.44,
+      "end": 148.12,
+      "text": "on the right side of the screen right here."
+    },
+    {
+      "start": 149.13,
+      "end": 149.91,
+      "text": "We can see."
+    },
+    {
+      "start": 150.0,
+      "end": 152.72,
+      "text": "if we can compress the artery pulsates"
+    },
+    {
+      "start": 152.72,
+      "end": 153.8,
+      "text": "now in the center of the screen."
+    },
+    {
+      "start": 154.0,
+      "end": 156.58,
+      "text": "And there are a couple of brachial veins there"
+    },
+    {
+      "start": 156.58,
+      "end": 157.72,
+      "text": "as well that we could cannulate."
+    },
+    {
+      "start": 158.56,
+      "end": 159.96,
+      "text": "But in this patient, we're gonna use this."
+    },
+    {
+      "start": 160.0,
+      "end": 161.94,
+      "text": "This blood vessel here, this is the basilic vein."
+    },
+    {
+      "start": 162.14,
+      "end": 164.24,
+      "text": "You can see it's pretty large in size."
+    },
+    {
+      "start": 164.92,
+      "end": 167.28,
+      "text": "You'll also notice that the superficial wall"
+    },
+    {
+      "start": 167.28,
+      "end": 169.7,
+      "text": "is somewhere around six millimeters."
+    },
+    {
+      "start": 170.0,
+      "end": 172.02,
+      "text": "below the surface of the skin."
+    },
+    {
+      "start": 175.05,
+      "end": 177.03,
+      "text": "Remove the transducer up and down the skin."
+    },
+    {
+      "start": 177.13,
+      "end": 179.88,
+      "text": "We can try and figure out the path of that vessel by"
+    },
+    {
+      "start": 179.88,
+      "end": 179.96,
+      "text": "I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry"
+    },
+    {
+      "start": 180.0,
+      "end": 182.43,
+      "text": "just making sure that it stays more or less"
+    },
+    {
+      "start": 182.43,
+      "end": 183.99,
+      "text": "in the center of the viewing field"
+    },
+    {
+      "start": 183.99,
+      "end": 185.8,
+      "text": "as we move up and down the skin."
+    },
+    {
+      "start": 187.61,
+      "end": 189.67,
+      "text": "If we look at it in the longitudinal aspect,"
+    },
+    {
+      "start": 190.35,
+      "end": 194.02,
+      "text": "we can see the vessel there and that'll become important"
+    },
+    {
+      "start": 194.02,
+      "end": 195.5,
+      "text": "as we get near the end of the procedure"
+    },
+    {
+      "start": 195.5,
+      "end": 197.58,
+      "text": "when we're getting ready to place the catheter."
+    },
+    {
+      "start": 200.0,
+      "end": 204.62,
+      "text": "The next thing that I do with most of my patients, but not everyone does, but I do is go"
+    },
+    {
+      "start": 204.62,
+      "end": 207.32,
+      "text": "ahead and anesthetize the skin where we're going to place the catheter."
+    },
+    {
+      "start": 208.64,
+      "end": 209.96,
+      "text": "I find that the patient's"
+    },
+    {
+      "start": 210.0,
+      "end": 217.8,
+      "text": "appreciate it. They also is the benefit that if the first attempt doesn't succeed and you have to"
+    },
+    {
+      "start": 217.8,
+      "end": 219.96,
+      "text": "to try again, the patient usually doesn't have to..."
+    },
+    {
+      "start": 220.0,
+      "end": 222.4,
+      "text": "to experience any discomfort with a second attempt."
+    },
+    {
+      "start": 225.28,
+      "end": 227.68,
+      "text": "So I'll go ahead and center the target in the screen."
+    },
+    {
+      "start": 228.02,
+      "end": 229.47,
+      "text": "I'm just gonna increase."
+    },
+    {
+      "start": 230.74,
+      "end": 233.12,
+      "text": "the magnification of that a little by decreasing the depth."
+    },
+    {
+      "start": 234.21,
+      "end": 236.59,
+      "text": "And you'll notice on the transducer there's a center mark."
+    },
+    {
+      "start": 237.37,
+      "end": 239.85,
+      "text": "And that center mark corresponds with the center of the screen."
+    },
+    {
+      "start": 240.0,
+      "end": 245.62,
+      "text": "So I'm going to use that right now, and I'm going to go ahead and stick the needle in."
+    },
+    {
+      "start": 245.72,
+      "end": 247.74,
+      "text": "You can see the needle tip there in the soft tissue."
+    },
+    {
+      "start": 248.28,
+      "end": 249.98,
+      "text": "I'm going to inject the..."
+    },
+    {
+      "start": 250.13,
+      "end": 255.04,
+      "text": "a little bit of anesthetic and right there,"
+    },
+    {
+      "start": 256.0,
+      "end": 257.64,
+      "text": "that should be numb in a minute or two."
+    },
+    {
+      "start": 259.06,
+      "end": 259.82,
+      "text": "The next thing we'll do,"
+    },
+    {
+      "start": 261.18,
+      "end": 269.48,
+      "text": "is get the catheter. The catheter, again, it's a longer catheter, it's a two and a half inch catheter, it, um..."
+    },
+    {
+      "start": 270.19,
+      "end": 275.23,
+      "text": "catheter over a needle setup. Some people make a point of placing the bevel up"
+    },
+    {
+      "start": 276.38,
+      "end": 279.84,
+      "text": "most of the time it doesn't make too much of a difference but I'll make sure that I do that in this"
+    },
+    {
+      "start": 280.0,
+      "end": 286.12,
+      "text": "Now, if you go back and look at the patient, you can see there's a nice little spot of blood"
+    },
+    {
+      "start": 286.12,
+      "end": 289.92,
+      "text": "where I anesthetized him, so this makes a nice little target for me."
+    },
+    {
+      "start": 290.0,
+      "end": 292.22,
+      "text": "to place the catheter need or break the skin,"
+    },
+    {
+      "start": 293.14,
+      "end": 294.34,
+      "text": "and if you look on the screen again,"
+    },
+    {
+      "start": 294.98,
+      "end": 297.1,
+      "text": "that little collection of LIDACANI injected"
+    },
+    {
+      "start": 297.1,
+      "end": 298.24,
+      "text": "is pretty much dissipated,"
+    },
+    {
+      "start": 298.34,
+      "end": 299.76,
+      "text": "so you've got a nice clean view there."
+    },
+    {
+      "start": 301.02,
+      "end": 303.02,
+      "text": "Now you'll notice I'm stabilizing my right hand."
+    },
+    {
+      "start": 304.42,
+      "end": 307.08,
+      "text": "I'm gonna go ahead and introduce the catheter into the skin."
+    },
+    {
+      "start": 307.9,
+      "end": 309.78,
+      "text": "And immediately you can kind of see the tip."
+    },
+    {
+      "start": 310.19,
+      "end": 314.83,
+      "text": "right there above the vessel, but I can advance it a little bit more and go ahead and"
+    },
+    {
+      "start": 314.83,
+      "end": 319.52,
+      "text": "can relate this vein, but for this situation I'm going to take my transducer."
+    },
+    {
+      "start": 320.0,
+      "end": 325.24,
+      "text": "I'm going to turn it and get a Longitumal view of the vessel."
+    },
+    {
+      "start": 327.5,
+      "end": 328.7,
+      "text": "Now, if you look on the left side of the screen,"
+    },
+    {
+      "start": 328.84,
+      "end": 329.7,
+      "text": "you can see that needle."
+    },
+    {
+      "start": 330.0,
+      "end": 332.36,
+      "text": "If I move the tip of the needle back and forth,"
+    },
+    {
+      "start": 332.36,
+      "end": 334.35,
+      "text": "it comes in and out of plane."
+    },
+    {
+      "start": 335.09,
+      "end": 337.61,
+      "text": "And the importance of understanding this"
+    },
+    {
+      "start": 337.61,
+      "end": 338.89,
+      "text": "is if you can't find the needle,"
+    },
+    {
+      "start": 339.03,
+      "end": 339.97,
+      "text": "just by moving it back in."
+    },
+    {
+      "start": 340.0,
+      "end": 347.6,
+      "text": "fourth it will fall into the signal and be picked up on screen the other thing"
+    },
+    {
+      "start": 347.6,
+      "end": 349.98,
+      "text": "you want to keep in mind is you'll notice my left hand"
+    },
+    {
+      "start": 350.0,
+      "end": 355.83,
+      "text": "never moves. I always keep the ultrasound signal on the target. I don't move the"
+    },
+    {
+      "start": 355.83,
+      "end": 359.49,
+      "text": "ultrasound signal to find the needle. I've moved the needle to..."
+    },
+    {
+      "start": 360.0,
+      "end": 365.14,
+      "text": "the signal. And that's a very important distinction when you're performing this"
+    },
+    {
+      "start": 365.14,
+      "end": 368.65,
+      "text": "procedure in the long axis or the in-plane view."
+    },
+    {
+      "start": 370.16,
+      "end": 371.46,
+      "text": "So I'll go ahead and advance the needle,"
+    },
+    {
+      "start": 371.66,
+      "end": 374.0,
+      "text": "making sure that I try and keep that tip in plain."
+    },
+    {
+      "start": 383.9,
+      "end": 386.08,
+      "text": "And now if you look, you can see that the needle"
+    },
+    {
+      "start": 386.08,
+      "end": 388.66,
+      "text": "is plainly in lumen of the vessel."
+    },
+    {
+      "start": 389.62,
+      "end": 389.96,
+      "text": "You can also..."
+    },
+    {
+      "start": 390.0,
+      "end": 397.96,
+      "text": "see there's some blood coming into the hub of the needle itself. I'm going to continue to advance"
+    },
+    {
+      "start": 397.96,
+      "end": 399.91,
+      "text": "until I just get down."
+    },
+    {
+      "start": 400.06,
+      "end": 401.84,
+      "text": "to about the back wall of that vessel."
+    },
+    {
+      "start": 405.43,
+      "end": 406.25,
+      "text": "And you notice right here,"
+    },
+    {
+      "start": 406.47,
+      "end": 407.97,
+      "text": "it looks like it's sort of pointed down"
+    },
+    {
+      "start": 407.97,
+      "end": 409.45,
+      "text": "towards the deep wall of the vessel."
+    },
+    {
+      "start": 410.13,
+      "end": 411.99,
+      "text": "So I'm gonna change that trajectory just a little bit,"
+    },
+    {
+      "start": 412.13,
+      "end": 413.53,
+      "text": "lay it down just a little bit more."
+    },
+    {
+      "start": 415.07,
+      "end": 416.15,
+      "text": "And now I'm gonna go ahead,"
+    },
+    {
+      "start": 416.43,
+      "end": 419.3,
+      "text": "set my transducer down and advance the catheter."
+    },
+    {
+      "start": 419.62,
+      "end": 419.98,
+      "text": "It should..."
+    },
+    {
+      "start": 420.0,
+      "end": 427.1,
+      "text": "slide in nice and easy and when I remove the needle blood comes out of the end of the catheter"
+    },
+    {
+      "start": 427.1,
+      "end": 429.79,
+      "text": "Now I'm going to attach my flush."
+    },
+    {
+      "start": 431.95,
+      "end": 433.37,
+      "text": "I'll go ahead and flush the catheter."
+    },
+    {
+      "start": 434.35,
+      "end": 435.99,
+      "text": "Pull back just a little bit to make sure"
+    },
+    {
+      "start": 435.99,
+      "end": 439.9,
+      "text": "that I can get blood from the catheter."
+    },
+    {
+      "start": 440.0,
+      "end": 447.43,
+      "text": "If I need to do any laboratory studies, it also helps confirm placement, and then go ahead and flush the rest of the catheter with saline."
+    },
+    {
+      "start": 451.63,
+      "end": 459.33,
+      "text": "Now I've got these little 2x2s, I'm going to go ahead and clean this area up."
+    },
+    {
+      "start": 461.7,
+      "end": 463.64,
+      "text": "And again, because I've used a long catheter,"
+    },
+    {
+      "start": 464.96,
+      "end": 468.42,
+      "text": "this has gone a pretty decent way up into the vein."
+    },
+    {
+      "start": 469.68,
+      "end": 469.92,
+      "text": "And again,"
+    },
+    {
+      "start": 470.0,
+      "end": 475.47,
+      "text": "me the luxury of knowing that that catheter is not going to come out even though the vein"
+    },
+    {
+      "start": 476.08,
+      "end": 479.98,
+      "text": "is relatively deep under the skin compared to..."
+    },
+    {
+      "start": 480.38,
+      "end": 482.52,
+      "text": "what you would do with most peripheral catheters,"
+    },
+    {
+      "start": 483.13,
+      "end": 484.15,
+      "text": "not placed with ultrasound."
+    },
+    {
+      "start": 485.8,
+      "end": 487.24,
+      "text": "Then I'll go ahead and place my tegmenterm."
+    },
+    {
+      "start": 499.28,
+      "end": 499.98,
+      "text": "But now I have..."
+    },
+    {
+      "start": 500.0,
+      "end": 506.21,
+      "text": "fantastic catheter in place. I can get blood for laboratory studies. You can put"
+    },
+    {
+      "start": 506.21,
+      "end": 509.97,
+      "text": "all kinds of different solutions and medications through that. And most of the"
+    },
+    {
+      "start": 510.0,
+      "end": 513.84,
+      "text": "time that catheter can last for three or four days or the patient's entire mission if"
+    },
+    {
+      "start": 513.84,
+      "end": 515.08,
+      "text": "they're admitted to the hospital."
+    }
+  ]
+}

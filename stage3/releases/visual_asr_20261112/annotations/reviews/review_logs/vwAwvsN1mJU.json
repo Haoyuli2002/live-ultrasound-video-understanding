@@ -1,0 +1,91 @@
+{
+  "video_id": "vwAwvsN1mJU",
+  "reviewer": "stage3_b",
+  "review_scope": "Question-led review by Agent B of Agent A draft; not blind. Native full-frame sampled checkpoints and available time-indexed ASR; no continuous replay or direct listening claim.",
+  "reviewer_native_opened": [
+    490,
+    660,
+    830,
+    840,
+    930,
+    960,
+    961,
+    962,
+    963,
+    963.25,
+    963.5,
+    963.75,
+    964,
+    1010,
+    1011,
+    1012,
+    1013,
+    1014,
+    1015,
+    1016,
+    1017,
+    1017.25,
+    1017.5,
+    1017.75,
+    1018,
+    1025,
+    1035,
+    1036,
+    1037,
+    1038,
+    1039,
+    1040,
+    1041,
+    1042,
+    1043,
+    1044,
+    1045,
+    1046,
+    1046.25,
+    1046.5,
+    1046.75,
+    1047,
+    1047.25,
+    1047.5,
+    1048,
+    1060
+  ],
+  "tasks": [
+    {
+      "task_number": 1,
+      "findings": "Confirmed smallCVaboveSVandleftofclavicularshadow490. Immediateanswer.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_number": 2,
+      "findings": "Confirmed broad downward left trace versus sharp upward right trace660. Immediateanswer.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_number": 3,
+      "findings": "Advanced964to963.75 and specified marked compression endpoint;963.5gapstillappreciable, query960open.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_number": 4,
+      "findings": "Retained1018:1017.75onlysmallpatch,1018broadhorizontaldistributionwithdownwardextensiondespitemosaictransition. Recordededitingrisk.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_number": 5,
+      "findings": "Advanced1048to1046.75 as wipe already exposes several narrowupwardspikes;1046.5onlysinglepeak. Compared1025actualbroadmainlybelowtrace.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_number": 6,
+      "findings": "Confirmed brightcurvedboneandbroaddeepshadow830840930; historicalrelationretainedwithanatomicalshortcutrisk.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    }
+  ]
+}

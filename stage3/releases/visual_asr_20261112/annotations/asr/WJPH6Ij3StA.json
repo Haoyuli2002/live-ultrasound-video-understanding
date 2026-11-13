@@ -1,0 +1,508 @@
+{
+  "video_id": "WJPH6Ij3StA",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/WJPH6Ij3StA/asr.txt",
+  "segments": [
+    {
+      "start": 1.79,
+      "end": 9.94,
+      "text": "The Ilio Inglinal and Iliohype gastric nerves are easy."
+    },
+    {
+      "start": 10.0,
+      "end": 13.86,
+      "text": "easily blocking the lower abdomen and can be a simple and effective method for managing"
+    },
+    {
+      "start": 13.86,
+      "end": 17.2,
+      "text": "pain following ingral hernia repair and other related procedures."
+    },
+    {
+      "start": 17.98,
+      "end": 19.64,
+      "text": "In this video, we'll discuss the anatomy."
+    },
+    {
+      "start": 20.03,
+      "end": 24.23,
+      "text": "sonoeonatomy, indications, and technique for blocking these nerves, as well as offer some"
+    },
+    {
+      "start": 24.23,
+      "end": 25.09,
+      "text": "tips for success."
+    },
+    {
+      "start": 25.490000000000002,
+      "end": 29.83,
+      "text": "The Iliotangonal and Iliohepigastric nerves are derived from the lumbar plexus and while"
+    },
+    {
+      "start": 29.83,
+      "end": 29.97,
+      "text": "other."
+    },
+    {
+      "start": 30.1,
+      "end": 34.62,
+      "text": "The classic description has them originating from the L1 nerve root, plus or minus T12."
+    },
+    {
+      "start": 35.06,
+      "end": 39.1,
+      "text": "They do have a variable derivation, from as high as T11 down to L3."
+    },
+    {
+      "start": 40.0,
+      "end": 44.38,
+      "text": "Both nerves cross in front of the quadratus lambora muscle and win their way around the abdominal"
+    },
+    {
+      "start": 44.38,
+      "end": 49.26,
+      "text": "wall in the transverses of dominus plane, before piercing the internal and external oblique"
+    },
+    {
+      "start": 49.26,
+      "end": 49.980000000000004,
+      "text": "to innovate."
+    },
+    {
+      "start": 50.0,
+      "end": 55.33,
+      "text": "the skin and soft tissues of the super pubic region in the case of the Iliohype gastric or the"
+    },
+    {
+      "start": 55.33,
+      "end": 59.980000000000004,
+      "text": "ingonal region. Thank you Ilioh ingonal. The Iliohype gastric has a lateral brain"
+    },
+    {
+      "start": 60.0,
+      "end": 64.96,
+      "text": "it splits off early to innervate the skin over the gluteal muscles on the posterior lateral thigh."
+    },
+    {
+      "start": 65.79,
+      "end": 69.91,
+      "text": "When we think of the abdominal wall in the course of the nerves, this figure often comes to mind."
+    },
+    {
+      "start": 70.22,
+      "end": 72.38,
+      "text": "with the spinal nerve traveling in the top plane,"
+    },
+    {
+      "start": 72.66,
+      "end": 74.26,
+      "text": "giving off a lateral cutaneous branch,"
+    },
+    {
+      "start": 74.54,
+      "end": 77.2,
+      "text": "and then continuing on as the anterior cutaneous nerve"
+    },
+    {
+      "start": 77.2,
+      "end": 78.28,
+      "text": "to supply the midline."
+    },
+    {
+      "start": 78.97,
+      "end": 79.97,
+      "text": "It's as true for the spinal..."
+    },
+    {
+      "start": 80.0,
+      "end": 85.51,
+      "text": "nerves of T7 through T12. The L1 nerve, or the named branches that we're talking about"
+    },
+    {
+      "start": 85.51,
+      "end": 89.97,
+      "text": "here, take a slightly different course. Starting in the tap plane, they pierce..."
+    },
+    {
+      "start": 90.0,
+      "end": 95.2,
+      "text": "first the internal, then external oblique, without entering the rectus muscle. Because of this,"
+    },
+    {
+      "start": 95.42,
+      "end": 99.66,
+      "text": "we sometimes image the nerves in the plane between internal and transversus, or"
+    },
+    {
+      "start": 100.0,
+      "end": 101.18,
+      "text": "between the two oblique muscles,"
+    },
+    {
+      "start": 101.4,
+      "end": 104.0,
+      "text": "depending on the anatomical variation and the pro-position."
+    },
+    {
+      "start": 104.53,
+      "end": 106.39,
+      "text": "Here's the sensory distribution you can expect"
+    },
+    {
+      "start": 106.39,
+      "end": 107.85,
+      "text": "with blockade of these two nerves."
+    },
+    {
+      "start": 108.58,
+      "end": 109.88,
+      "text": "The Iliohypogasic nerve, inner..."
+    },
+    {
+      "start": 110.0,
+      "end": 113.96,
+      "text": "invades the lower abdomen below the subcausal nerve, as well as the skin and the posterior"
+    },
+    {
+      "start": 113.96,
+      "end": 114.72,
+      "text": "lateral thigh."
+    },
+    {
+      "start": 115.54,
+      "end": 119.36,
+      "text": "The ilio-inguinal nerve supplies the skin and soft tissues over the inguinal ligament."
+    },
+    {
+      "start": 120.0,
+      "end": 124.96,
+      "text": "to the pubis, as well as a portion of the proximal medial thigh and a portion of the scrotum and"
+    },
+    {
+      "start": 124.96,
+      "end": 125.7,
+      "text": "lebi majora."
+    },
+    {
+      "start": 126.49,
+      "end": 129.47,
+      "text": "There are small branches that innovate the pubic synthesis from both nerves."
+    },
+    {
+      "start": 130.35,
+      "end": 134.57,
+      "text": "These blocks are useful adjuncts following Inguinal Herney repair and other procedures on"
+    },
+    {
+      "start": 134.57,
+      "end": 135.33,
+      "text": "the Inguinal region."
+    },
+    {
+      "start": 135.97,
+      "end": 139.89,
+      "text": "They're also useful for surgery involving the scrotum, such as Orchia pexae and resta-"
+    },
+    {
+      "start": 140.0,
+      "end": 144.18,
+      "text": "of hydrocealer varicoseal. There are some data showing that a phantom steel"
+    },
+    {
+      "start": 144.18,
+      "end": 148.22,
+      "text": "decision is covered by blockade of these nerves, but this is inconsistent, and a"
+    },
+    {
+      "start": 148.22,
+      "end": 149.9,
+      "text": "tap block is likely a better plan."
+    },
+    {
+      "start": 151.06,
+      "end": 155.5,
+      "text": "The linear probe is placed on the lower abdomen immediately medial to the anterior superior"
+    },
+    {
+      "start": 155.5,
+      "end": 156.4,
+      "text": "iliac spine."
+    },
+    {
+      "start": 156.4,
+      "end": 159.98,
+      "text": "In order to get the best view of the nerves, vessels, and muscles..."
+    },
+    {
+      "start": 160.0,
+      "end": 165.96,
+      "text": "The probe is rotated slightly so it's parallel to a line connecting the ASIS with the"
+    },
+    {
+      "start": 165.96,
+      "end": 166.52,
+      "text": "umbilicus."
+    },
+    {
+      "start": 167.68,
+      "end": 169.62,
+      "text": "This is a fairly shallow and simple block."
+    },
+    {
+      "start": 170.19,
+      "end": 171.65,
+      "text": "and the needle can be advanced in plane"
+    },
+    {
+      "start": 171.65,
+      "end": 173.57,
+      "text": "from either the lateral or medial side"
+    },
+    {
+      "start": 173.83,
+      "end": 175.49,
+      "text": "or brought down out of plane"
+    },
+    {
+      "start": 175.49,
+      "end": 176.77,
+      "text": "into the correct fascial plane."
+    },
+    {
+      "start": 177.54,
+      "end": 179.06,
+      "text": "Here's what we see on the ultrasound image,"
+    },
+    {
+      "start": 179.48,
+      "end": 179.94,
+      "text": "the ASI."
+    },
+    {
+      "start": 180.0,
+      "end": 184.87,
+      "text": "is lateral casting a large shadow. We see here the internal oblique and transversus muscles"
+    },
+    {
+      "start": 184.87,
+      "end": 189.98,
+      "text": "with peritoneum below. The ilio-inguinal and ilihypogastric nerves appear as high f-"
+    },
+    {
+      "start": 190.0,
+      "end": 195.26,
+      "text": "will coax circles within the inter-muscular plane. Note that not all that is dark"
+    },
+    {
+      "start": 195.26,
+      "end": 198.62,
+      "text": "and circular is a nerve. There are vessels that travel with the nerve as well,"
+    },
+    {
+      "start": 198.8,
+      "end": 199.98,
+      "text": "and it's worthwhile putting on the"
+    },
+    {
+      "start": 200.1,
+      "end": 205.41,
+      "text": "Doppler function to verify their position. Regardless, the goal of this block is to place"
+    },
+    {
+      "start": 205.41,
+      "end": 208.98,
+      "text": "just local anesthetic in this plane and peel apart the muscles."
+    },
+    {
+      "start": 210.54,
+      "end": 214.58,
+      "text": "Here we see the internal oblique transverses and the ASIS on the lateral side."
+    },
+    {
+      "start": 215.24,
+      "end": 218.3,
+      "text": "You can see the nerves and vessels appearing like three P's in a pod."
+    },
+    {
+      "start": 219.12,
+      "end": 219.74,
+      "text": "In this instance,"
+    },
+    {
+      "start": 220.16,
+      "end": 223.08,
+      "text": "We're gonna bring the needle in plane from medial to lateral."
+    },
+    {
+      "start": 224.0,
+      "end": 225.4,
+      "text": "The needle passes through the muscles"
+    },
+    {
+      "start": 225.4,
+      "end": 226.96,
+      "text": "and approaches the fascial plane"
+    },
+    {
+      "start": 226.96,
+      "end": 228.76,
+      "text": "beside the neurovascular structures."
+    },
+    {
+      "start": 232.05,
+      "end": 235.47,
+      "text": "A test injection shows a tip is still in the internal oblique."
+    },
+    {
+      "start": 236.12,
+      "end": 237.54,
+      "text": "We need to go one more click."
+    },
+    {
+      "start": 240.22,
+      "end": 249.98,
+      "text": "There we go. Now we see the local immediately next to the nerves pushing up the"
+    },
+    {
+      "start": 250.0,
+      "end": 251.02,
+      "text": "internal oblique muscle."
+    },
+    {
+      "start": 252.0,
+      "end": 254.1,
+      "text": "You can see how 10 mil spreads easily"
+    },
+    {
+      "start": 254.1,
+      "end": 256.62,
+      "text": "to cover all the possible anatomic variations"
+    },
+    {
+      "start": 257.08,
+      "end": 257.92,
+      "text": "within that plane."
+    },
+    {
+      "start": 259.68,
+      "end": 259.98,
+      "text": "And here's..."
+    },
+    {
+      "start": 260.0,
+      "end": 262.68,
+      "text": "some Ilio-Ingrinal and Iliohypagastric nerve block tips."
+    },
+    {
+      "start": 263.43,
+      "end": 265.47,
+      "text": "First, this is not a high volume block."
+    },
+    {
+      "start": 266.02,
+      "end": 267.74,
+      "text": "Pen mills is often enough in adults,"
+    },
+    {
+      "start": 267.9,
+      "end": 269.42,
+      "text": "and we rarely go beyond 15."
+    },
+    {
+      "start": 269.91,
+      "end": 269.97,
+      "text": "This."
+    },
+    {
+      "start": 270.0,
+      "end": 275.0,
+      "text": "This is a bread and butter technique for pediatrics, and the dosing there is 0.15 ml per"
+    },
+    {
+      "start": 275.0,
+      "end": 275.3,
+      "text": "kilo."
+    },
+    {
+      "start": 276.07,
+      "end": 279.97,
+      "text": "Next, in individuals with challenging belly contours, it's often helpful."
+    },
+    {
+      "start": 280.03,
+      "end": 284.73,
+      "text": "to start scanning at the tap position above the ASIS, identify the three muscles,"
+    },
+    {
+      "start": 285.33,
+      "end": 289.79,
+      "text": "and then slide immediately and inferiorly until the target nerves come into view."
+    },
+    {
+      "start": 290.67,
+      "end": 291.81,
+      "text": "Here we see the three tap muscles."
+    },
+    {
+      "start": 293.2,
+      "end": 295.32,
+      "text": "As we slide, the nerves become quite obvious."
+    },
+    {
+      "start": 295.58,
+      "end": 297.84,
+      "text": "And more importantly, it's clear which muscle layers"
+    },
+    {
+      "start": 297.84,
+      "end": 298.32,
+      "text": "are which."
+    },
+    {
+      "start": 299.6,
+      "end": 299.88,
+      "text": "And finally."
+    },
+    {
+      "start": 300.0,
+      "end": 302.06,
+      "text": "be careful about going too deep."
+    },
+    {
+      "start": 302.61,
+      "end": 305.39,
+      "text": "The iliacus muscle lies just below in lateral"
+    },
+    {
+      "start": 305.39,
+      "end": 307.27,
+      "text": "and an injection of local anaesthetic"
+    },
+    {
+      "start": 307.27,
+      "end": 309.79,
+      "text": "in the plane between this muscle and transversus."
+    },
+    {
+      "start": 310.35,
+      "end": 311.91,
+      "text": "and results in a femoral nerve block."
+    },
+    {
+      "start": 312.58,
+      "end": 314.44,
+      "text": "You lose style points when you have to send"
+    },
+    {
+      "start": 314.44,
+      "end": 317.26,
+      "text": "your ingotal herniate patient home with a neomobilizer."
+    },
+    {
+      "start": 317.6,
+      "end": 319.2,
+      "text": "So take care to identify those layers."
+    }
+  ]
+}

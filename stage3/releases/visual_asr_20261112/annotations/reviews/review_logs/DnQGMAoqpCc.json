@@ -1,0 +1,107 @@
+{
+  "video_id": "DnQGMAoqpCc",
+  "reviewer": "stage3_b",
+  "review_scope": "Question-led review by Agent B of Agent A draft; not blind. Native full-frame sampled checkpoints and available time-indexed ASR; no continuous replay or direct listening claim.",
+  "reviewer_native_opened": [
+    108,
+    120,
+    130,
+    130.5,
+    130.75,
+    131,
+    131.25,
+    131.5,
+    131.75,
+    132,
+    134,
+    136,
+    138,
+    139,
+    140,
+    140.5,
+    141,
+    142,
+    143,
+    144,
+    145,
+    570,
+    610,
+    1145,
+    1148,
+    1149,
+    1150,
+    1151,
+    1151.25,
+    1151.5,
+    1151.75,
+    1152,
+    1258,
+    1259,
+    1259.25,
+    1259.5,
+    1259.75,
+    1260,
+    1555,
+    1780,
+    1800,
+    1801,
+    1801.25,
+    1801.5,
+    1801.75,
+    1802,
+    1803,
+    1804,
+    1805,
+    1810
+  ],
+  "tasks": [
+    {
+      "task_index": 1,
+      "findings": "Original query140 already has approaching line; moved query120 before fluid example and answer130.5 first inspected line rather than falsely waiting145.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 2,
+      "findings": "Confirmed paired oblique echoes within cavities.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 3,
+      "findings": "Confirmed line over upper oval target and separate lower-left dark circle.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 4,
+      "findings": "Refined1152to1151.5 first adequate longer shaft; no firing or capture inference.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 5,
+      "findings": "Refined1260to1259.75 paired panel arrival.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 6,
+      "findings": "Confirmed broad dark gaps in both examples; no numerical safety conclusion.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 7,
+      "findings": "Confirmed first paired neck-vessel red circle right of irregular blue region at108/120.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 8,
+      "findings": "Moved1810to1801.5 first contrast panels; corrected lower focus to actual left-of-center mottled region instead of later bottom dark region.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    }
+  ]
+}

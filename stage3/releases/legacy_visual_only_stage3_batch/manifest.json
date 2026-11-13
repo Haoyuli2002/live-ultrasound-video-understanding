@@ -1,0 +1,71 @@
+{
+  "schema": "stage3_legacy_tasks_export_v1",
+  "status": "historical_tasks_not_current_training_release",
+  "source_collection": "stage3_batch",
+  "new_semantic_review": false,
+  "format": "QA tasks, not stage3.train decision rows",
+  "qa": {
+    "train": 165,
+    "eval": 40
+  },
+  "videos": {
+    "train": [
+      "-2RMojgpkuc",
+      "0WAV2h2N6MY",
+      "1mkHrVxdGNg",
+      "3MBmUFMoH7w",
+      "3X0o1-V1jtE",
+      "7zLJdQSOFvM",
+      "9vW1uo7mKDc",
+      "ClZOJGWUbKo",
+      "CzLE1i4NSoU",
+      "FgH5RWkhD0g",
+      "Flc8xS2foOU",
+      "IL4qqETpb0k",
+      "J9wzPBJ5vOI",
+      "JcCZBKSdIRk",
+      "Kzvw3WU-2Bs",
+      "LDIo6xQS7Hc",
+      "P3FoSFIrfQA",
+      "PxkSdSzUfGs",
+      "SC6ZAClF59c",
+      "VL1xLsq8OrA",
+      "VvOMojTqv04",
+      "YAbGN-bdugU",
+      "YOOoNT27Irg",
+      "YYcTdkP7xhs",
+      "Yzwk-sjdics",
+      "afUiMq0DSs4",
+      "d24sbly6szQ",
+      "e255Gus4v5Q",
+      "esQ4m2ZkdUI",
+      "i53LOORRHW8",
+      "ltEmNQ6yzi4",
+      "m9s5AD_lBkY",
+      "mvqvDk0N0w0",
+      "opBV0BtJ81M",
+      "oxR_3GAkQ6M",
+      "v-Wb_N98h1Q",
+      "vmmrjy1bhEc",
+      "vod2_bAvn2Y",
+      "wAABZF1aSO8",
+      "x1XR4AOi8q0"
+    ],
+    "eval": [
+      "AH8RcdMQMHA",
+      "IsJeMgxTFMU",
+      "VzgX9ihnmec",
+      "jO9qPNsmXfM",
+      "mtvIls5XQEE",
+      "oo0hPKdtFSQ",
+      "psvAcACvTcY",
+      "uA7DYKzcZLw",
+      "w8wc8-40F1E",
+      "ybVsUDamHQA"
+    ]
+  },
+  "files": {
+    "train_tasks.jsonl": "97c5177c27f31e30ab86694b460a110d814e72ac23a2af77e10d55eb4f91aa75",
+    "eval_tasks.jsonl": "4ff0bc73e63f7626cfde9f86143c66c51ba61173bbafd2465a90b066e93ef663"
+  }
+}

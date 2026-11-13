@@ -1,0 +1,693 @@
+{
+  "video_id": "4s0V-NMaUdg",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/4s0V-NMaUdg/asr.txt",
+  "segments": [
+    {
+      "start": 0.19,
+      "end": 6.15,
+      "text": "Welcome to the University of Washington, point-of-care ultrasound series module on ultrasound-guided vascular access."
+    },
+    {
+      "start": 6.89,
+      "end": 9.97,
+      "text": "Vascular access can be difficult when relying on surface and ed."
+    },
+    {
+      "start": 10.0,
+      "end": 16.42,
+      "text": "An ultrasound guidance may facilitate rapid and successful vascular access even in the most difficult scenarios."
+    },
+    {
+      "start": 17.62,
+      "end": 19.98,
+      "text": "Indications for using ultrasound to obtain..."
+    },
+    {
+      "start": 20.06,
+      "end": 24.24,
+      "text": "IV access, certainly include patients in whom several prior attempts without ultrasound"
+    },
+    {
+      "start": 24.24,
+      "end": 24.8,
+      "text": "have failed."
+    },
+    {
+      "start": 25.53,
+      "end": 29.97,
+      "text": "However, certain patient populations may be good candidates for first attempts at IVF."
+    },
+    {
+      "start": 30.0,
+      "end": 33.6,
+      "text": "using ultrasound to avoid delays and patient discomfort."
+    },
+    {
+      "start": 34.3,
+      "end": 37.28,
+      "text": "Examples are patients with the history of difficult IV access,"
+    },
+    {
+      "start": 38.0,
+      "end": 39.86,
+      "text": "whether it is due to injection drug abuse."
+    },
+    {
+      "start": 40.0,
+      "end": 45.86,
+      "text": "prior cannulation, scarring, and small vessels in pediatric patients, or in the case of"
+    },
+    {
+      "start": 45.86,
+      "end": 49.79,
+      "text": "volume depletion. The three focused questions for your initial"
+    },
+    {
+      "start": 50.0,
+      "end": 55.36,
+      "text": "ultrasound exam are where is the target vein and once you find the target"
+    },
+    {
+      "start": 55.36,
+      "end": 59.9,
+      "text": "vein is it patent and is the course of the vein straight enough to insert"
+    },
+    {
+      "start": 60.0,
+      "end": 66.06,
+      "text": "to catheter. While ultrasound can be used to guide venous access in any vein, there"
+    },
+    {
+      "start": 66.06,
+      "end": 69.74,
+      "text": "are a few established veins that are often accessed using ultrasound."
+    },
+    {
+      "start": 70.0,
+      "end": 76.65,
+      "text": "The cephalic vein has no associated artery and is therefore an ideal vessel."
+    },
+    {
+      "start": 77.82,
+      "end": 79.98,
+      "text": "The deep brachial veins run on the medial..."
+    },
+    {
+      "start": 80.0,
+      "end": 84.04,
+      "text": "upper arm in the supine position and do have an associated artery and nerve"
+    },
+    {
+      "start": 84.04,
+      "end": 89.68,
+      "text": "bundle, but these are easily avoided once identified using ultrasound. A linear"
+    },
+    {
+      "start": 89.68,
+      "end": 89.86,
+      "text": "or"
+    },
+    {
+      "start": 90.0,
+      "end": 95.86,
+      "text": "High frequency probe should be used for venous access to have a high resolution image of superficial structures."
+    },
+    {
+      "start": 96.38,
+      "end": 99.98,
+      "text": "A tegiderm, or op-site, may be applied to the probes"
+    },
+    {
+      "start": 100.0,
+      "end": 105.82,
+      "text": "surface to keep the procedure clean and sterile gel may be used on the outside of the probe."
+    },
+    {
+      "start": 106.72,
+      "end": 109.82,
+      "text": "This is considered a clean but not completely sterile procedure."
+    },
+    {
+      "start": 111.31,
+      "end": 116.67,
+      "text": "Before starting your ultrasound exam, take note of the probe marker and the corresponding dot or"
+    },
+    {
+      "start": 116.67,
+      "end": 117.41,
+      "text": "screen marker."
+    },
+    {
+      "start": 118.08,
+      "end": 119.96,
+      "text": "Apping on the side of the probe near the..."
+    },
+    {
+      "start": 120.0,
+      "end": 124.28,
+      "text": "The marker can help confirm if you are not sure which side the marker is located on."
+    },
+    {
+      "start": 125.22,
+      "end": 129.54,
+      "text": "The marker on the probe and the dot on the screen should be kept on the same side of the"
+    },
+    {
+      "start": 129.54,
+      "end": 129.94,
+      "text": "Operators."
+    },
+    {
+      "start": 130.0,
+      "end": 134.87,
+      "text": "line of sight at all times. Be sure to set up your ultrasound machine and"
+    },
+    {
+      "start": 134.87,
+      "end": 138.61,
+      "text": "patient's arm in your line of sight at all times so that you don't need to"
+    },
+    {
+      "start": 138.61,
+      "end": 139.97,
+      "text": "turn your head to see between the"
+    },
+    {
+      "start": 140.06,
+      "end": 142.64,
+      "text": "patient's arm, your catheter, and the screen."
+    },
+    {
+      "start": 143.68,
+      "end": 146.18,
+      "text": "Keep the probe marker turned towards the same side"
+    },
+    {
+      "start": 146.18,
+      "end": 147.32,
+      "text": "as the dot on the screen."
+    },
+    {
+      "start": 148.22,
+      "end": 149.98,
+      "text": "In this example, both the screen..."
+    },
+    {
+      "start": 150.0,
+      "end": 154.45,
+      "text": "marker and the probe marker are towards the patient's right side. Some"
+    },
+    {
+      "start": 154.45,
+      "end": 158.73,
+      "text": "providers prefer a seated position. When performing any procedure, it is"
+    },
+    {
+      "start": 158.73,
+      "end": 159.71,
+      "text": "important to be comfortable."
+    },
+    {
+      "start": 160.86,
+      "end": 166.38,
+      "text": "To find the target vein, first put up a tourniquet and then start scanning in the anacubital"
+    },
+    {
+      "start": 166.38,
+      "end": 168.58,
+      "text": "fossa and scan into the forearm."
+    },
+    {
+      "start": 170.0,
+      "end": 173.84,
+      "text": "And then scan up the medial arm to find the deeper, brachial, and cephalic veins."
+    },
+    {
+      "start": 175.22,
+      "end": 179.66,
+      "text": "A peripheral IV placed with ultrasound guidance can often be obtained in the anticubital"
+    },
+    {
+      "start": 179.66,
+      "end": 179.84,
+      "text": "fast."
+    },
+    {
+      "start": 180.0,
+      "end": 183.86,
+      "text": "and below, and does not always have to be in the deep brachial brains."
+    },
+    {
+      "start": 185.01,
+      "end": 189.97,
+      "text": "Confirm your vessel of interest is indeed a vein by noting a thin walled hypoaco-"
+    },
+    {
+      "start": 190.0,
+      "end": 195.79,
+      "text": "structure with no pulsatility. And then, confirm the vein is patent by compressing the vein,"
+    },
+    {
+      "start": 196.25,
+      "end": 199.97,
+      "text": "using pressure applied with the probe. If the vein is compressible..."
+    },
+    {
+      "start": 200.26,
+      "end": 206.02,
+      "text": "then it is patent. If you are unsure if the target vein is patent or if it is a vein at"
+    },
+    {
+      "start": 206.02,
+      "end": 209.98,
+      "text": "all, you may press the color button and move the box over the"
+    },
+    {
+      "start": 210.0,
+      "end": 214.74,
+      "text": "vessel of interest and look for color flow inside the structure to confirm that the vessel"
+    },
+    {
+      "start": 214.74,
+      "end": 215.22,
+      "text": "has flow."
+    },
+    {
+      "start": 216.06,
+      "end": 219.92,
+      "text": "Remember, red and blue simply mean towards or away from the probe."
+    },
+    {
+      "start": 220.0,
+      "end": 226.48,
+      "text": "respectively and do not signify an artery or a vein. Use the ultrasound to check the position"
+    },
+    {
+      "start": 226.48,
+      "end": 229.98,
+      "text": "of your target vein in relation to nearby structures such as"
+    },
+    {
+      "start": 230.06,
+      "end": 236.26,
+      "text": "arteries or nerves. Ideally, you will choose a vein that has a clear pathway from skin to the"
+    },
+    {
+      "start": 236.26,
+      "end": 239.86,
+      "text": "vessel surface, which is not near an artery or a nerve bundle."
+    },
+    {
+      "start": 240.86,
+      "end": 245.86,
+      "text": "Occasionally, clinicians fail to pass a catheter in a vein because despite getting a flash"
+    },
+    {
+      "start": 245.86,
+      "end": 249.92,
+      "text": "of blood, the vessel is too tortuous to allow passage of the plastic cap."
+    },
+    {
+      "start": 250.0,
+      "end": 256.66,
+      "text": "To avoid this, once you find the vessel of interest, scan up or approximately along the limb"
+    },
+    {
+      "start": 256.66,
+      "end": 259.5,
+      "text": "to ensure that the vein stays in the center of the screen."
+    },
+    {
+      "start": 260.1,
+      "end": 262.64,
+      "text": "and thus has a straight course for a few centimeters."
+    },
+    {
+      "start": 263.82,
+      "end": 265.82,
+      "text": "After you've identified the target vessel"
+    },
+    {
+      "start": 265.82,
+      "end": 269.15,
+      "text": "and confirmed patency, optimize your image using depth"
+    },
+    {
+      "start": 269.15,
+      "end": 269.91,
+      "text": "and gain a"
+    },
+    {
+      "start": 270.0,
+      "end": 275.94,
+      "text": "Adjustment. Use the gain button or dial to adjust the gain, such that the blood inside"
+    },
+    {
+      "start": 275.94,
+      "end": 279.98,
+      "text": "the vessel appears completely anechoic or black, and the ser..."
+    },
+    {
+      "start": 280.0,
+      "end": 286.05,
+      "text": "Tissue is gray. Use the centimeter markers on the right side of the screen to determine"
+    },
+    {
+      "start": 286.05,
+      "end": 289.83,
+      "text": "the depth of your vein of interest. Confirm that between the skin."
+    },
+    {
+      "start": 290.0,
+      "end": 295.02,
+      "text": "surface, and the vein, no important structures such as nerves or arteries exist in your"
+    },
+    {
+      "start": 295.02,
+      "end": 296.66,
+      "text": "plant path of needle puncture."
+    },
+    {
+      "start": 296.95,
+      "end": 299.97,
+      "text": "Use the depth button to adjust the depth such that"
+    },
+    {
+      "start": 300.03,
+      "end": 305.05,
+      "text": "The vessel of interest is in the lower portion of the screen and then use the calipers on"
+    },
+    {
+      "start": 305.05,
+      "end": 308.73,
+      "text": "the side of the screen to check how deep your vessel of interest is."
+    },
+    {
+      "start": 311.95,
+      "end": 316.89,
+      "text": "Depending on the depth of your vessel, use an appropriate length catheter of the desired"
+    },
+    {
+      "start": 316.89,
+      "end": 317.41,
+      "text": "caliber."
+    },
+    {
+      "start": 317.96,
+      "end": 319.98,
+      "text": "Brevestle's one centimeter or"
+    },
+    {
+      "start": 320.0,
+      "end": 324.56,
+      "text": "greater in depth, we strongly recommend use of a longer than standard catheter to avoid"
+    },
+    {
+      "start": 324.56,
+      "end": 326.02,
+      "text": "the catheter falling out."
+    },
+    {
+      "start": 327.01,
+      "end": 328.45,
+      "text": "Now, you are ready for puncture."
+    },
+    {
+      "start": 329.15,
+      "end": 329.97,
+      "text": "First, clean this..."
+    },
+    {
+      "start": 330.06,
+      "end": 335.14,
+      "text": "using chlorhexidine. Do not use alcohol as this will degrade the probe surface."
+    },
+    {
+      "start": 335.87,
+      "end": 339.87,
+      "text": "Have all your equipment nearby. Some patients may require a small"
+    },
+    {
+      "start": 340.03,
+      "end": 342.45,
+      "text": "dose of local anesthesia prior to puncture."
+    },
+    {
+      "start": 343.53,
+      "end": 349.01,
+      "text": "For the transverse approach, align the needle very close to the probe surface at a 45-degree"
+    },
+    {
+      "start": 349.01,
+      "end": 349.47,
+      "text": "angle."
+    },
+    {
+      "start": 350.03,
+      "end": 355.23,
+      "text": "needle tip directly abutting the center of the probe. Some probes have markers to denote"
+    },
+    {
+      "start": 355.23,
+      "end": 359.09,
+      "text": "this probe center line. However, you may just have to estimate this."
+    },
+    {
+      "start": 360.0,
+      "end": 364.72,
+      "text": "the needle at a 45 degree angle in the center of the probe with the vessel in the center"
+    },
+    {
+      "start": 364.72,
+      "end": 365.32,
+      "text": "of the screen."
+    },
+    {
+      "start": 366.43,
+      "end": 369.31,
+      "text": "Make sure not to touch the needle tip to the probe."
+    },
+    {
+      "start": 369.66,
+      "end": 369.98,
+      "text": "if you"
+    },
+    {
+      "start": 370.0,
+      "end": 372.24,
+      "text": "You are concerned you are not able to see the needle tip."
+    },
+    {
+      "start": 372.83,
+      "end": 377.29,
+      "text": "You may simply angle the probe slightly toward the needle to see the tip as it enters the"
+    },
+    {
+      "start": 377.29,
+      "end": 377.57,
+      "text": "skin."
+    },
+    {
+      "start": 378.11,
+      "end": 379.97,
+      "text": "Without risking touching the needle to..."
+    },
+    {
+      "start": 380.0,
+      "end": 386.2,
+      "text": "probe and contaminating it. The needle tip appears as a hypochoric bright white dot that you will"
+    },
+    {
+      "start": 386.2,
+      "end": 389.98,
+      "text": "need to follow closely as you insert. Because the needle tip may..."
+    },
+    {
+      "start": 390.0,
+      "end": 395.2,
+      "text": "up here exactly the same as an ultrasound cross section cut of any portion of the needle."
+    },
+    {
+      "start": 395.89,
+      "end": 399.97,
+      "text": "It is important to continue to move your probe proximally and follow the needle tip."
+    },
+    {
+      "start": 400.03,
+      "end": 405.93,
+      "text": "as it approaches the vessel. If you lose your needle tip, remove the needle almost to the surface"
+    },
+    {
+      "start": 405.93,
+      "end": 409.76,
+      "text": "and start again. Never advance the needle if you cannot visualize"
+    },
+    {
+      "start": 410.0,
+      "end": 412.32,
+      "text": "the tip of the needle on the ultrasound screen."
+    },
+    {
+      "start": 413.38,
+      "end": 418.74,
+      "text": "To use the long axis approach, find the vessel in short axis and twist the probe 90 degrees."
+    },
+    {
+      "start": 419.4,
+      "end": 419.96,
+      "text": "Once your..."
+    },
+    {
+      "start": 420.0,
+      "end": 424.46,
+      "text": "able to see the vessel in a long axis view, approach the center of the probe surface with"
+    },
+    {
+      "start": 424.46,
+      "end": 425.98,
+      "text": "the needle at 45 degrees."
+    },
+    {
+      "start": 425.98,
+      "end": 429.84,
+      "text": "when using the long axis approach."
+    },
+    {
+      "start": 430.0,
+      "end": 435.3,
+      "text": "it will be possible to see your needle tip and needle shaft at all times, and"
+    },
+    {
+      "start": 435.3,
+      "end": 439.97,
+      "text": "watch the approach to the vessel of interest. Gently fan your probe side to side."
+    },
+    {
+      "start": 440.0,
+      "end": 444.7,
+      "text": "if you lose visualization of your needle tip, needle shaft, or the vessel at any time."
+    },
+    {
+      "start": 445.28,
+      "end": 449.98,
+      "text": "Again, do not advance the needle if you do not see the entire needle tip and the"
+    },
+    {
+      "start": 450.0,
+      "end": 455.23,
+      "text": "vessel in the same picture. Once you are close to the vein, stop looking at the ultrasound"
+    },
+    {
+      "start": 455.23,
+      "end": 459.97,
+      "text": "screen and turn your attention to the catheter. Advanced very slowly and low..."
+    },
+    {
+      "start": 460.0,
+      "end": 467.19,
+      "text": "for a flash of blood in the catheter reservoir. Once the flash of blood appears, proceed as usual for"
+    },
+    {
+      "start": 467.19,
+      "end": 468.87,
+      "text": "Venus, catheter, insertion."
+    },
+    {
+      "start": 470.16,
+      "end": 474.74,
+      "text": "Some practitioners prefer a two-person technique to insert an ultrasound-guided catheter."
+    },
+    {
+      "start": 475.4,
+      "end": 479.56,
+      "text": "In this approach, the ultrasound operator looks at the screen and holds the probe."
+    },
+    {
+      "start": 480.0,
+      "end": 482.82,
+      "text": "and uses verbal cues to direct the catheter operator"
+    },
+    {
+      "start": 482.82,
+      "end": 485.28,
+      "text": "who is looking only at the catheter and patient."
+    },
+    {
+      "start": 485.94,
+      "end": 487.92,
+      "text": "Choose a comfortable position for the patient"
+    },
+    {
+      "start": 487.92,
+      "end": 488.8,
+      "text": "and the providers."
+    },
+    {
+      "start": 490.0,
+      "end": 496.98,
+      "text": "Accidental cannulation of an artery by confirming the vessel of interest is not pulsatile and compresses easily."
+    },
+    {
+      "start": 498.17,
+      "end": 499.97,
+      "text": "Avoid cannulation of a tortuous..."
+    },
+    {
+      "start": 500.03,
+      "end": 503.33,
+      "text": "vessel by following the vein's course prior to puncture."
+    },
+    {
+      "start": 504.42,
+      "end": 509.56,
+      "text": "And avoid cannulation of a thrombost vein by ensuring the vein is easily compressible"
+    },
+    {
+      "start": 509.56,
+      "end": 509.98,
+      "text": "Biff"
+    },
+    {
+      "start": 510.0,
+      "end": 517.35,
+      "text": "for a puncture. In summary, consider ultrasound guidance for peripheral venous access and patients"
+    },
+    {
+      "start": 517.35,
+      "end": 518.91,
+      "text": "with difficult IV access."
+    },
+    {
+      "start": 520.0,
+      "end": 526.45,
+      "text": "using the transverse or long axis approach, ensure patency and straight course of the vessel"
+    },
+    {
+      "start": 526.71,
+      "end": 527.85,
+      "text": "before puncture."
+    },
+    {
+      "start": 529.0,
+      "end": 529.86,
+      "text": "Follow your needle tip."
+    },
+    {
+      "start": 530.0,
+      "end": 535.68,
+      "text": "at all times, and enjoy increased success and patient satisfaction by using ultrasound"
+    },
+    {
+      "start": 535.68,
+      "end": 536.14,
+      "text": "guidance."
+    },
+    {
+      "start": 537.22,
+      "end": 539.98,
+      "text": "We would like to thank the Isis Center and Justin and"
+    }
+  ]
+}

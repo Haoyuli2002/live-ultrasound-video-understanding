@@ -1,0 +1,353 @@
+{
+  "video_id": "buTSag9xK6U",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/buTSag9xK6U/asr.txt",
+  "segments": [
+    {
+      "start": 15.34,
+      "end": 19.96,
+      "text": "Ultrasound guidance has been shown to improve patient safety and reduce the der-"
+    },
+    {
+      "start": 20.0,
+      "end": 23.56,
+      "text": "of many common inpatient and office-based procedures."
+    },
+    {
+      "start": 25.05,
+      "end": 29.77,
+      "text": "In this exercise, we will give an overview of three guided procedures that are routinely"
+    },
+    {
+      "start": 30.0,
+      "end": 32.32,
+      "text": "included in residency curricula,"
+    },
+    {
+      "start": 33.04,
+      "end": 34.019999999999996,
+      "text": "paracentesis,"
+    },
+    {
+      "start": 34.519999999999996,
+      "end": 35.68,
+      "text": "thoracentesis,"
+    },
+    {
+      "start": 35.68,
+      "end": 37.7,
+      "text": "and central venous line placement."
+    },
+    {
+      "start": 38.74,
+      "end": 39.84,
+      "text": "Two types of procedural"
+    },
+    {
+      "start": 40.0,
+      "end": 47.13,
+      "text": "Guidance can be performed. Static Guidance and Dynamic Guidance. Static Guidance involves"
+    },
+    {
+      "start": 47.13,
+      "end": 49.97,
+      "text": "using the ultrasound to visualize the error."
+    },
+    {
+      "start": 50.0,
+      "end": 55.519999999999996,
+      "text": "to be injected or aspirated so that the appropriate area for needle entry can be marked."
+    },
+    {
+      "start": 57.14,
+      "end": 59.78,
+      "text": "Then the procedure is performed in the usual blind"
+    },
+    {
+      "start": 60.0,
+      "end": 65.71,
+      "text": "fashion without additional ultrasound guidance. Dynamic ultrasound guidance"
+    },
+    {
+      "start": 65.71,
+      "end": 69.83,
+      "text": "involves using the ultrasound throughout the process. Directly visual"
+    },
+    {
+      "start": 70.0,
+      "end": 75.02,
+      "text": "utilizing the entry of the needle into the tissues all the way through into the target structure."
+    },
+    {
+      "start": 77.23,
+      "end": 79.89,
+      "text": "During ultrasound guided procedures, universals"
+    },
+    {
+      "start": 80.06,
+      "end": 86.67,
+      "text": "Serial precautions are implemented, standard paracentesis, thoracentesis, and central venous"
+    },
+    {
+      "start": 86.67,
+      "end": 88.28999999999999,
+      "text": "catheter kits are used."
+    },
+    {
+      "start": 90.0,
+      "end": 95.04,
+      "text": "guidance can be a valuable tool in clinical situations where smaller volume"
+    },
+    {
+      "start": 95.04,
+      "end": 99.89,
+      "text": "intraperitoneal free fluid is suspected. The patient should be"
+    },
+    {
+      "start": 100.03,
+      "end": 103.27,
+      "text": "positioned supine with the abdomen fully exposed."
+    },
+    {
+      "start": 104.66,
+      "end": 109.7,
+      "text": "The area to be aspirated may be visualized in the transverse or longitudinal plane."
+    },
+    {
+      "start": 110.38,
+      "end": 112.9,
+      "text": "using a low frequency curvilinear probe."
+    },
+    {
+      "start": 114.08,
+      "end": 116.2,
+      "text": "The preferred site for paracentesis"
+    },
+    {
+      "start": 116.2,
+      "end": 117.66,
+      "text": "is the right lower quadrant."
+    },
+    {
+      "start": 118.59,
+      "end": 119.97,
+      "text": "This avoids the liver and..."
+    },
+    {
+      "start": 120.03,
+      "end": 124.55,
+      "text": "spleen in the upper quadrants and the sigmoid colon in the left lower quadrant."
+    },
+    {
+      "start": 125.46,
+      "end": 129.97,
+      "text": "However, the entire abdomen should be quickly scanned to identify the largest..."
+    },
+    {
+      "start": 130.1,
+      "end": 131.9,
+      "text": "pocket available for aspiration."
+    },
+    {
+      "start": 133.84,
+      "end": 137.88,
+      "text": "Collections of acidic fluid will be seen as large anechoic areas."
+    },
+    {
+      "start": 138.92,
+      "end": 139.78,
+      "text": "If the fluid collection"
+    },
+    {
+      "start": 140.0,
+      "end": 145.28,
+      "text": "persons visualized are very small or are only present in the most dependent areas such as"
+    },
+    {
+      "start": 145.28,
+      "end": 149.84,
+      "text": "the pericolic gutters, then the procedure should not be attempted at the bedside."
+    },
+    {
+      "start": 152.4,
+      "end": 157.3,
+      "text": "The percussion technique of localizing plural effusion is not 100% reliable."
+    },
+    {
+      "start": 158.1,
+      "end": 159.94,
+      "text": "Ultrasound Guidance of Thoracin"
+    },
+    {
+      "start": 160.0,
+      "end": 164.85,
+      "text": "thesis results in an improved success rate while reducing the rate of complications."
+    },
+    {
+      "start": 166.21,
+      "end": 169.83,
+      "text": "A curvilinear low-frequency transducer is ideal for this"
+    },
+    {
+      "start": 170.0,
+      "end": 175.35,
+      "text": "procedure. The preferred position is to have the patient sitting upright, often leaning"
+    },
+    {
+      "start": 175.35,
+      "end": 179.8,
+      "text": "forward on a bedside table, but, attended or mechanical"
+    },
+    {
+      "start": 180.03,
+      "end": 184.89,
+      "text": "ventilated patients who cannot sit upright can be positioned supine with the head"
+    },
+    {
+      "start": 184.89,
+      "end": 189.96,
+      "text": "of the bed slightly raised. Central Venus line placement has been replaced."
+    },
+    {
+      "start": 190.0,
+      "end": 194.4,
+      "text": "reported to be safer and more efficient when using dynamic ultrasound guidance."
+    },
+    {
+      "start": 196.1,
+      "end": 199.98,
+      "text": "The internal jugular approach is the best studied and most widely used."
+    },
+    {
+      "start": 200.0,
+      "end": 205.31,
+      "text": "site for ultrasound-guided central line placement. The patient is positioned"
+    },
+    {
+      "start": 205.31,
+      "end": 209.15,
+      "text": "supine in slight trendellanberg with the head turned slightly."
+    },
+    {
+      "start": 210.06,
+      "end": 214.64,
+      "text": "The physician performs the procedure while standing behind the patient at the head of the"
+    },
+    {
+      "start": 214.64,
+      "end": 214.84,
+      "text": "bed."
+    },
+    {
+      "start": 216.41,
+      "end": 219.97,
+      "text": "A linear array high frequency probe is ideal for this person."
+    },
+    {
+      "start": 220.0,
+      "end": 229.98,
+      "text": "And initial transverse view of the carotid artery and jugular vein is obtained two to three centimeters above the clavicle between the two heads."
+    },
+    {
+      "start": 230.0,
+      "end": 232.22,
+      "text": "of the sternocleodomastoid muscle."
+    },
+    {
+      "start": 232.81,
+      "end": 237.45,
+      "text": "The probe should be positioned so that the jugular appears in the exact center of the"
+    },
+    {
+      "start": 237.45,
+      "end": 237.79,
+      "text": "screen."
+    },
+    {
+      "start": 238.39,
+      "end": 239.97,
+      "text": "The goal at this point is to mark."
+    },
+    {
+      "start": 240.0,
+      "end": 244.94,
+      "text": "the optimum area for needle insertion prior to creating a sterile field."
+    },
+    {
+      "start": 245.71,
+      "end": 248.03,
+      "text": "The mark should align with the center of the probe."
+    },
+    {
+      "start": 248.8,
+      "end": 249.98,
+      "text": "Using the non-domin-"
+    },
+    {
+      "start": 250.0,
+      "end": 254.76,
+      "text": "hand the physician re-images the carotid artery and jugular vein in the"
+    },
+    {
+      "start": 254.76,
+      "end": 259.98,
+      "text": "transverse view. The needle is inserted at a 45-degree angle to the"
+    },
+    {
+      "start": 260.0,
+      "end": 266.46,
+      "text": "the skin and approximately 1-2mm cephalid to the exact center of the ultrasound probe."
+    },
+    {
+      "start": 267.66,
+      "end": 269.86,
+      "text": "As the needle is inserted, negative pressure"
+    },
+    {
+      "start": 270.0,
+      "end": 271.38,
+      "text": "is applied on the syringe."
+    },
+    {
+      "start": 273.22,
+      "end": 275.14,
+      "text": "Once the needle has penetrated the vein,"
+    },
+    {
+      "start": 275.42,
+      "end": 277.78,
+      "text": "the syringe is removed and a guide wire"
+    },
+    {
+      "start": 277.78,
+      "end": 279.12,
+      "text": "is inserted through the needle."
+    },
+    {
+      "start": 280.77,
+      "end": 284.95,
+      "text": "The central venous catheter is placed over the guide wire and into the vein."
+    },
+    {
+      "start": 285.93,
+      "end": 289.85,
+      "text": "Ultrasound is then used to confirm the location of the catheter in the vein."
+    },
+    {
+      "start": 292.4,
+      "end": 299.76,
+      "text": "Braining ultrasound phantoms aid the user in the development and practice of skills associated with ultrasound guided procedures."
+    },
+    {
+      "start": 300.54,
+      "end": 307.82,
+      "text": "These models typically feature a fluid fill region that can mimic vascular spaces or potential fluid filled spaces."
+    },
+    {
+      "start": 308.42,
+      "end": 309.96,
+      "text": "The synthetic tissue can sometimes..."
+    }
+  ]
+}

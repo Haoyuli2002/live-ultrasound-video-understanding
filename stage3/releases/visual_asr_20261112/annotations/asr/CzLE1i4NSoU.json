@@ -1,0 +1,218 @@
+{
+  "video_id": "CzLE1i4NSoU",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/CzLE1i4NSoU/asr.txt",
+  "segments": [
+    {
+      "start": 0.12,
+      "end": 5.74,
+      "text": "Hello, I'm Brian Johnson. I'm an emergency infosition, and today we're going to use the Clarious"
+    },
+    {
+      "start": 5.74,
+      "end": 12.43,
+      "text": "PAL ultrasound probe to identify the subclavian landmarks for a subclavian central line. Typically,"
+    },
+    {
+      "start": 12.63,
+      "end": 17.19,
+      "text": "we don't do many subclavian lines. We do internal jugular central lines and femoral lines,"
+    },
+    {
+      "start": 17.55,
+      "end": 21.39,
+      "text": "but it's good to have in your own Ontario how to perform a subclavian central line,"
+    },
+    {
+      "start": 21.9,
+      "end": 27.44,
+      "text": "and with ultrasound, it improves your accuracy, and minimizes your complications. And so we'll"
+    },
+    {
+      "start": 27.44,
+      "end": 33.18,
+      "text": "demonstrate where to approach the subclavian, both in the infra-clivicular and the super-clivicular"
+    },
+    {
+      "start": 33.18,
+      "end": 38.45,
+      "text": "approach. I'll demonstrate both of them. So typically you have it in venous setting, which is a good"
+    },
+    {
+      "start": 38.45,
+      "end": 43.18,
+      "text": "setting on the clarius pal, and the patient's supine, and typically we're going to do the right"
+    },
+    {
+      "start": 43.18,
+      "end": 48.74,
+      "text": "subclavian, if we can. So for the first one, the infra-clivicular approach, we're going to kind of"
+    },
+    {
+      "start": 48.74,
+      "end": 54.72,
+      "text": "put the probe typically near the sternal notch and just below the clavicle. Identify landmarks."
+    },
+    {
+      "start": 54.72,
+      "end": 56.96,
+      "text": "You'll see rib and lung sliding."
+    },
+    {
+      "start": 57.97,
+      "end": 62.52,
+      "text": "Slowly move lateral and rock the pro back and forth"
+    },
+    {
+      "start": 62.52,
+      "end": 65.2,
+      "text": "until you identify the pertinent structures,"
+    },
+    {
+      "start": 65.46,
+      "end": 67.78,
+      "text": "most notably the subclavian vein."
+    },
+    {
+      "start": 68.75,
+      "end": 70.69,
+      "text": "Typically, the subclavian artery is deeper."
+    },
+    {
+      "start": 71.92,
+      "end": 74.98,
+      "text": "And what you want to do is identify where the subclavian vein"
+    },
+    {
+      "start": 74.98,
+      "end": 76.88,
+      "text": "joins with the axillary vein"
+    },
+    {
+      "start": 76.88,
+      "end": 79.42,
+      "text": "and that's what you'll cannulate for a central line."
+    },
+    {
+      "start": 80.11,
+      "end": 82.53,
+      "text": "Now, this should be performed in the long axis."
+    },
+    {
+      "start": 83.11,
+      "end": 85.77,
+      "text": "So rotating your probe 90 degrees"
+    },
+    {
+      "start": 85.77,
+      "end": 94.13,
+      "text": "and rocking back and forth until you identify the subclavian vein in long axis"
+    },
+    {
+      "start": 94.75,
+      "end": 101.76,
+      "text": "such as this. You'll see below it is the subclavian artery and the subclavian"
+    },
+    {
+      "start": 101.76,
+      "end": 109.29,
+      "text": "vein is what you see on of you right now. You would sterilize and cannulate as"
+    },
+    {
+      "start": 109.29,
+      "end": 115.64,
+      "text": "you would do a normal central line. So that's the infraculavicular approach. The"
+    },
+    {
+      "start": 115.64,
+      "end": 120.17,
+      "text": "superclavicular approach is where you're getting into the subclavian above the"
+    },
+    {
+      "start": 120.17,
+      "end": 127.55,
+      "text": "Now the internal jugular vein actually joins with the subclavian vein, and that's where"
+    },
+    {
+      "start": 127.55,
+      "end": 131.19,
+      "text": "you're actually going to do your super-convicular subclavian approach."
+    },
+    {
+      "start": 131.88,
+      "end": 137.87,
+      "text": "What I do is typically place the probe over the right side of the neck, and what I do is"
+    },
+    {
+      "start": 138.05,
+      "end": 143.84,
+      "text": "identify the internal jugular vein, which is sometimes triangular, this is a little more"
+    },
+    {
+      "start": 143.84,
+      "end": 148.08,
+      "text": "anterior lateral from the carotid, and is easily compressible like so."
+    },
+    {
+      "start": 148.08,
+      "end": 156.76,
+      "text": "And what I do is I follow that internal jugular down, down, down, down, you'll see the"
+    },
+    {
+      "start": 156.76,
+      "end": 161.76,
+      "text": "subclavian artery below it, see how pulsatile it is and longitudinal view, and above it is"
+    },
+    {
+      "start": 161.76,
+      "end": 162.6,
+      "text": "the internal jugular."
+    },
+    {
+      "start": 163.32,
+      "end": 169.36,
+      "text": "Once again, the internal jugular joins with the subclavian as so."
+    },
+    {
+      "start": 169.6,
+      "end": 170.04,
+      "text": "Do you see that?"
+    },
+    {
+      "start": 170.72,
+      "end": 174.17,
+      "text": "Internal jugular subclavian vein."
+    },
+    {
+      "start": 174.79,
+      "end": 178.07,
+      "text": "And this is where you're going to cannulate for your central line."
+    },
+    {
+      "start": 178.38,
+      "end": 183.7,
+      "text": "You'll go once again and long access approach using sterile precautions and standard welding"
+    },
+    {
+      "start": 183.7,
+      "end": 184.2,
+      "text": "or technique."
+    },
+    {
+      "start": 185.31,
+      "end": 191.16,
+      "text": "So using ultrasound, you can form a subclavian central line with better accuracy and minimize"
+    },
+    {
+      "start": 191.16,
+      "end": 191.78,
+      "text": "your complications."
+    },
+    {
+      "start": 192.32,
+      "end": 192.86,
+      "text": "Thank you."
+    }
+  ]
+}

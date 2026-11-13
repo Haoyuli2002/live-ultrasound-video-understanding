@@ -1,0 +1,2453 @@
+{
+  "video_id": "0C0aontpnxM",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/eval/0C0aontpnxM/asr.txt",
+  "segments": [
+    {
+      "start": 1.28,
+      "end": 6.0,
+      "text": "Hey guys, it's Katie Whiskar back from UBCIMPocus, and today we're talking about long ultrasound"
+    },
+    {
+      "start": 6.0,
+      "end": 8.48,
+      "text": "and focusing on the basics of image acquisition."
+    },
+    {
+      "start": 10.86,
+      "end": 12.82,
+      "text": "So you may be wondering why it's worth it"
+    },
+    {
+      "start": 12.82,
+      "end": 13.76,
+      "text": "to learn lung ultrasound."
+    },
+    {
+      "start": 14.55,
+      "end": 15.71,
+      "text": "Now, I love scanning the heart,"
+    },
+    {
+      "start": 15.87,
+      "end": 17.99,
+      "text": "but of all the areas of point-of-care ultrasound"
+    },
+    {
+      "start": 17.99,
+      "end": 19.73,
+      "text": "in internal medicine in particular,"
+    },
+    {
+      "start": 20.48,
+      "end": 22.64,
+      "text": "Long ultrasound is arguably the highest yield"
+    },
+    {
+      "start": 22.64,
+      "end": 23.98,
+      "text": "with the shortest learning curve."
+    },
+    {
+      "start": 24.52,
+      "end": 26.06,
+      "text": "It's quick, it's fairly easy to learn"
+    },
+    {
+      "start": 26.06,
+      "end": 28.06,
+      "text": "and it can provide a ton of valuable information."
+    },
+    {
+      "start": 30.74,
+      "end": 32.16,
+      "text": "and we really have mounting evidence"
+    },
+    {
+      "start": 32.16,
+      "end": 33.9,
+      "text": "in a number of different disease states,"
+    },
+    {
+      "start": 34.18,
+      "end": 35.84,
+      "text": "clinical presentations, and contexts"
+    },
+    {
+      "start": 35.84,
+      "end": 37.34,
+      "text": "for the utility of lung ultrasound."
+    },
+    {
+      "start": 38.12,
+      "end": 39.98,
+      "text": "And we'll talk more about the evidence in specific-"
+    },
+    {
+      "start": 40.03,
+      "end": 44.69,
+      "text": "disease states and future screencast, but suffice it to say that lung ultrasound is an application"
+    },
+    {
+      "start": 44.69,
+      "end": 46.49,
+      "text": "that is well supported by the evidence."
+    },
+    {
+      "start": 49.36,
+      "end": 49.98,
+      "text": "And just to drive that..."
+    },
+    {
+      "start": 50.0,
+      "end": 53.5,
+      "text": "point home again quickly, it really does seem to be better for multiple different"
+    },
+    {
+      "start": 53.5,
+      "end": 57.06,
+      "text": "pathologies than a lot of our standard investigations, such as the chest X-ray."
+    },
+    {
+      "start": 57.48,
+      "end": 59.98,
+      "text": "As you can see from this meta analysis comparing the two modalities."
+    },
+    {
+      "start": 60.62,
+      "end": 64.72,
+      "text": "So again, this is a really quick, easy to learn high yield exam that can be indispensable"
+    },
+    {
+      "start": 64.72,
+      "end": 69.04,
+      "text": "for you in clinical practice, and I certainly can't imagine practicing without it these days."
+    },
+    {
+      "start": 71.66,
+      "end": 73.36,
+      "text": "Today's goal, therefore, is going to be to teach you"
+    },
+    {
+      "start": 73.36,
+      "end": 74.72,
+      "text": "how to perform lung ultrasound."
+    },
+    {
+      "start": 75.2,
+      "end": 77.38,
+      "text": "And we're going to focus on acquisition of images today"
+    },
+    {
+      "start": 77.38,
+      "end": 78.6,
+      "text": "rather than interpretation."
+    },
+    {
+      "start": 78.6,
+      "end": 79.96,
+      "text": "and we'll signpost if you"
+    },
+    {
+      "start": 80.0,
+      "end": 83.62,
+      "text": "great resources for more information on interpretation at the end of the video."
+    },
+    {
+      "start": 86.45,
+      "end": 89.97,
+      "text": "Now, that being said, just to give us some context and familiar language for today's screencast."
+    },
+    {
+      "start": 90.0,
+      "end": 96.96,
+      "text": "I will briefly mention that there are four basic patterns that you're going to look for among ultrasound in addition to the evaluation of the plurid itself."
+    },
+    {
+      "start": 97.74,
+      "end": 99.84,
+      "text": "And really that's it. There's only four potential signals."
+    },
+    {
+      "start": 100.03,
+      "end": 103.57,
+      "text": "which is part of what makes the learning curve for this application relatively short."
+    },
+    {
+      "start": 103.99,
+      "end": 106.21,
+      "text": "You're always going to see one of these four signatures."
+    },
+    {
+      "start": 106.75,
+      "end": 109.55,
+      "text": "So A lines, B lines, consolidations,"
+    },
+    {
+      "start": 110.0,
+      "end": 113.36,
+      "text": "aural effusions, plus, as we said, the evaluation of the plural itself."
+    },
+    {
+      "start": 115.88,
+      "end": 119.25,
+      "text": "And here are four patterns, again, A lines, B lines,"
+    },
+    {
+      "start": 120.0,
+      "end": 124.76,
+      "text": "solidations and plural effusions, and we'll talk just briefly about each one again to give us"
+    },
+    {
+      "start": 124.76,
+      "end": 127.26,
+      "text": "some context for the language I'll use throughout this screencast."
+    },
+    {
+      "start": 130.03,
+      "end": 132.39,
+      "text": "Airlines are horizontal reverberation artifacts"
+    },
+    {
+      "start": 132.39,
+      "end": 135.71,
+      "text": "emanating from the plural line that represent aerated lung."
+    },
+    {
+      "start": 136.23,
+      "end": 137.37,
+      "text": "So that can be normal lung,"
+    },
+    {
+      "start": 137.43,
+      "end": 139.71,
+      "text": "but we can also see airlines and things like COPD."
+    },
+    {
+      "start": 140.0,
+      "end": 144.4,
+      "text": "asma or pulmonary embolism, where there is no interstitial or alveolar pathology."
+    },
+    {
+      "start": 146.97,
+      "end": 149.85,
+      "text": "B lines in contrast are vertical artifacts emanating"
+    },
+    {
+      "start": 150.0,
+      "end": 152.6,
+      "text": "from the plura, and they're seen in interstitial syndromes."
+    },
+    {
+      "start": 153.0,
+      "end": 154.76,
+      "text": "So commonly pulmonary edema, where there's"
+    },
+    {
+      "start": 154.76,
+      "end": 157.98,
+      "text": "cardiogenic transidate, aka water, filling the interstitium,"
+    },
+    {
+      "start": 158.44,
+      "end": 159.98,
+      "text": "but also other things that can fill the interstitium."
+    },
+    {
+      "start": 160.0,
+      "end": 166.26,
+      "text": "such as pasts in earlier atypical pneumonia, fibrosis in something like interstitial lung disease, blood,"
+    },
+    {
+      "start": 166.26,
+      "end": 168.44,
+      "text": "in diffuse cell, the other hemorrhage, et cetera."
+    },
+    {
+      "start": 169.28,
+      "end": 169.98,
+      "text": "So, bilant should try..."
+    },
+    {
+      "start": 170.0,
+      "end": 174.0,
+      "text": "all the way down the screen, move with respiration and obliterate a-lines."
+    },
+    {
+      "start": 176.9,
+      "end": 179.91,
+      "text": "Next are consolidations, so this is what's called happens"
+    },
+    {
+      "start": 180.0,
+      "end": 186.06,
+      "text": "Or the tissue-like sign because the lung seen here on screen left really does start to look like the liver on screen"
+    },
+    {
+      "start": 186.06,
+      "end": 189.84,
+      "text": "Right and important to note that in contrast to radiology language"
+    },
+    {
+      "start": 190.0,
+      "end": 192.26,
+      "text": "where the word consolidation implies infection."
+    },
+    {
+      "start": 192.76,
+      "end": 194.16,
+      "text": "In long ultrasound vernacular,"
+    },
+    {
+      "start": 194.48,
+      "end": 196.66,
+      "text": "consolidations can be either infections,"
+    },
+    {
+      "start": 196.76,
+      "end": 198.7,
+      "text": "such as pneumonia or adelectosis."
+    },
+    {
+      "start": 201.18,
+      "end": 202.46,
+      "text": "And finally, plural effusions."
+    },
+    {
+      "start": 202.82,
+      "end": 204.7,
+      "text": "So this is typically seen as an anechoic"
+    },
+    {
+      "start": 204.7,
+      "end": 207.1,
+      "text": "or black space boarded by the diaphragm,"
+    },
+    {
+      "start": 207.22,
+      "end": 209.6,
+      "text": "plural, and a consolidated or collapse lung."
+    },
+    {
+      "start": 210.35,
+      "end": 212.29,
+      "text": "And again, we'll review these patterns in much more detail"
+    },
+    {
+      "start": 212.29,
+      "end": 213.83,
+      "text": "in future screencasts, but this is just"
+    },
+    {
+      "start": 213.83,
+      "end": 215.83,
+      "text": "to give you a bit of an orientation to the basics."
+    },
+    {
+      "start": 218.45,
+      "end": 219.97,
+      "text": "So before we start talking about the text."
+    },
+    {
+      "start": 220.1,
+      "end": 223.54,
+      "text": "of lung ultrasound itself, a brief word about the importance of artifacts."
+    },
+    {
+      "start": 224.46,
+      "end": 228.8,
+      "text": "So scanning the lung, and in particular scanning the lung perrenkama, really is the interpretation"
+    },
+    {
+      "start": 228.8,
+      "end": 229.52,
+      "text": "of ultrasound."
+    },
+    {
+      "start": 229.78,
+      "end": 229.98,
+      "text": "Artif-"
+    },
+    {
+      "start": 230.06,
+      "end": 234.26,
+      "text": "facts. In contrast to when we scan say the liver or the kidney where we're actually seeing"
+    },
+    {
+      "start": 234.26,
+      "end": 239.28,
+      "text": "the organ itself. And this is because ultrasound beams can't penetrate the air soft tissue"
+    },
+    {
+      "start": 239.28,
+      "end": 239.64,
+      "text": "interface."
+    },
+    {
+      "start": 240.61,
+      "end": 244.71,
+      "text": "Rather, the ultrasound waves interact with bright reflectors like the pleural line and"
+    },
+    {
+      "start": 244.71,
+      "end": 247.17,
+      "text": "create artifacts depending on the nature of the interface."
+    },
+    {
+      "start": 248.2,
+      "end": 249.92,
+      "text": "At the pleural, we see both scatter and"
+    },
+    {
+      "start": 250.0,
+      "end": 251.48,
+      "text": "reflection of the ultrasound beam."
+    },
+    {
+      "start": 252.57,
+      "end": 254.57,
+      "text": "So it's important to understand this basic concept,"
+    },
+    {
+      "start": 254.79,
+      "end": 256.61,
+      "text": "the fact that we're often interpreting artifacts"
+    },
+    {
+      "start": 256.61,
+      "end": 258.81,
+      "text": "in long ultrasound so that we can be aware"
+    },
+    {
+      "start": 258.81,
+      "end": 259.97,
+      "text": "of the pitfalls of this text."
+    },
+    {
+      "start": 260.06,
+      "end": 265.03,
+      "text": "Alright, so let's get started with probes and presets."
+    },
+    {
+      "start": 265.65,
+      "end": 269.61,
+      "text": "So at UBC we prefer to use the curvil linear probe for most of our long scanning, as this"
+    },
+    {
+      "start": 269.61,
+      "end": 269.79,
+      "text": "provided."
+    },
+    {
+      "start": 270.0,
+      "end": 272.02,
+      "text": "a nice balance between depth of penetration"
+    },
+    {
+      "start": 272.02,
+      "end": 274.42,
+      "text": "and resolution of the plura and soft tissues."
+    },
+    {
+      "start": 275.06,
+      "end": 277.3,
+      "text": "And you can also scan the lung with a phased array probe"
+    },
+    {
+      "start": 277.3,
+      "end": 278.66,
+      "text": "and some people prefer this."
+    },
+    {
+      "start": 279.16,
+      "end": 279.98,
+      "text": "Generally, the advantage-"
+    },
+    {
+      "start": 280.0,
+      "end": 283.32,
+      "text": "The advantage of the phase array probe in the long setting is that you get less rib shadows,"
+    },
+    {
+      "start": 283.62,
+      "end": 286.82,
+      "text": "which can be quite a challenge to navigate particularly in the dependent views."
+    },
+    {
+      "start": 287.62,
+      "end": 289.8,
+      "text": "The trade-off is that you get slightly less crisp resolution."
+    },
+    {
+      "start": 290.0,
+      "end": 294.3,
+      "text": "of the pleura with the phased array probe. A quick word about the linear probe,"
+    },
+    {
+      "start": 294.64,
+      "end": 298.56,
+      "text": "so this typically doesn't provide enough depth of penetration to visualize deeper structures"
+    },
+    {
+      "start": 298.56,
+      "end": 299.76,
+      "text": "in the lung, particularly"
+    },
+    {
+      "start": 300.0,
+      "end": 305.02,
+      "text": "and the dependent views. However, it can be used if the only object of interest is the plura or"
+    },
+    {
+      "start": 305.02,
+      "end": 309.98,
+      "text": "more superficial structures. So, for example, if you're only interested in lung sliding for pneumothor..."
+    },
+    {
+      "start": 310.0,
+      "end": 312.02,
+      "text": "You could certainly scan with the linear probe."
+    },
+    {
+      "start": 313.22,
+      "end": 318.68,
+      "text": "In terms of our probe orientation, we are generally going to scan with the dot or indicator pointing towards the patient's head."
+    },
+    {
+      "start": 318.96,
+      "end": 319.98,
+      "text": "Though occasionally some..."
+    },
+    {
+      "start": 320.0,
+      "end": 323.77,
+      "text": "rotation may be needed to get around rib shadows. And in this manner we will"
+    },
+    {
+      "start": 323.77,
+      "end": 327.79,
+      "text": "be scanning in both the sagittal plane on the anterior chest and the"
+    },
+    {
+      "start": 327.79,
+      "end": 329.79,
+      "text": "coronal plane on the lateral chest."
+    },
+    {
+      "start": 331.09,
+      "end": 335.31,
+      "text": "Finally in terms of our presets, we're typically going to scan the lung on the abdominal preset."
+    },
+    {
+      "start": 336.16,
+      "end": 339.98,
+      "text": "So some newer machines you may know do have a lung preset, and you can try this"
+    },
+    {
+      "start": 340.03,
+      "end": 344.17,
+      "text": "out, but we find that typically these are designed to maximize artifacts such as A and B lines,"
+    },
+    {
+      "start": 344.65,
+      "end": 348.25,
+      "text": "but they're suboptimal for scanning the lung bases in particular and visualizing the"
+    },
+    {
+      "start": 348.25,
+      "end": 349.71,
+      "text": "solid organs, consolidation."
+    },
+    {
+      "start": 350.0,
+      "end": 353.5,
+      "text": "equations, effusions, etc. So we tend to stick to the abdominal preset."
+    },
+    {
+      "start": 355.97,
+      "end": 359.97,
+      "text": "In terms of our technique for actually scanning the lung, the most important thing here is"
+    },
+    {
+      "start": 360.0,
+      "end": 362.9,
+      "text": "that we want our ultrasound beam to be perpendicular to the plura."
+    },
+    {
+      "start": 363.34,
+      "end": 365.82,
+      "text": "So we want the angle of incination to be perpendicular."
+    },
+    {
+      "start": 366.52,
+      "end": 369.98,
+      "text": "And as you can see from the CT-Chest slice, the contour of the chest wall..."
+    },
+    {
+      "start": 370.4,
+      "end": 373.8,
+      "text": "often doesn't match that of the plura underneath it, so you're going to have to"
+    },
+    {
+      "start": 373.8,
+      "end": 379.97,
+      "text": "employ what we call fanning or tilting. And fanning really is a key move."
+    },
+    {
+      "start": 380.0,
+      "end": 381.4,
+      "text": "movement for lung ultrasonography."
+    },
+    {
+      "start": 382.16,
+      "end": 386.3,
+      "text": "So fanning or tilting is defined as movement in the short axis of the probe along a fixed"
+    },
+    {
+      "start": 386.3,
+      "end": 389.98,
+      "text": "point on the body, while changing the angle of incination away from..."
+    },
+    {
+      "start": 390.0,
+      "end": 390.64,
+      "text": "from 90 degrees."
+    },
+    {
+      "start": 391.46,
+      "end": 393.62,
+      "text": "Fanding allows us to ensure that our ultrasound beam"
+    },
+    {
+      "start": 393.62,
+      "end": 395.32,
+      "text": "is perpendicular to the plura."
+    },
+    {
+      "start": 396.4,
+      "end": 397.88,
+      "text": "So as a very common example of this,"
+    },
+    {
+      "start": 398.0,
+      "end": 399.8,
+      "text": "when you're scanning the antelateral chest,"
+    },
+    {
+      "start": 400.32,
+      "end": 401.8,
+      "text": "you'll find you need to fan your ultrasound"
+    },
+    {
+      "start": 401.8,
+      "end": 405.18,
+      "text": "being medially in order to find that perpendicular angle."
+    },
+    {
+      "start": 405.82,
+      "end": 407.06,
+      "text": "And as we go through a few examples,"
+    },
+    {
+      "start": 407.2,
+      "end": 409.32,
+      "text": "we'll talk about how you can identify whether or not"
+    },
+    {
+      "start": 409.32,
+      "end": 409.98,
+      "text": "your truly..."
+    },
+    {
+      "start": 410.06,
+      "end": 415.8,
+      "text": "perpendicular and properly aligned with your plura. Now in terms of the"
+    },
+    {
+      "start": 415.8,
+      "end": 419.36,
+      "text": "actual scanning protocol, so if you've read some of the ultrasound literature in"
+    },
+    {
+      "start": 419.36,
+      "end": 419.8,
+      "text": "this area,"
+    },
+    {
+      "start": 420.0,
+      "end": 422.86,
+      "text": "You'll notice that there are a number of different protocols that have been described."
+    },
+    {
+      "start": 423.46,
+      "end": 427.0,
+      "text": "And all of them are very reasonable, and all of them have a few key points in common."
+    },
+    {
+      "start": 427.46,
+      "end": 429.82,
+      "text": "So they are scanning in some way the anterior chest."
+    },
+    {
+      "start": 430.26,
+      "end": 431.62,
+      "text": "so looking at the lung perencometh"
+    },
+    {
+      "start": 431.62,
+      "end": 432.98,
+      "text": "for things like a-lines and b-lines,"
+    },
+    {
+      "start": 433.28,
+      "end": 435.24,
+      "text": "as well as scanning the dependent regions,"
+    },
+    {
+      "start": 435.42,
+      "end": 436.68,
+      "text": "looking for pleural diseases,"
+    },
+    {
+      "start": 437.02,
+      "end": 439.02,
+      "text": "things like pleural effusions and consolidations."
+    },
+    {
+      "start": 442.05,
+      "end": 446.73,
+      "text": "Now there has been debate about how many points on the chest to scan, and most protocols outside"
+    },
+    {
+      "start": 446.73,
+      "end": 449.97,
+      "text": "of strict research tend to involve between 3 and 8 points per hour."
+    },
+    {
+      "start": 450.03,
+      "end": 454.18,
+      "text": "thorax. Note that as you can see here from these images, it's possible that you"
+    },
+    {
+      "start": 454.18,
+      "end": 457.66,
+      "text": "might miss small areas of pathology if you're not making a point of scanning,"
+    },
+    {
+      "start": 457.66,
+      "end": 459.7,
+      "text": "for example, the very posterior regions."
+    },
+    {
+      "start": 460.54,
+      "end": 463.04,
+      "text": "So in general, doing four to six zones per hemi-thorax"
+    },
+    {
+      "start": 463.04,
+      "end": 465.98,
+      "text": "is recommended in most sources as a comprehensive long scan."
+    },
+    {
+      "start": 466.66,
+      "end": 468.96,
+      "text": "Obviously, this can be adapted based on your population"
+    },
+    {
+      "start": 468.96,
+      "end": 469.8,
+      "text": "and the pathology."
+    },
+    {
+      "start": 470.0,
+      "end": 479.14,
+      "text": "you're looking for. And again, you can sort of intuit that the more points you scan, the higher the sensitivity you will have to detect small areas of pathology."
+    },
+    {
+      "start": 480.1,
+      "end": 483.44,
+      "text": "When you're threshold for how long you want to spend scanning the lung versus the size"
+    },
+    {
+      "start": 483.44,
+      "end": 486.46,
+      "text": "of pathology you care about, we'll differ based on your clinical setting."
+    },
+    {
+      "start": 489.25,
+      "end": 489.97,
+      "text": "So here at UBC-"
+    },
+    {
+      "start": 490.0,
+      "end": 493.88,
+      "text": "The IMPocus, we favor a protocol that involves scanning between four and six points per"
+    },
+    {
+      "start": 493.88,
+      "end": 498.54,
+      "text": "hemithorax, depending on the patient's ability to roll over or sit up to allow you to scan"
+    },
+    {
+      "start": 498.54,
+      "end": 499.4,
+      "text": "the posterior lung."
+    },
+    {
+      "start": 500.58,
+      "end": 502.52,
+      "text": "And again, there's no particular superiority"
+    },
+    {
+      "start": 502.52,
+      "end": 504.12,
+      "text": "of these exact points over others,"
+    },
+    {
+      "start": 504.56,
+      "end": 506.52,
+      "text": "as long as you're scanning a representative portion"
+    },
+    {
+      "start": 506.52,
+      "end": 506.98,
+      "text": "of the lung."
+    },
+    {
+      "start": 507.94,
+      "end": 509.78,
+      "text": "The biggest reason to follow a single specific"
+    },
+    {
+      "start": 510.1,
+      "end": 514.06,
+      "text": "protocol within an institution, such as the one we'll go through today, is so that you"
+    },
+    {
+      "start": 514.06,
+      "end": 516.94,
+      "text": "can easily label, document, and communicate your findings."
+    },
+    {
+      "start": 517.3,
+      "end": 519.9,
+      "text": "So for consistency within our program, this is the approach."
+    },
+    {
+      "start": 520.03,
+      "end": 520.59,
+      "text": "that we've adopted."
+    },
+    {
+      "start": 523.33,
+      "end": 525.29,
+      "text": "All right, so let's talk through those six points briefly."
+    },
+    {
+      "start": 526.12,
+      "end": 528.3,
+      "text": "Your first point is gonna be on the anterior chest"
+    },
+    {
+      "start": 528.3,
+      "end": 529.76,
+      "text": "in the mid-clivicular line."
+    },
+    {
+      "start": 530.19,
+      "end": 531.69,
+      "text": "around the second or third rib space."
+    },
+    {
+      "start": 533.1,
+      "end": 536.16,
+      "text": "Your second point is gonna be close to that same mid-clovicular line,"
+    },
+    {
+      "start": 536.24,
+      "end": 537.46,
+      "text": "but farther down the chest,"
+    },
+    {
+      "start": 537.86,
+      "end": 539.96,
+      "text": "typically in the fourth or fifth interspace, you..."
+    },
+    {
+      "start": 540.0,
+      "end": 541.94,
+      "text": "usually around the level of the nipple or just below."
+    },
+    {
+      "start": 544.65,
+      "end": 547.19,
+      "text": "Your third point is going to be the anterior axillary line"
+    },
+    {
+      "start": 547.19,
+      "end": 549.93,
+      "text": "right up in the axilla, and your fourth point is"
+    },
+    {
+      "start": 549.93,
+      "end": 549.97,
+      "text": "I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry"
+    },
+    {
+      "start": 550.0,
+      "end": 553.44,
+      "text": "going to be in the mid to posterior axillary line at the costofrenic angle."
+    },
+    {
+      "start": 554.64,
+      "end": 556.62,
+      "text": "So this is what's been described as the plaps point."
+    },
+    {
+      "start": 556.92,
+      "end": 559.48,
+      "text": "The posterior lateral alveolar plural syndrome point."
+    },
+    {
+      "start": 560.0,
+      "end": 565.34,
+      "text": "is really key for capturing dependent pathology. Now note that the location of this fourth point"
+    },
+    {
+      "start": 565.34,
+      "end": 569.78,
+      "text": "is obviously totally dependent on the location of the diaphragm. So particular"
+    },
+    {
+      "start": 570.03,
+      "end": 574.27,
+      "text": "Usually in our stupine bedbound patients who often have considerable adlexis or elevated"
+    },
+    {
+      "start": 574.27,
+      "end": 577.33,
+      "text": "hemidiophants, it can be really surprisingly high."
+    },
+    {
+      "start": 577.75,
+      "end": 579.91,
+      "text": "And so you'll often have to do some maneuvering to acts."
+    },
+    {
+      "start": 580.06,
+      "end": 583.92,
+      "text": "the cis point, getting patients to move their arms out of the way, asking them to turn"
+    },
+    {
+      "start": 583.92,
+      "end": 588.08,
+      "text": "slightly in their bed if they're able to, or applying some serious elbow grease and really"
+    },
+    {
+      "start": 588.08,
+      "end": 589.96,
+      "text": "digging your probe into the mattress in order to-"
+    },
+    {
+      "start": 590.0,
+      "end": 592.52,
+      "text": "to get posterior and high enough to capture this point."
+    },
+    {
+      "start": 595.27,
+      "end": 597.07,
+      "text": "And then your fifth and sixth points will be on the back."
+    },
+    {
+      "start": 597.47,
+      "end": 598.87,
+      "text": "So now these will be patient dependent."
+    },
+    {
+      "start": 599.27,
+      "end": 599.97,
+      "text": "Some patients may..."
+    },
+    {
+      "start": 600.0,
+      "end": 604.0,
+      "text": "not be able to sit up or roll over to allow you to scan the back, but in general here"
+    },
+    {
+      "start": 604.0,
+      "end": 608.24,
+      "text": "you want to go slightly lateral to midline, obviously avoiding the scapula, with one point"
+    },
+    {
+      "start": 608.24,
+      "end": 609.98,
+      "text": "more superior and another more inline."
+    },
+    {
+      "start": 610.03,
+      "end": 615.09,
+      "text": "And again, with that inferior point, you're going to try to capture the Theraco abdominal"
+    },
+    {
+      "start": 615.09,
+      "end": 617.23,
+      "text": "interface to catch any dependent pathology."
+    },
+    {
+      "start": 618.04,
+      "end": 619.96,
+      "text": "And for that sixth point, it can be helpful to try to-"
+    },
+    {
+      "start": 620.06,
+      "end": 624.22,
+      "text": "a little bit more laterally, to capture the intra-abdominal organ as a reference point."
+    },
+    {
+      "start": 627.04,
+      "end": 629.86,
+      "text": "Now a few important considerations before we go through an example scan."
+    },
+    {
+      "start": 630.58,
+      "end": 633.24,
+      "text": "So again, all points may not be achievable in all patients."
+    },
+    {
+      "start": 634.03,
+      "end": 635.07,
+      "text": "Always do your best, of course,"
+    },
+    {
+      "start": 635.31,
+      "end": 636.75,
+      "text": "but in addition to the posterior points"
+    },
+    {
+      "start": 636.75,
+      "end": 637.61,
+      "text": "being quite challenging,"
+    },
+    {
+      "start": 638.09,
+      "end": 639.97,
+      "text": "you may find that your L-2 point gets a-"
+    },
+    {
+      "start": 640.0,
+      "end": 641.88,
+      "text": "secured by the heart, as we'll see in our example."
+    },
+    {
+      "start": 643.02,
+      "end": 645.84,
+      "text": "Next, and this is very important, if you find pathology,"
+    },
+    {
+      "start": 646.0,
+      "end": 647.24,
+      "text": "explore the area further."
+    },
+    {
+      "start": 647.56,
+      "end": 649.7,
+      "text": "So if you see some B lines or a bit of consolidation,"
+    },
+    {
+      "start": 650.03,
+      "end": 654.37,
+      "text": "on the side of your screen, you'll want to slide your probe around and explore that area to get"
+    },
+    {
+      "start": 654.37,
+      "end": 659.62,
+      "text": "a good sense of the extent of the pathology and fully characterize it. Again, this protocol is certainly"
+    },
+    {
+      "start": 659.62,
+      "end": 659.84,
+      "text": "only normal."
+    },
+    {
+      "start": 660.0,
+      "end": 664.52,
+      "text": "to be a rigid prescription of which exact points on the chest to scan, but rather a guideline"
+    },
+    {
+      "start": 664.52,
+      "end": 667.7,
+      "text": "to ensure that you've surveyed all areas and done a thorough assessment."
+    },
+    {
+      "start": 669.02,
+      "end": 669.96,
+      "text": "And finally, going hand in."
+    },
+    {
+      "start": 670.0,
+      "end": 673.64,
+      "text": "hand with this. If you have a high index of suspicion for a particular pathology"
+    },
+    {
+      "start": 673.64,
+      "end": 676.92,
+      "text": "in a patient, let's say you have a hint on a chest x-ray that there might be"
+    },
+    {
+      "start": 676.92,
+      "end": 679.84,
+      "text": "something lurking there, you're going to really want to take time to explore"
+    },
+    {
+      "start": 679.84,
+      "end": 679.98,
+      "text": "the"
+    },
+    {
+      "start": 680.0,
+      "end": 682.48,
+      "text": "area in question in more detail and take more clips."
+    },
+    {
+      "start": 685.15,
+      "end": 688.21,
+      "text": "Alright, so with all that said, let's go through an example scan to show you these points"
+    },
+    {
+      "start": 688.21,
+      "end": 688.69,
+      "text": "in action."
+    },
+    {
+      "start": 691.02,
+      "end": 693.86,
+      "text": "So first thing here, as you can see, the scan is labeled."
+    },
+    {
+      "start": 694.48,
+      "end": 695.92,
+      "text": "So really important in long ultrasound"
+    },
+    {
+      "start": 695.92,
+      "end": 697.74,
+      "text": "and contrast to say cardiac scanning"
+    },
+    {
+      "start": 697.74,
+      "end": 699.22,
+      "text": "where it's evident where you are in the heart."
+    },
+    {
+      "start": 700.0,
+      "end": 704.16,
+      "text": "label your clips because there's often an absence of lateralizing anatomy. So we need to"
+    },
+    {
+      "start": 704.16,
+      "end": 706.1,
+      "text": "label the clip to know where we are on the chest."
+    },
+    {
+      "start": 706.84,
+      "end": 709.98,
+      "text": "We favor a simple numerical based approach, so R1 through"
+    },
+    {
+      "start": 710.0,
+      "end": 713.66,
+      "text": "R6 for our right-sided points and L1 through L6, as you'll see."
+    },
+    {
+      "start": 714.89,
+      "end": 719.87,
+      "text": "Now we've started here in R1, so this is the right superior anterior chest wall in the mid-"
+    },
+    {
+      "start": 720.0,
+      "end": 723.88,
+      "text": "a vehicular line around the second or third rib space, and you'll see that our depth"
+    },
+    {
+      "start": 723.88,
+      "end": 728.24,
+      "text": "is somewhere between 9 and 13 centimeters for the anterior chest wall, and this typically"
+    },
+    {
+      "start": 728.24,
+      "end": 729.88,
+      "text": "allows a good trade-off between adequate"
+    },
+    {
+      "start": 730.0,
+      "end": 734.09,
+      "text": "depth to visualize pathology and good visualization of the pleuromorphology."
+    },
+    {
+      "start": 735.47,
+      "end": 738.91,
+      "text": "You can see that we're scanning with a curvilinear pro on the abdominal setting."
+    },
+    {
+      "start": 740.0,
+      "end": 743.42,
+      "text": "our view so that we can see rib shadows with at least one interspace in between."
+    },
+    {
+      "start": 744.72,
+      "end": 747.76,
+      "text": "Now, one of the key ways to make sure that your perpendicular to the plural with your"
+    },
+    {
+      "start": 747.76,
+      "end": 749.74,
+      "text": "angle of incination is to slowly"
+    },
+    {
+      "start": 750.0,
+      "end": 755.66,
+      "text": "band or tilt your pro until that plural line is as bright and smooth as possible. So here"
+    },
+    {
+      "start": 755.66,
+      "end": 759.82,
+      "text": "you can see a nice bright plural line with a B line profile. There are a couple of"
+    },
+    {
+      "start": 760.0,
+      "end": 764.0,
+      "text": "sneaking in there, but this is definitely predominantly a B profile with those"
+    },
+    {
+      "start": 764.0,
+      "end": 767.46,
+      "text": "vertical, hyper-echoic artifacts extending down the length of the screen."
+    },
+    {
+      "start": 768.7,
+      "end": 769.84,
+      "text": "Now a couple more technical pointers."
+    },
+    {
+      "start": 770.0,
+      "end": 774.82,
+      "text": "So we ideally want the plura to lie flat and horizontally on the screen, as it is here,"
+    },
+    {
+      "start": 775.26,
+      "end": 777.38,
+      "text": "though this can be challenging in the dependent views."
+    },
+    {
+      "start": 777.88,
+      "end": 779.94,
+      "text": "So this can typically be facilitated by rocks."
+    },
+    {
+      "start": 780.03,
+      "end": 784.93,
+      "text": "the probe. And the other thing we ideally want to try to do is center a rib space in the middle of"
+    },
+    {
+      "start": 784.93,
+      "end": 789.41,
+      "text": "our screen. With a phasor A probe, you'll typically capture only one rib space per clip"
+    },
+    {
+      "start": 790.0,
+      "end": 791.74,
+      "text": "Whereas with the curvilinear as we've used here,"
+    },
+    {
+      "start": 791.84,
+      "end": 794.14,
+      "text": "we often get two rib spaces in a single image."
+    },
+    {
+      "start": 795.41,
+      "end": 796.37,
+      "text": "And again, just to emphasize,"
+    },
+    {
+      "start": 796.63,
+      "end": 798.37,
+      "text": "you should always see one of four patterns"
+    },
+    {
+      "start": 798.37,
+      "end": 799.19,
+      "text": "on long ultrasound."
+    },
+    {
+      "start": 800.03,
+      "end": 803.25,
+      "text": "A lines, B lines, consolidation, or plural effusion."
+    },
+    {
+      "start": 803.79,
+      "end": 805.37,
+      "text": "And if all you're seeing is gray fuzz,"
+    },
+    {
+      "start": 805.55,
+      "end": 808.03,
+      "text": "it's usually because you're not perpendicular to the plural"
+    },
+    {
+      "start": 808.03,
+      "end": 809.11,
+      "text": "with your ultrasound beam."
+    },
+    {
+      "start": 810.13,
+      "end": 812.47,
+      "text": "And likewise, if your pleura line isn't nice and bright,"
+    },
+    {
+      "start": 812.97,
+      "end": 814.79,
+      "text": "it's likely because your angle of incination"
+    },
+    {
+      "start": 814.79,
+      "end": 815.69,
+      "text": "isn't perpendicular."
+    },
+    {
+      "start": 816.05,
+      "end": 817.79,
+      "text": "So you're gonna wanna adjust your transducer,"
+    },
+    {
+      "start": 818.03,
+      "end": 819.55,
+      "text": "primarily with that fanning motion."
+    },
+    {
+      "start": 820.06,
+      "end": 823.76,
+      "text": "until you see a bright pleural line with either A or B lines beneath it."
+    },
+    {
+      "start": 826.16,
+      "end": 829.98,
+      "text": "Moving on here, so our next point is R2, so this is the right inferior-"
+    },
+    {
+      "start": 830.0,
+      "end": 834.08,
+      "text": "your anterior chest wall again around the mid-clivicular line, farther down the"
+    },
+    {
+      "start": 834.08,
+      "end": 837.4,
+      "text": "chest typically around the fifth or sixth interspace, add or just below the"
+    },
+    {
+      "start": 837.4,
+      "end": 839.92,
+      "text": "level of the nipple. So this location of course will"
+    },
+    {
+      "start": 840.0,
+      "end": 842.56,
+      "text": "very depending on the location of the diaphragm in your patient."
+    },
+    {
+      "start": 843.5,
+      "end": 846.2,
+      "text": "Again, here we can see rib shadow with an interspace in between."
+    },
+    {
+      "start": 846.8,
+      "end": 849.96,
+      "text": "We see a nice bright pleural line lying fairly flat on our"
+    },
+    {
+      "start": 850.0,
+      "end": 854.54,
+      "text": "screen and once again here we have a lot of vertical hypercoag B lines extending"
+    },
+    {
+      "start": 854.54,
+      "end": 859.36,
+      "text": "down from the plural line and moving with respiration. One important thing to say"
+    },
+    {
+      "start": 859.36,
+      "end": 859.86,
+      "text": "about the length"
+    },
+    {
+      "start": 860.03,
+      "end": 864.94,
+      "text": "of our clips, so with long altars down we typically want our clips to be between 4 and 6 seconds"
+    },
+    {
+      "start": 864.94,
+      "end": 865.28,
+      "text": "long."
+    },
+    {
+      "start": 866.0,
+      "end": 869.98,
+      "text": "They certainly need to be long enough to capture a full respiratory cycle as move..."
+    },
+    {
+      "start": 870.0,
+      "end": 873.62,
+      "text": "of these artifacts with respiration is one of the key features we look for on ultrasound."
+    },
+    {
+      "start": 874.83,
+      "end": 877.57,
+      "text": "So if your patient is breathing very slowly or inconsistently,"
+    },
+    {
+      "start": 877.91,
+      "end": 879.97,
+      "text": "you may need to adjust the length of your clips as..."
+    },
+    {
+      "start": 880.0,
+      "end": 886.97,
+      "text": "it's important that we capture changes with respiration. Moving on to R3. So this is the anterior"
+    },
+    {
+      "start": 886.97,
+      "end": 889.53,
+      "text": "your axillary line right up in the axilla itself."
+    },
+    {
+      "start": 890.38,
+      "end": 892.1,
+      "text": "Now we see some soft tissue in the foreground."
+    },
+    {
+      "start": 892.62,
+      "end": 893.5,
+      "text": "We see rib shadows."
+    },
+    {
+      "start": 893.88,
+      "end": 895.68,
+      "text": "And then we see that bright pleura line."
+    },
+    {
+      "start": 896.51,
+      "end": 898.51,
+      "text": "And note that our pleura is inclined here a bit,"
+    },
+    {
+      "start": 898.71,
+      "end": 899.87,
+      "text": "which can be tricky to avoid."
+    },
+    {
+      "start": 900.0,
+      "end": 903.3,
+      "text": "In this view, however, we could try to improve this with some rocking of the probe."
+    },
+    {
+      "start": 904.3,
+      "end": 907.88,
+      "text": "And here again, in terms of findings, we see B lines traveling the length of our screen."
+    },
+    {
+      "start": 910.48,
+      "end": 912.02,
+      "text": "So next is our R4 view."
+    },
+    {
+      "start": 912.46,
+      "end": 914.06,
+      "text": "So this has been termed the plaps point,"
+    },
+    {
+      "start": 914.34,
+      "end": 917.0,
+      "text": "the posterior lateral alveolar plural syndrome point"
+    },
+    {
+      "start": 917.0,
+      "end": 919.54,
+      "text": "by Daniel Lichtenstein, the father of lung ultrasound."
+    },
+    {
+      "start": 920.29,
+      "end": 922.95,
+      "text": "And this is really the key view for dependent pathology."
+    },
+    {
+      "start": 924.13,
+      "end": 926.83,
+      "text": "So here you want to be in the mid to post your axillary line"
+    },
+    {
+      "start": 926.83,
+      "end": 928.79,
+      "text": "at the level of the diaphragm."
+    },
+    {
+      "start": 929.05,
+      "end": 929.97,
+      "text": "And the key here is really..."
+    },
+    {
+      "start": 930.0,
+      "end": 933.14,
+      "text": "to visualize the interface between the chest and the abdomen."
+    },
+    {
+      "start": 934.61,
+      "end": 937.41,
+      "text": "So we'll start by identifying the relevant inter-abdominal organ,"
+    },
+    {
+      "start": 937.67,
+      "end": 939.77,
+      "text": "so the liver in this case, as we're on the right side."
+    },
+    {
+      "start": 940.38,
+      "end": 942.16,
+      "text": "And then moving cephalad towards the head"
+    },
+    {
+      "start": 942.16,
+      "end": 945.2,
+      "text": "until we see a long pattern that lets us know we're in the thorax."
+    },
+    {
+      "start": 945.86,
+      "end": 948.38,
+      "text": "And we want most of our screen to be taken up by the thorax."
+    },
+    {
+      "start": 948.58,
+      "end": 949.76,
+      "text": "That's the area of interest."
+    },
+    {
+      "start": 950.0,
+      "end": 955.92,
+      "text": "After all, but the diaphragm, the inter-abdominal organs are crucial landmarks, so should be present on the right side of our screen."
+    },
+    {
+      "start": 957.76,
+      "end": 959.98,
+      "text": "To be even more specific, what we really want to try to see..."
+    },
+    {
+      "start": 960.06,
+      "end": 964.18,
+      "text": "seeing this u is the diaphragm itself, and note that you won't be able to visualize the"
+    },
+    {
+      "start": 964.18,
+      "end": 969.02,
+      "text": "entire diaphragm nicely outlined, unless there is a plural effusion or consolidation present"
+    },
+    {
+      "start": 969.02,
+      "end": 969.94,
+      "text": "in this dependent..."
+    },
+    {
+      "start": 970.06,
+      "end": 975.55,
+      "text": "region. And this is because aerated lung doesn't transmit ultrasound beams well. We'll get scatter"
+    },
+    {
+      "start": 975.55,
+      "end": 979.97,
+      "text": "and reflection of ultrasound beams, and instead we will see artifacts. However, as"
+    },
+    {
+      "start": 980.0,
+      "end": 984.14,
+      "text": "And you can appreciate from this view, one thing that is often problematic here is rib shadows."
+    },
+    {
+      "start": 984.8,
+      "end": 989.04,
+      "text": "And we particularly want to try to avoid having rib shadows obscure our view of the diaphragm"
+    },
+    {
+      "start": 989.04,
+      "end": 989.4,
+      "text": "itself."
+    },
+    {
+      "start": 990.0,
+      "end": 994.48,
+      "text": "interface between the lung and the abdomen as it's doing here. So if you have a"
+    },
+    {
+      "start": 994.48,
+      "end": 998.44,
+      "text": "troublesome rib shadow, you can try to get it out of the way by sliding or rotating the probe"
+    },
+    {
+      "start": 998.82,
+      "end": 999.86,
+      "text": "or you can try to change"
+    },
+    {
+      "start": 1000.0,
+      "end": 1002.94,
+      "text": "the patient's position and have them lie in the lateral de-cubitus position."
+    },
+    {
+      "start": 1004.05,
+      "end": 1006.11,
+      "text": "You could also switch to the phased array probe here."
+    },
+    {
+      "start": 1006.63,
+      "end": 1009.91,
+      "text": "Although the solid organ and pleural definition is not quite as good, it's smaller."
+    },
+    {
+      "start": 1010.0,
+      "end": 1015.05,
+      "text": "footprint definitely helps eliminate rib shadows. Note that in this view, I've increased the depth"
+    },
+    {
+      "start": 1015.05,
+      "end": 1019.79,
+      "text": "enough to adequately visualize the entire intra-abdominal organ and typically somewhere between"
+    },
+    {
+      "start": 1020.03,
+      "end": 1021.97,
+      "text": "15 to 20 centimeters of depth is adequate,"
+    },
+    {
+      "start": 1022.13,
+      "end": 1023.85,
+      "text": "depending on the body habitus of your patient."
+    },
+    {
+      "start": 1025.33,
+      "end": 1026.71,
+      "text": "So here, once again, we can see liver"
+    },
+    {
+      "start": 1026.71,
+      "end": 1028.23,
+      "text": "and a bit of kidney on screen, right?"
+    },
+    {
+      "start": 1028.63,
+      "end": 1029.9,
+      "text": "We get a sense of that illusion."
+    },
+    {
+      "start": 1030.0,
+      "end": 1033.61,
+      "text": "of diaphragm, although we don't see it very well, and then we have a bit of plural"
+    },
+    {
+      "start": 1033.61,
+      "end": 1037.45,
+      "text": "of fusion with what looks in this view to be a non-translobar consolidation and"
+    },
+    {
+      "start": 1037.45,
+      "end": 1039.29,
+      "text": "B lines coming into view with respiration."
+    },
+    {
+      "start": 1040.1,
+      "end": 1042.08,
+      "text": "So this is a good example of an R4 point,"
+    },
+    {
+      "start": 1042.18,
+      "end": 1043.7,
+      "text": "that's probably a bit too anterior."
+    },
+    {
+      "start": 1044.71,
+      "end": 1046.27,
+      "text": "And we get a sense that if we could get our probe"
+    },
+    {
+      "start": 1046.27,
+      "end": 1048.63,
+      "text": "a bit more posterior, we'd get a better idea"
+    },
+    {
+      "start": 1048.63,
+      "end": 1049.93,
+      "text": "of the pathology going on."
+    },
+    {
+      "start": 1050.03,
+      "end": 1056.78,
+      "text": "So here we've taken a second stab at this R4 view and we've managed to get that pesky"
+    },
+    {
+      "start": 1056.78,
+      "end": 1059.98,
+      "text": "rib shadow out of the way by sliding our probe a bit more posteriorly."
+    },
+    {
+      "start": 1060.0,
+      "end": 1063.86,
+      "text": "In this case, facilitated by the patient turning a bit onto their left side."
+    },
+    {
+      "start": 1065.18,
+      "end": 1069.92,
+      "text": "So here we can now nicely see the liver, the diaphragm, and then in the chest, a modest"
+    },
+    {
+      "start": 1070.03,
+      "end": 1073.85,
+      "text": "at pleural effusion with a consolidation that is likely compressive adylactasis."
+    },
+    {
+      "start": 1075.28,
+      "end": 1078.36,
+      "text": "And note that in this second view our depth is probably a little bit too shallow"
+    },
+    {
+      "start": 1078.36,
+      "end": 1079.98,
+      "text": "as we can just barely see the"
+    },
+    {
+      "start": 1080.0,
+      "end": 1081.42,
+      "text": "the spine there at the bottom of the screen."
+    },
+    {
+      "start": 1082.2,
+      "end": 1083.98,
+      "text": "We want to try to make sure that we have enough depth"
+    },
+    {
+      "start": 1083.98,
+      "end": 1085.92,
+      "text": "to capture the spine in this plaps view."
+    },
+    {
+      "start": 1086.42,
+      "end": 1088.48,
+      "text": "As a spine sign is a very useful marker"
+    },
+    {
+      "start": 1088.48,
+      "end": 1089.98,
+      "text": "to help make sure we're not missing any."
+    },
+    {
+      "start": 1090.0,
+      "end": 1096.79,
+      "text": "small pleural effusions. Next we're moving on to the posterior chest with the patient"
+    },
+    {
+      "start": 1096.79,
+      "end": 1099.98,
+      "text": "sitting up. So this is the right superior posterior chest."
+    },
+    {
+      "start": 1100.46,
+      "end": 1104.74,
+      "text": "And again, we're going to want to go a little bit lateral of midline and make sure we avoid the scapula."
+    },
+    {
+      "start": 1106.19,
+      "end": 1109.97,
+      "text": "So you can see that the ribs are usually quite close together in this location, so we see a"
+    },
+    {
+      "start": 1110.0,
+      "end": 1111.02,
+      "text": "a lot more rib shadows."
+    },
+    {
+      "start": 1111.68,
+      "end": 1113.38,
+      "text": "And one thing that can help to mitigate this"
+    },
+    {
+      "start": 1113.38,
+      "end": 1114.74,
+      "text": "is getting the patient to give themselves"
+    },
+    {
+      "start": 1114.74,
+      "end": 1116.58,
+      "text": "a bit of a hug as you're scanning them."
+    },
+    {
+      "start": 1117.78,
+      "end": 1119.4,
+      "text": "So here we can see a couple rib spaces."
+    },
+    {
+      "start": 1120.03,
+      "end": 1121.85,
+      "text": "In this one here, we have some vertical artifacts"
+    },
+    {
+      "start": 1121.85,
+      "end": 1124.09,
+      "text": "that don't quite appear to go the whole length of the screen."
+    },
+    {
+      "start": 1124.51,
+      "end": 1126.05,
+      "text": "So these may actually be zed lines"
+    },
+    {
+      "start": 1126.05,
+      "end": 1127.41,
+      "text": "or comment tail artifacts."
+    },
+    {
+      "start": 1128.32,
+      "end": 1129.98,
+      "text": "And it's important to distinguish these from-"
+    },
+    {
+      "start": 1130.0,
+      "end": 1133.76,
+      "text": "true B lines, as Z lines don't actually represent interstitial pathology."
+    },
+    {
+      "start": 1134.81,
+      "end": 1138.79,
+      "text": "And this rib space over here to the right, we see a single A line coming in and out of view."
+    },
+    {
+      "start": 1141.06,
+      "end": 1142.06,
+      "text": "And finally, R6."
+    },
+    {
+      "start": 1142.34,
+      "end": 1144.44,
+      "text": "So this is the right inferior posterior chest."
+    },
+    {
+      "start": 1145.0,
+      "end": 1147.76,
+      "text": "So here we're lateral to midline, avoiding the scapula,"
+    },
+    {
+      "start": 1148.08,
+      "end": 1149.98,
+      "text": "and trying to capture that interface between..."
+    },
+    {
+      "start": 1150.0,
+      "end": 1155.28,
+      "text": "abdomen and lung. And this is probably liver here screen, right? But we might see it better if we"
+    },
+    {
+      "start": 1155.28,
+      "end": 1159.91,
+      "text": "a bit further lateral. We note a rib shadow, a few b lines and a"
+    },
+    {
+      "start": 1160.0,
+      "end": 1163.54,
+      "text": "small, non-translubar consolidation, also known as a shred sign."
+    },
+    {
+      "start": 1165.68,
+      "end": 1168.8,
+      "text": "So next we'll move over to the left side and perform the same protocol here."
+    },
+    {
+      "start": 1169.41,
+      "end": 1169.97,
+      "text": "So this is out-"
+    },
+    {
+      "start": 1170.0,
+      "end": 1175.02,
+      "text": "one, so the left, superior, anterior chest wall. We're in the mid-clavicular line in about"
+    },
+    {
+      "start": 1175.02,
+      "end": 1179.18,
+      "text": "the second or third interspace, with our probe positioned in a sagittal plane and the"
+    },
+    {
+      "start": 1179.18,
+      "end": 1179.88,
+      "text": "probe marker pointing"
+    },
+    {
+      "start": 1180.0,
+      "end": 1184.33,
+      "text": "up towards the patient's head. We've got our depth set at 11 centimeters, which gives"
+    },
+    {
+      "start": 1184.33,
+      "end": 1188.43,
+      "text": "us a nice visualization of the pleural line, and the fact that it's nice and bright tells"
+    },
+    {
+      "start": 1188.43,
+      "end": 1189.69,
+      "text": "me that I'm properly perpendicular."
+    },
+    {
+      "start": 1190.0,
+      "end": 1192.48,
+      "text": "to the plura, so my angle of incination is appropriate."
+    },
+    {
+      "start": 1193.9,
+      "end": 1196.1,
+      "text": "So interestingly, in this rib's face on screen right,"
+    },
+    {
+      "start": 1196.26,
+      "end": 1198.89,
+      "text": "we can see a lines, but the centered rib's face"
+    },
+    {
+      "start": 1198.89,
+      "end": 1199.97,
+      "text": "is dominated by b-"
+    },
+    {
+      "start": 1200.0,
+      "end": 1204.46,
+      "text": "lines with an irregular appearing plural which can give us a clue as to the underlying pathology."
+    },
+    {
+      "start": 1205.27,
+      "end": 1209.75,
+      "text": "And again, we won't focus on interpretation today, but stay tuned for a future screencast all about the"
+    },
+    {
+      "start": 1210.0,
+      "end": 1212.58,
+      "text": "of long ultrasound for interstitial syndromes."
+    },
+    {
+      "start": 1214.9,
+      "end": 1218.28,
+      "text": "Here we're in L2, the left inferior anterior chest wall."
+    },
+    {
+      "start": 1218.96,
+      "end": 1219.9,
+      "text": "So you can see that on screen."
+    },
+    {
+      "start": 1220.0,
+      "end": 1223.34,
+      "text": "And right here, we have some heart getting in the way, which is very common in this view."
+    },
+    {
+      "start": 1224.0,
+      "end": 1228.0,
+      "text": "And in some patients, you may not be able to maneuver a reasonable L2 view due to interference"
+    },
+    {
+      "start": 1228.0,
+      "end": 1228.54,
+      "text": "from the heart."
+    },
+    {
+      "start": 1229.0,
+      "end": 1229.8,
+      "text": "So do your best."
+    },
+    {
+      "start": 1230.0,
+      "end": 1232.44,
+      "text": "you will find in some patients this point is in obtainable."
+    },
+    {
+      "start": 1233.59,
+      "end": 1235.03,
+      "text": "Here we can see an A-line profile,"
+    },
+    {
+      "start": 1235.35,
+      "end": 1237.03,
+      "text": "again with a nice bright pleural line"
+    },
+    {
+      "start": 1237.03,
+      "end": 1239.01,
+      "text": "indicating that we're appropriately perpendicular"
+    },
+    {
+      "start": 1239.55,
+      "end": 1239.97,
+      "text": "in the same..."
+    },
+    {
+      "start": 1240.0,
+      "end": 1246.6,
+      "text": "entered interspace. Now we're in L3, so this is the left anterior axillary line right"
+    },
+    {
+      "start": 1246.6,
+      "end": 1249.96,
+      "text": "up in the axilla. And note that on our little model here, we're obviously still"
+    },
+    {
+      "start": 1250.0,
+      "end": 1253.4,
+      "text": "on the right side, but clearly you want to be scanning the patient's left at this point."
+    },
+    {
+      "start": 1254.78,
+      "end": 1259.02,
+      "text": "So here in our centered rib space, we can see a bright pleural line, one little a line,"
+    },
+    {
+      "start": 1259.39,
+      "end": 1259.97,
+      "text": "and then if you b-"
+    },
+    {
+      "start": 1260.0,
+      "end": 1262.32,
+      "text": "lines coming in and out of the picture with respiration."
+    },
+    {
+      "start": 1263.49,
+      "end": 1267.71,
+      "text": "Note that if you're unsure if you're seeing true B lines or Z lines, those vertical artifacts"
+    },
+    {
+      "start": 1267.71,
+      "end": 1269.95,
+      "text": "that don't reach the bottom of the screen and don't..."
+    },
+    {
+      "start": 1270.0,
+      "end": 1271.3,
+      "text": "represent interstitial pathology."
+    },
+    {
+      "start": 1271.82,
+      "end": 1274.18,
+      "text": "One nice trick is to cover the top half of your screen"
+    },
+    {
+      "start": 1274.18,
+      "end": 1276.44,
+      "text": "and see if you still see movement of the beelines"
+    },
+    {
+      "start": 1276.44,
+      "end": 1277.68,
+      "text": "down at the bottom of the screen."
+    },
+    {
+      "start": 1280.8,
+      "end": 1284.92,
+      "text": "So here we have our plaps view on the left, so again that postural lateral alveolar plural"
+    },
+    {
+      "start": 1284.92,
+      "end": 1289.8,
+      "text": "syndrome point, and again this view is so key for finding dependent pathology, especially"
+    },
+    {
+      "start": 1290.03,
+      "end": 1294.81,
+      "text": "in our hospitalized bed-bound patients, this dependent due is really where pathology is going to hide,"
+    },
+    {
+      "start": 1294.93,
+      "end": 1299.96,
+      "text": "so this is usually your money shot. So here we're in the mid to post your axillary line on the"
+    },
+    {
+      "start": 1300.0,
+      "end": 1304.14,
+      "text": "left side, capturing that interface between the abdomen and the lung, trying to visualize"
+    },
+    {
+      "start": 1304.14,
+      "end": 1305.02,
+      "text": "the diaphragm."
+    },
+    {
+      "start": 1305.84,
+      "end": 1309.14,
+      "text": "Now this used typically harder to achieve than its counterpart on the right, because the"
+    },
+    {
+      "start": 1309.14,
+      "end": 1309.96,
+      "text": "This lean is a small-"
+    },
+    {
+      "start": 1310.0,
+      "end": 1314.64,
+      "text": "or landmark to identify and is located more superially and posteriorly compared to the liver."
+    },
+    {
+      "start": 1315.38,
+      "end": 1319.0,
+      "text": "So obtaining this to you sometimes requires a bit of elbow grease again to get far enough back"
+    },
+    {
+      "start": 1319.0,
+      "end": 1319.98,
+      "text": "and really de-"
+    },
+    {
+      "start": 1320.03,
+      "end": 1324.97,
+      "text": "your probe into the mattress, or in cooperative mobile patients, asking them to turn over onto"
+    },
+    {
+      "start": 1324.97,
+      "end": 1326.01,
+      "text": "their right side slightly."
+    },
+    {
+      "start": 1326.86,
+      "end": 1329.98,
+      "text": "If you're capturing stomach rather than spleen on the right side of your screen..."
+    },
+    {
+      "start": 1330.0,
+      "end": 1333.5,
+      "text": "in this view, it typically means you're too anterior with your probe."
+    },
+    {
+      "start": 1334.92,
+      "end": 1339.72,
+      "text": "So here we can see spleen on screen right and diaphragm, and in the chest we can see a hypo"
+    },
+    {
+      "start": 1340.0,
+      "end": 1348.36,
+      "text": "or black, plural effusion with an associated consolidation, and there is some ring down artifact coming from the consolidation as it moves in and out of view with respiration."
+    },
+    {
+      "start": 1350.0,
+      "end": 1351.66,
+      "text": "Interest finally here at the bottom of the screen."
+    },
+    {
+      "start": 1351.8,
+      "end": 1353.54,
+      "text": "This is actually a word of that we're seeing."
+    },
+    {
+      "start": 1356.36,
+      "end": 1358.24,
+      "text": "Finally, two clips on the post year chest."
+    },
+    {
+      "start": 1358.66,
+      "end": 1359.8,
+      "text": "So here's the left super."
+    },
+    {
+      "start": 1360.0,
+      "end": 1364.96,
+      "text": "your posterior chest. And again, I often find this spot the trickiest as the ribs are quite"
+    },
+    {
+      "start": 1364.96,
+      "end": 1369.92,
+      "text": "close together. In this centered interspace, we don't really see ARB lines indicating that"
+    },
+    {
+      "start": 1370.0,
+      "end": 1373.6,
+      "text": "probably not truly perpendicular to the plura and would need to adjust our probe"
+    },
+    {
+      "start": 1373.6,
+      "end": 1378.0,
+      "text": "likely with fanning. In this rib space to the screen right, we see a couple of a-lines."
+    },
+    {
+      "start": 1380.7,
+      "end": 1383.54,
+      "text": "And last but not least, the left inferior posterior chest."
+    },
+    {
+      "start": 1384.33,
+      "end": 1385.43,
+      "text": "So this is a bit of a better image."
+    },
+    {
+      "start": 1385.75,
+      "end": 1387.41,
+      "text": "We can see our intra-abdominal organ,"
+    },
+    {
+      "start": 1387.55,
+      "end": 1389.93,
+      "text": "so the spleen in this case, on screen right."
+    },
+    {
+      "start": 1390.0,
+      "end": 1394.26,
+      "text": "as a nice landmark. And we've got a pretty bright, fairly horizontal pleural line with"
+    },
+    {
+      "start": 1394.26,
+      "end": 1399.89,
+      "text": "B lines emanating down from it. Okay, so finally, just to recap a"
+    },
+    {
+      "start": 1400.03,
+      "end": 1400.67,
+      "text": "key points."
+    },
+    {
+      "start": 1401.63,
+      "end": 1406.33,
+      "text": "So lung ultrasound is a bit unique in ultrasound, as it relies on both the visualization of anatomical"
+    },
+    {
+      "start": 1406.33,
+      "end": 1409.97,
+      "text": "structures, like the diaphragm, and artifacts, especially when we're"
+    },
+    {
+      "start": 1410.0,
+      "end": 1413.74,
+      "text": "scanning the lung perrencuma. So an appreciation for these artifacts and an"
+    },
+    {
+      "start": 1413.74,
+      "end": 1418.68,
+      "text": "understanding of how to properly generate them is key. We're typically in a"
+    },
+    {
+      "start": 1418.68,
+      "end": 1419.96,
+      "text": "scan the lung with the curviline-"
+    },
+    {
+      "start": 1420.0,
+      "end": 1424.32,
+      "text": "your probe on the abdominal preset, and you can scan with a phased array or the linear"
+    },
+    {
+      "start": 1424.32,
+      "end": 1428.46,
+      "text": "probe if you're only interested in the plural line, but we generally recommend the curvilinear"
+    },
+    {
+      "start": 1428.46,
+      "end": 1429.9,
+      "text": "probe for most of your lung scan."
+    },
+    {
+      "start": 1431.92,
+      "end": 1435.66,
+      "text": "Your angle of incination is really key with lung ultrasound, so you always want to make"
+    },
+    {
+      "start": 1435.66,
+      "end": 1439.71,
+      "text": "sure that your ultrasound beam is perpendicular to the plurum, and you can identify..."
+    },
+    {
+      "start": 1440.03,
+      "end": 1444.13,
+      "text": "that by ensuring that your pleural line is as bright and crisp as you can make it, and"
+    },
+    {
+      "start": 1444.13,
+      "end": 1446.35,
+      "text": "they are always seeing one of our four basic patterns."
+    },
+    {
+      "start": 1446.91,
+      "end": 1449.85,
+      "text": "So if you don't see one of those things, if all you see is gray fuzz."
+    },
+    {
+      "start": 1450.32,
+      "end": 1452.04,
+      "text": "It generally means that you're not perpendicular"
+    },
+    {
+      "start": 1452.04,
+      "end": 1453.48,
+      "text": "with your angle of incination."
+    },
+    {
+      "start": 1455.34,
+      "end": 1456.26,
+      "text": "Next, make sure you're scanning"
+    },
+    {
+      "start": 1456.26,
+      "end": 1457.96,
+      "text": "representative areas of each lung,"
+    },
+    {
+      "start": 1458.12,
+      "end": 1459.96,
+      "text": "including both the lung perankama and..."
+    },
+    {
+      "start": 1460.0,
+      "end": 1465.34,
+      "text": "the pleura. Our protocol here at UBC is to take 4-6 clips per hemithorox, which includes"
+    },
+    {
+      "start": 1465.34,
+      "end": 1469.56,
+      "text": "two posterior clips per hemithorox in patients who are mobile enough to allow this."
+    },
+    {
+      "start": 1470.45,
+      "end": 1472.61,
+      "text": "And remember, if you have a higher index of suspicion"
+    },
+    {
+      "start": 1472.61,
+      "end": 1475.07,
+      "text": "or if you identify a bit of pathology in one area,"
+    },
+    {
+      "start": 1475.35,
+      "end": 1476.71,
+      "text": "you may want to modify this protocol"
+    },
+    {
+      "start": 1476.71,
+      "end": 1477.69,
+      "text": "and take more clips."
+    },
+    {
+      "start": 1479.38,
+      "end": 1479.9,
+      "text": "Always, always."
+    },
+    {
+      "start": 1480.0,
+      "end": 1483.76,
+      "text": "remember to label your clips as there are no lateralizing features with many of our views,"
+    },
+    {
+      "start": 1483.92,
+      "end": 1487.26,
+      "text": "so if we don't label them, we won't know where on the chest we are when we review the"
+    },
+    {
+      "start": 1487.26,
+      "end": 1487.74,
+      "text": "clips later."
+    },
+    {
+      "start": 1489.26,
+      "end": 1489.96,
+      "text": "And finally, remember..."
+    },
+    {
+      "start": 1490.0,
+      "end": 1494.44,
+      "text": "Remember again that you should always see one of four basic patterns, A lines, B lines,"
+    },
+    {
+      "start": 1495.14,
+      "end": 1499.35,
+      "text": "consolidations, or plural effusions, plus the plural itself of course, which also gives"
+    },
+    {
+      "start": 1499.35,
+      "end": 1499.85,
+      "text": "us information."
+    },
+    {
+      "start": 1500.0,
+      "end": 1505.8,
+      "text": "So now that you're comfortable performing long ultrasound, there are a lot of great resources"
+    },
+    {
+      "start": 1505.8,
+      "end": 1508.48,
+      "text": "to help you acquire and interpret these images correctly."
+    },
+    {
+      "start": 1509.49,
+      "end": 1509.97,
+      "text": "So first, I-"
+    },
+    {
+      "start": 1510.0,
+      "end": 1514.08,
+      "text": "But to just checking out the pitfalls of Lung Ultrasound screencast on the UBC IM-Pogus"
+    },
+    {
+      "start": 1514.08,
+      "end": 1518.82,
+      "text": "site, it covers a lot of common mistakes for both acquisition and interpretation, so"
+    },
+    {
+      "start": 1518.82,
+      "end": 1519.84,
+      "text": "with definitely useful Azure."
+    },
+    {
+      "start": 1520.03,
+      "end": 1524.02,
+      "text": "We've curated some great resources for lung ultrasound"
+    },
+    {
+      "start": 1524.02,
+      "end": 1526.86,
+      "text": "interpretation on our site, look under scanning tutorials"
+    },
+    {
+      "start": 1526.86,
+      "end": 1528.68,
+      "text": "and then lung for more of these videos."
+    },
+    {
+      "start": 1530.03,
+      "end": 1534.15,
+      "text": "Finally, stay tuned for future UBCIM-POKIS screencasts for a deep dive into the nuances"
+    },
+    {
+      "start": 1534.15,
+      "end": 1536.93,
+      "text": "of interpretation of lung ultrasound in various contexts."
+    },
+    {
+      "start": 1539.56,
+      "end": 1539.98,
+      "text": "Alright, that's it."
+    },
+    {
+      "start": 1540.0,
+      "end": 1542.54,
+      "text": "Thanks so much for joining me, and I hope you found this helpful."
+    },
+    {
+      "start": 1543.25,
+      "end": 1548.05,
+      "text": "Be sure to check us out at ubciampocus.com for more polka's resources like this and follow"
+    },
+    {
+      "start": 1548.05,
+      "end": 1548.55,
+      "text": "us on Twitter."
+    },
+    {
+      "start": 1549.28,
+      "end": 1549.98,
+      "text": "Thanks and happy skiing!"
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+{
+  "video_id": "3X0o1-V1jtE",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/3X0o1-V1jtE/asr.txt",
+  "segments": [
+    {
+      "start": 5.34,
+      "end": 8.56,
+      "text": "Welcome to this ultrasound tutorial on the urinary tract."
+    },
+    {
+      "start": 9.18,
+      "end": 13.26,
+      "text": "We will demonstrate a technique for imaging the kidneys and the bladder, stopping along"
+    },
+    {
+      "start": 13.26,
+      "end": 17.12,
+      "text": "the way to point out the relevant anatomy and provide useful technical tips."
+    },
+    {
+      "start": 18.42,
+      "end": 20.02,
+      "text": "Let's start with the left kidney."
+    },
+    {
+      "start": 21.23,
+      "end": 24.47,
+      "text": "First place the probe in the lateral aspect of the left flank."
+    },
+    {
+      "start": 25.19,
+      "end": 27.35,
+      "text": "Orientate the probe in the long axis of the kidney."
+    },
+    {
+      "start": 28.25,
+      "end": 32.76,
+      "text": "With the left kidney in view, we first adjust the gain and then adjust the focus to optimize"
+    },
+    {
+      "start": 32.76,
+      "end": 33.6,
+      "text": "image quality."
+    },
+    {
+      "start": 33.6,
+      "end": 38.6,
+      "text": "We will now freeze the image and illustrate the relevant anatomy."
+    },
+    {
+      "start": 40.44,
+      "end": 44.28,
+      "text": "The renal pelvis is seen as a central, branching, hypo-echoic structure."
+    },
+    {
+      "start": 45.99,
+      "end": 48.29,
+      "text": "The echogenic sinus fat can be seen centrally."
+    },
+    {
+      "start": 50.67,
+      "end": 55.57,
+      "text": "The most superficial layer is the renal cortex, within which the medullary pyramids are seen."
+    },
+    {
+      "start": 58.96,
+      "end": 61.24,
+      "text": "Superior to the left kidney is the spleen, as shown here."
+    },
+    {
+      "start": 63.51,
+      "end": 65.05,
+      "text": "Let us now return to the examination."
+    },
+    {
+      "start": 66.34,
+      "end": 70.42,
+      "text": "We will assess the full volume of the kidney by scanning back and forth, rocking the"
+    },
+    {
+      "start": 70.42,
+      "end": 78.79,
+      "text": "a shown. With the probe along the kidney's central long axis, freeze the image to obtain a measurement"
+    },
+    {
+      "start": 78.79,
+      "end": 84.14,
+      "text": "of renal length. The calipers are used to make this measurement from the tip of the upper pole"
+    },
+    {
+      "start": 84.14,
+      "end": 89.53,
+      "text": "to the tip of the lower pole. Having saved this image, we will now assess the kidney in the transverse"
+    },
+    {
+      "start": 89.53,
+      "end": 97.84,
+      "text": "section. Rotate the probe anti-clockwise through 90 degrees. Assess the whole volume of the kidney."
+    },
+    {
+      "start": 98.8,
+      "end": 105.17,
+      "text": "As demonstrated here, you may need to both angle and slide the probe. Throughout the assessment,"
+    },
+    {
+      "start": 105.17,
+      "end": 114.3,
+      "text": "remember to take representative images of the kidneys. We will now scan the right kidney in a"
+    },
+    {
+      "start": 114.3,
+      "end": 122.48,
+      "text": "similar manner. With the probe placed in the right flank, scan the kidney in the long axis."
+    },
+    {
+      "start": 129.66,
+      "end": 141.52,
+      "text": "The anatomy of the kidney is demonstrated. Of note, the liver lies superior to the right kidney."
+    },
+    {
+      "start": 143.78,
+      "end": 148.14,
+      "text": "The difficulty in obtaining adequate ultrasound images can vary greatly from patient to patient."
+    },
+    {
+      "start": 148.6,
+      "end": 152.98,
+      "text": "If either kidney is obscured by the ribs, ask the patient to elevate their arm up of their head"
+    },
+    {
+      "start": 152.98,
+      "end": 154.22,
+      "text": "or roll onto their side."
+    },
+    {
+      "start": 154.84,
+      "end": 158.14,
+      "text": "Held inspiration is another maneuver that may help reposition the kidney."
+    },
+    {
+      "start": 159.82,
+      "end": 164.38,
+      "text": "Once again rotate the probe 90 degrees anti-clockwise to assess the kidney in its axial plane."
+    },
+    {
+      "start": 167.15,
+      "end": 168.75,
+      "text": "During the examination of the kidney,"
+    },
+    {
+      "start": 169.19,
+      "end": 171.37,
+      "text": "be watchful for signs of the common pathologies."
+    },
+    {
+      "start": 172.56,
+      "end": 177.62,
+      "text": "For example, a dilated pelvis and clubbed calisies indicate the presence of hygienophoresis."
+    },
+    {
+      "start": 178.93,
+      "end": 183.69,
+      "text": "Renal couculi are evidenced by hypo-echoic focai with posterior acoustic shadowing."
+    },
+    {
+      "start": 183.86,
+      "end": 188.64,
+      "text": "while renal cysts are hypoechoic rounded structures found in the corticomodillary region."
+    },
+    {
+      "start": 191.2,
+      "end": 195.02,
+      "text": "Having thoroughly examined both kidneys, we can now move on to the bladder."
+    },
+    {
+      "start": 201.0,
+      "end": 203.12,
+      "text": "We start with the probe in the transverse section."
+    },
+    {
+      "start": 203.98,
+      "end": 207.88,
+      "text": "The bladder should be fully distended with urine to facilitate evaluation of its wall."
+    },
+    {
+      "start": 209.1,
+      "end": 213.12,
+      "text": "You may need to angle the probe under the pubic bone to fully assess the lower portion of the bladder."
+    },
+    {
+      "start": 214.22,
+      "end": 218.34,
+      "text": "During this part of the examination, be alert for signs of bladder malignancy,"
+    },
+    {
+      "start": 218.34,
+      "end": 228.88,
+      "text": "Such as a thickened, irregular bladder wall, rotating the probe 90 degrees clockwise will"
+    },
+    {
+      "start": 229.15,
+      "end": 230.95,
+      "text": "image the bladder in its long axis."
+    },
+    {
+      "start": 233.5,
+      "end": 236.36,
+      "text": "Remember to sweep out past the lateral walls of the bladder."
+    },
+    {
+      "start": 240.82,
+      "end": 243.28,
+      "text": "This concludes the assessment of the urinary bladder."
+    },
+    {
+      "start": 247.36,
+      "end": 250.84,
+      "text": "Throughout this video we have demonstrated the technique for ultrasound assessment of"
+    },
+    {
+      "start": 250.84,
+      "end": 254.7,
+      "text": "the urinary tract, highlighting the relevant anatomy and pathology along the way."
+    },
+    {
+      "start": 255.52,
+      "end": 259.5,
+      "text": "This should provide the basis for you to practice and perfect your own method."
+    }
+  ]
+}

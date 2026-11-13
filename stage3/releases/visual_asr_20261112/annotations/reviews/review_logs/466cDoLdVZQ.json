@@ -1,0 +1,89 @@
+{
+  "video_id": "466cDoLdVZQ",
+  "reviewer": "stage3_b",
+  "review_scope": "Question-led review by Agent B of Agent A draft; not blind. Native full-frame sampled checkpoints and available time-indexed ASR; no continuous replay or direct listening claim.",
+  "reviewer_native_opened": [
+    340,
+    840,
+    1080,
+    1081,
+    1081.25,
+    1081.5,
+    1081.75,
+    1082,
+    1083,
+    1084,
+    1085,
+    1090,
+    1095,
+    1100,
+    1260,
+    1410,
+    1430,
+    1450,
+    1470,
+    1490,
+    1490.5,
+    1490.75,
+    1491,
+    1491.25,
+    1491.5,
+    1492,
+    1494,
+    1496,
+    1498,
+    1500,
+    1725,
+    1740,
+    1750,
+    1760,
+    1765,
+    1765.25,
+    1765.5,
+    1765.75,
+    1766,
+    1767,
+    1768,
+    1769,
+    1770,
+    2020
+  ],
+  "tasks": [
+    {
+      "task_index": 1,
+      "findings": "Confirmed brighter flattened triangular FN immediately right of dark rounded FA; labels shortcut acknowledged.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 2,
+      "findings": "Moved1100to1081.25 first grayscale example, coarse needle course only; exact penetration unsupported.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 3,
+      "findings": "Confirmed shallow exposed shaft with span from left hand to right probe; do not equate hand position with precise skin-entry point.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 4,
+      "findings": "Moved1500to1491 first below-knee slide with already sufficient depth geometry.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 5,
+      "findings": "Moved1770to1765.25 first paired image, preceding1765left black; no live fluid-growth conclusion.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 6,
+      "findings": "Confirmed uniquely identified earlier setup inset: FAleft,FNright under fascia.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    }
+  ]
+}

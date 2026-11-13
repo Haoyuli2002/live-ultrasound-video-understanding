@@ -1,0 +1,123 @@
+{
+  "video_id": "ybVsUDamHQA",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/eval/ybVsUDamHQA/asr.txt",
+  "segments": [
+    {
+      "start": 1.82,
+      "end": 12.17,
+      "text": "Hey everyone, my name is Dr. Allison Hansen and I'm here at Gulf Coast Ultrasound Institute"
+    },
+    {
+      "start": 12.17,
+      "end": 17.23,
+      "text": "for a hot tip of the day. Today we're going to be talking about ultrasound-guided fascia"
+    },
+    {
+      "start": 17.23,
+      "end": 22.23,
+      "text": "iliacoplane block. Let's get to it. This plane block is performed with the linear probe."
+    },
+    {
+      "start": 23.01,
+      "end": 29.16,
+      "text": "Its indications are for femoral fractures as well as hip fractures. It's used for multimodal"
+    },
+    {
+      "start": 29.16,
+      "end": 38.98,
+      "text": "pain control. Typically you start in the inguinal crease. Immediately you'll find your femoral"
+    },
+    {
+      "start": 38.98,
+      "end": 47.81,
+      "text": "vasculature. Here's your artery, here's your vein. Just lateral to that. You see your hyperacoic"
+    },
+    {
+      "start": 48.4,
+      "end": 59.72,
+      "text": "femoral nerve. As you slide more lateral, there's a hyperacoic fascial plane separating two muscle"
+    },
+    {
+      "start": 59.72,
+      "end": 67.55,
+      "text": "bellies. In the far field is your large aliacus muscle and in your near field is your sartorius"
+    },
+    {
+      "start": 67.55,
+      "end": 76.65,
+      "text": "muscle. This fascial plane leads you to your femoral nerve. And the great thing about this femoral"
+    },
+    {
+      "start": 76.65,
+      "end": 85.5,
+      "text": "nerve plane block is that you're not actually dumping anesthetic at the nerve. You are dumping"
+    },
+    {
+      "start": 85.5,
+      "end": 91.64,
+      "text": "the anesthetic in between this fascial plane. It's very safe and generally very easy to do."
+    },
+    {
+      "start": 92.97,
+      "end": 97.95,
+      "text": "Your in-plane technique, trajectory is lateral to medial. You should be able to visualize"
+    },
+    {
+      "start": 98.79,
+      "end": 106.37,
+      "text": "the long axis of your needle coming in. As soon as you feel a pop underneath that fascial"
+    },
+    {
+      "start": 106.37,
+      "end": 114.8,
+      "text": "plane, you'll deliver one to two CCs of either normal saline to hydrodysect or your preferred"
+    },
+    {
+      "start": 114.8,
+      "end": 115.58,
+      "text": "anesthetic."
+    },
+    {
+      "start": 116.85,
+      "end": 124.48,
+      "text": "As you see the anesthetic or normal saline unzip that facial plane, you'll know that you're"
+    },
+    {
+      "start": 124.48,
+      "end": 125.2,
+      "text": "in the right place."
+    },
+    {
+      "start": 126.24,
+      "end": 133.4,
+      "text": "If you see anesthetic bubbling up, you're likely in the musculature, you need to either"
+    },
+    {
+      "start": 133.4,
+      "end": 139.22,
+      "text": "proceed deeper with your needle or pull back and give another one to two CCs testos."
+    },
+    {
+      "start": 139.22,
+      "end": 146.48,
+      "text": "If you're in the right place, again, you'll see the fascia, unzip, as well as depression"
+    },
+    {
+      "start": 146.48,
+      "end": 147.9,
+      "text": "of the iliacus muscle."
+    },
+    {
+      "start": 149.1,
+      "end": 150.46,
+      "text": "That was your hot tip of the day."
+    },
+    {
+      "start": 150.94,
+      "end": 152.14,
+      "text": "Now you go give it a try."
+    }
+  ]
+}

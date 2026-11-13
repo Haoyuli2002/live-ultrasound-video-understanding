@@ -1,0 +1,127 @@
+{
+  "understanding": "Central venous access discussion using probe demonstrations and spectral and color Doppler examples.",
+  "native_opened": [
+    379,
+    380,
+    381,
+    382,
+    383,
+    384,
+    385,
+    390,
+    415,
+    420
+  ],
+  "tasks": [
+    {
+      "qa_type": "event_notification",
+      "query_time": 380,
+      "answer_time": 382,
+      "checkpoints": [
+        381
+      ],
+      "question": "Tell me when the next spectral Doppler trace is shown, and describe the pattern I should look for.",
+      "reference_answer": "The trace is on screen. It has regularly spaced narrow peaks with quiet gaps between them.",
+      "visual_support": "At 380 and 381 the presenter is alone. At 382 an inset shows a trace with repeating peaks.",
+      "query_prefix_check": "The next trace is not yet displayed and its morphology is unconfirmed.",
+      "answer_prefix_check": "The inset is visible and its distinct spaced peaks can be read.",
+      "shortcut_risk": "Moderate. Spoken context may cue pulsatility.",
+      "task_id": "s3_remaining79_j5hICPh4t5w_01",
+      "video_id": "j5hICPh4t5w",
+      "split": "train",
+      "language": "en",
+      "source_video": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/j5hICPh4t5w.mp4",
+      "stage3_value": "medium",
+      "visual_evidence": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/j5hICPh4t5w/380.jpg",
+          "checkpoint": 380.0,
+          "source_pts_seconds": 379.933333,
+          "resolution": [
+            1920,
+            1080
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/j5hICPh4t5w/381.jpg",
+          "checkpoint": 381.0,
+          "source_pts_seconds": 380.933333,
+          "resolution": [
+            1920,
+            1080
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/j5hICPh4t5w/382.jpg",
+          "checkpoint": 382.0,
+          "source_pts_seconds": 381.933333,
+          "resolution": [
+            1920,
+            1080
+          ]
+        }
+      ],
+      "asr_support_segments": [],
+      "query_decision": "WAIT",
+      "answer_decision": "ANSWER",
+      "review_status": "accepted_targeted_native_frame_self_review",
+      "student_input_visibility": "not_checked"
+    },
+    {
+      "qa_type": "temporal_comparison",
+      "query_time": 384,
+      "answer_time": 385,
+      "checkpoints": [
+        382
+      ],
+      "question": "How does the next Doppler trace compare with the one now on screen in the gaps between peaks?",
+      "reference_answer": "The next trace has much more signal between the peaks. The current trace has clearer quiet gaps.",
+      "visual_support": "The trace at 384 shows isolated tall bursts; the later trace at 385 has a denser band between peaks.",
+      "query_prefix_check": "Only the sparse trace is visible at the query.",
+      "answer_prefix_check": "The denser trace is visible by 385 alongside the same type of sampling inset.",
+      "shortcut_risk": "Low. The specific difference is in the plotted traces.",
+      "task_id": "s3_remaining79_j5hICPh4t5w_02",
+      "video_id": "j5hICPh4t5w",
+      "split": "train",
+      "language": "en",
+      "source_video": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/j5hICPh4t5w.mp4",
+      "stage3_value": "medium",
+      "visual_evidence": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/j5hICPh4t5w/382.jpg",
+          "checkpoint": 382.0,
+          "source_pts_seconds": 381.933333,
+          "resolution": [
+            1920,
+            1080
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/j5hICPh4t5w/384.jpg",
+          "checkpoint": 384.0,
+          "source_pts_seconds": 383.933333,
+          "resolution": [
+            1920,
+            1080
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/j5hICPh4t5w/385.jpg",
+          "checkpoint": 385.0,
+          "source_pts_seconds": 384.933333,
+          "resolution": [
+            1920,
+            1080
+          ]
+        }
+      ],
+      "asr_support_segments": [],
+      "query_decision": "WAIT",
+      "answer_decision": "ANSWER",
+      "review_status": "accepted_targeted_native_frame_self_review",
+      "student_input_visibility": "not_checked"
+    }
+  ],
+  "video_id": "j5hICPh4t5w",
+  "review_scope": "Same-assistant review; sampled timeline, original-size key frames, and existing time-indexed ASR when available. No continuous replay or direct audio claim."
+}

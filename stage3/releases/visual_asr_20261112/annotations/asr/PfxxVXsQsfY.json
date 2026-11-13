@@ -1,0 +1,408 @@
+{
+  "video_id": "PfxxVXsQsfY",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/PfxxVXsQsfY/asr.txt",
+  "segments": [
+    {
+      "start": 1.73,
+      "end": 9.81,
+      "text": "Hello and welcome to this Radiology Nation Ultrasound Video Tutorial on the Appendix."
+    },
+    {
+      "start": 11.66,
+      "end": 17.09,
+      "text": "identifying the appendix on a CT scan can be a real difficulty. See if you can identify"
+    },
+    {
+      "start": 17.09,
+      "end": 19.92,
+      "text": "the appendix on this scan. You should be"
+    },
+    {
+      "start": 20.0,
+      "end": 23.92,
+      "text": "looking for a blind-ending tubular structure arising from the seeker."
+    },
+    {
+      "start": 25.04,
+      "end": 29.01,
+      "text": "Now that we've seen what an appendix looks like on CT, let's have a look with ultrasound."
+    },
+    {
+      "start": 30.74,
+      "end": 35.03,
+      "text": "Although the appendix is located in the right iliac fossa, we start with the probe in the"
+    },
+    {
+      "start": 35.03,
+      "end": 39.92,
+      "text": "right flank. This is because we need to define the local anatomy before we head for the"
+    },
+    {
+      "start": 40.0,
+      "end": 45.6,
+      "text": "index. Our first task is to identify the ascending column. If we can find this"
+    },
+    {
+      "start": 45.6,
+      "end": 49.98,
+      "text": "structure, then we can scan in fearily to locate the secret on which we know"
+    },
+    {
+      "start": 50.0,
+      "end": 55.81,
+      "text": "the appendix will arise, as the bowel is likely to contain gas. The ascending colon will appear"
+    },
+    {
+      "start": 55.81,
+      "end": 59.91,
+      "text": "as a densely echogenic structure, but how do we tell the large bowel from..."
+    },
+    {
+      "start": 60.0,
+      "end": 66.06,
+      "text": "small bowel. Well, the colon will have half-strap, which gives it a lobulated contour while the small"
+    },
+    {
+      "start": 66.06,
+      "end": 69.86,
+      "text": "bowel has vaguely conventes, which do not cause undulations in the bowel."
+    },
+    {
+      "start": 70.0,
+      "end": 75.28,
+      "text": "by turning the probe into the long axis of the colon, we are better able to see the"
+    },
+    {
+      "start": 75.28,
+      "end": 78.34,
+      "text": "and therefore confirmed that we are looking at the large bowel."
+    },
+    {
+      "start": 83.3,
+      "end": 89.73,
+      "text": "Now we scan quarter leg be pass from the ascending colon into the seeker."
+    },
+    {
+      "start": 90.22,
+      "end": 93.68,
+      "text": "and then continue inferiority until we have come off the inferior end of the"
+    },
+    {
+      "start": 93.68,
+      "end": 98.8,
+      "text": "seeker. At this point, we scan back up again."
+    },
+    {
+      "start": 100.16,
+      "end": 106.87,
+      "text": "are now looking for the terminal earlier. Finding the terminal earlier is important,"
+    },
+    {
+      "start": 106.87,
+      "end": 109.92,
+      "text": "Exp pathology here can mimic appendiceal pathology."
+    },
+    {
+      "start": 113.01,
+      "end": 115.63,
+      "text": "We first identify the terminal elium in its long axis,"
+    },
+    {
+      "start": 116.62,
+      "end": 119.97,
+      "text": "and then we turn the probe 90 degrees to image it in its axis."
+    },
+    {
+      "start": 120.0,
+      "end": 129.01,
+      "text": "plane. We will now change to a higher frequency probe. This will give us better definition"
+    },
+    {
+      "start": 130.1,
+      "end": 135.21,
+      "text": "You can further optimize your image by applying downward pressure with the probe whilst scanning."
+    },
+    {
+      "start": 136.31,
+      "end": 139.75,
+      "text": "This compresses the intervening soft tissue and improves your image quality."
+    },
+    {
+      "start": 141.41,
+      "end": 147.33,
+      "text": "Just as before, we start in the right flank, scanning down onto the secum and then back up"
+    },
+    {
+      "start": 147.33,
+      "end": 149.03,
+      "text": "to identify the terminal island."
+    },
+    {
+      "start": 151.25,
+      "end": 155.52,
+      "text": "Here we see the terminal island buying just deep for the rectus abdominis muscle."
+    },
+    {
+      "start": 157.54,
+      "end": 159.56,
+      "text": "Unlike the ascending colon we image before."
+    },
+    {
+      "start": 160.19,
+      "end": 164.19,
+      "text": "The small bell does not have house strut and therefore has a smooth wall control."
+    },
+    {
+      "start": 166.17,
+      "end": 169.84,
+      "text": "We image the terminal item in its axial plane, looking for signs of inflammation."
+    },
+    {
+      "start": 170.06,
+      "end": 176.43,
+      "text": "The terminal isleum shown here has a normal wall thickness, and there is no surrounding"
+    },
+    {
+      "start": 176.43,
+      "end": 177.51,
+      "text": "a dimmer or collection."
+    },
+    {
+      "start": 180.42,
+      "end": 185.25,
+      "text": "We will now look closely for the ILS Eagle valve, taking time to optimize our image further"
+    },
+    {
+      "start": 185.25,
+      "end": 186.31,
+      "text": "using the gain control."
+    },
+    {
+      "start": 187.77,
+      "end": 188.75,
+      "text": "This is an important landmark."
+    },
+    {
+      "start": 190.03,
+      "end": 192.63,
+      "text": "the Ileosychol valve defines the position of the seeker."
+    },
+    {
+      "start": 193.76,
+      "end": 196.36,
+      "text": "So once we have found it, we know that the appendix must arise nearby."
+    },
+    {
+      "start": 200.0,
+      "end": 209.98,
+      "text": "for a small blind-ending tubular structure. The position of the appendix varies from person to person and therefore you need to look all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all all"
+    },
+    {
+      "start": 210.0,
+      "end": 212.02,
+      "text": "around the Seacum to be sure of finding it."
+    },
+    {
+      "start": 216.45,
+      "end": 217.31,
+      "text": "I've found the appendix."
+    },
+    {
+      "start": 217.78,
+      "end": 219.34,
+      "text": "You must now image it in its entirety."
+    },
+    {
+      "start": 220.8,
+      "end": 223.15,
+      "text": "as the appendix is small using two hands"
+    },
+    {
+      "start": 223.15,
+      "end": 225.23,
+      "text": "of fine movement control is a useful strategy."
+    },
+    {
+      "start": 230.51,
+      "end": 234.93,
+      "text": "At the tip of this appendix, we can see acoustic shadowing, as there is some gas trapped"
+    },
+    {
+      "start": 234.93,
+      "end": 235.49,
+      "text": "within it."
+    },
+    {
+      "start": 237.65,
+      "end": 239.86,
+      "text": "A useful anatomical landmark is the source."
+    },
+    {
+      "start": 240.03,
+      "end": 249.97,
+      "text": "muscle. The appendix will often be seen overlying this structure. Let's have another look at the appendix."
+    },
+    {
+      "start": 250.0,
+      "end": 256.3,
+      "text": "This time, without the arrow to point it out, see if you can identify it for yourself."
+    },
+    {
+      "start": 275.22,
+      "end": 278.82,
+      "text": "If you are having difficulty, feel free to rewind the video and have another look."
+    },
+    {
+      "start": 293.04,
+      "end": 296.84,
+      "text": "Trying to identify a normal appendix, like this one, is very difficult with ultrasound."
+    },
+    {
+      "start": 298.26,
+      "end": 299.8,
+      "text": "As you will soon see, identify."
+    },
+    {
+      "start": 300.1,
+      "end": 301.74,
+      "text": "and inflamed appendix is much easier."
+    },
+    {
+      "start": 306.31,
+      "end": 308.45,
+      "text": "I've been gone through a strategy for scanning the appendix."
+    },
+    {
+      "start": 308.97,
+      "end": 309.97,
+      "text": "We should now talk about the..."
+    },
+    {
+      "start": 310.03,
+      "end": 318.54,
+      "text": "ultrasound appearances of appendicitis. It is useful to review the CDU appearances of"
+    },
+    {
+      "start": 318.54,
+      "end": 319.98,
+      "text": "appendicitis. As there are..."
+    },
+    {
+      "start": 320.0,
+      "end": 326.15,
+      "text": "some important similarities. In this example of appendicitis, we can see a thick walled"
+    },
+    {
+      "start": 326.44,
+      "end": 329.1,
+      "text": "dilated appendix that is surrounding fat stranding."
+    },
+    {
+      "start": 330.03,
+      "end": 335.96,
+      "text": "actually see the same things with ultrasound. So let's have a look. In this example, we have the thick"
+    },
+    {
+      "start": 335.96,
+      "end": 339.98,
+      "text": "world that led to the appendix, just as we saw on CT. We can also see..."
+    },
+    {
+      "start": 340.0,
+      "end": 344.04,
+      "text": "evidence of the fat stranding seen on CT, as the mesenteric fat appears diffusely"
+    },
+    {
+      "start": 344.04,
+      "end": 347.63,
+      "text": "ecogenic, but there are even more things to note with ultrasound."
+    },
+    {
+      "start": 347.63,
+      "end": 349.87,
+      "text": "Auto sound is a dynamic"
+    },
+    {
+      "start": 350.0,
+      "end": 355.72,
+      "text": "test, you can also look for compressibility and for peristalsus. The absence of both of"
+    },
+    {
+      "start": 355.72,
+      "end": 359.98,
+      "text": "these features further suggests the appendicitis. I'll adopt plersus."
+    },
+    {
+      "start": 360.0,
+      "end": 363.68,
+      "text": "allows you to look for hybrimia, which is another useful supportive feature."
+    },
+    {
+      "start": 364.69,
+      "end": 368.7,
+      "text": "In this example, we can see that the submucosa, although echogenic, is intact."
+    },
+    {
+      "start": 372.05,
+      "end": 374.03,
+      "text": "Here's another example of appendicitis on ultrasound."
+    },
+    {
+      "start": 374.9,
+      "end": 377.18,
+      "text": "Again, we have a dilated thick wall appendix."
+    },
+    {
+      "start": 377.77,
+      "end": 379.97,
+      "text": "This time, there is a discernible fat wrap of an..."
+    },
+    {
+      "start": 380.43,
+      "end": 386.3,
+      "text": "as we continue scanning, we see a defect in the wall of the appendix."
+    },
+    {
+      "start": 388.71,
+      "end": 389.79,
+      "text": "There is also some surrounding."
+    },
+    {
+      "start": 390.03,
+      "end": 390.97,
+      "text": "Heria pendacy or fluid."
+    },
+    {
+      "start": 391.96,
+      "end": 394.44,
+      "text": "These findings are suggestive of a perforated appendix."
+    },
+    {
+      "start": 396.65,
+      "end": 397.59,
+      "text": "During the course of this video,"
+    },
+    {
+      "start": 397.79,
+      "end": 398.95,
+      "text": "I hope to have showed you a strategy"
+    },
+    {
+      "start": 398.95,
+      "end": 399.97,
+      "text": "for imaging the appendix."
+    },
+    {
+      "start": 400.0,
+      "end": 405.72,
+      "text": "ultrasound. This is a difficult skill to acquire, but with practice, you can diagnose appendicitis"
+    },
+    {
+      "start": 405.72,
+      "end": 409.98,
+      "text": "effectively and without the radiation dose of CT. Thank you for watching..."
+    }
+  ]
+}

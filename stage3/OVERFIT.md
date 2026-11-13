@@ -1,6 +1,6 @@
 # Two-video Stage 3 overfit, reconstruction and evaluation
 
-The locally prepared dataset (not bundled in Git) contains **P3FoSFIrfQA and CzLE1i4NSoU**, both from the
+The bundled label dataset (source videos and mock weights are not included) contains **P3FoSFIrfQA and CzLE1i4NSoU**, both from the
 training split: 12 English QA tasks (six immediate, six delayed) and 57 training
 decision rows (45 WAIT, 12 ANSWER). No evaluation-set video is used for fitting.
 These are sampled native-resolution annotations with assistant self-review,

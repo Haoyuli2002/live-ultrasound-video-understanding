@@ -1,0 +1,131 @@
+{
+  "understanding": "Patient education video about breast biopsy with interview narration and brief views of the imaging room, equipment and patient workflow.",
+  "native_opened": [
+    154,
+    155,
+    156,
+    157,
+    160,
+    220,
+    240
+  ],
+  "tasks": [
+    {
+      "qa_type": "event_notification",
+      "query_time": 154,
+      "answer_time": 156,
+      "checkpoints": [
+        155
+      ],
+      "question": "Let me know when the video shows an ultrasound image in the biopsy room.",
+      "reference_answer": "The ultrasound image is visible on the upright monitor beside the exam table. It shows a dark oval region with a bright marker at each end.",
+      "visual_support": "The speaker is on screen at 154 and 155. At 156 the room view shows an upright monitor with the dark oval and two markers.",
+      "query_prefix_check": "The narration introduces ultrasound guidance, but the room monitor has not been shown in this segment.",
+      "answer_prefix_check": "The monitor and the marked oval are visible at 156.",
+      "shortcut_risk": "Moderate. The narration cues the upcoming modality but does not provide the monitor details.",
+      "task_id": "s3_remaining79_8Hyh6tZi9xM_01",
+      "video_id": "8Hyh6tZi9xM",
+      "split": "train",
+      "language": "en",
+      "source_video": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/8Hyh6tZi9xM.mp4",
+      "stage3_value": "medium",
+      "visual_evidence": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/8Hyh6tZi9xM/154.jpg",
+          "checkpoint": 154.0,
+          "source_pts_seconds": 153.945458,
+          "resolution": [
+            3840,
+            2160
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/8Hyh6tZi9xM/155.jpg",
+          "checkpoint": 155.0,
+          "source_pts_seconds": 154.946458,
+          "resolution": [
+            3840,
+            2160
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/8Hyh6tZi9xM/156.jpg",
+          "checkpoint": 156.0,
+          "source_pts_seconds": 155.947458,
+          "resolution": [
+            3840,
+            2160
+          ]
+        }
+      ],
+      "asr_support_segments": [
+        {
+          "start": 140.19,
+          "end": 144.03,
+          "text": "Ultrasound guided biopsies use a core needle biopsy device"
+        },
+        {
+          "start": 144.29,
+          "end": 146.13,
+          "text": "that takes small tissue samples."
+        },
+        {
+          "start": 147.08,
+          "end": 149.96,
+          "text": "A needle biopsy is much less invasive than..."
+        }
+      ],
+      "query_decision": "WAIT",
+      "answer_decision": "ANSWER",
+      "review_status": "accepted_targeted_native_frame_self_review",
+      "student_input_visibility": "not_checked"
+    },
+    {
+      "qa_type": "history_recall",
+      "query_time": 220,
+      "answer_time": 220,
+      "checkpoints": [
+        160
+      ],
+      "question": "Earlier in the exam-room scene, was the patient sitting upright or lying back while the ultrasound image was on the monitor?",
+      "reference_answer": "She was lying on her back on the exam table, with her head supported by a pillow.",
+      "visual_support": "At 160 the patient is reclined beside the monitor. At 220 the patient is upright and leaving the room.",
+      "query_prefix_check": "The earlier room shot with the monitor is already in the stream.",
+      "answer_prefix_check": "The patient's position is visible in the earlier shot.",
+      "shortcut_risk": "Moderate. The exam context makes recumbent positioning plausible.",
+      "task_id": "s3_remaining79_8Hyh6tZi9xM_02",
+      "video_id": "8Hyh6tZi9xM",
+      "split": "train",
+      "language": "en",
+      "source_video": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/8Hyh6tZi9xM.mp4",
+      "stage3_value": "medium",
+      "visual_evidence": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/8Hyh6tZi9xM/160.jpg",
+          "checkpoint": 160.0,
+          "source_pts_seconds": 159.951458,
+          "resolution": [
+            3840,
+            2160
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/8Hyh6tZi9xM/220.jpg",
+          "checkpoint": 220.0,
+          "source_pts_seconds": 219.928042,
+          "resolution": [
+            3840,
+            2160
+          ]
+        }
+      ],
+      "asr_support_segments": [],
+      "query_decision": "ANSWER",
+      "answer_decision": "ANSWER",
+      "review_status": "accepted_targeted_native_frame_self_review",
+      "student_input_visibility": "not_checked"
+    }
+  ],
+  "video_id": "8Hyh6tZi9xM",
+  "review_scope": "Same-assistant review; sampled timeline, original-size key frames, and existing time-indexed ASR when available. No continuous replay or direct audio claim."
+}

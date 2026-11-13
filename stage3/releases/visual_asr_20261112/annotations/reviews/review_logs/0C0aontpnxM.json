@@ -1,0 +1,72 @@
+{
+  "video_id": "0C0aontpnxM",
+  "reviewer": "stage3_b",
+  "review_scope": "Question-led review by Agent B of Agent A draft; not blind. Native full-frame sampled checkpoints and available time-indexed ASR; no continuous replay or direct listening claim.",
+  "reviewer_native_opened": [
+    130,
+    145,
+    145.25,
+    145.5,
+    145.75,
+    146,
+    146.25,
+    147,
+    600,
+    1020,
+    1050,
+    1051,
+    1051.25,
+    1051.5,
+    1051.75,
+    1052,
+    1180,
+    1270,
+    1275,
+    1278,
+    1279,
+    1279.25,
+    1279.5,
+    1279.75,
+    1280,
+    1280.25,
+    1400
+  ],
+  "tasks": [
+    {
+      "task_index": 1,
+      "findings": "Confirmed repeated horizontal echoes between dark shadows at130.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 2,
+      "findings": "Added image-specific within-sector distribution because category/direction predictable from teaching outline; transition145.75negative146positive.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 3,
+      "findings": "Refined1052 to1051.5 and added actual tissue distribution; improvement cue leakage explicitly logged, future straddling ASR excluded.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 4,
+      "findings": "Confirmed central broad vertical band versus right horizontal short echoes at1180; future narration excluded.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 5,
+      "findings": "Refined1280 to1279.25;1279 still masked prior example, next pocket visible1279.25.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 6,
+      "findings": "Confirmed two posterior points on same image-left side, vertically separated lateral to spine; photo absent at1400.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    }
+  ]
+}

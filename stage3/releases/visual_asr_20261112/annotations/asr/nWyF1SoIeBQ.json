@@ -1,0 +1,3488 @@
+{
+  "video_id": "nWyF1SoIeBQ",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/nWyF1SoIeBQ/asr.txt",
+  "segments": [
+    {
+      "start": 0.54,
+      "end": 2.1,
+      "text": "All right, we're ready to go."
+    },
+    {
+      "start": 2.32,
+      "end": 3.5,
+      "text": "So hi, welcome everybody."
+    },
+    {
+      "start": 3.78,
+      "end": 5.52,
+      "text": "Thank you for attending this little lecture here."
+    },
+    {
+      "start": 5.56,
+      "end": 7.3,
+      "text": "I'm going to talk about the bedside lung ultrasound"
+    },
+    {
+      "start": 8.06,
+      "end": 8.86,
+      "text": "and emergency."
+    },
+    {
+      "start": 9.46,
+      "end": 9.88,
+      "text": "I'm Dan Living."
+    },
+    {
+      "start": 10.0,
+      "end": 16.52,
+      "text": "I, as you just heard from Indianapolis, just translocated here to do fellowship."
+    },
+    {
+      "start": 17.31,
+      "end": 19.81,
+      "text": "The third year, Paul, critical care."
+    },
+    {
+      "start": 20.0,
+      "end": 26.12,
+      "text": "Hello, so we will we've met each other and we will interact with each other in the future."
+    },
+    {
+      "start": 26.34,
+      "end": 29.88,
+      "text": "So we as you know in the mic you."
+    },
+    {
+      "start": 30.0,
+      "end": 37.94,
+      "text": "So we promote the use of ultrasound quite often with things to some of our faculty who are"
+    },
+    {
+      "start": 37.94,
+      "end": 39.78,
+      "text": "Stonker advocates of bedside lung ultrasound"
+    },
+    {
+      "start": 40.42,
+      "end": 42.72,
+      "text": "and orbits at ultrasound in general,"
+    },
+    {
+      "start": 43.0,
+      "end": 46.72,
+      "text": "and collaboration with emergency medicine,"
+    },
+    {
+      "start": 46.74,
+      "end": 49.88,
+      "text": "and we are kind of strengthening our teaching in."
+    },
+    {
+      "start": 50.42,
+      "end": 52.4,
+      "text": "And that's a bit of a bit of a bit of a sound."
+    },
+    {
+      "start": 52.76,
+      "end": 54.56,
+      "text": "So today we're going to talk about the blue protocol,"
+    },
+    {
+      "start": 54.56,
+      "end": 55.78,
+      "text": "the bit of a little bit of a sound and emergency,"
+    },
+    {
+      "start": 55.88,
+      "end": 57.0,
+      "text": "which you may may not heard of."
+    },
+    {
+      "start": 57.04,
+      "end": 59.44,
+      "text": "And you probably do to some extent use this."
+    },
+    {
+      "start": 60.03,
+      "end": 69.97,
+      "text": "And the features thereof but maybe haven't heard the entire you know protocol or methodology of it and its entirety so I just want to review that with you and"
+    },
+    {
+      "start": 70.0,
+      "end": 75.98,
+      "text": "And the main premise for using the bedside lung ultrasound is because our standard methods"
+    },
+    {
+      "start": 75.98,
+      "end": 79.32,
+      "text": "of assessing a patient in respiratory distress."
+    },
+    {
+      "start": 80.0,
+      "end": 84.12,
+      "text": "very low sensitivities and specificities. Then, namely, with the use of your"
+    },
+    {
+      "start": 84.12,
+      "end": 88.97,
+      "text": "your stethoscope and chest x-ray. And as we all know, the"
+    },
+    {
+      "start": 90.1,
+      "end": 91.7,
+      "text": "the advantages of ultrasound,"
+    },
+    {
+      "start": 91.7,
+      "end": 93.3,
+      "text": "now that it's become more portable,"
+    },
+    {
+      "start": 93.68,
+      "end": 95.5,
+      "text": "have become manifest."
+    },
+    {
+      "start": 96.02,
+      "end": 99.56,
+      "text": "So moving on, the bedside lung ultrasound protocol."
+    },
+    {
+      "start": 100.0,
+      "end": 107.33,
+      "text": "with the, was designed or developed rather in France in the early 1990s, and it took some"
+    },
+    {
+      "start": 107.33,
+      "end": 109.87,
+      "text": "time, maybe 20 years for it to really become..."
+    },
+    {
+      "start": 110.51,
+      "end": 116.41,
+      "text": "commonplace. And today we want to go through the objectives, and the objectives I want to like"
+    },
+    {
+      "start": 118.21,
+      "end": 119.85,
+      "text": "focus on here are"
+    },
+    {
+      "start": 120.03,
+      "end": 124.42,
+      "text": "one probing your patient and probing your patient meaning never don't be afraid to grab"
+    },
+    {
+      "start": 124.42,
+      "end": 129.84,
+      "text": "a probe for your ultrasound and encourage and a methodology methodological"
+    },
+    {
+      "start": 130.0,
+      "end": 131.9,
+      "text": "approach to your ultrasound techniques,"
+    },
+    {
+      "start": 132.12,
+      "end": 133.36,
+      "text": "identifying those artifacts"
+    },
+    {
+      "start": 133.36,
+      "end": 136.86,
+      "text": "and appreciating the shortcomings of blue"
+    },
+    {
+      "start": 136.86,
+      "end": 139.2,
+      "text": "and shortcomings of ultrasound in general."
+    },
+    {
+      "start": 141.73,
+      "end": 143.43,
+      "text": "The outline here will go through an intro question."
+    },
+    {
+      "start": 143.43,
+      "end": 144.59,
+      "text": "We'll go through a couple of cases."
+    },
+    {
+      "start": 144.79,
+      "end": 147.95,
+      "text": "And with these cases, we will focus on specific portions"
+    },
+    {
+      "start": 147.95,
+      "end": 149.51,
+      "text": "of the algorithm itself."
+    },
+    {
+      "start": 151.02,
+      "end": 152.42,
+      "text": "Now, my first question to you is,"
+    },
+    {
+      "start": 152.5,
+      "end": 156.36,
+      "text": "which probe do you like to use for lung ultrasounds?"
+    },
+    {
+      "start": 156.48,
+      "end": 158.26,
+      "text": "And I'll start with you if you don't mind."
+    },
+    {
+      "start": 158.56,
+      "end": 159.6,
+      "text": "Which probe do you grab?"
+    },
+    {
+      "start": 160.1,
+      "end": 161.04,
+      "text": "when you do a lung ultrasound."
+    },
+    {
+      "start": 161.4,
+      "end": 163.34,
+      "text": "It depends on what you're doing."
+    },
+    {
+      "start": 163.42,
+      "end": 164.1,
+      "text": "OK, great."
+    },
+    {
+      "start": 164.26,
+      "end": 164.84,
+      "text": "You're going to have a little sudden"
+    },
+    {
+      "start": 164.84,
+      "end": 165.82,
+      "text": "you're going to go for it when you're"
+    },
+    {
+      "start": 165.82,
+      "end": 166.82,
+      "text": "going to have a little bit of pressure."
+    },
+    {
+      "start": 167.8,
+      "end": 168.24,
+      "text": "Sure, for you."
+    },
+    {
+      "start": 168.42,
+      "end": 169.7,
+      "text": "Mix it up."
+    },
+    {
+      "start": 170.0,
+      "end": 171.48,
+      "text": "And that's what they did with the,"
+    },
+    {
+      "start": 172.52,
+      "end": 179.78,
+      "text": "but that's not what they did with this particular study with the long ultrasound study, but they used a small"
+    },
+    {
+      "start": 180.35,
+      "end": 186.75,
+      "text": "convex probe which we don't standardly have in the MQ and you may have a small"
+    },
+    {
+      "start": 186.75,
+      "end": 189.75,
+      "text": "context for all of them in the ER, I'm not sure."
+    },
+    {
+      "start": 190.38,
+      "end": 198.21,
+      "text": "But you have your face array, your linear and your convex probe, all of which are sufficient,"
+    },
+    {
+      "start": 198.43,
+      "end": 199.97,
+      "text": "of course, depending on exactly..."
+    },
+    {
+      "start": 200.06,
+      "end": 207.64,
+      "text": "like what you said what you're looking for for your bedside ultrasound you"
+    },
+    {
+      "start": 207.64,
+      "end": 209.98,
+      "text": "and commonly go for a con..."
+    },
+    {
+      "start": 210.0,
+      "end": 215.52,
+      "text": "Pro. Whether it be a smaller large, like you see pictured here, I personally go for the large"
+    },
+    {
+      "start": 215.52,
+      "end": 219.8,
+      "text": "Convex Pro because it will allow me to do a"
+    },
+    {
+      "start": 220.0,
+      "end": 222.08,
+      "text": "And I've done a little exam as well."
+    },
+    {
+      "start": 222.28,
+      "end": 225.0,
+      "text": "It allows me to go back to the posterior aspect"
+    },
+    {
+      "start": 225.0,
+      "end": 226.34,
+      "text": "of the chest in order to,"
+    },
+    {
+      "start": 226.54,
+      "end": 228.14,
+      "text": "without having to switch out probes."
+    },
+    {
+      "start": 228.2,
+      "end": 229.86,
+      "text": "So it's just a more, I guess, practice."
+    },
+    {
+      "start": 230.0,
+      "end": 236.14,
+      "text": "efficient way of using the ultrasound but again it is up to you there's no"
+    },
+    {
+      "start": 236.14,
+      "end": 238.34,
+      "text": "standard approach here with regards to your probe"
+    },
+    {
+      "start": 240.77,
+      "end": 245.42,
+      "text": "So the question is where are you going to place this probe and what are you looking for"
+    },
+    {
+      "start": 245.91,
+      "end": 247.48,
+      "text": "when you place it on the chest?"
+    },
+    {
+      "start": 250.03,
+      "end": 256.27,
+      "text": "look at the history as I alluded to earlier, we have 200-year-old technology that we carry around"
+    },
+    {
+      "start": 256.27,
+      "end": 259.95,
+      "text": "with us daily, and that's in the form of a stethoscope, which was developed in April."
+    },
+    {
+      "start": 260.0,
+      "end": 261.72,
+      "text": "in 1916 by Renée Lennac in France."
+    },
+    {
+      "start": 262.9,
+      "end": 268.8,
+      "text": "And he used this, and then about 90 years later,"
+    },
+    {
+      "start": 270.0,
+      "end": 276.14,
+      "text": "runken who developed the x-ray, incidentally developed the x-ray, and then we have in 1956 the"
+    },
+    {
+      "start": 276.14,
+      "end": 279.2,
+      "text": "first use of the ultrasound, as we know ultrasound to be today."
+    },
+    {
+      "start": 280.0,
+      "end": 289.64,
+      "text": "in Scotland with two OBGYN docs who were using an amalgamation of this technology and the physical laws to create an ultrasound."
+    },
+    {
+      "start": 290.0,
+      "end": 291.98,
+      "text": "picture in the field of OB-GYN."
+    },
+    {
+      "start": 293.19,
+      "end": 297.55,
+      "text": "So the technology thankfully has developed an evolve"
+    },
+    {
+      "start": 297.55,
+      "end": 298.91,
+      "text": "to the point where we can use it."
+    },
+    {
+      "start": 299.03,
+      "end": 299.97,
+      "text": "Now a fun fact."
+    },
+    {
+      "start": 300.0,
+      "end": 309.46,
+      "text": "here the Titanic sinking actually played a large role in the development of the ultrasound. Why? Because after the Titanic sank the"
+    },
+    {
+      "start": 310.06,
+      "end": 314.36,
+      "text": "Your phone was then developed in order to detect icebergs up to two miles away"
+    },
+    {
+      "start": 314.36,
+      "end": 319.96,
+      "text": "It wasn't very directional in a sense, but it allowed but the tight the scene"
+    },
+    {
+      "start": 320.0,
+      "end": 324.88,
+      "text": "of the Titanic in fact spurred the development for kind of pushed along, moved the ball down"
+    },
+    {
+      "start": 324.88,
+      "end": 328.7,
+      "text": "the field if you will, for the development of what we know also sound to be today."
+    },
+    {
+      "start": 330.29,
+      "end": 335.72,
+      "text": "And then in 1992, the blue protocol was developed in France"
+    },
+    {
+      "start": 335.72,
+      "end": 339.55,
+      "text": "and then in 2005 and in subsequently 2015."
+    },
+    {
+      "start": 340.0,
+      "end": 346.62,
+      "text": "we had a review article for the blue protocol and the chest journal. So, in essence, 200 years later,"
+    },
+    {
+      "start": 346.62,
+      "end": 349.7,
+      "text": "we have now a protocol devised for"
+    },
+    {
+      "start": 350.0,
+      "end": 356.22,
+      "text": "assessing the chest for patients in respiratory distress after the development of the stethoscope."
+    },
+    {
+      "start": 358.08,
+      "end": 359.88,
+      "text": "So, how was this..."
+    },
+    {
+      "start": 360.03,
+      "end": 365.42,
+      "text": "In particular, the blue protocol, how was it developed?"
+    },
+    {
+      "start": 365.68,
+      "end": 369.76,
+      "text": "Well, 260 patients were studied in France for those who had"
+    },
+    {
+      "start": 369.76,
+      "end": 369.9,
+      "text": "Trust."
+    },
+    {
+      "start": 370.03,
+      "end": 378.95,
+      "text": "respiratory distress and who were admitted to the ICU and of those of those patients using"
+    },
+    {
+      "start": 380.0,
+      "end": 382.2,
+      "text": "This protocol, about 31% of those patients"
+    },
+    {
+      "start": 382.2,
+      "end": 384.54,
+      "text": "are found to have pneumonia, others pulmonary dima,"
+    },
+    {
+      "start": 384.96,
+      "end": 386.94,
+      "text": "COPD, asthma, PE, and pneumothorax."
+    },
+    {
+      "start": 387.1,
+      "end": 389.56,
+      "text": "Those are the main diagnoses that"
+    },
+    {
+      "start": 390.48,
+      "end": 393.1,
+      "text": "They came to with the use of this ultrasound."
+    },
+    {
+      "start": 393.58,
+      "end": 395.2,
+      "text": "Now, they did not have any history,"
+    },
+    {
+      "start": 395.4,
+      "end": 396.74,
+      "text": "they did not have any laboratory data."
+    },
+    {
+      "start": 397.08,
+      "end": 399.14,
+      "text": "So you're going in and blind patient"
+    },
+    {
+      "start": 399.14,
+      "end": 399.98,
+      "text": "who's in respiratory..."
+    },
+    {
+      "start": 400.0,
+      "end": 401.52,
+      "text": "to stress, you throw a probe on their chest,"
+    },
+    {
+      "start": 401.58,
+      "end": 404.44,
+      "text": "and you can identify one of the main causes"
+    },
+    {
+      "start": 404.44,
+      "end": 405.6,
+      "text": "of the respiratory distress."
+    },
+    {
+      "start": 405.92,
+      "end": 408.22,
+      "text": "Now, what was the diagnostic accuracy of those?"
+    },
+    {
+      "start": 408.98,
+      "end": 409.92,
+      "text": "90.5% percent."
+    },
+    {
+      "start": 410.58,
+      "end": 414.2,
+      "text": "90.5% diagnostic accuracy without any history or labs,"
+    },
+    {
+      "start": 415.01,
+      "end": 416.49,
+      "text": "just based on ultrasound and lung."
+    },
+    {
+      "start": 417.97,
+      "end": 419.97,
+      "text": "Therefore, this protocol with..."
+    },
+    {
+      "start": 420.0,
+      "end": 426.78,
+      "text": "was considered a robust enough to be used in diagnostics."
+    },
+    {
+      "start": 429.16,
+      "end": 429.84,
+      "text": "So that's cool, Dan."
+    },
+    {
+      "start": 430.0,
+      "end": 434.1,
+      "text": "So what about it, what is this protocol that you're talking about and hyping up?"
+    },
+    {
+      "start": 434.32,
+      "end": 439.75,
+      "text": "Well, this is the protocol and forgive me for giving you an algorithm."
+    },
+    {
+      "start": 440.0,
+      "end": 444.66,
+      "text": "like this, but you're not supposed to standardly appear as to doing presentations, you're not"
+    },
+    {
+      "start": 444.66,
+      "end": 447.4,
+      "text": "allowed to give a slide like this."
+    },
+    {
+      "start": 447.4,
+      "end": 449.98,
+      "text": "It's so busy that it just confuses."
+    },
+    {
+      "start": 450.0,
+      "end": 454.82,
+      "text": "everyone. But we'll just walk through this particular algorithm together. As you can see, however,"
+    },
+    {
+      "start": 455.32,
+      "end": 459.9,
+      "text": "in blue, you have your main diagnoses that you're primarily looking for just"
+    },
+    {
+      "start": 460.16,
+      "end": 467.8,
+      "text": "by use of the ultrasound. And that is pneumonia, pulmonary edema, and pulmonary embolism, asthma,"
+    },
+    {
+      "start": 470.0,
+      "end": 471.28,
+      "text": "and the pneumothorax, of course."
+    },
+    {
+      "start": 471.74,
+      "end": 474.3,
+      "text": "So those are the main ones that we're really focusing on."
+    },
+    {
+      "start": 477.08,
+      "end": 479.97,
+      "text": "Let's say you are, we have a VIP page."
+    },
+    {
+      "start": 480.0,
+      "end": 489.3,
+      "text": "His name is Spongebob and you are giving a tour to some unsuspecting residents or candidates in the"
+    },
+    {
+      "start": 490.0,
+      "end": 495.52,
+      "text": "the ICU, somehow you find yourself in the ICU. And suddenly the nurse runs out of a room"
+    },
+    {
+      "start": 495.52,
+      "end": 499.98,
+      "text": "saying that a patient is suddenly hypoxemic and hypotensive. And you don't..."
+    },
+    {
+      "start": 500.0,
+      "end": 502.74,
+      "text": "and where to turn, you're the only one he or she sees."
+    },
+    {
+      "start": 503.9,
+      "end": 505.44,
+      "text": "And then you ask, well, where's the fellows?"
+    },
+    {
+      "start": 505.62,
+      "end": 507.64,
+      "text": "And she says, well, the fellows went off to get smoothies."
+    },
+    {
+      "start": 507.8,
+      "end": 508.54,
+      "text": "Well, where are the residents?"
+    },
+    {
+      "start": 508.72,
+      "end": 509.44,
+      "text": "Well, they're at a meeting."
+    },
+    {
+      "start": 509.7,
+      "end": 509.98,
+      "text": "So..."
+    },
+    {
+      "start": 510.03,
+      "end": 514.83,
+      "text": "You're left with your own devices and you have these candidates with you so you want to show off, right?"
+    },
+    {
+      "start": 515.11,
+      "end": 519.97,
+      "text": "So then behind you staring at you is the Phillips Park and so you just grab a probe and"
+    },
+    {
+      "start": 520.0,
+      "end": 525.53,
+      "text": "move on to the patient's chest to identify what's going on, but what are you gonna do before then?"
+    },
+    {
+      "start": 525.67,
+      "end": 529.75,
+      "text": "Well maybe you'll grab your 200-year-old technology stethoscope and listen to the patient."
+    },
+    {
+      "start": 530.0,
+      "end": 531.6,
+      "text": "and I'll tell you that they are,"
+    },
+    {
+      "start": 531.98,
+      "end": 533.62,
+      "text": "they have diminished breath sounds on the right"
+    },
+    {
+      "start": 533.62,
+      "end": 538.82,
+      "text": "and they have, you can hear breath sounds on the left."
+    },
+    {
+      "start": 539.04,
+      "end": 539.18,
+      "text": "Great."
+    },
+    {
+      "start": 540.0,
+      "end": 543.34,
+      "text": "then you ask for a chest x-ray, but your chest x-ray isn't available because it won't"
+    },
+    {
+      "start": 543.34,
+      "end": 548.12,
+      "text": "pull up an epic, but you can see the read which says that this patient has bolus of"
+    },
+    {
+      "start": 548.12,
+      "end": 549.7,
+      "text": "the theme of hand."
+    },
+    {
+      "start": 550.0,
+      "end": 551.3,
+      "text": "and they're put on rescue by PAP."
+    },
+    {
+      "start": 551.5,
+      "end": 553.18,
+      "text": "They were just admitted, I forgot the mention,"
+    },
+    {
+      "start": 553.24,
+      "end": 554.86,
+      "text": "just a few hours before you saw them"
+    },
+    {
+      "start": 554.86,
+      "end": 556.56,
+      "text": "and they're put on rescue by PAP"
+    },
+    {
+      "start": 556.56,
+      "end": 557.28,
+      "text": "and now they can't breathe."
+    },
+    {
+      "start": 560.06,
+      "end": 561.5,
+      "text": "Right, so your test x-ray?"
+    },
+    {
+      "start": 561.68,
+      "end": 563.04,
+      "text": "Well, you call for a stat test x-ray,"
+    },
+    {
+      "start": 563.12,
+      "end": 563.96,
+      "text": "and what does the tech tell you?"
+    },
+    {
+      "start": 564.08,
+      "end": 564.94,
+      "text": "Well, I'm on the floor."
+    },
+    {
+      "start": 565.26,
+      "end": 566.36,
+      "text": "I'll be there in about five minutes."
+    },
+    {
+      "start": 566.5,
+      "end": 567.3,
+      "text": "You don't have five minutes,"
+    },
+    {
+      "start": 567.56,
+      "end": 569.48,
+      "text": "but you do have a Phillips Spark available."
+    },
+    {
+      "start": 571.25,
+      "end": 573.91,
+      "text": "So you grab your probe, whether it be the linear probe"
+    },
+    {
+      "start": 573.91,
+      "end": 575.79,
+      "text": "or the convex probe, or the phase derailleur probe"
+    },
+    {
+      "start": 575.79,
+      "end": 576.37,
+      "text": "doesn't matter."
+    },
+    {
+      "start": 577.35,
+      "end": 579.98,
+      "text": "Grab your probe, grab your probe, and you put..."
+    },
+    {
+      "start": 580.0,
+      "end": 586.09,
+      "text": "it on the chest. And this is what you see. You see lung sliding, right? We can all agree"
+    },
+    {
+      "start": 586.09,
+      "end": 589.77,
+      "text": "this is lung sliding. And this is on the left side of the chest. No, we're the blue."
+    },
+    {
+      "start": 590.0,
+      "end": 594.93,
+      "text": "box is next you're going to put it on the right side of the chest looking at"
+    },
+    {
+      "start": 594.93,
+      "end": 597.11,
+      "text": "the upper and lower thoracic points loading."
+    },
+    {
+      "start": 600.19,
+      "end": 609.74,
+      "text": "Yes. Upper lower thoracic points and you identify, you identify."
+    },
+    {
+      "start": 610.0,
+      "end": 614.84,
+      "text": "no long sliding. And this is going to be your upper thoracic point up here. Now, what if we go to"
+    },
+    {
+      "start": 614.84,
+      "end": 619.36,
+      "text": "the next one? Well, the next one, you're going to identify..."
+    },
+    {
+      "start": 622.02,
+      "end": 622.36,
+      "text": "What is it?"
+    },
+    {
+      "start": 622.6,
+      "end": 623.06,
+      "text": "Long point."
+    },
+    {
+      "start": 623.36,
+      "end": 623.8,
+      "text": "Long point."
+    },
+    {
+      "start": 624.0,
+      "end": 624.1,
+      "text": "Yes."
+    },
+    {
+      "start": 625.0,
+      "end": 626.12,
+      "text": "So you're going to identify a long point."
+    },
+    {
+      "start": 626.18,
+      "end": 627.84,
+      "text": "And this is at the lower thoracic point."
+    },
+    {
+      "start": 628.22,
+      "end": 629.96,
+      "text": "And you're kind of getting the idea with this blue part."
+    },
+    {
+      "start": 630.03,
+      "end": 635.49,
+      "text": "You've got three thoracic points on each side, you have an upper lower and then you have your plaps point back here"
+    },
+    {
+      "start": 635.49,
+      "end": 639.86,
+      "text": "So we identify a line point and therefore we've diagnosed a pneumo"
+    },
+    {
+      "start": 640.0,
+      "end": 649.42,
+      "text": "And in the original study of 260 patients, about 3% of cases were new motorist, but it is probably the most the most"
+    },
+    {
+      "start": 650.48,
+      "end": 657.54,
+      "text": "say acute and dangerous diagnosis and so therefore important to identify. So you've done"
+    },
+    {
+      "start": 657.54,
+      "end": 659.98,
+      "text": "or made your diagnosis, just based on that, so grab your error."
+    },
+    {
+      "start": 660.03,
+      "end": 667.02,
+      "text": "dark and show off for the candidates. But do you need to wait for a chest x-ray? Well, you could,"
+    },
+    {
+      "start": 667.64,
+      "end": 669.54,
+      "text": "and your chest x-ray would show you this."
+    },
+    {
+      "start": 670.03,
+      "end": 672.79,
+      "text": "Now, this isn't the actual image of SpongeBob, of course,"
+    },
+    {
+      "start": 672.99,
+      "end": 675.59,
+      "text": "because it's not square, but you can identify the fact"
+    },
+    {
+      "start": 675.59,
+      "end": 679.97,
+      "text": "that he has a large pneumothorax, and in the upper thoracic"
+    },
+    {
+      "start": 680.1,
+      "end": 682.7,
+      "text": "point, you have some collapse lung there. So of course, you're not going to"
+    },
+    {
+      "start": 682.7,
+      "end": 687.04,
+      "text": "identify the pneumothorax up there. You have collapse lung, but you go to your"
+    },
+    {
+      "start": 687.04,
+      "end": 689.78,
+      "text": "lower thoracic point and you will then identify your collapse"
+    },
+    {
+      "start": 690.0,
+      "end": 692.52,
+      "text": "and these are the points that I want to look at."
+    },
+    {
+      "start": 692.82,
+      "end": 695.44,
+      "text": "So in essence, what you're looking for is A, sliding,"
+    },
+    {
+      "start": 695.44,
+      "end": 699.58,
+      "text": "and B, a profile."
+    },
+    {
+      "start": 700.91,
+      "end": 705.97,
+      "text": "So, in that profile, you're going to identify either a lines, b lines, or c lines, which you hardly see."
+    },
+    {
+      "start": 707.09,
+      "end": 709.97,
+      "text": "So, again, in that algorithm..."
+    },
+    {
+      "start": 710.0,
+      "end": 713.62,
+      "text": "I go back and the algorithm you notice that the very top the first thing you're looking for is"
+    },
+    {
+      "start": 713.62,
+      "end": 717.28,
+      "text": "long sliding and that's what you you're working for when you grab your linear pro and that's great."
+    },
+    {
+      "start": 718.02,
+      "end": 719.98,
+      "text": "And then the next thing you're looking for is that pro-"
+    },
+    {
+      "start": 720.03,
+      "end": 729.89,
+      "text": "was an AB profile. And as we saw in that particular case, it was an A profile. I'm not going to review it. Let's just"
+    },
+    {
+      "start": 730.0,
+      "end": 737.45,
+      "text": "continue now all right so and so how can you be sure there's no long sliding well"
+    },
+    {
+      "start": 737.45,
+      "end": 739.85,
+      "text": "of course we identified the fact that there was no long"
+    },
+    {
+      "start": 740.03,
+      "end": 742.97,
+      "text": "but to be absolutely sure you can go to real-time imaging"
+    },
+    {
+      "start": 742.97,
+      "end": 748.02,
+      "text": "that is your M mode to look for this stratosphere sign."
+    },
+    {
+      "start": 751.0,
+      "end": 754.72,
+      "text": "The lung sliding is going to occur at the level, of course, of the plural line."
+    },
+    {
+      "start": 755.5,
+      "end": 759.12,
+      "text": "Now, Jackie, can you tell me the plural line?"
+    },
+    {
+      "start": 759.22,
+      "end": 759.84,
+      "text": "Does it represent?"
+    },
+    {
+      "start": 760.03,
+      "end": 761.59,
+      "text": "the Prinal Plura or the Visceral Plura."
+    },
+    {
+      "start": 765.87,
+      "end": 767.95,
+      "text": "Got it, Prinal Plura, always the Prinal Plura."
+    },
+    {
+      "start": 768.17,
+      "end": 768.69,
+      "text": "Got it."
+    },
+    {
+      "start": 770.06,
+      "end": 772.4,
+      "text": "of course, if the versatile chloro is abutting that line,"
+    },
+    {
+      "start": 772.5,
+      "end": 774.6,
+      "text": "then it's going to be both, but in all cases,"
+    },
+    {
+      "start": 775.08,
+      "end": 776.88,
+      "text": "it's considered the parietal chloro."
+    },
+    {
+      "start": 778.53,
+      "end": 779.96,
+      "text": "Now, it's often very..."
+    },
+    {
+      "start": 780.0,
+      "end": 784.94,
+      "text": "discrete. And in which case, if there's long sliding there,"
+    },
+    {
+      "start": 785.08,
+      "end": 789.12,
+      "text": "those ants are crawling as they like to say. But in which case,"
+    },
+    {
+      "start": 789.24,
+      "end": 789.9,
+      "text": "you can just switch"
+    },
+    {
+      "start": 790.0,
+      "end": 791.66,
+      "text": "over to your M mode, which takes a nice"
+    },
+    {
+      "start": 791.66,
+      "end": 793.86,
+      "text": "few seconds and identify whether or not"
+    },
+    {
+      "start": 793.86,
+      "end": 795.06,
+      "text": "there's any lung sliding."
+    },
+    {
+      "start": 795.08,
+      "end": 797.2,
+      "text": "And in this case, with that bar code"
+    },
+    {
+      "start": 797.2,
+      "end": 799.82,
+      "text": "or stratosphere sign, we don't see any lung sliding."
+    },
+    {
+      "start": 800.0,
+      "end": 802.94,
+      "text": "and between the arrows there is your plural line."
+    },
+    {
+      "start": 804.5,
+      "end": 809.9,
+      "text": "So this is what's called somebody please."
+    },
+    {
+      "start": 810.0,
+      "end": 811.64,
+      "text": "Please tell me what this sign is called."
+    },
+    {
+      "start": 813.92,
+      "end": 814.2,
+      "text": "Thank you."
+    },
+    {
+      "start": 814.3,
+      "end": 814.62,
+      "text": "See sure."
+    },
+    {
+      "start": 814.98,
+      "end": 815.06,
+      "text": "Yes."
+    },
+    {
+      "start": 815.3,
+      "end": 819.98,
+      "text": "So you have alveolar gas that is identified here in the..."
+    },
+    {
+      "start": 820.0,
+      "end": 826.91,
+      "text": "sand and I'm sorry in the in the the sea part and the sand or the beach rather is going to be the"
+    },
+    {
+      "start": 826.91,
+      "end": 829.89,
+      "text": "barco to top tissue you see on the upper portion and you see the black"
+    },
+    {
+      "start": 830.1,
+      "end": 836.08,
+      "text": "arrows there corresponding with you per a lot, per a plurah here or your plurah line there."
+    },
+    {
+      "start": 837.74,
+      "end": 839.96,
+      "text": "So this is normal. All right, so we are"
+    },
+    {
+      "start": 840.0,
+      "end": 847.22,
+      "text": "seeing normal long here. This is your C-shore sign. But I want to bring your attention to the use"
+    },
+    {
+      "start": 847.22,
+      "end": 849.98,
+      "text": "of the MO, especially in the case of the MO of Thorax, so you..."
+    },
+    {
+      "start": 850.0,
+      "end": 852.76,
+      "text": "identify what's normal and what's abnormal."
+    },
+    {
+      "start": 853.14,
+      "end": 859.01,
+      "text": "So note that here, note that in the left panel,"
+    },
+    {
+      "start": 859.21,
+      "end": 859.97,
+      "text": "you've got, you,"
+    },
+    {
+      "start": 860.0,
+      "end": 865.42,
+      "text": "you get your A lines, which are a repetition artifact of that plural line. And of course those"
+    },
+    {
+      "start": 865.42,
+      "end": 868.78,
+      "text": "the airlines are going to be equidistant to each other."
+    },
+    {
+      "start": 870.03,
+      "end": 877.33,
+      "text": "And then in your panel on stage left or your right hand side, you're going to have your plural line"
+    },
+    {
+      "start": 878.3,
+      "end": 879.76,
+      "text": "where the just"
+    },
+    {
+      "start": 880.0,
+      "end": 881.74,
+      "text": "where the visceral plura appears."
+    },
+    {
+      "start": 881.96,
+      "end": 883.72,
+      "text": "So the visceral plura is gonna appear here,"
+    },
+    {
+      "start": 883.94,
+      "end": 885.14,
+      "text": "so showing you the sea,"
+    },
+    {
+      "start": 885.38,
+      "end": 887.24,
+      "text": "and then you have free gas in the chest"
+    },
+    {
+      "start": 887.24,
+      "end": 888.32,
+      "text": "over on the right-hand side,"
+    },
+    {
+      "start": 888.5,
+      "end": 889.38,
+      "text": "which is part of that."
+    },
+    {
+      "start": 890.45,
+      "end": 893.09,
+      "text": "you know, stratosphere sign."
+    },
+    {
+      "start": 893.78,
+      "end": 895.2,
+      "text": "And this is your long point"
+    },
+    {
+      "start": 895.2,
+      "end": 897.78,
+      "text": "because it's coming to a point here"
+    },
+    {
+      "start": 897.78,
+      "end": 899.6,
+      "text": "along that vertical line."
+    },
+    {
+      "start": 903.62,
+      "end": 907.53,
+      "text": "All right, this is your normal lung pattern on the left."
+    },
+    {
+      "start": 907.73,
+      "end": 909.67,
+      "text": "This is your stratosphere sign where there's just"
+    },
+    {
+      "start": 910.0,
+      "end": 913.92,
+      "text": "free gas in the chest wall and then that is your long point which you would see on the"
+    },
+    {
+      "start": 914.77,
+      "end": 919.7,
+      "text": "on your M mode. Has anyone diagnosed new with directs using the M mode?"
+    },
+    {
+      "start": 920.0,
+      "end": 921.24,
+      "text": "like this, if you identify."
+    },
+    {
+      "start": 921.42,
+      "end": 924.46,
+      "text": "Yeah, yeah, it's pretty easy to switch it over there"
+    },
+    {
+      "start": 924.46,
+      "end": 925.32,
+      "text": "and take a look."
+    },
+    {
+      "start": 927.99,
+      "end": 929.97,
+      "text": "We had a particular patient in the..."
+    },
+    {
+      "start": 930.03,
+      "end": 931.13,
+      "text": "I see a few months ago back,"
+    },
+    {
+      "start": 931.35,
+      "end": 933.77,
+      "text": "I've read COVID, pneumometheostynamic,"
+    },
+    {
+      "start": 933.85,
+      "end": 936.37,
+      "text": "then developed a tension pneumothorax."
+    },
+    {
+      "start": 936.63,
+      "end": 939.13,
+      "text": "And it was a very similar case as I described where,"
+    },
+    {
+      "start": 939.65,
+      "end": 939.91,
+      "text": "like,"
+    },
+    {
+      "start": 940.03,
+      "end": 942.39,
+      "text": "with SpongeBob, you have, you are suddenly,"
+    },
+    {
+      "start": 942.69,
+      "end": 944.47,
+      "text": "you know, in the ICU and the nurse comes out saying,"
+    },
+    {
+      "start": 944.59,
+      "end": 946.77,
+      "text": "let's get hypertensive hypoxic and you throw a pro bon"
+    },
+    {
+      "start": 946.77,
+      "end": 949.39,
+      "text": "and you see that long point, you don't forget it"
+    },
+    {
+      "start": 949.39,
+      "end": 949.97,
+      "text": "once you see it."
+    },
+    {
+      "start": 950.13,
+      "end": 952.27,
+      "text": "it's really memorable."
+    },
+    {
+      "start": 955.0,
+      "end": 956.1,
+      "text": "So if you don't have any lungs lighting,"
+    },
+    {
+      "start": 956.34,
+      "end": 958.86,
+      "text": "so then what should you consider?"
+    },
+    {
+      "start": 958.98,
+      "end": 959.98,
+      "text": "Of course, pneumothorax, or..."
+    },
+    {
+      "start": 960.0,
+      "end": 966.9,
+      "text": "pneumonia. In which case, if you had pneumonia, then you do have parankyma under that parietal"
+    },
+    {
+      "start": 966.9,
+      "end": 969.96,
+      "text": "plurup, right? And in which case they're going to see..."
+    },
+    {
+      "start": 970.0,
+      "end": 976.17,
+      "text": "be lines. And in the algorithm it says be prime profile that is a fancy way of"
+    },
+    {
+      "start": 976.17,
+      "end": 979.87,
+      "text": "saying you don't have long sliding but you may have some be lines in there."
+    },
+    {
+      "start": 981.06,
+      "end": 984.04,
+      "text": "And a prime, again, you don't have any long sliding,"
+    },
+    {
+      "start": 984.32,
+      "end": 985.2,
+      "text": "but you have a lines."
+    },
+    {
+      "start": 985.81,
+      "end": 987.27,
+      "text": "So that's what the prime indicates"
+    },
+    {
+      "start": 987.27,
+      "end": 988.51,
+      "text": "in the algorithm itself."
+    },
+    {
+      "start": 989.18,
+      "end": 989.8,
+      "text": "No long sliding."
+    },
+    {
+      "start": 990.0,
+      "end": 991.48,
+      "text": "let's consider pneumonia, pneumothorax,"
+    },
+    {
+      "start": 991.7,
+      "end": 994.23,
+      "text": "just an easy way to think of it."
+    },
+    {
+      "start": 997.1,
+      "end": 998.42,
+      "text": "So the question is, what are B lines?"
+    },
+    {
+      "start": 998.64,
+      "end": 999.98,
+      "text": "What make up these B lines?"
+    },
+    {
+      "start": 1000.0,
+      "end": 1007.58,
+      "text": "lines, can someone give me a differential for absent lung sliding and we can start off"
+    },
+    {
+      "start": 1007.58,
+      "end": 1008.76,
+      "text": "with Mimotor X."
+    },
+    {
+      "start": 1011.98,
+      "end": 1012.1,
+      "text": "Sorry."
+    },
+    {
+      "start": 1013.06,
+      "end": 1014.39,
+      "text": "Oh, that's a good one."
+    },
+    {
+      "start": 1016.98,
+      "end": 1017.58,
+      "text": "Yes!"
+    },
+    {
+      "start": 1018.04,
+      "end": 1018.64,
+      "text": "Yes!"
+    },
+    {
+      "start": 1021.02,
+      "end": 1029.56,
+      "text": "Apnea, yes. Exactly. Or, I mean,"
+    },
+    {
+      "start": 1030.0,
+      "end": 1032.88,
+      "text": "And an extension to that is, if you tube the goose,"
+    },
+    {
+      "start": 1033.2,
+      "end": 1036.06,
+      "text": "and the patient remains paralyzed,"
+    },
+    {
+      "start": 1036.4,
+      "end": 1037.82,
+      "text": "you're not gonna have any movement."
+    },
+    {
+      "start": 1038.51,
+      "end": 1039.85,
+      "text": "So it's a suffigial."
+    },
+    {
+      "start": 1040.0,
+      "end": 1045.0,
+      "text": "far-loving RSI where the patient remains paralyzed, or remains to"
+    },
+    {
+      "start": 1045.0,
+      "end": 1049.26,
+      "text": "medivation or occlusion, or poor respiratory effort, as I said, it's very"
+    },
+    {
+      "start": 1049.26,
+      "end": 1049.76,
+      "text": "discreet."
+    },
+    {
+      "start": 1050.0,
+      "end": 1051.98,
+      "text": "time, especially in the upper lung field, to see that"
+    },
+    {
+      "start": 1051.98,
+      "end": 1056.47,
+      "text": "lung sliding, in which case your immodularity helps. And"
+    },
+    {
+      "start": 1056.47,
+      "end": 1059.27,
+      "text": "plural of fusion, inflammatory adherence, like an ARDS"
+    },
+    {
+      "start": 1059.27,
+      "end": 1059.85,
+      "text": "plural of five."
+    },
+    {
+      "start": 1060.0,
+      "end": 1065.28,
+      "text": "which will most often see in the unit and so that's the things to think about if"
+    },
+    {
+      "start": 1065.28,
+      "end": 1069.76,
+      "text": "you don't see any lung sliding. Most importantly, pneumothorax or tubing"
+    },
+    {
+      "start": 1070.0,
+      "end": 1079.72,
+      "text": "of course. So let's just talk about B lines really quickly. When I think about B lines, I think about the rays of light that shine through water."
+    },
+    {
+      "start": 1080.42,
+      "end": 1084.52,
+      "text": "And in this particular image, you can imagine the boat is your probe and the B-line, so the"
+    },
+    {
+      "start": 1084.52,
+      "end": 1089.24,
+      "text": "erase of light underneath, of course we don't have sharks in fish and scuba divers in our lungs,"
+    },
+    {
+      "start": 1090.0,
+      "end": 1091.42,
+      "text": "of an interesting way of thinking of it."
+    },
+    {
+      "start": 1092.56,
+      "end": 1094.24,
+      "text": "Now, after you establish whether or not there's"
+    },
+    {
+      "start": 1094.24,
+      "end": 1096.54,
+      "text": "plural sliding, then you want to see which artifact"
+    },
+    {
+      "start": 1096.54,
+      "end": 1097.8,
+      "text": "is under the surface."
+    },
+    {
+      "start": 1098.0,
+      "end": 1099.86,
+      "text": "And that's what this particular image"
+    },
+    {
+      "start": 1100.0,
+      "end": 1103.96,
+      "text": "represents. You've established lungs lighting plus or minus lungs lighting and"
+    },
+    {
+      "start": 1103.96,
+      "end": 1107.04,
+      "text": "now you want to look at what's under the surface. Are they eight lines or"
+    },
+    {
+      "start": 1107.04,
+      "end": 1108.7,
+      "text": "B lines and specifically B lines."
+    },
+    {
+      "start": 1110.0,
+      "end": 1116.54,
+      "text": "So in the in the mid 90s, Daniel Lichtenstein, who is the father of sort of, that's at Lone"
+    },
+    {
+      "start": 1116.54,
+      "end": 1119.97,
+      "text": "Ultrasound, established for the first time that there are two."
+    },
+    {
+      "start": 1120.0,
+      "end": 1128.26,
+      "text": "structural correlates to those B lines. What are they? A Dima and Phybrosis. And he correlated"
+    },
+    {
+      "start": 1128.26,
+      "end": 1129.88,
+      "text": "And I did this data with C."
+    },
+    {
+      "start": 1130.03,
+      "end": 1136.28,
+      "text": "scans and it showed that B lines were very correlative to thickening of the subplural interlibrular"
+    },
+    {
+      "start": 1136.28,
+      "end": 1139.32,
+      "text": "and in case of interstitial edema."
+    },
+    {
+      "start": 1140.0,
+      "end": 1143.08,
+      "text": "and two fibrotic thickening in the case of chloral fibrosis."
+    },
+    {
+      "start": 1143.66,
+      "end": 1147.24,
+      "text": "So the B lines, therefore, represent a DEMA or fibrosis."
+    },
+    {
+      "start": 1148.06,
+      "end": 1149.88,
+      "text": "And then in the early 2000s, B lines"
+    },
+    {
+      "start": 1149.88,
+      "end": 1149.98,
+      "text": "I'm sorry, I'm sorry."
+    },
+    {
+      "start": 1150.0,
+      "end": 1156.42,
+      "text": "than validated as a finding that correlates with the degree of extra vascular lung water."
+    },
+    {
+      "start": 1156.72,
+      "end": 1159.98,
+      "text": "So there's a correlation between your amount of B lines and the extra"
+    },
+    {
+      "start": 1160.0,
+      "end": 1160.92,
+      "text": "the vascular long part."
+    },
+    {
+      "start": 1161.2,
+      "end": 1166.76,
+      "text": "So here we have our image again of the two upper thoracic,"
+    },
+    {
+      "start": 1167.17,
+      "end": 1169.85,
+      "text": "of the two thoracic lung points on your right hand side."
+    },
+    {
+      "start": 1171.34,
+      "end": 1172.52,
+      "text": "and the screen's right-hand side."
+    },
+    {
+      "start": 1172.94,
+      "end": 1174.94,
+      "text": "And then a correlating CT scan"
+    },
+    {
+      "start": 1174.94,
+      "end": 1176.92,
+      "text": "followed by an ultrasound image."
+    },
+    {
+      "start": 1176.92,
+      "end": 1179.62,
+      "text": "And you can see up here is where your probe is"
+    },
+    {
+      "start": 1179.62,
+      "end": 1179.96,
+      "text": "on the..."
+    },
+    {
+      "start": 1180.0,
+      "end": 1189.98,
+      "text": "upper left hand corner of the CT scan image. So the name of the B-line artifact is also known as"
+    },
+    {
+      "start": 1190.0,
+      "end": 1195.44,
+      "text": "a comet tail artifact. So you may often hear of it as being a comet tail artifact. You may hear"
+    },
+    {
+      "start": 1195.44,
+      "end": 1198.62,
+      "text": "your long rockets, but they're, they're belies."
+    },
+    {
+      "start": 1200.0,
+      "end": 1204.08,
+      "text": "These are long comatil artifacts arising from the plural line as we just established."
+    },
+    {
+      "start": 1204.9,
+      "end": 1209.56,
+      "text": "And multiple long rockets here in the ultrasound image are seen."
+    },
+    {
+      "start": 1210.29,
+      "end": 1214.21,
+      "text": "just about three millimeters or so from that plural line"
+    },
+    {
+      "start": 1214.21,
+      "end": 1217.09,
+      "text": "and that is representative of that ground-glass opacity"
+    },
+    {
+      "start": 1217.09,
+      "end": 1218.71,
+      "text": "you see in the right of our vote."
+    },
+    {
+      "start": 1219.5,
+      "end": 1219.82,
+      "text": "And..."
+    },
+    {
+      "start": 1220.0,
+      "end": 1223.64,
+      "text": "You can identify it as a grand glass opacity"
+    },
+    {
+      "start": 1223.64,
+      "end": 1225.64,
+      "text": "because of the way the B lines look."
+    },
+    {
+      "start": 1225.78,
+      "end": 1226.98,
+      "text": "They're not very discrete B lines,"
+    },
+    {
+      "start": 1227.14,
+      "end": 1229.32,
+      "text": "they're multiple B lines like over five or four."
+    },
+    {
+      "start": 1230.0,
+      "end": 1232.4,
+      "text": "six of them maybe, and they kind of coalesce together."
+    },
+    {
+      "start": 1233.78,
+      "end": 1236.36,
+      "text": "And I'll show you in this next one, then, you have,"
+    },
+    {
+      "start": 1236.64,
+      "end": 1239.2,
+      "text": "if you bring the probe down to that lower thoracic point,"
+    },
+    {
+      "start": 1239.2,
+      "end": 1239.98,
+      "text": "you have..."
+    },
+    {
+      "start": 1242.28,
+      "end": 1248.68,
+      "text": "in which case you have more discrete B lines or they're more defined B lines."
+    },
+    {
+      "start": 1250.06,
+      "end": 1254.08,
+      "text": "And again, this is shown in thickened hydrolyphilic septae,"
+    },
+    {
+      "start": 1254.56,
+      "end": 1256.5,
+      "text": "which you would find in also edema or pneumonia."
+    },
+    {
+      "start": 1256.82,
+      "end": 1259.8,
+      "text": "So there's a clear difference between a gradual opacity."
+    },
+    {
+      "start": 1260.32,
+      "end": 1268.76,
+      "text": "b-line and inter and thickened interlocker or septal b-lines so the b-lines are"
+    },
+    {
+      "start": 1268.76,
+      "end": 1269.4,
+      "text": "going to be present"
+    },
+    {
+      "start": 1270.42,
+      "end": 1274.1,
+      "text": "Normally, anyway, especially, maybe not anteriorly,"
+    },
+    {
+      "start": 1274.18,
+      "end": 1276.5,
+      "text": "but definitely in the more dependent part of the lungs, right?"
+    },
+    {
+      "start": 1276.68,
+      "end": 1279.82,
+      "text": "We both see this, you know, patients are generally..."
+    },
+    {
+      "start": 1280.0,
+      "end": 1284.28,
+      "text": "don't have much lung pathology and you're going to see some B lines. And generally it's in like"
+    },
+    {
+      "start": 1284.28,
+      "end": 1289.74,
+      "text": "elderly folks end or at the lung bases. So"
+    },
+    {
+      "start": 1290.0,
+      "end": 1293.6,
+      "text": "less than how many B lines is considered normal."
+    },
+    {
+      "start": 1294.68,
+      "end": 1297.93,
+      "text": "You tell me, less than three, exactly."
+    },
+    {
+      "start": 1298.47,
+      "end": 1299.69,
+      "text": "So that's considered normal, especially."
+    },
+    {
+      "start": 1300.0,
+      "end": 1308.54,
+      "text": "like I said, elderly and posteriorly. Now an A-line is comprised of multiple"
+    },
+    {
+      "start": 1308.54,
+      "end": 1309.98,
+      "text": "horrible horrible horrible horrible horrible horrible horrible horrible horrible horrible horrible horrible horrible horrible horrible horrible horrible horrible horrible horrible horrible horrible horrible horrible horrible horrible horrible horrible horrible horrible horrible horrible horrible horrible horrible horrible"
+    },
+    {
+      "start": 1310.0,
+      "end": 1313.1,
+      "text": "There's like a stack of coins, if you will, multiple horizontal lines."
+    },
+    {
+      "start": 1313.72,
+      "end": 1318.58,
+      "text": "And when you see these B lines, these are just indicative of air, air fluid inner"
+    },
+    {
+      "start": 1318.58,
+      "end": 1319.9,
+      "text": "interface and the"
+    },
+    {
+      "start": 1320.0,
+      "end": 1322.18,
+      "text": "the waves bouncing off that air fluid interface."
+    },
+    {
+      "start": 1322.5,
+      "end": 1328.1,
+      "text": "So you're going to see what's called a J line in your B lines."
+    },
+    {
+      "start": 1328.36,
+      "end": 1329.82,
+      "text": "Sometimes you'll see them, sometimes you won't."
+    },
+    {
+      "start": 1330.8,
+      "end": 1339.89,
+      "text": "and this represents the air fluid interface and and also B lines will erase your A lines as you can see here B line"
+    },
+    {
+      "start": 1340.0,
+      "end": 1345.39,
+      "text": "you're racing those eight lines. This pattern is reminiscent of a rocket lift off"
+    },
+    {
+      "start": 1345.39,
+      "end": 1349.9,
+      "text": "hence the practical term lung rockets as well. Now as a"
+    },
+    {
+      "start": 1350.0,
+      "end": 1356.84,
+      "text": "mentioned earlier, the amount of b lines is going to be correlating with the amount of"
+    },
+    {
+      "start": 1356.84,
+      "end": 1359.96,
+      "text": "long water so and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and"
+    },
+    {
+      "start": 1360.0,
+      "end": 1363.82,
+      "text": "related to the amount of air you have in the lungs, and that's what this slide"
+    },
+    {
+      "start": 1363.82,
+      "end": 1368.76,
+      "text": "demonstrates is you have a bunch of air you have no B lines. You have more"
+    },
+    {
+      "start": 1368.76,
+      "end": 1369.88,
+      "text": "fluid in the system"
+    },
+    {
+      "start": 1370.03,
+      "end": 1372.83,
+      "text": "or more fluid, extra vascular lung water,"
+    },
+    {
+      "start": 1373.07,
+      "end": 1375.31,
+      "text": "and then you create more bee lines, more bee lines,"
+    },
+    {
+      "start": 1375.31,
+      "end": 1377.95,
+      "text": "and then eventually with consolidation"
+    },
+    {
+      "start": 1377.95,
+      "end": 1379.53,
+      "text": "or hepatization of the lung."
+    },
+    {
+      "start": 1380.06,
+      "end": 1381.36,
+      "text": "You're not going to have any B lines either."
+    },
+    {
+      "start": 1382.33,
+      "end": 1384.35,
+      "text": "So this is correlating with the amount of errors"
+    },
+    {
+      "start": 1384.35,
+      "end": 1386.31,
+      "text": "inversely related to the amount of error you have."
+    },
+    {
+      "start": 1387.7,
+      "end": 1389.97,
+      "text": "So what causes our..."
+    },
+    {
+      "start": 1390.54,
+      "end": 1392.46,
+      "text": "B lines over the comment tail artifact."
+    },
+    {
+      "start": 1393.5,
+      "end": 1395.92,
+      "text": "As we said, it's an interface between air and fluid."
+    },
+    {
+      "start": 1398.55,
+      "end": 1399.97,
+      "text": "So again, your, your"
+    },
+    {
+      "start": 1400.0,
+      "end": 1405.18,
+      "text": "or your B lines, they may slide, they may move"
+    },
+    {
+      "start": 1405.18,
+      "end": 1408.14,
+      "text": "or they may not move with the floor line."
+    },
+    {
+      "start": 1408.5,
+      "end": 1409.62,
+      "text": "It's not a definite."
+    },
+    {
+      "start": 1410.58,
+      "end": 1415.3,
+      "text": "And it's also known as a hyper aerobic artifact,"
+    },
+    {
+      "start": 1415.7,
+      "end": 1417.72,
+      "text": "interestingly enough, it's kind of a new term I learned."
+    },
+    {
+      "start": 1420.03,
+      "end": 1422.33,
+      "text": "So let's compare the B lines to the other artifacts."
+    },
+    {
+      "start": 1422.51,
+      "end": 1423.35,
+      "text": "We already saw A lines."
+    },
+    {
+      "start": 1423.35,
+      "end": 1425.43,
+      "text": "We just kind of dove into B lines,"
+    },
+    {
+      "start": 1426.31,
+      "end": 1429.61,
+      "text": "and C lines are another artifact you may represent."
+    },
+    {
+      "start": 1430.03,
+      "end": 1439.98,
+      "text": "under the surface. And this is simply consolidation in the subplural space that you may see which is directly correlated with"
+    },
+    {
+      "start": 1440.03,
+      "end": 1442.81,
+      "text": "and pneumonia itself when you go back to the algorithm."
+    },
+    {
+      "start": 1443.5,
+      "end": 1445.48,
+      "text": "So in A, you have normal aerated lung"
+    },
+    {
+      "start": 1445.48,
+      "end": 1448.02,
+      "text": "with that repetition artifact, A lines, and B,"
+    },
+    {
+      "start": 1448.24,
+      "end": 1449.76,
+      "text": "we just talked about with the air fluid interface."
+    },
+    {
+      "start": 1450.48,
+      "end": 1455.26,
+      "text": "You're going to see pulmonary Dema, you're going to recognize pneumonia or consolidated"
+    },
+    {
+      "start": 1455.26,
+      "end": 1457.8,
+      "text": "lung in, if you see seed lines."
+    },
+    {
+      "start": 1457.98,
+      "end": 1459.82,
+      "text": "And again, these are all going to be seen in tears."
+    },
+    {
+      "start": 1460.58,
+      "end": 1462.26,
+      "text": "You can diagnose these conditions"
+    },
+    {
+      "start": 1462.26,
+      "end": 1464.6,
+      "text": "anteriorly with those upper and lower thoracic points."
+    },
+    {
+      "start": 1465.34,
+      "end": 1467.46,
+      "text": "Again, CT corresponding with those findings"
+    },
+    {
+      "start": 1467.46,
+      "end": 1469.98,
+      "text": "and like I said in the algorithm, you may or may"
+    },
+    {
+      "start": 1470.03,
+      "end": 1473.09,
+      "text": "not have long-sliding, but if you see B lines, then you're talking about"
+    },
+    {
+      "start": 1473.09,
+      "end": 1479.82,
+      "text": "Dima or pneumonia. All right, so do you need to have, do you need that"
+    },
+    {
+      "start": 1480.0,
+      "end": 1484.73,
+      "text": "of sliding bilaterally, or what if it's absence on one side?"
+    },
+    {
+      "start": 1485.07,
+      "end": 1486.75,
+      "text": "If it's absent on one side, you've got a problem."
+    },
+    {
+      "start": 1486.87,
+      "end": 1488.67,
+      "text": "As we just talked about, absence of one sliding,"
+    },
+    {
+      "start": 1488.73,
+      "end": 1489.97,
+      "text": "especially bilaterally, you've got an app."
+    },
+    {
+      "start": 1490.1,
+      "end": 1498.17,
+      "text": "patients, you've to the goose or your patients paralyzed for some reason, all right. So let's get off"
+    },
+    {
+      "start": 1498.17,
+      "end": 1498.49,
+      "text": "to that."
+    },
+    {
+      "start": 1500.03,
+      "end": 1503.57,
+      "text": "As I alluded to earlier, you establish a long sliding"
+    },
+    {
+      "start": 1503.57,
+      "end": 1504.77,
+      "text": "at stage one, stage two."
+    },
+    {
+      "start": 1504.97,
+      "end": 1506.55,
+      "text": "You're gonna establish your profile"
+    },
+    {
+      "start": 1506.55,
+      "end": 1508.07,
+      "text": "and so you wanna see what's under the surface."
+    },
+    {
+      "start": 1510.16,
+      "end": 1512.2,
+      "text": "Now where do we go with this?"
+    },
+    {
+      "start": 1512.52,
+      "end": 1513.26,
+      "text": "What's our next step?"
+    },
+    {
+      "start": 1513.54,
+      "end": 1517.82,
+      "text": "Our next step, we've looked at the interior chest."
+    },
+    {
+      "start": 1518.16,
+      "end": 1519.98,
+      "text": "Now we want to go back around to the-"
+    },
+    {
+      "start": 1520.06,
+      "end": 1526.47,
+      "text": "point. The third point is what's called your plaques point. And forget your name, can you tell me"
+    },
+    {
+      "start": 1526.47,
+      "end": 1528.91,
+      "text": "Spencer? Can you tell me what plaques work?"
+    },
+    {
+      "start": 1530.0,
+      "end": 1536.76,
+      "text": "It's an acronym for Stereolateral Albiolar Laurel Syndrome."
+    },
+    {
+      "start": 1537.35,
+      "end": 1539.11,
+      "text": "It's a mouthful, so that's why we say flaps."
+    },
+    {
+      "start": 1540.8,
+      "end": 1545.58,
+      "text": "Okay, before we go to plaps,"
+    },
+    {
+      "start": 1545.74,
+      "end": 1547.76,
+      "text": "just wanna reiterate that interiorly,"
+    },
+    {
+      "start": 1547.84,
+      "end": 1549.8,
+      "text": "you can identify these conditions."
+    },
+    {
+      "start": 1550.0,
+      "end": 1559.34,
+      "text": "Just based on your lung ultrasound on the upper and lower anterior thoracic points, so if you have the A profile you can look at you can bring in"
+    },
+    {
+      "start": 1560.19,
+      "end": 1564.52,
+      "text": "anything that doesn't require or consists of pathology"
+    },
+    {
+      "start": 1564.52,
+      "end": 1565.4,
+      "text": "within the perankama."
+    },
+    {
+      "start": 1565.82,
+      "end": 1568.48,
+      "text": "So COPD or asthma, you may have a PE,"
+    },
+    {
+      "start": 1568.76,
+      "end": 1569.98,
+      "text": "you may have..."
+    },
+    {
+      "start": 1570.29,
+      "end": 1573.45,
+      "text": "pneumonia that's hiding laterally, posteriorly,"
+    },
+    {
+      "start": 1573.55,
+      "end": 1575.67,
+      "text": "or posterior laterally in your flat point."
+    },
+    {
+      "start": 1576.78,
+      "end": 1577.66,
+      "text": "You have that B profile,"
+    },
+    {
+      "start": 1577.76,
+      "end": 1579.92,
+      "text": "we've got the V lines, then you're looking in."
+    },
+    {
+      "start": 1580.0,
+      "end": 1583.9,
+      "text": "pneumonia or pulmonary dima, and you can pretty much rule,"
+    },
+    {
+      "start": 1584.08,
+      "end": 1588.18,
+      "text": "you can't rule out, you can, you can like diminish on your"
+    },
+    {
+      "start": 1588.18,
+      "end": 1589.6,
+      "text": "diagnosis, uh, a PE."
+    },
+    {
+      "start": 1590.1,
+      "end": 1592.76,
+      "text": "and definitely pneumothorax, because you've got prank in my"
+    },
+    {
+      "start": 1592.76,
+      "end": 1595.48,
+      "text": "clearly for those B lines, so you don't have a pneumothorax."
+    },
+    {
+      "start": 1597.63,
+      "end": 1599.85,
+      "text": "And then your AB profile, I did not mention this before."
+    },
+    {
+      "start": 1600.03,
+      "end": 1603.27,
+      "text": "to have A on one side, B on the other side, in which case,"
+    },
+    {
+      "start": 1603.47,
+      "end": 1604.77,
+      "text": "you have them on one side."
+    },
+    {
+      "start": 1607.0,
+      "end": 1609.97,
+      "text": "Now, this is the C profile where you have consul-"
+    },
+    {
+      "start": 1611.1,
+      "end": 1614.06,
+      "text": "This is the right middle lobe, which is totally consolidated."
+    },
+    {
+      "start": 1614.26,
+      "end": 1619.86,
+      "text": "That's hyperrocoic there, and you have this kind of shredded sort of appearance in the hyperrocoic area."
+    },
+    {
+      "start": 1620.0,
+      "end": 1627.45,
+      "text": "with the arrows pointing to, and Dr. Tava remind me out here, would this be considered a ring"
+    },
+    {
+      "start": 1627.45,
+      "end": 1628.07,
+      "text": "down sign."
+    },
+    {
+      "start": 1630.1,
+      "end": 1636.12,
+      "text": "It's kind of the same concept as giving that B line to you know,"
+    },
+    {
+      "start": 1636.18,
+      "end": 1639.87,
+      "text": "but the close service, the air, air fluid interface."
+    },
+    {
+      "start": 1640.0,
+      "end": 1642.5,
+      "text": "You've seen that kind of the periphery of that consolidation."
+    },
+    {
+      "start": 1643.4,
+      "end": 1645.73,
+      "text": "It's like you've seen all the other stuff"
+    },
+    {
+      "start": 1645.73,
+      "end": 1648.53,
+      "text": "and the less consolidated, but still like a"
+    },
+    {
+      "start": 1648.53,
+      "end": 1649.11,
+      "text": "Demonist."
+    },
+    {
+      "start": 1649.49,
+      "end": 1649.67,
+      "text": "Yeah."
+    },
+    {
+      "start": 1650.0,
+      "end": 1654.36,
+      "text": "Okay, okay, so that's another artifact within an artifact. It's kind of cool."
+    },
+    {
+      "start": 1656.54,
+      "end": 1659.98,
+      "text": "As I mentioned earlier, you have your upper lower thoracic points. We just walked..."
+    },
+    {
+      "start": 1660.1,
+      "end": 1662.68,
+      "text": "through that. And now, if you don't see any pathology here"
+    },
+    {
+      "start": 1662.68,
+      "end": 1665.5,
+      "text": "internally, you can just move around to the back and you can"
+    },
+    {
+      "start": 1665.5,
+      "end": 1668.96,
+      "text": "move around to the posterior axillary line along"
+    },
+    {
+      "start": 1670.0,
+      "end": 1679.46,
+      "text": "The horse on a line about the fourth intercostal space so where that lower thoracic point is you just move right on around to that posterior axillary line"
+    },
+    {
+      "start": 1680.0,
+      "end": 1682.06,
+      "text": "And look back here, the most dependent part of the lung,"
+    },
+    {
+      "start": 1682.3,
+      "end": 1683.7,
+      "text": "like we do in most of our patients."
+    },
+    {
+      "start": 1683.7,
+      "end": 1684.88,
+      "text": "You just throw a probe back there"
+    },
+    {
+      "start": 1684.88,
+      "end": 1686.16,
+      "text": "and they kind of get uncomfortable"
+    },
+    {
+      "start": 1686.16,
+      "end": 1689.88,
+      "text": "and don't hurt me, but you really want to see."
+    },
+    {
+      "start": 1690.0,
+      "end": 1694.52,
+      "text": "what is hiding back there at the in the sulcai."
+    },
+    {
+      "start": 1695.04,
+      "end": 1697.54,
+      "text": "So you will then identify the, you know,"
+    },
+    {
+      "start": 1697.62,
+      "end": 1698.94,
+      "text": "you look for your diaphragm,"
+    },
+    {
+      "start": 1699.02,
+      "end": 1699.98,
+      "text": "you look for your lung, you look for..."
+    },
+    {
+      "start": 1700.0,
+      "end": 1703.14,
+      "text": "fusion and all the rest. This is what we call the plaques point, posterior lateral,"
+    },
+    {
+      "start": 1703.52,
+      "end": 1707.5,
+      "text": "alveolar plural syndrome point. And..."
+    },
+    {
+      "start": 1710.16,
+      "end": 1714.66,
+      "text": "In the blue protocol, we talked about the main diseases, pneumonia, heart failure, pneumothrax."
+    },
+    {
+      "start": 1714.7,
+      "end": 1718.54,
+      "text": "You can see those anteriorly, but what about COPD asthma and PE?"
+    },
+    {
+      "start": 1719.04,
+      "end": 1719.9,
+      "text": "Those are not seen."
+    },
+    {
+      "start": 1720.0,
+      "end": 1723.48,
+      "text": "but inferred when signs for the others are not seen"
+    },
+    {
+      "start": 1723.48,
+      "end": 1725.3,
+      "text": "or they're ruled out, essentially."
+    },
+    {
+      "start": 1725.88,
+      "end": 1727.32,
+      "text": "And again, with accuracy,"
+    },
+    {
+      "start": 1727.54,
+      "end": 1729.32,
+      "text": "a diagnostic accuracy of over 90%."
+    },
+    {
+      "start": 1733.78,
+      "end": 1736.86,
+      "text": "Okay, can someone tell me when we look at the upper lower"
+    },
+    {
+      "start": 1736.86,
+      "end": 1739.89,
+      "text": "thoracic points and we see this, what do we,"
+    },
+    {
+      "start": 1740.46,
+      "end": 1741.92,
+      "text": "Do we have long sliding or not?"
+    },
+    {
+      "start": 1742.0,
+      "end": 1744.1,
+      "text": "I'm gonna tell you actually we have long sliding here."
+    },
+    {
+      "start": 1745.58,
+      "end": 1747.24,
+      "text": "And now, what is it?"
+    },
+    {
+      "start": 1747.3,
+      "end": 1748.48,
+      "text": "What profile do we see here?"
+    },
+    {
+      "start": 1751.34,
+      "end": 1756.08,
+      "text": "So if one sliding with the April file, that's normal."
+    },
+    {
+      "start": 1757.04,
+      "end": 1759.98,
+      "text": "Now we go to around the corner to the"
+    },
+    {
+      "start": 1760.03,
+      "end": 1764.85,
+      "text": "because this is normal up here, but our guy is in respiratory, our patient is in respiratory distress."
+    },
+    {
+      "start": 1766.43,
+      "end": 1769.83,
+      "text": "And what do we expect to see at this claps point?"
+    },
+    {
+      "start": 1770.03,
+      "end": 1772.05,
+      "text": "they're in respiratory distress, maybe nothing."
+    },
+    {
+      "start": 1772.41,
+      "end": 1773.39,
+      "text": "Maybe it's normal too."
+    },
+    {
+      "start": 1773.57,
+      "end": 1775.37,
+      "text": "In which case, you would consider something"
+    },
+    {
+      "start": 1775.37,
+      "end": 1779.91,
+      "text": "intravascular like a PE, or COPD or ASCO, which you would"
+    },
+    {
+      "start": 1780.03,
+      "end": 1784.09,
+      "text": "pick up on with other diagnostic kind of work up anyway."
+    },
+    {
+      "start": 1785.67,
+      "end": 1787.79,
+      "text": "And this is the part of the algorithm we're going to go down."
+    },
+    {
+      "start": 1788.13,
+      "end": 1789.31,
+      "text": "And this is what's called..."
+    },
+    {
+      "start": 1790.54,
+      "end": 1793.32,
+      "text": "This is what's called the nude algorithm"
+    },
+    {
+      "start": 1794.78,
+      "end": 1797.51,
+      "text": "or the nude profile, as they call it,"
+    },
+    {
+      "start": 1797.57,
+      "end": 1799.97,
+      "text": "because everything is normal and..."
+    },
+    {
+      "start": 1800.26,
+      "end": 1803.84,
+      "text": "And then at the end of the day, you've got COPD, you're asking, and there's nothing"
+    },
+    {
+      "start": 1804.42,
+      "end": 1807.38,
+      "text": "perlimally that you're going to be able to see with the ultrasound."
+    },
+    {
+      "start": 1808.37,
+      "end": 1809.85,
+      "text": "So it's another another"
+    },
+    {
+      "start": 1810.06,
+      "end": 1811.12,
+      "text": "to throw in your basket."
+    },
+    {
+      "start": 1813.05,
+      "end": 1815.09,
+      "text": "So again, we're starting with long sliding."
+    },
+    {
+      "start": 1815.27,
+      "end": 1817.37,
+      "text": "We go to the profile and then we go to the pap's point."
+    },
+    {
+      "start": 1817.73,
+      "end": 1818.35,
+      "text": "That's the point."
+    },
+    {
+      "start": 1818.61,
+      "end": 1819.97,
+      "text": "And I want to..."
+    },
+    {
+      "start": 1821.22,
+      "end": 1825.26,
+      "text": "My modification is, if you notice in this particular algorithm,"
+    },
+    {
+      "start": 1825.44,
+      "end": 1827.56,
+      "text": "they say if you're normal here in the thoracic points,"
+    },
+    {
+      "start": 1827.74,
+      "end": 1829.52,
+      "text": "then you should do a DVT scan."
+    },
+    {
+      "start": 1830.06,
+      "end": 1831.64,
+      "text": "and then go back to the plot's point."
+    },
+    {
+      "start": 1831.78,
+      "end": 1833.38,
+      "text": "And I say, no, it doesn't make any sense"
+    },
+    {
+      "start": 1833.38,
+      "end": 1836.96,
+      "text": "because I've got a thoracic abdominal probe in my hand."
+    },
+    {
+      "start": 1836.96,
+      "end": 1839.5,
+      "text": "I'm not gonna switch probes and look at the veins here."
+    },
+    {
+      "start": 1840.0,
+      "end": 1840.64,
+      "text": "and then go back."
+    },
+    {
+      "start": 1841.14,
+      "end": 1844.4,
+      "text": "So I can just move on around to the posterior aspect"
+    },
+    {
+      "start": 1844.4,
+      "end": 1846.96,
+      "text": "of the chest, look at that, and then go to the veins."
+    },
+    {
+      "start": 1848.15,
+      "end": 1849.43,
+      "text": "That's dance modification."
+    },
+    {
+      "start": 1850.06,
+      "end": 1850.8,
+      "text": "might not be yours."
+    },
+    {
+      "start": 1854.3,
+      "end": 1856.38,
+      "text": "So what do we see at this point?"
+    },
+    {
+      "start": 1856.38,
+      "end": 1857.28,
+      "text": "What do we expect to see?"
+    },
+    {
+      "start": 1857.42,
+      "end": 1859.52,
+      "text": "As we mentioned earlier, we see a fusion."
+    },
+    {
+      "start": 1860.0,
+      "end": 1866.57,
+      "text": "consolidation and in this particular case you have your ultrasound probe here and this is what"
+    },
+    {
+      "start": 1866.57,
+      "end": 1869.91,
+      "text": "you're going to see in this particular field."
+    },
+    {
+      "start": 1870.0,
+      "end": 1879.98,
+      "text": "There are four anatomical features you want to identify to ensure you're in the right spot for anatomical features one is the chest wall"
+    },
+    {
+      "start": 1880.0,
+      "end": 1886.55,
+      "text": "at the top, diaphragm on the right, your posterior chest wall here under the"
+    },
+    {
+      "start": 1886.55,
+      "end": 1889.91,
+      "text": "effusion, and then along. So those are the four anatomical"
+    },
+    {
+      "start": 1890.03,
+      "end": 1893.96,
+      "text": "Now, you want to look for dynamic changes within this space."
+    },
+    {
+      "start": 1894.91,
+      "end": 1897.07,
+      "text": "You want to look for the diaphragm moving down"
+    },
+    {
+      "start": 1897.07,
+      "end": 1898.43,
+      "text": "when the patient breathes."
+    },
+    {
+      "start": 1898.43,
+      "end": 1899.97,
+      "text": "You want to look for maybe some..."
+    },
+    {
+      "start": 1900.0,
+      "end": 1905.26,
+      "text": "swirling inside that if you want to see what's like floating around in that"
+    },
+    {
+      "start": 1905.26,
+      "end": 1907.96,
+      "text": "if you should remember in that picture we had some sharks and some scuba"
+    },
+    {
+      "start": 1907.96,
+      "end": 1909.75,
+      "text": "divers you may not see that"
+    },
+    {
+      "start": 1910.0,
+      "end": 1912.68,
+      "text": "you may see some debris in that effusion."
+    },
+    {
+      "start": 1912.94,
+      "end": 1913.8,
+      "text": "And you want to see also,"
+    },
+    {
+      "start": 1914.02,
+      "end": 1917.06,
+      "text": "the arrow is pointing to air bronchograms."
+    },
+    {
+      "start": 1917.06,
+      "end": 1918.74,
+      "text": "You may see some changes there."
+    },
+    {
+      "start": 1921.47,
+      "end": 1925.64,
+      "text": "Can somebody tell me the diagnostic accuracy"
+    },
+    {
+      "start": 1925.64,
+      "end": 1929.88,
+      "text": "of lung ultrasound with a plural of fusion?"
+    },
+    {
+      "start": 1930.0,
+      "end": 1932.78,
+      "text": "with the Alveolar Consolidation, Alveolar and Estitial Syndrome."
+    },
+    {
+      "start": 1933.06,
+      "end": 1939.05,
+      "text": "As you can see in the original study, they noted that"
+    },
+    {
+      "start": 1940.0,
+      "end": 1944.52,
+      "text": "for pleural effusion had diagnostic accuracy of 61%."
+    },
+    {
+      "start": 1945.07,
+      "end": 1949.19,
+      "text": "And just radio radiography had 47% diagnostic accuracy."
+    },
+    {
+      "start": 1949.37,
+      "end": 1949.97,
+      "text": "Can you guess what?"
+    },
+    {
+      "start": 1950.03,
+      "end": 1958.84,
+      "text": "ultrasound would be. It's got to be at least 75% for aviolar consolidation that's 75% for chest"
+    },
+    {
+      "start": 1958.84,
+      "end": 1959.48,
+      "text": "to radiography."
+    },
+    {
+      "start": 1960.67,
+      "end": 1964.53,
+      "text": "So, wait for it, 90%."
+    },
+    {
+      "start": 1964.53,
+      "end": 1969.06,
+      "text": "In all cases, you have over 90% diagnostic accuracy"
+    },
+    {
+      "start": 1969.06,
+      "end": 1969.98,
+      "text": "with lung altars..."
+    },
+    {
+      "start": 1970.0,
+      "end": 1971.44,
+      "text": "in these particular cases,"
+    },
+    {
+      "start": 1971.44,
+      "end": 1972.76,
+      "text": "did diagnosed plural effusion,"
+    },
+    {
+      "start": 1973.14,
+      "end": 1973.88,
+      "text": "alveolar consolidation,"
+    },
+    {
+      "start": 1974.34,
+      "end": 1975.94,
+      "text": "and alveolar interstitial syndrome."
+    },
+    {
+      "start": 1976.26,
+      "end": 1976.9,
+      "text": "So the question is,"
+    },
+    {
+      "start": 1977.02,
+      "end": 1978.08,
+      "text": "why do we use our stethoscope?"
+    },
+    {
+      "start": 1980.32,
+      "end": 1985.96,
+      "text": "condition. And because it's just"
+    },
+    {
+      "start": 1985.96,
+      "end": 1987.08,
+      "text": "convenient, you can carry it in your"
+    },
+    {
+      "start": 1987.08,
+      "end": 1988.48,
+      "text": "pocket. You can't necessarily carry"
+    },
+    {
+      "start": 1988.48,
+      "end": 1989.86,
+      "text": "an ultrasound in your pocket. Yeah."
+    },
+    {
+      "start": 1991.66,
+      "end": 1999.27,
+      "text": "I want to go through principles all right so the main the main seven principles of"
+    },
+    {
+      "start": 2000.0,
+      "end": 2005.66,
+      "text": "and sign appreciated or identified with this particular study are one to keep it simple."
+    },
+    {
+      "start": 2006.02,
+      "end": 2009.79,
+      "text": "You've heard the acronym KISS, Keep It Simple Scholar. That's what they wanted to do."
+    },
+    {
+      "start": 2010.0,
+      "end": 2016.46,
+      "text": "And keep this idea simple because it requires just one probe for all these thoracic points."
+    },
+    {
+      "start": 2017.02,
+      "end": 2019.76,
+      "text": "And then to keep it superficial."
+    },
+    {
+      "start": 2020.0,
+      "end": 2024.12,
+      "text": "with the idea that almost all acute life threatening disorders are going to"
+    },
+    {
+      "start": 2024.12,
+      "end": 2029.82,
+      "text": "be a but the plural line. So keep it superficial and then thirdly just"
+    },
+    {
+      "start": 2030.0,
+      "end": 2032.48,
+      "text": "watch the upper part of the pie here."
+    },
+    {
+      "start": 2032.56,
+      "end": 2034.14,
+      "text": "You'll see new pie pieces coming in."
+    },
+    {
+      "start": 2034.93,
+      "end": 2037.05,
+      "text": "So we've got thoracic points as we identified."
+    },
+    {
+      "start": 2037.27,
+      "end": 2039.43,
+      "text": "The lung is the most voluminous organ in the body."
+    },
+    {
+      "start": 2040.0,
+      "end": 2046.8,
+      "text": "unless you have somebody with a pad of megalene, in which case you could argue, so you can identify"
+    },
+    {
+      "start": 2046.8,
+      "end": 2048.58,
+      "text": "or you can..."
+    },
+    {
+      "start": 2050.1,
+      "end": 2058.91,
+      "text": "like, you know, standardize your thoracic points because you have a consistency of that organ."
+    },
+    {
+      "start": 2058.91,
+      "end": 2059.89,
+      "text": "plural line"
+    },
+    {
+      "start": 2060.03,
+      "end": 2066.01,
+      "text": "is next. Know that all signs arise from the parole line. Remember we talked about the probe"
+    },
+    {
+      "start": 2066.01,
+      "end": 2069.85,
+      "text": "which is like the boat in the water and then you see A lines B lines are C."
+    },
+    {
+      "start": 2070.03,
+      "end": 2076.65,
+      "text": "lines from there. So identifying your plural line is key. Identifying lung"
+    },
+    {
+      "start": 2076.65,
+      "end": 2079.97,
+      "text": "sliding also, the lung is a vital organ and signs arising from them."
+    },
+    {
+      "start": 2080.03,
+      "end": 2084.53,
+      "text": "The plural line are foremost dynamic, so it's appreciating the fact that you have dynamic"
+    },
+    {
+      "start": 2084.53,
+      "end": 2085.05,
+      "text": "changes."
+    },
+    {
+      "start": 2086.18,
+      "end": 2089.02,
+      "text": "Part of facts, these are static signs that remain the artificial."
+    },
+    {
+      "start": 2090.0,
+      "end": 2095.32,
+      "text": "that we have artifacts and then the seventh most I like this is my favorite"
+    },
+    {
+      "start": 2096.02,
+      "end": 2099.98,
+      "text": "actually is the fact that your your air rises and fluid falls to"
+    },
+    {
+      "start": 2100.38,
+      "end": 2102.54,
+      "text": "If you have a new author X, it's going to rise up here."
+    },
+    {
+      "start": 2102.64,
+      "end": 2104.56,
+      "text": "If you have fluid, it's going to hide back here."
+    },
+    {
+      "start": 2105.55,
+      "end": 2107.93,
+      "text": "So these are the seven principles to keep in mind"
+    },
+    {
+      "start": 2107.93,
+      "end": 2109.77,
+      "text": "when you're doing long ultrasound."
+    },
+    {
+      "start": 2110.0,
+      "end": 2119.97,
+      "text": "What are the third case? So plankton plankton plankton plankton feels puny. Okay, so plankton is a 40-year-old male with"
+    },
+    {
+      "start": 2120.0,
+      "end": 2121.56,
+      "text": "Type-1 diabetes, poorly controlled,"
+    },
+    {
+      "start": 2121.76,
+      "end": 2124.14,
+      "text": "frequently admitted for DKA, has poor dentition,"
+    },
+    {
+      "start": 2124.3,
+      "end": 2126.24,
+      "text": "presented the ED with constitutional symptoms"
+    },
+    {
+      "start": 2126.24,
+      "end": 2127.58,
+      "text": "of malaise fatigue fever."
+    },
+    {
+      "start": 2128.18,
+      "end": 2129.98,
+      "text": "Recently, I had right-sided ple-"
+    },
+    {
+      "start": 2131.06,
+      "end": 2132.7,
+      "text": "with shortness of breath."
+    },
+    {
+      "start": 2132.96,
+      "end": 2135.06,
+      "text": "And he feels upset because he feels lousy."
+    },
+    {
+      "start": 2135.86,
+      "end": 2138.16,
+      "text": "Now, you notice the Michelin sounds on the right"
+    },
+    {
+      "start": 2138.16,
+      "end": 2139.9,
+      "text": "with some agophony and on the left."
+    },
+    {
+      "start": 2140.0,
+      "end": 2142.18,
+      "text": "it's unremarkable, his stachocardic and febrile."
+    },
+    {
+      "start": 2142.7,
+      "end": 2148.06,
+      "text": "Testic's ray is ordered, but the tech was called to a stat portable x-ray in the"
+    },
+    {
+      "start": 2148.06,
+      "end": 2149.5,
+      "text": "make you because of a new motorist."
+    },
+    {
+      "start": 2150.0,
+      "end": 2152.52,
+      "text": "Now, the Phillips Park is parked just behind you"
+    },
+    {
+      "start": 2152.52,
+      "end": 2154.4,
+      "text": "or it's just down the hall so you need to grab that"
+    },
+    {
+      "start": 2154.4,
+      "end": 2156.72,
+      "text": "and identify what's going on with this guy."
+    },
+    {
+      "start": 2157.32,
+      "end": 2158.6,
+      "text": "Again, no imagery, no labs."
+    },
+    {
+      "start": 2159.0,
+      "end": 2159.96,
+      "text": "All you know is that it feels..."
+    },
+    {
+      "start": 2160.13,
+      "end": 2169.45,
+      "text": "Keeping in mind our principles we want to keep it simple we have to we want to know if there are any superficial findings look at our"
+    },
+    {
+      "start": 2170.0,
+      "end": 2172.18,
+      "text": "are thoracic points up or lower and flaps."
+    },
+    {
+      "start": 2173.66,
+      "end": 2176.18,
+      "text": "Look at the plural line, see if there's any sliding in it."
+    },
+    {
+      "start": 2176.26,
+      "end": 2177.86,
+      "text": "Look for artifacts underneath it."
+    },
+    {
+      "start": 2178.34,
+      "end": 2179.74,
+      "text": "And remember that..."
+    },
+    {
+      "start": 2180.1,
+      "end": 2182.64,
+      "text": "air could be up here, or fluid is going to be down here."
+    },
+    {
+      "start": 2185.59,
+      "end": 2186.75,
+      "text": "Now, let's come back to plankton."
+    },
+    {
+      "start": 2186.93,
+      "end": 2189.03,
+      "text": "We have our anterior thoracic points."
+    },
+    {
+      "start": 2189.39,
+      "end": 2189.89,
+      "text": "We have."
+    },
+    {
+      "start": 2190.0,
+      "end": 2193.72,
+      "text": "sliding a lines from both up or lower thoracic points but we need to look"
+    },
+    {
+      "start": 2194.34,
+      "end": 2198.25,
+      "text": "posteriorly and this is what we see posteriorly and this is where the"
+    },
+    {
+      "start": 2198.25,
+      "end": 2198.73,
+      "text": "butterfly."
+    },
+    {
+      "start": 2200.77,
+      "end": 2203.83,
+      "text": "We see good lung sliding there, that's good."
+    },
+    {
+      "start": 2204.52,
+      "end": 2209.46,
+      "text": "At the upper lower thoracic points, and we see a lines."
+    },
+    {
+      "start": 2210.03,
+      "end": 2212.91,
+      "text": "Again, this is the nude profile, if you will,"
+    },
+    {
+      "start": 2212.93,
+      "end": 2214.23,
+      "text": "where we have good, long-sliding,"
+    },
+    {
+      "start": 2214.33,
+      "end": 2215.73,
+      "text": "we have a line, so that's all normal."
+    },
+    {
+      "start": 2216.4,
+      "end": 2217.2,
+      "text": "So now what do we do?"
+    },
+    {
+      "start": 2218.8,
+      "end": 2219.92,
+      "text": "We go around."
+    },
+    {
+      "start": 2220.0,
+      "end": 2228.67,
+      "text": "to our plaques point here. And we identify, we need to identify any and the underlying pathology."
+    },
+    {
+      "start": 2230.16,
+      "end": 2232.36,
+      "text": "What is your suspicion for a PD?"
+    },
+    {
+      "start": 2237.21,
+      "end": 2238.27,
+      "text": "Okay, let's move on."
+    },
+    {
+      "start": 2239.12,
+      "end": 2239.96,
+      "text": "So now we..."
+    },
+    {
+      "start": 2240.16,
+      "end": 2249.54,
+      "text": "go for the plops point and this is what we see at the plops point for Mr. Plankton."
+    },
+    {
+      "start": 2251.31,
+      "end": 2258.72,
+      "text": "and we can identify the plankton sign."
+    },
+    {
+      "start": 2260.0,
+      "end": 2264.14,
+      "text": "there. So this is swirling debris agitated by cardiac and respiratory"
+    },
+    {
+      "start": 2264.14,
+      "end": 2269.75,
+      "text": "motion. And the take home point is that it represents an exudative process here."
+    },
+    {
+      "start": 2270.06,
+      "end": 2277.56,
+      "text": "So again, I don't know how many of these you've seen, but it's really quite interesting."
+    },
+    {
+      "start": 2278.62,
+      "end": 2279.94,
+      "text": "I think we get more excited."
+    },
+    {
+      "start": 2280.0,
+      "end": 2281.56,
+      "text": "that the patient does about these findings,"
+    },
+    {
+      "start": 2282.16,
+      "end": 2287.09,
+      "text": "but the B of swirling debris inside the pleural effusion."
+    },
+    {
+      "start": 2287.25,
+      "end": 2289.25,
+      "text": "So that's what's hiding out in Plankton right now,"
+    },
+    {
+      "start": 2289.29,
+      "end": 2289.97,
+      "text": "and that's why you feel..."
+    },
+    {
+      "start": 2290.03,
+      "end": 2293.97,
+      "text": "puny so this is an exudative process looking at our algorithm then we've gone"
+    },
+    {
+      "start": 2293.97,
+      "end": 2299.56,
+      "text": "down to identify that he has pneumonia on the on the right hand side"
+    },
+    {
+      "start": 2300.7,
+      "end": 2302.82,
+      "text": "And in which case, you would require a chest tube"
+    },
+    {
+      "start": 2302.82,
+      "end": 2304.26,
+      "text": "and antibiotics, of course."
+    },
+    {
+      "start": 2306.45,
+      "end": 2309.97,
+      "text": "Using your probe, again, the methodological methodological."
+    },
+    {
+      "start": 2310.0,
+      "end": 2314.0,
+      "text": "goal approach to SpongeBob and Plankton are all to identify your"
+    },
+    {
+      "start": 2314.0,
+      "end": 2319.07,
+      "text": "long-sliding, identify your profile, and then go around to that stage 3, which is"
+    },
+    {
+      "start": 2319.07,
+      "end": 2319.79,
+      "text": "your plops point."
+    },
+    {
+      "start": 2320.26,
+      "end": 2324.82,
+      "text": "and look for, and then fourthly, you've been then decide"
+    },
+    {
+      "start": 2324.82,
+      "end": 2329.89,
+      "text": "to look for a DBT in the fam for moral and public."
+    },
+    {
+      "start": 2331.33,
+      "end": 2333.51,
+      "text": "that's where I kind of deviate from this algorithm"
+    },
+    {
+      "start": 2333.51,
+      "end": 2336.43,
+      "text": "because it's just more practical if you ask me."
+    },
+    {
+      "start": 2337.2,
+      "end": 2339.56,
+      "text": "So you say that's cool, Dan."
+    },
+    {
+      "start": 2340.0,
+      "end": 2343.0,
+      "text": "of the drawbacks to ultrasound. I mean, you've been hyping it up. It's got diagnostic"
+    },
+    {
+      "start": 2343.0,
+      "end": 2346.73,
+      "text": "of over 90% and it's easy to use."
+    },
+    {
+      "start": 2347.76,
+      "end": 2347.9,
+      "text": "So."
+    },
+    {
+      "start": 2351.66,
+      "end": 2353.96,
+      "text": "These are the shortcomings, which we've all seen, I'm sure."
+    },
+    {
+      "start": 2354.36,
+      "end": 2357.72,
+      "text": "Subcute infosima, air is your enemy when it comes to ultrasound."
+    },
+    {
+      "start": 2358.32,
+      "end": 2358.76,
+      "text": "And..."
+    },
+    {
+      "start": 2360.03,
+      "end": 2361.75,
+      "text": "had opacity, severe add opacity."
+    },
+    {
+      "start": 2362.07,
+      "end": 2363.97,
+      "text": "Somebody who's calamitously obese like this"
+    },
+    {
+      "start": 2363.97,
+      "end": 2368.25,
+      "text": "is going to be difficult to image in general."
+    },
+    {
+      "start": 2370.0,
+      "end": 2374.0,
+      "text": "Other things are like thoracic dressings"
+    },
+    {
+      "start": 2374.0,
+      "end": 2378.72,
+      "text": "or other things that kind of preclude"
+    },
+    {
+      "start": 2378.72,
+      "end": 2379.98,
+      "text": "the propagation of altruism."
+    },
+    {
+      "start": 2380.0,
+      "end": 2381.48,
+      "text": "sounds beams to the lung, that's it."
+    },
+    {
+      "start": 2381.86,
+      "end": 2383.76,
+      "text": "So again, keeping mind those principles,"
+    },
+    {
+      "start": 2384.0,
+      "end": 2385.48,
+      "text": "things you want to look for are superficial,"
+    },
+    {
+      "start": 2386.12,
+      "end": 2389.6,
+      "text": "anything that's going to impede your ultrasound waves"
+    },
+    {
+      "start": 2389.6,
+      "end": 2389.98,
+      "text": "or..."
+    },
+    {
+      "start": 2390.03,
+      "end": 2393.59,
+      "text": "are going to be pretty much up here and that are going to repeat this weight."
+    },
+    {
+      "start": 2395.59,
+      "end": 2398.47,
+      "text": "The main limitation of B lines is the lack of specificity."
+    },
+    {
+      "start": 2399.11,
+      "end": 2399.97,
+      "text": "I'm talking about..."
+    },
+    {
+      "start": 2400.03,
+      "end": 2405.55,
+      "text": "So as I mentioned, there are a sign of interstitial syndrome, and therefore they're very sensitive,"
+    },
+    {
+      "start": 2405.81,
+      "end": 2409.51,
+      "text": "but they're not specific sign of... they're not a specific sign of the cardiogenic pulmonary"
+    },
+    {
+      "start": 2409.51,
+      "end": 2409.95,
+      "text": "your team up."
+    },
+    {
+      "start": 2410.06,
+      "end": 2411.96,
+      "text": "but it's always best to keep in mind"
+    },
+    {
+      "start": 2411.96,
+      "end": 2414.52,
+      "text": "that you need to consider everything"
+    },
+    {
+      "start": 2414.52,
+      "end": 2415.86,
+      "text": "within a clinical context."
+    },
+    {
+      "start": 2416.95,
+      "end": 2419.25,
+      "text": "So that's my, my hedge, if you will."
+    },
+    {
+      "start": 2420.0,
+      "end": 2429.93,
+      "text": "talk. And these are my references and most of this is from Daniel Liptonstein. So, so thank you very much."
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "video_id": "9vW1uo7mKDc",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/9vW1uo7mKDc/asr.txt",
+  "segments": [
+    {
+      "start": 7.22,
+      "end": 12.84,
+      "text": "A linear array transducer with a nerve exam type is used to perform an ultrasound-guided"
+    },
+    {
+      "start": 12.84,
+      "end": 14.98,
+      "text": "superclavicular regional nerve block."
+    },
+    {
+      "start": 15.3,
+      "end": 20.46,
+      "text": "The target depth is approximately 1 to 3 cm in an 80 kg adult."
+    },
+    {
+      "start": 21.22,
+      "end": 26.66,
+      "text": "The patient is positioned in a 45-degree reclining position with a pillow under their head"
+    },
+    {
+      "start": 26.66,
+      "end": 28.96,
+      "text": "and the neck exposed on the operative side."
+    },
+    {
+      "start": 29.42,
+      "end": 32.8,
+      "text": "The patient's head is rotated toward the contralateral side."
+    },
+    {
+      "start": 32.8,
+      "end": 39.66,
+      "text": "The examination begins by finding the superclavicular region of the brachial plexus as a landmark technique."
+    },
+    {
+      "start": 40.49,
+      "end": 45.85,
+      "text": "The transducer is placed posterior to the midpoint of the clavicle at an acute angle"
+    },
+    {
+      "start": 45.85,
+      "end": 50.31,
+      "text": "with the orientation marker directed to the patient's right at a 10 o'clock position"
+    },
+    {
+      "start": 50.31,
+      "end": 52.89,
+      "text": "with the transducer aimed into the thorax."
+    },
+    {
+      "start": 56.09,
+      "end": 62.67,
+      "text": "The subclavian artery is seen as a round, pulsatile structure superior to the bright reflection of the first rib."
+    },
+    {
+      "start": 62.67,
+      "end": 69.78,
+      "text": "The plura is seen as a bright hyperacoic reflection, deep two, or at the same depth as the first rib."
+    },
+    {
+      "start": 70.57,
+      "end": 75.59,
+      "text": "The nerves of the brachial plexus are posterior or superior to the subclavian artery."
+    },
+    {
+      "start": 76.48,
+      "end": 83.36,
+      "text": "The nerve trunks appear as hypoacoic dark circles within the bright hyperacoic fascia of the brachial plexus."
+    },
+    {
+      "start": 84.15,
+      "end": 90.15,
+      "text": "Color Doppler imaging may be used to identify smaller arterial branches running through the brachial plexus"
+    },
+    {
+      "start": 90.15,
+      "end": 92.23,
+      "text": "or lying in the path of needle advancement."
+    },
+    {
+      "start": 92.23,
+      "end": 99.92,
+      "text": "The needle is positioned one to two centimeters lateral to the transducer and advanced using an inplane technique."
+    },
+    {
+      "start": 100.58,
+      "end": 106.0,
+      "text": "The initial endpoint of the needle is just posterior to the artery immediately above the first rib."
+    },
+    {
+      "start": 106.8,
+      "end": 111.66,
+      "text": "It is important to distinguish the plura from the first rib to avoid a pneumothorax."
+    },
+    {
+      "start": 112.53,
+      "end": 116.25,
+      "text": "The local anesthetic is injected incrementally close to the nerves."
+    },
+    {
+      "start": 116.87,
+      "end": 120.79,
+      "text": "The needle can be redirected towards the upper trunks of the brachial plexus"
+    },
+    {
+      "start": 120.79,
+      "end": 123.63,
+      "text": "if the spread of local anesthetic is not deemed adequate."
+    }
+  ]
+}

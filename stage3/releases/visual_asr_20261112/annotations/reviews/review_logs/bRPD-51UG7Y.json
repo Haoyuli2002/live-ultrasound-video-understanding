@@ -1,0 +1,69 @@
+{
+  "video_id": "bRPD-51UG7Y",
+  "reviewer": "stage3_b",
+  "review_scope": "Question-led review by Agent B of Agent A draft; not blind. Native full-frame sampled checkpoints and available time-indexed ASR; no continuous replay or direct listening claim.",
+  "reviewer_native_opened": [
+    105,
+    300,
+    305,
+    306,
+    306.5,
+    307,
+    365,
+    400,
+    410,
+    420,
+    440,
+    442,
+    444,
+    445,
+    445.5,
+    446,
+    650
+  ],
+  "tasks": [
+    {
+      "task_index": 1,
+      "outcome": "accepted",
+      "issues": [],
+      "changes": [],
+      "query_status": "ANSWER at105; sac marked within uterine tissue left of bladder. Completed ASR supplied only through99.82."
+    },
+    {
+      "task_index": 2,
+      "outcome": "accepted_with_added_boundary_evidence",
+      "issues": [],
+      "changes": [
+        "Added negative checkpoints306 and306.5."
+      ],
+      "query_status": "WAIT at305; longitudinal profile only.",
+      "answer_status": "ANSWER307; transverse bright oval calvarium present."
+    },
+    {
+      "task_index": 3,
+      "outcome": "accepted",
+      "issues": [],
+      "changes": [],
+      "query_status": "ANSWER365; paired dark orbital spaces flank central bright nose."
+    },
+    {
+      "task_index": 4,
+      "outcome": "clarified",
+      "issues": [
+        "Image comparison must not imply live fetal movement."
+      ],
+      "changes": [
+        "Added445/445.5 negative chest checkpoints. Clarified relative image positions and teaching-image scope."
+      ],
+      "query_status": "WAIT410; next abdominal orientation example not yet available.",
+      "answer_status": "ANSWER446; stomach right and spine upper-right visible, after chest at445.5."
+    },
+    {
+      "task_index": 5,
+      "outcome": "accepted",
+      "issues": [],
+      "changes": [],
+      "query_status": "ANSWER650; earlier uniquely identified cephalic profile300 shows head right, trunk left."
+    }
+  ]
+}

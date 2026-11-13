@@ -1,0 +1,428 @@
+{
+  "video_id": "4Yu-ftQzHZM",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/4Yu-ftQzHZM/asr.txt",
+  "segments": [
+    {
+      "start": 0.22,
+      "end": 2.46,
+      "text": "functions and settings of the ultrasound machine."
+    },
+    {
+      "start": 4.22,
+      "end": 6.98,
+      "text": "In this video, we'll give you a basic introduction"
+    },
+    {
+      "start": 6.98,
+      "end": 8.42,
+      "text": "to ultrasound scanning."
+    },
+    {
+      "start": 9.14,
+      "end": 9.98,
+      "text": "It's designed for..."
+    },
+    {
+      "start": 10.0,
+      "end": 14.99,
+      "text": "complete beginner, so don't worry if any of the terminology is new to you, we'll explain"
+    },
+    {
+      "start": 14.99,
+      "end": 19.67,
+      "text": "it as we go along, to generate reliable images and interpret them correctly."
+    },
+    {
+      "start": 20.38,
+      "end": 24.92,
+      "text": "You need to understand the basic functions of the ultrasound machine and how to set them up."
+    },
+    {
+      "start": 25.8,
+      "end": 29.98,
+      "text": "Most important is learning how to set up the B mode image, which you'll use."
+    },
+    {
+      "start": 30.0,
+      "end": 31.18,
+      "text": "in almost all scans."
+    },
+    {
+      "start": 32.25,
+      "end": 37.11,
+      "text": "On most modern machines, the basic ultrasound functions are controlled using the knobs and"
+    },
+    {
+      "start": 37.11,
+      "end": 38.07,
+      "text": "buttons of a console."
+    },
+    {
+      "start": 38.8,
+      "end": 39.86,
+      "text": "The position and appearance"
+    },
+    {
+      "start": 40.0,
+      "end": 44.36,
+      "text": "of the controls vary, so you should familiarize yourself with a new machine before getting"
+    },
+    {
+      "start": 44.36,
+      "end": 44.8,
+      "text": "started."
+    },
+    {
+      "start": 45.65,
+      "end": 49.97,
+      "text": "However, most of the basic functions can be found relatively easily on all machines."
+    },
+    {
+      "start": 50.0,
+      "end": 56.5,
+      "text": "More complex or manufacturer-specific functions, like 3D ultrasound, are not covered in"
+    },
+    {
+      "start": 56.5,
+      "end": 56.980000000000004,
+      "text": "this video."
+    },
+    {
+      "start": 58.47,
+      "end": 59.730000000000004,
+      "text": "Setting up the B-mode image."
+    },
+    {
+      "start": 60.83,
+      "end": 65.99,
+      "text": "At the start of every scan, the B-mode image should be optimized to best display the area"
+    },
+    {
+      "start": 65.99,
+      "end": 66.47,
+      "text": "of interest."
+    },
+    {
+      "start": 67.27,
+      "end": 69.97,
+      "text": "In this example, we're using a curvilinear per-"
+    },
+    {
+      "start": 70.0,
+      "end": 72.72,
+      "text": "probe to show a transfer scan of the upper abdomen."
+    },
+    {
+      "start": 73.73,
+      "end": 78.75,
+      "text": "We'll now adjust the image to show the aorta and inferior vena cava as clearly as possible."
+    },
+    {
+      "start": 80.16,
+      "end": 86.66,
+      "text": "At the moment, there are a lot of dark areas in the image that are effectively information-free."
+    },
+    {
+      "start": 87.44,
+      "end": 89.98,
+      "text": "We can make these clearer by increasing the amplification..."
+    },
+    {
+      "start": 90.03,
+      "end": 94.09,
+      "text": "of the reflected ultrasound signal in the image, the so-called gain."
+    },
+    {
+      "start": 94.66,
+      "end": 99.2,
+      "text": "On this machine, gain is controlled using a rotary control in the middle of the console."
+    },
+    {
+      "start": 100.0,
+      "end": 109.14,
+      "text": "to a volume knob. Increasing gain makes the entire image brighter. If gain was previously set too low, as shown here."
+    },
+    {
+      "start": 110.1,
+      "end": 114.86,
+      "text": "Increasing it can make it easier to distinguish structures of interest, but the gain should"
+    },
+    {
+      "start": 114.86,
+      "end": 119.84,
+      "text": "not be set too high either, because this overgain will make the image too bright."
+    },
+    {
+      "start": 120.35,
+      "end": 128.78,
+      "text": "amplify noise and reduce your ability to differentiate tissues depth best assess your structures"
+    },
+    {
+      "start": 128.78,
+      "end": 129.4,
+      "text": "of interest."
+    },
+    {
+      "start": 130.0,
+      "end": 133.46,
+      "text": "should be displayed as largely as possible and centered on the screen."
+    },
+    {
+      "start": 134.57,
+      "end": 139.05,
+      "text": "We do this by adjusting the penetration depth of the ultrasound signal to the minimum"
+    },
+    {
+      "start": 139.05,
+      "end": 139.97,
+      "text": "required to..."
+    },
+    {
+      "start": 140.03,
+      "end": 142.77,
+      "text": "still allow all structures of interest to be visualized."
+    },
+    {
+      "start": 143.67,
+      "end": 146.18,
+      "text": "On the machine shown here, this is done"
+    },
+    {
+      "start": 146.18,
+      "end": 149.16,
+      "text": "using the rotary control labeled depth zoom."
+    },
+    {
+      "start": 152.53,
+      "end": 158.47,
+      "text": "In focus, image resolution can be selectively increased in the area of interest by adjusting"
+    },
+    {
+      "start": 158.47,
+      "end": 159.31,
+      "text": "the focal zone."
+    },
+    {
+      "start": 160.16,
+      "end": 164.16,
+      "text": "On the machine shown here, this is done using another rotary control."
+    },
+    {
+      "start": 165.11,
+      "end": 169.43,
+      "text": "The changing focal zone is shown by a moving arrow on the left side of the image."
+    },
+    {
+      "start": 172.34,
+      "end": 179.97,
+      "text": "documentation functions, freeze function. When performing a scan, it can be very helpful to freeze the image at"
+    },
+    {
+      "start": 180.0,
+      "end": 188.13,
+      "text": "specific point in time. You can do this using the freeze function. On the machine shown here, the"
+    },
+    {
+      "start": 188.13,
+      "end": 189.97,
+      "text": "the freeze button is labeled FR-"
+    },
+    {
+      "start": 190.0,
+      "end": 196.05,
+      "text": "and is located on the lower right of the console, pressing the button freezes the current image."
+    },
+    {
+      "start": 197.36,
+      "end": 199.83,
+      "text": "Once you've pressed freeze, most machines allow"
+    },
+    {
+      "start": 200.0,
+      "end": 203.54,
+      "text": "to scroll back through the most recent frames to select the best one."
+    },
+    {
+      "start": 204.24,
+      "end": 208.96,
+      "text": "On the machine shown here, you can scroll using the track ball in the center of the console"
+    },
+    {
+      "start": 208.96,
+      "end": 209.98,
+      "text": "and pressing..."
+    },
+    {
+      "start": 210.0,
+      "end": 219.01,
+      "text": "the Freeze button again, returns to the real-time image, performing measurements once you've"
+    },
+    {
+      "start": 219.01,
+      "end": 219.71,
+      "text": "frozen the image."
+    },
+    {
+      "start": 220.03,
+      "end": 223.68,
+      "text": "You can also perform measurements on the machine shown here."
+    },
+    {
+      "start": 224.19,
+      "end": 227.33,
+      "text": "This function is activated by pressing the caliper button."
+    },
+    {
+      "start": 228.53,
+      "end": 229.97,
+      "text": "Next, confirm the starting..."
+    },
+    {
+      "start": 230.0,
+      "end": 234.83,
+      "text": "point of your measurement by pressing the set button. Then use the track ball to navigate"
+    },
+    {
+      "start": 234.83,
+      "end": 238.84,
+      "text": "to the end point. Press set again to confirm and display the result."
+    },
+    {
+      "start": 240.83,
+      "end": 246.65,
+      "text": "Pressing the next button allows you to take another measurement, other ultrasound modes,"
+    },
+    {
+      "start": 248.51,
+      "end": 249.61,
+      "text": "in addition to B mode."
+    },
+    {
+      "start": 250.0,
+      "end": 252.8,
+      "text": "There are other scanning modes that provide further information."
+    },
+    {
+      "start": 253.5,
+      "end": 259.72,
+      "text": "We'll look at two of these next, Huller Doppler Mode and M Mode, Huller Doppler Mode."
+    },
+    {
+      "start": 261.31,
+      "end": 264.35,
+      "text": "Color Doppler mode is used to look for the presence of flow."
+    },
+    {
+      "start": 264.94,
+      "end": 269.97,
+      "text": "Usually, the movement of blood in arteries and veins, on the machine shown here."
+    },
+    {
+      "start": 270.0,
+      "end": 276.04,
+      "text": "This function is activated and deactivated by pressing the CDI button, which stands for color"
+    },
+    {
+      "start": 276.04,
+      "end": 279.74,
+      "text": "Doppler Imaging. Other manufacturers label this differently."
+    },
+    {
+      "start": 280.38,
+      "end": 284.0,
+      "text": "For example, C for color, or CF for color flow."
+    },
+    {
+      "start": 285.24,
+      "end": 289.08,
+      "text": "When color Doppler mode is activated, a box appears on the screen."
+    },
+    {
+      "start": 290.0,
+      "end": 293.37,
+      "text": "Within that box, glow toward the probe will appear red,"
+    },
+    {
+      "start": 293.89,
+      "end": 296.21,
+      "text": "and flow away from the probe will appear blue."
+    },
+    {
+      "start": 297.22,
+      "end": 299.0,
+      "text": "Keep in mind that as with B mode,"
+    },
+    {
+      "start": 299.63,
+      "end": 299.97,
+      "text": "heller does"
+    },
+    {
+      "start": 300.0,
+      "end": 304.58,
+      "text": "Doppler mode has to be set up correctly to achieve the best results and avoid misleading"
+    },
+    {
+      "start": 304.58,
+      "end": 305.24,
+      "text": "findings."
+    },
+    {
+      "start": 306.21,
+      "end": 309.87,
+      "text": "You can, for example, adjust the gain of the color Doppler mode similarly."
+    },
+    {
+      "start": 310.0,
+      "end": 315.38,
+      "text": "to how you adjust the B mode gain, but the details are beyond the scope of this introductory"
+    },
+    {
+      "start": 315.38,
+      "end": 319.97,
+      "text": "video. M mode, M mode stands..."
+    },
+    {
+      "start": 320.0,
+      "end": 324.54,
+      "text": "from motion mode and is activated on this machine by pressing the M button."
+    },
+    {
+      "start": 325.09,
+      "end": 329.33,
+      "text": "This projects a cursor line over the B mode image and brings up a diagram."
+    },
+    {
+      "start": 330.0,
+      "end": 335.96,
+      "text": "here on the left side. The diagram plots the B-mode image along the cursor line over time."
+    },
+    {
+      "start": 336.82,
+      "end": 339.6,
+      "text": "The concept is similar to that of a flipbook with"
+    },
+    {
+      "start": 340.0,
+      "end": 344.8,
+      "text": "the difference that images are displayed side by side, rather than one behind the other."
+    },
+    {
+      "start": 345.34,
+      "end": 349.96,
+      "text": "This allows us to visualize the movement of the structures along the cursor line over time."
+    },
+    {
+      "start": 350.0,
+      "end": 354.24,
+      "text": "The position of the cursor line can be changed using the track ball."
+    },
+    {
+      "start": 355.62,
+      "end": 359.71,
+      "text": "On this machine, pressing the M button again exits the mode."
+    }
+  ]
+}

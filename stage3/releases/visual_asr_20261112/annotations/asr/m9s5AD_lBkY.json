@@ -1,0 +1,143 @@
+{
+  "video_id": "m9s5AD_lBkY",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/m9s5AD_lBkY/asr.txt",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 3.78,
+      "text": "So the next thing we're going to do is a personal long axis view for the cardiac ultrasound."
+    },
+    {
+      "start": 4.48,
+      "end": 8.98,
+      "text": "So the patient position is going to be supine, however you really want to have the patient"
+    },
+    {
+      "start": 8.98,
+      "end": 12.78,
+      "text": "left a lot of d cube if you can, that gives optimal images, it brings the heart closer"
+    },
+    {
+      "start": 12.78,
+      "end": 15.2,
+      "text": "to the chest wall and allows you to get better imaging."
+    },
+    {
+      "start": 16.2,
+      "end": 22.34,
+      "text": "The ultrasound probe that we're going to use is a phase array transducer and the indicator"
+    },
+    {
+      "start": 22.34,
+      "end": 26.52,
+      "text": "and it confuses some people but the indicator is going to be towards the right shoulder"
+    },
+    {
+      "start": 27.02,
+      "end": 28.46,
+      "text": "if you're in cardiac mode."
+    },
+    {
+      "start": 28.46,
+      "end": 32.56,
+      "text": "If you're in the standard mode, indicator is going to be towards the left hip, and you"
+    },
+    {
+      "start": 32.56,
+      "end": 37.92,
+      "text": "can tell if you're in cardiac mode, if the indicator is on the right side of the screen,"
+    },
+    {
+      "start": 38.54,
+      "end": 41.42,
+      "text": "and if you're in the standard mode, the indicator is going to be on the left side of the screen."
+    },
+    {
+      "start": 41.68,
+      "end": 45.1,
+      "text": "For the purposes of this tutorial, we're going to be using the cardiac mode."
+    },
+    {
+      "start": 46.14,
+      "end": 49.28,
+      "text": "So I'm going to have the patient go on their left lateral de-cupidist position."
+    },
+    {
+      "start": 50.5,
+      "end": 58.51,
+      "text": "We're going to apply some gel to the transducer, and in order to position the probe, you"
+    },
+    {
+      "start": 58.51,
+      "end": 64.79,
+      "text": "it right next to the sternum across the nipple line for males and in indicators towards the"
+    },
+    {
+      "start": 64.79,
+      "end": 71.83,
+      "text": "right shoulder. And here you see a nice image of the peristerinal long axis view. And another"
+    },
+    {
+      "start": 71.83,
+      "end": 77.55,
+      "text": "way to remember this if you don't remember the indicator position is the three L's. So for the"
+    },
+    {
+      "start": 77.55,
+      "end": 82.79,
+      "text": "peristerinal long axis view the left ventricle is going to be on the left side of the screen. So when"
+    },
+    {
+      "start": 82.79,
+      "end": 88.82,
+      "text": "you end out just remember the three L's. So if you see a image that looks like this you can see a"
+    },
+    {
+      "start": 88.82,
+      "end": 92.92,
+      "text": "left ventricle is on the right side of the screen, just flip it 180 degrees and you'll"
+    },
+    {
+      "start": 92.92,
+      "end": 96.42,
+      "text": "have the correct orientation of the personal long axis view."
+    },
+    {
+      "start": 96.98,
+      "end": 102.61,
+      "text": "The key structures that identify the personal long axis view are the left ventricle, right"
+    },
+    {
+      "start": 102.61,
+      "end": 107.69,
+      "text": "ventricle, aortic outflow track, left atrium."
+    },
+    {
+      "start": 108.68,
+      "end": 112.6,
+      "text": "The valves that you can see are the mitral valve and the aortic valve."
+    },
+    {
+      "start": 113.72,
+      "end": 117.02,
+      "text": "The appropriate depth for this scan is when you can see the descending aorta, which we"
+    },
+    {
+      "start": 117.02,
+      "end": 118.28,
+      "text": "see in this view here."
+    },
+    {
+      "start": 118.28,
+      "end": 125.7,
+      "text": "And also you want to look for the pericardium, which is this hyper-echoic area in the posterior portion of the heart."
+    },
+    {
+      "start": 126.78,
+      "end": 132.99,
+      "text": "In this view, you can identify ejection fraction, as well as pericardial fusions or tamponod."
+    }
+  ]
+}

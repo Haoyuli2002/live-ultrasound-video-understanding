@@ -1,0 +1,1603 @@
+{
+  "video_id": "1E4NSR6yjMw",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/1E4NSR6yjMw/asr.txt",
+  "segments": [
+    {
+      "start": 0.22,
+      "end": 5.44,
+      "text": "Hi, my name is Mike Avila and today we will be talking about basic trans thoracic echocardiography"
+    },
+    {
+      "start": 5.44,
+      "end": 8.18,
+      "text": "including the imaging windows and various pathologies."
+    },
+    {
+      "start": 8.78,
+      "end": 9.96,
+      "text": "At the end we will..."
+    },
+    {
+      "start": 10.0,
+      "end": 15.49,
+      "text": "also talk about IVC measurements. The probe of choice for this examination is the cardiac"
+    },
+    {
+      "start": 15.49,
+      "end": 19.97,
+      "text": "probe, aka the phased array probe. This probe is great for fitting in between..."
+    },
+    {
+      "start": 20.0,
+      "end": 25.3,
+      "text": "the rib spaces. If your machine does not have this probe, the curvilinear probe can be used,"
+    },
+    {
+      "start": 25.5,
+      "end": 29.97,
+      "text": "but really the preferred probe is the phase ray probe. First, we need to talk..."
+    },
+    {
+      "start": 30.0,
+      "end": 34.12,
+      "text": "about probe positioning. You will use a standard mode where the indicator is on the left of"
+    },
+    {
+      "start": 34.12,
+      "end": 39.97,
+      "text": "the screen for most scans that are non-cardiac. In this convention, the probe marker will either be"
+    },
+    {
+      "start": 40.0,
+      "end": 42.78,
+      "text": "to the patient's right side or to the patient's head."
+    },
+    {
+      "start": 44.2,
+      "end": 48.68,
+      "text": "To get a cross-section of the heart, however, you need to imagine the heart as an upside-down"
+    },
+    {
+      "start": 48.68,
+      "end": 49.02,
+      "text": "cone."
+    },
+    {
+      "start": 49.54,
+      "end": 49.98,
+      "text": "Instandard"
+    },
+    {
+      "start": 50.0,
+      "end": 55.5,
+      "text": "mode, a cross-sectional view or short-axis view of the heart will have the probe marker"
+    },
+    {
+      "start": 55.5,
+      "end": 59.98,
+      "text": "pointing to the patient's right hip and in long-axis view to the patient's."
+    },
+    {
+      "start": 60.19,
+      "end": 65.53,
+      "text": "left hip. As an example, this is a personal long axis view of the heart. We are in standard"
+    },
+    {
+      "start": 65.53,
+      "end": 69.91,
+      "text": "mode shown by the red arrow on the left of the screen. The probe marker on the body"
+    },
+    {
+      "start": 70.0,
+      "end": 72.06,
+      "text": "is facing to the patient's left hip."
+    },
+    {
+      "start": 72.55,
+      "end": 74.49,
+      "text": "Contrast standard mode with cardiac mode."
+    },
+    {
+      "start": 74.89,
+      "end": 77.83,
+      "text": "Notice the indicator is on the right of the screen"
+    },
+    {
+      "start": 77.83,
+      "end": 79.01,
+      "text": "shown by the red arrow."
+    },
+    {
+      "start": 79.35,
+      "end": 79.85,
+      "text": "In this view,"
+    },
+    {
+      "start": 80.0,
+      "end": 85.14,
+      "text": "So again, imagining the heart as an upside down cone, the long axis view will have the probe"
+    },
+    {
+      "start": 85.14,
+      "end": 89.94,
+      "text": "indicator pointing to the patient's right shoulder and in short axis orientation to the"
+    },
+    {
+      "start": 89.94,
+      "end": 89.98,
+      "text": "I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry"
+    },
+    {
+      "start": 90.0,
+      "end": 94.92,
+      "text": "left shoulder. This is opposite of standard mode, but so is the indicator on the"
+    },
+    {
+      "start": 94.92,
+      "end": 99.08,
+      "text": "screen opposite of standard mode. Therefore, the image acquired will be the same."
+    },
+    {
+      "start": 99.36,
+      "end": 99.74,
+      "text": "Basically,"
+    },
+    {
+      "start": 100.26,
+      "end": 103.4,
+      "text": "If you flip the indicator, then you need to also flip the probe."
+    },
+    {
+      "start": 103.76,
+      "end": 105.8,
+      "text": "This is a parational long-axis view of the heart."
+    },
+    {
+      "start": 106.04,
+      "end": 108.26,
+      "text": "Probe markers face into the patient's right shoulder"
+    },
+    {
+      "start": 108.26,
+      "end": 109.84,
+      "text": "and we are in cardiac mode."
+    },
+    {
+      "start": 110.0,
+      "end": 112.88,
+      "text": "because the indicator on the screen is on the right side."
+    },
+    {
+      "start": 113.32,
+      "end": 117.54,
+      "text": "Remember that the left ventricle should always be on the left of the screen"
+    },
+    {
+      "start": 117.54,
+      "end": 119.0,
+      "text": "for a pair of external long axis."
+    },
+    {
+      "start": 119.56,
+      "end": 119.98,
+      "text": "We will tell you that the left ventricle should always be on the left of the screen for a pair of external long axis."
+    },
+    {
+      "start": 120.0,
+      "end": 124.44,
+      "text": "about that again. So here the image looks different. It is actually flipped. Remember"
+    },
+    {
+      "start": 124.44,
+      "end": 128.5,
+      "text": "when I said that the LV should be on the less of the screen? Well here it's on the right."
+    },
+    {
+      "start": 128.92,
+      "end": 129.94,
+      "text": "Why is this image flipped?"
+    },
+    {
+      "start": 130.0,
+      "end": 133.38,
+      "text": "First, see that the indicator on the screen is on the right, which tells you that you are"
+    },
+    {
+      "start": 133.38,
+      "end": 134.18,
+      "text": "in cardiac mode."
+    },
+    {
+      "start": 134.9,
+      "end": 139.6,
+      "text": "Then, see where the probe marker is facing, and in this case, it is facing down to the"
+    },
+    {
+      "start": 139.6,
+      "end": 139.92,
+      "text": "patients."
+    },
+    {
+      "start": 140.0,
+      "end": 145.78,
+      "text": "left hip, the orientation standard mode, not cardiac mode. Remember, in cardiac"
+    },
+    {
+      "start": 145.78,
+      "end": 149.9,
+      "text": "mode for personal long axis probe indicators should point to the"
+    },
+    {
+      "start": 150.52,
+      "end": 154.81,
+      "text": "This image also looks different. Again, it is flipped. Why is it flipped?"
+    },
+    {
+      "start": 155.51,
+      "end": 159.89,
+      "text": "First see that the indicator on the screen is on the left, which tells you that you are in standard mode."
+    },
+    {
+      "start": 160.0,
+      "end": 164.88,
+      "text": "Then see where the probe marker is facing and in this case it is facing to the patient's"
+    },
+    {
+      "start": 164.88,
+      "end": 165.46,
+      "text": "right shoulder."
+    },
+    {
+      "start": 166.06,
+      "end": 168.64,
+      "text": "The orientation and cardiac mode, not standard mode."
+    },
+    {
+      "start": 168.64,
+      "end": 169.44,
+      "text": "Remember"
+    },
+    {
+      "start": 170.1,
+      "end": 173.37,
+      "text": "in standard mode, probe indicators should point to the left hip."
+    },
+    {
+      "start": 174.04,
+      "end": 176.21,
+      "text": "So, to summarize, in cardiac mode,"
+    },
+    {
+      "start": 176.35,
+      "end": 178.53,
+      "text": "the indicator on the screen should be on the right side,"
+    },
+    {
+      "start": 178.77,
+      "end": 179.97,
+      "text": "and the probe marker should be..."
+    },
+    {
+      "start": 180.03,
+      "end": 181.05,
+      "text": "facing the right shoulder."
+    },
+    {
+      "start": 181.35,
+      "end": 183.81,
+      "text": "The LV should be on the left of the screen."
+    },
+    {
+      "start": 184.48,
+      "end": 186.5,
+      "text": "Don't worry, there's an easy way to remember that,"
+    },
+    {
+      "start": 186.72,
+      "end": 187.76,
+      "text": "which we'll get to in a moment."
+    },
+    {
+      "start": 188.69,
+      "end": 189.97,
+      "text": "In case you got lost, here's a-"
+    },
+    {
+      "start": 190.0,
+      "end": 191.78,
+      "text": "other summary when troubleshooting your image."
+    },
+    {
+      "start": 192.4,
+      "end": 194.72,
+      "text": "First, check the screen for the indicator position."
+    },
+    {
+      "start": 195.48,
+      "end": 199.48,
+      "text": "For personal long access, make sure the probe is either pointing to the right shoulder"
+    },
+    {
+      "start": 199.48,
+      "end": 199.96,
+      "text": "and car..."
+    },
+    {
+      "start": 200.0,
+      "end": 206.46,
+      "text": "or left hip standard mode, also make sure the LV is on the left of the screen for personal long axis."
+    },
+    {
+      "start": 206.98,
+      "end": 209.96,
+      "text": "If you do the previous two and are still unsatisfied with the image,"
+    },
+    {
+      "start": 210.0,
+      "end": 214.64,
+      "text": "and may help to ask the patient to assume a left lateral de-cubitus position."
+    },
+    {
+      "start": 215.44,
+      "end": 219.82,
+      "text": "This brings the heart forward and closer to the chest surface, which could help in acquiring"
+    },
+    {
+      "start": 219.82,
+      "end": 219.98,
+      "text": "You"
+    },
+    {
+      "start": 220.0,
+      "end": 225.66,
+      "text": "image. Have them lay on their left side. It may help to ask a patient to place his or her arm above"
+    },
+    {
+      "start": 225.66,
+      "end": 229.2,
+      "text": "the head. Now we will talk about obtaining the cardiac fuse."
+    },
+    {
+      "start": 230.1,
+      "end": 233.32,
+      "text": "You can practice your Ecoskills by developing a systematic protocol."
+    },
+    {
+      "start": 233.79,
+      "end": 237.47,
+      "text": "A suggested approach can begin with the Parasonal Long Axis view."
+    },
+    {
+      "start": 237.81,
+      "end": 239.47,
+      "text": "Rotate the probe 90 degrees."
+    },
+    {
+      "start": 240.0,
+      "end": 244.6,
+      "text": "For short axis, move on down to the apical forward chamber, and then finish up with the"
+    },
+    {
+      "start": 244.6,
+      "end": 245.52,
+      "text": "sub-siphoid window."
+    },
+    {
+      "start": 246.02,
+      "end": 248.28,
+      "text": "Let's start with the para-sternal long axis view."
+    },
+    {
+      "start": 248.66,
+      "end": 249.96,
+      "text": "Start out in Cardi-"
+    },
+    {
+      "start": 250.0,
+      "end": 253.68,
+      "text": "mode, the indicator should be on the right of the screen, and then the probe indicator"
+    },
+    {
+      "start": 253.68,
+      "end": 258.27,
+      "text": "on the patient's body should be facing the right shoulder. Start by placing the probe"
+    },
+    {
+      "start": 258.27,
+      "end": 259.97,
+      "text": "at the nipple line or 4th"
+    },
+    {
+      "start": 260.0,
+      "end": 265.4,
+      "text": "intercostal space, or in women, the inframamory line right next to the sternum. Keep the probe"
+    },
+    {
+      "start": 265.4,
+      "end": 269.64,
+      "text": "perpendicular to the skin and hug the sternum as you go up and down the chest, searching"
+    },
+    {
+      "start": 270.0,
+      "end": 274.0,
+      "text": "at the best window. So, I told you I would give you an easy way to remember the"
+    },
+    {
+      "start": 274.0,
+      "end": 278.48,
+      "text": "personal long axis view. You can remember it by the three L's to success. The"
+    },
+    {
+      "start": 278.48,
+      "end": 279.74,
+      "text": "The personal long access"
+    },
+    {
+      "start": 280.0,
+      "end": 282.82,
+      "text": "should have the left ventricle on the left side of the screen."
+    },
+    {
+      "start": 283.18,
+      "end": 284.92,
+      "text": "So for a visual, here's what we're looking at."
+    },
+    {
+      "start": 285.37,
+      "end": 286.75,
+      "text": "For the personal long axis view,"
+    },
+    {
+      "start": 286.87,
+      "end": 289.79,
+      "text": "make sure the left ventricle is on the left of the screen."
+    },
+    {
+      "start": 290.67,
+      "end": 292.59,
+      "text": "Before we go identifying what we see on the image,"
+    },
+    {
+      "start": 292.61,
+      "end": 295.13,
+      "text": "it may be helpful to see a schematic representation"
+    },
+    {
+      "start": 295.57,
+      "end": 296.91,
+      "text": "on the ultrasound image."
+    },
+    {
+      "start": 297.52,
+      "end": 298.54,
+      "text": "Toward the top of the screen,"
+    },
+    {
+      "start": 298.7,
+      "end": 299.98,
+      "text": "we will see the right ventricle."
+    },
+    {
+      "start": 300.0,
+      "end": 303.82,
+      "text": "with the left ventricle beneath or deeper to it, and the interventricular"
+    },
+    {
+      "start": 303.82,
+      "end": 307.22,
+      "text": "septum in between. In the left ventricle you can see the mitral valve and"
+    },
+    {
+      "start": 307.22,
+      "end": 309.98,
+      "text": "sometimes the papillary muscles. To the right of the mitral"
+    },
+    {
+      "start": 310.0,
+      "end": 319.76,
+      "text": "You will see the left atrium in this image. You can also see the aortic valves and the aortic outflow track going back to the ultrasound image if we again imagine the heart as a cone"
+    },
+    {
+      "start": 320.32,
+      "end": 323.04,
+      "text": "The apex is at the upper left of the screen,"
+    },
+    {
+      "start": 323.48,
+      "end": 325.02,
+      "text": "with the base towards the lower right."
+    },
+    {
+      "start": 325.46,
+      "end": 327.22,
+      "text": "Anteriorly, is at the top of the screen,"
+    },
+    {
+      "start": 327.66,
+      "end": 329.82,
+      "text": "which makes sense because that is where you physically."
+    },
+    {
+      "start": 330.06,
+      "end": 334.54,
+      "text": "have the probe on the chest, and deeper or towards the bottom of the image is the posterior"
+    },
+    {
+      "start": 334.54,
+      "end": 335.28,
+      "text": "portion of the heart."
+    },
+    {
+      "start": 335.81,
+      "end": 339.91,
+      "text": "The items to identify in the parasonal long axis view are the left ventricle."
+    },
+    {
+      "start": 340.16,
+      "end": 345.4,
+      "text": "the right ventricle, the aortic valve and the mitral valve, the left atrium, the intervent"
+    },
+    {
+      "start": 345.4,
+      "end": 349.98,
+      "text": "tricular septum, that descending aorta, which will be important for distinguishing between a pair."
+    },
+    {
+      "start": 350.0,
+      "end": 351.84,
+      "text": "pericardial fusion and a plural fusion."
+    },
+    {
+      "start": 352.28,
+      "end": 353.24,
+      "text": "We'll talk about that later."
+    },
+    {
+      "start": 353.5,
+      "end": 356.1,
+      "text": "The aortic outflow tract and the pericardium."
+    },
+    {
+      "start": 356.7,
+      "end": 358.02,
+      "text": "The pericardial long axis view"
+    },
+    {
+      "start": 358.02,
+      "end": 359.92,
+      "text": "is great for estimating ejection fragments."
+    },
+    {
+      "start": 360.38,
+      "end": 364.66,
+      "text": "There are a few studies that show that eyeball in the ejection fraction by looking at the"
+    },
+    {
+      "start": 364.66,
+      "end": 369.5,
+      "text": "squeeze of the heart and how closely the anterior mitral valve leaflet gets to the intraventricular"
+    },
+    {
+      "start": 369.5,
+      "end": 369.86,
+      "text": "because they're set."
+    },
+    {
+      "start": 370.0,
+      "end": 375.62,
+      "text": "is a good estimate of the gold standard cardiology method of evaluating the EF."
+    },
+    {
+      "start": 376.43,
+      "end": 379.97,
+      "text": "Additionally, it is much faster and can easily be done in the..."
+    },
+    {
+      "start": 380.03,
+      "end": 384.71,
+      "text": "emergency setting. In this ultrasound image you can see that the anterior mitral valve leaflet"
+    },
+    {
+      "start": 384.71,
+      "end": 388.55,
+      "text": "is slapping up against the intraventricular septum. You can also see that there's good"
+    },
+    {
+      "start": 388.55,
+      "end": 389.97,
+      "text": "squeeze of the left ventricle."
+    },
+    {
+      "start": 390.0,
+      "end": 393.66,
+      "text": "and that the ventricular walls are almost touching with each contraction."
+    },
+    {
+      "start": 394.0,
+      "end": 397.86,
+      "text": "This is indicative of a normal ejection fraction of greater than 50%."
+    },
+    {
+      "start": 397.86,
+      "end": 399.98,
+      "text": "In this ultrasound image, the anterior..."
+    },
+    {
+      "start": 400.0,
+      "end": 403.16,
+      "text": "Mytrovalv leaflet does not quite make it to the interventricular septum."
+    },
+    {
+      "start": 403.48,
+      "end": 407.48,
+      "text": "Additionally, the squeeze of the ventricles just isn't as good as the last image."
+    },
+    {
+      "start": 407.78,
+      "end": 409.98,
+      "text": "This EF is consistent with modern..."
+    },
+    {
+      "start": 410.0,
+      "end": 415.2,
+      "text": "depressed at 30 to 50%. How do we know it is not severely depressed? Look at the next image."
+    },
+    {
+      "start": 415.48,
+      "end": 419.98,
+      "text": "In this image there's very little motion of the mitral valve leaflets and hardly any squee-"
+    },
+    {
+      "start": 420.0,
+      "end": 424.57,
+      "text": "of the ventricles at all. This is a sick heart with an ejection fraction of probably less"
+    },
+    {
+      "start": 424.57,
+      "end": 429.98,
+      "text": "than 30. If you want to quantitatively measure the ejection fraction and..."
+    },
+    {
+      "start": 430.0,
+      "end": 436.24,
+      "text": "not exactly eyeball it, you can do so using EPSS or E point septal separation."
+    },
+    {
+      "start": 437.91,
+      "end": 439.81,
+      "text": "This is a heart in the personal long axis."
+    },
+    {
+      "start": 440.45,
+      "end": 446.47,
+      "text": "If we want to use EPSS, we just throw down an M-mode spike at the tip of the anterior"
+    },
+    {
+      "start": 446.47,
+      "end": 447.57,
+      "text": "mitral valve leaflet."
+    },
+    {
+      "start": 447.83,
+      "end": 449.87,
+      "text": "You can freeze the image and this is what you will see."
+    },
+    {
+      "start": 450.58,
+      "end": 455.28,
+      "text": "The thicker white line represents the interventricular septum, and the squiggly wavy lines beneath"
+    },
+    {
+      "start": 455.28,
+      "end": 458.38,
+      "text": "that represents the motion of the anterior mitral valve leaflet."
+    },
+    {
+      "start": 458.58,
+      "end": 459.38,
+      "text": "I don't know if you noticed."
+    },
+    {
+      "start": 460.03,
+      "end": 464.33,
+      "text": "But the anterior mitral valve leaflet slaps twice on the intraventricular septum in a normal"
+    },
+    {
+      "start": 464.33,
+      "end": 464.67,
+      "text": "heart."
+    },
+    {
+      "start": 465.13,
+      "end": 469.97,
+      "text": "The E represents the passive feeling of the ventricles, and A represents..."
+    },
+    {
+      "start": 470.0,
+      "end": 474.56,
+      "text": "the atrial contraction. The distance between the IVS and the squiggly lines show just"
+    },
+    {
+      "start": 474.56,
+      "end": 479.44,
+      "text": "out close the anterior mitral valve leaflet gets to the intraventricular septum."
+    },
+    {
+      "start": 480.03,
+      "end": 484.85,
+      "text": "The distance of less than 7 millimeters is considered normal, and greater than 10 is considered"
+    },
+    {
+      "start": 484.85,
+      "end": 489.97,
+      "text": "LV dysfunction or reduced EF. 7 to 10 is sort of a gray area and needs to be..."
+    },
+    {
+      "start": 490.0,
+      "end": 494.78,
+      "text": "taken into context. Notice this distance is greater than 10 millimeters and is"
+    },
+    {
+      "start": 494.78,
+      "end": 498.58,
+      "text": "consistent with CHF. This is another example of reduced ejection fraction."
+    },
+    {
+      "start": 499.12,
+      "end": 499.98,
+      "text": "CHF is not the..."
+    },
+    {
+      "start": 500.03,
+      "end": 505.53,
+      "text": "only way that your patient can end up with a reduced EF. If your patient has aortic regurgitation,"
+    },
+    {
+      "start": 505.85,
+      "end": 509.89,
+      "text": "the backflow of blood will inhibit the anterior mitral valve leaflet from opening"
+    },
+    {
+      "start": 510.13,
+      "end": 514.35,
+      "text": "This will make your EPSS larger, even though there is no CHF."
+    },
+    {
+      "start": 514.53,
+      "end": 519.97,
+      "text": "Or, if your patient has mitrostinosis, the poor excursion of mitral valve leaflets will give you a..."
+    },
+    {
+      "start": 520.0,
+      "end": 524.02,
+      "text": "large EPSS, falsely predicting cardiac ejection fraction."
+    },
+    {
+      "start": 524.98,
+      "end": 529.18,
+      "text": "Now I mentioned earlier that the descending aorta is important for distinguishing between"
+    },
+    {
+      "start": 529.18,
+      "end": 529.88,
+      "text": "in a paired cardio."
+    },
+    {
+      "start": 530.1,
+      "end": 531.8,
+      "text": "fusion and a plural effusion."
+    },
+    {
+      "start": 532.06,
+      "end": 536.06,
+      "text": "You can see in this image that this patient has a paracardiophusion because the fluid is"
+    },
+    {
+      "start": 536.06,
+      "end": 539.9,
+      "text": "within the paracardium anterior to the descending aorta shown."
+    },
+    {
+      "start": 540.0,
+      "end": 545.08,
+      "text": "by the bottom arrow. In this echo, you can see that the effusion is posterior to the"
+    },
+    {
+      "start": 545.08,
+      "end": 549.44,
+      "text": "paracardium and posterior to the descending aorta. This is actually a plural effusion."
+    },
+    {
+      "start": 550.64,
+      "end": 554.14,
+      "text": "We can't talk about pericardial fusion without talking about pericardial tamponaut."
+    },
+    {
+      "start": 554.97,
+      "end": 559.17,
+      "text": "Traditionally, the diagnosis of tamponaut is made when you have di-stolic collapse of"
+    },
+    {
+      "start": 559.17,
+      "end": 559.79,
+      "text": "the ventricle."
+    },
+    {
+      "start": 560.26,
+      "end": 562.46,
+      "text": "with clinical symptoms of hypo-perfusion,"
+    },
+    {
+      "start": 562.8,
+      "end": 565.84,
+      "text": "such as hypotension, tachycardia, syncopy,"
+    },
+    {
+      "start": 566.12,
+      "end": 567.86,
+      "text": "shortness of breath, chest pain, et cetera."
+    },
+    {
+      "start": 568.2,
+      "end": 569.98,
+      "text": "What's happening is the pressure..."
+    },
+    {
+      "start": 570.0,
+      "end": 575.94,
+      "text": "the fusion is great enough to impair filling of the RV. Blood in equals blood out, so there"
+    },
+    {
+      "start": 575.94,
+      "end": 579.86,
+      "text": "will also be impaired filling of the LV. You can tell that there is dice"
+    },
+    {
+      "start": 580.0,
+      "end": 583.38,
+      "text": "stall it collapses the RV because it happens when the mitral valves are open."
+    },
+    {
+      "start": 584.0,
+      "end": 586.64,
+      "text": "Right ventricular strain can be assessed in this view as well."
+    },
+    {
+      "start": 586.64,
+      "end": 589.14,
+      "text": "Now, strain can be due to any acute event."
+    },
+    {
+      "start": 590.58,
+      "end": 596.12,
+      "text": "that causes sudden pulmonary hypertension, causing resistance to the outward flow of"
+    },
+    {
+      "start": 596.12,
+      "end": 596.48,
+      "text": "the RV."
+    },
+    {
+      "start": 596.8,
+      "end": 598.52,
+      "text": "This can cause the RV to enlarge."
+    },
+    {
+      "start": 598.74,
+      "end": 599.94,
+      "text": "Now we're going to talk about the"
+    },
+    {
+      "start": 601.5,
+      "end": 606.68,
+      "text": "from the parational long axis view, rotate the probe 90 degrees clockwise towards the"
+    },
+    {
+      "start": 606.68,
+      "end": 609.78,
+      "text": "patient's left shoulder. Then, fan-"
+    },
+    {
+      "start": 610.0,
+      "end": 612.2,
+      "text": "the apex and up towards the base."
+    },
+    {
+      "start": 612.52,
+      "end": 617.28,
+      "text": "Fanding up towards the base of the heart to the patient's head will get you more of the"
+    },
+    {
+      "start": 617.28,
+      "end": 619.32,
+      "text": "natural valve, even the aortic valve in view."
+    },
+    {
+      "start": 619.78,
+      "end": 619.98,
+      "text": "In this"
+    },
+    {
+      "start": 620.0,
+      "end": 624.28,
+      "text": "image who wear more inferior or towards the apex in the mid-papillary view."
+    },
+    {
+      "start": 624.54,
+      "end": 626.46,
+      "text": "The circle in the middle is a left ventricle."
+    },
+    {
+      "start": 626.72,
+      "end": 629.24,
+      "text": "On the other side of the IBS is the right ventricle."
+    },
+    {
+      "start": 630.13,
+      "end": 633.41,
+      "text": "The arrows are pointed to the papillary muscles and the mitral valve."
+    },
+    {
+      "start": 634.05,
+      "end": 638.32,
+      "text": "Fanding superior to the patient's head, you can see the mitral valve leaflets and the"
+    },
+    {
+      "start": 638.32,
+      "end": 639.16,
+      "text": "fish mouth view."
+    },
+    {
+      "start": 639.16,
+      "end": 639.86,
+      "text": "Fanning even"
+    },
+    {
+      "start": 640.0,
+      "end": 645.34,
+      "text": "more superiorly, and you can see the erotic valve called the Mercedes-Benz sign. Here's"
+    },
+    {
+      "start": 645.34,
+      "end": 649.42,
+      "text": "a schematic that will help identify the images in the Parational Long Axis view."
+    },
+    {
+      "start": 650.0,
+      "end": 655.98,
+      "text": "the erotic valve in view. Most anteriorly is the right ventricle with the RA feeding through"
+    },
+    {
+      "start": 655.98,
+      "end": 659.92,
+      "text": "the tricuspid valve. The tricuspid erotic valve is right in the middle."
+    },
+    {
+      "start": 660.0,
+      "end": 665.16,
+      "text": "The left atrium is a deepest structure feeding down into the screen out of plane of the probe."
+    },
+    {
+      "start": 665.6,
+      "end": 669.98,
+      "text": "The LA is the deepest structure, so in review, more in-"
+    },
+    {
+      "start": 670.0,
+      "end": 673.12,
+      "text": "or towards the apex, is the mid-papillary view."
+    },
+    {
+      "start": 673.78,
+      "end": 676.4,
+      "text": "Fading up towards the head, you can see the fishmouth"
+    },
+    {
+      "start": 676.4,
+      "end": 679.77,
+      "text": "mitral valve. Most superiorly"
+    },
+    {
+      "start": 680.0,
+      "end": 681.84,
+      "text": "You can begin to see the aortic valve."
+    },
+    {
+      "start": 682.24,
+      "end": 687.1,
+      "text": "You can also assess for right ventricular strain in the paristerinal short axis view."
+    },
+    {
+      "start": 687.65,
+      "end": 689.91,
+      "text": "Here we see an enlarged RV."
+    },
+    {
+      "start": 690.0,
+      "end": 695.18,
+      "text": "and septal bowing showing something called the D sign where the pressure of the"
+    },
+    {
+      "start": 695.18,
+      "end": 699.48,
+      "text": "right ventricle is great enough during systole to actually cause the IVS to"
+    },
+    {
+      "start": 699.48,
+      "end": 699.98,
+      "text": "Ben in..."
+    },
+    {
+      "start": 700.0,
+      "end": 705.08,
+      "text": "towards the LV. Here's another image demonstrating the design. Now we will talk"
+    },
+    {
+      "start": 705.08,
+      "end": 709.44,
+      "text": "about the apical 4-chain review. Make sure the probe indicator is pointing towards"
+    },
+    {
+      "start": 709.44,
+      "end": 709.9,
+      "text": "the patient."
+    },
+    {
+      "start": 710.0,
+      "end": 715.98,
+      "text": "left axilla and from the person with short axis view slide down towards the apex until"
+    },
+    {
+      "start": 715.98,
+      "end": 719.83,
+      "text": "you see the chamber size getting smaller and smaller. Then when you get to the"
+    },
+    {
+      "start": 719.83,
+      "end": 719.97,
+      "text": "8"
+    },
+    {
+      "start": 720.0,
+      "end": 723.34,
+      "text": "apex, or when you see the chamber size getting smaller,"
+    },
+    {
+      "start": 724.09,
+      "end": 725.79,
+      "text": "fan up towards the patient's head."
+    },
+    {
+      "start": 726.94,
+      "end": 729.74,
+      "text": "The probe at this point should be at the point of maximum."
+    },
+    {
+      "start": 730.0,
+      "end": 738.1,
+      "text": "The bottom right image displays the LA and the LV on the right of the screen and the RV and the RA are on the left of the screen."
+    },
+    {
+      "start": 738.28,
+      "end": 739.98,
+      "text": "As a general rule, taking the ventricles is"
+    },
+    {
+      "start": 740.06,
+      "end": 746.04,
+      "text": "one, the LV should take up about two-thirds of the total and the RV one-thirds of the"
+    },
+    {
+      "start": 746.04,
+      "end": 749.8,
+      "text": "total. Consider PE or another acute event causing pulmonary hypertension."
+    },
+    {
+      "start": 750.0,
+      "end": 753.04,
+      "text": "dimension, if the RV is greater than the size of the LV."
+    },
+    {
+      "start": 753.34,
+      "end": 757.5,
+      "text": "You can also assess for paired cardio effusion in this view, as shown in the image at the"
+    },
+    {
+      "start": 757.5,
+      "end": 757.98,
+      "text": "top left."
+    },
+    {
+      "start": 757.98,
+      "end": 759.82,
+      "text": "The fourth and final window."
+    },
+    {
+      "start": 760.03,
+      "end": 762.99,
+      "text": "of transcerasic echocardiography is the subzyphoid view."
+    },
+    {
+      "start": 763.45,
+      "end": 764.53,
+      "text": "With the patient's knees bent,"
+    },
+    {
+      "start": 764.89,
+      "end": 767.03,
+      "text": "place the probe in the subzyphoid region."
+    },
+    {
+      "start": 767.31,
+      "end": 768.73,
+      "text": "Make sure the indicator on the probe"
+    },
+    {
+      "start": 768.73,
+      "end": 769.97,
+      "text": "still points to the patient's..."
+    },
+    {
+      "start": 770.0,
+      "end": 774.84,
+      "text": "left side. Assume an overhand grip on the probe. This will help you get more level and"
+    },
+    {
+      "start": 774.84,
+      "end": 779.58,
+      "text": "parallel with the skin, and will allow you to visualize the heart. Start on the patient's"
+    },
+    {
+      "start": 779.58,
+      "end": 779.8,
+      "text": "Right."
+    },
+    {
+      "start": 780.35,
+      "end": 785.13,
+      "text": "Locate the liver and sweep to the patient's left using the liver as an acoustic window."
+    },
+    {
+      "start": 785.31,
+      "end": 789.87,
+      "text": "Basically, acoustic window just means using an organ that doesn't contain gas and allows"
+    },
+    {
+      "start": 790.0,
+      "end": 794.82,
+      "text": "sound waves to travel through. In the subzyphoid region, bowel gas can sometimes mess up your"
+    },
+    {
+      "start": 794.82,
+      "end": 799.86,
+      "text": "image, so using the liver as an acoustic window will help avoid this. You can have the patient take a"
+    },
+    {
+      "start": 800.0,
+      "end": 804.26,
+      "text": "breath to help bring the heart into view. So here the liver is being used as an acoustic"
+    },
+    {
+      "start": 804.26,
+      "end": 809.68,
+      "text": "window. Remember the RV is closest thing to the liver. In this view you can see"
+    },
+    {
+      "start": 810.0,
+      "end": 812.92,
+      "text": "the LV, the LA, the RV, the RA,"
+    },
+    {
+      "start": 813.34,
+      "end": 816.32,
+      "text": "mitral valve and tricuspid valve, and the pericardium."
+    },
+    {
+      "start": 816.72,
+      "end": 818.22,
+      "text": "This is a video clip of the same thing."
+    },
+    {
+      "start": 818.4,
+      "end": 819.58,
+      "text": "Up here, you can see the liver."
+    },
+    {
+      "start": 820.0,
+      "end": 821.84,
+      "text": "and right next to the river, you see the RV."
+    },
+    {
+      "start": 822.32,
+      "end": 823.88,
+      "text": "The sub-life wood view is pretty good"
+    },
+    {
+      "start": 823.88,
+      "end": 825.48,
+      "text": "for seeing a paracardial effusion."
+    },
+    {
+      "start": 826.63,
+      "end": 827.51,
+      "text": "Here's another image of it."
+    },
+    {
+      "start": 828.96,
+      "end": 829.96,
+      "text": "Remember that the tradition..."
+    },
+    {
+      "start": 830.0,
+      "end": 834.92,
+      "text": "definition of pericardial tamponod is RV collapse with symptoms of hypo perfusion."
+    },
+    {
+      "start": 835.18,
+      "end": 839.94,
+      "text": "Here in these images, we see a pericardial effusion, and in the image to the right, we"
+    },
+    {
+      "start": 840.03,
+      "end": 841.59,
+      "text": "see RV compression and collapse."
+    },
+    {
+      "start": 842.87,
+      "end": 844.73,
+      "text": "This is a clip of cardiac standstill."
+    },
+    {
+      "start": 844.97,
+      "end": 847.33,
+      "text": "Seems obvious, like why do we need to ultrasound that?"
+    },
+    {
+      "start": 847.81,
+      "end": 849.69,
+      "text": "But if you have a patient without a pulse."
+    },
+    {
+      "start": 850.0,
+      "end": 853.74,
+      "text": "It helps to know that this isn't because of an arrhythmia, but instead because the heart"
+    },
+    {
+      "start": 853.74,
+      "end": 855.04,
+      "text": "isn't actually pumping."
+    },
+    {
+      "start": 855.32,
+      "end": 858.46,
+      "text": "If it wasn't arrhythmia, you would see motion of the heart."
+    },
+    {
+      "start": 858.94,
+      "end": 859.98,
+      "text": "Even though we talked about..."
+    },
+    {
+      "start": 860.0,
+      "end": 861.24,
+      "text": "about the four views of the heart,"
+    },
+    {
+      "start": 861.6,
+      "end": 864.08,
+      "text": "it would be prudent to also talk about the IVC,"
+    },
+    {
+      "start": 864.52,
+      "end": 866.44,
+      "text": "as this can help you gather more information"
+    },
+    {
+      "start": 866.44,
+      "end": 868.96,
+      "text": "that is very important about the patient's fluid status."
+    },
+    {
+      "start": 869.61,
+      "end": 869.89,
+      "text": "In a nutshell,"
+    },
+    {
+      "start": 870.0,
+      "end": 873.7,
+      "text": "IBC measurements are important because they help guide fluid management."
+    },
+    {
+      "start": 876.1,
+      "end": 879.52,
+      "text": "The respiratory cycle is correlated with changes in IBC diameter."
+    },
+    {
+      "start": 880.03,
+      "end": 882.91,
+      "text": "in someone that can receive fluid, giving estimates of CVP."
+    },
+    {
+      "start": 883.66,
+      "end": 886.02,
+      "text": "During deep inspiration, the diameter gets smaller"
+    },
+    {
+      "start": 886.02,
+      "end": 888.42,
+      "text": "and during expiration, the diameter gets larger."
+    },
+    {
+      "start": 888.88,
+      "end": 889.98,
+      "text": "We'll get into this..."
+    },
+    {
+      "start": 890.0,
+      "end": 894.5,
+      "text": "a little bit more in a few slides. But if the diameter does not change, it remains open,"
+    },
+    {
+      "start": 894.64,
+      "end": 899.98,
+      "text": "remains dilated. This is a suspicion that the patient is pretty overfilled with flu."
+    },
+    {
+      "start": 900.0,
+      "end": 909.86,
+      "text": "The cable index is a percent-collapsibility of the IVC throughout the respiratory cycle and is considered a predictor of preload reserve, or, in other words,"
+    },
+    {
+      "start": 910.03,
+      "end": 914.93,
+      "text": "a predictor of how much fluid the patient can receive before you run the risk of plural edema or"
+    },
+    {
+      "start": 914.93,
+      "end": 919.97,
+      "text": "effusion. Let's talk about how to obtain the correct image of the IVC. Start in the sub-"
+    },
+    {
+      "start": 921.1,
+      "end": 925.84,
+      "text": "The collapsibility is measured by obtaining a long axis view of the IVC."
+    },
+    {
+      "start": 926.4,
+      "end": 929.98,
+      "text": "Aim towards the head, which would be over here, until you see the IVC"
+    },
+    {
+      "start": 930.0,
+      "end": 932.0,
+      "text": "entering the RA right here."
+    },
+    {
+      "start": 932.26,
+      "end": 937.16,
+      "text": "Changes in size throughout the respiratory cycle are identified with the machine in M mode."
+    },
+    {
+      "start": 937.46,
+      "end": 939.9,
+      "text": "Measure the diameter 2 to 3 centimeters distance"
+    },
+    {
+      "start": 940.0,
+      "end": 943.42,
+      "text": "still to the confluence of the hepatic vein and the IVC."
+    },
+    {
+      "start": 943.76,
+      "end": 945.8,
+      "text": "So here's the hepatic vein and here's the IVC."
+    },
+    {
+      "start": 946.14,
+      "end": 949.7,
+      "text": "The cable index is measured by taking the maximum IVC"
+    },
+    {
+      "start": 949.7,
+      "end": 949.88,
+      "text": "Damn."
+    },
+    {
+      "start": 950.0,
+      "end": 955.16,
+      "text": "diameter during expiration and subtracting the minimum diameter of the IVC during inspiration"
+    },
+    {
+      "start": 955.16,
+      "end": 959.72,
+      "text": "from that, then dividing all of that by the maximum IVC diameter."
+    },
+    {
+      "start": 960.29,
+      "end": 965.33,
+      "text": "This table was taken from asep.org, and shows the correlations between the IVC size and"
+    },
+    {
+      "start": 965.33,
+      "end": 965.97,
+      "text": "the CVP."
+    },
+    {
+      "start": 966.43,
+      "end": 969.97,
+      "text": "Small diameters with greater than 50% cable index, correl-"
+    },
+    {
+      "start": 970.0,
+      "end": 976.02,
+      "text": "with a relatively low CVP compared to a dilated IVC with little to no change in"
+    },
+    {
+      "start": 976.02,
+      "end": 979.98,
+      "text": "that cable index, which correlates with a high CVP. In the first case..."
+    },
+    {
+      "start": 980.0,
+      "end": 984.56,
+      "text": "It's probably the patient can receive fluid, whereas the second case probably should not"
+    },
+    {
+      "start": 984.56,
+      "end": 985.54,
+      "text": "receive as much fluid."
+    },
+    {
+      "start": 986.22,
+      "end": 987.4,
+      "text": "Alright, so that was a lot."
+    },
+    {
+      "start": 987.98,
+      "end": 989.96,
+      "text": "We talked about the cardiac views forming..."
+    },
+    {
+      "start": 990.03,
+      "end": 992.19,
+      "text": "a protocol that you go through each time"
+    },
+    {
+      "start": 992.19,
+      "end": 993.27,
+      "text": "so that you don't miss anything."
+    },
+    {
+      "start": 993.47,
+      "end": 995.19,
+      "text": "Start in the personal long axis view."
+    },
+    {
+      "start": 995.71,
+      "end": 998.29,
+      "text": "Rotate 90 degrees to the personal short axis view."
+    },
+    {
+      "start": 998.89,
+      "end": 999.93,
+      "text": "Go down to the ape."
+    },
+    {
+      "start": 1000.03,
+      "end": 1005.21,
+      "text": "for the apical 4-tamber view, then assuming an overhand approach, go to the sub-Zi-Foid"
+    },
+    {
+      "start": 1005.21,
+      "end": 1005.43,
+      "text": "view."
+    },
+    {
+      "start": 1006.12,
+      "end": 1009.62,
+      "text": "We talked about troubleshooting your image, first check the screen indicator."
+    },
+    {
+      "start": 1010.19,
+      "end": 1011.75,
+      "text": "then check the probe positioning."
+    },
+    {
+      "start": 1012.05,
+      "end": 1013.71,
+      "text": "Then if that doesn't work, put the patient"
+    },
+    {
+      "start": 1013.71,
+      "end": 1015.13,
+      "text": "in the left lateral de-cubitis"
+    },
+    {
+      "start": 1015.13,
+      "end": 1016.97,
+      "text": "if the patient is able to do so."
+    },
+    {
+      "start": 1017.37,
+      "end": 1019.97,
+      "text": "To remember the parational long axis view, remember the three"
+    },
+    {
+      "start": 1020.0,
+      "end": 1026.44,
+      "text": "else's success, the personal long axis view should have the LV on the left side of the screen."
+    },
+    {
+      "start": 1027.17,
+      "end": 1029.97,
+      "text": "We talked about ejection fraction, and how that can be a"
+    },
+    {
+      "start": 1030.0,
+      "end": 1033.08,
+      "text": "predictor of the patient's cardiac status,"
+    },
+    {
+      "start": 1033.3,
+      "end": 1035.48,
+      "text": "whether it's a strong functioning heart"
+    },
+    {
+      "start": 1035.48,
+      "end": 1037.2,
+      "text": "or whether it's a poor functioning heart,"
+    },
+    {
+      "start": 1037.54,
+      "end": 1039.98,
+      "text": "you can do that qualitatively by just looking."
+    },
+    {
+      "start": 1040.0,
+      "end": 1042.2,
+      "text": "looking at it, which takes little to no time,"
+    },
+    {
+      "start": 1042.38,
+      "end": 1045.12,
+      "text": "or you can quantitatively do it by using EPSS."
+    },
+    {
+      "start": 1045.32,
+      "end": 1047.0,
+      "text": "We talked about paracardiophusion"
+    },
+    {
+      "start": 1047.0,
+      "end": 1049.36,
+      "text": "and how that's different from paracardiotampinod."
+    },
+    {
+      "start": 1050.1,
+      "end": 1054.66,
+      "text": "We talked about right ventricular strain and how a pulmonary embolism or other cause of"
+    },
+    {
+      "start": 1054.66,
+      "end": 1059.74,
+      "text": "acute pulmonary hypertension can cause the right ventricle to enlarge, and we also talked"
+    },
+    {
+      "start": 1059.74,
+      "end": 1059.96,
+      "text": "about"
+    },
+    {
+      "start": 1060.0,
+      "end": 1065.38,
+      "text": "IVC measurements. We talked about the cable index and how that can be a predictor of the fluid status"
+    },
+    {
+      "start": 1065.38,
+      "end": 1069.96,
+      "text": "of the patient. Here are the references that I used. And..."
+    }
+  ]
+}

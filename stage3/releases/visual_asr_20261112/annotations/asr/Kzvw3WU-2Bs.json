@@ -1,0 +1,163 @@
+{
+  "video_id": "Kzvw3WU-2Bs",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/Kzvw3WU-2Bs/asr.txt",
+  "segments": [
+    {
+      "start": 27.61,
+      "end": 30.41,
+      "text": "Hi, this is Hadilecia, interventional cardiovascular specialist."
+    },
+    {
+      "start": 30.51,
+      "end": 37.01,
+      "text": "This is just a model of basic 101 vascular access, ultrasound-based vascular access."
+    },
+    {
+      "start": 37.43,
+      "end": 40.21,
+      "text": "So you need basically three components."
+    },
+    {
+      "start": 40.45,
+      "end": 46.75,
+      "text": "The first one is an ultrasound probe that you really like and that is pretty sensitive"
+    },
+    {
+      "start": 46.75,
+      "end": 49.27,
+      "text": "and detects fine detail."
+    },
+    {
+      "start": 49.81,
+      "end": 51.87,
+      "text": "It's definitely worth the investment."
+    },
+    {
+      "start": 51.87,
+      "end": 57.49,
+      "text": "And number two, a micro-puncture needle with a serrated tip that is ecogenic."
+    },
+    {
+      "start": 58.24,
+      "end": 63.82,
+      "text": "And the third is obviously the coordination between the two, which makes it, which actually"
+    },
+    {
+      "start": 63.82,
+      "end": 66.4,
+      "text": "gets the experience of ultrasound-based access."
+    },
+    {
+      "start": 67.2,
+      "end": 73.0,
+      "text": "So often enough, we see a lot of mistakes with people placing the ultrasound probe right"
+    },
+    {
+      "start": 73.0,
+      "end": 79.3,
+      "text": "there and trying to kind of come down with the needle without being able to see the needle."
+    },
+    {
+      "start": 79.9,
+      "end": 84.56,
+      "text": "other people just incline the ultrasound probe too much to a point where it"
+    },
+    {
+      "start": 84.56,
+      "end": 88.92,
+      "text": "actually passes the ultrasound. You're going to have to picture a 3D image where"
+    },
+    {
+      "start": 88.92,
+      "end": 94.34,
+      "text": "you're ultrasounding the tip of the needle in one little detail that may help a"
+    },
+    {
+      "start": 94.34,
+      "end": 99.64,
+      "text": "lot is on your way in. You can jiggle the needle back and forth to be able to see"
+    },
+    {
+      "start": 99.64,
+      "end": 106.53,
+      "text": "it and readjust the angle of your left hand or right hand depending on how you"
+    },
+    {
+      "start": 106.53,
+      "end": 111.99,
+      "text": "getting access in order to see the needle tip. The most important thing is to see the needle tip. If you"
+    },
+    {
+      "start": 111.99,
+      "end": 119.63,
+      "text": "don't see it, that's not ultrasound guide of the access. So my personal preference obviously multiple"
+    },
+    {
+      "start": 119.63,
+      "end": 128.09,
+      "text": "techniques can be done but my personal technique is I identify the target zone by fluoroscopy where the"
+    },
+    {
+      "start": 128.09,
+      "end": 134.99,
+      "text": "ultrasound needs to hit the artery and I actually ultrasound almost in a 90 degree angle with a"
+    },
+    {
+      "start": 134.99,
+      "end": 141.29,
+      "text": "slight tilt and then obviously the angle of entry into the artery has to be close to 45 degrees"
+    },
+    {
+      "start": 141.85,
+      "end": 148.67,
+      "text": "so we don't want to start right next to the ultrasound access site at the ultrasound imaging site"
+    },
+    {
+      "start": 148.67,
+      "end": 155.29,
+      "text": "we're gonna start obviously a little bit more proximal and on my way in first when I go in I actually"
+    },
+    {
+      "start": 155.29,
+      "end": 165.03,
+      "text": "go back and forth on the on the skin but I can see that I'm in the right coaxial axis and then what"
+    },
+    {
+      "start": 165.03,
+      "end": 171.81,
+      "text": "I do is I adjust the needle angle in order to get I can definitely see the needle tip"
+    },
+    {
+      "start": 171.81,
+      "end": 181.26,
+      "text": "by ultrasound here and this model has is a little bit taken this is obviously a simulation"
+    },
+    {
+      "start": 181.93,
+      "end": 188.21,
+      "text": "so this is a modified Sony gear technique very important not to take your hand off of"
+    },
+    {
+      "start": 188.21,
+      "end": 193.99,
+      "text": "the artery once you have access because by taking that off you may displace the needle can"
+    },
+    {
+      "start": 193.99,
+      "end": 202.34,
+      "text": "either go too deep or can get out of the artery. So make sure you keep your ultrasound on the patient"
+    },
+    {
+      "start": 202.34,
+      "end": 210.6,
+      "text": "right before you thread the wire and obviously if the wire doesn't thread your assistant can hold"
+    },
+    {
+      "start": 210.6,
+      "end": 218.44,
+      "text": "the needle at that site, bring it down or readjust the angle depending on how you access the artery."
+    }
+  ]
+}

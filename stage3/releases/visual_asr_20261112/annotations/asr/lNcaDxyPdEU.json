@@ -1,0 +1,698 @@
+{
+  "video_id": "lNcaDxyPdEU",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/lNcaDxyPdEU/asr.txt",
+  "segments": [
+    {
+      "start": 5.09,
+      "end": 9.91,
+      "text": "Oh, I'm Kristen Radkin. I'm one of the PGY5."
+    },
+    {
+      "start": 10.13,
+      "end": 12.65,
+      "text": "and it's Jesus' residence at the University of Alberta."
+    },
+    {
+      "start": 14.32,
+      "end": 16.56,
+      "text": "And one of my passions is point of care ultrasound,"
+    },
+    {
+      "start": 17.06,
+      "end": 18.64,
+      "text": "specifically lung ultrasound."
+    },
+    {
+      "start": 19.14,
+      "end": 19.98,
+      "text": "And these are my notes for the..."
+    },
+    {
+      "start": 20.19,
+      "end": 27.24,
+      "text": "busy anesthesiologist. For this presentation, I will assume that you've had some exposure"
+    },
+    {
+      "start": 27.24,
+      "end": 29.98,
+      "text": "to lung ultrasound previously, perhaps during..."
+    },
+    {
+      "start": 30.03,
+      "end": 36.45,
+      "text": "training. I will very similarly review the most high yield lung ultrasound artifacts, and"
+    },
+    {
+      "start": 36.45,
+      "end": 39.93,
+      "text": "thereafter I will introduce you to the blue or bedside lung ultrasound."
+    },
+    {
+      "start": 40.06,
+      "end": 48.29,
+      "text": "in emergency scanning protocol with one small modification I introduced to improve workflow and speed without sacrificing accuracy."
+    },
+    {
+      "start": 50.0,
+      "end": 55.0,
+      "text": "through a short demonstration of what a blue scan might look like, and lastly, we will"
+    },
+    {
+      "start": 55.0,
+      "end": 58.2,
+      "text": "review the blue protocol in terms of diagnostics."
+    },
+    {
+      "start": 60.61,
+      "end": 67.25,
+      "text": "typically like to start my presentations with a clinic woman yet. In Priya, you have a 76-year-old"
+    },
+    {
+      "start": 67.25,
+      "end": 69.91,
+      "text": "lady with a history of emphysemitis soup."
+    },
+    {
+      "start": 70.03,
+      "end": 74.83,
+      "text": "the ad have representing for unilateral mastectomy for breast cancer."
+    },
+    {
+      "start": 76.0,
+      "end": 79.86,
+      "text": "The patient states that she started to feel dismayed when she woke up with a coughing"
+    },
+    {
+      "start": 80.1,
+      "end": 87.0,
+      "text": "this morning. Her vital signs are heart rate 121. Lead pressure 105 over 52"
+    },
+    {
+      "start": 87.0,
+      "end": 89.98,
+      "text": "two saturations in the lower 80s on room air."
+    },
+    {
+      "start": 90.64,
+      "end": 97.16,
+      "text": "respiratory rate 28 and temperature 37.8. With the ambient noise your"
+    },
+    {
+      "start": 97.16,
+      "end": 99.98,
+      "text": "Oskultation is difficult and a portable channel."
+    },
+    {
+      "start": 100.0,
+      "end": 106.08,
+      "text": "extreme won't be available for at least a half hour. Your initial differential diagnosis"
+    },
+    {
+      "start": 106.08,
+      "end": 109.74,
+      "text": "includes some of the most common causes of acute respiratory failure."
+    },
+    {
+      "start": 110.19,
+      "end": 118.84,
+      "text": "and adults. He'll be the exasperation of pneumonia, pulmonary edema, pneumothorax, and pulmonary"
+    },
+    {
+      "start": 118.84,
+      "end": 119.36,
+      "text": "embolism."
+    },
+    {
+      "start": 121.28,
+      "end": 126.37,
+      "text": "Like most surgical suites, you have immediate access to an ultrasound machine, and you're"
+    },
+    {
+      "start": 126.37,
+      "end": 129.41,
+      "text": "about to get it to know the blue printer call, which is designed to provide."
+    },
+    {
+      "start": 130.16,
+      "end": 133.34,
+      "text": "diagnosis for each of those conditions in an acute respiratory failure."
+    },
+    {
+      "start": 135.89,
+      "end": 139.72,
+      "text": "Many lung ultrasound, the first thing you look for is lung slide."
+    },
+    {
+      "start": 140.13,
+      "end": 143.31,
+      "text": "the shimmer of the plural line or seashore sign in M mode."
+    },
+    {
+      "start": 144.72,
+      "end": 149.97,
+      "text": "Resins confirms ventilation in that section of lung absence, could be pneumothorax with"
+    },
+    {
+      "start": 150.16,
+      "end": 155.52,
+      "text": "part coped sign, it couldn't be pearl adhesions and inflammation due to air in the ass or pneumonia,"
+    },
+    {
+      "start": 156.23,
+      "end": 159.96,
+      "text": "or it could simply be a lack of ventilation, such as in immune-"
+    },
+    {
+      "start": 160.0,
+      "end": 166.25,
+      "text": "Because, like, remember in pneumothorax, you look for a lung point by gliding the probe"
+    },
+    {
+      "start": 166.25,
+      "end": 169.4,
+      "text": "laterally on downwards towards the stretcher"
+    },
+    {
+      "start": 170.77,
+      "end": 174.65,
+      "text": "You should see the leading edge of the lung sliding into and out of view."
+    },
+    {
+      "start": 176.79,
+      "end": 179.96,
+      "text": "For A lines, remember that these mean that there is most..."
+    },
+    {
+      "start": 180.03,
+      "end": 184.77,
+      "text": "the air below the plura, such as in a normally aerated lug or in a pneumothorex."
+    },
+    {
+      "start": 186.49,
+      "end": 189.94,
+      "text": "B-lines represent mainly interstitial disease."
+    },
+    {
+      "start": 190.0,
+      "end": 193.07,
+      "text": "In emergencies, we usually think of either edema,"
+    },
+    {
+      "start": 193.33,
+      "end": 195.47,
+      "text": "beat cardiac or ARDS in nature,"
+    },
+    {
+      "start": 196.49,
+      "end": 198.41,
+      "text": "or interstitial pneumonia or pneumonitis."
+    },
+    {
+      "start": 199.39,
+      "end": 199.97,
+      "text": "Note that..."
+    },
+    {
+      "start": 200.0,
+      "end": 206.79,
+      "text": "B lines rule out pneumothorax. And lastly, there is consolidation which can present either"
+    },
+    {
+      "start": 206.79,
+      "end": 209.92,
+      "text": "with a Swiss cheese looking long as"
+    },
+    {
+      "start": 210.0,
+      "end": 214.56,
+      "text": "you can see there, or with seed lines, which really just look like very fat seed lines."
+    },
+    {
+      "start": 215.76,
+      "end": 219.96,
+      "text": "If any of these artifacts bring only very big bells, I know..."
+    },
+    {
+      "start": 220.06,
+      "end": 223.52,
+      "text": "I will encourage you to review them after viewing this presentation."
+    },
+    {
+      "start": 225.52,
+      "end": 229.26,
+      "text": "These artifacts form the basis of any lung ultrasound, including the blue protocol."
+    },
+    {
+      "start": 231.54,
+      "end": 232.8,
+      "text": "So why the blue protocol?"
+    },
+    {
+      "start": 233.79,
+      "end": 236.67,
+      "text": "Well, for one, it is designed specifically for patients"
+    },
+    {
+      "start": 236.67,
+      "end": 238.41,
+      "text": "in acute respiratory failure."
+    },
+    {
+      "start": 239.63,
+      "end": 239.97,
+      "text": "It provides..."
+    },
+    {
+      "start": 240.0,
+      "end": 244.92,
+      "text": "excling diagnostic accuracy for the diseases in our initial differential diagnosis."
+    },
+    {
+      "start": 246.05,
+      "end": 249.98,
+      "text": "Both in positive predictive value and negative predictive value."
+    },
+    {
+      "start": 250.1,
+      "end": 256.4,
+      "text": "value as you can see here. The blue product called accuracy has even been shown to be superior"
+    },
+    {
+      "start": 256.4,
+      "end": 259.04,
+      "text": "to that of physical examination plus chest x-ray."
+    },
+    {
+      "start": 260.0,
+      "end": 262.18,
+      "text": "that should take less than three to five minutes to complete."
+    },
+    {
+      "start": 264.11,
+      "end": 266.27,
+      "text": "As I alluded to earlier, in my old practice,"
+    },
+    {
+      "start": 266.47,
+      "end": 268.57,
+      "text": "I do modify the original protocol slightly"
+    },
+    {
+      "start": 268.57,
+      "end": 269.89,
+      "text": "by switching the order."
+    },
+    {
+      "start": 270.06,
+      "end": 277.73,
+      "text": "two of the steps. The blue protocol only has three points per hemithorax to"
+    },
+    {
+      "start": 277.73,
+      "end": 279.25,
+      "text": "scan, so six in total."
+    },
+    {
+      "start": 280.61,
+      "end": 286.98,
+      "text": "There's the anterior or upper viewpoint, the ad remedial or lower viewpoint and finally"
+    },
+    {
+      "start": 286.98,
+      "end": 289.52,
+      "text": "the posterior or placepoint."
+    },
+    {
+      "start": 291.02,
+      "end": 293.96,
+      "text": "which is generally as far behind the posture of axillary line"
+    },
+    {
+      "start": 293.96,
+      "end": 297.86,
+      "text": "as the bed will allow me to go at the level of the diaphragm."
+    },
+    {
+      "start": 298.79,
+      "end": 299.95,
+      "text": "Lastly, in one type of surgery,"
+    },
+    {
+      "start": 300.1,
+      "end": 304.56,
+      "text": "and so you will have to scan the legs for DBTs, which I'll cover in the next slide."
+    },
+    {
+      "start": 308.99,
+      "end": 309.97,
+      "text": "So what does this look like?"
+    },
+    {
+      "start": 310.0,
+      "end": 315.89,
+      "text": "like in action. You start by scanning the three points that we just talked about, the upper,"
+    },
+    {
+      "start": 316.19,
+      "end": 319.96,
+      "text": "the lower, and flaps on each hemithorics. While looking..."
+    },
+    {
+      "start": 320.03,
+      "end": 325.44,
+      "text": "or line-sliding, taking note of whether you see mainly A lines, C lines, or consolidates."
+    },
+    {
+      "start": 325.54,
+      "end": 329.45,
+      "text": "But in this case,"
+    },
+    {
+      "start": 330.06,
+      "end": 331.28,
+      "text": "we have long sliding everywhere."
+    },
+    {
+      "start": 332.98,
+      "end": 335.78,
+      "text": "We have primarily A lines with a few B lines."
+    },
+    {
+      "start": 336.36,
+      "end": 338.4,
+      "text": "In general, I'd like to keep a depth of around"
+    },
+    {
+      "start": 338.4,
+      "end": 339.86,
+      "text": "10 centimeters in most situations."
+    },
+    {
+      "start": 340.0,
+      "end": 345.99,
+      "text": "on that I'm looking at log slide as I am presently right now, but I will usually go around six"
+    },
+    {
+      "start": 346.53,
+      "end": 349.87,
+      "text": "I increase the depth."
+    },
+    {
+      "start": 350.1,
+      "end": 353.06,
+      "text": "for the plaques points to maybe about 16 centimeters or so."
+    },
+    {
+      "start": 357.73,
+      "end": 359.89,
+      "text": "And all it should take about a minute, two minutes."
+    },
+    {
+      "start": 360.06,
+      "end": 364.2,
+      "text": "a half to do a scan for both lines. Perhaps a little bit more if you're having to move"
+    },
+    {
+      "start": 364.2,
+      "end": 368.85,
+      "text": "the blankets and gowns. Usually at this point you're done."
+    },
+    {
+      "start": 370.0,
+      "end": 374.43,
+      "text": "situations, you'll have to take just one more step. You may have to look for a"
+    },
+    {
+      "start": 374.43,
+      "end": 379.37,
+      "text": "lung point in pneumothorax. And if the lungs look entirely normal."
+    },
+    {
+      "start": 380.35,
+      "end": 384.51,
+      "text": "Then evaluate the likelihood of pulmonary embolism by scanning for DBT."
+    },
+    {
+      "start": 388.26,
+      "end": 389.78,
+      "text": "This is actually really quite simple in short."
+    },
+    {
+      "start": 390.42,
+      "end": 394.37,
+      "text": "on each leg, again, the femoral vein and papal teal veins,"
+    },
+    {
+      "start": 394.67,
+      "end": 395.89,
+      "text": "ensuring collapse ability."
+    },
+    {
+      "start": 396.87,
+      "end": 399.03,
+      "text": "In this case, I'm scanning the patient's right leg."
+    },
+    {
+      "start": 399.42,
+      "end": 399.96,
+      "text": "Obviously, you..."
+    },
+    {
+      "start": 400.0,
+      "end": 407.57,
+      "text": "do this final laterally. This scat in particular is relatively thorough and it still doesn't take too long."
+    },
+    {
+      "start": 408.23,
+      "end": 409.97,
+      "text": "The key at the formal veins is..."
+    },
+    {
+      "start": 410.0,
+      "end": 411.52,
+      "text": "is to look at the branch points,"
+    },
+    {
+      "start": 412.07,
+      "end": 414.13,
+      "text": "since that is where clock tends to humiliate."
+    },
+    {
+      "start": 419.24,
+      "end": 419.96,
+      "text": "So remember, our"
+    },
+    {
+      "start": 420.16,
+      "end": 425.26,
+      "text": "little vignette, we've got a piece with a very wide differential diagnosis, with"
+    },
+    {
+      "start": 425.26,
+      "end": 429.01,
+      "text": "vast and different treatments. Let's see what happens if we use the blue"
+    },
+    {
+      "start": 429.01,
+      "end": 429.37,
+      "text": "protocol."
+    },
+    {
+      "start": 433.42,
+      "end": 438.79,
+      "text": "So we start by scanning the balloons, looking at those three blue points."
+    },
+    {
+      "start": 441.63,
+      "end": 443.91,
+      "text": "We look to start with if there is any long slide."
+    },
+    {
+      "start": 445.39,
+      "end": 446.89,
+      "text": "Let's say there is no long slide."
+    },
+    {
+      "start": 448.28,
+      "end": 449.74,
+      "text": "If we've got primarily A lines."
+    },
+    {
+      "start": 450.45,
+      "end": 452.11,
+      "text": "below the third, then we look for a lung point"
+    },
+    {
+      "start": 452.11,
+      "end": 453.39,
+      "text": "to diagnose a pneumothorax."
+    },
+    {
+      "start": 455.05,
+      "end": 456.53,
+      "text": "If we cannot find a lung point,"
+    },
+    {
+      "start": 457.61,
+      "end": 459.49,
+      "text": "she could either have a massive pneumothorax,"
+    },
+    {
+      "start": 459.61,
+      "end": 459.97,
+      "text": "blittering."
+    },
+    {
+      "start": 460.16,
+      "end": 465.52,
+      "text": "that whole chest cavity or she could just have a segment of lung that is not ventilated."
+    },
+    {
+      "start": 466.07,
+      "end": 469.76,
+      "text": "Think of a mucus plaque or if this is an intubated patient."
+    },
+    {
+      "start": 470.32,
+      "end": 474.28,
+      "text": "a main steppin' debate from could give you this pattern. If on the other hand you"
+    },
+    {
+      "start": 474.28,
+      "end": 479.46,
+      "text": "just got primarily B-Lights, this is most likely going to be pneumonia."
+    },
+    {
+      "start": 480.13,
+      "end": 483.19,
+      "text": "or ARDS with some plural adhesions."
+    },
+    {
+      "start": 483.79,
+      "end": 485.59,
+      "text": "It does, we're letting with our ex though."
+    },
+    {
+      "start": 485.91,
+      "end": 489.98,
+      "text": "Now we do have..."
+    },
+    {
+      "start": 490.03,
+      "end": 498.44,
+      "text": "If we've got primarily B lines and they're diffusedly scattered throughout the lung, this is most likely pulmonary edema."
+    },
+    {
+      "start": 501.86,
+      "end": 504.23,
+      "text": "If we do have long-slide, note B lines,"
+    },
+    {
+      "start": 504.57,
+      "end": 507.27,
+      "text": "primarily A lines, look at the plaps points."
+    },
+    {
+      "start": 508.84,
+      "end": 509.96,
+      "text": "Emonia likes to hide here."
+    },
+    {
+      "start": 510.0,
+      "end": 519.92,
+      "text": "as does Poland. If the plaques points are also clear, the lug looks largely normal on ultrasound, you've now established that"
+    },
+    {
+      "start": 520.19,
+      "end": 524.79,
+      "text": "flora and interstitial are likely intact, not the cause of our lady's hypoxia."
+    },
+    {
+      "start": 525.7,
+      "end": 529.68,
+      "text": "Your last step is to evaluate the likelihood of pulmonary embolism."
+    },
+    {
+      "start": 530.74,
+      "end": 532.9,
+      "text": "Look for DBT, as mentioned just before."
+    },
+    {
+      "start": 533.96,
+      "end": 536.78,
+      "text": "And if positive, this is a pulmonary embolism"
+    },
+    {
+      "start": 536.78,
+      "end": 539.38,
+      "text": "until proven otherwise, if negative."
+    },
+    {
+      "start": 540.7,
+      "end": 543.7,
+      "text": "This is some larger airway disease such as asthma or COPD."
+    },
+    {
+      "start": 546.03,
+      "end": 548.97,
+      "text": "The entire protocol all put together, looks daunting,"
+    },
+    {
+      "start": 549.19,
+      "end": 549.91,
+      "text": "but if you break it down."
+    },
+    {
+      "start": 550.13,
+      "end": 551.09,
+      "text": "It's really not so bad."
+    },
+    {
+      "start": 552.89,
+      "end": 559.07,
+      "text": "All at all, with just a little bit of practice and understanding of the main log artifacts"
+    },
+    {
+      "start": 559.07,
+      "end": 559.89,
+      "text": "this should take."
+    },
+    {
+      "start": 560.19,
+      "end": 564.17,
+      "text": "No more than five minutes before you can start to more effectively and accurately treat"
+    },
+    {
+      "start": 564.17,
+      "end": 569.43,
+      "text": "the common and dangerous causes of your patient's respiratory distress without having to wait"
+    },
+    {
+      "start": 569.43,
+      "end": 569.87,
+      "text": "for another."
+    },
+    {
+      "start": 570.0,
+      "end": 576.78,
+      "text": "and encourage you to be opportunistic and practice this technique when occasions present themselves."
+    },
+    {
+      "start": 577.74,
+      "end": 579.8,
+      "text": "None ultrasound is almost as quick to learn."
+    },
+    {
+      "start": 580.1,
+      "end": 587.24,
+      "text": "it is to execute this very high yield. For more in-depth look at any of the ultrasound concepts"
+    },
+    {
+      "start": 587.24,
+      "end": 589.16,
+      "text": "and artifacts mentioned in this presentation."
+    }
+  ]
+}

@@ -1,0 +1,703 @@
+{
+  "video_id": "Q1KzQ0aQW_o",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/Q1KzQ0aQW_o/asr.txt",
+  "segments": [
+    {
+      "start": 0.51,
+      "end": 2.11,
+      "text": "Welcome everybody, my name's Jason Williams."
+    },
+    {
+      "start": 2.13,
+      "end": 4.11,
+      "text": "We're excited to talk about ultrasound guided"
+    },
+    {
+      "start": 4.11,
+      "end": 5.31,
+      "text": "central line placement today."
+    },
+    {
+      "start": 5.97,
+      "end": 8.19,
+      "text": "As you can see, we're gonna talk about four different topics,"
+    },
+    {
+      "start": 8.47,
+      "end": 9.49,
+      "text": "the first being set up."
+    },
+    {
+      "start": 10.13,
+      "end": 13.59,
+      "text": "Secondly, we'll use ultrasound to choose the safest target and easiest target."
+    },
+    {
+      "start": 14.21,
+      "end": 17.15,
+      "text": "Next, we'll use the ultrasound to guide the needle tip into the vein."
+    },
+    {
+      "start": 17.83,
+      "end": 19.83,
+      "text": "And finally, we'll confirm wire placement."
+    },
+    {
+      "start": 19.83,
+      "end": 19.97,
+      "text": "I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry,"
+    },
+    {
+      "start": 20.03,
+      "end": 24.26,
+      "text": "ultrasound as well. Ultrasound has really been proven to improve central"
+    },
+    {
+      "start": 24.26,
+      "end": 29.9,
+      "text": "venus catheter placement. It reduces arterial puncture, pneumothorax, chemothorax."
+    },
+    {
+      "start": 30.03,
+      "end": 36.32,
+      "text": "and increases success rate. For those reasons, the CDC and AHRQ have all strongly endorsed"
+    },
+    {
+      "start": 36.32,
+      "end": 39.98,
+      "text": "central lines to be placed with ultrasound guidance. Let's start."
+    },
+    {
+      "start": 40.03,
+      "end": 47.96,
+      "text": "So first thing, we're going to use our linear probe. It's high frequency, which means high resolution for superficial structures like bands."
+    },
+    {
+      "start": 49.14,
+      "end": 49.98,
+      "text": "Secondly, you want to..."
+    },
+    {
+      "start": 50.1,
+      "end": 54.4,
+      "text": "Now the probe you're looking for Venus structures, here it's called XAM, and we want to shift"
+    },
+    {
+      "start": 54.4,
+      "end": 56.42,
+      "text": "to a vascular or Venus imaging mode."
+    },
+    {
+      "start": 59.78,
+      "end": 59.9,
+      "text": "Next."
+    },
+    {
+      "start": 60.1,
+      "end": 63.96,
+      "text": "we want to orient our probe to the screen. Your probe has a right and left just like the"
+    },
+    {
+      "start": 63.96,
+      "end": 68.65,
+      "text": "screen has a right and left. Here you can see a dot on the screen is going to correlate"
+    },
+    {
+      "start": 68.65,
+      "end": 69.49,
+      "text": "with a dot."
+    },
+    {
+      "start": 70.16,
+      "end": 74.77,
+      "text": "on the probe. Often, there's different dots and probe markers. I recommend looking at the"
+    },
+    {
+      "start": 74.77,
+      "end": 79.25,
+      "text": "handle to identify where your probe marker is. So in this case, if the dot is on the left"
+    },
+    {
+      "start": 79.25,
+      "end": 79.81,
+      "text": "to the screen."
+    },
+    {
+      "start": 80.38,
+      "end": 84.02,
+      "text": "I want my probe marker lined up to the left, lined up here."
+    },
+    {
+      "start": 84.73,
+      "end": 86.81,
+      "text": "And if you're ever unsure, the safest way"
+    },
+    {
+      "start": 86.81,
+      "end": 88.13,
+      "text": "is to just touch the probe."
+    },
+    {
+      "start": 88.63,
+      "end": 89.97,
+      "text": "And if you're touching the left side of the..."
+    },
+    {
+      "start": 90.1,
+      "end": 95.27,
+      "text": "Your finger should show up on the left side of the screen so here I'm touching the left of the probe"
+    },
+    {
+      "start": 95.27,
+      "end": 98.34,
+      "text": "But my finger is appearing on the right side of the screen"
+    },
+    {
+      "start": 100.0,
+      "end": 104.6,
+      "text": "my probe. Now when I touch the left side of the probe, my fingers on the left side of the screen."
+    },
+    {
+      "start": 105.1,
+      "end": 109.02,
+      "text": "This is important because you want your needle on the left side of the screen and the left side of the"
+    },
+    {
+      "start": 109.02,
+      "end": 109.84,
+      "text": "patient to be aligned."
+    },
+    {
+      "start": 110.77,
+      "end": 113.85,
+      "text": "Next we're going to use the ultrasound to adjust our depth and our gain."
+    },
+    {
+      "start": 116.06,
+      "end": 119.22,
+      "text": "So here you can see gain is brightness or darkness."
+    },
+    {
+      "start": 120.1,
+      "end": 122.58,
+      "text": "and so you want to adjust the gain to an appropriate level,"
+    },
+    {
+      "start": 123.13,
+      "end": 123.97,
+      "text": "as well as the depth."
+    },
+    {
+      "start": 124.53,
+      "end": 126.75,
+      "text": "You want to put the vein in the middle of the skirt."
+    },
+    {
+      "start": 128.09,
+      "end": 129.29,
+      "text": "Here you can see jugular vein."
+    },
+    {
+      "start": 132.05,
+      "end": 139.92,
+      "text": "next we'll talk about choosing a safe pain with ultrasound as you can see on the slide an easy target is considered when the vein is"
+    },
+    {
+      "start": 140.16,
+      "end": 144.74,
+      "text": "twice the size of the carotid, and superficial, less than two centimeters deep, compared to"
+    },
+    {
+      "start": 144.74,
+      "end": 148.94,
+      "text": "a difficult target if the internal jugular vein is ever the same size or smaller than the"
+    },
+    {
+      "start": 148.94,
+      "end": 149.36,
+      "text": "carotid."
+    },
+    {
+      "start": 150.0,
+      "end": 153.76,
+      "text": "greater than 200 meters deep is going to be difficult to reach. So, let's use the"
+    },
+    {
+      "start": 153.76,
+      "end": 158.95,
+      "text": "ultrasound to slide up and down the neck of the right internal jugular vein and"
+    },
+    {
+      "start": 158.95,
+      "end": 159.75,
+      "text": "choose a safe..."
+    },
+    {
+      "start": 160.1,
+      "end": 169.92,
+      "text": "So right here at the clavicle the ij is large and away from the artery but if you start too close to the clavicle you could run into the apex"
+    },
+    {
+      "start": 170.0,
+      "end": 174.72,
+      "text": "of the lung or subclavian vessels which you see here. So as I slide away from the"
+    },
+    {
+      "start": 174.72,
+      "end": 179.82,
+      "text": "clavicle, the IJ remains off to the side but becomes smaller."
+    },
+    {
+      "start": 180.74,
+      "end": 184.17,
+      "text": "So sliding back down, this looks like an ideal target."
+    },
+    {
+      "start": 184.37,
+      "end": 186.64,
+      "text": "It's superficial, large, and offset."
+    },
+    {
+      "start": 187.98,
+      "end": 189.38,
+      "text": "If the right IJ..."
+    },
+    {
+      "start": 190.03,
+      "end": 193.07,
+      "text": "doesn't look approachable and encourage you to check out the left internal"
+    },
+    {
+      "start": 193.07,
+      "end": 198.64,
+      "text": "jugger of vein as well. And if that internal jugger of vein looks challenging, go"
+    },
+    {
+      "start": 198.64,
+      "end": 199.98,
+      "text": "and explore the femoral arteries as well."
+    },
+    {
+      "start": 200.0,
+      "end": 203.94,
+      "text": "the same principles, you would like a large superficial vein that's easy to access."
+    },
+    {
+      "start": 205.13,
+      "end": 209.97,
+      "text": "Once you've chosen a safe cannulation site, be sure to compress the vein to make sure there's no"
+    },
+    {
+      "start": 210.03,
+      "end": 216.28,
+      "text": "No thrombus, and compress all the way from the clavicle, all the way to the ear, assuring"
+    },
+    {
+      "start": 216.28,
+      "end": 217.04,
+      "text": "there's no cluck."
+    },
+    {
+      "start": 218.38,
+      "end": 219.96,
+      "text": "thoughts are black or anticoic when..."
+    },
+    {
+      "start": 220.0,
+      "end": 222.62,
+      "text": "they're acute, so the only way to rule out thrombus is with compression."
+    },
+    {
+      "start": 223.74,
+      "end": 226.32,
+      "text": "You can see a chronic clot here is more ecogenic in this slide."
+    },
+    {
+      "start": 227.04,
+      "end": 229.86,
+      "text": "Next we're going to use ultrasound to guide the needle tip towards our target."
+    },
+    {
+      "start": 230.0,
+      "end": 236.39,
+      "text": "There are two different approaches. One is the outer plane technique or cross-sectional view as you can see here."
+    },
+    {
+      "start": 236.96,
+      "end": 239.4,
+      "text": "The other is the in-plane technique or longitudinal view."
+    },
+    {
+      "start": 240.1,
+      "end": 243.2,
+      "text": "There's trade-offs, most people prefer the outer plane"
+    },
+    {
+      "start": 243.2,
+      "end": 246.18,
+      "text": "or transverse view because there's less structures"
+    },
+    {
+      "start": 246.18,
+      "end": 247.76,
+      "text": "to align and you can see the artery."
+    },
+    {
+      "start": 247.96,
+      "end": 249.34,
+      "text": "We're gonna be covering that for this exercise."
+    },
+    {
+      "start": 250.48,
+      "end": 252.26,
+      "text": "You want to center the vein in the middle of the screen?"
+    },
+    {
+      "start": 253.49,
+      "end": 256.17,
+      "text": "Next, you want to insert your needle tip right under the probe"
+    },
+    {
+      "start": 256.17,
+      "end": 258.19,
+      "text": "in the middle of the probe as close as you can"
+    },
+    {
+      "start": 258.19,
+      "end": 259.97,
+      "text": "without popping the sterile..."
+    },
+    {
+      "start": 260.06,
+      "end": 267.94,
+      "text": "cover, insert the needle 3mm and start bouncing the needle tip and slide the probe to find your needle tip."
+    },
+    {
+      "start": 267.94,
+      "end": 269.97,
+      "text": "but bright white dots, you know, on the screen."
+    },
+    {
+      "start": 270.0,
+      "end": 274.09,
+      "text": "is your needle tip. Once that's identified, advance the needle three millimeters,"
+    },
+    {
+      "start": 274.49,
+      "end": 279.87,
+      "text": "pause the needle, slide the probe, bounce, there's the needle tip there. I'm going to"
+    },
+    {
+      "start": 280.0,
+      "end": 285.3,
+      "text": "the needle three more millimeters, pause there, slide the probe, bounce my needle"
+    },
+    {
+      "start": 285.3,
+      "end": 289.9,
+      "text": "tip there. When it advanced needle three more millimeters, pause the needle, slide"
+    },
+    {
+      "start": 290.06,
+      "end": 294.31,
+      "text": "probe. I'm about to enter the vein when advanced needle three more millimeters"
+    },
+    {
+      "start": 294.31,
+      "end": 298.15,
+      "text": "then slide the probe. You want to place your needle tip now in the center of the"
+    },
+    {
+      "start": 298.15,
+      "end": 299.91,
+      "text": "vein and that'll give you maximum flex of"
+    },
+    {
+      "start": 300.0,
+      "end": 302.78,
+      "text": "as you're trying to insert the wire in case the needle tipped moves."
+    },
+    {
+      "start": 303.72,
+      "end": 306.56,
+      "text": "One of the most common areas with the auto plane technique is"
+    },
+    {
+      "start": 306.56,
+      "end": 309.96,
+      "text": "to advance your needle while not sliding the..."
+    },
+    {
+      "start": 310.06,
+      "end": 314.65,
+      "text": "So, you can be looking at the shaft of your needle and your needle gets way too deep into"
+    },
+    {
+      "start": 314.65,
+      "end": 317.47,
+      "text": "the patient and this is how pneumothorax or hemothorax can occur."
+    },
+    {
+      "start": 318.18,
+      "end": 319.96,
+      "text": "It's very important if you advance your knee..."
+    },
+    {
+      "start": 320.0,
+      "end": 327.38,
+      "text": "You have to slide your probe the same distance advanced slide advanced slide a couple tricks to help you prevent this"
+    },
+    {
+      "start": 327.38,
+      "end": 329.46,
+      "text": "complication if you look at the screen"
+    },
+    {
+      "start": 330.16,
+      "end": 332.02,
+      "text": "This juggerabane is two centimeters deep."
+    },
+    {
+      "start": 332.73,
+      "end": 335.61,
+      "text": "If you've ever inserted all six centimeters of that needle,"
+    },
+    {
+      "start": 335.83,
+      "end": 336.79,
+      "text": "that's way too deep."
+    },
+    {
+      "start": 337.62,
+      "end": 339.98,
+      "text": "You should reach the juggerabane after about..."
+    },
+    {
+      "start": 340.1,
+      "end": 341.76,
+      "text": "three centimeters of needle insertion,"
+    },
+    {
+      "start": 341.88,
+      "end": 344.1,
+      "text": "because the jugular vein is only two centimeters deep."
+    },
+    {
+      "start": 344.86,
+      "end": 346.84,
+      "text": "And in this case, the bright white dot in the screen"
+    },
+    {
+      "start": 346.84,
+      "end": 348.06,
+      "text": "is the shaft of my needle."
+    },
+    {
+      "start": 348.6,
+      "end": 349.74,
+      "text": "By slide, slide."
+    },
+    {
+      "start": 350.0,
+      "end": 355.08,
+      "text": "slide slide I see I'm actually out the back wall of the vein way too deep"
+    },
+    {
+      "start": 355.56,
+      "end": 359.94,
+      "text": "Because I was looking at the shaft of my needle up here and not the needle tip as I"
+    },
+    {
+      "start": 360.06,
+      "end": 367.31,
+      "text": "slide away. In this case, I can pull back and re-enter the vein and make sure this is my needle"
+    },
+    {
+      "start": 367.31,
+      "end": 369.96,
+      "text": "to other clues to make"
+    },
+    {
+      "start": 370.0,
+      "end": 374.78,
+      "text": "Make sure you've found your needle tip, is to gently bounce the needle, and slide the"
+    },
+    {
+      "start": 374.78,
+      "end": 378.9,
+      "text": "probe away from the needle till it disappears, and then slide back to the needle."
+    },
+    {
+      "start": 378.9,
+      "end": 379.98,
+      "text": "the first-"
+    },
+    {
+      "start": 380.0,
+      "end": 385.46,
+      "text": "the peers is going to be the needle tip. Slide away and slide back. There's your needle tip,"
+    },
+    {
+      "start": 385.46,
+      "end": 389.84,
+      "text": "not the shaft of the needle. Another way to improve imaging the needle tip is keeping your"
+    },
+    {
+      "start": 392.85,
+      "end": 399.98,
+      "text": "I see a lot of people place the pro perpendicular to the skin, but you get the most echo genic waves bouncing back"
+    },
+    {
+      "start": 400.0,
+      "end": 401.62,
+      "text": "I can't afford that this 90 degree angle."
+    },
+    {
+      "start": 402.28,
+      "end": 403.92,
+      "text": "And in fact, some people will suggest"
+    },
+    {
+      "start": 403.92,
+      "end": 406.44,
+      "text": "as your needle advances to fan the probe,"
+    },
+    {
+      "start": 407.09,
+      "end": 409.61,
+      "text": "but as the beam gets more and more parallel to the needle,"
+    },
+    {
+      "start": 410.22,
+      "end": 413.88,
+      "text": "You don't get as many ultrasound waves traveling back to the probe and it's harder to identify"
+    },
+    {
+      "start": 413.88,
+      "end": 414.46,
+      "text": "your needle tip."
+    },
+    {
+      "start": 415.14,
+      "end": 419.74,
+      "text": "I recommend maintaining this 90 degree angle and sliding the probe at this angle to maintain"
+    },
+    {
+      "start": 420.0,
+      "end": 421.24,
+      "text": "and good imaging of the needle tip."
+    },
+    {
+      "start": 422.46,
+      "end": 424.84,
+      "text": "Briefly, we'll demonstrate the longitudinal approach"
+    },
+    {
+      "start": 424.84,
+      "end": 426.36,
+      "text": "for the in-plane technique"
+    },
+    {
+      "start": 426.36,
+      "end": 428.08,
+      "text": "where the internal juggerabane is aligned."
+    },
+    {
+      "start": 428.6,
+      "end": 429.96,
+      "text": "It's important to make sure not-"
+    },
+    {
+      "start": 430.03,
+      "end": 434.01,
+      "text": "at the carotid in this case. The needle here is inserted under the middle of the probe,"
+    },
+    {
+      "start": 435.03,
+      "end": 439.91,
+      "text": "and you should see it start to enter the screen. And this is considered more difficult."
+    },
+    {
+      "start": 440.06,
+      "end": 449.93,
+      "text": "technique because the needle and the vein all must be aligned and here you can see the needle"
+    },
+    {
+      "start": 450.06,
+      "end": 457.73,
+      "text": "enter the vein. But if I slide the beam off, you can lose everything entirely. And if I slide the beam back, we become more apparent."
+    },
+    {
+      "start": 460.77,
+      "end": 462.89,
+      "text": "Now the final step, the ultrasound is helpful,"
+    },
+    {
+      "start": 463.05,
+      "end": 464.51,
+      "text": "is confirming wire placement."
+    },
+    {
+      "start": 465.64,
+      "end": 467.96,
+      "text": "So once the wire is in, it should enter"
+    },
+    {
+      "start": 467.96,
+      "end": 469.72,
+      "text": "without much resistance."
+    },
+    {
+      "start": 474.77,
+      "end": 479.89,
+      "text": "And before we dilate the artery, we can confirm the wires in the vein and not the artery."
+    },
+    {
+      "start": 480.0,
+      "end": 485.32,
+      "text": "this case. So in the transverse view, we can slide and we see the ecogenic wire"
+    },
+    {
+      "start": 485.32,
+      "end": 489.58,
+      "text": "start to enter the vein here. And as I slide, I see that"
+    },
+    {
+      "start": 490.0,
+      "end": 494.99,
+      "text": "stays in the vein and doesn't exit out the back into an artery and also check"
+    },
+    {
+      "start": 494.99,
+      "end": 498.94,
+      "text": "in the longitudinal plane and here we see wire"
+    },
+    {
+      "start": 500.54,
+      "end": 506.54,
+      "text": "Enter the vein and travel on the back wall down the jugular vein."
+    },
+    {
+      "start": 510.7,
+      "end": 513.36,
+      "text": "And that's the three areas what ultrasound can really help you."
+    },
+    {
+      "start": 513.58,
+      "end": 515.92,
+      "text": "Choosing a safe target, guiding the needle tip"
+    },
+    {
+      "start": 515.92,
+      "end": 517.86,
+      "text": "and confirming the wires in the proper way."
+    },
+    {
+      "start": 519.42,
+      "end": 519.96,
+      "text": "I hope that was helpful."
+    }
+  ]
+}

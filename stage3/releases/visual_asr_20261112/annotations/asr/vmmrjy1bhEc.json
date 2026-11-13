@@ -1,0 +1,143 @@
+{
+  "video_id": "vmmrjy1bhEc",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/vmmrjy1bhEc/asr.txt",
+  "segments": [
+    {
+      "start": 0.66,
+      "end": 6.14,
+      "text": "We're going to examine the abdominal vasculature now, we're going to do the IVC and how to"
+    },
+    {
+      "start": 6.14,
+      "end": 11.68,
+      "text": "assess for fluid status as well as central venous pressure."
+    },
+    {
+      "start": 12.64,
+      "end": 18.52,
+      "text": "So in order to do this scan, the first thing is you want to have the patient supine if you"
+    },
+    {
+      "start": 18.52,
+      "end": 24.45,
+      "text": "can bend their legs, great to relax abdominal musculature, you're going to use a phasorate probe"
+    },
+    {
+      "start": 24.45,
+      "end": 28.59,
+      "text": "on abdominal settings or cardiac settings if you want, but I use abdominal settings"
+    },
+    {
+      "start": 28.59,
+      "end": 29.03,
+      "text": "for this."
+    },
+    {
+      "start": 29.03,
+      "end": 35.11,
+      "text": "In order to find the IVC, you really want to be as super as possible next to the epigastrum."
+    },
+    {
+      "start": 36.51,
+      "end": 37.71,
+      "text": "And next to the epigastrum area."
+    },
+    {
+      "start": 38.13,
+      "end": 42.49,
+      "text": "So the first thing I identify is I look for the liver first because IVC has to go through"
+    },
+    {
+      "start": 42.49,
+      "end": 43.09,
+      "text": "the liver."
+    },
+    {
+      "start": 43.57,
+      "end": 47.15,
+      "text": "The IVC is usually the most posterior vessel that you see in the liver."
+    },
+    {
+      "start": 47.45,
+      "end": 49.13,
+      "text": "And we see it right here in the transverse view."
+    },
+    {
+      "start": 50.9,
+      "end": 52.71,
+      "text": "There you see it, okay?"
+    },
+    {
+      "start": 53.09,
+      "end": 58.96,
+      "text": "So once you identify the IVC, what you can do is use your right hand to center the probe"
+    },
+    {
+      "start": 58.96,
+      "end": 67.84,
+      "text": "to find the IVC and then use your left hand to rotate and how I approach it is you cannot"
+    },
+    {
+      "start": 68.7,
+      "end": 71.16,
+      "text": "rotate the probe unless your vessel is centered."
+    },
+    {
+      "start": 71.64,
+      "end": 76.9,
+      "text": "So if your vessel is truly centered and you rotate your probe, you'll get the long axis"
+    },
+    {
+      "start": 76.9,
+      "end": 79.19,
+      "text": "view of that vessel."
+    },
+    {
+      "start": 79.37,
+      "end": 85.13,
+      "text": "So here's the IVC and you can actually see the IVC or the inferior vena cava entering the"
+    },
+    {
+      "start": 85.13,
+      "end": 86.65,
+      "text": "right atrium right there."
+    },
+    {
+      "start": 86.65,
+      "end": 87.23,
+      "text": "Okay?"
+    },
+    {
+      "start": 87.82,
+      "end": 92.12,
+      "text": "So as our patient takes a big breath in, you see that the IVC collapses."
+    },
+    {
+      "start": 93.18,
+      "end": 98.06,
+      "text": "So that's a sign that his right atrial pressures or central venous pressures are low."
+    },
+    {
+      "start": 98.66,
+      "end": 103.1,
+      "text": "And he might, he should be able to tolerate fluids if given to him."
+    },
+    {
+      "start": 103.36,
+      "end": 105.27,
+      "text": "So take another big breath in, okay?"
+    },
+    {
+      "start": 105.77,
+      "end": 111.03,
+      "text": "And the general consensus is that more than 50% collapse indicates a low right atrial"
+    },
+    {
+      "start": 111.03,
+      "end": 112.75,
+      "text": "pressure in this view."
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "video_id": "i53LOORRHW8",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/i53LOORRHW8/asr.txt",
+  "segments": [
+    {
+      "start": 26.2,
+      "end": 32.44,
+      "text": "In this video, we'll demonstrate how to use ultrasound to guide subclavian central venous placement."
+    },
+    {
+      "start": 33.67,
+      "end": 38.84,
+      "text": "The benefit of the subclavian approach is there is evidence to support"
+    },
+    {
+      "start": 39.26,
+      "end": 46.07,
+      "text": "less likelihood of infection, but the disadvantage is it's typically done in a blind approach"
+    },
+    {
+      "start": 46.07,
+      "end": 54.23,
+      "text": "which puts the patient at risk for erroneous puncture of the artery or for pneumothorax."
+    },
+    {
+      "start": 54.23,
+      "end": 58.95,
+      "text": "The benefit of ultrasound is that these complications can be avoided."
+    },
+    {
+      "start": 60.33,
+      "end": 64.27,
+      "text": "The location to start with the ultrasound is in the delta pectoral groove."
+    },
+    {
+      "start": 65.42,
+      "end": 71.28,
+      "text": "In the delta pectoral groove, we can see the subclavian artery adjacent to the subclavian vein."
+    },
+    {
+      "start": 72.86,
+      "end": 78.28,
+      "text": "To differentiate the subclavian artery versus the vein, a little bit of compression will compress the vein,"
+    },
+    {
+      "start": 78.86,
+      "end": 81.56,
+      "text": "whereas the artery will pulsate."
+    },
+    {
+      "start": 82.37,
+      "end": 87.81,
+      "text": "Once the subclavian vein has been identified, it is best to turn the transducer 90 degrees"
+    },
+    {
+      "start": 88.35,
+      "end": 90.99,
+      "text": "to obtain a longitudinal image of the vein."
+    },
+    {
+      "start": 97.25,
+      "end": 101.9,
+      "text": "Here is a longitudinal image of the subclavian vein."
+    },
+    {
+      "start": 102.65,
+      "end": 109.32,
+      "text": "The next step is to move the transducer as close to the clavicle as possible."
+    },
+    {
+      "start": 111.16,
+      "end": 118.01,
+      "text": "So here we're moving toward the clavicle, and we can see the transducer is abutting"
+    },
+    {
+      "start": 118.01,
+      "end": 121.93,
+      "text": "the clavicle with an image of the subclavian vein."
+    },
+    {
+      "start": 121.93,
+      "end": 129.43,
+      "text": "The benefit of this view is, in this example, I can see the plura sliding underneath,"
+    },
+    {
+      "start": 129.87,
+      "end": 133.23,
+      "text": "and I can also see the rib that provides a boundary."
+    },
+    {
+      "start": 134.23,
+      "end": 140.78,
+      "text": "When the needle is inserted, in this case, in the longitudinal view, to target this vein,"
+    },
+    {
+      "start": 141.88,
+      "end": 148.6,
+      "text": "I can have a measure of safety because I know that I won't be hitting the lung itself."
+    },
+    {
+      "start": 148.6,
+      "end": 160.2,
+      "text": "The idea here is to insert the needle longitudinally on the skin underneath targeted toward the vein."
+    },
+    {
+      "start": 160.56,
+      "end": 168.24,
+      "text": "Because we're doing a longitudinal approach, remember it's important to maintain the needle within the plane of the ultrasound."
+    },
+    {
+      "start": 169.14,
+      "end": 177.52,
+      "text": "In certain patients who have larger chests, it may be the case that the ultrasound transducer is angled cuddly,"
+    },
+    {
+      "start": 177.82,
+      "end": 183.87,
+      "text": "in which case the needle needs to be angled to maintain that relationship."
+    },
+    {
+      "start": 185.42,
+      "end": 192.14,
+      "text": "Once the needle has penetrated the vessel, the wire can be inserted."
+    },
+    {
+      "start": 192.95,
+      "end": 198.35,
+      "text": "And once the wire is inserted, it's important to ultrasound the vessel with the wire in place"
+    },
+    {
+      "start": 198.35,
+      "end": 203.87,
+      "text": "to ensure that venous puncture was achieved as opposed to arterial puncture."
+    },
+    {
+      "start": 204.5,
+      "end": 209.61,
+      "text": "This imaging can be done in either the short axis or the long axis view."
+    },
+    {
+      "start": 210.17,
+      "end": 216.67,
+      "text": "After that, the ultrasound is not necessary for the remainder of the procedure and the central"
+    },
+    {
+      "start": 216.67,
+      "end": 219.29,
+      "text": "venous catheter is placed in the usual fashion."
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "understanding": "Tabletop ultrasound-guided needle alignment demonstration using a linear transducer, a covered needle and a vessel drawn on paper.",
+  "native_opened": [
+    57,
+    312,
+    332,
+    334,
+    336,
+    337,
+    338,
+    340,
+    342
+  ],
+  "tasks": [
+    {
+      "qa_type": "current_observation",
+      "query_time": 338,
+      "answer_time": 338,
+      "checkpoints": [],
+      "question": "In this tabletop demonstration, does the long edge of the probe head run along the drawn vessel or across it?",
+      "reference_answer": "It runs across the drawn vessel. The vessel continues to either side of the probe head.",
+      "visual_support": "The long edge of the blue probe head is visibly angled across the direction of the hatched strip.",
+      "query_prefix_check": "The probe head and the drawn vessel are already visible on the page.",
+      "answer_prefix_check": "The shape of the blue face and both lines of the vessel establish their relative orientation.",
+      "shortcut_risk": "Low. The spoken apex reference gives context and the orientation is visual.",
+      "task_id": "s3_remaining79_nJCcJu4e-yM_01",
+      "video_id": "nJCcJu4e-yM",
+      "split": "train",
+      "language": "en",
+      "source_video": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/nJCcJu4e-yM.mp4",
+      "stage3_value": "medium",
+      "visual_evidence": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/nJCcJu4e-yM/338.jpg",
+          "checkpoint": 338.0,
+          "source_pts_seconds": 337.9376,
+          "resolution": [
+            1920,
+            1080
+          ]
+        }
+      ],
+      "asr_support_segments": [
+        {
+          "start": 331.57,
+          "end": 334.73,
+          "text": "So we're going to be very perfectionist about targeting the very 12 o'clock position"
+        },
+        {
+          "start": 334.73,
+          "end": 335.33,
+          "text": "of the vessel."
+        }
+      ],
+      "query_decision": "ANSWER",
+      "answer_decision": "ANSWER",
+      "review_status": "accepted_targeted_native_frame_self_review",
+      "student_input_visibility": "not_checked"
+    },
+    {
+      "qa_type": "history_recall",
+      "query_time": 338,
+      "answer_time": 338,
+      "checkpoints": [
+        312
+      ],
+      "question": "When the instructor held up both tools just before discussing the top of the vessel, what separated the covered needle from the probe head?",
+      "reference_answer": "A small visible gap separated the end of the clear cover from the blue probe head. Both were above the paper.",
+      "visual_support": "At 312 the clear cover and the blue head hang side by side with space between them. The probe is on the paper at 338.",
+      "query_prefix_check": "The earlier close view of both tools is already in the stream.",
+      "answer_prefix_check": "The earlier gap is visible between the two ends.",
+      "shortcut_risk": "Low. The relevant spacing is visual.",
+      "task_id": "s3_remaining79_nJCcJu4e-yM_02",
+      "video_id": "nJCcJu4e-yM",
+      "split": "train",
+      "language": "en",
+      "source_video": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/nJCcJu4e-yM.mp4",
+      "stage3_value": "medium",
+      "visual_evidence": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/nJCcJu4e-yM/312.jpg",
+          "checkpoint": 312.0,
+          "source_pts_seconds": 311.944967,
+          "resolution": [
+            1920,
+            1080
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/nJCcJu4e-yM/338.jpg",
+          "checkpoint": 338.0,
+          "source_pts_seconds": 337.9376,
+          "resolution": [
+            1920,
+            1080
+          ]
+        }
+      ],
+      "asr_support_segments": [
+        {
+          "start": 300.0,
+          "end": 304.5,
+          "text": "find it again by bouncing our needle bringing the probe back to us until we see the needle"
+        },
+        {
+          "start": 304.5,
+          "end": 309.92,
+          "text": "and then going forward with the probe until we leave it. That's how we'll know we're just"
+        },
+        {
+          "start": 310.13,
+          "end": 314.75,
+          "text": "in front of it. So there's always that two step process to find the needle. First find"
+        },
+        {
+          "start": 331.57,
+          "end": 334.73,
+          "text": "So we're going to be very perfectionist about targeting the very 12 o'clock position"
+        },
+        {
+          "start": 334.73,
+          "end": 335.33,
+          "text": "of the vessel."
+        }
+      ],
+      "query_decision": "ANSWER",
+      "answer_decision": "ANSWER",
+      "review_status": "accepted_targeted_native_frame_self_review",
+      "student_input_visibility": "not_checked"
+    }
+  ],
+  "video_id": "nJCcJu4e-yM",
+  "review_scope": "Same-assistant review; sampled timeline, original-size key frames, and existing time-indexed ASR when available. No continuous replay or direct audio claim."
+}

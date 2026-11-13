@@ -1,0 +1,1038 @@
+{
+  "video_id": "xLYBOf2da8s",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/eval/xLYBOf2da8s/asr.txt",
+  "segments": [
+    {
+      "start": 0.1,
+      "end": 3.84,
+      "text": "Hey there everybody, how's it going? So today we're gonna go over the abdomen complete protocol"
+    },
+    {
+      "start": 4.44,
+      "end": 9.97,
+      "text": "So this is pretty much the entire upper abdomen. You know, you want to include liver, gallbladder, comment about this"
+    },
+    {
+      "start": 10.0,
+      "end": 14.54,
+      "text": "the kidneys, pancreas, spleen, left kidney, bladder."
+    },
+    {
+      "start": 15.42,
+      "end": 17.94,
+      "text": "Some places require you to do lower quadrants,"
+    },
+    {
+      "start": 18.06,
+      "end": 19.14,
+      "text": "make sure there's no bowel issues."
+    },
+    {
+      "start": 20.61,
+      "end": 25.23,
+      "text": "Overall, typically speaking, it's an upper abdominal exam, all the internal viscera of the"
+    },
+    {
+      "start": 25.23,
+      "end": 25.65,
+      "text": "upper abdomen."
+    },
+    {
+      "start": 26.43,
+      "end": 29.77,
+      "text": "So right off the bat, we'll start with the liver, liver leftist."
+    },
+    {
+      "start": 30.56,
+      "end": 35.2,
+      "text": "You can put liver longitudinal or liver sagger, it doesn't matter, all right?"
+    },
+    {
+      "start": 35.9,
+      "end": 39.34,
+      "text": "Then you angle more immediately, you start to get the aorta, there you got liver."
+    },
+    {
+      "start": 40.9,
+      "end": 43.28,
+      "text": "You got to do a dino, little piece of the yorta there."
+    },
+    {
+      "start": 44.42,
+      "end": 45.86,
+      "text": "The tip of the liver is not viewed here,"
+    },
+    {
+      "start": 46.0,
+      "end": 47.86,
+      "text": "so if you have the left lobe of the liver,"
+    },
+    {
+      "start": 47.88,
+      "end": 49.38,
+      "text": "you can't get it in one image."
+    },
+    {
+      "start": 50.13,
+      "end": 52.08,
+      "text": "Oh, and usually we use the curved,"
+    },
+    {
+      "start": 52.78,
+      "end": 55.96,
+      "text": "curved linear array transducer for this exam."
+    },
+    {
+      "start": 57.02,
+      "end": 58.8,
+      "text": "But if you can't get the entire liver for the,"
+    },
+    {
+      "start": 58.8,
+      "end": 59.98,
+      "text": "your input."
+    },
+    {
+      "start": 60.0,
+      "end": 63.92,
+      "text": "you could always rock, angle up, get a piece, and then angle down, and get the other piece."
+    },
+    {
+      "start": 65.0,
+      "end": 69.16,
+      "text": "Alright, so then liver satch aorta. So you got your satch deliver."
+    },
+    {
+      "start": 71.12,
+      "end": 74.06,
+      "text": "your aorta, select axis, select artery,"
+    },
+    {
+      "start": 74.38,
+      "end": 77.72,
+      "text": "superb mesenteric artery, right?"
+    },
+    {
+      "start": 77.82,
+      "end": 79.84,
+      "text": "That you want to move on in between."
+    },
+    {
+      "start": 80.0,
+      "end": 86.36,
+      "text": "the aorta and IVC, you want to get the left liver which would be segments 2, 3 and then"
+    },
+    {
+      "start": 86.36,
+      "end": 89.89,
+      "text": "you want to get the carlobe right behind segments 2 and 3."
+    },
+    {
+      "start": 90.9,
+      "end": 91.7,
+      "text": "and that'd be segment one."
+    },
+    {
+      "start": 92.12,
+      "end": 93.04,
+      "text": "So you want to get the carry logo,"
+    },
+    {
+      "start": 94.45,
+      "end": 95.53,
+      "text": "and then from there you want to go on"
+    },
+    {
+      "start": 95.53,
+      "end": 98.83,
+      "text": "and get the IVC, you're here,"
+    },
+    {
+      "start": 98.83,
+      "end": 99.79,
+      "text": "you've got a piece of the portal vein."
+    },
+    {
+      "start": 100.0,
+      "end": 102.34,
+      "text": "left Port-au-Vayne, still left global deliver."
+    },
+    {
+      "start": 102.97,
+      "end": 104.17,
+      "text": "If you have the IVC, you can see it going"
+    },
+    {
+      "start": 104.17,
+      "end": 105.79,
+      "text": "into the right atrium of the heart."
+    },
+    {
+      "start": 105.93,
+      "end": 107.91,
+      "text": "Here behind the IVC, you can see the right arena artery."
+    },
+    {
+      "start": 108.84,
+      "end": 109.9,
+      "text": "That's a typical landmark for that."
+    },
+    {
+      "start": 111.76,
+      "end": 116.12,
+      "text": "In fact, in some, in some, if they have duplicate render artist, you actually be able to see that as well."
+    },
+    {
+      "start": 116.84,
+      "end": 118.98,
+      "text": "Okay, now you're going into right liver territory."
+    },
+    {
+      "start": 120.0,
+      "end": 121.3,
+      "text": "So here you got your gallbladder."
+    },
+    {
+      "start": 122.45,
+      "end": 123.25,
+      "text": "Most of you are right."
+    },
+    {
+      "start": 123.88,
+      "end": 124.4,
+      "text": "A little bit of the liver,"
+    },
+    {
+      "start": 124.58,
+      "end": 127.16,
+      "text": "a little penny piece of the kidney there."
+    },
+    {
+      "start": 127.83,
+      "end": 129.39,
+      "text": "You can see the diaphragm very clearly."
+    },
+    {
+      "start": 130.48,
+      "end": 134.12,
+      "text": "All right, moving more right, now you're getting a good chunk of the right little bit of"
+    },
+    {
+      "start": 134.12,
+      "end": 134.32,
+      "text": "liver."
+    },
+    {
+      "start": 134.72,
+      "end": 137.73,
+      "text": "You're getting your portal veins, pieces of your hepatic veins."
+    },
+    {
+      "start": 137.85,
+      "end": 139.85,
+      "text": "Portal veins usually have more thicker echogenic walls."
+    },
+    {
+      "start": 140.0,
+      "end": 147.24,
+      "text": "in diaphragm. Very nice. Further lateral to the right. Then you got hepatic veins there,"
+    },
+    {
+      "start": 148.05,
+      "end": 149.43,
+      "text": "and then the more epigenic portal veins."
+    },
+    {
+      "start": 150.22,
+      "end": 158.44,
+      "text": "diaphragm. You want to measure the perinocardal length of the liver. There you see it's 11.9 centimeters."
+    },
+    {
+      "start": 158.82,
+      "end": 159.66,
+      "text": "You see the right kidney."
+    },
+    {
+      "start": 160.26,
+      "end": 164.0,
+      "text": "behind it. Alright, so you're done with your saginals. Now you want to go back to the left"
+    },
+    {
+      "start": 164.0,
+      "end": 168.52,
+      "text": "lobe of the liver and start transverse. Usually what I do is I go transverse left lobe"
+    },
+    {
+      "start": 168.52,
+      "end": 169.98,
+      "text": "and go up all the way up."
+    },
+    {
+      "start": 170.03,
+      "end": 174.35,
+      "text": "and then go from superior to the figure, take several images in that plane, and then"
+    },
+    {
+      "start": 174.35,
+      "end": 177.99,
+      "text": "after I'm done, I'll go to the right loop and depending on the patient, I either go"
+    },
+    {
+      "start": 177.99,
+      "end": 179.97,
+      "text": "through the ribs from getting bad images there."
+    },
+    {
+      "start": 180.0,
+      "end": 184.42,
+      "text": "I'll go under the ribs, angle up, have the patient take a deep breath, and go from superior"
+    },
+    {
+      "start": 184.42,
+      "end": 184.94,
+      "text": "to inferior."
+    },
+    {
+      "start": 185.44,
+      "end": 188.62,
+      "text": "And in the run right here, you'll be able to get the hepatic veins, so you'll see that"
+    },
+    {
+      "start": 188.62,
+      "end": 188.84,
+      "text": "now."
+    },
+    {
+      "start": 189.38,
+      "end": 189.92,
+      "text": "So left low."
+    },
+    {
+      "start": 190.0,
+      "end": 196.23,
+      "text": "the liver transverse. Now here you got left and right logo of the liver with the left"
+    },
+    {
+      "start": 196.23,
+      "end": 199.98,
+      "text": "and middle hepatic veins. Here in the front you can see..."
+    },
+    {
+      "start": 200.06,
+      "end": 201.46,
+      "text": "the rectus abdominis muscles."
+    },
+    {
+      "start": 202.09,
+      "end": 204.53,
+      "text": "I'm the circutaneous fat, again."
+    },
+    {
+      "start": 204.87,
+      "end": 208.71,
+      "text": "Middle hepatic vein, more inferior."
+    },
+    {
+      "start": 209.07,
+      "end": 209.87,
+      "text": "You got the bifurcation."
+    },
+    {
+      "start": 210.48,
+      "end": 219.7,
+      "text": "of the portal vein and then the intro hepatic IVC, nice diaphragm, ligamentum venosum."
+    },
+    {
+      "start": 220.0,
+      "end": 223.2,
+      "text": "with a caddy lobe back from there."
+    },
+    {
+      "start": 224.69,
+      "end": 226.37,
+      "text": "Breath into the right, angling further down."
+    },
+    {
+      "start": 227.05,
+      "end": 229.77,
+      "text": "You got your right portal vein, diaphragm, further down."
+    },
+    {
+      "start": 230.64,
+      "end": 231.54,
+      "text": "for the referior shall I say?"
+    },
+    {
+      "start": 232.98,
+      "end": 233.92,
+      "text": "And then for the referior,"
+    },
+    {
+      "start": 234.2,
+      "end": 236.18,
+      "text": "here you got your right logo of the liver,"
+    },
+    {
+      "start": 236.74,
+      "end": 238.22,
+      "text": "your right kidney, and your gallbladder."
+    },
+    {
+      "start": 238.88,
+      "end": 239.98,
+      "text": "The depth in this image could..."
+    },
+    {
+      "start": 240.0,
+      "end": 245.06,
+      "text": "be reduced a little bit, but it's still a good image. Alright, so now you got your gobladder"
+    },
+    {
+      "start": 245.06,
+      "end": 249.98,
+      "text": "and sagittal. So you want to go around here. Everybody's a little different. They're gobladder"
+    },
+    {
+      "start": 250.0,
+      "end": 253.32,
+      "text": "are not going to lie perfectly perpendicular to the floor."
+    },
+    {
+      "start": 253.72,
+      "end": 255.38,
+      "text": "Some people's gobladder is going to be this way."
+    },
+    {
+      "start": 255.78,
+      "end": 257.52,
+      "text": "Some people's gobladder is going to be S-shaped."
+    },
+    {
+      "start": 257.98,
+      "end": 259.98,
+      "text": "So you're going to have to like angle of your sagittal."
+    },
+    {
+      "start": 260.34,
+      "end": 262.9,
+      "text": "Relangitude and on the gobleter, you're not going to be like this, you might be like this,"
+    },
+    {
+      "start": 263.06,
+      "end": 268.66,
+      "text": "you might be up here angling down. You'll find it with patient breathing, letting go of their breath,"
+    },
+    {
+      "start": 269.02,
+      "end": 269.86,
+      "text": "inspiration and expression."
+    },
+    {
+      "start": 270.0,
+      "end": 274.4,
+      "text": "be able to find a good image. So there is a good nice Sagittal view of the"
+    },
+    {
+      "start": 274.4,
+      "end": 279.81,
+      "text": "gallbladder. You can see the fundus, the body, the neck, the portal vein right there, the portal"
+    },
+    {
+      "start": 280.0,
+      "end": 285.07,
+      "text": "right then in transverse just like I said the goblet is not perfectly you know"
+    },
+    {
+      "start": 285.07,
+      "end": 289.27,
+      "text": "up and down organ it can go so now if you go transverse and I'm on the organ this"
+    },
+    {
+      "start": 290.0,
+      "end": 291.64,
+      "text": "is not a true transverse image."
+    },
+    {
+      "start": 292.1,
+      "end": 293.84,
+      "text": "That's the gobladder in like longitudinal."
+    },
+    {
+      "start": 294.18,
+      "end": 296.91,
+      "text": "I'll put pictures of it in transverse."
+    },
+    {
+      "start": 298.1,
+      "end": 299.96,
+      "text": "So if you go transverse in the body and you're getting..."
+    },
+    {
+      "start": 300.0,
+      "end": 306.4,
+      "text": "the angle of the gallbladder like that, you're gonna want to go anti-radio to it until you get it"
+    },
+    {
+      "start": 306.4,
+      "end": 309.98,
+      "text": "into a perfect transverse circle, right? And when you do that, you..."
+    },
+    {
+      "start": 310.0,
+      "end": 312.5,
+      "text": "You just want to do, you know, fund this body and neck."
+    },
+    {
+      "start": 315.8,
+      "end": 318.44,
+      "text": "So here's a picture of the gallbladder and left lateral"
+    },
+    {
+      "start": 318.44,
+      "end": 319.9,
+      "text": "decubinus, you know, so thanks."
+    },
+    {
+      "start": 320.0,
+      "end": 322.72,
+      "text": "people have stones in the neck that might be hitting and left flat out of the"
+    },
+    {
+      "start": 322.72,
+      "end": 325.62,
+      "text": "cubitus. If the stone is not stuck it will move. You'll be able to see it."
+    },
+    {
+      "start": 327.47,
+      "end": 329.91,
+      "text": "If you want to measure the wall of the goblet, the goblet of walls usually less"
+    },
+    {
+      "start": 330.0,
+      "end": 335.65,
+      "text": "than three millimeters. Here's a transverse and a left letter of the cube, but that's a"
+    },
+    {
+      "start": 335.65,
+      "end": 338.82,
+      "text": "perfect transverse. You know, I get the gallbladder and the perfect surface."
+    },
+    {
+      "start": 340.0,
+      "end": 347.52,
+      "text": "the CBD, here you got the Porta Hepatus going into the liver and your CBD is going to"
+    },
+    {
+      "start": 347.52,
+      "end": 348.34,
+      "text": "be right above that."
+    },
+    {
+      "start": 348.58,
+      "end": 349.94,
+      "text": "So it's going to be the Porta Vane hepatic artery."
+    },
+    {
+      "start": 350.0,
+      "end": 354.4,
+      "text": "and CBD. You put color doppler. Obviously differentiate between the hepatic artery and the"
+    },
+    {
+      "start": 354.4,
+      "end": 359.83,
+      "text": "portal vein. Take that picture and then measure. Let's see what the measure is."
+    },
+    {
+      "start": 360.0,
+      "end": 362.72,
+      "text": "I think it's going to be around three millimeters,"
+    },
+    {
+      "start": 362.96,
+      "end": 364.5,
+      "text": "sometimes it can be four, every young,"
+    },
+    {
+      "start": 364.8,
+      "end": 369.96,
+      "text": "and your CBD is eight millimeters, that's enlarged."
+    },
+    {
+      "start": 370.83,
+      "end": 373.92,
+      "text": "I'll put the data for the CBD in the finished video."
+    },
+    {
+      "start": 374.8,
+      "end": 376.18,
+      "text": "Now there you go, you're poor to try it again,"
+    },
+    {
+      "start": 377.48,
+      "end": 377.82,
+      "text": "pretty image."
+    },
+    {
+      "start": 378.33,
+      "end": 379.97,
+      "text": "Now you wanna go back to the pancreas."
+    },
+    {
+      "start": 380.0,
+      "end": 387.69,
+      "text": "So back again, there's a sagittal all the way across transverse all the way across and then you're done with the liver and"
+    },
+    {
+      "start": 387.98,
+      "end": 389.98,
+      "text": "Goblet and all that stuff. I usually do the go"
+    },
+    {
+      "start": 390.0,
+      "end": 393.38,
+      "text": "better after the liver, after the pancreas, but the order rate really doesn't matter."
+    },
+    {
+      "start": 393.82,
+      "end": 395.9,
+      "text": "Go back to epic gastric and begin with the pancreas."
+    },
+    {
+      "start": 396.42,
+      "end": 397.76,
+      "text": "There you see the unsanitary process."
+    },
+    {
+      "start": 397.76,
+      "end": 399.52,
+      "text": "head neck."
+    },
+    {
+      "start": 400.03,
+      "end": 404.62,
+      "text": "body and tail. The tail of the pancreas is usually going to end by the spleen and the left"
+    },
+    {
+      "start": 404.62,
+      "end": 409.96,
+      "text": "kidney and the stomach. Back here you can see the vertebrae. Again here you can see."
+    },
+    {
+      "start": 410.03,
+      "end": 416.02,
+      "text": "the gallbladder and this is the ligamentum teres which is a reminit of the"
+    },
+    {
+      "start": 416.02,
+      "end": 419.88,
+      "text": "umbilical vein as it goes into the portal vein and then which would also be"
+    },
+    {
+      "start": 420.0,
+      "end": 423.18,
+      "text": "connected to the fossil form ligandment, which is the peritoneal projection on the outside"
+    },
+    {
+      "start": 423.18,
+      "end": 423.54,
+      "text": "of the liver."
+    },
+    {
+      "start": 424.77,
+      "end": 429.6,
+      "text": "There you see your superior mesenteric artery, okay, not a clear picture of the aorta."
+    },
+    {
+      "start": 430.0,
+      "end": 433.68,
+      "text": "behind the superior missing ternic artery is going to be the lepharino vein that goes"
+    },
+    {
+      "start": 433.68,
+      "end": 439.83,
+      "text": "into the left kidney. This is your portal splenic confluence, so the splenic vein goes posterior"
+    },
+    {
+      "start": 440.0,
+      "end": 446.98,
+      "text": "the pancreas until it unites with the portal vein and then this SMV and IMV come from down"
+    },
+    {
+      "start": 446.98,
+      "end": 449.81,
+      "text": "and unite to make the portal vein. This is IBC over here."
+    },
+    {
+      "start": 450.06,
+      "end": 450.78,
+      "text": "a little bit of gallbladder."
+    },
+    {
+      "start": 451.71,
+      "end": 452.87,
+      "text": "So you wanna take good pictures of pancreas"
+    },
+    {
+      "start": 452.87,
+      "end": 454.25,
+      "text": "because if you don't, the reality just might say"
+    },
+    {
+      "start": 454.25,
+      "end": 456.66,
+      "text": "pancreas not visualized, just kidding,"
+    },
+    {
+      "start": 456.84,
+      "end": 458.9,
+      "text": "just kidding, just kidding, reality just,"
+    },
+    {
+      "start": 459.02,
+      "end": 459.46,
+      "text": "we love you guys."
+    },
+    {
+      "start": 461.44,
+      "end": 465.33,
+      "text": "Alright, put some nice colored Doppler there to show the flow is going towards the liver"
+    },
+    {
+      "start": 465.33,
+      "end": 466.15,
+      "text": "or herpato pito."
+    },
+    {
+      "start": 466.77,
+      "end": 469.97,
+      "text": "Alright, so those pan, your transverse in the body but you're getting the pan..."
+    },
+    {
+      "start": 470.62,
+      "end": 475.67,
+      "text": "Now when you go sagittal on the body, you're going to be getting the prankers and transverse because the prankers lays this way."
+    },
+    {
+      "start": 476.7,
+      "end": 479.92,
+      "text": "Alright, so it's a beautiful picture of the prankers and transverse there. You see the gastrous often."
+    },
+    {
+      "start": 480.0,
+      "end": 484.34,
+      "text": "you a junction. You see another piece of the duodenum right there with gut signature."
+    },
+    {
+      "start": 484.62,
+      "end": 488.46,
+      "text": "Very beautiful. Okay then you want to get your right kidney and sagittal."
+    },
+    {
+      "start": 490.0,
+      "end": 499.71,
+      "text": "The interface of the liver to the kidney, kidney should be less echogenic than the liver and make sure you measure the length and then"
+    },
+    {
+      "start": 500.0,
+      "end": 504.48,
+      "text": "various images, so places require to measure length width and height, other places only length,"
+    },
+    {
+      "start": 505.35,
+      "end": 508.8,
+      "text": "so you can measure length then width then"
+    },
+    {
+      "start": 510.48,
+      "end": 518.12,
+      "text": "Okay, again the order some people start in the pancreas. Don't get to hung up on that once you get your your protocol"
+    },
+    {
+      "start": 518.12,
+      "end": 519.98,
+      "text": "Just make sure you do it the same way every"
+    },
+    {
+      "start": 520.0,
+      "end": 525.26,
+      "text": "single time. So the spleen and sagittal, I made a video the other day about transducers"
+    },
+    {
+      "start": 525.26,
+      "end": 529.16,
+      "text": "and with this curve transducer it lifts up so much from the body that you'll see there's"
+    },
+    {
+      "start": 529.16,
+      "end": 529.92,
+      "text": "going to be some dropout."
+    },
+    {
+      "start": 530.03,
+      "end": 534.59,
+      "text": "Because there's no contact between the skin and the translucent. There's like a triangular gap there"
+    },
+    {
+      "start": 534.59,
+      "end": 538.59,
+      "text": "You want to fill that with gel. Otherwise, you're gonna have that drop out there because that's not rib shadow"
+    },
+    {
+      "start": 538.59,
+      "end": 539.9,
+      "text": "That's drop off from"
+    },
+    {
+      "start": 540.0,
+      "end": 544.0,
+      "text": "no contact and you're not going to get contact unless you go like that but then you're"
+    },
+    {
+      "start": 544.0,
+      "end": 547.88,
+      "text": "going to get dropped out on this site so what you want to do is make sure you unfortunately"
+    },
+    {
+      "start": 547.88,
+      "end": 549.96,
+      "text": "put a lot of gel to make that contact if you get a"
+    },
+    {
+      "start": 550.0,
+      "end": 553.77,
+      "text": "sector probe, the images are not going to be as good as a curve probe, but you have perfect"
+    },
+    {
+      "start": 553.77,
+      "end": 558.45,
+      "text": "contact and you can scan in between the ribs. So that makes a difference. So just clean and"
+    },
+    {
+      "start": 558.45,
+      "end": 558.87,
+      "text": "sagittal."
+    },
+    {
+      "start": 560.0,
+      "end": 563.5,
+      "text": "nice of you there and make sure that the Egligenicity is more than the kidney which"
+    },
+    {
+      "start": 563.5,
+      "end": 567.87,
+      "text": "it is, that's normal. Here you got your nice spleen of renal shot, get that"
+    },
+    {
+      "start": 567.87,
+      "end": 569.76,
+      "text": "friend back here. Alright."
+    },
+    {
+      "start": 570.29,
+      "end": 571.41,
+      "text": "Now there, that's a rib shadow."
+    },
+    {
+      "start": 571.98,
+      "end": 574.49,
+      "text": "And then that's a little bit of no contact end rib shadow."
+    },
+    {
+      "start": 575.38,
+      "end": 577.32,
+      "text": "You see the program of the screen is very clear"
+    },
+    {
+      "start": 577.32,
+      "end": 579.06,
+      "text": "and then measure it."
+    },
+    {
+      "start": 580.29,
+      "end": 587.65,
+      "text": "upper limits of normal where the spleen is typically 12 to 13 depending on what some people"
+    },
+    {
+      "start": 587.65,
+      "end": 589.98,
+      "text": "We would say 11, but you know..."
+    },
+    {
+      "start": 590.22,
+      "end": 595.5,
+      "text": "we go by a chart that goes by age, so for adults anything really over 13 would be"
+    },
+    {
+      "start": 596.74,
+      "end": 599.98,
+      "text": "and everything anything from 12 to 13 will be up"
+    },
+    {
+      "start": 600.0,
+      "end": 607.96,
+      "text": "limits of normal, right? So measure that, nice die from shock, kidneys are too, some more"
+    },
+    {
+      "start": 607.96,
+      "end": 609.4,
+      "text": "Sadger Mrs. and Transverse."
+    },
+    {
+      "start": 610.06,
+      "end": 611.18,
+      "text": "with transverse and the same thing."
+    },
+    {
+      "start": 612.22,
+      "end": 614.36,
+      "text": "And the same thing here, that's drop out from gel."
+    },
+    {
+      "start": 614.44,
+      "end": 615.14,
+      "text": "That's not a rib shadow."
+    },
+    {
+      "start": 615.98,
+      "end": 617.02,
+      "text": "So if you're using a curved probe,"
+    },
+    {
+      "start": 617.12,
+      "end": 618.78,
+      "text": "these curved probes and the GE's,"
+    },
+    {
+      "start": 618.88,
+      "end": 619.98,
+      "text": "they have a very..."
+    },
+    {
+      "start": 620.42,
+      "end": 621.76,
+      "text": "They're very exaggeratedy convex."
+    },
+    {
+      "start": 622.48,
+      "end": 623.46,
+      "text": "When you're trying to get the lift kidney,"
+    },
+    {
+      "start": 624.02,
+      "end": 625.46,
+      "text": "for some reason there's always going to be drop out"
+    },
+    {
+      "start": 625.46,
+      "end": 628.73,
+      "text": "unless you stack some gel between the little gap."
+    },
+    {
+      "start": 629.74,
+      "end": 629.96,
+      "text": "Let's see."
+    },
+    {
+      "start": 630.0,
+      "end": 636.47,
+      "text": "get the whole dome of the of the spleen and dome of the diaphragm. I get a clear image"
+    },
+    {
+      "start": 636.47,
+      "end": 639.83,
+      "text": "or you can just take segmental images, take a picture here and then move and take"
+    },
+    {
+      "start": 640.29,
+      "end": 645.94,
+      "text": "the part that you're not getting. So, spleen transverse, spleen, a little piece of the left kidney there,"
+    },
+    {
+      "start": 646.3,
+      "end": 649.61,
+      "text": "and here you see the tail of the pancreas actually very clear."
+    },
+    {
+      "start": 650.0,
+      "end": 656.54,
+      "text": "of that. And then you got the splenic vein back here beautifully. It's the splenic"
+    },
+    {
+      "start": 656.54,
+      "end": 659.78,
+      "text": "highlight my desk with a Vessel's Entry and Leaf, and then a Vatics."
+    },
+    {
+      "start": 660.51,
+      "end": 667.31,
+      "text": "So lower pull the spleen you're getting mid section of the kidney of the left kidney and you do your left kidney"
+    },
+    {
+      "start": 670.1,
+      "end": 673.75,
+      "text": "big sagittal image, measure the length,"
+    },
+    {
+      "start": 675.1,
+      "end": 676.18,
+      "text": "look medium and laterally,"
+    },
+    {
+      "start": 676.87,
+      "end": 678.77,
+      "text": "and then get your kidney and transverse."
+    },
+    {
+      "start": 679.34,
+      "end": 679.94,
+      "text": "Then go."
+    },
+    {
+      "start": 680.0,
+      "end": 682.65,
+      "text": "onto the bladder, take a sagittal image of the bladder,"
+    },
+    {
+      "start": 683.58,
+      "end": 686.48,
+      "text": "measure the wall, and then a transverse image of the bladder."
+    },
+    {
+      "start": 687.09,
+      "end": 688.03,
+      "text": "And that's it, you're done."
+    },
+    {
+      "start": 688.82,
+      "end": 689.98,
+      "text": "You've covered all the internal..."
+    },
+    {
+      "start": 690.03,
+      "end": 696.44,
+      "text": "I've done with organs if there's something else indicated you can interrogate that further, but that's pretty much it"
+    },
+    {
+      "start": 696.44,
+      "end": 699.97,
+      "text": "That's how I do it and that's the end of this video"
+    },
+    {
+      "start": 700.0,
+      "end": 708.2,
+      "text": "So I hope you found this useful. I hope you enjoyed it. Don't forget to click the notification bell subscribe like leave a comment"
+    },
+    {
+      "start": 708.2,
+      "end": 709.47,
+      "text": "Tell me how you do it"
+    },
+    {
+      "start": 710.65,
+      "end": 715.84,
+      "text": "Let me know if there's anything you'd like me to cover in the future and that's pretty much it all right take care. Bye"
+    }
+  ]
+}

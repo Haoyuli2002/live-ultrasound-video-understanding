@@ -1,0 +1,233 @@
+{
+  "video_id": "dBxFSnZHUm8",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/eval/dBxFSnZHUm8/asr.txt",
+  "segments": [
+    {
+      "start": 0.45,
+      "end": 9.97,
+      "text": "Hello everyone, this is Dr. Sam and this video is about all bladder positioning on the left side is a"
+    },
+    {
+      "start": 10.0,
+      "end": 19.880000000000003,
+      "text": "schematic diagram of propositioning. These dotted lines are the coastal margins over here."
+    },
+    {
+      "start": 20.0,
+      "end": 29.68,
+      "text": "is done because this white box is the ultrasound probe and this red dot is the indicator"
+    },
+    {
+      "start": 30.0,
+      "end": 39.8,
+      "text": "or the orientation marker with the patient in a supine position taught by a placing"
+    },
+    {
+      "start": 40.0,
+      "end": 48.53,
+      "text": "the probe in the mid-clavicular line in longitudinal orientation. The position of the gallbladder"
+    },
+    {
+      "start": 48.53,
+      "end": 49.45,
+      "text": "is variable"
+    },
+    {
+      "start": 50.35,
+      "end": 59.2,
+      "text": "So there are some differences in pro placement and the right upper quadrant until you locate"
+    },
+    {
+      "start": 60.0,
+      "end": 69.78,
+      "text": "you will get this type of image. The liver is used as a window to scan the gold"
+    },
+    {
+      "start": 70.06,
+      "end": 79.92,
+      "text": "This rounded structure with hyper-quake walls is the portal vein and over here is the info."
+    },
+    {
+      "start": 80.85,
+      "end": 89.36,
+      "text": "You can rotate the probe clockwise and anti-clockwise to scan the gold blatter."
+    },
+    {
+      "start": 90.0,
+      "end": 99.96000000000001,
+      "text": "After it is located, if the indicator facing towards the patient's head or the right shoulder, you can also..."
+    },
+    {
+      "start": 100.0,
+      "end": 108.03,
+      "text": "also angle the probe forwards and backwards to evaluate the gold blatter, this is the image"
+    },
+    {
+      "start": 108.03,
+      "end": 109.25,
+      "text": "we will get here."
+    },
+    {
+      "start": 111.31,
+      "end": 118.48,
+      "text": "This is the lever just below the coastal margin and in t-veer to the gold bladder and the"
+    },
+    {
+      "start": 118.48,
+      "end": 119.98,
+      "text": "gold bladder is seen in the"
+    },
+    {
+      "start": 120.03,
+      "end": 129.59,
+      "text": "a longitudinal view. Normally it has a vertical position, the fundus is facing the patient's"
+    },
+    {
+      "start": 129.59,
+      "end": 129.81,
+      "text": "feet."
+    },
+    {
+      "start": 130.74,
+      "end": 133.32,
+      "text": "and the neck is facing the patient's head."
+    },
+    {
+      "start": 135.18,
+      "end": 138.33,
+      "text": "That is why we see it like this on ultrasound."
+    },
+    {
+      "start": 140.16,
+      "end": 149.7,
+      "text": "the ABC is also in longitudinal view if there is difficulty in scanning you can ask the"
+    },
+    {
+      "start": 150.03,
+      "end": 159.7,
+      "text": "to take a deep breath. This pushes the liver and the gallbladder below the ribcage and is easier to visualize."
+    },
+    {
+      "start": 160.0,
+      "end": 169.97,
+      "text": "view the gold blader in transverse view, rotate the probe 90 degrees anti-clockwise in the same"
+    },
+    {
+      "start": 170.0,
+      "end": 178.12,
+      "text": "location and you will get an image like this. We can see a little bit of the liver some"
+    },
+    {
+      "start": 179.53,
+      "end": 179.97,
+      "text": "Some briefs."
+    },
+    {
+      "start": 180.0,
+      "end": 187.62,
+      "text": "shadows are also present. These are bubble gases causing dirty posterior shadowing."
+    },
+    {
+      "start": 190.22,
+      "end": 197.12,
+      "text": "You can also use an intercostal approach to view the ball bladder, place the probe between"
+    },
+    {
+      "start": 197.12,
+      "end": 199.92,
+      "text": "the lower-wrapspaces in the mid-clav-"
+    },
+    {
+      "start": 200.0,
+      "end": 209.07,
+      "text": "with the indicator directed towards the patient's head and you will get this type of image."
+    },
+    {
+      "start": 210.99,
+      "end": 219.12,
+      "text": "Rape shadows are seen here and here, this is the right lobe of the liver."
+    },
+    {
+      "start": 220.54,
+      "end": 228.95,
+      "text": "and the gold blatter is seen inferiorly at the right side of the image, this is the portal"
+    },
+    {
+      "start": 228.95,
+      "end": 229.75,
+      "text": "and clean with"
+    },
+    {
+      "start": 230.26,
+      "end": 238.77,
+      "text": "hyper-echoic borders. If you see too many rape shadows, you can rotate the probe anti-clockwise"
+    },
+    {
+      "start": 238.77,
+      "end": 239.84,
+      "text": "so direct"
+    },
+    {
+      "start": 240.0,
+      "end": 247.6,
+      "text": "the indicator towards the patient's right shoulder, you can also rotate further to fit the"
+    },
+    {
+      "start": 247.6,
+      "end": 249.53,
+      "text": "the probe between the rib spaces."
+    },
+    {
+      "start": 251.06,
+      "end": 259.03,
+      "text": "which can clear the shadowing and you can scan the gallbladder another patient position"
+    },
+    {
+      "start": 259.03,
+      "end": 259.67,
+      "text": "for"
+    },
+    {
+      "start": 260.19,
+      "end": 269.91,
+      "text": "The gallbladder scanning is the left lateral de-cubitus position, roll the patient to the left side and place the probe."
+    },
+    {
+      "start": 270.0,
+      "end": 277.96,
+      "text": "in similar manner around the mid-plavicular line. The wall bladder is brought forward and the"
+    },
+    {
+      "start": 277.96,
+      "end": 279.6,
+      "text": "Bowls are moved away."
+    },
+    {
+      "start": 280.26,
+      "end": 283.59,
+      "text": "from a pitch exit, easier for scanning."
+    },
+    {
+      "start": 285.01,
+      "end": 289.98,
+      "text": "This approach is very helpful in distinguishing between mobile and..."
+    },
+    {
+      "start": 290.0,
+      "end": 299.1,
+      "text": "and non-mobile gallstones or sludge. Always try this approach if you find gallstones sludge"
+    },
+    {
+      "start": 300.06,
+      "end": 308.72,
+      "text": "In a rect patient position is also used in some cases with the same pro placements."
+    },
+    {
+      "start": 311.22,
+      "end": 316.72,
+      "text": "Thank you so much for watching, please subscribe and stay tuned for more imaging videos."
+    }
+  ]
+}

@@ -1,0 +1,693 @@
+{
+  "video_id": "-BYuVL4E-cY",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/-BYuVL4E-cY/asr.txt",
+  "segments": [
+    {
+      "start": 0.19,
+      "end": 1.69,
+      "text": "Welcome to the University of Washington,"
+    },
+    {
+      "start": 1.97,
+      "end": 3.29,
+      "text": "Internal Medicine Training Video,"
+    },
+    {
+      "start": 3.76,
+      "end": 4.86,
+      "text": "the use of point-of-care ultrasound"
+    },
+    {
+      "start": 4.86,
+      "end": 6.18,
+      "text": "for bedside pairs and teases."
+    },
+    {
+      "start": 7.0,
+      "end": 8.58,
+      "text": "This video will describe the use of ultrasound"
+    },
+    {
+      "start": 8.58,
+      "end": 9.78,
+      "text": "in performing this procedure."
+    },
+    {
+      "start": 10.45,
+      "end": 11.87,
+      "text": "and the technique for the procedure itself"
+    },
+    {
+      "start": 11.87,
+      "end": 13.52,
+      "text": "is covered in the following modules."
+    },
+    {
+      "start": 14.88,
+      "end": 15.78,
+      "text": "At the end of this module,"
+    },
+    {
+      "start": 16.25,
+      "end": 18.29,
+      "text": "the learner should be able to describe"
+    },
+    {
+      "start": 18.29,
+      "end": 19.97,
+      "text": "the advantages and risks of using alt-"
+    },
+    {
+      "start": 20.0,
+      "end": 29.57,
+      "text": "for paracentesis, position the patient for optimal fluid visualization, choose the appropriate probe and machine settings, and enter patient information."
+    },
+    {
+      "start": 30.03,
+      "end": 36.48,
+      "text": "prior to examination. Demonstrate knowledge of surface anatomy, identify surface bascature,"
+    },
+    {
+      "start": 36.48,
+      "end": 38.14,
+      "text": "and intra-dominal organs in fluid."
+    },
+    {
+      "start": 40.0,
+      "end": 44.96,
+      "text": "choose an appropriate needle insertion site, and identify situations in which bedside"
+    },
+    {
+      "start": 44.96,
+      "end": 48.46,
+      "text": "parasite teases is not appropriate, and the procedure should be referred to radiology."
+    },
+    {
+      "start": 49.68,
+      "end": 49.98,
+      "text": "Compared..."
+    },
+    {
+      "start": 50.0,
+      "end": 54.49,
+      "text": "a traditional physical exam-guided person thesis, the use of ultrasound has several advantages."
+    },
+    {
+      "start": 55.71,
+      "end": 59.62,
+      "text": "It is more sensitive and specific for the presence of the sighties, especially for smaller"
+    },
+    {
+      "start": 59.62,
+      "end": 59.84,
+      "text": "pockets."
+    },
+    {
+      "start": 60.0,
+      "end": 61.88,
+      "text": "or in patients with complex anatomy."
+    },
+    {
+      "start": 63.61,
+      "end": 66.57,
+      "text": "Published studies suggest that ultrasound improves procedure success rate"
+    },
+    {
+      "start": 66.57,
+      "end": 69.03,
+      "text": "and decreases adverse events and hospital costs."
+    },
+    {
+      "start": 70.38,
+      "end": 74.42,
+      "text": "The risks of bedside ultrasound for pairs and teases are mostly associated with over-reliant"
+    },
+    {
+      "start": 74.42,
+      "end": 76.24,
+      "text": "on or misuse of the technology."
+    },
+    {
+      "start": 77.24,
+      "end": 79.8,
+      "text": "Remember anatomic landmarks and interpret images properly."
+    },
+    {
+      "start": 80.1,
+      "end": 85.78,
+      "text": "avoid complications, avoid overconfidence, and only attempt sampling aside these pockets of adequate size."
+    },
+    {
+      "start": 86.4,
+      "end": 89.84,
+      "text": "Finally, avoid paying too much attention to the screen image, and inadequ-"
+    },
+    {
+      "start": 90.0,
+      "end": 94.52,
+      "text": "attention to proper technique such as needle placement, and the angle of needle entry into the abdominal"
+    },
+    {
+      "start": 94.52,
+      "end": 99.96,
+      "text": "cavity. Positioning for paracetesis is important. The patient should be soupa-"
+    },
+    {
+      "start": 100.86,
+      "end": 102.54,
+      "text": "Placing pillows under the patient's flank,"
+    },
+    {
+      "start": 103.06,
+      "end": 104.56,
+      "text": "contralateraled to the side of needle entry,"
+    },
+    {
+      "start": 104.94,
+      "end": 106.56,
+      "text": "and elevating the head of bed 30 degrees"
+    },
+    {
+      "start": 106.56,
+      "end": 109.64,
+      "text": "can help optimize the size of the visualize fluid pocket by..."
+    },
+    {
+      "start": 110.03,
+      "end": 112.31,
+      "text": "shifting fluid into the planned area of needle entry."
+    },
+    {
+      "start": 114.3,
+      "end": 115.54,
+      "text": "Patient information should be entered"
+    },
+    {
+      "start": 115.54,
+      "end": 116.68,
+      "text": "before each procedure."
+    },
+    {
+      "start": 117.62,
+      "end": 119.86,
+      "text": "On this machine, for example, select patient."
+    },
+    {
+      "start": 120.77,
+      "end": 126.21,
+      "text": "If a previous patient's data appears on the screen, select New, Slash, and then enter"
+    },
+    {
+      "start": 126.21,
+      "end": 128.59,
+      "text": "your patient's initials or other identifying data."
+    },
+    {
+      "start": 130.19,
+      "end": 132.41,
+      "text": "This screen also allows you to choose procedure type,"
+    },
+    {
+      "start": 133.08,
+      "end": 134.66,
+      "text": "like abdomen from the drop-down menu."
+    },
+    {
+      "start": 135.91,
+      "end": 137.59,
+      "text": "When choosing your probe for bedside ultrasound,"
+    },
+    {
+      "start": 138.21,
+      "end": 139.81,
+      "text": "remember that the linear probe has a rectangle."
+    },
+    {
+      "start": 140.0,
+      "end": 144.26,
+      "text": "foot print and a higher frequency, and is the probe of choice for identifying pertinent"
+    },
+    {
+      "start": 144.26,
+      "end": 146.46,
+      "text": "abdominal vascular prior to paracetesis."
+    },
+    {
+      "start": 147.72,
+      "end": 149.96,
+      "text": "A lower frequency probe either a phased"
+    },
+    {
+      "start": 150.0,
+      "end": 154.94,
+      "text": "array, as shown here, or a curvilinear probe, is used to examine the intradomal organs and"
+    },
+    {
+      "start": 154.94,
+      "end": 155.98,
+      "text": "assess for acidic fluid."
+    },
+    {
+      "start": 156.91,
+      "end": 158.63,
+      "text": "The phased array probe has a square footprint."
+    },
+    {
+      "start": 159.27,
+      "end": 159.97,
+      "text": "As opposed to the right..."
+    },
+    {
+      "start": 160.0,
+      "end": 164.2,
+      "text": "angle image created by the linear probe, the phaserate probe creates a cone-shaped image"
+    },
+    {
+      "start": 164.2,
+      "end": 164.8,
+      "text": "as shown."
+    },
+    {
+      "start": 166.1,
+      "end": 169.6,
+      "text": "With either type, the dot on the transducer should point to the patient's right side."
+    },
+    {
+      "start": 170.32,
+      "end": 172.78,
+      "text": "This corresponds to the dot on the left of the ultrasound screen."
+    },
+    {
+      "start": 175.04,
+      "end": 179.41,
+      "text": "When performing paracetesis, the left lower quadrant is often preferred due to a thinner"
+    },
+    {
+      "start": 179.41,
+      "end": 179.97,
+      "text": "abdominal wall"
+    },
+    {
+      "start": 180.0,
+      "end": 185.35,
+      "text": "this region, less risk of surgical scar or adhesion, and the possible presence of a gas-filled"
+    },
+    {
+      "start": 185.35,
+      "end": 189.93,
+      "text": "to seek him on the right. Identify the spleen and the lateral rectus"
+    },
+    {
+      "start": 190.0,
+      "end": 193.13,
+      "text": "Along the edge of it run the inferior epigastric arteries."
+    },
+    {
+      "start": 194.47,
+      "end": 197.69,
+      "text": "On the patient's right, identify the liver and lateral rectus sheet."
+    },
+    {
+      "start": 199.36,
+      "end": 199.96,
+      "text": "It falter sounds..."
+    },
+    {
+      "start": 200.0,
+      "end": 206.1,
+      "text": "not available, many providers identify a spot 3 cm or 2 finger breaths, cephalad, and"
+    },
+    {
+      "start": 206.1,
+      "end": 208.96,
+      "text": "3 cm medial to the anterior superior iliac spine."
+    },
+    {
+      "start": 210.0,
+      "end": 213.97,
+      "text": "Using ultrasound, we can see that this is actually not an optimal location for this patient,"
+    },
+    {
+      "start": 214.66,
+      "end": 217.86,
+      "text": "with a deeper pocket of a site is visualized by moving immediately and cephalab."
+    },
+    {
+      "start": 218.57,
+      "end": 219.97,
+      "text": "This is one of the advantages of using..."
+    },
+    {
+      "start": 220.0,
+      "end": 221.18,
+      "text": "ultrasound for parasyntesis."
+    },
+    {
+      "start": 223.34,
+      "end": 225.14,
+      "text": "Use the linear probe to confirm the absence of"
+    },
+    {
+      "start": 225.14,
+      "end": 227.12,
+      "text": "ascature in the planned area of parasyntesis."
+    },
+    {
+      "start": 228.14,
+      "end": 229.97,
+      "text": "Here, all our Doppler is used to..."
+    },
+    {
+      "start": 230.0,
+      "end": 234.18,
+      "text": "eight in this evaluation. On this ultrasound machine, select the button for"
+    },
+    {
+      "start": 234.18,
+      "end": 238.85,
+      "text": "color from the main screen. Use the trackpad and button below the ultrasound"
+    },
+    {
+      "start": 238.85,
+      "end": 239.96,
+      "text": "screen to adjust."
+    },
+    {
+      "start": 240.0,
+      "end": 245.2,
+      "text": "the size of the Doppler window. If possible, identify the inferior epigastric artery along"
+    },
+    {
+      "start": 245.2,
+      "end": 249.54,
+      "text": "the edge of the lateral rectus' sheath. At a minimum, you should examine the area of"
+    },
+    {
+      "start": 249.54,
+      "end": 249.98,
+      "text": "Propose me."
+    },
+    {
+      "start": 250.0,
+      "end": 255.06,
+      "text": "entry. Note that a color Doppler signal will not appear when the probe is perpendicular to flow,"
+    },
+    {
+      "start": 255.65,
+      "end": 259.15,
+      "text": "and so this evaluation must be performed with the transducer at an oblique angle."
+    },
+    {
+      "start": 260.58,
+      "end": 262.62,
+      "text": "When the transducer is perpendicular to the flow of blood,"
+    },
+    {
+      "start": 262.92,
+      "end": 264.8,
+      "text": "no color Doppler signal is shown on the screen,"
+    },
+    {
+      "start": 265.02,
+      "end": 266.34,
+      "text": "and the vessel cannot be visualized."
+    },
+    {
+      "start": 266.9,
+      "end": 268.0,
+      "text": "When tilted oblique to flow,"
+    },
+    {
+      "start": 268.38,
+      "end": 269.68,
+      "text": "a vessel can clearly be seen."
+    },
+    {
+      "start": 270.16,
+      "end": 272.06,
+      "text": "overlaying the side of possible paracentesis."
+    },
+    {
+      "start": 273.91,
+      "end": 275.23,
+      "text": "Proper use of color Doppler technique,"
+    },
+    {
+      "start": 275.35,
+      "end": 277.97,
+      "text": "prior to paracentesis, can help avoid inadvertent"
+    },
+    {
+      "start": 277.97,
+      "end": 279.97,
+      "text": "vascular injury and potentially serious..."
+    },
+    {
+      "start": 280.0,
+      "end": 283.98,
+      "text": "subcutaneous bleeding. After scanning for vessels, identify the liver or"
+    },
+    {
+      "start": 283.98,
+      "end": 287.53,
+      "text": "spleen, depending on the side of entry, characterized by their dense,"
+    },
+    {
+      "start": 287.87,
+      "end": 289.53,
+      "text": "ecogenic, and homogenous appearance."
+    },
+    {
+      "start": 290.26,
+      "end": 292.6,
+      "text": "Here, the spleen can be seen in the left upper quadrant."
+    },
+    {
+      "start": 293.82,
+      "end": 297.48,
+      "text": "In patients with hip-hatis plenamegaly, these organs can often be found lower in the abdomen"
+    },
+    {
+      "start": 297.48,
+      "end": 299.98,
+      "text": "than expected, and one advantage of ultrasound is the-"
+    },
+    {
+      "start": 300.0,
+      "end": 301.72,
+      "text": "ability to locate and avoid these structures."
+    },
+    {
+      "start": 302.82,
+      "end": 305.54,
+      "text": "Additionally, one can measure subcutaneous tissue depth"
+    },
+    {
+      "start": 305.86,
+      "end": 306.56,
+      "text": "using ultrasound."
+    },
+    {
+      "start": 307.48,
+      "end": 309.04,
+      "text": "Each dot on the right side of the screen"
+    },
+    {
+      "start": 309.04,
+      "end": 309.98,
+      "text": "corresponds to one-"
+    },
+    {
+      "start": 310.0,
+      "end": 314.81,
+      "text": "one centimeter. This patient has just under two centimeters of subcutaneous tissue above"
+    },
+    {
+      "start": 314.81,
+      "end": 319.3,
+      "text": "his societies. This can be used to estimate how far you should need to insert the needle"
+    },
+    {
+      "start": 319.3,
+      "end": 319.94,
+      "text": "prior to fluid."
+    },
+    {
+      "start": 320.0,
+      "end": 325.68,
+      "text": "return as well as how large of a pocket is present. When present, a sitey's appears as"
+    },
+    {
+      "start": 325.68,
+      "end": 329.74,
+      "text": "anicoic fluid with bowel floating in it. It is important to press and visualize"
+    },
+    {
+      "start": 330.0,
+      "end": 334.38,
+      "text": "all behind the Ascides, and make sure that this is not a dilated, fluid-filled loop of"
+    },
+    {
+      "start": 334.38,
+      "end": 339.82,
+      "text": "Oliver Bladder, rather than a pocket of Ascides. Ascides is localized to areas near"
+    },
+    {
+      "start": 340.0,
+      "end": 344.68,
+      "text": "organs, or not large enough to be assessed safely at the bedside, should be sent to radiology."
+    },
+    {
+      "start": 345.54,
+      "end": 347.96,
+      "text": "This video shows a small amount of sighties surrounding the liver."
+    },
+    {
+      "start": 348.84,
+      "end": 349.88,
+      "text": "This cannot be safely attempted."
+    },
+    {
+      "start": 350.0,
+      "end": 350.84,
+      "text": "at the bedside."
+    },
+    {
+      "start": 353.49,
+      "end": 356.52,
+      "text": "Similarly, a site is as complicated an appearance with"
+    },
+    {
+      "start": 356.52,
+      "end": 359.86,
+      "text": "calculations or abnormal structures present, should be referred to a"
+    },
+    {
+      "start": 360.0,
+      "end": 366.14,
+      "text": "and radiology. This video shows musonous assaytees, with complex appearing fluids surrounding visceral organs."
+    },
+    {
+      "start": 367.88,
+      "end": 369.96,
+      "text": "This slide just complicated assaytees, with a m-"
+    },
+    {
+      "start": 370.0,
+      "end": 371.5,
+      "text": "mass found adjacent to complex fluid."
+    },
+    {
+      "start": 372.62,
+      "end": 375.2,
+      "text": "Doppler shows large vascular structures within the mask,"
+    },
+    {
+      "start": 375.8,
+      "end": 377.6,
+      "text": "attempting this pair of some teases at the bedside"
+    },
+    {
+      "start": 377.6,
+      "end": 379.36,
+      "text": "could have disastrous consequences."
+    },
+    {
+      "start": 381.09,
+      "end": 385.52,
+      "text": "Finally, once the sight use has been assessed and abdominal anatomy defined, the sight"
+    },
+    {
+      "start": 385.52,
+      "end": 387.88,
+      "text": "of needle entry should be selected, as described earlier."
+    },
+    {
+      "start": 390.0,
+      "end": 395.98,
+      "text": "bedside ultrasound can be done using dynamic technique, direct needle visualization, or static technique,"
+    },
+    {
+      "start": 396.82,
+      "end": 399.32,
+      "text": "marking with ultrasound and then performing without direct visualization."
+    },
+    {
+      "start": 400.64,
+      "end": 402.34,
+      "text": "Radiology often performs the procedure"
+    },
+    {
+      "start": 402.34,
+      "end": 403.64,
+      "text": "using dynamic technique."
+    },
+    {
+      "start": 404.46,
+      "end": 405.54,
+      "text": "Whereas at the bedside,"
+    },
+    {
+      "start": 406.02,
+      "end": 407.52,
+      "text": "that technique is most often used."
+    },
+    {
+      "start": 408.61,
+      "end": 409.97,
+      "text": "One important point when performing..."
+    },
+    {
+      "start": 410.0,
+      "end": 413.66,
+      "text": "static technique, is to pay attention that the needle be inserted in the same direction"
+    },
+    {
+      "start": 413.66,
+      "end": 416.75,
+      "text": "that the ultrasound was facing when bedside ultrasound was performed."
+    },
+    {
+      "start": 418.56,
+      "end": 419.74,
+      "text": "One can see in the accompanying figure."
+    },
+    {
+      "start": 420.16,
+      "end": 424.24,
+      "text": "easy it can be to misdirect the needle, and end up in an area of the abdomen that was not visualized"
+    },
+    {
+      "start": 424.24,
+      "end": 429.45,
+      "text": "by ultrasound. In summary, ultrasound guidance repair synthesis provides information that is not"
+    },
+    {
+      "start": 429.45,
+      "end": 429.97,
+      "text": "gained by-"
+    },
+    {
+      "start": 430.03,
+      "end": 439.7,
+      "text": "It likely reduces adverse events and failed procedures or dry taps when used correctly and reduces expenses and avoids a transport of unstable patients."
+    },
+    {
+      "start": 440.0,
+      "end": 441.76,
+      "text": "compared with having radiology mark the location."
+    },
+    {
+      "start": 443.01,
+      "end": 446.87,
+      "text": "The correct use of ultrasound for pairs and teases, however, depends on the solid understanding"
+    },
+    {
+      "start": 446.87,
+      "end": 449.25,
+      "text": "of this surface and ultrasonic anatomy involved."
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "dataset_version": "stage3_av_visualfirst_regen14_reviewed_20261111",
+  "language": "en",
+  "videos": 14,
+  "qa_count": 99,
+  "qa_per_video": {
+    "cKdioYlocUE": 6,
+    "i3AXB6mAoms": 5,
+    "D6Az0Z_Wo-4": 7,
+    "PfxxVXsQsfY": 6,
+    "lREUPXCpK8Y": 7,
+    "RskrEsAGzec": 8,
+    "bsKBhAkp3fI": 6,
+    "_RHRy64jQ6s": 8,
+    "9LjtPWfsjFw": 6,
+    "X1E7OgOLzw0": 7,
+    "80dG97rGwMo": 6,
+    "b70tsWPz2P0": 10,
+    "Qjz9a2mMQD0": 7,
+    "YllLJNPnpjY": 10
+  },
+  "response_groups": {
+    "immediate": 55,
+    "delayed": 44
+  },
+  "qa_types": {
+    "current_observation": 35,
+    "event_notification": 17,
+    "history_recall": 20,
+    "temporal_comparison": 27
+  },
+  "split_qa_counts": {
+    "train": 79,
+    "eval": 20
+  },
+  "decision_samples": 143,
+  "changed_records": 63,
+  "changed_timings": 36,
+  "changed_qa_content": 20,
+  "native_opened_unique": 274,
+  "sources_preserved": true,
+  "review_scope": "Same-assistant question-led review using original-size frames at query, answer and selected evidence checkpoints, with sampled temporal grids and time-indexed ASR. No continuous full-video replay, direct audio listening, or 224px model-input validation.",
+  "acceptance": "qa_annotation_review_complete",
+  "sample_policy": "Query and answer decisions only. Event notifications are one-shot."
+}

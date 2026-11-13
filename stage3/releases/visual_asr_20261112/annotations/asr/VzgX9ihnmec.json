@@ -1,0 +1,353 @@
+{
+  "video_id": "VzgX9ihnmec",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/eval/VzgX9ihnmec/asr.txt",
+  "segments": [
+    {
+      "start": 2.04,
+      "end": 6.12,
+      "text": "Hello this is Jacob Avila and what we're going to talk about today is how you can use ultrasound"
+    },
+    {
+      "start": 6.12,
+      "end": 11.94,
+      "text": "to identify pulmonary edema. So for this exam you can use any of the three main ultrasound transducers"
+    },
+    {
+      "start": 11.94,
+      "end": 17.6,
+      "text": "but my favorite probe for this is going to be the curvilinear probe. If you don't have the"
+    },
+    {
+      "start": 17.6,
+      "end": 23.12,
+      "text": "curvilinear probe the phase ray will work just fine. Let's talk about what we're going to be looking"
+    },
+    {
+      "start": 23.12,
+      "end": 27.5,
+      "text": "for when asking yourself the question, does this patient have pulmonary edema? There are specific"
+    },
+    {
+      "start": 27.5,
+      "end": 32.1,
+      "text": "patterns of artifacts you need to look for and they're called a lines and b lines. There are"
+    },
+    {
+      "start": 32.1,
+      "end": 35.9,
+      "text": "theories as to exactly how these sonographic artifacts are formed, but I don't believe"
+    },
+    {
+      "start": 35.9,
+      "end": 39.4,
+      "text": "you need to know how they're formed to be able to identify them and to use them clinically."
+    },
+    {
+      "start": 39.88,
+      "end": 43.58,
+      "text": "Those are the super high-tech drawing here. So this is a rib and a rib, and this is the"
+    },
+    {
+      "start": 43.58,
+      "end": 48.14,
+      "text": "plural line right here. These things down here, these are called a lines. They are horizontal"
+    },
+    {
+      "start": 48.14,
+      "end": 51.92,
+      "text": "reverberation artifacts that are generated when there is just air beneath the plura."
+    },
+    {
+      "start": 52.32,
+      "end": 58.38,
+      "text": "A equals air, and a line means not pulmonary edema. In contrast, these vertical artifacts"
+    },
+    {
+      "start": 58.38,
+      "end": 63.08,
+      "text": "here are B lines. They mean that there's extra fluid in the lungs. Now for it to be considered"
+    },
+    {
+      "start": 63.08,
+      "end": 67.18,
+      "text": "a B line, it's got to be vertical. It's got to extend from the plural line all the way down to"
+    },
+    {
+      "start": 67.18,
+      "end": 72.74,
+      "text": "the bottom of the ultrasound image and it has to move with respirations. Sonographic B lines have"
+    },
+    {
+      "start": 72.74,
+      "end": 76.6,
+      "text": "the same meaning as the curly B lines that you see on chest x-ray when you have pulmonary edema."
+    },
+    {
+      "start": 76.88,
+      "end": 81.6,
+      "text": "Here's an example of an area the lung without pulmonary edema. So imagine a rib, rib shadow,"
+    },
+    {
+      "start": 81.86,
+      "end": 85.36,
+      "text": "rib, rib shadow. This is the plural line right here and this guy right here, this horizontal artifact"
+    },
+    {
+      "start": 85.36,
+      "end": 91.48,
+      "text": "is called an A line. A stands for air. It means not pulmonary edema. So these are B lines. So"
+    },
+    {
+      "start": 91.48,
+      "end": 94.84,
+      "text": "this is the pulmonary line right here. And you can see these vertical artifacts starting from"
+    },
+    {
+      "start": 94.84,
+      "end": 100.32,
+      "text": "the pulmonary line extending all the way down. This implies that the patient has pulmonary edema."
+    },
+    {
+      "start": 100.82,
+      "end": 104.26,
+      "text": "Need those side by side? Here are two other examples. The clip on the left side of the screen"
+    },
+    {
+      "start": 104.26,
+      "end": 108.94,
+      "text": "doesn't have pulmonary edema. The one on the right has pulmonary edema. Here you have horizontal"
+    },
+    {
+      "start": 108.94,
+      "end": 115.06,
+      "text": "artifacts, A lines, and here you have vertical artifacts. These are called B lines. The presence"
+    },
+    {
+      "start": 115.06,
+      "end": 119.54,
+      "text": "or absence of b-lines in of themselves would not necessarily mean anything. In order to be able"
+    },
+    {
+      "start": 119.54,
+      "end": 123.06,
+      "text": "to diagnose someone with pulmonary dima, you need to see a certain pattern of b-lines in"
+    },
+    {
+      "start": 123.06,
+      "end": 127.14,
+      "text": "a specific distribution. Firstly, you need to divide each hemithorax into four zones."
+    },
+    {
+      "start": 127.54,
+      "end": 131.26,
+      "text": "Now, the original study that described the zones supplied this picture that you see here."
+    },
+    {
+      "start": 131.9,
+      "end": 136.66,
+      "text": "Now, in the cephalat, coddle orientation, or up and down, use the posterior and anterior axillary"
+    },
+    {
+      "start": 136.66,
+      "end": 141.18,
+      "text": "lines. Then, in the transverse plane, you're supposed to draw an imaginary line dividing each"
+    },
+    {
+      "start": 141.18,
+      "end": 143.12,
+      "text": "hemithoroxin to four equal zones."
+    },
+    {
+      "start": 143.94,
+      "end": 146.24,
+      "text": "The only thing I want to mention is that the picture"
+    },
+    {
+      "start": 146.24,
+      "end": 147.88,
+      "text": "that most people use, which is this one,"
+    },
+    {
+      "start": 148.14,
+      "end": 150.92,
+      "text": "is a bit confusing to me because in the text of the article,"
+    },
+    {
+      "start": 150.92,
+      "end": 152.72,
+      "text": "they state that the transverse line should be placed"
+    },
+    {
+      "start": 152.72,
+      "end": 154.14,
+      "text": "in the third intercostal space,"
+    },
+    {
+      "start": 154.28,
+      "end": 156.86,
+      "text": "which is a bit higher than how it sits in the picture."
+    },
+    {
+      "start": 157.08,
+      "end": 157.9,
+      "text": "It's kind of semantics."
+    },
+    {
+      "start": 158.08,
+      "end": 160.08,
+      "text": "I just divide the anterior lateral test"
+    },
+    {
+      "start": 160.5,
+      "end": 161.84,
+      "text": "into four equal zones."
+    },
+    {
+      "start": 162.08,
+      "end": 164.68,
+      "text": "Now, the posterior region, while it's extremely important"
+    },
+    {
+      "start": 164.68,
+      "end": 166.32,
+      "text": "when you're looking for types of pulmonary pathology,"
+    },
+    {
+      "start": 166.54,
+      "end": 167.6,
+      "text": "other than pulmonary edema,"
+    },
+    {
+      "start": 167.98,
+      "end": 169.08,
+      "text": "isn't really that important"
+    },
+    {
+      "start": 169.08,
+      "end": 170.5,
+      "text": "when you're looking for pulmonary edema itself."
+    },
+    {
+      "start": 170.5,
+      "end": 173.9,
+      "text": "After you've divided the chest of the patient into these zones, you should place the probe"
+    },
+    {
+      "start": 173.9,
+      "end": 176.26,
+      "text": "on the chest and look for either a lines or b lines."
+    },
+    {
+      "start": 176.58,
+      "end": 180.86,
+      "text": "If you see b lines in two zones per hemithorax, then you have pulmonary edema."
+    },
+    {
+      "start": 181.26,
+      "end": 184.36,
+      "text": "Now a single b line essentially has no real clinical significance."
+    },
+    {
+      "start": 184.74,
+      "end": 188.16,
+      "text": "Two b lines still essentially have no real clinical significance."
+    },
+    {
+      "start": 188.6,
+      "end": 192.86,
+      "text": "It isn't until you have three or more b lines in the zone is that considered to be pathologic."
+    },
+    {
+      "start": 193.87,
+      "end": 198.03,
+      "text": "Personally, I start looking in the anterior lung fields bilaterally because that area is"
+    },
+    {
+      "start": 198.03,
+      "end": 200.27,
+      "text": "the most specific for pulmonary edema."
+    },
+    {
+      "start": 200.6,
+      "end": 205.58,
+      "text": "So to recap, to have a positive zone for pulmonary edema, you have to have three or more"
+    },
+    {
+      "start": 205.58,
+      "end": 206.0,
+      "text": "B lines."
+    },
+    {
+      "start": 206.42,
+      "end": 209.46,
+      "text": "So three or more B lines per zone equals a positive zone."
+    },
+    {
+      "start": 209.64,
+      "end": 213.84,
+      "text": "For the patient to be considered to have pulmonary edema, so it's diffuse pulmonary edema, you"
+    },
+    {
+      "start": 213.84,
+      "end": 216.12,
+      "text": "have to have two positive zones per side."
+    },
+    {
+      "start": 216.56,
+      "end": 221.44,
+      "text": "So three or more B lines and two or more zones per side gives you a patient with pulmonary"
+    },
+    {
+      "start": 221.44,
+      "end": 221.92,
+      "text": "edema."
+    },
+    {
+      "start": 222.24,
+      "end": 225.66,
+      "text": "The thing that I have to mention here is that the presence of a positive zone doesn't"
+    },
+    {
+      "start": 225.66,
+      "end": 228.7,
+      "text": "necessarily mean that the patient has cardiogenic pulmonary edema."
+    },
+    {
+      "start": 228.7,
+      "end": 233.24,
+      "text": "B-lines technically are caused by any kind of increase in density in the lungs."
+    },
+    {
+      "start": 233.64,
+      "end": 236.44,
+      "text": "Increase in density definitely happens with cartogen and pulmonary dima."
+    },
+    {
+      "start": 236.5,
+      "end": 239.6,
+      "text": "The lungs get soggy, but you can also have that with interstitial lung disease,"
+    },
+    {
+      "start": 240.26,
+      "end": 243.24,
+      "text": "ards, pneumonia, adalectasis, pulmonary contusions."
+    },
+    {
+      "start": 243.5,
+      "end": 245.08,
+      "text": "All these things can cause B-lines."
+    },
+    {
+      "start": 245.46,
+      "end": 248.42,
+      "text": "So you have to make sure to look at the patient in front of you and don't use that ultrasound"
+    },
+    {
+      "start": 248.42,
+      "end": 249.4,
+      "text": "in isolation."
+    }
+  ]
+}

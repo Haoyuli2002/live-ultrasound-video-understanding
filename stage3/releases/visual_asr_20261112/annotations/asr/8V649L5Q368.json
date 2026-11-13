@@ -1,0 +1,1908 @@
+{
+  "video_id": "8V649L5Q368",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/8V649L5Q368/asr.txt",
+  "segments": [
+    {
+      "start": 0.9,
+      "end": 4.04,
+      "text": "I am Dr. John Cookeler with the Stanford 25 Ultrasound series."
+    },
+    {
+      "start": 5.0,
+      "end": 6.6,
+      "text": "Today we're going to be learning about lung ultrasound."
+    },
+    {
+      "start": 7.8,
+      "end": 9.98,
+      "text": "The lung ultrasound is really important, especially in my-"
+    },
+    {
+      "start": 10.0,
+      "end": 13.94,
+      "text": "practice as a hospitalist. I use lung ultrasound all the time to evaluate"
+    },
+    {
+      "start": 13.94,
+      "end": 19.0,
+      "text": "patients for various conditions. Today, I want to focus on pneumothorax,"
+    },
+    {
+      "start": 19.48,
+      "end": 19.92,
+      "text": "plural of"
+    },
+    {
+      "start": 20.03,
+      "end": 23.92,
+      "text": "as well as telling the difference between a lines and b lines,"
+    },
+    {
+      "start": 23.92,
+      "end": 27.74,
+      "text": "which will help us to better understand if a patient might have a pulmonary edema or pneumonia."
+    },
+    {
+      "start": 29.27,
+      "end": 29.97,
+      "text": "If you get started..."
+    },
+    {
+      "start": 30.0,
+      "end": 31.78,
+      "text": "Uh, we'll, we'll start with pneumothorax."
+    },
+    {
+      "start": 32.5,
+      "end": 35.86,
+      "text": "Now, as a hospitalist, I don't diagnose a lot of pneumothoracies, right?"
+    },
+    {
+      "start": 36.12,
+      "end": 39.32,
+      "text": "My colleagues down on the ED are usually checking this out more than I am."
+    },
+    {
+      "start": 40.32,
+      "end": 45.08,
+      "text": "But it can be useful, especially after performing a procedure where new methorax is possible."
+    },
+    {
+      "start": 46.38,
+      "end": 49.94,
+      "text": "Now, using ultrasound to look for new methorax is really nice because"
+    },
+    {
+      "start": 50.0,
+      "end": 53.15,
+      "text": "because it's quick and it has a very, very high negative predictive value."
+    },
+    {
+      "start": 54.23,
+      "end": 59.55,
+      "text": "If I perform this scan, I can say with confidence that my patient doesn't have a pneumothorax."
+    },
+    {
+      "start": 61.12,
+      "end": 69.97,
+      "text": "The sensitivity of this scan is such that when you perform it, you well outperform a chest X-ray and you approach a CT scan."
+    },
+    {
+      "start": 70.03,
+      "end": 71.67,
+      "text": "in terms of the negative predictive value,"
+    },
+    {
+      "start": 71.73,
+      "end": 74.03,
+      "text": "which is why so many of us like doing this scan this way."
+    },
+    {
+      "start": 75.47,
+      "end": 77.54,
+      "text": "Now, to get started, we're going to position our patient,"
+    },
+    {
+      "start": 78.71,
+      "end": 79.97,
+      "text": "and then we're going to grab a..."
+    },
+    {
+      "start": 80.1,
+      "end": 84.2,
+      "text": "a probe. I'm going to show you all today using a linear probe, though to be honest with"
+    },
+    {
+      "start": 84.2,
+      "end": 88.16,
+      "text": "you, you could do this scan with many different probes and it works. But we'll be able to"
+    },
+    {
+      "start": 88.16,
+      "end": 89.92,
+      "text": "see the best today with linear probes."
+    },
+    {
+      "start": 90.0,
+      "end": 91.54,
+      "text": "I like to show you with this."
+    },
+    {
+      "start": 92.6,
+      "end": 93.56,
+      "text": "When we position our patient,"
+    },
+    {
+      "start": 94.06,
+      "end": 97.08,
+      "text": "we'll usually have the patient lying flat, okay?"
+    },
+    {
+      "start": 97.62,
+      "end": 99.68,
+      "text": "We can have the bed up maybe a little bit like."
+    },
+    {
+      "start": 100.03,
+      "end": 101.57,
+      "text": "Here we have a pillow under his head,"
+    },
+    {
+      "start": 101.61,
+      "end": 104.05,
+      "text": "but it's really important because air is gonna rise."
+    },
+    {
+      "start": 104.43,
+      "end": 107.23,
+      "text": "And we wanna put the probe where the air would go, right?"
+    },
+    {
+      "start": 107.94,
+      "end": 109.22,
+      "text": "If we have the patient sitting straight up,"
+    },
+    {
+      "start": 109.34,
+      "end": 109.98,
+      "text": "the air is gonna come."
+    },
+    {
+      "start": 110.0,
+      "end": 114.73,
+      "text": "up here to the clavicles and we actually can't see very well the sliding that we need to see"
+    },
+    {
+      "start": 114.73,
+      "end": 119.97,
+      "text": "up here above the clavicles. So what we need to do is scan with the patient line fly."
+    },
+    {
+      "start": 120.0,
+      "end": 126.93,
+      "text": "I'm going to place the probe across a couple of rib spaces here and this is about the highest part of the chest here"
+    },
+    {
+      "start": 126.93,
+      "end": 129.98,
+      "text": "So this is where the air should go and if we go we can see"
+    },
+    {
+      "start": 130.0,
+      "end": 134.09,
+      "text": "here. I've got a beautiful picture of two ribs and the space right in between."
+    },
+    {
+      "start": 135.31,
+      "end": 138.27,
+      "text": "I'm going to look for that bright white line. That bright white line is the"
+    },
+    {
+      "start": 138.27,
+      "end": 139.97,
+      "text": "interface between the visceral and prolly."
+    },
+    {
+      "start": 140.0,
+      "end": 144.66,
+      "text": "pleura. If I see movement along that bright white line, I sometimes call it anteline"
+    },
+    {
+      "start": 144.66,
+      "end": 147.94,
+      "text": "a log. You see these little things kind of moving back and forth. It's so"
+    },
+    {
+      "start": 147.94,
+      "end": 149.87,
+      "text": "long as your patient's breathing. You'll see that"
+    },
+    {
+      "start": 150.0,
+      "end": 150.95,
+      "text": "movement, all right?"
+    },
+    {
+      "start": 151.86,
+      "end": 154.02,
+      "text": "That lets you know that there's no pneumothorax."
+    },
+    {
+      "start": 154.69,
+      "end": 158.73,
+      "text": "What happens is if there is a pneumothorax, air will come in between the visceral and"
+    },
+    {
+      "start": 158.73,
+      "end": 159.39,
+      "text": "Pride, Oplora."
+    },
+    {
+      "start": 159.86,
+      "end": 159.9,
+      "text": "You know."
+    },
+    {
+      "start": 160.13,
+      "end": 161.97,
+      "text": "won't let you see that movement any longer."
+    },
+    {
+      "start": 162.54,
+      "end": 164.42,
+      "text": "So if you don't see any movement between that rib space,"
+    },
+    {
+      "start": 164.64,
+      "end": 167.23,
+      "text": "you need to stop and think you might be dealing"
+    },
+    {
+      "start": 167.23,
+      "end": 168.29,
+      "text": "with the pneumothorax here."
+    },
+    {
+      "start": 169.3,
+      "end": 169.98,
+      "text": "But as long as I see..."
+    },
+    {
+      "start": 170.0,
+      "end": 173.78,
+      "text": "movement as I do today, I can feel confident my patient is never new with thorax."
+    },
+    {
+      "start": 175.71,
+      "end": 178.69,
+      "text": "So our patient today did not have a new with thorax, but let's go ahead and take a look"
+    },
+    {
+      "start": 178.69,
+      "end": 179.97,
+      "text": "at a video of what a new one works through."
+    },
+    {
+      "start": 180.06,
+      "end": 185.9,
+      "text": "would look like if our patient had one so here again we can see that spot in"
+    },
+    {
+      "start": 185.9,
+      "end": 189.98,
+      "text": "between the two ribs and the bright white line okay again that's your that's"
+    },
+    {
+      "start": 190.22,
+      "end": 194.56,
+      "text": "be your plural interface. Now before we saw that sliding, we saw it look like"
+    },
+    {
+      "start": 194.56,
+      "end": 197.94,
+      "text": "there were little ants moving back and forth along that white line. But here in"
+    },
+    {
+      "start": 197.94,
+      "end": 199.64,
+      "text": "this video, there's nothing."
+    },
+    {
+      "start": 200.19,
+      "end": 209.68,
+      "text": "Right? And the reason for that is we're really only seeing the parietal plurum and there's air between the parietal plurum and the visceral plurum, or at least that's our assumption."
+    },
+    {
+      "start": 210.35,
+      "end": 214.19,
+      "text": "Now, there are a few things that can cause an absence of lung sliding, and it's important"
+    },
+    {
+      "start": 214.19,
+      "end": 214.83,
+      "text": "that you know that."
+    },
+    {
+      "start": 215.55,
+      "end": 219.89,
+      "text": "So, we do know that the positive predictive value of lack of lung sliding isn't near"
+    },
+    {
+      "start": 220.0,
+      "end": 221.88,
+      "text": "as good as the negative predictive value of seeing."
+    },
+    {
+      "start": 222.64,
+      "end": 225.5,
+      "text": "So if we go ahead and look, and we don't see long sliding,"
+    },
+    {
+      "start": 225.64,
+      "end": 228.1,
+      "text": "you cannot assume that you found a pneumothorax."
+    },
+    {
+      "start": 228.52,
+      "end": 229.98,
+      "text": "You either need to do a..."
+    },
+    {
+      "start": 230.0,
+      "end": 239.96,
+      "text": "Studies to try to figure this out so but I want all of you to be good at though is hand you identify a lack of long-sliding to know that it's time to do it"
+    },
+    {
+      "start": 240.06,
+      "end": 244.95,
+      "text": "studies. And here in this video we can clearly see there is no lung sliding at"
+    },
+    {
+      "start": 244.95,
+      "end": 248.25,
+      "text": "all and we should be nervous that this patient may have a pneumothorax."
+    },
+    {
+      "start": 250.32,
+      "end": 252.28,
+      "text": "Next we're going to learn about how to look for plural effusions."
+    },
+    {
+      "start": 252.98,
+      "end": 254.58,
+      "text": "This is a scan that I use all the time."
+    },
+    {
+      "start": 255.16,
+      "end": 259.43,
+      "text": "Plural effusions are pretty easy to find with ultrasound, and it's very, very sensitive."
+    },
+    {
+      "start": 260.0,
+      "end": 264.24,
+      "text": "You're going to find plural effusions that you don't see with the chest X-ray, but you"
+    },
+    {
+      "start": 264.24,
+      "end": 265.24,
+      "text": "can pick up with ultrasound."
+    },
+    {
+      "start": 265.78,
+      "end": 268.28,
+      "text": "It's sensitive for very, very small amounts of fluid."
+    },
+    {
+      "start": 269.46,
+      "end": 269.54,
+      "text": "So."
+    },
+    {
+      "start": 270.16,
+      "end": 270.64,
+      "text": "How do we do this?"
+    },
+    {
+      "start": 271.4,
+      "end": 272.56,
+      "text": "We first need to position our patient."
+    },
+    {
+      "start": 273.08,
+      "end": 275.9,
+      "text": "This is where you want to ask your patient to go ahead and take your right arm."
+    },
+    {
+      "start": 276.16,
+      "end": 278.71,
+      "text": "We're going to start on the right side and place it behind your head."
+    },
+    {
+      "start": 278.89,
+      "end": 279.69,
+      "text": "We want to be able to..."
+    },
+    {
+      "start": 280.03,
+      "end": 283.07,
+      "text": "the entire side of the chest here, including the axle."
+    },
+    {
+      "start": 284.1,
+      "end": 287.07,
+      "text": "Then you can use either a cardiac probe"
+    },
+    {
+      "start": 287.07,
+      "end": 289.35,
+      "text": "or an abdominal probe, the curvilinear probe,"
+    },
+    {
+      "start": 289.43,
+      "end": 289.97,
+      "text": "but I prefer..."
+    },
+    {
+      "start": 290.0,
+      "end": 297.11,
+      "text": "the cardiac for this game. And I'm going to place the probe with the probe indicator and"
+    },
+    {
+      "start": 297.11,
+      "end": 299.87,
+      "text": "that's a little different on each on each"
+    },
+    {
+      "start": 300.0,
+      "end": 302.7,
+      "text": "device, this probe indicator is this little bump here, okay?"
+    },
+    {
+      "start": 303.34,
+      "end": 306.77,
+      "text": "I want to place that superially headed towards the axilla,"
+    },
+    {
+      "start": 307.07,
+      "end": 309.33,
+      "text": "and I'm going to place the probe itself."
+    },
+    {
+      "start": 310.13,
+      "end": 313.03,
+      "text": "somewhere between the mid axillary and the posterior axillary line."
+    },
+    {
+      "start": 313.83,
+      "end": 315.93,
+      "text": "Again, if we look here, this is our mid axillary line here."
+    },
+    {
+      "start": 316.05,
+      "end": 317.23,
+      "text": "This is the posterior axillary line."
+    },
+    {
+      "start": 317.33,
+      "end": 319.77,
+      "text": "So right in this space here, and I'm going to be looking."
+    },
+    {
+      "start": 320.16,
+      "end": 324.73,
+      "text": "through the liver. My goal is to see the liver. Once I find the liver, I'm going to aim"
+    },
+    {
+      "start": 324.73,
+      "end": 329.8,
+      "text": "my beam up into the chest. So here we can see we've got a nice image of the liver."
+    },
+    {
+      "start": 330.38,
+      "end": 332.88,
+      "text": "That bright white line, that big curved line there,"
+    },
+    {
+      "start": 332.98,
+      "end": 333.84,
+      "text": "that's the diaphragm."
+    },
+    {
+      "start": 334.6,
+      "end": 337.22,
+      "text": "My goal is to see to the other side of the diaphragm."
+    },
+    {
+      "start": 337.32,
+      "end": 339.96,
+      "text": "So what I do is I rock the probe, and I..."
+    },
+    {
+      "start": 340.0,
+      "end": 342.55,
+      "text": "They want to head farther into the chest."
+    },
+    {
+      "start": 343.21,
+      "end": 344.66,
+      "text": "Now, if we watch the screen,"
+    },
+    {
+      "start": 344.68,
+      "end": 346.8,
+      "text": "we can see the diaphragm moving, okay?"
+    },
+    {
+      "start": 347.02,
+      "end": 348.28,
+      "text": "Our patient's diaphragm works."
+    },
+    {
+      "start": 348.4,
+      "end": 348.72,
+      "text": "That's great."
+    },
+    {
+      "start": 350.0,
+      "end": 355.67,
+      "text": "see this sort of scalloped look sort of along the bottom of the screen, okay?"
+    },
+    {
+      "start": 357.08,
+      "end": 359.86,
+      "text": "The diaphragm kind of merges with that scalloped structure there."
+    },
+    {
+      "start": 360.26,
+      "end": 363.11,
+      "text": "But we're actually looking at as our patient's spine at this, okay?"
+    },
+    {
+      "start": 363.51,
+      "end": 364.93,
+      "text": "We're seeing all the way to the mid chest."
+    },
+    {
+      "start": 365.11,
+      "end": 365.75,
+      "text": "That's the spine."
+    },
+    {
+      "start": 366.54,
+      "end": 369.96,
+      "text": "Now, what we're going to look for is we're going to see does the spine go past?"
+    },
+    {
+      "start": 370.0,
+      "end": 374.74,
+      "text": "the diaphragm. If the spine goes past the diaphragm, you're looking at it infusion, right?"
+    },
+    {
+      "start": 375.18,
+      "end": 378.6,
+      "text": "Because remember, on the other side of the diaphragm, you have lungs that are full of air."
+    },
+    {
+      "start": 378.78,
+      "end": 379.9,
+      "text": "You can't see through them."
+    },
+    {
+      "start": 380.29,
+      "end": 383.43,
+      "text": "You wouldn't be able to see past the lungs to see the spine."
+    },
+    {
+      "start": 384.09,
+      "end": 388.54,
+      "text": "But in this case, we can see, just as we expect, as soon as we hit the diaphragm, we cannot"
+    },
+    {
+      "start": 388.54,
+      "end": 389.54,
+      "text": "see the spine anymore."
+    },
+    {
+      "start": 390.1,
+      "end": 392.76,
+      "text": "we know that our patient here does not have any effusion"
+    },
+    {
+      "start": 392.76,
+      "end": 393.56,
+      "text": "on that right side."
+    },
+    {
+      "start": 394.08,
+      "end": 396.02,
+      "text": "So we can feel very confident in ruling out"
+    },
+    {
+      "start": 396.02,
+      "end": 397.3,
+      "text": "a right side of plural effusion."
+    },
+    {
+      "start": 398.33,
+      "end": 399.75,
+      "text": "Next, we're gonna do the left side of the chest."
+    },
+    {
+      "start": 400.19,
+      "end": 403.17,
+      "text": "Now the left side's a little bit more difficult than the right, for a couple different reasons."
+    },
+    {
+      "start": 404.29,
+      "end": 407.05,
+      "text": "First is our window now, instead of the livers, going to be the spleen."
+    },
+    {
+      "start": 407.48,
+      "end": 409.46,
+      "text": "And as you all know, the spleen is considerably smaller."
+    },
+    {
+      "start": 410.0,
+      "end": 415.58,
+      "text": "bit more variable in terms of the size and the way it sort of rotated inside the abdomen."
+    },
+    {
+      "start": 416.17,
+      "end": 419.97,
+      "text": "And so it's a little harder to find and a little harder to use as a window compared to the lip."
+    },
+    {
+      "start": 420.93,
+      "end": 424.77,
+      "text": "Similarly, you also have a stomach bubble here, which can be full of air if the patients eat"
+    },
+    {
+      "start": 424.77,
+      "end": 425.39,
+      "text": "and recently."
+    },
+    {
+      "start": 426.05,
+      "end": 429.09,
+      "text": "That can also be a little bit of a challenge when you're trying to get that crisp clean"
+    },
+    {
+      "start": 429.09,
+      "end": 429.89,
+      "text": "image that you want."
+    },
+    {
+      "start": 430.45,
+      "end": 431.15,
+      "text": "But don't get frustrated."
+    },
+    {
+      "start": 431.35,
+      "end": 432.55,
+      "text": "We're gonna figure this out."
+    },
+    {
+      "start": 433.11,
+      "end": 434.31,
+      "text": "So first, let's position our patient."
+    },
+    {
+      "start": 434.92,
+      "end": 437.58,
+      "text": "Let's go ahead and have your left hand go behind your head."
+    },
+    {
+      "start": 437.6,
+      "end": 438.88,
+      "text": "You can bring your right hand back down."
+    },
+    {
+      "start": 440.19,
+      "end": 441.85,
+      "text": "And we're gonna put some gel here on our probe."
+    },
+    {
+      "start": 442.39,
+      "end": 443.61,
+      "text": "Just like on the right side,"
+    },
+    {
+      "start": 444.4,
+      "end": 445.86,
+      "text": "we're gonna get our probe indicator,"
+    },
+    {
+      "start": 446.58,
+      "end": 447.94,
+      "text": "and we'll call it the dot on this,"
+    },
+    {
+      "start": 448.06,
+      "end": 449.8,
+      "text": "and this machine is, this is our dot."
+    },
+    {
+      "start": 450.1,
+      "end": 456.22,
+      "text": "Okay, and when you want to find the spleen, okay, usually you're going to go, you know,"
+    },
+    {
+      "start": 456.36,
+      "end": 459.88,
+      "text": "somewhere again between mid-axle or your axlery line. Sometimes it's helpful."
+    },
+    {
+      "start": 460.03,
+      "end": 464.11,
+      "text": "actually find the kidney and use that to find the spleen and there I'll go all the way"
+    },
+    {
+      "start": 464.11,
+      "end": 465.03,
+      "text": "to the posterior axel."
+    },
+    {
+      "start": 465.13,
+      "end": 467.11,
+      "text": "But let's go ahead and place the probe right about here."
+    },
+    {
+      "start": 467.39,
+      "end": 469.97,
+      "text": "I'm going to slide around until I find the spleen."
+    },
+    {
+      "start": 470.0,
+      "end": 473.7,
+      "text": "Now again here we're pretty lucky we've got a beautiful picture of the"
+    },
+    {
+      "start": 473.7,
+      "end": 479.86,
+      "text": "spleen. Again our probe indicator is pointed towards the axilla alright and we're"
+    },
+    {
+      "start": 480.0,
+      "end": 484.12,
+      "text": "happy with our picture. And now we're going to see can we make it any better. Now it's a little bit"
+    },
+    {
+      "start": 484.12,
+      "end": 488.92,
+      "text": "better. Now I can see the spine there. I can see the diaphragm and so I'm pretty happy with this."
+    },
+    {
+      "start": 489.0,
+      "end": 489.82,
+      "text": "I feel pretty confident."
+    },
+    {
+      "start": 490.0,
+      "end": 495.26,
+      "text": "again since I don't see the spine continue past the diaphragm that have ruled out even a small"
+    },
+    {
+      "start": 495.26,
+      "end": 499.98,
+      "text": "plural of fusion. I feel pretty good about this image. But sometimes you're not going to be this"
+    },
+    {
+      "start": 500.03,
+      "end": 504.28,
+      "text": "But the left side can be more difficult, so there will be times where we need to take"
+    },
+    {
+      "start": 504.28,
+      "end": 504.98,
+      "text": "a different approach."
+    },
+    {
+      "start": 505.65,
+      "end": 509.05,
+      "text": "So for this one, we're going to have our patient do is just go ahead and take a big deep"
+    },
+    {
+      "start": 509.05,
+      "end": 509.33,
+      "text": "breath."
+    },
+    {
+      "start": 510.03,
+      "end": 512.37,
+      "text": "Keep going, keep going, keep going, keep going."
+    },
+    {
+      "start": 513.52,
+      "end": 517.06,
+      "text": "And notice with that big deep breath, suddenly the whole screen went gray."
+    },
+    {
+      "start": 518.43,
+      "end": 519.97,
+      "text": "When that happens, what's..."
+    },
+    {
+      "start": 520.0,
+      "end": 525.34,
+      "text": "The current inside the body is that his diaphragm now just moved and now we've got air in between"
+    },
+    {
+      "start": 525.34,
+      "end": 529.04,
+      "text": "our probe and the spleen, okay?"
+    },
+    {
+      "start": 529.04,
+      "end": 529.98,
+      "text": "that made our screen..."
+    },
+    {
+      "start": 530.0,
+      "end": 535.13,
+      "text": "go fuzzy. We've essentially ruled out a large plural effusion by doing that. We"
+    },
+    {
+      "start": 535.13,
+      "end": 538.78,
+      "text": "called out the curtain sign. Now again could you have a small plural effusion?"
+    },
+    {
+      "start": 539.06,
+      "end": 539.18,
+      "text": "Yeah."
+    },
+    {
+      "start": 540.0,
+      "end": 543.04,
+      "text": "And sometimes when you're evaluating a patient, you can't get that perfect picture."
+    },
+    {
+      "start": 543.38,
+      "end": 547.48,
+      "text": "You can use the curtain sign to at least look and make sure that it's not, you know, a large"
+    },
+    {
+      "start": 547.48,
+      "end": 549.06,
+      "text": "plurifusion causing shortness to breath."
+    },
+    {
+      "start": 550.67,
+      "end": 553.95,
+      "text": "Next we're going to take a look at a video of what a plural of fusion actually looks like."
+    },
+    {
+      "start": 554.6,
+      "end": 558.4,
+      "text": "Today our patient was healthy, he didn't have any plural of fusions, but these are things"
+    },
+    {
+      "start": 558.4,
+      "end": 559.98,
+      "text": "that you will definitely find in your house."
+    },
+    {
+      "start": 560.0,
+      "end": 560.64,
+      "text": "hospital practice."
+    },
+    {
+      "start": 561.15,
+      "end": 562.71,
+      "text": "It's important that you get to know what you're looking for."
+    },
+    {
+      "start": 563.7,
+      "end": 567.16,
+      "text": "So as we talked about before, we were scanning, we're looking right at the base of the"
+    },
+    {
+      "start": 567.16,
+      "end": 569.98,
+      "text": "diaphragm there to see does the..."
+    },
+    {
+      "start": 570.06,
+      "end": 573.68,
+      "text": "fine, continue past the diaphragm and into the thoracic cage."
+    },
+    {
+      "start": 574.5,
+      "end": 577.5,
+      "text": "Normally, again, we can't see that because there's air in the way, but if there's fluid"
+    },
+    {
+      "start": 577.5,
+      "end": 579.96,
+      "text": "there, that fluid is going to give you a great view of..."
+    },
+    {
+      "start": 580.0,
+      "end": 586.21,
+      "text": "Now, as soon as you see it go past like that, now you need to explore this effusion a little bit, all right?"
+    },
+    {
+      "start": 586.83,
+      "end": 589.97,
+      "text": "And so in this video, we can clearly see the spine moving past."
+    },
+    {
+      "start": 590.0,
+      "end": 595.34,
+      "text": "the diaphragm. And then, especially if we angle the probe a little bit more anterior, we're"
+    },
+    {
+      "start": 595.34,
+      "end": 599.76,
+      "text": "actually able to see a bit of adalactatic lung. So a little bit of collapse lung that's"
+    },
+    {
+      "start": 599.76,
+      "end": 599.96,
+      "text": "floating."
+    },
+    {
+      "start": 600.0,
+      "end": 602.28,
+      "text": "floating in that fluid, move in and out of our screen."
+    },
+    {
+      "start": 602.93,
+      "end": 605.11,
+      "text": "We have clearly diagnosed a plural effusion."
+    },
+    {
+      "start": 605.94,
+      "end": 607.26,
+      "text": "You can also look around to see, well,"
+    },
+    {
+      "start": 607.28,
+      "end": 608.42,
+      "text": "are there any septations?"
+    },
+    {
+      "start": 608.78,
+      "end": 609.98,
+      "text": "Okay, is there lay-"
+    },
+    {
+      "start": 610.4,
+      "end": 614.77,
+      "text": "layers within the fluid is the lung tethered and not able to move or is it"
+    },
+    {
+      "start": 614.77,
+      "end": 618.72,
+      "text": "moving around freely as the patient breathes. All this is going to give you some"
+    },
+    {
+      "start": 618.72,
+      "end": 619.98,
+      "text": "idea of whether or not this is a"
+    },
+    {
+      "start": 620.06,
+      "end": 622.14,
+      "text": "free-flowing effusion, or whether it's"
+    },
+    {
+      "start": 622.14,
+      "end": 623.52,
+      "text": "lock-ulated or even an empire."
+    },
+    {
+      "start": 625.44,
+      "end": 629.02,
+      "text": "Up until now, we've really just looked at the area"
+    },
+    {
+      "start": 629.02,
+      "end": 629.84,
+      "text": "around the lung."
+    },
+    {
+      "start": 630.77,
+      "end": 633.59,
+      "text": "Now we're going to move into actually examining the lungs themselves, and this is where it's"
+    },
+    {
+      "start": 633.59,
+      "end": 637.23,
+      "text": "really important that we learn about two different artifacts, A lines and B lines."
+    },
+    {
+      "start": 638.25,
+      "end": 639.97,
+      "text": "So to do this while I'm going to show you a video..."
+    },
+    {
+      "start": 640.0,
+      "end": 641.58,
+      "text": "a clip here of A lines and B lines."
+    },
+    {
+      "start": 641.9,
+      "end": 642.8,
+      "text": "We'll start with A lines."
+    },
+    {
+      "start": 643.26,
+      "end": 645.17,
+      "text": "A lines are considered normal, okay?"
+    },
+    {
+      "start": 645.51,
+      "end": 646.55,
+      "text": "If you are healthy and well,"
+    },
+    {
+      "start": 647.05,
+      "end": 648.99,
+      "text": "when I examine your lungs, I should see A line."
+    },
+    {
+      "start": 649.59,
+      "end": 649.97,
+      "text": "What are they?"
+    },
+    {
+      "start": 650.61,
+      "end": 652.21,
+      "text": "Well, when I place the probe under the chest"
+    },
+    {
+      "start": 652.21,
+      "end": 654.83,
+      "text": "and I look between the ribs and into the lung tissue,"
+    },
+    {
+      "start": 655.53,
+      "end": 658.19,
+      "text": "what I'll see are repeated horizontal lines here."
+    },
+    {
+      "start": 658.66,
+      "end": 658.7,
+      "text": "Okay."
+    },
+    {
+      "start": 660.03,
+      "end": 664.87,
+      "text": "start from the plural interface and there are actually repeated repeating"
+    },
+    {
+      "start": 665.19,
+      "end": 669.31,
+      "text": "depths below that and that is an a-line we"
+    },
+    {
+      "start": 670.0,
+      "end": 673.48,
+      "text": "Think of that as, well, there's normal tissue right below my pro."
+    },
+    {
+      "start": 674.39,
+      "end": 676.75,
+      "text": "I'm not seeing deep into the lungs, so you really want to be careful."
+    },
+    {
+      "start": 676.99,
+      "end": 679.97,
+      "text": "I'm really only able to say right at that interface that there's no-"
+    },
+    {
+      "start": 680.0,
+      "end": 680.84,
+      "text": "normal lung tissue there."
+    },
+    {
+      "start": 681.22,
+      "end": 683.38,
+      "text": "Could there be something hidden deep that you can't see?"
+    },
+    {
+      "start": 683.74,
+      "end": 683.92,
+      "text": "Yes."
+    },
+    {
+      "start": 684.28,
+      "end": 685.46,
+      "text": "So again, be careful."
+    },
+    {
+      "start": 685.76,
+      "end": 688.0,
+      "text": "You have not ruled out any bad pathology there."
+    },
+    {
+      "start": 688.28,
+      "end": 689.56,
+      "text": "But you have ruled out pathology."
+    },
+    {
+      "start": 689.74,
+      "end": 689.98,
+      "text": "Right."
+    },
+    {
+      "start": 690.0,
+      "end": 692.42,
+      "text": "underneath your probe if you see a lines."
+    },
+    {
+      "start": 693.5,
+      "end": 697.16,
+      "text": "Occasionally if your probe is not perpendicular to the plural interface, you won't be able"
+    },
+    {
+      "start": 697.16,
+      "end": 697.9,
+      "text": "to see a lines."
+    },
+    {
+      "start": 698.24,
+      "end": 699.96,
+      "text": "And so it does require a little bit of moving the probe back."
+    },
+    {
+      "start": 700.0,
+      "end": 701.24,
+      "text": "back and forth to make them pop out."
+    },
+    {
+      "start": 702.64,
+      "end": 703.32,
+      "text": "Next are B lines."
+    },
+    {
+      "start": 703.76,
+      "end": 705.3,
+      "text": "This is the most common pathology"
+    },
+    {
+      "start": 705.3,
+      "end": 706.62,
+      "text": "that you're gonna find when you go ahead"
+    },
+    {
+      "start": 706.62,
+      "end": 707.46,
+      "text": "and examine the lungs."
+    },
+    {
+      "start": 708.42,
+      "end": 709.66,
+      "text": "B lines is opposed to horizontal."
+    },
+    {
+      "start": 709.86,
+      "end": 709.98,
+      "text": "These..."
+    },
+    {
+      "start": 710.0,
+      "end": 714.56,
+      "text": "vertical lines. They also start at the plural interface. Now, for it to be a true"
+    },
+    {
+      "start": 714.56,
+      "end": 719.5,
+      "text": "B line in the long ultrasound setting, so it's set at about 13 centimeters, the"
+    },
+    {
+      "start": 719.5,
+      "end": 719.84,
+      "text": "streak"
+    },
+    {
+      "start": 720.0,
+      "end": 723.98,
+      "text": "of fact, we'll start at the pleural interface and go all the way to the bottom of the screen."
+    },
+    {
+      "start": 724.98,
+      "end": 727.44,
+      "text": "Similarly, it also needs to move as the patient's breathing."
+    },
+    {
+      "start": 727.88,
+      "end": 729.98,
+      "text": "So as we look at this video, we can see that it's moving..."
+    },
+    {
+      "start": 730.0,
+      "end": 730.96,
+      "text": "moving back and forth."
+    },
+    {
+      "start": 731.26,
+      "end": 732.8,
+      "text": "It comes and goes, okay?"
+    },
+    {
+      "start": 733.48,
+      "end": 735.66,
+      "text": "So if they're not, if they're fixed in place,"
+    },
+    {
+      "start": 736.2,
+      "end": 736.9,
+      "text": "that's not a beeline."
+    },
+    {
+      "start": 737.08,
+      "end": 738.14,
+      "text": "It needs to look like these guys."
+    },
+    {
+      "start": 738.26,
+      "end": 739.18,
+      "text": "They move back and forth."
+    },
+    {
+      "start": 740.03,
+      "end": 743.15,
+      "text": "Similarly, they can be of different widths, some can be narrow, some can be large."
+    },
+    {
+      "start": 743.98,
+      "end": 747.44,
+      "text": "Again, when we're looking at this video here, we want to get a sense of, well, is that"
+    },
+    {
+      "start": 747.44,
+      "end": 748.08,
+      "text": "a lot of B-lines?"
+    },
+    {
+      "start": 748.38,
+      "end": 749.6,
+      "text": "Is that not too many B-lines?"
+    },
+    {
+      "start": 750.1,
+      "end": 751.5,
+      "text": "There's two different ways to quantify that."
+    },
+    {
+      "start": 752.25,
+      "end": 754.69,
+      "text": "One, you can just count the number of B lines that you see."
+    },
+    {
+      "start": 754.97,
+      "end": 757.12,
+      "text": "Okay, the more the worse it is."
+    },
+    {
+      "start": 757.91,
+      "end": 759.83,
+      "text": "Or you can actually see how much of the screen"
+    },
+    {
+      "start": 760.0,
+      "end": 763.84,
+      "text": "take up. So B lines can get quite fat and then can suddenly take up a lot of the"
+    },
+    {
+      "start": 763.84,
+      "end": 769.97,
+      "text": "screen. When you see that, that also means the pathology is worse. Now we're ready."
+    },
+    {
+      "start": 770.0,
+      "end": 775.55,
+      "text": "to go ahead and take a look at the lungs themselves. When we do lung ultrasound, there is not one defined"
+    },
+    {
+      "start": 775.55,
+      "end": 779.9,
+      "text": "way to do this, and that's really important to remember. It depends a little bit on how..."
+    },
+    {
+      "start": 780.1,
+      "end": 784.14,
+      "text": "patient is, right? So if my patient right now is an extremist, he's ready to get"
+    },
+    {
+      "start": 784.14,
+      "end": 788.49,
+      "text": "intubated because he's so short of breath. I may not need to do that many"
+    },
+    {
+      "start": 788.49,
+      "end": 789.89,
+      "text": "windows to understand."
+    },
+    {
+      "start": 790.03,
+      "end": 790.97,
+      "text": "how much wrong with the patient."
+    },
+    {
+      "start": 791.86,
+      "end": 793.46,
+      "text": "However, if my patient's completely healthy"
+    },
+    {
+      "start": 793.46,
+      "end": 796.34,
+      "text": "and I'm looking for very subtle signs of pneumonia,"
+    },
+    {
+      "start": 796.82,
+      "end": 799.98,
+      "text": "I mean to do a much more thorough scan to really feel like"
+    },
+    {
+      "start": 800.0,
+      "end": 804.17,
+      "text": "I've ruled that out. And at this point where we are on longer ultrasound is there's many different"
+    },
+    {
+      "start": 804.17,
+      "end": 809.03,
+      "text": "protocols that are out there in terms of the number of windows you get. And again, for all of you,"
+    },
+    {
+      "start": 809.15,
+      "end": 809.97,
+      "text": "it might really depend..."
+    },
+    {
+      "start": 810.03,
+      "end": 813.96,
+      "text": "on your clinical setting, how sick your patient is, and that's going to help you to understand"
+    },
+    {
+      "start": 813.96,
+      "end": 818.56,
+      "text": "how many parts in the lung do I need to look at to feel certain that I've learned enough"
+    },
+    {
+      "start": 818.56,
+      "end": 819.66,
+      "text": "to make a diagnosis."
+    },
+    {
+      "start": 821.02,
+      "end": 822.42,
+      "text": "The other thing I want you to think about is,"
+    },
+    {
+      "start": 822.7,
+      "end": 824.54,
+      "text": "we're all used to thinking about the lungs"
+    },
+    {
+      "start": 824.54,
+      "end": 825.76,
+      "text": "in terms of chest x-rays."
+    },
+    {
+      "start": 826.38,
+      "end": 827.68,
+      "text": "And I still think that's helpful to me."
+    },
+    {
+      "start": 828.21,
+      "end": 829.97,
+      "text": "So when I go ahead and scan, I'm almost..."
+    },
+    {
+      "start": 830.45,
+      "end": 831.85,
+      "text": "building a chest x ray in my head."
+    },
+    {
+      "start": 832.22,
+      "end": 833.26,
+      "text": "Where do I see pathology?"
+    },
+    {
+      "start": 833.42,
+      "end": 834.04,
+      "text": "Is it on the left side?"
+    },
+    {
+      "start": 834.22,
+      "end": 834.82,
+      "text": "Is on the right side?"
+    },
+    {
+      "start": 835.1,
+      "end": 835.74,
+      "text": "Is it diffused?"
+    },
+    {
+      "start": 835.74,
+      "end": 836.46,
+      "text": "Do I see it everywhere?"
+    },
+    {
+      "start": 836.8,
+      "end": 837.86,
+      "text": "Or is it just in a few spots?"
+    },
+    {
+      "start": 839.29,
+      "end": 839.97,
+      "text": "The way I want you all to-"
+    },
+    {
+      "start": 840.0,
+      "end": 844.64,
+      "text": "think about it is when we find pathology, when we find B lines, you can think about that"
+    },
+    {
+      "start": 844.64,
+      "end": 849.96,
+      "text": "as an opacity on chest x-ray. It's clearly a problem area that you're going to need to explore more."
+    },
+    {
+      "start": 850.96,
+      "end": 851.94,
+      "text": "How do we go ahead and get these images?"
+    },
+    {
+      "start": 854.3,
+      "end": 856.61,
+      "text": "Let me go ahead and use a cardiac probe here,"
+    },
+    {
+      "start": 856.63,
+      "end": 858.79,
+      "text": "though again, you could use other probes."
+    },
+    {
+      "start": 860.16,
+      "end": 861.62,
+      "text": "for long ultrasound, it's pretty straightforward."
+    },
+    {
+      "start": 862.51,
+      "end": 865.05,
+      "text": "Many of your machines now have a long ultrasound setting,"
+    },
+    {
+      "start": 866.06,
+      "end": 866.68,
+      "text": "and that helps."
+    },
+    {
+      "start": 867.14,
+      "end": 867.94,
+      "text": "It'll set our depth."
+    },
+    {
+      "start": 871.06,
+      "end": 872.0,
+      "text": "to the appropriate depth."
+    },
+    {
+      "start": 872.84,
+      "end": 873.88,
+      "text": "Again, just by convention,"
+    },
+    {
+      "start": 874.14,
+      "end": 877.5,
+      "text": "I'm gonna have my probe indicator pointed up, okay?"
+    },
+    {
+      "start": 878.21,
+      "end": 879.82,
+      "text": "And for this,"
+    },
+    {
+      "start": 880.0,
+      "end": 883.64,
+      "text": "I'm going to go ahead and show you four points on the chest we're going to look."
+    },
+    {
+      "start": 884.28,
+      "end": 887.92,
+      "text": "On the left hand side, it's actually a little bit harder because we need to avoid the"
+    },
+    {
+      "start": 887.92,
+      "end": 888.1,
+      "text": "heart."
+    },
+    {
+      "start": 888.24,
+      "end": 889.42,
+      "text": "Again, we're going after the lung here."
+    },
+    {
+      "start": 890.03,
+      "end": 893.65,
+      "text": "So we'll place the probe where we think we're at least on this side above the heart."
+    },
+    {
+      "start": 894.38,
+      "end": 896.36,
+      "text": "And here we can see beautiful a lines."
+    },
+    {
+      "start": 896.8,
+      "end": 898.78,
+      "text": "I can feel really confident that's normal, right?"
+    },
+    {
+      "start": 899.38,
+      "end": 899.98,
+      "text": "This is not..."
+    },
+    {
+      "start": 900.0,
+      "end": 905.02,
+      "text": "a technique heavy scan. I'm just placing the probe and I'm looking to see what I see, okay?"
+    },
+    {
+      "start": 905.5,
+      "end": 909.45,
+      "text": "It doesn't require a lot of of changing the angles or anything like that."
+    },
+    {
+      "start": 910.03,
+      "end": 911.81,
+      "text": "Occasionally, if I don't see the a lines pop out,"
+    },
+    {
+      "start": 911.91,
+      "end": 913.73,
+      "text": "I might need to adjust a little bit"
+    },
+    {
+      "start": 913.73,
+      "end": 914.79,
+      "text": "to make sure I'm perpendicular."
+    },
+    {
+      "start": 915.07,
+      "end": 917.59,
+      "text": "And now I've got some a lines I can move on, okay?"
+    },
+    {
+      "start": 918.25,
+      "end": 919.87,
+      "text": "I'm gonna come, again, I'm trying to avoid the heart."
+    },
+    {
+      "start": 920.48,
+      "end": 925.1,
+      "text": "And so I'll come over here and again I'm gonna adjust my angle a little bit and boom there are my a lines"
+    },
+    {
+      "start": 925.1,
+      "end": 929.3,
+      "text": "Perfect now we're gonna come over here. See you again. Can I get around the heart?"
+    },
+    {
+      "start": 930.1,
+      "end": 931.78,
+      "text": "No, I can't, so I still got a heart here."
+    },
+    {
+      "start": 932.32,
+      "end": 935.18,
+      "text": "I move over here, and now I'm a little bit below the heart,"
+    },
+    {
+      "start": 935.88,
+      "end": 939.35,
+      "text": "and we'll see if we can get some a-lines to pop out for us."
+    },
+    {
+      "start": 940.0,
+      "end": 947.13,
+      "text": "and there we go. Now, depending on what you're scanning for, you might then go and look for a plural"
+    },
+    {
+      "start": 947.13,
+      "end": 949.96,
+      "text": "of fusion. You may have the patients sit up and you may..."
+    },
+    {
+      "start": 950.0,
+      "end": 955.64,
+      "text": "need to now scan all those areas of their back as well, okay? Because again, I've only looked at the"
+    },
+    {
+      "start": 955.64,
+      "end": 959.97,
+      "text": "left anterior side of the chest. I could also come over here to the right side and take a look over here."
+    },
+    {
+      "start": 960.0,
+      "end": 965.12,
+      "text": "Again, again, I see nice a lines pop out, right sides a little easier and I don't have to"
+    },
+    {
+      "start": 965.12,
+      "end": 965.88,
+      "text": "contend with the heart."
+    },
+    {
+      "start": 966.34,
+      "end": 969.32,
+      "text": "So it should be a little bit more straight forward, again, I'm going to angle the probe a"
+    },
+    {
+      "start": 969.32,
+      "end": 969.66,
+      "text": "little bit."
+    },
+    {
+      "start": 970.0,
+      "end": 971.52,
+      "text": "I get my a lines, I can feel good,"
+    },
+    {
+      "start": 971.72,
+      "end": 972.98,
+      "text": "there we got a nice view there,"
+    },
+    {
+      "start": 973.68,
+      "end": 975.31,
+      "text": "I can come down here, again,"
+    },
+    {
+      "start": 976.12,
+      "end": 977.4,
+      "text": "easier because there's no heart in the way,"
+    },
+    {
+      "start": 977.88,
+      "end": 979.98,
+      "text": "I got a lines and I would just continue to do"
+    },
+    {
+      "start": 980.0,
+      "end": 984.74,
+      "text": "this. This would be an 8-point scan where we do four areas of the chest here. We can combine that by"
+    },
+    {
+      "start": 984.74,
+      "end": 988.7,
+      "text": "looking at the mid-axle lines. We can look for pleural effusions. And again, if you need to be"
+    },
+    {
+      "start": 988.7,
+      "end": 989.44,
+      "text": "really thorough."
+    },
+    {
+      "start": 990.0,
+      "end": 993.22,
+      "text": "you can sit the patient up and scan their entire back as well."
+    },
+    {
+      "start": 994.65,
+      "end": 996.42,
+      "text": "How are we going to interpret this, okay?"
+    },
+    {
+      "start": 996.76,
+      "end": 998.18,
+      "text": "And this is where it gets a little bit tricky."
+    },
+    {
+      "start": 998.48,
+      "end": 999.46,
+      "text": "The technique is easy."
+    },
+    {
+      "start": 1000.03,
+      "end": 1003.49,
+      "text": "out a lines and b lines is no problem, just placing the probe in between the rib spaces."
+    },
+    {
+      "start": 1004.02,
+      "end": 1006.66,
+      "text": "It's going to be the interpretation that's a little bit more tough, right?"
+    },
+    {
+      "start": 1007.54,
+      "end": 1009.78,
+      "text": "Here we need to really use our skills of clinical integration."
+    },
+    {
+      "start": 1010.48,
+      "end": 1013.37,
+      "text": "So let's imagine we're doing our scan"
+    },
+    {
+      "start": 1013.37,
+      "end": 1014.81,
+      "text": "and we see a lot of bean lines"
+    },
+    {
+      "start": 1014.81,
+      "end": 1017.21,
+      "text": "and it's just over this area of the chest, right?"
+    },
+    {
+      "start": 1017.39,
+      "end": 1018.77,
+      "text": "It's just on the left side of the chest."
+    },
+    {
+      "start": 1019.48,
+      "end": 1019.98,
+      "text": "Well, that..."
+    },
+    {
+      "start": 1020.0,
+      "end": 1023.4,
+      "text": "It would be concerning that perhaps the patient has a focal pneumonia there, right?"
+    },
+    {
+      "start": 1023.5,
+      "end": 1026.46,
+      "text": "It's certainly something that's not widespread, it's in just one small area."
+    },
+    {
+      "start": 1026.84,
+      "end": 1029.8,
+      "text": "Similar it is if you had a chest X-ray and you saw no passing."
+    },
+    {
+      "start": 1030.0,
+      "end": 1033.38,
+      "text": "on the left side, you might say, oh, perhaps this patient is an ammonia."
+    },
+    {
+      "start": 1033.8,
+      "end": 1035.42,
+      "text": "We still need to use our clinical integration."
+    },
+    {
+      "start": 1035.83,
+      "end": 1039.23,
+      "text": "This patient have a fever, patient have a white count, how do their lungs sound?"
+    },
+    {
+      "start": 1039.78,
+      "end": 1039.98,
+      "text": "Are they..."
+    },
+    {
+      "start": 1040.03,
+      "end": 1042.74,
+      "text": "producing sputum. Again, clinical integration here is key."
+    },
+    {
+      "start": 1043.48,
+      "end": 1046.18,
+      "text": "Now similarly, if I looked and everywhere I placed the probe,"
+    },
+    {
+      "start": 1046.66,
+      "end": 1048.21,
+      "text": "I see b lines everywhere."
+    },
+    {
+      "start": 1048.78,
+      "end": 1049.98,
+      "text": "And maybe there's some small pearl of f***."
+    },
+    {
+      "start": 1050.06,
+      "end": 1050.96,
+      "text": "fusion of both sides."
+    },
+    {
+      "start": 1051.56,
+      "end": 1051.68,
+      "text": "Okay?"
+    },
+    {
+      "start": 1052.06,
+      "end": 1054.62,
+      "text": "Well now I'm thinking, well this is most likely to be pulmonary edema."
+    },
+    {
+      "start": 1054.76,
+      "end": 1059.74,
+      "text": "It's a diffuse process over both lungs and again in the right clinical setting."
+    },
+    {
+      "start": 1060.48,
+      "end": 1064.66,
+      "text": "I should be very, very concerned that perhaps the patient has pulmonary edema."
+    },
+    {
+      "start": 1065.16,
+      "end": 1067.92,
+      "text": "It's going to be all about the patterns of pathology that you find."
+    },
+    {
+      "start": 1068.8,
+      "end": 1069.96,
+      "text": "Now the last thing I'll say, especially..."
+    },
+    {
+      "start": 1070.0,
+      "end": 1074.5,
+      "text": "someone who works in the hospital is the key to clinical integration here is"
+    },
+    {
+      "start": 1074.79,
+      "end": 1077.63,
+      "text": "that you're going to have patients who are maybe a little bit sick maybe a"
+    },
+    {
+      "start": 1077.63,
+      "end": 1079.9,
+      "text": "little bit short of breath and you find a little"
+    },
+    {
+      "start": 1080.0,
+      "end": 1080.74,
+      "text": "bit of pathology."
+    },
+    {
+      "start": 1081.23,
+      "end": 1086.31,
+      "text": "The hard part for all of you is gaining enough experience to say, did I see enough pathology"
+    },
+    {
+      "start": 1086.31,
+      "end": 1089.53,
+      "text": "there to explain the level of illness that I'm seeing?"
+    },
+    {
+      "start": 1090.1,
+      "end": 1092.77,
+      "text": "Okay, my patient's on four liters nasal cannula,"
+    },
+    {
+      "start": 1092.97,
+      "end": 1096.48,
+      "text": "sat at 96%, and I saw a few B lines."
+    },
+    {
+      "start": 1097.34,
+      "end": 1099.97,
+      "text": "Is that enough to explain that level of hypoxia?"
+    },
+    {
+      "start": 1100.0,
+      "end": 1105.93,
+      "text": "me? Perhaps not, okay? And this is where again, when you're done today with watching this video,"
+    },
+    {
+      "start": 1106.09,
+      "end": 1109.87,
+      "text": "you're not ready to answer that question. You're going to need to get some practice and to do"
+    },
+    {
+      "start": 1110.0,
+      "end": 1114.7,
+      "text": "some scanning to start working on your clinical integration so you can feel much more confident"
+    },
+    {
+      "start": 1114.7,
+      "end": 1119.45,
+      "text": "that those few B lines didn't answer your clinical question, you need to look for what"
+    },
+    {
+      "start": 1119.45,
+      "end": 1119.93,
+      "text": "else could be."
+    },
+    {
+      "start": 1120.03,
+      "end": 1120.13,
+      "text": "You're going to have a lot of fun, you're going to have a lot of fun, you're going to have a lot of fun, you're going to have a lot of fun, you're going to have a lot of fun, you're going to have a lot of fun, you're going to have a lot of fun, you're going to have a lot of fun, you're going to have a lot of fun, you're going to have a lot of fun, you're going to have a lot of fun, you're going to have a lot of fun, you're going to have a lot of fun, you're going to have a lot of fun, you're going to have a lot of fun, you're going to have a lot of fun, you're going to have a lot of fun, you're going to have a lot of fun, you're going to have a lot of fun, you're going to have a lot of fun, you're going to have a lot of fun, you're going to have a lot of fun, you're going"
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "video_id": "Q9YU71NQMcg",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/Q9YU71NQMcg/asr.txt",
+  "segments": [
+    {
+      "start": 1.06,
+      "end": 5.02,
+      "text": "Today we're going to use the Clarius Ultrasound Scanner and we're going to be scanning Smudge"
+    },
+    {
+      "start": 5.02,
+      "end": 5.24,
+      "text": "here."
+    },
+    {
+      "start": 6.09,
+      "end": 9.97,
+      "text": "We're going to try and do her heart and I'm going to go into the..."
+    },
+    {
+      "start": 10.0,
+      "end": 15.34,
+      "text": "system and show you what we do. This is the whole scanner and this is an iPad that we use as our"
+    },
+    {
+      "start": 15.34,
+      "end": 19.05,
+      "text": "visualization station. We're going to go right into cardiac."
+    },
+    {
+      "start": 20.13,
+      "end": 22.89,
+      "text": "because we want the frame rates and the sector view."
+    },
+    {
+      "start": 25.22,
+      "end": 26.66,
+      "text": "We can write our notes here as well."
+    },
+    {
+      "start": 29.14,
+      "end": 29.72,
+      "text": "And here we are."
+    },
+    {
+      "start": 30.0,
+      "end": 33.17,
+      "text": "So we're gonna start the cardiac ultrasound on smudge"
+    },
+    {
+      "start": 33.17,
+      "end": 35.72,
+      "text": "and we're gonna start with the orientation"
+    },
+    {
+      "start": 35.72,
+      "end": 37.53,
+      "text": "towards her right side."
+    },
+    {
+      "start": 37.53,
+      "end": 39.13,
+      "text": "So I'm gonna place it down the hole here."
+    },
+    {
+      "start": 40.8,
+      "end": 42.96,
+      "text": "So we can see the heart there beating in the distance."
+    },
+    {
+      "start": 42.98,
+      "end": 45.04,
+      "text": "I'm going to enhance the image a little bit."
+    },
+    {
+      "start": 45.93,
+      "end": 46.91,
+      "text": "I'm going to change the depth."
+    },
+    {
+      "start": 48.08,
+      "end": 49.54,
+      "text": "Just select about where we want."
+    },
+    {
+      "start": 49.68,
+      "end": 49.980000000000004,
+      "text": "We just..."
+    },
+    {
+      "start": 50.0,
+      "end": 55.91,
+      "text": "drag it down. We see here. And I'm going to need some more information in that area. So I'm going"
+    },
+    {
+      "start": 55.91,
+      "end": 59.55,
+      "text": "to increase the gain a little. There we go."
+    },
+    {
+      "start": 60.99,
+      "end": 63.83,
+      "text": "She's a little excited, but she's being such a good girl."
+    },
+    {
+      "start": 70.03,
+      "end": 76.68,
+      "text": "Right now I'm just going to turn my probes that I have right on the right side and left"
+    },
+    {
+      "start": 76.68,
+      "end": 77.7,
+      "text": "on the left side."
+    },
+    {
+      "start": 80.93,
+      "end": 82.97,
+      "text": "And now this is more like a short axis view,"
+    },
+    {
+      "start": 82.99,
+      "end": 85.31,
+      "text": "which is fine, you can also get that from this side."
+    },
+    {
+      "start": 90.61,
+      "end": 98.08,
+      "text": "And if I move down a little bit, I'll get more of an apocovia down pothole and angle up and over."
+    },
+    {
+      "start": 101.82,
+      "end": 109.98,
+      "text": "gains more and you'll notice that this curve this tightly curved array probe or is also doubling as a phase"
+    },
+    {
+      "start": 110.0,
+      "end": 116.27,
+      "text": "to right. And I'm going to try and get more of a short axis for you. I'm going to go more"
+    },
+    {
+      "start": 116.27,
+      "end": 119.52,
+      "text": "up towards crainly, up towards your xilla."
+    },
+    {
+      "start": 121.47,
+      "end": 122.63,
+      "text": "and turn my probe."
+    }
+  ]
+}

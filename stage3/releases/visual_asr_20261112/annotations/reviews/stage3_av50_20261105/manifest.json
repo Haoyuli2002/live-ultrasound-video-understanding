@@ -1,0 +1,62 @@
+{
+  "version": "stage3_av50_v1",
+  "created_date": "2026-11-05",
+  "status": "reviewed_and_saved",
+  "language": "en",
+  "videos": 50,
+  "qa_total": 200,
+  "qa_per_video": 4,
+  "split_videos": {
+    "train": 40,
+    "eval": 10
+  },
+  "split_tasks": {
+    "train": 160,
+    "eval": 40
+  },
+  "qa_types": {
+    "current_observation": 50,
+    "history_recall": 50,
+    "temporal_comparison": 50,
+    "event_notification": 50
+  },
+  "response_groups": {
+    "immediate": 100,
+    "delayed": 100
+  },
+  "evidence_modalities": {
+    "audio": 100,
+    "video": 96,
+    "audio_video": 4
+  },
+  "lineage": {
+    "new_audio_grounded_question": 100,
+    "derived_from_visual_version": 100
+  },
+  "decision_samples": 515,
+  "answer_samples": 200,
+  "wait_samples": 315,
+  "total_audio_seconds": 11144.39,
+  "fresh_native_frames_opened": 328,
+  "audio_evidence_clips_crosschecked": 104,
+  "original_directory": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_batch",
+  "original_metadata_files_checked": 323,
+  "original_metadata_unchanged": true,
+  "limitations": [
+    "This is a mixed-modality collection, not 200 questions all requiring both modalities. All 100 immediate questions are audio-grounded; most delayed questions remain visual. Modality is therefore confounded with response group.",
+    "100 immediate questions are new; 100 delayed questions derive from existing visual annotations and were rechecked with audio context, including 4 joint audio-video revisions. Do not count shared videos/events as independent data when merging versions.",
+    "Audio verification used local ASR and same-model evidence-clip re-transcription, not direct listening. Transcription errors remain possible.",
+    "The assistant read full transcripts and had prior visual context. Review is self-review, not independent blind review. Only logged native frames were freshly opened.",
+    "One-second decision sampling cannot establish continuous persistence between observations or exact source-frame onset.",
+    "Question-only, subtitle, audio-only, color and edit-template ablations were not run. Annotation checks do not establish absence of shortcuts.",
+    "Full-video ASR is annotation-only and may contain future decoder context. For causal models, decode video/audio only up to current_time; rerun streaming/prefix ASR if ASR is an input.",
+    "This export does not modify the model, train a checkpoint, or add an audio encoder to a video-only Stage3 pipeline."
+  ],
+  "exports": [
+    "train_tasks.jsonl",
+    "eval_tasks.jsonl",
+    "train_samples.jsonl",
+    "eval_samples.jsonl",
+    "review.html"
+  ]
+}

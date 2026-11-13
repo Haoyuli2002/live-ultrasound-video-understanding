@@ -1,0 +1,308 @@
+{
+  "video_id": "mvqvDk0N0w0",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/mvqvDk0N0w0/asr.txt",
+  "segments": [
+    {
+      "start": 7.3,
+      "end": 11.68,
+      "text": "The pericapsular nerve group or peng block is an injection of local anaesthetic along"
+    },
+    {
+      "start": 11.68,
+      "end": 16.22,
+      "text": "the brim of the pelvis, designed to anesthetize the small, articular nerve fibers that"
+    },
+    {
+      "start": 16.22,
+      "end": 18.58,
+      "text": "innervate the anterior medial capsule and hip joint."
+    },
+    {
+      "start": 18.98,
+      "end": 23.56,
+      "text": "The idea behind this technique is that it provides good analgesia for hip pain and hip related"
+    },
+    {
+      "start": 23.56,
+      "end": 26.38,
+      "text": "procedures, while avoiding any motor block of the lower limb."
+    },
+    {
+      "start": 26.88,
+      "end": 30.48,
+      "text": "In this video, we'll discuss the anatomy and rationale for this block and go through"
+    },
+    {
+      "start": 30.48,
+      "end": 31.66,
+      "text": "the block technique in detail."
+    },
+    {
+      "start": 31.66,
+      "end": 36.58,
+      "text": "The Iliacus and Sois muscles originate in the pelvis and cross the brim of the pelvis"
+    },
+    {
+      "start": 36.58,
+      "end": 38.52,
+      "text": "to insert on the lesser trochanter."
+    },
+    {
+      "start": 38.94,
+      "end": 44.3,
+      "text": "If we remove these, we see the pelvic brim with two prominent humps, the Iliopubic eminence"
+    },
+    {
+      "start": 44.3,
+      "end": 46.64,
+      "text": "and the anterior inferior Iliac spine."
+    },
+    {
+      "start": 47.3,
+      "end": 49.38,
+      "text": "These will be important sonographic landmarks."
+    },
+    {
+      "start": 49.74,
+      "end": 53.78,
+      "text": "The ingotal ligament stretches from the anterior superior Iliac spine to the pubic"
+    },
+    {
+      "start": 53.78,
+      "end": 57.9,
+      "text": "tubercle, and within this compartment we find the femoral vessels and the Iliacus muscle"
+    },
+    {
+      "start": 57.9,
+      "end": 58.72,
+      "text": "and sois tendon."
+    },
+    {
+      "start": 58.72,
+      "end": 63.16,
+      "text": "The femoral nerve is here, too, and we want to avoid blocking that to prevent quads"
+    },
+    {
+      "start": 63.16,
+      "end": 63.44,
+      "text": "weakness."
+    },
+    {
+      "start": 64.24,
+      "end": 68.24,
+      "text": "Instead, we're going to focus on several smaller nerves that supply the hip joint."
+    },
+    {
+      "start": 68.66,
+      "end": 72.7,
+      "text": "First, we have the articular branches of the femoral that take off proximal to the"
+    },
+    {
+      "start": 72.7,
+      "end": 75.5,
+      "text": "inglittle ligament and run deep to the iliacus muscle."
+    },
+    {
+      "start": 76.74,
+      "end": 81.14,
+      "text": "In our ticketer branch of the obtrator travels laterally from the obtrator for raiman, and"
+    },
+    {
+      "start": 81.14,
+      "end": 85.22,
+      "text": "the accessory obtrator nerve travels over the pelvic brim from the medioside."
+    },
+    {
+      "start": 85.22,
+      "end": 89.62,
+      "text": "acid. All of these contribute sensory fibers to the capsule and articular structures."
+    },
+    {
+      "start": 90.97,
+      "end": 95.33,
+      "text": "During a peng block, a needle is advanced from the lateral aspect and contact is made"
+    },
+    {
+      "start": 95.33,
+      "end": 99.87,
+      "text": "with the superior pubic ramus, just lateral to the sewage tendon. Could average studies"
+    },
+    {
+      "start": 99.87,
+      "end": 104.67,
+      "text": "have shown that injectate here will spread along the pelvic brim, as well as in a caudal"
+    },
+    {
+      "start": 104.67,
+      "end": 109.56,
+      "text": "direction along the joint capsule. Note that the iliacus muscle separates the injection"
+    },
+    {
+      "start": 109.56,
+      "end": 114.16,
+      "text": "point from the femoral nerve, so no motor fibers are blocked with this technique, provided"
+    },
+    {
+      "start": 114.16,
+      "end": 118.99,
+      "text": "the local anesthetic is deposited deep to the muscle. The ultrasound probe is placed over"
+    },
+    {
+      "start": 118.99,
+      "end": 124.37,
+      "text": "the angular crease as pictured here in the same orientation as the crease. This should result"
+    },
+    {
+      "start": 124.37,
+      "end": 129.65,
+      "text": "in an ultrasound image like this. Here we see the superior pubic ramus, with the iliopubic"
+    },
+    {
+      "start": 129.65,
+      "end": 135.05,
+      "text": "eminence rising on the medial side, and the anterior inferior iliac spine rising on the lateral."
+    },
+    {
+      "start": 135.65,
+      "end": 141.8,
+      "text": "We can clearly see the iliacus muscle and the sois tendon. Sometimes the bony anatomy is not"
+    },
+    {
+      "start": 141.8,
+      "end": 147.3,
+      "text": "immediately obvious. And there are two maneuvers to get to the right spot. First, slide the probe"
+    },
+    {
+      "start": 147.3,
+      "end": 152.33,
+      "text": "distally along the thigh until the spherical head of the femur is visualized. From there,"
+    },
+    {
+      "start": 152.49,
+      "end": 157.35,
+      "text": "it's a very slight tilt or shift back cephalad to get to the pubic ramus. Alternatively,"
+    },
+    {
+      "start": 157.89,
+      "end": 163.85,
+      "text": "if the ASIS is easily palpable, you can start by scanning for that bony landmark and then following"
+    },
+    {
+      "start": 163.85,
+      "end": 170.87,
+      "text": "the pelvic brim in an inferior medial direction. A needle is advanced from the lateral aspect until"
+    },
+    {
+      "start": 170.87,
+      "end": 176.43,
+      "text": "contact with the pubic ramus is made just lateral to the sewage tendon. A small injection of saline"
+    },
+    {
+      "start": 176.43,
+      "end": 181.31,
+      "text": "is administered to confirm the needle tip is not intramuscular or in the tendon. Following this,"
+    },
+    {
+      "start": 181.73,
+      "end": 187.01,
+      "text": "a total of 15-20 mills of dilute local anaesthetic are administered. These are small nerves,"
+    },
+    {
+      "start": 187.53,
+      "end": 190.81,
+      "text": "and you don't need highly concentrated local anaesthetic to get a good effect."
+    },
+    {
+      "start": 192.03,
+      "end": 196.79,
+      "text": "How does the pang stack up? Well, while it's a relatively new technique, it seems to provide"
+    },
+    {
+      "start": 196.79,
+      "end": 202.93,
+      "text": "roughly the same analgesic value as the super inguinal fasciiliacoblock, making it an attractive"
+    },
+    {
+      "start": 202.93,
+      "end": 208.91,
+      "text": "option for analgesia following hip fracture and for procedures such as hip arthroplasty and arthroscopy."
+    },
+    {
+      "start": 209.39,
+      "end": 214.09,
+      "text": "It's an easy block to teach and learn, particularly because the endpoint is bony contact,"
+    },
+    {
+      "start": 214.45,
+      "end": 219.96,
+      "text": "rather than a nuanced intermosquiter fascioplane. Here are some peng block tips. First,"
+    },
+    {
+      "start": 220.4,
+      "end": 225.12,
+      "text": "in many slim patients, a linear transducer is sufficient to visualize a sonoeonatomy. However,"
+    },
+    {
+      "start": 225.12,
+      "end": 229.8,
+      "text": "a curved transducer is preferable, as it allows for a wider field of view including the"
+    },
+    {
+      "start": 230.32,
+      "end": 233.54,
+      "text": "AIIS, the IPE, and the femoral vessels and nerve."
+    },
+    {
+      "start": 234.66,
+      "end": 238.7,
+      "text": "Often when first attempting to inject, there can be a lot of resistance, and this can be"
+    },
+    {
+      "start": 238.7,
+      "end": 242.72,
+      "text": "due to the needle tip being tightly opposed to the periostium or the seos tendon."
+    },
+    {
+      "start": 243.32,
+      "end": 247.54,
+      "text": "Withdrawing the needle very slightly often relieves its resistance and allows the injectate"
+    },
+    {
+      "start": 247.54,
+      "end": 249.0,
+      "text": "to flow under the muscle."
+    },
+    {
+      "start": 250.03,
+      "end": 253.35,
+      "text": "On the flip side, make sure the needle tip is truly deep to the muscle."
+    },
+    {
+      "start": 253.35,
+      "end": 260.23,
+      "text": "The occasional reports of quads weakness following Pang block seem to correspond to an inadvertent intramuscular injection."
+    },
+    {
+      "start": 260.81,
+      "end": 266.03,
+      "text": "This is another reason to use dilute local anesthetic just in case some local ends up within the muscle itself."
+    },
+    {
+      "start": 266.78,
+      "end": 271.62,
+      "text": "Finally, unlike the fascia iliaca block, the Pang provides no analgesia to the skin of the thigh."
+    },
+    {
+      "start": 272.06,
+      "end": 277.0,
+      "text": "For hip surgery, we'll combine the Pang with a lateral femoral cataneous nerve block to provide skin coverage."
+    },
+    {
+      "start": 277.38,
+      "end": 282.36,
+      "text": "It's nice to be able to address the bony pain and the cataneous pain without any muscle weakness."
+    }
+  ]
+}

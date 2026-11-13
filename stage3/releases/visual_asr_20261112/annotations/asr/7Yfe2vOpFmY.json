@@ -1,0 +1,818 @@
+{
+  "video_id": "7Yfe2vOpFmY",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/7Yfe2vOpFmY/asr.txt",
+  "segments": [
+    {
+      "start": 1.73,
+      "end": 9.66,
+      "text": "Okay, well, we're going to dive right into ultrasound physics and instrumentation and while this may not be the most"
+    },
+    {
+      "start": 10.0,
+      "end": 16.23,
+      "text": "sighting topic to start off with, I assure you it is foundational to apply ultrasound clinically."
+    },
+    {
+      "start": 16.81,
+      "end": 19.97,
+      "text": "And even though physics is in the title of the present tape,"
+    },
+    {
+      "start": 20.0,
+      "end": 21.8,
+      "text": "Do not let that frighten you."
+    },
+    {
+      "start": 22.08,
+      "end": 27.74,
+      "text": "In classic MedCram style, we will break down the concepts so that they are easy for you to understand."
+    },
+    {
+      "start": 28.37,
+      "end": 29.97,
+      "text": "In this course, we are going to..."
+    },
+    {
+      "start": 30.0,
+      "end": 36.48,
+      "text": "final ultrasound. We will discuss basic ultrasound physics. We'll touch on ultrasound biosafety in the"
+    },
+    {
+      "start": 36.48,
+      "end": 39.63,
+      "text": "a Lara Principle, we will discover different ultrasound"
+    },
+    {
+      "start": 40.03,
+      "end": 44.83,
+      "text": "doosers and their applications. We will look at ultrasound orientation and"
+    },
+    {
+      "start": 44.83,
+      "end": 49.73,
+      "text": "common ultrasound terminology. We will explore ultrasound nabology or the"
+    },
+    {
+      "start": 50.0,
+      "end": 55.1,
+      "text": "knobs and controls that you need to know on the ultrasound machine. We will look"
+    },
+    {
+      "start": 55.1,
+      "end": 59.88,
+      "text": "at the ultrasound modes. We'll discuss ultrasound artifacts and we'll"
+    },
+    {
+      "start": 60.03,
+      "end": 65.15,
+      "text": "going to show up with a step-by-step guide on how to perform an exam on a patient."
+    },
+    {
+      "start": 66.0,
+      "end": 68.1,
+      "text": "Let's start off by defining ultrasound."
+    },
+    {
+      "start": 68.89,
+      "end": 69.97,
+      "text": "And if this line..."
+    },
+    {
+      "start": 70.0,
+      "end": 77.26,
+      "text": "represents all of the possible audio frequencies that exist, then a portion of those frequencies"
+    },
+    {
+      "start": 77.26,
+      "end": 79.94,
+      "text": "are audible or those that"
+    },
+    {
+      "start": 80.06,
+      "end": 88.32,
+      "text": "be heard by the human ear. And this is said to be 20 hurts to 20,000 hurts. Well then everything"
+    },
+    {
+      "start": 88.32,
+      "end": 89.9,
+      "text": "below the hearing."
+    },
+    {
+      "start": 90.0,
+      "end": 99.61,
+      "text": "threshold is said to be infra sound or subsonic. Then everything above the hearing threshold"
+    },
+    {
+      "start": 100.06,
+      "end": 102.86,
+      "text": "is said to be ultra sound."
+    },
+    {
+      "start": 104.05,
+      "end": 107.07,
+      "text": "So ultra sound is simply sound waves"
+    },
+    {
+      "start": 107.07,
+      "end": 109.19,
+      "text": "that are above the hearing threshold."
+    },
+    {
+      "start": 109.76,
+      "end": 109.98,
+      "text": "And..."
+    },
+    {
+      "start": 110.0,
+      "end": 119.85,
+      "text": "Magnastic medical ultrasound the frequency ranges typically are 1 to 20 plus megahertz that are being used"
+    },
+    {
+      "start": 120.0,
+      "end": 125.29,
+      "text": "Before we dive into ultrasound physics, I want to briefly explain how an ultrasound"
+    },
+    {
+      "start": 125.29,
+      "end": 126.15,
+      "text": "machine works."
+    },
+    {
+      "start": 126.86,
+      "end": 129.98,
+      "text": "And while you may not be familiar with an ultrasound machine you're like..."
+    },
+    {
+      "start": 130.06,
+      "end": 135.08,
+      "text": "familiar with the speaker. And since they both generate sound waves, it provides a good example."
+    },
+    {
+      "start": 135.54,
+      "end": 139.97,
+      "text": "The speaker uses electrical energy in the electrical wave"
+    },
+    {
+      "start": 140.0,
+      "end": 142.78,
+      "text": "that travel through the speaker cable,"
+    },
+    {
+      "start": 142.86,
+      "end": 145.9,
+      "text": "cause the speaker to pump in and out."
+    },
+    {
+      "start": 146.38,
+      "end": 149.0,
+      "text": "This generates sound waves in the air."
+    },
+    {
+      "start": 150.0,
+      "end": 154.88,
+      "text": "than heard by the human ear. Well, similarly, the ultrasound machine uses electrical"
+    },
+    {
+      "start": 154.88,
+      "end": 159.78,
+      "text": "energy. Electrical waves generated by the ultrasound machine traveled down"
+    },
+    {
+      "start": 160.0,
+      "end": 165.26,
+      "text": "the transducer cable into the transducer, and the transducer produces sound waves."
+    },
+    {
+      "start": 168.24,
+      "end": 169.96,
+      "text": "But in this case, some of the"
+    },
+    {
+      "start": 170.0,
+      "end": 177.84,
+      "text": "These sound waves reflect off of the patient's tissues and are transmitted back to the transducer."
+    },
+    {
+      "start": 178.57,
+      "end": 179.97,
+      "text": "The transducer then at the..."
+    },
+    {
+      "start": 180.1,
+      "end": 189.98,
+      "text": "This point converts the sound waves that it's receiving back into electrical energy, which is then processed to form a visual image."
+    },
+    {
+      "start": 190.0,
+      "end": 194.9,
+      "text": "on the ultrasound machine. So let's look at this another way. You have your"
+    },
+    {
+      "start": 194.9,
+      "end": 199.53,
+      "text": "ultrasound transducer in your patient. The ultrasound transducer generates a"
+    },
+    {
+      "start": 199.53,
+      "end": 199.97,
+      "text": "sound with"
+    },
+    {
+      "start": 200.0,
+      "end": 209.58,
+      "text": "It's transmitted through the patient's tissues reflected back to the transducer and then those returning sound waves or those returning"
+    },
+    {
+      "start": 210.06,
+      "end": 213.58,
+      "text": "are processed to form a single scan line."
+    },
+    {
+      "start": 214.07,
+      "end": 216.21,
+      "text": "Now there's a few components of the scan line"
+    },
+    {
+      "start": 216.21,
+      "end": 219.13,
+      "text": "that I'd like to discuss in one is depth."
+    },
+    {
+      "start": 220.0,
+      "end": 225.82,
+      "text": "depth is a function of distance to the ultrasound machine, meaning the longer that it takes to"
+    },
+    {
+      "start": 226.46,
+      "end": 229.08,
+      "text": "return to the ultrasound machine means"
+    },
+    {
+      "start": 230.0,
+      "end": 235.36,
+      "text": "it had to penetrate deeper into the tissues and the ultrasound machine knows to place"
+    },
+    {
+      "start": 235.36,
+      "end": 239.87,
+      "text": "those returning echoes deep in the scan line. Conversely,"
+    },
+    {
+      "start": 240.16,
+      "end": 242.74,
+      "text": "The more shallow that the ultrasound wave"
+    },
+    {
+      "start": 242.74,
+      "end": 245.56,
+      "text": "must penetrate and reflect back."
+    },
+    {
+      "start": 246.12,
+      "end": 247.78,
+      "text": "A less time it takes to return"
+    },
+    {
+      "start": 247.78,
+      "end": 249.96,
+      "text": "and therefore the ultrasound machine..."
+    },
+    {
+      "start": 250.06,
+      "end": 253.0,
+      "text": "Knows to place that more shallow on the scan line."
+    },
+    {
+      "start": 253.57,
+      "end": 256.65,
+      "text": "The second component that you'll notice is the brightness."
+    },
+    {
+      "start": 257.31,
+      "end": 259.97,
+      "text": "And think of the brightness as the volume."
+    },
+    {
+      "start": 260.0,
+      "end": 265.01,
+      "text": "volume of the returning echo, if you will, or the intensity of the returning echo."
+    },
+    {
+      "start": 265.45,
+      "end": 268.73,
+      "text": "The louder the returning echo, the brighter it will appear."
+    },
+    {
+      "start": 269.27,
+      "end": 269.97,
+      "text": "The quieter..."
+    },
+    {
+      "start": 270.0,
+      "end": 276.22,
+      "text": "the returning echo, a less bright it will appear. So a more intense returning echo will appear"
+    },
+    {
+      "start": 276.22,
+      "end": 279.98,
+      "text": "brighter and a less intense returning echo will appear darker."
+    },
+    {
+      "start": 280.03,
+      "end": 288.33,
+      "text": "This same process happens again to form another skin line, and this repeats in a sequential"
+    },
+    {
+      "start": 288.33,
+      "end": 289.81,
+      "text": "fashion to form."
+    },
+    {
+      "start": 290.06,
+      "end": 296.24,
+      "text": "a 2D image. Now, on this 2D image, you can pick out the individual scan lines."
+    },
+    {
+      "start": 296.86,
+      "end": 299.98,
+      "text": "That's because it's an old ultrasound image of a fetal"
+    },
+    {
+      "start": 300.0,
+      "end": 305.37,
+      "text": "But in modern ultrasound images, you will no longer be able to see the individual scan lines"
+    },
+    {
+      "start": 305.37,
+      "end": 308.83,
+      "text": "that will appear as a homogenous 2D image."
+    },
+    {
+      "start": 310.0,
+      "end": 312.56,
+      "text": "image is still generated in the same fashion."
+    },
+    {
+      "start": 313.86,
+      "end": 318.42,
+      "text": "So now that we understand how an ultrasound machine works, let's return to our discussion"
+    },
+    {
+      "start": 318.42,
+      "end": 319.8,
+      "text": "of ultrasound physics."
+    },
+    {
+      "start": 320.06,
+      "end": 327.41,
+      "text": "As we touched on before, as the speaker pumps in and out, it generates sound waves."
+    },
+    {
+      "start": 328.02,
+      "end": 329.3,
+      "text": "Well, how does it really do this?"
+    },
+    {
+      "start": 330.16,
+      "end": 334.24,
+      "text": "Well, as it pumps out, it compresses air molecules."
+    },
+    {
+      "start": 336.5,
+      "end": 339.98,
+      "text": "In these areas of highly compressed air molecules are called..."
+    },
+    {
+      "start": 340.16,
+      "end": 349.61,
+      "text": "compressions. And as it goes back in, it creates this vacuum effect, and there is areas of low pressure."
+    },
+    {
+      "start": 350.32,
+      "end": 351.76,
+      "text": "called rare fractions."
+    },
+    {
+      "start": 354.36,
+      "end": 357.26,
+      "text": "And with this alternating in-out movement,"
+    },
+    {
+      "start": 357.81,
+      "end": 359.91,
+      "text": "it creates alternating compressions."
+    },
+    {
+      "start": 360.03,
+      "end": 366.62,
+      "text": "in rare fractions. And for this course we will illustrate compressions as a sound wave like"
+    },
+    {
+      "start": 367.33,
+      "end": 369.98,
+      "text": "like this, in the space in between them."
+    },
+    {
+      "start": 370.0,
+      "end": 377.17,
+      "text": "as rare fractions. So for us to discuss the characteristics of a sound wave, it's much easier"
+    },
+    {
+      "start": 377.17,
+      "end": 379.97,
+      "text": "to depict the compressions as..."
+    },
+    {
+      "start": 380.0,
+      "end": 386.14,
+      "text": "peaks on a sine wave in the rare fractions as troughs on a sine wave, although we understand"
+    },
+    {
+      "start": 386.14,
+      "end": 388.36,
+      "text": "that a sound wave is not a sine wave."
+    },
+    {
+      "start": 389.21,
+      "end": 389.97,
+      "text": "But the first character..."
+    },
+    {
+      "start": 390.1,
+      "end": 392.94,
+      "text": "characteristic of a sound wave we want to discuss is the wavelength."
+    },
+    {
+      "start": 394.61,
+      "end": 399.97,
+      "text": "In the wavelength is the distance between a peak and a peak in a trough and a trough."
+    },
+    {
+      "start": 400.03,
+      "end": 407.93,
+      "text": "And similarly the time between a peak and a peak and a trough and a trough is called a period."
+    },
+    {
+      "start": 408.6,
+      "end": 409.92,
+      "text": "So wavelength is a function"
+    },
+    {
+      "start": 410.0,
+      "end": 413.9,
+      "text": "of distance and period is a function of time."
+    },
+    {
+      "start": 414.64,
+      "end": 417.46,
+      "text": "The next characteristics we'll see is the amplitude."
+    },
+    {
+      "start": 418.7,
+      "end": 419.96,
+      "text": "An amplitude..."
+    },
+    {
+      "start": 420.06,
+      "end": 424.0,
+      "text": "is the height of the peak of a sound wave,"
+    },
+    {
+      "start": 424.38,
+      "end": 427.59,
+      "text": "or how high pressure the compression is."
+    },
+    {
+      "start": 428.38,
+      "end": 429.88,
+      "text": "This is the loudness we're in."
+    },
+    {
+      "start": 430.06,
+      "end": 435.82,
+      "text": "the intensity of the sound. So, the higher the amplitude, the louder the sound, or the"
+    },
+    {
+      "start": 435.82,
+      "end": 439.78,
+      "text": "more intense the sound, the lower the amplitude, the less intense."
+    },
+    {
+      "start": 440.13,
+      "end": 448.98,
+      "text": "the sound is. And then lastly we'll look at frequency. And frequency is how many sound waves"
+    },
+    {
+      "start": 448.98,
+      "end": 449.84,
+      "text": "Travel Path."
+    },
+    {
+      "start": 450.03,
+      "end": 454.93,
+      "text": "a certain point in a certain period of time, and frequency is measured in"
+    },
+    {
+      "start": 454.93,
+      "end": 459.86,
+      "text": "hertz, and hertz are cycles per second. So the"
+    },
+    {
+      "start": 460.0,
+      "end": 467.28,
+      "text": "more waves that pass a given point in a second, the higher the frequency, the less sound waves"
+    },
+    {
+      "start": 467.28,
+      "end": 469.56,
+      "text": "that pass, a given point in a second."
+    },
+    {
+      "start": 470.06,
+      "end": 476.56,
+      "text": "lower the frequency. Okay, well to make sure we understand these characteristics of sound waves,"
+    },
+    {
+      "start": 476.8,
+      "end": 479.98,
+      "text": "I want to do a few examples. So we're going to compare..."
+    },
+    {
+      "start": 480.0,
+      "end": 485.76,
+      "text": "these various sound waves. And if we compare the top wave to the middle wave, we'll notice"
+    },
+    {
+      "start": 485.76,
+      "end": 489.6,
+      "text": "The wave length of the top wave is"
+    },
+    {
+      "start": 490.1,
+      "end": 496.67,
+      "text": "longer compared with the wavelength of the middle wave. Therefore, since the wavelength is longer,"
+    },
+    {
+      "start": 496.67,
+      "end": 499.68,
+      "text": "the frequency is going to be lower."
+    },
+    {
+      "start": 500.51,
+      "end": 505.55,
+      "text": "And therefore, the pitch of this sound wave on top will be lower than the middle wave."
+    },
+    {
+      "start": 506.46,
+      "end": 509.84,
+      "text": "We look at the amplitude, the amplitude of the top wave."
+    },
+    {
+      "start": 510.06,
+      "end": 512.4,
+      "text": "compared to the middle wave, however, is lower."
+    },
+    {
+      "start": 513.26,
+      "end": 516.58,
+      "text": "Therefore, the volume or the amplitude of the top wave"
+    },
+    {
+      "start": 516.58,
+      "end": 519.74,
+      "text": "will be quieter than the volume or amplitude."
+    },
+    {
+      "start": 520.19,
+      "end": 528.1,
+      "text": "the middle sound wave. And the bottom wave has an even longer wave length therefore a lower frequency"
+    },
+    {
+      "start": 528.1,
+      "end": 529.71,
+      "text": "And it also has"
+    },
+    {
+      "start": 530.03,
+      "end": 533.9,
+      "text": "a lower amplitude than both the above waves."
+    },
+    {
+      "start": 534.67,
+      "end": 537.05,
+      "text": "So therefore, it will be lower in quieter."
+    },
+    {
+      "start": 538.17,
+      "end": 539.97,
+      "text": "And if you look at this, you'll know"
+    },
+    {
+      "start": 540.0,
+      "end": 549.7,
+      "text": "notice a key concept that frequency is inversely proportional wavelength, meaning"
+    },
+    {
+      "start": 550.03,
+      "end": 552.43,
+      "text": "the bigger the wavelength, the lower the frequency,"
+    },
+    {
+      "start": 553.18,
+      "end": 556.52,
+      "text": "and the smaller the wavelength, the higher the frequency."
+    },
+    {
+      "start": 557.88,
+      "end": 559.56,
+      "text": "So what does this have to do with diagnostic?"
+    },
+    {
+      "start": 560.13,
+      "end": 568.26,
+      "text": "medical ultrasound? Well, it primarily boils down to these concepts of resolution versus penetration."
+    },
+    {
+      "start": 568.86,
+      "end": 569.98,
+      "text": "Now, resolution simple..."
+    },
+    {
+      "start": 570.03,
+      "end": 575.65,
+      "text": "how pretty your picture is, how defined in detail the ultrasound image is."
+    },
+    {
+      "start": 576.19,
+      "end": 579.97,
+      "text": "Penetration simply is how deep the ultrasound wave is a"
+    },
+    {
+      "start": 580.03,
+      "end": 584.41,
+      "text": "able to penetrate into the patient's body and therefore generate an image."
+    },
+    {
+      "start": 585.05,
+      "end": 589.75,
+      "text": "And these things are primarily a function of frequency, as you increase"
+    },
+    {
+      "start": 590.0,
+      "end": 599.01,
+      "text": "the frequency, you improve the resolution, and as you decrease the frequency, you decrease"
+    },
+    {
+      "start": 599.01,
+      "end": 599.97,
+      "text": "The Result."
+    },
+    {
+      "start": 600.0,
+      "end": 602.32,
+      "text": "solution, or the resolution gets poorer."
+    },
+    {
+      "start": 603.07,
+      "end": 604.87,
+      "text": "Now the converse is true of penetration."
+    },
+    {
+      "start": 605.86,
+      "end": 609.82,
+      "text": "As you increase the frequency, you decrease your ability."
+    },
+    {
+      "start": 610.0,
+      "end": 616.49,
+      "text": "to penetrate into the tissue. In the opposite is true, where you decrease your frequency,"
+    },
+    {
+      "start": 616.49,
+      "end": 619.93,
+      "text": "you actually increase your ability to penetrate."
+    },
+    {
+      "start": 620.0,
+      "end": 626.52,
+      "text": "into the tissue. Now, if this doesn't make sense or seem to abstract, let me give you two illustrations."
+    },
+    {
+      "start": 627.06,
+      "end": 629.6,
+      "text": "What is in photography? In the age of"
+    },
+    {
+      "start": 630.0,
+      "end": 635.6,
+      "text": "smartphones all having cameras, many people know that the cameras resolution is"
+    },
+    {
+      "start": 635.6,
+      "end": 639.98,
+      "text": "rated in megapixels. So the higher the megapixel on your camera"
+    },
+    {
+      "start": 640.0,
+      "end": 643.76,
+      "text": "the better the resolution is, or the prettier the picture will be."
+    },
+    {
+      "start": 644.21,
+      "end": 649.81,
+      "text": "But as you know, if the object you are trying to take a picture of is a far distance away"
+    },
+    {
+      "start": 650.0,
+      "end": 656.97,
+      "text": "your resolution decreases. You've all zoomed in on your smartphone when the object is far away"
+    },
+    {
+      "start": 656.97,
+      "end": 659.97,
+      "text": "and the picture gets all grainy and you can't see it."
+    },
+    {
+      "start": 660.0,
+      "end": 666.68,
+      "text": "as well. It's because the better the resolution is when the object is closer to you."
+    },
+    {
+      "start": 666.68,
+      "end": 669.53,
+      "text": "or another illustration would be in music."
+    },
+    {
+      "start": 670.0,
+      "end": 675.46,
+      "text": "all driven by a stadium concert and when you're half a mile a mile away from"
+    },
+    {
+      "start": 675.46,
+      "end": 679.94,
+      "text": "that concert, you can actually hear the bass. You don't hear"
+    },
+    {
+      "start": 680.0,
+      "end": 684.48,
+      "text": "Here any of the rest of the music, you just hear those very low frequencies."
+    },
+    {
+      "start": 684.92,
+      "end": 689.76,
+      "text": "Because those low frequencies, those large wavelengths, can travel."
+    },
+    {
+      "start": 690.0,
+      "end": 692.66,
+      "text": "a long distance they can penetrate very well."
+    },
+    {
+      "start": 693.14,
+      "end": 694.3,
+      "text": "But they're not well defined."
+    },
+    {
+      "start": 694.78,
+      "end": 697.7,
+      "text": "You can't hear the detail of the low frequency,"
+    },
+    {
+      "start": 698.16,
+      "end": 699.96,
+      "text": "where if you were to go into that..."
+    },
+    {
+      "start": 700.13,
+      "end": 705.55,
+      "text": "stadium, and put your ear right up against the speaker, it would be the high frequencies"
+    },
+    {
+      "start": 705.55,
+      "end": 709.98,
+      "text": "that pierce your ear, because they're very well-defined, but they..."
+    },
+    {
+      "start": 710.0,
+      "end": 712.06,
+      "text": "cannot travel a far distance."
+    },
+    {
+      "start": 713.14,
+      "end": 716.22,
+      "text": "All right, well that wraps up how an ultrasound machine works"
+    },
+    {
+      "start": 716.22,
+      "end": 718.7,
+      "text": "and the basics of ultrasound physics."
+    },
+    {
+      "start": 719.51,
+      "end": 719.73,
+      "text": "Next."
+    }
+  ]
+}

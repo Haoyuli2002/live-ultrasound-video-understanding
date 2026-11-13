@@ -1,0 +1,593 @@
+{
+  "video_id": "cKdioYlocUE",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/cKdioYlocUE/asr.txt",
+  "segments": [
+    {
+      "start": 1.79,
+      "end": 9.97,
+      "text": "Here a sacrocytic nerve block is a proximal approach to the"
+    },
+    {
+      "start": 10.0,
+      "end": 14.68,
+      "text": "psionic that is well suited for a variety of surgical procedures on the lower limb, including hip surgery."
+    },
+    {
+      "start": 15.0,
+      "end": 19.98,
+      "text": "Because it's performed immediately after the nerve exits the pelvis, it can actually be considered a block of the..."
+    },
+    {
+      "start": 20.19,
+      "end": 24.57,
+      "text": "higher sacral plexus. It's a powerful technique, and in this video we'll discuss the anatomy,"
+    },
+    {
+      "start": 24.89,
+      "end": 29.12,
+      "text": "sonoe anatomy, and technique for performing the parasacral sciatic nerve block. The sciatic"
+    },
+    {
+      "start": 29.12,
+      "end": 29.98,
+      "text": "nervous to arrive from"
+    },
+    {
+      "start": 30.0,
+      "end": 35.93,
+      "text": "the vental ramie of L4, L5, as well as S1, 2, and 3. These combine to form a single large"
+    },
+    {
+      "start": 35.93,
+      "end": 39.85,
+      "text": "nerve that then leaves the pelvis to the greater sciatic foramen, before continuing"
+    },
+    {
+      "start": 40.0,
+      "end": 44.69,
+      "text": "down the posterior thigh. If we take away the gluteus maximus muscle, we see the sadic"
+    },
+    {
+      "start": 44.69,
+      "end": 49.82,
+      "text": "nerve emerges from the pelvis here, deep to the piriformus muscle. This crescent-shaped"
+    },
+    {
+      "start": 49.82,
+      "end": 49.96,
+      "text": "."
+    },
+    {
+      "start": 49.96,
+      "end": 49.98,
+      "text": "."
+    },
+    {
+      "start": 50.03,
+      "end": 53.91,
+      "text": "Bony rim is the greater satic notch, and it'll be an important sonographic landmark."
+    },
+    {
+      "start": 54.33,
+      "end": 58.91,
+      "text": "First, however, we'll place the probe at a 45-degree angle further cephalize that we can visualize"
+    },
+    {
+      "start": 58.91,
+      "end": 59.97,
+      "text": "the continuous line of..."
+    },
+    {
+      "start": 60.03,
+      "end": 61.99,
+      "text": "the ala and the overlying gluteal muscles."
+    },
+    {
+      "start": 62.33,
+      "end": 66.59,
+      "text": "We then slide directly south until we find a breach in that continuous line."
+    },
+    {
+      "start": 66.89,
+      "end": 69.97,
+      "text": "This represents the sadic notch, and we can see both the sadic..."
+    },
+    {
+      "start": 70.0,
+      "end": 72.08,
+      "text": "nerve and the pelvic viscera deep to the notch."
+    },
+    {
+      "start": 72.46,
+      "end": 73.68,
+      "text": "Let's have a closer look at that."
+    },
+    {
+      "start": 73.86,
+      "end": 78.24,
+      "text": "With the pro-positioned over the sadic notch, we see the convex portion of ilium and the pelvic"
+    },
+    {
+      "start": 78.24,
+      "end": 79.98,
+      "text": "fascia inferior and medial t…"
+    },
+    {
+      "start": 80.1,
+      "end": 80.22,
+      "text": "That."
+    },
+    {
+      "start": 80.8,
+      "end": 84.54,
+      "text": "Superficially, we see two muscles, the glutes and the piriformis muscle, which directly"
+    },
+    {
+      "start": 84.54,
+      "end": 86.26,
+      "text": "overlies the notch at this level."
+    },
+    {
+      "start": 86.52,
+      "end": 89.98,
+      "text": "Immediately deep to the piriformis is a sciatic nerve, a ten-centimeter-"
+    },
+    {
+      "start": 90.0,
+      "end": 92.44,
+      "text": "block needle will be advanced from lateral to medial."
+    },
+    {
+      "start": 92.89,
+      "end": 96.39,
+      "text": "Now the parasacrocytic is actually a block of the sacroplexis."
+    },
+    {
+      "start": 96.65,
+      "end": 97.39,
+      "text": "What does that get us?"
+    },
+    {
+      "start": 97.61,
+      "end": 99.97,
+      "text": "Well, for starters, the superior and inferior-"
+    },
+    {
+      "start": 100.0,
+      "end": 104.02,
+      "text": "nerve, which innervate the gluteal muscles and the tensor fascia lata muscle. Here we"
+    },
+    {
+      "start": 104.02,
+      "end": 108.25,
+      "text": "see both of those nerves in green. We also get the pedendal nerve. We can see in this"
+    },
+    {
+      "start": 108.25,
+      "end": 109.97,
+      "text": "illustration that the pedendal nerve is quite..."
+    },
+    {
+      "start": 110.19,
+      "end": 111.83,
+      "text": "close to the saddock as they exit the pelvis."
+    },
+    {
+      "start": 112.17,
+      "end": 114.89,
+      "text": "This will anesthetize the perineum in the external genitalia,"
+    },
+    {
+      "start": 115.05,
+      "end": 116.81,
+      "text": "not a region where aiming to block specifically"
+    },
+    {
+      "start": 116.81,
+      "end": 119.63,
+      "text": "with this technique, but good to warn the patient what to expect."
+    },
+    {
+      "start": 120.03,
+      "end": 124.39,
+      "text": "We'll also expect to anesthetize the posterior femoral cataneous nerve, which is advantageous"
+    },
+    {
+      "start": 124.39,
+      "end": 127.65,
+      "text": "because other more distal approaches to the saddock frequently miss this."
+    },
+    {
+      "start": 127.89,
+      "end": 129.97,
+      "text": "If you want to do an awake above the knee amputation..."
+    },
+    {
+      "start": 130.0,
+      "end": 134.28,
+      "text": "it's nice to not have to block this separately. And then, obviously, we are aiming to block this"
+    },
+    {
+      "start": 134.28,
+      "end": 138.48,
+      "text": "sciatic nerve. So, there are the principal branches of the sacroplexis blocked with this approach,"
+    },
+    {
+      "start": 138.6,
+      "end": 139.94,
+      "text": "which you can remember by the acronym-"
+    },
+    {
+      "start": 140.0,
+      "end": 143.74,
+      "text": "them sips, like you're sitting back on your glutes on a hot summer day, sipping some"
+    },
+    {
+      "start": 143.74,
+      "end": 144.12,
+      "text": "lemonade."
+    },
+    {
+      "start": 144.74,
+      "end": 148.88,
+      "text": "Here's what to expect regarding the osteotomal, myotomal, and dermatomal territory."
+    },
+    {
+      "start": 149.2,
+      "end": 149.98,
+      "text": "It's a big chum."
+    },
+    {
+      "start": 150.0,
+      "end": 153.82,
+      "text": "of the lower limb. And if you combine this with the Lumbar Plexus block, which blocks the"
+    },
+    {
+      "start": 153.82,
+      "end": 157.66,
+      "text": "femoral, obterator, and all of Cn, then you, my friend, have got yourself a complete"
+    },
+    {
+      "start": 157.66,
+      "end": 159.98,
+      "text": "block of the lower extremity. This is a-"
+    },
+    {
+      "start": 160.03,
+      "end": 163.73,
+      "text": "You will trick to have in your bag if you have a super sick patient who can't undergo"
+    },
+    {
+      "start": 163.73,
+      "end": 166.23,
+      "text": "lower limb surgery under general orneraxial."
+    },
+    {
+      "start": 166.8,
+      "end": 169.98,
+      "text": "Note that several branches of the sacriplexes innovate the hip joint and cl-"
+    },
+    {
+      "start": 170.03,
+      "end": 172.29,
+      "text": "including the superior and inferior gluteal nerves"
+    },
+    {
+      "start": 172.29,
+      "end": 173.89,
+      "text": "and the nerve-to-quadrary dysphemeris,"
+    },
+    {
+      "start": 174.03,
+      "end": 176.51,
+      "text": "which highlights why hip surgery is a prime indication."
+    },
+    {
+      "start": 176.95,
+      "end": 179.11,
+      "text": "Good examples for this combination technique include"
+    },
+    {
+      "start": 179.11,
+      "end": 179.97,
+      "text": "hip fracture ripp-"
+    },
+    {
+      "start": 180.03,
+      "end": 184.91,
+      "text": "hair, hip arthroplasty, or above knee amputation. This can also be used as a simple sciatic nerve"
+    },
+    {
+      "start": 184.91,
+      "end": 188.39,
+      "text": "block for any number of thigh, knee, calf, or foot and ankle indications."
+    },
+    {
+      "start": 188.83,
+      "end": 189.97,
+      "text": "The patient is positioned on the..."
+    },
+    {
+      "start": 190.0,
+      "end": 194.38,
+      "text": "side with the hips slightly flexed. The probe is oriented at 45 degrees as pictured"
+    },
+    {
+      "start": 194.38,
+      "end": 198.0,
+      "text": "about halfway between the gluteal cleft and the lateral aspect of the hip."
+    },
+    {
+      "start": 198.44,
+      "end": 199.98,
+      "text": "Depending on the patient you may or"
+    },
+    {
+      "start": 200.0,
+      "end": 204.96,
+      "text": "may not be over the notch. I let the slide the probe sephalad until I get that nice view"
+    },
+    {
+      "start": 204.96,
+      "end": 209.92,
+      "text": "of long continuous ailer of the ilium and then slide back down until I see the break"
+    },
+    {
+      "start": 210.03,
+      "end": 211.85,
+      "text": "in the line, indicating the sadic notch."
+    },
+    {
+      "start": 212.23,
+      "end": 214.35,
+      "text": "The needle will be advanced in plain from lateral."
+    },
+    {
+      "start": 214.77,
+      "end": 215.59,
+      "text": "Here's what that looks like."
+    },
+    {
+      "start": 216.18,
+      "end": 218.38,
+      "text": "Here we see the ilium and the gluteus maximus"
+    },
+    {
+      "start": 218.38,
+      "end": 219.98,
+      "text": "and medius muscles overlying it."
+    },
+    {
+      "start": 220.42,
+      "end": 224.23,
+      "text": "We slide the probe caudate and see the break in the line, we're at the notch."
+    },
+    {
+      "start": 224.61,
+      "end": 227.87,
+      "text": "We see Ilium laterally and deep and medial we see the pelvic fascia."
+    },
+    {
+      "start": 228.43,
+      "end": 229.97,
+      "text": "The sadic nerve is under the piriform..."
+    },
+    {
+      "start": 230.0,
+      "end": 234.67,
+      "text": "immediately lateral to the ilium, a needle is advanced from lateral to"
+    },
+    {
+      "start": 234.67,
+      "end": 237.39,
+      "text": "medial passing through the gluteus and then the piriformis."
+    },
+    {
+      "start": 245.86,
+      "end": 249.52,
+      "text": "As we pass through piriformis, we begin to get a motor response of the foot and ankle."
+    },
+    {
+      "start": 250.67,
+      "end": 255.56,
+      "text": "Following negative aspiration, a test ejection is performed, and the spread looks good."
+    },
+    {
+      "start": 256.25,
+      "end": 258.79,
+      "text": "We're opening up a plane between the nerve and piriformis."
+    },
+    {
+      "start": 260.67,
+      "end": 263.31,
+      "text": "We'll use 20 ml of half percent repivocane here."
+    },
+    {
+      "start": 263.63,
+      "end": 265.27,
+      "text": "If we're combining with lumbar plexus,"
+    },
+    {
+      "start": 265.37,
+      "end": 266.71,
+      "text": "we'll usually drop the concentration"
+    },
+    {
+      "start": 266.71,
+      "end": 268.05,
+      "text": "to reduce the risk of last."
+    },
+    {
+      "start": 274.8,
+      "end": 277.7,
+      "text": "The nerve is nicely outlined by the local anesthetic contrast."
+    },
+    {
+      "start": 279.29,
+      "end": 279.97,
+      "text": "There are some things..."
+    },
+    {
+      "start": 280.0,
+      "end": 281.68,
+      "text": "to think about when performing this technique."
+    },
+    {
+      "start": 282.2,
+      "end": 286.04,
+      "text": "First, local anesthetic can spread through the psionic notch into the pelvis and affect"
+    },
+    {
+      "start": 286.04,
+      "end": 287.92,
+      "text": "a block of the hypogastric plexus."
+    },
+    {
+      "start": 288.18,
+      "end": 289.98,
+      "text": "Although usually not an issue in needle l-"
+    },
+    {
+      "start": 290.0,
+      "end": 294.08,
+      "text": "monorail block, urinary incontinence has been reported as a result of this inadvertent"
+    },
+    {
+      "start": 294.08,
+      "end": 295.34,
+      "text": "hypogastric plexus block."
+    },
+    {
+      "start": 295.84,
+      "end": 299.98,
+      "text": "Second, it's critical to make sure you have good needle visualization and go slow to"
+    },
+    {
+      "start": 300.0,
+      "end": 304.32,
+      "text": "avoid passing the needle through the notch into the pelvis. There have been reports of"
+    },
+    {
+      "start": 304.32,
+      "end": 308.06,
+      "text": "injury to the rectum and internal iliac vessels with the parasacoteknique."
+    },
+    {
+      "start": 308.06,
+      "end": 309.98,
+      "text": "And on that note, there are multiple v-"
+    },
+    {
+      "start": 310.0,
+      "end": 314.08,
+      "text": "vessels in the vicinity, including the superior and inferior gluteal vessels and the internal"
+    },
+    {
+      "start": 314.08,
+      "end": 314.9,
+      "text": "pudendle vessels."
+    },
+    {
+      "start": 315.3,
+      "end": 318.72,
+      "text": "It's always a good idea to scan using color Doppler before inserting your needle."
+    },
+    {
+      "start": 319.16,
+      "end": 319.98,
+      "text": "This is a deep pl-"
+    },
+    {
+      "start": 320.06,
+      "end": 324.34,
+      "text": "block, and along with lumbar plexus is an example of a technique that should only be done with"
+    },
+    {
+      "start": 324.34,
+      "end": 329.6,
+      "text": "intact hemostasis. And here are some parasacled tips. First, we've placed the probe angled from"
+    },
+    {
+      "start": 330.0,
+      "end": 334.36,
+      "text": "a lateral to inferior medial with a purpose, so we can image the nerve in short axis."
+    },
+    {
+      "start": 334.82,
+      "end": 338.72,
+      "text": "There are descriptions of imaging the nerve in long axis as well, so by turning the probe"
+    },
+    {
+      "start": 338.72,
+      "end": 339.98,
+      "text": "like this, you can see..."
+    },
+    {
+      "start": 340.0,
+      "end": 344.26,
+      "text": "the nerve emerge from the sadic knot and run up over the ishym. This may be useful if"
+    },
+    {
+      "start": 344.26,
+      "end": 348.24,
+      "text": "the nerve is difficult to see in short access or to confirm the spread of local and sadic"
+    },
+    {
+      "start": 348.24,
+      "end": 349.72,
+      "text": "longitudinally along the nerve."
+    },
+    {
+      "start": 351.31,
+      "end": 354.63,
+      "text": "Second, nerve stimulation is very useful to confirm the nerve location,"
+    },
+    {
+      "start": 354.79,
+      "end": 356.91,
+      "text": "especially when it's not visualized all that well."
+    },
+    {
+      "start": 357.44,
+      "end": 359.98,
+      "text": "Moreover, in about 10% of people, the sciatic nerve..."
+    },
+    {
+      "start": 360.0,
+      "end": 364.52,
+      "text": "of runs through or over the pure formus muscle, so the nerve may not be where you expect it."
+    },
+    {
+      "start": 365.0,
+      "end": 367.46,
+      "text": "Nurston can help prevent a failed block in these cases."
+    },
+    {
+      "start": 367.86,
+      "end": 369.98,
+      "text": "And lastly, some advocate for an out-of-plane-"
+    },
+    {
+      "start": 370.0,
+      "end": 374.6,
+      "text": "approach. This is feasible, but since the needle visualization is poor, care must be taken"
+    },
+    {
+      "start": 374.6,
+      "end": 379.0,
+      "text": "to avoid driving it through the nausea and into the pelvis. I'm a fan of liberal hydro"
+    },
+    {
+      "start": 379.0,
+      "end": 379.98,
+      "text": "location as a-"
+    },
+    {
+      "start": 380.0,
+      "end": 382.58,
+      "text": "slowly advance with any out-of-plane technique."
+    }
+  ]
+}

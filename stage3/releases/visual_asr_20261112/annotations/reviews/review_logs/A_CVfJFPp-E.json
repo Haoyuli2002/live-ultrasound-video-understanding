@@ -1,0 +1,69 @@
+{
+  "video_id": "A_CVfJFPp-E",
+  "reviewer": "stage3_b",
+  "review_scope": "Question-led review by Agent B of Agent A draft; not blind. Native full-frame sampled checkpoints and available time-indexed ASR; no continuous replay or direct listening claim.",
+  "reviewer_native_opened": [
+    310,
+    510,
+    810,
+    811,
+    812,
+    813,
+    814,
+    815,
+    860,
+    861,
+    890,
+    891,
+    892,
+    1030,
+    1190,
+    814.25,
+    814.5,
+    814.75,
+    860.25,
+    860.5,
+    860.75,
+    891.25,
+    891.5,
+    891.75
+  ],
+  "tasks": [
+    {
+      "task_index": 1,
+      "findings": "Confirmed smaller lower-right lumen on actual small sonogram.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 2,
+      "findings": "Moved815 to814.75, rim and intervening glints checked; avoid fine tip claim at native576x360.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 3,
+      "findings": "Moved861 to860.75 where fuller outline already appreciable; generic CVP-caption shortcut risk retained, no measured pressure/volume inference.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 4,
+      "findings": "Kept892 after891.75 remains long channel; broad compact oval first clear at892 among sampled frames.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 5,
+      "findings": "Confirmed central pair smaller upper-left/larger lower-right; distinct upper-right extra small space not confused with requested central pair.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 6,
+      "findings": "Confirmed earlier paired probe photos: left flat face/rectangular footprint, right curved/fan; generic knowledge shortcut still possible and recorded.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    }
+  ]
+}

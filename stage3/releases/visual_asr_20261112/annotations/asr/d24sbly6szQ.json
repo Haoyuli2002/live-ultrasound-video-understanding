@@ -1,0 +1,363 @@
+{
+  "video_id": "d24sbly6szQ",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/d24sbly6szQ/asr.txt",
+  "segments": [
+    {
+      "start": 7.38,
+      "end": 11.48,
+      "text": "Brachial plexus blocks are awesome, but there are times when you just want to block certain"
+    },
+    {
+      "start": 11.48,
+      "end": 15.14,
+      "text": "nerves of the upper extremity and not the whole limb, and it's very useful to know how"
+    },
+    {
+      "start": 15.14,
+      "end": 17.98,
+      "text": "to block the median, ulnar, and radial nerves individually."
+    },
+    {
+      "start": 18.46,
+      "end": 21.94,
+      "text": "In this video, we'll discuss the relevant anatomy and go over the ultrasound and got"
+    },
+    {
+      "start": 21.94,
+      "end": 23.2,
+      "text": "a technique for each of these."
+    },
+    {
+      "start": 23.99,
+      "end": 29.11,
+      "text": "The three principal nerves that innervate the distal extremity are the median, the ulnar,"
+    },
+    {
+      "start": 30.72,
+      "end": 31.38,
+      "text": "and the radial."
+    },
+    {
+      "start": 32.45,
+      "end": 36.49,
+      "text": "And they follow a predictable course past the elbow joint on their way to supplying the hand."
+    },
+    {
+      "start": 36.49,
+      "end": 41.19,
+      "text": "If we consider the innervation of the hand and distal forearm, we see that the hand itself"
+    },
+    {
+      "start": 41.19,
+      "end": 45.43,
+      "text": "is wholly innervated by the median, ulnar, and radial nerves, and this represents the"
+    },
+    {
+      "start": 45.43,
+      "end": 46.69,
+      "text": "typical innervation pattern."
+    },
+    {
+      "start": 47.09,
+      "end": 51.43,
+      "text": "There is variation between individuals and these territories can shift from person to"
+    },
+    {
+      "start": 51.43,
+      "end": 51.79,
+      "text": "person."
+    },
+    {
+      "start": 52.37,
+      "end": 56.77,
+      "text": "Note that the volar forearm is innervated by the medial and lateral coutaneous nerves, which"
+    },
+    {
+      "start": 56.77,
+      "end": 59.67,
+      "text": "are branches of the ulnar and muscular coutaneous nerves respectively."
+    },
+    {
+      "start": 60.66,
+      "end": 63.52,
+      "text": "There are two principal indications for doing these distal blocks."
+    },
+    {
+      "start": 63.52,
+      "end": 68.5,
+      "text": "hand surgery is the main one. One advantage over a brachial plexus block is the patient"
+    },
+    {
+      "start": 68.5,
+      "end": 71.72,
+      "text": "retains the ability to move their upper extremity, which is a huge"
+    },
+    {
+      "start": 71.72,
+      "end": 75.77,
+      "text": "satisfy. Also, you can mix and match the individual nerves to suit your"
+    },
+    {
+      "start": 75.77,
+      "end": 79.53,
+      "text": "specific surgical needs. There is nothing more satisfying than getting a"
+    },
+    {
+      "start": 79.53,
+      "end": 83.17,
+      "text": "patient through their fifth finger pinning when your entire anesthetic is three"
+    },
+    {
+      "start": 83.17,
+      "end": 87.3,
+      "text": "mills of epivocane on the ulnar nerve. The other use case is for rescue"
+    },
+    {
+      "start": 87.3,
+      "end": 91.18,
+      "text": "blocks. In the rare event that your brachial plexus block is patchy or if you"
+    },
+    {
+      "start": 91.18,
+      "end": 94.8,
+      "text": "find that the surgical infiltration just didn't cut it and the patients and pain in the"
+    },
+    {
+      "start": 94.8,
+      "end": 97.54,
+      "text": "pack you, these are great ways to provide an instant fix."
+    },
+    {
+      "start": 98.29,
+      "end": 100.95,
+      "text": "Okay, so here's the proposition for blocking the median nerve."
+    },
+    {
+      "start": 101.53,
+      "end": 105.41,
+      "text": "The median nerve is easily visualized in the mid-form on the volar aspect."
+    },
+    {
+      "start": 105.95,
+      "end": 109.77,
+      "text": "You should be able to identify the radial artery and the median nerve in the fascial plane"
+    },
+    {
+      "start": 109.77,
+      "end": 111.61,
+      "text": "between the superficial and deep flexor muscles."
+    },
+    {
+      "start": 112.57,
+      "end": 115.13,
+      "text": "The radius looks like a ski slope deep to the radial artery."
+    },
+    {
+      "start": 115.55,
+      "end": 119.15,
+      "text": "A needle is advanced from the lateral side, either under or over the artery."
+    },
+    {
+      "start": 119.15,
+      "end": 123.19,
+      "text": "The goal is to pop into the fascia plane where the nerve lives."
+    },
+    {
+      "start": 123.69,
+      "end": 127.89,
+      "text": "Like many fascia plane blocks, this often requires applying firm pressure to get the blunt"
+    },
+    {
+      "start": 127.89,
+      "end": 132.03,
+      "text": "needle through the tough fascia, so care should be taken not to aim directly at the nerve."
+    },
+    {
+      "start": 134.89,
+      "end": 138.69,
+      "text": "Once your needle is in the fascia plane, three to five miles of local anesthetic is deposited."
+    },
+    {
+      "start": 148.37,
+      "end": 151.33,
+      "text": "The ulnar nerve is also easily visualized in the mid forearm."
+    },
+    {
+      "start": 151.83,
+      "end": 155.67,
+      "text": "About halfway down the forearm, the ulnar nerve and artery start to separate from each"
+    },
+    {
+      "start": 155.67,
+      "end": 159.65,
+      "text": "other, and this type of image is what you want to see with some slight separation so the"
+    },
+    {
+      "start": 159.65,
+      "end": 161.11,
+      "text": "arteries not in the line of fire."
+    },
+    {
+      "start": 161.61,
+      "end": 165.47,
+      "text": "We use the same technique here, entering the fascial plane next to the nerve and injecting"
+    },
+    {
+      "start": 165.47,
+      "end": 167.39,
+      "text": "three to five mills of local anaesthetic."
+    },
+    {
+      "start": 180.34,
+      "end": 183.58,
+      "text": "There are different ways to block the radial nerve but we prefer approaching it just"
+    },
+    {
+      "start": 183.58,
+      "end": 187.76,
+      "text": "above the elbow crease in order to anesthetize both the superficial and deep branches of"
+    },
+    {
+      "start": 187.76,
+      "end": 188.14,
+      "text": "the radial."
+    },
+    {
+      "start": 188.82,
+      "end": 192.34,
+      "text": "With the patient's elbow flexed to 90 degrees, and the hand resting on their abdomen,"
+    },
+    {
+      "start": 192.84,
+      "end": 195.36,
+      "text": "the probe is placed two to three centimeters above the elbow crease."
+    },
+    {
+      "start": 195.96,
+      "end": 200.12,
+      "text": "You'll be able to see the hyper-echoic radial nerve close to the humerus in the fascial"
+    },
+    {
+      "start": 200.12,
+      "end": 202.68,
+      "text": "plane between the brachialis and brachyradialis muscles."
+    },
+    {
+      "start": 203.93,
+      "end": 207.19,
+      "text": "And once again, we bring a needle in from the lateral side and enter the fascial plane"
+    },
+    {
+      "start": 207.19,
+      "end": 208.09,
+      "text": "with a nerve resides."
+    },
+    {
+      "start": 208.59,
+      "end": 211.99,
+      "text": "And once again, three to five mills of local anaesthetic are administered here before"
+    },
+    {
+      "start": 211.99,
+      "end": 212.89,
+      "text": "the needle is withdrawn."
+    },
+    {
+      "start": 218.9,
+      "end": 221.86,
+      "text": "These blocks are easy to do using an out-of-plane approach as well."
+    },
+    {
+      "start": 222.16,
+      "end": 226.04,
+      "text": "Just be sure to bring the needle down on the side of the nerve and not to contact it directly."
+    },
+    {
+      "start": 226.56,
+      "end": 229.16,
+      "text": "And here are some pointers for distal blocks of the upper extremity."
+    },
+    {
+      "start": 229.72,
+      "end": 233.46,
+      "text": "Number one, these are fascial plane blocks, like all blocks are really."
+    },
+    {
+      "start": 233.46,
+      "end": 238.04,
+      "text": "A common novice mistake is to deposit the local anaesthetic in the muscle next to the"
+    },
+    {
+      "start": 238.04,
+      "end": 239.76,
+      "text": "nerve and not the true fascial plane."
+    },
+    {
+      "start": 240.36,
+      "end": 242.82,
+      "text": "This will result in a poor, slow, or failed block."
+    },
+    {
+      "start": 243.42,
+      "end": 243.8,
+      "text": "2."
+    },
+    {
+      "start": 244.3,
+      "end": 247.62,
+      "text": "Remember that the volar, wrist, and forearm won't be covered by these blocks."
+    },
+    {
+      "start": 247.92,
+      "end": 251.34,
+      "text": "They're supplied by the branches of the ulnar and musculicotaneous nerves that have already"
+    },
+    {
+      "start": 251.34,
+      "end": 253.72,
+      "text": "become subcutaneous at the proximal forearm."
+    },
+    {
+      "start": 254.32,
+      "end": 258.56,
+      "text": "If your surgeon is doing work in this area, a quick field block or sub-cute infiltration"
+    },
+    {
+      "start": 258.56,
+      "end": 262.92,
+      "text": "of local across the polar form will effectively and easily anesthetize this area."
+    },
+    {
+      "start": 263.46,
+      "end": 268.64,
+      "text": "And finally, we sometimes combine a short-acting brachial plexus block using mapevicane or laticane"
+    },
+    {
+      "start": 268.64,
+      "end": 271.56,
+      "text": "with a selective distal nerve block using mapevicane."
+    },
+    {
+      "start": 271.94,
+      "end": 276.2,
+      "text": "This gets you optimal operating conditions with an immobile upper limb while at the same"
+    },
+    {
+      "start": 276.2,
+      "end": 279.12,
+      "text": "time allowing the patient to be able to move their arm quickly after surgery."
+    },
+    {
+      "start": 279.84,
+      "end": 284.92,
+      "text": "The long-lasting distal block provides analgesia for 18 plus hours and ensures a good night's"
+    },
+    {
+      "start": 284.92,
+      "end": 286.52,
+      "text": "sleep with minimal functional limitation."
+    }
+  ]
+}

@@ -1,0 +1,323 @@
+{
+  "video_id": "YYcTdkP7xhs",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/YYcTdkP7xhs/asr.txt",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 2.58,
+      "text": "So I thought I'd do a quick little video on my process"
+    },
+    {
+      "start": 2.58,
+      "end": 4.86,
+      "text": "for ultrasound guided central lines."
+    },
+    {
+      "start": 5.6,
+      "end": 9.3,
+      "text": "So the first thing I wanna do is I wanna find a suitable target."
+    },
+    {
+      "start": 9.96,
+      "end": 12.94,
+      "text": "And my first choice is usually the left subclavian"
+    },
+    {
+      "start": 12.94,
+      "end": 14.22,
+      "text": "if it looks like a good target."
+    },
+    {
+      "start": 14.44,
+      "end": 15.88,
+      "text": "Just looking to evaluate the target,"
+    },
+    {
+      "start": 16.16,
+      "end": 17.44,
+      "text": "the first thing we will see,"
+    },
+    {
+      "start": 18.66,
+      "end": 20.08,
+      "text": "and this is how I like to find this."
+    },
+    {
+      "start": 23.17,
+      "end": 24.85,
+      "text": "Number one, I stick the probe"
+    },
+    {
+      "start": 25.86,
+      "end": 27.58,
+      "text": "and cross-section of the clavicle,"
+    },
+    {
+      "start": 27.68,
+      "end": 31.11,
+      "text": "and then I just slide inferiorly towards the feet"
+    },
+    {
+      "start": 31.11,
+      "end": 34.21,
+      "text": "to try to find subclavian vessels."
+    },
+    {
+      "start": 34.98,
+      "end": 39.54,
+      "text": "And in this case, now this is a little bit of an unusual orientation in the anatomy, but"
+    },
+    {
+      "start": 39.54,
+      "end": 42.92,
+      "text": "the first thing we see here is the artery, and we'll play that forward, and you should"
+    },
+    {
+      "start": 42.92,
+      "end": 43.3,
+      "text": "see it."
+    },
+    {
+      "start": 43.38,
+      "end": 43.9,
+      "text": "It's pulsing."
+    },
+    {
+      "start": 44.02,
+      "end": 45.58,
+      "text": "It has a thick wall, it resists compression."
+    },
+    {
+      "start": 47.24,
+      "end": 52.59,
+      "text": "And then a little bit more cad ad, we identify the subclavian vein."
+    },
+    {
+      "start": 52.87,
+      "end": 53.37,
+      "text": "That's unusual."
+    },
+    {
+      "start": 53.77,
+      "end": 58.0,
+      "text": "Oftentimes, the vein will be more superficial than the artery."
+    },
+    {
+      "start": 58.28,
+      "end": 62.42,
+      "text": "So this is just a good example of why using ultrasound is much better, because if you were"
+    },
+    {
+      "start": 62.42,
+      "end": 65.66,
+      "text": "going with your normal landmarks, you'd probably miss the vein in this case, and you might"
+    },
+    {
+      "start": 65.66,
+      "end": 73.38,
+      "text": "even hit the artery. So then I just look at it in long axis. So rotating a little bit to make sure"
+    },
+    {
+      "start": 73.38,
+      "end": 76.84,
+      "text": "it looks like a good target. There's a good orientation. I'm gonna have a good approach to it."
+    },
+    {
+      "start": 78.84,
+      "end": 82.94,
+      "text": "And that's pretty much it. I'll identify the vessel and make sure I line it up. And then I gotta go get"
+    },
+    {
+      "start": 82.94,
+      "end": 87.62,
+      "text": "all my stuff and prep sterile, you know, all the things we usually do. Now in this particular case,"
+    },
+    {
+      "start": 87.72,
+      "end": 92.94,
+      "text": "I didn't have images of the needle actually puncturing the vein, but you can see here and what I'm"
+    },
+    {
+      "start": 92.94,
+      "end": 99.44,
+      "text": "doing is I'm following the wire to make sure that it goes where I want it to go. And I think I like"
+    },
+    {
+      "start": 99.44,
+      "end": 105.26,
+      "text": "this view of it a little bit better. Here's the wire it tracks into the vein and in this image here,"
+    },
+    {
+      "start": 105.42,
+      "end": 110.22,
+      "text": "we're tracking it there it is in the vein and we track up into the ij we see we don't see a wire"
+    },
+    {
+      "start": 110.22,
+      "end": 116.3,
+      "text": "in the ij so that's an important step and just again here's the ij there's no wire here so I feel"
+    },
+    {
+      "start": 116.3,
+      "end": 123.19,
+      "text": "good about dilating and continuing on with the procedure. If we slow that down you can see as I move"
+    },
+    {
+      "start": 127.18,
+      "end": 135.05,
+      "text": "past the clavicle here bring the probe back down with subclavian vessels and it's a little tough but"
+    },
+    {
+      "start": 135.05,
+      "end": 142.33,
+      "text": "But we can see that wire heading towards the vein and giving us evidence that it is not"
+    },
+    {
+      "start": 142.33,
+      "end": 142.95,
+      "text": "in the artery."
+    },
+    {
+      "start": 143.25,
+      "end": 145.19,
+      "text": "So we're safe to dilate and continue our procedure."
+    },
+    {
+      "start": 147.84,
+      "end": 152.87,
+      "text": "And just one more quick look, going above and below the clavicle, it's not in the IJ."
+    },
+    {
+      "start": 153.29,
+      "end": 157.82,
+      "text": "We see wire heading into the subclavian vein right here."
+    },
+    {
+      "start": 159.6,
+      "end": 164.07,
+      "text": "So we're okay to dilate and continue our procedure, which is what we do."
+    },
+    {
+      "start": 164.91,
+      "end": 169.49,
+      "text": "So after the procedure is finished, and I feel pretty confident that one, the wire and"
+    },
+    {
+      "start": 169.49,
+      "end": 175.86,
+      "text": "the catheter did not dislocate into the internal jugular vein for a final"
+    },
+    {
+      "start": 175.86,
+      "end": 180.62,
+      "text": "confirmation that we have venous placement. I will ask the nurse or I can give a"
+    },
+    {
+      "start": 180.62,
+      "end": 183.22,
+      "text": "quick flush and I'll look for bubbles in the right ventricle so we see those"
+    },
+    {
+      "start": 183.22,
+      "end": 188.64,
+      "text": "bubbles here. This is our poor man's agitated contrast study and I may look"
+    },
+    {
+      "start": 188.64,
+      "end": 193.44,
+      "text": "lastly and just confirm that there's plural sliding to rule out any pneumothorax"
+    },
+    {
+      "start": 193.44,
+      "end": 199.64,
+      "text": "as a complication of the subclavian central line procedure. So to summarize one"
+    },
+    {
+      "start": 199.64,
+      "end": 205.12,
+      "text": "Then identify the vein as a good target and make sure you like the approach and the target"
+    },
+    {
+      "start": 205.12,
+      "end": 205.76,
+      "text": "that you like."
+    },
+    {
+      "start": 205.98,
+      "end": 211.95,
+      "text": "My general algorithm is left subclavian as my first choice, then I check the right subclavian,"
+    },
+    {
+      "start": 212.49,
+      "end": 215.33,
+      "text": "then I may look at internal jugular and I may look at femoral."
+    },
+    {
+      "start": 215.91,
+      "end": 218.75,
+      "text": "Some folks out there like the super clavicular approach."
+    },
+    {
+      "start": 219.91,
+      "end": 223.59,
+      "text": "I'm not opposed to that one, it's just not something that I've built into my habits that"
+    },
+    {
+      "start": 223.59,
+      "end": 225.99,
+      "text": "much, but it definitely has its merits."
+    },
+    {
+      "start": 225.99,
+      "end": 232.84,
+      "text": "during the procedure I like to check the wire at each step and then I also check the"
+    },
+    {
+      "start": 232.84,
+      "end": 237.22,
+      "text": "catheter to make sure it hasn't translocated or dislocated somewhere I don't"
+    },
+    {
+      "start": 237.22,
+      "end": 240.64,
+      "text": "want it before I've removed all my sterile prepping things so I can address it"
+    },
+    {
+      "start": 240.64,
+      "end": 247.26,
+      "text": "before everything else is already sutured and taped into place and then once"
+    },
+    {
+      "start": 247.26,
+      "end": 254.87,
+      "text": "the procedure is done I check for confirmation of venous placement by doing a"
+    },
+    {
+      "start": 254.87,
+      "end": 258.03,
+      "text": "rapid flush and imaging the right ventricle to look for bubbles in the right"
+    },
+    {
+      "start": 258.03,
+      "end": 262.13,
+      "text": "side of the heart. Then I'll look for pleural sliding to rule out pneumothorax. So this is the"
+    },
+    {
+      "start": 262.13,
+      "end": 266.53,
+      "text": "things I do when I do a central line. Again I like the left subclavian. It's my first choice"
+    },
+    {
+      "start": 267.15,
+      "end": 271.77,
+      "text": "but then I move down to the other other choices in the list. Give this a try next time you do a central"
+    },
+    {
+      "start": 271.77,
+      "end": 274.11,
+      "text": "line I hope it helps and I'll talk to you soon."
+    }
+  ]
+}

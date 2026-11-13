@@ -1,0 +1,358 @@
+{
+  "video_id": "X0wqmWXEcTg",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/X0wqmWXEcTg/asr.txt",
+  "segments": [
+    {
+      "start": 13.58,
+      "end": 18.119999999999997,
+      "text": "The Puppet Teal Scytic Nerve Block is a good block to do for the Scytic Nerve because"
+    },
+    {
+      "start": 18.119999999999997,
+      "end": 19.9,
+      "text": "this is where the Scytic Nerve..."
+    },
+    {
+      "start": 20.06,
+      "end": 21.2,
+      "text": "is found most shallow."
+    },
+    {
+      "start": 22.5,
+      "end": 25.54,
+      "text": "This block can be performed for both your knee pain"
+    },
+    {
+      "start": 25.54,
+      "end": 29.98,
+      "text": "after knee surgery as well as half foot and ankle surgery."
+    },
+    {
+      "start": 30.0,
+      "end": 33.99,
+      "text": "This is the main nerve that supplies the lower leg."
+    },
+    {
+      "start": 34.55,
+      "end": 39.83,
+      "text": "I find a lateral position gives you good control the patient's airwaves if you sedate"
+    },
+    {
+      "start": 40.0,
+      "end": 43.98,
+      "text": "them, as well as good ergonomics to do the block."
+    },
+    {
+      "start": 45.99,
+      "end": 49.79,
+      "text": "Here we have our patient position laterally with the pillow between the legs."
+    },
+    {
+      "start": 50.0,
+      "end": 56.66,
+      "text": "comfort. To do the palpateal sciatic nerve block, we use a linear probe. The linear probe"
+    },
+    {
+      "start": 56.66,
+      "end": 59.96,
+      "text": "allows us to see structures well in the shell."
+    },
+    {
+      "start": 60.0,
+      "end": 64.1,
+      "text": "yellow plane but gives us a wide field of view to see our needle approaching the nerve."
+    },
+    {
+      "start": 64.64,
+      "end": 69.56,
+      "text": "To perform the popular two-sided nerve block, we put the probe directly in the back of the"
+    },
+    {
+      "start": 69.56,
+      "end": 69.92,
+      "text": "knee."
+    },
+    {
+      "start": 71.25,
+      "end": 78.37,
+      "text": "Placement of the probe in the back of the knee reveals a structure of the nerve, the vein, the artery."
+    },
+    {
+      "start": 79.16,
+      "end": 79.98,
+      "text": "I call this structure..."
+    },
+    {
+      "start": 80.0,
+      "end": 84.82,
+      "text": "the snowman in the back of the knee. You have three circles on top of each other."
+    },
+    {
+      "start": 85.24,
+      "end": 88.6,
+      "text": "The uppermost circle represented by the tibial component of the side"
+    },
+    {
+      "start": 88.6,
+      "end": 89.8,
+      "text": "I didn't know them."
+    },
+    {
+      "start": 90.06,
+      "end": 92.36,
+      "text": "in the middle structure represented by the vein"
+    },
+    {
+      "start": 92.36,
+      "end": 95.52,
+      "text": "and the deep structure represented by the Papa II artery."
+    },
+    {
+      "start": 96.45,
+      "end": 98.67,
+      "text": "If we put color Doppler on the screen,"
+    },
+    {
+      "start": 100.1,
+      "end": 104.88,
+      "text": "we are able to see the pulsating artery in this area."
+    },
+    {
+      "start": 106.02,
+      "end": 108.72,
+      "text": "Sometimes it's difficult to see the popliteal vein"
+    },
+    {
+      "start": 108.72,
+      "end": 109.96000000000001,
+      "text": "because this is a low flow."
+    },
+    {
+      "start": 110.0,
+      "end": 116.59,
+      "text": "state, such as we see here. To visualize the Papa-Til Vain better, we can squeeze"
+    },
+    {
+      "start": 116.59,
+      "end": 119.83,
+      "text": "the back of the calf, increasing Venus flow through the"
+    },
+    {
+      "start": 120.03,
+      "end": 126.54,
+      "text": "popliteal veins such as this. There we can see increased venous flow through the"
+    },
+    {
+      "start": 126.54,
+      "end": 129.9,
+      "text": "popliteal vein represented better by color Doppler."
+    },
+    {
+      "start": 131.82,
+      "end": 134.78,
+      "text": "Now, as I mentioned, this is only the tibial component"
+    },
+    {
+      "start": 134.78,
+      "end": 135.84,
+      "text": "of the side at nerve."
+    },
+    {
+      "start": 136.22,
+      "end": 138.89,
+      "text": "We want to get the nerve where it comes together"
+    },
+    {
+      "start": 138.89,
+      "end": 139.97,
+      "text": "and has both..."
+    },
+    {
+      "start": 140.38,
+      "end": 144.65,
+      "text": "components, the peronial and the dipial component."
+    },
+    {
+      "start": 145.2,
+      "end": 149.8,
+      "text": "As we scan up the leg, here we now see the peronial component ladder."
+    },
+    {
+      "start": 150.0,
+      "end": 158.96,
+      "text": "the tibial component immediately, the papatil vein and papatil artery. On the"
+    },
+    {
+      "start": 158.96,
+      "end": 159.86,
+      "text": "Medio-side"
+    },
+    {
+      "start": 160.0,
+      "end": 167.26,
+      "text": "we see the semi-tendonosis and semi-membronosis muscles. On the lateral side, we see the biceps"
+    },
+    {
+      "start": 167.26,
+      "end": 169.32,
+      "text": "tips for more long and short heads."
+    },
+    {
+      "start": 170.45,
+      "end": 172.13,
+      "text": "as we keep going up the leg,"
+    },
+    {
+      "start": 172.91,
+      "end": 176.55,
+      "text": "the tibial and peronial components join in the one nerve."
+    },
+    {
+      "start": 178.22,
+      "end": 179.68,
+      "text": "Sometimes we block the nerve,"
+    },
+    {
+      "start": 180.0,
+      "end": 182.34,
+      "text": "at this level where the two components are joining,"
+    },
+    {
+      "start": 182.64,
+      "end": 185.78,
+      "text": "this allows us to get both components"
+    },
+    {
+      "start": 185.78,
+      "end": 188.08,
+      "text": "with a single injection at the nerve."
+    },
+    {
+      "start": 189.04,
+      "end": 189.98,
+      "text": "My needle approach for the..."
+    },
+    {
+      "start": 190.0,
+      "end": 195.18,
+      "text": "these blocks are going to be from lateral to medial. What I typically do is measure the"
+    },
+    {
+      "start": 195.18,
+      "end": 199.98,
+      "text": "depth of the side it nerve in this setting. Here the side it nerve is a problem."
+    },
+    {
+      "start": 200.0,
+      "end": 203.94,
+      "text": "one and a half to two centimeters deep to the pro."
+    },
+    {
+      "start": 204.68,
+      "end": 207.72,
+      "text": "So if I measure one and a half to two centimeters deep,"
+    },
+    {
+      "start": 208.02,
+      "end": 209.8,
+      "text": "my needles get to come in completely purpose."
+    },
+    {
+      "start": 210.0,
+      "end": 216.12,
+      "text": "and have a very bright view of the needle and needle shaft as it advances to the nerve."
+    },
+    {
+      "start": 217.4,
+      "end": 219.9,
+      "text": "Now I typically like to inject deep to the nerve."
+    },
+    {
+      "start": 220.16,
+      "end": 225.26,
+      "text": "as well as superficial to the nerve in order to get complete surrounding of the"
+    },
+    {
+      "start": 225.26,
+      "end": 228.91,
+      "text": "popetial side of the nerve for the most rapid onset for this block."
+    },
+    {
+      "start": 230.58,
+      "end": 234.46,
+      "text": "typical volumes used are 20 to 30 milliliters of local anesthetic."
+    },
+    {
+      "start": 235.52,
+      "end": 239.98,
+      "text": "This block takes some time to onset, and studies are shown, even with"
+    },
+    {
+      "start": 240.1,
+      "end": 246.02,
+      "text": "The complete surrounding of the nerve takes up to 30 minutes for the nerve block to onset in most patients."
+    },
+    {
+      "start": 250.0,
+      "end": 257.78,
+      "text": "You see the Puppetel sciatic nerve surrounded by the biceps for moris laterally and the semi-teninosis,"
+    },
+    {
+      "start": 257.96,
+      "end": 259.28,
+      "text": "semi-member noses immediately."
+    },
+    {
+      "start": 260.29,
+      "end": 262.61,
+      "text": "Our needle is advanced directly above the nerve,"
+    },
+    {
+      "start": 262.89,
+      "end": 264.73,
+      "text": "and the local anesthetic is injected,"
+    },
+    {
+      "start": 265.36,
+      "end": 266.52,
+      "text": "pushing the nerve deeper."
+    },
+    {
+      "start": 267.9,
+      "end": 269.2,
+      "text": "We then withdraw the needle."
+    },
+    {
+      "start": 270.0,
+      "end": 272.62,
+      "text": "and re-advence the needle again close to the nerve,"
+    },
+    {
+      "start": 278.64,
+      "end": 279.98,
+      "text": "so we can get local anesthesia."
+    },
+    {
+      "start": 280.0,
+      "end": 282.28,
+      "text": "that is spreading to the medial side of the nerve,"
+    },
+    {
+      "start": 282.68,
+      "end": 284.74,
+      "text": "which is more of the tibial component."
+    },
+    {
+      "start": 291.54,
+      "end": 297.94,
+      "text": "Now you can visualize both the peronial and tibial component with a local anesthetic completely"
+    },
+    {
+      "start": 297.94,
+      "end": 299.14,
+      "text": "surrounding the nerves."
+    }
+  ]
+}

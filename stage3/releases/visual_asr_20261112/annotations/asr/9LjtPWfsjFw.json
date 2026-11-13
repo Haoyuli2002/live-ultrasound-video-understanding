@@ -1,0 +1,593 @@
+{
+  "video_id": "9LjtPWfsjFw",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/eval/9LjtPWfsjFw/asr.txt",
+  "segments": [
+    {
+      "start": 1.86,
+      "end": 7.3,
+      "text": "Now that we understand the different types of ultrasound transducers we need to"
+    },
+    {
+      "start": 7.3,
+      "end": 9.98,
+      "text": "understand the orientation of the"
+    },
+    {
+      "start": 10.13,
+      "end": 12.79,
+      "text": "ultrasound image in relation to the transducer."
+    },
+    {
+      "start": 13.18,
+      "end": 19.1,
+      "text": "One other words, if I place my ultrasound transducer on a patient, what anatomic orientation"
+    },
+    {
+      "start": 19.1,
+      "end": 19.78,
+      "text": "do I expect?"
+    },
+    {
+      "start": 20.0,
+      "end": 21.84,
+      "text": "to see on the ultrasound screen."
+    },
+    {
+      "start": 22.49,
+      "end": 25.13,
+      "text": "And if you notice on every ultrasound transducer,"
+    },
+    {
+      "start": 25.27,
+      "end": 25.99,
+      "text": "there's an indicator."
+    },
+    {
+      "start": 26.41,
+      "end": 29.35,
+      "text": "That indicator may be a dot as in this example."
+    },
+    {
+      "start": 29.57,
+      "end": 29.97,
+      "text": "There may be a dot as in this example."
+    },
+    {
+      "start": 30.0,
+      "end": 35.43,
+      "text": "maybe a small protrusion, but nonetheless there's some sort of marking on the ultrasound probe"
+    },
+    {
+      "start": 35.43,
+      "end": 37.79,
+      "text": "and that is the transducers indicator."
+    },
+    {
+      "start": 37.79,
+      "end": 39.97,
+      "text": "This corresponds with..."
+    },
+    {
+      "start": 40.0,
+      "end": 46.21,
+      "text": "indicator on the ultrasound screen. In this case, a blue dot. It may be some"
+    },
+    {
+      "start": 46.21,
+      "end": 49.97,
+      "text": "letter or a proprietary symbol, but there'll be some indicator on the"
+    },
+    {
+      "start": 50.0,
+      "end": 54.53,
+      "text": "the ultrasound screen that corresponds with the indicator on the ultrasound probe."
+    },
+    {
+      "start": 55.21,
+      "end": 59.53,
+      "text": "You'll notice that this indicator is on the left side of the ultrasound screen."
+    },
+    {
+      "start": 60.22,
+      "end": 61.12,
+      "text": "So how does this work?"
+    },
+    {
+      "start": 61.86,
+      "end": 63.2,
+      "text": "We have our patient on the left"
+    },
+    {
+      "start": 63.2,
+      "end": 65.44,
+      "text": "and our ultrasound screen here on the right."
+    },
+    {
+      "start": 66.05,
+      "end": 68.63,
+      "text": "We're gonna place the ultrasound screen indicator"
+    },
+    {
+      "start": 68.63,
+      "end": 69.91,
+      "text": "on the left side of the screen."
+    },
+    {
+      "start": 70.54,
+      "end": 73.5,
+      "text": "So if I place my ultrasound transducer on the patient"
+    },
+    {
+      "start": 73.5,
+      "end": 77.45,
+      "text": "and I point the indicator towards the patient's head"
+    },
+    {
+      "start": 77.45,
+      "end": 79.97,
+      "text": "or superly, that lets me know."
+    },
+    {
+      "start": 80.0,
+      "end": 85.96,
+      "text": "that where the indicator is on the screen, in this case the left side, then is"
+    },
+    {
+      "start": 85.96,
+      "end": 89.64,
+      "text": "superior. So where the indicator is pointing"
+    },
+    {
+      "start": 90.38,
+      "end": 95.84,
+      "text": "corresponds with the side of the screen that the indicator is on, in this case the left."
+    },
+    {
+      "start": 96.32,
+      "end": 99.98,
+      "text": "And since the indicator is pointing superbly, the left side of the..."
+    },
+    {
+      "start": 100.0,
+      "end": 106.68,
+      "text": "the screen is superior. Then the opposite of that is true. Since the opposite of the indicator"
+    },
+    {
+      "start": 106.68,
+      "end": 109.98,
+      "text": "is pointing inferiorly, then the right side of the screen."
+    },
+    {
+      "start": 110.0,
+      "end": 116.5,
+      "text": "represents inferior. That tells us what the left and the right of the screen correspond to."
+    },
+    {
+      "start": 116.95,
+      "end": 119.97,
+      "text": "So now let's look at what the top and the bottom of the screen."
+    },
+    {
+      "start": 120.0,
+      "end": 124.32,
+      "text": "corresponding to. And to do that we have to think of our ultrasound probe as a"
+    },
+    {
+      "start": 124.32,
+      "end": 129.08,
+      "text": "flashlight. So if I place my ultrasound probe or my"
+    },
+    {
+      "start": 129.08,
+      "end": 129.92,
+      "text": "quote-unquote"
+    },
+    {
+      "start": 130.0,
+      "end": 138.51,
+      "text": "flashlight on the patient. Where is the ultrasound beam shining from? And where is the ultrasound beam shining to?"
+    },
+    {
+      "start": 140.0,
+      "end": 146.93,
+      "text": "In this case, the ultrasound beam is shining from the anterior of the patient toward the"
+    },
+    {
+      "start": 146.93,
+      "end": 148.91,
+      "text": "posterior of the patient."
+    },
+    {
+      "start": 150.0,
+      "end": 151.88,
+      "text": "So then on my ultrasound screen,"
+    },
+    {
+      "start": 152.63,
+      "end": 157.0,
+      "text": "the near field or the top part of the screen is anterior"
+    },
+    {
+      "start": 157.0,
+      "end": 159.82,
+      "text": "and the bottom part of the screen is posterior."
+    },
+    {
+      "start": 160.0,
+      "end": 169.93,
+      "text": "Because that is where I'm shining my beam from and where I'm shining my beam to so we're going to do some examples that were"
+    },
+    {
+      "start": 170.0,
+      "end": 178.59,
+      "text": "more solidify this concept. We'll notice that we asked ourselves two questions. And if we ask"
+    },
+    {
+      "start": 178.59,
+      "end": 179.97,
+      "text": "yourselves. These two questions..."
+    },
+    {
+      "start": 180.03,
+      "end": 185.19,
+      "text": "we can always find out the orientation of the ultrasound screen."
+    },
+    {
+      "start": 185.77,
+      "end": 189.98,
+      "text": "And the first question is on my ultrasound transducer, where is the..."
+    },
+    {
+      "start": 190.0,
+      "end": 199.65,
+      "text": "indicator pointing and that is going to correspond with where the indicator is on the screen and then the opposite of that will be true so"
+    },
+    {
+      "start": 200.0,
+      "end": 205.5,
+      "text": "So if the indicator is pointing towards the patient's right, then the left side of the"
+    },
+    {
+      "start": 205.5,
+      "end": 208.38,
+      "text": "screen, since that's where the indicator is, will be the patient's right."
+    },
+    {
+      "start": 209.3,
+      "end": 209.98,
+      "text": "The opposite of..."
+    },
+    {
+      "start": 210.0,
+      "end": 212.28,
+      "text": "of the indicator then would be the patient's left,"
+    },
+    {
+      "start": 213.2,
+      "end": 214.78,
+      "text": "and that figures out what's on the left"
+    },
+    {
+      "start": 214.78,
+      "end": 215.7,
+      "text": "and right of the screen."
+    },
+    {
+      "start": 216.47,
+      "end": 218.97,
+      "text": "The second question we need to ask ourselves then"
+    },
+    {
+      "start": 218.97,
+      "end": 219.97,
+      "text": "is where..."
+    },
+    {
+      "start": 220.0,
+      "end": 226.43,
+      "text": "Where is the ultrasound probe shining from and where is it shining to on our patient?"
+    },
+    {
+      "start": 227.03,
+      "end": 229.98,
+      "text": "If it's shining from the patient..."
+    },
+    {
+      "start": 230.0,
+      "end": 236.66,
+      "text": "anterior body to the patient's posterior body, then that will correspond with the"
+    },
+    {
+      "start": 237.01,
+      "end": 239.97,
+      "text": "top of the screen being anterior in the body."
+    },
+    {
+      "start": 240.0,
+      "end": 244.08,
+      "text": "of the screen being posterior. So now let's do some examples."
+    },
+    {
+      "start": 245.58,
+      "end": 249.84,
+      "text": "Alright, the first example here. We have our patient on the left and we see that our indicator"
+    },
+    {
+      "start": 250.0,
+      "end": 254.04,
+      "text": "is pointing up towards the patient's head, or superially."
+    },
+    {
+      "start": 254.52,
+      "end": 258.08,
+      "text": "So that means that the left side of this screen,"
+    },
+    {
+      "start": 258.49,
+      "end": 259.97,
+      "text": "because we have the indicate..."
+    },
+    {
+      "start": 260.0,
+      "end": 268.34,
+      "text": "here on the left side is going to be superior and the opposite of that then is inferior and we see on"
+    },
+    {
+      "start": 268.34,
+      "end": 269.48,
+      "text": "this patient that are"
+    },
+    {
+      "start": 270.0,
+      "end": 275.12,
+      "text": "The flashlight is shining from the anterior portion of the patient to the posterior portion"
+    },
+    {
+      "start": 275.12,
+      "end": 275.74,
+      "text": "of the patient."
+    },
+    {
+      "start": 276.25,
+      "end": 279.98,
+      "text": "Therefore, the top of the screen is anterior, the bottom of the screen is..."
+    },
+    {
+      "start": 280.0,
+      "end": 288.12,
+      "text": "posterior. If we put this in conventional anatomic planes this is the sagittal"
+    },
+    {
+      "start": 289.56,
+      "end": 289.82,
+      "text": "plane"
+    },
+    {
+      "start": 290.38,
+      "end": 293.0,
+      "text": "And this is because we're slicing the patient"
+    },
+    {
+      "start": 293.0,
+      "end": 296.12,
+      "text": "with the ultrasound beam in a sagittal plane."
+    },
+    {
+      "start": 297.24,
+      "end": 299.98,
+      "text": "Okay, next example, we see on our patient on the..."
+    },
+    {
+      "start": 300.0,
+      "end": 305.95,
+      "text": "left here that our indicator is pointing towards the patient's right and our indicator on"
+    },
+    {
+      "start": 305.95,
+      "end": 309.13,
+      "text": "our screen is on the left side of the screen."
+    },
+    {
+      "start": 310.16,
+      "end": 315.48,
+      "text": "That lets us know that the patient's right is on the left side of the screen and the"
+    },
+    {
+      "start": 315.48,
+      "end": 319.98,
+      "text": "opposite then the patient's left is on the right side of the screen."
+    },
+    {
+      "start": 320.0,
+      "end": 329.72,
+      "text": "And then we see that our ultrasound beam is shining from anterior to posterior again so the top of the screen is anterior"
+    },
+    {
+      "start": 330.0,
+      "end": 338.33,
+      "text": "the bottom of the screen is posterior. And, therefore, this is your classic transverse or axial"
+    },
+    {
+      "start": 338.33,
+      "end": 339.32,
+      "text": "your plane."
+    },
+    {
+      "start": 340.32,
+      "end": 343.78,
+      "text": "And this is just like an axial or transverse slice"
+    },
+    {
+      "start": 344.11,
+      "end": 345.82,
+      "text": "on a CAT scanner MRI,"
+    },
+    {
+      "start": 346.66,
+      "end": 349.42,
+      "text": "where you're looking at the patient from the feet."
+    },
+    {
+      "start": 350.13,
+      "end": 358.02,
+      "text": "towards the head. Next example, we see that our indicator is pointing up superially on the"
+    },
+    {
+      "start": 358.02,
+      "end": 359.76,
+      "text": "patient and that our indicator"
+    },
+    {
+      "start": 360.0,
+      "end": 367.86,
+      "text": "on the ultrasound screen is on the left. Therefore, the left side again is superior and the opposite"
+    },
+    {
+      "start": 367.86,
+      "end": 369.96,
+      "text": "of that then is true where the right side is"
+    },
+    {
+      "start": 370.0,
+      "end": 379.96,
+      "text": "In this case, our ultrasound beam is shining from the right side of the patient toward the midline and then to the left of the patient."
+    },
+    {
+      "start": 380.03,
+      "end": 389.96,
+      "text": "Therefore the near field or the top of the screen is going to be the patient's right and the far field is going to be the patient's left and this is a"
+    },
+    {
+      "start": 390.06,
+      "end": 399.54,
+      "text": "classic peronal slice from the patient's right to the patient's left. Now we looked at the three classic imaging"
+    },
+    {
+      "start": 400.0,
+      "end": 405.0,
+      "text": "but sometimes structures do not lie in those classic planes."
+    },
+    {
+      "start": 405.87,
+      "end": 407.37,
+      "text": "An example is the gallbladder."
+    },
+    {
+      "start": 407.69,
+      "end": 409.69,
+      "text": "Here we see the outline of the gallbladder."
+    },
+    {
+      "start": 410.06,
+      "end": 415.04,
+      "text": "And the gallbladder does not sit in the same plane on every single person."
+    },
+    {
+      "start": 415.72,
+      "end": 419.94,
+      "text": "So instead of imaging in planes, we're going to image in"
+    },
+    {
+      "start": 420.0,
+      "end": 429.8,
+      "text": "long and short axis in relation to the structure. So this would be the long axis of the gallbladder and this would be"
+    },
+    {
+      "start": 430.22,
+      "end": 437.17,
+      "text": "orthogonal plane, or 90 degrees from that long axis, and it's going to be the short axis"
+    },
+    {
+      "start": 437.17,
+      "end": 438.46,
+      "text": "of the gallbladder."
+    },
+    {
+      "start": 439.25,
+      "end": 439.71,
+      "text": "All right."
+    },
+    {
+      "start": 440.03,
+      "end": 443.65,
+      "text": "that wraps up ultrasound orientation and imaging planes."
+    },
+    {
+      "start": 443.97,
+      "end": 448.27,
+      "text": "This is a very important concept as you begin scanning."
+    },
+    {
+      "start": 448.89,
+      "end": 449.97,
+      "text": "So if you didn't feel you-"
+    },
+    {
+      "start": 450.0,
+      "end": 454.38,
+      "text": "You caught those concepts on the first time around, please watch the video over and over"
+    },
+    {
+      "start": 454.38,
+      "end": 456.76,
+      "text": "again until you really feel like you've got it."
+    },
+    {
+      "start": 457.39,
+      "end": 459.49,
+      "text": "Next we'll be covering ultrasound terminology."
+    },
+    {
+      "start": 460.13,
+      "end": 461.15,
+      "text": "in biosafety."
+    },
+    {
+      "start": 462.39,
+      "end": 464.83,
+      "text": "In this course, we are going to define ultrasound."
+    },
+    {
+      "start": 465.33,
+      "end": 467.57,
+      "text": "We will discuss basic ultrasound physics."
+    },
+    {
+      "start": 468.07,
+      "end": 469.97,
+      "text": "We'll touch on ultrasound biosafety."
+    },
+    {
+      "start": 470.0,
+      "end": 475.85,
+      "text": "in the Alara Principle. We will discover different ultrasound trends doosers in their applications."
+    },
+    {
+      "start": 476.37,
+      "end": 479.97,
+      "text": "We will look at ultrasound orientation and common ultrasound term."
+    },
+    {
+      "start": 480.0,
+      "end": 487.62,
+      "text": "We will explore ultrasound nobology or the different knobs and controls that you need to know on the ultrasound machine."
+    },
+    {
+      "start": 488.42,
+      "end": 489.96,
+      "text": "We will look at the ultrasound..."
+    },
+    {
+      "start": 490.0,
+      "end": 496.26,
+      "text": "On modes, we'll discuss ultrasound artifacts and we'll finish up with a step-by-step guide"
+    },
+    {
+      "start": 496.26,
+      "end": 499.14,
+      "text": "on how to perform an exam on a patient."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "video_id": "WXlavlEFIaU",
+  "reviewer": "stage3_b",
+  "review_scope": "Question-led review by Agent B of Agent A draft; not blind. Native full-frame sampled checkpoints and available time-indexed ASR; no continuous replay or direct listening claim.",
+  "reviewer_native_opened": [
+    480,
+    485,
+    490,
+    495,
+    500,
+    520,
+    605,
+    606,
+    609,
+    745,
+    900,
+    486,
+    487,
+    488,
+    489,
+    491,
+    492,
+    493,
+    494,
+    496,
+    497,
+    498,
+    499,
+    605.25,
+    605.5,
+    605.75,
+    498.5,
+    499.25,
+    499.5,
+    499.75
+  ],
+  "tasks": [
+    {
+      "task": 1,
+      "outcome": "corrected",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER",
+      "changes": "500\u2192499.75 after499.5 no comparablydistinct belowwall focus. Reviewed allinteger samples485\u2013500 and boundaryquarters. Narrowed claim to focal echo projectedwithinlumen, not guaranteedtip. External andsonogramembeddedclips maynotsynchronize perfectly; externalnotusedtoassert exactentry."
+    },
+    {
+      "task": 2,
+      "outcome": "accepted",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER",
+      "finding": "520 largeovalright/superficial tosmallerroundleft/deeper lumen. No artery/vein identity inferred."
+    },
+    {
+      "task": 3,
+      "outcome": "corrected",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER",
+      "changes": "606\u2192605.25 substantialsmallerindentedlumenrelative605. Deleted607/608 futureevidence and narrowedreference tostateactuallyobserved.609reset notpartof answer evidence."
+    },
+    {
+      "task": 4,
+      "outcome": "accepted",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER",
+      "finding": "745 brightobliquelineleft\u2192downright projectsbetween vesselboundaries; exacttip andsuccessnotasserted."
+    },
+    {
+      "task": 5,
+      "outcome": "accepted",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER",
+      "finding": "480/485 external needleleftofwhiteprobe onbluephantom;900cardiacimage. Historicalsceneuniquelyreferenced; coloriscontextnotanswer."
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "video_id": "bOtYoIl1UQA",
+  "reviewer": "stage3_b",
+  "review_scope": "Question-led review by Agent B of Agent A draft; not blind. Native full-frame sampled checkpoints and available time-indexed ASR; no continuous replay or direct listening claim.",
+  "reviewer_native_opened": [
+    505,
+    780,
+    781,
+    782,
+    783,
+    784,
+    785,
+    786,
+    787,
+    787.25,
+    787.5,
+    787.75,
+    788,
+    788.25,
+    789,
+    900,
+    1200,
+    1505,
+    1520,
+    1530,
+    1532,
+    1532.25,
+    1532.5,
+    1532.75,
+    1533,
+    1533.25,
+    1533.5,
+    1533.75,
+    1534,
+    1536,
+    1538,
+    1540,
+    1600,
+    1602,
+    1604,
+    1606,
+    1607,
+    1608,
+    1608.25,
+    1608.5,
+    1608.75,
+    1609,
+    1609.25,
+    1609.5,
+    1609.75,
+    1610
+  ],
+  "tasks": [
+    {
+      "task_index": 1,
+      "findings": "Confirmed labeled middle/deep layer interface with dark cleft more evident right; label/ASR shortcut recorded.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 2,
+      "findings": "Reworded baseline as small patchy spaces rather than wholly absent; defined broad continuous crescent criterion and moved789 to787.75 after sampled development. No injection success inferred.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 3,
+      "findings": "Confirmed target above/right of large EIA lumen; actual nerve identity not independently claimed.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 4,
+      "findings": "Historical section anchor unique; same505 visual reference supports plane. Strong prior speech shortcut remains explicit.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 5,
+      "findings": "Moved1540 to1533.25; intervening PSIS image checked and target broad layer/right arch starts replacement at1533.25.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 6,
+      "findings": "Repaired overstatement that entire line became isolated short cap: right end rises while left contour persists. Condition now first clear at1606 rather than waiting1610; prior narration shortcut recorded.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    }
+  ]
+}

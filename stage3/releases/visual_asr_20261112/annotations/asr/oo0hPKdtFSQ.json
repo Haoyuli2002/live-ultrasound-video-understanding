@@ -1,0 +1,378 @@
+{
+  "video_id": "oo0hPKdtFSQ",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/eval/oo0hPKdtFSQ/asr.txt",
+  "segments": [
+    {
+      "start": 4.83,
+      "end": 7.91,
+      "text": "Welcome to this Radiogenation Ultrasound video tutorial."
+    },
+    {
+      "start": 8.47,
+      "end": 12.73,
+      "text": "In this video we will be discussing a standardized approach to ultrasound assessment of the lower"
+    },
+    {
+      "start": 12.73,
+      "end": 13.59,
+      "text": "limb venous system."
+    },
+    {
+      "start": 14.39,
+      "end": 18.92,
+      "text": "We will also be demonstrating the features of deep vein thrombosis along the way we will"
+    },
+    {
+      "start": 18.92,
+      "end": 22.46,
+      "text": "stop to point out key anatomical features and of the helpful scanning tips."
+    },
+    {
+      "start": 25.28,
+      "end": 29.2,
+      "text": "The veins of interest within the thigh are the common femoral vein, superficial femoral"
+    },
+    {
+      "start": 29.2,
+      "end": 31.88,
+      "text": "vein, deep femoral vein and popliteal vein."
+    },
+    {
+      "start": 32.51,
+      "end": 36.93,
+      "text": "We use the long saffronous vein, also known as the great saffronous vein, as a landmark"
+    },
+    {
+      "start": 36.93,
+      "end": 38.93,
+      "text": "for the location of the common femoral vein."
+    },
+    {
+      "start": 40.69,
+      "end": 43.61,
+      "text": "We start with the probe in its axial orientation in the groin."
+    },
+    {
+      "start": 44.47,
+      "end": 46.13,
+      "text": "Here we see the femoral artery in vein."
+    },
+    {
+      "start": 47.35,
+      "end": 50.87,
+      "text": "The femoral artery is pulsatile and lies laterals of the femoral vein."
+    },
+    {
+      "start": 51.93,
+      "end": 54.01,
+      "text": "Different achievement between artery and vein is essential."
+    },
+    {
+      "start": 54.65,
+      "end": 58.63,
+      "text": "Align the probe so that the superficial femoral artery in vein appear in the centre of the"
+    },
+    {
+      "start": 58.63,
+      "end": 58.87,
+      "text": "image."
+    },
+    {
+      "start": 59.61,
+      "end": 64.55,
+      "text": "To find the common femoral vein, we slide the probe approximately until crannily, until"
+    },
+    {
+      "start": 64.55,
+      "end": 74.6,
+      "text": "the entry point of the long saffonous vein is seen. Use the dual scanning mode to acquire"
+    },
+    {
+      "start": 74.6,
+      "end": 81.03,
+      "text": "an image of the CFV patent and with compression as demonstrated. A vein containing thrombus"
+    },
+    {
+      "start": 81.03,
+      "end": 87.22,
+      "text": "will not compress fully and may contain ecogenic material. A fair amount of pressure is required"
+    },
+    {
+      "start": 87.22,
+      "end": 92.32,
+      "text": "to fully compress the CFV, so remember to inform the patient that the scan may be uncomfortable."
+    },
+    {
+      "start": 93.54,
+      "end": 98.7,
+      "text": "Return to full screen and slowly slide the probe distantly while regularly compressing the veins."
+    },
+    {
+      "start": 98.7,
+      "end": 106.88,
+      "text": "The first branch of the CFV, seen here, is the deep femoral vein, after which the CFV becomes the superficial femoral vein."
+    },
+    {
+      "start": 109.8,
+      "end": 123.54,
+      "text": "Acquired dual images demonstrating compression of profunder and the proximal SFV, and continue compression along the SFV until the mid thigh."
+    },
+    {
+      "start": 127.9,
+      "end": 132.8,
+      "text": "At this point, turn the probe 90 degrees into longitudinal section and enable colour Doppler."
+    },
+    {
+      "start": 137.65,
+      "end": 144.23,
+      "text": "With colour Doppler showing flow in the mid SFV, use pulse wave Doppler and centre the cursor onto the vein."
+    },
+    {
+      "start": 144.23,
+      "end": 148.23,
+      "text": "Here is an example of normal venous flow."
+    },
+    {
+      "start": 148.85,
+      "end": 153.07,
+      "text": "Normal venous blood flow should also show a response to the valve salvo maneuver."
+    },
+    {
+      "start": 153.71,
+      "end": 158.03,
+      "text": "To demonstrate this, start the pulse wave Doppler and ask the patient to take a breath in,"
+    },
+    {
+      "start": 158.76,
+      "end": 160.16,
+      "text": "hold it, then exhale."
+    },
+    {
+      "start": 162.34,
+      "end": 166.96,
+      "text": "A normal response here indicates patency of the iliac veins and proximal venous system."
+    },
+    {
+      "start": 167.87,
+      "end": 172.21,
+      "text": "Continuing transverse section, compressing the vein towards the distal SFE."
+    },
+    {
+      "start": 172.82,
+      "end": 177.06,
+      "text": "It can be difficult to see the distal SFE as the vessel dips towards the adductor canal."
+    },
+    {
+      "start": 177.06,
+      "end": 182.34,
+      "text": "Now, support the lateral thigh with a left hand and squeeze towards the probe to aid compression."
+    },
+    {
+      "start": 183.29,
+      "end": 188.33,
+      "text": "To acquire an image using this technique, freeze the image after compression and scroll"
+    },
+    {
+      "start": 188.33,
+      "end": 191.65,
+      "text": "back through the sine loop to find the point of maximum compression."
+    },
+    {
+      "start": 193.4,
+      "end": 198.24,
+      "text": "The SFV becomes the popletyl vein after it exits the inductor canal in the posterior thigh."
+    },
+    {
+      "start": 199.37,
+      "end": 204.07,
+      "text": "Place the probe in the transverse orientation at the back of the knee to view the popletyl"
+    },
+    {
+      "start": 204.07,
+      "end": 207.33,
+      "text": "vein, which usually lies superficial to the popletyl artery."
+    },
+    {
+      "start": 207.33,
+      "end": 216.98,
+      "text": "Again, acquire a dual image of the popliteal vein, with and without compression."
+    },
+    {
+      "start": 219.98,
+      "end": 225.22,
+      "text": "Here it is also useful to acquire a longitudinal image with color Doppler, as it provides a"
+    },
+    {
+      "start": 225.22,
+      "end": 228.64,
+      "text": "better viewpoint to image the distal superficial femoral vein."
+    },
+    {
+      "start": 231.4,
+      "end": 233.0,
+      "text": "Next we scan the calf veins."
+    },
+    {
+      "start": 233.58,
+      "end": 237.46,
+      "text": "Ideally, the patient will be positioned as shown to help to extend the vessels."
+    },
+    {
+      "start": 238.39,
+      "end": 243.65,
+      "text": "If a patient has poor mobility or is bedbound, the scan can be performed with them lying down"
+    },
+    {
+      "start": 243.65,
+      "end": 245.41,
+      "text": "and then knee bent at 90 degrees."
+    },
+    {
+      "start": 245.41,
+      "end": 250.28,
+      "text": "The anatomy of the carved veins is displayed here in this simplified graphic."
+    },
+    {
+      "start": 251.52,
+      "end": 255.86,
+      "text": "The vessels that require assessment below the knee are the anterior tibial veins,"
+    },
+    {
+      "start": 256.48,
+      "end": 259.64,
+      "text": "the posterior tibial veins, and the perineal veins."
+    },
+    {
+      "start": 260.46,
+      "end": 264.78,
+      "text": "Each of these veins usually exist as paired veins accompanied by a single artery."
+    },
+    {
+      "start": 265.87,
+      "end": 270.27,
+      "text": "Starting with the probe in transverse, just lateral to the tibial tuberosity,"
+    },
+    {
+      "start": 270.71,
+      "end": 275.85,
+      "text": "we are just the focus and depth to optimize image quality and find the anterior tibial vessels."
+    },
+    {
+      "start": 275.85,
+      "end": 282.19,
+      "text": "The use of compression or colour Doppler allows differentiation between artery and vein."
+    },
+    {
+      "start": 283.44,
+      "end": 288.56,
+      "text": "As before, compress the anterior tibial vein along its proximal course and acquire a dual"
+    },
+    {
+      "start": 288.56,
+      "end": 294.81,
+      "text": "image demonstrating its patency, label and save the images."
+    },
+    {
+      "start": 296.56,
+      "end": 301.5,
+      "text": "Move the probe to halfway down the medial calf, with the tibia visible at the edge of"
+    },
+    {
+      "start": 301.5,
+      "end": 302.4,
+      "text": "the ultrasound image."
+    },
+    {
+      "start": 303.71,
+      "end": 308.09,
+      "text": "When the posterior tibial and perennial veins are in view, carefully rotate the probe"
+    },
+    {
+      "start": 308.09,
+      "end": 311.87,
+      "text": "to obtain a longitudinal view through these vessels and select color Doppler."
+    },
+    {
+      "start": 313.53,
+      "end": 317.49,
+      "text": "Save an image demonstrating complete filling and potency of these vessels."
+    },
+    {
+      "start": 319.2,
+      "end": 323.64,
+      "text": "Distal augmentation will propagate blood to move up the veins and cause increased Doppler flow."
+    },
+    {
+      "start": 326.68,
+      "end": 331.32,
+      "text": "Next we'll show you another technique to check vessel patency using color Doppler in transverse"
+    },
+    {
+      "start": 331.32,
+      "end": 336.53,
+      "text": "and distal augmentation. This may be the only method possible in some patients,"
+    },
+    {
+      "start": 336.85,
+      "end": 342.53,
+      "text": "where the car vessels cannot clearly be seen. With color Doppler enabled, place the probe"
+    },
+    {
+      "start": 342.53,
+      "end": 347.43,
+      "text": "in the expected position to view the posterior vessels and apply distal augmentation."
+    },
+    {
+      "start": 348.64,
+      "end": 353.1,
+      "text": "A flash of colour should be seen in the appropriate location for the posterior tibial and perennial vessels."
+    },
+    {
+      "start": 354.13,
+      "end": 360.26,
+      "text": "The same technique can be used for the anterior tibial veins, or even the proximal veins during a difficult scan."
+    },
+    {
+      "start": 363.12,
+      "end": 365.26,
+      "text": "To finish, here are some examples of pathology."
+    },
+    {
+      "start": 366.93,
+      "end": 370.87,
+      "text": "A DVT will appear as high reflectivity within an incompressible vessel."
+    },
+    {
+      "start": 373.29,
+      "end": 375.71,
+      "text": "There will also be no colour Doppler response in the vessel."
+    },
+    {
+      "start": 378.0,
+      "end": 382.98,
+      "text": "It's important to note that if the DVT is seen within a vessel, you should not continue"
+    },
+    {
+      "start": 382.98,
+      "end": 386.74,
+      "text": "scanning the distal vessel to reduce the possibility of dislodging the thrombus."
+    },
+    {
+      "start": 387.66,
+      "end": 391.94,
+      "text": "Thrombus distally would not change the management so further investigation is not required."
+    },
+    {
+      "start": 398.08,
+      "end": 398.8,
+      "text": "Thank you for watching."
+    },
+    {
+      "start": 400.14,
+      "end": 403.6,
+      "text": "Watch our other videos and visit our website for more educational content."
+    }
+  ]
+}

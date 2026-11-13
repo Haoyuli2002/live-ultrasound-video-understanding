@@ -1,0 +1,288 @@
+{
+  "video_id": "oxR_3GAkQ6M",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/oxR_3GAkQ6M/asr.txt",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 2.14,
+      "text": "Ultrasenography of the gallbladder"
+    },
+    {
+      "start": 2.14,
+      "end": 8.59,
+      "text": "In this video, we'll show you when and how to perform an ultrasound scan of the gallbladder."
+    },
+    {
+      "start": 9.12,
+      "end": 15.88,
+      "text": "The gallbladder is a pear-shaped, hollow, fluid-filled organ that lies against the visceral surface of the liver."
+    },
+    {
+      "start": 18.3,
+      "end": 21.24,
+      "text": "The rounded lower end of the gallbladder, the fundus,"
+    },
+    {
+      "start": 21.54,
+      "end": 26.7,
+      "text": "projects just below the right-costal margin, a little medial to the mid-clivicular line."
+    },
+    {
+      "start": 27.51,
+      "end": 33.71,
+      "text": "If you suspect gallstones, inflammatory changes, or masses of the gallbladder, an ultrasound"
+    },
+    {
+      "start": 33.71,
+      "end": 36.73,
+      "text": "scan can help you narrow the differential diagnosis."
+    },
+    {
+      "start": 37.78,
+      "end": 40.88,
+      "text": "Ideally, the patient should have fasted before the scan."
+    },
+    {
+      "start": 41.62,
+      "end": 46.18,
+      "text": "This is because, in the fasting state, the gallbladder is distended with unreleased"
+    },
+    {
+      "start": 46.18,
+      "end": 48.5,
+      "text": "bile, which allows for a better assessment."
+    },
+    {
+      "start": 49.48,
+      "end": 54.91,
+      "text": "The patient should be instructed to inhale deeply, doing this shifts the liver and with"
+    },
+    {
+      "start": 54.91,
+      "end": 57.23,
+      "text": "it, the gallbladder, in a caudal direction."
+    },
+    {
+      "start": 57.23,
+      "end": 61.33,
+      "text": "This allows us to use the liver as an acoustic window."
+    },
+    {
+      "start": 61.91,
+      "end": 66.49,
+      "text": "Compared to air-filled bowel loops, liver perencoma has a lower acoustic impedance,"
+    },
+    {
+      "start": 67.01,
+      "end": 70.21,
+      "text": "enabling a much better assessment of the underlying gallbladder."
+    },
+    {
+      "start": 71.16,
+      "end": 73.86,
+      "text": "We'll now demonstrate how to scan the gallbladder."
+    },
+    {
+      "start": 74.34,
+      "end": 77.36,
+      "text": "First, in the long axis, then in the short axis."
+    },
+    {
+      "start": 77.88,
+      "end": 82.94,
+      "text": "Afterwards, we'll show you the normal findings and abnormal findings of a gallbladder scan."
+    },
+    {
+      "start": 84.41,
+      "end": 87.97,
+      "text": "We can use a curvilinear or phased array probe for these scans."
+    },
+    {
+      "start": 87.97,
+      "end": 94.74,
+      "text": "long axis view. Begin with your probe placed below the"
+    },
+    {
+      "start": 94.74,
+      "end": 100.44,
+      "text": "coastal margin, just to the right of the midline. Tilt the probe to fan through this region"
+    },
+    {
+      "start": 100.44,
+      "end": 110.3,
+      "text": "and locate the gallbladder. It may be necessary to adjust the depth at this point. Once you've"
+    },
+    {
+      "start": 110.3,
+      "end": 116.2,
+      "text": "identified the gallbladder, rotate or slide the probe as needed to obtain a full long axis view."
+    },
+    {
+      "start": 116.76,
+      "end": 124.0,
+      "text": "In this view, the gallbladder fundus, body, and neck are visible. Now, fan through the long"
+    },
+    {
+      "start": 124.0,
+      "end": 132.6,
+      "text": "access view by slowly tilting the probe, first codily, then crannily. As you can see, tilting in"
+    },
+    {
+      "start": 132.6,
+      "end": 138.5,
+      "text": "one direction, fans through in the opposite direction. So with the probe oriented as shown here,"
+    },
+    {
+      "start": 138.96,
+      "end": 142.62,
+      "text": "tilting the probe codily, fans through the lateral parts of the gallbladder,"
+    },
+    {
+      "start": 142.92,
+      "end": 150.19,
+      "text": "and tilting the probe crannily, fans through the medial parts. To be able to confidently rule out"
+    },
+    {
+      "start": 150.19,
+      "end": 154.71,
+      "text": "wall abnormalities, for example, you need to fan all the way through the gallbladder,"
+    },
+    {
+      "start": 154.71,
+      "end": 157.49,
+      "text": "until the anechoic lumen disappears completely."
+    },
+    {
+      "start": 159.2,
+      "end": 160.24,
+      "text": "Short-axis view."
+    },
+    {
+      "start": 161.46,
+      "end": 165.24,
+      "text": "To obtain a short-axis view, rotate the probe 90 degrees."
+    },
+    {
+      "start": 165.88,
+      "end": 169.32,
+      "text": "The probe marker then faces towards the patient's right side."
+    },
+    {
+      "start": 169.74,
+      "end": 172.6,
+      "text": "In this view, the gallbladder has a rounded appearance."
+    },
+    {
+      "start": 173.74,
+      "end": 175.58,
+      "text": "Keeping the probe orientation the same,"
+    },
+    {
+      "start": 176.08,
+      "end": 179.94,
+      "text": "slide the probe along the gallbladder to scan through it in short-axis view."
+    },
+    {
+      "start": 180.67,
+      "end": 184.71,
+      "text": "First, slide toward the fundus until the gallbladder disappears completely."
+    },
+    {
+      "start": 184.71,
+      "end": 191.08,
+      "text": "Then slide in the opposite direction until the gallbladder neck and cystic duct are visible."
+    },
+    {
+      "start": 194.96,
+      "end": 195.9,
+      "text": "Normal Findings"
+    },
+    {
+      "start": 195.9,
+      "end": 202.0,
+      "text": "A normal gallbladder wall should appear as a narrow, sharply demarcated hyperacobic line."
+    },
+    {
+      "start": 202.52,
+      "end": 207.7,
+      "text": "In a fasted patient with a full gallbladder, the wall should be at most 3mm thick."
+    },
+    {
+      "start": 208.32,
+      "end": 211.82,
+      "text": "In a post-prandial patient, the wall often appears thicker."
+    },
+    {
+      "start": 212.34,
+      "end": 214.8,
+      "text": "Don't mistake this for a pathological finding."
+    },
+    {
+      "start": 215.23,
+      "end": 221.59,
+      "text": "Abnormal findings, an abnormally thickened gallbladder wall may suggest acute colicestitis."
+    },
+    {
+      "start": 222.34,
+      "end": 228.08,
+      "text": "As you can see here, this may also result in a layered appearance, with a hypoechoic layer"
+    },
+    {
+      "start": 228.08,
+      "end": 230.82,
+      "text": "of edema between two hyperechoic wall layers."
+    },
+    {
+      "start": 231.43,
+      "end": 233.53,
+      "text": "This is called the double wall sign."
+    },
+    {
+      "start": 235.1,
+      "end": 239.64,
+      "text": "Because the gallbladder is filled with fluid, the lumen is normally anechoic."
+    },
+    {
+      "start": 241.81,
+      "end": 246.47,
+      "text": "Hyperechoic structures within the lumen may represent gallstones or pathologies of the"
+    },
+    {
+      "start": 246.47,
+      "end": 248.61,
+      "text": "gallbladder wall, such as polyps."
+    },
+    {
+      "start": 249.27,
+      "end": 254.27,
+      "text": "Gallstones typically result in acoustic shadowing and may move around within the gallbladder"
+    },
+    {
+      "start": 254.27,
+      "end": 255.91,
+      "text": "if the patient changes position."
+    },
+    {
+      "start": 257.86,
+      "end": 260.98,
+      "text": "Polyps are outgrowth of the wall and therefore not mobile."
+    },
+    {
+      "start": 261.62,
+      "end": 264.44,
+      "text": "They also do not usually have an acoustic shadow."
+    },
+    {
+      "start": 265.82,
+      "end": 270.86,
+      "text": "Okay, now that you have an overview of gallbladder ultrasound skills, check out the"
+    },
+    {
+      "start": 270.86,
+      "end": 272.22,
+      "text": "Pocus article on Ambus."
+    }
+  ]
+}

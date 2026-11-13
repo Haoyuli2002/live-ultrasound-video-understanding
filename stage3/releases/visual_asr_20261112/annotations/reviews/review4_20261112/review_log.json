@@ -1,0 +1,815 @@
+{
+  "reviewed_tasks": 4,
+  "native_frames_opened": 38,
+  "review_scope": "Same-assistant question-led sampled native-frame review, not blind or continuous replay.",
+  "tasks": [
+    {
+      "task_id": "s3av_v2_OJB8ZNtVAvA_01",
+      "video_id": "OJB8ZNtVAvA",
+      "finding": "745 original full frame shows probe held on exposed anterior chest and ultrasound image at lower left. Original question and answer retained.",
+      "changes": {
+        "review_status": {
+          "before": "accepted_partial_sampled_question_led_self_review",
+          "after": "accepted_targeted_native_frame_self_review"
+        }
+      },
+      "qa_evidence_checkpoints": [
+        745
+      ],
+      "all_actually_opened_context_frames_for_video": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/OJB8ZNtVAvA/740.jpg",
+          "checkpoint": 740.0,
+          "source_pts_seconds": 739.933333,
+          "resolution": [
+            640,
+            360
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/OJB8ZNtVAvA/745.jpg",
+          "checkpoint": 745.0,
+          "source_pts_seconds": 744.933333,
+          "resolution": [
+            640,
+            360
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/OJB8ZNtVAvA/750.jpg",
+          "checkpoint": 750.0,
+          "source_pts_seconds": 749.933333,
+          "resolution": [
+            640,
+            360
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/OJB8ZNtVAvA/790.jpg",
+          "checkpoint": 790.0,
+          "source_pts_seconds": 789.933333,
+          "resolution": [
+            640,
+            360
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/OJB8ZNtVAvA/791.jpg",
+          "checkpoint": 791.0,
+          "source_pts_seconds": 790.933333,
+          "resolution": [
+            640,
+            360
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/OJB8ZNtVAvA/792.jpg",
+          "checkpoint": 792.0,
+          "source_pts_seconds": 791.933333,
+          "resolution": [
+            640,
+            360
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/OJB8ZNtVAvA/793.jpg",
+          "checkpoint": 793.0,
+          "source_pts_seconds": 792.933333,
+          "resolution": [
+            640,
+            360
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/OJB8ZNtVAvA/794.jpg",
+          "checkpoint": 794.0,
+          "source_pts_seconds": 793.933333,
+          "resolution": [
+            640,
+            360
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/OJB8ZNtVAvA/795.jpg",
+          "checkpoint": 795.0,
+          "source_pts_seconds": 794.933333,
+          "resolution": [
+            640,
+            360
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/OJB8ZNtVAvA/796.jpg",
+          "checkpoint": 796.0,
+          "source_pts_seconds": 795.933333,
+          "resolution": [
+            640,
+            360
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/OJB8ZNtVAvA/797.jpg",
+          "checkpoint": 797.0,
+          "source_pts_seconds": 796.933333,
+          "resolution": [
+            640,
+            360
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/OJB8ZNtVAvA/798.jpg",
+          "checkpoint": 798.0,
+          "source_pts_seconds": 797.933333,
+          "resolution": [
+            640,
+            360
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/OJB8ZNtVAvA/799.jpg",
+          "checkpoint": 799.0,
+          "source_pts_seconds": 798.933333,
+          "resolution": [
+            640,
+            360
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/OJB8ZNtVAvA/800.jpg",
+          "checkpoint": 800.0,
+          "source_pts_seconds": 799.933333,
+          "resolution": [
+            640,
+            360
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/OJB8ZNtVAvA/801.jpg",
+          "checkpoint": 801.0,
+          "source_pts_seconds": 800.933333,
+          "resolution": [
+            640,
+            360
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/OJB8ZNtVAvA/801.062.jpg",
+          "checkpoint": 801.0625,
+          "source_pts_seconds": 801.0,
+          "resolution": [
+            640,
+            360
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/OJB8ZNtVAvA/801.125.jpg",
+          "checkpoint": 801.125,
+          "source_pts_seconds": 801.066667,
+          "resolution": [
+            640,
+            360
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/OJB8ZNtVAvA/801.25.jpg",
+          "checkpoint": 801.25,
+          "source_pts_seconds": 801.2,
+          "resolution": [
+            640,
+            360
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/OJB8ZNtVAvA/801.5.jpg",
+          "checkpoint": 801.5,
+          "source_pts_seconds": 801.433333,
+          "resolution": [
+            640,
+            360
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/OJB8ZNtVAvA/801.75.jpg",
+          "checkpoint": 801.75,
+          "source_pts_seconds": 801.7,
+          "resolution": [
+            640,
+            360
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/OJB8ZNtVAvA/802.jpg",
+          "checkpoint": 802.0,
+          "source_pts_seconds": 801.933333,
+          "resolution": [
+            640,
+            360
+          ]
+        }
+      ],
+      "query_prefix_result": "ANSWER",
+      "answer_prefix_result": "ANSWER",
+      "shortcut_risk": "ASR, labels and prior instruction can cue interpretation; no transcript-only or model-input ablation was performed.",
+      "result": "accepted_after_targeted_native_frame_review"
+    },
+    {
+      "task_id": "s3av_v2_OJB8ZNtVAvA_02",
+      "video_id": "OJB8ZNtVAvA",
+      "finding": "790 query and inspected791–801.0625 show color imaging without lower spectral panel. At801.125 an already populated spectral trace is clearly visible below the small heart image.802 was late; moved to801.125.",
+      "changes": {
+        "answer_time": {
+          "before": 802,
+          "after": 801.125
+        },
+        "review_status": {
+          "before": "accepted_partial_sampled_question_led_self_review",
+          "after": "accepted_targeted_native_frame_self_review"
+        }
+      },
+      "qa_evidence_checkpoints": [
+        790,
+        791,
+        792,
+        793,
+        794,
+        795,
+        796,
+        797,
+        798,
+        799,
+        800,
+        801,
+        801.0625,
+        801.125
+      ],
+      "all_actually_opened_context_frames_for_video": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/OJB8ZNtVAvA/740.jpg",
+          "checkpoint": 740.0,
+          "source_pts_seconds": 739.933333,
+          "resolution": [
+            640,
+            360
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/OJB8ZNtVAvA/745.jpg",
+          "checkpoint": 745.0,
+          "source_pts_seconds": 744.933333,
+          "resolution": [
+            640,
+            360
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/OJB8ZNtVAvA/750.jpg",
+          "checkpoint": 750.0,
+          "source_pts_seconds": 749.933333,
+          "resolution": [
+            640,
+            360
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/OJB8ZNtVAvA/790.jpg",
+          "checkpoint": 790.0,
+          "source_pts_seconds": 789.933333,
+          "resolution": [
+            640,
+            360
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/OJB8ZNtVAvA/791.jpg",
+          "checkpoint": 791.0,
+          "source_pts_seconds": 790.933333,
+          "resolution": [
+            640,
+            360
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/OJB8ZNtVAvA/792.jpg",
+          "checkpoint": 792.0,
+          "source_pts_seconds": 791.933333,
+          "resolution": [
+            640,
+            360
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/OJB8ZNtVAvA/793.jpg",
+          "checkpoint": 793.0,
+          "source_pts_seconds": 792.933333,
+          "resolution": [
+            640,
+            360
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/OJB8ZNtVAvA/794.jpg",
+          "checkpoint": 794.0,
+          "source_pts_seconds": 793.933333,
+          "resolution": [
+            640,
+            360
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/OJB8ZNtVAvA/795.jpg",
+          "checkpoint": 795.0,
+          "source_pts_seconds": 794.933333,
+          "resolution": [
+            640,
+            360
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/OJB8ZNtVAvA/796.jpg",
+          "checkpoint": 796.0,
+          "source_pts_seconds": 795.933333,
+          "resolution": [
+            640,
+            360
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/OJB8ZNtVAvA/797.jpg",
+          "checkpoint": 797.0,
+          "source_pts_seconds": 796.933333,
+          "resolution": [
+            640,
+            360
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/OJB8ZNtVAvA/798.jpg",
+          "checkpoint": 798.0,
+          "source_pts_seconds": 797.933333,
+          "resolution": [
+            640,
+            360
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/OJB8ZNtVAvA/799.jpg",
+          "checkpoint": 799.0,
+          "source_pts_seconds": 798.933333,
+          "resolution": [
+            640,
+            360
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/OJB8ZNtVAvA/800.jpg",
+          "checkpoint": 800.0,
+          "source_pts_seconds": 799.933333,
+          "resolution": [
+            640,
+            360
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/OJB8ZNtVAvA/801.jpg",
+          "checkpoint": 801.0,
+          "source_pts_seconds": 800.933333,
+          "resolution": [
+            640,
+            360
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/OJB8ZNtVAvA/801.062.jpg",
+          "checkpoint": 801.0625,
+          "source_pts_seconds": 801.0,
+          "resolution": [
+            640,
+            360
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/OJB8ZNtVAvA/801.125.jpg",
+          "checkpoint": 801.125,
+          "source_pts_seconds": 801.066667,
+          "resolution": [
+            640,
+            360
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/OJB8ZNtVAvA/801.25.jpg",
+          "checkpoint": 801.25,
+          "source_pts_seconds": 801.2,
+          "resolution": [
+            640,
+            360
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/OJB8ZNtVAvA/801.5.jpg",
+          "checkpoint": 801.5,
+          "source_pts_seconds": 801.433333,
+          "resolution": [
+            640,
+            360
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/OJB8ZNtVAvA/801.75.jpg",
+          "checkpoint": 801.75,
+          "source_pts_seconds": 801.7,
+          "resolution": [
+            640,
+            360
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/OJB8ZNtVAvA/802.jpg",
+          "checkpoint": 802.0,
+          "source_pts_seconds": 801.933333,
+          "resolution": [
+            640,
+            360
+          ]
+        }
+      ],
+      "query_prefix_result": "WAIT",
+      "answer_prefix_result": "ANSWER",
+      "shortcut_risk": "ASR, labels and prior instruction can cue interpretation; no transcript-only or model-input ablation was performed.",
+      "result": "accepted_after_targeted_native_frame_review"
+    },
+    {
+      "task_id": "s3av_v2_pClYyRZlYE8_01",
+      "video_id": "pClYyRZlYE8",
+      "finding": "The two lumen positions are visible at330. Removed needle-approach clause: the dotted guide must not be conflated with an actually localized needle.",
+      "changes": {
+        "question": {
+          "before": "Before the needle reaches the vessel, where is the larger dark circular lumen relative to the smaller one, and which circle is the needle approaching?",
+          "after": "In this transverse sonogram, where is the larger dark lumen relative to the smaller dark lumen?"
+        },
+        "reference_answer": {
+          "before": "The larger dark circle is above and to the right of the smaller circle; the bright needle is aligned over the larger circle.",
+          "after": "The larger dark lumen is above and to the right of the smaller dark lumen."
+        },
+        "review_status": {
+          "before": "accepted_partial_sampled_question_led_self_review",
+          "after": "accepted_targeted_native_frame_self_review"
+        }
+      },
+      "qa_evidence_checkpoints": [
+        330
+      ],
+      "all_actually_opened_context_frames_for_video": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/pClYyRZlYE8/330.jpg",
+          "checkpoint": 330.0,
+          "source_pts_seconds": 329.92,
+          "resolution": [
+            850,
+            480
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/pClYyRZlYE8/335.jpg",
+          "checkpoint": 335.0,
+          "source_pts_seconds": 334.92,
+          "resolution": [
+            850,
+            480
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/pClYyRZlYE8/336.jpg",
+          "checkpoint": 336.0,
+          "source_pts_seconds": 335.92,
+          "resolution": [
+            850,
+            480
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/pClYyRZlYE8/337.jpg",
+          "checkpoint": 337.0,
+          "source_pts_seconds": 336.92,
+          "resolution": [
+            850,
+            480
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/pClYyRZlYE8/338.jpg",
+          "checkpoint": 338.0,
+          "source_pts_seconds": 337.92,
+          "resolution": [
+            850,
+            480
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/pClYyRZlYE8/339.jpg",
+          "checkpoint": 339.0,
+          "source_pts_seconds": 338.92,
+          "resolution": [
+            850,
+            480
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/pClYyRZlYE8/340.jpg",
+          "checkpoint": 340.0,
+          "source_pts_seconds": 339.92,
+          "resolution": [
+            850,
+            480
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/pClYyRZlYE8/340.25.jpg",
+          "checkpoint": 340.25,
+          "source_pts_seconds": 340.2,
+          "resolution": [
+            850,
+            480
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/pClYyRZlYE8/340.5.jpg",
+          "checkpoint": 340.5,
+          "source_pts_seconds": 340.44,
+          "resolution": [
+            850,
+            480
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/pClYyRZlYE8/340.75.jpg",
+          "checkpoint": 340.75,
+          "source_pts_seconds": 340.68,
+          "resolution": [
+            850,
+            480
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/pClYyRZlYE8/341.jpg",
+          "checkpoint": 341.0,
+          "source_pts_seconds": 340.92,
+          "resolution": [
+            850,
+            480
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/pClYyRZlYE8/342.jpg",
+          "checkpoint": 342.0,
+          "source_pts_seconds": 341.92,
+          "resolution": [
+            850,
+            480
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/pClYyRZlYE8/343.jpg",
+          "checkpoint": 343.0,
+          "source_pts_seconds": 342.92,
+          "resolution": [
+            850,
+            480
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/pClYyRZlYE8/344.jpg",
+          "checkpoint": 344.0,
+          "source_pts_seconds": 343.92,
+          "resolution": [
+            850,
+            480
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/pClYyRZlYE8/345.jpg",
+          "checkpoint": 345.0,
+          "source_pts_seconds": 344.92,
+          "resolution": [
+            850,
+            480
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/pClYyRZlYE8/346.jpg",
+          "checkpoint": 346.0,
+          "source_pts_seconds": 345.92,
+          "resolution": [
+            850,
+            480
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/pClYyRZlYE8/347.jpg",
+          "checkpoint": 347.0,
+          "source_pts_seconds": 346.92,
+          "resolution": [
+            850,
+            480
+          ]
+        }
+      ],
+      "query_prefix_result": "ANSWER",
+      "answer_prefix_result": "ANSWER",
+      "shortcut_risk": "ASR, labels and prior instruction can cue interpretation; no transcript-only or model-input ablation was performed.",
+      "result": "accepted_after_targeted_native_frame_review"
+    },
+    {
+      "task_id": "s3av_v2_pClYyRZlYE8_02",
+      "video_id": "pClYyRZlYE8",
+      "finding": "335 query: main bright echoes are above the lumen; no distinct separate intraluminal focus.340.25 insufficiently distinct;340.5 a small bright echo is distinguishable below the upper wall.346 was late. Reworded to observable echo, without claiming exact physical needle-tip location or successful cannulation.",
+      "changes": {
+        "question": {
+          "before": "Notify me once the bright needle tip is visibly inside the larger dark circular lumen, rather than only above its upper edge.",
+          "after": "Notify me when a separate bright echo becomes clearly visible inside the larger dark lumen, below its upper wall."
+        },
+        "reference_answer": {
+          "before": "The bright tip has crossed the upper border and appears as a distinct white spot inside the larger dark lumen.",
+          "after": "A small bright echo is now visible in the upper part of the larger dark lumen, below and separate from its upper wall."
+        },
+        "answer_time": {
+          "before": 346,
+          "after": 340.5
+        },
+        "review_status": {
+          "before": "accepted_partial_sampled_question_led_self_review",
+          "after": "accepted_targeted_native_frame_self_review"
+        }
+      },
+      "qa_evidence_checkpoints": [
+        335,
+        336,
+        337,
+        338,
+        339,
+        340,
+        340.25,
+        340.5
+      ],
+      "all_actually_opened_context_frames_for_video": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/pClYyRZlYE8/330.jpg",
+          "checkpoint": 330.0,
+          "source_pts_seconds": 329.92,
+          "resolution": [
+            850,
+            480
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/pClYyRZlYE8/335.jpg",
+          "checkpoint": 335.0,
+          "source_pts_seconds": 334.92,
+          "resolution": [
+            850,
+            480
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/pClYyRZlYE8/336.jpg",
+          "checkpoint": 336.0,
+          "source_pts_seconds": 335.92,
+          "resolution": [
+            850,
+            480
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/pClYyRZlYE8/337.jpg",
+          "checkpoint": 337.0,
+          "source_pts_seconds": 336.92,
+          "resolution": [
+            850,
+            480
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/pClYyRZlYE8/338.jpg",
+          "checkpoint": 338.0,
+          "source_pts_seconds": 337.92,
+          "resolution": [
+            850,
+            480
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/pClYyRZlYE8/339.jpg",
+          "checkpoint": 339.0,
+          "source_pts_seconds": 338.92,
+          "resolution": [
+            850,
+            480
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/pClYyRZlYE8/340.jpg",
+          "checkpoint": 340.0,
+          "source_pts_seconds": 339.92,
+          "resolution": [
+            850,
+            480
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/pClYyRZlYE8/340.25.jpg",
+          "checkpoint": 340.25,
+          "source_pts_seconds": 340.2,
+          "resolution": [
+            850,
+            480
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/pClYyRZlYE8/340.5.jpg",
+          "checkpoint": 340.5,
+          "source_pts_seconds": 340.44,
+          "resolution": [
+            850,
+            480
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/pClYyRZlYE8/340.75.jpg",
+          "checkpoint": 340.75,
+          "source_pts_seconds": 340.68,
+          "resolution": [
+            850,
+            480
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/pClYyRZlYE8/341.jpg",
+          "checkpoint": 341.0,
+          "source_pts_seconds": 340.92,
+          "resolution": [
+            850,
+            480
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/pClYyRZlYE8/342.jpg",
+          "checkpoint": 342.0,
+          "source_pts_seconds": 341.92,
+          "resolution": [
+            850,
+            480
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/pClYyRZlYE8/343.jpg",
+          "checkpoint": 343.0,
+          "source_pts_seconds": 342.92,
+          "resolution": [
+            850,
+            480
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/pClYyRZlYE8/344.jpg",
+          "checkpoint": 344.0,
+          "source_pts_seconds": 343.92,
+          "resolution": [
+            850,
+            480
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/pClYyRZlYE8/345.jpg",
+          "checkpoint": 345.0,
+          "source_pts_seconds": 344.92,
+          "resolution": [
+            850,
+            480
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/pClYyRZlYE8/346.jpg",
+          "checkpoint": 346.0,
+          "source_pts_seconds": 345.92,
+          "resolution": [
+            850,
+            480
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_review4_20261112/frames/pClYyRZlYE8/347.jpg",
+          "checkpoint": 347.0,
+          "source_pts_seconds": 346.92,
+          "resolution": [
+            850,
+            480
+          ]
+        }
+      ],
+      "query_prefix_result": "WAIT",
+      "answer_prefix_result": "ANSWER",
+      "shortcut_risk": "ASR, labels and prior instruction can cue interpretation; no transcript-only or model-input ablation was performed.",
+      "result": "accepted_after_targeted_native_frame_review"
+    }
+  ]
+}

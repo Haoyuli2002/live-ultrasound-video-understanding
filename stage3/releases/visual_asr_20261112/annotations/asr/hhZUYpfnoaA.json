@@ -1,0 +1,1193 @@
+{
+  "video_id": "hhZUYpfnoaA",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/hhZUYpfnoaA/asr.txt",
+  "segments": [
+    {
+      "start": 1.82,
+      "end": 7.71,
+      "text": "Hello, I'm Lauren McCafferty, and I'm an ultrasound fellow at University Hospital's Cleveland Medical Center."
+    },
+    {
+      "start": 8.79,
+      "end": 9.97,
+      "text": "I'm doing a series on the..."
+    },
+    {
+      "start": 10.0,
+      "end": 13.8,
+      "text": "use of point-of-care ultrasound to augment what are traditionally considered"
+    },
+    {
+      "start": 14.06,
+      "end": 18.35,
+      "text": "landmark-based procedures. To start things off, I'll be discussing one bar"
+    },
+    {
+      "start": 18.35,
+      "end": 19.25,
+      "text": "puncture in this video."
+    },
+    {
+      "start": 22.66,
+      "end": 24.66,
+      "text": "Before I move on, a couple quick disclaimers."
+    },
+    {
+      "start": 25.84,
+      "end": 27.74,
+      "text": "When I talk about ultrasound guided LP,"
+    },
+    {
+      "start": 28.28,
+      "end": 29.6,
+      "text": "I'm referring to static guidance."
+    },
+    {
+      "start": 30.16,
+      "end": 32.56,
+      "text": "rather than dynamic guidance, which is the typical way"
+    },
+    {
+      "start": 32.56,
+      "end": 34.24,
+      "text": "that we use ultrasound for procedures."
+    },
+    {
+      "start": 35.5,
+      "end": 39.34,
+      "text": "Here, we'll be using ultrasound to identify the anatomy."
+    },
+    {
+      "start": 40.13,
+      "end": 42.69,
+      "text": "Martha's skin, and then using those markings,"
+    },
+    {
+      "start": 42.71,
+      "end": 45.75,
+      "text": "you would proceed with the LP as you normally would"
+    },
+    {
+      "start": 45.75,
+      "end": 46.91,
+      "text": "without the use of ultrasound."
+    },
+    {
+      "start": 47.6,
+      "end": 49.72,
+      "text": "So you're not visualizing the needle in real time."
+    },
+    {
+      "start": 52.3,
+      "end": 56.8,
+      "text": "The other thing is that I'm going to focus primarily on the ultrasound component, not the"
+    },
+    {
+      "start": 56.8,
+      "end": 57.6,
+      "text": "procedure itself."
+    },
+    {
+      "start": 60.0,
+      "end": 65.94,
+      "text": "ultrasound for this. The obvious answer is that you can better visualize anatomy. Sometimes"
+    },
+    {
+      "start": 65.94,
+      "end": 69.58,
+      "text": "you might get lucky and can easily identify a patient's landmarks."
+    },
+    {
+      "start": 70.06,
+      "end": 72.5,
+      "text": "with palpation or even direct visualization,"
+    },
+    {
+      "start": 73.31,
+      "end": 74.71,
+      "text": "you know, exactly where to place the needle,"
+    },
+    {
+      "start": 75.07,
+      "end": 76.63,
+      "text": "and you can do the top no problem."
+    },
+    {
+      "start": 77.66,
+      "end": 79.98,
+      "text": "However, we all know that it's not always the-"
+    },
+    {
+      "start": 80.0,
+      "end": 84.85,
+      "text": "that easy. At some point, if you haven't already, you'll have a patient that looks something"
+    },
+    {
+      "start": 84.85,
+      "end": 89.48,
+      "text": "like this, where you can't even come close to reliably identifying endotomypes."
+    },
+    {
+      "start": 90.06,
+      "end": 93.02,
+      "text": "by optimal positioning and deep palpation,"
+    },
+    {
+      "start": 93.62,
+      "end": 94.8,
+      "text": "even if you do it multiple times."
+    },
+    {
+      "start": 96.34,
+      "end": 97.88,
+      "text": "This is an example where ultrasound"
+    },
+    {
+      "start": 97.88,
+      "end": 99.94,
+      "text": "to better visualize anatomy can cool."
+    },
+    {
+      "start": 100.0,
+      "end": 100.98,
+      "text": "clearly be an advantage."
+    },
+    {
+      "start": 102.43,
+      "end": 105.11,
+      "text": "In addition to obesity, another patient factor"
+    },
+    {
+      "start": 105.11,
+      "end": 107.05,
+      "text": "that might encourage you to use ultrasound"
+    },
+    {
+      "start": 107.35,
+      "end": 109.15,
+      "text": "is someone with abnormal anatomy."
+    },
+    {
+      "start": 110.06,
+      "end": 112.32,
+      "text": "It could be someone with a history of scoliosis,"
+    },
+    {
+      "start": 112.92,
+      "end": 115.64,
+      "text": "or degenerative disease, or really anything"
+    },
+    {
+      "start": 115.64,
+      "end": 118.54,
+      "text": "in which the anatomy is disrupted in some way."
+    },
+    {
+      "start": 120.0,
+      "end": 124.54,
+      "text": "While these groups of patients may be obvious ones for which you should consider ultrasound,"
+    },
+    {
+      "start": 124.88,
+      "end": 129.31,
+      "text": "the evidence suggests that ultrasound is actually advantageous in any patient."
+    },
+    {
+      "start": 132.27,
+      "end": 139.83,
+      "text": "This was a systematic review and meta-analysis from 2019 in which a total of 12 studies all"
+    },
+    {
+      "start": 140.03,
+      "end": 145.88,
+      "text": "respective randomized control trials with just under 1,000 patients were ultimately included."
+    },
+    {
+      "start": 146.88,
+      "end": 149.9,
+      "text": "They were comparing ultrasound assisted or static."
+    },
+    {
+      "start": 150.06,
+      "end": 155.72,
+      "text": "guidance LP versus a landmark approach LP, which one had a higher success rate."
+    },
+    {
+      "start": 156.93,
+      "end": 159.83,
+      "text": "In addition to finding out that ultrasound guided"
+    },
+    {
+      "start": 160.0,
+      "end": 165.82,
+      "text": "LPs at higher success rates, they also found that the use of ultrasound was associated"
+    },
+    {
+      "start": 165.82,
+      "end": 169.83,
+      "text": "with fewer traumatic LPs for their time to successful LPs."
+    },
+    {
+      "start": 170.61,
+      "end": 173.09,
+      "text": "fewer attempts and lower patient pain scores."
+    },
+    {
+      "start": 173.82,
+      "end": 176.62,
+      "text": "Overall, this was a win for ultrasound guided alpsies."
+    },
+    {
+      "start": 180.54,
+      "end": 184.42,
+      "text": "The general technique, you're going to optimally position your patient."
+    },
+    {
+      "start": 185.1,
+      "end": 188.34,
+      "text": "This means placing them in whichever position you plan to do the procedure."
+    },
+    {
+      "start": 189.19,
+      "end": 189.89,
+      "text": "It's very important."
+    },
+    {
+      "start": 190.0,
+      "end": 192.41,
+      "text": "to minimize movement of either your"
+    },
+    {
+      "start": 192.41,
+      "end": 194.57,
+      "text": "software, the patient, as any movement"
+    },
+    {
+      "start": 194.57,
+      "end": 197.43,
+      "text": "could easily throw off your anatomy and"
+    },
+    {
+      "start": 197.43,
+      "end": 199.15,
+      "text": "make the use of ultrasound essentially"
+    },
+    {
+      "start": 199.15,
+      "end": 199.85,
+      "text": "far less use."
+    },
+    {
+      "start": 200.13,
+      "end": 206.15,
+      "text": "In terms of probe choice, you can use either the linear or the curvilinear probe,"
+    },
+    {
+      "start": 206.41,
+      "end": 207.25,
+      "text": "whichever you prefer."
+    },
+    {
+      "start": 208.13,
+      "end": 209.97,
+      "text": "So in larger patients, the curvilinear"
+    },
+    {
+      "start": 210.0,
+      "end": 215.4,
+      "text": "probe, maybe your only option. I personally prefer the curvilinear probe just"
+    },
+    {
+      "start": 215.4,
+      "end": 219.68,
+      "text": "because it gives you a better view of your entire field and a surrounding anatomy."
+    },
+    {
+      "start": 221.98,
+      "end": 224.62,
+      "text": "always scan in both a long and short axis."
+    },
+    {
+      "start": 225.12,
+      "end": 227.2,
+      "text": "I'll go into more detail about that in the coming slides."
+    },
+    {
+      "start": 228.72,
+      "end": 229.98,
+      "text": "And finally, the overall..."
+    },
+    {
+      "start": 230.0,
+      "end": 234.52,
+      "text": "What I'll go when you're doing this is to identify the optimal location for needle entry."
+    },
+    {
+      "start": 237.27,
+      "end": 239.91,
+      "text": "Just a brief review of the Lumbar spine."
+    },
+    {
+      "start": 240.0,
+      "end": 245.6,
+      "text": "anatomy. On the left is a sagittal view, and the right is a posterior coronal view."
+    },
+    {
+      "start": 246.54,
+      "end": 249.94,
+      "text": "The mainly marks you'll be looking for on ultrasound are this spinous"
+    },
+    {
+      "start": 250.71,
+      "end": 256.85,
+      "text": "These are going to be your guide for finding the inter-richy-roll spaces, which is where you'll be directing your needle."
+    },
+    {
+      "start": 258.96,
+      "end": 259.98,
+      "text": "Your first goal and do..."
+    },
+    {
+      "start": 260.03,
+      "end": 264.48,
+      "text": "this is to identify the midline. You'll place your probe in a transverse"
+    },
+    {
+      "start": 264.48,
+      "end": 269.23,
+      "text": "orientation over the patient's lower lumbar spine. The probe marker should"
+    },
+    {
+      "start": 269.23,
+      "end": 269.97,
+      "text": "point toward the"
+    },
+    {
+      "start": 270.0,
+      "end": 274.28,
+      "text": "patient's left. It's interesting behind the patient. That way, when you move the"
+    },
+    {
+      "start": 274.28,
+      "end": 278.72,
+      "text": "probe left on the patient's skin, the image on the screen will move left as"
+    },
+    {
+      "start": 278.72,
+      "end": 279.98,
+      "text": "well. It just makes it..."
+    },
+    {
+      "start": 280.1,
+      "end": 289.41,
+      "text": "If you're going to get something that looks like this, this is a cross-sectional view of the patient's spine."
+    },
+    {
+      "start": 290.0,
+      "end": 296.9,
+      "text": "essentially an upside down version of an axial CT or MRI. And the reason I say that is because structures"
+    },
+    {
+      "start": 296.9,
+      "end": 299.97,
+      "text": "Here at the top of the screen are going to be more"
+    },
+    {
+      "start": 300.1,
+      "end": 304.94,
+      "text": "posterior on your patient, whereas structures at the bottom of the screen are more anterior"
+    },
+    {
+      "start": 304.94,
+      "end": 305.68,
+      "text": "on your patient."
+    },
+    {
+      "start": 306.71,
+      "end": 309.61,
+      "text": "The opposite of that of an axial CT or MRI."
+    },
+    {
+      "start": 310.93,
+      "end": 316.55,
+      "text": "So you're mainly looking for the spinous process, which typically shows up as a hypercook"
+    },
+    {
+      "start": 316.55,
+      "end": 319.33,
+      "text": "rim with clear shadowing behind it."
+    },
+    {
+      "start": 320.13,
+      "end": 322.77,
+      "text": "This is not the best example of a clear spineless process."
+    },
+    {
+      "start": 322.81,
+      "end": 325.53,
+      "text": "I'll show you what a better example in just a second,"
+    },
+    {
+      "start": 326.36,
+      "end": 327.98,
+      "text": "but here I just wanted to point out"
+    },
+    {
+      "start": 327.98,
+      "end": 329.92,
+      "text": "kind of what the overall anatomy is."
+    },
+    {
+      "start": 330.0,
+      "end": 337.24,
+      "text": "You find the shadowing behind this finest process. You line that up in the middle of your screen that's your midline"
+    },
+    {
+      "start": 337.24,
+      "end": 339.72,
+      "text": "And then if you look on each side"
+    },
+    {
+      "start": 340.0,
+      "end": 342.86,
+      "text": "you can see the pair of spinal muscles in the lamina,"
+    },
+    {
+      "start": 343.02,
+      "end": 344.4,
+      "text": "extending out from the midline,"
+    },
+    {
+      "start": 344.9,
+      "end": 346.82,
+      "text": "and in the transverse process beyond that."
+    },
+    {
+      "start": 350.03,
+      "end": 358.79,
+      "text": "reference this is the anatomy that you're looking at. This is a better example of a clear"
+    },
+    {
+      "start": 358.79,
+      "end": 359.63,
+      "text": "your spinous process."
+    },
+    {
+      "start": 360.38,
+      "end": 364.36,
+      "text": "There's the hypercog rim with a clear posterior shadowing behind it."
+    },
+    {
+      "start": 365.08,
+      "end": 368.68,
+      "text": "Again, this is your midline, so you want to center this on the screen."
+    },
+    {
+      "start": 369.38,
+      "end": 369.96,
+      "text": "And once you do..."
+    },
+    {
+      "start": 370.0,
+      "end": 374.21,
+      "text": "that are going to make a mark on the patient's skin in the center of the probe."
+    },
+    {
+      "start": 376.47,
+      "end": 379.97,
+      "text": "Once you've done that, your next goal is to identify..."
+    },
+    {
+      "start": 380.0,
+      "end": 385.59,
+      "text": "the interval space. So you're going to take your probe from the transverse view, rotate"
+    },
+    {
+      "start": 385.59,
+      "end": 389.97,
+      "text": "90 degrees clockwise, so the probe marker is now pointing towards..."
+    },
+    {
+      "start": 390.0,
+      "end": 394.85,
+      "text": "patient's head. Remember the midline that you just marked off and keep your"
+    },
+    {
+      "start": 394.85,
+      "end": 399.48,
+      "text": "probe directly over that midline. That way it will ensure that you're directly"
+    },
+    {
+      "start": 399.48,
+      "end": 399.94,
+      "text": "over this."
+    },
+    {
+      "start": 400.06,
+      "end": 407.66,
+      "text": "process. This is what you'll see. There'll be multiple spinous processes that appear as bright"
+    },
+    {
+      "start": 407.66,
+      "end": 409.97,
+      "text": "hypercog arcs with shadowing"
+    },
+    {
+      "start": 410.0,
+      "end": 415.63,
+      "text": "behind them. You'll be able to tell which spinal level you're at based on the relation to the"
+    },
+    {
+      "start": 415.63,
+      "end": 419.89,
+      "text": "which will have a very different appearance from the arc like structure."
+    },
+    {
+      "start": 420.03,
+      "end": 421.53,
+      "text": "of the spinous processes."
+    },
+    {
+      "start": 422.31,
+      "end": 425.78,
+      "text": "So once you find your sacrum, you'll count up from there."
+    },
+    {
+      "start": 426.28,
+      "end": 428.72,
+      "text": "So here, the sacrum is going to be on the right of the screen."
+    },
+    {
+      "start": 428.72,
+      "end": 429.86,
+      "text": "It's not very well visual."
+    },
+    {
+      "start": 430.16,
+      "end": 437.1,
+      "text": "But then the arc in the center of the screen is going to be L5 and then the one on the left to that is L4"
+    },
+    {
+      "start": 437.1,
+      "end": 439.82,
+      "text": "So once you find that"
+    },
+    {
+      "start": 440.0,
+      "end": 444.66,
+      "text": "What you're really looking for is the intervertebral space, which is the space between the spin"
+    },
+    {
+      "start": 444.66,
+      "end": 445.2,
+      "text": "and process."
+    },
+    {
+      "start": 446.08,
+      "end": 448.06,
+      "text": "This is going to be where you're going to direct your needle."
+    },
+    {
+      "start": 451.02,
+      "end": 454.02,
+      "text": "And this is what it will look like using a linear probe."
+    },
+    {
+      "start": 455.25,
+      "end": 456.79,
+      "text": "This was a slightly thinner patient."
+    },
+    {
+      "start": 457.55,
+      "end": 459.97,
+      "text": "You can see that you don't get quite as good of a view."
+    },
+    {
+      "start": 460.0,
+      "end": 465.46,
+      "text": "of the surrounding anatomy, but you make it better resolution and you can still see this"
+    },
+    {
+      "start": 465.46,
+      "end": 469.87,
+      "text": "spinous process as a hypercog rim with shadowing behind."
+    },
+    {
+      "start": 470.0,
+      "end": 475.39,
+      "text": "it. You can see that on either side of the screen here. And then the space between is your"
+    },
+    {
+      "start": 475.39,
+      "end": 478.53,
+      "text": "intervertebral space, which is where you'll be directing the needle."
+    },
+    {
+      "start": 481.47,
+      "end": 483.39,
+      "text": "Once you find an interregiable space,"
+    },
+    {
+      "start": 483.73,
+      "end": 485.01,
+      "text": "you want to slide your probes slightly,"
+    },
+    {
+      "start": 485.19,
+      "end": 487.79,
+      "text": "superiorly or inferiorly while staying on the midline,"
+    },
+    {
+      "start": 488.67,
+      "end": 489.73,
+      "text": "and mark the patient's skin."
+    },
+    {
+      "start": 489.95,
+      "end": 489.97,
+      "text": "And..."
+    },
+    {
+      "start": 490.0,
+      "end": 490.84,
+      "text": "in the middle of the probe."
+    },
+    {
+      "start": 491.84,
+      "end": 494.76,
+      "text": "Ideally, you'll identify and mark off multiple"
+    },
+    {
+      "start": 494.76,
+      "end": 498.4,
+      "text": "inter-retrieble spaces so that you have multiple options"
+    },
+    {
+      "start": 498.4,
+      "end": 499.84,
+      "text": "in the event that the first attempt."
+    },
+    {
+      "start": 500.03,
+      "end": 507.22,
+      "text": "and go so low. Once you've made both your horizontal and vertical marks extend them until they form"
+    },
+    {
+      "start": 507.66,
+      "end": 509.88,
+      "text": "across. Use cross section."
+    },
+    {
+      "start": 510.0,
+      "end": 512.6,
+      "text": "are then going to be your targets for needle entry."
+    },
+    {
+      "start": 514.78,
+      "end": 516.5,
+      "text": "One more thing you can use ultrasound for"
+    },
+    {
+      "start": 516.5,
+      "end": 519.14,
+      "text": "is to estimate depth to the sub-regnoid space."
+    },
+    {
+      "start": 520.0,
+      "end": 524.0,
+      "text": "So remember that this isn't perfect and it's only a rough estimate, but it is useful in"
+    },
+    {
+      "start": 524.0,
+      "end": 528.3,
+      "text": "helping you decide how long of a needle you should use and about how deep the needle should"
+    },
+    {
+      "start": 528.3,
+      "end": 529.98,
+      "text": "go before you should explain."
+    },
+    {
+      "start": 530.0,
+      "end": 539.66,
+      "text": "to see some CSF. Back to our long axis view. So, you see the spinous processes, the inter-ritual space between them."
+    },
+    {
+      "start": 540.32,
+      "end": 542.94,
+      "text": "And you'll notice, as you look at the individual space"
+    },
+    {
+      "start": 542.94,
+      "end": 545.98,
+      "text": "and move slightly anteriorly, so down the screen,"
+    },
+    {
+      "start": 546.4,
+      "end": 549.2,
+      "text": "you'll notice an abrupt change in ecogenicity."
+    },
+    {
+      "start": 550.13,
+      "end": 556.85,
+      "text": "about here. So this is your ligamentum flavum and this is what will elicit the pop as you're"
+    },
+    {
+      "start": 556.85,
+      "end": 558.57,
+      "text": "getting into the sub-regnoid space."
+    },
+    {
+      "start": 560.0,
+      "end": 564.67,
+      "text": "So measure the distance between the patient's skin and the ligamentum flavum."
+    },
+    {
+      "start": 565.43,
+      "end": 569.97,
+      "text": "And notice that this is slightly angled because, as you recall, when you..."
+    },
+    {
+      "start": 570.03,
+      "end": 575.29,
+      "text": "do an LP, you want to direct your needle for the umbal ligus, so at a slight angle,"
+    },
+    {
+      "start": 575.57,
+      "end": 578.61,
+      "text": "rather than entering the skin at completely 90 degrees."
+    },
+    {
+      "start": 581.06,
+      "end": 585.55,
+      "text": "in your short axis view, you're going to actually slide"
+    },
+    {
+      "start": 585.55,
+      "end": 589.21,
+      "text": "slightly superior, inferior, off of the spinous process."
+    },
+    {
+      "start": 589.63,
+      "end": 589.97,
+      "text": "So that."
+    },
+    {
+      "start": 590.0,
+      "end": 596.16,
+      "text": "way you're able to see structures more anteriorly or deeper. So here you can"
+    },
+    {
+      "start": 596.16,
+      "end": 599.92,
+      "text": "actually see part of the vertebral body within that shot."
+    },
+    {
+      "start": 600.0,
+      "end": 605.9,
+      "text": "You again see the lamina and the spinous process is even less clearer than it was before now"
+    },
+    {
+      "start": 606.63,
+      "end": 609.05,
+      "text": "You're looking for that area right about here"
+    },
+    {
+      "start": 610.0,
+      "end": 611.78,
+      "text": "Again, there's a slight change in aquagenicity."
+    },
+    {
+      "start": 613.38,
+      "end": 618.38,
+      "text": "The third view for estimating depth is by using the lamina, which is a new view."
+    },
+    {
+      "start": 619.1,
+      "end": 619.98,
+      "text": "So you're going to go back..."
+    },
+    {
+      "start": 620.0,
+      "end": 625.42,
+      "text": "to your long axis view with the probe over the spinous processes, and then you're going"
+    },
+    {
+      "start": 625.42,
+      "end": 629.39,
+      "text": "to slide the probe slightly left or right off of the midline."
+    },
+    {
+      "start": 630.19,
+      "end": 632.11,
+      "text": "so that your probe is directly over the lamina."
+    },
+    {
+      "start": 633.87,
+      "end": 637.29,
+      "text": "The lamina will appear similar to the spinous process"
+    },
+    {
+      "start": 637.29,
+      "end": 639.82,
+      "text": "in that it's a hybricoid."
+    },
+    {
+      "start": 640.1,
+      "end": 645.41,
+      "text": "with shadowing behind it. The difference here is that the lamina are more"
+    },
+    {
+      "start": 645.41,
+      "end": 649.84,
+      "text": "closely approximated so there's less space between the lamina."
+    },
+    {
+      "start": 650.67,
+      "end": 657.66,
+      "text": "Also, the lamina are going to be deeper on your screen than the spinous process because the"
+    },
+    {
+      "start": 657.66,
+      "end": 659.96,
+      "text": "I mean, I don't extend this far posteriorly."
+    },
+    {
+      "start": 660.0,
+      "end": 667.47,
+      "text": "as the spinous process. And additionally, you'll notice here that there is a large muscle with its"
+    },
+    {
+      "start": 667.47,
+      "end": 669.97,
+      "text": "longitudinal fibers running above the laminate."
+    },
+    {
+      "start": 670.0,
+      "end": 674.17,
+      "text": "And this is your paris spinal muscle, which you shouldn't see with this"
+    },
+    {
+      "start": 674.17,
+      "end": 679.74,
+      "text": "spinos process. Here you're going to measure the distance between"
+    },
+    {
+      "start": 680.0,
+      "end": 685.74,
+      "text": "the patient's skin and the lowest point between the lamina before you get the shadowing."
+    },
+    {
+      "start": 685.74,
+      "end": 689.27,
+      "text": "This is another rough estimate of a distance."
+    },
+    {
+      "start": 690.0,
+      "end": 697.09,
+      "text": "the sub-regnide space. A few pearls and pitfalls. Remember that this may not be"
+    },
+    {
+      "start": 697.09,
+      "end": 699.96,
+      "text": "perfect. While you use ultrasound to help better..."
+    },
+    {
+      "start": 700.0,
+      "end": 705.64,
+      "text": "visualize anatomy. You might still have poor visualization, especially in people with larger body"
+    },
+    {
+      "start": 705.64,
+      "end": 709.98,
+      "text": "have it is or abnormal anatomy so that you can't really get a good sense of what."
+    },
+    {
+      "start": 710.0,
+      "end": 717.38,
+      "text": "you're looking at. It's taking anatomy. This can happen for a variety of reasons. It could be that you"
+    },
+    {
+      "start": 717.38,
+      "end": 719.96,
+      "text": "just haven't done this very much and you don't really..."
+    },
+    {
+      "start": 720.0,
+      "end": 724.74,
+      "text": "know what anatomy is supposed to look like with ultrasound. It could be that"
+    },
+    {
+      "start": 724.74,
+      "end": 728.78,
+      "text": "you do have plenty of experience, but you're probably slightly off midline and"
+    },
+    {
+      "start": 728.78,
+      "end": 729.98,
+      "text": "you accidentally..."
+    },
+    {
+      "start": 730.0,
+      "end": 732.51,
+      "text": "to stick a lamina for the spinous process."
+    },
+    {
+      "start": 733.54,
+      "end": 735.66,
+      "text": "It could be that you're fanning your probe slightly"
+    },
+    {
+      "start": 735.66,
+      "end": 737.46,
+      "text": "and not perpendicular to the skin,"
+    },
+    {
+      "start": 737.64,
+      "end": 739.74,
+      "text": "which will throw everything off a little bit as well."
+    },
+    {
+      "start": 740.83,
+      "end": 744.03,
+      "text": "to just be aware of the potential to mistake anatomy."
+    },
+    {
+      "start": 745.82,
+      "end": 747.58,
+      "text": "For this reason, make sure your probe"
+    },
+    {
+      "start": 747.58,
+      "end": 749.08,
+      "text": "is perpendicular to the skin."
+    },
+    {
+      "start": 749.75,
+      "end": 749.97,
+      "text": "This will be..."
+    },
+    {
+      "start": 750.0,
+      "end": 757.51,
+      "text": "one example where fanning would not be helpful. As I mentioned before, it's very"
+    },
+    {
+      "start": 757.51,
+      "end": 759.89,
+      "text": "important that you minimize move."
+    },
+    {
+      "start": 760.0,
+      "end": 762.9,
+      "text": "of both yourself and especially the patient."
+    },
+    {
+      "start": 763.69,
+      "end": 766.58,
+      "text": "Is any sort of movement, but easily throw off"
+    },
+    {
+      "start": 766.58,
+      "end": 769.0,
+      "text": "your ultrasound markings and make the ultrasound"
+    },
+    {
+      "start": 769.0,
+      "end": 769.8,
+      "text": "guided component?"
+    },
+    {
+      "start": 770.06,
+      "end": 771.64,
+      "text": "of this far less useful."
+    },
+    {
+      "start": 772.81,
+      "end": 774.97,
+      "text": "One way to minimize this is to make sure"
+    },
+    {
+      "start": 774.97,
+      "end": 776.93,
+      "text": "everything is ready at the bedside"
+    },
+    {
+      "start": 776.93,
+      "end": 778.95,
+      "text": "before you even put the probe on the patient."
+    },
+    {
+      "start": 780.0,
+      "end": 785.34,
+      "text": "This includes making sure the patient is calm, comfortable as possible, and all of your"
+    },
+    {
+      "start": 785.34,
+      "end": 787.3,
+      "text": "supplies are laid out and ready to go."
+    },
+    {
+      "start": 790.9,
+      "end": 796.81,
+      "text": "general take-home points. Remember to scan in two planes, use the spinous processes as your guide,"
+    },
+    {
+      "start": 796.81,
+      "end": 798.59,
+      "text": "Make the marks and connect the dots."
+    },
+    {
+      "start": 800.0,
+      "end": 803.62,
+      "text": "You can estimate depth to the subregulant space using ultrasound."
+    },
+    {
+      "start": 804.26,
+      "end": 809.88,
+      "text": "This will help you determine how long of a needle you need to use and how deep you need"
+    },
+    {
+      "start": 810.0,
+      "end": 813.32,
+      "text": "to advance your needle before you should expect to have CSF return."
+    },
+    {
+      "start": 814.44,
+      "end": 816.72,
+      "text": "It's just one extra step and it's pretty easy to do."
+    },
+    {
+      "start": 818.7,
+      "end": 819.96,
+      "text": "You wear the pitfalls I just-"
+    },
+    {
+      "start": 820.0,
+      "end": 826.17,
+      "text": "mentioned, and finally, this extra step of using ultrasound may actually save time."
+    },
+    {
+      "start": 827.14,
+      "end": 829.96,
+      "text": "One thing that might discourage people from using ultrasound from..."
+    },
+    {
+      "start": 830.03,
+      "end": 836.58,
+      "text": "LP is that it's it's seen as inconvenient. Sure, it takes time to find the machine, perform"
+    },
+    {
+      "start": 836.58,
+      "end": 839.98,
+      "text": "the ultrasound, clean the probe in the patient, before actually..."
+    },
+    {
+      "start": 840.0,
+      "end": 845.52,
+      "text": "getting ready to do the procedure. It's important to remember, however, that the use of ultrasound"
+    },
+    {
+      "start": 845.52,
+      "end": 849.37,
+      "text": "offers several advantages, potentially some time saving ones."
+    },
+    {
+      "start": 850.0,
+      "end": 851.58,
+      "text": "the traditional landmark based approach."
+    },
+    {
+      "start": 852.98,
+      "end": 856.2,
+      "text": "And while this is useful and beneficial in any patient,"
+    },
+    {
+      "start": 856.9,
+      "end": 858.28,
+      "text": "especially for those patients"
+    },
+    {
+      "start": 858.28,
+      "end": 859.66,
+      "text": "for whom we anticipate difficulty."
+    },
+    {
+      "start": 860.0,
+      "end": 865.32,
+      "text": "right off the bat. I'll just tell him I require a few minutes, a few extra minutes of your time,"
+    },
+    {
+      "start": 865.32,
+      "end": 869.05,
+      "text": "but may end up being a much more efficient approach in the long run."
+    },
+    {
+      "start": 870.26,
+      "end": 872.44,
+      "text": "And in fact, I just recently had a patient"
+    },
+    {
+      "start": 872.8,
+      "end": 873.74,
+      "text": "with one of my residents."
+    },
+    {
+      "start": 874.36,
+      "end": 878.23,
+      "text": "This patient was over 350 pounds eating an LB."
+    },
+    {
+      "start": 879.4,
+      "end": 879.78,
+      "text": "Admittedly,"
+    },
+    {
+      "start": 880.16,
+      "end": 884.9,
+      "text": "We thought for sure we'd end up having to center to interventional radiology for the LP,"
+    },
+    {
+      "start": 885.36,
+      "end": 887.04,
+      "text": "but, you know, we did it ourselves."
+    },
+    {
+      "start": 887.86,
+      "end": 889.94,
+      "text": "My resident used ultrasound and ended up."
+    },
+    {
+      "start": 890.1,
+      "end": 893.52,
+      "text": "coming very close to a champion tap on her first attempt"
+    },
+    {
+      "start": 893.52,
+      "end": 894.22,
+      "text": "with this patient."
+    },
+    {
+      "start": 894.95,
+      "end": 897.05,
+      "text": "To overall, it was a huge win."
+    },
+    {
+      "start": 897.21,
+      "end": 898.77,
+      "text": "We ended up saving a ton of time."
+    },
+    {
+      "start": 900.0,
+      "end": 905.1,
+      "text": "I encourage you to familiarize yourself with this procedure even if you, you know, you"
+    },
+    {
+      "start": 905.1,
+      "end": 907.94,
+      "text": "don't have to use it every time, but it's a great tool to have."
+    }
+  ]
+}

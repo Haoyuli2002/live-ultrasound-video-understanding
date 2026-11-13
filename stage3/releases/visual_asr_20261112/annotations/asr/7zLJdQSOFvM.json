@@ -1,0 +1,238 @@
+{
+  "video_id": "7zLJdQSOFvM",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/7zLJdQSOFvM/asr.txt",
+  "segments": [
+    {
+      "start": 0.41,
+      "end": 3.49,
+      "text": "Hello, I'm Brian Johnson. I'm an emergency physician."
+    },
+    {
+      "start": 4.15,
+      "end": 6.91,
+      "text": "Today, we're going to use the clarius pal ultrasound probe"
+    },
+    {
+      "start": 7.51,
+      "end": 11.87,
+      "text": "to visualize the femoral vein for a femoral central line."
+    },
+    {
+      "start": 12.36,
+      "end": 13.84,
+      "text": "We won't be performing a central line today,"
+    },
+    {
+      "start": 14.22,
+      "end": 16.06,
+      "text": "but we're going to visualize the vital structures."
+    },
+    {
+      "start": 16.74,
+      "end": 18.46,
+      "text": "So typically, the patient is lying sublime"
+    },
+    {
+      "start": 18.46,
+      "end": 21.52,
+      "text": "and often as you can put them in reverse trendellinburg."
+    },
+    {
+      "start": 22.2,
+      "end": 25.62,
+      "text": "And typically, I do a right femoral central line"
+    },
+    {
+      "start": 25.62,
+      "end": 27.98,
+      "text": "just because of, I'm right hand dominant."
+    },
+    {
+      "start": 28.7,
+      "end": 30.7,
+      "text": "And so what we'll do is we'll take the ultrasound probe"
+    },
+    {
+      "start": 30.7,
+      "end": 33.38,
+      "text": "and we'll go sort of along the inguinal crease."
+    },
+    {
+      "start": 34.02,
+      "end": 37.88,
+      "text": "And if the patient can slightly bend out their leg"
+    },
+    {
+      "start": 37.88,
+      "end": 39.72,
+      "text": "to get better access to the inguinal crease."
+    },
+    {
+      "start": 40.06,
+      "end": 40.88,
+      "text": "So we're gonna take the probe,"
+    },
+    {
+      "start": 41.22,
+      "end": 43.2,
+      "text": "kind of go along the femoral crease."
+    },
+    {
+      "start": 44.24,
+      "end": 47.89,
+      "text": "And what we initially identify are three"
+    },
+    {
+      "start": 47.89,
+      "end": 52.39,
+      "text": "sort of major structures of this inguinal crease area."
+    },
+    {
+      "start": 53.33,
+      "end": 55.37,
+      "text": "And the three structures are the nerve,"
+    },
+    {
+      "start": 55.89,
+      "end": 57.35,
+      "text": "the artery, and the vein."
+    },
+    {
+      "start": 58.45,
+      "end": 60.21,
+      "text": "Emergency providers are wonderful"
+    },
+    {
+      "start": 60.21,
+      "end": 62.47,
+      "text": "with the inguinal groin region, right?"
+    },
+    {
+      "start": 62.85,
+      "end": 65.43,
+      "text": "We do femoral nerve blocks, we do femoral central lines,"
+    },
+    {
+      "start": 65.71,
+      "end": 68.73,
+      "text": "we do femoral art lines, we do ultrasound DVT studies,"
+    },
+    {
+      "start": 68.99,
+      "end": 71.09,
+      "text": "so we're very knowledgeable about the inguinal area."
+    },
+    {
+      "start": 71.71,
+      "end": 72.63,
+      "text": "And for our purposes today,"
+    },
+    {
+      "start": 73.41,
+      "end": 74.89,
+      "text": "what we're really looking for is the vein."
+    },
+    {
+      "start": 75.66,
+      "end": 77.52,
+      "text": "The mnemonic I always use is navel,"
+    },
+    {
+      "start": 77.9,
+      "end": 80.38,
+      "text": "so nerve artery vein empty lymph,"
+    },
+    {
+      "start": 80.88,
+      "end": 82.7,
+      "text": "and that's lateral to medial structures."
+    },
+    {
+      "start": 83.32,
+      "end": 85.7,
+      "text": "You also can say venous to the penis,"
+    },
+    {
+      "start": 86.22,
+      "end": 89.46,
+      "text": "meaning the venous femoral vein is medial"
+    },
+    {
+      "start": 89.46,
+      "end": 94.5,
+      "text": "to the other structures and so in this ultrasound view here we're using a"
+    },
+    {
+      "start": 94.5,
+      "end": 98.78,
+      "text": "venous setting because we're going to do a venous central line and what you"
+    },
+    {
+      "start": 98.78,
+      "end": 103.59,
+      "text": "immediately see are two structures the more anterior structure that somewhat"
+    },
+    {
+      "start": 103.59,
+      "end": 108.79,
+      "text": "pulsatile is our artery and which it's a little deeper and medial is the femoral"
+    },
+    {
+      "start": 108.79,
+      "end": 113.96,
+      "text": "vein and there's any question what is what you can always compress down and see"
+    },
+    {
+      "start": 113.96,
+      "end": 118.64,
+      "text": "that the femoral vein is easily compressible while the femoral artery is still"
+    },
+    {
+      "start": 118.64,
+      "end": 120.24,
+      "text": "pulsatile and non-compressible."
+    },
+    {
+      "start": 121.54,
+      "end": 126.84,
+      "text": "Also, if you slide laterally, you'll be able to see this nice triangular structure that"
+    },
+    {
+      "start": 126.84,
+      "end": 131.04,
+      "text": "fits just below at the fascia iliaca and that is our femoral nerve."
+    },
+    {
+      "start": 131.76,
+      "end": 135.33,
+      "text": "So nerve, artery, and then vein."
+    },
+    {
+      "start": 136.55,
+      "end": 139.67,
+      "text": "To cannulate, you'll be doing on a short-axis view."
+    },
+    {
+      "start": 140.23,
+      "end": 144.99,
+      "text": "You'll do sterile precautions and a normal cellding or technique for a femoral central"
+    },
+    {
+      "start": 144.99,
+      "end": 145.27,
+      "text": "line."
+    },
+    {
+      "start": 145.27,
+      "end": 149.35,
+      "text": "Alter sound affords you better accuracy and minimizes complications."
+    },
+    {
+      "start": 149.77,
+      "end": 150.43,
+      "text": "Thank you."
+    }
+  ]
+}

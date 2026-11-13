@@ -1,0 +1,62 @@
+{
+  "video_id": "ROcVsjjW0cw",
+  "reviewer": "stage3_b",
+  "review_scope": "Question-led review by Agent B of Agent A draft; not blind. Native full-frame sampled checkpoints and available time-indexed ASR; no continuous replay or direct listening claim.",
+  "reviewer_native_opened": [
+    290,
+    341,
+    342,
+    343,
+    343.25,
+    343.5,
+    344,
+    550,
+    565,
+    566,
+    566.25,
+    566.5,
+    567,
+    620
+  ],
+  "tasks": [
+    {
+      "task_index": 1,
+      "outcome": "corrected",
+      "issues": [
+        "Answer at344 was later than first clear reviewed example343.5; partial panel transition at343.25."
+      ],
+      "changes": [
+        "Advanced answer_time to343.5. Clarified comparison of teaching panels and lumen geometry."
+      ],
+      "query_status": "WAIT; neck-specific compressed image not yet shown at341.",
+      "answer_status": "ANSWER at first clear reviewed checkpoint343.5."
+    },
+    {
+      "task_index": 2,
+      "outcome": "accepted",
+      "issues": [],
+      "changes": [],
+      "query_status": "ANSWER; both vessel shapes visible at550."
+    },
+    {
+      "task_index": 3,
+      "outcome": "corrected",
+      "issues": [
+        "Guidewire panel is clear already566.25. Parallel-to-wall wording relies strongly on annotation and is less directly supported than visible oblique line geometry."
+      ],
+      "changes": [
+        "Advanced answer_time567 to566.25. Reworded question and answer to describe visible lower-right line direction."
+      ],
+      "query_status": "WAIT; requested new guidewire example absent565 and566.",
+      "answer_status": "ANSWER; panel and oblique bright line clear566.25."
+    },
+    {
+      "task_index": 4,
+      "outcome": "accepted",
+      "issues": [],
+      "changes": [],
+      "query_status": "ANSWER; unique upper femoral pair above comparison table visible290 and already past620.",
+      "evidence_notes": "At290 the left-side FV lumen in uncompressed upper pair is dark and expanded; corresponding compressed image flattens it while FA remains rounded. At620 current display is catheter placement."
+    }
+  ]
+}

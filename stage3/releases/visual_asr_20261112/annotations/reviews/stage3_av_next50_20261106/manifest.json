@@ -1,0 +1,48 @@
+{
+  "version": "stage3_av_next50_v1",
+  "created_date": "2026-11-10",
+  "status": "saved_sampled_question_led_self_review",
+  "language": "en",
+  "videos": 50,
+  "qa_total": 200,
+  "qa_per_video": 4,
+  "split_videos": {
+    "train": 42,
+    "eval": 8
+  },
+  "split_tasks": {
+    "train": 168,
+    "eval": 32
+  },
+  "qa_types": {
+    "current_observation": 50,
+    "history_recall": 50,
+    "temporal_comparison": 50,
+    "event_notification": 50
+  },
+  "response_groups": {
+    "immediate": 100,
+    "delayed": 100
+  },
+  "evidence_modalities": {
+    "audio": 198,
+    "audio_video": 2
+  },
+  "decision_samples": 300,
+  "answer_samples": 200,
+  "wait_samples": 100,
+  "native_frame_open_events": 311,
+  "question_led_wide_video_reviews": 50,
+  "active_audio_evidence_clips": 246,
+  "original_metadata_files_checked": 786,
+  "original_metadata_unchanged": true,
+  "prior_av50_video_overlap": 0,
+  "limitations": [
+    "Question-led visual review covered a roughly 10 s chronological frame grid for each full video plus original-resolution query/answer frames; the assistant did not watch every frame continuously or directly listen to original audio.",
+    "Local Whisper transcription and same-model bounded clip re-transcription are not independent ground truth.",
+    "Query and answer times were checked on sampled prefixes; intermediate seconds and exact source-frame event onset are not fully verified.",
+    "199 questions are audio-grounded and one requires audio and video. This is not a balanced modality benchmark.",
+    "No shortcut ablations or clinical expert review. Medical content must not be treated as clinical advice.",
+    "Source media paths point to complete files: the training loader must enforce video_window and audio_window; full ASR is annotation-only."
+  ]
+}

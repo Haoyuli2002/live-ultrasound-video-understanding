@@ -1,0 +1,688 @@
+{
+  "video_id": "D6Az0Z_Wo-4",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/D6Az0Z_Wo-4/asr.txt",
+  "segments": [
+    {
+      "start": 1.79,
+      "end": 9.97,
+      "text": "The sciatic nerve block is an immensely valuable technique that is..."
+    },
+    {
+      "start": 10.0,
+      "end": 13.72,
+      "text": "many applications in clinical anesthesia. The sciatic nerve can be blocked at a number"
+    },
+    {
+      "start": 13.72,
+      "end": 17.16,
+      "text": "of locations along its course, but most of these techniques require the patient to be"
+    },
+    {
+      "start": 17.16,
+      "end": 19.06,
+      "text": "turned on their side or the leg elevated."
+    },
+    {
+      "start": 19.38,
+      "end": 19.86,
+      "text": "The anterior"
+    },
+    {
+      "start": 20.0,
+      "end": 24.06,
+      "text": "approach to the sciatic nerve is attractive because it can be done supine with very minimal"
+    },
+    {
+      "start": 24.06,
+      "end": 24.92,
+      "text": "patient positioning."
+    },
+    {
+      "start": 25.24,
+      "end": 28.82,
+      "text": "This makes it a favorite in trauma anesthesia in other situations where you just don't"
+    },
+    {
+      "start": 28.82,
+      "end": 29.86,
+      "text": "want to roll the patient over."
+    },
+    {
+      "start": 30.26,
+      "end": 34.04,
+      "text": "In this video, we'll discuss the anatomy, sonoe anatomy, and technique for the anterior"
+    },
+    {
+      "start": 34.04,
+      "end": 34.96,
+      "text": "sciatic nerve block."
+    },
+    {
+      "start": 35.37,
+      "end": 39.97,
+      "text": "The sciatic nerve is derived from the ventral raymy of L4, L5, as well as S1."
+    },
+    {
+      "start": 40.0,
+      "end": 40.76,
+      "text": "1, 2, and 3."
+    },
+    {
+      "start": 41.08,
+      "end": 44.62,
+      "text": "These combine to form a single large nerve that then leaves the pelvis through the greater"
+    },
+    {
+      "start": 44.62,
+      "end": 45.36,
+      "text": "sciatic foramen."
+    },
+    {
+      "start": 45.89,
+      "end": 49.25,
+      "text": "The nerve continues to course down the proximal thigh in the plane between the adductor"
+    },
+    {
+      "start": 49.25,
+      "end": 49.77,
+      "text": "group of muscles"
+    },
+    {
+      "start": 50.26,
+      "end": 50.84,
+      "text": "and the hamstrings."
+    },
+    {
+      "start": 51.39,
+      "end": 53.59,
+      "text": "If we look deep to the quadriceps muscles in the thigh,"
+    },
+    {
+      "start": 53.79,
+      "end": 55.27,
+      "text": "we'll first see the adductor longus,"
+    },
+    {
+      "start": 55.53,
+      "end": 57.17,
+      "text": "then deep to that adductor brevis,"
+    },
+    {
+      "start": 57.55,
+      "end": 59.57,
+      "text": "and then he aptly named a doctor magnus."
+    },
+    {
+      "start": 59.87,
+      "end": 59.97,
+      "text": "You can..."
+    },
+    {
+      "start": 60.03,
+      "end": 64.83,
+      "text": "You can see the chunky sadic nerve hiding deep to this muscle on top of the long head of the biceps femoris."
+    },
+    {
+      "start": 65.4,
+      "end": 69.96,
+      "text": "Here's what we're going to scan for the anterior sciatic block, about 10 centimeters from the inguinal crease approach."
+    },
+    {
+      "start": 70.0,
+      "end": 71.5,
+      "text": "from the anterior medial thigh."
+    },
+    {
+      "start": 72.12,
+      "end": 74.56,
+      "text": "To get there, it's useful to externally rotate the thigh"
+    },
+    {
+      "start": 74.56,
+      "end": 76.44,
+      "text": "or frog leg the patient, if possible."
+    },
+    {
+      "start": 76.72,
+      "end": 79.1,
+      "text": "We often do these in patients with external fixators"
+    },
+    {
+      "start": 79.1,
+      "end": 79.98,
+      "text": "on their calf or ang-"
+    },
+    {
+      "start": 80.03,
+      "end": 81.57,
+      "text": "and movement can be limited."
+    },
+    {
+      "start": 82.19,
+      "end": 84.63,
+      "text": "Here's what a cross section of the thigh looks like at that level."
+    },
+    {
+      "start": 84.91,
+      "end": 86.59,
+      "text": "We have the quadriceps muscles here in blue."
+    },
+    {
+      "start": 86.93,
+      "end": 89.25,
+      "text": "On the anterior medial side we have the sartorius muscle"
+    },
+    {
+      "start": 89.25,
+      "end": 89.97,
+      "text": "and then a three..."
+    },
+    {
+      "start": 90.03,
+      "end": 92.97,
+      "text": "Dr. Muscles below that, longest, brevis, and magnus."
+    },
+    {
+      "start": 93.19,
+      "end": 94.97,
+      "text": "We can appreciate deep to the Sertorius,"
+    },
+    {
+      "start": 94.97,
+      "end": 97.41,
+      "text": "the femoral artery in vein, the saffonus nerve,"
+    },
+    {
+      "start": 97.67,
+      "end": 99.13,
+      "text": "and the nerve to vases medialis."
+    },
+    {
+      "start": 99.29,
+      "end": 99.97,
+      "text": "We'll come back to those..."
+    },
+    {
+      "start": 100.0,
+      "end": 104.94,
+      "text": "later. And finally, we have our hamstrings, biceps femoris, and semitendinosis and membranosis."
+    },
+    {
+      "start": 105.32,
+      "end": 108.58,
+      "text": "Tucked in between a doctor's magnus, and a hammies below, is our sciatic nerve."
+    },
+    {
+      "start": 108.96,
+      "end": 109.9,
+      "text": "With our pro-positioned-"
+    },
+    {
+      "start": 110.0,
+      "end": 114.32,
+      "text": "the anterior medial thigh, we can image all of these relevant structures. There are two common"
+    },
+    {
+      "start": 114.32,
+      "end": 119.24,
+      "text": "approaches to needle insertion, in plain from the lateral aspect and out of plain, straight down."
+    },
+    {
+      "start": 119.52,
+      "end": 119.98,
+      "text": "Both approach"
+    },
+    {
+      "start": 120.03,
+      "end": 124.23,
+      "text": "just aim to land the needle in the fascial plane either side of the nerve and expand that"
+    },
+    {
+      "start": 124.23,
+      "end": 126.07,
+      "text": "inter-muscular fascial plane with local."
+    },
+    {
+      "start": 126.41,
+      "end": 129.97,
+      "text": "You can see there are some vessels to negotiate, both the superficial and profound-"
+    },
+    {
+      "start": 130.0,
+      "end": 133.58,
+      "text": "of femoral vessels can present challenges to needle trajectory, and you're sometimes"
+    },
+    {
+      "start": 133.58,
+      "end": 137.44,
+      "text": "forced to abandon an in-plane approach for an out-of-plane or vice versa."
+    },
+    {
+      "start": 138.0,
+      "end": 139.92,
+      "text": "Here's the probe in needle position for the in-plane"
+    },
+    {
+      "start": 140.13,
+      "end": 142.57,
+      "text": "And here's the positioning for out-of-plane."
+    },
+    {
+      "start": 142.85,
+      "end": 147.57,
+      "text": "It's useful to use a curvilinear probe for this block for both the depth and breadth of field that affords."
+    },
+    {
+      "start": 148.2,
+      "end": 149.96,
+      "text": "So here's what our scale will look like. Our first..."
+    },
+    {
+      "start": 150.16,
+      "end": 154.28,
+      "text": "The obvious landmark is the femur, with its hyper-echoic surface casting a large acoustic"
+    },
+    {
+      "start": 154.28,
+      "end": 154.7,
+      "text": "shadow."
+    },
+    {
+      "start": 154.98,
+      "end": 158.72,
+      "text": "We see Sartorius near the surface, with his superficial femoral artery centered beneath"
+    },
+    {
+      "start": 158.72,
+      "end": 158.94,
+      "text": "it."
+    },
+    {
+      "start": 160.0,
+      "end": 161.8,
+      "text": "to that is the inductor group of muscles."
+    },
+    {
+      "start": 162.3,
+      "end": 166.24,
+      "text": "Depending on your exact position on the thigh, you may be able to see two or three distinct"
+    },
+    {
+      "start": 166.24,
+      "end": 168.76,
+      "text": "muscles, but it's not critical to identify each one."
+    },
+    {
+      "start": 169.06,
+      "end": 169.98,
+      "text": "The hamstrings are the-"
+    },
+    {
+      "start": 170.0,
+      "end": 173.68,
+      "text": "Deepest muscle group seen here, and the sciatic nerve is quite obvious in the fascial plane"
+    },
+    {
+      "start": 173.68,
+      "end": 173.92,
+      "text": "between."
+    },
+    {
+      "start": 174.72,
+      "end": 177.94,
+      "text": "Don't forget about the profunda branches which lie adjacent to the femur."
+    },
+    {
+      "start": 178.08,
+      "end": 179.94,
+      "text": "It's worthwhile putting on color dopplerdoms."
+    },
+    {
+      "start": 180.0,
+      "end": 181.34,
+      "text": "make sure your trajectory is safe."
+    },
+    {
+      "start": 181.64,
+      "end": 182.9,
+      "text": "Okay, let's see the in-plane approach."
+    },
+    {
+      "start": 183.68,
+      "end": 185.3,
+      "text": "Here's our hyper-echoic sciatic nerve"
+    },
+    {
+      "start": 185.3,
+      "end": 186.82,
+      "text": "at about five centimeters deep."
+    },
+    {
+      "start": 187.28,
+      "end": 189.48,
+      "text": "The needle can be seen advancing from the lateral aspect."
+    },
+    {
+      "start": 190.74,
+      "end": 192.72,
+      "text": "Sometimes the nerve is just not that obvious."
+    },
+    {
+      "start": 192.88,
+      "end": 195.04,
+      "text": "And for that reason, we routinely use nerve stimulation"
+    },
+    {
+      "start": 195.04,
+      "end": 197.3,
+      "text": "as an adjunct to both find the nerve"
+    },
+    {
+      "start": 197.3,
+      "end": 199.04,
+      "text": "and to make sure we don't end up too close."
+    },
+    {
+      "start": 204.61,
+      "end": 207.65,
+      "text": "We have to re-click into the fascial plane between a doctor Magnus and the hamstring,"
+    },
+    {
+      "start": 207.65,
+      "end": 209.97,
+      "text": "we aspirate and then give a test injection of"
+    },
+    {
+      "start": 210.0,
+      "end": 211.31,
+      "text": "Looks good."
+    },
+    {
+      "start": 211.61,
+      "end": 214.37,
+      "text": "We see it spreading in the fascial plane superficial to the nerve."
+    },
+    {
+      "start": 221.82,
+      "end": 225.6,
+      "text": "We finish the injection and scan up and down a few centimeters to celebrate and to verify"
+    },
+    {
+      "start": 225.6,
+      "end": 227.22,
+      "text": "or if we have local all around the nerve."
+    },
+    {
+      "start": 233.23,
+      "end": 234.87,
+      "text": "All right, let's check out the out-of-plane approach."
+    },
+    {
+      "start": 235.37,
+      "end": 237.39,
+      "text": "Same initial image and here's our nerve."
+    },
+    {
+      "start": 238.41,
+      "end": 239.77,
+      "text": "Our needle is approaching out-of-plane."
+    },
+    {
+      "start": 240.03,
+      "end": 241.15,
+      "text": "medial to the femoral vessels."
+    },
+    {
+      "start": 241.55,
+      "end": 243.05,
+      "text": "You can appreciate the tissue distortion"
+    },
+    {
+      "start": 243.05,
+      "end": 244.13,
+      "text": "which gives you the vector."
+    },
+    {
+      "start": 249.28,
+      "end": 249.96,
+      "text": "We snap into the-"
+    },
+    {
+      "start": 250.0,
+      "end": 253.16,
+      "text": "the plane, aspirate, and begin to inject."
+    },
+    {
+      "start": 253.7,
+      "end": 254.38,
+      "text": "Again, we see good,"
+    },
+    {
+      "start": 254.5,
+      "end": 256.38,
+      "text": "fascial plane spread between the two muscles,"
+    },
+    {
+      "start": 256.68,
+      "end": 257.94,
+      "text": "running up and over the nerve."
+    },
+    {
+      "start": 258.61,
+      "end": 259.97,
+      "text": "Notice the nerve becomes much more..."
+    },
+    {
+      "start": 260.13,
+      "end": 269.8,
+      "text": "visible with some local anaesthetic contrast beside it again a quick back and forth"
+    },
+    {
+      "start": 270.03,
+      "end": 272.99,
+      "text": "to confirm that we're happy with that pattern of spread and we're good to go."
+    },
+    {
+      "start": 278.35,
+      "end": 279.97,
+      "text": "15 to 20 mils of volume is"
+    },
+    {
+      "start": 280.0,
+      "end": 284.68,
+      "text": "a typical dose that delivers a good effect, and we'll use 0.2% repivocane for analgesia."
+    },
+    {
+      "start": 284.88,
+      "end": 288.3,
+      "text": "If we're after surgical anesthesia, we'll up that to 1.5% strength."
+    },
+    {
+      "start": 288.5,
+      "end": 289.98,
+      "text": "Here's an image showing the osteol-"
+    },
+    {
+      "start": 290.06,
+      "end": 294.3,
+      "text": "musculofatial and dermatomal pattern of blockade from the posterior and anterior aspects."
+    },
+    {
+      "start": 294.74,
+      "end": 298.64,
+      "text": "Anterior sadic nerve block will anesthetize nearly the entire lower limb below the knee,"
+    },
+    {
+      "start": 298.64,
+      "end": 299.96,
+      "text": "Say for the skin, it's..."
+    },
+    {
+      "start": 300.03,
+      "end": 304.27,
+      "text": "small ankle joint fibers from the saffonous nerve. We also expect to get some periosteum on"
+    },
+    {
+      "start": 304.27,
+      "end": 308.75,
+      "text": "the posterior femur, as well as some motor block of the hamstring muscles. We use the anterior"
+    },
+    {
+      "start": 308.75,
+      "end": 309.89,
+      "text": "your sadic approach in combat."
+    },
+    {
+      "start": 310.0,
+      "end": 315.12,
+      "text": "nation with a femoral block for lower limb amputation, ACL repair, and frequently for orthotromic"
+    },
+    {
+      "start": 315.12,
+      "end": 318.72,
+      "text": "cases, where we want to stay out of the way of this surgical site near the proximal tibia."
+    },
+    {
+      "start": 318.92,
+      "end": 319.98,
+      "text": "Again, a big advantage to this..."
+    },
+    {
+      "start": 320.0,
+      "end": 324.16,
+      "text": "approach is you don't have to roll the patient or elevate the limb in an injured patient."
+    },
+    {
+      "start": 324.4,
+      "end": 328.08,
+      "text": "Note that the posterior coutaneous nerve of the thigh is not typically blocked with this"
+    },
+    {
+      "start": 328.08,
+      "end": 328.44,
+      "text": "approach."
+    },
+    {
+      "start": 329.08,
+      "end": 329.98,
+      "text": "And here are some tips for the..."
+    },
+    {
+      "start": 330.03,
+      "end": 331.15,
+      "text": "interior static nerve block."
+    },
+    {
+      "start": 331.67,
+      "end": 333.93,
+      "text": "First, it's great when everything looks amazing on the screen,"
+    },
+    {
+      "start": 334.11,
+      "end": 335.73,
+      "text": "but that's not gonna happen every time."
+    },
+    {
+      "start": 336.11,
+      "end": 337.27,
+      "text": "If you're scanning up and down,"
+    },
+    {
+      "start": 337.41,
+      "end": 339.43,
+      "text": "trying to get that nerve to pop out of the background."
+    },
+    {
+      "start": 339.88,
+      "end": 339.96,
+      "text": "You..."
+    },
+    {
+      "start": 340.0,
+      "end": 344.4,
+      "text": "this handy rule to estimate the location. Imagine a line drawn from the femoral artery"
+    },
+    {
+      "start": 344.4,
+      "end": 349.24,
+      "text": "to the side of the femur. Now, go that same distance deeper in line with the femoral"
+    },
+    {
+      "start": 349.24,
+      "end": 349.62,
+      "text": "artery."
+    },
+    {
+      "start": 350.0,
+      "end": 354.69,
+      "text": "should find the nerve right there, or at least the correct plane. Second, it's common to"
+    },
+    {
+      "start": 354.69,
+      "end": 358.37,
+      "text": "put the probe on the thigh and not see the nerve right away. There's a good chance the"
+    },
+    {
+      "start": 358.37,
+      "end": 359.97,
+      "text": "probe is a little too distal."
+    },
+    {
+      "start": 360.0,
+      "end": 364.08,
+      "text": "If you find yourself at mid-thigh, slide up towards the growing to get a better view."
+    },
+    {
+      "start": 364.28,
+      "end": 367.24,
+      "text": "This block is best done at the proximal third of the femur."
+    },
+    {
+      "start": 367.65,
+      "end": 369.97,
+      "text": "If you're planning to block the saffonist nerve at the same time..."
+    },
+    {
+      "start": 370.1,
+      "end": 374.24,
+      "text": "say for foot and ankle surgery. It's possible to do both with one needle insertion."
+    },
+    {
+      "start": 374.48,
+      "end": 378.4,
+      "text": "These authors describe the single penetration dual injection technique where the sadic"
+    },
+    {
+      "start": 378.4,
+      "end": 379.98,
+      "text": "nerve is blocked first, and the knee-"
+    },
+    {
+      "start": 380.0,
+      "end": 384.02,
+      "text": "wiggle withdrawn and redirected beside the femoral artery to block the savenous, it's"
+    },
+    {
+      "start": 384.02,
+      "end": 387.82,
+      "text": "a two-for-one deal in the mid-thigh, and finally, we often find ourselves doing this block"
+    },
+    {
+      "start": 387.82,
+      "end": 389.62,
+      "text": "in combination with a femoral nerve block."
+    },
+    {
+      "start": 390.0,
+      "end": 394.1,
+      "text": "In these cases, it's nice to do the femoral first as it anesthetizes the skin puncture"
+    },
+    {
+      "start": 394.1,
+      "end": 397.72,
+      "text": "site and some of the underlying muscle for the subsequent sciatic nerve block."
+    }
+  ]
+}

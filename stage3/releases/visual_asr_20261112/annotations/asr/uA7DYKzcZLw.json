@@ -1,0 +1,503 @@
+{
+  "video_id": "uA7DYKzcZLw",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/eval/uA7DYKzcZLw/asr.txt",
+  "segments": [
+    {
+      "start": 0.89,
+      "end": 4.75,
+      "text": "Hi, I'm Dr. Andre Kumar. This is the Stanford 25 ultrasound series."
+    },
+    {
+      "start": 5.11,
+      "end": 8.59,
+      "text": "In this video, we'll be discussing renal ultrasound and bladder ultrasound."
+    },
+    {
+      "start": 9.64,
+      "end": 12.68,
+      "text": "Thinking about the indications and benefits of renal ultrasound,"
+    },
+    {
+      "start": 13.2,
+      "end": 16.02,
+      "text": "there are several things you can identify pretty readily at the bedside."
+    },
+    {
+      "start": 16.56,
+      "end": 22.37,
+      "text": "These include hydro nephrosis, nephrolithiasis, cysts, and the general size of the kidney."
+    },
+    {
+      "start": 23.02,
+      "end": 25.6,
+      "text": "Things that are beyond the scope, a point of care ultrasound,"
+    },
+    {
+      "start": 26.2,
+      "end": 28.2,
+      "text": "including the evaluation of urinal stones,"
+    },
+    {
+      "start": 28.37,
+      "end": 32.93,
+      "text": "vascular malformations, flow of the kidney and determining if there are renal"
+    },
+    {
+      "start": 32.93,
+      "end": 38.81,
+      "text": "masses or malignant potential of cis. Let's discuss acquisition of the kidney."
+    },
+    {
+      "start": 39.58,
+      "end": 42.9,
+      "text": "There are two probes you can use. You can either use a phased array probe or cardiac"
+    },
+    {
+      "start": 42.9,
+      "end": 47.6,
+      "text": "probe or a curvilinear or abdominal probe. A phased array probe has a smaller"
+    },
+    {
+      "start": 47.6,
+      "end": 51.5,
+      "text": "footprint which allows for easier visualization between rib spaces while a"
+    },
+    {
+      "start": 51.5,
+      "end": 55.62,
+      "text": "phased or excuse me while a curvilinear probe has a much wider view and greater"
+    },
+    {
+      "start": 55.62,
+      "end": 59.36,
+      "text": "depth and penetration. For this particular video we'll be using a"
+    },
+    {
+      "start": 59.36,
+      "end": 64.0,
+      "text": "phase array probe. You'll want to set your machine to abdominal mode which"
+    },
+    {
+      "start": 64.0,
+      "end": 68.46,
+      "text": "allows for optimal image depth, gain, and frame rate. By convention, the"
+    },
+    {
+      "start": 68.46,
+      "end": 74.52,
+      "text": "dot on the screen is on the left side of the screen. Going to get my gel. If you"
+    },
+    {
+      "start": 74.52,
+      "end": 77.98,
+      "text": "have a patient, have them lie completely flat in bed. If it's a hospital bed,"
+    },
+    {
+      "start": 78.32,
+      "end": 82.4,
+      "text": "try to lower the head of the bed so they're completely flat. You want them"
+    },
+    {
+      "start": 82.4,
+      "end": 86.94,
+      "text": "also have their hand pointed directly behind their head. This opens up the"
+    },
+    {
+      "start": 86.94,
+      "end": 91.51,
+      "text": "rib spaces and allows for much easier visualization of the kidney. My"
+    },
+    {
+      "start": 91.51,
+      "end": 94.75,
+      "text": "My orientation marker is pointed towards the patient's head."
+    },
+    {
+      "start": 95.8,
+      "end": 100.82,
+      "text": "A couple of other landmarks are relevant include the anterior axillary line, mid-axillary line"
+    },
+    {
+      "start": 100.82,
+      "end": 101.98,
+      "text": "and posterior axillary line."
+    },
+    {
+      "start": 102.73,
+      "end": 107.39,
+      "text": "For renal ultrasound, I'm generally going in the mid to mid-posterior axillary line just"
+    },
+    {
+      "start": 107.39,
+      "end": 109.31,
+      "text": "because the kidneys are retromperadenial organs."
+    },
+    {
+      "start": 110.04,
+      "end": 115.78,
+      "text": "I'm placing my probe about in the eighth or tenth intercostal space with my marker pointed"
+    },
+    {
+      "start": 115.78,
+      "end": 120.34,
+      "text": "up towards the axilla and my probe is going to be perpendicular to the patient."
+    },
+    {
+      "start": 121.04,
+      "end": 125.54,
+      "text": "I can also use my index finger to anchor myself on the patient."
+    },
+    {
+      "start": 127.42,
+      "end": 129.2,
+      "text": "Here we can see the renal anatomy."
+    },
+    {
+      "start": 129.7,
+      "end": 131.46,
+      "text": "On the top of the image, we see the liver."
+    },
+    {
+      "start": 132.02,
+      "end": 134.0,
+      "text": "Between the liver and kidney is more since pouch."
+    },
+    {
+      "start": 135.06,
+      "end": 139.52,
+      "text": "The kidney here, we can see the cortex, the mandola, and the medullary pyramids."
+    },
+    {
+      "start": 140.08,
+      "end": 144.42,
+      "text": "In some patients, you may also see cysts which are generally more towards the periphery."
+    },
+    {
+      "start": 146.09,
+      "end": 150.31,
+      "text": "You can also obtain a cross-sectional view of the kidney by rotating the probe 90 degrees"
+    },
+    {
+      "start": 150.31,
+      "end": 155.0,
+      "text": "and scanning from a superior to inferior fashion."
+    },
+    {
+      "start": 155.42,
+      "end": 158.34,
+      "text": "You can use this to measure the length and width of the kidney."
+    },
+    {
+      "start": 160.1,
+      "end": 161.56,
+      "text": "Let's go ahead and scan the left kidney."
+    },
+    {
+      "start": 162.27,
+      "end": 166.41,
+      "text": "Keep in mind that the right kidney is lower in the abdominal cavity than the left kidney."
+    },
+    {
+      "start": 166.73,
+      "end": 169.41,
+      "text": "So you may have to go up one or two wrist bases when scanning."
+    },
+    {
+      "start": 170.09,
+      "end": 172.21,
+      "text": "Again, my marker is pointed towards the patient's axilla."
+    },
+    {
+      "start": 172.81,
+      "end": 174.85,
+      "text": "The patient's left arm is behind their head."
+    },
+    {
+      "start": 176.87,
+      "end": 180.13,
+      "text": "And I'm going to generally be in the mid to mid-posture axillary line."
+    },
+    {
+      "start": 181.66,
+      "end": 184.46,
+      "text": "When I'm scanning, one of the things I want to do is point my probe"
+    },
+    {
+      "start": 184.46,
+      "end": 187.4,
+      "text": "a little bit more posteriorly towards the back of the patient."
+    },
+    {
+      "start": 187.6,
+      "end": 189.76,
+      "text": "Again, because the kidneys are retropeared Neal organs."
+    },
+    {
+      "start": 190.83,
+      "end": 194.37,
+      "text": "Here we can see the left kidney, we can see the cortex, the mandola,"
+    },
+    {
+      "start": 194.95,
+      "end": 196.85,
+      "text": "and the medallary pyramids as well."
+    },
+    {
+      "start": 197.56,
+      "end": 199.04,
+      "text": "And if I wanted to take size assessments,"
+    },
+    {
+      "start": 199.28,
+      "end": 201.54,
+      "text": "I can rotate the probe to get the entire picture."
+    },
+    {
+      "start": 202.49,
+      "end": 203.97,
+      "text": "Now let's discuss bladder."
+    },
+    {
+      "start": 205.12,
+      "end": 206.88,
+      "text": "So when thinking about bladder ultrasound,"
+    },
+    {
+      "start": 207.22,
+      "end": 210.3,
+      "text": "this can be quite helpful in patients on the hospital ward"
+    },
+    {
+      "start": 210.3,
+      "end": 212.5,
+      "text": "or elderly, confused."
+    },
+    {
+      "start": 212.68,
+      "end": 214.98,
+      "text": "And you need to assess if they have urinary retention"
+    },
+    {
+      "start": 214.98,
+      "end": 217.88,
+      "text": "as a potential cause for their altered mental status."
+    },
+    {
+      "start": 219.21,
+      "end": 221.01,
+      "text": "When thinking about bladder ultrasound,"
+    },
+    {
+      "start": 221.37,
+      "end": 223.61,
+      "text": "there are several measurements that you can take at the bedside"
+    },
+    {
+      "start": 223.61,
+      "end": 227.25,
+      "text": "to assess if they have substantial volume within their bladder."
+    },
+    {
+      "start": 228.1,
+      "end": 230.16,
+      "text": "First, let's just discuss scanning of the bladder."
+    },
+    {
+      "start": 230.66,
+      "end": 233.48,
+      "text": "You're going to be quite low in the abdominal cavity"
+    },
+    {
+      "start": 233.48,
+      "end": 234.64,
+      "text": "well below the navel."
+    },
+    {
+      "start": 235.26,
+      "end": 237.22,
+      "text": "When I think about my orientation marker,"
+    },
+    {
+      "start": 237.56,
+      "end": 240.68,
+      "text": "my marker to start is pointed in a three o'clock position."
+    },
+    {
+      "start": 242.03,
+      "end": 244.01,
+      "text": "In most patients who have some fluid in their bladder,"
+    },
+    {
+      "start": 244.25,
+      "end": 245.79,
+      "text": "it's generally quite easy to visualize."
+    },
+    {
+      "start": 245.79,
+      "end": 250.93,
+      "text": "My probe itself, the head, is pointed more towards the pelvis as I'm scanning."
+    },
+    {
+      "start": 251.94,
+      "end": 253.62,
+      "text": "Here we can see the patient's bladder."
+    },
+    {
+      "start": 255.09,
+      "end": 259.13,
+      "text": "If I wanted to do measurements of the bladder, there are several ways I can do it."
+    },
+    {
+      "start": 259.31,
+      "end": 264.67,
+      "text": "I can measure the width as well as the length in this particular view."
+    },
+    {
+      "start": 265.38,
+      "end": 272.62,
+      "text": "I can then rotate my probe about 90 degrees, so it's pointed towards the head, and from"
+    },
+    {
+      "start": 272.62,
+      "end": 276.28,
+      "text": "here I can measure from the top of the bladder to the bottom, and that is tight."
+    },
+    {
+      "start": 276.28,
+      "end": 282.02,
+      "text": "When we're thinking about the formula to actually measure bladder volume, it is 0.53 times"
+    },
+    {
+      "start": 282.02,
+      "end": 284.08,
+      "text": "the width, times the length, times the height."
+    },
+    {
+      "start": 285.25,
+      "end": 286.45,
+      "text": "Let's discuss pathology."
+    },
+    {
+      "start": 287.47,
+      "end": 289.15,
+      "text": "First of which is the size of the kidney."
+    },
+    {
+      "start": 289.55,
+      "end": 293.97,
+      "text": "A normal kidney is about 9 to 13 centimeters in length and about 4 to 6 centimeters in"
+    },
+    {
+      "start": 293.97,
+      "end": 294.23,
+      "text": "width."
+    },
+    {
+      "start": 294.67,
+      "end": 297.33,
+      "text": "It should be similar in size up to a 2 centimeter difference."
+    },
+    {
+      "start": 298.13,
+      "end": 301.37,
+      "text": "You may have seen ultrasound reports, a finding called medical renal disease."
+    },
+    {
+      "start": 301.81,
+      "end": 306.41,
+      "text": "What that essentially means is you see a small, atrophic, and hyper-coic kidney, as we're"
+    },
+    {
+      "start": 306.41,
+      "end": 307.59,
+      "text": "showing on this image here."
+    },
+    {
+      "start": 308.44,
+      "end": 312.5,
+      "text": "Another common pathology that you can look for is hydronephrosis."
+    },
+    {
+      "start": 312.94,
+      "end": 317.68,
+      "text": "With hydronephrosis, the center of the kidney, the medulla, is replaced by black fluid."
+    },
+    {
+      "start": 318.46,
+      "end": 323.72,
+      "text": "There can be various degrees of hydronephrosis, ranging from very mild to more severe, as we're"
+    },
+    {
+      "start": 323.72,
+      "end": 324.32,
+      "text": "showing here."
+    },
+    {
+      "start": 325.1,
+      "end": 329.34,
+      "text": "Keep in mind, in patients with very severe hydronephrosis, the kidney almost appears"
+    },
+    {
+      "start": 329.34,
+      "end": 332.92,
+      "text": "like a giant cyst, and it may actually be difficult to discern this."
+    },
+    {
+      "start": 333.56,
+      "end": 337.48,
+      "text": "Practice is always what's needed to be able to distinguish from a more mild to moderate"
+    },
+    {
+      "start": 337.48,
+      "end": 340.86,
+      "text": "it to severe disease, although we don't quantify that in point-of-care ultrasound."
+    },
+    {
+      "start": 342.09,
+      "end": 347.62,
+      "text": "Finally, when we're thinking about stones, when we think about nephrolothiasis, these stones"
+    },
+    {
+      "start": 347.62,
+      "end": 349.28,
+      "text": "are often found in the renal pelvis."
+    },
+    {
+      "start": 349.78,
+      "end": 353.24,
+      "text": "Eurotel stones are much less sensitively detected by point-of-care ultrasound."
+    },
+    {
+      "start": 354.06,
+      "end": 359.92,
+      "text": "A stone shows up as this bright, hyper-coic line in the middle of the kidney, as we're"
+    },
+    {
+      "start": 359.92,
+      "end": 361.72,
+      "text": "showing here, in a castes shadow."
+    },
+    {
+      "start": 362.04,
+      "end": 366.28,
+      "text": "The reason why a castes shadow is the ultrasound waves are not able to readily penetrate through"
+    },
+    {
+      "start": 366.28,
+      "end": 369.88,
+      "text": "through the stone, and as a result you see a shadow being cast behind it."
+    },
+    {
+      "start": 370.16,
+      "end": 373.7,
+      "text": "This shadow may actually be one of the few things you're able to visualize rather than"
+    },
+    {
+      "start": 373.7,
+      "end": 375.82,
+      "text": "the stone itself, so be sure to look for it."
+    }
+  ]
+}

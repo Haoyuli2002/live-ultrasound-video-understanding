@@ -1,0 +1,90 @@
+{
+  "video_id": "1E4NSR6yjMw",
+  "reviewer": "stage3_b",
+  "review_scope": "Question-led review by Agent B of Agent A draft; not blind. Native full-frame sampled checkpoints and available time-indexed ASR; no continuous replay or direct listening claim.",
+  "reviewer_native_opened": [
+    105,
+    108,
+    110,
+    112,
+    115,
+    120,
+    121,
+    121.25,
+    121.5,
+    121.75,
+    122,
+    123,
+    124,
+    125,
+    285,
+    445,
+    446,
+    447,
+    447.25,
+    447.5,
+    447.75,
+    448,
+    449,
+    450,
+    540,
+    620,
+    622,
+    625,
+    627,
+    630,
+    632,
+    633,
+    633.25,
+    633.5,
+    633.75,
+    634,
+    635,
+    690,
+    935
+  ],
+  "tasks": [
+    {
+      "task_number": 1,
+      "findings": "Advanced125 to121.25 after121 prior orientation; actual image supports left-to-right reversal.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_number": 2,
+      "findings": "Advanced450 to448 after447.75 B-mode-only negative; paired peaks visible immediately on new strip.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_number": 3,
+      "findings": "Confirmed marked crescent left and slightly shallower than aorta; softened depth wording.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_number": 4,
+      "findings": "Advanced635 to633.75 after633.5 old example; question anchored next example because papillary projections vary with cardiac phase.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_number": 5,
+      "findings": "Confirmed flattened upper-left boundary and curved opposite boundary690; no etiologic diagnosis.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_number": 6,
+      "findings": "Made historical reference unique using first cardiac-mode orientation example105; removed redundant285 evidence.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_number": 7,
+      "findings": "Confirmed displayed IVC strip935 lower boundary humps and nonuniform gap; immediate answer, no inferred respiratory phase.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    }
+  ]
+}

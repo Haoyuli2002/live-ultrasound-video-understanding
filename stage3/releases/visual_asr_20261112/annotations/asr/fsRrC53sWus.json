@@ -1,0 +1,1683 @@
+{
+  "video_id": "fsRrC53sWus",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/fsRrC53sWus/asr.txt",
+  "segments": [
+    {
+      "start": 0.77,
+      "end": 2.11,
+      "text": "Hi, I'm Dr. Andre Kumar."
+    },
+    {
+      "start": 2.49,
+      "end": 4.55,
+      "text": "This is the Stanford 25 ultrasound series."
+    },
+    {
+      "start": 5.07,
+      "end": 6.79,
+      "text": "In this video, we'll be discussing"
+    },
+    {
+      "start": 6.79,
+      "end": 8.57,
+      "text": "cardiac point of care ultrasound."
+    },
+    {
+      "start": 9.55,
+      "end": 9.97,
+      "text": "Cardiac point."
+    },
+    {
+      "start": 10.0,
+      "end": 14.16,
+      "text": "care ultrasound has expanded across several specialties and can be very helpful in the"
+    },
+    {
+      "start": 14.16,
+      "end": 16.56,
+      "text": "evaluation of patients with certain cardiac conditions."
+    },
+    {
+      "start": 17.51,
+      "end": 19.97,
+      "text": "Like with anything that pokes, use it to an..."
+    },
+    {
+      "start": 20.0,
+      "end": 24.12,
+      "text": "hands your clinical examination and judgment, but it should never be used to supersede your"
+    },
+    {
+      "start": 24.12,
+      "end": 25.08,
+      "text": "judgment otherwise."
+    },
+    {
+      "start": 26.06,
+      "end": 28.76,
+      "text": "There are several strengths and limitations of cardiac pocus."
+    },
+    {
+      "start": 29.5,
+      "end": 29.98,
+      "text": "There are things that..."
+    },
+    {
+      "start": 30.0,
+      "end": 33.58,
+      "text": "that's quite good at doing is the evaluation of chamber size,"
+    },
+    {
+      "start": 34.11,
+      "end": 36.65,
+      "text": "gross valvular abnormalities, systolic function,"
+    },
+    {
+      "start": 37.25,
+      "end": 39.16,
+      "text": "central venous pressure, and the evaluation"
+    },
+    {
+      "start": 39.16,
+      "end": 39.88,
+      "text": "of a paracardi."
+    },
+    {
+      "start": 40.0,
+      "end": 43.91,
+      "text": "of fusion. Things that it's a little bit less reliable at doing include"
+    },
+    {
+      "start": 43.91,
+      "end": 47.98,
+      "text": "Valuular Gradient Specific Measurements, the evaluation of"
+    },
+    {
+      "start": 47.98,
+      "end": 49.98,
+      "text": "Vegetations as seen with endocardite."
+    },
+    {
+      "start": 50.0,
+      "end": 53.48,
+      "text": "and its diastolic dysfunction as well as wall motion abnormalities."
+    },
+    {
+      "start": 54.75,
+      "end": 58.13,
+      "text": "There are four classic views that we use for cardiac point of care ultrasound."
+    },
+    {
+      "start": 58.64,
+      "end": 59.78,
+      "text": "These include the parasonal long."
+    },
+    {
+      "start": 60.42,
+      "end": 62.62,
+      "text": "personal short, apical four chamber,"
+    },
+    {
+      "start": 62.92,
+      "end": 65.24,
+      "text": "and the sub-costal, also known as the sub-site void."
+    },
+    {
+      "start": 66.36,
+      "end": 67.44,
+      "text": "When you're thinking about scanning,"
+    },
+    {
+      "start": 68.0,
+      "end": 69.98,
+      "text": "you want to use a phased array, also known as..."
+    },
+    {
+      "start": 70.0,
+      "end": 76.95,
+      "text": "as a cardiac probe. When you're scanning, the dot is located on the right side of the screen."
+    },
+    {
+      "start": 77.52,
+      "end": 79.88,
+      "text": "And if you're using a device, be sure to set it to cardiac mode"
+    },
+    {
+      "start": 80.06,
+      "end": 86.04,
+      "text": "optimal gain, depth and frame rate. As we begin our examination, there's a couple of landmarks"
+    },
+    {
+      "start": 86.04,
+      "end": 89.92,
+      "text": "that you want to be aware of for your patients. You want them lying flat. Come"
+    },
+    {
+      "start": 90.03,
+      "end": 91.61,
+      "text": "completely in a hospital bed if the head is up,"
+    },
+    {
+      "start": 91.75,
+      "end": 93.07,
+      "text": "try to lower as best you can."
+    },
+    {
+      "start": 93.7,
+      "end": 95.98,
+      "text": "You wanna make note of the zyfoid process,"
+    },
+    {
+      "start": 96.73,
+      "end": 99.31,
+      "text": "the sternal border, as well as the make clavicle line."
+    },
+    {
+      "start": 99.74,
+      "end": 99.96,
+      "text": "These will..."
+    },
+    {
+      "start": 100.0,
+      "end": 102.28,
+      "text": "be really important when we're thinking about pro placement."
+    },
+    {
+      "start": 103.43,
+      "end": 105.59,
+      "text": "Let's begin our examination with the parasitinal long."
+    },
+    {
+      "start": 106.43,
+      "end": 107.29,
+      "text": "Go ahead and get my gel."
+    },
+    {
+      "start": 111.18,
+      "end": 115.76,
+      "text": "The parasitinal long is a great view that's easy to assess,"
+    },
+    {
+      "start": 116.02,
+      "end": 118.44,
+      "text": "systolic function, pericardial effusion,"
+    },
+    {
+      "start": 118.95,
+      "end": 119.97,
+      "text": "gross abnormalities of the..."
+    },
+    {
+      "start": 120.0,
+      "end": 123.16,
+      "text": "mitral and aortic valve, and a little bit of chamber size."
+    },
+    {
+      "start": 124.07,
+      "end": 128.87,
+      "text": "What you want to do is place the probe generally in the second to fourth intercostal space on"
+    },
+    {
+      "start": 128.87,
+      "end": 129.93,
+      "text": "the patient's left side."
+    },
+    {
+      "start": 130.06,
+      "end": 134.51,
+      "text": "just next to the sternum. The marker of the probe should be pointed towards the"
+    },
+    {
+      "start": 134.51,
+      "end": 139.64,
+      "text": "patient's right shoulder. Going ahead and place my probe here."
+    },
+    {
+      "start": 141.7,
+      "end": 144.58,
+      "text": "And so here we can see a very nice personal long view."
+    },
+    {
+      "start": 145.16,
+      "end": 148.27,
+      "text": "We can see the left atrium, the mitral valve,"
+    },
+    {
+      "start": 148.99,
+      "end": 149.75,
+      "text": "the left ventricle."
+    },
+    {
+      "start": 150.42,
+      "end": 154.7,
+      "text": "aortic valve, and towards the top we can see the right ventricle as well."
+    },
+    {
+      "start": 155.67,
+      "end": 159.73,
+      "text": "And we're thinking about troubleshooting this view to get the most optimal view possible."
+    },
+    {
+      "start": 160.35,
+      "end": 161.41,
+      "text": "There's a couple of things you can do."
+    },
+    {
+      "start": 162.04,
+      "end": 164.9,
+      "text": "First of which, is you want to center the aortic"
+    },
+    {
+      "start": 164.9,
+      "end": 166.32,
+      "text": "and the mitral valve in the image."
+    },
+    {
+      "start": 166.6,
+      "end": 169.92,
+      "text": "In order to do that, you can rock the pro back and forth."
+    },
+    {
+      "start": 170.0,
+      "end": 174.5,
+      "text": "until you get an optimal damage. So I'm going to show that now. Here is me rocking the probe."
+    },
+    {
+      "start": 174.5,
+      "end": 179.86,
+      "text": "I'm exaggerating that movement a little bit, but you can see me rocking it to bring this into a more"
+    },
+    {
+      "start": 180.03,
+      "end": 185.16,
+      "text": "centered view. Another common thing that I see is a"
+    },
+    {
+      "start": 185.16,
+      "end": 188.08,
+      "text": "eortic valve may be incompletely visualized in this view."
+    },
+    {
+      "start": 188.64,
+      "end": 189.9,
+      "text": "And that's entirely related to your"
+    },
+    {
+      "start": 190.06,
+      "end": 194.9,
+      "text": "What you can do is, right now, my probe is almost perpendicular to the patient's chest."
+    },
+    {
+      "start": 194.9,
+      "end": 199.78,
+      "text": "What you can do is have the probe pointed a little bit more towards the head or I'm changing"
+    },
+    {
+      "start": 199.78,
+      "end": 199.98,
+      "text": "my..."
+    },
+    {
+      "start": 200.0,
+      "end": 204.11,
+      "text": "So it's more towards the patient's head and that brings the aortic valve more into view"
+    },
+    {
+      "start": 204.11,
+      "end": 207.49,
+      "text": "So just to demonstrate again can't really see the aortic valve now"
+    },
+    {
+      "start": 207.49,
+      "end": 209.97,
+      "text": "I'm pointing the probe a little bit more towards the head"
+    },
+    {
+      "start": 210.0,
+      "end": 211.96,
+      "text": "And it allows me to visualize it much better."
+    },
+    {
+      "start": 213.66,
+      "end": 217.3,
+      "text": "Another thing that I often see is if you are seeing just too much black that might mean"
+    },
+    {
+      "start": 217.3,
+      "end": 219.22,
+      "text": "you're over a rib or the sternum."
+    },
+    {
+      "start": 219.56,
+      "end": 219.98,
+      "text": "Here I..."
+    },
+    {
+      "start": 220.0,
+      "end": 221.04,
+      "text": "can actually feel the sternum."
+    },
+    {
+      "start": 221.4,
+      "end": 224.5,
+      "text": "And so what I want to do is just slide my probe over,"
+    },
+    {
+      "start": 224.96,
+      "end": 227.0,
+      "text": "and I'm able to visualize the pair's sternal long view"
+    },
+    {
+      "start": 227.0,
+      "end": 227.9,
+      "text": "much better."
+    },
+    {
+      "start": 228.83,
+      "end": 229.97,
+      "text": "So now we've done."
+    },
+    {
+      "start": 230.0,
+      "end": 232.56,
+      "text": "the parasitonal long, let's transition to a parasitonal short."
+    },
+    {
+      "start": 233.34,
+      "end": 237.64,
+      "text": "A parasitonal short is a great image to look at cardiac function, particularly systolic"
+    },
+    {
+      "start": 237.64,
+      "end": 239.9,
+      "text": "function of the left ventricle, the right ventricle."
+    },
+    {
+      "start": 240.54,
+      "end": 242.8,
+      "text": "as well as the valuation of the mitral valve."
+    },
+    {
+      "start": 243.82,
+      "end": 245.2,
+      "text": "Let's talk about the parasitonal short."
+    },
+    {
+      "start": 246.64,
+      "end": 247.38,
+      "text": "If you're in a parasitonal long,"
+    },
+    {
+      "start": 247.38,
+      "end": 249.22,
+      "text": "it's actually quite easy to get parasitonal short."
+    },
+    {
+      "start": 249.75,
+      "end": 249.97,
+      "text": "You don't need..."
+    },
+    {
+      "start": 250.0,
+      "end": 254.56,
+      "text": "to lift up the probe all you need to do is just rotate the probe about 60 to 90 degrees"
+    },
+    {
+      "start": 254.56,
+      "end": 259.96,
+      "text": "and you'll be able to get the image. What I do is I use two hands so I keep one of my"
+    },
+    {
+      "start": 260.06,
+      "end": 264.88,
+      "text": "hands firmly anchored on the patient, and I simply rotate the probe about 60 degrees,"
+    },
+    {
+      "start": 265.08,
+      "end": 268.22,
+      "text": "so now it's pointed toward the patient's left clavicle or left shoulder."
+    },
+    {
+      "start": 269.47,
+      "end": 269.97,
+      "text": "When I do this..."
+    },
+    {
+      "start": 270.0,
+      "end": 272.85,
+      "text": "I'm able to see a short axis view of the heart."
+    },
+    {
+      "start": 274.63,
+      "end": 277.65,
+      "text": "The pro positioning for the person on the shore is extremely important."
+    },
+    {
+      "start": 277.83,
+      "end": 279.97,
+      "text": "Depending on your scan angle, you're able to..."
+    },
+    {
+      "start": 280.0,
+      "end": 283.24,
+      "text": "see various different structures along a short axis of the heart."
+    },
+    {
+      "start": 284.2,
+      "end": 288.4,
+      "text": "For instance, if I have my probe and I decide to point it more anteriorly, or in other"
+    },
+    {
+      "start": 288.4,
+      "end": 289.94,
+      "text": "words, more towards the patient's head."
+    },
+    {
+      "start": 290.1,
+      "end": 292.0,
+      "text": "so I'm pointing it more towards the patient's head"
+    },
+    {
+      "start": 292.0,
+      "end": 292.76,
+      "text": "with my angle."
+    },
+    {
+      "start": 293.46,
+      "end": 297.65,
+      "text": "I'm able to see the eortic valve, the tricuspid valve,"
+    },
+    {
+      "start": 298.01,
+      "end": 299.97,
+      "text": "the pulmonic valve, all very..."
+    },
+    {
+      "start": 300.03,
+      "end": 305.66,
+      "text": "easily in my view. If I want to see more inferior structures or more towards the apex of the"
+    },
+    {
+      "start": 305.66,
+      "end": 309.97,
+      "text": "heart, I have to imagine I'm pointing my probe more towards the apex. So rather than having my"
+    },
+    {
+      "start": 310.0,
+      "end": 315.14,
+      "text": "scan angle towards the head a little bit. I'm going to change it so from going from this"
+    },
+    {
+      "start": 315.14,
+      "end": 319.78,
+      "text": "angle more towards perpendicular. When I do that I can see what's called a fish"
+    },
+    {
+      "start": 320.0,
+      "end": 325.2,
+      "text": "view of the heart. Here I can see the left ventricular cavity and the microphone valve opening and closing."
+    },
+    {
+      "start": 326.07,
+      "end": 329.97,
+      "text": "And if I want to go even farther and see the apex of the heart, I take..."
+    },
+    {
+      "start": 330.0,
+      "end": 333.32,
+      "text": "my angle and I point it more towards the apex of the heart."
+    },
+    {
+      "start": 333.88,
+      "end": 338.14,
+      "text": "By doing this, I'm able to visualize the papillary muscles, which is extremely important"
+    },
+    {
+      "start": 338.14,
+      "end": 339.62,
+      "text": "for systolic function measurement."
+    },
+    {
+      "start": 340.22,
+      "end": 342.38,
+      "text": "And then if I want to measure all the way to the apex,"
+    },
+    {
+      "start": 343.0,
+      "end": 345.64,
+      "text": "I point all the way down towards the apex with my angle."
+    },
+    {
+      "start": 346.26,
+      "end": 349.44,
+      "text": "So changing your angle with the pericernal short is"
+    },
+    {
+      "start": 350.1,
+      "end": 351.32,
+      "text": "extremely important to visualize"
+    },
+    {
+      "start": 351.32,
+      "end": 353.12,
+      "text": "all the different structures along the way."
+    },
+    {
+      "start": 354.2,
+      "end": 356.68,
+      "text": "Let's go ahead and transition to the apical 4-chain review."
+    },
+    {
+      "start": 357.43,
+      "end": 359.03,
+      "text": "There's a couple of things to keep in mind"
+    },
+    {
+      "start": 359.03,
+      "end": 359.97,
+      "text": "when doing an ap..."
+    },
+    {
+      "start": 360.1,
+      "end": 365.3,
+      "text": "four chamber view. First, it's one of more challenging views to obtain. So this might be the"
+    },
+    {
+      "start": 365.3,
+      "end": 369.28,
+      "text": "one where you're going to have to turn the patient onto the left side. Another thing is"
+    },
+    {
+      "start": 369.28,
+      "end": 369.9,
+      "text": "if you're having..."
+    },
+    {
+      "start": 370.0,
+      "end": 374.12,
+      "text": "a patient who has a substantial breast tissue, you're going to want to lift the breast"
+    },
+    {
+      "start": 374.12,
+      "end": 379.9,
+      "text": "and scan in the axillary fold. Never scan over the breast. Another thing is sometimes you"
+    },
+    {
+      "start": 380.0,
+      "end": 383.2,
+      "text": "You can attempt to find the point at maximal impulse or PMI."
+    },
+    {
+      "start": 383.88,
+      "end": 387.34,
+      "text": "And that's generally the spot where you're going to want to place your probe."
+    },
+    {
+      "start": 387.34,
+      "end": 389.92,
+      "text": "So, apical 4 Chamber as a general view"
+    },
+    {
+      "start": 390.0,
+      "end": 392.68,
+      "text": "is quite good at visualizing all four chambers of the heart,"
+    },
+    {
+      "start": 393.12,
+      "end": 394.72,
+      "text": "evaluation of systolic function,"
+    },
+    {
+      "start": 395.06,
+      "end": 397.82,
+      "text": "as well as looking at the mitral and tricuspid valves."
+    },
+    {
+      "start": 398.12,
+      "end": 399.97,
+      "text": "When I'm thinking about..."
+    },
+    {
+      "start": 400.03,
+      "end": 401.21,
+      "text": "my apocole 4 chamber view."
+    },
+    {
+      "start": 401.71,
+      "end": 403.69,
+      "text": "I'm generally going to be a little bit lateral"
+    },
+    {
+      "start": 403.69,
+      "end": 405.15,
+      "text": "to my main clavicular line."
+    },
+    {
+      "start": 405.63,
+      "end": 408.45,
+      "text": "And I'm going to place my probe just in fear to the nipple."
+    },
+    {
+      "start": 408.92,
+      "end": 409.98,
+      "text": "If you have a patient with re-"
+    },
+    {
+      "start": 410.0,
+      "end": 414.32,
+      "text": "really substantial systolic disease, their hearts might be a little bit more"
+    },
+    {
+      "start": 414.32,
+      "end": 419.55,
+      "text": "louder really displaced and you have to accompany that. Thinking about my"
+    },
+    {
+      "start": 419.55,
+      "end": 419.85,
+      "text": "patient."
+    },
+    {
+      "start": 420.0,
+      "end": 423.84,
+      "text": "here. I have my apical 4 chamber. Generally, you're going to have to increase your depth"
+    },
+    {
+      "start": 423.84,
+      "end": 429.97,
+      "text": "as you're scanning. In this particular view, we can see the left ventures..."
+    },
+    {
+      "start": 430.06,
+      "end": 434.24,
+      "text": "The left atrium, the right ventricle, and the right atrium."
+    },
+    {
+      "start": 434.8,
+      "end": 438.02,
+      "text": "One of the confusing things is for this particular view, everything is switched."
+    },
+    {
+      "start": 438.28,
+      "end": 439.76,
+      "text": "The left is on the right side, the right."
+    },
+    {
+      "start": 440.19,
+      "end": 440.81,
+      "text": "is on the left."
+    },
+    {
+      "start": 442.02,
+      "end": 446.5,
+      "text": "For the apical 4 chamber, this is actually a view that you may hear of two other views"
+    },
+    {
+      "start": 446.5,
+      "end": 447.88,
+      "text": "that come with apical in the name."
+    },
+    {
+      "start": 448.58,
+      "end": 449.86,
+      "text": "This includes the apical 5."
+    },
+    {
+      "start": 450.1,
+      "end": 452.64,
+      "text": "chamber, as well as the apical 2 chamber."
+    },
+    {
+      "start": 453.39,
+      "end": 458.31,
+      "text": "To do an apical 5 chamber, essentially what you're doing is taking the probe and pointing"
+    },
+    {
+      "start": 458.31,
+      "end": 459.93,
+      "text": "it a little bit more towards the patient."
+    },
+    {
+      "start": 460.0,
+      "end": 466.38,
+      "text": "head or in other words more interiorly. So if I have my apocole 4 chamber right here, all I'm"
+    },
+    {
+      "start": 466.38,
+      "end": 469.96,
+      "text": "doing is dropping my probe a little bit and that brings my aortic f-"
+    },
+    {
+      "start": 470.0,
+      "end": 471.94,
+      "text": "valve, a little bit better into view."
+    },
+    {
+      "start": 473.82,
+      "end": 478.08,
+      "text": "Similarly if I want an apical two chamber, which is something we can use to evaluate left"
+    },
+    {
+      "start": 478.08,
+      "end": 479.38,
+      "text": "of ventricular systolic function."
+    },
+    {
+      "start": 480.0,
+      "end": 484.24,
+      "text": "My orientation marker, which is now pointed to in a 3 o'clock position, is going to be"
+    },
+    {
+      "start": 484.5,
+      "end": 487.68,
+      "text": "rotated essentially 90 degrees up towards the patient's head."
+    },
+    {
+      "start": 488.82,
+      "end": 489.98,
+      "text": "When I do that, I can see that I can see that I can see that I can see that I can see"
+    },
+    {
+      "start": 490.03,
+      "end": 495.75,
+      "text": "the left ventricle, and I also can see the aortic valve as well. This allows me for a very nice"
+    },
+    {
+      "start": 495.75,
+      "end": 499.76,
+      "text": "view of a patient's systolic function. Let's transition now."
+    },
+    {
+      "start": 500.1,
+      "end": 501.12,
+      "text": "to the sub-costal view."
+    },
+    {
+      "start": 501.86,
+      "end": 504.2,
+      "text": "The sub-costal view is one of the most important views"
+    },
+    {
+      "start": 504.2,
+      "end": 505.72,
+      "text": "of bedside cardiac echo."
+    },
+    {
+      "start": 506.6,
+      "end": 509.48,
+      "text": "It can be used to evaluate paracardial effusions"
+    },
+    {
+      "start": 509.48,
+      "end": 509.98,
+      "text": "and include..."
+    },
+    {
+      "start": 510.98,
+      "end": 515.32,
+      "text": "tamponon. It's also quite good and code scenarios or cardiac compressions"
+    },
+    {
+      "start": 515.32,
+      "end": 519.86,
+      "text": "because it doesn't interfere with the person doing chest compressions. In terms of"
+    },
+    {
+      "start": 520.0,
+      "end": 524.6,
+      "text": "anatomical landmarks. You're going to palpate where the zyfoid process is. It can be very"
+    },
+    {
+      "start": 524.6,
+      "end": 529.08,
+      "text": "sensitive, so just palpate lightly as you're doing it. You're going to place your probe"
+    },
+    {
+      "start": 529.08,
+      "end": 529.98,
+      "text": "just need to"
+    },
+    {
+      "start": 530.0,
+      "end": 530.88,
+      "text": "the zyfoid process."
+    },
+    {
+      "start": 531.28,
+      "end": 534.54,
+      "text": "The marker of the probe is going to be pointed in a three o'clock position."
+    },
+    {
+      "start": 535.26,
+      "end": 539.96,
+      "text": "Another thing to keep in mind with a sub-costal view is oftentimes learners-"
+    },
+    {
+      "start": 540.0,
+      "end": 544.97,
+      "text": "take this sort of underhand approach when they're doing it. I often find that"
+    },
+    {
+      "start": 544.97,
+      "end": 549.66,
+      "text": "taking an overhand approach, so grabbing the probe and almost viewing it like a"
+    },
+    {
+      "start": 549.66,
+      "end": 549.98,
+      "text": "Mocha."
+    },
+    {
+      "start": 550.0,
+      "end": 552.88,
+      "text": "control can give you a little bit better of a scanning angle."
+    },
+    {
+      "start": 554.29,
+      "end": 559.87,
+      "text": "So here I am, feeling my zi-foy process, I'm having my probe, my marker is again pointed"
+    },
+    {
+      "start": 560.0,
+      "end": 568.96,
+      "text": "in this sort of three o'clock position, I might need just a little bit more gel and I'm"
+    },
+    {
+      "start": 568.96,
+      "end": 569.72,
+      "text": "really dropping"
+    },
+    {
+      "start": 570.0,
+      "end": 572.82,
+      "text": "my probe, so it's almost parallel with the patient's abdomen."
+    },
+    {
+      "start": 573.44,
+      "end": 577.66,
+      "text": "Again, this is another view where you may need to increase the depth to be able to visualize"
+    },
+    {
+      "start": 577.66,
+      "end": 579.18,
+      "text": "all the anatomic structures here."
+    },
+    {
+      "start": 580.0,
+      "end": 584.83,
+      "text": "we can see the right atrium, the right ventricle, which is sometimes not always seen,"
+    },
+    {
+      "start": 585.58,
+      "end": 589.98,
+      "text": "can also see the left atrium, the left ventricle, and to some extent the tricuff..."
+    },
+    {
+      "start": 590.1,
+      "end": 594.45,
+      "text": "when I'm thinking about troubleshooting this particular view,"
+    },
+    {
+      "start": 594.69,
+      "end": 597.51,
+      "text": "it's often helpful to have the patient take a deep breath in"
+    },
+    {
+      "start": 597.51,
+      "end": 599.97,
+      "text": "as that pushes the heart a little bit better into..."
+    },
+    {
+      "start": 600.03,
+      "end": 602.81,
+      "text": "So go ahead and take a deep breath in, hold it."
+    },
+    {
+      "start": 605.15,
+      "end": 607.11,
+      "text": "By doing it, it allows you to visualize the heart"
+    },
+    {
+      "start": 607.11,
+      "end": 608.17,
+      "text": "a little bit easier."
+    },
+    {
+      "start": 608.59,
+      "end": 609.15,
+      "text": "Go ahead and exhale."
+    },
+    {
+      "start": 611.57,
+      "end": 615.06,
+      "text": "There are three pathologies that we'll discuss in this video."
+    },
+    {
+      "start": 615.71,
+      "end": 619.98,
+      "text": "These include systolic dysfunction, pericardial effusion, and right ventric-"
+    },
+    {
+      "start": 620.0,
+      "end": 621.64,
+      "text": "during the enlargement and systolic dysfunction."
+    },
+    {
+      "start": 622.61,
+      "end": 625.17,
+      "text": "Let's first discuss left ventricular systolic dysfunction."
+    },
+    {
+      "start": 626.02,
+      "end": 628.89,
+      "text": "There are three key portions when evaluating LV."
+    },
+    {
+      "start": 630.0,
+      "end": 635.56,
+      "text": "systolic dysfunction. These include endocardial excursion, myocardial thickening and septal"
+    },
+    {
+      "start": 635.56,
+      "end": 639.34,
+      "text": "motion of the anterior leaflet of the mitral valve, also known as EPSS."
+    },
+    {
+      "start": 641.6,
+      "end": 645.06,
+      "text": "When you're thinking about endocardial excursion and myocardial thickening, you'll often"
+    },
+    {
+      "start": 645.06,
+      "end": 645.9,
+      "text": "need multiple views."
+    },
+    {
+      "start": 646.4,
+      "end": 649.98,
+      "text": "One view is often not sufficient to evaluate the systolic function of..."
+    },
+    {
+      "start": 650.1,
+      "end": 657.57,
+      "text": "When we're thinking about endocardial excursion, one thing to keep in mind is that endocardium"
+    },
+    {
+      "start": 657.57,
+      "end": 659.73,
+      "text": "may be mistaken for the ventricular wall."
+    },
+    {
+      "start": 660.1,
+      "end": 666.33,
+      "text": "myocardium and it's very important to track exactly how the endocardium is moving and multiple views."
+    },
+    {
+      "start": 666.86,
+      "end": 669.86,
+      "text": "This is often a more qualitative assessment. You're essentially looking"
+    },
+    {
+      "start": 670.0,
+      "end": 672.42,
+      "text": "at the LV cavity and how much does it increase"
+    },
+    {
+      "start": 672.42,
+      "end": 675.08,
+      "text": "or decrease between systole and diastole?"
+    },
+    {
+      "start": 675.7,
+      "end": 677.34,
+      "text": "Generally speaking, you want that cavity"
+    },
+    {
+      "start": 677.34,
+      "end": 679.76,
+      "text": "to decrease about 50% or so."
+    },
+    {
+      "start": 680.16,
+      "end": 681.54,
+      "text": "in between diastole and cystile."
+    },
+    {
+      "start": 681.99,
+      "end": 683.87,
+      "text": "And again, this is a more qualitative assessment."
+    },
+    {
+      "start": 685.5,
+      "end": 687.62,
+      "text": "If you want a more quantitative assessment,"
+    },
+    {
+      "start": 688.28,
+      "end": 689.98,
+      "text": "one common focus maneuver is"
+    },
+    {
+      "start": 690.0,
+      "end": 696.1,
+      "text": "evaluation of the E point septal separation also known as EPSS and this"
+    },
+    {
+      "start": 696.1,
+      "end": 699.92,
+      "text": "parastonal long image we're showing the anterior leaflet of the mitral"
+    },
+    {
+      "start": 700.0,
+      "end": 702.82,
+      "text": "valve as it flaps between systole and diastole."
+    },
+    {
+      "start": 704.22,
+      "end": 709.61,
+      "text": "EPSS is essentially a measurement of this anterior leaflet of the mitral valve as it moves close"
+    },
+    {
+      "start": 709.61,
+      "end": 709.97,
+      "text": "to the end."
+    },
+    {
+      "start": 710.0,
+      "end": 711.18,
+      "text": "interventricular septum."
+    },
+    {
+      "start": 712.25,
+      "end": 715.83,
+      "text": "If this valve leaflet fails to come within seven millimeters"
+    },
+    {
+      "start": 715.83,
+      "end": 717.45,
+      "text": "of their interventricular septum,"
+    },
+    {
+      "start": 717.84,
+      "end": 719.98,
+      "text": "this predicts a LV systolic function of"
+    },
+    {
+      "start": 720.06,
+      "end": 721.72,
+      "text": "less than 40% injection fraction."
+    },
+    {
+      "start": 722.0,
+      "end": 724.18,
+      "text": "It has a pretty good sensitivity of 70%"
+    },
+    {
+      "start": 724.18,
+      "end": 726.78,
+      "text": "and a specificity above 90%."
+    },
+    {
+      "start": 726.78,
+      "end": 729.97,
+      "text": "For several fun-"
+    },
+    {
+      "start": 730.53,
+      "end": 734.67,
+      "text": "categories when we're thinking about estimating systolic function, keep in mind that with point"
+    },
+    {
+      "start": 734.67,
+      "end": 739.13,
+      "text": "and care ultrasound, our goal is not to actually give you an exact number of ejection fraction."
+    },
+    {
+      "start": 739.27,
+      "end": 739.97,
+      "text": "That's way beyond..."
+    },
+    {
+      "start": 740.0,
+      "end": 741.32,
+      "text": "on the scope of point of care ultrasound."
+    },
+    {
+      "start": 741.48,
+      "end": 742.58,
+      "text": "That should be something that's done"
+    },
+    {
+      "start": 742.58,
+      "end": 744.1,
+      "text": "with formal echocardiography."
+    },
+    {
+      "start": 744.6,
+      "end": 746.68,
+      "text": "Nonetheless, you can qualitatively assess"
+    },
+    {
+      "start": 746.68,
+      "end": 749.14,
+      "text": "how a patient's esolic function is."
+    },
+    {
+      "start": 750.0,
+      "end": 755.85,
+      "text": "categories such as hyperdynamic, normal, mildly reduced, or severely reduced, but keep in mind,"
+    },
+    {
+      "start": 756.15,
+      "end": 759.97,
+      "text": "these are qualitative in nature. Here's a video of a personal..."
+    },
+    {
+      "start": 760.0,
+      "end": 765.97,
+      "text": "showing hyperdynamic systolic function. Here you can see the LV cavity completely collapsing"
+    },
+    {
+      "start": 765.97,
+      "end": 769.97,
+      "text": "during systole. You can also assess for hyperdynamic"
+    },
+    {
+      "start": 770.0,
+      "end": 773.94,
+      "text": "dynamic function and several other views, particularly the personal short, which we're showing"
+    },
+    {
+      "start": 773.94,
+      "end": 774.18,
+      "text": "here."
+    },
+    {
+      "start": 774.8,
+      "end": 778.24,
+      "text": "Again, you see the LV cavity completely collapsing during systole."
+    },
+    {
+      "start": 778.58,
+      "end": 779.98,
+      "text": "If you see a patient like this..."
+    },
+    {
+      "start": 780.0,
+      "end": 785.16,
+      "text": "who is hypotensive, or perhaps septic, this may be an indication that they need more aggressive"
+    },
+    {
+      "start": 785.16,
+      "end": 786.14,
+      "text": "fluid resuscitation."
+    },
+    {
+      "start": 788.1,
+      "end": 789.9,
+      "text": "Thinking about reduces the solid function."
+    },
+    {
+      "start": 790.45,
+      "end": 792.23,
+      "text": "Again, it's a qualitative measurement."
+    },
+    {
+      "start": 792.71,
+      "end": 794.75,
+      "text": "Here we're showing you a normal view"
+    },
+    {
+      "start": 794.75,
+      "end": 796.23,
+      "text": "of a pairstone along on the left,"
+    },
+    {
+      "start": 796.65,
+      "end": 798.65,
+      "text": "and an abnormal pairstone along on the right."
+    },
+    {
+      "start": 799.36,
+      "end": 799.96,
+      "text": "You can either..."
+    },
+    {
+      "start": 800.0,
+      "end": 804.54,
+      "text": "use, a more quality of assessment, or the EPSS, but what we're showing here is a little"
+    },
+    {
+      "start": 804.54,
+      "end": 806.02,
+      "text": "bit reduced ejection fraction."
+    },
+    {
+      "start": 807.44,
+      "end": 809.98,
+      "text": "Here's a peristerinal short from the same patient showing..."
+    },
+    {
+      "start": 810.0,
+      "end": 813.28,
+      "text": "a mildly reduced ejection fraction and a normal on the left."
+    },
+    {
+      "start": 815.3,
+      "end": 819.34,
+      "text": "Again, here is an apical forechamber with a normal on the left and an abnormal on the"
+    },
+    {
+      "start": 819.34,
+      "end": 819.54,
+      "text": "rights."
+    },
+    {
+      "start": 820.03,
+      "end": 822.77,
+      "text": "Again, you can see decreased the excursion of the endocardium"
+    },
+    {
+      "start": 822.77,
+      "end": 826.27,
+      "text": "and that LV cavity is not quite shrinking 50%."
+    },
+    {
+      "start": 827.65,
+      "end": 829.97,
+      "text": "Finally, just so you can see all the views, here's..."
+    },
+    {
+      "start": 830.0,
+      "end": 832.98,
+      "text": "a subcostal view of a mildly reduced ejection fraction."
+    },
+    {
+      "start": 833.44,
+      "end": 837.24,
+      "text": "Again, not able to see the entire LV cavity."
+    },
+    {
+      "start": 838.19,
+      "end": 839.97,
+      "text": "There are also degrees that you can use, so you..."
+    },
+    {
+      "start": 840.0,
+      "end": 842.98,
+      "text": "can see normal or mildly reduced or severely reduced"
+    },
+    {
+      "start": 842.98,
+      "end": 844.94,
+      "text": "as we're showing here in these three videos."
+    },
+    {
+      "start": 846.19,
+      "end": 848.45,
+      "text": "When it comes to assessing RV systolic dysfunction,"
+    },
+    {
+      "start": 848.79,
+      "end": 849.83,
+      "text": "there are two key views."
+    },
+    {
+      "start": 850.0,
+      "end": 854.44,
+      "text": "that can accomplish that. This includes the peristerinal short and the apical 4 chamber."
+    },
+    {
+      "start": 855.66,
+      "end": 859.36,
+      "text": "Thinking about the peristerinal short, the RV is on the lateral side of the screen."
+    },
+    {
+      "start": 860.26,
+      "end": 863.36,
+      "text": "One of the first clues that there may be RV systolic dysfunction"
+    },
+    {
+      "start": 863.36,
+      "end": 866.18,
+      "text": "is looking not so much at the size of the RV,"
+    },
+    {
+      "start": 866.58,
+      "end": 869.18,
+      "text": "but how it's affecting the left ventricular systolic cavity."
+    },
+    {
+      "start": 869.86,
+      "end": 869.98,
+      "text": "You off."
+    },
+    {
+      "start": 870.06,
+      "end": 874.3,
+      "text": "can see flattening of their inner ventricular septum as we're showing here when there's"
+    },
+    {
+      "start": 874.3,
+      "end": 875.86,
+      "text": "a very enlarged RV."
+    },
+    {
+      "start": 877.32,
+      "end": 879.9,
+      "text": "To confirm this, you can use an apical forechain review."
+    },
+    {
+      "start": 880.0,
+      "end": 885.01,
+      "text": "When you're thinking about the apical forechamber, again, you're assessing the size of the RV"
+    },
+    {
+      "start": 885.01,
+      "end": 889.8,
+      "text": "compared to the left ventricle. Generally, the RV is about two thirds or"
+    },
+    {
+      "start": 890.0,
+      "end": 892.36,
+      "text": "less than 2 thirds, the size of the left ventricle."
+    },
+    {
+      "start": 893.06,
+      "end": 899.77,
+      "text": "When you begin to see the RV approach 2 thirds or even a 1 to 1 or greater than 1 to 1 ratio."
+    },
+    {
+      "start": 900.0,
+      "end": 903.84,
+      "text": "compared to the left ventricle. This is your first clue that you're dealing with"
+    },
+    {
+      "start": 903.84,
+      "end": 908.68,
+      "text": "RV enlargement, which also may be tied to RV systolic dysfunction. It's very"
+    },
+    {
+      "start": 908.68,
+      "end": 909.86,
+      "text": "hard to tease out on poker."
+    },
+    {
+      "start": 910.0,
+      "end": 915.24,
+      "text": "If the finding that you're observing is old or new, certainly evaluations for that to exist,"
+    },
+    {
+      "start": 915.6,
+      "end": 918.68,
+      "text": "that's generally beyond the scope of what we're trying to accomplish here."
+    },
+    {
+      "start": 919.0,
+      "end": 919.84,
+      "text": "And so you should..."
+    },
+    {
+      "start": 920.03,
+      "end": 924.25,
+      "text": "consider your entire clinical history, the patient in front of you, the physical examination,"
+    },
+    {
+      "start": 924.73,
+      "end": 926.53,
+      "text": "and expert consultation as needed for that."
+    },
+    {
+      "start": 927.6,
+      "end": 929.98,
+      "text": "Another evaluation for our resistolic..."
+    },
+    {
+      "start": 930.03,
+      "end": 932.6,
+      "text": "this function includes a tricuspid"
+    },
+    {
+      "start": 932.6,
+      "end": 934.64,
+      "text": "annular plane systolic excursion"
+    },
+    {
+      "start": 934.64,
+      "end": 936.36,
+      "text": "also known as TAPC."
+    },
+    {
+      "start": 937.47,
+      "end": 938.99,
+      "text": "In this apical four chamber view,"
+    },
+    {
+      "start": 939.5,
+      "end": 939.94,
+      "text": "we see that"
+    },
+    {
+      "start": 940.03,
+      "end": 942.05,
+      "text": "try Cuspid valve on the left side of the screen."
+    },
+    {
+      "start": 942.76,
+      "end": 944.98,
+      "text": "This try Cuspid valve moves up and down"
+    },
+    {
+      "start": 944.98,
+      "end": 946.82,
+      "text": "during systole and diastole."
+    },
+    {
+      "start": 947.55,
+      "end": 949.85,
+      "text": "You can actually measure how far this"
+    },
+    {
+      "start": 949.85,
+      "end": 949.97,
+      "text": "pfff."
+    },
+    {
+      "start": 950.1,
+      "end": 953.82,
+      "text": "plane moves as an assessment of RV systolic function."
+    },
+    {
+      "start": 954.88,
+      "end": 959.91,
+      "text": "If the TAPC is generally less than 17 millimeters or 1.7"
+    },
+    {
+      "start": 960.0,
+      "end": 965.76,
+      "text": "centimeters. This is considered abnormal and is an indication of abnormal RV systolic"
+    },
+    {
+      "start": 965.76,
+      "end": 969.86,
+      "text": "function. Finally, let's discuss paracardiophusion."
+    },
+    {
+      "start": 970.93,
+      "end": 973.51,
+      "text": "There are two views you can use to assess for pericardial effusion."
+    },
+    {
+      "start": 973.94,
+      "end": 976.6,
+      "text": "These include the pair of sternal long and the sub-costal view,"
+    },
+    {
+      "start": 976.64,
+      "end": 978.14,
+      "text": "which tends to be the more sensitive view."
+    },
+    {
+      "start": 979.38,
+      "end": 979.96,
+      "text": "First, thinking of..."
+    },
+    {
+      "start": 980.03,
+      "end": 985.04,
+      "text": "the peristernal long. Pericardial fusion can be found in two places. It can track"
+    },
+    {
+      "start": 985.04,
+      "end": 989.97,
+      "text": "anteriorly towards the top of the image, and more inferiorly towards the bottom of the..."
+    },
+    {
+      "start": 990.0,
+      "end": 994.95,
+      "text": "One of the things that can often trick you is if a patient has a plural"
+    },
+    {
+      "start": 994.95,
+      "end": 997.99,
+      "text": "effusion, you may mistake this for a paracardial effusion."
+    },
+    {
+      "start": 999.04,
+      "end": 999.9,
+      "text": "What we're showing on the image"
+    },
+    {
+      "start": 1000.0,
+      "end": 1004.12,
+      "text": "on the left is a pericardial fusion and the image on the right is a plural"
+    },
+    {
+      "start": 1004.12,
+      "end": 1008.82,
+      "text": "of fusion. How I know the image on the left is a pericardial fusion is when I"
+    },
+    {
+      "start": 1008.82,
+      "end": 1009.88,
+      "text": "look inferiorly."
+    },
+    {
+      "start": 1010.38,
+      "end": 1015.12,
+      "text": "I see that diffusion tracks above the descending thoracic aorta, which we mark here."
+    },
+    {
+      "start": 1016.42,
+      "end": 1019.97,
+      "text": "In contrast, and the image on the right, when I look at this particular..."
+    },
+    {
+      "start": 1020.0,
+      "end": 1026.8,
+      "text": "The affusion or fluid is directly in contact with the descending thoracic aorta, which makes sense."
+    },
+    {
+      "start": 1027.0,
+      "end": 1029.38,
+      "text": "If you think about the aorta, it's in the chest wall cavity."
+    },
+    {
+      "start": 1030.13,
+      "end": 1035.1,
+      "text": "fluid, it should be directly contacting it. So be sure to distinguish from a paracardial"
+    },
+    {
+      "start": 1035.1,
+      "end": 1039.6,
+      "text": "and plural effusion using this technique of tracking the descending thoracic aorta."
+    },
+    {
+      "start": 1040.03,
+      "end": 1040.93,
+      "text": "relative to the fluid."
+    },
+    {
+      "start": 1042.97,
+      "end": 1044.71,
+      "text": "Next, let's discuss the subcostal view"
+    },
+    {
+      "start": 1044.71,
+      "end": 1046.65,
+      "text": "or subzyphoid view for pericardial fusion."
+    },
+    {
+      "start": 1046.99,
+      "end": 1048.91,
+      "text": "As I mentioned, this is one of the more sensitive views."
+    },
+    {
+      "start": 1049.37,
+      "end": 1049.97,
+      "text": "And generally, you can-"
+    },
+    {
+      "start": 1050.0,
+      "end": 1051.76,
+      "text": "and get a quick assessment of the effusion"
+    },
+    {
+      "start": 1051.76,
+      "end": 1053.04,
+      "text": "by scanning the patient."
+    },
+    {
+      "start": 1053.62,
+      "end": 1055.7,
+      "text": "Here we see an image of a paracardial effusion"
+    },
+    {
+      "start": 1056.16,
+      "end": 1057.4,
+      "text": "surrounding the entire heart."
+    },
+    {
+      "start": 1058.48,
+      "end": 1059.96,
+      "text": "You may hear about..."
+    },
+    {
+      "start": 1060.22,
+      "end": 1062.37,
+      "text": "assessments of right atrial collapse,"
+    },
+    {
+      "start": 1062.69,
+      "end": 1064.17,
+      "text": "right ventricular collapse."
+    },
+    {
+      "start": 1064.8,
+      "end": 1066.64,
+      "text": "These are things that are a little bit more advanced."
+    },
+    {
+      "start": 1066.88,
+      "end": 1069.97,
+      "text": "And generally, the assessment of pericardial tampon on."
+    },
+    {
+      "start": 1070.0,
+      "end": 1073.12,
+      "text": "or hemodynamic compromise is beyond the scope of poucus."
+    },
+    {
+      "start": 1073.5,
+      "end": 1076.08,
+      "text": "You should just incorporate poucus into your clinical exam"
+    },
+    {
+      "start": 1076.08,
+      "end": 1079.72,
+      "text": "before determining if a fusion is clinically relevant or not."
+    }
+  ]
+}

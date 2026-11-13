@@ -1,0 +1,363 @@
+{
+  "video_id": "J5gRFeZ7cZU",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/eval/J5gRFeZ7cZU/asr.txt",
+  "segments": [
+    {
+      "start": 1.06,
+      "end": 5.08,
+      "text": "I'm going to show you the standard ultrasound evaluation of the liver."
+    },
+    {
+      "start": 6.68,
+      "end": 8.82,
+      "text": "But that I will ask the patient if he has eaten."
+    },
+    {
+      "start": 9.48,
+      "end": 9.96,
+      "text": "I age 2."
+    },
+    {
+      "start": 10.0,
+      "end": 17.93,
+      "text": "hours ago, I will use some ultra sound gel on the right epigastrium and use the curved"
+    },
+    {
+      "start": 17.93,
+      "end": 19.79,
+      "text": "to erase some of the graphical."
+    },
+    {
+      "start": 20.03,
+      "end": 27.54,
+      "text": "The standard abdominal pre-settings of your sonographical machine will be sufficient."
+    },
+    {
+      "start": 28.96,
+      "end": 29.98,
+      "text": "First of all, I go and..."
+    },
+    {
+      "start": 30.0,
+      "end": 36.22,
+      "text": "to the median of the body and to the right of the gastro, and I'll tell the patient to"
+    },
+    {
+      "start": 36.22,
+      "end": 37.74,
+      "text": "take a deep breath and hold it."
+    },
+    {
+      "start": 39.38,
+      "end": 39.980000000000004,
+      "text": "Here you can see..."
+    },
+    {
+      "start": 40.0,
+      "end": 49.86,
+      "text": "that I'm going to a cross section of the left level low. When I've done that, I will ask the patient to ex..."
+    },
+    {
+      "start": 50.0,
+      "end": 57.61,
+      "text": "Then inhale again and pull it and go to the right dippy gas room."
+    },
+    {
+      "start": 60.86,
+      "end": 63.06,
+      "text": "and can evaluate the right liver lobe."
+    },
+    {
+      "start": 63.32,
+      "end": 69.03999999999999,
+      "text": "Sometimes it's not very easy to fill in all of the blank parts of the right liver lobe"
+    },
+    {
+      "start": 69.03999999999999,
+      "end": 69.98,
+      "text": "because of the air."
+    },
+    {
+      "start": 70.03,
+      "end": 76.37,
+      "text": "that is in the colula and the patient has eaten two hours ago so you can also put the right arm"
+    },
+    {
+      "start": 76.37,
+      "end": 79.98,
+      "text": "over your head, take a deep breath."
+    },
+    {
+      "start": 80.06,
+      "end": 89.85,
+      "text": "again, and here you can see the picture getting a little bit better, but still in this"
+    },
+    {
+      "start": 90.0,
+      "end": 98.31,
+      "text": "It's not optimal. Can you turn around left side a little bit? Yeah, that's good. Pick a deep breath again."
+    },
+    {
+      "start": 104.61,
+      "end": 106.99,
+      "text": "Now we can see the right level over a little bit better."
+    },
+    {
+      "start": 107.84,
+      "end": 109.82,
+      "text": "When I've done that, I go into the standard cross."
+    },
+    {
+      "start": 110.0,
+      "end": 119.93,
+      "text": "sections of the center of the liver, the most cranial of them representing the liver vein star as you can see here."
+    },
+    {
+      "start": 120.9,
+      "end": 129.98,
+      "text": "joining in the inferior of Inakaba, as you can see, it would be this..."
+    },
+    {
+      "start": 130.0,
+      "end": 136.43,
+      "text": "Actually, exhale again, pick a deep breath, and hold it."
+    },
+    {
+      "start": 137.03,
+      "end": 138.17,
+      "text": "Then the next..."
+    },
+    {
+      "start": 140.13,
+      "end": 143.19,
+      "text": "Cross section is the jumping stag sign."
+    },
+    {
+      "start": 143.95,
+      "end": 146.78,
+      "text": "As you can see here, you can see like the horns"
+    },
+    {
+      "start": 146.78,
+      "end": 149.76,
+      "text": "on the head of the stag, then you can see the body."
+    },
+    {
+      "start": 152.02,
+      "end": 156.4,
+      "text": "The legs going away, which is the port will be in branching in the center of the liver,"
+    },
+    {
+      "start": 156.83,
+      "end": 159.57,
+      "text": "exhaling it, it could deep breath again."
+    },
+    {
+      "start": 160.96,
+      "end": 167.81,
+      "text": "next structure you can evaluate here is this echogenic line that is between the right and left"
+    },
+    {
+      "start": 167.81,
+      "end": 169.87,
+      "text": "This is the inter-lober"
+    },
+    {
+      "start": 170.0,
+      "end": 173.7,
+      "text": "ligament, which ends in the terras hepatitis ligament."
+    },
+    {
+      "start": 175.26,
+      "end": 175.84,
+      "text": "It's here again."
+    },
+    {
+      "start": 177.1,
+      "end": 177.96,
+      "text": "It could deep breath again."
+    },
+    {
+      "start": 179.04,
+      "end": 179.98,
+      "text": "When you follow the t-"
+    },
+    {
+      "start": 180.0,
+      "end": 187.36,
+      "text": "of the jumping stack sign, as you can see here, you will find the gold letter which is here,"
+    },
+    {
+      "start": 189.47,
+      "end": 189.89,
+      "text": "Next, here."
+    },
+    {
+      "start": 190.0,
+      "end": 198.01,
+      "text": "And if done that, I go into a long section to the body to evaluate the left liver lobe in a long section."
+    },
+    {
+      "start": 198.89,
+      "end": 199.67,
+      "text": "You can deep breath again."
+    },
+    {
+      "start": 200.29,
+      "end": 209.29,
+      "text": "you can see the white-filled stomach on the right side of the picture. You can see the entrance into the stomach."
+    },
+    {
+      "start": 211.09,
+      "end": 215.25,
+      "text": "And you see the diaphragm as a small echogenic line"
+    },
+    {
+      "start": 215.25,
+      "end": 218.69,
+      "text": "between the heart and the liver, exhalation."
+    },
+    {
+      "start": 220.51,
+      "end": 221.31,
+      "text": "I can deep breath again."
+    },
+    {
+      "start": 223.02,
+      "end": 226.1,
+      "text": "When I push the probe more to the right side,"
+    },
+    {
+      "start": 226.2,
+      "end": 227.58,
+      "text": "I come more to the liver center"
+    },
+    {
+      "start": 227.58,
+      "end": 229.08,
+      "text": "and you see two different structures."
+    },
+    {
+      "start": 229.74,
+      "end": 229.98,
+      "text": "You see."
+    },
+    {
+      "start": 230.0,
+      "end": 239.26,
+      "text": "the ecogenic circling around the portluvane, which is the tissue around the portluvane branch,"
+    },
+    {
+      "start": 240.0,
+      "end": 245.48,
+      "text": "And you see the structure that has no echogenics structure around it, which is a liver vein."
+    },
+    {
+      "start": 246.15,
+      "end": 249.97,
+      "text": "So this is the difference between the portal vein and the liver vein."
+    },
+    {
+      "start": 250.0,
+      "end": 253.88,
+      "text": "is that there's no connective tissue around the vein."
+    },
+    {
+      "start": 256.17,
+      "end": 258.41,
+      "text": "Take a deep breath, again."
+    },
+    {
+      "start": 259.35,
+      "end": 259.77,
+      "text": "When I move."
+    },
+    {
+      "start": 260.38,
+      "end": 269.32,
+      "text": "Further over comes the right liver lobe. You see the portal vein of the right liver, right portal vein."
+    },
+    {
+      "start": 270.16,
+      "end": 271.04,
+      "text": "And you see the gall better."
+    },
+    {
+      "start": 273.73,
+      "end": 276.94,
+      "text": "Now I move gradually down to the end of the live."
+    },
+    {
+      "start": 277.82,
+      "end": 278.68,
+      "text": "Here comes the right kidney."
+    },
+    {
+      "start": 280.26,
+      "end": 288.25,
+      "text": "so exhale again and lie back. when there's too much air in the colon so you cannot see the right"
+    },
+    {
+      "start": 288.25,
+      "end": 289.97,
+      "text": "liver lobe from the front there's o-"
+    },
+    {
+      "start": 290.0,
+      "end": 295.82,
+      "text": "a possibility that you go and to a transcostal view of the right liver lobe as you can see here,"
+    },
+    {
+      "start": 296.51,
+      "end": 299.97,
+      "text": "you can find a sound window where you can..."
+    },
+    {
+      "start": 300.0,
+      "end": 305.4,
+      "text": "just tilt the probe at the same position and try to evaluate the right"
+    },
+    {
+      "start": 305.4,
+      "end": 309.86,
+      "text": "level of through the causal view, which can help at the center."
+    },
+    {
+      "start": 310.0,
+      "end": 313.02,
+      "text": "sometimes when you don't see the portal vein."
+    },
+    {
+      "start": 314.94,
+      "end": 316.04,
+      "text": "So I hope you liked this video."
+    },
+    {
+      "start": 316.62,
+      "end": 318.46,
+      "text": "Absolutely make sure to check out the course"
+    },
+    {
+      "start": 318.46,
+      "end": 319.74,
+      "text": "this video was taken from."
+    },
+    {
+      "start": 320.19,
+      "end": 324.13,
+      "text": "And to register for a free trial account which will give you access to select the chapters"
+    },
+    {
+      "start": 324.13,
+      "end": 324.79,
+      "text": "of the course."
+    },
+    {
+      "start": 325.76,
+      "end": 329.98,
+      "text": "If you want to learn how Met Mastery can help you become a great clinician, make sure to"
+    }
+  ]
+}

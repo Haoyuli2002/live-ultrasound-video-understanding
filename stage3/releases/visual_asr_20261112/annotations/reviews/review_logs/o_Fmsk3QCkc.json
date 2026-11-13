@@ -1,0 +1,85 @@
+{
+  "video_id": "o_Fmsk3QCkc",
+  "reviewer": "stage3_b",
+  "review_scope": "Question-led review by Agent B of Agent A draft; not blind. Native full-frame sampled checkpoints and available time-indexed ASR; no continuous replay or direct listening claim.",
+  "reviewer_native_opened": [
+    350,
+    550,
+    560,
+    570,
+    575,
+    577,
+    579,
+    579.25,
+    579.5,
+    579.75,
+    580,
+    590,
+    600,
+    610,
+    620,
+    630,
+    640,
+    650,
+    790,
+    790.25,
+    790.5,
+    790.75,
+    791,
+    792,
+    793,
+    900,
+    1130,
+    1150,
+    1160,
+    1161,
+    1162,
+    1162.25,
+    1162.5,
+    1162.75,
+    1163,
+    1164,
+    1164.25,
+    1164.5,
+    1164.75,
+    1165
+  ],
+  "tasks": [
+    {
+      "task_index": 1,
+      "findings": "Confirmed superficial lumen above larger muscle masses.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 2,
+      "findings": "Moved600 to579.25: correct paired geometry already appears at slide change.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 3,
+      "findings": "Moved795 to790.75: first strong narrowing already visible, before reopening seen793. Query790 open.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 4,
+      "findings": "Found original last-upper-limb anchor false: a further different sonogram occurs630 before640 leg diagram. Repaired to uniquely blue/red-outlined earlier example; answer retained only for this explicit anchor.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 5,
+      "findings": "Refined white arc description: extends across bottom including lower-right, not exclusively away-side lower-left.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 6,
+      "findings": "Moved1165 to1164.75; intermediate arrow does not yet supply changed contour. Explicitly an illustration, no actual deformation assertion.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    }
+  ]
+}

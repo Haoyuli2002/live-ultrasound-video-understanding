@@ -1,0 +1,413 @@
+{
+  "video_id": "BT7Y0rxOXNQ",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/BT7Y0rxOXNQ/asr.txt",
+  "segments": [
+    {
+      "start": 0.1,
+      "end": 5.37,
+      "text": "everyone, this is Elise Villino. In this video, we're going to be discussing hand and probe"
+    },
+    {
+      "start": 5.37,
+      "end": 9.96,
+      "text": "positioning for basic views in an echo cardiogram. The first view in our echo is the per-"
+    },
+    {
+      "start": 10.0,
+      "end": 14.620000000000001,
+      "text": "a certain long view. So in order to obtain a certain long view, we're going to be using"
+    },
+    {
+      "start": 14.620000000000001,
+      "end": 19.11,
+      "text": "this face array probe. This light indicates the probe marker on the probe."
+    },
+    {
+      "start": 20.1,
+      "end": 22.38,
+      "text": "And to obtain the paristernal long axis view,"
+    },
+    {
+      "start": 22.66,
+      "end": 25.04,
+      "text": "we're gonna put the probe to the left side"
+    },
+    {
+      "start": 25.04,
+      "end": 26.12,
+      "text": "of the patient's sternum,"
+    },
+    {
+      "start": 26.56,
+      "end": 28.92,
+      "text": "with the probe marker pointing towards the left hip."
+    },
+    {
+      "start": 29.759999999999998,
+      "end": 29.96,
+      "text": "We're gonna..."
+    },
+    {
+      "start": 30.0,
+      "end": 37.019999999999996,
+      "text": "started about the third or fourth intercostal space and we're going to continue to move the probe"
+    },
+    {
+      "start": 37.019999999999996,
+      "end": 39.96,
+      "text": "until we see the heart. So we'll start next to the sternon and move the..."
+    },
+    {
+      "start": 40.03,
+      "end": 45.019999999999996,
+      "text": "laterally. Didn't see the hard on this at this rib space so we'll move down a rib"
+    },
+    {
+      "start": 45.019999999999996,
+      "end": 48.26,
+      "text": "space back at the sternum and move out laterally."
+    },
+    {
+      "start": 50.06,
+      "end": 55.34,
+      "text": "back to the sternum, go down a rib space, and move out laterally, and repeat like this across"
+    },
+    {
+      "start": 55.34,
+      "end": 59.96,
+      "text": "the anterior aspect of the chest until you obtain the peristerinal lung."
+    },
+    {
+      "start": 60.1,
+      "end": 66.34,
+      "text": "view. Once you do find the heart, it will take some small adjustments of the Probe in"
+    },
+    {
+      "start": 66.34,
+      "end": 68.26,
+      "text": "order to obtain the view that you're looking for."
+    },
+    {
+      "start": 83.07,
+      "end": 86.13,
+      "text": "Ultimately, this is the view we want to obtain for the person along here."
+    },
+    {
+      "start": 88.26,
+      "end": 89.88,
+      "text": "The second view in our echo will be the person."
+    },
+    {
+      "start": 90.0,
+      "end": 94.87,
+      "text": "short axis view. So in order to obtain that we're going to keep the probe where we had it for the"
+    },
+    {
+      "start": 94.87,
+      "end": 98.83,
+      "text": "parisernal long axis view with the left ventricle centered in the center of the screen."
+    },
+    {
+      "start": 100.0,
+      "end": 101.54,
+      "text": "we're gonna turn the probe 90 degrees."
+    },
+    {
+      "start": 101.84,
+      "end": 103.22,
+      "text": "So the probe marker, which was pointing"
+    },
+    {
+      "start": 103.22,
+      "end": 104.4,
+      "text": "at the patient's left hip,"
+    },
+    {
+      "start": 104.94,
+      "end": 106.72,
+      "text": "is now gonna point out the patient's right hip."
+    },
+    {
+      "start": 109.02,
+      "end": 109.98,
+      "text": "And we should see an image that..."
+    },
+    {
+      "start": 110.0,
+      "end": 111.18,
+      "text": "that looks like this on the screen."
+    },
+    {
+      "start": 112.67,
+      "end": 113.85,
+      "text": "What you see on the screen here"
+    },
+    {
+      "start": 113.85,
+      "end": 116.15,
+      "text": "is that we're actually seeing the valves"
+    },
+    {
+      "start": 116.15,
+      "end": 117.73,
+      "text": "flickering in and out."
+    },
+    {
+      "start": 119.01,
+      "end": 119.97,
+      "text": "And for the personal..."
+    },
+    {
+      "start": 120.13,
+      "end": 123.29,
+      "text": "view we want to be just below the level of the valves at the level of the"
+    },
+    {
+      "start": 123.29,
+      "end": 129.26,
+      "text": "papillary muscles, which you now see here and here on the screen. In order to do"
+    },
+    {
+      "start": 129.26,
+      "end": 129.44,
+      "text": "that."
+    },
+    {
+      "start": 131.22,
+      "end": 135.9,
+      "text": "All I did was move my hand a bit like this to angle more towards the apex of the heart"
+    },
+    {
+      "start": 135.9,
+      "end": 137.9,
+      "text": "to see farther down into the ventricle."
+    },
+    {
+      "start": 140.19,
+      "end": 144.05,
+      "text": "next to you and our echo is going to be an apical 14 review. So we're going to keep the"
+    },
+    {
+      "start": 144.05,
+      "end": 148.01,
+      "text": "probe in the same orientation. The probe marker is still pointed over here towards the patient's"
+    },
+    {
+      "start": 148.01,
+      "end": 149.93,
+      "text": "right hip. And we're going to slot"
+    },
+    {
+      "start": 150.0,
+      "end": 155.47,
+      "text": "the probe laterally on the patient's chest. In the apical 14 review, we're"
+    },
+    {
+      "start": 155.47,
+      "end": 159.55,
+      "text": "trying to have the probe be at the apex of the heart, looking back up at the"
+    },
+    {
+      "start": 159.55,
+      "end": 159.69,
+      "text": "heart."
+    },
+    {
+      "start": 160.0,
+      "end": 163.5,
+      "text": "So the ultrasound is going to be scanning towards the patient's right shoulder or right"
+    },
+    {
+      "start": 163.5,
+      "end": 164.02,
+      "text": "scapula."
+    },
+    {
+      "start": 167.16,
+      "end": 169.96,
+      "text": "If you're doing this scan on a patient with breast tissue, you'll need..."
+    },
+    {
+      "start": 170.0,
+      "end": 172.52,
+      "text": "to be underneath the breast tissue in order to obtain this view."
+    },
+    {
+      "start": 174.86,
+      "end": 177.08,
+      "text": "And if you're scanning on a patient who has cardio magally"
+    },
+    {
+      "start": 177.08,
+      "end": 179.78,
+      "text": "for any reason, you'll find that you might need to move the probe."
+    },
+    {
+      "start": 180.03,
+      "end": 184.61,
+      "text": "far over almost all the way over into the anterior axillary line versus if you're"
+    },
+    {
+      "start": 184.61,
+      "end": 188.15,
+      "text": "scanning on a patient with a normal size heart you'll find that the view will be"
+    },
+    {
+      "start": 188.15,
+      "end": 189.91,
+      "text": "more on the anterior ass."
+    },
+    {
+      "start": 190.0,
+      "end": 190.94,
+      "text": "of the chest like this"
+    },
+    {
+      "start": 200.0,
+      "end": 203.38,
+      "text": "The view that we're looking to obtain in this view is shown on the screen here."
+    },
+    {
+      "start": 203.66,
+      "end": 207.51,
+      "text": "So we see all four chambers of the heart with the right side of the heart over here"
+    },
+    {
+      "start": 207.51,
+      "end": 209.19,
+      "text": "and the left side of the heart over here."
+    },
+    {
+      "start": 210.29,
+      "end": 215.15,
+      "text": "This view also shows a clear view of both valves as well as both three ventricular walls."
+    },
+    {
+      "start": 217.62,
+      "end": 219.76,
+      "text": "The final view in our echo is a sub-zicoid view."
+    },
+    {
+      "start": 220.42,
+      "end": 223.12,
+      "text": "So from where we have the pro position for the apical four,"
+    },
+    {
+      "start": 223.48,
+      "end": 225.94,
+      "text": "we're going to keep the probe in the same orientation"
+    },
+    {
+      "start": 225.94,
+      "end": 228.1,
+      "text": "with the probe markers still pointed towards the patients,"
+    },
+    {
+      "start": 228.28,
+      "end": 228.38,
+      "text": "right?"
+    },
+    {
+      "start": 229.02,
+      "end": 229.98,
+      "text": "We're going to slide the probe."
+    },
+    {
+      "start": 230.0,
+      "end": 234.15,
+      "text": "over to just beneath this eye flight process. So you can palpate where this"
+    },
+    {
+      "start": 234.15,
+      "end": 237.93,
+      "text": "eye flight process is on your patient and put the probe just underneath this"
+    },
+    {
+      "start": 237.93,
+      "end": 239.98,
+      "text": "eye flight process. You'll notice that I do"
+    },
+    {
+      "start": 240.0,
+      "end": 246.23,
+      "text": "change my hand positioning here from like this on top of the probe like this because we're going"
+    },
+    {
+      "start": 246.23,
+      "end": 249.41,
+      "text": "to need to flatten the probe in order to point the ultrasound."
+    },
+    {
+      "start": 250.26,
+      "end": 256.05,
+      "text": "up, back towards the heart. In order to obtain this view, you will have to press the probe"
+    },
+    {
+      "start": 256.05,
+      "end": 259.97,
+      "text": "a bit down into the patient's abdomen in order to get the ultrasound to be able."
+    },
+    {
+      "start": 260.0,
+      "end": 265.39,
+      "text": "to see the heart. That means that this view is nearly impossible if your patient is sitting"
+    },
+    {
+      "start": 265.39,
+      "end": 269.27,
+      "text": "straight up or if they're particularly obese or have a distended abdomen."
+    },
+    {
+      "start": 270.03,
+      "end": 271.13,
+      "text": "So in order to obtain this view,"
+    },
+    {
+      "start": 271.29,
+      "end": 272.89,
+      "text": "you'll have to have the patient lying supine"
+    },
+    {
+      "start": 272.89,
+      "end": 275.5,
+      "text": "and you will need to apply pressure into their abdomen."
+    },
+    {
+      "start": 278.81,
+      "end": 279.97,
+      "text": "If you were looking to obtain..."
+    },
+    {
+      "start": 280.0,
+      "end": 284.97,
+      "text": "With this is shown on the screen here where we again see all four chambers of the heart"
+    },
+    {
+      "start": 290.0,
+      "end": 290.76,
+      "text": "Thanks for joining us today."
+    },
+    {
+      "start": 291.31,
+      "end": 293.51,
+      "text": "We look forward to seeing you in the upcoming hands-on session."
+    },
+    {
+      "start": 294.28,
+      "end": 297.44,
+      "text": "If you have any questions, please don't hesitate to reach out to us at our email address"
+    },
+    {
+      "start": 297.44,
+      "end": 298.1,
+      "text": "listed here."
+    },
+    {
+      "start": 298.89,
+      "end": 299.01,
+      "text": "Thanks."
+    }
+  ]
+}

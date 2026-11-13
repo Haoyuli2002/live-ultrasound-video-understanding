@@ -1,0 +1,65 @@
+{
+  "video_id": "7Yfe2vOpFmY",
+  "reviewer": "stage3_b",
+  "review_scope": "Question-led review by Agent B of Agent A draft; not blind. Native full-frame sampled checkpoints and available time-indexed ASR; no continuous replay or direct listening claim.",
+  "reviewer_native_opened": [
+    170,
+    172,
+    172.25,
+    172.5,
+    173,
+    174,
+    175,
+    180,
+    270,
+    280,
+    285,
+    288,
+    289,
+    289.5,
+    290,
+    310,
+    480,
+    700
+  ],
+  "tasks": [
+    {
+      "task_index": 1,
+      "outcome": "corrected",
+      "issues": [
+        "Returning arcs appear before175; waiting for full row causes late notification."
+      ],
+      "changes": [
+        "Moved answer to172.5 with negative172.25. Reworded answer for first single returning arc."
+      ],
+      "query_status": "WAIT170; upper diagram has no return arc.",
+      "answer_status": "ANSWER172.5; first clear reviewed opposite-facing arc."
+    },
+    {
+      "task_index": 2,
+      "outcome": "corrected",
+      "issues": [
+        "Original question was too generic and answer asserted fetal identity beyond low-detail visual support."
+      ],
+      "changes": [
+        "Question requires newly revealed grayscale structure. Removed fetal diagnosis, described curved border/dark central region. Advanced answer290 to289; added288 checkpoint."
+      ],
+      "query_status": "WAIT270; narrow strip does not establish later structure.",
+      "answer_status": "ANSWER289; broad enough upper curved structure now discernible."
+    },
+    {
+      "task_index": 3,
+      "outcome": "accepted",
+      "issues": [],
+      "changes": [],
+      "query_status": "ANSWER480; bottom widest peak spacing, middle greatest vertical amplitude."
+    },
+    {
+      "task_index": 4,
+      "outcome": "accepted",
+      "issues": [],
+      "changes": [],
+      "query_status": "ANSWER700;180 clearly shows upper stick figure and lower ear, unique paired visual reference."
+    }
+  ]
+}

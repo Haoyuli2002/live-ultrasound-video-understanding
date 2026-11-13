@@ -1,0 +1,1378 @@
+{
+  "video_id": "HJ9HX0CrL-U",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/HJ9HX0CrL-U/asr.txt",
+  "segments": [
+    {
+      "start": 0.03,
+      "end": 1.78,
+      "text": "Hey there, I'm Dr. Cristina Dorno,"
+    },
+    {
+      "start": 2.16,
+      "end": 4.48,
+      "text": "I'm an emergency physician at Cooper University Hospital."
+    },
+    {
+      "start": 5.12,
+      "end": 6.04,
+      "text": "And today we're gonna be reviewing"
+    },
+    {
+      "start": 6.04,
+      "end": 8.66,
+      "text": "your basic pathology on your bedside cardiac ultrasound."
+    },
+    {
+      "start": 9.52,
+      "end": 9.96,
+      "text": "Now if you have-"
+    },
+    {
+      "start": 10.0,
+      "end": 14.46,
+      "text": "yet already I do want you to go back and watch the other video first on your basic windows of your"
+    },
+    {
+      "start": 14.46,
+      "end": 18.28,
+      "text": "cardiac ultrasound so you have an understanding of the anatomy we're going to be discussing right now."
+    },
+    {
+      "start": 19.1,
+      "end": 19.92,
+      "text": "So as we alluded to"
+    },
+    {
+      "start": 20.0,
+      "end": 24.3,
+      "text": "in the last video, there's three main questions that we try to answer on your focus-bedside"
+    },
+    {
+      "start": 24.3,
+      "end": 25.04,
+      "text": "cardiac ultrasound."
+    },
+    {
+      "start": 26.14,
+      "end": 28.46,
+      "text": "The first question is, what is the ejection fraction?"
+    },
+    {
+      "start": 28.76,
+      "end": 29.84,
+      "text": "So is the heart squeezing normal?"
+    },
+    {
+      "start": 30.0,
+      "end": 32.06,
+      "text": "Or does it have a depressed ejection fraction?"
+    },
+    {
+      "start": 33.71,
+      "end": 38.33,
+      "text": "Second, we look for effusion, so namely, is there a paracardial effusion or fluid around the heart?"
+    },
+    {
+      "start": 40.03,
+      "end": 43.25,
+      "text": "we assess for a quality. So we look at the difference between the right and left"
+    },
+    {
+      "start": 43.25,
+      "end": 49.16,
+      "text": "ventricle which could be an indicator of the right heart strain. So let's dive"
+    },
+    {
+      "start": 49.16,
+      "end": 49.94,
+      "text": "right into it. When we"
+    },
+    {
+      "start": 50.0,
+      "end": 53.38,
+      "text": "look at ejection fraction. We're really just looking at how well the hardest"
+    },
+    {
+      "start": 53.38,
+      "end": 57.24,
+      "text": "squeezing. So as a refresher from that last video, a little space repetition, we'll"
+    },
+    {
+      "start": 57.24,
+      "end": 59.82,
+      "text": "just go through what we're looking at again one more time. So this"
+    },
+    {
+      "start": 60.0,
+      "end": 64.04,
+      "text": "the left side of the screen is going to be a parasiton long access view of a"
+    },
+    {
+      "start": 64.04,
+      "end": 68.06,
+      "text": "heart with a normal ejection fraction. So your parasiton long access view is"
+    },
+    {
+      "start": 68.96,
+      "end": 69.88,
+      "text": "that view where you have your"
+    },
+    {
+      "start": 70.03,
+      "end": 74.65,
+      "text": "probe at a diagonal plane to the left side of the sternum, with your probe marker facing"
+    },
+    {
+      "start": 74.65,
+      "end": 77.94,
+      "text": "down towards the apex of the heart, that'll be on this side of the screen."
+    },
+    {
+      "start": 78.54,
+      "end": 79.66,
+      "text": "And then you have this side of the screen."
+    },
+    {
+      "start": 80.1,
+      "end": 84.46,
+      "text": "towards the base of the heart. Up to the top of the screen here is closest to your"
+    },
+    {
+      "start": 84.46,
+      "end": 88.42,
+      "text": "pro, most superficial, and then as you go down into the image, this is all deep"
+    },
+    {
+      "start": 88.42,
+      "end": 89.02,
+      "text": "burn to the body."
+    },
+    {
+      "start": 89.6,
+      "end": 89.98,
+      "text": "And here's just..."
+    },
+    {
+      "start": 90.0,
+      "end": 93.14,
+      "text": "indicators of your depth here. This is around five centimeters deep and"
+    },
+    {
+      "start": 93.14,
+      "end": 97.91,
+      "text": "tens and a minute deep here. So you're basic anatomy. So this is the long"
+    },
+    {
+      "start": 97.91,
+      "end": 99.91,
+      "text": "axis view of the heart kind of cutting across us."
+    },
+    {
+      "start": 100.06,
+      "end": 102.46,
+      "text": "so you see most of the chambers in this long access."
+    },
+    {
+      "start": 103.47,
+      "end": 105.03,
+      "text": "So this is your left atrium here."
+    },
+    {
+      "start": 105.64,
+      "end": 106.66,
+      "text": "This is your mitral valve."
+    },
+    {
+      "start": 107.18,
+      "end": 108.28,
+      "text": "Here's your left ventricle here."
+    },
+    {
+      "start": 109.2,
+      "end": 109.86,
+      "text": "Yourortic valve."
+    },
+    {
+      "start": 110.13,
+      "end": 111.41,
+      "text": "and you're at your to gall flow tract here."
+    },
+    {
+      "start": 112.46,
+      "end": 114.04,
+      "text": "Then this most superficial structure"
+    },
+    {
+      "start": 114.04,
+      "end": 115.26,
+      "text": "is gonna be your right ventricle"
+    },
+    {
+      "start": 115.26,
+      "end": 116.97,
+      "text": "and back here is your descending aorta."
+    },
+    {
+      "start": 118.64,
+      "end": 119.74,
+      "text": "So when you're assessing for rejection."
+    },
+    {
+      "start": 120.0,
+      "end": 122.74,
+      "text": "I really want your eyes to focus on the left ventricle here."
+    },
+    {
+      "start": 123.73,
+      "end": 126.95,
+      "text": "What I like to do is kind of draw on imaginary line in the middle of the ventricle"
+    },
+    {
+      "start": 126.95,
+      "end": 129.97,
+      "text": "and picture how close the walls of the ventricle are."
+    },
+    {
+      "start": 130.0,
+      "end": 134.66,
+      "text": "coming towards the middle of that line to see how well the chamber is kind of emptying"
+    },
+    {
+      "start": 134.66,
+      "end": 139.97,
+      "text": "during systole. Normal ejection fractions are on 60% so that's just kind of"
+    },
+    {
+      "start": 140.0,
+      "end": 144.79,
+      "text": "where you want to gear your eye towards. The numbers are not important, especially for the"
+    },
+    {
+      "start": 144.79,
+      "end": 149.89,
+      "text": "focus of this video right now. This is really a qualitative assessment of, does this heart look rough?"
+    },
+    {
+      "start": 150.03,
+      "end": 155.8,
+      "text": "normal or is it roughly depressed. So first I look at the ventricle I"
+    },
+    {
+      "start": 155.8,
+      "end": 158.9,
+      "text": "we discussed and then I look at the my drill valve and I try and look at this"
+    },
+    {
+      "start": 158.9,
+      "end": 159.76,
+      "text": "interior leaflet."
+    },
+    {
+      "start": 160.16,
+      "end": 162.02,
+      "text": "and see how close it's coming to the septum here."
+    },
+    {
+      "start": 162.76,
+      "end": 164.74,
+      "text": "Normally, it should come quite close to the septum."
+    },
+    {
+      "start": 164.74,
+      "end": 166.8,
+      "text": "That's a good indicator of a normal injection fraction."
+    },
+    {
+      "start": 167.87,
+      "end": 169.85,
+      "text": "And this will become more obvious right now."
+    },
+    {
+      "start": 170.0,
+      "end": 173.62,
+      "text": "I show you the second heart here and you compare kind of the squeeze between these two hearts"
+    },
+    {
+      "start": 173.62,
+      "end": 174.06,
+      "text": "in the screen."
+    },
+    {
+      "start": 175.01,
+      "end": 178.98,
+      "text": "So again, this is another pair of external long axis view and I want you to kind of draw"
+    },
+    {
+      "start": 178.98,
+      "end": 179.92,
+      "text": "that imaginary line."
+    },
+    {
+      "start": 180.0,
+      "end": 184.12,
+      "text": "the middle of that left ventricle. And you can see how the walls of this ventricle are not coming"
+    },
+    {
+      "start": 184.12,
+      "end": 189.42,
+      "text": "anywhere close to that imaginary line in the middle, like it is on this left side of the screen."
+    },
+    {
+      "start": 190.22,
+      "end": 193.08,
+      "text": "And then you can also appreciate that the anterior leaflet of this mitral valve"
+    },
+    {
+      "start": 193.08,
+      "end": 195.56,
+      "text": "really is not coming anywhere near the septum either"
+    },
+    {
+      "start": 195.56,
+      "end": 198.93,
+      "text": "compared to this healthy one that's coming close to the septum over here."
+    },
+    {
+      "start": 200.7,
+      "end": 203.46,
+      "text": "So just take a moment and appreciate the difference between these two hearts,"
+    },
+    {
+      "start": 203.46,
+      "end": 205.82,
+      "text": "how this life integral is squeezing quite well."
+    },
+    {
+      "start": 206.47,
+      "end": 209.97,
+      "text": "And this one is really not so much, and this heart on the right side of the screen has it."
+    },
+    {
+      "start": 210.0,
+      "end": 217.84,
+      "text": "reduced ejection fraction. You can assess for ejection fraction in most views of your"
+    },
+    {
+      "start": 217.84,
+      "end": 219.98,
+      "text": "you're going to get cardiocultural sound, I think you're..."
+    },
+    {
+      "start": 220.0,
+      "end": 223.98,
+      "text": "Parastronal short axis view is also a pretty good view to assess for this as well."
+    },
+    {
+      "start": 224.74,
+      "end": 228.62,
+      "text": "So to remind you, your Parastronal short axis view is going to be obtained when you start"
+    },
+    {
+      "start": 228.62,
+      "end": 229.98,
+      "text": "with that long axis we just have..."
+    },
+    {
+      "start": 230.0,
+      "end": 235.58,
+      "text": "And then you rotate your probe 90 degrees, so now we're cutting across the heart in a short"
+    },
+    {
+      "start": 235.58,
+      "end": 235.98,
+      "text": "axis."
+    },
+    {
+      "start": 236.97,
+      "end": 239.69,
+      "text": "And this is nice because we're seeing the left ventricle right here."
+    },
+    {
+      "start": 240.58,
+      "end": 243.12,
+      "text": "nice and big in the right ventricle right here."
+    },
+    {
+      "start": 243.97,
+      "end": 245.61,
+      "text": "This is at the level of the papillary muscles."
+    },
+    {
+      "start": 246.29,
+      "end": 247.47,
+      "text": "There's just what you're seeing here,"
+    },
+    {
+      "start": 247.61,
+      "end": 248.39,
+      "text": "right near the mitral valve."
+    },
+    {
+      "start": 250.35,
+      "end": 253.71,
+      "text": "So here what you can kind of picture is picture put in your finger in the center of this left"
+    },
+    {
+      "start": 253.71,
+      "end": 259.24,
+      "text": "And seeing how well the walls come in towards that center to see kind of how well it's squeezing"
+    },
+    {
+      "start": 260.03,
+      "end": 263.31,
+      "text": "And this on the self out of the screen this heart is has a normal ejection fraction"
+    },
+    {
+      "start": 263.31,
+      "end": 266.95,
+      "text": "because you can see that the walls are coming reasonably close to the middle of the screen."
+    },
+    {
+      "start": 267.89,
+      "end": 269.98,
+      "text": "And this is normal as opposed to this."
+    },
+    {
+      "start": 270.0,
+      "end": 274.39,
+      "text": "start on the right side of the screen. Same cut, this is your personal short access view,"
+    },
+    {
+      "start": 274.73,
+      "end": 278.11,
+      "text": "here's your left ventricle, and here's your right ventricle over here, and we're here"
+    },
+    {
+      "start": 278.11,
+      "end": 279.55,
+      "text": "work the level of the papillary muscles."
+    },
+    {
+      "start": 280.48,
+      "end": 283.1,
+      "text": "And again, if you picture putting your finger in the middle of this ventricle,"
+    },
+    {
+      "start": 283.5,
+      "end": 285.88,
+      "text": "you'll see that the walls are really not coming anywhere close to it,"
+    },
+    {
+      "start": 286.12,
+      "end": 288.64,
+      "text": "and that's certainly a heart with a reduced ejection fraction."
+    },
+    {
+      "start": 291.54,
+      "end": 293.3,
+      "text": "So now let's look at your apical 4 chain review."
+    },
+    {
+      "start": 293.62,
+      "end": 294.84,
+      "text": "So the orient you again,"
+    },
+    {
+      "start": 295.0,
+      "end": 298.08,
+      "text": "this is where you put your probe at the apex of the heart"
+    },
+    {
+      "start": 298.08,
+      "end": 299.98,
+      "text": "and your probe marker is going to..."
+    },
+    {
+      "start": 300.0,
+      "end": 302.52,
+      "text": "be facing towards the patient's right, which is standard convention."
+    },
+    {
+      "start": 303.98,
+      "end": 306.1,
+      "text": "And that'll be the side of the screen, and over here is patient's left."
+    },
+    {
+      "start": 306.9,
+      "end": 309.96,
+      "text": "So then this is your left atrium here, this is your left ventricle."
+    },
+    {
+      "start": 310.0,
+      "end": 315.37,
+      "text": "there's your mitral valve in the middle there, is your right h-hame over here, your tricuspid valve,"
+    },
+    {
+      "start": 315.63,
+      "end": 319.67,
+      "text": "and your right ventricle. So again,"
+    },
+    {
+      "start": 320.03,
+      "end": 321.65,
+      "text": "We're really, when we're looking for ejection fraction,"
+    },
+    {
+      "start": 321.91,
+      "end": 324.09,
+      "text": "I want you to just focus on this left ventricle here"
+    },
+    {
+      "start": 324.09,
+      "end": 326.67,
+      "text": "and envision this imaginary line right in the middle"
+    },
+    {
+      "start": 326.67,
+      "end": 328.89,
+      "text": "of the ventricle and try and assess how well the walls"
+    },
+    {
+      "start": 328.89,
+      "end": 329.85,
+      "text": "are coming towards that middle."
+    },
+    {
+      "start": 330.58,
+      "end": 334.28,
+      "text": "And you can see here that the walls are coming reasonably close to the middle of the ventricle here"
+    },
+    {
+      "start": 334.28,
+      "end": 336.5,
+      "text": "and that this is a heart with a normal ejection fraction."
+    },
+    {
+      "start": 337.74,
+      "end": 339.7,
+      "text": "As opposed to this heart now on the right side of the screen."
+    },
+    {
+      "start": 340.74,
+      "end": 342.46,
+      "text": "and it's the same your 8-bookle 4-tame review,"
+    },
+    {
+      "start": 342.84,
+      "end": 346.27,
+      "text": "and this is your left ventricle right here,"
+    },
+    {
+      "start": 347.11,
+      "end": 349.21,
+      "text": "and then you're gonna imagine that line right in the middle,"
+    },
+    {
+      "start": 349.37,
+      "end": 349.97,
+      "text": "and you can see that the..."
+    },
+    {
+      "start": 350.0,
+      "end": 354.54,
+      "text": "walls really are not coming close to the center of the ventricle and that this is a heart"
+    },
+    {
+      "start": 354.54,
+      "end": 355.84,
+      "text": "with a reduced ejection fraction."
+    },
+    {
+      "start": 358.0,
+      "end": 359.9,
+      "text": "So now let's move on to pericardial effusion."
+    },
+    {
+      "start": 360.0,
+      "end": 361.32,
+      "text": "So, how do we assess for effusion?"
+    },
+    {
+      "start": 361.92,
+      "end": 366.3,
+      "text": "Now, a pericardial effusion is fluid that accumulates in the pericardial sac around the heart."
+    },
+    {
+      "start": 367.0,
+      "end": 369.98,
+      "text": "The pericardial sac, if you remember from basic anatomy, has-"
+    },
+    {
+      "start": 370.1,
+      "end": 374.12,
+      "text": "two layers to it that are usually adhered together, unless there's fluid in between it that"
+    },
+    {
+      "start": 374.12,
+      "end": 375.56,
+      "text": "separates kind of in that space."
+    },
+    {
+      "start": 377.11,
+      "end": 378.83,
+      "text": "Now, what can cause a paragridol of fusion?"
+    },
+    {
+      "start": 379.33,
+      "end": 379.83,
+      "text": "A lot of things."
+    },
+    {
+      "start": 380.13,
+      "end": 382.75,
+      "text": "so trauma, malignancy, infection, inflammation."
+    },
+    {
+      "start": 384.53,
+      "end": 385.61,
+      "text": "The focus of this lecture today"
+    },
+    {
+      "start": 385.61,
+      "end": 386.97,
+      "text": "is not really to say what caused it."
+    },
+    {
+      "start": 387.05,
+      "end": 389.13,
+      "text": "It's just to identify what it looks like in ultrasound."
+    },
+    {
+      "start": 390.1,
+      "end": 392.74,
+      "text": "And fortunately for us all fluid generally looks"
+    },
+    {
+      "start": 392.74,
+      "end": 394.62,
+      "text": "anicoic or black on older sound."
+    },
+    {
+      "start": 395.79,
+      "end": 397.37,
+      "text": "So we're gonna be looking for black stripes."
+    },
+    {
+      "start": 398.25,
+      "end": 399.97,
+      "text": "So you see here that the blood inside the heart."
+    },
+    {
+      "start": 400.0,
+      "end": 403.78,
+      "text": "blood is also fluid, which is black, anechoic, meaning no echoes."
+    },
+    {
+      "start": 404.7,
+      "end": 407.88,
+      "text": "And so the blood in the heart will look the same as the blood outside the heart."
+    },
+    {
+      "start": 408.67,
+      "end": 409.97,
+      "text": "So what we're looking for is..."
+    },
+    {
+      "start": 410.29,
+      "end": 412.97,
+      "text": "black lines kind of outside your heart here."
+    },
+    {
+      "start": 414.19,
+      "end": 415.87,
+      "text": "So this is your Paris Journal Long Access view"
+    },
+    {
+      "start": 415.87,
+      "end": 418.68,
+      "text": "and this is your normal view that we just had"
+    },
+    {
+      "start": 418.68,
+      "end": 419.98,
+      "text": "in the last couple of slides."
+    },
+    {
+      "start": 420.03,
+      "end": 422.57,
+      "text": "So here's your left atrium, your left ventricle,"
+    },
+    {
+      "start": 422.97,
+      "end": 425.01,
+      "text": "your erotic afloat tract, and your right ventricle."
+    },
+    {
+      "start": 425.53,
+      "end": 426.93,
+      "text": "And now when we're looking for an effusion,"
+    },
+    {
+      "start": 427.17,
+      "end": 429.61,
+      "text": "we wanna look outside the heart in that paracardium."
+    },
+    {
+      "start": 430.26,
+      "end": 432.02,
+      "text": "for that black line, that black fluid."
+    },
+    {
+      "start": 432.6,
+      "end": 435.74,
+      "text": "So we'd be looking anteriorly here for any black stripes,"
+    },
+    {
+      "start": 435.92,
+      "end": 437.36,
+      "text": "and then we look posteriorly here"
+    },
+    {
+      "start": 437.36,
+      "end": 439.16,
+      "text": "if there's any sort of circumferential effusion."
+    },
+    {
+      "start": 439.68,
+      "end": 439.96,
+      "text": "We would..."
+    },
+    {
+      "start": 440.03,
+      "end": 444.22,
+      "text": "it back here, which we don't see. Blue at an either space here, so I'd say this"
+    },
+    {
+      "start": 444.22,
+      "end": 446.88,
+      "text": "heart on the left side of the screen does not have a pair of cardio effusion."
+    },
+    {
+      "start": 448.37,
+      "end": 449.97,
+      "text": "And we look at this heart on the right side of the..."
+    },
+    {
+      "start": 450.0,
+      "end": 453.28,
+      "text": "the screen, which you'll notice looks very different from the one on the left."
+    },
+    {
+      "start": 453.96,
+      "end": 456.52,
+      "text": "Now this is actually also a periscordal long axis view."
+    },
+    {
+      "start": 456.86,
+      "end": 459.97,
+      "text": "It just looks a bit different because there's a large periscord."
+    },
+    {
+      "start": 460.0,
+      "end": 464.44,
+      "text": "of using it around this heart. So to orient you who you're again, we do still have that"
+    },
+    {
+      "start": 464.44,
+      "end": 468.82,
+      "text": "same view of here's your left atrium, your left ventricle, your aortic afloat"
+    },
+    {
+      "start": 468.82,
+      "end": 469.91,
+      "text": "And you're right."
+    },
+    {
+      "start": 470.0,
+      "end": 476.01,
+      "text": "ventricle here, but here outside the heart this is your pericardium and this is a large pericardial"
+    },
+    {
+      "start": 476.01,
+      "end": 479.97,
+      "text": "effusional, large amount of fluid right around your heart. That's making it a very..."
+    },
+    {
+      "start": 480.0,
+      "end": 488.34,
+      "text": "a pronounced-looking heart in this view. This is what a large diffusion looks like. We can also"
+    },
+    {
+      "start": 488.34,
+      "end": 489.98,
+      "text": "assess for a few gents in your apical f-"
+    },
+    {
+      "start": 490.03,
+      "end": 495.56,
+      "text": "4 chain review. So again, here's your 4 chambers. We have our probe going in at the apex of the heart."
+    },
+    {
+      "start": 495.84,
+      "end": 499.96,
+      "text": "Here's your left hrm here, your left ventricle, your right hrm and your right ventricle."
+    },
+    {
+      "start": 500.0,
+      "end": 504.2,
+      "text": "and again when we look for a fusion we're really just looking at the outside of the heart so we're"
+    },
+    {
+      "start": 504.2,
+      "end": 509.89,
+      "text": "looking anteriorly here do we see like a black stripe or fluid anteriorly and then we look"
+    },
+    {
+      "start": 510.26,
+      "end": 515.6,
+      "text": "the way around the heart for any sort of black stripes, seeing if there's any sort of circumstantial"
+    },
+    {
+      "start": 515.6,
+      "end": 519.04,
+      "text": "paracardial effusion, which you do not see in this heart on the left side of the screen."
+    },
+    {
+      "start": 521.09,
+      "end": 525.28,
+      "text": "This is in sharp contrast to the heart and the right side of the screen, which is the same"
+    },
+    {
+      "start": 525.28,
+      "end": 529.76,
+      "text": "study from the last slide, so this is the same patient with this very large pericardial"
+    },
+    {
+      "start": 529.76,
+      "end": 529.98,
+      "text": "I'll see you in the next video."
+    },
+    {
+      "start": 530.0,
+      "end": 534.58,
+      "text": "Just looking at it from a different window. So this is again your apical four-tamber view."
+    },
+    {
+      "start": 535.57,
+      "end": 539.97,
+      "text": "You do see your four chambers here, your left age realm, your left ventricle, your right age realm, and your right..."
+    },
+    {
+      "start": 540.0,
+      "end": 544.1,
+      "text": "ventricle, but you'll notice that this scan looks a lot different from the one on the"
+    },
+    {
+      "start": 544.1,
+      "end": 547.9,
+      "text": "left side of the screen, because now we can appreciate this large pericardial effusion"
+    },
+    {
+      "start": 548.38,
+      "end": 549.48,
+      "text": "all the way around the heart here."
+    },
+    {
+      "start": 550.13,
+      "end": 557.78,
+      "text": "or concurrentially. The sub-side-foot view is actually a really nice view to assess for"
+    },
+    {
+      "start": 557.78,
+      "end": 559.98,
+      "text": "pre-recart all effusion because the probe is-"
+    },
+    {
+      "start": 560.03,
+      "end": 562.13,
+      "text": "coming in at the dependent portion of the heart,"
+    },
+    {
+      "start": 562.13,
+      "end": 564.41,
+      "text": "so it's actually quite sensitive looking for effusion."
+    },
+    {
+      "start": 565.6,
+      "end": 566.92,
+      "text": "So how do we get our sub-cyphoid view,"
+    },
+    {
+      "start": 567.0,
+      "end": 568.56,
+      "text": "just to remind you from that last lecture,"
+    },
+    {
+      "start": 568.74,
+      "end": 569.98,
+      "text": "this is where you're gonna take your pro-"
+    },
+    {
+      "start": 570.42,
+      "end": 573.59,
+      "text": "really in the upper part of the patient's belly and you're going to be"
+    },
+    {
+      "start": 573.59,
+      "end": 576.45,
+      "text": "angling it toward the patient's left shoulder so that you're cutting through"
+    },
+    {
+      "start": 576.45,
+      "end": 579.9,
+      "text": "the liver to get to the heart and you're going to have it at a"
+    },
+    {
+      "start": 580.0,
+      "end": 585.14,
+      "text": "flat angle, so you're going under the cyphoid process to get to the heart. And to kind of"
+    },
+    {
+      "start": 585.14,
+      "end": 589.96,
+      "text": "mind you have some anatomy. So here's your liver up here, most superficially."
+    },
+    {
+      "start": 590.0,
+      "end": 594.78,
+      "text": "And then back here, you have your left atrium, your left ventricle, your right atrium,"
+    },
+    {
+      "start": 594.98,
+      "end": 599.96,
+      "text": "and your right ventricle. Kind of coming in and out of plain. But whoop!"
+    },
+    {
+      "start": 600.0,
+      "end": 602.38,
+      "text": "We're really focusing on this particular view"
+    },
+    {
+      "start": 602.38,
+      "end": 603.86,
+      "text": "when we're looking for a fusion is again,"
+    },
+    {
+      "start": 603.96,
+      "end": 604.98,
+      "text": "just the outside of the heart."
+    },
+    {
+      "start": 605.22,
+      "end": 607.14,
+      "text": "So between the liver and the heart here,"
+    },
+    {
+      "start": 607.24,
+      "end": 609.7,
+      "text": "this is where we'd expect to see that black sliver."
+    },
+    {
+      "start": 610.0,
+      "end": 613.46,
+      "text": "There were any effusion, pericardial effusion, or fluid around the heart."
+    },
+    {
+      "start": 613.86,
+      "end": 617.94,
+      "text": "Then we focus, or I posteriorly, to see if there's any circumfrontial effusion or fluid"
+    },
+    {
+      "start": 617.94,
+      "end": 619.3,
+      "text": "around the heart over here."
+    },
+    {
+      "start": 620.32,
+      "end": 621.5,
+      "text": "so we look all the way around the heart,"
+    },
+    {
+      "start": 621.92,
+      "end": 622.96,
+      "text": "and we don't see any black stripes,"
+    },
+    {
+      "start": 623.1,
+      "end": 624.56,
+      "text": "so we say there's no paracardal effusion,"
+    },
+    {
+      "start": 625.05,
+      "end": 626.31,
+      "text": "and that's hard on the left side of the screen."
+    },
+    {
+      "start": 627.01,
+      "end": 628.57,
+      "text": "Then we look at this heart on the right side of the screen."
+    },
+    {
+      "start": 629.01,
+      "end": 629.97,
+      "text": "This is same, you're..."
+    },
+    {
+      "start": 630.0,
+      "end": 635.65,
+      "text": "sub-cyphoid view. We have a river here and then our heart here. And now we're training our eyes"
+    },
+    {
+      "start": 635.65,
+      "end": 639.94,
+      "text": "again to look around the heart in its pericardial sack. And here we do see..."
+    },
+    {
+      "start": 640.0,
+      "end": 644.98,
+      "text": "a paracardial effusion. We see this black stuff all the way around the heart. So this is a circumferential"
+    },
+    {
+      "start": 644.98,
+      "end": 645.98,
+      "text": "paracardial effusion."
+    },
+    {
+      "start": 651.06,
+      "end": 652.6,
+      "text": "So lastly, let's assess for a quality."
+    },
+    {
+      "start": 652.94,
+      "end": 656.62,
+      "text": "So what a quality is is really comparing the left"
+    },
+    {
+      "start": 656.62,
+      "end": 657.5,
+      "text": "and right ventricles."
+    },
+    {
+      "start": 658.53,
+      "end": 659.81,
+      "text": "Normally, you're left ventricles."
+    },
+    {
+      "start": 660.0,
+      "end": 661.64,
+      "text": "should be larger than your right ventricle."
+    },
+    {
+      "start": 662.85,
+      "end": 664.93,
+      "text": "Your right ventricle should be about 60%"
+    },
+    {
+      "start": 664.93,
+      "end": 666.49,
+      "text": "of what your left ventricle is,"
+    },
+    {
+      "start": 666.71,
+      "end": 668.47,
+      "text": "kind of in a cross section if you measure it"
+    },
+    {
+      "start": 668.47,
+      "end": 669.81,
+      "text": "right at the level of the valves here."
+    },
+    {
+      "start": 671.57,
+      "end": 674.19,
+      "text": "And this makes sense if you think of physiology of what the heart does."
+    },
+    {
+      "start": 674.43,
+      "end": 676.11,
+      "text": "So your left heart is going to be pumping blood"
+    },
+    {
+      "start": 676.11,
+      "end": 679.79,
+      "text": "to really your entire body while your right heart is a lower pressure."
+    },
+    {
+      "start": 680.0,
+      "end": 682.04,
+      "text": "and just pumping blood to your lungs."
+    },
+    {
+      "start": 683.92,
+      "end": 686.72,
+      "text": "Sometimes you can see dilation of the right ventricle,"
+    },
+    {
+      "start": 686.9,
+      "end": 689.3,
+      "text": "which is usually an indicator of strain on the right side of the heart."
+    },
+    {
+      "start": 690.03,
+      "end": 691.03,
+      "text": "And what can cause this, right?"
+    },
+    {
+      "start": 691.25,
+      "end": 692.89,
+      "text": "So in an acute setting, we will always worry"
+    },
+    {
+      "start": 692.89,
+      "end": 697.06,
+      "text": "about pulmonary emblai causing a real large increase"
+    },
+    {
+      "start": 697.06,
+      "end": 699.26,
+      "text": "in pressure in the pulmonary circulation."
+    },
+    {
+      "start": 699.66,
+      "end": 699.98,
+      "text": "That's back."
+    },
+    {
+      "start": 700.0,
+      "end": 701.92,
+      "text": "and causing dilation of your right ventricle."
+    },
+    {
+      "start": 702.65,
+      "end": 706.55,
+      "text": "This can also happen chronically in people with severe long standing, long disease,"
+    },
+    {
+      "start": 706.75,
+      "end": 709.97,
+      "text": "like COPD, that over time can cause dilation of the right."
+    },
+    {
+      "start": 710.0,
+      "end": 714.7,
+      "text": "ventricle. The acute or chronic thing is not important to us right now and it's really more"
+    },
+    {
+      "start": 714.7,
+      "end": 718.89,
+      "text": "based on clinical scenario. What I really want you to appreciate here is just the difference"
+    },
+    {
+      "start": 718.89,
+      "end": 719.97,
+      "text": "between the left and right vent."
+    },
+    {
+      "start": 720.06,
+      "end": 725.15,
+      "text": "angles. So your apical fortune review is a really nice view to assess for the"
+    },
+    {
+      "start": 725.15,
+      "end": 729.93,
+      "text": "difference because you can really compare the fold diameter both the left and"
+    },
+    {
+      "start": 730.0,
+      "end": 736.66,
+      "text": "ventricles and so you generally can just my ball and see that the left ventricle is larger than the"
+    },
+    {
+      "start": 736.66,
+      "end": 739.98,
+      "text": "right ventricle. You don't always have to make precise measurements but you can appreciate here that your"
+    },
+    {
+      "start": 740.0,
+      "end": 743.54,
+      "text": "left ventricle is larger than your right and so this is a heart with normal equality."
+    },
+    {
+      "start": 745.3,
+      "end": 748.67,
+      "text": "Now this is in difference to the heart on the right side of the screen and again this"
+    },
+    {
+      "start": 748.67,
+      "end": 749.81,
+      "text": "is your apical 4 chain review."
+    },
+    {
+      "start": 750.0,
+      "end": 754.24,
+      "text": "not the greatest window, but you can still appreciate here that this is your left"
+    },
+    {
+      "start": 754.24,
+      "end": 759.98,
+      "text": "atrium, your left ventricle, your right atrium, your right ventricle, and when you"
+    },
+    {
+      "start": 760.0,
+      "end": 762.3,
+      "text": "you see the free walls coming in and out of plain here,"
+    },
+    {
+      "start": 762.32,
+      "end": 763.86,
+      "text": "you can assess for the diameter here."
+    },
+    {
+      "start": 764.02,
+      "end": 765.81,
+      "text": "So you can look across here."
+    },
+    {
+      "start": 765.89,
+      "end": 767.37,
+      "text": "This is your diameter of your left ventricle."
+    },
+    {
+      "start": 768.01,
+      "end": 769.93,
+      "text": "Then you see it's actually much smaller."
+    },
+    {
+      "start": 770.0,
+      "end": 773.7,
+      "text": "than your right ventricle here, which as we discussed is not normal. Your left"
+    },
+    {
+      "start": 773.7,
+      "end": 777.18,
+      "text": "ventricle should always be bigger. So when your right ventricle looks larger than"
+    },
+    {
+      "start": 777.47,
+      "end": 779.65,
+      "text": "your left ventricle, that is not normal."
+    },
+    {
+      "start": 780.38,
+      "end": 783.0,
+      "text": "So this is definitely a heart with a dilated right ventricle"
+    },
+    {
+      "start": 783.8,
+      "end": 784.84,
+      "text": "abnormal equality."
+    },
+    {
+      "start": 786.78,
+      "end": 788.14,
+      "text": "You can install also a assess for this"
+    },
+    {
+      "start": 788.14,
+      "end": 789.74,
+      "text": "in your personal short access view."
+    },
+    {
+      "start": 790.83,
+      "end": 792.65,
+      "text": "which, again, you're doing a cross-section really"
+    },
+    {
+      "start": 792.65,
+      "end": 794.55,
+      "text": "of the heart, you're looking at the left ventricle here"
+    },
+    {
+      "start": 794.55,
+      "end": 796.04,
+      "text": "and the right ventricle here."
+    },
+    {
+      "start": 797.19,
+      "end": 798.79,
+      "text": "And this is a heart with endormally quality,"
+    },
+    {
+      "start": 798.99,
+      "end": 799.87,
+      "text": "so you see a nice round."
+    },
+    {
+      "start": 800.0,
+      "end": 803.18,
+      "text": "large left ventricle, and then the right ventricle is"
+    },
+    {
+      "start": 803.47,
+      "end": 806.24,
+      "text": "appreciably much smaller right on the outside here."
+    },
+    {
+      "start": 807.53,
+      "end": 809.97,
+      "text": "This is in contrast to this heart where you see that the left..."
+    },
+    {
+      "start": 810.03,
+      "end": 814.22,
+      "text": "ventricle really actually looks smaller and flattened and the right ventricle is"
+    },
+    {
+      "start": 814.22,
+      "end": 818.97,
+      "text": "really taking over here and is appreciably larger than the left ventricle. This"
+    },
+    {
+      "start": 818.97,
+      "end": 819.97,
+      "text": "flattening of this"
+    },
+    {
+      "start": 820.63,
+      "end": 824.47,
+      "text": "We actually have a word for it, we call it a D sign because you can appreciate that the"
+    },
+    {
+      "start": 824.76,
+      "end": 828.73,
+      "text": "septum is kind of flat like the long side of a D and then this is kind of a D on its"
+    },
+    {
+      "start": 828.73,
+      "end": 829.25,
+      "text": "side and around."
+    },
+    {
+      "start": 830.03,
+      "end": 832.53,
+      "text": "And this is also an indicator of abnormal equality"
+    },
+    {
+      "start": 832.53,
+      "end": 835.79,
+      "text": "and a dilated right side of the heart and right heart strain."
+    },
+    {
+      "start": 838.34,
+      "end": 839.54,
+      "text": "So that's actually all I've got for..."
+    },
+    {
+      "start": 840.03,
+      "end": 841.09,
+      "text": "basic pathology for today."
+    },
+    {
+      "start": 841.79,
+      "end": 844.03,
+      "text": "Please don't hesitate to reach out with any questions."
+    },
+    {
+      "start": 844.03,
+      "end": 847.07,
+      "text": "You can email me at adorno-christin at CooperHealth.edu."
+    },
+    {
+      "start": 847.57,
+      "end": 849.36,
+      "text": "Thank you and happy scanning."
+    }
+  ]
+}

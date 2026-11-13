@@ -1,0 +1,478 @@
+{
+  "video_id": "tYUve9VrycE",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/tYUve9VrycE/asr.txt",
+  "segments": [
+    {
+      "start": 5.6,
+      "end": 7.26,
+      "text": "Hello everyone, my name is Dan Restrepo,"
+    },
+    {
+      "start": 7.48,
+      "end": 9.28,
+      "text": "and I'm the Associate Residency Program Director"
+    },
+    {
+      "start": 9.28,
+      "end": 9.98,
+      "text": "for Point of..."
+    },
+    {
+      "start": 10.0,
+      "end": 13.52,
+      "text": "and the Department of Medicine and Massachusetts General Hospital in Boston."
+    },
+    {
+      "start": 14.379999999999999,
+      "end": 17.62,
+      "text": "Thank you so much for joining me. We're going to be talking about lung ultrasound today."
+    },
+    {
+      "start": 18.18,
+      "end": 19.86,
+      "text": "And we're going to start out with our first install."
+    },
+    {
+      "start": 20.0,
+      "end": 24.84,
+      "text": "where we're going to cover basic principles, probe selection, anatomy, and lung zones."
+    },
+    {
+      "start": 25.91,
+      "end": 28.15,
+      "text": "So by the end of this talk, I will live in successful."
+    },
+    {
+      "start": 28.73,
+      "end": 29.97,
+      "text": "If you can list the basic..."
+    },
+    {
+      "start": 30.0,
+      "end": 37.24,
+      "text": "of lung ultrasonography, choose the correct pro based on indication, and recognize normal anatomy on lung ultrason."
+    },
+    {
+      "start": 37.74,
+      "end": 39.980000000000004,
+      "text": "So let's go ahead and get started. In general..."
+    },
+    {
+      "start": 40.0,
+      "end": 45.0,
+      "text": "If you were to go back and read an internal medicine textbook from 25 or 30 years ago,"
+    },
+    {
+      "start": 45.12,
+      "end": 49.74,
+      "text": "they tell you that ultrasounding the lung is a waste of time because it's an air-filled organ."
+    },
+    {
+      "start": 50.0,
+      "end": 52.48,
+      "text": "and air is inherently the enemy of ultrasound"
+    },
+    {
+      "start": 52.94,
+      "end": 56.46,
+      "text": "since it does not conduct sound in the waves very efficiently."
+    },
+    {
+      "start": 57.04,
+      "end": 59.88,
+      "text": "Actually, when we do ultrasound along most of what we're looking at are"
+    },
+    {
+      "start": 60.0,
+      "end": 63.56,
+      "text": "artifacts, we're going to go through a lot of what these mean, but things like A lines,"
+    },
+    {
+      "start": 63.68,
+      "end": 66.2,
+      "text": "B lines, and consolidation, all are actually"
+    },
+    {
+      "start": 66.2,
+      "end": 69.56,
+      "text": "the artifactual products of the gas."
+    },
+    {
+      "start": 70.0,
+      "end": 74.08,
+      "text": "interface that happens in the chest. I want to convince you that long ultrasound"
+    },
+    {
+      "start": 74.08,
+      "end": 79.78,
+      "text": "though is portable, it's a sensitive and dynamic tool that can vastly change"
+    },
+    {
+      "start": 80.0,
+      "end": 84.72,
+      "text": "a diagnostic picture really, really quickly and I actually am a huge fan of it."
+    },
+    {
+      "start": 85.07,
+      "end": 87.79,
+      "text": "But it is important to remember that all of the findings that we're going to discuss in"
+    },
+    {
+      "start": 87.79,
+      "end": 89.83,
+      "text": "this series have a differential diagnosis."
+    },
+    {
+      "start": 90.0,
+      "end": 91.58,
+      "text": "They're not pathonomonic for anything."
+    },
+    {
+      "start": 92.06,
+      "end": 94.46,
+      "text": "And they're part of a larger clinical picture."
+    },
+    {
+      "start": 95.12,
+      "end": 97.14,
+      "text": "And that is something that is worth always keeping in mind."
+    },
+    {
+      "start": 97.58,
+      "end": 99.98,
+      "text": "So what problem are we going to use when we..."
+    },
+    {
+      "start": 100.03,
+      "end": 104.29,
+      "text": "start ultrasounding the lung, and really the answer depends on what we're looking for."
+    },
+    {
+      "start": 104.69,
+      "end": 108.91,
+      "text": "But in general, the probe indicator is always going to be towards the patient's head."
+    },
+    {
+      "start": 108.91,
+      "end": 109.97,
+      "text": "And again,"
+    },
+    {
+      "start": 110.0,
+      "end": 113.88,
+      "text": "the probe that you choose is depending on what you're looking for and if in the"
+    },
+    {
+      "start": 113.88,
+      "end": 119.08,
+      "text": "case of something very sort of fine or diminute like a pneumothorax you would"
+    },
+    {
+      "start": 119.08,
+      "end": 119.82,
+      "text": "I'll be using the linear"
+    },
+    {
+      "start": 120.0,
+      "end": 125.06,
+      "text": "the linear probe, or with regards to other pathology, we're often using the"
+    },
+    {
+      "start": 125.06,
+      "end": 129.22,
+      "text": "curvilinear or the phased array probe in cart-based machines with several probes."
+    },
+    {
+      "start": 130.03,
+      "end": 131.81,
+      "text": "Most of the time the patient is supine,"
+    },
+    {
+      "start": 131.95,
+      "end": 133.95,
+      "text": "they can be laying flat or they can be at an angle,"
+    },
+    {
+      "start": 134.27,
+      "end": 136.29,
+      "text": "because the majority of what we're actually looking for"
+    },
+    {
+      "start": 136.29,
+      "end": 138.47,
+      "text": "can be found in the anterolateral lung zones."
+    },
+    {
+      "start": 139.01,
+      "end": 139.97,
+      "text": "At times we'll..."
+    },
+    {
+      "start": 140.03,
+      "end": 143.77,
+      "text": "often go into the posterior views to look more carefully for pneumonia."
+    },
+    {
+      "start": 144.49,
+      "end": 149.77,
+      "text": "And in general, it's a good principle to always think about aiming the probe, herpindicular"
+    },
+    {
+      "start": 149.77,
+      "end": 149.91,
+      "text": "alert"
+    },
+    {
+      "start": 150.0,
+      "end": 154.96,
+      "text": "the plura so that the sound is actually hitting the plura at a 90 degree angle and we can get the"
+    },
+    {
+      "start": 154.96,
+      "end": 159.98,
+      "text": "best picture possible. That's important to note that's not always perpendicular to the chest."
+    },
+    {
+      "start": 160.0,
+      "end": 167.4,
+      "text": "wall. In general, if you're going to be using probes that have presets, the lung"
+    },
+    {
+      "start": 167.4,
+      "end": 169.92,
+      "text": "preset actually allows or amplifies a lot of"
+    },
+    {
+      "start": 170.0,
+      "end": 174.76,
+      "text": "artifacts where if you're using another modality like the abdominal modality on a"
+    },
+    {
+      "start": 174.76,
+      "end": 179.94,
+      "text": "curvilinear probe, those modalities are designed to drown out the artifacts at the gas cell."
+    },
+    {
+      "start": 180.0,
+      "end": 183.54,
+      "text": "interface so it's important to always remember to have your machine on the lung preset."
+    },
+    {
+      "start": 184.49,
+      "end": 189.98,
+      "text": "Okay, transitioning over to anatomy and the scanning zones. And so in general we're going to be"
+    },
+    {
+      "start": 190.0,
+      "end": 195.9,
+      "text": "looking at the lung through the chest, and we have here an awesome schematic from Dr."
+    },
+    {
+      "start": 196.02,
+      "end": 199.98,
+      "text": "Sony's great point of care ultrasound book and really what we're trying to get through"
+    },
+    {
+      "start": 200.0,
+      "end": 204.68,
+      "text": "through is this section here, this cross section of the chest wall, which you'll see in several"
+    },
+    {
+      "start": 204.68,
+      "end": 206.3,
+      "text": "schematics in the rest of the talk."
+    },
+    {
+      "start": 206.74,
+      "end": 209.98,
+      "text": "And really we're kind of incinating the probe from the anorallateral..."
+    },
+    {
+      "start": 210.76,
+      "end": 212.32,
+      "text": "feels predominantly, as I said earlier."
+    },
+    {
+      "start": 213.77,
+      "end": 215.49,
+      "text": "And so if you were to take a CT scan,"
+    },
+    {
+      "start": 215.83,
+      "end": 217.37,
+      "text": "the majority of kind of what we're looking at"
+    },
+    {
+      "start": 217.37,
+      "end": 219.97,
+      "text": "in this sagittal cut is sort of to scan the lung like that."
+    },
+    {
+      "start": 220.0,
+      "end": 224.9,
+      "text": "using the ultrasound probe. Okay and as I mentioned earlier a lot of what we're going to be looking at is"
+    },
+    {
+      "start": 224.9,
+      "end": 229.78,
+      "text": "sort of the view of the lung as seen through the chest wall and here in this schematic"
+    },
+    {
+      "start": 230.0,
+      "end": 235.98,
+      "text": "I have kind of a cross section of the Cheswell with a rib and a rib in the dark gray, the sort"
+    },
+    {
+      "start": 235.98,
+      "end": 239.2,
+      "text": "of soft tissue of the intercostal space in the light gray."
+    },
+    {
+      "start": 240.03,
+      "end": 244.87,
+      "text": "in theory visceral and parietal plura are going to be opposing themselves in that yellow line"
+    },
+    {
+      "start": 244.87,
+      "end": 249.97,
+      "text": "with that dark blue being hopefully healthy air-filled lung. Now it's a point to note that"
+    },
+    {
+      "start": 250.0,
+      "end": 253.86,
+      "text": "the ribs are largely calcific and dense,"
+    },
+    {
+      "start": 253.86,
+      "end": 255.74,
+      "text": "and thus they do not let sound through them."
+    },
+    {
+      "start": 256.08,
+      "end": 258.82,
+      "text": "So there should be some shadows behind those ribs."
+    },
+    {
+      "start": 259.26,
+      "end": 259.98,
+      "text": "And this is going to be a..."
+    },
+    {
+      "start": 260.06,
+      "end": 262.22,
+      "text": "frequent thing that we're coming back to throughout our talk."
+    },
+    {
+      "start": 262.89,
+      "end": 265.15,
+      "text": "And so in general, there's actually a variety of protocols"
+    },
+    {
+      "start": 265.15,
+      "end": 266.19,
+      "text": "to how to scan the lung."
+    },
+    {
+      "start": 266.31,
+      "end": 269.97,
+      "text": "I typically find most utility in the Volpicelli lung zone."
+    },
+    {
+      "start": 270.03,
+      "end": 276.91,
+      "text": "name so after the author of a seminal study in 2006 and this study divides actually or this"
+    },
+    {
+      "start": 276.91,
+      "end": 279.81,
+      "text": "vertical divides the chest into eight zones."
+    },
+    {
+      "start": 280.0,
+      "end": 285.2,
+      "text": "four per hemie thorax and you can see the we try to have the the divisors of"
+    },
+    {
+      "start": 285.2,
+      "end": 289.98,
+      "text": "said zones be the the the parastronal region the anterior axillary line."
+    },
+    {
+      "start": 291.23,
+      "end": 296.71,
+      "text": "And as I said this then divides the chest into eight different scanning zones and the"
+    },
+    {
+      "start": 296.71,
+      "end": 299.83,
+      "text": "nomenclature can vary from place to place the one that I like to keep in mind."
+    },
+    {
+      "start": 300.0,
+      "end": 309.96,
+      "text": "is the right zone start up with 1R, 2R, 3R, and 4R as you move further down the chest and on the left side it will be 1L, 2L."
+    },
+    {
+      "start": 310.0,
+      "end": 316.48,
+      "text": "free L and 4L as you move down the chest. And as I said, many protocols exist and it depends kind"
+    },
+    {
+      "start": 316.48,
+      "end": 319.96,
+      "text": "of on what you're looking for, but there can be as few as four zones and"
+    },
+    {
+      "start": 320.0,
+      "end": 320.82,
+      "text": "as many as 32."
+    },
+    {
+      "start": 321.98,
+      "end": 323.96,
+      "text": "And it can also be tailored to the clinical question,"
+    },
+    {
+      "start": 324.08,
+      "end": 325.96,
+      "text": "meaning if you're looking for a pneumothorax"
+    },
+    {
+      "start": 325.96,
+      "end": 327.64,
+      "text": "in a supine person, you really"
+    },
+    {
+      "start": 327.64,
+      "end": 329.42,
+      "text": "want to focus a lot on those upper zones."
+    },
+    {
+      "start": 329.76,
+      "end": 329.98,
+      "text": "If you'll..."
+    },
+    {
+      "start": 330.0,
+      "end": 333.38,
+      "text": "looking for pleural effusions, you probably want to be spending a little bit more time down"
+    },
+    {
+      "start": 333.38,
+      "end": 334.82,
+      "text": "in the dependent regions of the chest."
+    },
+    {
+      "start": 335.9,
+      "end": 339.96,
+      "text": "And with that, we conclude our first part of our talk on lung ultrasound, please tune in."
+    },
+    {
+      "start": 340.0,
+      "end": 344.62,
+      "text": "to the next series for a total of four talks on lung ultrasound."
+    }
+  ]
+}

@@ -1,0 +1,508 @@
+{
+  "video_id": "Lx8VPI75R8s",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/Lx8VPI75R8s/asr.txt",
+  "segments": [
+    {
+      "start": 0.48,
+      "end": 2.76,
+      "text": "You need to master the in-plane technique."
+    },
+    {
+      "start": 3.8,
+      "end": 7.21,
+      "text": "In short, you need to align the probe, the cannula,"
+    },
+    {
+      "start": 7.57,
+      "end": 9.47,
+      "text": "and the long axis of the vessel."
+    },
+    {
+      "start": 10.1,
+      "end": 15.75,
+      "text": "I wish I could come to your department and show you hands-on, but for now, we'll have to make do."
+    },
+    {
+      "start": 16.22,
+      "end": 19.98,
+      "text": "This lesson is heavy on details, but it's by mastering these..."
+    },
+    {
+      "start": 20.32,
+      "end": 23.85,
+      "text": "that you will become an expert at Central Lines."
+    },
+    {
+      "start": 28.85,
+      "end": 29.97,
+      "text": "We prefer the long act."
+    },
+    {
+      "start": 30.06,
+      "end": 35.54,
+      "text": "in plain approach. What does that actually mean? Let's break it down."
+    },
+    {
+      "start": 36.48,
+      "end": 39.96,
+      "text": "The ultrasound span originating from the probe creates..."
+    },
+    {
+      "start": 40.03,
+      "end": 47.32,
+      "text": "a 2D picture on the screen. How we rotate the probe determine how we visualize the vessel in"
+    },
+    {
+      "start": 47.68,
+      "end": 49.96,
+      "text": "this 2D picture. Now, the valve..."
+    },
+    {
+      "start": 50.0,
+      "end": 59.82,
+      "text": "vessel is essentially a long tube. If we place the plane across the vessel we get the short axis view."
+    },
+    {
+      "start": 60.45,
+      "end": 62.8,
+      "text": "and the tube appears as a circle."
+    },
+    {
+      "start": 65.31,
+      "end": 67.69,
+      "text": "If we place the plane along the vessel,"
+    },
+    {
+      "start": 68.43,
+      "end": 69.97,
+      "text": "it's called the long axis field."
+    },
+    {
+      "start": 70.0,
+      "end": 76.48,
+      "text": "And you see the length of the tube. The vessel appears as a horizontal bar."
+    },
+    {
+      "start": 78.32,
+      "end": 79.9,
+      "text": "There's also a middle way. You bleed."
+    },
+    {
+      "start": 80.16,
+      "end": 85.96,
+      "text": "It's obtained by going halfway between short and long axis."
+    },
+    {
+      "start": 87.32,
+      "end": 89.96,
+      "text": "We'll get back to you why you need to master this in just-"
+    },
+    {
+      "start": 90.0,
+      "end": 97.59,
+      "text": "a little bit. In plain and out of plain refers to how we visualise the cannula with the regards"
+    },
+    {
+      "start": 97.59,
+      "end": 99.96,
+      "text": "to the ultra sound fan. We're going to..."
+    },
+    {
+      "start": 100.03,
+      "end": 109.98,
+      "text": "demonstrate this using a bag of saline. With the out-of-plane approach, a needle enters the skin perpendicular to the ultrasound feel, so it appears as a hypercord."
+    },
+    {
+      "start": 110.0,
+      "end": 116.16,
+      "text": "on the screen. We're not very fond of this approach. It's very easy to be fooled."
+    },
+    {
+      "start": 116.77,
+      "end": 119.97,
+      "text": "It's possible to think that you're looking at the tip when you're in fact..."
+    },
+    {
+      "start": 120.16,
+      "end": 126.31,
+      "text": "looking at the mid shaft of the cannula because all you see is a dot. Meanwhile the tip can be"
+    },
+    {
+      "start": 126.31,
+      "end": 129.96,
+      "text": "large deep in the lung. This has happened."
+    },
+    {
+      "start": 130.93,
+      "end": 135.97,
+      "text": "However, this can be mitigated by consistently using dynamic tip visualization."
+    },
+    {
+      "start": 137.25,
+      "end": 139.43,
+      "text": "Basically, you move the probe away."
+    },
+    {
+      "start": 140.0,
+      "end": 145.06,
+      "text": "until you no longer see the dot and advance the cannula until you see it again."
+    },
+    {
+      "start": 146.04,
+      "end": 149.96,
+      "text": "We rarely use this for central lines, but it does have its use for..."
+    },
+    {
+      "start": 150.0,
+      "end": 157.7,
+      "text": "arterial lines. What we want to achieve is a perfectly aligned, perfectly parallel cannula and"
+    },
+    {
+      "start": 157.7,
+      "end": 159.96,
+      "text": "ultrasound beam approaching a l-"
+    },
+    {
+      "start": 160.0,
+      "end": 165.95,
+      "text": "access view of the vessel, seen as a beautiful black band in the right part of the screen,"
+    },
+    {
+      "start": 166.35,
+      "end": 169.19,
+      "text": "which is where we aim to hit the vessel with a cannula."
+    },
+    {
+      "start": 170.0,
+      "end": 173.78,
+      "text": "inserted the canula in plane with a clear visualization of the tip."
+    },
+    {
+      "start": 174.7,
+      "end": 178.36,
+      "text": "See how we proceed towards our target with perfect control."
+    },
+    {
+      "start": 182.5,
+      "end": 185.15,
+      "text": "Okay, so let's put this together again, burst."
+    },
+    {
+      "start": 185.58,
+      "end": 187.74,
+      "text": "Achieve a perfect long axis view of the vein."
+    },
+    {
+      "start": 189.42,
+      "end": 189.96,
+      "text": "This is the long-"
+    },
+    {
+      "start": 190.0,
+      "end": 196.28,
+      "text": "axis view. Use a small sweeping motion back and forth to assess how wide the vein is and thereby"
+    },
+    {
+      "start": 196.28,
+      "end": 199.97,
+      "text": "where the dead center is. At this point, the vein is bla-"
+    },
+    {
+      "start": 200.0,
+      "end": 207.99,
+      "text": "and you have the crispest wall, blood, interface. Once you have the perfect picture, you should never"
+    },
+    {
+      "start": 207.99,
+      "end": 209.97,
+      "text": "move your probe. This is easier to-"
+    },
+    {
+      "start": 210.0,
+      "end": 214.5,
+      "text": "said than done, but it will help a great deal if you rest your wrist against the patient"
+    },
+    {
+      "start": 214.5,
+      "end": 218.08,
+      "text": "and use three fingers to grip the probe firmly."
+    },
+    {
+      "start": 219.2,
+      "end": 219.84,
+      "text": "You'll feel an urge."
+    },
+    {
+      "start": 220.1,
+      "end": 225.38,
+      "text": "move the probe to find the cannula but then you lost your perfect alignment with the vein."
+    },
+    {
+      "start": 225.82,
+      "end": 229.98,
+      "text": "The trick is to move the cannula not the probe. I cannot over"
+    },
+    {
+      "start": 230.0,
+      "end": 237.05,
+      "text": "state how important this is. Now pick up your cannula with an empty two CC syringe attached"
+    },
+    {
+      "start": 237.05,
+      "end": 239.93,
+      "text": "to it. This serves as an improvised handle."
+    },
+    {
+      "start": 240.99,
+      "end": 245.45,
+      "text": "Grab it firmly and place your index finger as shown for extra control."
+    },
+    {
+      "start": 246.17,
+      "end": 249.97,
+      "text": "Align the cannula and the ultrasound field before you puncture this..."
+    },
+    {
+      "start": 250.03,
+      "end": 259.01,
+      "text": "So, this is wrong, but this is the probe and the cannula should be like one unit at all times."
+    },
+    {
+      "start": 260.0,
+      "end": 267.09,
+      "text": "this in mind when you're tilting the probe. Now we approach the target. We want to see the"
+    },
+    {
+      "start": 267.09,
+      "end": 269.91,
+      "text": "steel at all times. So don't accept."
+    },
+    {
+      "start": 270.0,
+      "end": 276.75,
+      "text": "tissue movements as a substitute. If you do not see the tip, do not advance the cannula."
+    },
+    {
+      "start": 278.13,
+      "end": 279.53,
+      "text": "You may experience a..."
+    },
+    {
+      "start": 280.0,
+      "end": 286.18,
+      "text": "you have a seemingly perfectly aligned pro-men cannula when all of a sudden the cannula just disappears."
+    },
+    {
+      "start": 287.27,
+      "end": 288.87,
+      "text": "Relax. No sudden movements."
+    },
+    {
+      "start": 290.03,
+      "end": 295.48,
+      "text": "to move the probe. You don't want to lose sight of the vein. The field and the cannula are probably"
+    },
+    {
+      "start": 295.48,
+      "end": 299.54,
+      "text": "still parallel if you haven't done anything rash, they're just not perfectly aligned."
+    },
+    {
+      "start": 300.32,
+      "end": 302.93,
+      "text": "The solution is lateral displacement."
+    },
+    {
+      "start": 303.65,
+      "end": 305.56,
+      "text": "Shift the cannula sideways"
+    },
+    {
+      "start": 305.56,
+      "end": 308.04,
+      "text": "and it will pop interview again."
+    },
+    {
+      "start": 312.43,
+      "end": 318.93,
+      "text": "shifting laterally we can make the tip reappear. Now this is how not to do it."
+    },
+    {
+      "start": 320.0,
+      "end": 322.78,
+      "text": "may find the tip, but you'll lose your alignment."
+    },
+    {
+      "start": 324.69,
+      "end": 327.35,
+      "text": "The in-plane long-axis technique has the advantage"
+    },
+    {
+      "start": 327.35,
+      "end": 329.97,
+      "text": "that it inherently leads to shallower angle."
+    },
+    {
+      "start": 330.0,
+      "end": 335.91,
+      "text": "of approach to the vein. This is vital for several reasons. Due to the physics of ultrasound,"
+    },
+    {
+      "start": 336.31,
+      "end": 339.97,
+      "text": "it makes the cannula appear much more distinct. It also for-"
+    },
+    {
+      "start": 340.0,
+      "end": 344.88,
+      "text": "facilitates a clean puncture, as it reduces the risk of perforating the posterior wall."
+    },
+    {
+      "start": 345.86,
+      "end": 349.84,
+      "text": "The shallow angle also reduces the risk of kinking the guide wire and subs-"
+    },
+    {
+      "start": 350.06,
+      "end": 357.51,
+      "text": "the CVC. So go shallow. Continuous aspiration is not necessary, but you may want to"
+    },
+    {
+      "start": 357.51,
+      "end": 359.49,
+      "text": "aspirate when you puncture the vein."
+    },
+    {
+      "start": 360.19,
+      "end": 363.86,
+      "text": "Use the handle grip and pull out the plunger with your pinky."
+    },
+    {
+      "start": 364.52,
+      "end": 365.36,
+      "text": "It takes a bit of practice."
+    },
+    {
+      "start": 366.38,
+      "end": 368.04,
+      "text": "So far, we've focused on the sub-cloud,"
+    },
+    {
+      "start": 368.54,
+      "end": 369.96,
+      "text": "but like we've said before,"
+    },
+    {
+      "start": 370.0,
+      "end": 372.64,
+      "text": "or you need to be very comfortable with the ij first."
+    },
+    {
+      "start": 373.45,
+      "end": 377.55,
+      "text": "Fortunately, all the in-plane axis techniques are applicable, but with a slight adjustment."
+    },
+    {
+      "start": 378.2,
+      "end": 379.98,
+      "text": "The full long axis..."
+    },
+    {
+      "start": 380.0,
+      "end": 383.64,
+      "text": "It'd be difficult to achieve on the neck with most linear probes."
+    },
+    {
+      "start": 383.98,
+      "end": 385.76,
+      "text": "The solution is the oblique view."
+    },
+    {
+      "start": 387.4,
+      "end": 389.88,
+      "text": "You can check out this link to see our detail."
+    },
+    {
+      "start": 390.0,
+      "end": 398.28,
+      "text": "guide. But in short, in the oblique view the vessels are sliced at a 45-degree angle which elongates the vein."
+    },
+    {
+      "start": 400.42,
+      "end": 404.58,
+      "text": "Note the distance from the vein to the left part of the screen where the needle will enter."
+    },
+    {
+      "start": 405.18,
+      "end": 408.28,
+      "text": "This allows for seeing the needle before it reaches the vein."
+    },
+    {
+      "start": 408.86,
+      "end": 409.98,
+      "text": "This allows for a short..."
+    },
+    {
+      "start": 410.03,
+      "end": 415.41,
+      "text": "Axis-like, signed by side identification of vein and artery, but with a long axis-like"
+    },
+    {
+      "start": 415.41,
+      "end": 419.79,
+      "text": "cannulation path, while keeping the artery safely visualized."
+    },
+    {
+      "start": 420.06,
+      "end": 425.66,
+      "text": "all times. It's also very valuable that you can place an IJ line while standing at the"
+    },
+    {
+      "start": 425.66,
+      "end": 428.58,
+      "text": "patient's side rather than at the head of the bed."
+    },
+    {
+      "start": 430.26,
+      "end": 435.66,
+      "text": "Another advantage is that the line finishes facing away from the patient's face."
+    },
+    {
+      "start": 437.13,
+      "end": 439.09,
+      "text": "I realize we make this all look very easy."
+    },
+    {
+      "start": 440.0,
+      "end": 442.42,
+      "text": "Remember, in plain takes practice."
+    },
+    {
+      "start": 442.82,
+      "end": 443.8,
+      "text": "There's a learning curve."
+    },
+    {
+      "start": 444.38,
+      "end": 445.36,
+      "text": "There will be setbacks."
+    },
+    {
+      "start": 446.07,
+      "end": 449.23,
+      "text": "You may have complications, but when you master it,"
+    },
+    {
+      "start": 449.67,
+      "end": 449.97,
+      "text": "you will..."
+    },
+    {
+      "start": 450.0,
+      "end": 452.6,
+      "text": "be better at placing central lines."
+    }
+  ]
+}

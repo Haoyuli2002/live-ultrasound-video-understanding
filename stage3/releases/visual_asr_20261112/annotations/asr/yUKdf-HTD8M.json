@@ -1,0 +1,638 @@
+{
+  "video_id": "yUKdf-HTD8M",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/yUKdf-HTD8M/asr.txt",
+  "segments": [
+    {
+      "start": 7.26,
+      "end": 9.96,
+      "text": "Trissound allows accurate estimation of gestate."
+    },
+    {
+      "start": 10.03,
+      "end": 19.71,
+      "text": "H, determination of fetal viability and presentation, position of the placenta, measurement of amniotic fluid, estimation of fetal weight."
+    },
+    {
+      "start": 20.32,
+      "end": 22.66,
+      "text": "and identification of multiple pregnancies."
+    },
+    {
+      "start": 23.4,
+      "end": 27.02,
+      "text": "It can also be used to detect some fetal abnormalities."
+    },
+    {
+      "start": 28.47,
+      "end": 29.97,
+      "text": "This film will show you how to-"
+    },
+    {
+      "start": 30.06,
+      "end": 35.38,
+      "text": "Prepare for scanning, how to examine and measure the fetus using both the standardized"
+    },
+    {
+      "start": 35.38,
+      "end": 39.88,
+      "text": "6-step approach and part of Isuog's 20 planes and"
+    },
+    {
+      "start": 40.0,
+      "end": 44.41,
+      "text": "sweeps approach and finally, out to provide aftercare for the woman."
+    },
+    {
+      "start": 45.11,
+      "end": 49.81,
+      "text": "The examples used will incorporate pregnancies of different gestations to best"
+    },
+    {
+      "start": 50.0,
+      "end": 52.88,
+      "text": "illustrate the specific steps of the scanning procedure."
+    },
+    {
+      "start": 61.06,
+      "end": 66.53,
+      "text": "Before starting the ultrasound scan enter the woman's details and confirm them with"
+    },
+    {
+      "start": 66.53,
+      "end": 66.71,
+      "text": "her."
+    },
+    {
+      "start": 68.81,
+      "end": 69.75,
+      "text": "Explain the process."
+    },
+    {
+      "start": 70.13,
+      "end": 71.99,
+      "text": "and the indication for the scam."
+    },
+    {
+      "start": 73.04,
+      "end": 74.74,
+      "text": "Make sure she is ready to proceed"
+    },
+    {
+      "start": 74.74,
+      "end": 77.49,
+      "text": "and answer any questions she may have."
+    },
+    {
+      "start": 80.32,
+      "end": 86.16,
+      "text": "Although there can be exceptions, the scan is usually performed with the woman lying to"
+    },
+    {
+      "start": 86.16,
+      "end": 89.96,
+      "text": "the right of you and facing you, just the height of the..."
+    },
+    {
+      "start": 90.1,
+      "end": 93.8,
+      "text": "couch and stool to allow you to work in a comfortable position."
+    },
+    {
+      "start": 95.82,
+      "end": 99.98,
+      "text": "The woman should be properly covered and her clothing protected from the altruism."
+    },
+    {
+      "start": 100.0,
+      "end": 109.96,
+      "text": "sound gel. Now apply the gel over a lower abdomen. Select the probe and press it."
+    },
+    {
+      "start": 110.19,
+      "end": 112.75,
+      "text": "which are most suitable for the gestational age"
+    },
+    {
+      "start": 112.75,
+      "end": 115.71,
+      "text": "and body mass index or BMI of the woman."
+    },
+    {
+      "start": 117.84,
+      "end": 119.74,
+      "text": "Pull the probe with your right hand."
+    },
+    {
+      "start": 120.13,
+      "end": 122.31,
+      "text": "and operate the machine controls with your left."
+    },
+    {
+      "start": 125.4,
+      "end": 127.64,
+      "text": "Lacing the probe in a transverse position"
+    },
+    {
+      "start": 127.64,
+      "end": 129.88,
+      "text": "on the lower abdomen, use its mark."
+    },
+    {
+      "start": 130.06,
+      "end": 135.77,
+      "text": "as a reference to make sure that the right side of the mother is displayed on the left side of the"
+    },
+    {
+      "start": 135.77,
+      "end": 139.97,
+      "text": "screen. You can check this by pressing your finger beside the"
+    },
+    {
+      "start": 140.06,
+      "end": 147.2,
+      "text": "probe in the abdomen, lacing the probe in a longitudinal position and using its marker"
+    },
+    {
+      "start": 147.2,
+      "end": 149.82,
+      "text": "as a reference, the uterine fundus."
+    },
+    {
+      "start": 150.0,
+      "end": 152.48,
+      "text": "should be displayed on the left side of the screen"
+    },
+    {
+      "start": 152.48,
+      "end": 154.91,
+      "text": "and the maternal bladder on the right."
+    },
+    {
+      "start": 156.51,
+      "end": 159.97,
+      "text": "To keep the image orientation correct, rotate the..."
+    },
+    {
+      "start": 160.1,
+      "end": 165.24,
+      "text": "probe in a clockwise direction when changing from a transverse plane to a longer"
+    },
+    {
+      "start": 165.24,
+      "end": 169.62,
+      "text": "aitudinal plane and anti-clockwise when changing."
+    },
+    {
+      "start": 170.0,
+      "end": 175.72,
+      "text": "longitudinal to transverse. Always keep the orientation of the probe"
+    },
+    {
+      "start": 175.72,
+      "end": 179.58,
+      "text": "consistent and don't rotate it more than a hundred degrees."
+    },
+    {
+      "start": 180.0,
+      "end": 189.22,
+      "text": "The probe can only be moved in four ways by sliding rotating."
+    },
+    {
+      "start": 191.38,
+      "end": 194.06,
+      "text": "zipping or angling."
+    },
+    {
+      "start": 198.16,
+      "end": 199.8,
+      "text": "Suog recommends using"
+    },
+    {
+      "start": 200.13,
+      "end": 205.71,
+      "text": "The sixth step approach for the performance of a basic second or third trimester obstetric"
+    },
+    {
+      "start": 205.71,
+      "end": 206.97,
+      "text": "ultrasound examination."
+    },
+    {
+      "start": 215.38,
+      "end": 219.9,
+      "text": "begin by placing the probe in a transverse position in the centre of the lower abdomen."
+    },
+    {
+      "start": 220.03,
+      "end": 228.37,
+      "text": "just above the synthesis, angle the probe forwards and backwards to identify the presenting fetal part."
+    },
+    {
+      "start": 230.03,
+      "end": 239.96,
+      "text": "This fetus is chafalic, maintaining a tron-"
+    },
+    {
+      "start": 240.06,
+      "end": 246.08,
+      "text": "orientation, slide the probe up towards the maternal umbilikas to identify the"
+    },
+    {
+      "start": 246.08,
+      "end": 247.48,
+      "text": "fetal heart and heartbeat."
+    },
+    {
+      "start": 250.0,
+      "end": 255.35,
+      "text": "Seedle heart is not seen in this sweep, slide the probe to the maternal right, and then"
+    },
+    {
+      "start": 255.35,
+      "end": 259.16,
+      "text": "left to locate it and confirm that the heart is beating."
+    },
+    {
+      "start": 261.89,
+      "end": 263.21,
+      "text": "Let the woman view the screen."
+    },
+    {
+      "start": 270.93,
+      "end": 278.93,
+      "text": "Maintaining the transverse orientation, slide the probe up the right side of the uterus from the synthesis to the fundus."
+    },
+    {
+      "start": 280.32,
+      "end": 286.96,
+      "text": "repeat this movement in the centre of the uterus and also on the left side of the uterus."
+    },
+    {
+      "start": 289.01,
+      "end": 289.97,
+      "text": "The size of the uterus"
+    },
+    {
+      "start": 290.0,
+      "end": 294.2,
+      "text": "will determine whether two or three transfer sweeps are required."
+    },
+    {
+      "start": 296.62,
+      "end": 299.98,
+      "text": "The complete this step rotate the probe to a longitudinal..."
+    },
+    {
+      "start": 300.0,
+      "end": 306.96,
+      "text": "position and survey the whole uterus by sliding the probe from the right side to the left above"
+    },
+    {
+      "start": 306.96,
+      "end": 309.1,
+      "text": "and below the umbilikas."
+    },
+    {
+      "start": 310.77,
+      "end": 314.07,
+      "text": "Keep the probe perpendicular to the floor as you slide it."
+    },
+    {
+      "start": 316.15,
+      "end": 317.91,
+      "text": "The screen here shows a singleton."
+    },
+    {
+      "start": 320.45,
+      "end": 321.83,
+      "text": "and here you can see twins."
+    },
+    {
+      "start": 332.53,
+      "end": 339.67,
+      "text": "Maintaining a longitudinal orientation, starting at the right funders, slide the probe down towards the synthesis."
+    },
+    {
+      "start": 340.35,
+      "end": 349.03,
+      "text": "Keeping it perpendicular to the floor, glide along the three tracks indicated to identify the location of the placenta."
+    },
+    {
+      "start": 351.09,
+      "end": 358.14,
+      "text": "Here, you can see first anterior and posterior."
+    },
+    {
+      "start": 362.4,
+      "end": 369.74,
+      "text": "here a low line placenta. Line the probe into the midline and"
+    },
+    {
+      "start": 370.13,
+      "end": 376.01,
+      "text": "using small movements, locate the leading edge of the placenta in relation to the internal"
+    },
+    {
+      "start": 376.01,
+      "end": 379.83,
+      "text": "Yeah, you can see a low line."
+    },
+    {
+      "start": 380.0,
+      "end": 389.64,
+      "text": "anterior placenta, mentally"
+    },
+    {
+      "start": 390.03,
+      "end": 394.15,
+      "text": "divide the maternal abdomen and uterus into four quadrants,"
+    },
+    {
+      "start": 396.26,
+      "end": 399.84,
+      "text": "keeping the probe in longitudinal orientation and perpendicular."
+    },
+    {
+      "start": 400.03,
+      "end": 409.68,
+      "text": "to the floor, slide it from the lower right quadrant through the other three quadrants, identify"
+    },
+    {
+      "start": 410.0,
+      "end": 415.74,
+      "text": "The deepest vertical pocket of amniotic fluid in each that does not contain any fetal parts"
+    },
+    {
+      "start": 416.12,
+      "end": 419.86,
+      "text": "or umbilical cord and measure by placing the calipers"
+    },
+    {
+      "start": 420.0,
+      "end": 429.82,
+      "text": "90 degrees to the horizontal. The amliotic fluid index, or AFI, is the sum of these"
+    },
+    {
+      "start": 430.0,
+      "end": 436.83,
+      "text": "four measurements. The deepest vertical pocket, or DVP, is the largest measurement of the"
+    },
+    {
+      "start": 436.83,
+      "end": 439.87,
+      "text": "four. Beware here of reverse."
+    },
+    {
+      "start": 440.03,
+      "end": 445.33,
+      "text": "that could make you underestimate one or more of these measurements."
+    },
+    {
+      "start": 452.98,
+      "end": 459.59,
+      "text": "To take the biometric measurements apply the first sweep and planes 4, 5, 7 and 11."
+    },
+    {
+      "start": 460.19,
+      "end": 464.11,
+      "text": "of Isuok's standardized 20 planes and two sweeps approach."
+    },
+    {
+      "start": 465.49,
+      "end": 467.55,
+      "text": "It is good practice to take each measurement"
+    },
+    {
+      "start": 467.55,
+      "end": 469.03,
+      "text": "at least three times."
+    },
+    {
+      "start": 469.65,
+      "end": 469.97,
+      "text": "Make sure..."
+    },
+    {
+      "start": 470.0,
+      "end": 475.28,
+      "text": "your technique is consistent. Store each measured image on the machine."
+    },
+    {
+      "start": 477.98,
+      "end": 479.9,
+      "text": "Perform the first sweep by road."
+    },
+    {
+      "start": 480.06,
+      "end": 489.8,
+      "text": "Tating the probe to obtain a longitudinal section of the fetus, identify the positions of the fetal head and long axis of its body."
+    },
+    {
+      "start": 491.76,
+      "end": 498.54,
+      "text": "The first measurements to take are the Biperietal diameter, or BPD, and head circumference, or HC."
+    },
+    {
+      "start": 500.86,
+      "end": 506.59,
+      "text": "From the longitudinal axis of the feet, rotate the probe by 90 degrees at the level of the"
+    },
+    {
+      "start": 506.59,
+      "end": 509.45,
+      "text": "fetal head. Angle, glide."
+    },
+    {
+      "start": 510.03,
+      "end": 516.25,
+      "text": "rotate and then dip the probe to obtain the correct head shape and intracranial landmarks"
+    },
+    {
+      "start": 516.54,
+      "end": 519.68,
+      "text": "which indicate the trans ventricular plane known as plane."
+    },
+    {
+      "start": 520.0,
+      "end": 529.93,
+      "text": "Take the bi-parietal diameter measurement at the widest point across the skull, depending on local child."
+    },
+    {
+      "start": 530.0,
+      "end": 539.3,
+      "text": "The BPD may be measured outer to outer or outer to inner, to obtain an outer to outer BPD measurement."
+    },
+    {
+      "start": 540.0,
+      "end": 545.12,
+      "text": "Place the calipers on the outer edge of both upper and lower parietal bones,"
+    },
+    {
+      "start": 546.85,
+      "end": 549.87,
+      "text": "Subtain and Outer to Inner BPD Measurement"
+    },
+    {
+      "start": 550.54,
+      "end": 555.16,
+      "text": "place the lower caliper on the inner border of the lower parietal bone."
+    },
+    {
+      "start": 556.88,
+      "end": 559.98,
+      "text": "Next, measure the heads circumference by place."
+    },
+    {
+      "start": 560.0,
+      "end": 569.9,
+      "text": "the ellipse caliper on the outer edge of the skull. Ben rotate from the trance ventricular plane to the trance syrup."
+    },
+    {
+      "start": 570.0,
+      "end": 578.42,
+      "text": "or plane 6, by keeping the cavern, septum, palucidum in view and rotating the probe towards the fetal neck."
+    },
+    {
+      "start": 580.42,
+      "end": 588.71,
+      "text": "Measure the transcerabella diameter, or TCD, by placing the linear calipers across the maximum diameter of the cerebellum."
+    },
+    {
+      "start": 590.54,
+      "end": 596.74,
+      "text": "Rotate back to the transventricular plane and slide the probe down through the chest where"
+    },
+    {
+      "start": 596.74,
+      "end": 598.22,
+      "text": "you will observe the heart beating."
+    },
+    {
+      "start": 599.08,
+      "end": 599.98,
+      "text": "This is plane 7."
+    },
+    {
+      "start": 601.57,
+      "end": 609.9,
+      "text": "obtain the correct section to measure the abdominal circumference or AC, you may need to make small rotating and angle"
+    },
+    {
+      "start": 610.0,
+      "end": 614.96,
+      "text": "movements of the probe as you slide. This will allow you to maintain a"
+    },
+    {
+      "start": 614.96,
+      "end": 617.36,
+      "text": "Transverse orientation of the fetus."
+    },
+    {
+      "start": 619.2,
+      "end": 619.74,
+      "text": "Lane 11."
+    },
+    {
+      "start": 620.0,
+      "end": 625.56,
+      "text": "is where the landmarks visible are the stomach and a small central portion of the umbilical vein."
+    },
+    {
+      "start": 627.73,
+      "end": 629.97,
+      "text": "Place the ellipse caliper on the outer edge of the"
+    },
+    {
+      "start": 630.0,
+      "end": 638.17,
+      "text": "the abdomen to measure the AC. The final stage of the scan is to measure the femalength"
+    },
+    {
+      "start": 638.17,
+      "end": 638.87,
+      "text": "or FL"
+    },
+    {
+      "start": 640.19,
+      "end": 646.07,
+      "text": "Maintaining a transverse section of the fetal body, slide the probe down from plane 11 towards"
+    },
+    {
+      "start": 646.07,
+      "end": 649.57,
+      "text": "the fetal pelvis and rotate it to view a longitudinal"
+    },
+    {
+      "start": 650.0,
+      "end": 656.36,
+      "text": "section of the femur. This technique will prevent you from accidentally measuring the humorous."
+    },
+    {
+      "start": 656.36,
+      "end": 659.98,
+      "text": "Place the calipers at each end of..."
+    },
+    {
+      "start": 660.0,
+      "end": 663.46,
+      "text": "femur and measure the longest visible diaphasis."
+    },
+    {
+      "start": 665.26,
+      "end": 669.8,
+      "text": "Don't include spur artefacts on the ends of the diaphasis and be short."
+    },
+    {
+      "start": 670.06,
+      "end": 672.46,
+      "text": "measure along the long axis of the bone."
+    },
+    {
+      "start": 674.84,
+      "end": 676.72,
+      "text": "The scanning procedure is now complete."
+    },
+    {
+      "start": 685.38,
+      "end": 689.82,
+      "text": "clean the probe and return it safely to the probe holder on the ultrasound scanner."
+    },
+    {
+      "start": 692.27,
+      "end": 698.16,
+      "text": "the woman's abdomen and allow her to sit up. Now wash your hands."
+    },
+    {
+      "start": 701.02,
+      "end": 704.76,
+      "text": "Bring up the report mode on the ultrasound screen and check the measurements."
+    },
+    {
+      "start": 707.61,
+      "end": 709.98,
+      "text": "Explain the scan results to the woman and give..."
+    },
+    {
+      "start": 710.0,
+      "end": 716.62,
+      "text": "the opportunity to ask any questions. Provide her with a handwritten or printed report which she can"
+    },
+    {
+      "start": 716.62,
+      "end": 718.04,
+      "text": "and then pass on to her caregiver."
+    },
+    {
+      "start": 720.74,
+      "end": 725.86,
+      "text": "The woman is now free to leave, so you can clear her information from the screen by ending"
+    },
+    {
+      "start": 725.86,
+      "end": 728.99,
+      "text": "the examination and prepare for the next scan."
+    }
+  ]
+}

@@ -1,0 +1,408 @@
+{
+  "video_id": "JwMcy65g4Oc",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/JwMcy65g4Oc/asr.txt",
+  "segments": [
+    {
+      "start": 5.31,
+      "end": 9.81,
+      "text": "In this video, we will provide stepwise instruction for performing an ultrasound"
+    },
+    {
+      "start": 10.0,
+      "end": 16.46,
+      "text": "examination of the shoulder. For this protocol, we will be using a high-frequency linear probe."
+    },
+    {
+      "start": 17.57,
+      "end": 19.97,
+      "text": "The probe marker should be oriented cephal..."
+    },
+    {
+      "start": 20.0,
+      "end": 22.8,
+      "text": "or toward the patient's right throughout the protocol."
+    },
+    {
+      "start": 23.65,
+      "end": 26.93,
+      "text": "As some conventions call for medial pro-marker orientation,"
+    },
+    {
+      "start": 27.27,
+      "end": 29.41,
+      "text": "we suggest labeling images for clarity."
+    },
+    {
+      "start": 35.63,
+      "end": 39.73,
+      "text": "Begin the exam with the patient sitting with their symptomatic arm in a position."
+    },
+    {
+      "start": 40.0,
+      "end": 43.61,
+      "text": "comfort. I'll pay laterally along the patient's"
+    },
+    {
+      "start": 43.61,
+      "end": 49.77,
+      "text": "clavicle until you locate the acromioclavicular or ac joint. Place the probe"
+    },
+    {
+      "start": 50.16,
+      "end": 52.58,
+      "text": "Oriented with the marker facing the patient's right,"
+    },
+    {
+      "start": 52.94,
+      "end": 55.6,
+      "text": "at this location to visualize the AC joint,"
+    },
+    {
+      "start": 56.01,
+      "end": 58.69,
+      "text": "which normally appears as a V-shaped hypoacolic"
+    },
+    {
+      "start": 58.69,
+      "end": 59.97,
+      "text": "to anacholic air."
+    },
+    {
+      "start": 61.15,
+      "end": 66.68,
+      "text": "Alternatively, place the probe with the marker facing the patient's right at the level of"
+    },
+    {
+      "start": 66.68,
+      "end": 69.97,
+      "text": "the clavicle and follow the clavicle laterally until..."
+    },
+    {
+      "start": 70.0,
+      "end": 77.31,
+      "text": "the AC joint is seen, pathologies such as traumatic AC joint separation may be visualized."
+    },
+    {
+      "start": 83.62,
+      "end": 89.96,
+      "text": "From the AC joint, I'll paint inferiorly until you locate the bicipital groove, which is situated..."
+    },
+    {
+      "start": 90.0,
+      "end": 93.28,
+      "text": "between the greater and lesser tuberosities of the humoral head."
+    },
+    {
+      "start": 94.39,
+      "end": 97.79,
+      "text": "The long head of the biceps tendon travels within this groove."
+    },
+    {
+      "start": 99.39,
+      "end": 99.97,
+      "text": "Alternative..."
+    },
+    {
+      "start": 100.0,
+      "end": 106.02,
+      "text": "move the probe inferiorly from the AC joint until the greater and lesser tuberosities of the"
+    },
+    {
+      "start": 106.02,
+      "end": 109.81,
+      "text": "humoral head are visible with the probe oriented"
+    },
+    {
+      "start": 110.06,
+      "end": 112.0,
+      "text": "transversely at the bicepital groove,"
+    },
+    {
+      "start": 112.46,
+      "end": 114.2,
+      "text": "and the marker facing the patient's right,"
+    },
+    {
+      "start": 114.77,
+      "end": 115.71,
+      "text": "examine the tendon."
+    },
+    {
+      "start": 117.59,
+      "end": 119.97,
+      "text": "With the biceps tendon in the center of the screw."
+    },
+    {
+      "start": 120.61,
+      "end": 125.79,
+      "text": "Rotate the probes of the Marker Point cephalad to examine the tendon in longitudinal view."
+    },
+    {
+      "start": 127.21,
+      "end": 129.98,
+      "text": "Typically, tendon tears and ruptures may be..."
+    },
+    {
+      "start": 130.0,
+      "end": 135.3,
+      "text": "identified by tendon irregularities in surrounding hypoechoic or anechoic fluid."
+    },
+    {
+      "start": 136.51,
+      "end": 139.97,
+      "text": "Irregularities may also be noted in cases of tendonopathy."
+    },
+    {
+      "start": 140.96,
+      "end": 145.82,
+      "text": "Diagnosis can be aided by having the patient supinate and flex their arm."
+    },
+    {
+      "start": 146.82,
+      "end": 149.96,
+      "text": "Since the biceps tendon origin site is within the glenoma..."
+    },
+    {
+      "start": 150.13,
+      "end": 156.04,
+      "text": "A shoulder effusion may lead to the development of hypoechoic fluid surrounding the biceps tendon."
+    },
+    {
+      "start": 156.72,
+      "end": 159.54,
+      "text": "This can be misinterpreted as biceps pathology."
+    },
+    {
+      "start": 165.79,
+      "end": 168.55,
+      "text": "with the transverse view of the biceps tendon groove"
+    },
+    {
+      "start": 168.55,
+      "end": 169.81,
+      "text": "and the marker facing"
+    },
+    {
+      "start": 170.0,
+      "end": 174.31,
+      "text": "the patient's right, ask the patient to externally rotate their arm."
+    },
+    {
+      "start": 175.8,
+      "end": 179.97,
+      "text": "With this movement, note the appearance of the bird's beak shaped..."
+    },
+    {
+      "start": 180.16,
+      "end": 184.2,
+      "text": "sub-scapularis tendon where it inserts into the lesser tuberosity."
+    },
+    {
+      "start": 185.05,
+      "end": 189.97,
+      "text": "Rotate the probes so the marker face is cephalad and examine the sub-scapularis"
+    },
+    {
+      "start": 190.0,
+      "end": 197.52,
+      "text": "tendon in its transverse plane. A unique characteristic of the sub scapularis tendon is its"
+    },
+    {
+      "start": 197.52,
+      "end": 199.96,
+      "text": "Myotendinus Structure with Characterist-"
+    },
+    {
+      "start": 200.0,
+      "end": 206.96,
+      "text": "fibular tendinous bundles, exhibiting anisotropy within a hypoechoic feathery surrounding."
+    },
+    {
+      "start": 207.75,
+      "end": 209.91,
+      "text": "This can be misinterpreted as pathologic."
+    },
+    {
+      "start": 216.53,
+      "end": 219.88,
+      "text": "I'll pay for the acromion process, please."
+    },
+    {
+      "start": 220.0,
+      "end": 225.02,
+      "text": "Place the ultrasound probe at the acromion and visualize the acromion and humoral head."
+    },
+    {
+      "start": 225.89,
+      "end": 229.03,
+      "text": "The super-spinatus travels between these two structures."
+    },
+    {
+      "start": 230.58,
+      "end": 235.82,
+      "text": "Alternatively, with the probe at the AC joint and the marker facing the patient's right,"
+    },
+    {
+      "start": 235.82,
+      "end": 239.98,
+      "text": "Rotate the probe so the marker is oriented cephalad and visual"
+    },
+    {
+      "start": 240.0,
+      "end": 242.1,
+      "text": "Otherwise the acromion and humoral head."
+    },
+    {
+      "start": 243.02,
+      "end": 247.52,
+      "text": "Use dynamic evaluation with shoulder abduction to assess for impingement."
+    },
+    {
+      "start": 248.32,
+      "end": 249.98,
+      "text": "If the patient reports pain..."
+    },
+    {
+      "start": 250.0,
+      "end": 254.9,
+      "text": "that correlates with movement through this arc, yet you do not visualize pathology."
+    },
+    {
+      "start": 255.41,
+      "end": 258.85,
+      "text": "The patient may still have symptomatic subacromial impingement."
+    },
+    {
+      "start": 264.83,
+      "end": 267.95,
+      "text": "For this examination, fast positioning is preferred."
+    },
+    {
+      "start": 268.69,
+      "end": 269.85,
+      "text": "If this is not possible,"
+    },
+    {
+      "start": 270.0,
+      "end": 275.36,
+      "text": "for the patient with their arm and extension have them perform internal rotation of the shoulder."
+    },
+    {
+      "start": 276.87,
+      "end": 279.87,
+      "text": "Place the probe with the marker facing anteriorly."
+    },
+    {
+      "start": 280.16,
+      "end": 281.78,
+      "text": "Below the level of the acromion,"
+    },
+    {
+      "start": 282.18,
+      "end": 284.4,
+      "text": "to visualize the supra-spinatus tendon"
+    },
+    {
+      "start": 284.4,
+      "end": 286.16,
+      "text": "overlying the humoral head."
+    },
+    {
+      "start": 287.67,
+      "end": 289.97,
+      "text": "Rotate the probe so the marker faces..."
+    },
+    {
+      "start": 290.0,
+      "end": 293.64,
+      "text": "Eiffelad and examine the tendon and transverse orientation."
+    },
+    {
+      "start": 294.74,
+      "end": 297.7,
+      "text": "Evaluate for signs of tendon tear or rupture."
+    },
+    {
+      "start": 305.09,
+      "end": 308.99,
+      "text": "Have the patient rest the symptomatic forearm in a position of comfort."
+    },
+    {
+      "start": 310.16,
+      "end": 316.18,
+      "text": "Place the probe with the marker-oriented cephalad on the lateral margin of the proximal humorous."
+    },
+    {
+      "start": 317.14,
+      "end": 319.96,
+      "text": "Locate the humoral head which should appear light bulb..."
+    },
+    {
+      "start": 320.0,
+      "end": 321.98,
+      "text": "shaped with even contours."
+    },
+    {
+      "start": 322.86,
+      "end": 328.55,
+      "text": "With special attention to sites of tenderness, fan through the head of the humorous to evaluate"
+    },
+    {
+      "start": 328.55,
+      "end": 329.69,
+      "text": "for cortical disruption."
+    },
+    {
+      "start": 330.0,
+      "end": 334.89,
+      "text": "or overlying hematoma, which may suggest the presence of a fracture."
+    },
+    {
+      "start": 341.28,
+      "end": 345.26,
+      "text": "have the patient rest the symptomatic forearm in a position of comfort."
+    },
+    {
+      "start": 346.29,
+      "end": 349.93,
+      "text": "For this examination, the curvilinear probe may be preferable."
+    },
+    {
+      "start": 350.03,
+      "end": 355.99,
+      "text": "depending on body habitus. Place the probe, oriented transversely, below the"
+    },
+    {
+      "start": 355.99,
+      "end": 359.97,
+      "text": "scapular spine at the level of the posterior glenohumeral."
+    },
+    {
+      "start": 360.0,
+      "end": 367.54,
+      "text": "joint. Examine the posterior humoral head and scapula to evaluate for horizontal alignment"
+    },
+    {
+      "start": 367.54,
+      "end": 369.98,
+      "text": "of the joint and for potential of he-"
+    },
+    {
+      "start": 370.0,
+      "end": 376.65,
+      "text": "In this view of the glenohumeral joint, the infraspinatus tendon can be evaluated"
+    },
+    {
+      "start": 376.65,
+      "end": 378.65,
+      "text": "and transversely."
+    },
+    {
+      "start": 385.79,
+      "end": 389.9,
+      "text": "Thank you for watching, we hope that this guide will empower providers like"
+    }
+  ]
+}

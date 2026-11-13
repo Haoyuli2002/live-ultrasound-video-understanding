@@ -1,0 +1,263 @@
+{
+  "video_id": "YOOoNT27Irg",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/YOOoNT27Irg/asr.txt",
+  "segments": [
+    {
+      "start": 13.46,
+      "end": 17.28,
+      "text": "The superclivicular block is used for surgery below the shoulder."
+    },
+    {
+      "start": 17.96,
+      "end": 24.71,
+      "text": "A proper superclivicular block will effectively block the elbow, forearm, wrist, and hand."
+    },
+    {
+      "start": 26.2,
+      "end": 31.48,
+      "text": "The reason we use superclivicular blocks is because the nerves are located very tightly together"
+    },
+    {
+      "start": 31.48,
+      "end": 37.98,
+      "text": "and our needle movements can usually get all the brachial plexus with minimal movements of the needle."
+    },
+    {
+      "start": 38.54,
+      "end": 42.18,
+      "text": "The superclivicular block has made a resurgence since using ultrasound."
+    },
+    {
+      "start": 42.18,
+      "end": 48.24,
+      "text": "The reason is we are able to visualize some important structures such as the first rib,"
+    },
+    {
+      "start": 49.1,
+      "end": 51.48,
+      "text": "the subclaving artery, and the plurum."
+    },
+    {
+      "start": 52.99,
+      "end": 57.49,
+      "text": "To start a super-clavicular block, it's very important to position the patient properly."
+    },
+    {
+      "start": 58.23,
+      "end": 62.99,
+      "text": "The way we position patients for the super-clavicular block is to move the pillow all the way over"
+    },
+    {
+      "start": 62.99,
+      "end": 69.3,
+      "text": "to the side so our hands have plenty of room to come from the posterior side of the patient."
+    },
+    {
+      "start": 70.06,
+      "end": 73.4,
+      "text": "We also turn the patients head away from the site to be blocked."
+    },
+    {
+      "start": 73.4,
+      "end": 80.12,
+      "text": "Then we elevate the head of the bed 30 to 45 degrees and that gives us the ability to"
+    },
+    {
+      "start": 80.12,
+      "end": 83.52,
+      "text": "have our hands in a comfort position while we do the block."
+    },
+    {
+      "start": 84.04,
+      "end": 88.84,
+      "text": "We use a high frequency linear probe for the superclivicular block."
+    },
+    {
+      "start": 90.02,
+      "end": 94.8,
+      "text": "Our nerve should be found a half a centimeter to two centimeters below the skin."
+    },
+    {
+      "start": 95.38,
+      "end": 100.92,
+      "text": "I have oriented the probe so the left side of the screen is anterior and the right side"
+    },
+    {
+      "start": 100.92,
+      "end": 102.12,
+      "text": "of the screen is posterior."
+    },
+    {
+      "start": 102.12,
+      "end": 108.52,
+      "text": "In this setting we now see a bright white stripe going across the screen with a pulsating"
+    },
+    {
+      "start": 108.52,
+      "end": 111.5,
+      "text": "subclavian artery sitting on this bright white stripe."
+    },
+    {
+      "start": 112.66,
+      "end": 116.75,
+      "text": "This stripe can be either first rib or it can be plura."
+    },
+    {
+      "start": 117.03,
+      "end": 120.27,
+      "text": "Your needle tip should never be below this stripe."
+    },
+    {
+      "start": 120.83,
+      "end": 124.11,
+      "text": "We call the area below this stripe the no-fly zone."
+    },
+    {
+      "start": 124.81,
+      "end": 131.19,
+      "text": "On the screen we now see, from left to right, the anterior scaling on the left, the pulsating"
+    },
+    {
+      "start": 131.19,
+      "end": 132.49,
+      "text": "subclavian artery."
+    },
+    {
+      "start": 132.49,
+      "end": 139.92,
+      "text": "The most important place to make sure you have local anesthetic is between the pulsating,"
+    },
+    {
+      "start": 140.12,
+      "end": 142.12,
+      "text": "subclaving artery and the first rib."
+    },
+    {
+      "start": 143.25,
+      "end": 148.12,
+      "text": "This is because the inferior trunk lies in this area."
+    },
+    {
+      "start": 148.8,
+      "end": 154.1,
+      "text": "And some people have difficulty with the superclavicular block because they is all-ner-sparing."
+    },
+    {
+      "start": 154.81,
+      "end": 158.35,
+      "text": "Usually I do two injections for this superclavicular block."
+    },
+    {
+      "start": 158.35,
+      "end": 164.63,
+      "text": "I put one injection down in the corner between the pulsating artery and the first rib."
+    },
+    {
+      "start": 165.35,
+      "end": 169.77,
+      "text": "And then I put a second injection up higher by the superior trunk."
+    },
+    {
+      "start": 170.96,
+      "end": 177.14,
+      "text": "My needle position for the supra-clivicular block comes posterior to anterior and starts"
+    },
+    {
+      "start": 177.14,
+      "end": 179.12,
+      "text": "about a centimeter away from the probe."
+    },
+    {
+      "start": 179.76,
+      "end": 185.44,
+      "text": "If I start a centimeter or more away from the probe, my needle angle will be flat and"
+    },
+    {
+      "start": 185.44,
+      "end": 188.44,
+      "text": "it will be visualized better on the ultrasound machine."
+    },
+    {
+      "start": 188.44,
+      "end": 194.68,
+      "text": "It's very important to have my needle completely in plain with the ultrasound probe, so it'll"
+    },
+    {
+      "start": 194.68,
+      "end": 197.26,
+      "text": "be visualized during its entire length."
+    },
+    {
+      "start": 197.8,
+      "end": 204.04,
+      "text": "Give some injection of local anesthetic, usually about 1 to 2 milliliters to see the spread"
+    },
+    {
+      "start": 204.04,
+      "end": 206.6,
+      "text": "of the local anesthetic on the ultrasound screen."
+    },
+    {
+      "start": 207.22,
+      "end": 212.2,
+      "text": "Injections below the nerves will push the rest of the brachial plexus, more shallow, making"
+    },
+    {
+      "start": 212.2,
+      "end": 213.62,
+      "text": "the rest of the block easier."
+    },
+    {
+      "start": 213.62,
+      "end": 219.12,
+      "text": "I usually inject about 20 to 30 milliliters of local anesthetic in the Supra"
+    },
+    {
+      "start": 219.12,
+      "end": 229.42,
+      "text": "clavicular region. This example of a Supra clavicular injection. The first"
+    },
+    {
+      "start": 229.42,
+      "end": 234.32,
+      "text": "injection is lateral to the nerves. Our needle is barely visible because it is"
+    },
+    {
+      "start": 234.32,
+      "end": 240.15,
+      "text": "at a steep angle. As the needle is flattened out we will see it better. You can see"
+    },
+    {
+      "start": 240.15,
+      "end": 245.69,
+      "text": "the pulsating, subclavian artery sitting on the first rib and you can even see"
+    },
+    {
+      "start": 245.69,
+      "end": 251.99,
+      "text": "plura out more laterally. As the injection is put into the pocket between the"
+    },
+    {
+      "start": 251.99,
+      "end": 256.63,
+      "text": "artery and the first rib, notice the artery is even lifted off the first rib"
+    },
+    {
+      "start": 256.63,
+      "end": 261.39,
+      "text": "during this injection. Now you can see the needle much better because it is at a"
+    },
+    {
+      "start": 261.39,
+      "end": 266.49,
+      "text": "flat needle angle. You can see the nerves just posterior to the artery and the"
+    },
+    {
+      "start": 266.49,
+      "end": 269.81,
+      "text": "pipe boacoate, local anesthetic spreading below the nerves."
+    }
+  ]
+}

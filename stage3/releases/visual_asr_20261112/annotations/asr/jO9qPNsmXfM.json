@@ -1,0 +1,253 @@
+{
+  "video_id": "jO9qPNsmXfM",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/eval/jO9qPNsmXfM/asr.txt",
+  "segments": [
+    {
+      "start": 3.32,
+      "end": 7.84,
+      "text": "For those of you new to 40 ultrasound imaging, there's some concepts that you need to understand"
+    },
+    {
+      "start": 7.84,
+      "end": 13.26,
+      "text": "that aren't really intuitive because you've always been trained in a different way about how to see"
+    },
+    {
+      "start": 13.26,
+      "end": 21.05,
+      "text": "the ultrasound. So what we have here is what's called a phantom and it's just a fake baby, about a"
+    },
+    {
+      "start": 21.05,
+      "end": 27.97,
+      "text": "22-week fetus here. And so when you're doing normal scanning, turn up the gains, you can see it"
+    },
+    {
+      "start": 27.97,
+      "end": 35.5,
+      "text": "better. The way this probe is designed is there is a probe right through here. It's just like a standard"
+    },
+    {
+      "start": 35.5,
+      "end": 40.06,
+      "text": "ultrasound probe. The only difference between this and a standard ultrasound probe is the fact that"
+    },
+    {
+      "start": 40.06,
+      "end": 44.88,
+      "text": "this can sweep back and forth and we'll get to that in a minute. So we have our probe marker here"
+    },
+    {
+      "start": 44.88,
+      "end": 50.48,
+      "text": "and let's say the baby's in a vertex position. When we scan you'll see on the image that it is giving"
+    },
+    {
+      "start": 50.48,
+      "end": 58.26,
+      "text": "me a profile of the baby. It's showing the nose up and actually what it's doing is it's actually"
+    },
+    {
+      "start": 58.26,
+      "end": 63.84,
+      "text": "just showing you a slice of the baby. Think of it like a slice of bread. So if this is a loaf of"
+    },
+    {
+      "start": 63.84,
+      "end": 68.66,
+      "text": "bread, this probe is taking that element and shooting it straight down and giving me"
+    },
+    {
+      "start": 68.66,
+      "end": 70.4,
+      "text": "a slice right through the baby's head."
+    },
+    {
+      "start": 70.84,
+      "end": 74.76,
+      "text": "So as I scroll down you're seeing a very thin slice of everything I do."
+    },
+    {
+      "start": 76.1,
+      "end": 83.39,
+      "text": "Now the difference between this and 4D is that 4D is like taking an entire loaf of bread."
+    },
+    {
+      "start": 83.71,
+      "end": 88.13,
+      "text": "So instead of just taking a slice of the baby here, what it will do is it will sweep back"
+    },
+    {
+      "start": 88.13,
+      "end": 92.84,
+      "text": "and forth and just show me the surface of that loaf of bread."
+    },
+    {
+      "start": 92.84,
+      "end": 96.16,
+      "text": "So when I go into 40 and I'll show you how to do all this in just a minute"
+    },
+    {
+      "start": 96.16,
+      "end": 105.87,
+      "text": "But we go into 40 and the left is showing me the slice that it's looking at and on the right"
+    },
+    {
+      "start": 105.87,
+      "end": 111.66,
+      "text": "It's showing me the full surface rendering of that baby"
+    },
+    {
+      "start": 111.66,
+      "end": 114.46,
+      "text": "So what it's doing now is just showing me the surface"
+    },
+    {
+      "start": 114.46,
+      "end": 117.44,
+      "text": "So it's like showing me the top of the loaf of bread on the left"
+    },
+    {
+      "start": 117.44,
+      "end": 122.5,
+      "text": "We're seeing the slice on the top. We're just seeing the entire surface as it scans back and forth"
+    },
+    {
+      "start": 122.5,
+      "end": 125.64,
+      "text": "It is taking the surface that and giving you an image that way"
+    },
+    {
+      "start": 125.94,
+      "end": 134.44,
+      "text": "And that's the basic fundamental concept of how to do 4D in imaging and understanding why when most texts first do 4D"
+    },
+    {
+      "start": 134.44,
+      "end": 141.74,
+      "text": "They used to showing a profile here to be and this doesn't show it very well"
+    },
+    {
+      "start": 141.74,
+      "end": 144.82,
+      "text": "But typically they're looking this way and you would see the orbits of the eyes"
+    },
+    {
+      "start": 145.26,
+      "end": 148.69,
+      "text": "Right there you can see that right there on the image"
+    },
+    {
+      "start": 148.69,
+      "end": 151.83,
+      "text": "They used to showing the orbits of the eyes and it looks like the babies looking out"
+    },
+    {
+      "start": 151.83,
+      "end": 156.81,
+      "text": "But again, what this is doing is it's just taking a slice right across the top of the face there"
+    },
+    {
+      "start": 157.21,
+      "end": 162.55,
+      "text": "So what it's actually showing you is if you just cut off the baby's face right through there"
+    },
+    {
+      "start": 162.55,
+      "end": 169.35,
+      "text": "It would show you the orbits of the eyes. So by doing this thinking that that is the look that they're looking for"
+    },
+    {
+      "start": 169.35,
+      "end": 176.64,
+      "text": "When they go to 4d it can't figure out why the image is terrible because actually what it's doing is now it's rendering the"
+    },
+    {
+      "start": 176.64,
+      "end": 184.37,
+      "text": "Side of the baby's face. So now I could see the orbits of the eyes in the 4d image and on the 2d"
+    },
+    {
+      "start": 184.37,
+      "end": 185.81,
+      "text": "Let me see if I can get that again."
+    },
+    {
+      "start": 188.04,
+      "end": 191.88,
+      "text": "So there on the 2D are the orbits of the eyes and so you'll see on the right hand side"
+    },
+    {
+      "start": 191.88,
+      "end": 194.86,
+      "text": "in the 4D, the baby is actually looking this way."
+    },
+    {
+      "start": 195.0,
+      "end": 198.74,
+      "text": "We're here, it looks like it's looking up, it's rendering that surface and since the baby"
+    },
+    {
+      "start": 198.74,
+      "end": 203.78,
+      "text": "is looking this way, you can now think of it when you go to 4D, like it's a flashlight"
+    },
+    {
+      "start": 203.78,
+      "end": 204.72,
+      "text": "on the baby's face."
+    },
+    {
+      "start": 205.8,
+      "end": 211.46,
+      "text": "So what you want to do with the 2D is get kind of an orientation of where the baby is and"
+    },
+    {
+      "start": 211.7,
+      "end": 222.19,
+      "text": "And so when you get in 4D, that nose pointing up, that's how you're going to see the baby's"
+    },
+    {
+      "start": 222.19,
+      "end": 222.37,
+      "text": "face."
+    },
+    {
+      "start": 222.77,
+      "end": 229.1,
+      "text": "So you want to get ideally that nose pointing up and fluid between, fluid in front of"
+    },
+    {
+      "start": 229.1,
+      "end": 229.42,
+      "text": "the face."
+    },
+    {
+      "start": 229.44,
+      "end": 232.82,
+      "text": "And we'll explain this in the next video as well in the 4D ultrasound video."
+    },
+    {
+      "start": 233.26,
+      "end": 237.92,
+      "text": "But that's the basic concept of how to do 4D imaging and why 4D looks the way it does"
+    },
+    {
+      "start": 237.92,
+      "end": 241.0,
+      "text": "and why the first time you try it, it often doesn't seem to work."
+    },
+    {
+      "start": 241.52,
+      "end": 242.96,
+      "text": "So that's the key to 4D."
+    },
+    {
+      "start": 242.96,
+      "end": 246.4,
+      "text": "And you can check out our other training videos about how to perform 4D imaging."
+    }
+  ]
+}

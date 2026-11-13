@@ -1,0 +1,728 @@
+{
+  "video_id": "Dv4YEvLWvaA",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/Dv4YEvLWvaA/asr.txt",
+  "segments": [
+    {
+      "start": 7.26,
+      "end": 8.88,
+      "text": "What's up, and engineers, in this video today,"
+    },
+    {
+      "start": 8.96,
+      "end": 9.96,
+      "text": "I'm going to be teaching you guys how-"
+    },
+    {
+      "start": 10.0,
+      "end": 11.8,
+      "text": "how to do an ultrasound guided IV."
+    },
+    {
+      "start": 12.04,
+      "end": 13.66,
+      "text": "We got Kristen here, she's doing eating her arm,"
+    },
+    {
+      "start": 14.14,
+      "end": 16.04,
+      "text": "she stuck me, my turn to stick her."
+    },
+    {
+      "start": 16.26,
+      "end": 16.98,
+      "text": "All right, it's only fair."
+    },
+    {
+      "start": 17.22,
+      "end": 18.04,
+      "text": "But the question is,"
+    },
+    {
+      "start": 18.04,
+      "end": 19.92,
+      "text": "why do we do ultrasound guided IV?"
+    },
+    {
+      "start": 20.0,
+      "end": 24.34,
+      "text": "It would be because maybe Kristen wasn't able to access the IV via pal patient even though"
+    },
+    {
+      "start": 24.34,
+      "end": 24.88,
+      "text": "she's really good."
+    },
+    {
+      "start": 24.94,
+      "end": 25.96,
+      "text": "Maybe it was just a little bit deeper."
+    },
+    {
+      "start": 26.14,
+      "end": 26.92,
+      "text": "She couldn't feel it."
+    },
+    {
+      "start": 27.12,
+      "end": 29.98,
+      "text": "The patient's a little bit dehydrated and you're just not able to cannulate that via"
+    },
+    {
+      "start": 30.03,
+      "end": 30.63,
+      "text": "the palpation."
+    },
+    {
+      "start": 31.07,
+      "end": 35.71,
+      "text": "Ultra sun guidance is nice because it helps to visualize a vessel, to see how deep it is,"
+    },
+    {
+      "start": 35.81,
+      "end": 39.81,
+      "text": "and to see if it's a good thing that I can actually target with my needle and guide."
+    },
+    {
+      "start": 40.03,
+      "end": 44.69,
+      "text": "myself and the needle down into the vessel so I can see it entering into the vessel and"
+    },
+    {
+      "start": 44.69,
+      "end": 47.03,
+      "text": "I can even see my catheter being advanced into the vessel too."
+    },
+    {
+      "start": 47.39,
+      "end": 48.21,
+      "text": "So that's one of the nice things."
+    },
+    {
+      "start": 48.31,
+      "end": 49.85,
+      "text": "So it's a little bit better for those deeper vessels."
+    },
+    {
+      "start": 50.0,
+      "end": 53.74,
+      "text": "the ones that you can't see and so we're going to go ahead and try and give that a shot today."
+    },
+    {
+      "start": 54.04,
+      "end": 59.1,
+      "text": "So we're going to have Christen get comfortable here and what I'm going to do is I'm going to get the"
+    },
+    {
+      "start": 59.1,
+      "end": 59.62,
+      "text": "Turn it on."
+    },
+    {
+      "start": 60.32,
+      "end": 61.6,
+      "text": "We're gonna get Kristen comfortable here,"
+    },
+    {
+      "start": 61.64,
+      "end": 64.98,
+      "text": "we're gonna go ahead and take and get this tourniquet on."
+    },
+    {
+      "start": 65.24,
+      "end": 67.84,
+      "text": "And why I like to do this first before I even start sticking"
+    },
+    {
+      "start": 68.35,
+      "end": 69.86,
+      "text": "is I wanna find the best vessel."
+    },
+    {
+      "start": 70.0,
+      "end": 74.23,
+      "text": "to target. So I get the turn to get on and I want to take a look at all the different"
+    },
+    {
+      "start": 74.23,
+      "end": 77.37,
+      "text": "vessels here. See which ones are going to be nice, not too deep, but I don't want them"
+    },
+    {
+      "start": 77.37,
+      "end": 79.65,
+      "text": "to be greater than two centimeters. It might be too far that"
+    },
+    {
+      "start": 80.03,
+      "end": 81.49,
+      "text": "I won't have much of the catheter to thread."
+    },
+    {
+      "start": 81.99,
+      "end": 84.77,
+      "text": "And I look for them to actually be a good straight link."
+    },
+    {
+      "start": 84.91,
+      "end": 85.97,
+      "text": "So I don't want them to be tortuous."
+    },
+    {
+      "start": 86.05,
+      "end": 87.9,
+      "text": "I'll look for about less than two centimeters deep,"
+    },
+    {
+      "start": 88.02,
+      "end": 89.96,
+      "text": "than at least a two centimeter straight path, not towards."
+    },
+    {
+      "start": 90.34,
+      "end": 95.27,
+      "text": "So I like to take a look here first, I'm going to use my butterfly cue, I'm going to have"
+    },
+    {
+      "start": 95.27,
+      "end": 99.12,
+      "text": "Chris and record it for me so you guys can visualize what I'm seeing here and what I'm"
+    },
+    {
+      "start": 99.12,
+      "end": 99.92,
+      "text": "going to be doing here."
+    },
+    {
+      "start": 100.48,
+      "end": 102.12,
+      "text": "is I want my probe, here's my indicator,"
+    },
+    {
+      "start": 102.6,
+      "end": 104.35,
+      "text": "the blue top here, right?"
+    },
+    {
+      "start": 104.45,
+      "end": 105.61,
+      "text": "So whenever you guys are using ultrasound,"
+    },
+    {
+      "start": 106.09,
+      "end": 107.35,
+      "text": "make sure that you have the indicator,"
+    },
+    {
+      "start": 107.65,
+      "end": 109.07,
+      "text": "it should be pointing towards the left."
+    },
+    {
+      "start": 109.21,
+      "end": 109.97,
+      "text": "So on mine, you're like,"
+    },
+    {
+      "start": 110.0,
+      "end": 113.22,
+      "text": "actually see like the blue circle there with the bee on it, that's going to be where"
+    },
+    {
+      "start": 113.22,
+      "end": 115.36,
+      "text": "the indicator is actually situated here."
+    },
+    {
+      "start": 116.13,
+      "end": 119.97,
+      "text": "So right away when you guys see, you see like these two little, like you see this?"
+    },
+    {
+      "start": 120.03,
+      "end": 124.34,
+      "text": "structure here. This is like bifurcating. If I compress them, they collapse. Those are veins."
+    },
+    {
+      "start": 125.08,
+      "end": 128.66,
+      "text": "So I'm going to slide up and I see them actually completely come together here. So that's the"
+    },
+    {
+      "start": 128.66,
+      "end": 129.98,
+      "text": "the silicon vein, and I won't-"
+    },
+    {
+      "start": 130.0,
+      "end": 133.02,
+      "text": "fall of the track and look at that, look at the side there, it's less than two"
+    },
+    {
+      "start": 133.02,
+      "end": 139.59,
+      "text": "centimeters deep and it stays straight for about two centimeter like length"
+    },
+    {
+      "start": 140.42,
+      "end": 141.38,
+      "text": "So this is a good vessel."
+    },
+    {
+      "start": 141.54,
+      "end": 142.18,
+      "text": "I'm going to calculate."
+    },
+    {
+      "start": 142.4,
+      "end": 143.94,
+      "text": "It's actually a decent size."
+    },
+    {
+      "start": 144.47,
+      "end": 145.01,
+      "text": "That's one thing."
+    },
+    {
+      "start": 145.96,
+      "end": 148.96,
+      "text": "It's not too deep and it has a good straight path."
+    },
+    {
+      "start": 149.06,
+      "end": 149.98,
+      "text": "I just want to go above the..."
+    },
+    {
+      "start": 150.0,
+      "end": 155.44,
+      "text": "bifurcation and I want to see if it bifurcates at all up here and a bifurcates there."
+    },
+    {
+      "start": 155.56,
+      "end": 159.9,
+      "text": "So I have a pretty good distance here that I'm going to be able to thread the needle"
+    },
+    {
+      "start": 160.0,
+      "end": 163.55,
+      "text": "down and then push my catheter in. I think this is going to be the one I'm going to target."
+    },
+    {
+      "start": 164.23,
+      "end": 167.23,
+      "text": "Yeah, let's go ahead and get her cleaned up and we're going to go ahead and get started on here."
+    },
+    {
+      "start": 168.04,
+      "end": 169.64,
+      "text": "So let's go ahead and pause that."
+    },
+    {
+      "start": 171.54,
+      "end": 172.7,
+      "text": "Okay, we're gonna pop the tourniquet,"
+    },
+    {
+      "start": 172.72,
+      "end": 174.04,
+      "text": "give her arm a little bit of a breather,"
+    },
+    {
+      "start": 175.78,
+      "end": 177.48,
+      "text": "and we'll go ahead and clean some of this jelly off here."
+    },
+    {
+      "start": 179.58,
+      "end": 179.82,
+      "text": "Okay."
+    },
+    {
+      "start": 180.93,
+      "end": 183.52,
+      "text": "So, we're gonna put this turn to get back on."
+    },
+    {
+      "start": 185.07,
+      "end": 185.83,
+      "text": "Sorry, Kristen."
+    },
+    {
+      "start": 186.03,
+      "end": 186.57,
+      "text": "That's all right."
+    },
+    {
+      "start": 190.22,
+      "end": 191.66,
+      "text": "And what we're gonna do here is,"
+    },
+    {
+      "start": 191.8,
+      "end": 193.0,
+      "text": "we're gonna just get it nice and clean."
+    },
+    {
+      "start": 194.98,
+      "end": 197.12,
+      "text": "So you can use the chloropreps in this situation."
+    },
+    {
+      "start": 197.12,
+      "end": 198.28,
+      "text": "I like the chloropreps."
+    },
+    {
+      "start": 199.18,
+      "end": 199.84,
+      "text": "And I'm gonna be kind of,"
+    },
+    {
+      "start": 200.0,
+      "end": 201.3,
+      "text": "are getting a big area here."
+    },
+    {
+      "start": 201.56,
+      "end": 203.93,
+      "text": "So I want to clean as much of an area as possible,"
+    },
+    {
+      "start": 203.93,
+      "end": 206.21,
+      "text": "just in case I change my mind and go somewhere different."
+    },
+    {
+      "start": 207.02,
+      "end": 208.24,
+      "text": "So nice and clean there."
+    },
+    {
+      "start": 210.29,
+      "end": 213.2,
+      "text": "All right, after I've done that, I'm gonna have my needle."
+    },
+    {
+      "start": 213.6,
+      "end": 214.6,
+      "text": "You can use different needles,"
+    },
+    {
+      "start": 214.62,
+      "end": 216.72,
+      "text": "I'm just gonna use an 18 gauge needle here."
+    },
+    {
+      "start": 217.8,
+      "end": 219.48,
+      "text": "And what I'm gonna be trying to do here with this."
+    },
+    {
+      "start": 220.1,
+      "end": 222.12,
+      "text": "is again, following that same kind of path."
+    },
+    {
+      "start": 225.98,
+      "end": 226.6,
+      "text": "All right, here we go."
+    },
+    {
+      "start": 228.28,
+      "end": 229.42,
+      "text": "As you guys can see here."
+    },
+    {
+      "start": 230.7,
+      "end": 232.48,
+      "text": "I'm just gonna turn her arm a little bit more here."
+    },
+    {
+      "start": 233.75,
+      "end": 235.29,
+      "text": "Again, you see that bifurcation there?"
+    },
+    {
+      "start": 236.22,
+      "end": 239.04,
+      "text": "I wanna go just above that and see straight"
+    },
+    {
+      "start": 239.04,
+      "end": 239.78,
+      "text": "for a nice distance."
+    },
+    {
+      "start": 240.96,
+      "end": 244.65,
+      "text": "So I'm gonna start right here, okay?"
+    },
+    {
+      "start": 245.07,
+      "end": 247.07,
+      "text": "So you're gonna feel a little poke here, Kristen."
+    },
+    {
+      "start": 248.11,
+      "end": 249.97,
+      "text": "Ready and poke."
+    },
+    {
+      "start": 250.0,
+      "end": 255.29,
+      "text": "And what I'm doing is I'm trying to find my catheter here with my"
+    },
+    {
+      "start": 255.29,
+      "end": 259.97,
+      "text": "Ultrasound so I'm gonna bring it right close to the Ultrasound you see that I've been"
+    },
+    {
+      "start": 260.0,
+      "end": 264.64,
+      "text": "just banging on the top of the wall here. And now I'm actually in the vessel. You guys can see"
+    },
+    {
+      "start": 264.64,
+      "end": 268.06,
+      "text": "that I'm in the vessel here. I'm gonna kind of just lower my angle a little bit and keep kind of"
+    },
+    {
+      "start": 268.38,
+      "end": 269.0,
+      "text": "advancing."
+    },
+    {
+      "start": 270.96,
+      "end": 278.5,
+      "text": "Because what I want to do is, I want to see this bull's eye in the center here."
+    },
+    {
+      "start": 282.66,
+      "end": 286.14,
+      "text": "throughout the entire length until it disappears."
+    },
+    {
+      "start": 286.84,
+      "end": 287.88,
+      "text": "You guys can see it's there, right?"
+    },
+    {
+      "start": 288.73,
+      "end": 289.97,
+      "text": "Now what I'm gonna do is, I'm just gonna..."
+    },
+    {
+      "start": 290.0,
+      "end": 296.72,
+      "text": "slowly thread my catheter then I'm going to have a retractor there. So you can see"
+    },
+    {
+      "start": 296.72,
+      "end": 299.41,
+      "text": "other's blood here, I got a nice return of blood."
+    },
+    {
+      "start": 301.09,
+      "end": 302.77,
+      "text": "We're just going to go ahead and pop this turn to kit here."
+    },
+    {
+      "start": 306.78,
+      "end": 309.16,
+      "text": "We're going to attach on our tubing here."
+    },
+    {
+      "start": 313.97,
+      "end": 316.25,
+      "text": "And I'm gonna pull back blood, see how they pull back blood."
+    },
+    {
+      "start": 317.44,
+      "end": 318.98,
+      "text": "And I'm gonna flush it, do you feel any pain there?"
+    },
+    {
+      "start": 319.24,
+      "end": 319.86,
+      "text": "Nope, feels good."
+    },
+    {
+      "start": 320.8,
+      "end": 323.23,
+      "text": "Okay, so that is gonna be nice and in there,"
+    },
+    {
+      "start": 323.33,
+      "end": 325.79,
+      "text": "so I'm just gonna go ahead and detach this part here."
+    },
+    {
+      "start": 328.51,
+      "end": 329.83,
+      "text": "I'm gonna clean this up a little bit."
+    },
+    {
+      "start": 331.76,
+      "end": 333.74,
+      "text": "get all that ultrasound jelly nice and cleaned off."
+    },
+    {
+      "start": 334.9,
+      "end": 338.27,
+      "text": "It's one of the bains of existence for the taggerderm."
+    },
+    {
+      "start": 339.42,
+      "end": 339.98,
+      "text": "All right, so we got..."
+    },
+    {
+      "start": 340.0,
+      "end": 343.5,
+      "text": "our catheter in. We're going to go ahead and secure it now so we're going to go ahead and take our"
+    },
+    {
+      "start": 343.5,
+      "end": 344.74,
+      "text": "with the tag of the arm here."
+    },
+    {
+      "start": 352.62,
+      "end": 354.86,
+      "text": "and Kristen's probably judging me so hard right now"
+    },
+    {
+      "start": 354.86,
+      "end": 356.38,
+      "text": "because I'm not very good at these,"
+    },
+    {
+      "start": 356.4,
+      "end": 358.88,
+      "text": "usually when I put any IVN for a patient,"
+    },
+    {
+      "start": 359.12,
+      "end": 359.64,
+      "text": "I'm..."
+    },
+    {
+      "start": 360.0,
+      "end": 365.84,
+      "text": "I'm like hey nurse you want to put this on for me, but we're gonna get it all kind of taken care of here"
+    },
+    {
+      "start": 365.84,
+      "end": 369.59,
+      "text": "And she'll give me any advice all right, so we got here"
+    },
+    {
+      "start": 371.7,
+      "end": 373.26,
+      "text": "that part of the take a derm down."
+    },
+    {
+      "start": 375.16,
+      "end": 376.76,
+      "text": "You make sure you clean that ultrasound jelly off"
+    },
+    {
+      "start": 376.76,
+      "end": 379.02,
+      "text": "that can sometimes be a problematic issue there"
+    },
+    {
+      "start": 379.02,
+      "end": 379.88,
+      "text": "with getting these things."
+    },
+    {
+      "start": 380.0,
+      "end": 388.62,
+      "text": "a stick. Okay then we're gonna go ahead put that down over the top and there's"
+    },
+    {
+      "start": 388.62,
+      "end": 389.96,
+      "text": "RV if you want you can take some"
+    },
+    {
+      "start": 390.0,
+      "end": 394.36,
+      "text": "tape and tape that over this part here. Some people will do that. I don't know. Do you like doing that"
+    },
+    {
+      "start": 394.36,
+      "end": 399.87,
+      "text": "Kristen? I use that little piece actually right? Oh look she uses this piece here. Then you can document time"
+    },
+    {
+      "start": 400.32,
+      "end": 404.98,
+      "text": "and your little lichels. So we're going to do that now. We're going to put this bad"
+    },
+    {
+      "start": 404.98,
+      "end": 409.82,
+      "text": "boy on here and I'm just going to put down. Exactly."
+    },
+    {
+      "start": 410.0,
+      "end": 411.64,
+      "text": "I don't remember if you had the boss put this in, all right?"
+    },
+    {
+      "start": 412.84,
+      "end": 415.32,
+      "text": "But, the engineers, this is how you do an ultrasound guided IV."
+    },
+    {
+      "start": 415.62,
+      "end": 416.34,
+      "text": "I hope it made sense."
+    },
+    {
+      "start": 416.46,
+      "end": 417.5,
+      "text": "I hope that you guys liked it."
+    },
+    {
+      "start": 417.58,
+      "end": 418.7,
+      "text": "I hope that you guys learned a lot."
+    },
+    {
+      "start": 419.18,
+      "end": 419.98,
+      "text": "And I hope that now whenever you-"
+    },
+    {
+      "start": 420.0,
+      "end": 421.08,
+      "text": "you guys are out there on the wars"
+    },
+    {
+      "start": 421.08,
+      "end": 422.42,
+      "text": "and you guys are doing some IVs."
+    },
+    {
+      "start": 422.76,
+      "end": 423.96,
+      "text": "You'll take a little stab at this."
+    },
+    {
+      "start": 424.06,
+      "end": 424.6,
+      "text": "No fun intended."
+    },
+    {
+      "start": 425.02,
+      "end": 427.0,
+      "text": "All right, engineers, as always, until next time."
+    }
+  ]
+}

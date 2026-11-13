@@ -1,0 +1,148 @@
+{
+  "video_id": "3MBmUFMoH7w",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/3MBmUFMoH7w/asr.txt",
+  "segments": [
+    {
+      "start": 7.13,
+      "end": 12.79,
+      "text": "A linear array transducer with a nerve exam type is used to perform an ultrasound guided"
+    },
+    {
+      "start": 12.79,
+      "end": 19.95,
+      "text": "axillary regional nerve block. The target depth is approximately 1-2 centimeters in an 80 kilogram"
+    },
+    {
+      "start": 19.95,
+      "end": 27.46,
+      "text": "adult. The patient is positioned supine with the arm abducted 90 degrees and the elbow bent 90 degrees."
+    },
+    {
+      "start": 28.48,
+      "end": 33.88,
+      "text": "The transducer is placed as high as possible in the axilla with the orientation marker directed"
+    },
+    {
+      "start": 33.88,
+      "end": 35.08,
+      "text": "to the patient's head."
+    },
+    {
+      "start": 35.81,
+      "end": 41.75,
+      "text": "Slowly slide the transducer in a lateral to medial direction to identify the axillary artery."
+    },
+    {
+      "start": 42.49,
+      "end": 47.97,
+      "text": "The axillary artery is a dark, round, pulsatile structure with a hyperacoic wall."
+    },
+    {
+      "start": 48.59,
+      "end": 53.35,
+      "text": "The axillary veins lie around the periphery of the artery and are easily compressed."
+    },
+    {
+      "start": 54.17,
+      "end": 59.81,
+      "text": "Slide the transducer up the arm to a proximal position so the terrace major muscle, which"
+    },
+    {
+      "start": 59.81,
+      "end": 65.03,
+      "text": "helps control the distribution of local anesthetic during injection, is post-arometial to the"
+    },
+    {
+      "start": 65.03,
+      "end": 65.97,
+      "text": "artery and nerves."
+    },
+    {
+      "start": 66.96,
+      "end": 71.38,
+      "text": "The biceps and caracobrachialis muscles will appear lateral to the artery."
+    },
+    {
+      "start": 72.28,
+      "end": 78.24,
+      "text": "The median, ulnar and radial nerves appear as hyperocococcircles with a honeycomb appearance"
+    },
+    {
+      "start": 78.24,
+      "end": 79.4,
+      "text": "surrounding the artery."
+    },
+    {
+      "start": 80.14,
+      "end": 82.74,
+      "text": "The nerve positions will vary around the artery."
+    },
+    {
+      "start": 83.67,
+      "end": 89.21,
+      "text": "The transducer is slowly moved laterally over the biceps and caracobrachialis muscles."
+    },
+    {
+      "start": 89.21,
+      "end": 94.9,
+      "text": "muscles. The musculocutaneous nerve can be seen between these muscles as a small, bright,"
+    },
+    {
+      "start": 95.14,
+      "end": 102.46,
+      "text": "hypero-coic circle or triangle. The needle is positioned 1-2 cm lateral to the transducer"
+    },
+    {
+      "start": 102.46,
+      "end": 108.12,
+      "text": "and advanced using an in-plane technique. The needle path is directed through the biceps"
+    },
+    {
+      "start": 108.12,
+      "end": 113.74,
+      "text": "muscle toward the musculocutaneous nerve. The initial end point for the needle is immediately"
+    },
+    {
+      "start": 113.74,
+      "end": 119.58,
+      "text": "slightly beside the musculocutaneous nerve, where 3 to 5 cc's of anesthetic should be injected."
+    },
+    {
+      "start": 120.44,
+      "end": 124.74,
+      "text": "The needle is then advanced to a position immediately posterior to the artery."
+    },
+    {
+      "start": 125.45,
+      "end": 131.41,
+      "text": "As local anesthetic is injected, the terrace muscle is pushed down, and the local anesthetic"
+    },
+    {
+      "start": 131.41,
+      "end": 134.59,
+      "text": "should spread medial and lateral underneath the artery."
+    },
+    {
+      "start": 135.46,
+      "end": 141.2,
+      "text": "The needle can be advanced through hydro-desection to facilitate appropriate spread of local anesthetic."
+    },
+    {
+      "start": 141.38,
+      "end": 146.26,
+      "text": "Finally, the needle is withdrawn and redirected anterior to the artery."
+    },
+    {
+      "start": 147.12,
+      "end": 151.58,
+      "text": "Local anesthetic should be injected over the artery to finish with a circumferential"
+    },
+    {
+      "start": 151.58,
+      "end": 154.26,
+      "text": "spread of local anesthetic around the artery."
+    }
+  ]
+}

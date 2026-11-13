@@ -1,0 +1,67 @@
+{
+  "video_id": "GPHyZfm8T2s",
+  "reviewer": "stage3_b",
+  "review_scope": "Question-led review by Agent B of Agent A draft; not blind. Native full-frame sampled checkpoints and available time-indexed ASR; no continuous replay or direct listening claim.",
+  "reviewer_native_opened": [
+    230,
+    270,
+    310,
+    560,
+    588,
+    589,
+    710,
+    1086,
+    1087,
+    1130,
+    1280,
+    1281,
+    1282,
+    588.25,
+    588.5,
+    588.75,
+    1086.25,
+    1086.5,
+    1086.75,
+    1280.25,
+    1280.5,
+    1280.75
+  ],
+  "tasks": [
+    {
+      "task_index": 1,
+      "findings": "Confirmed coarse dark shadow columns beneath ribs and bright interspace; no pleural motion assertion at428x320.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 2,
+      "findings": "Moved589 to588.25 because partition network already appears. Different teaching examples, not effusion progression.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 3,
+      "findings": "Confirmed dark arrowed left markings versus brighter right branching/punctate echoes; avoid fine structural identification.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 4,
+      "findings": "Moved1087 to1086.25. Confirmed lower channel slopes upward-right and smaller branch above; color alone not a vascular diagnosis.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 5,
+      "findings": "Confirmed historical V lower/deeper and screen-left of C in earlier unique right parasternal example.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 6,
+      "findings": "Moved1282 to1281 after1280.75 negative. Strong text/arrow shortcut remains explicit; answer only displayed contour, not clinical eventration diagnosis.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    }
+  ]
+}

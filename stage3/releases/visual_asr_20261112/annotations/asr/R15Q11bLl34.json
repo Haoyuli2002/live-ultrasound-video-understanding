@@ -1,0 +1,463 @@
+{
+  "video_id": "R15Q11bLl34",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/R15Q11bLl34/asr.txt",
+  "segments": [
+    {
+      "start": 0.22,
+      "end": 2.08,
+      "text": "This is a guide to assessing lung fields"
+    },
+    {
+      "start": 2.08,
+      "end": 4.98,
+      "text": "using the bedside lung ultrasound and emergency"
+    },
+    {
+      "start": 4.98,
+      "end": 7.32,
+      "text": "or blue protocol in a patient"
+    },
+    {
+      "start": 7.32,
+      "end": 8.92,
+      "text": "with acute respiratory failure."
+    },
+    {
+      "start": 11.5,
+      "end": 16.46,
+      "text": "The blue protocol is a rapid systematic examination that takes less than five minutes to perform"
+    },
+    {
+      "start": 16.46,
+      "end": 19.759999999999998,
+      "text": "and can help identify common causes of acute dyspnea."
+    },
+    {
+      "start": 20.03,
+      "end": 21.87,
+      "text": "with high sensitivity and specificity."
+    },
+    {
+      "start": 23.33,
+      "end": 24.65,
+      "text": "For the diagnosis of pneumonia,"
+    },
+    {
+      "start": 24.97,
+      "end": 27.43,
+      "text": "the blue protocol has a sensitivity of 88%"
+    },
+    {
+      "start": 27.43,
+      "end": 29.82,
+      "text": "and specificity of 93%."
+    },
+    {
+      "start": 30.35,
+      "end": 34.51,
+      "text": "Compared with a combined reference standard of clinical suspicion, laboratory testing,"
+    },
+    {
+      "start": 34.99,
+      "end": 39.79,
+      "text": "and computed tomography imaging, this video provides an overview"
+    },
+    {
+      "start": 40.0,
+      "end": 41.92,
+      "text": "the blue protocol and its interpretation."
+    },
+    {
+      "start": 42.71,
+      "end": 44.57,
+      "text": "The blue protocol uses a microconvicts"
+    },
+    {
+      "start": 44.57,
+      "end": 47.09,
+      "text": "pro, which may not be available at all institutions."
+    },
+    {
+      "start": 48.57,
+      "end": 49.97,
+      "text": "If you do not have a microconvict,"
+    },
+    {
+      "start": 50.0,
+      "end": 55.18,
+      "text": "probe, you will need both a high and low-frequency probe to improve diagnostic accuracy."
+    },
+    {
+      "start": 56.480000000000004,
+      "end": 59.980000000000004,
+      "text": "The low-frequency probe, such as a curvilinear probe, is used to assess"
+    },
+    {
+      "start": 60.0,
+      "end": 66.5,
+      "text": "for sonographic artifacts of the lump, such as B lines or consolidation. It can also be used to"
+    },
+    {
+      "start": 66.5,
+      "end": 69.88,
+      "text": "assess for long slide, the high frequency."
+    },
+    {
+      "start": 70.0,
+      "end": 74.04,
+      "text": "or linear probe, is used to assess for long-sighting at the plural interface,"
+    },
+    {
+      "start": 75.3,
+      "end": 78.58,
+      "text": "in instances where it is not immediately apparent with a low frequency probe."
+    },
+    {
+      "start": 80.0,
+      "end": 82.08,
+      "text": "what a call uses six standardized scanning points."
+    },
+    {
+      "start": 82.58,
+      "end": 83.74,
+      "text": "Bearing on each side of the chest."
+    },
+    {
+      "start": 84.04,
+      "end": 85.22,
+      "text": "Reverse two is blue points."
+    },
+    {
+      "start": 89.52,
+      "end": 89.98,
+      "text": "I find the blue."
+    },
+    {
+      "start": 90.03,
+      "end": 95.77,
+      "text": "points, place both hands on the interior chest. The upper hand's fit digit is just below"
+    },
+    {
+      "start": 95.77,
+      "end": 99.64,
+      "text": "the clavicle. Examiner's fingertips are adjacent to the sternum."
+    },
+    {
+      "start": 101.18,
+      "end": 103.42,
+      "text": "The upper blue point lies at the center of the upper palm."
+    },
+    {
+      "start": 104.51,
+      "end": 106.83,
+      "text": "The lower blue point lies at the center of the lower palm."
+    },
+    {
+      "start": 108.26,
+      "end": 109.96000000000001,
+      "text": "These points assess the upper and lower-"
+    },
+    {
+      "start": 110.0,
+      "end": 117.28,
+      "text": "anterior lung. The third point on each side is called the postero lateral alveolar and or"
+    },
+    {
+      "start": 117.28,
+      "end": 119.98,
+      "text": "plural syndrome point, which assesses the post-"
+    },
+    {
+      "start": 120.0,
+      "end": 129.6,
+      "text": "It is located at the intersection of a horizontal line, extending from the lower blue point and a vertical line descending from the posterior axillary line."
+    },
+    {
+      "start": 131.09,
+      "end": 133.69,
+      "text": "We will now demonstrate how to scan using a curvilinear pro."
+    },
+    {
+      "start": 135.15,
+      "end": 137.5,
+      "text": "Begin anteriorly in the patient's right side."
+    },
+    {
+      "start": 138.16,
+      "end": 139.98,
+      "text": "Place the probe at the upper blue point with the..."
+    },
+    {
+      "start": 140.0,
+      "end": 145.54,
+      "text": "indicator pointing cephalat, or towards the head, and identify the plural line, the bright"
+    },
+    {
+      "start": 145.54,
+      "end": 148.64,
+      "text": "or hyper-echoic horizontal line between two rib shadows."
+    },
+    {
+      "start": 150.0,
+      "end": 152.74,
+      "text": "utilizing the plural line, assess if there's lung-sliding presence."
+    },
+    {
+      "start": 153.41,
+      "end": 156.21,
+      "text": "This is characterized by a two-and-fro movement with each breath,"
+    },
+    {
+      "start": 156.9,
+      "end": 159.96,
+      "text": "which represents the visceral plura moving against the parietal plura."
+    },
+    {
+      "start": 160.0,
+      "end": 166.16,
+      "text": "After determining if lung sliding is present, use the low frequency probe to assess for lung"
+    },
+    {
+      "start": 166.16,
+      "end": 169.98,
+      "text": "artifacts, including a lines, b lines, or consolidates."
+    },
+    {
+      "start": 170.0,
+      "end": 176.06,
+      "text": "A lines are horizontal reverberation artifacts that appear parallel to the plural line at regular intervals."
+    },
+    {
+      "start": 176.78,
+      "end": 178.02,
+      "text": "B lines are vertically oriented,"
+    },
+    {
+      "start": 178.02,
+      "end": 179.86,
+      "text": "the fiber echoic or bright."
+    },
+    {
+      "start": 180.03,
+      "end": 181.51,
+      "text": "artifacts emanating from the plora."
+    },
+    {
+      "start": 184.52,
+      "end": 187.26,
+      "text": "Consolidation manifests as an irregular plora line"
+    },
+    {
+      "start": 187.26,
+      "end": 189.74,
+      "text": "with denser, hyper-echoic long tissue."
+    },
+    {
+      "start": 190.22,
+      "end": 192.06,
+      "text": "that may resemble a liver's echogeneity,"
+    },
+    {
+      "start": 192.24,
+      "end": 194.8,
+      "text": "a phenomenon called hepatization of the lung."
+    },
+    {
+      "start": 195.63,
+      "end": 196.95,
+      "text": "After completing this assessment,"
+    },
+    {
+      "start": 197.19,
+      "end": 198.29,
+      "text": "move to the next blue point"
+    },
+    {
+      "start": 198.29,
+      "end": 199.93,
+      "text": "on the lower right anterior chest."
+    },
+    {
+      "start": 200.0,
+      "end": 204.86,
+      "text": "and repeat the same examination after assessing both the upper and lower interior points."
+    },
+    {
+      "start": 205.38,
+      "end": 208.68,
+      "text": "Move the probe posterior laterally to assess the right posterior lungs."
+    },
+    {
+      "start": 210.0,
+      "end": 214.18,
+      "text": "the probe is posteriorly as the patient's position allows to ensure it is in the posterior"
+    },
+    {
+      "start": 214.18,
+      "end": 215.1,
+      "text": "Your Excellery Line."
+    },
+    {
+      "start": 219.76,
+      "end": 219.9,
+      "text": "Repeat."
+    },
+    {
+      "start": 220.0,
+      "end": 224.18,
+      "text": "the sequence on the contralateral left hemi-thorax at the upper and lower blue points."
+    },
+    {
+      "start": 224.84,
+      "end": 229.85,
+      "text": "Lastly, the left posterior lung region. There's some tips."
+    },
+    {
+      "start": 230.03,
+      "end": 233.12,
+      "text": "troubleshooting. If lung sliding is not immediately apparent or"
+    },
+    {
+      "start": 233.12,
+      "end": 237.3,
+      "text": "equivocal in any lung zone, switch to the linear pro, which has a higher"
+    },
+    {
+      "start": 237.3,
+      "end": 238.7,
+      "text": "sensitivity for lung sliding."
+    },
+    {
+      "start": 240.83,
+      "end": 246.6,
+      "text": "If the plural line is not immediately visualized, slowly tilt the probe back and forth to improve its visualization."
+    },
+    {
+      "start": 253.07,
+      "end": 255.07,
+      "text": "If the posterior lungs difficult to assess,"
+    },
+    {
+      "start": 255.69,
+      "end": 258.49,
+      "text": "have the patient or an assistant elevate the arm above the head"
+    },
+    {
+      "start": 258.49,
+      "end": 259.87,
+      "text": "to allow for sufficient access."
+    },
+    {
+      "start": 260.1,
+      "end": 264.42,
+      "text": "There are distinct profiles suggested by pneumonia."
+    },
+    {
+      "start": 265.71,
+      "end": 269.96,
+      "text": "The C-profile is any visualized consolidation and can occur with or without lung-"
+    },
+    {
+      "start": 270.0,
+      "end": 279.72,
+      "text": "sliding. Second, the AB profile is characterized by B lines."
+    },
+    {
+      "start": 280.29,
+      "end": 284.46,
+      "text": "can find to a single pymethorax and can occur with or without long sliding."
+    },
+    {
+      "start": 291.38,
+      "end": 296.67,
+      "text": "Third, the B prime profile, which involves B lines located in both hemithoracies, without"
+    },
+    {
+      "start": 296.67,
+      "end": 299.12,
+      "text": "long-sliding, may also indicate ammonia."
+    },
+    {
+      "start": 302.14,
+      "end": 304.62,
+      "text": "The B-profile is characterized by bilateral B lines"
+    },
+    {
+      "start": 304.62,
+      "end": 305.92,
+      "text": "in the presence of lung sliding"
+    },
+    {
+      "start": 305.92,
+      "end": 308.06,
+      "text": "and may indicate pulmonary edema."
+    },
+    {
+      "start": 314.7,
+      "end": 319.23,
+      "text": "The A-Profile is defined by the presence of lung sliding in all interior fields, and"
+    },
+    {
+      "start": 319.23,
+      "end": 319.91,
+      "text": "only A-line."
+    },
+    {
+      "start": 320.06,
+      "end": 327.36,
+      "text": "are visualized. The posterior lung should then be evaluated. Any abnormality, such as b-lines or"
+    },
+    {
+      "start": 327.36,
+      "end": 329.76,
+      "text": "The consolidation is suggestive up pneumonia."
+    },
+    {
+      "start": 331.25,
+      "end": 335.45,
+      "text": "If there's no abnormality, then the patient should be assessed for deep venous thrombosis"
+    },
+    {
+      "start": 335.45,
+      "end": 338.09,
+      "text": "with lower extremity compression ultrasonography."
+    },
+    {
+      "start": 340.0,
+      "end": 343.88,
+      "text": "Identification of deep venous thrombosis may suggest pulmonary embolus."
+    },
+    {
+      "start": 345.07,
+      "end": 349.81,
+      "text": "If absent, then obstructive airway disease such as COPD or asthma may be considered."
+    },
+    {
+      "start": 350.58,
+      "end": 355.27,
+      "text": "The A prime profile indicates the absence of lung sliding in interior fields, and only"
+    },
+    {
+      "start": 355.27,
+      "end": 356.51,
+      "text": "A lines are visualized."
+    },
+    {
+      "start": 357.06,
+      "end": 359.16,
+      "text": "If present, no mothorec should be considered."
+    },
+    {
+      "start": 361.57,
+      "end": 365.63,
+      "text": "Using the blue protocol has demonstrated good diagnostic performance and patience with"
+    },
+    {
+      "start": 365.63,
+      "end": 366.99,
+      "text": "acute respiratory failure."
+    }
+  ]
+}

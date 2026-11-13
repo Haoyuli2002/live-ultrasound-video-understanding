@@ -1,0 +1,128 @@
+{
+  "video_id": "afUiMq0DSs4",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/afUiMq0DSs4/asr.txt",
+  "segments": [
+    {
+      "start": 9.05,
+      "end": 14.87,
+      "text": "Hi guys, Gerardo here. As an emergency clinician, we often have to perform invasive diagnostics"
+    },
+    {
+      "start": 14.87,
+      "end": 19.39,
+      "text": "in order to try and find an answer so we can treat and manage our patients properly."
+    },
+    {
+      "start": 20.84,
+      "end": 24.34,
+      "text": "Often we have to use the ultrasound and collect samples of fluid or tissue"
+    },
+    {
+      "start": 24.34,
+      "end": 30.75,
+      "text": "from within cavities to help us write a diagnosis. Let me show you how I use the ultrasound"
+    },
+    {
+      "start": 30.75,
+      "end": 38.76,
+      "text": "in order to try and get those samples. The first thing to understand is the ultrasound being."
+    },
+    {
+      "start": 38.76,
+      "end": 48.91,
+      "text": "The old sound beam comes out flat and when you insert your needle in you want to make"
+    },
+    {
+      "start": 48.91,
+      "end": 52.91,
+      "text": "sure that the needle is in the same plane as the old sound beam."
+    },
+    {
+      "start": 54.2,
+      "end": 59.22,
+      "text": "If you go on a weed angle then you'll only see part of the needle and you will miss the"
+    },
+    {
+      "start": 59.22,
+      "end": 61.21,
+      "text": "tip of the demonstrate."
+    },
+    {
+      "start": 69.55,
+      "end": 74.55,
+      "text": "The same plane received the entire needle."
+    },
+    {
+      "start": 82.3,
+      "end": 88.41,
+      "text": "The second thing is understanding where the needle shows up on the screen."
+    },
+    {
+      "start": 88.41,
+      "end": 96.34,
+      "text": "So, we want to insert the needle into this tissue just in front of the ultrasound probe."
+    },
+    {
+      "start": 96.7,
+      "end": 104.37,
+      "text": "And aim so that the point of the needle comes in to the middle of the ultrasound beam, which"
+    },
+    {
+      "start": 104.37,
+      "end": 107.03,
+      "text": "is where we want the area of interest to be."
+    },
+    {
+      "start": 112.82,
+      "end": 117.13,
+      "text": "So, we find the area of interest, we insert the needle just in front of the ultrasound"
+    },
+    {
+      "start": 117.93,
+      "end": 131.6,
+      "text": "angling towards the middle of the probe, is troubleshooting when you've lost your needle."
+    },
+    {
+      "start": 131.6,
+      "end": 141.02,
+      "text": "So you've placed your probe and you've located the air ventrist and you've inserted your needle but you can't see it on the ultrasound screen."
+    },
+    {
+      "start": 142.1,
+      "end": 146.9,
+      "text": "The safest thing to do would be to actually fan your probe."
+    },
+    {
+      "start": 148.59,
+      "end": 156.56,
+      "text": "So fan your probe in order to locate the needle tip as opposed to actually moving your needle."
+    },
+    {
+      "start": 156.84,
+      "end": 161.97,
+      "text": "As this can cause pretty significant trauma on the inside, let me demonstrate on the ultrasound."
+    },
+    {
+      "start": 161.97,
+      "end": 174.28,
+      "text": "sound. So we've located the area of interest. We insert our needle and we can't find it."
+    },
+    {
+      "start": 175.64,
+      "end": 186.4,
+      "text": "So instead of moving the needle, what we do is we move the probe to locate the needle."
+    },
+    {
+      "start": 191.47,
+      "end": 196.92,
+      "text": "So one thing I've learnt the hard way is to make sure that you always pump your syringe"
+    },
+    {
+      "start": 198.14,
+      "end": 199.42,
+      "text": "so that it's easier to aspirate."
+    }
+  ]
+}

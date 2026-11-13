@@ -1,0 +1,428 @@
+{
+  "video_id": "TOcvCKr9J18",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/TOcvCKr9J18/asr.txt",
+  "segments": [
+    {
+      "start": 7.58,
+      "end": 9.76,
+      "text": "General nerve block is often one of the first the beginners"
+    },
+    {
+      "start": 10.0,
+      "end": 17.72,
+      "text": "And for good reason, it's relatively straightforward and has a lot of utility in both the trauma setting and for elective surgical patients undergoing lower limb surgery."
+    },
+    {
+      "start": 17.92,
+      "end": 19.84,
+      "text": "In this video, we'll discuss the anatomy and"
+    },
+    {
+      "start": 20.0,
+      "end": 24.08,
+      "text": "technique for ultrasound-guided femoral nerve block as well as blockaded the lateral femoral"
+    },
+    {
+      "start": 24.08,
+      "end": 24.8,
+      "text": "coutaneous nerve."
+    },
+    {
+      "start": 25.44,
+      "end": 29.4,
+      "text": "In the thigh, the femoral nerve lies on the surface of the iliacus muscle, just lateral"
+    },
+    {
+      "start": 29.4,
+      "end": 29.98,
+      "text": "to the femoral"
+    },
+    {
+      "start": 30.0,
+      "end": 34.39,
+      "text": "artery. It's bound down to this muscle by the fascia iliaca, a tough fibrous"
+    },
+    {
+      "start": 34.39,
+      "end": 38.81,
+      "text": "sheath. The lateral femoralcutaneous nerve, or LFCN, passes under the"
+    },
+    {
+      "start": 38.81,
+      "end": 39.57,
+      "text": "in the link in the description."
+    },
+    {
+      "start": 39.59,
+      "end": 39.97,
+      "text": "And open..."
+    },
+    {
+      "start": 40.0,
+      "end": 44.66,
+      "text": "the surface of Sertorius before continuing subcutaneously down the lateral aspect of the thigh."
+    },
+    {
+      "start": 45.68,
+      "end": 49.22,
+      "text": "Here we see the relationship of the femoral artery and vein to the femoral nerve."
+    },
+    {
+      "start": 50.0,
+      "end": 52.46,
+      "text": "Note that there is a separation between the artery and the nerve."
+    },
+    {
+      "start": 52.99,
+      "end": 57.17,
+      "text": "The fascia iliacca dives deep under the artery, so these two structures are in different"
+    },
+    {
+      "start": 57.17,
+      "end": 58.21,
+      "text": "fascial compartments."
+    },
+    {
+      "start": 58.6,
+      "end": 59.980000000000004,
+      "text": "We see the LFCN in a more..."
+    },
+    {
+      "start": 60.0,
+      "end": 64.6,
+      "text": "superficial fascial plane, running across its atorias before falling into a small fat pad"
+    },
+    {
+      "start": 64.6,
+      "end": 67.78,
+      "text": "between the atorias medially and tensor fascial adalaterally."
+    },
+    {
+      "start": 68.31,
+      "end": 69.97,
+      "text": "There we see the dermatomes, miles..."
+    },
+    {
+      "start": 70.0,
+      "end": 75.54,
+      "text": "atoms and osteotomes relevant to the femoral nerve. The LFCN is a cutaneous nerve and therefore"
+    },
+    {
+      "start": 75.54,
+      "end": 79.88,
+      "text": "only supplies sensation to the skin of the lateral thigh. We use the femoral nerve"
+    },
+    {
+      "start": 80.0,
+      "end": 83.74,
+      "text": "block for lower limb amputation, or femoral and sciatic catheters are left in place for"
+    },
+    {
+      "start": 83.74,
+      "end": 84.58,
+      "text": "5-7 days."
+    },
+    {
+      "start": 85.08,
+      "end": 89.08,
+      "text": "We also use it extensively for lower limb trauma, such as femoral fracture and proximal"
+    },
+    {
+      "start": 89.08,
+      "end": 89.72,
+      "text": "tibial fracture."
+    },
+    {
+      "start": 90.16,
+      "end": 93.94,
+      "text": "Note that the medial aspect of the proximal tibia is innervated by the femoral nerve."
+    },
+    {
+      "start": 94.3,
+      "end": 97.66,
+      "text": "Other indications include ACL repair and complex knee reconstruction."
+    },
+    {
+      "start": 98.3,
+      "end": 99.96000000000001,
+      "text": "We'll block the LFCN for elective-"
+    },
+    {
+      "start": 100.0,
+      "end": 104.96,
+      "text": "posterior hip arthroplasty, skin graft harvesting, and other various procedures that involve the skin"
+    },
+    {
+      "start": 104.96,
+      "end": 109.56,
+      "text": "of the lateral thigh. For the femoral nerve block, the probe is placed in the angular crease and the needle"
+    },
+    {
+      "start": 109.56,
+      "end": 109.96000000000001,
+      "text": "In the middle of the middle of the middle of the middle of the middle of the middle of the middle of the middle of the middle of the middle"
+    },
+    {
+      "start": 110.22,
+      "end": 114.12,
+      "text": "plane from the lateral aspect. You should see the femoral artery, the nerve"
+    },
+    {
+      "start": 114.12,
+      "end": 118.0,
+      "text": "beside it, and the fascia iliacca binding the nerve down to the iliacca's muscle."
+    },
+    {
+      "start": 118.55,
+      "end": 119.87,
+      "text": "We'll be advancing the needle from the lateral"
+    },
+    {
+      "start": 120.0,
+      "end": 125.5,
+      "text": "side. We want to gently hydrodisec the nerve off the fasciiliacca and look for that"
+    },
+    {
+      "start": 125.5,
+      "end": 129.97,
+      "text": "unzippering. Always use hydraulic pressure of the saline or local anesthetic to do the"
+    },
+    {
+      "start": 130.13,
+      "end": 131.07,
+      "text": "Mechanical work for you."
+    },
+    {
+      "start": 131.46,
+      "end": 133.18,
+      "text": "You don't want a sharp needle contact into the nerve."
+    },
+    {
+      "start": 134.07,
+      "end": 136.51,
+      "text": "10-15 mils of local anesthetic is a good dose here."
+    },
+    {
+      "start": 136.77,
+      "end": 139.97,
+      "text": "Sometimes the nerve peels off the iliacus muscle instead, and the local..."
+    },
+    {
+      "start": 140.0,
+      "end": 144.8,
+      "text": "is deep to the nerve, that's totally fine too. We'll often place femoral catheters for"
+    },
+    {
+      "start": 144.8,
+      "end": 147.36,
+      "text": "ACL repair and trauma, the technique is much the same."
+    },
+    {
+      "start": 154.38,
+      "end": 156.8,
+      "text": "You can see the needle here indenting the fascia iliacca."
+    },
+    {
+      "start": 165.38,
+      "end": 167.58,
+      "text": "The motor response shows us that we're closer than the nerve."
+    },
+    {
+      "start": 167.58,
+      "end": 167.76,
+      "text": "I'll see you in the next video."
+    },
+    {
+      "start": 172.02,
+      "end": 175.82,
+      "text": "However, this first test injection seems to be spreading in the substance of the Sertorius"
+    },
+    {
+      "start": 175.82,
+      "end": 176.16,
+      "text": "muscle."
+    },
+    {
+      "start": 176.48,
+      "end": 178.06,
+      "text": "We're still one facial layer away."
+    },
+    {
+      "start": 180.22,
+      "end": 180.7,
+      "text": "That felt good."
+    },
+    {
+      "start": 181.22,
+      "end": 182.18,
+      "text": "Now we see the unzippering."
+    },
+    {
+      "start": 190.93,
+      "end": 192.39,
+      "text": "The catheter is advanced through the needle"
+    },
+    {
+      "start": 192.39,
+      "end": 194.19,
+      "text": "to one to two centimeters past the tip"
+    },
+    {
+      "start": 194.19,
+      "end": 195.11,
+      "text": "and the needle removed."
+    },
+    {
+      "start": 195.76,
+      "end": 197.08,
+      "text": "You always want to test your catheter"
+    },
+    {
+      "start": 197.08,
+      "end": 198.54,
+      "text": "with saline or local anaesthetic."
+    },
+    {
+      "start": 198.84,
+      "end": 199.9,
+      "text": "Air can give you false positive."
+    },
+    {
+      "start": 200.0,
+      "end": 203.36,
+      "text": "and ruins your picture if you need to do some fine tuning of the catheter position."
+    },
+    {
+      "start": 203.87,
+      "end": 205.15,
+      "text": "The tip isn't a good position here."
+    },
+    {
+      "start": 205.86,
+      "end": 208.76,
+      "text": "The LFCN is approached in much the same way, just more lateral."
+    },
+    {
+      "start": 209.26,
+      "end": 209.98,
+      "text": "It's useful to start..."
+    },
+    {
+      "start": 210.0,
+      "end": 212.68,
+      "text": "at the femoral nerve location where you have easy landmarks."
+    },
+    {
+      "start": 213.09,
+      "end": 216.31,
+      "text": "Then, move laterally past the feather-shaped sartorius muscle,"
+    },
+    {
+      "start": 217.41,
+      "end": 219.97,
+      "text": "translating the probe distally along the lateral thigh will..."
+    },
+    {
+      "start": 220.0,
+      "end": 225.25,
+      "text": "out a fat pad just lateral to the Sertorius. This is where the LFCN lives. It looks like a little"
+    },
+    {
+      "start": 225.25,
+      "end": 229.98,
+      "text": "raspberry. If you image this too proximally, the nerve crawls back up onto Sertorius."
+    },
+    {
+      "start": 230.0,
+      "end": 234.78,
+      "text": "where it gets lost in the fascia. Sliding back distally, we see it once again in that fat pad."
+    },
+    {
+      "start": 236.07,
+      "end": 239.97,
+      "text": "A needle is advanced from the lateral aspect. Note our depth of half a centimeter here."
+    },
+    {
+      "start": 240.0,
+      "end": 240.84,
+      "text": "It's very shallow."
+    },
+    {
+      "start": 244.18,
+      "end": 247.72,
+      "text": "Due to five miles of local anaesthetic are deposited within the fat pad, with an effort"
+    },
+    {
+      "start": 247.72,
+      "end": 249.72,
+      "text": "to see the nerve floating in a puddle of local."
+    },
+    {
+      "start": 253.3,
+      "end": 254.9,
+      "text": "And here are some tips for blocking these nerves."
+    },
+    {
+      "start": 255.66,
+      "end": 257.62,
+      "text": "First, you don't need to kill these nerves with volume."
+    },
+    {
+      "start": 258.08,
+      "end": 259.98,
+      "text": "Pen to 15mm is more than enough for the..."
+    },
+    {
+      "start": 260.0,
+      "end": 264.91,
+      "text": "femoral and just a few mills easily blocks the LFCN. Secondly, the femoral nerve is quite"
+    },
+    {
+      "start": 264.91,
+      "end": 269.05,
+      "text": "anisotropic, meaning that different angles of beam incidence will cause it to light up"
+    },
+    {
+      "start": 269.05,
+      "end": 269.97,
+      "text": "or disappear on this."
+    },
+    {
+      "start": 270.65,
+      "end": 274.37,
+      "text": "Typically, a cranial tilt will result in the nerve popping out of the background."
+    },
+    {
+      "start": 275.7,
+      "end": 279.5,
+      "text": "Finally, the femoral nerve breaks up into tiny branches or arborizes."
+    },
+    {
+      "start": 280.03,
+      "end": 283.73,
+      "text": "quickly at the level of the femoral artery bifurcation. If you're having troubles"
+    },
+    {
+      "start": 283.73,
+      "end": 287.05,
+      "text": "seeing your femoral nerve, slide the probe approximately to be sure that you're"
+    },
+    {
+      "start": 287.05,
+      "end": 289.97,
+      "text": "at least at the bifurcation or higher, where the nerve is 1-"
+    },
+    {
+      "start": 290.0,
+      "end": 295.12,
+      "text": "chunky structure. The femoral and LFCN blocks are easy to perform and both are"
+    },
+    {
+      "start": 295.12,
+      "end": 298.14,
+      "text": "impactful techniques to have an any regional anesthesia toolkit."
+    }
+  ]
+}

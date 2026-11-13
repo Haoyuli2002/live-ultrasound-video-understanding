@@ -1,0 +1,95 @@
+{
+  "video_id": "xIYFMfQuyt8",
+  "reviewer": "stage3_b",
+  "review_scope": "Question-led review by Agent B of Agent A draft; not blind. Native full-frame sampled checkpoints and available time-indexed ASR; no continuous replay or direct listening claim.",
+  "reviewer_native_opened": [
+    3605,
+    3895,
+    3924,
+    3925,
+    3925.5,
+    3925.75,
+    3926,
+    3928,
+    3930,
+    3980,
+    3981,
+    3981.25,
+    3981.5,
+    3981.75,
+    3982,
+    3983,
+    3985,
+    3987,
+    3995,
+    4205,
+    4260,
+    4261,
+    4261.25,
+    4261.5,
+    4262,
+    4264,
+    4265,
+    4685,
+    4690,
+    4691,
+    4691.5,
+    4691.75,
+    4692,
+    4694,
+    4705,
+    4735,
+    4845,
+    4975
+  ],
+  "tasks": [
+    {
+      "task_index": 1,
+      "findings": "Confirmed left arrow-bracketed band bulkier than right at3605.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 2,
+      "findings": "Moved3930 to3926;3925.75 wide view,3926 close view already larger nodule and less deep context. Field of view change, not growth.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 3,
+      "findings": "Moved3995 to3981.75;3981.5 grayscale,3981.75 Doppler peripheral patches with mostly uncolored center. No infection/absence of flow diagnosis.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 4,
+      "findings": "Moved4265 to4261.5:4261.25 lecturer,4261.5 paired images already visible before acute/healing labels. Shape comparison sufficient.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 5,
+      "findings": "Moved4705 to4692:4691.75 radiographs,4692 sonogram already shows stepped bright projection; no wait for narration or Bone/Tendon labels.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 6,
+      "findings": "Confirmed patient-right tendon on image-left thicker and rounder than patient-left on image-right at4735.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 7,
+      "findings": "Confirmed oval clustered internal compartments at4845; schematic and ASR give shortcut risk.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 8,
+      "findings": "Confirmed unique wide/close nodule historical sequence3895/3930 and current4975; lower-right lobe visible.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "video_id": "0Xc0x0pAoEc",
+  "reviewer": "stage3_b",
+  "review_scope": "Question-led review by Agent B of Agent A draft; not blind. Native full-frame sampled checkpoints and available time-indexed ASR; no continuous replay or direct listening claim.",
+  "reviewer_native_opened": [
+    270,
+    315,
+    317,
+    320,
+    321,
+    321.5,
+    322,
+    323,
+    324,
+    325,
+    420,
+    425,
+    426,
+    427,
+    428,
+    428.5,
+    429,
+    430,
+    540
+  ],
+  "tasks": [
+    {
+      "task_index": 1,
+      "outcome": "accepted",
+      "issues": [],
+      "changes": [],
+      "query_status": "ANSWER270; V larger right, A smaller lower-left in displayed transverse section."
+    },
+    {
+      "task_index": 2,
+      "outcome": "corrected",
+      "issues": [
+        "Later trace visible before325. Probe adjustment wording could imply continuous same-vessel recording, while earlier arterial spectrum is an inset example. Absolute amplitude is not calibrated across displays."
+      ],
+      "changes": [
+        "Advanced answer325 to322 with negative321.5. Rephrased as successive Doppler examples and qualitative relative-to-baseline morphology."
+      ],
+      "query_status": "WAIT315; second spectrum absent.",
+      "answer_status": "ANSWER322; smaller baseline-adjacent spectral groups visible."
+    },
+    {
+      "task_index": 3,
+      "outcome": "corrected",
+      "issues": [
+        "Clear wire view already428.5, earlier than430."
+      ],
+      "changes": [
+        "Advanced answer430 to428.5 and added negative428."
+      ],
+      "query_status": "WAIT420; research slide only.",
+      "answer_status": "ANSWER428.5; long curved echogenic line above deep vessel wall."
+    },
+    {
+      "task_index": 4,
+      "outcome": "accepted",
+      "issues": [],
+      "changes": [],
+      "query_status": "ANSWER540; unique earlier paired transverse/chest example270 supports larger vein recall."
+    }
+  ]
+}

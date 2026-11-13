@@ -1,0 +1,523 @@
+{
+  "video_id": "8Hyh6tZi9xM",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/8Hyh6tZi9xM/asr.txt",
+  "segments": [
+    {
+      "start": 24.86,
+      "end": 27.82,
+      "text": "I'm Dr. Emelinda Benacio, Chair of the Diagnostic"
+    },
+    {
+      "start": 27.82,
+      "end": 29.78,
+      "text": "in Interventional Radiology Department."
+    },
+    {
+      "start": 30.0,
+      "end": 31.08,
+      "text": "at Roswell Park."
+    },
+    {
+      "start": 32.07,
+      "end": 37.07,
+      "text": "An ultrasound guided breast biopsy is a fast and minimally invasive procedure done here"
+    },
+    {
+      "start": 37.07,
+      "end": 38.57,
+      "text": "in our breast imaging center."
+    },
+    {
+      "start": 39.31,
+      "end": 39.97,
+      "text": "A needle biopsy."
+    },
+    {
+      "start": 40.0,
+      "end": 44.9,
+      "text": "is the best way to determine whether an abnormality in the breast is cancer."
+    },
+    {
+      "start": 45.69,
+      "end": 49.31,
+      "text": "This video aims to answer some common questions about the procedure."
+    },
+    {
+      "start": 50.58,
+      "end": 52.4,
+      "text": "How do I prepare for my breast biopsy?"
+    },
+    {
+      "start": 52.89,
+      "end": 54.73,
+      "text": "We encourage you to eat a light meal"
+    },
+    {
+      "start": 54.73,
+      "end": 56.49,
+      "text": "before coming in for your appointment."
+    },
+    {
+      "start": 57.12,
+      "end": 58.18,
+      "text": "You don't need to fast."
+    },
+    {
+      "start": 59.22,
+      "end": 59.92,
+      "text": "If you take love."
+    },
+    {
+      "start": 60.1,
+      "end": 65.7,
+      "text": "or aspirin, you may be asked to not take them for a period of time prior to your biopsy."
+    },
+    {
+      "start": 66.18,
+      "end": 69.97,
+      "text": "To reduce the risk of bruising and bleeding, however many bi-"
+    },
+    {
+      "start": 70.0,
+      "end": 75.55,
+      "text": "biopsy procedures and be safely performed with patients taking aspirin and blood thinners."
+    },
+    {
+      "start": 76.44,
+      "end": 79.96,
+      "text": "If you were not given specific instructions when you scheduled your biopsy."
+    },
+    {
+      "start": 80.0,
+      "end": 88.67,
+      "text": "appointment. Please call the Breast Imaging Center at 716-845-3014 to clarify."
+    },
+    {
+      "start": 90.26,
+      "end": 94.52,
+      "text": "plan to be with us for at least an hour from arrival to departure for the"
+    },
+    {
+      "start": 94.52,
+      "end": 99.81,
+      "text": "consent process the procedure and the mammogram. You do not"
+    },
+    {
+      "start": 100.0,
+      "end": 104.12,
+      "text": "to have someone drive you to the appointment since you will not be receiving"
+    },
+    {
+      "start": 104.12,
+      "end": 109.68,
+      "text": "sedation. You'll come to the breast imaging center on the second floor of the"
+    },
+    {
+      "start": 110.16,
+      "end": 115.99,
+      "text": "clinical science center. A radiologist will go over the procedure with you."
+    },
+    {
+      "start": 116.36,
+      "end": 119.72,
+      "text": "Get your consent to proceed and answer any questions you may have."
+    },
+    {
+      "start": 121.75,
+      "end": 125.69,
+      "text": "Be sure to let us know if you have any allergies to medications,"
+    },
+    {
+      "start": 126.37,
+      "end": 128.17,
+      "text": "leaning solutions, or adhesives."
+    },
+    {
+      "start": 129.39,
+      "end": 129.87,
+      "text": "What happens?"
+    },
+    {
+      "start": 130.0,
+      "end": 136.81,
+      "text": "at my breast biopsy appointment. We will use ultrasound to target or localize the abnormality"
+    },
+    {
+      "start": 136.81,
+      "end": 139.75,
+      "text": "in your breast that requires biopsy. Most?"
+    },
+    {
+      "start": 140.19,
+      "end": 144.03,
+      "text": "Ultrasound guided biopsies use a core needle biopsy device"
+    },
+    {
+      "start": 144.29,
+      "end": 146.13,
+      "text": "that takes small tissue samples."
+    },
+    {
+      "start": 147.08,
+      "end": 149.96,
+      "text": "A needle biopsy is much less invasive than..."
+    },
+    {
+      "start": 150.03,
+      "end": 154.91,
+      "text": "surgery and can be used to evaluate the types of abnormalities we see on ultrasound."
+    },
+    {
+      "start": 156.48,
+      "end": 159.92,
+      "text": "A technologist will accompany you throughout the procedure to help guide"
+    },
+    {
+      "start": 160.0,
+      "end": 166.39,
+      "text": "you and answer any questions you may have. You will be placed in the same position as you were"
+    },
+    {
+      "start": 166.39,
+      "end": 169.91,
+      "text": "when your diagnostic ultrasound was performed. You might laugh."
+    },
+    {
+      "start": 170.0,
+      "end": 176.94,
+      "text": "your back or your side. The radiologist will clean the area to be biopsyde and then numb it with"
+    },
+    {
+      "start": 176.94,
+      "end": 179.87,
+      "text": "local and aesthetic. Once the area is numb,"
+    },
+    {
+      "start": 180.0,
+      "end": 186.7,
+      "text": "they'll use an ultrasound probe to guide their sampling device to the biopsy target and retrieve the samples."
+    },
+    {
+      "start": 190.06,
+      "end": 194.58,
+      "text": "Next your radiologist will place a tiny clip at the exact location of the biopsy."
+    },
+    {
+      "start": 195.1,
+      "end": 199.66,
+      "text": "This will enable us to localize the area in case further treatment is needed."
+    },
+    {
+      "start": 200.7,
+      "end": 202.88,
+      "text": "A word about the clip, it's tiny."
+    },
+    {
+      "start": 203.52,
+      "end": 206.44,
+      "text": "You can't feel it and it will not set off metal detectors"
+    },
+    {
+      "start": 206.44,
+      "end": 207.74,
+      "text": "or airport scanners."
+    },
+    {
+      "start": 208.3,
+      "end": 209.8,
+      "text": "It is also MRI safe."
+    },
+    {
+      "start": 211.25,
+      "end": 214.57,
+      "text": "When finishing, we'll press on your skin at the incision site"
+    },
+    {
+      "start": 214.57,
+      "end": 216.56,
+      "text": "to ensure that it stops bleeding."
+    },
+    {
+      "start": 217.32,
+      "end": 219.96,
+      "text": "Close the wound with stary strips and cover the air."
+    },
+    {
+      "start": 220.0,
+      "end": 221.4,
+      "text": "with a protective dressing."
+    },
+    {
+      "start": 222.39,
+      "end": 225.67,
+      "text": "A final mammogram is taken to document the clip's final position."
+    },
+    {
+      "start": 230.45,
+      "end": 230.99,
+      "text": "And that's it."
+    },
+    {
+      "start": 231.48,
+      "end": 232.36,
+      "text": "I'm start to finish."
+    },
+    {
+      "start": 232.54,
+      "end": 234.7,
+      "text": "The procedure takes about 20 to 30 minutes."
+    },
+    {
+      "start": 236.28,
+      "end": 237.32,
+      "text": "Will the biopsy hurt?"
+    },
+    {
+      "start": 238.39,
+      "end": 239.83,
+      "text": "Thankfully, the answer is no."
+    },
+    {
+      "start": 240.29,
+      "end": 244.09,
+      "text": "Most patients do not experience any significant discomfort."
+    },
+    {
+      "start": 245.73,
+      "end": 246.67,
+      "text": "You will feel pressure."
+    },
+    {
+      "start": 247.64,
+      "end": 249.98,
+      "text": "Most patients report they are surprised, but with these..."
+    },
+    {
+      "start": 250.0,
+      "end": 254.8,
+      "text": "didn't feel. The injection of the local anesthetic is probably the thing you'll"
+    },
+    {
+      "start": 254.8,
+      "end": 259.12,
+      "text": "feel the most. You will initially feel a pinch and burning, but this passes very"
+    },
+    {
+      "start": 259.12,
+      "end": 259.46,
+      "text": "quickly."
+    },
+    {
+      "start": 260.42,
+      "end": 262.68,
+      "text": "The nemmy medicine lasts for two to four hours"
+    },
+    {
+      "start": 262.68,
+      "end": 264.48,
+      "text": "and it takes effect fast."
+    },
+    {
+      "start": 265.1,
+      "end": 267.52,
+      "text": "So the biopsy itself should be pain-free."
+    },
+    {
+      "start": 268.87,
+      "end": 269.97,
+      "text": "What can I expect at..."
+    },
+    {
+      "start": 270.03,
+      "end": 275.97,
+      "text": "the procedure. Before you leave the breast imaging center, we'll give you both verbal and written"
+    },
+    {
+      "start": 275.97,
+      "end": 279.87,
+      "text": "instructions about how to care for the biopsy area. As well as our"
+    },
+    {
+      "start": 280.0,
+      "end": 283.12,
+      "text": "contact information, should any questions or concerns arise."
+    },
+    {
+      "start": 283.89,
+      "end": 288.31,
+      "text": "If there is swelling or discomfort after the biopsy, place an ice pack against the area."
+    },
+    {
+      "start": 289.18,
+      "end": 289.98,
+      "text": "You should be able to"
+    },
+    {
+      "start": 290.13,
+      "end": 292.89,
+      "text": "feel the cold through any layers of clothing and the dressing."
+    },
+    {
+      "start": 295.69,
+      "end": 299.75,
+      "text": "If the biopsy incision bleeds apply firm pressure with two fingers."
+    },
+    {
+      "start": 300.0,
+      "end": 301.92,
+      "text": "across the dressing for a few minutes."
+    },
+    {
+      "start": 301.92,
+      "end": 305.74,
+      "text": "You can take a non aspirin pain reliever"
+    },
+    {
+      "start": 305.74,
+      "end": 308.02,
+      "text": "such as Tylenol if you have any pain."
+    },
+    {
+      "start": 309.32,
+      "end": 309.98,
+      "text": "Do not put..."
+    },
+    {
+      "start": 310.0,
+      "end": 314.22,
+      "text": "participate in strenuous exercise or activity on the day of procedure."
+    },
+    {
+      "start": 315.46,
+      "end": 319.97,
+      "text": "Leave the pressure dressing in place until the following morning, then gently remove it and"
+    },
+    {
+      "start": 320.0,
+      "end": 326.66,
+      "text": "shower or bathe as usual. You should be able to resume your normal activities. How long will it"
+    },
+    {
+      "start": 326.66,
+      "end": 329.61,
+      "text": "take to get the results? At Roswell Park."
+    },
+    {
+      "start": 330.1,
+      "end": 333.88,
+      "text": "All tests are done in-house by our breast pathology team."
+    },
+    {
+      "start": 335.32,
+      "end": 338.34,
+      "text": "We typically get results in two to three business days,"
+    },
+    {
+      "start": 338.81,
+      "end": 339.93,
+      "text": "sometimes even soon."
+    },
+    {
+      "start": 340.0,
+      "end": 345.56,
+      "text": "We'll call you as soon as your results are available to go through them and guide you through"
+    },
+    {
+      "start": 345.56,
+      "end": 347.32,
+      "text": "any next steps if needed."
+    },
+    {
+      "start": 349.02,
+      "end": 349.98,
+      "text": "If the results weren't..."
+    },
+    {
+      "start": 350.13,
+      "end": 351.75,
+      "text": "further investigation or treatment."
+    },
+    {
+      "start": 352.17,
+      "end": 354.79,
+      "text": "Roswell Park has a multi-disciplinary team"
+    },
+    {
+      "start": 354.79,
+      "end": 357.51,
+      "text": "of breast specialists, including radiologists,"
+    },
+    {
+      "start": 358.11,
+      "end": 359.25,
+      "text": "pathologists, surgeons,"
+    },
+    {
+      "start": 359.61,
+      "end": 359.97,
+      "text": "and..."
+    },
+    {
+      "start": 360.13,
+      "end": 364.19,
+      "text": "colleges, experts who are ready to guide you through the next steps."
+    },
+    {
+      "start": 365.16,
+      "end": 367.56,
+      "text": "Why should I get a breast biopsy instead of surgery?"
+    },
+    {
+      "start": 368.45,
+      "end": 369.97,
+      "text": "A breast biopsy is a quick..."
+    },
+    {
+      "start": 370.48,
+      "end": 375.06,
+      "text": "accurate procedure that will tell us whether a breast lesion is cancer or not"
+    },
+    {
+      "start": 375.06,
+      "end": 379.15,
+      "text": "and whether the area can be left alone or needs further management."
+    },
+    {
+      "start": 380.42,
+      "end": 386.06,
+      "text": "If breast surgery is needed, a biopsy performed ahead of time lets your doctor know exactly"
+    },
+    {
+      "start": 386.06,
+      "end": 387.88,
+      "text": "what type of surgery to perform."
+    },
+    {
+      "start": 389.16,
+      "end": 389.96,
+      "text": "If you're breast bi-"
+    },
+    {
+      "start": 390.0,
+      "end": 395.14,
+      "text": "is the knot, you'll likely not need surgery and return for routine screening mammogram."
+    },
+    {
+      "start": 397.4,
+      "end": 399.98,
+      "text": "We hope this video outlines what to expect in"
+    },
+    {
+      "start": 400.0,
+      "end": 405.68,
+      "text": "an ultrasound guided breast biopsy. If you have any questions or concerns, reach out to"
+    },
+    {
+      "start": 405.68,
+      "end": 408.02,
+      "text": "the breast imaging center at the number below."
+    }
+  ]
+}

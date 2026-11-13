@@ -1,0 +1,858 @@
+{
+  "video_id": "zV3hw_QbgK4",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/zV3hw_QbgK4/asr.txt",
+  "segments": [
+    {
+      "start": 11.66,
+      "end": 15.3,
+      "text": "Hello, my name is Phil Pereira, and I'm the emergency ultrasound coordinator at the"
+    },
+    {
+      "start": 15.3,
+      "end": 17.54,
+      "text": "New York Presbyterian Hospital in New York City."
+    },
+    {
+      "start": 17.88,
+      "end": 19.94,
+      "text": "And welcome to SoundBytes."
+    },
+    {
+      "start": 20.0,
+      "end": 24.94,
+      "text": "cases. In this soundbite's module, entitled part 2 of ultrasound guided central venous"
+    },
+    {
+      "start": 24.94,
+      "end": 29.86,
+      "text": "access, will look further onto the use of bedside ultrasound to make a more precise puncture attempt"
+    },
+    {
+      "start": 30.03,
+      "end": 32.95,
+      "text": "on the internal jugular vein during central venous cannulation."
+    },
+    {
+      "start": 33.41,
+      "end": 35.99,
+      "text": "As we discussed in part one, we first want to map out"
+    },
+    {
+      "start": 35.99,
+      "end": 37.93,
+      "text": "the anatomy of the internal jugular vein"
+    },
+    {
+      "start": 37.93,
+      "end": 39.97,
+      "text": "by orienting the probe in both short and..."
+    },
+    {
+      "start": 40.0,
+      "end": 44.02,
+      "text": "long-axis configurations to fully investigate the orientation of the vessel."
+    },
+    {
+      "start": 44.99,
+      "end": 48.67,
+      "text": "We want to use the dynamic technique for real-time guidance of the needle into the vein"
+    },
+    {
+      "start": 48.67,
+      "end": 49.97,
+      "text": "and for this one."
+    },
+    {
+      "start": 50.0,
+      "end": 54.82,
+      "text": "need to place the probe into a sterile sheath barrier to observe sterile precautions during"
+    },
+    {
+      "start": 54.82,
+      "end": 55.88,
+      "text": "the puncture attempt."
+    },
+    {
+      "start": 56.22,
+      "end": 59.44,
+      "text": "Here's a needle coming in underneath the probe in a short axis configuration."
+    },
+    {
+      "start": 60.38,
+      "end": 64.88,
+      "text": "Notice that the sheath needle is coming in underneath the probe at a 45-degree angle."
+    },
+    {
+      "start": 65.52,
+      "end": 69.36,
+      "text": "And notice that we're using the sheath needle to first determine the location of the internal"
+    },
+    {
+      "start": 69.36,
+      "end": 69.96,
+      "text": "Jogular V."
+    },
+    {
+      "start": 70.0,
+      "end": 71.76,
+      "text": "by the ring-down artifact."
+    },
+    {
+      "start": 72.32,
+      "end": 73.94,
+      "text": "We would use the same approach for the"
+    },
+    {
+      "start": 73.94,
+      "end": 76.3,
+      "text": "canulating needle coming in underneath the probe"
+    },
+    {
+      "start": 76.3,
+      "end": 77.88,
+      "text": "at a 45-degree angle."
+    },
+    {
+      "start": 78.62,
+      "end": 79.56,
+      "text": "As we discussed prior,"
+    },
+    {
+      "start": 80.0,
+      "end": 82.16,
+      "text": "The probe should be oriented in a side-to-side orientation"
+    },
+    {
+      "start": 82.16,
+      "end": 83.92,
+      "text": "where the marker down towards our left"
+    },
+    {
+      "start": 83.92,
+      "end": 85.22,
+      "text": "is we stand at the head of the bed,"
+    },
+    {
+      "start": 85.44,
+      "end": 88.16,
+      "text": "so it orients directly to the screen indicator dot,"
+    },
+    {
+      "start": 88.36,
+      "end": 89.94,
+      "text": "which will be oriented towards the left of."
+    },
+    {
+      "start": 90.0,
+      "end": 94.26,
+      "text": "the ultrasound screen. Here we're localizing the internal jugular vein using this short"
+    },
+    {
+      "start": 94.26,
+      "end": 99.22,
+      "text": "axis configuration. We're coming in underneath the probe with a sheet needle at that 45 degree"
+    },
+    {
+      "start": 99.22,
+      "end": 99.74,
+      "text": "replaying."
+    },
+    {
+      "start": 100.1,
+      "end": 104.46,
+      "text": "pushing in underneath, and notice the ring down artifact coming in directly on top of"
+    },
+    {
+      "start": 104.46,
+      "end": 108.14,
+      "text": "that internal jugular vein, telling us this is the correct puncture point."
+    },
+    {
+      "start": 109.05,
+      "end": 109.97,
+      "text": "This video clip shows..."
+    },
+    {
+      "start": 110.0,
+      "end": 113.52,
+      "text": "This is why a short-access orientation is an excellent starting point for cannulation"
+    },
+    {
+      "start": 113.52,
+      "end": 114.96,
+      "text": "of an internal jugular vein."
+    },
+    {
+      "start": 115.38,
+      "end": 119.88,
+      "text": "Here we see the ecogenic tip of the needle coming down and permeating the anti-"
+    },
+    {
+      "start": 120.0,
+      "end": 124.54,
+      "text": "here wall of the vessel, and we then note the ecogenic tip of the needle, squarely inside"
+    },
+    {
+      "start": 124.54,
+      "end": 129.1,
+      "text": "the lumen of the vessel, and we can see how using the short axis orientation can guide us"
+    },
+    {
+      "start": 129.1,
+      "end": 129.98,
+      "text": "in the side to side."
+    },
+    {
+      "start": 130.0,
+      "end": 134.32,
+      "text": "orientation on the patient's neck in terms of lateral needle orientation with"
+    },
+    {
+      "start": 134.32,
+      "end": 138.48,
+      "text": "regard to the surface down to the vessel lumen. When using the short"
+    },
+    {
+      "start": 138.48,
+      "end": 139.8,
+      "text": "or an access orientation, it's important."
+    },
+    {
+      "start": 140.0,
+      "end": 145.1,
+      "text": "to remember the effective probe slice on visualization of the needle tip. Here we see the probe position"
+    },
+    {
+      "start": 145.1,
+      "end": 149.98,
+      "text": "1 approximately along the needle shaft. And note in a schematic view towards the left, we see"
+    },
+    {
+      "start": 150.0,
+      "end": 154.26,
+      "text": "the needle, with a tip squarely inside the venus lumen. However, the ultrasound probe"
+    },
+    {
+      "start": 154.26,
+      "end": 158.1,
+      "text": "is positioned more proximally along the shaft of the needle, and thus on the ultrasound"
+    },
+    {
+      "start": 158.1,
+      "end": 159.88,
+      "text": "on view to the right, are we vision-"
+    },
+    {
+      "start": 160.0,
+      "end": 165.36,
+      "text": "is the needle above the vessel, even though the needle tip is squarely right within the vessel lumen."
+    },
+    {
+      "start": 165.9,
+      "end": 168.46,
+      "text": "So we get a false determination of the tip of the needle."
+    },
+    {
+      "start": 170.0,
+      "end": 173.78,
+      "text": "After we determine the location of the needle tip, we need to move the probe more distally"
+    },
+    {
+      "start": 173.78,
+      "end": 177.34,
+      "text": "as we advance the needle into the patient's neck along the course of the vessel."
+    },
+    {
+      "start": 177.74,
+      "end": 179.86,
+      "text": "Here we see the probe position more distally."
+    },
+    {
+      "start": 180.16,
+      "end": 182.66,
+      "text": "Now, in plain with a needle tip, in the schematic view"
+    },
+    {
+      "start": 182.66,
+      "end": 183.38,
+      "text": "towards the left."
+    },
+    {
+      "start": 183.92,
+      "end": 186.0,
+      "text": "And there we can see we can get an accurate determination"
+    },
+    {
+      "start": 186.0,
+      "end": 187.98,
+      "text": "of the location of the needle tip with regard"
+    },
+    {
+      "start": 187.98,
+      "end": 189.04,
+      "text": "to the venous lumen."
+    },
+    {
+      "start": 189.5,
+      "end": 189.98,
+      "text": "We see the o-"
+    },
+    {
+      "start": 190.0,
+      "end": 193.82,
+      "text": "ultrasound view towards the right, and now we'll be able to see the echogenic tip of the"
+    },
+    {
+      "start": 193.82,
+      "end": 196.26,
+      "text": "needle accurately positioned within the vessel lumen."
+    },
+    {
+      "start": 197.07,
+      "end": 199.93,
+      "text": "A second pitfall that must be avoided when canulating the inter-"
+    },
+    {
+      "start": 200.0,
+      "end": 203.72,
+      "text": "vaginal jugular vein under ultrasound guidance, is to make sure that the needle tip does not"
+    },
+    {
+      "start": 203.72,
+      "end": 206.76,
+      "text": "angle to the side of the vein during a cannulation attempt."
+    },
+    {
+      "start": 207.16,
+      "end": 209.98,
+      "text": "Even though we know the orientation of the vessel with regard to this..."
+    },
+    {
+      "start": 210.03,
+      "end": 217.63,
+      "text": "If we don't orient the cannulating needle along the course of the vessel, it can veer to the side of the vessel as shown in trajectories 1 and 2 here."
+    },
+    {
+      "start": 218.21,
+      "end": 219.97,
+      "text": "Now, if we know the course of the vessel..."
+    },
+    {
+      "start": 220.0,
+      "end": 223.92,
+      "text": "we can accurately position the needle so that it goes along the course of the vessel following"
+    },
+    {
+      "start": 223.92,
+      "end": 229.97,
+      "text": "trajectory 3 into the vanist lumen. The solution to avoiding this pitfall is to know the course of the vessel."
+    },
+    {
+      "start": 230.0,
+      "end": 231.86,
+      "text": "as it runs up and down the neck."
+    },
+    {
+      "start": 232.65,
+      "end": 234.11,
+      "text": "We can do this in two ways."
+    },
+    {
+      "start": 234.67,
+      "end": 238.61,
+      "text": "The first of which is to mark two points on the vessel using the short axis configuration."
+    },
+    {
+      "start": 239.29,
+      "end": 239.97,
+      "text": "The needle..."
+    },
+    {
+      "start": 240.0,
+      "end": 244.82,
+      "text": "then enter at that distal mark and aim towards the proximal mark passing along the course"
+    },
+    {
+      "start": 244.82,
+      "end": 246.24,
+      "text": "of the internal jugular vein."
+    },
+    {
+      "start": 247.53,
+      "end": 249.85,
+      "text": "We can effectively do the same thing by passing"
+    },
+    {
+      "start": 250.0,
+      "end": 254.44,
+      "text": "the probe in the long axis configuration and knowing how the needle should pass from"
+    },
+    {
+      "start": 254.73,
+      "end": 256.75,
+      "text": "the top of the neck down towards the chest."
+    },
+    {
+      "start": 257.53,
+      "end": 259.77,
+      "text": "Here we use a simulation model to show the correct approach."
+    },
+    {
+      "start": 260.0,
+      "end": 262.8,
+      "text": "for a short axis cannulation of the internal jugular vein."
+    },
+    {
+      "start": 263.48,
+      "end": 267.06,
+      "text": "Notice here we have the probe in a side to side or short axis orientation and the needle"
+    },
+    {
+      "start": 267.06,
+      "end": 269.64,
+      "text": "coming in at a 45-degree angle underneath the probe."
+    },
+    {
+      "start": 270.26,
+      "end": 274.5,
+      "text": "Now remember that we must move the probe disly to stay in plane with the needle tip as we"
+    },
+    {
+      "start": 274.5,
+      "end": 277.6,
+      "text": "advance it underneath the skin and into the internal jugular vein."
+    },
+    {
+      "start": 278.42,
+      "end": 279.98,
+      "text": "And as we do that, we notice that we've seen..."
+    },
+    {
+      "start": 280.06,
+      "end": 284.1,
+      "text": "excessively cannulated the internal jugular vein as shown by the red flow of blood."
+    },
+    {
+      "start": 284.74,
+      "end": 287.88,
+      "text": "And here we see a side orientation of the needle with regard to the probe."
+    },
+    {
+      "start": 289.5,
+      "end": 289.98,
+      "text": "Here's an actual..."
+    },
+    {
+      "start": 290.03,
+      "end": 294.41,
+      "text": "canulation of an internal jugular vein, notice that we see the deflection of the anterior"
+    },
+    {
+      "start": 294.41,
+      "end": 298.77,
+      "text": "wall of the vessel as a needle pushes down on that wall, followed by the appearance of"
+    },
+    {
+      "start": 298.77,
+      "end": 299.97,
+      "text": "the ecogenic tip of the..."
+    },
+    {
+      "start": 300.0,
+      "end": 301.66,
+      "text": "in the lumen of the vessel."
+    },
+    {
+      "start": 302.5,
+      "end": 303.46,
+      "text": "So let's watch that again."
+    },
+    {
+      "start": 303.92,
+      "end": 306.72,
+      "text": "Notice the deflection are pushing down of that anterior wall"
+    },
+    {
+      "start": 306.72,
+      "end": 309.44,
+      "text": "and then as the needle permeates that anterior wall,"
+    },
+    {
+      "start": 309.58,
+      "end": 309.98,
+      "text": "we see the..."
+    },
+    {
+      "start": 310.03,
+      "end": 312.87,
+      "text": "appearance of the echogenic tip of the needle within the vessel."
+    },
+    {
+      "start": 313.76,
+      "end": 315.84,
+      "text": "Here's a different patient receiving a central line,"
+    },
+    {
+      "start": 316.0,
+      "end": 317.82,
+      "text": "and notice in this clip we actually can visualize"
+    },
+    {
+      "start": 317.82,
+      "end": 319.9,
+      "text": "the echogenic needle coming from the surface."
+    },
+    {
+      "start": 320.0,
+      "end": 324.26,
+      "text": "and going all the way down through that anterior wall of the internal jugular vein"
+    },
+    {
+      "start": 324.26,
+      "end": 326.78,
+      "text": "to park directly into the lumen of the vessel."
+    },
+    {
+      "start": 328.04,
+      "end": 329.86,
+      "text": "This video sequence shows cannulation of the"
+    },
+    {
+      "start": 330.0,
+      "end": 332.46,
+      "text": "internal jugular vein using the long axis trajectory."
+    },
+    {
+      "start": 332.94,
+      "end": 335.6,
+      "text": "Notice we swivel the probe into the long axis orientation"
+    },
+    {
+      "start": 335.6,
+      "end": 337.5,
+      "text": "along the course of the internal jugular vein"
+    },
+    {
+      "start": 337.5,
+      "end": 339.5,
+      "text": "as it runs up and down the patient's neck."
+    },
+    {
+      "start": 340.16,
+      "end": 342.8,
+      "text": "convention again, the probe marker should be oriented towards"
+    },
+    {
+      "start": 342.8,
+      "end": 345.5,
+      "text": "distally or towards us as we stand at the head of the bed."
+    },
+    {
+      "start": 346.25,
+      "end": 348.99,
+      "text": "Notice the canulating needle will come in at a 45 degree angle"
+    },
+    {
+      "start": 348.99,
+      "end": 349.97,
+      "text": "under the distally"
+    },
+    {
+      "start": 350.0,
+      "end": 354.16,
+      "text": "aspect of the probe. Remembering that the disc will aspect of the probe or the marker"
+    },
+    {
+      "start": 354.16,
+      "end": 358.08,
+      "text": "will orient towards the left of the ultrasound screen, we can then note to look towards the"
+    },
+    {
+      "start": 358.08,
+      "end": 359.92,
+      "text": "left of the screen for the cannulating needle"
+    },
+    {
+      "start": 360.0,
+      "end": 361.26,
+      "text": "coming down to the vessel."
+    },
+    {
+      "start": 362.77,
+      "end": 366.57,
+      "text": "Here we're performing cannulation of the internal jugular vein on a simulation model."
+    },
+    {
+      "start": 367.15,
+      "end": 369.97,
+      "text": "Notice here the probe is oriented along the longitudinal or long..."
+    },
+    {
+      "start": 370.0,
+      "end": 374.08,
+      "text": "axis course of the internal jugular vein with the marker dot distal or towards the"
+    },
+    {
+      "start": 374.08,
+      "end": 378.78,
+      "text": "patient's head. Here we see the needle coming in at a 45-degree angle underneath the"
+    },
+    {
+      "start": 378.78,
+      "end": 379.98,
+      "text": "distal aspect of the probe."
+    },
+    {
+      "start": 380.0,
+      "end": 384.76,
+      "text": "This will allow us to see the entire aspect of the needle as it travels down from the"
+    },
+    {
+      "start": 384.76,
+      "end": 389.1,
+      "text": "surface all the way down to the venous lumen and canulates the internal jugular vein."
+    },
+    {
+      "start": 390.64,
+      "end": 393.76,
+      "text": "Here we see the long axis approach and the needle coming in from left to right."
+    },
+    {
+      "start": 394.18,
+      "end": 398.4,
+      "text": "And we note here how the long axis orientation is excellent for seeing vertical needle depth."
+    },
+    {
+      "start": 398.84,
+      "end": 399.98,
+      "text": "Note the needle coming..."
+    },
+    {
+      "start": 400.0,
+      "end": 403.72,
+      "text": "through the anterior wall of the vessel and now the needle tip squarely within the vessel"
+    },
+    {
+      "start": 403.72,
+      "end": 404.3,
+      "text": "loom in."
+    },
+    {
+      "start": 404.64,
+      "end": 409.28,
+      "text": "Here we can see how the long axis orientation allows us to plan the optimal depth for the"
+    },
+    {
+      "start": 409.28,
+      "end": 409.92,
+      "text": "needle tip with"
+    },
+    {
+      "start": 410.0,
+      "end": 413.86,
+      "text": "regard to the venous lumen to squarely secure a cannulation attempt."
+    },
+    {
+      "start": 414.72,
+      "end": 418.67,
+      "text": "Now, this is in difference to the short-axis orientation, which was better for lateral"
+    },
+    {
+      "start": 418.67,
+      "end": 419.97,
+      "text": "Neatle Orientation with..."
+    },
+    {
+      "start": 420.03,
+      "end": 425.19,
+      "text": "regard to the vessel lumen. So using a combination of short and long axis orientations will allow"
+    },
+    {
+      "start": 425.19,
+      "end": 429.89,
+      "text": "you to see both lateral and vertical needle orientations with regard to the vessel lumen."
+    },
+    {
+      "start": 431.79,
+      "end": 436.27,
+      "text": "Here's a video clip in the long axis configuration, emphasizing the fact that the long axis view"
+    },
+    {
+      "start": 436.27,
+      "end": 439.79,
+      "text": "is great for determining the needle depth, and here we see a needle"
+    },
+    {
+      "start": 440.0,
+      "end": 444.32,
+      "text": "coming in from left to right, and notice that we can visualize the needle tip smack within"
+    },
+    {
+      "start": 444.32,
+      "end": 445.2,
+      "text": "the vessel lumen."
+    },
+    {
+      "start": 446.13,
+      "end": 449.59,
+      "text": "Here's another long-axis clip of a patient who's receiving a central venous catheter."
+    },
+    {
+      "start": 450.0,
+      "end": 452.14,
+      "text": "and we see the catheter coming in from left to right."
+    },
+    {
+      "start": 452.56,
+      "end": 455.1,
+      "text": "Notice here the needle tip deflects the anterior wall"
+    },
+    {
+      "start": 455.1,
+      "end": 457.1,
+      "text": "of the vessel, pushing it down so that it"
+    },
+    {
+      "start": 457.1,
+      "end": 458.7,
+      "text": "almost meets the posterior wall."
+    },
+    {
+      "start": 459.38,
+      "end": 459.96,
+      "text": "Thus, the needle can..."
+    },
+    {
+      "start": 460.0,
+      "end": 462.28,
+      "text": "easily pass through both walls of the vessel."
+    },
+    {
+      "start": 462.99,
+      "end": 467.87,
+      "text": "Using the long axis technique, one can best adjust the needle tip depth and avoid puncturing"
+    },
+    {
+      "start": 467.87,
+      "end": 469.21,
+      "text": "the back wall of the vessel."
+    },
+    {
+      "start": 470.51,
+      "end": 472.65,
+      "text": "Here's another great use of the long axis technique."
+    },
+    {
+      "start": 473.03,
+      "end": 476.33,
+      "text": "Again, we're confirming that the needle tip is located within the vessel lumen."
+    },
+    {
+      "start": 476.75,
+      "end": 479.91,
+      "text": "And now we can watch as the guide wire passes through the tip of the needle"
+    },
+    {
+      "start": 480.0,
+      "end": 484.32,
+      "text": "and moves down, inferiorly, down the patient's internal jugular vein."
+    },
+    {
+      "start": 485.02,
+      "end": 488.72,
+      "text": "This is a great way of confirming that the guide wire is safely parked within the"
+    },
+    {
+      "start": 488.72,
+      "end": 489.82,
+      "text": "the aluminum of the vessel before."
+    },
+    {
+      "start": 490.06,
+      "end": 494.32,
+      "text": "writing the catheter. Let's end this module with a possible pitfall that can be avoided"
+    },
+    {
+      "start": 494.32,
+      "end": 498.36,
+      "text": "by first looking with ultrasound. Here we have a patient who's had a prior central"
+    },
+    {
+      "start": 498.36,
+      "end": 499.88,
+      "text": "line and we notice a thrum"
+    },
+    {
+      "start": 500.0,
+      "end": 505.22,
+      "text": "most internal jugular vein with echogenic material on top of the carotid artery. When we push"
+    },
+    {
+      "start": 505.22,
+      "end": 509.7,
+      "text": "down with the probe, the internal jugular vein failed to compress. In this patient, it would"
+    },
+    {
+      "start": 509.7,
+      "end": 509.98,
+      "text": "We'll be back."
+    },
+    {
+      "start": 510.0,
+      "end": 513.16,
+      "text": "to look for an alternative area for puncture of a central line."
+    },
+    {
+      "start": 514.37,
+      "end": 518.01,
+      "text": "In conclusion, thanks for tuning in for part 2 of ultrasound guided central venous"
+    },
+    {
+      "start": 518.01,
+      "end": 518.47,
+      "text": "access."
+    },
+    {
+      "start": 519.13,
+      "end": 519.79,
+      "text": "Using ultrasound?"
+    },
+    {
+      "start": 520.0,
+      "end": 521.9,
+      "text": "for dynamic real-time guidance of the needle"
+    },
+    {
+      "start": 521.9,
+      "end": 523.44,
+      "text": "into the internal jugular vein"
+    },
+    {
+      "start": 523.44,
+      "end": 526.34,
+      "text": "can potentially decrease the mechanical complications"
+    },
+    {
+      "start": 526.34,
+      "end": 527.86,
+      "text": "of the cannulation procedure."
+    },
+    {
+      "start": 528.18,
+      "end": 529.88,
+      "text": "Making the procedure a safer one."
+    },
+    {
+      "start": 530.03,
+      "end": 535.01,
+      "text": "our patients. We can employ a combination of both the short and long axis views of the"
+    },
+    {
+      "start": 535.01,
+      "end": 539.97,
+      "text": "internal jugular vein for optimal results for a cannulation attempt, so I hope you can"
+    }
+  ]
+}

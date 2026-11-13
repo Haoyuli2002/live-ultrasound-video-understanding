@@ -1,0 +1,160 @@
+{
+  "understanding": "Abdominal ultrasound teaching video showing equipment and synchronized probe placement and sonograms for several organs.",
+  "native_opened": [
+    100,
+    143,
+    420,
+    456,
+    550,
+    632,
+    633,
+    634,
+    635,
+    636,
+    637,
+    638,
+    639,
+    640,
+    644,
+    648,
+    652,
+    660
+  ],
+  "tasks": [
+    {
+      "qa_type": "current_observation",
+      "query_time": 456,
+      "answer_time": 456,
+      "checkpoints": [],
+      "question": "Where is the brightest irregular tissue within the kidney in this view?",
+      "reference_answer": "It is near the center of the kidney, surrounded by a darker rim.",
+      "visual_support": "The long-axis left kidney image shows a bright central region and darker surrounding tissue.",
+      "query_prefix_check": "The labeled kidney and its internal echoes are visible.",
+      "answer_prefix_check": "The bright region lies inside the outline, with darker tissue around it.",
+      "shortcut_risk": "Low. The label identifies the kidney but does not give the echo pattern.",
+      "task_id": "s3_remaining79_enQBV0rbQ2I_01",
+      "video_id": "enQBV0rbQ2I",
+      "split": "eval",
+      "language": "en",
+      "source_video": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/eval_full295/enQBV0rbQ2I.mp4",
+      "stage3_value": "high",
+      "visual_evidence": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/enQBV0rbQ2I/456.jpg",
+          "checkpoint": 456.0,
+          "source_pts_seconds": 455.92,
+          "resolution": [
+            640,
+            360
+          ]
+        }
+      ],
+      "asr_support_segments": [],
+      "query_decision": "ANSWER",
+      "answer_decision": "ANSWER",
+      "review_status": "accepted_targeted_native_frame_self_review",
+      "student_input_visibility": "not_checked"
+    },
+    {
+      "qa_type": "history_recall",
+      "query_time": 660,
+      "answer_time": 660,
+      "checkpoints": [
+        420
+      ],
+      "question": "In the earlier right kidney example, was the probe held at the flank like a side scan, or low on the front of the abdomen like it is now?",
+      "reference_answer": "It was held at the flank, farther to the side than in the bladder view.",
+      "visual_support": "The earlier split screen shows lateral probe placement, while the current bladder scan shows low anterior placement.",
+      "query_prefix_check": "The right kidney example precedes the current bladder view.",
+      "answer_prefix_check": "Both placements are visible in their respective frames.",
+      "shortcut_risk": "Moderate. Anatomy may make the position inferable.",
+      "task_id": "s3_remaining79_enQBV0rbQ2I_02",
+      "video_id": "enQBV0rbQ2I",
+      "split": "eval",
+      "language": "en",
+      "source_video": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/eval_full295/enQBV0rbQ2I.mp4",
+      "stage3_value": "high",
+      "visual_evidence": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/enQBV0rbQ2I/420.jpg",
+          "checkpoint": 420.0,
+          "source_pts_seconds": 419.92,
+          "resolution": [
+            640,
+            360
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/enQBV0rbQ2I/660.jpg",
+          "checkpoint": 660.0,
+          "source_pts_seconds": 659.92,
+          "resolution": [
+            640,
+            360
+          ]
+        }
+      ],
+      "asr_support_segments": [],
+      "query_decision": "ANSWER",
+      "answer_decision": "ANSWER",
+      "review_status": "accepted_targeted_native_frame_self_review",
+      "student_input_visibility": "not_checked"
+    },
+    {
+      "qa_type": "event_notification",
+      "query_time": 636,
+      "answer_time": 638,
+      "checkpoints": [
+        637
+      ],
+      "question": "Tell me when the bladder comes into view in this lower abdominal scan.",
+      "reference_answer": "The bladder is in view. It appears as a broad dark cavity with a bright curved back wall.",
+      "visual_support": "The lower abdominal title is still visible at 636 and 637; the first checked second with an ultrasound image is 638.",
+      "query_prefix_check": "The section title gives no visual confirmation of the bladder.",
+      "answer_prefix_check": "The dark cavity and its posterior boundary are clearly visible in the live scan panel.",
+      "shortcut_risk": "Moderate. The label confirms the organ once it is on screen.",
+      "task_id": "s3_remaining79_enQBV0rbQ2I_03",
+      "video_id": "enQBV0rbQ2I",
+      "split": "eval",
+      "language": "en",
+      "source_video": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/eval_full295/enQBV0rbQ2I.mp4",
+      "stage3_value": "high",
+      "visual_evidence": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/enQBV0rbQ2I/636.jpg",
+          "checkpoint": 636.0,
+          "source_pts_seconds": 635.92,
+          "resolution": [
+            640,
+            360
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/enQBV0rbQ2I/637.jpg",
+          "checkpoint": 637.0,
+          "source_pts_seconds": 636.92,
+          "resolution": [
+            640,
+            360
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/enQBV0rbQ2I/638.jpg",
+          "checkpoint": 638.0,
+          "source_pts_seconds": 637.92,
+          "resolution": [
+            640,
+            360
+          ]
+        }
+      ],
+      "asr_support_segments": [],
+      "query_decision": "WAIT",
+      "answer_decision": "ANSWER",
+      "review_status": "accepted_targeted_native_frame_self_review",
+      "student_input_visibility": "not_checked"
+    }
+  ],
+  "video_id": "enQBV0rbQ2I",
+  "review_scope": "Same-assistant review; sampled timeline, original-size key frames, and existing time-indexed ASR when available. No continuous replay or direct audio claim."
+}

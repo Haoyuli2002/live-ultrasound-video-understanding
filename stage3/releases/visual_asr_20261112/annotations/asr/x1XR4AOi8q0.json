@@ -1,0 +1,173 @@
+{
+  "video_id": "x1XR4AOi8q0",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/x1XR4AOi8q0/asr.txt",
+  "segments": [
+    {
+      "start": 8.12,
+      "end": 14.84,
+      "text": "A phased array transducer with an abdomen exam type is used to evaluate the chest cavity for the presence of fluid."
+    },
+    {
+      "start": 16.06,
+      "end": 19.62,
+      "text": "The procedure is best performed with the subject in a sitting position,"
+    },
+    {
+      "start": 20.12,
+      "end": 23.76,
+      "text": "leaning slightly forward to allow access to the posterior chest cavity."
+    },
+    {
+      "start": 24.68,
+      "end": 30.52,
+      "text": "The patient is instructed to breathe normally, and the transducer is placed in a long-axis orientation"
+    },
+    {
+      "start": 30.52,
+      "end": 37.08,
+      "text": "over the posterior chest wall at the eighth or ninth intercostal space in the posterior axillary line."
+    },
+    {
+      "start": 37.08,
+      "end": 40.56,
+      "text": "The orientation marker is directed to the patient's head."
+    },
+    {
+      "start": 41.14,
+      "end": 43.82,
+      "text": "The ribs are identified in the near field of the image"
+    },
+    {
+      "start": 43.82,
+      "end": 46.84,
+      "text": "as a bright interface with the posterior shadow."
+    },
+    {
+      "start": 47.48,
+      "end": 51.02,
+      "text": "The plural line is identified as a bright hyperocoic line"
+    },
+    {
+      "start": 51.02,
+      "end": 52.1,
+      "text": "between the rib shadows."
+    },
+    {
+      "start": 52.62,
+      "end": 55.4,
+      "text": "The two-infrost sliding movement of the visceral plura"
+    },
+    {
+      "start": 55.4,
+      "end": 57.62,
+      "text": "against the parietal plura with breathing"
+    },
+    {
+      "start": 57.62,
+      "end": 59.74,
+      "text": "generates the lung sliding sign."
+    },
+    {
+      "start": 60.22,
+      "end": 63.52,
+      "text": "The transducer is moved along the posterior axillary line"
+    },
+    {
+      "start": 63.52,
+      "end": 67.02,
+      "text": "to identify the bright, hyper-reflective diaphragm."
+    },
+    {
+      "start": 67.14,
+      "end": 69.76,
+      "text": "Fluid will appear as a dark anechoic area"
+    },
+    {
+      "start": 69.76,
+      "end": 71.9,
+      "text": "in the dependent area of the chest cavity."
+    },
+    {
+      "start": 72.34,
+      "end": 74.44,
+      "text": "Identify the borders of the fluid collection"
+    },
+    {
+      "start": 74.44,
+      "end": 76.12,
+      "text": "and the normal appearing lung."
+    },
+    {
+      "start": 77.24,
+      "end": 79.38,
+      "text": "A needle insertion site should be chosen"
+    },
+    {
+      "start": 79.38,
+      "end": 82.12,
+      "text": "in the posterior chest in a dependent area"
+    },
+    {
+      "start": 82.12,
+      "end": 83.18,
+      "text": "of the fluid collection."
+    },
+    {
+      "start": 84.1,
+      "end": 87.32,
+      "text": "Adjust the transducer so it is located between two ribs."
+    },
+    {
+      "start": 87.92,
+      "end": 90.6,
+      "text": "The needle should be inserted just below the center position"
+    },
+    {
+      "start": 90.6,
+      "end": 93.24,
+      "text": "of the transducer to allow the needle to pass"
+    },
+    {
+      "start": 93.24,
+      "end": 99.12,
+      "text": "just superior to the lower rib to avoid the neurovascular bundle which lies on the inferior surface"
+    },
+    {
+      "start": 99.12,
+      "end": 104.58,
+      "text": "of the rib. Follow the needle entry by slowly sliding the transducer in the direction of needle"
+    },
+    {
+      "start": 104.58,
+      "end": 111.27,
+      "text": "advancement. The needle will appear as a small bright hyprocoic dot. When the needle tip appears,"
+    },
+    {
+      "start": 111.77,
+      "end": 117.11,
+      "text": "the transducer should be advanced a short distance distally to follow the tip of the needle trajectory."
+    },
+    {
+      "start": 117.91,
+      "end": 123.39,
+      "text": "The needle is slowly advanced under direct ultrasound visualization until the tip is seen to"
+    },
+    {
+      "start": 123.39,
+      "end": 128.36,
+      "text": "indent and then punctured the parietal plura. The transducer should be moved"
+    },
+    {
+      "start": 128.36,
+      "end": 132.9,
+      "text": "slightly approximately and distally to confirm that the needle tip lies in the"
+    },
+    {
+      "start": 132.9,
+      "end": 134.7,
+      "text": "fluid collection in the chest cavity."
+    }
+  ]
+}

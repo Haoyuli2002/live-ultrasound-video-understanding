@@ -1,0 +1,193 @@
+{
+  "video_id": "ltEmNQ6yzi4",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/ltEmNQ6yzi4/asr.txt",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 5.02,
+      "text": "So for trans vaginal ultrasound, the reason we do this is the probe is higher frequency."
+    },
+    {
+      "start": 5.22,
+      "end": 9.46,
+      "text": "It's closer to the anatomy where we can see ovaries and adnexin, things in a lot more detail."
+    },
+    {
+      "start": 10.49,
+      "end": 13.91,
+      "text": "Patients should be in the dorsal orthotomy position, just like the pelvic exam."
+    },
+    {
+      "start": 14.35,
+      "end": 15.63,
+      "text": "Ideally, they have an empty bladder."
+    },
+    {
+      "start": 16.84,
+      "end": 22.3,
+      "text": "In real patients that aren't plastic, we use a cover and we have a sterilization or a high level"
+    },
+    {
+      "start": 22.3,
+      "end": 27.09,
+      "text": "disinfection procedure that we go through. For sagittal views, our probe is oriented like this."
+    },
+    {
+      "start": 27.09,
+      "end": 31.67,
+      "text": "So indicator is not real visible but it's on top and it looks almost like a pistol with"
+    },
+    {
+      "start": 31.67,
+      "end": 32.03,
+      "text": "a trigger."
+    },
+    {
+      "start": 32.19,
+      "end": 34.77,
+      "text": "Trigger should be down and this will give us sagittal views."
+    },
+    {
+      "start": 35.33,
+      "end": 41.59,
+      "text": "For our coronal views we rotate counterclockwise 90 degrees, indicators to the patient's right."
+    },
+    {
+      "start": 42.64,
+      "end": 47.74,
+      "text": "I usually start with in the sagittal orientation and the probe is placed in the vaginal vault"
+    },
+    {
+      "start": 47.74,
+      "end": 52.99,
+      "text": "and our eyes need to go on the screen as soon as we start to advance the probe."
+    },
+    {
+      "start": 57.87,
+      "end": 64.21,
+      "text": "And in most patients with an antivirted urus that's antiflexed, we'll see the ure and"
+    },
+    {
+      "start": 64.21,
+      "end": 72.76,
+      "text": "fundus at the top of the screen, and we'll remember that the abdomen is to the left of"
+    },
+    {
+      "start": 72.76,
+      "end": 75.98,
+      "text": "the screen, and the patient's back is to the right of the screen."
+    },
+    {
+      "start": 76.66,
+      "end": 94.66,
+      "text": "So this is the floor back here, posterior cul-de-sac, and we rock the probe towards the ceiling"
+    },
+    {
+      "start": 94.66,
+      "end": 96.92,
+      "text": "we see the bladder and the anterior structures."
+    },
+    {
+      "start": 109.72,
+      "end": 111.54,
+      "text": "So these are anterior structures up here."
+    },
+    {
+      "start": 111.54,
+      "end": 115.97,
+      "text": "When we point the probe down towards the floor, then we see posterior structures."
+    },
+    {
+      "start": 116.76,
+      "end": 120.26,
+      "text": "We want to line up so that we see the uterine fundus and the endometrial stripe."
+    },
+    {
+      "start": 130.48,
+      "end": 134.84,
+      "text": "And then to examine those structures, we fan from side to side till those structures disappear."
+    },
+    {
+      "start": 141.37,
+      "end": 145.77,
+      "text": "And then frequently to see the posterior cul-de-sac, we need to point towards the floor and"
+    },
+    {
+      "start": 145.77,
+      "end": 147.03,
+      "text": "fan from side to side again."
+    },
+    {
+      "start": 151.53,
+      "end": 155.55,
+      "text": "We always come back to the midpoint, and then from there we'll go to coronal views."
+    },
+    {
+      "start": 156.37,
+      "end": 158.19,
+      "text": "So indicators now towards the patient's right."
+    },
+    {
+      "start": 158.19,
+      "end": 164.38,
+      "text": "and what we see is patients right on this side of the screen, the patient's left on this side,"
+    },
+    {
+      "start": 165.46,
+      "end": 171.18,
+      "text": "and now our examination is fanning from ceiling to floor. So as we point the probe towards the"
+    },
+    {
+      "start": 171.18,
+      "end": 180.74,
+      "text": "ceiling, we see the bladder up here, and then as we fan down through the uterus and point the"
+    },
+    {
+      "start": 180.74,
+      "end": 184.54,
+      "text": "probe to the floor, we see the posterior cul-de-sac, and this is the simulated free fluid in the"
+    },
+    {
+      "start": 184.54,
+      "end": 192.16,
+      "text": "cul-de-sac. To identify the adnexin, the ovaries, we come to the midline, we fan over to one side,"
+    },
+    {
+      "start": 192.16,
+      "end": 198.53,
+      "text": "we need to apply some pressure into the lateral fornix and fan from sealing the floor to examine"
+    },
+    {
+      "start": 198.53,
+      "end": 207.16,
+      "text": "the ovary and the adnexa completely until it disappears in each orientation. So it needs to"
+    },
+    {
+      "start": 207.16,
+      "end": 212.46,
+      "text": "disappear towards the ceiling and disappear towards the floor. And if we need to apply color or"
+    },
+    {
+      "start": 212.46,
+      "end": 222.57,
+      "text": "anything, we can do that. Then we'll back out a little bit, slide to the lateral fornix on the other"
+    },
+    {
+      "start": 222.57,
+      "end": 229.88,
+      "text": "side, apply some pressure again and fan all the way through from sealing the floor until the ovary"
+    },
+    {
+      "start": 229.88,
+      "end": 247.01,
+      "text": "disappears in each plane and again if we needed to stop and apply color or do"
+    },
+    {
+      "start": 247.01,
+      "end": 252.0,
+      "text": "Doppler measurements we could do that and that's pretty much the exam."
+    }
+  ]
+}

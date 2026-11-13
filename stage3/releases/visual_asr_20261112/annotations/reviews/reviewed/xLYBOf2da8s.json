@@ -1,0 +1,156 @@
+{
+  "understanding": "Abdominal ultrasound walkthrough covering liver, gallbladder, pancreas and spleen with labeled and unannotated scan examples.",
+  "native_opened": [
+    70,
+    284,
+    298,
+    304,
+    308,
+    309,
+    310,
+    311,
+    312,
+    313,
+    314,
+    315,
+    320,
+    665
+  ],
+  "tasks": [
+    {
+      "qa_type": "current_observation",
+      "query_time": 284,
+      "answer_time": 284,
+      "checkpoints": [],
+      "question": "Do the large color Doppler patches lie inside the long dark gallbladder lumen or beside it?",
+      "reference_answer": "They lie beside it. The conspicuous blue and orange patches sit outside the dark lumen near its lower-right end.",
+      "visual_support": "The dark elongated lumen is outlined by tissue and the conspicuous color patches are outside it.",
+      "query_prefix_check": "Both the lumen and colored regions are visible at the query.",
+      "answer_prefix_check": "The patches can be located relative to the lumen boundary.",
+      "shortcut_risk": "Moderate. Color alone does not locate the patches relative to the lumen.",
+      "task_id": "s3_remaining79_xLYBOf2da8s_01",
+      "video_id": "xLYBOf2da8s",
+      "split": "eval",
+      "language": "en",
+      "source_video": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/eval_full295/xLYBOf2da8s.mp4",
+      "stage3_value": "high",
+      "visual_evidence": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/xLYBOf2da8s/284.jpg",
+          "checkpoint": 284.0,
+          "source_pts_seconds": 283.92,
+          "resolution": [
+            640,
+            360
+          ]
+        }
+      ],
+      "asr_support_segments": [],
+      "query_decision": "ANSWER",
+      "answer_decision": "ANSWER",
+      "review_status": "accepted_targeted_native_frame_self_review",
+      "student_input_visibility": "not_checked"
+    },
+    {
+      "qa_type": "temporal_comparison",
+      "query_time": 312,
+      "answer_time": 314,
+      "checkpoints": [
+        313
+      ],
+      "question": "When the next gallbladder view appears, how does the long axis of the dark lumen change on screen?",
+      "reference_answer": "It goes from slanting downward to the right to slanting upward to the right.",
+      "visual_support": "The Doppler view through 313 slopes from upper left to lower right. The grayscale view at 314 slopes in the opposite direction.",
+      "query_prefix_check": "Only the initial orientation is visible at 312.",
+      "answer_prefix_check": "The new grayscale view shows the reversed slope by 314.",
+      "shortcut_risk": "Low. The plane labels do not specify the screen slope.",
+      "task_id": "s3_remaining79_xLYBOf2da8s_02",
+      "video_id": "xLYBOf2da8s",
+      "split": "eval",
+      "language": "en",
+      "source_video": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/eval_full295/xLYBOf2da8s.mp4",
+      "stage3_value": "high",
+      "visual_evidence": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/xLYBOf2da8s/312.jpg",
+          "checkpoint": 312.0,
+          "source_pts_seconds": 311.92,
+          "resolution": [
+            640,
+            360
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/xLYBOf2da8s/313.jpg",
+          "checkpoint": 313.0,
+          "source_pts_seconds": 312.92,
+          "resolution": [
+            640,
+            360
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/xLYBOf2da8s/314.jpg",
+          "checkpoint": 314.0,
+          "source_pts_seconds": 313.92,
+          "resolution": [
+            640,
+            360
+          ]
+        }
+      ],
+      "asr_support_segments": [],
+      "query_decision": "WAIT",
+      "answer_decision": "ANSWER",
+      "review_status": "accepted_targeted_native_frame_self_review",
+      "student_input_visibility": "not_checked"
+    },
+    {
+      "qa_type": "history_recall",
+      "query_time": 665,
+      "answer_time": 665,
+      "checkpoints": [
+        70
+      ],
+      "question": "In the earlier annotated aorta view, was the pancreas outline above or below the large red aorta overlay?",
+      "reference_answer": "It was above the red aorta overlay, toward the upper right of the annotated scan.",
+      "visual_support": "The outlined pancreas lies above the red aorta and to the right of the outlined left liver lobe.",
+      "query_prefix_check": "The annotated aorta view precedes the spleen scan.",
+      "answer_prefix_check": "The earlier overlay shows the relative position directly.",
+      "shortcut_risk": "Moderate. The anatomy can provide a clue.",
+      "task_id": "s3_remaining79_xLYBOf2da8s_03",
+      "video_id": "xLYBOf2da8s",
+      "split": "eval",
+      "language": "en",
+      "source_video": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/eval_full295/xLYBOf2da8s.mp4",
+      "stage3_value": "high",
+      "visual_evidence": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/xLYBOf2da8s/70.jpg",
+          "checkpoint": 70.0,
+          "source_pts_seconds": 69.92,
+          "resolution": [
+            640,
+            360
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/xLYBOf2da8s/665.jpg",
+          "checkpoint": 665.0,
+          "source_pts_seconds": 664.92,
+          "resolution": [
+            640,
+            360
+          ]
+        }
+      ],
+      "asr_support_segments": [],
+      "query_decision": "ANSWER",
+      "answer_decision": "ANSWER",
+      "review_status": "accepted_targeted_native_frame_self_review",
+      "student_input_visibility": "not_checked"
+    }
+  ],
+  "video_id": "xLYBOf2da8s",
+  "review_scope": "Same-assistant review; sampled timeline, original-size key frames, and existing time-indexed ASR when available. No continuous replay or direct audio claim."
+}

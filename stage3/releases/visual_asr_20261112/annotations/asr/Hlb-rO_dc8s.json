@@ -1,0 +1,478 @@
+{
+  "video_id": "Hlb-rO_dc8s",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/eval/Hlb-rO_dc8s/asr.txt",
+  "segments": [
+    {
+      "start": 0.67,
+      "end": 7.52,
+      "text": "Hello everyone, this is Dr. Sam and this video is about West Ultra Sound Pro Positioning."
+    },
+    {
+      "start": 9.38,
+      "end": 9.96,
+      "text": "These are..."
+    },
+    {
+      "start": 10.0,
+      "end": 19.62,
+      "text": "schematic diagrams of the right and left breast. This circle represents the entire breast."
+    },
+    {
+      "start": 22.02,
+      "end": 29.35,
+      "text": "This second circle is the Ayurveda and the third smallest circle is the Nipole."
+    },
+    {
+      "start": 31.38,
+      "end": 39.91,
+      "text": "each breast is divided into 4 quadrants for the wide breast, the upper"
+    },
+    {
+      "start": 40.0,
+      "end": 49.49,
+      "text": "outer and lower outer quadrants are towards the axilla and the upper inner and lower inner"
+    },
+    {
+      "start": 50.29,
+      "end": 58.57,
+      "text": "towards the sternum. A clock system is used in breast imaging."
+    },
+    {
+      "start": 60.0,
+      "end": 66.56,
+      "text": "makes it easier to locate pathologies and pinpoint their locations within the breast."
+    },
+    {
+      "start": 68.16,
+      "end": 69.88,
+      "text": "the nipple is taken as the"
+    },
+    {
+      "start": 70.0,
+      "end": 78.12,
+      "text": "center of the clock and the numbers are assigned in a similar fashion to that of a clock."
+    },
+    {
+      "start": 80.22,
+      "end": 89.36,
+      "text": "12 o'clock position is towards the superior margin of the breast or the right breast, the"
+    },
+    {
+      "start": 89.36,
+      "end": 89.88,
+      "text": "That's true, look, look."
+    },
+    {
+      "start": 90.0,
+      "end": 97.0,
+      "text": "position will be at the left margin of the right breast that will be towards the sternum"
+    },
+    {
+      "start": 98.92,
+      "end": 99.94,
+      "text": "that real clock is"
+    },
+    {
+      "start": 100.0,
+      "end": 109.97,
+      "text": "position for the left press will be towards the axila, the 6 o clock position will be towards the"
+    },
+    {
+      "start": 110.0,
+      "end": 119.11,
+      "text": "in fear margin of the breast and the 9 o'clock position will be towards the axilla in the right breast."
+    },
+    {
+      "start": 121.09,
+      "end": 124.07,
+      "text": "and it will be towards the sternum in the left breast."
+    },
+    {
+      "start": 127.23,
+      "end": 129.87,
+      "text": "Now we will see how to scan the breast."
+    },
+    {
+      "start": 130.51,
+      "end": 139.8,
+      "text": "in sagittal view, this diagram will show the proposition and this will be the image."
+    },
+    {
+      "start": 140.1,
+      "end": 149.87,
+      "text": "this white box is the hard cross on probe and this red dot is the indicator or the"
+    },
+    {
+      "start": 150.0,
+      "end": 159.98,
+      "text": "orientation marker. This pro positioning will be of the right breast. The probe is placed in the"
+    },
+    {
+      "start": 160.0,
+      "end": 169.61,
+      "text": "superior lateral portion of the breast at the anterior axilla in a sagittal orientation."
+    },
+    {
+      "start": 170.0,
+      "end": 179.87,
+      "text": "A linear probe is used for best imaging, this is the image formed, the topmost."
+    },
+    {
+      "start": 180.0,
+      "end": 189.25,
+      "text": "hyperequoid layer is the skin below the skin will be the hyperequoid subcutaneous fat."
+    },
+    {
+      "start": 191.98,
+      "end": 199.91,
+      "text": "These small hyper-quake lines are the Cooper ligaments below the fat layer."
+    },
+    {
+      "start": 200.0,
+      "end": 207.74,
+      "text": "will be the fibro glandular tissue. It has mixed aquagenicity."
+    },
+    {
+      "start": 210.0,
+      "end": 218.78,
+      "text": "below this layer is the retro memory zone in most cases it is compressed when we apply"
+    },
+    {
+      "start": 218.78,
+      "end": 219.98,
+      "text": "Pressure with the Pro."
+    },
+    {
+      "start": 220.0,
+      "end": 229.86,
+      "text": "and these straight edge structures are the chest wall muscles ribs and ribs."
+    },
+    {
+      "start": 230.1,
+      "end": 239.88,
+      "text": "shadows are found here. Move the probe towards the center of the breast and keep it."
+    },
+    {
+      "start": 240.8,
+      "end": 246.9,
+      "text": "Above the nipple, in this manner, you will get this type of image."
+    },
+    {
+      "start": 248.31,
+      "end": 249.91,
+      "text": "You can see all the layers"
+    },
+    {
+      "start": 250.06,
+      "end": 259.52,
+      "text": "very clearly, the skin is at the top, below the skin is the hypoechoic subcutaneous"
+    },
+    {
+      "start": 259.52,
+      "end": 259.9,
+      "text": "is fair."
+    },
+    {
+      "start": 261.31,
+      "end": 269.24,
+      "text": "These are the Cooper ligaments. This is the fibrogland load tissue with mixed aquagenicity."
+    },
+    {
+      "start": 271.34,
+      "end": 279.97,
+      "text": "and you can see a thin layer of retro memories on the striated chest wall muscles are seen here."
+    },
+    {
+      "start": 280.0,
+      "end": 289.97,
+      "text": "and these are the ribs with rib shadows. Move the probe to work."
+    },
+    {
+      "start": 290.0,
+      "end": 299.96,
+      "text": "the parasitonal region to scan the upper inner quadrant of the breast. This is the image for"
+    },
+    {
+      "start": 300.0,
+      "end": 309.44,
+      "text": "move the probe downwards and this will be the image formed"
+    },
+    {
+      "start": 311.98,
+      "end": 319.97,
+      "text": "This is the subcutaneous sphere. It is hypoic weak, a fibroglenum."
+    },
+    {
+      "start": 320.0,
+      "end": 329.72,
+      "text": "tissue is down here and these are the chest wall muscles and move the"
+    },
+    {
+      "start": 330.29,
+      "end": 339.98,
+      "text": "towards the nipple to scan the center of the breast, the probe towards the nipple."
+    },
+    {
+      "start": 340.0,
+      "end": 348.04,
+      "text": "interior auxiliary line like this and you will get this type of image."
+    },
+    {
+      "start": 350.35,
+      "end": 359.94,
+      "text": "This is the subcutaneous fat and this layer is the fibro glandular tissue and down."
+    },
+    {
+      "start": 360.0,
+      "end": 365.76,
+      "text": "On here are the chest wall muscles and these are the rib shadows."
+    },
+    {
+      "start": 365.76,
+      "end": 369.9,
+      "text": "Shift the Pro button"
+    },
+    {
+      "start": 370.0,
+      "end": 378.84,
+      "text": "downwards, you scan near the pedestal region and you will get this type of image."
+    },
+    {
+      "start": 380.67,
+      "end": 388.22,
+      "text": "The subcutaneous fat is over here and just below that is the fibroglandular tissue."
+    },
+    {
+      "start": 390.67,
+      "end": 396.59,
+      "text": "And down here are the chest muscles, and these are the rib shadows."
+    },
+    {
+      "start": 399.34,
+      "end": 399.98,
+      "text": "And uh..."
+    },
+    {
+      "start": 400.48,
+      "end": 409.98,
+      "text": "lower center half of the breast by keeping the probe below the nipple in this manner in this sagittal limit."
+    },
+    {
+      "start": 410.03,
+      "end": 417.16,
+      "text": "The indicator here is towards the Nepal, it will be at this location."
+    },
+    {
+      "start": 420.1,
+      "end": 421.36,
+      "text": "Move the transducer,"
+    },
+    {
+      "start": 421.94,
+      "end": 426.59,
+      "text": "laterally to scan the lower outer quad range"
+    },
+    {
+      "start": 426.59,
+      "end": 429.58,
+      "text": "this will be the image formed."
+    },
+    {
+      "start": 432.43,
+      "end": 436.31,
+      "text": "Now we will see how to perform radio scanning."
+    },
+    {
+      "start": 438.24,
+      "end": 439.96,
+      "text": "The clock positions are in"
+    },
+    {
+      "start": 440.0,
+      "end": 449.92,
+      "text": "the indicator will be towards the nipple. This is the pro placement or a 1"
+    },
+    {
+      "start": 450.0,
+      "end": 457.95,
+      "text": "Now to our position, these are the structures seen, this is the fibroglannular tissue"
+    },
+    {
+      "start": 461.06,
+      "end": 469.98,
+      "text": "the chest wall muscles. There is a 3 o'clock position. This will be the"
+    },
+    {
+      "start": 470.0,
+      "end": 479.69,
+      "text": "the placement, the nipple will be towards the left side of the image, sometime"
+    },
+    {
+      "start": 480.0,
+      "end": 484.22,
+      "text": "The nipple may produce a posterior acoustic shadow."
+    },
+    {
+      "start": 487.56,
+      "end": 489.32,
+      "text": "This is a pro placement pole."
+    },
+    {
+      "start": 490.13,
+      "end": 499.26,
+      "text": "a 6 o clock position, you will get this type of image, this layer is the subcutaneous"
+    },
+    {
+      "start": 499.26,
+      "end": 499.68,
+      "text": "is bad."
+    },
+    {
+      "start": 500.96,
+      "end": 508.44,
+      "text": "And these are the fibro glandular tissues and down here, these are the chest wall muscles."
+    },
+    {
+      "start": 511.22,
+      "end": 518.76,
+      "text": "This is the pro placement or 7 o'clock position and this will be the image formed."
+    },
+    {
+      "start": 520.13,
+      "end": 523.34,
+      "text": "The nipo can sometimes produce shadowing."
+    },
+    {
+      "start": 525.17,
+      "end": 527.37,
+      "text": "The fibroglendate tissue is seen here."
+    },
+    {
+      "start": 528.91,
+      "end": 529.75,
+      "text": "It has mixed."
+    },
+    {
+      "start": 530.03,
+      "end": 539.65,
+      "text": "Aquagenicity and down here, these are the chest wall muscles, this transducer placement"
+    },
+    {
+      "start": 540.0,
+      "end": 543.05,
+      "text": "is for an 8 o'clock position."
+    },
+    {
+      "start": 544.61,
+      "end": 548.76,
+      "text": "In this image, we can see a prominent nipple shadow."
+    },
+    {
+      "start": 551.76,
+      "end": 559.97,
+      "text": "This transducer placement is for a 9 o'clock position, we see a thicker layer of the"
+    },
+    {
+      "start": 560.1,
+      "end": 568.8,
+      "text": "in his fat and these are the fibroglyndylate tissues and here are the chest wall muscles."
+    },
+    {
+      "start": 571.38,
+      "end": 573.16,
+      "text": "Here is a 10 o'clock position."
+    },
+    {
+      "start": 575.77,
+      "end": 579.77,
+      "text": "The 5-row granular tissues in this image are very dense."
+    },
+    {
+      "start": 580.0,
+      "end": 589.98,
+      "text": "we see a lot of hyperepoic areas and this is the nipple shadow, a nipple shadow"
+    },
+    {
+      "start": 590.0,
+      "end": 594.08,
+      "text": "Shadow is not always seen but it is present in some cases."
+    },
+    {
+      "start": 596.78,
+      "end": 599.72,
+      "text": "Now we will see how to scan the nipple."
+    },
+    {
+      "start": 600.0,
+      "end": 609.91,
+      "text": "have you all are complex, it is done by placing the probe over or near the nipple by key."
+    },
+    {
+      "start": 610.0,
+      "end": 618.18,
+      "text": "Having the probe in this manner we can get this type of image, we see some shadowing due"
+    },
+    {
+      "start": 618.18,
+      "end": 618.88,
+      "text": "to the nipple."
+    },
+    {
+      "start": 620.83,
+      "end": 623.27,
+      "text": "and this is the fibroglandular tissue"
+    },
+    {
+      "start": 623.27,
+      "end": 627.47,
+      "text": "and down here are the chest wall muscles."
+    },
+    {
+      "start": 630.1,
+      "end": 639.15,
+      "text": "This is a slightly different proposition for scanning the nipple ariolar complex and this is the image formed."
+    },
+    {
+      "start": 642.08,
+      "end": 648.59,
+      "text": "In this proposition, the indicator is directed downwards towards the patient's feet."
+    },
+    {
+      "start": 650.13,
+      "end": 654.76,
+      "text": "and we get this image of the nipple aerial or complex."
+    },
+    {
+      "start": 657.2,
+      "end": 659.98,
+      "text": "Here is another pro position for scanning the..."
+    },
+    {
+      "start": 660.0,
+      "end": 668.46,
+      "text": "nipple area or complex. These are the fibro glandular tissues and these"
+    },
+    {
+      "start": 668.46,
+      "end": 669.98,
+      "text": "These private structures are the"
+    },
+    {
+      "start": 670.0,
+      "end": 678.86,
+      "text": "best wall muscles. Thank you so much for watching. Please subscribe and stay tuned for more"
+    },
+    {
+      "start": 678.86,
+      "end": 679.78,
+      "text": "Imaging Video"
+    },
+    {
+      "start": 680.03,
+      "end": 680.35,
+      "text": "I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry"
+    }
+  ]
+}

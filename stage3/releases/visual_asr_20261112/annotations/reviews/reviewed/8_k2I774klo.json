@@ -1,0 +1,115 @@
+{
+  "understanding": "Neuraxial ultrasound tutorial moving from vertebral anatomy overlays to sonographic examples with external probe positioning.",
+  "native_opened": [
+    206,
+    220,
+    308,
+    315,
+    317,
+    318,
+    319,
+    320
+  ],
+  "tasks": [
+    {
+      "qa_type": "current_observation",
+      "query_time": 220,
+      "answer_time": 220,
+      "checkpoints": [],
+      "question": "On the transverse vertebral image, how are the two highlighted articular processes positioned relative to the spinous process?",
+      "reference_answer": "They form paired bright peaks, one on either side of the central spinous process, and sit deeper in the image.",
+      "visual_support": "The blue tracing marks two lateral peaks and the central gray overlay marks the spinous process.",
+      "query_prefix_check": "The three structures are highlighted in the current frame.",
+      "answer_prefix_check": "The paired peaks are lateral and lower in the sonographic image.",
+      "shortcut_risk": "Moderate. Anatomy can suggest the relationship, and the overlay makes it explicit.",
+      "task_id": "s3_remaining79_8_k2I774klo_01",
+      "video_id": "8_k2I774klo",
+      "split": "train",
+      "language": "en",
+      "source_video": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/8_k2I774klo.mp4",
+      "stage3_value": "medium",
+      "visual_evidence": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/8_k2I774klo/220.jpg",
+          "checkpoint": 220.0,
+          "source_pts_seconds": 219.928042,
+          "resolution": [
+            1920,
+            1080
+          ]
+        }
+      ],
+      "asr_support_segments": [],
+      "query_decision": "ANSWER",
+      "answer_decision": "ANSWER",
+      "review_status": "accepted_targeted_native_frame_self_review",
+      "student_input_visibility": "not_checked"
+    },
+    {
+      "qa_type": "temporal_comparison",
+      "query_time": 317,
+      "answer_time": 319,
+      "checkpoints": [
+        315,
+        318
+      ],
+      "question": "As the lumbar sweep settles on the next marked window, how does the bright opening between the dark shadows compare with the earlier L4\u2013L5 window?",
+      "reference_answer": "The opening is broader near its top in the next view. At L4\u2013L5 it looks like a narrower bright column between two shadows.",
+      "visual_support": "At 315 the column is narrow. At 317 and 318 the scan is moving and the next window has not been marked. At 319 the broad upper portion is visible below the arrow.",
+      "query_prefix_check": "The comparison needs the settled and marked next window. At the query the image is still changing.",
+      "answer_prefix_check": "The two dark shadows and the intervening wider upper opening are visible with the next marker.",
+      "shortcut_risk": "Moderate. The marker identifies the comparison frame, while the morphology comes from the scan.",
+      "task_id": "s3_remaining79_8_k2I774klo_02",
+      "video_id": "8_k2I774klo",
+      "split": "train",
+      "language": "en",
+      "source_video": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/8_k2I774klo.mp4",
+      "stage3_value": "medium",
+      "visual_evidence": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/8_k2I774klo/315.jpg",
+          "checkpoint": 315.0,
+          "source_pts_seconds": 314.939625,
+          "resolution": [
+            1920,
+            1080
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/8_k2I774klo/317.jpg",
+          "checkpoint": 317.0,
+          "source_pts_seconds": 316.941625,
+          "resolution": [
+            1920,
+            1080
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/8_k2I774klo/318.jpg",
+          "checkpoint": 318.0,
+          "source_pts_seconds": 317.942625,
+          "resolution": [
+            1920,
+            1080
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/8_k2I774klo/319.jpg",
+          "checkpoint": 319.0,
+          "source_pts_seconds": 318.943625,
+          "resolution": [
+            1920,
+            1080
+          ]
+        }
+      ],
+      "asr_support_segments": [],
+      "query_decision": "WAIT",
+      "answer_decision": "ANSWER",
+      "review_status": "accepted_targeted_native_frame_self_review",
+      "student_input_visibility": "not_checked"
+    }
+  ],
+  "video_id": "8_k2I774klo",
+  "review_scope": "Same-assistant review; sampled timeline, original-size key frames, and existing time-indexed ASR when available. No continuous replay or direct audio claim."
+}

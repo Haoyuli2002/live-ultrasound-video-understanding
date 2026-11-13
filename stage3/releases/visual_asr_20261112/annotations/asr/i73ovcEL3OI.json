@@ -1,0 +1,1118 @@
+{
+  "video_id": "i73ovcEL3OI",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/i73ovcEL3OI/asr.txt",
+  "segments": [
+    {
+      "start": 6.5,
+      "end": 9.38,
+      "text": "So we're going to go over the basic ultrasound."
+    },
+    {
+      "start": 10.0,
+      "end": 19.6,
+      "text": "scanning technique and scan windows for an abdominal ultrasound today. First we're going to start with the left lobe of the liver."
+    },
+    {
+      "start": 20.96,
+      "end": 23.8,
+      "text": "And to do that, we're going to go sub-zyphoid"
+    },
+    {
+      "start": 26.48,
+      "end": 29.97,
+      "text": "and we're going to first sweep all the way out through-"
+    },
+    {
+      "start": 30.0,
+      "end": 37.39,
+      "text": "the left lobe. Start to come back. First picture that I usually take is the lateral"
+    },
+    {
+      "start": 37.39,
+      "end": 38.35,
+      "text": "left lobe."
+    },
+    {
+      "start": 41.22,
+      "end": 46.18,
+      "text": "Next picture will come through more media and you're going to start to see the aorta"
+    },
+    {
+      "start": 46.18,
+      "end": 47.74,
+      "text": "come into the picture here."
+    },
+    {
+      "start": 49.28,
+      "end": 49.94,
+      "text": "This is my next..."
+    },
+    {
+      "start": 50.1,
+      "end": 59.88,
+      "text": "still sweeping more immediately you're gonna start to see the IVC and you'll see the"
+    },
+    {
+      "start": 60.0,
+      "end": 67.05,
+      "text": "potate lobe, and we usually put color on the IVC just to make sure that it fills completely."
+    },
+    {
+      "start": 69.14,
+      "end": 69.98,
+      "text": "This is our last..."
+    },
+    {
+      "start": 70.06,
+      "end": 79.3,
+      "text": "picture of the sagittal left lobe here. From here we're going to start to come into the right lobe of the liver and for that I kind of follow this"
+    },
+    {
+      "start": 79.3,
+      "end": 79.92,
+      "text": "RIP"
+    },
+    {
+      "start": 81.02,
+      "end": 89.52,
+      "text": "down a little bit so it's technically you're slightly oblique and what you want to make sure you do is you're pushing in"
+    },
+    {
+      "start": 90.1,
+      "end": 92.98,
+      "text": "and angling up underneath this rib."
+    },
+    {
+      "start": 94.22,
+      "end": 97.88,
+      "text": "And what I do is I start at the dome of the right lobe"
+    },
+    {
+      "start": 98.42,
+      "end": 99.98,
+      "text": "and then take sequential pin-"
+    },
+    {
+      "start": 100.0,
+      "end": 106.61,
+      "text": "pictures as we come down. So the first picture I get of the right lobe is just the"
+    },
+    {
+      "start": 106.61,
+      "end": 109.89,
+      "text": "Parankhma, you're above all the hepatic veins and"
+    },
+    {
+      "start": 110.0,
+      "end": 114.36,
+      "text": "portal veins and then as you come down you're going to start to see the"
+    },
+    {
+      "start": 114.36,
+      "end": 119.98,
+      "text": "hepatic veins come into view. The walls of the hepatic veins"
+    },
+    {
+      "start": 120.0,
+      "end": 125.2,
+      "text": "are less ecogenic than the portals, and that's usually a good tip off that"
+    },
+    {
+      "start": 125.2,
+      "end": 129.64,
+      "text": "you're seeing the hepatic veins. Besides that you can also see them"
+    },
+    {
+      "start": 130.0,
+      "end": 132.3,
+      "text": "obviously go directly into the IVC."
+    },
+    {
+      "start": 133.85,
+      "end": 137.44,
+      "text": "And then that's my second picture of the right lobe,"
+    },
+    {
+      "start": 137.48,
+      "end": 139.2,
+      "text": "the third picture of the right lobe,"
+    },
+    {
+      "start": 139.77,
+      "end": 139.97,
+      "text": "you're gonna..."
+    },
+    {
+      "start": 140.0,
+      "end": 146.33,
+      "text": "to take with the portal veins. If you were looking for any ductile dilatation,"
+    },
+    {
+      "start": 146.45,
+      "end": 149.72,
+      "text": "this is where you would see that at the level of the portal."
+    },
+    {
+      "start": 150.0,
+      "end": 159.98,
+      "text": "And from there you just sweep all the way out of the liver. That's the sagittal sweep through the"
+    },
+    {
+      "start": 160.0,
+      "end": 166.6,
+      "text": "liver. Next we go is transverse, and for that we're going to start again with the"
+    },
+    {
+      "start": 166.6,
+      "end": 169.93,
+      "text": "left lobe, subzyphoid, and"
+    },
+    {
+      "start": 170.0,
+      "end": 175.41,
+      "text": "And you kind of grab the top of the probe here and you want to make sure you sweep all the"
+    },
+    {
+      "start": 175.41,
+      "end": 179.52,
+      "text": "way up through the left lobe until you see the heart."
+    },
+    {
+      "start": 181.15,
+      "end": 187.24,
+      "text": "And then as you come down very similar protocol you start at the top of the left"
+    },
+    {
+      "start": 187.24,
+      "end": 189.81,
+      "text": "load with the prankema."
+    },
+    {
+      "start": 191.66,
+      "end": 193.74,
+      "text": "coming down, you'll see the hepatic veins."
+    },
+    {
+      "start": 196.31,
+      "end": 198.71,
+      "text": "And then last, you're gonna see the portal veins."
+    },
+    {
+      "start": 201.54,
+      "end": 205.02,
+      "text": "and you sweep all the way out of the left lobe here."
+    },
+    {
+      "start": 207.24,
+      "end": 209.68,
+      "text": "You wanna make sure you're sweeping through every organ"
+    },
+    {
+      "start": 209.68,
+      "end": 209.98,
+      "text": "because..."
+    },
+    {
+      "start": 210.06,
+      "end": 213.72,
+      "text": "because if you don't sweep, you'll probably miss some anatomy"
+    },
+    {
+      "start": 213.72,
+      "end": 216.52,
+      "text": "and possibly some pathology, too."
+    },
+    {
+      "start": 218.29,
+      "end": 219.92,
+      "text": "So now from the left lobe."
+    },
+    {
+      "start": 220.0,
+      "end": 226.32,
+      "text": "which is right here, you're gonna angle slightly over and you should see the right"
+    },
+    {
+      "start": 226.32,
+      "end": 229.98,
+      "text": "lobe come into view. So you're gonna..."
+    },
+    {
+      "start": 230.0,
+      "end": 238.06,
+      "text": "all the way up through the dome of the right lobe and start to come down. You get the"
+    },
+    {
+      "start": 238.06,
+      "end": 238.86,
+      "text": "and prank them on"
+    },
+    {
+      "start": 240.32,
+      "end": 242.5,
+      "text": "coming down, you'll see the hepatic veins again,"
+    },
+    {
+      "start": 243.82,
+      "end": 246.48,
+      "text": "and then you'll also come into the portal."
+    },
+    {
+      "start": 249.39,
+      "end": 249.97,
+      "text": "And from here..."
+    },
+    {
+      "start": 250.0,
+      "end": 255.59,
+      "text": "we just sweep all the way out of the liver and now we're going to go to an"
+    },
+    {
+      "start": 256.05,
+      "end": 259.65,
+      "text": "intercostal window. So after you finish your transverse sweep"
+    },
+    {
+      "start": 260.0,
+      "end": 268.03,
+      "text": "sub-costal through the right lobe. We're gonna move to the intercostal window and for this window"
+    },
+    {
+      "start": 268.03,
+      "end": 269.97,
+      "text": "you're gonna want to make sure that your probe is"
+    },
+    {
+      "start": 270.0,
+      "end": 276.08,
+      "text": "slightly oblique because you want to fit in between each one of these rib spaces to"
+    },
+    {
+      "start": 276.08,
+      "end": 278.16,
+      "text": "get the best view of the liver and"
+    },
+    {
+      "start": 280.03,
+      "end": 287.44,
+      "text": "you start again up at the top of the liver and you sweep through the top rib space here."
+    },
+    {
+      "start": 287.44,
+      "end": 289.93,
+      "text": "next you come"
+    },
+    {
+      "start": 290.0,
+      "end": 295.76,
+      "text": "down a rib space, sweep through again. As you're doing this, you're still getting"
+    },
+    {
+      "start": 295.76,
+      "end": 299.55,
+      "text": "those same pictures, one at the dome of the right lobe."
+    },
+    {
+      "start": 300.45,
+      "end": 307.84,
+      "text": "one at the hepatic veins and then as you jump down you'll get a picture of the main portal vein"
+    },
+    {
+      "start": 307.84,
+      "end": 309.94,
+      "text": "and you can also see the main"
+    },
+    {
+      "start": 310.0,
+      "end": 316.14,
+      "text": "portal from this window split into right anterior and right posterior portal"
+    },
+    {
+      "start": 316.14,
+      "end": 319.53,
+      "text": "vein. At the last rib space"
+    },
+    {
+      "start": 320.13,
+      "end": 322.67,
+      "text": "You should start to see the upper pole of the kidney"
+    },
+    {
+      "start": 323.31,
+      "end": 325.09,
+      "text": "against the liver surface."
+    },
+    {
+      "start": 327.33,
+      "end": 329.97,
+      "text": "From here, you can kind of judge the echogenin."
+    },
+    {
+      "start": 330.0,
+      "end": 335.02,
+      "text": "of the liver and the kidney, and then as you turn"
+    },
+    {
+      "start": 335.4,
+      "end": 338.8,
+      "text": "peronal, you'll be able to evaluate"
+    },
+    {
+      "start": 340.26,
+      "end": 347.26,
+      "text": "If there's any liver enlargement, the right kidney and the liver tip should both end"
+    },
+    {
+      "start": 347.26,
+      "end": 348.6,
+      "text": "at about the same spot."
+    },
+    {
+      "start": 350.22,
+      "end": 358.94,
+      "text": "The whole time you're going to want to make sure that you're sweeping through the liver completely just again to make sure you're not missing any"
+    },
+    {
+      "start": 360.19,
+      "end": 369.88,
+      "text": "pathology here. Next we're going to show you how to image the gallbladder and you can really use two windows depending on which"
+    },
+    {
+      "start": 370.0,
+      "end": 375.79,
+      "text": "one works best for the particular patient. One of the two windows that I usually"
+    },
+    {
+      "start": 375.79,
+      "end": 378.85,
+      "text": "uses a sub-costal window."
+    },
+    {
+      "start": 380.32,
+      "end": 386.24,
+      "text": "And your probe may be slightly oblique to the patient's body,"
+    },
+    {
+      "start": 386.24,
+      "end": 389.96,
+      "text": "but essentially what you want to do is open up the goal."
+    },
+    {
+      "start": 390.0,
+      "end": 399.86,
+      "text": "bladder completely and so again you might not be perfectly sagittal to the body to get a"
+    },
+    {
+      "start": 400.7,
+      "end": 407.14,
+      "text": "and from here, once you find that elongated gallbladder, you just sweep through."
+    },
+    {
+      "start": 410.1,
+      "end": 417.1,
+      "text": "Next, we'll get a transverse image of the gallbladder in this same window, and what you"
+    },
+    {
+      "start": 417.1,
+      "end": 419.96,
+      "text": "want to do is just look at your probe and kind of..."
+    },
+    {
+      "start": 420.13,
+      "end": 421.23,
+      "text": "Think about it in your head."
+    },
+    {
+      "start": 421.77,
+      "end": 429.19,
+      "text": "If you turn your probe 90 degrees, you should be perfectly set up for a transverse gallbladder."
+    },
+    {
+      "start": 430.1,
+      "end": 436.8,
+      "text": "So, this is our transverse plane, and if you go back 90 degrees the other way, this should"
+    },
+    {
+      "start": 436.8,
+      "end": 438.4,
+      "text": "be your sagittal plane here."
+    },
+    {
+      "start": 440.22,
+      "end": 442.56,
+      "text": "Another real good window for the gall bladder,"
+    },
+    {
+      "start": 443.0,
+      "end": 446.16,
+      "text": "especially for bigger patients or gassy patients,"
+    },
+    {
+      "start": 446.68,
+      "end": 449.24,
+      "text": "is if you come intercostal."
+    },
+    {
+      "start": 450.06,
+      "end": 452.52,
+      "text": "and you're going to kind of angle up"
+    },
+    {
+      "start": 452.52,
+      "end": 456.81,
+      "text": "towards the anterior part of the abdomen."
+    },
+    {
+      "start": 458.39,
+      "end": 459.93,
+      "text": "Again, you're just gonna, oh."
+    },
+    {
+      "start": 460.06,
+      "end": 468.44,
+      "text": "up the gallbladder to get its widest portion here and same thing once you find"
+    },
+    {
+      "start": 468.44,
+      "end": 469.44,
+      "text": "that sagittal."
+    },
+    {
+      "start": 470.67,
+      "end": 479.45,
+      "text": "window to get a transverse look at your probe and turn it 90 degrees through that plane."
+    },
+    {
+      "start": 481.73,
+      "end": 484.95,
+      "text": "For the gallbladder, we also get the cube pictures"
+    },
+    {
+      "start": 485.6,
+      "end": 489.29,
+      "text": "just to make sure there's no stones trapped in the fundus."
+    },
+    {
+      "start": 490.1,
+      "end": 499.86,
+      "text": "I'm sorry in the neck of the gallbladder so for that I'm going to have you turn on to your left side away from us and for this"
+    },
+    {
+      "start": 500.03,
+      "end": 505.76,
+      "text": "the gallbladder usually moves a little bit forward. So after you get your"
+    },
+    {
+      "start": 505.76,
+      "end": 509.98,
+      "text": "supine pictures of the gallbladder, you want to make sure you de-cube the"
+    },
+    {
+      "start": 510.78,
+      "end": 515.4,
+      "text": "just to make sure there are no stones that are stuck in the neck of the gallbladder."
+    },
+    {
+      "start": 516.24,
+      "end": 519.98,
+      "text": "You have the patient turn on their left side away from you and"
+    },
+    {
+      "start": 520.0,
+      "end": 522.9,
+      "text": "And that usually brings a gall bladder forward here."
+    },
+    {
+      "start": 523.72,
+      "end": 529.98,
+      "text": "So we're going to kind of pump sub-costal here and just kind of..."
+    },
+    {
+      "start": 530.0,
+      "end": 539.61,
+      "text": "sweep through and you should see the gallbladder very anterior here and I like to start"
+    },
+    {
+      "start": 540.0,
+      "end": 549.97,
+      "text": "You just want to make sure you sweep through the gallbladder here and if there are any stones, they should dry."
+    },
+    {
+      "start": 550.45,
+      "end": 554.13,
+      "text": "into the fundus of the gallbladder from this plane here."
+    },
+    {
+      "start": 556.06,
+      "end": 559.97,
+      "text": "This is also good for opening up the neck of the gallbladder to make..."
+    },
+    {
+      "start": 560.0,
+      "end": 564.26,
+      "text": "Make sure there's no stones that are impacted in the neck of the gallbladder here."
+    },
+    {
+      "start": 566.67,
+      "end": 569.97,
+      "text": "Once you get your sagittal sweep, you're going to want to make sure..."
+    },
+    {
+      "start": 570.0,
+      "end": 577.24,
+      "text": "you again, turn your probe 90 degrees and just sweep through in a transverse plane just"
+    },
+    {
+      "start": 577.24,
+      "end": 579.26,
+      "text": "to make sure you're not missing anything."
+    },
+    {
+      "start": 580.22,
+      "end": 583.92,
+      "text": "You can also see the Florida Hepatists and the CBD"
+    },
+    {
+      "start": 583.92,
+      "end": 586.14,
+      "text": "from this de-cube position as well."
+    },
+    {
+      "start": 587.61,
+      "end": 589.98,
+      "text": "For this, you want to..."
+    },
+    {
+      "start": 591.41,
+      "end": 599.52,
+      "text": "elongate the main portal vein and you'll see it track right up into the liver and then"
+    },
+    {
+      "start": 600.0,
+      "end": 608.31,
+      "text": "Once you find that, you know that the CBD and the hepatic artery are right next to each"
+    },
+    {
+      "start": 608.31,
+      "end": 608.87,
+      "text": "other here."
+    },
+    {
+      "start": 610.0,
+      "end": 613.8,
+      "text": "So you just kind of keep tweaking the probe"
+    },
+    {
+      "start": 614.34,
+      "end": 618.25,
+      "text": "until you find or till you elongate"
+    },
+    {
+      "start": 618.73,
+      "end": 619.95,
+      "text": "one of these tubular str-"
+    },
+    {
+      "start": 620.0,
+      "end": 627.3,
+      "text": "next to the main portal vein, and the easiest way to see if you're on the"
+    },
+    {
+      "start": 627.3,
+      "end": 629.58,
+      "text": "the hepatic artery or the CBD."
+    },
+    {
+      "start": 630.42,
+      "end": 633.91,
+      "text": "is to just turn on color and see if it lights up."
+    },
+    {
+      "start": 635.06,
+      "end": 638.38,
+      "text": "If it lights up, you are on the hepatic artery."
+    },
+    {
+      "start": 639.11,
+      "end": 639.97,
+      "text": "And if it doesn't,"
+    },
+    {
+      "start": 640.0,
+      "end": 641.66,
+      "text": "and you know that's the CBD."
+    },
+    {
+      "start": 642.78,
+      "end": 645.92,
+      "text": "To image the pancreas, which is what we're gonna look at next,"
+    },
+    {
+      "start": 646.3,
+      "end": 648.8,
+      "text": "you wanna come sub-zyphoid again."
+    },
+    {
+      "start": 650.0,
+      "end": 655.28,
+      "text": "And what I would do is come up high and angle down."
+    },
+    {
+      "start": 656.24,
+      "end": 659.86,
+      "text": "That way you're using the tip of the left lobe of your liver."
+    },
+    {
+      "start": 660.0,
+      "end": 666.55,
+      "text": "as your window, instead of coming down low and angling up, you're going to use"
+    },
+    {
+      "start": 666.55,
+      "end": 669.79,
+      "text": "bell, which is never a good scan."
+    },
+    {
+      "start": 670.0,
+      "end": 678.18,
+      "text": "window in ultra sound. So we're going to come up high, angle down, and the other key is you want"
+    },
+    {
+      "start": 678.18,
+      "end": 679.98,
+      "text": "to oblique your trans..."
+    },
+    {
+      "start": 680.0,
+      "end": 686.37,
+      "text": "dooser slightly counterclockwise. This will set you up for a nice sagittal"
+    },
+    {
+      "start": 686.72,
+      "end": 688.26,
+      "text": "pancreas image and"
+    },
+    {
+      "start": 690.35,
+      "end": 695.37,
+      "text": "If you look on this image here, you want to just see that"
+    },
+    {
+      "start": 695.37,
+      "end": 699.47,
+      "text": "splenic vein is a good landmark to let you know that you are"
+    },
+    {
+      "start": 700.0,
+      "end": 703.74,
+      "text": "very close to if not exactly on your pancreas."
+    },
+    {
+      "start": 704.96,
+      "end": 708.5,
+      "text": "And like every organ you need to sweep through."
+    },
+    {
+      "start": 709.4,
+      "end": 709.96,
+      "text": "If you just..."
+    },
+    {
+      "start": 710.0,
+      "end": 718.7,
+      "text": "see this splenic vein and you take pictures here, you can miss other pathology in the pancreas."
+    },
+    {
+      "start": 720.35,
+      "end": 729.87,
+      "text": "And we'll also try to look at the head and unsanate process here all the way down to the tail of the pan."
+    },
+    {
+      "start": 730.03,
+      "end": 739.89,
+      "text": "Most patients you probably won't be able to see the entire tail of the pancreas just because it kind of dives deep from this"
+    },
+    {
+      "start": 740.06,
+      "end": 746.06,
+      "text": "here. When you're looking at the pancreas, you want to look for certain structures in the pancreas as"
+    },
+    {
+      "start": 746.06,
+      "end": 749.98,
+      "text": "well. One of the structures that we can"
+    },
+    {
+      "start": 750.0,
+      "end": 755.43,
+      "text": "look for is the pancreatic duct and that runs right through the body of the"
+    },
+    {
+      "start": 755.43,
+      "end": 759.98,
+      "text": "pancreas you know throughout the entire length of the pancreas let's say"
+    },
+    {
+      "start": 760.0,
+      "end": 769.98,
+      "text": "And you can look here, a lot of patients you will be able to see the pancreatic duct and we usually use"
+    },
+    {
+      "start": 770.0,
+      "end": 778.76,
+      "text": "two millimeters is a cutoff for our normal pancreatic duct measurement. If you angle"
+    },
+    {
+      "start": 778.76,
+      "end": 779.96,
+      "text": "towards the..."
+    },
+    {
+      "start": 780.1,
+      "end": 785.2,
+      "text": "right side here, you'll be able to see the head and"
+    },
+    {
+      "start": 785.2,
+      "end": 787.64,
+      "text": "unsanate process of the pancreas."
+    },
+    {
+      "start": 789.19,
+      "end": 789.89,
+      "text": "If the patient"
+    },
+    {
+      "start": 790.0,
+      "end": 799.12,
+      "text": "as a good scan, you'll be able to see the gastrododinal artery or GDA in the anterior head"
+    },
+    {
+      "start": 799.12,
+      "end": 799.98,
+      "text": "of the pancreas."
+    },
+    {
+      "start": 800.0,
+      "end": 809.98,
+      "text": "And then in the posterior head of the pancreas, you'll probably be able to see the CBD if the patient is a good skin."
+    },
+    {
+      "start": 812.66,
+      "end": 819.75,
+      "text": "And if you find the CBD you can also turn sagittal to the CBD"
+    },
+    {
+      "start": 820.0,
+      "end": 825.9,
+      "text": "from this position and elongate it as it goes into the liver."
+    },
+    {
+      "start": 827.84,
+      "end": 829.96,
+      "text": "If you do see anything in the pain..."
+    },
+    {
+      "start": 830.0,
+      "end": 839.86,
+      "text": "Also you could get transverse images of the pancreas which for that your probe will be in a"
+    },
+    {
+      "start": 840.0,
+      "end": 847.53,
+      "text": "sagittal plane to the patient's body. As you sweep through the pancreas in a"
+    },
+    {
+      "start": 847.53,
+      "end": 849.92,
+      "text": "sagittal plane, you can"
+    },
+    {
+      "start": 850.0,
+      "end": 855.7,
+      "text": "use other structures as your landmarks to know where exactly you are within the"
+    },
+    {
+      "start": 855.7,
+      "end": 859.97,
+      "text": "pancreas. So a good rule of thumb is if you're seeing"
+    },
+    {
+      "start": 860.0,
+      "end": 869.39,
+      "text": "the aorta posterior to the pancreas, you're in the pancreatic body and as you sweep more towards the"
+    },
+    {
+      "start": 869.39,
+      "end": 869.97,
+      "text": "the patient's..."
+    },
+    {
+      "start": 870.0,
+      "end": 878.87,
+      "text": "Right side, when you see the IVC, you know you're in the pancreatic head or around the pancreatic head part."
+    },
+    {
+      "start": 880.8,
+      "end": 887.62,
+      "text": "And as you sweep through, you can just evaluate the pancreas in a transverse plane here."
+    },
+    {
+      "start": 888.63,
+      "end": 889.97,
+      "text": "So to image the spleen..."
+    },
+    {
+      "start": 890.0,
+      "end": 895.36,
+      "text": "you're going to come to the patients left side and again you're going to want to"
+    },
+    {
+      "start": 895.36,
+      "end": 899.97,
+      "text": "make sure you're scanning right in this rib space here so your probe is"
+    },
+    {
+      "start": 900.0,
+      "end": 907.79,
+      "text": "going to be slightly oblique. And once you find that rib space, you'll feel the probe"
+    },
+    {
+      "start": 907.79,
+      "end": 909.51,
+      "text": "drop down into it."
+    },
+    {
+      "start": 910.26,
+      "end": 914.8,
+      "text": "And from here, you just want to make sure you're sweeping through that entire rib space."
+    },
+    {
+      "start": 917.42,
+      "end": 919.96,
+      "text": "For the spleen, we usually measure once you..."
+    },
+    {
+      "start": 920.0,
+      "end": 926.29,
+      "text": "get to the maximal dimension of the spleen, we usually measure the length of the spleen"
+    },
+    {
+      "start": 926.29,
+      "end": 927.53,
+      "text": "in this window here."
+    },
+    {
+      "start": 931.22,
+      "end": 939.4,
+      "text": "you sweep through the spleen completely insadgetal for your transverse images of the spleen you may see"
+    },
+    {
+      "start": 940.0,
+      "end": 948.45,
+      "text": "of those rib shadows in your view. But all you could do is just kind of angle, maybe come a little more"
+    },
+    {
+      "start": 948.45,
+      "end": 949.91,
+      "text": "anterior or post."
+    },
+    {
+      "start": 950.0,
+      "end": 956.1,
+      "text": "exterior to get around those ribs and just kind of sweep through as much of the"
+    },
+    {
+      "start": 956.1,
+      "end": 959.3,
+      "text": "spleen from these different windows as possible."
+    },
+    {
+      "start": 960.0,
+      "end": 962.96,
+      "text": "until you feel like you've seen the entire spleen."
+    },
+    {
+      "start": 965.77,
+      "end": 967.33,
+      "text": "The image of the left kidney,"
+    },
+    {
+      "start": 967.69,
+      "end": 969.97,
+      "text": "we usually have the patient turn up into a..."
+    },
+    {
+      "start": 970.0,
+      "end": 976.33,
+      "text": "right to cube so they're facing you and you're going to kind of usually you're"
+    },
+    {
+      "start": 976.33,
+      "end": 978.65,
+      "text": "going to be below the rib spaces here."
+    },
+    {
+      "start": 980.0,
+      "end": 989.96,
+      "text": "And the important thing to remember for the kidneys is the upper pole of the kidney is going to be slightly..."
+    },
+    {
+      "start": 990.0,
+      "end": 997.02,
+      "text": "more posterior. The lower pole is going to be more anterior. So you're going to have this kind of"
+    },
+    {
+      "start": 997.02,
+      "end": 999.67,
+      "text": "oblique transducer position."
+    },
+    {
+      "start": 1001.12,
+      "end": 1009.98,
+      "text": "And when you get the kidney you probably will also see the spleen in this window as well and you just want to make sure"
+    },
+    {
+      "start": 1010.03,
+      "end": 1015.49,
+      "text": "again that you're sweeping through the kidney in its entirety lateral"
+    },
+    {
+      "start": 1015.49,
+      "end": 1019.97,
+      "text": "And then what we usually do"
+    },
+    {
+      "start": 1020.0,
+      "end": 1026.17,
+      "text": "from here too as we take transverse images of the left kidney and the easiest way"
+    },
+    {
+      "start": 1026.17,
+      "end": 1029.91,
+      "text": "to find a transverse is again just look at"
+    },
+    {
+      "start": 1030.0,
+      "end": 1035.95,
+      "text": "probe and think about how you're going to turn 90 degrees through that"
+    },
+    {
+      "start": 1035.95,
+      "end": 1039.88,
+      "text": "sagittal image and you're going to sweep all the way up"
+    },
+    {
+      "start": 1040.16,
+      "end": 1048.2,
+      "text": "the top and down to the lower pole towards the bottom of the left kidney. For this transverse"
+    },
+    {
+      "start": 1048.2,
+      "end": 1049.96,
+      "text": "pictures, you may run in"
+    },
+    {
+      "start": 1050.0,
+      "end": 1052.62,
+      "text": "into the rib space, the ribs a little bit."
+    },
+    {
+      "start": 1053.16,
+      "end": 1055.02,
+      "text": "And what I would do is if you have to,"
+    },
+    {
+      "start": 1055.16,
+      "end": 1059.12,
+      "text": "you can use that intercostal space and just sweep."
+    },
+    {
+      "start": 1060.13,
+      "end": 1068.58,
+      "text": "If you feel like you're not getting a very good image of the upper pole or lower pole of the kidney, and"
+    },
+    {
+      "start": 1070.48,
+      "end": 1073.18,
+      "text": "You'll also see if there's any,"
+    },
+    {
+      "start": 1073.48,
+      "end": 1077.1,
+      "text": "you'll also see the spleen from this window again, too."
+    },
+    {
+      "start": 1078.39,
+      "end": 1079.47,
+      "text": "Okay, another window."
+    },
+    {
+      "start": 1080.0,
+      "end": 1086.73,
+      "text": "we can use to get the port of Hepatis and the CBD is this intercostal right window again."
+    },
+    {
+      "start": 1087.9,
+      "end": 1089.92,
+      "text": "This is a good window for if you're"
+    },
+    {
+      "start": 1090.0,
+      "end": 1095.62,
+      "text": "going to do any pulse wave Doppler's because usually the main portal vein"
+    },
+    {
+      "start": 1095.62,
+      "end": 1099.9,
+      "text": "sets up at about a 60-degree angle. So you"
+    },
+    {
+      "start": 1100.0,
+      "end": 1108.52,
+      "text": "good color fill and your pole stopper is also you have an accurate pole stop"
+    },
+    {
+      "start": 1108.52,
+      "end": 1109.9,
+      "text": "Measurement if"
+    },
+    {
+      "start": 1110.03,
+      "end": 1116.4,
+      "text": "you need it. So once you find that main portal vein which you look for the"
+    },
+    {
+      "start": 1116.4,
+      "end": 1119.94,
+      "text": "The acogenic walls, you elongate."
+    },
+    {
+      "start": 1120.0,
+      "end": 1129.62,
+      "text": "it. And from there, you know that the hepatic artery and the CBD are going to be right next"
+    },
+    {
+      "start": 1129.62,
+      "end": 1129.98,
+      "text": "to it."
+    },
+    {
+      "start": 1130.0,
+      "end": 1137.45,
+      "text": "as well. So once you find the portal, you can kind of just keep tweaking the probe"
+    },
+    {
+      "start": 1138.28,
+      "end": 1139.84,
+      "text": "until you elongate."
+    },
+    {
+      "start": 1141.73,
+      "end": 1149.43,
+      "text": "the CBD completely. And if you're not sure whether or not you're on the CBD or the hepatic artery"
+    }
+  ]
+}

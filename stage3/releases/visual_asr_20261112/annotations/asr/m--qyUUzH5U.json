@@ -1,0 +1,688 @@
+{
+  "video_id": "m--qyUUzH5U",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/m--qyUUzH5U/asr.txt",
+  "segments": [
+    {
+      "start": 1.79,
+      "end": 9.96,
+      "text": "Your cost-of-block is a long-standing technique for providing M-"
+    },
+    {
+      "start": 10.0,
+      "end": 14.26,
+      "text": "easy to the chest wall. It's superficial and relatively simple to perform, especially if you"
+    },
+    {
+      "start": 14.26,
+      "end": 17.96,
+      "text": "follow the steps outlined in this video, in which we'll describe the anatomy, sonoe anatomy,"
+    },
+    {
+      "start": 18.259999999999998,
+      "end": 19.880000000000003,
+      "text": "technique, and offer some tips for success."
+    },
+    {
+      "start": 20.06,
+      "end": 23.509999999999998,
+      "text": "Some of you may be thinking, wait, I thought you loved Perverteeble blocks,"
+    },
+    {
+      "start": 23.77,
+      "end": 28.11,
+      "text": "and I do. But lots of people aren't excited about the deep imaging at the Perverteeble space"
+    },
+    {
+      "start": 28.11,
+      "end": 29.97,
+      "text": "and prefer a shallower approach where the v-"
+    },
+    {
+      "start": 30.0,
+      "end": 39.47,
+      "text": "Visualization is easier intercostals also a block this widely used around the world by many specialties emergency medicine trauma surgery thoracic surgery and chronic pain specialists"
+    },
+    {
+      "start": 40.0,
+      "end": 40.94,
+      "text": "So it does have a big role."
+    },
+    {
+      "start": 41.5,
+      "end": 42.48,
+      "text": "Okay, let's see the anatomy."
+    },
+    {
+      "start": 42.84,
+      "end": 47.22,
+      "text": "The ventral raymi of T2 through T11 travel around the chest wall with their associated"
+    },
+    {
+      "start": 47.22,
+      "end": 49.519999999999996,
+      "text": "numbered ribs, innovating the thorax and abdomen."
+    },
+    {
+      "start": 50.0,
+      "end": 53.9,
+      "text": "We look from inside the chest at the ribs, we first have to peel away the parietal plura."
+    },
+    {
+      "start": 54.2,
+      "end": 58.16,
+      "text": "We then see the intercostal nerves running just underneath each rib in the castle groove."
+    },
+    {
+      "start": 58.46,
+      "end": 59.88,
+      "text": "We've taken away the intercostal vessel."
+    },
+    {
+      "start": 60.0,
+      "end": 60.82,
+      "text": "to make things clearer."
+    },
+    {
+      "start": 61.39,
+      "end": 65.69,
+      "text": "Superficial to the neurovascular bundle on the lateral chest wall is the internal intercostal"
+    },
+    {
+      "start": 65.69,
+      "end": 65.99,
+      "text": "muscle."
+    },
+    {
+      "start": 66.5,
+      "end": 69.98,
+      "text": "It comes to an end at the angle of the rib, about 5 centimeters off the midline."
+    },
+    {
+      "start": 70.03,
+      "end": 72.65,
+      "text": "and gives rise to the internal intercostal membrane."
+    },
+    {
+      "start": 73.3,
+      "end": 75.76,
+      "text": "Deep to the nerve on the lateral chest is another muscle,"
+    },
+    {
+      "start": 75.92,
+      "end": 77.66,
+      "text": "the innermost intercostal muscle."
+    },
+    {
+      "start": 78.05,
+      "end": 78.95,
+      "text": "How inner? The most."
+    },
+    {
+      "start": 79.31,
+      "end": 79.97,
+      "text": "There is no man-"
+    },
+    {
+      "start": 80.0,
+      "end": 84.22,
+      "text": "brain associated with this, so at the medial aspect the nerve is directly adjacent to the"
+    },
+    {
+      "start": 84.22,
+      "end": 84.5,
+      "text": "plura."
+    },
+    {
+      "start": 84.84,
+      "end": 86.08,
+      "text": "Here's a different way of looking at that."
+    },
+    {
+      "start": 86.53,
+      "end": 89.87,
+      "text": "Lateral to the angle of the rib we see external and internal intercostal muscle."
+    },
+    {
+      "start": 90.26,
+      "end": 92.44,
+      "text": "the neurovascular bundle and the innermost muscle."
+    },
+    {
+      "start": 92.76,
+      "end": 93.88,
+      "text": "Media to the angle of the rib,"
+    },
+    {
+      "start": 94.04,
+      "end": 96.18,
+      "text": "we lose the internal and innermost muscles,"
+    },
+    {
+      "start": 96.46,
+      "end": 98.32,
+      "text": "leaving only the external intercostal muscle"
+    },
+    {
+      "start": 98.32,
+      "end": 99.86,
+      "text": "and the internal intercostal membrane."
+    },
+    {
+      "start": 100.0,
+      "end": 103.32,
+      "text": "We can see this change when we scan the posterior chest wall."
+    },
+    {
+      "start": 103.72,
+      "end": 107.28,
+      "text": "Here's our initial medial view with the neurovascular bundle adjacent to the plura."
+    },
+    {
+      "start": 107.58,
+      "end": 109.8,
+      "text": "Note that we can't say for sure where the nerve is."
+    },
+    {
+      "start": 110.26,
+      "end": 114.0,
+      "text": "As we move laterally, we pick up a very thin, dark layer deep to the vessels."
+    },
+    {
+      "start": 114.32,
+      "end": 119.08,
+      "text": "This is the innermost intercostal muscle, and with this slide medial, we lose it again."
+    },
+    {
+      "start": 119.52,
+      "end": 119.96000000000001,
+      "text": "Here's where-"
+    },
+    {
+      "start": 120.0,
+      "end": 122.56,
+      "text": "your needle tip should end up to be in the correct plane with a nerve."
+    },
+    {
+      "start": 123.02,
+      "end": 125.66,
+      "text": "Now, does it matter which of these sites you choose into the block?"
+    },
+    {
+      "start": 126.04,
+      "end": 126.7,
+      "text": "Not really."
+    },
+    {
+      "start": 126.98,
+      "end": 129.92,
+      "text": "You'll get the same clinical effect, and it's really a matter of personal preference."
+    },
+    {
+      "start": 130.03,
+      "end": 135.01,
+      "text": "convenience and ergonomics as to where on the posterior chest while you perform the intercostal block."
+    },
+    {
+      "start": 135.44,
+      "end": 139.6,
+      "text": "Personally, I prefer doing these close to the midline because it removes the scapula from the equation."
+    },
+    {
+      "start": 140.0,
+      "end": 144.98,
+      "text": "I also prefer to not try to find a nuanced inter-muscular plane with my needle where I risk"
+    },
+    {
+      "start": 144.98,
+      "end": 146.3,
+      "text": "putting the local in the wrong space."
+    },
+    {
+      "start": 146.78,
+      "end": 149.98,
+      "text": "I'm happy to hide or locate my way down to the plurus safely, then..."
+    },
+    {
+      "start": 150.0,
+      "end": 150.96,
+      "text": "and inject my local there."
+    },
+    {
+      "start": 151.56,
+      "end": 153.6,
+      "text": "It's very reassuring to see the plural depression"
+    },
+    {
+      "start": 153.6,
+      "end": 155.08,
+      "text": "as an endpoint for my injection."
+    },
+    {
+      "start": 155.36,
+      "end": 156.92,
+      "text": "I know the block will work for sure."
+    },
+    {
+      "start": 157.42,
+      "end": 159.22,
+      "text": "Here's a fantastic picture from Naisora"
+    },
+    {
+      "start": 159.22,
+      "end": 159.96,
+      "text": "and a link to the-"
+    },
+    {
+      "start": 160.0,
+      "end": 165.11,
+      "text": "intercostal site. What we see is intercostal dye injection in a cadaver with the red dye spreading"
+    },
+    {
+      "start": 165.11,
+      "end": 169.79,
+      "text": "out superficial to the parietal plura at each rib level and clearly covering intercostal nerves."
+    },
+    {
+      "start": 170.45,
+      "end": 172.99,
+      "text": "you can see the dye is not spreading to adjacent levels"
+    },
+    {
+      "start": 172.99,
+      "end": 175.35,
+      "text": "and will typically do separate injections for each one"
+    },
+    {
+      "start": 175.35,
+      "end": 176.57,
+      "text": "to make sure we get them all."
+    },
+    {
+      "start": 177.0,
+      "end": 179.12,
+      "text": "Laterally, we can see the thin, wispy,"
+    },
+    {
+      "start": 179.14,
+      "end": 179.96,
+      "text": "innermost intercost-"
+    },
+    {
+      "start": 180.0,
+      "end": 184.86,
+      "text": "muscles. With intercostal block you'll get blockaded the entire spinal intercostal nerve,"
+    },
+    {
+      "start": 185.02,
+      "end": 189.64,
+      "text": "including both the lateral and anterior cutaneous branches. We use this block primarily for pain control"
+    },
+    {
+      "start": 190.03,
+      "end": 194.17,
+      "text": "thoracic surgery where it's been shown to improve respiratory function and for rip fractures."
+    },
+    {
+      "start": 194.39,
+      "end": 198.11,
+      "text": "It's also a good choice for post-op edel and GZ after breast surgery and for relief of"
+    },
+    {
+      "start": 198.11,
+      "end": 198.83,
+      "text": "chest tube pain."
+    },
+    {
+      "start": 199.17,
+      "end": 199.97,
+      "text": "Intercostal blocks are..."
+    },
+    {
+      "start": 200.03,
+      "end": 204.05,
+      "text": "also use a treat pain related to shingles and post-trapathic neuralgia for treatment of"
+    },
+    {
+      "start": 204.05,
+      "end": 207.09,
+      "text": "caustocondritis and has a diagnostic block in chest wall pain."
+    },
+    {
+      "start": 207.53,
+      "end": 209.83,
+      "text": "We can do this block in several positions, sitting in"
+    },
+    {
+      "start": 210.0,
+      "end": 214.52,
+      "text": "or common options but our preference is lateral. It allows you to stretch the patient's arm forward"
+    },
+    {
+      "start": 214.52,
+      "end": 219.08,
+      "text": "and or over their head to improve access to the posterior chest wall and you'll have easy access"
+    },
+    {
+      "start": 219.08,
+      "end": 219.9,
+      "text": "So do both outer"
+    },
+    {
+      "start": 220.13,
+      "end": 221.41,
+      "text": "and in-plane approaches."
+    },
+    {
+      "start": 222.1,
+      "end": 223.18,
+      "text": "All right, let's see how we'll do this."
+    },
+    {
+      "start": 224.67,
+      "end": 226.15,
+      "text": "The needle approaches the inner causal space"
+    },
+    {
+      "start": 226.15,
+      "end": 227.43,
+      "text": "from cephal out in this instance,"
+    },
+    {
+      "start": 227.61,
+      "end": 228.83,
+      "text": "although you can come from either side."
+    },
+    {
+      "start": 229.32,
+      "end": 229.94,
+      "text": "As we enter the inner-"
+    },
+    {
+      "start": 230.0,
+      "end": 232.76,
+      "text": "cost a muscle, we begin to use small squirts of saline"
+    },
+    {
+      "start": 232.76,
+      "end": 233.82,
+      "text": "to hydro-locate."
+    },
+    {
+      "start": 234.37,
+      "end": 236.17,
+      "text": "We advance a millimeter at a time until we see"
+    },
+    {
+      "start": 236.17,
+      "end": 238.15,
+      "text": "the saline expanding over the plura"
+    },
+    {
+      "start": 238.15,
+      "end": 239.58,
+      "text": "that administer our local."
+    },
+    {
+      "start": 242.05,
+      "end": 245.57,
+      "text": "If you see the extra plural space expanding, you're in the right spot, and your block"
+    },
+    {
+      "start": 251.44,
+      "end": 252.48,
+      "text": "Same thing at the next level."
+    },
+    {
+      "start": 252.94,
+      "end": 254.14,
+      "text": "Hydrolocate, then give it a local"
+    },
+    {
+      "start": 254.14,
+      "end": 255.74,
+      "text": "when we see the target space expand."
+    },
+    {
+      "start": 257.24,
+      "end": 258.34,
+      "text": "Sometimes you'll see the internal"
+    },
+    {
+      "start": 258.34,
+      "end": 259.84,
+      "text": "and the cost of membrane elevating."
+    },
+    {
+      "start": 260.0,
+      "end": 262.02,
+      "text": "along with a plurid depressing, like we see here."
+    },
+    {
+      "start": 268.57,
+      "end": 269.81,
+      "text": "I prefer the out-of-plane approach."
+    },
+    {
+      "start": 270.0,
+      "end": 271.38,
+      "text": "which uses the same principles."
+    },
+    {
+      "start": 271.82,
+      "end": 274.36,
+      "text": "Hydro-locate, advance, hydro-locate, advance"
+    },
+    {
+      "start": 274.36,
+      "end": 276.66,
+      "text": "until you see that expansion above the plura."
+    },
+    {
+      "start": 277.0,
+      "end": 278.06,
+      "text": "It's a very safe method"
+    },
+    {
+      "start": 278.06,
+      "end": 279.94,
+      "text": "and though you won't see your needle, the high-"
+    },
+    {
+      "start": 280.03,
+      "end": 288.4,
+      "text": "keeps you safe. Oh man, that's sweet. Give your dose and then move on. We'll use three to five"
+    },
+    {
+      "start": 288.4,
+      "end": 289.68,
+      "text": "mills of volume per level."
+    },
+    {
+      "start": 290.0,
+      "end": 293.76,
+      "text": "We're really only after a sensory block here, and since it's a highly vascular area, we"
+    },
+    {
+      "start": 293.76,
+      "end": 295.02,
+      "text": "want to keep an eye on dosage."
+    },
+    {
+      "start": 295.24,
+      "end": 298.76,
+      "text": "We like 0.2% Republican with epinephrine as our agent of choice."
+    },
+    {
+      "start": 299.49,
+      "end": 299.97,
+      "text": "There are some f***ing f***ing f***ing f***ing f***ing f***ing f***ing f***ing f***ing f***ing f***ing"
+    },
+    {
+      "start": 300.06,
+      "end": 301.72,
+      "text": "thanks to watch out for with intercostal block."
+    },
+    {
+      "start": 302.06,
+      "end": 304.04,
+      "text": "First, this is a highly vascular area,"
+    },
+    {
+      "start": 304.24,
+      "end": 305.74,
+      "text": "typically one of the ones associated"
+    },
+    {
+      "start": 305.74,
+      "end": 307.18,
+      "text": "with a high likelihood of last."
+    },
+    {
+      "start": 307.6,
+      "end": 309.66,
+      "text": "While the actual incidence is apparently quite low,"
+    },
+    {
+      "start": 309.66,
+      "end": 309.96,
+      "text": "Okay."
+    },
+    {
+      "start": 310.0,
+      "end": 312.36,
+      "text": "Care should be taken with dosages in small patients."
+    },
+    {
+      "start": 312.92,
+      "end": 317.16,
+      "text": "Neumothorax is a risk, but most of the reports come from landmark-based techniques, careful"
+    },
+    {
+      "start": 317.16,
+      "end": 319.84,
+      "text": "higher location and slow incremental advancement."
+    },
+    {
+      "start": 320.19,
+      "end": 321.43,
+      "text": "will ensure you don't drop along."
+    },
+    {
+      "start": 321.96,
+      "end": 323.0,
+      "text": "Here are some intercostal tips."
+    },
+    {
+      "start": 323.4,
+      "end": 325.82,
+      "text": "First, textbook illustrations have the intercostal nerve"
+    },
+    {
+      "start": 325.82,
+      "end": 327.64,
+      "text": "lying solely within the castle groove."
+    },
+    {
+      "start": 327.94,
+      "end": 329.88,
+      "text": "And in general, they do run parallel, but there are"
+    },
+    {
+      "start": 329.88,
+      "end": 329.96,
+      "text": "I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry"
+    },
+    {
+      "start": 330.0,
+      "end": 332.56,
+      "text": "any branches that run in the muscular space between the ribs."
+    },
+    {
+      "start": 332.86,
+      "end": 334.18,
+      "text": "Don't try to get under the rib."
+    },
+    {
+      "start": 334.3,
+      "end": 335.3,
+      "text": "You'll just lose your needle tip"
+    },
+    {
+      "start": 335.3,
+      "end": 336.58,
+      "text": "and potentially get into trouble."
+    },
+    {
+      "start": 336.82,
+      "end": 338.36,
+      "text": "Land between the ribs and you'll be fine."
+    },
+    {
+      "start": 338.85,
+      "end": 339.97,
+      "text": "Landmark-based approaches at-"
+    },
+    {
+      "start": 340.0,
+      "end": 343.5,
+      "text": "Notificate for doing this block at the angle of the rib, due to the relative absence of"
+    },
+    {
+      "start": 343.5,
+      "end": 348.3,
+      "text": "big back muscles such as erector spinae, rhomboids, trapezius, and lintisimus dorsi, which"
+    },
+    {
+      "start": 348.3,
+      "end": 349.74,
+      "text": "make the death to target significantly."
+    },
+    {
+      "start": 350.0,
+      "end": 354.08,
+      "text": "longer. However, this is less of a concern with the ultrasound approach unless the patient"
+    },
+    {
+      "start": 354.08,
+      "end": 358.74,
+      "text": "is extremely muscular or obese. Go where you see the space and plura best and where you"
+    },
+    {
+      "start": 358.74,
+      "end": 359.56,
+      "text": "feel the most comfortable."
+    },
+    {
+      "start": 360.22,
+      "end": 362.02,
+      "text": "And finally, there's a lot of cross coverage"
+    },
+    {
+      "start": 362.02,
+      "end": 363.16,
+      "text": "of adjacent dermatomes."
+    },
+    {
+      "start": 363.44,
+      "end": 364.66,
+      "text": "If you're after a specific level,"
+    },
+    {
+      "start": 364.82,
+      "end": 367.14,
+      "text": "say, for fractured ribs, four, five, and six,"
+    },
+    {
+      "start": 367.36,
+      "end": 369.9,
+      "text": "make sure you block the third and the seventh intercostal nerve."
+    },
+    {
+      "start": 370.0,
+      "end": 371.76,
+      "text": "as well to ensure a complete sensory block."
+    }
+  ]
+}

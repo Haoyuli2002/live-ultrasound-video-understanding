@@ -1,0 +1,93 @@
+{
+  "video_id": "WhNxq98szE8",
+  "reviewer": "stage3_b",
+  "review_scope": "Question-led review by Agent B of Agent A draft; not blind. Native full-frame sampled checkpoints and available time-indexed ASR; no continuous replay or direct listening claim.",
+  "reviewer_native_opened": [
+    1300,
+    1730,
+    1825,
+    1840,
+    1845,
+    1845.25,
+    1845.5,
+    1845.75,
+    1846,
+    1847,
+    1848,
+    1850,
+    1852,
+    1855,
+    1955,
+    2050,
+    2120,
+    2140,
+    2160,
+    2162,
+    2164,
+    2166,
+    2168,
+    2168.25,
+    2168.5,
+    2168.75,
+    2169,
+    2169.25,
+    2169.5,
+    2169.75,
+    2170,
+    2180,
+    2440,
+    2580,
+    2600,
+    2620,
+    2630,
+    2635,
+    2636,
+    2637,
+    2638,
+    2639,
+    2639.25,
+    2639.5,
+    2639.75,
+    2640,
+    2645,
+    2680
+  ],
+  "tasks": [
+    {
+      "task_index": 1,
+      "findings": "Moved next M-mode endpoint from1855 to1845.25;1845 still preceding B-mode and1845.25 already has deep horizontal bands. Separate examples, no physiological change.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 2,
+      "findings": "Moved actual vertical-artifact arrival from2180 to2168.75;2168.5 remains cartoon,2168.75 real broad fan. Revised distribution to selected frame.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 3,
+      "findings": "Moved real mottled image arrival from2645 to2639.25;2639 is transitional black,2639.25 actual image. Caption and arrow shortcut retained.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 4,
+      "findings": "Confirmed current rib-shadow and superficial line geometry at1300.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 5,
+      "findings": "Confirmed dark mottled left versus bright downward curtain right at2680; labels create shortcut.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 6,
+      "findings": "Confirmed first M-mode1730 upper bands versus lower grain and query2440; history answer already available.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    }
+  ]
+}

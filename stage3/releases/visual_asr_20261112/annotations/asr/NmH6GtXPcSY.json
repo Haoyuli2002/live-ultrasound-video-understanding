@@ -1,0 +1,393 @@
+{
+  "video_id": "NmH6GtXPcSY",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/NmH6GtXPcSY/asr.txt",
+  "segments": [
+    {
+      "start": 4.22,
+      "end": 6.9,
+      "text": "Early detection is the best offense against breast cancer."
+    },
+    {
+      "start": 7.89,
+      "end": 9.79,
+      "text": "When breast cancer is found at an early stage,"
+    },
+    {
+      "start": 10.26,
+      "end": 15.41,
+      "text": "can be more successful. A breast biopsy is a procedure that checks an area of the breast"
+    },
+    {
+      "start": 15.41,
+      "end": 19.97,
+      "text": "for scancer or other problems. A small amount of tissue is taken from the breast."
+    },
+    {
+      "start": 20.06,
+      "end": 21.96,
+      "text": "and closely looked at under a microscope."
+    },
+    {
+      "start": 22.92,
+      "end": 24.82,
+      "text": "Feeling nervous about your biopsy is normal,"
+    },
+    {
+      "start": 25.18,
+      "end": 26.16,
+      "text": "but you have no reason to worry."
+    },
+    {
+      "start": 26.92,
+      "end": 28.58,
+      "text": "Brush biopsies are regularly performed"
+    },
+    {
+      "start": 28.58,
+      "end": 29.740000000000002,
+      "text": "at Mass General Brigham."
+    },
+    {
+      "start": 29.740000000000002,
+      "end": 29.96,
+      "text": "I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry"
+    },
+    {
+      "start": 30.1,
+      "end": 31.18,
+      "text": "we're gonna take great care of you."
+    },
+    {
+      "start": 32.07,
+      "end": 34.05,
+      "text": "Next, we're gonna discuss what to expect"
+    },
+    {
+      "start": 34.05,
+      "end": 35.33,
+      "text": "during your biopsy appointment."
+    },
+    {
+      "start": 36.11,
+      "end": 37.33,
+      "text": "We recommend staying hydrated"
+    },
+    {
+      "start": 37.33,
+      "end": 38.69,
+      "text": "and eating a well-balanced meal"
+    },
+    {
+      "start": 38.69,
+      "end": 39.87,
+      "text": "before your biopsy appointment."
+    },
+    {
+      "start": 40.74,
+      "end": 43.6,
+      "text": "Please remember not to wear deodorant, moisturizer, or fragrances."
+    },
+    {
+      "start": 44.47,
+      "end": 46.85,
+      "text": "When you check in, you may be asked to show your photo ID"
+    },
+    {
+      "start": 46.85,
+      "end": 48.03,
+      "text": "and confirm your information."
+    },
+    {
+      "start": 48.89,
+      "end": 49.97,
+      "text": "Then you'll change into a-"
+    },
+    {
+      "start": 50.0,
+      "end": 54.01,
+      "text": "hospital down from the way stuff. Some patients find easier to wear a two-piece"
+    },
+    {
+      "start": 54.01,
+      "end": 58.8,
+      "text": "outfit for the biopsy. After you're changed, you'll be brought in to take a seat in"
+    },
+    {
+      "start": 58.8,
+      "end": 59.82,
+      "text": "in our patient waiting area."
+    },
+    {
+      "start": 60.1,
+      "end": 64.21,
+      "text": "your belongings. We'll give you a bag so that you can keep all of your belongings with you."
+    },
+    {
+      "start": 65.49,
+      "end": 68.91,
+      "text": "Before your breast biopsy, we'll review everything that will happen during your visit."
+    },
+    {
+      "start": 70.0,
+      "end": 74.1,
+      "text": "discussion will include an explanation of how breast biopsy is done, as well as the risks"
+    },
+    {
+      "start": 74.1,
+      "end": 75.34,
+      "text": "and benefits of the procedure."
+    },
+    {
+      "start": 76.28,
+      "end": 79.96000000000001,
+      "text": "We'll also review any important medications you're taking and any allergies you may"
+    },
+    {
+      "start": 80.96,
+      "end": 83.36,
+      "text": "You'll free to ask us questions at any point during your visit."
+    },
+    {
+      "start": 84.93,
+      "end": 86.77,
+      "text": "Once you have a clear understanding of the procedure,"
+    },
+    {
+      "start": 87.15,
+      "end": 89.67,
+      "text": "you'll be given a form to sign to agree to the breast biopsy."
+    },
+    {
+      "start": 91.25,
+      "end": 95.03,
+      "text": "Afterwards, we'll bring you into the procedure room where you'll meet your care team."
+    },
+    {
+      "start": 95.83,
+      "end": 99.85,
+      "text": "This team will include an attending doctor who oversees the procedure, a fellow doctor."
+    },
+    {
+      "start": 100.1,
+      "end": 102.26,
+      "text": "which is a radiologist specializing specifically"
+    },
+    {
+      "start": 102.26,
+      "end": 104.52,
+      "text": "in breast imaging and a technologist"
+    },
+    {
+      "start": 104.52,
+      "end": 106.0,
+      "text": "who will be helping during the procedure."
+    },
+    {
+      "start": 107.18,
+      "end": 108.62,
+      "text": "After you've met with your care team,"
+    },
+    {
+      "start": 108.82,
+      "end": 109.86,
+      "text": "you'll be positioned for imaging."
+    },
+    {
+      "start": 111.25,
+      "end": 112.97,
+      "text": "You'll lie in a bed with a cushion under your back"
+    },
+    {
+      "start": 112.97,
+      "end": 115.09,
+      "text": "and your arm next to your head for proper positioning."
+    },
+    {
+      "start": 116.09,
+      "end": 118.17,
+      "text": "Next, we'll perform an ultrasound of your breasts"
+    },
+    {
+      "start": 118.17,
+      "end": 119.97,
+      "text": "to look at the area where the biopsy..."
+    },
+    {
+      "start": 120.26,
+      "end": 120.42,
+      "text": "done."
+    },
+    {
+      "start": 121.24,
+      "end": 125.0,
+      "text": "It's important that you stay as still as possible once you have in position for your biopsy."
+    },
+    {
+      "start": 125.93,
+      "end": 128.23,
+      "text": "Once you're in a good position, we'll clean the skin."
+    },
+    {
+      "start": 130.9,
+      "end": 132.92,
+      "text": "inject local anesthetic to numb the area"
+    },
+    {
+      "start": 132.92,
+      "end": 139.4,
+      "text": "and place the biop's needle into your breast."
+    },
+    {
+      "start": 140.42,
+      "end": 141.68,
+      "text": "You will be awake for the procedure."
+    },
+    {
+      "start": 142.57,
+      "end": 144.45,
+      "text": "You may feel a little pressure in this comfort."
+    },
+    {
+      "start": 145.13,
+      "end": 147.35,
+      "text": "This is normal, but you should not feel severe"
+    },
+    {
+      "start": 147.35,
+      "end": 148.21,
+      "text": "or sharp pain."
+    },
+    {
+      "start": 148.91,
+      "end": 149.97,
+      "text": "If you feel any severe-"
+    },
+    {
+      "start": 150.0,
+      "end": 153.52,
+      "text": "pain or discomfort, tell your care team so it can help make you more comfortable."
+    },
+    {
+      "start": 156.1,
+      "end": 159.98,
+      "text": "When we begin the biopsy, you will hear a clicking noise when a small tissue sample is..."
+    },
+    {
+      "start": 160.13,
+      "end": 168.86,
+      "text": "taken from your breast. The actual biopsy is approximately 15 minutes long."
+    },
+    {
+      "start": 172.59,
+      "end": 174.25,
+      "text": "After we have taken the samples we need,"
+    },
+    {
+      "start": 174.53,
+      "end": 175.97,
+      "text": "we'll place a small biopsy clip,"
+    },
+    {
+      "start": 176.19,
+      "end": 177.57,
+      "text": "which is a tiny metallic marker"
+    },
+    {
+      "start": 177.57,
+      "end": 179.97,
+      "text": "the size of a sesame seed at the biopsy set."
+    },
+    {
+      "start": 180.0,
+      "end": 189.85,
+      "text": "Mark the exact location. Then we'll move you into more complex"
+    },
+    {
+      "start": 190.22,
+      "end": 196.11,
+      "text": "We will apply pressure at the biopsy site from 10 minutes to lessen any bruising inside your breast."
+    },
+    {
+      "start": 196.98,
+      "end": 199.82,
+      "text": "While applying pressure, we'll review the post-biopsy care instruction."
+    },
+    {
+      "start": 200.1,
+      "end": 202.42,
+      "text": "on how to care for your biopsy site at home."
+    },
+    {
+      "start": 203.38,
+      "end": 206.24,
+      "text": "Afterwards, we'll take another picture with a gentle mammogram"
+    },
+    {
+      "start": 206.24,
+      "end": 208.7,
+      "text": "to make sure the biopsy clope is in the correct location."
+    },
+    {
+      "start": 209.46,
+      "end": 209.98,
+      "text": "From start to..."
+    },
+    {
+      "start": 210.06,
+      "end": 212.54,
+      "text": "finish, your appointment will take about one and a half hours."
+    },
+    {
+      "start": 213.48,
+      "end": 217.38,
+      "text": "Most patients can return to their everyday lives right after the procedure, although you"
+    },
+    {
+      "start": 217.38,
+      "end": 219.98,
+      "text": "may experience some soreness and bruising for a few weeks after the surgery."
+    },
+    {
+      "start": 220.13,
+      "end": 223.74,
+      "text": "in 10 to 14 business days will call you with your"
+    },
+    {
+      "start": 223.74,
+      "end": 224.48,
+      "text": "biopsy results."
+    },
+    {
+      "start": 225.27,
+      "end": 226.87,
+      "text": "You may see them sooner in patient gateway."
+    },
+    {
+      "start": 227.86,
+      "end": 229.32,
+      "text": "Please give us some time to review the results"
+    },
+    {
+      "start": 229.32,
+      "end": 229.96,
+      "text": "before we call."
+    },
+    {
+      "start": 230.1,
+      "end": 234.19,
+      "text": "Here at Masterntel Bergen, we hope you have the most comparable breast biopsy experience"
+    },
+    {
+      "start": 234.19,
+      "end": 234.71,
+      "text": "possible."
+    },
+    {
+      "start": 235.3,
+      "end": 235.56,
+      "text": "Thank you."
+    }
+  ]
+}

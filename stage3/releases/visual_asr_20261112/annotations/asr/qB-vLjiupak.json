@@ -1,0 +1,1223 @@
+{
+  "video_id": "qB-vLjiupak",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/qB-vLjiupak/asr.txt",
+  "segments": [
+    {
+      "start": 1.12,
+      "end": 2.8,
+      "text": "Welcome to Point of Care Ultra Sound Geek."
+    },
+    {
+      "start": 3.29,
+      "end": 5.09,
+      "text": "Today we're going to be talking about"
+    },
+    {
+      "start": 5.09,
+      "end": 7.57,
+      "text": "trans-vaginal female pelvic anatomy."
+    },
+    {
+      "start": 10.0,
+      "end": 15.67,
+      "text": "This can be useful both for early pregnancy or gynecological ultrasound."
+    },
+    {
+      "start": 16.53,
+      "end": 19.81,
+      "text": "It is the technique I use on a daily basis to make sure I'm not missing."
+    },
+    {
+      "start": 20.0,
+      "end": 25.26,
+      "text": "as I've said before in other videos use the same scanning technique do it the"
+    },
+    {
+      "start": 25.26,
+      "end": 29.16,
+      "text": "same way every time so you don't miss something and forget about something the"
+    },
+    {
+      "start": 30.0,
+      "end": 34.48,
+      "text": "I've seen people make mistakes before as they go in, they see a pathological structure,"
+    },
+    {
+      "start": 34.82,
+      "end": 39.3,
+      "text": "or they see what they think is an intrauterine pregnancy, they get some quick measurements"
+    },
+    {
+      "start": 39.3,
+      "end": 39.9,
+      "text": "and they're done."
+    },
+    {
+      "start": 40.42,
+      "end": 44.62,
+      "text": "where they miss things or miss diagnosed the location of a pregnancy or similar."
+    },
+    {
+      "start": 45.0,
+      "end": 49.86,
+      "text": "And over the years as I've taught this, I've really understood that you need to do this the same way."
+    },
+    {
+      "start": 50.16,
+      "end": 55.33,
+      "text": "time. So whatever your technique is, that's great. However, this I'm going to show you the"
+    },
+    {
+      "start": 55.33,
+      "end": 59.89,
+      "text": "way I do it so that hopefully we're not missing things and can provide better."
+    },
+    {
+      "start": 60.03,
+      "end": 65.82,
+      "text": "care to our patients. So we're going to pick an end of"
+    },
+    {
+      "start": 65.82,
+      "end": 69.97,
+      "text": "Canvatery Probe. This is a high f-"
+    },
+    {
+      "start": 70.03,
+      "end": 74.15,
+      "text": "frequency probe, which means that we're going to see structures really well, but we're"
+    },
+    {
+      "start": 74.15,
+      "end": 75.77,
+      "text": "not going to see very deep into the pelvis."
+    },
+    {
+      "start": 76.49,
+      "end": 79.97,
+      "text": "Fortunately, it has a large viewing window, even though it looks like it has a..."
+    },
+    {
+      "start": 80.1,
+      "end": 83.6,
+      "text": "footprint at the top that's kind of wrapped around the tip of the probe and that"
+    },
+    {
+      "start": 83.6,
+      "end": 89.24,
+      "text": "allows us to be about see about 180 degrees which is great for looking in the"
+    },
+    {
+      "start": 89.24,
+      "end": 89.52,
+      "text": "pelvis."
+    },
+    {
+      "start": 90.35,
+      "end": 93.92,
+      "text": "Now, of note, our probe marker is on top of the probe"
+    },
+    {
+      "start": 93.92,
+      "end": 96.22,
+      "text": "and it's just a little bump."
+    },
+    {
+      "start": 96.66,
+      "end": 97.62,
+      "text": "I didn't take a picture of that"
+    },
+    {
+      "start": 97.62,
+      "end": 99.3,
+      "text": "but you can see it's pointed to that area."
+    },
+    {
+      "start": 100.0,
+      "end": 106.01,
+      "text": "What we have here is we have an area that when I'm talking to my learners and in the room"
+    },
+    {
+      "start": 106.01,
+      "end": 107.79,
+      "text": "with them scanning, I'll say, well, where's your trigger?"
+    },
+    {
+      "start": 107.99,
+      "end": 109.97,
+      "text": "Because the trigger is where your index..."
+    },
+    {
+      "start": 110.1,
+      "end": 119.77,
+      "text": "finger should rest and it's right here. So pointing right down at that. That is where you're"
+    },
+    {
+      "start": 120.03,
+      "end": 123.35,
+      "text": "fingers should rest and then your thumb can rest on top so whenever you're"
+    },
+    {
+      "start": 123.35,
+      "end": 127.13,
+      "text": "wondering where the probe marker is you always know where your thumb is and"
+    },
+    {
+      "start": 127.13,
+      "end": 129.9,
+      "text": "that's that's going to be that's going to"
+    },
+    {
+      "start": 130.03,
+      "end": 136.02,
+      "text": "you where the probe marker is directed. Now there's some advantages and disadvantages of"
+    },
+    {
+      "start": 136.02,
+      "end": 139.98,
+      "text": "using this probe, right? I mentioned these before, is that we can see small struts."
+    },
+    {
+      "start": 140.06,
+      "end": 146.0,
+      "text": "So you may see that early pregnancy, you may see that early fetus with a heart rate or just a yoke sac within a gestational sac."
+    },
+    {
+      "start": 146.44,
+      "end": 149.12,
+      "text": "It gives us that better resolution to see those small structures."
+    },
+    {
+      "start": 150.29,
+      "end": 154.97,
+      "text": "The disadvantage is if there's something that's up outside the pelvis, so say you're talking"
+    },
+    {
+      "start": 154.97,
+      "end": 159.97,
+      "text": "2nd trimester or there's an over-up out of the pelvis, you're not going to see them."
+    },
+    {
+      "start": 160.22,
+      "end": 162.38,
+      "text": "You only get about 8 to 10 centimeters of depth"
+    },
+    {
+      "start": 163.47,
+      "end": 165.49,
+      "text": "when scanning with an intra-cavatary probe,"
+    },
+    {
+      "start": 165.65,
+      "end": 167.75,
+      "text": "so you're not gonna see that deep into the pelvis."
+    },
+    {
+      "start": 169.57,
+      "end": 169.97,
+      "text": "And so you can..."
+    },
+    {
+      "start": 170.03,
+      "end": 175.03,
+      "text": "can't see a large structure or a structure outside of the pelvis, so just keep that in mind."
+    },
+    {
+      "start": 175.76,
+      "end": 179.94,
+      "text": "I always personally will do a trans abdominal approach first or transub."
+    },
+    {
+      "start": 180.32,
+      "end": 185.22,
+      "text": "scan first, and then if I can't see what I need to, then I will go ahead and do a"
+    },
+    {
+      "start": 185.22,
+      "end": 189.9,
+      "text": "transpational. So this is just revert reviewing the"
+    },
+    {
+      "start": 190.13,
+      "end": 196.49,
+      "text": "We see the pubic bone there and just superior to that is going to rest your bladder and then"
+    },
+    {
+      "start": 196.49,
+      "end": 197.37,
+      "text": "the uterus above that."
+    },
+    {
+      "start": 197.49,
+      "end": 199.91,
+      "text": "Now if note, you want to make sure that bladder is nice"
+    },
+    {
+      "start": 200.03,
+      "end": 205.51,
+      "text": "because unfortunately, like we said before, the intercavitary probes are not going to see deep into the pelvis,"
+    },
+    {
+      "start": 205.71,
+      "end": 209.97,
+      "text": "so if the bladder is full and pushing that uterus up and away from you, you're not going to be able to see it."
+    },
+    {
+      "start": 210.0,
+      "end": 215.82,
+      "text": "So, some of the keys to this, like I said, have them empty that bladder, so I do the trans"
+    },
+    {
+      "start": 215.82,
+      "end": 219.98,
+      "text": "abdominal approach first, if I don't see what I need to, and I'm..."
+    },
+    {
+      "start": 220.0,
+      "end": 225.16,
+      "text": "to do a transvaginal, then I have them go urinate, and empty their bladder completely, and then"
+    },
+    {
+      "start": 225.16,
+      "end": 226.94,
+      "text": "I go ahead and do a transvaginal."
+    },
+    {
+      "start": 227.44,
+      "end": 229.98,
+      "text": "If I'm doing a pelvic exam, I'll do that right before..."
+    },
+    {
+      "start": 230.0,
+      "end": 233.86,
+      "text": "or I do the trans or the trans vaginal ultrasound."
+    },
+    {
+      "start": 234.76,
+      "end": 237.42,
+      "text": "Now also keep in mind that that probe marker initially"
+    },
+    {
+      "start": 237.42,
+      "end": 238.82,
+      "text": "you're going to aim that towards the ceiling"
+    },
+    {
+      "start": 238.82,
+      "end": 239.98,
+      "text": "because our first view we're going to."
+    },
+    {
+      "start": 240.19,
+      "end": 249.27,
+      "text": "is a uterus long axis. When I teach my learners, I like to teach them to have a clean hand and a dirty hand."
+    },
+    {
+      "start": 250.61,
+      "end": 251.75,
+      "text": "So, what do I mean by that?"
+    },
+    {
+      "start": 251.89,
+      "end": 253.87,
+      "text": "Well, you've got to have a hand"
+    },
+    {
+      "start": 253.87,
+      "end": 255.25,
+      "text": "that's down near the perinium,"
+    },
+    {
+      "start": 255.45,
+      "end": 257.58,
+      "text": "controlling the probe, you know, moving it around,"
+    },
+    {
+      "start": 257.7,
+      "end": 259.98,
+      "text": "and then you've got to have a hand that's able to keep..."
+    },
+    {
+      "start": 260.0,
+      "end": 265.86,
+      "text": "your machine clean, but where you can do your calculations, your measurements, adjust"
+    },
+    {
+      "start": 265.86,
+      "end": 268.96,
+      "text": "your settings as far as gain and depth and all and frequency."
+    },
+    {
+      "start": 268.96,
+      "end": 269.12,
+      "text": "see."
+    },
+    {
+      "start": 270.29,
+      "end": 273.21,
+      "text": "For me, my left hand is my clean hand."
+    },
+    {
+      "start": 273.33,
+      "end": 275.63,
+      "text": "I'm right handed, so I scan with my right hand."
+    },
+    {
+      "start": 276.17,
+      "end": 277.53,
+      "text": "So that's going to be my dirty hand."
+    },
+    {
+      "start": 277.67,
+      "end": 279.91,
+      "text": "And the key to this is your dirty hand never."
+    },
+    {
+      "start": 280.0,
+      "end": 285.22,
+      "text": "touches the machine and your clean hand never touches down near the"
+    },
+    {
+      "start": 285.22,
+      "end": 289.36,
+      "text": "perinium so when you insert the probe what I would recommend is that you put the"
+    },
+    {
+      "start": 290.42,
+      "end": 296.66,
+      "text": "the tip of the probe right on the posterior portion of the vaginal interuitus, push down just"
+    },
+    {
+      "start": 296.66,
+      "end": 299.9,
+      "text": "a little bit and then lift the teleprobe in advance and that should get you in."
+    },
+    {
+      "start": 300.64,
+      "end": 302.36,
+      "text": "causing any discomfort to the patient."
+    },
+    {
+      "start": 306.89,
+      "end": 308.49,
+      "text": "When we look at the uterus long access,"
+    },
+    {
+      "start": 309.29,
+      "end": 309.97,
+      "text": "so this is a-"
+    },
+    {
+      "start": 310.0,
+      "end": 315.8,
+      "text": "But what we're going to do is we're going to cut it in a long axis like we see here with this dotted line"
+    },
+    {
+      "start": 315.8,
+      "end": 319.88,
+      "text": "And that's what we want to end up getting. So our initial image will look like"
+    },
+    {
+      "start": 320.06,
+      "end": 324.76,
+      "text": "something to this effect. Now your uterus does not always lie in mid-line, it can be angled"
+    },
+    {
+      "start": 324.76,
+      "end": 328.1,
+      "text": "off to the side and you could scan them once and come back and scan them later and it's"
+    },
+    {
+      "start": 328.1,
+      "end": 329.26,
+      "text": "going to be oriented different."
+    },
+    {
+      "start": 330.0,
+      "end": 335.43,
+      "text": "This is a free floating structure somewhat, and so you got to pay attention to this."
+    },
+    {
+      "start": 335.43,
+      "end": 336.19,
+      "text": "It's not just midline."
+    },
+    {
+      "start": 336.31,
+      "end": 337.63,
+      "text": "Go find this image."
+    },
+    {
+      "start": 338.13,
+      "end": 339.97,
+      "text": "You want to find the uterus in a long time."
+    },
+    {
+      "start": 340.16,
+      "end": 345.04,
+      "text": "with the fundus as we see here and really follow that endometrial stripe all the way down to the cervix."
+    },
+    {
+      "start": 345.14,
+      "end": 349.92,
+      "text": "Now remember if you're only seeing portion of the endometrial line use a rotation or a fan."
+    },
+    {
+      "start": 350.16,
+      "end": 354.44,
+      "text": "you can lengthen this out and get this type of image. So here's a live still"
+    },
+    {
+      "start": 354.44,
+      "end": 359.97,
+      "text": "image of that same same drawing pretty much. And we can see."
+    },
+    {
+      "start": 360.0,
+      "end": 364.38,
+      "text": "our fundus up here in our endometrial line and our endometrial line is just"
+    },
+    {
+      "start": 364.38,
+      "end": 368.94,
+      "text": "coming right down through there. Now if we look at this we don't see"
+    },
+    {
+      "start": 370.9,
+      "end": 372.7,
+      "text": "We cannot see the cervix over in here,"
+    },
+    {
+      "start": 373.0,
+      "end": 374.62,
+      "text": "over towards this side of the screen."
+    },
+    {
+      "start": 375.12,
+      "end": 376.64,
+      "text": "So we see that endometrial line disappear"
+    },
+    {
+      "start": 376.64,
+      "end": 379.9,
+      "text": "and all you have to do because this is anterior."
+    },
+    {
+      "start": 380.0,
+      "end": 386.24,
+      "text": "this is poster you just lift the tail of the probe up and look poster and you'll be able to see"
+    },
+    {
+      "start": 386.24,
+      "end": 389.68,
+      "text": "the cervix and you'll get a view like this and what we can see here."
+    },
+    {
+      "start": 390.86,
+      "end": 395.08,
+      "text": "is that the endometrial line is continued right here, come up along there, here's the"
+    },
+    {
+      "start": 395.08,
+      "end": 398.5,
+      "text": "posterior portion of the cervix, and here's the anterior portion."
+    },
+    {
+      "start": 401.12,
+      "end": 402.22,
+      "text": "This is just a fan through."
+    },
+    {
+      "start": 402.42,
+      "end": 404.36,
+      "text": "So what I like to do is I find that initial view"
+    },
+    {
+      "start": 404.36,
+      "end": 405.7,
+      "text": "I save an image personally,"
+    },
+    {
+      "start": 406.4,
+      "end": 408.38,
+      "text": "and then I fan over to the patient's right,"
+    },
+    {
+      "start": 408.95,
+      "end": 409.97,
+      "text": "fan-o, and-"
+    },
+    {
+      "start": 410.0,
+      "end": 412.66,
+      "text": "slowly fan towards their left and I look mostly at the fund as"
+    },
+    {
+      "start": 412.66,
+      "end": 415.94,
+      "text": "here initially and I'm going to just pay attention if there's any structures in"
+    },
+    {
+      "start": 415.94,
+      "end": 419.92,
+      "text": "the uterus that I can see or if there's anything outside the uterus that I"
+    },
+    {
+      "start": 420.0,
+      "end": 425.1,
+      "text": "can see. I'm looking for both normal and abnormal findings, but mostly I'm just defining the"
+    },
+    {
+      "start": 425.1,
+      "end": 429.94,
+      "text": "anatomy initially. If I can't find this, I don't have this in this video, but then you"
+    },
+    {
+      "start": 430.0,
+      "end": 435.3,
+      "text": "angle back, look at the cervix and do the same. Now after I fan through it once, I come"
+    },
+    {
+      "start": 435.3,
+      "end": 439.79,
+      "text": "back over to the right slowly again, giving me a second chance, but look for any"
+    },
+    {
+      "start": 440.06,
+      "end": 446.22,
+      "text": "or normal findings, and then I fan back through in this time, I'm going to save about five to six images."
+    },
+    {
+      "start": 448.73,
+      "end": 449.97,
+      "text": "Now I would do the same thing over the circle."
+    },
+    {
+      "start": 450.0,
+      "end": 452.26,
+      "text": "I usually do two to three inches in that space."
+    },
+    {
+      "start": 453.02,
+      "end": 456.5,
+      "text": "Now here we're going to see an example of a retroverted uterus."
+    },
+    {
+      "start": 456.68,
+      "end": 459.14,
+      "text": "And this is what it will look like if we have that."
+    },
+    {
+      "start": 459.3,
+      "end": 459.98,
+      "text": "Now remember..."
+    },
+    {
+      "start": 460.06,
+      "end": 461.76,
+      "text": "that the probe markers towards the ceiling."
+    },
+    {
+      "start": 462.44,
+      "end": 467.84,
+      "text": "And so this in red is our anterior"
+    },
+    {
+      "start": 467.84,
+      "end": 469.52,
+      "text": "and this in blue would be poster."
+    },
+    {
+      "start": 470.32,
+      "end": 472.22,
+      "text": "and you don't need to go rotating your probe around"
+    },
+    {
+      "start": 472.22,
+      "end": 473.28,
+      "text": "or moving any of that."
+    },
+    {
+      "start": 473.8,
+      "end": 476.52,
+      "text": "That is just simply to say that this is a retroverted"
+    },
+    {
+      "start": 476.52,
+      "end": 478.64,
+      "text": "dream to us, just make sure your probe markers up"
+    },
+    {
+      "start": 478.64,
+      "end": 479.66,
+      "text": "and it's okay."
+    },
+    {
+      "start": 480.1,
+      "end": 483.02,
+      "text": "It doesn't look like that classic drawing I've have up in the right hand corner."
+    },
+    {
+      "start": 483.5,
+      "end": 487.16,
+      "text": "This is a normal structure, this just means you have a retroverted urus."
+    },
+    {
+      "start": 490.16,
+      "end": 492.42,
+      "text": "Now we're going to do imaging in the short access."
+    },
+    {
+      "start": 492.62,
+      "end": 494.24,
+      "text": "So just like we did with transabdominal,"
+    },
+    {
+      "start": 494.36,
+      "end": 494.9,
+      "text": "we're going to image."
+    },
+    {
+      "start": 494.9,
+      "end": 496.82,
+      "text": "We finished imaging in the lock access."
+    },
+    {
+      "start": 497.08,
+      "end": 498.34,
+      "text": "Then we're going to find it in the short access."
+    },
+    {
+      "start": 498.48,
+      "end": 499.98,
+      "text": "And what I like to do is I like to find..."
+    },
+    {
+      "start": 500.0,
+      "end": 506.34,
+      "text": "the Fandus in this view, identify that endometrial stripe, and then I like to"
+    },
+    {
+      "start": 506.34,
+      "end": 509.32,
+      "text": "fan through it from there. So we're just gonna go to a real-time image."
+    },
+    {
+      "start": 510.35,
+      "end": 515.91,
+      "text": "real image and we have that nice bright hyper-echoic endometrial stripe surrounded by a hypoechoic"
+    },
+    {
+      "start": 515.91,
+      "end": 519.97,
+      "text": "to anechoic structure, and that's your entire endometrium, and then we have..."
+    },
+    {
+      "start": 520.13,
+      "end": 525.17,
+      "text": "fundus around there and we can just see that nice old shape. Now what I do from here is"
+    },
+    {
+      "start": 525.17,
+      "end": 528.76,
+      "text": "I fin up to the top of the fundus and then I slowly fan down."
+    },
+    {
+      "start": 530.03,
+      "end": 534.99,
+      "text": "the cervix. This video doesn't quite make it to the cervix in this 4-second clip, but then"
+    },
+    {
+      "start": 534.99,
+      "end": 539.09,
+      "text": "I would continue down and I would see all that. Then I personally fan back up to the top."
+    },
+    {
+      "start": 540.35,
+      "end": 545.24,
+      "text": "that allows me a second time to check out my anatomy, make sure I see what's normal and what's"
+    },
+    {
+      "start": 545.24,
+      "end": 549.9,
+      "text": "abnormal. And then I go through and I save about five to six images. And I do this all the way down."
+    },
+    {
+      "start": 550.13,
+      "end": 559.56,
+      "text": "Now, we're going to get to the part, another part that's probably the more difficult portion of this is just finding your ovaries."
+    },
+    {
+      "start": 560.03,
+      "end": 561.17,
+      "text": "Now it's not always possible."
+    },
+    {
+      "start": 561.51,
+      "end": 563.33,
+      "text": "Even great sonographers are going to struggle."
+    },
+    {
+      "start": 563.49,
+      "end": 564.53,
+      "text": "Balgas gets in the way."
+    },
+    {
+      "start": 564.87,
+      "end": 566.07,
+      "text": "You don't always find these."
+    },
+    {
+      "start": 566.25,
+      "end": 569.52,
+      "text": "And so what we're going to do is we're going to try to limit our..."
+    },
+    {
+      "start": 570.03,
+      "end": 573.77,
+      "text": "identify what we can and watch for any other abnormal structures."
+    },
+    {
+      "start": 574.35,
+      "end": 578.51,
+      "text": "One thing to mention here is I'd like to come back to this fundus view that we had before"
+    },
+    {
+      "start": 578.51,
+      "end": 579.97,
+      "text": "and I'd like to start here."
+    },
+    {
+      "start": 580.1,
+      "end": 588.3,
+      "text": "This is where I have the most success. I stand a short access when I'm looking at the"
+    },
+    {
+      "start": 588.3,
+      "end": 589.98,
+      "text": "left to image, looking for that."
+    },
+    {
+      "start": 590.03,
+      "end": 594.19,
+      "text": "that next and now. We'll have note right here on this view sometimes if we have an"
+    },
+    {
+      "start": 594.19,
+      "end": 599.34,
+      "text": "anterior reddish urus we can see our ovaries here and that's pretty normal and I"
+    },
+    {
+      "start": 599.34,
+      "end": 599.98,
+      "text": "now if i do"
+    },
+    {
+      "start": 600.0,
+      "end": 604.77,
+      "text": "I'm going to look for pathology in this area because that's going to be our aden exit now."
+    },
+    {
+      "start": 604.79,
+      "end": 608.57,
+      "text": "Remember, we shouldn't see the flopping tubes if we do. That's typically abnormal."
+    },
+    {
+      "start": 610.13,
+      "end": 614.43,
+      "text": "So we want to look for any structures, whether that flowping tube is identifiable or at an"
+    },
+    {
+      "start": 614.43,
+      "end": 615.03,
+      "text": "excellent masses."
+    },
+    {
+      "start": 615.88,
+      "end": 619.3,
+      "text": "Now, again, our other ovary can be out in here."
+    },
+    {
+      "start": 620.1,
+      "end": 627.97,
+      "text": "look at this space between. Let me take that off and that's what we're going to"
+    },
+    {
+      "start": 627.97,
+      "end": 629.45,
+      "text": "mostly focus on is just those."
+    },
+    {
+      "start": 630.7,
+      "end": 636.73,
+      "text": "I don't need an X in there. I remember you can't have them posterior. I have seen them anterior unretroverted uruses"
+    },
+    {
+      "start": 636.73,
+      "end": 639.88,
+      "text": "So just pay attention to that now here"
+    },
+    {
+      "start": 640.0,
+      "end": 645.28,
+      "text": "what we see as we see the internal iliac vessel on the right are over and then are"
+    },
+    {
+      "start": 645.28,
+      "end": 649.5,
+      "text": "used. Now remember our probe marker is directed towards the right. So this"
+    },
+    {
+      "start": 650.1,
+      "end": 653.75,
+      "text": "right now is right, and this right now is the left, okay?"
+    },
+    {
+      "start": 654.35,
+      "end": 655.97,
+      "text": "So we're gonna take that off real quick."
+    },
+    {
+      "start": 656.23,
+      "end": 659.47,
+      "text": "Now of a note is the internal iliac vessel sit."
+    },
+    {
+      "start": 660.0,
+      "end": 665.78,
+      "text": "just adjacent to your pelvic wall and so you should not see your ovaries out in this area"
+    },
+    {
+      "start": 665.78,
+      "end": 669.98,
+      "text": "out here. You just shouldn't see that. A, should, it was the..."
+    },
+    {
+      "start": 670.0,
+      "end": 676.59,
+      "text": "medium pure internal iliac vessels just like we see here so we see you going"
+    },
+    {
+      "start": 676.59,
+      "end": 679.94,
+      "text": "left to right we have our or we would be our pelvic brim"
+    },
+    {
+      "start": 680.13,
+      "end": 681.97,
+      "text": "and we have our internal iliac vein."
+    },
+    {
+      "start": 682.43,
+      "end": 685.43,
+      "text": "We see our ovary, which often has the characteristics"
+    },
+    {
+      "start": 685.43,
+      "end": 687.83,
+      "text": "of what people describe as a chocolate chip cookie,"
+    },
+    {
+      "start": 688.47,
+      "end": 689.97,
+      "text": "has hypoacolcarus with..."
+    },
+    {
+      "start": 691.72,
+      "end": 699.22,
+      "text": "and then we can see our uterus and I like to usually keep the uterus in view just so I can keep my orientation here well."
+    },
+    {
+      "start": 700.9,
+      "end": 704.32,
+      "text": "Now, this is the same image with the drawings taken off,"
+    },
+    {
+      "start": 704.5,
+      "end": 706.4,
+      "text": "and we see that hypokovic over,"
+    },
+    {
+      "start": 706.52,
+      "end": 707.66,
+      "text": "which is right here in red."
+    },
+    {
+      "start": 710.06,
+      "end": 713.46,
+      "text": "and then we can see our vessel right in there."
+    },
+    {
+      "start": 714.56,
+      "end": 718.42,
+      "text": "Now, where I would be looking for pathology,"
+    },
+    {
+      "start": 718.64,
+      "end": 719.98,
+      "text": "is not only around the ocean."
+    },
+    {
+      "start": 720.0,
+      "end": 726.08,
+      "text": "but right in here between the uterus and the ovary."
+    },
+    {
+      "start": 728.05,
+      "end": 729.59,
+      "text": "We'd be looking for adnexal masses."
+    },
+    {
+      "start": 730.06,
+      "end": 734.56,
+      "text": "able to identify that flipping to whatever it may be, but remember initially we're just looking"
+    },
+    {
+      "start": 734.56,
+      "end": 739.64,
+      "text": "to identify now to make sure we know what's going on. Now if we look over towards the left"
+    },
+    {
+      "start": 740.1,
+      "end": 744.28,
+      "text": "So we just take and we angle over towards the patient's left."
+    },
+    {
+      "start": 744.5,
+      "end": 748.56,
+      "text": "We can see in this image, we can see an ovary with a big cyst on it."
+    },
+    {
+      "start": 748.66,
+      "end": 749.74,
+      "text": "And I'll do that in red here."
+    },
+    {
+      "start": 750.0,
+      "end": 754.96,
+      "text": "Here's our ovary, and then laying just adjacent to it,"
+    },
+    {
+      "start": 755.0,
+      "end": 757.71,
+      "text": "you see those Iliac vessels again right there,"
+    },
+    {
+      "start": 757.87,
+      "end": 759.85,
+      "text": "that anti-coic to hypo."
+    },
+    {
+      "start": 760.03,
+      "end": 769.55,
+      "text": "structure bed also you can see that again and that once again I'm going to look in this area for any path"
+    },
+    {
+      "start": 769.55,
+      "end": 769.87,
+      "text": "knowledge"
+    },
+    {
+      "start": 770.0,
+      "end": 775.18,
+      "text": "And obviously, I've been paying attention throughout the scan to look for pathology, but that's"
+    },
+    {
+      "start": 775.18,
+      "end": 779.98,
+      "text": "going to help us most to understand whether we have adnexel masses or whether..."
+    },
+    {
+      "start": 780.51,
+      "end": 781.61,
+      "text": "we're seeing the fallopian tubes"
+    },
+    {
+      "start": 781.61,
+      "end": 783.27,
+      "text": "and are concerned about pathology there."
+    },
+    {
+      "start": 784.31,
+      "end": 786.88,
+      "text": "Now, if we're doing this for pregnancy,"
+    },
+    {
+      "start": 787.95,
+      "end": 789.96,
+      "text": "we, this is when I go back and I."
+    },
+    {
+      "start": 790.0,
+      "end": 796.3,
+      "text": "evaluate for where well I've already identified where it's located but this is"
+    },
+    {
+      "start": 796.3,
+      "end": 799.78,
+      "text": "where I go back and I would evaluate it now we're going to go back just"
+    },
+    {
+      "start": 800.5,
+      "end": 804.58,
+      "text": "identify where we would want to see that pregnancy. Now what we would see is we"
+    },
+    {
+      "start": 804.58,
+      "end": 808.83,
+      "text": "want to see that pregnancy right in there. We take that off. That's not a good"
+    },
+    {
+      "start": 808.83,
+      "end": 809.97,
+      "text": "color on there. So let's"
+    },
+    {
+      "start": 810.0,
+      "end": 814.84,
+      "text": "blue that'll stand up better. So right up here in the uterine fundus within the endometrial canal"
+    },
+    {
+      "start": 814.84,
+      "end": 819.85,
+      "text": "is where we would want to see that pregnancy. So in our long access we'd go back and we could"
+    },
+    {
+      "start": 820.0,
+      "end": 825.6,
+      "text": "at this in this view, and we tried to identify the structures in it. Now, like I said, the point"
+    },
+    {
+      "start": 825.6,
+      "end": 829.98,
+      "text": "of this one is not necessarily pregnancy ultrasound, but we'd want to look at it."
+    },
+    {
+      "start": 830.0,
+      "end": 835.2,
+      "text": "for an anico-extructure, which could represent a gestational sac, and then a small bright"
+    },
+    {
+      "start": 835.2,
+      "end": 839.74,
+      "text": "cheerio within that, which would represent a yoke sac, or even maybe a fetus."
+    },
+    {
+      "start": 840.06,
+      "end": 841.32,
+      "text": "This is the area we want to see."
+    },
+    {
+      "start": 841.4,
+      "end": 843.39,
+      "text": "If we don't see it, anywhere but there,"
+    },
+    {
+      "start": 843.45,
+      "end": 844.43,
+      "text": "we need to get concerned either"
+    },
+    {
+      "start": 844.43,
+      "end": 847.05,
+      "text": "is this a miscarriage or is this in the wrong location?"
+    },
+    {
+      "start": 848.63,
+      "end": 849.97,
+      "text": "And then same thing, so that's our..."
+    },
+    {
+      "start": 850.16,
+      "end": 853.9,
+      "text": "our regular video we'd want to see right down along that endometrial stripe."
+    },
+    {
+      "start": 854.97,
+      "end": 858.99,
+      "text": "And then in the fundus we'd want to see it sit right in here."
+    },
+    {
+      "start": 860.13,
+      "end": 862.55,
+      "text": "Right in that endometrium, those are typical spots."
+    },
+    {
+      "start": 862.67,
+      "end": 864.33,
+      "text": "If we're getting too located to one side,"
+    },
+    {
+      "start": 864.87,
+      "end": 866.95,
+      "text": "you got to get worried about interstitial pregnancies."
+    },
+    {
+      "start": 866.95,
+      "end": 868.21,
+      "text": "There's no good definition."
+    },
+    {
+      "start": 868.21,
+      "end": 869.97,
+      "text": "It used to say that if the..."
+    },
+    {
+      "start": 870.0,
+      "end": 872.34,
+      "text": "there was less than five millimeters of wall"
+    },
+    {
+      "start": 872.34,
+      "end": 874.12,
+      "text": "that you would have to be concerned about that."
+    },
+    {
+      "start": 875.45,
+      "end": 878.31,
+      "text": "But that's being questioned in some areas."
+    },
+    {
+      "start": 879.07,
+      "end": 879.97,
+      "text": "So I would just make sure."
+    },
+    {
+      "start": 880.48,
+      "end": 885.02,
+      "text": "along that endometrium. And if you're not certain, remember you can still ask for that"
+    },
+    {
+      "start": 885.02,
+      "end": 889.58,
+      "text": "consultative ultrasound, but at least in this one we can get an idea of"
+    },
+    {
+      "start": 890.0,
+      "end": 893.24,
+      "text": "where our structure should be, so once again it's just going to be right along that end"
+    },
+    {
+      "start": 893.24,
+      "end": 896.56,
+      "text": "of the material end of the material right there where we'd want to see that."
+    },
+    {
+      "start": 897.68,
+      "end": 899.98,
+      "text": "So, that concludes our..."
+    },
+    {
+      "start": 900.38,
+      "end": 907.76,
+      "text": "discussion of Trans-Vaginal Ultra Sound. If you have any questions, please feel free to comment below or send me an e-mail at"
+    },
+    {
+      "start": 910.0,
+      "end": 914.95,
+      "text": "you get gmail.com and I hope to see you back sometime."
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "video_id": "C60jGZsiPrs",
+  "reviewer": "stage3_b",
+  "review_scope": "Question-led review by Agent B of Agent A draft; not blind. Native full-frame sampled checkpoints and available time-indexed ASR; no continuous replay or direct listening claim.",
+  "reviewer_native_opened": [
+    460,
+    470,
+    480,
+    490,
+    500,
+    510,
+    520,
+    521,
+    522,
+    523,
+    524,
+    525,
+    526,
+    527,
+    528,
+    528.25,
+    528.5,
+    528.75,
+    529,
+    529.25,
+    529.5,
+    530,
+    540,
+    550,
+    600,
+    790,
+    800,
+    920,
+    1020,
+    1022,
+    1025,
+    1030,
+    1031,
+    1032,
+    1033,
+    1033.25,
+    1033.5,
+    1033.75,
+    1034,
+    1035,
+    1040,
+    1100
+  ],
+  "tasks": [
+    {
+      "task_number": 1,
+      "findings": "Repaired caption-answerable shape-only question:490 already states circle. Added internal projections and their placement, confirmed illustration529 after528.75faint onset; advanced550to529.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_number": 2,
+      "findings": "Confirmed600coarse small internal bright projections in actual small sonogram; no finely resolved identification/EF claim.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_number": 3,
+      "findings": "Confirmed920solidnearfieldliverabove/deepercardiacchambers; immediateanswer.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_number": 4,
+      "findings": "Advanced1040to1033.5realimagefade-inwherechannelcoursealreadydiscernible;1033.25onlyillustration.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_number": 5,
+      "findings": "Confirmed790/800ventriclesaboveatria; changedbinaryquestiontoopenpositionquestion;immediatehistoryat1100.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    }
+  ]
+}

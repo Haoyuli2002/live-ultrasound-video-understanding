@@ -1,0 +1,1083 @@
+{
+  "video_id": "vwAwvsN1mJU",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/vwAwvsN1mJU/asr.txt",
+  "segments": [
+    {
+      "start": 0.35,
+      "end": 6.43,
+      "text": "Hi and welcome to this short review on using opusant guidance for subclavian central venus"
+    },
+    {
+      "start": 6.43,
+      "end": 7.33,
+      "text": "catheterization."
+    },
+    {
+      "start": 7.91,
+      "end": 9.97,
+      "text": "I am Leon Baker, an interresting."
+    },
+    {
+      "start": 10.0,
+      "end": 14.28,
+      "text": "intensivist and critical care ultrasound follow at the University of Alberta."
+    },
+    {
+      "start": 15.98,
+      "end": 19.96,
+      "text": "One of the most common opinions on subcavian line insertion is that..."
+    },
+    {
+      "start": 20.0,
+      "end": 29.82,
+      "text": "is a blind procedure and that most providers prefer to have this as such. This was certainly"
+    },
+    {
+      "start": 30.0,
+      "end": 36.2,
+      "text": "my opinion too, until I was shown just how much easier auto sound can make this procedure."
+    },
+    {
+      "start": 36.65,
+      "end": 39.98,
+      "text": "Why keep yourself blind if there is a-"
+    },
+    {
+      "start": 40.0,
+      "end": 49.34,
+      "text": "way to see where you are going. Subclavian vein cannulation being a non-autosound kind of procedure is very common. In fact,"
+    },
+    {
+      "start": 50.13,
+      "end": 59.89,
+      "text": "In this cross-sectional survey done across the USA between 2014 and 2015 found that ultrasound was routinely used for"
+    },
+    {
+      "start": 60.0,
+      "end": 64.4,
+      "text": "internal jugular insertion, but not so for sub-glavian vein placement."
+    },
+    {
+      "start": 65.34,
+      "end": 69.54,
+      "text": "The most common reason for this was limited access to ultrasound machines."
+    },
+    {
+      "start": 70.93,
+      "end": 77.96,
+      "text": "I must admit that this sounds odd, as that apparent limited axis does not seem to pose a barrier"
+    },
+    {
+      "start": 77.96,
+      "end": 79.92,
+      "text": "for internal jugular ends."
+    },
+    {
+      "start": 80.0,
+      "end": 88.56,
+      "text": "It is now even known that internal jugular vein insertion is easy and has a fairly low"
+    },
+    {
+      "start": 90.45,
+      "end": 93.13,
+      "text": "This certainly could have overpowered the need"
+    },
+    {
+      "start": 93.13,
+      "end": 94.89,
+      "text": "for subcaviate in vain cannulation."
+    },
+    {
+      "start": 96.57,
+      "end": 99.84,
+      "text": "Another reason could be the leaf or..."
+    },
+    {
+      "start": 100.0,
+      "end": 104.8,
+      "text": "received obstruction posed by the cubicle in gaining good views of the subcabian vein."
+    },
+    {
+      "start": 105.93,
+      "end": 109.89,
+      "text": "Niner of these reasons were however evident in this survey."
+    },
+    {
+      "start": 110.0,
+      "end": 114.89,
+      "text": "My objectives for this short review is as follows."
+    },
+    {
+      "start": 116.0,
+      "end": 118.5,
+      "text": "Well, take a look at the relevant anatomy."
+    },
+    {
+      "start": 119.28,
+      "end": 119.98,
+      "text": "Then we'll turn up-"
+    },
+    {
+      "start": 120.0,
+      "end": 125.54,
+      "text": "attention and briefly look at the evidence to see if there is any support for using Ottersound"
+    },
+    {
+      "start": 125.54,
+      "end": 129.97,
+      "text": "for this procedure. Next we will briefly describe ways of a-"
+    },
+    {
+      "start": 130.03,
+      "end": 136.02,
+      "text": "wiring the views needed. Note please that this is not a review of in-plane or out-of-plane"
+    },
+    {
+      "start": 136.02,
+      "end": 139.93,
+      "text": "needle in session techniques, but this I refer you to any"
+    },
+    {
+      "start": 140.0,
+      "end": 146.03,
+      "text": "good textbook. Next, we will take a look at real-time videos of what the anatomy looks"
+    },
+    {
+      "start": 146.03,
+      "end": 149.97,
+      "text": "like on ultrasound. Firstly, let's do..."
+    },
+    {
+      "start": 150.0,
+      "end": 156.35,
+      "text": "our attention to the televent anatomy. Let's start by looking at the internal"
+    },
+    {
+      "start": 156.35,
+      "end": 159.8,
+      "text": "jugular vein. This is after all the place."
+    },
+    {
+      "start": 160.03,
+      "end": 163.93,
+      "text": "where the essential venous catheters are most commonly placed."
+    },
+    {
+      "start": 165.15,
+      "end": 169.98,
+      "text": "It is found vertically and anterior laterally on the side of the neck."
+    },
+    {
+      "start": 170.0,
+      "end": 175.86,
+      "text": "It joins the subclavian vein to form the breakycephalic or enominate vein."
+    },
+    {
+      "start": 177.24,
+      "end": 179.78,
+      "text": "Central venus catheters are usually inserted."
+    },
+    {
+      "start": 180.0,
+      "end": 183.2,
+      "text": "between the two heads of the sternoplydomestoid muscle."
+    },
+    {
+      "start": 184.29,
+      "end": 189.44,
+      "text": "Moving laterally, let's consider the large vessels coming from the arm, we'll start with"
+    },
+    {
+      "start": 189.44,
+      "end": 189.98,
+      "text": "the auxiliary..."
+    },
+    {
+      "start": 190.0,
+      "end": 198.76,
+      "text": "The auxiliary vein is formed more distally by the anastomosis of the basilic and..."
+    },
+    {
+      "start": 200.0,
+      "end": 209.18,
+      "text": "Cracial veins, literally in the arm. This is not depicted on this cartoon. The axillary vein is then formed"
+    },
+    {
+      "start": 210.0,
+      "end": 214.5,
+      "text": "And runs all the way to the lateral border of the first rib, which is more or less in"
+    },
+    {
+      "start": 214.5,
+      "end": 218.07,
+      "text": "line with the anastomosis of the cephalic vein."
+    },
+    {
+      "start": 218.84,
+      "end": 219.32,
+      "text": "next"
+    },
+    {
+      "start": 220.0,
+      "end": 226.6,
+      "text": "we'll turn our attention to that the subclavian vein. Subclavian vein starts at the lateral"
+    },
+    {
+      "start": 226.6,
+      "end": 229.97,
+      "text": "border of the first rub and the..."
+    },
+    {
+      "start": 230.03,
+      "end": 234.29,
+      "text": "runs until it anestimoses with the internal jugular vein."
+    },
+    {
+      "start": 235.34,
+      "end": 239.62,
+      "text": "As you can see, it soon dives below the clavicle."
+    },
+    {
+      "start": 241.6,
+      "end": 244.0,
+      "text": "Next, let us turn our attention to the literature."
+    },
+    {
+      "start": 245.72,
+      "end": 247.5,
+      "text": "We'll start with this review article."
+    },
+    {
+      "start": 248.08,
+      "end": 249.68,
+      "text": "In it, they..."
+    },
+    {
+      "start": 250.0,
+      "end": 256.54,
+      "text": "identified four major studies that compared landmark techniques to autosound guided"
+    },
+    {
+      "start": 256.54,
+      "end": 259.89,
+      "text": "placement, most notably two paper"
+    },
+    {
+      "start": 260.0,
+      "end": 269.92,
+      "text": "found very favorable findings. The first one would be this one by Frazier et al. In it, they found it"
+    },
+    {
+      "start": 270.0,
+      "end": 273.84,
+      "text": "Protestant guidance was found to improve success rates markedly."
+    },
+    {
+      "start": 275.1,
+      "end": 279.98,
+      "text": "There was a reduced rate of mechanical complications, including arterial punter and he-"
+    },
+    {
+      "start": 280.0,
+      "end": 285.12,
+      "text": "term of formation. Most notably though, there was a reduction in the rate of new"
+    },
+    {
+      "start": 285.12,
+      "end": 289.96,
+      "text": "from a thoracese. This was thought to be likely secondary to the abel-"
+    },
+    {
+      "start": 290.0,
+      "end": 294.18,
+      "text": "to visualize the needle and prevent posterior vessel wall penetration."
+    },
+    {
+      "start": 295.57,
+      "end": 297.49,
+      "text": "The next one was this last paper."
+    },
+    {
+      "start": 297.49,
+      "end": 299.96,
+      "text": "In it they found increased..."
+    },
+    {
+      "start": 300.0,
+      "end": 305.7,
+      "text": "success rates for inexperienced operators and reduction in minor complications."
+    },
+    {
+      "start": 305.7,
+      "end": 309.87,
+      "text": "Next, in this Cochrane review in 2008."
+    },
+    {
+      "start": 310.03,
+      "end": 319.75,
+      "text": "15 comparing subcabian vein cannulation to femoral vein cannulation with or without the use of ultrasound 30."
+    },
+    {
+      "start": 320.0,
+      "end": 329.42,
+      "text": "studies were identified. A total, pooled participant number of 2341 were found."
+    },
+    {
+      "start": 330.86,
+      "end": 335.07,
+      "text": "ultrasound guidance were used in nine of these studies,"
+    },
+    {
+      "start": 335.35,
+      "end": 337.01,
+      "text": "specific to the subclavian vein."
+    },
+    {
+      "start": 337.54,
+      "end": 339.96,
+      "text": "And in that, they found reduced arterial."
+    },
+    {
+      "start": 340.06,
+      "end": 346.1,
+      "text": "structure, reduced hematoma formation, and therefore concluded somewhat small gains for"
+    },
+    {
+      "start": 346.1,
+      "end": 347.12,
+      "text": "the use of ultrasound."
+    },
+    {
+      "start": 347.12,
+      "end": 349.96,
+      "text": "next we'll"
+    },
+    {
+      "start": 350.0,
+      "end": 357.0,
+      "text": "in our attention to this 2013 meta-analysis looking at central venous catheter cannulation"
+    },
+    {
+      "start": 357.0,
+      "end": 359.78,
+      "text": "using autosound versus a landmark."
+    },
+    {
+      "start": 360.06,
+      "end": 369.68,
+      "text": "technique. They identified 26 studies with 4185 participants. Overall, they found that, in the ultrasound,"
+    },
+    {
+      "start": 370.06,
+      "end": 376.31,
+      "text": "groups, they were decreased cannulation failure, decreased hematoma formation, decreased arterial"
+    },
+    {
+      "start": 376.31,
+      "end": 379.67,
+      "text": "puncture and decreased pneumothorax formation."
+    },
+    {
+      "start": 380.74,
+      "end": 389.74,
+      "text": "These findings were mirrored by two other meta-analyses, which found that there was a significant reduction in arterial puncture and hematoma formation."
+    },
+    {
+      "start": 390.51,
+      "end": 393.39,
+      "text": "as well as an improved rate of successful cannulation"
+    },
+    {
+      "start": 393.71,
+      "end": 396.87,
+      "text": "using real-time ultrasound with a longitudinal"
+    },
+    {
+      "start": 396.87,
+      "end": 399.63,
+      "text": "in-plane infracurricular approach."
+    },
+    {
+      "start": 400.8,
+      "end": 407.38,
+      "text": "Therefore, overall, the common themes seem to be less arterial puncture, less pneumothorax"
+    },
+    {
+      "start": 407.38,
+      "end": 409.92,
+      "text": "formation, less hematoma, as well as"
+    },
+    {
+      "start": 410.0,
+      "end": 415.61,
+      "text": "reduced attempts. For a further deep dive and discussion of the evidence, I refer you"
+    },
+    {
+      "start": 415.61,
+      "end": 419.86,
+      "text": "to this wonderful textbook. So how do you require the views required?"
+    },
+    {
+      "start": 420.0,
+      "end": 426.33,
+      "text": "for subclaiming vein cannulation guidance. Again, I refer you to this wonderful paper by"
+    },
+    {
+      "start": 426.33,
+      "end": 429.85,
+      "text": "Resize it at all in it your"
+    },
+    {
+      "start": 430.0,
+      "end": 439.18,
+      "text": "a step by step guide so let's break it down. We will first turn our attention to the short axis"
+    },
+    {
+      "start": 439.18,
+      "end": 439.78,
+      "text": "this video."
+    },
+    {
+      "start": 442.66,
+      "end": 448.8,
+      "text": "This view is obtained by placing the linear high frequency probe in a longitudinal orientation"
+    },
+    {
+      "start": 448.8,
+      "end": 449.88,
+      "text": "with the probe mark."
+    },
+    {
+      "start": 450.03,
+      "end": 451.77,
+      "text": "towards the patient's head."
+    },
+    {
+      "start": 452.47,
+      "end": 459.91,
+      "text": "Close to the sternoclavicular joint, the probe is gently moved laterally towards the arm."
+    },
+    {
+      "start": 460.03,
+      "end": 466.22,
+      "text": "to identify all the relevant anatomy. We will first break it down by looking at some stall pictures."
+    },
+    {
+      "start": 467.4,
+      "end": 469.86,
+      "text": "Here, we can identify the clavicle."
+    },
+    {
+      "start": 470.67,
+      "end": 478.26,
+      "text": "the subclavian vein, the subclavian artery and very importantly the plural line next."
+    },
+    {
+      "start": 480.06,
+      "end": 484.2,
+      "text": "The probe is moved slightly more lateral until the cephalic vein comes into view."
+    },
+    {
+      "start": 484.91,
+      "end": 486.99,
+      "text": "This is the next point of interest."
+    },
+    {
+      "start": 487.92,
+      "end": 489.18,
+      "text": "Install pictures again."
+    },
+    {
+      "start": 490.26,
+      "end": 499.98,
+      "text": "identify the gavicle, the subcavian archie, the subcavian vein, and the clearer line. No-"
+    },
+    {
+      "start": 500.0,
+      "end": 508.59,
+      "text": "as mentioned the sephalic vein is the only difference in this view. This in ultrasound terms denotes"
+    },
+    {
+      "start": 508.59,
+      "end": 509.75,
+      "text": "the start at the auxiliary."
+    },
+    {
+      "start": 510.0,
+      "end": 519.28,
+      "text": "as you move more laterally. Moving laterally still, you will find views of the"
+    },
+    {
+      "start": 519.28,
+      "end": 519.92,
+      "text": "Excellery face."
+    },
+    {
+      "start": 520.0,
+      "end": 527.08,
+      "text": "and auxiliary artery, first you find the auxiliary vein, and next to it, the auxiliary artery."
+    },
+    {
+      "start": 528.0,
+      "end": 529.98,
+      "text": "Note however, that the auxiliary artery is"
+    },
+    {
+      "start": 530.03,
+      "end": 535.49,
+      "text": "wrapped in a neurovascular bundle, and attempted access this far lateral increases the risk of"
+    },
+    {
+      "start": 535.49,
+      "end": 536.65,
+      "text": "of their vascular injury."
+    },
+    {
+      "start": 538.14,
+      "end": 539.97,
+      "text": "Next, these can be-"
+    },
+    {
+      "start": 540.0,
+      "end": 548.95,
+      "text": "obtained using a transverse orientation. This will give you a long axis view of the relevant anatomy."
+    },
+    {
+      "start": 550.42,
+      "end": 556.77,
+      "text": "The probe is therefore turned transverse with its marker towards the operator in the"
+    },
+    {
+      "start": 556.77,
+      "end": 559.35,
+      "text": "Install a picture, identify."
+    },
+    {
+      "start": 560.22,
+      "end": 569.1,
+      "text": "distal subclavian vein, the proximal are zillary vein, the cephalic vein, again note that"
+    },
+    {
+      "start": 569.1,
+      "end": 569.88,
+      "text": "in autosynography."
+    },
+    {
+      "start": 570.0,
+      "end": 576.88,
+      "text": "terms, the cephalic vein denotes the start of the proximal axillary vein. Note also that"
+    },
+    {
+      "start": 577.78,
+      "end": 579.98,
+      "text": "that the sub-caving R tree will only be 1-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-"
+    },
+    {
+      "start": 580.0,
+      "end": 583.66,
+      "text": "visible by aiming the probe a little bit more syphilad."
+    },
+    {
+      "start": 585.38,
+      "end": 589.88,
+      "text": "The long axis view of the anatomy as the added benefit of visualising more of a net"
+    },
+    {
+      "start": 590.0,
+      "end": 595.12,
+      "text": "me at any given time. It also creates the possibility of in-plane"
+    },
+    {
+      "start": 595.12,
+      "end": 599.89,
+      "text": "Calilization. Remember again that this tutorial is not aimed"
+    },
+    {
+      "start": 600.0,
+      "end": 607.82,
+      "text": "discussing in-plane or out-of-plane cannibalisation. Next we'll briefly turn our attention to identifying"
+    },
+    {
+      "start": 607.82,
+      "end": 609.56,
+      "text": "veins versus artery."
+    },
+    {
+      "start": 610.8,
+      "end": 615.5,
+      "text": "For this, we will employ compressibility as well as different forms of Doppler."
+    },
+    {
+      "start": 617.16,
+      "end": 619.86,
+      "text": "In this presentation, I hope to demonstrate these things."
+    },
+    {
+      "start": 620.0,
+      "end": 622.52,
+      "text": "techniques in the videos at the end of the presentation."
+    },
+    {
+      "start": 622.98,
+      "end": 628.51,
+      "text": "For a quick explanation, however, I will use still pictures from the review article, from"
+    },
+    {
+      "start": 628.51,
+      "end": 629.67,
+      "text": "Reset at all."
+    },
+    {
+      "start": 630.45,
+      "end": 635.74,
+      "text": "I'm also assuming some familiarity with the use of pulsed wave Doppler, but if I said"
+    },
+    {
+      "start": 635.74,
+      "end": 639.97,
+      "text": "to say it allows the measurement of blood cell velocity at..."
+    },
+    {
+      "start": 640.0,
+      "end": 649.96,
+      "text": "specific given point. So how can you use Ballstwaft Doppler to differentiate veins from arteries using the long"
+    },
+    {
+      "start": 650.0,
+      "end": 657.34,
+      "text": "axis plane, place bosswave Doppler with angle correction inside the vessel that you are interrogating."
+    },
+    {
+      "start": 657.73,
+      "end": 659.67,
+      "text": "The pickle of Venus"
+    },
+    {
+      "start": 660.0,
+      "end": 669.32,
+      "text": "will be seen in veins. This is typically a continuous venous hum or in this example some positivity."
+    },
+    {
+      "start": 670.54,
+      "end": 676.1,
+      "text": "Note that the flow direction, although it is dependent on your angle of interrogation,"
+    },
+    {
+      "start": 676.66,
+      "end": 679.42,
+      "text": "is in general away from your probe."
+    },
+    {
+      "start": 680.26,
+      "end": 683.24,
+      "text": "On the right is an example of arterial possibility."
+    },
+    {
+      "start": 683.98,
+      "end": 686.4,
+      "text": "It is demonstrated here with its diacritic notch."
+    },
+    {
+      "start": 687.14,
+      "end": 689.98,
+      "text": "Note also that the velocities are much, much..."
+    },
+    {
+      "start": 690.06,
+      "end": 698.06,
+      "text": "and in that in this example the flow is towards the probe. Again, this may depend on your"
+    },
+    {
+      "start": 698.06,
+      "end": 699.74,
+      "text": "angle of interrogation."
+    },
+    {
+      "start": 700.7,
+      "end": 705.84,
+      "text": "What about arm positioning? Does arm positioning change the visible vascular anatomy and ultrasound?"
+    },
+    {
+      "start": 707.0,
+      "end": 709.56,
+      "text": "This anatomical study using ultrasound visualization."
+    },
+    {
+      "start": 710.0,
+      "end": 716.88,
+      "text": "would suggest so. In this study, which was an anatomic ultrasound study of healthy non-pregnant"
+    },
+    {
+      "start": 716.88,
+      "end": 719.8,
+      "text": "volunteers between the ages of 18 to 50."
+    },
+    {
+      "start": 720.8,
+      "end": 723.22,
+      "text": "So one group had they arm in the neutral position."
+    },
+    {
+      "start": 723.94,
+      "end": 729.97,
+      "text": "The next group had their arms in 90 degree abduction, 90 degree flexion."
+    },
+    {
+      "start": 730.03,
+      "end": 739.24,
+      "text": "of the shoulder and external rotation. In this study it was demonstrated that in the abducted"
+    },
+    {
+      "start": 739.24,
+      "end": 739.74,
+      "text": "on position."
+    },
+    {
+      "start": 740.0,
+      "end": 746.28,
+      "text": "the cross-sectional area of the vein was increased, the depth of the vein was also reduced."
+    },
+    {
+      "start": 747.36,
+      "end": 749.86,
+      "text": "Unfortunately, there was no difference in the distance."
+    },
+    {
+      "start": 750.0,
+      "end": 755.92,
+      "text": "to the sub-cavian archery or the pliera. Again, please note that this was an"
+    },
+    {
+      "start": 755.92,
+      "end": 759.86,
+      "text": "anatomic study. What about the target? As noted,"
+    },
+    {
+      "start": 760.0,
+      "end": 766.55,
+      "text": "a little bit earlier. Given the anatomy, the vessel most commonly canulated using this technique"
+    },
+    {
+      "start": 766.55,
+      "end": 768.37,
+      "text": "will be the extraordinary fine."
+    },
+    {
+      "start": 769.37,
+      "end": 769.93,
+      "text": "Focus, tch."
+    },
+    {
+      "start": 770.1,
+      "end": 771.7,
+      "text": "therefore be on a few things."
+    },
+    {
+      "start": 772.12,
+      "end": 775.92,
+      "text": "Firstly, the target point should be approximately"
+    },
+    {
+      "start": 775.92,
+      "end": 778.42,
+      "text": "four centimeters from the mid-clavicle."
+    },
+    {
+      "start": 779.12,
+      "end": 779.84,
+      "text": "To note it here,"
+    },
+    {
+      "start": 780.03,
+      "end": 785.72,
+      "text": "by the white block in this cartoon. It should also be with a vainly seen at its largest"
+    },
+    {
+      "start": 786.2,
+      "end": 789.72,
+      "text": "and most superficial, and of course, the further there is a way."
+    },
+    {
+      "start": 790.48,
+      "end": 794.12,
+      "text": "from the pleural line as well as the auxiliary archie,"
+    },
+    {
+      "start": 796.12,
+      "end": 797.98,
+      "text": "note that the more lateral you move,"
+    },
+    {
+      "start": 798.55,
+      "end": 799.97,
+      "text": "the more risk you have, oh."
+    },
+    {
+      "start": 800.1,
+      "end": 803.07,
+      "text": "causing a neurovascular injury."
+    },
+    {
+      "start": 803.96,
+      "end": 805.56,
+      "text": "So what does the anatomy look like?"
+    },
+    {
+      "start": 807.96,
+      "end": 809.78,
+      "text": "For this, we'll turn our attention."
+    },
+    {
+      "start": 810.0,
+      "end": 812.4,
+      "text": "to short-axis videos first."
+    },
+    {
+      "start": 813.73,
+      "end": 819.86,
+      "text": "Note again, that is explained earlier, the probe is in the longitudinal plane with the"
+    },
+    {
+      "start": 820.0,
+      "end": 822.42,
+      "text": "probe marker towards the patient's head."
+    },
+    {
+      "start": 823.02,
+      "end": 829.73,
+      "text": "The probe is then moved laterally, as the anatomy is followed on screen in real time."
+    },
+    {
+      "start": 830.67,
+      "end": 831.99,
+      "text": "Here is what it looks like."
+    },
+    {
+      "start": 840.8,
+      "end": 848.53,
+      "text": "The first point of interest is the cubicle. Note its shadow. Next, the subcribian vain"
+    },
+    {
+      "start": 848.53,
+      "end": 849.35,
+      "text": "comes into view."
+    },
+    {
+      "start": 854.03,
+      "end": 855.59,
+      "text": "and then the sub-grabion R-tree."
+    },
+    {
+      "start": 863.36,
+      "end": 869.63,
+      "text": "then the pleural line is identified, not the variability of the subcavian vein."
+    },
+    {
+      "start": 872.62,
+      "end": 879.15,
+      "text": "Moving further lateral, the auxiliary vein and auxiliary artery will come into view."
+    },
+    {
+      "start": 880.0,
+      "end": 884.06,
+      "text": "Here is the accessory vein, and next to it the accessory artery."
+    },
+    {
+      "start": 886.54,
+      "end": 889.93,
+      "text": "In another example, this time in a patient with a slight-"
+    },
+    {
+      "start": 890.1,
+      "end": 898.68,
+      "text": "larger targets, the following will be seen. In this example there's a phallic vein"
+    },
+    {
+      "start": 898.68,
+      "end": 899.68,
+      "text": "all to become visible."
+    },
+    {
+      "start": 901.06,
+      "end": 906.43,
+      "text": "Also note that in this video the operator moves literally from the most"
+    },
+    {
+      "start": 906.43,
+      "end": 909.75,
+      "text": "point, until the auxiliary vein in the"
+    },
+    {
+      "start": 909.75,
+      "end": 909.97,
+      "text": "Thanks a lot."
+    },
+    {
+      "start": 910.0,
+      "end": 917.07,
+      "text": "archery is identified. The operator then moves back immediately to assess the"
+    },
+    {
+      "start": 917.07,
+      "end": 919.56,
+      "text": "the best access point for"
+    },
+    {
+      "start": 920.1,
+      "end": 929.13,
+      "text": "the cannulation, compressibility is used to confirm venous axis. Let's have a look."
+    },
+    {
+      "start": 930.74,
+      "end": 935.3,
+      "text": "Again, the clavicle is identified, the subclavian or vein."
+    },
+    {
+      "start": 937.97,
+      "end": 939.17,
+      "text": "There's the subclavian vein again."
+    },
+    {
+      "start": 940.8,
+      "end": 943.68,
+      "text": "subcabin archery, vein, and cephalic vein."
+    },
+    {
+      "start": 946.66,
+      "end": 947.64,
+      "text": "Here is the auxiliary vein."
+    },
+    {
+      "start": 951.57,
+      "end": 959.69,
+      "text": "Exillary vein again and moving back immediately, the target is identified."
+    },
+    {
+      "start": 962.14,
+      "end": 969.97,
+      "text": "Note the compressibility. Next, we will take a look at what the anatomy looks like in the long-"
+    },
+    {
+      "start": 970.03,
+      "end": 975.57,
+      "text": "Recall that this view is obtained by placing the probe in a transverse"
+    },
+    {
+      "start": 975.57,
+      "end": 979.75,
+      "text": "fashion with the probe marker towards the operator."
+    },
+    {
+      "start": 980.67,
+      "end": 989.89,
+      "text": "Note that in this video a few additional things will be seen other than identifying some key anatomy, the use of compressibility"
+    },
+    {
+      "start": 990.0,
+      "end": 996.52,
+      "text": "The color Doppler and Pulsewave Doppler will be employed to differentiate arteries from veins."
+    },
+    {
+      "start": 997.29,
+      "end": 997.67,
+      "text": "Let's watch."
+    },
+    {
+      "start": 1001.34,
+      "end": 1008.88,
+      "text": "The subcabian vein is identified, next the subcabian arch is identified."
+    },
+    {
+      "start": 1014.16,
+      "end": 1017.6,
+      "text": "Note the pulse subtility or variability of the cyclavian vein."
+    },
+    {
+      "start": 1017.6,
+      "end": 1019.96,
+      "text": "kind of doctor is a"
+    },
+    {
+      "start": 1020.1,
+      "end": 1028.27,
+      "text": "Note that some possibility is seen, but whilst we have Doppler, the flow is away from the probe."
+    },
+    {
+      "start": 1030.8,
+      "end": 1036.87,
+      "text": "Here's an oblique view with both vessels in view and adding some color, the difference"
+    },
+    {
+      "start": 1036.87,
+      "end": 1039.97,
+      "text": "between arterial and venous flow is clearly..."
+    },
+    {
+      "start": 1040.03,
+      "end": 1049.98,
+      "text": "Next, the subcavian arteries identified with color Doppler, basing pulse wave Doppler."
+    },
+    {
+      "start": 1050.0,
+      "end": 1058.68,
+      "text": "through it reveals typical arterial pulsatility with high velocities and flow towards the probe."
+    },
+    {
+      "start": 1060.26,
+      "end": 1063.42,
+      "text": "But a critic matching can be seen in some of these ways."
+    },
+    {
+      "start": 1065.82,
+      "end": 1069.61,
+      "text": "I hope that this short tutorial was able to demonstrate."
+    },
+    {
+      "start": 1070.0,
+      "end": 1076.98,
+      "text": "that the visualization of the subcavian vein and auxiliary vein with ultrasound is feasible and easy."
+    },
+    {
+      "start": 1078.99,
+      "end": 1079.87,
+      "text": "The literature suggests"
+    },
+    {
+      "start": 1080.0,
+      "end": 1085.2,
+      "text": "using ultrasound guidance to reduce mechanical complications and increase accuracy."
+    },
+    {
+      "start": 1086.32,
+      "end": 1089.98,
+      "text": "I hope that this video will inspire you to at least..."
+    },
+    {
+      "start": 1090.0,
+      "end": 1096.46,
+      "text": "investigate the feasibility of this and perhaps start using it in your practice in the future."
+    },
+    {
+      "start": 1098.76,
+      "end": 1099.8,
+      "text": "Ultimately, yes."
+    },
+    {
+      "start": 1100.0,
+      "end": 1102.92,
+      "text": "You can do this procedure blind, but why?"
+    },
+    {
+      "start": 1104.8,
+      "end": 1106.08,
+      "text": "Thank you very much for listening."
+    },
+    {
+      "start": 1106.9,
+      "end": 1107.58,
+      "text": "Take care out there."
+    }
+  ]
+}

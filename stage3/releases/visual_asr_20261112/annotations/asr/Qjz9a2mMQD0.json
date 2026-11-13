@@ -1,0 +1,733 @@
+{
+  "video_id": "Qjz9a2mMQD0",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/Qjz9a2mMQD0/asr.txt",
+  "segments": [
+    {
+      "start": 0.58,
+      "end": 5.54,
+      "text": "In this video, I discussed the general principles for successful and safe ultrasound guided internal"
+    },
+    {
+      "start": 5.54,
+      "end": 6.7,
+      "text": "drug levain cannulation."
+    },
+    {
+      "start": 7.87,
+      "end": 9.97,
+      "text": "The real-time insertion process will be done."
+    },
+    {
+      "start": 10.0,
+      "end": 19.85,
+      "text": "demonstrated in another video. Before you embark on any ultrasound guided central line insertion, you should be familiar with the contents of the particular equipment."
+    },
+    {
+      "start": 20.03,
+      "end": 24.72,
+      "text": "that you're using and the additional supplies that you need to complete the procedure."
+    },
+    {
+      "start": 25.64,
+      "end": 29.06,
+      "text": "You should be familiar with the sequence of steps involved in the insertion process."
+    },
+    {
+      "start": 30.03,
+      "end": 35.05,
+      "text": "guide-wire insertion, dilation of the soft tissue track, patheter insertion in"
+    },
+    {
+      "start": 35.05,
+      "end": 39.19,
+      "text": "guide-wire removal, checking port patency, and dressing the catheter's"
+    },
+    {
+      "start": 39.19,
+      "end": 39.81,
+      "text": "site appropriately."
+    },
+    {
+      "start": 41.25,
+      "end": 44.53,
+      "text": "Finally, you should ensure that you're familiar with the operation of the ultrasound machine"
+    },
+    {
+      "start": 44.53,
+      "end": 48.4,
+      "text": "for image optimization and how to apply a sterile probe cover."
+    },
+    {
+      "start": 50.96,
+      "end": 55.34,
+      "text": "The broad objectives are first to identify the target vein, which requires familiarity"
+    },
+    {
+      "start": 55.34,
+      "end": 57.68,
+      "text": "with the clinical anatomy and solo anatomy."
+    },
+    {
+      "start": 59.23,
+      "end": 59.97,
+      "text": "Second, is..."
+    },
+    {
+      "start": 60.0,
+      "end": 65.57,
+      "text": "to insert the cannula successfully, ideally with as few puncture attempts as possible, and"
+    },
+    {
+      "start": 65.57,
+      "end": 69.81,
+      "text": "to do so safely. Serious complications such as plural puncture."
+    },
+    {
+      "start": 70.0,
+      "end": 72.7,
+      "text": "and crotted archery puncture should be avoided at all costs."
+    },
+    {
+      "start": 73.71,
+      "end": 76.51,
+      "text": "Avoiding posterior vein wall puncture is desirable,"
+    },
+    {
+      "start": 76.85,
+      "end": 79.53,
+      "text": "although it's not usually a major problem if it does occur."
+    },
+    {
+      "start": 82.27,
+      "end": 86.34,
+      "text": "It's important with complex technical procedures, such as this, to invest time and effort"
+    },
+    {
+      "start": 86.34,
+      "end": 89.75,
+      "text": "in setting up for good ergonomics, if this is possible."
+    },
+    {
+      "start": 90.03,
+      "end": 94.78,
+      "text": "your environment. The essential things are trying to keep everything in the same line of sight"
+    },
+    {
+      "start": 94.78,
+      "end": 99.98,
+      "text": "and with an easy reach. Internal juggler lines almost always require that you stand..."
+    },
+    {
+      "start": 100.0,
+      "end": 104.27,
+      "text": "at the head of the patient and the ultrasound machine should be positioned on the same side"
+    },
+    {
+      "start": 104.27,
+      "end": 109.7,
+      "text": "as the line insertion, ensure that both the working area and ultrasound screen are in"
+    },
+    {
+      "start": 109.7,
+      "end": 109.96,
+      "text": "the same position."
+    },
+    {
+      "start": 110.0,
+      "end": 115.61,
+      "text": "line of sight and if possible also have all of your equipment on the side of your dominant hand"
+    },
+    {
+      "start": 116.0,
+      "end": 119.7,
+      "text": "so that you don't have to reach across yourself or twist to pick up stuff."
+    },
+    {
+      "start": 122.46,
+      "end": 124.76,
+      "text": "One of the most important recommendations I have"
+    },
+    {
+      "start": 124.76,
+      "end": 126.84,
+      "text": "is to never use ultrasound gel"
+    },
+    {
+      "start": 126.84,
+      "end": 128.28,
+      "text": "in vascular access procedures."
+    },
+    {
+      "start": 129.38,
+      "end": 129.64,
+      "text": "Instead,"
+    },
+    {
+      "start": 130.0,
+      "end": 134.1,
+      "text": "some saline to establish an air-free interface between the probe and the patient's skin."
+    },
+    {
+      "start": 135.47,
+      "end": 139.8,
+      "text": "A few drops of fluid is all you need, and you will see that you can obtain a perfect"
+    },
+    {
+      "start": 140.0,
+      "end": 147.26,
+      "text": "good image. Gel has no advantages at all, and more importantly, gel causes critical problems"
+    },
+    {
+      "start": 147.26,
+      "end": 149.96,
+      "text": "with effective equipment handling the spec-"
+    },
+    {
+      "start": 150.0,
+      "end": 154.75,
+      "text": "safe and efficient dilator advancement, and it also often interferes with"
+    },
+    {
+      "start": 154.75,
+      "end": 157.05,
+      "text": "dressing adherents if not cleaned up properly."
+    },
+    {
+      "start": 160.32,
+      "end": 165.06,
+      "text": "The ultrasound probe is placed in a transverse orientation approximately midway between the"
+    },
+    {
+      "start": 165.06,
+      "end": 169.12,
+      "text": "clavicle and the mastoid process over the sternoclidomastoid muscle."
+    },
+    {
+      "start": 170.35,
+      "end": 174.25,
+      "text": "the internal jugular vein and common carotid artery lie under this muscle."
+    },
+    {
+      "start": 175.41,
+      "end": 179.93,
+      "text": "Other structures that may be seen include the anterior scaling muscle laterally and the"
+    },
+    {
+      "start": 179.93,
+      "end": 179.97,
+      "text": "I'm going to make sure that you're going to make sure that you're going to make sure that you're going to make sure that you're going to make sure that you're going to make sure that you're going to make sure that you're going to make sure that you're going to make sure that you're going to make sure that you're going to make sure that you're going to make sure that you're going to make sure that you're going to make sure that you're going to make sure that you're going to make sure that you're going to make sure that you're going to make sure that you're going to make sure that you're going to make sure that you're going to make sure that you're going to make sure that you're going to make sure that you're going to make sure that you're going to make sure that you're going to make sure that you're going to make sure that you're going to make sure that you're going to make sure that you're going to make sure that you're going to make sure that you're going to make sure"
+    },
+    {
+      "start": 180.03,
+      "end": 186.73,
+      "text": "fire at Glenn and Chirquia immediately. The probe should be slid along the course of"
+    },
+    {
+      "start": 186.73,
+      "end": 189.25,
+      "text": "the vein to assess its relationship to the archery."
+    },
+    {
+      "start": 190.38,
+      "end": 194.44,
+      "text": "The probe should also be bound slightly on the vein to compress it and assess how well-filled"
+    },
+    {
+      "start": 194.44,
+      "end": 194.92,
+      "text": "it is."
+    },
+    {
+      "start": 195.95,
+      "end": 199.55,
+      "text": "It's easy to clean the puncture and can lead a well-filled vein."
+    },
+    {
+      "start": 200.32,
+      "end": 204.29,
+      "text": "So if appropriate, increase the head down tilt of the patient to encourage filling."
+    },
+    {
+      "start": 206.65,
+      "end": 209.97,
+      "text": "The ideal puncture point of the vein is where the vein is lateral to the artery."
+    },
+    {
+      "start": 210.0,
+      "end": 214.1,
+      "text": "rather than overlying it. They'll tend to diverge from each other more"
+    },
+    {
+      "start": 214.1,
+      "end": 218.18,
+      "text": "distantly closer to the clavicle. However, I do not generally recommend that the"
+    },
+    {
+      "start": 218.18,
+      "end": 219.98,
+      "text": "probe be placed that low as"
+    },
+    {
+      "start": 220.1,
+      "end": 224.93,
+      "text": "dome of the plower rises up in this region and it will increase the risk of inadvertent"
+    },
+    {
+      "start": 225.45,
+      "end": 225.75,
+      "text": "Cloropuncture."
+    },
+    {
+      "start": 229.37,
+      "end": 229.97,
+      "text": "Next, these guns..."
+    },
+    {
+      "start": 230.03,
+      "end": 232.31,
+      "text": "consider is the needle insertion angle to reach the vein."
+    },
+    {
+      "start": 234.03,
+      "end": 238.47,
+      "text": "One option that some people suggest, but that I do not recommend, is to insert the needle"
+    },
+    {
+      "start": 238.47,
+      "end": 239.89,
+      "text": "at 45 degrees or so."
+    },
+    {
+      "start": 240.06,
+      "end": 242.62,
+      "text": "to the proven patient, similar to the Lamuk guided approach."
+    },
+    {
+      "start": 244.43,
+      "end": 246.07,
+      "text": "The main reason I don't recommend it"
+    },
+    {
+      "start": 246.07,
+      "end": 248.63,
+      "text": "is because that I believe it increases the risk"
+    },
+    {
+      "start": 248.63,
+      "end": 249.97,
+      "text": "of pleural puncture and..."
+    },
+    {
+      "start": 250.03,
+      "end": 256.33,
+      "text": "It's difficult to accurately locate the needle tip, and also to focus on both the ultrasound"
+    },
+    {
+      "start": 256.33,
+      "end": 259.83,
+      "text": "image and be aware of the depth of needle insertion and advancement."
+    },
+    {
+      "start": 260.0,
+      "end": 263.1,
+      "text": "at the same time, particularly for less experienced operators."
+    },
+    {
+      "start": 266.28,
+      "end": 269.92,
+      "text": "The risk is also increased if the angle of insertion is inadvertent."
+    },
+    {
+      "start": 270.0,
+      "end": 278.34,
+      "text": "made shallower than intended. To instead insert the needle at a steep angle or was vertically downwards"
+    },
+    {
+      "start": 278.34,
+      "end": 279.88,
+      "text": "with the insertion sight closed."
+    },
+    {
+      "start": 280.0,
+      "end": 286.91,
+      "text": "the probe. There is then almost no risk of inadvertent plural puncture. Once the vein is"
+    },
+    {
+      "start": 286.91,
+      "end": 289.42,
+      "text": "center, drop your hand to flatten the needle."
+    },
+    {
+      "start": 290.06,
+      "end": 294.14,
+      "text": "ensuring that you are pivoting around the tip of the needle, rather than lifting the tip out of the vein."
+    },
+    {
+      "start": 297.5,
+      "end": 298.82,
+      "text": "There are some important points to note."
+    },
+    {
+      "start": 300.0,
+      "end": 304.46,
+      "text": "The large gauge of the introducer needle, especially if using an 18 gauge versus a 20 gauge"
+    },
+    {
+      "start": 304.46,
+      "end": 309.14,
+      "text": "needle, means that significant force is often needed to pierce the skin in other tissue layers."
+    },
+    {
+      "start": 310.51,
+      "end": 313.49,
+      "text": "a steeper angle will facilitate piercing of the skin."
+    },
+    {
+      "start": 314.9,
+      "end": 317.86,
+      "text": "I also don't worry about trying to aspirate on the syringe at this point."
+    },
+    {
+      "start": 318.58,
+      "end": 319.96,
+      "text": "Rather, I hold the syringe in a way..."
+    },
+    {
+      "start": 320.0,
+      "end": 323.76,
+      "text": "that gives me maximum control over the needle insertion, as you can see here."
+    },
+    {
+      "start": 325.34,
+      "end": 329.96,
+      "text": "Another thing that helps if you're having trouble with penetrating tough skin is to stretch..."
+    },
+    {
+      "start": 330.13,
+      "end": 337.28,
+      "text": "skin with the other hand. Put down the probe temporarily if you have to, and aim just to enter into"
+    },
+    {
+      "start": 337.28,
+      "end": 339.98,
+      "text": "subcutaneous tissues in a very controlled fa..."
+    },
+    {
+      "start": 349.12,
+      "end": 349.76,
+      "text": "That's the"
+    },
+    {
+      "start": 350.03,
+      "end": 354.25,
+      "text": "Pressure through the needle is going to distort and tend the tissue layers and compress"
+    },
+    {
+      "start": 354.25,
+      "end": 357.17,
+      "text": "the internal jugular vein, especially if it is underfilled."
+    },
+    {
+      "start": 358.2,
+      "end": 359.96,
+      "text": "As a result, I do not just focus on the..."
+    },
+    {
+      "start": 360.0,
+      "end": 363.72,
+      "text": "ultrasound screen when initially inserting and advancing the needle as it's"
+    },
+    {
+      "start": 363.72,
+      "end": 366.72,
+      "text": "hard to tell exactly what depth your needle tip is at instead."
+    },
+    {
+      "start": 370.45,
+      "end": 375.69,
+      "text": "Observe your needle hand directly and concentrate on advancing in a controlled stepwise"
+    },
+    {
+      "start": 375.69,
+      "end": 379.89,
+      "text": "fashion through each facial and muscular layer and eventually the end."
+    },
+    {
+      "start": 380.0,
+      "end": 386.84,
+      "text": "revenge wall. Focus on detecting the tactile give as each layer is pierced and relax"
+    },
+    {
+      "start": 386.84,
+      "end": 389.77,
+      "text": "for a quick pressure on the needle between these grooves."
+    },
+    {
+      "start": 390.22,
+      "end": 393.68,
+      "text": "allow the tissue layers to rebound and the vein to re-expand."
+    },
+    {
+      "start": 396.08,
+      "end": 399.7,
+      "text": "Gently bouncing up and down with the needle will indent the next facial layer."
+    },
+    {
+      "start": 400.45,
+      "end": 406.12,
+      "text": "And thus you'll be able to see precisely where the tip is in relation to the different layers and structures."
+    },
+    {
+      "start": 413.04,
+      "end": 416.02,
+      "text": "It's also important to try and visualize your needle tip during the procedure."
+    },
+    {
+      "start": 417.38,
+      "end": 419.96,
+      "text": "With an out-of-plane approach, the needle shaft can..."
+    },
+    {
+      "start": 420.0,
+      "end": 426.03,
+      "text": "often be mistaken for the tip. There are certain giveaways in the appearance, including acoustic or"
+    },
+    {
+      "start": 426.03,
+      "end": 429.97,
+      "text": "grayscale shadowing rather than a clearly defined hyper-equate point."
+    },
+    {
+      "start": 432.11,
+      "end": 437.38,
+      "text": "always try and slide the probe to improve to confirm if the needle is actually deeper than you think."
+    },
+    {
+      "start": 438.71,
+      "end": 439.93,
+      "text": "Here, you can see..."
+    },
+    {
+      "start": 440.03,
+      "end": 444.01,
+      "text": "a typical appearance of a kneel tip, which has been withdrawn into the lumen of the vein,"
+    },
+    {
+      "start": 444.86,
+      "end": 448.36,
+      "text": "and contrast that with the image of the shaft on the left side of the slide."
+    },
+    {
+      "start": 452.56,
+      "end": 456.74,
+      "text": "Now ideally, we would identify the tip earlier on in the process and slide the probe"
+    },
+    {
+      "start": 456.74,
+      "end": 459.76,
+      "text": "distantly to track the advancing needle tip."
+    },
+    {
+      "start": 460.38,
+      "end": 462.06,
+      "text": "to avoid going deeper than we intend."
+    },
+    {
+      "start": 464.71,
+      "end": 466.97,
+      "text": "However, it can sometimes be tricky to slide the probe,"
+    },
+    {
+      "start": 467.54,
+      "end": 469.0,
+      "text": "especially if the clavicle is in the way,"
+    },
+    {
+      "start": 469.2,
+      "end": 469.98,
+      "text": "so in alternative..."
+    },
+    {
+      "start": 470.0,
+      "end": 475.74,
+      "text": "is to tilt the probe and fan the beam to track the new-less advances. Unlike with nerves,"
+    },
+    {
+      "start": 475.96,
+      "end": 479.58,
+      "text": "this tilting of the probe does not change the visibility of our target, which is the vein."
+    },
+    {
+      "start": 480.26,
+      "end": 484.94,
+      "text": "And so I would recommend this over-sliding for out-of-plane vascular access as it's more"
+    },
+    {
+      "start": 484.94,
+      "end": 487.32,
+      "text": "intuitive for less experienced operators."
+    },
+    {
+      "start": 490.86,
+      "end": 494.66,
+      "text": "Another important point in one that I've learned from my own experiences is to take the"
+    },
+    {
+      "start": 494.66,
+      "end": 498.96,
+      "text": "time and effort to ensure that the needle is coming down in the absolute center of the vein."
+    },
+    {
+      "start": 500.19,
+      "end": 503.69,
+      "text": "robbing with a bouncing motion before you commit to puncture is very helpful here."
+    },
+    {
+      "start": 504.78,
+      "end": 509.26,
+      "text": "This ensures that the vein will not slide away from your needle as your advanced appears to vein."
+    },
+    {
+      "start": 510.0,
+      "end": 515.0,
+      "text": "It also minimizes the risk of poor Venus backflow and difficulty threading the wire, both"
+    },
+    {
+      "start": 515.0,
+      "end": 517.9,
+      "text": "of which are common problems when you pierce the vein close to its edges."
+    },
+    {
+      "start": 519.45,
+      "end": 519.83,
+      "text": "Don't hesitate."
+    },
+    {
+      "start": 520.0,
+      "end": 524.32,
+      "text": "to make a new skin puncture if you have to, although usually you can drag the skin across"
+    },
+    {
+      "start": 524.32,
+      "end": 525.04,
+      "text": "a little instead."
+    },
+    {
+      "start": 527.24,
+      "end": 529.98,
+      "text": "Another useful tip is that if you're infiltrating local anesthesia..."
+    },
+    {
+      "start": 530.0,
+      "end": 535.4,
+      "text": "with a 25 gauge needle, visualise this needle and the injection of local anesthetic to confirm"
+    },
+    {
+      "start": 535.4,
+      "end": 539.97,
+      "text": "that you are in line with the centre of the vein. Finally, it's worth re-"
+    },
+    {
+      "start": 540.0,
+      "end": 544.14,
+      "text": "emphasizing that you must not fixate on the ultrasound screen, but instead divide your"
+    },
+    {
+      "start": 544.14,
+      "end": 548.04,
+      "text": "concentration between what is happening on the screen and what your hands and the needle"
+    },
+    {
+      "start": 548.04,
+      "end": 548.92,
+      "text": "are actually doing."
+    },
+    {
+      "start": 551.38,
+      "end": 555.62,
+      "text": "The final point I'll touch on is my view on an in-plane approach using a long-axis view"
+    },
+    {
+      "start": 555.62,
+      "end": 556.8,
+      "text": "of the internal juggler vein."
+    },
+    {
+      "start": 557.75,
+      "end": 559.11,
+      "text": "This has some theoretical advantages."
+    },
+    {
+      "start": 559.73,
+      "end": 559.97,
+      "text": "The f-"
+    },
+    {
+      "start": 560.03,
+      "end": 564.07,
+      "text": "The probe footprint means that you'll start higher up on the neck and thus further away from the lung."
+    },
+    {
+      "start": 565.32,
+      "end": 569.18,
+      "text": "You can judge the needle trajectory better and perhaps avoid piercing the posterior wall."
+    },
+    {
+      "start": 570.06,
+      "end": 576.14,
+      "text": "it can be easier to locate the needle tip. But all this is only true if you can achieve good alignment"
+    },
+    {
+      "start": 576.14,
+      "end": 579.9,
+      "text": "of needle, beam, and vein and maintain that through other."
+    },
+    {
+      "start": 580.06,
+      "end": 583.27,
+      "text": "Frankly, I personally find this quite hard."
+    },
+    {
+      "start": 584.44,
+      "end": 589.19,
+      "text": "In addition, the clavicle is often in the way of larger probes and being forced to enter"
+    },
+    {
+      "start": 589.19,
+      "end": 589.97,
+      "text": "high up on the neck."
+    },
+    {
+      "start": 590.0,
+      "end": 596.04,
+      "text": "also means that the vein will be overlying the archery with an increased risk of puncturing the archery."
+    },
+    {
+      "start": 597.34,
+      "end": 599.88,
+      "text": "I personally never really ever use a long axis view."
+    },
+    {
+      "start": 600.0,
+      "end": 604.95,
+      "text": "the vein, but it can be valuable confirmed that the guide wire is lying within the vein"
+    },
+    {
+      "start": 605.37,
+      "end": 607.63,
+      "text": "before you commit to dilating the needle track."
+    },
+    {
+      "start": 611.44,
+      "end": 615.37,
+      "text": "In the next video, I will walk through the actual insertion process of an internal"
+    },
+    {
+      "start": 615.37,
+      "end": 618.07,
+      "text": "Dragular Central Venus Candle to illustrate these points."
+    }
+  ]
+}

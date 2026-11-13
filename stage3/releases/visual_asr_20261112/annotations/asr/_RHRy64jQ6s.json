@@ -1,0 +1,673 @@
+{
+  "video_id": "_RHRy64jQ6s",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/_RHRy64jQ6s/asr.txt",
+  "segments": [
+    {
+      "start": 12.43,
+      "end": 16.05,
+      "text": "Hello, my name is Phil Pereira, and I'm the emergency ultrasound coordinator at the"
+    },
+    {
+      "start": 16.05,
+      "end": 19.57,
+      "text": "New York Presbyterian Hospital in New York City, and welcome!"
+    },
+    {
+      "start": 20.19,
+      "end": 25.8,
+      "text": "sound bites cases. Today's module is going to look at the use of bedside ultrasound for placement"
+    },
+    {
+      "start": 25.8,
+      "end": 29.92,
+      "text": "of central venous catheters, specifically the internal jugular vein in the neck."
+    },
+    {
+      "start": 30.0,
+      "end": 36.98,
+      "text": "So the question is, why use ultrasound for central venous access and why not just use the traditional landmark technique?"
+    },
+    {
+      "start": 37.66,
+      "end": 39.92,
+      "text": "Well interestingly, multiple research studies"
+    },
+    {
+      "start": 40.0,
+      "end": 44.16,
+      "text": "Nowadays, now show a decreased number of puncture tents are needed using ultrasound guidance,"
+    },
+    {
+      "start": 44.42,
+      "end": 49.14,
+      "text": "and there's also a lower complication rate, such as lowering the risk of pneumothorax"
+    },
+    {
+      "start": 49.14,
+      "end": 49.98,
+      "text": "and hematoma."
+    },
+    {
+      "start": 50.0,
+      "end": 56.16,
+      "text": "The US Agency for Healthcare Research, the AHRQ, recommends ultrasound guidance for central"
+    },
+    {
+      "start": 56.16,
+      "end": 59.1,
+      "text": "lines right up there in the top 10 patient safety practices."
+    },
+    {
+      "start": 60.1,
+      "end": 61.76,
+      "text": "Aldrosound will allow precise determination"
+    },
+    {
+      "start": 61.76,
+      "end": 64.0,
+      "text": "of the anatomy of the vasculous structures in the neck"
+    },
+    {
+      "start": 64.0,
+      "end": 65.76,
+      "text": "prior to a puncture attempt."
+    },
+    {
+      "start": 66.9,
+      "end": 68.1,
+      "text": "Here's the middle triangle of the neck"
+    },
+    {
+      "start": 68.1,
+      "end": 69.96,
+      "text": "that serves as the standard approach for..."
+    },
+    {
+      "start": 70.0,
+      "end": 71.84,
+      "text": "of the internal jugular vein."
+    },
+    {
+      "start": 72.34,
+      "end": 75.08,
+      "text": "We see here the branches of the sternomastoid muscle,"
+    },
+    {
+      "start": 75.28,
+      "end": 76.86,
+      "text": "the sternal head medially,"
+    },
+    {
+      "start": 77.16,
+      "end": 79.1,
+      "text": "and the clavicular head laterally."
+    },
+    {
+      "start": 79.72,
+      "end": 79.98,
+      "text": "Here we're..."
+    },
+    {
+      "start": 80.06,
+      "end": 82.22,
+      "text": "putting our finger into the triangle of the neck,"
+    },
+    {
+      "start": 82.64,
+      "end": 84.78,
+      "text": "and this indentation between the muscle heads"
+    },
+    {
+      "start": 84.78,
+      "end": 87.2,
+      "text": "would be the standard approach for placement of the needle."
+    },
+    {
+      "start": 87.9,
+      "end": 89.98,
+      "text": "We see here that the clavicle forms the in-"
+    },
+    {
+      "start": 90.0,
+      "end": 94.34,
+      "text": "your boundary of the middle triangle of the neck. Within the middle triangle of the neck"
+    },
+    {
+      "start": 94.34,
+      "end": 98.94,
+      "text": "run two very important vascular structures and as per the textbook orientation of the"
+    },
+    {
+      "start": 98.94,
+      "end": 99.96,
+      "text": "crotted artery to"
+    },
+    {
+      "start": 100.0,
+      "end": 104.96,
+      "text": "the internal jugular vein, we see in the image here that the carotid artery should run"
+    },
+    {
+      "start": 104.96,
+      "end": 108.88,
+      "text": "medial to the internal jugular vein which lies lateral to the artery."
+    },
+    {
+      "start": 110.0,
+      "end": 114.96,
+      "text": "However, unfortunately there's great variability in human anatomy, and many times the internal"
+    },
+    {
+      "start": 114.96,
+      "end": 118.98,
+      "text": "jugular vein can overlap the carotid artery as shown in the drawing here."
+    },
+    {
+      "start": 120.26,
+      "end": 124.56,
+      "text": "Notice the variation in location of the internal jugular vein to the carotid artery."
+    },
+    {
+      "start": 125.1,
+      "end": 129.54,
+      "text": "And many times the internal jugular vein is located on top of the carotid artery,"
+    },
+    {
+      "start": 130.03,
+      "end": 131.47,
+      "text": "getting it difficult to cannulate."
+    },
+    {
+      "start": 132.34,
+      "end": 136.8,
+      "text": "Thus, it's important to look with ultrasound before cannulation attempts to avoid punctured"
+    },
+    {
+      "start": 136.8,
+      "end": 137.94,
+      "text": "to the carotid artery."
+    },
+    {
+      "start": 139.56,
+      "end": 139.98,
+      "text": "Here's the high f-"
+    },
+    {
+      "start": 140.06,
+      "end": 144.42,
+      "text": "frequency linear type array probe that we'll be using to best map out the internal jugular"
+    },
+    {
+      "start": 144.42,
+      "end": 149.38,
+      "text": "vein before puncture attempts. Notice the probe marker there to the side of the probe."
+    },
+    {
+      "start": 150.48,
+      "end": 154.06,
+      "text": "Here are the orientations that we can place the high frequency probe in relation to the"
+    },
+    {
+      "start": 154.06,
+      "end": 157.2,
+      "text": "internal jugular vein for vascular line placement."
+    },
+    {
+      "start": 157.62,
+      "end": 159.98,
+      "text": "Here to the left we see the short axis config-"
+    },
+    {
+      "start": 160.03,
+      "end": 168.99,
+      "text": "with the probe perpendicular to the vessel, and notice that the vessel will appear on the ultrasound's screen as a circle, as the vessel will be cut and on."
+    },
+    {
+      "start": 170.03,
+      "end": 174.75,
+      "text": "Right, we see the long axis configuration and note the probe placed along the long axis"
+    },
+    {
+      "start": 174.75,
+      "end": 175.79,
+      "text": "course of the vessel."
+    },
+    {
+      "start": 176.23,
+      "end": 179.83,
+      "text": "The vessel therefore on the screen will appear as a tubular structure."
+    },
+    {
+      "start": 180.0,
+      "end": 181.84,
+      "text": "as shown here in the image to the right."
+    },
+    {
+      "start": 182.76,
+      "end": 186.44,
+      "text": "Here's the high frequency linear type array probe placed over the middle triangle of the"
+    },
+    {
+      "start": 186.44,
+      "end": 189.22,
+      "text": "neck, over the internal jugular vein and carotid artery."
+    },
+    {
+      "start": 190.0,
+      "end": 194.0,
+      "text": "Now I like to have the pro positioned in a side to side orientation with the marker dot"
+    },
+    {
+      "start": 194.0,
+      "end": 197.02,
+      "text": "oriented towards my left as I stand at the head of the bed."
+    },
+    {
+      "start": 197.44,
+      "end": 199.72,
+      "text": "The reason for that is then the orientation"
+    },
+    {
+      "start": 200.0,
+      "end": 205.7,
+      "text": "of the probe, Marker, will line up to the orientation of the screen indicator dot which we see here"
+    },
+    {
+      "start": 205.7,
+      "end": 209.98,
+      "text": "is oriented towards the left on the ultrasound screen. That's the left side of the probe."
+    },
+    {
+      "start": 210.0,
+      "end": 214.72,
+      "text": "We'll orient directly to the left side of the screen, and this will allow us to orient ourselves"
+    },
+    {
+      "start": 214.72,
+      "end": 218.32,
+      "text": "as we place the needle underneath the patient's neck and cannulate the vein."
+    },
+    {
+      "start": 219.32,
+      "end": 219.98,
+      "text": "Here's a typical..."
+    },
+    {
+      "start": 220.0,
+      "end": 223.94,
+      "text": "The appearance of the internal jugular vein and carotid artery in a short axis configuration"
+    },
+    {
+      "start": 224.46,
+      "end": 226.6,
+      "text": "taken with a B-mode or grayscale image."
+    },
+    {
+      "start": 227.14,
+      "end": 229.64,
+      "text": "Note ladle here towards the left and medial to the right."
+    },
+    {
+      "start": 230.22,
+      "end": 234.32,
+      "text": "Here we notice the internal jugular vein in a location more lateral and superficial to"
+    },
+    {
+      "start": 234.32,
+      "end": 237.52,
+      "text": "the carotid artery which lies deeper and medial to the vein."
+    },
+    {
+      "start": 237.84,
+      "end": 239.96,
+      "text": "We can see the depth markers to the side and we..."
+    },
+    {
+      "start": 240.0,
+      "end": 243.36,
+      "text": "note the internal jugular vein at about 1.5 centimeters depth."
+    },
+    {
+      "start": 244.54,
+      "end": 248.74,
+      "text": "Now we can apply Doppler Synography to further differentiate the two structures, and here"
+    },
+    {
+      "start": 248.74,
+      "end": 249.88,
+      "text": "again we notice the internal"
+    },
+    {
+      "start": 250.0,
+      "end": 253.34,
+      "text": "jugular vein, lying lateral and superficial to the carotid artery."
+    },
+    {
+      "start": 254.33,
+      "end": 258.55,
+      "text": "We note that Doppler synography steady pulsations of the internal jugular vein that vary with"
+    },
+    {
+      "start": 258.55,
+      "end": 259.97,
+      "text": "respiratory pattern and"
+    },
+    {
+      "start": 260.0,
+      "end": 264.16,
+      "text": "And we can also see the carotid artery with the pulsations with each heartbeat differentiating"
+    },
+    {
+      "start": 264.16,
+      "end": 264.92,
+      "text": "the two structures."
+    },
+    {
+      "start": 265.38,
+      "end": 269.42,
+      "text": "We can also press down with the probe to differentiate the two structures, the internal"
+    },
+    {
+      "start": 269.42,
+      "end": 269.98,
+      "text": "don't juggle your v-"
+    },
+    {
+      "start": 270.0,
+      "end": 275.02,
+      "text": "a compressed completely while the more muscular outer walls of the carotid artery should keep it open"
+    },
+    {
+      "start": 275.02,
+      "end": 279.88,
+      "text": "with compression of the pro. Here's another video clip showing the internal jugular vein"
+    },
+    {
+      "start": 280.0,
+      "end": 282.7,
+      "text": "and carotid artery in a short-axis configuration."
+    },
+    {
+      "start": 283.28,
+      "end": 287.86,
+      "text": "Notice here that this internal jugular vein is much more distended than in the last patient."
+    },
+    {
+      "start": 288.9,
+      "end": 289.98,
+      "text": "Here we see that the internal..."
+    },
+    {
+      "start": 290.03,
+      "end": 295.65,
+      "text": "jugular vein is located more superficially at about 0.5 centimeters and that it overlaps"
+    },
+    {
+      "start": 295.65,
+      "end": 297.31,
+      "text": "the carotid artery medially."
+    },
+    {
+      "start": 298.84,
+      "end": 299.94,
+      "text": "By letting the fact that there's great"
+    },
+    {
+      "start": 300.1,
+      "end": 303.94,
+      "text": "variability in the course of the internal jugular vein in relation to the carotid artery,"
+    },
+    {
+      "start": 304.1,
+      "end": 307.98,
+      "text": "even within the same patient, were running the probe from position high within the neck"
+    },
+    {
+      "start": 307.98,
+      "end": 309.98,
+      "text": "in which the internal jugular vein has seen more"
+    },
+    {
+      "start": 310.0,
+      "end": 314.94,
+      "text": "laterally to a position more inferiorly in which the internal jugular vein comes to rest"
+    },
+    {
+      "start": 314.94,
+      "end": 317.22,
+      "text": "more immediately on top of the carotid artery."
+    },
+    {
+      "start": 317.66,
+      "end": 319.9,
+      "text": "Here's a different patient in which the internal jugular"
+    },
+    {
+      "start": 320.03,
+      "end": 325.78,
+      "text": "as seen smack on top of the carotid artery. Notice here we'll place Doppler flow to confirm"
+    },
+    {
+      "start": 325.78,
+      "end": 329.8,
+      "text": "the carotid artery, shown here deeper to the more superficial internal"
+    },
+    {
+      "start": 330.03,
+      "end": 330.69,
+      "text": "jugular vein."
+    },
+    {
+      "start": 331.55,
+      "end": 335.25,
+      "text": "In this patient it would be extremely difficult to cannulate the internal jugular vein without"
+    },
+    {
+      "start": 335.25,
+      "end": 339.97,
+      "text": "puncturing the carotid artery, best to attempt cannulation in another area of the body."
+    },
+    {
+      "start": 340.0,
+      "end": 344.73,
+      "text": "One pearl that can be used to further distant the internal jugular vein and make it a better"
+    },
+    {
+      "start": 344.73,
+      "end": 348.47,
+      "text": "target for a cannulation attempt is to have the patient falçalva or hum."
+    },
+    {
+      "start": 348.99,
+      "end": 349.97,
+      "text": "Notice here in the..."
+    },
+    {
+      "start": 350.03,
+      "end": 354.31,
+      "text": "to the left, the patient is bearing down, and notice that the internal jugular vein becomes"
+    },
+    {
+      "start": 354.31,
+      "end": 356.85,
+      "text": "much bigger as the patient pushes down."
+    },
+    {
+      "start": 356.85,
+      "end": 359.89,
+      "text": "and the image to the right note the..."
+    },
+    {
+      "start": 360.0,
+      "end": 364.54,
+      "text": "A relatively small caliber of the internal jugular vein, notice that it's almost as big"
+    },
+    {
+      "start": 364.54,
+      "end": 369.64,
+      "text": "here as the carotid artery, but that it becomes much more distended as the patient bears down."
+    },
+    {
+      "start": 371.15,
+      "end": 375.37,
+      "text": "Using the Valsalva technique can make it a much better target for placement of the large"
+    },
+    {
+      "start": 375.37,
+      "end": 376.53,
+      "text": "cannulation needle."
+    },
+    {
+      "start": 377.33,
+      "end": 379.55,
+      "text": "Here's the high frequency probe placed in a longitudinal"
+    },
+    {
+      "start": 380.0,
+      "end": 382.42,
+      "text": "or long-access manner on the patient's neck."
+    },
+    {
+      "start": 383.14,
+      "end": 385.2,
+      "text": "Notice here that it's running along the course"
+    },
+    {
+      "start": 385.2,
+      "end": 386.56,
+      "text": "of the internal jugular vein"
+    },
+    {
+      "start": 386.56,
+      "end": 388.94,
+      "text": "as it runs up and down the patient's neck."
+    },
+    {
+      "start": 389.5,
+      "end": 389.96,
+      "text": "By can..."
+    },
+    {
+      "start": 390.0,
+      "end": 394.68,
+      "text": "here, I like to have the probe marker towards the patient's head. Therefore, I know where"
+    },
+    {
+      "start": 394.68,
+      "end": 399.78,
+      "text": "it lines up on the ultrasound's screen. Notice here, as a screen indicator dot is towards"
+    },
+    {
+      "start": 400.0,
+      "end": 404.22,
+      "text": "left that superior on the internal jugular vein will be located towards the left of the"
+    },
+    {
+      "start": 404.22,
+      "end": 408.24,
+      "text": "screen, and inferior will be located towards the right of the screen."
+    },
+    {
+      "start": 410.0,
+      "end": 412.3,
+      "text": "This is a long axis view of an internal jugular vein."
+    },
+    {
+      "start": 412.7,
+      "end": 416.96,
+      "text": "I have the probe marker going more distally or superior within the neck, so to the left"
+    },
+    {
+      "start": 416.96,
+      "end": 419.28,
+      "text": "is distal and to the right is proximal."
+    },
+    {
+      "start": 420.03,
+      "end": 424.55,
+      "text": "Notice the internal jugular vein that appears like a tubular structure on the ultrasound"
+    },
+    {
+      "start": 424.55,
+      "end": 428.29,
+      "text": "screen, and we see the blood flowing here from left to right."
+    },
+    {
+      "start": 430.0,
+      "end": 434.82,
+      "text": "Here's a video clip, again a long axis configuration in a different patient, and here we see a much"
+    },
+    {
+      "start": 434.82,
+      "end": 439.46,
+      "text": "more extended internal jugular vein that's lying on top of the carotid artery."
+    },
+    {
+      "start": 440.19,
+      "end": 442.85,
+      "text": "Notice the swirls of blood in the internal jugular vein,"
+    },
+    {
+      "start": 443.21,
+      "end": 444.69,
+      "text": "showing the course of the blood flow"
+    },
+    {
+      "start": 444.69,
+      "end": 446.61,
+      "text": "from high within the neck to the left,"
+    },
+    {
+      "start": 446.99,
+      "end": 448.61,
+      "text": "low within the neck here to the right."
+    },
+    {
+      "start": 450.06,
+      "end": 454.38,
+      "text": "In conclusion, thanks for tuning in for Part 1 of Ultrasound Guided Central Venus Access."
+    },
+    {
+      "start": 455.02,
+      "end": 458.38,
+      "text": "I hope it made it able to score the point that Ultrasound is very helpful in determining"
+    },
+    {
+      "start": 458.38,
+      "end": 459.94,
+      "text": "the relative anatomy of the intern-"
+    },
+    {
+      "start": 460.0,
+      "end": 464.72,
+      "text": "general jugular vein and carotid artery prior to an invasive procedure, as a textbook anatomy"
+    },
+    {
+      "start": 464.72,
+      "end": 467.08,
+      "text": "of the vein to artery is often incorrect."
+    },
+    {
+      "start": 467.58,
+      "end": 469.98,
+      "text": "And it's best to use a combination of short and long..."
+    },
+    {
+      "start": 470.0,
+      "end": 473.56,
+      "text": "axis views prior to a puncture attempt to best define the anatomy."
+    },
+    {
+      "start": 474.43,
+      "end": 478.19,
+      "text": "So I hope to see it back in the future as Sano-Axis continues and we return"
+    },
+    {
+      "start": 478.19,
+      "end": 479.85,
+      "text": "and central Venus access part"
+    }
+  ]
+}

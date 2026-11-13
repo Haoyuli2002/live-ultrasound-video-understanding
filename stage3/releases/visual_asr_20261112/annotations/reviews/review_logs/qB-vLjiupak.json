@@ -1,0 +1,89 @@
+{
+  "video_id": "qB-vLjiupak",
+  "reviewer": "stage3_b",
+  "review_scope": "Question-led review by Agent B of Agent A draft; not blind. Native full-frame sampled checkpoints and available time-indexed ASR; no continuous replay or direct listening claim.",
+  "reviewer_native_opened": [
+    370,
+    450,
+    470,
+    490,
+    510,
+    710,
+    735,
+    740,
+    780,
+    390,
+    455,
+    460,
+    465,
+    495,
+    500,
+    505,
+    640,
+    736,
+    737,
+    738,
+    739,
+    451,
+    452,
+    453,
+    454,
+    506,
+    507,
+    508,
+    509,
+    738.5,
+    453.5,
+    507.5,
+    738.25,
+    350,
+    360,
+    507.75,
+    450.25,
+    450.5
+  ],
+  "tasks": [
+    {
+      "task": 1,
+      "outcome": "corrected",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER",
+      "changes": "470\u2192454, bracket453.5\u2192454 labeled next example. Removed binary leading alternatives; specified displayed example rather than tissue moving. Main prior clip fanning and superficial bright lines make generic nearest-probe wording ambiguous, explicitly tied to next labeled sonogram. Strong semantic shortcut risk retained."
+    },
+    {
+      "task": 2,
+      "outcome": "corrected",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER",
+      "changes": "510\u2192508; added uncovered-grayscale requirement because500\u2013507.75 sonogram is hidden by colored overlay.490 diagram does not satisfy visual answer."
+    },
+    {
+      "task": 3,
+      "outcome": "accepted",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER",
+      "finding": "510 short bright stripe with darker surrounding central region and gray uterine tissue visible."
+    },
+    {
+      "task": 4,
+      "outcome": "accepted",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER",
+      "finding": "640 identity overlay precedes710 actual grayscale arrangement; red outline shortcut recorded. Avoid follicle claims."
+    },
+    {
+      "task": 5,
+      "outcome": "corrected",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER",
+      "changes": "740\u2192738.25 following738 incomplete wipe; question explicitly requires replacement main image to avoid confusing preexisting dark ovary with new well-bounded cavity."
+    },
+    {
+      "task": 6,
+      "outcome": "accepted",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER",
+      "finding": "350 overlay\u2192360/370 unobscured long-axis\u2192390 cervix gives unique earlier reference;780 main image different. Left-to-right stripe with upward right-end curve confirmed."
+    }
+  ]
+}

@@ -1,0 +1,368 @@
+{
+  "video_id": "mtvIls5XQEE",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/eval/mtvIls5XQEE/asr.txt",
+  "segments": [
+    {
+      "start": 2.04,
+      "end": 6.14,
+      "text": "For transthrastic lung ultrasound, let's start out with a discussion of probe selection."
+    },
+    {
+      "start": 7.08,
+      "end": 11.9,
+      "text": "As a high frequency probe, the linear probe provides the greatest resolution of the plural line."
+    },
+    {
+      "start": 12.84,
+      "end": 18.58,
+      "text": "However, this comes with a penalty of greater attenuation and therefore poor resolution of deeper"
+    },
+    {
+      "start": 18.58,
+      "end": 25.08,
+      "text": "structures. Therefore, if you're only interested in evaluating lung sliding, for example,"
+    },
+    {
+      "start": 25.26,
+      "end": 31.46,
+      "text": "in ruling out pneumothorax, the linear probe is a reasonable choice. For more comprehensive"
+    },
+    {
+      "start": 31.46,
+      "end": 39.43,
+      "text": "of lung ultrasound, however, we favor the phased array probe. The phased probe provides generally"
+    },
+    {
+      "start": 39.43,
+      "end": 44.99,
+      "text": "adequate visualization of the plural line, but also generates higher resolution images of deeper"
+    },
+    {
+      "start": 44.99,
+      "end": 51.24,
+      "text": "structures. In addition, the smaller probe footprint minimizes issues with rib shadowing,"
+    },
+    {
+      "start": 51.64,
+      "end": 59.72,
+      "text": "especially in acquiring images from the lateral and posterior chest. Either the abdominal or lung"
+    },
+    {
+      "start": 59.72,
+      "end": 65.83,
+      "text": "presets are both acceptable exam types. While the lung preset will enhance A and B line"
+    },
+    {
+      "start": 65.83,
+      "end": 70.69,
+      "text": "artifacts, this can make imaging deeper structures like the plural space more challenging."
+    },
+    {
+      "start": 71.95,
+      "end": 76.65,
+      "text": "Therefore, we suggest the abdominal preset is selected, especially when imaging the"
+    },
+    {
+      "start": 76.65,
+      "end": 84.57,
+      "text": "cost of a frenic angle. Various protocols exist for lung ultrasound, with many point-of-care"
+    },
+    {
+      "start": 84.57,
+      "end": 89.39,
+      "text": "users employing a method that interrogates four to six regions of each hemithorax."
+    },
+    {
+      "start": 89.39,
+      "end": 95.92,
+      "text": "We'll describe the protocol used by the CCUS team in which images are acquired from four"
+    },
+    {
+      "start": 95.92,
+      "end": 97.4,
+      "text": "zones on each hemithorax."
+    },
+    {
+      "start": 100.23,
+      "end": 104.29,
+      "text": "It's very important to ensure your images are labeled at the time of acquisition."
+    },
+    {
+      "start": 105.02,
+      "end": 110.04,
+      "text": "This is because unlike bedside echo, it can be next to impossible to determine the anatomic"
+    },
+    {
+      "start": 110.04,
+      "end": 112.94,
+      "text": "location of unlabeled images at the time of reporting."
+    },
+    {
+      "start": 114.52,
+      "end": 117.9,
+      "text": "We'll discuss the naming convention generally used by the CCUS team."
+    },
+    {
+      "start": 117.9,
+      "end": 129.02,
+      "text": "The first zone to acquire images at is denoted R1 or L1 with letters R and L indicating laterality."
+    },
+    {
+      "start": 129.71,
+      "end": 134.83,
+      "text": "This can be obtained by placing the probe at the second intercostal space in the mid-clovicular line."
+    },
+    {
+      "start": 135.61,
+      "end": 142.06,
+      "text": "With the marker dot pointed towards the patient's head, the depth should be set at around 10 centimeters"
+    },
+    {
+      "start": 142.06,
+      "end": 148.6,
+      "text": "but may need to be adjusted for patients of different body habitants with the aim being to visualize both the plural line"
+    },
+    {
+      "start": 148.6,
+      "end": 151.64,
+      "text": "and to determine whether an A or B line pattern exists."
+    },
+    {
+      "start": 154.34,
+      "end": 158.72,
+      "text": "Excessive depth will make plural line assessment challenging and should be avoided."
+    },
+    {
+      "start": 162.46,
+      "end": 168.8,
+      "text": "The next point to image is zone 2, which should be labeled R2 or L2 when recording clips."
+    },
+    {
+      "start": 169.93,
+      "end": 174.27,
+      "text": "This is obtained by placing the probe at around the fourth or fifth intercostal space"
+    },
+    {
+      "start": 174.27,
+      "end": 176.19,
+      "text": "at the anterior axillary line."
+    },
+    {
+      "start": 177.33,
+      "end": 179.59,
+      "text": "The starting depth is also around 10 centimeters."
+    },
+    {
+      "start": 182.37,
+      "end": 185.69,
+      "text": "A few optimization points when imaging zone 1 and zone 2."
+    },
+    {
+      "start": 186.03,
+      "end": 191.33,
+      "text": "Firstly, ensure your probe is static with respect to the chest wall, as movement of the probe"
+    },
+    {
+      "start": 191.33,
+      "end": 193.21,
+      "text": "may confound assessment of lung slide."
+    },
+    {
+      "start": 194.66,
+      "end": 199.58,
+      "text": "In addition, to enhance the appearance of A and B lines, the probe should be held perpendicular"
+    },
+    {
+      "start": 199.58,
+      "end": 200.58,
+      "text": "to the plural line."
+    },
+    {
+      "start": 201.8,
+      "end": 207.34,
+      "text": "If your image quality is low, slowly fan the probe towards or away from midline until the"
+    },
+    {
+      "start": 207.34,
+      "end": 210.64,
+      "text": "plural line and A or B lines are clearly seen."
+    },
+    {
+      "start": 212.28,
+      "end": 216.6,
+      "text": "In addition, when sliding laterally on the chest wall, keep in mind that the probe will"
+    },
+    {
+      "start": 216.6,
+      "end": 221.42,
+      "text": "to be famed towards the midline to maintain this perpendicular angle of being"
+    },
+    {
+      "start": 221.42,
+      "end": 228.26,
+      "text": "incidence. If despite these adjustments image quality remains poor, it can be"
+    },
+    {
+      "start": 228.26,
+      "end": 232.1,
+      "text": "helpful to obtain images from an interest space above or below where you're"
+    },
+    {
+      "start": 232.1,
+      "end": 237.46,
+      "text": "scanned. Sliding the probe slightly immediately or laterally into a better"
+    },
+    {
+      "start": 237.46,
+      "end": 247.57,
+      "text": "images obtained can also help with this. To obtain images of R3 and L3 place the"
+    },
+    {
+      "start": 247.57,
+      "end": 252.78,
+      "text": "probe in the mid-axillary line at the cost of frenic angle with the probe marker"
+    },
+    {
+      "start": 252.78,
+      "end": 259.36,
+      "text": "dot pointing cephaland. The depth should be adjusted to visualize the cost of"
+    },
+    {
+      "start": 259.36,
+      "end": 266.5,
+      "text": "frenic angle in the far field. 13 to 16 centimeters is a good place to start but"
+    },
+    {
+      "start": 266.5,
+      "end": 271.9,
+      "text": "often needs to be adjusted based on body habitus. In patients with"
+    },
+    {
+      "start": 271.9,
+      "end": 276.78,
+      "text": "consolidation and plural of fusion with a positive spine sign, the vertebral"
+    },
+    {
+      "start": 276.78,
+      "end": 280.72,
+      "text": "bodies are a good internal landmark to determine depth. They should be the"
+    },
+    {
+      "start": 280.72,
+      "end": 285.46,
+      "text": "deepest structure seen in the far field. Note however in patients with well"
+    },
+    {
+      "start": 285.46,
+      "end": 292.97,
+      "text": "air-rated lung and no effusion, you will not see the thoracic spine. Next slide the probe either"
+    },
+    {
+      "start": 292.97,
+      "end": 299.64,
+      "text": "caudad or cephalad so that both the intravedonal solid organ, either the liver or the spleen,"
+    },
+    {
+      "start": 300.2,
+      "end": 307.37,
+      "text": "and the lung are well visualized. The respective solid organ should occupy the right most third"
+    },
+    {
+      "start": 307.68,
+      "end": 312.88,
+      "text": "to half of your image. If too much of your image is occupied by the spleen or liver,"
+    },
+    {
+      "start": 312.88,
+      "end": 316.62,
+      "text": "correct the splice sliding up one to two intercostal spaces."
+    },
+    {
+      "start": 319.35,
+      "end": 322.15,
+      "text": "Zone four, also called the plaps point,"
+    },
+    {
+      "start": 322.57,
+      "end": 324.53,
+      "text": "can be the most challenging to image"
+    },
+    {
+      "start": 324.53,
+      "end": 326.15,
+      "text": "in supine ICU patients."
+    },
+    {
+      "start": 327.36,
+      "end": 329.0,
+      "text": "Essentially, the aim is to image"
+    },
+    {
+      "start": 329.0,
+      "end": 332.82,
+      "text": "the cost of frenic angle at the most dependent point"
+    },
+    {
+      "start": 333.32,
+      "end": 334.86,
+      "text": "as this is where plural of fusions"
+    },
+    {
+      "start": 334.86,
+      "end": 336.78,
+      "text": "and other lung pathology can collect."
+    },
+    {
+      "start": 338.28,
+      "end": 341.7,
+      "text": "Starting at zone three, slide the probe posteriorly"
+    },
+    {
+      "start": 341.7,
+      "end": 345.37,
+      "text": "while fanning anteriorly until you are over"
+    },
+    {
+      "start": 345.37,
+      "end": 350.77,
+      "text": "the posterior lateral chest wall, often you will need to push your hand into the bed"
+    },
+    {
+      "start": 351.09,
+      "end": 354.27,
+      "text": "or turn the patient in order to optimize this view."
+    },
+    {
+      "start": 360.32,
+      "end": 366.76,
+      "text": "If plural effusion or consolidation is present, obtaining additional clips of zone 3 and 4 in"
+    },
+    {
+      "start": 366.76,
+      "end": 371.58,
+      "text": "transverse orientation can provide additional information and assist with estimating"
+    },
+    {
+      "start": 371.58,
+      "end": 372.58,
+      "text": "a fusion size."
+    },
+    {
+      "start": 374.4,
+      "end": 378.78,
+      "text": "To obtain these, rotate the probe so the marker dot points anteriorly."
+    },
+    {
+      "start": 382.12,
+      "end": 387.1,
+      "text": "Ensure the image is labeled with the zone and key V for transverse."
+    },
+    {
+      "start": 388.56,
+      "end": 393.23,
+      "text": "For example, on the right side, this would be R4KV."
+    }
+  ]
+}

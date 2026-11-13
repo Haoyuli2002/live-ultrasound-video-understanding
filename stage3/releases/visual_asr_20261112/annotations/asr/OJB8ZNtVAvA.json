@@ -1,0 +1,2863 @@
+{
+  "video_id": "OJB8ZNtVAvA",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/eval/OJB8ZNtVAvA/asr.txt",
+  "segments": [
+    {
+      "start": 5.41,
+      "end": 7.45,
+      "text": "Hello, my name is Dr. Paul Mayo."
+    },
+    {
+      "start": 8.12,
+      "end": 9.9,
+      "text": "I work at North Shore."
+    },
+    {
+      "start": 10.03,
+      "end": 16.73,
+      "text": "University Hospital, L.I.J. in the Northwell System in New York City area. I'm also a clinical"
+    },
+    {
+      "start": 16.73,
+      "end": 19.97,
+      "text": "professor of medicine at the Hosterone Northwell."
+    },
+    {
+      "start": 20.13,
+      "end": 20.89,
+      "text": "School of Medicine."
+    },
+    {
+      "start": 21.79,
+      "end": 22.27,
+      "text": "Uh, Yoni."
+    },
+    {
+      "start": 23.68,
+      "end": 24.88,
+      "text": "My name is Yonatan Greenstein."
+    },
+    {
+      "start": 25.08,
+      "end": 29.22,
+      "text": "I'm an assistant professor of medicine at the Rutgers New Jersey Medical School in New"
+    },
+    {
+      "start": 29.22,
+      "end": 29.78,
+      "text": "work in New Jersey."
+    },
+    {
+      "start": 30.0,
+      "end": 32.89,
+      "text": "where I practice pulmonary pro-care and sleep medicine."
+    },
+    {
+      "start": 35.08,
+      "end": 36.42,
+      "text": "Yoni, why are we here?"
+    },
+    {
+      "start": 36.74,
+      "end": 39.8,
+      "text": "So we're here in Glenview, Illinois at the Chess Global Head."
+    },
+    {
+      "start": 40.03,
+      "end": 45.89,
+      "text": "orders, because we are very passionate about critical care ultrasonography, and we want"
+    },
+    {
+      "start": 45.89,
+      "end": 49.47,
+      "text": "to help those clinicians who are interested in taking the next step."
+    },
+    {
+      "start": 50.06,
+      "end": 54.4,
+      "text": "basic critical care ultra-cinography to advance critical care echocardiography."
+    },
+    {
+      "start": 55.24,
+      "end": 59.97,
+      "text": "The National Board of echocardiography has set up a national level."
+    },
+    {
+      "start": 60.0,
+      "end": 67.48,
+      "text": "certification, or advanced career echocardiography, also known as ACE as in the ACE of Hearts."
+    },
+    {
+      "start": 68.77,
+      "end": 69.97,
+      "text": "It will be a..."
+    },
+    {
+      "start": 70.1,
+      "end": 75.76,
+      "text": "examination of full high-stakes board exam that will be given in January 2019."
+    },
+    {
+      "start": 76.56,
+      "end": 79.32,
+      "text": "In addition, there will be a requirement to demonstrate."
+    },
+    {
+      "start": 80.54,
+      "end": 87.01,
+      "text": "capability in advanced crew care echo image set. And that's why we're here today."
+    },
+    {
+      "start": 87.94,
+      "end": 89.98,
+      "text": "Now we find that when clinicians are"
+    },
+    {
+      "start": 90.03,
+      "end": 95.97,
+      "text": "first learning the full ACE image set. It takes about 20 to 30 minutes for a single exam."
+    },
+    {
+      "start": 96.73,
+      "end": 99.97,
+      "text": "But after several have been done, the full exam takes between..."
+    },
+    {
+      "start": 100.03,
+      "end": 107.0,
+      "text": "eight and eleven minutes. Sometimes longer, sometimes shorter. Yes. And one of the"
+    },
+    {
+      "start": 107.0,
+      "end": 109.96,
+      "text": "main questions we receive when we're giving conferences on..."
+    },
+    {
+      "start": 110.13,
+      "end": 115.68,
+      "text": "matter of courses is what is the full examination and that's why we're here to"
+    },
+    {
+      "start": 115.68,
+      "end": 119.87,
+      "text": "demonstrate the full image set that would be required"
+    },
+    {
+      "start": 120.0,
+      "end": 128.08,
+      "text": "at a minimum, or each examination that is hired out in order to demonstrate."
+    },
+    {
+      "start": 130.0,
+      "end": 131.26,
+      "text": "Absolutely."
+    },
+    {
+      "start": 131.83,
+      "end": 138.89,
+      "text": "Yoni, you've now completed your candidate for ACE and you've completed last count I believe"
+    },
+    {
+      "start": 138.89,
+      "end": 139.39,
+      "text": "between..."
+    },
+    {
+      "start": 140.0,
+      "end": 143.48,
+      "text": "99 and 100 full examinations over the course of your fellowship."
+    },
+    {
+      "start": 143.6,
+      "end": 147.32,
+      "text": "Yeah, you still keep holding on to that last one, but you got to give me credit."
+    },
+    {
+      "start": 147.32,
+      "end": 149.84,
+      "text": "I have gotten my 100 full examinations."
+    },
+    {
+      "start": 150.0,
+      "end": 156.0,
+      "text": "And you've become an expert level scanner in my opinion. I'm your supervisor. I review your studies"
+    },
+    {
+      "start": 156.0,
+      "end": 159.51,
+      "text": "So why don't we go over to our model and"
+    },
+    {
+      "start": 160.29,
+      "end": 166.9,
+      "text": "go through the full exam, the purpose being that the candidate then has a benchmark."
+    },
+    {
+      "start": 167.32,
+      "end": 169.96,
+      "text": "These are the images that I must collect."
+    },
+    {
+      "start": 170.0,
+      "end": 179.86,
+      "text": "as I'm setting up my portfolio, being a serious candidate for clear-care echocardiography certification, correct?"
+    },
+    {
+      "start": 180.26,
+      "end": 180.74,
+      "text": "Let's do that."
+    },
+    {
+      "start": 182.05,
+      "end": 188.89,
+      "text": "A word of caution that you want to have full mastery of goal directed at co-cardiography"
+    },
+    {
+      "start": 189.53,
+      "end": 189.97,
+      "text": "before..."
+    },
+    {
+      "start": 190.0,
+      "end": 195.81,
+      "text": "you undertake any training in ACE? You'd agree with that? Absolutely."
+    },
+    {
+      "start": 196.29,
+      "end": 199.65,
+      "text": "Yoni, you're gonna directly through the entire examination."
+    },
+    {
+      "start": 200.0,
+      "end": 203.59,
+      "text": "in one, in just one go, correct?"
+    },
+    {
+      "start": 203.97,
+      "end": 206.03,
+      "text": "That's correct, we've learned that you need a lot of direction,"
+    },
+    {
+      "start": 206.27,
+      "end": 207.69,
+      "text": "so I'll be here right behind you to help."
+    },
+    {
+      "start": 208.25,
+      "end": 209.89,
+      "text": "Thank you for this, May I give a few?"
+    },
+    {
+      "start": 210.0,
+      "end": 214.36,
+      "text": "introductory words here? Sure, please. Yeah, for example, the audience will"
+    },
+    {
+      "start": 214.36,
+      "end": 219.98,
+      "text": "notice that because I'm doing a full exam for training purposes, I am physically..."
+    },
+    {
+      "start": 220.0,
+      "end": 225.55,
+      "text": "comfortable the machine is well-orientated I've been I'm sitting down because"
+    },
+    {
+      "start": 225.55,
+      "end": 229.87,
+      "text": "the uncomfortable scanner will always fail in good image"
+    },
+    {
+      "start": 230.0,
+      "end": 236.26,
+      "text": "quality. I'm also on the right side primarily because of camera angle and as a"
+    },
+    {
+      "start": 236.26,
+      "end": 239.7,
+      "text": "caution, anybody who masters ace must be able to be"
+    },
+    {
+      "start": 240.06,
+      "end": 242.64,
+      "text": "and the dexterous in their scanning skill,"
+    },
+    {
+      "start": 242.76,
+      "end": 244.12,
+      "text": "we happen to be on the right side"
+    },
+    {
+      "start": 244.12,
+      "end": 245.78,
+      "text": "because it's a practical issue."
+    },
+    {
+      "start": 246.48,
+      "end": 248.82,
+      "text": "There are some other issues that sometimes comes up"
+    },
+    {
+      "start": 248.82,
+      "end": 249.98,
+      "text": "that sometimes,"
+    },
+    {
+      "start": 250.0,
+      "end": 255.49,
+      "text": "come up. For example, the probe cord. Some people put it around their shoulders."
+    },
+    {
+      "start": 256.15,
+      "end": 259.93,
+      "text": "Nice looking position here. On the other hand in the ICU, we're worried that they"
+    },
+    {
+      "start": 260.0,
+      "end": 265.58,
+      "text": "maybe that's a fomite, so others prefer to lay it on the bed and not on their body itself."
+    },
+    {
+      "start": 267.35,
+      "end": 269.91,
+      "text": "Few other things, there's some controversy about how much"
+    },
+    {
+      "start": 270.19,
+      "end": 276.85,
+      "text": "to apply, some would place a little bit here and on the probe itself. The problem"
+    },
+    {
+      "start": 276.85,
+      "end": 279.77,
+      "text": "with that approach is that you'll be doing the application"
+    },
+    {
+      "start": 280.0,
+      "end": 287.1,
+      "text": "multiple times. The true ACE expert says I'm going to put enough gel on so I can"
+    },
+    {
+      "start": 287.1,
+      "end": 289.98,
+      "text": "do the entire examination without having to"
+    },
+    {
+      "start": 290.13,
+      "end": 291.43,
+      "text": "constantly reapply it."
+    },
+    {
+      "start": 292.33,
+      "end": 294.13,
+      "text": "Yoni, please give me some direction here."
+    },
+    {
+      "start": 294.51,
+      "end": 296.37,
+      "text": "Yes, so let's first show the learner's"
+    },
+    {
+      "start": 296.75,
+      "end": 299.27,
+      "text": "manipulation and what the different movements are called."
+    },
+    {
+      "start": 299.67,
+      "end": 299.97,
+      "text": "And these are..."
+    },
+    {
+      "start": 300.0,
+      "end": 304.88,
+      "text": "There are standard terms that have been developed by the cardiology community 40 years ago and"
+    },
+    {
+      "start": 304.88,
+      "end": 306.94,
+      "text": "we use them in our work, correct?"
+    },
+    {
+      "start": 307.16,
+      "end": 307.36,
+      "text": "Correct."
+    },
+    {
+      "start": 308.07,
+      "end": 309.97,
+      "text": "Our experience has been that all..."
+    },
+    {
+      "start": 310.1,
+      "end": 312.54,
+      "text": "The terms are often misused, so we'll spend a moment here."
+    },
+    {
+      "start": 313.36,
+      "end": 316.3,
+      "text": "So one of the first manipulations is to angle the probe."
+    },
+    {
+      "start": 317.48,
+      "end": 319.61,
+      "text": "This is angle it, Brett."
+    },
+    {
+      "start": 320.19,
+      "end": 324.09,
+      "text": "That's correct. The next manipulation will be tilting the probe where you're tilting"
+    },
+    {
+      "start": 324.09,
+      "end": 328.91,
+      "text": "the tomographic plane along the axis of the tomographic plane."
+    },
+    {
+      "start": 330.03,
+      "end": 333.7,
+      "text": "which is as it sounds, burning in the probe."
+    },
+    {
+      "start": 333.94,
+      "end": 339.88,
+      "text": "Without angling, moving, or tilting it at all, just rotating it."
+    },
+    {
+      "start": 340.0,
+      "end": 342.8,
+      "text": "Correct. Correct. And finally, there are simple movements."
+    },
+    {
+      "start": 344.19,
+      "end": 346.97,
+      "text": "The physical movement of the probe is defined as moving."
+    },
+    {
+      "start": 347.69,
+      "end": 349.83,
+      "text": "And it's important now with the ace exam."
+    },
+    {
+      "start": 350.06,
+      "end": 352.78,
+      "text": "to think about all of those probe manipulations separately"
+    },
+    {
+      "start": 352.78,
+      "end": 354.28,
+      "text": "as you're making your adjustments."
+    },
+    {
+      "start": 355.98,
+      "end": 357.06,
+      "text": "What should I do first?"
+    },
+    {
+      "start": 357.32,
+      "end": 359.92,
+      "text": "So we're going to start first with the PowerStore long axis."
+    },
+    {
+      "start": 360.0,
+      "end": 369.96,
+      "text": "view of the heart. I'll set gain right here and I think the depth is..."
+    },
+    {
+      "start": 370.0,
+      "end": 376.84,
+      "text": "properly adjusted and I've achieved a standard acceptable axis. After we have"
+    },
+    {
+      "start": 376.84,
+      "end": 379.9,
+      "text": "achieved our initial view, we'll first start with"
+    },
+    {
+      "start": 380.0,
+      "end": 386.38,
+      "text": "some color Doppler and we'll look for mitral gnergitation and you'll notice that Dr."
+    },
+    {
+      "start": 386.5,
+      "end": 389.88,
+      "text": "Mayo is working on appropriately sizing his Doppler"
+    },
+    {
+      "start": 390.0,
+      "end": 395.76,
+      "text": "sample box and you want it to include the entire atria and also go over the"
+    },
+    {
+      "start": 395.76,
+      "end": 399.02,
+      "text": "mitral valve a little bit and we don't see any evidence of mitral"
+    },
+    {
+      "start": 399.02,
+      "end": 399.88,
+      "text": "vegetation here."
+    },
+    {
+      "start": 400.13,
+      "end": 405.64,
+      "text": "He's next going to move the Doppler Samplebox to look for aortic insufficiency, and again"
+    },
+    {
+      "start": 405.64,
+      "end": 409.88,
+      "text": "he's overlapping the aortic valve with the LDO."
+    },
+    {
+      "start": 410.03,
+      "end": 419.79,
+      "text": "We don't see significant aortic insufficiency after this he's going to fire up the emode capability and he's going to do three"
+    },
+    {
+      "start": 420.06,
+      "end": 426.34,
+      "text": "things. First, he's going to look along the left ventricle. Where he's going to do an assessment of"
+    },
+    {
+      "start": 426.34,
+      "end": 429.79,
+      "text": "the LV size during diastole and during"
+    },
+    {
+      "start": 430.0,
+      "end": 437.28,
+      "text": "story. Notice that I've moved to the probabit and also I tilted it in order to achieve a better"
+    },
+    {
+      "start": 437.28,
+      "end": 439.94,
+      "text": "axis for M mode, you want the M mode line to be"
+    },
+    {
+      "start": 440.19,
+      "end": 445.56,
+      "text": "perpendicular to the ventricular walls as much as possible. I'm trying to fight for that."
+    },
+    {
+      "start": 445.78,
+      "end": 449.87,
+      "text": "That's a weakness of M mode. It's very much angle-dependent. I'll activate it."
+    },
+    {
+      "start": 450.06,
+      "end": 454.4,
+      "text": "And an accurate measurement here can be quite difficult in our"
+    },
+    {
+      "start": 454.4,
+      "end": 456.6,
+      "text": "intubated, mechanically ventilated patients."
+    },
+    {
+      "start": 456.78,
+      "end": 459.75,
+      "text": "Sometimes it's simply not possible to get this perpendicular."
+    },
+    {
+      "start": 461.89,
+      "end": 465.85,
+      "text": "I'm required to make some measurements so I'm a little concerned that the M-Mode line"
+    },
+    {
+      "start": 465.85,
+      "end": 469.6,
+      "text": "might be a little bit low on the ventricle. You like it really at the"
+    },
+    {
+      "start": 469.6,
+      "end": 469.98,
+      "text": "The pa-pillar-"
+    },
+    {
+      "start": 470.0,
+      "end": 477.42,
+      "text": "muscle level, but I'll show you how the measurements are made. We um activate our measurement capability."
+    },
+    {
+      "start": 477.78,
+      "end": 479.92,
+      "text": "I do not see the right ventricular wall"
+    },
+    {
+      "start": 480.0,
+      "end": 484.18,
+      "text": "very well, nor the right ventricular outflow tracks."
+    },
+    {
+      "start": 484.34,
+      "end": 487.43,
+      "text": "Shall we start with the interventricular septum?"
+    },
+    {
+      "start": 487.59,
+      "end": 488.03,
+      "text": "Yes, let's start."
+    },
+    {
+      "start": 488.09,
+      "end": 489.98,
+      "text": "All right, and we would want to..."
+    },
+    {
+      "start": 490.0,
+      "end": 498.3,
+      "text": "make it during diastole. You know, you only have notice that we don't have a, we don't"
+    },
+    {
+      "start": 498.3,
+      "end": 499.98,
+      "text": "seem to have an EKG on."
+    },
+    {
+      "start": 500.03,
+      "end": 501.47,
+      "text": "this patient. What's going on here?"
+    },
+    {
+      "start": 502.38,
+      "end": 506.88,
+      "text": "We're functioning right now in the reality of a lot of American intensive care units,"
+    },
+    {
+      "start": 507.06,
+      "end": 509.98,
+      "text": "where our resources do not afford us something."
+    },
+    {
+      "start": 510.0,
+      "end": 512.26,
+      "text": "of the bells and whistles that we would like."
+    },
+    {
+      "start": 512.9,
+      "end": 514.72,
+      "text": "Luckily for a lot of the advanced"
+    },
+    {
+      "start": 514.72,
+      "end": 517.48,
+      "text": "curbocarapho examination, we can deduce"
+    },
+    {
+      "start": 517.48,
+      "end": 519.4,
+      "text": "what part of the cardiac cycle we're in."
+    },
+    {
+      "start": 520.1,
+      "end": 524.94,
+      "text": "So, here, you are making the assumption that the largest ventricular cavity is during"
+    },
+    {
+      "start": 524.94,
+      "end": 529.04,
+      "text": "diastole, and that's how you're facing your measurement, and I think that's quite accurate."
+    },
+    {
+      "start": 530.22,
+      "end": 531.44,
+      "text": "There's the septal distance."
+    },
+    {
+      "start": 532.36,
+      "end": 539.52,
+      "text": "We'll then select and now we have the ventricular cavity."
+    },
+    {
+      "start": 540.64,
+      "end": 549.11,
+      "text": "at end diastole and we'll hit select and then the inferior lateral wall rather difficult"
+    },
+    {
+      "start": 549.11,
+      "end": 549.91,
+      "text": "to pick out."
+    },
+    {
+      "start": 550.06,
+      "end": 556.56,
+      "text": "here because we have a contribution from the papillary muscle. I'll put the pericardial"
+    },
+    {
+      "start": 557.43,
+      "end": 559.86,
+      "text": "interface here. I'm looking for the"
+    },
+    {
+      "start": 560.0,
+      "end": 569.89,
+      "text": "most continuous, most angulated line, and I'll move my, I think this is a little"
+    },
+    {
+      "start": 570.0,
+      "end": 573.25,
+      "text": "that high there, or I changed them back and forth,"
+    },
+    {
+      "start": 574.94,
+      "end": 575.16,
+      "text": "Joni."
+    },
+    {
+      "start": 575.5,
+      "end": 577.6,
+      "text": "I don't think you have a good option to change in there."
+    },
+    {
+      "start": 577.76,
+      "end": 578.16,
+      "text": "Yeah, all right."
+    },
+    {
+      "start": 578.89,
+      "end": 579.97,
+      "text": "So this would be a..."
+    },
+    {
+      "start": 580.0,
+      "end": 585.38,
+      "text": "gross estimate. So let's do the MO scan lines through the mitral valve and the aortic valve"
+    },
+    {
+      "start": 585.38,
+      "end": 589.64,
+      "text": "all over here. Alright those are quite straightforward here. So here..."
+    },
+    {
+      "start": 590.58,
+      "end": 598.65,
+      "text": "By activate I see normal movement of the mitral valve and we have a specially important"
+    },
+    {
+      "start": 598.65,
+      "end": 599.97,
+      "text": "measurement to make here."
+    },
+    {
+      "start": 600.0,
+      "end": 602.84,
+      "text": "which is called the EPSS."
+    },
+    {
+      "start": 602.88,
+      "end": 604.22,
+      "text": "And point central separation."
+    },
+    {
+      "start": 604.44,
+      "end": 609.04,
+      "text": "Right, and that is related."
+    },
+    {
+      "start": 610.32,
+      "end": 616.52,
+      "text": "To some extent to assessment of ventricular function, it's an indirect measurement if the"
+    },
+    {
+      "start": 616.52,
+      "end": 619.53,
+      "text": "EPSS is greater than 10 millimeters."
+    },
+    {
+      "start": 620.42,
+      "end": 624.32,
+      "text": "It supports the possibility of LV dysfunction here."
+    },
+    {
+      "start": 624.6,
+      "end": 627.68,
+      "text": "We have six millimeters, which is normal range."
+    },
+    {
+      "start": 630.0,
+      "end": 632.66,
+      "text": "And then we'll make an estimate of lettrial size."
+    },
+    {
+      "start": 632.66,
+      "end": 634.0,
+      "text": "Is that the next with M mode?"
+    },
+    {
+      "start": 635.72,
+      "end": 638.98,
+      "text": "And we would like to come through the Ordic valve here."
+    },
+    {
+      "start": 640.67,
+      "end": 649.98,
+      "text": "and we will turn on M mode and we see opening and closure of the ordic valve and we would measure the"
+    },
+    {
+      "start": 650.0,
+      "end": 659.75,
+      "text": "in the systolic side of the left atrium, paliperon, and we go edge-to-edge."
+    },
+    {
+      "start": 660.51,
+      "end": 667.29,
+      "text": "by ASC definition and we select, we drop that down."
+    },
+    {
+      "start": 670.29,
+      "end": 671.47,
+      "text": "So that's normal range."
+    },
+    {
+      "start": 672.02,
+      "end": 672.7,
+      "text": "I'll save that image."
+    },
+    {
+      "start": 673.78,
+      "end": 675.46,
+      "text": "There are a lot of other things you can do with M-Mode."
+    },
+    {
+      "start": 675.82,
+      "end": 676.66,
+      "text": "These are the basics."
+    },
+    {
+      "start": 678.21,
+      "end": 679.97,
+      "text": "M-Mode in many ways is a gem-"
+    },
+    {
+      "start": 680.78,
+      "end": 689.61,
+      "text": "A lot of modern echo labs don't really use it any longer, but it has some interesting applications for detailed analysis of"
+    },
+    {
+      "start": 690.06,
+      "end": 691.64,
+      "text": "valve function and wall motion."
+    },
+    {
+      "start": 692.36,
+      "end": 694.32,
+      "text": "From here, the next view that I like to go to"
+    },
+    {
+      "start": 694.32,
+      "end": 696.52,
+      "text": "is the right ventricular inflow view."
+    },
+    {
+      "start": 697.54,
+      "end": 699.48,
+      "text": "Dr. Mayo is going to obtain by"
+    },
+    {
+      "start": 700.0,
+      "end": 701.5,
+      "text": "Angling the probe immediately."
+    },
+    {
+      "start": 703.95,
+      "end": 707.82,
+      "text": "Okay, so this is the first view"
+    },
+    {
+      "start": 707.82,
+      "end": 709.72,
+      "text": "that the gold-directed echocardiographers"
+    },
+    {
+      "start": 710.0,
+      "end": 715.19,
+      "text": "really not familiar with. I've angled in to look at the right side."
+    },
+    {
+      "start": 716.03,
+      "end": 718.25,
+      "text": "I'm wondering if a left lateral peculiarity."
+    },
+    {
+      "start": 718.43,
+      "end": 719.97,
+      "text": "Yeah, let's ask Bryant if he could..."
+    },
+    {
+      "start": 720.42,
+      "end": 729.93,
+      "text": "roll over a little bit this way please. Thank you. Yeah. All right. Okay good. Now I'm sitting now I'm seated comfortably on the bed."
+    },
+    {
+      "start": 730.0,
+      "end": 739.53,
+      "text": "I'll find that person along right away. It's easier to get and I'll angle inwards. Here we have the"
+    },
+    {
+      "start": 740.0,
+      "end": 749.78,
+      "text": "the info view. Yoni, should I take the group for a tour? Yes. Okay, here's the right atrium, here's the"
+    },
+    {
+      "start": 750.0,
+      "end": 758.25,
+      "text": "see inflow here is the tricuspid valve and here is the right ventricle and of course the ace expert"
+    },
+    {
+      "start": 758.25,
+      "end": 759.91,
+      "text": "Always colors every"
+    },
+    {
+      "start": 760.0,
+      "end": 767.82,
+      "text": "valve to see if there's a regurgitation jet. Here I don't pick one up but if we saw one it is"
+    },
+    {
+      "start": 767.82,
+      "end": 769.92,
+      "text": "mandatory then to measure."
+    },
+    {
+      "start": 770.0,
+      "end": 778.62,
+      "text": "the velocity of course yeah yeah I'm gonna ask you to make a larger sample volume box let's"
+    },
+    {
+      "start": 780.06,
+      "end": 782.6,
+      "text": "There was a reverse in jet in order to better see it."
+    },
+    {
+      "start": 782.7,
+      "end": 784.48,
+      "text": "We want to cover the entire atrium."
+    },
+    {
+      "start": 785.18,
+      "end": 787.0,
+      "text": "Okay, so I'll make that a little larger."
+    },
+    {
+      "start": 788.37,
+      "end": 789.91,
+      "text": "Is that good enough for..."
+    },
+    {
+      "start": 790.13,
+      "end": 790.75,
+      "text": "Newark, New Jersey."
+    },
+    {
+      "start": 790.93,
+      "end": 791.29,
+      "text": "That is."
+    },
+    {
+      "start": 791.59,
+      "end": 791.67,
+      "text": "Yeah."
+    },
+    {
+      "start": 792.01,
+      "end": 795.37,
+      "text": "A little bit more stringent criteria than out there on Long Island."
+    },
+    {
+      "start": 795.65,
+      "end": 796.75,
+      "text": "Oh, yeah, I know."
+    },
+    {
+      "start": 797.13,
+      "end": 799.97,
+      "text": "Can you, can you, can you, can you, can you, can you, can you, can you, can you, can you,"
+    },
+    {
+      "start": 800.03,
+      "end": 806.74,
+      "text": "show so we change it here and if we saw a TR jet we would place it down through"
+    },
+    {
+      "start": 806.74,
+      "end": 809.6,
+      "text": "the Vina contracta that's at the"
+    },
+    {
+      "start": 810.0,
+      "end": 816.98,
+      "text": "of origin of the jet and we would attempt to measure the tracuspid regurgitation velocity"
+    },
+    {
+      "start": 816.98,
+      "end": 819.72,
+      "text": "from which we could derive an estimate of"
+    },
+    {
+      "start": 821.27,
+      "end": 823.19,
+      "text": "You have pulmonary systolic pressure, correct?"
+    },
+    {
+      "start": 823.77,
+      "end": 824.53,
+      "text": "We don't see any here."
+    },
+    {
+      "start": 824.57,
+      "end": 826.29,
+      "text": "Let's hit the dapper button just to show them."
+    },
+    {
+      "start": 826.9,
+      "end": 829.06,
+      "text": "What it would look, and also the point to which direction."
+    },
+    {
+      "start": 832.1,
+      "end": 839.96,
+      "text": "So we would target it with color we would then turn on CW find the jet which we don't have here and you would like me"
+    },
+    {
+      "start": 840.06,
+      "end": 848.5,
+      "text": "activate and this is what the tracing would look like and if we had a jet"
+    },
+    {
+      "start": 850.1,
+      "end": 853.78,
+      "text": "We'll show those in a lot of the abnormal image sets that we're going to send over to chest."
+    },
+    {
+      "start": 854.02,
+      "end": 856.56,
+      "text": "It would make the measurement very easily."
+    },
+    {
+      "start": 856.64,
+      "end": 857.92,
+      "text": "It would be a negative velocity."
+    },
+    {
+      "start": 858.02,
+      "end": 858.74,
+      "text": "Negative velocity."
+    },
+    {
+      "start": 860.38,
+      "end": 865.7,
+      "text": "Okay, so what is the next standard view for the ACE examination?"
+    },
+    {
+      "start": 865.88,
+      "end": 869.98,
+      "text": "So we now move back to the Powerstone with short access view, which..."
+    },
+    {
+      "start": 870.0,
+      "end": 875.36,
+      "text": "our basic group hair echo colleagues will be familiar with and the basic"
+    },
+    {
+      "start": 875.36,
+      "end": 879.8,
+      "text": "colleagues will be familiar with the mid ventricular also known as papillary muscle"
+    },
+    {
+      "start": 880.13,
+      "end": 889.17,
+      "text": "Let's start there. Alright, so we rotate 90 degrees and we'll start at happily muscle level."
+    },
+    {
+      "start": 890.51,
+      "end": 895.02,
+      "text": "Everyone is familiar because everyone who's interested in ACE"
+    },
+    {
+      "start": 895.02,
+      "end": 897.46,
+      "text": "has full capability at Gold Directed Echo."
+    },
+    {
+      "start": 898.48,
+      "end": 899.96,
+      "text": "And then I would pose we do something."
+    },
+    {
+      "start": 900.0,
+      "end": 903.16,
+      "text": "segmental wall motion abnormalities."
+    },
+    {
+      "start": 904.52,
+      "end": 906.54,
+      "text": "We do septal kinetics."
+    },
+    {
+      "start": 906.78,
+      "end": 909.96,
+      "text": "We then angle down to look at the A."
+    },
+    {
+      "start": 910.0,
+      "end": 919.34,
+      "text": "Segment and then we start angling up the mitral valve level which would define the basal segments and you can do a full segmentable analysis"
+    },
+    {
+      "start": 920.0,
+      "end": 923.9,
+      "text": "with ACE capability simply by looking at those three levels, correct?"
+    },
+    {
+      "start": 924.24,
+      "end": 926.86,
+      "text": "And we'll typically put color Doppler at this point."
+    },
+    {
+      "start": 927.34,
+      "end": 929.52,
+      "text": "Yeah, if you wish, we'd look for MR."
+    },
+    {
+      "start": 930.48,
+      "end": 939.25,
+      "text": "From a somewhat unusual level right here, okay, all right. We then go to the base of the heart"
+    },
+    {
+      "start": 940.51,
+      "end": 947.72,
+      "text": "And in the center of the screen, we examine the anatomy of the aortic valve."
+    },
+    {
+      "start": 949.21,
+      "end": 949.81,
+      "text": "I do not."
+    },
+    {
+      "start": 950.0,
+      "end": 956.63,
+      "text": "have clear closure point, but I think this is a tri-leaflit valve. More"
+    },
+    {
+      "start": 956.63,
+      "end": 959.8,
+      "text": "philosophologically, it's normal within the context."
+    },
+    {
+      "start": 960.1,
+      "end": 962.4,
+      "text": "of imperfect image quality."
+    },
+    {
+      "start": 963.7,
+      "end": 965.28,
+      "text": "And then we would color this,"
+    },
+    {
+      "start": 965.86,
+      "end": 968.81,
+      "text": "this is what we did with the Parasonal Long Axis"
+    },
+    {
+      "start": 968.81,
+      "end": 969.97,
+      "text": "view of the Arctic Valley."
+    },
+    {
+      "start": 970.0,
+      "end": 972.26,
+      "text": "to look for a re-gurge which we do not see."
+    },
+    {
+      "start": 972.82,
+      "end": 974.36,
+      "text": "Yoni, what's the next valve we should look at?"
+    },
+    {
+      "start": 974.58,
+      "end": 977.14,
+      "text": "So let's look at the tricuspid valve, if you can bring it in."
+    },
+    {
+      "start": 977.28,
+      "end": 979.97,
+      "text": "So I tilt over the tricuspid valve."
+    },
+    {
+      "start": 980.0,
+      "end": 987.88,
+      "text": "My Cuspid valve and this will be over in this area."
+    },
+    {
+      "start": 990.83,
+      "end": 992.63,
+      "text": "I'm gonna try to scan through it."
+    },
+    {
+      "start": 994.14,
+      "end": 995.42,
+      "text": "And whenever I see a valve,"
+    },
+    {
+      "start": 995.68,
+      "end": 998.05,
+      "text": "I will always put color on that valve."
+    },
+    {
+      "start": 998.96,
+      "end": 999.84,
+      "text": "Look for..."
+    },
+    {
+      "start": 1000.06,
+      "end": 1007.35,
+      "text": "has been re-gurged. If we saw it, which we don't, I would then place the CW"
+    },
+    {
+      "start": 1010.0,
+      "end": 1012.82,
+      "text": "line right through the origin of that jet."
+    },
+    {
+      "start": 1013.58,
+      "end": 1015.38,
+      "text": "Now I turn on Doppler, I would freeze,"
+    },
+    {
+      "start": 1015.66,
+      "end": 1016.54,
+      "text": "I would make a measurement."
+    },
+    {
+      "start": 1019.3,
+      "end": 1019.66,
+      "text": "The next."
+    },
+    {
+      "start": 1020.35,
+      "end": 1025.18,
+      "text": "And that's where we look for the pulmonic valve, which we see quite nicely on this view."
+    },
+    {
+      "start": 1025.46,
+      "end": 1029.96,
+      "text": "Yeah, so I'm tilting over the look a little..."
+    },
+    {
+      "start": 1030.0,
+      "end": 1034.75,
+      "text": "towards the left and I can see the pulmonic valve is right here."
+    },
+    {
+      "start": 1036.04,
+      "end": 1038.48,
+      "text": "Now we're going to look for some pulmonary insufficiency."
+    },
+    {
+      "start": 1040.0,
+      "end": 1042.34,
+      "text": "will then activate the color."
+    },
+    {
+      "start": 1043.82,
+      "end": 1045.0,
+      "text": "Ah, look, there's a little bit."
+    },
+    {
+      "start": 1045.67,
+      "end": 1045.97,
+      "text": "Look at that."
+    },
+    {
+      "start": 1047.01,
+      "end": 1047.11,
+      "text": "Yeah."
+    },
+    {
+      "start": 1047.53,
+      "end": 1049.21,
+      "text": "That's actually quite common in normals."
+    },
+    {
+      "start": 1049.25,
+      "end": 1049.97,
+      "text": "It's a normal value."
+    },
+    {
+      "start": 1050.0,
+      "end": 1059.72,
+      "text": "So as soon as we see a color jet of any sort, we want to measure the velocity across that valve."
+    },
+    {
+      "start": 1060.1,
+      "end": 1061.6,
+      "text": "I'm not sure we're gonna pick it up,"
+    },
+    {
+      "start": 1061.6,
+      "end": 1063.0,
+      "text": "but let's give it a try."
+    },
+    {
+      "start": 1063.2,
+      "end": 1063.88,
+      "text": "We're off angle,"
+    },
+    {
+      "start": 1064.14,
+      "end": 1066.82,
+      "text": "so this will be an underestimate of velocity,"
+    },
+    {
+      "start": 1067.12,
+      "end": 1069.82,
+      "text": "but I'll see if I can get a little bit of a..."
+    },
+    {
+      "start": 1070.54,
+      "end": 1077.73,
+      "text": "a little bit of a signal here. Ah, back to what we did. I'll change scale."
+    },
+    {
+      "start": 1086.11,
+      "end": 1089.83,
+      "text": "So I'm going to shift my probe angle."
+    },
+    {
+      "start": 1090.0,
+      "end": 1098.17,
+      "text": "bit to try to get a better Doppler angle, here we have it, and Doppler."
+    },
+    {
+      "start": 1100.51,
+      "end": 1102.87,
+      "text": "I'm going to try to find the origin of the jet."
+    },
+    {
+      "start": 1104.78,
+      "end": 1107.1,
+      "text": "There we go. Activate."
+    },
+    {
+      "start": 1116.94,
+      "end": 1119.97,
+      "text": "I don't think we're picking up the..."
+    },
+    {
+      "start": 1121.4,
+      "end": 1127.9,
+      "text": "And I would point out that as critical care in terms of this, we are interested in significant regurgitation jets."
+    },
+    {
+      "start": 1128.04,
+      "end": 1128.78,
+      "text": "Yeah, this is right."
+    },
+    {
+      "start": 1128.86,
+      "end": 1129.96,
+      "text": "So that's not something really more..."
+    },
+    {
+      "start": 1130.19,
+      "end": 1132.66,
+      "text": "spending our time trying to measure."
+    },
+    {
+      "start": 1133.4,
+      "end": 1137.64,
+      "text": "I'm now going to move the probe a little bit downwards"
+    },
+    {
+      "start": 1138.0,
+      "end": 1139.97,
+      "text": "and I'm going to then..."
+    },
+    {
+      "start": 1140.99,
+      "end": 1145.49,
+      "text": "angle up to try to find the pulmonary artery, the main pulmonary artery."
+    },
+    {
+      "start": 1146.65,
+      "end": 1149.97,
+      "text": "Here it is, right here, and as soon as we see that, we're going to..."
+    },
+    {
+      "start": 1150.0,
+      "end": 1152.96,
+      "text": "We're going to make a measurement of the acceleration time, correct?"
+    },
+    {
+      "start": 1153.24,
+      "end": 1153.72,
+      "text": "That's correct."
+    },
+    {
+      "start": 1154.02,
+      "end": 1154.16,
+      "text": "Right?"
+    },
+    {
+      "start": 1154.99,
+      "end": 1156.55,
+      "text": "And we'll be using Pw for that."
+    },
+    {
+      "start": 1157.48,
+      "end": 1157.56,
+      "text": "Yes?"
+    },
+    {
+      "start": 1157.94,
+      "end": 1159.46,
+      "text": "We're going to use the most wave Doppler."
+    },
+    {
+      "start": 1159.7,
+      "end": 1159.84,
+      "text": "Yeah."
+    },
+    {
+      "start": 1160.45,
+      "end": 1168.81,
+      "text": "I put the sample volume here in the main pulmonary artery I activate and I'll..."
+    },
+    {
+      "start": 1170.93,
+      "end": 1172.37,
+      "text": "But I've got a good view here."
+    },
+    {
+      "start": 1172.51,
+      "end": 1173.47,
+      "text": "I had one for a moment."
+    },
+    {
+      "start": 1173.47,
+      "end": 1178.39,
+      "text": "I'll try once more right here."
+    },
+    {
+      "start": 1180.0,
+      "end": 1182.83,
+      "text": "goes to the valve, right here, Doppler on."
+    },
+    {
+      "start": 1197.74,
+      "end": 1199.58,
+      "text": "What do you think?"
+    },
+    {
+      "start": 1200.38,
+      "end": 1205.1,
+      "text": "image quality is not optimal. This is where I'm trying to stop the geolaco"
+    },
+    {
+      "start": 1205.1,
+      "end": 1209.68,
+      "text": "really whims the race for better image in this view. We'll feel so"
+    },
+    {
+      "start": 1210.0,
+      "end": 1217.99,
+      "text": "how to make the measurement. So the interval between the onset of the velocity"
+    },
+    {
+      "start": 1217.99,
+      "end": 1219.97,
+      "text": "on will open its peak. It is a hundred."
+    },
+    {
+      "start": 1220.0,
+      "end": 1225.44,
+      "text": "155 milliseconds which indicates this patient does not have pulmonary arterial hypertension that's correct"
+    },
+    {
+      "start": 1225.44,
+      "end": 1229.92,
+      "text": "Okay, we'll take maybe a sub-costal view if we can find it to make the"
+    },
+    {
+      "start": 1230.0,
+      "end": 1235.54,
+      "text": "measurement. Okay, so does that pretty much complete the base examination?"
+    },
+    {
+      "start": 1235.82,
+      "end": 1239.94,
+      "text": "It leads to the parallel views. So we're now going to move to the apical 4 chain"
+    },
+    {
+      "start": 1240.03,
+      "end": 1246.88,
+      "text": "a view of the heart. Our patient's already in a good left-letter old acubitis position."
+    },
+    {
+      "start": 1247.16,
+      "end": 1249.98,
+      "text": "If the patient was not in that position already, now is in..."
+    },
+    {
+      "start": 1250.03,
+      "end": 1254.59,
+      "text": "the time as it will dramatically improve your imaging quality for these more advanced"
+    },
+    {
+      "start": 1254.59,
+      "end": 1255.11,
+      "text": "measurements."
+    },
+    {
+      "start": 1256.48,
+      "end": 1259.2,
+      "text": "I think the depth axis in gain is acceptable here."
+    },
+    {
+      "start": 1260.16,
+      "end": 1262.52,
+      "text": "Maybe the near field gain we can turn down and touch."
+    },
+    {
+      "start": 1263.04,
+      "end": 1264.44,
+      "text": "Okay, okay."
+    },
+    {
+      "start": 1264.86,
+      "end": 1269.98,
+      "text": "I'll drop to one space more lateral to see if I can, you know."
+    },
+    {
+      "start": 1270.0,
+      "end": 1278.63,
+      "text": "the apex, but I don't know. Yeah, I think this is probably probably the best I can do right around there."
+    },
+    {
+      "start": 1279.4,
+      "end": 1279.84,
+      "text": "Little word."
+    },
+    {
+      "start": 1280.0,
+      "end": 1285.0,
+      "text": "I'm a little foreshortening the Apex, but more lateral, I lose image quality."
+    },
+    {
+      "start": 1285.66,
+      "end": 1287.02,
+      "text": "Is this all right for our purposes?"
+    },
+    {
+      "start": 1287.46,
+      "end": 1289.7,
+      "text": "I think for teaching purposes, this is quite good."
+    },
+    {
+      "start": 1290.16,
+      "end": 1295.46,
+      "text": "And the gold-directed echocardiographer, of course, uses this primarily to size the RV to the LV."
+    },
+    {
+      "start": 1296.06,
+      "end": 1299.98,
+      "text": "But now in ACE territory, we make a lot of other different measurements correct."
+    },
+    {
+      "start": 1300.0,
+      "end": 1306.59,
+      "text": "That's correct. Let's first start by doing simple color Doppler to look for regurgents and jets."
+    },
+    {
+      "start": 1308.55,
+      "end": 1309.97,
+      "text": "Fox size, I'll maybe make a little..."
+    },
+    {
+      "start": 1310.0,
+      "end": 1310.56,
+      "text": "a little bit smaller."
+    },
+    {
+      "start": 1311.46,
+      "end": 1311.56,
+      "text": "Yeah."
+    },
+    {
+      "start": 1312.6,
+      "end": 1312.74,
+      "text": "Okay."
+    },
+    {
+      "start": 1314.03,
+      "end": 1319.86,
+      "text": "We do not see much over vegetation, and now Dr. Mayo is going to move the box."
+    },
+    {
+      "start": 1320.06,
+      "end": 1322.0,
+      "text": "over to look for a tricuspid regurgitation."
+    },
+    {
+      "start": 1322.1,
+      "end": 1325.62,
+      "text": "The audience will notice that I'm scanning through the valve"
+    },
+    {
+      "start": 1326.14,
+      "end": 1328.52,
+      "text": "by angling my tomographic plane."
+    },
+    {
+      "start": 1329.02,
+      "end": 1329.82,
+      "text": "Vals are three dimensions."
+    },
+    {
+      "start": 1330.06,
+      "end": 1335.57,
+      "text": "structures of course it's important to do that. Over on the tricuspid side, likewise"
+    },
+    {
+      "start": 1335.57,
+      "end": 1339.98,
+      "text": "I scan through the valve a bit there's no TR and there's"
+    },
+    {
+      "start": 1340.0,
+      "end": 1342.59,
+      "text": "There's no MR, nothing to measure there."
+    },
+    {
+      "start": 1343.59,
+      "end": 1344.27,
+      "text": "Yep, you agree?"
+    },
+    {
+      "start": 1344.63,
+      "end": 1344.77,
+      "text": "Yes."
+    },
+    {
+      "start": 1344.97,
+      "end": 1345.13,
+      "text": "OK."
+    },
+    {
+      "start": 1345.88,
+      "end": 1349.16,
+      "text": "We can now move on to our assessment of diastolic function."
+    },
+    {
+      "start": 1350.26,
+      "end": 1353.62,
+      "text": "and we typically start by using pulse wave Doppler"
+    },
+    {
+      "start": 1353.62,
+      "end": 1355.52,
+      "text": "to measure a mitral inflow."
+    },
+    {
+      "start": 1355.84,
+      "end": 1357.46,
+      "text": "We have to be very cautious here"
+    },
+    {
+      "start": 1357.46,
+      "end": 1359.86,
+      "text": "because Dr. Greenstein."
+    },
+    {
+      "start": 1360.0,
+      "end": 1364.58,
+      "text": "is first author on a major review article on diastolic function"
+    },
+    {
+      "start": 1364.58,
+      "end": 1369.98,
+      "text": "evaluation by the intensivist. I was in chest, I think, either this month or"
+    },
+    {
+      "start": 1370.0,
+      "end": 1374.97,
+      "text": "last month, a good read. But again, he's an expert. What should I do?"
+    },
+    {
+      "start": 1375.89,
+      "end": 1379.96,
+      "text": "So let's take the PW and you're going to..."
+    },
+    {
+      "start": 1380.03,
+      "end": 1386.67,
+      "text": "Place the sample volume box at the mitral valve leaflet tips within the left ventricle."
+    },
+    {
+      "start": 1390.13,
+      "end": 1399.07,
+      "text": "again, and what we're looking at is the flow that's going upward to the sample volume"
+    },
+    {
+      "start": 1400.1,
+      "end": 1403.44,
+      "text": "which is toe-to-the-probe, so looking at the velocities that are positive."
+    },
+    {
+      "start": 1404.48,
+      "end": 1409.98,
+      "text": "Now, in an ideal world, we would have ECG lead detached, but we're functioning in a..."
+    },
+    {
+      "start": 1410.0,
+      "end": 1417.4,
+      "text": "realistic somewhat unideal world. Let's imagine that our single ECG lead has"
+    },
+    {
+      "start": 1417.4,
+      "end": 1419.98,
+      "text": "been stolen or lost by one of the medical residents of"
+    },
+    {
+      "start": 1420.16,
+      "end": 1425.3,
+      "text": "hospital. And so we're going to make some assumptions that this patient has normal"
+    },
+    {
+      "start": 1425.3,
+      "end": 1429.73,
+      "text": "diastolic toxin. And what Dr. Mayo is doing is he is measuring"
+    },
+    {
+      "start": 1430.0,
+      "end": 1437.1,
+      "text": "the e-wave, which is early mitral philly during diastole, and then he's measuring the"
+    },
+    {
+      "start": 1437.74,
+      "end": 1439.98,
+      "text": "a-wave subsequently and in between he's..."
+    },
+    {
+      "start": 1440.0,
+      "end": 1441.64,
+      "text": "and then calculate the pressure halftime."
+    },
+    {
+      "start": 1441.92,
+      "end": 1443.78,
+      "text": "Yeah, and this is an archaic measurement,"
+    },
+    {
+      "start": 1444.1,
+      "end": 1446.14,
+      "text": "except for very specialized applications,"
+    },
+    {
+      "start": 1446.4,
+      "end": 1449.54,
+      "text": "the V-cell time or the pressure halftime rather."
+    },
+    {
+      "start": 1450.03,
+      "end": 1453.45,
+      "text": "We'll jump forward to the A wave."
+    },
+    {
+      "start": 1453.77,
+      "end": 1455.85,
+      "text": "And that gives us an E to A ratio, correct?"
+    },
+    {
+      "start": 1456.05,
+      "end": 1456.21,
+      "text": "Correct."
+    },
+    {
+      "start": 1456.63,
+      "end": 1456.83,
+      "text": "All right."
+    },
+    {
+      "start": 1457.11,
+      "end": 1459.97,
+      "text": "And it's beyond the scope of this series to..."
+    },
+    {
+      "start": 1460.0,
+      "end": 1461.38,
+      "text": "go into this in more detail,"
+    },
+    {
+      "start": 1461.38,
+      "end": 1463.04,
+      "text": "but then how to acquire the measurements."
+    },
+    {
+      "start": 1463.85,
+      "end": 1468.38,
+      "text": "And for full evaluation of dyes out this function"
+    },
+    {
+      "start": 1468.38,
+      "end": 1469.88,
+      "text": "and for estimates of lefd hup."
+    },
+    {
+      "start": 1470.0,
+      "end": 1472.08,
+      "text": "pressure, you're going to ask me to do what?"
+    },
+    {
+      "start": 1472.4,
+      "end": 1478.16,
+      "text": "So we're now going to use Pulseway Doppler with tissue Doppler imaging, TDI, to measure"
+    },
+    {
+      "start": 1478.16,
+      "end": 1479.98,
+      "text": "the ferocity of the micromancy."
+    },
+    {
+      "start": 1480.03,
+      "end": 1489.1,
+      "text": "valed annulus, and we can measure either or both the lateral annulus or the septal annulus."
+    },
+    {
+      "start": 1492.59,
+      "end": 1495.57,
+      "text": "Dr. Matt is just getting a workable image."
+    },
+    {
+      "start": 1498.27,
+      "end": 1499.97,
+      "text": "Notice he's moving his pulse wave dot-"
+    },
+    {
+      "start": 1500.0,
+      "end": 1509.72,
+      "text": "sample box and he's turning tissue doppler imaging on and now what he's looking at is the velocity that's moving"
+    },
+    {
+      "start": 1510.16,
+      "end": 1515.88,
+      "text": "from the probe to the negative velocity. And just like in flow, there's an E, which is"
+    },
+    {
+      "start": 1515.88,
+      "end": 1519.62,
+      "text": "now called E prime, and an A, which is called A prime, is going to measure those."
+    },
+    {
+      "start": 1521.98,
+      "end": 1525.28,
+      "text": "And this is where each one is really crucial and helpful."
+    },
+    {
+      "start": 1525.28,
+      "end": 1527.92,
+      "text": "Because right now it's a little bit difficult to tell which is which."
+    },
+    {
+      "start": 1529.51,
+      "end": 1529.97,
+      "text": "So..."
+    },
+    {
+      "start": 1531.6,
+      "end": 1537.11,
+      "text": "we would go to main, we then go to the TDI selection,"
+    },
+    {
+      "start": 1537.29,
+      "end": 1539.59,
+      "text": "we're gonna do a lateral E prime, correct?"
+    },
+    {
+      "start": 1540.29,
+      "end": 1547.27,
+      "text": "Now, I'm identifying this area as the systolic movement of the annulus."
+    },
+    {
+      "start": 1547.95,
+      "end": 1549.57,
+      "text": "Therefore, this is the apron."
+    },
+    {
+      "start": 1550.0,
+      "end": 1554.53,
+      "text": "and this is the E prime, so 15."
+    },
+    {
+      "start": 1554.93,
+      "end": 1558.79,
+      "text": "And we would say that's how the Gorilla Critical Parallel Tristanographer figures things out."
+    },
+    {
+      "start": 1560.0,
+      "end": 1567.06,
+      "text": "VKG would be a lot easier and my conclusion here is that this patient is normal"
+    },
+    {
+      "start": 1567.06,
+      "end": 1569.88,
+      "text": "velocity of T normal TDI"
+    },
+    {
+      "start": 1570.57,
+      "end": 1579.11,
+      "text": "I don't know if you want to be complete, I don't think it's necessary."
+    },
+    {
+      "start": 1579.47,
+      "end": 1579.97,
+      "text": "This is normal."
+    },
+    {
+      "start": 1580.0,
+      "end": 1585.94,
+      "text": "velocity and that virtually excludes di-solid dysfunction and the ratio of e to e prime"
+    },
+    {
+      "start": 1585.94,
+      "end": 1589.36,
+      "text": "would give you an estimate of let t h u a pressure which in this case will be"
+    },
+    {
+      "start": 1590.16,
+      "end": 1599.37,
+      "text": "Normal range. That's correct. Okay, good. Alright, so from the apical 4 chamber view we next go to the apical 5 chamber view"
+    },
+    {
+      "start": 1600.16,
+      "end": 1602.6,
+      "text": "so that we can measure the velocity time"
+    },
+    {
+      "start": 1602.6,
+      "end": 1605.42,
+      "text": "into drill over the left ventricular output track"
+    },
+    {
+      "start": 1605.42,
+      "end": 1607.36,
+      "text": "as an estimate of cardiac output."
+    },
+    {
+      "start": 1610.96,
+      "end": 1614.44,
+      "text": "So Dr. Mal is going to use PW and turn off the tissue"
+    },
+    {
+      "start": 1614.44,
+      "end": 1618.96,
+      "text": "Doppler in the gym, and he's going to adjust his sample"
+    },
+    {
+      "start": 1618.96,
+      "end": 1619.3,
+      "text": "line."
+    },
+    {
+      "start": 1620.1,
+      "end": 1623.25,
+      "text": "we've seen to optimally image this velocity,"
+    },
+    {
+      "start": 1624.41,
+      "end": 1629.52,
+      "text": "and the flow is going from the LV over."
+    },
+    {
+      "start": 1630.0,
+      "end": 1635.48,
+      "text": "the LVOT away from the probe and it's the velocity that is negative that's below the line."
+    },
+    {
+      "start": 1640.77,
+      "end": 1643.49,
+      "text": "and he's going to manually trace her."
+    },
+    {
+      "start": 1647.17,
+      "end": 1648.87,
+      "text": "And this will be directly proportional."
+    },
+    {
+      "start": 1650.0,
+      "end": 1659.96,
+      "text": "the stroke volume. And if we if we knew the LVOT diameter, it would be..."
+    },
+    {
+      "start": 1660.0,
+      "end": 1664.13,
+      "text": "It would be a simple arithmetical calculation for stroke volume, correct?"
+    },
+    {
+      "start": 1664.49,
+      "end": 1664.99,
+      "text": "That's correct."
+    },
+    {
+      "start": 1665.27,
+      "end": 1669.81,
+      "text": "And the LVOT diameter is easily calculated at the parastonal long axis view."
+    },
+    {
+      "start": 1670.42,
+      "end": 1676.63,
+      "text": "normal range is 18 to 22 centimeters, Bryant is a normal subject, this is no"
+    },
+    {
+      "start": 1676.63,
+      "end": 1679.69,
+      "text": "surprise to us correct. And we're happy with the positioning of your"
+    },
+    {
+      "start": 1680.0,
+      "end": 1685.78,
+      "text": "Because we see it already about closure at the end systole."
+    },
+    {
+      "start": 1686.91,
+      "end": 1689.48,
+      "text": "All right, as long as we're here,"
+    },
+    {
+      "start": 1689.64,
+      "end": 1689.98,
+      "text": "shall we take..."
+    },
+    {
+      "start": 1690.0,
+      "end": 1696.48,
+      "text": "a quick look at right-sided function in terms of measuring the TAPC. That's what you like to do."
+    },
+    {
+      "start": 1697.55,
+      "end": 1698.85,
+      "text": "What does that stand for TAPC?"
+    },
+    {
+      "start": 1700.03,
+      "end": 1704.09,
+      "text": "NC stands for Track Cuspid, Annular Claim, Sistolic Excursion."
+    },
+    {
+      "start": 1705.3,
+      "end": 1709.82,
+      "text": "And it's a surrogate measure to help estimate how RV Sistolic function."
+    },
+    {
+      "start": 1710.22,
+      "end": 1715.68,
+      "text": "And what Dr. Mayo has done is he's turned M-mode imaging on and he has passed the M-mode"
+    },
+    {
+      "start": 1715.68,
+      "end": 1719.82,
+      "text": "scan line through the lateral anulus of the tricuspid."
+    },
+    {
+      "start": 1720.0,
+      "end": 1729.51,
+      "text": "And he's measuring the height difference between systole and diastole a normally functioning"
+    },
+    {
+      "start": 1730.06,
+      "end": 1737.48,
+      "text": "ventricle on the right side there'll be quite a bit of movement of the annulus as we see here it's"
+    },
+    {
+      "start": 1737.48,
+      "end": 1739.38,
+      "text": "22 millimeters"
+    },
+    {
+      "start": 1740.51,
+      "end": 1743.71,
+      "text": "And that is a normal movement, normal tapsie."
+    },
+    {
+      "start": 1745.28,
+      "end": 1746.52,
+      "text": "No one's surprised, correct?"
+    },
+    {
+      "start": 1746.76,
+      "end": 1746.96,
+      "text": "Correct."
+    },
+    {
+      "start": 1747.18,
+      "end": 1747.46,
+      "text": "Yeah, okay."
+    },
+    {
+      "start": 1748.15,
+      "end": 1749.65,
+      "text": "All right, next."
+    },
+    {
+      "start": 1750.74,
+      "end": 1756.9,
+      "text": "So we now move to image the ventricle and the valves and other orthogonal views."
+    },
+    {
+      "start": 1757.16,
+      "end": 1759.9,
+      "text": "So we move from the apical 4 chamber to the apical 2 chamber."
+    },
+    {
+      "start": 1760.03,
+      "end": 1769.97,
+      "text": "I rotate my probes 60 degrees to achieve a two chamber view and that was a counterclockwise rotation and for the ACE candidate who"
+    },
+    {
+      "start": 1770.03,
+      "end": 1773.02,
+      "text": "must know all 16 segments."
+    },
+    {
+      "start": 1773.54,
+      "end": 1775.02,
+      "text": "They're actually 17 segments,"
+    },
+    {
+      "start": 1775.02,
+      "end": 1776.4,
+      "text": "but we'll say they're 16."
+    },
+    {
+      "start": 1776.92,
+      "end": 1779.98,
+      "text": "This is the anterior wall, and this is the..."
+    },
+    {
+      "start": 1780.06,
+      "end": 1787.83,
+      "text": "wall and then to continue the rotation to other six degrees we have the three"
+    },
+    {
+      "start": 1787.83,
+      "end": 1789.98,
+      "text": "chamber view this is the"
+    },
+    {
+      "start": 1791.5,
+      "end": 1794.96,
+      "text": "The anterior septum, and this is the inferior lateral wall."
+    },
+    {
+      "start": 1796.23,
+      "end": 1799.26,
+      "text": "If necessary, M-mode can be of the side."
+    },
+    {
+      "start": 1800.0,
+      "end": 1802.76,
+      "text": "If necessary, color can be applied to these vials."
+    },
+    {
+      "start": 1802.92,
+      "end": 1804.94,
+      "text": "In this case, we would not regard it as necessary."
+    },
+    {
+      "start": 1805.42,
+      "end": 1809.31,
+      "text": "An alternative means of measuring the OVO2 VTI."
+    },
+    {
+      "start": 1810.16,
+      "end": 1816.96,
+      "text": "is to measure it here and that has the same implication as measured from the five chamber"
+    },
+    {
+      "start": 1816.96,
+      "end": 1817.66,
+      "text": "view correct."
+    },
+    {
+      "start": 1817.82,
+      "end": 1819.92,
+      "text": "Now you would agree that for the"
+    },
+    {
+      "start": 1820.0,
+      "end": 1827.04,
+      "text": "intensivist or clinician who is delving down the ace path, it will be a required measurement"
+    },
+    {
+      "start": 1827.04,
+      "end": 1829.98,
+      "text": "to do so there should be colored off or done at all of these different angles."
+    },
+    {
+      "start": 1830.13,
+      "end": 1837.61,
+      "text": "for a complete image. Yeah, we would advise that and you would measure VTI here and let's"
+    },
+    {
+      "start": 1837.61,
+      "end": 1838.51,
+      "text": "see how does it compare."
+    },
+    {
+      "start": 1840.0,
+      "end": 1845.88,
+      "text": "always take the higher value because of the issues related to Doppler and angle of the"
+    },
+    {
+      "start": 1845.88,
+      "end": 1846.92,
+      "text": "The incination, correct?"
+    },
+    {
+      "start": 1847.2,
+      "end": 1847.32,
+      "text": "Correct."
+    },
+    {
+      "start": 1847.6,
+      "end": 1847.76,
+      "text": "All right."
+    },
+    {
+      "start": 1848.12,
+      "end": 1848.86,
+      "text": "Normal range."
+    },
+    {
+      "start": 1849.3,
+      "end": 1849.44,
+      "text": "Right."
+    },
+    {
+      "start": 1850.22,
+      "end": 1852.93,
+      "text": "All right, what's next?"
+    },
+    {
+      "start": 1853.27,
+      "end": 1858.08,
+      "text": "So we now move to the sub-costal long access view of the heart."
+    },
+    {
+      "start": 1859.48,
+      "end": 1859.78,
+      "text": "All right."
+    },
+    {
+      "start": 1860.32,
+      "end": 1862.89,
+      "text": "Oh, there we go, all right?"
+    },
+    {
+      "start": 1863.09,
+      "end": 1866.9,
+      "text": "I'm trying to adjust my probe position"
+    },
+    {
+      "start": 1866.9,
+      "end": 1869.6,
+      "text": "and also tomographic angle."
+    },
+    {
+      "start": 1871.02,
+      "end": 1873.86,
+      "text": "in order to show both ventricles as horizontal"
+    },
+    {
+      "start": 1873.86,
+      "end": 1875.24,
+      "text": "as possible on the screen."
+    },
+    {
+      "start": 1876.14,
+      "end": 1878.84,
+      "text": "This is a familiar view to the Gold Directed Echo"
+    },
+    {
+      "start": 1878.84,
+      "end": 1879.5,
+      "text": "Cardiographer."
+    },
+    {
+      "start": 1881.02,
+      "end": 1884.8,
+      "text": "You can of course, if necessary, color these vials,"
+    },
+    {
+      "start": 1885.27,
+      "end": 1887.19,
+      "text": "particularly the tricuspid valve."
+    },
+    {
+      "start": 1887.88,
+      "end": 1889.98,
+      "text": "Sometimes it offers a good angle."
+    },
+    {
+      "start": 1890.0,
+      "end": 1895.1,
+      "text": "for incination, for measurement of trans-valvular velocity."
+    },
+    {
+      "start": 1897.39,
+      "end": 1899.85,
+      "text": "Now we like this view, the size for regression."
+    },
+    {
+      "start": 1900.16,
+      "end": 1905.46,
+      "text": "because we can also look at the IVC, which is something done in the basic exam."
+    },
+    {
+      "start": 1905.78,
+      "end": 1909.7,
+      "text": "And before we go there, let's do a short access."
+    },
+    {
+      "start": 1910.0,
+      "end": 1916.8,
+      "text": "the left ventricle. There we have something that's rather equivalent to the"
+    },
+    {
+      "start": 1916.8,
+      "end": 1919.04,
+      "text": "the Parasurnal Thord Axis view."
+    },
+    {
+      "start": 1920.0,
+      "end": 1926.12,
+      "text": "If you fail with Parasurinal Short, then this is the bailout view to get the same information, obviously."
+    },
+    {
+      "start": 1927.0,
+      "end": 1929.98,
+      "text": "We then move the tomographic plane of..."
+    },
+    {
+      "start": 1930.0,
+      "end": 1938.62,
+      "text": "bit over towards the right, hoping to find the pulmonary artery, and I think we have a little bit of"
+    },
+    {
+      "start": 1938.62,
+      "end": 1939.96,
+      "text": "There's a lot of gas up here."
+    },
+    {
+      "start": 1940.0,
+      "end": 1948.51,
+      "text": "that's blocking us a bit. So we may be unsuccessful. Here's some sort of air artifact."
+    },
+    {
+      "start": 1950.0,
+      "end": 1954.0,
+      "text": "I don't think we're going to be able to see the pulmonary artery, although I can just"
+    },
+    {
+      "start": 1954.0,
+      "end": 1955.34,
+      "text": "see it unraveling here."
+    },
+    {
+      "start": 1955.72,
+      "end": 1958.72,
+      "text": "Let's see if we can make that Doppler measurement sometimes."
+    },
+    {
+      "start": 1960.13,
+      "end": 1962.75,
+      "text": "Add 2D image, you still get Doppler information."
+    },
+    {
+      "start": 1963.17,
+      "end": 1964.07,
+      "text": "Let's see what we get here."
+    },
+    {
+      "start": 1964.37,
+      "end": 1965.35,
+      "text": "Oh, there we have it."
+    },
+    {
+      "start": 1965.55,
+      "end": 1966.55,
+      "text": "Yeah, look at that."
+    },
+    {
+      "start": 1968.86,
+      "end": 1969.24,
+      "text": "What do you think?"
+    },
+    {
+      "start": 1970.03,
+      "end": 1971.29,
+      "text": "Yeah, we got lucky."
+    },
+    {
+      "start": 1971.91,
+      "end": 1973.13,
+      "text": "All right, so we'll go to Calc"
+    },
+    {
+      "start": 1973.13,
+      "end": 1976.11,
+      "text": "and we're gonna make a measurement of acceleration time"
+    },
+    {
+      "start": 1976.61,
+      "end": 1978.75,
+      "text": "which was 155 initially."
+    },
+    {
+      "start": 1979.29,
+      "end": 1979.97,
+      "text": "Let's see what it is."
+    },
+    {
+      "start": 1980.0,
+      "end": 1989.69,
+      "text": "here, okay? This is the main ordinary artery velocity time integral by place"
+    },
+    {
+      "start": 1990.0,
+      "end": 1995.92,
+      "text": "initial cursor here and peak is right around. So, this is I think more accurate than the first one."
+    },
+    {
+      "start": 1996.4,
+      "end": 1999.97,
+      "text": "You agree? Pretty good. It's an X hooker upstroke. Yeah, it's a..."
+    },
+    {
+      "start": 2000.0,
+      "end": 2005.92,
+      "text": "it's a it's acceptable although not perfect quality the patient does not have"
+    },
+    {
+      "start": 2005.92,
+      "end": 2009.84,
+      "text": "pulmonary arterial hypertension correct correct all right really the final"
+    },
+    {
+      "start": 2010.0,
+      "end": 2017.23,
+      "text": "view is to measure the hepatic vein inflow at the IVC."
+    },
+    {
+      "start": 2017.59,
+      "end": 2019.97,
+      "text": "I am not able to image the IVC."
+    },
+    {
+      "start": 2020.0,
+      "end": 2027.47,
+      "text": "see as it comes into the right atrium, simply because we have air artifact that is"
+    },
+    {
+      "start": 2027.47,
+      "end": 2029.97,
+      "text": "is transfer its colon, so it will be unsolic-"
+    },
+    {
+      "start": 2030.0,
+      "end": 2032.66,
+      "text": "successful in finding the inflow of the"
+    },
+    {
+      "start": 2032.66,
+      "end": 2038.4,
+      "text": "a paddock vein until such time that that gas moves through."
+    },
+    {
+      "start": 2038.84,
+      "end": 2039.96,
+      "text": "However, we might get lucky"
+    },
+    {
+      "start": 2040.06,
+      "end": 2045.73,
+      "text": "by coming a little bit more lateral and let's see can we find something it can"
+    },
+    {
+      "start": 2045.73,
+      "end": 2049.93,
+      "text": "help us. Let's see there's the IVC there but I"
+    },
+    {
+      "start": 2050.0,
+      "end": 2052.28,
+      "text": "I don't think you only you'll be disappointed."
+    },
+    {
+      "start": 2052.87,
+      "end": 2055.53,
+      "text": "Let's show us some views that are not"
+    },
+    {
+      "start": 2056.26,
+      "end": 2059.55,
+      "text": "necessarily bar of a full examination."
+    },
+    {
+      "start": 2060.0,
+      "end": 2065.83,
+      "text": "you would show the mentor, but they're interesting. How about showing us a"
+    },
+    {
+      "start": 2065.83,
+      "end": 2069.27,
+      "text": "the MAPC and the S1 philosophy."
+    },
+    {
+      "start": 2070.1,
+      "end": 2076.72,
+      "text": "of the lateral mitral anulus, which have been somewhat validated of indices that reflect"
+    },
+    {
+      "start": 2076.72,
+      "end": 2079.75,
+      "text": "a penalty function term, which is obvious limitation."
+    },
+    {
+      "start": 2080.1,
+      "end": 2086.48,
+      "text": "So, y'all recall before that Dr. Mayo did tap-c by putting the M.O. scan line out here."
+    },
+    {
+      "start": 2087.02,
+      "end": 2089.9,
+      "text": "MAP-c is going to be the mirror opposite."
+    },
+    {
+      "start": 2090.0,
+      "end": 2093.88,
+      "text": "it where we put the on-mode scan line out to the lateral annulus of the"
+    },
+    {
+      "start": 2093.88,
+      "end": 2099.93,
+      "text": "mitral valve and then we hit on-mode again and we let it sweep"
+    },
+    {
+      "start": 2100.16,
+      "end": 2103.61,
+      "text": "across the screen and then we can do our same measurement."
+    },
+    {
+      "start": 2106.08,
+      "end": 2109.68,
+      "text": "And so the peculiarity of this machine is that you think you're measuring"
+    },
+    {
+      "start": 2110.0,
+      "end": 2117.08,
+      "text": "hypotenuse of a triangle, but in fact the number gives you is the vertical distance, okay?"
+    },
+    {
+      "start": 2117.08,
+      "end": 2119.62,
+      "text": "In this case, it's 1.59."
+    },
+    {
+      "start": 2120.0,
+      "end": 2127.18,
+      "text": "centimeters. Which is normal range for maps, which is always a little lower than the normal"
+    },
+    {
+      "start": 2130.06,
+      "end": 2137.35,
+      "text": "Here is that the higher the greater the movement of the mitle of the mitle"
+    },
+    {
+      "start": 2137.35,
+      "end": 2139.71,
+      "text": "the more normal is the"
+    },
+    {
+      "start": 2140.38,
+      "end": 2145.47,
+      "text": "function of the heart. That applies during the isolate. It also applies during the systolic."
+    },
+    {
+      "start": 2147.42,
+      "end": 2149.52,
+      "text": "So, could you measure your..."
+    },
+    {
+      "start": 2150.0,
+      "end": 2155.81,
+      "text": "the distance move but you might also be able to measure the velocity of movement."
+    },
+    {
+      "start": 2156.13,
+      "end": 2159.73,
+      "text": "Yeah, so MAPC was done with M mode and to measure the velocity"
+    },
+    {
+      "start": 2160.0,
+      "end": 2165.68,
+      "text": "We place a pulse wave Doppler sample box over the same area, the lateral anulus of the"
+    },
+    {
+      "start": 2165.68,
+      "end": 2169.16,
+      "text": "microphone valve and then we turn tissue Doppler imaging on."
+    },
+    {
+      "start": 2175.02,
+      "end": 2176.38,
+      "text": "and I'm going to adjust the scale."
+    },
+    {
+      "start": 2180.35,
+      "end": 2186.38,
+      "text": "the other one and see more of it, I just have a purge it, and I thought this was good."
+    },
+    {
+      "start": 2190.19,
+      "end": 2196.17,
+      "text": "I sort of had better. Here we go again. He's always given me a hard time. I think I think you need"
+    },
+    {
+      "start": 2196.17,
+      "end": 2199.78,
+      "text": "new glasses maybe. All right, let's..."
+    },
+    {
+      "start": 2202.46,
+      "end": 2208.34,
+      "text": "For those of you who know Dr. Mayo well, you'll know he's often wearing his wife's glasses"
+    },
+    {
+      "start": 2208.34,
+      "end": 2209.82,
+      "text": "because he can't tell the difference."
+    },
+    {
+      "start": 2210.0,
+      "end": 2219.98,
+      "text": "I like that. That's okay. So we can have the deep room"
+    },
+    {
+      "start": 2220.0,
+      "end": 2229.46,
+      "text": "and they prime, and then they have the upward movement there on the screen."
+    },
+    {
+      "start": 2230.42,
+      "end": 2238.69,
+      "text": "S1 and we're able to measure velocity. These are simple measurements that evaluate"
+    },
+    {
+      "start": 2240.29,
+      "end": 2249.1,
+      "text": "LV function. Are they fully validated for use and put it up here? Not really, but they're"
+    },
+    {
+      "start": 2249.1,
+      "end": 2249.84,
+      "text": "interesting to me."
+    },
+    {
+      "start": 2250.1,
+      "end": 2252.68,
+      "text": "and they will probably have some future application plans."
+    },
+    {
+      "start": 2253.62,
+      "end": 2255.16,
+      "text": "Are there any other specialized measurements"
+    },
+    {
+      "start": 2255.16,
+      "end": 2259.01,
+      "text": "that are not quite necessary for ace examination"
+    },
+    {
+      "start": 2259.01,
+      "end": 2259.79,
+      "text": "but of interest?"
+    },
+    {
+      "start": 2260.0,
+      "end": 2261.74,
+      "text": "What trifle pulmonary venous inflow?"
+    },
+    {
+      "start": 2262.82,
+      "end": 2266.44,
+      "text": "Ah sure, so it's probably my least favorite measurement to do."
+    },
+    {
+      "start": 2266.66,
+      "end": 2269.84,
+      "text": "And there's a reason for that that the literature is very specific then."
+    },
+    {
+      "start": 2270.1,
+      "end": 2271.84,
+      "text": "with Trent's thoracic echo."
+    },
+    {
+      "start": 2272.69,
+      "end": 2274.49,
+      "text": "And I would say especially in the quick videos,"
+    },
+    {
+      "start": 2274.93,
+      "end": 2276.77,
+      "text": "very hard to get a good quality image."
+    },
+    {
+      "start": 2277.44,
+      "end": 2278.1,
+      "text": "Let's try four."
+    },
+    {
+      "start": 2280.06,
+      "end": 2287.74,
+      "text": "room there maybe, that's all right, move it over now all to get TDI, all to get TDI."
+    },
+    {
+      "start": 2288.24,
+      "end": 2288.54,
+      "text": "Thank you."
+    },
+    {
+      "start": 2290.0,
+      "end": 2295.55,
+      "text": "it. I think there's an inflow right here. I think that's my angle. No."
+    },
+    {
+      "start": 2302.21,
+      "end": 2303.79,
+      "text": "You can see there, they're right there, right there."
+    },
+    {
+      "start": 2305.89,
+      "end": 2308.33,
+      "text": "Right, slow the sweep speed will change line."
+    },
+    {
+      "start": 2311.66,
+      "end": 2314.34,
+      "text": "Thanks a lot, it's a fun video, you know what I'm talking about."
+    },
+    {
+      "start": 2318.47,
+      "end": 2319.97,
+      "text": "Yeah, and here we..."
+    },
+    {
+      "start": 2320.06,
+      "end": 2327.12,
+      "text": "I think the quality image is actually acceptable, without EKG, it's going to be very, very hard to interpret."
+    },
+    {
+      "start": 2327.87,
+      "end": 2329.98,
+      "text": "To all say, I wish we had the..."
+    },
+    {
+      "start": 2330.03,
+      "end": 2332.73,
+      "text": "But there's an example that's actually attainable."
+    },
+    {
+      "start": 2333.54,
+      "end": 2337.46,
+      "text": "Trent's self-geolachocardiography gives really, really easy"
+    },
+    {
+      "start": 2337.46,
+      "end": 2339.98,
+      "text": "and good quality, come very good in a simple way."
+    },
+    {
+      "start": 2340.77,
+      "end": 2344.59,
+      "text": "But it's application now is more limited than it was 10 years ago."
+    },
+    {
+      "start": 2345.16,
+      "end": 2349.34,
+      "text": "It's not part of the standard assessment to die solid culture or L.A.P. pressure."
+    },
+    {
+      "start": 2351.63,
+      "end": 2352.29,
+      "text": "That's correct."
+    },
+    {
+      "start": 2352.85,
+      "end": 2353.29,
+      "text": "That's correct."
+    },
+    {
+      "start": 2353.35,
+      "end": 2356.33,
+      "text": "Yoni, I understand you have some expertise with TensorFlow."
+    },
+    {
+      "start": 2356.51,
+      "end": 2357.15,
+      "text": "Do you like the choreography?"
+    },
+    {
+      "start": 2358.21,
+      "end": 2358.47,
+      "text": "I did."
+    },
+    {
+      "start": 2358.89,
+      "end": 2359.17,
+      "text": "Yeah."
+    },
+    {
+      "start": 2359.33,
+      "end": 2359.91,
+      "text": "How many news?"
+    },
+    {
+      "start": 2360.0,
+      "end": 2363.46,
+      "text": "I've done 33 examinations."
+    },
+    {
+      "start": 2363.6,
+      "end": 2369.34,
+      "text": "According to European standards, you're nearly at the point of credible capability."
+    },
+    {
+      "start": 2370.45,
+      "end": 2376.74,
+      "text": "For the audience, trans-a-self-duel image acquisition will not be a requirement."
+    },
+    {
+      "start": 2377.21,
+      "end": 2379.97,
+      "text": "It encompasses not the requirement for..."
+    },
+    {
+      "start": 2380.1,
+      "end": 2387.04,
+      "text": "NBE certification process that will likely be an add-on in five years or so and more units"
+    },
+    {
+      "start": 2387.04,
+      "end": 2388.2,
+      "text": "actually have probes."
+    },
+    {
+      "start": 2388.77,
+      "end": 2389.57,
+      "text": "Don't worry about that."
+    }
+  ]
+}

@@ -1,0 +1,538 @@
+{
+  "video_id": "qYM2sft8R2I",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/qYM2sft8R2I/asr.txt",
+  "segments": [
+    {
+      "start": 4.32,
+      "end": 5.52,
+      "text": "Hi, I'm Dr. Stephen Fingle."
+    },
+    {
+      "start": 5.62,
+      "end": 8.72,
+      "text": "Today we're gonna go over how here at the Stanford Hospital"
+    },
+    {
+      "start": 8.72,
+      "end": 9.8,
+      "text": "we do our poverty."
+    },
+    {
+      "start": 10.0,
+      "end": 14.48,
+      "text": "nerve blocks. Whether you're doing a one shot block or whether you're doing a"
+    },
+    {
+      "start": 14.48,
+      "end": 19.46,
+      "text": "continuous block with a catheter, much of the preparation is the same. One of the"
+    },
+    {
+      "start": 19.46,
+      "end": 19.9,
+      "text": "most important"
+    },
+    {
+      "start": 20.0,
+      "end": 22.7,
+      "text": "things is to maximize patient positioning."
+    },
+    {
+      "start": 22.96,
+      "end": 28.47,
+      "text": "If you're doing a popliteal block, I have the patient and right lateral de-cubitis"
+    },
+    {
+      "start": 28.47,
+      "end": 29.91,
+      "text": "position so that I can"
+    },
+    {
+      "start": 30.0,
+      "end": 37.84,
+      "text": "the block on the left leg. Very important when doing this block to make sure that you understand the"
+    },
+    {
+      "start": 38.51,
+      "end": 39.91,
+      "text": "the medial and laterals."
+    },
+    {
+      "start": 40.19,
+      "end": 45.24,
+      "text": "of the leg that you don't make the mistake of thinking that this dot corresponds to the"
+    },
+    {
+      "start": 45.24,
+      "end": 48.11,
+      "text": "dot on the probe that you can see here."
+    },
+    {
+      "start": 48.11,
+      "end": 49.97,
+      "text": "In fact, the orientation is..."
+    },
+    {
+      "start": 50.0,
+      "end": 59.84,
+      "text": "But I'm going to do first is just place the probe right in the popliteal fossa and the first structure"
+    },
+    {
+      "start": 60.0,
+      "end": 65.52,
+      "text": "that I'm interested in finding, frankly, are the vessels that traverse this space."
+    },
+    {
+      "start": 66.93,
+      "end": 68.29,
+      "text": "As you look here on the screen,"
+    },
+    {
+      "start": 70.0,
+      "end": 74.02,
+      "text": "and see here what look like the vessels in the poplitele fossa."
+    },
+    {
+      "start": 75.99,
+      "end": 79.13,
+      "text": "You also can confirm that by hitting color on your probe,"
+    },
+    {
+      "start": 79.13,
+      "end": 79.97,
+      "text": "and we've now come..."
+    },
+    {
+      "start": 80.03,
+      "end": 85.0,
+      "text": "firm that we have flow through these structures. So we've now identified the"
+    },
+    {
+      "start": 85.0,
+      "end": 89.78,
+      "text": "artery and vein. Having done that, we're gonna look for our nerve."
+    },
+    {
+      "start": 90.0,
+      "end": 96.65,
+      "text": "sitting just adjacent to those structures. Watches I smoothed the probe gently"
+    },
+    {
+      "start": 96.65,
+      "end": 99.97,
+      "text": "what an enormous difference you get in"
+    },
+    {
+      "start": 100.03,
+      "end": 108.39,
+      "text": "the picture, the most subtle movements and cause your picture to be maximized where you"
+    },
+    {
+      "start": 108.39,
+      "end": 109.61,
+      "text": "can see your nerve now."
+    },
+    {
+      "start": 110.93,
+      "end": 119.56,
+      "text": "right here, or you can lose your image altogether if I gently keep sliding immediately, I've lost my nerve altogether now."
+    },
+    {
+      "start": 120.51,
+      "end": 125.75,
+      "text": "I'm going to re-slide the probe laterally to re-acquire the image that I'm interested in."
+    },
+    {
+      "start": 126.9,
+      "end": 129.98,
+      "text": "And we found our nerve sitting right here, adjacent..."
+    },
+    {
+      "start": 130.1,
+      "end": 130.7,
+      "text": "to the vessels."
+    },
+    {
+      "start": 131.64,
+      "end": 137.0,
+      "text": "At this point, we know that the sciatic nerve has already split into the tibial and"
+    },
+    {
+      "start": 137.0,
+      "end": 139.91,
+      "text": "the perennial components. So I'm going to try to"
+    },
+    {
+      "start": 140.03,
+      "end": 149.26,
+      "text": "is gently move the probe cephalad to see if we can find where these two segments join to form the"
+    },
+    {
+      "start": 149.26,
+      "end": 149.96,
+      "text": "say I had a knur-"
+    },
+    {
+      "start": 150.0,
+      "end": 155.64,
+      "text": "which they've just done now. That's not the best picture so I'm going to try to"
+    },
+    {
+      "start": 155.64,
+      "end": 159.12,
+      "text": "show it to you better. Here again I believe is your nerve."
+    },
+    {
+      "start": 160.1,
+      "end": 169.97,
+      "text": "I'm going to trace back to the fossa and watch them separate here. Here's the two components. One, two, moving cephalad, the..."
+    },
+    {
+      "start": 170.0,
+      "end": 178.71,
+      "text": "join together. Moving caught at they're separating right now. When I do this"
+    },
+    {
+      "start": 178.71,
+      "end": 179.97,
+      "text": "block I want to make sure"
+    },
+    {
+      "start": 180.0,
+      "end": 186.42,
+      "text": "that I'm not doing it at this level. When you block here, it's very possible to have a positive"
+    },
+    {
+      "start": 186.42,
+      "end": 189.91,
+      "text": "of Twitch if you use a Twitch monitor and have a lousy"
+    },
+    {
+      "start": 190.0,
+      "end": 196.03,
+      "text": "because you're blocking only either in the lateral aspect, the peronial component or the"
+    },
+    {
+      "start": 196.03,
+      "end": 199.66,
+      "text": "medial aspect, the tithial component there. So I want to move..."
+    },
+    {
+      "start": 200.0,
+      "end": 208.34,
+      "text": "the probe cephalad to ensure that I have the whole sciatic nerve which I do now. I'm happy blocking"
+    },
+    {
+      "start": 208.34,
+      "end": 209.76,
+      "text": "anywhere at this level."
+    },
+    {
+      "start": 210.32,
+      "end": 214.27,
+      "text": "or even a little bit higher to ensure that I get the nerve."
+    },
+    {
+      "start": 214.43,
+      "end": 216.51,
+      "text": "Now look what happens is I gently move my crow."
+    },
+    {
+      "start": 216.73,
+      "end": 218.53,
+      "text": "I've lost the view of the nerve altogether."
+    },
+    {
+      "start": 219.57,
+      "end": 219.79,
+      "text": "Moving."
+    },
+    {
+      "start": 220.0,
+      "end": 227.28,
+      "text": "the probes so lightly backward toward me, I've now re-acquired it here. So movements"
+    },
+    {
+      "start": 227.28,
+      "end": 229.66,
+      "text": "and make enormous differences when doing blocks."
+    },
+    {
+      "start": 230.77,
+      "end": 235.17,
+      "text": "So we're often asked about needle placement and where we do injection on skin."
+    },
+    {
+      "start": 235.93,
+      "end": 239.09,
+      "text": "The first thing I've done is just kind of re-acquired my image."
+    },
+    {
+      "start": 240.0,
+      "end": 247.06,
+      "text": "And what I'm interested in is to see how deep the nerve is relative to the skin and"
+    },
+    {
+      "start": 247.44,
+      "end": 249.97,
+      "text": "So you see the nerve there and we see the"
+    },
+    {
+      "start": 250.0,
+      "end": 256.88,
+      "text": "the setting on this machine is currently 3.3 centimeter, and the nerve is sitting at almost"
+    },
+    {
+      "start": 256.88,
+      "end": 259.98,
+      "text": "min screen, which means you're going to be at about 1.7 seconds."
+    },
+    {
+      "start": 260.0,
+      "end": 264.64,
+      "text": "5 centimeter, maybe roughly that."
+    },
+    {
+      "start": 265.71,
+      "end": 269.98,
+      "text": "So what I'm going to do is keep my probe exactly where it is, I have a..."
+    },
+    {
+      "start": 270.0,
+      "end": 274.56,
+      "text": "nice view with the nerve sitting right in mid-screen and I'm going to take the needle when"
+    },
+    {
+      "start": 274.56,
+      "end": 279.98,
+      "text": "I do a block, I'm going to line it up perfectly with the pro and I'm going to go down."
+    },
+    {
+      "start": 280.0,
+      "end": 289.98,
+      "text": "what I guesstimate to be 1.75 centimeter and from there you'll see on screen on the next block that we do"
+    },
+    {
+      "start": 290.0,
+      "end": 295.08,
+      "text": "make slight adjustments as we're heading toward the nerve. It's very important as"
+    },
+    {
+      "start": 295.08,
+      "end": 299.98,
+      "text": "best you can to try and keep the needle lined up for the probe or you go..."
+    },
+    {
+      "start": 300.0,
+      "end": 305.53,
+      "text": "going to either lose the needle view or you're going to lose part of the needle view and"
+    },
+    {
+      "start": 305.53,
+      "end": 309.9,
+      "text": "think what you're seeing is the end of the needle when in reality the end of the needle."
+    },
+    {
+      "start": 310.0,
+      "end": 317.12,
+      "text": "is distal to what you're seeing on the screen. So try to keep the needle in line and also only move"
+    },
+    {
+      "start": 317.12,
+      "end": 319.93,
+      "text": "One thing at a time you start moving your"
+    },
+    {
+      "start": 320.0,
+      "end": 326.4,
+      "text": "ultrasound probe and start moving the needle at the same time. Very slight movements can lead to"
+    },
+    {
+      "start": 326.4,
+      "end": 329.37,
+      "text": "you having a very difficult time on screen."
+    },
+    {
+      "start": 330.1,
+      "end": 334.6,
+      "text": "So really maximize your view first, maximize our view."
+    },
+    {
+      "start": 337.86,
+      "end": 338.04,
+      "text": "There."
+    },
+    {
+      "start": 340.26,
+      "end": 346.3,
+      "text": "Line your needle up with the probe at roughly the depth that you expect the nerve to be and make adjustments as needed from there."
+    },
+    {
+      "start": 348.09,
+      "end": 349.79,
+      "text": "Okay, so what you see here is an example."
+    },
+    {
+      "start": 350.0,
+      "end": 352.6,
+      "text": "of another block done this time on a right leg."
+    },
+    {
+      "start": 353.04,
+      "end": 359.55,
+      "text": "You can clearly see the theatic nerve as I play around with the probe and you see the"
+    },
+    {
+      "start": 359.55,
+      "end": 359.85,
+      "text": "VES."
+    },
+    {
+      "start": 360.0,
+      "end": 364.2,
+      "text": "underneath there. I'm just rocking the Pro back and forth just like in the last"
+    },
+    {
+      "start": 364.2,
+      "end": 369.97,
+      "text": "example to maximize my view of the nerve. And I take a little time doing that."
+    },
+    {
+      "start": 370.0,
+      "end": 377.55,
+      "text": "to see the nerve as best I can and to see where it splits into the two divisions. I think we're"
+    },
+    {
+      "start": 377.55,
+      "end": 379.67,
+      "text": "I want to see a good example here of the nerve"
+    },
+    {
+      "start": 380.03,
+      "end": 383.65,
+      "text": "joining to form the sciatic, and now as I go back,"
+    },
+    {
+      "start": 384.55,
+      "end": 386.57,
+      "text": "cod adds separating right now."
+    },
+    {
+      "start": 387.81,
+      "end": 389.73,
+      "text": "Separating is a heads."
+    },
+    {
+      "start": 390.0,
+      "end": 396.36,
+      "text": "deflade joining. Once I've acquired the view that I want, I'm going to be placing the needle"
+    },
+    {
+      "start": 396.36,
+      "end": 399.98,
+      "text": "just as I showed you in the last example. You're going to see the needle come in."
+    },
+    {
+      "start": 400.0,
+      "end": 404.8,
+      "text": "from the left side of the screen, moving toward the nerve."
+    },
+    {
+      "start": 407.42,
+      "end": 409.86,
+      "text": "As best I can, I'm gonna show it to you in view."
+    },
+    {
+      "start": 410.0,
+      "end": 414.02,
+      "text": "where my target is is actually to get just underneath the nerve as you see it"
+    },
+    {
+      "start": 414.02,
+      "end": 419.57,
+      "text": "there now. That's the ideal place that I like to start my injection from."
+    },
+    {
+      "start": 420.38,
+      "end": 423.22,
+      "text": "and you see me making adjustments as I head to the nerve"
+    },
+    {
+      "start": 423.22,
+      "end": 426.16,
+      "text": "so that the needle can sit right underneath the nerve"
+    },
+    {
+      "start": 426.16,
+      "end": 428.9,
+      "text": "where I have it placed right now."
+    },
+    {
+      "start": 431.22,
+      "end": 439.98,
+      "text": "Okay, once we're underneath the nerve, I'm going to make sure that obviously I don't have any parasithesia as I begin."
+    },
+    {
+      "start": 440.0,
+      "end": 445.1,
+      "text": "the injection. You can see the local anaesthetic filling now underneath the"
+    },
+    {
+      "start": 445.1,
+      "end": 449.97,
+      "text": "nerve as we do our injection. I like to see nice pooling around as"
+    },
+    {
+      "start": 450.0,
+      "end": 452.84,
+      "text": "the nerve slightly rising underneath it."
+    },
+    {
+      "start": 453.66,
+      "end": 458.36,
+      "text": "Once I'm satisfied that I have a nice amount of injectate there, I'm going to slowly redirect"
+    },
+    {
+      "start": 458.36,
+      "end": 459.98,
+      "text": "the needle to try to..."
+    },
+    {
+      "start": 460.0,
+      "end": 464.78,
+      "text": "get on top of the nerve to ensure that I have good filling and circumferential spread"
+    },
+    {
+      "start": 464.78,
+      "end": 465.54,
+      "text": "around it."
+    },
+    {
+      "start": 465.54,
+      "end": 469.98,
+      "text": "So you'll almost seem like we have a whole circle of local Anastasia."
+    },
+    {
+      "start": 470.38,
+      "end": 472.78,
+      "text": "surrounding a nerve that sits in the middle."
+    },
+    {
+      "start": 473.36,
+      "end": 477.24,
+      "text": "In all, in this example, in most blocks that we do, we use about 30"
+    },
+    {
+      "start": 477.82,
+      "end": 479.7,
+      "text": "milliliter of local anesthetic"
+    },
+    {
+      "start": 480.32,
+      "end": 481.2,
+      "text": "to do this block."
+    }
+  ]
+}

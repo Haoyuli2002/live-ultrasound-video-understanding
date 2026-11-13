@@ -1,0 +1,908 @@
+{
+  "video_id": "-X05DgCfQrE",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/-X05DgCfQrE/asr.txt",
+  "segments": [
+    {
+      "start": 3.2,
+      "end": 9.76,
+      "text": "ultrasound guided right internal jugular vein central venous cannulation. This is an instructional video"
+    },
+    {
+      "start": 10.0,
+      "end": 14.42,
+      "text": "as a companion piece to the simplified task analysis produced by ready and colleagues."
+    },
+    {
+      "start": 16.06,
+      "end": 19.42,
+      "text": "The simplified task analysis can be found by following the reference below."
+    },
+    {
+      "start": 21.92,
+      "end": 24.12,
+      "text": "Begin by conducting a procedural timeout."
+    },
+    {
+      "start": 25.51,
+      "end": 27.83,
+      "text": "If the patient is awake, explain the procedure."
+    },
+    {
+      "start": 30.22,
+      "end": 34.9,
+      "text": "Then use a checklist to review indications and contraindications for the procedure and relevant"
+    },
+    {
+      "start": 34.9,
+      "end": 35.62,
+      "text": "information."
+    },
+    {
+      "start": 37.54,
+      "end": 38.88,
+      "text": "Perform basic hand hygiene."
+    },
+    {
+      "start": 38.88,
+      "end": 39.08,
+      "text": "First"
+    },
+    {
+      "start": 40.03,
+      "end": 41.29,
+      "text": "Remove rings and watches."
+    },
+    {
+      "start": 45.62,
+      "end": 47.84,
+      "text": "Apply antibacterial soap to a cup-tanned."
+    },
+    {
+      "start": 48.44,
+      "end": 49.9,
+      "text": "This can also be done with alcohol."
+    },
+    {
+      "start": 50.0,
+      "end": 59.8,
+      "text": "base to hand rub rub hands palm to palm rub palm to palm with fingers interlaced"
+    },
+    {
+      "start": 63.3,
+      "end": 67.64,
+      "text": "rub right palm over left dorsum with fingers interlaced and vice versa."
+    },
+    {
+      "start": 76.69,
+      "end": 79.85,
+      "text": "rub backs of fingers to opposing palms with fingers inter-"
+    },
+    {
+      "start": 82.56,
+      "end": 87.78,
+      "text": "Rotational rubbing with clasped fingers of right hand in left palm and vice versa."
+    },
+    {
+      "start": 90.42,
+      "end": 99.83,
+      "text": "Rotational rubbing of left thumb clasped in right palm and vice versa rub both"
+    },
+    {
+      "start": 100.06,
+      "end": 108.73,
+      "text": "wrist, dry hands with a non sterile towel."
+    },
+    {
+      "start": 115.73,
+      "end": 119.97,
+      "text": "set up a pre-made central venous cannulation kit by opening it aseptically."
+    },
+    {
+      "start": 120.0,
+      "end": 121.16,
+      "text": "on a clean trolley."
+    },
+    {
+      "start": 133.55,
+      "end": 139.82,
+      "text": "This kit should contain an antimicrobial impregnated dressing, suture, as well as a sterile"
+    },
+    {
+      "start": 140.0,
+      "end": 145.77,
+      "text": "and have. Choosing appropriate central venous catheter. The appropriate catheter is the smallest"
+    },
+    {
+      "start": 145.77,
+      "end": 149.05,
+      "text": "catheter with the lowest number of lumens to meet the patient's clinical needs."
+    },
+    {
+      "start": 151.15,
+      "end": 159.98,
+      "text": "Transfer sterile normal saline to a container in the central Venus canulation kit set up an ultrasound machine by positioning it near the head of the bed"
+    },
+    {
+      "start": 160.0,
+      "end": 169.84,
+      "text": "Plugging it in and turning it on and then setting an appropriate depth focus and gain position the patient for cannulation you appropriate"
+    },
+    {
+      "start": 170.0,
+      "end": 174.04,
+      "text": "position is head down, supine, and with the head rotated slightly to the left."
+    },
+    {
+      "start": 174.63,
+      "end": 178.33,
+      "text": "If the patient cannot be positioned head down due to high intracranial pressure or severe"
+    },
+    {
+      "start": 178.33,
+      "end": 179.97,
+      "text": "heart failure, consider an ultr..."
+    },
+    {
+      "start": 180.0,
+      "end": 188.58,
+      "text": "alternative approach. Identify the anatomical landmarks. The landmarks are the two heads of the sternoclidomastoid muscle."
+    },
+    {
+      "start": 190.0,
+      "end": 193.46,
+      "text": "Marks can be accentuated by asking the patient to lift their head off the bed."
+    },
+    {
+      "start": 194.43,
+      "end": 198.61,
+      "text": "The target is the apex of the triangle formed by the two heads of the sternoplata mastoid"
+    },
+    {
+      "start": 198.61,
+      "end": 198.93,
+      "text": "muscle."
+    },
+    {
+      "start": 200.0,
+      "end": 206.81,
+      "text": "an initial ultrasound survey to identify the anatomy. You should be able to see a compressible internal"
+    },
+    {
+      "start": 206.81,
+      "end": 209.83,
+      "text": "jugular vein, overlying a pulsatile carotid artery."
+    },
+    {
+      "start": 211.73,
+      "end": 214.79,
+      "text": "Prepare for the sterile procedure by performing a full surgical scrub."
+    },
+    {
+      "start": 216.14,
+      "end": 217.08,
+      "text": "Put on a surgical hat."
+    },
+    {
+      "start": 222.85,
+      "end": 224.11,
+      "text": "then put on a surgical mask."
+    },
+    {
+      "start": 239.82,
+      "end": 239.88,
+      "text": "Wait."
+    },
+    {
+      "start": 240.03,
+      "end": 242.11,
+      "text": "your hands and arms all the way to the elbows."
+    },
+    {
+      "start": 249.66,
+      "end": 249.88,
+      "text": "Lies."
+    },
+    {
+      "start": 250.0,
+      "end": 256.11,
+      "text": "sterile surgical scrub soap to both hands. Rub hands palm to palm."
+    },
+    {
+      "start": 262.59,
+      "end": 269.86,
+      "text": "rub palm to palm with fingers interlaced, rub right palm over left"
+    },
+    {
+      "start": 270.03,
+      "end": 272.87,
+      "text": "with fingers interlaced and vice versa."
+    },
+    {
+      "start": 275.08,
+      "end": 277.24,
+      "text": "Rub backs of fingers to opposing palms"
+    },
+    {
+      "start": 277.24,
+      "end": 278.8,
+      "text": "with fingers interlocked."
+    },
+    {
+      "start": 280.42,
+      "end": 289.98,
+      "text": "Rotational rubbing with clasped fingers of right hand in left palm and vice versa rotational rubbing of left thumb clasped in right palm and vice"
+    },
+    {
+      "start": 290.0,
+      "end": 295.38,
+      "text": "first. Continue rubbing up to the elbows while keeping hands elevated above"
+    },
+    {
+      "start": 295.38,
+      "end": 299.79,
+      "text": "elbows. Continue the scrub process for as long as recommended."
+    },
+    {
+      "start": 300.03,
+      "end": 302.07,
+      "text": "by the manufacturer of your surgical scrub,"
+    },
+    {
+      "start": 302.09,
+      "end": 303.95,
+      "text": "so usually three to five minutes."
+    },
+    {
+      "start": 306.41,
+      "end": 307.99,
+      "text": "Dry hands with a sterile towel,"
+    },
+    {
+      "start": 308.41,
+      "end": 309.97,
+      "text": "and put on sterile gown a..."
+    },
+    {
+      "start": 310.0,
+      "end": 319.81,
+      "text": "have an assistant help you tie your gown"
+    },
+    {
+      "start": 320.03,
+      "end": 322.17,
+      "text": "and put on sterile gloves aseptically."
+    },
+    {
+      "start": 324.75,
+      "end": 326.17,
+      "text": "Position yourself with the head of the bed."
+    },
+    {
+      "start": 327.69,
+      "end": 329.97,
+      "text": "Parasterole field, starting by sterilizing the..."
+    },
+    {
+      "start": 330.0,
+      "end": 333.24,
+      "text": "neck with chlorhexidine swabs rubbing in a rotational"
+    },
+    {
+      "start": 333.24,
+      "end": 334.28,
+      "text": "outwards pattern."
+    },
+    {
+      "start": 340.0,
+      "end": 343.66,
+      "text": "sterile drape to the neck, making sure not to lose orientation of the drape."
+    },
+    {
+      "start": 346.83,
+      "end": 349.77,
+      "text": "repeat the process of sterilization with the chlorhexidine swab."
+    },
+    {
+      "start": 352.27,
+      "end": 354.03,
+      "text": "Prepare your equipment for cannulation."
+    },
+    {
+      "start": 361.38,
+      "end": 365.86,
+      "text": "Have an assistant help you apply a sterile ultrasound sheet to your ultrasound probe,"
+    },
+    {
+      "start": 366.14,
+      "end": 369.74,
+      "text": "remembering to insert sterile ultrasound gel into the sheet before..."
+    },
+    {
+      "start": 370.0,
+      "end": 375.65,
+      "text": "applying. Do not touch the probe with your sterile gloves while applying the sheath."
+    },
+    {
+      "start": 381.38,
+      "end": 389.98,
+      "text": "secure the sheets to the Pro. Prepare the guide wire by removing the cap covering the"
+    },
+    {
+      "start": 390.0,
+      "end": 395.12,
+      "text": "tip and withdrawing the wire in the introducer sheet until the J-shape is no longer visible"
+    },
+    {
+      "start": 395.12,
+      "end": 399.98,
+      "text": "at the tip. Patch the needle supplied in the center of the ring."
+    },
+    {
+      "start": 400.0,
+      "end": 409.93,
+      "text": "Vena's cannulation kit to a syringe alternatively if using an angiocatheter"
+    },
+    {
+      "start": 410.0,
+      "end": 412.88,
+      "text": "technique, attach the angiocatheter to a syringe."
+    },
+    {
+      "start": 414.51,
+      "end": 416.55,
+      "text": "Ensure the angiocatheter easily slides."
+    },
+    {
+      "start": 425.76,
+      "end": 429.98,
+      "text": "Here are the central venous catheter by flushing all the boards with sterile normal saline."
+    },
+    {
+      "start": 430.0,
+      "end": 433.0,
+      "text": "and locking all ports except the distal port."
+    },
+    {
+      "start": 454.16,
+      "end": 458.2,
+      "text": "choose a puncture side by looking again with the ultrasound, bro, and east it ties the"
+    },
+    {
+      "start": 458.2,
+      "end": 459.9,
+      "text": "the overlying skin with local anesthetic."
+    },
+    {
+      "start": 460.29,
+      "end": 462.49,
+      "text": "This may not be necessary if the patient is sedated"
+    },
+    {
+      "start": 462.49,
+      "end": 463.91,
+      "text": "and on an opioid infusion."
+    },
+    {
+      "start": 465.34,
+      "end": 467.1,
+      "text": "We will now discuss three techniques for access"
+    },
+    {
+      "start": 467.1,
+      "end": 468.58,
+      "text": "in the right internal jugular vein."
+    },
+    {
+      "start": 469.61,
+      "end": 469.85,
+      "text": "The needle."
+    },
+    {
+      "start": 470.0,
+      "end": 475.54,
+      "text": "technique, the angiocatheter technique and the longitudinal technique. The longitudinal technique"
+    },
+    {
+      "start": 475.54,
+      "end": 477.84,
+      "text": "can be done with a needle or an angiocatheter."
+    },
+    {
+      "start": 482.4,
+      "end": 484.0,
+      "text": "When performing the basic needle technique,"
+    },
+    {
+      "start": 484.26,
+      "end": 485.78,
+      "text": "the ultrasound probe is aligned"
+    },
+    {
+      "start": 485.78,
+      "end": 487.48,
+      "text": "transversely to the vasculature."
+    },
+    {
+      "start": 488.66,
+      "end": 489.98,
+      "text": "The internal jugular vein is like..."
+    },
+    {
+      "start": 490.0,
+      "end": 494.06,
+      "text": "identified as a compressible structure and the carotid artery is identified as a"
+    },
+    {
+      "start": 494.06,
+      "end": 498.7,
+      "text": "pulsatile structure. The image is aligned with the internal jugular vein in the"
+    },
+    {
+      "start": 498.7,
+      "end": 499.86,
+      "text": "middle ensuring correct"
+    },
+    {
+      "start": 500.03,
+      "end": 504.67,
+      "text": "orientation of the probe. Needle then punctures the skin at the mid-point of the ultrasound"
+    },
+    {
+      "start": 504.67,
+      "end": 508.71,
+      "text": "probe at a 45 degree angle, making sure not to puncture the sterile sheet."
+    },
+    {
+      "start": 510.0,
+      "end": 517.12,
+      "text": "Once the needle punctures the skin, a vacuum is made by aspirating the syringe, and that vacuum is maintained by continuing to aspirate the syringe."
+    },
+    {
+      "start": 518.12,
+      "end": 519.96,
+      "text": "If the tip of the needle appears to be deep..."
+    },
+    {
+      "start": 520.0,
+      "end": 523.96,
+      "text": "is likely that the tip of the needle is no longer visualized and is deep to the internal"
+    },
+    {
+      "start": 523.96,
+      "end": 529.94,
+      "text": "regular vein. The situation can be rectified by tilting the ultrasound probe to visualize the tip of the"
+    },
+    {
+      "start": 530.0,
+      "end": 533.56,
+      "text": "or by slowly withdrawing the needle towards the skin."
+    },
+    {
+      "start": 534.45,
+      "end": 536.55,
+      "text": "The internal jugular vein is then often encountered"
+    },
+    {
+      "start": 536.55,
+      "end": 538.03,
+      "text": "on the way back as in this case."
+    },
+    {
+      "start": 539.1,
+      "end": 539.94,
+      "text": "When the vein is encountered..."
+    },
+    {
+      "start": 539.94,
+      "end": 539.98,
+      "text": "I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry"
+    },
+    {
+      "start": 540.0,
+      "end": 543.92,
+      "text": "A loss of resistance will be felt and blood will be aspirated in the syringe."
+    },
+    {
+      "start": 544.44,
+      "end": 548.3,
+      "text": "Move the syringe and confirm the blood is Venus, i.e. non-pulsatile."
+    },
+    {
+      "start": 549.23,
+      "end": 549.91,
+      "text": "Thread the guide wire."
+    },
+    {
+      "start": 550.0,
+      "end": 555.46,
+      "text": "through the needle, do not thread the guide wire against resistance. Be careful not to thread"
+    },
+    {
+      "start": 555.46,
+      "end": 559.94,
+      "text": "the guide wire too deep as a deep guide wire can precipitate ventricular arrhythmias."
+    },
+    {
+      "start": 562.24,
+      "end": 569.86,
+      "text": "Once the guide wire is placed, all techniques for placing the central venous catheter are the same technique just"
+    },
+    {
+      "start": 570.0,
+      "end": 573.54,
+      "text": "Disgust was the needle technique using a transverse ultrasound view."
+    },
+    {
+      "start": 574.89,
+      "end": 578.15,
+      "text": "The main advantage of this technique is that it's the most simple technique to learn."
+    },
+    {
+      "start": 580.0,
+      "end": 583.22,
+      "text": "degree of proficiency can be attained with this technique quite quickly."
+    },
+    {
+      "start": 584.94,
+      "end": 589.86,
+      "text": "The cannula or angiocatheter technique is similar, but rather than using a simple"
+    },
+    {
+      "start": 590.0,
+      "end": 593.3,
+      "text": "needle, a needle with a sliding plastic cannula is used."
+    },
+    {
+      "start": 593.96,
+      "end": 596.78,
+      "text": "Vain is punctured in the same way as with the needle technique."
+    },
+    {
+      "start": 597.8,
+      "end": 599.64,
+      "text": "But once blood is aspirated in the syringe,"
+    },
+    {
+      "start": 600.06,
+      "end": 604.64,
+      "text": "the angle of the needle is dropped and the cannula is threaded over the needle into the internal"
+    },
+    {
+      "start": 604.64,
+      "end": 605.3,
+      "text": "don't jog your vein."
+    },
+    {
+      "start": 612.4,
+      "end": 616.98,
+      "text": "The syringe is then connected directly to the cannula and venous blood flow is reconformed."
+    },
+    {
+      "start": 620.03,
+      "end": 626.57,
+      "text": "The guide wire is then threaded through the cannula similarly to threading it through the needle in the first technique,"
+    },
+    {
+      "start": 627.16,
+      "end": 629.0,
+      "text": "making sure not to thread against resistance."
+    },
+    {
+      "start": 633.42,
+      "end": 634.3,
+      "text": "cannulas then removed."
+    },
+    {
+      "start": 640.64,
+      "end": 646.02,
+      "text": "Technique just discussed is the angiocatheter or cannula technique using a transverse ultrasound view"
+    },
+    {
+      "start": 646.02,
+      "end": 649.8,
+      "text": "This is arguably the safest technique as it prevents a needle"
+    },
+    {
+      "start": 650.03,
+      "end": 655.16,
+      "text": "puncturing the posterior wall of the internal jugular vein into a posterior common parotid"
+    },
+    {
+      "start": 655.16,
+      "end": 659.74,
+      "text": "artery, then causing the guide wire to be inserted into the common parotid artery and"
+    },
+    {
+      "start": 660.0,
+      "end": 665.81,
+      "text": "secretly dilating it. This technique is the needle technique using a longitudinal ultrasound"
+    },
+    {
+      "start": 665.81,
+      "end": 669.82,
+      "text": "view. This is the same as the initial needle technique, except the ultrasound."
+    },
+    {
+      "start": 670.13,
+      "end": 673.55,
+      "text": "probe is positioned to inflame with the needle and the internal jugular vein."
+    },
+    {
+      "start": 675.34,
+      "end": 678.8,
+      "text": "With good alignments of the ultrasound probe, the entire needle should be visualized."
+    },
+    {
+      "start": 689.44,
+      "end": 689.8,
+      "text": "the internal"
+    },
+    {
+      "start": 690.0,
+      "end": 694.28,
+      "text": "The regular vein is similarly encountered as a loss of resistance at a syringe filling"
+    },
+    {
+      "start": 694.28,
+      "end": 695.16,
+      "text": "with Venus blood."
+    },
+    {
+      "start": 696.6,
+      "end": 699.8,
+      "text": "Threading the guide wire is the same as in the transverse view."
+    },
+    {
+      "start": 700.03,
+      "end": 707.39,
+      "text": "If resistance is felt on the guide wire, rotating the needle may ameliorate the situation."
+    },
+    {
+      "start": 710.03,
+      "end": 719.97,
+      "text": "The technique just discussed was the needle technique using a longitude more often."
+    },
+    {
+      "start": 720.0,
+      "end": 725.17,
+      "text": "ultrasound view. The main advantage of this technique is visualization of the entire needle"
+    },
+    {
+      "start": 725.17,
+      "end": 729.86,
+      "text": "as it punctures the internal jocular vein. However, with this technique there is a significant"
+    },
+    {
+      "start": 730.0,
+      "end": 733.34,
+      "text": "risk of misidentifying the common carotid artery as the internal"
+    },
+    {
+      "start": 733.34,
+      "end": 739.39,
+      "text": "jugular vein. We now must confirm the wire lies in the internal jugular vein."
+    },
+    {
+      "start": 740.03,
+      "end": 744.59,
+      "text": "this can be done by tracking its course from the skin into the vein using both the transverse"
+    },
+    {
+      "start": 744.59,
+      "end": 746.69,
+      "text": "and the longitude in the ultrasound view."
+    },
+    {
+      "start": 747.68,
+      "end": 749.96,
+      "text": "Then trace the wire into the chest to ensure..."
+    },
+    {
+      "start": 750.03,
+      "end": 754.77,
+      "text": "and lies in the superior Vena Cava. If this is the case, the wire will plunge downwards on the"
+    },
+    {
+      "start": 754.77,
+      "end": 759.6,
+      "text": "ultrasound screen. One satisfied with the position of the wire, thread the die later onto it."
+    },
+    {
+      "start": 760.61,
+      "end": 764.73,
+      "text": "Then use a scalpel to make a small skin incision at the point where the wire meets the skin."
+    },
+    {
+      "start": 765.49,
+      "end": 769.77,
+      "text": "Apply pressure with gauze to reduce bleeding and advance the die later using a twisting motion."
+    },
+    {
+      "start": 770.74,
+      "end": 772.78,
+      "text": "Be careful not to kink the wire with the dilate."
+    },
+    {
+      "start": 773.25,
+      "end": 777.59,
+      "text": "If significant resistance is felt, it is likely that the skin incision needs to be enlarged."
+    },
+    {
+      "start": 780.54,
+      "end": 785.05,
+      "text": "Spread the central Venus catheter over the guide wire, being careful not to advance the"
+    },
+    {
+      "start": 785.05,
+      "end": 787.61,
+      "text": "guide wire to deep while performing this motion."
+    },
+    {
+      "start": 792.14,
+      "end": 796.14,
+      "text": "pulled the tip of the guide wire to prevent it being lost into the patient's thorax."
+    },
+    {
+      "start": 803.46,
+      "end": 806.06,
+      "text": "Advance the central Venus catheter to an appropriate depth."
+    },
+    {
+      "start": 806.6,
+      "end": 809.7,
+      "text": "The appropriate depth is roughly 15 centimeters for an adult male."
+    },
+    {
+      "start": 810.22,
+      "end": 814.2,
+      "text": "The steps can be increased or decreased at your discretion based on the patient's size."
+    },
+    {
+      "start": 815.45,
+      "end": 816.93,
+      "text": "Remember to remove the guide wire."
+    },
+    {
+      "start": 820.93,
+      "end": 828.92,
+      "text": "aspirate all ports of the central Venus catheter ensuring Venus blood flow then flush all ports with sterile normal saline"
+    },
+    {
+      "start": 830.06,
+      "end": 834.52,
+      "text": "then protect all the ports of the central Venus catheter with a sterile 3-way connector"
+    },
+    {
+      "start": 834.52,
+      "end": 835.64,
+      "text": "or a sterile bump."
+    },
+    {
+      "start": 865.76,
+      "end": 869.8,
+      "text": "attached the sterile clips included with the central Venus catheter at the appropriate"
+    },
+    {
+      "start": 870.06,
+      "end": 871.56,
+      "text": "where the catheter meets the skin."
+    },
+    {
+      "start": 883.01,
+      "end": 885.95,
+      "text": "suture in the central Venus catheter at at least two points."
+    },
+    {
+      "start": 888.34,
+      "end": 889.9,
+      "text": "Dear I am suturing up the clip site."
+    },
+    {
+      "start": 890.0,
+      "end": 890.94,
+      "text": "and the hub."
+    },
+    {
+      "start": 924.42,
+      "end": 926.9,
+      "text": "optionally perform a hand tie or an instrument tie."
+    },
+    {
+      "start": 931.34,
+      "end": 935.38,
+      "text": "Loose knots are tied at the skin and tight knots are tied at the clip or hub."
+    },
+    {
+      "start": 998.16,
+      "end": 999.98,
+      "text": "Here I am performing a drain stitch to a-"
+    },
+    {
+      "start": 1000.0,
+      "end": 1000.76,
+      "text": "attached to the hub."
+    },
+    {
+      "start": 1014.8,
+      "end": 1019.92,
+      "text": "remove the sterile drape, then cover the central venous"
+    },
+    {
+      "start": 1020.0,
+      "end": 1023.96,
+      "text": "catheter with an antimicrobial and pregnant central venous catheter dressing."
+    },
+    {
+      "start": 1027.01,
+      "end": 1029.79,
+      "text": "Once the line is dressed, return the patient to a comfortable position."
+    },
+    {
+      "start": 1032.98,
+      "end": 1035.4,
+      "text": "then dispose of the sharps and contaminated material"
+    },
+    {
+      "start": 1035.4,
+      "end": 1039.92,
+      "text": "in an appropriate waste receptacle, repeat base a can."
+    },
+    {
+      "start": 1039.92,
+      "end": 1039.98,
+      "text": "I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry"
+    },
+    {
+      "start": 1040.06,
+      "end": 1045.45,
+      "text": "hygiene as demonstrated at the beginning of this video, then obtain a chest radiograph"
+    },
+    {
+      "start": 1045.45,
+      "end": 1048.37,
+      "text": "to confirm appropriate position of the central venous catheter."
+    },
+    {
+      "start": 1050.26,
+      "end": 1054.1,
+      "text": "Monored to the patient for complications of the procedure, these complications could"
+    },
+    {
+      "start": 1054.1,
+      "end": 1059.49,
+      "text": "include hematoma at the site of insertion, excessive bleeding, pneumothorax, or arrhythmia."
+    },
+    {
+      "start": 1061.89,
+      "end": 1069.96,
+      "text": "This image demonstrates good position of a right internal jugular vein central venous cannibal tip is projected over the right"
+    },
+    {
+      "start": 1070.0,
+      "end": 1073.52,
+      "text": "mainstem bronchus, indicating it lies at the cave oatrial junction."
+    },
+    {
+      "start": 1074.27,
+      "end": 1078.77,
+      "text": "The image on the right demonstrates poor position of the line and an associated large pneumothorax"
+    },
+    {
+      "start": 1078.77,
+      "end": 1079.85,
+      "text": "likely required."
+    },
+    {
+      "start": 1080.0,
+      "end": 1086.54,
+      "text": "urgent chest drainage. This instructional video has been produced in association with the"
+    },
+    {
+      "start": 1086.54,
+      "end": 1089.02,
+      "text": "Irish Center for Applied Patient Safety and Simulation."
+    }
+  ]
+}

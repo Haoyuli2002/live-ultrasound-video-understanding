@@ -1,0 +1,149 @@
+{
+  "understanding": "Central venous catheterization tutorial with equipment setup, mannequin demonstration, and an inset clinical scanning example.",
+  "native_opened": [
+    262,
+    263,
+    264,
+    265,
+    266,
+    270,
+    332
+  ],
+  "tasks": [
+    {
+      "qa_type": "event_notification",
+      "query_time": 262,
+      "answer_time": 264,
+      "checkpoints": [
+        263
+      ],
+      "question": "Tell me when the camera shows the ultrasound image as well as the probe during this inset demonstration.",
+      "reference_answer": "Both are in view now. The covered probe is on the left and the monitor shows the scan on the right.",
+      "visual_support": "At 262 only the probe is visible. At 263 the edge of the console appears without the scan. At 264 the scan is visible alongside the probe.",
+      "query_prefix_check": "The bedside inset shows probe contact only.",
+      "answer_prefix_check": "The screen contains actual ultrasound echoes alongside the probe shot.",
+      "shortcut_risk": "Moderate. Camera movement cues the event but the console enters before the scan.",
+      "task_id": "s3_remaining79_i6NjbpLUwak_01",
+      "video_id": "i6NjbpLUwak",
+      "split": "train",
+      "language": "en",
+      "source_video": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/i6NjbpLUwak.mp4",
+      "stage3_value": "medium",
+      "visual_evidence": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/i6NjbpLUwak/262.jpg",
+          "checkpoint": 262.0,
+          "source_pts_seconds": 261.92,
+          "resolution": [
+            1920,
+            1080
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/i6NjbpLUwak/263.jpg",
+          "checkpoint": 263.0,
+          "source_pts_seconds": 262.92,
+          "resolution": [
+            1920,
+            1080
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/i6NjbpLUwak/264.jpg",
+          "checkpoint": 264.0,
+          "source_pts_seconds": 263.92,
+          "resolution": [
+            1920,
+            1080
+          ]
+        }
+      ],
+      "asr_support_segments": [],
+      "query_decision": "WAIT",
+      "answer_decision": "ANSWER",
+      "review_status": "accepted_targeted_native_frame_self_review",
+      "student_input_visibility": "not_checked"
+    },
+    {
+      "qa_type": "current_observation",
+      "query_time": 266,
+      "answer_time": 266,
+      "checkpoints": [],
+      "question": "Which of the two dark round profiles on the monitor sits closer to the bright surface layers?",
+      "reference_answer": "The larger profile on the right is closer to the surface layers. The smaller one sits deeper and to its left.",
+      "visual_support": "Both dark profiles and the superficial lines are visible on the monitor.",
+      "query_prefix_check": "The relevant profiles are present together.",
+      "answer_prefix_check": "Their depths can be compared against the bright superficial lines.",
+      "shortcut_risk": "Low. No label specifies their relative depths.",
+      "task_id": "s3_remaining79_i6NjbpLUwak_02",
+      "video_id": "i6NjbpLUwak",
+      "split": "train",
+      "language": "en",
+      "source_video": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/i6NjbpLUwak.mp4",
+      "stage3_value": "medium",
+      "visual_evidence": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/i6NjbpLUwak/266.jpg",
+          "checkpoint": 266.0,
+          "source_pts_seconds": 265.92,
+          "resolution": [
+            1920,
+            1080
+          ]
+        }
+      ],
+      "asr_support_segments": [],
+      "query_decision": "ANSWER",
+      "answer_decision": "ANSWER",
+      "review_status": "accepted_targeted_native_frame_self_review",
+      "student_input_visibility": "not_checked"
+    },
+    {
+      "qa_type": "history_recall",
+      "query_time": 270,
+      "answer_time": 270,
+      "checkpoints": [
+        262
+      ],
+      "question": "In the clinical inset just before this mannequin shot, what was wrapped around the probe head?",
+      "reference_answer": "A clear plastic cover was wrapped around the probe head and secured with a blue band.",
+      "visual_support": "At 262 the transparent material and the blue band are visible around the head.",
+      "query_prefix_check": "The clinical inset has just been shown.",
+      "answer_prefix_check": "The cover and band are visible in the earlier close-up.",
+      "shortcut_risk": "Moderate. A cover is plausible from the setup, but the securing band is visual.",
+      "task_id": "s3_remaining79_i6NjbpLUwak_03",
+      "video_id": "i6NjbpLUwak",
+      "split": "train",
+      "language": "en",
+      "source_video": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/i6NjbpLUwak.mp4",
+      "stage3_value": "medium",
+      "visual_evidence": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/i6NjbpLUwak/262.jpg",
+          "checkpoint": 262.0,
+          "source_pts_seconds": 261.92,
+          "resolution": [
+            1920,
+            1080
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/i6NjbpLUwak/270.jpg",
+          "checkpoint": 270.0,
+          "source_pts_seconds": 269.92,
+          "resolution": [
+            1920,
+            1080
+          ]
+        }
+      ],
+      "asr_support_segments": [],
+      "query_decision": "ANSWER",
+      "answer_decision": "ANSWER",
+      "review_status": "accepted_targeted_native_frame_self_review",
+      "student_input_visibility": "not_checked"
+    }
+  ],
+  "video_id": "i6NjbpLUwak",
+  "review_scope": "Same-assistant review; sampled timeline, original-size key frames, and existing time-indexed ASR when available. No continuous replay or direct audio claim."
+}

@@ -1,0 +1,358 @@
+{
+  "video_id": "0Cboqf1Qnhc",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/0Cboqf1Qnhc/asr.txt",
+  "segments": [
+    {
+      "start": 13.39,
+      "end": 15.870000000000001,
+      "text": "the inner scaling block is used for shoulder surgery"
+    },
+    {
+      "start": 15.870000000000001,
+      "end": 17.15,
+      "text": "and clavicle surgery."
+    },
+    {
+      "start": 18.1,
+      "end": 19.86,
+      "text": "So to start, the inner scaling block, proper."
+    },
+    {
+      "start": 20.0,
+      "end": 25.72,
+      "text": "positioning is very important. The best way to get to the inner scalene block is to have the"
+    },
+    {
+      "start": 25.72,
+      "end": 29.97,
+      "text": "patient sitting up about 30 or 45 days."
+    },
+    {
+      "start": 30.0,
+      "end": 34.81,
+      "text": "Next, we turn the patient's head away from the shoulder to the opposite side."
+    },
+    {
+      "start": 35.68,
+      "end": 39.97,
+      "text": "This gives us a lot of room to put the probe and have our hands come from the..."
+    },
+    {
+      "start": 40.0,
+      "end": 45.96,
+      "text": "steerer side. The proper approach to the interscaling block is to have the needle"
+    },
+    {
+      "start": 45.96,
+      "end": 49.54,
+      "text": "approach from the posterior side. This avoids the frenic nerve."
+    },
+    {
+      "start": 50.13,
+      "end": 54.24,
+      "text": "and allows us to not injure the frenic nerve"
+    },
+    {
+      "start": 54.24,
+      "end": 55.28,
+      "text": "with our needle approach."
+    },
+    {
+      "start": 55.97,
+      "end": 57.15,
+      "text": "So for the inner scaling block,"
+    },
+    {
+      "start": 57.33,
+      "end": 59.75,
+      "text": "we usually use a high frequency linear."
+    },
+    {
+      "start": 60.1,
+      "end": 64.74,
+      "text": "The high frequency linear probe is best for structures that are superficial."
+    },
+    {
+      "start": 65.34,
+      "end": 69.86,
+      "text": "Usually in the inner scaling groove, the inner scaling nerves or the"
+    },
+    {
+      "start": 70.03,
+      "end": 76.18,
+      "text": "roots of the brachial plexus lie very shallow, usually two centimeters or less, even in large"
+    },
+    {
+      "start": 76.18,
+      "end": 79.71000000000001,
+      "text": "patients. So to start, I usually set my ultrasound"
+    },
+    {
+      "start": 80.1,
+      "end": 83.8,
+      "text": "to approximately three centimeters in an average sized patient."
+    },
+    {
+      "start": 84.83,
+      "end": 89.9,
+      "text": "I also set the frequency to general setting or resolution setting."
+    },
+    {
+      "start": 90.0,
+      "end": 96.61,
+      "text": "in skinnier patient. So to get to the interscaling groove, the best place to start is in the super"
+    },
+    {
+      "start": 96.61,
+      "end": 99.85,
+      "text": "a curricular region. The reason we start in the soup"
+    },
+    {
+      "start": 100.0,
+      "end": 106.68,
+      "text": "a clavicular region is that it allows us to use a vascular structure to find the nerves."
+    },
+    {
+      "start": 106.68,
+      "end": 109.92,
+      "text": "So when I start"
+    },
+    {
+      "start": 110.03,
+      "end": 119.89,
+      "text": "I put the probe on just posterior to the clavicle aiming straight down the body. In this area, we will see a pulse"
+    },
+    {
+      "start": 120.0,
+      "end": 124.88,
+      "text": "Artery sitting on the first rib as well as some plura possibly."
+    },
+    {
+      "start": 126.12,
+      "end": 129.97,
+      "text": "Post here to the pulsating subclavian artery are your nerves."
+    },
+    {
+      "start": 130.0,
+      "end": 135.44,
+      "text": "Your nerves in this setting are hyper-echoic or bright and have many"
+    },
+    {
+      "start": 135.44,
+      "end": 139.97,
+      "text": "fascicles or dark circles within them. These are the nerves that are going to be"
+    },
+    {
+      "start": 140.19,
+      "end": 145.07,
+      "text": "the roots of the brachial plexus as we trace backwards up the neck."
+    },
+    {
+      "start": 145.57,
+      "end": 149.81,
+      "text": "So now to find the inner scaling groove, we take our pulsating artery."
+    },
+    {
+      "start": 150.16,
+      "end": 154.24,
+      "text": "look for the nerves posterior and we're going to slide the probe back up the neck."
+    },
+    {
+      "start": 154.62,
+      "end": 159.25,
+      "text": "The probe slides up the neck as well as tilts as we move the probe up the neck."
+    },
+    {
+      "start": 160.0,
+      "end": 163.5,
+      "text": "Here we are moving up the neck following the upper trunk,"
+    },
+    {
+      "start": 163.72,
+      "end": 165.06,
+      "text": "this most superior nerves."
+    },
+    {
+      "start": 165.7,
+      "end": 168.2,
+      "text": "As we go up the neck, those nerves will become."
+    },
+    {
+      "start": 170.29,
+      "end": 174.46,
+      "text": "more dark and larger fascicles or dark circles."
+    },
+    {
+      "start": 175.15,
+      "end": 177.09,
+      "text": "Now we are up at the inter-scaling groove."
+    },
+    {
+      "start": 177.97,
+      "end": 179.97,
+      "text": "The inter-scaling groove is found..."
+    },
+    {
+      "start": 180.0,
+      "end": 184.7,
+      "text": "by identifying the anterior scaling muscle anterior here to the left of the"
+    },
+    {
+      "start": 184.7,
+      "end": 189.38,
+      "text": "screen and the middle scaling muscle posterior to the right of the screen."
+    },
+    {
+      "start": 190.26,
+      "end": 197.13,
+      "text": "The nerves are hypoechoic or dark surrounded by hypoechoic or bright bascial covering."
+    },
+    {
+      "start": 198.01,
+      "end": 199.97,
+      "text": "Here we are looking at the C5 and"
+    },
+    {
+      "start": 200.03,
+      "end": 203.11,
+      "text": "C6 nerve fruits in the interscaling groove."
+    },
+    {
+      "start": 203.65,
+      "end": 205.05,
+      "text": "If I slide the probe anterior,"
+    },
+    {
+      "start": 205.39,
+      "end": 209.07,
+      "text": "we get a carotid artery with an internal jugular vein"
+    },
+    {
+      "start": 209.07,
+      "end": 209.89,
+      "text": "on top of it."
+    },
+    {
+      "start": 210.35,
+      "end": 213.37,
+      "text": "The sternoclidol mastoid is above these structures."
+    },
+    {
+      "start": 214.28,
+      "end": 217.08,
+      "text": "As I slide posterior, we have our anterior scaling,"
+    },
+    {
+      "start": 218.03,
+      "end": 219.27,
+      "text": "our interscaling groove,"
+    },
+    {
+      "start": 220.0,
+      "end": 224.78,
+      "text": "posterior is our middle scaling. Here is a very good picture of the nerve roots"
+    },
+    {
+      "start": 224.78,
+      "end": 229.93,
+      "text": "here and they are sandwiched between the anterior scaling on the left."
+    },
+    {
+      "start": 230.51,
+      "end": 232.63,
+      "text": "and the middle scaling on the right."
+    },
+    {
+      "start": 234.18,
+      "end": 235.62,
+      "text": "So now we are looking specifically"
+    },
+    {
+      "start": 235.62,
+      "end": 238.82,
+      "text": "at the C5 and C6 nerve roots."
+    },
+    {
+      "start": 240.0,
+      "end": 241.82,
+      "text": "Our needle approach comes from posterior."
+    },
+    {
+      "start": 242.84,
+      "end": 245.07,
+      "text": "Usually I start the needle approximately"
+    },
+    {
+      "start": 245.07,
+      "end": 247.07,
+      "text": "one centimeter away from the probe."
+    },
+    {
+      "start": 247.78,
+      "end": 249.98,
+      "text": "In this image, we see the interscaling."
+    },
+    {
+      "start": 250.0,
+      "end": 256.03,
+      "text": "groove with the C5, C6 nerve roots. The needle is passing through the middle"
+    },
+    {
+      "start": 256.03,
+      "end": 259.82,
+      "text": "scaling muscle, you'll see an injection on the posterior"
+    },
+    {
+      "start": 260.0,
+      "end": 268.29,
+      "text": "side of the brachial plexus, the needle will be then moved underneath the C6 nerve root."
+    },
+    {
+      "start": 270.58,
+      "end": 273.35,
+      "text": "and injection will be given now."
+    },
+    {
+      "start": 276.09,
+      "end": 277.97,
+      "text": "You can see the local anesthetic spreading"
+    },
+    {
+      "start": 277.97,
+      "end": 279.87,
+      "text": "on the anterior side of the brachial."
+    },
+    {
+      "start": 280.06,
+      "end": 285.38,
+      "text": "between the brachial plexus and the anterior scaly muscle and the needle's"
+    },
+    {
+      "start": 285.38,
+      "end": 289.74,
+      "text": "position below is the C6 nerve roots. I usually"
+    },
+    {
+      "start": 289.74,
+      "end": 289.88,
+      "text": "lead."
+    },
+    {
+      "start": 290.06,
+      "end": 293.46,
+      "text": "about 20 to 30 milliliters of local anesthetic."
+    },
+    {
+      "start": 294.02,
+      "end": 297.8,
+      "text": "Some people use less to avoid paralysis of the"
+    },
+    {
+      "start": 297.8,
+      "end": 299.96,
+      "text": "frenic nerve temporarily from the local anesthetic."
+    }
+  ]
+}

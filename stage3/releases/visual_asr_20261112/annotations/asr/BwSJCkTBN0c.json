@@ -1,0 +1,593 @@
+{
+  "video_id": "BwSJCkTBN0c",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/BwSJCkTBN0c/asr.txt",
+  "segments": [
+    {
+      "start": 0.38,
+      "end": 3.58,
+      "text": "Welcome to this Ultrasound video tutorial on shoulder ultrasound."
+    },
+    {
+      "start": 4.74,
+      "end": 9.32,
+      "text": "Ultrasound is a fast and effective tool for the diagnosis of common shoulder diseases in"
+    },
+    {
+      "start": 9.64,
+      "end": 9.94,
+      "text": "Petit."
+    },
+    {
+      "start": 10.0,
+      "end": 14.95,
+      "text": "rotator cuff abnormalities and impingement. During this video we will start off with"
+    },
+    {
+      "start": 14.95,
+      "end": 18.99,
+      "text": "a review of the relevant anatomy, then demonstrate how to perform the ultrasound examination."
+    },
+    {
+      "start": 20.1,
+      "end": 23.46,
+      "text": "Finally, we will end with a few examples of the pathology that you might see."
+    },
+    {
+      "start": 24.97,
+      "end": 28.75,
+      "text": "The rotator cuff is a group of four muscles that are responsible for shoulder stability."
+    },
+    {
+      "start": 30.06,
+      "end": 34.06,
+      "text": "Understanding the anatomy and function of these muscles is crucial to performing the ultrasound."
+    },
+    {
+      "start": 35.87,
+      "end": 38.53,
+      "text": "The muscles of the rotator cuff are the super-spinatus,"
+    },
+    {
+      "start": 39.25,
+      "end": 39.77,
+      "text": "infraspinatus."
+    },
+    {
+      "start": 40.0,
+      "end": 44.91,
+      "text": "sub-scupularis and terras minor. For the purposes of a shoulder ultrasound,"
+    },
+    {
+      "start": 45.45,
+      "end": 49.57,
+      "text": "the terras minor is not always assessed, and it does not contribute significantly to pathology."
+    },
+    {
+      "start": 50.9,
+      "end": 54.84,
+      "text": "In addition to the rotator cuff, we also need to know about the biceps brachy muscle."
+    },
+    {
+      "start": 55.84,
+      "end": 59.98,
+      "text": "Seen anteriorly, the biceps brachy has two muscle bellies and two tendons."
+    },
+    {
+      "start": 60.0,
+      "end": 66.91,
+      "text": "The long head originates from the super glenotubical of the scapula and travels within the bicepital groove to join the muscle."
+    },
+    {
+      "start": 67.46,
+      "end": 69.92,
+      "text": "While the short head originates from the choroquy process."
+    },
+    {
+      "start": 70.06,
+      "end": 76.61,
+      "text": "of the scapula. The subscapularis originates from the subscapular fossa and its tendon"
+    },
+    {
+      "start": 76.61,
+      "end": 79.87,
+      "text": "inserts onto the lesser tubercle of the humerus as seen here."
+    },
+    {
+      "start": 81.79,
+      "end": 85.97,
+      "text": "The tendons of Supra and Infraspinators can be seen from the front, but to demonstrate"
+    },
+    {
+      "start": 85.97,
+      "end": 88.27,
+      "text": "their anatomate is best to view them from behind."
+    },
+    {
+      "start": 90.06,
+      "end": 94.98,
+      "text": "The superspinators originates within the superspinus fossa of the scapular, and its tendons"
+    },
+    {
+      "start": 94.98,
+      "end": 97.96,
+      "text": "insert onto the superior facet of the greater tubicle."
+    },
+    {
+      "start": 99.52,
+      "end": 99.98,
+      "text": "The Inve-"
+    },
+    {
+      "start": 100.0,
+      "end": 104.96,
+      "text": "frispenatus originates within the infraspinus fossa of the scapula and inserts onto the middle"
+    },
+    {
+      "start": 104.96,
+      "end": 106.8,
+      "text": "facet of the greater tuberosity."
+    },
+    {
+      "start": 110.29,
+      "end": 114.71,
+      "text": "shoulder ultrasound examination is not easy to do, though it is important that you optimise"
+    },
+    {
+      "start": 114.71,
+      "end": 119.98,
+      "text": "your chances of success by selecting the correct rules for the job, to be able to assess the"
+    },
+    {
+      "start": 120.0,
+      "end": 124.15,
+      "text": "shoulder muscles and tendons, a high-frequency linear probe is essential."
+    },
+    {
+      "start": 124.92,
+      "end": 129.94,
+      "text": "In this demonstration, we use a Canon Medical Multi-Frequency 185 Linear."
+    },
+    {
+      "start": 130.03,
+      "end": 134.08,
+      "text": "The next step is to correctly position the patient."
+    },
+    {
+      "start": 135.06,
+      "end": 136.88,
+      "text": "We recommend four key positions."
+    },
+    {
+      "start": 137.66,
+      "end": 139.92,
+      "text": "Position one, the patient sits with their elbow."
+    },
+    {
+      "start": 140.0,
+      "end": 142.76,
+      "text": "tucked into the hip and bent at 90 degrees."
+    },
+    {
+      "start": 145.09,
+      "end": 147.71,
+      "text": "Position two, the patient rotates that arm"
+    },
+    {
+      "start": 147.71,
+      "end": 149.73,
+      "text": "moving only their hand out to the side."
+    },
+    {
+      "start": 151.12,
+      "end": 154.87,
+      "text": "Position three, the patient moves their hand around their back towards their"
+    },
+    {
+      "start": 154.87,
+      "end": 159.87,
+      "text": "contralateral back pocket. Position four, the patient brings their hand"
+    },
+    {
+      "start": 160.06,
+      "end": 162.34,
+      "text": "forward to touch that control actual shoulder."
+    },
+    {
+      "start": 170.16,
+      "end": 171.58,
+      "text": "with the patient in position one,"
+    },
+    {
+      "start": 172.01,
+      "end": 174.65,
+      "text": "place the probe actually over the anterior shoulder."
+    },
+    {
+      "start": 175.48,
+      "end": 176.68,
+      "text": "Here you will see the humeral head"
+    },
+    {
+      "start": 176.68,
+      "end": 178.0,
+      "text": "and the bysypital groove."
+    },
+    {
+      "start": 178.16,
+      "end": 179.96,
+      "text": "The bysypital groove can take..."
+    },
+    {
+      "start": 180.0,
+      "end": 186.98,
+      "text": "the long head of biceps tendon. Now turn the probe to assess the tendon in its"
+    },
+    {
+      "start": 186.98,
+      "end": 189.92,
+      "text": "longitudinal plane. It's important."
+    },
+    {
+      "start": 190.03,
+      "end": 194.27,
+      "text": "keep the probe parallel to the tendon fibers to have reduced the effect of an isotropy."
+    },
+    {
+      "start": 195.53,
+      "end": 199.59,
+      "text": "Remember to tilt the probe over any areas of concern to ensure this artifact does not"
+    },
+    {
+      "start": 199.59,
+      "end": 199.95,
+      "text": "men."
+    },
+    {
+      "start": 200.0,
+      "end": 200.58,
+      "text": "Mythology."
+    },
+    {
+      "start": 212.62,
+      "end": 217.82,
+      "text": "Turn back through 90 degrees to the axial plane and slide crannily up the bisipidle groove."
+    },
+    {
+      "start": 218.87,
+      "end": 219.97,
+      "text": "The bisipidle groove is..."
+    },
+    {
+      "start": 220.06,
+      "end": 221.96,
+      "text": "covered by the transverse humoral ligament,"
+    },
+    {
+      "start": 222.22,
+      "end": 224.78,
+      "text": "which received some fibres from the sub scapularis."
+    },
+    {
+      "start": 226.32,
+      "end": 228.24,
+      "text": "Now ask the patient to slowly rotate their arm"
+    },
+    {
+      "start": 228.24,
+      "end": 229.14,
+      "text": "into position two."
+    },
+    {
+      "start": 230.58,
+      "end": 235.26,
+      "text": "As before, rock the probe in playing with the fibres to ensure the anisotropic artefact"
+    },
+    {
+      "start": 235.26,
+      "end": 236.52,
+      "text": "is not misinterpreted."
+    },
+    {
+      "start": 257.3,
+      "end": 259.92,
+      "text": "now turn to view the subscapularis in its axis."
+    },
+    {
+      "start": 260.0,
+      "end": 265.58,
+      "text": "plane. There are multiple discrete bundles which represent the hyperecoic muscle fibers"
+    },
+    {
+      "start": 265.58,
+      "end": 269.92,
+      "text": "into digitating with the hyperecoic tender. This is a normal"
+    },
+    {
+      "start": 270.0,
+      "end": 272.68,
+      "text": "appearance and should not be misinterpreted as pathology."
+    },
+    {
+      "start": 275.69,
+      "end": 279.53,
+      "text": "Protate the probe back through 90 degrees and slide on top of the shoulder until the"
+    },
+    {
+      "start": 279.53,
+      "end": 279.97,
+      "text": "acromi..."
+    },
+    {
+      "start": 280.0,
+      "end": 285.64,
+      "text": "clavicular joint is visualized. Assess this joint for bone contour irregularity, which is"
+    },
+    {
+      "start": 285.64,
+      "end": 289.98,
+      "text": "suggestive of degenerative change, and look for a chromioclavicular ligament thickening."
+    },
+    {
+      "start": 290.03,
+      "end": 296.42,
+      "text": "The acromioclavicular joint could also be widened, which would indicate joint disruption."
+    },
+    {
+      "start": 303.65,
+      "end": 308.35,
+      "text": "Now, ask the patient to move into position 3 and angle the probe as shown to reveal the"
+    },
+    {
+      "start": 308.35,
+      "end": 309.91,
+      "text": "super spinators from under the"
+    },
+    {
+      "start": 311.31,
+      "end": 315.21,
+      "text": "Slighting anterior laterally across the humoral head will bring the tenderness and"
+    },
+    {
+      "start": 315.21,
+      "end": 318.47,
+      "text": "insertion of the superspenators onto the greater tuberosity interview."
+    },
+    {
+      "start": 320.48,
+      "end": 324.82,
+      "text": "Note how anterior the fibers of superspinators can be seen relative to the shoulder when the"
+    },
+    {
+      "start": 324.82,
+      "end": 325.76,
+      "text": "arm is in this position."
+    },
+    {
+      "start": 327.04,
+      "end": 329.96,
+      "text": "While assessing the superspinators, this is also a good..."
+    },
+    {
+      "start": 330.06,
+      "end": 333.62,
+      "text": "opportunity to evaluate the subacromial subdeltoid person."
+    },
+    {
+      "start": 334.83,
+      "end": 339.85,
+      "text": "This fluid-containing sac overlies the superior aspect of the rotator cuff and acts as a cushion."
+    },
+    {
+      "start": 340.0,
+      "end": 341.92,
+      "text": "between bone, muscles and tendons."
+    },
+    {
+      "start": 343.0,
+      "end": 345.66,
+      "text": "In normal individuals, the bursa is a potential space."
+    },
+    {
+      "start": 346.4,
+      "end": 347.68,
+      "text": "If the bursa becomes distended,"
+    },
+    {
+      "start": 348.04,
+      "end": 349.76,
+      "text": "this may be explained by bursitis."
+    },
+    {
+      "start": 350.0,
+      "end": 355.14,
+      "text": "or a tear in the rotator cuff muscles. Remember not to press too hard when looking for fluid in the"
+    },
+    {
+      "start": 355.14,
+      "end": 359.92,
+      "text": "subacromial sub-deltoid bursa, otherwise you may compress the fluid out of the area of injury."
+    },
+    {
+      "start": 360.03,
+      "end": 368.98,
+      "text": "slide anteriorly to review the rotator interval, which is the space between the superspinatus"
+    },
+    {
+      "start": 368.98,
+      "end": 369.98,
+      "text": "and subscapular"
+    },
+    {
+      "start": 370.0,
+      "end": 377.06,
+      "text": "iris muscles, containing the long head of biceps or echohumeral ligament and the superior glenohumeral ligament."
+    },
+    {
+      "start": 378.0,
+      "end": 379.84,
+      "text": "It is important not to mistake the rotated."
+    },
+    {
+      "start": 380.0,
+      "end": 387.92,
+      "text": "interval for a tear. Sliding posteriorly, you can see the super-spinators blend into the"
+    },
+    {
+      "start": 387.92,
+      "end": 389.84,
+      "text": "infraspinators, without any visible"
+    },
+    {
+      "start": 390.06,
+      "end": 395.69,
+      "text": "gap between the two. To assess the infraspinators properly, we must ask the patient to move into"
+    },
+    {
+      "start": 395.69,
+      "end": 399.28,
+      "text": "position 4 and place the probe over the posterior shoulder."
+    },
+    {
+      "start": 401.47,
+      "end": 405.87,
+      "text": "Here we see the infraspinators attaching onto the middle facet of the greater tuberosity."
+    },
+    {
+      "start": 409.13,
+      "end": 409.91,
+      "text": "This is another opportunity."
+    },
+    {
+      "start": 410.0,
+      "end": 413.82,
+      "text": "to assess for pathological fluid in the subachromial sub-deltoid"
+    },
+    {
+      "start": 413.82,
+      "end": 415.42,
+      "text": "which cannot be seen here."
+    },
+    {
+      "start": 430.29,
+      "end": 433.11,
+      "text": "Finally, we review the Infraspinatus in short axis."
+    },
+    {
+      "start": 435.04,
+      "end": 437.78,
+      "text": "This concludes the standard shoulder ultrasound examination."
+    },
+    {
+      "start": 439.14,
+      "end": 439.98,
+      "text": "Let's now look at..."
+    },
+    {
+      "start": 440.0,
+      "end": 444.66,
+      "text": "examples of pathology. One of the most common pathologies you might see is tendonopathy."
+    },
+    {
+      "start": 445.54,
+      "end": 449.97,
+      "text": "And an opathy is a broad term used to describe chronic tendon damage. This may be seen on-"
+    },
+    {
+      "start": 450.0,
+      "end": 454.79,
+      "text": "ultrasound as tendon thickening accompanied by loss of the normal fibula pattern as seen"
+    },
+    {
+      "start": 454.79,
+      "end": 455.45,
+      "text": "in this example."
+    },
+    {
+      "start": 456.02,
+      "end": 459.66,
+      "text": "You may also see classification in the tendon as another sign of chronic tendon damage."
+    },
+    {
+      "start": 460.19,
+      "end": 463.69,
+      "text": "This appears as hyperocoric areas with posterior acoustic shadowing."
+    },
+    {
+      "start": 464.58,
+      "end": 466.74,
+      "text": "Endant tears are another common disease entity."
+    },
+    {
+      "start": 466.98,
+      "end": 469.8,
+      "text": "These can be divided into partial tears or full thickness tears."
+    },
+    {
+      "start": 470.1,
+      "end": 474.54,
+      "text": "Partial tears typically affect either the articular side or the burstle side of the tendon."
+    },
+    {
+      "start": 474.82,
+      "end": 479.98,
+      "text": "This example of an articular-sided, suprasponatus tear demonstrates a hypoechoic cleft."
+    },
+    {
+      "start": 480.42,
+      "end": 485.42,
+      "text": "in the undersurface of the tendon. In this example, the partial tear is seen on the"
+    },
+    {
+      "start": 485.42,
+      "end": 489.3,
+      "text": "burstle side of the supraspinatus tendon. Note, the intact,"
+    },
+    {
+      "start": 489.3,
+      "end": 489.98,
+      "text": "that are takeulous."
+    },
+    {
+      "start": 490.03,
+      "end": 499.9,
+      "text": "Fibers, underneath the torn, Bursel Fibers. Sometimes the tear does not reach the surface."
+    },
+    {
+      "start": 500.0,
+      "end": 504.94,
+      "text": "of the tendon at all, as that are contained within the tendon, like in this example, are"
+    },
+    {
+      "start": 504.94,
+      "end": 506.36,
+      "text": "called intra-substance tears."
+    },
+    {
+      "start": 518.99,
+      "end": 519.97,
+      "text": "This example of a full..."
+    },
+    {
+      "start": 520.0,
+      "end": 524.52,
+      "text": "thickness superspinatus tear shows a cleft of fluid extending all the way through the"
+    },
+    {
+      "start": 524.52,
+      "end": 529.43,
+      "text": "tendon, with no real tendon left in between. You can also see that the ends of the"
+    },
+    {
+      "start": 529.43,
+      "end": 529.89,
+      "text": "Thornton."
+    },
+    {
+      "start": 530.06,
+      "end": 539.81,
+      "text": "are retracted. This concludes our video on the ultrasound assessment of the shoulder."
+    }
+  ]
+}

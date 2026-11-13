@@ -1,0 +1,173 @@
+{
+  "video_id": "vod2_bAvn2Y",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/vod2_bAvn2Y/asr.txt",
+  "segments": [
+    {
+      "start": 11.9,
+      "end": 17.38,
+      "text": "Hello class, Professor Lyle here. Today I'd like to show you some of the basics of Transducer"
+    },
+    {
+      "start": 17.38,
+      "end": 22.34,
+      "text": "manipulation. At the conclusion of this presentation, I'd like for you to be able to list those"
+    },
+    {
+      "start": 22.34,
+      "end": 27.8,
+      "text": "basic maneuvers. I'd like for you to describe how the manipulation helps the sonographer"
+    },
+    {
+      "start": 27.8,
+      "end": 33.32,
+      "text": "affect what's on the image, and I'd like for you to demonstrate these different maneuvers."
+    },
+    {
+      "start": 33.7,
+      "end": 37.26,
+      "text": "These are skills that you'll need to have every day in your new profession."
+    },
+    {
+      "start": 37.26,
+      "end": 43.0,
+      "text": "First, I'd like to start with rocking, which is my favorite transducer maneuver."
+    },
+    {
+      "start": 44.12,
+      "end": 52.62,
+      "text": "Rocking enables the synographer to both bring a particular area of interest into the center of the field of view,"
+    },
+    {
+      "start": 52.94,
+      "end": 57.46,
+      "text": "or it also enables the synographer to extend their field of view."
+    },
+    {
+      "start": 57.46,
+      "end": 65.94,
+      "text": "So, for instance, here is aorta and here if I rock upwards and look, I can see very proximal"
+    },
+    {
+      "start": 65.94,
+      "end": 67.7,
+      "text": "aorta here in my view."
+    },
+    {
+      "start": 68.86,
+      "end": 73.64,
+      "text": "So rocking is performed by rocking on the face of the transducer."
+    },
+    {
+      "start": 73.94,
+      "end": 76.5,
+      "text": "This can be done in any direction."
+    },
+    {
+      "start": 77.38,
+      "end": 81.32,
+      "text": "Rocking transversely and rocking longitudinally."
+    },
+    {
+      "start": 82.35,
+      "end": 84.65,
+      "text": "Next I'd like to talk about tilting."
+    },
+    {
+      "start": 84.65,
+      "end": 90.25,
+      "text": "Tilting and angling are sometimes referred to as the same thing, performed by"
+    },
+    {
+      "start": 90.25,
+      "end": 97.95,
+      "text": "tilting the transducer. So the transducer is tilted this way side to side or"
+    },
+    {
+      "start": 97.95,
+      "end": 105.23,
+      "text": "superior to inferior. So this can be used to evaluate an entire organ by staying in"
+    },
+    {
+      "start": 105.23,
+      "end": 111.01,
+      "text": "the same acoustic window and simply viewing that organ from both superiorly"
+    },
+    {
+      "start": 111.01,
+      "end": 117.53,
+      "text": "all the way through to inferiorly, or this can be used to see lateral through"
+    },
+    {
+      "start": 117.53,
+      "end": 124.15,
+      "text": "medial on that organ. The next maneuver I'd like to talk about is sliding. And"
+    },
+    {
+      "start": 124.15,
+      "end": 131.02,
+      "text": "sliding is the gross movement of the transducer across the field of view. Where"
+    },
+    {
+      "start": 131.02,
+      "end": 137.42,
+      "text": "it's possible to evaluate a small organ using angling, sliding needs to be used"
+    },
+    {
+      "start": 137.42,
+      "end": 140.74,
+      "text": "for a larger organ or a much larger field of view."
+    },
+    {
+      "start": 141.52,
+      "end": 144.02,
+      "text": "So sliding can be done in any direction,"
+    },
+    {
+      "start": 144.36,
+      "end": 148.58,
+      "text": "so from superior to inferior, from medial to lateral,"
+    },
+    {
+      "start": 149.34,
+      "end": 150.26,
+      "text": "in either direction."
+    },
+    {
+      "start": 151.1,
+      "end": 153.26,
+      "text": "Sliding enables the sonographer to utilize"
+    },
+    {
+      "start": 153.26,
+      "end": 156.42,
+      "text": "different acoustical windows, even for the same organ."
+    },
+    {
+      "start": 156.98,
+      "end": 159.3,
+      "text": "These are just a few of the basic techniques"
+    },
+    {
+      "start": 159.3,
+      "end": 161.92,
+      "text": "that you'll use to maneuver your transducer"
+    },
+    {
+      "start": 161.92,
+      "end": 165.0,
+      "text": "every day with every case in your new profession."
+    },
+    {
+      "start": 165.0,
+      "end": 168.32,
+      "text": "These require a lot of practice to become proficient."
+    },
+    {
+      "start": 168.86,
+      "end": 171.8,
+      "text": "Let's get started. It's your turn. Here's the transducer."
+    }
+  ]
+}

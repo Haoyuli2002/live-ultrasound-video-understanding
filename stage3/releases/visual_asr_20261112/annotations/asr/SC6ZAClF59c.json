@@ -1,0 +1,198 @@
+{
+  "video_id": "SC6ZAClF59c",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/SC6ZAClF59c/asr.txt",
+  "segments": [
+    {
+      "start": 8.02,
+      "end": 11.98,
+      "text": "We all know the best defense against breast cancer is early detection."
+    },
+    {
+      "start": 13.71,
+      "end": 17.39,
+      "text": "Your radiologist might see something in your breast exam that looks suspicious."
+    },
+    {
+      "start": 19.42,
+      "end": 22.58,
+      "text": "To find out more, we perform a breast biopsy."
+    },
+    {
+      "start": 23.5,
+      "end": 28.18,
+      "text": "That means we take a sample of breast tissue which is then studied in a pathology lab."
+    },
+    {
+      "start": 30.2,
+      "end": 33.6,
+      "text": "Today we have minimally invasive methods for sampling the tissue."
+    },
+    {
+      "start": 34.68,
+      "end": 39.1,
+      "text": "That means we use a needle to take the sample with an imaging system for guidance."
+    },
+    {
+      "start": 40.08,
+      "end": 42.64,
+      "text": "It's faster and more comfortable than open surgery."
+    },
+    {
+      "start": 42.64,
+      "end": 45.3,
+      "text": "And your recovery time is much quicker."
+    },
+    {
+      "start": 47.86,
+      "end": 52.52,
+      "text": "Of course, it's okay to be nervous about any medical procedure, but it's really not"
+    },
+    {
+      "start": 52.52,
+      "end": 53.94,
+      "text": "quite as scary as it sounds."
+    },
+    {
+      "start": 54.87,
+      "end": 57.31,
+      "text": "And it helps to know ahead of time what's going to happen."
+    },
+    {
+      "start": 59.1,
+      "end": 61.74,
+      "text": "First, you will lie face-up on an exam table."
+    },
+    {
+      "start": 63.93,
+      "end": 68.63,
+      "text": "An ultrasound probe will be used to locate the exact point in your breast where they want"
+    },
+    {
+      "start": 68.63,
+      "end": 69.81,
+      "text": "to take a tissue sample."
+    },
+    {
+      "start": 71.6,
+      "end": 76.66,
+      "text": "At this point, your physician comes in and double checks the target position with the ultrasound"
+    },
+    {
+      "start": 76.66,
+      "end": 77.1,
+      "text": "device."
+    },
+    {
+      "start": 77.1,
+      "end": 83.5,
+      "text": "Next, your breast will be cleaned and numbed prior to making a small incision."
+    },
+    {
+      "start": 85.5,
+      "end": 91.06,
+      "text": "Vacuum pressure is used to take out the sample, flushing the area with fluid at the same time."
+    },
+    {
+      "start": 93.06,
+      "end": 98.64,
+      "text": "Using the ultrasound image as a guide, the tip of the biopsy device is inserted into your breast,"
+    },
+    {
+      "start": 99.0,
+      "end": 101.08,
+      "text": "and they begin to take the tissue samples."
+    },
+    {
+      "start": 102.48,
+      "end": 108.96,
+      "text": "The biopsy device will be inserted one time, and the doctor will rotate the device to take multiple tissue samples."
+    },
+    {
+      "start": 108.96,
+      "end": 113.2,
+      "text": "It may take a minute or two to get the complete sample."
+    },
+    {
+      "start": 115.42,
+      "end": 119.12,
+      "text": "Finally, a tiny marker is placed at the spot where they took the sample."
+    },
+    {
+      "start": 119.92,
+      "end": 125.64,
+      "text": "This can be seen in future mammograms to show the location of this biopsy, and to minimize"
+    },
+    {
+      "start": 125.64,
+      "end": 128.52,
+      "text": "the chance that this location would be biopsy again."
+    },
+    {
+      "start": 130.77,
+      "end": 134.79,
+      "text": "When the procedure is finished, they bandage your incision and apply pressure."
+    },
+    {
+      "start": 136.39,
+      "end": 140.79,
+      "text": "After a few minutes, the technologist might take you for a post biopsy mammogram."
+    },
+    {
+      "start": 141.6,
+      "end": 143.64,
+      "text": "When that's finished, you're ready to go home."
+    },
+    {
+      "start": 145.55,
+      "end": 150.13,
+      "text": "Most women are able to get right back to their normal lives the same day."
+    },
+    {
+      "start": 150.88,
+      "end": 152.78,
+      "text": "It's normal to feel some discomfort."
+    },
+    {
+      "start": 153.44,
+      "end": 156.78,
+      "text": "There's a tiny nick in your skin that will heal in a few days."
+    },
+    {
+      "start": 158.0,
+      "end": 160.66,
+      "text": "Your physician will provide post-procedure instructions."
+    },
+    {
+      "start": 161.63,
+      "end": 166.49,
+      "text": "But if you develop redness, tenderness, or swelling, or any unusual symptoms,"
+    },
+    {
+      "start": 166.99,
+      "end": 169.35,
+      "text": "be sure to let your doctor or nurse know about it."
+    },
+    {
+      "start": 170.35,
+      "end": 173.49,
+      "text": "Your doctor will contact you to tell you what the lab work indicates,"
+    },
+    {
+      "start": 173.95,
+      "end": 176.29,
+      "text": "and whether any more procedures need to be done."
+    },
+    {
+      "start": 177.56,
+      "end": 181.54,
+      "text": "Early detection is the best weapon against breast cancer."
+    },
+    {
+      "start": 182.85,
+      "end": 187.01,
+      "text": "A longer, healthier life is something every woman deserves."
+    }
+  ]
+}

@@ -1,0 +1,818 @@
+{
+  "video_id": "l6yKd_FZx5g",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/l6yKd_FZx5g/asr.txt",
+  "segments": [
+    {
+      "start": 0.54,
+      "end": 3.5,
+      "text": "What's up YouTube, welcome back, Dr. Chad Conrad here,"
+    },
+    {
+      "start": 3.72,
+      "end": 6.66,
+      "text": "board certified internist, current chief medical resident"
+    },
+    {
+      "start": 6.66,
+      "end": 8.28,
+      "text": "and soon to be cardiology fellow."
+    },
+    {
+      "start": 8.6,
+      "end": 9.96,
+      "text": "Today, I wanna show you guys."
+    },
+    {
+      "start": 10.06,
+      "end": 18.5,
+      "text": "to place a central line. The first thing about a central line is knowing your"
+    },
+    {
+      "start": 18.5,
+      "end": 19.98,
+      "text": "and kick what's in the central line."
+    },
+    {
+      "start": 20.06,
+      "end": 22.74,
+      "text": "So we're going to go through that really quickly here."
+    },
+    {
+      "start": 22.98,
+      "end": 26.68,
+      "text": "When you open the central line kit, I have one that's already open because we use it as"
+    },
+    {
+      "start": 26.68,
+      "end": 28.4,
+      "text": "demonstration on our mannequins."
+    },
+    {
+      "start": 28.94,
+      "end": 29.96,
+      "text": "So I'll go through what's in here."
+    },
+    {
+      "start": 30.0,
+      "end": 33.54,
+      "text": "in it, but this kit does have everything that will come in your normal, on-offent kit."
+    },
+    {
+      "start": 34.1,
+      "end": 38.14,
+      "text": "The first thing is your sterile gown, your sterile gown, and your sterile drape."
+    },
+    {
+      "start": 38.38,
+      "end": 39.98,
+      "text": "This sterile drape will put over the..."
+    },
+    {
+      "start": 40.0,
+      "end": 41.96,
+      "text": "to provide a sterile barrier."
+    },
+    {
+      "start": 42.48,
+      "end": 45.12,
+      "text": "A central line should be performed as a surgical procedure."
+    },
+    {
+      "start": 45.84,
+      "end": 48.72,
+      "text": "Anytime you break the skin, there is a high chance for infection,"
+    },
+    {
+      "start": 48.72,
+      "end": 49.98,
+      "text": "so you want to make sure that this..."
+    },
+    {
+      "start": 50.06,
+      "end": 54.68,
+      "text": "sterile as possible. Also in the central line kit you'll find gauze to control"
+    },
+    {
+      "start": 54.68,
+      "end": 59.88,
+      "text": "bleeding, you'll find some iodine swabs to help with sterilizing."
+    },
+    {
+      "start": 60.13,
+      "end": 66.51,
+      "text": "field. You will have your sutures and ears, sterile gloves. You have your"
+    },
+    {
+      "start": 66.51,
+      "end": 69.64,
+      "text": "by wire, this will go into the central line."
+    },
+    {
+      "start": 70.7,
+      "end": 74.84,
+      "text": "You have your triple lumen catheter, this is the actual central line and this is what will"
+    },
+    {
+      "start": 74.84,
+      "end": 79.97,
+      "text": "go into the patient's internal jugular or femoral vein when you're"
+    },
+    {
+      "start": 80.06,
+      "end": 86.25,
+      "text": "placing the central line. You have your scalpel. This is for making the skin in order to advance your"
+    },
+    {
+      "start": 86.25,
+      "end": 89.87,
+      "text": "Dial later you have lighter came this in"
+    },
+    {
+      "start": 90.26,
+      "end": 94.6,
+      "text": "anesthetizing the area so it's comfortable for the patient and you have your"
+    },
+    {
+      "start": 94.6,
+      "end": 99.49,
+      "text": "introducer. This is the plunger and syringe with the needle for"
+    },
+    {
+      "start": 100.1,
+      "end": 101.46,
+      "text": "forming the central line procedure."
+    },
+    {
+      "start": 101.82,
+      "end": 103.32,
+      "text": "There's a number of other things in here,"
+    },
+    {
+      "start": 103.46,
+      "end": 106.8,
+      "text": "such as extra needles and extra syringes"
+    },
+    {
+      "start": 106.8,
+      "end": 109.4,
+      "text": "for injecting the lidocaine."
+    },
+    {
+      "start": 110.06,
+      "end": 111.08,
+      "text": "But we'll get started here."
+    },
+    {
+      "start": 111.4,
+      "end": 115.83,
+      "text": "So when you're placing a central line, it's really important to know why you're placing"
+    },
+    {
+      "start": 115.83,
+      "end": 119.15,
+      "text": "a central line, and that there are a number of potential complications."
+    },
+    {
+      "start": 119.71,
+      "end": 119.97,
+      "text": "The pace."
+    },
+    {
+      "start": 120.0,
+      "end": 123.92,
+      "text": "should be well informed as to what's about to happen so they can make the most"
+    },
+    {
+      "start": 123.92,
+      "end": 129.26,
+      "text": "educated decision. Essential line is an invasive procedure. With any invasive"
+    },
+    {
+      "start": 129.26,
+      "end": 129.96,
+      "text": "procedure, the"
+    },
+    {
+      "start": 130.0,
+      "end": 131.06,
+      "text": "There's a chance of infection."
+    },
+    {
+      "start": 131.62,
+      "end": 134.78,
+      "text": "There will undoubtedly be some discomfort and pain."
+    },
+    {
+      "start": 135.24,
+      "end": 136.12,
+      "text": "There's a chance for bleeding,"
+    },
+    {
+      "start": 136.46,
+      "end": 138.86,
+      "text": "there's a chance for a vessel injury, nerve injury,"
+    },
+    {
+      "start": 139.04,
+      "end": 139.86,
+      "text": "and a new move."
+    },
+    {
+      "start": 140.03,
+      "end": 144.35,
+      "text": "thorax if you're performing a central line in the internal jugular due to its proximity"
+    },
+    {
+      "start": 144.35,
+      "end": 144.95,
+      "text": "for the long."
+    },
+    {
+      "start": 145.61,
+      "end": 149.57,
+      "text": "And more thoraxes are not nearly as common as they used to be because we do use an ultrasound"
+    },
+    {
+      "start": 149.57,
+      "end": 149.75,
+      "text": "down."
+    },
+    {
+      "start": 150.0,
+      "end": 154.24,
+      "text": "all central line insertions these days, but in the older days prior to ultra"
+    },
+    {
+      "start": 154.24,
+      "end": 159.6,
+      "text": "sounds it was much more common because it was going blind and didn't need all"
+    },
+    {
+      "start": 159.6,
+      "end": 159.92,
+      "text": "with free."
+    },
+    {
+      "start": 160.38,
+      "end": 165.38,
+      "text": "contact with the apathy of the lung and could cause a pneumothorax. Again, it"
+    },
+    {
+      "start": 165.38,
+      "end": 168.84,
+      "text": "doesn't happen very frequently these days because of the ultrasound."
+    },
+    {
+      "start": 170.0,
+      "end": 173.84,
+      "text": "So the most important thing is using your ultrasound to find the vessel."
+    },
+    {
+      "start": 174.26,
+      "end": 177.66,
+      "text": "So you put the ultrasound on the patient's neck and you look at your ultrasound screen."
+    },
+    {
+      "start": 178.08,
+      "end": 179.32,
+      "text": "Here I'm seeing two vessels."
+    },
+    {
+      "start": 180.45,
+      "end": 189.85,
+      "text": "See the vein and I see the artery in order to differentiate which one is which you need to place a little bit of compression on the patient's neck the vein will completely collapse"
+    },
+    {
+      "start": 190.1,
+      "end": 194.5,
+      "text": "where the artery will not completely collapse and you will frequently see some pulsation in"
+    },
+    {
+      "start": 194.85,
+      "end": 198.95,
+      "text": "the artery that's due to the blood pressure and the artery being a high pressure system."
+    },
+    {
+      "start": 198.95,
+      "end": 199.91,
+      "text": "So here"
+    },
+    {
+      "start": 200.0,
+      "end": 203.92,
+      "text": "I can see my vein in the middle of the screen and I can see my artery down to the left."
+    },
+    {
+      "start": 204.24,
+      "end": 205.28,
+      "text": "This is perfect anatomy."
+    },
+    {
+      "start": 205.72,
+      "end": 209.9,
+      "text": "This is not what you will see on every single patient, but for the..."
+    },
+    {
+      "start": 210.0,
+      "end": 212.08,
+      "text": "of today's demonstration on our mannequin,"
+    },
+    {
+      "start": 212.1,
+      "end": 213.22,
+      "text": "he does that perfect anatomy."
+    },
+    {
+      "start": 213.89,
+      "end": 215.39,
+      "text": "So good, so now I've found my vessel"
+    },
+    {
+      "start": 215.39,
+      "end": 216.25,
+      "text": "and where I'm gonna go."
+    },
+    {
+      "start": 216.51,
+      "end": 218.57,
+      "text": "The next thing I do is I'm gonna inject the lidocaine,"
+    },
+    {
+      "start": 218.97,
+      "end": 219.97,
+      "text": "so I'll take my lidocaine."
+    },
+    {
+      "start": 220.0,
+      "end": 224.62,
+      "text": "and I'll make a wheel in the patient's nap right under the subcutaneous skin so that the"
+    },
+    {
+      "start": 224.62,
+      "end": 226.7,
+      "text": "patient is anesthetizing does not feel any pain."
+    },
+    {
+      "start": 227.16,
+      "end": 229.88,
+      "text": "With proper anesthetization the patient should only feel"
+    },
+    {
+      "start": 230.0,
+      "end": 235.92,
+      "text": "little bit of pressure with performing the procedure. The next thing I want to do is I want to get my needle"
+    },
+    {
+      "start": 235.92,
+      "end": 239.85,
+      "text": "ready so the grip is really important because you want to make sure that you can"
+    },
+    {
+      "start": 240.19,
+      "end": 243.61,
+      "text": "and I get a pressure on the syringe as soon as you enter the patient's skin."
+    },
+    {
+      "start": 243.73,
+      "end": 246.87,
+      "text": "This will let you know when you've gone into the vessel because you'll immediately get"
+    },
+    {
+      "start": 246.87,
+      "end": 247.83,
+      "text": "some blood drawback."
+    },
+    {
+      "start": 248.27,
+      "end": 249.97,
+      "text": "It's also important to make sure that the..."
+    },
+    {
+      "start": 250.03,
+      "end": 253.09,
+      "text": "and bevel his face up when you perform his procedure."
+    },
+    {
+      "start": 254.16,
+      "end": 256.8,
+      "text": "You will go in with your dominant hand with the needle"
+    },
+    {
+      "start": 256.8,
+      "end": 259.44,
+      "text": "and you will hold the ultrasound to your non-dominant hand."
+    },
+    {
+      "start": 260.26,
+      "end": 263.62,
+      "text": "I like to arrest the ultrasound hand on the patient's chin,"
+    },
+    {
+      "start": 263.8,
+      "end": 264.52,
+      "text": "Christophility."
+    },
+    {
+      "start": 265.1,
+      "end": 267.7,
+      "text": "And this way I won't find myself drifting all over the place"
+    },
+    {
+      "start": 267.7,
+      "end": 269.76,
+      "text": "with the ultrasound as I'm performing the procedure."
+    },
+    {
+      "start": 270.13,
+      "end": 272.61,
+      "text": "able to keep the vessel in the middle of my ultrasound screen."
+    },
+    {
+      "start": 273.36,
+      "end": 274.28,
+      "text": "So we'll get started here."
+    },
+    {
+      "start": 275.27,
+      "end": 277.69,
+      "text": "And I take my needle at about a 45 degree angle"
+    },
+    {
+      "start": 277.69,
+      "end": 279.97,
+      "text": "in the middle of the ultrasound correlating with the middle."
+    },
+    {
+      "start": 280.0,
+      "end": 285.79,
+      "text": "all my ultrasound screen. I'm going to slowly insert the needle. As soon as I enter the"
+    },
+    {
+      "start": 285.79,
+      "end": 289.85,
+      "text": "scan I'm pulling negative pressure on the needle and now I'm going to find my needle dead with my"
+    },
+    {
+      "start": 290.22,
+      "end": 292.89,
+      "text": "So this way I can watch Neil go into the vessel."
+    },
+    {
+      "start": 293.09,
+      "end": 298.13,
+      "text": "I see my needle right on the top of the vessel here and I'm going to advance and I am"
+    },
+    {
+      "start": 298.13,
+      "end": 299.57,
+      "text": "going to flash on my needle."
+    },
+    {
+      "start": 300.16,
+      "end": 305.36,
+      "text": "plunger. I feel the blood coming into the plunger and with my ultrasound I can see the target"
+    },
+    {
+      "start": 305.36,
+      "end": 309.43,
+      "text": "sign in the middle of the screen. The next thing I do is I'm going to put the ultrasound probe down"
+    },
+    {
+      "start": 309.43,
+      "end": 309.97,
+      "text": "and I'm going to"
+    },
+    {
+      "start": 310.68,
+      "end": 315.64,
+      "text": "I'm gonna confirm I'm still in the vessel because there is a good amount of movement that happens there and I'm still getting blood"
+    },
+    {
+      "start": 315.64,
+      "end": 319.62,
+      "text": "So I know that I'm still in the vessel the next thing that I will do is I will pull"
+    },
+    {
+      "start": 320.16,
+      "end": 322.87,
+      "text": "this plunger off, and I will grab my guide wire."
+    },
+    {
+      "start": 323.44,
+      "end": 325.76,
+      "text": "The guide wire gets advanced into the needle"
+    },
+    {
+      "start": 325.76,
+      "end": 329.84,
+      "text": "and you will advance the guide wire to about 20 to 25."
+    },
+    {
+      "start": 330.0,
+      "end": 335.35,
+      "text": "centimeters. That is shown by black lines on the guide wire. One black line is 10"
+    },
+    {
+      "start": 335.35,
+      "end": 339.25,
+      "text": "centimeters, two black lines is 20 centimeters, and the solid black line is 30"
+    },
+    {
+      "start": 339.25,
+      "end": 339.59,
+      "text": "centimeters."
+    },
+    {
+      "start": 340.48,
+      "end": 342.36,
+      "text": "So I'm advancing, but I'm feeling a little bit of pressure."
+    },
+    {
+      "start": 342.76,
+      "end": 347.13,
+      "text": "In order to get through the pressure, you can flip your hand over where you can flatten"
+    },
+    {
+      "start": 347.13,
+      "end": 349.71,
+      "text": "out the needle and that way you can continue to push."
+    },
+    {
+      "start": 350.29,
+      "end": 352.03,
+      "text": "You never want to push against pressure,"
+    },
+    {
+      "start": 352.39,
+      "end": 353.93,
+      "text": "because you can cause vessel injury."
+    },
+    {
+      "start": 354.71,
+      "end": 356.79,
+      "text": "So here, I'm at about 25 centimeters,"
+    },
+    {
+      "start": 356.81,
+      "end": 357.87,
+      "text": "which is more than sufficient."
+    },
+    {
+      "start": 358.35,
+      "end": 359.85,
+      "text": "I'm gonna pull out my guide wire."
+    },
+    {
+      "start": 360.0,
+      "end": 362.24,
+      "text": "housing, and now I have my hand on the guide wire."
+    },
+    {
+      "start": 362.46,
+      "end": 364.9,
+      "text": "You never want to let go of the guide wire."
+    },
+    {
+      "start": 365.06,
+      "end": 366.78,
+      "text": "Because if the guide wire gets sucked into the patient,"
+    },
+    {
+      "start": 366.96,
+      "end": 368.88,
+      "text": "it becomes a vascular surgery emergency"
+    },
+    {
+      "start": 368.88,
+      "end": 369.96,
+      "text": "and can cause a very..."
+    },
+    {
+      "start": 370.0,
+      "end": 374.57,
+      "text": "dangerous arrhythmias. By my hand on the Godwire, I'm going to pull my needle back to my"
+    },
+    {
+      "start": 375.05,
+      "end": 379.98,
+      "text": "backhand. I'm going to re-grap the Godwire. Now the needle is out. Now my Godwire is..."
+    },
+    {
+      "start": 380.0,
+      "end": 383.18,
+      "text": "in place and I want to confirm that I'm still in the correct vessel so I"
+    },
+    {
+      "start": 383.18,
+      "end": 387.38,
+      "text": "grab my ultrasound and I look and I see a shadow within the vessel showing that"
+    },
+    {
+      "start": 387.38,
+      "end": 389.73,
+      "text": "it is my godwire within the vessel"
+    },
+    {
+      "start": 390.7,
+      "end": 396.82,
+      "text": "I turn my ultrasound probe and I look at it in a transverse way and here I can see my"
+    },
+    {
+      "start": 396.82,
+      "end": 399.92,
+      "text": "guide wire perfectly within the vessel so I know that I'm still"
+    },
+    {
+      "start": 400.45,
+      "end": 402.81,
+      "text": "and I'll drive you there next to what you would do."
+    },
+    {
+      "start": 402.97,
+      "end": 404.25,
+      "text": "I'm not going to do it on this mannequin,"
+    },
+    {
+      "start": 404.47,
+      "end": 407.86,
+      "text": "but you would take your scalpel and you would knit right next"
+    },
+    {
+      "start": 407.86,
+      "end": 409.46,
+      "text": "to the guide wire."
+    },
+    {
+      "start": 410.03,
+      "end": 415.07,
+      "text": "And that allows the skin to be broken so that you could advance your dilator when it's"
+    },
+    {
+      "start": 415.07,
+      "end": 416.17,
+      "text": "time to advance a dilator."
+    },
+    {
+      "start": 416.57,
+      "end": 419.97,
+      "text": "So now that I've knifed the skin, I'm going to take my dilator and..."
+    },
+    {
+      "start": 420.0,
+      "end": 424.42,
+      "text": "and I'm going to put my dilator on the guide wire."
+    },
+    {
+      "start": 424.95,
+      "end": 426.35,
+      "text": "The dilator is on the guide wire here."
+    },
+    {
+      "start": 426.93,
+      "end": 429.49,
+      "text": "I'm going to advance my dilator into the patient."
+    },
+    {
+      "start": 430.06,
+      "end": 434.37,
+      "text": "You only need to go about halfway in and if you do feel a bit of pressure you can twist"
+    },
+    {
+      "start": 434.37,
+      "end": 436.51,
+      "text": "the dilator in your hand and that will help it advance."
+    },
+    {
+      "start": 437.37,
+      "end": 439.91,
+      "text": "Now when you're taking the dilator out you want to make sure that you don't."
+    },
+    {
+      "start": 440.06,
+      "end": 441.5,
+      "text": "accidentally pull your guide wire out."
+    },
+    {
+      "start": 442.49,
+      "end": 443.65,
+      "text": "So good, so now I'm dilated."
+    },
+    {
+      "start": 444.05,
+      "end": 445.87,
+      "text": "Patient will typically be bleeding a little bit now,"
+    },
+    {
+      "start": 445.95,
+      "end": 447.35,
+      "text": "and that's why you have the extra gauze"
+    },
+    {
+      "start": 447.35,
+      "end": 449.98,
+      "text": "to hold against the skin here to prevent the bleeds."
+    },
+    {
+      "start": 450.0,
+      "end": 454.63,
+      "text": "and now you can play your triple aluminum catheter on. You'll see the triple"
+    },
+    {
+      "start": 454.63,
+      "end": 459.57,
+      "text": "aluminum catheter has three ports in orange, excuse me, a red, a blue, and a white."
+    },
+    {
+      "start": 460.16,
+      "end": 464.62,
+      "text": "the red or the purple ground for here is where the guide wire is going to come out of"
+    },
+    {
+      "start": 464.62,
+      "end": 468.82,
+      "text": "because that's the center port so you want to make sure there's no cap on the red board."
+    },
+    {
+      "start": 470.8,
+      "end": 476.11,
+      "text": "your guide wire into the triple limit catheter here and you advance it all the way until you see"
+    },
+    {
+      "start": 476.11,
+      "end": 479.96,
+      "text": "the guide wire coming out of the red port then you can grab the guide wire at the..."
+    },
+    {
+      "start": 480.06,
+      "end": 485.0,
+      "text": "of the triple omen and you can advance your guide wire, excuse me, you can advance your"
+    },
+    {
+      "start": 485.0,
+      "end": 489.06,
+      "text": "triple omen catheter into the patient, you're going to go all the way in and then you're"
+    },
+    {
+      "start": 489.06,
+      "end": 489.96,
+      "text": "going to employ your guide wire."
+    },
+    {
+      "start": 490.03,
+      "end": 496.28,
+      "text": "out. You want to check that you're in the vessel by trying to draw back on all of the"
+    },
+    {
+      "start": 496.28,
+      "end": 499.58,
+      "text": "boards and I am getting water return here so I know that I'm in the vessel."
+    },
+    {
+      "start": 500.29,
+      "end": 503.4,
+      "text": "Once you have the triple looming catheter in place,"
+    },
+    {
+      "start": 504.0,
+      "end": 506.48,
+      "text": "you cannot use it yet until you get an x-ray."
+    },
+    {
+      "start": 506.98,
+      "end": 509.14,
+      "text": "You want to see the tip of the triple looming catheter"
+    },
+    {
+      "start": 509.14,
+      "end": 509.82,
+      "text": "is at the cable."
+    },
+    {
+      "start": 510.0,
+      "end": 512.0,
+      "text": "and that confirms proper placement."
+    },
+    {
+      "start": 512.92,
+      "end": 514.14,
+      "text": "So that's how you place the central line."
+    },
+    {
+      "start": 514.32,
+      "end": 516.44,
+      "text": "I hope you guys enjoyed the video and found it helpful."
+    },
+    {
+      "start": 516.68,
+      "end": 518.46,
+      "text": "If you did, please like and subscribe."
+    },
+    {
+      "start": 518.7,
+      "end": 519.96,
+      "text": "And if you have any questions, leave them in the comments."
+    }
+  ]
+}

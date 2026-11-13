@@ -1,0 +1,528 @@
+{
+  "video_id": "CW3TLabogko",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/CW3TLabogko/asr.txt",
+  "segments": [
+    {
+      "start": 0.67,
+      "end": 2.27,
+      "text": "Something to keep in mind with cardiac pokes,"
+    },
+    {
+      "start": 2.49,
+      "end": 4.07,
+      "text": "it can be really challenging."
+    },
+    {
+      "start": 4.7,
+      "end": 6.96,
+      "text": "It can take a lot of time to master it,"
+    },
+    {
+      "start": 7.18,
+      "end": 9.56,
+      "text": "and it's totally okay if you're not able to visualize,"
+    },
+    {
+      "start": 10.0,
+      "end": 12.06,
+      "text": "all the windows that you want for any given patient."
+    },
+    {
+      "start": 12.34,
+      "end": 13.74,
+      "text": "Some patients, for whatever reason,"
+    },
+    {
+      "start": 13.96,
+      "end": 15.14,
+      "text": "they just don't have that window."
+    },
+    {
+      "start": 15.9,
+      "end": 18.259999999999998,
+      "text": "That being said, there are a couple of troubleshooting tips"
+    },
+    {
+      "start": 18.259999999999998,
+      "end": 19.98,
+      "text": "we can give you for each..."
+    },
+    {
+      "start": 20.0,
+      "end": 24.91,
+      "text": "of the views. And let's just say we have our normal view here, I'm going to adjust my depth,"
+    },
+    {
+      "start": 26.84,
+      "end": 29.98,
+      "text": "and let's say for whatever reason you're having a hard time getting this pair scrolled."
+    },
+    {
+      "start": 30.03,
+      "end": 34.69,
+      "text": "long image. One thing you can do is have the patient turn on to their left side"
+    },
+    {
+      "start": 34.69,
+      "end": 38.15,
+      "text": "which brings the heart a little bit more anterior to the chest and maybe easier to"
+    },
+    {
+      "start": 38.15,
+      "end": 39.89,
+      "text": "visualize. So go ahead and turn on to your left"
+    },
+    {
+      "start": 40.0,
+      "end": 49.04,
+      "text": "side, raising your arm up. By doing this, you're able to see a little bit better you."
+    },
+    {
+      "start": 51.22,
+      "end": 54.4,
+      "text": "of our left-a-chain, or left ventricle, and an outflow track."
+    },
+    {
+      "start": 54.88,
+      "end": 57.24,
+      "text": "Keep in mind, you may not be able to see the entire LV-Apex"
+    },
+    {
+      "start": 57.24,
+      "end": 59.5,
+      "text": "in this particular view, especially if you have them termed,"
+    },
+    {
+      "start": 59.5,
+      "end": 59.96,
+      "text": "but this is..."
+    },
+    {
+      "start": 60.0,
+      "end": 60.74,
+      "text": "one particular trick."
+    },
+    {
+      "start": 61.41,
+      "end": 62.39,
+      "text": "I'll go ahead and have you turn back."
+    },
+    {
+      "start": 65.03,
+      "end": 66.76,
+      "text": "Another common thing that can happen"
+    },
+    {
+      "start": 66.76,
+      "end": 68.96000000000001,
+      "text": "is if you have a patient who has a lot of air"
+    },
+    {
+      "start": 68.96000000000001,
+      "end": 69.96000000000001,
+      "text": "or you're just seeing a..."
+    },
+    {
+      "start": 70.0,
+      "end": 74.34,
+      "text": "lot of a lines in the lung, you can have the patient exhale fully, which deflates the"
+    },
+    {
+      "start": 74.34,
+      "end": 76.38,
+      "text": "lungs and may bring the heart into an easier view."
+    },
+    {
+      "start": 76.74,
+      "end": 79.76,
+      "text": "If you do this, just be sure to hold your breath alongside the patients."
+    },
+    {
+      "start": 80.32,
+      "end": 87.93,
+      "text": "go ahead and exhale and inhale again."
+    },
+    {
+      "start": 88.59,
+      "end": 89.97,
+      "text": "By doing that, the last-"
+    },
+    {
+      "start": 90.0,
+      "end": 95.84,
+      "text": "you to visualize the heart a little bit easier. Another common error that I see"
+    },
+    {
+      "start": 95.84,
+      "end": 99.62,
+      "text": "or something that you may encounter is you may have difficulty visualizing the"
+    },
+    {
+      "start": 99.62,
+      "end": 99.98,
+      "text": "I'm going to put it on the other side."
+    },
+    {
+      "start": 100.0,
+      "end": 101.46,
+      "text": "I'll go ahead and just breathe normally."
+    },
+    {
+      "start": 104.39,
+      "end": 106.01,
+      "text": "If you're having difficulty visualizing"
+    },
+    {
+      "start": 106.01,
+      "end": 108.41,
+      "text": "the aortic valve, that might be an issue of pro placement."
+    },
+    {
+      "start": 108.75,
+      "end": 109.97,
+      "text": "Two things you can do is she..."
+    },
+    {
+      "start": 110.0,
+      "end": 111.72,
+      "text": "you can point the probe more towards the patient's head"
+    },
+    {
+      "start": 111.72,
+      "end": 113.24,
+      "text": "or in other words, anteriorly."
+    },
+    {
+      "start": 114.48,
+      "end": 116.26,
+      "text": "Another thing you can do is play around with rotation."
+    },
+    {
+      "start": 116.52,
+      "end": 118.6,
+      "text": "So if here we don't really see the aortic valve that well,"
+    },
+    {
+      "start": 119.03999999999999,
+      "end": 119.84,
+      "text": "you can actually rotate."
+    },
+    {
+      "start": 120.0,
+      "end": 123.46,
+      "text": "the Pro clock wise, which brings it into a slightly better view."
+    },
+    {
+      "start": 125.1,
+      "end": 129.79,
+      "text": "So that's for a Parastonal Long, thinking about the images for a Parastonal Short."
+    },
+    {
+      "start": 130.1,
+      "end": 130.86,
+      "text": "troubleshooting it."
+    },
+    {
+      "start": 131.34,
+      "end": 134.96,
+      "text": "Again, we are now having the dot point towards the patient's left shoulder."
+    },
+    {
+      "start": 135.78,
+      "end": 138.5,
+      "text": "With the parrersonal short, a couple of things can happen."
+    },
+    {
+      "start": 138.7,
+      "end": 139.96,
+      "text": "First of all, just be sure that you..."
+    },
+    {
+      "start": 140.0,
+      "end": 141.02,
+      "text": "you're not over the sternum."
+    },
+    {
+      "start": 141.26,
+      "end": 142.72,
+      "text": "As you're rotating it, there's a tendency"
+    },
+    {
+      "start": 142.72,
+      "end": 144.22,
+      "text": "to actually move the probe."
+    },
+    {
+      "start": 144.98,
+      "end": 147.34,
+      "text": "So as we see here, there's seeing a lot of black."
+    },
+    {
+      "start": 147.5,
+      "end": 148.8,
+      "text": "That just means we're over the sternum."
+    },
+    {
+      "start": 148.96,
+      "end": 149.98,
+      "text": "I can feel the sternum up."
+    },
+    {
+      "start": 150.03,
+      "end": 153.35,
+      "text": "same time and so what I'm doing is just sliding my probe slightly over"
+    },
+    {
+      "start": 153.35,
+      "end": 159.97,
+      "text": "laterally and I'm able to see. Personal short, another key aspect of it is"
+    },
+    {
+      "start": 160.0,
+      "end": 163.14,
+      "text": "it really depends on your probe's angle on what you're going to see."
+    },
+    {
+      "start": 163.74,
+      "end": 166.56,
+      "text": "Sometimes you get these hybrid views, where you see a little bit of the"
+    },
+    {
+      "start": 167.04,
+      "end": 169.12,
+      "text": "a little bit of the left ventricular cavity."
+    },
+    {
+      "start": 169.76,
+      "end": 169.98,
+      "text": "We would just..."
+    },
+    {
+      "start": 170.0,
+      "end": 174.28,
+      "text": "just remember that this ultrasound probe is almost like a flashlight and try to"
+    },
+    {
+      "start": 174.28,
+      "end": 177.54,
+      "text": "imagine what you're pointing it at. If I want to see more of the left ventricular"
+    },
+    {
+      "start": 177.54,
+      "end": 179.92,
+      "text": "apex I just need to orient my"
+    },
+    {
+      "start": 180.1,
+      "end": 186.15,
+      "text": "more posteriorly, or more towards the heart's apex by instead of going more vertically, more towards the heart's apex."
+    },
+    {
+      "start": 186.8,
+      "end": 188.2,
+      "text": "Allow me to visualize a little bit better."
+    },
+    {
+      "start": 190.0,
+      "end": 194.72,
+      "text": "the apical 4 chamber. This can be a little challenging of a view and so a couple of"
+    },
+    {
+      "start": 194.72,
+      "end": 198.62,
+      "text": "troubleshooting tips. In addition to having the patient turn on her left side"
+    },
+    {
+      "start": 198.62,
+      "end": 199.96,
+      "text": "which to be honest with you is"
+    },
+    {
+      "start": 200.0,
+      "end": 204.1,
+      "text": "something you're going to have to commonly do is you're going to have to think a little"
+    },
+    {
+      "start": 204.1,
+      "end": 208.36,
+      "text": "bit about your depth so you always want to adjust your depth to an appropriate level and"
+    },
+    {
+      "start": 209.76,
+      "end": 209.88,
+      "text": "another"
+    },
+    {
+      "start": 210.0,
+      "end": 214.44,
+      "text": "Another thing is that patients often, when we're scanning, we often acquire an apical"
+    },
+    {
+      "start": 214.44,
+      "end": 215.4,
+      "text": "5-chain review."
+    },
+    {
+      "start": 215.92,
+      "end": 219.7,
+      "text": "When we're thinking about an apical 5-chain review, that means we are pointing our probe"
+    },
+    {
+      "start": 220.0,
+      "end": 224.1,
+      "text": "towards the patient's head more anteriorly, and that may give you a foreshortened view"
+    },
+    {
+      "start": 224.1,
+      "end": 224.64,
+      "text": "of the heart."
+    },
+    {
+      "start": 225.02,
+      "end": 229.58,
+      "text": "So just be sure if you are scanning a patient in an equal sense, try to make it so your"
+    },
+    {
+      "start": 229.58,
+      "end": 229.98,
+      "text": "probes"
+    },
+    {
+      "start": 230.0,
+      "end": 232.8,
+      "text": "as perpendicular as possible to the patient's chest wall."
+    },
+    {
+      "start": 234.04,
+      "end": 238.32,
+      "text": "Another error that I sometimes see with the apical forechamber is you get what's called"
+    },
+    {
+      "start": 238.32,
+      "end": 239.56,
+      "text": "a 4-shortened view."
+    },
+    {
+      "start": 240.26,
+      "end": 241.54,
+      "text": "but a four-short-in-view means"
+    },
+    {
+      "start": 241.54,
+      "end": 243.5,
+      "text": "as you can see the left ventricular cavity,"
+    },
+    {
+      "start": 243.74,
+      "end": 246.26,
+      "text": "but you really can't see the atria that well."
+    },
+    {
+      "start": 246.77,
+      "end": 249.97,
+      "text": "This is very common in individuals where you're..."
+    },
+    {
+      "start": 250.19,
+      "end": 254.83,
+      "text": "struggling to find the view. To fix this, all you have to do is just take this probe and"
+    },
+    {
+      "start": 254.83,
+      "end": 259.82,
+      "text": "slide it down one or two rib spaces to bring that atrium of you. You generally want"
+    },
+    {
+      "start": 260.03,
+      "end": 263.15,
+      "text": "more oval appearance to the heart in the April 14th review."
+    },
+    {
+      "start": 264.64,
+      "end": 266.4,
+      "text": "Finally, when we're thinking about troubleshooting"
+    },
+    {
+      "start": 266.4,
+      "end": 269.98,
+      "text": "the sub-costal view, the sub-costal..."
+    },
+    {
+      "start": 270.62,
+      "end": 274.89,
+      "text": "area might be overmarked with a lot of bowel gas, and in some patients who have"
+    },
+    {
+      "start": 274.89,
+      "end": 279.16,
+      "text": "recently eaten, that may make it a very challenging view. To fix for this, you"
+    },
+    {
+      "start": 279.16,
+      "end": 279.98,
+      "text": "can have the patient take..."
+    },
+    {
+      "start": 280.0,
+      "end": 286.0,
+      "text": "Take a deep breath in, brings the heart a little bit closer to the abdominal cavity"
+    },
+    {
+      "start": 286.0,
+      "end": 287.46,
+      "text": "and easier to visualize."
+    },
+    {
+      "start": 288.08,
+      "end": 288.66,
+      "text": "Go ahead and exhale."
+    },
+    {
+      "start": 290.03,
+      "end": 294.93,
+      "text": "Another common error that I see are individuals who point the probe almost perpendicular to"
+    },
+    {
+      "start": 295.38,
+      "end": 295.92,
+      "text": "the chest."
+    },
+    {
+      "start": 296.59,
+      "end": 299.97,
+      "text": "When you do this, you can imagine the heart is up here on the left side."
+    },
+    {
+      "start": 300.26,
+      "end": 301.68,
+      "text": "You're not able to visualize it that well"
+    },
+    {
+      "start": 301.68,
+      "end": 303.4,
+      "text": "if it's pointed down like this."
+    },
+    {
+      "start": 303.88,
+      "end": 305.74,
+      "text": "So all you have to do is take this overhand grip"
+    },
+    {
+      "start": 305.74,
+      "end": 308.7,
+      "text": "and like a remote control and drop your probe"
+    },
+    {
+      "start": 308.7,
+      "end": 309.72,
+      "text": "so it's almost parallel."
+    },
+    {
+      "start": 310.29,
+      "end": 312.99,
+      "text": "the patient's body, and that can bring the subcostal into a better view."
+    }
+  ]
+}

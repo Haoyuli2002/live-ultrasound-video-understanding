@@ -1,0 +1,57 @@
+{
+  "video_ids": [
+    "P3FoSFIrfQA",
+    "CzLE1i4NSoU"
+  ],
+  "videos": [
+    {
+      "video_id": "P3FoSFIrfQA",
+      "split": "train",
+      "source_sha256": "e94cb536f48009e876bb1303d20e688e5ccff3f0911c82ae3d6dac44968f76c9",
+      "duration": 122.646,
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "video_id": "CzLE1i4NSoU",
+      "split": "train",
+      "source_sha256": "ff8cb612e3cfa53ae084a4b7d5b040b2d01d05b22d273eab9d437c77d4ac8e9b",
+      "duration": 201.121,
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "tasks": 12,
+  "response_groups": {
+    "immediate": 6,
+    "delayed": 6
+  },
+  "training_decisions": 57,
+  "decision_counts": {
+    "<ANSWER>": 12,
+    "<WAIT>": 45
+  },
+  "language": "en",
+  "evaluation": "same videos and questions, overfit only, not held-out",
+  "evaluation_horizon_policy": "5 seconds after gold answer for late/missed trigger diagnostics; these extra times are not training rows or new visually reviewed QA",
+  "training_sampling": "inverse-class-frequency resampling of decision rows; unique QA ratio remains 1:1",
+  "annotation_resolution": "original native dimensions",
+  "model_frame_size": 224,
+  "inputs": [
+    "causal long+short memory",
+    "question",
+    "query_time",
+    "current_time"
+  ],
+  "excluded_inputs": [
+    "gold answer_time",
+    "reference_answer",
+    "required_answer_facts",
+    "evidence metadata",
+    "task_id"
+  ],
+  "source_files_sha256": {
+    "tasks.jsonl": "d4ac1669242258e87cee4b6336cc278fa6991990b5956c27a449e7a395be0640",
+    "train.jsonl": "59a17a40a51e4092c6a1d75d9f06d27a999b7d05cbde075933dd0fabf7c8b379"
+  }
+}

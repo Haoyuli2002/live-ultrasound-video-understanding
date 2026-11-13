@@ -1,0 +1,343 @@
+{
+  "video_id": "JcCZBKSdIRk",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/JcCZBKSdIRk/asr.txt",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 5.5,
+      "text": "So now we're going to go over how to perform the fast scan and this is a scan that's used in"
+    },
+    {
+      "start": 5.5,
+      "end": 11.59,
+      "text": "trauma. It's called a focus assessment using sonography for trauma or in trauma. You're basically"
+    },
+    {
+      "start": 11.59,
+      "end": 17.63,
+      "text": "looking for free fluid in the abdomen, around the heart, in the chest, as well as looking for"
+    },
+    {
+      "start": 17.63,
+      "end": 24.13,
+      "text": "nimble thorax of the chest. So we're just going to go over the protocol that I used."
+    },
+    {
+      "start": 24.13,
+      "end": 30.71,
+      "text": "So, here we are going to use the phasorate probe, the patient is going to be in a supine"
+    },
+    {
+      "start": 30.71,
+      "end": 33.27,
+      "text": "position because it's in a trauma setting so they're usually lying flat."
+    },
+    {
+      "start": 34.96,
+      "end": 39.1,
+      "text": "You're going to put the probe, you're going to set the right upper quadrant, the left"
+    },
+    {
+      "start": 39.1,
+      "end": 44.68,
+      "text": "upper quadrant, the pelvis, and then you're going to set the heart and then the lungs"
+    },
+    {
+      "start": 44.68,
+      "end": 46.34,
+      "text": "and we'll go over through it in that order."
+    },
+    {
+      "start": 46.78,
+      "end": 48.34,
+      "text": "So, the first scan is the right upper quadrant scan."
+    },
+    {
+      "start": 49.96,
+      "end": 55.17,
+      "text": "So here is the right upper quadrant scan, indicators up towards the head, it's around"
+    },
+    {
+      "start": 55.17,
+      "end": 61.19,
+      "text": "the 8th to 10th intercostal space in the mid axillary line and you're looking for Morrison's"
+    },
+    {
+      "start": 61.19,
+      "end": 64.17,
+      "text": "pouch, the space between the liver and the kidney for free fluid."
+    },
+    {
+      "start": 64.67,
+      "end": 69.57,
+      "text": "Make sure in addition you look towards the edge of the liver because sometimes fluid can"
+    },
+    {
+      "start": 69.57,
+      "end": 70.55,
+      "text": "track there also."
+    },
+    {
+      "start": 72.77,
+      "end": 75.69,
+      "text": "The next scan you're going to do is the left upper quadrant scan."
+    },
+    {
+      "start": 76.25,
+      "end": 81.74,
+      "text": "So this is knuckle to the bed looking for fluid around the spleen and here we see the"
+    },
+    {
+      "start": 81.74,
+      "end": 87.95,
+      "text": "spleen and the fluid doesn't track between the spleen and the kidney usually unless there's"
+    },
+    {
+      "start": 87.95,
+      "end": 92.71,
+      "text": "rupture of the spinal renal ligament. In addition to looking at fluid around the"
+    },
+    {
+      "start": 92.71,
+      "end": 97.68,
+      "text": "spleen, you want to look above the diaphragm looking for any fluid in the chest."
+    },
+    {
+      "start": 98.28,
+      "end": 101.52,
+      "text": "And here you see a good mirror artifacts line. There's no fluid there that's"
+    },
+    {
+      "start": 101.52,
+      "end": 104.92,
+      "text": "completely normal. And remember to also do this on the right-up"
+    },
+    {
+      "start": 104.92,
+      "end": 109.86,
+      "text": "or quadrant, looking for fluid in the right chest. The next portion is going to be"
+    },
+    {
+      "start": 109.86,
+      "end": 119.44,
+      "text": "the pelvic scan. Here, you're looking for free fluid above the bladder. So"
+    },
+    {
+      "start": 119.44,
+      "end": 123.12,
+      "text": "You see the bladder here, there's no free fluid above the bladder."
+    },
+    {
+      "start": 124.16,
+      "end": 130.18,
+      "text": "Another organ to identify is a prostate in this view, and free fluid once again is above"
+    },
+    {
+      "start": 130.18,
+      "end": 132.16,
+      "text": "the prostate and above the bladder."
+    },
+    {
+      "start": 133.28,
+      "end": 138.58,
+      "text": "The next view is going to be the cardiac view looking for pericardial effusion, and there's"
+    },
+    {
+      "start": 138.58,
+      "end": 139.46,
+      "text": "two views you can use."
+    },
+    {
+      "start": 139.46,
+      "end": 146.89,
+      "text": "You can use either the subzyphoid view, and since this is on the standard mode, the indicator"
+    },
+    {
+      "start": 146.89,
+      "end": 151.34,
+      "text": "is going to be towards the patient's right side, and you're going to identify the liver"
+    },
+    {
+      "start": 151.34,
+      "end": 154.1,
+      "text": "and sweep in and look for that heart."
+    },
+    {
+      "start": 154.84,
+      "end": 157.22,
+      "text": "And here we see the heart, the four chambers of the heart."
+    },
+    {
+      "start": 157.72,
+      "end": 159.12,
+      "text": "And when the patient takes a big breath in,"
+    },
+    {
+      "start": 159.82,
+      "end": 160.4,
+      "text": "it brings it closer."
+    },
+    {
+      "start": 160.52,
+      "end": 162.02,
+      "text": "You get a better view that subzyfe review,"
+    },
+    {
+      "start": 162.2,
+      "end": 165.38,
+      "text": "looking for pericardial fusion around the right ventricle"
+    },
+    {
+      "start": 165.38,
+      "end": 170.84,
+      "text": "or left ventricle and looking for any collapse of these ventricles,"
+    },
+    {
+      "start": 172.03,
+      "end": 172.87,
+      "text": "signifying tamponon,"
+    },
+    {
+      "start": 173.35,
+      "end": 175.27,
+      "text": "specifically ribon trickler diastolic collapse,"
+    },
+    {
+      "start": 175.55,
+      "end": 177.41,
+      "text": "or right atrial systolic collapse."
+    },
+    {
+      "start": 178.16,
+      "end": 179.04,
+      "text": "Another view you can use,"
+    },
+    {
+      "start": 179.18,
+      "end": 180.8,
+      "text": "if you can't get a good subzyfe review,"
+    },
+    {
+      "start": 180.8,
+      "end": 182.54,
+      "text": "is a paracardial long axis view."
+    },
+    {
+      "start": 182.9,
+      "end": 186.48,
+      "text": "And once again since we're in standard mode,"
+    },
+    {
+      "start": 186.88,
+      "end": 189.24,
+      "text": "the indicator is gonna be towards the patient's left hip."
+    },
+    {
+      "start": 190.07,
+      "end": 192.39,
+      "text": "So here you're gonna get a paracardial long axis view."
+    },
+    {
+      "start": 193.11,
+      "end": 193.85,
+      "text": "And the main thing you're looking for"
+    },
+    {
+      "start": 193.85,
+      "end": 194.73,
+      "text": "is paracardial fusion."
+    },
+    {
+      "start": 194.95,
+      "end": 196.91,
+      "text": "You're not assessing, you don't have to assess,"
+    },
+    {
+      "start": 197.51,
+      "end": 199.45,
+      "text": "necessary assess all the heart function,"
+    },
+    {
+      "start": 199.57,
+      "end": 200.85,
+      "text": "but look for a paracardial fusion"
+    },
+    {
+      "start": 200.85,
+      "end": 202.73,
+      "text": "and looking for a tampon nod here."
+    },
+    {
+      "start": 203.71,
+      "end": 205.01,
+      "text": "And this looks normal here."
+    },
+    {
+      "start": 205.09,
+      "end": 206.09,
+      "text": "You can see the paracardia,"
+    },
+    {
+      "start": 206.31,
+      "end": 209.73,
+      "text": "both anteriorly and posteriorly in this view."
+    },
+    {
+      "start": 209.73,
+      "end": 214.68,
+      "text": "And the last portion that you do is looking for pneumothorax, and that's looking for lung"
+    },
+    {
+      "start": 214.68,
+      "end": 215.08,
+      "text": "sliding."
+    },
+    {
+      "start": 215.54,
+      "end": 219.42,
+      "text": "So once again the indicator is going to be towards the patient's head, second intercostal"
+    },
+    {
+      "start": 219.42,
+      "end": 225.52,
+      "text": "space, or second intercostal space mid-clavicular line, where you would do a need of thoracostomy"
+    },
+    {
+      "start": 225.52,
+      "end": 231.1,
+      "text": "basically, and you would decrease your depth, so you see I'm decreasing my depth all the"
+    },
+    {
+      "start": 231.1,
+      "end": 236.76,
+      "text": "way down here, and here you're looking for lung sliding."
+    },
+    {
+      "start": 237.74,
+      "end": 242.48,
+      "text": "So when the patient breathes in, so if you can take a big breath in, you see there's lung"
+    },
+    {
+      "start": 242.48,
+      "end": 246.96,
+      "text": "The lung sliding on the screen there, and that indicates there is no nemothorax."
+    },
+    {
+      "start": 247.44,
+      "end": 251.72,
+      "text": "If there is no lung sliding, that is highly suggestive of nemothorax in the setting of trauma."
+    },
+    {
+      "start": 252.18,
+      "end": 256.12,
+      "text": "You want to make sure you do both the right side and the left side looking for lung sliding."
+    },
+    {
+      "start": 256.76,
+      "end": 260.24,
+      "text": "And this patient has lung sliding on both the left and right side."
+    }
+  ]
+}

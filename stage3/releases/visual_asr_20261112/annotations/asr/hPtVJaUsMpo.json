@@ -1,0 +1,558 @@
+{
+  "video_id": "hPtVJaUsMpo",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/hPtVJaUsMpo/asr.txt",
+  "segments": [
+    {
+      "start": 4.48,
+      "end": 5.16,
+      "text": "Hi, I'm Zoe."
+    },
+    {
+      "start": 5.4,
+      "end": 5.84,
+      "text": "And I'm Matt."
+    },
+    {
+      "start": 6.65,
+      "end": 9.33,
+      "text": "Central Venus line placements is sterile procedure purple."
+    },
+    {
+      "start": 10.06,
+      "end": 16.13,
+      "text": "to access the central need of circulation. It's done for a variety of reasons such as long-term"
+    },
+    {
+      "start": 16.13,
+      "end": 19.83,
+      "text": "medication administration or large volume blood or fluid resuscitation."
+    },
+    {
+      "start": 20.8,
+      "end": 25.1,
+      "text": "In this video, we will discuss the types of central lines and the pertinent anatomy, and"
+    },
+    {
+      "start": 25.1,
+      "end": 28.22,
+      "text": "then we will demonstrate the procedure using an ultrasound guide in the model."
+    },
+    {
+      "start": 30.1,
+      "end": 34.12,
+      "text": "Check out the handout that we provided you that has a list of all the"
+    },
+    {
+      "start": 34.12,
+      "end": 39.62,
+      "text": "contraindications and indications for central ion placement and whatever you do."
+    },
+    {
+      "start": 40.03,
+      "end": 42.14,
+      "text": "Don't try this at home, only in the hospital."
+    },
+    {
+      "start": 42.84,
+      "end": 44.78,
+      "text": "No chickens are harmed in making of this video."
+    },
+    {
+      "start": 45.3,
+      "end": 47.74,
+      "text": "Central Venus line placement is typically performed"
+    },
+    {
+      "start": 47.74,
+      "end": 49.18,
+      "text": "at four sites in the body."
+    },
+    {
+      "start": 50.19,
+      "end": 55.36,
+      "text": "The right or left internal jugular veins, the right or left subclavian veins, the femoral"
+    },
+    {
+      "start": 55.36,
+      "end": 58.62,
+      "text": "veins in the groin, or a peripherally inserted pickline."
+    },
+    {
+      "start": 60.13,
+      "end": 63.03,
+      "text": "discussing the internal jugular in the subclavian vein placement."
+    },
+    {
+      "start": 64.65,
+      "end": 69.75,
+      "text": "The internal jugular vein follows a line from the inferior aspect of the external acoustic"
+    },
+    {
+      "start": 70.29,
+      "end": 72.39,
+      "text": "to the medial border of the clavicle."
+    },
+    {
+      "start": 72.96,
+      "end": 75.44,
+      "text": "It runs deep to the sternoclado mastoid muscles"
+    },
+    {
+      "start": 75.44,
+      "end": 78.56,
+      "text": "between the two heads and joins the sub clavian vein"
+    },
+    {
+      "start": 78.56,
+      "end": 79.96,
+      "text": "to form the prickiness."
+    },
+    {
+      "start": 80.0,
+      "end": 84.55,
+      "text": "septalic vein at the medial border of the spravical closest to the sternum."
+    },
+    {
+      "start": 85.44,
+      "end": 89.64,
+      "text": "Ultrasound can be a valuable adjunct it for injury on jugular vein cannulation."
+    },
+    {
+      "start": 90.13,
+      "end": 92.27,
+      "text": "because the incidence of anatomical variants"
+    },
+    {
+      "start": 92.27,
+      "end": 94.31,
+      "text": "can be as high as 8.5%."
+    },
+    {
+      "start": 96.36,
+      "end": 99.98,
+      "text": "Okay, so here you can see Zoey's."
+    },
+    {
+      "start": 100.03,
+      "end": 106.72,
+      "text": "excellent neck anatomy really pristine pristine pictures we got here so"
+    },
+    {
+      "start": 107.13,
+      "end": 109.77,
+      "text": "what we're looking at is we want to be able to see the"
+    },
+    {
+      "start": 110.0,
+      "end": 114.35,
+      "text": "internal jugular vein and also the crotted artery which are kind of right on top"
+    },
+    {
+      "start": 114.35,
+      "end": 117.84,
+      "text": "each other here and the way that we know which one's vein and which one's"
+    },
+    {
+      "start": 117.84,
+      "end": 119.98,
+      "text": "artery which is really important is that"
+    },
+    {
+      "start": 120.06,
+      "end": 123.49,
+      "text": "the internal jugular vein is compressible."
+    },
+    {
+      "start": 123.63,
+      "end": 125.51,
+      "text": "So you can see when I press down a little bit here,"
+    },
+    {
+      "start": 126.6,
+      "end": 127.58,
+      "text": "you see one gets smaller,"
+    },
+    {
+      "start": 127.58,
+      "end": 129.66,
+      "text": "and the other one is still very circular."
+    },
+    {
+      "start": 130.06,
+      "end": 132.84,
+      "text": "I released it and the vein gets bigger."
+    },
+    {
+      "start": 133.3,
+      "end": 137.2,
+      "text": "The self-clavian vein is a continuation of the axillary vein draining the arm."
+    },
+    {
+      "start": 137.66,
+      "end": 139.94,
+      "text": "It begins at the lateral border of the first rib."
+    },
+    {
+      "start": 140.64,
+      "end": 148.24,
+      "text": "over the rib and the apical flora to run deep to the clavicle. It runs superficial and parallel"
+    },
+    {
+      "start": 148.24,
+      "end": 149.72,
+      "text": "with a sub-cleviant artery."
+    },
+    {
+      "start": 150.38,
+      "end": 152.56,
+      "text": "and the vein ends at the thoracic inlet"
+    },
+    {
+      "start": 152.56,
+      "end": 154.68,
+      "text": "where it joins the internal jugular vein"
+    },
+    {
+      "start": 154.68,
+      "end": 156.36,
+      "text": "to form the brachiosphalic vein."
+    },
+    {
+      "start": 157.04,
+      "end": 159.96,
+      "text": "Centrovenous catheterization via the internal jugular."
+    },
+    {
+      "start": 160.06,
+      "end": 165.62,
+      "text": "The lower incidence of pneumothorax compared to catheterization via the subclavian band."
+    },
+    {
+      "start": 166.32,
+      "end": 169.98,
+      "text": "The internal jugular can also be easily compressed after catheter."
+    },
+    {
+      "start": 170.03,
+      "end": 173.51,
+      "text": "removal or in the case of accidental arterial puncture."
+    },
+    {
+      "start": 174.2,
+      "end": 179.58,
+      "text": "However, subclavian vein pathorization is more comfortable for awake patients, has more"
+    },
+    {
+      "start": 179.58,
+      "end": 179.9,
+      "text": "are consistent."
+    },
+    {
+      "start": 180.0,
+      "end": 185.1,
+      "text": "in anatomical landmarks, and is less prone to contamination from respiratory secretions,"
+    },
+    {
+      "start": 185.42,
+      "end": 187.3,
+      "text": "especially in patients with tracheostomase."
+    },
+    {
+      "start": 188.08,
+      "end": 189.96,
+      "text": "A subclavian vein is also less prone to..."
+    },
+    {
+      "start": 190.0,
+      "end": 193.38,
+      "text": "developing clots within the line. It's compared to the internal jugular vein."
+    },
+    {
+      "start": 195.4,
+      "end": 199.8,
+      "text": "So everything that you need to set up the central line simulation using the chicken breast."
+    },
+    {
+      "start": 200.16,
+      "end": 205.14,
+      "text": "in the handout, but here's a quick video showing how we put the setup together."
+    },
+    {
+      "start": 226.43,
+      "end": 229.97,
+      "text": "So before we start talking about the technique and how to use the old sound..."
+    },
+    {
+      "start": 230.0,
+      "end": 234.16,
+      "text": "First, we want to show you some pictures of the various things that you're going to see"
+    },
+    {
+      "start": 234.16,
+      "end": 238.71,
+      "text": "on the old sound machine when you're in either the short axis or the long axis."
+    },
+    {
+      "start": 239.43,
+      "end": 239.97,
+      "text": "So feel free to..."
+    },
+    {
+      "start": 240.06,
+      "end": 244.98,
+      "text": "pause the video throughout these various pictures to make sure that you're getting a complete"
+    },
+    {
+      "start": 244.98,
+      "end": 247.58,
+      "text": "understanding of what you're going to see on the old sound machine."
+    },
+    {
+      "start": 287.42,
+      "end": 289.96,
+      "text": "And now that we know it's the left side of the probe is on-"
+    },
+    {
+      "start": 290.0,
+      "end": 295.68,
+      "text": "the left side of the patient from our perspective. We're now going to take the needle and the probe"
+    },
+    {
+      "start": 295.68,
+      "end": 299.97,
+      "text": "in the short axis view so that we can view the vein and we're going to look for the needle."
+    },
+    {
+      "start": 300.0,
+      "end": 309.98,
+      "text": "And make sure that the needle is lined up directly in the center of the vein so that we're not puncturing it on the side"
+    },
+    {
+      "start": 310.0,
+      "end": 319.97,
+      "text": "And we're gonna provide a little pressure and we're gonna follow it down until you see the"
+    },
+    {
+      "start": 320.0,
+      "end": 324.87,
+      "text": "red flash, which is the red flash is the blood that is now coming through the needle."
+    },
+    {
+      "start": 325.6,
+      "end": 329.89,
+      "text": "However, in this low pressure system that we have is the chicken breath."
+    },
+    {
+      "start": 330.0,
+      "end": 339.45,
+      "text": "you may not see it but once you know that you're in you're going to switch to the long axis view with"
+    },
+    {
+      "start": 340.06,
+      "end": 344.4,
+      "text": "goal now of making sure that you don't take the needle through the opposite side of the"
+    },
+    {
+      "start": 344.4,
+      "end": 344.64,
+      "text": "vein."
+    },
+    {
+      "start": 347.17,
+      "end": 349.97,
+      "text": "A couple things that we didn't show in this video that you're going to want to..."
+    },
+    {
+      "start": 350.03,
+      "end": 354.35,
+      "text": "remember when you're actually placing the central line, one of this cleanliness so"
+    },
+    {
+      "start": 354.35,
+      "end": 357.49,
+      "text": "you're going to want to be sterile in this procedure so that means sterile"
+    },
+    {
+      "start": 357.49,
+      "end": 359.8,
+      "text": "gloves, you're going to want to have a gown"
+    },
+    {
+      "start": 360.1,
+      "end": 364.07,
+      "text": "internet and you want to be really sterile because you don't want to put any"
+    },
+    {
+      "start": 364.07,
+      "end": 369.12,
+      "text": "bacteria in the patient's circulatory system. The other thing is pain, this doesn't"
+    },
+    {
+      "start": 369.12,
+      "end": 369.98,
+      "text": "feel good for pain."
+    },
+    {
+      "start": 370.0,
+      "end": 374.0,
+      "text": "patients that are awake. So if you're placing a central line on the floor with a patient's"
+    },
+    {
+      "start": 374.0,
+      "end": 378.82,
+      "text": "awake and watching you, you're going to want to place some anesthesia at the site that"
+    },
+    {
+      "start": 378.82,
+      "end": 379.9,
+      "text": "you're placing a central line."
+    },
+    {
+      "start": 380.42,
+      "end": 383.74,
+      "text": "And that away, they're pain-free and that's gonna keep them happy."
+    },
+    {
+      "start": 384.46,
+      "end": 387.66,
+      "text": "We weren't too worried about the chicken that we were using in this video,"
+    },
+    {
+      "start": 387.84,
+      "end": 389.42,
+      "text": "so we didn't use any hand seizure."
+    },
+    {
+      "start": 389.62,
+      "end": 389.88,
+      "text": "Okay."
+    },
+    {
+      "start": 390.06,
+      "end": 392.02,
+      "text": "Thanks for watching, that's all we have today."
+    },
+    {
+      "start": 392.8,
+      "end": 397.8,
+      "text": "Be sure to refer to the handout for some extra information and feel free to email us if"
+    },
+    {
+      "start": 397.8,
+      "end": 399.52,
+      "text": "you have any questions or concerns."
+    },
+    {
+      "start": 400.45,
+      "end": 401.89,
+      "text": "and check out the blooper reel"
+    },
+    {
+      "start": 401.89,
+      "end": 403.77,
+      "text": "because we had a blast filming this"
+    },
+    {
+      "start": 403.77,
+      "end": 406.47,
+      "text": "and we hope you had a blast practicing."
+    },
+    {
+      "start": 407.35,
+      "end": 407.93,
+      "text": "Thanks for watching."
+    },
+    {
+      "start": 407.93,
+      "end": 408.03,
+      "text": "I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry"
+    },
+    {
+      "start": 422.98,
+      "end": 426.63,
+      "text": "not discuss the second two, not the second two, the last two."
+    },
+    {
+      "start": 426.85,
+      "end": 429.61,
+      "text": "We're in the apical plurah to..."
+    },
+    {
+      "start": 431.02,
+      "end": 433.94,
+      "text": "run along the underside of the clavicle. We'll prepare it well. We're joined the"
+    },
+    {
+      "start": 434.48,
+      "end": 439.64,
+      "text": "Brachiosophalic vein to form. This is a sterile procedure."
+    },
+    {
+      "start": 440.03,
+      "end": 441.85,
+      "text": "form for a variety of 10."
+    },
+    {
+      "start": 443.61,
+      "end": 445.35,
+      "text": "I'm a little acoustic mead-ass."
+    },
+    {
+      "start": 445.78,
+      "end": 447.91,
+      "text": "For the medial aspect of the clavicle."
+    },
+    {
+      "start": 448.58,
+      "end": 449.14,
+      "text": "Passionate."
+    },
+    {
+      "start": 451.02,
+      "end": 455.91,
+      "text": "external acoustic medias, doing the medial aspect of the clavicle, it runs deep to the"
+    },
+    {
+      "start": 455.91,
+      "end": 456.47,
+      "text": "stereotype."
+    },
+    {
+      "start": 456.85,
+      "end": 457.63,
+      "text": "Let me just do it one more time."
+    },
+    {
+      "start": 457.85,
+      "end": 458.09,
+      "text": "I'm sorry."
+    },
+    {
+      "start": 460.1,
+      "end": 461.4,
+      "text": "I think that I can wing it, but I'm not there."
+    },
+    {
+      "start": 461.64,
+      "end": 462.04,
+      "text": "I'm not there."
+    },
+    {
+      "start": 463.37,
+      "end": 463.69,
+      "text": "Okay."
+    },
+    {
+      "start": 465.1,
+      "end": 468.96,
+      "text": "Oh, everything about the setup for the central..."
+    },
+    {
+      "start": 471.15,
+      "end": 475.65,
+      "text": "with the chicken is in the handout, this is terrible."
+    }
+  ]
+}

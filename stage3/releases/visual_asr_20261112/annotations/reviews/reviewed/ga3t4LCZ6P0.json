@@ -1,0 +1,150 @@
+{
+  "understanding": "Liver ultrasound tutorial with matching probe diagrams, left-lobe and caudate views, portal landmarks, and right-lobe views alongside the kidney.",
+  "native_opened": [
+    75,
+    90,
+    92,
+    93,
+    94,
+    95,
+    100,
+    270
+  ],
+  "tasks": [
+    {
+      "qa_type": "current_observation",
+      "query_time": 75,
+      "answer_time": 75,
+      "checkpoints": [],
+      "question": "In this transverse liver view, is the dark channel marked LPV above or below the labeled caudate lobe?",
+      "reference_answer": "The dark channel is above the caudate lobe in the image.",
+      "visual_support": "The LPV label lies within the dark channel bounded by two bright lines above the caudate lobe.",
+      "query_prefix_check": "Both structures are visible in the current view.",
+      "answer_prefix_check": "The relative depths are apparent from their positions.",
+      "shortcut_risk": "Moderate. Text identifies the structures but the relationship is spatial.",
+      "task_id": "s3_remaining79_ga3t4LCZ6P0_01",
+      "video_id": "ga3t4LCZ6P0",
+      "split": "train",
+      "language": "en",
+      "source_video": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/ga3t4LCZ6P0.mp4",
+      "stage3_value": "medium",
+      "visual_evidence": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/ga3t4LCZ6P0/75.jpg",
+          "checkpoint": 75.0,
+          "source_pts_seconds": 74.941533,
+          "resolution": [
+            1920,
+            1080
+          ]
+        }
+      ],
+      "asr_support_segments": [],
+      "query_decision": "ANSWER",
+      "answer_decision": "ANSWER",
+      "review_status": "accepted_targeted_native_frame_self_review",
+      "student_input_visibility": "not_checked"
+    },
+    {
+      "qa_type": "event_notification",
+      "query_time": 93,
+      "answer_time": 95,
+      "checkpoints": [
+        94
+      ],
+      "question": "Let me know when the left-lobe scan shows the pancreas alongside the liver.",
+      "reference_answer": "The pancreas is visible now, along the deeper right-hand border of the left lobe in the image.",
+      "visual_support": "The transverse image at 93 and 94 lacks the marked pancreatic view. The new longitudinal image at 95 shows the pancreas beyond the sloping deep border of the liver.",
+      "query_prefix_check": "The current transverse image does not provide a confirmed pancreas view.",
+      "answer_prefix_check": "The pancreatic annotation points to visible tissue along the deeper border of the left lobe.",
+      "shortcut_risk": "Moderate. The label identifies the target but the question requires visual arrival.",
+      "task_id": "s3_remaining79_ga3t4LCZ6P0_02",
+      "video_id": "ga3t4LCZ6P0",
+      "split": "train",
+      "language": "en",
+      "source_video": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/ga3t4LCZ6P0.mp4",
+      "stage3_value": "medium",
+      "visual_evidence": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/ga3t4LCZ6P0/93.jpg",
+          "checkpoint": 93.0,
+          "source_pts_seconds": 92.926167,
+          "resolution": [
+            1920,
+            1080
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/ga3t4LCZ6P0/94.jpg",
+          "checkpoint": 94.0,
+          "source_pts_seconds": 93.927167,
+          "resolution": [
+            1920,
+            1080
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/ga3t4LCZ6P0/95.jpg",
+          "checkpoint": 95.0,
+          "source_pts_seconds": 94.928167,
+          "resolution": [
+            1920,
+            1080
+          ]
+        }
+      ],
+      "asr_support_segments": [],
+      "query_decision": "WAIT",
+      "answer_decision": "ANSWER",
+      "review_status": "accepted_targeted_native_frame_self_review",
+      "student_input_visibility": "not_checked"
+    },
+    {
+      "qa_type": "history_recall",
+      "query_time": 270,
+      "answer_time": 270,
+      "checkpoints": [
+        90
+      ],
+      "question": "In the first transverse left-lobe example, was the probe near the abdominal midline or out toward the flank as it is now?",
+      "reference_answer": "It was near the midline, just below the costal margin.",
+      "visual_support": "The earlier probe diagram shows a horizontal probe above the umbilicus near midline. The later diagram shows lateral placement.",
+      "query_prefix_check": "The earlier transverse left-lobe view has already been shown.",
+      "answer_prefix_check": "The earlier diagram supports the position directly.",
+      "shortcut_risk": "High. The earlier text also describes probe position.",
+      "task_id": "s3_remaining79_ga3t4LCZ6P0_03",
+      "video_id": "ga3t4LCZ6P0",
+      "split": "train",
+      "language": "en",
+      "source_video": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/ga3t4LCZ6P0.mp4",
+      "stage3_value": "medium",
+      "visual_evidence": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/ga3t4LCZ6P0/90.jpg",
+          "checkpoint": 90.0,
+          "source_pts_seconds": 89.923167,
+          "resolution": [
+            1920,
+            1080
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/ga3t4LCZ6P0/270.jpg",
+          "checkpoint": 270.0,
+          "source_pts_seconds": 269.936333,
+          "resolution": [
+            1920,
+            1080
+          ]
+        }
+      ],
+      "asr_support_segments": [],
+      "query_decision": "ANSWER",
+      "answer_decision": "ANSWER",
+      "review_status": "accepted_targeted_native_frame_self_review",
+      "student_input_visibility": "not_checked"
+    }
+  ],
+  "video_id": "ga3t4LCZ6P0",
+  "review_scope": "Same-assistant review; sampled timeline, original-size key frames, and existing time-indexed ASR when available. No continuous replay or direct audio claim."
+}

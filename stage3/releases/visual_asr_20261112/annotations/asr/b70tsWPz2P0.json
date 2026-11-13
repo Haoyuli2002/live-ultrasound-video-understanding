@@ -1,0 +1,668 @@
+{
+  "video_id": "b70tsWPz2P0",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/b70tsWPz2P0/asr.txt",
+  "segments": [
+    {
+      "start": 0.1,
+      "end": 4.42,
+      "text": "This video is about the steps involved in the protocol for performing complete and"
+    },
+    {
+      "start": 4.42,
+      "end": 9.59,
+      "text": "comprehensive trans-theoracic echocardiography, which meets the current standards of American"
+    },
+    {
+      "start": 9.59,
+      "end": 9.91,
+      "text": "against the"
+    },
+    {
+      "start": 10.0,
+      "end": 16.91,
+      "text": "of echo. We will also discuss basic probe position and major structures visible in each echo window."
+    },
+    {
+      "start": 17.91,
+      "end": 19.93,
+      "text": "In the end, there will be a summary of the prototype."
+    },
+    {
+      "start": 20.0,
+      "end": 26.5,
+      "text": "call to keep it as a reference in your echo lab. Before you start, ECG leads must be attached"
+    },
+    {
+      "start": 26.5,
+      "end": 29.91,
+      "text": "to every patient. So let's start with recording the"
+    },
+    {
+      "start": 30.03,
+      "end": 34.05,
+      "text": "peristernal long axis, with the patient lying in left lateral position."
+    },
+    {
+      "start": 34.74,
+      "end": 39.76,
+      "text": "This window is obtained by placing the probe in fourth left intercostal space with pointer"
+    },
+    {
+      "start": 39.76,
+      "end": 39.98,
+      "text": "to"
+    },
+    {
+      "start": 40.0,
+      "end": 45.14,
+      "text": "Awards' right shoulder. First step of the protocol is to record 2D image of"
+    },
+    {
+      "start": 45.14,
+      "end": 49.54,
+      "text": "Parasturnal Long Axis with increased depth so we may not miss the paracardial"
+    },
+    {
+      "start": 49.54,
+      "end": 49.86,
+      "text": "of fusion."
+    },
+    {
+      "start": 50.0,
+      "end": 53.24,
+      "text": "In the next step, record the same with the normal depth."
+    },
+    {
+      "start": 54.17,
+      "end": 57.93,
+      "text": "These are the key structures visible in Parasturnal Long Axis view."
+    },
+    {
+      "start": 58.55,
+      "end": 59.97,
+      "text": "You can see part of anterior..."
+    },
+    {
+      "start": 60.0,
+      "end": 64.43,
+      "text": "Osterior wall, aortic valve, and mitral valve here."
+    },
+    {
+      "start": 65.3,
+      "end": 69.94,
+      "text": "Now apply color Doppler separately on mitral valve, aortic valve, and"
+    },
+    {
+      "start": 70.0,
+      "end": 77.96,
+      "text": "interventricular septum. Now in the next step apply M mode on LV cavity, then apply M mode on the"
+    },
+    {
+      "start": 77.96,
+      "end": 79.97,
+      "text": "The neutral valve. This is the north..."
+    },
+    {
+      "start": 80.0,
+      "end": 86.38,
+      "text": "pattern of mitral valve opening and closing. Now apply M mode on the aortic valve and take measurements"
+    },
+    {
+      "start": 86.38,
+      "end": 89.72,
+      "text": "for the aortic and LA diameter and aortic valve opening."
+    },
+    {
+      "start": 90.7,
+      "end": 96.1,
+      "text": "Now from the Parasturnal Long Axis, move the ultrasound beam towards RV inflow to get the"
+    },
+    {
+      "start": 96.1,
+      "end": 99.78,
+      "text": "RV inflow view by tilting tail down towards left shoulder."
+    },
+    {
+      "start": 100.0,
+      "end": 109.87,
+      "text": "Directing towards patients right hip in RV inflow view we can appreciate anterior and posterior leaflets of tricuspid valve and this is the only view"
+    },
+    {
+      "start": 110.0,
+      "end": 113.08,
+      "text": "to visualize posterior leaflet of tricuspid valve."
+    },
+    {
+      "start": 114.0,
+      "end": 116.5,
+      "text": "Apply color Doppler on the tricuspid valve"
+    },
+    {
+      "start": 116.5,
+      "end": 119.98,
+      "text": "and get continuous wave Doppler through the tricuspid valve."
+    },
+    {
+      "start": 120.0,
+      "end": 125.88,
+      "text": "VAL. Return back to Parasturnal Long Axis and get the RV Outflow view by Angling Beam"
+    },
+    {
+      "start": 125.88,
+      "end": 129.84,
+      "text": "towards left shoulder that is by moving tail away from the left shoulder."
+    },
+    {
+      "start": 130.7,
+      "end": 136.12,
+      "text": "In RV Outflow View, you can visualize pulmonary valve along with main pulmonary artery."
+    },
+    {
+      "start": 137.04,
+      "end": 139.46,
+      "text": "Apply color Doppler on the pulmonary valve."
+    },
+    {
+      "start": 140.1,
+      "end": 143.46,
+      "text": "and then continuous wave Doppler through the pulmonary valve."
+    },
+    {
+      "start": 143.97,
+      "end": 147.05,
+      "text": "Now it's time to take the LV measurements in diastole."
+    },
+    {
+      "start": 147.65,
+      "end": 149.98,
+      "text": "Measure the thickness of septum, posterior..."
+    },
+    {
+      "start": 150.0,
+      "end": 155.91,
+      "text": "air wall and LV internal diameter at the level of mitral valve leaflet tip. Now take the"
+    },
+    {
+      "start": 155.91,
+      "end": 159.82,
+      "text": "the same three measurements in systole. Measure proximal RV"
+    },
+    {
+      "start": 160.0,
+      "end": 165.38,
+      "text": "OT, zoom aortic valve and measure LVOT and aortic valve annulus."
+    },
+    {
+      "start": 166.29,
+      "end": 169.97,
+      "text": "Then measure sinotubular junction, sinuses of volsolva"
+    },
+    {
+      "start": 170.0,
+      "end": 174.28,
+      "text": "and ascending aorta. Here we are finished with Parasturnal Long Axis."
+    },
+    {
+      "start": 174.82,
+      "end": 179.62,
+      "text": "Next major window is Parasturnal Short Axis, from Parasturnal Long Axis."
+    },
+    {
+      "start": 180.03,
+      "end": 186.44,
+      "text": "Rotate pointer of the probe towards left shoulder and then move towards base or apex to get different levels."
+    },
+    {
+      "start": 186.44,
+      "end": 189.96,
+      "text": "Now record a peristernal short axis at the"
+    },
+    {
+      "start": 190.0,
+      "end": 194.96,
+      "text": "level of aortic valve. These are the major structures which we can appreciate in"
+    },
+    {
+      "start": 194.96,
+      "end": 196.46,
+      "text": "and peristernal short axis."
+    },
+    {
+      "start": 197.41,
+      "end": 199.97,
+      "text": "You can appreciate all the three cusps of aorta..."
+    },
+    {
+      "start": 200.0,
+      "end": 209.98,
+      "text": "Apply color Doppler on the aortic valve, then focus on pulmonary valve and apply color Doppler, and then apply continuous wave on"
+    },
+    {
+      "start": 210.0,
+      "end": 219.04,
+      "text": "pulmonary valve. In the next step focus on tricuspid valve and record its 2D image. In this view,"
+    },
+    {
+      "start": 219.22,
+      "end": 219.98,
+      "text": "you can appreciate..."
+    },
+    {
+      "start": 220.0,
+      "end": 226.46,
+      "text": "anterior and septal leaflet of the tricuspid valve. Apply color Doppler on tricuspid valve,"
+    },
+    {
+      "start": 227.02,
+      "end": 229.98,
+      "text": "and then continuous wave Doppler on the tricuspid"
+    },
+    {
+      "start": 230.0,
+      "end": 235.3,
+      "text": "valve. Now come to the Parasturnal Shored Axis at the level of mitral valve by angling"
+    },
+    {
+      "start": 235.3,
+      "end": 239.77,
+      "text": "ultrasound beam apically towards mitral valve. You can appreciate"
+    },
+    {
+      "start": 240.0,
+      "end": 245.4,
+      "text": "anterior and posterior mitral leaflets with all the three scallops as you can see, starting"
+    },
+    {
+      "start": 245.4,
+      "end": 249.88,
+      "text": "laterally from A1 to A3 and P1 to P3, it's"
+    },
+    {
+      "start": 250.0,
+      "end": 255.36,
+      "text": "worth mentioning here that in Parasturnal Long Axis view we can see only a 2NP2."
+    },
+    {
+      "start": 255.36,
+      "end": 259.96,
+      "text": "In Apical 2 Chamber View, we can identify P1, A2, and P-"
+    },
+    {
+      "start": 260.0,
+      "end": 265.3,
+      "text": "B3. And in apical 4 chamber we can see P1, A2 and A3."
+    },
+    {
+      "start": 266.0,
+      "end": 268.7,
+      "text": "Returning back to short axis of mitral valve."
+    },
+    {
+      "start": 269.29,
+      "end": 269.97,
+      "text": "Next step..."
+    },
+    {
+      "start": 270.0,
+      "end": 275.07,
+      "text": "to apply color Doppler. Now move ultrasound beam more apically to get"
+    },
+    {
+      "start": 275.07,
+      "end": 278.41,
+      "text": "and peristernal short axis at the mid-LV cavity level."
+    },
+    {
+      "start": 279.32,
+      "end": 279.98,
+      "text": "Look keenly..."
+    },
+    {
+      "start": 280.06,
+      "end": 282.28,
+      "text": "for any wall motion abnormality here."
+    },
+    {
+      "start": 282.83,
+      "end": 284.51,
+      "text": "Now coming to next major window."
+    },
+    {
+      "start": 285.04,
+      "end": 287.22,
+      "text": "That is apical window, which is obtained best"
+    },
+    {
+      "start": 287.22,
+      "end": 288.54,
+      "text": "at the apex of the heart."
+    },
+    {
+      "start": 289.0,
+      "end": 289.84,
+      "text": "To get the apical."
+    },
+    {
+      "start": 290.0,
+      "end": 294.72,
+      "text": "For chamber view, place the probe at Apex and for the pointer position there are two approaches."
+    },
+    {
+      "start": 295.7,
+      "end": 299.33,
+      "text": "In the first one, pointer is towards the bed or 3 o'clock position."
+    },
+    {
+      "start": 300.0,
+      "end": 302.82,
+      "text": "with this orientation left heart will be visualized"
+    },
+    {
+      "start": 302.82,
+      "end": 305.82,
+      "text": "on the right hand side in the second approach."
+    },
+    {
+      "start": 306.32,
+      "end": 308.38,
+      "text": "Pointer will be towards appendix of the patient"
+    },
+    {
+      "start": 308.38,
+      "end": 309.98,
+      "text": "and the left heart will then be..."
+    },
+    {
+      "start": 310.03,
+      "end": 317.16,
+      "text": "visualized on left-hand side. In this video we are using the second one. Record the 2D image of"
+    },
+    {
+      "start": 317.16,
+      "end": 319.98,
+      "text": "for chamber view. These are the key..."
+    },
+    {
+      "start": 320.0,
+      "end": 321.8,
+      "text": "structures visible in this view."
+    },
+    {
+      "start": 322.41,
+      "end": 327.99,
+      "text": "By moving the ultrasound beam anteriorly we can also visualize aortic valve making it"
+    },
+    {
+      "start": 327.99,
+      "end": 329.67,
+      "text": "an Epochal 5 Chamber view."
+    },
+    {
+      "start": 330.67,
+      "end": 334.57,
+      "text": "Coming back to 4 chamber view apply color Doppler on mitral valve."
+    },
+    {
+      "start": 335.58,
+      "end": 338.42,
+      "text": "And then apply continuous wave at mitral valve."
+    },
+    {
+      "start": 338.97,
+      "end": 339.97,
+      "text": "Now apply pulse..."
+    },
+    {
+      "start": 340.0,
+      "end": 346.72,
+      "text": "wave Doppler at mitral valve leaflet tips to get the E and, a, velocities. Apply TDI at"
+    },
+    {
+      "start": 346.72,
+      "end": 349.24,
+      "text": "Ceptal mitral annulus and measure E prime."
+    },
+    {
+      "start": 350.29,
+      "end": 353.03,
+      "text": "and then TDI at lateral mitral anulus."
+    },
+    {
+      "start": 353.57,
+      "end": 356.01,
+      "text": "Apply color Doppler on pulmonary veins"
+    },
+    {
+      "start": 356.01,
+      "end": 359.98,
+      "text": "and get pulse wave Doppler of the best visualized pulm..."
+    },
+    {
+      "start": 360.0,
+      "end": 369.68,
+      "text": "Next steps involve measurement of LA area, LA volume and similarly measurement of raw area and volume. Details of which will be discussed"
+    },
+    {
+      "start": 370.0,
+      "end": 379.82,
+      "text": "Separately in another video now apply color Doppler on tricuspid valve and get continuous wave Doppler of tricuspid valve apply in"
+    },
+    {
+      "start": 380.0,
+      "end": 385.28,
+      "text": "on lateral annulus of tricuspid valve for Tapsi for the assessment of right heart function."
+    },
+    {
+      "start": 385.58,
+      "end": 389.98,
+      "text": "Apply TDI on lateral annulus of tricuspid valve for measuring S"
+    },
+    {
+      "start": 390.0,
+      "end": 397.74,
+      "text": "prime measure RV area in diastole and systole to get fractional area change now coming to"
+    },
+    {
+      "start": 397.74,
+      "end": 399.96,
+      "text": "apical 3 chamber view from the"
+    },
+    {
+      "start": 400.0,
+      "end": 405.74,
+      "text": "The Apical 4 Chamber View Rotate the probe towards right shoulder to get the Apical 3 Chamber"
+    },
+    {
+      "start": 405.74,
+      "end": 406.12,
+      "text": "View."
+    },
+    {
+      "start": 406.98,
+      "end": 409.32,
+      "text": "Apply Color Doppler on aortic valve."
+    },
+    {
+      "start": 410.06,
+      "end": 416.87,
+      "text": "continuous wave Doppler through aortic valve, measure IVRT. It can also be measured from"
+    },
+    {
+      "start": 416.87,
+      "end": 419.88,
+      "text": "Epical 5 Chamber View. Here is the Diagram."
+    },
+    {
+      "start": 420.0,
+      "end": 426.03,
+      "text": "to better visualize measurement of IVRT. Apply color Doppler on mitral valve."
+    },
+    {
+      "start": 426.6,
+      "end": 429.96,
+      "text": "Then pulse wave Doppler in LVOT and trace the inv..."
+    },
+    {
+      "start": 430.0,
+      "end": 437.76,
+      "text": "to measure LVOTVTI. Next step is to record apical 2 chamber view, which is obtained by rotating"
+    },
+    {
+      "start": 437.76,
+      "end": 439.82,
+      "text": "the probe further towards left shoulder."
+    },
+    {
+      "start": 440.74,
+      "end": 443.22,
+      "text": "Apply color Doppler on mitral valve."
+    },
+    {
+      "start": 443.72,
+      "end": 448.16,
+      "text": "Remember this figure for the assessment of wall motion abnormality and the coronary"
+    },
+    {
+      "start": 448.16,
+      "end": 449.44,
+      "text": "Territory Involved."
+    },
+    {
+      "start": 450.26,
+      "end": 454.88,
+      "text": "The next major window is sub-costal, to get sub-costal for chamber view."
+    },
+    {
+      "start": 455.45,
+      "end": 458.77,
+      "text": "Place the probe at epigastrium with patient in supine position."
+    },
+    {
+      "start": 458.77,
+      "end": 459.8,
+      "text": "point your head"
+    },
+    {
+      "start": 460.0,
+      "end": 465.88,
+      "text": "3 o'clock, tilt probe anteriorly, and move ultrasound beam in between super-sternal notch"
+    },
+    {
+      "start": 465.88,
+      "end": 469.35,
+      "text": "and left clavicle. Record its 2D image."
+    },
+    {
+      "start": 470.0,
+      "end": 475.38,
+      "text": "This view is particularly helpful for measuring RV thickness and to see atrial septal defect."
+    },
+    {
+      "start": 476.34,
+      "end": 479.88,
+      "text": "Apply color on inter atrial septum to look for any septal"
+    },
+    {
+      "start": 480.0,
+      "end": 485.65,
+      "text": "effect. Get pulse wave Doppler on septum to look for any blood flow across septum."
+    },
+    {
+      "start": 486.42,
+      "end": 489.81,
+      "text": "to visualize IVC. Rotate pointer anti-clockwise."
+    },
+    {
+      "start": 490.0,
+      "end": 495.44,
+      "text": "to about 12 o'clock, then tilt probe superiorly with beam directed through the abdomen,"
+    },
+    {
+      "start": 495.99,
+      "end": 499.75,
+      "text": "adjust beam slightly towards IVC that is towards right lateral"
+    },
+    {
+      "start": 500.03,
+      "end": 507.01,
+      "text": "to get good image, record the image of IVC and hepatic veins, apply color Doppler, get"
+    },
+    {
+      "start": 507.01,
+      "end": 509.51,
+      "text": "Pulse Wave Doppler on Hypatic Vains."
+    },
+    {
+      "start": 510.03,
+      "end": 514.91,
+      "text": "Apply M-mode on IVC to measure and check for collapsibility of IVC."
+    },
+    {
+      "start": 515.85,
+      "end": 519.97,
+      "text": "Visualize the aorta by angling the beam towards left side that is left..."
+    },
+    {
+      "start": 520.0,
+      "end": 529.87,
+      "text": "lateral and record abdominal aorta. Apply color Doppler on abdominal aorta. Apply pulse wave Doppler on abdominal aorta. Now coming"
+    },
+    {
+      "start": 530.0,
+      "end": 534.5,
+      "text": "to supra-sternal window which is obtained by placing the probe at supra-sternal notch"
+    },
+    {
+      "start": 534.5,
+      "end": 537.98,
+      "text": "with patient in supine position and pointer towards chin."
+    },
+    {
+      "start": 539.0,
+      "end": 539.94,
+      "text": "It is best to vision"
+    },
+    {
+      "start": 540.0,
+      "end": 545.62,
+      "text": "the arch of aorta. Apply color Doppler on arch and descending aorta. Apply"
+    },
+    {
+      "start": 545.62,
+      "end": 549.77,
+      "text": "continuous wave Doppler on descending aorta and pulse wave"
+    },
+    {
+      "start": 550.0,
+      "end": 555.8,
+      "text": "Doppler on the descending aorta, similarly apply color Doppler on ascending aorta, then"
+    },
+    {
+      "start": 555.8,
+      "end": 559.87,
+      "text": "continuous wave Doppler on ascending aorta, and pulse wave"
+    },
+    {
+      "start": 560.0,
+      "end": 565.36,
+      "text": "Doppler on ascending Aorda. We are done with all the steps. In next few slides,"
+    },
+    {
+      "start": 565.75,
+      "end": 569.96,
+      "text": "summary of full protocol is given to keep it as a reference. Hope..."
+    },
+    {
+      "start": 570.03,
+      "end": 576.17,
+      "text": "If you have enjoyed learning basic eco-protocol, if you have any queries let me know in the comments section below."
+    },
+    {
+      "start": 577.19,
+      "end": 578.11,
+      "text": "Thank you for watching."
+    }
+  ]
+}

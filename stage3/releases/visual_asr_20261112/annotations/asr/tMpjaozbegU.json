@@ -1,0 +1,333 @@
+{
+  "video_id": "tMpjaozbegU",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/tMpjaozbegU/asr.txt",
+  "segments": [
+    {
+      "start": 8.19,
+      "end": 9.53,
+      "text": "Hi, I'm James Mateer."
+    },
+    {
+      "start": 10.42,
+      "end": 11.7,
+      "text": "with golf coast ultrasound."
+    },
+    {
+      "start": 12.4,
+      "end": 16.9,
+      "text": "My hot tip for today is how to shorten the learning curve"
+    },
+    {
+      "start": 16.9,
+      "end": 19.22,
+      "text": "or ultrasound needle guidance."
+    },
+    {
+      "start": 20.0,
+      "end": 26.38,
+      "text": "using the in-plane needle approach. A few tips. Most clinicians start with the"
+    },
+    {
+      "start": 26.38,
+      "end": 29.72,
+      "text": "outer plane approach which is fine and is on approach you will"
+    },
+    {
+      "start": 30.0,
+      "end": 35.62,
+      "text": "continue to want to use. The in-plane approach, however, is more precise and may be preferred"
+    },
+    {
+      "start": 35.62,
+      "end": 39.81,
+      "text": "for smaller vessels, nerve blocks and injection techniques."
+    },
+    {
+      "start": 40.77,
+      "end": 45.37,
+      "text": "Some of the challenges with needle guidance include that it is a fine motor skill."
+    },
+    {
+      "start": 45.96,
+      "end": 49.7,
+      "text": "The probe is usually held with a non-dominant hand making"
+    },
+    {
+      "start": 50.0,
+      "end": 55.8,
+      "text": "it initially a little more challenging, so the learning curve may take longer than anticipated."
+    },
+    {
+      "start": 56.9,
+      "end": 59.9,
+      "text": "So it does require practice with gel or tissue phantoms."
+    },
+    {
+      "start": 61.09,
+      "end": 63.69,
+      "text": "You could compare this to developing your expertise"
+    },
+    {
+      "start": 63.69,
+      "end": 65.21,
+      "text": "at fine suturing."
+    },
+    {
+      "start": 65.41,
+      "end": 68.57,
+      "text": "It's not something that you learn in one day or one week."
+    },
+    {
+      "start": 68.99,
+      "end": 69.97,
+      "text": "It takes time to..."
+    },
+    {
+      "start": 70.0,
+      "end": 72.38,
+      "text": "develop this skill, but it's well worth the effort."
+    },
+    {
+      "start": 72.98,
+      "end": 79.98,
+      "text": "We will be using the in-plane or longitudinal view of the needle or approach to"
+    },
+    {
+      "start": 80.0,
+      "end": 86.73,
+      "text": "the target vessel. Again, this is a free hand method. The most important point on"
+    },
+    {
+      "start": 87.53,
+      "end": 89.97,
+      "text": "visualizing the target structure is you want to..."
+    },
+    {
+      "start": 90.0,
+      "end": 94.5,
+      "text": "to make sure that you're in the midline, especially if it's a vascular structure, and you"
+    },
+    {
+      "start": 94.5,
+      "end": 96.48,
+      "text": "can do that by slight side to side movement."
+    },
+    {
+      "start": 97.38,
+      "end": 99.98,
+      "text": "If you are oblique, you'll see how it tapers off."
+    },
+    {
+      "start": 100.0,
+      "end": 105.85,
+      "text": "on each end. So then you want to twist the probe or rotate until you are in"
+    },
+    {
+      "start": 105.85,
+      "end": 109.67,
+      "text": "longitudinal and have a good parallel view as well."
+    },
+    {
+      "start": 110.35,
+      "end": 116.45,
+      "text": "The heel-to-toe motion will line up the vessel perpendicular to the surface."
+    },
+    {
+      "start": 117.89,
+      "end": 119.81,
+      "text": "Once you have a good view of your target structure."
+    },
+    {
+      "start": 120.42,
+      "end": 122.9,
+      "text": "You want to keep your probe hand motionless."
+    },
+    {
+      "start": 123.32,
+      "end": 125.42,
+      "text": "So that means you need to have good stabilization"
+    },
+    {
+      "start": 125.42,
+      "end": 128.18,
+      "text": "of your arm, hand, and probe."
+    },
+    {
+      "start": 128.5,
+      "end": 129.97,
+      "text": "Because from now..."
+    },
+    {
+      "start": 130.68,
+      "end": 134.88,
+      "text": "until you've entered the target, you do not want to move the probe at all."
+    },
+    {
+      "start": 136.03,
+      "end": 139.48,
+      "text": "So we're going to advance our needle at the very edge of the probe."
+    },
+    {
+      "start": 140.77,
+      "end": 142.81,
+      "text": "and at about a 45 degree angle."
+    },
+    {
+      "start": 144.45,
+      "end": 147.69,
+      "text": "Okay, we'll see the needle coming in from the side."
+    },
+    {
+      "start": 148.9,
+      "end": 149.82,
+      "text": "Now, we're at about a 45."
+    },
+    {
+      "start": 150.03,
+      "end": 157.6,
+      "text": "angle on this one. As we advance, I move the needle tip side to side and you can see it appearing"
+    },
+    {
+      "start": 157.6,
+      "end": 159.82,
+      "text": "into the thin imaging sector."
+    },
+    {
+      "start": 160.0,
+      "end": 163.49,
+      "text": "of the probe and you can see it disappear."
+    },
+    {
+      "start": 164.26,
+      "end": 166.84,
+      "text": "So we wanna have it in the middle of the imaging sector"
+    },
+    {
+      "start": 166.84,
+      "end": 168.08,
+      "text": "before we advance again."
+    },
+    {
+      "start": 169.06,
+      "end": 169.88,
+      "text": "I advance again."
+    },
+    {
+      "start": 170.64,
+      "end": 172.1,
+      "text": "Okay, I'm moving it side to side."
+    },
+    {
+      "start": 173.97,
+      "end": 176.23,
+      "text": "Hey, I see the brightest point of the tip of the needle"
+    },
+    {
+      "start": 176.23,
+      "end": 177.09,
+      "text": "at that point."
+    },
+    {
+      "start": 177.51,
+      "end": 179.96,
+      "text": "Now we'll advance again into the..."
+    },
+    {
+      "start": 180.0,
+      "end": 186.67,
+      "text": "the target structure. So I'm in the center of that target structure. I'm going to withdraw"
+    },
+    {
+      "start": 186.67,
+      "end": 189.77,
+      "text": "the needle now and advance it at a shallower angles."
+    },
+    {
+      "start": 190.0,
+      "end": 196.94,
+      "text": "So you can get a better idea of how this side-to-side fanning motion affects the direction within"
+    },
+    {
+      "start": 196.94,
+      "end": 197.96,
+      "text": "the imaging plane."
+    },
+    {
+      "start": 199.17,
+      "end": 199.97,
+      "text": "So we're at about a fifth..."
+    },
+    {
+      "start": 200.1,
+      "end": 207.07,
+      "text": "degree angle at this time. As I do the side to side motion now I can see the tip of the needle"
+    },
+    {
+      "start": 207.07,
+      "end": 209.97,
+      "text": "at its brightest point here. So I..."
+    },
+    {
+      "start": 210.0,
+      "end": 217.88,
+      "text": "advance when it's bright. If it days bright, you can keep advancing, but this side-to-side"
+    },
+    {
+      "start": 217.88,
+      "end": 219.9,
+      "text": "motion helps you make sure that you're in this center."
+    },
+    {
+      "start": 220.0,
+      "end": 228.77,
+      "text": "that imaging plane. Now I'm very bright and I'll advance. You notice I've not moved my"
+    },
+    {
+      "start": 228.77,
+      "end": 229.97,
+      "text": "Hold the hand."
+    },
+    {
+      "start": 230.0,
+      "end": 235.43,
+      "text": "at all. I have that stabilized. I've been able to maintain the view of the"
+    },
+    {
+      "start": 235.43,
+      "end": 239.93,
+      "text": "Argate image the whole time. I'm in the center of the target image."
+    },
+    {
+      "start": 240.03,
+      "end": 249.68,
+      "text": "So this was all the in plane or longitudinal approaches to a target structure using the free hand technique."
+    },
+    {
+      "start": 251.38,
+      "end": 253.96,
+      "text": "and showing the importance of stabilizing that probe"
+    },
+    {
+      "start": 254.25,
+      "end": 257.32,
+      "text": "and using a slight side to side motion to stay within"
+    },
+    {
+      "start": 257.77,
+      "end": 259.7,
+      "text": "the imaging plane as you advance."
+    },
+    {
+      "start": 261.98,
+      "end": 263.54,
+      "text": "That's my hot tip for today."
+    },
+    {
+      "start": 264.07,
+      "end": 265.19,
+      "text": "Now you give it a try."
+    }
+  ]
+}

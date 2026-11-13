@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "groups_samples_loaded_by_actual_loader": {
+    "all": 1505,
+    "memory_candidates": 1055,
+    "audio_or_joint_tagged": 450,
+    "partial_review": 0
+  },
+  "source_loader": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/stage3/train.py",
+  "source_loader_sha256": "8bb6c2566e50e4052e35216cc04ba7532955737b83de367b35c7d64eebabea8b",
+  "execution_scope": "Actual AST-extracted load_examples, decision_question and answerability_label functions. No full torch import, GPU execution, model/checkpoint load or clinical re-review.",
+  "train_videos": 185,
+  "eval_videos": 38,
+  "train_eval_video_overlap": 0,
+  "native_media_paths_checked": 223,
+  "negative_contract_checks": [
+    "reject premature ANSWER",
+    "reject current_time/window mismatch"
+  ]
+}

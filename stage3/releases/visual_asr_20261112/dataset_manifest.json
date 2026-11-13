@@ -1,0 +1,133 @@
+{
+  "dataset_version": "stage3_av_training_20261112",
+  "groups": {
+    "all": {
+      "videos": 223,
+      "qa": 1015,
+      "decision_samples": 1505,
+      "qa_by_split": {
+        "eval": 183,
+        "train": 832
+      },
+      "samples_by_split": {
+        "train": 1237,
+        "eval": 268
+      },
+      "qa_by_type": {
+        "current_observation": 308,
+        "history_recall": 217,
+        "temporal_comparison": 245,
+        "event_notification": 245
+      },
+      "decision_labels": {
+        "ANSWER": 1015,
+        "WAIT": 490
+      }
+    },
+    "memory_candidates": {
+      "videos": 173,
+      "qa": 690,
+      "decision_samples": 1055,
+      "qa_by_split": {
+        "eval": 130,
+        "train": 560
+      },
+      "samples_by_split": {
+        "train": 857,
+        "eval": 198
+      },
+      "qa_by_type": {
+        "temporal_comparison": 183,
+        "event_notification": 182,
+        "current_observation": 208,
+        "history_recall": 117
+      },
+      "decision_labels": {
+        "ANSWER": 690,
+        "WAIT": 365
+      }
+    },
+    "audio_or_joint_tagged": {
+      "videos": 115,
+      "qa": 325,
+      "decision_samples": 450,
+      "qa_by_split": {
+        "eval": 53,
+        "train": 272
+      },
+      "samples_by_split": {
+        "train": 380,
+        "eval": 70
+      },
+      "qa_by_type": {
+        "current_observation": 100,
+        "history_recall": 100,
+        "event_notification": 63,
+        "temporal_comparison": 62
+      },
+      "decision_labels": {
+        "ANSWER": 325,
+        "WAIT": 125
+      }
+    },
+    "partial_review": {
+      "videos": 0,
+      "qa": 0,
+      "decision_samples": 0,
+      "qa_by_split": {},
+      "samples_by_split": {},
+      "qa_by_type": {},
+      "decision_labels": {}
+    }
+  },
+  "proactive_qa": 490,
+  "immediate_qa": 525,
+  "review4_completed": true,
+  "review_correction_count": 4,
+  "language": "en",
+  "high_medium_videos": 223,
+  "source_datasets": [
+    "stage3_av50_20261105",
+    "stage3_av_next50_20261106",
+    "stage3_av_visualfirst_next50_20261110",
+    "stage3_av_visualfirst_regen14_reviewed_20261111",
+    "stage3_remaining79/export_accepted79_20261111"
+  ],
+  "excluded_visual_only_source": "stage3_batch (superseded AV sibling retained instead)",
+  "train_eval_video_overlap": [],
+  "native_resolution_preserved": true,
+  "no_video_reencoding": true,
+  "media_included": false,
+  "media_storage": "external originals; local map and rebase helper provided",
+  "asr_annotation_available_videos": 211,
+  "asr_annotation_missing_video_ids": [
+    "-UDinlF3ha4",
+    "7cQ_3GtvNxo",
+    "A_CVfJFPp-E",
+    "C60jGZsiPrs",
+    "GPHyZfm8T2s",
+    "J_kORTc8hxY",
+    "KGSdQB80ois",
+    "Q9ZcHkmIBzY",
+    "VFPcSCetCxg",
+    "hazy6gol4rE",
+    "o_Fmsk3QCkc",
+    "xBDOuUxBswo"
+  ],
+  "model_inputs": [
+    "causal_visual_memory",
+    "question",
+    "query_time",
+    "current_time"
+  ],
+  "annotation_only": [
+    "full ASR",
+    "gold answer_time",
+    "reference/evidence",
+    "review notes"
+  ],
+  "training_default": "memory_candidates: source-tag compatible candidates, not a new semantic or clinical review",
+  "all_view_warning": "325 tasks carry old audio/joint tags. Tags alone do not establish that these tasks are unanswerable visually; this packaging run does not reassess their visual sufficiency. The current trainer consumes no ASR. All tasks remain in the full dataset.",
+  "sampling": "1 ANSWER at query for immediate tasks; WAIT at query plus ANSWER at answer for delayed tasks. No invented intermediate WAITs, post-completion answers, or untriggered tasks.",
+  "evaluation_contract": "Endpoint classification/reconstruction only. Existing stage3.overfit and stage3.metrics assume two videos and integer dense grids and must not be used unchanged for these fractional endpoint files."
+}

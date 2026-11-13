@@ -1,0 +1,85 @@
+{
+  "video_id": "8V649L5Q368",
+  "reviewer": "stage3_b",
+  "review_scope": "Question-led review by Agent B of Agent A draft; not blind. Native full-frame sampled checkpoints and available time-indexed ASR; no continuous replay or direct listening claim.",
+  "reviewer_native_opened": [
+    130,
+    340,
+    500,
+    510,
+    511,
+    512,
+    512.25,
+    512.5,
+    512.75,
+    513,
+    514,
+    515,
+    550,
+    551,
+    553,
+    555,
+    558,
+    560,
+    562,
+    563,
+    563.25,
+    563.5,
+    563.75,
+    564,
+    565,
+    595,
+    705,
+    706,
+    707,
+    708,
+    710,
+    711,
+    712,
+    713,
+    713.25,
+    713.5,
+    713.75,
+    714,
+    715,
+    890
+  ],
+  "tasks": [
+    {
+      "task_number": 1,
+      "findings": "Confirmed130 bright interface between rib shadows below superficial tissue; immediate answer.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_number": 2,
+      "findings": "Advanced515to513 following512.75partial loss; deep landmark obscuration is visible even though old labels remain. Query510 clear.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_number": 3,
+      "findings": "Advanced565to563.75after563.5bedside scene; image alone supplies left dark pocket beyond diaphragm before full arrow labels.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_number": 4,
+      "findings": "Confirmed595tissue-like lower-left edge projection into darker space and liver right; no claimed floating motion.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_number": 5,
+      "findings": "Advanced715to713.75after713.5bedside scene; generalized singular streak to visible columns at chosen frame. Query705 horizontal repeat.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_number": 6,
+      "findings": "Confirmed priorleftspleen500versusrightliver340; immediatehistory answer890. Labels/anatomical shortcut risk retained.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    }
+  ]
+}

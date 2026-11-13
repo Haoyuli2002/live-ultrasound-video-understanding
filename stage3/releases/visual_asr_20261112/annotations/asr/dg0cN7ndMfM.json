@@ -1,0 +1,508 @@
+{
+  "video_id": "dg0cN7ndMfM",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/dg0cN7ndMfM/asr.txt",
+  "segments": [
+    {
+      "start": 0.64,
+      "end": 7.18,
+      "text": "I want to go over how to hold the ultrasound probe when you're going to be doing a case"
+    },
+    {
+      "start": 7.18,
+      "end": 9.82,
+      "text": "which requires you to get IJX"
+    },
+    {
+      "start": 10.0,
+      "end": 14.54,
+      "text": "you know, access into the internal jugular vein and, you know, this probe holding is going"
+    },
+    {
+      "start": 14.54,
+      "end": 19.84,
+      "text": "to be for the gaining of access into the IJ. So it's a"
+    },
+    {
+      "start": 20.0,
+      "end": 23.46,
+      "text": "It's a simple thing to gain access if you kind of know what you're doing."
+    },
+    {
+      "start": 23.82,
+      "end": 27.0,
+      "text": "However, oftentimes people can get tripped up at the start of the case"
+    },
+    {
+      "start": 27.0,
+      "end": 29.98,
+      "text": "when they're holding the probe in a way that doesn't"
+    },
+    {
+      "start": 30.0,
+      "end": 33.06,
+      "text": "really set them up for success. So that's why we're going to spend a little bit of"
+    },
+    {
+      "start": 33.06,
+      "end": 38.32,
+      "text": "time to talk about this. It seems simple but it does set the tone for the rest of the case."
+    },
+    {
+      "start": 38.8,
+      "end": 39.97,
+      "text": "Now you'll"
+    },
+    {
+      "start": 40.0,
+      "end": 44.38,
+      "text": "We're going to be using a linear probe, and there are some fundamental things that are"
+    },
+    {
+      "start": 44.38,
+      "end": 46.78,
+      "text": "pretty universal when you're handling probes."
+    },
+    {
+      "start": 47.0,
+      "end": 49.98,
+      "text": "You know, one is that generally speaking, you don't want to grab the probe."
+    },
+    {
+      "start": 50.0,
+      "end": 56.3,
+      "text": "too high because then there's you know this this is not very stable and you can"
+    },
+    {
+      "start": 56.3,
+      "end": 59.72,
+      "text": "slide around quite a bit. So generally speaking you're going to grab the"
+    },
+    {
+      "start": 60.35,
+      "end": 65.86,
+      "text": "lower and then you're gonna use you know one way that you can do it is you can put your thumb on one"
+    },
+    {
+      "start": 65.86,
+      "end": 69.98,
+      "text": "side index finger on the other side and then you can use these parts of your hand"
+    },
+    {
+      "start": 70.0,
+      "end": 76.68,
+      "text": "an arm to stabilize on something. So that is kind of one thing that's important. The other is"
+    },
+    {
+      "start": 76.68,
+      "end": 79.96,
+      "text": "the chord. So the chord should never be in"
+    },
+    {
+      "start": 80.0,
+      "end": 86.07,
+      "text": "your kind of where you're working. So if you're trying to gain access from this"
+    },
+    {
+      "start": 86.07,
+      "end": 89.97,
+      "text": "direction, you have to make sure that the chord is out of..."
+    },
+    {
+      "start": 90.0,
+      "end": 91.8,
+      "text": "your procedural field."
+    },
+    {
+      "start": 92.02,
+      "end": 93.44,
+      "text": "So that's very, very important."
+    },
+    {
+      "start": 94.18,
+      "end": 97.32,
+      "text": "Now, the thing that's a little bit more specific"
+    },
+    {
+      "start": 97.32,
+      "end": 99.98,
+      "text": "for the iJ puncture that it's important to keep in mind,"
+    },
+    {
+      "start": 100.0,
+      "end": 104.88,
+      "text": "is that, you know, when you're doing an ij puncture, either you're, you know, let's say this"
+    },
+    {
+      "start": 104.88,
+      "end": 109.98,
+      "text": "is our ij right here. Okay, so it's running along this way, so the patient's head will be up here."
+    },
+    {
+      "start": 110.0,
+      "end": 115.24,
+      "text": "feet will be down there and let's say you're standing at the head of the bed and"
+    },
+    {
+      "start": 115.24,
+      "end": 119.26,
+      "text": "you're scanning like this depending on what type of case you're doing."
+    },
+    {
+      "start": 120.0,
+      "end": 125.8,
+      "text": "Either you're going to gain access kind of in a dimension that's parallel to the long"
+    },
+    {
+      "start": 125.8,
+      "end": 129.09,
+      "text": "axis of the vessel, or you're going to go perpendicular."
+    },
+    {
+      "start": 130.42,
+      "end": 134.44,
+      "text": "Now, let's say that you're going kind of,"
+    },
+    {
+      "start": 134.96,
+      "end": 136.88,
+      "text": "you're going to gain access from this direction."
+    },
+    {
+      "start": 137.42,
+      "end": 139.96,
+      "text": "The way we held the probe, this is great."
+    },
+    {
+      "start": 140.0,
+      "end": 146.96,
+      "text": "So you can hold it like this, you can put it down here, very stable, you're resting your hand on something secure."
+    },
+    {
+      "start": 147.54,
+      "end": 149.98,
+      "text": "And what's great about this is when you grab the..."
+    },
+    {
+      "start": 150.13,
+      "end": 152.21,
+      "text": "we'll just make sure we have a good target there."
+    },
+    {
+      "start": 152.59,
+      "end": 154.15,
+      "text": "When you're grabbing your micro-puncture needle,"
+    },
+    {
+      "start": 154.45,
+      "end": 156.79,
+      "text": "what you can do is just come from the side"
+    },
+    {
+      "start": 156.79,
+      "end": 158.99,
+      "text": "and you can see the probe very clearly."
+    },
+    {
+      "start": 159.25,
+      "end": 159.97,
+      "text": "There are no issues."
+    },
+    {
+      "start": 160.0,
+      "end": 165.3,
+      "text": "your fingers are not in the way so this is very straightforward this is great"
+    },
+    {
+      "start": 165.3,
+      "end": 169.98,
+      "text": "for gaining access in that direction now it's important to keep in mind"
+    },
+    {
+      "start": 170.0,
+      "end": 174.97,
+      "text": "that the majority of the time that you're getting IJ access, you're standing like"
+    },
+    {
+      "start": 174.97,
+      "end": 179.97,
+      "text": "this and you know your hand actually may get in"
+    },
+    {
+      "start": 180.0,
+      "end": 184.6,
+      "text": "your way because oftentimes we're not going this direction, we're actually going to be"
+    },
+    {
+      "start": 184.6,
+      "end": 187.36,
+      "text": "puncturing parallel relative to the long axis of the vessel."
+    },
+    {
+      "start": 187.92,
+      "end": 189.98,
+      "text": "So it's not to say that you can't..."
+    },
+    {
+      "start": 190.16,
+      "end": 195.26,
+      "text": "do this. However, if you were to do this, the issue is because you're holding lower on"
+    },
+    {
+      "start": 195.26,
+      "end": 199.98,
+      "text": "the probe to keep it secure, your thumb actually kind of inhibits your view of what's"
+    },
+    {
+      "start": 200.13,
+      "end": 203.08,
+      "text": "going on under your thumb."
+    },
+    {
+      "start": 203.58,
+      "end": 207.72,
+      "text": "So it's very doable, and a lot of people do it successfully"
+    },
+    {
+      "start": 207.72,
+      "end": 208.32,
+      "text": "this way."
+    },
+    {
+      "start": 208.68,
+      "end": 209.96,
+      "text": "However, it is."
+    },
+    {
+      "start": 210.0,
+      "end": 216.1,
+      "text": "is worth thinking a little bit about kind of repositioning yourself and the ultrasound"
+    },
+    {
+      "start": 216.1,
+      "end": 219.98,
+      "text": "machine to give yourself an opportunity to puncture it."
+    },
+    {
+      "start": 220.0,
+      "end": 225.68,
+      "text": "different way. So, for example, if you are doing this type of a puncture, it can be useful"
+    },
+    {
+      "start": 225.68,
+      "end": 229.76,
+      "text": "to actually hold the probe like this. You know, you can have your thumb on one side."
+    },
+    {
+      "start": 230.16,
+      "end": 232.78,
+      "text": "and then your index and middle finger on the other,"
+    },
+    {
+      "start": 232.96,
+      "end": 234.86,
+      "text": "you can support yourself here,"
+    },
+    {
+      "start": 235.34,
+      "end": 238.16,
+      "text": "but you can actually scan like this."
+    },
+    {
+      "start": 238.94,
+      "end": 239.98,
+      "text": "However, you can..."
+    },
+    {
+      "start": 240.0,
+      "end": 245.22,
+      "text": "see that if we're standing this way, it's really not practical. You know, you kind of have"
+    },
+    {
+      "start": 245.22,
+      "end": 249.1,
+      "text": "to do something very uncomfortable with your wrist to be able to do this."
+    },
+    {
+      "start": 249.1,
+      "end": 249.98,
+      "text": "So..."
+    },
+    {
+      "start": 250.64,
+      "end": 253.84,
+      "text": "you may want to think about kind of repositioning things."
+    },
+    {
+      "start": 254.26,
+      "end": 255.32,
+      "text": "You know, in this video,"
+    },
+    {
+      "start": 255.5,
+      "end": 256.8,
+      "text": "we're gonna move the patients,"
+    },
+    {
+      "start": 257.2,
+      "end": 259.58,
+      "text": "but in real life, you would move yourself."
+    },
+    {
+      "start": 260.0,
+      "end": 269.97,
+      "text": "And where the ultrasound machine is to kind of maintain this, you know, ease of viewing the screen so you may have to go on the other side of"
+    },
+    {
+      "start": 270.0,
+      "end": 275.12,
+      "text": "the patient. So now the patient's head is up here, legs are down there, and you may have"
+    },
+    {
+      "start": 275.12,
+      "end": 279.88,
+      "text": "to move your ultrasound machine so that you can scan, you know, in the same plane."
+    },
+    {
+      "start": 280.0,
+      "end": 289.87,
+      "text": "Let's find a good target here and then now you can just come around here and gain access"
+    },
+    {
+      "start": 290.0,
+      "end": 294.8,
+      "text": "very easily. So the advantage of this is I can see the center of the probe here."
+    },
+    {
+      "start": 295.16,
+      "end": 299.28,
+      "text": "Nothing is obstructing my view. I can go very close to the probe with my"
+    },
+    {
+      "start": 299.28,
+      "end": 299.92,
+      "text": "access need."
+    },
+    {
+      "start": 300.72,
+      "end": 305.94,
+      "text": "and it's just personally, I think this has a lot of advantages because your"
+    },
+    {
+      "start": 305.94,
+      "end": 309.98,
+      "text": "fingers are not obscuring your view. But again, I..."
+    },
+    {
+      "start": 310.06,
+      "end": 312.36,
+      "text": "I'm not gonna be standing at the head of the patient now."
+    },
+    {
+      "start": 312.76,
+      "end": 314.46,
+      "text": "I'm gonna be standing on the other side"
+    },
+    {
+      "start": 314.78,
+      "end": 317.12,
+      "text": "and I need to make sure that there's room"
+    },
+    {
+      "start": 317.12,
+      "end": 319.8,
+      "text": "for my ultrasound screen right across from me."
+    },
+    {
+      "start": 320.29,
+      "end": 325.83,
+      "text": "Before I attempt to do this, otherwise I may have to crane my neck if the screen is over there."
+    },
+    {
+      "start": 326.76,
+      "end": 329.72,
+      "text": "So for example, you know, with our original orientation"
+    },
+    {
+      "start": 330.29,
+      "end": 337.14,
+      "text": "if I was to stand over here, then I would have to look over to the side as I try to gain"
+    },
+    {
+      "start": 337.14,
+      "end": 339.88,
+      "text": "access and it's not really as natural of an angle."
+    },
+    {
+      "start": 340.06,
+      "end": 349.26,
+      "text": "So the moral of the story here is that depending on what type of puncture you're doing, if you're going to go, you know, long axis or"
+    },
+    {
+      "start": 350.0,
+      "end": 355.35,
+      "text": "to the long axis of the vessel. You want to think about how you're setting up the room,"
+    },
+    {
+      "start": 355.59,
+      "end": 359.81,
+      "text": "how you're setting up yourself, your machine, and really how you're going to hold the"
+    },
+    {
+      "start": 360.42,
+      "end": 362.84,
+      "text": "and the consequences of how you hold the probe."
+    },
+    {
+      "start": 363.86,
+      "end": 366.86,
+      "text": "Ultimately, it's probably best to be comfortable doing it both ways,"
+    },
+    {
+      "start": 367.04,
+      "end": 369.96,
+      "text": "because you may not always be in a position to set up the room the where you use."
+    },
+    {
+      "start": 370.03,
+      "end": 375.06,
+      "text": "the way you'd like to, or you may have to kind of adjust and think on your feet."
+    },
+    {
+      "start": 375.56,
+      "end": 379.66,
+      "text": "So it's important to just understand there are multiple ways to hold the probe."
+    },
+    {
+      "start": 380.19,
+      "end": 381.95,
+      "text": "and they have advantages and disadvantages."
+    },
+    {
+      "start": 382.57,
+      "end": 385.45,
+      "text": "And really, what you wanna maximize is your stability."
+    },
+    {
+      "start": 386.54,
+      "end": 388.5,
+      "text": "Make sure that the core is not obscuring"
+    },
+    {
+      "start": 388.5,
+      "end": 389.32,
+      "text": "where you're working."
+    },
+    {
+      "start": 390.0,
+      "end": 394.7,
+      "text": "And then, depending on what you're doing, if you can structure things in such a way that"
+    },
+    {
+      "start": 395.02,
+      "end": 399.12,
+      "text": "your fingers are not between your needle path and where it needs to go."
+    }
+  ]
+}

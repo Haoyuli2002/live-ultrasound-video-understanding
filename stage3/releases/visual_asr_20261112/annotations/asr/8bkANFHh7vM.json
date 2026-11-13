@@ -1,0 +1,413 @@
+{
+  "video_id": "8bkANFHh7vM",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/8bkANFHh7vM/asr.txt",
+  "segments": [
+    {
+      "start": 28.1,
+      "end": 29.98,
+      "text": "Ultrasound guided breast biopsy."
+    },
+    {
+      "start": 30.06,
+      "end": 34.04,
+      "text": "is typically performed to sample palpable lumps and fibroadenomas."
+    },
+    {
+      "start": 35.04,
+      "end": 39.76,
+      "text": "This imaging guidance is sometimes used as an adjunct to mammography, to help identify"
+    },
+    {
+      "start": 40.03,
+      "end": 44.01,
+      "text": "unclear or non-visible areas of interest in dense breast tissue."
+    },
+    {
+      "start": 45.24,
+      "end": 49.980000000000004,
+      "text": "The SIRO's ATEC PURL and ATEC SAFIRE breast biopsy systems are"
+    },
+    {
+      "start": 50.06,
+      "end": 56.42,
+      "text": "For appropriate units for this procedure, ATEC offers 9 and 12 gauge needle options that"
+    },
+    {
+      "start": 56.42,
+      "end": 59.82,
+      "text": "give the physician multiple choices for addressing the specifics."
+    },
+    {
+      "start": 60.06,
+      "end": 67.3,
+      "text": "The clinical needs of the patient, the trocar tip design, allows for easy penetration into all breast tissue types."
+    },
+    {
+      "start": 68.66,
+      "end": 69.86,
+      "text": "The ATEC has FDA."
+    },
+    {
+      "start": 70.0,
+      "end": 74.16,
+      "text": "clearance for complete removal of all visible evidence of benign breast disease."
+    },
+    {
+      "start": 74.87,
+      "end": 79.93,
+      "text": "Many physicians choose to use the nine gauge handpiece for sampling or removal of fibro"
+    },
+    {
+      "start": 80.0,
+      "end": 82.12,
+      "text": "and other large lesions."
+    },
+    {
+      "start": 87.75,
+      "end": 89.93,
+      "text": "Position the patient lying on her back on the ex..."
+    },
+    {
+      "start": 90.0,
+      "end": 95.84,
+      "text": "sample to begin the preliminary scan that will identify the target lesion using a sterile"
+    },
+    {
+      "start": 95.84,
+      "end": 99.53999999999999,
+      "text": "cleanser prepare the surface of the breast around the biopsy point of entry."
+    },
+    {
+      "start": 100.42,
+      "end": 105.0,
+      "text": "Once the area of interest has been identified and confirmed, the patient can be prepared"
+    },
+    {
+      "start": 105.0,
+      "end": 105.8,
+      "text": "for biopsy."
+    },
+    {
+      "start": 107.15,
+      "end": 109.97,
+      "text": "An anesthetic is injected at the skin's surface at the"
+    },
+    {
+      "start": 110.1,
+      "end": 113.78,
+      "text": "area of interest, and also injected deep into the target site."
+    },
+    {
+      "start": 114.36,
+      "end": 119.12,
+      "text": "The tip of the biopsy needle will extend beyond the target site, so it is essential to"
+    },
+    {
+      "start": 119.12,
+      "end": 119.96000000000001,
+      "text": "who had minister Annas."
+    },
+    {
+      "start": 122.2,
+      "end": 129.62,
+      "text": "and deep anesthetic injections help numb the entire biopsy site and decrease patient discomfort during the biopsy."
+    },
+    {
+      "start": 131.06,
+      "end": 135.42,
+      "text": "At this time, an extra syringe of anesthetic may be attached to the ATEC Y valve."
+    },
+    {
+      "start": 136.36,
+      "end": 139.8,
+      "text": "This permits additional anesthetic to be pulled into the biopsy cavity."
+    },
+    {
+      "start": 140.03,
+      "end": 145.81,
+      "text": "During each cutting cycle, turn the A-tec console on, which will automatically close the aperture"
+    },
+    {
+      "start": 145.81,
+      "end": 148.53,
+      "text": "and prepare the needle for insertion into the breast."
+    },
+    {
+      "start": 150.0,
+      "end": 154.52,
+      "text": "The neck is made with a surgical blade to allow for easier entry prior to advancing the"
+    },
+    {
+      "start": 154.52,
+      "end": 155.92,
+      "text": "needle to the biopsy site."
+    },
+    {
+      "start": 157.35,
+      "end": 159.97,
+      "text": "The A-Tech system requires only one needle in the needle."
+    },
+    {
+      "start": 160.03,
+      "end": 164.63,
+      "text": "allowing you to take multiple samples throughout the entire biopsy procedure."
+    },
+    {
+      "start": 166.04,
+      "end": 169.6,
+      "text": "Insert the A-techneto into the breast and position appropriately."
+    },
+    {
+      "start": 170.06,
+      "end": 175.92,
+      "text": "the target biopsy site, most clinicians target below the lesion, turning the cutting aperture"
+    },
+    {
+      "start": 175.92,
+      "end": 179.86,
+      "text": "to the 12 o'clock position. The position of the lesion should be located"
+    },
+    {
+      "start": 180.1,
+      "end": 181.66,
+      "text": "in the center of the cutting aperture."
+    },
+    {
+      "start": 182.57,
+      "end": 184.55,
+      "text": "This position allows for optimal visibility"
+    },
+    {
+      "start": 184.55,
+      "end": 187.11,
+      "text": "of the needle cutting cycles and lesion removal."
+    },
+    {
+      "start": 189.03,
+      "end": 189.97,
+      "text": "The flat surface of the-"
+    },
+    {
+      "start": 190.03,
+      "end": 195.19,
+      "text": "handpiece indicates the 12 o'clock position and serves as a tactile indicator for the location"
+    },
+    {
+      "start": 195.19,
+      "end": 196.21,
+      "text": "of the cutting aperture."
+    },
+    {
+      "start": 197.42,
+      "end": 199.98,
+      "text": "A visual marker of this service area is the 18-"
+    },
+    {
+      "start": 200.0,
+      "end": 205.56,
+      "text": "The numbers on the front and back of the hand piece indicate the clock position of the cutting aperture"
+    },
+    {
+      "start": 205.56,
+      "end": 209.38,
+      "text": "and are used as guides to indicate biopsy position during the procedure."
+    },
+    {
+      "start": 210.96,
+      "end": 215.84,
+      "text": "When satisfied with your needle position, begin taking tissue samples by depressing the"
+    },
+    {
+      "start": 215.84,
+      "end": 217.96,
+      "text": "foot pedal that will activate the cutting cycle."
+    },
+    {
+      "start": 218.87,
+      "end": 219.97,
+      "text": "It will take six seconds."
+    },
+    {
+      "start": 220.03,
+      "end": 223.95,
+      "text": "for the initial vacuum to build before the system will start sampling."
+    },
+    {
+      "start": 225.39,
+      "end": 229.21,
+      "text": "Continue to depress the foot pedal throughout the tissue acquisition sequence."
+    },
+    {
+      "start": 229.21,
+      "end": 229.91,
+      "text": "until"
+    },
+    {
+      "start": 230.0,
+      "end": 234.98,
+      "text": "desired number of samples have been taken, ideally rotating the handpiece between the"
+    },
+    {
+      "start": 234.98,
+      "end": 236.7,
+      "text": "ten o'clock and two o'clock positions."
+    },
+    {
+      "start": 236.7,
+      "end": 239.96,
+      "text": "Issue acquisition occurs every day."
+    },
+    {
+      "start": 240.0,
+      "end": 249.96,
+      "text": "4.5 seconds. Manual rotation of the hand piece occurs directly."
+    },
+    {
+      "start": 250.1,
+      "end": 256.63,
+      "text": "the resting phase of the 4.5 second cycle, just after the audible beep, when tissue acquisition"
+    },
+    {
+      "start": 256.63,
+      "end": 259.81,
+      "text": "is complete, and with the needle still positioned in the breast."
+    },
+    {
+      "start": 260.32,
+      "end": 265.08,
+      "text": "You may choose to switch the console to Lavage Mode by pushing the button marked Lavage."
+    },
+    {
+      "start": 265.5,
+      "end": 269.98,
+      "text": "Lavage Mode continuously delivers sailing to the biopsy site and aspirates."
+    },
+    {
+      "start": 270.0,
+      "end": 274.64,
+      "text": "the biopsy cavity, allowing loose tissue and other fluids to be cleansed from the site,"
+    },
+    {
+      "start": 274.92,
+      "end": 276.24,
+      "text": "clearing it for marker placement."
+    },
+    {
+      "start": 277.4,
+      "end": 279.76,
+      "text": "Lavage the cavity until the fluid in the collection."
+    },
+    {
+      "start": 280.0,
+      "end": 285.77,
+      "text": "chamber indicates the cavity is clear. You are now ready to begin marking the biopsy"
+    },
+    {
+      "start": 285.77,
+      "end": 289.85,
+      "text": "site by placing a biopsy site identifier into the biopsy cavity."
+    },
+    {
+      "start": 290.8,
+      "end": 294.52,
+      "text": "For this video demonstration, we will be using the Syros Solero Mark."
+    },
+    {
+      "start": 295.74,
+      "end": 298.86,
+      "text": "The A-Tech Tri-Mark is also recommended for use in ultrasound."
+    },
+    {
+      "start": 300.0,
+      "end": 305.47,
+      "text": "Remove the ATEC needle from the brass insert the deployment device through the skin neck"
+    },
+    {
+      "start": 305.47,
+      "end": 308.65,
+      "text": "to the biopsy cavity and depress the deployment device."
+    },
+    {
+      "start": 308.65,
+      "end": 309.92,
+      "text": "We'll remove them."
+    },
+    {
+      "start": 310.0,
+      "end": 311.64,
+      "text": "marker deployment device from the breast."
+    },
+    {
+      "start": 312.3,
+      "end": 314.3,
+      "text": "This completes the biopsy procedure."
+    },
+    {
+      "start": 315.26,
+      "end": 317.86,
+      "text": "Immediately apply pressure to the biopsy site."
+    },
+    {
+      "start": 318.54,
+      "end": 319.98,
+      "text": "Once bleeding has slowed, a-"
+    },
+    {
+      "start": 320.0,
+      "end": 325.1,
+      "text": "a stary strip to the biopsy site. The cores are now ready to be retrieved from the tissue"
+    },
+    {
+      "start": 325.1,
+      "end": 329.84,
+      "text": "collection chamber at the back of the ATEC handpiece. Place one hand on the handpiece."
+    },
+    {
+      "start": 330.06,
+      "end": 331.54,
+      "text": "and the other on the collection chamber."
+    },
+    {
+      "start": 332.24,
+      "end": 334.44,
+      "text": "Rotate the collection chamber counterclockwise"
+    },
+    {
+      "start": 334.44,
+      "end": 336.92,
+      "text": "to disengage the container from the hand piece."
+    },
+    {
+      "start": 338.06,
+      "end": 339.62,
+      "text": "Remove the tissue filter basket."
+    },
+    {
+      "start": 340.35,
+      "end": 345.63,
+      "text": "Using your fingers, grasp the thin metal wire that is at the top and around the tissue filter basket"
+    },
+    {
+      "start": 345.89,
+      "end": 349.81,
+      "text": "Before pulling up on the wire, tilt the tissue filter basket toward the specimen"
+    },
+    {
+      "start": 350.0,
+      "end": 355.94,
+      "text": "collection dish to avoid losing any tissue samples appropriately dispose of all used"
+    },
+    {
+      "start": 355.94,
+      "end": 359.98,
+      "text": "ATEC product such as hand piece marker deployment device canis"
+    },
+    {
+      "start": 360.1,
+      "end": 360.66,
+      "text": "etc."
+    }
+  ]
+}

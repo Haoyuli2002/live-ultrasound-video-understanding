@@ -1,0 +1,2998 @@
+{
+  "video_id": "466cDoLdVZQ",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/466cDoLdVZQ/asr.txt",
+  "segments": [
+    {
+      "start": 1.22,
+      "end": 2.98,
+      "text": "All right, everybody, welcome to the Olbson lecture series"
+    },
+    {
+      "start": 2.98,
+      "end": 4.52,
+      "text": "this week, pretty excited that you're here."
+    },
+    {
+      "start": 5.02,
+      "end": 6.52,
+      "text": "We are wrapping things up today."
+    },
+    {
+      "start": 6.6,
+      "end": 9.66,
+      "text": "This is the last lecture of this academic year."
+    },
+    {
+      "start": 10.26,
+      "end": 15.24,
+      "text": "We've had a lot of lectures that have gone basically all the way from the fall to today"
+    },
+    {
+      "start": 15.62,
+      "end": 17.1,
+      "text": "and we cover a lot of good things."
+    },
+    {
+      "start": 17.18,
+      "end": 19.98,
+      "text": "If you want to review that, you want to see what we've done, you want to..."
+    },
+    {
+      "start": 20.19,
+      "end": 21.31,
+      "text": "kind of revisit some topics."
+    },
+    {
+      "start": 21.31,
+      "end": 22.49,
+      "text": "Go to the YouTube channel."
+    },
+    {
+      "start": 22.61,
+      "end": 24.77,
+      "text": "We've got all the lectures posted there for you to see."
+    },
+    {
+      "start": 25.17,
+      "end": 27.85,
+      "text": "But today we're wrapping things up with one more talk"
+    },
+    {
+      "start": 27.85,
+      "end": 29.21,
+      "text": "on ultrasound nerve blocks."
+    },
+    {
+      "start": 29.65,
+      "end": 29.89,
+      "text": "So."
+    },
+    {
+      "start": 30.0,
+      "end": 34.2,
+      "text": "Greg Stoner, also on fellow this year, is me presenting about nerve blocks, it's something"
+    },
+    {
+      "start": 34.2,
+      "end": 34.9,
+      "text": "that he's interested in."
+    },
+    {
+      "start": 34.94,
+      "end": 38.56,
+      "text": "He's going to cover some blocks that we didn't cover last week, so we can round out the topic"
+    },
+    {
+      "start": 38.56,
+      "end": 39.98,
+      "text": "and really kind of have a..."
+    },
+    {
+      "start": 40.0,
+      "end": 43.18,
+      "text": "full discussion about what different blocks we can do in the ED."
+    },
+    {
+      "start": 43.48,
+      "end": 44.94,
+      "text": "So without that or without further ado,"
+    },
+    {
+      "start": 44.98,
+      "end": 45.6,
+      "text": "and with that being said,"
+    },
+    {
+      "start": 45.72,
+      "end": 46.62,
+      "text": "great, go ahead and take it over"
+    },
+    {
+      "start": 46.62,
+      "end": 48.4,
+      "text": "and we'll hear what you have to say about their blocks."
+    },
+    {
+      "start": 51.38,
+      "end": 59.98,
+      "text": "Okay, everybody can see my screen. Okay. Yes, sir. Okay. So yeah, so as as Matt said"
+    },
+    {
+      "start": 60.0,
+      "end": 69.94,
+      "text": "We're going to be talking about ultrasound guided nerve blocks or ultrasound guided regional anesthesia if you want to be specific about it. We're going to be talking about the lower extremity, which"
+    },
+    {
+      "start": 70.0,
+      "end": 77.0,
+      "text": "We did a lot of great stuff about the upper extremity and trunk last week. So we're going to be talking about the lower extremity today. So"
+    },
+    {
+      "start": 77.5,
+      "end": 79.8,
+      "text": "Just to kind of do some brief reviews"
+    },
+    {
+      "start": 80.0,
+      "end": 85.7,
+      "text": "well, just in general information about nerve blocks. Obviously, we know this is a useful adjunct"
+    },
+    {
+      "start": 85.99,
+      "end": 89.87,
+      "text": "that could be used in the emergency department that is really helpful for"
+    },
+    {
+      "start": 90.03,
+      "end": 93.97,
+      "text": "avoiding opioid use, especially if you have that kind of"
+    },
+    {
+      "start": 93.97,
+      "end": 97.11,
+      "text": "classic patient I think of as you're 95 year old that falls"
+    },
+    {
+      "start": 97.11,
+      "end": 99.96,
+      "text": "and breaks their hip, you know, you probably don't want"
+    },
+    {
+      "start": 100.0,
+      "end": 101.16,
+      "text": "and give that patient a bunch of morphine,"
+    },
+    {
+      "start": 101.3,
+      "end": 102.48,
+      "text": "but they might be in a lot of pain."
+    },
+    {
+      "start": 103.02,
+      "end": 104.46,
+      "text": "So this is a really useful way"
+    },
+    {
+      "start": 104.46,
+      "end": 106.22,
+      "text": "that you can provide them with analgesia"
+    },
+    {
+      "start": 106.22,
+      "end": 108.74,
+      "text": "without having to worry that they're going to be sedated."
+    },
+    {
+      "start": 110.0,
+      "end": 112.64,
+      "text": "and it's very, very safe, very easy to perform"
+    },
+    {
+      "start": 112.64,
+      "end": 114.24,
+      "text": "in the emergency department, you know,"
+    },
+    {
+      "start": 114.4,
+      "end": 117.41,
+      "text": "historically people are, everyone was worried, you know,"
+    },
+    {
+      "start": 117.59,
+      "end": 119.55,
+      "text": "we got to have, you know, not that you shouldn't have"
+    },
+    {
+      "start": 119.55,
+      "end": 119.97,
+      "text": "your interl..."
+    },
+    {
+      "start": 120.0,
+      "end": 129.98,
+      "text": "You know, available and stuff like that, but, but if done, you know, correctly safely under ultrasound guidance, you know, the risk is is pretty minimal again and I'm going to talk a bit"
+    },
+    {
+      "start": 130.0,
+      "end": 134.28,
+      "text": "about, you know, when you conduct the nerve lock, have to do that in a safe manner to help"
+    },
+    {
+      "start": 134.28,
+      "end": 139.98,
+      "text": "avoid a nerve-ascular injury. And as we know, it has a very wide variety of"
+    },
+    {
+      "start": 140.0,
+      "end": 147.38,
+      "text": "applications. We're going to be talking specifically about the lower extremity today. So we'll kind"
+    },
+    {
+      "start": 147.38,
+      "end": 149.84,
+      "text": "I'm going to dive in some more things here, talk a bit a bit up."
+    },
+    {
+      "start": 150.0,
+      "end": 152.26,
+      "text": "things that would prevent you from doing in your block."
+    },
+    {
+      "start": 152.82,
+      "end": 154.9,
+      "text": "And if a patient has ultra mental status,"
+    },
+    {
+      "start": 155.12,
+      "end": 156.46,
+      "text": "this would affect your ability"
+    },
+    {
+      "start": 156.46,
+      "end": 158.68,
+      "text": "to assess for parecesias, you know,"
+    },
+    {
+      "start": 159.08,
+      "end": 159.98,
+      "text": "because now..."
+    },
+    {
+      "start": 160.0,
+      "end": 162.02,
+      "text": "One thing we don't generally have access to in the"
+    },
+    {
+      "start": 162.02,
+      "end": 164.4,
+      "text": "emergency department is a nurse simulator."
+    },
+    {
+      "start": 165.24,
+      "end": 168.52,
+      "text": "So in anesthesia, often they're using a nurse simulator"
+    },
+    {
+      "start": 169.12,
+      "end": 169.72,
+      "text": "that is..."
+    },
+    {
+      "start": 170.0,
+      "end": 179.43,
+      "text": "really helpful, especially, you know, historically, but the landmark based approach rather than the ultrasound guidance, you know, relying on that nerve."
+    },
+    {
+      "start": 180.0,
+      "end": 183.42,
+      "text": "stimulator is very key because then you see the twitch of the muscle, you know, you're in the"
+    },
+    {
+      "start": 183.42,
+      "end": 186.98,
+      "text": "nerve fiber, you pull back a little bit because the last thing you want to do is inject"
+    },
+    {
+      "start": 187.52,
+      "end": 189.98,
+      "text": "into the actual nerve fibers. That can be"
+    },
+    {
+      "start": 190.0,
+      "end": 194.92,
+      "text": "very damaging. So you're really targeting facial planes generally, and you're"
+    },
+    {
+      "start": 194.92,
+      "end": 199.1,
+      "text": "surrounding the nerve and kind of bathing it in this anesthetic. And it's"
+    },
+    {
+      "start": 199.1,
+      "end": 199.92,
+      "text": "going to absorb that"
+    },
+    {
+      "start": 200.03,
+      "end": 201.67,
+      "text": "and then that's going to get your effect rather"
+    },
+    {
+      "start": 202.19,
+      "end": 203.81,
+      "text": "injecting directly to the nerve, that's not good."
+    },
+    {
+      "start": 204.67,
+      "end": 207.59,
+      "text": "So having a patient that's unable to tell you"
+    },
+    {
+      "start": 207.59,
+      "end": 209.77,
+      "text": "what they're feeling, that could be a conflict of education."
+    },
+    {
+      "start": 210.0,
+      "end": 214.54,
+      "text": "a patient's, you know, tundered, they can't tell you, you know, that their their foot just,"
+    },
+    {
+      "start": 214.68,
+      "end": 218.86,
+      "text": "you know, is feeling odd or something like that, then that's that's not good. Obviously,"
+    },
+    {
+      "start": 218.86,
+      "end": 219.76,
+      "text": "see if you have an infection."
+    },
+    {
+      "start": 220.0,
+      "end": 224.52,
+      "text": "the overlinged skin, you don't want to be injecting bacteria down into the people's nerves,"
+    },
+    {
+      "start": 224.64,
+      "end": 225.08,
+      "text": "that's no good."
+    },
+    {
+      "start": 226.0,
+      "end": 228.64,
+      "text": "And of course, one of the big things is compartment syndrome, right?"
+    },
+    {
+      "start": 228.64,
+      "end": 229.98,
+      "text": "So, you know, it's..."
+    },
+    {
+      "start": 230.0,
+      "end": 234.52,
+      "text": "It's a great way to provide analgesia, but if you have a patient with a severe fracture of"
+    },
+    {
+      "start": 234.52,
+      "end": 239.9,
+      "text": "the lower extremity, especially, you know, tibial fibula fractures, you know, those."
+    },
+    {
+      "start": 240.0,
+      "end": 243.18,
+      "text": "apartments are small, right? And so the last thing you want to do is inject"
+    },
+    {
+      "start": 243.18,
+      "end": 247.48,
+      "text": "fluid into a tense compartment, right? So if you're going to be doing that,"
+    },
+    {
+      "start": 247.5,
+      "end": 249.56,
+      "text": "make sure you're talking with your surgical"
+    },
+    {
+      "start": 250.06,
+      "end": 251.7,
+      "text": "Colleys talking with orthopedics and saying,"
+    },
+    {
+      "start": 251.7,
+      "end": 253.46,
+      "text": "hey, I'm thinking about doing this."
+    },
+    {
+      "start": 254.09,
+      "end": 255.87,
+      "text": "You know, is this okay with you?"
+    },
+    {
+      "start": 255.87,
+      "end": 257.75,
+      "text": "You know, and then maybe they want to come down"
+    },
+    {
+      "start": 257.75,
+      "end": 259.97,
+      "text": "and measure a compartment pressure before or kind of."
+    },
+    {
+      "start": 260.0,
+      "end": 262.52,
+      "text": "Neuroassessments that they know what's going on."
+    },
+    {
+      "start": 262.92,
+      "end": 264.22,
+      "text": "So after you've done that nerve block,"
+    },
+    {
+      "start": 264.62,
+      "end": 267.24,
+      "text": "they're aware, oh, patient's gonna have a completely numb"
+    },
+    {
+      "start": 267.24,
+      "end": 268.92,
+      "text": "and like, well, I did a nerve block, right?"
+    },
+    {
+      "start": 269.06,
+      "end": 269.14,
+      "text": "So."
+    },
+    {
+      "start": 269.72,
+      "end": 269.74,
+      "text": "So."
+    },
+    {
+      "start": 270.0,
+      "end": 274.22,
+      "text": "better to, you know, in those specific cases, talk with your surgical colleagues, you know,"
+    },
+    {
+      "start": 274.28,
+      "end": 278.04,
+      "text": "kind of keep them on board, making sure that they're aware of what's going on and that they're okay"
+    },
+    {
+      "start": 278.04,
+      "end": 279.98,
+      "text": "with that. Um, and of course, patients that are"
+    },
+    {
+      "start": 280.0,
+      "end": 285.71,
+      "text": "are, you know, incubated, they're going to be bleeding or at risk of that, you know, probably"
+    },
+    {
+      "start": 285.71,
+      "end": 289.25,
+      "text": "not the best candidates for something like this, although generally, you know, you're"
+    },
+    {
+      "start": 289.25,
+      "end": 289.97,
+      "text": "avoiding the"
+    },
+    {
+      "start": 290.0,
+      "end": 292.72,
+      "text": "neurovascular, so it's not necessarily an absolute"
+    },
+    {
+      "start": 292.72,
+      "end": 294.88,
+      "text": "contraindrication, but it's something to keep in mind."
+    },
+    {
+      "start": 295.72,
+      "end": 299.28,
+      "text": "So which program are you going to use now generally?"
+    },
+    {
+      "start": 300.26,
+      "end": 301.54,
+      "text": "We're gonna be using the linear probe."
+    },
+    {
+      "start": 301.7,
+      "end": 303.09,
+      "text": "There are some cases,"
+    },
+    {
+      "start": 303.57,
+      "end": 306.11,
+      "text": "some of the deeper blocks I will talk about today"
+    },
+    {
+      "start": 306.11,
+      "end": 308.79,
+      "text": "that you would want to use your curved linear probe"
+    },
+    {
+      "start": 308.79,
+      "end": 309.93,
+      "text": "because the nervous looking"
+    },
+    {
+      "start": 310.0,
+      "end": 313.96,
+      "text": "the deeper, but generally you're going to want to go for that linear probe. These structures are"
+    },
+    {
+      "start": 313.96,
+      "end": 317.6,
+      "text": "generally more superficial. It's going to give you that high frequency, good penetration, good"
+    },
+    {
+      "start": 318.08,
+      "end": 319.98,
+      "text": "picture. So you're going to be able to see the tissue."
+    },
+    {
+      "start": 320.03,
+      "end": 322.71,
+      "text": "use nicely, and that's what you're going to want to use."
+    },
+    {
+      "start": 323.75,
+      "end": 325.21,
+      "text": "So how do you know what you're looking for, right?"
+    },
+    {
+      "start": 325.49,
+      "end": 328.19,
+      "text": "So nerves are going to appear hypercolic, right?"
+    },
+    {
+      "start": 328.31,
+      "end": 329.61,
+      "text": "So you can see on the picture in the right here."
+    },
+    {
+      "start": 330.1,
+      "end": 332.36,
+      "text": "This is an example of a fascia ilioch block,"
+    },
+    {
+      "start": 332.46,
+      "end": 333.48,
+      "text": "which is gonna be the first one"
+    },
+    {
+      "start": 333.48,
+      "end": 334.5,
+      "text": "that I've actually talked about."
+    },
+    {
+      "start": 335.2,
+      "end": 336.78,
+      "text": "And you can see on the left side,"
+    },
+    {
+      "start": 336.78,
+      "end": 337.68,
+      "text": "you see the femoral artery,"
+    },
+    {
+      "start": 337.98,
+      "end": 339.62,
+      "text": "then you see the femoral nerve right next to it."
+    },
+    {
+      "start": 339.7,
+      "end": 339.96,
+      "text": "So you..."
+    },
+    {
+      "start": 340.0,
+      "end": 345.7,
+      "text": "see kind of this. Generally, they tend to kind of be triangular shaped. They don't usually look,"
+    },
+    {
+      "start": 346.66,
+      "end": 349.48,
+      "text": "you know, round unless you're, unless you're dealing with a really large nerve."
+    },
+    {
+      "start": 350.19,
+      "end": 355.17,
+      "text": "like your sciatics sometimes look more round, but often they're triangular shaped and they kind of occur"
+    },
+    {
+      "start": 355.95,
+      "end": 359.53,
+      "text": "inside of the fascial pleads, right, and they're going to be hyper-echoic."
+    },
+    {
+      "start": 360.13,
+      "end": 369.63,
+      "text": "Now sometimes you can't always see the nerves perfectly, but again, if you have your ultrasound landmarks, and you know, okay, there's the fema artery, I see, you know, the muscle."
+    },
+    {
+      "start": 370.16,
+      "end": 372.5,
+      "text": "If I get into that facial sheath, right?"
+    },
+    {
+      "start": 372.78,
+      "end": 374.64,
+      "text": "And as you're performing the procedure,"
+    },
+    {
+      "start": 374.88,
+      "end": 376.32,
+      "text": "you know, inject an ML or two,"
+    },
+    {
+      "start": 376.96,
+      "end": 378.52,
+      "text": "that you'll see the facial plane separate."
+    },
+    {
+      "start": 378.52,
+      "end": 379.98,
+      "text": "And then often times..."
+    },
+    {
+      "start": 380.06,
+      "end": 383.25,
+      "text": "the nerve will actually kind of light up that, right?"
+    },
+    {
+      "start": 383.41,
+      "end": 385.51,
+      "text": "Because once you've surrounded it with fluid,"
+    },
+    {
+      "start": 386.59,
+      "end": 388.89,
+      "text": "that anechoic fluid's gonna kind of light up"
+    },
+    {
+      "start": 388.89,
+      "end": 389.87,
+      "text": "that nerve a little bit more."
+    },
+    {
+      "start": 390.0,
+      "end": 394.46,
+      "text": "there are some some of the smaller nerves, you know, depending on what type of"
+    },
+    {
+      "start": 394.46,
+      "end": 397.4,
+      "text": "block you're doing, you may not be able to visualize as well, but once you kind"
+    },
+    {
+      "start": 397.4,
+      "end": 399.98,
+      "text": "of surround them with some fluid, then you're going to be able to"
+    },
+    {
+      "start": 400.0,
+      "end": 404.94,
+      "text": "see them better and that can help kind of give you confirmation that you've gotten a successful"
+    },
+    {
+      "start": 404.94,
+      "end": 409.53,
+      "text": "blockade and then area. What equipment are you going to need?"
+    },
+    {
+      "start": 410.1,
+      "end": 413.24,
+      "text": "Well, the best needle of choice"
+    },
+    {
+      "start": 413.24,
+      "end": 415.3,
+      "text": "is going to be to use the nerve block needle."
+    },
+    {
+      "start": 415.88,
+      "end": 417.12,
+      "text": "So you can see the top left ear."
+    },
+    {
+      "start": 417.6,
+      "end": 419.56,
+      "text": "That's specifically designed."
+    },
+    {
+      "start": 420.29,
+      "end": 424.51,
+      "text": "for nerve locks, it has a catheter that you can attach to syringe."
+    },
+    {
+      "start": 425.35,
+      "end": 429.23,
+      "text": "So if you're going to use this, you're going to need to have a second operator with you."
+    },
+    {
+      "start": 430.0,
+      "end": 434.77,
+      "text": "And then this particular needle also has attachments to a nerve stimulator."
+    },
+    {
+      "start": 434.87,
+      "end": 439.35,
+      "text": "So if you have access to that, that can be a very useful tool to make sure you're, you know,"
+    },
+    {
+      "start": 440.06,
+      "end": 442.22,
+      "text": "not injecting directly into someone's nerve."
+    },
+    {
+      "start": 442.62,
+      "end": 445.58,
+      "text": "So you're targeting a facial plane"
+    },
+    {
+      "start": 445.58,
+      "end": 447.9,
+      "text": "and you're surrounding the nerve area."
+    },
+    {
+      "start": 448.36,
+      "end": 449.8,
+      "text": "That's what these nerve blocks are doing."
+    },
+    {
+      "start": 450.32,
+      "end": 454.34,
+      "text": "and the nerve needles themselves are designed specifically to light up. So you can see"
+    },
+    {
+      "start": 455.2,
+      "end": 458.64,
+      "text": "if you look closely, the needles actually has markers on it."
+    },
+    {
+      "start": 460.0,
+      "end": 465.36,
+      "text": "the design of the actual material of the needle is designed to light up more on your ultrasound"
+    },
+    {
+      "start": 465.36,
+      "end": 469.58,
+      "text": "machine. So, you know, you combine that with a setting on the machine."
+    },
+    {
+      "start": 470.19,
+      "end": 476.61,
+      "text": "for needle visualization. It's going to be a lot easier to see that needle. If you don't have access"
+    },
+    {
+      "start": 476.61,
+      "end": 479.86,
+      "text": "to that, that's okay. You can use a standard 20 gauge."
+    },
+    {
+      "start": 480.19,
+      "end": 484.3,
+      "text": "spinal needle, you're going to want to have your syringe, you let your probe cover,"
+    },
+    {
+      "start": 484.56,
+      "end": 489.98,
+      "text": "you still set up, and of course you're anesthetic. So we'll talk about what's anesthetic to you."
+    },
+    {
+      "start": 490.0,
+      "end": 494.81,
+      "text": "want to pick, right? Generally speaking, I tend to go with 0.5%"
+    },
+    {
+      "start": 494.81,
+      "end": 499.87,
+      "text": "purification. Now, if you have access to Republican, that's also"
+    },
+    {
+      "start": 500.0,
+      "end": 505.94,
+      "text": "very nice it's going to be very long acting and if you have something shorter duration you can also go for"
+    },
+    {
+      "start": 505.94,
+      "end": 509.98,
+      "text": "So, say, you know, someone has elaceration and, you know, you're"
+    },
+    {
+      "start": 510.0,
+      "end": 513.88,
+      "text": "only get a knee analgesia, you know, for whatever time period is going to take you to do that,"
+    },
+    {
+      "start": 514.08,
+      "end": 519.9,
+      "text": "you know, might take you 20 minutes to do the repair. Um, and if the patient's completely insensely"
+    },
+    {
+      "start": 520.0,
+      "end": 524.02,
+      "text": "might be able to do that repair faster, right? So that lighter cane would be sufficient for that,"
+    },
+    {
+      "start": 524.02,
+      "end": 529.93,
+      "text": "right? But if you're doing a fascia ilioca block on a patient with hip fracture, they're going to have a pain for"
+    },
+    {
+      "start": 530.0,
+      "end": 532.84,
+      "text": "for quite a while. So you're better off using something like"
+    },
+    {
+      "start": 532.84,
+      "end": 536.22,
+      "text": "be pivogaine. Now, Kate, you can also, you know, do a mixture"
+    },
+    {
+      "start": 536.22,
+      "end": 539.82,
+      "text": "sometimes I have done that as well. You know, 75%"
+    },
+    {
+      "start": 540.0,
+      "end": 544.32,
+      "text": "again and use 25% lighter gain so that that way the patient could get a little bit more relief"
+    },
+    {
+      "start": 544.32,
+      "end": 549.84,
+      "text": "immediately. But you can take your mind, you know, what is the"
+    },
+    {
+      "start": 550.0,
+      "end": 554.54,
+      "text": "get that you're trying to go for. Are you going for long-term analgesia for a fracture of a bone?"
+    },
+    {
+      "start": 554.68,
+      "end": 559.97,
+      "text": "Are you doing superficial skin stuturing? You may not require as long-"
+    },
+    {
+      "start": 560.0,
+      "end": 562.92,
+      "text": "long-term of, you know, TZS. So, lidocaine might be sufficient in that case."
+    },
+    {
+      "start": 563.5,
+      "end": 569.85,
+      "text": "How much do you want to use? Well, the general barpark ballpark number is about 20 ml, you know."
+    },
+    {
+      "start": 570.16,
+      "end": 572.7,
+      "text": "you can use larger volumes in some of your larger patients."
+    },
+    {
+      "start": 574.63,
+      "end": 577.83,
+      "text": "Now, like I said, the safe role is generally thinking,"
+    },
+    {
+      "start": 577.93,
+      "end": 579.81,
+      "text": "okay, if you don't go over 20."
+    },
+    {
+      "start": 580.13,
+      "end": 581.03,
+      "text": "you're going to be safe."
+    },
+    {
+      "start": 581.81,
+      "end": 583.99,
+      "text": "Now, some of the blocks you don't want"
+    },
+    {
+      "start": 583.99,
+      "end": 585.49,
+      "text": "to use that larger volume."
+    },
+    {
+      "start": 585.63,
+      "end": 587.87,
+      "text": "You'll only need a smaller volume for some of the smaller"
+    },
+    {
+      "start": 587.87,
+      "end": 588.31,
+      "text": "diners."
+    },
+    {
+      "start": 588.31,
+      "end": 589.73,
+      "text": "Um, but"
+    },
+    {
+      "start": 590.83,
+      "end": 593.01,
+      "text": "If you're thinking about what's the maximum I can go to,"
+    },
+    {
+      "start": 593.19,
+      "end": 596.2,
+      "text": "if you just say 20 emails, you're going to be safe."
+    },
+    {
+      "start": 596.86,
+      "end": 598.14,
+      "text": "You don't use any more than that."
+    },
+    {
+      "start": 598.42,
+      "end": 599.46,
+      "text": "And you'll always be fine."
+    },
+    {
+      "start": 599.54,
+      "end": 599.94,
+      "text": "You're not going to owe."
+    },
+    {
+      "start": 600.0,
+      "end": 604.92,
+      "text": "dose of patient, unless it's a child, right? Then you'd have to reconsider that. But in an adult patient,"
+    },
+    {
+      "start": 605.18,
+      "end": 608.92,
+      "text": "you're always going to be safe if you stick to that 20 ml. Again, that's regardless of if you're"
+    },
+    {
+      "start": 608.92,
+      "end": 609.84,
+      "text": "There's a lot of key in the key again."
+    },
+    {
+      "start": 610.26,
+      "end": 612.58,
+      "text": "you know, because it's going to kind of encompass all that."
+    },
+    {
+      "start": 612.7,
+      "end": 614.02,
+      "text": "So it's an easy way to say, okay,"
+    },
+    {
+      "start": 615.0,
+      "end": 616.42,
+      "text": "you don't have to worry about this big confusing chart."
+    },
+    {
+      "start": 616.5,
+      "end": 618.32,
+      "text": "Just say, okay, 20 miles, stick to that,"
+    },
+    {
+      "start": 618.52,
+      "end": 619.32,
+      "text": "and you're pretty safe."
+    },
+    {
+      "start": 620.35,
+      "end": 629.74,
+      "text": "So this is kind of a chart showing the sensory distribution across the lower extremity as you can see a lot of different nerves cover a lot of different areas now."
+    },
+    {
+      "start": 630.42,
+      "end": 634.63,
+      "text": "You know, obviously you're going to want to think about where's the area that you're trying to target, right?"
+    },
+    {
+      "start": 635.57,
+      "end": 639.88,
+      "text": "And what do you need this nerve block for, you know, the more proc."
+    },
+    {
+      "start": 640.06,
+      "end": 649.9,
+      "text": "you block and the extremity the more blockage you're going to get lower down and depending on where you're blocking you might also have some motor blockade so you know is your patient"
+    },
+    {
+      "start": 650.03,
+      "end": 653.89,
+      "text": "going to be ambulating out of the emergency department, or is this a patient with a hip fracture"
+    },
+    {
+      "start": 653.89,
+      "end": 658.45,
+      "text": "who's non-ambulatory, who you don't care about motorblocking because they're not going to be walking."
+    },
+    {
+      "start": 660.0,
+      "end": 667.36,
+      "text": "about those considerations and determining what type of block you're going to do, so we'll"
+    },
+    {
+      "start": 667.36,
+      "end": 669.3,
+      "text": "talk first about the fascia ilioca block."
+    },
+    {
+      "start": 670.06,
+      "end": 678.04,
+      "text": "So this is, I would say the most common block that you'll probably be able to encounter in the emergency department. And it's also one of the easiest blocks to do."
+    },
+    {
+      "start": 678.86,
+      "end": 679.86,
+      "text": "So this is very"
+    },
+    {
+      "start": 680.0,
+      "end": 685.38,
+      "text": "excellent for those patients that have hip fractures. Now, keeping in mind, this is going"
+    },
+    {
+      "start": 685.38,
+      "end": 688.86,
+      "text": "to cause some motor blockade. So your patients aren't going to be walking out of the emergency"
+    },
+    {
+      "start": 688.86,
+      "end": 689.98,
+      "text": "department with this, but..."
+    },
+    {
+      "start": 690.13,
+      "end": 692.05,
+      "text": "You know, your hip fracture patients aren't going to be walking."
+    },
+    {
+      "start": 692.31,
+      "end": 693.11,
+      "text": "So that's OK."
+    },
+    {
+      "start": 694.03,
+      "end": 696.83,
+      "text": "It's going to give you some excellent endogesia for the femur."
+    },
+    {
+      "start": 696.91,
+      "end": 698.45,
+      "text": "You can also use it for femur fractures."
+    },
+    {
+      "start": 699.23,
+      "end": 699.91,
+      "text": "Very, very."
+    },
+    {
+      "start": 700.0,
+      "end": 706.14,
+      "text": "very good for covering deep down into the muscle on the bone, it's going to cover those fractures"
+    },
+    {
+      "start": 706.58,
+      "end": 708.82,
+      "text": "and reduce that opioid burden very nicely."
+    },
+    {
+      "start": 710.0,
+      "end": 711.9,
+      "text": "especially like I said in those older patients"
+    },
+    {
+      "start": 711.9,
+      "end": 714.1,
+      "text": "that you probably don't want to give as many opioids to,"
+    },
+    {
+      "start": 714.54,
+      "end": 716.54,
+      "text": "it's gonna be a useful adjunct here."
+    },
+    {
+      "start": 717.3,
+      "end": 719.96,
+      "text": "Now, like I said, it's less likely to cause nervous..."
+    },
+    {
+      "start": 720.0,
+      "end": 723.1,
+      "text": "or a vascular injury, because with the fascia-alioca block,"
+    },
+    {
+      "start": 723.3,
+      "end": 728.4,
+      "text": "you're really not injecting next to the actual nerve itself."
+    },
+    {
+      "start": 728.86,
+      "end": 729.98,
+      "text": "So the risk that you're going-"
+    },
+    {
+      "start": 730.0,
+      "end": 735.56,
+      "text": "going to, you know, puncture the nerve bundle and have internal injection is much lower."
+    },
+    {
+      "start": 736.06,
+      "end": 739.92,
+      "text": "And again, you know, the key with nerve blocks is making sure that you have"
+    },
+    {
+      "start": 740.0,
+      "end": 746.43,
+      "text": "adequate ability to perform in-plane technique. You're able to visualize your needle. That's very"
+    },
+    {
+      "start": 746.43,
+      "end": 749.97,
+      "text": "important, you know, always sticking to the role, okay, well, if you can't."
+    },
+    {
+      "start": 750.0,
+      "end": 755.46,
+      "text": "see the needle, stop, don't move. Don't advance the needle. You know, if you need to remove"
+    },
+    {
+      "start": 755.46,
+      "end": 759.49,
+      "text": "it and start again so that you can visualize it so that you're not pushing."
+    },
+    {
+      "start": 760.0,
+      "end": 765.3,
+      "text": "needle deeper than you think it is. And then next thing you know, you are puncturing the nerve"
+    },
+    {
+      "start": 765.3,
+      "end": 769.86,
+      "text": "or you have a needle in the fema artery or something, you know, that would be a bad column."
+    },
+    {
+      "start": 770.0,
+      "end": 777.5,
+      "text": "you wouldn't want that right but that's very easily avoidable if you're performing good guidance and you're able to visualize that nerve."
+    },
+    {
+      "start": 778.02,
+      "end": 779.76,
+      "text": "Now with this block you do"
+    },
+    {
+      "start": 780.1,
+      "end": 781.9,
+      "text": "want to use a larger volume, generally."
+    },
+    {
+      "start": 782.3,
+      "end": 784.26,
+      "text": "And this would be the one time that I'd recommend"
+    },
+    {
+      "start": 784.68,
+      "end": 786.2,
+      "text": "going for about 30 mls."
+    },
+    {
+      "start": 786.3,
+      "end": 788.12,
+      "text": "Now, you're still going to do 20 mls"
+    },
+    {
+      "start": 788.12,
+      "end": 789.36,
+      "text": "of your beauty game."
+    },
+    {
+      "start": 790.26,
+      "end": 793.34,
+      "text": "However, you're going to mix that with 10 ml of saline solution."
+    },
+    {
+      "start": 793.86,
+      "end": 795.98,
+      "text": "This kind of gives you a larger volume"
+    },
+    {
+      "start": 795.98,
+      "end": 797.88,
+      "text": "because you're not necessarily directing."
+    },
+    {
+      "start": 799.05,
+      "end": 799.97,
+      "text": "You know, again, you can, you can,"
+    },
+    {
+      "start": 800.0,
+      "end": 804.04,
+      "text": "You can, an expansion of this that I will talk about is the femoral block, but for the"
+    },
+    {
+      "start": 804.04,
+      "end": 808.94,
+      "text": "fascia ilioca block, through not injecting directly at the site of the femoral nerve."
+    },
+    {
+      "start": 810.03,
+      "end": 812.75,
+      "text": "So you're going to want to have a larger volume overall,"
+    },
+    {
+      "start": 813.07,
+      "end": 814.69,
+      "text": "that way you have sufficient spread, right?"
+    },
+    {
+      "start": 814.81,
+      "end": 818.71,
+      "text": "Because some of this will potentially spread laterally"
+    },
+    {
+      "start": 818.71,
+      "end": 819.97,
+      "text": "and cover your..."
+    },
+    {
+      "start": 820.0,
+      "end": 825.62,
+      "text": "lateral femoralcutaneous nerve to get some sensory coverage for the skin if that's something that you"
+    },
+    {
+      "start": 825.62,
+      "end": 829.73,
+      "text": "So, you're having that larger volume."
+    },
+    {
+      "start": 830.0,
+      "end": 832.7,
+      "text": "allows you to have spread within that fascial plane."
+    },
+    {
+      "start": 834.93,
+      "end": 837.07,
+      "text": "So here's what your general set up is going to be"
+    },
+    {
+      "start": 837.07,
+      "end": 838.15,
+      "text": "for the fascielioccal block."
+    },
+    {
+      "start": 838.53,
+      "end": 839.97,
+      "text": "You're going to have the patient lying in the..."
+    },
+    {
+      "start": 840.0,
+      "end": 846.29,
+      "text": "the supine position. It's going to be very similar to if you're doing a central line. So you're"
+    },
+    {
+      "start": 846.29,
+      "end": 849.73,
+      "text": "have your probe kind of in the same plane as the Inguinal Legament."
+    },
+    {
+      "start": 850.42,
+      "end": 852.82,
+      "text": "And you're gonna, here's what you're gonna kind of see, right?"
+    },
+    {
+      "start": 853.0,
+      "end": 854.3,
+      "text": "So you're gonna see on the right,"
+    },
+    {
+      "start": 854.48,
+      "end": 855.9,
+      "text": "it's kind of an illustrated diagram"
+    },
+    {
+      "start": 855.9,
+      "end": 857.82,
+      "text": "and on the left is what you're gonna see on the ultrasound."
+    },
+    {
+      "start": 858.34,
+      "end": 859.3,
+      "text": "So you see your femoral artery."
+    },
+    {
+      "start": 860.1,
+      "end": 865.28,
+      "text": "your femoral nerve. Again, in this particular picture, you can't see it super, super well."
+    },
+    {
+      "start": 865.3,
+      "end": 869.75,
+      "text": "It's not like very clearly hiding up, but you can see your landmarks, right? So you can see the"
+    },
+    {
+      "start": 870.0,
+      "end": 879.98,
+      "text": "You can see really ocus muscle and then in the corner there you see your subtorious muscle. So what you're going to want to do is target that facial plane that kind of lives in this area."
+    },
+    {
+      "start": 880.0,
+      "end": 884.26,
+      "text": "here. I don't know if you can see my mouse or not, but this is your fascia eliacoplane, right?"
+    },
+    {
+      "start": 884.5,
+      "end": 889.7,
+      "text": "So it's kind of what they describe as a double pop, right? So this first here is your fascia lata."
+    },
+    {
+      "start": 891.51,
+      "end": 899.97,
+      "text": "So you can either come through this or you can come through the corner of the Sartorius muscle and you're going to feel a pop when that happens right and then there's going to be."
+    },
+    {
+      "start": 900.0,
+      "end": 905.37,
+      "text": "a second pop once you enter into the fascia iliacus space and you pop through that, right?"
+    },
+    {
+      "start": 906.75,
+      "end": 909.97,
+      "text": "And it's it's hard to really describe, but you'll feel kind of a pop. It's almost like you"
+    },
+    {
+      "start": 910.0,
+      "end": 912.36,
+      "text": "if you're doing a, you know, love our puncture,"
+    },
+    {
+      "start": 912.56,
+      "end": 913.8,
+      "text": "you feel that pop kind of that,"
+    },
+    {
+      "start": 913.8,
+      "end": 915.2,
+      "text": "that's kind of that tactile feedback"
+    },
+    {
+      "start": 915.2,
+      "end": 916.06,
+      "text": "that you're looking for."
+    },
+    {
+      "start": 916.52,
+      "end": 918.08,
+      "text": "And when you feel that, you say, okay,"
+    },
+    {
+      "start": 918.24,
+      "end": 919.88,
+      "text": "I might potentially be in the correct space."
+    },
+    {
+      "start": 920.0,
+      "end": 921.76,
+      "text": "So what you're going to want to do is, of course,"
+    },
+    {
+      "start": 922.2,
+      "end": 924.58,
+      "text": "aspirate, make sure it's negative for any blood,"
+    },
+    {
+      "start": 925.04,
+      "end": 927.8,
+      "text": "then you can inject about an ML and you can see,"
+    },
+    {
+      "start": 928.12,
+      "end": 929.9,
+      "text": "if you're in the actual..."
+    },
+    {
+      "start": 930.0,
+      "end": 934.12,
+      "text": "facial plane, you're going to start to see kind of an unzipering of that"
+    },
+    {
+      "start": 934.12,
+      "end": 937.72,
+      "text": "facial plane. And it's going to be very easy. You're going to be a very low"
+    },
+    {
+      "start": 937.72,
+      "end": 939.86,
+      "text": "resistance, right? So you never want to inject"
+    },
+    {
+      "start": 940.06,
+      "end": 945.26,
+      "text": "You're anesthetic if you feel a lot of resistance because you're probably not in the right location"
+    },
+    {
+      "start": 945.7,
+      "end": 949.87,
+      "text": "I've never done in a block where it's been hard to push that's like a hard"
+    },
+    {
+      "start": 950.0,
+      "end": 954.67,
+      "text": "know, stop, you know, reassess, make sure your needles are the right position, you know,"
+    },
+    {
+      "start": 954.81,
+      "end": 957.05,
+      "text": "withdraw a little bit, you know, reassess everything."
+    },
+    {
+      "start": 957.29,
+      "end": 959.97,
+      "text": "You should never be injecting when it's hard to..."
+    },
+    {
+      "start": 960.13,
+      "end": 966.21,
+      "text": "you know, inject that anesthetic. It should be very easy. The needle should just the syringe should be very easy to push."
+    },
+    {
+      "start": 966.43,
+      "end": 969.55,
+      "text": "Because again, you're going into a potential space. It's a facial plane."
+    },
+    {
+      "start": 970.03,
+      "end": 972.55,
+      "text": "be very easy to check here. And you're going to see that"
+    },
+    {
+      "start": 972.55,
+      "end": 976.61,
+      "text": "unseparated. So here's another illustration here. As you can"
+    },
+    {
+      "start": 976.61,
+      "end": 979.9,
+      "text": "see, you know, that target is that"
+    },
+    {
+      "start": 980.48,
+      "end": 989.98,
+      "text": "So one thing to keep in mind with the fascilyoccaplonk is you don't want to have too much probe pressure if you have excessive probe pressure, what that can do is actually close."
+    },
+    {
+      "start": 990.0,
+      "end": 999.6,
+      "text": "that facial plane. And it can make it more difficult for you to inject. And, you know, if you're not able to inject, you might get confused. Oh, it's hard for me to inject."
+    },
+    {
+      "start": 1000.0,
+      "end": 1001.92,
+      "text": "be because you're compressing that"
+    },
+    {
+      "start": 1001.92,
+      "end": 1003.02,
+      "text": "fascial plane with your probe."
+    },
+    {
+      "start": 1003.26,
+      "end": 1004.98,
+      "text": "So you don't want to use too much"
+    },
+    {
+      "start": 1004.98,
+      "end": 1005.5,
+      "text": "probe pressure."
+    },
+    {
+      "start": 1005.96,
+      "end": 1006.4,
+      "text": "Keep it light."
+    },
+    {
+      "start": 1006.52,
+      "end": 1008.26,
+      "text": "Again, your only goal here is"
+    },
+    {
+      "start": 1008.26,
+      "end": 1009.74,
+      "text": "to just visualize the structures."
+    },
+    {
+      "start": 1010.26,
+      "end": 1012.14,
+      "text": "And these are generally superficial structures,"
+    },
+    {
+      "start": 1012.16,
+      "end": 1015.7,
+      "text": "so you shouldn't have to press hard to be able to visualize that."
+    },
+    {
+      "start": 1015.84,
+      "end": 1017.2,
+      "text": "So keep your probe nice and light"
+    },
+    {
+      "start": 1017.2,
+      "end": 1018.88,
+      "text": "and that'll help you kind of make sure"
+    },
+    {
+      "start": 1018.88,
+      "end": 1019.74,
+      "text": "that you're in the right space."
+    },
+    {
+      "start": 1020.35,
+      "end": 1022.15,
+      "text": "you know, and check that one or two of Mel's."
+    },
+    {
+      "start": 1022.64,
+      "end": 1024.22,
+      "text": "You'll see the fashion will plane separate"
+    },
+    {
+      "start": 1024.22,
+      "end": 1025.93,
+      "text": "than you know you're in the right space"
+    },
+    {
+      "start": 1025.93,
+      "end": 1027.94,
+      "text": "and you can inject the rest of your anesthetic"
+    },
+    {
+      "start": 1029.19,
+      "end": 1029.81,
+      "text": "and expand."
+    },
+    {
+      "start": 1030.0,
+      "end": 1034.34,
+      "text": "on this is going to be the femoral walk, right? So if you're a little bit more advanced and you"
+    },
+    {
+      "start": 1034.34,
+      "end": 1039.44,
+      "text": "and you're very comfortable with your needle guidance and you feel like that I've done a much"
+    },
+    {
+      "start": 1039.44,
+      "end": 1039.82,
+      "text": "nerve loss."
+    },
+    {
+      "start": 1040.13,
+      "end": 1041.37,
+      "text": "or I feel pretty good about this,"
+    },
+    {
+      "start": 1041.95,
+      "end": 1044.87,
+      "text": "and you want to get a little bit better blockade,"
+    },
+    {
+      "start": 1045.17,
+      "end": 1046.29,
+      "text": "you can do the femoral block."
+    },
+    {
+      "start": 1046.81,
+      "end": 1048.03,
+      "text": "So this is basically going to be"
+    },
+    {
+      "start": 1048.03,
+      "end": 1049.96,
+      "text": "the same thing as the Vashelius."
+    },
+    {
+      "start": 1050.0,
+      "end": 1055.26,
+      "text": "block, except that you're going to be injecting directly at the location of the federal nerve."
+    },
+    {
+      "start": 1056.08,
+      "end": 1056.18,
+      "text": "Right."
+    },
+    {
+      "start": 1056.36,
+      "end": 1059.59,
+      "text": "So again, keeping in mind if you're really good at needle visualization."
+    },
+    {
+      "start": 1060.0,
+      "end": 1064.1,
+      "text": "And you feel confident, you know, it's a lot closer to the femoral artery, you know,"
+    },
+    {
+      "start": 1064.3,
+      "end": 1066.6,
+      "text": "and you're, you don't want to have an intranural induction."
+    },
+    {
+      "start": 1066.6,
+      "end": 1068.79,
+      "text": "You don't want to poke your femoral nerve."
+    },
+    {
+      "start": 1068.99,
+      "end": 1069.77,
+      "text": "That's not good, right?"
+    },
+    {
+      "start": 1069.89,
+      "end": 1069.97,
+      "text": "So"
+    },
+    {
+      "start": 1070.0,
+      "end": 1071.78,
+      "text": "So if you're comfortable with the technique,"
+    },
+    {
+      "start": 1071.78,
+      "end": 1074.55,
+      "text": "this is a great way because it doesn't require"
+    },
+    {
+      "start": 1074.55,
+      "end": 1075.89,
+      "text": "quite as large of a volume."
+    },
+    {
+      "start": 1078.06,
+      "end": 1079.97,
+      "text": "But again, keeping in mind, you don't want to..."
+    },
+    {
+      "start": 1081.42,
+      "end": 1089.97,
+      "text": "So here's an example of femoral walk, you can see the needle being visualized here, you can see the femoral nerve, you know, the"
+    },
+    {
+      "start": 1090.0,
+      "end": 1096.81,
+      "text": "needles. Some might say, oh, that's precarious, right? You know, this particular provider is comfortable"
+    },
+    {
+      "start": 1096.81,
+      "end": 1099.57,
+      "text": "of what that came in the fascial plane, separate a little bit."
+    },
+    {
+      "start": 1100.0,
+      "end": 1105.07,
+      "text": "got the needle is directly on top of the nerve bundle, right?"
+    },
+    {
+      "start": 1105.25,
+      "end": 1108.7,
+      "text": "And again, if you're, you know, if you have access to a nerve"
+    },
+    {
+      "start": 1108.7,
+      "end": 1109.22,
+      "text": "simulator,"
+    },
+    {
+      "start": 1110.0,
+      "end": 1111.0,
+      "text": "be useful for that, right?"
+    },
+    {
+      "start": 1111.3,
+      "end": 1114.34,
+      "text": "Before you start injecting, making sure you're not inside"
+    },
+    {
+      "start": 1114.34,
+      "end": 1117.36,
+      "text": "of the nerve and that you're surrounding the nerve,"
+    },
+    {
+      "start": 1117.36,
+      "end": 1118.56,
+      "text": "you're bathing in that solution."
+    },
+    {
+      "start": 1120.32,
+      "end": 1122.64,
+      "text": "going to move down the leg. We're going to talk about the"
+    },
+    {
+      "start": 1122.64,
+      "end": 1127.46,
+      "text": "saffonus block. So saffonus block is saffonus nerve,"
+    },
+    {
+      "start": 1127.46,
+      "end": 1129.44,
+      "text": "rather as you're going to run down the whole"
+    },
+    {
+      "start": 1130.03,
+      "end": 1139.89,
+      "text": "extremiting, but depending on what it is that you want to an SS size, you can block it in several locations, the easiest of which"
+    },
+    {
+      "start": 1140.29,
+      "end": 1141.93,
+      "text": "is gonna be the A-ductor canal block."
+    },
+    {
+      "start": 1143.17,
+      "end": 1144.85,
+      "text": "The, I will talk about distal block,"
+    },
+    {
+      "start": 1144.95,
+      "end": 1146.27,
+      "text": "but it's a little bit harder to do."
+    },
+    {
+      "start": 1146.73,
+      "end": 1148.51,
+      "text": "It's harder to see that, and it's very small."
+    },
+    {
+      "start": 1148.75,
+      "end": 1149.93,
+      "text": "So it's easier to get"
+    },
+    {
+      "start": 1150.03,
+      "end": 1152.21,
+      "text": "that saffron is blocked because you got a really good landmark."
+    },
+    {
+      "start": 1152.87,
+      "end": 1155.19,
+      "text": "So this is going to be very useful if someone"
+    },
+    {
+      "start": 1155.19,
+      "end": 1159.86,
+      "text": "has a laceration to the anterior shin."
+    },
+    {
+      "start": 1160.0,
+      "end": 1165.66,
+      "text": "That's a great thing for that. It's also going to provide excellent coverage to the medial ankle, right?"
+    },
+    {
+      "start": 1165.94,
+      "end": 1169.81,
+      "text": "So much like your your femoral block would also provide"
+    },
+    {
+      "start": 1170.06,
+      "end": 1174.06,
+      "text": "the same analogies here, but with the femoral block, you know you're going to get motor blockade,"
+    },
+    {
+      "start": 1174.12,
+      "end": 1179.98,
+      "text": "right? So keeping in mind that this is really a sensory blockade. However, there are"
+    },
+    {
+      "start": 1180.0,
+      "end": 1185.14,
+      "text": "some neurofibres that come off of the femoral nerve that can provide some"
+    },
+    {
+      "start": 1185.14,
+      "end": 1189.9,
+      "text": "pros coverage, so especially if you're if you're injecting a larger volume, you"
+    },
+    {
+      "start": 1190.0,
+      "end": 1193.0,
+      "text": "might get some partial motor blockade of revasses media."
+    },
+    {
+      "start": 1193.36,
+      "end": 1196.3,
+      "text": "So just keeping in mind, letting your patients know,"
+    },
+    {
+      "start": 1196.34,
+      "end": 1199.67,
+      "text": "hey, just be cautious when you're ambulating."
+    },
+    {
+      "start": 1200.19,
+      "end": 1209.89,
+      "text": "You know, this might affect your motor function for a little bit, so keeping that in mind, you know, again, and if if you're, you know, if you're doing a laceration repair and you're using light a cane, it's not going to last"
+    },
+    {
+      "start": 1210.0,
+      "end": 1215.15,
+      "text": "as long, and maybe not really a big issue, but just making sure that you're educating"
+    },
+    {
+      "start": 1215.15,
+      "end": 1219.37,
+      "text": "your patients so they don't end up getting a fall all coming back to the emergency department."
+    },
+    {
+      "start": 1220.1,
+      "end": 1223.16,
+      "text": "All right, so now this is a little bit smaller volume."
+    },
+    {
+      "start": 1223.22,
+      "end": 1225.1,
+      "text": "Don't necessarily need that 20 miles,"
+    },
+    {
+      "start": 1225.28,
+      "end": 1227.26,
+      "text": "but you can do 20 miles if you want more."
+    },
+    {
+      "start": 1227.42,
+      "end": 1228.98,
+      "text": "Again, keeping in mind that larger volume"
+    },
+    {
+      "start": 1228.98,
+      "end": 1229.98,
+      "text": "is more likely to come."
+    },
+    {
+      "start": 1230.0,
+      "end": 1234.21,
+      "text": "that motor blockade, so taking them out, but what your indications are, you know, if you really"
+    },
+    {
+      "start": 1234.21,
+      "end": 1239.34,
+      "text": "need some good, deep pain because patient, you know, has a, you know, fracture."
+    },
+    {
+      "start": 1240.29,
+      "end": 1244.84,
+      "text": "of the meal, or something like that, you might want that large volume."
+    },
+    {
+      "start": 1246.94,
+      "end": 1249.96,
+      "text": "So, for this technique, you're going to want to have the patients present-"
+    },
+    {
+      "start": 1250.0,
+      "end": 1252.22,
+      "text": "positioned very much like you're doing a DVT scan."
+    },
+    {
+      "start": 1253.1,
+      "end": 1257.08,
+      "text": "So as you can see, one thing I want to point out in this photo"
+    },
+    {
+      "start": 1257.7,
+      "end": 1259.88,
+      "text": "is when you're doing blocks of."
+    },
+    {
+      "start": 1260.0,
+      "end": 1266.84,
+      "text": "the extremities, especially lower extremities. Often you're not going to have your needle entering"
+    },
+    {
+      "start": 1266.84,
+      "end": 1269.28,
+      "text": "bring in at the location of the probe."
+    },
+    {
+      "start": 1270.1,
+      "end": 1279.65,
+      "text": "So like, you know, when you do a central line, for example, right, you're going to be the needle is going to be entering the skin very close to the probe."
+    },
+    {
+      "start": 1280.19,
+      "end": 1282.57,
+      "text": "and you're generally coming into that 45 degree angle."
+    },
+    {
+      "start": 1283.17,
+      "end": 1284.93,
+      "text": "People are kind of familiar with that technique, great."
+    },
+    {
+      "start": 1285.29,
+      "end": 1288.07,
+      "text": "But with the in-plane technique with the nerve lock"
+    },
+    {
+      "start": 1288.07,
+      "end": 1289.97,
+      "text": "and on your, your, you know, block."
+    },
+    {
+      "start": 1293.34,
+      "end": 1299.97,
+      "text": "So it's actually easier to perform this block if you enter in lateral to the location of the"
+    },
+    {
+      "start": 1300.0,
+      "end": 1305.23,
+      "text": "the probe and as you can see here the needle is almost flat so it's actually far"
+    },
+    {
+      "start": 1305.23,
+      "end": 1309.98,
+      "text": "easier if you come in at pretty much flat approach. The reason for"
+    },
+    {
+      "start": 1310.0,
+      "end": 1314.9,
+      "text": "this is if you come in close to the probe, you're going to have to come in very, very steeply"
+    },
+    {
+      "start": 1314.9,
+      "end": 1318.74,
+      "text": "and it's going to be far more difficult for you to visualize the needle."
+    },
+    {
+      "start": 1320.0,
+      "end": 1323.22,
+      "text": "it's more likely that you're going to be unsuccessful with this block."
+    },
+    {
+      "start": 1323.4,
+      "end": 1326.92,
+      "text": "But if you come in lateral to the probe and you come in with a flat"
+    },
+    {
+      "start": 1326.92,
+      "end": 1329.88,
+      "text": "angle, then you're going to be able to visualize your needle kind of"
+    },
+    {
+      "start": 1330.0,
+      "end": 1333.12,
+      "text": "entering into the view on the ultrasound machine"
+    },
+    {
+      "start": 1333.43,
+      "end": 1335.68,
+      "text": "and you're gonna see it in this entirety."
+    },
+    {
+      "start": 1336.24,
+      "end": 1338.26,
+      "text": "It's gonna be a lot easier to perform this technique"
+    },
+    {
+      "start": 1338.65,
+      "end": 1339.98,
+      "text": "and you're gonna have far more sick."
+    },
+    {
+      "start": 1340.0,
+      "end": 1346.28,
+      "text": "if you do this. So when you look at the ultrasound, this is what you're going to visualize. And again,"
+    },
+    {
+      "start": 1346.62,
+      "end": 1349.42,
+      "text": "and this is why this is a lot easier than your distal block is."
+    },
+    {
+      "start": 1350.29,
+      "end": 1352.83,
+      "text": "You know, most people are able to find your vasculature"
+    },
+    {
+      "start": 1352.83,
+      "end": 1354.01,
+      "text": "if you've got DVT scans,"
+    },
+    {
+      "start": 1354.01,
+      "end": 1356.48,
+      "text": "be familiar with that anatomy."
+    },
+    {
+      "start": 1356.84,
+      "end": 1358.78,
+      "text": "So you're going to follow your femoral vein."
+    },
+    {
+      "start": 1359.36,
+      "end": 1359.98,
+      "text": "It's going to be..."
+    },
+    {
+      "start": 1360.0,
+      "end": 1365.29,
+      "text": "be about mid die, right? And what you're going to see is the"
+    },
+    {
+      "start": 1365.29,
+      "end": 1369.12,
+      "text": "social race muscle kind of acts like the cap, the lid, right?"
+    },
+    {
+      "start": 1370.0,
+      "end": 1372.86,
+      "text": "And then you're going to have your vastest media Alice and your Dr."
+    },
+    {
+      "start": 1372.94,
+      "end": 1378.15,
+      "text": "Magus on your vastest media Alice is actually going to be on the lateral side of the screen,"
+    },
+    {
+      "start": 1378.15,
+      "end": 1379.57,
+      "text": "even though it's vastest media Alice."
+    },
+    {
+      "start": 1380.0,
+      "end": 1385.19,
+      "text": "just keeping that in mind right. And then your saffonous nerve is going to be right next to your"
+    },
+    {
+      "start": 1385.19,
+      "end": 1389.71,
+      "text": "femoral artery. Sometimes it could be a little deeper down next vein again."
+    },
+    {
+      "start": 1390.03,
+      "end": 1391.29,
+      "text": "anatomical variants, but generally,"
+    },
+    {
+      "start": 1391.79,
+      "end": 1394.03,
+      "text": "generally speaking, if you can identify the femoral artery,"
+    },
+    {
+      "start": 1394.23,
+      "end": 1396.12,
+      "text": "it's going to be between the femoral artery,"
+    },
+    {
+      "start": 1396.32,
+      "end": 1397.8,
+      "text": "such a serious, invasive, medialysis,"
+    },
+    {
+      "start": 1397.96,
+      "end": 1398.94,
+      "text": "kind of live in that trincolory."
+    },
+    {
+      "start": 1400.13,
+      "end": 1404.56,
+      "text": "So this is kind of another view here that sometimes,"
+    },
+    {
+      "start": 1404.8,
+      "end": 1406.64,
+      "text": "you know, it might be a little bit deeper."
+    },
+    {
+      "start": 1407.18,
+      "end": 1408.94,
+      "text": "You might have difficulty visualizing it."
+    },
+    {
+      "start": 1409.12,
+      "end": 1409.98,
+      "text": "So thinking about..."
+    },
+    {
+      "start": 1410.42,
+      "end": 1416.44,
+      "text": "Kind of the anatomy of what you're looking at so you can see here as you see this this this muscle right here"
+    },
+    {
+      "start": 1416.44,
+      "end": 1419.97,
+      "text": "This is your fastest media as muscle right and then up on time"
+    },
+    {
+      "start": 1420.0,
+      "end": 1425.04,
+      "text": "of that is the corner of the Sartorius muscle here. So down in the bottom right hand corner,"
+    },
+    {
+      "start": 1425.5,
+      "end": 1429.82,
+      "text": "that would be the location of your nerve acutement. But you can't really visual-"
+    },
+    {
+      "start": 1430.0,
+      "end": 1438.02,
+      "text": "wise it well here. So this gives you an opportunity that if you come in with your needle and you can target this"
+    },
+    {
+      "start": 1438.02,
+      "end": 1439.82,
+      "text": "facial plane you will get"
+    },
+    {
+      "start": 1440.13,
+      "end": 1445.58,
+      "text": "spread down to the Neurovaska but also if you're worried that you don't want to inject"
+    },
+    {
+      "start": 1445.58,
+      "end": 1449.97,
+      "text": "into the femoral artery for good reason, right? Then if you target this"
+    },
+    {
+      "start": 1450.1,
+      "end": 1454.08,
+      "text": "actual plane and you can successfully, you know, get your needle here."
+    },
+    {
+      "start": 1454.56,
+      "end": 1458.3,
+      "text": "You get that pop, put, put a couple of miles in there, you see that spread."
+    },
+    {
+      "start": 1458.3,
+      "end": 1459.84,
+      "text": "You're like, okay, now I'm in the right location."
+    },
+    {
+      "start": 1460.0,
+      "end": 1464.74,
+      "text": "that you can kind of hide your dissect where you advance your needle through that"
+    },
+    {
+      "start": 1465.73,
+      "end": 1469.91,
+      "text": "fluid that you started doing jacked and it gives you kind of a pathway down so you can work."
+    },
+    {
+      "start": 1470.06,
+      "end": 1473.7,
+      "text": "right closer down towards the the Neurovascular Fundals. You can get more"
+    },
+    {
+      "start": 1473.7,
+      "end": 1477.44,
+      "text": "delivery and locations that you want. But it's a little bit safer way to do it."
+    },
+    {
+      "start": 1477.64,
+      "end": 1479.42,
+      "text": "That way you're not putting it"
+    },
+    {
+      "start": 1480.0,
+      "end": 1481.0,
+      "text": "right there next to the artery."
+    },
+    {
+      "start": 1481.38,
+      "end": 1482.86,
+      "text": "If, again, if you're worried about technique,"
+    },
+    {
+      "start": 1483.42,
+      "end": 1485.2,
+      "text": "this is another alternative that you can do"
+    },
+    {
+      "start": 1485.2,
+      "end": 1487.99,
+      "text": "is just to kind of come in a little bit more laterally"
+    },
+    {
+      "start": 1488.28,
+      "end": 1489.82,
+      "text": "target that facial plane."
+    },
+    {
+      "start": 1491.73,
+      "end": 1495.27,
+      "text": "Here's an example of the lower portion of the saffonize block."
+    },
+    {
+      "start": 1495.79,
+      "end": 1497.75,
+      "text": "This is a below the D-technique."
+    },
+    {
+      "start": 1497.93,
+      "end": 1499.97,
+      "text": "This, again, is going to be..."
+    },
+    {
+      "start": 1500.38,
+      "end": 1505.92,
+      "text": "a little bit more challenging to perform because it's a very small nerve. As you can see on the"
+    },
+    {
+      "start": 1505.92,
+      "end": 1508.53,
+      "text": "image in the right here, who's just affinist,"
+    },
+    {
+      "start": 1508.57,
+      "end": 1509.97,
+      "text": "you're a fundamental parent, it's it's it's it's it's it."
+    },
+    {
+      "start": 1510.03,
+      "end": 1515.42,
+      "text": "it's quite small. So you have to be able to locate your saffonous vein and it's going to be located"
+    },
+    {
+      "start": 1515.42,
+      "end": 1519.7,
+      "text": "directly next to that around the area of the Tibial Tuporosity."
+    },
+    {
+      "start": 1520.26,
+      "end": 1529.39,
+      "text": "So again, this is an excellent block if you want to provide superficial sensory blockade to the you know, enterimedial"
+    },
+    {
+      "start": 1530.16,
+      "end": 1534.66,
+      "text": "or extremity, you have a laceration there or something, excellent for that. But again, keeping"
+    },
+    {
+      "start": 1534.66,
+      "end": 1538.21,
+      "text": "in mind, it's a little bit more difficult to perform. And you're probably going to have"
+    },
+    {
+      "start": 1538.21,
+      "end": 1539.97,
+      "text": "more success if you, if you..."
+    },
+    {
+      "start": 1540.0,
+      "end": 1544.63,
+      "text": "the proximal block. Okay, keeping in mind, you know, again, like I said, you can have that"
+    },
+    {
+      "start": 1544.63,
+      "end": 1548.41,
+      "text": "partial motor blockade, but it's not always going to give you that motor blockade. If you're"
+    },
+    {
+      "start": 1548.41,
+      "end": 1549.97,
+      "text": "Doing eloceration repair, you know, use..."
+    },
+    {
+      "start": 1550.74,
+      "end": 1554.76,
+      "text": "it's going to be relatively fast acting, you might be absorbing the patient and the emergency"
+    },
+    {
+      "start": 1554.76,
+      "end": 1559.44,
+      "text": "department anyways while they're waiting for the tetanus, et cetera, et cetera. So it may not really"
+    },
+    {
+      "start": 1559.44,
+      "end": 1559.98,
+      "text": "be as big of a..."
+    },
+    {
+      "start": 1560.0,
+      "end": 1567.27,
+      "text": "issue as it could be. So, you know, timing wise, you know, again, it might be easier just to do that"
+    },
+    {
+      "start": 1567.27,
+      "end": 1569.97,
+      "text": "Rockle Walk, but you can target those small"
+    },
+    {
+      "start": 1570.0,
+      "end": 1572.4,
+      "text": "or distal nerves if you want to."
+    },
+    {
+      "start": 1573.76,
+      "end": 1575.7,
+      "text": "Next we'll talk about the populous yield block."
+    },
+    {
+      "start": 1577.27,
+      "end": 1579.83,
+      "text": "So this is going to cover everything."
+    },
+    {
+      "start": 1580.0,
+      "end": 1583.68,
+      "text": "below the knee, that's not covered by your satinist block."
+    },
+    {
+      "start": 1583.9,
+      "end": 1588.46,
+      "text": "So if you want to have complete analgesia below the knee,"
+    },
+    {
+      "start": 1588.66,
+      "end": 1589.66,
+      "text": "then you can combine."
+    },
+    {
+      "start": 1590.0,
+      "end": 1592.02,
+      "text": "your saffonist block with your papal teal block."
+    },
+    {
+      "start": 1592.66,
+      "end": 1595.0,
+      "text": "So again, you can see in the picture in the right there,"
+    },
+    {
+      "start": 1595.58,
+      "end": 1599.29,
+      "text": "you don't have coverage on the medial side, right?"
+    },
+    {
+      "start": 1599.47,
+      "end": 1599.97,
+      "text": "So that medial."
+    },
+    {
+      "start": 1600.0,
+      "end": 1604.74,
+      "text": "surface meal ankle not going to be covered by the poverty of block, but everything else is going"
+    },
+    {
+      "start": 1604.74,
+      "end": 1609.98,
+      "text": "to be covered by that. And so this is an excellent choice for Achilles Robb"
+    },
+    {
+      "start": 1610.03,
+      "end": 1615.05,
+      "text": "sure Achilles partial tear something like that would be this would be a great option for that."
+    },
+    {
+      "start": 1615.61,
+      "end": 1619.83,
+      "text": "As I mentioned before with technique"
+    },
+    {
+      "start": 1620.0,
+      "end": 1629.94,
+      "text": "I would actually point out something that I would approve on this operators technique they're coming in closer to the probe I probably move that down come in a little bit flatter approach."
+    },
+    {
+      "start": 1630.51,
+      "end": 1638.68,
+      "text": "Again showing the distributions again pretty much covering everything below the knee with the exception of the medial side"
+    },
+    {
+      "start": 1638.68,
+      "end": 1639.86,
+      "text": "Right, so you can see that's"
+    },
+    {
+      "start": 1640.0,
+      "end": 1641.42,
+      "text": "of the media by all us, right?"
+    },
+    {
+      "start": 1641.56,
+      "end": 1642.64,
+      "text": "So if you have a fracture there,"
+    },
+    {
+      "start": 1644.04,
+      "end": 1646.28,
+      "text": "you're gonna want to combine this with the saffonous block"
+    },
+    {
+      "start": 1646.68,
+      "end": 1648.16,
+      "text": "to get complete analgesia."
+    },
+    {
+      "start": 1648.93,
+      "end": 1649.97,
+      "text": "But again, keeping in mind,"
+    },
+    {
+      "start": 1650.0,
+      "end": 1656.09,
+      "text": "You know, like I mentioned, the compartment syndrome is going to be most likely to occur in the distal"
+    },
+    {
+      "start": 1656.09,
+      "end": 1659.97,
+      "text": "extremity, right? So, you know, if you're, if you're doing this blood."
+    },
+    {
+      "start": 1660.06,
+      "end": 1662.88,
+      "text": "and keeping in touch with your specialists is important, right?"
+    },
+    {
+      "start": 1664.02,
+      "end": 1666.04,
+      "text": "So to perform the poverty you'll block,"
+    },
+    {
+      "start": 1667.37,
+      "end": 1669.85,
+      "text": "what you're gonna wanna do is it's essentially a sciatic nerve."
+    },
+    {
+      "start": 1670.0,
+      "end": 1675.69,
+      "text": "block, but it's directly at the location of the bifurcation between the tibial nerve and"
+    },
+    {
+      "start": 1675.69,
+      "end": 1676.73,
+      "text": "the common perial nerve."
+    },
+    {
+      "start": 1677.15,
+      "end": 1679.97,
+      "text": "So you're going to want to start in the papal teofaza with"
+    },
+    {
+      "start": 1680.19,
+      "end": 1683.89,
+      "text": "patient in the prone position, you can perform this in a supine patient."
+    },
+    {
+      "start": 1683.89,
+      "end": 1688.88,
+      "text": "It's a little bit more challenging, but so if their patient's able to go prone,"
+    },
+    {
+      "start": 1689.18,
+      "end": 1689.8,
+      "text": "it's going to be the"
+    },
+    {
+      "start": 1690.0,
+      "end": 1694.32,
+      "text": "vertebrate. So with the patient in the prone position, you target your"
+    },
+    {
+      "start": 1694.32,
+      "end": 1699.11,
+      "text": "papal teal vessels, much like you would in a DVT scan. Then what you're"
+    },
+    {
+      "start": 1699.11,
+      "end": 1699.77,
+      "text": "going to do is"
+    },
+    {
+      "start": 1700.13,
+      "end": 1705.4,
+      "text": "Crack up approximately until you find the location where your tibial nerve and your common"
+    },
+    {
+      "start": 1705.4,
+      "end": 1709.31,
+      "text": "perineal nerve come together to form the dyslexia agniropath."
+    },
+    {
+      "start": 1710.0,
+      "end": 1715.28,
+      "text": "And so you're going to target that location at the actual bifurcation, but that's where you're"
+    },
+    {
+      "start": 1715.28,
+      "end": 1719.63,
+      "text": "going to want to inject, right? So if you go distal to that, you're not going to get complete coverage."
+    },
+    {
+      "start": 1720.0,
+      "end": 1722.5,
+      "text": "you're going to hit one or the other and you may not get"
+    },
+    {
+      "start": 1722.5,
+      "end": 1723.06,
+      "text": "complete coverage."
+    },
+    {
+      "start": 1724.85,
+      "end": 1727.31,
+      "text": "So again, as you can see, image on the right"
+    },
+    {
+      "start": 1727.31,
+      "end": 1729.93,
+      "text": "is another classic example of what I talked about."
+    },
+    {
+      "start": 1730.45,
+      "end": 1733.15,
+      "text": "where you wanna come in with that flat needle approach"
+    },
+    {
+      "start": 1734.05,
+      "end": 1736.17,
+      "text": "because you're gonna have far more success."
+    },
+    {
+      "start": 1736.51,
+      "end": 1737.27,
+      "text": "So when you do that,"
+    },
+    {
+      "start": 1737.47,
+      "end": 1739.85,
+      "text": "you're gonna see your needle kind of enter in."
+    },
+    {
+      "start": 1740.0,
+      "end": 1746.74,
+      "text": "this area, but we're going to see your needle coming in from the side here and you're"
+    },
+    {
+      "start": 1746.74,
+      "end": 1749.36,
+      "text": "going to visualize it rather than something coming in really steep here."
+    },
+    {
+      "start": 1750.0,
+      "end": 1754.06,
+      "text": "it's going to be harder to see, it's just going to make the technique more difficult."
+    },
+    {
+      "start": 1755.2,
+      "end": 1759.24,
+      "text": "And, you know, you have the anatomy to your advantage, so it's just it's far easier to come in with a flat"
+    },
+    {
+      "start": 1759.24,
+      "end": 1759.5,
+      "text": "approach."
+    },
+    {
+      "start": 1760.1,
+      "end": 1761.52,
+      "text": "and you're going to see that come right in."
+    },
+    {
+      "start": 1762.05,
+      "end": 1764.7,
+      "text": "You can target that location, you get that block done."
+    },
+    {
+      "start": 1765.52,
+      "end": 1768.59,
+      "text": "You can see the pictures here on the left."
+    },
+    {
+      "start": 1768.85,
+      "end": 1769.97,
+      "text": "You can see is a dining area."
+    },
+    {
+      "start": 1770.0,
+      "end": 1774.22,
+      "text": "make the video here. If you look closely, you'll see this hybrid"
+    },
+    {
+      "start": 1774.22,
+      "end": 1777.78,
+      "text": "code structure here in this one, right? So that's the location"
+    },
+    {
+      "start": 1777.78,
+      "end": 1779.86,
+      "text": "of the bi-procation, right? So you're tracking"
+    },
+    {
+      "start": 1780.0,
+      "end": 1784.22,
+      "text": "up, so you're going to see the vessels and you may or may not see the vessels as you track"
+    },
+    {
+      "start": 1784.22,
+      "end": 1789.47,
+      "text": "up approximately to the location of the bifurcation. You should, but you may not always put that"
+    },
+    {
+      "start": 1790.0,
+      "end": 1792.0,
+      "text": "again, that's your landmarks, you're going to start in the"
+    },
+    {
+      "start": 1792.0,
+      "end": 1793.48,
+      "text": "popliteal, you don't work your way up"
+    },
+    {
+      "start": 1793.48,
+      "end": 1796.82,
+      "text": "approximately, do you find where the two nerves come together,"
+    },
+    {
+      "start": 1797.14,
+      "end": 1799.94,
+      "text": "then you're going to bathe that bifurcation area."
+    },
+    {
+      "start": 1800.0,
+      "end": 1803.7,
+      "text": "and the example on the right is what you're going to see afterwards where you see"
+    },
+    {
+      "start": 1804.62,
+      "end": 1809.98,
+      "text": "anticofluids surrounding both nerve-sheet areas, right? So that tells you that you got."
+    },
+    {
+      "start": 1810.35,
+      "end": 1816.85,
+      "text": "both nerves, you're going to get good blockade. Next we'll go and jump back up and talk about the"
+    },
+    {
+      "start": 1816.85,
+      "end": 1818.59,
+      "text": "This is a sadic herb block. This is"
+    },
+    {
+      "start": 1820.67,
+      "end": 1822.97,
+      "text": "not something that I think would be as common"
+    },
+    {
+      "start": 1822.97,
+      "end": 1823.89,
+      "text": "in the emergency department."
+    },
+    {
+      "start": 1824.11,
+      "end": 1827.42,
+      "text": "And it's also a very, very deep block."
+    },
+    {
+      "start": 1828.2,
+      "end": 1829.98,
+      "text": "You know, again, it's gonna give you..."
+    },
+    {
+      "start": 1830.32,
+      "end": 1838.74,
+      "text": "extensive coverage of the of the extremity and it's it's really more of a surgical anesthesia block than it is an"
+    },
+    {
+      "start": 1838.74,
+      "end": 1839.84,
+      "text": "the University Department because, again,"
+    },
+    {
+      "start": 1840.03,
+      "end": 1843.01,
+      "text": "you can target the specific areas that you're interested in,"
+    },
+    {
+      "start": 1843.45,
+      "end": 1847.3,
+      "text": "because it's unless you have extensive lacerations"
+    },
+    {
+      "start": 1847.3,
+      "end": 1849.28,
+      "text": "of some big motor vehicle accident or something."
+    },
+    {
+      "start": 1849.28,
+      "end": 1849.84,
+      "text": "Thank you very much."
+    },
+    {
+      "start": 1850.0,
+      "end": 1856.32,
+      "text": "In which case, it might be difficult to get access to the area anyways, but generally"
+    },
+    {
+      "start": 1856.32,
+      "end": 1859.49,
+      "text": "you're saying, okay, well, if I have something going on at the ankle."
+    },
+    {
+      "start": 1860.19,
+      "end": 1861.17,
+      "text": "and I just need to block the ankle."
+    },
+    {
+      "start": 1861.31,
+      "end": 1862.51,
+      "text": "I don't need to block the whole leg, right?"
+    },
+    {
+      "start": 1862.77,
+      "end": 1866.25,
+      "text": "So, but it is an option."
+    },
+    {
+      "start": 1866.73,
+      "end": 1869.63,
+      "text": "So, like I said, you're gonna get very excellent blockade."
+    },
+    {
+      "start": 1870.0,
+      "end": 1873.22,
+      "text": "not going to get that media coverage is not going to cover what's in the"
+    },
+    {
+      "start": 1873.22,
+      "end": 1878.82,
+      "text": "femoral. But everything else is pretty much covered. So all that post"
+    },
+    {
+      "start": 1878.82,
+      "end": 1879.58,
+      "text": "steer your part."
+    },
+    {
+      "start": 1880.0,
+      "end": 1881.56,
+      "text": "Everything that's covered in the Papa teal"
+    },
+    {
+      "start": 1881.56,
+      "end": 1882.96,
+      "text": "is going to be covered by the sciatic,"
+    },
+    {
+      "start": 1882.96,
+      "end": 1883.98,
+      "text": "because it's the same nerve."
+    },
+    {
+      "start": 1884.08,
+      "end": 1885.58,
+      "text": "It's just more proximally."
+    },
+    {
+      "start": 1886.1,
+      "end": 1887.6,
+      "text": "So you're going to be able to get some coverage"
+    },
+    {
+      "start": 1888.47,
+      "end": 1889.81,
+      "text": "of the actual knee itself."
+    },
+    {
+      "start": 1890.62,
+      "end": 1899.98,
+      "text": "And of the of the femoral area as well in the posterior leg. So to perform this block, as I mentioned, it's a little bit more challenging."
+    },
+    {
+      "start": 1900.0,
+      "end": 1901.76,
+      "text": "because this is a very deep lock."
+    },
+    {
+      "start": 1901.98,
+      "end": 1904.47,
+      "text": "So to do this under ultrasound guidance,"
+    },
+    {
+      "start": 1904.65,
+      "end": 1906.67,
+      "text": "you're gonna want the patient in the supine position."
+    },
+    {
+      "start": 1907.19,
+      "end": 1909.96,
+      "text": "So one of the techniques you're using in this."
+    },
+    {
+      "start": 1910.0,
+      "end": 1913.2,
+      "text": "is a posterior landmark-based approach"
+    },
+    {
+      "start": 1913.58,
+      "end": 1914.96,
+      "text": "in the prone position."
+    },
+    {
+      "start": 1916.1,
+      "end": 1919.84,
+      "text": "And that's useful because they're using nerve stimuli."
+    },
+    {
+      "start": 1920.0,
+      "end": 1926.19,
+      "text": "to determine the location, but we don't necessarily have access to that, so from ultrasound"
+    },
+    {
+      "start": 1926.19,
+      "end": 1929.61,
+      "text": "guidance standpoint, you're going to need to have the patient in the supine position."
+    },
+    {
+      "start": 1930.26,
+      "end": 1933.0,
+      "text": "And for this particular block, because it's so deep,"
+    },
+    {
+      "start": 1933.5,
+      "end": 1935.9,
+      "text": "you're going to want to use your curvilinear probe."
+    },
+    {
+      "start": 1936.46,
+      "end": 1939.5,
+      "text": "And like I said, as you can see, it's very, very deep."
+    },
+    {
+      "start": 1940.0,
+      "end": 1948.02,
+      "text": "this sciatic nervous is sitting at 7, almost 8 centimeters down, right? So you may not even have"
+    },
+    {
+      "start": 1948.02,
+      "end": 1949.92,
+      "text": "access to a needle that's long."
+    },
+    {
+      "start": 1950.0,
+      "end": 1955.14,
+      "text": "enough to even get to it. So it's, like I said, it's a much less common block"
+    },
+    {
+      "start": 1955.52,
+      "end": 1958.39,
+      "text": "that you're going to want to do in the emergency department and you're probably"
+    },
+    {
+      "start": 1958.39,
+      "end": 1959.09,
+      "text": "going to end up"
+    },
+    {
+      "start": 1960.58,
+      "end": 1964.16,
+      "text": "being okay with doing something else, you know, combining, you know,"
+    },
+    {
+      "start": 1964.38,
+      "end": 1967.28,
+      "text": "a saffonous block with a probability or a thrown off emerald, you know,"
+    },
+    {
+      "start": 1967.36,
+      "end": 1969.22,
+      "text": "you can combine a couple different blocks again."
+    },
+    {
+      "start": 1970.13,
+      "end": 1972.53,
+      "text": "because you don't always have to do that full volume."
+    },
+    {
+      "start": 1972.81,
+      "end": 1975.83,
+      "text": "So you could do 10 MLs here, 10 MLs there, you know,"
+    },
+    {
+      "start": 1975.99,
+      "end": 1979.97,
+      "text": "you can get some excellent coverage, but it doesn't necessarily require going for the"
+    },
+    {
+      "start": 1980.0,
+      "end": 1983.94,
+      "text": "satire and honestly it's so deep. It's going to be very difficult to access."
+    },
+    {
+      "start": 1984.72,
+      "end": 1988.7,
+      "text": "You may not be able to see it, depending on patient habitus, it could be difficult to visualize."
+    },
+    {
+      "start": 1990.06,
+      "end": 1999.3,
+      "text": "But it is a potential option. Last thing I will mention here is a posterior tibal block. This is something that you you might use"
+    },
+    {
+      "start": 2000.03,
+      "end": 2003.33,
+      "text": "If a patient has a laceration to the sole of the foot,"
+    },
+    {
+      "start": 2003.62,
+      "end": 2005.34,
+      "text": "maybe they set up some glass or something,"
+    },
+    {
+      "start": 2005.86,
+      "end": 2009.1,
+      "text": "this is gonna provide them with excellent analgesia"
+    },
+    {
+      "start": 2009.1,
+      "end": 2009.78,
+      "text": "to the sole."
+    },
+    {
+      "start": 2010.0,
+      "end": 2014.96,
+      "text": "foot. So you're going to basically go to the posterior tibial area where you"
+    },
+    {
+      "start": 2014.96,
+      "end": 2019.2,
+      "text": "would calculate your pt pulse through your probe on them and you're going to"
+    },
+    {
+      "start": 2019.2,
+      "end": 2019.6,
+      "text": "visualize"
+    },
+    {
+      "start": 2020.58,
+      "end": 2021.92,
+      "text": "your post, your typical nerve here,"
+    },
+    {
+      "start": 2022.06,
+      "end": 2024.22,
+      "text": "it's gonna be right next to your artery and your veins."
+    },
+    {
+      "start": 2024.6,
+      "end": 2026.98,
+      "text": "And you're just gonna come in, you've made that small area,"
+    },
+    {
+      "start": 2027.24,
+      "end": 2029.92,
+      "text": "you know, you don't really need much here."
+    },
+    {
+      "start": 2030.0,
+      "end": 2034.16,
+      "text": "maybe five MLs. You're not going to need a large volume here because you're only doing"
+    },
+    {
+      "start": 2034.16,
+      "end": 2039.88,
+      "text": "this. This is a very small image, right? This is 2.7 centimeters. So this is a small"
+    },
+    {
+      "start": 2040.0,
+      "end": 2044.41,
+      "text": "nerve in a small area so you don't need large volume. But you'll get excellent blockade to the"
+    },
+    {
+      "start": 2044.41,
+      "end": 2047.95,
+      "text": "soldier foot. So it's a great way there. You know, often the tissue in the bottom of the foot is"
+    },
+    {
+      "start": 2047.95,
+      "end": 2049.97,
+      "text": "very tough. It can hard to get good"
+    },
+    {
+      "start": 2050.0,
+      "end": 2055.04,
+      "text": "local anesthesia there, so it's a good option for that. And that's all."
+    }
+  ]
+}

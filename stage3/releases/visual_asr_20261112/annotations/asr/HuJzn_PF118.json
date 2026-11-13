@@ -1,0 +1,738 @@
+{
+  "video_id": "HuJzn_PF118",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/HuJzn_PF118/asr.txt",
+  "segments": [
+    {
+      "start": 14.45,
+      "end": 19.33,
+      "text": "This is a video to demonstrate the process of central line insertion from start to finish."
+    },
+    {
+      "start": 20.0,
+      "end": 22.78,
+      "text": "by a team at the Royal Bachelors Hospital in Reading."
+    },
+    {
+      "start": 23.75,
+      "end": 26.39,
+      "text": "This is part of a programme using a mix of e-learning"
+    },
+    {
+      "start": 26.39,
+      "end": 29.97,
+      "text": "and simulated practice to teach the fundamentals of science."
+    },
+    {
+      "start": 30.0,
+      "end": 33.66,
+      "text": "line insertion prior to supervised practice on patients."
+    },
+    {
+      "start": 34.44,
+      "end": 36.24,
+      "text": "You should ask a colleague to assist you."
+    },
+    {
+      "start": 36.54,
+      "end": 38.54,
+      "text": "They will need to have knowledge of the procedure."
+    },
+    {
+      "start": 38.78,
+      "end": 39.88,
+      "text": "It's risks and this."
+    },
+    {
+      "start": 41.01,
+      "end": 48.16,
+      "text": "in terms of equipment, you will need a large, cleaned procedure trolley, a central line insertion pack,"
+    },
+    {
+      "start": 48.94,
+      "end": 49.96,
+      "text": "do lots of glowhecks."
+    },
+    {
+      "start": 50.0,
+      "end": 55.62,
+      "text": "skin prep, a central line with the correct number of lemons, dare our gloves in your"
+    },
+    {
+      "start": 55.62,
+      "end": 59.97,
+      "text": "size and local anesthetic. You will also need a cinch."
+    },
+    {
+      "start": 60.0,
+      "end": 67.28,
+      "text": "venous pressure transducer ready. For this you will need a 500ml bag of 0.9% sodium chloride,"
+    },
+    {
+      "start": 67.28,
+      "end": 69.88,
+      "text": "the pressure transducer and the pressure."
+    },
+    {
+      "start": 70.03,
+      "end": 75.64,
+      "text": "have a chance to include by where possible you should seek informed consent from"
+    },
+    {
+      "start": 75.64,
+      "end": 79.74,
+      "text": "your patient by briefly discussing the benefits and risks of the procedure"
+    },
+    {
+      "start": 80.8,
+      "end": 84.81,
+      "text": "explain that they will need to lie still under a sterile drape and that you"
+    },
+    {
+      "start": 84.81,
+      "end": 88.65,
+      "text": "will use local anesthetic. The patient will need to be appropriately monitored"
+    },
+    {
+      "start": 88.65,
+      "end": 89.33,
+      "text": "it through out."
+    },
+    {
+      "start": 90.0,
+      "end": 99.79,
+      "text": "also asymmetry, ECG and blood pressure measurement at this point."
+    },
+    {
+      "start": 100.06,
+      "end": 104.76,
+      "text": "optimise the patient's position to improve the ultrasound view of the vein, increase"
+    },
+    {
+      "start": 104.76,
+      "end": 109.98,
+      "text": "the chance of success and reduce the risk of complications for an internal jugger."
+    },
+    {
+      "start": 110.0,
+      "end": 115.14,
+      "text": "line, the optimum position is with the patient's bed roughly level in a reverse"
+    },
+    {
+      "start": 115.14,
+      "end": 119.36,
+      "text": "trendellenberg position or head down. The bed should be"
+    },
+    {
+      "start": 119.36,
+      "end": 119.72,
+      "text": "It's comfortable."
+    },
+    {
+      "start": 120.0,
+      "end": 122.48,
+      "text": "vertical height for the person performing the procedure."
+    },
+    {
+      "start": 124.38,
+      "end": 127.14,
+      "text": "Briefly check that the site is suitable without your sound."
+    },
+    {
+      "start": 140.48,
+      "end": 142.9,
+      "text": "For a femoral line, the bed does not need to be level."
+    },
+    {
+      "start": 143.64,
+      "end": 145.84,
+      "text": "The leg should be flexed at the hip and knee"
+    },
+    {
+      "start": 145.84,
+      "end": 147.44,
+      "text": "and externally rotated."
+    },
+    {
+      "start": 151.92,
+      "end": 155.92,
+      "text": "Using ultrasound, demonstrate the vein, which should be compressible on pressing down"
+    },
+    {
+      "start": 155.92,
+      "end": 159.98,
+      "text": "with a probe, non-pulsatile and oval shaped with thin..."
+    },
+    {
+      "start": 160.03,
+      "end": 160.63,
+      "text": "masculature."
+    },
+    {
+      "start": 172.78,
+      "end": 175.24,
+      "text": "you will need to prepare the pressure transducer"
+    },
+    {
+      "start": 175.64,
+      "end": 179.66,
+      "text": "with a 500mm bag of saline, pressure bag and transducer pack."
+    },
+    {
+      "start": 180.8,
+      "end": 184.52,
+      "text": "Check the fluid is 0.9% sodium chloride and is in date."
+    },
+    {
+      "start": 185.16,
+      "end": 187.04,
+      "text": "Then insert this into the pressure bag."
+    },
+    {
+      "start": 192.27,
+      "end": 197.19,
+      "text": "Open the pack and ensure all the components are tight and close the roller clamp."
+    },
+    {
+      "start": 210.58,
+      "end": 214.8,
+      "text": "Bike the fluid and ensure the fluid is securely hung in the pressure bag."
+    },
+    {
+      "start": 221.09,
+      "end": 224.85,
+      "text": "the bag then inflate it to 300 millimeters of mercury."
+    },
+    {
+      "start": 232.05,
+      "end": 234.39,
+      "text": "Green portion of the indicator will be visible."
+    },
+    {
+      "start": 235.69,
+      "end": 238.72,
+      "text": "Re-open the roller clamp and use the blue toggle"
+    },
+    {
+      "start": 238.72,
+      "end": 239.98,
+      "text": "to run the fluid through."
+    },
+    {
+      "start": 240.0,
+      "end": 249.72,
+      "text": "the set. The transducer is now ready to connect."
+    },
+    {
+      "start": 250.19,
+      "end": 254.03,
+      "text": "Once you're ready to begin, start by opening the packs, maintaining sterility."
+    },
+    {
+      "start": 263.1,
+      "end": 264.56,
+      "text": "Put on the hat and face mask."
+    },
+    {
+      "start": 274.96,
+      "end": 279.26,
+      "text": "with care, open the additional equipment into the field you have created."
+    },
+    {
+      "start": 280.1,
+      "end": 281.64,
+      "text": "feeding the saline syringes."
+    },
+    {
+      "start": 297.9,
+      "end": 299.32,
+      "text": "perform a surgical hand wash."
+    },
+    {
+      "start": 306.82,
+      "end": 308.98,
+      "text": "by your hands with the sterile paper towels."
+    },
+    {
+      "start": 310.0,
+      "end": 313.62,
+      "text": "then done the gown and ask your assistant to tie it at the back."
+    },
+    {
+      "start": 322.21,
+      "end": 323.25,
+      "text": "Put it on your sterile gloves."
+    },
+    {
+      "start": 338.03,
+      "end": 339.47,
+      "text": "Attach the syringe to the needle."
+    },
+    {
+      "start": 340.0,
+      "end": 342.46,
+      "text": "and show you have all the required items ready."
+    },
+    {
+      "start": 352.3,
+      "end": 354.98,
+      "text": "Now you need to prepare the central line for insertion."
+    },
+    {
+      "start": 355.91,
+      "end": 358.09,
+      "text": "Blush each lehrin with a normal saline"
+    },
+    {
+      "start": 358.09,
+      "end": 359.41,
+      "text": "from the syringes in the pack."
+    },
+    {
+      "start": 360.13,
+      "end": 364.13,
+      "text": "bearing in mind that you will need to flush the central line at the end of the procedure."
+    },
+    {
+      "start": 370.06,
+      "end": 372.92,
+      "text": "I ask your assistant to help draw up the low colon aesthetic."
+    },
+    {
+      "start": 388.16,
+      "end": 389.88,
+      "text": "Now ensuring the patient is approved."
+    },
+    {
+      "start": 390.1,
+      "end": 395.87,
+      "text": "position to thoroughly clean the insertion area. Begin at the insertion site and"
+    },
+    {
+      "start": 395.87,
+      "end": 399.26,
+      "text": "clean in a circular motion outwards. Repeat with more claw"
+    },
+    {
+      "start": 399.26,
+      "end": 399.8,
+      "text": "will haxidine."
+    },
+    {
+      "start": 401.06,
+      "end": 409.53,
+      "text": "Cover your patient with a frustrated drape, note the orientation on the label and use the adhesive to secure it before carefully opening it further."
+    },
+    {
+      "start": 427.17,
+      "end": 429.79,
+      "text": "a repile that prays cover, then ask your assistant."
+    },
+    {
+      "start": 430.22,
+      "end": 438.37,
+      "text": "pass the probe to you. There should be a layer of KY jelly on the probe before it is covered."
+    },
+    {
+      "start": 440.0,
+      "end": 446.74,
+      "text": "as you cover the lead and secure the cover in place with an elastic band included in the pack."
+    },
+    {
+      "start": 456.46,
+      "end": 459.7,
+      "text": "move away any air bubbles that might reduce the quality of the image."
+    },
+    {
+      "start": 460.67,
+      "end": 462.37,
+      "text": "then add sterile KY jelly."
+    },
+    {
+      "start": 463.13,
+      "end": 464.61,
+      "text": "Check the orientation of the probe,"
+    },
+    {
+      "start": 465.35,
+      "end": 466.79,
+      "text": "then locate the vein with the probe"
+    },
+    {
+      "start": 466.79,
+      "end": 468.91,
+      "text": "pointing towards the etsylateral nipple."
+    },
+    {
+      "start": 469.35,
+      "end": 469.85,
+      "text": "Ultra sound."
+    },
+    {
+      "start": 470.0,
+      "end": 475.08,
+      "text": "guidance will help you locate the area, whilst ensuring you do not inject local anesthetic"
+    },
+    {
+      "start": 475.08,
+      "end": 475.72,
+      "text": "into the vein."
+    },
+    {
+      "start": 477.44,
+      "end": 479.82,
+      "text": "Inject subcutaneously in the target area."
+    },
+    {
+      "start": 480.48,
+      "end": 484.44,
+      "text": "aspirating before each injection to ensure you have not hit a blood vessel."
+    },
+    {
+      "start": 492.91,
+      "end": 494.85,
+      "text": "allowing time for the anesthetic to work,"
+    },
+    {
+      "start": 495.11,
+      "end": 495.97,
+      "text": "prepare your equipment,"
+    },
+    {
+      "start": 496.69,
+      "end": 498.33,
+      "text": "ensure the syringe moves freely"
+    },
+    {
+      "start": 498.33,
+      "end": 499.67,
+      "text": "and prime the guide wire."
+    },
+    {
+      "start": 500.38,
+      "end": 507.72,
+      "text": "place the guide wire in easy reach of the target site with some goes. At this point you"
+    },
+    {
+      "start": 507.72,
+      "end": 509.24,
+      "text": "you should have a procedural pause."
+    },
+    {
+      "start": 510.29,
+      "end": 515.52,
+      "text": "check you have the correct patient and consent where possible, indication for the central"
+    },
+    {
+      "start": 515.52,
+      "end": 519.5,
+      "text": "line, supervision, consideration of conscious indications."
+    },
+    {
+      "start": 520.26,
+      "end": 524.38,
+      "text": "equipment and an appropriate assistant, ultrasound equipment and good"
+    },
+    {
+      "start": 524.38,
+      "end": 525.84,
+      "text": "These ideas are the intended side."
+    },
+    {
+      "start": 534.13,
+      "end": 539.23,
+      "text": "After re-checking probe orientation, use the ultrasound to guide your needle insertion."
+    },
+    {
+      "start": 540.83,
+      "end": 542.93,
+      "text": "Hold the probe in your non-dominant hand"
+    },
+    {
+      "start": 543.35,
+      "end": 546.45,
+      "text": "and set the needle at around a 45-degree angle"
+    },
+    {
+      "start": 546.45,
+      "end": 547.93,
+      "text": "with a bevel facing up."
+    },
+    {
+      "start": 549.19,
+      "end": 549.97,
+      "text": "Carefully follow..."
+    },
+    {
+      "start": 550.0,
+      "end": 555.31,
+      "text": "the tip of the needle on the ultrasound until you access the vein. It should be easy to"
+    },
+    {
+      "start": 555.31,
+      "end": 556.81,
+      "text": "as pro blood at this point."
+    },
+    {
+      "start": 563.2,
+      "end": 565.78,
+      "text": "detach this orange, taking care not to move the needle."
+    },
+    {
+      "start": 566.83,
+      "end": 569.45,
+      "text": "Expect to see a slow, venous backflow of blood."
+    },
+    {
+      "start": 570.32,
+      "end": 572.88,
+      "text": "Insert the guide wire, there should be no resistance."
+    },
+    {
+      "start": 573.68,
+      "end": 575.82,
+      "text": "Look out for any changes in the ECG"
+    },
+    {
+      "start": 575.82,
+      "end": 578.36,
+      "text": "and withdraw the wire slightly if these occur."
+    },
+    {
+      "start": 579.39,
+      "end": 579.83,
+      "text": "Leave at least."
+    },
+    {
+      "start": 580.0,
+      "end": 582.22,
+      "text": "10 centimeters of guide wire externally."
+    },
+    {
+      "start": 590.0,
+      "end": 593.74,
+      "text": "If using the rollison syringe, there is no need to disconnect the syringe."
+    },
+    {
+      "start": 594.62,
+      "end": 598.9,
+      "text": "Pass the guide wire through the middle of the syringe, take care to insert the guide wire"
+    },
+    {
+      "start": 598.9,
+      "end": 599.86,
+      "text": "and introduce a firm."
+    },
+    {
+      "start": 600.0,
+      "end": 605.05,
+      "text": "into the plunger without displacing the needle. If you face difficulty in advancing the"
+    },
+    {
+      "start": 605.05,
+      "end": 609.91,
+      "text": "guide wire, sometimes adjusting the angle of the needle can resolve this. However, genoc"
+    },
+    {
+      "start": 610.06,
+      "end": 614.98,
+      "text": "the guide wire if there is resistance as the needle may have become displaced from the vein."
+    },
+    {
+      "start": 616.1,
+      "end": 619.97,
+      "text": "Remove the needle but leave the guide wire in place. You will need to"
+    },
+    {
+      "start": 620.03,
+      "end": 625.57,
+      "text": "play some gauze over the site, ensure you hold the guide wire at all times to avoid accidental"
+    },
+    {
+      "start": 625.57,
+      "end": 626.53,
+      "text": "embellishment."
+    },
+    {
+      "start": 627.22,
+      "end": 629.98,
+      "text": "Examine with the ultrasound to confirm the location of the..."
+    },
+    {
+      "start": 630.03,
+      "end": 635.25,
+      "text": "guide wire within the vein, using both a short and long axis for you. It can be seen as"
+    },
+    {
+      "start": 635.25,
+      "end": 639.23,
+      "text": "a bright white point on the image, follow it as far as you are able to."
+    },
+    {
+      "start": 640.13,
+      "end": 642.91,
+      "text": "Next, use the scalpel to make an incision in the skin."
+    },
+    {
+      "start": 644.19,
+      "end": 646.79,
+      "text": "Run the blunt end of the blade along the guide wire"
+    },
+    {
+      "start": 646.79,
+      "end": 648.63,
+      "text": "and make a confident incision."
+    },
+    {
+      "start": 649.26,
+      "end": 649.98,
+      "text": "Use gauze to con..."
+    },
+    {
+      "start": 650.06,
+      "end": 655.23,
+      "text": "leading. Load the dilator onto the guide wire, holding a portion of the wire at all"
+    },
+    {
+      "start": 655.23,
+      "end": 659.96,
+      "text": "times and set the dilator with a twisting motion. There may be a little"
+    },
+    {
+      "start": 660.0,
+      "end": 664.52,
+      "text": "resistance as it passes through the skin and fascial layers but it should not be"
+    },
+    {
+      "start": 664.52,
+      "end": 669.54,
+      "text": "difficult to insert. The dilator only needs to be inserted to the depth of the vein."
+    },
+    {
+      "start": 670.7,
+      "end": 673.4,
+      "text": "Remove the dilator, holding the wire at all times."
+    },
+    {
+      "start": 674.14,
+      "end": 675.42,
+      "text": "Use gloves to control bleeding."
+    },
+    {
+      "start": 677.14,
+      "end": 679.28,
+      "text": "Now, lay the central line onto the guide wire."
+    },
+    {
+      "start": 680.0,
+      "end": 686.08,
+      "text": "We usually exit from the most proximal lehrin, holding the wire at all times and set the line."
+    },
+    {
+      "start": 695.41,
+      "end": 696.81,
+      "text": "Now remove the guide wire."
+    },
+    {
+      "start": 698.79,
+      "end": 699.55,
+      "text": "Secure the line."
+    },
+    {
+      "start": 700.0,
+      "end": 703.38,
+      "text": "the needle hold us to place a seeker through both sides of the lemon junction."
+    },
+    {
+      "start": 721.22,
+      "end": 725.4,
+      "text": "excess seat to down, leaving enough for it to be cut easily when the line is removed."
+    },
+    {
+      "start": 726.18,
+      "end": 729.42,
+      "text": "Use a syringe to confirm all the lumens aspirate easily."
+    },
+    {
+      "start": 730.1,
+      "end": 732.06,
+      "text": "then flush them all again with saline."
+    },
+    {
+      "start": 742.43,
+      "end": 749.19,
+      "text": "Connect the transducer to see the pressure waveform to get an accurate pressure, zero the transducer."
+    },
+    {
+      "start": 750.19,
+      "end": 754.92,
+      "text": "To do this, open the three-way tap to the air and close to the patient."
+    },
+    {
+      "start": 755.32,
+      "end": 758.12,
+      "text": "Then press zero CVP on the monitor."
+    },
+    {
+      "start": 776.82,
+      "end": 779.34,
+      "text": "Reopen the tap to the patient and close to the air."
+    },
+    {
+      "start": 780.29,
+      "end": 783.59,
+      "text": "If a venous pressure and wave form is seen, the line is safe to use."
+    },
+    {
+      "start": 784.33,
+      "end": 787.43,
+      "text": "The chest radiograph should be obtained to confirm position,"
+    },
+    {
+      "start": 787.89,
+      "end": 789.97,
+      "text": "but the line can be used if placement in a..."
+    },
+    {
+      "start": 790.0,
+      "end": 795.88,
+      "text": "has been confirmed with a pressure transducer. This will avoid unnecessary delays in initiating"
+    },
+    {
+      "start": 795.88,
+      "end": 797.82,
+      "text": "on your trapeic parapet if required."
+    },
+    {
+      "start": 798.88,
+      "end": 799.96,
+      "text": "Remove the sterile drain."
+    },
+    {
+      "start": 800.0,
+      "end": 802.84,
+      "text": "then apply a clear dressing over the entry site."
+    },
+    {
+      "start": 804.99,
+      "end": 807.51,
+      "text": "I leave the area, ensuring to carefully displace"
+    },
+    {
+      "start": 807.51,
+      "end": 809.97,
+      "text": "of all sharps, wipe down the trolley."
+    },
+    {
+      "start": 810.0,
+      "end": 814.6,
+      "text": "and clean the ultrasound machine and probe. After the procedure you will need to"
+    },
+    {
+      "start": 814.6,
+      "end": 817.7,
+      "text": "ensure accurate documentation and request a chest x-ray."
+    }
+  ]
+}

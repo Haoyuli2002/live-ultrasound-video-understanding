@@ -1,0 +1,1658 @@
+{
+  "video_id": "vIbcAv9udso",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/vIbcAv9udso/asr.txt",
+  "segments": [
+    {
+      "start": 0.45,
+      "end": 5.88,
+      "text": "So for this video, we're going to go over how to use ultrasound for a vascular axis, as"
+    },
+    {
+      "start": 5.88,
+      "end": 8.5,
+      "text": "well as a general setup for vascular axis."
+    },
+    {
+      "start": 9.08,
+      "end": 9.98,
+      "text": "So when you're doing ultrasound-"
+    },
+    {
+      "start": 10.0,
+      "end": 13.96,
+      "text": "guidance. You want to make sure you're in the proper position. You don't want the ultrasound"
+    },
+    {
+      "start": 14.58,
+      "end": 19.97,
+      "text": "behind you. You really want to be able to look at the patient, look at your ultrasound machine, as well as"
+    },
+    {
+      "start": 20.13,
+      "end": 24.53,
+      "text": "access to your kit, as well as being able to push buttons if you need to."
+    },
+    {
+      "start": 25.79,
+      "end": 27.74,
+      "text": "So this is the way I like to set it up."
+    },
+    {
+      "start": 28.55,
+      "end": 29.89,
+      "text": "Patient, you're at the head of the bed."
+    },
+    {
+      "start": 30.51,
+      "end": 32.43,
+      "text": "Make sure you clear out everything from the back."
+    },
+    {
+      "start": 33.28,
+      "end": 35.17,
+      "text": "Make sure you have a good table,"
+    },
+    {
+      "start": 36.64,
+      "end": 38.18,
+      "text": "and you're gonna have a central line kit."
+    },
+    {
+      "start": 38.66,
+      "end": 39.88,
+      "text": "So this is a triple loom in center."
+    },
+    {
+      "start": 40.03,
+      "end": 44.71,
+      "text": "line kit depending on what you need there's different types of central lines but in general"
+    },
+    {
+      "start": 44.71,
+      "end": 49.83,
+      "text": "a triple doom is what we use you want to make sure that you have an ultrasound probe"
+    },
+    {
+      "start": 50.03,
+      "end": 58.62,
+      "text": "As well as any other sterile things you need, such as a gown, a mask, sterile gloves, sterile gown as well."
+    },
+    {
+      "start": 59.09,
+      "end": 59.97,
+      "text": "We're not going to go over all this..."
+    },
+    {
+      "start": 60.06,
+      "end": 63.32,
+      "text": "stereo technique for this video, we're basically going to go over the setup and how to use"
+    },
+    {
+      "start": 63.32,
+      "end": 65.24,
+      "text": "ultrasound for the guidance itself."
+    },
+    {
+      "start": 65.7,
+      "end": 69.97,
+      "text": "But make sure the ultrasound machine is directly next to you."
+    },
+    {
+      "start": 70.0,
+      "end": 75.16,
+      "text": "your table so you have good access to that and make sure it's plugged in because you"
+    },
+    {
+      "start": 75.16,
+      "end": 79.5,
+      "text": "don't want the ultrasound machine turning off while you are performing the central"
+    },
+    {
+      "start": 79.5,
+      "end": 79.96,
+      "text": "Venus X."
+    },
+    {
+      "start": 80.03,
+      "end": 84.48,
+      "text": "So here's your central line kit. This is after it's already been open and taken out of the box"
+    },
+    {
+      "start": 84.48,
+      "end": 88.75,
+      "text": "You're gonna see that there's a chloropep usually that's available"
+    },
+    {
+      "start": 95.98,
+      "end": 99.74,
+      "text": "and everything inside the kit is going to be sterile."
+    },
+    {
+      "start": 105.25,
+      "end": 109.76,
+      "text": "And we don't have sterile gloves here, but I'm just going to use a pair of non-sterile gloves to demonstrate."
+    },
+    {
+      "start": 110.0,
+      "end": 119.98,
+      "text": "this technique. So I'm going to open this around the gloves. And obviously..."
+    },
+    {
+      "start": 120.0,
+      "end": 127.05,
+      "text": "you want to be gowned with sterile gown as well as a mask and a cap."
+    },
+    {
+      "start": 131.09,
+      "end": 137.91,
+      "text": "As part of the central line kit, what you have is, we talked about the chloroprep, that"
+    },
+    {
+      "start": 137.91,
+      "end": 139.17,
+      "text": "you want to use your chloroprep."
+    },
+    {
+      "start": 142.94,
+      "end": 149.78,
+      "text": "You're going to open this up, you're going to break the seal, okay, and make sure that turns"
+    },
+    {
+      "start": 150.06,
+      "end": 154.48,
+      "text": "orange, and you're going to prep the patient. So just imagine I prep the patient in terms"
+    },
+    {
+      "start": 154.48,
+      "end": 158.84,
+      "text": "of the internal drugler vein, and that's all prepped over here. And you want to do a really"
+    },
+    {
+      "start": 158.84,
+      "end": 159.98,
+      "text": "wide margin all the way up."
+    },
+    {
+      "start": 160.0,
+      "end": 169.98,
+      "text": "around so that you can have a really large sterile field. This is going to be your sterile"
+    },
+    {
+      "start": 170.0,
+      "end": 173.88,
+      "text": "droid drape here and there's a portion that says head right here so obviously that goes"
+    },
+    {
+      "start": 173.88,
+      "end": 174.88,
+      "text": "towards the patient's head."
+    },
+    {
+      "start": 180.03,
+      "end": 182.59,
+      "text": "So we're gonna take off the sticky portion"
+    },
+    {
+      "start": 182.59,
+      "end": 188.33,
+      "text": "and place it directly where you're gonna be cannulating."
+    },
+    {
+      "start": 188.73,
+      "end": 189.97,
+      "text": "So here we're gonna put it here."
+    },
+    {
+      "start": 200.67,
+      "end": 202.59,
+      "text": "And make sure obviously you want to do this all under"
+    },
+    {
+      "start": 202.59,
+      "end": 203.75,
+      "text": "sterile technique."
+    },
+    {
+      "start": 204.47,
+      "end": 207.84,
+      "text": "Don't touch any blankets or other portions."
+    },
+    {
+      "start": 215.71,
+      "end": 219.8,
+      "text": "Okay, so you see here we have our sight exposed"
+    },
+    {
+      "start": 220.0,
+      "end": 229.34,
+      "text": "and this is where we're going to be calculating. I'm going to move it just a little bit. Okay. So"
+    },
+    {
+      "start": 230.58,
+      "end": 233.53,
+      "text": "This is our actual procedure kit."
+    },
+    {
+      "start": 234.32,
+      "end": 235.3,
+      "text": "There's a lot of things in here."
+    },
+    {
+      "start": 235.42,
+      "end": 236.96,
+      "text": "Some things you need and some things you don't need."
+    },
+    {
+      "start": 237.44,
+      "end": 239.82,
+      "text": "Usually this is an extra drape."
+    },
+    {
+      "start": 240.0,
+      "end": 241.18,
+      "text": "You usually don't need this."
+    },
+    {
+      "start": 242.84,
+      "end": 245.62,
+      "text": "Here's your gauze."
+    },
+    {
+      "start": 247.26,
+      "end": 248.42,
+      "text": "And there's a lot of things in here."
+    },
+    {
+      "start": 248.54,
+      "end": 248.96,
+      "text": "There's needles."
+    },
+    {
+      "start": 250.0,
+      "end": 252.02,
+      "text": "There's guide wires, there's all these syringes,"
+    },
+    {
+      "start": 252.02,
+      "end": 253.92,
+      "text": "and what do you need and what do you not need?"
+    },
+    {
+      "start": 254.46,
+      "end": 257.94,
+      "text": "So the first thing I pick up is there's this needle right here,"
+    },
+    {
+      "start": 258.7,
+      "end": 259.98,
+      "text": "and this needle has to have..."
+    },
+    {
+      "start": 260.0,
+      "end": 265.12,
+      "text": "the catheter on it. We don't really use this needle in general. Some physicians like to use it,"
+    },
+    {
+      "start": 265.12,
+      "end": 269.4,
+      "text": "but I don't like to use this needle. I actually like to use this other needle. So, find the largest"
+    },
+    {
+      "start": 270.19,
+      "end": 277.02,
+      "text": "needle in the kit. So this is large needle here, and this is the needle you're"
+    },
+    {
+      "start": 277.02,
+      "end": 279.8,
+      "text": "going to be using. Let me see that a little bit better here."
+    },
+    {
+      "start": 281.34,
+      "end": 285.55,
+      "text": "This is the needle you're going to be using for your initial cannulation, okay?"
+    },
+    {
+      "start": 285.95,
+      "end": 289.33,
+      "text": "So I actually take this needle with a guide wire on because this guide wire, this needle,"
+    },
+    {
+      "start": 289.33,
+      "end": 289.97,
+      "text": "So you have..."
+    },
+    {
+      "start": 290.06,
+      "end": 292.26,
+      "text": "to thread the needle, the catheter in first,"
+    },
+    {
+      "start": 292.62,
+      "end": 294.1,
+      "text": "before you put in the guide wire."
+    },
+    {
+      "start": 295.17,
+      "end": 298.3,
+      "text": "Versus this needle, you can just put the guide wire"
+    },
+    {
+      "start": 298.3,
+      "end": 299.62,
+      "text": "directly inside this needle."
+    },
+    {
+      "start": 300.0,
+      "end": 309.45,
+      "text": "it'll fit, okay? And you can see but the bevel of the needle, I have it face towards the numbers."
+    },
+    {
+      "start": 310.86,
+      "end": 316.26,
+      "text": "of the syringe so that I know when the numbers are facing up the bevel is also facing upwards."
+    },
+    {
+      "start": 317.6,
+      "end": 318.56,
+      "text": "So you put that aside here."
+    },
+    {
+      "start": 321.6,
+      "end": 322.56,
+      "text": "Here's some lidocaine too."
+    },
+    {
+      "start": 323.24,
+      "end": 325.75,
+      "text": "So this is syringe for the lidocaine."
+    },
+    {
+      "start": 326.84,
+      "end": 329.18,
+      "text": "It's a smaller syringe."
+    },
+    {
+      "start": 330.0,
+      "end": 333.12,
+      "text": "You can withdraw that and numb up the patient before you start."
+    },
+    {
+      "start": 335.89,
+      "end": 337.03,
+      "text": "And here's another syringe."
+    },
+    {
+      "start": 337.13,
+      "end": 339.97,
+      "text": "I usually use this as a flush, so you have about..."
+    },
+    {
+      "start": 340.51,
+      "end": 349.91,
+      "text": "30cc of normal saline that you can pour in here and you can use this as a flush after you can relate so the other portions of the kit that are important"
+    },
+    {
+      "start": 350.0,
+      "end": 352.86,
+      "text": "and our here is a triple-lumen catheter,"
+    },
+    {
+      "start": 353.24,
+      "end": 355.12,
+      "text": "and here you can see the actual centimeters."
+    },
+    {
+      "start": 356.41,
+      "end": 356.61,
+      "text": "See here."
+    },
+    {
+      "start": 357.03,
+      "end": 357.93,
+      "text": "So here's the centimeters."
+    },
+    {
+      "start": 358.41,
+      "end": 359.69,
+      "text": "Here's 15 centimeters."
+    },
+    {
+      "start": 360.0,
+      "end": 362.9,
+      "text": "And every dot above that is one centimeter."
+    },
+    {
+      "start": 364.29,
+      "end": 367.78,
+      "text": "And this two lines we're here indicates 20 centimeters."
+    },
+    {
+      "start": 368.22,
+      "end": 369.96,
+      "text": "So that's how you know how far you're going to-"
+    },
+    {
+      "start": 370.0,
+      "end": 375.88,
+      "text": "in when you're cannulating. Okay, so you're gonna put that aside. Other portion of the kit here is the"
+    },
+    {
+      "start": 375.88,
+      "end": 379.98,
+      "text": "dilator here, so it's very important, right, so this is when dilators..."
+    },
+    {
+      "start": 380.0,
+      "end": 386.12,
+      "text": "go over that a little bit and here's the guide wire okay it's in a plastic"
+    },
+    {
+      "start": 387.37,
+      "end": 388.61,
+      "text": "and..."
+    },
+    {
+      "start": 390.35,
+      "end": 392.73,
+      "text": "You want to pull the, so it comes like this."
+    },
+    {
+      "start": 393.42,
+      "end": 397.12,
+      "text": "Like it looks, it comes like this"
+    },
+    {
+      "start": 397.12,
+      "end": 399.37,
+      "text": "with a little j-curve right there."
+    },
+    {
+      "start": 399.73,
+      "end": 399.97,
+      "text": "So you wanna."
+    },
+    {
+      "start": 400.0,
+      "end": 408.79,
+      "text": "I'm going to pull the tip of the sheet out so that it's straight so that when you can"
+    },
+    {
+      "start": 411.22,
+      "end": 413.78,
+      "text": "It's straining through the needle much more easily."
+    },
+    {
+      "start": 415.08,
+      "end": 416.94,
+      "text": "So I want to prep up that guide wire also."
+    },
+    {
+      "start": 418.08,
+      "end": 419.14,
+      "text": "Also there's a scalpel here."
+    },
+    {
+      "start": 420.64,
+      "end": 429.8,
+      "text": "Okay, scalpel and this you just push in or push out and pull in in order to open and close that scalpel."
+    },
+    {
+      "start": 430.7,
+      "end": 433.03,
+      "text": "All right, also important things that's right here."
+    },
+    {
+      "start": 436.0,
+      "end": 437.36,
+      "text": "This is where you can put your sharps"
+    },
+    {
+      "start": 437.36,
+      "end": 438.34,
+      "text": "when you're not using them."
+    },
+    {
+      "start": 438.84,
+      "end": 439.74,
+      "text": "And this one right here."
+    },
+    {
+      "start": 440.03,
+      "end": 441.85,
+      "text": "If you put the sharps in here, they get locked in,"
+    },
+    {
+      "start": 442.01,
+      "end": 443.13,
+      "text": "you can't take it out anymore."
+    },
+    {
+      "start": 443.65,
+      "end": 445.35,
+      "text": "Here's some staples that some people use,"
+    },
+    {
+      "start": 445.53,
+      "end": 447.85,
+      "text": "but I don't recommend using this as rarely used."
+    },
+    {
+      "start": 448.27,
+      "end": 449.09,
+      "text": "So I'm gonna take this out."
+    },
+    {
+      "start": 449.09,
+      "end": 449.25,
+      "text": "I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry"
+    },
+    {
+      "start": 451.76,
+      "end": 455.87,
+      "text": "And these are actual clips that you can help suture"
+    },
+    {
+      "start": 455.87,
+      "end": 459.98,
+      "text": "your central line onto if it's the cap-"
+    },
+    {
+      "start": 460.03,
+      "end": 460.99,
+      "text": "is too long."
+    },
+    {
+      "start": 461.07,
+      "end": 466.45,
+      "text": "If it's more than about 5 centimeters outside of the patient's skin, that I usually use"
+    },
+    {
+      "start": 466.45,
+      "end": 468.25,
+      "text": "is just to make sure that it's more secure."
+    },
+    {
+      "start": 469.16,
+      "end": 469.32,
+      "text": "All right."
+    },
+    {
+      "start": 470.8,
+      "end": 478.98,
+      "text": "So now, oh, in addition, you want to put an ultrasound probe cover into your sterile"
+    },
+    {
+      "start": 478.98,
+      "end": 479.22,
+      "text": "fuel."
+    },
+    {
+      "start": 480.0,
+      "end": 483.3,
+      "text": "should be done actually before you start."
+    },
+    {
+      "start": 484.02,
+      "end": 485.48,
+      "text": "So here you can actually have someone"
+    },
+    {
+      "start": 485.48,
+      "end": 487.46,
+      "text": "put this in for you, sterilely, okay?"
+    },
+    {
+      "start": 488.38,
+      "end": 489.34,
+      "text": "So we're gonna open this up."
+    },
+    {
+      "start": 489.34,
+      "end": 489.52,
+      "text": "."
+    },
+    {
+      "start": 490.93,
+      "end": 492.29,
+      "text": "with ultrasound probe cover in."
+    },
+    {
+      "start": 496.01,
+      "end": 497.93,
+      "text": "And what's in the ultrasound probe cover kit."
+    },
+    {
+      "start": 501.76,
+      "end": 509.77,
+      "text": "as we open this up here, but here's Ultra Sound Pro."
+    },
+    {
+      "start": 509.77,
+      "end": 509.97,
+      "text": "I'm going to do a little bit more of this, and I'm going to do a little bit more of this, and a little bit more of this, and a little bit more of this, and a little bit more of this, and a little bit more of this, and a little bit more of this, and a little bit more of this, and a little bit more of this, and a little bit more of this, and a little bit more of this, and a little bit more of this, and a little bit more of this, and a little bit more of this, and a little bit more of this, and a little bit more of this, and a little bit more of this, and a little bit more of this, and a little bit more of this, and a little bit more of this, and a little bit more of this, and a little bit more of this, and a little bit more of this, and a little bit more of this, and a little bit more of this, and a little bit more of this, and a little bit more of"
+    },
+    {
+      "start": 510.67,
+      "end": 513.63,
+      "text": "And there's multiple different types of ultrasound probe covers, okay?"
+    },
+    {
+      "start": 513.73,
+      "end": 519.03,
+      "text": "So this one is a nice one because if you open it up, there's actually a little..."
+    },
+    {
+      "start": 520.06,
+      "end": 525.23,
+      "text": "hand here that shows a sticker and you literally just put your hand inside here and there's"
+    },
+    {
+      "start": 525.23,
+      "end": 529.84,
+      "text": "an arrow where your ultrasound goes into"
+    },
+    {
+      "start": 530.03,
+      "end": 530.75,
+      "text": "your probe codes into."
+    },
+    {
+      "start": 531.47,
+      "end": 534.26,
+      "text": "So you can have someone hand you the ultrasound probe"
+    },
+    {
+      "start": 534.26,
+      "end": 538.92,
+      "text": "and you just grab the ultrasound, right?"
+    },
+    {
+      "start": 539.1,
+      "end": 539.98,
+      "text": "So imagine someone was..."
+    },
+    {
+      "start": 540.51,
+      "end": 544.51,
+      "text": "Handing this to you and you just grab sterile on top of that and you pull the ultrasound"
+    },
+    {
+      "start": 544.51,
+      "end": 545.33,
+      "text": "probe cover down."
+    },
+    {
+      "start": 551.63,
+      "end": 559.98,
+      "text": "As long as it as you can all right, it's on the bed and what you'll notice"
+    },
+    {
+      "start": 560.0,
+      "end": 565.1,
+      "text": "here is that there's a lot of bubbles that go across here so you want to pull"
+    },
+    {
+      "start": 565.1,
+      "end": 569.91,
+      "text": "so I'm pulling the probe cover as tight as possible."
+    },
+    {
+      "start": 570.06,
+      "end": 573.63,
+      "text": "And then I use one finger to swipe off all the bubbles."
+    },
+    {
+      "start": 573.95,
+      "end": 578.86,
+      "text": "So there's a small amount of gel between the probe cover and the ultrasound, okay?"
+    },
+    {
+      "start": 581.31,
+      "end": 583.55,
+      "text": "And there's two rubber bands that come in,"
+    },
+    {
+      "start": 583.97,
+      "end": 585.89,
+      "text": "or sound pro-pubber kit too, as you see here."
+    },
+    {
+      "start": 586.35,
+      "end": 589.7,
+      "text": "So I use one rubber band and put it right at the base."
+    },
+    {
+      "start": 589.7,
+      "end": 589.96,
+      "text": "I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry"
+    },
+    {
+      "start": 591.6,
+      "end": 597.19,
+      "text": "of the transducer and another one kind of right where the wire"
+    },
+    {
+      "start": 600.0,
+      "end": 606.56,
+      "text": "meets the transducer here okay and the reason I do too is if you don't put this one here this is going"
+    },
+    {
+      "start": 606.56,
+      "end": 609.98,
+      "text": "to slip and it can it's hard for you to maneuver but when there's two"
+    },
+    {
+      "start": 610.0,
+      "end": 614.36,
+      "text": "You have a good holding point right here so you can hold right in between these two rubber bands and you'll be very"
+    },
+    {
+      "start": 614.36,
+      "end": 619.97,
+      "text": "Really stable. So after you get the ultrasound pro cover on this"
+    },
+    {
+      "start": 620.0,
+      "end": 622.9,
+      "text": "This is all sterile, so you really want to make sure it doesn't drop anywhere, it doesn't"
+    },
+    {
+      "start": 622.9,
+      "end": 623.56,
+      "text": "go somewhere else."
+    },
+    {
+      "start": 623.96,
+      "end": 629.98,
+      "text": "So I turn it, I twist it, and put it right on top of the patient, assuming they're..."
+    },
+    {
+      "start": 630.26,
+      "end": 633.56,
+      "text": "they're not moving and you can put that on top of the page so it doesn't fall."
+    },
+    {
+      "start": 634.56,
+      "end": 639.75,
+      "text": "Another thing that's in your ultrasound probe cover kit is this ultrasound"
+    },
+    {
+      "start": 640.0,
+      "end": 648.92,
+      "text": "This is sterile ultrasound jelly, okay? So you can open this you just listen"
+    },
+    {
+      "start": 650.0,
+      "end": 654.02,
+      "text": "here, and there's some sterile gel here. You put that directly on the patient."
+    },
+    {
+      "start": 655.48,
+      "end": 658.69,
+      "text": "You don't need to put too much. This is actually 20 grams."
+    },
+    {
+      "start": 660.0,
+      "end": 663.06,
+      "text": "really putting there's almost all of it still left in there just put a dab on there."
+    },
+    {
+      "start": 664.96,
+      "end": 669.9,
+      "text": "Like we talked about before right I do a double twist around my arm."
+    },
+    {
+      "start": 671.02,
+      "end": 673.7,
+      "text": "And the indicator, remember, is towards your left."
+    },
+    {
+      "start": 674.51,
+      "end": 677.84,
+      "text": "So indicators towards my left side over here,"
+    },
+    {
+      "start": 678.44,
+      "end": 679.84,
+      "text": "or my left side over here, okay?"
+    },
+    {
+      "start": 680.32,
+      "end": 684.44,
+      "text": "just to make sure that when I'm on,"
+    },
+    {
+      "start": 684.94,
+      "end": 686.9,
+      "text": "when I have the needle on the left side of the pro,"
+    },
+    {
+      "start": 687.0,
+      "end": 689.54,
+      "text": "it also shows up on the left side of the ultrasound screen."
+    },
+    {
+      "start": 690.45,
+      "end": 694.88,
+      "text": "And the reason I do a double twist is that this pulls my forearm"
+    },
+    {
+      "start": 694.88,
+      "end": 698.22,
+      "text": "and not my actual ultrasound probe."
+    },
+    {
+      "start": 699.03,
+      "end": 699.97,
+      "text": "Okay, so this is how I'm..."
+    },
+    {
+      "start": 700.03,
+      "end": 702.5,
+      "text": "holding it, twisted around my arm."
+    },
+    {
+      "start": 703.54,
+      "end": 705.32,
+      "text": "And from there, I always anchor,"
+    },
+    {
+      "start": 705.46,
+      "end": 706.7,
+      "text": "so I use one pinky to anchor."
+    },
+    {
+      "start": 708.16,
+      "end": 709.97,
+      "text": "And now I'm gonna look for the inch."
+    },
+    {
+      "start": 710.06,
+      "end": 716.6,
+      "text": "jugular vein on this phantom model. So there you see the internal jugular vein"
+    },
+    {
+      "start": 717.94,
+      "end": 719.92,
+      "text": "and to medium"
+    },
+    {
+      "start": 720.0,
+      "end": 724.99,
+      "text": "to that is the common crowded artery. So internal drugler vein compressible, okay?"
+    },
+    {
+      "start": 725.55,
+      "end": 729.18,
+      "text": "Common crowded artery. So internal drugler veins usually can be lateral and common"
+    },
+    {
+      "start": 729.18,
+      "end": 729.98,
+      "text": "going to be me."
+    },
+    {
+      "start": 730.0,
+      "end": 734.08,
+      "text": "So I'm going to increase my gain."
+    },
+    {
+      "start": 734.34,
+      "end": 737.12,
+      "text": "You can have someone adjust the ultrasound settings for you."
+    },
+    {
+      "start": 737.22,
+      "end": 739.84,
+      "text": "Or if you have some sterile gauze, you can actually put on ultrasound."
+    },
+    {
+      "start": 740.0,
+      "end": 742.54,
+      "text": "down and adjust your settings manually if you need to."
+    },
+    {
+      "start": 743.35,
+      "end": 748.02,
+      "text": "So this is a good depth for this internal"
+    },
+    {
+      "start": 748.02,
+      "end": 749.44,
+      "text": "a drugler vein and"
+    },
+    {
+      "start": 750.0,
+      "end": 752.04,
+      "text": "What I want you to do is after you see the internal drug"
+    },
+    {
+      "start": 752.04,
+      "end": 753.68,
+      "text": "of vein, don't go canulating right away."
+    },
+    {
+      "start": 753.8,
+      "end": 755.04,
+      "text": "Make sure you map out your vein."
+    },
+    {
+      "start": 755.46,
+      "end": 758.7,
+      "text": "So here I'm sliding up and down, making sure I know the angle"
+    },
+    {
+      "start": 758.7,
+      "end": 759.8,
+      "text": "that I'm going to be canulating."
+    },
+    {
+      "start": 760.38,
+      "end": 765.96,
+      "text": "Conversely, you can also turn 90 degrees and get it in the long acts of use."
+    },
+    {
+      "start": 766.08,
+      "end": 768.7,
+      "text": "So I turn clockwise, 90 degrees, so it's the long acts of use."
+    },
+    {
+      "start": 768.8,
+      "end": 769.98,
+      "text": "So I know the duration of the duration of the duration of the duration of the duration of the duration of the duration of the duration of the duration of the duration of the duration of the duration of the duration of the duration of the duration of the duration of the duration of the duration."
+    },
+    {
+      "start": 770.0,
+      "end": 776.04,
+      "text": "direction I have to go is this direction okay so a lot of people I've seen they"
+    },
+    {
+      "start": 776.42,
+      "end": 779.9,
+      "text": "see they think they have a good interdriven but their their angles off you know"
+    },
+    {
+      "start": 780.0,
+      "end": 784.53,
+      "text": "looks like a good circle and then but when you slide across you see that it"
+    },
+    {
+      "start": 784.53,
+      "end": 787.86,
+      "text": "doesn't stay in the middle of the screen. That means that your vessel is"
+    },
+    {
+      "start": 787.86,
+      "end": 789.98,
+      "text": "actually not centered, correct? So you want"
+    },
+    {
+      "start": 790.0,
+      "end": 792.98,
+      "text": "make sure it's centered and if I'm sliding it should be in the center of the"
+    },
+    {
+      "start": 792.98,
+      "end": 798.32,
+      "text": "screen the whole time that means I am centered I've centered the vessel and I"
+    },
+    {
+      "start": 798.32,
+      "end": 799.88,
+      "text": "know which direction my needle should go"
+    },
+    {
+      "start": 801.57,
+      "end": 808.38,
+      "text": "So from there I grab my needle so once in this is the needle you're going to be using and the bevel"
+    },
+    {
+      "start": 808.98,
+      "end": 809.96,
+      "text": "response to the nose."
+    },
+    {
+      "start": 810.0,
+      "end": 814.38,
+      "text": "numbers. So it goes up. And how to hold this? I got a lot of questions with this too."
+    },
+    {
+      "start": 814.76,
+      "end": 819.78,
+      "text": "So I hold it with two fingers like this. Okay, so my index and middle finger and my"
+    },
+    {
+      "start": 820.03,
+      "end": 826.22,
+      "text": "thumb is the one that pushes the syringe so that you can aspirate, okay?"
+    },
+    {
+      "start": 826.64,
+      "end": 828.22,
+      "text": "So once again, two fingers here."
+    },
+    {
+      "start": 830.26,
+      "end": 835.26,
+      "text": "Index and middle finger, and here you push with your thumb in order to aspirate, okay?"
+    },
+    {
+      "start": 836.1,
+      "end": 839.52,
+      "text": "And this gives you the best angle I feel like because you can go up and down, left and"
+    },
+    {
+      "start": 839.52,
+      "end": 839.72,
+      "text": "right"
+    },
+    {
+      "start": 840.0,
+      "end": 843.22,
+      "text": "some people like to use this technique where they hold it like this,"
+    },
+    {
+      "start": 843.36,
+      "end": 845.76,
+      "text": "but I feel like it's hard to maneuver."
+    },
+    {
+      "start": 846.2,
+      "end": 848.76,
+      "text": "You can't really go up on that yet to really force yourself."
+    },
+    {
+      "start": 849.4,
+      "end": 849.98,
+      "text": "So I like..."
+    },
+    {
+      "start": 850.0,
+      "end": 854.08,
+      "text": "I like this but you can choose however you want to do it so"
+    },
+    {
+      "start": 860.35,
+      "end": 862.91,
+      "text": "Oh, and of course you've numb the patient first, right?"
+    },
+    {
+      "start": 863.13,
+      "end": 865.19,
+      "text": "So you're using your lidocaine, you numb the area"
+    },
+    {
+      "start": 865.67,
+      "end": 869.98,
+      "text": "before you actually use the lark-"
+    },
+    {
+      "start": 870.0,
+      "end": 877.74,
+      "text": "board needle. So here I'm going to increase my gain just a tad, make sure, okay. So"
+    },
+    {
+      "start": 877.74,
+      "end": 879.88,
+      "text": "once again I'm sliding across, making sure"
+    },
+    {
+      "start": 880.03,
+      "end": 882.28,
+      "text": "that I know the direction of my vessel."
+    },
+    {
+      "start": 883.94,
+      "end": 886.22,
+      "text": "My bevel's up, my number's up, so I know my bevel's up."
+    },
+    {
+      "start": 887.77,
+      "end": 889.85,
+      "text": "And how I start is I actually put"
+    },
+    {
+      "start": 889.85,
+      "end": 889.97,
+      "text": "I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry"
+    },
+    {
+      "start": 890.0,
+      "end": 893.68,
+      "text": "the needle right underneath the ultrasound."
+    },
+    {
+      "start": 894.22,
+      "end": 897.06,
+      "text": "And there's a little marking right here you see on the ultrasound."
+    },
+    {
+      "start": 897.78,
+      "end": 899.98,
+      "text": "That corresponds to the center of the..."
+    },
+    {
+      "start": 900.0,
+      "end": 909.41,
+      "text": "ultrasound screen. So that's centered and I put it right where the dot is"
+    },
+    {
+      "start": 909.41,
+      "end": 909.81,
+      "text": "I'm angry."
+    },
+    {
+      "start": 910.74,
+      "end": 912.58,
+      "text": "and I put my needle right underneath the ultrasound."
+    },
+    {
+      "start": 920.86,
+      "end": 929.06,
+      "text": "Okay, and you see there's a small hyperacolic area right on top right in the top of the screen right there."
+    },
+    {
+      "start": 932.43,
+      "end": 937.07,
+      "text": "And what I'm doing now is that every time I go in"
+    },
+    {
+      "start": 937.07,
+      "end": 939.49,
+      "text": "a little bit more with the needle, I fan my probe."
+    },
+    {
+      "start": 940.1,
+      "end": 941.4,
+      "text": "and I go away from the needle tip,"
+    },
+    {
+      "start": 942.63,
+      "end": 944.21,
+      "text": "and then I now come back towards the needle tip"
+    },
+    {
+      "start": 944.21,
+      "end": 945.79,
+      "text": "to make sure I know where the needle tip is."
+    },
+    {
+      "start": 946.23,
+      "end": 947.45,
+      "text": "You don't want to get a false sense"
+    },
+    {
+      "start": 947.45,
+      "end": 949.07,
+      "text": "of knowing where your needle tip is."
+    },
+    {
+      "start": 950.19,
+      "end": 951.23,
+      "text": "really should be following it."
+    },
+    {
+      "start": 951.41,
+      "end": 953.29,
+      "text": "So here, I'm going away from my needle."
+    },
+    {
+      "start": 954.43,
+      "end": 956.37,
+      "text": "I'm fending away now, fending towards my new tip."
+    },
+    {
+      "start": 956.73,
+      "end": 957.23,
+      "text": "Funny it there."
+    },
+    {
+      "start": 960.54,
+      "end": 965.05,
+      "text": "away and towards. Okay, so I'm going slowly. You can see the needle tip there."
+    },
+    {
+      "start": 970.03,
+      "end": 972.75,
+      "text": "and I'm going in more, and then every time I go in,"
+    },
+    {
+      "start": 973.17,
+      "end": 975.74,
+      "text": "I'm fanning my probe looking for my needle tip."
+    },
+    {
+      "start": 976.57,
+      "end": 978.95,
+      "text": "Don't go in fast, you don't have to go fast for this,"
+    },
+    {
+      "start": 979.05,
+      "end": 979.97,
+      "text": "you just want to make sure you find..."
+    },
+    {
+      "start": 980.0,
+      "end": 984.46,
+      "text": "your needle tip. So I'm going away. Now I'm going towards my needle tip again. Now I see"
+    },
+    {
+      "start": 984.46,
+      "end": 989.91,
+      "text": "you that where it is. Now I go in, I fan away, I go towards. Now I see my tip."
+    },
+    {
+      "start": 990.0,
+      "end": 993.98,
+      "text": "right there. It's at the anterior portion of the vessel, all right. Now I'm still"
+    },
+    {
+      "start": 993.98,
+      "end": 998.5,
+      "text": "fanning and making sure that I know exactly where my tip is at and then I go in"
+    },
+    {
+      "start": 998.5,
+      "end": 999.85,
+      "text": "and I can't relate."
+    },
+    {
+      "start": 1000.0,
+      "end": 1005.57,
+      "text": "vessel right there. I should get a flash. So here I get a flash, a red flash, over there."
+    },
+    {
+      "start": 1006.07,
+      "end": 1009.97,
+      "text": "And I can confirm that. I can see exactly where my needle tip is. You see that hyperb-"
+    },
+    {
+      "start": 1010.0,
+      "end": 1012.68,
+      "text": "or a coke area right in the middle of the vessel."
+    },
+    {
+      "start": 1012.84,
+      "end": 1014.98,
+      "text": "I know I'm exactly right in the middle of the vessel."
+    },
+    {
+      "start": 1015.4,
+      "end": 1016.7,
+      "text": "So that's why I want you to be able to do this,"
+    },
+    {
+      "start": 1016.76,
+      "end": 1017.98,
+      "text": "and be able to guide your needle tip,"
+    },
+    {
+      "start": 1018.86,
+      "end": 1019.88,
+      "text": "be able to see it tempting."
+    },
+    {
+      "start": 1020.0,
+      "end": 1026.09,
+      "text": "the anterior portion of the vessel and then seeing exactly where it lies in your vessel itself."
+    },
+    {
+      "start": 1030.54,
+      "end": 1033.78,
+      "text": "Another approach you can use is long axis approach."
+    },
+    {
+      "start": 1034.28,
+      "end": 1037.66,
+      "text": "I would recommend perfecting the short axis approach first,"
+    },
+    {
+      "start": 1038.1,
+      "end": 1039.46,
+      "text": "if you want to do the long axis approach."
+    },
+    {
+      "start": 1040.06,
+      "end": 1043.72,
+      "text": "You can turn your probe 90 degrees, okay?"
+    },
+    {
+      "start": 1043.84,
+      "end": 1044.54,
+      "text": "So clockwise there."
+    },
+    {
+      "start": 1045.56,
+      "end": 1047.51,
+      "text": "And here, once again, you're gonna start right"
+    },
+    {
+      "start": 1047.51,
+      "end": 1049.35,
+      "text": "at the base of the..."
+    },
+    {
+      "start": 1050.29,
+      "end": 1059.6,
+      "text": "of the probe and you see here in my needle tip going in so I can actually follow my"
+    },
+    {
+      "start": 1059.6,
+      "end": 1059.96,
+      "text": "tip going in."
+    },
+    {
+      "start": 1060.0,
+      "end": 1066.1,
+      "text": "going in and there, I'm right inside the vessel itself, and now I'm aspirating fluid."
+    },
+    {
+      "start": 1066.62,
+      "end": 1069.92,
+      "text": "You can see if I went to posterior, that's the posterior portion of the vessel."
+    },
+    {
+      "start": 1070.06,
+      "end": 1073.36,
+      "text": "So you can pull back just a little bit to make sure you're right in the center of that"
+    },
+    {
+      "start": 1073.36,
+      "end": 1073.52,
+      "text": "best."
+    },
+    {
+      "start": 1073.62,
+      "end": 1077.6,
+      "text": "That's how you're going to make sure that you get the best chance of getting that guide"
+    },
+    {
+      "start": 1077.6,
+      "end": 1077.98,
+      "text": "right through."
+    },
+    {
+      "start": 1078.44,
+      "end": 1079.34,
+      "text": "So once you get that"
+    },
+    {
+      "start": 1080.0,
+      "end": 1086.72,
+      "text": "You notice that I'm going to put my ultrasound probe down either the shorter long axis approach"
+    },
+    {
+      "start": 1086.72,
+      "end": 1089.84,
+      "text": "Okay, assuming you got the vessel you put your ultrasound"
+    },
+    {
+      "start": 1090.0,
+      "end": 1091.86,
+      "text": "and hold that right hand really steady"
+    },
+    {
+      "start": 1091.86,
+      "end": 1093.54,
+      "text": "because this is where most people lose their needle."
+    },
+    {
+      "start": 1094.46,
+      "end": 1097.56,
+      "text": "And with two fingers, your index and your thumb,"
+    },
+    {
+      "start": 1097.82,
+      "end": 1099.88,
+      "text": "you're gonna hold the base of that needle tip and"
+    },
+    {
+      "start": 1100.0,
+      "end": 1102.56,
+      "text": "anchor with your pinky on the patient so you don't move."
+    },
+    {
+      "start": 1104.14,
+      "end": 1109.92,
+      "text": "And then slowly twist off this cap here and get your guide wire, your guide wire."
+    },
+    {
+      "start": 1110.67,
+      "end": 1111.61,
+      "text": "and put a straight through here."
+    },
+    {
+      "start": 1124.03,
+      "end": 1124.15,
+      "text": "I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry"
+    },
+    {
+      "start": 1124.15,
+      "end": 1124.17,
+      "text": "I'm going to do a little bit more of this, I'm going to do a little bit more of this, I'm going to do a little bit more, I'm going to do a little bit more, I'm going to do a little bit more, I'm going to do a little bit more, I'm going to do a little bit more, I'm going to do a little bit more, I'm going to do a little bit more, I'm going to do a little bit more, I'm going to do a little bit more, I'm going to do a little bit more, I'm going to do a little bit more, I'm going to do a little bit more, I'm going to do a little bit more, I'm going to do a little bit more, I'm going to do a little bit more, I'm going to do a little bit more, I'm going to do a little bit more, I'm going to do a little bit more, I'm going to do a little bit more, I'm going to do a little bit more"
+    },
+    {
+      "start": 1131.22,
+      "end": 1132.48,
+      "text": "I like to use a little gauze here, too,"
+    },
+    {
+      "start": 1132.56,
+      "end": 1134.84,
+      "text": "just make sure there's no bleeding."
+    },
+    {
+      "start": 1136.06,
+      "end": 1136.92,
+      "text": "To get your guide right through."
+    },
+    {
+      "start": 1137.4,
+      "end": 1139.74,
+      "text": "And before you actually do the next step,"
+    },
+    {
+      "start": 1139.9,
+      "end": 1139.98,
+      "text": "you should..."
+    },
+    {
+      "start": 1140.0,
+      "end": 1142.06,
+      "text": "should confirm where your guide wire is."
+    },
+    {
+      "start": 1143.42,
+      "end": 1144.7,
+      "text": "So here I can see it."
+    },
+    {
+      "start": 1145.11,
+      "end": 1146.43,
+      "text": "This is a short axis approach here."
+    },
+    {
+      "start": 1146.55,
+      "end": 1149.4,
+      "text": "I can see the guide wire inside the lumen."
+    },
+    {
+      "start": 1150.22,
+      "end": 1157.28,
+      "text": "of my vein. A nicer view sometimes is to actually look at it in a long axis view and you"
+    },
+    {
+      "start": 1157.28,
+      "end": 1159.97,
+      "text": "can see here that it's nicely in the..."
+    },
+    {
+      "start": 1160.0,
+      "end": 1164.52,
+      "text": "So this is a great way to confirm right before you die because once you dilate the patient"
+    },
+    {
+      "start": 1164.52,
+      "end": 1165.36,
+      "text": "can bleed a lot."
+    },
+    {
+      "start": 1168.94,
+      "end": 1169.98,
+      "text": "So now I've confirmed my..."
+    },
+    {
+      "start": 1170.03,
+      "end": 1174.85,
+      "text": "guide wire. I know it's in a vein. It's not in the artery itself. Now you can go"
+    },
+    {
+      "start": 1174.85,
+      "end": 1178.42,
+      "text": "finish the rest of your central line procedure."
+    },
+    {
+      "start": 1181.28,
+      "end": 1183.99,
+      "text": "So next step is going to be you're gonna use a scalpel"
+    },
+    {
+      "start": 1185.65,
+      "end": 1188.86,
+      "text": "and you're gonna put the ultrasound probe away"
+    },
+    {
+      "start": 1188.86,
+      "end": 1189.98,
+      "text": "and then you're gonna make a smooth..."
+    },
+    {
+      "start": 1190.03,
+      "end": 1194.61,
+      "text": "right at the base of that guide where I'm not going to make a knick on this"
+    },
+    {
+      "start": 1194.61,
+      "end": 1197.63,
+      "text": "mannequin, but you can see you just push it in, make a small knick there."
+    },
+    {
+      "start": 1197.63,
+      "end": 1199.22,
+      "text": "Close your..."
+    },
+    {
+      "start": 1200.64,
+      "end": 1208.63,
+      "text": "couple there and then you're going to get your dilator and you're going to put it through the"
+    },
+    {
+      "start": 1211.86,
+      "end": 1214.68,
+      "text": "and then you're just gonna dilate, I'm not gonna dilate fully,"
+    },
+    {
+      "start": 1214.98,
+      "end": 1218.92,
+      "text": "but you're gonna dilate probably about two thirds of the dilator."
+    },
+    {
+      "start": 1219.68,
+      "end": 1219.96,
+      "text": "And you're gonna..."
+    },
+    {
+      "start": 1220.06,
+      "end": 1229.83,
+      "text": "that out and then put in your central line. Make sure that it's usually the brown one, the brown"
+    },
+    {
+      "start": 1230.34,
+      "end": 1234.79,
+      "text": "or the cap that the guy where it goes through"
+    },
+    {
+      "start": 1234.79,
+      "end": 1236.7,
+      "text": "and make sure all the other ones are clamped"
+    },
+    {
+      "start": 1236.7,
+      "end": 1238.06,
+      "text": "because if they're not clamped, they might bleed."
+    },
+    {
+      "start": 1239.8,
+      "end": 1239.96,
+      "text": "So..."
+    },
+    {
+      "start": 1240.03,
+      "end": 1246.21,
+      "text": "clamp it here, clamp it here, and hold on to your guide bar the whole time."
+    },
+    {
+      "start": 1255.09,
+      "end": 1259.94,
+      "text": "So the guy where is coming out of the other end, then you can just thread your"
+    },
+    {
+      "start": 1260.0,
+      "end": 1261.96,
+      "text": "your catheter directly into the vessel."
+    },
+    {
+      "start": 1264.79,
+      "end": 1267.36,
+      "text": "And then, so, you normally that write IJ,"
+    },
+    {
+      "start": 1267.5,
+      "end": 1269.91,
+      "text": "I put in 15 centimeters, so,"
+    },
+    {
+      "start": 1269.91,
+      "end": 1269.97,
+      "text": "I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry"
+    },
+    {
+      "start": 1270.0,
+      "end": 1271.78,
+      "text": "Right now, it's at about 13."
+    },
+    {
+      "start": 1271.94,
+      "end": 1273.94,
+      "text": "This is as far as it goes for this mannequin."
+    },
+    {
+      "start": 1274.73,
+      "end": 1276.03,
+      "text": "Then you just pull out your guide wire."
+    },
+    {
+      "start": 1280.0,
+      "end": 1283.16,
+      "text": "before because blood sometimes can come out, so you just clamp that"
+    },
+    {
+      "start": 1283.16,
+      "end": 1289.56,
+      "text": "clay and then put on your clay. You're going to flesh your lines, suture up."
+    },
+    {
+      "start": 1290.26,
+      "end": 1298.24,
+      "text": "put a biopatch on and a take a term and then get an x-ray for the placement and that's"
+    },
+    {
+      "start": 1298.24,
+      "end": 1299.55,
+      "text": "it for the central line."
+    }
+  ]
+}

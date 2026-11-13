@@ -1,0 +1,683 @@
+{
+  "video_id": "V8DgPnUMsus",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/V8DgPnUMsus/asr.txt",
+  "segments": [
+    {
+      "start": 0.16,
+      "end": 4.18,
+      "text": "Whether your patient presents with a broken femur in the ER, or for elective knee surgery"
+    },
+    {
+      "start": 4.18,
+      "end": 7.84,
+      "text": "in the OR, the femoral nerve block is super impactful for patients."
+    },
+    {
+      "start": 7.84,
+      "end": 9.92,
+      "text": "It's reliable, versatile and"
+    },
+    {
+      "start": 10.03,
+      "end": 13.47,
+      "text": "one of the most useful tools in your nerve block kit, and in the next few minutes, we're"
+    },
+    {
+      "start": 13.47,
+      "end": 14.33,
+      "text": "going to break it down."
+    },
+    {
+      "start": 21.12,
+      "end": 24.78,
+      "text": "The femoral nerve block is often one of the first that beginners learn, and for good reason."
+    },
+    {
+      "start": 25.04,
+      "end": 28.66,
+      "text": "It's relatively straightforward and safe, and has a lot of utility in both the trauma"
+    },
+    {
+      "start": 28.66,
+      "end": 29.98,
+      "text": "setting and for elective sph-"
+    },
+    {
+      "start": 30.0,
+      "end": 32.0,
+      "text": "surgical patients undergoing lower limb surgery."
+    },
+    {
+      "start": 32.32,
+      "end": 33.24,
+      "text": "Let's check out the anatomy."
+    },
+    {
+      "start": 35.65,
+      "end": 38.47,
+      "text": "The femoral nerve is the main branch of the lumbar plexus"
+    },
+    {
+      "start": 38.47,
+      "end": 39.97,
+      "text": "and runs beneath the inguinal ligament."
+    },
+    {
+      "start": 40.03,
+      "end": 44.21,
+      "text": "just lateral to the femoral vessels before splitting into multiple branches to"
+    },
+    {
+      "start": 44.21,
+      "end": 48.44,
+      "text": "innervate the skin, muscles, and other structures of the interior thigh. The nerve is"
+    },
+    {
+      "start": 48.44,
+      "end": 49.96,
+      "text": "bound down to the ili-"
+    },
+    {
+      "start": 50.06,
+      "end": 56.12,
+      "text": "muscle by the fascia iliaca, a tough fibrous sheath. Think of the fascia iliaca as cling wrap over a"
+    },
+    {
+      "start": 56.12,
+      "end": 59.97,
+      "text": "steak. Hmm, steak. The goal of the block is to place..."
+    },
+    {
+      "start": 60.0,
+      "end": 65.22,
+      "text": "local anesthetic here in the potential space between the fascia iliacca and the iliacus muscle itself."
+    },
+    {
+      "start": 65.82,
+      "end": 69.84,
+      "text": "Note there's a separation between the artery and the nerve. The fascia iliacca dives"
+    },
+    {
+      "start": 70.0,
+      "end": 73.86,
+      "text": "deep under the artery, so these two structures are in different fashion compartments."
+    },
+    {
+      "start": 74.35,
+      "end": 78.71,
+      "text": "The goal is to drive a needle in from the lateral side and pop through the fascia iliacca."
+    },
+    {
+      "start": 79.23,
+      "end": 79.97,
+      "text": "Now as soon as your tip-"
+    },
+    {
+      "start": 80.0,
+      "end": 84.72,
+      "text": "through the tough fascia, stop there and try to un-zipper that potential space with some"
+    },
+    {
+      "start": 84.72,
+      "end": 85.12,
+      "text": "saline."
+    },
+    {
+      "start": 85.42,
+      "end": 89.02,
+      "text": "If you're intramuscular, you can pull back a touch while injecting to find the right"
+    },
+    {
+      "start": 89.02,
+      "end": 89.36,
+      "text": "plane."
+    },
+    {
+      "start": 90.0,
+      "end": 93.4,
+      "text": "Once you have it, you can advance your needle into the space you've created until you"
+    },
+    {
+      "start": 93.4,
+      "end": 95.14,
+      "text": "see the local spreading beside the nerve."
+    },
+    {
+      "start": 95.84,
+      "end": 99.98,
+      "text": "You want to always use the hydraulic pressure of your saline or local anaesthetic to do"
+    },
+    {
+      "start": 100.0,
+      "end": 105.0,
+      "text": "mechanical work for you. Let the fluid unzipper that plane. You don't want a sharp needle"
+    },
+    {
+      "start": 105.0,
+      "end": 109.92,
+      "text": "contact in the nerve. Sometimes the local goes superficial to the nerve, elevating the fascia."
+    },
+    {
+      "start": 110.16,
+      "end": 113.22,
+      "text": "Other times, the local spreads between the iliacus muscle and the nerve."
+    },
+    {
+      "start": 113.69,
+      "end": 117.87,
+      "text": "Either one is great as long as you have local next to the nerve in this potential space."
+    },
+    {
+      "start": 120.13,
+      "end": 123.95,
+      "text": "To image the femoral nerve, a linear probe is placed transversely in the inguinal crease."
+    },
+    {
+      "start": 124.33,
+      "end": 126.45,
+      "text": "It helps to have the thigh slightly abducted."
+    },
+    {
+      "start": 126.87,
+      "end": 128.73,
+      "text": "The first thing we'll look for is the femoral artery."
+    },
+    {
+      "start": 129.11,
+      "end": 129.97,
+      "text": "It's the big..."
+    },
+    {
+      "start": 130.13,
+      "end": 134.79,
+      "text": "dark pulsating thing. If you don't see it, chances are you're bit too lateral. Just slide"
+    },
+    {
+      "start": 134.79,
+      "end": 138.78,
+      "text": "medial and you should find it. Releasing the pressure on the probe, you should see the"
+    },
+    {
+      "start": 138.78,
+      "end": 139.96,
+      "text": "the theme of the theme of the theme of the theme of the theme of the theme of the theme of the theme of the theme of the theme of the theme of the theme of the theme of the theme of the theme of the theme of the theme of the theme of the theme of the theme of the theme of the theme of the theme of the theme of the theme of the theme of the theme of the theme of the theme of the theme of the theme of the theme of the theme of the theme of the theme of the theme of the theme of the theme of the theme of the theme of the theme of the theme of the theme of the theme of the theme of the theme of the theme of the theme of the theme of the theme of the theme of the theme of the theme of the theme of the theme of the theme"
+    },
+    {
+      "start": 140.0,
+      "end": 145.08,
+      "text": "side of the artery. The nerve is on the lateral side. You're looking for a bright, hyper-echoic,"
+    },
+    {
+      "start": 145.2,
+      "end": 149.82,
+      "text": "oval, or triangle, and often you can see small fascicles within. Alright, let's see what this looks like."
+    },
+    {
+      "start": 150.16,
+      "end": 151.96,
+      "text": "Here we see the femoral artery, the nerve,"
+    },
+    {
+      "start": 152.28,
+      "end": 153.74,
+      "text": "and the underlying iliacus muscle."
+    },
+    {
+      "start": 154.17,
+      "end": 155.73,
+      "text": "We know the fascia iliacus is here,"
+    },
+    {
+      "start": 155.89,
+      "end": 157.49,
+      "text": "even though it's not seen all that well."
+    },
+    {
+      "start": 158.46,
+      "end": 159.98,
+      "text": "We move the probe laterally to say,"
+    },
+    {
+      "start": 160.0,
+      "end": 167.52,
+      "text": "the target. The nerve looks like an oval honeycomb. We see our needle approaching from the lateral side"
+    },
+    {
+      "start": 167.52,
+      "end": 169.7,
+      "text": "indenting the fascia and then"
+    },
+    {
+      "start": 170.0,
+      "end": 171.29,
+      "text": "and popping through."
+    },
+    {
+      "start": 171.87,
+      "end": 174.05,
+      "text": "Our initial injection of saline is pushing down"
+    },
+    {
+      "start": 174.05,
+      "end": 174.99,
+      "text": "the iliacus muscle."
+    },
+    {
+      "start": 175.47,
+      "end": 176.57,
+      "text": "Good, we're in the right plane."
+    },
+    {
+      "start": 177.65,
+      "end": 179.89,
+      "text": "Now we can squirt advance, squirt."
+    },
+    {
+      "start": 180.0,
+      "end": 183.82,
+      "text": "advance as we develop that plane and allow the local to float over the nerve."
+    },
+    {
+      "start": 184.87,
+      "end": 187.23,
+      "text": "We're being careful to not touch the nerve with the sharp tip."
+    },
+    {
+      "start": 189.29,
+      "end": 189.97,
+      "text": "That is more the"
+    },
+    {
+      "start": 190.0,
+      "end": 193.68,
+      "text": "enough coverage to get a good block. But sometimes, if the planes are amenable,"
+    },
+    {
+      "start": 193.92,
+      "end": 197.16,
+      "text": "we'll peel the nerve off the muscle with some local as well, which will hasten the"
+    },
+    {
+      "start": 197.16,
+      "end": 199.4,
+      "text": "onset and, well, just feels good."
+    },
+    {
+      "start": 200.42,
+      "end": 201.78,
+      "text": "that nervous swimming in local."
+    },
+    {
+      "start": 208.66,
+      "end": 209.56,
+      "text": "Okay, and we're done."
+    },
+    {
+      "start": 210.35,
+      "end": 213.51,
+      "text": "For a single-shot block, 15 mils is usually plenty."
+    },
+    {
+      "start": 213.87,
+      "end": 215.15,
+      "text": "You rarely need more than 20."
+    },
+    {
+      "start": 215.71,
+      "end": 218.37,
+      "text": "The femoral catheter technique is done in much the same way."
+    },
+    {
+      "start": 218.71,
+      "end": 219.97,
+      "text": "Expand the space, then..."
+    },
+    {
+      "start": 220.0,
+      "end": 226.02,
+      "text": "three to five centimeters of catheter there. Here are the dermatomes, myotomes,"
+    },
+    {
+      "start": 226.12,
+      "end": 229.82,
+      "text": "and osteotomes relevant to the femoral nerve. You can see why this is a great"
+    },
+    {
+      "start": 229.82,
+      "end": 229.96,
+      "text": "I'll see you in the next video."
+    },
+    {
+      "start": 230.03,
+      "end": 234.39,
+      "text": "block for thigh stuff. You can also see that you will knock out the quads, so that's"
+    },
+    {
+      "start": 234.39,
+      "end": 238.6,
+      "text": "a consideration for safe ambulation afterward. More on that later, we use a"
+    },
+    {
+      "start": 238.6,
+      "end": 239.98,
+      "text": "femoral nerve block for lower limb"
+    },
+    {
+      "start": 240.06,
+      "end": 244.4,
+      "text": "amputations, where femoral and sciatic catheters are left in place for a week or longer."
+    },
+    {
+      "start": 244.83,
+      "end": 249.7,
+      "text": "We also use it extensively for lower limb trauma, such as fracture of the hip, femur,"
+    },
+    {
+      "start": 250.0,
+      "end": 250.86,
+      "text": "and proximal tibia."
+    },
+    {
+      "start": 251.25,
+      "end": 251.43,
+      "text": "Ow!"
+    },
+    {
+      "start": 251.79,
+      "end": 254.13,
+      "text": "Note that the medial aspect of the proximal tibia"
+    },
+    {
+      "start": 254.13,
+      "end": 255.79,
+      "text": "is innervated by the femoral nerve."
+    },
+    {
+      "start": 256.37,
+      "end": 258.05,
+      "text": "Now, we don't use this block so much"
+    },
+    {
+      "start": 258.05,
+      "end": 259.61,
+      "text": "for uncomplicated knee replacements"
+    },
+    {
+      "start": 259.61,
+      "end": 259.83,
+      "text": "because..."
+    },
+    {
+      "start": 260.0,
+      "end": 264.1,
+      "text": "you will get quads weakness and we want those patients to walk right away and pack you."
+    },
+    {
+      "start": 264.34,
+      "end": 267.14,
+      "text": "The Dr. Canal block is often a better choice for those patients."
+    },
+    {
+      "start": 267.58,
+      "end": 269.94,
+      "text": "However, femoral is an excellent block."
+    },
+    {
+      "start": 270.0,
+      "end": 274.8,
+      "text": "for post-op pain following ACL repair and patellar surgery, and in those cases we'll"
+    },
+    {
+      "start": 274.8,
+      "end": 278.94,
+      "text": "just place the patient in a neomobilizer until the block has resolved. Problem solved."
+    },
+    {
+      "start": 281.12,
+      "end": 282.14,
+      "text": "And here are some tips and tricks"
+    },
+    {
+      "start": 282.14,
+      "end": 284.38,
+      "text": "for visualizing and blocking the femoral nerve."
+    },
+    {
+      "start": 284.93,
+      "end": 287.29,
+      "text": "First, the femoral nerve is quite anisotropic,"
+    },
+    {
+      "start": 287.49,
+      "end": 289.97,
+      "text": "meaning that different angles of beam incidence will come."
+    },
+    {
+      "start": 290.0,
+      "end": 292.28,
+      "text": "to light up or disappear on the screen."
+    },
+    {
+      "start": 292.58,
+      "end": 296.2,
+      "text": "Typically, a cranial tilt will result in the nerve popping out of the background."
+    },
+    {
+      "start": 296.74,
+      "end": 299.92,
+      "text": "The femoral nerve breaks up into tiny branches or arbor-"
+    },
+    {
+      "start": 300.0,
+      "end": 302.72,
+      "text": "at the level of the femoral artery bifurcation."
+    },
+    {
+      "start": 303.06,
+      "end": 304.0,
+      "text": "Let's all say that together."
+    },
+    {
+      "start": 304.55,
+      "end": 305.03,
+      "text": "Arborizes."
+    },
+    {
+      "start": 305.47,
+      "end": 306.23,
+      "text": "Oh, great word."
+    },
+    {
+      "start": 306.49,
+      "end": 308.61,
+      "text": "Anyway, if you're having trouble seeing your femoral nerve,"
+    },
+    {
+      "start": 308.89,
+      "end": 309.85,
+      "text": "slide the pro pro-"
+    },
+    {
+      "start": 310.0,
+      "end": 316.56,
+      "text": "To be sure that you're at least at the bifurcation or higher where the nerve is one chunky structure another trick"
+    },
+    {
+      "start": 316.56,
+      "end": 319.96,
+      "text": "To bring the nerve out of the background is to bounce the probe with"
+    },
+    {
+      "start": 320.0,
+      "end": 324.08,
+      "text": "some pressure. This will compress the fat, but not the nerve, and sometimes it helps to"
+    },
+    {
+      "start": 324.08,
+      "end": 328.14,
+      "text": "draw your eye to the right structure. Now, sometimes the nerve isn't exactly where"
+    },
+    {
+      "start": 328.14,
+      "end": 329.98,
+      "text": "you think it should be. You can also be f-"
+    },
+    {
+      "start": 330.06,
+      "end": 334.76,
+      "text": "by hyper-echoic artifacts or structures below the artery or in the superficial fat."
+    },
+    {
+      "start": 335.25,
+      "end": 339.85,
+      "text": "Just remember, the key landmark here is the fascia iliacca. Get some fluid"
+    },
+    {
+      "start": 340.0,
+      "end": 342.38,
+      "text": "in that potential space and the resulting contrast"
+    },
+    {
+      "start": 342.38,
+      "end": 344.32,
+      "text": "will pop the nerve out of the background"
+    },
+    {
+      "start": 344.32,
+      "end": 345.78,
+      "text": "and confirm you're in the right spot."
+    },
+    {
+      "start": 346.36,
+      "end": 348.26,
+      "text": "And if you're really having trouble identifying the nerve,"
+    },
+    {
+      "start": 348.46,
+      "end": 349.78,
+      "text": "don't forget about nerve stimuli."
+    },
+    {
+      "start": 350.0,
+      "end": 354.58,
+      "text": "It's a useful adjunct to confirm that the smudge you see is for sure the right structure."
+    },
+    {
+      "start": 354.92,
+      "end": 359.22,
+      "text": "Next, when you pop through the fascia iliaca, don't do it right over the nerve, or you'll"
+    },
+    {
+      "start": 359.22,
+      "end": 359.98,
+      "text": "risk doing an..."
+    },
+    {
+      "start": 360.06,
+      "end": 365.55,
+      "text": "nerve kabob, pass through the fascia more laterally, and then use fluid to hydrodysect and gently"
+    },
+    {
+      "start": 365.55,
+      "end": 366.87,
+      "text": "advance to where the nerve lives."
+    },
+    {
+      "start": 367.33,
+      "end": 369.97,
+      "text": "And finally, another indication for this block is in total..."
+    },
+    {
+      "start": 370.0,
+      "end": 375.19,
+      "text": "knees. Wait, didn't I just say not to use it for that? I sure did, but check this out."
+    },
+    {
+      "start": 375.39,
+      "end": 379.61,
+      "text": "Every once in a while, we'll have a patient who's had our total knee block recipe, including"
+    },
+    {
+      "start": 379.61,
+      "end": 379.97,
+      "text": "Bye bye."
+    },
+    {
+      "start": 380.06,
+      "end": 384.92,
+      "text": "canal, genicator, and cutie blocks, but who is miserable and pack you because they're having"
+    },
+    {
+      "start": 384.92,
+      "end": 385.86,
+      "text": "quads spasm."
+    },
+    {
+      "start": 386.27,
+      "end": 388.41,
+      "text": "Dr. Canal ain't gonna help you much with that."
+    },
+    {
+      "start": 388.94,
+      "end": 389.98,
+      "text": "And yeah, you could give-"
+    },
+    {
+      "start": 390.0,
+      "end": 393.54,
+      "text": "opioids or muscle relaxant, but to knock that spasm out quick,"
+    },
+    {
+      "start": 393.86,
+      "end": 397.44,
+      "text": "in selected patients will do a rescue femoral with just five to ten"
+    },
+    {
+      "start": 397.44,
+      "end": 399.98,
+      "text": "mills of a short-acting local like chloroprocane."
+    },
+    {
+      "start": 400.26,
+      "end": 404.72,
+      "text": "It'll break the spasm cycle, but the motor block will be gone in under 60 minutes, allowing"
+    },
+    {
+      "start": 404.72,
+      "end": 405.52,
+      "text": "them to walk again."
+    },
+    {
+      "start": 405.99,
+      "end": 409.97,
+      "text": "The femoral nerve block is a tried and true workhorse, and should be in everyone's"
+    },
+    {
+      "start": 410.06,
+      "end": 410.34,
+      "text": "toolkit."
+    },
+    {
+      "start": 410.79,
+      "end": 413.85,
+      "text": "It's amazing at block insensation in most of the anterior thigh."
+    },
+    {
+      "start": 414.29,
+      "end": 415.63,
+      "text": "Most but not all."
+    },
+    {
+      "start": 416.15,
+      "end": 419.97,
+      "text": "Turns out if you need to block the skin of the anterior lateral thigh, you need to find"
+    },
+    {
+      "start": 420.0,
+      "end": 423.98,
+      "text": "the lateral femoral coutaneous nerve. And to do that, check out this video."
+    }
+  ]
+}

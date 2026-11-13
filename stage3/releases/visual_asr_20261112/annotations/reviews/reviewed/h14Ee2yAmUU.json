@@ -1,0 +1,307 @@
+{
+  "understanding": "Anterior thigh sciatic ultrasound teaching: external probe setup, landmarks with Doppler, then standalone grayscale example.",
+  "native_opened": [
+    79,
+    80,
+    85,
+    125,
+    133,
+    134,
+    140,
+    281,
+    294,
+    295,
+    296,
+    297,
+    310,
+    316,
+    325
+  ],
+  "tasks": [
+    {
+      "qa_type": "current_observation",
+      "query_time": 125,
+      "answer_time": 125,
+      "checkpoints": [
+        125
+      ],
+      "question": "What pattern in this thigh scan identifies the femur the instructor is pointing out?",
+      "reference_answer": "A bright curved surface on the right casts a broad dark shadow beneath it.",
+      "visual_support": "Bright cortex and deep shadow on right.",
+      "query_prefix_check": "The femoral contour and shadow are visible and the femur has been named.",
+      "answer_prefix_check": "125 supports the whole answer.",
+      "shortcut_risk": "The narration names the femur; the contour and screen side come from the scan.",
+      "task_id": "s3_remaining79_h14Ee2yAmUU_01",
+      "video_id": "h14Ee2yAmUU",
+      "split": "train",
+      "language": "en",
+      "source_video": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/h14Ee2yAmUU.mp4",
+      "stage3_value": "medium",
+      "visual_evidence": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/h14Ee2yAmUU/125.jpg",
+          "checkpoint": 125.0,
+          "source_pts_seconds": 124.9248,
+          "resolution": [
+            854,
+            480
+          ]
+        }
+      ],
+      "asr_support_segments": [
+        {
+          "start": 110.0,
+          "end": 114.72,
+          "text": "structures when doing this block that you need to identify to have a quick"
+        },
+        {
+          "start": 114.72,
+          "end": 119.98,
+          "text": "easy safe and successful block. Now the first is the femur. This is very easy."
+        },
+        {
+          "start": 120.0,
+          "end": 121.78,
+          "text": "It's sitting right here."
+        }
+      ],
+      "query_decision": "ANSWER",
+      "answer_decision": "ANSWER",
+      "review_status": "accepted_targeted_native_frame_self_review",
+      "student_input_visibility": "not_checked"
+    },
+    {
+      "qa_type": "event_notification",
+      "query_time": 125,
+      "answer_time": 134,
+      "checkpoints": [
+        125,
+        133,
+        134
+      ],
+      "question": "Let me know when the thigh scan first shows color Doppler flow beside the femur, and tell me which side of the bone it appears on.",
+      "reference_answer": "Color flow is now visible to the left of the femur, inside the Doppler box.",
+      "visual_support": "134 has a real color ROI with red flow spots; 133 remains grayscale.",
+      "query_prefix_check": "The region is grayscale and does not show the requested event.",
+      "answer_prefix_check": "134 shows actual localized flow on the left; no claim about blue at onset.",
+      "shortcut_risk": "Later teaching previews Doppler, but the onset is visually determined.",
+      "task_id": "s3_remaining79_h14Ee2yAmUU_02",
+      "video_id": "h14Ee2yAmUU",
+      "split": "train",
+      "language": "en",
+      "source_video": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/h14Ee2yAmUU.mp4",
+      "stage3_value": "medium",
+      "visual_evidence": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/h14Ee2yAmUU/125.jpg",
+          "checkpoint": 125.0,
+          "source_pts_seconds": 124.9248,
+          "resolution": [
+            854,
+            480
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/h14Ee2yAmUU/133.jpg",
+          "checkpoint": 133.0,
+          "source_pts_seconds": 132.9328,
+          "resolution": [
+            854,
+            480
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/h14Ee2yAmUU/134.jpg",
+          "checkpoint": 134.0,
+          "source_pts_seconds": 133.9338,
+          "resolution": [
+            854,
+            480
+          ]
+        }
+      ],
+      "asr_support_segments": [
+        {
+          "start": 110.0,
+          "end": 114.72,
+          "text": "structures when doing this block that you need to identify to have a quick"
+        },
+        {
+          "start": 114.72,
+          "end": 119.98,
+          "text": "easy safe and successful block. Now the first is the femur. This is very easy."
+        },
+        {
+          "start": 120.0,
+          "end": 121.78,
+          "text": "It's sitting right here."
+        },
+        {
+          "start": 122.14,
+          "end": 125.66,
+          "text": "It's very prominent and is almost always very easy to see."
+        },
+        {
+          "start": 126.68,
+          "end": 129.98,
+          "text": "Immediately what we're looking for and we're interested in are the femoris."
+        }
+      ],
+      "query_decision": "WAIT",
+      "answer_decision": "ANSWER",
+      "review_status": "accepted_targeted_native_frame_self_review",
+      "student_input_visibility": "not_checked"
+    },
+    {
+      "qa_type": "history_recall",
+      "query_time": 294,
+      "answer_time": 294,
+      "checkpoints": [
+        125,
+        294
+      ],
+      "question": "Before the standalone block example, where did the operator hold the probe in the earlier split-screen demonstration?",
+      "reference_answer": "Against the front of the thigh, over the area being scanned for the femur.",
+      "visual_support": "External camera shows probe pressed to the exposed thigh while the sonogram displays femur.",
+      "query_prefix_check": "The paired external view and narration are already in the prefix.",
+      "answer_prefix_check": "The title at 294 distinguishes the later example from the earlier external view.",
+      "shortcut_risk": "ASR also describes the probe site.",
+      "task_id": "s3_remaining79_h14Ee2yAmUU_03",
+      "video_id": "h14Ee2yAmUU",
+      "split": "train",
+      "language": "en",
+      "source_video": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/h14Ee2yAmUU.mp4",
+      "stage3_value": "medium",
+      "visual_evidence": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/h14Ee2yAmUU/125.jpg",
+          "checkpoint": 125.0,
+          "source_pts_seconds": 124.9248,
+          "resolution": [
+            854,
+            480
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/h14Ee2yAmUU/294.jpg",
+          "checkpoint": 294.0,
+          "source_pts_seconds": 293.926967,
+          "resolution": [
+            854,
+            480
+          ]
+        }
+      ],
+      "asr_support_segments": [
+        {
+          "start": 80.0,
+          "end": 85.36,
+          "text": "So for anterior sciatic nerve block, we have the patient lying in supine position."
+        },
+        {
+          "start": 86.16,
+          "end": 89.98,
+          "text": "We're going to confirm our probe position so that we know what..."
+        },
+        {
+          "start": 90.0,
+          "end": 95.89,
+          "text": "is a lateral and what's media pay in this instance the right side of the screen"
+        },
+        {
+          "start": 95.89,
+          "end": 99.97,
+          "text": "that you see here is going to be lateral and the left side"
+        },
+        {
+          "start": 100.0,
+          "end": 106.28,
+          "text": "the screen is going to be medial and I start by placing my probe down on top of"
+        },
+        {
+          "start": 106.28,
+          "end": 109.88,
+          "text": "femur about this thigh. There are three main"
+        }
+      ],
+      "query_decision": "ANSWER",
+      "answer_decision": "ANSWER",
+      "review_status": "accepted_targeted_native_frame_self_review",
+      "student_input_visibility": "not_checked"
+    },
+    {
+      "qa_type": "temporal_comparison",
+      "query_time": 294,
+      "answer_time": 295,
+      "checkpoints": [
+        125,
+        294,
+        295
+      ],
+      "question": "When the standalone sonogram replaces this title, compare the side of the femoral shadow with the earlier split-screen scan.",
+      "reference_answer": "The shadow was on the right of the earlier sonogram; it is on the left in the standalone example.",
+      "visual_support": "The bright cortex and shadow move between sides across the two examples, not within a continuous scan.",
+      "query_prefix_check": "The title is visible but the standalone scan has not appeared.",
+      "answer_prefix_check": "295 shows the left-sided shadow; 125 establishes the comparison.",
+      "shortcut_risk": "The earlier scan and later scan are distinct; later narration is excluded.",
+      "task_id": "s3_remaining79_h14Ee2yAmUU_04",
+      "video_id": "h14Ee2yAmUU",
+      "split": "train",
+      "language": "en",
+      "source_video": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/h14Ee2yAmUU.mp4",
+      "stage3_value": "medium",
+      "visual_evidence": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/h14Ee2yAmUU/125.jpg",
+          "checkpoint": 125.0,
+          "source_pts_seconds": 124.9248,
+          "resolution": [
+            854,
+            480
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/h14Ee2yAmUU/294.jpg",
+          "checkpoint": 294.0,
+          "source_pts_seconds": 293.926967,
+          "resolution": [
+            854,
+            480
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/h14Ee2yAmUU/295.jpg",
+          "checkpoint": 295.0,
+          "source_pts_seconds": 294.927967,
+          "resolution": [
+            854,
+            480
+          ]
+        }
+      ],
+      "asr_support_segments": [
+        {
+          "start": 110.0,
+          "end": 114.72,
+          "text": "structures when doing this block that you need to identify to have a quick"
+        },
+        {
+          "start": 114.72,
+          "end": 119.98,
+          "text": "easy safe and successful block. Now the first is the femur. This is very easy."
+        },
+        {
+          "start": 120.0,
+          "end": 121.78,
+          "text": "It's sitting right here."
+        }
+      ],
+      "query_decision": "WAIT",
+      "answer_decision": "ANSWER",
+      "review_status": "accepted_targeted_native_frame_self_review",
+      "student_input_visibility": "not_checked"
+    }
+  ],
+  "video_id": "h14Ee2yAmUU",
+  "review_scope": "Same-assistant review; sampled timeline, original-size key frames, and existing time-indexed ASR when available. No continuous replay or direct audio claim."
+}

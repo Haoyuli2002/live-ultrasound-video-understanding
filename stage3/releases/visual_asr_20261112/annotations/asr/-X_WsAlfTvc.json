@@ -1,0 +1,193 @@
+{
+  "video_id": "-X_WsAlfTvc",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/-X_WsAlfTvc/asr.txt",
+  "segments": [
+    {
+      "start": 0.32,
+      "end": 4.28,
+      "text": "Hi, my name is Sarah, and I'm a technician at Dove Lewis, and today we are going to be"
+    },
+    {
+      "start": 4.28,
+      "end": 9.74,
+      "text": "obtaining a urine sample via ultrasound-guided sister synthesis in a female."
+    },
+    {
+      "start": 10.67,
+      "end": 17.61,
+      "text": "For this procedure, we are going to be having her endorsal recumbency, and I'll talk to you through how to obtain this sample,"
+    },
+    {
+      "start": 17.79,
+      "end": 19.85,
+      "text": "where to put your probe and things to watch."
+    },
+    {
+      "start": 20.0,
+      "end": 29.9,
+      "text": "So some of the risks associated with cystocentesis would be hemorrhage or, you know, very rare cases you're in leaking."
+    },
+    {
+      "start": 30.0,
+      "end": 35.5,
+      "text": "into the abdomen, and other situations in times where they have a very large firm bladder,"
+    },
+    {
+      "start": 35.7,
+      "end": 39.88,
+      "text": "we do see vagal stimulation, which you should monitor for after."
+    },
+    {
+      "start": 40.03,
+      "end": 46.0,
+      "text": "So we have Morgan here and Dorsal Recompancy and I have the probe on the"
+    },
+    {
+      "start": 46.0,
+      "end": 49.980000000000004,
+      "text": "caudal portion of our abdomen. If you can see there's a small dot on the"
+    },
+    {
+      "start": 50.0,
+      "end": 51.88,
+      "text": "the front part of my probe here."
+    },
+    {
+      "start": 52.2,
+      "end": 56.36,
+      "text": "And on the screen, that's going to show the cranial aspect."
+    },
+    {
+      "start": 56.86,
+      "end": 59.980000000000004,
+      "text": "So on my screen here, the dot."
+    },
+    {
+      "start": 60.0,
+      "end": 66.35,
+      "text": "is represented by that arrow. So today I'm going to be using a 6ml syringe."
+    },
+    {
+      "start": 66.45,
+      "end": 69.97,
+      "text": "Frequently we will use between a 3 and a 12ml syringe depending on..."
+    },
+    {
+      "start": 70.0,
+      "end": 74.64,
+      "text": "and the sample size we need, and a 22 1.5 inch needle."
+    },
+    {
+      "start": 75.02,
+      "end": 79.84,
+      "text": "The needle length is more for the flexibility of the needle than the actual length of it."
+    },
+    {
+      "start": 80.66,
+      "end": 85.26,
+      "text": "And we just don't want to stiff of a needle causing trauma to the bladder."
+    },
+    {
+      "start": 86.5,
+      "end": 89.82,
+      "text": "So what I'm going to be doing is taking my needle and I'm going to be putting it underneath."
+    },
+    {
+      "start": 90.03,
+      "end": 96.38,
+      "text": "probe to where her bladder is on the screen and I'm going to be watching my screen to see"
+    },
+    {
+      "start": 96.38,
+      "end": 99.59,
+      "text": "for my needle to appear. You're poking guys."
+    },
+    {
+      "start": 108.8,
+      "end": 108.94,
+      "text": "Okay?"
+    },
+    {
+      "start": 109.26,
+      "end": 109.98,
+      "text": "Now that I'm in the..."
+    },
+    {
+      "start": 110.0,
+      "end": 114.11,
+      "text": "I'm going to ask spray and you can see that I'm getting here in."
+    },
+    {
+      "start": 120.42,
+      "end": 122.02,
+      "text": "So what happened there was Morgan started moving"
+    },
+    {
+      "start": 122.02,
+      "end": 125.0,
+      "text": "and I removed my needle so that the motion didn't"
+    },
+    {
+      "start": 125.0,
+      "end": 126.4,
+      "text": "cause any trauma to the bladder."
+    },
+    {
+      "start": 127.44,
+      "end": 129.98,
+      "text": "So when I am removing my needle,"
+    },
+    {
+      "start": 130.0,
+      "end": 134.36,
+      "text": "from the bladder wall. I stop aspirating so I'm not aspirating through the"
+    },
+    {
+      "start": 134.36,
+      "end": 138.2,
+      "text": "different tissue layer layers and getting, you know, epithelial cells or fat"
+    },
+    {
+      "start": 138.2,
+      "end": 139.52,
+      "text": "cells in my urine sample."
+    },
+    {
+      "start": 140.26,
+      "end": 143.56,
+      "text": "So now that we've finished that procedure, we are going to let Morgan go back and relax"
+    },
+    {
+      "start": 143.56,
+      "end": 144.12,
+      "text": "in her cage."
+    },
+    {
+      "start": 144.5,
+      "end": 149.7,
+      "text": "We do want to watch for that vagal stimulation, which includes vocalization, dyspnea."
+    },
+    {
+      "start": 150.13,
+      "end": 150.69,
+      "text": "and collapse."
+    },
+    {
+      "start": 151.17,
+      "end": 154.03,
+      "text": "It is very rare, but it is something to be prepared for."
+    },
+    {
+      "start": 155.29,
+      "end": 158.03,
+      "text": "And that is how we do an ultrasound guide"
+    },
+    {
+      "start": 158.03,
+      "end": 159.67,
+      "text": "assistive synthesis at WS."
+    }
+  ]
+}

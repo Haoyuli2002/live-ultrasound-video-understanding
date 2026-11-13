@@ -1,0 +1,1118 @@
+{
+  "video_id": "MVzxaiWzxjk",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/eval/MVzxaiWzxjk/asr.txt",
+  "segments": [
+    {
+      "start": 3.74,
+      "end": 9.98,
+      "text": "Hi, my name is Yuri Braunschte. I'm an intensivist and anesthesiologist at Duke, and I'll be presenting them more-"
+    },
+    {
+      "start": 10.0,
+      "end": 13.74,
+      "text": "March 2025, focus case of the month for openanesthesia.org."
+    },
+    {
+      "start": 14.54,
+      "end": 15.94,
+      "text": "Introduction to Long Ultrasound."
+    },
+    {
+      "start": 16.64,
+      "end": 19.86,
+      "text": "This lecture will serve as the first in a series on Long Ultrasound."
+    },
+    {
+      "start": 20.29,
+      "end": 23.25,
+      "text": "with a subsequent presentation's covering illustrative cases."
+    },
+    {
+      "start": 24.35,
+      "end": 25.85,
+      "text": "In this introductory lecture,"
+    },
+    {
+      "start": 26.05,
+      "end": 28.35,
+      "text": "we will cover four aspects of lung ultrasound."
+    },
+    {
+      "start": 29.17,
+      "end": 29.97,
+      "text": "Transducer saline."
+    },
+    {
+      "start": 30.0,
+      "end": 37.15,
+      "text": "Pro placement, the normal and abnormal findings in multi-view image interpretation."
+    },
+    {
+      "start": 38.45,
+      "end": 39.97,
+      "text": "Let's begin with trends due to"
+    },
+    {
+      "start": 40.0,
+      "end": 49.77,
+      "text": "selection. Question 1 of the transducers shown, which is likely to provide the highest spatial resolution."
+    },
+    {
+      "start": 50.38,
+      "end": 53.9,
+      "text": "at depths where pneumothorax is visible on ultrasound."
+    },
+    {
+      "start": 56.34,
+      "end": 59.97,
+      "text": "The best answer is C. Linear high frequency trans..."
+    },
+    {
+      "start": 60.06,
+      "end": 67.94,
+      "text": "This probes high frequency permits high spatial resolution of the superficial space where"
+    },
+    {
+      "start": 67.94,
+      "end": 69.9,
+      "text": "Neumathorics Manifests on"
+    },
+    {
+      "start": 70.0,
+      "end": 74.34,
+      "text": "ultrasound. More on pneumothorax later in this presentation."
+    },
+    {
+      "start": 75.44,
+      "end": 79.9,
+      "text": "Question 2. Of the transducer shown which can be used"
+    },
+    {
+      "start": 80.0,
+      "end": 85.48,
+      "text": "to identify deep lung pathology such as consolidations and plural effusions."
+    },
+    {
+      "start": 86.3,
+      "end": 89.14,
+      "text": "Multiple answers may be correct, select all that apply."
+    },
+    {
+      "start": 91.86,
+      "end": 94.7,
+      "text": "The best answers are A, B, and D."
+    },
+    {
+      "start": 95.58,
+      "end": 98.36,
+      "text": "All of these are low frequency transducers,"
+    },
+    {
+      "start": 98.46,
+      "end": 99.86,
+      "text": "which means that they permit visual..."
+    },
+    {
+      "start": 100.0,
+      "end": 109.97,
+      "text": "Structuralization of structures deeper than about 6 centimeters in the body notably probe D has many names in medicine a common colloquial name"
+    },
+    {
+      "start": 110.0,
+      "end": 116.92,
+      "text": "for this transducer is phased array probe. However, this term is misleading because all modern"
+    },
+    {
+      "start": 116.92,
+      "end": 119.28,
+      "text": "ultrasound transducers are phased array."
+    },
+    {
+      "start": 120.0,
+      "end": 125.14,
+      "text": "including even linear high-frequency transducers, so the term phased array should be thought"
+    },
+    {
+      "start": 125.14,
+      "end": 129.7,
+      "text": "of as a colloquial name only, and the technically correct name for this probe is"
+    },
+    {
+      "start": 130.03,
+      "end": 132.59,
+      "text": "array or sector arc transducer."
+    },
+    {
+      "start": 133.57,
+      "end": 138.49,
+      "text": "In summary, long ultrasound can be performed with a number of different transducers."
+    },
+    {
+      "start": 138.49,
+      "end": 139.85,
+      "text": "If one is only"
+    },
+    {
+      "start": 140.0,
+      "end": 145.46,
+      "text": "interested in screening for superficial pathology, such as presence versus absence of lung"
+    },
+    {
+      "start": 145.46,
+      "end": 149.8,
+      "text": "sliding, then the best spatial resolution will be provided by a linear"
+    },
+    {
+      "start": 150.03,
+      "end": 156.65,
+      "text": "high frequency probe, Troy C. Alternatively, if one needs to evaluate for both superficial"
+    },
+    {
+      "start": 156.94,
+      "end": 159.9,
+      "text": "and deep pathology, then one will"
+    },
+    {
+      "start": 160.0,
+      "end": 166.64,
+      "text": "need a low-frequency transducer, such as AB or D. Among the low-frequency transducers,"
+    },
+    {
+      "start": 166.64,
+      "end": 169.94,
+      "text": "The Microconvacs and Sector Array are perfect."
+    },
+    {
+      "start": 170.0,
+      "end": 175.5,
+      "text": "referred for long ultrasound because your small footprint fits well between ribs and minimizes"
+    },
+    {
+      "start": 175.5,
+      "end": 177.86,
+      "text": "rib-associated acoustic shadowing."
+    },
+    {
+      "start": 179.04,
+      "end": 179.98,
+      "text": "Finally, when doing..."
+    },
+    {
+      "start": 180.0,
+      "end": 185.14,
+      "text": "lung ultrasound with low frequency transducers, it is usually helpful to do a couple things."
+    },
+    {
+      "start": 185.14,
+      "end": 189.98,
+      "text": "First, switch from a cardiac to an abdominal or lung-"
+    },
+    {
+      "start": 190.0,
+      "end": 195.25,
+      "text": "set. This will accomplish two things. A, it will move the probe indicator to"
+    },
+    {
+      "start": 195.25,
+      "end": 199.91,
+      "text": "screen left, which aligns your images with standard radiology convention and"
+    },
+    {
+      "start": 200.03,
+      "end": 206.89,
+      "text": "be switching from cardiac to either abdominal or lung preset will decrease the screen's refresh"
+    },
+    {
+      "start": 206.89,
+      "end": 209.96,
+      "text": "rate and increase the screen's line density."
+    },
+    {
+      "start": 210.03,
+      "end": 217.69,
+      "text": "This has the effect of increasing spatial resolution while getting rid of excess temporal resolution."
+    },
+    {
+      "start": 217.69,
+      "end": 219.67,
+      "text": "The temporal resolution"
+    },
+    {
+      "start": 220.0,
+      "end": 225.48,
+      "text": "for cardiac imaging is not helpful for long ultrasound because, as a general rule,"
+    },
+    {
+      "start": 225.92,
+      "end": 229.88,
+      "text": "the lung moves slower than the heart. So, cardiac mode"
+    },
+    {
+      "start": 230.0,
+      "end": 233.7,
+      "text": "is not optimized for long evaluation on most machines."
+    },
+    {
+      "start": 235.0,
+      "end": 237.62,
+      "text": "A second tip is to turn off harmonic imaging."
+    },
+    {
+      "start": 238.0,
+      "end": 239.8,
+      "text": "Harmonic imaging suppresses artifacts."
+    },
+    {
+      "start": 240.03,
+      "end": 244.63,
+      "text": "where as lung ultrasound centers on detection of artifacts, such as a lines and b lines."
+    },
+    {
+      "start": 245.21,
+      "end": 248.47,
+      "text": "These two types of artifacts will be explained later in this presentation."
+    },
+    {
+      "start": 250.0,
+      "end": 255.96,
+      "text": "we have covered transducer selection. Let's move on to where on the body to place the ultrasound"
+    },
+    {
+      "start": 255.96,
+      "end": 259.98,
+      "text": "probe in order to perform lung ultrasound. There are a number of different..."
+    },
+    {
+      "start": 260.0,
+      "end": 265.46,
+      "text": "lung ultrasound, image acquisition protocols, ranging from two to 14 views per"
+    },
+    {
+      "start": 265.46,
+      "end": 269.86,
+      "text": "hemithorax. Although a larger number of scanning sites increases the"
+    },
+    {
+      "start": 270.0,
+      "end": 279.64,
+      "text": "sensitivity of the exam for pathology. This comes at a trade-off of increasing the duration and complexity of the exam to balance these trade-offs for purposes"
+    },
+    {
+      "start": 280.03,
+      "end": 281.65,
+      "text": "of introducing the local ultrasound,"
+    },
+    {
+      "start": 282.07,
+      "end": 283.93,
+      "text": "we will describe a focused exam"
+    },
+    {
+      "start": 283.93,
+      "end": 287.37,
+      "text": "that screens each hemithorax in three locations."
+    },
+    {
+      "start": 288.55,
+      "end": 289.97,
+      "text": "The first view on each hemithorax..."
+    },
+    {
+      "start": 290.03,
+      "end": 293.01,
+      "text": "X is an anterior view of the upper lobes."
+    },
+    {
+      "start": 293.57,
+      "end": 298.57,
+      "text": "This view is obtained by placing an ultrasound transducer at the mid-clivicular line, approximately"
+    },
+    {
+      "start": 298.57,
+      "end": 299.89,
+      "text": "between the second and"
+    },
+    {
+      "start": 300.03,
+      "end": 305.53,
+      "text": "fourth-intercostal spaces with the probe position in the body's parisadural plane and the probe"
+    },
+    {
+      "start": 305.53,
+      "end": 307.55,
+      "text": "indicator pointing toward the patient's head."
+    },
+    {
+      "start": 308.03,
+      "end": 309.73,
+      "text": "The second view on each hemisphere."
+    },
+    {
+      "start": 310.0,
+      "end": 315.72,
+      "text": "is an anterior lateral view. This view is obtained by placing an ultrasound transducer at the anterior"
+    },
+    {
+      "start": 315.72,
+      "end": 319.94,
+      "text": "axillary line approximately between the fourth to sixth intercostal sp-"
+    },
+    {
+      "start": 320.0,
+      "end": 323.3,
+      "text": "cases with the probe indicator pointing towards the patient's head."
+    },
+    {
+      "start": 324.13,
+      "end": 329.29,
+      "text": "On the right chest, this probe positioning will typically overlie the right middle"
+    },
+    {
+      "start": 329.29,
+      "end": 329.55,
+      "text": "love."
+    },
+    {
+      "start": 331.22,
+      "end": 336.6,
+      "text": "In on the left chest, this pro positioning will typically overlie one of two places, either"
+    },
+    {
+      "start": 336.6,
+      "end": 339.94,
+      "text": "an anterior portion of the left lower lobe, or the"
+    },
+    {
+      "start": 340.0,
+      "end": 342.22,
+      "text": "The lingular portion of the left upper lobe."
+    },
+    {
+      "start": 342.81,
+      "end": 346.79,
+      "text": "The lingula is the left-sided analog of the right middle lobe."
+    },
+    {
+      "start": 347.65,
+      "end": 349.91,
+      "text": "The third view on each hemithorak."
+    },
+    {
+      "start": 350.03,
+      "end": 352.81,
+      "text": "X is a posterior lateral view of the lower lobes."
+    },
+    {
+      "start": 353.42,
+      "end": 358.54,
+      "text": "This views obtained by placing an ultrasound transducer at the mid to posterior axillary line,"
+    },
+    {
+      "start": 358.9,
+      "end": 359.98,
+      "text": "approximately between the"
+    },
+    {
+      "start": 360.0,
+      "end": 362.16,
+      "text": "the fifth and eighth intercostal spaces,"
+    },
+    {
+      "start": 362.6,
+      "end": 365.0,
+      "text": "with the pro position in the body's coronal plane"
+    },
+    {
+      "start": 365.0,
+      "end": 367.5,
+      "text": "and the pro-bindicator pointing toward the patient's head."
+    },
+    {
+      "start": 368.62,
+      "end": 369.98,
+      "text": "Now that we've covered the base..."
+    },
+    {
+      "start": 370.0,
+      "end": 376.58,
+      "text": "of ultrasound probe placement. Let's now review key normal and abnormal findings."
+    },
+    {
+      "start": 377.41,
+      "end": 379.71,
+      "text": "Here's an example of an anterior end..."
+    },
+    {
+      "start": 380.0,
+      "end": 382.88,
+      "text": "or enter a lateral view showing normal findings."
+    },
+    {
+      "start": 383.88,
+      "end": 386.5,
+      "text": "Let's now take a look at what makes these findings normal."
+    },
+    {
+      "start": 388.15,
+      "end": 389.87,
+      "text": "With the probe placed as shown."
+    },
+    {
+      "start": 390.0,
+      "end": 395.01,
+      "text": "the top left of the screen, the anterior lung view should contain the following structures."
+    },
+    {
+      "start": 395.92,
+      "end": 399.97,
+      "text": "A cranial rib casting its acoustic shadow, a caudal"
+    },
+    {
+      "start": 400.0,
+      "end": 405.7,
+      "text": "rib casting its acoustic shadow. The plural line with motion across it that is"
+    },
+    {
+      "start": 405.7,
+      "end": 409.81,
+      "text": "synchronous with the patient's respiratory rate. We'll explain this motion."
+    },
+    {
+      "start": 410.0,
+      "end": 416.82,
+      "text": "momentarily. And a horizontal line called an A line. The A line is a mirror image artifact"
+    },
+    {
+      "start": 416.82,
+      "end": 419.66,
+      "text": "of the plural line that is seen at a multiple"
+    },
+    {
+      "start": 420.0,
+      "end": 422.88,
+      "text": "of the distance between the plural line and transducer."
+    },
+    {
+      "start": 423.84,
+      "end": 429.26,
+      "text": "A lines are, by themselves, a non-specific finding and occur in a wider range of normal"
+    },
+    {
+      "start": 429.26,
+      "end": 429.8,
+      "text": "and abnormal-"
+    },
+    {
+      "start": 430.0,
+      "end": 430.62,
+      "text": "conditions."
+    },
+    {
+      "start": 431.37,
+      "end": 436.57,
+      "text": "And the mnemonic for remembering the term A line is that the letter A has a horizontal"
+    },
+    {
+      "start": 436.57,
+      "end": 439.91,
+      "text": "line through it, and A lines are horizontal lines on"
+    },
+    {
+      "start": 440.0,
+      "end": 445.24,
+      "text": "long ultrasound. Let's now come back to the pleural line. The pleural line is a"
+    },
+    {
+      "start": 445.24,
+      "end": 449.92,
+      "text": "sonographic term for the bright horizontal line normally formed by both"
+    },
+    {
+      "start": 450.03,
+      "end": 455.23,
+      "text": "visceral and the parietal plera. When the visceral and parietal plera are directly touching"
+    },
+    {
+      "start": 455.23,
+      "end": 457.85,
+      "text": "each other with no intervening air between them."
+    },
+    {
+      "start": 460.0,
+      "end": 463.38,
+      "text": "as a pleural line with a phenomenon called lung sliding."
+    },
+    {
+      "start": 464.1,
+      "end": 469.64,
+      "text": "Lung sliding refers to a large amplitude horizontal movement across the pleural line that is"
+    },
+    {
+      "start": 469.64,
+      "end": 469.92,
+      "text": "Sing."
+    },
+    {
+      "start": 470.06,
+      "end": 471.96,
+      "text": "with the patient's respiratory rate."
+    },
+    {
+      "start": 472.5,
+      "end": 474.8,
+      "text": "As shown in the cartoon illustration on the right,"
+    },
+    {
+      "start": 475.44,
+      "end": 477.42,
+      "text": "the sonographic finding of lung sliding"
+    },
+    {
+      "start": 477.42,
+      "end": 479.96,
+      "text": "is caused by movement of the dynamic visceral"
+    },
+    {
+      "start": 480.0,
+      "end": 482.62,
+      "text": "pleura against the static parietal pleura."
+    },
+    {
+      "start": 483.67,
+      "end": 489.29,
+      "text": "In contrast, when the visceral and parietal pleura are separated by air, i.e. anumothorax,"
+    },
+    {
+      "start": 490.22,
+      "end": 495.9,
+      "text": "The air reflects all of the ultrasound energy back to the transducer, preventing the transducer"
+    },
+    {
+      "start": 495.9,
+      "end": 497.92,
+      "text": "from seeing anything deep to the air."
+    },
+    {
+      "start": 498.5,
+      "end": 499.96,
+      "text": "This prevents the ultrasound machine."
+    },
+    {
+      "start": 500.0,
+      "end": 509.88,
+      "text": "from visualizing the dynamic movement of the visceral plura and instead generates an ultrasound image of a motionless plural line representing the always static"
+    },
+    {
+      "start": 510.13,
+      "end": 516.85,
+      "text": "However, a static pleural line can be caused by conditions other than pneumothorax."
+    },
+    {
+      "start": 517.39,
+      "end": 519.87,
+      "text": "For example, the pleural line will appear"
+    },
+    {
+      "start": 520.0,
+      "end": 525.28,
+      "text": "motionless on ultrasound, when the visceral and pridlepler are stuck together, such as after"
+    },
+    {
+      "start": 525.28,
+      "end": 529.88,
+      "text": "organic or medically induced pluridesis, or in situations where the examined lung"
+    },
+    {
+      "start": 530.0,
+      "end": 534.68,
+      "text": "is not being ventilated, such as emphysemitous blebs or main stem intubation."
+    },
+    {
+      "start": 535.68,
+      "end": 539.03,
+      "text": "Another important lung ultrasound finding are B lines."
+    },
+    {
+      "start": 541.44,
+      "end": 548.3,
+      "text": "B lines are a vertical ring-down artifact arising from the plural line and propagating all"
+    },
+    {
+      "start": 548.3,
+      "end": 549.86,
+      "text": "the way down to the bottom of the screen."
+    },
+    {
+      "start": 550.8,
+      "end": 553.12,
+      "text": "B lines have the following additional features."
+    },
+    {
+      "start": 553.44,
+      "end": 556.66,
+      "text": "They get wider on the screen from superficial to deep"
+    },
+    {
+      "start": 557.08,
+      "end": 559.98,
+      "text": "and they if face or obliterate A lines where the two"
+    },
+    {
+      "start": 560.0,
+      "end": 567.24,
+      "text": "intersect. Although 1-2 B lines per ribbon or space is considered a normal finding, it is"
+    },
+    {
+      "start": 567.24,
+      "end": 569.97,
+      "text": "and contrast abnormal to have a rib-"
+    },
+    {
+      "start": 570.0,
+      "end": 576.32,
+      "text": "space with either 3 or more B lines, or large, confluent B lines that occupy the majority"
+    },
+    {
+      "start": 576.32,
+      "end": 577.32,
+      "text": "of the ribboner space."
+    },
+    {
+      "start": 578.28,
+      "end": 579.98,
+      "text": "Such abnormal or path..."
+    },
+    {
+      "start": 580.03,
+      "end": 587.13,
+      "text": "logic B lines indicate increased lung density, which can be due to fluid, fibrosis, or partial"
+    },
+    {
+      "start": 587.13,
+      "end": 589.75,
+      "text": "loss of lung erration as occurs in early"
+    },
+    {
+      "start": 590.0,
+      "end": 591.76,
+      "text": "the adylactasis or early pneumonia."
+    },
+    {
+      "start": 593.07,
+      "end": 598.8,
+      "text": "And mnemonic for remembering the term B line is that the letter B has a vertical line"
+    },
+    {
+      "start": 598.8,
+      "end": 599.2,
+      "text": "in it."
+    },
+    {
+      "start": 599.66,
+      "end": 599.98,
+      "text": "And B"
+    },
+    {
+      "start": 600.0,
+      "end": 606.83,
+      "text": "lines are vertical lines on long ultrasound. Let's now move on to the posterior lateral"
+    },
+    {
+      "start": 606.83,
+      "end": 609.97,
+      "text": "long view, which aims to examine the lower lobe"
+    },
+    {
+      "start": 610.0,
+      "end": 614.28,
+      "text": "for consolidation and the posterior pleural spaces for a fusion."
+    },
+    {
+      "start": 615.97,
+      "end": 618.69,
+      "text": "Here's an example of what this view normally looks like."
+    },
+    {
+      "start": 621.41,
+      "end": 623.71,
+      "text": "Let's now break down the key features of this view."
+    },
+    {
+      "start": 624.6,
+      "end": 626.42,
+      "text": "The superficial part of the image"
+    },
+    {
+      "start": 626.42,
+      "end": 628.76,
+      "text": "will show lateral structures in the body,"
+    },
+    {
+      "start": 628.96,
+      "end": 629.96,
+      "text": "whereas the d-"
+    },
+    {
+      "start": 630.0,
+      "end": 635.25,
+      "text": "A deeper part of the image will show structures closer to the midline of the body, with the"
+    },
+    {
+      "start": 635.25,
+      "end": 639.49,
+      "text": "probe set to a non-cardiac preset such as abdominal or lung mode."
+    },
+    {
+      "start": 640.06,
+      "end": 642.86,
+      "text": "the screen indicator will be on screen left."
+    },
+    {
+      "start": 644.36,
+      "end": 647.12,
+      "text": "Since the ultrasound probes indicator"
+    },
+    {
+      "start": 647.12,
+      "end": 649.88,
+      "text": "should be pointing crannily to obtain this."
+    },
+    {
+      "start": 650.0,
+      "end": 655.81,
+      "text": "that means the left side of the screen will show cranial structures and the"
+    },
+    {
+      "start": 655.81,
+      "end": 659.82,
+      "text": "right side of the screen will show caudal structures. This"
+    },
+    {
+      "start": 660.0,
+      "end": 665.83,
+      "text": "you should be centered on the diaphragm with a plural space visible crannily in the liver"
+    },
+    {
+      "start": 665.83,
+      "end": 669.34,
+      "text": "or a spleen visible, caudally, notably."
+    },
+    {
+      "start": 670.0,
+      "end": 672.02,
+      "text": "in the normal poster lateral lung view."
+    },
+    {
+      "start": 672.71,
+      "end": 674.51,
+      "text": "The lateral edges of the vertebra,"
+    },
+    {
+      "start": 675.03,
+      "end": 677.77,
+      "text": "emphasized here in blue, should be visible"
+    },
+    {
+      "start": 677.77,
+      "end": 679.77,
+      "text": "as a string of scallop-like-"
+    },
+    {
+      "start": 685.21,
+      "end": 689.98,
+      "text": "This is because the liver or slash spleen are spleen and spleen are spleen and spleen."
+    },
+    {
+      "start": 690.0,
+      "end": 695.72,
+      "text": "solid organs that are good conductors of ultrasound energy, whereas air-filled lung is not"
+    },
+    {
+      "start": 695.72,
+      "end": 697.62,
+      "text": "a good conductor of ultrasound energy."
+    },
+    {
+      "start": 697.62,
+      "end": 699.92,
+      "text": "in contrast in the"
+    },
+    {
+      "start": 700.0,
+      "end": 709.85,
+      "text": "Coronal view shown here, visualization of the spine cranial to the diaphragm rules in the presence of pathology and is termed spine"
+    },
+    {
+      "start": 710.0,
+      "end": 710.36,
+      "text": "Inside."
+    },
+    {
+      "start": 711.31,
+      "end": 717.15,
+      "text": "Spine sign indicates that the normally air-filled lung has been altered to permit good conduction"
+    },
+    {
+      "start": 717.15,
+      "end": 718.07,
+      "text": "of ultrasound energy."
+    },
+    {
+      "start": 718.07,
+      "end": 719.97,
+      "text": "And this is typically due to"
+    },
+    {
+      "start": 720.0,
+      "end": 725.1,
+      "text": "the presence of plural effusion, lung consolidation, or both in this view."
+    },
+    {
+      "start": 726.45,
+      "end": 729.83,
+      "text": "Now that we've gone over key normal and abnormal findings in"
+    },
+    {
+      "start": 730.0,
+      "end": 737.56,
+      "text": "single views, let's now integrate all of that to explain multi-view long ultrasound image interpretation."
+    },
+    {
+      "start": 738.72,
+      "end": 739.96,
+      "text": "Long ultrasound can be"
+    },
+    {
+      "start": 740.0,
+      "end": 742.14,
+      "text": "performed for a variety of indications."
+    },
+    {
+      "start": 743.01,
+      "end": 747.77,
+      "text": "For anesthesiologists, the main indication is pulmonary dysfunction, which can manifest"
+    },
+    {
+      "start": 747.77,
+      "end": 749.91,
+      "text": "as hypoxemia, hypercapnea."
+    },
+    {
+      "start": 750.0,
+      "end": 755.57,
+      "text": "and or respiratory distress. When a patient with pulmonary dysfunction undergoes lung ultrasound,"
+    },
+    {
+      "start": 755.79,
+      "end": 759.97,
+      "text": "the goal is to identify which of the five sonographic patterns the patient has."
+    },
+    {
+      "start": 760.0,
+      "end": 763.96,
+      "text": "has, as each of these patterns has its own distinct differential diagnosis."
+    },
+    {
+      "start": 764.58,
+      "end": 769.26,
+      "text": "Although notably, some patients may demonstrate more than one of these long ultrasound patterns"
+    },
+    {
+      "start": 769.26,
+      "end": 769.86,
+      "text": "indicate"
+    },
+    {
+      "start": 770.0,
+      "end": 772.56,
+      "text": "the presence of more than one kind of lung pathology."
+    },
+    {
+      "start": 773.52,
+      "end": 777.9,
+      "text": "The first lung ultrasound pattern is sonographically normal lung."
+    },
+    {
+      "start": 779.16,
+      "end": 779.98,
+      "text": "anteriorly. This is"
+    },
+    {
+      "start": 780.0,
+      "end": 784.76,
+      "text": "characterized by all lung fields showing lung sliding and a-lines."
+    },
+    {
+      "start": 785.72,
+      "end": 789.96,
+      "text": "Posture laterally, this is characterized by the absence of sp-"
+    },
+    {
+      "start": 790.0,
+      "end": 796.48,
+      "text": "The finding of sonographically normal lung narrows the differential diagnosis primarily"
+    },
+    {
+      "start": 796.48,
+      "end": 797.76,
+      "text": "to the fallen conditions."
+    },
+    {
+      "start": 798.85,
+      "end": 799.73,
+      "text": "COPDASMA"
+    },
+    {
+      "start": 800.51,
+      "end": 807.71,
+      "text": "pulmonary embolism, deep lung consolidations not visible with ultrasound, and or intercordiac"
+    },
+    {
+      "start": 807.71,
+      "end": 809.01,
+      "text": "or interpulmonary shunting."
+    },
+    {
+      "start": 810.0,
+      "end": 813.82,
+      "text": "The second lung ultrasound pattern is focal absence of lung sliding."
+    },
+    {
+      "start": 815.0,
+      "end": 819.9,
+      "text": "Vocal absence of lung sliding narrows the differential diagnosis primarily to the following"
+    },
+    {
+      "start": 820.0,
+      "end": 828.37,
+      "text": "conditions. Neumothorax, mainstem intubation, emphysemitis blebs, and or lung adhesions."
+    },
+    {
+      "start": 829.01,
+      "end": 829.89,
+      "text": "the third lung"
+    },
+    {
+      "start": 830.0,
+      "end": 837.51,
+      "text": "ultrasound pattern is unilateral B lines, unilateral B lines, narrow the differential diagnosis"
+    },
+    {
+      "start": 837.51,
+      "end": 839.25,
+      "text": "primarily to the following conditions."
+    },
+    {
+      "start": 840.35,
+      "end": 849.75,
+      "text": "Early adelectasis, early pneumonia, early malignancy, lung contusion, and or evolving pulmonary"
+    },
+    {
+      "start": 850.0,
+      "end": 855.87,
+      "text": "The fourth lung ultrasound pattern is bilateral b-lines."
+    },
+    {
+      "start": 857.76,
+      "end": 859.82,
+      "text": "Bilateral b-lines narrow"
+    },
+    {
+      "start": 860.0,
+      "end": 863.34,
+      "text": "the differential diagnosis primarily to the following conditions."
+    },
+    {
+      "start": 864.36,
+      "end": 869.86,
+      "text": "Hydrostatic pulmonary edemas, including congestive heart failure, negative pressure pulmonary"
+    },
+    {
+      "start": 870.0,
+      "end": 873.82,
+      "text": "derma, indoor transfusion associated circulatory overload."
+    },
+    {
+      "start": 874.97,
+      "end": 879.83,
+      "text": "Non-hydrostatic pulmonary derma is like a acute respiratory distress syndrome."
+    },
+    {
+      "start": 880.64,
+      "end": 884.06,
+      "text": "transfusion associated lung injury and or preclampsia,"
+    },
+    {
+      "start": 885.13,
+      "end": 887.89,
+      "text": "multifocal pneumonia, including COVID pneumonia"
+    },
+    {
+      "start": 888.45,
+      "end": 889.97,
+      "text": "and interstitial lung"
+    },
+    {
+      "start": 890.0,
+      "end": 896.56,
+      "text": "diseases slash pulmonary fibrosis. The final lung ultrasound pattern is consolidation"
+    },
+    {
+      "start": 896.56,
+      "end": 898.6,
+      "text": "and or plural of fusion the"
+    },
+    {
+      "start": 900.0,
+      "end": 905.32,
+      "text": "Finding of consolidation and or plural effusion narrows the differential diagnosis primarily"
+    },
+    {
+      "start": 905.32,
+      "end": 906.68,
+      "text": "to the following conditions."
+    },
+    {
+      "start": 906.94,
+      "end": 909.48,
+      "text": "Nomonia Adelectasis."
+    },
+    {
+      "start": 910.13,
+      "end": 914.11,
+      "text": "malignancy, pulmonary embolism, hemothorax,"
+    },
+    {
+      "start": 915.2,
+      "end": 919.91,
+      "text": "ampahema, and any cause of transidate of plural effusion."
+    },
+    {
+      "start": 920.06,
+      "end": 922.66,
+      "text": "like cirrhosis, congestive heart failure, et cetera."
+    },
+    {
+      "start": 923.73,
+      "end": 927.45,
+      "text": "This concludes our long-pocus introductory lecture"
+    },
+    {
+      "start": 927.45,
+      "end": 929.98,
+      "text": "for continuation of this series in"
+    },
+    {
+      "start": 930.0,
+      "end": 933.74,
+      "text": "including case examples of all five long ultrasound patterns."
+    },
+    {
+      "start": 934.0,
+      "end": 939.9,
+      "text": "Stay tuned for more OpenAnastasia.org lung-pocus cases of the month, starting in April"
+    }
+  ]
+}

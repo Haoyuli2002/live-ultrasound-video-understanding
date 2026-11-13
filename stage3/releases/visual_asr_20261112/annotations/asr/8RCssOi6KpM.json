@@ -1,0 +1,1118 @@
+{
+  "video_id": "8RCssOi6KpM",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/8RCssOi6KpM/asr.txt",
+  "segments": [
+    {
+      "start": 1.22,
+      "end": 5.12,
+      "text": "This is the second part of the video series on technical tips and tricks for ultrasound"
+    },
+    {
+      "start": 5.12,
+      "end": 6.38,
+      "text": "guided peripheral nerve blocks."
+    },
+    {
+      "start": 9.12,
+      "end": 9.98,
+      "text": "In the previous video..."
+    },
+    {
+      "start": 10.03,
+      "end": 11.67,
+      "text": "we discuss positioning in ergonomics"
+    },
+    {
+      "start": 11.67,
+      "end": 14.19,
+      "text": "and the scanning and planning phase of the procedure."
+    },
+    {
+      "start": 15.68,
+      "end": 17.58,
+      "text": "Here, we will talk about needle insertion"
+    },
+    {
+      "start": 17.58,
+      "end": 19.96,
+      "text": "in guiding the needle to the nerve target to the..."
+    },
+    {
+      "start": 20.1,
+      "end": 25.14,
+      "text": "positive local anaesthetic effectively and safely. We'll start with the in-plane approach."
+    },
+    {
+      "start": 28.7,
+      "end": 29.7,
+      "text": "Before inserting the needle."
+    },
+    {
+      "start": 30.1,
+      "end": 34.1,
+      "text": "Confirm one last time that the Nerf target is where you want it on the ultrasound screen."
+    },
+    {
+      "start": 35.65,
+      "end": 39.97,
+      "text": "In the middle of the screen, in the far one third, or less commonly in the near one."
+    },
+    {
+      "start": 40.03,
+      "end": 49.94,
+      "text": "The optimal location to position the nerve depends on three things that is up to us to decide first the angle of the needle trajectory that we want"
+    },
+    {
+      "start": 50.06,
+      "end": 57.63,
+      "text": "use, steep or shallow. Needles are usually more echo journey at shallow angles but it can be difficult to pierce"
+    },
+    {
+      "start": 57.63,
+      "end": 58.27,
+      "text": "facial layers."
+    },
+    {
+      "start": 59.68,
+      "end": 59.86,
+      "text": "Be those"
+    },
+    {
+      "start": 60.0,
+      "end": 64.23,
+      "text": "influences the second factor, the distance that the needle has to travel to the target."
+    },
+    {
+      "start": 65.32,
+      "end": 68.22,
+      "text": "And this in turn determines the length of the needle track through the tissues."
+    },
+    {
+      "start": 69.38,
+      "end": 69.9,
+      "text": "A long needle"
+    },
+    {
+      "start": 70.1,
+      "end": 74.22,
+      "text": "track reduces the maneuverability of the needle tip as the shaft gets trapped into tissues."
+    },
+    {
+      "start": 74.84,
+      "end": 79.84,
+      "text": "So it should be avoided if possible, finally where you will"
+    },
+    {
+      "start": 80.06,
+      "end": 84.57,
+      "text": "Here's the skin relative to the pro bridge, close to it, or a little distance away."
+    },
+    {
+      "start": 85.88,
+      "end": 89.7,
+      "text": "Now, most times, we think we'll be coming in at the corner of the ultrasound image."
+    },
+    {
+      "start": 90.42,
+      "end": 93.08,
+      "text": "which corresponds to the very edge of the probe,"
+    },
+    {
+      "start": 94.03,
+      "end": 95.87,
+      "text": "but in reality, most of the time,"
+    },
+    {
+      "start": 96.31,
+      "end": 99.97,
+      "text": "it feels most natural to enter about half a centimeter away."
+    },
+    {
+      "start": 100.0,
+      "end": 106.57,
+      "text": "But this makes a significant difference to the trajectory and should be accounted for when planning."
+    },
+    {
+      "start": 108.11,
+      "end": 109.97,
+      "text": "Now again, if you don't get it right the first time..."
+    },
+    {
+      "start": 110.0,
+      "end": 115.1,
+      "text": "time, and find yourself struggling, don't hesitate to change your skin and slush inside"
+    },
+    {
+      "start": 115.1,
+      "end": 115.82,
+      "text": "if you have to."
+    },
+    {
+      "start": 116.57,
+      "end": 119.93,
+      "text": "You should never feel like you're fighting or needle when trying to maneuver the tip."
+    },
+    {
+      "start": 120.13,
+      "end": 127.91,
+      "text": "or that you are bending it. Never use force to manipulate the needle. Instead, withdraw and reinsert to make a new track as needed."
+    },
+    {
+      "start": 130.99,
+      "end": 135.45,
+      "text": "Always keep the bevel facing up towards the probe as the tip will then cast a characteristic"
+    },
+    {
+      "start": 135.45,
+      "end": 137.31,
+      "text": "double echo that identifies it."
+    },
+    {
+      "start": 139.24,
+      "end": 139.96,
+      "text": "This will allow to..."
+    },
+    {
+      "start": 140.0,
+      "end": 149.06,
+      "text": "Recognize if you're looking at part of the shaft rather than the tip as can happen if your needle is 10-general to the ultrasound beam and you can make the necessary correction to alignment."
+    },
+    {
+      "start": 151.47,
+      "end": 154.71,
+      "text": "It helps to remember that you're trying to align two very small structures."
+    },
+    {
+      "start": 155.7,
+      "end": 158.16,
+      "text": "Think of the ultrasound beam as the thickness of your credit card"
+    },
+    {
+      "start": 158.16,
+      "end": 159.98,
+      "text": "and imagine trying to line it up."
+    },
+    {
+      "start": 160.06,
+      "end": 165.56,
+      "text": "with your needle. All movements, especially of the probe, should therefore be"
+    },
+    {
+      "start": 165.56,
+      "end": 169.98,
+      "text": "micro movements, small and controlled. The ability to"
+    },
+    {
+      "start": 170.0,
+      "end": 174.92,
+      "text": "do this starts as mentioned with good attention to ergonomics and a stable hand position."
+    },
+    {
+      "start": 176.11,
+      "end": 179.77,
+      "text": "Also I recommend avoiding applying too much gel which makes everything slippery."
+    },
+    {
+      "start": 180.03,
+      "end": 184.29,
+      "text": "my advice is to start with the same amount of gel as you would put toothpaste on your toothbrush."
+    },
+    {
+      "start": 187.65,
+      "end": 189.97,
+      "text": "Sliding Micro-Movements of the Probe and Beam Acryl."
+    },
+    {
+      "start": 190.03,
+      "end": 193.5,
+      "text": "across the needle shaft are the primary movement for trying to get alignment."
+    },
+    {
+      "start": 194.65,
+      "end": 198.91,
+      "text": "Do this however, while maintaining the probe tilt that gives you the best visibility of"
+    },
+    {
+      "start": 198.91,
+      "end": 199.23,
+      "text": "the nerve."
+    },
+    {
+      "start": 201.5,
+      "end": 204.76,
+      "text": "do not use probe tilting to find a needle unless you have no choice."
+    },
+    {
+      "start": 205.68,
+      "end": 209.98,
+      "text": "This is because fine control is difficult and tilting may also reduce..."
+    },
+    {
+      "start": 210.0,
+      "end": 214.97,
+      "text": "equigenicity of the nerve. There is no point in seeing a needle well if you can't see the"
+    },
+    {
+      "start": 214.97,
+      "end": 219.86,
+      "text": "nerve well, and vice versa. You need to see both, and you may have to combine both."
+    },
+    {
+      "start": 220.06,
+      "end": 221.78,
+      "text": "tilting and sliding my crew movements"
+    },
+    {
+      "start": 221.78,
+      "end": 223.3,
+      "text": "throughout needle advancement."
+    },
+    {
+      "start": 225.63,
+      "end": 227.33,
+      "text": "This is illustrated well in this video"
+    },
+    {
+      "start": 227.33,
+      "end": 228.27,
+      "text": "that I showed earlier."
+    },
+    {
+      "start": 229.29,
+      "end": 229.97,
+      "text": "Don't expect..."
+    },
+    {
+      "start": 230.0,
+      "end": 235.15,
+      "text": "be able to continuously maintain alignment and keep your needle in view, except instead"
+    },
+    {
+      "start": 235.15,
+      "end": 239.9,
+      "text": "that the needle will wink in and out of view, experts like this person."
+    },
+    {
+      "start": 240.0,
+      "end": 244.84,
+      "text": "Here, make continuous micro-movement with both their hands, tilting and sliding in the"
+    },
+    {
+      "start": 244.84,
+      "end": 249.08,
+      "text": "probe, moving the needle tip around but all in a coordinated fashion."
+    },
+    {
+      "start": 250.61,
+      "end": 255.87,
+      "text": "tracking the needle tip as it advances is thus a dynamic fluid series of movements and once"
+    },
+    {
+      "start": 255.87,
+      "end": 259.96,
+      "text": "Once again, it's greatly helped by learning to have a relaxed grip on both Probe and"
+    },
+    {
+      "start": 260.0,
+      "end": 267.12,
+      "text": "needle. There are two primary needle movements for helping to find your needle as you slide"
+    },
+    {
+      "start": 267.12,
+      "end": 269.82,
+      "text": "the probe back and forth. The first is jiggling."
+    },
+    {
+      "start": 270.45,
+      "end": 273.71,
+      "text": "Moving the needle in small, staccato, in and out movements."
+    },
+    {
+      "start": 274.13,
+      "end": 277.18,
+      "text": "These are safe in that you will not penetrate vessel walls"
+    },
+    {
+      "start": 277.18,
+      "end": 278.9,
+      "text": "or nerve sheaths with a blunt block needle."
+    },
+    {
+      "start": 279.42,
+      "end": 279.98,
+      "text": "But you will just..."
+    },
+    {
+      "start": 280.0,
+      "end": 282.72,
+      "text": "generate enough tissue movements to show you where your needle is."
+    },
+    {
+      "start": 285.15,
+      "end": 289.21,
+      "text": "The second needle movement that I find very helpful is see sawing the hub up and down."
+    },
+    {
+      "start": 290.26,
+      "end": 294.5,
+      "text": "This will generate a lifting and falling tissue motion at the needle tip which should correspond"
+    },
+    {
+      "start": 294.5,
+      "end": 296.6,
+      "text": "to the arc that you are making at the needle hub."
+    },
+    {
+      "start": 300.45,
+      "end": 305.31,
+      "text": "is also invaluable to pay attention to the tactile feedback of pops or loss of resistance"
+    },
+    {
+      "start": 305.31,
+      "end": 309.98,
+      "text": "as your needle tip advances through each facial layer. This corresponds to"
+    },
+    {
+      "start": 310.0,
+      "end": 313.92,
+      "text": "a visible stretching or tenting of the fascia and a recoil as it is pierced."
+    },
+    {
+      "start": 315.08,
+      "end": 319.84,
+      "text": "Once again, having a relaxed yet controlled grip on the needle hub will enhance your ability"
+    },
+    {
+      "start": 320.0,
+      "end": 327.57,
+      "text": "to sense this. Finally, needle tip position can be confirmed by hydro location, which is"
+    },
+    {
+      "start": 327.57,
+      "end": 329.41,
+      "text": "the injection of a small amount of fluid."
+    },
+    {
+      "start": 331.12,
+      "end": 335.32,
+      "text": "half a milliliter or less is all that you need and the injection should be rapid rather"
+    },
+    {
+      "start": 335.32,
+      "end": 336.4,
+      "text": "than slowing careful."
+    },
+    {
+      "start": 337.64,
+      "end": 339.98,
+      "text": "The trickle of fluid does not produce the same tissue..."
+    },
+    {
+      "start": 340.0,
+      "end": 343.04,
+      "text": "movement, that a small jet of fluid does and will be hard to see."
+    },
+    {
+      "start": 344.2,
+      "end": 348.74,
+      "text": "You must be explicit in your instructions to your assistant about these details, to avoid"
+    },
+    {
+      "start": 348.74,
+      "end": 349.96,
+      "text": "wastage of local anesthesia."
+    },
+    {
+      "start": 350.06,
+      "end": 352.5,
+      "text": "and inefficient hydro-location efforts."
+    },
+    {
+      "start": 355.06,
+      "end": 358.76,
+      "text": "In this other video, you can see that the fluid spread occurring from a small amount"
+    },
+    {
+      "start": 358.76,
+      "end": 359.84,
+      "text": "like half a mill is visible."
+    },
+    {
+      "start": 360.0,
+      "end": 362.42,
+      "text": "even though we don't actually have needle beam alignment."
+    },
+    {
+      "start": 364.05,
+      "end": 366.83,
+      "text": "A further tip is to keep the probe and ultrasound image"
+    },
+    {
+      "start": 366.83,
+      "end": 369.92,
+      "text": "absolutely stable during the hydro location engine."
+    },
+    {
+      "start": 370.0,
+      "end": 375.44,
+      "text": "which will help to detect the subtle tissue motion that's produced by the small borders of fluid."
+    },
+    {
+      "start": 378.89,
+      "end": 379.97,
+      "text": "If we use an out of pl-"
+    },
+    {
+      "start": 380.0,
+      "end": 385.12,
+      "text": "rather than in-plane approach, there are different considerations regarding needle and probe handling to be aware of."
+    },
+    {
+      "start": 387.83,
+      "end": 389.97,
+      "text": "It's important to conceptualize what is happening."
+    },
+    {
+      "start": 390.06,
+      "end": 396.23,
+      "text": "when we use an out-of-plane needle advancement. The needle tip will not stay within the beam as it"
+    },
+    {
+      "start": 396.23,
+      "end": 399.97,
+      "text": "is advanced, and the probe has to be continuously moved away from your needle."
+    },
+    {
+      "start": 400.03,
+      "end": 404.88,
+      "text": "hand to track the tip. It's tempting to use tilting promotions to track the tip,"
+    },
+    {
+      "start": 405.4,
+      "end": 409.87,
+      "text": "but do not do this for nerve blocks. As again, tilting will change the visible"
+    },
+    {
+      "start": 410.0,
+      "end": 416.77,
+      "text": "of the Nerf target. Slide the probe instead. It is also helpful in the scanning phase to"
+    },
+    {
+      "start": 416.77,
+      "end": 419.47,
+      "text": "have identified a section of Nerf length that can be easy."
+    },
+    {
+      "start": 420.0,
+      "end": 420.74,
+      "text": "visualise."
+    },
+    {
+      "start": 424.05,
+      "end": 427.55,
+      "text": "The needle tip and shaft can look very similar in the outer plane approach and the best"
+    },
+    {
+      "start": 427.55,
+      "end": 429.96,
+      "text": "The first way to distinguish them is to look for their coo-st."
+    },
+    {
+      "start": 430.0,
+      "end": 435.24,
+      "text": "shadow that the shaft will cast. And watch for this to disappear as you slide towards the tip."
+    },
+    {
+      "start": 437.37,
+      "end": 439.97,
+      "text": "As with the in-plane approach, it's important in the planning phase."
+    },
+    {
+      "start": 440.0,
+      "end": 445.4,
+      "text": "to make decisions about the angle of your needle trajectory, which will influence where you puncture"
+    },
+    {
+      "start": 445.4,
+      "end": 449.96,
+      "text": "skin relative to the probe. At a shallower needle trajectory, a l-"
+    },
+    {
+      "start": 450.0,
+      "end": 454.28,
+      "text": "larger portion of the shaft may potentially be imaged, and that's mistaken for the tip."
+    },
+    {
+      "start": 455.71,
+      "end": 459.97,
+      "text": "The steeper needle angle inserted closer to probe is thus often best for single..."
+    },
+    {
+      "start": 460.0,
+      "end": 464.51,
+      "text": "injection blocks, as it minimizes the distance that you will have to slide your probe as"
+    },
+    {
+      "start": 464.51,
+      "end": 465.85,
+      "text": "you track the tip to the target."
+    },
+    {
+      "start": 467.5,
+      "end": 469.98,
+      "text": "However, if inserting a catheter, a steeper..."
+    },
+    {
+      "start": 470.03,
+      "end": 474.33,
+      "text": "angle increases the chance that the catheter will advance away from the nerve rather than"
+    },
+    {
+      "start": 474.33,
+      "end": 474.87,
+      "text": "along it."
+    },
+    {
+      "start": 476.27,
+      "end": 479.83,
+      "text": "And for catheters, therefore, I aim to keep the introducing needle."
+    },
+    {
+      "start": 480.0,
+      "end": 484.5,
+      "text": "angle less than 45 degrees, preferably more like 30 degrees to ensure that the"
+    },
+    {
+      "start": 484.5,
+      "end": 489.88,
+      "text": "catheter travels parallel to the nerve. The chosen needle angle and where you"
+    },
+    {
+      "start": 490.0,
+      "end": 495.85,
+      "text": "tend to land on the nerve will influence where you puncture the skin. How far away or how close to the"
+    },
+    {
+      "start": 495.85,
+      "end": 499.97,
+      "text": "probe. Note however that for very shallow nerves, a steeper probe"
+    },
+    {
+      "start": 500.0,
+      "end": 501.72,
+      "text": "approach is sometimes not advisable."
+    },
+    {
+      "start": 502.14,
+      "end": 506.84,
+      "text": "As the tip will not intersect the beam before it reaches the target and you will not be"
+    },
+    {
+      "start": 506.84,
+      "end": 509.97,
+      "text": "able to see the tip. In this case, a shadow."
+    },
+    {
+      "start": 510.0,
+      "end": 515.32,
+      "text": "A lower trajectory closer to 45 degrees is preferable, recognizing that you may have to do a little"
+    },
+    {
+      "start": 515.32,
+      "end": 516.92,
+      "text": "bit of sliding to track the needle tip."
+    },
+    {
+      "start": 520.0,
+      "end": 523.72,
+      "text": "The in-plane approach, looking for tissue motion with needle movement is very helpful."
+    },
+    {
+      "start": 524.8,
+      "end": 528.62,
+      "text": "The two important movements are side to side waggling and in and out jiggling."
+    },
+    {
+      "start": 530.06,
+      "end": 534.8,
+      "text": "While making these movements, slide the probe slowly to and fro in very small increments."
+    },
+    {
+      "start": 536.23,
+      "end": 539.97,
+      "text": "It's also important to use tactile feedback as additional cues, sensing the pfff."
+    },
+    {
+      "start": 540.06,
+      "end": 544.71,
+      "text": "or loss of resistance that comes with piercing each facial layer and match that to the"
+    },
+    {
+      "start": 544.71,
+      "end": 547.77,
+      "text": "tinting and the recoil that can be seen on the ultrasound screen."
+    },
+    {
+      "start": 550.0,
+      "end": 552.62,
+      "text": "always tip position can be confirmed with hydro location."
+    },
+    {
+      "start": 555.31,
+      "end": 559.07,
+      "text": "This is an example of jiggling versus waggling motions in an auto plane approach."
+    },
+    {
+      "start": 560.26,
+      "end": 563.9,
+      "text": "Struggling is helpful, especially when you're bouncing up and down on a facial layer prior"
+    },
+    {
+      "start": 563.9,
+      "end": 564.44,
+      "text": "to piercing."
+    },
+    {
+      "start": 565.74,
+      "end": 569.98,
+      "text": "But waggling is also helpful, because if you happen to have pierced..."
+    },
+    {
+      "start": 570.0,
+      "end": 575.06,
+      "text": "a fascia or other structure, you will see it moves side to side as you waggle the needle,"
+    },
+    {
+      "start": 575.94,
+      "end": 579.52,
+      "text": "which should then prompt you to slide your probe a little bit further away to bring the"
+    },
+    {
+      "start": 579.52,
+      "end": 579.82,
+      "text": "actual"
+    },
+    {
+      "start": 580.0,
+      "end": 587.68,
+      "text": "little tip into view, you will see all these principles at work here and then out of"
+    },
+    {
+      "start": 587.68,
+      "end": 589.88,
+      "text": "plane approach to a sighted nerve block cabin."
+    },
+    {
+      "start": 591.76,
+      "end": 599.97,
+      "text": "I'm using a combination of waggling and jiggling movements of the needle with gentle probing motions as I gradually advance my..."
+    },
+    {
+      "start": 600.0,
+      "end": 604.12,
+      "text": "needle towards and into the fascial sheath surrounding the sciatic nerve."
+    },
+    {
+      "start": 605.79,
+      "end": 609.97,
+      "text": "As my needle hand moves, my prop hand is also making small sliding and tilting."
+    },
+    {
+      "start": 610.0,
+      "end": 614.36,
+      "text": "movements to track the tip and optimise the view of both needle and nerve."
+    },
+    {
+      "start": 616.35,
+      "end": 619.73,
+      "text": "Again, I'm gradually advancing, trying to sense..."
+    },
+    {
+      "start": 620.1,
+      "end": 629.95,
+      "text": "as I advanced reach layer. Hydrolocation confirms a location of the tip and also pushes tissues aside to create safe spaces for firm"
+    },
+    {
+      "start": 630.0,
+      "end": 636.1,
+      "text": "needle advancement. Needle entry into the perennial sheath of the sighting nerve in this case"
+    },
+    {
+      "start": 636.1,
+      "end": 639.92,
+      "text": "is confirmed by fluid spread that expands and outlines the bound."
+    },
+    {
+      "start": 640.0,
+      "end": 641.54,
+      "text": "of the circular sciatic nerve."
+    },
+    {
+      "start": 642.79,
+      "end": 645.99,
+      "text": "Intranural injection is excluded by absence of nerve expansion,"
+    },
+    {
+      "start": 647.53,
+      "end": 649.97,
+      "text": "and note that the needle tip will become more visible once flu-"
+    },
+    {
+      "start": 650.0,
+      "end": 656.16,
+      "text": "as it being injected to create a dark background for contrast and the tip itself can be clearly identified"
+    },
+    {
+      "start": 656.16,
+      "end": 659.08,
+      "text": "with appropriate needle and probe manipulation."
+    },
+    {
+      "start": 671.12,
+      "end": 674.46,
+      "text": "I'd like to finish with a few thoughts on local and aesthetic injection around the nerve."
+    },
+    {
+      "start": 675.7,
+      "end": 679.96,
+      "text": "Poor principle for me is that every nerve or plexus has a facial envelope that..."
+    },
+    {
+      "start": 682.94,
+      "end": 689.89,
+      "text": "It's worth noting that in some locations, this can be multi-layered and more complex than just a single layer."
+    },
+    {
+      "start": 690.0,
+      "end": 698.68,
+      "text": "But if you identify this facial envelope and you place your needle inside of it, this compartment will fill with local anesthetic."
+    },
+    {
+      "start": 699.48,
+      "end": 699.98,
+      "text": "It will also..."
+    },
+    {
+      "start": 700.0,
+      "end": 705.02,
+      "text": "contain and direct the spread of local anaesthetic around the nerve, often without needing to reposition"
+    },
+    {
+      "start": 705.02,
+      "end": 709.98,
+      "text": "the needle. My aim is always to enter this compartment without touching the nerve if I can"
+    },
+    {
+      "start": 710.13,
+      "end": 717.78,
+      "text": "it. The key is to approach nerves at attention to their surface so that the needle will slide"
+    },
+    {
+      "start": 717.78,
+      "end": 719.96,
+      "text": "past them as it gives us the..."
+    },
+    {
+      "start": 720.0,
+      "end": 729.92,
+      "text": "developing fashion. It is helpful to make gentle probing motions with the needle to inch"
+    },
+    {
+      "start": 730.03,
+      "end": 734.42,
+      "text": "that the nerve will slide or roll away before you actually push through the fascia."
+    },
+    {
+      "start": 735.2,
+      "end": 739.5,
+      "text": "And this will avoid accidentally transfixing or traumatizing the nerve as you pop through."
+    },
+    {
+      "start": 742.98,
+      "end": 747.26,
+      "text": "are for investing facial layers, such as a superficial survival fashion in this case, sometimes"
+    },
+    {
+      "start": 747.26,
+      "end": 748.96,
+      "text": "requires more force to pierce."
+    },
+    {
+      "start": 750.0,
+      "end": 751.56,
+      "text": "Here a steeper angle is helpful."
+    },
+    {
+      "start": 752.66,
+      "end": 757.26,
+      "text": "If possible, it's also advisable to aim away from the nerve into a safe zone, like the"
+    },
+    {
+      "start": 757.26,
+      "end": 759.98,
+      "text": "middle scaling muscle in this example, so that there"
+    },
+    {
+      "start": 760.0,
+      "end": 769.98,
+      "text": "nothing serious get risk of damage as the needle pops through. In summary, aim to enter the potential space of the fa-"
+    },
+    {
+      "start": 770.0,
+      "end": 774.12,
+      "text": "and below some distance away from the nerve to minimize the risk of transfiction."
+    },
+    {
+      "start": 776.04,
+      "end": 779.97,
+      "text": "Detectile pop invisible recoil of tissues signifies the fascia has been pierced."
+    },
+    {
+      "start": 781.31,
+      "end": 786.24,
+      "text": "Idra location will then confirm position. If it is too deep as in this case,"
+    },
+    {
+      "start": 786.52,
+      "end": 789.97,
+      "text": "spread in the surrounding tissue will be seen. A useful trace-"
+    },
+    {
+      "start": 790.0,
+      "end": 794.64,
+      "text": "is to ask your assistant to inject slowly and continuously to produce a trickle of local anesthetic."
+    },
+    {
+      "start": 795.32,
+      "end": 799.18,
+      "text": "Withdraw the needle as they're injecting and the tip pops back into the potential space of the"
+    },
+    {
+      "start": 799.18,
+      "end": 799.82,
+      "text": "the facial envelope."
+    },
+    {
+      "start": 800.38,
+      "end": 801.9,
+      "text": "and the space will suddenly open up."
+    },
+    {
+      "start": 802.88,
+      "end": 805.3,
+      "text": "This is much better than an intermittent withdrawal"
+    },
+    {
+      "start": 805.3,
+      "end": 806.46,
+      "text": "and injection technique."
+    },
+    {
+      "start": 809.5,
+      "end": 809.98,
+      "text": "Note that it's..."
+    },
+    {
+      "start": 810.0,
+      "end": 814.3,
+      "text": "not essential to always obtain a circumferential spread of local anesthetic around the nerve."
+    },
+    {
+      "start": 815.78,
+      "end": 819.14,
+      "text": "And this is because local anesthetic does not spread in just one plane of imaging."
+    },
+    {
+      "start": 820.35,
+      "end": 824.19,
+      "text": "As I've mentioned, the paranormal envelope will contain and direct the spread of local"
+    },
+    {
+      "start": 824.19,
+      "end": 829.75,
+      "text": "anesthetic along the nerve, so while injecting, always slide the probe back and forth along the"
+    },
+    {
+      "start": 830.0,
+      "end": 833.0,
+      "text": "of the nerves to see how it is spreading at other locations."
+    },
+    {
+      "start": 834.3,
+      "end": 837.5,
+      "text": "This will help decide if the needle has to be repositioned or not."
+    },
+    {
+      "start": 840.1,
+      "end": 842.98,
+      "text": "This is illustrated in a video of a popliteal sciatic nerve block."
+    },
+    {
+      "start": 844.03,
+      "end": 848.27,
+      "text": "We are injecting at the bifurcation and by scanning approximately and distally during the process"
+    },
+    {
+      "start": 848.27,
+      "end": 849.97,
+      "text": "of injection, we can see..."
+    },
+    {
+      "start": 850.0,
+      "end": 854.62,
+      "text": "that spread is actually occurring around both tibial and common perineal branches, and"
+    },
+    {
+      "start": 854.62,
+      "end": 859.12,
+      "text": "also more importantly that the nose are not expanding which would signal an intranural injection."
+    },
+    {
+      "start": 861.6,
+      "end": 863.74,
+      "text": "Once again, this signifies the importance"
+    },
+    {
+      "start": 864.18,
+      "end": 866.52,
+      "text": "of doing some dynamic scanning while injecting."
+    },
+    {
+      "start": 867.14,
+      "end": 869.38,
+      "text": "There is no need to continuously visualize the needle."
+    },
+    {
+      "start": 870.0,
+      "end": 876.11,
+      "text": "not actually moving it. If you do have to move your needle around to different positions,"
+    },
+    {
+      "start": 876.35,
+      "end": 879.75,
+      "text": "for example, to target different nerves in the auxiliary plexus block, for example."
+    },
+    {
+      "start": 880.42,
+      "end": 884.96,
+      "text": "It can be helpful to instruct your assistant to slowly inject a given volume, for example"
+    },
+    {
+      "start": 884.96,
+      "end": 889.54,
+      "text": "three to five mills, and to advance and move the needle around at the same time that they're"
+    },
+    {
+      "start": 889.54,
+      "end": 889.98,
+      "text": "we're injecting."
+    },
+    {
+      "start": 890.0,
+      "end": 895.5,
+      "text": "The jet of local anesthetic coming out of the needle tip pushes away nerves and dissects"
+    },
+    {
+      "start": 895.5,
+      "end": 899.38,
+      "text": "facial planes creating safe spaces for the needle tip to advance into."
+    },
+    {
+      "start": 900.99,
+      "end": 905.79,
+      "text": "The only downside of this maneuver is that it can result in higher total injected local"
+    },
+    {
+      "start": 905.79,
+      "end": 906.83,
+      "text": "and static volumes."
+    },
+    {
+      "start": 914.7,
+      "end": 919.97,
+      "text": "The final tip I'll leave you with is the Reverse Bevel Trick, local N."
+    },
+    {
+      "start": 920.0,
+      "end": 924.6,
+      "text": "aesthetic emerges from the needle orifice as a jet and the direction of spread is"
+    },
+    {
+      "start": 924.92,
+      "end": 929.83,
+      "text": "influenced by the direction that the bevel is facing. This is why when we have the bevel"
+    },
+    {
+      "start": 930.0,
+      "end": 934.72,
+      "text": "facing up, we usually aim to place our needle at the 5 or 7 o'clock aspect of a nerve so"
+    },
+    {
+      "start": 935.14,
+      "end": 938.32,
+      "text": "that the local anesthetic will travel towards the nerve and around it."
+    },
+    {
+      "start": 940.22,
+      "end": 945.3,
+      "text": "If however, your approach takes a needle over the nerve so that you're now on the 10 or"
+    },
+    {
+      "start": 945.3,
+      "end": 949.82,
+      "text": "2 o'clock aspect of the nerve, then it helps to spin the needle."
+    },
+    {
+      "start": 950.76,
+      "end": 953.9,
+      "text": "180 degrees so that the bevel faces downwards."
+    },
+    {
+      "start": 955.22,
+      "end": 957.82,
+      "text": "The double echo of the needle tip will not be seen in this case."
+    },
+    {
+      "start": 958.81,
+      "end": 959.97,
+      "text": "Now the direction of the bevel..."
+    },
+    {
+      "start": 960.0,
+      "end": 965.09,
+      "text": "level, will direct local anaesthetic spread down into water nerve rather than away from"
+    },
+    {
+      "start": 965.09,
+      "end": 965.25,
+      "text": "it."
+    },
+    {
+      "start": 966.15,
+      "end": 969.97,
+      "text": "As in this example of a radial nerve, in an auxiliary brachial plexus"
+    },
+    {
+      "start": 970.0,
+      "end": 976.88,
+      "text": "block, which we have approached the real the radial nerve from above the archery rather than under the archery."
+    },
+    {
+      "start": 983.62,
+      "end": 987.68,
+      "text": "Not how with the bevel facing downwards, we can get efficient look when they are spread"
+    },
+    {
+      "start": 987.68,
+      "end": 989.72,
+      "text": "the travels back and down."
+    },
+    {
+      "start": 990.16,
+      "end": 999.88,
+      "text": "was the radial nerve that lies under the needle. Thanks very much for watching."
+    }
+  ]
+}

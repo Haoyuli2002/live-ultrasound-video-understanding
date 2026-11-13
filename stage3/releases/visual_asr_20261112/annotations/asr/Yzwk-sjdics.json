@@ -1,0 +1,118 @@
+{
+  "video_id": "Yzwk-sjdics",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/Yzwk-sjdics/asr.txt",
+  "segments": [
+    {
+      "start": 0.06,
+      "end": 4.22,
+      "text": "One of the most important things in the critical care unit is obtaining vascular access."
+    },
+    {
+      "start": 5.31,
+      "end": 8.73,
+      "text": "And the main sites of vascular access are internal jugulars and femurals."
+    },
+    {
+      "start": 9.69,
+      "end": 13.11,
+      "text": "When we can't access those, we're only left with the subclavian veins."
+    },
+    {
+      "start": 14.36,
+      "end": 18.64,
+      "text": "Now, the apprehension of subclavian veins is that we would cause a pneumo."
+    },
+    {
+      "start": 19.04,
+      "end": 22.99,
+      "text": "I'm going to ask Rod a way to do this safely."
+    },
+    {
+      "start": 26.39,
+      "end": 29.47,
+      "text": "The most important thing when it comes to cannulating the subclavian vein"
+    },
+    {
+      "start": 29.47,
+      "end": 33.89,
+      "text": "is to make sure you have suitable vessel size for cannulation."
+    },
+    {
+      "start": 33.89,
+      "end": 40.32,
+      "text": "I know how to put a needle into a vessel, but how do I find the subclavian on an ultrasound"
+    },
+    {
+      "start": 40.32,
+      "end": 40.7,
+      "text": "gene?"
+    },
+    {
+      "start": 40.98,
+      "end": 45.14,
+      "text": "What you're really doing is you're actually using the ultrasound to visualize the axillary"
+    },
+    {
+      "start": 45.14,
+      "end": 47.66,
+      "text": "vein as it dives underneath the clavicle."
+    },
+    {
+      "start": 47.86,
+      "end": 53.2,
+      "text": "To use your linear transducer probe, you place it in the middle of your clavicle and then"
+    },
+    {
+      "start": 53.2,
+      "end": 59.04,
+      "text": "you move laterally along the clavvy pectoral, delta pectoral groove until you find that perfect"
+    },
+    {
+      "start": 59.04,
+      "end": 65.02,
+      "text": "spot where you have maximized the size of the subclavian vein and then you put it in the long"
+    },
+    {
+      "start": 65.02,
+      "end": 70.26,
+      "text": "axis so you can see what kind of trajectory it has. You take advantage of the underlying rib and"
+    },
+    {
+      "start": 70.26,
+      "end": 75.66,
+      "text": "this is what we call the plural avoidance with the rib trajectory method. Once you've lined up"
+    },
+    {
+      "start": 75.66,
+      "end": 81.02,
+      "text": "your vessel with the ultrasound and you have that needle going underneath, you are going to point"
+    },
+    {
+      "start": 81.02,
+      "end": 86.94,
+      "text": "towards a trajectory towards that underlying rib. Therefore, if you ever inadvertently advance the"
+    },
+    {
+      "start": 86.94,
+      "end": 91.72,
+      "text": "needle, you have that protective shield that protects you from developing a"
+    },
+    {
+      "start": 91.72,
+      "end": 96.44,
+      "text": "pneumothorax. Well we're advocating not only using dynamic ultrasound guidance"
+    },
+    {
+      "start": 96.44,
+      "end": 102.02,
+      "text": "to access the axillary vein but also to use the part technique which is a plural"
+    },
+    {
+      "start": 102.02,
+      "end": 106.46,
+      "text": "avoidance with rib trajectory methods and that will avoid pneumothorax."
+    }
+  ]
+}

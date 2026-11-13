@@ -1,0 +1,753 @@
+{
+  "video_id": "6J2wtC5zOOU",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/6J2wtC5zOOU/asr.txt",
+  "segments": [
+    {
+      "start": 1.44,
+      "end": 5.3,
+      "text": "This is the first of a two-part video series on technical tips and tricks for ultrasound"
+    },
+    {
+      "start": 5.3,
+      "end": 6.66,
+      "text": "guided peripheral nerve blocks."
+    },
+    {
+      "start": 10.22,
+      "end": 14.38,
+      "text": "technical performance of ultrasound guided peripheral nerve blocks is something of great interest to me"
+    },
+    {
+      "start": 14.38,
+      "end": 19.89,
+      "text": "I consider it not just a skill but also an art and I personally take great pleasure"
+    },
+    {
+      "start": 20.0,
+      "end": 21.5,
+      "text": "in executing a block well."
+    },
+    {
+      "start": 23.42,
+      "end": 27.51,
+      "text": "More importantly though, the technique also increases the probability that the block will"
+    },
+    {
+      "start": 27.51,
+      "end": 29.19,
+      "text": "be both safe and effective."
+    },
+    {
+      "start": 30.8,
+      "end": 35.0,
+      "text": "The technical mastery will allow you to place your local anesthetic into an optimal location"
+    },
+    {
+      "start": 35.0,
+      "end": 38.68,
+      "text": "at the lowest possible dose and with the least trauma to the patient."
+    },
+    {
+      "start": 40.16,
+      "end": 43.5,
+      "text": "In this presentation, I will take you through the typical steps of a block procedure"
+    },
+    {
+      "start": 43.5,
+      "end": 49.75,
+      "text": "and highlight to you what I believe are key aspects of focus on in certain tips and tricks that I have found helpful."
+    },
+    {
+      "start": 50.03,
+      "end": 57.69,
+      "text": "in my experience. Know that I will be discussing only technical performance in this talk, however"
+    },
+    {
+      "start": 57.69,
+      "end": 59.59,
+      "text": "we are clinicians, not just technicians."
+    },
+    {
+      "start": 60.61,
+      "end": 62.57,
+      "text": "And regional anesthesia is more than just technique."
+    },
+    {
+      "start": 63.71,
+      "end": 65.49,
+      "text": "We must choose the right indications for the block,"
+    },
+    {
+      "start": 66.19,
+      "end": 67.97,
+      "text": "match the correct block to the surgical condition"
+    },
+    {
+      "start": 67.97,
+      "end": 69.96,
+      "text": "of pain syndrome, choose a-"
+    },
+    {
+      "start": 70.03,
+      "end": 74.6,
+      "text": "appropriate local anaesthetic doses, and follow up the patient to ensure the absence of"
+    },
+    {
+      "start": 74.6,
+      "end": 79.91,
+      "text": "any complications, and most importantly, as part of a feedback loop of continual self."
+    },
+    {
+      "start": 80.0,
+      "end": 87.48,
+      "text": "improvement. Setting up your environment is the first step. The priority here is to ensure"
+    },
+    {
+      "start": 87.48,
+      "end": 89.88,
+      "text": "that the ergonomics of block performance are optimal."
+    },
+    {
+      "start": 90.93,
+      "end": 96.06,
+      "text": "Ultrasound guided peripheral nerve blocks require a complex hand-eye coordination in controlled"
+    },
+    {
+      "start": 96.06,
+      "end": 99.24,
+      "text": "manual dexterity, so physical comfort is important."
+    },
+    {
+      "start": 100.13,
+      "end": 101.63,
+      "text": "especially for less experienced uses."
+    },
+    {
+      "start": 104.17,
+      "end": 105.75,
+      "text": "Consider where you will position yourself,"
+    },
+    {
+      "start": 106.05,
+      "end": 109.36,
+      "text": "the operator, your assistant, and the ultrasound machine"
+    },
+    {
+      "start": 109.36,
+      "end": 109.98,
+      "text": "in relation to..."
+    },
+    {
+      "start": 110.0,
+      "end": 110.72,
+      "text": "to the patient."
+    },
+    {
+      "start": 112.2,
+      "end": 117.36,
+      "text": "Ideally, the practitioner's hands, block sight and ultrasound screen should be in the"
+    },
+    {
+      "start": 117.36,
+      "end": 118.24,
+      "text": "same line of sight."
+    },
+    {
+      "start": 119.23,
+      "end": 119.97,
+      "text": "Keeping the ultrasound..."
+    },
+    {
+      "start": 120.0,
+      "end": 124.06,
+      "text": "beam and needle tip aligned while manipulating the probe and needle during"
+    },
+    {
+      "start": 124.06,
+      "end": 128.32,
+      "text": "advancement of the target is much more difficult if you are twisted away from"
+    },
+    {
+      "start": 128.32,
+      "end": 129.92,
+      "text": "the patient to look at the alters."
+    },
+    {
+      "start": 130.0,
+      "end": 138.83,
+      "text": "on screen. Decide if you will be advancing the needle along your line of sight. That is in a"
+    },
+    {
+      "start": 138.83,
+      "end": 139.47,
+      "text": "sagittal plane."
+    },
+    {
+      "start": 140.22,
+      "end": 143.28,
+      "text": "or across your line of sight, in a coronal plane."
+    },
+    {
+      "start": 144.37,
+      "end": 146.39,
+      "text": "This choice is most relevant for upper limb blocks,"
+    },
+    {
+      "start": 146.65,
+      "end": 148.33,
+      "text": "such as the auxiliary or infracurricular,"
+    },
+    {
+      "start": 148.99,
+      "end": 149.97,
+      "text": "where you have the option to..."
+    },
+    {
+      "start": 150.0,
+      "end": 154.29,
+      "text": "stand at the head of the patient or on the same side as the limb to be blocked."
+    },
+    {
+      "start": 157.04,
+      "end": 159.84,
+      "text": "There is evidence that the along approach is preferable because"
+    },
+    {
+      "start": 160.0,
+      "end": 163.24,
+      "text": "it is easier to achieve and maintain in-plane needle beam alignment."
+    },
+    {
+      "start": 164.33,
+      "end": 168.33,
+      "text": "You can also hold the needle with your preferred hand, regardless of whether the block is being"
+    },
+    {
+      "start": 168.33,
+      "end": 169.91,
+      "text": "performed on the patient's right."
+    },
+    {
+      "start": 170.0,
+      "end": 177.42,
+      "text": "or left side. The downside is that the patient's head may be in your way, or you may find yourself bending over to reach the block site."
+    },
+    {
+      "start": 180.42,
+      "end": 186.41,
+      "text": "across approach may however be the most practical or unavoidable in many situations and I have"
+    },
+    {
+      "start": 186.41,
+      "end": 188.55,
+      "text": "to say that we use it quite commonly in my practice."
+    },
+    {
+      "start": 190.35,
+      "end": 195.06,
+      "text": "alignment gets better with practice, but one common area of observed in less experienced"
+    },
+    {
+      "start": 195.06,
+      "end": 199.86,
+      "text": "trainees is a tendency to push the needle hub away from themselves as they advance."
+    },
+    {
+      "start": 200.0,
+      "end": 204.13,
+      "text": "needle or change needle angle, which misaligns the needle with the beam."
+    },
+    {
+      "start": 205.42,
+      "end": 209.78,
+      "text": "The solution here is to be aware that this can happen, and to check your alignment regular"
+    },
+    {
+      "start": 210.0,
+      "end": 215.19,
+      "text": "by looking down at your hands away from the ultrasound screen especially if"
+    },
+    {
+      "start": 215.19,
+      "end": 219.88,
+      "text": "you're having trouble locating the needle tip. It may also help to keep your elbow"
+    },
+    {
+      "start": 220.0,
+      "end": 223.06,
+      "text": "firmly locked into your side and not extending them."
+    },
+    {
+      "start": 226.12,
+      "end": 229.62,
+      "text": "How you hold the ultrasound probe and needles also critical for technical control."
+    },
+    {
+      "start": 231.15,
+      "end": 235.71,
+      "text": "ultrasound probe should be held low down for maximum stability, and in one of two ways,"
+    },
+    {
+      "start": 236.93,
+      "end": 239.97,
+      "text": "if the probe is parallel to your body, then use the thumb."
+    },
+    {
+      "start": 240.0,
+      "end": 246.36,
+      "text": "and 2nd and 3rd fingers to grip the flat surface of the probe. Alternatively hold the probe"
+    },
+    {
+      "start": 246.36,
+      "end": 249.98,
+      "text": "with a thumb and 2nd and 3rd fingers resting on the shoulders of the"
+    },
+    {
+      "start": 250.0,
+      "end": 254.63,
+      "text": "the probe. The general rule to remember is that the risk should not be high-prextended"
+    },
+    {
+      "start": 254.63,
+      "end": 259.92,
+      "text": "which will lead to fatigue and loss of control. The finger and edge of the hand should"
+    },
+    {
+      "start": 260.0,
+      "end": 266.05,
+      "text": "firmly anchored on the patient in most instances, it does not move at all much during the whole procedure."
+    },
+    {
+      "start": 267.65,
+      "end": 269.85,
+      "text": "The subtle tilting and sliding micro movements"
+    },
+    {
+      "start": 270.0,
+      "end": 275.36,
+      "text": "So the probe required to optimize target visibility and to align beam and needle are instead"
+    },
+    {
+      "start": 275.36,
+      "end": 277.78,
+      "text": "made by flexing and extending the fingers."
+    },
+    {
+      "start": 277.78,
+      "end": 279.98,
+      "text": "Keep the wrist..."
+    },
+    {
+      "start": 280.0,
+      "end": 284.94,
+      "text": "This, in a neutral position as far as possible, the goal is to feel relaxed with no tension"
+    },
+    {
+      "start": 284.94,
+      "end": 286.72,
+      "text": "in the shoulders or elbows or wrists."
+    },
+    {
+      "start": 288.12,
+      "end": 289.96,
+      "text": "Do not grip the pro bonille heart."
+    },
+    {
+      "start": 290.0,
+      "end": 295.8,
+      "text": "either. Your grip should be relaxed but controlled, which is something that comes with practice."
+    },
+    {
+      "start": 296.94,
+      "end": 299.8,
+      "text": "Too much tension will impair your ability to make the fine movements"
+    },
+    {
+      "start": 300.03,
+      "end": 304.77,
+      "text": "needed for a needle beam alignment, to guide the needle to the target, and to sense the"
+    },
+    {
+      "start": 304.77,
+      "end": 308.93,
+      "text": "tactile feedback from the needle tip as it advances through the different tissue and"
+    },
+    {
+      "start": 308.93,
+      "end": 309.51,
+      "text": "facial layers."
+    },
+    {
+      "start": 311.92,
+      "end": 313.96,
+      "text": "This video is a good illustration of this concept."
+    },
+    {
+      "start": 315.06,
+      "end": 316.04,
+      "text": "Look at the operative's hands"
+    },
+    {
+      "start": 316.04,
+      "end": 318.74,
+      "text": "and note how likely they're holding both probin needle"
+    },
+    {
+      "start": 318.74,
+      "end": 319.96,
+      "text": "and the real..."
+    },
+    {
+      "start": 320.0,
+      "end": 325.85,
+      "text": "taxed, yet fine and controlled movements that each hand is making to manipulate a probe"
+    },
+    {
+      "start": 325.85,
+      "end": 326.47,
+      "text": "and a needle."
+    },
+    {
+      "start": 330.42,
+      "end": 331.86,
+      "text": "Let's turn now to the scanning phase."
+    },
+    {
+      "start": 332.75,
+      "end": 334.19,
+      "text": "This is the first step in the procedure."
+    },
+    {
+      "start": 334.83,
+      "end": 337.15,
+      "text": "And the goal here is to identify the nerve target"
+    },
+    {
+      "start": 337.15,
+      "end": 339.89,
+      "text": "on ultrasound imaging and to optimize its vision."
+    },
+    {
+      "start": 342.46,
+      "end": 349.76,
+      "text": "Anatomical knowledge is critical to ultrasound guide blocks as you will only see structures that you are looking for but you have to know"
+    },
+    {
+      "start": 350.1,
+      "end": 354.66,
+      "text": "it is that you're looking for. I hope all of you can see the fish, especially now that I've"
+    },
+    {
+      "start": 354.66,
+      "end": 359.98,
+      "text": "told you it's there. Ultrasound scanning for a block is also like planning..."
+    },
+    {
+      "start": 360.0,
+      "end": 365.6,
+      "text": "the journey. Pog and nerve is your destination, but nerves are not always easy to see."
+    },
+    {
+      "start": 366.8,
+      "end": 369.44,
+      "text": "To locate nerves, especially in patients with difficult anatomy."
+    },
+    {
+      "start": 370.35,
+      "end": 374.09,
+      "text": "It's essential to know the sequence of landmarks or signposts to look for."
+    },
+    {
+      "start": 375.21,
+      "end": 379.73,
+      "text": "Nurse have constant, well-defined relationships to structures that are easier to see on ultrasound."
+    },
+    {
+      "start": 380.83,
+      "end": 384.9,
+      "text": "These include muscle, and fascial layers, vessels, and bone."
+    },
+    {
+      "start": 386.09,
+      "end": 389.49,
+      "text": "Where every block I personally have a sequence of structures that I look for,"
+    },
+    {
+      "start": 390.0,
+      "end": 392.28,
+      "text": "lead my eye to the nerve that I'm interested in."
+    },
+    {
+      "start": 393.48,
+      "end": 398.24,
+      "text": "At the same time, I'm also aware and look out for hazards to be avoided on the way."
+    },
+    {
+      "start": 401.5,
+      "end": 406.13,
+      "text": "Here are two examples of applied anatomical knowledge, both of them in the context of the"
+    },
+    {
+      "start": 406.13,
+      "end": 406.59,
+      "text": "ankle block."
+    },
+    {
+      "start": 407.73,
+      "end": 409.97,
+      "text": "We can identify the small superficial pairing..."
+    },
+    {
+      "start": 410.0,
+      "end": 415.41,
+      "text": "nerve by looking first for the anterior corner of the fibula and then the cruel fascia that"
+    },
+    {
+      "start": 415.41,
+      "end": 416.17,
+      "text": "invest the leg."
+    },
+    {
+      "start": 417.37,
+      "end": 419.97,
+      "text": "The superficial perineal nerve ascends to pierce the"
+    },
+    {
+      "start": 420.13,
+      "end": 424.85,
+      "text": "fascia in this location, and can thus be spotted when we know where we should be looking"
+    },
+    {
+      "start": 424.85,
+      "end": 429.98,
+      "text": "to build nerve at the ankle lies deep to an investing fascia."
+    },
+    {
+      "start": 430.0,
+      "end": 436.38,
+      "text": "layer. But more importantly, the nerve is located posterior and adjacent to the posterior"
+    },
+    {
+      "start": 436.38,
+      "end": 439.6,
+      "text": "to Bilatry and accompanying veins, which are visible."
+    },
+    {
+      "start": 440.0,
+      "end": 445.08,
+      "text": "and swollen ankles, and these signposts make it easier to spot the tibial nerve."
+    },
+    {
+      "start": 447.98,
+      "end": 449.82,
+      "text": "But we can also optimize our ultrasound image."
+    },
+    {
+      "start": 450.13,
+      "end": 452.9,
+      "text": "beyond the basic adjustments with good probe handling."
+    },
+    {
+      "start": 454.36,
+      "end": 457.98,
+      "text": "The two maneuvers to always use our pressure and tilting."
+    },
+    {
+      "start": 460.45,
+      "end": 464.35,
+      "text": "Unlike for ultrasound guided vascular access, in nerve blocks we usually want to press"
+    },
+    {
+      "start": 464.35,
+      "end": 466.73,
+      "text": "firmly to compress the superficial tissues."
+    },
+    {
+      "start": 467.58,
+      "end": 469.96,
+      "text": "This will almost always improve visibility of the tongue."
+    },
+    {
+      "start": 470.0,
+      "end": 475.39,
+      "text": "A rule of thumb for adequate pressure is that it should be sufficient to compress any"
+    },
+    {
+      "start": 475.39,
+      "end": 477.01,
+      "text": "superficial veins in the area."
+    },
+    {
+      "start": 480.0,
+      "end": 483.1,
+      "text": "Tilting is probably the most important maneuver for improving visibility."
+    },
+    {
+      "start": 484.7,
+      "end": 488.94,
+      "text": "The equigenicity of nerves will change depending on the angle that the ultrasound waves strike"
+    },
+    {
+      "start": 488.94,
+      "end": 489.48,
+      "text": "the surface."
+    },
+    {
+      "start": 490.0,
+      "end": 495.96,
+      "text": "return to the probe. The correct angle of tilt is determined somewhat by trial and error,"
+    },
+    {
+      "start": 496.91,
+      "end": 499.41,
+      "text": "but is the angle that makes the boundaries of your target?"
+    },
+    {
+      "start": 500.1,
+      "end": 503.08,
+      "text": "In this case, the nerve, right, clear and most visible."
+    },
+    {
+      "start": 504.44,
+      "end": 506.84,
+      "text": "Occasionally, a vessel, such as the archery and"
+    },
+    {
+      "start": 506.84,
+      "end": 509.97,
+      "text": "anthropoclyphical block, is the target of interest, and in those cases..."
+    },
+    {
+      "start": 510.0,
+      "end": 513.94,
+      "text": "cases, you should tilt to make that boundary clear and visible."
+    },
+    {
+      "start": 515.39,
+      "end": 519.32,
+      "text": "Tilting, however, is something that many novices neglect to do, mainly because there are"
+    },
+    {
+      "start": 519.32,
+      "end": 519.98,
+      "text": "two tenths."
+    },
+    {
+      "start": 520.61,
+      "end": 525.35,
+      "text": "learning to relax your pro-groups previously mentioned will assist greatly in this."
+    },
+    {
+      "start": 528.7,
+      "end": 529.84,
+      "text": "Having identified your target"
+    },
+    {
+      "start": 530.0,
+      "end": 534.59,
+      "text": "The next step is to plan the path that your needle needs to take to safely reach the"
+    },
+    {
+      "start": 534.59,
+      "end": 536.47,
+      "text": "nerve for injection of local anaesthetic."
+    },
+    {
+      "start": 538.37,
+      "end": 539.93,
+      "text": "Using an infracurricular block as a thing."
+    },
+    {
+      "start": 540.0,
+      "end": 544.62,
+      "text": "For example, we need to get our needle tip to the 5 o'clock aspect of the archery to deposit"
+    },
+    {
+      "start": 544.62,
+      "end": 548.98,
+      "text": "our local anesthetic, but we need to avoid injuring nerves in the process."
+    },
+    {
+      "start": 550.03,
+      "end": 552.61,
+      "text": "In particular, the lateral cord often appears to line the way."
+    },
+    {
+      "start": 554.3,
+      "end": 559.12,
+      "text": "The solution is not to avoid the cords into injector in the outside of the new rascal"
+    },
+    {
+      "start": 559.12,
+      "end": 559.98,
+      "text": "bundle as the block..."
+    },
+    {
+      "start": 560.16,
+      "end": 566.68,
+      "text": "fail. Instead we can plan a trajectory that will skin past the lateral chord and allow us"
+    },
+    {
+      "start": 566.68,
+      "end": 569.04,
+      "text": "to eventually get where we intend to go."
+    },
+    {
+      "start": 570.13,
+      "end": 574.66,
+      "text": "Now this can be done in more than one way, but to pull it off requires that we have a deliberate"
+    },
+    {
+      "start": 575.04,
+      "end": 578.58,
+      "text": "consideration of where we insert our needle through the skin relative to the probe."
+    },
+    {
+      "start": 578.58,
+      "end": 579.52,
+      "text": "and thus"
+    },
+    {
+      "start": 580.06,
+      "end": 587.62,
+      "text": "angle that the needle will take. This example of the infra-clivicular block also illustrates"
+    },
+    {
+      "start": 587.62,
+      "end": 589.97,
+      "text": "another important principle, and that is..."
+    },
+    {
+      "start": 590.0,
+      "end": 596.03,
+      "text": "then with good-needling technique, you can maneuver around vessels and nerves without damaging"
+    },
+    {
+      "start": 596.03,
+      "end": 599.96,
+      "text": "them by using injected fluid to produce some hydrodice."
+    },
+    {
+      "start": 600.0,
+      "end": 605.26,
+      "text": "section and pushing things aside as well as by careful handling of the blunt tip block needle."
+    },
+    {
+      "start": 609.32,
+      "end": 609.98,
+      "text": "This brings us..."
+    },
+    {
+      "start": 610.0,
+      "end": 614.66,
+      "text": "to the next phase of Alchorson guided peripheral nerve block, Needling, which we will discuss"
+    },
+    {
+      "start": 614.66,
+      "end": 616.98,
+      "text": "further in the second part of this video series."
+    }
+  ]
+}

@@ -1,0 +1,428 @@
+{
+  "video_id": "YhLX2-WgEjw",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/YhLX2-WgEjw/asr.txt",
+  "segments": [
+    {
+      "start": 1.18,
+      "end": 2.72,
+      "text": "Hey there, son of peeps Henry here, how's it going?"
+    },
+    {
+      "start": 3.36,
+      "end": 6.0,
+      "text": "Today we're gonna go over hemodialysis vascular axis."
+    },
+    {
+      "start": 7.14,
+      "end": 9.0,
+      "text": "We're going to talk about arteriovenus fistulas"
+    },
+    {
+      "start": 9.52,
+      "end": 9.98,
+      "text": "and our..."
+    },
+    {
+      "start": 10.0,
+      "end": 11.34,
+      "text": "Heral venus grafts."
+    },
+    {
+      "start": 11.79,
+      "end": 16.28,
+      "text": "Hemodialysis access grafts and fiscillus are used for hemodialysis."
+    },
+    {
+      "start": 16.759999999999998,
+      "end": 19.98,
+      "text": "Hemodialysis is a medical procedure that uses a dialysis machine to..."
+    },
+    {
+      "start": 20.13,
+      "end": 25.03,
+      "text": "filter, waste and water from your blood, in cases of renal failure, so it pretty much"
+    },
+    {
+      "start": 25.03,
+      "end": 27.03,
+      "text": "does the job that your kidneys used to do."
+    },
+    {
+      "start": 27.740000000000002,
+      "end": 29.98,
+      "text": "We'll begin with arteriovenous fistula, and arteriovenous fistula."
+    },
+    {
+      "start": 30.0,
+      "end": 34.34,
+      "text": "Venus Fistila is a channel that's created between an artery and a vein, an artificial channel,"
+    },
+    {
+      "start": 34.519999999999996,
+      "end": 39.69,
+      "text": "that's created between an artery and a vein. This is usually done surgically. The most common"
+    },
+    {
+      "start": 40.0,
+      "end": 43.9,
+      "text": "Fistula for Himodialysis is the Brescia Chimino Fistula."
+    },
+    {
+      "start": 44.7,
+      "end": 47.980000000000004,
+      "text": "Then what's your radio artery and cephalic vein are joined together surgically?"
+    },
+    {
+      "start": 49.6,
+      "end": 49.980000000000004,
+      "text": "Another Fistula"
+    },
+    {
+      "start": 50.0,
+      "end": 52.74,
+      "text": "that can be used as owner artery to bacillic vein."
+    },
+    {
+      "start": 54.35,
+      "end": 55.91,
+      "text": "The benefits of arter of venous fiscila"
+    },
+    {
+      "start": 55.91,
+      "end": 57.49,
+      "text": "is that it has the lowest rate of failure"
+    },
+    {
+      "start": 57.49,
+      "end": 59.79,
+      "text": "and complications as you're using the patient's native"
+    },
+    {
+      "start": 60.48,
+      "end": 65.12,
+      "text": "Once the AB Fisila is created, you'll have to wait several months for it to fully heal"
+    },
+    {
+      "start": 65.12,
+      "end": 65.58,
+      "text": "and mature."
+    },
+    {
+      "start": 66.13,
+      "end": 68.13,
+      "text": "Before you can puncture it, use it for hemodialysis."
+    },
+    {
+      "start": 69.01,
+      "end": 69.97,
+      "text": "The second time of access..."
+    },
+    {
+      "start": 70.0,
+      "end": 71.5,
+      "text": "device is an arterio venous graft."
+    },
+    {
+      "start": 72.6,
+      "end": 77.02,
+      "text": "An avi graft is also created surgically by using a small hollow synthetic tube that connects"
+    },
+    {
+      "start": 77.02,
+      "end": 78.03999999999999,
+      "text": "the artery to the vein."
+    },
+    {
+      "start": 78.5,
+      "end": 79.96000000000001,
+      "text": "The material tip..."
+    },
+    {
+      "start": 80.0,
+      "end": 84.4,
+      "text": "used for an avi-graph is a polytetra-flora ethylene or Gore-tex tube."
+    },
+    {
+      "start": 85.12,
+      "end": 89.98,
+      "text": "Graphs are used as opposed to fisculas when the patient's native vasculature is not suitable for fiscula-"
+    },
+    {
+      "start": 90.0,
+      "end": 95.43,
+      "text": "The grass to me inserted as straight tubes or looped tubes, typically connecting the radio"
+    },
+    {
+      "start": 95.43,
+      "end": 98.51,
+      "text": "artery to the cephalic, median cubital or bacillic vein."
+    },
+    {
+      "start": 99.02,
+      "end": 99.98,
+      "text": "The loop varieties can also..."
+    },
+    {
+      "start": 100.0,
+      "end": 104.16,
+      "text": "connect the proximal brachy artery to the auxiliary vein, or in the case of a lower extremity,"
+    },
+    {
+      "start": 104.64,
+      "end": 106.54,
+      "text": "the femoral to great saffinous vein."
+    },
+    {
+      "start": 107.51,
+      "end": 109.55,
+      "text": "So waveforms in these grass and fiscilus"
+    },
+    {
+      "start": 110.06,
+      "end": 112.74,
+      "text": "are going to differ from your typical waveform in the upper extremity."
+    },
+    {
+      "start": 113.04,
+      "end": 118.0,
+      "text": "The normal waveform in an upper extremity artery, like the radio artery, is triphasic in"
+    },
+    {
+      "start": 118.0,
+      "end": 119.97,
+      "text": "nature, with a tearspectral wind."
+    },
+    {
+      "start": 120.0,
+      "end": 124.98,
+      "text": "The waveform in an upper extremity artery can be changed with either momentary ischemia"
+    },
+    {
+      "start": 124.98,
+      "end": 129.92,
+      "text": "or exercise to change the waveform to a monophasic or bifasic waveform with"
+    },
+    {
+      "start": 130.0,
+      "end": 133.42,
+      "text": "increased diastolic flow, which would be reactive or active hyperemia."
+    },
+    {
+      "start": 134.28,
+      "end": 137.6,
+      "text": "The normal blood flow in upper extremity vein is usually slightly"
+    },
+    {
+      "start": 137.6,
+      "end": 139.7,
+      "text": "basic due to the respiratory and cardiac"
+    },
+    {
+      "start": 140.0,
+      "end": 145.18,
+      "text": "conversations, distal augmentation can cause a sharp increase in velocity, with a return"
+    },
+    {
+      "start": 145.18,
+      "end": 146.46,
+      "text": "to baseline shortly upon release."
+    },
+    {
+      "start": 147.44,
+      "end": 149.96,
+      "text": "In normally functioning graphs and fiscilers, you're going to have..."
+    },
+    {
+      "start": 150.03,
+      "end": 155.62,
+      "text": "have a low-resistant monophasic waveform with increased diastolic flow."
+    },
+    {
+      "start": 156.23,
+      "end": 159.27,
+      "text": "The flow may be a little turbulent, approximately, with spectral broadening."
+    },
+    {
+      "start": 160.1,
+      "end": 162.68,
+      "text": "Normal velocities on the arterio or inflow side"
+    },
+    {
+      "start": 162.68,
+      "end": 165.36,
+      "text": "range between 100 and 400 centimeters per second"
+    },
+    {
+      "start": 165.36,
+      "end": 166.54,
+      "text": "peaks the solid velocity,"
+    },
+    {
+      "start": 166.88,
+      "end": 169.92,
+      "text": "and 60 to 200 centimeters per second for end diastolic."
+    },
+    {
+      "start": 170.06,
+      "end": 176.08,
+      "text": "velocity. On the outflow or venous side of the graft or fistila, piece of solid velocity"
+    },
+    {
+      "start": 176.08,
+      "end": 179.97,
+      "text": "is ranged from 30 to 100 centimeters per second. The further away from the"
+    },
+    {
+      "start": 180.0,
+      "end": 184.06,
+      "text": "graph or facility you get, the lower the velocity will get and pulsatility as well."
+    },
+    {
+      "start": 185.34,
+      "end": 189.98,
+      "text": "Sinosis is quite common at the enastimosocyte, however it has been determined that the"
+    },
+    {
+      "start": 190.0,
+      "end": 194.94,
+      "text": "stenosis do not adversely affect the graft or fistella function, and no association"
+    },
+    {
+      "start": 194.94,
+      "end": 197.08,
+      "text": "between stenosis and graft exclusion has been found."
+    },
+    {
+      "start": 197.87,
+      "end": 199.97,
+      "text": "Acurate velocity measurements to define whether there is..."
+    },
+    {
+      "start": 200.0,
+      "end": 205.48,
+      "text": "stenosis can be a little difficult in fiscilus due to the tortuous vessels and variations in vein"
+    },
+    {
+      "start": 205.48,
+      "end": 209.47,
+      "text": "diameter. The criteria for stenosis in graphs 50% are greater."
+    },
+    {
+      "start": 210.13,
+      "end": 212.81,
+      "text": "our peaks of solid velocity greater than 400 centimeters per second,"
+    },
+    {
+      "start": 214.13,
+      "end": 216.73,
+      "text": "and a velocity ratio greater than 2 to 1 or 3 to 1."
+    },
+    {
+      "start": 217.84,
+      "end": 219.96,
+      "text": "The criteria for stenosis and fiscilus are..."
+    },
+    {
+      "start": 220.0,
+      "end": 224.54,
+      "text": "very similar so for the protocol you're going to want to use a linear probe high"
+    },
+    {
+      "start": 224.79,
+      "end": 228.41,
+      "text": "resolution anywhere from 7 to 12 megahertz will do. You're going to want to"
+    },
+    {
+      "start": 228.73,
+      "end": 229.97,
+      "text": "perform an uproar extremity"
+    },
+    {
+      "start": 230.0,
+      "end": 233.7,
+      "text": "vascular exam, you want to begin your assessment at the jugular or"
+    },
+    {
+      "start": 233.7,
+      "end": 237.4,
+      "text": "subclavian vein and work your way down to the fistula or graph site."
+    },
+    {
+      "start": 237.72,
+      "end": 239.97,
+      "text": "You're going to want to evaluate the arterio-"
+    },
+    {
+      "start": 240.03,
+      "end": 244.21,
+      "text": "inflow proximal and distal to the inestimosis. You want to assess the site of"
+    },
+    {
+      "start": 244.21,
+      "end": 248.54,
+      "text": "inestimosis. You want to scan the proximal, made and distal sections of the"
+    },
+    {
+      "start": 248.54,
+      "end": 249.98,
+      "text": "graft or fistula which is the"
+    },
+    {
+      "start": 250.0,
+      "end": 254.73,
+      "text": "outflow section, pay close attention to the previous puncture sites along the grafted"
+    },
+    {
+      "start": 254.73,
+      "end": 257.55,
+      "text": "fistillus to reveal out pseudo-aneurysms or collections."
+    },
+    {
+      "start": 258.47,
+      "end": 259.79,
+      "text": "Overall, you're going to want to assess for studios."
+    },
+    {
+      "start": 260.0,
+      "end": 266.21,
+      "text": "aneurysm, synosis, thrombosis, occlusion, surgical collections, and steel."
+    },
+    {
+      "start": 266.92,
+      "end": 269.92,
+      "text": "At each level you don't want to take transverse and sagittal, grayscale"
+    },
+    {
+      "start": 270.0,
+      "end": 274.9,
+      "text": "images, images with color doppler and images with color doppler and pulse wave"
+    },
+    {
+      "start": 274.9,
+      "end": 277.73,
+      "text": "doppler. That's pretty much it for this son of a"
+    },
+    {
+      "start": 277.73,
+      "end": 279.83,
+      "text": "quickie. There's going to be a blog post associated"
+    },
+    {
+      "start": 280.0,
+      "end": 283.7,
+      "text": "with this I'm going to go into a little bit more detail. I want to give a big"
+    },
+    {
+      "start": 283.7,
+      "end": 287.86,
+      "text": "thanks and a big shout out to Richard Gooday. He's the co-author of the"
+    },
+    {
+      "start": 287.86,
+      "end": 289.84,
+      "text": "blog post. You can follow him on Instagram."
+    }
+  ]
+}

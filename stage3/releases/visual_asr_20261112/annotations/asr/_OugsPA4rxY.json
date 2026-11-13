@@ -1,0 +1,188 @@
+{
+  "video_id": "_OugsPA4rxY",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/_OugsPA4rxY/asr.txt",
+  "segments": [
+    {
+      "start": 0.13,
+      "end": 3.75,
+      "text": "This is a step-by-step guide for the ultrasound guided thermal nerve block."
+    },
+    {
+      "start": 4.54,
+      "end": 8.68,
+      "text": "We use a nerve block needle so you can feel the two pops going through the fascia."
+    },
+    {
+      "start": 9.52,
+      "end": 9.98,
+      "text": "I also need..."
+    },
+    {
+      "start": 10.0,
+      "end": 19.240000000000002,
+      "text": "20cc of 0.5% view pivaking. Other Clorhex 18 sticks, sterile tiles, and a sterile ultrasound probe cover and gel."
+    },
+    {
+      "start": 20.22,
+      "end": 25.58,
+      "text": "scan the area just below the inguinal ligament to identify the vein, artery, and nerve."
+    },
+    {
+      "start": 26.9,
+      "end": 29.91,
+      "text": "The vein is identified in blue while the artery is"
+    },
+    {
+      "start": 30.0,
+      "end": 37.86,
+      "text": "red and finally the nerve is in yellow. The level of insertion of the needle is at the common"
+    },
+    {
+      "start": 37.86,
+      "end": 39.46,
+      "text": "femoral vein and artery."
+    },
+    {
+      "start": 40.0,
+      "end": 41.7,
+      "text": "where there are no branches seen."
+    },
+    {
+      "start": 43.22,
+      "end": 46.12,
+      "text": "Next, clean the area with the clerexidine sticks."
+    },
+    {
+      "start": 47.34,
+      "end": 49.94,
+      "text": "Step three, drape the area with the star."
+    },
+    {
+      "start": 49.94,
+      "end": 49.980000000000004,
+      "text": "I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry"
+    },
+    {
+      "start": 50.03,
+      "end": 59.71,
+      "text": "towels. Place the sterile ultrasound pro cover and gel as well as the sterile needle onto the sterile"
+    },
+    {
+      "start": 59.71,
+      "end": 59.85,
+      "text": "You"
+    },
+    {
+      "start": 60.93,
+      "end": 66.23,
+      "text": "draw up the 20cc's of 0.5% bup of a cane and hand this to the helper."
+    },
+    {
+      "start": 67.16,
+      "end": 68.84,
+      "text": "Now put on your sterile gloves."
+    },
+    {
+      "start": 70.51,
+      "end": 76.55,
+      "text": "Be sure that there is ultrasound gel on the transducer face and then apply the sterile"
+    },
+    {
+      "start": 76.55,
+      "end": 79.92,
+      "text": "Pro cover and the tubing to your helper."
+    },
+    {
+      "start": 80.0,
+      "end": 87.76,
+      "text": "to attach the syringe and have your helper flush the line. Use an in-plane technique"
+    },
+    {
+      "start": 87.76,
+      "end": 89.92,
+      "text": "when inserting the needle."
+    },
+    {
+      "start": 90.77,
+      "end": 94.62,
+      "text": "Needle should be inserted as close to the probe as possible."
+    },
+    {
+      "start": 95.62,
+      "end": 98.53999999999999,
+      "text": "The needle is often very difficult to visualize."
+    },
+    {
+      "start": 99.72,
+      "end": 99.98,
+      "text": "Ism."
+    },
+    {
+      "start": 100.1,
+      "end": 108.8,
+      "text": "that you use hydro-desection. Do this, ask your helper to aspirate, and then inject a little bit of"
+    },
+    {
+      "start": 110.29,
+      "end": 112.33,
+      "text": "you should see the tissues to stand."
+    },
+    {
+      "start": 113.61,
+      "end": 115.07,
+      "text": "By using the nerve block needle,"
+    },
+    {
+      "start": 115.59,
+      "end": 117.67,
+      "text": "you should also feel two pops,"
+    },
+    {
+      "start": 118.19,
+      "end": 119.96000000000001,
+      "text": "the first from the fas-"
+    },
+    {
+      "start": 120.06,
+      "end": 128.65,
+      "text": "Lada, followed by the fascia adiaca. Once you have felt two pops and you know the hydro"
+    },
+    {
+      "start": 128.65,
+      "end": 129.11,
+      "text": "Resection."
+    },
+    {
+      "start": 130.26,
+      "end": 136.84,
+      "text": "lateral to the artery and there is no blood upon aspiration, inject the remaining volume of the"
+    },
+    {
+      "start": 136.84,
+      "end": 139.67,
+      "text": "be pivaking. Right on the leg."
+    },
+    {
+      "start": 140.0,
+      "end": 147.09,
+      "text": "the time of the block, be provoking 0.5% 20ccs and be sure to chart in the record of treatment."
+    },
+    {
+      "start": 148.38,
+      "end": 149.98,
+      "text": "Be sure to watch for local..."
+    },
+    {
+      "start": 150.16,
+      "end": 158.37,
+      "text": "anesthetic systemic toxicity. These quick reference guides are located with all blocks and also be sure to know where"
+    },
+    {
+      "start": 158.37,
+      "end": 159.97,
+      "text": "Interlippet is stocked"
+    }
+  ]
+}

@@ -1,0 +1,663 @@
+{
+  "video_id": "jEeJ8otZC0c",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/jEeJ8otZC0c/asr.txt",
+  "segments": [
+    {
+      "start": 0.16,
+      "end": 2.18,
+      "text": "I recently realized that we haven't really been putting"
+    },
+    {
+      "start": 2.18,
+      "end": 6.94,
+      "text": "our five minute son of videos on our YouTube page, my bad."
+    },
+    {
+      "start": 7.26,
+      "end": 8.46,
+      "text": "We're gonna start putting them on there"
+    },
+    {
+      "start": 8.46,
+      "end": 9.68,
+      "text": "about every week."
+    },
+    {
+      "start": 10.03,
+      "end": 11.65,
+      "text": "to start building that library up,"
+    },
+    {
+      "start": 11.65,
+      "end": 15.75,
+      "text": "that section of our YouTube channel at Core Ultra Sound."
+    },
+    {
+      "start": 16.33,
+      "end": 18.27,
+      "text": "Now, some of these videos are gonna be a little bit"
+    },
+    {
+      "start": 18.27,
+      "end": 19.97,
+      "text": "on the old side, but if they..."
+    },
+    {
+      "start": 20.1,
+      "end": 24.0,
+      "text": "haven't been updated it either means that number one the data is still good in"
+    },
+    {
+      "start": 24.0,
+      "end": 28.16,
+      "text": "them or number two I just haven't had time to get around to it so we're slowly"
+    },
+    {
+      "start": 28.16,
+      "end": 29.9,
+      "text": "going through these and we're updating these blue"
+    },
+    {
+      "start": 30.0,
+      "end": 33.44,
+      "text": "We really want to share with you all those five minutes"
+    },
+    {
+      "start": 33.44,
+      "end": 34.64,
+      "text": "on a videos that we have."
+    },
+    {
+      "start": 35.18,
+      "end": 36.92,
+      "text": "Now briefly, if you don't know what they are,"
+    },
+    {
+      "start": 37.14,
+      "end": 38.66,
+      "text": "what our five minute son of videos are,"
+    },
+    {
+      "start": 38.66,
+      "end": 39.78,
+      "text": "are really quick."
+    },
+    {
+      "start": 40.42,
+      "end": 42.0,
+      "text": "and just short lectures around five minutes,"
+    },
+    {
+      "start": 42.14,
+      "end": 43.34,
+      "text": "most of them are five minutes or less,"
+    },
+    {
+      "start": 43.76,
+      "end": 45.16,
+      "text": "where we can just show you the basics"
+    },
+    {
+      "start": 45.16,
+      "end": 47.18,
+      "text": "of how to do a specific examination."
+    },
+    {
+      "start": 47.38,
+      "end": 49.58,
+      "text": "We're not gonna talk about every scenario,"
+    },
+    {
+      "start": 49.6,
+      "end": 49.98,
+      "text": "we're not gonna-"
+    },
+    {
+      "start": 50.0,
+      "end": 52.18,
+      "text": "talk about all of the evidence when to use it."
+    },
+    {
+      "start": 52.48,
+      "end": 54.98,
+      "text": "We're gonna assume that you already want to use this"
+    },
+    {
+      "start": 54.98,
+      "end": 57.84,
+      "text": "and you just want a refresher or a quick primer"
+    },
+    {
+      "start": 57.84,
+      "end": 59.98,
+      "text": "on specifically how to do that."
+    },
+    {
+      "start": 60.0,
+      "end": 64.87,
+      "text": "examination. So check out the video and let me know what you think. Hello, this is"
+    },
+    {
+      "start": 64.87,
+      "end": 68.79,
+      "text": "at Jacob Avila of Core Ultra Sound and in this five-minute sono I'm going"
+    },
+    {
+      "start": 68.79,
+      "end": 69.97,
+      "text": "to walk you through how do I say"
+    },
+    {
+      "start": 70.68,
+      "end": 74.9,
+      "text": "basic cardiac function. The probe of choice for this exam is going to be your"
+    },
+    {
+      "start": 74.9,
+      "end": 78.68,
+      "text": "phased ray transducer, although in a pinch the curvilinear transducer will work"
+    },
+    {
+      "start": 78.68,
+      "end": 79.68,
+      "text": "just as well."
+    },
+    {
+      "start": 80.35,
+      "end": 82.67,
+      "text": "Now, there are a lot of different views that you can use,"
+    },
+    {
+      "start": 82.77,
+      "end": 84.67,
+      "text": "but for the most part, the best view to start out with"
+    },
+    {
+      "start": 84.67,
+      "end": 87.35,
+      "text": "is the Apparisterinal Along-Axis view."
+    },
+    {
+      "start": 87.81,
+      "end": 89.79,
+      "text": "If you have your machine in the cardiology setting,"
+    },
+    {
+      "start": 89.81,
+      "end": 89.97,
+      "text": "which..."
+    },
+    {
+      "start": 90.03,
+      "end": 93.77,
+      "text": "means the probe marker is going to go on this on the right side of that wedge, the probe"
+    },
+    {
+      "start": 93.77,
+      "end": 97.91,
+      "text": "marker is going to go towards the right shoulder and you want to get your best peristerinal"
+    },
+    {
+      "start": 97.91,
+      "end": 98.93,
+      "text": "long axis view."
+    },
+    {
+      "start": 99.11,
+      "end": 99.97,
+      "text": "Let's walk through a little..."
+    },
+    {
+      "start": 100.0,
+      "end": 104.78,
+      "text": "bit of anatomy just to orient you. This right here is the Parational Long-Axis view."
+    },
+    {
+      "start": 104.96,
+      "end": 108.32,
+      "text": "We have the left atrium, the mitral valve, the left ventricle de aorta, and then up top"
+    },
+    {
+      "start": 108.32,
+      "end": 109.88,
+      "text": "here, we have the right ventricular."
+    },
+    {
+      "start": 110.44,
+      "end": 114.72,
+      "text": "outflow tracked. For assessing the ejection fraction, there's a lot of different methods"
+    },
+    {
+      "start": 114.72,
+      "end": 119.88,
+      "text": "you can use, you can use fractional shortening, you can use the Simpsons method of disks, you can use the eyeball."
+    },
+    {
+      "start": 120.0,
+      "end": 121.88,
+      "text": "method and you can use the EPSS."
+    },
+    {
+      "start": 122.38,
+      "end": 126.74,
+      "text": "What I usually do is I start off with the eyeball method, meaning I just look at this chamber"
+    },
+    {
+      "start": 126.74,
+      "end": 129.92,
+      "text": "right here and try and figure out if I think that the chamber size is changed."
+    },
+    {
+      "start": 130.0,
+      "end": 136.42,
+      "text": "about 50%. Using the eyeball method we can see that over here we have a good ejection fraction,"
+    },
+    {
+      "start": 136.62,
+      "end": 139.88,
+      "text": "about 50% a chamber size difference, and then over here we're seeing"
+    },
+    {
+      "start": 140.06,
+      "end": 147.3,
+      "text": "definitely not that, a significantly reduced amount of chamber volume change with every cardiac"
+    },
+    {
+      "start": 147.3,
+      "end": 148.06,
+      "text": "cycle."
+    },
+    {
+      "start": 148.46,
+      "end": 149.96,
+      "text": "If you're just starting out using the"
+    },
+    {
+      "start": 150.0,
+      "end": 154.98,
+      "text": "eyeball method might be a little bit tricky. Fortunately, there is a more quantitative"
+    },
+    {
+      "start": 154.98,
+      "end": 159.36,
+      "text": "measure you can use. You can do something called the EPSS, or the E-point"
+    },
+    {
+      "start": 159.36,
+      "end": 159.86,
+      "text": "set will separate."
+    },
+    {
+      "start": 160.0,
+      "end": 164.79,
+      "text": "I don't know if you know this, but the mitral valve right here actually opens twice in"
+    },
+    {
+      "start": 164.79,
+      "end": 165.59,
+      "text": "the cardiac cycle."
+    },
+    {
+      "start": 165.87,
+      "end": 169.93,
+      "text": "The E deflection of the mitral valve is when you have that pressure..."
+    },
+    {
+      "start": 170.0,
+      "end": 174.32,
+      "text": "difference between the h and the ventricle, and then the a deflection is when you have"
+    },
+    {
+      "start": 174.32,
+      "end": 175.28,
+      "text": "the atrial kick."
+    },
+    {
+      "start": 175.46,
+      "end": 179.06,
+      "text": "So it actually kind of opens or moves twice in that cardiac cycle, and you can actually"
+    },
+    {
+      "start": 179.06,
+      "end": 179.8,
+      "text": "measure how"
+    },
+    {
+      "start": 180.03,
+      "end": 185.55,
+      "text": "close the mitral valve gets to the septum to create a surrogate marker of that ejection"
+    },
+    {
+      "start": 185.55,
+      "end": 185.91,
+      "text": "fraction."
+    },
+    {
+      "start": 186.37,
+      "end": 189.91,
+      "text": "I'm going to take a brief pause here, just to let you know that all"
+    },
+    {
+      "start": 190.0,
+      "end": 195.52,
+      "text": "All of our content is on the core ultrasound.com website, that is ultrasound podcast, 5 minutes"
+    },
+    {
+      "start": 195.52,
+      "end": 199.9,
+      "text": "Sono, I'll try the week clip bank and we also have our courses"
+    },
+    {
+      "start": 200.0,
+      "end": 205.8,
+      "text": "page where we have the choral sound fundamentals and choral ultrasound question bank where you have"
+    },
+    {
+      "start": 205.8,
+      "end": 209.88,
+      "text": "3200 questions with feedback including at near"
+    },
+    {
+      "start": 210.0,
+      "end": 216.0,
+      "text": "video explaining the question. Check it out and back to your video. So what you do"
+    },
+    {
+      "start": 216.0,
+      "end": 219.98,
+      "text": "here is you use your M mode cursor and you place it just on the"
+    },
+    {
+      "start": 220.13,
+      "end": 226.29,
+      "text": "distal tips of that mitral valve, hit the M mode button again, and then you're going to get a waveform that looks like this."
+    },
+    {
+      "start": 226.67,
+      "end": 229.97,
+      "text": "When doing M mode, what you're doing is you're actually seeing the"
+    },
+    {
+      "start": 230.0,
+      "end": 236.1,
+      "text": "change in distance from the probe along a line over time. So right here we had"
+    },
+    {
+      "start": 236.1,
+      "end": 239.98,
+      "text": "the bar, the M mode bar, just over the tips of the mitral valve leaflet."
+    },
+    {
+      "start": 240.0,
+      "end": 244.26,
+      "text": "And we can see here how this mitral valve is moving relative to the septum."
+    },
+    {
+      "start": 244.58,
+      "end": 249.78,
+      "text": "And once you get this measurement, what we can do is we can actually measure that distance"
+    },
+    {
+      "start": 249.78,
+      "end": 249.98,
+      "text": "you"
+    },
+    {
+      "start": 250.16,
+      "end": 252.24,
+      "text": "between the septum and the E point right here."
+    },
+    {
+      "start": 252.82,
+      "end": 254.86,
+      "text": "Now if this distance is very small,"
+    },
+    {
+      "start": 254.86,
+      "end": 256.3,
+      "text": "meaning the mantra of opens up a bunch,"
+    },
+    {
+      "start": 256.32,
+      "end": 258.42,
+      "text": "you have a great ejection fraction."
+    },
+    {
+      "start": 258.66,
+      "end": 259.98,
+      "text": "And if this E point"
+    },
+    {
+      "start": 260.1,
+      "end": 264.38,
+      "text": "point septal saturation is big, it means the mitral valve isn't opening all that much,"
+    },
+    {
+      "start": 264.44,
+      "end": 265.96,
+      "text": "meaning a low ejection fraction."
+    },
+    {
+      "start": 266.56,
+      "end": 269.98,
+      "text": "These are the numbers that are often quoted, you have an EPSS graded"
+    },
+    {
+      "start": 270.0,
+      "end": 272.72,
+      "text": "than 10 millimeters, it is likely to be heart failure."
+    },
+    {
+      "start": 272.88,
+      "end": 275.52,
+      "text": "And then if you have a EPSS less than 7 millimeters"
+    },
+    {
+      "start": 276.44,
+      "end": 278.04,
+      "text": "unlikely to be heart failure."
+    },
+    {
+      "start": 278.26,
+      "end": 279.98,
+      "text": "In this clip, we see a very..."
+    },
+    {
+      "start": 280.13,
+      "end": 285.45,
+      "text": "high EPSS. The distance between the septum and the maximal excursion of that mitral valve"
+    },
+    {
+      "start": 285.45,
+      "end": 289.79,
+      "text": "is 1.67 centimeters, way above our 1 centimeter"
+    },
+    {
+      "start": 290.0,
+      "end": 295.92,
+      "text": "off for ruling in CHF. There's a gray area in between those two numbers, and what I do is,"
+    },
+    {
+      "start": 296.04,
+      "end": 299.92,
+      "text": "if I'm not sure I add on my lung examination to look"
+    },
+    {
+      "start": 300.1,
+      "end": 301.54,
+      "text": "for sonographic B lines."
+    },
+    {
+      "start": 301.8,
+      "end": 305.98,
+      "text": "I'll add my IVC examination to evaluate the CVP."
+    },
+    {
+      "start": 306.22,
+      "end": 309.66,
+      "text": "If my patient has a bunch of B lines and a high CVP,"
+    },
+    {
+      "start": 309.82,
+      "end": 309.98,
+      "text": "much..."
+    },
+    {
+      "start": 310.06,
+      "end": 312.74,
+      "text": "more likely to be heart failure if they have no B lines"
+    },
+    {
+      "start": 313.22,
+      "end": 317.04,
+      "text": "and a low CVP much less likely to be heart failure."
+    },
+    {
+      "start": 317.2,
+      "end": 319.1,
+      "text": "There's a few caveats for the EPSS,"
+    },
+    {
+      "start": 319.16,
+      "end": 319.86,
+      "text": "and those are things that,"
+    },
+    {
+      "start": 320.0,
+      "end": 325.18,
+      "text": "artificially will keep the mitral valve leaflet down irrespective of the ejection fraction."
+    },
+    {
+      "start": 325.62,
+      "end": 329.98,
+      "text": "The first one is this, this is some mitral stenosis which is tethering the ends of the"
+    },
+    {
+      "start": 330.03,
+      "end": 334.35,
+      "text": "natural valve leaflets, so we won't get an accurate EPSS reading there."
+    },
+    {
+      "start": 334.59,
+      "end": 336.23,
+      "text": "And the other thing is aortic regers."
+    },
+    {
+      "start": 336.31,
+      "end": 339.97,
+      "text": "That's that blue flame right there, artificially pushing down that..."
+    },
+    {
+      "start": 340.0,
+      "end": 346.0,
+      "text": "Which is irrespective of that ejection fraction while the personal long access view is probably the best view to use"
+    },
+    {
+      "start": 346.0,
+      "end": 349.58,
+      "text": "You can also use any view to look at it. This is a"
+    },
+    {
+      "start": 350.0,
+      "end": 354.14,
+      "text": "go forward, chain review, good ejection fraction, and over here we have a low ejection"
+    },
+    {
+      "start": 354.14,
+      "end": 354.42,
+      "text": "fraction."
+    },
+    {
+      "start": 355.12,
+      "end": 359.08,
+      "text": "This is a periscinal short axis view right here is the left ventricle, here is the left"
+    },
+    {
+      "start": 359.08,
+      "end": 359.52,
+      "text": "ventricle."
+    },
+    {
+      "start": 360.0,
+      "end": 362.0,
+      "text": "is a good ejection fraction, and this right here"
+    },
+    {
+      "start": 362.0,
+      "end": 363.6,
+      "text": "is a very low ejection fraction."
+    },
+    {
+      "start": 363.92,
+      "end": 365.88,
+      "text": "And then you can also use a sub-sive for it."
+    },
+    {
+      "start": 365.92,
+      "end": 367.12,
+      "text": "If you left side of the heart over here,"
+    },
+    {
+      "start": 367.36,
+      "end": 368.36,
+      "text": "right side of the heart over here."
+    },
+    {
+      "start": 368.6,
+      "end": 369.94,
+      "text": "This left heart is"
+    },
+    {
+      "start": 370.0,
+      "end": 373.14,
+      "text": "is very diminished. The heart itself is a bit tachycardic, but the chamber size"
+    },
+    {
+      "start": 373.14,
+      "end": 377.12,
+      "text": "really isn't changing all that much compared to what's going on on this side"
+    },
+    {
+      "start": 377.12,
+      "end": 379.7,
+      "text": "over here. To summarize, you are looking for an"
+    },
+    {
+      "start": 380.0,
+      "end": 381.54,
+      "text": "estimate of that global function."
+    },
+    {
+      "start": 381.8,
+      "end": 384.22,
+      "text": "Your personal long access view is probably the best one"
+    },
+    {
+      "start": 384.22,
+      "end": 385.32,
+      "text": "although any view will work,"
+    },
+    {
+      "start": 385.68,
+      "end": 388.96,
+      "text": "and your EPSS less than seven millimeters does a good job"
+    },
+    {
+      "start": 388.96,
+      "end": 389.98,
+      "text": "at ruling out-"
+    },
+    {
+      "start": 390.0,
+      "end": 394.8,
+      "text": "heart failure and an EPSS greater than 10mm does great at ruling it in."
+    },
+    {
+      "start": 395.6,
+      "end": 399.78,
+      "text": "Hopefully that was helpful for you all, I can't wait to hear from you soon and happy scanning."
+    }
+  ]
+}

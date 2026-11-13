@@ -1,0 +1,678 @@
+{
+  "video_id": "80dG97rGwMo",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/80dG97rGwMo/asr.txt",
+  "segments": [
+    {
+      "start": 0.38,
+      "end": 5.86,
+      "text": "In this video, we will review best practices in collecting patient samples for varicite"
+    },
+    {
+      "start": 5.86,
+      "end": 9.1,
+      "text": "a firmoth using ultrasound-guided fine needle aspiration."
+    },
+    {
+      "start": 15.57,
+      "end": 17.73,
+      "text": "We will show you how to prepare for the ephany,"
+    },
+    {
+      "start": 18.35,
+      "end": 19.89,
+      "text": "perform the procedure, and dip."
+    },
+    {
+      "start": 20.0,
+      "end": 27.1,
+      "text": "scenarios, indicate how to avoid commoners, and finally, review some key tips to a successful"
+    },
+    {
+      "start": 27.1,
+      "end": 27.76,
+      "text": "biopsy."
+    },
+    {
+      "start": 29.06,
+      "end": 29.52,
+      "text": "Please note."
+    },
+    {
+      "start": 30.22,
+      "end": 33.06,
+      "text": "that to perform the FNA safely and accurately,"
+    },
+    {
+      "start": 33.63,
+      "end": 35.61,
+      "text": "you should be trained in ultrasound anatomy"
+    },
+    {
+      "start": 35.61,
+      "end": 38.01,
+      "text": "of the thyroid and be thoroughly familiar"
+    },
+    {
+      "start": 38.01,
+      "end": 39.35,
+      "text": "with the FNA procedure."
+    },
+    {
+      "start": 40.51,
+      "end": 45.23,
+      "text": "Your guide will be Dr. Nugvora, Assistant Medical Director at Versight."
+    },
+    {
+      "start": 46.35,
+      "end": 49.93,
+      "text": "In his current role, he directs individual and institutional medical..."
+    },
+    {
+      "start": 50.06,
+      "end": 52.62,
+      "text": "education and physician training programs."
+    },
+    {
+      "start": 53.75,
+      "end": 56.77,
+      "text": "Dr. Vora has lectured on increasing diagnostic yield"
+    },
+    {
+      "start": 56.77,
+      "end": 59.93,
+      "text": "and improving techniques in ultrasound guided effinate."
+    },
+    {
+      "start": 60.06,
+      "end": 61.96,
+      "text": "at numerous medical institutions,"
+    },
+    {
+      "start": 62.22,
+      "end": 64.84,
+      "text": "including Harvard and Stanford Medical Schools."
+    },
+    {
+      "start": 66.48,
+      "end": 69.89,
+      "text": "I'm Anagvora, and the goal of this video is to review"
+    },
+    {
+      "start": 70.0,
+      "end": 72.35,
+      "text": "basic ultrasound guided by needle"
+    },
+    {
+      "start": 72.35,
+      "end": 74.73,
+      "text": "aspiration of the thyroid, focusing on"
+    },
+    {
+      "start": 74.73,
+      "end": 76.67,
+      "text": "proper technique and avoiding common"
+    },
+    {
+      "start": 76.67,
+      "end": 78.97,
+      "text": "errors. You can follow along with the"
+    },
+    {
+      "start": 78.97,
+      "end": 79.95,
+      "text": "accompanying fn"
+    },
+    {
+      "start": 80.0,
+      "end": 84.82,
+      "text": "tips and techniques booklet for additional information and photos of the topics discussed."
+    },
+    {
+      "start": 85.96,
+      "end": 89.96,
+      "text": "Before you get started, check that you have all the necessary supplies and have them..."
+    },
+    {
+      "start": 90.0,
+      "end": 92.22,
+      "text": "accessible to you when performing the procedure."
+    },
+    {
+      "start": 92.88,
+      "end": 94.2,
+      "text": "You'll need the following items."
+    },
+    {
+      "start": 95.33,
+      "end": 96.87,
+      "text": "A firmer requisition form,"
+    },
+    {
+      "start": 97.88,
+      "end": 99.84,
+      "text": "bidolite solution tubes, or slide."
+    },
+    {
+      "start": 100.06,
+      "end": 104.6,
+      "text": "for cytopathology, FNA-protect collection tubes"
+    },
+    {
+      "start": 104.6,
+      "end": 106.56,
+      "text": "for the gene expression classifier,"
+    },
+    {
+      "start": 107.57,
+      "end": 109.97,
+      "text": "nodule baggies, and patient-specific forms."
+    },
+    {
+      "start": 110.0,
+      "end": 118.04,
+      "text": "oil pouches. You will also need needles and syringes. Ultra sound probe cover. Ultra"
+    },
+    {
+      "start": 118.04,
+      "end": 119.94,
+      "text": "sound gel, antice."
+    },
+    {
+      "start": 120.03,
+      "end": 127.44,
+      "text": "septic solution and alcohol swabs, preparing for the procedure, basic thyroid ultrasound"
+    },
+    {
+      "start": 127.44,
+      "end": 128.08,
+      "text": "anatomy."
+    },
+    {
+      "start": 130.0,
+      "end": 133.58,
+      "text": "Thyroid can be visualized in transverse or longitudinal planes."
+    },
+    {
+      "start": 134.28,
+      "end": 138.0,
+      "text": "The following structures are readily identifiable in the transverse plane."
+    },
+    {
+      "start": 138.71,
+      "end": 139.97,
+      "text": "This includes the right lobe."
+    },
+    {
+      "start": 140.61,
+      "end": 148.51,
+      "text": "The left lobe isthmus, trachea, esophagus, right and left carotid arteries, longest"
+    },
+    {
+      "start": 148.51,
+      "end": 149.97,
+      "text": "coli, and sternum."
+    },
+    {
+      "start": 150.0,
+      "end": 155.81,
+      "text": "Clidomastoid muscles, patient and physician positioning."
+    },
+    {
+      "start": 157.64,
+      "end": 159.82,
+      "text": "Place the patient in a supine position."
+    },
+    {
+      "start": 160.13,
+      "end": 161.71,
+      "text": "with the neck slightly extended."
+    },
+    {
+      "start": 162.5,
+      "end": 165.86,
+      "text": "A pillow, if used, should not be placed under the head,"
+    },
+    {
+      "start": 166.31,
+      "end": 169.53,
+      "text": "which actually flexes the neck and limits exposure"
+    },
+    {
+      "start": 169.53,
+      "end": 169.97,
+      "text": "to the th-"
+    },
+    {
+      "start": 170.0,
+      "end": 175.7,
+      "text": "thyroid area. Instead, the pillow should be placed under the patient's shoulder, which"
+    },
+    {
+      "start": 175.7,
+      "end": 179.73,
+      "text": "extends the neck and allows full access to the area of interest."
+    },
+    {
+      "start": 182.34,
+      "end": 185.14,
+      "text": "It is preferable to stand to the patient's side,"
+    },
+    {
+      "start": 185.58,
+      "end": 187.1,
+      "text": "rather than the patient's head."
+    },
+    {
+      "start": 187.89,
+      "end": 189.97,
+      "text": "The ultrasound machine can then be placed up."
+    },
+    {
+      "start": 190.13,
+      "end": 199.82,
+      "text": "This position allows visualization of the ultrasound screen directly without turning your head and allows your hand movements to directly follow"
+    },
+    {
+      "start": 200.0,
+      "end": 206.05,
+      "text": "what is on the screen, the ultrasound machine has wheels and should be moved to the proper position."
+    },
+    {
+      "start": 210.45,
+      "end": 213.7,
+      "text": "In most cases, we recommend local anesthesia"
+    },
+    {
+      "start": 214.02,
+      "end": 217.24,
+      "text": "during the FNA biopsy as four separate passes"
+    },
+    {
+      "start": 217.24,
+      "end": 219.54,
+      "text": "are required for the affirma solution."
+    },
+    {
+      "start": 220.54,
+      "end": 226.69,
+      "text": "Anesthesia ensures patient comfort and more importantly cooperation during the procedure,"
+    },
+    {
+      "start": 227.27,
+      "end": 229.41,
+      "text": "increasing the likelihood of success."
+    },
+    {
+      "start": 231.66,
+      "end": 238.2,
+      "text": "Both anesthesia, as well as vasoconstriction, can be achieved with 1% lidocaine hydrochloride"
+    },
+    {
+      "start": 238.2,
+      "end": 239.58,
+      "text": "with epinephrine solution."
+    },
+    {
+      "start": 240.26,
+      "end": 243.8,
+      "text": "injected into the skin and superficial subcutaneous tissue."
+    },
+    {
+      "start": 244.4,
+      "end": 247.09,
+      "text": "The added epinephrine produces blanching of the skin,"
+    },
+    {
+      "start": 247.54,
+      "end": 249.96,
+      "text": "which allows visual confirmation of the site that it"
+    },
+    {
+      "start": 250.0,
+      "end": 256.93,
+      "text": "already anesthetized, essential for the subsequent passes, performing the procedure."
+    },
+    {
+      "start": 258.66,
+      "end": 259.98,
+      "text": "Identify and measure the number..."
+    },
+    {
+      "start": 260.0,
+      "end": 265.16,
+      "text": "module in three dimensions. Be sure to use settings that will result in optimal images."
+    },
+    {
+      "start": 266.01,
+      "end": 269.93,
+      "text": "Most current ultrasound machines may have a preset thyroid set."
+    },
+    {
+      "start": 271.18,
+      "end": 275.18,
+      "text": "Access for nodule vascularity with color or power Doppler."
+    },
+    {
+      "start": 277.18,
+      "end": 279.86,
+      "text": "There are two ways to insert the needle into the nodule."
+    },
+    {
+      "start": 280.45,
+      "end": 285.1,
+      "text": "parallel and perpendicular. In the parallel approach, the needle is introduced"
+    },
+    {
+      "start": 285.1,
+      "end": 289.97,
+      "text": "parallel to the long axis of the ultrasound transducer in the"
+    },
+    {
+      "start": 290.1,
+      "end": 295.67,
+      "text": "perpendicular approach, the needle is introduced perpendicular to the long axis of the transducer."
+    },
+    {
+      "start": 296.86,
+      "end": 299.88,
+      "text": "When the needle is introduced perpendicular to the transducer."
+    },
+    {
+      "start": 300.42,
+      "end": 309.97,
+      "text": "only a portion of the needle is visible. When the needle is introduced parallel to the ultrasound transducer, the int..."
+    },
+    {
+      "start": 310.06,
+      "end": 312.94,
+      "text": "higher needle remains visible throughout the procedure."
+    },
+    {
+      "start": 313.77,
+      "end": 316.97,
+      "text": "Though both techniques can be utilized to obtain a F&A sample,"
+    },
+    {
+      "start": 317.57,
+      "end": 319.97,
+      "text": "we recommend the parallel approach since it's..."
+    },
+    {
+      "start": 320.0,
+      "end": 324.66,
+      "text": "safer for the patient and reassures the physician that they have sampled the nodule in the area"
+    },
+    {
+      "start": 324.66,
+      "end": 329.84,
+      "text": "of concern. If the needle is not visualized when performing the F&A procedure."
+    },
+    {
+      "start": 330.35,
+      "end": 336.06,
+      "text": "Remember to reposition the transducer rather than the needle to see the image on the screen."
+    },
+    {
+      "start": 341.22,
+      "end": 345.04,
+      "text": "Use a 25 or 27 gauge needle for most thyroid FNAs."
+    },
+    {
+      "start": 345.6,
+      "end": 348.62,
+      "text": "Larger needles paradoxically increase the chances"
+    },
+    {
+      "start": 348.62,
+      "end": 349.92,
+      "text": "of a non-diagnostic sp-"
+    },
+    {
+      "start": 350.0,
+      "end": 357.35,
+      "text": "Since the larger diameter leads the dilution by excess blood, most experts recommend starting"
+    },
+    {
+      "start": 357.35,
+      "end": 359.97,
+      "text": "with the needle-only technique for solid non-s..."
+    },
+    {
+      "start": 360.0,
+      "end": 362.16,
+      "text": "to avoid excess bleeding."
+    },
+    {
+      "start": 362.93,
+      "end": 364.63,
+      "text": "One can always perform the procedure"
+    },
+    {
+      "start": 364.63,
+      "end": 366.69,
+      "text": "with aspiration on subsequent passes"
+    },
+    {
+      "start": 366.69,
+      "end": 368.06,
+      "text": "if unsuccessful."
+    },
+    {
+      "start": 370.0,
+      "end": 374.0,
+      "text": "into the nodule and move it back and forth to not apply suction."
+    },
+    {
+      "start": 375.8,
+      "end": 378.26,
+      "text": "Move the needle in the nodule for 3 to 5 seconds."
+    },
+    {
+      "start": 378.97,
+      "end": 379.97,
+      "text": "Move the needle back and forth."
+    },
+    {
+      "start": 380.0,
+      "end": 382.48,
+      "text": "or three times per second to get the most cells"
+    },
+    {
+      "start": 382.48,
+      "end": 383.73,
+      "text": "and the least blood."
+    },
+    {
+      "start": 390.35,
+      "end": 392.45,
+      "text": "Put the sample in the sample collection tube."
+    },
+    {
+      "start": 393.48,
+      "end": 395.8,
+      "text": "Use the aspiration technique in circumstances"
+    },
+    {
+      "start": 395.8,
+      "end": 398.9,
+      "text": "where non-aspiration produces inadequate samples."
+    },
+    {
+      "start": 399.5,
+      "end": 399.68,
+      "text": "Or,"
+    },
+    {
+      "start": 400.29,
+      "end": 406.54,
+      "text": "For cystic lesions, it is recommended that you utilize an aspiration gun to allow more"
+    },
+    {
+      "start": 406.54,
+      "end": 408.14,
+      "text": "more control during the procedure."
+    },
+    {
+      "start": 409.56,
+      "end": 409.98,
+      "text": "Advanced..."
+    },
+    {
+      "start": 410.0,
+      "end": 415.0,
+      "text": "the needle tip into the nodule and pull back on the syringe to apply suction of about"
+    },
+    {
+      "start": 415.0,
+      "end": 416.38,
+      "text": "2-3 cc's."
+    },
+    {
+      "start": 416.86,
+      "end": 419.98,
+      "text": "Maintain suction as you move the needle back and forth through"
+    },
+    {
+      "start": 420.0,
+      "end": 423.58,
+      "text": "three times per second to get the most cells and the least blood."
+    },
+    {
+      "start": 424.61,
+      "end": 426.91,
+      "text": "Gently release the suction and remove the needle."
+    },
+    {
+      "start": 431.25,
+      "end": 432.65,
+      "text": "with the sample in the collection tube."
+    },
+    {
+      "start": 442.18,
+      "end": 445.76,
+      "text": "When collecting specimens for the Aferma Thyroid FNA analysis,"
+    },
+    {
+      "start": 446.38,
+      "end": 449.74,
+      "text": "you will need to make four separate distinct passes, utilizing"
+    },
+    {
+      "start": 450.0,
+      "end": 455.69,
+      "text": "four different needles, two for the cytopathology analysis, and two for the gene expression"
+    },
+    {
+      "start": 455.69,
+      "end": 456.43,
+      "text": "classifier."
+    },
+    {
+      "start": 457.5,
+      "end": 459.98,
+      "text": "It is important to sample different areas of the nodule."
+    },
+    {
+      "start": 460.0,
+      "end": 460.92,
+      "text": "with each pass."
+    },
+    {
+      "start": 462.5,
+      "end": 462.66,
+      "text": "Yips."
+    },
+    {
+      "start": 463.0,
+      "end": 469.4,
+      "text": "For performing a successful ultrasound guided fine needle aspiration biopsy, knowledge of normal"
+    },
+    {
+      "start": 469.4,
+      "end": 469.98,
+      "text": "and abs..."
+    },
+    {
+      "start": 470.03,
+      "end": 472.35,
+      "text": "Normal thyroid ultrasound anatomy is essential."
+    },
+    {
+      "start": 473.6,
+      "end": 475.76,
+      "text": "Position yourself and your patient correctly."
+    },
+    {
+      "start": 476.88,
+      "end": 479.42,
+      "text": "Utilize anesthesia to keep your patients comfortable."
+    },
+    {
+      "start": 480.42,
+      "end": 483.34,
+      "text": "use the correct approach and technique for the given nodule,"
+    },
+    {
+      "start": 484.46,
+      "end": 489.61,
+      "text": "and transfer the F&A sample to the collection vials yourself rather than an assistant."
+    },
+    {
+      "start": 490.03,
+      "end": 492.01,
+      "text": "to avoid loss and degradation of the sample."
+    },
+    {
+      "start": 493.31,
+      "end": 494.41,
+      "text": "This is an important point,"
+    },
+    {
+      "start": 494.96,
+      "end": 496.04,
+      "text": "and worth mentioning again,"
+    },
+    {
+      "start": 496.52,
+      "end": 499.82,
+      "text": "as many samples are lost at this point due to the delay."
+    },
+    {
+      "start": 499.82,
+      "end": 499.98,
+      "text": "Thank you very much."
+    },
+    {
+      "start": 500.0,
+      "end": 505.72,
+      "text": "in transfer. It is recommended that as the physician, you maintain control and"
+    },
+    {
+      "start": 505.72,
+      "end": 509.73,
+      "text": "responsibility of the sample until it's safely placed in the"
+    },
+    {
+      "start": 510.0,
+      "end": 519.81,
+      "text": "transverse medium. I hope you found this video useful. Keep in mind that placing the needle into a nodule is not difficult, but obtaining a"
+    },
+    {
+      "start": 520.0,
+      "end": 526.13,
+      "text": "diagnostically useful sample requires us to focus on multiple and sometimes subtle details."
+    },
+    {
+      "start": 526.92,
+      "end": 529.32,
+      "text": "Feel free to contact us with any questions."
+    },
+    {
+      "start": 530.0,
+      "end": 530.32,
+      "text": "Thank you."
+    }
+  ]
+}

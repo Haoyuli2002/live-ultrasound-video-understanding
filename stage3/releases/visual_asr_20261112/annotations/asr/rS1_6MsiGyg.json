@@ -1,0 +1,428 @@
+{
+  "video_id": "rS1_6MsiGyg",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/rS1_6MsiGyg/asr.txt",
+  "segments": [
+    {
+      "start": 0.26,
+      "end": 4.56,
+      "text": "Lung Ultrasound was my introduction to Pocus and it blew me away with how powerful a tool"
+    },
+    {
+      "start": 4.56,
+      "end": 5.0,
+      "text": "it can be."
+    },
+    {
+      "start": 5.69,
+      "end": 8.91,
+      "text": "In this video, we'll walk through how to perform a Lung Ultrasound exam."
+    },
+    {
+      "start": 9.66,
+      "end": 9.88,
+      "text": "I'm Doc."
+    },
+    {
+      "start": 10.0,
+      "end": 19.2,
+      "text": "This video is an introduction to lung ultrasound."
+    },
+    {
+      "start": 20.1,
+      "end": 21.28,
+      "text": "Much like with everything focus,"
+    },
+    {
+      "start": 21.66,
+      "end": 23.14,
+      "text": "understanding how is the first step,"
+    },
+    {
+      "start": 23.4,
+      "end": 25.759999999999998,
+      "text": "but mastery requires supervised practice"
+    },
+    {
+      "start": 25.759999999999998,
+      "end": 29.22,
+      "text": "as you build the image generation and interpretation skills."
+    },
+    {
+      "start": 30.19,
+      "end": 34.45,
+      "text": "I hope you can use this video to help kickstart scanning with a local mentor as you build"
+    },
+    {
+      "start": 34.45,
+      "end": 35.05,
+      "text": "the skill set."
+    },
+    {
+      "start": 36.13,
+      "end": 39.97,
+      "text": "The scanning protocol I use and the one best supported by the evidence is the blue"
+    },
+    {
+      "start": 40.0,
+      "end": 45.82,
+      "text": "protocol. It was developed to help diagnose patients presenting with dysmia with an accuracy"
+    },
+    {
+      "start": 45.82,
+      "end": 49.86,
+      "text": "of 90% for coming to the right diagnosis. It easily"
+    },
+    {
+      "start": 50.0,
+      "end": 54.64,
+      "text": "The outperforms a chest x-ray takes only a couple of minutes to perform and exposes"
+    },
+    {
+      "start": 54.64,
+      "end": 56.72,
+      "text": "your patient to no ionizing radiation."
+    },
+    {
+      "start": 56.72,
+      "end": 59.83,
+      "text": "the blue protocol examines each log."
+    },
+    {
+      "start": 60.0,
+      "end": 65.22,
+      "text": "three points. I use a curvilinear probe set on the abdominal preset, though a"
+    },
+    {
+      "start": 65.22,
+      "end": 69.98,
+      "text": "phased array probe works as well. Many machines have a lung preset which you can"
+    },
+    {
+      "start": 70.0,
+      "end": 73.96,
+      "text": "news, though I found the abdominal preset on most machines provides clearer images."
+    },
+    {
+      "start": 74.98,
+      "end": 78.8,
+      "text": "Scanning is performed with a probe marker up towards the patient's head at all times."
+    },
+    {
+      "start": 79.4,
+      "end": 79.98,
+      "text": "For the upper..."
+    },
+    {
+      "start": 80.0,
+      "end": 83.58,
+      "text": "long zones, you want to set your depth around 10 centimeters, and the lower"
+    },
+    {
+      "start": 83.58,
+      "end": 88.5,
+      "text": "long zones typically require a depth of 15 centimeters. For obese patients, you"
+    },
+    {
+      "start": 88.5,
+      "end": 89.84,
+      "text": "will need to increase the depth."
+    },
+    {
+      "start": 90.06,
+      "end": 92.24,
+      "text": "account for the additional distance to the plurah."
+    },
+    {
+      "start": 93.88,
+      "end": 98.18,
+      "text": "Finding the right alignment with the plurah is critical to generating high-quality lung images."
+    },
+    {
+      "start": 98.74,
+      "end": 99.97,
+      "text": "To be able to..."
+    },
+    {
+      "start": 100.0,
+      "end": 104.66,
+      "text": "The best visualized pleural sliding in generate lung artifacts we need to have the probe perpendicular"
+    },
+    {
+      "start": 104.66,
+      "end": 105.48,
+      "text": "to the pleura."
+    },
+    {
+      "start": 106.28,
+      "end": 109.36,
+      "text": "The pleura is often not in the same plane as the chest wall."
+    },
+    {
+      "start": 110.0,
+      "end": 114.0,
+      "text": "You will need to tilt the pro back and forth until you brighten the pleural line and generate"
+    },
+    {
+      "start": 114.0,
+      "end": 115.18,
+      "text": "distinct lung artifacts."
+    },
+    {
+      "start": 115.94,
+      "end": 119.88,
+      "text": "This is where supervised practice is really important in learning how to optimize..."
+    },
+    {
+      "start": 120.0,
+      "end": 124.0,
+      "text": "the images to avoid missing findings from not properly generating the artifacts."
+    },
+    {
+      "start": 125.68,
+      "end": 128.96,
+      "text": "For the upper blue point, we place the probe two fingers below the"
+    },
+    {
+      "start": 128.96,
+      "end": 129.9,
+      "text": "clavicle in the mid-"
+    },
+    {
+      "start": 130.0,
+      "end": 133.86,
+      "text": "clavicular line, making sure the middle of our transducer is between the ribs."
+    },
+    {
+      "start": 134.77,
+      "end": 138.87,
+      "text": "We can then tilt side to side until we find perpendicular to the pleural surface and"
+    },
+    {
+      "start": 138.87,
+      "end": 139.73,
+      "text": "generate long artifacts."
+    },
+    {
+      "start": 140.0,
+      "end": 145.88,
+      "text": "The lower blue point sits at the anterior axillary line, one and a half handwits down from the"
+    },
+    {
+      "start": 145.88,
+      "end": 149.81,
+      "text": "Again, we want to ensure our probes in between the rim spaces"
+    },
+    {
+      "start": 150.0,
+      "end": 152.44,
+      "text": "as we tilt to find perpendicular to the plurup."
+    },
+    {
+      "start": 154.2,
+      "end": 159.18,
+      "text": "The plops point, the awkwardly named Lois Lungzone, is described as the intersection of the"
+    },
+    {
+      "start": 159.18,
+      "end": 159.98,
+      "text": "posterior..."
+    },
+    {
+      "start": 160.0,
+      "end": 163.38,
+      "text": "auxiliary line and a line connecting to the other two blue points."
+    },
+    {
+      "start": 164.56,
+      "end": 168.62,
+      "text": "Pragmatically, as we're looking to find the base of the lung where it meets the diaphragm,"
+    },
+    {
+      "start": 168.86,
+      "end": 169.96,
+      "text": "we want to make sure we're..."
+    },
+    {
+      "start": 170.0,
+      "end": 175.91,
+      "text": "far back around the chest as we can be and that we see the diaphragm. It can be a bit tricky"
+    },
+    {
+      "start": 175.91,
+      "end": 179.29,
+      "text": "to find the diaphragm, as it is obscured by a well-arided lung."
+    },
+    {
+      "start": 180.26,
+      "end": 182.32,
+      "text": "If I'm having trouble finding the diaphragm,"
+    },
+    {
+      "start": 182.63,
+      "end": 185.77,
+      "text": "I move the probe inferiorly until I find a solid organ"
+    },
+    {
+      "start": 185.77,
+      "end": 187.67,
+      "text": "and then drop the tail of the probe"
+    },
+    {
+      "start": 187.67,
+      "end": 188.85,
+      "text": "to look up at the lung."
+    },
+    {
+      "start": 189.76,
+      "end": 189.94,
+      "text": "It there."
+    },
+    {
+      "start": 190.0,
+      "end": 195.98,
+      "text": "move up one or two rib spaces as required. What we're trying to avoid is either an image that's"
+    },
+    {
+      "start": 195.98,
+      "end": 199.97,
+      "text": "all solid organ with a hint of lung, or a lung view with no die-"
+    },
+    {
+      "start": 200.0,
+      "end": 205.27,
+      "text": "frame or solid organ to confirm that we're truly at the base. Sometimes we have to"
+    },
+    {
+      "start": 205.27,
+      "end": 209.89,
+      "text": "compromise and accept a rib shadow in the middle of our field if the ideal window just"
+    },
+    {
+      "start": 210.0,
+      "end": 216.03,
+      "text": "is not available to us. As we see in this clip, a rip shadow is right over top of where we'd"
+    },
+    {
+      "start": 216.03,
+      "end": 219.97,
+      "text": "like to see the diaphragm, but as we're seeing lung on the left side of the screen..."
+    },
+    {
+      "start": 220.0,
+      "end": 223.98,
+      "text": "and solid organ on the right side of the screen, we know we're looking at the base of the lung."
+    },
+    {
+      "start": 225.5,
+      "end": 229.9,
+      "text": "While the hardest to generate, flaps point is the highest yield for finding lung pathology."
+    },
+    {
+      "start": 230.03,
+      "end": 235.61,
+      "text": "Both consolidations and pleural effusions are more likely to be found posteriorly, so"
+    },
+    {
+      "start": 235.61,
+      "end": 239.97,
+      "text": "it's really important, particularly in supine patients, to get the pro..."
+    },
+    {
+      "start": 240.0,
+      "end": 245.35,
+      "text": "as far around the chest as possible. Here's a good example of a patient I scant,"
+    },
+    {
+      "start": 245.51,
+      "end": 249.98,
+      "text": "who was ventilated and on quite a bit of oxygen. As you can see, the lower..."
+    },
+    {
+      "start": 250.0,
+      "end": 254.5,
+      "text": "points not all that remarkable, but the plebs point shows it fairly dense consolidation"
+    },
+    {
+      "start": 254.5,
+      "end": 255.48,
+      "text": "from pneumonia."
+    },
+    {
+      "start": 256.22,
+      "end": 259.92,
+      "text": "There was significant shunting through the consolidation that explained the hypoxemia."
+    },
+    {
+      "start": 260.74,
+      "end": 263.92,
+      "text": "Interestingly, the pneumonia did not show up on chest x-ray."
+    },
+    {
+      "start": 264.43,
+      "end": 269.73,
+      "text": "As I said, lung ultrasound outperforms chest x-ray making it a valuable tool in our toolbox."
+    },
+    {
+      "start": 270.74,
+      "end": 273.3,
+      "text": "That's the basics of performing a lung ultrasound exam."
+    },
+    {
+      "start": 274.24,
+      "end": 276.36,
+      "text": "Make sure you check out my videos on lung sliding,"
+    },
+    {
+      "start": 276.72,
+      "end": 279.56,
+      "text": "the four basic lung ultrasound artifact patterns."
+    },
+    {
+      "start": 280.1,
+      "end": 282.5,
+      "text": "had had a differentiate pneumonia from aloectasis."
+    },
+    {
+      "start": 284.15,
+      "end": 286.23,
+      "text": "It takes some practice to refine your images,"
+    },
+    {
+      "start": 286.78,
+      "end": 287.94,
+      "text": "but with a short-learning curve,"
+    },
+    {
+      "start": 288.04,
+      "end": 289.84,
+      "text": "you can be using the skill in no time."
+    },
+    {
+      "start": 290.83,
+      "end": 293.51,
+      "text": "If this is new to you, find a local expert or colleague"
+    },
+    {
+      "start": 293.51,
+      "end": 294.89,
+      "text": "who's comfortable with lung ultrasound"
+    },
+    {
+      "start": 294.89,
+      "end": 296.89,
+      "text": "to help guide you through the learning process."
+    },
+    {
+      "start": 297.9,
+      "end": 299.18,
+      "text": "I hope you found this video helpful."
+    },
+    {
+      "start": 299.5,
+      "end": 299.92,
+      "text": "Now get up."
+    }
+  ]
+}

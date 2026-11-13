@@ -1,0 +1,593 @@
+{
+  "video_id": "lREUPXCpK8Y",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/lREUPXCpK8Y/asr.txt",
+  "segments": [
+    {
+      "start": 15.15,
+      "end": 19.81,
+      "text": "Hello, my name is Phil Pereira and I'm the emergency ultrasound coordinator at the New York Presbyterian Hospital."
+    },
+    {
+      "start": 20.0,
+      "end": 23.9,
+      "text": "in New York City, and welcome to Soundbytes Cases."
+    },
+    {
+      "start": 25.19,
+      "end": 29.09,
+      "text": "In today's module we'll look at the use of bedside ultrasound to help us place peripheral"
+    },
+    {
+      "start": 29.09,
+      "end": 29.97,
+      "text": "IVs."
+    },
+    {
+      "start": 30.32,
+      "end": 34.62,
+      "text": "Specifically, we'll look at ultrasound guidance for cannulation of deep arm veins."
+    },
+    {
+      "start": 35.43,
+      "end": 39.57,
+      "text": "Ultrasound can allow us to cannulate non-palpable arm veins, which have traditionally been"
+    },
+    {
+      "start": 39.57,
+      "end": 39.81,
+      "text": "off."
+    },
+    {
+      "start": 40.0,
+      "end": 42.6,
+      "text": "limits using traditional palpation techniques."
+    },
+    {
+      "start": 43.32,
+      "end": 45.34,
+      "text": "Thus, we can avoid central venous access"
+    },
+    {
+      "start": 45.34,
+      "end": 47.3,
+      "text": "and those with poor traditional access"
+    },
+    {
+      "start": 47.3,
+      "end": 49.88,
+      "text": "in whom we can get a peripheral IV using ultrasound"
+    },
+    {
+      "start": 50.0,
+      "end": 50.36,
+      "text": "ultrasound."
+    },
+    {
+      "start": 50.92,
+      "end": 55.28,
+      "text": "Ultrasound allows precise determination of vascular anatomy prior to a puncture attempt,"
+    },
+    {
+      "start": 55.62,
+      "end": 58.86,
+      "text": "and there's been a number of research studies that have shown a decrease in number of"
+    },
+    {
+      "start": 58.86,
+      "end": 59.98,
+      "text": "and time to..."
+    },
+    {
+      "start": 60.0,
+      "end": 61.98,
+      "text": "successful cannulation using ultrasound."
+    },
+    {
+      "start": 63.14,
+      "end": 64.56,
+      "text": "Here's an illustration shown in the anatomy"
+    },
+    {
+      "start": 64.56,
+      "end": 67.02,
+      "text": "of the arm veins, a long axis view to the right,"
+    },
+    {
+      "start": 67.22,
+      "end": 68.78,
+      "text": "and a short axis view to the left."
+    },
+    {
+      "start": 69.44,
+      "end": 69.82,
+      "text": "Note here,"
+    },
+    {
+      "start": 70.0,
+      "end": 74.42,
+      "text": "On the long axis view, the brachial artery running down the arm, and adjacent to the brachial"
+    },
+    {
+      "start": 74.42,
+      "end": 76.4,
+      "text": "artery we can see here, the brachial vein."
+    },
+    {
+      "start": 77.06,
+      "end": 79.98,
+      "text": "Notice that the brachial vein is composed of two m-"
+    },
+    {
+      "start": 80.0,
+      "end": 84.78,
+      "text": "major veins. The bacillic vein, which is the larger vein, located more superficially"
+    },
+    {
+      "start": 84.78,
+      "end": 89.34,
+      "text": "and medially, and the deep brachial veins found adjacent to the brachial artery."
+    },
+    {
+      "start": 90.0,
+      "end": 95.08,
+      "text": "deeper and more lateral position on the arm. Let's look at the short axis view and here"
+    },
+    {
+      "start": 95.08,
+      "end": 99.98,
+      "text": "we can see well the brachial complex, the brachial artery, surrounded by two deep brachial"
+    },
+    {
+      "start": 100.0,
+      "end": 105.1,
+      "text": "veins here, and the more superficial and medial bacillic vein, which is really the preferred"
+    },
+    {
+      "start": 105.1,
+      "end": 107.64,
+      "text": "target for a deep ultrasound guided IV."
+    },
+    {
+      "start": 108.46,
+      "end": 109.98,
+      "text": "Note the median nerve lying on t-"
+    },
+    {
+      "start": 110.03,
+      "end": 114.35,
+      "text": "of the deep-breakable vein, which must be avoided during a puncture attempt on the structure."
+    },
+    {
+      "start": 115.69,
+      "end": 119.91,
+      "text": "Here's a picture showing the surface anatomy of the veins of the upper arm. Notice here that the"
+    },
+    {
+      "start": 120.0,
+      "end": 123.2,
+      "text": "in a more medial position on the patient's arm,"
+    },
+    {
+      "start": 123.62,
+      "end": 125.18,
+      "text": "and the brachial vein complex,"
+    },
+    {
+      "start": 125.2,
+      "end": 128.62,
+      "text": "which would be located more laterally on the patient's arm."
+    },
+    {
+      "start": 129.3,
+      "end": 129.98,
+      "text": "And these are the..."
+    },
+    {
+      "start": 130.0,
+      "end": 135.04,
+      "text": "over which we should place the probe in order to inspect the veins of the upper arm."
+    },
+    {
+      "start": 135.87,
+      "end": 139.97,
+      "text": "Here are the orientations in which we can place the probe to inspect a vein for vascular..."
+    },
+    {
+      "start": 140.56,
+      "end": 145.94,
+      "text": "We see the short axis view to the left, and notice that we're placing the probe perpendicular to the vein,"
+    },
+    {
+      "start": 146.5,
+      "end": 149.88,
+      "text": "and note that the resulting ultrasound image of the vein will appear as a circle."
+    },
+    {
+      "start": 150.0,
+      "end": 153.74,
+      "text": "As the vascular structure, the vein here will be cut and done."
+    },
+    {
+      "start": 154.64,
+      "end": 159.98,
+      "text": "Note the long axis view to the right in which the probe is placed in a longitudinal manner along the course..."
+    },
+    {
+      "start": 160.0,
+      "end": 164.58,
+      "text": "of the vein, and note the resulting image of the vein which appears as a tubular structure"
+    },
+    {
+      "start": 164.58,
+      "end": 165.78,
+      "text": "on the ultrasound screen."
+    },
+    {
+      "start": 166.96,
+      "end": 169.96,
+      "text": "Here's the high-frequency linear type array probe that we'll be using for VASC."
+    },
+    {
+      "start": 170.03,
+      "end": 173.87,
+      "text": "and that line on the side is the indicator marker on the probe."
+    },
+    {
+      "start": 175.39,
+      "end": 179.03,
+      "text": "Here's the high frequency linear type array probe placed on the patient's upper arm."
+    },
+    {
+      "start": 179.33,
+      "end": 179.93,
+      "text": "Notice here"
+    },
+    {
+      "start": 180.0,
+      "end": 183.16,
+      "text": "that it's placed in a short axis or side-to-side configuration."
+    },
+    {
+      "start": 184.14,
+      "end": 187.48,
+      "text": "Here we have the probe positioned over the more medial but still like vein."
+    },
+    {
+      "start": 188.93,
+      "end": 189.97,
+      "text": "Notice also that the probe..."
+    },
+    {
+      "start": 190.06,
+      "end": 194.24,
+      "text": "marker here is towards our left as we stand in front of the patient, and the reason for"
+    },
+    {
+      "start": 194.24,
+      "end": 198.68,
+      "text": "that is note on the screen that the indicator dot is also located here to the left."
+    },
+    {
+      "start": 199.46,
+      "end": 199.66,
+      "text": "Therefore,"
+    },
+    {
+      "start": 200.0,
+      "end": 203.22,
+      "text": "left on the probe lines up with left on the screen."
+    },
+    {
+      "start": 204.56,
+      "end": 206.7,
+      "text": "So now that we know the proper configuration of the probe"
+    },
+    {
+      "start": 206.7,
+      "end": 208.76,
+      "text": "in the short axis view, let's take a look"
+    },
+    {
+      "start": 208.76,
+      "end": 209.96,
+      "text": "at a typical appearance of..."
+    },
+    {
+      "start": 210.03,
+      "end": 211.85,
+      "text": "vascular structures cut and on."
+    },
+    {
+      "start": 212.82,
+      "end": 215.04,
+      "text": "Here we have the pro-positioned over the brachial complex,"
+    },
+    {
+      "start": 215.3,
+      "end": 217.34,
+      "text": "and we see here the central brachial artery"
+    },
+    {
+      "start": 217.34,
+      "end": 219.66,
+      "text": "surrounded by two deep brachial veins."
+    },
+    {
+      "start": 220.0,
+      "end": 225.34,
+      "text": "So let's put that into video play here, and notice with compression that both of the veins"
+    },
+    {
+      "start": 225.34,
+      "end": 229.96,
+      "text": "compress completely, helping us differentiate venous structures from the arteries..."
+    },
+    {
+      "start": 230.0,
+      "end": 235.44,
+      "text": "in the center. And notice that the artery has less distensible walls and stays open even"
+    },
+    {
+      "start": 235.44,
+      "end": 239.96,
+      "text": "as we can press down with the probe. We can further differentiate..."
+    },
+    {
+      "start": 240.0,
+      "end": 245.46,
+      "text": "vascular structures by applying color Doppler flow. Notice here as we apply Doppler that"
+    },
+    {
+      "start": 245.46,
+      "end": 248.64,
+      "text": "we see arterial pulsations in the central brachial artery."
+    },
+    {
+      "start": 249.42,
+      "end": 249.96,
+      "text": "However, notice..."
+    },
+    {
+      "start": 250.0,
+      "end": 255.08,
+      "text": "the absence here of any flow within the deep-breakable veins, and that's because of the sluggish flow within"
+    },
+    {
+      "start": 255.08,
+      "end": 259.84,
+      "text": "those two vascular structures as compared to the brisk arterial flow in the central"
+    },
+    {
+      "start": 260.0,
+      "end": 267.96,
+      "text": "So putting it all together using Doppler flow and applying compression, notice here again"
+    },
+    {
+      "start": 267.96,
+      "end": 269.96,
+      "text": "that the brachial artery in the center stays..."
+    },
+    {
+      "start": 270.0,
+      "end": 275.28,
+      "text": "is open and has brisk arterial pulsations and notice that the two flanking deep"
+    },
+    {
+      "start": 275.28,
+      "end": 279.98,
+      "text": "break your veins, compress completely, and have a lack of vascular flow with dots."
+    },
+    {
+      "start": 280.0,
+      "end": 281.2,
+      "text": "popular interrogation."
+    },
+    {
+      "start": 282.47,
+      "end": 286.43,
+      "text": "Now let's look at a video clip that shows all of the veins of the upper arm in relation"
+    },
+    {
+      "start": 286.43,
+      "end": 289.98,
+      "text": "to one another, mediales to the right and laterals to the"
+    },
+    {
+      "start": 290.06,
+      "end": 292.96,
+      "text": "left. Here we see the larger and more superficial"
+    },
+    {
+      "start": 292.96,
+      "end": 296.56,
+      "text": "bacillic vein, more medial and superficial to the"
+    },
+    {
+      "start": 296.56,
+      "end": 299.36,
+      "text": "brachial complex, which is located here to the left."
+    },
+    {
+      "start": 300.0,
+      "end": 305.07,
+      "text": "the central brachial artery and two flanking deep brachial veins, and this patient the"
+    },
+    {
+      "start": 305.07,
+      "end": 308.95,
+      "text": "bacillic vein would be the preferred target for placement of a deep arm IV."
+    },
+    {
+      "start": 310.0,
+      "end": 313.68,
+      "text": "Here's a different patient, again we're looking at the relation of the bacillic vein to"
+    },
+    {
+      "start": 313.68,
+      "end": 317.92,
+      "text": "the brachial complex, medials to the left, and laddles to the right."
+    },
+    {
+      "start": 318.4,
+      "end": 319.98,
+      "text": "We see here the superficial b..."
+    },
+    {
+      "start": 320.0,
+      "end": 322.34,
+      "text": "acylic vein and the deeper brachial complex."
+    },
+    {
+      "start": 323.0,
+      "end": 327.3,
+      "text": "Notice we apply pressure that all of the venous structures, the acylic vein and the deep"
+    },
+    {
+      "start": 327.3,
+      "end": 329.48,
+      "text": "Brachial veins all compress completely."
+    },
+    {
+      "start": 330.06,
+      "end": 333.62,
+      "text": "us differentiate venus from arterial vascular structures."
+    },
+    {
+      "start": 334.88,
+      "end": 339.34,
+      "text": "Here we are applying Doppler flow and again we can differentiate the brachial artery by"
+    },
+    {
+      "start": 339.34,
+      "end": 339.78,
+      "text": "is posted"
+    },
+    {
+      "start": 340.0,
+      "end": 345.3,
+      "text": "consistent with arterial flow and note the lack of significant flow within the venous structures"
+    },
+    {
+      "start": 345.3,
+      "end": 346.9,
+      "text": "specifically the bacillic vein."
+    },
+    {
+      "start": 347.22,
+      "end": 349.79,
+      "text": "Here's the high frequency linear type array probe."
+    },
+    {
+      "start": 350.26,
+      "end": 352.72,
+      "text": "in a longitudinal or long axis orientation"
+    },
+    {
+      "start": 352.72,
+      "end": 354.26,
+      "text": "over the patient's upper arm."
+    },
+    {
+      "start": 354.54,
+      "end": 356.54,
+      "text": "Here it's located over the more medial,"
+    },
+    {
+      "start": 356.74,
+      "end": 359.73,
+      "text": "bacillic vein in this orientation."
+    },
+    {
+      "start": 360.0,
+      "end": 364.4,
+      "text": "have the probe marker going distally, and this helps us line up the probe with regard to"
+    },
+    {
+      "start": 364.4,
+      "end": 364.94,
+      "text": "the screen."
+    },
+    {
+      "start": 365.87,
+      "end": 369.29,
+      "text": "Notice the screen indicator dot here is located towards the left."
+    },
+    {
+      "start": 369.29,
+      "end": 369.97,
+      "text": "Therefore..."
+    },
+    {
+      "start": 370.0,
+      "end": 373.8,
+      "text": "or distal on the screen would be over towards the left"
+    },
+    {
+      "start": 373.8,
+      "end": 378.0,
+      "text": "and proximal on the screen would be located over towards the right."
+    },
+    {
+      "start": 379.15,
+      "end": 379.93,
+      "text": "Here's a typical appear."
+    },
+    {
+      "start": 380.0,
+      "end": 385.84,
+      "text": "of a venous structure cut in a longitudinal or long axis orientation. Notice here that the vein"
+    },
+    {
+      "start": 385.84,
+      "end": 389.98,
+      "text": "has more of a tubular appearance on the screen and that the flow of blood here is"
+    },
+    {
+      "start": 390.0,
+      "end": 394.68,
+      "text": "from the left, which is distal on the vein, towards the right, which is proximal on the"
+    },
+    {
+      "start": 394.68,
+      "end": 394.96,
+      "text": "vein."
+    },
+    {
+      "start": 394.96,
+      "end": 399.16,
+      "text": "Looking at long-axis gives complementary information about the vein."
+    },
+    {
+      "start": 400.45,
+      "end": 405.03,
+      "text": "So thanks for tuning in to part one of ultrasound guided peripheral IV insertion."
+    },
+    {
+      "start": 405.85,
+      "end": 409.97,
+      "text": "As we mentioned, ultrasound can be very helpful in identifying deeper and non-palps."
+    },
+    {
+      "start": 410.0,
+      "end": 413.74,
+      "text": "available veins that can still allow placement of an intravenous catheter."
+    },
+    {
+      "start": 414.36,
+      "end": 419.96,
+      "text": "We'll be looking at the vein in both short and long-axis views to determine the anatomy prior to a puncture."
+    },
+    {
+      "start": 420.68,
+      "end": 424.92,
+      "text": "And now that we have a good sense in terms of how to look at a vein in both short and"
+    },
+    {
+      "start": 424.92,
+      "end": 429.58,
+      "text": "long axis, we're ready to move directly to learning how to canulate the vein using ultrasound."
+    }
+  ]
+}

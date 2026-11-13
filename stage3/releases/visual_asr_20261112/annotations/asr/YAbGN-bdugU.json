@@ -1,0 +1,178 @@
+{
+  "video_id": "YAbGN-bdugU",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/YAbGN-bdugU/asr.txt",
+  "segments": [
+    {
+      "start": 3.96,
+      "end": 9.22,
+      "text": "This video will review how to perform an ultrasound guided tibial nerve block for regional anesthesia."
+    },
+    {
+      "start": 10.45,
+      "end": 14.23,
+      "text": "The tibial nerve block provides regional anesthesia primarily to the bottom of the foot."
+    },
+    {
+      "start": 14.9,
+      "end": 18.0,
+      "text": "This is especially useful in the emergency department for pain control"
+    },
+    {
+      "start": 18.58,
+      "end": 21.22,
+      "text": "or for foreign body exploration of the bottom of the foot."
+    },
+    {
+      "start": 21.91,
+      "end": 24.21,
+      "text": "It can be used for calcaneal fracture pain control."
+    },
+    {
+      "start": 25.69,
+      "end": 29.23,
+      "text": "These are the essential elements to perform an ultrasound guided tibial nerve block."
+    },
+    {
+      "start": 29.8,
+      "end": 31.88,
+      "text": "Obtain consent from your patient before the procedure."
+    },
+    {
+      "start": 31.88,
+      "end": 38.06,
+      "text": "Parton and risks include bleeding and pain, infection, damage to local structures, especially"
+    },
+    {
+      "start": 38.06,
+      "end": 39.46,
+      "text": "the tubular nerve and its branches."
+    },
+    {
+      "start": 41.17,
+      "end": 44.41,
+      "text": "Position the patient's supine and externally rotate their leg."
+    },
+    {
+      "start": 44.89,
+      "end": 49.39,
+      "text": "You may support their leg with a blanket, a rolled-up towel, or a pillow underneath their"
+    },
+    {
+      "start": 49.39,
+      "end": 49.59,
+      "text": "knee."
+    },
+    {
+      "start": 50.37,
+      "end": 54.93,
+      "text": "Stand on the posterior aspect of their leg with the ultrasound across from you."
+    },
+    {
+      "start": 56.52,
+      "end": 61.1,
+      "text": "The tubular nerve is found on the medial aspect of the lower extremity, identify the medial"
+    },
+    {
+      "start": 61.1,
+      "end": 67.36,
+      "text": "maliolis. Place the ultrasound probe just proximal to the medial maliolis and a short axis orientation."
+    },
+    {
+      "start": 68.32,
+      "end": 73.7,
+      "text": "Slide the probe's cephalad and identify several structures, including the tibial artery and vein."
+    },
+    {
+      "start": 74.55,
+      "end": 78.75,
+      "text": "The bundle of grapes that forms the tibial nerve is posterior to these vascular structures."
+    },
+    {
+      "start": 79.52,
+      "end": 83.78,
+      "text": "You can utilize color doppler ultrasound to identify the vascular structures."
+    },
+    {
+      "start": 84.78,
+      "end": 89.12,
+      "text": "Draw up your anesthetic of choice using the 18 gauge needle into your preferred syringe."
+    },
+    {
+      "start": 89.12,
+      "end": 92.36,
+      "text": "We generally recommend about 10ccs of anesthetic."
+    },
+    {
+      "start": 93.04,
+      "end": 95.62,
+      "text": "Prepare the skin over your intended site with chlorhexanine."
+    },
+    {
+      "start": 96.45,
+      "end": 99.73,
+      "text": "Cover the ultrasound with a sterile probe cover and apply sterile gel."
+    },
+    {
+      "start": 101.24,
+      "end": 107.16,
+      "text": "Identify the tibial nerve as described before by placing the linear ultrasound probe short axis to the nerve."
+    },
+    {
+      "start": 108.22,
+      "end": 111.22,
+      "text": "Insert the blocking needle from posterior to medial."
+    },
+    {
+      "start": 111.88,
+      "end": 113.9,
+      "text": "Focus on getting the needle underneath the probe."
+    },
+    {
+      "start": 114.36,
+      "end": 117.92,
+      "text": "You don't need to look at the ultrasound screen, just get the needle underneath the probe"
+    },
+    {
+      "start": 117.92,
+      "end": 121.0,
+      "text": "and then visualize the needle tip on the ultrasound screen."
+    },
+    {
+      "start": 121.75,
+      "end": 126.05,
+      "text": "Advanced the ultrasound needle above the nerve and inject your anesthetic."
+    },
+    {
+      "start": 126.7,
+      "end": 131.3,
+      "text": "Visualize the needle tip the entire time and ensure that you are not injecting directly into"
+    },
+    {
+      "start": 131.3,
+      "end": 131.7,
+      "text": "the nerve."
+    },
+    {
+      "start": 132.44,
+      "end": 138.93,
+      "text": "Aim to inject above and below the nerve, which creates a halo effect, avoid injecting directly"
+    },
+    {
+      "start": 138.93,
+      "end": 143.91,
+      "text": "into the tubular artery or the vein, allow 10 to 15 minutes for the anesthetic to take"
+    },
+    {
+      "start": 143.91,
+      "end": 150.19,
+      "text": "effect and monitor for signs of local anesthetic toxicity including perioral, numbness and tingling,"
+    },
+    {
+      "start": 150.19,
+      "end": 153.19,
+      "text": "dizziness, shortness of breath, chest pain and more."
+    }
+  ]
+}

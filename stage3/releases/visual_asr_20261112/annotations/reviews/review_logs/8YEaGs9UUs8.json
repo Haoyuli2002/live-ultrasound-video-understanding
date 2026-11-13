@@ -1,0 +1,77 @@
+{
+  "video_id": "8YEaGs9UUs8",
+  "reviewer": "stage3_b",
+  "review_scope": "Question-led review by Agent B of Agent A draft; not blind. Native full-frame sampled checkpoints and available time-indexed ASR; no continuous replay or direct listening claim.",
+  "reviewer_native_opened": [
+    110,
+    195,
+    225,
+    226,
+    227,
+    227.5,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    490,
+    495,
+    496,
+    497,
+    498,
+    499,
+    500,
+    615,
+    700
+  ],
+  "tasks": [
+    {
+      "task_index": 1,
+      "outcome": "accepted",
+      "issues": [],
+      "changes": [],
+      "query_status": "ANSWER110; low probe-bodygrip and hand/forearm supported near drape visible."
+    },
+    {
+      "task_index": 2,
+      "outcome": "corrected",
+      "issues": [
+        "All three shafts are already visible228. Draft235 missed first satisfied condition because230 later loses left-shaftvisibility."
+      ],
+      "changes": [
+        "Advanced answer235 to228 with negative227.5. Defined single notification and no unwarranted persistence requirement."
+      ],
+      "query_status": "WAIT225; threepaneldemo absent.",
+      "answer_status": "ANSWER228; allthree oblique shafts visible simultaneously."
+    },
+    {
+      "task_index": 3,
+      "outcome": "repaired",
+      "issues": [
+        "Original temporal-comparison question merely asked future current arrangement without comparing observations."
+      ],
+      "changes": [
+        "Changed query490 to495 when baseline close-up exists; question asks subsequent adjustment direction without leaking direction. Answer497 compares reduced gap to495; added496."
+      ],
+      "query_status": "WAIT495; future movement direction not established by single arrangement.",
+      "answer_status": "ANSWER497; tip visiblyrightward, closer tofootprint; no insertion-success claim."
+    },
+    {
+      "task_index": 4,
+      "outcome": "accepted",
+      "issues": [],
+      "changes": [],
+      "query_status": "ANSWER615; middle needle-tip is relatively faint/small comparedwith topbottom."
+    },
+    {
+      "task_index": 5,
+      "outcome": "accepted",
+      "issues": [],
+      "changes": [],
+      "query_status": "ANSWER700; earlier focuspair195 rightvessel deeperinframe thanleft."
+    }
+  ]
+}

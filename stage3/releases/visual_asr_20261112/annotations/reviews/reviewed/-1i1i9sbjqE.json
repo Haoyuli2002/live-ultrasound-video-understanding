@@ -1,0 +1,407 @@
+{
+  "understanding": "Cardiac ultrasound tutorial demonstrating alternate parasternal long-axis orientations with paired models and sonograms, a schematic application, and transition to short-axis positioning.",
+  "native_opened": [
+    96,
+    107,
+    146,
+    147,
+    182,
+    214,
+    308,
+    326,
+    327,
+    328,
+    329,
+    330,
+    331,
+    362,
+    363,
+    373,
+    374,
+    375,
+    376,
+    377,
+    379,
+    380,
+    390
+  ],
+  "tasks": [
+    {
+      "qa_type": "current_observation",
+      "query_time": 96,
+      "answer_time": 96,
+      "checkpoints": [
+        96
+      ],
+      "question": "In this long-axis heart model, which way does the left ventricular apex point on screen?",
+      "reference_answer": "It points toward the left edge of the screen.",
+      "visual_support": "The tapered end of the modeled ventricle is at the left.",
+      "query_prefix_check": "The model is already visible and the narration has identified the ventricular apex.",
+      "answer_prefix_check": "Same frame and past narration suffice.",
+      "shortcut_risk": "The preceding narration describes the apex direction.",
+      "task_id": "s3_remaining79_-1i1i9sbjqE_01",
+      "video_id": "-1i1i9sbjqE",
+      "split": "train",
+      "language": "en",
+      "source_video": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/-1i1i9sbjqE.mp4",
+      "stage3_value": "medium",
+      "visual_evidence": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/-1i1i9sbjqE/96.jpg",
+          "checkpoint": 96.0,
+          "source_pts_seconds": 95.9322,
+          "resolution": [
+            1152,
+            720
+          ]
+        }
+      ],
+      "asr_support_segments": [
+        {
+          "start": 87.86,
+          "end": 89.98,
+          "text": "And as I went over the right ventricles here..."
+        },
+        {
+          "start": 90.0,
+          "end": 94.12,
+          "text": "you've got your left ventricle and the apex is going to be pointing to this."
+        }
+      ],
+      "query_decision": "ANSWER",
+      "answer_decision": "ANSWER",
+      "review_status": "accepted_targeted_native_frame_self_review",
+      "student_input_visibility": "not_checked"
+    },
+    {
+      "qa_type": "temporal_comparison",
+      "query_time": 107,
+      "answer_time": 147,
+      "checkpoints": [
+        107,
+        146,
+        147
+      ],
+      "question": "Compare the apex direction in this parasternal long-axis sonogram with the next long-axis sonogram the tutorial shows. What changes?",
+      "reference_answer": "The first view has the apex toward screen left; the next view reverses it toward screen right.",
+      "visual_support": "The first and later sonograms are paired with oppositely oriented heart models; the reversed sonogram is first shown at the 147-second checkpoint.",
+      "query_prefix_check": "Only the first sonogram has appeared; the next sonogram's orientation cannot yet be confirmed from the prefix.",
+      "answer_prefix_check": "146 shows the reversed model alone; 147 adds the sonogram with the reversed anatomy.",
+      "shortcut_risk": "The model previews the orientation before the scan appears.",
+      "task_id": "s3_remaining79_-1i1i9sbjqE_02",
+      "video_id": "-1i1i9sbjqE",
+      "split": "train",
+      "language": "en",
+      "source_video": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/-1i1i9sbjqE.mp4",
+      "stage3_value": "medium",
+      "visual_evidence": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/-1i1i9sbjqE/107.jpg",
+          "checkpoint": 107.0,
+          "source_pts_seconds": 106.925,
+          "resolution": [
+            1152,
+            720
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/-1i1i9sbjqE/146.jpg",
+          "checkpoint": 146.0,
+          "source_pts_seconds": 145.9276,
+          "resolution": [
+            1152,
+            720
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/-1i1i9sbjqE/147.jpg",
+          "checkpoint": 147.0,
+          "source_pts_seconds": 146.9286,
+          "resolution": [
+            1152,
+            720
+          ]
+        }
+      ],
+      "asr_support_segments": [
+        {
+          "start": 87.86,
+          "end": 89.98,
+          "text": "And as I went over the right ventricles here..."
+        },
+        {
+          "start": 90.0,
+          "end": 94.12,
+          "text": "you've got your left ventricle and the apex is going to be pointing to this."
+        },
+        {
+          "start": 94.64,
+          "end": 99.98,
+          "text": "Do the left here, left atrium, aortic outflow, right here, aortic outflow."
+        },
+        {
+          "start": 100.0,
+          "end": 104.98,
+          "text": "valve in New York. So that's that's kind of the two conventions that I"
+        },
+        {
+          "start": 120.0,
+          "end": 124.48,
+          "text": "mention what you're going to do is you're going to take a long axis slice of the"
+        },
+        {
+          "start": 124.48,
+          "end": 129.11,
+          "text": "heart just the same way except now I'm going to stand on the patient's right"
+        },
+        {
+          "start": 129.11,
+          "end": 129.81,
+          "text": "hand side."
+        },
+        {
+          "start": 130.0,
+          "end": 135.6,
+          "text": "looking into the heart like so. So instead of standing onto the patient's left looking into the heart,"
+        },
+        {
+          "start": 135.62,
+          "end": 139.81,
+          "text": "I'm matching on the other side of the patient and looking into the heart."
+        }
+      ],
+      "query_decision": "WAIT",
+      "answer_decision": "ANSWER",
+      "review_status": "accepted_targeted_native_frame_self_review",
+      "student_input_visibility": "not_checked"
+    },
+    {
+      "qa_type": "history_recall",
+      "query_time": 308,
+      "answer_time": 308,
+      "checkpoints": [
+        214,
+        308
+      ],
+      "question": "Earlier, the convention slide kept the screen marker on the left. What two probe-marker directions did it show?",
+      "reference_answer": "Toward the patient's left hip or toward the patient's right shoulder.",
+      "visual_support": "The earlier slide pairs a left screen marker with both named directions; the current frame is a later schematic.",
+      "query_prefix_check": "The convention slide and its explanation are already in the prefix.",
+      "answer_prefix_check": "214 gives the unique two-option reference.",
+      "shortcut_risk": "Both the slide text and narration can supply the directions.",
+      "task_id": "s3_remaining79_-1i1i9sbjqE_03",
+      "video_id": "-1i1i9sbjqE",
+      "split": "train",
+      "language": "en",
+      "source_video": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/-1i1i9sbjqE.mp4",
+      "stage3_value": "medium",
+      "visual_evidence": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/-1i1i9sbjqE/214.jpg",
+          "checkpoint": 214.0,
+          "source_pts_seconds": 213.9228,
+          "resolution": [
+            1152,
+            720
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/-1i1i9sbjqE/308.jpg",
+          "checkpoint": 308.0,
+          "source_pts_seconds": 307.9258,
+          "resolution": [
+            1152,
+            720
+          ]
+        }
+      ],
+      "asr_support_segments": [
+        {
+          "start": 210.0,
+          "end": 214.12,
+          "text": "the screen marker, assuming it's on the left-hand side, assuming you don't have time to switch"
+        },
+        {
+          "start": 215.21,
+          "end": 219.97,
+          "text": "your screen marker, then your probe marker can either point to the patient's left tip, in which case you"
+        },
+        {
+          "start": 220.0,
+          "end": 224.02,
+          "text": "get an image fairy, similar to what you will see in a lot of cardiology textbooks."
+        },
+        {
+          "start": 224.46,
+          "end": 229.4,
+          "text": "Our alternative, uh, poorly acceptable way is to put the probe marker towards patients"
+        },
+        {
+          "start": 229.4,
+          "end": 229.94,
+          "text": "Right shot."
+        },
+        {
+          "start": 230.1,
+          "end": 232.98,
+          "text": "in that way you'll get a complete opposite image."
+        }
+      ],
+      "query_decision": "ANSWER",
+      "answer_decision": "ANSWER",
+      "review_status": "accepted_targeted_native_frame_self_review",
+      "student_input_visibility": "not_checked"
+    },
+    {
+      "qa_type": "temporal_comparison",
+      "query_time": 326,
+      "answer_time": 328,
+      "checkpoints": [
+        326,
+        327,
+        328
+      ],
+      "question": "In the next version of this heart schematic, how does the syringe's position change relative to the probe?",
+      "reference_answer": "It changes from the right of the probe to the left of it.",
+      "visual_support": "The probe remains at the top center; the next drawing places the syringe on its other side.",
+      "query_prefix_check": "Only the first drawing is visible, and the spoken context does not specify the next drawing's screen-side placement.",
+      "answer_prefix_check": "327 still shows the right-side syringe; 328 shows it on the left.",
+      "shortcut_risk": "The discussion previews a change of viewpoint but does not show its visual result.",
+      "task_id": "s3_remaining79_-1i1i9sbjqE_04",
+      "video_id": "-1i1i9sbjqE",
+      "split": "train",
+      "language": "en",
+      "source_video": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/-1i1i9sbjqE.mp4",
+      "stage3_value": "medium",
+      "visual_evidence": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/-1i1i9sbjqE/326.jpg",
+          "checkpoint": 326.0,
+          "source_pts_seconds": 325.9256,
+          "resolution": [
+            1152,
+            720
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/-1i1i9sbjqE/327.jpg",
+          "checkpoint": 327.0,
+          "source_pts_seconds": 326.9266,
+          "resolution": [
+            1152,
+            720
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/-1i1i9sbjqE/328.jpg",
+          "checkpoint": 328.0,
+          "source_pts_seconds": 327.9276,
+          "resolution": [
+            1152,
+            720
+          ]
+        }
+      ],
+      "asr_support_segments": [
+        {
+          "start": 310.03,
+          "end": 314.93,
+          "text": "if you're doing a pericardial synthesis, for instance,"
+        },
+        {
+          "start": 315.13,
+          "end": 317.05,
+          "text": "does it make sense where you're standing"
+        },
+        {
+          "start": 317.05,
+          "end": 318.67,
+          "text": "in relation to the patient that you're looking"
+        },
+        {
+          "start": 318.67,
+          "end": 319.95,
+          "text": "from the patient's right?"
+        },
+        {
+          "start": 320.0,
+          "end": 326.01,
+          "text": "hand side this way and then you can recognize where your transducer marker is and where your"
+        }
+      ],
+      "query_decision": "WAIT",
+      "answer_decision": "ANSWER",
+      "review_status": "accepted_targeted_native_frame_self_review",
+      "student_input_visibility": "not_checked"
+    },
+    {
+      "qa_type": "event_notification",
+      "query_time": 363,
+      "answer_time": 374,
+      "checkpoints": [
+        363,
+        373,
+        374
+      ],
+      "question": "In these paired long- and short-axis placement photos, tell me when the probe diagram adds the curved arrow showing the rotation.",
+      "reference_answer": "The curved arrow is now visible under the probe, showing a turn in place.",
+      "visual_support": "The orange curved arrow is absent at 373 and visible at 374 underneath the modeled probe.",
+      "query_prefix_check": "The paired photos and straight guide arrow are present, but the curved rotation cue has not appeared.",
+      "answer_prefix_check": "The overlay first appears at the 374-second checkpoint; the answer does not depend on the later stated angle.",
+      "shortcut_risk": "Earlier photos suggest a rotation, but do not establish when the arrow appears.",
+      "task_id": "s3_remaining79_-1i1i9sbjqE_05",
+      "video_id": "-1i1i9sbjqE",
+      "split": "train",
+      "language": "en",
+      "source_video": "/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding/cluster_data/videos_from_ssh/train_full295/-1i1i9sbjqE.mp4",
+      "stage3_value": "medium",
+      "visual_evidence": [
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/-1i1i9sbjqE/363.jpg",
+          "checkpoint": 363.0,
+          "source_pts_seconds": 362.9262,
+          "resolution": [
+            1152,
+            720
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/-1i1i9sbjqE/373.jpg",
+          "checkpoint": 373.0,
+          "source_pts_seconds": 372.9362,
+          "resolution": [
+            1152,
+            720
+          ]
+        },
+        {
+          "path": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_remaining79/frames/-1i1i9sbjqE/374.jpg",
+          "checkpoint": 374.0,
+          "source_pts_seconds": 373.9372,
+          "resolution": [
+            1152,
+            720
+          ]
+        }
+      ],
+      "asr_support_segments": [
+        {
+          "start": 364.45,
+          "end": 367.17,
+          "text": "Lastly, in terms of, I've only really talked about"
+        },
+        {
+          "start": 367.17,
+          "end": 369.73,
+          "text": "parastonal long axis, which is the confusing."
+        }
+      ],
+      "query_decision": "WAIT",
+      "answer_decision": "ANSWER",
+      "review_status": "accepted_targeted_native_frame_self_review",
+      "student_input_visibility": "not_checked"
+    }
+  ],
+  "video_id": "-1i1i9sbjqE",
+  "review_scope": "Same-assistant review; sampled timeline, original-size key frames, and existing time-indexed ASR when available. No continuous replay or direct audio claim."
+}

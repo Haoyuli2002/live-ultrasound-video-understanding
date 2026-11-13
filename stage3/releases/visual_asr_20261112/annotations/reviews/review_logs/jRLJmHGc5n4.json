@@ -1,0 +1,77 @@
+{
+  "video_id": "jRLJmHGc5n4",
+  "reviewer": "stage3_b",
+  "review_scope": "Question-led review by Agent B of Agent A draft; not blind. Native full-frame sampled checkpoints and available time-indexed ASR; no continuous replay or direct listening claim.",
+  "reviewer_native_opened": [
+    380,
+    590,
+    605,
+    620,
+    630,
+    640,
+    650,
+    660,
+    910,
+    592,
+    594,
+    596,
+    598,
+    600,
+    602,
+    604,
+    606,
+    608,
+    610,
+    612,
+    614,
+    616,
+    618,
+    632,
+    634,
+    636,
+    638,
+    593,
+    593.5,
+    637,
+    637.5,
+    638.5,
+    639
+  ],
+  "tasks": [
+    {
+      "task": 1,
+      "outcome": "accepted",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER",
+      "finding": "380 lowresolutiondarksonogram permitscoarserepeatedbrightbony surfaces/deepshadows/interveningwindows, notplexusidentification. Captionriskhigh."
+    },
+    {
+      "task": 2,
+      "outcome": "corrected",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER",
+      "changes": "620\u2192593;actualrightwardshiftalreadybeforeblack602\u2013605 and subsequentreplayedscan.590/592baseline\u2192593rightward. Removed near-rightedgeendpoint strongerthan593evidence."
+    },
+    {
+      "task": 3,
+      "outcome": "corrected",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER",
+      "changes": "640\u2192638;because428x320cannotprovecompleteplasticcoverage, changedconditiontovisiblestartofclear-drapelaying.637.5cleansing\u2192638plasticfoldsoverprocedurefield.638.5captionappearslater. No sterilityclaim."
+    },
+    {
+      "task": 4,
+      "outcome": "accepted",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER",
+      "finding": "660 FNarrowbrightregionrightoflargelumen andupper-rightofsmallerdeeperlumen coarsegeometryvisible. No catheter/tipclaim."
+    },
+    {
+      "task": 5,
+      "outcome": "accepted",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER",
+      "finding": "650 actualtransparentplasticcoversprobeandextendsupcable;910latersciaticsection. Sterilitynotderived."
+    }
+  ]
+}

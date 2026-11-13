@@ -1,0 +1,128 @@
+{
+  "video_id": "LDIo6xQS7Hc",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/LDIo6xQS7Hc/asr.txt",
+  "segments": [
+    {
+      "start": 7.42,
+      "end": 12.7,
+      "text": "A curved array transducer with an abdomen exam type is used to perform an ultrasound guided"
+    },
+    {
+      "start": 12.7,
+      "end": 17.56,
+      "text": "parasentesis. It is easier to perform this exam when the bladder is not filled."
+    },
+    {
+      "start": 18.02,
+      "end": 23.58,
+      "text": "The patient is placed in a supine position. The abdominal cavity is evaluated in two planes."
+    },
+    {
+      "start": 24.32,
+      "end": 29.04,
+      "text": "Place the transducer in a transverse position with the orientation marker to the right."
+    },
+    {
+      "start": 29.74,
+      "end": 34.78,
+      "text": "The transducer is placed at the lateral border of the rectus sheath at the level of the umbilicus."
+    },
+    {
+      "start": 34.78,
+      "end": 40.75,
+      "text": "To evaluate the abdominal cavity for free fluid, sweep the transducer from an inferior"
+    },
+    {
+      "start": 40.75,
+      "end": 42.09,
+      "text": "to superior position."
+    },
+    {
+      "start": 42.72,
+      "end": 48.16,
+      "text": "Fluid will appear hypoaconic or anacoic and accumulate in the lateral gutter and between"
+    },
+    {
+      "start": 48.16,
+      "end": 48.92,
+      "text": "loops of bowel."
+    },
+    {
+      "start": 49.6,
+      "end": 55.3,
+      "text": "To obtain a long axis view, rotate the transducer 90 degrees with the orientation marker"
+    },
+    {
+      "start": 55.3,
+      "end": 57.18,
+      "text": "directed to the point of needle entry."
+    },
+    {
+      "start": 57.88,
+      "end": 63.14,
+      "text": "Sweep the transducer across the abdominal cavity from left to right to evaluate the abdomen"
+    },
+    {
+      "start": 63.14,
+      "end": 64.06,
+      "text": "for free fluid."
+    },
+    {
+      "start": 64.06,
+      "end": 69.79,
+      "text": "A needle insertion site should be chosen in the lateral abdominal area in a dependent area"
+    },
+    {
+      "start": 69.79,
+      "end": 72.85,
+      "text": "of the fluid collection, which is clear from loops of bowel."
+    },
+    {
+      "start": 73.7,
+      "end": 78.4,
+      "text": "The needle should be inserted lateral to the rectus sheath in a transverse fashion to"
+    },
+    {
+      "start": 78.4,
+      "end": 79.9,
+      "text": "avoid the epigastric artery."
+    },
+    {
+      "start": 80.5,
+      "end": 85.32,
+      "text": "Follow the needle entry by slowly sliding the transducer in the direction of needle advancement."
+    },
+    {
+      "start": 86.26,
+      "end": 89.36,
+      "text": "The needle will appear as a small bright hyprocoic dot."
+    },
+    {
+      "start": 89.36,
+      "end": 94.3,
+      "text": "When the needle tip appears, the transducer should be advanced a short distance"
+    },
+    {
+      "start": 94.3,
+      "end": 98.96,
+      "text": "distally to follow the tip of the needle trajectory. The needle is slowly"
+    },
+    {
+      "start": 98.96,
+      "end": 103.16,
+      "text": "advanced under direct ultrasound visualization until the tip is seen to"
+    },
+    {
+      "start": 103.16,
+      "end": 108.13,
+      "text": "indent and then puncture the parietal peritoneum. The transducer should be moved"
+    },
+    {
+      "start": 108.13,
+      "end": 112.39,
+      "text": "slightly approximately and distally to confirm location of the needle tip."
+    }
+  ]
+}

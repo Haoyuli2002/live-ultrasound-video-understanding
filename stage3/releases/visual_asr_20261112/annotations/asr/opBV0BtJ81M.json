@@ -1,0 +1,343 @@
+{
+  "video_id": "opBV0BtJ81M",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/opBV0BtJ81M/asr.txt",
+  "segments": [
+    {
+      "start": 7.0,
+      "end": 11.56,
+      "text": "The use-to-point-of-care ultrasound to guide the insertion of central lines reduces complications,"
+    },
+    {
+      "start": 12.12,
+      "end": 15.28,
+      "text": "shortens procedure time, and has increasingly become the standard of care."
+    },
+    {
+      "start": 15.8,
+      "end": 18.62,
+      "text": "The same technique is also used for peripheral IV access."
+    },
+    {
+      "start": 19.28,
+      "end": 24.06,
+      "text": "In this video, we demonstrate the ultrasound guided placement of an internal jugular central line,"
+    },
+    {
+      "start": 24.34,
+      "end": 26.7,
+      "text": "but the same concept supply for femoral line insertion."
+    },
+    {
+      "start": 27.62,
+      "end": 31.18,
+      "text": "Position your ultrasound screen so that you can see both your patient and the screen,"
+    },
+    {
+      "start": 31.93,
+      "end": 35.25,
+      "text": "hold the linear or high-frequency probe in transverse orientation,"
+    },
+    {
+      "start": 35.57,
+      "end": 36.77,
+      "text": "begin by scanning the vessels."
+    },
+    {
+      "start": 36.77,
+      "end": 42.61,
+      "text": "Arteries are generally smaller, circular, and less compressible."
+    },
+    {
+      "start": 43.11,
+      "end": 47.95,
+      "text": "Vains are generally larger, oval, more easily compressible, and can vary in size with respiration."
+    },
+    {
+      "start": 48.76,
+      "end": 51.16,
+      "text": "Scan the vessels to find the optimal insertion site."
+    },
+    {
+      "start": 51.8,
+      "end": 56.64,
+      "text": "Find an area where the vein is at its maximal size and away from an overlapping carotid artery."
+    },
+    {
+      "start": 57.1,
+      "end": 58.36,
+      "text": "Mark this spot on the skin."
+    },
+    {
+      "start": 61.56,
+      "end": 63.42,
+      "text": "Set up for insertion using sterile technique."
+    },
+    {
+      "start": 64.04,
+      "end": 66.84,
+      "text": "Put on your sterile gown and gloves and set up your central line kit."
+    },
+    {
+      "start": 67.18,
+      "end": 68.5,
+      "text": "Then prep and drape the skin."
+    },
+    {
+      "start": 70.12,
+      "end": 72.94,
+      "text": "You might need an assistant to help you apply the sterile probe cover."
+    },
+    {
+      "start": 72.94,
+      "end": 77.9,
+      "text": "Have your assistant place gel on the probe and then help you place the probe inside the"
+    },
+    {
+      "start": 77.9,
+      "end": 78.42,
+      "text": "sterile cover."
+    },
+    {
+      "start": 84.86,
+      "end": 87.56,
+      "text": "Remember to remove any air bubbles caught under the cover."
+    },
+    {
+      "start": 94.58,
+      "end": 96.96,
+      "text": "Apply sterile gel to the outside of the probe cover."
+    },
+    {
+      "start": 99.99,
+      "end": 104.17,
+      "text": "Pick up the probe in your non-dominant hand and use a two-finger grip to lightly hold the"
+    },
+    {
+      "start": 104.17,
+      "end": 105.69,
+      "text": "probe in transverse orientation."
+    },
+    {
+      "start": 109.85,
+      "end": 112.17,
+      "text": "Center the vein on the screen and note its depth."
+    },
+    {
+      "start": 113.1,
+      "end": 115.08,
+      "text": "Look at the skin as you insert the needle through the skin."
+    },
+    {
+      "start": 115.46,
+      "end": 117.0,
+      "text": "Then switch your gaze to the screen."
+    },
+    {
+      "start": 118.28,
+      "end": 121.32,
+      "text": "Once through the skin, change your needle angle to a shallower angle."
+    },
+    {
+      "start": 121.32,
+      "end": 123.5,
+      "text": "Keep the vein in the center of your screen."
+    },
+    {
+      "start": 124.49,
+      "end": 127.41,
+      "text": "The needle tip appears as a small, bright, ecogenic spot."
+    },
+    {
+      "start": 128.07,
+      "end": 131.69,
+      "text": "Once you've identified the needle tip with your ultrasound probe, advance the needle slightly"
+    },
+    {
+      "start": 131.69,
+      "end": 132.47,
+      "text": "and then stop."
+    },
+    {
+      "start": 132.99,
+      "end": 135.85,
+      "text": "Advance the probe slightly and again visualize your needle tip."
+    },
+    {
+      "start": 136.38,
+      "end": 140.32,
+      "text": "Never move the probe and the needle at the same time as you will lose the image of the"
+    },
+    {
+      "start": 140.32,
+      "end": 141.12,
+      "text": "needle on the screen."
+    },
+    {
+      "start": 142.07,
+      "end": 145.95,
+      "text": "Once you have some experience with the transverse view, consider adding in a longitudinal view"
+    },
+    {
+      "start": 145.95,
+      "end": 146.49,
+      "text": "at this point."
+    },
+    {
+      "start": 147.01,
+      "end": 150.87,
+      "text": "When you're satisfied that the needle is directly above the vein, rotate the probe from"
+    },
+    {
+      "start": 150.87,
+      "end": 155.43,
+      "text": "transverse into the longitudinal view. Once you are entering the vein, turn your gaze"
+    },
+    {
+      "start": 155.43,
+      "end": 160.62,
+      "text": "from the screen to the needle and confirm vein entry by noting the flashback of blood. Use"
+    },
+    {
+      "start": 160.62,
+      "end": 165.02,
+      "text": "your clinical skills to confirm phanus rather than arterial placement by checking for pulsating"
+    },
+    {
+      "start": 165.02,
+      "end": 169.24,
+      "text": "flashback. At this point, you can put down your ultrasound probe and proceed with the central"
+    },
+    {
+      "start": 169.24,
+      "end": 177.03,
+      "text": "line insertion as you normally would. Always anchor your probe hand on the patient to make"
+    },
+    {
+      "start": 177.03,
+      "end": 180.87,
+      "text": "sure your probe doesn't wander off target. This gives you tactile feedback that you are"
+    },
+    {
+      "start": 180.87,
+      "end": 186.47,
+      "text": "not moving the needle in relation to the patient. If the needle is not easily visualized, bounce"
+    },
+    {
+      "start": 186.47,
+      "end": 191.04,
+      "text": "the needle a bit, as this movement will be easily seen on the ultrasound screen. And if this"
+    },
+    {
+      "start": 191.04,
+      "end": 194.88,
+      "text": "is totally new to you and you feel uncomfortable using the probe and having a needle in your"
+    },
+    {
+      "start": 194.88,
+      "end": 198.24,
+      "text": "hand at the same time, start by using the ultrasound machine to landmark the vessel."
+    },
+    {
+      "start": 198.6,
+      "end": 202.08,
+      "text": "Once you've marked the ideal insertion site, note the vein depth and put down the probe,"
+    },
+    {
+      "start": 202.5,
+      "end": 210.5,
+      "text": "then proceed based on your visual memory of what you've seen. Patient position can vastly change"
+    },
+    {
+      "start": 210.5,
+      "end": 214.79,
+      "text": "the anatomy under the skin. Optimized position prior to attempting the procedure,"
+    },
+    {
+      "start": 215.5,
+      "end": 220.18,
+      "text": "minimizing head rotation reduces the chances of having the common parodid artery lie immediately"
+    },
+    {
+      "start": 220.18,
+      "end": 224.6,
+      "text": "posterior to the internal jugular vein and therefore reducing the risk of arterial rupture."
+    },
+    {
+      "start": 225.7,
+      "end": 229.38,
+      "text": "Trindellanberg, though it may be uncomfortable for the patient, can make a huge difference"
+    },
+    {
+      "start": 229.38,
+      "end": 233.36,
+      "text": "and only needs to occur for the 30 to 60 seconds when you are cannulating the vein."
+    },
+    {
+      "start": 233.9,
+      "end": 236.74,
+      "text": "Humming, breath holding and valve salva can all be helpful as well."
+    },
+    {
+      "start": 237.75,
+      "end": 241.59,
+      "text": "Some ultrasound machines have needle enhancement software, which highlights the needle making"
+    },
+    {
+      "start": 241.59,
+      "end": 243.41,
+      "text": "it easier for you to follow on the screen."
+    },
+    {
+      "start": 244.28,
+      "end": 247.0,
+      "text": "Practice makes perfect, the more you use it, the better you get."
+    },
+    {
+      "start": 247.28,
+      "end": 251.2,
+      "text": "Start by using focus in the transverse plane, and as you get better, start incorporating"
+    },
+    {
+      "start": 251.2,
+      "end": 252.54,
+      "text": "the longitudinal plane as well."
+    },
+    {
+      "start": 253.48,
+      "end": 257.28,
+      "text": "Don't apply too much pressure on the skin, as this will occlude the vein, making it impossible"
+    },
+    {
+      "start": 257.28,
+      "end": 257.8,
+      "text": "to see."
+    },
+    {
+      "start": 258.54,
+      "end": 262.28,
+      "text": "Consider using an arterial line setup, because the needle and catheter are longer, when"
+    },
+    {
+      "start": 262.28,
+      "end": 265.28,
+      "text": "trying to canuate a deep peripheral vein in an obese patient."
+    },
+    {
+      "start": 266.46,
+      "end": 268.68,
+      "text": "Use local anesthetic when inserting any catheter."
+    },
+    {
+      "start": 268.86,
+      "end": 272.66,
+      "text": "Since you aren't using palpation for the anatomy, you needn't worry about distorting it"
+    },
+    {
+      "start": 272.66,
+      "end": 273.84,
+      "text": "with a small amount of light-a-king."
+    }
+  ]
+}

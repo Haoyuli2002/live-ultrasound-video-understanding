@@ -1,0 +1,69 @@
+{
+  "video_id": "rwdNv3SRT0A",
+  "reviewer": "stage3_b",
+  "review_scope": "Question-led review by Agent B of Agent A draft; not blind. Native full-frame sampled checkpoints and available time-indexed ASR; no continuous replay or direct listening claim.",
+  "reviewer_native_opened": [
+    360,
+    380,
+    410,
+    445,
+    450,
+    650,
+    750,
+    800,
+    365,
+    370,
+    375,
+    446,
+    447,
+    448,
+    449,
+    620,
+    630,
+    760,
+    376,
+    377,
+    378,
+    379,
+    448.5,
+    377.5,
+    448.25
+  ],
+  "tasks": [
+    {
+      "task": 1,
+      "outcome": "corrected",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER",
+      "changes": "380\u2192377.5 after377compactprofiles. Removed long-axis answer cue from question; actual geometry of next display still unknownatquery. Distinct displayedviewcomparison, no physiologicalchange."
+    },
+    {
+      "task": 2,
+      "outcome": "accepted",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER",
+      "finding": "410 bothstoredspectraltraces visible already; leftcontinuousbandrightsharpseparatedpeaks. Correctly immediate despite laterhighlights."
+    },
+    {
+      "task": 3,
+      "outcome": "corrected",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER",
+      "changes": "450\u2192448.5 after448.25text-only. Brightobliqueshaftprojectsacrossuppermarginanddarklumen, no exacttip/successclaim."
+    },
+    {
+      "task": 4,
+      "outcome": "accepted",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER",
+      "finding": "620/630/650 channel with shortcentralcurvedbrightechoesabovebrightdeepboundary. Their biological/deviceidentity not inferred."
+    },
+    {
+      "task": 5,
+      "outcome": "accepted",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER",
+      "finding": "750/760 broadmiddle-leftshadowbeneathbrightclavicularsurface, vesselportionright;800textonly. Unique earlier landmark retained."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "video_id": "AH8RcdMQMHA",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/eval/AH8RcdMQMHA/asr.txt",
+  "segments": [
+    {
+      "start": 7.22,
+      "end": 14.06,
+      "text": "A curved or phased array transducer with an abdomen exam type is used to perform a renal ultrasound exam."
+    },
+    {
+      "start": 14.52,
+      "end": 16.96,
+      "text": "The kidney should be evaluated in two planes."
+    },
+    {
+      "start": 17.85,
+      "end": 24.63,
+      "text": "The transducer is placed in a long-access orientation along the right mid-axillary line at the coastal margin,"
+    },
+    {
+      "start": 24.89,
+      "end": 28.01,
+      "text": "with the orientation marker directed toward the patient's head."
+    },
+    {
+      "start": 28.53,
+      "end": 35.19,
+      "text": "If it is difficult to visualize the kidney, a deep inspiration will move the kidney below the ribs for easier access."
+    },
+    {
+      "start": 35.19,
+      "end": 44.44,
+      "text": "It may also be necessary to move the transducer approximately along the mid-axillary line to visualize the kidneys using an inner-costal approach."
+    },
+    {
+      "start": 45.0,
+      "end": 49.94,
+      "text": "Using this approach will result in rib shadow artifacts overlying the ultrasound image."
+    },
+    {
+      "start": 50.56,
+      "end": 57.34,
+      "text": "Once the kidney is identified, the transducer is slightly rotated to adjust for the oblique orientation of the kidney."
+    },
+    {
+      "start": 57.34,
+      "end": 71.19,
+      "text": "The transducer is swept from anterior to posterior to image the kidney perankama, which will appear"
+    },
+    {
+      "start": 71.19,
+      "end": 77.92,
+      "text": "hypoecoic when compared to the liver. The renal pyramids are triangular in shape and darker than"
+    },
+    {
+      "start": 77.92,
+      "end": 83.92,
+      "text": "the renal cortex. The renal pelvis will appear as bright hyperecoic echoes within the kidney."
+    },
+    {
+      "start": 84.62,
+      "end": 91.28,
+      "text": "To obtain a transverse axis view, rotate the transducer 90 degrees from the long axis position."
+    },
+    {
+      "start": 91.28,
+      "end": 96.72,
+      "text": "The kidney appears as a circular structure with a horseshoe shape at the level of the renal pelvis."
+    },
+    {
+      "start": 97.08,
+      "end": 103.06,
+      "text": "The transducer is swept from the superior to inferior poles to evaluate the entire kidney."
+    }
+  ]
+}

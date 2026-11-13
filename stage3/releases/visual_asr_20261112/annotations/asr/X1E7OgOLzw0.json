@@ -1,0 +1,758 @@
+{
+  "video_id": "X1E7OgOLzw0",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/X1E7OgOLzw0/asr.txt",
+  "segments": [
+    {
+      "start": 14.9,
+      "end": 19.78,
+      "text": "Hello, my name is Phil Pereira and I'm the emergency ultrasound coordinator at the New York Presbyterian Hospital."
+    },
+    {
+      "start": 20.03,
+      "end": 23.61,
+      "text": "in New York City and welcome the soundbites cases."
+    },
+    {
+      "start": 24.84,
+      "end": 25.86,
+      "text": "In this soundbites module,"
+    },
+    {
+      "start": 26.02,
+      "end": 26.94,
+      "text": "we're going to look specifically"
+    },
+    {
+      "start": 26.94,
+      "end": 28.5,
+      "text": "at the use of bedside ultrasound"
+    },
+    {
+      "start": 28.5,
+      "end": 29.96,
+      "text": "to detect plural flu-"
+    },
+    {
+      "start": 30.0,
+      "end": 35.88,
+      "text": "fluid. Interestingly enough, ultrasound has been found to detect as little as 20ccs of fluid"
+    },
+    {
+      "start": 35.88,
+      "end": 39.98,
+      "text": "within the plural space. In contrast, a chest x-ray will not-"
+    },
+    {
+      "start": 40.0,
+      "end": 45.4,
+      "text": "reliably pick up less than 100 to 150 cc's of fluid on an AP film."
+    },
+    {
+      "start": 46.9,
+      "end": 49.76,
+      "text": "Now this problem is only compounded in the supine trauma patient."
+    },
+    {
+      "start": 50.22,
+      "end": 52.68,
+      "text": "where a chest X-ray may miss a significant amount of fluid"
+    },
+    {
+      "start": 52.68,
+      "end": 55.36,
+      "text": "as a hemothorax will layer out posteriorly"
+    },
+    {
+      "start": 55.36,
+      "end": 57.78,
+      "text": "and can be very difficult to detect on this film."
+    },
+    {
+      "start": 58.73,
+      "end": 59.97,
+      "text": "For these reasons, that's..."
+    },
+    {
+      "start": 60.0,
+      "end": 64.74,
+      "text": "ultrasound may offer a more accurate way of diagnosing plural fluid."
+    },
+    {
+      "start": 65.47,
+      "end": 69.25,
+      "text": "Here's a slide reviewing how to perform the ultrasound examination for detection of plural"
+    },
+    {
+      "start": 69.25,
+      "end": 69.79,
+      "text": "all the fusions."
+    },
+    {
+      "start": 70.48,
+      "end": 75.2,
+      "text": "Optically you'll have a 3 MHz probe with a small footprint that can easily sit between"
+    },
+    {
+      "start": 75.2,
+      "end": 79.2,
+      "text": "the ribs as we'll be looking into the right upper quadrant and left upper quadrant areas."
+    },
+    {
+      "start": 80.19,
+      "end": 82.65,
+      "text": "In position one, we'll be coming into the standard"
+    },
+    {
+      "start": 82.65,
+      "end": 84.83,
+      "text": "write-up requirement, trauma-fast exam,"
+    },
+    {
+      "start": 85.33,
+      "end": 88.01,
+      "text": "and position the probe into that area just above the liver"
+    },
+    {
+      "start": 88.01,
+      "end": 89.67,
+      "text": "and below the diaphragm."
+    },
+    {
+      "start": 90.45,
+      "end": 93.45,
+      "text": "We can then angle a probe upwards into the thoracic cavity"
+    },
+    {
+      "start": 93.45,
+      "end": 95.65,
+      "text": "to look for a dark or anechoic fluid collection"
+    },
+    {
+      "start": 96.37,
+      "end": 97.45,
+      "text": "signifying thoracic fluid."
+    },
+    {
+      "start": 98.61,
+      "end": 99.97,
+      "text": "We can repeat the exam in the last-"
+    },
+    {
+      "start": 100.0,
+      "end": 105.08,
+      "text": "side, as shown in probe position 2, placing the probe into that area of the left upper quadrant"
+    },
+    {
+      "start": 105.08,
+      "end": 106.26,
+      "text": "trauma fast view."
+    },
+    {
+      "start": 106.26,
+      "end": 109.94,
+      "text": "Look first into the area above the spleen and below"
+    },
+    {
+      "start": 110.0,
+      "end": 114.1,
+      "text": "the diaphragm and then angle the probe upwards into the left thoracic cavity."
+    },
+    {
+      "start": 114.91,
+      "end": 118.55,
+      "text": "If fluid is seen within the thoracic cavity, we can then move the probe upwards to"
+    },
+    {
+      "start": 118.55,
+      "end": 119.97,
+      "text": "investigate the extent of the"
+    },
+    {
+      "start": 120.0,
+      "end": 126.29,
+      "text": "a fusion. Here's a video going over how to perform the examination. Notice here we have a"
+    },
+    {
+      "start": 126.29,
+      "end": 129.53,
+      "text": "probe placed into the right-up quadrant trauma-fast area."
+    },
+    {
+      "start": 130.42,
+      "end": 133.52,
+      "text": "Notice that we're angling the probe upwards into the thoracic cavity"
+    },
+    {
+      "start": 133.52,
+      "end": 135.9,
+      "text": "to fully investigate for a plural effusion."
+    },
+    {
+      "start": 137.36,
+      "end": 139.98,
+      "text": "Here I'm just superimposing about the level of the diaphragm."
+    },
+    {
+      "start": 140.03,
+      "end": 141.69,
+      "text": "as shown in the red marker."
+    },
+    {
+      "start": 142.56,
+      "end": 144.26,
+      "text": "And notice here that the probe is positioned"
+    },
+    {
+      "start": 144.26,
+      "end": 147.44,
+      "text": "coming into that area just above the diaphragm"
+    },
+    {
+      "start": 147.44,
+      "end": 148.76,
+      "text": "into the thoracic cavity."
+    },
+    {
+      "start": 150.0,
+      "end": 153.96,
+      "text": "Additionally, the probe should be in a long-axis configuration with the marker dot towards"
+    },
+    {
+      "start": 153.96,
+      "end": 155.04,
+      "text": "the patient's head."
+    },
+    {
+      "start": 156.31,
+      "end": 159.81,
+      "text": "Again, if a fluid collection is seen, one can then move the probe upwards."
+    },
+    {
+      "start": 160.03,
+      "end": 162.59,
+      "text": "to fully investigate how big the effusion is."
+    },
+    {
+      "start": 163.18,
+      "end": 165.56,
+      "text": "To optimize your examination, place the patient"
+    },
+    {
+      "start": 165.56,
+      "end": 168.7,
+      "text": "with the head slightly upwards so that the fluid will layer out"
+    },
+    {
+      "start": 168.7,
+      "end": 169.84,
+      "text": "above the diaphragm."
+    },
+    {
+      "start": 169.84,
+      "end": 169.96,
+      "text": "All right."
+    },
+    {
+      "start": 170.0,
+      "end": 172.46,
+      "text": "allowing earlier detection of smaller amounts of fluid."
+    },
+    {
+      "start": 174.53,
+      "end": 176.65,
+      "text": "Now that we know how to perform the ultrasound examination"
+    },
+    {
+      "start": 176.65,
+      "end": 178.55,
+      "text": "for plural fluid, let's take a look"
+    },
+    {
+      "start": 178.55,
+      "end": 179.77,
+      "text": "at a normal write-up quadrant."
+    },
+    {
+      "start": 180.0,
+      "end": 185.1,
+      "text": "plural examination. The probe is configured in a long-axis type orientation with a marker"
+    },
+    {
+      "start": 185.1,
+      "end": 189.67,
+      "text": "towards the patient's head, so we see superior to the left and inferior to the right."
+    },
+    {
+      "start": 190.35,
+      "end": 193.67,
+      "text": "The liver is in the middle of the image, and let's look above the liver."
+    },
+    {
+      "start": 193.83,
+      "end": 197.81,
+      "text": "Here we see the diaphragm, that curving white line, which was moving up and down as the"
+    },
+    {
+      "start": 197.81,
+      "end": 199.97,
+      "text": "patient breathes, and to the left or..."
+    },
+    {
+      "start": 200.0,
+      "end": 202.36,
+      "text": "superior to the diaphragm is the thoracic cavity."
+    },
+    {
+      "start": 203.13,
+      "end": 205.19,
+      "text": "Now while looking at the thoracic cavity here,"
+    },
+    {
+      "start": 205.31,
+      "end": 207.25,
+      "text": "what we see is something called mirror artifact."
+    },
+    {
+      "start": 207.83,
+      "end": 209.89,
+      "text": "This occurs as a result of the sound waves."
+    },
+    {
+      "start": 210.13,
+      "end": 214.99,
+      "text": "coming through the diaphragm and reproducing what looks like a mirror image of the liver within the chest."
+    },
+    {
+      "start": 215.89,
+      "end": 219.97,
+      "text": "This is a normal appearance of the thoracic cavity and mirror artifact is"
+    },
+    {
+      "start": 220.0,
+      "end": 224.9,
+      "text": "something that will be seen commonly on bedside sonography. Notice however the absence of"
+    },
+    {
+      "start": 224.9,
+      "end": 229.41,
+      "text": "a dark or anicoic fluid collection within the right chest. Now let's take a look at a"
+    },
+    {
+      "start": 229.41,
+      "end": 229.85,
+      "text": "normal left"
+    },
+    {
+      "start": 230.0,
+      "end": 234.22,
+      "text": "up a quadrant plural exam. Again, we're in a long axis configuration, so"
+    },
+    {
+      "start": 234.22,
+      "end": 237.9,
+      "text": "superior to the left, inferior to the right. We see the spleen in the middle of"
+    },
+    {
+      "start": 237.9,
+      "end": 239.98,
+      "text": "the image, and we see the diaphragm."
+    },
+    {
+      "start": 240.03,
+      "end": 242.07,
+      "text": "moving up and down as the patient breathes."
+    },
+    {
+      "start": 242.95,
+      "end": 245.51,
+      "text": "Let's look above the diaphragm into the thoracic cavity"
+    },
+    {
+      "start": 245.51,
+      "end": 247.69,
+      "text": "and again, we see that mirror artifact."
+    },
+    {
+      "start": 248.31,
+      "end": 249.97,
+      "text": "What it looks like is almost like..."
+    },
+    {
+      "start": 250.0,
+      "end": 252.62,
+      "text": "reproduction of the spleen within the thoracic cavity."
+    },
+    {
+      "start": 253.41,
+      "end": 257.79,
+      "text": "So this is a normal finding and one that is not to be confused with fluid."
+    },
+    {
+      "start": 258.54,
+      "end": 259.76,
+      "text": "Fluid will appear very differently."
+    },
+    {
+      "start": 260.0,
+      "end": 263.0,
+      "text": "and we'll have the appearance of a dark or anticoextripe"
+    },
+    {
+      "start": 263.0,
+      "end": 264.42,
+      "text": "right above the diaphragm."
+    },
+    {
+      "start": 266.28,
+      "end": 268.42,
+      "text": "Here's an illustration showing a positive examination"
+    },
+    {
+      "start": 268.42,
+      "end": 269.96,
+      "text": "from the right upper quadrant view."
+    },
+    {
+      "start": 270.0,
+      "end": 272.7,
+      "text": "with a plural of fusion above the diaphragm."
+    },
+    {
+      "start": 273.57,
+      "end": 274.85,
+      "text": "We're in that long axis configuration,"
+    },
+    {
+      "start": 275.19,
+      "end": 277.45,
+      "text": "so superior to the left, inferior to the right."
+    },
+    {
+      "start": 277.71,
+      "end": 279.77,
+      "text": "We see the liver in the middle of the image here."
+    },
+    {
+      "start": 280.26,
+      "end": 283.42,
+      "text": "and the diaphragm, the white line, a scene right above the liver."
+    },
+    {
+      "start": 284.12,
+      "end": 286.18,
+      "text": "Notice in this image, we have a plural effusion"
+    },
+    {
+      "start": 286.18,
+      "end": 288.66,
+      "text": "as represented by the dark area of fluid,"
+    },
+    {
+      "start": 288.9,
+      "end": 289.98,
+      "text": "which is immediately..."
+    },
+    {
+      "start": 290.0,
+      "end": 292.62,
+      "text": "a period to the diaphragm and tucks in there"
+    },
+    {
+      "start": 292.62,
+      "end": 296.28,
+      "text": "right above the diaphragm going up into the thoracic cavity."
+    },
+    {
+      "start": 297.29,
+      "end": 298.75,
+      "text": "So this will be the signature finding"
+    },
+    {
+      "start": 298.75,
+      "end": 299.97,
+      "text": "of a plural effusion as"
+    },
+    {
+      "start": 300.06,
+      "end": 302.78,
+      "text": "taken from the trauma fast views from the right-up"
+    },
+    {
+      "start": 302.78,
+      "end": 304.68,
+      "text": "requadrant, and the left-up requadrant"
+    },
+    {
+      "start": 304.68,
+      "end": 307.22,
+      "text": "will also have a similar view, although we're just looking"
+    },
+    {
+      "start": 307.22,
+      "end": 309.54,
+      "text": "above the spleen in that orientation."
+    },
+    {
+      "start": 312.3,
+      "end": 316.1,
+      "text": "Here's a video clip showing a small plural of fusion as taken from the left upper quadrant"
+    },
+    {
+      "start": 316.1,
+      "end": 316.48,
+      "text": "view."
+    },
+    {
+      "start": 317.21,
+      "end": 319.97,
+      "text": "Here we see the spleen in the middle of the image, the kidney-"
+    },
+    {
+      "start": 320.0,
+      "end": 324.54,
+      "text": "the inferior to the spleen and the diaphragm, the curving white line that's moving up and"
+    },
+    {
+      "start": 324.54,
+      "end": 326.98,
+      "text": "down as the patient breathes right above the spleen."
+    },
+    {
+      "start": 326.98,
+      "end": 329.96,
+      "text": "As we look into that area above the diaphragm"
+    },
+    {
+      "start": 330.0,
+      "end": 336.12,
+      "text": "We actually appreciate here the presence of a dark or anechoic fluid collection above the diaphragm"
+    },
+    {
+      "start": 336.12,
+      "end": 339.98,
+      "text": "This represents a positive plural of fusion. Notice that the amount of"
+    },
+    {
+      "start": 340.13,
+      "end": 344.77,
+      "text": "fluid is relatively small and we can actually see the lung moving up and down to the left"
+    },
+    {
+      "start": 344.77,
+      "end": 345.65,
+      "text": "of the image here."
+    },
+    {
+      "start": 346.84,
+      "end": 349.7,
+      "text": "Here's a modern pleural effusion as taken from the right upper quadrant view."
+    },
+    {
+      "start": 350.22,
+      "end": 354.22,
+      "text": "We see the liver to the inferior aspect or to the right, the curving white line making"
+    },
+    {
+      "start": 354.22,
+      "end": 358.94,
+      "text": "up the diaphragm in the middle of the image, and fluid representing a plural effusion superior"
+    },
+    {
+      "start": 358.94,
+      "end": 359.96,
+      "text": "to the diaphragm."
+    },
+    {
+      "start": 360.86,
+      "end": 366.54,
+      "text": "Interestingly enough, we see the lung moving around and all the fluid can press down by the fluid within the chest cavity."
+    },
+    {
+      "start": 367.0,
+      "end": 369.76,
+      "text": "Taking on what appears like a liver within the chest."
+    },
+    {
+      "start": 370.13,
+      "end": 372.35,
+      "text": "in something called hepatization of the lung."
+    },
+    {
+      "start": 372.95,
+      "end": 374.99,
+      "text": "And this is commonly seen with a plural of fusion"
+    },
+    {
+      "start": 374.99,
+      "end": 377.65,
+      "text": "as it pushes in on the lung, making it more"
+    },
+    {
+      "start": 377.65,
+      "end": 378.87,
+      "text": "of a solid type organ."
+    },
+    {
+      "start": 381.41,
+      "end": 385.41,
+      "text": "Here's a large plural effusion as taken from the right-up requadrant view, and what we"
+    },
+    {
+      "start": 385.41,
+      "end": 389.97,
+      "text": "see here is the liver inferiorly, the diaphragm right above the liver there in the middle of the..."
+    },
+    {
+      "start": 390.0,
+      "end": 395.78,
+      "text": "image, and we see a large dark or anechoic fluid collection immediately superior to the diaphragm."
+    },
+    {
+      "start": 396.25,
+      "end": 399.97,
+      "text": "This represents a large plural of fusion. And in the midst of the"
+    },
+    {
+      "start": 400.06,
+      "end": 406.22,
+      "text": "We can see the lung waving around and compressed down by all the fluid within the thoracic cavity,"
+    },
+    {
+      "start": 406.6,
+      "end": 409.9,
+      "text": "again demonstrating that hepatization of the lung as"
+    },
+    {
+      "start": 410.0,
+      "end": 414.18,
+      "text": "compressed down by the plural fluid. So this would be a large plural"
+    },
+    {
+      "start": 414.18,
+      "end": 417.74,
+      "text": "of fusion, as there's a large amount of fluid both inferiorly between the"
+    },
+    {
+      "start": 417.74,
+      "end": 419.98,
+      "text": "lung and the diaphragm, and both inch..."
+    },
+    {
+      "start": 420.0,
+      "end": 428.72,
+      "text": "and posterior to the lung itself here. Unfortunately, not all pleural effusions will be free flowing or uncomplicated."
+    },
+    {
+      "start": 429.18,
+      "end": 429.92,
+      "text": "There are occasions"
+    },
+    {
+      "start": 430.0,
+      "end": 432.82,
+      "text": "where patients can have repeated pleural effusions that can be"
+    },
+    {
+      "start": 432.82,
+      "end": 436.0,
+      "text": "calculated or complicated. Here we see an example of a"
+    },
+    {
+      "start": 436.0,
+      "end": 439.84,
+      "text": "eloculated plural of fusion. Notice this lung here has an attachment"
+    },
+    {
+      "start": 440.0,
+      "end": 444.76,
+      "text": "with a fibrin area that attaches it or glues it on to the diaphragm inferiorly."
+    },
+    {
+      "start": 445.54,
+      "end": 449.92,
+      "text": "Therefore, we have two lock-related areas of effusion, both anterior to the top of this"
+    },
+    {
+      "start": 450.06,
+      "end": 451.04,
+      "text": "green and posterior."
+    },
+    {
+      "start": 451.94,
+      "end": 456.38,
+      "text": "As long as trapped within the thoracic cavity, by this fibrinous attachment to the diaphragm,"
+    },
+    {
+      "start": 456.4,
+      "end": 459.98,
+      "text": "it may be dangerous to perform an invasive procedure like a thoracinthesis or p-"
+    },
+    {
+      "start": 460.0,
+      "end": 461.04,
+      "text": "a chest tube placement."
+    },
+    {
+      "start": 461.8,
+      "end": 466.52,
+      "text": "The needle or the chest tube could be guided up into the long causing a pneumothorax by the"
+    },
+    {
+      "start": 466.52,
+      "end": 468.22,
+      "text": "Vibranous attachment to the diaphragm."
+    },
+    {
+      "start": 470.64,
+      "end": 473.64,
+      "text": "So in conclusion, I'm glad I could share with you this sound bites module going over"
+    },
+    {
+      "start": 473.64,
+      "end": 476.56,
+      "text": "the ultrasound examination for the detection of plural fluid."
+    },
+    {
+      "start": 477.0,
+      "end": 479.98,
+      "text": "As we discussed earlier in the module, ultrasound may be..."
+    },
+    {
+      "start": 480.0,
+      "end": 484.82,
+      "text": "more accurate in detection of plural fluid than a chest x-ray, and ultrasound allows easy"
+    },
+    {
+      "start": 484.82,
+      "end": 487.32,
+      "text": "grading of the amount of fluid within the plural cavity."
+    },
+    {
+      "start": 487.98,
+      "end": 489.98,
+      "text": "It can also detect complicated plural-"
+    },
+    {
+      "start": 490.0,
+      "end": 494.83,
+      "text": "of fusions that may be calculated and can help determine which patients may benefit from"
+    },
+    {
+      "start": 494.83,
+      "end": 498.93,
+      "text": "a drainage procedure such as a thoracinthesis or tube thoracostomy."
+    },
+    {
+      "start": 500.1,
+      "end": 504.5,
+      "text": "So I hope to see you back, as soundbites continues, and in further modules will actually look"
+    },
+    {
+      "start": 504.5,
+      "end": 507.98,
+      "text": "closer at the Thorus and Thesis procedure under ultrasound guidance."
+    }
+  ]
+}

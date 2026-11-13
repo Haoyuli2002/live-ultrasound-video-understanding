@@ -1,0 +1,338 @@
+{
+  "video_id": "PxkSdSzUfGs",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/PxkSdSzUfGs/asr.txt",
+  "segments": [
+    {
+      "start": 1.59,
+      "end": 10.18,
+      "text": "In this video, we'll go over the anatomy and technique for blocking the"
+    },
+    {
+      "start": 10.18,
+      "end": 13.46,
+      "text": "genicular nerves. These nerves are often treated in the pain clinic for"
+    },
+    {
+      "start": 13.46,
+      "end": 16.86,
+      "text": "chronic osteoarthritic pain, but for our purposes, we're going to look at how"
+    },
+    {
+      "start": 16.86,
+      "end": 20.42,
+      "text": "to target them preoperatively to reduce acute pain after total knee"
+    },
+    {
+      "start": 20.42,
+      "end": 24.44,
+      "text": "arthroplasty. You may be wondering, wait, another block for total knees? We're"
+    },
+    {
+      "start": 24.44,
+      "end": 28.42,
+      "text": "already doing an adductor canal and an eye pack, right? Well, the rationale for"
+    },
+    {
+      "start": 28.42,
+      "end": 32.08,
+      "text": "blocking knees has to do with the way the knee is innervated. So let's take a"
+    },
+    {
+      "start": 32.08,
+      "end": 35.99,
+      "text": "brief look at that. Here we have the knee joint in its capsule, posterior in the"
+    },
+    {
+      "start": 35.99,
+      "end": 40.47,
+      "text": "left anterior on the right. The satiic nerve descends from the thigh, splitting into the"
+    },
+    {
+      "start": 40.47,
+      "end": 44.95,
+      "text": "tibial and common peronial nerves. There are three principal genicular nerves that were"
+    },
+    {
+      "start": 44.95,
+      "end": 50.01,
+      "text": "after. The first is its superior lateral, which arises from the peronial nerve and winds"
+    },
+    {
+      "start": 50.01,
+      "end": 54.13,
+      "text": "around the lateral metaphasis to innovate part of the anterior lateral periosteum and"
+    },
+    {
+      "start": 54.13,
+      "end": 59.29,
+      "text": "capsule. The superior medial genicular nerve comes off the tibial nerve and travels close"
+    },
+    {
+      "start": 59.29,
+      "end": 66.26,
+      "text": "to the adductor tubercle before innovating part of the anterior medial knee joint. And"
+    },
+    {
+      "start": 66.26,
+      "end": 70.26,
+      "text": "which also comes off the tibial and travels around to the anterior aspect of the proximal"
+    },
+    {
+      "start": 70.26,
+      "end": 72.54,
+      "text": "tibia, innovating part of the anterior medial knee."
+    },
+    {
+      "start": 73.24,
+      "end": 75.48,
+      "text": "These three nerves are going to be the focus of our technique."
+    },
+    {
+      "start": 76.34,
+      "end": 78.56,
+      "text": "Now there are other nerves that innovate the joint capsule."
+    },
+    {
+      "start": 78.92,
+      "end": 83.06,
+      "text": "For example, the inferior lateral genicular nerve and the recurrent peronial nerve both"
+    },
+    {
+      "start": 83.06,
+      "end": 87.24,
+      "text": "supply the inferior lateral joint structures, but we typically don't target these because"
+    },
+    {
+      "start": 87.24,
+      "end": 90.14,
+      "text": "of the risk of inadvertently blocking the common peronial nerve."
+    },
+    {
+      "start": 90.6,
+      "end": 94.66,
+      "text": "Nobody thanks you for excellent knee analgesia in a patient who can't go home because of"
+    },
+    {
+      "start": 94.66,
+      "end": 95.5,
+      "text": "transient foot drop."
+    },
+    {
+      "start": 95.5,
+      "end": 100.2,
+      "text": "To complete the nerve supply of the knee, we also have this saffronous nerve, as well as"
+    },
+    {
+      "start": 100.2,
+      "end": 104.48,
+      "text": "the articular branches from the three heads of the vastus group, medialis, intermedius,"
+    },
+    {
+      "start": 104.76,
+      "end": 105.28,
+      "text": "and lateralis."
+    },
+    {
+      "start": 105.82,
+      "end": 109.76,
+      "text": "These all play a role in supplying the joint capsule, and of course we do get the saffronous"
+    },
+    {
+      "start": 109.76,
+      "end": 113.66,
+      "text": "and medial vastus nerve with our Dr. Canal block, which we discuss in a different video."
+    },
+    {
+      "start": 114.16,
+      "end": 118.2,
+      "text": "Finally, looking again at the back of the knee, there are fibers from the tibial and optoidar"
+    },
+    {
+      "start": 118.2,
+      "end": 120.28,
+      "text": "nerves that form the papal teal plexus."
+    },
+    {
+      "start": 120.64,
+      "end": 123.74,
+      "text": "This supplies the back of the knee joint and is a target of the eye pack block."
+    },
+    {
+      "start": 123.74,
+      "end": 126.14,
+      "text": "Okay, so let's get back to our three-genicular nerves."
+    },
+    {
+      "start": 126.66,
+      "end": 130.52,
+      "text": "The technique involves using ultrasound to visualize the bony anatomy of the knee joint,"
+    },
+    {
+      "start": 130.8,
+      "end": 133.9,
+      "text": "and then depositing local anesthetic at each of these three locations."
+    },
+    {
+      "start": 134.46,
+      "end": 138.28,
+      "text": "We also block the nerve to vastus intermedius, just above the knee as well."
+    },
+    {
+      "start": 138.9,
+      "end": 142.88,
+      "text": "It's in a reliable location just anterior to the femoral shaft, and it's easy to target"
+    },
+    {
+      "start": 142.88,
+      "end": 144.04,
+      "text": "while you're doing the geniculars."
+    },
+    {
+      "start": 144.46,
+      "end": 146.9,
+      "text": "Here are the probe positions for the three-genicular nerve blocks."
+    },
+    {
+      "start": 148.21,
+      "end": 152.05,
+      "text": "For the two superior nerves, the probe is angled at 45 degrees, so that you're catching"
+    },
+    {
+      "start": 152.05,
+      "end": 156.33,
+      "text": "the anterior lateral and anterior medial femur. In each case the needle is advanced to"
+    },
+    {
+      "start": 156.33,
+      "end": 160.17,
+      "text": "a war the knee joint. Here's the probe and needle position for blocking the nerve"
+    },
+    {
+      "start": 160.17,
+      "end": 164.98,
+      "text": "to vases intermedius. You're looking for the hyper-echoic line of the femur as it flares"
+    },
+    {
+      "start": 164.98,
+      "end": 169.82,
+      "text": "up to become the epicondyle. A useful landmark is the small, genicular artery that can often"
+    },
+    {
+      "start": 169.82,
+      "end": 173.62,
+      "text": "be seen right where the femur starts to slope up, although it's not always visible."
+    },
+    {
+      "start": 174.37,
+      "end": 177.69,
+      "text": "The genicular nerves are quite small and for that reason we don't try to visualize them"
+    },
+    {
+      "start": 177.69,
+      "end": 181.69,
+      "text": "on ultrasound. Instead the needle is directed to contact bone at the bottom of the slope"
+    },
+    {
+      "start": 181.69,
+      "end": 186.23,
+      "text": "in the general vicinity of the artery. Here's the needle passing through the muscle and tendon of"
+    },
+    {
+      "start": 186.23,
+      "end": 191.93,
+      "text": "vases medialis. Five mils of local anesthetic easily lifts off the soft tissue and spreads along"
+    },
+    {
+      "start": 191.93,
+      "end": 196.79,
+      "text": "the periosteum. The approach for the two superior genicular nerves is identical and just a mirror"
+    },
+    {
+      "start": 196.79,
+      "end": 203.44,
+      "text": "image of each other. Here's the approach for the inferior medial nerve. The probe is on the anterior"
+    },
+    {
+      "start": 203.44,
+      "end": 208.3,
+      "text": "medial tibia and the genicular artery is usually easily seen. A needle is advanced from the caught"
+    },
+    {
+      "start": 208.3,
+      "end": 214.02,
+      "text": "at aspect until bony contact is felt and then five mils of local anesthetic deposited here. Here's"
+    },
+    {
+      "start": 214.02,
+      "end": 217.74,
+      "text": "a block from nerve to vases intermedius. The probe is transverse, a few finger breaths"
+    },
+    {
+      "start": 217.74,
+      "end": 221.7,
+      "text": "about the patella, and five nils of local is placed on the femoral shaft right at 12"
+    },
+    {
+      "start": 221.7,
+      "end": 229.07,
+      "text": "o'clock. These investigators did a cadaver study to determine feasibility of genicator"
+    },
+    {
+      "start": 229.07,
+      "end": 233.29,
+      "text": "blocks and found that four mills of quarter percent bupivocane resulted in excellent spread"
+    },
+    {
+      "start": 233.29,
+      "end": 237.79,
+      "text": "that more than covered the appropriate area. Genicator blocks are easy to do, in an hour"
+    },
+    {
+      "start": 237.79,
+      "end": 242.93,
+      "text": "practice we've seen a reduction in postoperative opioids over the first 48 hours using bupivocane"
+    },
+    {
+      "start": 242.93,
+      "end": 247.14,
+      "text": "with some dexamethasone. Here are some things we've learned along the way. The artery is not"
+    },
+    {
+      "start": 247.14,
+      "end": 250.78,
+      "text": "always visible, but if you target the bone at the bottom of the slope that gets you in the right"
+    },
+    {
+      "start": 250.78,
+      "end": 255.78,
+      "text": "location. The in-plane technique can be challenging sometimes, and for that reason the out-of-plane is a"
+    },
+    {
+      "start": 255.78,
+      "end": 260.88,
+      "text": "great alternative. Same pro position, same ultrasound image, just be sure to come down very steep to"
+    },
+    {
+      "start": 260.88,
+      "end": 265.73,
+      "text": "contact the bone at the same location. We've made this a zero-cost technique by using the remainder"
+    },
+    {
+      "start": 265.73,
+      "end": 270.41,
+      "text": "from the vial of half percent pipicane we've just used for the spinal block, and we use the same"
+    },
+    {
+      "start": 270.41,
+      "end": 274.99,
+      "text": "block syringe and needle we just used for the eye pack block. We want to maximize the effect of the"
+    },
+    {
+      "start": 274.99,
+      "end": 278.07,
+      "text": "block, and so you're using a good dose to be pivot cane here, makes sense."
+    }
+  ]
+}

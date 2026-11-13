@@ -1,0 +1,533 @@
+{
+  "video_id": "YYk6NP0n6Cs",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/YYk6NP0n6Cs/asr.txt",
+  "segments": [
+    {
+      "start": 0.45,
+      "end": 4.63,
+      "text": "Hi, I'm Tom Cook, I'm an emergency physician and I practice in South Carolina with Prisma"
+    },
+    {
+      "start": 4.63,
+      "end": 6.47,
+      "text": "Health and the University of South Carolina."
+    },
+    {
+      "start": 7.05,
+      "end": 9.55,
+      "text": "This is a video about selecting appropriate targets who..."
+    },
+    {
+      "start": 10.1,
+      "end": 13.17,
+      "text": "access peripheral veins by using ultrasound."
+    },
+    {
+      "start": 13.41,
+      "end": 15.85,
+      "text": "We'll begin by examining the media aspect of the upper arm."
+    },
+    {
+      "start": 17.0,
+      "end": 19.52,
+      "text": "This is the most common place we tend to look for."
+    },
+    {
+      "start": 20.06,
+      "end": 23.37,
+      "text": "appropriate targets for peripheral venous catheters by ultrasound."
+    },
+    {
+      "start": 23.95,
+      "end": 28.43,
+      "text": "Just because the vessels tend to be very large, they're above the anti-cubital fossa so that"
+    },
+    {
+      "start": 28.43,
+      "end": 29.97,
+      "text": "But if we want to do..."
+    },
+    {
+      "start": 30.0,
+      "end": 35.13,
+      "text": "contrast, enhance CT scans, or other studies. We're able to do that. And typically"
+    },
+    {
+      "start": 35.13,
+      "end": 39.25,
+      "text": "we place a catheter in the area, can stay in there for a number of days without"
+    },
+    {
+      "start": 39.25,
+      "end": 39.97,
+      "text": "without being..."
+    },
+    {
+      "start": 40.03,
+      "end": 41.63,
+      "text": "changed out to a different location."
+    },
+    {
+      "start": 42.69,
+      "end": 45.45,
+      "text": "When we do this, it's important to understand the orientation."
+    },
+    {
+      "start": 45.75,
+      "end": 48.87,
+      "text": "The top of the screen is now the media aspect of the arm."
+    },
+    {
+      "start": 49.19,
+      "end": 49.97,
+      "text": "You can see."
+    },
+    {
+      "start": 50.0,
+      "end": 55.88,
+      "text": "that these vessels right here are pretty easy to identify, and then we also see the humorous"
+    },
+    {
+      "start": 55.88,
+      "end": 59.48,
+      "text": "down here with the shadowing that that bone creates."
+    },
+    {
+      "start": 60.26,
+      "end": 62.6,
+      "text": "Now we're only really interested in the top part of the screen,"
+    },
+    {
+      "start": 62.82,
+      "end": 64.68,
+      "text": "so we're going to decrease the depth."
+    },
+    {
+      "start": 65.67,
+      "end": 68.79,
+      "text": "And now we need to identify different target structures"
+    },
+    {
+      "start": 68.79,
+      "end": 69.93,
+      "text": "that we could potentially place."
+    },
+    {
+      "start": 70.03,
+      "end": 76.64,
+      "text": "When we do this, we see several round or ovular structures that more than likely represent"
+    },
+    {
+      "start": 76.64,
+      "end": 79.62,
+      "text": "vessels that we can get involved with or that we could use for this procedure."
+    },
+    {
+      "start": 80.13,
+      "end": 88.52,
+      "text": "But we need to figure out which ones are veins which ones are arteries and which ones may potentially be nerves and the simplest way to do"
+    },
+    {
+      "start": 88.52,
+      "end": 89.78,
+      "text": "This is just by compression"
+    },
+    {
+      "start": 90.8,
+      "end": 94.3,
+      "text": "So you can see as I apply compression"
+    },
+    {
+      "start": 94.3,
+      "end": 96.38,
+      "text": "to the soft tissue in the medial arm,"
+    },
+    {
+      "start": 96.97,
+      "end": 99.85,
+      "text": "that there's one vessel in particular, a large one."
+    },
+    {
+      "start": 100.0,
+      "end": 102.1,
+      "text": "just to the right side of the screen that compresses."
+    },
+    {
+      "start": 102.76,
+      "end": 105.04,
+      "text": "And so this seems to be a very, very good target."
+    },
+    {
+      "start": 105.14,
+      "end": 106.24,
+      "text": "It's obviously a vein."
+    },
+    {
+      "start": 106.7,
+      "end": 109.18,
+      "text": "If you look at the vessel to the left of that structure,"
+    },
+    {
+      "start": 109.42,
+      "end": 109.98,
+      "text": "it doesn't."
+    },
+    {
+      "start": 110.0,
+      "end": 113.56,
+      "text": "not to compress, and that would indicate that it's most likely an artery."
+    },
+    {
+      "start": 114.86,
+      "end": 119.98,
+      "text": "You also interestingly enough have another structure just superficial to that artery that"
+    },
+    {
+      "start": 120.0,
+      "end": 124.66,
+      "text": "we've identified, and that looks like a sort of a honeycomb appearance."
+    },
+    {
+      "start": 124.88,
+      "end": 128.32,
+      "text": "In that, in this particular case, is the median nerve."
+    },
+    {
+      "start": 129.16,
+      "end": 129.98,
+      "text": "And so in just..."
+    },
+    {
+      "start": 130.0,
+      "end": 135.19,
+      "text": "Generally, we want to do everything we can to avoid in any way injuring nerves, particularly"
+    },
+    {
+      "start": 135.19,
+      "end": 136.37,
+      "text": "this nervous and important nerve."
+    },
+    {
+      "start": 137.09,
+      "end": 139.77,
+      "text": "And so this is another reason ultrasound is really, really benefit."
+    },
+    {
+      "start": 140.1,
+      "end": 147.69,
+      "text": "for using in procedures because we can direct the needle and the catheter well away from"
+    },
+    {
+      "start": 147.69,
+      "end": 149.51,
+      "text": "the structure and avoid any potential injury."
+    },
+    {
+      "start": 150.0,
+      "end": 154.32,
+      "text": "other strategies you can use if you're considering using ultrasound to identify"
+    },
+    {
+      "start": 154.32,
+      "end": 159.48,
+      "text": "arteries or veins and this has to do with color doppler so"
+    },
+    {
+      "start": 160.0,
+      "end": 169.97,
+      "text": "I'll go ahead and deploy that and we'll go ahead and resize this box just a little bit and you can see that if I play"
+    },
+    {
+      "start": 170.0,
+      "end": 175.49,
+      "text": "I sit over this particular structure, and I angle the transducer so that it points towards"
+    },
+    {
+      "start": 175.49,
+      "end": 179.86,
+      "text": "the patient's head, so the blood flow is moving towards the transducer."
+    },
+    {
+      "start": 180.0,
+      "end": 186.49,
+      "text": "I get a pulsatile red signal and this of course indicates that the patient that particular structure is an artery now"
+    },
+    {
+      "start": 187.32,
+      "end": 189.96,
+      "text": "If I take that same box and I move"
+    },
+    {
+      "start": 190.0,
+      "end": 194.24,
+      "text": "it just a little bit to the right and I look at that. I really don't see any"
+    },
+    {
+      "start": 194.24,
+      "end": 197.88,
+      "text": "pulsatile activity. Do you see a little bit of blood moving away from the"
+    },
+    {
+      "start": 197.88,
+      "end": 199.98,
+      "text": "transducer? So that makes me"
+    },
+    {
+      "start": 200.0,
+      "end": 205.02,
+      "text": "think it's a vein but I can even go one step further and compress the"
+    },
+    {
+      "start": 205.66,
+      "end": 209.9,
+      "text": "soft tissue distal to where I'm scanning and you can"
+    },
+    {
+      "start": 210.1,
+      "end": 215.72,
+      "text": "that I can flush that vein with blood, which is picked up on color Doppler, and this is called"
+    },
+    {
+      "start": 215.72,
+      "end": 219.92,
+      "text": "distal augmentation. So it's just another trick you can use to"
+    },
+    {
+      "start": 220.0,
+      "end": 226.03,
+      "text": "very precisely understand which structure is an artery with structures of"
+    },
+    {
+      "start": 226.03,
+      "end": 229.36,
+      "text": "vein. Now let's go back one more time."
+    },
+    {
+      "start": 230.74,
+      "end": 234.66,
+      "text": "to this idea of the median nerve being in that area."
+    },
+    {
+      "start": 234.82,
+      "end": 238.58,
+      "text": "And again, this structure is a sort of honeycombed appearance"
+    },
+    {
+      "start": 238.58,
+      "end": 238.94,
+      "text": "here."
+    },
+    {
+      "start": 239.48,
+      "end": 239.94,
+      "text": "One more thing."
+    },
+    {
+      "start": 240.0,
+      "end": 247.78,
+      "text": "to keep in mind is if we compress the tissue nerves just like arteries, do not demonstrate"
+    },
+    {
+      "start": 247.78,
+      "end": 248.96,
+      "text": "any compression whatsoever."
+    },
+    {
+      "start": 251.02,
+      "end": 255.24,
+      "text": "The next thing you'll want to do when you're looking at these structures and you've sort"
+    },
+    {
+      "start": 255.24,
+      "end": 259.43,
+      "text": "of made some decisions is, is this a good target to go after?"
+    },
+    {
+      "start": 259.57,
+      "end": 259.97,
+      "text": "So maybe the..."
+    },
+    {
+      "start": 260.0,
+      "end": 265.76,
+      "text": "The vein is very, very small, or it's a bit deeper, the deeper the vessel, the harder it"
+    },
+    {
+      "start": 265.76,
+      "end": 266.5,
+      "text": "is to cannulate."
+    },
+    {
+      "start": 267.58,
+      "end": 269.84,
+      "text": "And so just a couple of rules of thumb to go by."
+    },
+    {
+      "start": 270.42,
+      "end": 275.06,
+      "text": "The first one is you want to try and find vessels that are at least four millimeters wide."
+    },
+    {
+      "start": 275.3,
+      "end": 279.62,
+      "text": "Remember, you're trying to put some pretty big catheters in these vessels and so vessels"
+    },
+    {
+      "start": 279.62,
+      "end": 279.98,
+      "text": "that are"
+    },
+    {
+      "start": 280.0,
+      "end": 285.75,
+      "text": "four millimeters wide or greater tend to be better targets and so for this"
+    },
+    {
+      "start": 285.75,
+      "end": 289.16,
+      "text": "situation I'll go ahead and freeze the image and I'll go up and bring."
+    },
+    {
+      "start": 290.32,
+      "end": 292.94,
+      "text": "some calipers to measure this structure."
+    },
+    {
+      "start": 293.54,
+      "end": 295.5,
+      "text": "And you can see just looking at that,"
+    },
+    {
+      "start": 295.68,
+      "end": 297.66,
+      "text": "this is a pretty good structure right here,"
+    },
+    {
+      "start": 297.78,
+      "end": 299.96,
+      "text": "eight millimeters, that's a really great structure to go at."
+    },
+    {
+      "start": 300.0,
+      "end": 301.76,
+      "text": "after for putting a catheter in."
+    },
+    {
+      "start": 302.44,
+      "end": 304.14,
+      "text": "And then the second criteria I talked about"
+    },
+    {
+      "start": 307.09,
+      "end": 308.49,
+      "text": "was how deep this is."
+    },
+    {
+      "start": 310.19,
+      "end": 313.61,
+      "text": "And we can see that this is only about four millimeters deep."
+    },
+    {
+      "start": 314.21,
+      "end": 317.03,
+      "text": "So this is a fantastic vessel to go after"
+    },
+    {
+      "start": 317.03,
+      "end": 319.49,
+      "text": "if you're going to try and place a peripheral catheter."
+    },
+    {
+      "start": 321.89,
+      "end": 326.03,
+      "text": "So the last thing I'll bring up is you would like to get some idea of the path of the"
+    },
+    {
+      "start": 326.03,
+      "end": 329.64,
+      "text": "blood vessel and if it is in fact straight."
+    },
+    {
+      "start": 330.0,
+      "end": 331.06,
+      "text": "There's a couple of ways to do this."
+    },
+    {
+      "start": 331.22,
+      "end": 333.34,
+      "text": "Probably the easiest one is just to start to move."
+    },
+    {
+      "start": 334.18,
+      "end": 336.5,
+      "text": "The transducer up and down the arm,"
+    },
+    {
+      "start": 336.68,
+      "end": 339.1,
+      "text": "trying to keep the blood vessel in the middle,"
+    },
+    {
+      "start": 339.54,
+      "end": 339.98,
+      "text": "and you..."
+    },
+    {
+      "start": 340.0,
+      "end": 345.57,
+      "text": "You can see as we move this up and down the arm, that blood vessel, that big vein that"
+    },
+    {
+      "start": 345.57,
+      "end": 349.89,
+      "text": "we would like to consider to be a target, pretty much stays in the middle of the screen."
+    },
+    {
+      "start": 350.0,
+      "end": 356.23,
+      "text": "And this makes it a lot easier when you're passing the catheter, so it doesn't make a sudden turn one way or the other,"
+    },
+    {
+      "start": 356.47,
+      "end": 358.39,
+      "text": "and you end up missing the vein."
+    },
+    {
+      "start": 360.0,
+      "end": 364.76,
+      "text": "successfully completing the procedure. So just in terms of summering, when you go"
+    },
+    {
+      "start": 364.76,
+      "end": 369.92,
+      "text": "and look at these structures to identify appropriate vessels for cannulation."
+    },
+    {
+      "start": 370.64,
+      "end": 373.38,
+      "text": "Remember, compression is the easiest thing to do"
+    },
+    {
+      "start": 373.38,
+      "end": 374.9,
+      "text": "to differentiate arteries from veins"
+    },
+    {
+      "start": 374.9,
+      "end": 377.6,
+      "text": "and that you would like to go after veins"
+    },
+    {
+      "start": 377.6,
+      "end": 379.76,
+      "text": "that are not more than one centimeter."
+    },
+    {
+      "start": 380.0,
+      "end": 383.81,
+      "text": "and at least four millimeters wide in diameter."
+    }
+  ]
+}

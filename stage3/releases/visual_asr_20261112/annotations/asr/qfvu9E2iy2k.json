@@ -1,0 +1,1758 @@
+{
+  "video_id": "qfvu9E2iy2k",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/qfvu9E2iy2k/asr.txt",
+  "segments": [
+    {
+      "start": 1.25,
+      "end": 3.39,
+      "text": "Welcome to our AEM webinar."
+    },
+    {
+      "start": 3.89,
+      "end": 5.39,
+      "text": "My name is Wolf Ambruster."
+    },
+    {
+      "start": 5.96,
+      "end": 7.52,
+      "text": "My name is Rüdiger Aichholtz."
+    },
+    {
+      "start": 7.66,
+      "end": 8.8,
+      "text": "And I'm Thomas Nodisen."
+    },
+    {
+      "start": 9.3,
+      "end": 9.88,
+      "text": "In our subject."
+    },
+    {
+      "start": 10.0,
+      "end": 17.56,
+      "text": "today is needed to control in ultrasound guided interventions and procedures. So mainly we're"
+    },
+    {
+      "start": 17.56,
+      "end": 19.92,
+      "text": "talking about. I just don't got it. Nerve blog."
+    },
+    {
+      "start": 20.03,
+      "end": 25.42,
+      "text": "and vascular axis. You see three speakers here because we are doing a lot of"
+    },
+    {
+      "start": 25.42,
+      "end": 26.94,
+      "text": "other sound courses together."
+    },
+    {
+      "start": 30.0,
+      "end": 33.85,
+      "text": "Why do we recommend to use ultrasound and invasive procedures?"
+    },
+    {
+      "start": 34.83,
+      "end": 39.6,
+      "text": "We all know the cases with landmark vascular x's with difficulty."
+    },
+    {
+      "start": 40.0,
+      "end": 49.91,
+      "text": "situations where we have displacements of catheters as shown here or in this photo you see a lot of catheters and the one in the"
+    },
+    {
+      "start": 50.0,
+      "end": 57.88,
+      "text": "with the red text obviously has a little bit of an unusual position on the lateral side of the"
+    },
+    {
+      "start": 57.88,
+      "end": 59.62,
+      "text": "and if you look at this"
+    },
+    {
+      "start": 60.29,
+      "end": 69.98,
+      "text": "on a Chessix, right? You will find the other sound guided placements of two catheters, the blue ones, and the displacement of the..."
+    },
+    {
+      "start": 70.0,
+      "end": 78.21,
+      "text": "rat one which was placed in the subclavian artery in an emergency situation. So nobody"
+    },
+    {
+      "start": 78.83,
+      "end": 79.93,
+      "text": "tell us that"
+    },
+    {
+      "start": 80.0,
+      "end": 89.13,
+      "text": "using mantra sound reduces complications as such. So we need to have some ideas how to really"
+    },
+    {
+      "start": 90.0,
+      "end": 99.97,
+      "text": "master this method professionally. So what do we need? We normally talk about three pillars as preconditions for"
+    },
+    {
+      "start": 100.0,
+      "end": 106.1,
+      "text": "safe and successful ultrasound guided procedures. So the first one is basically"
+    },
+    {
+      "start": 106.1,
+      "end": 109.78,
+      "text": "probe maneuver. So we need to know and to practice"
+    },
+    {
+      "start": 110.16,
+      "end": 115.93,
+      "text": "how to handle the probe, how to get what we want on the ultrasound screen."
+    },
+    {
+      "start": 116.27,
+      "end": 119.97,
+      "text": "So how to get the target structure and the second..."
+    },
+    {
+      "start": 120.0,
+      "end": 122.9,
+      "text": "what we need, the second pillar is Sono Anatomy,"
+    },
+    {
+      "start": 123.02,
+      "end": 127.76,
+      "text": "so we need to have deep knowledge of what we are looking at"
+    },
+    {
+      "start": 127.76,
+      "end": 129.98,
+      "text": "and the third thing, and this is going to be the..."
+    },
+    {
+      "start": 130.03,
+      "end": 139.56,
+      "text": "thing we were we are talking about today this is needle tip control to start with we go over some"
+    },
+    {
+      "start": 140.29,
+      "end": 147.09,
+      "text": "basic information so that we know what we're talking about within the rest of this webinar."
+    },
+    {
+      "start": 147.09,
+      "end": 149.97,
+      "text": "So, we look at the letter of net."
+    },
+    {
+      "start": 150.0,
+      "end": 156.84,
+      "text": "on these two videos here and the anatomical structures are shown in a"
+    },
+    {
+      "start": 156.84,
+      "end": 159.98,
+      "text": "transverse cut which is also known as"
+    },
+    {
+      "start": 160.0,
+      "end": 167.13,
+      "text": "short axis. So the other term we need is obviously a longitudinal cut or long"
+    },
+    {
+      "start": 167.13,
+      "end": 169.67,
+      "text": "axis which is shown here on a radial artery."
+    },
+    {
+      "start": 170.29,
+      "end": 171.87,
+      "text": "on the mid-4 arm."
+    },
+    {
+      "start": 173.19,
+      "end": 178.13,
+      "text": "And in contrast to this, what we call axis terminology,"
+    },
+    {
+      "start": 179.19,
+      "end": 179.89,
+      "text": "we talk about."
+    },
+    {
+      "start": 180.03,
+      "end": 188.99,
+      "text": "Plains. Plains refer to the needle guidance in relation to the scanning plane and not to anatomy. So the"
+    },
+    {
+      "start": 190.96,
+      "end": 197.36,
+      "text": "terminology refers to anatomy only and the plane terminology refers to how to"
+    },
+    {
+      "start": 197.36,
+      "end": 199.48,
+      "text": "guide the needle into the scanning plane."
+    },
+    {
+      "start": 200.03,
+      "end": 204.11,
+      "text": "And this shows an out-of-plane procedure here."
+    },
+    {
+      "start": 204.73,
+      "end": 206.57,
+      "text": "So with only one little point"
+    },
+    {
+      "start": 206.57,
+      "end": 209.51,
+      "text": "where the needle cuts the scanning plane, whereas here."
+    },
+    {
+      "start": 210.06,
+      "end": 215.68,
+      "text": "In an in-plane procedure, we ideally see the whole needle in this canning plane."
+    },
+    {
+      "start": 217.4,
+      "end": 219.0,
+      "text": "What else is important before we start?"
+    },
+    {
+      "start": 219.4,
+      "end": 219.96,
+      "text": "We need..."
+    },
+    {
+      "start": 220.1,
+      "end": 222.66,
+      "text": "to know how to orientate the marker and the probe."
+    },
+    {
+      "start": 222.88,
+      "end": 224.62,
+      "text": "So how to put the probe on the patient"
+    },
+    {
+      "start": 225.1,
+      "end": 229.82,
+      "text": "to have a good orientation with a needle in the patient."
+    },
+    {
+      "start": 230.16,
+      "end": 231.6,
+      "text": "and on the other sounds screen."
+    },
+    {
+      "start": 231.94,
+      "end": 234.38,
+      "text": "So as a basic rule, we recommend to"
+    },
+    {
+      "start": 234.94,
+      "end": 239.34,
+      "text": "orientate the probe marker to our own left eye."
+    },
+    {
+      "start": 240.0,
+      "end": 245.98,
+      "text": "results in a good orientation so that the left side on the screen is in fact also the"
+    },
+    {
+      "start": 245.98,
+      "end": 249.96,
+      "text": "left side of the probe on the patient. This is a general rule."
+    },
+    {
+      "start": 250.0,
+      "end": 259.98,
+      "text": "Of course, in some procedures we have exceptions from this. Okay, so marker to the left eye of the examiner. Let's look on"
+    },
+    {
+      "start": 260.29,
+      "end": 265.55,
+      "text": "some ultrasound guided interventions, so we put the probe on the patient,"
+    },
+    {
+      "start": 266.73,
+      "end": 269.86,
+      "text": "technical and puncture is"
+    },
+    {
+      "start": 270.1,
+      "end": 276.15,
+      "text": "And as it happens to be, the needle gets behind the scanner plane."
+    },
+    {
+      "start": 276.43,
+      "end": 277.73,
+      "text": "And so we create a hematoma."
+    },
+    {
+      "start": 278.43,
+      "end": 279.97,
+      "text": "And we withdraw the needle."
+    },
+    {
+      "start": 280.0,
+      "end": 286.23,
+      "text": "get the second hematama try again, get a third hematama. So this is the"
+    },
+    {
+      "start": 286.23,
+      "end": 289.83,
+      "text": "situation that to be honest happens again and again."
+    },
+    {
+      "start": 290.03,
+      "end": 296.18,
+      "text": "So what was wrong here? So ultrasound is such doesn't really improve anything"
+    },
+    {
+      "start": 296.18,
+      "end": 299.91,
+      "text": "So in this case, there was no needle tip"
+    },
+    {
+      "start": 300.22,
+      "end": 309.7,
+      "text": "So remember never lose your needle tip and for this we need methods how to actually achieve this"
+    },
+    {
+      "start": 311.54,
+      "end": 314.72,
+      "text": "Let's go over some basic prop handling methods."
+    },
+    {
+      "start": 315.58,
+      "end": 318.08,
+      "text": "So first of all, in an auto plane procedure,"
+    },
+    {
+      "start": 318.5,
+      "end": 319.98,
+      "text": "we recommend to..."
+    },
+    {
+      "start": 320.0,
+      "end": 327.63,
+      "text": "direct the bevel of the needle towards the probe. The reason is that once the needle gets into"
+    },
+    {
+      "start": 327.63,
+      "end": 329.86,
+      "text": "the scanning plane, the bevel off."
+    },
+    {
+      "start": 330.0,
+      "end": 337.32,
+      "text": "needle creates a good reflection of the sound waves back to the probe, whereas when he direct the"
+    },
+    {
+      "start": 337.7,
+      "end": 339.88,
+      "text": "downwards or if you"
+    },
+    {
+      "start": 340.29,
+      "end": 347.79,
+      "text": "insert the needle too deeply, then you will have the same conditions for the"
+    },
+    {
+      "start": 347.79,
+      "end": 349.89,
+      "text": "sound reflection, so part of the sound is"
+    },
+    {
+      "start": 350.03,
+      "end": 356.09,
+      "text": "being reflected away from the probe, so you won't have a good ultrasound image."
+    },
+    {
+      "start": 356.09,
+      "end": 359.35,
+      "text": "So, battle up is important in ultrasound."
+    },
+    {
+      "start": 360.06,
+      "end": 369.55,
+      "text": "out of plain procedures. Let's look at in plain procedures so whenever it is possible we try to have a"
+    },
+    {
+      "start": 370.0,
+      "end": 378.7,
+      "text": "a little needle path in relation to the footprint. So this again creates good reflections of the"
+    },
+    {
+      "start": 378.7,
+      "end": 379.98,
+      "text": "here, some way, respect to the pre-"
+    },
+    {
+      "start": 380.0,
+      "end": 385.08,
+      "text": "And of course, in this case, the bevel is directed towards the probe, too."
+    },
+    {
+      "start": 386.34,
+      "end": 387.1,
+      "text": "And this is possible."
+    },
+    {
+      "start": 387.32,
+      "end": 389.75,
+      "text": "Let's say in this side."
+    },
+    {
+      "start": 390.1,
+      "end": 398.02,
+      "text": "nerve blocks or in hemp blocks too, but we may have anatomical situations where this"
+    },
+    {
+      "start": 398.02,
+      "end": 399.97,
+      "text": "This is difficult, so..."
+    },
+    {
+      "start": 400.0,
+      "end": 405.9,
+      "text": "The angle of the needle is a little steeper or in vascular axis here in a subclavian axis."
+    },
+    {
+      "start": 406.51,
+      "end": 409.77,
+      "text": "There is no option to have this"
+    },
+    {
+      "start": 410.06,
+      "end": 419.96,
+      "text": "parallel needle path and relation to the footprint. So what do we do? As a very simple method, we can try to work with our crow. So this is pro"
+    },
+    {
+      "start": 420.0,
+      "end": 426.89,
+      "text": "handling again. This is the situation so most of the sound energy is being reflected away from the"
+    },
+    {
+      "start": 426.89,
+      "end": 429.56,
+      "text": "So what we try to do"
+    },
+    {
+      "start": 430.06,
+      "end": 437.46,
+      "text": "whenever it is possible and atomically, we slightly put emphasis on one corner of the probe"
+    },
+    {
+      "start": 437.46,
+      "end": 439.92,
+      "text": "to have a more parallel cross of."
+    },
+    {
+      "start": 440.0,
+      "end": 444.91,
+      "text": "the needle in relation to the footprint, and hence we get better some reflection."
+    },
+    {
+      "start": 447.11,
+      "end": 448.69,
+      "text": "And this..."
+    },
+    {
+      "start": 450.22,
+      "end": 459.17,
+      "text": "method is also available as a software solution of some manufacturers, which we see here."
+    },
+    {
+      "start": 460.1,
+      "end": 465.12,
+      "text": "So normally we believe that the sant wave actually"
+    },
+    {
+      "start": 465.4,
+      "end": 467.88,
+      "text": "travels in a perky and dichlor direction"
+    },
+    {
+      "start": 467.88,
+      "end": 469.98,
+      "text": "from the footprint to..."
+    },
+    {
+      "start": 470.13,
+      "end": 475.15,
+      "text": "into the tissue, but we can actually tell the pietzo crystals to"
+    },
+    {
+      "start": 475.15,
+      "end": 479.97,
+      "text": "to regulate and to send the set wave in a"
+    },
+    {
+      "start": 480.0,
+      "end": 485.46,
+      "text": "specific angle in relation to the footprint and this is shown here so you see"
+    },
+    {
+      "start": 485.46,
+      "end": 489.62,
+      "text": "this line with the little points and this is actually the direction of the"
+    },
+    {
+      "start": 489.62,
+      "end": 489.98,
+      "text": "some way."
+    },
+    {
+      "start": 490.03,
+      "end": 493.05,
+      "text": "which are directed towards the targets structure."
+    },
+    {
+      "start": 493.92,
+      "end": 498.72,
+      "text": "So we have the probe sitting on top of the ultrasound image here"
+    },
+    {
+      "start": 498.72,
+      "end": 499.88,
+      "text": "and now the sound."
+    },
+    {
+      "start": 500.0,
+      "end": 506.92,
+      "text": "travels onto this catheter and therefore creates excellent sound reflections back to the probe."
+    },
+    {
+      "start": 508.08,
+      "end": 509.82,
+      "text": "And this is shown here in"
+    },
+    {
+      "start": 510.0,
+      "end": 519.05,
+      "text": "a plural catheter but there is one thing you got to keep in mind because beyond this line"
+    },
+    {
+      "start": 519.05,
+      "end": 519.79,
+      "text": "with the little dots"
+    },
+    {
+      "start": 520.67,
+      "end": 529.87,
+      "text": "The image isn't as good as inside this field, and the reason is that not many piazzos."
+    },
+    {
+      "start": 530.26,
+      "end": 539.9,
+      "text": "create the b-mode image in this area. So whenever you use this software solution, you got to keep in mind"
+    },
+    {
+      "start": 540.1,
+      "end": 546.45,
+      "text": "And not to have your target structure outside of this field, so I'll just don't go here"
+    },
+    {
+      "start": 546.45,
+      "end": 549.71,
+      "text": "because visibility of your needle tip will be worse."
+    },
+    {
+      "start": 550.32,
+      "end": 552.26,
+      "text": "than not having this motor."
+    },
+    {
+      "start": 555.5,
+      "end": 556.78,
+      "text": "Let's talk about hardware solutions."
+    },
+    {
+      "start": 557.08,
+      "end": 559.96,
+      "text": "Of course, we all know ecogenic needles and..."
+    },
+    {
+      "start": 560.03,
+      "end": 563.07,
+      "text": "They have got these little corner stones inside,"
+    },
+    {
+      "start": 563.29,
+      "end": 565.46,
+      "text": "they create a better reflection,"
+    },
+    {
+      "start": 566.63,
+      "end": 568.69,
+      "text": "despite very steep angles."
+    },
+    {
+      "start": 568.99,
+      "end": 569.97,
+      "text": "And this is what you can see here."
+    },
+    {
+      "start": 570.0,
+      "end": 575.83,
+      "text": "you see a normal needle which actually goes in in a quite shallow angle and the"
+    },
+    {
+      "start": 575.83,
+      "end": 579.61,
+      "text": "ultrasound needle is inserted much steeper and creates a"
+    },
+    {
+      "start": 580.0,
+      "end": 584.52,
+      "text": "brighter signal. And on the second image, you see a very steep angle on the"
+    },
+    {
+      "start": 584.52,
+      "end": 589.54,
+      "text": "other side and on the other side you only see a"
+    },
+    {
+      "start": 590.0,
+      "end": 599.9,
+      "text": "slide shadow. So there are no reflections of the needle shaft back to the probe, but because the needle is perfectly placed in"
+    },
+    {
+      "start": 600.0,
+      "end": 606.6,
+      "text": "the center of the scanning plane, it creates a shadow below the needle. So you only have an"
+    },
+    {
+      "start": 606.6,
+      "end": 609.98,
+      "text": "indirect vision of this needle. So whenever..."
+    },
+    {
+      "start": 610.0,
+      "end": 616.24,
+      "text": "you have very steep puncture angles, or you work very close to"
+    },
+    {
+      "start": 616.24,
+      "end": 619.98,
+      "text": "vulnerable structures like the plural. Why not use it?"
+    },
+    {
+      "start": 620.0,
+      "end": 629.26,
+      "text": "an echogenic needle. As an example, we present a vascular axis of the auxiliary vein or the"
+    },
+    {
+      "start": 630.06,
+      "end": 636.12,
+      "text": "So what you see here is the normal sono anatomy, so on the"
+    },
+    {
+      "start": 636.98,
+      "end": 639.76,
+      "text": "Medial side we look at the vein"
+    },
+    {
+      "start": 640.19,
+      "end": 645.03,
+      "text": "with the typical double pulsation and lettering from this."
+    },
+    {
+      "start": 645.25,
+      "end": 648.73,
+      "text": "We have the subplotting artery, and again, lettering,"
+    },
+    {
+      "start": 648.87,
+      "end": 649.91,
+      "text": "we, we,"
+    },
+    {
+      "start": 650.0,
+      "end": 658.36,
+      "text": "You see structures, more ecogenic structures which represent the brachial plexus, and on"
+    },
+    {
+      "start": 658.36,
+      "end": 659.98,
+      "text": "the other side you see the..."
+    },
+    {
+      "start": 660.03,
+      "end": 669.63,
+      "text": "with some long sliding and under the plexus structures you see a little bit of a bound shadow this is the rip however"
+    },
+    {
+      "start": 670.0,
+      "end": 677.48,
+      "text": "We only use this ultrasound image as a general anatomical orientation so we want to do the puncture"
+    },
+    {
+      "start": 677.48,
+      "end": 678.6,
+      "text": "and long axis."
+    },
+    {
+      "start": 678.6,
+      "end": 679.97,
+      "text": "So for this, we..."
+    },
+    {
+      "start": 680.0,
+      "end": 687.5,
+      "text": "rotate the probe, we deliberately place the clever on the image, so it's just under the"
+    },
+    {
+      "start": 687.5,
+      "end": 689.96,
+      "text": "pictogram, under the body marker."
+    },
+    {
+      "start": 690.0,
+      "end": 699.98,
+      "text": "And now we've got the subclavian vein in long axis and under the vein we've got the first drip and then we've got purer and the second."
+    },
+    {
+      "start": 700.03,
+      "end": 705.65,
+      "text": "And as we know that the artery is lateral to the vein, we just check it to be"
+    },
+    {
+      "start": 706.0,
+      "end": 709.22,
+      "text": "to be certain to be also safe for the patient."
+    },
+    {
+      "start": 710.0,
+      "end": 716.82,
+      "text": "check the artery and in best-scanning conditions we also might place the pathway of Doppler inside"
+    },
+    {
+      "start": 716.82,
+      "end": 719.96,
+      "text": "here and go back to the..."
+    },
+    {
+      "start": 720.03,
+      "end": 725.92,
+      "text": "vein, take an ultrasound needle because it's a steep angle and the direction of the needle"
+    },
+    {
+      "start": 725.92,
+      "end": 729.98,
+      "text": "is towards the first rib as an addition."
+    },
+    {
+      "start": 730.0,
+      "end": 735.35,
+      "text": "additional safety feature not to cause a new authorics."
+    },
+    {
+      "start": 736.31,
+      "end": 739.97,
+      "text": "And here again, you can see how..."
+    },
+    {
+      "start": 740.38,
+      "end": 749.77,
+      "text": "The gut wire is placed directly into the vessel, so some experienced users do not use"
+    },
+    {
+      "start": 750.0,
+      "end": 757.3,
+      "text": "syringes anymore on the needle, so they pre-position the gut wire inside the needle and then place"
+    },
+    {
+      "start": 757.3,
+      "end": 759.98,
+      "text": "with the needle to inside the vessel under the..."
+    },
+    {
+      "start": 760.0,
+      "end": 763.48,
+      "text": "direct vision and then insert the cut wire directly."
+    },
+    {
+      "start": 764.53,
+      "end": 768.73,
+      "text": "This is quite smart actually, but only for experienced users."
+    },
+    {
+      "start": 770.67,
+      "end": 771.87,
+      "text": "What else is available?"
+    },
+    {
+      "start": 772.49,
+      "end": 774.33,
+      "text": "So on the hardware side."
+    },
+    {
+      "start": 774.49,
+      "end": 779.98,
+      "text": "So we have options to have, like in-"
+    },
+    {
+      "start": 780.0,
+      "end": 787.08,
+      "text": "in plain guidance for probes. So there is a little plastic clip which we connect to the probe"
+    },
+    {
+      "start": 787.08,
+      "end": 789.4,
+      "text": "then we have a stirrole cover."
+    },
+    {
+      "start": 790.06,
+      "end": 794.84,
+      "text": "And on the lateral side of the probe, we've got this little device that keeps the needle"
+    },
+    {
+      "start": 794.84,
+      "end": 799.0,
+      "text": "inside the scanning plane only for in-plane procedures."
+    },
+    {
+      "start": 800.0,
+      "end": 807.01,
+      "text": "the result so it kind of prevents on the one hand the lateral displacement of the needle in"
+    },
+    {
+      "start": 807.01,
+      "end": 809.97,
+      "text": "relation to the scanning plane and also it prevents"
+    },
+    {
+      "start": 810.0,
+      "end": 818.1,
+      "text": "the rotation error, so that the needle is not in the same direction as the scanning plant."
+    },
+    {
+      "start": 820.0,
+      "end": 829.06,
+      "text": "So we show this device again on a subclavian vein puncture here, so the needle is inserted"
+    },
+    {
+      "start": 829.06,
+      "end": 829.84,
+      "text": "and you see here."
+    },
+    {
+      "start": 830.0,
+      "end": 835.5,
+      "text": "that the needle is just slightly too short so we move the probe away a"
+    },
+    {
+      "start": 835.5,
+      "end": 839.97,
+      "text": "tiny little bit until we safely get into the vessel and here you see the"
+    },
+    {
+      "start": 840.06,
+      "end": 847.6,
+      "text": "technique, how to preposition the gut wire and very cautiously insert it into the vessel."
+    },
+    {
+      "start": 848.52,
+      "end": 849.98,
+      "text": "And this is something we would..."
+    },
+    {
+      "start": 850.0,
+      "end": 857.97,
+      "text": "really recommend you to do this is a guide water control so because of the material of the guide"
+    },
+    {
+      "start": 857.97,
+      "end": 859.85,
+      "text": "wire, we have those."
+    },
+    {
+      "start": 860.0,
+      "end": 864.94,
+      "text": "very good reflections. And so it really takes only a few seconds and you are"
+    },
+    {
+      "start": 864.94,
+      "end": 869.28,
+      "text": "certain where the gut wire is in. You can do this in short."
+    },
+    {
+      "start": 870.0,
+      "end": 879.36,
+      "text": "as it's just shown and also you can rotate the probe and see it in long axis okay now we've presented"
+    },
+    {
+      "start": 880.0,
+      "end": 884.13,
+      "text": "some propanding techniques on how to improve"
+    },
+    {
+      "start": 884.13,
+      "end": 886.97,
+      "text": "needle-tip control. We have presented some software"
+    },
+    {
+      "start": 886.97,
+      "end": 889.87,
+      "text": "solutions, some hardware solutions, but now we're"
+    },
+    {
+      "start": 890.0,
+      "end": 897.81,
+      "text": "coming to the most important thing, the needle navigation techniques, which you can use in"
+    },
+    {
+      "start": 897.81,
+      "end": 899.81,
+      "text": "any case, whether you have any."
+    },
+    {
+      "start": 900.0,
+      "end": 906.01,
+      "text": "a highway or a software assistance or not. So we have kind of divided these"
+    },
+    {
+      "start": 906.01,
+      "end": 909.97,
+      "text": "method into those full beginners. So we talk."
+    },
+    {
+      "start": 910.0,
+      "end": 916.36,
+      "text": "about angle navigation and a walk-down technique with angle adjustment, and for more advanced"
+    },
+    {
+      "start": 916.36,
+      "end": 919.7,
+      "text": "users, we talk about the walk-down technique with probe."
+    },
+    {
+      "start": 920.0,
+      "end": 929.9,
+      "text": "alignment and at the end the smartest and as we believe the the ciphers technique is walk down technique with proper line"
+    },
+    {
+      "start": 930.0,
+      "end": 936.96,
+      "text": "and probe rotation. So, let's go over this. Angle navigation is a rough"
+    },
+    {
+      "start": 936.96,
+      "end": 939.98,
+      "text": "orientation on how to..."
+    },
+    {
+      "start": 940.06,
+      "end": 945.46,
+      "text": "navigate the needle and the patient. So, let's go over in an example. So, we placed the"
+    },
+    {
+      "start": 945.46,
+      "end": 949.96,
+      "text": "probe on the patient and the probe sits on the patient in a..."
+    },
+    {
+      "start": 950.54,
+      "end": 956.71,
+      "text": "a pienticular angle on the skin. So we try to find out how deep is our"
+    },
+    {
+      "start": 956.71,
+      "end": 959.81,
+      "text": "topics fracture and we look on the ultrasound."
+    },
+    {
+      "start": 960.0,
+      "end": 965.1,
+      "text": "image and we see it here. So, we aim for the 12 o'clock position of the target structure"
+    },
+    {
+      "start": 965.1,
+      "end": 969.84,
+      "text": "and we read the depth on the lateral side of the ultrasound image."
+    },
+    {
+      "start": 970.9,
+      "end": 975.14,
+      "text": "So we take this depth which is roughly 1 centimeter in this case"
+    },
+    {
+      "start": 975.14,
+      "end": 979.93,
+      "text": "and we take the same distance away from the probe."
+    },
+    {
+      "start": 980.1,
+      "end": 984.05,
+      "text": "So we don't talk about distance from the plastic cover of the probe."
+    },
+    {
+      "start": 984.27,
+      "end": 989.77,
+      "text": "We talk about the distance where the scanning plane actually sits on the footprint."
+    },
+    {
+      "start": 990.0,
+      "end": 998.18,
+      "text": "So by this we create a rectangle and then we penetrate the skin, use 45 degrees and then"
+    },
+    {
+      "start": 998.18,
+      "end": 999.9,
+      "text": "you can puncture your target structure."
+    },
+    {
+      "start": 1001.06,
+      "end": 1004.68,
+      "text": "However, this method is somewhat unsafe."
+    },
+    {
+      "start": 1005.08,
+      "end": 1005.22,
+      "text": "Why?"
+    },
+    {
+      "start": 1005.86,
+      "end": 1009.98,
+      "text": "Because having all the correct angles is not there."
+    },
+    {
+      "start": 1010.0,
+      "end": 1016.16,
+      "text": "easy. So using a steeper angle, so let's say instead of 45 degrees you were using"
+    },
+    {
+      "start": 1016.16,
+      "end": 1019.98,
+      "text": "50 degrees or 60 degrees, you would actually pin it..."
+    },
+    {
+      "start": 1020.0,
+      "end": 1025.14,
+      "text": "try to target structure before you have even seen the needle tip into this in the scanning"
+    },
+    {
+      "start": 1025.14,
+      "end": 1025.42,
+      "text": "plan."
+    },
+    {
+      "start": 1026.06,
+      "end": 1027.5,
+      "text": "So this might be dangerous."
+    },
+    {
+      "start": 1027.5,
+      "end": 1029.82,
+      "text": "and, on the other hand, using like a 40."
+    },
+    {
+      "start": 1030.0,
+      "end": 1039.8,
+      "text": "35 degree angle, you will reach the scanning plane before you are in the 12 o'clock position, so you may get"
+    },
+    {
+      "start": 1040.32,
+      "end": 1046.88,
+      "text": "if the needle tip behind the scanning plane and this is not wanted. So this is a method which is"
+    },
+    {
+      "start": 1046.88,
+      "end": 1049.7,
+      "text": "suitable for superficial structures like"
+    },
+    {
+      "start": 1050.0,
+      "end": 1059.98,
+      "text": "in vascular axis. So where you want to actually penetrate the target structure anyway. But we wouldn't recommend it to"
+    },
+    {
+      "start": 1060.0,
+      "end": 1062.16,
+      "text": "to use in nerve blocks."
+    },
+    {
+      "start": 1063.0,
+      "end": 1064.88,
+      "text": "So we show you an example."
+    },
+    {
+      "start": 1065.16,
+      "end": 1069.84,
+      "text": "This is a vascular axis in a femoral artery."
+    },
+    {
+      "start": 1070.0,
+      "end": 1077.97,
+      "text": "on the left side. So you see in the ultrasound film that there is some tissue movement in the 12"
+    },
+    {
+      "start": 1077.97,
+      "end": 1079.97,
+      "text": "o'clock position right now. And then you..."
+    },
+    {
+      "start": 1080.0,
+      "end": 1086.13,
+      "text": "see the needle tip being inserted into the artery and then here again you see the"
+    },
+    {
+      "start": 1086.13,
+      "end": 1089.92,
+      "text": "guard were already being inserted on the spot so it was prepositioned."
+    },
+    {
+      "start": 1090.03,
+      "end": 1090.97,
+      "text": "So we look at it again."
+    },
+    {
+      "start": 1091.49,
+      "end": 1093.88,
+      "text": "You see the motion of the tissue,"
+    },
+    {
+      "start": 1094.26,
+      "end": 1096.5,
+      "text": "you see the needle tip and the guide wire."
+    },
+    {
+      "start": 1096.96,
+      "end": 1099.98,
+      "text": "So it's a good method, however, as..."
+    },
+    {
+      "start": 1100.06,
+      "end": 1106.05,
+      "text": "And as we said, rather use it for superficial structures and for vascular axis."
+    },
+    {
+      "start": 1106.71,
+      "end": 1109.97,
+      "text": "So in deep structures, it is..."
+    },
+    {
+      "start": 1110.0,
+      "end": 1115.61,
+      "text": "quite easy to understand that the arrows of using the wrong"
+    },
+    {
+      "start": 1115.61,
+      "end": 1119.76,
+      "text": "angles actually get greater and greater. So"
+    },
+    {
+      "start": 1120.42,
+      "end": 1123.86,
+      "text": "What methods do we have to improve this situation?"
+    },
+    {
+      "start": 1125.67,
+      "end": 1129.87,
+      "text": "Let's have a look on the walk down technique with angle adjustment which"
+    },
+    {
+      "start": 1130.0,
+      "end": 1132.9,
+      "text": "was actually published in 2006 already."
+    },
+    {
+      "start": 1134.34,
+      "end": 1136.54,
+      "text": "In this case, we place the probe on the patient again,"
+    },
+    {
+      "start": 1136.54,
+      "end": 1139.96,
+      "text": "as we always do, and then we insert the needle in the..."
+    },
+    {
+      "start": 1140.0,
+      "end": 1147.76,
+      "text": "very shallow angle. So on purpose we want to get into the scanning plane in a distance"
+    },
+    {
+      "start": 1147.76,
+      "end": 1149.1,
+      "text": "to the target structure."
+    },
+    {
+      "start": 1150.0,
+      "end": 1152.56,
+      "text": "First of all, we want to identify the needle tip."
+    },
+    {
+      "start": 1153.2,
+      "end": 1159.64,
+      "text": "This is what we see on the ultrasound clip on a bij axis."
+    },
+    {
+      "start": 1160.0,
+      "end": 1169.97,
+      "text": "see the needle tip in the sternoclider muscle and then we withdraw the needle and we adjust the"
+    },
+    {
+      "start": 1170.0,
+      "end": 1176.24,
+      "text": "angle to this steep angle, insert the needle again until we get the first"
+    },
+    {
+      "start": 1176.24,
+      "end": 1179.87,
+      "text": "cray flex of the needle tip in the scanning line. So I have a look here."
+    },
+    {
+      "start": 1180.03,
+      "end": 1188.65,
+      "text": "So, the needle tip slowly approaches stepwise, the 12 o'clock position of the target structure."
+    },
+    {
+      "start": 1189.35,
+      "end": 1189.97,
+      "text": "So, you may do this..."
+    },
+    {
+      "start": 1190.03,
+      "end": 1197.15,
+      "text": "again you might do it do three or four times whatever is needed and until you are"
+    },
+    {
+      "start": 1197.15,
+      "end": 1199.51,
+      "text": "only 12 o'clock position and then you see how the"
+    },
+    {
+      "start": 1200.26,
+      "end": 1209.58,
+      "text": "needle tip sits on top of the vessel with the largest diameter just under the needle tip and then you can"
+    },
+    {
+      "start": 1210.19,
+      "end": 1217.86,
+      "text": "the needle in. Here again there might be some disadvantages because you've got quite a lot of needle"
+    },
+    {
+      "start": 1217.86,
+      "end": 1219.94,
+      "text": "that passes. So, especially in pace."
+    },
+    {
+      "start": 1220.0,
+      "end": 1223.4,
+      "text": "on the ICU, with a lot of happen or with"
+    },
+    {
+      "start": 1225.28,
+      "end": 1228.18,
+      "text": "population abnormalities you may not want to have"
+    },
+    {
+      "start": 1228.18,
+      "end": 1229.54,
+      "text": "many needle pests. So."
+    },
+    {
+      "start": 1231.12,
+      "end": 1233.68,
+      "text": "to improve this, we have another technique,"
+    },
+    {
+      "start": 1234.12,
+      "end": 1236.66,
+      "text": "whenever anatomically possible."
+    },
+    {
+      "start": 1237.34,
+      "end": 1239.96,
+      "text": "So, we need some anatomical sp..."
+    },
+    {
+      "start": 1240.0,
+      "end": 1244.8,
+      "text": "for the probe to actually be moved over the patient."
+    },
+    {
+      "start": 1245.66,
+      "end": 1249.97,
+      "text": "So the the angle of needle insertion is basically the same."
+    },
+    {
+      "start": 1250.48,
+      "end": 1255.48,
+      "text": "aiming on an early identification of the needle tip very close to the"
+    },
+    {
+      "start": 1255.48,
+      "end": 1259.98,
+      "text": "probe. So when the first reflected curse we stop the needle, move the"
+    },
+    {
+      "start": 1260.0,
+      "end": 1266.86,
+      "text": "probe forward the needle stop again move the probe like here and insert the needle a little more"
+    },
+    {
+      "start": 1266.86,
+      "end": 1269.82,
+      "text": "until we get to the 12 o'clock position and then we can"
+    },
+    {
+      "start": 1270.0,
+      "end": 1277.98,
+      "text": "puncture, puncture, the vessel. So this is a step wise approach where either the"
+    },
+    {
+      "start": 1277.98,
+      "end": 1279.76,
+      "text": "needle moves or the probe."
+    },
+    {
+      "start": 1280.35,
+      "end": 1282.79,
+      "text": "So this is a very important information."
+    },
+    {
+      "start": 1283.01,
+      "end": 1285.23,
+      "text": "So don't move both at the same time."
+    },
+    {
+      "start": 1285.51,
+      "end": 1289.26,
+      "text": "So either the needle or the probe."
+    },
+    {
+      "start": 1290.86,
+      "end": 1298.96,
+      "text": "let's have a look at this in a different way in a nerve block animation so the"
+    },
+    {
+      "start": 1298.96,
+      "end": 1299.9,
+      "text": "need is in the scanning"
+    },
+    {
+      "start": 1300.0,
+      "end": 1309.3,
+      "text": "plane and we stop the needle, we move the probe just slightly. Very timid little walk-down maneuvers."
+    },
+    {
+      "start": 1310.0,
+      "end": 1315.95,
+      "text": "we insert the needle again to get another needle tip reflex on the ultrasound's"
+    },
+    {
+      "start": 1315.95,
+      "end": 1319.89,
+      "text": "train and we do this again and again until we"
+    },
+    {
+      "start": 1320.0,
+      "end": 1328.18,
+      "text": "approach the nerve and now we look at a different angle in the scanning plane now so"
+    },
+    {
+      "start": 1328.18,
+      "end": 1329.89,
+      "text": "tiny little little"
+    },
+    {
+      "start": 1330.62,
+      "end": 1335.56,
+      "text": "Manoeuvres, once we get very close to the target structure and now we can't"
+    },
+    {
+      "start": 1335.56,
+      "end": 1339.98,
+      "text": "inject the local anesthetic. However, shown here..."
+    },
+    {
+      "start": 1340.0,
+      "end": 1346.4,
+      "text": "We for the delectic reasons we have chosen the 12 o'clock position but usually in nerve blocks"
+    },
+    {
+      "start": 1346.4,
+      "end": 1349.04,
+      "text": "We don't want the 12 o'clock position, so we want to have a"
+    },
+    {
+      "start": 1350.03,
+      "end": 1357.17,
+      "text": "tangential needle pass to the nine o'clock or the three o'clock position in order not to"
+    },
+    {
+      "start": 1357.95,
+      "end": 1359.43,
+      "text": "accidentally get into"
+    },
+    {
+      "start": 1360.16,
+      "end": 1367.51,
+      "text": "The Nerf, but this method is certainly very very good for Nerf blocks in general."
+    },
+    {
+      "start": 1370.0,
+      "end": 1378.51,
+      "text": "So coming to the last procedure where we think it is the safest and the best and the one you"
+    },
+    {
+      "start": 1378.51,
+      "end": 1379.83,
+      "text": "we'll have most fun."
+    },
+    {
+      "start": 1380.0,
+      "end": 1389.3,
+      "text": "So this is the walk-down technique with probe alignment and probe rotation at the very end of this procedure."
+    },
+    {
+      "start": 1390.45,
+      "end": 1399.14,
+      "text": "The beginning is exactly the same like in the method shown before, so we just show the last step here on how to get to the 12 o'clock position."
+    },
+    {
+      "start": 1400.0,
+      "end": 1402.76,
+      "text": "And now you don't keep on going with the needle"
+    },
+    {
+      "start": 1402.76,
+      "end": 1405.54,
+      "text": "and complete the procedure."
+    },
+    {
+      "start": 1405.96,
+      "end": 1408.64,
+      "text": "First of all, you rotate the probe."
+    },
+    {
+      "start": 1409.18,
+      "end": 1409.28,
+      "text": "So."
+    },
+    {
+      "start": 1410.58,
+      "end": 1419.06,
+      "text": "we had a short excess view before and an out-of-plane needle approach and now we get through the"
+    },
+    {
+      "start": 1419.06,
+      "end": 1419.52,
+      "text": "the interpretation."
+    },
+    {
+      "start": 1420.0,
+      "end": 1427.69,
+      "text": "and in plain picture of the needle and long excess picture of the anatomical structure."
+    },
+    {
+      "start": 1428.54,
+      "end": 1429.88,
+      "text": "And then we can insert"
+    },
+    {
+      "start": 1430.06,
+      "end": 1436.94,
+      "text": "needle under full vision. And you see this on the other sound image here. I J, that puncture,"
+    },
+    {
+      "start": 1437.36,
+      "end": 1439.94,
+      "text": "you also can see that very easily you get..."
+    },
+    {
+      "start": 1440.0,
+      "end": 1447.14,
+      "text": "in words and you may approach to the posterior wall, which you only see that well in"
+    },
+    {
+      "start": 1447.14,
+      "end": 1449.48,
+      "text": "in applying and long axis procedure."
+    },
+    {
+      "start": 1450.0,
+      "end": 1457.98,
+      "text": "and again here you may insert the gut wire either with pre-positioning or you"
+    },
+    {
+      "start": 1457.98,
+      "end": 1459.98,
+      "text": "may as most of us are pro"
+    },
+    {
+      "start": 1460.0,
+      "end": 1466.43,
+      "text": "used to, we may use a syringe and do some aspiration and then insert the guide wire, but why don't you"
+    },
+    {
+      "start": 1466.43,
+      "end": 1469.98,
+      "text": "look at the guide wire while you insert it."
+    },
+    {
+      "start": 1470.0,
+      "end": 1475.16,
+      "text": "because we all know the case that for some reason we get black ortho vessel but"
+    },
+    {
+      "start": 1475.16,
+      "end": 1479.82,
+      "text": "then can't insert the guy wire. So with ultrasound you may easily visualize"
+    },
+    {
+      "start": 1480.0,
+      "end": 1487.62,
+      "text": "the problem is. So either it is not inside the vessel or it is actually gone through the posterior"
+    },
+    {
+      "start": 1487.62,
+      "end": 1489.71,
+      "text": "a wall or third option."
+    },
+    {
+      "start": 1490.0,
+      "end": 1498.72,
+      "text": "something in the vessel is obstructing the guy wearing like thrombosis or something."
+    },
+    {
+      "start": 1500.26,
+      "end": 1503.34,
+      "text": "Okay, let's have a look on nerve blocks with the same method."
+    },
+    {
+      "start": 1503.7,
+      "end": 1509.89,
+      "text": "So we log in the last walk down steps in this case again."
+    },
+    {
+      "start": 1510.03,
+      "end": 1519.56,
+      "text": "to the 12 o'clock position and then in a little distance we rotate the probe so that the"
+    },
+    {
+      "start": 1520.13,
+      "end": 1529.53,
+      "text": "step towards the vinaural nerve structure is very well controlled. Okay."
+    },
+    {
+      "start": 1530.32,
+      "end": 1535.2,
+      "text": "So what else is an issue? Look at this."
+    },
+    {
+      "start": 1535.88,
+      "end": 1539.96,
+      "text": "So especially nerve blocks, we have a situation that..."
+    },
+    {
+      "start": 1540.0,
+      "end": 1545.46,
+      "text": "the visibility of nerves varies a lot and is dependent on the angle of"
+    },
+    {
+      "start": 1545.46,
+      "end": 1549.67,
+      "text": "So look at this, so we have we put the probe."
+    },
+    {
+      "start": 1550.19,
+      "end": 1554.61,
+      "text": "on the nerve and now the reflection is not very good because it's not the"
+    },
+    {
+      "start": 1554.61,
+      "end": 1559.53,
+      "text": "perpian-dicular angle on the course of the nerve. So we slightly took the probe."
+    },
+    {
+      "start": 1560.06,
+      "end": 1562.72,
+      "text": "to get a very good image on the ultrasound screen."
+    },
+    {
+      "start": 1563.67,
+      "end": 1568.09,
+      "text": "And then using a short axis and in-plane approach,"
+    },
+    {
+      "start": 1568.67,
+      "end": 1569.97,
+      "text": "it might be in..."
+    },
+    {
+      "start": 1570.0,
+      "end": 1575.45,
+      "text": "issue that for some reason it happens that the needle is not in the scanning"
+    },
+    {
+      "start": 1575.45,
+      "end": 1579.11,
+      "text": "plane. So what do you do? Do you move the needle or what do you do? So if you"
+    },
+    {
+      "start": 1579.11,
+      "end": 1579.67,
+      "text": "to the prop."
+    },
+    {
+      "start": 1581.36,
+      "end": 1583.9,
+      "text": "you may lose your image, so what is to do instead,"
+    },
+    {
+      "start": 1584.32,
+      "end": 1587.72,
+      "text": "you do a little parallel sliding of the probe,"
+    },
+    {
+      "start": 1588.3,
+      "end": 1589.84,
+      "text": "keeping the angle, so."
+    },
+    {
+      "start": 1590.0,
+      "end": 1596.52,
+      "text": "hopefully get a good image and a good identification of the needle or a safe"
+    },
+    {
+      "start": 1597.03,
+      "end": 1599.29,
+      "text": "approach towards the nerve."
+    },
+    {
+      "start": 1600.32,
+      "end": 1609.28,
+      "text": "And also, in implying procedures, you may have a rotation error, so that the needle path is not perfectly aligned."
+    },
+    {
+      "start": 1610.13,
+      "end": 1612.47,
+      "text": "with the scanning plane and you also of course,"
+    },
+    {
+      "start": 1612.71,
+      "end": 1615.77,
+      "text": "and have to correct this arrow by rotation."
+    },
+    {
+      "start": 1618.0,
+      "end": 1619.58,
+      "text": "Another thing is the"
+    },
+    {
+      "start": 1620.0,
+      "end": 1625.74,
+      "text": "inspection of guide wire position which we were talking about before already, and this"
+    },
+    {
+      "start": 1625.74,
+      "end": 1629.98,
+      "text": "is a method that only takes a..."
+    },
+    {
+      "start": 1630.0,
+      "end": 1637.38,
+      "text": "seconds and gives you a lot more confidence, especially in difficult cases, in cases on"
+    },
+    {
+      "start": 1637.38,
+      "end": 1638.92,
+      "text": "and I see you with..."
+    },
+    {
+      "start": 1640.03,
+      "end": 1643.66,
+      "text": "calculation, abnormalities, and patients"
+    },
+    {
+      "start": 1643.66,
+      "end": 1647.56,
+      "text": "where you need to insert large, large catheters."
+    },
+    {
+      "start": 1648.3,
+      "end": 1649.98,
+      "text": "So as shown here, you see..."
+    },
+    {
+      "start": 1650.06,
+      "end": 1659.41,
+      "text": "two hyper-ecogenic dots traveling through the sternocardial muscle into the ij, and of"
+    },
+    {
+      "start": 1659.41,
+      "end": 1659.97,
+      "text": "course you can do it."
+    },
+    {
+      "start": 1660.0,
+      "end": 1669.9,
+      "text": "this in short axis as shown here or also in long axis and then you may proceed with your dial"
+    },
+    {
+      "start": 1670.0,
+      "end": 1679.43,
+      "text": "data and put the catheter in, and this is how we end up having done successful procedures."
+    },
+    {
+      "start": 1682.37,
+      "end": 1689.97,
+      "text": "So we end with the recording here and continue with say the recording of the three of"
+    },
+    {
+      "start": 1690.1,
+      "end": 1699.93,
+      "text": "Thank you. As a summary of our useful information about safe needle tip control and navigation techniques we created a post"
+    },
+    {
+      "start": 1700.13,
+      "end": 1703.93,
+      "text": "The bad news is, it's just a readable in German language."
+    },
+    {
+      "start": 1705.31,
+      "end": 1709.97,
+      "text": "But our textbook is available in English and of course in German and you can..."
+    },
+    {
+      "start": 1710.0,
+      "end": 1717.18,
+      "text": "it on our web page. I'm back to the very beginning of our presentation where we're talking about"
+    },
+    {
+      "start": 1717.18,
+      "end": 1719.95,
+      "text": "the three pillars to the preconditions of the sa..."
+    },
+    {
+      "start": 1720.0,
+      "end": 1725.66,
+      "text": "successful ultrasound guided interventions, which were probe maneuvers,"
+    },
+    {
+      "start": 1726.08,
+      "end": 1729.98,
+      "text": "solar anatomy, and needle-to-pontrol. We would like to add..."
+    },
+    {
+      "start": 1730.19,
+      "end": 1738.26,
+      "text": "more pillars so with five at the end so we need sustainable teaching concepts and at the end we need"
+    },
+    {
+      "start": 1738.26,
+      "end": 1739.4,
+      "text": "to practice a lot too"
+    }
+  ]
+}

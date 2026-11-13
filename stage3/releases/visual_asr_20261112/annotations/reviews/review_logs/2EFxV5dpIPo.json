@@ -1,0 +1,84 @@
+{
+  "video_id": "2EFxV5dpIPo",
+  "reviewer": "stage3_b",
+  "review_scope": "Question-led review by Agent B of Agent A draft; not blind. Native full-frame sampled checkpoints and available time-indexed ASR; no continuous replay or direct listening claim.",
+  "reviewer_native_opened": [
+    165,
+    560,
+    570,
+    580,
+    635,
+    645,
+    655,
+    665,
+    745,
+    755,
+    765,
+    1180,
+    562,
+    564,
+    566,
+    568,
+    646,
+    648,
+    650,
+    652,
+    747,
+    749,
+    751,
+    753,
+    560.5,
+    561,
+    561.5,
+    652.5,
+    653,
+    653.5,
+    654,
+    751.5,
+    752,
+    752.5,
+    560.75,
+    654.25,
+    654.5,
+    654.75,
+    752.75
+  ],
+  "tasks": [
+    {
+      "task_index": 1,
+      "findings": "Moved580\u2192561 after560.75paper-only; aligned bright-foci spatial description to561.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 2,
+      "findings": "Confirmed original655 endpoint with654.75negative; added intermediate native prefix checks.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 3,
+      "findings": "Moved765\u2192753 after752.75negative; grid available before later scoring table.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 4,
+      "findings": "Removed A/B terms from question; actual slide labels still create substantial shortcut risk. Visual vertical/horizontal geometry confirmed.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 5,
+      "findings": "Confirmed rightmost internal crossing strands versus largely black first pocket; no infection inference.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 6,
+      "findings": "Confirmed unique first635 example and its deep curved border; current1180 research slide excludes same panel.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    }
+  ]
+}

@@ -1,0 +1,1003 @@
+{
+  "video_id": "8fOUM98P2Sc",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/8fOUM98P2Sc/asr.txt",
+  "segments": [
+    {
+      "start": 2.46,
+      "end": 4.42,
+      "text": "Hey there, I'm Dr. Chris and I'm door now."
+    },
+    {
+      "start": 4.74,
+      "end": 5.94,
+      "text": "I'm an emergency medicine physician"
+    },
+    {
+      "start": 5.94,
+      "end": 7.28,
+      "text": "at Cooper University Hospital."
+    },
+    {
+      "start": 7.9,
+      "end": 8.76,
+      "text": "And today we'll be going through"
+    },
+    {
+      "start": 8.76,
+      "end": 9.92,
+      "text": "bedside cardiac older."
+    },
+    {
+      "start": 10.0,
+      "end": 15.09,
+      "text": "Now, this is the beginning of a small series on cardiac ultrasound, and this first lecture"
+    },
+    {
+      "start": 15.09,
+      "end": 18.62,
+      "text": "is going to be focusing on just what views you're obtaining and how to get them."
+    },
+    {
+      "start": 20.35,
+      "end": 22.77,
+      "text": "It's always important to keep in mind when you're doing a point of care"
+    },
+    {
+      "start": 22.77,
+      "end": 26.78,
+      "text": "ultrasound. What specific questions are you asking? We always look at"
+    },
+    {
+      "start": 26.78,
+      "end": 29.97,
+      "text": "ejection fraction, meaning how well is the heart squeezing? Is it"
+    },
+    {
+      "start": 30.0,
+      "end": 34.69,
+      "text": "normal or is it depressed. We then look for pericardial fusions, and sometimes we"
+    },
+    {
+      "start": 34.69,
+      "end": 38.67,
+      "text": "can see plural fusions as well. And then often we'll look, is there so much"
+    },
+    {
+      "start": 38.67,
+      "end": 39.97,
+      "text": "fluid that it's causing tampons?"
+    },
+    {
+      "start": 40.58,
+      "end": 44.94,
+      "text": "physiology based on the way you look at the heart. The third question we ask is"
+    },
+    {
+      "start": 44.94,
+      "end": 49.58,
+      "text": "equality. So is there a difference between the size of the right ventricle and the"
+    },
+    {
+      "start": 49.58,
+      "end": 49.96,
+      "text": "left end?"
+    },
+    {
+      "start": 50.03,
+      "end": 56.77,
+      "text": "That can suggest right ventricular strain. There's other questions you can answer but these are the main ones we do with just point of care"
+    },
+    {
+      "start": 56.77,
+      "end": 59.67,
+      "text": "Older sound. Now, what are we looking for?"
+    },
+    {
+      "start": 60.0,
+      "end": 63.18,
+      "text": "So there's four main windows that we look at with cardiac ultrasound."
+    },
+    {
+      "start": 63.81,
+      "end": 68.3,
+      "text": "The first is your parastronal long access view, and your parastronal short access view."
+    },
+    {
+      "start": 69.1,
+      "end": 69.86,
+      "text": "Your apricle fortune."
+    },
+    {
+      "start": 70.0,
+      "end": 75.15,
+      "text": "review and your sub-sive would be. We're going to go through each of these one by one how to obtain"
+    },
+    {
+      "start": 75.15,
+      "end": 79.98,
+      "text": "them and how to figure out what exactly you're looking at. Now first I just..."
+    },
+    {
+      "start": 80.0,
+      "end": 84.73,
+      "text": "like to think of the heart as a giant strawberries sitting in the chest with the apex pointing towards"
+    },
+    {
+      "start": 84.73,
+      "end": 89.97,
+      "text": "the left tip over here and the base of the heart up here. It's hiding right under the sternum and the"
+    },
+    {
+      "start": 90.0,
+      "end": 93.46,
+      "text": "rub your art in front of it, which is important to keep in mind because when you're using"
+    },
+    {
+      "start": 93.84,
+      "end": 96.7,
+      "text": "your probe, you're going to have to make sure that you slide around these boundary structures"
+    },
+    {
+      "start": 96.7,
+      "end": 98.44,
+      "text": "that you're able to get the views you want."
+    },
+    {
+      "start": 100.35,
+      "end": 102.39,
+      "text": "Let's start off with our paristernal long access view."
+    },
+    {
+      "start": 103.27,
+      "end": 105.66,
+      "text": "Now, the way that we're gonna review in this video"
+    },
+    {
+      "start": 105.66,
+      "end": 107.8,
+      "text": "is making sure that you have your probe"
+    },
+    {
+      "start": 107.8,
+      "end": 109.8,
+      "text": "to the left of the sternum, patients left."
+    },
+    {
+      "start": 110.26,
+      "end": 112.3,
+      "text": "with the probe marker towards the patient's left hip."
+    },
+    {
+      "start": 113.52,
+      "end": 115.89,
+      "text": "Just as an FYI, some different departments,"
+    },
+    {
+      "start": 116.17,
+      "end": 119.97,
+      "text": "such as some cardiology departments, and ICUs will..."
+    },
+    {
+      "start": 120.16,
+      "end": 123.24,
+      "text": "lift this convention and have the pro marker towards the patient's right shoulder."
+    },
+    {
+      "start": 125.05,
+      "end": 128.41,
+      "text": "Not something you need to concern yourself with right now, but just so when you see a difference"
+    },
+    {
+      "start": 128.41,
+      "end": 129.09,
+      "text": "in some departments."
+    },
+    {
+      "start": 130.0,
+      "end": 133.1,
+      "text": "just a difference of convention. But for us today we're going to be talking about having"
+    },
+    {
+      "start": 133.1,
+      "end": 137.08,
+      "text": "the probe marker here facing towards the patient's left hand. So in this"
+    },
+    {
+      "start": 137.36,
+      "end": 139.84,
+      "text": "peristerin long access view. It's exactly"
+    },
+    {
+      "start": 140.0,
+      "end": 145.14,
+      "text": "what it says. So you're going to be looking at the long access of the heart. You're going to be"
+    },
+    {
+      "start": 145.14,
+      "end": 148.28,
+      "text": "taking this slice here is going to be the view that you get on your ultrasound."
+    },
+    {
+      "start": 150.0,
+      "end": 153.6,
+      "text": "So I have the image I kept right here for you so you can kind of orient yourself."
+    },
+    {
+      "start": 153.84,
+      "end": 157.61,
+      "text": "And I want you to picture it almost in your head, flipped about 180 degrees."
+    },
+    {
+      "start": 157.61,
+      "end": 158.03,
+      "text": "so"
+    },
+    {
+      "start": 160.26,
+      "end": 161.34,
+      "text": "to keep in mind basic orientation."
+    },
+    {
+      "start": 161.34,
+      "end": 162.82,
+      "text": "You have your pro marker here"
+    },
+    {
+      "start": 162.82,
+      "end": 164.8,
+      "text": "towards the apex of your heart."
+    },
+    {
+      "start": 165.3,
+      "end": 166.62,
+      "text": "And this pro marker is going to correspond"
+    },
+    {
+      "start": 166.62,
+      "end": 168.08,
+      "text": "to this M up here marker."
+    },
+    {
+      "start": 169.05,
+      "end": 169.97,
+      "text": "So here on this..."
+    },
+    {
+      "start": 170.0,
+      "end": 173.96,
+      "text": "of the screen must be the apex worth of your heart and over here must be the base of your heart."
+    },
+    {
+      "start": 175.0,
+      "end": 179.49,
+      "text": "And then as a normal convention with all ultrasound, the top of the screen is going to be closest to the"
+    },
+    {
+      "start": 179.49,
+      "end": 179.73,
+      "text": "probe."
+    },
+    {
+      "start": 180.51,
+      "end": 182.63,
+      "text": "and the further down on the screen is gonna be deeper to the body."
+    },
+    {
+      "start": 183.24,
+      "end": 185.3,
+      "text": "So these will be your most anterior structures of the heart,"
+    },
+    {
+      "start": 186.18,
+      "end": 187.3,
+      "text": "and here's just right at the skin,"
+    },
+    {
+      "start": 188.2,
+      "end": 189.18,
+      "text": "and then here's deep down."
+    },
+    {
+      "start": 190.0,
+      "end": 193.55,
+      "text": "You'll always have measurements on the right side of your screen that tell you exactly"
+    },
+    {
+      "start": 193.55,
+      "end": 194.63,
+      "text": "how deep you are in the body."
+    },
+    {
+      "start": 194.83,
+      "end": 197.53,
+      "text": "So here's about five centimeters, here's ten, etc."
+    },
+    {
+      "start": 200.0,
+      "end": 201.48,
+      "text": "Knowing that, what are we looking at?"
+    },
+    {
+      "start": 201.7,
+      "end": 206.05,
+      "text": "So if this is towards the apex of the heart, and this is towards the base, this structure"
+    },
+    {
+      "start": 206.05,
+      "end": 207.29,
+      "text": "here must be the left atrium."
+    },
+    {
+      "start": 207.91,
+      "end": 209.43,
+      "text": "And what does it flow into?"
+    },
+    {
+      "start": 210.13,
+      "end": 210.95,
+      "text": "but the left ventricle."
+    },
+    {
+      "start": 211.54,
+      "end": 213.78,
+      "text": "It then leads to your aortic afloat tract here,"
+    },
+    {
+      "start": 214.41,
+      "end": 215.99,
+      "text": "and then we know from basic anatomy"
+    },
+    {
+      "start": 215.99,
+      "end": 218.22,
+      "text": "that the most anterior structure of the heart"
+    },
+    {
+      "start": 218.22,
+      "end": 219.96,
+      "text": "is gonna be the right ventricle here."
+    },
+    {
+      "start": 220.42,
+      "end": 224.54,
+      "text": "Specifically, the right ventricular outflow tract is just the cut that you'll be getting in this"
+    },
+    {
+      "start": 224.54,
+      "end": 229.85,
+      "text": "parastronol logging system view. Now what's the circle back here? This is actually your descending a"
+    },
+    {
+      "start": 230.0,
+      "end": 231.86,
+      "text": "that you're seeing just posterior to the heart."
+    },
+    {
+      "start": 232.12,
+      "end": 233.84,
+      "text": "And this is going to be important in the next lecture"
+    },
+    {
+      "start": 233.84,
+      "end": 236.32,
+      "text": "when we talk about effusions differentiating"
+    },
+    {
+      "start": 236.32,
+      "end": 238.04,
+      "text": "if the effusion is anterior to that."
+    },
+    {
+      "start": 238.56,
+      "end": 239.96,
+      "text": "Meaning more, is it more pericardial?"
+    },
+    {
+      "start": 240.0,
+      "end": 246.0,
+      "text": "or posterior, meaning is it more in the lungs or a pleural effusion. So since this is the left"
+    },
+    {
+      "start": 246.0,
+      "end": 249.98,
+      "text": "each arm and this is the left ventricle. This dizzle here must be your"
+    },
+    {
+      "start": 250.0,
+      "end": 256.7,
+      "text": "mitral valve and then here must be your yourortic valve. Now with ultrasound, we rarely ever take"
+    },
+    {
+      "start": 256.7,
+      "end": 259.85,
+      "text": "stills like this. I just put one in here to review basic anatomy."
+    },
+    {
+      "start": 260.0,
+      "end": 264.9,
+      "text": "me with ya. We almost always look at it in video clips. So this is pretty much the same"
+    },
+    {
+      "start": 264.9,
+      "end": 268.06,
+      "text": "image we're just gonna go through when your pair start along and review the same anatomy."
+    },
+    {
+      "start": 270.0,
+      "end": 271.22,
+      "text": "Here is your left atrium."
+    },
+    {
+      "start": 272.18,
+      "end": 273.56,
+      "text": "Let's go in through your mitral valve here."
+    },
+    {
+      "start": 273.62,
+      "end": 275.26,
+      "text": "You see it open and closing with each squeeze."
+    },
+    {
+      "start": 276.02,
+      "end": 277.2,
+      "text": "You see your left ventricle here,"
+    },
+    {
+      "start": 278.1,
+      "end": 279.86,
+      "text": "your adic valve, and your adic outflow track."
+    },
+    {
+      "start": 280.58,
+      "end": 285.39,
+      "text": "This most anterior structure is your right ventricle and then back here is your descending"
+    },
+    {
+      "start": 285.39,
+      "end": 285.83,
+      "text": "aorta."
+    },
+    {
+      "start": 287.66,
+      "end": 289.96,
+      "text": "And this is a normal squeeze of the heart you see..."
+    },
+    {
+      "start": 290.0,
+      "end": 291.26,
+      "text": "the valves opening all the way."
+    },
+    {
+      "start": 291.52,
+      "end": 293.72,
+      "text": "You see the ventricle coming in, squeezing well."
+    },
+    {
+      "start": 296.74,
+      "end": 298.55,
+      "text": "And again, I just wanna show you normal"
+    },
+    {
+      "start": 298.55,
+      "end": 299.97,
+      "text": "in this lecture, we're gonna be going through."
+    },
+    {
+      "start": 300.0,
+      "end": 306.65,
+      "text": "abnormal in the next one. So stay tuned. Now to get your next view, your"
+    },
+    {
+      "start": 306.65,
+      "end": 309.71,
+      "text": "parasitial short access, you're going to be starting with that long access we"
+    },
+    {
+      "start": 309.71,
+      "end": 309.81,
+      "text": "it."
+    },
+    {
+      "start": 310.0,
+      "end": 316.0,
+      "text": "And then flipping your probe 90 degrees. So whereas you had it the left of the"
+    },
+    {
+      "start": 316.0,
+      "end": 319.86,
+      "text": "sternum with the probe marker facing the patient's left hip, now you're going to"
+    },
+    {
+      "start": 320.0,
+      "end": 323.36,
+      "text": "90 degrees and your probe marker is going to be facing the patient's right hip."
+    },
+    {
+      "start": 325.05,
+      "end": 327.63,
+      "text": "So you can picture the difference between these two views. That was long"
+    },
+    {
+      "start": 327.63,
+      "end": 329.81,
+      "text": "access cutting through all the chambers."
+    },
+    {
+      "start": 330.0,
+      "end": 335.84,
+      "text": "way and now this is short access just getting a cross section of the heart. So"
+    },
+    {
+      "start": 335.84,
+      "end": 338.78,
+      "text": "knowing that, since we're going to get cross section of the heart, this structure"
+    },
+    {
+      "start": 338.78,
+      "end": 339.94,
+      "text": "here must be your left enter..."
+    },
+    {
+      "start": 340.0,
+      "end": 345.46,
+      "text": "and then up here more anteriorly is going to be your right ventricle. Now what"
+    },
+    {
+      "start": 345.46,
+      "end": 349.18,
+      "text": "is this structure? This is actually your papillary muscle, so this is important to"
+    },
+    {
+      "start": 349.18,
+      "end": 349.68,
+      "text": "note because"
+    },
+    {
+      "start": 350.1,
+      "end": 352.16,
+      "text": "This will be a sign that you are at the right spot."
+    },
+    {
+      "start": 352.46,
+      "end": 354.24,
+      "text": "So you can imagine when you're getting a short access"
+    },
+    {
+      "start": 354.24,
+      "end": 359.05,
+      "text": "view here that you could be one way or the other"
+    },
+    {
+      "start": 359.05,
+      "end": 359.97,
+      "text": "kind of out of place."
+    },
+    {
+      "start": 360.42,
+      "end": 362.98,
+      "text": "And this is an important view to look at ejection fraction."
+    },
+    {
+      "start": 363.42,
+      "end": 366.66,
+      "text": "So you actually want to make sure that you're right at the level of the papillary muscles"
+    },
+    {
+      "start": 366.66,
+      "end": 369.9,
+      "text": "to know that you're at the right area to assess the problem."
+    },
+    {
+      "start": 370.0,
+      "end": 373.38,
+      "text": "rejection fraction. If you're too high or low you might be seeing different"
+    },
+    {
+      "start": 373.96,
+      "end": 378.28,
+      "text": "slices of the mitral valve which will look kind of like a fish mouth which we can"
+    },
+    {
+      "start": 378.28,
+      "end": 379.85,
+      "text": "talk about in the next lecture."
+    },
+    {
+      "start": 381.57,
+      "end": 386.36,
+      "text": "So when you see this papillary muscle here, you know you're in the right you're in the right cut of the heart"
+    },
+    {
+      "start": 386.36,
+      "end": 389.96,
+      "text": "And again real ultrasound as I was gonna be"
+    },
+    {
+      "start": 390.0,
+      "end": 393.6,
+      "text": "video clips, so let's look at a real video here. You got your left ventricle"
+    },
+    {
+      "start": 393.6,
+      "end": 399.85,
+      "text": "squeezing well, we're at the area of the mitral valves, where you see a little bit of the valve here, but this is the"
+    },
+    {
+      "start": 400.0,
+      "end": 409.98,
+      "text": "So the main thing you want and then you see your right ventricle here and a little bit of a valve flipping in and out of your view now our third view"
+    },
+    {
+      "start": 410.0,
+      "end": 416.57,
+      "text": "It's gonna be our apical 4 chamber view. So just like the name entails, it's not too difficult"
+    },
+    {
+      "start": 416.57,
+      "end": 419.97,
+      "text": "It's gonna be an apical 4 chamber. So we're gonna be putting the probe"
+    },
+    {
+      "start": 420.0,
+      "end": 422.94,
+      "text": "but the apex of the heart and we want to get all four chambers in this view."
+    },
+    {
+      "start": 423.51,
+      "end": 425.13,
+      "text": "So again, picture this, try and go."
+    },
+    {
+      "start": 425.21,
+      "end": 426.27,
+      "text": "This is what you're going to be obtaining."
+    },
+    {
+      "start": 427.63,
+      "end": 429.83,
+      "text": "And then we're going to go and look at the actual ultrasound."
+    },
+    {
+      "start": 430.68,
+      "end": 438.19,
+      "text": "So your probe is over here, now go back to normal conventions where the probe marker is going to be towards the patients right side."
+    },
+    {
+      "start": 440.32,
+      "end": 441.8,
+      "text": "And then here's your marker here corresponding."
+    },
+    {
+      "start": 442.18,
+      "end": 443.38,
+      "text": "So this is towards the patient's right,"
+    },
+    {
+      "start": 443.84,
+      "end": 444.94,
+      "text": "this is towards the patient's left,"
+    },
+    {
+      "start": 445.39,
+      "end": 447.29,
+      "text": "this is most anterior, closest to the skin,"
+    },
+    {
+      "start": 447.47,
+      "end": 448.55,
+      "text": "and this is deep down into the body."
+    },
+    {
+      "start": 449.78,
+      "end": 449.98,
+      "text": "So it's a-"
+    },
+    {
+      "start": 450.0,
+      "end": 454.94,
+      "text": "Since we're starting right at the apex of the heart and going up like this, that should"
+    },
+    {
+      "start": 454.94,
+      "end": 456.02,
+      "text": "help you figure out your anatomy."
+    },
+    {
+      "start": 456.02,
+      "end": 458.94,
+      "text": "So let's start off this is must be your left age room"
+    },
+    {
+      "start": 460.0,
+      "end": 466.35,
+      "text": "closer to the apex is your left ventricle. Here's your right h-ram, and here's your right ventricle."
+    },
+    {
+      "start": 467.9,
+      "end": 469.6,
+      "text": "So since you know these are your four chambers,"
+    },
+    {
+      "start": 470.48,
+      "end": 472.96,
+      "text": "You already know that these are gonna be your mitral valves"
+    },
+    {
+      "start": 472.96,
+      "end": 474.35,
+      "text": "and your tricheswood valves."
+    },
+    {
+      "start": 474.95,
+      "end": 477.68,
+      "text": "Now this is a great view to assess a lot of different things"
+    },
+    {
+      "start": 477.68,
+      "end": 478.98,
+      "text": "that we'll talk about in the next lecture."
+    },
+    {
+      "start": 479.14,
+      "end": 479.78,
+      "text": "So this is great."
+    },
+    {
+      "start": 479.78,
+      "end": 479.98,
+      "text": "it's"
+    },
+    {
+      "start": 480.0,
+      "end": 484.2,
+      "text": "You're seeing all four chambers for assessing the general ejection fraction in the squeeze of the heart"
+    },
+    {
+      "start": 484.2,
+      "end": 489.97,
+      "text": "This is great when you can see both free walls for comparing the left ventricle and the right ventricle when we talk about"
+    },
+    {
+      "start": 490.03,
+      "end": 495.47,
+      "text": "quality, and you can also often see paracardal fusion in this view as well."
+    },
+    {
+      "start": 500.0,
+      "end": 501.16,
+      "text": "Here's a live image of it."
+    },
+    {
+      "start": 502.02,
+      "end": 504.0,
+      "text": "Same thing, we've got your left atrium back here,"
+    },
+    {
+      "start": 504.2,
+      "end": 506.48,
+      "text": "your mitral valve, your left ventricle here,"
+    },
+    {
+      "start": 507.28,
+      "end": 509.76,
+      "text": "your right atrium here, tricuspid valve, and right."
+    },
+    {
+      "start": 510.03,
+      "end": 516.13,
+      "text": "ventricle here. Now we're already onto our last view so this is going to be our"
+    },
+    {
+      "start": 516.13,
+      "end": 519.02,
+      "text": "sub-siveward view and this"
+    },
+    {
+      "start": 520.0,
+      "end": 524.22,
+      "text": "it was a little bit different because rather than kind of cutting between ribs as you do for these"
+    },
+    {
+      "start": 524.22,
+      "end": 528.92,
+      "text": "views up here, you're going to be going into the abdomen and basically pushing hard to get under"
+    },
+    {
+      "start": 528.92,
+      "end": 529.68,
+      "text": "to the sternum."
+    },
+    {
+      "start": 530.0,
+      "end": 530.72,
+      "text": "to see the heart here."
+    },
+    {
+      "start": 531.1,
+      "end": 533.36,
+      "text": "And here you're using the liver as your acoustic window"
+    },
+    {
+      "start": 533.88,
+      "end": 535.36,
+      "text": "of which to transmit the echoes through"
+    },
+    {
+      "start": 535.36,
+      "end": 536.38,
+      "text": "so you can see the heart well."
+    },
+    {
+      "start": 536.62,
+      "end": 538.94,
+      "text": "That's why I included this cute little liver."
+    },
+    {
+      "start": 540.0,
+      "end": 545.2,
+      "text": "image here for you. So again, you're going to keep your pro marker towards the"
+    },
+    {
+      "start": 545.2,
+      "end": 548.48,
+      "text": "patient's right over here. So this will be the right side."
+    },
+    {
+      "start": 550.0,
+      "end": 551.72,
+      "text": "And then most in two, you're going to be cutting through the liver."
+    },
+    {
+      "start": 551.86,
+      "end": 553.64,
+      "text": "So this must be the liver most in two, really here."
+    },
+    {
+      "start": 555.76,
+      "end": 557.2,
+      "text": "And then kind of same as the other views,"
+    },
+    {
+      "start": 557.28,
+      "end": 559.96,
+      "text": "you're going to take this triangle, flip it around in your head to correspond to this one."
+    },
+    {
+      "start": 560.03,
+      "end": 569.97,
+      "text": "So since this is gonna correspond to this anatomy, this must be your left atrium, this must be your left ventricle, this must be your right atrium, and this..."
+    },
+    {
+      "start": 570.0,
+      "end": 574.08,
+      "text": "must be very vegetable. And then same with the valves, since we know where they lie, this"
+    },
+    {
+      "start": 574.08,
+      "end": 579.83,
+      "text": "must be your mitral valve, and this must be your great husband valve. Now, this is a great"
+    },
+    {
+      "start": 579.83,
+      "end": 579.97,
+      "text": "I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry I'm sorry"
+    },
+    {
+      "start": 580.0,
+      "end": 583.52,
+      "text": "you for assessing if there's any sort of pericardial effusion since you can"
+    },
+    {
+      "start": 583.52,
+      "end": 587.37,
+      "text": "usually see kind of the full depth of the heart and you can see if there's any"
+    },
+    {
+      "start": 587.37,
+      "end": 589.65,
+      "text": "fluid posterior tear as well as anteriorly here."
+    },
+    {
+      "start": 591.5,
+      "end": 593.96,
+      "text": "This view, just keep in mind, this one in particular,"
+    },
+    {
+      "start": 594.16,
+      "end": 596.4,
+      "text": "you're wanting to keep an overhand grip of it"
+    },
+    {
+      "start": 596.4,
+      "end": 597.64,
+      "text": "so that you're not digging your knuckles"
+    },
+    {
+      "start": 597.64,
+      "end": 598.86,
+      "text": "into the patient's abdomen."
+    },
+    {
+      "start": 599.08,
+      "end": 599.7,
+      "text": "Since you're going to be pushing."
+    },
+    {
+      "start": 600.0,
+      "end": 605.31,
+      "text": "hard to get under their sternum to get this view. So then here's a live clip of your"
+    },
+    {
+      "start": 605.31,
+      "end": 609.97,
+      "text": "sub-cyphoid view. This one we're kind of fanning a little bit in and out of..."
+    },
+    {
+      "start": 610.0,
+      "end": 615.03,
+      "text": "in this clip so you can see that not all images are completely perfect. But you"
+    },
+    {
+      "start": 615.03,
+      "end": 618.31,
+      "text": "can still appreciate here that this is going to be your left atrium, your"
+    },
+    {
+      "start": 618.31,
+      "end": 619.98,
+      "text": "or my toe valve, or left venture."
+    },
+    {
+      "start": 620.06,
+      "end": 624.46,
+      "text": "your right atrium, your right ventricle, and your tricuspid valve in between."
+    },
+    {
+      "start": 625.36,
+      "end": 628.26,
+      "text": "And this you can see is your liver here. This is the window you're cutting through"
+    },
+    {
+      "start": 628.26,
+      "end": 629.98,
+      "text": "since you're going kind of through the liver."
+    },
+    {
+      "start": 630.0,
+      "end": 636.03,
+      "text": "get to the heart here. And that already wraps it up. Those are your four main views of the heart."
+    },
+    {
+      "start": 637.17,
+      "end": 639.87,
+      "text": "The next lecture I want you to watch is going to go through basic pathology."
+    },
+    {
+      "start": 640.0,
+      "end": 642.12,
+      "text": "and we'll review more of the ejection fraction,"
+    },
+    {
+      "start": 642.48,
+      "end": 644.52,
+      "text": "effusions, and equality, those big,"
+    },
+    {
+      "start": 644.52,
+      "end": 646.12,
+      "text": "e-questions, and how to find them."
+    },
+    {
+      "start": 646.77,
+      "end": 648.17,
+      "text": "If you have any questions, please don't hesitate"
+    },
+    {
+      "start": 648.17,
+      "end": 649.97,
+      "text": "to reach out to me at Adorno.com."
+    }
+  ]
+}

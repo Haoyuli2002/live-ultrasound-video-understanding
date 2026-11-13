@@ -1,0 +1,258 @@
+{
+  "video_id": "fbLRgKMQTs4",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_next50_20261106/train/fbLRgKMQTs4/asr.txt",
+  "segments": [
+    {
+      "start": 0.38,
+      "end": 4.3,
+      "text": "The purpose of this video is to demonstrate the technique used for an ultrasound-guided"
+    },
+    {
+      "start": 4.3,
+      "end": 5.74,
+      "text": "trigger finger steroid injection."
+    },
+    {
+      "start": 6.44,
+      "end": 9.9,
+      "text": "The indications for a trigger finger steroid injection includes pain."
+    },
+    {
+      "start": 10.03,
+      "end": 11.71,
+      "text": "are triggering at the A1 pulley."
+    },
+    {
+      "start": 12.35,
+      "end": 17.37,
+      "text": "Possible adverse reactions to the steroid injections include syncopy, swelling, allergic"
+    },
+    {
+      "start": 17.37,
+      "end": 19.85,
+      "text": "Reject reaction to preservatives infection."
+    },
+    {
+      "start": 20.1,
+      "end": 24.54,
+      "text": "skin hypopigmentation, tendon rupture, and pain at the injection site."
+    },
+    {
+      "start": 26.44,
+      "end": 29.98,
+      "text": "The materials needed for this procedure includes an alcohol swab, blood,"
+    },
+    {
+      "start": 30.0,
+      "end": 37.53,
+      "text": "That will chloride a 3cc syringe filled with dexamethasone and 1% lidocaine, a 30 gauge needle"
+    },
+    {
+      "start": 37.53,
+      "end": 39.88,
+      "text": "and ultrasound machine, goodbye."
+    },
+    {
+      "start": 40.1,
+      "end": 45.83,
+      "text": "two gauze pads, a bandaid, a cobalan wrap, and an informational sheet about what to expect"
+    },
+    {
+      "start": 45.83,
+      "end": 46.79,
+      "text": "after an injection."
+    },
+    {
+      "start": 50.0,
+      "end": 54.74,
+      "text": "Identify the site of the injection, the flexor tendon of the involved finger is palpated"
+    },
+    {
+      "start": 54.74,
+      "end": 56.22,
+      "text": "at the head of the metacarpal."
+    },
+    {
+      "start": 56.92,
+      "end": 59.980000000000004,
+      "text": "Feel for the thickening of the flexor tendon and for the site"
+    },
+    {
+      "start": 60.0,
+      "end": 66.26,
+      "text": "triggering as you flex and extend the finger. This is the sight of the injection. Make a skin"
+    },
+    {
+      "start": 66.26,
+      "end": 67.92,
+      "text": "indentation at this site."
+    },
+    {
+      "start": 70.8,
+      "end": 75.2,
+      "text": "Then, the injection site is prepared by cleansing the patient's skin with an alcohol swab."
+    },
+    {
+      "start": 76.72,
+      "end": 79.98,
+      "text": "In this video, the injection site is the left index finger A1 pull."
+    },
+    {
+      "start": 80.0,
+      "end": 84.28,
+      "text": "The A1 pulley is immediately superficial to the head of the metacarpal bone."
+    },
+    {
+      "start": 85.57,
+      "end": 89.97,
+      "text": "After cleansing the skin with alcohol, ethyl chloride, also known as co-"
+    },
+    {
+      "start": 90.0,
+      "end": 95.16,
+      "text": "spray is used to anesthetize the surface of the skin so that ideally the patient doesn't"
+    },
+    {
+      "start": 95.16,
+      "end": 99.98,
+      "text": "feel the 30-gauge needle when it is inserted. It should be noted that neither the ethyl chloride"
+    },
+    {
+      "start": 100.0,
+      "end": 106.17,
+      "text": "Nor the alcohol swab must not be applied to the ultrasound probe because alcohol causes"
+    },
+    {
+      "start": 106.17,
+      "end": 107.13,
+      "text": "damage to the probe."
+    },
+    {
+      "start": 108.22,
+      "end": 109.84,
+      "text": "After obtaining the ultrasound..."
+    },
+    {
+      "start": 110.1,
+      "end": 112.3,
+      "text": "Probe, the needle is inserted at the A1 pulley."
+    },
+    {
+      "start": 121.18,
+      "end": 129.84,
+      "text": "In this video, the ultrasound has labels for white sonodense metacarpal bone, gray isococlexer tendon."
+    },
+    {
+      "start": 130.0,
+      "end": 133.06,
+      "text": "and black anno-a-coic steroid fluid."
+    },
+    {
+      "start": 133.98,
+      "end": 139.94,
+      "text": "After the needle is adjusted so that it is superficial to the flexor-digitorm superficialus, the dexam"
+    },
+    {
+      "start": 140.0,
+      "end": 141.76,
+      "text": "At that zone, and lidocaine are injected."
+    },
+    {
+      "start": 142.66,
+      "end": 145.56,
+      "text": "You shouldn't feel any resistance while injecting the steroid fluid."
+    },
+    {
+      "start": 153.71,
+      "end": 158.71,
+      "text": "The ultrasound gel, also known as goo, is wiped away with the 2x2 gauze."
+    },
+    {
+      "start": 163.46,
+      "end": 168.33,
+      "text": "A bandaid is applied and the injection site is wrapped with coban."
+    },
+    {
+      "start": 177.68,
+      "end": 179.32,
+      "text": "The patient is a Seattle Seahawk fan."
+    },
+    {
+      "start": 180.16,
+      "end": 183.74,
+      "text": "and she is wrapped with Seahawk green coban"
+    },
+    {
+      "start": 183.74,
+      "end": 185.68,
+      "text": "to celebrate their recent victory."
+    },
+    {
+      "start": 187.16,
+      "end": 189.3,
+      "text": "The patient is instructed to take the coban off"
+    },
+    {
+      "start": 189.3,
+      "end": 189.92,
+      "text": "and about now."
+    },
+    {
+      "start": 190.0,
+      "end": 199.34,
+      "text": "and is given an informational sheet on what to expect after an injection. I would"
+    },
+    {
+      "start": 199.34,
+      "end": 199.98,
+      "text": "like to give..."
+    },
+    {
+      "start": 200.03,
+      "end": 204.25,
+      "text": "Special thanks to the team that I work with and their help in the creation of this Injection"
+    },
+    {
+      "start": 204.25,
+      "end": 205.05,
+      "text": "Technique video."
+    },
+    {
+      "start": 205.57,
+      "end": 209.63,
+      "text": "Our team includes P.A. Derrick Amori, Dr. Thomas Trumbull."
+    },
+    {
+      "start": 210.42,
+      "end": 214.04,
+      "text": "M.A. Michelle Bush, M.A. Allen Boyd,"
+    },
+    {
+      "start": 214.38,
+      "end": 216.1,
+      "text": "Scribe Christopher Higgin-Batham,"
+    },
+    {
+      "start": 216.1,
+      "end": 219.98,
+      "text": "and video technician Reed-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah-Mah"
+    },
+    {
+      "start": 220.0,
+      "end": 225.22,
+      "text": "I hope that anyone in PPA, MD, or DOs tasked with the responsibility of providing health"
+    },
+    {
+      "start": 225.22,
+      "end": 227.44,
+      "text": "care finds this video useful for their practice."
+    },
+    {
+      "start": 227.98,
+      "end": 229.66,
+      "text": "Thank you for taking the time to watch."
+    }
+  ]
+}

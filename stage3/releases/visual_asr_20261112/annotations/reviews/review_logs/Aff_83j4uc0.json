@@ -1,0 +1,73 @@
+{
+  "video_id": "Aff_83j4uc0",
+  "reviewer": "stage3_b",
+  "review_scope": "Question-led review by Agent B of Agent A draft; not blind. Native full-frame sampled checkpoints and available time-indexed ASR; no continuous replay or direct listening claim.",
+  "reviewer_native_opened": [
+    530,
+    540,
+    612,
+    613,
+    614,
+    615,
+    730,
+    750,
+    780,
+    810,
+    835,
+    614.5,
+    755,
+    760,
+    765,
+    770,
+    775,
+    614.25,
+    771,
+    772,
+    773,
+    774
+  ],
+  "tasks": [
+    {
+      "task": 1,
+      "outcome": "accepted",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER",
+      "finding": "540 right actual needle echo is brighter and more continuous; arrows recorded as shortcut."
+    },
+    {
+      "task": 2,
+      "outcome": "corrected",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER",
+      "changes": "615\u2192614.5; question completion requires distal portion to pass target, rather than unspecified future motion.612 baseline,613 near-right,614/614.25 not pastleft,614.5 beneathandpastleft. Actual sampled motion supports comparison; no specimen claim."
+    },
+    {
+      "task": 3,
+      "outcome": "accepted",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER",
+      "finding": "730 circled small dark lumen just below bright needle line; no safety outcome inferred."
+    },
+    {
+      "task": 4,
+      "outcome": "corrected",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER",
+      "changes": "780\u2192774 after773 negative, with negative checks750,755,760,765,770\u2013773. Removed implant-identity phrase from answer because notification can rely on grayscale arrangement."
+    },
+    {
+      "task": 5,
+      "outcome": "accepted",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER",
+      "finding": "530 three phantom photos unique prior reference; middle probe tilted upper-right vsfirstupright, contactedge depressed.810 different still."
+    },
+    {
+      "task": 6,
+      "outcome": "accepted",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER",
+      "finding": "835 horizontally oval target with diffuse internal gray echoes and brighter surround; no histology inferred."
+    }
+  ]
+}

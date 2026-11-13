@@ -1,0 +1,353 @@
+{
+  "video_id": "FgH5RWkhD0g",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/FgH5RWkhD0g/asr.txt",
+  "segments": [
+    {
+      "start": 4.34,
+      "end": 8.84,
+      "text": "I am Dr. Teresa Bowling, the purpose of this video is to demonstrate a superclivicular block"
+    },
+    {
+      "start": 8.84,
+      "end": 9.68,
+      "text": "or catheter."
+    },
+    {
+      "start": 10.24,
+      "end": 13.36,
+      "text": "The most important thing we do to start is to position the patient, which can be critical"
+    },
+    {
+      "start": 13.36,
+      "end": 15.72,
+      "text": "when we're trying to achieve a successful block."
+    },
+    {
+      "start": 16.32,
+      "end": 20.16,
+      "text": "You can see this patient has been putting a structure in a semi upright position."
+    },
+    {
+      "start": 20.56,
+      "end": 25.96,
+      "text": "We typically use a folded blanket and a towel to place beneath the scapula to optimize"
+    },
+    {
+      "start": 25.96,
+      "end": 30.32,
+      "text": "the distance between the structure and the needle insertion site."
+    },
+    {
+      "start": 30.32,
+      "end": 35.66,
+      "text": "As you can see in this video now, we have a much more open space in which to prep and"
+    },
+    {
+      "start": 35.66,
+      "end": 36.82,
+      "text": "drape and to place our needle."
+    },
+    {
+      "start": 41.47,
+      "end": 44.81,
+      "text": "For a super clavicular block, the first thing we do is position the patient."
+    },
+    {
+      "start": 45.27,
+      "end": 50.17,
+      "text": "This patient's arm is adjacent to her side and her neck and head are turned opposite the"
+    },
+    {
+      "start": 50.17,
+      "end": 51.05,
+      "text": "side we're going to block."
+    },
+    {
+      "start": 51.89,
+      "end": 55.05,
+      "text": "Basically we're looking for the groove right above the clavicle and this is the image"
+    },
+    {
+      "start": 55.05,
+      "end": 59.71,
+      "text": "you get in almost every patient no matter how big or small they are as you place an ultrasound"
+    },
+    {
+      "start": 59.71,
+      "end": 61.37,
+      "text": "probe right above the clavicle."
+    },
+    {
+      "start": 61.37,
+      "end": 68.08,
+      "text": "When this model has a beautiful, super-policular, plexus U, an ultrasound, in the middle of the"
+    },
+    {
+      "start": 68.08,
+      "end": 73.06,
+      "text": "screen you can see the subclavian artery pulsating, and again you can convert it with color"
+    },
+    {
+      "start": 73.06,
+      "end": 73.48,
+      "text": "Doppler."
+    },
+    {
+      "start": 74.42,
+      "end": 77.36,
+      "text": "And very often if you don't have the probe in the right position it peels it, it peers"
+    },
+    {
+      "start": 77.36,
+      "end": 85.01,
+      "text": "if you have two arteries, you get some artifact, you adjust the probe a little bit, and we're"
+    },
+    {
+      "start": 85.01,
+      "end": 90.17,
+      "text": "even typically called the cluster of grapes, and it's very well demonstrated right here"
+    },
+    {
+      "start": 90.17,
+      "end": 91.13,
+      "text": "on this model."
+    },
+    {
+      "start": 91.13,
+      "end": 96.82,
+      "text": "The subclavian artery lies immediately above the first rib and as you scan"
+    },
+    {
+      "start": 96.82,
+      "end": 101.06,
+      "text": "laterally you can see the clura and the lung come into view and again the"
+    },
+    {
+      "start": 101.06,
+      "end": 104.5,
+      "text": "cluster of grapes which is a similar co-vascular approach to the brachial"
+    },
+    {
+      "start": 104.5,
+      "end": 108.65,
+      "text": "plexus. On the left hand side of the screen is a lateral and on the right hand"
+    },
+    {
+      "start": 108.65,
+      "end": 112.43,
+      "text": "side of the screen is a medial side of this patient. We're going in certain"
+    },
+    {
+      "start": 112.43,
+      "end": 116.67,
+      "text": "needle here. She's very superficial or she's about a centimeter below the skin"
+    },
+    {
+      "start": 116.67,
+      "end": 121.77,
+      "text": "surface so the insertion will be the very shallow approach immediately hugging the"
+    },
+    {
+      "start": 121.77,
+      "end": 126.39,
+      "text": "ultrasound probe, as needles inserted will come in here, and our first injection will be"
+    },
+    {
+      "start": 126.39,
+      "end": 130.89,
+      "text": "deep to the core in the corner pocket, as they say, to make sure we anesthetize the owner"
+    },
+    {
+      "start": 130.89,
+      "end": 131.25,
+      "text": "nerve."
+    },
+    {
+      "start": 131.83,
+      "end": 134.81,
+      "text": "Well, inject 15 ml of local anesthetic in the corner pocket."
+    },
+    {
+      "start": 135.33,
+      "end": 140.15,
+      "text": "Once we confirm spread of local anesthetic, we will remove the needle about a half a centimeter"
+    },
+    {
+      "start": 140.57,
+      "end": 145.99,
+      "text": "and inject more superiorly to get the upper levels of the brachial plexus."
+    },
+    {
+      "start": 145.99,
+      "end": 150.85,
+      "text": "At that point, we will inject the final injectate of 15 ml of half percent repy the cane."
+    },
+    {
+      "start": 151.45,
+      "end": 154.75,
+      "text": "Once we confirm that we have a good spread of local anaesthetic, we will need to remove"
+    },
+    {
+      "start": 154.75,
+      "end": 157.63,
+      "text": "the needle if it is a single shop block or place a catheter."
+    },
+    {
+      "start": 158.17,
+      "end": 162.55,
+      "text": "The important thing to note about a superclavicular catheter is you do not want to thread the catheter"
+    },
+    {
+      "start": 162.55,
+      "end": 163.19,
+      "text": "too far."
+    },
+    {
+      "start": 163.67,
+      "end": 168.07,
+      "text": "The key here is to only thread the catheter about a centimeter or half a centimeter beyond"
+    },
+    {
+      "start": 168.07,
+      "end": 169.49,
+      "text": "the distance of the needle tip."
+    },
+    {
+      "start": 169.89,
+      "end": 174.93,
+      "text": "In order to ensure that you are optimizing the distribution of local anaesthetic in the"
+    },
+    {
+      "start": 174.93,
+      "end": 177.19,
+      "text": "flexes and not far away from the plexus."
+    },
+    {
+      "start": 190.82,
+      "end": 195.48,
+      "text": "This ultrasound video shows the brachial plexus in the superclivicular view, just lateral"
+    },
+    {
+      "start": 195.48,
+      "end": 196.64,
+      "text": "to the subclavian artery."
+    },
+    {
+      "start": 197.51,
+      "end": 201.35,
+      "text": "To the right of the screen, you're going to see the insertion of a two-inch, 17-gauge"
+    },
+    {
+      "start": 201.35,
+      "end": 204.01,
+      "text": "two-enetal approaching the brachial plexus."
+    },
+    {
+      "start": 205.02,
+      "end": 208.78,
+      "text": "The endole will come in and out of plane as the ultrasound moves slightly in one direction"
+    },
+    {
+      "start": 208.78,
+      "end": 209.26,
+      "text": "or another."
+    },
+    {
+      "start": 210.52,
+      "end": 215.08,
+      "text": "We continue to advance the needle towards the brachial plexus, hoping to achieve to put"
+    },
+    {
+      "start": 215.08,
+      "end": 218.34,
+      "text": "the tip of the needle deep to the plexus to get into that corner pocket where the"
+    },
+    {
+      "start": 218.34,
+      "end": 223.29,
+      "text": "nerve lives. Once the needle is in the corner pocket, we will confirm that with"
+    },
+    {
+      "start": 223.29,
+      "end": 227.27,
+      "text": "injection of local anesthetic looking for a pool of local anesthetic deep to the"
+    },
+    {
+      "start": 227.27,
+      "end": 231.93,
+      "text": "plexus. Very often after injecting, you'll see the plexus rise above the"
+    },
+    {
+      "start": 231.93,
+      "end": 237.3,
+      "text": "artery. Our assistant is going to start to inject local anesthetic and you'll see a"
+    },
+    {
+      "start": 237.3,
+      "end": 241.46,
+      "text": "pool of black local anesthetic developed around the plexus. And very often"
+    },
+    {
+      "start": 241.46,
+      "end": 245.02,
+      "text": "at this point, you will see the tip of the needle come into plain as it becomes hyper"
+    },
+    {
+      "start": 245.02,
+      "end": 248.34,
+      "text": "or a coic amongst the hypoechoic local anaesthetic."
+    },
+    {
+      "start": 248.78,
+      "end": 251.0,
+      "text": "You see the pooling of local anaesthetic here now."
+    },
+    {
+      "start": 251.64,
+      "end": 254.0,
+      "text": "After depositing half the local anaesthetic there,"
+    },
+    {
+      "start": 254.86,
+      "end": 256.42,
+      "text": "we will back up the needle slightly"
+    },
+    {
+      "start": 256.42,
+      "end": 259.52,
+      "text": "and redirect it in a more cephalide direction"
+    },
+    {
+      "start": 259.95,
+      "end": 262.16,
+      "text": "to bathe the upper parts of the rachial plexus"
+    },
+    {
+      "start": 262.16,
+      "end": 264.6,
+      "text": "in another 15 ml's of local anaesthetic,"
+    },
+    {
+      "start": 264.92,
+      "end": 266.18,
+      "text": "half percent rope of the cane."
+    },
+    {
+      "start": 266.66,
+      "end": 269.44,
+      "text": "For a total volume of 30 ml's in this location."
+    },
+    {
+      "start": 270.26,
+      "end": 271.5,
+      "text": "This block sets up immediately,"
+    },
+    {
+      "start": 271.88,
+      "end": 273.84,
+      "text": "and that's why it's called the spinal of the arm."
+    }
+  ]
+}

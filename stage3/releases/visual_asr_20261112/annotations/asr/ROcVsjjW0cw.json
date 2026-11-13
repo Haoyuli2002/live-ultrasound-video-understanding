@@ -1,0 +1,798 @@
+{
+  "video_id": "ROcVsjjW0cw",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av_visualfirst_next50_20261110/train/ROcVsjjW0cw/asr.txt",
+  "segments": [
+    {
+      "start": 2.91,
+      "end": 8.11,
+      "text": "Hi everyone, Greetings from Nara in Rudeh Laya Bangalore, Myself Dr. Harish Malabra, Myshurappa."
+    },
+    {
+      "start": 8.41,
+      "end": 9.97,
+      "text": "In another 15 minutes with..."
+    },
+    {
+      "start": 10.0,
+      "end": 15.85,
+      "text": "We will discuss ultrasound-guided central line catheterization, central line insertion,"
+    },
+    {
+      "start": 16.01,
+      "end": 17.39,
+      "text": "the technical aspects."
+    },
+    {
+      "start": 17.81,
+      "end": 19.97,
+      "text": "First of all, we need to understand so why"
+    },
+    {
+      "start": 20.0,
+      "end": 24.6,
+      "text": "we need to insert a center line. So, basically when we are not able to get a peripheral"
+    },
+    {
+      "start": 24.6,
+      "end": 29.94,
+      "text": "a success for giving any sort of intravenous medication, for the purpose of sent-"
+    },
+    {
+      "start": 30.03,
+      "end": 35.35,
+      "text": "venous pleasure monitoring with its pros and cons will not go in depth into it, but it is one"
+    },
+    {
+      "start": 35.35,
+      "end": 39.97,
+      "text": "of the indication. So, for the purpose of renal replacement therapy transvenous pain."
+    },
+    {
+      "start": 40.0,
+      "end": 46.0,
+      "text": "So, when we need to infuse some irritant drugs like calcium chloride, potassium chloride"
+    },
+    {
+      "start": 46.0,
+      "end": 49.34,
+      "text": "for the purpose of chemotherapy, total parental nutrition."
+    },
+    {
+      "start": 50.0,
+      "end": 54.99,
+      "text": "Nowadays we have peripheral tip and also when the osmolar it is less than 800, 850 mA"
+    },
+    {
+      "start": 55.47,
+      "end": 59.91,
+      "text": "or small, but if it is more than 850, 900, then we need a center."
+    },
+    {
+      "start": 60.0,
+      "end": 65.74,
+      "text": "So, infuse the vasoactive agent particularly ketocolomines, synthetic ketocolomines like"
+    },
+    {
+      "start": 65.74,
+      "end": 69.38,
+      "text": "not epinepinepinepinepinepinepinepinepinepinepinepinepinepinepinepinepinepinepinepinepinepinepinepinepinep"
+    },
+    {
+      "start": 69.92,
+      "end": 69.98,
+      "text": "."
+    },
+    {
+      "start": 70.0,
+      "end": 76.07,
+      "text": "like extravaceted with this to skin necrosis and also basically we need to infuse at the"
+    },
+    {
+      "start": 76.07,
+      "end": 79.97,
+      "text": "higher dose through the center line. So, next like 1, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2,"
+    },
+    {
+      "start": 80.0,
+      "end": 85.98,
+      "text": "by ultrasound guidance is required. So, tradition we know that if you follow blind technique"
+    },
+    {
+      "start": 85.98,
+      "end": 89.98,
+      "text": "of insertion of the central venous catheterization. Mechanical complexion of the central venous catheterization, mechanical complexion of the central venous catheterization, mechanical complexion of the central venous catheterization, mechanical complexion of the central venous catheterization, mechanical complexion of the central venous catheterization, mechanical complexion of the central venous catheterization, mechanical complexion of the central venous catheterization, mechanical complexion of the central venous catheterization, mechanical complexion of the central venous catheterization, mechanical complexion of the central venous catheterization, mechanical complexion of the central venous catheterization, mechanical complexion of the central venous catheterization, mechanical complexion of the central venous catheterization, mechanical complexion of the central venous catheterization, mechanical complexion of the central venous catheterization, mechanical complexion of the central venous catheterization, mechanical complexion of the central venous catheterization, mechanical complexion of the central"
+    },
+    {
+      "start": 90.0,
+      "end": 96.36,
+      "text": "allocation rate is around 15%. So, the insertion unsuccessful is going to happen in about 12"
+    },
+    {
+      "start": 96.36,
+      "end": 99.7,
+      "text": "to 15% without ultrasound. Nowadays, ultrasound"
+    },
+    {
+      "start": 100.0,
+      "end": 105.32,
+      "text": "is a standard of care standard practice across all tertiary care center, whether it is an intensive"
+    },
+    {
+      "start": 105.32,
+      "end": 109.88,
+      "text": "unit or a perioperative recovery unit. So, we"
+    },
+    {
+      "start": 110.0,
+      "end": 116.19,
+      "text": "have lots of advantages, we need to use the ultrasound to get all the advantages, increase"
+    },
+    {
+      "start": 116.19,
+      "end": 119.96,
+      "text": "and success rate, avoid the complications, reduce the time which is"
+    },
+    {
+      "start": 120.03,
+      "end": 125.51,
+      "text": "needed for the calculation. So, reduce the number of attempts. So, lesser the number"
+    },
+    {
+      "start": 125.51,
+      "end": 129.84,
+      "text": "of attempts. So, less punctures which are going to cause arterial"
+    },
+    {
+      "start": 130.0,
+      "end": 135.76,
+      "text": "that of the venous puncture and all, less chance of like centerline associated bloodstream infection"
+    },
+    {
+      "start": 135.76,
+      "end": 139.75,
+      "text": "or centerline related bloodstream infection. So, ultimately"
+    },
+    {
+      "start": 140.0,
+      "end": 144.14,
+      "text": "overall it's going to be safer. When we speak about the mechanical complications we know that"
+    },
+    {
+      "start": 144.14,
+      "end": 149.9,
+      "text": "pneumothorax arterial puncture, hematoma, malposition. So these are the mechanical complications which"
+    },
+    {
+      "start": 150.0,
+      "end": 155.63,
+      "text": "may happen more frequently with the blind technology as compared to that of the ultrasound technology."
+    },
+    {
+      "start": 156.44,
+      "end": 159.8,
+      "text": "So, how exactly we can do this one. So, basically we need"
+    },
+    {
+      "start": 160.0,
+      "end": 166.34,
+      "text": "appropriate preparation. So selection of the catheter set which have a catheterization needle"
+    },
+    {
+      "start": 166.34,
+      "end": 169.88,
+      "text": "weather dilator, hopper, kichetter, guide wire."
+    },
+    {
+      "start": 170.0,
+      "end": 175.83,
+      "text": "and scalpel, social material, so all these things should be included and we need to follow"
+    },
+    {
+      "start": 175.83,
+      "end": 179.77,
+      "text": "So all CRBSI bundle or Capsi bundle is appropriate."
+    },
+    {
+      "start": 180.03,
+      "end": 184.87,
+      "text": "selection of the site. So less infection is with the sub cleaver next to the IJV. Least"
+    },
+    {
+      "start": 184.87,
+      "end": 189.81,
+      "text": "like preferred is a femoral with the highest chance of infection and complete drape wherever."
+    },
+    {
+      "start": 190.0,
+      "end": 196.01,
+      "text": "we use salting technique, guideware technique, we need to drape the leg patient thoroughly and"
+    },
+    {
+      "start": 196.01,
+      "end": 199.77,
+      "text": "like along with the clorexidal cold-based skin."
+    },
+    {
+      "start": 200.0,
+      "end": 205.06,
+      "text": "preparation, proper hand hygiene. So, after the purpose is served, we need to take out"
+    },
+    {
+      "start": 205.06,
+      "end": 207.54,
+      "text": "of the central line also, these are the bundle care approved."
+    },
+    {
+      "start": 207.88,
+      "end": 209.7,
+      "text": "Next is the selection of the ultrasound."
+    },
+    {
+      "start": 210.03,
+      "end": 218.05,
+      "text": "So we need to choose the linear probe of that of the vascular probe which is having a frequency in between 5 to 10 to 12 megahertz."
+    },
+    {
+      "start": 218.47,
+      "end": 219.97,
+      "text": "So it helps in locating the van."
+    },
+    {
+      "start": 220.64,
+      "end": 226.03,
+      "text": "ensuring the potency of the vein and then we need to go for the puncture which helps in giving"
+    },
+    {
+      "start": 226.03,
+      "end": 229.78,
+      "text": "and real-time visualization of the needle tip of which"
+    },
+    {
+      "start": 230.0,
+      "end": 234.8,
+      "text": "the mechanical complications like pneumothorax and arterial puncture. But after the procedure,"
+    },
+    {
+      "start": 235.0,
+      "end": 239.76,
+      "text": "we need to confirm the tip positioning with the x-ray and also some times,"
+    },
+    {
+      "start": 240.0,
+      "end": 243.72,
+      "text": "can still go in a wrong direction that we can come from with the chest x-ray."
+    },
+    {
+      "start": 244.12,
+      "end": 249.86,
+      "text": "The back flow is very good, so then we can start infusing without waiting for the chest x-ray if it is an ultrasonic."
+    },
+    {
+      "start": 250.06,
+      "end": 254.88,
+      "text": "So, how we can have an image interpretation, we need to understand load in city objects"
+    },
+    {
+      "start": 254.88,
+      "end": 259.97,
+      "text": "like blood vessel which appears as black, identity objects like bone which"
+    },
+    {
+      "start": 260.03,
+      "end": 265.27,
+      "text": "appears white medium density object which is a muzzle which appears as a gray. So, identification"
+    },
+    {
+      "start": 265.27,
+      "end": 269.79,
+      "text": "of the vein from that of the artery how we can differentiate."
+    },
+    {
+      "start": 270.0,
+      "end": 274.9,
+      "text": "when it is compressible, thin and irregular world as compared to artery, so non-pulsatory,"
+    },
+    {
+      "start": 275.06,
+      "end": 279.92,
+      "text": "but sometimes central jubilar vein have some triphasic wave, this is a transmitted pulse."
+    },
+    {
+      "start": 280.0,
+      "end": 285.26,
+      "text": "from the carotid. So, it varies with the respiration, the diameter of the vein should be varied"
+    },
+    {
+      "start": 285.26,
+      "end": 289.82,
+      "text": "with the respiration. So, sometimes in a severe hypo-olumic patient."
+    },
+    {
+      "start": 290.06,
+      "end": 294.76,
+      "text": "that respiratory variation can get exaggerated. So, this is the femoral vein, femoral"
+    },
+    {
+      "start": 294.76,
+      "end": 299.84,
+      "text": "artery, femoral vein. So, which get collapsed after having a compression. So, this is the"
+    },
+    {
+      "start": 300.0,
+      "end": 306.7,
+      "text": "IGV, right? Carotid artery after compression, so vein get totally compressed. So both appear black,"
+    },
+    {
+      "start": 307.37,
+      "end": 309.97,
+      "text": "so there is no movement of the pulsatility in the vein."
+    },
+    {
+      "start": 310.0,
+      "end": 316.36,
+      "text": "So compressibility is for the vein, so the flow on the Doppler signal is going to be constant flow and it is"
+    },
+    {
+      "start": 316.36,
+      "end": 319.94,
+      "text": "augmentable in relation to respiratory changes, but it is a pulsatile flow"
+    },
+    {
+      "start": 320.0,
+      "end": 325.22,
+      "text": "in the artery. So, again we narrowed out our discussion for the cancellation of the IJV"
+    },
+    {
+      "start": 325.22,
+      "end": 327.96,
+      "text": "using the ultrasound. So, it is the internal juggler vein. So,"
+    },
+    {
+      "start": 327.96,
+      "end": 329.98,
+      "text": "So, Karrotty.Tree, so always the calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm, calm,"
+    },
+    {
+      "start": 330.0,
+      "end": 335.0,
+      "text": "carotid artery is going to be medial to that of the interstugular vein on both the side."
+    },
+    {
+      "start": 335.82,
+      "end": 339.62,
+      "text": "So, next thing, so this is how after you put the probe of the ultrasound."
+    },
+    {
+      "start": 340.13,
+      "end": 345.07,
+      "text": "the vein and that of the alter in the right side of the neck, it looks so basically internal"
+    },
+    {
+      "start": 345.55,
+      "end": 348.85,
+      "text": "juggler vein is collapsed on pressure so carrot should remain the same."
+    },
+    {
+      "start": 348.85,
+      "end": 349.97,
+      "text": "So, we..."
+    },
+    {
+      "start": 350.0,
+      "end": 354.02,
+      "text": "need to understand there is something called orientation. We have transverse orientation"
+    },
+    {
+      "start": 354.02,
+      "end": 359.78,
+      "text": "larger children are very orientation. So, in the transverse orientation, so like we put"
+    },
+    {
+      "start": 360.0,
+      "end": 365.34,
+      "text": "the probe, so the rays pass through the vessel perpendicularly, the vein looks like this."
+    },
+    {
+      "start": 365.42,
+      "end": 369.76,
+      "text": "In the longitudinal orientation, we are able to see the posterior wall."
+    },
+    {
+      "start": 370.03,
+      "end": 376.21,
+      "text": "of the vein also. So, less chance of the perforation of the posterior wall in the longitudinal orientation."
+    },
+    {
+      "start": 376.55,
+      "end": 379.87,
+      "text": "So, this is the like needle which we can see in the"
+    },
+    {
+      "start": 380.06,
+      "end": 384.66,
+      "text": "answers orientation, so this is a longitudinal orientation, so we can see the poster wall"
+    },
+    {
+      "start": 384.66,
+      "end": 385.66,
+      "text": "of the vessel also."
+    },
+    {
+      "start": 386.08,
+      "end": 389.52,
+      "text": "So, we have two main techniques, so there is something called static technique, there is"
+    },
+    {
+      "start": 389.52,
+      "end": 389.96,
+      "text": "something called static technique, there is something called static technique, there is"
+    },
+    {
+      "start": 390.0,
+      "end": 395.18,
+      "text": "dynamic or the real, which is the most commonly used in the static technique, so we position"
+    },
+    {
+      "start": 395.18,
+      "end": 399.97,
+      "text": "the patient and we use the ultrasound probe to mark the vessel and after that we"
+    },
+    {
+      "start": 400.0,
+      "end": 405.74,
+      "text": "not use continuously the ultrasound probe. So less chance of hand like positioning related"
+    },
+    {
+      "start": 405.74,
+      "end": 409.88,
+      "text": "complications and all. So it is sterile because we are not using the"
+    },
+    {
+      "start": 410.13,
+      "end": 415.59,
+      "text": "continuation of this ultrasound probe. So, but the problem is it is not real time. So,"
+    },
+    {
+      "start": 415.61,
+      "end": 419.83,
+      "text": "when it comes to dynamic approach, which is a real time, a cancellation of the"
+    },
+    {
+      "start": 420.35,
+      "end": 424.89,
+      "text": "like vane. So basically throw out the procedure we are going to see where is that needle,"
+    },
+    {
+      "start": 425.09,
+      "end": 429.73,
+      "text": "where is the guide, where is the catheter and all. So we use the sterile sleeve over the probe."
+    },
+    {
+      "start": 430.29,
+      "end": 436.75,
+      "text": "create a utmost sterile procedure. So initially we might require two people when we are getting"
+    },
+    {
+      "start": 436.75,
+      "end": 439.77,
+      "text": "and equate training and all after that even a single person can."
+    },
+    {
+      "start": 440.26,
+      "end": 445.06,
+      "text": "this overall it is a better technique, it is since it is a real and continuation procedure"
+    },
+    {
+      "start": 445.06,
+      "end": 449.76,
+      "text": "with a live technology. So first we need to position the patient in a supine."
+    },
+    {
+      "start": 450.29,
+      "end": 456.6,
+      "text": "position in a comfortable way, place the probe and the neck in a transfer orientation, sweep the area"
+    },
+    {
+      "start": 456.6,
+      "end": 459.76,
+      "text": "so that identify the different structure. So, Vesel."
+    },
+    {
+      "start": 460.0,
+      "end": 462.76,
+      "text": "should be kept in the middle of the probe."
+    },
+    {
+      "start": 463.1,
+      "end": 464.2,
+      "text": "So in the middle of the screen."
+    },
+    {
+      "start": 464.66,
+      "end": 466.38,
+      "text": "So next in the first look itself,"
+    },
+    {
+      "start": 466.6,
+      "end": 468.64,
+      "text": "we need to identify the presence of vessel."
+    },
+    {
+      "start": 468.78,
+      "end": 469.92,
+      "text": "That is our trend out of the way."
+    },
+    {
+      "start": 470.0,
+      "end": 474.8,
+      "text": "its patency exclude there is no thrombus present, if the size is less than 5 millimeter,"
+    },
+    {
+      "start": 475.14,
+      "end": 479.66,
+      "text": "bit difficulty which may happen practically for the insertion and dull."
+    },
+    {
+      "start": 480.06,
+      "end": 485.48,
+      "text": "So localize the anatomy and also understand all those relationships also, so then in the"
+    },
+    {
+      "start": 485.48,
+      "end": 489.88,
+      "text": "dynamic real time approach, so remember the sterility is very"
+    },
+    {
+      "start": 490.0,
+      "end": 490.58,
+      "text": "important."
+    },
+    {
+      "start": 491.0,
+      "end": 498.32,
+      "text": "So, set up the sterile tray and place the sleeves which we use over the probe in the preparation"
+    },
+    {
+      "start": 498.32,
+      "end": 499.36,
+      "text": "phase itself."
+    },
+    {
+      "start": 499.36,
+      "end": 499.92,
+      "text": "Bye."
+    },
+    {
+      "start": 500.16,
+      "end": 505.48,
+      "text": "the gel on the probe. So then the sterile sheet over the probe again sterile gel on the sheet"
+    },
+    {
+      "start": 505.48,
+      "end": 509.74,
+      "text": "we need to put. So this is how we put like a jelly on the"
+    },
+    {
+      "start": 510.03,
+      "end": 514.75,
+      "text": "probe directly and this is the sheet, so sheet over the probe. Again, we put a sterile jelly"
+    },
+    {
+      "start": 514.75,
+      "end": 519.15,
+      "text": "and the probe which already covered with the sheet. So, basically, this sleeve,"
+    },
+    {
+      "start": 520.0,
+      "end": 525.38,
+      "text": "with the probe with the jelly is ready. So basically, this is how the ultrasound probe"
+    },
+    {
+      "start": 525.67,
+      "end": 529.79,
+      "text": "we keep transfers orientation. This is a needle entering. Once the needle"
+    },
+    {
+      "start": 530.13,
+      "end": 539.97,
+      "text": "We see something like a ring down artifact which is due to the needle penetration into the vein, so vessel get deformed once we put the prey."
+    },
+    {
+      "start": 540.0,
+      "end": 544.9,
+      "text": "So observe the needle entering the vein and watch for the back wall perforation. So this"
+    },
+    {
+      "start": 544.9,
+      "end": 549.98,
+      "text": "we can see in the longitudinal orientation. So basically we can"
+    },
+    {
+      "start": 550.0,
+      "end": 554.04,
+      "text": "and get some idea about the distance from the skin to that of the vein, which is almost"
+    },
+    {
+      "start": 554.04,
+      "end": 559.94,
+      "text": "1.2 to 1.5 centimeter, this is the right inter jugular vein depth from the"
+    },
+    {
+      "start": 560.0,
+      "end": 565.41,
+      "text": "of the skin, so then there's the vein, there's the archery, this is the needle which is entering"
+    },
+    {
+      "start": 565.41,
+      "end": 566.07,
+      "text": "into the vein."
+    },
+    {
+      "start": 566.49,
+      "end": 569.93,
+      "text": "So, once we done with inserting the needle with a series."
+    },
+    {
+      "start": 570.0,
+      "end": 575.48,
+      "text": "So, confirm the blood flow freely with the back flow by aspirating with the syringe."
+    },
+    {
+      "start": 575.94,
+      "end": 579.58,
+      "text": "So, once the free flow is there, remove the syringe, disconnect the syringe, so then you"
+    },
+    {
+      "start": 579.58,
+      "end": 579.86,
+      "text": "the past."
+    },
+    {
+      "start": 580.06,
+      "end": 583.84,
+      "text": "the guideway. So, this is how we can identify the guideway which is entering into the"
+    },
+    {
+      "start": 583.84,
+      "end": 588.72,
+      "text": "IJV. So, this is the longitudinal view, this is the transfer orientation, this is the"
+    },
+    {
+      "start": 588.72,
+      "end": 589.96,
+      "text": "guideway which we can"
+    },
+    {
+      "start": 590.0,
+      "end": 596.67,
+      "text": "make out using the ultrasound. So then again remove the needle, keep the guide wire intact inside"
+    },
+    {
+      "start": 596.67,
+      "end": 599.91,
+      "text": "2. So, then pass this dilator which is provided."
+    },
+    {
+      "start": 600.0,
+      "end": 607.04,
+      "text": "with the set, so we can use level number blade also to have some initial nick to make the"
+    },
+    {
+      "start": 607.04,
+      "end": 609.54,
+      "text": "dilatation easy, but you have to be very careful which should not."
+    },
+    {
+      "start": 609.54,
+      "end": 609.98,
+      "text": "I'm sorry."
+    },
+    {
+      "start": 610.03,
+      "end": 614.45,
+      "text": "continue to bleed even after finishing the procedure and all. Once we dilated, take out"
+    },
+    {
+      "start": 614.45,
+      "end": 619.67,
+      "text": "this plastic PVC dilator, so then you pass the ketchupter over the guideway."
+    },
+    {
+      "start": 620.0,
+      "end": 624.7,
+      "text": "this is how we can see the guide means like catheter inside the vein in the longitudinal"
+    },
+    {
+      "start": 624.7,
+      "end": 629.9,
+      "text": "orientation. So, this covers the entire procedure. So, basically in the ultra sound"
+    },
+    {
+      "start": 630.0,
+      "end": 635.91,
+      "text": "we can push to make sure before puncture the orientation between the vein and that of the"
+    },
+    {
+      "start": 635.91,
+      "end": 639.45,
+      "text": "tree, this is the vein in the longitudinal wave. So, needle enters into the vein."
+    },
+    {
+      "start": 640.03,
+      "end": 644.92,
+      "text": "So again, this is the guide wire which is entering, which we can see in the longitudinal orientation."
+    },
+    {
+      "start": 645.42,
+      "end": 646.88,
+      "text": "So this is the final catheterization."
+    },
+    {
+      "start": 647.36,
+      "end": 649.94,
+      "text": "So all these things we can make out using the alternative."
+    },
+    {
+      "start": 650.0,
+      "end": 655.84,
+      "text": "from puncture to the final catheter insertion. So, we follow six step approach for ultrasound"
+    },
+    {
+      "start": 655.84,
+      "end": 659.98,
+      "text": "on guided central Venus catheter replacement. So, first identify the anode."
+    },
+    {
+      "start": 660.0,
+      "end": 665.3,
+      "text": "of insertion site and localization of the vein differentiated from the artery confirm"
+    },
+    {
+      "start": 665.3,
+      "end": 669.82,
+      "text": "the potency of the vein with the Doppler, there should not be no any sort of"
+    },
+    {
+      "start": 670.16,
+      "end": 674.56,
+      "text": "like thrombus and all, use real time ultrasound guidance for the puncture of the vein."
+    },
+    {
+      "start": 674.94,
+      "end": 679.97,
+      "text": "So confirm it by using both the transverse and that of the longitudinal ores."
+    },
+    {
+      "start": 680.0,
+      "end": 689.89,
+      "text": "orientation next confirm the needed position again with both the orientation so like remove the syringe like pass the guideway again we can confirm the"
+    },
+    {
+      "start": 690.0,
+      "end": 696.38,
+      "text": "guide wire using the ultrasound, once guide wire is inside too, so then take out the needle,"
+    },
+    {
+      "start": 696.92,
+      "end": 699.9,
+      "text": "so then again pass the catheter over the guide wire so."
+    },
+    {
+      "start": 700.1,
+      "end": 705.4,
+      "text": "fix it with a suture and attach the extension line appropriately for a particular patient."
+    },
+    {
+      "start": 705.6,
+      "end": 709.92,
+      "text": "So this completes the technology which we can follow to insiders."
+    },
+    {
+      "start": 710.0,
+      "end": 715.22,
+      "text": "central minus catheter using an ultra sound machine, thank you all stay safe."
+    }
+  ]
+}

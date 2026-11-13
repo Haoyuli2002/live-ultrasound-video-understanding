@@ -1,0 +1,85 @@
+{
+  "video_id": "g-ImEs1cANU",
+  "reviewer": "stage3_b",
+  "review_scope": "Question-led review by Agent B of Agent A draft; not blind. Native full-frame sampled checkpoints and available time-indexed ASR; no continuous replay or direct listening claim.",
+  "reviewer_native_opened": [
+    175,
+    940,
+    950,
+    960,
+    970,
+    972,
+    974,
+    974.5,
+    975,
+    975.25,
+    975.5,
+    976,
+    978,
+    980,
+    1080,
+    1085,
+    1086,
+    1087,
+    1087.25,
+    1087.5,
+    1087.75,
+    1088,
+    1089,
+    1090,
+    1095,
+    1115,
+    1490,
+    1500,
+    1510,
+    1512,
+    1514,
+    1516,
+    1518,
+    1518.5,
+    1519,
+    1519.25,
+    1519.5,
+    1519.75,
+    1520,
+    1640
+  ],
+  "tasks": [
+    {
+      "task_index": 1,
+      "findings": "Confirmed first horizontal-left/vertical-right pair; ASR directly describes pattern, high shortcut risk retained.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 2,
+      "findings": "Moved980to975.25 first replacement pair; successive teaching cases, no physiology improvement.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 3,
+      "findings": "Moved1095to1087.5 first dependent image; coarse tissue-like morphology only.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 4,
+      "findings": "Confirmed dark wedge and lower/right tissue projection at1115.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 5,
+      "findings": "Moved1520to1519 first dependent pair; no diagnosis or fluid volume inferred.",
+      "query_status": "WAIT",
+      "answer_status": "ANSWER"
+    },
+    {
+      "task_index": 6,
+      "findings": "Confirmed first pair historical mapping; acknowledges repeated content with different memory demand and audio shortcut.",
+      "query_status": "ANSWER",
+      "answer_status": "ANSWER"
+    }
+  ]
+}

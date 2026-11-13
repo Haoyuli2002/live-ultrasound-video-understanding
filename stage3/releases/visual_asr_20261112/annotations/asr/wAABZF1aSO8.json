@@ -1,0 +1,128 @@
+{
+  "video_id": "wAABZF1aSO8",
+  "annotation_only": true,
+  "full_video_asr_allowed_at_inference": false,
+  "source": "/Users/I761836/Documents/Codex/2026-11-04/mi/outputs/stage3_av50_20261105/train/wAABZF1aSO8/asr.txt",
+  "segments": [
+    {
+      "start": 7.16,
+      "end": 14.3,
+      "text": "A linear array transducer with a nerve exam type is used to perform an ultrasound guided interscaling nerve block."
+    },
+    {
+      "start": 14.72,
+      "end": 20.06,
+      "text": "The target depth is approximately 1 to 3 centimeters in an 80 kilogram adult."
+    },
+    {
+      "start": 20.68,
+      "end": 28.88,
+      "text": "The patient is positioned in a 45 degree reclining position with a pillow under their head and the head turned toward the contralateral side."
+    },
+    {
+      "start": 29.54,
+      "end": 36.16,
+      "text": "The examination begins by finding the superclavicular region of the brachial plexus as a landmark technique."
+    },
+    {
+      "start": 36.16,
+      "end": 41.74,
+      "text": "The transducer is placed posterior to the midpoint of the clavicle with the orientation"
+    },
+    {
+      "start": 41.74,
+      "end": 45.44,
+      "text": "marker directed to the patient's right at a 3 o'clock position."
+    },
+    {
+      "start": 49.05,
+      "end": 55.17,
+      "text": "The subclavian artery is seen as a round, pulsatile structure superior to the bright reflection"
+    },
+    {
+      "start": 55.17,
+      "end": 56.03,
+      "text": "of the first rib."
+    },
+    {
+      "start": 56.57,
+      "end": 62.71,
+      "text": "The plura is seen as a bright hyperacoic reflection, deep 2 or at the same depth as the first"
+    },
+    {
+      "start": 62.71,
+      "end": 63.01,
+      "text": "rib."
+    },
+    {
+      "start": 63.01,
+      "end": 68.83,
+      "text": "The nerves of the brachial plexus are posterior or superior to the subclavian artery."
+    },
+    {
+      "start": 69.66,
+      "end": 76.68,
+      "text": "The nerves appear as hypoechoic dark circles within the bright hypoechoic fascia surrounding the brachial plexus."
+    },
+    {
+      "start": 77.06,
+      "end": 83.44,
+      "text": "To identify the interscalene region of the brachial plexus, slowly slide the transducer up the neck."
+    },
+    {
+      "start": 83.98,
+      "end": 88.28,
+      "text": "The interscalene muscles will frame the nerves within the interscalene groove."
+    },
+    {
+      "start": 88.28,
+      "end": 97.16,
+      "text": "The nerves will change in shape from a grape-like cluster in the superclavicular region to a chain link appearance in the interscaling groove."
+    },
+    {
+      "start": 97.66,
+      "end": 101.6,
+      "text": "The C5 and C6 nerve roots appear as three circles."
+    },
+    {
+      "start": 102.44,
+      "end": 108.3,
+      "text": "The hypoechoic pulsatile carotid artery will appear medial to the anterior scalene muscle."
+    },
+    {
+      "start": 108.92,
+      "end": 113.02,
+      "text": "The needle can be advanced using an in-plane or out-of-plane technique."
+    },
+    {
+      "start": 113.02,
+      "end": 119.86,
+      "text": "For an in-plane technique, the needle is positioned one to two centimeters lateral to the transducer,"
+    },
+    {
+      "start": 120.24,
+      "end": 128.06,
+      "text": "and advanced under the transducer until the tip is just posterior to or between the C5 and C6 nerve roots."
+    },
+    {
+      "start": 128.88,
+      "end": 132.84,
+      "text": "The local anesthetic is injected incrementally close to the nerve roots."
+    },
+    {
+      "start": 133.56,
+      "end": 138.18,
+      "text": "The needle can be redirected if the spread of local anesthetic is not deemed adequate."
+    },
+    {
+      "start": 138.18,
+      "end": 144.24,
+      "text": "It is not necessary to have local anaesthetic and tearier and posterior to the nerve roots."
+    },
+    {
+      "start": 144.66,
+      "end": 147.82,
+      "text": "Posterior spread only of local anaesthetic is effective."
+    }
+  ]
+}
