@@ -12,7 +12,7 @@ trap 'rm -rf -- "$SHORT_TMP"' EXIT
 export TMPDIR="$SHORT_TMP" TMP="$SHORT_TMP" TEMP="$SHORT_TMP"
 python -m scripts.gpu_runtime
 torchrun --standalone --nnodes=1 --nproc-per-node="$NPROC_PER_NODE" -m stage2.train_full \
-  --architecture "$ARCHITECTURE" --train-jsonl "$DATASET_RELEASE/train.jsonl" \
+  --architecture "$ARCHITECTURE" --dataset-version "$DATASET_VERSION" --train-jsonl "$DATASET_RELEASE/train.jsonl" \
   --video-path-map "$RUN_DIR/video_map.json" --release-manifest "$DATASET_RELEASE/manifest.json" \
   --init-adapter "$STAGE1_ADAPTER" --output-dir "$RUN_DIR/training" --epochs "$EPOCHS" \
   --learning-rate "$LEARNING_RATE" --frame-size 224 --save-steps "$SAVE_STEPS" --resume

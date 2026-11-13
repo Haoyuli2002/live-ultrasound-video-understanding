@@ -2,13 +2,26 @@
 # Run on LRZ after uploading the frozen release. One recorded submission per architecture.
 set -euo pipefail
 ARCHITECTURE=${1:-}
+DATASET_VERSION=${2:-${DATASET_VERSION:-visual_only}}
 [[ "$ARCHITECTURE" == ordinary || "$ARCHITECTURE" == qformer ]] || {
-  echo 'Usage: bash scripts/slurm/submit_stage2_reviewed.sh ordinary|qformer' >&2
+  echo 'Usage: bash scripts/slurm/submit_stage2_reviewed.sh ordinary|qformer [visual_only|visual_asr]' >&2
   exit 2
+}
+[[ "$DATASET_VERSION" == visual_only || "$DATASET_VERSION" == visual || "$DATASET_VERSION" == visual_asr ]] || {
+  echo 'Dataset version must be visual_only or visual_asr' >&2; exit 2;
 }
 export REPO=${REPO:-$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)}
 export DATA=${DATA:-/dss/mcmlscratch/04/ge75vid2/haoyu/live-ultrasound-video-understanding}
-export DATASET_RELEASE=${DATASET_RELEASE:-$REPO/stage2/releases/accepted_v4_20261105_990b9b48}
+[[ "$DATASET_VERSION" != visual ]] || DATASET_VERSION=visual_only
+export DATASET_VERSION
+if [[ -z ${DATASET_RELEASE:-} ]]; then
+  export DATASET_RELEASE=$(PYTHONPATH="$REPO${PYTHONPATH:+:$PYTHONPATH}" python - "$DATASET_VERSION" "$REPO" "$DATA" <<'PYRELEASE'
+import sys
+from stage2.dataset_versions import default_release
+print(default_release(sys.argv[1],sys.argv[2],sys.argv[3]))
+PYRELEASE
+  )
+fi
 export STAGE1_ADAPTER="$DATA/cluster_data/experiments/stage1/stage1_v21_train191_2b_4gpu_f30_e1_20261101T071541Z_sCe9Fb/final"
 export QFORMER_SMOKE_REPORT=${QFORMER_SMOKE_REPORT:-}
 export GPU_TYPE=${GPU_TYPE:-auto} NPROC_PER_NODE=4 EPOCHS=1 WALLTIME=24:00:00
@@ -20,7 +33,9 @@ source "$CONDA_SH"
 conda activate "$CONDA_ENV"
 cd "$REPO"
 RECORD_DIR="$DATA/cluster_data/experiments/stage2/accepted_v4_20261105_990b9b48_submissions"
+[[ "$DATASET_VERSION" == visual_only ]] || RECORD_DIR="$DATA/cluster_data/experiments/stage2/${DATASET_VERSION}_submissions"
 RECORD_KEY=$ARCHITECTURE
+[[ "$DATASET_VERSION" == visual_only ]] || RECORD_KEY="${DATASET_VERSION}_${ARCHITECTURE}"
 [[ "$ARCHITECTURE" != qformer ]] || RECORD_KEY=qformer_secondwise_v2
 mkdir -p "$RECORD_DIR"
 LOCK_DIR="$RECORD_DIR/$RECORD_KEY.lock"
@@ -45,13 +60,18 @@ if [[ -s "$RECORD_DIR/$RECORD_KEY.job_id.txt" ]]; then
   cat "$RECORD_DIR/$RECORD_KEY.run_dir.txt"
   exit 0
 fi
-python - <<'PYVERIFY'
+PYTHONPATH="$REPO${PYTHONPATH:+:$PYTHONPATH}" python - <<'PYVERIFY'
 import hashlib,os
 from pathlib import Path
+from stage2.dataset_versions import validate_dataset_version
+from stage2.release import validate_release
 p=Path(os.environ['DATASET_RELEASE'])/'manifest.json'
-if not p.is_file():raise SystemExit(f'Missing frozen release: {p}; git pull origin main first')
-if hashlib.sha256(p.read_bytes()).hexdigest()!='990b9b489194028ee4437ef64def17ee515d3cf273702c750633c22df834cb4b':
- raise SystemExit('This helper is pinned to accepted_v4_20261105_990b9b48; use the generic submitter for a different release')
+if not p.is_file():
+ candidate=os.environ.get('STAGE2_AV_ASR_CANDIDATE_ROOT','(set STAGE2_AV_ASR_CANDIDATE_ROOT to the candidate tree)')
+ raise SystemExit(f'Missing frozen {os.environ["DATASET_VERSION"]} release: {p}; current AV+ASR candidates are not a training release: {candidate}')
+if os.environ['DATASET_VERSION']=='visual_only' and hashlib.sha256(p.read_bytes()).hexdigest()!='990b9b489194028ee4437ef64def17ee515d3cf273702c750633c22df834cb4b':
+ raise SystemExit('Visual helper is pinned to accepted_v4_20261105_990b9b48; use the generic submitter for a different release')
+m=validate_release(p);validate_dataset_version(m,os.environ['DATASET_VERSION'])
 PYVERIFY
 python -m stage2.release --manifest "$DATASET_RELEASE/manifest.json"
 if [[ "$ARCHITECTURE" == qformer && ! -s "$QFORMER_SMOKE_REPORT" ]]; then

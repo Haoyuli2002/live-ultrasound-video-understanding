@@ -32,7 +32,7 @@ set -eu
 python - <<'CAPTURE'
 import json,os
 from pathlib import Path
-keys=['DATASET_RELEASE','NPROC_PER_NODE','EPOCHS','WALLTIME','STAGE1_ADAPTER']
+keys=['DATASET_RELEASE','DATASET_VERSION','NPROC_PER_NODE','EPOCHS','WALLTIME','STAGE1_ADAPTER']
 p=Path(os.environ['CAPTURE'])
 with p.open('a') as f:f.write(json.dumps({k:os.environ[k] for k in keys})+'\\n')
 CAPTURE
@@ -50,8 +50,10 @@ echo "Run: $DATA/mock_run"
         for name in ['DATASET_RELEASE','RESUME_RUN','QFORMER_SMOKE_REPORT']:
             self.env.pop(name,None)
 
-    def run_helper(self,arch='ordinary',ok=True,**extra):
-        r=subprocess.run(['bash',str(self.helper),arch],env=dict(self.env,**extra),
+    def run_helper(self,arch='ordinary',version=None,ok=True,**extra):
+        command=['bash',str(self.helper),arch]
+        if version is not None:command.append(version)
+        r=subprocess.run(command,env=dict(self.env,**extra),
                          cwd=self.root,capture_output=True,text=True)
         self.assertEqual(r.returncode==0,ok,r.stdout+'\n'+r.stderr)
         return r
@@ -61,6 +63,7 @@ echo "Run: $DATA/mock_run"
         cfg=json.loads(self.capture.read_text())
         self.assertEqual(Path(cfg['DATASET_RELEASE']),self.repo/'stage2/releases'/RELEASE.name)
         self.assertEqual([cfg[k] for k in ['NPROC_PER_NODE','EPOCHS','WALLTIME']],['4','1','24:00:00'])
+        self.assertEqual(cfg['DATASET_VERSION'],'visual_only')
         self.assertTrue(cfg['STAGE1_ADAPTER'].endswith('stage1_v21_train191_2b_4gpu_f30_e1_20261101T071541Z_sCe9Fb/final'))
         self.assertEqual((self.records/'ordinary.job_id.txt').read_text().strip(),'590999')
 
@@ -98,6 +101,11 @@ echo "Run: $DATA/mock_run"
         (release/'manifest.json').write_text('{}')
         result=self.run_helper(ok=False,DATASET_RELEASE=str(release))
         self.assertIn('pinned to accepted_v4',result.stderr)
+        self.assertFalse(self.capture.exists())
+
+    def test_visual_asr_candidate_is_not_a_trainable_release(self):
+        result=self.run_helper('ordinary','visual_asr',ok=False)
+        self.assertIn('Missing frozen visual_asr release',result.stderr)
         self.assertFalse(self.capture.exists())
 
     def test_existing_lock_does_not_submit(self):

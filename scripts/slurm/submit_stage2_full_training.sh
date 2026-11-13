@@ -6,7 +6,21 @@ export ARCHITECTURE=${1:-}
   echo 'Usage: submit_stage2_full_training.sh ordinary|qformer' >&2; exit 2;
 }
 export REPO=${REPO:-$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)}
+export PYTHONPATH="$REPO${PYTHONPATH:+:$PYTHONPATH}"
 export DATA=${DATA:-/dss/mcmlscratch/04/ge75vid2/haoyu/live-ultrasound-video-understanding}
+export DATASET_VERSION=${DATASET_VERSION:-visual_only}
+[[ "$DATASET_VERSION" == visual_only || "$DATASET_VERSION" == visual || "$DATASET_VERSION" == visual_asr ]] || {
+  echo 'DATASET_VERSION must be visual_only or visual_asr' >&2; exit 2;
+}
+[[ "$DATASET_VERSION" != visual ]] || DATASET_VERSION=visual_only
+if [[ -z ${DATASET_RELEASE:-} ]]; then
+  export DATASET_RELEASE=$(python - "$DATASET_VERSION" "$REPO" "$DATA" <<'PYRELEASE'
+import sys
+from stage2.dataset_versions import default_release
+print(default_release(sys.argv[1],sys.argv[2],sys.argv[3]))
+PYRELEASE
+  )
+fi
 export CONDA_SH=${CONDA_SH:-$HOME/miniconda3/etc/profile.d/conda.sh} CONDA_ENV=${CONDA_ENV:-ultrasound}
 source "$CONDA_SH"
 conda activate "$CONDA_ENV"
@@ -14,7 +28,6 @@ cd "$REPO"
 git diff --quiet HEAD -- stage2 scripts/slurm/submit_stage2_full_training.sh scripts/slurm/run_stage2_full_training.sbatch || {
   echo 'Commit the training code before freezing a full run.' >&2; exit 2;
 }
-: "${DATASET_RELEASE:?Set DATASET_RELEASE to the complete frozen accepted release}"
 export DATASET_RELEASE
 export STAGE1_ADAPTER=${STAGE1_ADAPTER:-$DATA/cluster_data/experiments/stage1/stage1_v21_train191_2b_4gpu_f30_e1_20261101T071541Z_sCe9Fb/final}
 export NPROC_PER_NODE=${NPROC_PER_NODE:-4} EPOCHS=${EPOCHS:-1}
@@ -27,8 +40,10 @@ python - <<'PY'
 import json,math,os
 from pathlib import Path
 from stage2.release import validate_release
+from stage2.dataset_versions import validate_dataset_version
 from stage2.provenance import digest
 m=validate_release(Path(os.environ['DATASET_RELEASE'])/'manifest.json')
+validate_dataset_version(m,os.environ['DATASET_VERSION'])
 s=Path(os.environ['STAGE1_ADAPTER']);assert (s/'adapter_config.json').is_file()
 assert (s/'adapter_model.safetensors').stat().st_size>0
 assert math.isfinite(float(os.environ['LEARNING_RATE'])) and float(os.environ['LEARNING_RATE'])>0
@@ -46,10 +61,12 @@ if os.environ['ARCHITECTURE']=='qformer':
  assert q['qformer_config']['short_queries']==1 and q['qformer_config']['short_update_seconds']==1
  for name in ['model.py','qformer.py','short_encoding.py','train_overfit_ab.py']:
   assert q['implementation_sha256'][name]==digest(Path('stage2')/name),'Memory implementation changed since smoke; rerun smoke'
-print(f"Release ready: {len(m['splits']['train'])} TRAIN videos; {len(m['splits']['eval'])} EVAL videos excluded")
+print(f"Release ready ({os.environ['DATASET_VERSION']}): {len(m['splits']['train'])} TRAIN videos; {len(m['splits']['eval'])} EVAL videos excluded")
 PY
 if [[ ${DRY_RUN:-0} != 1 ]]; then
-  ACTIVE=$(squeue -h -u "$USER" --name="stage2-full-$ARCHITECTURE" -o '%i %T')
+  JOB_NAME="stage2-full-$ARCHITECTURE"
+  [[ "$DATASET_VERSION" == visual_only ]] || JOB_NAME="stage2-full-${DATASET_VERSION}-${ARCHITECTURE}"
+  ACTIVE=$(squeue -h -u "$USER" --name="$JOB_NAME" -o '%i %T')
   [[ -z "$ACTIVE" ]] || { echo "Existing full training job: $ACTIVE" >&2; exit 1; }
 fi
 mkdir -p "$DATA/cluster_data/experiments/stage2" logs
@@ -75,10 +92,12 @@ from pathlib import Path
 from stage2.provenance import digest
 r=Path(os.environ['RUN_DIR']);m=Path(os.environ['DATASET_RELEASE'])/'manifest.json'
 cfg={k:os.environ[k] for k in ['ARCHITECTURE','NPROC_PER_NODE','EPOCHS','LEARNING_RATE','SAVE_STEPS','WALLTIME','STAGE1_ADAPTER','DATASET_RELEASE']}
-cfg.update(release_sha256=digest(m),frame_size=224,short_tokens_per_10s=10,long_tokens=60)
+cfg.update(release_sha256=digest(m),dataset_version=os.environ['DATASET_VERSION'],frame_size=224,short_tokens_per_10s=10,long_tokens=60)
 (r/'submission.json').write_text(json.dumps(cfg,indent=2))
 PY
-command=(sbatch --parsable --export=ALL --job-name="stage2-full-$ARCHITECTURE" --partition="$PARTITIONS" \
+JOB_NAME="stage2-full-$ARCHITECTURE"
+[[ "$DATASET_VERSION" == visual_only ]] || JOB_NAME="stage2-full-${DATASET_VERSION}-${ARCHITECTURE}"
+command=(sbatch --parsable --export=ALL --job-name="$JOB_NAME" --partition="$PARTITIONS" \
   --qos=gpu --nodes=1 --ntasks=1 --gres="gpu:$NPROC_PER_NODE" --cpus-per-task=16 --mem=160G \
   --time="$WALLTIME" --chdir="$CODE_DIR" --output="$REPO/logs/stage2_fulltrain_${ARCHITECTURE}_%j.out" \
   --error="$REPO/logs/stage2_fulltrain_${ARCHITECTURE}_%j.err" "$CODE_DIR/scripts/slurm/run_stage2_full_training.sbatch")

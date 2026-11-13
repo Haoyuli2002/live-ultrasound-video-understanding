@@ -24,6 +24,7 @@ from .data import VideoReader, load_blocks
 from .qformer import load_memory_model, SECONDWISE_ARCHITECTURE
 from .train_overfit_ab import encode_interval
 from .provenance import digest
+from .dataset_versions import DATASET_VERSIONS, normalize_version, validate_dataset_version
 
 
 def tasks_for_video(video_id, blocks):
@@ -103,6 +104,7 @@ def main():
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('--train-jsonl',required=True);p.add_argument('--video-path-map',required=True)
     p.add_argument('--release-manifest',required=True);p.add_argument('--output-dir',required=True)
+    p.add_argument('--dataset-version',type=normalize_version,choices=DATASET_VERSIONS,default='visual_only')
     p.add_argument('--architecture',choices=['ordinary','qformer'],required=True)
     p.add_argument('--init-adapter',required=True)
     p.add_argument('--model-name',default='Qwen/Qwen3.5-2B')
@@ -125,6 +127,7 @@ def main():
 def run(a,rank,world):
     from .release import validate_release
     release=validate_release(a.release_manifest)
+    validate_dataset_version(release,a.dataset_version)
     if digest(a.train_jsonl)!=release['files']['train.jsonl']:
         raise ValueError('Training input is not the frozen TRAIN split')
     videos=load_blocks(a.train_jsonl,validate_text=False)  # scoped visual acceptance supersedes old length gate
@@ -139,7 +142,7 @@ def run(a,rank,world):
     if not valid.item():raise ValueError(f'Source changed after submission; local mismatches: {changed}')
     torch.manual_seed(a.seed);torch.cuda.manual_seed_all(a.seed);random.seed(a.seed)
     output=Path(a.output_dir);output.mkdir(parents=True,exist_ok=True)
-    invariant={k:getattr(a,k) for k in ['architecture','model_name','epochs','learning_rate','frame_size','seed']}
+    invariant={k:getattr(a,k) for k in ['architecture','dataset_version','model_name','epochs','learning_rate','frame_size','seed']}
     invariant.update(world_size=world,release_sha256=digest(a.release_manifest),
                      map_sha256=digest(a.video_path_map),init_adapter=str(Path(a.init_adapter).resolve()),
                      init_adapter_sha256=digest(Path(a.init_adapter)/'adapter_model.safetensors'))
