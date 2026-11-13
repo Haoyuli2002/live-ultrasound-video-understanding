@@ -1,5 +1,9 @@
 # Live Ultrasound Video Understanding
 
+> 整合说明（2026-11-13）：本文保留早期设计和命令，包括结构化摘要、旧八卡训练及旧状态描述；它们不代表当前冻结数据和作业状态。当前入口以 [主仓库说明](docs/WORKSPACE.md) 及其阶段文档为准。
+
+当前主仓库、数据版本和训练入口见 [Workspace](docs/WORKSPACE.md)。
+
 [English](README.md) | [简体中文](README_zh.md)
 
 A research project on **streaming evidence sufficiency for ultrasound video question answering**: continuously observe a video, wait while visual evidence is insufficient, and answer when sufficient evidence becomes available.
@@ -15,8 +19,8 @@ The [reference design](docs/live_ultrasound_reference_implementation_final_zh.md
 | Data preparation | Video collection, ASR transcription, ASR text cleanup, and clipping | Crawler, ASR, video clipping, filtering, and Qwen3.5-27B segment-level ASR cleanup scripts exist |
 | VLM labeling | Classify videos, annotate anatomy and clinical scenarios, and filter by training stage | Qwen3.5 primary labeling, optional Gemini cross-validation, label merging, and pretrain/compression/sft keep-flag filtering exist |
 | Stage 1: domain pretraining | Paired `0→start`, `0→end`, and historical-ASR-mask views → one complete narration sentence | New independent `stage1/` data, LoRA training, and visual-control evaluation code; GPU run pending |
-| VLM data generation: local/block/global summaries | Generate six ten-second, one whole-minute, and one cumulative visual summary per full minute for Stage 2 | New `stage2.annotate` and `stage2.build_data` code exists; labels meeting the new eight-record specification have not yet been generated or reviewed, and old minute-level labels cannot be used directly |
-| Stage 2: visual memory | One short-memory token per second; every 60 seconds replace long memory with 60 new tokens; local/global summary supervision | New independent `stage2/` chronological training and streaming code; GPU run pending |
+| VLM data generation: local/block/global summaries | Generate six ten-second, one whole-minute, and one cumulative visual summary per full minute for Stage 2 | New `stage2.annotate` and `stage2.build_data` code exists; the teacher prompt produces **multi-perspective structured summaries** using a fixed set of seven facet labels. Labels meeting this specification have not yet been generated or reviewed, and old minute-level labels cannot be used directly |
+| Stage 2: visual memory | One short-memory token per second; every 60 seconds replace long memory with 60 new tokens; local/global summary supervision | Chronological training, 8-rank DDP (x8 or 2×x4), streaming, validation, and epoch-boundary resume are implemented; GPU run pending |
 | QA construction | Annotate `query_time` and earliest sufficient-evidence `answer_time`, with validation | Generation, validation, and WAIT/ANSWER expansion exist; automatic timestamps are candidate annotations, not expert ground truth |
 | Stage 3: answerability + QA | `<DECISION>` hidden state → BCE classification; NTP for both WAIT reasons and ANSWER text | Two-model loading, a dedicated BCE head, the documented input order, and single-sample BCE+NTP are implemented; training CLI, generation, and multi-question KV caching remain open |
 | Eval | Causal streaming evaluation of answerability, response timing, answer quality, memory retention, and runtime | Pretraining, memory, and QA baseline evaluation scripts exist; the complete online loop and benchmark protocol remain to be implemented and validated |
@@ -63,6 +67,7 @@ Real example (8V649L5Q368, before_with_asr)
 
 - **Input**: **silent** video, one frame per completed second (no ASR), processed chronologically.
 - **Target** (eight teacher labels per full minute `T`, grouped into one block): six 10-second local summaries `local_sub_summaries`, one `[T-60,T)` block summary `block_summary_target`, and one `[0,T)` cumulative summary `global_summary_target`. Training reconstructs the matching memory vectors (short/block/global) from these texts with loss weights `1:1:1`.
+- Each summary is **multi-perspective structured**: the teacher emits labelled clauses using a fixed set of seven facet labels (`View`/`Anatomy`/`Probe`/`Finding`/`Dynamic`/`Measure`/`Change`). Local, block, and global summaries use partly overlapping subsets with different emphases. Their 40/80/90-word limits are current experiment hyperparameters, not values mathematically derived from memory capacity. Annotation retries invalid output, and `stage2.build_data` validates the schema again.
 
 ```text
 Illustrative example (first minute, block_window=[0,60])
@@ -138,7 +143,7 @@ The new `stage1/` path creates three matched views for each target sentence `[st
 
 ### Stage 2: visual-summary supervision and recurrent memory
 
-A teacher VLM generates three targets from silent video clips: ten-second summaries, the current 60-second summary, and the cumulative summary from the video beginning. At each full minute boundary `T`, it writes eight independent labels: six ten-second intervals, one `[T-60,T)` block summary, and one `[0,T)` global summary. The data builder combines these into one training block. The annotator sends each video interval directly instead of selecting a fixed set of image frames; the teacher service still decodes and samples video internally, so brief findings need review. Stage 2 does not receive ASR input and trains as follows:
+A teacher VLM generates three targets from silent video clips: ten-second summaries, the current 60-second summary, and the cumulative summary from the video beginning. Each summary uses labelled clauses from the fixed seven-label facet set; the three granularities use partly overlapping subsets with different emphases and explicit word-budget hyperparameters. At each full minute boundary `T`, it writes eight independent labels: six ten-second intervals, one `[T-60,T)` block summary, and one `[0,T)` global summary. Invalid structure is retried during annotation and checked again by the data builder. The annotator sends each video interval directly instead of selecting a fixed set of image frames; the teacher service still decodes and samples video internally, so brief findings need review. Stage 2 does not receive ASR input and trains as follows:
 
 - Process each video chronologically from its beginning, generating one short-memory token per second.
 - Every ten seconds, reconstruct the interval's summary from its ten short tokens, compute `Lshort`, and update parameters. Detach and retain these short states until the minute ends.
@@ -354,7 +359,7 @@ python -m stage1.train \
 
 ### 3. Stage 2: visual-summary generation and memory training
 
-The annotator sends exact muted video clips to a video-capable teacher model; the teacher controls its internal frame sampling. Each full minute produces six 10-second, one current-minute, and one cumulative summary. Build the blocks, then train with the Stage 1 adapter from the same Qwen3.5 base.
+The annotator sends exact muted video clips to a video-capable teacher model; the teacher controls its internal frame sampling. Each full minute produces six 10-second, one current-minute, and one cumulative summary. Every summary uses the fixed seven-label facet schema (`View`/`Anatomy`/`Probe`/`Finding`/`Dynamic`/`Measure`/`Change`). Build the blocks, then train with the Stage 1 adapter from the same Qwen3.5 base.
 
 ```bash
 python -m stage2.annotate \
@@ -371,8 +376,32 @@ python -m stage2.build_data \
   --output results/teacher_visual_summaries/VIDEO_ID_memory_samples.jsonl
 ```
 
+For Qwen3.5 on the cluster's local vLLM, point `--base-url` at the served endpoint, use `--transport video_url`, and place clips in a directory the vLLM server is allowed to read:
+
 ```bash
-python -m stage2.train \
+python -m stage2.annotate \
+  --video /path/to/VIDEO_ID.mp4 \
+  --video-id VIDEO_ID \
+  --model Qwen/Qwen3.5-35B-A3B \
+  --base-url http://localhost:8000/v1 \
+  --api-key-env VLLM_API_KEY \
+  --transport video_url \
+  --clip-dir /path/allowed/by/vllm/stage2_clips \
+  --video-fps 1.0 \
+  --output results/teacher_visual_summaries/VIDEO_ID_visual_summaries.jsonl
+```
+
+On the cluster, a single slurm script runs the whole flow (serve local vLLM → per-video annotate → build_data → load_blocks validate). It defaults to a single-video smoke run; override `MAX_MODEL_LEN`/`VIDEO_FPS`/`VIDEO_IDS`:
+
+```bash
+sbatch --partition=mcml-hgx-a100-80x4 --qos=mcml \
+  --export=ALL,MAX_MODEL_LEN=16384,VIDEO_FPS=1.0 \
+  scripts/slurm/run_stage2_annotate_build.sbatch
+# Full annotation: add VIDEO_IDS="" to process every video in the split
+```
+
+```bash
+torchrun --standalone --nproc_per_node=8 -m stage2.train \
   --model-name Qwen/Qwen3.5-2B \
   --train-jsonl results/teacher_visual_summaries/VIDEO_ID_memory_samples.jsonl \
   --video-path-map /path/to/video_path_map.json \
@@ -382,6 +411,20 @@ python -m stage2.train \
   --epochs 1 \
   --learning-rate 1e-4
 ```
+
+This is the direct single-node 8-GPU DDP form. Complete videos are balanced across ranks while
+each video's chronological memory recurrence stays on one GPU; validation is
+globally reduced and only rank 0 saves checkpoints. On Slurm, use
+`scripts/slurm/run_stage2_train_ddp.sbatch`; it defaults to two four-GPU nodes
+and can be overridden to one eight-GPU node. Plain `python -m stage2.train`
+remains the one-GPU form.
+
+Stage 2 checkpoints once per completed epoch. Re-run the identical command with
+`--resume` after preemption; it restores the adapter, memory-token parameters,
+optimizer, scheduler, RNG, epoch, and global step. It intentionally does not
+resume in the middle of a video or epoch, and rejects changed experiment or
+split settings, including a changed DDP world size. Use `best/` for the lowest held-out summed reconstruction loss,
+or `final/` for the final epoch.
 
 See [Pipeline commands](docs/HOW_TO_RUN_PIPELINE.md) and the [LRZ cluster guide](docs/LRZ_CLUSTER_GUIDE.md) for full options, inference, and cluster commands.
 
@@ -399,6 +442,7 @@ These are evaluation requirements, not completed benchmark results. Automatic te
 
 ## Documentation and experiment history
 
+- [Stage 1/2/3 progress and verification checklist (Chinese)](docs/STAGE_1_2_3_PROGRESS_zh.md): dataset, smoke test, full training, and evaluation status.
 - [Reference design](docs/live_ultrasound_reference_implementation_final_zh.md): target architecture and semantics.
 - [Pipeline commands](docs/HOW_TO_RUN_PIPELINE.md): operational examples.
 - [Pretraining V1](docs/pretrain_V1.md) and [full-data V1](docs/Pretrain_Full_V1.md): earlier experiments.

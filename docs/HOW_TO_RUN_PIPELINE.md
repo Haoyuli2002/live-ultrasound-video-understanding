@@ -1,5 +1,7 @@
 # How to Run the Live Ultrasound Pipeline
 
+> 整合说明（2026-11-13）：本文保留早期设计和命令，包括结构化摘要、旧八卡训练及旧状态描述；它们不代表当前冻结数据和作业状态。当前入口以 [主仓库说明](WORKSPACE.md) 及其阶段文档为准。
+
 > This document is the command cookbook for the pipeline. The authoritative
 > design and data semantics are defined in
 > `docs/live_ultrasound_reference_implementation_final_zh.md`.
@@ -15,7 +17,7 @@
 The default trainer now consumes complete chronological teacher block rows, not
 shuffled short/long examples. It uses shared Qwen + LoRA, one frame/second,
 60 long tokens, and detached state carry. Every ten seconds it performs one
-optimizer update; at minute boundaries it sums short (10s), local (60s), and
+optimizer update; at minute boundaries it sums short (10s), block (60s), and
 global (prefix) losses with weights 1:1:1. Old short states are not recomputed.
 
 Generate labels with independent 10-second, 60-second, and prefix targets:
@@ -366,8 +368,10 @@ python -m stage2.build_data \
 ```
 
 The builder validates the six ordered local windows plus the independent block
-and cumulative targets. Legacy files with only one minute-level local summary
-are rejected because the missing labels cannot be reconstructed safely.
+and cumulative targets. It also parses the `stage2_facets_v1` labelled-clause
+schema and rejects unknown, repeated, disallowed, or out-of-order facets.
+Legacy files with only one minute-level local summary are rejected because the
+missing labels cannot be reconstructed safely.
 
 ---
 
@@ -376,7 +380,7 @@ are rejected because the missing labels cannot be reconstructed safely.
 The full pipeline uses the same `Qwen/Qwen3.5-2B` base as Stage 1:
 
 ```bash
-python -m stage2.train \
+torchrun --standalone --nproc_per_node=8 -m stage2.train \
   --model-name Qwen/Qwen3.5-2B \
   --init-adapter /path/to/stage1_output/final \
   --train-jsonl results/teacher_visual_summaries/VIDEO_ID_memory_samples.jsonl \
@@ -400,10 +404,65 @@ python -m stage2.evaluate \
   --output /path/to/stage2_reconstruction_losses.jsonl
 ```
 
+The direct training command above is single-node 8-GPU DDP. It greedily balances
+whole videos by their number of labelled 10-second updates, never splits one
+video's chronological state across ranks, uses DDP Join for unequal shard
+lengths, and globally reduces held-out losses. Rank 0 writes adapters and
+trainer state; per-rank training logs are named
+`training_metrics.rank<RANK>.jsonl`. The packaged Slurm job defaults to two
+four-GPU nodes (eight ranks total):
+
+```bash
+sbatch --partition=<4-gpu-per-node-partition> \
+  --export=ALL,TRAIN_JSONL=/path/to/blocks.jsonl,VIDEO_MAP=/path/to/video_map.json,STAGE1_ADAPTER=/path/to/stage1/final,OUTPUT_DIR=/path/to/stage2_output \
+  scripts/slurm/run_stage2_train_ddp.sbatch
+```
+
+For a single x8 node, add `--nodes=1 --gres=gpu:8` and export
+`NPROC_PER_NODE=8`.
+
+Use `RESUME=1` in the same `--export` list to resume. The saved world size is
+an invariant, so an eight-GPU checkpoint must be resumed with eight GPUs.
+Plain `python -m stage2.train` remains available for one-GPU runs.
+Before the full job, run a two-GPU smoke on at least two videos, in a fresh
+output directory, with `--validation-fraction 0 --verify-ddp-gradients`.
+The first backward pass compares a complete LoRA gradient across ranks before
+clipping and stepping; rank 0 prints `[ddp-check] synchronized gradient` on
+success. In DDP, `global_step` counts synchronized optimizer rounds on the
+longest shard, not the sum of updates across ranks.
+
+The ready-to-submit job below creates synthetic, schema-valid labels over two
+real videos (60 seconds versus 10 seconds), checks the uneven Join and the
+minute-boundary losses, and keeps all artifacts in a job-specific directory.
+The synthetic labels only test the training machinery:
+
+```bash
+mkdir -p logs
+sbatch --export=ALL,VIDEO_MAP=/path/to/video_paths.json \
+  scripts/slurm/run_stage2_ddp_smoke.sbatch
+```
+
+It defaults to the `mcml-hgx-h100-94x4` partition and `mcml` QoS; pass
+`--partition`/`--qos` to override. A successful Slurm log contains both
+`[ddp-check] synchronized gradient` and `[smoke] PASS`. Do not reuse the
+smoke-trained adapter as a real Stage 2 checkpoint.
+Optionally export `STAGE1_ADAPTER=/path/to/stage1_output/final` to include
+Stage 1 adapter loading; otherwise the DDP smoke starts from the Qwen3.5 base.
+
 `training_config.json` records the Stage 1 adapter used during training so
 streaming can reconstruct the same base. If the adapter moved, pass
 `--base-adapter` explicitly. Omitting `--init-adapter` is a Stage 2-from-base
 ablation rather than the main three-stage pipeline.
+
+Training holds out whole videos, logs per-step loss/LR/gradient norm, and saves
+the lowest held-out summed reconstruction loss under `best/`. Each `epoch-N`
+contains both the PEFT adapter and `trainer_state.pt`. After an epoch-boundary
+preemption, rerun the identical command with `--resume` to restore adapter and
+memory-token trainability, optimizer, scheduler, RNG, epoch, and global step.
+The command rejects changes to the model, Stage 1 adapter, data paths, split,
+LoRA rank, dtype, schedule, planned epoch count, or DDP world size.
+Mid-video/mid-epoch resume is not
+implemented.
 
 ---
 

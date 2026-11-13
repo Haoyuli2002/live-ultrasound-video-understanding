@@ -1,5 +1,9 @@
 # 实时超声视频理解
 
+> 整合说明（2026-11-13）：本文保留早期设计和命令，包括结构化摘要、旧八卡训练及旧状态描述；它们不代表当前冻结数据和作业状态。当前入口以 [主仓库说明](docs/WORKSPACE.md) 及其阶段文档为准。
+
+当前主仓库、数据版本和训练入口见 [Workspace](docs/WORKSPACE.md)。
+
 [English](README.md) | [简体中文](README_zh.md)
 
 本项目研究**超声视频问答中的流式证据充分性**：持续观察视频，在视觉证据不足时等待，在证据充分时回答。
@@ -15,8 +19,8 @@
 | 数据准备 | 获取视频、ASR 转写、文本清洗与裁剪 | 已有爬虫、ASR、视频裁剪与筛选，以及 Qwen3.5-27B 逐段 ASR 清洗脚本 |
 | VLM 打标 | 视频分类、解剖部位与临床场景标注，按训练阶段筛选 | 已有 Qwen3.5 主教师、可选 Gemini 交叉校验、标签合并，以及 pretrain/compression/sft 保留标记筛选 |
 | Stage 1：领域预训练 | `0→start`、`0→end` 与历史 ASR 遮蔽三组配对输入 → 同一完整讲解句子 | 新建独立 `stage1/` 样本、LoRA 训练和视觉对照评估代码；GPU 实跑待验证 |
-| VLM 数据生成：local/block/global summary | 每个完整分钟生成六条 10 秒、一条整分钟和一条累计视觉摘要，为 Stage 2 提供监督 | 新 `stage2.annotate` 与 `stage2.build_data` 已实现八条标注及转换；符合新规格的数据尚未实际生成和审核，旧分钟级标注不可直接使用 |
-| Stage 2：视觉记忆 | 每秒一个短期 token；每 60 秒全量更新为 60 个长期 token；使用 local/global summary 监督 | 新建独立 `stage2/` 时序训练和流式推理代码；GPU 实跑待验证 |
+| VLM 数据生成：local/block/global summary | 每个完整分钟生成六条 10 秒、一条整分钟和一条累计视觉摘要，为 Stage 2 提供监督 | 新 `stage2.annotate` 与 `stage2.build_data` 已实现八条标注及转换，教师提示采用固定 7 类字段标签的**多视角结构化摘要**；符合该规格的数据尚未实际生成和审核，旧分钟级标注不可直接使用 |
+| Stage 2：视觉记忆 | 每秒一个短期 token；每 60 秒全量更新为 60 个长期 token；使用 local/global summary 监督 | 已实现时序训练、8-rank DDP（单节点 x8 或两节点 x4）、流式推理、验证与 epoch 边界续训；GPU 实跑待验证 |
 | QA 构建 | 标注 `query_time` 和最早证据充分的 `answer_time`，并验证 | 已有生成、验证和 WAIT/ANSWER 展开；自动时间戳是候选标注，不是专家真值 |
 | Stage 3：可回答性与 QA | `<DECISION>` 隐状态 → BCE 二分类；WAIT 原因与 ANSWER 答案均用 NTP 监督 | 已实现双模型加载、独立 BCE 头、规范输入顺序和单样本 BCE+NTP 前向；训练 CLI、生成和多问题 KV cache 待实现 |
 | Eval：评估 | 因果流式评估：可回答性、回答时机、答案质量、记忆保留与运行效率 | 已有预训练、记忆与 QA 基线评估脚本；完整在线循环和 benchmark 协议待实现与验证 |
@@ -63,7 +67,7 @@ ASR 用于数据准备和 Stage 1 的训练目标；在 Stage 1 的两组条件�
 
 - **Input**：**静音**视频，每满 1 秒取 1 帧（无 ASR）。按时间顺序处理。
 - **Target**（每满一分钟 `T` 由教师给出 8 条，构成一个 block）：6 条 10 秒局部摘要 `local_sub_summaries`、1 条 `[T-60,T)` 整分钟摘要 `block_summary_target`、1 条 `[0,T)` 累计摘要 `global_summary_target`。训练时用这些文本去重建对应的记忆向量（short/block/global），损失按 `1:1:1`。
-- 当前每个时间窗只有一条综合摘要；解剖／探头运动／视觉发现等多视角摘要仍是未实现的消融方向。
+- 每条摘要都是**多视角结构化**的：教师使用固定 7 类字段标签（`View`／`Anatomy`／`Probe`／`Finding`／`Dynamic`／`Measure`／`Change`）输出短句。local/block/global 使用部分重叠、侧重点不同的字段子集；40/80/90 词上限是当前实验超参数，并非由记忆容量数学推导。标注器会重试格式错误的输出，`stage2.build_data` 会再次校验 schema。
 
 ```text
 示例（第一分钟 block_window=[0,60]）
@@ -139,7 +143,7 @@ ASR 用于数据准备和 Stage 1 的训练目标；在 Stage 1 的两组条件�
 
 ### Stage 2：视觉摘要监督与递归记忆
 
-教师 VLM 根据对应静音视频片段生成三种监督目标：当前 10 秒摘要、当前 60 秒摘要，以及从视频开始至当前时刻的累计摘要。每个完整分钟边界 `T` 生成八条独立标注：当前分钟六条 10 秒摘要、`[T-60,T)` 一条整分钟摘要、`[0,T)` 一条累计摘要；构建脚本将其合并为一个训练 block。标注器直接发送各时间窗的视频片段，不再自行抽取固定数量的图像帧；教师服务仍会按自身视频解码策略采样，需审核短暂征象的覆盖情况。Stage 2 不输入 ASR，按以下流程训练：
+教师 VLM 根据对应静音视频片段生成三种监督目标：当前 10 秒摘要、当前 60 秒摘要，以及从视频开始至当前时刻的累计摘要。每条摘要使用固定 7 类字段标签输出短句，三个粒度采用部分重叠、侧重点不同的字段子集及显式词数预算。每个完整分钟边界 `T` 生成八条独立标注：当前分钟六条 10 秒摘要、`[T-60,T)` 一条整分钟摘要、`[0,T)` 一条累计摘要；格式错误会在标注阶段重试，并由构建脚本再次校验后合并为训练 block。标注器直接发送各时间窗的视频片段，不再自行抽取固定数量的图像帧；教师服务仍会按自身视频解码策略采样，需审核短暂征象的覆盖情况。Stage 2 不输入 ASR，按以下流程训练：
 
 - 每个视频从头按时间顺序处理，每秒生成一个 short-memory token。
 - 每 10 秒，用对应的 10 个 short tokens 重建该区间摘要，计算 `Lshort` 并更新参数；随后将这些 short states detach，保留到当前分钟结束。
@@ -355,7 +359,7 @@ python -m stage1.train \
 
 ### 3. Stage 2：视觉摘要生成与记忆训练
 
-依次生成视觉摘要、构建样本并训练。标注器把 ffmpeg 生成的**静音视频片段**直接交给支持视频输入的大模型，不是先转成 ASR，也不是由本脚本固定抽帧。每个完整分钟分别请求六个 10 秒摘要、一个当前分钟摘要和一个累计视频摘要。教师服务会按自身视频解码策略采样画面。
+依次生成视觉摘要、构建样本并训练。标注器把 ffmpeg 生成的**静音视频片段**直接交给支持视频输入的大模型，不是先转成 ASR，也不是由本脚本固定抽帧。每个完整分钟分别请求六个 10 秒摘要、一个当前分钟摘要和一个累计视频摘要。每条摘要按固定 7 类字段标签输出结构化短句。教师服务会按自身视频解码策略采样画面。
 
 下面第一条命令使用 Gemini/OpenRouter。也可以在 SSH 集群启动 Qwen3.5 视频模型的 vLLM 服务并在同一远端环境运行标注命令；vLLM 必须允许读取 `--clip-dir` 中的临时视频。
 
@@ -389,8 +393,17 @@ python -m stage2.annotate \
   --output results/teacher_visual_summaries/VIDEO_ID_visual_summaries.jsonl
 ```
 
+集群上也可用一键 slurm 脚本完成「启动本地 vLLM → 逐视频 annotate → build_data → load_blocks 校验」，默认跑单视频冒烟，可用环境变量覆盖 `MAX_MODEL_LEN`／`VIDEO_FPS`／`VIDEO_IDS` 等：
+
 ```bash
-python -m stage2.train \
+sbatch --partition=mcml-hgx-a100-80x4 --qos=mcml \
+  --export=ALL,MAX_MODEL_LEN=16384,VIDEO_FPS=1.0 \
+  scripts/slurm/run_stage2_annotate_build.sbatch
+# 全量标注：追加 VIDEO_IDS="" 处理 split 内全部视频
+```
+
+```bash
+torchrun --standalone --nproc_per_node=8 -m stage2.train \
   --model-name Qwen/Qwen3.5-2B \
   --train-jsonl results/teacher_visual_summaries/VIDEO_ID_memory_samples.jsonl \
   --video-path-map /path/to/video_path_map.json \
@@ -400,6 +413,44 @@ python -m stage2.train \
   --epochs 1 \
   --learning-rate 1e-4
 ```
+
+上面是单节点 8 卡 DDP 的直接命令。实现按带标签的 10 秒更新数把**完整视频**均衡分给各
+rank，同一视频的时序记忆状态始终留在同一张卡上；验证指标在 8 卡间汇总，只有
+rank 0 保存 checkpoint。Slurm 可直接使用
+`scripts/slurm/run_stage2_train_ddp.sbatch`：默认使用两个 4 卡节点（共 8 个 rank），
+也可覆盖为一个 8 卡节点；提交时需指定对应 partition。单卡仍可使用
+`python -m stage2.train`。
+
+建议正式 8 卡训练前先用至少两个视频做双卡 smoke：把上面的启动命令改为
+`--nproc_per_node=2`，使用全新的 `--output-dir`，加上
+`--validation-fraction 0 --verify-ddp-gradients`。首步反向传播后会比较两卡同一
+LoRA 参数的完整梯度；成功时 rank 0 打印
+`[ddp-check] synchronized gradient`，不一致则直接报错。
+DDP 下 `global_step` 表示最长分片完成的同步优化轮次，不是所有 rank 的本地更新数之和。
+
+已提供可直接提交的 smoke 作业：先在 SSH 仓库根目录运行 `mkdir -p logs`，然后：
+
+```bash
+sbatch --export=ALL,VIDEO_MAP=/path/to/video_paths.json \
+  scripts/slurm/run_stage2_ddp_smoke.sbatch
+```
+
+脚本默认申请 `mcml-hgx-h100-94x4` 的 2 张 GPU，自动挑选两段真实视频，用**合成测试
+摘要**生成 60 秒（6 步）和 10 秒（1 步）样本，覆盖 long memory 更新和不等长 DDP
+Join。它不依赖教师标注；摘要仅供链路测试，不可用于模型评估。可通过 `--export` 覆盖
+`REPO`／`DATA`／`VIDEO_MAP`／`STAGE1_ADAPTER`。成功时日志同时出现
+`[ddp-check] synchronized gradient` 和 `[smoke] PASS`，输出位于
+`$DATA/results/stage2_ddp_smoke/<job_id>/`。
+已有 Stage 1 adapter 时，在 `--export` 中追加
+`STAGE1_ADAPTER=/path/to/stage1_output/final`，可同时验证阶段间加载；未设置则从
+Qwen3.5 base 做 DDP 链路测试。
+
+Stage 2 在每个完整 epoch 后保存断点。任务被抢占后，用完全相同的命令追加
+`--resume`，会恢复 adapter、memory-token 参数、optimizer、scheduler、随机数状态、
+epoch 和 global step。当前有意只支持完整 epoch 边界恢复，不支持视频或 epoch 中途
+恢复；实验配置、数据划分或 DDP world size 变化会直接报错（8 卡任务必须用 8 卡
+恢复）。`best/` 对应验证集三项重建损失之和最低的
+epoch，`final/` 对应最后一个 epoch。
 
 完整参数、推理和集群命令见[运行命令](docs/HOW_TO_RUN_PIPELINE.md)及 [LRZ 集群指南](docs/LRZ_CLUSTER_GUIDE.md)。
 
@@ -417,6 +468,7 @@ python -m stage2.train \
 
 ## 文档与实验历史
 
+- [Stage 1、2、3 进展与验证清单](docs/STAGE_1_2_3_PROGRESS_zh.md)：数据、训练 smoke、全量训练与评测的现状和待办。
 - [参考设计](docs/live_ultrasound_reference_implementation_final_zh.md)：目标架构与语义。
 - [运行命令](docs/HOW_TO_RUN_PIPELINE.md)：操作示例。
 - [预训练 V1](docs/pretrain_V1.md)与[全量 V1](docs/Pretrain_Full_V1.md)：早期实验。

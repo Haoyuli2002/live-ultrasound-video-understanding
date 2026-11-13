@@ -56,3 +56,8 @@ azure_data/
 
 # Stage 1 three-condition visualizer: generated data (regenerate with stage1/visualize_conditions.py)
 viz/data.json
+
+# Local annotation/crawler outputs and generated runtime files
+local_asr_3videos/
+local_crawl_runs/
+logs/
