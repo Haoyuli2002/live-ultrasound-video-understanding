@@ -14,6 +14,6 @@ During training both live on the GPU at once: the frozen model runs under
 loss never flows back into the memory model.
 
 The training CLI replays video causally at decision times and optimizes BCE/NTP.
-GPU integration, optimizer-state resume, distributed Stage 3 training, answer
-generation and multi-question KV branching still need separate work/validation.
+GPU integration, optimizer-state resume, distributed Stage 3 training, real-Qwen
+GPU generation and multi-question KV branching still need separate validation.
 """

@@ -16,33 +16,59 @@ from .model import DecisionModel, answerability_label, load_frozen_memory_model
 
 
 def load_examples(path: Path) -> dict[str, list[dict]]:
+    """Read causal samples, including immediate answers and untriggered tasks."""
     videos = {}
-    for number,line in enumerate(path.read_text().splitlines(),1):
-        if not line.strip():continue
-        row=json.loads(line)
-        meta=row.get('meta',{})
-        window=row.get('video_window')
-        if not isinstance(window,list) or len(window)!=2 or window[0]!=0:
+    for number, line in enumerate(path.read_text().splitlines(), 1):
+        if not line.strip():
+            continue
+        row = json.loads(line)
+        meta = row.get('meta', {})
+        window = row.get('video_window')
+        if not isinstance(window, list) or len(window) != 2 or window[0] != 0:
             raise ValueError(f'line {number}: Stage 3 requires a causal video prefix [0,time]')
-        current=float(window[1]);query=float(meta.get('query_time',row.get('query_time',-1)))
-        answer=float(meta.get('answer_time',row.get('answer_time',-1)))
-        if not all(math.isfinite(t) for t in (current,query,answer)) or not 0<=query<=current or current<=0:
+        current = float(window[1])
+        query = float(meta.get('query_time', row.get('query_time', -1)))
+        raw_answer = meta.get('answer_time', row.get('answer_time', -1))
+        answer = None if raw_answer is None else float(raw_answer)
+        if not all(math.isfinite(t) for t in (current, query)) or not 0 <= query <= current or current <= 0:
             raise ValueError(f'line {number}: invalid query/decision time')
-        if 'current_time' in meta and abs(float(meta['current_time'])-current)>1e-6:
+        if 'current_time' in meta and abs(float(meta['current_time'])-current) > 1e-6:
             raise ValueError(f'line {number}: current_time differs from video prefix')
-        if answer<=query:
-            raise ValueError(f'line {number}: answer must require evidence after query time')
-        label=answerability_label(str(row.get('target','')))
-        if (label==0 and current>=answer) or (label==1 and current<answer):
+        if answer is not None and (not math.isfinite(answer) or answer < query):
+            raise ValueError(f'line {number}: answer precedes query time')
+        label = answerability_label(str(row.get('target', '')))
+        if answer is None:
+            horizon = float(meta.get('review_horizon', row.get('review_horizon', -1)))
+            if not math.isfinite(horizon) or horizon < current or label != 0:
+                raise ValueError(f'line {number}: untriggered task requires WAIT within reviewed horizon')
+        elif label != float(current >= answer):
             raise ValueError(f'line {number}: WAIT/ANSWER marker conflicts with answer time')
-        vid=str(row.get('video_id','')).strip();question=str(row.get('question','')).strip()
-        if not vid or not question:raise ValueError(f'line {number}: video_id/question required')
-        # Reference evidence, answers and annotations never enter the model input.
-        videos.setdefault(vid,[]).append({'video_id':vid,'question':question,
-            'target':row['target'],'time':current,'query_time':query,'y':label})
-    if not videos:raise ValueError('No Stage 3 examples')
-    for rows in videos.values():rows.sort(key=lambda r:r['time'])
+        qa_type = meta.get('qa_type', row.get('qa_type'))
+        if qa_type in {'current_observation', 'history_recall'} and answer != query:
+            raise ValueError('Immediate tasks require answer_time == query_time')
+        if qa_type in {'temporal_comparison', 'event_notification'} and answer is not None and answer <= query:
+            raise ValueError('Delayed tasks require answer_time > query_time')
+        if 'y' in meta and float(meta['y']) != label:
+            raise ValueError('BCE label disagrees with target marker')
+        vid = str(row.get('video_id', '')).strip()
+        question = str(row.get('question', '')).strip()
+        if not vid or not question:
+            raise ValueError(f'line {number}: video_id/question required')
+        # Only question + query/current time are passed to the model. No gold time or evidence.
+        videos.setdefault(vid, []).append({'video_id': vid, 'question': question,
+            'task_id': row.get('task_id', meta.get('task_id', '')),
+            'target': row['target'], 'time': current, 'query_time': query, 'y': label})
+    if not videos:
+        raise ValueError('No Stage 3 examples')
+    for rows in videos.values():
+        rows.sort(key=lambda r: r['time'])
     return videos
+
+
+def decision_question(row):
+    """Query/current clocks are observable; answer time and gold metadata are excluded."""
+    return (f"Query time: {row.get('query_time', row['time']):g} seconds. "
+            f"Current time: {row['time']:g} seconds.\n{row['question']}")
 
 
 def causal_memories(memory, reader, points):
@@ -80,7 +106,7 @@ def train_video(decision, memory, reader, points, optimizer, metrics, *, epoch,
     parameters=[p for p in decision.parameters() if p.requires_grad]
     for row,state in causal_memories(memory,reader,points):
         optimizer.zero_grad(set_to_none=True)
-        bce,ntp,logit=decision.forward_answerability(state,row['question'],row['target'],row['y'])
+        bce,ntp,logit=decision.forward_answerability(state,decision_question(row),row['target'],row['y'])
         loss=decision_weight*bce+text_weight*ntp
         if not bool(torch.isfinite(loss).item()):raise RuntimeError('Non-finite Stage 3 training loss')
         loss.backward()
@@ -99,7 +125,7 @@ def main():
     parser.add_argument('--train-jsonl',type=Path,required=True)
     parser.add_argument('--video-path-map',type=Path,required=True)
     parser.add_argument('--output-dir',type=Path,required=True)
-    parser.add_argument('--stage1-adapter',required=True)
+    parser.add_argument('--stage1-adapter',help='Only if the Stage 2 checkpoint used this Stage 1 adapter')
     parser.add_argument('--stage2-adapter',required=True)
     parser.add_argument('--model-name',default='Qwen/Qwen3.5-2B')
     parser.add_argument('--epochs',type=int,default=1)

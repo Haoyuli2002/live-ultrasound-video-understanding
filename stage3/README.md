@@ -1,7 +1,10 @@
-# Stage 3 — 可回答性决策（双模型实现骨架）
+# Stage 3 — 可回答性决策与回复
 
-Stage 3 使用两个相互独立的 `Qwen/Qwen3.5-2B` 实例。二者都严格恢复
-Stage 1 → Stage 2 权重链：先把 Stage 1 adapter merge 进 backbone，恢复
+> 项目级大纲（目标、三阶段状态、接口衔接、运行命令）见根目录
+> [`README.md`](../README.md) / [`README_zh.md`](../README_zh.md)，那里是权威入口。
+> 本文件只保留 Stage 3 的具体细节。
+
+Stage 3 使用两个相互独立的 `Qwen/Qwen3.5-2B` 实例。二者都严格恢复 Stage 2 实际使用的权重链：仅当该 Stage 2 训练使用过 Stage 1 时，先 merge 对应 Stage 1 adapter，再恢复
 `<SHORT_MEM>` / `<LONG_MEM>` 两行 embedding，再加载 Stage 2 adapter。
 
 | 模型 | 状态 | 职责 |
@@ -81,7 +84,7 @@ H100 / A100 80GB 的统一提交方式见 [GPU_TRAINING.md](../docs/GPU_TRAINING
 
 1. Stage 3 优化器状态断点续训。
 2. Stage 3 DDP 多 GPU 训练。
-3. BCE 阈值决策后固定 `<WAIT>` / `<ANSWER>` 前缀的文本生成。
+3. 真实 Qwen 的阈值决策与自由生成 GPU 验证（代码已在 stage3.inference 实现，CPU mock 已覆盖）。
 4. 多问题共享前缀 KV cache、分支隔离及 cache 失效逻辑。
 5. Qwen3.5 双模型 GPU 端到端 smoke test。
 
@@ -98,7 +101,16 @@ short memory，不足以直接重建任意 `query_time` / `answer_time` 的输�
 应优先用冻结 memory 模型按时间顺序重放视频；如果要离线预计算，则必须额外保存
 所有 QA 决策时刻的 long/short 快照。
 
-## 暂未落地的研究项
+## 关于多视角 summary
 
-多视角 summary（解剖、探头运动、视觉发现等）仍是待定义的消融方向，不属于
-当前 Stage 2 数据 schema，也不应在主 README 中描述为已经实现。
+多视角 summary（固定 7 类字段标签：View／Anatomy／Probe／Finding／
+Dynamic／Measure／Change）现已是 Stage 2 的**正式**教师数据逻辑，由
+`stage2/annotate.py` 的默认提示生成并做首次格式校验，再由
+`stage2/build_data.py` 二次校验并合并。
+Stage 3 消费的仍是 Stage 2 产出的 memory 向量（非文本），这些结构化 summary
+只在 Stage 2 训练阶段作为重建监督目标；此处仅说明其来源，不改变 Stage 3 接口。
+
+
+## 两视频 overfit / 重建 / 评测
+
+见 [OVERFIT.md](OVERFIT.md)。新增 stage3.overfit 入口支持显式 mock / qwen 后端、冻结 memory 缓存、立即回答和 null 未触发题、阈值决策后的自由生成、首次回答时序指标与零 memory 对照。当前准备的 P3+Cz 子集为12条英文QA；CPU mock 是接口验证，不代表真实 Stage3 已训练成功。之后接真实 Stage2 checkpoint 时须验证其初始化链。

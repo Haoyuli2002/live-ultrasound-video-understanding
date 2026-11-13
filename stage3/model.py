@@ -1,6 +1,6 @@
 """Stage 3 model primitives: frozen Stage 2 memory + trainable QA decision model.
 
-Both models reconstruct the exact Stage 1 -> Stage 2 checkpoint chain. The
+Both models reconstruct the exact optional Stage 1 -> Stage 2 checkpoint chain. The
 memory model remains frozen. The decision model merges the Stage 2 adapter into
 an independent backbone, then adds a new LoRA, three Stage 3 tokens and a BCE
 head. ``stage3.train`` supplies causal QA replay and a single-GPU training CLI;
@@ -22,7 +22,7 @@ SPECIAL_TOKENS = [DECISION, WAIT, ANSWER]
 SYSTEM = (
     "You are an ultrasound video assistant. Use only the supplied causal visual "
     "memory. Decide whether the visible evidence is sufficient for the question. "
-    "If it is insufficient, wait and state which evidence is still missing. If it "
+    "If it is insufficient, output <WAIT>. If it "
     "is sufficient, answer only from visible evidence."
 )
 
@@ -268,4 +268,4 @@ class DecisionModel(nn.Module):
         )
 
 
-# Still open: thresholded text generation and multi-question shared-prefix KV branching.
+# Thresholded generation is implemented in stage3.inference; shared-prefix KV branching remains separate.
