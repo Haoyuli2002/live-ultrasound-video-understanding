@@ -2,11 +2,14 @@
 
 跨电脑接手请先阅读 [Stage2 交接文档（含 Stage3 数据与 SSH 视频核验）](STAGE2_HANDOFF_20261113.md)。
 
-本机主仓库：`/Users/I761836/Desktop/Semester 3/live-ultrasound-video-understanding`。
-后续修改、测试、提交和推送均从这里进行。
+当前远程主仓库：`/dss/dsshome1/04/ge75vid2/haoyu/live-ultrasound-video-understanding`。
+本会话直接在远程服务器修改、测试、提交和推送；下文 Mac 路径属于历史记录。
 `Documents/Codex/2026-10-23/wo-y/work/stage2-overfit-ab` 是历史工作副本。
 
 ## 代码入口
+
+- 当前 StreamReady + Qwen3.5 主线：`endtoend/`，见 [训练说明](../endtoend/README.md) 与 [全量配对](../endtoend/ALL_PAIRS.md)。
+- `StreamReady/` 作为带上游许可证的源码快照纳入主仓库，不是需要另行拉取的 submodule；来源见 [上游记录](UPSTREAM_SOURCES.md)。
 
 - Stage1：`stage1/train.py`；评测 `scripts/slurm/submit_stage1_eval.sh`。
   Base / LoRA 共用训练目录的 `training_config.json` 输入设置，自回归保存预测。
@@ -37,3 +40,13 @@ Desktop 从 `fb6af49` 快进到 `0d5ddc3` 后，恢复本地改动并解决四�
 Stage2 通用模型接口随本次整合变化。旧 smoke / full run 的代码快照不变；
 新提交仍执行实现哈希门禁，若旧 smoke 报告的哈希不匹配，需要用当前实现重跑 smoke，不能绕过检查。
 本次只整理代码，不提交或取消任何 Slurm 作业，也不重新做数据视觉验收。
+
+## 2026-11-22 远程整理
+
+有效源码按 StreamReady/end-to-end、Stage2/Stage3、可视化与数据工具分批提交。
+已删除的可重建内容及大小见 [清理记录](workspace_cleanup_20261122.json)。
+LAVIS 参考仓库无本地改动；Dispider 新增分析文档已保存为
+[DISPIDER_LOGIC_zh.md](DISPIDER_LOGIC_zh.md)。两者可按上游固定版本重新获取。
+StreamReady 原嵌套 Git 历史在 scratch 留有完整备份，工作区源码保持原路径。
+已有结果、日志、数据、转写和 checkpoint 均保留，`cluster_data` 仍指向 scratch。
+`viz/new-qa.json` 是可重建的本地展示数据，保留本地但不提交；生成方式见 `viz/README.md`。

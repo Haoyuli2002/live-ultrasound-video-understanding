@@ -1,0 +1,43 @@
+# Qwen3.5 dense/MoE host. Set backbone_model to the actual multimodal checkpoint.
+# Same StreamReady reasoning architecture and InstructBLIP initialisation.
+model:
+  arch: streamready
+  model_type: qwen3_5
+  backbone_model: Qwen/Qwen3.5-2B
+  backbone_precision: bf16
+  attn_implementation: sdpa
+  image_size: 256
+  num_query_token: 32
+  qformer_text_input: True
+  qformer_encoder_width: 1408
+  load_pretrained: True
+  load_finetuned: False
+  pretrained: https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/InstructBLIP/instruct_blip_vicuna7b_trimmed.pth
+  frame_capacity: 24
+  num_centroids: 96
+  num_prototypes: 12
+  ema_decay: 0.985
+  slot_tokens: 1
+  topk_prototypes: 8
+  topk_centroids: 24
+  long_term_fusion_mode: per_layer
+  use_contextual_memory: True
+  context_capacity: 32
+  context_topk: 4
+  context_sim_floor: 0.2
+  use_readiness: True
+  readiness_threshold: 0.35
+  lambda_reg: 0.1
+  readiness_loss_weight: 1.0
+  train_stage: joint
+  num_frames: 100
+  max_txt_len: 128
+  max_output_txt_len: 256
+  prompt: ""
+preprocess:
+  vis_processor:
+    train: {name: blip2_video_train, image_size: 256}
+    eval: {name: blip2_video_eval, image_size: 256}
+  text_processor:
+    train: {name: blip_question}
+    eval: {name: blip_question}

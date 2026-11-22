@@ -1,0 +1,43 @@
+{
+  "status": "prepared_not_submitted",
+  "dependency_job": "5947329",
+  "arms": [
+    {
+      "name": "bce",
+      "run_dir": "/dss/mcmlscratch/04/ge75vid2/haoyu/live-ultrasound-video-understanding/cluster_data/experiments/streamready/fresh_loss_comparison_10v_20261121T232902Z/bce",
+      "config_sha256": "9158738581523f9855850bfc27dea14a1957ba934a714fa3c03232f97da21d6d"
+    },
+    {
+      "name": "cl_temporal",
+      "run_dir": "/dss/mcmlscratch/04/ge75vid2/haoyu/live-ultrasound-video-understanding/cluster_data/experiments/streamready/fresh_loss_comparison_10v_20261121T232902Z/cl_temporal",
+      "config_sha256": "0c105585b7446f6bcc09c5c3019d1cfdf9ac075025d2adca84b2c5772011e914"
+    },
+    {
+      "name": "cl_temporal_bce2",
+      "run_dir": "/dss/mcmlscratch/04/ge75vid2/haoyu/live-ultrasound-video-understanding/cluster_data/experiments/streamready/fresh_loss_comparison_10v_20261121T232902Z/cl_temporal_bce2",
+      "config_sha256": "308b1d8bc73c1f3ecdb3391ceb028fb37c9e6fd77daaeb41835b802ae4f4cdb6"
+    },
+    {
+      "name": "cl_temporal_bce1",
+      "run_dir": "/dss/mcmlscratch/04/ge75vid2/haoyu/live-ultrasound-video-understanding/cluster_data/experiments/streamready/fresh_10v_cl_temporal_bce1_20261122T073515Z",
+      "config_sha256": "d4ee7a80e4d08c9f1e24d1fc014ba0a024b618901e8658c228939e2b466f3022"
+    }
+  ],
+  "initial_core_sha256": "7466f124a323d025277bf5af7866a89e78e3f9bbbd7cd08a88f208b522703a40",
+  "project_log": "/dss/dsshome1/04/ge75vid2/haoyu/live-ultrasound-video-understanding/programs.md",
+  "pairs_per_epoch": 100,
+  "selection_rule": "epoch100 only; threshold scan: maximize on-time AND text correct, then minimize WAIT endpoint false triggers, then maximize readiness accuracy, then threshold closest to .5, then declared arm order",
+  "scope": "10 training videos,72QA175endpoints71ANSWER104WAIT;100epochs300updates;single seed;no holdout; sparse first-trigger replay, not ARS or generalization",
+  "training_if_cl_wins": "Fresh original initialization and Adam; chosen loss coefficients unchanged;timing_pair_mode=all_pairs;BS64GA1,1A10080,100epochs,lr1e-4; SDPA/FLA,no gradient checkpointing; source threshold reported separately, training evaluation .5",
+  "if_bce_wins": "Reuse existing BCE checkpoint and selected threshold: already supervises every endpoint, no CL pairing exists. No new training and no added loss.",
+  "expected_code_changes": [
+    "endtoend/timing_loss.py",
+    "endtoend/model.py",
+    "endtoend/train.py",
+    "endtoend/select_all_pairs.py",
+    "endtoend/test_all_pairs.py",
+    "endtoend/test_select_all_pairs.py",
+    "endtoend/ALL_PAIRS.md"
+  ],
+  "validation": "38 CPU tests passed in3.353s, including all-pair gradient coverage, per-question normalization, no cross-video pairs, training mode routing, isolated readiness gradients, baseline parity, initialization/update controls, selector refusal of incomplete runs, BCE no-op and CL launch configuration. Bash/source/data checks passed;100pairs verified; GPU training not yet run."
+}

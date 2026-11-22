@@ -1,0 +1,799 @@
+{
+  "status": "completed",
+  "arms": [
+    {
+      "arm": "bce",
+      "status": "completed",
+      "run_dir": "/dss/mcmlscratch/04/ge75vid2/haoyu/live-ultrasound-video-understanding/cluster_data/experiments/streamready/fresh_loss_comparison_10v_20261121T232902Z/bce",
+      "initial_core_sha256": "7466f124a323d025277bf5af7866a89e78e3f9bbbd7cd08a88f208b522703a40",
+      "final_metrics": {
+        "epoch": 100,
+        "mean_endpoint_loss": 0.48400930538241355,
+        "readiness_accuracy": 0.7828571428571428,
+        "premature_rate": 0.0,
+        "answer_exact_match": 0.9577464788732394,
+        "answer_recall": 0.4647887323943662,
+        "readiness_auc": 0.7722778981581798,
+        "paired_order_accuracy": 0.47,
+        "gated_answer_exact_match": 0.4647887323943662,
+        "scope": "same_training_videos_endpoints_forced_answer_probe",
+        "answer_accuracy": 0.9577464788732394,
+        "answer_correct_count": 68,
+        "answer_count": 71,
+        "gated_answer_accuracy": 0.4647887323943662,
+        "gated_answer_correct_count": 33,
+        "answer_macro_accuracy": 0.957516339869281,
+        "answer_metrics_by_type": {
+          "current_observation": {
+            "n": 18,
+            "answer_accuracy": 1.0,
+            "gated_answer_accuracy": 0.9444444444444444
+          },
+          "history_recall": {
+            "n": 18,
+            "answer_accuracy": 1.0,
+            "gated_answer_accuracy": 0.8888888888888888
+          },
+          "event_notification": {
+            "n": 18,
+            "answer_accuracy": 0.8888888888888888,
+            "gated_answer_accuracy": 0.0
+          },
+          "temporal_comparison": {
+            "n": 17,
+            "answer_accuracy": 0.9411764705882353,
+            "gated_answer_accuracy": 0.0
+          }
+        },
+        "answer_scoring": "StreamReady readiness_vqa.answers_match: normalized/numeric/short-phrase match",
+        "sparse_first_trigger": {
+          "answerable_tasks": 71,
+          "unanswerable_tasks": 1,
+          "answer_correct": 33,
+          "answer_accuracy": 0.4647887323943662,
+          "on_time_and_text_correct": 33,
+          "early_tasks": 0,
+          "no_answer_tasks": 38
+        },
+        "answer_ce": 0.011720194206671449,
+        "readiness_bce": 0.47925424575805664,
+        "readiness_weighted_bce": 0.47925424575805664,
+        "readiness_bce_positive_weight": 1.0,
+        "readiness_bce_weight": 1.0,
+        "readiness_objective_loss": 0.47925424575805664,
+        "readiness_contrastive": 0.6830739378929138,
+        "readiness_temporal": 0.007000804878771305,
+        "readiness_timing_objective": 0.6837739944458008,
+        "timing_pairs": 100,
+        "timing_paired_tasks": 35,
+        "readiness_objective": "bce",
+        "mean_endpoint_loss_definition": "mean per-endpoint answer CE (WAIT=0) + weight * gold BCE; diagnostic, not contrastive training objective",
+        "training_objective_fullset": 0.4909744399647281
+      },
+      "thresholds": {
+        "0.5": {
+          "readiness": {
+            "threshold": 0.5,
+            "tp": 33,
+            "fp": 0,
+            "tn": 104,
+            "fn": 38,
+            "accuracy": 0.7828571428571428,
+            "recall": 0.4647887323943662,
+            "false_positive_rate": 0.0,
+            "precision": 1.0,
+            "f1": 0.6346153846153846,
+            "balanced_accuracy": 0.7323943661971831,
+            "sparse_first_trigger_on_time": 33,
+            "sparse_first_trigger_early": 0,
+            "sparse_first_trigger_missed": 38,
+            "sparse_first_trigger_correct_wait": 1
+          },
+          "answers": {
+            "answer_accuracy": 0.9577464788732394,
+            "answer_correct_count": 68,
+            "answer_count": 71,
+            "gated_answer_accuracy": 0.4647887323943662,
+            "gated_answer_correct_count": 33,
+            "answer_macro_accuracy": 0.957516339869281,
+            "answer_metrics_by_type": {
+              "current_observation": {
+                "n": 18,
+                "answer_accuracy": 1.0,
+                "gated_answer_accuracy": 0.9444444444444444
+              },
+              "history_recall": {
+                "n": 18,
+                "answer_accuracy": 1.0,
+                "gated_answer_accuracy": 0.8888888888888888
+              },
+              "event_notification": {
+                "n": 18,
+                "answer_accuracy": 0.8888888888888888,
+                "gated_answer_accuracy": 0.0
+              },
+              "temporal_comparison": {
+                "n": 17,
+                "answer_accuracy": 0.9411764705882353,
+                "gated_answer_accuracy": 0.0
+              }
+            },
+            "answer_scoring": "StreamReady readiness_vqa.answers_match: normalized/numeric/short-phrase match"
+          },
+          "first_trigger": {
+            "answerable_tasks": 71,
+            "unanswerable_tasks": 1,
+            "answer_correct": 33,
+            "answer_accuracy": 0.4647887323943662,
+            "on_time_and_text_correct": 33,
+            "early_tasks": 0,
+            "no_answer_tasks": 38
+          }
+        },
+        "0.35": {
+          "readiness": {
+            "threshold": 0.35,
+            "tp": 36,
+            "fp": 2,
+            "tn": 102,
+            "fn": 35,
+            "accuracy": 0.7885714285714286,
+            "recall": 0.5070422535211268,
+            "false_positive_rate": 0.019230769230769232,
+            "precision": 0.9473684210526315,
+            "f1": 0.6605504587155964,
+            "balanced_accuracy": 0.7439057421451787,
+            "sparse_first_trigger_on_time": 35,
+            "sparse_first_trigger_early": 1,
+            "sparse_first_trigger_missed": 35,
+            "sparse_first_trigger_correct_wait": 1
+          },
+          "answers": {
+            "answer_accuracy": 0.9577464788732394,
+            "answer_correct_count": 68,
+            "answer_count": 71,
+            "gated_answer_accuracy": 0.5070422535211268,
+            "gated_answer_correct_count": 36,
+            "answer_macro_accuracy": 0.957516339869281,
+            "answer_metrics_by_type": {
+              "current_observation": {
+                "n": 18,
+                "answer_accuracy": 1.0,
+                "gated_answer_accuracy": 1.0
+              },
+              "history_recall": {
+                "n": 18,
+                "answer_accuracy": 1.0,
+                "gated_answer_accuracy": 0.9444444444444444
+              },
+              "event_notification": {
+                "n": 18,
+                "answer_accuracy": 0.8888888888888888,
+                "gated_answer_accuracy": 0.05555555555555555
+              },
+              "temporal_comparison": {
+                "n": 17,
+                "answer_accuracy": 0.9411764705882353,
+                "gated_answer_accuracy": 0.0
+              }
+            },
+            "answer_scoring": "StreamReady readiness_vqa.answers_match: normalized/numeric/short-phrase match"
+          },
+          "first_trigger": {
+            "answerable_tasks": 71,
+            "unanswerable_tasks": 1,
+            "answer_correct": 36,
+            "answer_accuracy": 0.5070422535211268,
+            "on_time_and_text_correct": 35,
+            "early_tasks": 1,
+            "no_answer_tasks": 35
+          }
+        }
+      },
+      "threshold_scan_best": {
+        "accuracy": {
+          "value": 0.7942857142857143,
+          "intervals": [
+            {
+              "lower": 0.3442229926586151,
+              "lower_inclusive": false,
+              "upper": 0.34953272342681885
+            },
+            {
+              "lower": 0.43254271149635315,
+              "lower_inclusive": false,
+              "upper": 0.48023492097854614
+            }
+          ]
+        },
+        "balanced_accuracy": {
+          "value": 0.7509479956663054,
+          "intervals": [
+            {
+              "lower": 0.3442229926586151,
+              "lower_inclusive": false,
+              "upper": 0.34953272342681885
+            }
+          ]
+        },
+        "f1": {
+          "value": 0.6727272727272727,
+          "intervals": [
+            {
+              "lower": 0.3442229926586151,
+              "lower_inclusive": false,
+              "upper": 0.34953272342681885
+            }
+          ]
+        },
+        "sparse_first_trigger_on_time": {
+          "value": 38,
+          "intervals": [
+            {
+              "lower": 0.188323974609375,
+              "lower_inclusive": false,
+              "upper": 0.19072403013706207
+            },
+            {
+              "lower": 0.2240554392337799,
+              "lower_inclusive": false,
+              "upper": 0.2267836332321167
+            }
+          ]
+        },
+        "zero_false_positive_max_recall": {
+          "lower": 0.43254271149635315,
+          "lower_inclusive": false,
+          "upper": 0.48023492097854614,
+          "threshold": 0.48023492097854614,
+          "tp": 35,
+          "fp": 0,
+          "tn": 104,
+          "fn": 36,
+          "accuracy": 0.7942857142857143,
+          "recall": 0.49295774647887325,
+          "false_positive_rate": 0.0,
+          "precision": 1.0,
+          "f1": 0.660377358490566,
+          "balanced_accuracy": 0.7464788732394366,
+          "sparse_first_trigger_on_time": 35,
+          "sparse_first_trigger_early": 0,
+          "sparse_first_trigger_missed": 36,
+          "sparse_first_trigger_correct_wait": 1
+        }
+      }
+    },
+    {
+      "arm": "cl_temporal",
+      "status": "completed",
+      "run_dir": "/dss/mcmlscratch/04/ge75vid2/haoyu/live-ultrasound-video-understanding/cluster_data/experiments/streamready/fresh_loss_comparison_10v_20261121T232902Z/cl_temporal",
+      "initial_core_sha256": "7466f124a323d025277bf5af7866a89e78e3f9bbbd7cd08a88f208b522703a40",
+      "final_metrics": {
+        "epoch": 100,
+        "mean_endpoint_loss": 0.7592945694923401,
+        "readiness_accuracy": 0.46285714285714286,
+        "premature_rate": 0.6923076923076923,
+        "answer_exact_match": 1.0,
+        "answer_recall": 0.6901408450704225,
+        "readiness_auc": 0.47501354279523295,
+        "paired_order_accuracy": 0.52,
+        "gated_answer_exact_match": 0.6901408450704225,
+        "scope": "same_training_videos_endpoints_forced_answer_probe",
+        "answer_accuracy": 1.0,
+        "answer_correct_count": 71,
+        "answer_count": 71,
+        "gated_answer_accuracy": 0.6901408450704225,
+        "gated_answer_correct_count": 49,
+        "answer_macro_accuracy": 1.0,
+        "answer_metrics_by_type": {
+          "current_observation": {
+            "n": 18,
+            "answer_accuracy": 1.0,
+            "gated_answer_accuracy": 0.5555555555555556
+          },
+          "history_recall": {
+            "n": 18,
+            "answer_accuracy": 1.0,
+            "gated_answer_accuracy": 0.7777777777777778
+          },
+          "event_notification": {
+            "n": 18,
+            "answer_accuracy": 1.0,
+            "gated_answer_accuracy": 0.6111111111111112
+          },
+          "temporal_comparison": {
+            "n": 17,
+            "answer_accuracy": 1.0,
+            "gated_answer_accuracy": 0.8235294117647058
+          }
+        },
+        "answer_scoring": "StreamReady readiness_vqa.answers_match: normalized/numeric/short-phrase match",
+        "sparse_first_trigger": {
+          "answerable_tasks": 71,
+          "unanswerable_tasks": 1,
+          "answer_correct": 49,
+          "answer_accuracy": 0.6901408450704225,
+          "on_time_and_text_correct": 24,
+          "early_tasks": 26,
+          "no_answer_tasks": 22
+        },
+        "answer_ce": 0.002899420835835282,
+        "readiness_bce": 0.758118212223053,
+        "readiness_weighted_bce": 0.758118212223053,
+        "readiness_bce_positive_weight": 1.0,
+        "readiness_bce_weight": 1.0,
+        "readiness_objective_loss": 0.6703011989593506,
+        "readiness_contrastive": 0.6688557863235474,
+        "readiness_temporal": 0.01445389911532402,
+        "readiness_timing_objective": 0.6703011989593506,
+        "timing_pairs": 100,
+        "timing_paired_tasks": 35,
+        "readiness_objective": "contrastive_gold",
+        "mean_endpoint_loss_definition": "mean per-endpoint answer CE (WAIT=0) + weight * gold BCE; diagnostic, not contrastive training objective",
+        "training_objective_fullset": 0.6732006197951859
+      },
+      "thresholds": {
+        "0.5": {
+          "readiness": {
+            "threshold": 0.5,
+            "tp": 49,
+            "fp": 72,
+            "tn": 32,
+            "fn": 22,
+            "accuracy": 0.46285714285714286,
+            "recall": 0.6901408450704225,
+            "false_positive_rate": 0.6923076923076923,
+            "precision": 0.4049586776859504,
+            "f1": 0.5104166666666666,
+            "balanced_accuracy": 0.4989165763813651,
+            "sparse_first_trigger_on_time": 24,
+            "sparse_first_trigger_early": 26,
+            "sparse_first_trigger_missed": 22,
+            "sparse_first_trigger_correct_wait": 0
+          },
+          "answers": {
+            "answer_accuracy": 1.0,
+            "answer_correct_count": 71,
+            "answer_count": 71,
+            "gated_answer_accuracy": 0.6901408450704225,
+            "gated_answer_correct_count": 49,
+            "answer_macro_accuracy": 1.0,
+            "answer_metrics_by_type": {
+              "current_observation": {
+                "n": 18,
+                "answer_accuracy": 1.0,
+                "gated_answer_accuracy": 0.5555555555555556
+              },
+              "history_recall": {
+                "n": 18,
+                "answer_accuracy": 1.0,
+                "gated_answer_accuracy": 0.7777777777777778
+              },
+              "event_notification": {
+                "n": 18,
+                "answer_accuracy": 1.0,
+                "gated_answer_accuracy": 0.6111111111111112
+              },
+              "temporal_comparison": {
+                "n": 17,
+                "answer_accuracy": 1.0,
+                "gated_answer_accuracy": 0.8235294117647058
+              }
+            },
+            "answer_scoring": "StreamReady readiness_vqa.answers_match: normalized/numeric/short-phrase match"
+          },
+          "first_trigger": {
+            "answerable_tasks": 71,
+            "unanswerable_tasks": 1,
+            "answer_correct": 49,
+            "answer_accuracy": 0.6901408450704225,
+            "on_time_and_text_correct": 24,
+            "early_tasks": 26,
+            "no_answer_tasks": 22
+          }
+        },
+        "0.35": {
+          "readiness": {
+            "threshold": 0.35,
+            "tp": 62,
+            "fp": 86,
+            "tn": 18,
+            "fn": 9,
+            "accuracy": 0.45714285714285713,
+            "recall": 0.8732394366197183,
+            "false_positive_rate": 0.8269230769230769,
+            "precision": 0.4189189189189189,
+            "f1": 0.5662100456621004,
+            "balanced_accuracy": 0.5231581798483207,
+            "sparse_first_trigger_on_time": 33,
+            "sparse_first_trigger_early": 31,
+            "sparse_first_trigger_missed": 8,
+            "sparse_first_trigger_correct_wait": 0
+          },
+          "answers": {
+            "answer_accuracy": 1.0,
+            "answer_correct_count": 71,
+            "answer_count": 71,
+            "gated_answer_accuracy": 0.8732394366197183,
+            "gated_answer_correct_count": 62,
+            "answer_macro_accuracy": 1.0,
+            "answer_metrics_by_type": {
+              "current_observation": {
+                "n": 18,
+                "answer_accuracy": 1.0,
+                "gated_answer_accuracy": 0.8888888888888888
+              },
+              "history_recall": {
+                "n": 18,
+                "answer_accuracy": 1.0,
+                "gated_answer_accuracy": 0.9444444444444444
+              },
+              "event_notification": {
+                "n": 18,
+                "answer_accuracy": 1.0,
+                "gated_answer_accuracy": 0.8333333333333334
+              },
+              "temporal_comparison": {
+                "n": 17,
+                "answer_accuracy": 1.0,
+                "gated_answer_accuracy": 0.8235294117647058
+              }
+            },
+            "answer_scoring": "StreamReady readiness_vqa.answers_match: normalized/numeric/short-phrase match"
+          },
+          "first_trigger": {
+            "answerable_tasks": 71,
+            "unanswerable_tasks": 1,
+            "answer_correct": 63,
+            "answer_accuracy": 0.8873239436619719,
+            "on_time_and_text_correct": 33,
+            "early_tasks": 31,
+            "no_answer_tasks": 8
+          }
+        }
+      },
+      "threshold_scan_best": {
+        "accuracy": {
+          "value": 0.5942857142857143,
+          "intervals": [
+            {
+              "lower": 0.750552773475647,
+              "lower_inclusive": false,
+              "upper": 1.0
+            }
+          ]
+        },
+        "balanced_accuracy": {
+          "value": 0.5427275189599133,
+          "intervals": [
+            {
+              "lower": 0.38769033551216125,
+              "lower_inclusive": false,
+              "upper": 0.39466747641563416
+            }
+          ]
+        },
+        "f1": {
+          "value": 0.592274678111588,
+          "intervals": [
+            {
+              "lower": 0.1755380779504776,
+              "lower_inclusive": false,
+              "upper": 0.17895588278770447
+            }
+          ]
+        },
+        "sparse_first_trigger_on_time": {
+          "value": 37,
+          "intervals": [
+            {
+              "lower": 0.1755380779504776,
+              "lower_inclusive": false,
+              "upper": 0.17895588278770447
+            },
+            {
+              "lower": 0.18126320838928223,
+              "lower_inclusive": false,
+              "upper": 0.18476751446723938
+            }
+          ]
+        },
+        "zero_false_positive_max_recall": {
+          "lower": 0.750552773475647,
+          "lower_inclusive": false,
+          "upper": 1.0,
+          "threshold": 1.0,
+          "tp": 0,
+          "fp": 0,
+          "tn": 104,
+          "fn": 71,
+          "accuracy": 0.5942857142857143,
+          "recall": 0.0,
+          "false_positive_rate": 0.0,
+          "precision": null,
+          "f1": 0.0,
+          "balanced_accuracy": 0.5,
+          "sparse_first_trigger_on_time": 0,
+          "sparse_first_trigger_early": 0,
+          "sparse_first_trigger_missed": 71,
+          "sparse_first_trigger_correct_wait": 1
+        }
+      }
+    },
+    {
+      "arm": "cl_temporal_bce2",
+      "status": "completed",
+      "run_dir": "/dss/mcmlscratch/04/ge75vid2/haoyu/live-ultrasound-video-understanding/cluster_data/experiments/streamready/fresh_loss_comparison_10v_20261121T232902Z/cl_temporal_bce2",
+      "initial_core_sha256": "7466f124a323d025277bf5af7866a89e78e3f9bbbd7cd08a88f208b522703a40",
+      "final_metrics": {
+        "epoch": 100,
+        "mean_endpoint_loss": 0.5547892594763211,
+        "readiness_accuracy": 0.6742857142857143,
+        "premature_rate": 0.33653846153846156,
+        "answer_exact_match": 0.9577464788732394,
+        "answer_recall": 0.6901408450704225,
+        "readiness_auc": 0.7655742145178764,
+        "paired_order_accuracy": 0.56,
+        "gated_answer_exact_match": 0.647887323943662,
+        "scope": "same_training_videos_endpoints_forced_answer_probe",
+        "answer_accuracy": 0.9577464788732394,
+        "answer_correct_count": 68,
+        "answer_count": 71,
+        "gated_answer_accuracy": 0.647887323943662,
+        "gated_answer_correct_count": 46,
+        "answer_macro_accuracy": 0.9583333333333333,
+        "answer_metrics_by_type": {
+          "current_observation": {
+            "n": 18,
+            "answer_accuracy": 0.8888888888888888,
+            "gated_answer_accuracy": 0.8888888888888888
+          },
+          "history_recall": {
+            "n": 18,
+            "answer_accuracy": 0.9444444444444444,
+            "gated_answer_accuracy": 0.9444444444444444
+          },
+          "event_notification": {
+            "n": 18,
+            "answer_accuracy": 1.0,
+            "gated_answer_accuracy": 0.2222222222222222
+          },
+          "temporal_comparison": {
+            "n": 17,
+            "answer_accuracy": 1.0,
+            "gated_answer_accuracy": 0.5294117647058824
+          }
+        },
+        "answer_scoring": "StreamReady readiness_vqa.answers_match: normalized/numeric/short-phrase match",
+        "sparse_first_trigger": {
+          "answerable_tasks": 71,
+          "unanswerable_tasks": 1,
+          "answer_correct": 46,
+          "answer_accuracy": 0.647887323943662,
+          "on_time_and_text_correct": 33,
+          "early_tasks": 13,
+          "no_answer_tasks": 22
+        },
+        "answer_ce": 0.008131881461939511,
+        "readiness_bce": 0.5514900088310242,
+        "readiness_weighted_bce": 0.7449092268943787,
+        "readiness_bce_positive_weight": 2.0,
+        "readiness_bce_weight": 1.0,
+        "readiness_objective_loss": 1.425689697265625,
+        "readiness_contrastive": 0.6798028349876404,
+        "readiness_temporal": 0.009776242077350616,
+        "readiness_timing_objective": 0.6807804703712463,
+        "timing_pairs": 100,
+        "timing_paired_tasks": 35,
+        "readiness_objective": "contrastive_bce_gold",
+        "mean_endpoint_loss_definition": "mean per-endpoint answer CE (WAIT=0) + weight * gold BCE; diagnostic, not contrastive training objective",
+        "training_objective_fullset": 1.4338215787275645
+      },
+      "thresholds": {
+        "0.5": {
+          "readiness": {
+            "threshold": 0.5,
+            "tp": 49,
+            "fp": 35,
+            "tn": 69,
+            "fn": 22,
+            "accuracy": 0.6742857142857143,
+            "recall": 0.6901408450704225,
+            "false_positive_rate": 0.33653846153846156,
+            "precision": 0.5833333333333334,
+            "f1": 0.632258064516129,
+            "balanced_accuracy": 0.6768011917659804,
+            "sparse_first_trigger_on_time": 36,
+            "sparse_first_trigger_early": 13,
+            "sparse_first_trigger_missed": 22,
+            "sparse_first_trigger_correct_wait": 1
+          },
+          "answers": {
+            "answer_accuracy": 0.9577464788732394,
+            "answer_correct_count": 68,
+            "answer_count": 71,
+            "gated_answer_accuracy": 0.647887323943662,
+            "gated_answer_correct_count": 46,
+            "answer_macro_accuracy": 0.9583333333333333,
+            "answer_metrics_by_type": {
+              "current_observation": {
+                "n": 18,
+                "answer_accuracy": 0.8888888888888888,
+                "gated_answer_accuracy": 0.8888888888888888
+              },
+              "history_recall": {
+                "n": 18,
+                "answer_accuracy": 0.9444444444444444,
+                "gated_answer_accuracy": 0.9444444444444444
+              },
+              "event_notification": {
+                "n": 18,
+                "answer_accuracy": 1.0,
+                "gated_answer_accuracy": 0.2222222222222222
+              },
+              "temporal_comparison": {
+                "n": 17,
+                "answer_accuracy": 1.0,
+                "gated_answer_accuracy": 0.5294117647058824
+              }
+            },
+            "answer_scoring": "StreamReady readiness_vqa.answers_match: normalized/numeric/short-phrase match"
+          },
+          "first_trigger": {
+            "answerable_tasks": 71,
+            "unanswerable_tasks": 1,
+            "answer_correct": 46,
+            "answer_accuracy": 0.647887323943662,
+            "on_time_and_text_correct": 33,
+            "early_tasks": 13,
+            "no_answer_tasks": 22
+          }
+        },
+        "0.35": {
+          "readiness": {
+            "threshold": 0.35,
+            "tp": 63,
+            "fp": 78,
+            "tn": 26,
+            "fn": 8,
+            "accuracy": 0.5085714285714286,
+            "recall": 0.8873239436619719,
+            "false_positive_rate": 0.75,
+            "precision": 0.44680851063829785,
+            "f1": 0.5943396226415094,
+            "balanced_accuracy": 0.568661971830986,
+            "sparse_first_trigger_on_time": 36,
+            "sparse_first_trigger_early": 28,
+            "sparse_first_trigger_missed": 8,
+            "sparse_first_trigger_correct_wait": 0
+          },
+          "answers": {
+            "answer_accuracy": 0.9577464788732394,
+            "answer_correct_count": 68,
+            "answer_count": 71,
+            "gated_answer_accuracy": 0.8450704225352113,
+            "gated_answer_correct_count": 60,
+            "answer_macro_accuracy": 0.9583333333333333,
+            "answer_metrics_by_type": {
+              "current_observation": {
+                "n": 18,
+                "answer_accuracy": 0.8888888888888888,
+                "gated_answer_accuracy": 0.8888888888888888
+              },
+              "history_recall": {
+                "n": 18,
+                "answer_accuracy": 0.9444444444444444,
+                "gated_answer_accuracy": 0.9444444444444444
+              },
+              "event_notification": {
+                "n": 18,
+                "answer_accuracy": 1.0,
+                "gated_answer_accuracy": 0.6666666666666666
+              },
+              "temporal_comparison": {
+                "n": 17,
+                "answer_accuracy": 1.0,
+                "gated_answer_accuracy": 0.8823529411764706
+              }
+            },
+            "answer_scoring": "StreamReady readiness_vqa.answers_match: normalized/numeric/short-phrase match"
+          },
+          "first_trigger": {
+            "answerable_tasks": 71,
+            "unanswerable_tasks": 1,
+            "answer_correct": 60,
+            "answer_accuracy": 0.8450704225352113,
+            "on_time_and_text_correct": 33,
+            "early_tasks": 28,
+            "no_answer_tasks": 8
+          }
+        }
+      },
+      "threshold_scan_best": {
+        "accuracy": {
+          "value": 0.7942857142857143,
+          "intervals": [
+            {
+              "lower": 0.6680145263671875,
+              "lower_inclusive": false,
+              "upper": 0.66888028383255
+            },
+            {
+              "lower": 0.6697448492050171,
+              "lower_inclusive": false,
+              "upper": 0.7065955400466919
+            }
+          ]
+        },
+        "balanced_accuracy": {
+          "value": 0.7487134344528711,
+          "intervals": [
+            {
+              "lower": 0.6680145263671875,
+              "lower_inclusive": false,
+              "upper": 0.66888028383255
+            }
+          ]
+        },
+        "f1": {
+          "value": 0.6666666666666666,
+          "intervals": [
+            {
+              "lower": 0.6297746300697327,
+              "lower_inclusive": false,
+              "upper": 0.6306849718093872
+            },
+            {
+              "lower": 0.6680145263671875,
+              "lower_inclusive": false,
+              "upper": 0.66888028383255
+            }
+          ]
+        },
+        "sparse_first_trigger_on_time": {
+          "value": 38,
+          "intervals": [
+            {
+              "lower": 0.3007456064224243,
+              "lower_inclusive": false,
+              "upper": 0.3015677034854889
+            },
+            {
+              "lower": 0.31573596596717834,
+              "lower_inclusive": false,
+              "upper": 0.31658050417900085
+            },
+            {
+              "lower": 0.3904758393764496,
+              "lower_inclusive": false,
+              "upper": 0.39140594005584717
+            }
+          ]
+        },
+        "zero_false_positive_max_recall": {
+          "lower": 0.6697448492050171,
+          "lower_inclusive": false,
+          "upper": 0.7065955400466919,
+          "threshold": 0.7065955400466919,
+          "tp": 35,
+          "fp": 0,
+          "tn": 104,
+          "fn": 36,
+          "accuracy": 0.7942857142857143,
+          "recall": 0.49295774647887325,
+          "false_positive_rate": 0.0,
+          "precision": 1.0,
+          "f1": 0.660377358490566,
+          "balanced_accuracy": 0.7464788732394366,
+          "sparse_first_trigger_on_time": 35,
+          "sparse_first_trigger_early": 0,
+          "sparse_first_trigger_missed": 36,
+          "sparse_first_trigger_correct_wait": 1
+        }
+      }
+    }
+  ],
+  "common_initial_weights_verified": true,
+  "completed_arms_batch_order_verified": 3,
+  "scope": "10 training videos; 100epochs/300updates each; single seed; no holdout; sparse endpoint replay, not dense streaming or ARS"
+}

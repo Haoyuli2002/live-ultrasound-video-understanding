@@ -1,0 +1,166 @@
+{
+  "timestamp": "20261122T075247Z",
+  "upstream": {
+    "StreamReady": {
+      "url": "https://github.com/sacrcv/StreamReady.git",
+      "commit": "a5af28b44e3ac92095980dface1be0d58d442eab",
+      "status": " M README.md\n M lavis/common/config.py\n M lavis/models/blip2_models/Qformer.py\n M lavis/models/blip2_models/streamready.py\n M lavis/models/streamready/__init__.py\n M lavis/models/streamready/backbone.py\n M lavis/models/streamready/fusion.py\n M lavis/models/streamready/module.py\n M lavis/projects/streamready/train.yaml\n M lavis/runners/runner_base.py\n M lavis/tasks/base_task.py\n M requirements.txt\n M run_scripts/benchmarks/eval.sh\n M run_scripts/proready_qa/test.sh\n M run_scripts/train.sh\n M tools/extract_vit_features.py\n?? QWEN3_5.md\n?? lavis/configs/models/streamready/streamready_qwen3_5.yaml\n?? lavis/models/streamready/backbone_qwen3_5.py\n?? requirements-qwen3_5.txt\n?? run_scripts/backbone_env.sh\n?? tests/test_qwen35_backbone.py\n"
+    },
+    "LAVIS": {
+      "url": "https://github.com/salesforce/LAVIS.git",
+      "commit": "05cb670f47296522e24e7727e366b4a997d28582",
+      "status": ""
+    },
+    "Dispider": {
+      "url": "https://github.com/Mark12Ding/Dispider.git",
+      "commit": "803f6b4634b3232293e89a38bcce9f5815c33ed4",
+      "status": "?? docs/DISPIDER_LOGIC_zh.md\n"
+    }
+  },
+  "streamready_git_backup": "/dss/mcmlscratch/04/ge75vid2/tmp/workspace_cleanup_20261122T075247Z/StreamReady.git",
+  "streamready_patch_backup": "/dss/mcmlscratch/04/ge75vid2/tmp/workspace_cleanup_20261122T075247Z/streamready_worktree.patch",
+  "removed": [
+    {
+      "path": "LAVIS",
+      "bytes": 199017722,
+      "reason": "Unmodified reconstructible upstream reference checkout; custom Dispider analysis preserved in docs."
+    },
+    {
+      "path": "Dispider",
+      "bytes": 10691999,
+      "reason": "Unmodified reconstructible upstream reference checkout; custom Dispider analysis preserved in docs."
+    },
+    {
+      "path": "QA/prepare/__pycache__",
+      "bytes": 6427,
+      "reason": "Regenerable Python bytecode cache"
+    },
+    {
+      "path": "QA/train/__pycache__",
+      "bytes": 16582,
+      "reason": "Regenerable Python bytecode cache"
+    },
+    {
+      "path": "stage2/__pycache__",
+      "bytes": 376332,
+      "reason": "Regenerable Python bytecode cache"
+    },
+    {
+      "path": "UltrasoundCrawler_KeyCode_20260323_v2/crawler/__pycache__",
+      "bytes": 55133,
+      "reason": "Regenerable Python bytecode cache"
+    },
+    {
+      "path": "stage3/__pycache__",
+      "bytes": 132328,
+      "reason": "Regenerable Python bytecode cache"
+    },
+    {
+      "path": "stage3/releases/visual_asr_20261112/code/__pycache__",
+      "bytes": 27563,
+      "reason": "Regenerable Python bytecode cache"
+    },
+    {
+      "path": "stage3/releases/visual_asr_20261112/annotations/reviews/review4_20261112/__pycache__",
+      "bytes": 7252,
+      "reason": "Regenerable Python bytecode cache"
+    },
+    {
+      "path": "pretrain/__pycache__",
+      "bytes": 71449,
+      "reason": "Regenerable Python bytecode cache"
+    },
+    {
+      "path": "stage1/__pycache__",
+      "bytes": 118525,
+      "reason": "Regenerable Python bytecode cache"
+    },
+    {
+      "path": "StreamReady/tests/__pycache__",
+      "bytes": 0,
+      "reason": "Regenerable Python bytecode cache"
+    },
+    {
+      "path": "StreamReady/lavis/__pycache__",
+      "bytes": 1054,
+      "reason": "Regenerable Python bytecode cache"
+    },
+    {
+      "path": "StreamReady/lavis/datasets/__pycache__",
+      "bytes": 8127,
+      "reason": "Regenerable Python bytecode cache"
+    },
+    {
+      "path": "StreamReady/lavis/datasets/datasets/__pycache__",
+      "bytes": 42669,
+      "reason": "Regenerable Python bytecode cache"
+    },
+    {
+      "path": "StreamReady/lavis/datasets/builders/__pycache__",
+      "bytes": 17098,
+      "reason": "Regenerable Python bytecode cache"
+    },
+    {
+      "path": "StreamReady/lavis/metrics/__pycache__",
+      "bytes": 14630,
+      "reason": "Regenerable Python bytecode cache"
+    },
+    {
+      "path": "StreamReady/lavis/models/__pycache__",
+      "bytes": 14962,
+      "reason": "Regenerable Python bytecode cache"
+    },
+    {
+      "path": "StreamReady/lavis/models/blip2_models/__pycache__",
+      "bytes": 62035,
+      "reason": "Regenerable Python bytecode cache"
+    },
+    {
+      "path": "StreamReady/lavis/models/streamready/__pycache__",
+      "bytes": 73219,
+      "reason": "Regenerable Python bytecode cache"
+    },
+    {
+      "path": "StreamReady/lavis/tasks/__pycache__",
+      "bytes": 22059,
+      "reason": "Regenerable Python bytecode cache"
+    },
+    {
+      "path": "StreamReady/lavis/runners/__pycache__",
+      "bytes": 29272,
+      "reason": "Regenerable Python bytecode cache"
+    },
+    {
+      "path": "StreamReady/lavis/processors/__pycache__",
+      "bytes": 51046,
+      "reason": "Regenerable Python bytecode cache"
+    },
+    {
+      "path": "StreamReady/lavis/common/__pycache__",
+      "bytes": 47087,
+      "reason": "Regenerable Python bytecode cache"
+    },
+    {
+      "path": "StreamReady/lavis/common/vqa_tools/__pycache__",
+      "bytes": 16043,
+      "reason": "Regenerable Python bytecode cache"
+    },
+    {
+      "path": "scripts/__pycache__",
+      "bytes": 70927,
+      "reason": "Regenerable Python bytecode cache"
+    },
+    {
+      "path": "scripts/slurm/__pycache__",
+      "bytes": 5173,
+      "reason": "Regenerable Python bytecode cache"
+    },
+    {
+      "path": "scripts/data/__pycache__",
+      "bytes": 19569,
+      "reason": "Regenerable Python bytecode cache"
+    }
+  ],
+  "removed_bytes": 211016282,
+  "preserved": "All original training checkpoints, results, data, transcripts, logs and modified code preserved. No symlink targets traversed."
+}

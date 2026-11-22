@@ -61,3 +61,13 @@ viz/data.json
 local_asr_3videos/
 local_crawl_runs/
 logs/
+
+# Server-local symlink (a trailing slash alone does not ignore a symlink)
+/cluster_data
+# Reconstructible upstream reference checkouts; see docs/UPSTREAM_SOURCES.md
+/LAVIS/
+/Dispider/
+# Downloaded or trained weights and generated QA viewer data
+*.pth
+*.pt
+/viz/new-qa.json
