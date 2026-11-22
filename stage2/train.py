@@ -284,7 +284,7 @@ def main():
     parser.add_argument("--init-adapter")
     parser.add_argument("--epochs", type=int, default=1)
     parser.add_argument("--learning-rate", type=float, default=1e-4)
-    parser.add_argument("--frame-size", type=int, default=224)
+    parser.add_argument("--frame-size", type=int, default=256)
     parser.add_argument("--lora-rank", type=int, default=16)
     parser.add_argument("--dtype", choices=["bf16", "fp16", "fp32"], default="bf16")
     parser.add_argument("--max-grad-norm", type=float, default=1.0,

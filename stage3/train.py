@@ -71,34 +71,53 @@ def decision_question(row):
             f"Current time: {row['time']:g} seconds.\n{row['question']}")
 
 
-def causal_memories(memory, reader, points):
-    """Replay once per video, yielding detached memory at each decision time.
+def causal_memories(memory, reader, points, *, evidence_bank=None):
+    """Replay per-second memory, optionally indexing independent visual patches.
 
-    At fractional times append one temporary latest frame to the decision input;
-    do not alter the persistent integer 1-FPS recurrence with that probe.
+    Fractional observations enter the evidence index but never persistent Short
+    recurrence. Reset Q-Former history at video and minute boundaries.
     """
+    from stage2.short_encoding import short_memory_scope
+    from .evidence import visual_features
     second=0;long_state=None;short=[];last_time=None;cached=None
     duration=reader.count/reader.fps
-    for row in points:
-        with torch.no_grad():
-            current=row['time']
-            if current>duration+1e-6 or (last_time is not None and current<last_time):
-                raise ValueError('Decision points must be chronological and within the video')
-            if current!=last_time:
-                while second+1<=current+1e-9:
-                    short.append(memory.encode_frame(reader.frame_ending_at(second)).detach())
-                    second+=1
-                    if len(short)==60:
-                        long_state=memory.update_long(long_state,torch.stack(short,dim=1)).detach()
-                        short.clear()
-                parts=[] if long_state is None else [long_state]
-                if short:parts.append(torch.stack(short,dim=1))
-                if current-second>1e-9:
-                    parts.append(memory.encode_frame(reader.frame_before(current)).detach().unsqueeze(1))
-                if not parts:raise ValueError('No causal visual memory available at the decision time')
-                cached=torch.cat(parts,dim=1).detach()
-                last_time=current
-        yield row,cached
+
+    def encode(end, image):
+        if evidence_bank is None:
+            return memory.encode_frame(image).detach()
+        frames=visual_features(memory,[image])
+        index=min(reader.count-1,int(end*reader.fps-1e-6))
+        evidence_bank.add(end,frames[0],frame_index=index,source_pts=index/reader.fps)
+        if hasattr(memory,'encode_visual_short'):
+            return memory.encode_visual_short(frames)[:,0,:].detach()
+        return memory.encode_frame(image).detach()
+
+    with short_memory_scope(memory):
+        for row in points:
+            with torch.no_grad():
+                current=float(row['time'])
+                if not math.isfinite(current) or current<=0 or current>duration+1e-6 or (last_time is not None and current<last_time):
+                    raise ValueError('Decision points must be chronological and within the video')
+                if current!=last_time:
+                    while second+1<=current+1e-9:
+                        short.append(encode(second+1,reader.frame_ending_at(second)))
+                        second+=1
+                        if len(short)==60:
+                            long_state=memory.update_long(long_state,torch.stack(short,dim=1)).detach()
+                            short.clear()
+                            if hasattr(memory,'reset_short_memory'):memory.reset_short_memory()
+                    parts=[] if long_state is None else [long_state]
+                    if short:parts.append(torch.stack(short,dim=1))
+                    if current-second>1e-9:
+                        history=getattr(memory,'_short_history',None)
+                        try:
+                            parts.append(encode(current,reader.frame_before(current)).unsqueeze(1))
+                        finally:
+                            if hasattr(memory,'_short_history'):memory._short_history=history
+                    if not parts:raise ValueError('No causal visual memory available at the decision time')
+                    cached=torch.cat(parts,dim=1).detach()
+                    last_time=current
+            yield row,cached
 
 
 def train_video(decision, memory, reader, points, optimizer, metrics, *, epoch,
@@ -156,7 +175,8 @@ def main():
     dtype={'bf16':torch.bfloat16,'fp32':torch.float32}[args.dtype]
     memory=load_frozen_memory_model(args.model_name,stage1_adapter=args.stage1_adapter,
                                    stage2_adapter=args.stage2_adapter,dtype=dtype)
-    memory.model.to('cuda').eval()
+    if hasattr(memory,'to'):memory.to('cuda').eval()
+    else:memory.model.to('cuda').eval()
     decision=DecisionModel(args.model_name,stage1_adapter=args.stage1_adapter,
         stage2_adapter=args.stage2_adapter,dtype=dtype,rank=args.lora_rank).to('cuda')
     for model in (memory.model,decision.model):

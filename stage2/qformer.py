@@ -173,7 +173,8 @@ class QFormerMemoryModel(MemoryModel):
         """Call at a video/minute boundary, and before replaying an optimizer target."""
         self._short_history = None
 
-    def encode_short(self, images):
+    def extract_visual_features(self, images):
+        """Frozen current-frame patches, before any Short history mixing."""
         if not 1 <= len(images) <= 10:
             raise ValueError("Short encoding needs 1..10 observed frames")
         pixels = self.processor.image_processor(images=images, return_tensors="pt")
@@ -187,10 +188,21 @@ class QFormerMemoryModel(MemoryModel):
             raise TypeError("Expected one merged visual-patch tensor per input frame")
         if any(f.ndim != 2 or f.shape[-1] != self.qformer_config["input_dim"] for f in frames):
             raise ValueError("Unexpected Qwen visual-feature shape")
+        return frames
+
+    def encode_short(self, images):
+        return self.encode_visual_short(self.extract_visual_features(images))
+
+    def encode_visual_short(self, frames):
+        """Update Short from already extracted patches (one vision pass)."""
+        if not isinstance(frames,(list,tuple)) or not 1 <= len(frames) <= 10:
+            raise ValueError("Expected 1..10 current-frame patch tensors")
+        if any(f.ndim != 2 or len(f) == 0 or f.shape[-1] != self.qformer_config["input_dim"] for f in frames):
+            raise ValueError("Unexpected current-frame visual feature shape")
         dtype = next(self.compressors.parameters()).dtype
         if self.requires_short_history:
             history = getattr(self, "_short_history", None)
-            if (0 if history is None else history.shape[1]) + len(images) > 60:
+            if (0 if history is None else history.shape[1]) + len(frames) > 60:
                 raise ValueError("Reset Short history before crossing a minute boundary")
             result = []
             # Frozen vision may batch frames; each query step receives only
@@ -203,7 +215,7 @@ class QFormerMemoryModel(MemoryModel):
         features = torch.cat(frames, dim=0).unsqueeze(0).to(dtype)
         positions = torch.cat([torch.full((len(f),),i,device=self.device,dtype=torch.long)
                                for i,f in enumerate(frames)]).unsqueeze(0)
-        return self.compressors["short"](features, positions, torch.zeros_like(positions), len(images))
+        return self.compressors["short"](features, positions, torch.zeros_like(positions), len(frames))
 
     def encode_frame(self, image):
         if not self.requires_short_history:
@@ -228,6 +240,14 @@ class QFormerMemoryModel(MemoryModel):
 
 def load_memory_model(model_name, *, architecture=None, adapter_path=None, **kwargs):
     detected = bool(adapter_path and (Path(adapter_path)/"qformer_config.json").is_file())
+    checkpoint_arch = None
+    if detected:
+        checkpoint_arch = json.loads((Path(adapter_path)/"qformer_config.json").read_text())["architecture"]
+    if architecture == "lavis_bert_query_1_60" or checkpoint_arch == "lavis_bert_query_1_60":
+        from .blip2_memory import ARCHITECTURE, Blip2Memory
+        if architecture not in (None, ARCHITECTURE, "qformer") or (adapter_path and checkpoint_arch != ARCHITECTURE):
+            raise ValueError("Checkpoint architecture differs from requested LAVIS memory")
+        return Blip2Memory(model_name, adapter_path=adapter_path, **kwargs)
     if architecture not in (None, "ordinary", "qformer"):
         raise ValueError("Unknown memory architecture")
     if adapter_path and architecture is not None and (architecture == "qformer") != detected:

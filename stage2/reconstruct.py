@@ -159,16 +159,15 @@ def sha256(path: Path) -> str:
     return h.hexdigest()
 
 
-def main():
-    from .data import VideoReader, load_blocks
-    from .model import MemoryModel
+def build_parser():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--eval-jsonl", required=True)
     parser.add_argument("--video-path-map", required=True)
     parser.add_argument("--adapter-path", required=True)
     parser.add_argument("--base-adapter")
     parser.add_argument("--model-name", default="Qwen/Qwen3.5-2B")
-    parser.add_argument("--frame-size", type=int, default=224)
+    parser.add_argument("--frame-size", type=int, default=None,
+                        help="Defaults to the checkpoint training frame size; 256 for new configurations")
     parser.add_argument("--max-new-tokens", type=int, default=160)
     parser.add_argument("--conditions", nargs="+", choices=sorted(CONDITIONS),
                         default=["real", "zero", "other_window"])
@@ -178,8 +177,19 @@ def main():
     parser.add_argument("--output-dir", required=True)
     parser.add_argument("--release-manifest")
     parser.add_argument("--limit-videos",type=int,default=0)
+    selection = parser.add_mutually_exclusive_group()
+    selection.add_argument("--video-ids", nargs="+", help="Select whole videos after validating the frozen eval split")
+    selection.add_argument("--video-id", action="append", dest="video_ids",
+                           help="Repeat for each video; use --video-id=ID for IDs starting with '-'")
+    return parser
+
+
+def main():
+    from .data import VideoReader, load_blocks
+    from .model import MemoryModel
+    parser = build_parser()
     args = parser.parse_args()
-    if args.max_new_tokens < 1 or args.frame_size < 1:
+    if args.max_new_tokens < 1 or (args.frame_size is not None and args.frame_size < 1):
         parser.error("Token budget and frame size must be positive")
     if not torch.cuda.is_available():
         raise RuntimeError("Qwen3.5 reconstruction requires an allocated CUDA GPU")
@@ -187,7 +197,13 @@ def main():
     if not (adapter/"adapter_config.json").is_file():
         raise FileNotFoundError(adapter/"adapter_config.json")
     config_path = adapter.parent/"training_config.json"
-    config = json.loads(config_path.read_text()) if config_path.is_file() else {}
+    if not config_path.is_file() and adapter.name == "adapter":
+        config_path = adapter.parent.parent/"training_config.json"
+    if not config_path.is_file():
+        raise FileNotFoundError("Missing training_config.json: initialization must be explicit in the saved run")
+    config = json.loads(config_path.read_text())
+    if args.frame_size is None:
+        args.frame_size = int(config.get("frame_size", 256))
     if args.frame_size != config.get("frame_size", args.frame_size):
         raise ValueError("Use the training frame size for reconstruction")
     base_adapter = args.base_adapter or config.get("init_adapter")
@@ -201,10 +217,17 @@ def main():
     videos = load_blocks(args.eval_jsonl,validate_text=not bool(args.release_manifest))
     if args.limit_videos:
         videos={v:videos[v] for v in sorted(videos)[:args.limit_videos]}
+    if args.video_ids:
+        videos = {v: videos[v] for v in args.video_ids}
     paths = json.loads(Path(args.video_path_map).read_text())
     for vid in videos:
         if vid not in paths or not Path(paths[vid]).is_file():
             raise FileNotFoundError(f"Missing video for {vid}")
+    source_hashes = {vid: sha256(Path(paths[vid])) for vid in videos}
+    if args.release_manifest:
+        expected = {v["video_id"]: v["source_sha256"] for v in release["videos"]}
+        if any(source_hashes[v] != expected[v] for v in videos):
+            raise ValueError("Eval video content differs from frozen release")
     output = Path(args.output_dir)
     output.mkdir(parents=True, exist_ok=False)
     manifest = {**vars(args), "adapter_path": str(adapter),
@@ -212,8 +235,9 @@ def main():
                 "reference_used_in_decoding": False,
                 "labels_sha256": sha256(Path(args.eval_jsonl)),
                 "adapter_config_sha256": sha256(adapter/"adapter_config.json"),
-                "source_sha256": {vid: sha256(Path(paths[vid])) for vid in videos},
-                "interpretation": "Training-video reconstruction; not held-out generalization. "
+                "source_sha256": source_hashes,
+                "interpretation": ("Frozen held-out eval reconstruction. " if args.release_manifest else
+                                   "Training-video reconstruction; not held-out generalization. ") +
                 "Lexical scores do not measure medical correctness or video faithfulness. "
                 "Zero/other-window memory are diagnostic controls with distribution limits."}
     if (adapter/"qformer_config.json").is_file():

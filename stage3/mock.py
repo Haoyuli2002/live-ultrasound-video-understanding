@@ -58,10 +58,16 @@ class TinyBackbone(nn.Module):
 
 
 class MockDecision(DecisionModel):
-    def __init__(self, checkpoint=None):
+    def __init__(self, checkpoint=None, enable_retrieval=False):
         nn.Module.__init__(self);self.model=TinyBackbone();self.tokenizer=ByteTokenizer();self.decision_id=2;self.decision_head=nn.Linear(HIDDEN,1)
+        cfg=json.loads((Path(checkpoint)/'stage3_config.json').read_text()) if checkpoint else {}
+        if enable_retrieval or cfg.get('retrieval_enabled'):
+            from .retrieval import RetrievalHead
+            self.retrieval_head=RetrievalHead(HIDDEN,HIDDEN)
+            self.evidence_head=nn.Linear(HIDDEN,1)
+        self.evidence_trained=cfg.get('evidence_trained',False)
         if checkpoint:self.load_state_dict(torch.load(Path(checkpoint)/'mock_decision.pt',weights_only=True))
     def save(self,path):
         path=Path(path);path.mkdir(parents=True,exist_ok=True)
         torch.save(self.state_dict(),path/'mock_decision.pt')
-        (path/'stage3_config.json').write_text(json.dumps({'backend':'mock','not_a_qwen_checkpoint':True,'hidden_size':HIDDEN},indent=2)+'\n')
+        (path/'stage3_config.json').write_text(json.dumps({'backend':'mock','not_a_qwen_checkpoint':True,'hidden_size':HIDDEN,'retrieval_enabled':getattr(self,'retrieval_head',None) is not None,'evidence_trained':self.evidence_trained},indent=2)+'\n')

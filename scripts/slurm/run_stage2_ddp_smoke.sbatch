@@ -70,7 +70,7 @@ train_args=(
   --video-path-map "$SMOKE_ROOT/smoke_video_paths.json"
   --output-dir "$SMOKE_ROOT/training"
   --epochs 1
-  --frame-size 224
+  --frame-size 256
   --learning-rate 1e-4
   --validation-fraction 0
   --warmup-ratio 0

@@ -38,13 +38,16 @@ def main():
     parser.add_argument("--base-adapter", help="Stage 1 adapter merged before Stage 2; defaults to training_config.json")
     parser.add_argument("--output", required=True)
     parser.add_argument("--model-name", default="Qwen/Qwen3.5-2B")
-    parser.add_argument("--frame-size", type=int, default=224)
+    parser.add_argument("--frame-size", type=int, default=None,
+                        help="Defaults to the checkpoint training frame size; 256 for new configurations")
     parser.add_argument("--seconds", type=int)
     args = parser.parse_args()
     if not torch.cuda.is_available():
         raise RuntimeError("Stage 2 Qwen3.5 inference requires CUDA")
     config_path = Path(args.adapter_path).parent / "training_config.json"
     config = json.loads(config_path.read_text(encoding="utf-8")) if config_path.exists() else {}
+    if args.frame_size is None:
+        args.frame_size = int(config.get("frame_size", 256))
     base_adapter = args.base_adapter or config.get("init_adapter")
     if config.get("init_adapter") and not base_adapter:
         raise ValueError("Stage 1 base adapter is required to reproduce this Stage 2 checkpoint")

@@ -52,7 +52,7 @@ if os.environ['ARCHITECTURE']=='qformer':
  report=Path(os.environ.get('QFORMER_SMOKE_REPORT',''))
  if not report.is_file():raise SystemExit('Q-Former full training waits for a passed single-video smoke_report.json')
  q=json.loads(report.read_text())
- assert q['status']=='functional_smoke_passed' and q['frame_size']==224
+ assert q['status']=='functional_smoke_passed' and q['frame_size']==256
  assert q['model_name']=='Qwen/Qwen3.5-2B'
  assert q['init_adapter_sha256']==digest(s/'adapter_model.safetensors')
  assert q['source_sha256']==next(v['source_sha256'] for v in m['videos'] if v['video_id']=='P3FoSFIrfQA')
@@ -92,7 +92,7 @@ from pathlib import Path
 from stage2.provenance import digest
 r=Path(os.environ['RUN_DIR']);m=Path(os.environ['DATASET_RELEASE'])/'manifest.json'
 cfg={k:os.environ[k] for k in ['ARCHITECTURE','NPROC_PER_NODE','EPOCHS','LEARNING_RATE','SAVE_STEPS','WALLTIME','STAGE1_ADAPTER','DATASET_RELEASE']}
-cfg.update(release_sha256=digest(m),dataset_version=os.environ['DATASET_VERSION'],frame_size=224,short_tokens_per_10s=10,long_tokens=60)
+cfg.update(release_sha256=digest(m),dataset_version=os.environ['DATASET_VERSION'],frame_size=256,short_tokens_per_10s=10,long_tokens=60)
 (r/'submission.json').write_text(json.dumps(cfg,indent=2))
 PY
 JOB_NAME="stage2-full-$ARCHITECTURE"

@@ -107,7 +107,7 @@ def main():
                         default="Qwen/Qwen3.5-2B")
     parser.add_argument("--epochs", type=int, default=20)
     parser.add_argument("--learning-rate", type=float, default=1e-4)
-    parser.add_argument("--frame-size", type=int, default=224)
+    parser.add_argument("--frame-size", type=int, default=256)
     parser.add_argument("--seed", type=int, default=20261104)
     args = parser.parse_args()
     if (args.epochs < 1 or args.frame_size < 1 or not math.isfinite(args.learning_rate)

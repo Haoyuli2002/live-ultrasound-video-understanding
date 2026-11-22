@@ -116,3 +116,86 @@ Stage 3 消费的仍是 Stage 2 产出的 memory 向量（非文本），这些�
 ## 两视频 overfit / 重建 / 评测
 
 见 [OVERFIT.md](OVERFIT.md)。新增 stage3.overfit 入口支持显式 mock / qwen 后端、冻结 memory 缓存、立即回答和 null 未触发题、阈值决策后的自由生成、首次回答时序指标与零 memory 对照。当前准备的 P3+Cz 子集为12条英文QA；CPU mock 是接口验证，不代表真实 Stage3 已训练成功。之后接真实 Stage2 checkpoint 时须验证其初始化链。
+
+## 512 维视觉证据检索（可选新路径）
+
+旧的 `stage3.train` / 不带检索头的检查点仍使用记忆直接回答。
+新入口是 `stage3.retrieval_training` 与 `stage3.retrieval_inference`，不依赖 Dispider。
+
+```text
+当前帧视觉 tokens ── 均值池化 ── Linear(D,512) + normalize ── key
+       └─ 原有 Q-Former ── Short/Long + question ── DECISION
+                                                   ├─ 可答性 BCE
+                                                   └─ Linear(D,512) + normalize ── query
+query/key 点积 / 0.1 ── 历史证据窗口 ── 原始采样帧视觉 tokens
+                                     └─ evidence-only prefix
+                                           ├─ 证据充分性 BCE
+                                           └─ 带 [E1] 等引用的回答
+```
+
+Key 不经过 Q-Former，也不融合历史；query 通过 Decision 状态读取 Long/Short。
+每个视频使用独立 `EvidenceBank`。索引保存冻结的当前帧均值、原视频路径、
+帧索引、近似 PTS 和可用时刻；512 维 key 在检索时计算，训练更新投影后不会
+读取过期 key。当前实现为精确扫描，不是 ANN，也不是固定总内存的系统。
+索引占用随视频长度增长，但不持久缓存所有 patch tokens。
+
+默认取最高分的 16 个候选秒点，最多返回 4 个窗口、8 个采样帧；先选分散的
+窗口，再补充相邻命中，每个窗口最长 4 秒，并按时间排序。窗口是采样帧的回放
+上下文，不代表逐帧审核过的完整支持区间。只允许 `available_at <= current_time`。
+回答时重新编码所选原帧，沿用 Stage2 的帧尺寸和 `VideoReader` 预处理。
+Q-Former 回放和建库共享一次视觉编码；检索后的重编码不更新 Short 状态。
+
+首版回答前缀只读问题、可观察时间和证据视觉 tokens，不读 Long/Short、参考答案、
+人工证据描述或 ASR。可答性不足返回 `next_action=observe`；视频已可答但检索
+证据不足返回 `next_action=retrieve_again`。目前只返回重检索动作，不自动循环扩大
+搜索。引用缺失或引用不存在的 ID 返回 `next_action=regenerate`，保留 draft 供调试。
+引用 ID 合法性检查不等于语义支持验证，输出明确标记 `citation_support_verified=false`。
+
+### 数据与训练
+
+输入 bundle 使用单个训练视频的 `tasks.jsonl`、`evidence.jsonl`、
+`decision_view.jsonl`、`retrieval_view.jsonl`、`answer_view.jsonl`，以及绑定原视频
+SHA256 的 `media_manifest.json`。字段示例可见 `results/stage3_evidence_pilot_P3_v1/`。
+训练输入由白名单字段构造；标注只用于损失。默认拒绝 `training_ready=false`，
+明确做草稿接线实验时才可添加 `--allow-draft`。不确定决策行被屏蔽。
+
+组损失为每个必需组的 `-log(sum p(positive alternatives))`，其 softmax 候选
+只包含本组正例和显式负例；其他组的正例和未标注帧不视为负例，再对必需组求平均。
+没有显式负例的行没有对比学习信号，检索单独训练时跳过；不能凭四个草稿 QA
+宣称检索已学会。答案训练使用标注完整证据和人工构造的缺失证据；实际检索错误
+分布的训练需要后续收集 retriever 输出。
+
+```bash
+# 阶段一：Stage2 和 Decision backbone 均冻结，仅学习 query/key 投影。
+python -m stage3.retrieval_training \
+  --dataset-dir /path/to/reviewed_bundle \
+  --video-path-map /path/to/video_map.json \
+  --stage2-adapter /path/to/stage2/training/final \
+  --phase retrieval --epochs 5 --output-dir /path/to/retrieval_run
+
+# 阶段二：Stage2 保持冻结，训练 Stage3 LoRA、两种分类头和检索投影。
+python -m stage3.retrieval_training \
+  --dataset-dir /path/to/reviewed_bundle \
+  --video-path-map /path/to/video_map.json \
+  --stage2-adapter /path/to/stage2/training/final \
+  --init-decision-adapter /path/to/retrieval_run/final \
+  --phase joint --epochs 5 --output-dir /path/to/evidence_run
+
+python -m stage3.retrieval_inference \
+  --video /path/to/video.mp4 --question 'Describe the earlier transition.' \
+  --query-time 21 --times 21 27 33 35 40 \
+  --decision-adapter /path/to/evidence_run/final \
+  --output /path/to/predictions.jsonl
+```
+
+如 Stage2 依赖 Stage1，两次训练都需传入同一个 `--stage1-adapter`。
+帧尺寸从 Stage2 `training_config.json` 读取，缺失时拒绝猜测。
+检索与充分性头保存在 `retrieval_heads.pt`，配置写入 `stage3_config.json`。
+只有检索训练、尚未训练 evidence 回答的检查点不能用于完整回答推理。
+训练时也可以用 `--init-decision-adapter` 从旧 Stage3 检查点初始化，新检索头随机初始化；推理不允许这样补随机头。
+不带检索头的旧检查点继续兼容；带检索头的检查点必须提供 evidence bank，
+不会静默退回记忆直接回答。
+
+当前训练入口是单视频 bundle、单 GPU、无 optimizer resume/DDP 的首版实现。
+CPU 测试检查接线、因果性、梯度与检查点；真实 Qwen GPU 训练和语义检索效果
+需要使用完成的 Stage2 检查点另行验证。

@@ -15,16 +15,16 @@ python -m scripts.gpu_runtime
 python -m stage2.train_overfit_ab --mode "$MODE" --train-jsonl "$TRAIN_JSONL" \
   --video-path-map "$VIDEO_MAP" --output-dir "$OUTPUT_DIR" \
   --model-name Qwen/Qwen3.5-2B --epochs "$EPOCHS" --learning-rate "$LEARNING_RATE" \
-  --seed "$SEED" --frame-size 224
+  --seed "$SEED" --frame-size 256
 kinds=(short)
 if [[ "$MODE" == independent ]]; then kinds+=(block global); fi
 for checkpoint in epoch-1 final; do
   python -m stage2.evaluate --eval-jsonl "$TRAIN_JSONL" --video-path-map "$VIDEO_MAP" \
-    --adapter-path "$OUTPUT_DIR/$checkpoint" --frame-size 224 --kinds "${kinds[@]}" \
+    --adapter-path "$OUTPUT_DIR/$checkpoint" --frame-size 256 --kinds "${kinds[@]}" \
     --output "$RUN_DIR/reconstruction_$checkpoint.jsonl"
 done
 python -m stage2.reconstruct --eval-jsonl "$TRAIN_JSONL" --video-path-map "$VIDEO_MAP" \
-  --adapter-path "$OUTPUT_DIR/final" --frame-size 224 --kinds "${kinds[@]}" \
+  --adapter-path "$OUTPUT_DIR/final" --frame-size 256 --kinds "${kinds[@]}" \
   --conditions real zero other_window --max-new-tokens "$MAX_NEW_TOKENS" \
   --save-memories --output-dir "$RUN_DIR/reconstruct_final"
 python -m stage2.overfit_ab_report --run-dir "$RUN_DIR"

@@ -15,4 +15,4 @@ torchrun --standalone --nnodes=1 --nproc-per-node="$NPROC_PER_NODE" -m stage2.tr
   --architecture "$ARCHITECTURE" --dataset-version "$DATASET_VERSION" --train-jsonl "$DATASET_RELEASE/train.jsonl" \
   --video-path-map "$RUN_DIR/video_map.json" --release-manifest "$DATASET_RELEASE/manifest.json" \
   --init-adapter "$STAGE1_ADAPTER" --output-dir "$RUN_DIR/training" --epochs "$EPOCHS" \
-  --learning-rate "$LEARNING_RATE" --frame-size 224 --save-steps "$SAVE_STEPS" --resume
+  --learning-rate "$LEARNING_RATE" --frame-size 256 --save-steps "$SAVE_STEPS" --resume

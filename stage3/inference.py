@@ -7,7 +7,15 @@ from .model import ANSWER, WAIT
 
 @torch.inference_mode()
 def generate(decision, memory, question, *, threshold=.5, max_new_tokens=128,
-             force_status=None):
+             force_status=None, evidence_bank=None, memory_model=None, reader=None, current_time=None):
+    if evidence_bank is not None:
+        if force_status is not None or memory_model is None or reader is None or current_time is None:
+            raise ValueError('Retrieval requires a reader, memory model and current time; no forced marker')
+        from .retrieval_inference import generate_retrieved
+        return generate_retrieved(decision,memory,question,bank=evidence_bank,memory=memory_model,
+                                  reader=reader,current_time=current_time,threshold=threshold,max_new_tokens=max_new_tokens)
+    if getattr(decision,'retrieval_head',None) is not None:
+        raise ValueError('Retrieval-enabled checkpoints require evidence_bank; do not bypass evidence grounding')
     if decision.training or not 0 < threshold < 1 or max_new_tokens < 1:
         raise ValueError('Use eval mode, 0<threshold<1 and positive token budget')
     if force_status not in {None, 'WAIT', 'ANSWER'}:

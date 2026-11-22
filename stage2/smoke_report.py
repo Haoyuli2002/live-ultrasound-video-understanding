@@ -40,7 +40,7 @@ def check(run):
     inp=json.loads((run/'input_manifest.json').read_text())
     result=dict(status='functional_smoke_passed',training_updates=len(metrics),generated_outputs=len(values),
         architecture='qformer',model_name=cfg['model_name'],frame_size=cfg['frame_size'],
-        init_adapter_sha256=digest(Path(cfg['init_adapter'])/'adapter_model.safetensors'),
+        init_adapter_sha256=digest(Path(cfg['init_adapter'])/'adapter_model.safetensors') if cfg.get('init_adapter') else None,
         code_commit=(run/'code_commit.txt').read_text().strip(),source_sha256=inp['source_sha256'],
         implementation_sha256={name:digest(Path(__file__).parent/name)
                                for name in ['model.py','qformer.py','short_encoding.py','train_overfit_ab.py']},

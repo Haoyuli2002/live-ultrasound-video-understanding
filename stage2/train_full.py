@@ -8,6 +8,7 @@ this same optimizer schedule. This differs from the small overfit diagnostic.
 """
 from __future__ import annotations
 
+from datetime import timedelta
 import argparse
 import json
 import math
@@ -25,6 +26,15 @@ from .qformer import load_memory_model, SECONDWISE_ARCHITECTURE
 from .train_overfit_ab import encode_interval
 from .provenance import digest
 from .dataset_versions import DATASET_VERSIONS, normalize_version, validate_dataset_version
+
+
+def initialization_identity(adapter):
+    return dict(init_adapter=str(Path(adapter).resolve()) if adapter else None,
+                init_adapter_sha256=digest(Path(adapter)/'adapter_model.safetensors') if adapter else None)
+
+
+def save_epoch(memory, output, epoch):
+    memory.save(str(Path(output)/f'epoch-{epoch}'))
 
 
 def tasks_for_video(video_id, blocks):
@@ -106,18 +116,23 @@ def main():
     p.add_argument('--release-manifest',required=True);p.add_argument('--output-dir',required=True)
     p.add_argument('--dataset-version',type=normalize_version,choices=DATASET_VERSIONS,default='visual_only')
     p.add_argument('--architecture',choices=['ordinary','qformer'],required=True)
-    p.add_argument('--init-adapter',required=True)
+    p.add_argument('--init-adapter', help='Optional Stage 1 adapter; omitted means official base initialization')
     p.add_argument('--model-name',default='Qwen/Qwen3.5-2B')
     p.add_argument('--epochs',type=int,default=1);p.add_argument('--learning-rate',type=float,default=1e-4)
-    p.add_argument('--frame-size',type=int,default=224);p.add_argument('--seed',type=int,default=20261104)
+    p.add_argument('--frame-size',type=int,default=256);p.add_argument('--seed',type=int,default=20261104)
+    p.add_argument('--stop-after-epoch',type=int,help='Exit after this epoch while retaining the full resume schedule')
+    p.add_argument('--holdout-ids')
+    p.add_argument('--holdout-every',type=int,default=1000)
     p.add_argument('--save-steps',type=int,default=100);p.add_argument('--resume',action='store_true')
     a=p.parse_args()
-    if min(a.epochs,a.frame_size,a.save_steps)<1 or not math.isfinite(a.learning_rate) or a.learning_rate<=0:
+    if min(a.epochs,a.frame_size,a.save_steps,a.holdout_every)<1 or not math.isfinite(a.learning_rate) or a.learning_rate<=0:
         p.error('Invalid positive training settings')
+    if a.stop_after_epoch is not None and not 1<=a.stop_after_epoch<=a.epochs:
+        p.error('stop-after-epoch must be within the requested training epochs')
     if not torch.cuda.is_available():raise RuntimeError('CUDA GPU required')
     rank=int(os.environ.get('RANK',0));world=int(os.environ.get('WORLD_SIZE',1))
     torch.cuda.set_device(int(os.environ.get('LOCAL_RANK',0)))
-    if world>1:torch.distributed.init_process_group('nccl')
+    if world>1:torch.distributed.init_process_group('nccl',timeout=timedelta(hours=4))
     try:
         run(a,rank,world)
     finally:
@@ -134,8 +149,13 @@ def run(a,rank,world):
     paths=json.loads(Path(a.video_path_map).read_text())
     if set(videos)!=set(release['splits']['train']):raise ValueError('Training videos differ from release')
     if any(v not in paths or not Path(paths[v]).is_file() for v in videos):raise FileNotFoundError('Training video missing')
+    holdout={}
+    if a.holdout_ids:
+        from .holdout import split_videos
+        videos,holdout=split_videos(videos,json.loads(Path(a.holdout_ids).read_text()))
     expected_sources={v['video_id']:v['source_sha256'] for v in release['videos']}
     own={t['video_id'] for t in schedules(videos,world,a.seed,0)[rank]}
+    own.update(sorted(holdout)[rank::world])
     changed=[v for v in own if digest(paths[v])!=expected_sources[v]]
     valid=torch.tensor(int(not changed),device='cuda')
     if world>1:torch.distributed.all_reduce(valid,op=torch.distributed.ReduceOp.MIN)
@@ -144,10 +164,11 @@ def run(a,rank,world):
     output=Path(a.output_dir);output.mkdir(parents=True,exist_ok=True)
     invariant={k:getattr(a,k) for k in ['architecture','dataset_version','model_name','epochs','learning_rate','frame_size','seed']}
     invariant.update(world_size=world,release_sha256=digest(a.release_manifest),
-                     map_sha256=digest(a.video_path_map),init_adapter=str(Path(a.init_adapter).resolve()),
-                     init_adapter_sha256=digest(Path(a.init_adapter)/'adapter_model.safetensors'))
+                     map_sha256=digest(a.video_path_map),**initialization_identity(a.init_adapter))
     if a.architecture == 'qformer':
         invariant['qformer_architecture'] = SECONDWISE_ARCHITECTURE
+    if a.holdout_ids:
+        invariant.update(holdout_ids_sha256=digest(a.holdout_ids),holdout_every=a.holdout_every)
     config=output/'training_config.json'
     latest=output/'checkpoint-latest'
     if a.resume:
@@ -178,6 +199,7 @@ def run(a,rank,world):
                             'resume_invariants':invariant,'update_schedule':'one target per rank per step',
                             'qformer_config':getattr(memory,'qformer_config',None),
                             'historical_memory':'detached recurrent state; no full-prefix weight replay'})
+    torch.cuda.reset_peak_memory_stats()
     epoch=step=global_step=0;previous=None;current_video=None
     metrics=output/f'training_metrics.rank{rank}.jsonl'
     if adapter:
@@ -194,7 +216,7 @@ def run(a,rank,world):
     reader=None
     with metrics.open('a') as stream:
         try:
-            while epoch<a.epochs:
+            while epoch<min(a.epochs,a.stop_after_epoch or a.epochs):
                 assignments=schedules(videos,world,a.seed,epoch);local=assignments[rank]
                 total=max(map(len,assignments))
                 while step<total:
@@ -218,12 +240,24 @@ def run(a,rank,world):
                         stream.write(json.dumps(row)+'\n');stream.flush()
                         if step%10==0:print(json.dumps({k:row[k] for k in ['epoch','global_step','rank','kind','loss']}),flush=True)
                     step+=1;global_step+=1
+                    if global_step%100==0:
+                        from .holdout import record_gpu_memory
+                        record_gpu_memory(output,rank,global_step,'train')
+                    if holdout and global_step%a.holdout_every==0:
+                        optimizer.zero_grad(set_to_none=True)
+                        from .holdout import monitor
+                        monitor(memory,holdout,paths,output,global_step,rank,world,a.frame_size)
                     if global_step%a.save_steps==0:
                         checkpoint(output,memory,optimizer,dict(epoch=epoch,next_step=step,global_step=global_step,
                             previous=None if previous is None else previous.cpu(),current_video=current_video,
                             torch_rng=torch.get_rng_state(),cuda_rng=torch.cuda.get_rng_state(),
                             python_rng=random.getstate(),metrics_bytes=stream.buffer.tell()),rank,world)
                 epoch+=1;step=0;previous=None;current_video=None
+                if rank==0:
+                    save_epoch(memory,output,epoch)
+                if world>1:torch.distributed.barrier()
+                from .holdout import record_gpu_memory
+                record_gpu_memory(output,rank,global_step,'train')
                 if reader:reader.close();reader=None
                 checkpoint(output,memory,optimizer,dict(epoch=epoch,next_step=0,global_step=global_step,
                     previous=None,current_video=None,torch_rng=torch.get_rng_state(),
@@ -231,7 +265,13 @@ def run(a,rank,world):
                     metrics_bytes=stream.buffer.tell()),rank,world)
         finally:
             if reader:reader.close()
+    if holdout:
+        optimizer.zero_grad(set_to_none=True)
+        from .holdout import monitor
+        monitor(memory,holdout,paths,output,global_step,rank,world,a.frame_size)
     if rank==0:
+        atomic_json(output/f'epoch-{epoch}.completed.json',dict(epoch=epoch,global_steps=global_step))
+    if rank==0 and epoch>=a.epochs:
         memory.save(str(output/'final'))
         atomic_json(output/'completed.json',dict(status='completed',epochs=a.epochs,
                     global_steps=global_step,architecture=a.architecture,release_sha256=digest(a.release_manifest)))

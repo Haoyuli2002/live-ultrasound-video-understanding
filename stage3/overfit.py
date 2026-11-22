@@ -181,7 +181,8 @@ def main():
         from .model import load_frozen_memory_model,DecisionModel
         hardware=cuda_info()
         memory=load_frozen_memory_model(args.model_name,stage1_adapter=args.stage1_adapter,stage2_adapter=str(args.stage2_adapter))
-        memory.model.to('cuda').eval()
+        if hasattr(memory,'to'):memory.to('cuda').eval()
+        else:memory.model.to('cuda').eval()
         factory=lambda checkpoint=None:DecisionModel(args.model_name,stage1_adapter=args.stage1_adapter,
             stage2_adapter=str(args.stage2_adapter),decision_adapter=str(checkpoint) if checkpoint else None).to('cuda')
     args.output_dir.mkdir(parents=True)
