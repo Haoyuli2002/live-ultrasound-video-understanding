@@ -246,3 +246,53 @@ pause/resume and narrow-screen layout. Screenshots use existing local Chinese
 fonts; no external network assets are required.
 
 `new-qa.json` is generated locally and is intentionally not versioned. Regenerate it with `python scripts/build_new_qa_demo.py --help` and the corresponding local QA export before opening the QA viewer. Existing local copies are retained during repository cleanup.
+
+
+## QA V4 Explorer — ten holdout examples (2026-11-22)
+
+Open `/viz/qa-examples/` or the new **QA V4 Explorer** link on the existing home page.
+Ten videos contain 286 original English QA: 73 current observations, 73 history
+recalls, 70 notifications and 70 comparisons. The source is the frozen
+`results/stage3_visual_v4_holdout16_20261121` export. Example selection covers
+cardiac, abdominal, vascular, musculoskeletal and lung imagery; it is a
+presentation subset, not a new evaluation split. It retains all QA for each
+selected video and does not modify the source records.
+
+Select a video and QA to seek to Query. Buttons seek to Query or Answer, or play
+Query through Answer and pause there. For immediate tasks, both labels retain
+the same timestamp; the playback button provides three seconds of context on
+each side. Historical evidence thumbnails seek to the earlier evidence times.
+Search, four-type filtering, shareable video/QA URLs and responsive layouts are
+supported. Answers are reference annotations, not live model predictions.
+The displayed WAIT/ANSWER state follows the annotation times. Browser stop timing
+has frame/event scheduling tolerance; stored timestamps remain exact.
+
+```bash
+python3 scripts/build_qa_examples.py
+python3 scripts/serve_qa_examples.py --no-open --port 8767
+# Open http://127.0.0.1:8767/viz/qa-examples/ on the SAME computer.
+```
+
+When running on the remote server, forward port 8767 from that actual connected
+host (currently login-03) in VS Code Remote SSH. A remote loopback URL is not a
+Mac-local service. The existing Range-aware handler is served with threading so
+video reads and UI assets can load concurrently.
+
+For Mac-local use, build a self-contained package (about 412 MB of original videos):
+
+```bash
+python3 scripts/build_qa_examples.py --package /path/to/new/output
+```
+
+The destination must not already contain `Ultrasound-QA-10-Examples/`. Transfer
+`Ultrasound-QA-10-Examples.zip`, unzip on the Mac, and run `python3 serve.py` inside
+the extracted folder (or double-click `Start.command`). Python 3 standard library
+only; no pip/npm dependencies or SSH connection after transfer. Keep the terminal
+open. All ten complete MP4s and cited frames are included; URLs are local to the
+package. QA stays English; Chinese UI topic labels are presentation descriptions.
+
+The self-contained UI includes a Noto Sans SC character subset (`qa-ui.ttf`)
+under the bundled `OFL.txt`; it makes no external font requests.
+The ready-made archive and validation records are in
+`results/qa_demo_10v_20261122/`. Browser checks run on Linux Chromium;
+native macOS execution has not been tested.

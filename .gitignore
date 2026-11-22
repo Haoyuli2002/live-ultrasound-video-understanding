@@ -71,3 +71,6 @@ logs/
 *.pth
 *.pt
 /viz/new-qa.json
+
+# Generated ten-video QA explorer catalog
+/viz/qa-examples/data.json
