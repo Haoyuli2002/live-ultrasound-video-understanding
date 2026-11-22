@@ -1,0 +1,28 @@
+.nqa-section { margin:24px; padding:22px; background:#121d27; border:1px solid #34546b; border-radius:12px; scroll-margin-top:18px; }
+.nqa-section h2 { margin:0; font-size:23px; }.nqa-section a,.nqa-jump a { color:#7dc9ed; }
+.nqa-jump { margin:12px 0; font-size:14px; }.nqa-note { color:#aebdca; font-size:13px; line-height:1.7; }
+.nqa-videos { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; margin:18px 0; }
+.nqa-video-card { display:flex; align-items:center; gap:12px; padding:10px; text-align:left; background:#18232e; color:inherit; border:1px solid #33475a; border-radius:9px; cursor:pointer; min-width:0; }
+.nqa-video-card img { width:100px; height:65px; object-fit:contain; background:#060b10; border-radius:4px; }
+.nqa-video-card>span { display:grid; gap:6px; min-width:0; }.nqa-video-card strong { font-size:14px; line-height:1.4; }
+.nqa-meta { display:block; color:#9ab0c1; font-size:11px; line-height:1.65; overflow-wrap:anywhere; }
+.nqa-video-card[aria-pressed=true],.nqa-task[aria-pressed=true] { border-color:#59c9ef; background:#1b3546; box-shadow:inset 3px 0 #59c9ef; }
+.nqa-filters { display:flex; flex-wrap:wrap; gap:14px; margin-bottom:16px; }
+.nqa-filters label { display:grid; gap:7px; color:#aebdca; font-size:12px; }.nqa-filters label:first-child { flex:1 1 220px; }
+.nqa-filters input,.nqa-filters select { width:100%; margin:0; padding:9px 10px; border:1px solid #3c5266; border-radius:6px; background:#101923; color:#e6edf3; font:inherit; min-height:36px; }
+.nqa-layout { display:grid; grid-template-columns:minmax(240px,330px) minmax(0,1fr); gap:18px; align-items:start; }
+.nqa-tasks { display:grid; gap:7px; max-height:720px; overflow:auto; padding:2px; }.nqa-task { display:grid; gap:6px; width:100%; padding:12px; text-align:left; color:inherit; background:#121b24; border:1px solid #33475a; border-radius:7px; cursor:pointer; font:inherit; font-size:13px; line-height:1.5; }
+.nqa-main { min-width:0; }.nqa-main video { display:block; max-height:390px; width:100%; object-fit:contain; }
+.nqa-detail { padding:18px; border:1px solid #33475a; border-radius:8px; background:#161f29; }
+.nqa-detail .field-label { margin-top:18px; color:#90d6ef; }.nqa-detail .prose { font-size:15px; }
+.nqa-translation { margin:7px 0; color:#b2c5d3; line-height:1.8; font-size:14px; border-left:2px solid #415d73; padding-left:12px; }
+.nqa-actions { display:flex; gap:8px; flex-wrap:wrap; margin:15px 0; }.nqa-actions button { padding:8px 12px; border:1px solid #3d708c; border-radius:6px; background:#193547; color:#b1e5fa; font:inherit; font-size:12px; cursor:pointer; }
+.nqa-decision-row { display:flex; flex-wrap:wrap; gap:12px; align-items:center; font-size:12px; }.nqa-decision-row select { margin:0; }
+.nqa-wait,.nqa-answer { display:inline-block; padding:5px 10px; border-radius:5px; font-size:12px; font-weight:700; }.nqa-wait { background:#4b3c20; color:#ffda8e; }.nqa-answer { background:#204537; color:#a7eacb; }
+.nqa-evidence { margin-top:18px; border-top:1px solid #33475a; padding-top:14px; }.nqa-evidence summary { color:#90d6ef; cursor:pointer; }
+.nqa-evidence-frames { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; margin-top:14px; }.nqa-evidence figure { margin:0; }.nqa-evidence img { width:100%; height:auto; display:block; }.nqa-evidence figcaption { margin-top:6px; font-size:11px; }
+.nqa-links { display:flex; gap:18px; flex-wrap:wrap; margin:18px 0 0; font-size:12px; }
+.nqa-section button:focus-visible,.nqa-section a:focus-visible,.nqa-section input:focus-visible { outline:2px solid #ffb020; outline-offset:3px; }
+@media(min-width:1600px) { .nqa-section { max-width:1492px; margin-left:auto; margin-right:auto; } }
+@media(max-width:1000px) { .nqa-video-card { flex-direction:column; align-items:flex-start; }.nqa-video-card img { width:100%; height:90px; }.nqa-layout { grid-template-columns:260px minmax(0,1fr); } }
+@media(max-width:700px) { .nqa-section { margin:16px; padding:14px; }.nqa-videos { grid-template-columns:1fr; }.nqa-video-card { flex-direction:row; align-items:center; }.nqa-video-card img { width:80px; height:55px; }.nqa-layout { grid-template-columns:1fr; }.nqa-tasks { max-height:240px; }.nqa-filters label { flex:1 1 130px; }.nqa-detail { padding:12px; }.nqa-evidence-frames { grid-template-columns:1fr; } }

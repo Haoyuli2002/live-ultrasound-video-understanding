@@ -137,3 +137,112 @@ When adding or revising source records, update this dictionary as well; unknown
 strings fall back to their original text, never automatic machine translation.
 The dictionary is independent of catalog generation and must be shipped with
 `index.html`, `app.js`, `style.css` and `i18n.js`. No translation API is used.
+
+
+## New QA section (2026-11-19)
+
+The **New QA / 新版本 QA** section near the top of the existing page independently
+loads `viz/new-qa.json`: three training videos, 72 English QA tasks with Chinese
+reading translations, and 94 recorded WAIT/ANSWER decisions. It supports video
+selection, bilingual search, question/evidence filters, query/answer seeking,
+recorded decision selection, and original evidence frames. English remains visible
+in Chinese mode. Language switching preserves playback, selection and disclosure.
+The `nqa_task` URL parameter bookmarks a task; `#new-version-qa` jumps to the section.
+
+It works even when the older `catalog.json` / `video_library.json` are unavailable.
+The other sections keep their existing sources and missing-data behavior. This
+section displays sampled-frame self-reviewed annotations, without expert review
+or live inference. Its player is an unrestricted review tool, not a causal model
+input player; reference answers and evidence can include later frames.
+
+Build and serve this section without rebuilding the older catalogs:
+
+```bash
+python3 scripts/build_new_qa_demo.py
+python3 scripts/viz_serve.py --directory . --port 8000
+# http://localhost:8000/viz/index.html?lang=zh#new-version-qa
+```
+
+The builder reads the canonical tasks, decisions, bilingual companion and media
+manifest from `results/stage3_visual_dense_3v_v2_20261119/`. It checks exact English
+alignment, translation source hashes, decision labels, video identity and evidence
+hashes. It writes browser-relative URLs using the existing `cluster_data` link;
+no video copies or training-file changes are made. When moving to another machine,
+transfer that results directory and make the source videos available under
+`cluster_data/videos/train_full295/`, then rebuild. The generated JSON includes
+source hashes. For remote viewing, forward the serving host's localhost port over
+SSH as for the existing demo.
+
+
+## macOS offline new-QA package
+
+Build a self-contained local viewer with all three original MP4s and the 92 cited
+frames (about 121 MB ZIP):
+
+```bash
+python3 scripts/package_new_qa_demo.py
+```
+
+The output is `results/local_qa_demo_20261119/Ultrasound-QA-Demo.zip`. It contains
+only the new-QA section, 72 bilingual QA tasks and 94 recorded decisions; it does
+not need the legacy demo catalogs. URLs are relative to the extracted folder.
+Canonical English training files are copied byte-for-byte. The builder refuses
+to overwrite an existing package directory; use `--output` for a new destination.
+
+On the Mac, copy the ZIP once, extract it, and double-click `Start.command`.
+Python 3 is required; no pip/npm packages are needed. The local server opens the
+browser automatically on `127.0.0.1:8765`, or an available port if occupied. Keep
+that local terminal open while viewing; Ctrl+C stops it. SSH is not needed after
+transfer. To launch manually, run `python3 serve.py` inside the extracted folder.
+
+The current download alias is `/tmp/ultrasound-qa-macos.zip` on
+`login-02.ai.lrz.de`. Run this on the Mac (not inside the remote SSH session):
+
+```bash
+scp ge75vid2@login-02.ai.lrz.de:/tmp/ultrasound-qa-macos.zip ~/Downloads/
+```
+
+The durable ZIP remains in the results directory if the temporary alias is
+cleaned. Validation artifacts are in `results/local_qa_demo_20261119/`:
+`offline_validation.json`, `offline_desktop.png`, and `check_offline_package.py`.
+The ZIP was independently extracted to a path with spaces and all 72 QA were
+checked in Chromium with external requests blocked. All three local video seeks,
+HTTP Range responses, translations, filters and evidence images passed. Actual
+macOS execution has not been verified from this remote Linux session.
+
+## Live StreamReady training monitor
+
+A separate read-only dashboard shows scheduler state, BS64/96 probes, optimizer
+updates, answer CE, readiness BCE, generated-answer evaluation, GPU utilization,
+device VRAM GiB/percentage, and PyTorch allocated/reserved memory. It reads shared
+files from the GPU node; no model or GPU is loaded by the dashboard. GPU sampling
+is every 200 ms, the page refreshes every 5 seconds, and scheduler queries are
+cached for 30 seconds. Completed runs retain their history. Recent utilization
+windows may include initialization, checkpoint writes or evaluation; they are
+not labeled pure training utilization. `nvidia-smi` utilization is not FLOPS.
+
+Server on `login-02.ai.lrz.de`, loopback port `8766`. In VS Code Remote SSH,
+forward port 8766 and open `http://localhost:8766`. Alternatively on your laptop:
+
+```bash
+ssh -N -L 8766:127.0.0.1:8766 ge75vid2@login-02.ai.lrz.de
+```
+
+The server metadata, logs, run registry, browser-validation report and screenshots
+are under `/dss/mcmlscratch/04/ge75vid2/tmp/streamready_dashboard/`. To restart on
+that same login node if its process exits:
+
+```bash
+python3 -B -m endtoend.dashboard \
+  --runs /dss/mcmlscratch/04/ge75vid2/tmp/streamready_dashboard/runs.json \
+  --port 8766
+```
+
+The registry explicitly lists readable experiments; HTTP requests cannot provide
+arbitrary filesystem paths. The server binds only to 127.0.0.1 and does not start,
+stop or alter training jobs. Browser checks cover missing/partial logs, unknown
+run rejection, actual running state, completed metrics, charts, run switching,
+pause/resume and narrow-screen layout. Screenshots use existing local Chinese
+fonts; no external network assets are required.
+
+`new-qa.json` is generated locally and is intentionally not versioned. Regenerate it with `python scripts/build_new_qa_demo.py --help` and the corresponding local QA export before opening the QA viewer. Existing local copies are retained during repository cleanup.

@@ -1,10 +1,35 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ultrasound · Stage 数据浏览器</title><link rel="stylesheet" href="style.css?v=library-20261110"><link rel="stylesheet" href="onestreamer-examples.css?v=20261109"></head>
+<title>Ultrasound · Stage 数据浏览器</title><link rel="stylesheet" href="style.css?v=library-20261110"><link rel="stylesheet" href="onestreamer-examples.css?v=20261109"><link rel="stylesheet" href="new-qa.css?v=20261119"></head>
 <body>
-<header><label class="language-control"><span data-i18n="语言">Language</span><select id="language-select" aria-label="Language / 语言"><option value="en">English</option><option value="zh">中文</option></select></label><p class="eyebrow" data-i18n="ULTRASOUND · DATA EXPLORER">ULTRASOUND · DATA EXPLORER</p><h1 data-i18n="同一视频，不同阶段的训练样本">同一视频，不同阶段的训练样本</h1><p class="sub" data-i18n="对照原视频，查看实际输入、监督目标与数据来源。">对照原视频，查看实际输入、监督目标与数据来源。</p><p class="os-jump"><a href="#onestreamer-examples">OneStreamer Open Source Dataset examples ↓</a></p></header>
+<header><label class="language-control"><span data-i18n="语言">Language</span><select id="language-select" aria-label="Language / 语言"><option value="en">English</option><option value="zh">中文</option></select></label><p class="eyebrow" data-i18n="ULTRASOUND · DATA EXPLORER">ULTRASOUND · DATA EXPLORER</p><h1 data-i18n="同一视频，不同阶段的训练样本">同一视频，不同阶段的训练样本</h1><p class="sub" data-i18n="对照原视频，查看实际输入、监督目标与数据来源。">对照原视频，查看实际输入、监督目标与数据来源。</p><p class="os-jump"><a href="#onestreamer-examples">OneStreamer Open Source Dataset examples ↓</a></p><p class="nqa-jump"><a id="nqa-jump" href="#new-version-qa">新版本 QA ↓</a></p></header>
 <nav class="view-tabs" aria-label="Demo views"><button type="button" id="tab-stages" class="view-tab active" aria-selected="true" data-i18n="训练样本">训练样本</button><button type="button" id="tab-library" class="view-tab" aria-selected="false" data-i18n="全部视频与评级">全部视频与评级</button></nav>
+<section id="new-version-qa" class="nqa-section" aria-labelledby="nqa-heading">
+<div class="presentation-heading"><div><p class="eyebrow">STAGE 3 · QA V2 · 2026-11-19</p><h2 id="nqa-heading" data-nqa-zh="新版本 QA" data-nqa-en="New QA">新版本 QA</h2><p id="nqa-stats" class="sub"></p></div><span class="review-badge" data-nqa-zh="英文训练原文 · 中文阅读译文" data-nqa-en="English training source · Chinese translations">英文训练原文 · 中文阅读译文</span></div>
+<p class="nqa-note" data-nqa-zh="三个训练视频的 72 条问答。按抽帧画面生成并自审，尚未经过专家复核；触发时刻按一秒采样核对。这里展示参考标注，不运行模型推理。" data-nqa-en="72 QA from three training videos. Authored and self-reviewed from sampled frames, without expert review; trigger times checked at one-second intervals. Reference annotations, not live model predictions."></p>
+<p id="nqa-loading" role="status" data-nqa-zh="正在加载新版本 QA…" data-nqa-en="Loading new QA…">正在加载新版本 QA…</p>
+<div id="nqa-browser" hidden>
+<div id="nqa-videos" class="nqa-videos" role="group" aria-label="QA videos"></div>
+<div class="nqa-filters">
+<label><span data-nqa-zh="搜索问答" data-nqa-en="Search QA">搜索问答</span><input id="nqa-search" type="search" autocomplete="off"></label>
+<label><span data-nqa-zh="问题类型" data-nqa-en="Question type">问题类型</span><select id="nqa-type"></select></label>
+<label><span data-nqa-zh="证据类型" data-nqa-en="Evidence type">证据类型</span><select id="nqa-subset"><option value="" data-nqa-zh="全部证据" data-nqa-en="All evidence">全部证据</option><option value="visual_core" data-nqa-zh="画面为主" data-nqa-en="Primarily visual">画面为主</option><option value="overlay_assisted" data-nqa-zh="文字 / 标注辅助" data-nqa-en="Text / overlay assisted">文字 / 标注辅助</option></select></label>
+</div>
+<div class="nqa-layout">
+<aside><p id="nqa-count" class="nqa-meta" role="status"></p><div id="nqa-tasks" class="nqa-tasks"></div></aside>
+<div class="nqa-main"><video id="nqa-video" controls playsinline preload="metadata"></video><p id="nqa-clock" class="nqa-meta"></p>
+<article id="nqa-detail" class="nqa-detail">
+<p id="nqa-task-id" class="nqa-meta"></p><p id="nqa-source-kind" class="nqa-meta"></p>
+<p class="field-label" data-nqa-zh="问题 · 英文原文" data-nqa-en="QUESTION · ENGLISH SOURCE"></p><p id="nqa-question-en" class="prose" lang="en"></p><p id="nqa-question-zh" class="nqa-translation" lang="zh-CN"></p>
+<p class="field-label" data-nqa-zh="参考答案 · 英文原文" data-nqa-en="REFERENCE ANSWER · ENGLISH SOURCE"></p><p id="nqa-answer-en" class="prose" lang="en"></p><p id="nqa-answer-zh" class="nqa-translation" lang="zh-CN"></p>
+<div class="nqa-actions"><button id="nqa-query" type="button"></button><button id="nqa-answer-time" type="button"></button></div>
+<div class="nqa-decision-row"><label for="nqa-decisions" data-nqa-zh="标注决策" data-nqa-en="Recorded decision"></label><select id="nqa-decisions"></select><span id="nqa-decision-status"></span></div><p id="nqa-prefix" class="nqa-meta"></p>
+<details id="nqa-evidence" class="nqa-evidence"><summary data-nqa-zh="查看证据帧（点击打开原图）" data-nqa-en="Evidence frames (click for original)"></summary><div id="nqa-evidence-frames" class="nqa-evidence-frames"></div></details>
+</article></div></div>
+<div class="nqa-links"><a id="nqa-review-link" target="_blank" rel="noopener" data-nqa-zh="完整中英对照文档" data-nqa-en="Full bilingual review"></a><a id="nqa-training-link" target="_blank" rel="noopener" data-nqa-zh="英文训练数据 JSONL" data-nqa-en="English training JSONL"></a></div>
+</div></section>
+
 <section id="presentation" class="presentation stage-view" hidden>
 <div class="presentation-heading"><div><p class="eyebrow" data-i18n="STAGE 2 · REVIEWED EXAMPLES">STAGE 2 · REVIEWED EXAMPLES</p><h2 id="presentation-title"></h2><p id="presentation-note" class="sub"></p></div><span class="review-badge" data-i18n="英文监督标注 · 非模型输出">英文监督标注 · 非模型输出</span></div>
 <div id="featured-videos" class="featured-videos"></div></section>
@@ -38,4 +63,4 @@
 </section>
 <footer data-i18n="展示数据样本，不执行模型推理。视频中的音频不代表 Stage 2 模型输入包含音频。">展示数据样本，不执行模型推理。视频中的音频不代表 Stage 2 模型输入包含音频。</footer>
 <script src="i18n.js?v=bilingual-20261105b"></script>
-<script src="app.js?v=bilingual-20261105b"></script><script src="onestreamer-examples.js?v=20261109b"></script><script src="video-library.js?v=20261110"></script></body></html>
+<script src="app.js?v=bilingual-20261105b"></script><script src="onestreamer-examples.js?v=20261109b"></script><script src="video-library.js?v=20261110"></script><script src="new-qa.js?v=20261119"></script></body></html>
