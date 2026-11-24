@@ -1,0 +1,42 @@
+{
+  "tested_at_utc": "2026-11-24T15:31:25.948647+00:00",
+  "environment": "Linux Chromium; desktop and 390px viewport; native macOS/Windows not tested",
+  "browser": {
+    "videos": 10,
+    "qa": 286,
+    "errors": [],
+    "range_checks": 10,
+    "playback_checks": 10,
+    "long_interval_seconds": 71,
+    "passed": true
+  },
+  "files": {
+    "videos": 10,
+    "evidence_images": 151,
+    "qa": 286,
+    "media_and_evidence_match_frozen_package": true,
+    "no_server_symlinks": true,
+    "relative_urls_exist": true,
+    "missing_media_preflight": "passed",
+    "lfs_pointer_preflight": "passed",
+    "media_bytes": 411531324
+  },
+  "artifact": {
+    "qa": 286,
+    "decisions": 618,
+    "evidence": 356,
+    "videos_playable": 10,
+    "unknown_filename_rejected": true,
+    "missing_video_controls_disabled": true,
+    "delayed_interval_autopause": true,
+    "instant_context_autopause": true,
+    "switch_cancels_previous_playback": true,
+    "widths": [
+      820,
+      390,
+      320
+    ],
+    "javascript_errors": [],
+    "external_requests": []
+  }
+}

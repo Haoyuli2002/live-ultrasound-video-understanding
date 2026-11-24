@@ -74,3 +74,6 @@ logs/
 
 # Generated ten-video QA explorer catalog
 /viz/qa-examples/data.json
+
+# The ten selected demo videos are distributed through Git LFS.
+!/demo/ultrasound-qa/media/*.mp4

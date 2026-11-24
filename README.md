@@ -4,6 +4,8 @@
 
 当前主仓库、数据版本和训练入口见 [Workspace](docs/WORKSPACE.md)。
 
+**10 视频数据 demo**：见 [本地启动说明](demo/ultrasound-qa/README.md)。安装 Git LFS 并拉取后，运行 `python3 demo/ultrasound-qa/serve.py`，浏览器自动打开；包含 286 条 QA、完整视频与证据帧，无模型或 GPU 依赖。
+
 [English](README.md) | [简体中文](README_zh.md)
 
 A research project on **streaming evidence sufficiency for ultrasound video question answering**: continuously observe a video, wait while visual evidence is insufficient, and answer when sufficient evidence becomes available.
