@@ -1,15 +1,9 @@
-<!doctype html><html lang="zh"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>v3 训练监控</title>
-<style>body{max-width:980px;margin:6vh auto;padding:0 20px;font:16px/1.6 Inter,system-ui,sans-serif;color:#163237;background:#f5f8f7}h1{margin-bottom:0}main{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}article{background:white;border:1px solid #cadad7;border-radius:10px;padding:20px}h2{margin:0}a{color:#006c72}small{color:#536c6d}canvas{width:100%;height:96px}p{margin:10px 0}</style>
-<h1>v3 训练监控</h1><p>28 + 2 帧 · 10 视频 overfit · 每 10 秒刷新</p><main></main><small id="status"></small>
-<script>
-const main=document.querySelector('main');
-async function update(k,id){
- const lines=await Promise.all(['training.log','gpu.csv'].map(async n=>{const r=await fetch(k+'_'+n,{cache:'no-store'});if(!r.ok)throw Error(r.status);return (await r.text()).trim().split('\n')}));
- const metrics=lines[0].flatMap(s=>{try{return [JSON.parse(s)]}catch{return []}}),epochs=metrics.filter(x=>Number.isFinite(x.train_loss)),e=epochs.at(-1),done=metrics.some(x=>x.first_answer);
- const samples=lines[1].slice(1).map(s=>s.split(',')).filter(r=>r.length===5&&r[4].trim()!==''&&Number.isFinite(Number(r[4]))),g=samples.at(-1);
- let a=document.getElementById(k);if(!a){a=document.createElement('article');a.id=k;main.append(a)}
- a.innerHTML='<h2>'+k.toUpperCase()+' <small>· '+id+'</small></h2><p>'+(done?'回放完成':e?'已完成 '+e.epoch+' / 20 轮':'等待首轮指标')+'</p><p>训练 NTP loss　'+(e?e.train_loss.toFixed(4):'—')+'</p><canvas width="480" height="96" aria-label="各轮训练 loss"></canvas><p>GPU 利用率　'+(g?Number(g[4])+'%':'—')+'<br>显存　'+(g?(g[2]/1024).toFixed(1)+' / '+(g[3]/1024).toFixed(0)+' GiB':'—')+'</p><small>GPU 采样 '+(g?g[0]:'—')+'</small><p><a href="'+k+'_training.log">训练日志</a> · <a href="'+k+'_gpu.csv">GPU CSV</a></p>';
- const ctx=a.querySelector('canvas').getContext('2d'),mx=Math.max(...epochs.map(x=>x.train_loss),0.01);ctx.strokeStyle='#007a78';ctx.lineWidth=3;ctx.beginPath();epochs.forEach((x,i)=>{let px=4+i*470/19,py=90-80*x.train_loss/mx;if(i)ctx.lineTo(px,py);else ctx.moveTo(px,py)});ctx.stroke()
-}
-async function refresh(){try{await update('bs4',5963020);await update('bs8',5963195);document.querySelector('#status').textContent=(await (await fetch('sync.txt',{cache:'no-store'})).text())+' · 页面刷新 '+new Date().toLocaleTimeString()}catch(e){document.querySelector('#status').textContent='读取失败 '+e.message}setTimeout(refresh,10000)}refresh();
-</script></html>
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>v3 训练监控</title><link rel="stylesheet" href="monitor.css"><script defer src="monitor.js"></script></head>
+<body><main><header><div><div class="project">流式超声问答 / Event Retrieval v3</div><h1>训练监控</h1><p>28 + 2 帧窗口　·　10 视频 overfit　·　纯 NTP</p></div><div class="sync"><b id="status">正在读取数据</b><small id="refresh">每 10 秒刷新</small></div></header>
+<section class="runs" id="runs" aria-label="训练作业"></section>
+<section class="panel"><div class="heading"><h2>训练损失</h2><label>纵轴 <select id="scale"><option value="linear">线性</option><option value="log">对数</option></select></label></div><div class="legend"><i></i> BS4 <i></i> BS8</div><canvas id="loss" aria-label="按训练轮数比较 NTP 损失"></canvas></section>
+<div class="twocol"><section class="panel"><h2>GPU 利用率</h2><div class="legend"><i></i> BS4 <i></i> BS8</div><canvas id="gpu" aria-label="按运行分钟显示 GPU 利用率"></canvas></section>
+<section class="panel"><h2>显存占用</h2><div class="legend"><i></i> BS4 <i></i> BS8</div><canvas id="mem" aria-label="按运行分钟显示显存占用"></canvas></section></div>
+<footer>GPU 时间从各作业首条采样起算。利用率按 30 秒取均值，显存按 30 秒取峰值。</footer></main></body></html>

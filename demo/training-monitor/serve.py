@@ -40,7 +40,8 @@ def main():
         folder = Path(tmp)
         for name in FILES:
             shutil.copy2(ROOT / "snapshot" / name, folder / name)
-        shutil.copy2(ROOT / "index.html", folder / "index.html")
+        for asset in ("index.html", "monitor.css", "monitor.js"):
+            shutil.copy2(ROOT / asset, folder / asset)
         (folder / "sync.txt").write_text("本地快照" if args.offline else "显示本地快照，正在连接服务器", encoding="utf-8")
         handler = functools.partial(SimpleHTTPRequestHandler, directory=str(folder))
         with ThreadingHTTPServer(("127.0.0.1", args.port), handler) as server:

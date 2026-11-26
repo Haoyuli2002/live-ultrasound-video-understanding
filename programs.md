@@ -449,3 +449,7 @@ Per the user's instruction on 2026-11-17, update this file for **every model tra
 ## Local v3 training monitor
 
 Added a local web monitor and portable snapshots for jobs 5963020 and 5963195. The Python launcher serves on loopback, opens the browser and refreshes four telemetry files over SSH/rsync. Verified HTTP access to the page and all telemetry files, and tested the rsync include list against the live monitor directory. End-to-end Mac SSH authentication depends on the local SSH configuration and was not tested here.
+
+## V3 monitor axes and telemetry comparison
+
+Added labeled epoch/loss and elapsed-minute GPU utilization/VRAM charts, shared run scales and optional log loss scale for jobs 5963020 and 5963195. Verified offline asset serving and Chromium desktop/mobile rendering with live telemetry and both loss axis scales.
