@@ -1,5 +1,9 @@
 # Project progress and experiment log
 
+## 2026-11-26 — Handle cancelled QA demo video requests
+
+The local review server now closes cancelled browser transfers quietly during playback and seeking. Updated the shared handler, bundled copy and checksum. Verified six interrupted MP4 transfers followed by two byte-exact range reads and a successful QA v3 data request on loopback. The complete demo checksum manifest passed.
+
 ## 2026-11-26 — Publish the QA v3 review demo for local playback
 
 The ten-video explorer includes 97 QA v3 questions and 246 fixed-endpoint decisions from the epoch-20 unweighted event-retrieval overfit (job 5959357). The local package and standalone preview expose GT, autonomous actions, forced answers, evidence intervals and navigation to the seven text mismatches. The event segmentation view uses the existing ten source videos. Source run: overfit_qa_v3_10v_SprOW4No. The stored predictions predate the K-weighted streaming run 5959690. Validation before publication: the full package checksum manifest passed, the QA catalog counts matched, the QA v3 route and payload returned HTTP 200 and all ten MP4 range requests returned HTTP 206. The included VALIDATION.json records the prior Chromium interaction checks.

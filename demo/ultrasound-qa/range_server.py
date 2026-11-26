@@ -30,6 +30,13 @@ _RANGE_RE = re.compile(r"bytes=(\d*)-(\d*)")
 class RangeRequestHandler(SimpleHTTPRequestHandler):
     """SimpleHTTPRequestHandler that honours a single HTTP Range request."""
 
+    def handle(self):
+        try:
+            super().handle()
+        except (BrokenPipeError, ConnectionResetError):
+            # Players cancel in-flight requests when seeking or switching videos.
+            self.close_connection = True
+
     def send_head(self):  # noqa: C901 - mirrors the stdlib shape intentionally
         range_header = self.headers.get("Range")
         if range_header is None:
