@@ -445,3 +445,7 @@ Per the user's instruction on 2026-11-17, update this file for **every model tra
 - Local entry: `python3 demo/ultrasound-qa/serve.py`, standard-library Range-aware threaded HTTP server, browser auto-open. Startup diagnoses missing/LFS-pointer media and prints a narrowly scoped `git lfs pull` command. `artifact.html` additionally supports direct file opening and optional browser-local MP4 selection.
 - Validation: all 10 videos/286 QA, 10 Range responses and interval playback checks passed in Chromium; 71-second waiting interval, instant context, evidence seeks, search/type filters, bookmarks, rapid switching and 390px layout passed, zero JS errors. All 151 evidence images and 10 videos match frozen source bytes; no server symlinks, every relative media/evidence URL resolves. Missing media and LFS-pointer preflight checks passed. Detailed reports in `demo/ultrasound-qa/VALIDATION.json` and file hashes in `SHA256SUMS`; native macOS/Windows not tested.
 - Commit preparation complete; Git/LFS push and fresh remote clone verification follow. Existing unrelated working changes are retained outside this commit.
+
+## Local v3 training monitor
+
+Added a local web monitor and portable snapshots for jobs 5963020 and 5963195. The Python launcher serves on loopback, opens the browser and refreshes four telemetry files over SSH/rsync. Verified HTTP access to the page and all telemetry files, and tested the rsync include list against the live monitor directory. End-to-end Mac SSH authentication depends on the local SSH configuration and was not tested here.

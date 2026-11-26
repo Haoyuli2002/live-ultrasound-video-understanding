@@ -1,0 +1,5 @@
+{"epoch": 1, "train_endpoints": 246, "optimizer_steps": 31, "train_loss": 2.460774224314899}
+{"epoch": 2, "train_endpoints": 246, "optimizer_steps": 62, "train_loss": 0.928382067421844}
+{"epoch": 3, "train_endpoints": 246, "optimizer_steps": 93, "train_loss": 0.4171675397890285}
+{"epoch": 4, "train_endpoints": 246, "optimizer_steps": 124, "train_loss": 0.23687575068170014}
+{"epoch": 5, "train_endpoints": 246, "optimizer_steps": 155, "train_loss": 0.15888867757515707}
