@@ -1,6 +1,6 @@
-# 超声视频 QA demo：10 视频、286 条 QA
+# 超声视频 QA demo · 10 个视频
 
-此目录自带 10 个完整视频、151 张证据帧、286 条英文 QA 和展示页面。只需 Git LFS、Python 3 和浏览器，不需要模型权重、GPU 或 pip/npm 依赖。视频通过 Git LFS 分发；其他页面、标签和证据图直接包含在 Git 中。
+此目录自带 10 个完整视频、151 张证据帧、原版 286 道英文 QA 与新版 97 道 QA 和展示页面。只需 Git LFS、Python 3 和浏览器，不需要模型权重、GPU 或 pip/npm 依赖。视频通过 Git LFS 分发；其他页面、标签和证据图直接包含在 Git 中。
 
 ## 首次 clone
 
@@ -29,8 +29,15 @@ python3 demo/ultrasound-qa/serve.py
 
 请使用 Git clone/pull 与 Git LFS 获取视频；网页上的源码 ZIP 不保证包含实际 LFS 媒体。下载完成后，播放无需联网。不要直接双击主页面 `index.html`，它需要附带的本地服务读取标签并支持视频跳转。
 
-## 展示与数据来源
+## 新版 QA 与第 20 轮模型输出
 
+打开 `http://127.0.0.1:8767/?section=qa-v3`。此栏目展示 QA v3 的 97 道题、提问时的标注理由、触发条件和可回看的证据时间窗。第 20 轮模型在同一批视频上做过 overfit。可按固定标注时刻查看自主生成的 WAIT/ANSWER 和正文，并在有答案的 96 道题上查看强制生成答案。下拉列表可直接定位 7 道强制答案与参考答案文本不同的题。唯一无回答时刻的题显示已审核的观察区间。
+
+数据快照为 `qa-v3.json`，来源是 `qa_v3_holdout10` 与 `overfit_qa_v3_10v_SprOW4No/fit/overfit_predictions.jsonl`。
+
+## 原版 QA 与视频切分
+
+- 从顶部进入独立的「视频片段切分」栏目，可浏览全部 10 个视频按 Qwen3.5 视觉特征切出的区间，点击缩略图后播放到段末自动暂停。
 - 视频和 QA 切换、四种问题类型筛选、搜索、当前 QA 链接。
 - 跳到 Query、Answer 或证据时刻；播放 Query–Answer 区间并在 Answer 暂停。
 - 即时 QA 的 Query 与 Answer 相同，播放时展示前后各 3 秒上下文，原始标注时间不变。

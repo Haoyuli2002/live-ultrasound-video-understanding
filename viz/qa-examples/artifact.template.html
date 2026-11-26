@@ -1,0 +1,263 @@
+<div id="ultrasound-qa-artifact">
+  <div class="qa-stack">
+    <nav class="viz-row" aria-label="Demo 栏目">
+      <button type="button" class="btn" data-field="qa-nav" aria-pressed="true">QA 浏览</button>
+      <button type="button" class="btn" data-field="v3-nav" aria-pressed="false">新版 QA · 第 20 轮</button>
+      <button type="button" class="btn" data-field="segments-nav" aria-pressed="false">视频片段切分</button>
+    </nav>
+    <div data-qa-only data-field="counts" class="text-small text-muted">10 视频 · 286 QA · holdout · 参考标注</div>
+    <label class="form-label">视频<select class="form-select" data-field="video"></select></label>
+    <label data-qa-only class="form-label">QA<select class="form-select" data-field="task"></select></label>
+    <div data-qa-only class="viz-row"><span class="viz-badge" data-field="type"></span><span class="text-small tabular-nums" data-field="times"></span></div>
+    <div class="qa-stack">
+      <label class="form-label">本机视频（可多选离线包中的 MP4）<input class="form-control" data-field="files" type="file" accept=".mp4,video/mp4" multiple /></label>
+      <div class="text-small text-muted" data-field="media-status" aria-live="polite"></div>
+      <div class="text-small text-destructive" data-field="media-error" role="alert" hidden></div>
+      <video data-field="player" controls playsinline preload="metadata" aria-label="所选 QA 的原视频" hidden></video>
+      <div data-qa-only class="viz-row">
+        <button class="btn" type="button" data-field="go-query" disabled>跳到 Query</button>
+        <button class="btn btn-primary" type="button" data-field="play-window" disabled>播放 Query–Answer</button>
+        <button class="btn" type="button" data-field="go-answer" disabled>跳到 Answer</button>
+      </div>
+      <div class="text-small tabular-nums" data-field="playback"></div>
+
+    </div>
+          <section data-field="clip-section" hidden><h3>视频片段切分</h3>
+        <p>Qwen3.5 按画面变化切分。关联本机视频后可播放片段。</p>
+        <div class="clip-grid" data-field="clips"></div>
+      </section>
+    <div data-qa-only class="qa-stack" aria-live="polite">
+      <div><h3>Question</h3><p data-field="question"></p></div>
+      <div><h3>Reference answer</h3><p data-field="answer"></p></div>
+    </div>
+    <div data-qa-only class="qa-stack">
+      <h3>采样时刻的监督标签</h3>
+      <div class="viz-row" data-field="decisions"></div>
+      <div class="text-small tabular-nums" data-field="selected-decision" aria-live="polite"></div>
+    </div>
+    <section data-field="model" data-qa-only hidden>
+      <h3>标注与第 20 轮模型输出</h3><p data-field="why"></p><p data-field="trigger"></p>
+      <p data-field="generation"></p><p data-field="forced"></p>
+      <label class="form-label">强制答案与 GT 文本不同的题<select data-field="diff" class="form-select"></select></label>
+    </section>
+    <div data-qa-only class="qa-stack">
+      <h3 data-field="evidence-heading">证据帧</h3>
+      <div class="viz-row" data-field="evidence-controls"></div>
+      <figure class="qa-figure">
+        <img data-field="image" alt="" />
+        <figcaption class="text-small tabular-nums" data-field="caption"></figcaption>
+      </figure>
+    </div>
+    <div data-qa-only class="text-small text-muted" data-field="provenance"></div>
+  </div>
+</div>
+<style>
+#ultrasound-qa-artifact .qa-stack{display:flex;flex-direction:column;gap:calc(var(--font-size-base)*.75);min-width:0}
+#ultrasound-qa-artifact p{overflow-wrap:anywhere}
+#ultrasound-qa-artifact .qa-figure{margin:0;display:flex;flex-direction:column;gap:calc(var(--font-size-base)*.5)}
+#ultrasound-qa-artifact .qa-figure img{display:block;width:100%;max-width:520px;height:auto;object-fit:contain}
+#ultrasound-qa-artifact select{max-width:100%;min-width:0}
+#ultrasound-qa-artifact video{width:100%;max-width:640px;height:auto}
+.clip-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:6px}
+.clip-grid button{display:grid;padding:5px;gap:3px;text-align:left;font:inherit;cursor:pointer}
+.clip-grid img{width:100%;aspect-ratio:16/9;object-fit:contain;background:black}
+#ultrasound-qa-artifact[data-section="segments"] [data-qa-only]{display:none}
+#ultrasound-qa-artifact nav [aria-pressed="true"]{font-weight:700;text-decoration:underline}
+</style>
+<script type="application/json" id="ultrasound-qa-data">__QA_DATA__</script>
+<script>
+(() => {
+  const root=document.getElementById('ultrasound-qa-artifact');
+  const data=JSON.parse(document.getElementById('ultrasound-qa-data').textContent);
+  const el=name=>root.querySelector('[data-field="'+name+'"]');
+  const names={current_observation:'当前观察',history_recall:'历史回忆',event_notification:'事件通知',temporal_comparison:'时序比较'};
+  let video=data.videos[0], task, evidenceIndex=0, decisionIndex=0;
+  let segments=false, v3=false;
+  const tasksOf=v=>v3?data.qa_v3.videos[v.id]:v.tasks;
+  const time=s=>Math.floor(s/60)+':'+String(Math.floor(s%60)).padStart(2,'0');
+  const player=el('player'), localVideos=new Map();
+  let mediaUrl=null, loadedFile=null, pendingTime=null, stopAt=null, revision=0, animation=null;
+  const option=(value,label)=>{const o=document.createElement('option');o.value=value;o.textContent=label;return o;};
+  const button=(label,selected,fn)=>{const b=document.createElement('button');b.type='button';b.className='btn';b.textContent=label;b.setAttribute('aria-pressed',String(selected));b.onclick=fn;return b;};
+  function save(){
+    if(window.openai?.setWidgetState) window.openai.setWidgetState({modelContent:{video_id:video.id,task_id:task.task_id,question:task.question},privateContent:{evidenceIndex,decisionIndex,segments,v3}}).catch(()=>{});
+  }
+  function stop(){
+    revision++;stopAt=null;pendingTime=null;player.pause();
+    if(animation!==null){cancelAnimationFrame(animation);animation=null;}
+  }
+  function controls(enabled){
+    for(const clip of el('clips').children) clip.disabled=!enabled;
+    for(const name of ['go-query','go-answer','play-window']) el(name).disabled=!enabled || (name==='go-answer' && task?.answer_time==null);
+  }
+  function tick(){
+    if(stopAt!==null&&!player.seeking&&player.currentTime>=stopAt){
+      const end=stopAt;stopAt=null;player.pause();player.currentTime=end;
+    }
+    if(mediaUrl) el('playback').textContent='播放位置 '+time(player.currentTime)+' / '+time(player.duration||video.duration);
+  }
+  function seek(seconds){
+    stop();
+    if(!mediaUrl)return;
+    pendingTime=seconds;
+    if(player.readyState>=1){player.currentTime=Math.max(0,Math.min(seconds,player.duration));pendingTime=null;tick();}
+  }
+  function bindVideo(){
+    const file=localVideos.get(video.id);
+    el('media-status').textContent='已关联 '+localVideos.size+' / '+data.videos.length+' 个视频 · '+(file?file.name+' · 仅在本机读取':'待选择 '+video.id+'.mp4');
+    if(file===loadedFile)return;
+    stop();player.removeAttribute('src');player.load();
+    if(mediaUrl)URL.revokeObjectURL(mediaUrl);
+    mediaUrl=null;loadedFile=file;player.hidden=!file;controls(false);el('playback').textContent='';
+    if(file){mediaUrl=URL.createObjectURL(file);player.src=mediaUrl;player.load();}
+  }
+  el('files').onchange=()=>{
+    const unknown=[];
+    for(const file of el('files').files){
+      const match=data.videos.find(v=>file.name===v.id+'.mp4');
+      if(match)localVideos.set(match.id,file);else unknown.push(file.name);
+    }
+    el('media-error').hidden=!unknown.length;
+    el('media-error').textContent=unknown.length?'未匹配的文件：'+unknown.join('、')+'。请保留离线包中的视频文件名。':'';
+    bindVideo();seek(segments ? 0 : task.query_time);el('files').value='';
+  };
+  player.addEventListener('loadedmetadata',()=>{
+    if(!mediaUrl||player.currentSrc!==mediaUrl)return;
+    controls(true);
+    if(pendingTime!==null){const target=pendingTime;pendingTime=null;player.currentTime=Math.max(0,Math.min(target,player.duration));}
+    tick();
+  });
+  player.addEventListener('error',()=>{
+    if(!mediaUrl||!player.error)return;
+    stop();controls(false);el('media-error').hidden=false;
+    el('media-error').textContent='此视频无法播放，请重新选择离线包中的原始 MP4。';
+  });
+  player.addEventListener('timeupdate',tick);player.addEventListener('seeked',tick);
+  player.addEventListener('play',()=>{
+    const frame=()=>{tick();animation=player.paused?null:requestAnimationFrame(frame);};
+    if(animation===null)animation=requestAnimationFrame(frame);
+  });
+  player.addEventListener('ended',()=>{stopAt=null;tick();});
+  el('go-query').onclick=()=>seek(segments ? 0 : task.query_time);
+  el('go-answer').onclick=()=>seek(task.answer_time);
+  function playInterval(start,end){
+    seek(start);
+    stopAt=Math.min(player.duration,end);
+    const requestedRevision=revision;
+    player.play().catch(()=>{
+      if(requestedRevision!==revision)return;
+      stopAt=null;el('media-error').hidden=false;el('media-error').textContent='播放未能启动，请使用视频播放按钮重试。';
+    });
+  }
+  el('play-window').onclick=()=>{
+    const instant=task.query_time===task.answer_time;
+    playInterval(instant?Math.max(0,task.query_time-3):task.query_time,(task.answer_time ?? task.coverage_end)+(instant?3:0));
+  };
+  function renderClips(){
+    const events=video.visual_events||[];
+    el('clip-section').hidden=!segments || events.length===0;
+    const list=el('clips');
+    list.replaceChildren();
+    for(const event of events){
+      const b=document.createElement('button');
+      b.type='button';
+      b.disabled=!mediaUrl||player.readyState<1;
+      const img=document.createElement('img');
+      img.src=event.thumbnail;
+      img.alt='';
+      b.append(img,event.id+' · '+time(event.start)+'–'+time(event.end));
+      b.onclick=()=>playInterval(event.start,event.end);
+      list.append(b);
+    }
+  }
+  window.addEventListener('pagehide',()=>{stop();if(mediaUrl)URL.revokeObjectURL(mediaUrl);});
+  function renderEvidence(){
+    el('evidence-heading').textContent=v3?'证据时间窗':'证据帧';
+    el('image').parentElement.hidden=v3;
+    if(v3){
+      el('evidence-controls').replaceChildren(...task.evidence_windows.map(([a,b])=>button(
+        a===b?a+' s':a+'–'+b+' s',false,()=>{if(b>a&&mediaUrl)playInterval(a,b);else seek(a);})));
+      return;
+    }
+    const e=task.evidence[evidenceIndex];
+    el('evidence-controls').replaceChildren(...task.evidence.map((e,i)=>button(time(e.time),i===evidenceIndex,()=>{evidenceIndex=i;renderEvidence();seek(e.time);save();})));
+    el('image').src=data.images[e.image];el('image').alt=video.title+'，标注证据帧 '+time(e.time);
+    el('caption').textContent='证据时间 '+time(e.time)+' · 缩略预览';
+  }
+  function renderDecisions(){
+    el('decisions').replaceChildren(...task.decisions.map((d,i)=>button(time(d.time)+' · '+(v3?(d.ready?'ANSWER':'WAIT'):d.label),i===decisionIndex,()=>{decisionIndex=i;renderDecisions();seek(d.time);save();})));
+    const d=task.decisions[decisionIndex];
+    el('selected-decision').textContent='采样时刻 '+time(d.time)+' → '+(v3?(d.ready?'ANSWER':'WAIT'):d.label);
+    if(v3){
+      el('generation').textContent='自主生成 · '+d.action+' · '+d.text;
+      el('forced').hidden=!d.ready;
+      el('forced').textContent=d.ready?'强制 ANSWER · '+d.forced:'';
+    }
+  }
+  function renderTask(){
+    el('task').value=task.task_id;el('type').textContent=names[task.qa_type];
+    el('times').textContent='Query '+time(task.query_time)+' → Answer '+time(task.answer_time)+' · 等待 '+(task.answer_time-task.query_time)+' s';
+    if(task.answer_time==null)el('times').textContent='Query '+time(task.query_time)+' · 标注区间内持续 WAIT';
+    el('go-answer').disabled=!mediaUrl||player.readyState<1||task.answer_time==null;
+    el('question').textContent=task.question;el('answer').textContent=task.reference_answer ?? '该标注区间内没有出现可回答的证据。';
+    el('model').hidden=!v3;
+    if(v3){
+      el('why').textContent='提问时 · '+task.decision_at_query+' · '+task.decision_reason_at_query;
+      el('trigger').textContent=task.trigger_criterion?'触发条件 · '+task.trigger_criterion:'';
+      el('diff').value=task.different?task.task_id:'';
+    }
+    el('provenance').textContent=video.id+' · '+task.task_id;
+    el('play-window').textContent=task.query_time===task.answer_time?'播放前后各 3 秒':task.answer_time==null?'播放标注观察区间':'播放 Query–Answer';
+    renderDecisions();renderEvidence();
+  }
+  function chooseVideo(id,taskId){
+    video=data.videos.find(v=>v.id===id)||data.videos[0];el('video').value=video.id;
+    el('task').replaceChildren(...tasksOf(video).map((t,i)=>option(t.task_id,(i+1)+'. '+names[t.qa_type]+' · '+t.question)));
+    task=tasksOf(video).find(t=>t.task_id===(taskId||video.featured_task))||tasksOf(video)[0];
+    el('media-error').hidden=true;bindVideo();renderClips();
+    evidenceIndex=0;decisionIndex=defaultDecision();renderTask();seek(segments ? 0 : task.query_time);
+  }
+  function defaultDecision(){return v3?Math.max(0,task.decisions.findIndex(d=>d.ready)):0;}
+  function restore(state){
+    const m=state?.modelContent||{};const p=state?.privateContent||{};
+    if(!task || typeof p.segments === 'boolean') setSection(Boolean(p.segments),Boolean(p.v3));
+    const restoredVideo=availableVideos().find(v=>v.id===m.video_id)||availableVideos()[0];
+    const restoredTask=tasksOf(restoredVideo).find(t=>t.task_id===(m.task_id||restoredVideo.featured_task))||tasksOf(restoredVideo)[0];
+    if(!task||video.id!==restoredVideo.id||task.task_id!==restoredTask.task_id)chooseVideo(restoredVideo.id,restoredTask.task_id);
+    evidenceIndex=Number.isInteger(p.evidenceIndex)&&p.evidenceIndex>=0&&p.evidenceIndex<(task.evidence?.length||0)?p.evidenceIndex:0;
+    decisionIndex=Number.isInteger(p.decisionIndex)&&p.decisionIndex>=0&&p.decisionIndex<task.decisions.length?p.decisionIndex:defaultDecision();
+    renderTask();
+  }
+  function availableVideos(){
+    return segments ? data.videos.filter(v=>v.visual_events?.length) : data.videos;
+  }
+  function setSection(showSegments,showV3=false){
+    segments=showSegments;v3=!segments&&showV3;
+    el('counts').textContent=v3?'10 视频 · 97 QA · 同集 overfit · 固定标注点评测':'10 视频 · 286 QA · holdout · 参考标注';
+    el('v3-nav').setAttribute('aria-pressed',String(v3));
+    root.dataset.section=segments?'segments':'qa';
+    el('qa-nav').setAttribute('aria-pressed',String(!segments&&!v3));
+    el('segments-nav').setAttribute('aria-pressed',String(segments));
+    el('video').replaceChildren(...availableVideos().map(v=>option(v.id,
+      v.title+' · '+(segments?v.visual_events.length+' 个片段':tasksOf(v).length+' QA'))));
+    el('video').value=video.id;
+    renderClips();
+  }
+  function switchSection(showSegments,showV3=false){
+    if(segments===showSegments&&v3===showV3)return;
+    setSection(showSegments,showV3);
+    const selected=availableVideos().find(v=>v.id===video.id)||availableVideos()[0];
+    chooseVideo(selected.id,selected.id===video.id?task.task_id:undefined);
+    save();
+  }
+  el('diff').replaceChildren(option('','选择题目'),...Object.values(data.qa_v3.videos).flat().filter(t=>t.different).map(t=>option(t.task_id,t.task_id)));
+  el('diff').onchange=()=>{const key=el('diff').value;if(key){chooseVideo(key.split('/')[0],key);save();}};
+  el('v3-nav').onclick=()=>switchSection(false,true);
+  el('qa-nav').onclick=()=>switchSection(false);
+  el('segments-nav').onclick=()=>switchSection(true);
+  el('video').onchange=()=>{chooseVideo(el('video').value);save();};
+  el('task').onchange=()=>{task=tasksOf(video).find(t=>t.task_id===el('task').value);evidenceIndex=0;decisionIndex=defaultDecision();renderTask();seek(segments ? 0 : task.query_time);save();};
+  restore(window.openai?.widgetState);
+  window.addEventListener('openai:set_globals',e=>{if(e.detail?.globals?.widgetState)restore(e.detail.globals.widgetState);});
+})();
+</script>

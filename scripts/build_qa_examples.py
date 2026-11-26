@@ -30,7 +30,7 @@ def build(package=None):
  out=REPO/'viz/qa-examples';out.mkdir(exist_ok=True)
  if package:
   out=package/'Ultrasound-QA-10-Examples';out.mkdir(parents=True,exist_ok=False)
-  for name in ['index.html','app.js','style.css','qa-ui.ttf','OFL.txt']:shutil.copyfile(REPO/'viz/qa-examples'/name,out/name)
+  for name in ['index.html','app.js','style.css','qa-v3.json','qa-ui.ttf','OFL.txt']:shutil.copyfile(REPO/'viz/qa-examples'/name,out/name)
   (out/'media').mkdir();(out/'frames').mkdir()
  def frame_url(e):
   src=SOURCE/e['path'];assert src.is_file() and digest(src)==e['sha256']
@@ -39,6 +39,7 @@ def build(package=None):
    if not dest.exists():shutil.copyfile(src,dest)
    return dest.relative_to(out).as_posix()
   return '../../results/'+SOURCE.name+'/'+quote(e['path'],safe='/')
+ visual_events=json.loads((REPO/'viz/qa-examples/visual_events.json').read_text())
  videos=[]
  for vid,title,title_en in EXAMPLES:
   src=Path(mapping[vid]);local=REPO/'cluster_data/videos/train_full295'/f'{vid}.mp4'
@@ -58,6 +59,7 @@ def build(package=None):
   assert entries
   featured=next((t for t in entries if t['qa_type']=='event_notification' and t['answer_time']-t['query_time']>=10),entries[0])
   videos.append({'id':vid,'title':title,'title_en':title_en,'duration':selection[vid]['duration'],'url':'media/'+src.name if package else '../../cluster_data/videos/train_full295/'+src.name,'poster':next(t['evidence'][0]['url'] for t in entries if t['qa_type']=='current_observation'),'tasks':entries,'featured_task':featured['task_id']})
+  if vid in visual_events:videos[-1]['visual_events']=visual_events[vid]
  types=collections.Counter(t['qa_type'] for v in videos for t in v['tasks'])
  data={'version':SOURCE.name,'split':'holdout','counts':{'videos':len(videos),'qa':sum(types.values()),'types':types},'source_sha256':{n:digest(SOURCE/n) for n in ['holdout_tasks.jsonl','holdout_samples.jsonl','selection.json']},'videos':videos}
  (out/'data.json').write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')

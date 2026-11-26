@@ -38,5 +38,22 @@
     ],
     "javascript_errors": [],
     "external_requests": []
+  },
+  "qa_v3": {
+    "release": "qa_v3_holdout10",
+    "epoch": 20,
+    "videos": 10,
+    "questions": 97,
+    "fixed_endpoints": 246,
+    "forced_answers": 96,
+    "nonmatching_forced_texts": 7,
+    "checks": [
+      "Chromium traversed every question and compared rendered reference and generation text to the catalog",
+      "Query seek on all ten videos",
+      "Cross-video mismatch selection and bookmark reload",
+      "WAIT-only observation, interval playback and endpoint seek",
+      "Previous QA and segmentation navigation",
+      "390px layout and local standalone HTML with local MP4"
+    ]
   }
 }
