@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "StreamReady answer content grade v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["task_id","sample_id","current_time_s","status","score","reason","evidence","review_reason"],
+  "properties": {
+    "task_id": {"type":"string","minLength":1},
+    "sample_id": {"type":"string","minLength":1},
+    "current_time_s": {"type":"number","minimum":0},
+    "status": {"enum":["graded","review"]},
+    "score": {"enum":[0,1,2,3,null]},
+    "reason": {"type":"string","minLength":1},
+    "evidence": {"type":"array","items":{"type":"object","additionalProperties":false,
+      "required":["time_s","observation"],
+      "properties":{"time_s":{"type":"number","minimum":0},"observation":{"type":"string","minLength":1}}}},
+    "review_reason": {"enum":[null,"missing_media","insufficient_visual_evidence","ambiguous_question","reference_conflict"]}
+  },
+  "oneOf": [
+    {"properties":{"status":{"const":"graded"},"score":{"type":"integer"},"evidence":{"minItems":1},"review_reason":{"type":"null"}}},
+    {"properties":{"status":{"const":"review"},"score":{"type":"null"},"review_reason":{"type":"string"}}}
+  ]
+}

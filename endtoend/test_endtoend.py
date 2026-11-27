@@ -24,7 +24,7 @@ helpers = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(helpers)
 
 
-def tiny_model():
+def tiny_model(readiness_readout="rdy"):
     raw = Tokenizer(models.WordLevel({'[PAD]': 0, '[UNK]': 1, '[EOS]': 2, 'what': 3, 'yes': 4}, unk_token='[UNK]'))
     raw.pre_tokenizer = pre_tokenizers.Whitespace()
     tok = PreTrainedTokenizerFast(tokenizer_object=raw, pad_token='[PAD]', unk_token='[UNK]', eos_token='[EOS]')
@@ -48,7 +48,7 @@ def tiny_model():
         return StreamReady(backbone_model='tiny', backbone_precision='fp32', num_query_token=3,
                            qformer_encoder_width=24, frame_capacity=2, num_centroids=3, num_prototypes=2,
                            topk_prototypes=2, topk_centroids=3, use_contextual_memory=False,
-                           gradient_checkpointing=True, readiness_threshold=.5)
+                           gradient_checkpointing=True, readiness_threshold=.5, readiness_readout=readiness_readout)
 
 
 def example(ready=1):

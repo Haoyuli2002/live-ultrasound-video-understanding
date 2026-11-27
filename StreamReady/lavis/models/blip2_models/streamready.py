@@ -111,6 +111,7 @@ class StreamReady(Blip2Base):
         max_output_txt_len=256,
         prompt="",
         gradient_checkpointing=False,
+        readiness_readout="rdy",
     ):
         super().__init__()
 
@@ -162,6 +163,7 @@ class StreamReady(Blip2Base):
             context_sim_floor=context_sim_floor,
             use_readiness=use_readiness,
             readiness_hidden=readiness_hidden,
+            readiness_readout=readiness_readout,
             max_txt_len=max_txt_len,
             gradient_checkpointing=gradient_checkpointing,
         )
@@ -721,6 +723,7 @@ class StreamReady(Blip2Base):
             use_readiness=cfg.get("use_readiness", True),
             readiness_threshold=cfg.get("readiness_threshold", 0.35),
             readiness_hidden=cfg.get("readiness_hidden", None),
+            readiness_readout=cfg.get("readiness_readout", "rdy"),
             lambda_reg=cfg.get("lambda_reg", 0.1),
             readiness_loss_weight=cfg.get("readiness_loss_weight", 1.0),
             train_stage=cfg.get("train_stage", "joint"),

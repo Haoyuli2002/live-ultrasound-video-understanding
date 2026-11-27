@@ -1,0 +1,12 @@
+{
+  "document": "docs/STREAMREADY_REPRODUCTION_STATUS_20261124.md",
+  "local_links": "all exist",
+  "four_arm_table": "matches original report",
+  "allpairs_table_and_curve": "matches original reports",
+  "source_hashes_verified": 14,
+  "equation_and_code_fences": "balanced",
+  "scheduler_snapshot": [
+    "5951847|PENDING|0:00|(Priority)",
+    "5954577|PENDING|0:00|(Priority)"
+  ]
+}

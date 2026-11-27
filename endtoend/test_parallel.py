@@ -50,6 +50,29 @@ class ParallelTests(unittest.TestCase):
         self.assertEqual(self.model.core.last_replay_stats['memory_updates'], 12)
         self.assertLess(self.model.core.last_replay_stats['memory_updates'], self.model.core.last_replay_stats['independent_updates'])
 
+    def test_short_long_readout_matches_baseline_at_init_and_parallel_after_update(self):
+        model = tiny_model(readiness_readout="short_long").eval()
+        loaded = model.load_state_dict(self.model.state_dict(), strict=False)
+        self.assertEqual(loaded.missing_keys, ["core.readiness_head.evidence_weights"])
+        self.assertFalse(loaded.unexpected_keys)
+        rows, features = fixture()
+        baseline = forward_batch(self.model, rows, features)
+        result = forward_batch(model, rows, features)
+        torch.testing.assert_close(result["logits"], baseline["logits"])
+        weights = model.core.readiness_head.evidence_weights
+        model._readiness_surrogate(result["readiness_loss"]).backward()
+        self.assertTrue((weights.grad.norm(dim=1) > 0).all())
+        self.assertIsNone(model.core.long_query_tokens.grad)
+        with torch.no_grad():
+            weights.add_(weights.grad, alpha=-0.1)
+        serial = forward_batch(model, rows, features)
+        self.assertFalse(torch.allclose(serial["logits"], baseline["logits"]))
+        model.parallel_endpoints = True
+        parallel = forward_batch(model, rows, features)
+        torch.testing.assert_close(parallel["logits"], serial["logits"], atol=2e-6, rtol=2e-5)
+        for expected, actual in zip(baseline["outputs"], parallel["outputs"]):
+            torch.testing.assert_close(actual["prefix_embeds"], expected["prefix_embeds"], atol=2e-6, rtol=2e-5)
+
     def test_no_future_or_fractional_endpoint_contamination(self):
         rows, features = fixture()
         self.model.parallel_endpoints = True

@@ -1,0 +1,855 @@
+{
+  "observed_at_utc": "2026-11-24T16:20:13.996906+00:00",
+  "four_arm_scope": "10 training videos,72QA175endpoints71ANSWER104WAIT;100epochs300updates;single seed;no holdout; sparse first-trigger replay, not ARS or generalization",
+  "four_arms": [
+    {
+      "name": "bce",
+      "run_dir": "/dss/mcmlscratch/04/ge75vid2/haoyu/live-ultrasound-video-understanding/cluster_data/experiments/streamready/fresh_loss_comparison_10v_20261121T232902Z/bce",
+      "at05": {
+        "threshold": 0.5,
+        "answer_trigger": [
+          33,
+          71
+        ],
+        "wait_correct": [
+          104,
+          104
+        ],
+        "wait_false_triggers": [
+          0,
+          104
+        ],
+        "timing_and_text": [
+          33,
+          71
+        ],
+        "forced_answer": [
+          68,
+          71
+        ]
+      },
+      "at035": {
+        "threshold": 0.35,
+        "answer_trigger": [
+          36,
+          71
+        ],
+        "wait_correct": [
+          102,
+          104
+        ],
+        "wait_false_triggers": [
+          2,
+          104
+        ],
+        "timing_and_text": [
+          35,
+          71
+        ],
+        "forced_answer": [
+          68,
+          71
+        ]
+      }
+    },
+    {
+      "name": "cl_temporal",
+      "run_dir": "/dss/mcmlscratch/04/ge75vid2/haoyu/live-ultrasound-video-understanding/cluster_data/experiments/streamready/fresh_loss_comparison_10v_20261121T232902Z/cl_temporal",
+      "at05": {
+        "threshold": 0.5,
+        "answer_trigger": [
+          49,
+          71
+        ],
+        "wait_correct": [
+          32,
+          104
+        ],
+        "wait_false_triggers": [
+          72,
+          104
+        ],
+        "timing_and_text": [
+          24,
+          71
+        ],
+        "forced_answer": [
+          71,
+          71
+        ]
+      },
+      "at035": {
+        "threshold": 0.35,
+        "answer_trigger": [
+          62,
+          71
+        ],
+        "wait_correct": [
+          18,
+          104
+        ],
+        "wait_false_triggers": [
+          86,
+          104
+        ],
+        "timing_and_text": [
+          33,
+          71
+        ],
+        "forced_answer": [
+          71,
+          71
+        ]
+      }
+    },
+    {
+      "name": "cl_temporal_bce2",
+      "run_dir": "/dss/mcmlscratch/04/ge75vid2/haoyu/live-ultrasound-video-understanding/cluster_data/experiments/streamready/fresh_loss_comparison_10v_20261121T232902Z/cl_temporal_bce2",
+      "at05": {
+        "threshold": 0.5,
+        "answer_trigger": [
+          49,
+          71
+        ],
+        "wait_correct": [
+          69,
+          104
+        ],
+        "wait_false_triggers": [
+          35,
+          104
+        ],
+        "timing_and_text": [
+          33,
+          71
+        ],
+        "forced_answer": [
+          68,
+          71
+        ]
+      },
+      "at035": {
+        "threshold": 0.35,
+        "answer_trigger": [
+          63,
+          71
+        ],
+        "wait_correct": [
+          26,
+          104
+        ],
+        "wait_false_triggers": [
+          78,
+          104
+        ],
+        "timing_and_text": [
+          33,
+          71
+        ],
+        "forced_answer": [
+          68,
+          71
+        ]
+      }
+    },
+    {
+      "name": "cl_temporal_bce1",
+      "run_dir": "/dss/mcmlscratch/04/ge75vid2/haoyu/live-ultrasound-video-understanding/cluster_data/experiments/streamready/fresh_10v_cl_temporal_bce1_20261122T073515Z",
+      "at05": {
+        "threshold": 0.5,
+        "answer_trigger": [
+          36,
+          71
+        ],
+        "wait_correct": [
+          94,
+          104
+        ],
+        "wait_false_triggers": [
+          10,
+          104
+        ],
+        "timing_and_text": [
+          32,
+          71
+        ],
+        "forced_answer": [
+          71,
+          71
+        ]
+      },
+      "at035": {
+        "threshold": 0.35,
+        "answer_trigger": [
+          54,
+          71
+        ],
+        "wait_correct": [
+          56,
+          104
+        ],
+        "wait_false_triggers": [
+          48,
+          104
+        ],
+        "timing_and_text": [
+          36,
+          71
+        ],
+        "forced_answer": [
+          71,
+          71
+        ]
+      }
+    }
+  ],
+  "allpairs": {
+    "at05": {
+      "threshold": 0.5,
+      "answer_trigger": [
+        36,
+        71
+      ],
+      "wait_correct": [
+        104,
+        104
+      ],
+      "wait_false_triggers": [
+        0,
+        104
+      ],
+      "timing_and_text": [
+        36,
+        71
+      ],
+      "forced_answer": [
+        71,
+        71
+      ]
+    },
+    "at035": {
+      "threshold": 0.35,
+      "answer_trigger": [
+        46,
+        71
+      ],
+      "wait_correct": [
+        82,
+        104
+      ],
+      "wait_false_triggers": [
+        22,
+        104
+      ],
+      "timing_and_text": [
+        38,
+        71
+      ],
+      "forced_answer": [
+        71,
+        71
+      ]
+    }
+  },
+  "allpairs_initialization_and_batches_verified": true,
+  "allpairs_learning_curve": [
+    {
+      "epoch": 0,
+      "optimizer_step": 0,
+      "forced_answer_count": 0,
+      "answer_count": 71,
+      "answer_trigger_count": 71,
+      "wait_correct_count": 0,
+      "timing_and_text_count": 0,
+      "answer_ce_legacy_sequence_mean": 3.894120516911359,
+      "bce": 0.6931471824645996,
+      "cl": 0.6931471824645996,
+      "tr": 0.0
+    },
+    {
+      "epoch": 33,
+      "optimizer_step": 99,
+      "forced_answer_count": 62,
+      "answer_count": 71,
+      "answer_trigger_count": 29,
+      "wait_correct_count": 91,
+      "timing_and_text_count": 24,
+      "answer_ce_legacy_sequence_mean": 0.03499873168438568,
+      "bce": 0.6016618609428406,
+      "cl": 0.6868202090263367,
+      "tr": 0.0025266995653510094
+    },
+    {
+      "epoch": 66,
+      "optimizer_step": 198,
+      "forced_answer_count": 71,
+      "answer_count": 71,
+      "answer_trigger_count": 35,
+      "wait_correct_count": 104,
+      "timing_and_text_count": 35,
+      "answer_ce_legacy_sequence_mean": 0.005421890497197803,
+      "bce": 0.5097387433052063,
+      "cl": 0.6574994921684265,
+      "tr": 0.013791411183774471
+    },
+    {
+      "epoch": 100,
+      "optimizer_step": 300,
+      "forced_answer_count": 71,
+      "answer_count": 71,
+      "answer_trigger_count": 36,
+      "wait_correct_count": 104,
+      "timing_and_text_count": 36,
+      "answer_ce_legacy_sequence_mean": 0.000627621630537504,
+      "bce": 0.4791170060634613,
+      "cl": 0.6420109868049622,
+      "tr": 0.021354885771870613
+    }
+  ],
+  "long_memory_ablation": {
+    "real": {
+      "endpoints": 175,
+      "answers": 71,
+      "waits": 104,
+      "forced_exact_count": 71,
+      "forced_exact": 1.0,
+      "gated_exact": 0.4084507042253521,
+      "answer_recall": 0.4084507042253521,
+      "false_triggers": 0,
+      "premature_rate": 0.0,
+      "readiness_accuracy": 0.76,
+      "answer_ce": 0.00733619910723474,
+      "mean_abs_probability_change": 0.0,
+      "changed_answer_count": 0
+    },
+    "zero_long": {
+      "endpoints": 175,
+      "answers": 71,
+      "waits": 104,
+      "forced_exact_count": 71,
+      "forced_exact": 1.0,
+      "gated_exact": 0.4084507042253521,
+      "answer_recall": 0.4084507042253521,
+      "false_triggers": 0,
+      "premature_rate": 0.0,
+      "readiness_accuracy": 0.76,
+      "answer_ce": 0.009049851199653833,
+      "mean_abs_probability_change": 0.0047763911315373015,
+      "changed_answer_count": 0
+    },
+    "other_video_long": {
+      "endpoints": 175,
+      "answers": 71,
+      "waits": 104,
+      "forced_exact_count": 71,
+      "forced_exact": 1.0,
+      "gated_exact": 0.4084507042253521,
+      "answer_recall": 0.4084507042253521,
+      "false_triggers": 0,
+      "premature_rate": 0.0,
+      "readiness_accuracy": 0.76,
+      "answer_ce": 0.007423175880779728,
+      "mean_abs_probability_change": 0.0013069432973861694,
+      "changed_answer_count": 0
+    },
+    "zero_prefix": {
+      "endpoints": 175,
+      "answers": 71,
+      "waits": 104,
+      "forced_exact_count": 0,
+      "forced_exact": 0.0,
+      "gated_exact": 0.0,
+      "answer_recall": 0.4084507042253521,
+      "false_triggers": 0,
+      "premature_rate": 0.0,
+      "readiness_accuracy": 0.76,
+      "answer_ce": 3.7218179837079117,
+      "mean_abs_probability_change": 0.0,
+      "changed_answer_count": 71
+    }
+  },
+  "gradient_isolation_ablation": {
+    "scope": "same training examples; no holdout or generalization evidence",
+    "matched_batches_and_data": true,
+    "arms": {
+      "joint_control": {
+        "status": {
+          "status": "completed",
+          "completed_epochs": 24,
+          "step": 224,
+          "batch_size": 8
+        },
+        "initial": {
+          "epoch": 0,
+          "mean_endpoint_loss": 0.7308987379074097,
+          "readiness_accuracy": 0.6,
+          "premature_rate": 0.0,
+          "answer_exact_match": 0.5416666666666666,
+          "answer_recall": 0.0,
+          "readiness_auc": 0.6927083333333334,
+          "paired_order_accuracy": 0.3611111111111111,
+          "gated_answer_exact_match": 0.0,
+          "scope": "same_training_videos_endpoints_forced_answer_probe"
+        },
+        "final": {
+          "epoch": 24,
+          "mean_endpoint_loss": 0.1322415373288095,
+          "readiness_accuracy": 0.9666666666666667,
+          "premature_rate": 0.05555555555555555,
+          "answer_exact_match": 0.6666666666666666,
+          "answer_recall": 1.0,
+          "readiness_auc": 0.9976851851851852,
+          "paired_order_accuracy": 0.9722222222222222,
+          "gated_answer_exact_match": 0.6666666666666666,
+          "scope": "same_training_videos_endpoints_forced_answer_probe"
+        }
+      },
+      "readiness_isolated": {
+        "status": {
+          "status": "completed",
+          "completed_epochs": 24,
+          "step": 224,
+          "batch_size": 8
+        },
+        "initial": {
+          "epoch": 0,
+          "mean_endpoint_loss": 0.7316468387842179,
+          "readiness_accuracy": 0.6,
+          "premature_rate": 0.0,
+          "answer_exact_match": 0.5833333333333334,
+          "answer_recall": 0.0,
+          "readiness_auc": 0.6892361111111112,
+          "paired_order_accuracy": 0.2777777777777778,
+          "gated_answer_exact_match": 0.0,
+          "scope": "same_training_videos_endpoints_forced_answer_probe"
+        },
+        "final": {
+          "epoch": 24,
+          "mean_endpoint_loss": 0.4991421885943661,
+          "readiness_accuracy": 0.7333333333333333,
+          "premature_rate": 0.16666666666666666,
+          "answer_exact_match": 0.9583333333333334,
+          "answer_recall": 0.5833333333333334,
+          "readiness_auc": 0.7916666666666666,
+          "paired_order_accuracy": 0.9166666666666666,
+          "gated_answer_exact_match": 0.5833333333333334,
+          "scope": "same_training_videos_endpoints_forced_answer_probe"
+        }
+      }
+    }
+  },
+  "gradient_isolation_plan": {
+    "source_run": "/dss/dsshome1/04/ge75vid2/haoyu/live-ultrasound-video-understanding/results/streamready_e2e_overfit_3v_retry_20261120",
+    "initial_checkpoint_sha256": "a61b294b31cc4cde0f82afbd084907303e4f1f7749858504cbed68140f796750",
+    "data": {
+      "videos": 3,
+      "qa": 24,
+      "decisions": 60,
+      "labels": {
+        "ANSWER": 24,
+        "WAIT": 36
+      },
+      "qa_types": {
+        "current_observation": 6,
+        "history_recall": 6,
+        "event_notification": 6,
+        "temporal_comparison": 6
+      }
+    },
+    "holdout": null,
+    "epochs_per_arm": 24,
+    "planned_updates_per_arm": 224,
+    "batch_size": 8,
+    "optimizer_state_restored": true,
+    "extra_warmup_updates": 0,
+    "only_algorithmic_difference": "readiness gradient routing: sum vs isolated to RDY/head",
+    "training_objective": "unchanged unweighted gold BCE + answer CE",
+    "no_new_contrastive_loss": true,
+    "no_threshold_change": true,
+    "evaluation": "same three training videos; forced and gated answers reported separately"
+  },
+  "three_video_bs64_final": {
+    "epoch": 300,
+    "mean_endpoint_loss": 0.32468859673826955,
+    "readiness_accuracy": 0.8333333333333334,
+    "premature_rate": 0.0,
+    "answer_exact_match": 1.0,
+    "answer_recall": 0.5833333333333334,
+    "readiness_auc": 0.9832175925925926,
+    "paired_order_accuracy": 1.0,
+    "gated_answer_exact_match": 0.5833333333333334,
+    "scope": "same_training_videos_endpoints_forced_answer_probe"
+  },
+  "earlier_ten_video_run": {
+    "observed_at": "2026-11-21T16:33:16.351777+00:00",
+    "job_id": "5945671",
+    "scheduler": "COMPLETED exit0:0 elapsed00:27:00",
+    "run_dir": "/dss/mcmlscratch/04/ge75vid2/haoyu/live-ultrasound-video-understanding/cluster_data/experiments/streamready/overfit_10v_bs96_20261121T153739Z",
+    "epochs": 100,
+    "steps": 300,
+    "batch_limit": 64,
+    "GA": 1,
+    "gpus": 1,
+    "final_metrics": {
+      "epoch": 100,
+      "mean_endpoint_loss": 0.5528331048360893,
+      "readiness_accuracy": 0.76,
+      "premature_rate": 0.0,
+      "answer_exact_match": 1.0,
+      "answer_recall": 0.4084507042253521,
+      "readiness_auc": 0.7493228602383532,
+      "paired_order_accuracy": 0.35,
+      "gated_answer_exact_match": 0.4084507042253521,
+      "scope": "same_training_videos_endpoints_forced_answer_probe"
+    },
+    "answer_exact_counts": "71/71 forced; 29/71 gated; 42/71 missed ANSWER; 0/104 false triggers",
+    "training_step_mean_seconds": 1.8755223045001428,
+    "training_last50_step_mean_seconds": 1.745919924341142,
+    "training_peak_allocated_gib": 36.83907604217529,
+    "checkpoint_exists": true,
+    "conclusion": "Answer text overfits training endpoints; readiness remains unstable and joint task not fully overfit. No held-out evaluation."
+  },
+  "batch_selection": {
+    "batch_size": 64,
+    "epochs": 100,
+    "optimizer_steps": 300,
+    "gradient_accumulation": 1,
+    "reason": "fastest real-data throughput among batches passing both safety probes",
+    "worst_case": [
+      {
+        "batch_size": 64,
+        "status": "passed",
+        "seconds_per_batch": 0.992807871910433,
+        "actual_samples": 64,
+        "samples_per_second": 64.46363068903408,
+        "warmups": 1,
+        "timed_repetitions": 15,
+        "timed_start_unix": 1795275871.8495152,
+        "timed_end_unix": 1795275886.7416368,
+        "replay_stats": {
+          "videos": 1,
+          "endpoints": 64,
+          "memory_updates": 139,
+          "independent_updates": 8896,
+          "qformer_batch_size": 64
+        },
+        "allocated_gib": 9.312013149261475,
+        "reserved_gib": 57.9921875,
+        "peak_allocated_gib": 54.008047580718994,
+        "peak_reserved_gib": 57.9921875,
+        "free_gib": 20.73724365234375,
+        "total_gib": 79.249755859375,
+        "safe": true
+      },
+      {
+        "batch_size": 96,
+        "status": "passed",
+        "seconds_per_batch": 1.4291518264760574,
+        "actual_samples": 96,
+        "samples_per_second": 67.17270917024454,
+        "warmups": 1,
+        "timed_repetitions": 15,
+        "timed_start_unix": 1795275920.4135811,
+        "timed_end_unix": 1795275941.8508604,
+        "replay_stats": {
+          "videos": 1,
+          "endpoints": 96,
+          "memory_updates": 139,
+          "independent_updates": 13344,
+          "qformer_batch_size": 96
+        },
+        "allocated_gib": 9.312013149261475,
+        "reserved_gib": 76.498046875,
+        "peak_allocated_gib": 75.95460367202759,
+        "peak_reserved_gib": 76.498046875,
+        "free_gib": 1.55364990234375,
+        "total_gib": 79.249755859375,
+        "safe": false
+      }
+    ],
+    "real_batch": [
+      {
+        "batch_size": 64,
+        "status": "passed",
+        "seconds_per_batch": 1.672571448609233,
+        "actual_samples": 63,
+        "samples_per_second": 37.666552333166635,
+        "warmups": 1,
+        "timed_repetitions": 15,
+        "timed_start_unix": 1795276031.22481,
+        "timed_end_unix": 1795276056.3133857,
+        "replay_stats": {
+          "videos": 10,
+          "endpoints": 63,
+          "memory_updates": 763,
+          "independent_updates": 3423,
+          "qformer_batch_size": 63
+        },
+        "allocated_gib": 9.312013149261475,
+        "reserved_gib": 34.197265625,
+        "peak_allocated_gib": 32.614444732666016,
+        "peak_reserved_gib": 34.197265625,
+        "free_gib": 44.53216552734375,
+        "total_gib": 79.249755859375,
+        "safe": true
+      },
+      {
+        "batch_size": 96,
+        "status": "passed",
+        "seconds_per_batch": 2.1895328549047313,
+        "actual_samples": 96,
+        "samples_per_second": 43.84496893250641,
+        "warmups": 1,
+        "timed_repetitions": 15,
+        "timed_start_unix": 1795276062.2782714,
+        "timed_end_unix": 1795276095.1212661,
+        "replay_stats": {
+          "videos": 10,
+          "endpoints": 96,
+          "memory_updates": 874,
+          "independent_updates": 5277,
+          "qformer_batch_size": 96
+        },
+        "allocated_gib": 9.312013149261475,
+        "reserved_gib": 46.923828125,
+        "peak_allocated_gib": 44.59521245956421,
+        "peak_reserved_gib": 46.923828125,
+        "free_gib": 31.80560302734375,
+        "total_gib": 79.249755859375,
+        "safe": true
+      }
+    ]
+  },
+  "full_data_audit": {
+    "status": "prepared_step_monitoring_update",
+    "sources": {
+      "train": {
+        "samples.jsonl": "/dss/mcmlscratch/04/ge75vid2/tmp/stage3_visual_v4_train_review_20261120_combined/train_samples.jsonl",
+        "tasks.jsonl": "/dss/mcmlscratch/04/ge75vid2/tmp/stage3_visual_v4_train_review_20261120_combined/train_tasks.jsonl",
+        "video_map.json": "/dss/mcmlscratch/04/ge75vid2/tmp/stage3_visual_v4_train_review_20261120_combined/video_map.json"
+      },
+      "holdout": {
+        "samples.jsonl": "/dss/mcmlscratch/04/ge75vid2/tmp/stage3_visual_v4_holdout16_20261121/holdout_samples.jsonl",
+        "tasks.jsonl": "/dss/mcmlscratch/04/ge75vid2/tmp/stage3_visual_v4_holdout16_20261121/holdout_tasks.jsonl",
+        "video_map.json": "/dss/mcmlscratch/04/ge75vid2/tmp/stage3_visual_v4_holdout16_20261121/video_map.json"
+      }
+    },
+    "source_sha256": {
+      "train": {
+        "samples.jsonl": "03b4e531491d2e5d5dfbb59ea5bab3ce65123be0e6051a3df49780b5efcea0c8",
+        "tasks.jsonl": "205909caed0c58ccf36d4dbf660265a65d9500a40860e543795652ccf7d8339b",
+        "video_map.json": "8aefc91eff15720625b897c364ef848fba488622a46fb20b813a9abbe4ad949c"
+      },
+      "holdout": {
+        "samples.jsonl": "f3a7c2d6cfbff3b3dce1004d7b1e60a72cc7d9a0aae19070aec4e8eb7ff652c4",
+        "tasks.jsonl": "5874fcf8c66589b8c3b1d82f0223e707132eab3a5fc26e2b62a79dc7b477ec26",
+        "video_map.json": "d18f345f6ae0c6cd3b3a88a5a63ed9ff5035dc7222cfe8578d267e026e1cf908"
+      }
+    },
+    "official_split_sha256": "0c8859412972271c7f64ab2003194730bda15f63b7d03bfc0dfb702a37e21763",
+    "train": {
+      "videos": 171,
+      "qa": 5236,
+      "endpoints": 12385,
+      "answer": 5177,
+      "wait": 7208,
+      "available_pairs": 6972,
+      "qa_types": {
+        "current_observation": 1309,
+        "history_recall": 1309,
+        "event_notification": 1309,
+        "temporal_comparison": 1309
+      }
+    },
+    "holdout": {
+      "videos": 16,
+      "qa": 464,
+      "endpoints": 994,
+      "answer": 464,
+      "wait": 530,
+      "available_pairs": 530,
+      "qa_types": {
+        "current_observation": 118,
+        "history_recall": 118,
+        "event_notification": 114,
+        "temporal_comparison": 114
+      }
+    },
+    "excluded_train_video_ids": [
+      "7cQ_3GtvNxo",
+      "JoDOrxvsgGU",
+      "b40mpNyVouY",
+      "f5vU9uwJV7s",
+      "i080vrj27_s",
+      "nJCcJu4e-yM",
+      "qhDzdJNoQb8",
+      "seR0gPwWIDc",
+      "wVt9frJBk5s"
+    ],
+    "train_holdout_test_video_overlap": 0,
+    "canonical_media_path_overlap": 0,
+    "train_features": {
+      "unique_frames": 114077,
+      "duplicated_endpoint_frames": 8736121,
+      "shared_features_gib": 27.850830078125,
+      "old_endpoint_features_gib": 2132.842041015625,
+      "assumption": "64 patches/frame x 2048 dimensions x BF16; actual encoder audit confirms shape at runtime"
+    },
+    "holdout_features": {
+      "unique_frames": 10550,
+      "duplicated_endpoint_frames": 628351,
+      "shared_features_gib": 2.57568359375,
+      "old_endpoint_features_gib": 153.406005859375,
+      "assumption": "64 patches/frame x 2048 dimensions x BF16; actual encoder audit confirms shape at runtime"
+    },
+    "update_budget": {
+      "batch_size": 64,
+      "batch_size_per_gpu": 64,
+      "global_batch_capacity": 128,
+      "gradient_accumulation": 1,
+      "gpus": 2,
+      "epochs": 2,
+      "optimizer_steps_per_epoch": [
+        99,
+        99
+      ],
+      "total_optimizer_steps": 198
+    },
+    "holdout_evaluations": 5,
+    "holdout_optimizer_steps": 0,
+    "quality": "Candidate sampled-reviewed QA; unchanged earlier tasks retain prior review status. Not fully expert-reviewed, not all verified at256px, cross-split near-content duplication not comprehensively audited.",
+    "test": "41 official test video IDs reserved; no new V4 test export found/used; old evaluation datasets not mixed into this run",
+    "gpu_validation": "Pending 2GPU NCCL execution; eachGPU must pass zero-updateBS64 probes",
+    "checkpoint_policy": "Scratch checkpoint_latest.pth and checkpoint_best.pth only; best selected by holdout time+text correct, fewer WAIT false triggers, readiness accuracy. Test untouched.",
+    "loss_recipe": "NTP + CL(all within-question ANSWER x WAIT pairs) + 0.1 temporal TV + BCE(ANSWER1/WAIT1)",
+    "evaluation_threshold": 0.5,
+    "holdout_eval_steps": [
+      0,
+      50,
+      100,
+      150,
+      198
+    ]
+  },
+  "full_model_config": {
+    "model": {
+      "arch": "streamready",
+      "model_type": "qwen3_5",
+      "backbone_model": "/dss/mcmlscratch/04/ge75vid2/haoyu/hf_cache/hub/models--Qwen--Qwen3.5-2B/snapshots/15852e8c16360a2fea060d615a32b45270f8a8fc",
+      "backbone_precision": "bf16",
+      "attn_implementation": "sdpa",
+      "image_size": 256,
+      "num_query_token": 32,
+      "qformer_text_input": true,
+      "qformer_encoder_width": 1408,
+      "frame_capacity": 24,
+      "num_centroids": 96,
+      "num_prototypes": 12,
+      "topk_prototypes": 8,
+      "topk_centroids": 24,
+      "ema_decay": 0.985,
+      "long_term_fusion_mode": "per_layer",
+      "use_contextual_memory": false,
+      "use_readiness": true,
+      "readiness_threshold": 0.5,
+      "readiness_loss_weight": 1.0,
+      "train_stage": "joint",
+      "gradient_checkpointing": false,
+      "max_txt_len": 256,
+      "max_output_txt_len": 160,
+      "load_pretrained": true,
+      "load_finetuned": false,
+      "pretrained": "/dss/mcmlscratch/04/ge75vid2/torch_cache/hub/checkpoints/instruct_blip_vicuna7b_trimmed.pth"
+    },
+    "seed": 20261121,
+    "epochs": 2,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "image_size": 256,
+    "vision_chunk": 8,
+    "batch_candidates": [
+      64
+    ],
+    "max_new_tokens": 96,
+    "eval_epochs": [],
+    "supervision": "NTP + CL(all within-question ANSWER x WAIT pairs) + 0.1 temporal TV + BCE(ANSWER1/WAIT1)",
+    "holdout": {
+      "directory": "holdout",
+      "purpose": "monitoring and checkpoint selection only; no optimizer/batch probing"
+    },
+    "evaluation": "Holdout at steps0,50,100,150,198;fixed0.5;fullsettoken-meanNTP;fourrequestedmetrics;final/beststep separately",
+    "preprocessing": "1 fps from zero plus actual decision endpoint; PTS <= observation time; aspect-preserving 256px pad",
+    "backbone": "frozen vision and language weights; cached per-frame features only within this run",
+    "timestamp": "2026-11-23T12:31:56.825044+00:00",
+    "sampler": "question_groups",
+    "checkpoint_every": 1,
+    "gradient_strategy": "readiness_isolated",
+    "profile_only": false,
+    "profile_warmups": 1,
+    "profile_repeats": 2,
+    "parallel_endpoints": true,
+    "fast_linear_attention": true,
+    "validate_parallel": false,
+    "profile_real_batches": false,
+    "known_memory_behavior": "Preserve validated implementation: first-eviction initialization overlaps subsequent FIFO eviction updates.",
+    "readiness_objective": "contrastive_bce_gold",
+    "timing_lambda_reg": 0.1,
+    "timing_label_source": "existing gold WAIT/ANSWER timestamps retained by user preference; not paper pseudo-label regions",
+    "timing_timeline": "same frozen annotated endpoints sorted per task, irregular intervals; source-style adjacent-score TV over these sampled endpoints, not dense 1fps readiness supervision",
+    "source_references": [
+      "https://arxiv.org/html/2603.08620v1#S3.SS4",
+      "https://github.com/sacrcv/StreamReady/blob/main/lavis/models/streamready/readiness.py"
+    ],
+    "readiness_bce_positive_weight": 1.0,
+    "readiness_bce_weight": 1.0,
+    "answer_scoring": "Official readiness_vqa.answers_match plus historical exact-match; sparse-first-trigger diagnostics, no ARS",
+    "init_checkpoint": null,
+    "restore_optimizer": false,
+    "zero_update_warmup": true,
+    "matched_step_seed": 20261121,
+    "initialization": "Original pinned Qwen3.5-2B + bert-base-uncased + InstructBLIP QFormer weights; fresh projections/fusion/RDY; no ultrasound checkpoint or Adam restore",
+    "experiment": "Full train171 holdout16: two GPUs two epochs, all-pairs CL + TR + equal BCE + NTP",
+    "timing_unpaired_policy": "BCE-containing objectives supervise all endpoints; pure CL has no pair loss for single-label tasks; temporal term unchanged",
+    "world_size": 2,
+    "gradient_accumulation_steps": 1,
+    "expected_optimizer_steps": 198,
+    "verify_planned_batches": true,
+    "save_best_holdout": true,
+    "feature_cache_mode": "video_mmap",
+    "timing_pair_mode": "all_pairs",
+    "timing_pair_sampling": "All within-question WAIT x ANSWER pairs; per-question mean then paired-question mean",
+    "profile_additional_real_batches": true,
+    "comparison_initial_manifest": "/dss/mcmlscratch/04/ge75vid2/haoyu/live-ultrasound-video-understanding/cluster_data/experiments/streamready/fresh_loss_comparison_10v_20261121T232902Z/common_initial_core.json",
+    "recipe_provenance": {
+      "selection": "explicit user instruction, bypass earlier automatic BCE selection",
+      "source_run": "/dss/mcmlscratch/04/ge75vid2/haoyu/live-ultrasound-video-understanding/cluster_data/experiments/streamready/fresh_10v_cl_temporal_bce1_allpairs_20261122T224250Z",
+      "source_config_sha256": "9d834d36198e82914eac8e2079e60f873b927d09cdf8ab80dc90ad3bf3fb050b",
+      "threshold": 0.5,
+      "restore_source_checkpoint": false
+    },
+    "cpu_threads_per_rank": 4,
+    "cpu_resource_policy": "Use partition DefCpuPerGPU: DGX A10080=30, HGX A10080/H10094=20 Slurm CPUs per GPU; torch intraop4threads/rank",
+    "eval_every_steps": 50,
+    "plot_monitoring": true
+  },
+  "scheduler": [
+    "5951847|PENDING|0:00|(Priority)",
+    "5954577|PENDING|0:00|(Priority)"
+  ],
+  "sources_sha256": {
+    "fresh_selected_all_pairs_10v_20261122T074830Z/four_arm_comparison.json": "d9fe2dbdc9866d1a6e4cb14c4031a01bc505a71b0b7809729a59a4d28fa30e9b",
+    "fresh_10v_cl_temporal_bce1_allpairs_20261122T224250Z/all_pairs_result.json": "aa380409ff689533811fcf2c0c73418fbf4218de5637dd418cc66709a07f4149",
+    "fresh_10v_cl_temporal_bce1_allpairs_20261122T224250Z/eval_epoch_000.json": "5fbd61e204dbdbdca392cdc91e3eab6f85cd185ae83718b05db88645d3ac7001",
+    "fresh_10v_cl_temporal_bce1_allpairs_20261122T224250Z/eval_epoch_033.json": "4729ac972f43d7ad07e14d1195416b5b4113c43a722b91aaa426ae76d548db14",
+    "fresh_10v_cl_temporal_bce1_allpairs_20261122T224250Z/eval_epoch_066.json": "8f8da5c29c53e563ad635908926578df7bcf2440164c4a65122db141b38e1b4c",
+    "fresh_10v_cl_temporal_bce1_allpairs_20261122T224250Z/eval_epoch_100.json": "d5d5fd22efe71468baded377f89d29e3e7923a31f08ab08e231944b11fad8c43",
+    "long_memory_ablation_20261121T164420Z/metrics.json": "1d5bb479e7cbda9f3524129543a04186cbc561b3302f72312280e6274020f862",
+    "readiness_isolation_retry_20261121T111343Z/comparison.json": "c94a9c5c539652cf8188e7197b4c81e498293cd98ff6da74322926bd71646ea0",
+    "readiness_isolation_retry_20261121T111343Z/comparison_plan.json": "604a29147660fb364fc669e7002b0d3417b84168cd2f780d008f7222c0a8194e",
+    "overfit_bs64_20261121T142546Z/eval_epoch_300.json": "d5e0892df27248df9dcd8e3a67abefda89555c3f07ae6858c19a24325e6f76db",
+    "overfit_10v_bs96_20261121T153739Z/observed_final_results.json": "04503fa9b8e6c7b02722fa377d0ebb975f06b0d6aa54bd3f9c241d1a7a5584b6",
+    "overfit_10v_bs96_20261121T153739Z/batch_selection.json": "ac2a9813af86a8d141c0b110b31b46561de2cb2a5b0424304fa0a364823c3d67",
+    "full_train171_holdout16_allpairs_bce1_2gpu2ep_20261123T123156Z/data_audit.json": "d565daeee335dc2940d2f7a8496c3260e77564c55b1e385f5f0072fd0b3d7de1",
+    "full_train171_holdout16_allpairs_bce1_2gpu2ep_20261123T123156Z/experiment.json": "d0533d3ce733313a9dac6286dc8a3bc36d46cf087b175209c188cc1535900cf5"
+  }
+}

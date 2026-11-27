@@ -16,3 +16,11 @@ The user requires `programs.md` at the repository root to be updated whenever a 
 - Use `/dss/mcmlscratch/04/ge75vid2/haoyu/live-ultrasound-video-understanding/cluster_data/experiments/<stage-or-model>/<unique-run>/` for new training runs. The repository `cluster_data` link may be used after resolving and verifying its scratch target.
 - Resolve output paths and symlinks before submission. Keep the full run on scratch; home `results/` may contain small reports or links to scratch runs. Freeze this path in the submitted configuration and record it in `programs.md`.
 - Existing checkpoints remain intact unless migration or deletion is separately requested.
+
+## Independent model architectures
+
+Keep the event-based streaming QA architecture under `event_retrieval/` and its new training runs under the scratch experiment namespace `event_retrieval/`. Keep StreamReady reproduction code and runs in their existing namespaces. Attribute checkpoints, evaluation results and demo outputs to their respective architecture. Shared source videos and splits can be used for comparisons.
+
+## Live training progress
+
+For future new or resumed training jobs, expose planned total optimizer updates, successfully completed updates, epoch progress, throughput and estimated remaining time in flushed logs and a machine-readable progress file. Count optimizer updates, not gradient-accumulation microbatches or the sum of per-rank steps. Restore the completed update offset on resume. Distinguish training, holdout and checkpoint phases; label ETA scope and show unknown until sufficient timing observations exist. Verify that the submitted frozen entry point includes this reporting. Do not restart or modify an already running frozen job solely to add progress logging.

@@ -10,7 +10,7 @@ import copy
 import torch
 from torch.nn.utils.rnn import pad_sequence
 
-from .data import prompt, sample_times
+from .data import prompt
 from lavis.models.streamready.fusion import ShortLayerOutputCapture, set_long_term_fusion_queries
 from lavis.models.streamready.retrieval import coarse_to_fine_retrieve
 
@@ -39,44 +39,53 @@ def forward_endpoints(core, examples, features):
         raise ValueError('Independent endpoint batching requires contextual memory disabled')
     groups = {}
     for index, (row, feat) in enumerate(zip(examples, features)):
-        times = sample_times(row['current_time'])
-        if feat.shape[0] != 1 or len(times) != feat.shape[1]:
+        end = row['current_time']
+        frame_count = int(end) + 1 + (end != int(end))
+        if feat.shape[:2] != (1, frame_count):
             raise ValueError('Endpoint features must match the causal 1fps+endpoint grid')
-        groups.setdefault(row['video_id'], []).append((index, row, feat, times))
+        groups.setdefault(row['video_id'], []).append((index, end, feat))
     device = core.short_query_tokens.device
     windows, banks = [None] * len(examples), [None] * len(examples)
     updates = 0
     for group in groups.values():
-        frames = {}
-        for _, _, feat, times in group:
-            for j, t in enumerate(times):
-                frames.setdefault(t, feat[0, j])
-        times = sorted(frames)
-        lookup = {t: i for i, t in enumerate(times)}
-        # One transfer/projection per unique video, retaining gradients for all
-        # endpoint windows. Fractional frames are never put in the shared grid.
-        projected = torch.stack([frames[t] for t in times]).to(device=device, dtype=core._param_dtype())
+        group.sort(key=lambda item: item[1])
+        _, last_end, longest = group[-1]
+        # Every endpoint shares the same integer grid. Use one prefix view and
+        # append only the distinct fractional observations used by this batch.
+        integer_grid = longest[0, :int(last_end) + 1]
+        extras = {}
+        for _, end, feat in group:
+            if end != int(end) and end not in extras:
+                extras[end] = feat[0, -1:]
+        frames = torch.cat([integer_grid, *extras.values()]) if extras else integer_grid
+        extra_index = {end: len(integer_grid) + i for i, end in enumerate(extras)}
+        projected = frames.to(device=device, dtype=core._param_dtype())
         if core.vision_proj is not None:
             projected = core.vision_proj(projected)
         bank = copy.copy(core.memory)
         bank.reset()
         last_integer = -1
         snapshots = {}
-        for index, row, _, grid in sorted(group, key=lambda x: x[1]['current_time']):
-            endpoint = row['current_time']
+        capacity = core.memory.frame_capacity
+        for index, endpoint, _ in group:
+            integer_end = int(endpoint)
+            fractional = endpoint != integer_end
             if endpoint not in snapshots:
-                for t in range(last_integer + 1, int(endpoint) + 1):
-                    bank.update(projected[lookup[float(t)]].unsqueeze(0))
+                for t in range(last_integer + 1, integer_end + 1):
+                    bank.update(projected[t:t + 1])
                     updates += 1
-                last_integer = int(endpoint)
+                last_integer = integer_end
                 snapshot = clone_bank(bank)
-                if endpoint != int(endpoint):
-                    snapshot.update(projected[lookup[endpoint]].unsqueeze(0))
+                if fractional:
+                    snapshot.update(projected[extra_index[endpoint]].unsqueeze(0))
                     updates += 1
                 snapshots[endpoint] = snapshot
             banks[index] = snapshots[endpoint]
-            selected = [lookup[t] for t in grid[-core.memory.frame_capacity:]]
-            windows[index] = projected[selected].flatten(0, 1)
+            stop = integer_end + 1
+            window = projected[max(0, stop - capacity + int(fractional)):stop]
+            if fractional:
+                window = torch.cat([window, projected[extra_index[endpoint]].unsqueeze(0)])
+            windows[index] = window.flatten(0, 1)
 
     short_mem, short_mask = padded(windows)
     b = len(examples)
@@ -92,7 +101,7 @@ def forward_endpoints(core, examples, features):
         short_for_long = z_s
 
     # Whether history exists follows the known frame count; no GPU scalar read.
-    historical = [i for i, e in enumerate(examples) if len(sample_times(e['current_time'])) > core.memory.frame_capacity]
+    historical = [i for i, feat in enumerate(features) if feat.shape[1] > core.memory.frame_capacity]
     long_values, long_masks = list(windows), [torch.ones(x.shape[0], device=device, dtype=torch.bool) for x in windows]
     if historical:
         selected_banks = [banks[i] for i in historical]
@@ -115,12 +124,12 @@ def forward_endpoints(core, examples, features):
         if core.post_fusion is None:
             set_long_term_fusion_queries(core.long_qformer.bert, None)
     z_l = out[:, :core.num_query_token]
-    readiness = core.readiness_head(out[:, core.num_query_token]) if core.use_readiness else None
+    readiness = core.readiness_head(out[:, core.num_query_token], z_s, z_l) if core.use_readiness else None
     if core.post_fusion is not None:
         z_l = core.post_fusion(z_l, z_s)
     prefix = core.output_proj(z_l)
     core.last_replay_stats = dict(videos=len(groups), endpoints=b, memory_updates=updates,
-                                 independent_updates=sum(len(sample_times(e['current_time'])) for e in examples),
+                                 independent_updates=sum(f.shape[1] for f in features),
                                  qformer_batch_size=b)
     return [dict(prefix_embeds=prefix[i:i+1], readiness=readiness[i:i+1, None],
                  z_l=z_l[i:i+1]) for i in range(b)]

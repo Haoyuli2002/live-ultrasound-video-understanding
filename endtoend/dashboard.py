@@ -53,7 +53,7 @@ def gpu_samples(path):
             result.append(dict(time=datetime.strptime(row['timestamp'], '%Y/%m/%d %H:%M:%S.%f').timestamp(),
                                gpu=num('utilization.gpu [%]'), memory_activity=num('utilization.memory [%]'),
                                used=num('memory.used [MiB]') / 1024, total=num('memory.total [MiB]') / 1024,
-                               power=num('power.draw [W]'), name=row['name']))
+                               power=num('power.draw [W]'), name=row['name'], uuid=row.get('uuid','unknown')))
         except (KeyError, ValueError):
             continue
     return result
@@ -109,6 +109,14 @@ class Monitor:
             records = [r for r in read_jsonl(train / 'training.jsonl') if r.get('phase') == 'train']
             evaluations = read_jsonl(train / 'eval_metrics.jsonl')
             gpu = gpu_samples(root / 'logs/gpu.csv')
+            gpu_devices = {}
+            for uuid in sorted({r['uuid'] for r in gpu}):
+                device = [r for r in gpu if r['uuid'] == uuid]
+                latest_device = device[-1]; recent_device = [r for r in device if r['time'] >= latest_device['time']-60]
+                stride_device = max(1,len(device)//900)
+                gpu_devices[uuid] = dict(latest=latest_device, age_seconds=max(0,time.time()-latest_device['time']),
+                    peak_gib=max(r['used'] for r in device), last_60s_mean_util=sum(r['gpu'] for r in recent_device)/len(recent_device),
+                    history=device[::stride_device]+([] if device[::stride_device][-1] == device[-1] else [device[-1]]))
             gpu_info = None
             if gpu:
                 latest = gpu[-1]
@@ -141,15 +149,16 @@ class Monitor:
             value = dict(run=key, run_dir=str(root), updated_at=time.time(), job_id=submission.get('job_id'),
                          scheduler=scheduler, workflow=workflow, phase=phase,
                          status=status, config={k: cfg.get(k) for k in ['epochs', 'learning_rate', 'batch_candidates',
-                             'gradient_strategy', 'parallel_endpoints', 'fast_linear_attention', 'readiness_objective', 'timing_lambda_reg', 'readiness_bce_positive_weight', 'readiness_bce_weight']},
+                             'gradient_strategy', 'parallel_endpoints', 'fast_linear_attention', 'readiness_objective', 'timing_lambda_reg', 'readiness_bce_positive_weight', 'readiness_bce_weight', 'world_size', 'gradient_accumulation_steps', 'eval_every_steps', 'holdout']},
                          checkpointing=cfg.get('model', {}).get('gradient_checkpointing'),
-                         planned_steps=plan.get('optimizer_steps', 300),
+                         planned_steps=cfg.get('expected_optimizer_steps',plan.get('optimizer_steps', 300)),
                          step=records[-1]['step'] if records else 0,
-                         data=plan.get('summary', read_json(root / 'original_data_audit.json').get('summary', {})),
+                         data=read_json(root / 'data_audit.json').get('train',plan.get('summary', read_json(root / 'original_data_audit.json').get('summary', {}))),
+                         holdout_data=read_json(root / 'data_audit.json').get('holdout', {}),
                          training=[{k: r.get(k) for k in ['step', 'epoch', 'loss', 'answer_loss', 'readiness_loss',
                              'batch_size', 'seconds', 'peak_allocated_gib', 'peak_reserved_gib', 'readiness_bce', 'readiness_weighted_bce', 'readiness_contrastive', 'readiness_temporal']} for r in records],
-                         evaluations=evaluations, gpu=gpu_info, gpu_history=history, probes=probes,
-                         batch_selection=read_json(root / 'batch_selection.json'))
+                         evaluations=evaluations, gpu=gpu_info, gpu_history=history, gpu_devices=gpu_devices, probes=probes,
+                         batch_selection=read_json(root / 'batch_selection.json', read_json(root / 'batch_decision.json')))
             self.snapshots[key] = (time.time(), value)
             return value
 

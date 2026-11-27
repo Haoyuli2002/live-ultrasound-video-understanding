@@ -42,8 +42,14 @@ class ReadinessHead(nn.Module):
     the contrastive loss of Eq. 7 operate on differences without saturating.
     """
 
-    def __init__(self, width: int, hidden: Optional[int] = None, dropout: float = 0.0):
+    def __init__(self, width: int, hidden: Optional[int] = None, dropout: float = 0.0,
+                 readout: str = "rdy"):
         super().__init__()
+        if readout not in ("rdy", "short_long"):
+            raise ValueError(f"Unknown readiness readout: {readout}")
+        self.evidence_weights = (
+            nn.Parameter(torch.zeros(3, width)) if readout == "short_long" else None
+        )
         hidden = hidden or width
         self.net = nn.Sequential(
             nn.LayerNorm(width),
@@ -57,9 +63,18 @@ class ReadinessHead(nn.Module):
         nn.init.zeros_(self.net[-1].weight)
         nn.init.zeros_(self.net[-1].bias)
 
-    def forward(self, rdy_token: torch.Tensor) -> torch.Tensor:
-        """``[B, C]`` or ``[B, T, C]`` -> logits with the trailing axis dropped."""
-        return self.net(rdy_token).squeeze(-1)
+    def forward(self, rdy_token: torch.Tensor, short_queries=None, long_queries=None) -> torch.Tensor:
+        """Read the contextual RDY token, optionally adding evidence from both branches."""
+        logit = self.net(rdy_token).squeeze(-1)
+        if self.evidence_weights is None:
+            return logit
+        if short_queries is None or long_queries is None:
+            raise ValueError("short_long readout requires both sets of query outputs")
+        short = short_queries.mean(dim=-2)
+        long = long_queries.mean(dim=-2)
+        # Zero initialization gives the same starting scores as the RDY-only head.
+        evidence = torch.stack((short, long, short * long), dim=-2)
+        return logit + (evidence * self.evidence_weights).sum(dim=(-2, -1))
 
 
 @torch.no_grad()

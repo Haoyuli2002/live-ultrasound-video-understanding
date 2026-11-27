@@ -57,5 +57,22 @@ python -m unittest stage2.test_batched_reconstruction stage2.test_blip2_launcher
 另外双进程 gloo DDP 检查通过：跨 rank 的 Short/Global 混合任务梯度等于独立目标的全局均值。
 这不替代真实多 GPU/NCCL 的性能测试。
 
-单卡零更新测试 job 5945806 已提交，提交时 PENDING；完整配置、冻结源码、数据和日志见
-`programs.md` 的 `20261121T162716Z` 条目。GPU 性能结果尚待实测，正式 A/B 训练尚未重提。
+单卡零更新测试 job **5945806** 已完成，A100-SXM4-80GB，用时 **3分36秒**，exit0:0。
+两组都通过 BS1/2/4/8/16/32 前向/反向测试，推荐已测范围内的 **单卡 BS32**。
+
+| 分支 | BS32 吞吐（目标/秒） | 设备峰值显存（GiB） | 计时窗口平均 GPU 利用率 |
+|---|---:|---:|---:|
+| LAVIS BLIP2 query | 30.68 | 38.12 | 86.1% |
+| Secondwise Q-Former | 24.48 | 36.37 | 68.9% |
+
+两组均关闭 gradient checkpointing，18个 Qwen3.5 线性 attention 层启用 FLA/Triton。
+实际 BF16 串行/批量损失差分别为0.00677和0.000740，均在既定容差内。
+当前三个核心文件与GPU验证冻结版本逐字节一致。
+
+每项仅3次计时重复，利用率统计窗口约3秒，不能等同长训练平均值；不同BS采用的目标组合
+不同，不能把吞吐比例解释为严格同工作量算法加速。Adam状态已分配，但未执行optimizer.step；
+这些是性能和执行正确性证据，不是收敛结果。多GPU/NCCL吞吐尚未实测。
+
+完整配置、冻结源码、数据和日志见 `programs.md` 的 `20261121T162716Z` 条目及
+`cluster_data/experiments/stage2/blip2_batched_profile_20261121T162716Z/`。
+正式 A/B 训练尚未重提。扩大batch后应按更新次数设置训练量；56个目标、单卡BS32每epoch只有2次更新。

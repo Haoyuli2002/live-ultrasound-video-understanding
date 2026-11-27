@@ -89,6 +89,7 @@ class StreamReadyModule(nn.Module):
         readiness_hidden: Optional[int] = None,
         max_txt_len: int = 128,
         gradient_checkpointing: bool = False,
+        readiness_readout: str = "rdy",
     ):
         super().__init__()
 
@@ -200,7 +201,7 @@ class StreamReadyModule(nn.Module):
             # placements ablated in the paper).
             self.rdy_token = nn.Parameter(torch.zeros(1, 1, qformer_width))
             self.rdy_token.data.normal_(mean=0.0, std=0.02)
-            self.readiness_head = ReadinessHead(qformer_width, hidden=readiness_hidden)
+            self.readiness_head = ReadinessHead(qformer_width, hidden=readiness_hidden, readout=readiness_readout)
         else:
             self.rdy_token = None
             self.readiness_head = None
@@ -679,7 +680,7 @@ class StreamReadyModule(nn.Module):
         z_l = out[:, : self.num_query_token, :]
         rdy_logit = None
         if self.use_readiness:
-            rdy_logit = self.readiness_head(out[:, self.num_query_token, :])
+            rdy_logit = self.readiness_head(out[:, self.num_query_token, :], z_s, z_l)
         if self.post_fusion is not None:
             z_l = self.post_fusion(z_l, z_s)
         return z_l, rdy_logit
